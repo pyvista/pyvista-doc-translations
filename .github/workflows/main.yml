@@ -37,6 +37,15 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
+        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb
+        export DISPLAY=:99.0
+        export PYVISTA_OFF_SCREEN=true
+        export PYVISTA_USE_PANEL=true
+        export PYVISTA_PLOT_THEME=document
+        export PYVISTA_AUTO_CLOSE=false
+        which Xvfb
+        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+        sleep 3
         sh ./locale/update.sh
     - name: git_config
       run: |
