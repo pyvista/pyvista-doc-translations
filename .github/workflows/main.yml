@@ -37,7 +37,6 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
-        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         export PYVISTA_VIRTUAL_DISPLAY=True
         export PYVISTA_OFF_SCREEN=true
         export PYVISTA_USE_PANEL=true
