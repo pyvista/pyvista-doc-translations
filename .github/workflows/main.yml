@@ -28,6 +28,7 @@ jobs:
     - name: install
       run: |
         sudo apt-get install -y --no-install-recommends python3-setuptools
+        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
         pip3 install -U pip setuptools
         pip3 install -r ./requirements.txt
