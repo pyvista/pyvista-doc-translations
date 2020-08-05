@@ -12,11 +12,29 @@ This conf.py do:
 
 """
 import os
+from subprocess import STDOUT, check_call
 from sphinx.util.pycompat import execfile_
 
-basedir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "pyvista/docs"
+check_call(
+    [
+        "apt-get",
+        "install",
+        "-y",
+        "--no-install-recommends",
+        "libgl1-mesa-dev",
+        "xvfb",
+        "ffmpeg",
+    ],
+    stdout=open(os.devnull, "wb"),
+    stderr=STDOUT,
 )
+os.environ["PYVISTA_VIRTUAL_DISPLAY"] = true
+os.environ["PYVISTA_OFF_SCREEN"] = true
+os.environ["PYVISTA_USE_PANEL"] = true
+os.environ["PYVISTA_PLOT_THEME"] = document
+os.environ["PYVISTA_AUTO_CLOSE"] = false
+
+basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
 
