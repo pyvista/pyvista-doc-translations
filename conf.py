@@ -12,7 +12,6 @@ This conf.py do:
 
 """
 import os
-from subprocess import STDOUT, check_call
 from sphinx.util.pycompat import execfile_
 
 check_call(
