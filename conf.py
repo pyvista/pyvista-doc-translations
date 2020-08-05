@@ -15,7 +15,7 @@ import os
 from sphinx.util.pycompat import execfile_
 
 basedir = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "pyvista/docs/source/pyvista"
+    os.path.dirname(os.path.abspath(__file__)), "pyvista/docs"
 )
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
