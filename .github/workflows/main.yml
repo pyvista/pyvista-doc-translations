@@ -28,7 +28,7 @@ jobs:
     - name: install
       run: |
         sudo apt-get install -y --no-install-recommends python3-setuptools
-        (cd pyvista; git fetch origin; git checkout patch-3; git reset --hard origin/patch-3; git branch -a; pip3 install -r ./requirements_docs.txt)
+        (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
         pip3 install -U pip setuptools
         pip3 install -r ./requirements.txt
     - name: update
