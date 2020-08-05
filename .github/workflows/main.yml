@@ -28,6 +28,7 @@ jobs:
     - name: install
       run: |
         sudo apt-get install -y --no-install-recommends python3-setuptools
+        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
         pip3 install -U pip setuptools
         pip3 install -r ./requirements.txt
@@ -37,15 +38,11 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
-        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
-        export DISPLAY=:99.0
+        export PYVISTA_VIRTUAL_DISPLAY=True
         export PYVISTA_OFF_SCREEN=true
         export PYVISTA_USE_PANEL=true
         export PYVISTA_PLOT_THEME=document
         export PYVISTA_AUTO_CLOSE=false
-        which Xvfb
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-        sleep 3
         sh ./locale/update.sh
     - name: git_config
       run: |
