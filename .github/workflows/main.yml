@@ -27,6 +27,7 @@ jobs:
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: install
       run: |
+        sudo apt-get install -y --no-install-recommends python3-setuptools
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
         pip3 install -U pip setuptools
         pip3 install -r ./requirements.txt
