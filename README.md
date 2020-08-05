@@ -2,6 +2,9 @@
 translated docs for pyvista official document
 
 [![Documentation Status](https://readthedocs.org/projects/pyvista-doc/badge/?version=latest)](https://pyvista-doc.readthedocs.io/en/latest/?badge=latest)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This is a project to provide pyvista official documentation with multiple versions and multiple languages on Read The Docs site.
 
 Current procedure is bit tricky because Read The Docs doesn't have a way to specify options for sphinx-build command.
