@@ -28,6 +28,16 @@ execfile_(os.path.join(basedir, "conf.py"), globals())
 
 locale_dirs = [os.path.join(basedir, "../../locale/")]
 
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.doctest",
+    "sphinx.ext.autosummary",
+    "notfound.extension",
+    "sphinx_copybutton",
+    "sphinx.ext.extlinks",
+]
+
 
 def setup(app):
     from sphinx.ext.autodoc import cut_lines
