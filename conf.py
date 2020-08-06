@@ -12,7 +12,10 @@ This conf.py do:
 
 """
 import os
+import sys
 from sphinx.util.pycompat import execfile_
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
 os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
 os.environ["PYVISTA_OFF_SCREEN"] = "true"
@@ -28,16 +31,9 @@ execfile_(os.path.join(basedir, "conf.py"), globals())
 
 locale_dirs = [os.path.join(basedir, "../../locale/")]
 
-extensions = [
-    "sphinx.ext.autodoc",
-    "sphinx.ext.napoleon",
-    "sphinx.ext.doctest",
-    "sphinx.ext.autosummary",
-    "notfound.extension",
-    "sphinx_copybutton",
-    "sphinx.ext.extlinks",
-]
-
+sphinx_gallery_conf = {
+    "plot_gallery": "False",
+}
 
 def setup(app):
     from sphinx.ext.autodoc import cut_lines
