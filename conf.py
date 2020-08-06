@@ -20,6 +20,8 @@ os.environ["PYVISTA_USE_PANEL"] = "true"
 os.environ["PYVISTA_PLOT_THEME"] = "document"
 os.environ["PYVISTA_AUTO_CLOSE"] = "false"
 
+autodoc_mock_imports = ["vtk"]
+
 basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
