@@ -12,7 +12,10 @@ This conf.py do:
 
 """
 import os
+import sys
 from sphinx.util.pycompat import execfile_
+
+sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
 os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
 os.environ["PYVISTA_OFF_SCREEN"] = "true"
