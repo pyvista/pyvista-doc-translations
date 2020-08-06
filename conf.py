@@ -15,10 +15,6 @@ import os
 import sys
 from sphinx.util.pycompat import execfile_
 
-sphinx_gallery_conf = {
-    "plot_gallery": "False",
-}
-
 sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
 os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
@@ -35,6 +31,9 @@ execfile_(os.path.join(basedir, "conf.py"), globals())
 
 locale_dirs = [os.path.join(basedir, "../../locale/")]
 
+sphinx_gallery_conf = {
+    "plot_gallery": "False",
+}
 
 def setup(app):
     from sphinx.ext.autodoc import cut_lines
