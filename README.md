@@ -1,7 +1,13 @@
 # pyvista-doc.org on the Read The Docs.
 translated docs for pyvista official document
 
+:us:
+
 [![Documentation Status](https://readthedocs.org/projects/pyvista-doc/badge/?version=latest)](https://pyvista-doc.readthedocs.io/en/latest/?badge=latest)
+
+:jp:
+
+[![Documentation Status](https://readthedocs.org/projects/pyvista-doc-ja/badge/?version=latest)](https://pyvista-doc-ja.readthedocs.io/en/latest/?badge=latest)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
