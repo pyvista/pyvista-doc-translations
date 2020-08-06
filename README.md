@@ -7,7 +7,7 @@ translated docs for pyvista official document
 
 :jp:
 
-[![Documentation Status](https://readthedocs.org/projects/pyvista-doc-ja/badge/?version=latest)](https://pyvista-doc-ja.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/pyvista-doc-ja/badge/?version=latest)](https://pyvista-doc-ja.readthedocs.io/ja/latest/?badge=latest)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
