@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2020, The PyVista Developers
+# This file is distributed under the same license as the PyVista package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2020
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyVista 0.26.b0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-09 00:26+0000\n"
+"PO-Revision-Date: 2020-08-05 16:06+0000\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
+"Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../pyvista/docs/why.rst:2
+msgid "Why PyVista?"
+msgstr "なぜPyVistaなのか?"
+
+#: ../../pyvista/docs/why.rst:4
+msgid ""
+"VTK is an excellent visualization toolkit, and with Python bindings it "
+"should be able to combine the speed of C++ with the rapid prototyping of "
+"Python. However, despite this VTK code programmed in Python generally looks "
+"the same as its C++ counterpart.  This module seeks to simplify mesh "
+"creation and plotting without losing functionality."
+msgstr ""
+"VTKは優れた視覚化ツールキットであり、Pythonバインディングを使えば、C++のスピードとPythonのラピッドプロトタイピングを組み合わせることができるはずです。ただし、PythonでプログラムされたこのVTKコードは、一般的には対応するC++と同じように見えます。このモジュールは、機能を損なうことなくメッシュの作成とプロットを簡略化することを目的としています。"
+
+#: ../../pyvista/docs/why.rst:10
+msgid ""
+"Compare two approaches for loading and plotting a surface mesh from a file:"
+msgstr "ファイルからサーフェスメッシュをロードおよびプロットする2つの方法を比較します:"
+
+#: ../../pyvista/docs/why.rst:14
+msgid "Plotting a Mesh using Python's VTK"
+msgstr "PythonのVTKを使用したメッシュのプロット"
+
+#: ../../pyvista/docs/why.rst:15
+msgid ""
+"Using this `example "
+"<http://www.vtk.org/Wiki/VTK/Examples/Python/STLReader>`_, loading and "
+"plotting an STL file requires a lot of code when using only the ``vtk`` "
+"module."
+msgstr ""
+"この `example <http://www.vtk.org/Wiki/VTK/Examples/Python/STLReader>`_ "
+"を使用してSTLファイルのロードとプロットを行う場合、 ``vtk`` モジュールだけを使用すると大量のコードが必要になります。"
+
+#: ../../pyvista/docs/why.rst:60
+msgid "Plot a Mesh using PyVista"
+msgstr "PyVistaを使用してメッシュをプロットする"
+
+#: ../../pyvista/docs/why.rst:62
+msgid "The same stl can be loaded and plotted using pyvista with:"
+msgstr "pyvistaを使用して、同じstlをロードしたりプロットすることができます:"
+
+#: ../../pyvista/docs/why.rst:71
+msgid ""
+"The mesh object is more pythonic and the code is much more straightforward. "
+"Garbage collection is taken care of automatically and the renderer is "
+"cleaned up after the user closes the VTK plotting window."
+msgstr ""
+"メッシュオブジェクトはよりPython的で、コードはずっと単純です。ガベージコレクションは自動的に処理され、ユーザがVTKプロットウィンドウを閉じた後にレンダラはクリーンアップされます。"
+
+#: ../../pyvista/docs/why.rst:77
+msgid "Advanced Plotting with Numpy"
+msgstr "Numpyを使用した高度なプロット"
+
+#: ../../pyvista/docs/why.rst:79
+msgid "When combined with numpy, you can make some truly spectacular plots:"
+msgstr "numpyと組み合わせると、本当に素晴らしいプロットができます:"
+
+#: ../../pyvista/docs/why.rst:107
+msgid ""
+"While not everything can be simplified without losing functionality, many of"
+" the objects can.  For example, triangular surface meshes in VTK can be "
+"subdivided but every other object in VTK cannot.  It then makes sense that a"
+" subdivided method be added to the existing triangular surface mesh. That "
+"way, subdivision can be performed with:"
+msgstr ""
+
+#: ../../pyvista/docs/why.rst:120
+msgid ""
+"Additionally, the docstrings for all methods in PyVista are intended to be "
+"used within interactive coding sessions. This allows users to use "
+"sophisticated processing routines on the fly with immediate access to a "
+"description of how to use those methods:"
+msgstr ""
