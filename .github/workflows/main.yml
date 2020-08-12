@@ -47,6 +47,8 @@ jobs:
         git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
         source ./gl-ci-helpers/travis/setup_headless_display.sh
         sh ./locale/update.sh
+        mv ./pyvista/docs/examples .
+        mv ./pyvista/docs/auto_examples .
     - name: git_config
       run: |
         git branch -a
