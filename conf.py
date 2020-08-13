@@ -38,6 +38,8 @@ sphinx_gallery_conf = {
     "plot_gallery": "False",
 }
 
+html_static_path = [os.path.join(basedir, "_static")]
+
 def setup(app):
     from sphinx.ext.autodoc import cut_lines
     from sphinx.util.docfields import GroupedField
