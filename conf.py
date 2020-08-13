@@ -14,6 +14,7 @@ This conf.py do:
 import os
 import sys
 from sphinx.util.pycompat import execfile_
+import shutil
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
@@ -24,6 +25,7 @@ os.environ["PYVISTA_PLOT_THEME"] = "document"
 os.environ["PYVISTA_AUTO_CLOSE"] = "false"
 
 autodoc_mock_imports = ["vtk"]
+shutil.copy("examples", "pyvista/docs")
 
 basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
 
