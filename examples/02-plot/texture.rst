@@ -1,0 +1,443 @@
+.. only:: html
+
+    .. note::
+        :class: sphx-glr-download-link-note
+
+        Click :ref:`here <sphx_glr_download_examples_02-plot_texture.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_examples_02-plot_texture.py:
+
+
+.. _ref_texture_example:
+
+Applying Textures
+~~~~~~~~~~~~~~~~~
+
+Plot a mesh with an image projected onto it as a texture.
+
+
+.. code-block:: default
+
+
+    import pyvista as pv
+    from pyvista import examples
+    import numpy as np
+    from matplotlib.cm import get_cmap
+
+
+
+
+
+
+
+
+Texture mapping is easily implemented using PyVista. Many of the geometric
+objects come preloaded with texture coordinates, so quickly creating a
+surface and displaying an image is simply:
+
+
+.. code-block:: default
+
+
+    # load a sample texture
+    tex = examples.download_masonry_texture()
+
+    # create a surface to host this texture
+    surf = pv.Cylinder()
+
+    surf.plot(texture=tex)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_001.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(1.9318516525781368, 1.9318516525781368, 1.9318516525781368),
+     (0.0, 0.0, 0.0),
+     (0.0, 0.0, 1.0)]
+
+
+
+But what if your dataset doesn't have texture coordinates? Then you can
+harness the :func:`pyvista.DataSetFilters.texture_map_to_plane` filter to
+properly map an image to a dataset's surface.
+For example, let's map that same image of bricks to a curvey surface:
+
+
+.. code-block:: default
+
+
+    # create a structured surface
+    x = np.arange(-10, 10, 0.25)
+    y = np.arange(-10, 10, 0.25)
+    x, y = np.meshgrid(x, y)
+    r = np.sqrt(x ** 2 + y ** 2)
+    z = np.sin(r)
+    curvsurf = pv.StructuredGrid(x, y, z)
+
+    # Map the curved surface to a plane - use best fitting plane
+    curvsurf.texture_map_to_plane(inplace=True)
+
+    curvsurf.plot(texture=tex)
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_002.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+Display scalar data along with a texture by ensuring the
+``interpolate_before_map`` setting is ``False`` and specifying both the
+``texture`` and ``scalars`` arguments.
+
+
+.. code-block:: default
+
+
+    elevated = curvsurf.elevation()
+
+    elevated.plot(scalars='Elevation',
+                  cmap='terrain',
+                  texture=tex,
+                  interpolate_before_map=False)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_003.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+Note that this process can be completed with any image texture!
+
+
+.. code-block:: default
+
+
+    # use the puppy image
+    tex = examples.download_puppy_texture()
+    curvsurf.plot(texture=tex)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_004.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+Textures from Files
++++++++++++++++++++
+
+What about loading your own texture from an image? This is often most easily
+done using the :func:`pyvista.read_texture` function - simply pass an image
+file's path, and this function with handle making a ``vtkTexture`` for you to
+use.
+
+
+.. code-block:: default
+
+
+    image_file = examples.mapfile
+    tex = pv.read_texture(image_file)
+    curvsurf.plot(texture=tex)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_005.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+NumPy Arrays as Textures
+++++++++++++++++++++++++
+
+Want to use a programmatically built image? :class:`pyvista.UniformGrid`
+objects can be converted to textures using :func:`pyvista.image_to_texture`
+and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
+:func:`pyvista.numpy_to_texture`.
+
+
+.. code-block:: default
+
+
+    # create an image using numpy,
+    xx, yy = np.meshgrid(np.linspace(-200, 200, 20), np.linspace(-200, 200, 20))
+    A, b = 500, 100
+    zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
+
+    # Creating a custom RGB image
+    cmap = get_cmap("nipy_spectral")
+    norm = lambda x: (x - np.nanmin(x)) / (np.nanmax(x) - np.nanmin(x))
+    hue = norm(zz.ravel())
+    colors = (cmap(hue)[:, 0:3] * 255.0).astype(np.uint8)
+    image = colors.reshape((xx.shape[0], xx.shape[1], 3), order="F")
+
+    # Convert 3D numpy array to texture
+    tex = pv.numpy_to_texture(image)
+
+    # Render it!
+    curvsurf.plot(texture=tex)
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_006.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+Textures with Transparency
+++++++++++++++++++++++++++
+
+Textures can also specify per-pixel opacity values. The image must
+contain a 4th channel specifying the opacity value from 0 [transparent] to
+255 [fully visible]. To enable this feature just pass the opacity array as the
+4th channel of the image as a 3 dimensional matrix with shape [nrows, ncols, 4]
+:func:`pyvista.numpy_to_texture`.
+
+Here we can download an image that has an alpha channel:
+
+
+.. code-block:: default
+
+    rgba = examples.download_rgba_texture()
+    rgba.n_components
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    4
+
+
+
+
+.. code-block:: default
+
+
+    # Render it!
+    curvsurf.plot(texture=rgba, show_grid=True)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_007.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 0.0, 1.0)]
+
+
+
+Repeating Textures
+++++++++++++++++++
+
+What if you have a single texture that you'd like to repeat across a mesh?
+Simply define the texture coordinates for all nodes explicitly.
+
+Here we create the texture coordinates to fill up the grid with several
+mappings of a single texture. In order to do this we must define texture
+coordinates outside of the typical ``(0, 1)`` range:
+
+
+.. code-block:: default
+
+
+    axial_num_puppies = 4
+    xc = np.linspace(0, axial_num_puppies, curvsurf.dimensions[0])
+    yc = np.linspace(0, axial_num_puppies, curvsurf.dimensions[1])
+
+    xxc, yyc = np.meshgrid(xc, yc)
+    puppy_coords = np.c_[yyc.ravel(), xxc.ravel()]
+
+
+
+
+
+
+
+
+By defining texture coordinates that range ``(0, 4)`` on each axis, we will
+produce 4 repetitions of the same texture on this mesh.
+
+Then we must associate those texture coordinates with the mesh through the
+:attr:`pyvista.Common.t_coords` property.
+
+
+.. code-block:: default
+
+
+    curvsurf.t_coords = puppy_coords
+
+
+
+
+
+
+
+
+Now display all the puppies!
+
+
+.. code-block:: default
+
+
+    # use the puppy image
+    tex = examples.download_puppy_texture()
+    curvsurf.plot(texture=tex, cpos="xy")
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_008.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(-0.125, -0.125, 54.0961574413579),
+     (-0.125, -0.125, 1.6409574268849703e-06),
+     (0.0, 1.0, 0.0)]
+
+
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** ( 0 minutes  10.836 seconds)
+
+
+.. _sphx_glr_download_examples_02-plot_texture.py:
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-python
+
+     :download:`Download Python source code: texture.py <texture.py>`
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+     :download:`Download Jupyter notebook: texture.ipynb <texture.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_

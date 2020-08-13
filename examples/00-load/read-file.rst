@@ -1,0 +1,335 @@
+.. only:: html
+
+    .. note::
+        :class: sphx-glr-download-link-note
+
+        Click :ref:`here <sphx_glr_download_examples_00-load_read-file.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_examples_00-load_read-file.py:
+
+
+Load and Plot from a File
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Read a dataset from a known file type.
+
+
+Loading a mesh is trivial - if your data is in one of the many supported
+file formats, simply use :func:`pyvista.read` to load your spatially
+referenced dataset into a PyVista mesh object.
+
+The following code block uses a built-in example file and displays an
+airplane mesh.
+
+
+.. code-block:: default
+
+
+    # sphinx_gallery_thumbnail_number = 5
+    import pyvista as pv
+    from pyvista import examples
+
+
+
+
+
+
+
+
+The following code block uses a built-in example
+file, displays an airplane mesh and returns the camera's position:
+
+
+.. code-block:: default
+
+
+    # Get a sample file
+    filename = examples.planefile
+    filename
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    '/home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/examples/airplane.ply'
+
+
+
+Note the above filename, it's a ``.ply`` file - one of the many supported
+formats in PyVista.
+
+
+.. code-block:: default
+
+
+    mesh = pv.read(filename)
+    cpos = mesh.plot()
+
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_001.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+
+
+
+You can also take a screenshot without creating an interactive plot window
+using the ``Plotter``:
+
+
+.. code-block:: default
+
+
+    plotter = pv.Plotter(off_screen=True)
+    plotter.add_mesh(mesh)
+    plotter.show(screenshot="myscreenshot.png")
+
+
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_002.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(3140.593704331348, 2919.620300400684, 2375.7925778512454),
+     (896.9955291748047, 676.0221252441406, 132.19440269470215),
+     (0.0, 0.0, 1.0)]
+
+
+
+The points from the mesh are directly accessible as a NumPy array:
+
+
+.. code-block:: default
+
+
+    mesh.points
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    pyvista_ndarray([[896.994  ,  48.7601 ,  82.2656 ],
+                     [906.593  ,  48.7601 ,  80.7452 ],
+                     [907.539  ,  55.4902 ,  83.6581 ],
+                     ...,
+                     [806.665  , 627.363  ,   5.11482],
+                     [806.665  , 654.432  ,   7.51998],
+                     [806.665  , 681.537  ,   9.48744]], dtype=float32)
+
+
+
+The faces from the mesh are also directly accessible as a NumPy array:
+
+
+.. code-block:: default
+
+
+    mesh.faces.reshape(-1, 4)[:, 1:] # triangular faces
+
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    array([[   0,    1,    2],
+           [   0,    2,    3],
+           [   4,    5,    1],
+           ...,
+           [1324, 1333, 1323],
+           [1325, 1216, 1334],
+           [1325, 1334, 1324]])
+
+
+
+Loading other files types is just as easy! Simply pass your file path to the
+:func:`pyvista.read` function and that's it!
+
+Here are a few other examples - siply replace ``examples.download_*`` in the
+examples below with ``pyvista.read('path/to/you/file.ext')``
+
+Example STL file:
+
+
+.. code-block:: default
+
+    mesh = examples.download_cad_model()
+    cpos = [(107.0, 68.5, 204.0), (128.0, 86.5, 223.5), (0.45, 0.36, -0.8)]
+    mesh.plot(cpos=cpos)
+
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_003.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(107.0, 68.5, 204.0),
+     (128.0, 86.5, 223.5),
+     (0.45641198720858384, 0.36512958976686705, -0.8113990883708156)]
+
+
+
+Example OBJ file
+
+
+.. code-block:: default
+
+    mesh = examples.download_doorman()
+    mesh.plot(cpos="xy")
+
+
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_004.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(0.0, 3.0501165064051747, 14.095016027506968),
+     (0.0, 3.0501165064051747, 0.09646400809288025),
+     (0.0, 1.0, 0.0)]
+
+
+
+Example BYU file
+
+
+.. code-block:: default
+
+    mesh = examples.download_teapot()
+    mesh.plot(cpos=[-1, 2, -5], show_edges=True)
+
+
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_005.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(-2.658292843164852, 7.244705584172111, -14.36176396043028),
+     (0.2140599489212036, 1.5, 0.0),
+     (0.0, 0.0, 1.0)]
+
+
+
+Example VTK file
+
+
+.. code-block:: default
+
+    mesh = examples.download_bunny_coarse()
+    cpos = [(0.2, 0.3, 0.9), (0, 0, 0), (0, 1, 0)]
+    mesh.plot(cpos=cpos, show_edges=True, color=True)
+
+
+
+.. image:: /examples/00-load/images/sphx_glr_read-file_006.png
+    :alt: read file
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(0.2, 0.3, 0.9),
+     (0.0, 0.0, 0.0),
+     (0.0, 1.0, 0.0)]
+
+
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** ( 0 minutes  5.254 seconds)
+
+
+.. _sphx_glr_download_examples_00-load_read-file.py:
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-python
+
+     :download:`Download Python source code: read-file.py <read-file.py>`
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+     :download:`Download Jupyter notebook: read-file.ipynb <read-file.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
