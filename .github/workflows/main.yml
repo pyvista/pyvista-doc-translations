@@ -46,6 +46,7 @@ jobs:
         export PYVISTA_AUTO_CLOSE=false
         git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
         source ./gl-ci-helpers/travis/setup_headless_display.sh
+        rm -rf gl-ci-helpers
         sh ./locale/update.sh
         rm -Rf examples
         mv ./pyvista/docs/examples .
