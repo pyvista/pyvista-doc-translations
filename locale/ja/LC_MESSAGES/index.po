@@ -87,7 +87,7 @@ msgstr "|slack| |gitter|"
 
 #: ../../pyvista/docs/index.rst:67
 msgid "About"
-msgstr "関して"
+msgstr "Pyvistaについて"
 
 #: ../../pyvista/docs/index.rst:69
 msgid "PyVista is..."
@@ -96,15 +96,15 @@ msgstr "PyVistaは..."
 #: ../../pyvista/docs/index.rst:71
 msgid ""
 "*\"VTK for humans\"*: a high-level API to the `Visualization Toolkit`_ (VTK)"
-msgstr ""
+msgstr "*\"VTK for humans\"*:  `Visualization Toolkit`_ (VTK) の高レベルAPI"
 
 #: ../../pyvista/docs/index.rst:72
 msgid "mesh data structures and filtering methods for spatial datasets"
-msgstr ""
+msgstr "空間データセットのメッシュデータ構造とフィルタリング方法"
 
 #: ../../pyvista/docs/index.rst:73
 msgid "3D plotting made simple and built for large/complex data geometries"
-msgstr ""
+msgstr "大規模/複雑なデータジオメトリ用にシンプルかつ構築された3 Dプロット"
 
 #: ../../pyvista/docs/index.rst:78
 msgid ""
@@ -115,6 +115,8 @@ msgid ""
 "prototyping, analysis, and visual integration of spatially referenced "
 "datasets."
 msgstr ""
+"PyVista (以前は ``vtki`` )はVisualization Toolkit (VTK) "
+"用のヘルパー・モジュールで、NumPyと配列への直接アクセスを介してVTKとのインターフェースを取るための、異なるアプローチをとっています。このパッケージは、VTKの強力な可視化バックエンドを公開するPythonの十分に文書化されたインターフェースを提供し、空間的に参照されたデータセットの迅速なプロトタイピング、分析、および視覚的統合を容易にします。"
 
 #: ../../pyvista/docs/index.rst:85
 msgid ""
@@ -122,20 +124,21 @@ msgid ""
 "research papers as well as a supporting module for other mesh dependent "
 "Python modules."
 msgstr ""
+"このモジュールは、他のメッシュ依存Pythonモジュールのサポートモジュールと同様に、プレゼンテーションや研究論文の科学的プロットにも使用できます。"
 
 #: ../../pyvista/docs/index.rst:91
 msgid "Share this project on Twitter: |tweet|"
-msgstr ""
+msgstr "このプロジェクトをTwitterで共有する: |tweet|"
 
 #: ../../pyvista/docs/index.rst:98
 msgid ""
 "Want to test-drive PyVista? Check out our live examples on MyBinder: "
 "|binder|"
-msgstr ""
+msgstr "PyVistaを試してみたいですか?MyBinderのライブサンプルをチェックしてみてください: |binder|"
 
 #: ../../pyvista/docs/index.rst:110
 msgid "Support"
-msgstr ""
+msgstr "サポート"
 
 #: ../../pyvista/docs/index.rst:112
 msgid ""
@@ -145,10 +148,14 @@ msgid ""
 "welcome to join us on Slack_ or send one of the developers an email. The "
 "project support team can be reached at `info@pyvista.org`_."
 msgstr ""
+"プロジェクト、そのアプリケーション、またはソフトウェアの使用に関する一般的な質問については、コミュニティが共同であなたの質問に対処できる "
+"`pyvista/pyvista-support`_ "
+"リポジトリに問題を作成してください。Slackに参加したり、開発者にメールを送ったりすることもできます。プロジェクト・サポート・チームは "
+"`info@pyvista.org`_ で連絡できます。"
 
 #: ../../pyvista/docs/index.rst:124
 msgid "Connections"
-msgstr ""
+msgstr "接続"
 
 #: ../../pyvista/docs/index.rst:126
 msgid ""
@@ -156,16 +163,19 @@ msgid ""
 "compelling, integrated visualizations of large datasets in an intuitive, "
 "Pythonic manner. Here are a few open-source projects that leverage PyVista:"
 msgstr ""
+"PyVistaは強力なツールであり、研究者はこれを利用して、大規模なデータセットを直感的かつPython的な方法で、説得力のある統合された可視化を作成することができます。PyVistaを活用したオープンソースプロジェクトをいくつか紹介します。"
 
 #: ../../pyvista/docs/index.rst:130
 msgid ""
 "itkwidgets_: Interactive Jupyter widgets to visualize images, point sets, "
 "and meshes in 2D and 3D. Supports all PyVista mesh types."
 msgstr ""
+"itkwidgets_: イメージ、点セット、メッシュを2 Dおよび3 "
+"Dで視覚化するインタラクティブなJupyterウィジェット。すべてのPyVistaメッシュタイプをサポートします。"
 
 #: ../../pyvista/docs/index.rst:131
 msgid "pyansys_: Pythonic interface to ANSYS result, full, and archive files"
-msgstr ""
+msgstr "pyansys_: ANSYSの結果ファイル、フルファイル、およびアーカイブファイルへのPythonインタフェース"
 
 #: ../../pyvista/docs/index.rst:132
 msgid ""
@@ -173,12 +183,15 @@ msgid ""
 " and models. PyVista is used to make the inputs and outputs of PVGeo's "
 "algorithms more accessible."
 msgstr ""
+"PVGeo_: "
+"地球科学データとモデルを分析するためのVTKベースのアルゴリズムのPythonパッケージです。PyVistaは、PVGeoのアルゴリズムの入出力をよりアクセスしやすくするために使用されます。"
 
 #: ../../pyvista/docs/index.rst:133
 msgid ""
 "omfvista_: 3D visualization for the Open Mining Format (omf). PyVista "
 "provides the foundation for this library's visualization."
 msgstr ""
+"omfvista_: Open Mining Format (omf) の3 D可視化。PyVistaは、このライブラリーの視覚化の基礎を提供します。"
 
 #: ../../pyvista/docs/index.rst:134
 msgid ""
@@ -186,16 +199,19 @@ msgid ""
 "``discretize`` provides ``toVTK`` methods that return PyVista versions of "
 "their data types for `creating compelling visualizations`_."
 msgstr ""
+"discretize_: 有限体積および逆問題の離散化ツール。 ``discretize`` には、 `creating compelling "
+"visualizations`_ のデータ型のPyVistaバージョンを返す ``toVTK`` メソッドが用意されています。"
 
 #: ../../pyvista/docs/index.rst:135
 msgid ""
 "pymeshfix_: Python/Cython wrapper of Marco Attene's wonderful, award-winning"
 " MeshFix software."
 msgstr ""
+"pymeshfix_: 受賞歴のあるMarco Atteneの素晴らしいMeshFixソフトウェアのPython/Cythonラッパーです。"
 
 #: ../../pyvista/docs/index.rst:136
 msgid "tetgen_: Python Interface to Hang Si's C++ TetGen Library"
-msgstr ""
+msgstr "tetgen_: Hang SiのC++TetGenライブラリへのPythonインタフェース"
 
 #: ../../pyvista/docs/index.rst:151
 msgid "Citing PyVista"
@@ -258,21 +274,21 @@ msgstr "VTKのPython-C++バインディングに対するPythonインターフ�
 
 #: ../../pyvista/docs/index.rst:200
 msgid "Filtering/plotting tools built for interactivity (see :ref:`widgets`)"
-msgstr ""
+msgstr "対話型のフィルタリング/プロットツール( :ref:`widgets` を参照)"
 
 #: ../../pyvista/docs/index.rst:201
 msgid "Direct access to common VTK filters (see :ref:`filters_ref`)"
-msgstr ""
+msgstr "一般的なVTKフィルタ( :ref:`filters_ref` を参照)への直接アクセス"
 
 #: ../../pyvista/docs/index.rst:202
 msgid ""
 "Intuitive plotting routines with ``matplotlib`` similar syntax (see "
 ":ref:`plotting_ref`)"
-msgstr ""
+msgstr "``matplotlib`` に似た構文を持つ直感的な描画ルーチン( :ref:`plotting_ref` を参照)"
 
 #: ../../pyvista/docs/index.rst:217
 msgid "Project Index"
-msgstr ""
+msgstr "プロジェクトインデックス"
 
 #: ../../pyvista/docs/index.rst:219
 msgid ":ref:`genindex`"
