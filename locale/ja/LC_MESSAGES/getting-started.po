@@ -407,10 +407,11 @@ msgid ""
 " and modified as NumPy arrays. In the example below, we load a dataset, "
 "access an array on that dataset, then add some more data:"
 msgstr ""
+"メッシュのノードとセルのさまざまなデータアトリビュートへのアクセスは、VTKオブジェクトへのコールバックを持つディクショナリを介してインタフェースされます。これらの異なる点配列やセル配列のディクショナリには、NumPy配列として直接アクセスしたり修正することができます。次の例では、データセットを読み込み、そのデータセット上の配列にアクセスし、さらにデータを追加します。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:115
 msgid "Plotting"
-msgstr ""
+msgstr "プロット"
 
 #: ../../pyvista/docs/getting-started/simple.rst:117
 msgid ""
@@ -419,6 +420,9 @@ msgid ""
 "keyword arguments. To get started, try out the :func:`pyvista.plot` "
 "convenience method that is binded to each PyVista data object:"
 msgstr ""
+"PyVistaには、 ``matplotlib`` "
+"に似た構文とキーワード引数を使って直感的に操作でき、高度に制御できることを意図した多数の描画ルーチンが含まれています。始めに、各PyVistaデータオブジェクトにバインドされた便利なメソッド"
+" :func:`pyvista.plot` を試してみてください。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:136
 msgid ""
@@ -426,35 +430,38 @@ msgid ""
 "instantiate a plotter such as :class:`pyvista.Plotter` or "
 ":class:`pyvistaqt.BackgroundPlotter`:"
 msgstr ""
+"プロッタを作成して、シーンを高度にコントロールすることもできます。まず、 :class:`pyvista.Plotter` や "
+":class:`pyvistaqt.BackgroundPlotter` などのプロッタをインスタンス化します。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:139
 msgid ""
 "The :class:`pyvista.Plotter` will create a rendering window that will pause "
 "the execution of the code after calling ``show``."
 msgstr ""
+":class:`pyvista.Plotter` は ``show`` を呼んだ後にコードの実行を一時停止するレンダリングウィンドウを作成します。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:149
 msgid ""
 "Note that the ``show`` method will return the last used camera position of "
 "the rendering window in case you want to chose a camera position and use it "
 "again later."
-msgstr ""
+msgstr "カメラ位置を選択して後で再使用する場合は、 ``show`` メソッドはレンダリングウィンドウの最後に使用されたカメラ位置を返します。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:153
 msgid ""
 "You can then use this cached camera for additional plotting without having "
 "to manually interact with the plotting window:"
-msgstr ""
+msgstr "このキャッシュされたカメラは、プロットウィンドウを手動で操作しなくても、追加のプロットに使用できます:"
 
 #: ../../pyvista/docs/getting-started/simple.rst:164
 msgid "Be sure to check out all the available plotters for your use case:"
-msgstr ""
+msgstr "使用する用途に応じて、使用可能なすべてのプロッタを確認してください。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:166
 msgid ""
 ":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
 "closed"
-msgstr ""
+msgstr ":class:`pyvista.Plotter`: 閉じるまでコードを一時停止する標準プロッタ"
 
 #: ../../pyvista/docs/getting-started/simple.rst:167
 msgid ""
@@ -462,10 +469,12 @@ msgid ""
 "interactive and does not pause the code execution (for more information see "
 "the `pyvistaqt`_ package)"
 msgstr ""
+":class:`pyvistaqt.BackgroundPlotter`:  "
+"インタラクティブで、コードの実行を一時停止しないレンダリングウィンドウを作成します(詳細は `pyvistaqt`_ パッケージを参照してください)。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:174
 msgid "Exporting"
-msgstr ""
+msgstr "出力"
 
 #: ../../pyvista/docs/getting-started/simple.rst:176
 msgid ""
@@ -473,6 +482,8 @@ msgid ""
 "``.save()`` method bound directly on those objects. For example, the mesh "
 "used above could be saved like:"
 msgstr ""
+"PyVistaメッシュオブジェクトは、それらのオブジェクトに直接バインドされた ``.save()`` "
+"メソッドを使用してVTKファイル形式に保存できます。たとえば、上記で使用したメッシュは、次のように保存できます。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:184
 msgid ""
@@ -481,6 +492,9 @@ msgid ""
 " supported in the ``.save()`` method, please refer to the docs for that "
 "method on each mesh type."
 msgstr ""
+"または、メッシュが :class:`pyvista.PolyData` であるため、 ``.vtp`` 、 ``.stl`` 、または ``.ply``"
+" 形式も使用できます。 ``.save()`` "
+"メソッドでサポートされている形式の詳細については、各メッシュタイプのメソッドに関するドキュメントを参照してください。"
 
 #: ../../pyvista/docs/getting-started/simple.rst:189
 msgid ""
@@ -491,15 +505,21 @@ msgid ""
 "OFF, PERMAS, PLY, STL, TetGen .node/.ele, SVG (2D only, output only), UGRID,"
 " WKT (TIN), XDMF, and more!"
 msgstr ""
+"また、任意のPyVistaメッシュを `meshio <https://github.com/nschloe/meshio>`_ "
+"でサポートされている任意のファイル形式に書き出すことができます。Meshioは、Abaqus、ANSYS msh、AVS-UCD、CGNS、DOLFIN"
+" XML、Exodus、FLAC 3 D、H 5 M、Kratos/MDPA、Medit、MED/Salome、Gmsh "
+"(バージョン2および4)、OBJ、OFF、PERMAS、PLY、STL、TetGen .node/.ele、SVG (2Dのみ、出力のみ)、UGRID,"
+" WKT (TIN)、XDMFなど、多くの形式をサポートしています!"
 
 #: ../../pyvista/docs/getting-started/simple.rst:196
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
+"``meshio`` を使用してPyVistaメッシュを保存するには、 :func:`pyvista.save_meshio` を使用します:"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:4
 msgid "What is a Mesh?"
-msgstr ""
+msgstr "メッシュとは?"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:6
 msgid ""
@@ -512,6 +532,10 @@ msgid ""
 "dataset with 3D geometries like voxels, tetrahedrals, hexahedrons, etc., "
 "then we also call that a mesh! Why? Because it is simple that way."
 msgstr ""
+"PyVistaでは、メッシュは空間的に参照される情報であり、通常は3 "
+"D空間内のサーフェスまたはボリュームのジオメトリ表現で構成されます。一般的に、空間的に参照されるデータセットはメッシュと呼ばれるため、メッシュ、グリッド、ボリュームの区別があいまいになることがありますが、PyVistaでは関係ありません。三角形のような2"
+" Dジオメトリを持つサーフェスメッシュのデータセットがある場合はメッシュと呼び、ボクセル、4面体、6面体などの3 "
+"Dジオメトリのデータセットがある場合はメッシュと呼びます。なぜか? その方が簡単だからです。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:15
 msgid ""
@@ -521,10 +545,13 @@ msgid ""
 "worked hard to make PyVista work for datasets of either or mixed geometries "
 "so that you as a user do not have to get bogged down in the nuances."
 msgstr ""
+"空間的に参照されるすべてのデータセットには、基礎となるメッシュ構造 - セルを定義するノード間の接続またはジオメトリが存在します。これらのセルが2 "
+"Dであるか3 "
+"Dであるかは常に重要ではなく、ユーザがニュアンスにとらわれないように、いずれかのジオメトリまたは混合ジオメトリのデータセットでPyVistaを動作させるために私たちは懸命に努力してきました。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:22
 msgid "What is a Node?"
-msgstr ""
+msgstr "ノードとは?"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:24
 msgid ""
@@ -532,6 +559,8 @@ msgid ""
 "structure. All PyVista datasets (meshes!) have nodes and sometimes, you can "
 "have a mesh that only has nodes - like a point cloud."
 msgstr ""
+"ノードはメッシュの頂点、つまり基礎構造のXYZ座標です。すべてのPyVistaデータセット (メッシュ!) "
+"にはノードがあり、場合によっては、ポイントクラウドのようにノードのみを持つメッシュを作成できます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:28
 msgid ""
@@ -539,26 +568,28 @@ msgid ""
 ":class:`pyvista.PolyData` class which is built for meshes that have 1D and "
 "2D cell types (we'll get into what a cell is briefly)."
 msgstr ""
+"たとえば、1 Dおよび2 Dのセルタイプ(セルとは何か簡単に説明します)を持つメッシュ用に作成された :class:`pyvista.PolyData`"
+" クラスを使用して、ポイントクラウドメッシュを作成できます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:32
 msgid ""
 "Let's start with a point cloud - this is a mesh type that only has vertices."
 " You can create one by defining a 2D array XYZ coordinates like so:"
-msgstr ""
+msgstr "ポイントクラウドから始めましょう - これは頂点のみを持つメッシュタイプです。作成するには、2 D配列のXYZ座標を次のように定義します。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:49
 msgid ""
 "But it's import to note that most meshes have some sort of connectivity "
 "between nodes such as this gridded mesh:"
-msgstr ""
+msgstr "ただし、ほとんどのメッシュは、次のグリッド化されたメッシュなどのノード間で何らかの接続性を持っていることに注意してください。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:72
 msgid "Or this triangulated surface:"
-msgstr ""
+msgstr "または、この三角形サーフェス:"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:92
 msgid "What is a Cell?"
-msgstr ""
+msgstr "セルとは?"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:94
 msgid ""
@@ -568,6 +599,7 @@ msgid ""
 "cell in the beam example is a a voxel defined by region between eight nodes "
 "in that mesh:"
 msgstr ""
+"セルは、メッシュの接続またはトポロジを定義するノード間のジオメトリです。上記の例では、セルはノード(赤色をしている)を結ぶ線(黒色をしている縁)によって定義されます。たとえば、ビームの例のセルは、メッシュ内の8つのノード間の領域によって定義されるボクセルです。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:124
 msgid ""
@@ -575,10 +607,11 @@ msgid ""
 "nodes, a line between two nodes, or even a single node could be its own cell"
 " (but that's a special case)."
 msgstr ""
+"セルはボクセルに限定されず、3つのノード間の三角形、2つのノード間のライン、または1つのノード自体のセル(これは特別なケースです)にすることができます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:131
 msgid "What are attributes?"
-msgstr ""
+msgstr "属性とは?"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:133
 msgid ""
@@ -589,6 +622,9 @@ msgid ""
 "dictionaries attached to any PyVista mesh called ``.point_arrays`` or "
 "``.cell_arrays``."
 msgstr ""
+"アトリビュートは、メッシュのノードまたはセルに存在するデータ値です。PyVistaでは、ポイントデータとセルデータの両方を処理し、データ辞書に簡単にアクセスして、メッシュのすべてのノードまたはすべてのセルに存在する属性の配列を保持できます。これらの属性は、"
+" ``.point_arrays`` または ``.cell_arrays`` "
+"と呼ばれる任意のPyVistaメッシュにアタッチされた辞書からアクセスできます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:140
 msgid ""
@@ -598,6 +634,7 @@ msgid ""
 "create some point data for the beam mesh. When plotting the values between "
 "nodes are interpolated across the cells."
 msgstr ""
+"ポイントデータは、メッシュの各ノード上に存在する値の配列(スカラー、ベクトルなど。)を参照します。この配列の順序は重要です。アトリビュート配列の各要素は、メッシュ内のノードまたはセルに対応している必要があります。ビームメッシュの点データを作成します。ノード間の値をプロットすると、セル間で補間されます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:157
 msgid ""
@@ -605,6 +642,8 @@ msgid ""
 "throughout each cell of the mesh. That is the entire cell (2D face or 3D "
 "volume) has is assigned the value of that attribute."
 msgstr ""
+"セルデータは、メッシュの各セル全体に存在する値の配列(スカラー、ベクトルなど)を参照します。つまり、セル全体(2 D面または3 "
+"D体積)にその属性の値が割り当てられます。"
 
 #: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:173
 msgid ""
@@ -612,3 +651,4 @@ msgid ""
 "interpolated across cells when mapping colors unlike cell data which has a "
 "single value across the cell's domain:"
 msgstr ""
+"ここでは、点データとセルデータを比較し、セルのドメイン全体に単一の値を持つセルデータとは異なり、色をマッピングするときに点データがセル間でどのように補間されるかを示します。"
