@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-09 00:26+0000\n"
+"POT-Creation-Date: 2020-08-15 00:26+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -31,31 +31,30 @@ msgid ""
 "geometrical representations of a surface or volume in 3D space. In VTK, this"
 " superclass is represented by the ``vtk.vtkDataSet`` abstract class."
 msgstr ""
-"データセットは任意の空間的参照情報であり、通常は3 "
-"D空間内のサーフェスまたはボリュームのジオメトリ表現で構成されます。VTKにおいて、このスーパークラスは ``vtk.vtkDataSet`` "
-"抽象クラスによって表現されます。"
+"データセットは任意の空間的参照情報であり、通常は3 D空間内の表面またはボリュームのジオメトリ表現で構成されます。VTKにおいて、このスーパークラスは "
+"``vtk.vtkDataSet`` 抽象クラスによって表現されます。"
 
 #: ../../pyvista/docs/core/common.rst:10
 msgid ""
 "In VTK, datasets consist of geometry, topology, and attributes to which "
 "PyVista provides direct access:"
-msgstr ""
+msgstr "VTKでは、データセットは、PyVistaが直接アクセスを提供するジオメトリ、トポロジ、および属性で構成されます:"
 
 #: ../../pyvista/docs/core/common.rst:13
 msgid "Geometry is the collection of points and cells in 2D or 3D space."
-msgstr ""
+msgstr "ジオメトリは、2 Dまたは3 D空間の点とセルの集合です。"
 
 #: ../../pyvista/docs/core/common.rst:14
 msgid ""
 "Topology defines the structure of the dataset, or how the points are "
 "connected to each other to form a cells making a surface or volume."
-msgstr ""
+msgstr "トポロジは、データセットの構造、または表面やボリュームを作成するセルを形成するためにポイントを相互に接続する方法を定義します。"
 
 #: ../../pyvista/docs/core/common.rst:15
 msgid ""
 "Attributes are any data values that are associated to either the points or "
 "cells of the dataset"
-msgstr ""
+msgstr "属性は、データセットの点またはセルのいずれかに関連付けられた任意のデータ値です。"
 
 #: ../../pyvista/docs/core/common.rst:17
 msgid ""
@@ -63,6 +62,8 @@ msgid ""
 " a set of common functionality which we wrap into the base class "
 ":class:`pyvista.Common`."
 msgstr ""
+"以下のデータタイプのすべては、データセットのサブクラスにリストされ、基本クラス :class:`pyvista.Common` "
+"にラップする共通の機能セットを共有します。"
 
 #: ../../pyvista/docs/core/common.rst:23
 msgid "The Common Model"
@@ -74,6 +75,8 @@ msgid ""
 "spatially referenced datasets in PyVista. This base class is analogous to "
 "VTK's ``vtk.vtkDataSet`` class."
 msgstr ""
+":class:`pyvista.Common` クラスは、PyVistaで空間的に参照される全てのデータセットに *共通な* "
+"属性を保持します。この基本クラスはVTKの ``vtk.vtkDataSet`` クラスに似ています。"
 
 #: ../../pyvista/docs/core/common.rst:31
 #: ../../pyvista/docs/core/composite.rst:11
@@ -85,7 +88,7 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:330
 #: ../../pyvista/docs/core/points.rst:123
 msgid "Attributes"
-msgstr ""
+msgstr "属性"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`active_scalar <pyvista.Common.active_scalar>`\\"
@@ -108,7 +111,7 @@ msgstr ":obj:`active_scalar_info <pyvista.Common.active_scalar_info>`\\"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.active_scalar_info:1
 msgid "Return the active scalar's field and name."
-msgstr ""
+msgstr "アクティブなスカラーのフィールドと名前を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`active_scalar_name <pyvista.Common.active_scalar_name>`\\"
@@ -121,7 +124,7 @@ msgstr ":obj:`active_scalar_name <pyvista.Common.active_scalar_name>`\\"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.active_scalars_name:1
 msgid "Return the active scalar's name."
-msgstr ""
+msgstr "アクティブなスカラーの名前を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`active_scalars <pyvista.Common.active_scalars>`\\"
@@ -152,7 +155,7 @@ msgstr ":obj:`active_vectors <pyvista.Common.active_vectors>`\\"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.active_vectors:1
 msgid "Return the active vectors array."
-msgstr ""
+msgstr "アクティブなベクトル配列を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`active_vectors_info <pyvista.Common.active_vectors_info>`\\"
@@ -194,7 +197,7 @@ msgstr ":obj:`bounds <pyvista.Common.bounds>`\\"
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.bounds:1
 msgid "Return the bounding box of this dataset."
-msgstr ""
+msgstr "このデータセットの境界ボックスを返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`cell_arrays <pyvista.Common.cell_arrays>`\\"
@@ -225,7 +228,7 @@ msgstr ":obj:`extent <pyvista.Common.extent>`\\"
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.extent:1
 msgid "Return the range of the bounding box."
-msgstr ""
+msgstr "バウンディングボックスの範囲を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`length <pyvista.Common.length>`\\"
@@ -288,7 +291,7 @@ msgstr ":obj:`number_of_cells <pyvista.Common.number_of_cells>`\\"
 #: pyvista.PolyData.n_faces:1 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.number_of_faces:1
 msgid "Return the number of cells."
-msgstr ""
+msgstr "セルの数を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`number_of_points <pyvista.Common.number_of_points>`\\"
@@ -329,7 +332,7 @@ msgstr ":obj:`scalar_names <pyvista.Common.scalar_names>`\\"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.scalar_names:1
 msgid "Return the array names."
-msgstr ""
+msgstr "配列名を返します。"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`t_coords <pyvista.Common.t_coords>`\\"
@@ -867,40 +870,6 @@ msgstr ""
 msgid "Return type"
 msgstr "戻り値の型"
 
-#: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.arrows:8
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_largest:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_surface:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.boolean_add:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.boolean_cut:9
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.boolean_difference:9
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.boolean_union:9
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.clean:29
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.compute_normals:47
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.decimate:50
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.decimate_pro:32
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.fill_holes:19
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.geodesic:13
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.smooth:27
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.triangulate:9
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.tube:21
-msgid ":class:`pyvista.PolyData`"
-msgstr ":class:`pyvista.PolyData`"
-
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.bounds:3
 msgid "The form is: (xmin,xmax, ymin,ymax, zmin,zmax)."
 msgstr ""
@@ -1147,13 +1116,6 @@ msgid "**int**"
 msgstr "**int**"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.Common.find_closest_point:15
-msgid ""
-":class:`the index` of :class:`the point in this mesh that is closes` to "
-":class:`the given point.`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.get_data_range:3
 msgid ""
 "The name of the array to get the range. If None, the active scalars is used."
@@ -1273,29 +1235,28 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:33
 msgid ""
-"* **cpos** (:class:`list`) -- List of camera position, focal point, and view"
-" up. * **img** (:class:`numpy.ndarray`) -- Array containing pixel RGB and "
-"alpha.  Sized:   [Window height x Window width x 3] for "
-"transparent_background=False   [Window height x Window width x 4] for "
-"transparent_background=True   Returned only when screenshot enabled"
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
+"   [Window height x Window width x 3] for transparent_background=False   "
+"[Window height x Window width x 4] for transparent_background=True   "
+"Returned only when screenshot enabled"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:33
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:33
 msgid ""
-"**cpos** (:class:`list`) -- List of camera position, focal point, and view "
-"up."
+"**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:34
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:34
 msgid ""
-"**img** (:class:`numpy.ndarray`) -- Array containing pixel RGB and alpha.  "
-"Sized: [Window height x Window width x 3] for transparent_background=False "
-"[Window height x Window width x 4] for transparent_background=True Returned "
-"only when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
+"[Window height x Window width x 3] for transparent_background=False [Window "
+"height x Window width x 4] for transparent_background=True Returned only "
+"when screenshot enabled"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -1349,16 +1310,6 @@ msgstr ""
 #: of pyvista.PolyData.volume:5
 msgid "**volume** -- Total volume of the mesh."
 msgstr "**volume** -- メッシュの合計ボリュームです。"
-
-#: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.volume:4
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.volume:4 ../../pyvista/pyvista/core/filters.pydocstring
-#: of pyvista.PolyDataFilters.geodesic_distance:9
-#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:4
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.volume:6
-msgid ":class:`float`"
-msgstr ""
 
 #: ../../pyvista/docs/core/composite.rst:2
 msgid "Composite Datasets"
@@ -1659,12 +1610,6 @@ msgid "**newobject** -- Deep or shallow copy of the input."
 msgstr "**newobject** -- 入力の深いまたは浅いコピーです。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.copy:7 ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.DataObject.copy:7
-msgid ":class:`same as input`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get:3
 msgid "If the name is non-unique then returns the first occurrence."
 msgstr ""
@@ -1881,7 +1826,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.compute_implicit_distance:1
 msgid "Compute the implicit distance from the points to a surface."
-msgstr "ポイントからサーフェスまでのインプリシット距離を計算します。"
+msgstr "ポイントから表面までのインプリシット距離を計算します。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2026,7 +1971,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_feature_edges:1
 msgid "Extract edges from the surface of the mesh."
-msgstr "メッシュのサーフェスからエッジを抽出します。"
+msgstr "メッシュの表面からエッジを抽出します。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2295,7 +2240,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:1
 msgid "Mark points as to whether they are inside a closed surface."
-msgstr "ポイントが閉じたサーフェスの内側にあるかどうかをマークします。"
+msgstr "ポイントが閉じた表面の内側にあるかどうかをマークします。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -3295,19 +3240,6 @@ msgid "**subgrid** -- Subselected grid"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_cells:7
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_points:7
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.triangulate:9
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.CompositeFilters.triangulate:9
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.linear_copy:15
-msgid ":class:`pyvista.UnstructuredGrid`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_edges:3
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_feature_edges:3
@@ -3316,7 +3248,7 @@ msgid ""
 " extracted and used. From vtk documentation, the edges are one of the "
 "following"
 msgstr ""
-"指定したメッシュがPolyDataでない場合、指定したメッシュの外部サーフェスが抽出されて使用されます。vtkのドキュメントによると、エッジは次のいずれかです。"
+"指定したメッシュがPolyDataでない場合、指定したメッシュの外部表面が抽出されて使用されます。vtkのドキュメントによると、エッジは次のいずれかです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_edges:7
@@ -3388,13 +3320,6 @@ msgstr "新しいメッシュを返すか、入力を上書きします。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_feature_edges:26
 msgid "**edges** -- Extracted edges. None if inplace=True."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_edges:27
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.extract_feature_edges:27
-msgid ":class:`pyvista.vtkPolyData`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -3624,11 +3549,6 @@ msgid "**merged_grid** -- Merged grid.  Returned when inplace is False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.merge:22
-msgid ":class:`vtk.UnstructuredGrid`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.merge:25
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:50
@@ -3828,11 +3748,6 @@ msgstr "線を分割する断片の数。既定値は入力メッシュ内のセ
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.sample_over_line:14
 msgid "**sampled_line** -- Line object with sampled data from dataset."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.sample_over_line:15
-msgid ":class:`pv.PolyData`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4213,13 +4128,6 @@ msgid "**surf_ind** -- Indices of the surface points."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.surface_indices:4
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.curvature:17
-msgid ":class:`np.ndarray`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:3
 msgid ""
 "This is often used to define a plane to texture map an image to this "
@@ -4428,11 +4336,6 @@ msgstr "Trueの場合、関数はメッシュをインプレイス更新し、 `
 #: pyvista.DataSetFilters.warp_by_vector:18
 msgid "**warped_mesh** -- The warped mesh resulting from the operation."
 msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.warp_by_vector:19
-msgid ":class:`mesh`"
-msgstr ":class:`mesh`"
 
 #: ../../pyvista/docs/core/filters.rst:32
 msgid "PolyData Filters"
@@ -5561,13 +5464,6 @@ msgid "**cpos** -- List of camera position, focal point, and view up"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.plot_curvature:14
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PointGrid.plot_curvature:15
-msgid ":class:`list`"
-msgstr ":class:`list`"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:3
 msgid ""
 "This requires a mesh and a line segment defined by an origin and end_point."
@@ -5601,24 +5497,24 @@ msgstr "画面から印刷します。ユニットテストに使用します。
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:17
 msgid ""
-"* **intersection_points** (:class:`np.ndarray`) -- Location of the "
-"intersection points.  Empty array if no   intersections. * "
-"**intersection_cells** (:class:`np.ndarray`) -- Indices of the intersection "
-"cells.  Empty array if no   intersections."
+"* **intersection_points** (*np.ndarray*) -- Location of the intersection "
+"points.  Empty array if no   intersections. * **intersection_cells** "
+"(*np.ndarray*) -- Indices of the intersection cells.  Empty array if no   "
+"intersections."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:17
 msgid ""
-"**intersection_points** (:class:`np.ndarray`) -- Location of the "
-"intersection points.  Empty array if no intersections."
+"**intersection_points** (*np.ndarray*) -- Location of the intersection "
+"points.  Empty array if no intersections."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:19
 msgid ""
-"**intersection_cells** (:class:`np.ndarray`) -- Indices of the intersection "
-"cells.  Empty array if no intersections."
+"**intersection_cells** (*np.ndarray*) -- Indices of the intersection cells."
+"  Empty array if no intersections."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -5648,24 +5544,24 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:17
 msgid ""
-"* **mesh** (:class:`pyvista.PolyData`) -- Mesh without the points flagged "
-"for removal.  Not returned   when inplace=False. * **ridx** "
-"(:class:`np.ndarray`) -- Indices of new points relative to the original "
-"mesh.  Not   returned when inplace=False."
+"* **mesh** (*pyvista.PolyData*) -- Mesh without the points flagged for "
+"removal.  Not returned   when inplace=False. * **ridx** (*np.ndarray*) -- "
+"Indices of new points relative to the original mesh.  Not   returned when "
+"inplace=False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:17
 msgid ""
-"**mesh** (:class:`pyvista.PolyData`) -- Mesh without the points flagged for "
+"**mesh** (*pyvista.PolyData*) -- Mesh without the points flagged for "
 "removal.  Not returned when inplace=False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:19
 msgid ""
-"**ridx** (:class:`np.ndarray`) -- Indices of new points relative to the "
-"original mesh.  Not returned when inplace=False."
+"**ridx** (*np.ndarray*) -- Indices of new points relative to the original "
+"mesh.  Not returned when inplace=False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -5869,11 +5765,6 @@ msgstr ""
 #: pyvista.PolyDataFilters.subdivide:27
 msgid "**mesh** -- pyvista polydata object.  None when inplace=True"
 msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.subdivide:28
-msgid ":class:`Polydata object`"
-msgstr ":class:`Polydata object`"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:37
@@ -7386,7 +7277,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PointGrid.plot_curvature:1
 msgid "Plot the curvature of the external surface of the grid."
-msgstr "グリッドの外部サーフェスの曲率をプロットします。"
+msgstr "グリッドの外部表面の曲率をプロットします。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PointGrid:1
 msgid "Bases: :class:`pyvista.core.pointset.PointSet`"
@@ -7538,7 +7429,7 @@ msgstr ":obj:`area <pyvista.PolyData.area>`\\"
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:1
 msgid "Return the mesh surface area."
-msgstr "メッシュサーフェス領域を返します。"
+msgstr "メッシュ表面領域を返します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"

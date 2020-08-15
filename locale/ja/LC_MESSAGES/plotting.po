@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-09 00:26+0000\n"
+"POT-Creation-Date: 2020-08-15 00:26+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -102,7 +102,7 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:112
 #: ../../pyvista/docs/plotting/widgets.rst:393
 msgid "Attributes"
-msgstr ""
+msgstr "属性"
 
 #: ../../pyvista/docs/plotting/itk_plotting.rst:76
 #: ../../pyvista/docs/plotting/plotting.rst:75
@@ -574,11 +574,6 @@ msgstr ""
 msgid "Return type"
 msgstr "戻り値の型"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.PlotterITK.show:8
-msgid ":class:`itkwidgets.Viewer`"
-msgstr ":class:`itkwidgets.Viewer`"
-
 #: ../../pyvista/docs/plotting/plotting.rst:6
 msgid ""
 "When plotting with the interactive rendering windows in VTK, several "
@@ -797,25 +792,24 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot:33
 msgid ""
-"* **cpos** (:class:`list`) -- List of camera position, focal point, and view"
-" up. * **img** (:class:`numpy.ndarray`) -- Array containing pixel RGB and "
-"alpha.  Sized:   [Window height x Window width x 3] for "
-"transparent_background=False   [Window height x Window width x 4] for "
-"transparent_background=True   Returned only when screenshot enabled"
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
+"   [Window height x Window width x 3] for transparent_background=False   "
+"[Window height x Window width x 4] for transparent_background=True   "
+"Returned only when screenshot enabled"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot:33
 msgid ""
-"**cpos** (:class:`list`) -- List of camera position, focal point, and view "
-"up."
+"**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot:34
 msgid ""
-"**img** (:class:`numpy.ndarray`) -- Array containing pixel RGB and alpha.  "
-"Sized: [Window height x Window width x 3] for transparent_background=False "
-"[Window height x Window width x 4] for transparent_background=True Returned "
-"only when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
+"[Window height x Window width x 3] for transparent_background=False [Window "
+"height x Window width x 4] for transparent_background=True Returned only "
+"when screenshot enabled"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot_arrows:1
@@ -2554,22 +2548,22 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_actor:15
 msgid ""
-"* **actor** (:class:`vtk.vtkActor`) -- The actor. * **actor_properties** "
-"(:class:`vtk.Properties`) -- Actor properties."
+"* **actor** (*vtk.vtkActor*) -- The actor. * **actor_properties** "
+"(*vtk.Properties*) -- Actor properties."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_actor:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_actor:15
-msgid "**actor** (:class:`vtk.vtkActor`) -- The actor."
+msgid "**actor** (*vtk.vtkActor*) -- The actor."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_actor:16
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_actor:16
-msgid "**actor_properties** (:class:`vtk.Properties`) -- Actor properties."
+msgid "**actor_properties** (*vtk.Properties*) -- Actor properties."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2607,13 +2601,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_axes_at_origin:3
 msgid "**marker_actor** -- vtkAxesActor actor"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_axes_at_origin:4
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.Renderer.add_axes_at_origin:4
-msgid ":class:`vtk.vtkAxesActor`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2946,13 +2933,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_checkbox_button_widget:26
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.WidgetHelper.add_checkbox_button_widget:26
-msgid ":class:`vtk.vtkButtonWidget`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_floor:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_floor:3
@@ -3156,11 +3136,6 @@ msgid "**legend** -- Actor for the legend."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_legend:35
-msgid ":class:`vtk.vtkLegendBoxActor`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_legend:49
 msgid "Alternative manual example"
 msgstr ""
@@ -3251,13 +3226,6 @@ msgstr ""
 #: pyvista.BasePlotter.add_lines:22
 msgid "**actor** -- Lines actor."
 msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_lines:23
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_mesh:161
-msgid ":class:`vtk.vtkActor`"
-msgstr ":class:`vtk.vtkActor`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_mesh:3
@@ -4172,11 +4140,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_point_labels:69
-msgid ":class:`vtk.vtkActor2D`"
-msgstr ":class:`vtk.vtkActor2D`"
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_scalar_labels:3
 msgid "Wrapper for :func:`pyvista.BasePlotter.add_point_labels`."
 msgstr ""
@@ -4580,11 +4543,6 @@ msgid "**textActor** -- Text actor added to plot"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_text:31
-msgid ":class:`vtk.vtkTextActor`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_text_slider_widget:1
 #: ../../pyvista/docs/plotting/widgets.rst:402:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
@@ -4604,13 +4562,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.WidgetHelper.add_text_slider_widget:26
 msgid "**slider_widget** -- The VTK slider widget configured to display text."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_text_slider_widget:27
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.WidgetHelper.add_text_slider_widget:27
-msgid ":class:`vtk.vtkSliderWidget`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4704,11 +4655,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:100
 msgid "**actor** -- VTK volume of the input data."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.add_volume:101
-msgid ":class:`vtk.vtkVolume`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5308,13 +5254,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.get_image_depth:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.screenshot:14
-msgid ":class:`numpy.ndarray`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.get_image_depth:14
 msgid ""
 "Values in image_depth are negative to adhere to a right-handed coordinate "
@@ -5379,11 +5318,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.loc_to_index:7
 msgid "**idx** -- Index of the render window."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.loc_to_index:8
-msgid ":class:`int`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5475,13 +5409,6 @@ msgstr ""
 msgid ""
 "**success** -- True when actor removed.  False when actor has not been "
 "removed."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.remove_actor:16
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.Renderer.remove_actor:16
-msgid ":class:`bool`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5760,13 +5687,6 @@ msgid "**cube_axes_actor** -- Bounds actor"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.show_bounds:77
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.Renderer.show_bounds:77
-msgid ":class:`vtk.vtkCubeAxesActor`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.show_grid:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.show_grid:3
@@ -6042,11 +5962,6 @@ msgstr ""
 #: pyvista.Plotter.show:32
 msgid "**cpos** -- List of camera position, focal point, and view up"
 msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.Plotter.show:33
-msgid ":class:`list`"
-msgstr ":class:`list`"
 
 #: ../../pyvista/docs/plotting/plotting.rst:109
 msgid "Renderer"
