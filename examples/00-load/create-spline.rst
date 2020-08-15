@@ -304,7 +304,7 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.512 seconds)
+   **Total running time of the script:** ( 0 minutes  3.537 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:
