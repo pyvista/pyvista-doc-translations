@@ -51,6 +51,7 @@ jobs:
         rm -Rf examples
         mv ./pyvista/docs/examples .
     - name: git_config
+      if: contains(github.ref, 'master')
       run: |
         git branch -a
         git checkout master
