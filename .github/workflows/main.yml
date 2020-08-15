@@ -51,12 +51,14 @@ jobs:
         rm -Rf examples
         mv ./pyvista/docs/examples .
     - name: git_config
+      if: contains(github.ref, 'master')
       run: |
         git branch -a
         git checkout master
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
     - name: commit
+      if: contains(github.ref, 'master')
       env:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
