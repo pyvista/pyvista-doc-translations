@@ -62,7 +62,7 @@ the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.936 seconds)
+   **Total running time of the script:** ( 0 minutes  18.395 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edges.py:

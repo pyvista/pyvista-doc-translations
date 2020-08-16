@@ -112,7 +112,7 @@ image's true colors are used and not mapped.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.288 seconds)
+   **Total running time of the script:** ( 0 minutes  16.396 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-image.py:

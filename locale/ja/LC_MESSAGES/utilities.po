@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-15 00:26+0000\n"
+"POT-Creation-Date: 2020-08-16 00:27+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -677,16 +677,8 @@ msgstr "**spline** -- スプラインのラインメッシュです。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.Spline:14
-msgid ""
-"Construct a spline >>> import numpy as np >>> import pyvista as pv >>> theta"
-" = np.linspace(-4 * np.pi, 4 * np.pi, 100) >>> z = np.linspace(-2, 2, 100) "
-">>> r = z**2 + 1 >>> x = r * np.sin(theta) >>> y = r * np.cos(theta) >>> "
-"points = np.column_stack((x, y, z)) >>> spline = pv.Spline(points, 1000)"
-msgstr ""
-"スプラインを作成する >>> import numpy as np >>> import pyvista as pv >>> theta = "
-"np.linspace(-4 * np.pi, 4 * np.pi, 100) >>> z = np.linspace(-2, 2, 100) >>> "
-"r = z**2 + 1 >>> x = r * np.sin(theta) >>> y = r * np.cos(theta) >>> points "
-"= np.column_stack((x, y, z)) >>> spline = pv.Spline(points, 1000)"
+msgid "Construct a spline"
+msgstr "スプラインを作成します"
 
 #: ../../pyvista/docs/utilities/index.rst:2
 msgid "Utilities"
@@ -722,14 +714,8 @@ msgstr "**surf** -- ParametricBohemianDome表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricBohemianDome:13
-msgid ""
-"Create a ParametricBohemianDome mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricBohemianDome() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
-"ParametricBohemianDomeを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricBohemianDome() >>> mesh.plot(color='w', "
-"smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricBohemianDome mesh"
+msgstr "ParametricBohemianDomeメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricBour:1
@@ -743,13 +729,8 @@ msgstr "**surf** -- ParametricBour表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricBour:8
-msgid ""
-"Create a ParametricBour mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricBour() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricBourを作成 >>> import pyvista >>> mesh = pyvista.ParametricBour() >>>"
-" mesh.plot(color='w', smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricBour mesh"
+msgstr "ParametricBourメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricBoy:1
@@ -789,13 +770,8 @@ msgstr "**surf** -- ParametricBoy表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricBoy:20
-msgid ""
-"Create a ParametricBoy mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricBoy() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricBoyメッシュを作成 >>> import pyvista >>> mesh = pyvista.ParametricBoy() "
-">>> mesh.plot(color='w', smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricBoy mesh"
+msgstr "ParametricBoyメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricDini:1
@@ -807,7 +783,7 @@ msgstr "Diniの表面を生成します。"
 msgid ""
 "ParametricDini generates Dini's surface.  Dini's surface is a surface that "
 "possesses constant negative Gaussian curvature"
-msgstr "ParametricDiniはDiniの表面を生成します。Diniの表面は一定の負のガウス曲率を持つ表面です"
+msgstr "ParametricDiniはDiniの表面を生成します。Diniの表面は一定の負のGauss曲率を持つ表面です"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricDini:6
@@ -830,13 +806,8 @@ msgstr "**surf** -- ParametricDini表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricDini:20
-msgid ""
-"Create a ParametricDini mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricDini() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricDiniメッシュを作成 >>> import pyvista >>> mesh = pyvista.ParametricDini()"
-" >>> mesh.plot(color='w', smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricDini mesh"
+msgstr "ParametricDiniメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricEllipsoid:1
@@ -890,14 +861,8 @@ msgstr "**surf** -- ParametricEllipsoid表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricEllipsoid:21
-msgid ""
-"Create a ParametricEllipsoid mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricEllipsoid() >>> mesh.plot(color='w', smooth_shading=True)"
-"  # doctest:+SKIP"
-msgstr ""
-"ParametricEllipsoidメッシュを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricEllipsoid() >>> mesh.plot(color='w', smooth_shading=True) "
-"# doctest:+SKIP"
+msgid "Create a ParametricEllipsoid mesh"
+msgstr "ParametricEllipsoidメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricEnneper:1
@@ -911,7 +876,7 @@ msgid ""
 "self-intersecting minimal surface possessing constant negative Gaussian "
 "curvature"
 msgstr ""
-"ParametricEnneperはEnneperの表面を生成します。Enneperの表面は、一定の負のガウス曲率を持つ自己交差最小表面です。"
+"ParametricEnneperはEnneperの表面を生成します。Enneperの表面は、一定の負のGauss曲率を持つ自己交差最小表面です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricEnneper:7
@@ -920,14 +885,8 @@ msgstr "**surf** -- ParametricEnneper表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricEnneper:12
-msgid ""
-"Create a ParametricEnneper mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricEnneper() >>> mesh.plot(color='w', smooth_shading=True)  #"
-" doctest:+SKIP"
-msgstr ""
-"ParametricEnneperを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricEnneper() >>> mesh.plot(color='w', smooth_shading=True) # "
-"doctest:+SKIP"
+msgid "Create a ParametricEnneper mesh"
+msgstr " ParametricEnneperメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricFigure8Klein:1
@@ -956,14 +915,8 @@ msgstr "**surf** -- ParametricFigure8Klein表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricFigure8Klein:15
-msgid ""
-"Create a ParametricFigure8Klein mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricFigure8Klein() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
-"ParametricFigure8Kleinメッシュを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricFigure8Klein() >>> mesh.plot(color='w', "
-"smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricFigure8Klein mesh"
+msgstr "  ParametricFigure8Kleinメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricHenneberg:1
@@ -977,14 +930,8 @@ msgstr "**surf** -- ParametricHenneberg表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricHenneberg:8
-msgid ""
-"Create a ParametricHenneberg mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricHenneberg() >>> mesh.plot(color='w', smooth_shading=True)"
-"  # doctest:+SKIP"
-msgstr ""
-"ParametricHennebergを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricHenneberg() >>> mesh.plot(color='w', smooth_shading=True) "
-"# doctest:+SKIP"
+msgid "Create a ParametricHenneberg mesh"
+msgstr " ParametricHennebergメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricKlein:1
@@ -1008,14 +955,8 @@ msgstr "**surf** -- ParametricKlein表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricKlein:13
-msgid ""
-"Create a ParametricKlein mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricKlein() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricKleinメッシュを作成 >>> import pyvista >>> mesh = "
-"pyvista.ParametricKlein() >>> mesh.plot(color='w', smooth_shading=True) # "
-"doctest:+SKIP"
+msgid "Create a ParametricKlein mesh"
+msgstr " ParametricKleinメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricKuen:1
@@ -1027,7 +968,7 @@ msgstr "Kuensの表面を生成します。"
 msgid ""
 "ParametricKuen generates Kuens' surface. This surface has a constant "
 "negative gaussian curvature."
-msgstr "ParametricKuenはKuensのサーフェスを生成します。このサーフェスは一定の負のガウス曲率を持ちます。"
+msgstr "ParametricKuenはKuensのサーフェスを生成します。このサーフェスは一定の負のGauss曲率を持ちます。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricKuen:6
@@ -1047,13 +988,8 @@ msgstr "**surf** -- ParametricKuen表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricKuen:18
-msgid ""
-"Create a ParametricKuen mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricKuen() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricKuenメッシュを作成 >>> import pyvista >>> mesh = pyvista.ParametricKuen()"
-" >>> mesh.plot(color='w', smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricKuen mesh"
+msgstr " ParametricKuenメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricMobius:1
@@ -1072,13 +1008,8 @@ msgstr "**surf** -- ParametricMobiusサーフェス"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricMobius:11
-msgid ""
-"Create a ParametricMobius mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricMobius() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
-"ParametricMobiusを作成 >>> import pyvista >>> mesh = pyvista.ParametricMobius()"
-" >>> mesh.plot(color='w', smooth_shading=True) # doctest:+SKIP"
+msgid "Create a ParametricMobius mesh"
+msgstr "  ParametricMobiusメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPluckerConoid:1
@@ -1092,29 +1023,28 @@ msgid ""
 "Plucker's conoid is a ruled surface, named after Julius Plucker. It is "
 "possible to set the number of folds in this class via the parameter 'N'."
 msgstr ""
+"ParametricPluckerConoidは、Pluckerの円錐サーフェスをパラメトリックに生成します。Plucker's "
+"conoidは、Julius Pluckerにちなんで命名されたルールド表面です。パラメータ'N'を使用して、このクラスの折りたたみ数を設定できます。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPluckerConoid:7
 msgid "This is the number of folds in the conoid."
-msgstr ""
+msgstr "これは、円錐曲線の折り目の数です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPluckerConoid:12
 msgid "**surf** -- ParametricPluckerConoid surface"
-msgstr ""
+msgstr "**surf** -- ParametricPluckerConoid表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPluckerConoid:17
-msgid ""
-"Create a ParametricPluckerConoid mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricPluckerConoid() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricPluckerConoid mesh"
+msgstr " ParametricPluckerConoidメッシュを作成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPseudosphere:1
 msgid "Generate a pseudosphere."
-msgstr ""
+msgstr "pseudosphereを生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPseudosphere:3
@@ -1123,24 +1053,22 @@ msgid ""
 " is generated as a surface of revolution of the tractrix about it's "
 "asymptote, and is a surface of constant negative Gaussian curvature."
 msgstr ""
+"ParametricPseudosphereはパラメトリック擬似球を生成します。擬似球は、その漸近線の周りの準線の回転面として生成され、一定の負のGauss曲率の面です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPseudosphere:8
 msgid "**surf** -- ParametricPseudosphere surface"
-msgstr ""
+msgstr "**surf** -- ParametricPseudosphere表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricPseudosphere:13
-msgid ""
-"Create a ParametricPseudosphere mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricPseudosphere() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricPseudosphere mesh"
+msgstr "ParametricPseudosphereメッシュを生成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:1
 msgid "Generate a surface covered with randomly placed hills."
-msgstr ""
+msgstr "ランダムに配置された丘で覆われた表面を生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:3
@@ -1151,26 +1079,27 @@ msgid ""
 " provided for placing hills on a regular grid on the surface.  In this case "
 "the hills will all have the same shape and height."
 msgstr ""
+"ParametricRandomHillsは、ランダムに配置された丘で覆われた表面を生成します。丘の形状と高さは、隣接する丘の存在が丘の形状と高さに影響するため、丘の形状と高さはさまざまです。サーフェス上の通常のグリッドに丘を配置するためのオプションが用意されています。この場合、丘はすべて同じ形状と高さになります。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:10
 msgid "The number of hills. Default is 30."
-msgstr ""
+msgstr "丘の数。デフォルトは30です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:13
 msgid "The hill variance in the x-direction. Default is 2.5."
-msgstr ""
+msgstr "x方向の丘の変化。デフォルトは2.5です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:16
 msgid "The hill variance in the y-direction. Default is 2.5."
-msgstr ""
+msgstr "y方向の丘の変化。デフォルトは2.5です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:19
 msgid "The hill amplitude (height). Default is 2."
-msgstr ""
+msgstr "丘の振幅 (高さ) 。デフォルトは2です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:22
@@ -1179,62 +1108,57 @@ msgid ""
 "random number generator, a negative value will initialize it with the system"
 " time. Default is 1."
 msgstr ""
+"乱数ジェネレータのシード値を1に設定すると乱数ジェネレータが初期化され、負の値に設定するとシステム時間で初期化されます。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:27
 msgid "The scaling factor for the variance in the x-direction. Default is 13."
-msgstr ""
+msgstr "x方向の分散のスケール係数。デフォルトは13です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:30
 msgid "The scaling factor for the variance in the y-direction. Default is 13."
-msgstr ""
+msgstr "y方向の分散のスケール係数。デフォルトは13です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:33
 msgid "The scaling factor for the amplitude. Default is 13."
-msgstr ""
+msgstr "振幅のスケール係数。デフォルトは13です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:37
 msgid "**surf** -- ParametricRandomHills surface"
-msgstr ""
+msgstr "**surf** -- ParametricRandomHills表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRandomHills:42
-msgid ""
-"Create a ParametricRandomHills mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricRandomHills() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricRandomHills mesh"
+msgstr "ParametricRandomHillsメッシュを生成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRoman:1
 msgid "Generate Steiner's Roman Surface."
-msgstr ""
+msgstr "SteinerのRoman表面を生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRoman:3
 msgid "The radius. Default is 1."
-msgstr ""
+msgstr "半径。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRoman:6
 msgid "**surf** -- ParametricRoman surface"
-msgstr ""
+msgstr "**surf** -- ParametricRoman表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricRoman:11
-msgid ""
-"Create a ParametricRoman mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricRoman() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricRoman mesh"
+msgstr "ParametricRomanメッシュを生成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:1
 msgid "Generate a superellipsoid."
-msgstr ""
+msgstr "超楕円体を生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:3
@@ -1244,34 +1168,32 @@ msgid ""
 "special cases it can represent a sphere, square box, and closed cylindrical "
 "can."
 msgstr ""
+"ParametricSuperEllipsoidは、超楕円体を生成します。超楕円体は、n1とn2の2つのパラメータによって制御される汎用プリミティブです。特殊な場合として、球、正方形のボックス、および閉じた円柱状の缶を表すことができます。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:14
 msgid "The \"squareness\" parameter in the z axis.  Default is 1."
-msgstr ""
+msgstr "z軸の \"直角度\" パラメータ。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:16
 msgid "The \"squareness\" parameter in the x-y plane. Default is 1."
-msgstr ""
+msgstr "x-y平面の \"squareness\" パラメータ。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:19
 msgid "**surf** -- ParametricSuperEllipsoid surface"
-msgstr ""
+msgstr "**surf** -- ParametricSuperEllipsoid表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperEllipsoid:24
-msgid ""
-"Create a ParametricSuperEllipsoid mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricSuperEllipsoid() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricSuperEllipsoid mesh"
+msgstr "ParametricSuperEllipsoidメッシュを生成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:1
 msgid "Generate a supertoroid."
-msgstr ""
+msgstr "スーパートロイドを生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:3
@@ -1284,81 +1206,79 @@ msgid ""
 " the ring. It is the different values of these powers which give rise to a "
 "family of 3D shapes that are all basically toroidal in shape."
 msgstr ""
+"ParametricSuperToroidがスーパートロイドを生成します。本質的にスーパートロイドは、正弦項と余弦項を累乗したトーラスです。スーパートロイドは、4つのパラメータr0、r1、n1、およびn2によって制御される汎用プリミティブです。r0、r"
+" "
+"1はトーラスのタイプを決定し、n1の値はトーラスリングの形状を決定し、n2はリングの断面の形状を決定します。これらのパワーの異なる値によって、形状がすべて基本的にトロイダルな3"
+" D形状のファミリが生成されます。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:12
 msgid ""
 "The radius from the center to the middle of the ring of the supertoroid. "
 "Default is 1."
-msgstr ""
+msgstr "スーパートロイドのリングの中心から中心までの半径。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:15
 msgid ""
 "The radius of the cross section of ring of the supertoroid. Default = 0.5."
-msgstr ""
+msgstr "スーパートロイドのリングの断面の半径。既定値は0.5です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:24
 msgid "The shape of the torus ring.  Default is 1."
-msgstr ""
+msgstr "トーラスリングの形状。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:26
 msgid "The shape of the cross section of the ring. Default is 1."
-msgstr ""
+msgstr "リングの断面の形状。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:29
 msgid "**surf** -- ParametricSuperToroid surface"
-msgstr ""
+msgstr "**surf** -- ParametricSuperToroid表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricSuperToroid:34
-msgid ""
-"Create a ParametricSuperToroid mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricSuperToroid() >>> mesh.plot(color='w', "
-"smooth_shading=True)  # doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricSuperToroid mesh"
+msgstr "ParametricSuperToroidメッシュを生成"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricTorus:1
 msgid "Generate a torus."
-msgstr ""
+msgstr "トーラスを生成します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricTorus:3
 msgid ""
 "The radius from the center to the middle of the ring of the torus. Default "
 "is 1.0."
-msgstr ""
+msgstr "円環体の中心から中央までの半径。デフォルトは1.0です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricTorus:6
 msgid "The radius of the cross section of ring of the torus. Default is 0.5."
-msgstr ""
+msgstr "トーラスのリングの断面の半径。デフォルトは0.5です。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricTorus:9
 msgid "**surf** -- ParametricTorus surface"
-msgstr ""
+msgstr "**surf** -- ParametricTorus表面"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.ParametricTorus:14
-msgid ""
-"Create a ParametricTorus mesh >>> import pyvista >>> mesh = "
-"pyvista.ParametricTorus() >>> mesh.plot(color='w', smooth_shading=True)  # "
-"doctest:+SKIP"
-msgstr ""
+msgid "Create a ParametricTorus mesh"
+msgstr "ParametricTorusメッシュを生成"
 
 #: ../../pyvista/docs/utilities/parametric.rst:26
 msgid "These functions support building parametric surfaces:"
-msgstr ""
+msgstr "次の関数は、パラメトリックサーフェスの作成をサポートしています。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.parametric_keywords:1
 msgid "Apply keyword arguments to a parametric function."
-msgstr ""
+msgstr "パラメトリック関数にキーワード引数を適用します。"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.parametric_keywords:3
@@ -1444,30 +1364,30 @@ msgstr "ユーティリティルーチン。"
 #: ../../pyvista/pyvista/utilities/errors.pydocstring of
 #: pyvista.set_error_output_file:1
 msgid "Set a file to write out the VTK errors."
-msgstr ""
+msgstr "VTKエラーを書き出すファイルを設定します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.trans_from_matrix:1
 msgid "Convert a vtk matrix to a numpy.ndarray."
-msgstr ""
+msgstr "vtk行列をnumpy.ndarrayに変換する。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.is_inside_bounds:1
 msgid "Check if a point is inside a set of bounds."
-msgstr ""
+msgstr "ポイントが境界のセット内にあるかどうかをチェックします。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.is_inside_bounds:3
 msgid "This is implemented through recursion so that this is N-dimensional."
-msgstr ""
+msgstr "これは再帰的に実装されているため、N次元になります。"
 
 #: ../../pyvista/docs/utilities/utilities.rst:14
 msgid "Object Conversions"
-msgstr ""
+msgstr "オブジェクト変換"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.wrap:1
 msgid "Wrap any given VTK data object to its appropriate PyVista data object."
-msgstr ""
+msgstr "与えられたVTKデータオブジェクトを適切なPyVistaデータオブジェクトにラップします。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.wrap:3
 msgid ""
@@ -1475,6 +1395,8 @@ msgid ""
 " vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be "
 "scalars."
 msgstr ""
+"サポートされているその他の形式には、XYZ頂点 * 3D :class:`numpy.ndarray` の * 2D "
+":class:`numpy.ndarray` があり、ボリュームを表します。値はスカラーです。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.is_pyvista_dataset:1
@@ -1486,25 +1408,26 @@ msgstr "ObjectがPyVistaでラップされたデータセットである場合�
 msgid ""
 "Convert ``vtkImageData`` (:class:`pyvista.UniformGrid`) to a ``vtkTexture``."
 msgstr ""
+"``vtkImageData`` (:class:`pyvista.UniformGrid`) を ``vtkTexture`` に変換します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.numpy_to_texture:1
 msgid "Convert a NumPy image array to a vtk.vtkTexture."
-msgstr ""
+msgstr "NumPyイメージ配列をvtk.vtkTextureに変換します。"
 
 #: ../../pyvista/docs/utilities/utilities.rst:26
 msgid "File IO"
-msgstr ""
+msgstr "ファイルIO"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:1
 msgid "Read any VTK file."
-msgstr ""
+msgstr "VTKファイルを読み込みます。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:3
 msgid ""
 "It will figure out what reader to use then wrap the VTK object for use in "
 "PyVista."
-msgstr ""
+msgstr "どのリーダーを使用するかを判断し、PyVistaで使用するVTKオブジェクトをラップします。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:6
 msgid ""
@@ -1512,6 +1435,8 @@ msgid ""
 ":class:`pyvista.MultiBlock` dataset is returned with each file being a "
 "separate block in the dataset."
 msgstr ""
+"読み込むファイルへの文字列パス。ファイルのリストが与えられた場合、 :class:`pyvista.MultiBlock` "
+"データセットが返され、各ファイルはデータセット内の個別のブロックです。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:10
 msgid ""
@@ -1519,58 +1444,58 @@ msgid ""
 " attribute/method names and values are the arguments passed to those calls. "
 "If you do not have any attributes to call, pass ``None`` as the value."
 msgstr ""
+"リーダーで呼び出す属性のディクショナリ。ディクショナリのキーは属性/メソッド名で、値はこれらの呼び出しに渡される引数です。呼び出す属性がない場合は、 "
+"``None`` を値として渡します。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:15
 msgid "Format of file to read with meshio."
-msgstr ""
+msgstr "meshioで読み込むファイルのフォーマット。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:20
-msgid ""
-"Load an example mesh >>> import pyvista >>> from pyvista import examples >>>"
-" mesh = pyvista.read(examples.antfile)"
-msgstr ""
+msgid "Load an example mesh"
+msgstr "サンプルメッシュをロードする"
 
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:25
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:26
 msgid "Load a vtk file"
 msgstr "vtkファイルをロードする"
 
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:29
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read:30
 msgid "Load a meshio file"
 msgstr "meshioファイルをロードする"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read_exodus:1
 msgid "Read an ExodusII file (``'.e'`` or ``'.exo'``)."
-msgstr ""
+msgstr "ExodusIIファイルを読み込みます(``'.e'`` または ``'.exo'`` )。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.read_texture:1
 msgid "Load a ``vtkTexture`` from an image file."
-msgstr ""
+msgstr "画像ファイルから ``vtkTexture`` を読み込みます。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.read_legacy:1
 msgid "Use VTK's legacy reader to read a file."
-msgstr ""
+msgstr "ファイルを読み取るには、VTKの従来のリーダーを使用します。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.save_meshio:1
 msgid "Save mesh to file using meshio."
-msgstr ""
+msgstr "meshioを使用してメッシュをファイルに保存します。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.save_meshio:3
 msgid "Any PyVista mesh/spatial data type."
-msgstr ""
+msgstr "任意のPyVistaメッシュ/空間データタイプ。"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of pyvista.save_meshio:5
 msgid "File type for meshio to save."
-msgstr ""
+msgstr "保存するファイルの種類を指定します。"
 
 #: ../../pyvista/docs/utilities/utilities.rst:40
 msgid "Mesh Creation"
-msgstr ""
+msgstr "メッシュ作成"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:1
 msgid "Make a connected line set given an array of points."
-msgstr ""
+msgstr "点の配列を指定して、接続された線分セットを作成します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:3
@@ -1579,70 +1504,74 @@ msgid ""
 " line segments would be represented as:  np.array([[0, 0, 0], [1, 0, 0], [1,"
 " 1, 0]])"
 msgstr ""
+"接続されたセグメントの頂点を表すポイント。たとえば、2つの線分セグメントは次のように表されます: np.array([[0, 0, 0], [1, 0,"
+" 0], [1, 1, 0]])"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:3
 msgid ""
 "Points representing the vertices of the connected segments. For example, two"
 " line segments would be represented as:"
-msgstr ""
+msgstr "接続されたセグメントの頂点を表すポイント。たとえば、2つの線分セグメントは次のように表されます: "
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:6
 msgid "np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0]])"
-msgstr ""
+msgstr "np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0]])"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:8
 msgid "If True, close the line segments into a loop"
-msgstr ""
+msgstr "Trueの場合、線分セグメントを閉じてループを作成します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.lines_from_points:11
 msgid "**lines** -- PolyData with lines and cells."
-msgstr ""
+msgstr "**lines** -- ラインとセルを持つPolyDataです。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.vtk_points:1
 msgid "Convert numpy points to a vtkPoints object."
-msgstr ""
+msgstr "numpyポイントをvtkPointsオブジェクトに変換します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.vector_poly_data:1
 msgid "Create a vtkPolyData object composed of vectors."
-msgstr ""
+msgstr "ベクトルで構成されたvtkPolyData オブジェクトを生成."
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.fit_plane_to_points:1
 msgid "Fit a plane to a set of points."
-msgstr ""
+msgstr "平面を点の集合にフィットさせます。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.fit_plane_to_points:3
 msgid "Size n by 3 array of points to fit a plane through"
-msgstr ""
+msgstr "平面にフィットするように点のn x 3配列をサイズ変更"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.fit_plane_to_points:5
 msgid "If true, also returns the center and normal used to generate the plane"
-msgstr ""
+msgstr "trueの場合、平面の生成に使用される中心と法線も返します。"
 
 #: ../../pyvista/docs/utilities/utilities.rst:52
 msgid "Array Access"
-msgstr ""
+msgstr "配列アクセス"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.get_array:1
 msgid "Search point, cell and field data for an array."
-msgstr ""
+msgstr "配列の検索ポイント、セル、およびフィールドのデータ。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.get_array:3
 msgid "The name of the array to get the range."
-msgstr ""
+msgstr "範囲を取得する配列の名前を指定します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.get_array:5
 msgid ""
 "When scalars is specified, this is the preferred array type to search for in"
 " the dataset.  Must be either ``'point'``, ``'cell'``, or ``'field'``"
 msgstr ""
+"スカラーが指定されている場合、これはデータセット内で検索するために推奨される配列型です。 ``'point'`` 、 ``'cell'`` 、または "
+"``'field'`` のいずれかでなければなりません"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.get_array:9
 msgid "Return info about the array rather than the array itself."
@@ -1650,27 +1579,27 @@ msgstr "配列そのものではなく、配列に関する情報を返します
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of pyvista.get_array:11
 msgid "Boolean to control whether to throw an error if array is not present."
-msgstr ""
+msgstr "配列が存在しない場合にエラーを投げるるかどうかを制御するブール型の値を指定します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_array:1
 msgid "Convert a NumPy array to a vtkDataArray or vice versa."
-msgstr ""
+msgstr "NumPy配列をvtkDataArrayに、またはその逆に変換します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_array:3
 msgid "A numpy array or vtkDataArry to convert"
-msgstr ""
+msgstr "変換する数値配列あるいはvtkDataArry"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_array:5
 msgid "The name of the data array for VTK"
-msgstr ""
+msgstr "VTKのデータ配列の名前"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_array:7
 msgid "if input is numpy array then deep copy values"
-msgstr ""
+msgstr "入力がnumpy arrayであれば、値を深くコピーします。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_array:10
@@ -1680,6 +1609,9 @@ msgid ""
 "``ndarray``). If pdf==True and the input is ``vtkDataArry``, return a pandas"
 " DataFrame."
 msgstr ""
+"変換後の配列(inputがNumPy ndarayの場合は ``vtkDataArray`` を返すか、inputが ``vtkDataArray`` "
+"の場合はNumPy  ``ndarray`` を返します)。pdf==Trueで、入力が ``vtkDataArry`` の場合、pandas "
+"DataFrameを返します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.point_array:1
@@ -1698,12 +1630,12 @@ msgstr "vtkオブジェクトのフィールド配列を返します。"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.get_vtk_type:1
 msgid "Look up the VTK type for a give python data type."
-msgstr ""
+msgstr "与えられたPythonデータ型をVTK型で検索します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.get_vtk_type:3
 msgid "Corrects for string type mapping issues."
-msgstr ""
+msgstr "文字列型マッピングの問題が修正されました。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.get_vtk_type:5
@@ -1713,12 +1645,12 @@ msgstr "**int**"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.vtk_bit_array_to_char:1
 msgid "Cast vtk bit array to a char array."
-msgstr ""
+msgstr "vtkビット配列をchar配列にキャストします。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_string_array:1
 msgid "Convert a numpy array of strings to a vtkStringArray or vice versa."
-msgstr ""
+msgstr "numpy配列をvtkStringArrayに、またはその逆に変換します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.convert_string_array:3
@@ -1727,3 +1659,5 @@ msgid ""
 "no support :). If you have ideas on how to make this faster, please consider"
 " opening a pull request."
 msgstr ""
+"これは非常に非効率的であることに注意してください-非効率的なサポートはサポートしないよりましです "
+":)。これをもっと早くする方法があれば、プルリクエストを開くことを検討してください。"
