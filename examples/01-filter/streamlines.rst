@@ -303,7 +303,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.251 seconds)
+   **Total running time of the script:** ( 0 minutes  17.015 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

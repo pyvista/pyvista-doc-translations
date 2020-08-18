@@ -141,19 +141,19 @@ for bone density noting:
         <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
         <table>
         <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>93041</td></tr>
-        <tr><td>N Points</td><td>113192</td></tr>
+        <tr><td>N Cells</td><td>92921</td></tr>
+        <tr><td>N Points</td><td>113003</td></tr>
         <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
         <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
-        <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
+        <tr><td>Z Bounds</td><td>-2.125e+00, 1.971e+00</td></tr>
         <tr><td>N Arrays</td><td>3</td></tr>
         </table>
 
         </td><td>
         <table>
         <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
-        <tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+        <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.067e+05</td></tr>
+        <tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>6.805e+05</td></tr>
         <tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
         </table>
 
@@ -209,20 +209,20 @@ added a scalar field that varies by the distance from the bounding surface.
         <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
         <table>
         <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>93041</td></tr>
-        <tr><td>N Points</td><td>113192</td></tr>
+        <tr><td>N Cells</td><td>92921</td></tr>
+        <tr><td>N Points</td><td>113003</td></tr>
         <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
         <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
-        <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
+        <tr><td>Z Bounds</td><td>-2.125e+00, 1.971e+00</td></tr>
         <tr><td>N Arrays</td><td>4</td></tr>
         </table>
 
         </td><td>
         <table>
         <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
+        <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.067e+05</td></tr>
         <tr><td>implicit_distance</td><td>Points</td><td>float64</td><td>1</td><td>-6.951e-01</td><td>4.148e-01</td></tr>
-        <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+        <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>6.805e+05</td></tr>
         <tr><td><b>density</b></td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
         </table>
 
@@ -263,7 +263,7 @@ added a scalar field that varies by the distance from the bounding surface.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  23.446 seconds)
+   **Total running time of the script:** ( 0 minutes  24.006 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_voxelize.py:
