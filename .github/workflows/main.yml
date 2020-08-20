@@ -51,7 +51,7 @@ jobs:
         rm -Rf examples
         mv ./pyvista/docs/examples .
     - name: git_config
-      if: "!contains(github.ref, 'master')"
+      if: contains(github.ref, 'master') == false
       run: |
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
