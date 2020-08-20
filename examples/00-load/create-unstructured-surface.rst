@@ -233,7 +233,7 @@ Finally, create the unstructured grid and plot it
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.565 seconds)
+   **Total running time of the script:** ( 0 minutes  1.736 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:

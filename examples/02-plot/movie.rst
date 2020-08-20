@@ -79,7 +79,7 @@ Create an animated MP4 movie of a rendering scene
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.382 seconds)
+   **Total running time of the script:** ( 0 minutes  9.816 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie.py:
