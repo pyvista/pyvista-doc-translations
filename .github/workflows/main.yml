@@ -50,6 +50,8 @@ jobs:
         sh ./locale/update.sh
         rm -Rf examples
         mv ./pyvista/docs/examples .
+        rm -Rf images
+        mv ./pyvista/docs/images .
     - name: git_config
       if: contains(github.ref, 'master')
       run: |
