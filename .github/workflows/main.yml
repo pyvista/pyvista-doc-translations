@@ -8,7 +8,6 @@ on:
 jobs:
   script:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, '[skip ci]') == false
     steps:
     - name: Get Job URL
       uses: Tiryoh/gha-jobid-action@v0
