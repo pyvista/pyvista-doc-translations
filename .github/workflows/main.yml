@@ -54,8 +54,6 @@ jobs:
     - name: git_config
       if: "!contains(github.ref, 'master')"
       run: |
-        git branch -a
-        git checkout tkoyama010-patch-1
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
     - name: commit
