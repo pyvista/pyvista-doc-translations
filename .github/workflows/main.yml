@@ -6,9 +6,13 @@ on:
     branches:
       - master
 jobs:
+  skipci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "[skip ci] ${{ contains(github.event.head_commit.message, '[skip ci]') }}"
   script:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
     steps:
     - name: Get Job URL
       uses: Tiryoh/gha-jobid-action@v0
