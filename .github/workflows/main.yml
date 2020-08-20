@@ -53,7 +53,7 @@ jobs:
         rm -Rf images
         mv ./pyvista/docs/images .
     - name: git_config
-      if: contains(github.ref, 'master') == false
+      if: contains(github.ref, 'master')
       run: |
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
