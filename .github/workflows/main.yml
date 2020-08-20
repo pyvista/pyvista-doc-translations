@@ -62,6 +62,7 @@ jobs:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
+        git checkout -b tkoyama010-patch-1
         git add .
         git commit --allow-empty -m ":green_heart: $JOB_ID
         $HTML_URL"
