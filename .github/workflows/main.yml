@@ -34,7 +34,7 @@ jobs:
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
-        pip install -U pip setuptools
+        pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
         deactivate
     - name: update
