@@ -40,6 +40,8 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
+        alias python="python3" 
+        alias pip="pip3" 
         export PYVISTA_VIRTUAL_DISPLAY=True
         export PYVISTA_OFF_SCREEN=true
         export PYVISTA_USE_PANEL=true
