@@ -55,6 +55,7 @@ jobs:
         pip install -U scipy
         pip install -U imageio-ffmpeg
         pip install -U matplotlib
+        pip install -U colorcet
         (cd pyvista/docs; make html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
