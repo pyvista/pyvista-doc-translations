@@ -90,7 +90,7 @@ Here's the same sphere with smooth shading:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.420 seconds)
+   **Total running time of the script:** ( 0 minutes  2.282 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_shading.py:

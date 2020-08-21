@@ -241,7 +241,7 @@ The eye dome lighting mode can also handle plotting scalar arrays:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  7.097 seconds)
+   **Total running time of the script:** ( 1 minutes  4.973 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edl.py:
