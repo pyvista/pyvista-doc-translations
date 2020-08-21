@@ -30,15 +30,20 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y --no-install-recommends python3-setuptools
         sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
+        sudo apt-get install -y --no-install-recommends python3-venv
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
-        pip3 install -U pip setuptools
-        pip3 install -r ./requirements.txt
+        python3 -m venv /home/runner/work/.venv
+        source /home/runner/work/.venv/bin/activate
+        pip install -U pip setuptools wheel
+        pip install -r ./requirements.txt
+        deactivate
     - name: update
       env:
         SPHINXINTL_TRANSIFEX_USERNAME: api
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
+        source /home/runner/work/.venv/bin/activate
         export PYVISTA_VIRTUAL_DISPLAY=True
         export PYVISTA_OFF_SCREEN=true
         export PYVISTA_USE_PANEL=true
@@ -47,11 +52,19 @@ jobs:
         git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
         source ./gl-ci-helpers/travis/setup_headless_display.sh
         rm -rf gl-ci-helpers
+        pip install -U scipy
+        pip install -U imageio-ffmpeg
+        pip install -U matplotlib
+        pip install -U colorcet
+        (cd pyvista/docs; make html)
         sh ./locale/update.sh
+        ls ./pyvista/docs/examples
         rm -Rf examples
         mv ./pyvista/docs/examples .
+        ls ./pyvista/docs/images
         rm -Rf images
         mv ./pyvista/docs/images .
+        deactivate
     - name: git_config
       if: contains(github.ref, 'master')
       run: |
