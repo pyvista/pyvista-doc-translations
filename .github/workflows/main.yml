@@ -52,6 +52,9 @@ jobs:
         git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
         source ./gl-ci-helpers/travis/setup_headless_display.sh
         rm -rf gl-ci-helpers
+        pip install -U scipy
+        pip install -U imageio-ffmpeg
+        pip install -U matplotlib
         (cd pyvista/docs; make html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
