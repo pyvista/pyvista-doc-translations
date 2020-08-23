@@ -1171,6 +1171,8 @@ msgid ""
 "help(pyvistanterface.Plotter.screenshot).  Default disabled.  When True, "
 "takes screenshot and returns numpy array of image."
 msgstr ""
+"有効にすると、スクリーンショットをファイルに保存します。help(pyvistanterface.Plotter.screenshot) "
+"を参照してください。デフォルトは無効です。Trueの場合、スクリーンショットを取得し、画像の配列を返します。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:11
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1208,31 +1210,31 @@ msgstr "Trueの場合、メッシュ境界を表示します。既定値はFalse
 msgid ""
 "When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
 " jupyter console is active."
-msgstr ""
+msgstr "Trueの場合、作成されたプロットはjupyterノートブック内に配置されます。jupyterコンソールがアクティブであると仮定します。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:24
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:24
 msgid "Shows a vtk axes widget.  Enabled by default."
-msgstr ""
+msgstr "vtk軸ウィジェットを表示します。既定では有効になっています。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:26
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:26
 msgid "Adds text at the bottom of the plot."
-msgstr ""
+msgstr "プロットの下部にテキストを追加します。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:28
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:28
 msgid "Use the ``add_volume`` method for volume rendering."
-msgstr ""
+msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用してください。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:30
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.plot:30
 msgid "See help(Plotter.add_mesh) for additional options."
-msgstr ""
+msgstr "その他のオプションについては、ヘルプ (Plotter.add_mesh) を参照してください。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:33
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1250,7 +1252,7 @@ msgstr ""
 #: pyvista.MultiBlock.plot:33
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
-msgstr ""
+msgstr "**cpos** (*list*) -- カメラ位置、焦点、およびビューアップのリスト。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:34
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1291,21 +1293,21 @@ msgstr "非推奨: 代わりに `array_names` を使用してください。"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.set_active_vectors:3
 msgid "To deactivate any active scalars, pass ``None`` as the ``name``."
-msgstr ""
+msgstr "アクティブなスカラーを非アクティブにするには、 ``None`` を ``name`` として渡します。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.textures:3
 msgid ""
 "When casting back to a VTK dataset or filtering this dataset, these textures"
 " will not be passed."
-msgstr ""
+msgstr "VTKデータセットにキャストバックするとき、またはこのデータセットをフィルタリングするとき、これらのテクスチャは渡されません。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.transform:3
 msgid "Accepts a vtk transformation object or a 4x4 transformation matrix."
-msgstr ""
+msgstr "vtk変換オブジェクトまたは4 x 4変換行列を受け入れます。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.translate:3
 msgid "Length 3 list or array."
-msgstr ""
+msgstr "長さ3のリストまたは配列。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.volume:3
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1316,12 +1318,12 @@ msgstr "**volume** -- メッシュの合計ボリュームです。"
 
 #: ../../pyvista/docs/core/composite.rst:2
 msgid "Composite Datasets"
-msgstr ""
+msgstr "複合データセット"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite:1
 msgid "Container to mimic ``vtkMultiBlockDataSet`` objects."
-msgstr ""
+msgstr "``vtkMultiBlockDataSet`` オブジェクトを模倣するコンテナです。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite:3
@@ -1329,10 +1331,11 @@ msgid ""
 "These classes hold many VTK datasets in one object that can be passed to VTK"
 " algorithms and PyVista filtering/plotting routines."
 msgstr ""
+"これらのクラスは、多くのVTKデータセットを1つのオブジェクトに保持し、VTKアルゴリズムとPyVistaフィルタリング/描画ルーチンに渡すことができます。"
 
 #: ../../pyvista/docs/core/composite.rst:8
 msgid "MultiBlock Datasets"
-msgstr ""
+msgstr "マルチブロックデータセット"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`bounds <pyvista.core.composite.pyvista.MultiBlock.bounds>`\\"
@@ -1384,7 +1387,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.append:1
 msgid "Add a data set to the next block index."
-msgstr ""
+msgstr "データセットを次のブロックインデックスに追加します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1398,7 +1401,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.clean:1
 msgid "Remove any null blocks in place."
-msgstr ""
+msgstr "Nullブロックをすべて削除します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`copy <pyvista.core.composite.pyvista.MultiBlock.copy>`\\ \\(\\[deep\\]\\)"
@@ -1410,7 +1413,7 @@ msgstr ":obj:`copy <pyvista.core.composite.pyvista.MultiBlock.copy>`\\ \\(\\[dee
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.copy:1
 msgid "Return a copy of the object."
-msgstr ""
+msgstr "オブジェクトのコピーを返します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1428,7 +1431,7 @@ msgstr ":obj:`get <pyvista.core.composite.pyvista.MultiBlock.get>`\\ \\(index\\)
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get:1
 msgid "Get a block by its index or name."
-msgstr ""
+msgstr "インデックスまたは名前でブロックを取得します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1442,7 +1445,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get_block_name:1
 msgid "Return the string name of the block at the given index."
-msgstr ""
+msgstr "指定したインデックスのブロック名を文字列で返します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1456,7 +1459,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get_data_range:1
 msgid "Get the min/max of an array given its name across all blocks."
-msgstr ""
+msgstr "すべてのブロックにわたる配列名の最小値/最大値を取得します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1470,7 +1473,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get_index_by_name:1
 msgid "Find the index number by block name."
-msgstr ""
+msgstr "ブロック名でインデックス番号を検索します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`keys <pyvista.core.composite.pyvista.MultiBlock.keys>`\\ \\(\\)"
@@ -1480,7 +1483,7 @@ msgstr ":obj:`keys <pyvista.core.composite.pyvista.MultiBlock.keys>`\\ \\(\\)"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.keys:1
 msgid "Get all the block names in the dataset."
-msgstr ""
+msgstr "データセット内のすべてのブロック名を取得します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`next <pyvista.core.composite.pyvista.MultiBlock.next>`\\ \\(\\)"
@@ -1508,7 +1511,7 @@ msgstr ":obj:`pop <pyvista.core.composite.pyvista.MultiBlock.pop>`\\ \\(index\\)
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.pop:1
 msgid "Pop off a block at the specified index."
-msgstr ""
+msgstr "指定したインデックスのブロックをポップします。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1524,7 +1527,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.set_block_name:1
 msgid "Set a block's string name at the specified index."
-msgstr ""
+msgstr "指定したインデックスにブロックの文字列名を設定します。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1539,7 +1542,7 @@ msgstr ""
 #: pyvista.MultiBlock.wrap_nested:1
 msgid ""
 "Ensure that all nested data structures are wrapped as PyVista datasets."
-msgstr ""
+msgstr "ネストされたすべてのデータ構造がPyVistaデータセットとしてラップされていることを確認します。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of pyvista.MultiBlock:1
 msgid ""
@@ -1560,6 +1563,8 @@ msgid ""
 "This wraps/extends the ``vtkMultiBlockDataSet`` class in VTK so that we can "
 "easily plot these data sets and use the composite in a Pythonic manner."
 msgstr ""
+"これはVTKで ``vtkMultiBlockDataSet`` "
+"クラスをラップ/拡張し、これらのデータセットを簡単にプロットし、Python的な方法でコンポジットを使用できるようにします。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of pyvista.MultiBlock:6
 msgid ""
@@ -1567,6 +1572,8 @@ msgid ""
 " over this data structure by index and we can also access blocks by their "
 "string name."
 msgstr ""
+"``MultiBlock`` "
+"はリストや辞書のようなもので、インデックスによってこのデータ構造を繰り返し処理することができ、文字列名によってブロックにアクセスすることもできます。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of pyvista.MultiBlock:11
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1593,12 +1600,12 @@ msgstr "例"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:3
 msgid "length 6 tuple of floats containing min/max along each axis"
-msgstr ""
+msgstr "各軸に沿ってmin/maxを含むfloatの6組の長さ"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.clean:3
 msgid "Remove any meshes that are empty as well (have zero points)."
-msgstr ""
+msgstr "(0点である)空のメッシュもすべて削除します。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.copy:3 ../../pyvista/pyvista/core/common.pydocstring of
@@ -1615,12 +1622,12 @@ msgstr "**newobject** -- 入力の深いまたは浅いコピーです。"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.get:3
 msgid "If the name is non-unique then returns the first occurrence."
-msgstr ""
+msgstr "名前が一意でない場合は、最初のoccurrenceが返されます。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.wrap_nested:3
 msgid "This is performed in place."
-msgstr ""
+msgstr "これはその場で実行されます。"
 
 #: ../../pyvista/docs/core/filters.rst:4
 msgid "Filters"
@@ -1634,7 +1641,7 @@ msgstr "これらのクラスには、任意のデータ型に一般的なフィ
 msgid ""
 "By inheriting these classes into the wrapped VTK data structures, a user can"
 " easily apply common filters in an intuitive manner."
-msgstr ""
+msgstr "これらのクラスをラップされたVTKデータ構造に継承することにより、ユーザは直感的な方法で共通フィルタを容易に適用することができます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of pyvista.core.filters:7
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table:7
@@ -1643,7 +1650,7 @@ msgstr "例"
 
 #: ../../pyvista/docs/core/filters.rst:12
 msgid "Dataset Filters"
-msgstr ""
+msgstr "データセットフィルタ"
 
 #: ../../pyvista/docs/core/filters.rst:14
 msgid ""
@@ -1671,7 +1678,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.CompositeFilters.cell_centers:1
 msgid "Generate points at the center of the cells in this dataset."
-msgstr ""
+msgstr "このデータセットのセルの中心に点を生成します。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -1693,7 +1700,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.CompositeFilters.cell_data_to_point_data:1
 msgid "Transform cell data into point data."
-msgstr ""
+msgstr "データから日付へのセル変換"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
