@@ -57,13 +57,15 @@ jobs:
         pip install -U matplotlib
         pip install -U colorcet
         (cd pyvista/docs; make html)
-        sh ./locale/update.sh
+        echo ./pyvista/docs/examples
         ls ./pyvista/docs/examples
         rm -Rf examples
-        mv ./pyvista/docs/examples .
+        cp -r ./pyvista/docs/examples .
+        echo ./pyvista/docs/images
         ls ./pyvista/docs/images
         rm -Rf images
-        mv ./pyvista/docs/images .
+        cp -r ./pyvista/docs/images .
+        sh ./locale/update.sh
         deactivate
     - name: git_config
       if: contains(github.ref, 'master')
