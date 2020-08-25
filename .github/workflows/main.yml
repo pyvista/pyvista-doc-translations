@@ -61,8 +61,8 @@ jobs:
         ls ./pyvista/docs/examples
         rm -Rf examples
         cp -r ./pyvista/docs/examples .
-        echo ./pyvista/docs/images
-        ls ./pyvista/docs/images
+        echo ./pyvista/docs/images/auto-generated
+        ls ./pyvista/docs/images/auto-generated
         rm -Rf images
         cp -r ./pyvista/docs/images .
         sh ./locale/update.sh
