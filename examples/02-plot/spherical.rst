@@ -188,8 +188,8 @@ Vertical wind
  .. code-block:: none
 
 
-    [(31539.181633418364, 31711.103508418364, 31583.74633068399),
-     (-73.614501953125, 98.307373046875, -29.0498046875),
+    [(31758.706513274305, 31726.245575774305, 31734.450653899305),
+     (28.18701171875, -4.27392578125, 3.93115234375),
      (0.0, 0.0, 1.0)]
 
 
@@ -253,7 +253,7 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.964 seconds)
+   **Total running time of the script:** ( 0 minutes  4.010 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:
