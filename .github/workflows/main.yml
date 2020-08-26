@@ -2,6 +2,9 @@ name: pyvista-doc-auto-update
 on:
   schedule:
     - cron:  '0 0 * * *'
+  push:
+    branches:
+      - master
   pull_request:
     branches:
       - master
@@ -61,20 +64,17 @@ jobs:
         mv ./pyvista/docs/images .
         deactivate
     - name: git_config
-      if: contains(github.ref, 'master')
       run: |
-        git branch -a
-        git checkout master
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
     - name: commit
-      if: contains(github.ref, 'master')
+      if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
       env:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
         git add .
-        git commit --allow-empty -m ":green_heart: $JOB_ID
+        git commit --allow-empty -m "[ci skip] $JOB_ID
         $HTML_URL"
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
