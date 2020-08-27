@@ -38,7 +38,7 @@ msgstr ""
 msgid ""
 "In VTK, datasets consist of geometry, topology, and attributes to which "
 "PyVista provides direct access:"
-msgstr "VTKでは、データセットは、PyVistaが直接アクセスを提供するジオメトリ、トポロジ、および属性で構成されます:"
+msgstr "VTKでは、データセットは、PyVistaが直接アクセスを提供するジオメトリ、トポロジ、およびアトリビュートで構成されます:"
 
 #: ../../pyvista/docs/core/common.rst:13
 msgid "Geometry is the collection of points and cells in 2D or 3D space."
@@ -54,7 +54,7 @@ msgstr "トポロジは、データセットの構造、または表面やボリ
 msgid ""
 "Attributes are any data values that are associated to either the points or "
 "cells of the dataset"
-msgstr "属性は、データセットの点またはセルのいずれかに関連付けられた任意のデータ値です。"
+msgstr "アトリビュートは、データセットの点またはセルのいずれかに関連付けられた任意のデータ値です。"
 
 #: ../../pyvista/docs/core/common.rst:17
 msgid ""
@@ -76,7 +76,7 @@ msgid ""
 "VTK's ``vtk.vtkDataSet`` class."
 msgstr ""
 ":class:`pyvista.Common` クラスは、PyVistaで空間的に参照される全てのデータセットに *共通な* "
-"属性を保持します。この基本クラスはVTKの ``vtk.vtkDataSet`` クラスに似ています。"
+"アトリビュートを保持します。この基本クラスはVTKの ``vtk.vtkDataSet`` クラスに似ています。"
 
 #: ../../pyvista/docs/core/common.rst:31
 #: ../../pyvista/docs/core/composite.rst:11
@@ -88,7 +88,7 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:330
 #: ../../pyvista/docs/core/points.rst:123
 msgid "Attributes"
-msgstr "属性"
+msgstr "アトリビュート"
 
 #: ../../pyvista/docs/core/common.rst:34:<autosummary>:1
 msgid ":obj:`active_scalar <pyvista.Common.active_scalar>`\\"
@@ -6537,12 +6537,17 @@ msgid ""
 "in VTK. This chapter also highlights how all PyVista types have direct "
 "access to common VTK filters (see :ref:`filters_ref`)."
 msgstr ""
+"Kitware_ によって開発された `Visualization Toolkit`_ (VTK) "
+"には、PyVistaがラップする多くのメッシュデータ型があります。この章では、これらの異なるメッシュタイプと、VTKでこれらのメッシュタイプをラップして実装する方法について説明します。また、すべてのPyVistaタイプが共通のVTKフィルタ("
+" :ref:`filters_ref` を参照)に直接アクセスする方法についても説明します。"
 
 #: ../../pyvista/docs/core/index.rst:15
 msgid ""
 "All PyVista meshes inherit from the Common dataset type (see "
 ":ref:`ref_common`). PyVista has the following mesh types:"
 msgstr ""
+"すべてのPyVistaメッシュは、共通データセットタイプ( :ref:`ref_common` "
+"を参照)から継承されます。PyVistaには次のメッシュタイプがあります。"
 
 #: ../../pyvista/docs/core/index.rst:18
 msgid ""
@@ -6552,6 +6557,9 @@ msgid ""
 "datasets). The :class:`pyvista.PolyData` class is an extension of "
 "``vtk.vtkPolyData``."
 msgstr ""
+":class:`pyvista.PolyData` は、頂点、線、ポリゴン、および三角形を構築する1 Dまたは2 Dジオメトリで構成されます。一般的に "
+"``PolyData`` を使用して、散乱点と閉じた/開いたサーフェス(非体積データセット)を構築します。 "
+":class:`pyvista.PolyData` クラスは ``vtk.vtkPolyData`` の拡張です。"
 
 #: ../../pyvista/docs/core/index.rst:20
 msgid ""
@@ -6563,6 +6571,10 @@ msgid ""
 "larger datasets. The :class:`pyvista.UnstructuredGrid` class is an extension"
 " of ``vtk.UnstructuredGrid``."
 msgstr ""
+":class:`pyvista.UnstructuredGrid` は、1 D、2 D、または3 "
+"Dセル形状を保持できる最も一般的なデータセットタイプです。これは、容積測定セルの存在を可能にする ``PolyData`` の3 "
+"D拡張と考えることができます。構造化されていないグリッドを明示的に作成することはあまりありませんが、多くの場合、大きなデータセットのサブセットを抽出する可能性のあるさまざまな処理ルーチンの結果です。"
+" :class:`pyvista.UnstructuredGrid` クラスは ``vtk.UnstructuredGrid`` の拡張です。"
 
 #: ../../pyvista/docs/core/index.rst:22
 msgid ""
@@ -6573,6 +6585,10 @@ msgid ""
 ":class:`pyvista.StructuredGrid` class is an extension of "
 "``vtk.vtkStructuredGrid``."
 msgstr ""
+":class:`pyvista.StructuredGrid` "
+"は内部座標軸と整列した点の規則的な格子であり、連結性は格子の順序付けによって定義できます。これらは一般に :func:`np.meshgrid` "
+"から作成されます。構造化グリッドのセルタイプは2 D四角形または3 D六面体である必要があります。 "
+":class:`pyvista.StructuredGrid` クラスは ``vtk.vtkStructuredGrid`` の拡張です。"
 
 #: ../../pyvista/docs/core/index.rst:24
 msgid ""
@@ -6581,6 +6597,8 @@ msgid ""
 ":class:`pyvista.RectilinearGrid` class is an extension of "
 "``vtk.vtkRectilinearGrid``."
 msgstr ""
+":class:`pyvista.RectilinearGrid` は、矩形で規則的な軸方向に沿ったインプリシットなジオメトリを持つメッシュを定義します。"
+" :class:`pyvista.RectilinearGrid` クラスは ``vtk.vtkRectilinearGrid`` の拡張です。"
 
 #: ../../pyvista/docs/core/index.rst:26
 msgid ""
@@ -6590,6 +6608,9 @@ msgid ""
 " is built out from an origin point. The :class:`pyvista.UniformGrid` class "
 "is an extension of ``vtk.vtkImageData``."
 msgstr ""
+"一般に均一グリッドとして参照され、 :class:`pyvista.UniformGrid` "
+"クラスによって定義される画像データは、セルサイズが各軸に沿って均一に割り当てられ、空間参照が原点から構築される陰的幾何学を有するメッシュである。 "
+":class:`pyvista.UniformGrid` クラスは ``vtk.vtkImageData`` の拡張です。"
 
 #: ../../pyvista/docs/core/index.rst:28
 msgid ""
@@ -6598,6 +6619,9 @@ msgid ""
 ":class:`pyvista.MultiBlock` class is an extension of "
 "``vtk.vtkMultiBlockDataSet``."
 msgstr ""
+":class:`pyvista.MultiBlock` "
+"データセットは、複数のVTKデータセットを1つのアクセス可能かつ空間的に参照されるオブジェクトに保持するためのコンテナです。 "
+":class:`pyvista.MultiBlock` クラスは ``vtk.vtkMultiBlockDataSet`` の拡張です。"
 
 #: ../../pyvista/docs/core/objects.rst:2
 msgid "Objects"
@@ -6743,13 +6767,13 @@ msgstr ""
 
 #: ../../pyvista/docs/core/objects.rst:25
 msgid "Table"
-msgstr "表"
+msgstr "Table"
 
 #: ../../pyvista/docs/core/objects.rst:27
 msgid ""
 "The table class is a non-spatially referenced data object that can be used "
 "on VTK pipelines and holds arrays of data."
-msgstr ""
+msgstr "Tableクラスは非空間的に参照されるデータオブジェクトで、VTKパイプラインで使用でき、データの配列を保持します。"
 
 #: ../../pyvista/docs/core/objects.rst:34:<autosummary>:1
 msgid ":obj:`n_arrays <pyvista.Table.n_arrays>`\\"
