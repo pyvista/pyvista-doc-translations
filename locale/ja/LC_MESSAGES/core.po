@@ -6920,7 +6920,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/point-grids.rst:2
 msgid "Point-Based Grids"
-msgstr ""
+msgstr "ポイントベースグリッド"
 
 #: ../../pyvista/docs/core/point-grids.rst:4
 msgid ""
@@ -6960,6 +6960,10 @@ msgid ""
 "creation is simplified by initializing the grid directly from numpy arrays "
 "as in the following section."
 msgstr ""
+"これにより空のグリッドが作成され、ポイントとセルが追加されるまでは使用できません。VTKポイントおよびセルは ``SetPoints`` および "
+"``SetCells`` を使用して追加できますが、これらへの入力は ``vtk.vtkCellArray`` および "
+"``vtk.vtkPoints`` "
+"オブジェクトである必要があり、値を設定する必要があります。グリッドの作成は、次のセクションのように、多数の配列から直接グリッドを初期化することで簡単になります。"
 
 #: ../../pyvista/docs/core/point-grids.rst:34
 #: ../../pyvista/docs/core/point-grids.rst:87
@@ -7402,7 +7406,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/points.rst:2
 msgid "Point Data"
-msgstr ""
+msgstr "ポイントデータ"
 
 #: ../../pyvista/docs/core/points.rst:3
 msgid ""
@@ -7410,16 +7414,20 @@ msgid ""
 "``vtk.vtkPolyData`` object, to include direct array access through NumPy, "
 "one line plotting, and other mesh functions."
 msgstr ""
+"``pyvista.PolyData`` オブジェクトは ``vtk.vtkPolyData`` "
+"オブジェクトに追加機能を追加し、NumPyによる直接配列アクセス、1行描画、およびその他のメッシュ機能を含みます。"
 
 #: ../../pyvista/docs/core/points.rst:9
 msgid "PolyData Creation"
-msgstr ""
+msgstr "PolyDataの作成"
 
 #: ../../pyvista/docs/core/points.rst:11
 msgid ""
 "See :ref:`ref_create_poly` for an example on creating a ``pyvista.PolyData``"
 " object from NumPy arrays."
 msgstr ""
+"NumPy配列から ``pyvista.PolyData`` オブジェクトを作成する例については、 :ref:`ref_create_poly` "
+"を参照してください。"
 
 #: ../../pyvista/docs/core/points.rst:16
 msgid "A polydata object can be initialized with:"
@@ -7434,6 +7442,10 @@ msgid ""
 "creation is simplified by initializing the grid directly from NumPy arrays "
 "as in the following section."
 msgstr ""
+"これにより空のグリッドが作成され、ポイントとセルが追加されるまでは使用できません。VTKポイントおよびセルは ``SetPoints`` および "
+"``SetCells`` を使用して追加できますが、これらへの入力は ``vtk.vtkCellArray`` および "
+"``vtk.vtkPoints`` "
+"オブジェクトである必要があり、値を設定する必要があります。グリッドの作成は、次のセクションのようにNumPy配列から直接グリッドを初期化することで簡単になります。"
 
 #: ../../pyvista/docs/core/points.rst:32
 msgid "Initialize from a File"
@@ -7454,11 +7466,11 @@ msgstr "このメッシュは、次を使用してvtkファイルに書き込む
 
 #: ../../pyvista/docs/core/points.rst:50
 msgid "These meshes are identical."
-msgstr ""
+msgstr "これらのメッシュは同一です。"
 
 #: ../../pyvista/docs/core/points.rst:68
 msgid "Mesh Manipulation and Plotting"
-msgstr ""
+msgstr "メッシュ操作とプロット"
 
 #: ../../pyvista/docs/core/points.rst:69
 msgid ""
@@ -7466,6 +7478,7 @@ msgid ""
 "translation and rotation routines. This example loads two meshes and moves, "
 "scales, and copies them."
 msgstr ""
+"メッシュは、NumPyまたは組み込みの移動と回転ルーチンを使用して直接操作できます。この例では、2つのメッシュをロードし、移動、スケール、およびコピーします。"
 
 #: ../../pyvista/docs/core/points.rst:91
 msgid ""
@@ -7473,10 +7486,11 @@ msgid ""
 "plotting. The following code creates the class and plots the meshes with "
 "various colors."
 msgstr ""
+"複数のメッシュをプロットするには、プロットクラスを作成してプロットを管理する必要があります。次のコードは、クラスを作成し、メッシュをさまざまな色でプロットします。"
 
 #: ../../pyvista/docs/core/points.rst:115
 msgid "pyvista.PolyData Grid Class Methods"
-msgstr ""
+msgstr "pyvista.PolyData グリッドクラスメソッド"
 
 #: ../../pyvista/docs/core/points.rst:116
 msgid ""
@@ -7485,6 +7499,9 @@ msgid ""
 "object, `vtk.vtkPolyData "
 "<https://www.vtk.org/doc/nightly/html/classvtkPolyData.html>`_."
 msgstr ""
+"以下は ``pyvista.PolyData`` オブジェクトで利用可能なメソッドの説明です。元のvtkオブジェクト `vtk.vtkPolyData "
+"<https://www.vtk.org/doc/nightly/html/classvtkPolyData.html>`_ "
+"からすべてのメソッドを継承します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`area <pyvista.PolyData.area>`\\"
@@ -7506,7 +7523,7 @@ msgstr ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.face_normals:1
 msgid "Return the cell normals."
-msgstr ""
+msgstr "セルの法線を返します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`face_normals <pyvista.PolyData.face_normals>`\\"
@@ -7537,7 +7554,7 @@ msgstr ":obj:`n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:1
 msgid "Return the number of open edges on this mesh."
-msgstr ""
+msgstr "このメッシュ上の開いたエッジの数を返します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`number_of_faces <pyvista.PolyData.number_of_faces>`\\"
@@ -7551,7 +7568,7 @@ msgstr ":obj:`obbTree <pyvista.PolyData.obbTree>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:1
 msgid "Return the obbTree of the polydata."
-msgstr ""
+msgstr "polydataのobbTreeを返します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
@@ -7561,7 +7578,7 @@ msgstr ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:1
 msgid "Return the point normals."
-msgstr ""
+msgstr "ポイント法線を返します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`verts <pyvista.PolyData.verts>`\\"
@@ -7570,7 +7587,7 @@ msgstr ":obj:`verts <pyvista.PolyData.verts>`\\"
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:1
 msgid "Get the vertex cells."
-msgstr ""
+msgstr "頂点セルを取得します。"
 
 #: ../../pyvista/docs/core/points.rst:126:<autosummary>:1
 msgid ":obj:`volume <pyvista.PolyData.volume>`\\"
@@ -7584,7 +7601,7 @@ msgstr ":obj:`is_all_triangles <pyvista.PolyData.is_all_triangles>`\\ \\(\\)"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_all_triangles:1
 msgid "Return True if all the faces of the polydata are triangles."
-msgstr ""
+msgstr "polydataのすべての面が三角形の場合、Trueを返します。"
 
 #: ../../pyvista/docs/core/points.rst:131:<autosummary>:1
 msgid ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
@@ -7593,7 +7610,7 @@ msgstr ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
 #: ../../pyvista/docs/core/points.rst:131:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:1
 msgid "Write a surface mesh to disk."
-msgstr ""
+msgstr "サーフェスメッシュをディスクに書き込みます。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:1
 msgid ""
@@ -7607,23 +7624,23 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:1
 msgid "Extend the functionality of a vtk.vtkPolyData object."
-msgstr ""
+msgstr "vtk.vtkPolyDataオブジェクトの機能を拡張します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:5
 msgid "Create an empty mesh"
-msgstr ""
+msgstr "空のメッシュを作成する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:6
 msgid "Initialize from a vtk.vtkPolyData"
-msgstr ""
+msgstr "vtk.vtkPolyDataから初期化する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:7
 msgid "Using vertices"
-msgstr ""
+msgstr "頂点を使用する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:8
 msgid "Using vertices and faces"
-msgstr ""
+msgstr "頂点と面を使用する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:3
 msgid "**area** -- Total area of the mesh."
@@ -7642,6 +7659,8 @@ msgid ""
 "along coordinate axes. The OBB tree is a hierarchical tree structure of such"
 " boxes, where deeper levels of OBB confine smaller regions of space."
 msgstr ""
+"obbTreeは、方向付きバウンディングボックス (OBB) "
+"ツリーを生成するオブジェクトです。方向を指定した境界ボックスは、必ずしも座標軸に沿って整列しない境界ボックスです。OBBツリーはこのようなボックスの階層ツリー構造であり、そこではOBBのより深いレベルが空間のより小さな領域を限定します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:3
 msgid ""
@@ -7649,6 +7668,7 @@ msgid ""
 " stl format is chosen, the face normals are computed in place to ensure the "
 "mesh is properly saved."
 msgstr ""
+"書き込まれるファイルは、ASCIIまたはバイナリply、stl、またはvtkメッシュファイルです。plyまたはstlフォーマットを選択すると、メッシュが適切に保存されるように面法線が所定の位置で計算されます。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:7
 msgid ""
@@ -7656,10 +7676,12 @@ msgid ""
 " the filename unless overridden with ftype.  Can be one of the following "
 "types (.ply, .stl, .vtk)"
 msgstr ""
+"書き込むメッシュのファイル名。ftypeで上書きしない限り、ファイルタイプはファイル名の拡張子から推測されます。次のいずれかのタイプになります "
+"(.ply, .stl, .vtk) 。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:12
 msgid "Writes the file as binary when True and ASCII when False."
-msgstr ""
+msgstr "Trueの場合はバイナリとして、Falseの場合はASCIIとしてファイルを書き込みます。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:17
 msgid "Binary files write much faster than ASCII and have a smaller"
