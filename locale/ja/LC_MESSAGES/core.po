@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-19 00:26+0000\n"
+"POT-Creation-Date: 2020-08-30 00:36+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -1246,6 +1246,9 @@ msgid ""
 "[Window height x Window width x 4] for transparent_background=True   "
 "Returned only when screenshot enabled"
 msgstr ""
+"* **cpos** (*list*) --カメラ位置、焦点、ビューアップのリスト。* **img** (*numpy.ndarray*) -- "
+"ピクセルRGBおよびアルファを含む配列。サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
+"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:33
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1263,6 +1266,9 @@ msgid ""
 "height x Window width x 4] for transparent_background=True Returned only "
 "when screenshot enabled"
 msgstr ""
+"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列。Sized:[窓の高さx窓の幅x 3] for "
+"transparent_background=False [窓の高さ×窓の幅×4] は "
+"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.rename_scalar:3
@@ -2644,6 +2650,9 @@ msgid ""
 " box with 6 faces that all form a standard box, then planes will be "
 "extracted from the box to define the clipping region."
 msgstr ""
+"floatの長さ6のシーケンス:(xmin、xmax、ymin、ymax、zmin、zmax)。長さ3のfloatシーケンス:入力メッシュの最小座標からの距離。単一のfloat値:最小座標からの均一な距離。レングス12のシーケンス、レングス3のシーケンス、フロートのシーケンス:平面コレクション(法線、中心、"
+" ...)。 :class:`pyvista.PolyData`: "
+":標準のボックスを形成する6つの面を持つボックスを表すポリゴンメッシュが渡されると、そのボックスから平面が抽出され、クリッピング領域が定義されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.clip_box:14
@@ -2706,6 +2715,8 @@ msgid ""
 "\"CellQuality\". Cell types not supported by this filter or undefined "
 "quality of supported cell types will have an entry of -1."
 msgstr ""
+"セルごとの品質は、 \"CellQuality\" "
+"という名前の配列でメッシュのセルデータに追加されます。このフィルタでサポートされていないセルタイプ、またはサポートされているセルタイプの未定義の品質には、-1というエントリがあります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.compute_cell_quality:7
@@ -3505,6 +3516,8 @@ msgid ""
 "Sharpness=2. As the sharpness increases the effects of distant points are "
 "reduced."
 msgstr ""
+"Gauss分布のシャープネス(つまり、減衰)を設定/取得します。既定値では、 "
+"Sharpness=2です。シャープさが増すと、遠方のポイントの効果は減少します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.interpolate:16
@@ -3519,6 +3532,7 @@ msgid ""
 " in favor of an N closest points approach. This typically has poorer "
 "results."
 msgstr ""
+"指定した場合、補間ベースを形成するために使用される最も近いポイントの数を指定します。これにより、N個の最近接ポイントを使用する代わりに、radiusおよびsharpnessの引数が無効になります。通常、この方法では結果が悪くなります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.interpolate:23
@@ -3533,6 +3547,13 @@ msgid ""
 "point data). Finally, the strategy ``'closest_point'`` is to simply use the "
 "closest point to perform the interpolation."
 msgstr ""
+"補間処理中に \"null\" "
+"ポイントに遭遇した場合に使用するストラテジーを指定します。ヌルポイントは、ローカル近隣(近くの点が内挿する)が空の場合に発生します。ストラテジが "
+"``'mask_points'`` に設定されている場合、ポイントを有効 (=1) またはnull "
+"(無効=0)としてマークする出力配列が作成される(NullValueも設定されます。)。ストラテジが ``'null_value'`` "
+"に設定されている場合(これがデフォルトです。)、出力データ値()は ``null_value`` "
+"に設定される(出力点データに指定されている)。最後に、戦略 ``'closest_point'`` "
+"は、単に補間を実行するために最も近い点を使用することである。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.interpolate:34
@@ -3541,6 +3562,7 @@ msgid ""
 "components of each null tuple are set to this value. By default the null "
 "value is set to zero."
 msgstr ""
+"NULL点の値を指定します。NULLポイントが検出されると、各NULLタプルのすべてのコンポーネントがこの値に設定されます。デフォルトでは、NULL値は0に設定されています。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.interpolate:38
@@ -3560,7 +3582,7 @@ msgstr "既定では、グリッドは所定の位置で更新されます。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.merge:5
 msgid "Can be used to merge points of adjacent cells when no grids are input."
-msgstr ""
+msgstr "グリッドが入力されていないときに、隣接するセルの点を結合するために使用できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.merge:8
@@ -3634,6 +3656,7 @@ msgid ""
 " A and the Y-axis is the variable of interest. Note that this filter returns"
 " None."
 msgstr ""
+"X軸がA点からの距離で、Y軸が対象の変数である場合、対象の変数を2 Dでプロットします。このフィルタではNoneが戻されることに注意してください。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:7
@@ -3651,14 +3674,14 @@ msgstr "[x, y, z] 内の位置。"
 msgid ""
 "number of pieces to divide line into. Defaults to number of cells in the "
 "input mesh. Must be a positive integer."
-msgstr ""
+msgstr "線を分割する断片の数。既定値は入力メッシュ内のセル数です。正の整数でなければなりません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:14
 msgid ""
 "The string name of the variable in the input dataset to probe. The active "
 "scalar is used by default."
-msgstr ""
+msgstr "調査する入力データセット内の変数の文字列名。既定では、アクティブスカラーが使用されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:17
@@ -3668,7 +3691,7 @@ msgstr "`matplotlib` 図の文字列タイトル"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:19
 msgid "The string label of the Y-axis. Defaults to variable name"
-msgstr ""
+msgstr "Y軸の文字列ラベル。デフォルトは変数名"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:21
@@ -3683,7 +3706,7 @@ msgstr "新しい図形を作成するかどうかのフラグ"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:25
 msgid "Shows the matplotlib figure"
-msgstr ""
+msgstr "matplotlibの図を表示します"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.plot_over_line:27
@@ -3696,7 +3719,7 @@ msgstr ""
 msgid ""
 "Tolerance used to compute whether a point in the source is in a cell of the "
 "input.  If not given, tolerance is automatically generated."
-msgstr ""
+msgstr "ソース内のポイントが入力のセル内にあるかどうかを計算するために使用される許容値です。指定しない場合、公差は自動的に生成されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.point_data_to_cell_data:6
@@ -3710,19 +3733,19 @@ msgstr "関連項目: :func:`pyvista.DataSetFilters.cell_data_to_point_data`"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.CompositeFilters.point_data_to_cell_data:8
 msgid "If enabled, pass the input point data through to the output"
-msgstr ""
+msgstr "使用可能にすると、入力ポイントのデータを出力に渡します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:3
 msgid "This uses :class:`vtk.vtkProbeFilter`."
-msgstr ""
+msgstr "これは :class:`vtk.vtkProbeFilter` を使います。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:5
 msgid ""
 "The mesh to probe from - point and cell arrays from this object are probed "
 "onto the nodes of the ``points`` mesh"
-msgstr ""
+msgstr "調査するメッシュ - このオブジェクトからの点とセルの配列は、 ``points`` メッシュの節点に調査されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:8
@@ -3736,7 +3759,7 @@ msgstr "値を検出するポイント。これはPyVistaのメッシュか :fun
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.sample:13
 msgid "Preserve source mesh's original cell data arrays"
-msgstr ""
+msgstr "ソースメッシュのオリジナルのセルデータ配列を保持"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:16
@@ -3754,11 +3777,12 @@ msgid ""
 "the data is categorical, then the resultant data will be determined by a "
 "nearest neighbor interpolation scheme."
 msgstr ""
+"ソースポイントデータをカテゴリとして扱うかどうかをコントロールします。データがカテゴリー化されている場合、得られるデータは、最近傍補間スキームによって決定されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:25
 msgid "Probe the active scalars in ``grid`` at the points in ``mesh``"
-msgstr ""
+msgstr "``grid`` の活性スカラーを ``mesh`` の点で調査します"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.ptc:6
@@ -3793,7 +3817,7 @@ msgstr "線を分割する断片の数。既定値は入力メッシュ内のセ
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.sample_over_line:14
 msgid "**sampled_line** -- Line object with sampled data from dataset."
-msgstr ""
+msgstr "**sampled_line** -- データセットからサンプリングされたデータを持つLineオブジェクト。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:3
@@ -3804,6 +3828,9 @@ msgid ""
 "inside (mask value=1) a provided surface. (The name of the output "
 "vtkDataArray is \"SelectedPoints\".)"
 msgstr ""
+"これにより、すべての入力ポイントが評価され、囲まれたサーフェス内にあるかどうかが判断されます。フィルタは、ポイントが指定されたサーフェスの外側(マスク値=0)か内側(マスク値=1)かを示す"
+" (0, 1) マスク(vtkDataArrayの形式で)を生成します。(出力vtkDataArrayの名前は \"SelectedPoints\" "
+"です。)"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:9
@@ -3812,6 +3839,7 @@ msgid ""
 "dataset. If you wish to extract cells or poinrs, various threshold filters "
 "are available (i.e., threshold the output array)."
 msgstr ""
+"このフィルタはデータ配列を生成して出力しますが、入力データセットは変更しません。セルまたは点を抽出する場合は、さまざまな閾値フィルタを使用できます(すなわち、出力配列の閾値)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:15
@@ -3821,6 +3849,7 @@ msgid ""
 "false, all points will be marked outside. Note that if this check is not "
 "performed and the surface is not closed, the results are undefined."
 msgstr ""
+"フィルタは、サーフェスが閉じていて多様体であることを前提としています。ブーリアンフラグを設定して、フィルタに最初にこれがtrueであるかどうかを強制的にチェックさせることができます。falseの場合、すべてのポイントが外側にマークされます。このチェックが実行されず、サーフェスが閉じていない場合、結果は未定義であることに注意してください。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:21
@@ -3828,13 +3857,14 @@ msgid ""
 "Set the surface to be used to test for containment. This must be a "
 ":class:`pyvista.PolyData` object."
 msgstr ""
+"包含のテストに使用するサーフェスを設定します。これは :class:`pyvista.PolyData` オブジェクトでなければなりません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:24
 msgid ""
 "The tolerance on the intersection. The tolerance is expressed as a fraction "
 "of the bounding box of the enclosing surface."
-msgstr ""
+msgstr "交差の許容差。許容値は、囲むサーフェスのバウンディングボックスの割合として表されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:27
@@ -3843,6 +3873,8 @@ msgid ""
 "output. If ``inside_out`` is ``True``, then the points outside the surface "
 "are marked inside."
 msgstr ""
+"既定では、サーフェス内のポイントは内側にマークされるか、出力に送られます。 ``inside_out`` が ``True`` "
+"の場合、サーフェスの外側のポイントは内側とマークされます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:31
@@ -3851,6 +3883,7 @@ msgid ""
 "first checks to see if the surface is closed and manifold. If the surface is"
 " not closed and manifold, a runtime error is raised."
 msgstr ""
+"サーフェスの閉合をチェックするかどうかを指定します。オンの場合、アルゴリズムは最初にサーフェスが閉じて多様体であるかどうかをチェックします。サーフェスが閉じていて多様体でない場合、ランタイムエラーが発生します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice:3
@@ -3858,7 +3891,7 @@ msgstr ""
 #: pyvista.CompositeFilters.slice:3
 msgid ""
 "If no origin is specified, the center of the input dataset will be used."
-msgstr ""
+msgstr "原点が指定されていない場合、入力データセットの中心が使用されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice:5
@@ -3950,7 +3983,7 @@ msgstr "スライスを作成するためのデータセット境界のエッジ
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.CompositeFilters.slice_along_line:3
 msgid "This also works for lines generated with :func:`pyvista.Line`"
-msgstr ""
+msgstr "これは :func:`pyvista.Line` で生成された行でも動作します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice_along_line:5
@@ -3985,20 +4018,20 @@ msgstr "XZスライスのY位置"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.CompositeFilters.slice_orthogonal:9
 msgid "The Z location of the XY slice"
-msgstr ""
+msgstr "XYスライスのZ位置"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.split_bodies:3
 msgid ""
 "This splits different connected bodies into blocks in a MultiBlock dataset."
-msgstr ""
+msgstr "これにより、MultiBlockデータセット内のさまざまな接続ボディがブロックに分割されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.split_bodies:5
 msgid ""
 "A flag on whether to keep the ID arrays given by the ``connectivity`` "
 "filter."
-msgstr ""
+msgstr "``connectivity`` フィルタによって与えられたID配列を保持するかどうかのフラグ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:3
@@ -4008,6 +4041,9 @@ msgid ""
 "dataset contains 2D cells like polygons or triangles, the integration is "
 "constrained to lie on the surface defined by 2D cells."
 msgstr ""
+"デフォルトRunge-Kutta "
+"2では、指定したインテグレータを使用して積分が実行されます。これにより、あらゆるタイプのデータセットを使用した積分がサポートされます。したがって、データセットにポリゴンや三角形などの2"
+" Dセルが含まれている場合、積分は2 Dセルによって定義されるサーフェス上に配置されるように制限されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:8
@@ -4017,6 +4053,7 @@ msgid ""
 "streamline are stored in the cell data, whereas those associated with "
 "streamline-points are stored in the point data."
 msgstr ""
+"これにより、各セル(つまり、ポリライン)が流線を表すポリラインが出力として生成されます。各流線に関連付けられた属性値はセルデータに格納され、流線ポイントに関連付けられた属性値はポイントデータに格納されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:13
@@ -4026,30 +4063,33 @@ msgid ""
 "the source as :class:`pyvista.PolyData` by specifying "
 "``return_source=True``."
 msgstr ""
+"これは、球をソースとして使用します - キーワード引数 ``source_center`` と ``source_radius`` "
+"を使用して、位置と半径を設定します。 ``return_source=True`` を指定すると、ソースを "
+":class:`pyvista.PolyData` として取得できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:18
 msgid "The string name of the active vector field to integrate across"
-msgstr ""
+msgstr "積分するアクティブベクトルフィールドの文字列名。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:20
 msgid ""
 "Length 3 tuple of floats defining the center of the source particles. "
 "Defaults to the center of the dataset"
-msgstr ""
+msgstr "ソース粒子の中心を定義する浮動小数点の長さ3のタプル。デフォルトはデータセットの中央"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:23
 msgid ""
 "Float radius of the source particle cloud. Defaults to one-tenth of the "
 "diagonal of the dataset's spatial extent"
-msgstr ""
+msgstr "ソースパーティクルクラウドの浮動小数点半径です。デフォルトはデータセットの空間的範囲の対角の1/10"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:26
 msgid "Number of particles present in source sphere"
-msgstr ""
+msgstr "ソース球に存在する粒子の数"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:28
@@ -4059,6 +4099,9 @@ msgid ""
 "RUNGE_KUTTA4 (``4``), and RUNGE_KUTTA45 (``45``). Options are ``2``, ``4``, "
 "or ``45``. Default is ``45``."
 msgstr ""
+"流線生成に使用する積分器のタイプです。デフォルトはRunge-Kutta 45です。認識されるソルバーは:  RUNGE_KUTTA2 (``2``) "
+"、 RUNGE_KUTTA4 (``4``) および RUNGE_KUTTA45 (``45``) です。オプションは ``2`` 、 ``4`` "
+"または ``45`` です。デフォルトは ``45`` です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:33
@@ -4073,7 +4116,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:37
 msgid "Compute streamlines on a surface. Default ``False``"
-msgstr ""
+msgstr "サーフェス上の流線を計算します。デフォルトは ``False``"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:39
@@ -4083,6 +4126,8 @@ msgid ""
 "for an adaptive integrator, e.g., RK45, or the constant / fixed size for "
 "non-adaptive ones, i.e., RK2 and RK4)"
 msgstr ""
+"線積分に使用される最初のステップサイズで、ib長さ単位Lまたはセル長単位( ``step_unit`` "
+"パラメータを参照)を表します。RK45のような適応積分器の開始サイズか、RK 2とRK 4のような非適応積分器の一定/固定サイズのどちらか)"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:44
@@ -4091,18 +4136,20 @@ msgid ""
 "LENGTH_UNIT (``'l'``) and CELL_LENGTH_UNIT (``'cl'``). Default is "
 "CELL_LENGTH_UNIT: ``'cl'``."
 msgstr ""
+"均一積分ステップ単位。有効な単位は LENGTH_UNIT (``'l'``) と CELL_LENGTH_UNIT (``'cl'``) "
+"だけに制限されます。デフォルトは CELL_LENGTH_UNIT : ``'cl'`` です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:48
 msgid ""
 "Minimum step size used for line integration, expressed in length or cell "
 "length units. Only valid for an adaptive integrator, e.g., RK45"
-msgstr ""
+msgstr "線積分に使用される最小ステップサイズで、長さまたはセル長の単位で表されます。RK45のような適応積分器にのみ有効"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:51
 msgid ""
-"Maxmimum step size used for line integration, expressed in length or cell "
+"Maximum step size used for line integration, expressed in length or cell "
 "length units. Only valid for an adaptive integrator, e.g., RK45"
 msgstr ""
 
@@ -4110,17 +4157,17 @@ msgstr ""
 #: pyvista.DataSetFilters.streamlines:54
 msgid ""
 "Maximum number of steps for integrating a streamline. Defaults to ``2000``"
-msgstr ""
+msgstr "流線を積分するための最大ステップ数。デフォルトは ``2000``"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:57
 msgid "Terminal speed value, below which integration is terminated."
-msgstr ""
+msgstr "積分を終了する端子速度の値です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:59
 msgid "Maximum error tolerated throughout streamline integration."
-msgstr ""
+msgstr "流線積分全体で許容される最大エラー数。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:61
@@ -4132,7 +4179,7 @@ msgstr "LENGTH_UNITで表される流線の最大長を指定します。"
 msgid ""
 "Vorticity computation at streamline points (necessary for generating proper "
 "stream-ribbons using the ``vtkRibbonFilter``."
-msgstr ""
+msgstr "流線点での渦度計算 ( ``vtkRibbonFilter`` を使用して適切な流線リボンを生成するために必要。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:66
@@ -4142,13 +4189,15 @@ msgid ""
 "robust then the point locator. Options are ``'point'`` or ``'cell'`` "
 "(abbreviations of ``'p'`` and ``'c'`` are also supported)."
 msgstr ""
+"ポイントまたはセルによる流線積分中にセルの位置を特定するために、速度フィールド補間のタイプを設定します。セルロケータはポイントロケータよりも堅牢です。オプションは"
+" ``'point'`` または ``'cell'``  ( ``'p'`` および ``'c'`` の省略形もサポートされています。)です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:72
 msgid ""
 "This can be used to scale the rate with which the streamribbons twist. The "
 "default is 1."
-msgstr ""
+msgstr "これを使用して、リボンがツイストするレートをスケールできます。デフォルトは1です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:75
@@ -4161,6 +4210,8 @@ msgid ""
 "Return the source particles as :class:`pyvista.PolyData` as well as the "
 "streamlines. This will be the second value returned if ``True``."
 msgstr ""
+"ソース粒子を流線と同様に :class:`pyvista.PolyData` として返します。これは、 ``True`` "
+"の場合に返される2番目の値です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.streamlines:80
@@ -4169,12 +4220,12 @@ msgstr ""
 msgid ""
 "The coordinates of a start and end point for a line source. This will "
 "override the sphere point source."
-msgstr ""
+msgstr "線源の始点と終点の座標。これにより、球の点源がオーバーライドされます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.surface_indices:3
 msgid "**surf_ind** -- Indices of the surface points."
-msgstr ""
+msgstr "**surf_ind** -- サーフェスポイントのインデックス。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:3
@@ -4182,27 +4233,28 @@ msgid ""
 "This is often used to define a plane to texture map an image to this "
 "dataset. The plane defines the spatial reference and extent of that image."
 msgstr ""
+"これは、イメージをこのデータセットにテクスチャマッピングするプレーンを定義するためによく使用されます。平面は、そのイメージの空間参照と範囲を定義します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:6
 msgid ""
 "Length 3 iterable of floats defining the XYZ coordinates of the BOTTOM LEFT "
 "CORNER of the plane"
-msgstr ""
+msgstr "平面のBOTTOM LEFT CORNERのXYZ座標を定義する浮動小数点の反復可能な長さ3"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:9
 msgid ""
 "Length 3 iterable of floats defining the XYZ coordinates of the BOTTOM RIGHT"
 " CORNER of the plane"
-msgstr ""
+msgstr "平面のBOTTOM RIGHT CORNERのXYZ座標を定義する浮動小数点の反復可能な長さ3"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:12
 msgid ""
 "Length 3 iterable of floats defining the XYZ coordinates of the TOP LEFT "
 "CORNER of the plane"
-msgstr ""
+msgstr "平面のTOP LEFT CORNERのXYZ座標を定義する浮動小数点の反復可能な長さ3"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:15
@@ -4218,14 +4270,14 @@ msgstr ""
 msgid ""
 "The string name to give the new texture coordinates if applying the filter "
 "inplace."
-msgstr ""
+msgstr "フィルタをインプレースに適用する場合に、新しいテクスチャ座標を指定する文字列名。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:22
 msgid ""
 "Use the bounds to set the mapping plane by default (bottom plane of the "
 "bounding box)."
-msgstr ""
+msgstr "境界を使用してマッピングプレーンをデフォルトで設定します(バウンディングボックスの底面)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:3
@@ -4235,6 +4287,8 @@ msgid ""
 "each cell satisfies threshold criterion.  If scalars is None, the inputs "
 "active scalars is used."
 msgstr ""
+"このフィルタは ``vtkThreshold`` "
+"フィルタを入力データセットに適用し、結果のオブジェクトを返します。各セルのスカラー値が閾値の基準を満たすセルを抽出します。スカラがNoneの場合、入力アクティブスカラが使用されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:8
@@ -4253,9 +4307,14 @@ msgid ""
 "when their value is above the threshold \"value\". Default is False: "
 "yielding above the threshold \"value\"."
 msgstr ""
+"値が単一の値の場合、invertがTrueのとき、セルの値がパラメータ \"value\" "
+"を下回っているときにセルが保持されます。invertがFalseのとき、セルの値がしきい値 \"value\" "
+"を上回っているときにセルが保持されます。既定値はFalseです:しきい値 \"value\" を上回ってセルが生成されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.threshold_percent:13
 msgid ""
 "When True, the continuous interval [minimum cell scalar, maximum cell "
 "scalar] will be used to intersect the threshold bound, rather than the set "
@@ -4271,13 +4330,15 @@ msgid ""
 "point of the cell with a scalar value satisfying the threshold criterion "
 "will extract the cell."
 msgstr ""
+"点データからスカラーを使用する場合、この値が ``True`` のときは、セル内のすべての点のすべてのスカラーが閾値を満たす必要があります。 "
+"``False`` のときは、閾値の基準を満たすスカラー値を持つセルの任意の点がセルを抽出します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold_percent:3
 msgid ""
 "The percentage (0,1) to threshold. If value is out of 0 to 1 range, then it "
 "will be divided by 100 and checked to be in that range."
-msgstr ""
+msgstr "閾値に対するパーセント (0,1) 。値が0から1の範囲外の場合、100で除算され、その範囲内であることがチェックされます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold_percent:8
@@ -4287,14 +4348,8 @@ msgid ""
 "value is above the percentage of the range. Default is False: yielding above"
 " the threshold \"value\"."
 msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.threshold_percent:13
-msgid ""
-"When True, the continuous interval [minimum cell scalar, maxmimum cell "
-"scalar] will be used to intersect the threshold bound, rather than the set "
-"of discrete scalar values from the vertices."
-msgstr ""
+"invertがTrueの場合、セルの値が範囲のパーセンテージを下回っているときは、セルが保持されます。invertをFalseに設定すると、セルの値がセル範囲のパーセンテージを超えた場合にも保持されます。デフォルトは偽です:閾値"
+" \"value\" 以上を生成します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.triangulate:3
@@ -4323,12 +4378,12 @@ msgstr "**mesh** -- 三角形のみを含むメッシュ。``inplace=True``の�
 msgid ""
 "This modifies point coordinates by moving points along point normals by the "
 "scalar amount times the scale factor."
-msgstr ""
+msgstr "これにより、スカラー量にスケール係数を掛けた値だけポイント法線に沿ってポイントを移動することで、ポイント座標が修正されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_scalar:6
 msgid "Name of scalars to warp by. Defaults to currently active scalars."
-msgstr ""
+msgstr "ワープに使用するスカラーの名前。デフォルトは現在アクティブなスカラーです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_scalar:8
@@ -4336,6 +4391,8 @@ msgid ""
 "A scaling factor to increase the scaling effect. Alias ``scale_factor`` also"
 " accepted - if present, overrides ``factor``."
 msgstr ""
+"スケーリングエフェクトを大きくするためのスケーリング係数。エイリアス ``scale_factor`` も受け付けます-存在する場合、 "
+"``factor`` を上書きします。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_scalar:11
@@ -4347,7 +4404,7 @@ msgstr "ユーザが法線を指定します。指定した場合、データ法
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_scalar:14
 msgid "If True, the points of the give dataset will be updated."
-msgstr ""
+msgstr "Trueの場合、与えられたデータセットのポイントが更新されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_vector:3
@@ -4373,7 +4430,7 @@ msgstr "ワープに使用するベクトルの名前。既定値は現在アク
 msgid ""
 "A scaling factor that multiplies the vectors to warp by. Can be used to "
 "enhance the warping effect."
-msgstr ""
+msgstr "ワープするベクトルに乗算するスケール係数。ワープ効果を高めることができます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_vector:14
@@ -4384,11 +4441,11 @@ msgstr "Trueの場合、関数はメッシュをインプレイス更新し、 `
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.warp_by_vector:18
 msgid "**warped_mesh** -- The warped mesh resulting from the operation."
-msgstr ""
+msgstr "**warped_mesh** -- 操作の結果として生じた歪みメッシュ。"
 
 #: ../../pyvista/docs/core/filters.rst:32
 msgid "PolyData Filters"
-msgstr ""
+msgstr "PolyDataフィルタ"
 
 #: ../../pyvista/docs/core/filters.rst:34
 msgid ""
@@ -4413,7 +4470,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.boolean_add:1
 msgid "Add a mesh to the current mesh."
-msgstr ""
+msgstr "現在のメッシュにメッシュを追加します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4429,7 +4486,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.boolean_cut:1
 msgid "Perform a Boolean cut using another mesh."
-msgstr ""
+msgstr "別のメッシュを使用してブーリアンカットを実行します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4446,7 +4503,7 @@ msgstr ""
 #: pyvista.PolyDataFilters.boolean_difference:1
 msgid ""
 "Combine two meshes and retains only the volume in common between the meshes."
-msgstr ""
+msgstr "2つのメッシュを結合し、メッシュ間で共通のボリュームのみを保持します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4462,7 +4519,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.boolean_union:1
 msgid "Combine two meshes and attempts to create a manifold mesh."
-msgstr ""
+msgstr "2つのメッシュを結合し、多様体メッシュの作成を試みます。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4492,7 +4549,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clip_closed_surface:1
 msgid "Clip a closed polydata surface with a plane."
-msgstr ""
+msgstr "閉じたポリデータサーフェスを平面でクリップします。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4516,7 +4573,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_arc_length:1
 msgid "Compute the arc length over the length of the probed line."
-msgstr ""
+msgstr "精査する線の長さに対する円弧の長さを計算します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4532,7 +4589,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:1
 msgid "Compute point and/or cell normals for a mesh."
-msgstr ""
+msgstr "メッシュのポイント法線やセル法線を計算します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4562,7 +4619,7 @@ msgstr ""
 msgid ""
 "Reduce the number of triangles in a triangular mesh using "
 "vtkQuadricDecimation."
-msgstr ""
+msgstr "vtkQuadricDecimationを使用して、三角形メッシュ内の三角形の数を減らします。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4624,7 +4681,7 @@ msgstr ""
 msgid ""
 "Return a mask of the points of a surface mesh that has a surface angle "
 "greater than angle."
-msgstr ""
+msgstr "angleより大きいサーフェス角度を持つサーフェスメッシュのポイントのマスクを返します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4638,7 +4695,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:1
 msgid "Sweep polygonal data creating a \"skirt\" from free edges."
-msgstr ""
+msgstr "フリーエッジから \"skirt\" を作成してポリゴンデータを掃除します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4654,7 +4711,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.fill_holes:1
 msgid "Fill holes in a pyvista.PolyData or vtk.vtkPolyData object."
-msgstr ""
+msgstr "pyvista.PolyData または vtk.vtkPolyData オブジェクトの穴を埋めます。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4683,7 +4740,7 @@ msgstr ""
 #: pyvista.PolyDataFilters.geodesic:1
 msgid ""
 "Calculate the geodesic path between two vertices using Dijkstra's algorithm."
-msgstr ""
+msgstr "Dijkstraのアルゴリズムを使用して、2つの頂点間の測地線パスを計算します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4701,7 +4758,7 @@ msgstr ""
 msgid ""
 "Calculate the geodesic distance between two vertices using Dijkstra's "
 "algorithm."
-msgstr ""
+msgstr "Dijkstraのアルゴリズムを使用して、2つの頂点間の測地線距離を計算します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -4923,7 +4980,7 @@ msgstr "切断するメッシュ"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.boolean_cut:8
 msgid "**mesh** -- The cut mesh when inplace=False"
-msgstr ""
+msgstr "**mesh** -- inplace=Falseの場合の切断メッシュ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.boolean_difference:3
@@ -4965,18 +5022,18 @@ msgstr ""
 #: pyvista.PolyDataFilters.clean:13
 msgid ""
 "Turn on/off conversion of degenerate lines to points.  Enabled by default."
-msgstr ""
+msgstr "縮退ラインからポイントへの変換のオンとオフを切り替えます。既定では有効になっています。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clean:16
 msgid ""
 "Turn on/off conversion of degenerate polys to lines.  Enabled by default."
-msgstr ""
+msgstr "縮退polyから線への変換のオンとオフを切り替えます。既定では有効になっています。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clean:19
 msgid "Turn on/off conversion of degenerate strips to polys."
-msgstr ""
+msgstr "縮退ストリップからpolyへの変換のオン/オフを切り替えます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clean:21
@@ -4986,21 +5043,21 @@ msgstr "何も返さずにインプレイスメッシュを更新します。既
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clean:28
 msgid "**mesh** -- Cleaned mesh.  None when inplace=True"
-msgstr ""
+msgstr "**mesh** -- メッシュを消去しました。inplace=Trueの場合はNone"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clip_closed_surface:3
 msgid ""
 "This currently only supports one plane but could be implemented to handle a "
 "plane collection."
-msgstr ""
+msgstr "これは現在1つのプレーンしかサポートしていませんが、プレーンコレクションを処理するために実装することができます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clip_closed_surface:6
 msgid ""
 "It will produce a new closed surface by creating new polygonal faces where "
 "the input data was clipped."
-msgstr ""
+msgstr "入力データがクリップされた新しいポリゴンフェースを作成して、新しい閉じたサーフェスを生成します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clip_closed_surface:9
@@ -5011,6 +5068,7 @@ msgid ""
 "self-intersect, meaning that the faces of the surface should only touch at "
 "their edges."
 msgstr ""
+"非多様体サーフェスは、このフィルタの入力として使用しないでください。入力サーフェスには開いたエッジがなく、3つ以上のフェースによって共有されるエッジがあってはなりません。また、入力サーフェスは自己交差してはなりません。つまり、サーフェスのフェースはエッジでのみ接触する必要があります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.clip_with_plane:3
@@ -5024,6 +5082,8 @@ msgid ""
 "length for each of the polylines in the input. For all other cell types, the"
 " arc length is set to 0."
 msgstr ""
+"入力の各ポリラインに対して計算された円弧の長さを持つ \"arc_length\" "
+"という名前の新しい点データ配列が追加されます。その他すべてのセルタイプでは、円弧の長さは0に設定されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:3
@@ -5033,6 +5093,8 @@ msgid ""
 "separate normals to give crisp (rendered) surface definition. It is also "
 "possible to globally flip the normal orientation."
 msgstr ""
+"このフィルタでは、ポリゴンの順序を変更して、隣接するポリゴン間で方向の一貫性を保つことができます。鋭いエッジを分割し、別々の法線を使用してポイントを複製して、鮮明な"
+" (レンダリングされた) サーフェス定義を作成することができます。法線方向をグローバルに反転することもできます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:8
@@ -5042,16 +5104,17 @@ msgid ""
 " split and new points generated to prevent blurry edges (due to Gouraud "
 "shading)."
 msgstr ""
+"このアルゴリズムは、各ポリゴンの法線を決定し、共有ポイントで平均化することで機能します。シャープなエッジがある場合、エッジは分割され、ぼやけたエッジを防ぐために新しいポイントが生成されます(グーローシェーディングによる)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:13
 msgid "Calculation of cell normals. Defaults to True."
-msgstr ""
+msgstr "セル法線の計算。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:15
 msgid "Calculation of point normals. Defaults to True."
-msgstr ""
+msgstr "ポイント法線の計算。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:17
@@ -5063,12 +5126,12 @@ msgstr "シャープエッジの分割。既定値はFalseです。"
 msgid ""
 "Set global flipping of normal orientation. Flipping modifies both the normal"
 " direction and the order of a cell's points. Defaults to False."
-msgstr ""
+msgstr "法線方向のグローバル反転を設定します。フリップすると、セルのポイントの法線方向と順序の両方が変更されます。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:23
 msgid "Enforcement of consistent polygon ordering. Defaults to True."
-msgstr ""
+msgstr "一貫したポリゴン順序の強制。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:25
@@ -5082,6 +5145,8 @@ msgid ""
 " if both are set, all the normals in the output will point \"inward\". "
 "Defaults to False."
 msgstr ""
+"正しい法線方向の自動決定のオンとオフを切り替えます。注:これは、完全に閉じたサーフェス(つまり、境界エッジがありません。)で、非マニホールドエッジがないことを前提としています。これらの制約が満たされない場合、すべての賭けはオフになります。このオプションは計算が複雑になるため、レンダーしたイメージを検査してFlipNormalsフラグをオンにするかどうかを決定する必要がない場合に便利です。ただし、このフラグはFlipNormalsフラグと一緒に使用でき、両方が設定されている場合、出力のすべての法線は"
+" \"inward\" をポイントします。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:35
@@ -5090,6 +5155,7 @@ msgid ""
 "problems where the consistency of polygonal ordering is corrupted due to "
 "topological loops. Defaults to True."
 msgstr ""
+"非多様体エッジの横断のオンとオフを切り替えます。これを変更すると、トポロジループが原因でポリゴン順序の一貫性が損なわれる問題を防ぐことができます。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:39
@@ -5098,40 +5164,41 @@ msgid ""
 "neighboring polygons is greater than this value, the shared edge is "
 "considered \"sharp\". Defaults to 30.0."
 msgstr ""
+"鋭いエッジを定義する角度。隣接するポリゴン間の角度の差がこの値より大きい場合、共有エッジは \"鋭い\" とみなされます。デフォルトは30.0です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:43
 msgid "Updates mesh in-place while returning nothing. Defaults to False."
-msgstr ""
+msgstr "何も返さずにインプレイスメッシュを更新します。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:46
 msgid "**mesh** -- Updated mesh with cell and point normals if inplace=False"
-msgstr ""
+msgstr "**mesh** -- inplace=Falseの場合、セル法線とポイント法線を使用してメッシュを更新"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:51
 msgid "Previous arrays named \"Normals\" will be overwritten."
-msgstr ""
+msgstr "\"Normals\" という名前の以前の配列は上書きされます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:53
 msgid ""
 "Normals are computed only for polygons and triangle strips. Normals are not "
 "computed for lines or vertices."
-msgstr ""
+msgstr "法線はポリゴンと三角形ストリップに対してのみ計算されます。線分または頂点の法線は計算されません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:56
 msgid ""
 "Triangle strips are broken up into triangle polygons. You may want to "
 "restrip the triangles."
-msgstr ""
+msgstr "三角形ストリップは三角形ポリゴンに分割されます。三角形を再分割することもできます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.compute_normals:59
 msgid "May be easier to run mesh.point_normals or mesh.cell_normals"
-msgstr ""
+msgstr "mesh.point_normals または mesh.cell_normals を実行する方が簡単な場合があります"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.curvature:3
@@ -5143,7 +5210,7 @@ msgstr "vtkポリデータメッシュ"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.curvature:10
 msgid "One of the following strings Mean Gaussian Maximum Minimum"
-msgstr ""
+msgstr "次のいずれかの文字列 Mean Gaussian Maximum Minimum"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.curvature:16
@@ -5153,7 +5220,7 @@ msgstr "**curvature** -- 曲率の値"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:3
 msgid "Mesh to decimate"
-msgstr ""
+msgstr "メッシュを間引"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:5
@@ -5162,6 +5229,8 @@ msgid ""
 " filter will try to reduce the data set to 10% of its original size and will"
 " remove 90% of the input triangles."
 msgstr ""
+"削除する元のメッシュの割合。TargetReductionが 0.9 "
+"に設定されています。このフィルタはデータセットを元のサイズの10%に縮小しようとし、入力三角形の90%を削除します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:10
@@ -5171,13 +5240,14 @@ msgid ""
 " AttributeErrorMetric is active, these errors can be large. Defaults to "
 "False."
 msgstr ""
+"三角形の法線方向のエラーを大幅に減らすボリューム保存を有効にするかどうかを決定します。オフの場合、ボリュームの保存は無効になり、AttributeErrorMetricがアクティブな場合、これらのエラーは大きくなる可能性があります。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:15
 msgid ""
 "Decide whether to include data attributes in the error metric. If off, then "
 "only geometric error is used to control the decimation. Defaults to False."
-msgstr ""
+msgstr "エラー指標にデータ属性を含めるかどうかを決定します。オフの場合、ジオメトリエラーのみを使用して間引きを制御します。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:19
@@ -5186,6 +5256,7 @@ msgid ""
 "AttributeErrorMetric is on), then the following flags control which "
 "attributes are to be included in the error calculation. Defaults to True."
 msgstr ""
+"属性エラーをメトリックに含める場合(つまり、AttributeErrorMetricがオンになっています)、次のフラグはエラー計算に含める属性を制御します。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:24
@@ -5199,7 +5270,7 @@ msgstr "スカラーパラメータを参照してください。既定値はTru
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:26
 msgid "See scalars parameter. Defaults to False."
-msgstr ""
+msgstr "スカラーパラメータを参照してください。既定値はFalseです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:32
@@ -5208,6 +5279,7 @@ msgid ""
 "used to weight the contribution of the attributes towards the error metric. "
 "Defaults to 0.1."
 msgstr ""
+"スカラーアトリビュートのスケーリングウェイトの影響。これらの値は、エラーメトリックに対する属性の影響を重み付けするために使用されます。デフォルトは0.1です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:36
@@ -5218,12 +5290,12 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:42
 msgid "See scalars weight parameter. Defaults to 0.1."
-msgstr ""
+msgstr "スカラーのウェイトパラメータを参照してください。デフォルトは0.1です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate:49
 msgid "**outmesh** -- Decimated mesh.  None when inplace=True."
-msgstr ""
+msgstr "**outmesh** -- 間引済みメッシュ。inplace=Trueの場合はNone"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:3
@@ -5231,14 +5303,14 @@ msgid ""
 "It forms a good approximation to the original geometry. Based on the "
 "algorithm originally described in \"Decimation of Triangle Meshes\", Proc "
 "Siggraph 92."
-msgstr ""
+msgstr "元のジオメトリによく似ています。元々\"三角形メッシュの間引き\"で記述されたアルゴリズム、Proc Siggraph 92に基づきます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:6
 msgid ""
 "Reduction factor. A value of 0.9 will leave 10 % of the original number of "
 "vertices."
-msgstr ""
+msgstr "縮小率。値が0.9の場合、元の頂点の数の10%が残ります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:9
@@ -5246,6 +5318,7 @@ msgid ""
 "Angle used to define what an edge is (i.e., if the surface normal between "
 "two adjacent triangles is >= feature_angle, an edge exists)."
 msgstr ""
+"エッジの定義に使用する角度(つまり、2つの隣接する三角形間のサーフェス法線が feature_angle 以上の場合、エッジが存在します。)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:12
@@ -5253,6 +5326,7 @@ msgid ""
 "Angle used to control the splitting of the mesh. A split line exists when "
 "the surface normals between two edge connected triangles are >= split_angle."
 msgstr ""
+"メッシュの分割を制御するために使用する角度。分割線は、2つのエッジ接続された三角形間のサーフェス法線がsplit_angle以上の場合に存在します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:15
@@ -5262,6 +5336,7 @@ msgid ""
 "better preserve the original topology of the mesh, but may not necessarily "
 "give the exact requested decimation."
 msgstr ""
+"コーナーでのメッシュの分割、エッジに沿ったメッシュの分割、非多様点でのメッシュの分割、または分割が必要な場所でのメッシュの分割をコントロールします。分割をオフにすると、メッシュの元のトポロジが保持されますが、要求された正確な間引きが得られない場合があります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:20
@@ -5271,20 +5346,21 @@ msgid ""
 "is set to True, the mesh is split with the specified split_angle. Otherwise "
 "mesh splitting is deferred as long as possible."
 msgstr ""
+"メッシュを、互いに切り離された半平面パッチに分離します。これにより、場合によっては優れた結果が得られます。pre_split_meshがTrueに設定されている場合、メッシュは指定されたsplit_angleで分割されます。それ以外の場合、メッシュ分割は可能な限り延期されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:25
 msgid ""
 "Controls topology preservation. If on, mesh splitting and hole elimination "
 "will not occur. This may limit the maximum reduction that may be achieved."
-msgstr ""
+msgstr "トポロジの保存をコントロールします。オンの場合、メッシュの分割と穴の除去は行われません。これは、達成され得る最大減少を制限し得ます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.decimate_pro:31
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:26
 msgid "**mesh** -- Decimated mesh. None when inplace=True."
-msgstr ""
+msgstr "**mesh** -- 間引済みメッシュ。inplace=Trueの場合はNone"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:3
@@ -5292,7 +5368,7 @@ msgid ""
 "Specify a tolerance to control discarding of closely spaced points. This "
 "tolerance is specified as a fraction of the diagonal length of the bounding "
 "box of the points."
-msgstr ""
+msgstr "間隔の狭い点の削除を制御する許容差を指定します。この許容値は、ポイントのバウンディングボックスの対角線の長さの一部として指定されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:7
@@ -5302,13 +5378,14 @@ msgid ""
 "centered at mesh vertices will be output. Otherwise, only triangles will be "
 "output."
 msgstr ""
+"このフィルタの出力を制御するアルファ(または距離)値を指定します。アルファ値が0以外の場合は、メッシュ頂点を中心とする球に含まれるエッジまたは三角形のみが出力されます。それ以外の場合は、三角形のみが出力されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:12
 msgid ""
 "Specify a multiplier to control the size of the initial, bounding Delaunay "
 "triangulation."
-msgstr ""
+msgstr "初期の境界Delaunay三角形分割のサイズを制御する乗数を指定します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:15
@@ -5318,11 +5395,12 @@ msgid ""
 "triangulation to begin the triangulation process. This feature is nice for "
 "debugging output.)"
 msgstr ""
+"ブール演算は、境界の三角形分割ポイント(関連する三角形)を出力に含めるかどうかをコントロールします。(これらは三角測量プロセスを開始するための初期三角測量として導入されます。この機能は、出力のデバッグに便利です。)"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:20
 msgid "If True, overwrite this mesh with the triangulated mesh."
-msgstr ""
+msgstr "Trueの場合、このメッシュを三角メッシュで上書きします。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delaunay_2d:22
@@ -5334,11 +5412,12 @@ msgid ""
 "source). Note that this method does not connect the pipeline. See "
 "SetSourceConnection for connecting the pipeline."
 msgstr ""
+"拘束されたエッジとループの指定に使用するソースオブジェクトを指定します。(これはオプションです。)このオプションを設定し、線分またはポリゴンを定義すると、拘束された三角形分割が作成されます。線分/ポリゴンは、入力点セット(つまり、点IDは入力とソースで同一です)内の点を参照すると仮定されます。このメソッドはパイプラインを接続しないことに注意してください。パイプラインの接続については、SetSourceConnectionを参照してください。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.delauney_2d:3
 msgid "DEPRECATED. Please see :func:`pyvista.PolyData.delaunay_2d`."
-msgstr ""
+msgstr "非推奨。 :func:`pyvista.PolyData.delaunay_2d` を見てください。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.edge_mask:3
@@ -5348,7 +5427,7 @@ msgstr "エッジを考慮する角度。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:3
 msgid "This will create a line from vertices."
-msgstr ""
+msgstr "これにより、頂点からラインが作成されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:5
@@ -5359,6 +5438,9 @@ msgid ""
 "surface. For example, sweeping a line results in a quadrilateral, and "
 "sweeping a triangle creates a \"wedge\"."
 msgstr ""
+"ポリゴンデータを入力として取り、出力にポリゴンデータを生成します。入力データセットは何らかの押し出し関数に従って間引きされ、新しいポリゴンプリミティブを作成します。これらのプリミティブは"
+" \"skirt\" または間引きサーフェスを形成します。たとえば、線分を間引きすると四角形が作成され、三角形を間引きすると \"wedge\" "
+"が作成されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:12
@@ -5367,6 +5449,8 @@ msgid ""
 "whether the sweep of a 2D object (i.e., polygon or triangle strip) is capped"
 " with the generating geometry via the \"Capping\" parameter."
 msgstr ""
+"このフィルタには、いくつかの制御パラメータがあります。2 "
+"Dオブジェクト(多角形または三角形のストリップ)の間引きを生成ジオメトリでキャップするかどうかは、 \"Capping\" パラメータで制御できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:17
@@ -5376,6 +5460,7 @@ msgid ""
 "strips) generate surfaces. This is true also of lines or polylines. Vertices"
 " generate lines."
 msgstr ""
+"スカートは、特定のトポロジカルフィーチャーを配置することによって生成されます。フリーエッジ(1つのポリゴンまたは三角形ストリップによってのみ使用されるポリゴンまたは三角形ストリップのエッジ)はサーフェスを生成します。これは、線分またはポリラインにも当てはまります。頂点は線を生成します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:23
@@ -5384,26 +5469,28 @@ msgid ""
 "model 2 1/2D objects like punched plates. It also can be used to create "
 "solid objects from 2D polygonal meshes."
 msgstr ""
+"このフィルタを使用して、3 Dフォント、3 D不規則棒グラフ、またはパンチプレートなどのモデル2 1/2 Dオブジェクトを作成できます。また、2 "
+"Dポリゴンメッシュからソリッドオブジェクトを作成する場合にも使用できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:28
 msgid "Mesh to extrude."
-msgstr ""
+msgstr "押し出すメッシュ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:30
 msgid "Direction and length to extrude the mesh in."
-msgstr ""
+msgstr "メッシュを押し出す方向と長さ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:32
 msgid "Overwrites the original mesh inplace."
-msgstr ""
+msgstr "元のメッシュの決まった場所に上書きします。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.extrude:39
 msgid "Extrude a half arc circle"
-msgstr ""
+msgstr "半円を押し出す"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.fill_holes:3
@@ -5412,6 +5499,7 @@ msgid ""
 "loops, and then triangulating the resulting loops. Note that you can specify"
 " an approximate limit to the size of the hole that can be filled."
 msgstr ""
+"穴は、境界エッジを配置し、それらをループにリンクして、結果のループを三角化することによって識別されます。穴埋め可能な穴のサイズの概算制限を指定できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.fill_holes:8
@@ -5421,68 +5509,69 @@ msgid ""
 "approximate area; the actual area cannot be computed without first "
 "triangulating the hole."
 msgstr ""
+"穴は、境界エッジを配置し、それらをループにリンクして、結果のループを三角化することによって識別されます。穴埋め可能な穴のサイズの概算制限を指定できます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.fill_holes:18
 msgid "**mesh** -- Mesh with holes filled.  None when inplace=True"
-msgstr ""
+msgstr "**mesh** -- 穴が充填されたメッシュ。inplace=Trueの場合はNone"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic:3
 msgid ""
 "This will add an array titled `vtkOriginalPointIds` of the input mesh's "
 "point ids to the output mesh."
-msgstr ""
+msgstr "これにより、入力メッシュのポイントIDの `vtkOriginalPointIds` という名前の配列が出力メッシュに追加されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic:6
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:3
 msgid "Vertex index indicating the start point of the geodesic segment."
-msgstr ""
+msgstr "測地セグメントの始点を示す頂点インデックスです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic:8
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:5
 msgid "Vertex index indicating the end point of the geodesic segment."
-msgstr ""
+msgstr "測地セグメントの終点を示す頂点インデックスです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic:11
 msgid ""
 "**output** -- PolyData object consisting of the line segment between the two"
 " given vertices."
-msgstr ""
+msgstr "**output** -- 指定された2つの頂点間のラインセグメントで構成されるPolyDataオブジェクト。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:8
 msgid "**length** -- Length of the geodesic segment."
-msgstr ""
+msgstr "**length** -- 測地座標セグメントの長さ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_boundaries:3
 msgid "The color of the edges when they are added to the plotter."
-msgstr ""
+msgstr "プロッタに追加されたときのエッジの色。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_boundaries:5
 msgid ""
 "All additional keyword arguments will be passed to "
 ":func:`pyvista.BasePlotter.add_mesh`"
-msgstr ""
+msgstr "追加のキーワード引数はすべて :func:`pyvista.BasePlotter.add_mesh` に渡されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:3
 msgid ""
 "One of the following strings indicating curvature type  - Mean - Gaussian - "
 "Maximum - Minimum"
-msgstr ""
+msgstr "曲率タイプを示す次のいずれかの文字列 - Mean - Gaussian - Maximum - Minimum"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:3
 msgid "One of the following strings indicating curvature type"
-msgstr ""
+msgstr "曲率タイプを示す次のいずれかの文字列"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:5
@@ -5497,12 +5586,12 @@ msgstr "Gaussian"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:7
 msgid "Maximum"
-msgstr ""
+msgstr "最大"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:8
 msgid "Minimum"
-msgstr ""
+msgstr "最小"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:10
@@ -5512,33 +5601,33 @@ msgstr ":func:`pyvista.plot` 参照"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:13
 msgid "**cpos** -- List of camera position, focal point, and view up"
-msgstr ""
+msgstr "**cpos** -- カメラ位置、焦点、およびビューアップのリスト"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:3
 msgid ""
 "This requires a mesh and a line segment defined by an origin and end_point."
-msgstr ""
+msgstr "これには、原点とend_pointで定義されたメッシュとラインセグメントが必要です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:6
 msgid "Start of the line segment."
-msgstr ""
+msgstr "線分セグメントの始点。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:8
 msgid "End of the line segment."
-msgstr ""
+msgstr "線分セグメントの終点。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:10
 msgid "Returns intersection of first point only."
-msgstr ""
+msgstr "最初のポイントの交差のみを返します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:12
 msgid "Plots ray trace results"
-msgstr ""
+msgstr "レイトレーシング結果をプロットします"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:14
@@ -5553,44 +5642,46 @@ msgid ""
 "(*np.ndarray*) -- Indices of the intersection cells.  Empty array if no   "
 "intersections."
 msgstr ""
+"* **intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。 * "
+"**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:17
 msgid ""
 "**intersection_points** (*np.ndarray*) -- Location of the intersection "
 "points.  Empty array if no intersections."
-msgstr ""
+msgstr "**intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:19
 msgid ""
 "**intersection_cells** (*np.ndarray*) -- Indices of the intersection cells."
 "  Empty array if no intersections."
-msgstr ""
+msgstr "**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:3
 msgid "Only valid for all-triangle meshes."
-msgstr ""
+msgstr "すべて三角形のメッシュにのみ有効です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:5
 msgid ""
 "If remove is a bool array, points that are True will be removed.  Otherwise,"
 " it is treated as a list of indices."
-msgstr ""
+msgstr "removeがブール配列の場合、Trueであるポイントは削除されます。それ以外の場合は、インデックスのリストとして扱われます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:8
 msgid ""
 "When 'all', only faces containing all points flagged for removal will be "
 "removed.  Default 'all'"
-msgstr ""
+msgstr "'all' の場合、削除のフラグが付いたすべての点を含む面のみが削除されます。デフォルト 'all'"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:11
 msgid "When True, point and cell scalars will be passed on to the new mesh."
-msgstr ""
+msgstr "Trueの場合、ポイントスカラーとセルスカラーが新しいメッシュに渡されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:17
@@ -5600,6 +5691,9 @@ msgid ""
 "Indices of new points relative to the original mesh.  Not   returned when "
 "inplace=False."
 msgstr ""
+"**mesh** (*pyvista.PolyData*) -- "
+"削除のためのフラグが付いたポイントのないメッシュ。inplace=Falseの場合は返されません。**ridx** (*np.ndarray*) -- "
+"元のメッシュを基準にした新しいポイントのインデックス。inplace=Falseの場合は返されません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:17
@@ -5607,6 +5701,8 @@ msgid ""
 "**mesh** (*pyvista.PolyData*) -- Mesh without the points flagged for "
 "removal.  Not returned when inplace=False."
 msgstr ""
+"**mesh** (*pyvista.PolyData*) -- "
+"削除のためのフラグが付いたポイントのないメッシュ。inplace=Falseの場合は返されません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.remove_points:19
@@ -5614,27 +5710,29 @@ msgid ""
 "**ridx** (*np.ndarray*) -- Indices of new points relative to the original "
 "mesh.  Not returned when inplace=False."
 msgstr ""
+"**ridx** (*np.ndarray*) -- "
+"元のメッシュを基準にした新しいポイントのインデックス。inplace=Falseの場合は返されません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ribbon:5
 msgid ""
 "If there are no lines in the input dataset, then the output will be an empty"
 " PolyData mesh."
-msgstr ""
+msgstr "入力データセットに行がない場合、出力は空のPolyDataメッシュになります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ribbon:8
 msgid ""
 "Set the \"half\" width of the ribbon. If the width is allowed to vary, this "
 "is the minimum width. The default is 10% the length"
-msgstr ""
+msgstr "リボンの \"半分の\" 幅を設定します。幅を変更できる場合は、これが最小幅になります。デフォルトは長さの10%です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ribbon:11
 msgid ""
 "String name of the scalars array to use to vary the ribbon width. This is "
 "only used if a scalars array is specified."
-msgstr ""
+msgstr "リボンの幅を変更するために使用するスカラー配列の文字列名。これはスカラー配列が指定されている場合にのみ使用されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ribbon:14
@@ -5648,7 +5746,7 @@ msgstr "線分の法線からのリボンのオフセット角度を設定しま
 msgid ""
 "Set the maximum ribbon width in terms of a multiple of the minimum width. "
 "The default is 2.0"
-msgstr ""
+msgstr "リボンの最大幅を最小幅の倍数で設定します。デフォルトは2.0です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ribbon:20
@@ -5662,13 +5760,15 @@ msgid ""
 "specified to generate the texture coordinates in the following ways: "
 "``'length'``, ``'normalized'``,"
 msgstr ""
+"Trueの場合、リボンに沿ってテクスチャ座標を生成します。これは、次の方法でテクスチャ座標を生成するように指定することもできます。``'length'``、"
+" ``'normalized'`` 、"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:3
 msgid ""
 "The effect is to \"relax\" the mesh, making the cells better shaped and the "
 "vertices more evenly distributed."
-msgstr ""
+msgstr "この効果は、メッシュを \"リラックスする\" して、セルのシェイプを改善し、頂点をより均等に分散させることです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:6
@@ -5681,20 +5781,20 @@ msgid ""
 "Relaxation factor controls the amount of displacement in a single iteration."
 " Generally a lower relaxation factor and higher number of iterations is "
 "numerically more stable."
-msgstr ""
+msgstr "緩和係数は、1回の反復での変位量を制御します。一般に、緩和係数が低く、反復回数が多いほど、数値的に安定します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:12
 msgid ""
 "Convergence criterion for the iteration process. Smaller numbers result in "
 "more smoothing iterations. Range from (0 to 1)."
-msgstr ""
+msgstr "反復プロセスの収束基準。数値が小さいほど、スムージングの反復が多くなります。範囲は(0から1)です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:15
 msgid ""
 "Edge angle to control smoothing along edges (either interior or boundary)."
-msgstr ""
+msgstr "エッジに沿ったスムージングを制御するエッジ角度(内部または境界のいずれか)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:17
@@ -5704,12 +5804,12 @@ msgstr "シャープエッジを識別するためのフィーチャ角度です
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:19
 msgid "Boolean flag to control smoothing of boundary edges."
-msgstr ""
+msgstr "境界エッジのスムージングを制御するブールフラグ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.smooth:21
 msgid "Boolean flag to control smoothing of feature edges."
-msgstr ""
+msgstr "フィーチャエッジのスムージングをコントロールするbooleanフラグ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:3
@@ -5731,27 +5831,31 @@ msgid ""
 "strip these use ``triangulate`` filter to fragment the input into triangles "
 "and lines prior to running this filter.)"
 msgstr ""
+"ポリゴンは、三角形である場合にのみ三角形ストリップにアセンブルされます。他のタイプのポリゴンは出力に渡され、ストリップされません。(すべてのデータを除去する必要がある場合は、このフィルタを実行する前に、"
+" ``triangulate`` "
+"フィルタを使用して三角形以外のポリゴンを三角形化します。)フィルタは、入力ポリデータに(出力に)頂点が存在する場合は通過します。また、三角形のストリップまたはポリラインが入力で定義されている場合、それらは渡され、結合も延長もされません。(これらを除去したい場合は、このフィルタを実行する前に、"
+" ``triangulate`` フィルタを使用して入力を三角形と線にフラグメント化します。)"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:17
 msgid ""
 "If on, the output polygonal segments will be joined if they are contiguous. "
 "This is useful after slicing a surface. The default is off."
-msgstr ""
+msgstr "オンの場合、出力ポリゴンセグメントが連続していれば結合されます。これは、サーフェスをスライスした後に便利です。デフォルトはオフです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:21
 msgid ""
 "Specify the maximum number of triangles in a triangle strip, and/or the "
 "maximum number of lines in a poly-line."
-msgstr ""
+msgstr "三角形ストリップ内の三角形の最大数、およびポリライン内のラインの最大数を指定します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:24
 msgid ""
 "Enable/Disable passing of the CellData in the input to the output as "
 "FieldData. Note the field data is transformed."
-msgstr ""
+msgstr "入力のCellDataをFieldDataとして出力に渡すことを有効/無効にします。フィールドデータが変換されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:27
@@ -5760,6 +5864,8 @@ msgid ""
 "the cell index of the original 3D cell that produced each output cell. This "
 "is useful for picking. The default is off to conserve memory."
 msgstr ""
+"オンの場合、出力ポリゴンデータセットには、各出力セルを生成したオリジナルの3 "
+"Dセルのセルインデックスを保持するcelldata配列が含まれます。これはピッキングに便利です。デフォルトでは、メモリを節約するためにオフになっています。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.strip:32
@@ -5777,6 +5883,8 @@ msgid ""
 "vtkButterflySubdivisionFilter vtkLoopSubdivisionFilter "
 "vtkLinearSubdivisionFilter"
 msgstr ""
+"次のいずれかのvtkサブディビジョンフィルタを使用してメッシュをサブディバイドします。 vtkButterflySubdivisionFilter "
+"vtkLoopSubdivisionFilter vtkLinearSubdivisionFilter"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:8
@@ -5784,6 +5892,7 @@ msgid ""
 "Linear subdivision results in the fastest mesh subdivision, but it does not "
 "smooth mesh edges, but rather splits each triangle into 4 smaller triangles."
 msgstr ""
+"線形サブディビジョンの結果として最も速いメッシュサブディビジョンが得られますが、メッシュエッジはスムースされず、各三角形が4つの小さな三角形に分割されます。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:12
@@ -5791,13 +5900,14 @@ msgid ""
 "Butterfly and loop subdivision perform smoothing when dividing, and may "
 "introduce artifacts into the mesh when dividing."
 msgstr ""
+"バタフライサブディビジョンとループサブディビジョンでは、分割時にスムージングが実行され、分割時にメッシュにアーティファクトが生じる場合があります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:15
 msgid ""
 "Subdivision filter appears to fail for multiple part meshes.  Should be one "
 "single mesh."
-msgstr ""
+msgstr "サブディビジョンフィルタが複数のパーツメッシュで失敗するように見えます。1つの単一メッシュである必要があります。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:18
@@ -5806,21 +5916,23 @@ msgid ""
 "number of resulting triangles is nface*4**nsub where nface is the current "
 "number of faces."
 msgstr ""
+"サブディビジョンの数。サブディビジョンごとに4つの新しい三角形が作成されるため、作成される三角形の数は nface*4**nsub "
+"となります。ここで、nfaceは現在のフェースの数です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:22
 msgid "Can be one of the following: 'butterfly', 'loop', 'linear'"
-msgstr ""
+msgstr "次のいずれかです: 'butterfly', 'loop', 'linear'"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:27
 msgid "**mesh** -- pyvista polydata object.  None when inplace=True"
-msgstr ""
+msgstr "**mesh** -- pyvista polydataオブジェクト。inplace=Trueの場合はNone"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.subdivide:37
 msgid "alternatively, update mesh in-place"
-msgstr ""
+msgstr "代わりに、インプレイスでメッシュを更新します"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tri_filter:3
@@ -5846,22 +5958,22 @@ msgstr "チューブの半径は、スカラー値で線形に変化するよう
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:5
 msgid "Minimum tube radius (minimum because the tube radius may vary)."
-msgstr ""
+msgstr "最小チューブ半径(チューブ半径が変化する可能性があるため、最小)。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:7
 msgid "scalars array by which the radius varies"
-msgstr ""
+msgstr "半径を変化させるスカラー配列"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:9
 msgid "Turn on/off whether to cap the ends with polygons. Default True."
-msgstr ""
+msgstr "終端をポリゴンでキャップするかどうかをオンまたはオフにします。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:11
 msgid "Set the number of sides for the tube. Minimum of 3."
-msgstr ""
+msgstr "チューブの側面の数を設定します。3以上。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:13
@@ -5871,16 +5983,16 @@ msgstr "最小半径の倍数で表される最大チューブ半径。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:15
 msgid "The field preference when searching for the scalars array by name"
-msgstr ""
+msgstr "スカラー配列を名前で検索する際のフィールドの設定"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.tube:20
 msgid "**mesh** -- Tube-filtered mesh. None when inplace=True."
-msgstr ""
+msgstr "**mesh** -- チューブフィルタメッシュ。inplace=Trueの場合はなし。"
 
 #: ../../pyvista/docs/core/filters.rst:52
 msgid "UnstructuredGrid Filters"
-msgstr "UnstructuredGrid Filters"
+msgstr "UnstructuredGrid フィルタ"
 
 #: ../../pyvista/docs/core/filters.rst:54
 msgid ""
@@ -6021,12 +6133,12 @@ msgstr "カーネルの大きさを制限する単位なし係数。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.UniformGridFilters.gaussian_smooth:5
 msgid "Standard deviation of the kernel in pixel units."
-msgstr ""
+msgstr "ピクセル単位でのカーネルの標準偏差。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.UniformGridFilters.gaussian_smooth:7
 msgid "Name of scalars to process. Defaults to currently active scalars."
-msgstr ""
+msgstr "処理に使用するスカラーの名前。デフォルトは現在アクティブなスカラーです。"
 
 #: ../../pyvista/docs/core/filters.rst:91
 msgid "Composite Filters"
@@ -6278,6 +6390,9 @@ msgid ""
 "common features which are encompassed int their shared inheritance of "
 ":class:`pyvista.Grid`"
 msgstr ""
+"pyvista内のグリッド化されたデータセットは、VTKバックエンド上の ``vtkRectilinearGrid`` および "
+"``vtkImageData`` データ・オブジェクトをキャプチャします。これらのデータ型には、 :class:`pyvista.Grid` "
+"の共有継承に含まれる共通の特徴があります。"
 
 #: ../../pyvista/docs/core/grids.rst:15:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.Grid.dimensions>`\\"
@@ -6308,11 +6423,11 @@ msgstr "非ポイントセットグリッド用の共通メソッドでいっぱ
 msgid ""
 "These are effectively the number of nodes along each of the three dataset "
 "axes."
-msgstr ""
+msgstr "これらは、事実上、3つのデータセット軸のそれぞれに沿ったノードの数です。"
 
 #: ../../pyvista/docs/core/grids.rst:28
 msgid "Rectilinear Grid"
-msgstr ""
+msgstr "直線グリッド"
 
 #: ../../pyvista/docs/core/grids.rst:36:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.RectilinearGrid.dimensions>`\\"
@@ -6336,7 +6451,7 @@ msgstr ":obj:`points <pyvista.RectilinearGrid.points>`\\"
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.points:1
 msgid "Return a copy of the points as an n by 3 numpy array."
-msgstr ""
+msgstr "点のコピーをn x 3 numpy配列として返します。"
 
 #: ../../pyvista/docs/core/grids.rst:36:<autosummary>:1
 msgid ":obj:`x <pyvista.RectilinearGrid.x>`\\"
@@ -6363,7 +6478,7 @@ msgstr ":obj:`z <pyvista.RectilinearGrid.z>`\\"
 #: ../../pyvista/docs/core/grids.rst:36:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:1
 msgid "Get the coordinates along the Z-direction."
-msgstr ""
+msgstr "Z方向の座標を取得します。"
 
 #: ../../pyvista/docs/core/grids.rst:41:<autosummary>:1
 msgid ""
@@ -6389,7 +6504,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:1
 msgid "Extend the functionality of a vtk.vtkRectilinearGrid object."
-msgstr ""
+msgstr "vtk.vtkRectilinearGridオブジェクトの機能を拡張します。"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:3
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:3
@@ -6406,20 +6521,20 @@ msgstr "空のグリッドを作成"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:6
 msgid "Initialize from a vtk.vtkRectilinearGrid object"
-msgstr ""
+msgstr "vtk.vtkRectilinearGrid オブジェクトから初期化します"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:7
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:7
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.StructuredGrid:7
 msgid "Initialize directly from the point arrays"
-msgstr ""
+msgstr "点配列から直接初期化します"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:9
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.StructuredGrid:9
 msgid ""
 "See _from_arrays in the documentation for more details on initializing from "
 "point arrays"
-msgstr ""
+msgstr "点配列からの初期化の詳細については、ドキュメントの_from_arraysを参照してください。"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.meshgrid:3
@@ -6427,10 +6542,12 @@ msgid ""
 "This simply returns a ``numpy.meshgrid`` of the coordinates for this mesh in"
 " ``ij`` indexing. These are a copy of the points of this mesh."
 msgstr ""
+"これは単に ``ij`` インデックスでこのメッシュの座標の ``numpy.meshgrid`` "
+"を返します。これらは、このメッシュのポイントのコピーです。"
 
 #: ../../pyvista/docs/core/grids.rst:50
 msgid "Uniform Grid"
-msgstr ""
+msgstr "統合グリッド"
 
 #: ../../pyvista/docs/core/grids.rst:52
 msgid ""
@@ -6445,7 +6562,7 @@ msgstr ":obj:`origin <pyvista.UniformGrid.origin>`\\"
 #: ../../pyvista/docs/core/grids.rst:59:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid.origin:1
 msgid "Return the origin of the grid (bottom southwest corner)."
-msgstr ""
+msgstr "グリッドの原点(南西下角)を返します。"
 
 #: ../../pyvista/docs/core/grids.rst:59:<autosummary>:1
 msgid ":obj:`points <pyvista.UniformGrid.points>`\\"
@@ -6454,7 +6571,7 @@ msgstr ":obj:`points <pyvista.UniformGrid.points>`\\"
 #: ../../pyvista/docs/core/grids.rst:59:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid.points:1
 msgid "Build a copy of the implicitly defined points as a numpy array."
-msgstr ""
+msgstr "暗黙的に定義されたポイントのコピーを、数値配列として作成します。"
 
 #: ../../pyvista/docs/core/grids.rst:59:<autosummary>:1
 msgid ":obj:`spacing <pyvista.UniformGrid.spacing>`\\"
@@ -6464,7 +6581,7 @@ msgstr ":obj:`spacing <pyvista.UniformGrid.spacing>`\\"
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.UniformGrid.spacing:1
 msgid "Get the spacing for each axial direction."
-msgstr ""
+msgstr "各軸方向の間隔を取得します。"
 
 #: ../../pyvista/docs/core/grids.rst:59:<autosummary>:1
 msgid ":obj:`x <pyvista.UniformGrid.x>`\\"
@@ -6505,7 +6622,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.UniformGrid.cast_to_rectilinear_grid:1
 msgid "Cast this uniform grid to a :class:`pyvista.RectilinearGrid`."
-msgstr ""
+msgstr "この均一なグリッドを :class:`pyvista.RectilinearGrid` にキャストします。"
 
 #: ../../pyvista/docs/core/grids.rst:64:<autosummary>:1
 msgid ""
@@ -6519,7 +6636,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.UniformGrid.cast_to_structured_grid:1
 msgid "Cast this uniform grid to a :class:`pyvista.StructuredGrid`."
-msgstr ""
+msgstr "この均一なグリッドを :class:`pyvista.StructuredGrid` にキャストします。"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:1
 msgid ""
@@ -6533,17 +6650,17 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:1
 msgid "Extend the functionality of a vtk.vtkImageData object."
-msgstr ""
+msgstr "vtk.vtkImageDataオブジェクトの機能を拡張します。"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:6
 msgid "Initialize from a vtk.vtkImageData object"
-msgstr ""
+msgstr "vtk.vtkImageData オブジェクトから初期化します"
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:9
 msgid ""
 "See ``_from_specs`` in the documentation for more details on initializing "
 "from point arrays"
-msgstr ""
+msgstr "点配列からの初期化の詳細については、ドキュメントの ``_from_specs`` を参照してください。"
 
 #: ../../pyvista/docs/core/index.rst:2
 msgid "Core API"
@@ -6653,6 +6770,8 @@ msgid ""
 "attributes for all PyVista types. These objects have no spatial reference, "
 "but simply hold data."
 msgstr ""
+":class:`pyvista.DataObject` "
+"クラスは、すべてのPyVista型に共通のメソッドと属性のセットです。これらのオブジェクトには空間参照はなく、単にデータが保持されます。"
 
 #: ../../pyvista/docs/core/objects.rst:12:<autosummary>:1
 msgid ":obj:`field_arrays <pyvista.DataObject.field_arrays>`\\"
@@ -6672,7 +6791,7 @@ msgstr ":obj:`memory_address <pyvista.DataObject.memory_address>`\\"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.memory_address:1
 msgid "Get address of the underlying C++ object in format 'Addr=%p'."
-msgstr ""
+msgstr "基本となるC++オブジェクトのアドレスを 'Addr=%p' 形式で取得します。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ""
@@ -6686,7 +6805,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.add_field_array:1
 msgid "Add a field array."
-msgstr ""
+msgstr "フィールド配列を追加します。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`clear_field_arrays <pyvista.DataObject.clear_field_arrays>`\\ \\(\\)"
@@ -6696,7 +6815,7 @@ msgstr ":obj:`clear_field_arrays <pyvista.DataObject.clear_field_arrays>`\\ \\(\
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.clear_field_arrays:1
 msgid "Remove all field arrays."
-msgstr ""
+msgstr "すべてのフィールド配列を削除します。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`copy <pyvista.DataObject.copy>`\\ \\(\\[deep\\]\\)"
@@ -6714,7 +6833,7 @@ msgstr ":obj:`deep_copy <pyvista.DataObject.deep_copy>`\\ \\(to\\_copy\\)"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.deep_copy:1
 msgid "Overwrite this mesh with the given mesh as a deep copy."
-msgstr ""
+msgstr "このメッシュを指定されたメッシュで深いコピーとして上書きします。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ""
@@ -6731,7 +6850,7 @@ msgstr ":obj:`head <pyvista.DataObject.head>`\\ \\(\\[display\\, html\\]\\)"
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.head:1
 msgid "Return the header stats of this dataset."
-msgstr ""
+msgstr "このデータセットのヘッダ統計情報を返します。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`save <pyvista.DataObject.save>`\\ \\(filename\\[\\, binary\\]\\)"
@@ -6740,7 +6859,7 @@ msgstr ":obj:`save <pyvista.DataObject.save>`\\ \\(filename\\[\\, binary\\]\\)"
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.save:1
 msgid "Save this vtk object to file."
-msgstr ""
+msgstr "このvtkオブジェクトをファイルに保存します。"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`shallow_copy <pyvista.DataObject.shallow_copy>`\\ \\(to\\_copy\\)"
@@ -6750,11 +6869,11 @@ msgstr ":obj:`shallow_copy <pyvista.DataObject.shallow_copy>`\\ \\(to\\_copy\\)"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.shallow_copy:1
 msgid "Shallow copy the given mesh to this mesh."
-msgstr ""
+msgstr "指定されたメッシュをこのメッシュに浅くコピーします。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject:1
 msgid "Methods common to all wrapped data objects."
-msgstr ""
+msgstr "ラップされたすべてのデータオブジェクトに共通するメソッド。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.DataObject.get_data_range:3
@@ -6762,7 +6881,7 @@ msgstr ""
 #: pyvista.Table.get_data_range:3
 msgid ""
 "The name of the array to get the range. If None, the active scalar is used"
-msgstr ""
+msgstr "範囲を取得する配列の名前を指定します。Noneの場合、アクティブなスカラーが使用されます。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.head:3
 msgid ""
@@ -6778,12 +6897,12 @@ msgstr "出力ファイルのファイル名。Writerのタイプは、ファイ
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.save:6
 msgid "If True, write as binary, else ASCII."
-msgstr ""
+msgstr "Trueの場合はバイナリ、それ以外の場合はASCIIで記述します。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.DataObject.save:11
 msgid ""
 "Binary files write much faster than ASCII and have a smaller file size."
-msgstr ""
+msgstr "バイナリファイルはASCIIよりもはるかに高速に書き込み、ファイルサイズも小さくなります"
 
 #: ../../pyvista/docs/core/objects.rst:25
 msgid "Table"
@@ -6853,7 +6972,7 @@ msgstr ":obj:`items <pyvista.Table.items>`\\ \\(\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.items:1
 msgid "Return the table items."
-msgstr ""
+msgstr "テーブル項目を返します。"
 
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 msgid ":obj:`keys <pyvista.Table.keys>`\\ \\(\\)"
@@ -6862,7 +6981,7 @@ msgstr ":obj:`keys <pyvista.Table.keys>`\\ \\(\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.keys:1
 msgid "Return the table keys."
-msgstr ""
+msgstr "テーブルキーを返します。"
 
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 msgid ":obj:`pop <pyvista.Table.pop>`\\ \\(name\\)"
@@ -6871,7 +6990,7 @@ msgstr ":obj:`pop <pyvista.Table.pop>`\\ \\(name\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.pop:1
 msgid "Pops off an array by the specified name."
-msgstr ""
+msgstr "指定された名前で配列から取り出します。"
 
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 msgid ":obj:`save <pyvista.Table.save>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
@@ -6889,7 +7008,7 @@ msgstr ":obj:`to_pandas <pyvista.Table.to_pandas>`\\ \\(\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.to_pandas:1
 msgid "Create a Pandas DataFrame from this Table."
-msgstr ""
+msgstr "このテーブルからPandas DataFrameを作成します。"
 
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 msgid ":obj:`update <pyvista.Table.update>`\\ \\(data\\)"
@@ -6898,7 +7017,7 @@ msgstr ":obj:`update <pyvista.Table.update>`\\ \\(data\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.update:1
 msgid "Set the table data."
-msgstr ""
+msgstr "テーブルデータを設定します。"
 
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 msgid ":obj:`values <pyvista.Table.values>`\\ \\(\\)"
@@ -6907,7 +7026,7 @@ msgstr ":obj:`values <pyvista.Table.values>`\\ \\(\\)"
 #: ../../pyvista/docs/core/objects.rst:39:<autosummary>:1
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.values:1
 msgid "Return the table values."
-msgstr ""
+msgstr "テーブル値を返します。"
 
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table:1
 msgid ""
@@ -6919,13 +7038,14 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table:1
 msgid "Wrapper for the ``vtkTable`` class."
-msgstr ""
+msgstr "``vtkTable`` クラスのラッパーです。"
 
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table:3
 msgid ""
 "Create by passing a 2D NumPy array of shape (``n_rows`` by ``n_columns``) or"
 " from a dictionary containing NumPy arrays."
 msgstr ""
+"形状( ``n_columns`` の ``n_rows`` )の2 D NumPy配列を渡すか、NumPy配列を含むディクショナリから作成します。"
 
 #: ../../pyvista/pyvista/core/objects.pydocstring of
 #: pyvista.Table.get_data_range:6
@@ -6933,10 +7053,12 @@ msgid ""
 "When scalars is specified, this is the preferred array type to search for in"
 " the dataset.  Must be either ``'row'`` or ``'field'``."
 msgstr ""
+"スカラーが指定されている場合、これはデータセット内で検索するために推奨される配列型です。 ``'row'`` または ``'field'`` "
+"のいずれかでなければなりません"
 
 #: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_arrays:3
 msgid "Alias for: ``n_columns``."
-msgstr ""
+msgstr "``n_columns`` のエイリアス。"
 
 #: ../../pyvista/docs/core/point-grids.rst:2
 msgid "Point-Based Grids"
@@ -7071,11 +7193,11 @@ msgstr ""
 
 #: ../../pyvista/docs/core/point-grids.rst:182
 msgid "You can also render the beam as as a wire-frame object:"
-msgstr ""
+msgstr "はりをワイヤフレームオブジェクトとしてレンダリングすることもできます。"
 
 #: ../../pyvista/docs/core/point-grids.rst:209
 msgid "Adding Labels to a Plot"
-msgstr ""
+msgstr "プロットにラベルを追加する"
 
 #: ../../pyvista/docs/core/point-grids.rst:210
 msgid ""
@@ -7087,16 +7209,20 @@ msgid ""
 "containing one entry per point.  The code automatically converts each item "
 "in the list to a string."
 msgstr ""
+"``Plotter`` オブジェクト内の ``add_point_labels`` "
+"関数を使用して、プロットにラベルを追加できます。次の例では、含まれているサンプルの梁をロードし、印刷クラスを生成し、y-z平面に沿った点をサブ選択し、その座標にラベルを付けます。"
+" ``add_point_labels`` "
+"では、ラベルの数がポイントの数と一致し、ラベルがポイントごとに1つのエントリを含むリストである必要があります。このコードは、リスト内の各項目を自動的に文字列に変換します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:245
 msgid ""
 "This example is similar and shows how labels can be combined with a scalar "
 "bar to show the exact value of certain points."
-msgstr ""
+msgstr "この例も同様で、ラベルをスカラーバーと組み合わせて特定のポイントの正確な値を表示する方法を示しています。"
 
 #: ../../pyvista/docs/core/point-grids.rst:274
 msgid "pv.Unstructured Grid Class Methods"
-msgstr ""
+msgstr "pv.Unstructured グリッドクラスメソッド"
 
 #: ../../pyvista/docs/core/point-grids.rst:275
 msgid ""
@@ -7105,6 +7231,10 @@ msgid ""
 "``vtk`` object, `vtk.vtkUnstructuredGrid "
 "<https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_."
 msgstr ""
+"以下は ``pv.UnstructuredGrid`` オブジェクトで利用可能なメソッドの説明です。元の ``vtk`` オブジェクトである "
+"`vtk.vtkUnstructuredGrid "
+"<https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_ "
+"からすべてのメソッドを継承します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:285:<autosummary>:1
 msgid ":obj:`cell_connectivity <pyvista.UnstructuredGrid.cell_connectivity>`\\"
@@ -7114,7 +7244,7 @@ msgstr ":obj:`cell_connectivity <pyvista.UnstructuredGrid.cell_connectivity>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cell_connectivity:1
 msgid "Return a the vtk cell connectivity as a numpy array."
-msgstr ""
+msgstr "vtkセルの接続性をnumpy配列で返します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:285:<autosummary>:1
 msgid ":obj:`cells <pyvista.UnstructuredGrid.cells>`\\"
@@ -7134,7 +7264,7 @@ msgstr ":obj:`celltypes <pyvista.UnstructuredGrid.celltypes>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:1
 msgid "Get the cell types array."
-msgstr ""
+msgstr "セルタイプの配列を取得します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:285:<autosummary>:1
 msgid ":obj:`offset <pyvista.UnstructuredGrid.offset>`\\"
@@ -7144,7 +7274,7 @@ msgstr ":obj:`offset <pyvista.UnstructuredGrid.offset>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.offset:1
 msgid "Get cell locations Array."
-msgstr ""
+msgstr "セルの位置を取得します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
 msgid ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\]\\)"
@@ -7154,7 +7284,7 @@ msgstr ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.linear_copy:1
 msgid "Return a copy of the unstructured grid containing only linear cells."
-msgstr ""
+msgstr "線形セルのみを含む非構造化グリッドのコピーを返します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:1
@@ -7170,7 +7300,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:1
 msgid "Extends the functionality of a vtk.vtkUnstructuredGrid object."
-msgstr ""
+msgstr "vtk.vtkUnstructuredGrid オブジェクトの機能を拡張します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:3
@@ -7180,17 +7310,17 @@ msgstr "次の方法で初期化できます。"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:5
 msgid "Creating an empty grid"
-msgstr ""
+msgstr "空のグリッドを作成する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:6
 msgid "From a vtk.vtkPolyData object"
-msgstr ""
+msgstr "vtk.vtkPolyData オブジェクトから"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:7
 msgid "From cell, offset, and node arrays"
-msgstr ""
+msgstr "セル、オフセット、ノード配列から"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:8 ../../pyvista/pyvista/core/pointset.pydocstring
@@ -7201,7 +7331,7 @@ msgstr "ファイルから"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:16
 msgid "Create an empty grid"
-msgstr ""
+msgstr "空のグリッドを作成"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid:20
@@ -7216,12 +7346,12 @@ msgstr "文字列ファイル名から"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:3
 msgid "Legacy method"
-msgstr ""
+msgstr "従来の方法"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.linear_copy:3
 msgid "Converts the following cell types to their linear equivalents."
-msgstr ""
+msgstr "次のセルタイプを同等の線形に変換します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.linear_copy:5
@@ -7248,7 +7378,7 @@ msgstr "VTK_QUADRATIC_HEXAHEDRON --> VTK_HEXAHEDRON"
 msgid ""
 "When True, makes a copy of the points array.  Default False.  Cells and cell"
 " types are always copied."
-msgstr ""
+msgstr "Trueの場合、ポイント配列のコピーを作成します。既定値はFalseです。セルとセルタイプは常にコピーされます。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.linear_copy:14
@@ -7257,7 +7387,7 @@ msgstr "**grid** -- 線形セルのみを含むUnstructuredGridです。"
 
 #: ../../pyvista/docs/core/point-grids.rst:299
 msgid "pv.Structured Grid Class Methods"
-msgstr ""
+msgstr "pv.Structured グリッドクラスメソッド"
 
 #: ../../pyvista/docs/core/point-grids.rst:300
 msgid ""
@@ -7266,6 +7396,10 @@ msgid ""
 "``vtk`` object, `vtk.vtkStructuredGrid "
 "<https://www.vtk.org/doc/nightly/html/classvtkStructuredGrid.html>`_."
 msgstr ""
+"以下は ``pv.StructuredGrid`` オブジェクトで利用可能なメソッドの説明です。元の ``vtk`` オブジェクトである "
+"`vtk.vtkStructuredGrid "
+"<https://www.vtk.org/doc/nightly/html/classvtkStructuredGrid.html>`_ "
+"からすべてのメソッドを継承します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.StructuredGrid.dimensions>`\\"
@@ -7289,7 +7423,7 @@ msgstr ":obj:`y <pyvista.StructuredGrid.y>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.y:1
 msgid "Return the Y coordinates of all points."
-msgstr ""
+msgstr "すべての点のY座標を返します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
 msgid ":obj:`z <pyvista.StructuredGrid.z>`\\"
@@ -7299,7 +7433,7 @@ msgstr ":obj:`z <pyvista.StructuredGrid.z>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.z:1
 msgid "Return the Z coordinates of all points."
-msgstr ""
+msgstr "すべての点のZ座標を返します。"
 
 #: ../../pyvista/docs/core/point-grids.rst:315:<autosummary>:1
 msgid ":obj:`hide_cells <pyvista.StructuredGrid.hide_cells>`\\ \\(ind\\)"
@@ -7309,7 +7443,7 @@ msgstr ":obj:`hide_cells <pyvista.StructuredGrid.hide_cells>`\\ \\(ind\\)"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.hide_cells:1
 msgid "Hide cells without deleting them."
-msgstr ""
+msgstr "セルを削除せずに非表示にします。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.StructuredGrid:1
 msgid ""
@@ -7325,7 +7459,7 @@ msgstr "vtk.vtkStructuredGridオブジェクトの機能を拡張します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.StructuredGrid:6
 msgid "Initialize from a vtk.vtkStructuredGrid object"
-msgstr ""
+msgstr "vtk.vtkStructuredGrid オブジェクトから初期化します"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.hide_cells:3
@@ -7337,22 +7471,23 @@ msgstr "ghost_cells配列をHIDDEN_CELLに設定して、セルを非表示に�
 msgid ""
 "List or array of cell indices to be hidden.  The array can also be a boolean"
 " array of the same size as the number of cells."
-msgstr ""
+msgstr "非表示にするセルインデックスのリストまたは配列を指定します。配列は、セルの数と同じサイズのブール配列にすることもできます。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.hide_cells:12
 msgid "Hide part of the middle of a structured surface."
-msgstr ""
+msgstr "構造化サーフェスの中央の一部を非表示にします。"
 
 #: ../../pyvista/docs/core/point-grids.rst:323
 msgid "Methods in Common with Structured and Unstructured Grids"
-msgstr ""
+msgstr "構造化グリッドと非構造化グリッドに共通のメソッド"
 
 #: ../../pyvista/docs/core/point-grids.rst:324
 msgid ""
 "These methods are in common to both ``pv.StructuredGrid`` and "
 "``pv.UnstructuredGrid`` objects."
 msgstr ""
+"これらのメソッドは ``pv.StructuredGrid`` と ``pv.UnstructuredGrid`` オブジェクトの両方に共通です。"
 
 #: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
 msgid ":obj:`volume <pyvista.PointGrid.volume>`\\"
@@ -7389,7 +7524,7 @@ msgstr "構造化されたグリッドと構造化されていないグリッド
 msgid ""
 "One of the following strings indicating curvature types  - mean - gaussian -"
 " maximum - minimum"
-msgstr ""
+msgstr "曲率タイプを示す次のいずれかの文字列 - mean - gaussian - maximum - minimum"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PointGrid.plot_curvature:3
@@ -7673,7 +7808,7 @@ msgstr "頂点と面を使用する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:3
 msgid "**area** -- Total area of the mesh."
-msgstr ""
+msgstr "**area** -- メッシュの合計面積です。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_faces:3
@@ -7714,13 +7849,13 @@ msgstr "Trueの場合はバイナリとして、Falseの場合はASCIIとして�
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:17
 msgid "Binary files write much faster than ASCII and have a smaller"
-msgstr ""
+msgstr "バイナリファイルはASCIIよりもはるかに高速に書き込み、サイズも小さくなります"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:18
 msgid "file size."
-msgstr ""
+msgstr "ファイルサイズ。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:3
 msgid "This will throw a VTK error/warning if not a closed surface"
-msgstr ""
+msgstr "閉じたサーフェスでない場合は、VTKエラー/警告が投げられます。"
