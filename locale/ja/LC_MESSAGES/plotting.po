@@ -800,6 +800,9 @@ msgid ""
 "[Window height x Window width x 4] for transparent_background=True   "
 "Returned only when screenshot enabled"
 msgstr ""
+"* **cpos** (*list*) --カメラ位置、焦点、ビューアップのリスト。* **img** (*numpy.ndarray*) -- "
+"ピクセルRGBおよびアルファを含む配列。サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
+"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot:33
 msgid ""
@@ -813,6 +816,9 @@ msgid ""
 "height x Window width x 4] for transparent_background=True Returned only "
 "when screenshot enabled"
 msgstr ""
+"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列。サイズ:[窓の高さx窓の幅x 3] for "
+"transparent_background=False [窓の高さ×窓の幅×4] は "
+"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of pyvista.plot_arrows:1
 msgid "Plot arrows as vectors."
@@ -5990,7 +5996,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.show:32
 msgid "**cpos** -- List of camera position, focal point, and view up"
-msgstr ""
+msgstr "**cpos** -- カメラ位置、焦点、およびビューアップのリスト"
 
 #: ../../pyvista/docs/plotting/plotting.rst:109
 msgid "Renderer"
