@@ -115,7 +115,7 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.601 seconds)
+   **Total running time of the script:** ( 0 minutes  11.645 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:
