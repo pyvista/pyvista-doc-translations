@@ -412,7 +412,7 @@ Now display all the puppies!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.939 seconds)
+   **Total running time of the script:** ( 0 minutes  13.483 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:
