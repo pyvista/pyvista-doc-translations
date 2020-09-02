@@ -79,6 +79,8 @@ msgid ""
 "sure your juptyerlab is up-to-date.  If you encounter problems, uninstall "
 "and reinstall jupyterlab using pip."
 msgstr ""
+"もしあなたがcondaを使いたくないなら、 `pip` "
+"で全てをインストールできますが、juptyerlabが最新であることを確認してください。問題が発生した場合は、pipを使用してjupyterlabをアンインストールして再インストールします。"
 
 #: ../../pyvista/docs/plotting/itk_plotting.rst:28
 msgid "Example Plotting with ITKwidgets"
@@ -128,7 +130,7 @@ msgstr ":obj:`add_actor <pyvista.PlotterITK.add_actor>`\\ \\(actor\\)"
 #: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
 #: pyvista.PlotterITK.add_actor:1
 msgid "Add an actor to the plotter."
-msgstr ""
+msgstr "プロッタにアクターを追加します。"
 
 #: ../../pyvista/docs/plotting/itk_plotting.rst:79:<autosummary>:1
 msgid ""
@@ -142,7 +144,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
 #: pyvista.PlotterITK.add_mesh:1
 msgid "Add a PyVista/VTK mesh or dataset."
-msgstr ""
+msgstr "PyVista/VTKメッシュまたはデータセットを追加します。"
 
 #: ../../pyvista/docs/plotting/itk_plotting.rst:79:<autosummary>:1
 msgid ":obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\]\\)"
@@ -374,12 +376,12 @@ msgstr "パラメータ"
 #: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
 #: pyvista.PlotterITK.add_actor:3
 msgid "vtk actor to be added."
-msgstr ""
+msgstr "追加するvtkアクター。"
 
 #: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
 #: pyvista.PlotterITK.add_mesh:3
 msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
-msgstr ""
+msgstr "itkwidgetsがシーンにラップできるPyVista/VTKメッシュを追加します。"
 
 #: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
 #: pyvista.PlotterITK.add_mesh:6
@@ -664,7 +666,7 @@ msgstr "``shift+click`` か ``middle-click``"
 
 #: ../../pyvista/docs/plotting/plotting.rst:24
 msgid "``shift+click``"
-msgstr ""
+msgstr "``shift+click``"
 
 #: ../../pyvista/docs/plotting/plotting.rst:24
 msgid "Pan the rendering scene"
@@ -704,7 +706,7 @@ msgstr "レンダリングシーンを継続的にズームする"
 
 #: ../../pyvista/docs/plotting/plotting.rst:32
 msgid "``shift+s``"
-msgstr ""
+msgstr "``shift+s``"
 
 #: ../../pyvista/docs/plotting/plotting.rst:32
 msgid "Save a screenhsot (only on ``BackgroundPlotter``)"
@@ -2193,7 +2195,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.store_mouse_position:1
 msgid "Store mouse position."
-msgstr ""
+msgstr "マウスの位置を保存します。"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
@@ -2338,7 +2340,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_scalars:1
 msgid "Update scalars of an object in the plotter."
-msgstr ""
+msgstr "プロッタのオブジェクトのスカラー値を更新します。"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ":obj:`update_style <pyvista.BasePlotter.update_style>`\\ \\(\\)"
@@ -2535,13 +2537,13 @@ msgstr ""
 #: pyvista.BasePlotter:16 ../../pyvista/pyvista/plotting/plotting.pydocstring
 #: of pyvista.Plotter:32
 msgid "``color='white'``"
-msgstr ""
+msgstr "``color='white'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter:17 ../../pyvista/pyvista/plotting/plotting.pydocstring
 #: of pyvista.Plotter:33
 msgid "``color='w'``"
-msgstr ""
+msgstr "``color='w'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter:18 ../../pyvista/pyvista/plotting/plotting.pydocstring
@@ -3098,14 +3100,14 @@ msgstr "メッシュのエッジのカラー。"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_floor:32
 msgid "Percentage padding between 0 and 1"
-msgstr ""
+msgstr "0と1の間の置換詰物パーセンテージ"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_floor:34
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.add_floor:34
 msgid "Percentage offset along plane normal"
-msgstr ""
+msgstr "平面法線に沿ったパーセンテージオフセット"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_key_event:3
@@ -3139,6 +3141,9 @@ msgid ""
 "label is the name of the item to add, and color is the color of the label to"
 " add."
 msgstr ""
+"Noneに設定した場合、-add_mesh-add_lines-"
+"add_pointsによって指定された既存のラベルを使用します。凡例に追加する項目ごとに1つのエントリを含むリスト。各エントリには、2つの文字列 "
+"[label, color] を含める必要があります。ここで、labelは追加する項目の名前、colorは追加するラベルの色です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_legend:6
@@ -3167,6 +3172,8 @@ msgid ""
 "entry must contain two strings, [label, color], where label is the name of "
 "the item to add, and color is the color of the label to add."
 msgstr ""
+"凡例に追加する項目ごとに1つのエントリを含むリスト。各エントリには、2つの文字列 [label, color] "
+"を含める必要があります。ここで、labelは追加する項目の名前、colorは追加するラベルの色です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_legend:17
@@ -3376,6 +3383,10 @@ msgid ""
 "``scalars`` argument). Or you can pass a custom made transfer function that "
 "is an array either ``n_colors`` in length or shorter."
 msgstr ""
+"メッシュの不透明度。単一のfloat値を指定した場合、それはメッシュのグローバル不透明度になり、すべての場所に均一に適用されます。0から1の間である必要があります。文字列を指定して、スカラー範囲を定義済みの不透明度転送関数(オプションには、"
+" 'linear', 'linear_r', 'geom', 'geom_r' "
+"があります。)にマップすることもできます。文字列を使用して、スカラー配列をメッシュから不透明度にマップすることもできます( ``scalars`` "
+"引き数と同じ数の要素がなければなりません)。または、長さが ``n_colors`` 以下の配列であるカスタムメイドの転送関数を渡すこともできます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_mesh:55
@@ -3450,6 +3461,8 @@ msgid ""
 "a custom one.  For example, to create a three color colormap you might "
 "specify ``['green', 'red', 'blue']``"
 msgstr ""
+"また、色のリストを指定して、既存のカラーマップをカスタムカラーマップで上書きすることもできます。例えば、3色のカラーマップを作成するには、 "
+"``['green', 'red', 'blue']``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_mesh:78
@@ -4168,22 +4181,22 @@ msgstr "点のサイズ(表示されている場合)"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:44
 msgid "shape_color"
-msgstr ""
+msgstr "shape_color"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 msgid "string or 3 item list, optional. Color of points (if visible)."
-msgstr ""
+msgstr "文字列または3つの項目リスト, 省略可能 。ポイントのカラー(表示されている場合)。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:48
 msgid "shape"
-msgstr ""
+msgstr "shape"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 msgid "str, optional"
-msgstr ""
+msgstr "str, optional"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:47
@@ -4204,39 +4217,39 @@ msgstr "fill_shape"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 msgid "bool, optional"
-msgstr "bool, オプション"
+msgstr "bool, optional"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:51
 msgid "Fill the shape with the ``shape_color``. Outlines if ``False``."
-msgstr ""
+msgstr "``shape_color`` で図形を埋めます。 ``False`` の場合は輪郭を描きます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:54
 msgid "margin"
-msgstr ""
+msgstr "margin"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 msgid "int, optional"
-msgstr ""
+msgstr "int, optional"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:54
 msgid "The size of the margin on the label background shape. Default is 3."
-msgstr ""
+msgstr "ラベルの背景図形の余白のサイズを指定します。デフォルトは3です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:57
 msgid "shape_opacity"
-msgstr ""
+msgstr "shape_opacity"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labelsNone
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:57
@@ -4246,7 +4259,7 @@ msgstr "図形の不透明度を0から1の範囲で指定します。"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:63
 msgid "tolerance"
-msgstr ""
+msgstr "tolerance"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_point_labels:60
@@ -4668,11 +4681,18 @@ msgid ""
 "``'lower_left'``, ``'lower_right'``, ``'upper_left'``, ``'upper_right'``, "
 "``'lower_edge'``, ``'upper_edge'``, ``'right_edge'``, and ``'left_edge'``"
 msgstr ""
+"テキストボックスの左下隅を配置します。タプルを使用する場合、テキストの位置にはピクセル座標系 (デフォルト) が使用されます。この場合、より一般的な "
+"`vtkOpenGLTextActor` を返します。文字列nameを使用すると、通常は固定ラベル(titleやxlabelのような)に使用される "
+"`vtkCornerAnnotation` "
+"オブジェクトを返します。既定値では、レンダリングウィンドウの左上コーナーを検索し、その上にテキストボックスを配置します。使用可能な位置: "
+"``'lower_left'`` 、 ``'lower_right'`` 、 ``'upper_left'`` 、 ``'upper_right'`` "
+"、 ``'lower_edge'`` 、 ``'upper_edge'`` 、 ``'right_edge'`` 、および "
+"``'left_edge'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_text:17
 msgid "Font name may be courier, times, or arial"
-msgstr ""
+msgstr "フォント名はcourier、times、arialのいずれかです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_text:25
@@ -4680,11 +4700,12 @@ msgid ""
 "If True and position is a tuple of float, uses the normalized viewport "
 "coordinate system (values between 0.0 and 1.0 and support for HiDPI)."
 msgstr ""
+"Trueでpositionがfloatのタプルの場合、は正規化されたビューポート座標系(0.0から1.0までの値とHiDPIのサポート)を使用します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_text:30
 msgid "**textActor** -- Text actor added to plot"
-msgstr ""
+msgstr "**textActor** -- プロットに追加されたテキストアクター"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_text_slider_widget:1
@@ -4711,12 +4732,12 @@ msgstr "**slider_widget** -- テキストを表示するように設定された
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:3
 msgid "Requires a 3D :class:`numpy.ndarray` or :class:`pyvista.UniformGrid`."
-msgstr ""
+msgstr "3 D  :class:`numpy.ndarray` または :class:`pyvista.UniformGrid` が必要です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:5
 msgid "The input volume to visualize. 3D numpy arrays are accepted."
-msgstr ""
+msgstr "表示する入力ボリューム。3 Dの数値配列を使用できます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:7
@@ -4739,6 +4760,9 @@ msgid ""
 "made transfer function that is an array either ``n_colors`` in length or "
 "shorter."
 msgstr ""
+"スカラー配列の不透明度マッピング。文字列を指定して、スカラ範囲を定義済みの不透明度転送関数(オプションには、 'linear' 、 "
+"'linear_r'、 'geom' 、 'geom_r' があります。)にマッピングすることもできます。あるいは、長さが ``n_colors`` "
+"以下の配列であるカスタムメイドの伝達関数を渡すこともできます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:38
@@ -4785,6 +4809,9 @@ msgid ""
 "``'gpu'``, ``'open_gl'``, and ``'smart'``. If ``None`` the "
 "``\"volume_mapper\"`` in the ``rcParams`` is used."
 msgstr ""
+"使用するボリュームマッパーは名前で指定します。オプションには、 ``'fixed_point'``、 ``'gpu'`` 、 ``'open_gl'``"
+" 、 ``'smart'`` があります。 ``None`` の場合、 ``rcParams`` の ``\"volume_mapper\"`` "
+"が使用されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:81
@@ -4811,7 +4838,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.add_volume:100
 msgid "**actor** -- VTK volume of the input data."
-msgstr ""
+msgstr "**actor** -- 入力データのVTKボリューム。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.clear_box_widgets:1
@@ -4897,7 +4924,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:11
 msgid "Uses last input mesh for input by default."
-msgstr ""
+msgstr "既定では、最後の入力メッシュを入力に使用します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:15
@@ -4935,6 +4962,8 @@ msgid ""
 "When True (default) the picker will select all cells through the mesh. When "
 "False, the picker will select only visible cells on the mesh's surface."
 msgstr ""
+"True (既定値) "
+"の場合、ピッカーはメッシュ内のすべてのセルを選択します。Falseの場合、ピッカーはメッシュのサーフェス上の可視セルのみを選択します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:32
@@ -4948,11 +4977,13 @@ msgid ""
 "``style='surface'``, ``style='wireframe'``, ``style='points'``. Defaults to "
 "``'wireframe'``."
 msgstr ""
+"選択の表示スタイル。 ``style='surface'`` 、``style='wireframe'`` 、 ``style='points'`` "
+"のいずれかです。デフォルトは ``'wireframe'`` です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:38
 msgid "Thickness of selected mesh edges. Default 5."
-msgstr ""
+msgstr "選択したメッシュエッジの厚さ。デフォルトは5です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:40
@@ -4970,7 +5001,7 @@ msgstr "選択したメッシュの色が表示されます。"
 msgid ""
 "Show the message about how to use the cell picking tool. If this is a "
 "string, that will be the message shown."
-msgstr ""
+msgstr "セル選択ツールの使用方法に関するメッセージを表示します。これが文字列の場合は、メッセージが表示されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_cell_picking:45
@@ -5006,6 +5037,7 @@ msgid ""
 "``rcParams``. A special value of 0 means no maximum limit. It has to be a "
 "positive value."
 msgstr ""
+"剥離層の最大数。初期値は4で、 ``rcParams`` に設定されます。特別な値0は最大制限がないことを意味します。正の値でなければなりません。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_depth_peeling:7
@@ -5018,11 +5050,12 @@ msgid ""
 "area. Initial value is 0.0, meaning rendering have to be exact. Greater "
 "values may speed-up the rendering with small impact on the quality."
 msgstr ""
+"深剥離アルゴリズムがピール層を反復するのを停止するしきい値。これは、ビューポート領域の総ピクセル数に対する、最後のレイヤーがタッチしたピクセル数の比率です。初期値は0.0で、レンダリングは正確でなければなりません。値を大きくすると、レンダリングの速度が上がり、品質への影響が小さくなります。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_fly_to_right_click:1
 msgid "Set the camera to track right click positions."
-msgstr ""
+msgstr "右クリック位置をトラックするようにカメラを設定します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_fly_to_right_click:3
@@ -5030,6 +5063,7 @@ msgid ""
 "A convenience method to track right click positions and fly to the picked "
 "point in the scene. The callback will be passed the point in 3D space."
 msgstr ""
+"右クリック位置をトラックし、シーン内の選択したポイントにフライスルーする便利な方法です。コールバックには、3 D空間のポイントが渡されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_geodesic_picking:1
@@ -5050,7 +5084,7 @@ msgstr ""
 msgid ""
 "The geodesic path is saved to the ``.picked_geodesic`` attribute of this "
 "plotter"
-msgstr ""
+msgstr "測地パスは、このプロッタの ``.picked_geodesic`` 属性に保存されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_geodesic_picking:10
@@ -5121,7 +5155,7 @@ msgstr "残りのキーワード引数はすべて、選択したパスを対話
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_horizon_picking:1
 msgid "Enable horizon picking."
-msgstr ""
+msgstr "範囲選択を使用可能にします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_horizon_picking:3
@@ -5129,6 +5163,8 @@ msgid ""
 "Helper for the ``enable_path_picking`` method to also show a ribbon surface "
 "along the picked path. Ribbon is saved under ``.picked_horizon``."
 msgstr ""
+"``enable_path_picking`` メソッドのヘルパーで、選択したパスに沿ったリボンサーフェスも表示します。リボンは "
+"``.picked_horizon`` の下に保存されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_horizon_picking:7
@@ -5149,12 +5185,12 @@ msgstr "水平サーフェスの投影プレーンに対する法線"
 msgid ""
 "The width of the horizon surface. Default behaviour will dynamically change "
 "the surface width depending on it's length."
-msgstr ""
+msgstr "水平サーフェスの幅。デフォルトの動作では、サーフェスの長さに応じてサーフェスの幅が動的に変化します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_horizon_picking:16
 msgid "Show the picked horizon surface interactively"
-msgstr ""
+msgstr "選択した水平線サーフェスをインタラクティブに表示します"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_horizon_picking:18
@@ -5192,7 +5228,7 @@ msgstr "表示されている場合、水平サーフェスの不透明度。"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_image_style:9
 msgid "Controls:"
-msgstr ""
+msgstr "コントロール:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_image_style:4
@@ -5292,6 +5328,9 @@ msgid ""
 "picked point can either be a point on the first intersecting mesh, or a "
 "point in the 3D window."
 msgstr ""
+"``P`` キーを使用して、レンダリングビュー内のマウス位置でポイントを選択できるようにします。この点はプロッタの ``.picked_point`` "
+"属性に保存されます。そのポイントを引数として取るコールバック関数を渡します。選択した点は、最初に交差するメッシュ上の点か、3 "
+"Dウィンドウ内の点のいずれかです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.enable_point_picking:9
@@ -5659,6 +5698,8 @@ msgid ""
 "Window width x 3] for transparent_background=False [Window height x Window "
 "width x 4] for transparent_background=True"
 msgstr ""
+"**img**  -- ピクセルRGBおよびアルファを含む配列。サイズ:[窓の高さx窓の幅x 3] for "
+"transparent_background=False [窓の高さ×窓の幅×4] は transparent_background=True"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.set_background:10
@@ -5715,7 +5756,7 @@ msgstr "メッシュ境界をオーバーライドする境界。 [xmin, xmax, y
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.show_bounds:10
 msgid "Makes x axis visible.  Default True."
-msgstr ""
+msgstr "x軸を表示します。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.show_bounds:12
@@ -5928,21 +5969,21 @@ msgstr "列に沿ってアクティブにするサブプロットのインデッ
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.track_click_position:3
 msgid "By default, it only tracks right clicks."
-msgstr ""
+msgstr "デフォルトでは、右クリックのみをトラックします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.track_click_position:5
 msgid ""
 "A callable method that will use the click position. Passes the click "
 "position as a length two tuple."
-msgstr ""
+msgstr "クリック位置を使用する呼び出し可能なメソッドです。クリック位置を長さ2タプルとして渡します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.track_click_position:8
 msgid ""
 "The side of the mouse for the button to track (left or right). Default is "
 "left. Also accepts ``'r'`` or ``'l'``."
-msgstr ""
+msgstr "ボタンがトラックするマウスの側面(左右)。デフォルトはleftです。また、  ``'r'`` または ``'l'`` も受け入れます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.track_click_position:11
@@ -5960,6 +6001,8 @@ msgid ""
 "This will potentially slow down the interactor. No callbacks supported here "
 "- use :func:`pyvista.BasePlotter.track_click_position` instead."
 msgstr ""
+"これにより、インターアクターの速度が低下する可能性があります。ここではコールバックはサポートされていません-代わりに "
+":func:`pyvista.BasePlotter.track_click_position` を使用してください。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.unlink_views:3
@@ -5968,17 +6011,19 @@ msgid ""
 "selected view's camera or if ``views`` is a tuple or a list, unlink the "
 "given views cameras."
 msgstr ""
+"``views`` がNoneなら全てのビューのリンクを解除し、 ``views`` がintなら選択されたビューのカメラのリンクを解除し、 "
+"``views`` がタプルかリストならば与えられたビューカメラのリンクを解除します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update:3
 msgid ""
 "Duration of timer that interrupt vtkRenderWindowInteractor in milliseconds."
-msgstr ""
+msgstr "vtkRenderWindowInteractorを中断するミリ秒単位のタイマーの時間。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update:6
 msgid "Call ``render`` immediately."
-msgstr ""
+msgstr "すぐに ``render`` を呼び出してください。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_coordinates:3
@@ -5992,29 +6037,29 @@ msgstr "既存のポイントを置き換えるポイント。"
 msgid ""
 "Object that has already been added to the Plotter.  If None, uses last added"
 " mesh."
-msgstr ""
+msgstr "既にプロッタに追加されているオブジェクト。Noneの場合、最後に追加されたメッシュが使用されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_coordinates:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_scalars:8
 msgid "Forces an update to the render window.  Default True."
-msgstr ""
+msgstr "レンダリングウィンドウを強制的に更新します。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_scalar_bar_range:3
 msgid "The new range of scalar bar. Example: ``[-1, 2]``."
-msgstr ""
+msgstr "スカラーバーの新しい範囲。例: ``[-1, 2]``。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_scalar_bar_range:4
 msgid "The title of the scalar bar to update"
-msgstr ""
+msgstr "更新するスカラーバーのタイトル"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.update_scalars:3
 msgid "Scalars to replace existing scalars."
-msgstr ""
+msgstr "既存のスカラーを置き換えるスカラー。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.view_isometric:3
@@ -6025,7 +6070,7 @@ msgstr "ビューにシーン内のすべてのアクターが表示されます
 
 #: ../../pyvista/docs/plotting/plotting.rst:88
 msgid "Plotter"
-msgstr ""
+msgstr "プロッタ"
 
 #: ../../pyvista/docs/plotting/plotting.rst:94:<autosummary>:1
 msgid ":obj:`last_update_time <pyvista.Plotter.last_update_time>`\\"
@@ -6043,7 +6088,7 @@ msgstr ":obj:`plot <pyvista.Plotter.plot>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.plot:1
 msgid "Create a plotting window."
-msgstr ""
+msgstr "プロットウィンドウを作成します。"
 
 #: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
 msgid ""
@@ -6057,7 +6102,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.show:1
 msgid "Display the plotting window."
-msgstr ""
+msgstr "プロットウィンドウを表示します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of pyvista.Plotter:1
 msgid "Bases: :class:`pyvista.plotting.plotting.BasePlotter`"
@@ -6111,14 +6156,15 @@ msgid ""
 "The number of multi-samples used to mitigate aliasing. 4 is a good default "
 "but 8 will have better results with a potential impact on performance."
 msgstr ""
+"エイリアシングを軽減するために使用されるマルチサンプルの数。4は良いデフォルトです。8はパフォーマンスに影響を与える可能性がありますが、より良い結果が得られます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of pyvista.Plotter:43
 msgid "If True, enable line smothing"
-msgstr ""
+msgstr "Trueの場合、ラインスムージングを有効にします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of pyvista.Plotter:45
 msgid "If True, enable point smothing"
-msgstr ""
+msgstr "Trueの場合、ポイントスムージングを有効にします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of pyvista.Plotter:47
 msgid "If True, enable polygon smothing"
@@ -6129,7 +6175,7 @@ msgstr "Trueの場合、ポリゴンのスムージングを有効にします�
 msgid ""
 "Present for backwards compatibility. DEPRECATED: Please use `show()` "
 "instead."
-msgstr ""
+msgstr "下位互換性のために存在します。非推奨:代わりに `show()` を使用してください。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.show:5
@@ -6144,7 +6190,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.show:9
 msgid "Title of plotting window."
-msgstr ""
+msgstr "プロットウィンドウのタイトル。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.Plotter.show:13
@@ -6195,7 +6241,7 @@ msgstr "**cpos** -- カメラ位置、焦点、およびビューアップのリ
 
 #: ../../pyvista/docs/plotting/plotting.rst:109
 msgid "Renderer"
-msgstr ""
+msgstr "レンダラー"
 
 #: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
 msgid ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
