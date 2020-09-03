@@ -96,24 +96,22 @@ segments they make.
 
 
 
-.. only:: builder_html
-
-    .. raw:: html
+.. raw:: html
 
 
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>99</td></tr>
-        <tr><td>N Points</td><td>100</td></tr>
-        <tr><td>X Bounds</td><td>-4.084e+00, 4.084e+00</td></tr>
-        <tr><td>Y Bounds</td><td>-3.281e+00, 5.000e+00</td></tr>
-        <tr><td>Z Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>0</td></tr>
-        </table>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>99</td></tr>
+    <tr><td>N Points</td><td>100</td></tr>
+    <tr><td>X Bounds</td><td>-4.084e+00, 4.084e+00</td></tr>
+    <tr><td>Y Bounds</td><td>-3.281e+00, 5.000e+00</td></tr>
+    <tr><td>Z Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
 
 
-        <br />
-        <br />
+    <br />
+    <br />
 
 
 .. code-block:: default
@@ -304,7 +302,7 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.820 seconds)
+   **Total running time of the script:** ( 0 minutes  3.472 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:

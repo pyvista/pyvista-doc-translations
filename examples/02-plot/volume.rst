@@ -39,32 +39,30 @@ This also explores how to extract a volume of interest (VOI) from a
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>10225800</td></tr>
+    <tr><td>N Points</td><td>10368384</td></tr>
+    <tr><td>X Bounds</td><td>0.000e+00, 1.497e+02</td></tr>
+    <tr><td>Y Bounds</td><td>0.000e+00, 1.786e+02</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 2.000e+02</td></tr>
+    <tr><td>Dimensions</td><td>208, 248, 201</td></tr>
+    <tr><td>Spacing</td><td>7.230e-01, 7.230e-01, 1.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UniformGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>10225800</td></tr>
-        <tr><td>N Points</td><td>10368384</td></tr>
-        <tr><td>X Bounds</td><td>0.000e+00, 1.497e+02</td></tr>
-        <tr><td>Y Bounds</td><td>0.000e+00, 1.786e+02</td></tr>
-        <tr><td>Z Bounds</td><td>0.000e+00, 2.000e+02</td></tr>
-        <tr><td>Dimensions</td><td>208, 248, 201</td></tr>
-        <tr><td>Spacing</td><td>7.230e-01, 7.230e-01, 1.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>SLCImage</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.740e+02</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>SLCImage</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.740e+02</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Simple Volume Render
 ++++++++++++++++++++
@@ -332,32 +330,30 @@ a specific region.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>11003760</td></tr>
+    <tr><td>N Points</td><td>11156040</td></tr>
+    <tr><td>X Bounds</td><td>4.130e+05, 6.920e+05</td></tr>
+    <tr><td>Y Bounds</td><td>3.864e+06, 4.096e+06</td></tr>
+    <tr><td>Z Bounds</td><td>-5.479e+04, 5.302e+03</td></tr>
+    <tr><td>Dimensions</td><td>280, 233, 171</td></tr>
+    <tr><td>Spacing</td><td>1.000e+03, 1.000e+03, 3.535e+02</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UniformGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>11003760</td></tr>
-        <tr><td>N Points</td><td>11156040</td></tr>
-        <tr><td>X Bounds</td><td>4.130e+05, 6.920e+05</td></tr>
-        <tr><td>Y Bounds</td><td>3.864e+06, 4.096e+06</td></tr>
-        <tr><td>Z Bounds</td><td>-5.479e+04, 5.302e+03</td></tr>
-        <tr><td>Dimensions</td><td>280, 233, 171</td></tr>
-        <tr><td>Spacing</td><td>1.000e+03, 1.000e+03, 3.535e+02</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>data</b></td><td>Points</td><td>float32</td><td>1</td><td>9.782e-15</td><td>1.000e+02</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>data</b></td><td>Points</td><td>float32</td><td>1</td><td>9.782e-15</td><td>1.000e+02</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 
 .. code-block:: default
@@ -468,7 +464,7 @@ Ah, much better. Let's now volume render that region of interest!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  58.068 seconds)
+   **Total running time of the script:** ( 1 minutes  8.033 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:

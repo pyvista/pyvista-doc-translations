@@ -67,30 +67,28 @@ node:
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>10</td></tr>
+    <tr><td>N Points</td><td>10</td></tr>
+    <tr><td>X Bounds</td><td>8.025e-02, 9.654e-01</td></tr>
+    <tr><td>Y Bounds</td><td>9.439e-02, 9.961e-01</td></tr>
+    <tr><td>Z Bounds</td><td>1.481e-02, 9.029e-01</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>10</td></tr>
-        <tr><td>N Points</td><td>10</td></tr>
-        <tr><td>X Bounds</td><td>2.911e-02, 9.123e-01</td></tr>
-        <tr><td>Y Bounds</td><td>9.214e-02, 9.445e-01</td></tr>
-        <tr><td>Z Bounds</td><td>1.719e-03, 8.690e-01</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>My Labels</b></td><td>Points</td><td><U7</td><td>1</td><td>nan</td><td>nan</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>My Labels</b></td><td>Points</td><td><U7</td><td>1</td><td>nan</td><td>nan</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Now plot the points with labels:
 
@@ -118,8 +116,8 @@ Now plot the points with labels:
  .. code-block:: none
 
 
-    [(2.1470024606515308, 2.194597678072392, 2.111626533345362),
-     (0.4707251153770928, 0.5183203327979538, 0.43534918807092376),
+    [(2.245403386533548, 2.2678109280069223, 2.1814031900908426),
+     (0.5228344449878788, 0.545241986461254, 0.45883424854517363),
      (0.0, 0.0, 1.0)]
 
 
@@ -244,7 +242,7 @@ This example will label each point with their scalar values
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.290 seconds)
+   **Total running time of the script:** ( 0 minutes  2.936 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:

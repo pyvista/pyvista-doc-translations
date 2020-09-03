@@ -36,31 +36,29 @@ mesh.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>StructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>1677401</td></tr>
+    <tr><td>N Points</td><td>1680000</td></tr>
+    <tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>
+    <tr><td>Y Bounds</td><td>5.640e+06, 5.658e+06</td></tr>
+    <tr><td>Z Bounds</td><td>7.339e+02, 2.787e+03</td></tr>
+    <tr><td>Dimensions</td><td>1400, 1200, 1</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>StructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>1677401</td></tr>
-        <tr><td>N Points</td><td>1680000</td></tr>
-        <tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>
-        <tr><td>Y Bounds</td><td>5.640e+06, 5.658e+06</td></tr>
-        <tr><td>Z Bounds</td><td>7.339e+02, 2.787e+03</td></tr>
-        <tr><td>Dimensions</td><td>1400, 1200, 1</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Let's inspect the imagery that we just loaded
 
@@ -88,7 +86,7 @@ Let's inspect the imagery that we just loaded
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7fa62ec7a828>
+    <matplotlib.image.AxesImage object at 0x7fbccac50cc0>
 
 
 
@@ -214,7 +212,7 @@ and plotting the texture mapped local topography and the outside area
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.036 seconds)
+   **Total running time of the script:** ( 0 minutes  18.344 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:

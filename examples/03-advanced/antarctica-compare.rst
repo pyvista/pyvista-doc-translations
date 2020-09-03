@@ -42,32 +42,30 @@ software.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>1106948</td></tr>
+    <tr><td>N Points</td><td>557470</td></tr>
+    <tr><td>X Bounds</td><td>-2.506e+06, 2.743e+06</td></tr>
+    <tr><td>Y Bounds</td><td>-2.143e+06, 2.240e+06</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>3</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>1106948</td></tr>
-        <tr><td>N Points</td><td>557470</td></tr>
-        <tr><td>X Bounds</td><td>-2.506e+06, 2.743e+06</td></tr>
-        <tr><td>Y Bounds</td><td>-2.143e+06, 2.240e+06</td></tr>
-        <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>3</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>ssavelocity</b></td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
+    <tr><td>node_value</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>2.300e+01</td></tr>
+    <tr><td>magnitude</td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>ssavelocity</b></td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
-        <tr><td>node_value</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>2.300e+01</td></tr>
-        <tr><td>magnitude</td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Here is a helper to extract regions of the mesh based on the simulation node.
 
@@ -340,7 +338,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.530 seconds)
+   **Total running time of the script:** ( 0 minutes  13.747 seconds)
 
 
 .. _sphx_glr_download_examples_03-advanced_antarctica-compare.py:

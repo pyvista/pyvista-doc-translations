@@ -73,30 +73,28 @@ Mark points inside with 1 and outside with a 0
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>3263</td></tr>
+    <tr><td>N Points</td><td>2903</td></tr>
+    <tr><td>X Bounds</td><td>-4.446e+00, 5.998e+00</td></tr>
+    <tr><td>Y Bounds</td><td>-3.637e+00, 2.760e+00</td></tr>
+    <tr><td>Z Bounds</td><td>-1.701e+00, 1.701e+00</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>3263</td></tr>
-        <tr><td>N Points</td><td>2903</td></tr>
-        <tr><td>X Bounds</td><td>-4.446e+00, 5.998e+00</td></tr>
-        <tr><td>Y Bounds</td><td>-3.637e+00, 2.760e+00</td></tr>
-        <tr><td>Z Bounds</td><td>-1.701e+00, 1.701e+00</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>SelectedPoints</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>SelectedPoints</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Extract two meshes, one completely inside and one completely outside the
 enclosing surface.
@@ -152,7 +150,7 @@ display the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.436 seconds)
+   **Total running time of the script:** ( 0 minutes  4.237 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-cells-inside-surface.py:

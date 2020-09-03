@@ -69,11 +69,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.81099775e+05, 4.40011200e+06, 1.76041003e+03],
-                     [4.81017275e+05, 4.40017160e+06, 1.76010999e+03],
-                     [4.80931075e+05, 4.40017980e+06, 1.76018994e+03],
-                     [4.80931375e+05, 4.40011880e+06, 1.77700000e+03],
-                     [4.81098575e+05, 4.40013690e+06, 1.75950000e+03]])
+    pyvista_ndarray([[4.80941175e+05, 4.40021010e+06, 1.76354004e+03],
+                     [4.80959175e+05, 4.40020120e+06, 1.76671997e+03],
+                     [4.81103175e+05, 4.40009910e+06, 1.77859998e+03],
+                     [4.81050375e+05, 4.40024000e+06, 1.75726001e+03],
+                     [4.81068375e+05, 4.40020090e+06, 1.75841003e+03]])
 
 
 
@@ -91,24 +91,22 @@ data or your own project, creating a PyVista mesh of those points is simply:
 
 
 
-.. only:: builder_html
-
-    .. raw:: html
+.. raw:: html
 
 
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>67841</td></tr>
-        <tr><td>N Points</td><td>67841</td></tr>
-        <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
-        <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-        <tr><td>Z Bounds</td><td>1.754e+03, 1.784e+03</td></tr>
-        <tr><td>N Arrays</td><td>0</td></tr>
-        </table>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>67841</td></tr>
+    <tr><td>N Points</td><td>67841</td></tr>
+    <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
+    <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
 
 
-        <br />
-        <br />
+    <br />
+    <br />
 
 And we can even do a sanity check
 
@@ -156,8 +154,8 @@ depth perception with point clouds (learn more in :ref:`ref_edl`).
  .. code-block:: none
 
 
-    [(481321.9851023033, 4400455.110102006, 2062.655085236402),
-     (481028.37499997707, 4400161.49999968, 1769.0449829101562),
+    [(481322.0571124766, 4400455.182112179, 2062.9470661128576),
+     (481028.37499997707, 4400161.49999968, 1769.2649536132812),
      (0.0, 0.0, 1.0)]
 
 
@@ -212,8 +210,8 @@ we specify to render every point as its own sphere.
  .. code-block:: none
 
 
-    [(481321.9851023033, 4400455.110102006, 2062.655085236402),
-     (481028.37499997707, 4400161.49999968, 1769.0449829101562),
+    [(481322.0571124766, 4400455.182112179, 2062.9470661128576),
+     (481028.37499997707, 4400161.49999968, 1769.2649536132812),
      (0.0, 0.0, 1.0)]
 
 
@@ -255,11 +253,11 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ 0.90428841,  0.33144709,  0.26908231],
-                     [-0.30705917, -0.42439158,  0.85182537],
-                     [ 0.65856627,  0.74100295, -0.13116822],
-                     [ 0.00253966, -0.53351126, -0.84578915],
-                     [-0.48936547,  0.52917087,  0.6931808 ]])
+    pyvista_ndarray([[ 0.80744841,  0.35347777, -0.47231402],
+                     [ 0.80987983, -0.52120732,  0.26914232],
+                     [ 0.77560021, -0.02433412,  0.63075523],
+                     [-0.0556811 , -0.44362283,  0.8944822 ],
+                     [ 0.37345183, -0.89477084,  0.24478332]])
 
 
 
@@ -309,8 +307,8 @@ Now we can make arrows using those vectors using the glyph filter
  .. code-block:: none
 
 
-    [(2.8642153549153417, 2.8641343969065756, 2.8708385150093645),
-     (0.5037932023406029, 0.5037122443318367, 0.5104163624346256),
+    [(2.876296726592796, 2.8486967585766485, 2.8309997111344507),
+     (0.5243947058916092, 0.4967947378754616, 0.4790976904332638),
      (0.0, 0.0, 1.0)]
 
 
@@ -318,7 +316,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.841 seconds)
+   **Total running time of the script:** ( 0 minutes  8.649 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

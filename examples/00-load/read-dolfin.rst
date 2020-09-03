@@ -72,24 +72,22 @@ a PyVista mesh.
 
 
 
-.. only:: builder_html
-
-    .. raw:: html
+.. raw:: html
 
 
-        <table>
-        <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>5400</td></tr>
-        <tr><td>N Points</td><td>2868</td></tr>
-        <tr><td>X Bounds</td><td>0.000e+00, 1.000e+00</td></tr>
-        <tr><td>Y Bounds</td><td>0.000e+00, 1.000e+00</td></tr>
-        <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>0</td></tr>
-        </table>
+    <table>
+    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>5400</td></tr>
+    <tr><td>N Points</td><td>2868</td></tr>
+    <tr><td>X Bounds</td><td>0.000e+00, 1.000e+00</td></tr>
+    <tr><td>Y Bounds</td><td>0.000e+00, 1.000e+00</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
 
 
-        <br />
-        <br />
+    <br />
+    <br />
 
 Now we can do stuff with that Dolfin mesh!
 
@@ -122,7 +120,7 @@ Now we can do stuff with that Dolfin mesh!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.612 seconds)
+   **Total running time of the script:** ( 0 minutes  1.742 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-dolfin.py:

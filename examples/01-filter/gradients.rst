@@ -38,33 +38,31 @@ Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>158400</td></tr>
+    <tr><td>N Points</td><td>167580</td></tr>
+    <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
+    <tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>
+    <tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>
+    <tr><td>Dimensions</td><td>76, 49, 45</td></tr>
+    <tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>2</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UniformGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>158400</td></tr>
-        <tr><td>N Points</td><td>167580</td></tr>
-        <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
-        <tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>
-        <tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>
-        <tr><td>Dimensions</td><td>76, 49, 45</td></tr>
-        <tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>2</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
+    <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
-        <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Now compute the gradients of the ``vectors`` vector field in the point data
 of that mesh. This is as simple as calling
@@ -161,43 +159,41 @@ by:
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>158400</td></tr>
+    <tr><td>N Points</td><td>167580</td></tr>
+    <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
+    <tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>
+    <tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>
+    <tr><td>Dimensions</td><td>76, 49, 45</td></tr>
+    <tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>12</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UniformGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>158400</td></tr>
-        <tr><td>N Points</td><td>167580</td></tr>
-        <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
-        <tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>
-        <tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>
-        <tr><td>Dimensions</td><td>76, 49, 45</td></tr>
-        <tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>12</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
+    <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
+    <tr><td>gradient</td><td>Points</td><td>float32</td><td>9</td><td>-1.585e+01</td><td>1.536e+01</td></tr>
+    <tr><td>du/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.293e+00</td><td>8.336e+00</td></tr>
+    <tr><td>du/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.084e+01</td><td>8.334e+00</td></tr>
+    <tr><td>du/dz</td><td>Points</td><td>float32</td><td>1</td><td>-8.300e+00</td><td>8.317e+00</td></tr>
+    <tr><td>dv/dx</td><td>Points</td><td>float32</td><td>1</td><td>-1.133e+01</td><td>1.536e+01</td></tr>
+    <tr><td>dv/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.585e+01</td><td>1.170e+01</td></tr>
+    <tr><td>dv/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.131e+01</td><td>7.459e+00</td></tr>
+    <tr><td>dw/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.738e+00</td><td>1.212e+01</td></tr>
+    <tr><td>dw/dy</td><td>Points</td><td>float32</td><td>1</td><td>-8.734e+00</td><td>8.740e+00</td></tr>
+    <tr><td>dw/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
-        <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
-        <tr><td>gradient</td><td>Points</td><td>float32</td><td>9</td><td>-1.585e+01</td><td>1.536e+01</td></tr>
-        <tr><td>du/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.293e+00</td><td>8.336e+00</td></tr>
-        <tr><td>du/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.084e+01</td><td>8.334e+00</td></tr>
-        <tr><td>du/dz</td><td>Points</td><td>float32</td><td>1</td><td>-8.300e+00</td><td>8.317e+00</td></tr>
-        <tr><td>dv/dx</td><td>Points</td><td>float32</td><td>1</td><td>-1.133e+01</td><td>1.536e+01</td></tr>
-        <tr><td>dv/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.585e+01</td><td>1.170e+01</td></tr>
-        <tr><td>dv/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.131e+01</td><td>7.459e+00</td></tr>
-        <tr><td>dw/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.738e+00</td><td>1.212e+01</td></tr>
-        <tr><td>dw/dy</td><td>Points</td><td>float32</td><td>1</td><td>-8.734e+00</td><td>8.740e+00</td></tr>
-        <tr><td>dw/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 
 .. code-block:: default
@@ -309,7 +305,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.073 seconds)
+   **Total running time of the script:** ( 0 minutes  5.145 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:

@@ -61,11 +61,11 @@ First, create some points for the surface.
  .. code-block:: none
 
 
-    array([[-201.29860033, -196.83031536,    1.90028754],
-           [-175.94976633, -196.83031536,    3.06530023],
-           [-161.93062583, -196.83031536,    3.88446457],
-           [-137.8459462 , -196.83031536,    5.57329416],
-           [-120.21108244, -196.83031536,    6.99731369]])
+    array([[-195.55617836, -199.43433326,    2.02254491],
+           [-179.53992445, -199.43433326,    2.73119242],
+           [-156.98820908, -199.43433326,    3.99164183],
+           [-132.04583442, -199.43433326,    5.72396875],
+           [-114.99073176, -199.43433326,    7.06620883]])
 
 
 
@@ -95,8 +95,8 @@ be encompassed in a :class:`pyvista.PolyData` object.
  .. code-block:: none
 
 
-    [(641.5949018985244, 639.570971894487, 690.4895588566307),
-     (1.7691296840161215, -0.25480032002128894, 50.66378664212236),
+    [(631.9078541676499, 631.8980937459418, 682.8551276203585),
+     (-0.14053778857251586, -0.1502982102806385, 50.806735664136106),
      (0.0, 0.0, 1.0)]
 
 
@@ -127,8 +127,8 @@ triangulation to turn those boring discrete points into a connected surface.
  .. code-block:: none
 
 
-    [(641.5949018985244, 639.570971894487, 690.4895588566307),
-     (1.7691296840161215, -0.25480032002128894, 50.66378664212236),
+    [(631.9078541676499, 631.8980937459418, 682.8551276203585),
+     (-0.14053778857251586, -0.1502982102806385, 50.806735664136106),
      (0.0, 0.0, 1.0)]
 
 
@@ -158,24 +158,22 @@ Masked Triangulations
 
 
 
-.. only:: builder_html
-
-    .. raw:: html
+.. raw:: html
 
 
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>100</td></tr>
-        <tr><td>N Points</td><td>100</td></tr>
-        <tr><td>X Bounds</td><td>1.915e-02, 9.282e+00</td></tr>
-        <tr><td>Y Bounds</td><td>7.911e-02, 9.226e+00</td></tr>
-        <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
-        <tr><td>N Arrays</td><td>0</td></tr>
-        </table>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>100</td></tr>
+    <tr><td>N Points</td><td>100</td></tr>
+    <tr><td>X Bounds</td><td>4.170e-02, 9.267e+00</td></tr>
+    <tr><td>Y Bounds</td><td>5.046e-02, 9.293e+00</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
 
 
-        <br />
-        <br />
+    <br />
+    <br />
 
 Run the triangulation on these points
 
@@ -201,8 +199,8 @@ Run the triangulation on these points
  .. code-block:: none
 
 
-    [(4.650641582374527, 4.65272245500586, 25.14930978376969),
-     (4.650641582374527, 4.65272245500586, 0.0),
+    [(4.654225067626128, 4.671609675719263, 25.22687389551956),
+     (4.654225067626128, 4.671609675719263, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -232,8 +230,8 @@ added unwanted triangles. We cn mitigate that with the ``alpha`` parameter.
  .. code-block:: none
 
 
-    [(4.650641582374527, 4.65272245500586, 25.14930978376969),
-     (4.650641582374527, 4.65272245500586, 0.0),
+    [(4.654225067626128, 4.671609675719263, 25.22687389551956),
+     (4.654225067626128, 4.671609675719263, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -276,8 +274,8 @@ We could also add a polygon to ignore during the triangulation via the
  .. code-block:: none
 
 
-    [(4.650641582374527, 4.65272245500586, 25.14930978376969),
-     (4.650641582374527, 4.65272245500586, 0.0),
+    [(4.654225067626128, 4.671609675719263, 25.22687389551956),
+     (4.654225067626128, 4.671609675719263, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -285,7 +283,7 @@ We could also add a polygon to ignore during the triangulation via the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.799 seconds)
+   **Total running time of the script:** ( 0 minutes  3.607 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:

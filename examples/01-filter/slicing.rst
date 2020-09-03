@@ -241,30 +241,28 @@ the line low.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>1</td></tr>
+    <tr><td>N Points</td><td>15</td></tr>
+    <tr><td>X Bounds</td><td>0.000e+00, 2.475e+02</td></tr>
+    <tr><td>Y Bounds</td><td>0.000e+00, 2.400e+02</td></tr>
+    <tr><td>Z Bounds</td><td>9.000e+00, 1.100e+01</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>1</td></tr>
-        <tr><td>N Points</td><td>15</td></tr>
-        <tr><td>X Bounds</td><td>0.000e+00, 2.475e+02</td></tr>
-        <tr><td>Y Bounds</td><td>0.000e+00, 2.400e+02</td></tr>
-        <tr><td>Z Bounds</td><td>9.000e+00, 1.100e+01</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>arc_length</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>arc_length</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Then run the filter
 
@@ -279,30 +277,28 @@ Then run the filter
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>49100</td></tr>
+    <tr><td>N Points</td><td>49692</td></tr>
+    <tr><td>X Bounds</td><td>0.000e+00, 2.500e+02</td></tr>
+    <tr><td>Y Bounds</td><td>0.000e+00, 2.415e+02</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 1.000e+02</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>PolyData</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>49100</td></tr>
-        <tr><td>N Points</td><td>49692</td></tr>
-        <tr><td>X Bounds</td><td>0.000e+00, 2.500e+02</td></tr>
-        <tr><td>Y Bounds</td><td>0.000e+00, 2.415e+02</td></tr>
-        <tr><td>Z Bounds</td><td>0.000e+00, 1.000e+02</td></tr>
-        <tr><td>N Arrays</td><td>1</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>facies</b></td><td>Cells</td><td>int64</td><td>1</td><td>0.000e+00</td><td>4.000e+00</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>facies</b></td><td>Cells</td><td>int64</td><td>1</td><td>0.000e+00</td><td>4.000e+00</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 
 .. code-block:: default
@@ -447,33 +443,31 @@ Use equation for circle since its about the Z-axis.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Information</th><th>Blocks</th></tr><tr><td>
+    <table>
+    <tr><th>MultiBlock</th><th>Values</th></tr>
+    <tr><td>N Blocks</td><td>6</td></tr>
+    <tr><td>X Bounds</td><td>0.000, 250.000</td></tr>
+    <tr><td>Y Bounds</td><td>0.000, 250.000</td></tr>
+    <tr><td>Z Bounds</td><td>0.000, 100.000</td></tr>
+    </table>
 
-        <table><tr><th>Information</th><th>Blocks</th></tr><tr><td>
-        <table>
-        <tr><th>MultiBlock</th><th>Values</th></tr>
-        <tr><td>N Blocks</td><td>6</td></tr>
-        <tr><td>X Bounds</td><td>0.000, 250.000</td></tr>
-        <tr><td>Y Bounds</td><td>0.000, 250.000</td></tr>
-        <tr><td>Z Bounds</td><td>0.000, 100.000</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Index</th><th>Name</th><th>Type</th></tr>
+    <tr><th>0</th><th>Bearing: 0.00</th><th>PolyData</th></tr>
+    <tr><th>1</th><th>Bearing: 30.00</th><th>PolyData</th></tr>
+    <tr><th>2</th><th>Bearing: 60.00</th><th>PolyData</th></tr>
+    <tr><th>3</th><th>Bearing: 90.00</th><th>PolyData</th></tr>
+    <tr><th>4</th><th>Bearing: 120.00</th><th>PolyData</th></tr>
+    <tr><th>5</th><th>Bearing: 150.00</th><th>PolyData</th></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Index</th><th>Name</th><th>Type</th></tr>
-        <tr><th>0</th><th>Bearing: 0.00</th><th>PolyData</th></tr>
-        <tr><th>1</th><th>Bearing: 30.00</th><th>PolyData</th></tr>
-        <tr><th>2</th><th>Bearing: 60.00</th><th>PolyData</th></tr>
-        <tr><th>3</th><th>Bearing: 90.00</th><th>PolyData</th></tr>
-        <tr><th>4</th><th>Bearing: 120.00</th><th>PolyData</th></tr>
-        <tr><th>5</th><th>Bearing: 150.00</th><th>PolyData</th></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 And now display it!
 
@@ -508,7 +502,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  24.599 seconds)
+   **Total running time of the script:** ( 0 minutes  30.036 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

@@ -45,34 +45,32 @@ Let's go ahead and download the sample dataset containing an
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>39353</td></tr>
+    <tr><td>N Points</td><td>48823</td></tr>
+    <tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>
+    <tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>
+    <tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>
+    <tr><td>N Arrays</td><td>5</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>39353</td></tr>
-        <tr><td>N Points</td><td>48823</td></tr>
-        <tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>
-        <tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>
-        <tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>
-        <tr><td>N Arrays</td><td>5</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
+    <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
+    <tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
-        <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
-        <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
-        <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
-        <tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 The above code downloaded a dataset containing a set of parallel files for a
 blood vessel mesh and returned an :class:`pyvista.UnstructuredGrid` - we did
@@ -139,34 +137,32 @@ together.
 
 
 
-.. only:: builder_html
+.. raw:: html
 
-    .. raw:: html
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>39353</td></tr>
+    <tr><td>N Points</td><td>48823</td></tr>
+    <tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>
+    <tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>
+    <tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>
+    <tr><td>N Arrays</td><td>5</td></tr>
+    </table>
 
-        <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-        <table>
-        <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-        <tr><td>N Cells</td><td>39353</td></tr>
-        <tr><td>N Points</td><td>48823</td></tr>
-        <tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>
-        <tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>
-        <tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>
-        <tr><td>N Arrays</td><td>5</td></tr>
-        </table>
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
+    <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
+    <tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>
+    </table>
 
-        </td><td>
-        <table>
-        <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-        <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
-        <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
-        <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
-        <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
-        <tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>
-        </table>
-
-        </td></tr> </table>
-        <br />
-        <br />
+    </td></tr> </table>
+    <br />
+    <br />
 
 Plot the pieced together mesh
 
@@ -225,7 +221,7 @@ Plot the pieced together mesh
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.380 seconds)
+   **Total running time of the script:** ( 0 minutes  2.730 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:
