@@ -35,7 +35,6 @@ jobs:
         sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         sudo apt-get install -y --no-install-recommends python3-venv
         (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a; pip3 install -r ./requirements_docs.txt)
-        cp layout.html pyvista/docs/_templates/
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
