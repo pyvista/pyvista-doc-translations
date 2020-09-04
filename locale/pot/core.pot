@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-30 00:36+0000\n"
+"POT-Creation-Date: 2020-09-04 00:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -597,6 +597,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.copy:0
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.plot:0
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_cells:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_edges:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_feature_edges:0
@@ -613,6 +615,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_difference:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_union:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.curvature:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:0
@@ -627,6 +631,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.subdivide:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.triangulate:0
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.DataObject.copy:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.UnstructuredGrid.linear_copy:0
@@ -646,6 +651,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.bounds:0
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.copy:0
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_cells:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_edges:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_feature_edges:0
@@ -662,6 +669,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_difference:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_union:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.curvature:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:0
@@ -674,6 +683,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.subdivide:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.triangulate:0
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.DataObject.copy:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.UnstructuredGrid.linear_copy:0
@@ -711,6 +721,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.cell_data_to_point_data:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_box:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_surface:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_cell_quality:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_cell_sizes:0
@@ -758,6 +769,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_difference:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_union:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.curvature:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:0
@@ -770,6 +782,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic_distance:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.plot_boundaries:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.plot_curvature:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.remove_points:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ribbon:0
@@ -1148,11 +1161,33 @@ msgid "You can think of ``MultiBlock`` like lists or dictionaries as we can iter
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock:11
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_box:21
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:18
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_implicit_distance:15
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.probe:24
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.threshold:34
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:32
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:36
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:11
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:50
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:53
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.delaunay_2d:34
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.extrude:38
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.fill_holes:22
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.flip_normals:4
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic:16
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic_distance:12
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:13
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:23
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.remove_points:23
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ribbon:28
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:30
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.strip:39
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.subdivide:31
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:24
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip_box:21
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.RectilinearGrid:13
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.UniformGrid:13
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.UnstructuredGrid:11
@@ -1259,6 +1294,15 @@ msgstr ""
 #: ../../pyvista/docs/core/filters.rst:101:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip_box:1
 msgid "Clip a dataset by a bounding box defined by the bounds."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ":obj:`clip_scalar <pyvista.core.filters.pyvista.DataSetFilters.clip_scalar>`\\ \\(\\[scalars\\, invert\\, value\\, inplace\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:1
+msgid "Clip a dataset by a scalar."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -1755,6 +1799,7 @@ msgid "Set the clipping value along the normal direction. The default value is 0
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:17
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:11
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_largest:7
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_add:7
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.boolean_cut:5
@@ -1769,6 +1814,21 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:17
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:17
 msgid "Updates mesh in-place while returning nothing."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:20
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:20
+msgid "**mesh** -- Clipped mesh when ``inplace=False``.  When ``inplace=True``, ``None``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:26
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:26
+msgid "Clip a cube along the +X direction.  ``triangulate`` is used as the cube is initially composed of quadrilateral faces and subdivide only works on triangles."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip:34
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip:34
+msgid "Clip a cube in the +Z direction.  This leaves half a cube below the XY plane."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_box:3
@@ -1790,6 +1850,35 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_box:16
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip_box:16
 msgid "If bounds are not given this is the factor along each axis to extract the default box."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_box:22
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.CompositeFilters.clip_box:22
+msgid "Clip a corner of a cube.  The bounds of a cube are normally ``[-0.5, 0.5, -0.5, 0.5, -0.5, 0.5]``, and this removes 1/8 of the cube's surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:3
+msgid "Name of scalars to clip on.  Defaults to currently active scalars."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:5
+msgid "Flag on whether to flip/invert the clip.  When ``True``, only the mesh below ``value`` will be kept.  When ``False``, only values above ``value`` will be kept."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:9
+msgid "Set the clipping value.  The default value is 0.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:14
+msgid "**pdata** -- Clipped dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:19
+msgid "Remove the part of the mesh with \"sample_point_scalars\" above 100."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:26
+msgid "Remove the part of the mesh with \"sample_point_scalars\" below 100.  Since these scalars are already active, there's no need to specify ``scalars=``"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_surface:3
@@ -2036,6 +2125,14 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_implicit_distance:9
 msgid "If True, a new scalar array will be added to the ``point_arrays`` of this mesh. Otherwise a copy of this mesh is returned with that scalar field."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_implicit_distance:16
+msgid "Compute the distance between all the points on a sphere and a plane."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_implicit_distance:27
+msgid "Plot these distances as a heatmap"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.connectivity:3
@@ -2355,7 +2452,8 @@ msgid "**merged_grid** -- Merged grid.  Returned when inplace is False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.merge:25
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:50
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:71
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:65
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.DataObject.save:10
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.save:16
 msgid "Notes"
@@ -3182,6 +3280,10 @@ msgstr ""
 msgid "**mesh** -- Cleaned mesh.  None when inplace=True"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:33
+msgid "Create a mesh with a degenerate face and then clean it, removing the degenerate face"
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:3
 msgid "This currently only supports one plane but could be implemented to handle a plane collection."
 msgstr ""
@@ -3194,12 +3296,53 @@ msgstr ""
 msgid "Non-manifold surfaces should not be used as input for this filter. The input surface should have no open edges, and must not have any edges that are shared by more than two faces. In addition, the input surface should not self-intersect, meaning that the faces of the surface should only touch at their edges."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:15
+msgid "Plane normal to clip with.  Plane is centered at ``origin``.  Normal can be either a 3 member list (e.g. ``[0, 0, 1]``) or one of the following strings: ``'x'``, ``'y'``, ``'z'``, ``'-x'``, ``'-y'``, or ``'-z'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:21
+msgid "Coordinate of the origin (e.g. ``[1, 0, 0]``).  Defaults to ``[0, 0, 0]```"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:24
+msgid "The tolerance for creating new points while clipping.  If the tolerance is too small, then degenerate triangles might be produced."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:28
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:43
+msgid "Updates mesh in-place while returning nothing. Defaults to False."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:31
+msgid "**clipped_mesh** -- The clipped mesh resulting from this operation when ``inplace==False``.  Otherwise, ``None``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:37
+msgid "Clip a sphere in the X direction centered at the origin.  This will leave behind half a sphere in the positive X direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:44
+msgid "Clip the sphere at the xy plane and leave behind half the sphere in the positive Z direction.  Shift the clip upwards to leave a smaller mesh behind."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_with_plane:3
 msgid "DEPRECATED: Please use `.clip` instead."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:3
 msgid "It adds a new point-data array named \"arc_length\" with the computed arc length for each of the polylines in the input. For all other cell types, the arc length is set to 0."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:7
+msgid "**arc_length** -- Arc length of the length of the probed line"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:19
+msgid "This is identical to the geodesic_distance"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_arc_length:25
+msgid "You can also plot the arc_length"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:3
@@ -3242,27 +3385,31 @@ msgstr ""
 msgid "The angle that defines a sharp edge. If the difference in angle across neighboring polygons is greater than this value, the shared edge is considered \"sharp\". Defaults to 30.0."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:43
-msgid "Updates mesh in-place while returning nothing. Defaults to False."
-msgstr ""
-
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:46
 msgid "**mesh** -- Updated mesh with cell and point normals if inplace=False"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:51
-msgid "Previous arrays named \"Normals\" will be overwritten."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:53
-msgid "Normals are computed only for polygons and triangle strips. Normals are not computed for lines or vertices."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:56
-msgid "Triangle strips are broken up into triangle polygons. You may want to restrip the triangles."
+msgid "Compute the point normals of the surface of a sphere >>> import pyvista as pv >>> sphere = pv.Sphere() >>> sphere.compute_normals(cell_normals=False, inplace=True) >>> normals = sphere['Normals'] >>> normals.shape (842, 3)"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:59
+msgid "Alternatively, create a new mesh when computing the normals and compute both cell and point normals."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:72
+msgid "Previous arrays named \"Normals\" will be overwritten."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:74
+msgid "Normals are computed only for polygons and triangle strips. Normals are not computed for lines or vertices."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:77
+msgid "Triangle strips are broken up into triangle polygons. You may want to restrip the triangles."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:80
 msgid "May be easier to run mesh.point_normals or mesh.cell_normals"
 msgstr ""
 
@@ -3324,6 +3471,14 @@ msgstr ""
 msgid "**outmesh** -- Decimated mesh.  None when inplace=True."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:54
+msgid "Decimate a sphere while preserving its volume"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:66
+msgid "If you encounter a segmentation fault or other error, consider using ``clean`` to remove any invalid cells before using this filter."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate_pro:3
 msgid "It forms a good approximation to the original geometry. Based on the algorithm originally described in \"Decimation of Triangle Meshes\", Proc Siggraph 92."
 msgstr ""
@@ -3353,7 +3508,6 @@ msgid "Controls topology preservation. If on, mesh splitting and hole eliminatio
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate_pro:31
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:26
 msgid "**mesh** -- Decimated mesh. None when inplace=True."
 msgstr ""
 
@@ -3379,6 +3533,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.delaunay_2d:22
 msgid "Specify the source object used to specify constrained edges and loops. (This is optional.) If set, and lines/polygons are defined, a constrained triangulation is created. The lines/polygons are assumed to reference points in the input point set (i.e. point ids are identical in the input and source). Note that this method does not connect the pipeline. See SetSourceConnection for connecting the pipeline."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.delaunay_2d:35
+msgid "Extract the points of a sphere and then convert the point cloud to a surface mesh.  Note that only the bottom half is converted to a mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.delauney_2d:3
@@ -3437,6 +3595,14 @@ msgstr ""
 msgid "**mesh** -- Mesh with holes filled.  None when inplace=True"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.fill_holes:23
+msgid "Create a partial sphere with a hole and then fill it"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.flip_normals:5
+msgid "Flip the normals of a sphere and plot the normals before and after the flip."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic:3
 msgid "This will add an array titled `vtkOriginalPointIds` of the input mesh's point ids to the output mesh."
 msgstr ""
@@ -3453,6 +3619,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic:11
 msgid "**output** -- PolyData object consisting of the line segment between the two given vertices."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic:17
+msgid "Plot the path between two points on a sphere"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.geodesic_distance:8
@@ -3499,6 +3669,22 @@ msgstr ""
 msgid "**cpos** -- List of camera position, focal point, and view up"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:3
+msgid "Plane origin.  Defaults the approximate center of the input mesh minus half the length of the input mesh in the direction of the normal."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:7
+msgid "Plane normal.  Defaults to +Z ``[0, 0, 1]``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:9
+msgid "Overwrite the original mesh with the projected points"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.project_points_to_plane:14
+msgid "Flatten a sphere to the XY plane"
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:3
 msgid "This requires a mesh and a line segment defined by an origin and end_point."
 msgstr ""
@@ -3520,7 +3706,7 @@ msgid "Plots ray trace results"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:14
-msgid "Plots off screen.  Used for unit testing."
+msgid "Plots off screen when ``plot=True``.  Used for unit testing."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:17
@@ -3533,6 +3719,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:19
 msgid "**intersection_cells** (*np.ndarray*) -- Indices of the intersection cells.  Empty array if no intersections."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ray_trace:24
+msgid "Compute the intersection between a ray from the origin and [1, 0, 0] and a sphere with radius 0.5 centered at the origin"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.remove_points:3
@@ -3563,6 +3753,10 @@ msgstr ""
 msgid "**ridx** (*np.ndarray*) -- Indices of new points relative to the original mesh.  Not returned when inplace=False."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.remove_points:24
+msgid "Remove the first 100 points from a sphere"
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ribbon:5
 msgid "If there are no lines in the input dataset, then the output will be an empty PolyData mesh."
 msgstr ""
@@ -3589,6 +3783,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ribbon:22
 msgid "If True, generate texture coordinates along the ribbon. This can also be specified to generate the texture coordinates in the following ways: ``'length'``, ``'normalized'``,"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.ribbon:29
+msgid "Convert a line to a ribbon and plot it."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:3
@@ -3621,6 +3819,14 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:21
 msgid "Boolean flag to control smoothing of feature edges."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:26
+msgid "**mesh** -- Smoothed mesh. None when inplace=True."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:31
+msgid "Smooth the edges of an all triangular cube >>> import pyvista as pv >>> cube = pv.Cube().triangulate().subdivide(5).clean() >>> smooth_cube = cube.smooth(1000, feature_smoothing=False) >>> n_edge_cells = cube.extract_feature_edges().n_cells >>> n_smooth_cells = smooth_cube.extract_feature_edges().n_cells >>> print('Sharp Edges on Cube:        %d' % n_edge_cells) Sharp Edges on Cube:        384 >>> print('Sharp Edges on Smooth Cube: %d' % n_smooth_cells) Sharp Edges on Smooth Cube: 12"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.strip:3
@@ -3680,7 +3886,7 @@ msgid "**mesh** -- pyvista polydata object.  None when inplace=True"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.subdivide:37
-msgid "alternatively, update mesh in-place"
+msgid "Alternatively, update the mesh in-place"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tri_filter:3
@@ -3708,7 +3914,7 @@ msgid "scalars array by which the radius varies"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:9
-msgid "Turn on/off whether to cap the ends with polygons. Default True."
+msgid "Turn on/off whether to cap the ends with polygons. Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:11
@@ -3720,11 +3926,15 @@ msgid "Maximum tube radius in terms of a multiple of the minimum radius."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:15
-msgid "The field preference when searching for the scalars array by name"
+msgid "The field preference when searching for the scalars array by name."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:20
 msgid "**mesh** -- Tube-filtered mesh. None when inplace=True."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.tube:25
+msgid "Convert a single line to a tube"
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:52
