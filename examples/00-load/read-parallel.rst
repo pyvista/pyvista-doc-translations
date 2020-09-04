@@ -221,7 +221,7 @@ Plot the pieced together mesh
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.749 seconds)
+   **Total running time of the script:** ( 0 minutes  2.745 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:
