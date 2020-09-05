@@ -305,7 +305,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.343 seconds)
+   **Total running time of the script:** ( 0 minutes  5.265 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:

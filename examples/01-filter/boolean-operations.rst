@@ -264,7 +264,7 @@ Order of operations does not matter for boolean union.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.452 seconds)
+   **Total running time of the script:** ( 0 minutes  18.770 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:
