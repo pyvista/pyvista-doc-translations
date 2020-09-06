@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.b0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-04 00:51+0000\n"
+"POT-Creation-Date: 2020-09-06 00:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2452,7 +2452,7 @@ msgid "**merged_grid** -- Merged grid.  Returned when inplace is False."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.merge:25
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:71
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:72
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:65
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.DataObject.save:10
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.save:16
@@ -3390,26 +3390,26 @@ msgid "**mesh** -- Updated mesh with cell and point normals if inplace=False"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:51
-msgid "Compute the point normals of the surface of a sphere >>> import pyvista as pv >>> sphere = pv.Sphere() >>> sphere.compute_normals(cell_normals=False, inplace=True) >>> normals = sphere['Normals'] >>> normals.shape (842, 3)"
+msgid "Compute the point normals of the surface of a sphere"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:59
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:60
 msgid "Alternatively, create a new mesh when computing the normals and compute both cell and point normals."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:72
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:73
 msgid "Previous arrays named \"Normals\" will be overwritten."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:74
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:75
 msgid "Normals are computed only for polygons and triangle strips. Normals are not computed for lines or vertices."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:77
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:78
 msgid "Triangle strips are broken up into triangle polygons. You may want to restrip the triangles."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:80
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.compute_normals:81
 msgid "May be easier to run mesh.point_normals or mesh.cell_normals"
 msgstr ""
 
@@ -3826,7 +3826,7 @@ msgid "**mesh** -- Smoothed mesh. None when inplace=True."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.smooth:31
-msgid "Smooth the edges of an all triangular cube >>> import pyvista as pv >>> cube = pv.Cube().triangulate().subdivide(5).clean() >>> smooth_cube = cube.smooth(1000, feature_smoothing=False) >>> n_edge_cells = cube.extract_feature_edges().n_cells >>> n_smooth_cells = smooth_cube.extract_feature_edges().n_cells >>> print('Sharp Edges on Cube:        %d' % n_edge_cells) Sharp Edges on Cube:        384 >>> print('Sharp Edges on Smooth Cube: %d' % n_smooth_cells) Sharp Edges on Smooth Cube: 12"
+msgid "Smooth the edges of an all triangular cube"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.strip:3
