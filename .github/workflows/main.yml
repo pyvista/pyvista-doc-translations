@@ -80,3 +80,6 @@ jobs:
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
         git push github master
+    - name: sphinx_build
+      run: |
+        make -e SPHINXOPTS="-D language='ja'" latex
