@@ -82,4 +82,6 @@ jobs:
         git push github master
     - name: sphinx_build
       run: |
+        source /home/runner/work/.venv/bin/activate
         make -e SPHINXOPTS="-D language='ja'" latex
+        deactivate
