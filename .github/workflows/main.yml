@@ -80,8 +80,13 @@ jobs:
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
         git push github master
-    - name: sphinx_build
+    - name: sphinx_build_ja
       run: |
         source /home/runner/work/.venv/bin/activate
         make -e SPHINXOPTS="-D language='ja'" latex
         deactivate
+    - name: artifact_ja
+      uses: actions/upload-artifact@v2
+      with:
+        name: pdf_ja
+        path: _build/latex 
