@@ -83,7 +83,7 @@ jobs:
     - name: sphinx_build_ja
       run: |
         source /home/runner/work/.venv/bin/activate
-        make -e SPHINXOPTS="-D language='ja'" latex
+        make -e SPHINXOPTS="-D language='ja'" latexpdf
         deactivate
     - name: artifact_ja
       uses: actions/upload-artifact@v2
