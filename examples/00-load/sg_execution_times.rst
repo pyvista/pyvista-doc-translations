@@ -5,34 +5,34 @@
 
 Computation times
 =================
-**01:24.307** total execution time for **examples_00-load** files:
+**01:27.349** total execution time for **examples_00-load** files:
 
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py` (``create-parametric-geometric-objects.py``) | 00:22.496 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py` (``create-parametric-geometric-objects.py``) | 00:22.737 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)                                                   | 00:11.994 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)                                                   | 00:13.134 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-point-cloud.py` (``create-point-cloud.py``)                                   | 00:08.520 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-point-cloud.py` (``create-point-cloud.py``)                                   | 00:08.393 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)                                                     | 00:07.642 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_terrain-mesh.py` (``terrain-mesh.py``)                                               | 00:07.957 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_terrain-mesh.py` (``terrain-mesh.py``)                                               | 00:07.547 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)                                                     | 00:07.077 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-structured-surface.py``)                     | 00:06.700 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-structured-surface.py``)                     | 00:06.921 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-surface.py``)                                   | 00:03.570 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-surface.py``)                                   | 00:03.838 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)                                             | 00:03.537 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)                                             | 00:03.799 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)                                             | 00:03.190 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)                                             | 00:03.728 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-geometric-objects.py``)                       | 00:02.804 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-geometric-objects.py``)                       | 00:03.278 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-grid.py``)                                 | 00:02.502 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-grid.py``)                                 | 00:02.616 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)                                                 | 00:01.970 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)                                                 | 00:01.882 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-unstructured-surface.py``)                 | 00:01.347 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-unstructured-surface.py``)                 | 00:01.465 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)                                                 | 00:00.490 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)                                                 | 00:00.523 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
