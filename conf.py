@@ -38,6 +38,7 @@ locale_dirs = [os.path.join(basedir, "../../locale/")]
 
 sphinx_gallery_conf = {
     "plot_gallery": "False",
+    "gallery_dirs": "examples",
 }
 
 html_static_path = [os.path.join(basedir, "_static")]
