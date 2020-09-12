@@ -29,7 +29,6 @@ shutil.rmtree("pyvista/docs/examples", ignore_errors=True)
 shutil.copytree("examples", "pyvista/docs/examples")
 shutil.rmtree("pyvista/docs/images/auto-generated", ignore_errors=True)
 shutil.copytree("images/auto-generated", "pyvista/docs/images/auto-generated")
-shutil.rmtree("pyvista/docs/auto_examples", ignore_errors=True)
 
 basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
 
@@ -39,6 +38,7 @@ locale_dirs = [os.path.join(basedir, "../../locale/")]
 
 sphinx_gallery_conf = {
     "plot_gallery": "False",
+    "gallery_dirs": "examples",
 }
 
 html_static_path = [os.path.join(basedir, "_static")]
