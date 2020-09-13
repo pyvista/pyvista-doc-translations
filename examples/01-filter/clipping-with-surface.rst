@@ -235,7 +235,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  53.852 seconds)
+   **Total running time of the script:** ( 1 minutes  3.300 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

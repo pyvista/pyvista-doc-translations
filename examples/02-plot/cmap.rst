@@ -282,7 +282,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.925 seconds)
+   **Total running time of the script:** ( 0 minutes  13.330 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:
