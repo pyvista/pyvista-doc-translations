@@ -116,7 +116,7 @@ Let's inspect where this downloaded our dataset:
  .. code-block:: none
 
 
-    ['000.vtu', '001.vtu', '002.vtu', '003.vtu']
+    ['003.vtu', '002.vtu', '001.vtu', '000.vtu']
 
 
 
@@ -221,7 +221,7 @@ Plot the pieced together mesh
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.867 seconds)
+   **Total running time of the script:** ( 0 minutes  3.397 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:
