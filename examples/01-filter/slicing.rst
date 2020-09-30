@@ -394,8 +394,8 @@ Slice a mesh perpendicularly along a vector direction perpendicularly.
  .. code-block:: none
 
 
-    [(474.9533635939437, 492.9533635939437, 474.95336550129235),
-     (90.0, 108.0, 90.00000190734863),
+    [(485.30129604463633, 503.3012931836134, 485.3012931836134),
+     (90.00000286102295, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -502,7 +502,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  29.710 seconds)
+   **Total running time of the script:** ( 0 minutes  29.767 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:
