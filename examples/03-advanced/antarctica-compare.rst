@@ -92,7 +92,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
     p.add_mesh(mesh, scalars="node_value")
     for node in np.unique(mesh["node_value"]):
         loc = extract_node(node).center
-        p.add_point_labels(loc, ["Node {}".format(node)])
+        p.add_point_labels(loc, [f"Node {node}"])
     p.show(cpos="xy")
 
 
@@ -338,7 +338,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.640 seconds)
+   **Total running time of the script:** ( 0 minutes  12.697 seconds)
 
 
 .. _sphx_glr_download_examples_03-advanced_antarctica-compare.py:

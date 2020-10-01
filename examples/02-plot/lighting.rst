@@ -108,7 +108,7 @@ Demonstration of the specular property
     p.subplot(0,1)
     s = 1.0
     p.add_mesh(mesh, specular=s, show_scalar_bar=False)
-    p.add_text('Specular of {}'.format(s))
+    p.add_text(f'Specular of {s}')
 
     p.link_views()
     p.view_isometric()
@@ -223,7 +223,7 @@ Demonstration of all three in use
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.478 seconds)
+   **Total running time of the script:** ( 0 minutes  17.236 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lighting.py:

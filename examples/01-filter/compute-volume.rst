@@ -144,9 +144,9 @@ simpler implementation of this below in :ref:`split_vol_ref`.
     idx = np.argwhere(~classifier)
     lvol = np.sum(volumes[idx])
 
-    print("Low grade volume: {}".format(lvol))
-    print("High grade volume: {}".format(hvol))
-    print("Original volume: {}".format(dataset.volume))
+    print(f"Low grade volume: {lvol}")
+    print(f"High grade volume: {hvol}")
+    print(f"Original volume: {dataset.volume}")
 
 
 
@@ -231,7 +231,7 @@ volume in the example above:
     bodies = threshed.split_bodies()
 
     for i, body in enumerate(bodies):
-        print("Body {} volume: {:.3f}".format(i, body.volume))
+        print(f"Body {i} volume: {body.volume:.3f}")
 
 
 
@@ -334,7 +334,7 @@ Print out the volumes for each body:
 
 
     for i, body in enumerate(bodies):
-        print("Body {:02d} volume: {:.3f}".format(i, body.volume))
+        print(f"Body {i:02d} volume: {body.volume:.3f}")
 
 
 
@@ -402,7 +402,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.429 seconds)
+   **Total running time of the script:** ( 0 minutes  15.962 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

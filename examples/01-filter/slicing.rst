@@ -394,8 +394,8 @@ Slice a mesh perpendicularly along a vector direction perpendicularly.
  .. code-block:: none
 
 
-    [(485.30129604463633, 503.3012931836134, 485.3012931836134),
-     (90.00000286102295, 108.0, 90.0),
+    [(462.3615871740787, 480.3615871740787, 462.3615871740787),
+     (90.0, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -434,7 +434,7 @@ Use equation for circle since its about the Z-axis.
     slices = pv.MultiBlock() # treat like a dictionary/list
     for theta in np.arange(0, np.pi, increment):
         normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi/2.)
-        name = 'Bearing: {:.2f}'.format(np.rad2deg(theta))
+        name = f'Bearing: {np.rad2deg(theta):.2f}'
         slices[name] = model.slice(origin=point, normal=normal)
     slices
 
@@ -502,7 +502,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  29.767 seconds)
+   **Total running time of the script:** ( 0 minutes  29.438 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

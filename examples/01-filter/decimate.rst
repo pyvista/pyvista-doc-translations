@@ -60,7 +60,7 @@ filters.
 .. code-block:: default
 
     target_reduction = 0.7
-    print("Reducing {} percent out of the original mesh".format(target_reduction * 100.0))
+    print(f"Reducing {target_reduction * 100.0} percent out of the original mesh")
 
 
 
@@ -182,7 +182,7 @@ Side by side comparison:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.915 seconds)
+   **Total running time of the script:** ( 0 minutes  4.584 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:
