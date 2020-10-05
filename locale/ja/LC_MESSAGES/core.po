@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-11 00:51+0000\n"
+"POT-Creation-Date: 2020-10-05 00:58+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -991,6 +991,8 @@ msgstr "参照: https://github.com/pyvista/pyvista-support/issues/107"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.select_enclosed_points:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice_along_axis:0
@@ -1618,6 +1620,8 @@ msgstr ""
 #: pyvista.DataSetFilters.compute_implicit_distance:15
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.probe:24
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:12
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:34
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -2343,6 +2347,20 @@ msgstr ""
 #: pyvista.DataSetFilters.select_enclosed_points:1
 msgid "Mark points as to whether they are inside a closed surface."
 msgstr "ポイントが閉じた表面の内側にあるかどうかをマークします。"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`shrink <pyvista.core.filters.pyvista.DataSetFilters.shrink>`\\ "
+"\\(\\[shrink\\_factor\\, progress\\_bar\\]\\)"
+msgstr ""
+":obj:`shrink <pyvista.core.filters.pyvista.DataSetFilters.shrink>`\\ "
+"\\(\\[shrink\\_factor\\, progress\\_bar\\]\\)"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:1
+msgid "Shrink the individual faces of a mesh."
+msgstr "メッシュの個々の面を縮小します。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -3092,6 +3110,8 @@ msgstr "3 Dセルの体積を計算するかどうかを指定します。"
 #: pyvista.DataSetFilters.glyph:26
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.interpolate:42
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:8
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.wireframe:5
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4064,6 +4084,23 @@ msgid ""
 " not closed and manifold, a runtime error is raised."
 msgstr ""
 "サーフェスの閉合をチェックするかどうかを指定します。オンの場合、アルゴリズムは最初にサーフェスが閉じて多様体であるかどうかをチェックします。サーフェスが閉じていて多様体でない場合、ランタイムエラーが発生します。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:3
+msgid ""
+"This filter shrinks the individual faces of a mesh rather than scaling the "
+"entire mesh."
+msgstr "このフィルタは、メッシュ全体をスケールするのではなく、メッシュの個々の面を縮小します。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:6
+msgid "fraction of shrink for each cell."
+msgstr "各セルの縮小率。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:13
+msgid "Extrude shrink mesh"
+msgstr "収縮メッシュを押し出す"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.slice:3

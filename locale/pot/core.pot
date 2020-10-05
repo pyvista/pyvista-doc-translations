@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-11 00:51+0000\n"
+"POT-Creation-Date: 2020-10-05 00:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -751,6 +751,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.sample:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.sample_over_line:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.select_enclosed_points:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.slice:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.slice_along_axis:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.slice_along_line:0
@@ -1166,6 +1167,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.clip_scalar:18
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.compute_implicit_distance:15
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.probe:24
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:12
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.threshold:34
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:32
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clip_closed_surface:36
@@ -1598,6 +1600,15 @@ msgstr ""
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.select_enclosed_points:1
 msgid "Mark points as to whether they are inside a closed surface."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ":obj:`shrink <pyvista.core.filters.pyvista.DataSetFilters.shrink>`\\ \\(\\[shrink\\_factor\\, progress\\_bar\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:1
+msgid "Shrink the individual faces of a mesh."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -2055,6 +2066,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_all_edges:5
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.glyph:26
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.interpolate:42
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:8
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.wireframe:5
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.clean:25
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.PolyDataFilters.decimate:46
@@ -2610,6 +2622,18 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.select_enclosed_points:31
 msgid "Specify whether to check the surface for closure. If on, then the algorithm first checks to see if the surface is closed and manifold. If the surface is not closed and manifold, a runtime error is raised."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:3
+msgid "This filter shrinks the individual faces of a mesh rather than scaling the entire mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:6
+msgid "fraction of shrink for each cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.shrink:13
+msgid "Extrude shrink mesh"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.slice:3
