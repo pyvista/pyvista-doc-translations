@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-05 00:58+0000\n"
+"POT-Creation-Date: 2020-10-09 00:54+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -463,6 +463,16 @@ msgid "Copy pyvista meta data onto this object from another object."
 msgstr "別のオブジェクトからこのオブジェクトにpyvistaメタデータをコピーします。"
 
 #: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+msgid ":obj:`find_closest_cell <pyvista.Common.find_closest_cell>`\\ \\(point\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:1
+msgid "Find index of closest cell in this mesh to the given point."
+msgstr ""
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
 msgid ""
 ":obj:`find_closest_point <pyvista.Common.find_closest_point>`\\ "
 "\\(point\\[\\, n\\]\\)"
@@ -706,6 +716,8 @@ msgstr "矢印はメッシュのポイントに配置され、そのサイズは
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.arrows:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.find_closest_point:0
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.plot:0
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.volume:0
@@ -804,6 +816,8 @@ msgstr "**arrows** -- アクティブなスカラーは矢印で表されます�
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.arrows:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.find_closest_point:0
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.volume:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -895,18 +909,7 @@ msgid "The form is: (xmin,xmax, ymin,ymax, zmin,zmax)."
 msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です。"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.Common.find_closest_point:3
-msgid ""
-"If wanting to query many points, use a KDTree with scipy or another library "
-"as those implementations will be easier to work with."
-msgstr ""
-"多数の点をクエリーする場合は、scipyまたは別のライブラリを含むKDTreeを使用します。これは、これらの実装での作業が簡単になるためです。"
-
-#: ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.Common.find_closest_point:6
-msgid "See: https://github.com/pyvista/pyvista-support/issues/107"
-msgstr "参照: https://github.com/pyvista/pyvista-support/issues/107"
-
+#: pyvista.Common.find_closest_cell:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.find_closest_point:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -1127,6 +1130,115 @@ msgstr "参照: https://github.com/pyvista/pyvista-support/issues/107"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.save:0
 msgid "Parameters"
 msgstr "パラメータ"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:3
+msgid ""
+"Length 3 coordinate of the point to query or a ``numpy`` array of "
+"coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:7
+msgid ""
+"**index** -- Index or indices of the cell in this mesh that is closest to "
+"the given point."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:12
+#: ../../pyvista/pyvista/core/composite.pydocstring of pyvista.MultiBlock:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.clip_box:21
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.clip_scalar:18
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.compute_implicit_distance:15
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.probe:24
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.shrink:12
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.threshold:34
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.clean:32
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.clip_closed_surface:36
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.compute_arc_length:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.compute_normals:50
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.decimate:53
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.delaunay_2d:34
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.extrude:38
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.fill_holes:22
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.flip_normals:4
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.geodesic:16
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.geodesic_distance:12
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.project_points_to_plane:13
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.ray_trace:23
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.remove_points:23
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.ribbon:28
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.smooth:30
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.strip:39
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.subdivide:31
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.tube:24
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.CompositeFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.CompositeFilters.clip_box:21
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:13
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:13
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid:11 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.StructuredGrid:13
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.StructuredGrid.hide_cells:11
+#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:12
+msgid "Examples"
+msgstr "例"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:13
+msgid "Find nearest cell to a point on a sphere"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_cell:21
+msgid ""
+"Find the nearest cells to several random points.  Note that ``-1`` indicates"
+" that the locator was not able to find a reasonably close cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_point:3
+msgid ""
+"If wanting to query many points, use a KDTree with scipy or another library "
+"as those implementations will be easier to work with."
+msgstr ""
+"多数の点をクエリーする場合は、scipyまたは別のライブラリを含むKDTreeを使用します。これは、これらの実装での作業が簡単になるためです。"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.Common.find_closest_point:6
+msgid "See: https://github.com/pyvista/pyvista-support/issues/107"
+msgstr "参照: https://github.com/pyvista/pyvista-support/issues/107"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.Common.find_closest_point:8
@@ -1608,74 +1720,6 @@ msgid ""
 msgstr ""
 "``MultiBlock`` "
 "はリストや辞書のようなもので、インデックスによってこのデータ構造を繰り返し処理することができ、文字列名によってブロックにアクセスすることもできます。"
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of pyvista.MultiBlock:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.clip:25
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.clip_box:21
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.clip_scalar:18
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.compute_implicit_distance:15
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.probe:24
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.shrink:12
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.DataSetFilters.threshold:34
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.clean:32
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.clip_closed_surface:36
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.compute_arc_length:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.compute_normals:50
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.decimate:53
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.delaunay_2d:34
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.extrude:38
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.fill_holes:22
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.flip_normals:4
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.geodesic:16
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.geodesic_distance:12
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.project_points_to_plane:13
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.ray_trace:23
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.remove_points:23
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.ribbon:28
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.smooth:30
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.strip:39
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.subdivide:31
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.tube:24
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.CompositeFilters.clip:25
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.CompositeFilters.clip_box:21
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid:13
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.UniformGrid:13
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid:11 ../../pyvista/pyvista/core/pointset.pydocstring
-#: of pyvista.StructuredGrid:13
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.StructuredGrid.hide_cells:11
-#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData:12
-msgid "Examples"
-msgstr "例"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:3
