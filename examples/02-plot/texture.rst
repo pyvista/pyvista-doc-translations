@@ -391,6 +391,8 @@ Now display all the puppies!
 
 
 
+
+
 .. image:: /examples/02-plot/images/sphx_glr_texture_008.png
     :alt: texture
     :class: sphx-glr-single-img
@@ -409,10 +411,97 @@ Now display all the puppies!
 
 
 
+Spherical Texture Coordinates
++++++++++++++++++++++++++++++
+We have a built in convienance method for mapping textures to spherical
+coordinate systems much like the planar mapping demoed above.
+
+
+.. code-block:: default
+
+    mesh = pv.Sphere()
+    tex = examples.download_masonry_texture()
+
+    mesh.texture_map_to_sphere(inplace=True)
+    mesh.plot(texture=tex)
+
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_009.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
+     (0.0, 0.0, 0.0),
+     (0.0, 0.0, 1.0)]
+
+
+
+The helper method above does not always produce the desired texture
+coordinates, so sometimes it must be done manually. Here is a great, user
+contributed example from `this support issue <https://github.com/pyvista/pyvista-support/issues/257>`_
+
+Manually create the texture coordinates for a globe map. First, we create
+the mesh that will be used as the globe. Note the `start_theta` for a slight
+overlappig
+
+
+.. code-block:: default
+
+    sphere = pv.Sphere(radius=1,
+                       theta_resolution=120,
+                       phi_resolution=120,
+                       start_theta=270.001,
+                       end_theta=270)
+
+    # Initialize the texture coordinates array
+    sphere.t_coords = np.zeros((sphere.points.shape[0], 2))
+
+    # Populate by manually calculating
+    for i in range(sphere.points.shape[0]):
+        sphere.t_coords[i] = [0.5 + np.arctan2(-sphere.points[i, 0],
+                                               sphere.points[i, 1])/(2 * np.pi),
+                              0.5 + np.arcsin(sphere.points[i, 2])/np.pi]
+
+    # And let's display it with a world map
+    tex = examples.load_globe_texture()
+    sphere.plot(texture=tex)
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_texture_010.png
+    :alt: texture
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(3.8634788478848945, 3.8634788478848945, 3.8634788478848945),
+     (0.0, 0.0, 0.0),
+     (0.0, 0.0, 1.0)]
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.082 seconds)
+   **Total running time of the script:** ( 0 minutes  14.605 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

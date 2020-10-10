@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-09 00:54+0000\n"
+"POT-Creation-Date: 2020-10-10 00:54+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -1010,6 +1010,8 @@ msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold_percent:0
@@ -1160,6 +1162,8 @@ msgstr ""
 #: pyvista.DataSetFilters.probe:24
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.shrink:12
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:25
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:34
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -2545,6 +2549,19 @@ msgstr ""
 #: pyvista.DataSetFilters.texture_map_to_plane:1
 msgid "Texture map this dataset to a user defined plane."
 msgstr "このデータセットをユーザ定義平面にテクスチャマップします。"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`texture_map_to_sphere "
+"<pyvista.core.filters.pyvista.DataSetFilters.texture_map_to_sphere>`\\ "
+"\\(\\[center\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:1
+msgid "Texture map this dataset to a user defined sphere."
+msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -4519,6 +4536,8 @@ msgstr "平面のTOP LEFT CORNERのXYZ座標を定義する浮動小数点の反
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:15
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:16
 msgid ""
 "If True, the new texture coordinates will be added to the dataset inplace. "
 "If False (default), a new dataset is returned with the textures coordinates"
@@ -4528,6 +4547,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.texture_map_to_plane:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:20
 msgid ""
 "The string name to give the new texture coordinates if applying the filter "
 "inplace."
@@ -4539,6 +4560,34 @@ msgid ""
 "Use the bounds to set the mapping plane by default (bottom plane of the "
 "bounding box)."
 msgstr "境界を使用してマッピングプレーンをデフォルトで設定します(バウンディングボックスの底面)。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:3
+msgid ""
+"This is often used to define a sphere to texture map an image to this "
+"dataset. The sphere defines the spatial reference and extent of that image."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:6
+msgid ""
+"Length 3 iterable of floats defining the XYZ coordinates of the center of "
+"the sphere. If ``None``, this will be automatically calculated."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:10
+msgid ""
+"Default true. Control how the texture coordinates are generated. If set, the"
+" s-coordinate ranges from 0->1 and 1->0 corresponding to the theta angle "
+"variation between 0->180 and 180->0 degrees. Otherwise, the s-coordinate "
+"ranges from 0->1 between 0->360 degrees."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.DataSetFilters.texture_map_to_sphere:26
+msgid "Map a puppy texture to a sphere"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.threshold:3
