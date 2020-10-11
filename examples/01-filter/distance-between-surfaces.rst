@@ -231,7 +231,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  26.801 seconds)
+   **Total running time of the script:** ( 0 minutes  38.227 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

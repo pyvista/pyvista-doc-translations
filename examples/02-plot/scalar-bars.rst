@@ -251,7 +251,7 @@ must be the value to annotate, and the value must be the string label.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.488 seconds)
+   **Total running time of the script:** ( 0 minutes  13.384 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:
