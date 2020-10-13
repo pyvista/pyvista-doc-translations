@@ -195,7 +195,7 @@ Run the box clipping algorithm
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.837 seconds)
+   **Total running time of the script:** ( 0 minutes  5.386 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:
