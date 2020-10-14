@@ -338,7 +338,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.528 seconds)
+   **Total running time of the script:** ( 0 minutes  13.459 seconds)
 
 
 .. _sphx_glr_download_examples_03-advanced_antarctica-compare.py:

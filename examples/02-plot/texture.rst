@@ -501,7 +501,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.573 seconds)
+   **Total running time of the script:** ( 0 minutes  16.596 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:
