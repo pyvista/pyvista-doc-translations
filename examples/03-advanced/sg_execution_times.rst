@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:29.697** total execution time for **examples_03-advanced** files:
+**00:31.220** total execution time for **examples_03-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:15.879 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:16.607 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:13.818 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:14.613 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
