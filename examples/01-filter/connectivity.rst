@@ -111,7 +111,7 @@ filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.380 seconds)
+   **Total running time of the script:** ( 0 minutes  4.257 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_connectivity.py:
