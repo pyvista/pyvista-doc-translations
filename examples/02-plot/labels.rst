@@ -74,9 +74,9 @@ node:
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10</td></tr>
     <tr><td>N Points</td><td>10</td></tr>
-    <tr><td>X Bounds</td><td>4.300e-02, 9.472e-01</td></tr>
-    <tr><td>Y Bounds</td><td>1.396e-02, 7.381e-01</td></tr>
-    <tr><td>Z Bounds</td><td>3.367e-02, 9.524e-01</td></tr>
+    <tr><td>X Bounds</td><td>1.440e-02, 8.637e-01</td></tr>
+    <tr><td>Y Bounds</td><td>7.848e-02, 9.741e-01</td></tr>
+    <tr><td>Z Bounds</td><td>1.273e-01, 7.687e-01</td></tr>
     <tr><td>N Arrays</td><td>1</td></tr>
     </table>
 
@@ -116,8 +116,8 @@ Now plot the points with labels:
  .. code-block:: none
 
 
-    [(2.1441282104441615, 2.0250741727707373, 2.1420614000291076),
-     (0.49508567021482436, 0.3760316325414002, 0.49301885979977045),
+    [(1.9904546339425075, 2.077691977851223, 1.9994119078611048),
+     (0.4390343730241119, 0.5262717169328271, 0.4479916469427091),
      (0.0, 0.0, 1.0)]
 
 
@@ -242,7 +242,7 @@ This example will label each point with their scalar values
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.857 seconds)
+   **Total running time of the script:** ( 0 minutes  3.108 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:
