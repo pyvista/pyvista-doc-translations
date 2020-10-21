@@ -201,7 +201,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.531 seconds)
+   **Total running time of the script:** ( 0 minutes  10.876 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:
