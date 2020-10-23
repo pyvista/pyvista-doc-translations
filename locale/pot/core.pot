@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-10 00:54+0000\n"
+"POT-Creation-Date: 2020-10-23 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1503,7 +1503,7 @@ msgid "Extract largest connected set in mesh."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
-msgid ":obj:`extract_points <pyvista.core.filters.pyvista.DataSetFilters.extract_points>`\\ \\(ind\\)"
+msgid ":obj:`extract_points <pyvista.core.filters.pyvista.DataSetFilters.extract_points>`\\ \\(ind\\[\\, adjacent\\_cells\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -2378,7 +2378,11 @@ msgstr ""
 msgid "Numpy array of point indices to be extracted."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_points:6
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_points:5
+msgid "If True, extract the cells that contain at least one of the extracted points. If False, extract the cells that contain exclusively points from the extracted points list. The default is True."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.DataSetFilters.extract_points:11
 msgid "**subgrid** -- Subselected grid."
 msgstr ""
 

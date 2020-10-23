@@ -192,8 +192,8 @@ percent which equates to five percent of the bounding box's length.
  .. code-block:: none
 
 
-    [(34.99366555131856, 45.12062407053891, 39.337127839698226),
-     (-0.044190406799316406, 10.082768112421036, 4.299271881580353),
+    [(38.40869386638885, 44.62671968858128, 35.01973453681355),
+     (3.864742200821638, 10.082768023014069, 0.4757828712463379),
      (0.0, 0.0, 1.0)]
 
 
@@ -201,7 +201,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.715 seconds)
+   **Total running time of the script:** ( 0 minutes  7.012 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:

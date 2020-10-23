@@ -226,8 +226,8 @@ clip that grid using the surface to create a closed 3D model of the surface
  .. code-block:: none
 
 
-    [(32.591428491993206, 42.5914284919932, 36.402064118309276),
-     (0.0, 9.99999999999999, 3.8106356263160706),
+    [(36.40206564385712, 42.59142831800374, 32.59142854232609),
+     (3.8106371015310287, 9.99999977567765, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -235,7 +235,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  58.330 seconds)
+   **Total running time of the script:** ( 0 minutes  51.876 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

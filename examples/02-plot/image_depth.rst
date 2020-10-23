@@ -45,8 +45,8 @@ Plot a depth image as viewed from a camera overlooking the "hills" example mesh.
  .. code-block:: none
 
 
-    [(32.59238058247114, 42.59238058247112, 36.404715418000464),
-     (0.0, 9.99999999999999, 3.8123348355293274),
+    [(36.404716943411536, 42.5923804083449, 32.59238063266725),
+     (3.8123363107442856, 9.99999977567765, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -114,7 +114,7 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.008 seconds)
+   **Total running time of the script:** ( 0 minutes  1.279 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:
