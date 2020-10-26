@@ -166,6 +166,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Drape a surface (2D array) from a line in 3D space.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-surface-draped_thumb.png
+     :alt: Drape 2D Surface From Line
+
+     :ref:`sphx_glr_examples_00-load_create-surface-draped.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-surface-draped
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a surface from a set of points through a Delaunay triangulation. ">
 
 .. only:: html
@@ -694,6 +715,48 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Interpolate one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes using a Gaussian Kernel. ">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_interpolate_thumb.png
+     :alt: Interpolating
+
+     :ref:`sphx_glr_examples_01-filter_interpolate.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/interpolate
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Leverage a powerful VTK algorithm for computing mesh quality.">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_mesh-quality_thumb.png
+     :alt: Computing Mesh Quality
+
+     :ref:`sphx_glr_examples_01-filter_mesh-quality.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/mesh-quality
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects. ">
 
 .. only:: html
@@ -736,12 +799,12 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another meshes nodes. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes. ">
 
 .. only:: html
 
  .. figure:: /examples/01-filter/images/thumb/sphx_glr_resample_thumb.png
-     :alt: Resampling & Interpolating
+     :alt: Resampling
 
      :ref:`sphx_glr_examples_01-filter_resample.py`
 
@@ -1078,6 +1141,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Specify specific cells to hide when plotting.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_ghost-cells_thumb.png
+     :alt: Hide Cells with Ghosting
+
+     :ref:`sphx_glr_examples_02-plot_ghost-cells.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/ghost-cells
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Generate a moving gif from an active plotter ">
 
 .. only:: html
@@ -1138,6 +1222,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/interpolate-before-map
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Make an animation of an isovalue through a volumetric dataset ">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_isovalue_thumb.png
+     :alt: Moving Isovalue
+
+     :ref:`sphx_glr_examples_02-plot_isovalue.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/isovalue
 
 .. raw:: html
 
@@ -1285,6 +1390,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/orbit
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="View three orthogonal slices from a mesh.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_ortho-slices_thumb.png
+     :alt: Orthogonal Slices
+
+     :ref:`sphx_glr_examples_02-plot_ortho-slices.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/ortho-slices
 
 .. raw:: html
 
@@ -1510,6 +1636,27 @@ developers.
    :hidden:
 
    /examples/03-advanced/antarctica-compare
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects. ">
+
+.. only:: html
+
+ .. figure:: /examples/03-advanced/images/thumb/sphx_glr_ray-trace_thumb.png
+     :alt: Ray Tracing
+
+     :ref:`sphx_glr_examples_03-advanced_ray-trace.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-advanced/ray-trace
 
 .. raw:: html
 

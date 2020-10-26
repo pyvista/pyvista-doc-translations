@@ -9,10 +9,10 @@
     .. _sphx_glr_examples_01-filter_resample.py:
 
 
-Resampling & Interpolating
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resampling
+~~~~~~~~~~
 
-Resample one mesh's point/cell arrays onto another meshes nodes.
+Resample one mesh's point/cell arrays onto another mesh's nodes.
 
 This example will resample a volumetric mesh's  scalar data onto the surface
 of a sphere contained in that volume.
@@ -21,7 +21,7 @@ of a sphere contained in that volume.
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 4
+    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -32,6 +32,8 @@ of a sphere contained in that volume.
 
 
 
+Simple Resample
++++++++++++++++
 Query a grids points onto a sphere
 
 
@@ -92,7 +94,6 @@ Run the algorithm and plot the result
 
 
 
-
 .. image:: /examples/01-filter/images/sphx_glr_resample_002.png
     :alt: resample
     :class: sphx-glr-single-img
@@ -111,25 +112,41 @@ Run the algorithm and plot the result
 
 
 
-Interpolate
-+++++++++++
-
-Resample the points' arrays onto a surface using an interpolation from a Gaussian Kernel
+Complex Resample
+++++++++++++++++
+Take a volume of data and create a grid of lower resolution to resample on
 
 
 .. code-block:: default
 
+    data_to_probe = examples.download_embryo()
+    mesh = pv.create_grid(data_to_probe, dimensions=(75, 75, 75))
 
-    # Download sample data
-    surface = examples.download_saddle_surface()
-    points = examples.download_sparse_points()
+    result = mesh.sample(data_to_probe)
 
 
-    p = pv.Plotter()
-    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
-    p.add_mesh(surface)
-    p.show()
 
+
+
+
+
+
+
+.. code-block:: default
+
+    threshold = lambda m: m.threshold(15.0)
+    cpos = [(468.9075585873713, -152.8280322856109, 152.13046602188035),
+        (121.65121514580106, 140.29327609542105, 112.28137570357188),
+        (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236)]
+    dargs = dict(clim=data_to_probe.get_data_range(), cmap='rainbow')
+
+    p = pv.Plotter(shape=(1,2))
+    p.add_mesh(threshold(data_to_probe), **dargs)
+    p.subplot(0,1)
+    p.add_mesh(threshold(result), **dargs)
+    p.link_views()
+    p.view_isometric()
+    p.show(cpos=cpos)
 
 
 
@@ -145,50 +162,16 @@ Resample the points' arrays onto a surface using an interpolation from a Gaussia
  .. code-block:: none
 
 
-    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
-     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
-     (0.0, 0.0, 1.0)]
-
-
-
-Run the interpolation
-
-
-.. code-block:: default
-
-
-    interpolated = surface.interpolate(points, radius=12.0)
-
-
-    p = pv.Plotter()
-    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
-    p.add_mesh(interpolated, scalars="val")
-    p.show()
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_resample_004.png
-    :alt: resample
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
-     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
-     (0.0, 0.0, 1.0)]
+    [(468.9075585873713, -152.8280322856109, 152.13046602188035),
+     (121.65121514580106, 140.29327609542105, 112.28137570357188),
+     (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.040 seconds)
+   **Total running time of the script:** ( 0 minutes  14.517 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:

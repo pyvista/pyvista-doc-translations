@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-01 00:53+0000\n"
+"POT-Creation-Date: 2020-10-26 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,95 +153,103 @@ msgstr ""
 msgid "Status bars for monitoring filters"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:78
+#: ../../pyvista/docs/getting-started/installation.rst:75
+msgid "``trimesh`` ``rtree`` ``pyembree``"
+msgstr ""
+
+#: ../../pyvista/docs/getting-started/installation.rst:76
+msgid "Vectorised ray tracing"
+msgstr ""
+
+#: ../../pyvista/docs/getting-started/installation.rst:82
 msgid "Source / Developers"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:80
+#: ../../pyvista/docs/getting-started/installation.rst:84
 msgid "Alternatively, you can install the latest version from GitHub by visiting `PyVista <https://github.com/pyvista/pyvista>`_, and downloading the source (cloning) by running::"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:89
+#: ../../pyvista/docs/getting-started/installation.rst:93
 msgid "The latest documentation for the ``master`` branch of PyVista can be found at `dev.pyvista.org <https://dev.pyvista.org>`_."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:94
+#: ../../pyvista/docs/getting-started/installation.rst:98
 msgid "Test Installation"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:96
+#: ../../pyvista/docs/getting-started/installation.rst:100
 msgid "You can test your installation by running an example:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:103
+#: ../../pyvista/docs/getting-started/installation.rst:107
 msgid "See other examples:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:115
+#: ../../pyvista/docs/getting-started/installation.rst:119
 msgid "A more comprehensive testing suite is available after cloning the source repository. For details on how to clone and test the PyVista source, please see our `Contributing Guide`_ and specifically, the `Testing`_ section."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:124
+#: ../../pyvista/docs/getting-started/installation.rst:128
 msgid "Running on CI Services"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:127
+#: ../../pyvista/docs/getting-started/installation.rst:131
 msgid "Please head over to `pyvista/gl-ci-hepers`_ for details on setting up CI services like Travis and Azure Pipelines to run PyVista."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:134
+#: ../../pyvista/docs/getting-started/installation.rst:138
 msgid "Running on MyBinder"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:136
+#: ../../pyvista/docs/getting-started/installation.rst:140
 msgid "This section is for advanced users that would like to install and use PyVista with headless displays on notebook hosting services like MyBinder_."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:139
+#: ../../pyvista/docs/getting-started/installation.rst:143
 msgid "Please see `this project`_ for a convenient Cookiecutter_ to get started using PyVista on the notebook hosting service MyBinder_."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:146
+#: ../../pyvista/docs/getting-started/installation.rst:150
 msgid "To get started, the Docker container will need to have ``libgl1-mesa-dev`` and ``xvfb`` installed through ``apt-get``. For MyBinder, include the following in a file called ``apt.txt``::"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:153
+#: ../../pyvista/docs/getting-started/installation.rst:157
 msgid "Then, you need to configure the headless display, for MyBinder, create a file called ``start`` and include the following set up script that will run every time your Docker container is launched:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:171
+#: ../../pyvista/docs/getting-started/installation.rst:175
 msgid "And that's it! Include PyVista in your Python requirements and get to visualizing your data! If you need more help than this on setting up PyVista for these types of services, hop on Slack and chat with the developers or take a look at `this repository`_ that is currently using PyVista on MyBinder."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:180
+#: ../../pyvista/docs/getting-started/installation.rst:184
 msgid "Running on Remote Servers"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:182
+#: ../../pyvista/docs/getting-started/installation.rst:186
 msgid "Using PyVista on remote servers requires similar setup steps as in the above Docker case. As an example, here are the complete steps to use PyVista on AWS EC2 Ubuntu 18.04 LTS (``ami-0a313d6098716f372`` in ``us-east-1``). Other servers would work similarly."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:187
+#: ../../pyvista/docs/getting-started/installation.rst:191
 msgid "After logging into the remote server, install Miniconda and related packages:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:204
+#: ../../pyvista/docs/getting-started/installation.rst:208
 msgid "Then, configure the headless display:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:215
+#: ../../pyvista/docs/getting-started/installation.rst:219
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:223
+#: ../../pyvista/docs/getting-started/installation.rst:227
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:227
+#: ../../pyvista/docs/getting-started/installation.rst:231
 msgid "Running with Sphinx-Gallery"
 msgstr ""
 
-#: ../../pyvista/docs/getting-started/installation.rst:229
+#: ../../pyvista/docs/getting-started/installation.rst:233
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 

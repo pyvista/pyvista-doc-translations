@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.26.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-23 00:57+0000\n"
+"POT-Creation-Date: 2020-10-26 01:04+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -782,6 +782,8 @@ msgstr "矢印はメッシュのポイントに配置され、そのサイズは
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:0
@@ -1056,6 +1058,8 @@ msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_boundaries:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_curvature:0
@@ -1188,6 +1192,8 @@ msgstr "**index** -- 指定した点に最も近い、このメッシュ内の�
 #: pyvista.PolyDataFilters.geodesic:16
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.geodesic_distance:12
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:30
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.project_points_to_plane:13
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -5087,6 +5093,19 @@ msgstr "Dijkstraのアルゴリズムを使用して、2つの頂点間の測地
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
+":obj:`multi_ray_trace "
+"<pyvista.core.filters.pyvista.PolyDataFilters.multi_ray_trace>`\\ "
+"\\(origins\\, directions\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:1
+msgid "Perform multiple ray trace calculations."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+msgid ""
 ":obj:`plot_boundaries "
 "<pyvista.core.filters.pyvista.PolyDataFilters.plot_boundaries>`\\ "
 "\\(\\[edge\\_color\\]\\)"
@@ -5993,6 +6012,93 @@ msgid "**length** -- Length of the geodesic segment."
 msgstr "**length** -- 測地座標セグメントの長さ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:5
+msgid "This requires a mesh with only triangular faces,"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:4
+msgid ""
+"an array of origin points and an equal sized array of direction vectors to "
+"trace along."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:7
+msgid ""
+"The embree library used for vectorisation of the ray traces is known to "
+"occasionally return no intersections where the VTK implementation would "
+"return an intersection. If the result appears to be missing some "
+"intersection points, set retry=True to run a second pass over rays that "
+"returned no intersections, using the VTK ray_trace implementation."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:13
+msgid "Starting point for each trace."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:15
+msgid "direction vector for each trace."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:17
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.ray_trace:10
+msgid "Returns intersection of first point only."
+msgstr "最初のポイントの交差のみを返します。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:19
+msgid "Will retry rays that return no intersections using the ray_trace"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:22
+msgid ""
+"* **intersection_points** (*np.ndarray*) -- Location of the intersection "
+"points.  Empty array if no   intersections. * **intersection_rays** "
+"(*np.ndarray*) -- Indices of the ray for each intersection point. Empty "
+"array if no   intersections. * **intersection_cells** (*np.ndarray*) -- "
+"Indices of the intersection cells.  Empty array if no   intersections."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:22
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.ray_trace:17
+msgid ""
+"**intersection_points** (*np.ndarray*) -- Location of the intersection "
+"points.  Empty array if no intersections."
+msgstr "**intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:24
+msgid ""
+"**intersection_rays** (*np.ndarray*) -- Indices of the ray for each "
+"intersection point. Empty array if no intersections."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:26
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.ray_trace:19
+msgid ""
+"**intersection_cells** (*np.ndarray*) -- Indices of the intersection cells."
+"  Empty array if no intersections."
+msgstr "**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.PolyDataFilters.multi_ray_trace:31
+msgid ""
+"Compute the intersection between rays from the origin in directions [1, 0, "
+"0], [0, 1, 0] and [0, 0, 1], and a sphere with radius 0.5 centered at the "
+"origin"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_boundaries:3
 msgid "The color of the edges when they are added to the plotter."
 msgstr "プロッタに追加されたときのエッジの色。"
@@ -6085,11 +6191,6 @@ msgid "End of the line segment."
 msgstr "線分セグメントの終点。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.ray_trace:10
-msgid "Returns intersection of first point only."
-msgstr "最初のポイントの交差のみを返します。"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:12
 msgid "Plots ray trace results"
 msgstr "レイトレーシング結果をプロットします"
@@ -6109,20 +6210,6 @@ msgid ""
 msgstr ""
 "* **intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。 * "
 "**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.ray_trace:17
-msgid ""
-"**intersection_points** (*np.ndarray*) -- Location of the intersection "
-"points.  Empty array if no intersections."
-msgstr "**intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.PolyDataFilters.ray_trace:19
-msgid ""
-"**intersection_cells** (*np.ndarray*) -- Indices of the intersection cells."
-"  Empty array if no intersections."
-msgstr "**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.ray_trace:24

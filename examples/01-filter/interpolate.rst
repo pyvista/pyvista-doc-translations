@@ -1,0 +1,264 @@
+.. only:: html
+
+    .. note::
+        :class: sphx-glr-download-link-note
+
+        Click :ref:`here <sphx_glr_download_examples_01-filter_interpolate.py>`     to download the full example code
+    .. rst-class:: sphx-glr-example-title
+
+    .. _sphx_glr_examples_01-filter_interpolate.py:
+
+
+Interpolating
+~~~~~~~~~~~~~
+
+Interpolate one mesh's point/cell arrays onto another mesh's nodes using a
+Gaussian Kernel.
+
+
+.. code-block:: default
+
+    # sphinx_gallery_thumbnail_number = 4
+    import pyvista as pv
+    from pyvista import examples
+
+
+
+
+
+
+
+
+Simple Surface Interpolation
+++++++++++++++++++++++++++++
+Resample the points' arrays onto a surface
+
+
+.. code-block:: default
+
+
+    # Download sample data
+    surface = examples.download_saddle_surface()
+    points = examples.download_sparse_points()
+
+    p = pv.Plotter()
+    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
+    p.add_mesh(surface)
+    p.show()
+
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_interpolate_001.png
+    :alt: interpolate
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
+     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
+     (0.0, 0.0, 1.0)]
+
+
+
+Run the interpolation
+
+
+.. code-block:: default
+
+
+    interpolated = surface.interpolate(points, radius=12.0)
+
+
+    p = pv.Plotter()
+    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
+    p.add_mesh(interpolated, scalars="val")
+    p.show()
+
+
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_interpolate_002.png
+    :alt: interpolate
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
+     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
+     (0.0, 0.0, 1.0)]
+
+
+
+Complex Interpolation
++++++++++++++++++++++
+In this example, we will in interpolate sparse points in 3D space into a
+volume. These data are from temperature probes in the subsurface and the goal
+is to create an approximate 3D model of the temperature field in the
+subsurface.
+
+This approach is a great for back-of-the-hand estimations but pales in
+comparison to kriging
+
+
+.. code-block:: default
+
+
+    # Download the sparse data
+    probes = examples.download_thermal_probes()
+
+
+
+
+
+
+
+
+Create the interpolation grid around the sparse data
+
+
+.. code-block:: default
+
+    grid = pv.UniformGrid()
+    grid.origin = (329700, 4252600, -2700)
+    grid.spacing = (250, 250, 50)
+    grid.dimensions = (60, 75, 100)
+
+
+
+
+
+
+
+
+
+.. code-block:: default
+
+    dargs = dict(cmap="coolwarm", clim=[0,300], scalars="temperature (C)")
+    cpos = [(364280.5723737897, 4285326.164400684, 14093.431895014139),
+     (337748.7217949739, 4261154.45054595, -637.1092549935128),
+     (-0.29629216102673206, -0.23840196609932093, 0.9248651025279784)]
+
+    p = pv.Plotter()
+    p.add_mesh(grid.outline(), color='k')
+    p.add_mesh(probes, render_points_as_spheres=True, **dargs)
+    p.show(cpos=cpos)
+
+
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_interpolate_003.png
+    :alt: interpolate
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(364280.5723737897, 4285326.164400684, 14093.431895014139),
+     (337748.7217949739, 4261154.45054595, -637.1092549935128),
+     (-0.296292161026732, -0.23840196609932088, 0.9248651025279782)]
+
+
+
+Run an interpolation
+
+
+.. code-block:: default
+
+    interp = grid.interpolate(probes, radius=15000, sharpness=10, strategy='mask_points')
+
+
+
+
+
+
+
+
+Visualize the results
+
+
+.. code-block:: default
+
+    vol_opac = [0, 0, .2, 0.2, 0.5, 0.5]
+
+    p = pv.Plotter(shape=(1,2), window_size=[1024*3, 768*2])
+    p.enable_depth_peeling()
+    p.add_volume(interp, opacity=vol_opac, **dargs)
+    p.add_mesh(probes, render_points_as_spheres=True, point_size=10, **dargs)
+    p.subplot(0,1)
+    p.add_mesh(interp.contour(5), opacity=0.5, **dargs)
+    p.add_mesh(probes, render_points_as_spheres=True, point_size=10, **dargs)
+    p.link_views()
+    p.show(cpos=cpos)
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_interpolate_004.png
+    :alt: interpolate
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(364280.5723737897, 4285326.164400684, 14093.431895014139),
+     (337748.7217949739, 4261154.45054595, -637.1092549935128),
+     (-0.296292161026732, -0.23840196609932088, 0.9248651025279782)]
+
+
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** ( 0 minutes  14.744 seconds)
+
+
+.. _sphx_glr_download_examples_01-filter_interpolate.py:
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-python
+
+     :download:`Download Python source code: interpolate.py <interpolate.py>`
+
+
+
+  .. container:: sphx-glr-download sphx-glr-download-jupyter
+
+     :download:`Download Jupyter notebook: interpolate.ipynb <interpolate.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
