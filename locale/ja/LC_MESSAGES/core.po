@@ -2183,6 +2183,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.extract_points>`\\ \\(ind\\[\\,"
 " adjacent\\_cells\\]\\)"
 msgstr ""
+":obj:`extract_points "
+"<pyvista.core.filters.pyvista.DataSetFilters.extract_points>`\\ \\(ind\\[\\,"
+" adjacent\\_cells\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -3677,6 +3680,7 @@ msgid ""
 "points. If False, extract the cells that contain exclusively points from the"
 " extracted points list. The default is True."
 msgstr ""
+"Trueの場合、抽出された点の少なくとも1つを含むセルを抽出します。Falseの場合は、抽出された点のリストから点のみを含むセルを抽出します。既定値はTrueです。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.DataSetFilters.extract_points:11
@@ -5097,12 +5101,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.PolyDataFilters.multi_ray_trace>`\\ "
 "\\(origins\\, directions\\[\\, ...\\]\\)"
 msgstr ""
+":obj:`multi_ray_trace "
+"<pyvista.core.filters.pyvista.PolyDataFilters.multi_ray_trace>`\\ "
+"\\(origins\\, directions\\[\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:1
 msgid "Perform multiple ray trace calculations."
-msgstr ""
+msgstr "複数のレイトレース計算を実行します。"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
@@ -6014,14 +6021,14 @@ msgstr "**length** -- 測地座標セグメントの長さ。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:5
 msgid "This requires a mesh with only triangular faces,"
-msgstr ""
+msgstr "これには、三角形の面のみを持つメッシュが必要です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:4
 msgid ""
 "an array of origin points and an equal sized array of direction vectors to "
 "trace along."
-msgstr ""
+msgstr "原点の配列と、それに沿ってトレースする等しいサイズの方向ベクトルの配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:7
@@ -6032,16 +6039,18 @@ msgid ""
 "intersection points, set retry=True to run a second pass over rays that "
 "returned no intersections, using the VTK ray_trace implementation."
 msgstr ""
+"レイトレースのベクトル化に使用されるembreeライブラリは、VTK実装が交差点を返すであろう交差点を返さないことが時々知られている。結果の一部の交点が欠落しているように見える場合は、"
+" retry=True を設定し、VTKの ray_trace 実装を使用して、交点を返さないレイに対して2番目のパスを実行します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:13
 msgid "Starting point for each trace."
-msgstr ""
+msgstr "各トレースの開始点。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:15
 msgid "direction vector for each trace."
-msgstr ""
+msgstr "各トレースの方向ベクトル。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:17
@@ -6053,7 +6062,7 @@ msgstr "最初のポイントの交差のみを返します。"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:19
 msgid "Will retry rays that return no intersections using the ray_trace"
-msgstr ""
+msgstr "ray_traceを使用して交差を返さない光線を再試行します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:22
@@ -6064,6 +6073,9 @@ msgid ""
 "array if no   intersections. * **intersection_cells** (*np.ndarray*) -- "
 "Indices of the intersection cells.  Empty array if no   intersections."
 msgstr ""
+"* **intersection_points** (*np.ndarray*) --交点の位置。交差がない場合は空の配列。 * "
+"**intersection_rays** (*np.ndarray*) --各交差ポイントの光線のインデックス。交差がない場合は空の配列。* "
+"**intersection_cells** (*np.ndarray*) --交差セルのインデックス。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:22
@@ -6080,6 +6092,7 @@ msgid ""
 "**intersection_rays** (*np.ndarray*) -- Indices of the ray for each "
 "intersection point. Empty array if no intersections."
 msgstr ""
+"**intersection_rays** (*np.ndarray*) -- 各交差ポイントの光線のインデックス。交差がない場合は空の配列。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.multi_ray_trace:26
@@ -6097,6 +6110,7 @@ msgid ""
 "0], [0, 1, 0] and [0, 0, 1], and a sphere with radius 0.5 centered at the "
 "origin"
 msgstr ""
+"原点からの方向 [1, 0, 0]、 [0, 1, 0] と [0, 0, 1] の光線と、原点を中心とする半径0.5の球との交差を計算します。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.PolyDataFilters.plot_boundaries:3
