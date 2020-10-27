@@ -16,6 +16,6 @@ $LOCAL_PYTHON_PATH/sphinx-build -T -b gettext ../pyvista/docs pot
 $LOCAL_PYTHON_PATH/sphinx-intl update-txconfig-resources -p pot -d .
 cat .tx/config
 $LOCAL_PYTHON_PATH/tx push -s --skip
-rm -Rf ja
-$LOCAL_PYTHON_PATH/tx pull -l ja
+rm -Rf ja,zh_CN
+$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN
 git checkout .tx/config
