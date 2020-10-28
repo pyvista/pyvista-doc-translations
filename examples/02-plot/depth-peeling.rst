@@ -193,7 +193,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  7.978 seconds)
+   **Total running time of the script:** ( 2 minutes  31.214 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:
