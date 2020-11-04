@@ -42,8 +42,8 @@ plane defined by a normal and origin
  .. code-block:: none
 
 
-    [(36.404716943411536, 42.5923804083449, 32.59238063266725),
-     (3.8123363107442856, 9.99999977567765, 0.0),
+    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
+     (0.0, 9.99999977567765, 3.8123363107442856),
      (0.0, 0.0, 1.0)]
 
 
@@ -77,8 +77,8 @@ Project that surface to a plane underneath the surface
  .. code-block:: none
 
 
-    [(36.404716943411536, 42.5923804083449, 32.59238063266725),
-     (3.8123363107442856, 9.99999977567765, 0.0),
+    [(34.913678491391046, 44.9136782670687, 35.691136920727594),
+     (0.0, 9.99999977567765, 0.7774584293365479),
      (0.0, 0.0, 1.0)]
 
 
@@ -86,7 +86,7 @@ Project that surface to a plane underneath the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.698 seconds)
+   **Total running time of the script:** ( 0 minutes  1.886 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_project-plane.py:

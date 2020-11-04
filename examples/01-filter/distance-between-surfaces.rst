@@ -33,9 +33,10 @@ the top mesh.
 
     # A helper to make a random surface
     def hill(seed):
-        mesh = pv.ParametricRandomHills(randomseed=seed,
+        mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50,
                                         hillamplitude=0.5)
-        mesh.rotate_y(80) # give the surfaces some tilt
+        mesh.rotate_y(-10) # give the surfaces some tilt
+    
         return mesh
 
     h0 = hill(1).elevation()
@@ -56,8 +57,8 @@ the top mesh.
 
 
     p = pv.Plotter()
-    p.add_mesh(h0)
-    p.add_mesh(h1)
+    p.add_mesh(h0, smooth_shading=True)
+    p.add_mesh(h1, smooth_shading=True)
     p.show_grid()
     p.show()
 
@@ -76,8 +77,8 @@ the top mesh.
  .. code-block:: none
 
 
-    [(36.117840063426655, 45.82828009517032, 38.397027206275624),
-     (0.28955990076065063, 9.999999932504316, 2.568747043609619),
+    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
+     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
      (0.0, 0.0, 1.0)]
 
 
@@ -91,7 +92,7 @@ Compute normals of lower surface
 .. code-block:: default
 
     h0n = h0.compute_normals(point_normals=True, cell_normals=False,
-                             auto_orient_normals=True, )
+                             auto_orient_normals=True)
 
 
 
@@ -133,7 +134,7 @@ vector.
  .. code-block:: none
 
 
-    0.9037663177545003
+    5.143716052454948
 
 
 
@@ -141,8 +142,8 @@ vector.
 .. code-block:: default
 
     p = pv.Plotter()
-    p.add_mesh(h0n, scalars="distances")
-    p.add_mesh(h1, color=True, opacity=0.75)
+    p.add_mesh(h0n, scalars="distances", smooth_shading=True)
+    p.add_mesh(h1, color=True, opacity=0.75, smooth_shading=True)
     p.show()
 
 
@@ -161,8 +162,8 @@ vector.
  .. code-block:: none
 
 
-    [(36.117840063426655, 45.82828009517032, 38.397027206275624),
-     (0.28955990076065063, 9.999999932504316, 2.568747043609619),
+    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
+     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
      (0.0, 0.0, 1.0)]
 
 
@@ -196,7 +197,7 @@ noticeably faster than a ray trace, especially for large surfaces.
  .. code-block:: none
 
 
-    1.3053554903518718
+    4.84363943805413
 
 
 
@@ -204,8 +205,8 @@ noticeably faster than a ray trace, especially for large surfaces.
 .. code-block:: default
 
     p = pv.Plotter()
-    p.add_mesh(h0, scalars="distances")
-    p.add_mesh(h1, color=True, opacity=0.75)
+    p.add_mesh(h0, scalars="distances", smooth_shading=True)
+    p.add_mesh(h1, color=True, opacity=0.75, smooth_shading=True)
     p.show()
 
 
@@ -222,8 +223,8 @@ noticeably faster than a ray trace, especially for large surfaces.
  .. code-block:: none
 
 
-    [(36.117840063426655, 45.82828009517032, 38.397027206275624),
-     (0.28955990076065063, 9.999999932504316, 2.568747043609619),
+    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
+     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
      (0.0, 0.0, 1.0)]
 
 
@@ -231,7 +232,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.184 seconds)
+   **Total running time of the script:** ( 0 minutes  6.567 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

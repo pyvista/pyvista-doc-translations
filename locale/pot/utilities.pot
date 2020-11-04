@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.27.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 01:03+0000\n"
+"POT-Creation-Date: 2020-11-04 04:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,6 +55,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricTorus:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.parametric_keywords:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.surface_from_para:0
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.read:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.save_meshio:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.lines_from_points:0
@@ -123,6 +124,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperEllipsoid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperToroid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricTorus:0
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.convert_array:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.get_vtk_type:0
@@ -156,6 +158,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperEllipsoid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperToroid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricTorus:0
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.convert_array:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.get_vtk_type:0
@@ -222,6 +225,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperEllipsoid:23
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricSuperToroid:33
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.ParametricTorus:13
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:15
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.read:19
 msgid "Examples"
 msgstr ""
@@ -952,7 +956,27 @@ msgid "Wrap any given VTK data object to its appropriate PyVista data object."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:3
-msgid "Other formats that are supported include: * 2D :class:`numpy.ndarray` of XYZ vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be scalars."
+msgid "Other formats that are supported include: * 2D :class:`numpy.ndarray` of XYZ vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be scalars. * 3d :class:`trimesh.Trimesh` mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:8
+msgid "Dataset to wrap."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:11
+msgid "**wrapped_dataset** -- The `pyvista` wrapped dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:16
+msgid "Wrap a numpy array representing a random point cloud"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:31
+msgid "Wrap a Trimesh object"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.wrap:48
+msgid "Wrap a VTK object"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.is_pyvista_dataset:1

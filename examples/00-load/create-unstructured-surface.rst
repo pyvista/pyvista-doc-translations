@@ -82,12 +82,19 @@ for available cell types and their descriptions.
     points = np.vstack((cell1, cell2))
 
     # create the unstructured grid directly from the numpy arrays
+    # The offset is optional and will be either calculated if not given (VTK version < 9),
+    # or is not necessary anymore (VTK version >= 9)
     grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
+
+    # For cells of fixed sizes (like the mentioned Hexahedra), it is also possible to use the
+    # simplified dictionary interface. This automatically calculates the cell array with types
+    # and offsets. Note that for mixing with additional cell types, just the appropriate key needs to be
+    # added to the dictionary.
+    cells_hex = np.arange(16).reshape([2, 8]) # = np.array([[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]])
+    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells_hex}, points)
 
     # plot the grid (and suppress the camera position output)
     _ = grid.plot(show_edges=True)
-
-
 
 
 
@@ -103,7 +110,7 @@ for available cell types and their descriptions.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:62: UserWarning: VTK 9 no longer accepts an offset array
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:64: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
 
 
@@ -208,6 +215,10 @@ Finally, create the unstructured grid and plot it
     # if you are not using VTK 9.0 or newer, you must use the offset array
     grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
 
+    # Alternate versions:
+    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells.reshape([-1, 9])[:, 1:]}, points)
+    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: np.delete(cells, np.arange(0, cells.size, 9))}, points)
+
     # plot the grid (and suppress the camera position output)
     _ = grid.plot(show_edges=True)
 
@@ -224,7 +235,7 @@ Finally, create the unstructured grid and plot it
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:145: UserWarning: VTK 9 no longer accepts an offset array
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:152: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
 
 
@@ -233,7 +244,7 @@ Finally, create the unstructured grid and plot it
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.182 seconds)
+   **Total running time of the script:** ( 0 minutes  1.219 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:

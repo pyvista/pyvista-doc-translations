@@ -66,8 +66,8 @@ Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
  .. code-block:: none
 
 
-    [(36.404716943411536, 42.5923804083449, 32.59238063266725),
-     (3.8123363107442856, 9.99999977567765, 0.0),
+    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
+     (0.0, 9.99999977567765, 3.8123363107442856),
      (0.0, 0.0, 1.0)]
 
 
@@ -115,7 +115,7 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.509 seconds)
+   **Total running time of the script:** ( 0 minutes  9.485 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:

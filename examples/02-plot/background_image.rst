@@ -39,7 +39,7 @@ Plot an airplane with the map of the earth in the background
     pl = pv.Plotter()
     actor = pl.add_mesh(examples.load_airplane(), smooth_shading=True)
     # pl.add_background_image(examples.mapfile)
-    pl.plot()
+    pl.show()
 
 
 
@@ -55,7 +55,6 @@ Plot an airplane with the map of the earth in the background
 
  .. code-block:: none
 
-    WARNING:root:`.plot()` is deprecated. Please use `.show()` instead.
 
     [(3140.593704331348, 2919.620300400684, 2375.7925778512454),
      (896.9955291748047, 676.0221252441406, 132.19440269470215),
@@ -114,7 +113,7 @@ Plot several earth related plots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.023 seconds)
+   **Total running time of the script:** ( 0 minutes  7.140 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_background_image.py:

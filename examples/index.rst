@@ -352,6 +352,27 @@ data.
    :hidden:
 
    /examples/00-load/terrain-mesh
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="- numpy arrays - trimesh.Trimesh meshes - VTK objects">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_wrap-trimesh_thumb.png
+     :alt: Wrapping Other Objects
+
+     :ref:`sphx_glr_examples_00-load_wrap-trimesh.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/wrap-trimesh
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
