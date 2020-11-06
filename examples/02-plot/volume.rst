@@ -464,7 +464,7 @@ Ah, much better. Let's now volume render that region of interest!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  58.349 seconds)
+   **Total running time of the script:** ( 1 minutes  6.441 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:
