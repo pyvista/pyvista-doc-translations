@@ -2,7 +2,7 @@
 set -x
 
 # sudo apt-get update && sudo apt-get install python-qt4 libgl1-mesa-glx
-sudo apt-get install python-qt4 libgl1-mesa-glx
+sudo apt-get install libgl1-mesa-glx
 sudo apt-get install -y xvfb
 export DISPLAY=:99.0
 export PYVISTA_OFF_SCREEN=True
