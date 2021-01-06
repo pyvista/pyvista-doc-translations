@@ -24,10 +24,6 @@ jobs:
         fetch-depth: 0
         submodules: true
         token: ${{ secrets.PERSONAL_ACCESSTOKEN }}
-    - name: Setup Python
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7
     - name: Setup SSH
       uses: MrSquaare/ssh-setup-action@v1
       with:
