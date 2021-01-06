@@ -49,7 +49,7 @@ jobs:
       run: |
         source /home/runner/work/.venv/bin/activate
         git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
-        source ./.ci/setup_headless_display.sh
+        source ./gl-ci-helpers/travis/setup_headless_display.sh
         rm -rf gl-ci-helpers
         pip install -U scipy
         pip install -U imageio-ffmpeg
