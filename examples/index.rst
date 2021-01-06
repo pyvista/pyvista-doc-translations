@@ -699,7 +699,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
  .. figure:: /examples/01-filter/images/thumb/sphx_glr_glyphs_thumb.png
-     :alt: Plotting Glyphs (Vectors)
+     :alt: Plotting Glyphs (Vectors or PolyData)
 
      :ref:`sphx_glr_examples_01-filter_glyphs.py`
 
@@ -712,6 +712,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
    :hidden:
 
    /examples/01-filter/glyphs
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Use parameters in a dataset to plot and orient glyphs/geometric objects. ">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_glyphs_table_thumb.png
+     :alt: Plotting Glyphs (PolyData)
+
+     :ref:`sphx_glr_examples_01-filter_glyphs_table.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/glyphs_table
 
 .. raw:: html
 
@@ -1627,7 +1648,199 @@ plotting routines to perform tasks like:
 
 
 
-.. _sphx_glr_examples_03-advanced:
+.. _sphx_glr_examples_03-widgets:
+
+.. _widgets:
+
+Widgets
+-------
+
+PyVista has several widgets that can be added to the rendering scene to control
+filters like clipping, slicing, and thresholding - specifically there are
+widgets to control the positions of boxes, planes, and lines or slider bars
+which can all be highly customized through the use of custom callback
+functions.
+
+Here we'll take a look at the various widgets, some helper methods that leverage
+those widgets to do common tasks, and demonstrate how to leverage the widgets
+for user defined tasks and processing routines.
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The box widget can be enabled and disabled by the pyvista.WidgetHelper.add_box_widget and pyvis...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_box-widget_thumb.png
+     :alt: Box Widget
+
+     :ref:`sphx_glr_examples_03-widgets_box-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/box-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Use a checkbox to turn on/off the visibility of meshes in a scene.">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_checkbox-widget_thumb.png
+     :alt: Checkbox Widget
+
+     :ref:`sphx_glr_examples_03-widgets_checkbox-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/checkbox-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The line widget can be enabled and disabled by the pyvista.WidgetHelper.add_line_widget and pyv...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_line-widget_thumb.png
+     :alt: Line Widget
+
+     :ref:`sphx_glr_examples_03-widgets_line-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/line-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Use a class based callback to track multiple slider widgets for updating a single mesh.">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_multi-slider-widget_thumb.png
+     :alt: Multiple Slider Widgets
+
+     :ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/multi-slider-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The plane widget can be enabled and disabled by the pyvista.WidgetHelper.add_plane_widget and p...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_plane-widget_thumb.png
+     :alt: Plane Widget
+
+     :ref:`sphx_glr_examples_03-widgets_plane-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/plane-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The slider widget can be enabled and disabled by the pyvista.WidgetHelper.add_slider_widget and...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_slider-bar-widget_thumb.png
+     :alt: Slider Bar Widget
+
+     :ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/slider-bar-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The sphere widget can be enabled and disabled by the pyvista.WidgetHelper.add_sphere_widget and...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_sphere-widget_thumb.png
+     :alt: Sphere Widget
+
+     :ref:`sphx_glr_examples_03-widgets_sphere-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/sphere-widget
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip=" A spline widget can be enabled and disabled by the pyvista.WidgetHelper.add_spline_widget and ...">
+
+.. only:: html
+
+ .. figure:: /examples/03-widgets/images/thumb/sphx_glr_spline-widget_thumb.png
+     :alt: Spline Widget
+
+     :ref:`sphx_glr_examples_03-widgets_spline-widget.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-widgets/spline-widget
+.. raw:: html
+
+    <div class="sphx-glr-clear"></div>
+
+
+
+.. _sphx_glr_examples_99-advanced:
 
 Advanced
 --------
@@ -1643,10 +1856,10 @@ developers.
 
 .. only:: html
 
- .. figure:: /examples/03-advanced/images/thumb/sphx_glr_antarctica-compare_thumb.png
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_antarctica-compare_thumb.png
      :alt: Compare Field Across Mesh Regions
 
-     :ref:`sphx_glr_examples_03-advanced_antarctica-compare.py`
+     :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`
 
 .. raw:: html
 
@@ -1656,7 +1869,7 @@ developers.
 .. toctree::
    :hidden:
 
-   /examples/03-advanced/antarctica-compare
+   /examples/99-advanced/antarctica-compare
 
 .. raw:: html
 
@@ -1664,10 +1877,10 @@ developers.
 
 .. only:: html
 
- .. figure:: /examples/03-advanced/images/thumb/sphx_glr_ray-trace_thumb.png
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace_thumb.png
      :alt: Ray Tracing
 
-     :ref:`sphx_glr_examples_03-advanced_ray-trace.py`
+     :ref:`sphx_glr_examples_99-advanced_ray-trace.py`
 
 .. raw:: html
 
@@ -1677,7 +1890,7 @@ developers.
 .. toctree::
    :hidden:
 
-   /examples/03-advanced/ray-trace
+   /examples/99-advanced/ray-trace
 
 .. raw:: html
 
@@ -1685,10 +1898,10 @@ developers.
 
 .. only:: html
 
- .. figure:: /examples/03-advanced/images/thumb/sphx_glr_warp-by-vector-eigenmodes_thumb.png
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_warp-by-vector-eigenmodes_thumb.png
      :alt: Displaying eigenmodes of vibration using ``warp_by_vector``
 
-     :ref:`sphx_glr_examples_03-advanced_warp-by-vector-eigenmodes.py`
+     :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py`
 
 .. raw:: html
 
@@ -1698,7 +1911,7 @@ developers.
 .. toctree::
    :hidden:
 
-   /examples/03-advanced/warp-by-vector-eigenmodes
+   /examples/99-advanced/warp-by-vector-eigenmodes
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
