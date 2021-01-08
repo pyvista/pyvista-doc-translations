@@ -118,7 +118,7 @@ Compute the cell quality. Note that there are many different quality measures
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.721 seconds)
+   **Total running time of the script:** ( 0 minutes  0.811 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_mesh-quality.py:

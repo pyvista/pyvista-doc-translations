@@ -102,7 +102,7 @@ The ``img`` array can be used to plot the screenshot in ``matplotlib``:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.738 seconds)
+   **Total running time of the script:** ( 0 minutes  0.842 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_screenshot.py:
