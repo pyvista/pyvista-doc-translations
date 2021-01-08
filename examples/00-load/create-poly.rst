@@ -93,7 +93,7 @@ the number of points of each face and the indices of the vertices which comprise
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.612 seconds)
+   **Total running time of the script:** ( 0 minutes  0.543 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-poly.py:

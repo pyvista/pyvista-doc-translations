@@ -5,22 +5,22 @@
 
 Computation times
 =================
-**00:23.439** total execution time for **examples_03-widgets** files:
+**00:19.791** total execution time for **examples_03-widgets** files:
 
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)                   | 00:12.073 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)                   | 00:09.900 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_plane-widget.py` (``plane-widget.py``)               | 00:05.238 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_plane-widget.py` (``plane-widget.py``)               | 00:04.600 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py` (``slider-bar-widget.py``)     | 00:02.528 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py` (``slider-bar-widget.py``)     | 00:02.104 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_sphere-widget.py` (``sphere-widget.py``)             | 00:01.172 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_sphere-widget.py` (``sphere-widget.py``)             | 00:01.043 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_line-widget.py` (``line-widget.py``)                 | 00:00.946 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_line-widget.py` (``line-widget.py``)                 | 00:00.834 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_checkbox-widget.py` (``checkbox-widget.py``)         | 00:00.595 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_checkbox-widget.py` (``checkbox-widget.py``)         | 00:00.518 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_spline-widget.py` (``spline-widget.py``)             | 00:00.543 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_spline-widget.py` (``spline-widget.py``)             | 00:00.484 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py` (``multi-slider-widget.py``) | 00:00.345 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py` (``multi-slider-widget.py``) | 00:00.307 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
