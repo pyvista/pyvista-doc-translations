@@ -76,8 +76,8 @@ Wrap a point cloud composed of random points from numpy
  .. code-block:: none
 
 
-    [(0.4928653329409402, -2.6748292254650976, 0.5123085716019378),
-     (0.4928653329409402, 0.44595197858166424, 0.5123085716019378),
+    [(0.5028080565222082, -2.7642879475687696, 0.5050120539577515),
+     (0.5028080565222082, 0.5092324152701633, 0.5050120539577515),
      (0.0, 0.0, 1.0)]
 
 
@@ -107,7 +107,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7fece2cdaee8)
+    PolyData (0x7f50ae78fee8)
       N Cells:      1
       N Points:     3
       X Bounds:     0.000e+00, 0.000e+00
@@ -150,7 +150,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7fece2c96168)
+    PolyData (0x7f50ae74b168)
       N Cells:      1
       N Points:     1
       X Bounds:     1.000e+00, 1.000e+00
@@ -165,7 +165,7 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.982 seconds)
+   **Total running time of the script:** ( 0 minutes  0.734 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:

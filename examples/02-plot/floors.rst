@@ -66,7 +66,7 @@ Add a floor/wall at the boundary of the rendering scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.942 seconds)
+   **Total running time of the script:** ( 0 minutes  2.793 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_floors.py:

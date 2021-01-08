@@ -345,7 +345,7 @@ Example VTK file
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.878 seconds)
+   **Total running time of the script:** ( 0 minutes  4.629 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:

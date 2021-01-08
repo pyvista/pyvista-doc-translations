@@ -118,7 +118,7 @@ sequence, and in this case has to be the same length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.412 seconds)
+   **Total running time of the script:** ( 0 minutes  1.270 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:

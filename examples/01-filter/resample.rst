@@ -196,7 +196,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.670 seconds)
+   **Total running time of the script:** ( 0 minutes  9.759 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:
