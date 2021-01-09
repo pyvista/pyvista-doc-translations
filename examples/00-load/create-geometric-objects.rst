@@ -124,7 +124,7 @@ Now let's plot them all in one window
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.831 seconds)
+   **Total running time of the script:** ( 0 minutes  1.230 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-geometric-objects.py:

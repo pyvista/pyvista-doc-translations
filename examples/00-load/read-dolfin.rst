@@ -141,7 +141,7 @@ Now we can do stuff with that Dolfin mesh!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.198 seconds)
+   **Total running time of the script:** ( 0 minutes  0.965 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-dolfin.py:
