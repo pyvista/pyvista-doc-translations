@@ -446,7 +446,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.324 seconds)
+   **Total running time of the script:** ( 0 minutes  17.438 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:
