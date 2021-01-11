@@ -138,7 +138,7 @@ with ``.show(auto_close=False)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  56.572 seconds)
+   **Total running time of the script:** ( 3 minutes  2.914 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_orbit.py:

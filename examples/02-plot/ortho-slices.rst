@@ -161,7 +161,7 @@ and ``z`` arguments.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.220 seconds)
+   **Total running time of the script:** ( 0 minutes  5.637 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ortho-slices.py:
