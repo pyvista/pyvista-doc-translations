@@ -223,7 +223,7 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.511 seconds)
+   **Total running time of the script:** ( 0 minutes  8.948 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:
