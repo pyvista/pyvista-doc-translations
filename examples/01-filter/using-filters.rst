@@ -248,7 +248,7 @@ And to view this filtered data, simply call the ``plot`` method
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.372 seconds)
+   **Total running time of the script:** ( 0 minutes  2.682 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_using-filters.py:
