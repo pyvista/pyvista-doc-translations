@@ -47,7 +47,7 @@ scalar arrays for those points.
 .. GENERATED FROM PYTHON SOURCE LINES 18-23
 
 Point clouds are generally constructed in the :class:`pyvista.PolyData` class
-and can easiy have scalar/vector data arrays associated with the point
+and can easily have scalar/vector data arrays associated with the point
 cloud. In this example, we'll work a bit backwards using a point cloud that
 that is available from our ``examples`` module. This however is no different
 than creating a PyVista mesh with your own NumPy arrays of vertice locations.
@@ -82,11 +82,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.80949375e+05, 4.40011570e+06, 1.77319995e+03],
-                     [4.81010275e+05, 4.40020400e+06, 1.75866003e+03],
-                     [4.81041475e+05, 4.40022120e+06, 1.75792004e+03],
-                     [4.80979875e+05, 4.40016100e+06, 1.76053003e+03],
-                     [4.81042075e+05, 4.40016610e+06, 1.76025000e+03]])
+    pyvista_ndarray([[4.81097175e+05, 4.40015870e+06, 1.75917004e+03],
+                     [4.81121875e+05, 4.40015460e+06, 1.75851001e+03],
+                     [4.81042375e+05, 4.40016700e+06, 1.76017004e+03],
+                     [4.80991275e+05, 4.40012530e+06, 1.76126001e+03],
+                     [4.81043875e+05, 4.40023230e+06, 1.75744995e+03]])
 
 
 
@@ -117,7 +117,7 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <tr><td>N Points</td><td>67841</td></tr>
     <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
     <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-    <tr><td>Z Bounds</td><td>1.754e+03, 1.787e+03</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
 
@@ -178,8 +178,8 @@ depth perception with point clouds (learn more in :ref:`ref_edl`).
  .. code-block:: none
 
 
-    [(481322.34016867896, 4400455.465168381, 2064.305134522179),
-     (481028.37499997707, 4400161.49999968, 1770.3399658203125),
+    [(481322.05193671316, 4400455.176936416, 2062.9419513845432),
+     (481028.37499997707, 4400161.49999968, 1769.2650146484375),
      (0.0, 0.0, 1.0)]
 
 
@@ -240,8 +240,8 @@ we specify to render every point as its own sphere.
  .. code-block:: none
 
 
-    [(481322.34016867896, 4400455.465168381, 2064.305134522179),
-     (481028.37499997707, 4400161.49999968, 1770.3399658203125),
+    [(481322.05193671316, 4400455.176936416, 2062.9419513845432),
+     (481028.37499997707, 4400161.49999968, 1769.2650146484375),
      (0.0, 0.0, 1.0)]
 
 
@@ -286,11 +286,11 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ 0.75572762, -0.22966002,  0.61329605],
-                     [-0.89559947, -0.26318488, -0.35865765],
-                     [ 0.08712709,  0.72130829,  0.68711224],
-                     [-0.21099792, -0.19202402,  0.9584397 ],
-                     [-0.89031249, -0.32414198,  0.31980565]])
+    pyvista_ndarray([[ 0.93818378,  0.27739403,  0.20703562],
+                     [-0.48495236,  0.56581674,  0.66683778],
+                     [ 0.38753582,  0.71283261,  0.58453885],
+                     [-0.76479719, -0.25380161,  0.59217397],
+                     [ 0.37905749, -0.76164202,  0.52556338]])
 
 
 
@@ -344,8 +344,8 @@ Now we can make arrows using those vectors using the glyph filter
  .. code-block:: none
 
 
-    [(2.865877166252799, 2.8714088088387917, 2.881619792293973),
-     (0.4992615431547165, 0.5047931857407093, 0.5150041691958904),
+    [(2.871723435261436, 2.8508428366865592, 2.873595501669832),
+     (0.5094837956130505, 0.4886031970381737, 0.5113558620214462),
      (0.0, 0.0, 1.0)]
 
 
@@ -353,7 +353,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.768 seconds)
+   **Total running time of the script:** ( 0 minutes  5.349 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

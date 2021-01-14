@@ -29,7 +29,7 @@ in hydrological modelling (see
 and
 `ParFlow <https://parflow.org>`_).
 
-In this example, we domonstrate a simple way to make a 3D grid/mesh that
+In this example, we demonstrate a simple way to make a 3D grid/mesh that
 follows a given topographic surface. In this example, it is important to note
 that the given digital elevation model (DEM) is structured (gridded and not
 triangulated): this is common for DEMs.
@@ -290,7 +290,7 @@ Once we have those structured coordinates, we can create a
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.591 seconds)
+   **Total running time of the script:** ( 0 minutes  2.954 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:

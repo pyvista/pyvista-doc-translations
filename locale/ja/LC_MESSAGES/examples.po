@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-13 01:21+0000\n"
+"POT-Creation-Date: 2021-01-14 01:26+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -39,10 +39,9 @@ msgstr "VTKの \"Hello, world!\""
 
 #: ../../pyvista/docs/examples/00-load/create-geometric-objects.rst:43
 msgid ""
-"This runs through several of the available geomoetric objects available in "
+"This runs through several of the available geometric objects available in "
 "VTK which PyVista provides simple convenience methods for generating."
 msgstr ""
-"これは，VTKで利用可能ないくつかのジオメトリックオブジェクトを介して実行され，PyVistaは生成するための簡単で便利なメソッドを提供します．"
 
 #: ../../pyvista/docs/examples/00-load/create-geometric-objects.rst:46
 msgid "Let's run through creating a few geometric objects!"
@@ -357,7 +356,7 @@ msgid "Out:"
 msgstr "出力:"
 
 #: ../../pyvista/docs/examples/00-load/create-geometric-objects.rst:127
-msgid "**Total running time of the script:** ( 0 minutes  4.607 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  3.350 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-geometric-objects.rst:142
@@ -583,8 +582,8 @@ msgid "Extruded Half Arc"
 msgstr "押し出し半円弧"
 
 #: ../../pyvista/docs/examples/00-load/create-parametric-geometric-objects.rst:895
-msgid "**Total running time of the script:** ( 0 minutes  16.838 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  14.353 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  14.353 seconds)"
 
 #: ../../pyvista/docs/examples/00-load/create-parametric-geometric-objects.rst:910
 msgid ""
@@ -623,15 +622,12 @@ msgstr "頂点のポイントクラウドとそれらのポイントのスカラ
 #: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:49
 msgid ""
 "Point clouds are generally constructed in the :class:`pyvista.PolyData` "
-"class and can easiy have scalar/vector data arrays associated with the point"
-" cloud. In this example, we'll work a bit backwards using a point cloud that"
-" that is available from our ``examples`` module. This however is no "
+"class and can easily have scalar/vector data arrays associated with the "
+"point cloud. In this example, we'll work a bit backwards using a point cloud"
+" that that is available from our ``examples`` module. This however is no "
 "different than creating a PyVista mesh with your own NumPy arrays of vertice"
 " locations."
 msgstr ""
-"点群は一般に :class:`pyvista.PolyData` "
-"クラスで構成され，点群に関連付けられたスカラー/ベクトルデータ配列を簡単に持つことができます．この例では， ``examples`` "
-"モジュールから使用可能な点群を使用して，少し逆方向に作業します．ただし，これは独自の頂点位置のNumPy配列を使用してPyVistaメッシュを作成するのと同じです．"
 
 #: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:95
 msgid ""
@@ -639,6 +635,26 @@ msgid ""
 "data or your own project, creating a PyVista mesh of those points is simply:"
 msgstr ""
 "サンプルデータまたは独自のプロジェクトからポイント/頂点のNumPy配列を取得したので，これらのポイントのPyVistaメッシュを作成するのは簡単です．"
+
+#: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:110
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>67841</td></tr>\n"
+"<tr><td>N Points</td><td>67841</td></tr>\n"
+"<tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>\n"
+"<tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:131
 msgid "And we can even do a sanity check"
@@ -701,7 +717,7 @@ msgstr ""
 "今度は，グリフフィルター(詳細は :ref:`glyph_example` を参照)を使って，これらのベクトルを使って矢印を作ることができます．"
 
 #: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:356
-msgid "**Total running time of the script:** ( 0 minutes  6.768 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.349 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-point-cloud.rst:371
@@ -748,8 +764,8 @@ msgstr ""
 "PolyDataオブジェクトは，多数の配列からすばやく作成できます．頂点配列にはメッシュ内の点の位置が含まれ，面配列には各面の点の数とその面を構成する頂点のインデックスが含まれます．"
 
 #: ../../pyvista/docs/examples/00-load/create-poly.rst:96
-msgid "**Total running time of the script:** ( 0 minutes  0.686 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  0.686 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.577 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  0.577 seconds)"
 
 #: ../../pyvista/docs/examples/00-load/create-poly.rst:111
 msgid ""
@@ -790,6 +806,26 @@ msgid ""
 "segments they make."
 msgstr "ここで， :class:`pyvista.PolyData` メッシュ上にラインセルを作成できる関数を作成しましょう．"
 
+#: ../../pyvista/docs/examples/00-load/create-spline.rst:115
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>99</td></tr>\n"
+"<tr><td>N Points</td><td>100</td></tr>\n"
+"<tr><td>X Bounds</td><td>-4.084e+00, 4.084e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-3.281e+00, 5.000e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/create-spline.rst:166
 msgid ""
 "That tube has sharp edges at each line segment. This can be mitigated by "
@@ -821,7 +857,7 @@ msgstr ""
 "フィルタを見てください．"
 
 #: ../../pyvista/docs/examples/00-load/create-spline.rst:339
-msgid "**Total running time of the script:** ( 0 minutes  3.337 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.896 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-spline.rst:354
@@ -966,7 +1002,7 @@ msgid "Let's start with a simple example by extending the wave mesh to 3D"
 msgstr "まず簡単な例として，ウェーブメッシュを3 Dに拡張します．"
 
 #: ../../pyvista/docs/examples/00-load/create-structured-surface.rst:396
-msgid "**Total running time of the script:** ( 0 minutes  4.328 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  3.668 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-structured-surface.rst:411
@@ -1072,7 +1108,7 @@ msgid ""
 msgstr "これでプロットできます!PyVistaメッシュであり，PyVistaでは無限の可能性があるため，何かを処理したり，実行したりできます．"
 
 #: ../../pyvista/docs/examples/00-load/create-surface-draped.rst:217
-msgid "**Total running time of the script:** ( 0 minutes  8.563 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  7.787 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-surface-draped.rst:232
@@ -1109,8 +1145,8 @@ msgid ""
 msgstr "一連のポイントからDelaunay三角形分割を介してサーフェスを作成します．"
 
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:45
-msgid "Simple Traingulations"
-msgstr "単純な軌道"
+msgid "Simple Triangulations"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:47
 msgid "First, create some points for the surface."
@@ -1135,6 +1171,26 @@ msgstr ""
 msgid "Masked Triangulations"
 msgstr "マスクされた三角形"
 
+#: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:183
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>100</td></tr>\n"
+"<tr><td>N Points</td><td>100</td></tr>\n"
+"<tr><td>X Bounds</td><td>3.188e-02, 9.260e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>9.289e-03, 9.272e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:204
 msgid "Run the triangulation on these points"
 msgstr "これらの点で三角形分割を実行します"
@@ -1142,10 +1198,8 @@ msgstr "これらの点で三角形分割を実行します"
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:237
 msgid ""
 "Note that some of the outer edges are unconstrained and the triangulation "
-"added unwanted triangles. We cn mitigate that with the ``alpha`` parameter."
+"added unwanted triangles. We can mitigate that with the ``alpha`` parameter."
 msgstr ""
-"外側のエッジの一部は拘束されておらず，三角形分割によって不要な三角形が追加されていることに注意してください．私たちは ``alpha`` "
-"パラメータでそれを緩和します．"
 
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:271
 msgid ""
@@ -1154,7 +1208,7 @@ msgid ""
 msgstr "また， ``edge_source`` パラメータを使用して，三角形分割中に無視するポリゴンを追加することもできます．"
 
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:319
-msgid "**Total running time of the script:** ( 0 minutes  3.192 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.757 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-tri-surface.rst:334
@@ -1217,8 +1271,8 @@ msgstr ""
 "のポイントデータにNumPy配列を追加することもできます．初期化時にグリッドの寸法を設定する際には，微妙な違いに注意してください．"
 
 #: ../../pyvista/docs/examples/00-load/create-uniform-grid.rst:158
-msgid "**Total running time of the script:** ( 0 minutes  1.785 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  1.785 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.554 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-uniform-grid.rst:173
 msgid ""
@@ -1280,8 +1334,8 @@ msgid "Finally, create the unstructured grid and plot it"
 msgstr "最後に，非構造化グリッドを作成してプロットします．"
 
 #: ../../pyvista/docs/examples/00-load/create-unstructured-surface.rst:248
-msgid "**Total running time of the script:** ( 0 minutes  1.489 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  1.489 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.260 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/create-unstructured-surface.rst:263
 msgid ""
@@ -1337,13 +1391,33 @@ msgstr ""
 "これで，XML Dolfinメッシュをローカルに保存できました．このファイル名は，PyVistaの :func:`pyvista.read` "
 "メソッドに直接渡して，PyVistaメッシュに読み込むことができます．"
 
+#: ../../pyvista/docs/examples/00-load/read-dolfin.rst:91
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>5400</td></tr>\n"
+"<tr><td>N Points</td><td>2868</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/read-dolfin.rst:112
 msgid "Now we can do stuff with that Dolfin mesh!"
 msgstr "Dolfinメッシュで何かできるようになりました!"
 
 #: ../../pyvista/docs/examples/00-load/read-dolfin.rst:144
-msgid "**Total running time of the script:** ( 0 minutes  1.681 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  1.681 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.126 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/read-dolfin.rst:159
 msgid ""
@@ -1422,11 +1496,9 @@ msgstr "他のファイルタイプのロードも同じくらい簡単です．
 
 #: ../../pyvista/docs/examples/00-load/read-file.rst:211
 msgid ""
-"Here are a few other examples - siply replace ``examples.download_*`` in the"
-" examples below with ``pyvista.read('path/to/you/file.ext')``"
+"Here are a few other examples - simply replace ``examples.download_*`` in "
+"the examples below with ``pyvista.read('path/to/you/file.ext')``"
 msgstr ""
-"その他の例をいくつか紹介します -  ``examples.download_*`` を "
-"``pyvista.read('path/to/you/file.ext')`` で置き換えています．"
 
 #: ../../pyvista/docs/examples/00-load/read-file.rst:216
 msgid "Example STL file:"
@@ -1445,7 +1517,7 @@ msgid "Example VTK file"
 msgstr "VTKファイルの例:"
 
 #: ../../pyvista/docs/examples/00-load/read-file.rst:348
-msgid "**Total running time of the script:** ( 0 minutes  6.665 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  4.658 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/read-file.rst:363
@@ -1476,12 +1548,10 @@ msgstr "イメージファイル(JPEG，TIFF，PNGなど)の読み込みとプ�
 
 #: ../../pyvista/docs/examples/00-load/read-image.rst:42
 msgid ""
-"PyVista fully supportes reading images into their own spatially referenced "
+"PyVista fully supports reading images into their own spatially referenced "
 "data objects (this example) as well as supports texture mapping of images "
 "onto datasets (see :ref:`ref_texture_example`)."
 msgstr ""
-"PyVistaでは，イメージを空間的に参照されるデータオブジェクト(この例)に読み込むことが完全にサポートされており，イメージをデータセット( "
-":ref:`ref_texture_example` を参照)にテクスチャマッピングすることもサポートされています．"
 
 #: ../../pyvista/docs/examples/00-load/read-image.rst:46
 msgid ""
@@ -1503,7 +1573,7 @@ msgstr ""
 "Colorが使用され，マップされないことを確認するために，プロット時に `rgb` オプションを使用して指定することが重要です．"
 
 #: ../../pyvista/docs/examples/00-load/read-image.rst:132
-msgid "**Total running time of the script:** ( 0 minutes  7.538 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  6.090 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/read-image.rst:147
@@ -1543,6 +1613,37 @@ msgstr ""
 "いくつかのファイルに分割された :class:`pyvista.UnstructuredGrid` "
 "を含むサンプルデータセットをダウンロードしてみましょう．"
 
+#: ../../pyvista/docs/examples/00-load/read-parallel.rst:61
+#: ../../pyvista/docs/examples/00-load/read-parallel.rst:162
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>39353</td></tr>\n"
+"<tr><td>N Points</td><td>48823</td></tr>\n"
+"<tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>5</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>\n"
+"<tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>\n"
+"<tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/read-parallel.rst:92
 msgid ""
 "The above code downloaded a dataset containing a set of parallel files for a"
@@ -1574,8 +1675,8 @@ msgid "Plot the pieced together mesh"
 msgstr "つなぎ合わせたメッシュをプロットします"
 
 #: ../../pyvista/docs/examples/00-load/read-parallel.rst:252
-msgid "**Total running time of the script:** ( 0 minutes  2.619 seconds)"
-msgstr "**スクリプトの合計実行時間:** ( 0 分  2.619 秒)"
+msgid "**Total running time of the script:** ( 0 minutes  2.034 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/read-parallel.rst:267
 msgid ""
@@ -1600,7 +1701,7 @@ msgid "Computation times"
 msgstr "計算時間"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:8
-msgid "**01:14.584** total execution time for **examples_00-load** files:"
+msgid "**01:01.153** total execution time for **examples_00-load** files:"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:11
@@ -1612,8 +1713,8 @@ msgstr ""
 "(``create-parametric-geometric-objects.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:11
-msgid "00:16.838"
-msgstr ""
+msgid "00:14.353"
+msgstr "00:14.353"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:11
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:13
@@ -1712,7 +1813,7 @@ msgstr ""
 "draped.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:13
-msgid "00:08.563"
+msgid "00:07.787"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:15
@@ -1720,7 +1821,7 @@ msgid ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:15
-msgid "00:07.538"
+msgid "00:06.090"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:17
@@ -1732,7 +1833,7 @@ msgstr ""
 "cloud.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:17
-msgid "00:06.768"
+msgid "00:05.349"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:19
@@ -1740,22 +1841,10 @@ msgid ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:19
-msgid "00:06.665"
+msgid "00:04.658"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:21
-msgid ""
-":ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-"
-"geometric-objects.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-"
-"geometric-objects.py``)"
-
-#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:21
-msgid "00:04.607"
-msgstr ""
-
-#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:23
 msgid ""
 ":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
 "structured-surface.py``)"
@@ -1763,8 +1852,20 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
 "structured-surface.py``)"
 
+#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:21
+msgid "00:03.668"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:23
-msgid "00:04.328"
+msgid ""
+":ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-"
+"geometric-objects.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-"
+"geometric-objects.py``)"
+
+#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:23
+msgid "00:03.350"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:25
@@ -1773,8 +1874,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_terrain-mesh.py` (``terrain-mesh.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:25
-msgid "00:03.591"
-msgstr ""
+msgid "00:02.954"
+msgstr "00:02.954"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:27
 msgid ""
@@ -1783,7 +1884,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:27
-msgid "00:03.337"
+msgid "00:02.896"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:29
@@ -1795,7 +1896,7 @@ msgstr ""
 "surface.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:29
-msgid "00:03.192"
+msgid "00:02.757"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:31
@@ -1805,8 +1906,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:31
-msgid "00:02.619"
-msgstr "00:02.619"
+msgid "00:02.034"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:33
 msgid ""
@@ -1817,28 +1918,28 @@ msgstr ""
 "grid.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:33
-msgid "00:01.785"
-msgstr "00:01.785"
+msgid "00:01.554"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:35
+msgid ""
+":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
+"unstructured-surface.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
+"unstructured-surface.py``)"
+
+#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:35
+msgid "00:01.260"
+msgstr ""
+
+#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:37
 msgid ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
 
-#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:35
-msgid "00:01.681"
-msgstr "00:01.681"
-
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:37
-msgid ""
-":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
-"unstructured-surface.py``)"
+msgid "00:01.126"
 msgstr ""
-":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
-"unstructured-surface.py``)"
-
-#: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:37
-msgid "00:01.489"
-msgstr "00:01.489"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:39
 msgid ":ref:`sphx_glr_examples_00-load_wrap-trimesh.py` (``wrap-trimesh.py``)"
@@ -1846,7 +1947,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_wrap-trimesh.py` (``wrap-trimesh.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:39
-msgid "00:00.900"
+msgid "00:00.740"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:41
@@ -1854,8 +1955,8 @@ msgid ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
 
 #: ../../pyvista/docs/examples/00-load/sg_execution_times.rst:41
-msgid "00:00.686"
-msgstr "00:00.686"
+msgid "00:00.577"
+msgstr "00:00.577"
 
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:13
 msgid ""
@@ -1886,17 +1987,43 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:32
 msgid ""
-"In this example, we domonstrate a simple way to make a 3D grid/mesh that "
+"In this example, we demonstrate a simple way to make a 3D grid/mesh that "
 "follows a given topographic surface. In this example, it is important to "
 "note that the given digital elevation model (DEM) is structured (gridded and"
 " not triangulated): this is common for DEMs."
 msgstr ""
-"この例では，特定の地形サーフェスに従う3 Dグリッド/メッシュを作成する簡単な方法を適用します．この例では，指定した数値標高モデル (DEM) "
-"が構造化されていることに注意してください(グリッド付きで三角形でない): これはDEMでは一般的です．"
 
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:56
 msgid "Download a gridded topography surface (DEM)"
 msgstr "グリッド地形サーフェス (DEM) をダウンロードします"
+
+#: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:70
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1677401</td></tr>\n"
+"<tr><td>N Points</td><td>1680000</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.640e+06, 5.658e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
+"<tr><td>Dimensions</td><td>1400, 1200, 1</td></tr>\n"
+"<tr><td>Spacing</td><td>1.500e+01, 1.500e+01, 0.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:99
 msgid ""
@@ -1915,6 +2042,33 @@ msgid ""
 "make a 3D surface of that DEM:"
 msgstr "メッシュに沿って地表の関心領域ができたので，DEMの3 Dサーフェスを作成します．"
 
+#: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:150
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>StructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>6400</td></tr>\n"
+"<tr><td>N Points</td><td>6561</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.818e+06, 1.824e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.646e+06, 5.652e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.441e+03, 2.769e+03</td></tr>\n"
+"<tr><td>Dimensions</td><td>81, 81, 1</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>1.441e+03</td><td>2.769e+03</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:206
 msgid ""
 "And now we have a 3D structured surface of the terrain! We can now extend "
@@ -1929,9 +2083,36 @@ msgstr ""
 "Dメッシュに拡張して，グリッドに沿った地形を形成できるようになりました．これを行うには，まずz方向(これらは地表から始まり)のセル間隔を設定します．次に，地表メッシュのXYZ構造化座標を繰り返し，各ZレベルをZセル間隔だけ下げます．これらの構造化された座標が得られたら，"
 " :class:`pyvista.StructuredGrid` を作成できます．"
 
-#: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:293
-msgid "**Total running time of the script:** ( 0 minutes  3.591 seconds)"
+#: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:234
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>StructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>70400</td></tr>\n"
+"<tr><td>N Points</td><td>78732</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.818e+06, 1.824e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.646e+06, 5.652e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>9.364e+02, 2.744e+03</td></tr>\n"
+"<tr><td>Dimensions</td><td>81, 81, 12</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>Elevation</b></td><td>Points</td><td>float64</td><td>1</td><td>9.364e+02</td><td>2.744e+03</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 msgstr ""
+
+#: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:293
+msgid "**Total running time of the script:** ( 0 minutes  2.954 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  2.954 seconds)"
 
 #: ../../pyvista/docs/examples/00-load/terrain-mesh.rst:308
 msgid ""
@@ -1998,7 +2179,7 @@ msgid "Wrap an instance of vtk.vtkPolyData"
 msgstr "​vtk.vtkPolyData のインスタンスをラップする"
 
 #: ../../pyvista/docs/examples/00-load/wrap-trimesh.rst:168
-msgid "**Total running time of the script:** ( 0 minutes  0.900 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.740 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/00-load/wrap-trimesh.rst:183
@@ -2144,7 +2325,7 @@ msgid "Order of operations does not matter for boolean union."
 msgstr "Order of operations does not matter for boolean union."
 
 #: ../../pyvista/docs/examples/01-filter/boolean-operations.rst:290
-msgid "**Total running time of the script:** ( 0 minutes  13.881 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  11.811 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/boolean-operations.rst:305
@@ -2192,7 +2373,7 @@ msgid "We can also do this for full 3D meshes."
 msgstr "これは，フル3 Dメッシュに対しても実行できます．"
 
 #: ../../pyvista/docs/examples/01-filter/cell-centers.rst:163
-msgid "**Total running time of the script:** ( 0 minutes  2.505 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.566 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/cell-centers.rst:178
@@ -2264,8 +2445,8 @@ msgid "Run the box clipping algorithm"
 msgstr "ボックスクリッピングアルゴリズムを実行します"
 
 #: ../../pyvista/docs/examples/01-filter/clipping.rst:220
-msgid "**Total running time of the script:** ( 0 minutes  2.898 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  2.898 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.564 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/clipping.rst:235
 msgid ":download:`Download Python source code: clipping.py <clipping.py>`"
@@ -2338,7 +2519,7 @@ msgstr ""
 "を生成し，サーフェスを使用してグリッドをクリップして，サーフェスの閉じた3 Dモデルを作成します．"
 
 #: ../../pyvista/docs/examples/01-filter/clipping-with-surface.rst:259
-msgid "**Total running time of the script:** ( 1 minutes  4.041 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  56.602 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/clipping-with-surface.rst:274
@@ -2405,7 +2586,7 @@ msgstr ""
 "面/セル法線を使用して，一般的な方向を向いているメッシュのすべての面を抽出することもできます．次のスニペットでは，メッシュを取得し，そのセル面に沿って法線を計算し，上向きの面を抽出します．"
 
 #: ../../pyvista/docs/examples/01-filter/compute-normals.rst:173
-msgid "**Total running time of the script:** ( 0 minutes  19.238 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  16.653 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/compute-normals.rst:188
@@ -2542,7 +2723,7 @@ msgid "And visualize all the different volumes:"
 msgstr "そして，あらゆるボリュームを視覚化します．"
 
 #: ../../pyvista/docs/examples/01-filter/compute-volume.rst:449
-msgid "**Total running time of the script:** ( 0 minutes  19.158 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  16.820 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/compute-volume.rst:464
@@ -2604,8 +2785,8 @@ msgstr ""
 "フィルタ(どちらも同じ)を使用することで，そのメッシュ内の最大接続等値面を抽出できます．"
 
 #: ../../pyvista/docs/examples/01-filter/connectivity.rst:130
-msgid "**Total running time of the script:** ( 0 minutes  2.759 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  2.759 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.478 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  2.478 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/connectivity.rst:145
 msgid ""
@@ -2640,11 +2821,9 @@ msgstr "サーフェスまたはボリュームのスカラー用にアイソラ
 
 #: ../../pyvista/docs/examples/01-filter/contouring.rst:26
 msgid ""
-"3D meshes can have 2D iso-surfaces of a scalarr field extracted and 2D "
-"surface meshes can have 1D iso-lines of a scalar field eextracted."
+"3D meshes can have 2D iso-surfaces of a scalar field extracted and 2D "
+"surface meshes can have 1D iso-lines of a scalar field extracted."
 msgstr ""
-"3 Dメッシュはスカラーフィールドの2 D等値面を抽出することができ，2 Dサーフェスメッシュはスカラーフィールドの1 "
-"D等値線を抽出することができます．"
 
 #: ../../pyvista/docs/examples/01-filter/contouring.rst:49
 msgid "Iso-Lines"
@@ -2663,7 +2842,7 @@ msgid "Let's extract 2D iso-surfaces of a scalar field from a 3D mesh."
 msgstr "3 Dメッシュからスカラーフィールドの2 D等値面を抽出してみましょう．"
 
 #: ../../pyvista/docs/examples/01-filter/contouring.rst:134
-msgid "**Total running time of the script:** ( 0 minutes  6.204 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.411 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/contouring.rst:149
@@ -2706,8 +2885,8 @@ msgid "Side by side comparison:"
 msgstr "並べて比較:"
 
 #: ../../pyvista/docs/examples/01-filter/decimate.rst:203
-msgid "**Total running time of the script:** ( 0 minutes  3.289 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  2.872 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  2.872 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/decimate.rst:218
 msgid ":download:`Download Python source code: decimate.py <decimate.py>`"
@@ -2746,10 +2925,9 @@ msgid ""
 "methods. First, we will demo a method where we compute the normals of the "
 "bottom surface, and then project a ray to the top surface to compute the "
 "distance along the surface normals. Second, we will use a KDTree to compute "
-"the distance from eevery point in the bottom mesh to it's closest point in "
+"the distance from every point in the bottom mesh to it's closest point in "
 "the top mesh."
 msgstr ""
-"2つのサーフェス間の厚みは，いくつかの異なる方法を使用して計算できます．最初に，底面サーフェスの法線を計算し，次に上面サーフェスに光線を投影してサーフェス法線に沿った距離を計算する方法をデモします．次に，KDTreeを使用して，下部メッシュの各ポイントから上部メッシュの最も近いポイントまでの距離を計算します．"
 
 #: ../../pyvista/docs/examples/01-filter/distance-between-surfaces.rst:100
 msgid "Ray Tracing Distance"
@@ -2761,9 +2939,9 @@ msgstr "下部サーフェスの法線を計算"
 
 #: ../../pyvista/docs/examples/01-filter/distance-between-surfaces.rst:120
 msgid ""
-"Travel along noramals to the other surface and compute the thickness on each"
-" vector."
-msgstr "法線に沿って他のサーフェスに移動し，各ベクトルの厚みを計算します．"
+"Travel along normals to the other surface and compute the thickness on each "
+"vector."
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/distance-between-surfaces.rst:192
 msgid "Nearest Neighbor Distance"
@@ -2779,7 +2957,7 @@ msgstr ""
 "KDTreeを使用して，上部サーフェスの各ポイントと下部サーフェスの最も近い隣接ポイント間の距離を比較することもできます．これはサーフェス間の正確な距離ではありませんが，特に大きなサーフェスでは，レイトレースよりも著しく高速になります．"
 
 #: ../../pyvista/docs/examples/01-filter/distance-between-surfaces.rst:257
-msgid "**Total running time of the script:** ( 0 minutes  7.187 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  6.285 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/distance-between-surfaces.rst:272
@@ -2820,6 +2998,32 @@ msgstr "別のメッシュの閉じたサーフェスの内側または外側に
 msgid "Mark points inside with 1 and outside with a 0"
 msgstr "内側の点を1，外側の点を0でマークします．"
 
+#: ../../pyvista/docs/examples/01-filter/extract-cells-inside-surface.rst:89
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>3263</td></tr>\n"
+"<tr><td>N Points</td><td>2903</td></tr>\n"
+"<tr><td>X Bounds</td><td>-4.446e+00, 5.998e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-3.637e+00, 2.760e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-1.701e+00, 1.701e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>SelectedPoints</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/extract-cells-inside-surface.rst:116
 msgid ""
 "Extract two meshes, one completely inside and one completely outside the "
@@ -2831,8 +3035,8 @@ msgid "display the results"
 msgstr "結果を表示する"
 
 #: ../../pyvista/docs/examples/01-filter/extract-cells-inside-surface.rst:174
-msgid "**Total running time of the script:** ( 0 minutes  1.748 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  1.507 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  1.507 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/extract-cells-inside-surface.rst:189
 msgid ""
@@ -2898,9 +3102,9 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/extract-edges.rst:97
 msgid ""
-"We can do this anaylsis for any :class:`pyvista.PolyData` object. Let's try "
+"We can do this analysis for any :class:`pyvista.PolyData` object. Let's try "
 "the cow mesh example:"
-msgstr "この解析は :class:`pyvista.PolyData` オブジェクトに対して行うことができます．牛のメッシュの例を見てみましょう．"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/extract-edges.rst:139
 msgid ""
@@ -2925,7 +3129,7 @@ msgstr ""
 "オプションを使用すると，これらのエッジを抽出できます．"
 
 #: ../../pyvista/docs/examples/01-filter/extract-edges.rst:226
-msgid "**Total running time of the script:** ( 0 minutes  10.329 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  8.992 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/extract-edges.rst:241
@@ -2979,7 +3183,7 @@ msgid "Now let's see an example on a 3D dataset with volume rendering:"
 msgstr "次に，ボリュームレンダリングを使用した3Dデータセットの例を見てみましょう:"
 
 #: ../../pyvista/docs/examples/01-filter/gaussian-smoothing.rst:167
-msgid "**Total running time of the script:** ( 0 minutes  13.867 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  12.131 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/gaussian-smoothing.rst:182
@@ -3028,7 +3232,7 @@ msgid "How long is that path?"
 msgstr "その道はどのくらいの長さですか．"
 
 #: ../../pyvista/docs/examples/01-filter/geodesic.rst:136
-msgid "**Total running time of the script:** ( 0 minutes  15.642 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  13.802 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/geodesic.rst:151
@@ -3082,7 +3286,7 @@ msgstr ""
 "入力データセットのすべてのノードにグリフが必要ない場合があります．この場合，マージ許容値を使用して，入力データセットのサブセットのグリフを作成することを選択できます．ここでは，5パーセントのマージ許容値を指定します．これは，バウンディングボックスの長さの5パーセントに相当します．"
 
 #: ../../pyvista/docs/examples/01-filter/glyphs.rst:224
-msgid "**Total running time of the script:** ( 0 minutes  7.008 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  6.167 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/glyphs.rst:239
@@ -3132,7 +3336,7 @@ msgstr ""
 "ジオメトリを渡すことで，グリフのテーブルを後方互換にすることができます．indicesオプションのキーワードが追加されます．これはgeomがシーケンスの場合に必須で，この場合は同じ長さでなければなりません．"
 
 #: ../../pyvista/docs/examples/01-filter/glyphs_table.rst:121
-msgid "**Total running time of the script:** ( 0 minutes  1.448 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.341 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/glyphs_table.rst:136
@@ -3177,6 +3381,35 @@ msgstr ""
 msgid "Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter."
 msgstr ":func:`pyvista.DataSetFilters.compute_derivative` フィルタを表示します．"
 
+#: ../../pyvista/docs/examples/01-filter/gradients.rst:51
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>158400</td></tr>\n"
+"<tr><td>N Points</td><td>167580</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>\n"
+"<tr><td>Dimensions</td><td>76, 49, 45</td></tr>\n"
+"<tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>2</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>\n"
+"<tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/gradients.rst:81
 msgid ""
 "Now compute the gradients of the ``vectors`` vector field in the point data "
@@ -3209,6 +3442,45 @@ msgid ""
 " by:"
 msgstr "これらのコンポーネントを個別の配列としてメッシュに追加するには，次のようにします．"
 
+#: ../../pyvista/docs/examples/01-filter/gradients.rst:185
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>158400</td></tr>\n"
+"<tr><td>N Points</td><td>167580</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>8.000e+01, 1.280e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.000e+00, 4.500e+01</td></tr>\n"
+"<tr><td>Dimensions</td><td>76, 49, 45</td></tr>\n"
+"<tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>12</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>\n"
+"<tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>\n"
+"<tr><td>gradient</td><td>Points</td><td>float32</td><td>9</td><td>-1.585e+01</td><td>1.536e+01</td></tr>\n"
+"<tr><td>du/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.293e+00</td><td>8.336e+00</td></tr>\n"
+"<tr><td>du/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.084e+01</td><td>8.334e+00</td></tr>\n"
+"<tr><td>du/dz</td><td>Points</td><td>float32</td><td>1</td><td>-8.300e+00</td><td>8.317e+00</td></tr>\n"
+"<tr><td>dv/dx</td><td>Points</td><td>float32</td><td>1</td><td>-1.133e+01</td><td>1.536e+01</td></tr>\n"
+"<tr><td>dv/dy</td><td>Points</td><td>float32</td><td>1</td><td>-1.585e+01</td><td>1.170e+01</td></tr>\n"
+"<tr><td>dv/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.131e+01</td><td>7.459e+00</td></tr>\n"
+"<tr><td>dw/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.738e+00</td><td>1.212e+01</td></tr>\n"
+"<tr><td>dw/dy</td><td>Points</td><td>float32</td><td>1</td><td>-8.734e+00</td><td>8.740e+00</td></tr>\n"
+"<tr><td>dw/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/gradients.rst:266
 msgid ""
 "And there you have it, the gradients for a vector field! We could also do "
@@ -3219,7 +3491,7 @@ msgstr ""
 "フィールドのようなスカラーフィールドに対してもこれを行うことができます．"
 
 #: ../../pyvista/docs/examples/01-filter/gradients.rst:338
-msgid "**Total running time of the script:** ( 0 minutes  2.793 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.528 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/gradients.rst:353
@@ -3296,8 +3568,8 @@ msgid "Visualize the results"
 msgstr "結果を視覚化する"
 
 #: ../../pyvista/docs/examples/01-filter/interpolate.rst:265
-msgid "**Total running time of the script:** ( 0 minutes  11.114 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  10.602 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  10.602 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/interpolate.rst:280
 msgid ""
@@ -3342,8 +3614,34 @@ msgid ""
 "measures"
 msgstr "セル品質を計算します．多くの異なる品質尺度があることに注意してください．"
 
+#: ../../pyvista/docs/examples/01-filter/mesh-quality.rst:67
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1740</td></tr>\n"
+"<tr><td>N Points</td><td>871</td></tr>\n"
+"<tr><td>X Bounds</td><td>-4.389e+00, 6.005e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-3.648e+00, 2.761e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-1.701e+00, 1.701e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>CellQuality</b></td><td>Cells</td><td>float64</td><td>1</td><td>6.197e-02</td><td>9.911e-01</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/mesh-quality.rst:121
-msgid "**Total running time of the script:** ( 0 minutes  0.828 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.737 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/mesh-quality.rst:136
@@ -3379,7 +3677,7 @@ msgid "Single line segment ray tracing for PolyData objects."
 msgstr "PolyDataオブジェクトの単一線分セグメントのレイトレーシング．"
 
 #: ../../pyvista/docs/examples/01-filter/poly-ray-trace.rst:85
-msgid "**Total running time of the script:** ( 0 minutes  0.556 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.491 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/poly-ray-trace.rst:100
@@ -3421,8 +3719,8 @@ msgid "Project that surface to a plane underneath the surface"
 msgstr "そのサーフェスをサーフェスの下の平面に投影します．"
 
 #: ../../pyvista/docs/examples/01-filter/project-plane.rst:102
-msgid "**Total running time of the script:** ( 0 minutes  1.693 seconds)"
-msgstr "**スクリプトの合計実行時間:** ( 0 分  1.693 秒)"
+msgid "**Total running time of the script:** ( 0 minutes  1.535 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  1.535 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/project-plane.rst:117
 msgid ""
@@ -3486,7 +3784,7 @@ msgid ""
 msgstr "大量のデータを取得し，解像度の低いグリッドを作成してリサンプルします．"
 
 #: ../../pyvista/docs/examples/01-filter/resample.rst:199
-msgid "**Total running time of the script:** ( 0 minutes  13.135 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  10.567 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/resample.rst:214
@@ -3498,7 +3796,7 @@ msgid ":download:`Download Jupyter notebook: resample.ipynb <resample.ipynb>`"
 msgstr ":download:`Jupyter notebook: resample.ipynb <resample.ipynb> をダウンロード`"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:8
-msgid "**04:59.160** total execution time for **examples_01-filter** files:"
+msgid "**04:23.316** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:11
@@ -3510,7 +3808,7 @@ msgstr ""
 "with-surface.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:11
-msgid "01:04.041"
+msgid "00:56.602"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:13
@@ -3518,7 +3816,7 @@ msgid ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:13
-msgid "00:34.282"
+msgid "00:30.225"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:15
@@ -3526,10 +3824,20 @@ msgid ":ref:`sphx_glr_examples_01-filter_voxelize.py` (``voxelize.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_voxelize.py` (``voxelize.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:15
-msgid "00:25.874"
+msgid "00:23.418"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:17
+msgid ""
+":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:17
+msgid "00:16.820"
+msgstr ""
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:19
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-"
 "normals.py``)"
@@ -3537,18 +3845,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-"
 "normals.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:17
-msgid "00:19.238"
-msgstr ""
-
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:19
-msgid ""
-":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:19
-msgid "00:19.158"
+msgid "00:16.653"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:21
@@ -3556,22 +3854,10 @@ msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:21
-msgid "00:15.642"
+msgid "00:13.802"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:23
-msgid ""
-":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
-"operations.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
-"operations.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:23
-msgid "00:13.881"
-msgstr ""
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:25
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
@@ -3579,25 +3865,37 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
 
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:23
+msgid "00:12.131"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:25
-msgid "00:13.867"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
+"operations.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
+"operations.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:25
+msgid "00:11.811"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:27
-msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
-msgstr ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:27
-msgid "00:13.135"
-msgstr ""
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:29
 msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
 
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:27
+msgid "00:10.602"
+msgstr "00:10.602"
+
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:29
-msgid "00:11.114"
+msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
+msgstr ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:29
+msgid "00:10.567"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:31
@@ -3607,7 +3905,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:31
-msgid "00:10.329"
+msgid "00:08.992"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:33
@@ -3616,7 +3914,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:33
-msgid "00:08.276"
+msgid "00:07.007"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:35
@@ -3628,7 +3926,7 @@ msgstr ""
 "between-surfaces.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:35
-msgid "00:07.187"
+msgid "00:06.285"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:37
@@ -3636,7 +3934,7 @@ msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:37
-msgid "00:07.008"
+msgid "00:06.167"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:39
@@ -3644,7 +3942,7 @@ msgid ":ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:39
-msgid "00:06.204"
+msgid "00:05.411"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:41
@@ -3656,61 +3954,61 @@ msgstr ""
 "smoothing.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:41
-msgid "00:03.433"
-msgstr "00:03.433"
+msgid "00:03.035"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:43
 msgid ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:43
-msgid "00:03.289"
-msgstr ""
+msgid "00:02.872"
+msgstr "00:02.872"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:45
+msgid ""
+":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:45
+msgid "00:02.566"
+msgstr ""
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:47
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:45
-msgid "00:02.898"
-msgstr "00:02.898"
-
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:47
+msgid "00:02.564"
+msgstr ""
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:49
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:47
-msgid "00:02.793"
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:49
+msgid "00:02.528"
 msgstr ""
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:49
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:51
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:49
-msgid "00:02.759"
-msgstr "00:02.759"
-
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:51
+msgid "00:02.478"
+msgstr "00:02.478"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:53
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:51
-msgid "00:02.682"
-msgstr ""
-
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:53
-msgid ""
-":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:53
-msgid "00:02.505"
+msgid "00:02.329"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:55
@@ -3718,10 +4016,20 @@ msgid ":ref:`sphx_glr_examples_01-filter_subdivide.py` (``subdivide.py``)"
 msgstr ":ref:`sphx_glr_examples_01-filter_subdivide.py` (``subdivide.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:55
-msgid "00:01.805"
+msgid "00:01.561"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:57
+msgid ""
+":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:57
+msgid "00:01.535"
+msgstr "00:01.535"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:59
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` "
 "(``extract-cells-inside-surface.py``)"
@@ -3729,38 +4037,28 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` "
 "(``extract-cells-inside-surface.py``)"
 
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:57
-msgid "00:01.748"
-msgstr ""
-
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:59
-msgid ""
-":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:59
-msgid "00:01.693"
-msgstr "00:01.693"
+msgid "00:01.507"
+msgstr "00:01.507"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:61
-msgid ""
-":ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:61
-msgid "00:01.485"
-msgstr "00:01.485"
-
-#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:63
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:61
+msgid "00:01.341"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:63
-msgid "00:01.448"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)"
+
+#: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:63
+msgid "00:01.280"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:65
@@ -3770,7 +4068,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:65
-msgid "00:00.828"
+msgid "00:00.737"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:67
@@ -3780,7 +4078,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:67
-msgid "00:00.556"
+msgid "00:00.491"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:13
@@ -3871,9 +4169,61 @@ msgid ""
 msgstr ""
 "最初に，対象のデータセットを使用して線のソースを定義します．このタイプのスライスは計算コストが高く，線に多くの点がある場合は時間がかかることに注意してください．線の解像度を低くしてください．"
 
+#: ../../pyvista/docs/examples/01-filter/slicing.rst:272
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1</td></tr>\n"
+"<tr><td>N Points</td><td>15</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 2.475e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 2.400e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>9.000e+00, 1.100e+01</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>arc_length</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:299
 msgid "Then run the filter"
 msgstr "次に，フィルタを実行します．"
+
+#: ../../pyvista/docs/examples/01-filter/slicing.rst:313
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>49100</td></tr>\n"
+"<tr><td>N Points</td><td>49692</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 2.500e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 2.415e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 1.000e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>facies</b></td><td>Cells</td><td>int64</td><td>1</td><td>0.000e+00</td><td>4.000e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:373
 msgid "Multiple Slices in Vector Direction"
@@ -3911,12 +4261,41 @@ msgid ""
 "equation for circle since its about the Z-axis."
 msgstr "ここで，Z軸を中心にスライスを回転させる法線ベクトルをいくつか生成します．円はZ軸を中心としているため，円の計算式を使用します．"
 
+#: ../../pyvista/docs/examples/01-filter/slicing.rst:492
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Information</th><th>Blocks</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>MultiBlock</th><th>Values</th></tr>\n"
+"<tr><td>N Blocks</td><td>6</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000, 250.000</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000, 250.000</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000, 100.000</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Index</th><th>Name</th><th>Type</th></tr>\n"
+"<tr><th>0</th><th>Bearing: 0.00</th><th>PolyData</th></tr>\n"
+"<tr><th>1</th><th>Bearing: 30.00</th><th>PolyData</th></tr>\n"
+"<tr><th>2</th><th>Bearing: 60.00</th><th>PolyData</th></tr>\n"
+"<tr><th>3</th><th>Bearing: 90.00</th><th>PolyData</th></tr>\n"
+"<tr><th>4</th><th>Bearing: 120.00</th><th>PolyData</th></tr>\n"
+"<tr><th>5</th><th>Bearing: 150.00</th><th>PolyData</th></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:522
 msgid "And now display it!"
 msgstr "これを表示します．"
 
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:556
-msgid "**Total running time of the script:** ( 0 minutes  34.282 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  30.225 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/slicing.rst:571
@@ -3987,7 +4366,7 @@ msgid "Custom 3D Vector Field"
 msgstr "カスタム3 Dベクトルフィールド"
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:341
-msgid "**Total running time of the script:** ( 0 minutes  8.276 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  7.007 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:356
@@ -4021,12 +4400,10 @@ msgstr "単一の接続された三角形メッシュ内の三角形の数を増
 
 #: ../../pyvista/docs/examples/01-filter/subdivide.rst:26
 msgid ""
-"The :func:`pyvista.PolyDataFilters.subdivide` filter utilitizes three "
+"The :func:`pyvista.PolyDataFilters.subdivide` filter utilizes three "
 "different subdivision algorithms to subdivide a mesh's cells: `butterfly`, "
 "`loop`, or `linear`."
 msgstr ""
-":func:`pyvista.PolyDataFilters.subdivide` フィルタは， `butterfly` ， `loop` ， "
-"`linear` の3つの異なるサブディビジョンアルゴリズムを使用してメッシュのセルをサブディバイドします．"
 
 #: ../../pyvista/docs/examples/01-filter/subdivide.rst:46
 msgid ""
@@ -4050,7 +4427,7 @@ msgid "Run the subdivisions for 1 and 3 levels."
 msgstr "1レベルと3レベルの区画を実行します．"
 
 #: ../../pyvista/docs/examples/01-filter/subdivide.rst:144
-msgid "**Total running time of the script:** ( 0 minutes  1.805 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.561 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/subdivide.rst:159
@@ -4116,8 +4493,8 @@ msgid ""
 msgstr "まだ滑らかではありませんか?ラプラシアン平滑化アルゴリズムの反復回数を非常に高い値に増やします．"
 
 #: ../../pyvista/docs/examples/01-filter/surface-smoothing.rst:195
-msgid "**Total running time of the script:** ( 0 minutes  3.433 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  3.433 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  3.035 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/surface-smoothing.rst:210
 msgid ""
@@ -4274,7 +4651,7 @@ msgstr ""
 "を呼び出すか，レンダリングシーンを作成します．"
 
 #: ../../pyvista/docs/examples/01-filter/using-filters.rst:251
-msgid "**Total running time of the script:** ( 0 minutes  2.682 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.329 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/using-filters.rst:266
@@ -4314,6 +4691,26 @@ msgid ""
 "bounding :class:`pyvista.PolyData` surface."
 msgstr "この例はまた，境界 :class:`pyvista.PolyData` 表面からの陰的距離を計算する方法を示す．"
 
+#: ../../pyvista/docs/examples/01-filter/voxelize.rst:48
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>4204</td></tr>\n"
+"<tr><td>N Points</td><td>2154</td></tr>\n"
+"<tr><td>X Bounds</td><td>-5.633e+00, 5.633e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-1.860e+00, 1.860e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-2.125e+00, 2.126e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/voxelize.rst:101
 msgid "Create a voxel model of the bounding surface"
 msgstr "境界面のボクセルモデルを作成する"
@@ -4326,6 +4723,34 @@ msgid ""
 msgstr ""
 "モデリング用のグリッドを作成する場合に備えて，新しいボクセルモデルにスカラーフィールドを追加することもできます．ここでは，ボーン密度のスカラーフィールドを追加します．"
 
+#: ../../pyvista/docs/examples/01-filter/voxelize.rst:154
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>93041</td></tr>\n"
+"<tr><td>N Points</td><td>113192</td></tr>\n"
+"<tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>3</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>\n"
+"<tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/voxelize.rst:211
 msgid ""
 "A constant scalar field is kind of boring, so let's get a little fancier by "
@@ -4333,8 +4758,37 @@ msgid ""
 msgstr ""
 "一定のスカラーフィールドは退屈なので，バウンディングサーフェスからの距離によって変化するスカラーフィールドを追加して少しおしゃれにしましょう．"
 
+#: ../../pyvista/docs/examples/01-filter/voxelize.rst:226
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>93041</td></tr>\n"
+"<tr><td>N Points</td><td>113192</td></tr>\n"
+"<tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>4</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>\n"
+"<tr><td>implicit_distance</td><td>Points</td><td>float64</td><td>1</td><td>-6.951e-01</td><td>4.148e-01</td></tr>\n"
+"<tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/01-filter/voxelize.rst:288
-msgid "**Total running time of the script:** ( 0 minutes  25.874 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  23.418 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/voxelize.rst:303
@@ -4377,8 +4831,8 @@ msgstr ""
 "次に，ワープ操作に適用されるスケール係数にいくつかの値を使用します．過度に高いワープ係数を適用すると，非現実的な結果になることがよくあります．"
 
 #: ../../pyvista/docs/examples/01-filter/warp-by-vector.rst:113
-msgid "**Total running time of the script:** ( 0 minutes  1.485 seconds)"
-msgstr "**スクリプトの合計実行時間:** ( 0 分  1.485 秒)"
+msgid "**Total running time of the script:** ( 0 minutes  1.280 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/warp-by-vector.rst:128
 msgid ""
@@ -4421,8 +4875,8 @@ msgid "Plot several earth related plots"
 msgstr "複数の地球関連プロットをプロットする"
 
 #: ../../pyvista/docs/examples/02-plot/background_image.rst:132
-msgid "**Total running time of the script:** ( 0 minutes  5.930 seconds)"
-msgstr "**スクリプトの合計実行時間:** ( 0 分  5.930 秒)"
+msgid "**Total running time of the script:** ( 0 minutes  5.106 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/background_image.rst:147
 msgid ""
@@ -4467,8 +4921,8 @@ msgid ""
 msgstr "または，追加するときに任意のアクターに ``name`` を指定し，アクターが後で同じ名前で追加された場合に，前のアクターを置き換えます:"
 
 #: ../../pyvista/docs/examples/02-plot/clear.rst:150
-msgid "**Total running time of the script:** ( 0 minutes  1.006 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  1.006 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.936 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/clear.rst:165
 msgid ":download:`Download Python source code: clear.py <clear.py>`"
@@ -4586,8 +5040,8 @@ msgstr ""
 "``pip install colorcet``"
 
 #: ../../pyvista/docs/examples/02-plot/cmap.rst:318
-msgid "**Total running time of the script:** ( 0 minutes  6.250 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  5.730 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  5.730 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/cmap.rst:333
 msgid ":download:`Download Python source code: cmap.py <cmap.py>`"
@@ -4641,7 +5095,7 @@ msgid ""
 msgstr "次に，多くの半透明のコンタサーフェスをレンダリングする別の例を示します．"
 
 #: ../../pyvista/docs/examples/02-plot/depth-peeling.rst:214
-msgid "**Total running time of the script:** ( 1 minutes  1.884 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  54.288 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/depth-peeling.rst:229
@@ -4689,7 +5143,7 @@ msgstr ""
 "キーワード引数を指定するだけです．"
 
 #: ../../pyvista/docs/examples/02-plot/edges.rst:77
-msgid "**Total running time of the script:** ( 0 minutes  8.399 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  7.352 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/edges.rst:92
@@ -4766,7 +5220,7 @@ msgid "The eye dome lighting mode can also handle plotting scalar arrays:"
 msgstr "Eye Dome Lightingモードでは，スカラー配列のプロットも処理できます．"
 
 #: ../../pyvista/docs/examples/02-plot/edl.rst:269
-msgid "**Total running time of the script:** ( 0 minutes  25.781 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  22.039 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/edl.rst:284
@@ -4794,7 +5248,7 @@ msgid "Add a floor/wall at the boundary of the rendering scene."
 msgstr "レンダリングシーンの境界に床/壁を追加します．"
 
 #: ../../pyvista/docs/examples/02-plot/floors.rst:69
-msgid "**Total running time of the script:** ( 0 minutes  3.534 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.403 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/floors.rst:84
@@ -4823,9 +5277,9 @@ msgstr "印刷時に非表示にする特定のセルを指定します．"
 
 #: ../../pyvista/docs/examples/02-plot/ghost-cells.rst:26
 msgid ""
-"This is a lightwieght alternative to thresholding to quickly hide cells in a"
+"This is a lightweight alternative to thresholding to quickly hide cells in a"
 " mesh without creating a new mesh."
-msgstr "これは，新しいメッシュを作成せずにメッシュ内のセルをすばやく非表示にするための，しきい値の代わりとなる軽量のオプションです．"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/ghost-cells.rst:29
 msgid ""
@@ -4846,7 +5300,7 @@ msgid "Now we can plot the mesh and those cells will be hidden"
 msgstr "メッシュをプロットすると，これらのセルは非表示になります．"
 
 #: ../../pyvista/docs/examples/02-plot/ghost-cells.rst:104
-msgid "**Total running time of the script:** ( 0 minutes  6.473 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.691 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/ghost-cells.rst:119
@@ -4878,7 +5332,7 @@ msgid "Generate a moving gif from an active plotter"
 msgstr "アクティブなプロッタから動くgifを生成する"
 
 #: ../../pyvista/docs/examples/02-plot/gif.rst:100
-msgid "**Total running time of the script:** ( 0 minutes  6.830 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.835 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/gif.rst:115
@@ -4916,7 +5370,7 @@ msgid "Visualize depth images"
 msgstr "Visualize depth images"
 
 #: ../../pyvista/docs/examples/02-plot/image_depth.rst:134
-msgid "**Total running time of the script:** ( 0 minutes  1.194 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.068 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/image_depth.rst:149
@@ -5014,11 +5468,10 @@ msgstr "ワイヤフレームの表示でも，同じ補間効果が得られま
 
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:162
 msgid ""
-"The cylider mesh above is a great example dataset for this as it has a wide "
-"spread between the vertices (points are only at the top and bottom of the "
+"The cylinder mesh above is a great example dataset for this as it has a wide"
+" spread between the vertices (points are only at the top and bottom of the "
 "cylinder) which means high surface are of the mesh has to be interpolated."
 msgstr ""
-"上のcyliderメッシュは，頂点間に広いスプレッドがあり(点は円柱の上部と下部のみにあります)，メッシュの高いサーフェスを補間する必要があるため，これに関する優れたサンプルデータセットです．"
 
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:166
 msgid ""
@@ -5033,12 +5486,10 @@ msgstr ""
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:215
 msgid ""
 "This time is pretty difficult to notice the differences - they are there, "
-"subtle, but present. The differences become more apperant when we decrease "
+"subtle, but present. The differences become more apparent when we decrease "
 "the number of colors in colormap. Let's take a look at the differences when "
 "using eight discrete colors via the ``n_colors`` argument:"
 msgstr ""
-"今回は違いに気付くのがかなり難しいです-違いはそこにあり，微妙ですが，存在しています．カラーマップ内の色の数を減らすと，違いがより顕著になります． "
-"``n_colors`` 引数によって8つの個別の色を使用する場合の違いを見てみましょう．"
 
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:263
 msgid ""
@@ -5064,8 +5515,8 @@ msgstr ""
 "``True`` に設定することを選んだ理由です．"
 
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:277
-msgid "**Total running time of the script:** ( 0 minutes  4.084 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  3.626 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  3.626 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/interpolate-before-map.rst:292
 msgid ""
@@ -5099,6 +5550,34 @@ msgstr "等値移動"
 msgid "Make an animation of an isovalue through a volumetric dataset"
 msgstr "ボリュームデータセットを使用して等値のアニメーションを作成する"
 
+#: ../../pyvista/docs/examples/02-plot/isovalue.rst:42
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>6998400</td></tr>\n"
+"<tr><td>N Points</td><td>7109137</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 1.800e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 2.160e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 1.800e+02</td></tr>\n"
+"<tr><td>Dimensions</td><td>181, 217, 181</td></tr>\n"
+"<tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>image_data</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>2.550e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/02-plot/isovalue.rst:71
 msgid ""
 "Now lets make an array of all of the isovalues for which we want to show."
@@ -5117,7 +5596,7 @@ msgid "Set a single surface as the one being plotted that can be overwritten"
 msgstr "1つのサーフェスを上書き可能な印刷対象として設定する"
 
 #: ../../pyvista/docs/examples/02-plot/isovalue.rst:196
-msgid "**Total running time of the script:** ( 0 minutes  36.893 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  31.781 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/isovalue.rst:211
@@ -5161,6 +5640,32 @@ msgid ""
 "node:"
 msgstr "文字列ラベルをポイントデータに追加します．これにより，各ノードにラベルが関連付けられます．"
 
+#: ../../pyvista/docs/examples/02-plot/labels.rst:83
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>10</td></tr>\n"
+"<tr><td>N Points</td><td>10</td></tr>\n"
+"<tr><td>X Bounds</td><td>5.529e-03, 7.538e-01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>9.762e-02, 8.991e-01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>3.174e-01, 9.376e-01</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>My Labels</b></td><td>Points</td><td><U7</td><td>1</td><td>nan</td><td>nan</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/02-plot/labels.rst:110
 msgid "Now plot the points with labels:"
 msgstr "次に，点をラベル付きでプロットします:"
@@ -5187,7 +5692,7 @@ msgid "This example will label each point with their scalar values"
 msgstr "この例では，各ポイントにスカラー値のラベルを付けます．"
 
 #: ../../pyvista/docs/examples/02-plot/labels.rst:273
-msgid "**Total running time of the script:** ( 0 minutes  2.001 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.791 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/labels.rst:288
@@ -5249,7 +5754,7 @@ msgid "Demonstration of all three in use"
 msgstr "3機種の使用実績"
 
 #: ../../pyvista/docs/examples/02-plot/lighting.rst:254
-msgid "**Total running time of the script:** ( 0 minutes  6.973 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  6.042 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/lighting.rst:269
@@ -5273,7 +5778,7 @@ msgid "Linked Views in Subplots"
 msgstr "サブプロットのリンクビュー"
 
 #: ../../pyvista/docs/examples/02-plot/linked.rst:82
-msgid "**Total running time of the script:** ( 0 minutes  6.223 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.447 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/linked.rst:97
@@ -5301,8 +5806,8 @@ msgid "Create an animated MP4 movie of a rendering scene"
 msgstr "レンダリングシーンのアニメーションMP 4ムービーを作成する"
 
 #: ../../pyvista/docs/examples/02-plot/movie.rst:95
-msgid "**Total running time of the script:** ( 0 minutes  15.913 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  15.913 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  13.894 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/movie.rst:110
 msgid ":download:`Download Python source code: movie.py <movie.py>`"
@@ -5358,7 +5863,7 @@ msgstr ""
 " ``(行,列)`` を通して定義されます．グループは常に，リストまたはスライスを通過する最小のIDから最大のID (行または列)までの範囲になります．"
 
 #: ../../pyvista/docs/examples/02-plot/multi-window.rst:301
-msgid "**Total running time of the script:** ( 0 minutes  4.836 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  4.246 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/multi-window.rst:316
@@ -5538,7 +6043,7 @@ msgstr ""
 "will be completely transparent."
 
 #: ../../pyvista/docs/examples/02-plot/opacity.rst:412
-msgid "**Total running time of the script:** ( 0 minutes  12.609 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  11.783 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/opacity.rst:427
@@ -5581,7 +6086,7 @@ msgstr ""
 "でプロッタを開いたままにしておく必要があります．"
 
 #: ../../pyvista/docs/examples/02-plot/orbit.rst:141
-msgid "**Total running time of the script:** ( 3 minutes  19.362 seconds)"
+msgid "**Total running time of the script:** ( 2 minutes  55.539 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/orbit.rst:156
@@ -5623,8 +6128,8 @@ msgid ""
 msgstr "3つのスライスを作成します． ``x`` ， ``y`` ，および ``z`` の引数を使用して，簡単に位置を制御できます．"
 
 #: ../../pyvista/docs/examples/02-plot/ortho-slices.rst:164
-msgid "**Total running time of the script:** ( 0 minutes  5.890 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  4.931 seconds)"
+msgstr "**スクリプトの合計実行時間:** ( 0 分  4.931 秒)"
 
 #: ../../pyvista/docs/examples/02-plot/ortho-slices.rst:179
 msgid ""
@@ -5678,7 +6183,7 @@ msgid "We could also plot the values of a mesh that lies on a flat surface"
 msgstr "平面上にあるメッシュの値をプロットすることもできます．"
 
 #: ../../pyvista/docs/examples/02-plot/plot-over-line.rst:189
-msgid "**Total running time of the script:** ( 0 minutes  2.024 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.759 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/plot-over-line.rst:204
@@ -5758,8 +6263,8 @@ msgid ""
 msgstr "辞書を使用して目的の値に注釈を付けます．ディクショナリのキーは注釈を付ける値で，値は文字列ラベルである必要があります．"
 
 #: ../../pyvista/docs/examples/02-plot/scalar-bars.rst:282
-msgid "**Total running time of the script:** ( 0 minutes  6.018 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  6.018 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  5.193 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/scalar-bars.rst:297
 msgid ""
@@ -5798,7 +6303,7 @@ msgid ""
 msgstr "``img`` 配列を使用して，スクリーンショットを ``matplotlib`` にプロットすることができます．"
 
 #: ../../pyvista/docs/examples/02-plot/screenshot.rst:105
-msgid "**Total running time of the script:** ( 0 minutes  0.903 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.777 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/screenshot.rst:120
@@ -5812,7 +6317,7 @@ msgstr ""
 ":download:`Jupyter notebook: screenshot.ipynb <screenshot.ipynb> をダウンロード`"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:8
-msgid "**08:38.008** total execution time for **examples_02-plot** files:"
+msgid "**07:31.430** total execution time for **examples_02-plot** files:"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:11
@@ -5820,7 +6325,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_orbit.py` (``orbit.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_orbit.py` (``orbit.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:11
-msgid "03:19.362"
+msgid "02:55.539"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:13
@@ -5830,7 +6335,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_02-plot_depth-peeling.py` (``depth-peeling.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:13
-msgid "01:01.884"
+msgid "00:54.288"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:15
@@ -5838,7 +6343,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_volume.py` (``volume.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_volume.py` (``volume.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:15
-msgid "00:45.975"
+msgid "00:40.181"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:17
@@ -5846,7 +6351,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:17
-msgid "00:36.893"
+msgid "00:31.781"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:19
@@ -5854,7 +6359,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_edl.py` (``edl.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_edl.py` (``edl.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:19
-msgid "00:25.781"
+msgid "00:22.039"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:21
@@ -5862,7 +6367,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:21
-msgid "00:22.479"
+msgid "00:18.666"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:23
@@ -5870,15 +6375,15 @@ msgid ":ref:`sphx_glr_examples_02-plot_movie.py` (``movie.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_movie.py` (``movie.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:23
-msgid "00:15.913"
-msgstr "00:15.913"
+msgid "00:13.894"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:25
 msgid ":ref:`sphx_glr_examples_02-plot_opacity.py` (``opacity.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_opacity.py` (``opacity.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:25
-msgid "00:12.609"
+msgid "00:11.783"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:27
@@ -5886,7 +6391,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_texture.py` (``texture.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_texture.py` (``texture.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:27
-msgid "00:11.472"
+msgid "00:09.483"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:29
@@ -5894,7 +6399,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_edges.py` (``edges.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_edges.py` (``edges.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:29
-msgid "00:08.399"
+msgid "00:07.352"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:31
@@ -5902,7 +6407,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_lighting.py` (``lighting.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_lighting.py` (``lighting.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:31
-msgid "00:06.973"
+msgid "00:06.042"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:33
@@ -5910,23 +6415,23 @@ msgid ":ref:`sphx_glr_examples_02-plot_gif.py` (``gif.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_gif.py` (``gif.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:33
-msgid "00:06.830"
+msgid "00:05.835"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:35
-msgid ":ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)"
-msgstr ":ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)"
-
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:35
-msgid "00:06.473"
-msgstr ""
-
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:37
 msgid ":ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)"
 
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:35
+msgid "00:05.730"
+msgstr "00:05.730"
+
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:37
-msgid "00:06.250"
+msgid ":ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)"
+msgstr ":ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)"
+
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:37
+msgid "00:05.691"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:39
@@ -5934,7 +6439,7 @@ msgid ":ref:`sphx_glr_examples_02-plot_linked.py` (``linked.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_linked.py` (``linked.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:39
-msgid "00:06.223"
+msgid "00:05.447"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:41
@@ -5942,8 +6447,8 @@ msgid ":ref:`sphx_glr_examples_02-plot_scalar-bars.py` (``scalar-bars.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_scalar-bars.py` (``scalar-bars.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:41
-msgid "00:06.018"
-msgstr "00:06.018"
+msgid "00:05.193"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:43
 msgid ""
@@ -5954,8 +6459,8 @@ msgstr ""
 "(``background_image.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:43
-msgid "00:05.930"
-msgstr "00:05.930"
+msgid "00:05.106"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:45
 msgid ":ref:`sphx_glr_examples_02-plot_ortho-slices.py` (``ortho-slices.py``)"
@@ -5963,8 +6468,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_02-plot_ortho-slices.py` (``ortho-slices.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:45
-msgid "00:05.890"
-msgstr ""
+msgid "00:04.931"
+msgstr "00:04.931"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:47
 msgid ":ref:`sphx_glr_examples_02-plot_multi-window.py` (``multi-window.py``)"
@@ -5972,7 +6477,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_02-plot_multi-window.py` (``multi-window.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:47
-msgid "00:04.836"
+msgid "00:04.246"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:49
@@ -5984,23 +6489,23 @@ msgstr ""
 "before-map.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:49
-msgid "00:04.084"
-msgstr ""
+msgid "00:03.626"
+msgstr "00:03.626"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:51
-msgid ":ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)"
-msgstr ":ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)"
-
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:51
-msgid "00:03.534"
-msgstr ""
-
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:53
 msgid ":ref:`sphx_glr_examples_02-plot_themes.py` (``themes.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_themes.py` (``themes.py``)"
 
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:51
+msgid "00:02.831"
+msgstr "00:02.831"
+
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:53
-msgid "00:03.482"
+msgid ":ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)"
+msgstr ":ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)"
+
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:53
+msgid "00:02.403"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:55
@@ -6008,25 +6513,25 @@ msgid ":ref:`sphx_glr_examples_02-plot_spherical.py` (``spherical.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_spherical.py` (``spherical.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:55
-msgid "00:02.221"
+msgid "00:01.894"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:57
+msgid ":ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)"
+msgstr ":ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)"
+
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:57
+msgid "00:01.791"
+msgstr ""
+
+#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:59
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_plot-over-line.py` (``plot-over-line.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_02-plot_plot-over-line.py` (``plot-over-line.py``)"
 
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:57
-msgid "00:02.024"
-msgstr ""
-
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:59
-msgid ":ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)"
-msgstr ":ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)"
-
-#: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:59
-msgid "00:02.001"
+msgid "00:01.759"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:61
@@ -6034,15 +6539,15 @@ msgid ":ref:`sphx_glr_examples_02-plot_shading.py` (``shading.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_shading.py` (``shading.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:61
-msgid "00:01.372"
-msgstr ""
+msgid "00:01.116"
+msgstr "00:01.116"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:63
 msgid ":ref:`sphx_glr_examples_02-plot_image_depth.py` (``image_depth.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_image_depth.py` (``image_depth.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:63
-msgid "00:01.194"
+msgid "00:01.068"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:65
@@ -6050,15 +6555,15 @@ msgid ":ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:65
-msgid "00:01.006"
-msgstr "00:01.006"
+msgid "00:00.936"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:67
 msgid ":ref:`sphx_glr_examples_02-plot_screenshot.py` (``screenshot.py``)"
 msgstr ":ref:`sphx_glr_examples_02-plot_screenshot.py` (``screenshot.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:67
-msgid "00:00.903"
+msgid "00:00.777"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/shading.rst:13
@@ -6093,8 +6598,8 @@ msgid "Here's the same sphere with smooth shading:"
 msgstr "次に，スムーズシェーディングを適用した同じ球を示します．"
 
 #: ../../pyvista/docs/examples/02-plot/shading.rst:109
-msgid "**Total running time of the script:** ( 0 minutes  1.372 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  1.116 seconds)"
+msgstr "**スクリプトの合計実行時間:** ( 0 分  1.116 秒)"
 
 #: ../../pyvista/docs/examples/02-plot/shading.rst:124
 msgid ":download:`Download Python source code: shading.py <shading.py>`"
@@ -6134,7 +6639,7 @@ msgid "Isurfaces of 3D data in spherical coordinates"
 msgstr "球座標の3 Dデータのサーフェス"
 
 #: ../../pyvista/docs/examples/02-plot/spherical.rst:275
-msgid "**Total running time of the script:** ( 0 minutes  2.221 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.894 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/spherical.rst:290
@@ -6312,7 +6817,7 @@ msgstr ""
 "に若干の重複があることに注意してください．"
 
 #: ../../pyvista/docs/examples/02-plot/texture.rst:551
-msgid "**Total running time of the script:** ( 0 minutes  11.472 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  9.483 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/texture.rst:566
@@ -6357,8 +6862,8 @@ msgstr ""
 #: ../../pyvista/docs/examples/02-plot/themes.rst:74
 msgid ""
 "Here's an example of our default plotting theme - this is what you would see"
-" by default after running any of our examnples."
-msgstr "デフォルトのプロットテーマの例を次に示します． - これは，サンプルを実行した後にデフォルトで表示されるテーマです．"
+" by default after running any of our examples."
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:109
 msgid "PyVista also ships with a few plotting themes:"
@@ -6400,8 +6905,8 @@ msgid ""
 msgstr "プロットウィンドウの背景には，カラーグラデーションを使用することもできます．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:258
-msgid "**Total running time of the script:** ( 0 minutes  3.482 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  2.831 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  2.831 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:273
 msgid ":download:`Download Python source code: themes.py <themes.py>`"
@@ -6431,6 +6936,33 @@ msgid ""
 msgstr ""
 "これは :ref:`ref_texture_example` "
 "の例と非常に似ていますが，地形メッシュの上にGeoTIFFからの航空画像をプロットすることに焦点を当てています．"
+
+#: ../../pyvista/docs/examples/02-plot/topo-map.rst:49
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>StructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1677401</td></tr>\n"
+"<tr><td>N Points</td><td>1680000</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.640e+06, 5.658e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>7.339e+02, 2.787e+03</td></tr>\n"
+"<tr><td>Dimensions</td><td>1400, 1200, 1</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:77
 msgid "Let's inspect the imagery that we just loaded"
@@ -6462,7 +6994,7 @@ msgid ""
 msgstr "また，周辺領域を抽出し，テクスチャマッピングされた局所的な地形と外部領域をプロットすることによって，領域全体を表示することもできます．"
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:242
-msgid "**Total running time of the script:** ( 0 minutes  22.479 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  18.666 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:257
@@ -6499,6 +7031,34 @@ msgid ""
 msgstr ""
 "これはまた :func:`pyvista.UniformGridFilters.extract_subset` フィルタを使用して "
 ":class:`pyvista.UniformGrid` から関心領域 (VOI) を抽出する方法を探求する．"
+
+#: ../../pyvista/docs/examples/02-plot/volume.rst:49
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>10225800</td></tr>\n"
+"<tr><td>N Points</td><td>10368384</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 1.497e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 1.786e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 2.000e+02</td></tr>\n"
+"<tr><td>Dimensions</td><td>208, 248, 201</td></tr>\n"
+"<tr><td>Spacing</td><td>7.230e-01, 7.230e-01, 1.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>SLCImage</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.740e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/volume.rst:79
 msgid "Simple Volume Render"
@@ -6548,6 +7108,34 @@ msgstr ""
 ":func:`pyvista.UniformGridFilters.extract_subset` "
 "フィルタを使用して，ボリュームレンダリングの対象となるボリューム/サブセットボリュームを抽出します．これは，特に大きなボリュームを処理し，特定の領域のみをボリュームレンダーする場合に理想的です．"
 
+#: ../../pyvista/docs/examples/02-plot/volume.rst:362
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>11003760</td></tr>\n"
+"<tr><td>N Points</td><td>11156040</td></tr>\n"
+"<tr><td>X Bounds</td><td>4.130e+05, 6.920e+05</td></tr>\n"
+"<tr><td>Y Bounds</td><td>3.864e+06, 4.096e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-5.479e+04, 5.302e+03</td></tr>\n"
+"<tr><td>Dimensions</td><td>280, 233, 171</td></tr>\n"
+"<tr><td>Spacing</td><td>1.000e+03, 1.000e+03, 3.535e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>data</b></td><td>Points</td><td>float32</td><td>1</td><td>9.782e-15</td><td>1.000e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/02-plot/volume.rst:425
 msgid ""
 "Woah, that's a big volume! We probably don't want to volume render the whole"
@@ -6566,7 +7154,7 @@ msgid "Ah, much better. Let's now volume render that region of interest!"
 msgstr "ああ，だいぶよくなりました．次に，その対象領域をボリュームレンダリングします．"
 
 #: ../../pyvista/docs/examples/02-plot/volume.rst:505
-msgid "**Total running time of the script:** ( 0 minutes  45.975 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  40.181 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/volume.rst:520
@@ -6619,8 +7207,8 @@ msgid "After interacting with the scene, the clipped mesh is available as:"
 msgstr "シーンを操作すると，クリップされたメッシュは次のように表示されます．"
 
 #: ../../pyvista/docs/examples/03-widgets/box-widget.rst:120
-msgid "**Total running time of the script:** ( 0 minutes  12.249 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  12.249 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  10.082 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/box-widget.rst:135
 msgid ":download:`Download Python source code: box-widget.py <box-widget.py>`"
@@ -6673,7 +7261,7 @@ msgstr ""
 "この例では，一意のカラーを持つ多数のメッシュをシーンに追加し，同じカラーのメッシュに対応するチェックボックスを作成してシーン内での可視性を切り替えます．"
 
 #: ../../pyvista/docs/examples/03-widgets/checkbox-widget.rst:169
-msgid "**Total running time of the script:** ( 0 minutes  0.685 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.581 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/checkbox-widget.rst:184
@@ -6738,7 +7326,7 @@ msgid "And here is a screen capture of a user interacting with this"
 msgstr "以下はユーザ対話型のスクリーンショットです"
 
 #: ../../pyvista/docs/examples/03-widgets/line-widget.rst:108
-msgid "**Total running time of the script:** ( 0 minutes  1.060 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.899 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/line-widget.rst:123
@@ -6781,7 +7369,7 @@ msgstr ""
 "メソッドのパラメータをいくつか変更するだけですが，これはどのようなメッシュ生成/変更コードにも簡単に適用できます．"
 
 #: ../../pyvista/docs/examples/03-widgets/multi-slider-widget.rst:137
-msgid "**Total running time of the script:** ( 0 minutes  0.393 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.342 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/multi-slider-widget.rst:152
@@ -6849,7 +7437,7 @@ msgstr ""
 "を渡す必要があることに注意してください．"
 
 #: ../../pyvista/docs/examples/03-widgets/plane-widget.rst:237
-msgid "**Total running time of the script:** ( 0 minutes  5.720 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  4.719 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/plane-widget.rst:252
@@ -6867,7 +7455,7 @@ msgstr ""
 "widget.ipynb>`"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:8
-msgid "**00:24.764** total execution time for **examples_03-widgets** files:"
+msgid "**00:20.486** total execution time for **examples_03-widgets** files:"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:11
@@ -6875,8 +7463,8 @@ msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
 msgstr ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:11
-msgid "00:12.249"
-msgstr "00:12.249"
+msgid "00:10.082"
+msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:13
 msgid ""
@@ -6885,7 +7473,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_03-widgets_plane-widget.py` (``plane-widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:13
-msgid "00:05.720"
+msgid "00:04.719"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:15
@@ -6897,8 +7485,8 @@ msgstr ""
 "widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:15
-msgid "00:02.709"
-msgstr "00:02.709"
+msgid "00:02.252"
+msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:17
 msgid ""
@@ -6907,7 +7495,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_03-widgets_sphere-widget.py` (``sphere-widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:17
-msgid "00:01.319"
+msgid "00:01.093"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:19
@@ -6917,7 +7505,7 @@ msgstr ""
 ":ref:`sphx_glr_examples_03-widgets_line-widget.py` (``line-widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:19
-msgid "00:01.060"
+msgid "00:00.899"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:21
@@ -6929,7 +7517,7 @@ msgstr ""
 "widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:21
-msgid "00:00.685"
+msgid "00:00.581"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:23
@@ -6939,8 +7527,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_03-widgets_spline-widget.py` (``spline-widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:23
-msgid "00:00.629"
-msgstr ""
+msgid "00:00.519"
+msgstr "00:00.519"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:25
 msgid ""
@@ -6951,7 +7539,7 @@ msgstr ""
 "widget.py``)"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:25
-msgid "00:00.393"
+msgid "00:00.342"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/slider-bar-widget.rst:13
@@ -7005,8 +7593,8 @@ msgstr ""
 "``add_mesh`` における ``name`` 引数の使用に注意してください．"
 
 #: ../../pyvista/docs/examples/03-widgets/slider-bar-widget.rst:177
-msgid "**Total running time of the script:** ( 0 minutes  2.709 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  2.709 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  2.252 seconds)"
+msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/slider-bar-widget.rst:192
 msgid ""
@@ -7087,7 +7675,7 @@ msgid ""
 msgstr "これは，4つの球体ウィジェットを使用してサーフェス上の摂動を更新し，いくつかの境界条件でそれらの間を補間する最もクールな方法です．"
 
 #: ../../pyvista/docs/examples/03-widgets/sphere-widget.rst:286
-msgid "**Total running time of the script:** ( 0 minutes  1.319 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  1.093 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sphere-widget.rst:301
@@ -7141,8 +7729,8 @@ msgstr ""
 ":func:`pyvista.DataSetFilters.slice_along_line` フィルタを活用する便利なヘルパーメソッドを追加しました．"
 
 #: ../../pyvista/docs/examples/03-widgets/spline-widget.rst:95
-msgid "**Total running time of the script:** ( 0 minutes  0.629 seconds)"
-msgstr ""
+msgid "**Total running time of the script:** ( 0 minutes  0.519 seconds)"
+msgstr "**スクリプトの合計実行時間:** ( 0 分  0.519 秒)"
 
 #: ../../pyvista/docs/examples/03-widgets/spline-widget.rst:110
 msgid ""
@@ -7195,6 +7783,34 @@ msgstr ""
 "モデリング結果は`Urruty Benoit <https://github.com/BenoitURRUTY>`_ の好意により `Elmer/Ice"
 " <http://elmerice.elmerfem.org>`_ シミュレーションソフトウェアから得たものである．"
 
+#: ../../pyvista/docs/examples/99-advanced/antarctica-compare.rst:55
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1106948</td></tr>\n"
+"<tr><td>N Points</td><td>557470</td></tr>\n"
+"<tr><td>X Bounds</td><td>-2.506e+06, 2.743e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-2.143e+06, 2.240e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>3</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>ssavelocity</b></td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>\n"
+"<tr><td>node_value</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>2.300e+01</td></tr>\n"
+"<tr><td>magnitude</td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+
 #: ../../pyvista/docs/examples/99-advanced/antarctica-compare.rst:84
 msgid ""
 "Here is a helper to extract regions of the mesh based on the simulation "
@@ -7216,7 +7832,7 @@ msgid "flow_a that agrees with the mean flow path of flow_b"
 msgstr "flow_b の平均流路と一致する flow_a"
 
 #: ../../pyvista/docs/examples/99-advanced/antarctica-compare.rst:370
-msgid "**Total running time of the script:** ( 0 minutes  12.057 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  9.794 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/antarctica-compare.rst:385
@@ -7244,7 +7860,7 @@ msgstr ""
 "download the full example code"
 
 #: ../../pyvista/docs/examples/99-advanced/ray-trace.rst:84
-msgid "**Total running time of the script:** ( 0 minutes  0.377 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  0.311 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/ray-trace.rst:99
@@ -7258,7 +7874,7 @@ msgstr ""
 ":download:`Download Jupyter notebook: ray-trace.ipynb <ray-trace.ipynb>`"
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:8
-msgid "**00:28.217** total execution time for **examples_99-advanced** files:"
+msgid "**00:23.994** total execution time for **examples_99-advanced** files:"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:11
@@ -7270,7 +7886,7 @@ msgstr ""
 "by-vector-eigenmodes.py``)"
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:11
-msgid "00:15.783"
+msgid "00:13.889"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:13
@@ -7282,7 +7898,7 @@ msgstr ""
 "compare.py``)"
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:13
-msgid "00:12.057"
+msgid "00:09.794"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:15
@@ -7290,7 +7906,7 @@ msgid ":ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)"
 msgstr ":ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)"
 
 #: ../../pyvista/docs/examples/99-advanced/sg_execution_times.rst:15
-msgid "00:00.377"
+msgid "00:00.311"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/warp-by-vector-eigenmodes.rst:13
@@ -7336,7 +7952,7 @@ msgid "Finally, let's make a gallery of the first 8 unique eigenmodes."
 msgstr "最後に，最初の8つの固有モードのギャラリーを作成します．"
 
 #: ../../pyvista/docs/examples/99-advanced/warp-by-vector-eigenmodes.rst:335
-msgid "**Total running time of the script:** ( 0 minutes  15.783 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  13.889 seconds)"
 msgstr ""
 
 #: ../../pyvista/docs/examples/99-advanced/warp-by-vector-eigenmodes.rst:350
@@ -7369,6 +7985,15 @@ msgstr "ここにPyVistaができることを示す簡単な例のギャラリ�
 msgid "All of these examples are live and available on MyBinder!"
 msgstr "これらの例はすべて，MyBinderでライブで入手できます!"
 
+#: ../../pyvista/docs/examples/index.rst:21
+#: ../../pyvista/docs/examples/index.rst:376
+#: ../../pyvista/docs/examples/index.rst:1009
+#: ../../pyvista/docs/examples/index.rst:1645
+#: ../../pyvista/docs/examples/index.rst:1837
+#: ../../pyvista/docs/examples/index.rst:1915
+msgid "<div class=\"sphx-glr-clear\"></div>"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:30
 msgid "Mesh Creation"
 msgstr "メッシュ作成"
@@ -7383,9 +8008,109 @@ msgid ""
 msgstr ""
 "これらのサンプルでは，さまざまなファイルタイプをPyVistaメッシュオブジェクトに読み込んだり，NumPy配列からメッシュを作成したりする方法や，球，矢印，立方体，楕円体などのプリミティブジオメトリオブジェクトを作成する方法をデモしています．メッシュがロードされると，数行のコードでプロットできるようになります．データにPyVistaを使用する場合は，これらの例を参照してください．"
 
+#: ../../pyvista/docs/examples/index.rst:41
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The &quot;Hello, "
+"world!&quot; of VTK \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:50
 msgid ":ref:`sphx_glr_examples_00-load_create-geometric-objects.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-geometric-objects.py`"
+
+#: ../../pyvista/docs/examples/index.rst:52
+#: ../../pyvista/docs/examples/index.rst:73
+#: ../../pyvista/docs/examples/index.rst:94
+#: ../../pyvista/docs/examples/index.rst:115
+#: ../../pyvista/docs/examples/index.rst:136
+#: ../../pyvista/docs/examples/index.rst:157
+#: ../../pyvista/docs/examples/index.rst:178
+#: ../../pyvista/docs/examples/index.rst:199
+#: ../../pyvista/docs/examples/index.rst:220
+#: ../../pyvista/docs/examples/index.rst:241
+#: ../../pyvista/docs/examples/index.rst:262
+#: ../../pyvista/docs/examples/index.rst:283
+#: ../../pyvista/docs/examples/index.rst:304
+#: ../../pyvista/docs/examples/index.rst:325
+#: ../../pyvista/docs/examples/index.rst:346
+#: ../../pyvista/docs/examples/index.rst:367
+#: ../../pyvista/docs/examples/index.rst:412
+#: ../../pyvista/docs/examples/index.rst:433
+#: ../../pyvista/docs/examples/index.rst:454
+#: ../../pyvista/docs/examples/index.rst:475
+#: ../../pyvista/docs/examples/index.rst:496
+#: ../../pyvista/docs/examples/index.rst:517
+#: ../../pyvista/docs/examples/index.rst:538
+#: ../../pyvista/docs/examples/index.rst:559
+#: ../../pyvista/docs/examples/index.rst:580
+#: ../../pyvista/docs/examples/index.rst:601
+#: ../../pyvista/docs/examples/index.rst:622
+#: ../../pyvista/docs/examples/index.rst:643
+#: ../../pyvista/docs/examples/index.rst:664
+#: ../../pyvista/docs/examples/index.rst:685
+#: ../../pyvista/docs/examples/index.rst:706
+#: ../../pyvista/docs/examples/index.rst:727
+#: ../../pyvista/docs/examples/index.rst:748
+#: ../../pyvista/docs/examples/index.rst:769
+#: ../../pyvista/docs/examples/index.rst:790
+#: ../../pyvista/docs/examples/index.rst:811
+#: ../../pyvista/docs/examples/index.rst:832
+#: ../../pyvista/docs/examples/index.rst:853
+#: ../../pyvista/docs/examples/index.rst:874
+#: ../../pyvista/docs/examples/index.rst:895
+#: ../../pyvista/docs/examples/index.rst:916
+#: ../../pyvista/docs/examples/index.rst:937
+#: ../../pyvista/docs/examples/index.rst:958
+#: ../../pyvista/docs/examples/index.rst:979
+#: ../../pyvista/docs/examples/index.rst:1000
+#: ../../pyvista/docs/examples/index.rst:1048
+#: ../../pyvista/docs/examples/index.rst:1069
+#: ../../pyvista/docs/examples/index.rst:1090
+#: ../../pyvista/docs/examples/index.rst:1111
+#: ../../pyvista/docs/examples/index.rst:1132
+#: ../../pyvista/docs/examples/index.rst:1153
+#: ../../pyvista/docs/examples/index.rst:1174
+#: ../../pyvista/docs/examples/index.rst:1195
+#: ../../pyvista/docs/examples/index.rst:1216
+#: ../../pyvista/docs/examples/index.rst:1237
+#: ../../pyvista/docs/examples/index.rst:1258
+#: ../../pyvista/docs/examples/index.rst:1279
+#: ../../pyvista/docs/examples/index.rst:1300
+#: ../../pyvista/docs/examples/index.rst:1321
+#: ../../pyvista/docs/examples/index.rst:1342
+#: ../../pyvista/docs/examples/index.rst:1363
+#: ../../pyvista/docs/examples/index.rst:1384
+#: ../../pyvista/docs/examples/index.rst:1405
+#: ../../pyvista/docs/examples/index.rst:1426
+#: ../../pyvista/docs/examples/index.rst:1447
+#: ../../pyvista/docs/examples/index.rst:1468
+#: ../../pyvista/docs/examples/index.rst:1489
+#: ../../pyvista/docs/examples/index.rst:1510
+#: ../../pyvista/docs/examples/index.rst:1531
+#: ../../pyvista/docs/examples/index.rst:1552
+#: ../../pyvista/docs/examples/index.rst:1573
+#: ../../pyvista/docs/examples/index.rst:1594
+#: ../../pyvista/docs/examples/index.rst:1615
+#: ../../pyvista/docs/examples/index.rst:1636
+#: ../../pyvista/docs/examples/index.rst:1681
+#: ../../pyvista/docs/examples/index.rst:1702
+#: ../../pyvista/docs/examples/index.rst:1723
+#: ../../pyvista/docs/examples/index.rst:1744
+#: ../../pyvista/docs/examples/index.rst:1765
+#: ../../pyvista/docs/examples/index.rst:1786
+#: ../../pyvista/docs/examples/index.rst:1807
+#: ../../pyvista/docs/examples/index.rst:1828
+#: ../../pyvista/docs/examples/index.rst:1864
+#: ../../pyvista/docs/examples/index.rst:1885
+#: ../../pyvista/docs/examples/index.rst:1906
+msgid "</div>"
+msgstr ""
+
+#: ../../pyvista/docs/examples/index.rst:62
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Creating parametric objects"
+" \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:71
 msgid ""
@@ -7393,57 +8118,142 @@ msgid ""
 msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py`"
 
+#: ../../pyvista/docs/examples/index.rst:83
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a pyvista.PolyData "
+"object from a point cloud of vertices and scalar arrays for those poi...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:92
 msgid ":ref:`sphx_glr_examples_00-load_create-point-cloud.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-point-cloud.py`"
+
+#: ../../pyvista/docs/examples/index.rst:104
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Creating a PolyData "
+"(triangulated surface) object from NumPy arrays of the vertices and "
+"faces.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:113
 msgid ":ref:`sphx_glr_examples_00-load_create-poly.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-poly.py`"
 
+#: ../../pyvista/docs/examples/index.rst:125
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a spline/polyline "
+"from a numpy array of XYZ vertices \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:134
 msgid ":ref:`sphx_glr_examples_00-load_create-spline.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-spline.py`"
+
+#: ../../pyvista/docs/examples/index.rst:146
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a StructuredGrid "
+"surface from NumPy arrays \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:155
 msgid ":ref:`sphx_glr_examples_00-load_create-structured-surface.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-structured-surface.py`"
 
+#: ../../pyvista/docs/examples/index.rst:167
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Drape a surface (2D array) "
+"from a line in 3D space.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:176
 msgid ":ref:`sphx_glr_examples_00-load_create-surface-draped.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-surface-draped.py`"
+
+#: ../../pyvista/docs/examples/index.rst:188
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a surface from a set"
+" of points through a Delaunay triangulation. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:197
 msgid ":ref:`sphx_glr_examples_00-load_create-tri-surface.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-tri-surface.py`"
 
+#: ../../pyvista/docs/examples/index.rst:209
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a simple uniform "
+"grid from a 3D NumPy array of values.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:218
 msgid ":ref:`sphx_glr_examples_00-load_create-uniform-grid.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-uniform-grid.py`"
+
+#: ../../pyvista/docs/examples/index.rst:230
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create an irregular, "
+"unstructured grid from NumPy arrays. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:239
 msgid ":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py`"
 
+#: ../../pyvista/docs/examples/index.rst:251
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista leverages `meshio`_"
+" to read many mesh formats not natively supported by VTK including t...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:260
 msgid ":ref:`sphx_glr_examples_00-load_read-dolfin.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_read-dolfin.py`"
+
+#: ../../pyvista/docs/examples/index.rst:272
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Read a dataset from a known"
+" file type.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:281
 msgid ":ref:`sphx_glr_examples_00-load_read-file.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_read-file.py`"
 
+#: ../../pyvista/docs/examples/index.rst:293
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Read and plot image files "
+"(JPEG, TIFF, PNG, etc).\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:302
 msgid ":ref:`sphx_glr_examples_00-load_read-image.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_read-image.py`"
+
+#: ../../pyvista/docs/examples/index.rst:314
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The VTK library supports "
+"parallel file formats. Reading meshes broken up into several files is ...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:323
 msgid ":ref:`sphx_glr_examples_00-load_read-parallel.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_read-parallel.py`"
 
+#: ../../pyvista/docs/examples/index.rst:335
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use a topographic surface "
+"to create a 3D terrain-following mesh.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:344
 msgid ":ref:`sphx_glr_examples_00-load_terrain-mesh.py`"
 msgstr ":ref:`sphx_glr_examples_00-load_terrain-mesh.py`"
+
+#: ../../pyvista/docs/examples/index.rst:356
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"- numpy arrays - "
+"trimesh.Trimesh meshes - VTK objects\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:365
 msgid ":ref:`sphx_glr_examples_00-load_wrap-trimesh.py`"
@@ -7494,117 +8304,291 @@ msgstr "ベクトルフィールドを積分して，流線を生成します．
 msgid "Smoothing surfaces"
 msgstr "サーフェスをスムージングする"
 
+#: ../../pyvista/docs/examples/index.rst:401
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Perform boolean operations "
+"with closed surfaces (intersect, cut, etc.).\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:410
 msgid ":ref:`sphx_glr_examples_01-filter_boolean-operations.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_boolean-operations.py`"
+
+#: ../../pyvista/docs/examples/index.rst:422
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extract the coordinates of "
+"the centers of all cells/faces in a mesh.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:431
 msgid ":ref:`sphx_glr_examples_01-filter_cell-centers.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_cell-centers.py`"
 
+#: ../../pyvista/docs/examples/index.rst:443
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Clip any PyVista dataset by"
+" a pyvista.PolyData surface mesh using the pyvista.DataSet.Filters.c...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:452
 msgid ":ref:`sphx_glr_examples_01-filter_clipping-with-surface.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_clipping-with-surface.py`"
+
+#: ../../pyvista/docs/examples/index.rst:464
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Clip/cut any dataset using "
+"using planes or boxes. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:473
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_clipping.py`"
 
+#: ../../pyvista/docs/examples/index.rst:485
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\" Compute normals on a "
+"surface. \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:494
 msgid ":ref:`sphx_glr_examples_01-filter_compute-normals.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_compute-normals.py`"
+
+#: ../../pyvista/docs/examples/index.rst:506
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\" Calculate mass properties "
+"such as the volume or area of datasets \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:515
 msgid ":ref:`sphx_glr_examples_01-filter_compute-volume.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_compute-volume.py`"
 
+#: ../../pyvista/docs/examples/index.rst:527
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use the connectivity filter"
+" to remove noisy isosurfaces.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:536
 msgid ":ref:`sphx_glr_examples_01-filter_connectivity.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_connectivity.py`"
+
+#: ../../pyvista/docs/examples/index.rst:548
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Generate iso-lines or "
+"-surfaces for the scalars of a surface or volume.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:557
 msgid ":ref:`sphx_glr_examples_01-filter_contouring.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_contouring.py`"
 
+#: ../../pyvista/docs/examples/index.rst:569
+msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Decimate a mesh\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:578
 msgid ":ref:`sphx_glr_examples_01-filter_decimate.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_decimate.py`"
+
+#: ../../pyvista/docs/examples/index.rst:590
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Compute the average "
+"thickness between two surfaces.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:599
 msgid ":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py`"
 
+#: ../../pyvista/docs/examples/index.rst:611
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extract the cells in a mesh"
+" that exist inside or outside a closed surface of another mesh\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:620
 msgid ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py`"
+
+#: ../../pyvista/docs/examples/index.rst:632
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extracts edges from a "
+"surface. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:641
 msgid ":ref:`sphx_glr_examples_01-filter_extract-edges.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_extract-edges.py`"
 
+#: ../../pyvista/docs/examples/index.rst:653
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Perform a Gaussian "
+"convolution on a uniformly gridded data set.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:662
 msgid ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py`"
+
+#: ../../pyvista/docs/examples/index.rst:674
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Calculates the geodesic "
+"path between two vertices using Dijkstra&#x27;s algorithm \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:683
 msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_geodesic.py`"
 
+#: ../../pyvista/docs/examples/index.rst:695
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use vectors in a dataset to"
+" plot and orient glyphs/geometric objects. \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:704
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_glyphs.py`"
+
+#: ../../pyvista/docs/examples/index.rst:716
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use parameters in a dataset"
+" to plot and orient glyphs/geometric objects. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:725
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs_table.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_glyphs_table.py`"
 
+#: ../../pyvista/docs/examples/index.rst:737
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Estimate the gradient of a "
+"scalar or vector field in a data set.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:746
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_gradients.py`"
+
+#: ../../pyvista/docs/examples/index.rst:758
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Interpolate one mesh&#x27;s"
+" point/cell arrays onto another mesh&#x27;s nodes using a Gaussian Kernel. "
+"\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:767
 msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_interpolate.py`"
 
+#: ../../pyvista/docs/examples/index.rst:779
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Leverage a powerful VTK "
+"algorithm for computing mesh quality.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:788
 msgid ":ref:`sphx_glr_examples_01-filter_mesh-quality.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_mesh-quality.py`"
+
+#: ../../pyvista/docs/examples/index.rst:800
+#: ../../pyvista/docs/examples/index.rst:1874
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Single line segment ray "
+"tracing for PolyData objects. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:809
 msgid ":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py`"
 
+#: ../../pyvista/docs/examples/index.rst:821
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"pyvista.PolyData surfaces "
+"and pointsets can easily be projected to a plane defined by a normal ...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:830
 msgid ":ref:`sphx_glr_examples_01-filter_project-plane.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_project-plane.py`"
+
+#: ../../pyvista/docs/examples/index.rst:842
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Resample one mesh&#x27;s "
+"point/cell arrays onto another mesh&#x27;s nodes. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:851
 msgid ":ref:`sphx_glr_examples_01-filter_resample.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_resample.py`"
 
+#: ../../pyvista/docs/examples/index.rst:863
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extract thin planar slices "
+"from a volume \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:872
 msgid ":ref:`sphx_glr_examples_01-filter_slicing.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_slicing.py`"
+
+#: ../../pyvista/docs/examples/index.rst:884
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Integrate a vector field to"
+" generate streamlines. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:893
 msgid ":ref:`sphx_glr_examples_01-filter_streamlines.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_streamlines.py`"
 
+#: ../../pyvista/docs/examples/index.rst:905
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Increase the number of "
+"triangles in a single, connected triangular mesh.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:914
 msgid ":ref:`sphx_glr_examples_01-filter_subdivide.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_subdivide.py`"
+
+#: ../../pyvista/docs/examples/index.rst:926
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Smoothing rough edges of a "
+"surface mesh \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:935
 msgid ":ref:`sphx_glr_examples_01-filter_surface-smoothing.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_surface-smoothing.py`"
 
+#: ../../pyvista/docs/examples/index.rst:947
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Using common filters like "
+"thresholding and clipping \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:956
 msgid ":ref:`sphx_glr_examples_01-filter_using-filters.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_using-filters.py`"
 
+#: ../../pyvista/docs/examples/index.rst:968
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a voxel model (like "
+"legos) of a closed surface or volumetric mesh.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:977
 msgid ":ref:`sphx_glr_examples_01-filter_voxelize.py`"
 msgstr ":ref:`sphx_glr_examples_01-filter_voxelize.py`"
+
+#: ../../pyvista/docs/examples/index.rst:989
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example applies the "
+"warp_by_vector filter to a sphere mesh that has 3D displacement vector...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:998
 msgid ":ref:`sphx_glr_examples_01-filter_warp-by-vector.py`"
@@ -7668,117 +8652,289 @@ msgstr "メッシュ上にまとったテクスチャ/イメージを追加す�
 msgid "Rendering a depth image"
 msgstr "デプスイメージをレンダーする"
 
+#: ../../pyvista/docs/examples/index.rst:1037
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Add a background image with"
+" add_background_image\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1046
 msgid ":ref:`sphx_glr_examples_02-plot_background_image.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_background_image.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1058
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example demonstrates "
+"how to remove elements from a scene.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1067
 msgid ":ref:`sphx_glr_examples_02-plot_clear.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_clear.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1079
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use a Matplotlib, Colorcet,"
+" cmocean, or custom colormap when plotting scalar values. \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1088
 msgid ":ref:`sphx_glr_examples_02-plot_cmap.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_cmap.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1100
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Depth peeling is a "
+"technique to correctly render translucent geometry. This is not enabled by "
+"d...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1109
 msgid ":ref:`sphx_glr_examples_02-plot_depth-peeling.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_depth-peeling.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1121
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Show the edges of all "
+"geometries within a mesh \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1130
 msgid ":ref:`sphx_glr_examples_02-plot_edges.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_edges.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1142
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Eye-Dome Lighting (EDL) is "
+"a non-photorealistic, image-based shading technique designed to impr...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1151
 msgid ":ref:`sphx_glr_examples_02-plot_edl.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_edl.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1163
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Add a floor/wall at the "
+"boundary of the rendering scene. \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1172
 msgid ":ref:`sphx_glr_examples_02-plot_floors.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_floors.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1184
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Specify specific cells to "
+"hide when plotting.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1193
 msgid ":ref:`sphx_glr_examples_02-plot_ghost-cells.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_ghost-cells.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1205
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Generate a moving gif from "
+"an active plotter \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1214
 msgid ":ref:`sphx_glr_examples_02-plot_gif.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_gif.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1226
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot a depth image as "
+"viewed from a camera overlooking the &quot;hills&quot; example mesh. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1235
 msgid ":ref:`sphx_glr_examples_02-plot_image_depth.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_image_depth.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1247
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The add_mesh function has "
+"an interpolate_before_map argument - this affects the way scalar data...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1256
 msgid ":ref:`sphx_glr_examples_02-plot_interpolate-before-map.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_interpolate-before-map.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1268
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Make an animation of an "
+"isovalue through a volumetric dataset \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1277
 msgid ":ref:`sphx_glr_examples_02-plot_isovalue.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_isovalue.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1289
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use string arrays in a "
+"point set to label points \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1298
 msgid ":ref:`sphx_glr_examples_02-plot_labels.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_labels.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1310
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Control aspects of the "
+"rendered mesh&#x27;s lighting such as Ambient, Diffuse, and Specular. These "
+"o...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1319
 msgid ":ref:`sphx_glr_examples_02-plot_lighting.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_lighting.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1331
+msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Linked Views in Subplots\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1340
 msgid ":ref:`sphx_glr_examples_02-plot_linked.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_linked.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1352
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create an animated MP4 "
+"movie of a rendering scene \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1361
 msgid ":ref:`sphx_glr_examples_02-plot_movie.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_movie.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1373
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\" Subplotting: having "
+"multiple scenes in a single window \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1382
 msgid ":ref:`sphx_glr_examples_02-plot_multi-window.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_multi-window.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1394
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot a mesh&#x27;s scalar "
+"array with an opacity transfer function or opacity mapping based on a "
+"scal...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1403
 msgid ":ref:`sphx_glr_examples_02-plot_opacity.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_opacity.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1415
+msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Orbit around a scene.\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1424
 msgid ":ref:`sphx_glr_examples_02-plot_orbit.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_orbit.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1436
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"View three orthogonal "
+"slices from a mesh.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1445
 msgid ":ref:`sphx_glr_examples_02-plot_ortho-slices.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_ortho-slices.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1457
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot the values of a "
+"dataset over a line through that dataset \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1466
 msgid ":ref:`sphx_glr_examples_02-plot_plot-over-line.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_plot-over-line.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1478
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Walk through of all the "
+"different capabilities of scalar bars and how a user can customize "
+"scal...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1487
 msgid ":ref:`sphx_glr_examples_02-plot_scalar-bars.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_scalar-bars.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1499
+msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Saving Screenshots\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1508
 msgid ":ref:`sphx_glr_examples_02-plot_screenshot.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_screenshot.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1520
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Comparison of default, flat"
+" shading vs. smooth shading. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1529
 msgid ":ref:`sphx_glr_examples_02-plot_shading.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_shading.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1541
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Generate and visualize "
+"meshes from data in longitude-latitude coordinates. \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1550
 msgid ":ref:`sphx_glr_examples_02-plot_spherical.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_spherical.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1562
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot a mesh with an image "
+"projected onto it as a texture. \">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1571
 msgid ":ref:`sphx_glr_examples_02-plot_texture.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_texture.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1583
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista has a few coloring "
+"themes for you to choose! \">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1592
 msgid ":ref:`sphx_glr_examples_02-plot_themes.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_themes.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1604
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This is very similar to the"
+" ref_texture_example example except it is focused on plotting aerial...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1613
 msgid ":ref:`sphx_glr_examples_02-plot_topo-map.py`"
 msgstr ":ref:`sphx_glr_examples_02-plot_topo-map.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1625
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Volume render uniform mesh "
+"types like pyvista.UniformGrid or 3D NumPy arrays.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1634
 msgid ":ref:`sphx_glr_examples_02-plot_volume.py`"
@@ -7806,33 +8962,85 @@ msgid ""
 msgstr ""
 "ここでは，さまざまなウィジェット，これらのウィジェットを利用して一般的なタスクを実行するヘルパー・メソッド，およびユーザー定義タスクと処理ルーチン用のウィジェットを利用する方法について説明します．"
 
+#: ../../pyvista/docs/examples/index.rst:1670
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The box widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_box_widget and "
+"pyvis...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1679
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_box-widget.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1691
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use a checkbox to turn "
+"on/off the visibility of meshes in a scene.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1700
 msgid ":ref:`sphx_glr_examples_03-widgets_checkbox-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_checkbox-widget.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1712
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The line widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_line_widget and "
+"pyv...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1721
 msgid ":ref:`sphx_glr_examples_03-widgets_line-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_line-widget.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1733
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use a class based callback "
+"to track multiple slider widgets for updating a single mesh.\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1742
 msgid ":ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1754
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The plane widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_plane_widget and "
+"p...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1763
 msgid ":ref:`sphx_glr_examples_03-widgets_plane-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_plane-widget.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1775
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The slider widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_slider_widget and...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1784
 msgid ":ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`"
 
+#: ../../pyvista/docs/examples/index.rst:1796
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The sphere widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_sphere_widget and...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1805
 msgid ":ref:`sphx_glr_examples_03-widgets_sphere-widget.py`"
 msgstr ":ref:`sphx_glr_examples_03-widgets_sphere-widget.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1817
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\" A spline widget can be "
+"enabled and disabled by the pyvista.WidgetHelper.add_spline_widget and "
+"...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1826
 msgid ":ref:`sphx_glr_examples_03-widgets_spline-widget.py`"
@@ -7848,6 +9056,12 @@ msgid ""
 "developers."
 msgstr "ここでは，ユーザと開発者による，より長く，より高度な例をいくつか紹介します．"
 
+#: ../../pyvista/docs/examples/index.rst:1853
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Here is some velocity data "
+"from a glacier modelling simulation that is compared across nodes in...\">"
+msgstr ""
+
 #: ../../pyvista/docs/examples/index.rst:1862
 msgid ":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`"
 msgstr ":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`"
@@ -7855,6 +9069,12 @@ msgstr ":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`"
 #: ../../pyvista/docs/examples/index.rst:1883
 msgid ":ref:`sphx_glr_examples_99-advanced_ray-trace.py`"
 msgstr ":ref:`sphx_glr_examples_99-advanced_ray-trace.py`"
+
+#: ../../pyvista/docs/examples/index.rst:1895
+msgid ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example applies the "
+"warp_by_vector filter to a cube whose eigenmodes have been computed us...\">"
+msgstr ""
 
 #: ../../pyvista/docs/examples/index.rst:1904
 msgid ":ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py`"

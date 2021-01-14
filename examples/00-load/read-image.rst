@@ -39,7 +39,7 @@ Read and plot image files (JPEG, TIFF, PNG, etc).
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-18
 
-PyVista fully supportes reading images into their own spatially referenced
+PyVista fully supports reading images into their own spatially referenced
 data objects (this example) as well as supports texture mapping of images
 onto datasets (see :ref:`ref_texture_example`).
 
@@ -129,7 +129,7 @@ image's true colors are used and not mapped.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.538 seconds)
+   **Total running time of the script:** ( 0 minutes  6.090 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-image.py:

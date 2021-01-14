@@ -31,7 +31,7 @@ We can compute the thickness between the two surfaces using a few different
 methods. First, we will demo a method where we compute the normals of the
 bottom surface, and then project a ray to the top surface to compute the
 distance along the surface normals. Second, we will use a KDTree to compute
-the distance from eevery point in the bottom mesh to it's closest point in
+the distance from every point in the bottom mesh to it's closest point in
 the top mesh.
 
 .. GENERATED FROM PYTHON SOURCE LINES 18-35
@@ -46,7 +46,7 @@ the top mesh.
         mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50,
                                         hillamplitude=0.5)
         mesh.rotate_y(-10) # give the surfaces some tilt
-    
+
         return mesh
 
     h0 = hill(1).elevation()
@@ -117,7 +117,7 @@ Compute normals of lower surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-54
 
-Travel along noramals to the other surface and compute the thickness on each
+Travel along normals to the other surface and compute the thickness on each
 vector.
 
 .. GENERATED FROM PYTHON SOURCE LINES 54-70
@@ -254,7 +254,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.187 seconds)
+   **Total running time of the script:** ( 0 minutes  6.285 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

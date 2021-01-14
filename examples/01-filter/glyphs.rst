@@ -53,7 +53,7 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 
     mesh = examples.download_carotid().threshold(145, scalars="scalars")
 
-    # Make a geometric obhect to use as the glyph
+    # Make a geometric object to use as the glyph
     geom = pv.Arrow()  # This could be any dataset
 
     # Perform the glyph
@@ -221,7 +221,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.008 seconds)
+   **Total running time of the script:** ( 0 minutes  6.167 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:

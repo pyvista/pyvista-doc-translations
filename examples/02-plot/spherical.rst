@@ -39,7 +39,7 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
         Parameters
         ----------
         points: numpy.array
-            One-dimensional array of uniformy spaced values of shape (M,)
+            One-dimensional array of uniformly spaced values of shape (M,)
         bound_position: bool, optional
             The desired position of the bounds relative to the position
             of the points.
@@ -204,8 +204,8 @@ Vertical wind
  .. code-block:: none
 
 
-    [(31654.952131182472, 31689.935041338722, 31685.560529619972),
-     (-43.28173828125, -8.298828125, -12.67333984375),
+    [(31646.62050714508, 31596.439110660704, 31614.769677066954),
+     (31.676513671875, -18.5048828125, -0.17431640625),
      (0.0, 0.0, 1.0)]
 
 
@@ -272,7 +272,7 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.221 seconds)
+   **Total running time of the script:** ( 0 minutes  1.894 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:

@@ -23,7 +23,7 @@ Subdivide Cells
 
 Increase the number of triangles in a single, connected triangular mesh.
 
-The :func:`pyvista.PolyDataFilters.subdivide` filter utilitizes three different
+The :func:`pyvista.PolyDataFilters.subdivide` filter utilizes three different
 subdivision algorithms to subdivide a mesh's cells: `butterfly`, `loop`,
 or `linear`.
 
@@ -141,7 +141,7 @@ Run the subdivisions for 1 and 3 levels.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.805 seconds)
+   **Total running time of the script:** ( 0 minutes  1.561 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_subdivide.py:

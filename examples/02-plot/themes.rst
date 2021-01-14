@@ -72,7 +72,7 @@ do not drastically change the brightness of your screen when working in dark
 environments.
 
 Here's an example of our default plotting theme - this is what you would see
-by default after running any of our examnples.
+by default after running any of our examples.
 
 .. GENERATED FROM PYTHON SOURCE LINES 32-37
 
@@ -255,7 +255,7 @@ window!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.482 seconds)
+   **Total running time of the script:** ( 0 minutes  2.831 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:

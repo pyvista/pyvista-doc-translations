@@ -52,7 +52,7 @@ meshes in PyVista to cut the first mesh by the second.
         grid = pv.StructuredGrid(*np.meshgrid(x, x, x))
         return grid.extract_surface().triangulate()
 
-    # Create to examplee PolyData meshes for boolean operations
+    # Create to example PolyData meshes for boolean operations
     sphere = pv.Sphere(radius=0.65, center=(0, 0, 0))
     cube = make_cube()
 
@@ -287,7 +287,7 @@ Order of operations does not matter for boolean union.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.881 seconds)
+   **Total running time of the script:** ( 0 minutes  11.811 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:

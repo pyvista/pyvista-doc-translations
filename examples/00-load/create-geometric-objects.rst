@@ -40,7 +40,7 @@ The "Hello, world!" of VTK
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-16
 
-This runs through several of the available geomoetric objects available in
+This runs through several of the available geometric objects available in
 VTK which PyVista provides simple convenience methods for generating.
 
 Let's run through creating a few geometric objects!
@@ -124,7 +124,7 @@ Now let's plot them all in one window
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.607 seconds)
+   **Total running time of the script:** ( 0 minutes  3.350 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-geometric-objects.py:

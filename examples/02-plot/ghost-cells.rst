@@ -23,7 +23,7 @@ Hide Cells with Ghosting
 
 Specify specific cells to hide when plotting.
 
-This is a lightwieght alternative to thresholding to quickly hide cells in a
+This is a lightweight alternative to thresholding to quickly hide cells in a
 mesh without creating a new mesh.
 
 Notably, the mesh must be cast to an :class:`pyvista.UnstructuredGrid` type
@@ -101,7 +101,7 @@ Now we can plot the mesh and those cells will be hidden
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.473 seconds)
+   **Total running time of the script:** ( 0 minutes  5.691 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ghost-cells.py:

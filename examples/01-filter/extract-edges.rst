@@ -63,7 +63,7 @@ To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
     # Extract the edges above a 12 degree feature angle
     edges = mesh.extract_feature_edges(12)
 
-    # Render the edge lines ontop of the original mesh
+    # Render the edge lines on top of the original mesh
     p = pv.Plotter()
     p.add_mesh(mesh, color=True)
     p.add_mesh(edges, color="red", line_width=5)
@@ -94,7 +94,7 @@ To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
 
 .. GENERATED FROM PYTHON SOURCE LINES 39-41
 
-We can do this anaylsis for any :class:`pyvista.PolyData` object. Let's try
+We can do this analysis for any :class:`pyvista.PolyData` object. Let's try
 the cow mesh example:
 
 .. GENERATED FROM PYTHON SOURCE LINES 41-53
@@ -223,7 +223,7 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.329 seconds)
+   **Total running time of the script:** ( 0 minutes  8.992 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:

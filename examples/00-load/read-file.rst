@@ -208,7 +208,7 @@ The faces from the mesh are also directly accessible as a NumPy array:
 Loading other files types is just as easy! Simply pass your file path to the
 :func:`pyvista.read` function and that's it!
 
-Here are a few other examples - siply replace ``examples.download_*`` in the
+Here are a few other examples - simply replace ``examples.download_*`` in the
 examples below with ``pyvista.read('path/to/you/file.ext')``
 
 .. GENERATED FROM PYTHON SOURCE LINES 63-64
@@ -345,7 +345,7 @@ Example VTK file
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.665 seconds)
+   **Total running time of the script:** ( 0 minutes  4.658 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:

@@ -41,7 +41,7 @@ Create a surface from a set of points through a Delaunay triangulation.
 
 .. GENERATED FROM PYTHON SOURCE LINES 13-17
 
-Simple Traingulations
+Simple Triangulations
 +++++++++++++++++++++
 
 First, create some points for the surface.
@@ -74,11 +74,11 @@ First, create some points for the surface.
  .. code-block:: none
 
 
-    array([[-203.7916047 , -195.87502117,    1.84092485],
-           [-175.58729376, -195.87502117,    3.14330283],
-           [-162.70131003, -195.87502117,    3.90881077],
-           [-134.46399804, -195.87502117,    5.94642769],
-           [-118.16486555, -195.87502117,    7.30582677]])
+    array([[-199.29632605, -195.95594142,    2.01230807],
+           [-178.2591452 , -195.95594142,    2.99342284],
+           [-158.85498906, -195.95594142,    4.15157699],
+           [-136.75754134, -195.95594142,    5.75519187],
+           [-119.9072569 , -195.95594142,    7.14452354]])
 
 
 
@@ -111,8 +111,8 @@ be encompassed in a :class:`pyvista.PolyData` object.
  .. code-block:: none
 
 
-    [(638.5443446017938, 641.2211352349175, 690.3322965224077),
-     (-1.3113549060288676, 1.365435727094848, 50.47659701458497),
+    [(639.4122177556694, 640.919468045259, 689.0630904347823),
+     (1.0073212321027682, 2.5145715216922895, 50.65819391121565),
      (0.0, 0.0, 1.0)]
 
 
@@ -146,8 +146,8 @@ triangulation to turn those boring discrete points into a connected surface.
  .. code-block:: none
 
 
-    [(638.5443446017938, 641.2211352349175, 690.3322965224077),
-     (-1.3113549060288676, 1.365435727094848, 50.47659701458497),
+    [(639.4122177556694, 640.919468045259, 689.0630904347823),
+     (1.0073212321027682, 2.5145715216922895, 50.65819391121565),
      (0.0, 0.0, 1.0)]
 
 
@@ -188,8 +188,8 @@ Masked Triangulations
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>100</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
-    <tr><td>X Bounds</td><td>1.452e-03, 9.293e+00</td></tr>
-    <tr><td>Y Bounds</td><td>7.073e-02, 9.260e+00</td></tr>
+    <tr><td>X Bounds</td><td>3.188e-02, 9.260e+00</td></tr>
+    <tr><td>Y Bounds</td><td>9.289e-03, 9.272e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -226,8 +226,8 @@ Run the triangulation on these points
  .. code-block:: none
 
 
-    [(4.647346597293414, 4.66516479448077, 25.24544146321564),
-     (4.647346597293414, 4.66516479448077, 0.0),
+    [(4.645912186545785, 4.640745668672717, 25.259183607870522),
+     (4.645912186545785, 4.640745668672717, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -235,7 +235,7 @@ Run the triangulation on these points
 .. GENERATED FROM PYTHON SOURCE LINES 70-72
 
 Note that some of the outer edges are unconstrained and the triangulation
-added unwanted triangles. We cn mitigate that with the ``alpha`` parameter.
+added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
 .. GENERATED FROM PYTHON SOURCE LINES 72-76
 
@@ -260,8 +260,8 @@ added unwanted triangles. We cn mitigate that with the ``alpha`` parameter.
  .. code-block:: none
 
 
-    [(4.647346597293414, 4.66516479448077, 25.24544146321564),
-     (4.647346597293414, 4.66516479448077, 0.0),
+    [(4.645912186545785, 4.640745668672717, 25.259183607870522),
+     (4.645912186545785, 4.640745668672717, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -307,8 +307,8 @@ We could also add a polygon to ignore during the triangulation via the
  .. code-block:: none
 
 
-    [(4.647346597293414, 4.66516479448077, 25.24544146321564),
-     (4.647346597293414, 4.66516479448077, 0.0),
+    [(4.645912186545785, 4.640745668672717, 25.259183607870522),
+     (4.645912186545785, 4.640745668672717, 0.0),
      (0.0, 1.0, 0.0)]
 
 
@@ -316,7 +316,7 @@ We could also add a polygon to ignore during the triangulation via the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.192 seconds)
+   **Total running time of the script:** ( 0 minutes  2.757 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:
