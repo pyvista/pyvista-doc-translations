@@ -92,7 +92,7 @@ path. To do this, we have added a convenient helper method which leverages the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.519 seconds)
+   **Total running time of the script:** ( 0 minutes  0.618 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_spline-widget.py:
