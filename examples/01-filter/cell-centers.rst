@@ -160,7 +160,7 @@ We can also do this for full 3D meshes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.324 seconds)
+   **Total running time of the script:** ( 0 minutes  2.541 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:
