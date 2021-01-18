@@ -147,7 +147,7 @@ with that same name at a later time, it will replace the previous actor:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.912 seconds)
+   **Total running time of the script:** ( 0 minutes  0.972 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_clear.py:
