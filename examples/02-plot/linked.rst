@@ -79,7 +79,7 @@ Linked Views in Subplots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.662 seconds)
+   **Total running time of the script:** ( 0 minutes  5.881 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_linked.py:

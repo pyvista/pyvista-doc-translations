@@ -5,64 +5,64 @@
 
 Computation times
 =================
-**07:58.994** total execution time for **examples_02-plot** files:
+**07:49.081** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_orbit.py` (``orbit.py``)                                   | 03:05.859 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_orbit.py` (``orbit.py``)                                   | 02:59.560 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_depth-peeling.py` (``depth-peeling.py``)                   | 00:59.810 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_depth-peeling.py` (``depth-peeling.py``)                   | 00:52.113 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_volume.py` (``volume.py``)                                 | 00:43.748 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_volume.py` (``volume.py``)                                 | 00:42.190 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)                             | 00:31.713 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)                             | 00:33.193 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_edl.py` (``edl.py``)                                       | 00:24.096 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_edl.py` (``edl.py``)                                       | 00:22.729 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)                             | 00:18.994 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)                             | 00:21.487 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_movie.py` (``movie.py``)                                   | 00:14.955 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_movie.py` (``movie.py``)                                   | 00:13.833 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_opacity.py` (``opacity.py``)                               | 00:11.571 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_opacity.py` (``opacity.py``)                               | 00:11.616 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_texture.py` (``texture.py``)                               | 00:10.536 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_texture.py` (``texture.py``)                               | 00:10.067 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_edges.py` (``edges.py``)                                   | 00:07.540 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_edges.py` (``edges.py``)                                   | 00:08.208 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_lighting.py` (``lighting.py``)                             | 00:06.746 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_lighting.py` (``lighting.py``)                             | 00:06.906 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)                                     | 00:06.196 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)                                     | 00:06.343 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)                       | 00:05.924 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_gif.py` (``gif.py``)                                       | 00:06.313 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_gif.py` (``gif.py``)                                       | 00:05.799 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_scalar-bars.py` (``scalar-bars.py``)                       | 00:06.226 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:05.676 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_ghost-cells.py` (``ghost-cells.py``)                       | 00:06.122 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_linked.py` (``linked.py``)                                 | 00:05.662 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_ortho-slices.py` (``ortho-slices.py``)                     | 00:05.912 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_scalar-bars.py` (``scalar-bars.py``)                       | 00:05.574 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_linked.py` (``linked.py``)                                 | 00:05.881 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_ortho-slices.py` (``ortho-slices.py``)                     | 00:04.958 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:05.589 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_multi-window.py` (``multi-window.py``)                     | 00:04.374 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_multi-window.py` (``multi-window.py``)                     | 00:04.469 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_interpolate-before-map.py` (``interpolate-before-map.py``) | 00:03.648 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_interpolate-before-map.py` (``interpolate-before-map.py``) | 00:03.727 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)                                 | 00:03.062 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_themes.py` (``themes.py``)                                 | 00:03.093 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_themes.py` (``themes.py``)                                 | 00:02.858 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_floors.py` (``floors.py``)                                 | 00:02.907 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_spherical.py` (``spherical.py``)                           | 00:01.968 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_spherical.py` (``spherical.py``)                           | 00:02.127 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)                                 | 00:01.878 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_plot-over-line.py` (``plot-over-line.py``)                 | 00:02.057 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_plot-over-line.py` (``plot-over-line.py``)                 | 00:01.785 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_labels.py` (``labels.py``)                                 | 00:01.824 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_shading.py` (``shading.py``)                               | 00:01.218 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_shading.py` (``shading.py``)                               | 00:01.390 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_image_depth.py` (``image_depth.py``)                       | 00:01.054 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_image_depth.py` (``image_depth.py``)                       | 00:01.153 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)                                   | 00:00.972 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)                                   | 00:01.118 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_screenshot.py` (``screenshot.py``)                         | 00:00.818 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_screenshot.py` (``screenshot.py``)                         | 00:00.930 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+

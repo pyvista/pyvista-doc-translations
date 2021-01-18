@@ -5,64 +5,64 @@
 
 Computation times
 =================
-**04:28.943** total execution time for **examples_01-filter** files:
+**04:44.921** total execution time for **examples_01-filter** files:
 
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_clipping-with-surface.py` (``clipping-with-surface.py``)               | 00:55.824 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_clipping-with-surface.py` (``clipping-with-surface.py``)               | 00:59.674 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)                                           | 00:30.200 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)                                           | 00:33.943 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_voxelize.py` (``voxelize.py``)                                         | 00:23.840 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_voxelize.py` (``voxelize.py``)                                         | 00:25.883 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-normals.py``)                           | 00:17.756 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-normals.py``)                           | 00:18.424 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)                             | 00:17.521 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)                             | 00:18.217 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)                                         | 00:13.743 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)                                         | 00:14.442 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-smoothing.py``)                     | 00:13.453 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-operations.py``)                     | 00:13.547 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-operations.py``)                     | 00:11.957 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-smoothing.py``)                     | 00:12.748 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)                                         | 00:10.950 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)                                   | 00:11.695 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)                                   | 00:10.258 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)                                         | 00:11.556 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)                               | 00:09.838 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)                               | 00:10.543 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)                                   | 00:07.227 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)                                   | 00:07.581 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-between-surfaces.py``)       | 00:06.504 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)                                             | 00:06.954 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)                                             | 00:06.118 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-between-surfaces.py``)       | 00:05.758 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)                                     | 00:05.816 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)                                     | 00:05.646 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_surface-smoothing.py` (``surface-smoothing.py``)                       | 00:03.208 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_surface-smoothing.py` (``surface-smoothing.py``)                       | 00:03.214 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)                                         | 00:03.084 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)                                         | 00:03.171 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)                                         | 00:02.830 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)                                         | 00:02.847 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)                                 | 00:02.774 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)                                       | 00:02.625 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)                               | 00:02.465 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)                               | 00:02.533 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)                                       | 00:02.442 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)                                 | 00:02.371 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)                                 | 00:02.321 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)                                 | 00:02.351 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` (``extract-cells-inside-surface.py``) | 00:01.809 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_subdivide.py` (``subdivide.py``)                                       | 00:01.678 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_subdivide.py` (``subdivide.py``)                                       | 00:01.606 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)                               | 00:01.652 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)                               | 00:01.574 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` (``extract-cells-inside-surface.py``) | 00:01.601 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)                             | 00:01.332 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_warp-by-vector.py` (``warp-by-vector.py``)                             | 00:01.460 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)                                 | 00:01.293 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)                                 | 00:01.446 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)                                 | 00:00.736 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)                                 | 00:00.806 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)                             | 00:00.469 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)                             | 00:00.556 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
