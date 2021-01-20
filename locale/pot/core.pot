@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-17 01:23+0000\n"
+"POT-Creation-Date: 2021-01-20 01:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -609,6 +609,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.fill_holes:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic_distance:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.multi_ray_trace:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.plot_curvature:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.ray_trace:0
@@ -760,6 +761,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.fill_holes:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic_distance:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.multi_ray_trace:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.plot_boundaries:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.plot_curvature:0
@@ -812,7 +814,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.core.common.Common.find_closest_cell:12
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock:11
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:29
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip_box:21
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip_scalar:18
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.compute_implicit_distance:15
@@ -831,6 +833,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.flip_normals:4
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic:16
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.geodesic_distance:12
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:19
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.multi_ray_trace:30
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.project_points_to_plane:13
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.ray_trace:23
@@ -840,7 +843,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.strip:39
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.subdivide:31
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.tube:24
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:25
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:29
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip_box:21
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.RectilinearGrid:13
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.UniformGrid:13
@@ -1010,7 +1013,7 @@ msgid "Accepts a vtk transformation object or a 4x4 transformation matrix."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.core.common.Common.translate:3
-msgid "Length 3 list or array."
+msgid "Length 3 list, tuple or array."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/common.py:docstring of pyvista.Common.volume:3
@@ -1280,7 +1283,7 @@ msgid "Transform cell data into point data."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
-msgid ":obj:`clip <pyvista.core.filters.pyvista.DataSetFilters.clip>`\\ \\(\\[normal\\, origin\\, invert\\, value\\, inplace\\]\\)"
+msgid ":obj:`clip <pyvista.core.filters.pyvista.DataSetFilters.clip>`\\ \\(\\[normal\\, origin\\, invert\\, value\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -1808,18 +1811,23 @@ msgstr ""
 msgid "Updates mesh in-place while returning nothing."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:20
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:20
-msgid "**mesh** -- Clipped mesh when ``inplace=False``.  When ``inplace=True``, ``None``"
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:19
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:19
+msgid "Return both unclipped and clipped parts of the dataset."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:26
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:26
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:22
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:22
+msgid "**mesh** -- Clipped mesh when ``inplace=False``.  When ``inplace=True``, ``None``. When ``return_clipped=True``, a tuple containing the unclipped and clipped datasets, regardless of the setting of ``inplace``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:30
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:30
 msgid "Clip a cube along the +X direction.  ``triangulate`` is used as the cube is initially composed of quadrilateral faces and subdivide only works on triangles."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:34
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:34
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:38
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:38
 msgid "Clip a cube in the +Z direction.  This leaves half a cube below the XY plane."
 msgstr ""
 
@@ -3094,6 +3102,15 @@ msgid "Calculate the geodesic distance between two vertices using Dijkstra's alg
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+msgid ":obj:`intersection <pyvista.core.filters.pyvista.PolyDataFilters.intersection>`\\ \\(mesh\\[\\, split\\_first\\, split\\_second\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:1
+msgid "Compute the intersection between two meshes."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ":obj:`multi_ray_trace <pyvista.core.filters.pyvista.PolyDataFilters.multi_ray_trace>`\\ \\(origins\\, directions\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -3618,6 +3635,42 @@ msgstr ""
 msgid "**length** -- Length of the geodesic segment."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:3
+msgid "The mesh to intersect with."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:5
+msgid "If `True`, return the first input mesh split by the intersection with the second input mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:8
+msgid "If `True`, return the second input mesh split by the intersection with the first input mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:12
+msgid "* **intersection** (*pyvista.PolyData*) -- The intersection line. * **first_split** (*pyvista.PolyData*) -- The first mesh split along the intersection. Returns the original first mesh   if `split_first` is False. * **second_split** (*pyvista.PolyData*) -- The second mesh split along the intersection. Returns the original second mesh   if `split_second` is False."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:12
+msgid "**intersection** (*pyvista.PolyData*) -- The intersection line."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:13
+msgid "**first_split** (*pyvista.PolyData*) -- The first mesh split along the intersection. Returns the original first mesh if `split_first` is False."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:15
+msgid "**second_split** (*pyvista.PolyData*) -- The second mesh split along the intersection. Returns the original second mesh if `split_second` is False."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:20
+msgid "Intersect two spheres, returning the intersection and both spheres which have new points/cells along the intersection line."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.intersection:28
+msgid "The mesh splitting takes additional time and can be turned off for either mesh individually."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.PolyDataFilters.multi_ray_trace:3
 msgid "This requires a mesh with only triangular faces, an array of origin points and an equal sized array of direction vectors to trace along."
 msgstr ""
@@ -4056,7 +4109,7 @@ msgid ":obj:`cell_data_to_point_data <pyvista.core.filters.pyvista.CompositeFilt
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:101:<autosummary>:1
-msgid ":obj:`clip <pyvista.core.filters.pyvista.CompositeFilters.clip>`\\ \\(\\[normal\\, origin\\, invert\\, value\\, inplace\\]\\)"
+msgid ":obj:`clip <pyvista.core.filters.pyvista.CompositeFilters.clip>`\\ \\(\\[normal\\, origin\\, invert\\, value\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:101:<autosummary>:1
