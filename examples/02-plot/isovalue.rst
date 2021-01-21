@@ -193,7 +193,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  34.016 seconds)
+   **Total running time of the script:** ( 0 minutes  34.707 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:
