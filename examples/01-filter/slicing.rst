@@ -553,7 +553,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  32.874 seconds)
+   **Total running time of the script:** ( 0 minutes  32.192 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:
