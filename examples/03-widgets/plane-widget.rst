@@ -60,7 +60,7 @@ Let's use a plane to clip a mesh:
 
 
     [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.00000190734863, 108.0, 90.0),
+     (90.0, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -86,7 +86,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7feac908ddc8)
+    [UnstructuredGrid (0x7efd113e1b28)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -131,7 +131,7 @@ Or you could slice a mesh using the plane widget:
 
 
     [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.00000190734863, 108.0, 90.0),
+     (90.0, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -157,7 +157,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7feac908da08)
+    [PolyData (0x7efd0705b888)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -220,7 +220,7 @@ at a time.
 
 
     [(275.9751053451392, 242.47510534513918, 161.47510534513918),
-     (137.5, 104.0, 23.0),
+     (137.5, 104.03898239135742, 23.553572356700897),
      (0.0, 0.0, 1.0)]
 
 
@@ -234,7 +234,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.515 seconds)
+   **Total running time of the script:** ( 0 minutes  5.259 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:

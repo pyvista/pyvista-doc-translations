@@ -95,7 +95,7 @@ Use a single sphere widget
 
 
     [(27.781683096151145, 32.53341726348856, 23.031683096151145),
-     (0.0, 4.751734167337418, -4.75),
+     (0.0, 5.0, -5.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -269,7 +269,7 @@ a surface and interpolate between them with some boundary conditions
 
 
     [(216.9476807472315, 216.9476807472315, 190.4300322864843),
-     (50.0, 50.0, 23.482351539252825),
+     (50.0, 50.0, 22.829458981693524),
      (0.0, 0.0, 1.0)]
 
 
@@ -283,7 +283,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.309 seconds)
+   **Total running time of the script:** ( 0 minutes  1.182 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:

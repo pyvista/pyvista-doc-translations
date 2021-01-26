@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-17 01:23+0000\n"
+"POT-Creation-Date: 2021-01-26 00:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,8 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.parametric_keywords:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.surface_from_para:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.array_from_vtkmatrix:0
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtkmatrix_from_array:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.save_meshio:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.lines_from_points:0
@@ -360,12 +362,23 @@ msgid "length of the cube in the z-direction."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cube:15
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Box:3
 msgid "Specify the bounding box of the cube. If given, all other arguments are ignored. ``(xMin,xMax, yMin,yMax, zMin,zMax)``"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Box:1
 msgid "Create a box with solid faces for the given bounds."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Box:3
+msgid "Specify the bounding box of the cube. ``(xMin, xMax, yMin, yMax, zMin, zMax)``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Box:6
+msgid "Level of subdivision of the faces."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Box:8
+msgid "Flag to tell the source to generate either a quad or two triangle for a set of four points.  Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cone:1
@@ -936,10 +949,6 @@ msgstr ""
 msgid "Set a file to write out the VTK errors."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.trans_from_matrix:1
-msgid "Convert a vtk matrix to a numpy.ndarray."
-msgstr ""
-
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.is_inside_bounds:1
 msgid "Check if a point is inside a set of bounds."
 msgstr ""
@@ -948,7 +957,7 @@ msgstr ""
 msgid "This is implemented through recursion so that this is N-dimensional."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:14
+#: ../../pyvista/docs/utilities/utilities.rst:12
 msgid "Object Conversions"
 msgstr ""
 
@@ -992,7 +1001,23 @@ msgstr ""
 msgid "Convert a NumPy image array to a vtk.vtkTexture."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:26
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.array_from_vtkmatrix:1
+msgid "Convert a vtk matrix to a ``numpy.ndarray``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.array_from_vtkmatrix:3
+msgid "The vtk matrix to be converted to a ``numpy.ndarray``. Returned ndarray has shape (3, 3) or (4, 4) as appropriate."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtkmatrix_from_array:1
+msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtkmatrix_from_array:3
+msgid "The array or array-like to be converted to a vtk matrix. Shape (3, 3) gets converted to a ``vtk.vtkMatrix3x3``, shape (4, 4) gets converted to a ``vtk.vtkMatrix4x4``. No other shapes are valid."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:28
 msgid "File IO"
 msgstr ""
 
@@ -1052,7 +1077,7 @@ msgstr ""
 msgid "File type for meshio to save."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:40
+#: ../../pyvista/docs/utilities/utilities.rst:42
 msgid "Mesh Creation"
 msgstr ""
 
@@ -1100,7 +1125,7 @@ msgstr ""
 msgid "If true, also returns the center and normal used to generate the plane"
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:52
+#: ../../pyvista/docs/utilities/utilities.rst:54
 msgid "Array Access"
 msgstr ""
 
@@ -1180,7 +1205,7 @@ msgstr ""
 msgid "Note that this is terribly inefficient - inefficient support is better than no support :). If you have ideas on how to make this faster, please consider opening a pull request."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:72
+#: ../../pyvista/docs/utilities/utilities.rst:74
 msgid "Image Comparison and Regression"
 msgstr ""
 

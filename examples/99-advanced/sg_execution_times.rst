@@ -5,12 +5,12 @@
 
 Computation times
 =================
-**00:25.962** total execution time for **examples_99-advanced** files:
+**00:25.696** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:14.425 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:15.290 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:11.196 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:10.071 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                 | 00:00.341 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                 | 00:00.335 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+

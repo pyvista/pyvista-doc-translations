@@ -91,7 +91,7 @@ the ``name`` argument in ``add_mesh``.
 
 
     [(15.271875542188045, 14.271875516576674, 13.021875516576674),
-     (3.505000025033951, 2.50499999942258, 1.25499999942258),
+     (3.50499999942258, 2.50499999942258, 1.25499999942258),
      (0.0, 0.0, 1.0)]
 
 
@@ -105,7 +105,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.012 seconds)
+   **Total running time of the script:** ( 0 minutes  0.954 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:

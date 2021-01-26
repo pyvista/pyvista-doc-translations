@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-17 01:23+0000\n"
+"POT-Creation-Date: 2021-01-26 00:54+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -95,6 +95,10 @@ msgstr "vtk球を作成します．"
 #: pyvista.utilities.parametric_objects.surface_from_para:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -556,8 +560,6 @@ msgstr "z方向の立方体の長さ．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cube:15
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Box:3
 msgid ""
 "Specify the bounding box of the cube. If given, all other arguments are "
 "ignored. ``(xMin,xMax, yMin,yMax, zMin,zMax)``"
@@ -569,6 +571,25 @@ msgstr ""
 #: pyvista.utilities.geometric_objects.Box:1
 msgid "Create a box with solid faces for the given bounds."
 msgstr "指定した境界のソリッド面を持つボックスを作成します．"
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:3
+msgid ""
+"Specify the bounding box of the cube. ``(xMin, xMax, yMin, yMax, zMin, "
+"zMax)``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:6
+msgid "Level of subdivision of the faces."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:8
+msgid ""
+"Flag to tell the source to generate either a quad or two triangle for a set "
+"of four points.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:1
@@ -587,17 +608,17 @@ msgstr "[x, y, z] の中心．円錐の軸の中央．"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Disc:13
 msgid "Direction vector in [x, y, z]. orientation vector of the cone."
-msgstr ""
+msgstr "円錐の [x, y, z] の方向ベクトル．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:7
 msgid "Height along the cone in its specified direction."
-msgstr ""
+msgstr "指定した方向の円錐に沿った高さ．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:9
 msgid "Base radius of the cone"
-msgstr ""
+msgstr "円錐の底面半径"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:11
@@ -612,7 +633,7 @@ msgstr "円錐の軸と母線の間の角度．"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:15
 msgid "Number of facets used to represent the cone"
-msgstr ""
+msgstr "円錐を表すために使用される小面の数"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Polygon:1
@@ -664,12 +685,12 @@ msgstr "外側の半径"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Disc:15
 msgid "Number of points in radius direction."
-msgstr ""
+msgstr "半径方向のポイント数．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Disc:17
 msgid "Number of points in circumferential direction."
-msgstr ""
+msgstr "円周方向の点の数．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Text3D:1
@@ -1385,11 +1406,6 @@ msgid "Set a file to write out the VTK errors."
 msgstr "VTKエラーを書き出すファイルを設定します．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.trans_from_matrix:1
-msgid "Convert a vtk matrix to a numpy.ndarray."
-msgstr "vtk行列をnumpy.ndarrayに変換する．"
-
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.is_inside_bounds:1
 msgid "Check if a point is inside a set of bounds."
 msgstr "ポイントが境界のセット内にあるかどうかをチェックします．"
@@ -1399,7 +1415,7 @@ msgstr "ポイントが境界のセット内にあるかどうかをチェック
 msgid "This is implemented through recursion so that this is N-dimensional."
 msgstr "これは再帰的に実装されているため，N次元になります．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:14
+#: ../../pyvista/docs/utilities/utilities.rst:12
 msgid "Object Conversions"
 msgstr "オブジェクト変換"
 
@@ -1461,7 +1477,32 @@ msgstr ""
 msgid "Convert a NumPy image array to a vtk.vtkTexture."
 msgstr "NumPyイメージ配列をvtk.vtkTextureに変換します．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:26
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:1
+msgid "Convert a vtk matrix to a ``numpy.ndarray``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:3
+msgid ""
+"The vtk matrix to be converted to a ``numpy.ndarray``. Returned ndarray has "
+"shape (3, 3) or (4, 4) as appropriate."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:1
+msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:3
+msgid ""
+"The array or array-like to be converted to a vtk matrix. Shape (3, 3) gets "
+"converted to a ``vtk.vtkMatrix3x3``, shape (4, 4) gets converted to a "
+"``vtk.vtkMatrix4x4``. No other shapes are valid."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:28
 msgid "File IO"
 msgstr "ファイルIO"
 
@@ -1547,7 +1588,7 @@ msgstr "任意のPyVistaメッシュ/空間データタイプ．"
 msgid "File type for meshio to save."
 msgstr "保存するファイルの種類を指定します．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:40
+#: ../../pyvista/docs/utilities/utilities.rst:42
 msgid "Mesh Creation"
 msgstr "メッシュ作成"
 
@@ -1613,7 +1654,7 @@ msgstr "平面にフィットするように点のn x 3配列をサイズ変更"
 msgid "If true, also returns the center and normal used to generate the plane"
 msgstr "trueの場合，平面の生成に使用される中心と法線も返します．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:52
+#: ../../pyvista/docs/utilities/utilities.rst:54
 msgid "Array Access"
 msgstr "配列アクセス"
 
@@ -1728,7 +1769,7 @@ msgstr ""
 "これは非常に非効率的であることに注意してください-非効率的なサポートはサポートしないよりましです "
 ":)．これをもっと早くする方法があれば，プルリクエストを開くことを検討してください．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:72
+#: ../../pyvista/docs/utilities/utilities.rst:74
 msgid "Image Comparison and Regression"
 msgstr "イメージの比較とレグレッション"
 

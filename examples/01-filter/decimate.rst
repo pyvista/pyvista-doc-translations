@@ -192,7 +192,7 @@ Side by side comparison:
 
 
     [(0.8136259721113195, 0.0024271619131386035, -0.6008839297564575),
-     (0.052799999713897705, -0.1280001476407051, -0.05743680661544204),
+     (0.05, -0.13, -0.06),
      (-0.09918995010726926, 0.9918995010726926, 0.07935196008581541)]
 
 
@@ -200,7 +200,7 @@ Side by side comparison:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.178 seconds)
+   **Total running time of the script:** ( 0 minutes  3.022 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:
