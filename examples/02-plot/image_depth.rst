@@ -131,7 +131,7 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.165 seconds)
+   **Total running time of the script:** ( 0 minutes  1.211 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:

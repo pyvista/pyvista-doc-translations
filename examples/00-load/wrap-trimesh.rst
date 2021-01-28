@@ -76,8 +76,8 @@ Wrap a point cloud composed of random points from numpy
  .. code-block:: none
 
 
-    [(0.5218789332726499, -2.735762335227178, 0.5028207264680844),
-     (0.5218789332726499, 0.49202297465364064, 0.5028207264680844),
+    [(0.4959620994410083, -2.5744708872345115, 0.4816729136440591),
+     (0.4959620994410083, 0.5093637656358048, 0.4816729136440591),
      (0.0, 0.0, 1.0)]
 
 
@@ -107,7 +107,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7f3000c6cee8)
+    PolyData (0x7f9d9a5a9ee8)
       N Cells:      1
       N Points:     3
       X Bounds:     0.000e+00, 0.000e+00
@@ -150,7 +150,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7f3000c2b168)
+    PolyData (0x7f9d9a568168)
       N Cells:      1
       N Points:     1
       X Bounds:     1.000e+00, 1.000e+00
