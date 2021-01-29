@@ -34,7 +34,7 @@ basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
 
-locale_dirs = [os.path.join(basedir, "../../locale/")]
+locale_dirs = [os.path.join(basedir, "../locale/")]
 
 sphinx_gallery_conf = {
     "plot_gallery": "False",
