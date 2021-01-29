@@ -841,6 +841,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example reflects a mesh across a plane.">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_reflect_thumb.png
+     :alt: Reflect Meshes
+
+     :ref:`sphx_glr_examples_01-filter_reflect.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/reflect
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes. ">
 
 .. only:: html

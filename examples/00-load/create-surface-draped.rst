@@ -214,7 +214,7 @@ mesh and the possibilities are endless with PyVista
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.854 seconds)
+   **Total running time of the script:** ( 0 minutes  6.815 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-surface-draped.py:
