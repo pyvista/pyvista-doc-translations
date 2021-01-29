@@ -25,10 +25,6 @@ os.environ["PYVISTA_PLOT_THEME"] = "document"
 os.environ["PYVISTA_AUTO_CLOSE"] = "false"
 
 autodoc_mock_imports = ["vtk"]
-shutil.rmtree("docs/examples", ignore_errors=True)
-shutil.copytree("examples", "docs/examples")
-shutil.rmtree("docs/images/auto-generated", ignore_errors=True)
-shutil.copytree("images/auto-generated", "docs/images/auto-generated")
 
 basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 
