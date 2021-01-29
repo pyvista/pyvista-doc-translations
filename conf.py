@@ -8,7 +8,7 @@ For example::
 This conf.py do:
 
 - Specify `locale_dirs` and `gettext_compact`.
-- Overrides source directory as 'pyvista/docs`.
+- Overrides source directory as 'docs`.
 
 """
 import os
@@ -16,7 +16,7 @@ import sys
 from sphinx.util.pycompat import execfile_
 import shutil
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "./docs"))
 
 os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
 os.environ["PYVISTA_OFF_SCREEN"] = "true"
@@ -25,12 +25,12 @@ os.environ["PYVISTA_PLOT_THEME"] = "document"
 os.environ["PYVISTA_AUTO_CLOSE"] = "false"
 
 autodoc_mock_imports = ["vtk"]
-shutil.rmtree("pyvista/docs/examples", ignore_errors=True)
-shutil.copytree("examples", "pyvista/docs/examples")
-shutil.rmtree("pyvista/docs/images/auto-generated", ignore_errors=True)
-shutil.copytree("images/auto-generated", "pyvista/docs/images/auto-generated")
+shutil.rmtree("docs/examples", ignore_errors=True)
+shutil.copytree("examples", "docs/examples")
+shutil.rmtree("docs/images/auto-generated", ignore_errors=True)
+shutil.copytree("images/auto-generated", "docs/images/auto-generated")
 
-basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
+basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
 
