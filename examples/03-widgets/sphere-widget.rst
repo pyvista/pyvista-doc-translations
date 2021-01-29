@@ -283,7 +283,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.244 seconds)
+   **Total running time of the script:** ( 0 minutes  1.220 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:
