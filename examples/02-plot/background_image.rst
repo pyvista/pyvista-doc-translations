@@ -129,7 +129,7 @@ Plot several earth related plots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.177 seconds)
+   **Total running time of the script:** ( 0 minutes  4.914 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_background_image.py:
