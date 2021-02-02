@@ -59,16 +59,14 @@ jobs:
         rm -Rf images
         mv ./pyvista/docs/images .
         deactivate
-    - name: git_config
-      run: |
-        git config --global user.email $GITHUB_REPOSITORY
-        git config --global user.name $GITHUB_REPOSITORY
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
       env:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
+        git config --global user.email $GITHUB_REPOSITORY
+        git config --global user.name $GITHUB_REPOSITORY
         git add .
         git commit --allow-empty -m "[ci skip] $JOB_ID
         $HTML_URL"
