@@ -6,8 +6,8 @@
 
 .. _ref_examples:
 
-Quick Examples
-==============
+Examples Gallery
+================
 
 Here is a gallery of all the quick examples demonstrating what PyVista can do!
 
@@ -649,6 +649,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
    :hidden:
 
    /examples/01-filter/extract-edges
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This takes polygonal data as input and generates polygonal data on output. The input dataset is...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_extrude-rotate_thumb.png
+     :alt: Extrude Rotation
+
+     :ref:`sphx_glr_examples_01-filter_extrude-rotate.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/extrude-rotate
 
 .. raw:: html
 
@@ -1334,10 +1355,10 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
- .. figure:: /examples/02-plot/images/thumb/sphx_glr_lighting_thumb.png
-     :alt: Lighting Controls
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_lighting_mesh_thumb.png
+     :alt: Lighting Properties
 
-     :ref:`sphx_glr_examples_02-plot_lighting.py`
+     :ref:`sphx_glr_examples_02-plot_lighting_mesh.py`
 
 .. raw:: html
 
@@ -1347,7 +1368,7 @@ plotting routines to perform tasks like:
 .. toctree::
    :hidden:
 
-   /examples/02-plot/lighting
+   /examples/02-plot/lighting_mesh
 
 .. raw:: html
 
@@ -1855,6 +1876,156 @@ for user defined tasks and processing routines.
    :hidden:
 
    /examples/03-widgets/spline-widget
+.. raw:: html
+
+    <div class="sphx-glr-clear"></div>
+
+
+
+.. _sphx_glr_examples_04-lights:
+
+.. _ref_light_examples:
+
+Lighting
+--------
+
+These examples demonstrate how to take fine-tuned control over lighting conditions
+in a scene. Explore them to learn how to go beyond the default lighting setup to
+truly bring out the best of your visualization:
+
+* Choose between preset lighting systems for plotters
+* Disable lighting on the mesh level
+* Learn about the different light types
+* Customize the shape of positional lights
+* Use actors to visualize the beams of spotlights
+
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Positional lights in PyVista have customizable beam shapes, see the ref_light_beam_shape_exampl...">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_actors_thumb.png
+     :alt: Light Actors
+
+     :ref:`sphx_glr_examples_04-lights_actors.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/actors
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Attenuation is the phenomenon of light&#x27;s intensity being gradually dampened as it propagates th...">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_attenuation_thumb.png
+     :alt: Attenuation
+
+     :ref:`sphx_glr_examples_04-lights_attenuation.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/attenuation
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The default directional lights are infinitely distant point sources, for which the only geometr...">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_beam_shape_thumb.png
+     :alt: Beam Shape
+
+     :ref:`sphx_glr_examples_04-lights_beam_shape.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/beam_shape
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Lights come in three types:">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_light_types_thumb.png
+     :alt: Light Types
+
+     :ref:`sphx_glr_examples_04-lights_light_types.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/light_types
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="While plotters have a default set of lights and there are many options for customizing lighting...">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_mesh_lighting_thumb.png
+     :alt: Disabling Mesh Lighting
+
+     :ref:`sphx_glr_examples_04-lights_mesh_lighting.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/mesh_lighting
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="The pyvista.Plotter class comes with three options for the default lighting system:">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_plotter_builtins_thumb.png
+     :alt: Plotter Lighting Systems
+
+     :ref:`sphx_glr_examples_04-lights_plotter_builtins.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/plotter_builtins
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>

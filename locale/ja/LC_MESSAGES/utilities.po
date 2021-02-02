@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-26 00:54+0000\n"
+"POT-Creation-Date: 2021-02-02 00:52+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -309,8 +309,6 @@ msgstr "[x, y, z] 中のセントロイドの位置"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cylinder:7
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Plane:5
 msgid "Direction cylinder points to  in [x, y, z]"
 msgstr "[x, y, z] 内の方向円柱"
 
@@ -483,6 +481,11 @@ msgid "Create a plane."
 msgstr "平面を作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:5
+msgid "Direction of the plane's normal in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Plane:7
 msgid "Size of the plane in the i direction."
 msgstr "i方向の平面のサイズ．"
@@ -577,19 +580,19 @@ msgstr "指定した境界のソリッド面を持つボックスを作成しま
 msgid ""
 "Specify the bounding box of the cube. ``(xMin, xMax, yMin, yMax, zMin, "
 "zMax)``"
-msgstr ""
+msgstr "立方体のバウンディングボックスを指定します． ``(xMin,xMax, yMin,yMax, zMin,zMax)``"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Box:6
 msgid "Level of subdivision of the faces."
-msgstr ""
+msgstr "面の細分化レベル．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Box:8
 msgid ""
 "Flag to tell the source to generate either a quad or two triangle for a set "
 "of four points.  Default ``True``."
-msgstr ""
+msgstr "4つのポイントのセットに対して四角形または2つの三角形のいずれかを生成するようにソースに指示するフラグ．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:1
@@ -1480,7 +1483,7 @@ msgstr "NumPyイメージ配列をvtk.vtkTextureに変換します．"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.array_from_vtkmatrix:1
 msgid "Convert a vtk matrix to a ``numpy.ndarray``."
-msgstr ""
+msgstr "vtk行列を ``numpy.ndarray`` に変換する．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.array_from_vtkmatrix:3
@@ -1488,11 +1491,12 @@ msgid ""
 "The vtk matrix to be converted to a ``numpy.ndarray``. Returned ndarray has "
 "shape (3, 3) or (4, 4) as appropriate."
 msgstr ""
+"``numpy.ndarray`` に変換されるvtk行列．返されるndarrayは、必要に応じて (3, 3) または (4, 4) の形をとる．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:1
 msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
-msgstr ""
+msgstr "``numpy.ndarray`` や配列状のものをvtk行列に変換します。"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:3
@@ -1501,6 +1505,8 @@ msgid ""
 "converted to a ``vtk.vtkMatrix3x3``, shape (4, 4) gets converted to a "
 "``vtk.vtkMatrix4x4``. No other shapes are valid."
 msgstr ""
+"vtk行列に変換する配列または配列のような配列を指定します． (3, 3) の形は ``vtk.vtkMatrix3x3`` に変換され， (4, 4)"
+" の形は ``vtk.vtkMatrix4x4`` に変換されます．他の形は無効です．"
 
 #: ../../pyvista/docs/utilities/utilities.rst:28
 msgid "File IO"

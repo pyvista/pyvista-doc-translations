@@ -208,8 +208,8 @@ Run the box clipping algorithm
  .. code-block:: none
 
 
-    [(2449.232878933257, 2461.2664482691944, 1935.5516083338919),
-     (645.8756713867188, 657.9092407226562, 132.19440078735352),
+    [(2449.2329562520977, 2461.266479811668, 1935.5516398763652),
+     (645.8757171630859, 657.9092407226562, 132.19440078735352),
      (0.0, 0.0, 1.0)]
 
 
@@ -217,7 +217,7 @@ Run the box clipping algorithm
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.874 seconds)
+   **Total running time of the script:** ( 0 minutes  2.796 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:

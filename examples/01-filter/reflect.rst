@@ -26,11 +26,12 @@ Reflect Meshes
 This example reflects a mesh across a plane.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
 
+    import pyvista
     from pyvista import examples
 
 
@@ -40,13 +41,13 @@ This example reflects a mesh across a plane.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-17
+.. GENERATED FROM PYTHON SOURCE LINES 15-18
 
 This example demonstrates how to reflect a mesh across a plane.
 
 Load an example mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-19
+.. GENERATED FROM PYTHON SOURCE LINES 18-20
 
 .. code-block:: default
 
@@ -59,16 +60,16 @@ Load an example mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-22
+.. GENERATED FROM PYTHON SOURCE LINES 21-23
 
-Reflect the mesh across a plane parallel to Z plane and centered in -100
-(the geometry input is copied to the output):
+Reflect the mesh across a plane parallel to Z plane and coincident with
+(0, 0, -100)
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-24
+.. GENERATED FROM PYTHON SOURCE LINES 23-25
 
 .. code-block:: default
 
-    airplane = airplane.reflect('z', copy=True, center=-100)
+    airplane_reflected = airplane.reflect((0, 0, 1), point=(0, 0, -100))
 
 
 
@@ -76,16 +77,20 @@ Reflect the mesh across a plane parallel to Z plane and centered in -100
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
-
-Plot the reflected mesh:
 
 .. GENERATED FROM PYTHON SOURCE LINES 26-27
 
+Plot the reflected mesh:
+
+.. GENERATED FROM PYTHON SOURCE LINES 27-32
+
 .. code-block:: default
 
-    airplane.plot(show_edges=True)
+    p = pyvista.Plotter()
+    p.add_mesh(airplane, show_edges=True)
+    p.add_mesh(airplane_reflected, show_edges=True)
+    p.show()
+
 
 
 
@@ -110,7 +115,7 @@ Plot the reflected mesh:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.807 seconds)
+   **Total running time of the script:** ( 0 minutes  0.485 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_reflect.py:

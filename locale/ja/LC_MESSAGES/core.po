@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-26 00:54+0000\n"
+"POT-Creation-Date: 2021-02-02 00:52+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -391,6 +391,46 @@ msgid ""
 msgstr "このオブジェクトの新しい表現を :class:`pyvista.UnstructuredGrid` として取得します．"
 
 #: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+msgid ":obj:`cell_bounds <pyvista.Common.cell_bounds>`\\ \\(ind\\)"
+msgstr ":obj:`cell_bounds <pyvista.Common.cell_bounds>`\\ \\(ind\\)"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_bounds:1
+msgid "Return the bounding box of a cell."
+msgstr "セルの境界ボックスを返します．"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+msgid ":obj:`cell_n_points <pyvista.Common.cell_n_points>`\\ \\(ind\\)"
+msgstr ":obj:`cell_n_points <pyvista.Common.cell_n_points>`\\ \\(ind\\)"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:1
+msgid "Return the number of points in a cell."
+msgstr "セル内のポイント数を返します．"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+msgid ":obj:`cell_points <pyvista.Common.cell_points>`\\ \\(ind\\)"
+msgstr ":obj:`cell_points <pyvista.Common.cell_points>`\\ \\(ind\\)"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:1
+msgid "Return the points in a cell."
+msgstr "セル内の点を返します．"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+msgid ":obj:`cell_type <pyvista.Common.cell_type>`\\ \\(ind\\)"
+msgstr ":obj:`cell_type <pyvista.Common.cell_type>`\\ \\(ind\\)"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:1
+msgid "Return the type of a cell."
+msgstr "セルの型を返します．"
+
+#: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
 msgid ":obj:`clear_arrays <pyvista.Common.clear_arrays>`\\ \\(\\)"
 msgstr ":obj:`clear_arrays <pyvista.Common.clear_arrays>`\\ \\(\\)"
 
@@ -484,11 +524,9 @@ msgstr "点，セル，フィールドのデータの両方から配列を検索
 
 #: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
 msgid ""
-":obj:`get_data_range <pyvista.Common.get_data_range>`\\ \\(\\[arr\\, "
+":obj:`get_data_range <pyvista.Common.get_data_range>`\\ \\(\\[arr\\_var\\, "
 "preference\\]\\)"
 msgstr ""
-":obj:`get_data_range <pyvista.Common.get_data_range>`\\ \\(\\[arr\\, "
-"preference\\]\\)"
 
 #: ../../pyvista/docs/core/common.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -696,6 +734,14 @@ msgstr "矢印はメッシュのポイントに配置され，そのサイズは
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.arrows:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_bounds:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_cell:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_point:0
@@ -794,6 +840,8 @@ msgstr "矢印はメッシュのポイントに配置され，そのサイズは
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.DataObject.actual_memory_size:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.DataObject.copy:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:0
@@ -812,6 +860,14 @@ msgid "**arrows** -- Active scalars represented as arrows."
 msgstr "**arrows** -- アクティブなスカラーは矢印で表されます．"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of pyvista.Common.arrows:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_bounds:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_cell:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -899,6 +955,8 @@ msgstr "**arrows** -- アクティブなスカラーは矢印で表されます�
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.DataObject.actual_memory_size:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.DataObject.copy:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:0
@@ -916,6 +974,14 @@ msgstr "戻り値の型"
 msgid "The form is: (xmin,xmax, ymin,ymax, zmin,zmax)."
 msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です．"
 
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_bounds:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:0
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_cell:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -1001,6 +1067,8 @@ msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です．"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.probe:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:0
@@ -1060,6 +1128,8 @@ msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です．"
 #: pyvista.core.filters.PolyDataFilters.edge_mask:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.extrude:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.fill_holes:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1142,6 +1212,14 @@ msgstr "形式は (xmin,xmax, ymin,ymax, zmin,zmax) です．"
 #: pyvista.utilities.helpers.convert_array:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.fit_plane_to_points:0
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:0
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:0
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:0
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.DataObject.copy:0
 #: ../../pyvista/pyvista/core/common.pydocstring of
@@ -1162,19 +1240,29 @@ msgid "Parameters"
 msgstr "パラメータ"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.core.common.Common.find_closest_cell:3
-msgid ""
-"Length 3 coordinate of the point to query or a ``numpy`` array of "
-"coordinates."
-msgstr "クエリーする点の長さ3座標または座標の ``numpy`` 配列．"
+#: pyvista.core.common.Common.cell_bounds:3
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:3
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:3
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:3
+msgid "Cell ID."
+msgstr "セルID．"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
-#: pyvista.core.common.Common.find_closest_cell:7
-msgid ""
-"**index** -- Index or indices of the cell in this mesh that is closest to "
-"the given point."
-msgstr "**index** -- 指定した点に最も近い，このメッシュ内のセルのインデックスです．"
+#: pyvista.core.common.Common.cell_bounds:6
+msgid "The limits of the cell in the X, Y and Z directions respectivelly."
+msgstr "セルのX，Y，Z方向それぞれの境界．"
 
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_bounds:10
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:10
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:11
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:10
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_cell:12
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1189,6 +1277,8 @@ msgstr "**index** -- 指定した点に最も近い，このメッシュ内の�
 #: pyvista.core.filters.DataSetFilters.compute_implicit_distance:15
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.probe:24
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:12
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.shrink:12
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1209,6 +1299,8 @@ msgstr "**index** -- 指定した点に最も近い，このメッシュ内の�
 #: pyvista.core.filters.PolyDataFilters.delaunay_2d:34
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.extrude:38
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:40
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.fill_holes:22
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1251,6 +1343,56 @@ msgstr "**index** -- 指定した点に最も近い，このメッシュ内の�
 #: pyvista.utilities.helpers.make_tri_mesh:19
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:17
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:28
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:12
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.attenuation_values:13
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:16
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:12
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:12
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.exponent:17 ../../pyvista/pyvista/plotting/lights.pydocstring
+#: of pyvista.Light.focal_point:9
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.intensity:4 ../../pyvista/pyvista/plotting/lights.pydocstring
+#: of pyvista.Light.is_camera_light:4
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_headlight:4
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_scene_light:4
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:27
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:6
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.position:9 ../../pyvista/pyvista/plotting/lights.pydocstring
+#: of pyvista.Light.positional:18
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:24
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.show_actor:9
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:12
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_off:4
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_on:4
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.transform_matrix:18
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_focal_point:9
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_position:8
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.DataObject.actual_memory_size:7
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.DataObject.copy_attributes:4
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.DataObject.copy_structure:4
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:11
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -1261,6 +1403,40 @@ msgstr "**index** -- 指定した点に最も近い，このメッシュ内の�
 #: pyvista.core.pointset.PolyData:12
 msgid "Examples"
 msgstr "例"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_n_points:6
+msgid "Number of points in the cell."
+msgstr "セル内の点の数．"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_points:6
+msgid ""
+"An array of floats with shape (number of points, 3) containing the "
+"coordinates of the cell corners."
+msgstr "セルのコーナーの座標を含む(ポイント数3)の形を持つ浮動小数点の配列．"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.cell_type:6
+msgid ""
+"VTK cell type. See "
+"<https://vtk.org/doc/nightly/html/vtkCellType_8h_source.html>."
+msgstr ""
+"VTKセル型． <https://vtk.org/doc/nightly/html/vtkCellType_8h_source.html> を参照．"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.find_closest_cell:3
+msgid ""
+"Length 3 coordinate of the point to query or a ``numpy`` array of "
+"coordinates."
+msgstr "クエリーする点の長さ3座標または座標の ``numpy`` 配列．"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.Common.find_closest_cell:7
+msgid ""
+"**index** -- Index or indices of the cell in this mesh that is closest to "
+"the given point."
+msgstr "**index** -- 指定した点に最も近い，このメッシュ内のセルのインデックスです．"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.find_closest_cell:13
@@ -1308,8 +1484,9 @@ msgstr "**int**"
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.get_data_range:3
 msgid ""
-"The name of the array to get the range. If None, the active scalars is used."
-msgstr "範囲を取得する配列の名前を指定します．Noneの場合，アクティブなスカラーが使用されます．"
+"The name of the array to get the range. If ``None``, the active scalars is "
+"used."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.Common.get_data_range:6
@@ -2380,6 +2557,18 @@ msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
+":obj:`reflect <pyvista.core.filters.pyvista.DataSetFilters.reflect>`\\ "
+"\\(normal\\[\\, point\\, inplace\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:1
+msgid "Reflect a dataset across a plane."
+msgstr "平面でデータセットを反射します．"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
 ":obj:`sample <pyvista.core.filters.pyvista.DataSetFilters.sample>`\\ "
 "\\(target\\[\\, tolerance\\, ...\\]\\)"
 msgstr ""
@@ -3215,6 +3404,8 @@ msgstr "3 Dセルの体積を計算するかどうかを指定します．"
 #: pyvista.core.filters.PolyDataFilters.delaunay_2d:30
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.extrude:34
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:36
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.fill_holes:15
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4068,6 +4259,23 @@ msgstr "``grid`` の活性スカラーを ``mesh`` の点で調査します"
 #: pyvista.core.filters.DataSetFilters.ptc:6
 msgid "An alias/shortcut for ``point_data_to_cell_data``."
 msgstr "``point_data_to_cell_data`` のエイリアス/ショートカットです．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:3
+msgid "Normal direction for reflection."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:5
+msgid ""
+"Point which, along with `normal`, defines the reflection plane. If not "
+"specified, this is the origin."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:8
+msgid "When ``True``, modifies the dataset and returns nothing."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:3
@@ -5010,6 +5218,21 @@ msgstr "フリーエッジから \"skirt\" を作成してポリゴンデータ�
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
+":obj:`extrude_rotate "
+"<pyvista.core.filters.pyvista.PolyDataFilters.extrude_rotate>`\\ "
+"\\(\\[resolution\\, inplace\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:1
+msgid ""
+"Sweep polygonal data creating \"skirt\" from free edges and lines, and lines"
+" from vertices."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+msgid ""
 ":obj:`fill_holes "
 "<pyvista.core.filters.pyvista.PolyDataFilters.fill_holes>`\\ "
 "\\(hole\\_size\\[\\, inplace\\, progress\\_bar\\]\\)"
@@ -5881,6 +6104,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.extrude:17
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:22
 msgid ""
 "The skirt is generated by locating certain topological features. Free edges "
 "(edges of polygons or triangle strips only used by one polygon or triangle "
@@ -5911,6 +6136,8 @@ msgstr "メッシュを押し出す方向と長さ．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.extrude:32
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:34
 msgid "Overwrites the original mesh inplace."
 msgstr "元のメッシュの決まった場所に上書きします．"
 
@@ -5918,6 +6145,46 @@ msgstr "元のメッシュの決まった場所に上書きします．"
 #: pyvista.core.filters.PolyDataFilters.extrude:39
 msgid "Extrude a half arc circle"
 msgstr "半円を押し出す"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:3
+msgid "This is a modeling filter."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:5
+msgid ""
+"This takes polygonal data as input and generates polygonal data on output. "
+"The input dataset is swept around the z-axis to create new polygonal "
+"primitives. These primitives form a \"skirt\" or swept surface. For example,"
+" sweeping a line results in a cylindrical shell, and sweeping a circle "
+"creates a torus."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:12
+msgid ""
+"There are a number of control parameters for this filter. You can control "
+"whether the sweep of a 2D object (i.e., polygon or triangle strip) is capped"
+" with the generating geometry via the \"Capping\" instance variable. Also, "
+"you can control the angle of rotation, and whether translation along the "
+"z-axis is performed along with the rotation. (Translation is useful for "
+"creating \"springs\".) You also can adjust the radius of the generating "
+"geometry using the \"DeltaRotation\" instance variable."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:28
+msgid ""
+"This filter can be used to model axisymmetric objects like cylinders, "
+"bottles, and wine glasses; or translational/ rotational symmetric objects "
+"like springs or corkscrews."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.extrude_rotate:32
+msgid "Number of pieces to divide line into."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.fill_holes:3
@@ -7409,7 +7676,7 @@ msgstr "次の使用例は，単位正方形を9つの頂点と8つの面を持�
 
 #: ../../pyvista/docs/core/helpers.rst:19
 msgid "Lines from Points"
-msgstr ""
+msgstr "点からの線分"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:1
@@ -7452,18 +7719,18 @@ msgstr "**lines** -- ラインとセルを持つPolyDataです．"
 
 #: ../../pyvista/docs/core/helpers.rst:24
 msgid "Line Segments from Points"
-msgstr ""
+msgstr "点からの線分セグメント"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:1
 msgid "Generate non-connected line segments from points."
-msgstr ""
+msgstr "点から接続されていない線分セグメントを生成します．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:3
 msgid ""
 "Assumes points are ordered as line segments and an even number of points are"
-msgstr ""
+msgstr "点が線分セグメントとして順序付けられ，偶数個の点は"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:6
@@ -7473,6 +7740,8 @@ msgid ""
 "would be represented as:  np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, "
 "0]])"
 msgstr ""
+"線分セグメントを表すポイント．2つの頂点が1つの線分セグメントを表すため，偶数を指定する必要があります．たとえば，2つの線分セグメントは次のように表されます:"
+" np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:6
@@ -7481,6 +7750,7 @@ msgid ""
 " vertices represent a single line segment. For example, two line segments "
 "would be represented as:"
 msgstr ""
+"線分セグメントを表すポイント．2つの頂点が1つの線分セグメントを表すため，偶数を指定する必要があります．たとえば，2つの線分セグメントは次のように表されます:"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:10
@@ -7491,11 +7761,11 @@ msgstr "np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])"
 #: pyvista.utilities.helpers.line_segments_from_points:18
 msgid ""
 "This example plots two line segments at right angles to each other line."
-msgstr ""
+msgstr "次の使用例は，2つの線分を直角にプロットします."
 
 #: ../../pyvista/docs/core/helpers.rst:29
 msgid "Convert to and from VTK Datatypes"
-msgstr ""
+msgstr "VTKデータ型との変換"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:1
@@ -7531,7 +7801,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/helpers.rst:34
 msgid "Fit Plane to Points"
-msgstr ""
+msgstr "平面を点にフィット"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.fit_plane_to_points:1
@@ -7646,6 +7916,780 @@ msgstr ""
 "データセットは，複数のVTKデータセットを1つのアクセス可能かつ空間的に参照されるオブジェクトに保持するためのコンテナです． "
 ":class:`pyvista.MultiBlock` クラスは ``vtk.vtkMultiBlockDataSet`` の拡張です．"
 
+#: ../../pyvista/docs/core/lights.rst:2
+msgid "Lights"
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:3
+msgid ""
+"The :class:`pyvista.Light` class adds additional functionality and a "
+"pythonic API to the ``vtk.vtkLight`` class. :class:`pyvista.Plotter` objects"
+" come with a default set of lights that work well in most cases, but in many"
+" situations a more hands-on access to lighting is necessary."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:10
+msgid "Brief Example"
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:12
+msgid "Create a red spotlight that shines on the origin."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:21
+msgid "Create a scene without lighting and add our light to it manually."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:35
+msgid "For detailed examples please see :ref:`ref_light_examples`."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:38
+msgid "Light API"
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:39
+msgid ""
+"``pyvista.Light`` instances come in three types: headlights, camera lights, "
+"and scene lights. Headlights always shine along the camera's axis, camera "
+"lights have a fixed position with respect to the camera, and scene lights "
+"are positioned with respect to the scene, such that moving around the camera"
+" doesn't affect the lighting of the scene."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:45
+msgid ""
+"Lights have a :py:attr:`position` and a :py:attr:`focal_point` that define "
+"the axis of the light. The meaning of these depends on the type of the "
+"light. The color of the light can be set according to ambient, diffuse and "
+"specular components. The brightness can be set with the :py:attr:`intensity`"
+" property, and the writable :py:attr:`on` property specifies whether the "
+"light is switched on."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:51
+msgid ""
+"Lights can be either directional (meaning an infinitely distant point "
+"source) or :py:attr:`positional`. Positional lights have additional "
+"properties that describe the geometry and the spatial distribution of the "
+"light. The :py:attr:`cone_angle` and :py:attr:`exponent` properties define "
+"the shape of the light beam and the angular distribution of the light's "
+"intensity within that beam. The fading of the light with distance can be "
+"customized with the :py:attr:`attenuation_values` property. Positional "
+"lights can also make use of an actor that represents the shape and color of "
+"the light using a wireframe, see :func:`show_actor`."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:60
+msgid ""
+"Positional lights with a :py:attr:`cone_angle` of less than 90 degrees are "
+"known as spotlights. Spotlights are unidirectional and they make full use of"
+" beam shaping properties, namely :py:attr:`exponent` and attenuation.  Non-"
+"spotlight positional lights, however, act like point sources located in the "
+"real-world position of the light, shining in all directions of space. They "
+"display attenuation with distance from the source, but their beam is "
+"isotropic in space. In contrast, directional lights act as infinitely "
+"distant point sources, so they are unidirectional but they do not attenuate."
+msgstr ""
+
+#: ../../pyvista/docs/core/lights.rst:70
+msgid "API reference"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:1
+msgid "Light class."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:3
+msgid ""
+"The position of the light. The interpretation of the position depends on the"
+" type of the light and whether the light has a transformation matrix. See "
+"also the :py:attr:`position` property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:7
+msgid ""
+"The focal point of the light. The interpretation of the focal point depends "
+"on the type of the light and whether the light has a transformation matrix. "
+"See also the :py:attr:`focal_point` property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:11
+msgid ""
+"The color of the light. The ambient, diffuse and specular colors will all be"
+" set to this color on creation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:14
+msgid ""
+"The type of the light. If a string, one of ``'headlight'``, ``'camera "
+"light'`` or ``'scene light'``. If an int, one of 1, 2 or 3, respectively. "
+"The class constants ``Light.HEADLIGHT``, ``Light.CAMERA_LIGHT`` and "
+"``Light.SCENE_LIGHT`` are also available, respectively.  A headlight is "
+"attached to the camera, looking at its focal point along the axis of the "
+"camera. A camera light also moves with the camera, but it can occupy a "
+"general position with respect to it. A scene light is stationary with "
+"respect to the scene, as it does not follow the camera. This is the default."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:14
+msgid ""
+"The type of the light. If a string, one of ``'headlight'``, ``'camera "
+"light'`` or ``'scene light'``. If an int, one of 1, 2 or 3, respectively. "
+"The class constants ``Light.HEADLIGHT``, ``Light.CAMERA_LIGHT`` and "
+"``Light.SCENE_LIGHT`` are also available, respectively."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:19
+msgid ""
+"A headlight is attached to the camera, looking at its focal point along the "
+"axis of the camera. A camera light also moves with the camera, but it can "
+"occupy a general position with respect to it. A scene light is stationary "
+"with respect to the scene, as it does not follow the camera. This is the "
+"default."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light:29
+msgid "Create a light at (10, 10, 10) and set its diffuse color to red."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:1
+msgid "Return the ambient color of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:3
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:3
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:3
+msgid ""
+"When setting, the color must be a 3-length sequence or a string. For "
+"example:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:6
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:6
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:6
+msgid "``color='white'``"
+msgstr "``color='white'``"
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:7
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:7
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:7
+msgid "``color='w'``"
+msgstr "``color='w'``"
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:8
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:8
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:8
+msgid "``color=[1, 1, 1]``"
+msgstr "``color=[1, 1, 1]``"
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:9
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:9
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:9
+msgid "``color='#FFFFFF'``"
+msgstr "``color='#FFFFFF'``"
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.ambient_color:13
+msgid "Create a light and set its ambient color to red."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.attenuation_values:1
+msgid "Return the quadratic attenuation constants."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.attenuation_values:3
+msgid ""
+"The values are 3-length sequences which specify the constant, linear and "
+"quadratic constants in this order. These parameters only have an effect for "
+"positional lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.attenuation_values:7
+msgid ""
+"Attenuation refers to the dampening of a beam of light as it gets further "
+"away from the point source. The three constants describe three different "
+"profiles for dampening with distance. A larger attenuation constant "
+"corresponds to more rapid decay with distance."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.attenuation_values:14
+msgid ""
+"Plot three cubes lit by two lights with different attenuation profiles. The "
+"blue light has slower linear attenuation, the green one has quadratic "
+"attenuation that makes it decay faster. Note that there are no shadow "
+"effects included so each box gets lit by both lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:1
+msgid "Return the cone angle of a positional light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:3
+msgid ""
+"The angle is in degrees and is measured between the axis of the cone and an "
+"extremal ray of the cone. A value smaller than 90 has spot lighting effects,"
+" anything equal to and above 90 is just a positional light, i.e. a spherical"
+" point source."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:8
+msgid ""
+"Regarding the angular distribution of the light, the cone angle merely "
+"truncates the beam, the shape of which is defined by the "
+":py:attr:`exponent`. If the cone angle is at least 90 degrees then there is "
+"no angular dependence."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:12
+msgid ""
+"If the light's cone angle is increased to 90 degrees or above, its actor (if"
+" previousy shown) is automatically hidden."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.cone_angle:17
+msgid ""
+"Plot three planes lit by three spotlights with varying cone angles. Use a "
+"large exponent to cause a visible angular variation of the intensity of the "
+"beams."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:1
+msgid "Return a shallow or a deep copy of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:3
+msgid ""
+"The only mutable attribute of ``Light`` objects is the transformation matrix"
+" (if it exists). Thus asking for a shallow copy merely implies that the "
+"returned light and the original share the transformation matrix instance."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:8
+msgid ""
+"Whether to return a deep copy rather than a shallow one. Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:13
+msgid ""
+"Create a light and check that it shares a transformation matrix with its "
+"shallow copy."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:1
+msgid "Return the diffuse color of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.diffuse_color:13
+msgid "Create a light and set its diffuse color to blue."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.exponent:1
+msgid "Return the exponent of the cosine used for spotlights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.exponent:3
+msgid ""
+"With a spotlight (a positional light with cone angle less than 90 degrees) "
+"the shape of the light beam within the light cone varies with the angle from"
+" the light's axis, and the variation of the intensity depends as the cosine "
+"of this angle raised to an exponent, which is 1 by default. Increasing the "
+"exponent makes the beam sharper (more focused around the axis), decreasing "
+"it spreads the beam out."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.exponent:10
+msgid ""
+"Note that since the angular dependence defined by this property and the "
+"truncation performed by the :py:attr:`cone_angle` are independent, for "
+"spotlights with narrow beams (small :py:attr:`cone_angle`) it is harder to "
+"see the angular variation of the intensity, and a lot higher exponent might "
+"be necessary to visibly impact the angular distribution of the beam."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.exponent:18
+msgid ""
+"Plot three planes lit by three spotlights with exponents of 1, 2 and 5. The "
+"one with the lowest exponent has the broadest beam."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.focal_point:1
+msgid "Return the focal point of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.focal_point:3
+msgid ""
+"Note: the focal point is defined in the coordinate space indicated by the "
+"light's transformation matrix (if it exists). To get the light's world space"
+" focal point, use the (read-only) :py:attr:`world_focal_point` property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.focal_point:10
+msgid "Create a light at (10, 10, 10) shining at (0, 0, 1)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:1
+msgid "Create a light from a ``vtk.vtkLight``, resulting in a copy."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:3
+msgid "The ``vtk.vtkLight`` to be copied."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.hide_actor:1
+msgid ""
+"Hide the actor for a positional light that depicts the geometry of the beam."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.hide_actor:3
+msgid "For a directional light the function doesn't do anything."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.intensity:1
+msgid "Return the brightness of the light (between 0 and 1)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.intensity:5
+msgid "Light the two sides of a cube with lights of different brightness."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_camera_light:1
+msgid "Return whether the light is a camera light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_camera_light:5
+msgid ""
+"Verify that four out of five lights of the default light kit are camera "
+"lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_headlight:1
+msgid "Return whether the light is a headlight."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_headlight:5
+msgid "Verify that the first light of the default light kit is a headlight."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_scene_light:1
+msgid "Return whether the light is a scene light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.is_scene_light:5
+msgid ""
+"Verify that none of the lights of the default light kit are scene lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:1
+msgid "Return the light type."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:3
+msgid ""
+"The default light type is a scene light which lives in world coordinate "
+"space."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:6
+msgid ""
+"A headlight is attached to the camera and always points at the camera's "
+"focal point."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:9
+msgid ""
+"A camera light also moves with the camera, but it can have an arbitrary "
+"relative position to the camera. Camera lights are defined in a coordinate "
+"space where the camera is located at (0, 0, 1), looking towards (0, 0, 0) at"
+" a distance of 1, with up being (0, 1, 0). Camera lights use the transform "
+"matrix to establish this space, i.e. they have a fixed :py:attr:`position` "
+"with respect to the camera, and moving the camera only affects the "
+":py:attr:`world_position` via changes in the :py:attr:`transform_matrix` "
+"(and the same goes for the focal point)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:20
+msgid "The property returns class constant values from an enum:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:22
+msgid "``Light.HEADLIGHT == 1``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:23
+msgid "``Light.CAMERA_LIGHT == 2``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:24
+msgid "``Light.SCENE_LIGHT == 3``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:28
+msgid ""
+"Check the type of lights for the first two lights of the default light kit "
+"of plotters."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:37
+msgid ""
+"Change the light type of the default light kit's headlight to a scene light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:1
+msgid "Return whether the light is on."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:3
+msgid "This corresponds to the Switch state of the ``vtk.vtkLight`` class."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:7
+msgid "Create a light, check if it's on by default, and turn it off."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.position:1
+msgid "Return the position of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.position:3
+msgid ""
+"Note: the position is defined in the coordinate space indicated by the "
+"light's transformation matrix (if it exists). To get the light's world space"
+" position, use the (read-only) :py:attr:`world_position` property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.position:10
+msgid ""
+"Create a light positioned at (10, 10, 10) after initialization, and note how"
+" the position is unaffected by a non-trivial transform matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.positional:1
+msgid "Return whether the light is positional."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.positional:3
+msgid ""
+"The default is a directional light, i.e. an infinitely distant point source."
+" A positional light with a cone angle of at least 90 degrees acts like a "
+"spherical point source. A positional light with a cone angle that is less "
+"than 90 degrees is known as a spotlight."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.positional:9
+msgid ""
+"Attenuation and cone angles are only used for positional lights. The "
+":py:attr:`exponent` property is only used for spotlights. Positional lights "
+"with a cone angle of at least 90 degrees don't show angular dependence of "
+"their beams, but they display attenuation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.positional:14
+msgid ""
+"If the light is changed to directional, its actor (if previousy shown) is "
+"automatically hidden."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.positional:19
+msgid "Create a spotlight shining on the origin."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_camera_light:1
+msgid "Set the light to be a camera light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_camera_light:3
+msgid ""
+"A camera light moves with the camera, but it can have an arbitrary relative "
+"position to the camera. Camera lights are defined in a coordinate space "
+"where the camera is located at (0, 0, 1), looking towards (0, 0, 0) at a "
+"distance of 1, with up being (0, 1, 0). Camera lights use the transformation"
+" matrix to establish this space. Calling this method will reset the light's "
+"transformation matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:1
+msgid "Set the position and focal point of a directional light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:3
+msgid ""
+"The light is switched to directional (non-positional). The focal point is "
+"set to the origin. The position is defined in terms of an elevation and an "
+"azimuthal angle, both in degrees."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:7
+msgid ""
+"Note that the equivalent ``vtk.vtkLight.SetDirectionAngle()`` method uses a "
+"surprising coordinate system where the (x', y', z') axes of the method "
+"correspond to the (z, x, y) axes of the renderer. This method reimplements "
+"the functionality in a way that `elev` is the conventional elevation and "
+"`azim` is the conventional azimuth. In particular:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:14
+msgid "`elev = 0`, `azim = 0` is the +x direction"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:15
+msgid "`elev = 0`, `azim = 90` is the +y direction"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:16
+msgid "`elev = 90`, `azim = 0` is the +z direction"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:18
+msgid "The elevation of the directional light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:20
+msgid "The azimuthal angle of the directional light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_direction_angle:25
+msgid ""
+"Create a light that shines on the origin from a 30-degree elevation in the "
+"xz plane."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_headlight:1
+msgid "Set the light to be a headlight."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_headlight:3
+msgid ""
+"Headlights are fixed to the camera and always point to the focal point of "
+"the camera. Calling this method will reset the light's transformation "
+"matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_scene_light:1
+msgid "Set the light to be a scene light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.set_scene_light:3
+msgid ""
+"Scene lights are stationary with respect to the scene. Calling this method "
+"will reset the light's transformation matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.show_actor:1
+msgid "Show an actor for a spotlight that depicts the geometry of the beam."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.show_actor:3
+msgid ""
+"For a directional light or a positional light with :py:attr:`cone_angle` of "
+"at least 90 degrees the method doesn't do anything. If the light is changed "
+"so that it becomes a spotlight, this method has to be called again for the "
+"actor to show. To hide the actor see :func:`hide_actor`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.show_actor:10
+msgid ""
+"Create a scene containing a cube lit with a cyan spotlight and visualize the"
+" light using an actor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:1
+msgid "Return the specular color of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.specular_color:13
+msgid "Create a light and set its specular color to bright green."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_off:1
+msgid "Switch off the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_off:5
+msgid "Create a light and switch it off."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_on:1
+msgid "Switch on the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.switch_on:5
+msgid "Create a light, switch it off and switch it back on again."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.transform_matrix:1
+msgid "Return the transformation matrix of the light (if any)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.transform_matrix:3
+msgid ""
+"The transformation matrix is ``None`` by default, and it is stored as a "
+"``vtk.vtkMatrix4x4`` object when set. If set, the light's parameters "
+"(position and focal point) are transformed by the matrix before being "
+"rendered. See also the :py:attr:`world_position` and "
+":py:attr:`world_focal_point` read-only properties that can differ from "
+":py:attr:`position` and :py:attr:`focal_point`, respectively."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.transform_matrix:10
+msgid ""
+"The 4-by-4 transformation matrix is a tool to encode a general linear "
+"transformation and a translation (an affine transform). The 3-by-3 principal"
+" submatrix (the top left corner of the matrix) encodes a three-dimensional "
+"linear transformation (e.g. some rotation around the origin). The top three "
+"elements in the last column of the matrix encode a three-dimensional "
+"translation. The last row of the matrix is redundant."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.transform_matrix:19
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_position:9
+msgid ""
+"Create a light with a transformation matrix that corresponds to a 90-degree "
+"rotation around the z axis and a shift by (0, 0, -1), and check that the "
+"light's position transforms as expected."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_focal_point:1
+msgid "Return the world space focal point of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_focal_point:3
+msgid ""
+"The world space focal point is the :py:attr:`focal_point` property "
+"transformed by the light's transform matrix if it exists. The value of this "
+"read-only property corresponds to the "
+"``vtk.vtkLight.GetTransformedFocalPoint()`` method."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_focal_point:10
+msgid ""
+"Create a light with a transformation matrix that corresponds to a 90-degree "
+"rotation around the z axis and a shift by (0, 0, -1), and check that the "
+"light's focal point transforms as expected."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_position:1
+msgid "Return the world space position of the light."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.world_position:3
+msgid ""
+"The world space position is the :py:attr:`position` property transformed by "
+"the light's transform matrix if it exists. The value of this read-only "
+"property corresponds to the ``vtk.vtkLight.GetTransformedPosition()`` "
+"method."
+msgstr ""
+
 #: ../../pyvista/docs/core/objects.rst:2
 msgid "Objects"
 msgstr "オブジェクト"
@@ -7658,6 +8702,16 @@ msgid ""
 msgstr ""
 ":class:`pyvista.DataObject` "
 "クラスは，すべてのPyVista型に共通のメソッドと属性のセットです．これらのオブジェクトには空間参照はなく，単にデータが保持されます．"
+
+#: ../../pyvista/docs/core/objects.rst:12:<autosummary>:1
+msgid ":obj:`actual_memory_size <pyvista.DataObject.actual_memory_size>`\\"
+msgstr ":obj:`actual_memory_size <pyvista.DataObject.actual_memory_size>`\\"
+
+#: ../../pyvista/docs/core/objects.rst:12:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.DataObject.actual_memory_size:1
+msgid "Return the actual size of the dataset object."
+msgstr "データセットオブジェクトの実際のサイズを返します．"
 
 #: ../../pyvista/docs/core/objects.rst:12:<autosummary>:1
 msgid ":obj:`field_arrays <pyvista.DataObject.field_arrays>`\\"
@@ -7708,8 +8762,29 @@ msgid ":obj:`copy <pyvista.DataObject.copy>`\\ \\(\\[deep\\]\\)"
 msgstr ":obj:`copy <pyvista.DataObject.copy>`\\ \\(\\[deep\\]\\)"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
+msgid ":obj:`copy_attributes <pyvista.DataObject.copy_attributes>`\\ \\(dataset\\)"
+msgstr ":obj:`copy_attributes <pyvista.DataObject.copy_attributes>`\\ \\(dataset\\)"
+
+#: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.DataObject.copy_attributes:1
+msgid "Copy the data attributes of the input dataset object."
+msgstr "入力データセットオブジェクトのデータ属性をコピーします．"
+
+#: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`copy_meta_from <pyvista.DataObject.copy_meta_from>`\\ \\(ido\\)"
 msgstr ":obj:`copy_meta_from <pyvista.DataObject.copy_meta_from>`\\ \\(ido\\)"
+
+#: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
+msgid ":obj:`copy_structure <pyvista.DataObject.copy_structure>`\\ \\(dataset\\)"
+msgstr ":obj:`copy_structure <pyvista.DataObject.copy_structure>`\\ \\(dataset\\)"
+
+#: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.core.common.DataObject.copy_structure:1
+msgid ""
+"Copy the structure (geometry and topology) of the input dataset object."
+msgstr "入力データセットオブジェクトの構造(ジオメトリとトポロジ)をコピーします．"
 
 #: ../../pyvista/docs/core/objects.rst:17:<autosummary>:1
 msgid ":obj:`deep_copy <pyvista.DataObject.deep_copy>`\\ \\(to\\_copy\\)"
@@ -7763,6 +8838,11 @@ msgstr "指定されたメッシュをこのメッシュに浅くコピーしま
 #: pyvista.core.common.DataObject:1
 msgid "Methods common to all wrapped data objects."
 msgstr "ラップされたすべてのデータオブジェクトに共通するメソッド．"
+
+#: ../../pyvista/pyvista/core/common.pydocstring of
+#: pyvista.DataObject.actual_memory_size:3
+msgid "The actual size of the dataset object in kibibytes (1024 bytes)."
+msgstr "データセットオブジェクトの実際のサイズ(1024バイト)．"
 
 #: ../../pyvista/pyvista/core/common.pydocstring of
 #: pyvista.core.common.DataObject.get_data_range:3
@@ -8346,7 +9426,7 @@ msgstr ":obj:`points_matrix <pyvista.StructuredGrid.points_matrix>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.points_matrix:1
 msgid "Points as a 4-D matrix, with x/y/z along the last dimension."
-msgstr ""
+msgstr "最後の次元に沿ったx/y/zを持つ4次元行列として点を指定します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
 msgid ":obj:`x <pyvista.StructuredGrid.x>`\\"

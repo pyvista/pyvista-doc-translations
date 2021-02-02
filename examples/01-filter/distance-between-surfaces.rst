@@ -151,7 +151,7 @@ vector.
  .. code-block:: none
 
 
-    5.14371604862537
+    5.143716063834265
 
 
 
@@ -218,7 +218,7 @@ noticeably faster than a ray trace, especially for large surfaces.
  .. code-block:: none
 
 
-    4.84363943805413
+    4.843639430073732
 
 
 
@@ -254,7 +254,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.085 seconds)
+   **Total running time of the script:** ( 0 minutes  5.859 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:
