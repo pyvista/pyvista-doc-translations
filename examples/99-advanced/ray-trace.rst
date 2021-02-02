@@ -81,7 +81,7 @@ Single line segment ray tracing for PolyData objects.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.337 seconds)
+   **Total running time of the script:** ( 0 minutes  0.348 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace.py:
