@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.28.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-17 01:23+0000\n"
+"POT-Creation-Date: 2021-02-02 00:52+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/getfem-doc/teams/112279/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -283,6 +283,10 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:17
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:80
@@ -331,6 +335,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:0
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_line_widget:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:0
@@ -371,6 +377,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_3_lights:0
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_cell_picking:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:0
@@ -378,6 +386,8 @@ msgstr ""
 #: pyvista.plotting.picking.PickingHelper.enable_geodesic_picking:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_horizon_picking:0
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_lightkit:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_path_picking:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -398,6 +408,8 @@ msgstr ""
 #: pyvista.plotting.plotting.BasePlotter.orbit_on_path:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:0
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1323,6 +1335,18 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
+":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
+"only\\_active\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:1
+msgid "Add a Light to the scene."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+msgid ""
 ":obj:`add_lines <pyvista.BasePlotter.add_lines>`\\ \\(lines\\[\\, color\\, "
 "width\\, label\\, name\\]\\)"
 msgstr ""
@@ -1495,7 +1519,7 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.disable_3_lights:1
-msgid "Disable 3-lights illumination."
+msgid "Please use ``enable_lightkit``, this method has been depreciated."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
@@ -1572,7 +1596,9 @@ msgid "Enable this renderer's camera to be interactive."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
-msgid ":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ \\(\\)"
+msgid ""
+":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
+"\\(\\[only\\_active\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
@@ -1646,6 +1672,18 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_joystick_style:1
 msgid "Set the interactive style to joystick."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+msgid ""
+":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
+"\\(\\[only\\_active\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_lightkit:1
+msgid "Enable the default light-kit lighting."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
@@ -1973,6 +2011,18 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
 msgid "Remove an actor from the Renderer."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+msgid ""
+":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
+"\\(\\[only\\_active\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:1
+msgid "Remove all lights from the scene."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
@@ -2668,6 +2718,55 @@ msgid "Window title of the scalar bar"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:25
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:49
+msgid ""
+"What lighting to set up for the plotter. Accepted options:      * "
+"``'light_kit'``: a vtk Light Kit composed of 5 lights.     * ``'three "
+"lights'``: illumination using 3 lights.     * ``'none'``: no light sources "
+"at instantiation.  The default is a Light Kit (to be precise, 5 separate "
+"lights that act like a Light Kit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:25
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:49
+msgid "What lighting to set up for the plotter. Accepted options:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:28
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:52
+msgid "``'light_kit'``: a vtk Light Kit composed of 5 lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:29
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:53
+msgid "``'three lights'``: illumination using 3 lights."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:30
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:54
+msgid "``'none'``: no light sources at instantiation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:32
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:56
+msgid ""
+"The default is a Light Kit (to be precise, 5 separate lights that act like a"
+" Light Kit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:3
@@ -3307,6 +3406,26 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:49
 msgid "Alternative manual example"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:3
+msgid "The light to be added."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:5
+msgid ""
+"If ``True``, only add the light to the active renderer. The default is that "
+"every renderer adds the light. To add the light to an arbitrary renderer, "
+"see the ``add_light`` method of the Renderer class."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:12
+msgid ""
+"Create a plotter that we initialize with no lights, and add a cube and a "
+"single headlight to it."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4543,8 +4662,12 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:30
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:25
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:30
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:25
 msgid ""
 "The name of the slider style. The list of available styles are in "
 "``rcParams['slider_style']``. Defaults to None."
@@ -4766,9 +4889,9 @@ msgid "The list of possible values displayed on the slider bar"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:26
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:29
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:26
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:29
 msgid "**slider_widget** -- The VTK slider widget configured to display text."
 msgstr ""
 
@@ -4921,6 +5044,20 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_spline_widgets:1
 msgid "Disable all of the spline widgets."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_3_lights:3
+msgid "This will replace all pre-existing lights in the scene."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_3_lights:5
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_lightkit:8
+msgid ""
+"If ``True``, only change the active renderer. The default is that every "
+"renderer is affected."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5290,6 +5427,16 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_lightkit:3
+msgid "See: https://www.researchgate.net/publication/2926068"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.enable_lightkit:6
+msgid "This will replace all pre-existing lights in the renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:3
@@ -5632,6 +5779,20 @@ msgstr ""
 msgid ""
 "**success** -- True when actor removed.  False when actor has not been "
 "removed."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:3
+msgid ""
+"If ``True``, only remove lights from the active renderer. The default is "
+"that lights are stripped from every renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:9
+msgid ""
+"Create a plotter, forget to initialize it without default lighting, correct "
+"the mistake after instantiation."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -6299,6 +6460,16 @@ msgid ":obj:`length <pyvista.Renderer.length>`\\"
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+msgid ":obj:`lights <pyvista.Renderer.lights>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.lights:1
+msgid "Return a list of all lights in the renderer."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 msgstr ""
 
@@ -6344,6 +6515,16 @@ msgstr ""
 msgid ""
 ":obj:`add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+msgid ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_light:1
+msgid "Add a Light to the renderer."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
@@ -6458,6 +6639,16 @@ msgstr ""
 msgid ""
 ":obj:`remove_actor <pyvista.Renderer.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+msgid ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.remove_all_lights:1
+msgid "Remove all lights from the renderer."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
