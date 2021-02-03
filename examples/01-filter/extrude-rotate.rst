@@ -128,7 +128,7 @@ Plot the extruded line
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.645 seconds)
+   **Total running time of the script:** ( 0 minutes  0.702 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-rotate.py:

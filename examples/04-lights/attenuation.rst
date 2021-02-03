@@ -200,7 +200,7 @@ objects is not handled by default):
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.732 seconds)
+   **Total running time of the script:** ( 0 minutes  0.770 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_attenuation.py:
