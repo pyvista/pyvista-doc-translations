@@ -5,18 +5,18 @@
 
 Computation times
 =================
-**00:06.015** total execution time for **examples_04-lights** files:
+**00:06.413** total execution time for **examples_04-lights** files:
 
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_mesh_lighting.py` (``mesh_lighting.py``)       | 00:01.157 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_mesh_lighting.py` (``mesh_lighting.py``)       | 00:01.406 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_plotter_builtins.py` (``plotter_builtins.py``) | 00:01.150 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_plotter_builtins.py` (``plotter_builtins.py``) | 00:01.153 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:00.993 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:01.098 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_light_types.py` (``light_types.py``)           | 00:00.976 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_light_types.py` (``light_types.py``)           | 00:01.009 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:00.976 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:00.965 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:00.763 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:00.783 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+

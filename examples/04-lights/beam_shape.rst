@@ -306,7 +306,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.993 seconds)
+   **Total running time of the script:** ( 0 minutes  1.098 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:
