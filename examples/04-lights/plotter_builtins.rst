@@ -226,7 +226,7 @@ shadow:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.321 seconds)
+   **Total running time of the script:** ( 0 minutes  1.155 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_plotter_builtins.py:

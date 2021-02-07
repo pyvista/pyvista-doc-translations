@@ -332,7 +332,7 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.947 seconds)
+   **Total running time of the script:** ( 0 minutes  15.070 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

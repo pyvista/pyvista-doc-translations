@@ -110,7 +110,7 @@ light rendering, see the :ref:`ref_lighting_properties_example` example.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.447 seconds)
+   **Total running time of the script:** ( 0 minutes  1.212 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_mesh_lighting.py:

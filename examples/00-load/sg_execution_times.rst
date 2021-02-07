@@ -5,38 +5,38 @@
 
 Computation times
 =================
-**01:12.978** total execution time for **examples_00-load** files:
+**01:04.154** total execution time for **examples_00-load** files:
 
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py` (``create-parametric-geometric-objects.py``) | 00:17.679 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py` (``create-parametric-geometric-objects.py``) | 00:15.735 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-surface-draped.py` (``create-surface-draped.py``)                             | 00:09.550 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-surface-draped.py` (``create-surface-draped.py``)                             | 00:08.133 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)                                                   | 00:07.330 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)                                                   | 00:06.348 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-point-cloud.py` (``create-point-cloud.py``)                                   | 00:06.874 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-point-cloud.py` (``create-point-cloud.py``)                                   | 00:05.597 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)                                                     | 00:05.855 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)                                                     | 00:04.860 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-structured-surface.py``)                     | 00:04.488 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-structured-surface.py``)                     | 00:04.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_terrain-mesh.py` (``terrain-mesh.py``)                                               | 00:03.632 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)                                             | 00:03.176 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)                                             | 00:03.537 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_terrain-mesh.py` (``terrain-mesh.py``)                                               | 00:03.069 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-surface.py``)                                   | 00:03.316 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-surface.py``)                                   | 00:02.959 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)                                             | 00:02.498 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)                                             | 00:02.198 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-geometric-objects.py``)                       | 00:01.899 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-geometric-objects.py` (``create-geometric-objects.py``)                       | 00:02.162 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-grid.py``)                                 | 00:01.824 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-grid.py``)                                 | 00:01.617 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-unstructured-surface.py``)                 | 00:01.516 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-unstructured-surface.py``)                 | 00:01.355 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)                                                 | 00:01.411 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)                                                 | 00:01.222 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_wrap-trimesh.py` (``wrap-trimesh.py``)                                               | 00:00.878 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_wrap-trimesh.py` (``wrap-trimesh.py``)                                               | 00:01.107 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)                                                 | 00:00.691 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)                                                 | 00:00.614 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+

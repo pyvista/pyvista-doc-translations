@@ -102,7 +102,7 @@ After interacting with the scene, the threshold mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7fe0ac2fcd08)
+    [UnstructuredGrid (0x7f38e2ab7408)
       N Cells:	115425
       N Points:	179772
       X Bounds:	3.760e+01, 1.171e+02
@@ -174,7 +174,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.614 seconds)
+   **Total running time of the script:** ( 0 minutes  2.449 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_slider-bar-widget.py:
