@@ -61,7 +61,7 @@ jobs:
         mv ./pyvista/docs/images .
         deactivate
     - name: commit
-      if: contains(github.event.head_commit.message, '[ci skip]') == false
+      if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
       env:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
