@@ -18,6 +18,9 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         job_name: script
+    - name: Extract Branch Name
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
     - name: checkout with submodule
       uses: actions/checkout@v2
       with:
@@ -34,7 +37,7 @@ jobs:
         sudo apt-get install -y --no-install-recommends python3-setuptools
         sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         sudo apt-get install -y --no-install-recommends python3-venv
-        (cd pyvista; git fetch origin; git checkout tkoyama010-patch-2; git reset --hard origin/tkoyama010-patch-2; git branch -a)
+        (cd pyvista; git fetch origin; git checkout master; git reset --hard origin/master; git branch -a)
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
@@ -73,4 +76,4 @@ jobs:
         $HTML_URL"
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
-        git push github tkoyama010-patch-2
+        git push github ${{ steps.extract_branch.outputs.branch }}
