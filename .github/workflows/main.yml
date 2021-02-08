@@ -71,13 +71,13 @@ jobs:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
+        git remote -v
+        git remote add github git@github.com:$GITHUB_REPOSITORY.git
+        git fetch origin -p
+        git checkout ${GITHUB_HEAD_REF_SLUG}
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
         git add .
         git commit --allow-empty -m "[ci skip] $JOB_ID
         $HTML_URL"
-        git remote -v
-        git remote add github git@github.com:$GITHUB_REPOSITORY.git
-        git fetch origin -p
-        git checkout ${GITHUB_HEAD_REF_SLUG}
         git push github ${GITHUB_HEAD_REF_SLUG}
