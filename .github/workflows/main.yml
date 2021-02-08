@@ -71,4 +71,6 @@ jobs:
         git add .
         git commit --allow-empty -m "[ci skip] $JOB_ID
         $HTML_URL"
-        git push github ${GITHUB_HEAD_REF_SLUG}
+        git remote -v
+        git remote add github git@github.com:$GITHUB_REPOSITORY.git
+        git push github master
