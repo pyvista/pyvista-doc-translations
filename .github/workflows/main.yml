@@ -28,8 +28,6 @@ jobs:
       with:
         host: github.com
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-    - name: Inject slug/short variables
-      uses: rlespinasse/github-slug-action@v3.x
     - name: install
       run: |
         sudo apt-get update
