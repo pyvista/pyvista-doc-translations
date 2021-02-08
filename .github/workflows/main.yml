@@ -79,4 +79,5 @@ jobs:
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
         git fetch origin -p
+        git checkout ${GITHUB_HEAD_REF_SLUG}
         git push github ${GITHUB_HEAD_REF_SLUG}
