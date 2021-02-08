@@ -15,7 +15,7 @@ $LOCAL_PYTHON_PATH/sphinx-intl create-transifexrc
 $LOCAL_PYTHON_PATH/sphinx-build -T -b gettext ../pyvista/docs pot
 $LOCAL_PYTHON_PATH/sphinx-intl update-txconfig-resources -p pot -d .
 cat .tx/config
-$LOCAL_PYTHON_PATH/tx push -s --use-git-timestamps
+$LOCAL_PYTHON_PATH/tx push -s --skip
 rm -Rf ja zh_CN zh_TW
-$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN,zh_TW --use-git-timestamps
+$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN,zh_TW
 git checkout .tx/config
