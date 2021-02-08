@@ -31,6 +31,8 @@ jobs:
       with:
         host: github.com
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    - name: Inject slug/short variables
+      uses: rlespinasse/github-slug-action@v3.x
     - name: install
       run: |
         sudo apt-get update
@@ -76,4 +78,4 @@ jobs:
         $HTML_URL"
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
-        git push github ${{ steps.extract_branch.outputs.branch }}
+        git push github ${GITHUB_REF_SLUG}
