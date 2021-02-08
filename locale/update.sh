@@ -17,5 +17,5 @@ $LOCAL_PYTHON_PATH/sphinx-intl update-txconfig-resources -p pot -d .
 cat .tx/config
 $LOCAL_PYTHON_PATH/tx push -s --use-git-timestamps
 rm -Rf ja,zh_CN,zh_TW
-$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN,zh_TW
+$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN,zh_TW --use-git-timestamps
 git checkout .tx/config
