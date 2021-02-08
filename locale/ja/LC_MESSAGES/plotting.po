@@ -1412,12 +1412,14 @@ msgid ""
 ":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
 "only\\_active\\]\\)"
 msgstr ""
+":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
+"only\\_active\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:1
 msgid "Add a Light to the scene."
-msgstr ""
+msgstr "シーンにライトを追加します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
@@ -1613,7 +1615,7 @@ msgstr ":obj:`disable_3_lights <pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.disable_3_lights:1
 msgid "Please use ``enable_lightkit``, this method has been depreciated."
-msgstr ""
+msgstr "``enable_lightkit`` を使用してください．このメソッドは非推奨です．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
@@ -1701,6 +1703,8 @@ msgid ""
 ":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
+":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
+"\\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1788,12 +1792,14 @@ msgid ""
 ":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
+":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
+"\\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:1
 msgid "Enable the default light-kit lighting."
-msgstr ""
+msgstr "既定値のライトキットライティングを有効にします．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
@@ -2161,12 +2167,14 @@ msgid ""
 ":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
+":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
+"\\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_all_lights:1
 msgid "Remove all lights from the scene."
-msgstr ""
+msgstr "シーンからすべてのライトを削除します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ""
@@ -2923,34 +2931,37 @@ msgid ""
 "at instantiation.  The default is a Light Kit (to be precise, 5 separate "
 "lights that act like a Light Kit)."
 msgstr ""
+"プロッタに設定する照明．使用可能なオプション: * ``'light_kit'``: 5つのライトで構成されるvtkライトキット． * ``'three"
+" lights'``: 3つのライトを使用したイルミネーション． * ``'none'``: "
+"インスタンス化時に光源がありません．既定値はライトキット(正確には，ライトキットのように動作する5つの独立したライト)です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:49
 msgid "What lighting to set up for the plotter. Accepted options:"
-msgstr ""
+msgstr "プロッタに設定する照明．使用可能なオプション:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:28
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:52
 msgid "``'light_kit'``: a vtk Light Kit composed of 5 lights."
-msgstr ""
+msgstr "``'light_kit'``: 5個のライトで構成されるvtk Light Kitです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:29
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:53
 msgid "``'three lights'``: illumination using 3 lights."
-msgstr ""
+msgstr "``'three lights'``: 3つのライトを使った照明．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:30
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:54
 msgid "``'none'``: no light sources at instantiation."
-msgstr ""
+msgstr "``'none'``: インスタンス化時に光源がありません．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:32
@@ -2959,7 +2970,7 @@ msgstr ""
 msgid ""
 "The default is a Light Kit (to be precise, 5 separate lights that act like a"
 " Light Kit)."
-msgstr ""
+msgstr "既定値はLight Kit(正確には，Light Kitのように動作する5つの独立したライト)です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:3
@@ -3634,7 +3645,7 @@ msgstr "代替マニュアルの例"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:3
 msgid "The light to be added."
-msgstr ""
+msgstr "追加するライトです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:5
@@ -3643,13 +3654,16 @@ msgid ""
 "every renderer adds the light. To add the light to an arbitrary renderer, "
 "see the ``add_light`` method of the Renderer class."
 msgstr ""
+"``True`` "
+"の場合は，ライトだけをアクティブなレンダラーに追加します．既定値では，すべてのレンダラーがライトを追加します．任意のレンダラーにライトを追加するには，Rendererクラスの"
+" ``add_light`` メソッドを参照してください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:12
 msgid ""
 "Create a plotter that we initialize with no lights, and add a cube and a "
 "single headlight to it."
-msgstr ""
+msgstr "ライトなしで初期化するプロッタを作成し，立方体と1つのヘッドライトを追加します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_line_widget:1
@@ -5371,7 +5385,7 @@ msgstr "すべてのスプラインウィジェットを無効にします．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_3_lights:3
 msgid "This will replace all pre-existing lights in the scene."
-msgstr ""
+msgstr "これにより，シーン内の既存のライトがすべて置き換えられます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_3_lights:5
@@ -5380,7 +5394,7 @@ msgstr ""
 msgid ""
 "If ``True``, only change the active renderer. The default is that every "
 "renderer is affected."
-msgstr ""
+msgstr "``True`` の場合は，アクティブなレンダラーのみを変更します．既定値では，すべてのレンダラーが影響を受けます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_cell_picking:1
@@ -5775,12 +5789,12 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:3
 msgid "See: https://www.researchgate.net/publication/2926068"
-msgstr ""
+msgstr "関連項目: https://www.researchgate.net/publication/2926068"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:6
 msgid "This will replace all pre-existing lights in the renderer."
-msgstr ""
+msgstr "これにより，レンダラー内の既存のライトがすべて置き換えられます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:3
@@ -6157,14 +6171,14 @@ msgstr "**success** -- アクターが削除された場合はtrue．アクタ�
 msgid ""
 "If ``True``, only remove lights from the active renderer. The default is "
 "that lights are stripped from every renderer."
-msgstr ""
+msgstr "``True`` の場合は，アクティブなレンダラーからのみライトを削除します．既定値では，すべてのレンダラーからライトが取り除かれます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_all_lights:9
 msgid ""
 "Create a plotter, forget to initialize it without default lighting, correct "
 "the mistake after instantiation."
-msgstr ""
+msgstr "プロッタを作成し，既定の照明なしで初期化するのを忘れた場合は，インスタンス化後に間違いを修正してください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:3
@@ -6873,13 +6887,13 @@ msgstr ":obj:`length <pyvista.Renderer.length>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
 msgid ":obj:`lights <pyvista.Renderer.lights>`\\"
-msgstr ""
+msgstr ":obj:`lights <pyvista.Renderer.lights>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.lights:1
 msgid "Return a list of all lights in the renderer."
-msgstr ""
+msgstr "レンダラのすべてのライトのリストを返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.Renderer.parallel_projection>`\\"
@@ -6941,13 +6955,13 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
-msgstr ""
+msgstr ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_light:1
 msgid "Add a Light to the renderer."
-msgstr ""
+msgstr "レンダラーにライトを追加します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ""
@@ -7086,13 +7100,13 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_all_lights:1
 msgid "Remove all lights from the renderer."
-msgstr ""
+msgstr "レンダラーからすべてのライトを削除します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ""
