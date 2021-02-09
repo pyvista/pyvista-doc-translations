@@ -27,8 +27,6 @@ os.environ["PYVISTA_AUTO_CLOSE"] = "false"
 autodoc_mock_imports = ["vtk"]
 shutil.rmtree("pyvista/docs/examples", ignore_errors=True)
 shutil.copytree("examples", "pyvista/docs/examples")
-shutil.rmtree("pyvista/docs/images/auto-generated", ignore_errors=True)
-shutil.copytree("images/auto-generated", "pyvista/docs/images/auto-generated")
 
 basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
 
