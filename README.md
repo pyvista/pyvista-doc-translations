@@ -17,6 +17,10 @@ translated docs for pyvista official document
 
 [![Documentation Status](https://readthedocs.org/projects/pyvista-doc-zh-tw/badge/?version=latest)](https://pyvista-doc.readthedocs.io/zh_TW/latest/?badge=latest)
 
+:indonesia:
+
+[![Documentation Status](https://readthedocs.org/projects/pyvista-doc-jv/badge/?version=latest)](https://pyvista-doc.readthedocs.io/jv/latest/?badge=latest)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is a project to provide pyvista official documentation with multiple versions and multiple languages on Read The Docs site.
@@ -32,6 +36,7 @@ conf.py files for each languages have 'language' and 'locale_dirs' values withou
   * https://readthedocs.org/projects/pyvista-doc-ja/
   * https://readthedocs.org/projects/pyvista-doc-zh-cn/
   * https://readthedocs.org/projects/pyvista-doc-zh-tw/
+  * https://readthedocs.org/projects/pyvista-doc-jv/
 
 * Documentation pages for each languages:
 
