@@ -44,6 +44,7 @@ conf.py files for each languages have 'language' and 'locale_dirs' values withou
   * https://pyvista-doc.readthedocs.io/ja/latest/
   * https://pyvista-doc.readthedocs.io/zh_CN/latest/
   * https://pyvista-doc.readthedocs.io/zh_TW/latest/
+  * https://pyvista-doc.readthedocs.io/jv/latest/
 
 ## How to setup a translated documentation project on RTD
 
