@@ -46,9 +46,7 @@ jobs:
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
         source /home/runner/work/.venv/bin/activate
-        git clone --depth 1 git://github.com/pyvista/gl-ci-helpers.git
-        source ./gl-ci-helpers/travis/setup_headless_display.sh
-        rm -rf gl-ci-helpers
+        source ./pyvista/.ci/setup_headless_display.sh
         rm ./examples/*/*.py
         mv ./examples ./pyvista/docs
         (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
