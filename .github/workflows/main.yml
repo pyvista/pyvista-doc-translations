@@ -12,6 +12,10 @@ jobs:
   script:
     runs-on: ubuntu-latest
     steps:
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
     - name: Get Job URL
       uses: Tiryoh/gha-jobid-action@v0
       id: jobs
