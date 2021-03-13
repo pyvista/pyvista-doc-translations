@@ -40,7 +40,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The &quot;Hello, world!&quot; of VTK ">
+    <div class="sphx-glr-thumbcontainer" tooltip="The &quot;Hello, world!&quot; of VTK">
 
 .. only:: html
 
@@ -61,7 +61,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Creating parametric objects ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Creating parametric objects">
 
 .. only:: html
 
@@ -124,7 +124,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices">
 
 .. only:: html
 
@@ -145,7 +145,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create a StructuredGrid surface from NumPy arrays ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a StructuredGrid surface from NumPy arrays">
 
 .. only:: html
 
@@ -187,7 +187,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create a surface from a set of points through a Delaunay triangulation. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a surface from a set of points through a Delaunay triangulation.">
 
 .. only:: html
 
@@ -229,7 +229,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create an irregular, unstructured grid from NumPy arrays. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an irregular, unstructured grid from NumPy arrays.">
 
 .. only:: html
 
@@ -463,7 +463,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using using planes or boxes. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using using planes or boxes.">
 
 .. only:: html
 
@@ -484,7 +484,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" Compute normals on a surface. ">
+    <div class="sphx-glr-thumbcontainer" tooltip=" Compute normals on a surface.">
 
 .. only:: html
 
@@ -505,7 +505,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" Calculate mass properties such as the volume or area of datasets ">
+    <div class="sphx-glr-thumbcontainer" tooltip=" Calculate mass properties such as the volume or area of datasets">
 
 .. only:: html
 
@@ -631,7 +631,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extracts edges from a surface. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extracts edges from a surface.">
 
 .. only:: html
 
@@ -694,7 +694,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Calculates the geodesic path between two vertices using Dijkstra&#x27;s algorithm ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Calculates the geodesic path between two vertices using Dijkstra&#x27;s algorithm">
 
 .. only:: html
 
@@ -715,7 +715,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use vectors in a dataset to plot and orient glyphs/geometric objects. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use vectors in a dataset to plot and orient glyphs/geometric objects.">
 
 .. only:: html
 
@@ -736,7 +736,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use parameters in a dataset to plot and orient glyphs/geometric objects. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use parameters in a dataset to plot and orient glyphs/geometric objects.">
 
 .. only:: html
 
@@ -778,7 +778,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Interpolate one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes using a Gaussian Kernel. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Interpolate one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes using a Gaussian Kernel.">
 
 .. only:: html
 
@@ -820,7 +820,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects.">
 
 .. only:: html
 
@@ -883,7 +883,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes.">
 
 .. only:: html
 
@@ -904,7 +904,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extract thin planar slices from a volume ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract thin planar slices from a volume">
 
 .. only:: html
 
@@ -925,7 +925,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Integrate a vector field to generate streamlines. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Integrate a vector field to generate streamlines.">
 
 .. only:: html
 
@@ -967,7 +967,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Smoothing rough edges of a surface mesh ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Smoothing rough edges of a surface mesh">
 
 .. only:: html
 
@@ -988,7 +988,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Using common filters like thresholding and clipping ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Using common filters like thresholding and clipping">
 
 .. only:: html
 
@@ -1120,7 +1120,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use a Matplotlib, Colorcet, cmocean, or custom colormap when plotting scalar values. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use a Matplotlib, Colorcet, cmocean, or custom colormap when plotting scalar values.">
 
 .. only:: html
 
@@ -1162,7 +1162,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Show the edges of all geometries within a mesh ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Show the edges of all geometries within a mesh">
 
 .. only:: html
 
@@ -1204,7 +1204,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Add a floor/wall at the boundary of the rendering scene. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Add a floor/wall at the boundary of the rendering scene.">
 
 .. only:: html
 
@@ -1246,7 +1246,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Generate a moving gif from an active plotter ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Generate a moving gif from an active plotter">
 
 .. only:: html
 
@@ -1267,7 +1267,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Plot a depth image as viewed from a camera overlooking the &quot;hills&quot; example mesh. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot a depth image as viewed from a camera overlooking the &quot;hills&quot; example mesh.">
 
 .. only:: html
 
@@ -1309,7 +1309,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Make an animation of an isovalue through a volumetric dataset ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Make an animation of an isovalue through a volumetric dataset">
 
 .. only:: html
 
@@ -1330,7 +1330,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use string arrays in a point set to label points ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Use string arrays in a point set to label points">
 
 .. only:: html
 
@@ -1393,7 +1393,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated MP4 movie of a rendering scene ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated MP4 movie of a rendering scene">
 
 .. only:: html
 
@@ -1414,7 +1414,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" Subplotting: having multiple scenes in a single window ">
+    <div class="sphx-glr-thumbcontainer" tooltip=" Subplotting: having multiple scenes in a single window">
 
 .. only:: html
 
@@ -1498,7 +1498,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Plot the values of a dataset over a line through that dataset ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot the values of a dataset over a line through that dataset">
 
 .. only:: html
 
@@ -1561,7 +1561,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Comparison of default, flat shading vs. smooth shading. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Comparison of default, flat shading vs. smooth shading.">
 
 .. only:: html
 
@@ -1582,7 +1582,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Generate and visualize meshes from data in longitude-latitude coordinates. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Generate and visualize meshes from data in longitude-latitude coordinates.">
 
 .. only:: html
 
@@ -1603,7 +1603,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Plot a mesh with an image projected onto it as a texture. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot a mesh with an image projected onto it as a texture.">
 
 .. only:: html
 
@@ -1624,7 +1624,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="PyVista has a few coloring themes for you to choose! ">
+    <div class="sphx-glr-thumbcontainer" tooltip="PyVista has a few coloring themes for you to choose!">
 
 .. only:: html
 
@@ -2065,7 +2065,7 @@ developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects. ">
+    <div class="sphx-glr-thumbcontainer" tooltip="Single line segment ray tracing for PolyData objects.">
 
 .. only:: html
 
