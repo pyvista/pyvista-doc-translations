@@ -60,6 +60,7 @@ jobs:
         set +x
         rm ./examples/*/*.py
         mv ./examples ./pyvista/docs
+        git submodule update --remote
         (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
