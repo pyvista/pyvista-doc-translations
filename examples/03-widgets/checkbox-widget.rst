@@ -25,7 +25,6 @@ Use a checkbox to turn on/off the visibility of meshes in a scene.
 
 See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 10-13
 
 .. code-block:: default
@@ -139,7 +138,7 @@ their visibility in the scene.
                                          color_on=color,
                                          color_off='grey',
                                          background_color='grey')
-            Startpos = Startpos + size + (size / 10)
+            Startpos = Startpos + size + (size // 10)
 
     p.show()
 
@@ -166,7 +165,7 @@ their visibility in the scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.573 seconds)
+   **Total running time of the script:** ( 0 minutes  1.270 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_checkbox-widget.py:

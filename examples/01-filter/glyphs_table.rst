@@ -18,14 +18,15 @@
 .. _sphx_glr_examples_01-filter_glyphs_table.py:
 
 
-.. _glyph_example:
+.. _glyph_table_example:
 
-Plotting Glyphs (PolyData)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Table of Glyphs
+~~~~~~~~~~~~~~~
 
-Use parameters in a dataset to plot and orient glyphs/geometric objects.
+``vtk`` supports tables of glyphs from which glyphs are looked
+up. This example demonstrates this functionality.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
@@ -41,20 +42,16 @@ Use parameters in a dataset to plot and orient glyphs/geometric objects.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-25
-
-Table of Glyphs
-
-``vtk`` supports tables of glyphs from which glyphs are looked
-up. This example demonstrates this functionality.
+.. GENERATED FROM PYTHON SOURCE LINES 16-22
 
 We can allow tables of glyphs in a backward-compatible way by
 allowing a sequence of geometries as well as single (scalar)
-geometries to be passed as the geom kwarg of glyph. An indices
-optional keyword is added, which is mandatory in case geom is a
-sequence, and in this case has to be the same length.
+geometries to be passed as the ``geom`` kwarg of :func:`pyvista.DataSetFilters.glyph`.
+An ``indices`` optional keyword specifies the index of each glyph geometry in
+the table, and it has to be the same length as ``geom`` if specified. If it is
+absent a default value of ``range(len(geom))`` is assumed.
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-61
+.. GENERATED FROM PYTHON SOURCE LINES 23-59
 
 .. code-block:: default
 
@@ -118,7 +115,7 @@ sequence, and in this case has to be the same length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.375 seconds)
+   **Total running time of the script:** ( 0 minutes  1.745 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:

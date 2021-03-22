@@ -40,6 +40,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an explicit structured grid from NumPy arrays.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-explicit-structured-grid_thumb.png
+     :alt: Creating an Explicit Structured Grid
+
+     :ref:`sphx_glr_examples_00-load_create-explicit-structured-grid.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-explicit-structured-grid
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="The &quot;Hello, world!&quot; of VTK">
 
 .. only:: html
@@ -652,6 +673,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="You can extract the surface of nearly any object within pyvista using the extract_surface filte...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_extract-surface_thumb.png
+     :alt: Extract Surface
+
+     :ref:`sphx_glr_examples_01-filter_extract-surface.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/extract-surface
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This takes polygonal data as input and generates polygonal data on output. The input dataset is...">
 
 .. only:: html
@@ -736,12 +778,12 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use parameters in a dataset to plot and orient glyphs/geometric objects.">
+    <div class="sphx-glr-thumbcontainer" tooltip="vtk supports tables of glyphs from which glyphs are looked up. This example demonstrates this f...">
 
 .. only:: html
 
  .. figure:: /examples/01-filter/images/thumb/sphx_glr_glyphs_table_thumb.png
-     :alt: Plotting Glyphs (PolyData)
+     :alt: Table of Glyphs
 
      :ref:`sphx_glr_examples_01-filter_glyphs_table.py`
 
@@ -1579,6 +1621,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/shading
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract a subset of the edges of a polygonal mesh to generate an outline (silhouette) of a mesh...">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_silhouette_thumb.png
+     :alt: Silhouette Highlight
+
+     :ref:`sphx_glr_examples_02-plot_silhouette.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/silhouette
 
 .. raw:: html
 

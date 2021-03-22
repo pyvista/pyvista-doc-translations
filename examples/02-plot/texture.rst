@@ -401,7 +401,7 @@ By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
 
 Then we must associate those texture coordinates with the mesh through the
-:attr:`pyvista.Common.t_coords` property.
+:attr:`pyvista.DataSet.t_coords` property.
 
 .. GENERATED FROM PYTHON SOURCE LINES 154-157
 
@@ -548,7 +548,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.752 seconds)
+   **Total running time of the script:** ( 0 minutes  13.963 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

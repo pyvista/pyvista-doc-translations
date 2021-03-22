@@ -44,7 +44,7 @@ Calculate mass properties such as the volume or area of datasets
 
 Computing mass properties such as the volume or area of datasets in PyVista
 is quite easy using the :func:`pyvista.DataSetFilters.compute_cell_sizes`
-filter and the :attr:`pyvista.Common.volume` property on all PyVista meshes.
+filter and the :attr:`pyvista.DataSet.volume` property on all PyVista meshes.
 
 Let's get started with a simple gridded mesh:
 
@@ -446,7 +446,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.777 seconds)
+   **Total running time of the script:** ( 0 minutes  18.693 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

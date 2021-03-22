@@ -372,7 +372,7 @@ Then run the filter
 Multiple Slices in Vector Direction
 +++++++++++++++++++++++++++++++++++
 
-Slice a mesh perpendicularly along a vector direction perpendicularly.
+Slice a mesh along a vector direction perpendicularly.
 
 .. GENERATED FROM PYTHON SOURCE LINES 114-135
 
@@ -434,8 +434,8 @@ Slice a mesh perpendicularly along a vector direction perpendicularly.
  .. code-block:: none
 
 
-    [(462.9148699349146, 480.9148734515886, 462.9148699349146),
-     (90.0, 108.00000351667404, 90.0),
+    [(462.3615871740787, 480.3615871740787, 462.3615871740787),
+     (90.0, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -553,7 +553,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  31.094 seconds)
+   **Total running time of the script:** ( 0 minutes  35.039 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

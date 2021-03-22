@@ -94,7 +94,7 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 .. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 Another approach is to load the vectors directly to the mesh object and then
-access the :attr:`pyvista.Common.arrows` property.
+access the :attr:`pyvista.DataSet.arrows` property.
 
 .. GENERATED FROM PYTHON SOURCE LINES 40-58
 
@@ -212,8 +212,8 @@ percent which equates to five percent of the bounding box's length.
  .. code-block:: none
 
 
-    [(34.993665379598795, 45.12062380941218, 39.33712914319342),
-     (-0.044190406799316406, 10.082768023014069, 4.299273356795311),
+    [(34.993665425011, 45.120623825022065, 39.33712918860563),
+     (-0.044190406799316406, 10.082767993211746, 4.299273356795311),
      (0.0, 0.0, 1.0)]
 
 
@@ -221,7 +221,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.272 seconds)
+   **Total running time of the script:** ( 0 minutes  7.372 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:

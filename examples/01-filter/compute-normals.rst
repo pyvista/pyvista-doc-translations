@@ -42,7 +42,7 @@ Compute normals on a surface.
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-17
 
-Computing the normals of a surace is quite easy using
+Computing the normals of a surface is quite easy using
 :class:`pyvista.PolyData`'s :func:`pyvista.PolyDataFilters.compute_normals`
 method.
 
@@ -170,7 +170,7 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.509 seconds)
+   **Total running time of the script:** ( 0 minutes  20.239 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:

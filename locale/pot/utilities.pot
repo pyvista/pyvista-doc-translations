@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.28.dev0\n"
+"Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-02 00:52+0000\n"
+"POT-Creation-Date: 2021-03-22 03:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,8 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Polygon:0
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Disc:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBohemianDome:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBoy:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricDini:0
@@ -59,6 +61,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.array_from_vtkmatrix:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtkmatrix_from_array:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read:0
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:0
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.save_meshio:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.fit_plane_to_points:0
@@ -109,6 +112,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Arrow:0
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Plane:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBohemianDome:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBour:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBoy:0
@@ -144,6 +148,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Arrow:0
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Plane:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBohemianDome:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBour:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBoy:0
@@ -211,6 +216,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cylinder:22
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:13
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:39
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBohemianDome:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBour:7
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBoy:19
@@ -229,8 +236,9 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:23
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricSuperToroid:33
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricTorus:13
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:15
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:16
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read:19
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:26
 #: ../../pyvista/pyvista/utilities/regression.py:docstring of pyvista.utilities.regression.compare_images:25
 msgid "Examples"
 msgstr ""
@@ -482,6 +490,78 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:14
 msgid "Construct a spline"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Wavelet:1
+msgid "Create a wavelet."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:1
+msgid "Create a circular arc defined by two endpoints and a center."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:3
+msgid "The number of segments composing the polyline is controlled by setting the object resolution.  Alternatively, one can use a better API (that does not allow for inconsistent nor ambiguous inputs), using a starting point (polar vector, measured from the arc's center), a normal to the plane of the arc, and an angle defining the arc length."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:10
+msgid "Position of the first end point."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:12
+msgid "Position of the other end point."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:14
+msgid "Center of the circle that defines the arc."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:16
+msgid "The number of segments of the polyline that draws the arc. Resolution of 1 will just create a line."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:19
+msgid "The normal vector to the plane of the arc.  By default it points in the positive Z direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:22
+msgid "(starting point of the arc).  By default it is the unit vector in the positive x direction. Note: This is only used when normal has been input."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:26
+msgid "Arc length (in degrees), beginning at the polar vector.  The direction is counterclockwise by default; a negative value draws the arc in the clockwise direction.  Note: This is only used when normal has been input."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:31
+msgid "By default the arc spans the shortest angular sector point1 and point2.  By setting this to true, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one). This is only used when normal has not been input"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:31
+msgid "By default the arc spans the shortest angular sector point1 and point2."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:33
+msgid "By setting this to true, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one). This is only used when normal has not been input"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:40
+msgid "Quarter arc centered at the origin in the xy plane"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:50
+msgid "Quarter arc centered at the origin in the xz plane"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:1
+msgid "Create a pyramid defined by 5 points."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:3
+msgid "Points of the pyramid.  Points are ordered such that the first four points are the four counterclockwise points on the quadrilateral face, and the last point is the apex."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:8
+msgid "**pyramid**"
 msgstr ""
 
 #: ../../pyvista/docs/utilities/index.rst:2
@@ -965,31 +1045,31 @@ msgid "Object Conversions"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:1
-msgid "Wrap any given VTK data object to its appropriate PyVista data object."
+msgid "Wrap any given VTK data object to its appropriate pyvista data object."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:3
-msgid "Other formats that are supported include: * 2D :class:`numpy.ndarray` of XYZ vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be scalars. * 3D :class:`trimesh.Trimesh` mesh."
+msgid "Other formats that are supported include: * 2D :class:`numpy.ndarray` of XYZ vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be scalars. * 3D :class:`trimesh.Trimesh` mesh. * 3D :class:`meshio` mesh."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:8
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:9
 msgid "Dataset to wrap."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:11
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:12
 msgid "**wrapped_dataset** -- The `pyvista` wrapped dataset."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:16
-msgid "Wrap a numpy array representing a random point cloud"
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:17
+msgid "Wrap a numpy array representing a random point cloud."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:31
-msgid "Wrap a Trimesh object"
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:32
+msgid "Wrap a Trimesh object."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:48
-msgid "Wrap a VTK object"
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.wrap:49
+msgid "Wrap a VTK object."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.is_pyvista_dataset:1
@@ -1060,6 +1140,34 @@ msgstr ""
 msgid "Read an ExodusII file (``'.e'`` or ``'.exo'``)."
 msgstr ""
 
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:3
+msgid "The path to the exodus file to read."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:5
+msgid "When ``True`` then this reader will report a continuous time range [0,1] and animate the displacements in a periodic sinusoid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:9
+msgid "Geometric locations can include displacements. When ``True``, the nodal positions are 'displaced' by the standard exodus displacement vector. If displacements are turned off, the user can explicitly add them by applying a warp filter."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:14
+msgid "This is a number between 0 and 1 that is used to scale the ``DisplacementMagnitude`` in a sinusoidal pattern."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:17
+msgid "Read in data associated with points.  Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:19
+msgid "Read in data associated with cells.  Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_exodus:21
+msgid "The name of the array that store the mapping from side set cells back to the global id of the elements they bound."
+msgstr ""
+
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read_texture:1
 msgid "Load a ``vtkTexture`` from an image file."
 msgstr ""
@@ -1109,7 +1217,7 @@ msgid "**lines** -- PolyData with lines and cells."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtk_points:1
-msgid "Convert numpy points to a vtkPoints object."
+msgid "Convert numpy array or array-like to a vtkPoints object."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vector_poly_data:1

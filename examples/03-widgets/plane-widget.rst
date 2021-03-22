@@ -60,7 +60,7 @@ Let's use a plane to clip a mesh:
 
 
     [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.0, 108.0, 90.0),
+     (90.00000190734863, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -86,7 +86,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f6c19046168)
+    [UnstructuredGrid (0x7f18d387c050)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -131,7 +131,7 @@ Or you could slice a mesh using the plane widget:
 
 
     [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.0, 108.0, 90.0),
+     (90.00000190734863, 108.0, 90.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -157,7 +157,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7f6c191b9528)
+    [PolyData (0x7f18d387cbb0)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -220,7 +220,7 @@ at a time.
 
 
     [(275.9751053451392, 242.47510534513918, 161.47510534513918),
-     (137.5, 104.03898239135742, 23.553572356700897),
+     (137.5, 104.0, 23.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -231,10 +231,80 @@ And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-glyph.gif
 
+.. GENERATED FROM PYTHON SOURCE LINES 79-83
+
+Further, a user can disable the arrow vector by setting the
+``normal_rotation`` argument to ``False``. For example, here we
+programmatically set the normal vector on which we want to translate the
+plane and we disable the arrow to prevent its rotation.
+
+.. GENERATED FROM PYTHON SOURCE LINES 83-88
+
+.. code-block:: default
+
+
+    p = pv.Plotter()
+    p.add_mesh_slice(vol, normal=(1,1,1), normal_rotation=False)
+    p.show()
+
+
+
+
+.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_004.png
+    :alt: plane widget
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(555.4519839675984, 573.4519839675984, 555.4519839675984),
+     (90.0, 108.0, 90.0),
+     (0.0, 0.0, 1.0)]
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 89-91
+
+The vector is also forcibly disabled anytime the ``assign_to_axis`` argument
+is set.
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-94
+
+.. code-block:: default
+
+    p = pv.Plotter()
+    p.add_mesh_slice(vol, assign_to_axis='z')
+    p.show()
+
+
+
+.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_005.png
+    :alt: plane widget
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(578.7093628033715, 596.7093628033715, 578.7093647107201),
+     (90.0, 108.0, 90.00000190734863),
+     (0.0, 0.0, 1.0)]
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.008 seconds)
+   **Total running time of the script:** ( 0 minutes  8.548 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:
