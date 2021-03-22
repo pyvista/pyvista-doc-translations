@@ -12,9 +12,10 @@ This conf.py do:
 
 """
 import os
-import sys
-from sphinx.util.pycompat import execfile_
 import shutil
+import sys
+
+from sphinx.util.pycompat import execfile_
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
