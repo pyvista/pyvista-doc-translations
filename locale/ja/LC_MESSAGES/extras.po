@@ -302,6 +302,8 @@ msgid ""
 " class added. Do not describe what you are doing but why you are doing it "
 "and provide simple use cases for the new features."
 msgstr ""
+"**すべてをドキュメント化します!** "
+"少なくとも，追加されたメソッドまたはクラスのdocstringを含めます．何をしているのかを説明するのではなく，なぜそうしているのかを説明し，新しい機能の簡単な使用例を示します．"
 
 #: ../../pyvista/docs/extras/developer_notes.rst:127
 msgid ""
@@ -921,6 +923,9 @@ msgid ""
 "Since you will be using the underlying kernel module, there's no reason to "
 "build it on the container (and trying will only result in an error)."
 msgstr ""
+"さらに，ホストマシンで実行されている同じバージョンのDockerイメージにGPUドライバをインストールする必要があります．例えば，Azure "
+"Kubernetes Serviceを実行していて，Kubernetesクラスタ上のGPUノードが ``450.51.06`` "
+"を実行している場合，同じバージョンをイメージにインストールする必要があります．基礎となるカーネル・モジュールを使用することになるので，コンテナー上にビルドする理由はありません(試行してもエラーになるだけです．)．"
 
 #: ../../pyvista/docs/extras/docker.rst:66
 msgid ""
@@ -949,7 +954,7 @@ msgstr "``display id not set`` を受信した場合，環境が正しく設定�
 
 #: ../../pyvista/docs/extras/flask.rst:4
 msgid "Flask Application"
-msgstr ""
+msgstr "Flaskアプリケーション"
 
 #: ../../pyvista/docs/extras/flask.rst:5
 msgid ""
@@ -957,6 +962,9 @@ msgid ""
 "plots.  See the following example as well as the demo at `Flask Example "
 "<https://github.com/pyvista/pyvista/raw/master/examples_flask>`__."
 msgstr ""
+"``pyvista`` を使用して，スタティックプロットを表示するフラスコアプリケーションを作成できます．以下の例と `Flask Example "
+"<https://github.com/pyvista/pyvista/raw/master/examples_flask>`__ "
+"のデモを参照してください．"
 
 #: ../../pyvista/docs/extras/flask.rst:9
 msgid ""
@@ -964,24 +972,26 @@ msgid ""
 "<https://jupyter.org/>`__.  See our documentation regarding this at "
 ":ref:`ipyvtk_plotting`."
 msgstr ""
+"動的な例については， `Jupyter Notebooks <https://jupyter.org/>`__ "
+"を使用することを推奨します．これについては :ref:`ipyvtk_plotting` のドキュメントを参照してください．"
 
 #: ../../pyvista/docs/extras/flask.rst:15
 msgid "Example Flask Webpage"
-msgstr ""
+msgstr "FlaskのWebページの例"
 
 #: ../../pyvista/docs/extras/flask.rst:19
 msgid "Python Application ``app.py``"
-msgstr ""
+msgstr "Pythonアプリケーション ``app.py``"
 
 #: ../../pyvista/docs/extras/flask.rst:25
 msgid "Ajax Template ``index.html``"
-msgstr ""
+msgstr "Ajaxテンプレート ``index.html``"
 
 #: ../../pyvista/docs/extras/flask.rst:26
 msgid ""
 "This template should be within the ``templates`` directory in the same path "
 "as ``app.py``."
-msgstr ""
+msgstr "このテンプレートは， ``app.py`` と同じパスの ``templates`` ディレクトリ内にある必要があります．"
 
 #: ../../pyvista/docs/extras/flask.rst:29
 msgid ""
@@ -989,6 +999,8 @@ msgid ""
 "method in the flask app, which is used to select the type of mesh to be "
 "plotted."
 msgstr ""
+"このテンプレートは， ``meshtype`` パラメータをflaskアプリケーションの ``get_img`` メソッドに返します． "
+"``get_img`` メソッドは，プロットするメッシュのタイプを選択するために使用されます．"
 
 #: ../../pyvista/docs/extras/pyinstaller.rst:4
 msgid "Freezing pyvista with pyinstaller"
