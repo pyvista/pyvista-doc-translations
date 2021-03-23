@@ -746,12 +746,12 @@ msgstr "スプラインを作成します"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Wavelet:1
 msgid "Create a wavelet."
-msgstr ""
+msgstr "ウェーブレットを作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:1
 msgid "Create a circular arc defined by two endpoints and a center."
-msgstr ""
+msgstr "2つの端点と中心で定義される円弧を作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:3
@@ -762,42 +762,43 @@ msgid ""
 "vector, measured from the arc's center), a normal to the plane of the arc, "
 "and an angle defining the arc length."
 msgstr ""
+"ポリラインを構成するセグメントの数は，オブジェクトの解像度を設定することによってコントロールされます．代わりに，始点(円弧の中心から測定した極ベクトル)，円弧の平面に垂直，および円弧の長さを定義する角度を使用して，より適切な(一貫性のないまたは曖昧な入力を許さない)APIを使用することもできます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:10
 msgid "Position of the first end point."
-msgstr ""
+msgstr "最初の終点の位置です．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:12
 msgid "Position of the other end point."
-msgstr ""
+msgstr "もう一方の終点の位置．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:14
 msgid "Center of the circle that defines the arc."
-msgstr ""
+msgstr "円弧を定義する円の中心．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:16
 msgid ""
 "The number of segments of the polyline that draws the arc. Resolution of 1 "
 "will just create a line."
-msgstr ""
+msgstr "円弧を描くポリラインのセグメント数．解像度を1にすると，直線が作成されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:19
 msgid ""
 "The normal vector to the plane of the arc.  By default it points in the "
 "positive Z direction."
-msgstr ""
+msgstr "円弧の平面に対する法線ベクトルです．既定では，正のZ方向を指します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:22
 msgid ""
 "(starting point of the arc).  By default it is the unit vector in the "
 "positive x direction. Note: This is only used when normal has been input."
-msgstr ""
+msgstr "(円弧の始点) ．既定では，正のx方向の単位ベクトルです．注: 法線が入力されている場合にのみ使用します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:26
@@ -806,6 +807,8 @@ msgid ""
 "counterclockwise by default; a negative value draws the arc in the clockwise"
 " direction.  Note: This is only used when normal has been input."
 msgstr ""
+"極ベクトルを始点とする円弧の長さ (度単位) "
+"．デフォルトの方向は反時計回りです．負の値を指定すると，円弧が時計回りの方向に描かれます．注:法線が入力されている場合にのみ使用します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:31
@@ -815,12 +818,14 @@ msgid ""
 "negative coterminal angle to the shortest one). This is only used when "
 "normal has not been input"
 msgstr ""
+"既定では，円弧は最短の角度セクタのPoint 1とPoint "
+"2をスパンします．これをtrueに設定すると，代わりに最長の角度セクタが使用されます(すなわち、最小値1に対する負の同極角)．これは，法線が入力されていない場合にのみ使用されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:31
 msgid ""
 "By default the arc spans the shortest angular sector point1 and point2."
-msgstr ""
+msgstr "デフォルトでは，円弧は最短の角度セクタPoint 1とPoint 2をスパンします．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:33
@@ -829,21 +834,22 @@ msgid ""
 "the negative coterminal angle to the shortest one). This is only used when "
 "normal has not been input"
 msgstr ""
+"これをtrueに設定すると，代わりに最長の角度セクタが使用されます(すなわち、最小値1に対する負の同極角)．これは，法線が入力されていない場合にのみ使用されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:40
 msgid "Quarter arc centered at the origin in the xy plane"
-msgstr ""
+msgstr "XY平面の原点を中心とする4分円弧"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:50
 msgid "Quarter arc centered at the origin in the xz plane"
-msgstr ""
+msgstr "XZ平面の原点を中心とする4分円弧"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:1
 msgid "Create a pyramid defined by 5 points."
-msgstr ""
+msgstr "5点で定義される角錐を作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:3
@@ -851,7 +857,7 @@ msgid ""
 "Points of the pyramid.  Points are ordered such that the first four points "
 "are the four counterclockwise points on the quadrilateral face, and the last"
 " point is the apex."
-msgstr ""
+msgstr "ピラミッドの点．最初の4つの点が四角形の面上の反時計回りの4つの点になり，最後の点が頂点になるように，点が順序付けられます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:8
@@ -1556,7 +1562,7 @@ msgstr "オブジェクト変換"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:1
 msgid "Wrap any given VTK data object to its appropriate pyvista data object."
-msgstr ""
+msgstr "与えられたVTKデータオブジェクトを適切なpyvistaデータオブジェクトにラップします．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:3
@@ -1565,6 +1571,9 @@ msgid ""
 " vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be "
 "scalars. * 3D :class:`trimesh.Trimesh` mesh. * 3D :class:`meshio` mesh."
 msgstr ""
+"サポートされているその他の形式には，XYZ頂点 * 3D :class:`numpy.ndarray` の * 2D "
+":class:`numpy.ndarray` があり，ボリュームを表します．値はスカラーです．* 3D :class:`trimesh.Trimesh`"
+" メッシュ． * 3D :class:`meshio` メッシュ．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:9
@@ -1579,17 +1588,17 @@ msgstr "**wrapped_dataset** -- `pyvista` でラップされたデータセット
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:17
 msgid "Wrap a numpy array representing a random point cloud."
-msgstr ""
+msgstr "​ランダムなポイントクラウドを表すnumpy配列をラップする．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:32
 msgid "Wrap a Trimesh object."
-msgstr ""
+msgstr "​Trimeshオブジェクトをラップする．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:49
 msgid "Wrap a VTK object."
-msgstr ""
+msgstr "​VTKオブジェクトをラップする．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.is_pyvista_dataset:1
