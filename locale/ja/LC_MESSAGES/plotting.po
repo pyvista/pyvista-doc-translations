@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:12
 msgid "Special thanks to `@thewtex`_ for the `itkwidgets`_ library."
-msgstr ""
+msgstr "`itkwidgets`_ ライブラリについては `@thewtex`_ に特に感謝します．"
 
 #: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:20
 msgid ""
@@ -154,6 +154,9 @@ msgid ""
 "the installation steps `here "
 "<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_."
 msgstr ""
+"`PlotterITK` を使用するには， ``itkwidgets>=0.25.2`` をインストールする必要があります． `ここ "
+"<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_ "
+"のインストール手順に従ってください．"
 
 #: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:23
 msgid ""
@@ -1245,13 +1248,13 @@ msgstr "アクティブなレンダラーを返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
 msgid ":obj:`scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
-msgstr ""
+msgstr ":obj:`scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:1
 msgid "Scalar bars."
-msgstr ""
+msgstr "スカラバー．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
 msgid ":obj:`scale <pyvista.BasePlotter.scale>`\\"
@@ -1415,6 +1418,8 @@ msgid ""
 ":obj:`add_legend <pyvista.BasePlotter.add_legend>`\\ \\(\\[labels\\, "
 "bcolor\\, border\\, size\\, ...\\]\\)"
 msgstr ""
+":obj:`add_legend <pyvista.BasePlotter.add_legend>`\\ \\(\\[labels\\, "
+"bcolor\\, border\\, size\\, ...\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1528,6 +1533,8 @@ msgid ""
 ":obj:`add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ \\(\\[title\\, "
 "mapper\\, n\\_labels\\, ...\\]\\)"
 msgstr ""
+":obj:`add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ \\(\\[title\\, "
+"mapper\\, n\\_labels\\, ...\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2272,7 +2279,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:1
 msgid "Remove a scalar bar."
-msgstr ""
+msgstr "スカラーバーを削除します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ":obj:`render <pyvista.BasePlotter.render>`\\ \\(\\)"
@@ -2773,7 +2780,7 @@ msgstr ":obj:`where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:1
 msgid "Return the subplot coordinates of a given actor."
-msgstr ""
+msgstr "指定されたアクターのサブプロット座標を返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
 msgid ":obj:`write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
@@ -3676,7 +3683,7 @@ msgstr ""
 msgid ""
 "If used, specifies the x and y position of the lower left corner of the "
 "legend."
-msgstr ""
+msgstr "使用する場合，凡例の左下コーナーのxおよびyの位置を指定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:37
@@ -4107,6 +4114,11 @@ msgid ""
 "transparency     * ``feature_angle``: If ``True``, display sharp edges     *"
 " ``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr ""
+"``True`` に設定されている場合，メッシュのシルエットハイライトをプロットします．この機能は三角分割 ``PolyData`` "
+"でのみ使用できます． ``dict`` として、表示するシルエットのプロパティ: * ``color`` : ``str`` または3-item "
+"``list`` ，シルエットの色 * ``line_width`` : ``float`` ，エッジの幅 * ``opacity``: "
+"``float`` 0と1の間，エッジの透過性 * ``feature_angle``: ``True`` の場合，シャープエッジを表示する * "
+"``decimate``: ``float`` 0と1の間，デシメーションのレベルが含まれます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:142
@@ -4115,31 +4127,33 @@ msgid ""
 "is only available for a triangulated ``PolyData``. As a ``dict``, it "
 "contains the properties of the silhouette to display:"
 msgstr ""
+"``True`` に設定されている場合，メッシュのシルエットハイライトをプロットします．この機能は，三角形化された ``PolyData`` "
+"でのみ使用できます． ``dict`` として、表示するシルエットのプロパティが含まれています。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:146
 msgid "``color``: ``str`` or 3-item ``list``, color of the silhouette"
-msgstr ""
+msgstr "``color``: ``str`` または3点の ``list`` ，シルエットの色"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:147
 msgid "``line_width``: ``float``, edge width"
-msgstr ""
+msgstr "``line_width``: ``float`` ，エッジ幅"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:148
 msgid "``opacity``: ``float`` between 0 and 1, edge transparency"
-msgstr ""
+msgstr "``opacity``: 0から1の ``float`` ，エッジ透過性"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:149
 msgid "``feature_angle``: If ``True``, display sharp edges"
-msgstr ""
+msgstr "``feature_angle``: ``True`` の場合，シャープエッジを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:150
 msgid "``decimate``: ``float`` between 0 and 1, level of decimation"
-msgstr ""
+msgstr "``decimate``: 0から1の ``float`` ，間引きレベル"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:152
@@ -4186,6 +4200,8 @@ msgid ""
 "Use log scale when mapping data to colors. Scalars less than zero are mapped"
 " to the smallest representable positive float. Default: ``True``."
 msgstr ""
+"データを色にマッピングするときは，ログスケールを使用します．0未満のスカラーは，表現可能な最小の正のfloatにマップされます．デフォルト: "
+"``True`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:173
@@ -4420,6 +4436,8 @@ msgid ""
 "When ``True``, a ``vtkImplicitPlaneWidget`` is used and when ``False``, a "
 "``vtkPlaneWidget`` is used."
 msgstr ""
+"``True`` の場合は ``vtkImplicitPlaneWidget`` が使用され， ``False`` の場合は "
+"``vtkPlaneWidget`` が使用されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_clip_plane:37
@@ -4438,6 +4456,8 @@ msgid ""
 "disabled. This prevents the user from rotating the normal. This is forced to"
 " ``False`` when ``assign_to_axis`` is set."
 msgstr ""
+"法線ベクトル矢印の不透明度を0に設定して，実質的に無効にします．これにより，ユーザは法線を回転できなくなります． ``assign_to_axis`` "
+"が設定されている場合，これは強制的に ``False`` になります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_isovalue:1
@@ -4532,14 +4552,14 @@ msgstr "これが有効な場合(デフォルトで ``False`` )，出力は三�
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_slice:41
 msgid "kwargs"
-msgstr ""
+msgstr "kwargs"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_sliceNone
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_sliceNone
 msgid "dict"
-msgstr ""
+msgstr "dict"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_slice_orthogonal:1
@@ -4721,6 +4741,8 @@ msgid ""
 "List of labels.  Must be the same length as points. If a string name is "
 "given with a pyvista.DataSet input for points, then these are fetched."
 msgstr ""
+"ラベルのリスト．点と同じ長さでなければなりません．文字列名がpyvistaで指定されている場合．点の pyvista.DataSet "
+"入力を取得すると，これらが取得されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:8
@@ -4841,7 +4863,7 @@ msgstr "表示フィルタの追加をスキップします．既定値はFalse�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:61
 msgid "Force a render when ``True`` (default)."
-msgstr ""
+msgstr "``True`` (デフォルト) のときに強制的にレンダーします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:64
@@ -4870,14 +4892,14 @@ msgstr "数値データのフォーマットに使用する文字列フォーマ
 msgid ""
 "Mapper used for the scalar bar.  Defaults to the last mapper created by the "
 "plotter."
-msgstr ""
+msgstr "スカラーバーに使用されるマッパー．既定は，プロッタで最後に作成されたマッパーです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:6
 msgid ""
 "Title of the scalar bar.  Default ``''`` which is rendered as an empty "
 "title."
-msgstr ""
+msgstr "スカラーバーのタイトル．空のタイトルとしてレンダリングされるデフォルトの ``''`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:9
@@ -4968,7 +4990,7 @@ msgstr "``background_color`` でスカラーバーの後ろに塗りつぶされ
 msgid ""
 "Add a custom interactive scalar bar that is horizontal, has an outline, and "
 "has a custom formatting."
-msgstr ""
+msgstr "水平でアウトラインがあり，独自の書式が設定された，独自の対話型のスカラバーを追加します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:79
@@ -5106,14 +5128,14 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:33
 msgid "Relative height of the title as compared to the length of the slider."
-msgstr ""
+msgstr "スライダの長さに対するタイトルの相対的な高さ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:35
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:35
 msgid "Opacity of title. Defaults to 1.0."
-msgstr ""
+msgstr "タイトルの不透明度．デフォルトは1.0です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:37
@@ -5122,14 +5144,14 @@ msgstr ""
 msgid ""
 "Either a string, rgb list, or hex color string.  Defaults to the value given"
 " in ``color``."
-msgstr ""
+msgstr "文字列，RGBリスト，または16進カラー文字列のいずれか．デフォルトは ``color`` で与えられた値です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:40
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:40
 msgid "String formatter used to format numerical data. Defaults to ``None``."
-msgstr ""
+msgstr "数値データのフォーマットに使用する文字列フォーマッタ．デフォルトは ``None`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:1
@@ -6340,7 +6362,7 @@ msgstr "プロッタを作成し，既定の照明なしで初期化するのを
 msgid ""
 "Title of the scalar bar to remove.  Required if there is more than one "
 "scalar bar."
-msgstr ""
+msgstr "削除するスカラーバーのタイトル．複数のスカラバーがある場合は必要．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:6
@@ -6348,6 +6370,8 @@ msgid ""
 "Render upon scalar bar removal.  Set this to ``False`` to stop the render "
 "window from rendering when an scalar bar is removed."
 msgstr ""
+"スカラーバーの除去時にレンダリングします．スカラーバーが削除されたときにレンダリングウィンドウがレンダリングされないようにするには，これを "
+"``False`` に設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:3
@@ -6378,6 +6402,7 @@ msgid ""
 "Automatically set up the camera based on a specified bounding box ``(xmin, "
 "xmax, ymin, ymax, zmin, zmax)``."
 msgstr ""
+"指定したバウンディングボックス ``(xmin, xmax, ymin, ymax, zmin, zmax)`` に基づいて自動的にカメラを設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.save_graphic:3
@@ -6387,7 +6412,7 @@ msgstr "サポートされている形式は次のとおりです: '.svg', '.eps
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:15
 msgid "Select a scalar bar actor based on the title of the bar."
-msgstr ""
+msgstr "バーのタイトルに基づいてスカラバーアクターを選択します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:3
@@ -6668,6 +6693,8 @@ msgid ""
 "use gridlines and showing the axes labels on the outer edges. This is "
 "intended to be similar to ``matplotlib``'s ``grid`` function."
 msgstr ""
+"``show_bounds`` のラップされた実装で，グリッド線を使用し，外側のエッジに軸ラベルを表示するようにデフォルトの動作を変更します．これは， "
+"``matplotlib`` の ``grid`` 機能と類似しています．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.subplot:3
@@ -6777,12 +6804,12 @@ msgstr "ビューにシーン内のすべてのアクターが表示されます
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:3
 msgid "Actor's name."
-msgstr ""
+msgstr "アクターの名前．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:6
 msgid "**places** -- A list with the subplot coordinates of the actor."
-msgstr ""
+msgstr "**places** -- アクターのサブプロット座標のリスト．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:88
 msgid "Plotter"
@@ -7322,6 +7349,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ":obj:`reset_camera <pyvista.Renderer.reset_camera>`\\ \\(\\[render\\, bounds\\]\\)"
 msgstr ""
+":obj:`reset_camera <pyvista.Renderer.reset_camera>`\\ \\(\\[render\\, "
+"bounds\\]\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
 msgid ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, top\\]\\)"
