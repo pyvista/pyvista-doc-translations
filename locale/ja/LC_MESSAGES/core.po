@@ -2923,7 +2923,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.transform:1
 msgid "Transform this mesh with a 4x4 transform."
-msgstr ""
+msgstr "このメッシュを4x4変換で変換します．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -3994,13 +3994,16 @@ msgid ""
 "to not be passed even if no nonlinear faces exist. This option has no effect"
 " if the input is not an unstructured grid."
 msgstr ""
+"入力が非線形面を持つ非構造グリッドの場合，このパラメータは面が線形面に分割される回数を決定します．0の場合，出力は対応する線形補間と同等です "
+"(非線形補間を決定する中間点は破棄されます) ．1 (既定) "
+"の場合，非線形面は中点に基づいて三角形分割されます．1より大きい場合，三角形分割された破片は目的のサブディビジョンに達するまで再帰的に再分割されます．1より大きい値に設定すると，非線形面が存在しない場合でも，一部の点データが渡されないことがあります．入力が構造化されていないグリッドでない場合，このオプションは無効です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:9
 msgid ""
 "If the input is an unstructured grid with nonlinear faces, this parameter "
 "determines how many times the face is subdivided into linear faces."
-msgstr ""
+msgstr "入力が非線形面を持つ非構造グリッドの場合，このパラメータは面が線形面に分割される回数を決定します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:13
@@ -4013,16 +4016,18 @@ msgid ""
 "point data to not be passed even if no nonlinear faces exist. This option "
 "has no effect if the input is not an unstructured grid."
 msgstr ""
+"0の場合，出力は対応する線形補間と同等です (非線形補間を決定する中間点は破棄されます) ．1 (既定) "
+"の場合，非線形面は中点に基づいて三角形分割されます．1より大きい場合，三角形分割された破片は目的のサブディビジョンに達するまで再帰的に再分割されます．1より大きい値に設定すると，非線形面が存在しない場合でも，一部の点データが渡されないことがあります．入力が構造化されていないグリッドでない場合，このオプションは無効です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:24
 msgid "Surface mesh of the grid."
-msgstr ""
+msgstr "グリッドのサーフェスメッシュ．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:29
 msgid "Extract the surface of an UnstructuredGrid."
-msgstr ""
+msgstr "UnstructuredGridのサーフェスを抽出します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:3
@@ -4432,7 +4437,7 @@ msgstr "``True`` の場合，データセットを変更し，何も返しませ
 msgid ""
 "When ``True``, all input vectors are transformed. Otherwise, only the "
 "points, normals and active vectors are transformed."
-msgstr ""
+msgstr "``True`` の時，全ての入力ベクトルは変換される．それ以外の場合は，ポイント，法線，およびアクティブなベクトルだけが変換されます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:3
@@ -5056,14 +5061,14 @@ msgstr "vtk変換オブジェクトまたは4 x 4変換行列を受け入れま�
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.transform:11
 msgid "Translate a mesh by (50, 100, 200)"
-msgstr ""
+msgstr "(50, 100, 200) によるメッシュの変換"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.transform:16
 msgid ""
 "Here is a 4x4 NumPy array is used, but vtk.vtkMatrix4x4 and vtk.vtkTransform"
 " are also accepted."
-msgstr ""
+msgstr "4x4 NumPy配列を使用していますが，vtk.vtkMatrix 4x4およびvtk.vtkTransformも使用できます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.triangulate:3
@@ -9546,7 +9551,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:1
 msgid "Cast to an explicit structured grid."
-msgstr ""
+msgstr "明示的に構造化されたグリッドにキャストします．"
 
 #: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
 msgid ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\]\\)"
@@ -9623,19 +9628,19 @@ msgstr "文字列ファイル名から"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:3
 msgid "An explicit structured grid."
-msgstr ""
+msgstr "明示的な構造化グリッド．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:0
 msgid "Raises"
-msgstr ""
+msgstr "エラー処理"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:6
 msgid ""
 "If the unstructured grid doesn't have the ``'BLOCK_I'``,     ``'BLOCK_J'`` "
 "and ``'BLOCK_K'`` cells arrays."
-msgstr ""
+msgstr "非構造化グリッドが ``'BLOCK_I'``, ``'BLOCK_J'`` および ``'BLOCK_K'`` セル配列を持たない場合．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:10
@@ -9645,7 +9650,7 @@ msgstr ":obj:`ExplicitStructuredGrid.cast_to_unstructured_grid`"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:11
 msgid "Cast an explicit structured grid to an unstructured grid."
-msgstr ""
+msgstr "明示的な構造化グリッドを非構造化グリッドにキャストします．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:3
@@ -9707,7 +9712,7 @@ msgstr "**grid** -- 線形セルのみを含むUnstructuredGridです．"
 
 #: ../../pyvista/docs/core/point-grids.rst:299
 msgid "Explicit Structured Grid"
-msgstr ""
+msgstr "明示的構造化グリッド"
 
 #: ../../pyvista/docs/core/point-grids.rst:304:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.ExplicitStructuredGrid.dimensions>`\\"
@@ -9717,7 +9722,7 @@ msgstr ":obj:`dimensions <pyvista.ExplicitStructuredGrid.dimensions>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.dimensions:1
 msgid "Return the topological dimensions of the grid."
-msgstr ""
+msgstr "グリッドのトポロジー次元を返します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:304:<autosummary>:1
 msgid ":obj:`visible_bounds <pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
@@ -9727,7 +9732,7 @@ msgstr ":obj:`visible_bounds <pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:1
 msgid "Return the bounding box of the visible cells."
-msgstr ""
+msgstr "表示されているセルの境界ボックスを返します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ""
@@ -9741,7 +9746,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:1
 msgid "Cast to an unstructured grid."
-msgstr ""
+msgstr "非構造化グリッドにキャストします．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind\\)"
@@ -9753,7 +9758,7 @@ msgstr ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_id:12
 msgid "Return the cell structured coordinates."
-msgstr ""
+msgstr "セル構造の座標を返します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ":obj:`cell_id <pyvista.ExplicitStructuredGrid.cell_id>`\\ \\(coords\\)"
@@ -9781,7 +9786,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connectivity:25
 msgid "Compute an array with the number of connected cell faces."
-msgstr ""
+msgstr "接続されたセル面の数で配列を計算します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ""
@@ -9797,7 +9802,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connectivity:1
 msgid "Compute the faces connectivity flags array."
-msgstr ""
+msgstr "面接続フラグ配列を計算します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ""
@@ -9811,7 +9816,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.hide_cells:1
 msgid "Hide specific cells."
-msgstr ""
+msgstr "特定のセルを非表示にします．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ""
@@ -9825,7 +9830,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.neighbors:1
 msgid "Return the indices of neighboring cells."
-msgstr ""
+msgstr "隣接するセルのインデックスを返します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:308:<autosummary>:1
 msgid ":obj:`save <pyvista.ExplicitStructuredGrid.save>`\\ \\(filename\\[\\, binary\\]\\)"
@@ -9851,7 +9856,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.show_cells:1
 msgid "Show hidden cells."
-msgstr ""
+msgstr "非表示のセルを表示します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:1
@@ -9874,16 +9879,17 @@ msgid ""
 "From a ``vtk.vtkExplicitStructuredGrid`` or ``vtk.vtkUnstructuredGrid`` "
 "object"
 msgstr ""
+"``vtk.vtkExplicitStructuredGrid`` または ``vtk.vtkUnstructuredGrid`` オブジェクトから"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:7
 msgid "From a VTU or VTK file"
-msgstr ""
+msgstr "VTUまたはVTKファイルから"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:8
 msgid "From ``dims`` and ``corners`` arrays"
-msgstr ""
+msgstr "``dims`` および ``corners`` 配列から"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:3
@@ -9892,6 +9898,8 @@ msgid ""
 "``'BLOCK_K'`` cell arrays. These arrays are required to restore the explicit"
 " structured grid."
 msgstr ""
+"構造化されていないグリッド．VTKは ``'BLOCK_I'`` ， ``'BLOCK_J'`` ，および ``'BLOCK_K'`` "
+"セル配列を追加します．これらの配列は，明示的に構造化されたグリッドを復元するために必要です．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:10
@@ -9903,6 +9911,8 @@ msgid ""
 "visible subgrid, use the ``extract_cells`` filter and the cell indices where"
 " the ghost cell array is ``0``."
 msgstr ""
+"明示的な構造化グリッドの元の構造と属性データを復元できるように，非構造化グリッドをキャストする前にゴーストセル配列を無効にします．明示的な構造化グリッドを後で復元する必要がない場合や，表示されているサブグリッドから非構造化グリッドを抽出する場合は，"
+" ``extract_cells`` フィルタと，ゴーストセル配列が ``0`` であるセルインデックスを使用します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:22
@@ -9912,7 +9922,7 @@ msgstr ":obj:`DataSetFilters.extract_cells`"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:22
 msgid "Extract a subset of a dataset."
-msgstr ""
+msgstr "データセットのサブセットを抽出します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:24
@@ -9922,7 +9932,7 @@ msgstr ":obj:`UnstructuredGrid.cast_to_explicit_structured_grid`"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:25
 msgid "Cast an unstructured grid to an explicit structured grid."
-msgstr ""
+msgstr "非構造化グリッドを明示的構造化グリッドにキャストします．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:3
@@ -9936,7 +9946,7 @@ msgstr "セルID．"
 msgid ""
 "**coords** -- Cell structured coordinates. ``None`` if ``ind`` is outside "
 "the grid extent."
-msgstr ""
+msgstr "**coords** -- セル構造の座標． ``ind`` がグリッド範囲外の場合は ``None`` ．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:12
@@ -9946,13 +9956,13 @@ msgstr ":obj:`ExplicitStructuredGrid.cell_id`"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_id:3
 msgid "Cell structured coordinates."
-msgstr ""
+msgstr "セル構造の座標．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_id:6
 msgid ""
 "**ind** -- Cell IDs. ``None`` if ``coords`` is outside the grid extent."
-msgstr ""
+msgstr "**ind** -- セルID． ``coords`` がグリッド範囲外の場合は ``None`` ．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_id:11
@@ -9966,6 +9976,8 @@ msgid ""
 " faces. The results are stored in the ``'number_of_connections'`` cell "
 "array."
 msgstr ""
+"この方法は,面によって接続されたトポロジーセル近傍の数を計算する．結果は ``'number_of_connections'`` "
+"セル配列に格納されます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:7
@@ -9978,7 +9990,7 @@ msgstr ""
 msgid ""
 "This method is applied to this grid if ``True`` (default) or to a copy "
 "otherwise."
-msgstr ""
+msgstr "このメソッドは， ``True`` (デフォルト) の場合はこのグリッドに，それ以外の場合はコピーに適用されます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:11
@@ -9991,7 +10003,7 @@ msgstr ""
 msgid ""
 "**grid** -- A deep copy of this grid if ``inplace=False`` or ``None`` "
 "otherwise."
-msgstr ""
+msgstr "**grid** -- ``inplace=False`` または ``None`` の場合は，このグリッドのディープコピー．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:16
@@ -10010,6 +10022,11 @@ msgid ""
 "indicates that this cell is connected by faces with their neighbors ``(0, 0,"
 " 1)``, ``(0, -1, 0)``, ``(-1, 0, 0)`` and ``(1, 0, 0)``."
 msgstr ""
+"このメソッドは，セルの面とトポロジー上の隣接する面との接続性をチェックします．結果は整数 ``'ConnectivityFlags'`` "
+"の配列に格納されます．この配列の各値は2進数として解釈されなければなりません．ここで，数字はそれぞれ，セルとそのトポロジー的に隣接する -Z, +Z, "
+"-Y, +Y, -X と +X との面の接続性を示します．たとえば， ``27`` (``011011``) と等しい "
+"``'ConnectivityFlags'`` を持つセルは，このセルが隣接する ``(0, 0, 1)``, ``(0, -1, 0)``, "
+"``(-1, 0, 0)`` および ``(1, 0, 0)`` とフェースによって接続されていることを示します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connectivity:24
@@ -10019,7 +10036,7 @@ msgstr ":obj:`ExplicitStructuredGrid.compute_connections`"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.dimensions:3
 msgid "Number of sampling points in the I, J and Z directions respectively."
-msgstr ""
+msgstr "I，J，Z方向のサンプリングポイントの数．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.hide_cells:3
@@ -10031,7 +10048,7 @@ msgstr "ghostセル配列を ``HIDDENCELL`` に設定して，セルを非表示
 msgid ""
 "Cell indices to be hidden. A boolean array of the same size as the number of"
 " cells also is acceptable."
-msgstr ""
+msgstr "非表示にするセルインデックス．セルの数と同じサイズのブール配列も使用できます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.neighbors:5
@@ -10043,16 +10060,21 @@ msgid ""
 "``'geometric'``, returns the cells in the ``(i-1, j)``, ``(i+1, j)``, "
 "``(i,j-1)`` and ``(i, j+1)`` vertical cell groups whose faces intersect."
 msgstr ""
+"近傍関係を定義します． ``'topological'`` の場合， ``(i-1, j, k)``, ``(i+1, j, k)``, ``(i, "
+"j-1, k)``, ``(i, j+1, k)``, ``(i, j, k-1)`` と ``(i, j, k+1)`` セルを返します． "
+"``'connectivity'`` (デフォルト) の場合，面の接続性を考慮したトポロジ的な隣接のみを返します． ``'geometric'`` "
+"の場合， ``(i-1, j)``, ``(i+1, j)``, ``(i,j-1)`` と ``(i, j+1)`` "
+"垂直セルグループのうち，面が交差しているセルを返します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.neighbors:16
 msgid "**indices** -- Indices of neighboring cells."
-msgstr ""
+msgstr "**indices** -- 隣接するセルのインデックス．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.save:3
 msgid "Output file name. VTU and VTK extensions are supported."
-msgstr ""
+msgstr "出力ファイル名．VTUおよびVTK拡張がサポートされています．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.save:5
@@ -10065,13 +10087,15 @@ msgid ""
 "VTK adds the ``'BLOCK_I'``, ``'BLOCK_J'`` and ``'BLOCK_K'`` cell arrays. "
 "These arrays are required to restore the explicit structured grid."
 msgstr ""
+"VTKは ``'BLOCK_I'`` ， ``'BLOCK_J'`` ，および ``'BLOCK_K'`` "
+"セル配列を追加します．これらの配列は，明示的に構造化されたグリッドを復元するために必要です．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.show_cells:3
 msgid ""
 "Shows hidden cells by setting the ghost cell array to ``0`` where "
 "``HIDDENCELL``."
-msgstr ""
+msgstr "ゴーストセル配列を ``HIDDENCELL`` を ``0`` に設定して，非表示セルを表示します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:3
@@ -10080,12 +10104,14 @@ msgid ""
 "grid, this method returns the bounding box of the visible cells, where the "
 "ghost cell array is not ``HIDDENCELL``."
 msgstr ""
+"グリッド全体のバウンディングボックスを返す `bounds` とは異なり，このメソッドは，ゴーストセル配列が ``HIDDENCELL`` "
+"でない可視セルのバウンディングボックスを返します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:8
 msgid ""
 "The limits of the visible grid in the X, Y and Z directions respectively."
-msgstr ""
+msgstr "X、Y、Z方向それぞれの可視グリッドの範囲．"
 
 #: ../../pyvista/docs/core/point-grids.rst:316
 msgid "pv.Structured Grid Class Methods"
@@ -10556,6 +10582,11 @@ msgid ""
 "``'C:/Users/user/my_mesh.ply'``.  Otherwise, this must be a points array or "
 "list containing one or more points.  Each point must have 3 dimensions."
 msgstr ""
+"フレキシブル入力タイプ． ``vtk.vtkPolyData`` を使用できます．この場合，このPolyDataオブジェクトは "
+"``deep=True`` の場合はコピーされ，　``deep=False`` の場合はシャローコピーになります．パスも受け入れられます。パスは， "
+"``'my_mesh.stl'`` のようなローカルパス，または ``'/tmp/my_mesh.ply'`` や "
+"``'C:/Users/user/my_mesh.ply'`` "
+"のようなグローバルパスです．それ以外の場合は，1つ以上のポイントを含むポイント配列またはリストである必要があります．各点は3次元でなければなりません．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:11
@@ -10564,6 +10595,8 @@ msgid ""
 "PolyData object will be copied if ``deep=True`` and will be a shallow copy "
 "if ``deep=False``."
 msgstr ""
+"フレキシブル入力タイプ． ``vtk.vtkPolyData`` を指定できます．この場合，このPolyDataオブジェクトは "
+"``deep=True`` の場合はコピーされ， ``deep=False`` の場合はシャローコピーになります．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:15
@@ -10571,13 +10604,15 @@ msgid ""
 "Also accepts a path, which may be local path as in ``'my_mesh.stl'`` or "
 "global path like ``'/tmp/my_mesh.ply'`` or ``'C:/Users/user/my_mesh.ply'``."
 msgstr ""
+"``'my_mesh.stl'`` のようなローカルパスや， ``'/tmp/my_mesh.ply'`` や "
+"``'C:/Users/user/my_mesh.ply'`` のようなグローバルパスも受け入れます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:19
 msgid ""
 "Otherwise, this must be a points array or list containing one or more "
 "points.  Each point must have 3 dimensions."
-msgstr ""
+msgstr "それ以外の場合は，1つまたは複数のポイントを含むポイント配列またはリストである必要があります．各点は3次元でなければなりません．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:22
@@ -10589,6 +10624,9 @@ msgid ""
 "not including the face connectivity array, each point will be assigned to a "
 "single vertex.  This is used for point clouds that have no connectivity."
 msgstr ""
+"面接続配列．面には，面内の点の数を示すパディングが含まれている必要があります．たとえば， ``[10, 11, 12]`` と ``[20, 21, "
+"22, 23]`` の2つのフェースは ``[3, 10, 11, 12, 4, 20, 21, 22, 23]`` "
+"として表されます．これにより，フェースごとに任意の数のポイントを持つことができます．面接続配列を含まない場合，各点は単一の頂点に割り当てられます．これは，接続性のない点群に使用されます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:22
@@ -10598,6 +10636,9 @@ msgid ""
 "``[20, 21, 22, 23]`` will be represented as ``[3, 10, 11, 12, 4, 20, 21, 22,"
 " 23]``.  This lets you have an arbitrary number of points per face."
 msgstr ""
+"面接続配列．面には，面内の点の数を示すパディングが含まれている必要があります．たとえば， ``[10, 11, 12]`` と ``[20, 21, "
+"22, 23]`` の2つのフェースは ``[3, 10, 11, 12, 4, 20, 21, 22, 23]`` "
+"として表されます．これにより，フェースごとに任意の数のポイントを持つことができます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:28
@@ -10605,14 +10646,14 @@ msgid ""
 "When not including the face connectivity array, each point will be assigned "
 "to a single vertex.  This is used for point clouds that have no "
 "connectivity."
-msgstr ""
+msgstr "面接続配列を含まない場合，各点は単一の頂点に割り当てられます．これは，接続性のない点群に使用されます．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:32
 msgid ""
 "Number of faces in the ``faces`` connectivity array.  While optional, "
 "setting this speeds up the creation of the ``PolyData``."
-msgstr ""
+msgstr "``faces`` 接続アレイの面の数．この設定はオプションですが， ``PolyData`` の作成を高速化します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:36
@@ -10622,13 +10663,15 @@ msgid ""
 "line segments ``[0, 1]`` and ``[1, 2, 3, 4]`` will be represented as ``[2, "
 "0, 1, 4, 1, 2, 3, 4]``."
 msgstr ""
+"線接続アレイ． ``faces`` と同様に，この配列は線分セグメント内の点の数を示すパディングを必要とします．例えば，2つのラインセグメント "
+"``[0, 1]`` および ``[1, 2, 3, 4]`` は， ``[2, 0, 1, 4, 1, 2, 3, 4]`` として表される．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:42
 msgid ""
 "Number of lines in the ``lines`` connectivity array.  While optional, "
 "setting this speeds up the creation of the ``PolyData``."
-msgstr ""
+msgstr "``lines`` 接続アレイの線の数．この設定はオプションですが， ``PolyData`` の作成を高速化します．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:46
@@ -10637,6 +10680,8 @@ msgid ""
 "them.  Setting ``deep=True`` ensures that the original arrays can be "
 "modified outside the mesh without affecting the mesh. Default is ``False``."
 msgstr ""
+"入力をコピーするか，コピーせずに入力からメッシュを作成するかを指定します． ``deep=True`` "
+"を設定すると，メッシュに影響を与えずにメッシュの外部でオリジナルの配列を修正できます．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:63
@@ -10646,17 +10691,17 @@ msgstr "``vtk.vtkPolyData`` オブジェクトから初期化する"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:68
 msgid "Initialize from just vertices"
-msgstr ""
+msgstr "頂点のみから初期化"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:73
 msgid "Initialize from vertices and faces"
-msgstr ""
+msgstr "頂点と面から初期化する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:78
 msgid "Initialize from vertices and lines"
-msgstr ""
+msgstr "頂点とラインから初期化する"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:83
