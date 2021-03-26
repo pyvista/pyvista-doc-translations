@@ -274,25 +274,28 @@ download the sample knee DICOM image:
 
 And here we inspect the DICOM image with a few different opacity mappings:
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-116
+.. GENERATED FROM PYTHON SOURCE LINES 97-119
 
 .. code-block:: default
 
     p = pv.Plotter(shape=(2, 2), border=False)
 
-    p.add_mesh(knee, cmap="bone", stitle="No Opacity")
+    p.add_mesh(knee, cmap="bone", scalar_bar_args={'title': "No Opacity"})
     p.view_xy()
 
     p.subplot(0, 1)
-    p.add_mesh(knee, cmap="bone", opacity="linear", stitle="Linear Opacity")
+    p.add_mesh(knee, cmap="bone", opacity="linear",
+               scalar_bar_args={'title': "Linear Opacity"})
     p.view_xy()
 
     p.subplot(1, 0)
-    p.add_mesh(knee, cmap="bone", opacity="sigmoid", stitle="Sigmoidal Opacity")
+    p.add_mesh(knee, cmap="bone", opacity="sigmoid",
+               scalar_bar_args={'title': "Sigmoidal Opacity"})
     p.view_xy()
 
     p.subplot(1, 1)
-    p.add_mesh(knee, cmap="bone", opacity="geom_r", stitle="Log Scale Opacity")
+    p.add_mesh(knee, cmap="bone", opacity="geom_r",
+               scalar_bar_args={'title': "Log Scale Opacity"})
     p.view_xy()
 
     p.show()
@@ -318,7 +321,7 @@ And here we inspect the DICOM image with a few different opacity mappings:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-127
+.. GENERATED FROM PYTHON SOURCE LINES 120-130
 
 Opacity by Array
 ++++++++++++++++
@@ -331,7 +334,7 @@ a mesh that are uncertain and highlight regions that are well resolved.
 The following is a demonstration of plotting a mesh with colored values and
 using a second array to control the transparency of the mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-132
+.. GENERATED FROM PYTHON SOURCE LINES 130-135
 
 .. code-block:: default
 
@@ -355,7 +358,7 @@ using a second array to control the transparency of the mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 133-139
+.. GENERATED FROM PYTHON SOURCE LINES 136-142
 
 Make sure to flag ``use_transparency=True`` since we want areas of high
 variance to have high transparency.
@@ -364,7 +367,7 @@ Also, since the opacity array must be between 0 and 1, we normalize
 the temperature variance array by the maximum value.  That way high
 variance will be completely transparent.
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-156
+.. GENERATED FROM PYTHON SOURCE LINES 142-159
 
 .. code-block:: default
 
@@ -409,7 +412,7 @@ variance will be completely transparent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.095 seconds)
+   **Total running time of the script:** ( 0 minutes  13.791 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_opacity.py:

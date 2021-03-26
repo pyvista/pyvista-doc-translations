@@ -276,19 +276,19 @@ must have Colorcet installed in your Python environment:
     p = pv.Plotter(shape=(2, 2), border=False)
     p.subplot(0, 0)
     p.add_mesh(mesh, scalars='Elevation', cmap="fire",
-               lighting=True, stitle="Colorcet Fire")
+               lighting=True, scalar_bar_args={'title': "Colorcet Fire"})
 
     p.subplot(0, 1)
     p.add_mesh(mesh, scalars='Elevation', cmap="fire",
-               lighting=False, stitle="Colorcet Fire (No Lighting)")
+               lighting=False, scalar_bar_args={'title': "Colorcet Fire (No Lighting)"})
 
     p.subplot(1, 0)
     p.add_mesh(mesh, scalars='Elevation', cmap="hot",
-               lighting=True, stitle="Matplotlib Hot")
+               lighting=True, scalar_bar_args={'title': "Matplotlib Hot"})
 
     p.subplot(1, 1)
     p.add_mesh(mesh, scalars='Elevation', cmap="hot",
-               lighting=False, stitle="Matplotlib Hot (No Lighting)")
+               lighting=False, scalar_bar_args={'title': "Matplotlib Hot (No Lighting)"})
 
     p.show()
 
@@ -315,7 +315,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.951 seconds)
+   **Total running time of the script:** ( 0 minutes  6.740 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

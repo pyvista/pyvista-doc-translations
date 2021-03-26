@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:09+0000\n"
+"POT-Creation-Date: 2021-03-26 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,6 +219,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_background_image:18
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_legend:41
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:11
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:176
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
@@ -2632,126 +2633,125 @@ msgid "If False, a scalar bar will not be added to the scene. Defaults to ``True
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:90
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:73
-msgid "Scalar bar title. By default the scalar bar is given a title of the the scalars array used to color the mesh. To create a bar with no title, use an empty string (i.e. '')."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:94
 msgid "If a ``MultiBlock`` dataset is given this will color each block by a solid color using matplotlib's color cycler."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:97
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:93
 msgid "The name for the added mesh/actor so that it can be easily updated.  If an actor of this name already exists in the rendering window, it will be replaced by the new actor."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:101
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:97
 msgid "A texture to apply if the input mesh has texture coordinates.  This will not work with MultiBlock datasets. If set to ``True``, the first available texture on the object will be used. If a string name is given, it will pull a texture with that name associated to the input mesh."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:114
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:110
 msgid "When lighting is enabled, this is the amount of light from 0 to 1 that reaches the actor when not directed at the light source emitted from the viewer.  Default 0.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:114
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:89
+msgid "The diffuse lighting coefficient. Default 1.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:116
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:91
+msgid "The specular lighting coefficient. Default 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:118
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:93
-msgid "The diffuse lighting coefficient. Default 1.0"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:120
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:95
-msgid "The specular lighting coefficient. Default 0.0"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:122
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:97
 msgid "The specular power. Between 0.0 and 128.0"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:124
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:120
 msgid "The color to use for all ``NaN`` values in the plotted scalar array."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:127
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:123
 msgid "Opacity of ``NaN`` values.  Should be between 0 and 1. Default 1.0"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:130
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:126
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:46
 msgid "Does not render faces that are culled. Options are ``'front'`` or ``'back'``. This can be helpful for dense surface meshes, especially when edges are visible, but can cause flat meshes to be partially displayed.  Defaults ``False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:135
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:131
 msgid "If an 2 dimensional array is passed as the scalars, plot those values as RGB(A) colors! ``rgba`` is also accepted alias for this. Opacity (the A) is optional."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:139
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:135
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:51
 msgid "If set to ``True``, then the number of unique values in the scalar array will be used as the ``n_colors`` argument."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:142
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:138
 msgid "If set to ``True``, plot a silhouette highlight for the mesh. This feature is only available for a triangulated ``PolyData``. As a ``dict``, it contains the properties of the silhouette to display:      * ``color``: ``str`` or 3-item ``list``, color of the silhouette     * ``line_width``: ``float``, edge width     * ``opacity``: ``float`` between 0 and 1, edge transparency     * ``feature_angle``: If ``True``, display sharp edges     * ``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:142
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:138
 msgid "If set to ``True``, plot a silhouette highlight for the mesh. This feature is only available for a triangulated ``PolyData``. As a ``dict``, it contains the properties of the silhouette to display:"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:146
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:142
 msgid "``color``: ``str`` or 3-item ``list``, color of the silhouette"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:147
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:143
 msgid "``line_width``: ``float``, edge width"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:148
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:144
 msgid "``opacity``: ``float`` between 0 and 1, edge transparency"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:149
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:145
 msgid "``feature_angle``: If ``True``, display sharp edges"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:150
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:146
 msgid "``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:152
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:148
 msgid "Invert the opacity mappings and make the values correspond to transparency."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:155
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:151
 msgid "Solid color for values below the scalars range (``clim``). This will automatically set the scalar bar ``below_label`` to ``'Below'``"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:159
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:155
 msgid "Solid color for values below the scalars range (``clim``). This will automatically set the scalar bar ``above_label`` to ``'Above'``"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:163
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:77
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:159
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:73
 msgid "Pass a dictionary of annotations. Keys are the float values in the scalars range to annotate on the scalar bar and the values are the the string annotations."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:167
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:163
 msgid "Set whether this mesh is pickable"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:169
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:165
 msgid "Use log scale when mapping data to colors. Scalars less than zero are mapped to the smallest representable positive float. Default: ``True``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:173
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:169
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:62
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:99
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:95
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.update_coordinates:8
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.update_scalars:8
 msgid "Force a render when True.  Default ``True``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:176
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:172
 msgid "**actor** -- VTK actor of the mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:177
+msgid "Add a sphere to the plotter and show it with a custom scalar bar title."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_mesh_clip_box:1
@@ -3504,15 +3504,15 @@ msgstr ""
 msgid "Volume mapper to use given by name. Options include: ``'fixed_point'``, ``'gpu'``, ``'open_gl'``, and ``'smart'``. If ``None`` the ``\"volume_mapper\"`` in the ``rcParams`` is used."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:81
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:77
 msgid "Set/Get the unit distance on which the scalar opacity transfer function is defined. Meaning that over that distance, a given opacity (from the transfer function) is accumulated. This is adjusted for the actual sampling distance during rendering. By default, this is the length of the diagonal of the bounding box of the volume divided by the dimensions."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:88
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:84
 msgid "Default off. If shading is turned on, the mapper may perform shading calculations - in some cases shading does not apply (for example, in a maximum intensity projection) and therefore shading will not be performed even if this flag is on."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:102
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_volume:98
 msgid "**actor** -- VTK volume of the input data."
 msgstr ""
 
@@ -4056,7 +4056,7 @@ msgstr ""
 msgid "The supported formats are: '.svg', '.eps', '.ps', '.pdf', '.tex'"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.BasePlotter.scalar_bars:15
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.BasePlotter.scalar_bars:14
 msgid "Select a scalar bar actor based on the title of the bar."
 msgstr ""
 

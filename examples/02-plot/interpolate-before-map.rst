@@ -62,23 +62,24 @@ colors.
 
 So lets take a look at the difference:
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-52
+.. GENERATED FROM PYTHON SOURCE LINES 33-53
 
 .. code-block:: default
 
 
     # Load a cylinder which has cells with a wide spread
-    cyl = pv.Cylinder(direction=(0,0,1), height=2).elevation()
+    cyl = pv.Cylinder(direction=(0, 0, 1), height=2).elevation()
 
     # Common display argument to make sure all else is constant
     dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True)
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(cyl, interpolate_before_map=False,
-               stitle='Elevation - not interpolated', **dargs)
-    p.subplot(0,1)
+               scalar_bar_args={'title': 'Elevation - not interpolated'},
+               **dargs)
+    p.subplot(0, 1)
     p.add_mesh(cyl, interpolate_before_map=True,
-               stitle='Elevation - interpolated', **dargs)
+               scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
     p.link_views()
     p.camera_position = [(-1.67, -5.10, 2.06),
                          (0.0, 0.0, 0.0),
@@ -106,7 +107,7 @@ So lets take a look at the difference:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-59
+.. GENERATED FROM PYTHON SOURCE LINES 54-60
 
 Shown in the figure above, when not interpolating the scalars before mapping,
 the colors (RGB values, not scalars) are interpolated between the vertices by
@@ -115,7 +116,7 @@ accurate.
 
 The same interpolation effect occurs for wireframe visualization too:
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-76
+.. GENERATED FROM PYTHON SOURCE LINES 60-78
 
 .. code-block:: default
 
@@ -124,12 +125,13 @@ The same interpolation effect occurs for wireframe visualization too:
     dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True,
                  style='wireframe')
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(cyl, interpolate_before_map=False,
-               stitle='Elevation - not interpolated', **dargs)
-    p.subplot(0,1)
+               scalar_bar_args={'title': 'Elevation - not interpolated'},
+               **dargs)
+    p.subplot(0, 1)
     p.add_mesh(cyl, interpolate_before_map=True,
-               stitle='Elevation - interpolated', **dargs)
+               scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
     p.link_views()
     p.camera_position = [(-1.67, -5.10, 2.06),
                          (0.0, 0.0, 0.0),
@@ -157,7 +159,7 @@ The same interpolation effect occurs for wireframe visualization too:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-85
+.. GENERATED FROM PYTHON SOURCE LINES 79-87
 
 The cylinder mesh above is a great example dataset for this as it has a wide
 spread between the vertices (points are only at the top and bottom of the
@@ -168,7 +170,7 @@ color interpolating are harder to notice. Let's take a look at a wavelet
 example and try to figure out how the ``interpolate_before_map`` option
 affects its rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-102
+.. GENERATED FROM PYTHON SOURCE LINES 87-104
 
 .. code-block:: default
 
@@ -177,12 +179,12 @@ affects its rendering.
     # Common display argument to make sure all else is constant
     dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True)
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(wavelet, interpolate_before_map=False,
-               stitle='RTData - not interpolated', **dargs)
-    p.subplot(0,1)
+               scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+    p.subplot(0, 1)
     p.add_mesh(wavelet, interpolate_before_map=True,
-               stitle='RTData - interpolated', **dargs)
+               scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
     p.link_views()
     p.camera_position = [(55., 16, 31),
                          (-5.0, 0.0, 0.0),
@@ -210,7 +212,7 @@ affects its rendering.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-108
+.. GENERATED FROM PYTHON SOURCE LINES 105-110
 
 This time is pretty difficult to notice the differences - they are there,
 subtle, but present. The differences become more apparent when we decrease
@@ -218,19 +220,19 @@ the number of colors in colormap.
 Let's take a look at the differences when using eight discrete colors via
 the ``n_colors`` argument:
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-123
+.. GENERATED FROM PYTHON SOURCE LINES 110-125
 
 .. code-block:: default
 
 
     dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True, n_colors=8)
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(wavelet, interpolate_before_map=False,
-               stitle='RTData - not interpolated', **dargs)
-    p.subplot(0,1)
+               scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+    p.subplot(0, 1)
     p.add_mesh(wavelet, interpolate_before_map=True,
-               stitle='RTData - interpolated', **dargs)
+               scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
     p.link_views()
     p.camera_position = [(55., 16, 31),
                          (-5.0, 0.0, 0.0),
@@ -258,7 +260,7 @@ the ``n_colors`` argument:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-134
+.. GENERATED FROM PYTHON SOURCE LINES 126-136
 
 Left, ``interpolate_before_map`` OFF.  Right, ``interpolate_before_map`` ON.
 
@@ -274,7 +276,7 @@ flag to ``True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.798 seconds)
+   **Total running time of the script:** ( 0 minutes  3.611 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_interpolate-before-map.py:

@@ -31,7 +31,6 @@ The modeling results are courtesy of `Urruty Benoit <https://github.com/BenoitUR
 and  are from the `Elmer/Ice <http://elmerice.elmerfem.org>`_ simulation
 software.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 16-27
 
 .. code-block:: default
@@ -301,14 +300,15 @@ comparison.
 
 flow_a that agrees with the mean flow path of flow_b
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-105
+.. GENERATED FROM PYTHON SOURCE LINES 98-106
 
 .. code-block:: default
 
     agree = flow_a.dot(flow_b.mean(0))
 
     pl = pv.Plotter()
-    pl.add_mesh(a, scalars=agree, cmap='bwr', stitle='Flow agreement with block b')
+    pl.add_mesh(a, scalars=agree, cmap='bwr',
+                scalar_bar_args={'title': 'Flow agreement with block b'})
     pl.add_mesh(b, color='w')
     pl.show(cpos='xy')
 
@@ -333,7 +333,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-112
+.. GENERATED FROM PYTHON SOURCE LINES 107-114
 
 .. code-block:: default
 
@@ -341,7 +341,8 @@ flow_a that agrees with the mean flow path of flow_b
 
     pl = pv.Plotter()
     pl.add_mesh(a, color='w')
-    pl.add_mesh(b, scalars=agree, cmap='bwr', stitle='Flow agreement with block a')
+    pl.add_mesh(b, scalars=agree, cmap='bwr',
+                scalar_bar_args={'title': 'Flow agreement with block a'})
     pl.show(cpos='xy')
 
 
@@ -367,7 +368,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.607 seconds)
+   **Total running time of the script:** ( 0 minutes  13.182 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_antarctica-compare.py:

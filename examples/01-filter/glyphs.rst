@@ -139,14 +139,15 @@ access the :attr:`pyvista.DataSet.arrows` property.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-67
+.. GENERATED FROM PYTHON SOURCE LINES 59-68
 
 .. code-block:: default
 
 
     # plot the arrows and the sphere
     p = pv.Plotter()
-    p.add_mesh(sphere.arrows, scalars='GlyphScale', lighting=False, stitle="Vector Magnitude")
+    p.add_mesh(sphere.arrows, scalars='GlyphScale', lighting=False,
+               scalar_bar_args={'title': "Vector Magnitude"})
     p.add_mesh(sphere, color="grey", ambient=0.6, opacity=0.5, show_edges=False)
     p.show()
 
@@ -172,7 +173,7 @@ access the :attr:`pyvista.DataSet.arrows` property.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-75
+.. GENERATED FROM PYTHON SOURCE LINES 69-76
 
 Subset of Glyphs
 ++++++++++++++++
@@ -182,7 +183,7 @@ this case, you can choose to build glyphs for a subset of the input dataset
 by using a merging tolerance. Here we specify a merging tolerance of five
 percent which equates to five percent of the bounding box's length.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-86
+.. GENERATED FROM PYTHON SOURCE LINES 76-87
 
 .. code-block:: default
 
@@ -221,7 +222,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.372 seconds)
+   **Total running time of the script:** ( 0 minutes  9.930 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:
