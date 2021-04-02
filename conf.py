@@ -17,6 +17,9 @@ import sys
 
 from sphinx.util.pycompat import execfile_
 
+import subprocess
+res = subprocess.call('ipython kernel install --user')
+
 sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
 
 os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
