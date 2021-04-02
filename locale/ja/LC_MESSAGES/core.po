@@ -1143,7 +1143,7 @@ msgstr "名前が一意でない場合は，最初のoccurrenceが返されま�
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:3
 msgid "VTK object or ``numpy`` array to be plotted."
-msgstr ""
+msgstr "プロットするVTKオブジェクトまたは ``numpy`` 配列．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:5
@@ -1152,7 +1152,7 @@ msgstr ""
 msgid ""
 "Plots off screen when ``True``.  Helpful for saving screenshots without a "
 "window popping up."
-msgstr ""
+msgstr "``True`` の場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:8
@@ -1161,7 +1161,7 @@ msgstr ""
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``. Default"
 " ``False``."
-msgstr ""
+msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1172,6 +1172,8 @@ msgid ""
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
 "takes screenshot and returns ``numpy`` array of image."
 msgstr ""
+"有効にすると，スクリーンショットをファイルに保存します．関連項目: ``help(pyvista.Plotter.screenshot)`` "
+"．デフォルトの ``False`` ． ``True`` はスクリーンショットを取得し，イメージの ``numpy`` 配列を戻します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1181,20 +1183,22 @@ msgid ""
 "Saves screenshot to file when enabled.  See: "
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
+"有効にすると，スクリーンショットをファイルに保存します．関連項目: ``help(pyvista.Plotter.screenshot)`` "
+"．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
-msgstr ""
+msgstr "``True`` の場合，スクリーンショットを取得し画像の ``numpy`` 配列を返します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:16
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:16
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
-msgstr ""
+msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは ``[1024, 768]`` です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:18
@@ -1204,6 +1208,7 @@ msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
 msgstr ""
+"``True`` の場合，メッシュ境界を表示します．既定値は ``False`` です．エイリアス ``show_grid`` も使用できます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:21
@@ -1213,6 +1218,7 @@ msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
 msgstr ""
+"``True`` の場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:24
@@ -1244,6 +1250,8 @@ msgid ""
 "``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
 "``backend='ipyvtk_simple'``."
 msgstr ""
+"非推奨．代わりに， ``pyvista.set_jupyter_backend('ipyvtk_simple')`` または "
+"``backend='ipyvtk_simple'`` を使用してグローバルにバックエンドを設定します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:34
@@ -1256,55 +1264,59 @@ msgid ""
 "Show a ``panel`` widget.  This can also be set globally with "
 "``pyvista.set_jupyter_backend``"
 msgstr ""
+"Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれか: * ``'none'`` : ノートブックに表示されません． * "
+"``'static'`` : 静止画を表示します． * ``'panel'`` :  ``ipygany`` ウィジェットを表示します * "
+"``'panel'`` :  ``panel`` ウィジェットを表示します．これは ``pyvista.set_jupyter_backend`` "
+"でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:34
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:34
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
-msgstr ""
+msgstr "Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれかです:"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:37
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:37
 msgid "``'none'`` : Do not display in the notebook."
-msgstr ""
+msgstr "``'none'`` : ノートブックに表示しない．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:38
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:38
 msgid "``'static'`` : Display a static figure."
-msgstr ""
+msgstr "``'static'`` : 静的図形を表示します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
-msgstr ""
+msgstr "``'ipygany'`` : ``ipygany`` ウィジェットを表示する"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 msgid "``'panel'`` : Show a ``panel`` widget."
-msgstr ""
+msgstr "``'panel'`` : ``panel`` ウィジェットを表示します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
-msgstr ""
+msgstr "これは ``pyvista.set_jupyter_backend`` でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:45
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:45
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
-msgstr ""
+msgstr "Jupyterノートブックプロットバックエンドのキーワード引数．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:47
@@ -2670,12 +2682,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc>`\\ "
 "\\(pointa\\, pointb\\, center\\)"
 msgstr ""
+":obj:`plot_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:1
 msgid "Sample a dataset along a circular arc and plot it."
-msgstr ""
+msgstr "円弧に沿ってデータセットをサンプリングし，プロットします．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2683,6 +2698,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc_normal>`\\"
 " \\(center\\[\\, ...\\]\\)"
 msgstr ""
+":obj:`plot_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -2786,6 +2804,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc>`\\ "
 "\\(pointa\\, pointb\\, center\\)"
 msgstr ""
+":obj:`sample_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -2803,6 +2824,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc_normal>`\\"
 " \\(center\\[\\, ...\\]\\)"
 msgstr ""
+":obj:`sample_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4728,7 +4752,7 @@ msgstr ""
 msgid ""
 "The number of segments composing the polyline is controlled by setting the "
 "object resolution."
-msgstr ""
+msgstr "ポリラインを構成するセグメントの数は，オブジェクトの解像度を設定することによってコントロールされます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:15

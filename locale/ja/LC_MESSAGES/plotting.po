@@ -184,10 +184,11 @@ msgid ""
 "The code snippet below will create a static screenshot of the rendering and "
 "display it in the Jupyter notebook:"
 msgstr ""
+"静的および対話型インラインプロットは，Jupyterノートブックを使用して行うことができます．以下のコードスニペットは，レンダリングの静的スクリーンショットを作成し，Jupyterノートブックに表示します:"
 
 #: ../../pyvista/docs/plotting/plotting.rst:56
 msgid "It is possible to use the ``Plotter`` class as well."
-msgstr ""
+msgstr "``Plotter`` クラスを使用することもできます．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:64
 msgid ""
@@ -195,10 +196,12 @@ msgid ""
 "plotting backend like ``panel`` or ``ipygany``.  You can even use it to "
 "create interactive documentations online."
 msgstr ""
+"さらに， ``panel`` や ``ipygany`` のようなJupyter "
+"plottingバックエンドを利用して，インタラクティブなプロットを生成することができます．オンラインでインタラクティブなドキュメントを作成するために使用することもできます．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:74
 msgid "For more details, see the section on :ref:`jupyter_plotting`."
-msgstr ""
+msgstr "詳細については， :ref:`jupyter_plotting` の項を参照してください．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:78
 msgid "Background Plotting"
@@ -423,21 +426,21 @@ msgstr "パラメータ"
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:3
 msgid "VTK object or ``numpy`` array to be plotted."
-msgstr ""
+msgstr "プロットするVTKオブジェクトまたは ``numpy`` 配列．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:5
 msgid ""
 "Plots off screen when ``True``.  Helpful for saving screenshots without a "
 "window popping up."
-msgstr ""
+msgstr "``True`` の場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:8
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``. Default"
 " ``False``."
-msgstr ""
+msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -446,6 +449,8 @@ msgid ""
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
 "takes screenshot and returns ``numpy`` array of image."
 msgstr ""
+"有効にすると，スクリーンショットをファイルに保存します．関連項目: ``help(pyvista.Plotter.screenshot)`` "
+"．デフォルトの ``False`` ． ``True`` はスクリーンショットを取得し，イメージの ``numpy`` 配列を戻します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -453,18 +458,20 @@ msgid ""
 "Saves screenshot to file when enabled.  See: "
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
+"有効にすると，スクリーンショットをファイルに保存します．関連項目: ``help(pyvista.Plotter.screenshot)`` "
+"．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
-msgstr ""
+msgstr "``True`` の場合，スクリーンショットを取得し画像の ``numpy`` 配列を返します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:16
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:11
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
-msgstr ""
+msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは ``[1024, 768]`` です．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:18
@@ -472,6 +479,7 @@ msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
 msgstr ""
+"``True`` の場合，メッシュ境界を表示します．既定値は ``False`` です．エイリアス ``show_grid`` も使用できます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:21
@@ -479,6 +487,7 @@ msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
 msgstr ""
+"``True`` の場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:24
@@ -504,6 +513,8 @@ msgid ""
 "``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
 "``backend='ipyvtk_simple'``."
 msgstr ""
+"非推奨．代わりに， ``pyvista.set_jupyter_backend('ipyvtk_simple')`` または "
+"``backend='ipyvtk_simple'`` を使用してグローバルにバックエンドを設定します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:34
@@ -516,53 +527,57 @@ msgid ""
 "Show a ``panel`` widget.  This can also be set globally with "
 "``pyvista.set_jupyter_backend``"
 msgstr ""
+"Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれか: * ``'none'`` : ノートブックに表示されません． * "
+"``'static'`` : 静止画を表示します． * ``'panel'`` :  ``ipygany`` ウィジェットを表示します * "
+"``'panel'`` :  ``panel`` ウィジェットを表示します．これは ``pyvista.set_jupyter_backend`` "
+"でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:34
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:34
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
-msgstr ""
+msgstr "Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれかです:"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:37
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:37
 msgid "``'none'`` : Do not display in the notebook."
-msgstr ""
+msgstr "``'none'`` : ノートブックに表示しない．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:38
 msgid "``'static'`` : Display a static figure."
-msgstr ""
+msgstr "``'static'`` : 静的図形を表示します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:39
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
-msgstr ""
+msgstr "``'ipygany'`` : ``ipygany`` ウィジェットを表示する"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:40
 msgid "``'panel'`` : Show a ``panel`` widget."
-msgstr ""
+msgstr "``'panel'`` : ``panel`` ウィジェットを表示します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:42
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
-msgstr ""
+msgstr "これは ``pyvista.set_jupyter_backend`` でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:45
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
-msgstr ""
+msgstr "Jupyterノートブックプロットバックエンドのキーワード引数．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:47
@@ -3971,6 +3986,8 @@ msgid ""
 "Set component of vector valued scalars to plot.  Must be nonnegative, if "
 "supplied. If ``None``, the magnitude of the vector is plotted."
 msgstr ""
+"プロットするベクトル値スカラーのコンポーネントを設定します．指定されている場合は負でない必要があります． ``None`` "
+"の場合，ベクトルの大きさがプロットされます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:175
@@ -6724,6 +6741,8 @@ msgid ""
 "(namely Windows) will experience issues saving a screenshot if the exit "
 "button in the GUI is pressed."
 msgstr ""
+"GUIの終了ボタンが押されていると，一部のオペレーティングシステム(具体的にはWindows)でスクリーンショットの保存に問題が発生するため， "
+"``q`` キーを使用してプロッタを閉じてください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:9
@@ -6755,14 +6774,14 @@ msgstr "デフォルトでは無効になっています．ブロックしない
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``.  "
 "Default ``False``."
-msgstr ""
+msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:24
 msgid ""
 "The camera position.  You can also set this with "
 "``Plotter.camera_position``."
-msgstr ""
+msgstr "カメラの位置． ``Plotter.camera_position`` で設定することもできます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:27
@@ -6776,7 +6795,7 @@ msgstr "最後のイメージとカメラ位置を表す数値配列を返しま
 msgid ""
 "Return the jupyterlab viewer, scene, or display object when plotting with "
 "jupyter notebook."
-msgstr ""
+msgstr "jupyterlabビューア，シーン，または表示オブジェクトをjupyterノートブックでプロットする場合に返します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:49
@@ -6786,6 +6805,9 @@ msgid ""
 "``return_img=True``   or ``screenshot`` is set. * *widget* -- IPython widget"
 " when ``return_viewer==True``."
 msgstr ""
+"* **cpos** (*list*) -- カメラ位置，焦点，ビューアップのリスト * **image** (*np.ndarray*) --  "
+"``return_img=True`` または ``screenshot`` が設定されている場合は，最後のイメージの数値配列． * *widget* "
+"--  ``return_viewer==True`` 時のIPythonウィジェット．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:50
@@ -6799,12 +6821,12 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:52
 msgid "*widget* -- IPython widget when ``return_viewer==True``."
-msgstr ""
+msgstr "*widget* -- ``return_viewer==True`` 時のIPythonウィジェット．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:56
 msgid "Simply show the plot."
-msgstr ""
+msgstr "プロットを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:60
@@ -6816,12 +6838,12 @@ msgstr "対話的にスクリーンショットを撮ります．最後に表示
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:65
 msgid "Display an ``ipygany`` scene within a jupyter notebook"
-msgstr ""
+msgstr "Jupyterノートブック内に ``ipygany`` シーンを表示します"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:69
 msgid "Return an ``ipygany`` scene."
-msgstr ""
+msgstr "``ipygany`` シーンを返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:204
 msgid "Renderer"
@@ -6833,13 +6855,13 @@ msgstr ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
-msgstr ""
+msgstr ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.axes_enabled:1
 msgid "Return ``True`` when axes are enabled."
-msgstr ""
+msgstr "軸が有効な時に ``True`` を返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`background_color <pyvista.Renderer.background_color>`\\"
