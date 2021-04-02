@@ -44,6 +44,7 @@ sphinx_gallery_conf = {
 
 html_static_path = [os.path.join(basedir, "_static")]
 
+extensions.append("jupyter_sphinx.execute")
 
 def setup(app):
     AutoAutoSummary.app = app
