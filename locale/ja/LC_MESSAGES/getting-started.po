@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:09+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -585,31 +585,30 @@ msgid ""
 " You can create one by defining a 2D array XYZ coordinates like so:"
 msgstr "ポイントクラウドから始めましょう - これは頂点のみを持つメッシュタイプです．作成するには，2 D配列のXYZ座標を次のように定義します．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:49
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:52
 msgid ""
 "But it's import to note that most meshes have some sort of connectivity "
 "between nodes such as this gridded mesh:"
 msgstr "ただし，ほとんどのメッシュは，次のグリッド化されたメッシュなどのノード間で何らかの接続性を持っていることに注意してください．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:72
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:71
 msgid "Or this triangulated surface:"
 msgstr "または，この三角形表面:"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:92
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:89
 msgid "What is a Cell?"
 msgstr "セルとは?"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:94
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:91
 msgid ""
 "A cell is the geometry between nodes that defines the connectivity or "
 "topology of a mesh. In the examples above, cells are defined by the lines "
-"(edges colored in black) connecting nodes (colored in red). For example, a "
+"(edges colored in black) connecting nodes (colored in red).  For example, a "
 "cell in the beam example is a a voxel defined by region between eight nodes "
 "in that mesh:"
 msgstr ""
-"セルは，メッシュの接続またはトポロジを定義するノード間のジオメトリです．上記の例では，セルはノード(赤色をしている)を結ぶ線(黒色をしている縁)によって定義されます．たとえば，ビームの例のセルは，メッシュ内の8つのノード間の領域によって定義されるボクセルです．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:124
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:116
 msgid ""
 "Cells aren't limited to voxels, they could be a triangle between three "
 "nodes, a line between two nodes, or even a single node could be its own cell"
@@ -617,11 +616,11 @@ msgid ""
 msgstr ""
 "セルはボクセルに限定されず，3つのノード間の三角形，2つのノード間のライン，または1つのノード自体のセル(これは特別なケースです)にすることができます．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:131
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:122
 msgid "What are attributes?"
 msgstr "アトリビュートとは?"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:133
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:124
 msgid ""
 "Attributes are data values that live on either the nodes or cells of a mesh."
 " In PyVista, we work with both point data and cell data and allow easy "
@@ -634,17 +633,16 @@ msgstr ""
 " ``.point_arrays`` または ``.cell_arrays`` "
 "と呼ばれる任意のPyVistaメッシュにアタッチされた辞書からアクセスできます．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:140
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:132
 msgid ""
 "Point data refers to arrays of values (scalars, vectors, etc.) that live on "
-"each node of the mesh. The order of this array is crucial! Each element in "
-"an attribute array must correspond to a node or cell in the mesh. Let's "
-"create some point data for the beam mesh. When plotting the values between "
+"each node of the mesh.  The order of this array is crucial! Each element in "
+"an attribute array must correspond to a node or cell in the mesh.  Let's "
+"create some point data for the beam mesh.  When plotting the values between "
 "nodes are interpolated across the cells."
 msgstr ""
-"ポイントデータは，メッシュの各ノード上に存在する値の配列(スカラー，ベクトルなど．)を参照します．この配列の順序は重要です．アトリビュート配列の各要素は，メッシュ内のノードまたはセルに対応している必要があります．ビームメッシュの点データを作成します．ノード間の値をプロットすると，セル間で補間されます．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:157
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:146
 msgid ""
 "Cell data refers to arrays of values (scalars, vectors, etc.) that live "
 "throughout each cell of the mesh. That is the entire cell (2D face or 3D "
@@ -653,7 +651,7 @@ msgstr ""
 "セルデータは，メッシュの各セル全体に存在する値の配列(スカラー，ベクトルなど)を参照します．つまり，セル全体(2 D面または3 "
 "D体積)にそのアトリビュートの値が割り当てられます．"
 
-#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:173
+#: ../../pyvista/docs/getting-started/what-is-a-mesh.rst:158
 msgid ""
 "Here's a comparison of point data vs. cell data and how point data is "
 "interpolated across cells when mapping colors. This is unlike cell data "

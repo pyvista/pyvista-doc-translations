@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-26 00:17+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,311 +36,205 @@ msgstr "``matplotlib`` に似た構文を持つ直感的な描画ルーチン( :
 msgid "Plotting tools built for interactivity (see :ref:`widgets`)"
 msgstr "対話型のプロットツール( :ref:`widgets` を参照)"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:2
-msgid "Notebook Plotting"
-msgstr "ノートブックプロット"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:4
-msgid "In PyVista, we have two routes for plotting inside Jupyter notebooks."
-msgstr "PyVistaでは，Jupyterノートブック内でプロットするための2つの方法があります．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:6
+#: ../../pyvista/docs/plotting/plotting.rst:6
 msgid ""
-"Server-side rendering with PyVista streaming to the notebook through "
-"``ipyvtk_simple``"
-msgstr "``ipyvtk_simple`` を介したノートブックへのPyVistaストリーミングによるサーバ側のレンダリング"
+"When plotting with the interactive rendering windows in VTK, several "
+"keyboard shortcuts are available:"
+msgstr "VTKでインタラクティブレンダリングウィンドウを使用してプロットする場合，次のキーボードショートカットを使用できます．"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:7
-msgid "Client-side rendering with ``itkwidgets``."
-msgstr "``itkwidgets`` を使用したクライアント側のレンダリング．"
+#: ../../pyvista/docs/plotting/plotting.rst:10
+msgid "Key"
+msgstr "キー"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:4
-msgid "Using ``ipyvtk-simple``"
-msgstr "``ipyvtk-simple`` の使用"
+#: ../../pyvista/docs/plotting/plotting.rst:10
+msgid "Action"
+msgstr "アクション"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:6
+#: ../../pyvista/docs/plotting/plotting.rst:12
+msgid "Linux/Windows"
+msgstr "Linux/Windows"
+
+#: ../../pyvista/docs/plotting/plotting.rst:12
+msgid "Mac"
+msgstr "Mac"
+
+#: ../../pyvista/docs/plotting/plotting.rst:14
+msgid "``q``"
+msgstr "``q``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:14
+msgid "Close the rendering window"
+msgstr "レンダリングウィンドウを閉じる"
+
+#: ../../pyvista/docs/plotting/plotting.rst:16
+msgid "``v``"
+msgstr "``v``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:16
+msgid "Isometric camera view"
+msgstr "アイソメトリックカメラビュー"
+
+#: ../../pyvista/docs/plotting/plotting.rst:18
+msgid "``w``"
+msgstr "``w``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:18
+msgid "Switch all datasets to a `wireframe` representation"
+msgstr "すべてのデータセットを `ワイヤフレーム` 表現に切り替える"
+
+#: ../../pyvista/docs/plotting/plotting.rst:20
+msgid "``r``"
+msgstr "``r``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:20
+msgid "Reset the camera to view all datasets"
+msgstr "カメラをリセットしてすべてのデータセットを表示する"
+
+#: ../../pyvista/docs/plotting/plotting.rst:22
+msgid "``s``"
+msgstr "``s``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:22
+msgid "Switch all datasets to a `surface` representation"
+msgstr "すべてのデータセットを `表面` 表現に切り替える"
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "``shift+click`` or ``middle-click``"
+msgstr "``shift+click`` か ``middle-click``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "``shift+click``"
+msgstr "``shift+click``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "Pan the rendering scene"
+msgstr "レンダリングシーンをパンする"
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "``left-click``"
+msgstr "``左クリック``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "``cmd+click``"
+msgstr "``cmd+クリック``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "Rotate the rendering scene in 3D"
+msgstr "レンダリングシーンを3 Dで回転する"
+
+#: ../../pyvista/docs/plotting/plotting.rst:28
+msgid "``ctrl+click``"
+msgstr "``Ctrl+クリック``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:28
+msgid "Rotate the rendering scene in 2D (view-plane)"
+msgstr "レンダリングシーンを2 Dで回転する (ビュープレーン)"
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "``mouse-wheel`` or ``right-click``"
+msgstr "``マウスホイール`` または ``右クリック``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "``ctl+click``"
+msgstr "``Ctrl+クリック``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "Continuously zoom the rendering scene"
+msgstr "レンダリングシーンを継続的にズームする"
+
+#: ../../pyvista/docs/plotting/plotting.rst:32
+msgid "``shift+s``"
+msgstr "``shift+s``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:32
+msgid "Save a screenhsot (only on ``BackgroundPlotter``)"
+msgstr "スクリーンショットを保存する( ``BackgroundPlotter`` のみ)"
+
+#: ../../pyvista/docs/plotting/plotting.rst:34
+msgid "``shift+c``"
+msgstr "``shift+c``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:34
+msgid "Enable interactive cell selection/picking"
+msgstr "インタラクティブなセル選択/ピックを有効にする"
+
+#: ../../pyvista/docs/plotting/plotting.rst:36
+msgid "``up``/``down``"
+msgstr "``上``/``下``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:36
+msgid "Zoom in and out"
+msgstr "拡大と縮小"
+
+#: ../../pyvista/docs/plotting/plotting.rst:38
+msgid "``+``/``-``"
+msgstr "``+``/``-``"
+
+#: ../../pyvista/docs/plotting/plotting.rst:38
+msgid "Increase/decrease the point size and line widths"
+msgstr "ポイントサイズと線幅の増減"
+
+#: ../../pyvista/docs/plotting/plotting.rst:43
+msgid "Plotting in a Jupyter Notebook"
+msgstr "Jupyterノートブックでのプロット"
+
+#: ../../pyvista/docs/plotting/plotting.rst:44
 msgid ""
-"``pyvista`` has the ability to display fully featured plots within a "
-"jupyterlab environment using ``ipyvtk-simple``.  This feature works by "
-"streaming the current render window to a canvas within jupyterlab and then "
-"passing any user actions from the canvas back to the VTK render window."
+"Static and interactive inline plots are possible using a Jupyter notebook.  "
+"The code snippet below will create a static screenshot of the rendering and "
+"display it in the Jupyter notebook:"
 msgstr ""
-"``pyvista`` には， ``ipyvtk-simple`` "
-"を使用して，jupyterlab環境内にフル機能のプロットを表示する機能があります．この機能は，現在のレンダリングウィンドウをjupyterlab内のキャンバスにストリーミングし，キャンバスからのユーザアクションをすべてVTKレンダリングウィンドウに戻すことで機能します．"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:12
-msgid ""
-"While this isn't an exciting feature when jupyterlab is being run locally, "
-"this has huge implications when plotting remotely as you can display any "
-"plot (except for those with multiple render windows) from jupyterlab."
+#: ../../pyvista/docs/plotting/plotting.rst:56
+msgid "It is possible to use the ``Plotter`` class as well."
 msgstr ""
-"jupyterlabがローカルで実行されている場合，これはエキサイティングな機能ではありませんが，jupyterlabから任意のプロット(複数のレンダーウィンドウがある場合を除く)を表示できるため，リモートでプロットする場合には大きな意味があります．"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:17
+#: ../../pyvista/docs/plotting/plotting.rst:64
 msgid ""
-"For example, both sections of code will display an interactive canvas within"
-" jupyterlab:"
-msgstr "たとえば，コードの両方のセクションは，jupyterlab内に対話型キャンバスを表示します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:33
-msgid "For convenience, you can enable ``use_ipyvtk`` by default with:"
-msgstr "便宜上， ``use_ipyvtk`` をデフォルトで有効にするには，次のコマンドを使用します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:42
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:19
-msgid "Installation"
-msgstr "インストール"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:43
-msgid ""
-"If you're using an Anaconda environment, installation is the quite "
-"straightforward:"
-msgstr "Anaconda環境を使用している場合，インストールは非常に簡単です．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:51
-msgid "Where environment.yml is:"
-msgstr "ここで， environment.yml は次のとおりです．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:64
-msgid "On Linux, you can setup your jupyterlab environment with:"
-msgstr "Linuxでは，次のようにしてjupyterlab環境をセットアップすることができます．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:75
-msgid "Other Considerations"
-msgstr "その他の考慮事項"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:77
-msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
-msgstr "GPUアクセラレーションを使用する価値があるかもしれません． :ref:`gpu_off_screen` を参照してください．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:79
-msgid ""
-"If you do not have GPU acceleration, be sure to start up a virtual "
-"framebuffer using ``Xvfb``.  You can either start it using bash with:"
+"Additionally, you can generate interactive plots by leveraging a jupyter "
+"plotting backend like ``panel`` or ``ipygany``.  You can even use it to "
+"create interactive documentations online."
 msgstr ""
-"GPUアクセラレーションを使用していない場合は，必ず ``Xvfb`` "
-"を使用して仮想フレームバッファを起動してください．bashを使用して起動するには，次のようにします．"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:94
-msgid ""
-"Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
-"Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
+#: ../../pyvista/docs/plotting/plotting.rst:74
+msgid "For more details, see the section on :ref:`jupyter_plotting`."
 msgstr ""
-"または，組み込みの ``pyvista.start_xvfb()`` を使用して起動することもできます． ``xvfb`` と ``libgl1"
-"-mesa-glx`` は必ず次のようにインストールしてください．"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:4
-msgid "Using ``itkwidgets``"
-msgstr "``itkwidgets`` の使用"
+#: ../../pyvista/docs/plotting/plotting.rst:78
+msgid "Background Plotting"
+msgstr "背景プロッティング"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:6
+#: ../../pyvista/docs/plotting/plotting.rst:80
 msgid ""
-"PyVista has an interface for visualizing plots in Jupyter.  The "
-"``pyvista.PlotterITK`` class allows you interactively visualize a mesh "
-"within a jupyter notebook.  For those who prefer plotting within jupyter, "
-"this is an great way of visualizing using ``VTK`` and ``pyvista``."
+"PyVista provides a plotter that enables users to create a rendering window "
+"in the background that remains interactive while the user performs their "
+"processing. This creates the ability to make a rendering scene and "
+"interactively add or remove datasets from the scene as well as has some "
+"useful menu functions for common scene manipulation or export tasks. To get "
+"started, try instantiating the :class:`pyvistaqt.BackgroundPlotter`:"
 msgstr ""
-"PyVistaには，Jupyterでプロットを視覚化するためのインターフェースがあります． ``pyvista.PlotterITK`` "
-"クラスを使用すると，jupyterノートブック内でメッシュをインタラクティブに視覚化できます．jupyter内でのプロットを好む人にとって，これは "
-"``VTK`` と ``pyvista`` を使用して視覚化する優れた方法です．"
+"PyVistaにはプロッタが用意されており，ユーザはバックグラウンドでレンダリングウィンドウを作成できます．このウィンドウは，ユーザが処理を実行している間もインタラクティブなままです．これにより，レンダリングシーンを作成し，シーンに対してインタラクティブにデータセットを追加または削除する機能や，一般的なシーン操作や書き出しタスクに便利なメニュー機能が作成されます．始めるために，"
+" :class:`pyvistaqt.BackgroundPlotter` のインスタンス化を試してみてください:"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:12
-msgid "Special thanks to `@thewtex`_ for the `itkwidgets`_ library."
-msgstr "`itkwidgets`_ ライブラリについては `@thewtex`_ に特に感謝します．"
+#: ../../pyvista/docs/plotting/plotting.rst:105
+msgid "Plot Time Series Data"
+msgstr "時系列データのプロット"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:20
+#: ../../pyvista/docs/plotting/plotting.rst:107
 msgid ""
-"To use `PlotterITK` you'll need to install ``itkwidgets>=0.25.2``. Follow "
-"the installation steps `here "
-"<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_."
-msgstr ""
-"`PlotterITK` を使用するには， ``itkwidgets>=0.25.2`` をインストールする必要があります． `ここ "
-"<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_ "
-"のインストール手順に従ってください．"
+"This example outlines how to plot data where the spatial reference and data "
+"values change through time:"
+msgstr "次の例では，時間の経過とともに空間参照とデータ値が変化するデータをプロットする方法の概要を示します:"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:23
-msgid ""
-"You can install everything with `pip` if you prefer not using conda, but be "
-"sure your juptyerlab is up-to-date.  If you encounter problems, uninstall "
-"and reinstall jupyterlab using pip."
-msgstr ""
-"もしあなたがcondaを使いたくないなら， `pip` "
-"で全てをインストールできますが，juptyerlabが最新であることを確認してください．問題が発生した場合は，pipを使用してjupyterlabをアンインストールして再インストールします．"
+#: ../../pyvista/docs/plotting/plotting.rst:146
+msgid "Convenience Functions"
+msgstr "便利な機能"
 
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:29
-msgid "Example Plotting with ITKwidgets"
-msgstr "ITKwidgetsを使用したプロットの例"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:30
-msgid ""
-"The following example shows how to create a simple plot that shows a simple "
-"sphere."
-msgstr "次の例は，単純な球を表示する単純なプロットを作成する方法を示しています．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:50
-msgid "ITKwidgets with pyvista"
-msgstr "pyvistaによるITKwidgets"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:53
-msgid ""
-"For convenience, figures can also be plotted using the ``plot_itk`` "
-"function:"
-msgstr "便宜上， ``plot_itk`` 関数を使用して図をプロットすることもできます．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:68
-#: ../../pyvista/docs/plotting/plotting.rst:70
-#: ../../pyvista/docs/plotting/plotting.rst:91
-#: ../../pyvista/docs/plotting/plotting.rst:112
-#: ../../pyvista/docs/plotting/widgets.rst:10
-msgid "Attributes"
-msgstr "アトリビュート"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-msgid ":obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-msgstr ":obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.PlotterITK.background_color:1
-msgid "Return the background color of the plotter."
-msgstr "プロッタの背景色を返します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-msgid ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-msgstr ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.PlotterITK.camera_position:1
-msgid "Return camera position of the plotter as a list."
-msgstr "プロッタのカメラ位置をリストとして返します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:73
-#: ../../pyvista/docs/plotting/plotting.rst:75
-#: ../../pyvista/docs/plotting/plotting.rst:96
-#: ../../pyvista/docs/plotting/plotting.rst:117
-#: ../../pyvista/docs/plotting/widgets.rst:15
-msgid "Methods"
-msgstr "メソッド"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
-"scalars\\, opacity\\, ...\\]\\)"
-msgstr ""
-":obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
-"scalars\\, opacity\\, ...\\]\\)"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:1
-msgid "Add a PyVista/VTK mesh or dataset."
-msgstr "PyVista/VTKメッシュまたはデータセットを追加します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\,"
-" point\\_size\\]\\)"
-msgstr ""
-":obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\,"
-" point\\_size\\]\\)"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:1
-msgid "Add points to plotter."
-msgstr "プロッタに点を追加します．"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\, "
-"show\\_bounds\\]\\)"
-msgstr ""
-":obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\, "
-"show\\_bounds\\]\\)"
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:1
-msgid "Show itkwidgets plotter in cell output."
-msgstr "セル出力にitkwidgetsプロッタを表示します．"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:1
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper:1
-msgid "Bases: :class:`object`"
-msgstr "基底: :class:`object`"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:1
-msgid "ITKwidgets plotter."
-msgstr "ITKウィジェットプロッタ．"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:3
-msgid ""
-"Used for plotting interactively within a jupyter notebook. Requires "
-"``itkwidgets>=0.25.2``.  For installation see:"
-msgstr ""
-"jupyterノートブック内でインタラクティブにプロットするために使用します． ``itkwidgets>=0.25.2`` "
-"が必要です．インストールについては以下を参照してください．"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:6
-msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-msgstr "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:9
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:17
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:15
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_legend:41
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_light:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:176
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.scalar_bars:4
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.screenshot:17
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.where_is:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:38
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-msgid "Examples"
-msgstr "例"
+#: pyvista.plotting.helpers.plot:1
+msgid "Plot a vtk or numpy object."
+msgstr "vtkまたはnumpyオブジェクトをプロットします．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:3
-msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
-msgstr "itkwidgetsがシーンにラップできるPyVista/VTKメッシュを追加します．"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:0
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:0
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -526,145 +420,155 @@ msgstr "itkwidgetsがシーンにラップできるPyVista/VTKメッシュを追
 msgid "Parameters"
 msgstr "パラメータ"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:6
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:7
-msgid ""
-"Any PyVista or VTK mesh is supported. Also, any dataset that "
-":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:3
+msgid "VTK object or ``numpy`` array to be plotted."
 msgstr ""
-"PyVistaまたはVTKメッシュはサポートされています．また， :func:`pyvista.wrap` "
-"が扱うことができる任意のデータセットは，XYZ点のNumPy配列を含みます．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:11
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:5
 msgid ""
-"Use to make the entire mesh have a single solid color. Either a string, RGB "
-"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
-"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
-"scalars are specified."
+"Plots off screen when ``True``.  Helpful for saving screenshots without a "
+"window popping up."
 msgstr ""
-"メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
-"``color='w'`` ， ``color=[1, 1, 1]`` ， ``color='#FFFFFF'`` "
-"．スカラーが指定されている場合，色は上書きされます．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:16
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:22
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:8
 msgid ""
-"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
-"is present on the mesh or an array equal to the number of cells or the "
-"number of points in the mesh.  Array should be sized as a single vector. If "
-"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
-"used."
+"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
+" ``False``."
 msgstr ""
-"メッシュの \"色\" "
-"に使用されるスカラー．メッシュ上に存在する配列の文字列名，またはメッシュ内のセル数またはポイント数と等しい配列を受け入れます．配列は単一のベクトルとしてサイズを設定する必要があります．"
-" ``color`` と ``scalars`` が両方 ``None`` の場合，アクティブスカラーが使用されます．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:23
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:11
 msgid ""
-"Opacity of the mesh. If a single float value is given, it will be the global"
-" opacity of the mesh and uniformly applied everywhere - should be between 0 "
-"and 1.  Default 1.0"
+"Saves screenshot to file when enabled.  See: "
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
+"takes screenshot and returns ``numpy`` array of image."
 msgstr ""
-"メッシュの不透明度．単一のfloat値を指定した場合，それはメッシュのグローバル不透明度になり，すべての場所に均一に適用されます．0から1の間でなければなりません．既定1.0"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:27
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:11
 msgid ""
-"Smooth mesh surface mesh by taking into account surface normals.  Surface "
-"will appear smoother while sharp edges will still look sharp.  Default "
-"False."
+"Saves screenshot to file when enabled.  See: "
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
-"サーフェス法線を考慮してメッシュサーフェスメッシュをスムースにします．サーフェスはより滑らかに表示されますが，鋭いエッジはシャープに表示されます．既定値はFalseです．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:3
-msgid "n x 3 numpy array of points or pyvista dataset with points."
-msgstr "n x 3個のポイントの数の多い配列またはポイントを含むpyvistaデータセット．"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:5
-msgid ""
-"Either a string, rgb list, or hex color string.  For example:  "
-"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:14
+msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
 msgstr ""
-"文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ``color='w'`` ``color=[1, 1, "
-"1]`` ``color='#FFFFFF'``"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:5
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:16
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter:14
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_lines:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_point_labels:28
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_point_labels:41
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:3
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:30
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_background:3
-msgid "Either a string, rgb list, or hex color string.  For example:"
-msgstr "文字列，RGBリスト，または16進カラー文字列．例:"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:7
-msgid ""
-"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+#: pyvista.plotting.plotting.Plotter.show:11
+msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
 msgstr ""
-"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:12
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:18
 msgid ""
-"Point size of any nodes in the dataset plotted. Also applicable when "
-"style='points'. Default ``3.0``"
+"Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
+"also accepted."
 msgstr ""
-"プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``3.0``"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:18
-msgid "Add 10 random points to the plotter"
-msgstr "プロッタに10個のランダム点を追加する"
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:3
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:21
 msgid ""
-"Plot with the user interface collapsed.  UI can be enabled when plotting.  "
-"Default ``False``."
-msgstr "ユーザインタフェースを集約してプロットします．プロット時にUIを有効にできます．既定値は ``False`` です．"
+"When ``True``, the resulting plot is placed inline a jupyter notebook.  "
+"Assumes a jupyter console is active."
+msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:6
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:24
+msgid "Shows a vtk axes widget.  Enabled by default."
+msgstr "vtk軸ウィジェットを表示します．既定では有効になっています．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:26
+msgid "Adds text at the bottom of the plot."
+msgstr "プロットの下部にテキストを追加します．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:28
+msgid "Use the ``add_volume`` method for volume rendering."
+msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用してください．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:30
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:30
 msgid ""
-"Rotate the camera around the scene.  Default ``False``. Appears to be "
-"computationally intensive."
-msgstr "シーンを中心にカメラを回転します．デフォルトの ``False`` ．計算量が多いように見えます．"
+"Deprecated.  Instead, set the backend either globally with "
+"``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
+"``backend='ipyvtk_simple'``."
+msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:9
-msgid "Show the bounding box.  Default False"
-msgstr "境界ボックスを表示します．デフォルトはFalse"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:34
+msgid ""
+"Jupyter notebook plotting backend to use.  One of the following:  * "
+"``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
+"static figure. * ``'ipygany'`` : Show a ``ipygany`` widget * ``'panel'`` : "
+"Show a ``panel`` widget.  This can also be set globally with "
+"``pyvista.set_jupyter_backend``"
+msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:11
-msgid "Size of the points displayed in the"
-msgstr "以下に表示される点のサイズ"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:34
+msgid "Jupyter notebook plotting backend to use.  One of the following:"
+msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:37
+msgid "``'none'`` : Do not display in the notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:38
+msgid "``'static'`` : Display a static figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:39
+msgid "``'ipygany'`` : Show a ``ipygany`` widget"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:40
+msgid "``'panel'`` : Show a ``panel`` widget."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:42
+msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+msgid "Keyword arguments for the Jupyter notebook plotting backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:47
+msgid "See help(Plotter.add_mesh) for additional options."
+msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
+
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -720,13 +624,61 @@ msgstr "以下に表示される点のサイズ"
 msgid "Returns"
 msgstr "戻り値"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:14
-msgid "**viewer** -- ``ITKwidgets`` viewer."
-msgstr "**viewer** --``ITKwidgets`` ビューアー．"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:50
+msgid ""
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
+"   [Window height x Window width x 3] for transparent_background=False   "
+"[Window height x Window width x 4] for transparent_background=True   "
+"Returned only when screenshot enabled"
+msgstr ""
+"* **cpos** (*list*) --カメラ位置，焦点，ビューアップのリスト．* **img** (*numpy.ndarray*) -- "
+"ピクセルRGBおよびアルファを含む配列．サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
+"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:50
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:49
+msgid ""
+"**cpos** (*list*) -- List of camera position, focal point, and view up."
+msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:51
+msgid ""
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
+"[Window height x Window width x 3] for transparent_background=False [Window "
+"height x Window width x 4] for transparent_background=True Returned only "
+"when screenshot enabled"
+msgstr ""
+"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列．サイズ:[窓の高さx窓の幅x 3] for "
+"transparent_background=False [窓の高さ×窓の幅×4] は "
+"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:1
+msgid "Plot arrows as vectors."
+msgstr "矢印をベクトルとしてプロットします．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:3
+msgid "Accepts a single 3d point or array of 3d points."
+msgstr "単一の3 Dポイントまたは3 Dポイントの配列を受け入れます．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:5
+msgid ""
+"Accepts a single 3d point or array of 3d vectors. Must contain the same "
+"number of items as cent."
+msgstr "単一の3 D点または3 Dベクトルの配列を受け入れます．centと同じ数のアイテムを含める必要があります．"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:8
+msgid "See help(pyvista.Plot)"
+msgstr "ヘルプを参照 (pyvista.Plot)"
+
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -774,306 +726,45 @@ msgstr "**viewer** --``ITKwidgets`` ビューアー．"
 msgid "Return type"
 msgstr "戻り値の型"
 
-#: ../../pyvista/docs/plotting/plotting.rst:6
-msgid ""
-"When plotting with the interactive rendering windows in VTK, several "
-"keyboard shortcuts are available:"
-msgstr "VTKでインタラクティブレンダリングウィンドウを使用してプロットする場合，次のキーボードショートカットを使用できます．"
-
-#: ../../pyvista/docs/plotting/plotting.rst:10
-msgid "Key"
-msgstr "キー"
-
-#: ../../pyvista/docs/plotting/plotting.rst:10
-msgid "Action"
-msgstr "アクション"
-
-#: ../../pyvista/docs/plotting/plotting.rst:12
-msgid "Linux/Windows"
-msgstr "Linux/Windows"
-
-#: ../../pyvista/docs/plotting/plotting.rst:12
-msgid "Mac"
-msgstr "Mac"
-
-#: ../../pyvista/docs/plotting/plotting.rst:14
-msgid "``q``"
-msgstr "``q``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:14
-msgid "Close the rendering window"
-msgstr "レンダリングウィンドウを閉じる"
-
-#: ../../pyvista/docs/plotting/plotting.rst:16
-msgid "``v``"
-msgstr "``v``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:16
-msgid "Isometric camera view"
-msgstr "アイソメトリックカメラビュー"
-
-#: ../../pyvista/docs/plotting/plotting.rst:18
-msgid "``w``"
-msgstr "``w``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:18
-msgid "Switch all datasets to a `wireframe` representation"
-msgstr "すべてのデータセットを `ワイヤフレーム` 表現に切り替える"
-
-#: ../../pyvista/docs/plotting/plotting.rst:20
-msgid "``r``"
-msgstr "``r``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:20
-msgid "Reset the camera to view all datasets"
-msgstr "カメラをリセットしてすべてのデータセットを表示する"
-
-#: ../../pyvista/docs/plotting/plotting.rst:22
-msgid "``s``"
-msgstr "``s``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:22
-msgid "Switch all datasets to a `surface` representation"
-msgstr "すべてのデータセットを `表面` 表現に切り替える"
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "``shift+click`` or ``middle-click``"
-msgstr "``shift+click`` か ``middle-click``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "``shift+click``"
-msgstr "``shift+click``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "Pan the rendering scene"
-msgstr "レンダリングシーンをパンする"
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "``left-click``"
-msgstr "``左クリック``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "``cmd+click``"
-msgstr "``cmd+クリック``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "Rotate the rendering scene in 3D"
-msgstr "レンダリングシーンを3 Dで回転する"
-
-#: ../../pyvista/docs/plotting/plotting.rst:28
-msgid "``ctrl+click``"
-msgstr "``Ctrl+クリック``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:28
-msgid "Rotate the rendering scene in 2D (view-plane)"
-msgstr "レンダリングシーンを2 Dで回転する (ビュープレーン)"
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "``mouse-wheel`` or ``right-click``"
-msgstr "``マウスホイール`` または ``右クリック``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "``ctl+click``"
-msgstr "``Ctrl+クリック``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "Continuously zoom the rendering scene"
-msgstr "レンダリングシーンを継続的にズームする"
-
-#: ../../pyvista/docs/plotting/plotting.rst:32
-msgid "``shift+s``"
-msgstr "``shift+s``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:32
-msgid "Save a screenhsot (only on ``BackgroundPlotter``)"
-msgstr "スクリーンショットを保存する( ``BackgroundPlotter`` のみ)"
-
-#: ../../pyvista/docs/plotting/plotting.rst:34
-msgid "``shift+c``"
-msgstr "``shift+c``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:34
-msgid "Enable interactive cell selection/picking"
-msgstr "インタラクティブなセル選択/ピックを有効にする"
-
-#: ../../pyvista/docs/plotting/plotting.rst:36
-msgid "``up``/``down``"
-msgstr "``上``/``下``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:36
-msgid "Zoom in and out"
-msgstr "拡大と縮小"
-
-#: ../../pyvista/docs/plotting/plotting.rst:38
-msgid "``+``/``-``"
-msgstr "``+``/``-``"
-
-#: ../../pyvista/docs/plotting/plotting.rst:38
-msgid "Increase/decrease the point size and line widths"
-msgstr "ポイントサイズと線幅の増減"
-
-#: ../../pyvista/docs/plotting/plotting.rst:45
-msgid "Convenience Functions"
-msgstr "便利な機能"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:1
-msgid "Plot a vtk or numpy object."
-msgstr "vtkまたはnumpyオブジェクトをプロットします．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:3
-msgid "VTK object or numpy array to be plotted."
-msgstr "プロットするVTKオブジェクトまたは数値配列．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:5
-msgid ""
-"Plots off screen when True.  Helpful for saving screenshots without a window"
-" popping up."
-msgstr "Trueの場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:8
-msgid ""
-"Opens window in full screen.  When enabled, ignores window_size. Default "
-"False."
-msgstr "ウィンドウを全画面で開きます．有効にすると，window_sizeは無視されます．既定値はFalseです．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:11
-msgid ""
-"Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled.  When True, "
-"takes screenshot and returns numpy array of image."
-msgstr ""
-"有効にすると，スクリーンショットをファイルに保存します．help(pyvistanterface.Plotter.screenshot) "
-"を参照してください．デフォルトは無効です．Trueの場合，スクリーンショットを取得し，画像の配列を返します．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:11
-msgid ""
-"Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled."
-msgstr ""
-"有効にすると，スクリーンショットをファイルに保存します．help(pyvistanterface.Plotter.screenshot) "
-"を参照してください．デフォルトは無効です．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:14
-msgid "When True, takes screenshot and returns numpy array of image."
-msgstr "Trueの場合，スクリーンショットを取得し画像の配列を返します．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:16
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:37
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:11
-msgid "Window size in pixels.  Defaults to [1024, 768]"
-msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは [1024, 768] です．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:18
-msgid ""
-"Shows mesh bounds when True.  Default False. Alias ``show_grid`` also "
-"accepted."
-msgstr "Trueの場合，メッシュ境界を表示します．既定値はFalseです．エイリアス ``show_grid`` も使用できます．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:21
-msgid ""
-"When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
-" jupyter console is active."
-msgstr "Trueの場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:24
-msgid "Shows a vtk axes widget.  Enabled by default."
-msgstr "vtk軸ウィジェットを表示します．既定では有効になっています．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:26
-msgid "Adds text at the bottom of the plot."
-msgstr "プロットの下部にテキストを追加します．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:28
-msgid "Use the ``add_volume`` method for volume rendering."
-msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用してください．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:30
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:29
-msgid ""
-"Use the ``ipyvtk-simple`` ``ViewInteractiveWidget`` to visualize the plot "
-"within a juyterlab notebook."
-msgstr ""
-"``ipyvtk-simple`` ``ViewInteractiveWidget`` を使用して，juyterlabノート内のプロットを視覚化します．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:33
-msgid "See help(Plotter.add_mesh) for additional options."
-msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:36
-msgid ""
-"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
-"   [Window height x Window width x 3] for transparent_background=False   "
-"[Window height x Window width x 4] for transparent_background=True   "
-"Returned only when screenshot enabled"
-msgstr ""
-"* **cpos** (*list*) --カメラ位置，焦点，ビューアップのリスト．* **img** (*numpy.ndarray*) -- "
-"ピクセルRGBおよびアルファを含む配列．サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
-"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:36
-msgid ""
-"**cpos** (*list*) -- List of camera position, focal point, and view up."
-msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:37
-msgid ""
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
-"[Window height x Window width x 3] for transparent_background=False [Window "
-"height x Window width x 4] for transparent_background=True Returned only "
-"when screenshot enabled"
-msgstr ""
-"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列．サイズ:[窓の高さx窓の幅x 3] for "
-"transparent_background=False [窓の高さ×窓の幅×4] は "
-"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:1
-msgid "Plot arrows as vectors."
-msgstr "矢印をベクトルとしてプロットします．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:3
-msgid "Accepts a single 3d point or array of 3d points."
-msgstr "単一の3 Dポイントまたは3 Dポイントの配列を受け入れます．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:5
-msgid ""
-"Accepts a single 3d point or array of 3d vectors. Must contain the same "
-"number of items as cent."
-msgstr "単一の3 D点または3 Dベクトルの配列を受け入れます．centと同じ数のアイテムを含める必要があります．"
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:8
-msgid "See help(pyvista.Plot)"
-msgstr "ヘルプを参照 (pyvista.Plot)"
-
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:12
 msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``"
 msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:15
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_legend:41
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:179
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.scalar_bars:4
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:17
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.where_is:10
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:55
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
+msgid "Examples"
+msgstr "例"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:16
@@ -1095,11 +786,11 @@ msgstr "プリントパラメータを定義済みのテーマに設定します
 msgid "Create a Box axes orientation widget with labels."
 msgstr "ラベル付きボックス軸方向ウィジェットを作成します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:61
+#: ../../pyvista/docs/plotting/plotting.rst:158
 msgid "Base Plotter"
 msgstr "ベースプロッタ"
 
-#: ../../pyvista/docs/plotting/plotting.rst:63
+#: ../../pyvista/docs/plotting/plotting.rst:160
 msgid ""
 "The base plotter class that all PyVista plotters inherit. Please note that "
 "the former ``BackgroundPlotter`` class has been moved to the `pyvistaqt`_ "
@@ -1108,86 +799,93 @@ msgstr ""
 "すべてのPyVistaプロッタが継承する基本プロッタクラスです．以前の ``BackgroundPlotter`` クラスは `pyvistaqt`_ "
 "パッケージに移動されました．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:167
+#: ../../pyvista/docs/plotting/plotting.rst:188
+#: ../../pyvista/docs/plotting/plotting.rst:207
+#: ../../pyvista/docs/plotting/widgets.rst:10
+msgid "Attributes"
+msgstr "アトリビュート"
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`background_color <pyvista.BasePlotter.background_color>`\\"
 msgstr ":obj:`background_color <pyvista.BasePlotter.background_color>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.background_color:1
 msgid "Return the background color of the first render window."
 msgstr "最初のレンダーウィンドウのバックグラウンドカラーを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`bounds <pyvista.BasePlotter.bounds>`\\"
 msgstr ":obj:`bounds <pyvista.BasePlotter.bounds>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.bounds:1
 msgid "Return the bounds of the active renderer."
 msgstr "アクティブなレンダラーの境界を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera <pyvista.BasePlotter.camera>`\\"
 msgstr ":obj:`camera <pyvista.BasePlotter.camera>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera:1
 msgid "Return the active camera of the active renderer."
 msgstr "アクティブなレンダラーのアクティブカメラを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera_position <pyvista.BasePlotter.camera_position>`\\"
 msgstr ":obj:`camera_position <pyvista.BasePlotter.camera_position>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera_position:1
 msgid "Return camera position of the active render window."
 msgstr "アクティブなレンダウィンドウのカメラ位置を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera_set <pyvista.BasePlotter.camera_set>`\\"
 msgstr ":obj:`camera_set <pyvista.BasePlotter.camera_set>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera_set:1
 msgid "Return if the camera of the active renderer has been set."
 msgstr "アクティブなレンダラーのカメラが設定されている場合に返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`center <pyvista.BasePlotter.center>`\\"
 msgstr ":obj:`center <pyvista.BasePlotter.center>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.center:1
 msgid "Return the center of the active renderer."
 msgstr "アクティブなレンダラーの中心を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`click_position <pyvista.BasePlotter.click_position>`\\"
 msgstr ":obj:`click_position <pyvista.BasePlotter.click_position>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`image <pyvista.BasePlotter.image>`\\"
 msgstr ":obj:`image <pyvista.BasePlotter.image>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.image:1
 msgid "Return an image array of current render window."
 msgstr "現在のレンダーウィンドウのイメージ配列を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`image_depth <pyvista.BasePlotter.image_depth>`\\"
 msgstr ":obj:`image_depth <pyvista.BasePlotter.image_depth>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1195,100 +893,107 @@ msgstr ":obj:`image_depth <pyvista.BasePlotter.image_depth>`\\"
 msgid "Return a depth image representing current render window."
 msgstr "現在のレンダーウィンドウを表すDepth画像を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`length <pyvista.BasePlotter.length>`\\"
 msgstr ":obj:`length <pyvista.BasePlotter.length>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.length:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.length:1
 msgid "Return the length of the diagonal of the bounding box of the scene."
 msgstr "シーンのバウンディングボックスの対角線の長さを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`mouse_position <pyvista.BasePlotter.mouse_position>`\\"
 msgstr ":obj:`mouse_position <pyvista.BasePlotter.mouse_position>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.BasePlotter.parallel_projection>`\\"
 msgstr ":obj:`parallel_projection <pyvista.BasePlotter.parallel_projection>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_projection:1
 msgid "Return parallel projection state of active render window."
 msgstr "アクティブなレンダーウィンドウの平行投影状態を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`parallel_scale <pyvista.BasePlotter.parallel_scale>`\\"
 msgstr ":obj:`parallel_scale <pyvista.BasePlotter.parallel_scale>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.parallel_scale:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_scale:1
 msgid "Return parallel scale of active render window."
 msgstr "アクティブなレンダーウィンドウの平行スケールを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`renderer <pyvista.BasePlotter.renderer>`\\"
 msgstr ":obj:`renderer <pyvista.BasePlotter.renderer>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.renderer:1
 msgid "Return the active renderer."
 msgstr "アクティブなレンダラーを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
 msgstr ":obj:`scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:1
 msgid "Scalar bars."
 msgstr "スカラバー．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`scale <pyvista.BasePlotter.scale>`\\"
 msgstr ":obj:`scale <pyvista.BasePlotter.scale>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scale:1
 msgid "Return the scaling of the active renderer."
 msgstr "アクティブなレンダラーのスケーリングを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`store_image <pyvista.BasePlotter.store_image>`\\"
 msgstr ":obj:`store_image <pyvista.BasePlotter.store_image>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.store_image:1
 msgid "Return if an image will be saved on close."
 msgstr "クローズ時に画像を保存する場合に返す．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`window_size <pyvista.BasePlotter.window_size>`\\"
 msgstr ":obj:`window_size <pyvista.BasePlotter.window_size>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.window_size:1
 msgid "Return the render window size."
 msgstr "レンダーウィンドウのサイズを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:172
+#: ../../pyvista/docs/plotting/plotting.rst:193
+#: ../../pyvista/docs/plotting/plotting.rst:212
+#: ../../pyvista/docs/plotting/widgets.rst:15
+msgid "Methods"
+msgstr "メソッド"
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_actor <pyvista.BasePlotter.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
@@ -1296,16 +1001,16 @@ msgstr ""
 ":obj:`add_actor <pyvista.BasePlotter.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:1
 msgid "Add an actor to render window."
 msgstr "レンダリングウィンドウにアクターを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_arrows <pyvista.BasePlotter.add_arrows>`\\ \\(cent\\, "
 "direction\\[\\, mag\\]\\)"
@@ -1313,13 +1018,13 @@ msgstr ""
 ":obj:`add_arrows <pyvista.BasePlotter.add_arrows>`\\ \\(cent\\, "
 "direction\\[\\, mag\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_arrows:1
 msgid "Add arrows to the plotter."
 msgstr "プロッタに矢印を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_axes <pyvista.BasePlotter.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
@@ -1327,16 +1032,16 @@ msgstr ""
 ":obj:`add_axes <pyvista.BasePlotter.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:1
 msgid "Add an interactive axes widget in the bottom left corner."
 msgstr "左下隅にインタラクティブ軸ウィジェットを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_axes_at_origin <pyvista.BasePlotter.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
@@ -1344,16 +1049,16 @@ msgstr ""
 ":obj:`add_axes_at_origin <pyvista.BasePlotter.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes_at_origin:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes_at_origin:1
 msgid "Add axes actor at origin."
 msgstr "原点に軸アクターを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_background_image <pyvista.BasePlotter.add_background_image>`\\ "
 "\\(image\\_path\\[\\, scale\\, ...\\]\\)"
@@ -1361,13 +1066,13 @@ msgstr ""
 ":obj:`add_background_image <pyvista.BasePlotter.add_background_image>`\\ "
 "\\(image\\_path\\[\\, scale\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_background_image:1
 msgid "Add a background image to a plot."
 msgstr "背景イメージをプロットに追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_bounding_box <pyvista.BasePlotter.add_bounding_box>`\\ "
 "\\(\\[color\\, corner\\_factor\\, ...\\]\\)"
@@ -1375,16 +1080,16 @@ msgstr ""
 ":obj:`add_bounding_box <pyvista.BasePlotter.add_bounding_box>`\\ "
 "\\(\\[color\\, corner\\_factor\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:1
 msgid "Add an unlabeled and unticked box at the boundaries of plot."
 msgstr "プロットの境界にラベルなしのチェックボックスを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_floor <pyvista.BasePlotter.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
@@ -1392,16 +1097,16 @@ msgstr ""
 ":obj:`add_floor <pyvista.BasePlotter.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:1
 msgid "Show a floor mesh."
 msgstr "床メッシュを表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_key_event <pyvista.BasePlotter.add_key_event>`\\ \\(key\\, "
 "callback\\)"
@@ -1409,13 +1114,13 @@ msgstr ""
 ":obj:`add_key_event <pyvista.BasePlotter.add_key_event>`\\ \\(key\\, "
 "callback\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_key_event:1
 msgid "Add a function to callback when the given key is pressed."
 msgstr "指定されたキーが押されたときにコールバックに関数を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_legend <pyvista.BasePlotter.add_legend>`\\ \\(\\[labels\\, "
 "bcolor\\, border\\, size\\, ...\\]\\)"
@@ -1423,13 +1128,13 @@ msgstr ""
 ":obj:`add_legend <pyvista.BasePlotter.add_legend>`\\ \\(\\[labels\\, "
 "bcolor\\, border\\, size\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:1
 msgid "Add a legend to render window."
 msgstr "凡例をレンダリングウィンドウに追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
 "only\\_active\\]\\)"
@@ -1437,13 +1142,13 @@ msgstr ""
 ":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
 "only\\_active\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:1
 msgid "Add a Light to the scene."
 msgstr "シーンにライトを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_lines <pyvista.BasePlotter.add_lines>`\\ \\(lines\\[\\, color\\, "
 "width\\, label\\, name\\]\\)"
@@ -1451,13 +1156,13 @@ msgstr ""
 ":obj:`add_lines <pyvista.BasePlotter.add_lines>`\\ \\(lines\\[\\, color\\, "
 "width\\, label\\, name\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:1
 msgid "Add lines to the plotting object."
 msgstr "プロッティングオブジェクトに線分を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_mesh <pyvista.BasePlotter.add_mesh>`\\ \\(mesh\\[\\, color\\, "
 "style\\, scalars\\, ...\\]\\)"
@@ -1465,14 +1170,14 @@ msgstr ""
 ":obj:`add_mesh <pyvista.BasePlotter.add_mesh>`\\ \\(mesh\\[\\, color\\, "
 "style\\, scalars\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:1
 msgid ""
 "Add any PyVista/VTK mesh or dataset that PyVista can wrap to the scene."
 msgstr "PyVistaがシーンにラップできるPyVista/VTKメッシュまたはデータセットを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_orientation_widget <pyvista.BasePlotter.add_orientation_widget>`\\"
 " \\(actor\\[\\, interactive\\, ...\\]\\)"
@@ -1480,16 +1185,16 @@ msgstr ""
 ":obj:`add_orientation_widget <pyvista.BasePlotter.add_orientation_widget>`\\"
 " \\(actor\\[\\, interactive\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_orientation_widget:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_orientation_widget:1
 msgid "Use the given actor in an orientation marker widget."
 msgstr "方向マーカーウィジェットで指定したアクターを使用します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_point_labels <pyvista.BasePlotter.add_point_labels>`\\ "
 "\\(points\\, labels\\[\\, italic\\, ...\\]\\)"
@@ -1497,14 +1202,14 @@ msgstr ""
 ":obj:`add_point_labels <pyvista.BasePlotter.add_point_labels>`\\ "
 "\\(points\\, labels\\[\\, italic\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:1
 msgid ""
 "Create a point actor with one label from list labels assigned to each point."
 msgstr "各ポイントに割り当てられたリストラベルから1つのラベルを持つポイントアクターを作成します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_point_scalar_labels "
 "<pyvista.BasePlotter.add_point_scalar_labels>`\\ \\(points\\, labels\\[\\, "
@@ -1514,23 +1219,23 @@ msgstr ""
 "<pyvista.BasePlotter.add_point_scalar_labels>`\\ \\(points\\, labels\\[\\, "
 "...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:1
 msgid "Label the points from a dataset with the values of their scalars."
 msgstr "データセットのポイントに，スカラー値のラベルを付けます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`add_points <pyvista.BasePlotter.add_points>`\\ \\(points\\, \\*\\*kwargs\\)"
 msgstr ":obj:`add_points <pyvista.BasePlotter.add_points>`\\ \\(points\\, \\*\\*kwargs\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:1
 msgid "Add points to a mesh."
 msgstr "メッシュにポイントを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ \\(\\[title\\, "
 "mapper\\, n\\_labels\\, ...\\]\\)"
@@ -1538,13 +1243,13 @@ msgstr ""
 ":obj:`add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ \\(\\[title\\, "
 "mapper\\, n\\_labels\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:1
 msgid "Create scalar bar using the ranges as set by the last input mesh."
 msgstr "最後の入力メッシュによって設定された範囲を使用してスカラバーを作成します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_text <pyvista.BasePlotter.add_text>`\\ \\(text\\[\\, position\\, "
 "font\\_size\\, color\\, ...\\]\\)"
@@ -1552,13 +1257,13 @@ msgstr ""
 ":obj:`add_text <pyvista.BasePlotter.add_text>`\\ \\(text\\[\\, position\\, "
 "font\\_size\\, color\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_text:1
 msgid "Add text to plot object in the top left corner by default."
 msgstr "既定では，印刷オブジェクトの左上コーナーに文字を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_volume <pyvista.BasePlotter.add_volume>`\\ \\(volume\\[\\, "
 "scalars\\, clim\\, ...\\]\\)"
@@ -1566,23 +1271,23 @@ msgstr ""
 ":obj:`add_volume <pyvista.BasePlotter.add_volume>`\\ \\(volume\\[\\, "
 "scalars\\, clim\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:1
 msgid "Add a volume, rendered using a smart mapper by default."
 msgstr "ボリュームを追加し，デフォルトではスマートマッパーを使用してレンダーします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`clear <pyvista.BasePlotter.clear>`\\ \\(\\)"
 msgstr ":obj:`clear <pyvista.BasePlotter.clear>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear:1
 msgid "Clear plot by removing all actors and properties."
 msgstr "すべてのアクターとプロパティを削除して，プロットをクリアします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`clear_events_for_key <pyvista.BasePlotter.clear_events_for_key>`\\ "
 "\\(key\\)"
@@ -1590,56 +1295,56 @@ msgstr ""
 ":obj:`clear_events_for_key <pyvista.BasePlotter.clear_events_for_key>`\\ "
 "\\(key\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear_events_for_key:1
 msgid "Remove the callbacks associated to the key."
 msgstr "キーに関連付けられているコールバックを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`close <pyvista.BasePlotter.close>`\\ \\(\\[render\\]\\)"
 msgstr ":obj:`close <pyvista.BasePlotter.close>`\\ \\(\\[render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.close:1
 msgid "Close the render window."
 msgstr "レンダーウィンドウを閉じます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`deep_clean <pyvista.BasePlotter.deep_clean>`\\ \\(\\)"
 msgstr ":obj:`deep_clean <pyvista.BasePlotter.deep_clean>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.deep_clean:1
 msgid "Clean the plotter of the memory."
 msgstr "メモリのプロッタをクリーニングします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`disable <pyvista.BasePlotter.disable>`\\ \\(\\)"
 msgstr ":obj:`disable <pyvista.BasePlotter.disable>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable:1
 msgid "Disable this renderer's camera from being interactive."
 msgstr "このレンダラのカメラをインタラクティブにできないようにします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`disable_3_lights <pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 msgstr ":obj:`disable_3_lights <pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.disable_3_lights:1
 msgid "Please use ``enable_lightkit``, this method has been depreciated."
 msgstr "``enable_lightkit`` を使用してください．このメソッドは非推奨です．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_anti_aliasing <pyvista.BasePlotter.disable_anti_aliasing>`\\ "
 "\\(\\)"
@@ -1647,16 +1352,16 @@ msgstr ""
 ":obj:`disable_anti_aliasing <pyvista.BasePlotter.disable_anti_aliasing>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_anti_aliasing:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_anti_aliasing:1
 msgid "Disable anti-aliasing FXAA."
 msgstr "アンチエイリアスFXAAを無効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_depth_peeling <pyvista.BasePlotter.disable_depth_peeling>`\\ "
 "\\(\\)"
@@ -1664,16 +1369,16 @@ msgstr ""
 ":obj:`disable_depth_peeling <pyvista.BasePlotter.disable_depth_peeling>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_depth_peeling:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_depth_peeling:1
 msgid "Disable depth peeling."
 msgstr "深度ピーリングを無効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.BasePlotter.disable_eye_dome_lighting>`\\ \\(\\)"
@@ -1681,16 +1386,16 @@ msgstr ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.BasePlotter.disable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_eye_dome_lighting:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_eye_dome_lighting:1
 msgid "Disable eye dome lighting (EDL)."
 msgstr "Eye-Dome Lighting (EDL) を無効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_parallel_projection "
 "<pyvista.BasePlotter.disable_parallel_projection>`\\ \\(\\)"
@@ -1698,29 +1403,29 @@ msgstr ""
 ":obj:`disable_parallel_projection "
 "<pyvista.BasePlotter.disable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_parallel_projection:1
 msgid "Reset the camera to use perspective projection."
 msgstr "パース投影を使用するようにカメラをリセットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
 msgstr ":obj:`enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable:1
 msgid "Enable this renderer's camera to be interactive."
 msgstr "このレンダラのカメラをインタラクティブにします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
@@ -1728,13 +1433,13 @@ msgstr ""
 ":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_3_lights:1
 msgid "Enable 3-lights illumination."
 msgstr "3ライトイルミネーションを有効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_anti_aliasing <pyvista.BasePlotter.enable_anti_aliasing>`\\ "
 "\\(\\)"
@@ -1742,16 +1447,16 @@ msgstr ""
 ":obj:`enable_anti_aliasing <pyvista.BasePlotter.enable_anti_aliasing>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_anti_aliasing:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_anti_aliasing:1
 msgid "Enable anti-aliasing FXAA."
 msgstr "アンチエイリアスFXAAを有効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_depth_peeling <pyvista.BasePlotter.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
@@ -1759,16 +1464,16 @@ msgstr ""
 ":obj:`enable_depth_peeling <pyvista.BasePlotter.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:1
 msgid "Enable depth peeling to improve rendering of translucent geometry."
 msgstr "デプスのピーリングを有効にすると，半透明のジオメトリのレンダリングが向上します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.BasePlotter.enable_eye_dome_lighting>`\\ \\(\\)"
@@ -1776,26 +1481,26 @@ msgstr ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.BasePlotter.enable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_eye_dome_lighting:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_eye_dome_lighting:1
 msgid "Enable eye dome lighting (EDL)."
 msgstr "Eye-Dome Lighting (EDL) を有効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable_image_style <pyvista.BasePlotter.enable_image_style>`\\ \\(\\)"
 msgstr ":obj:`enable_image_style <pyvista.BasePlotter.enable_image_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_image_style:1
 msgid "Set the interactive style to image."
 msgstr "インタラクティブスタイルをimageに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_joystick_style <pyvista.BasePlotter.enable_joystick_style>`\\ "
 "\\(\\)"
@@ -1803,13 +1508,13 @@ msgstr ""
 ":obj:`enable_joystick_style <pyvista.BasePlotter.enable_joystick_style>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_joystick_style:1
 msgid "Set the interactive style to joystick."
 msgstr "インタラクティブスタイルをジョイスティックに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
 "\\(\\[only\\_active\\]\\)"
@@ -1817,13 +1522,13 @@ msgstr ""
 ":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
 "\\(\\[only\\_active\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:1
 msgid "Enable the default light-kit lighting."
 msgstr "既定値のライトキットライティングを有効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_parallel_projection "
 "<pyvista.BasePlotter.enable_parallel_projection>`\\ \\(\\)"
@@ -1831,16 +1536,16 @@ msgstr ""
 ":obj:`enable_parallel_projection "
 "<pyvista.BasePlotter.enable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
 msgid "Enable parallel projection."
 msgstr "平行投影を有効にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_rubber_band_2d_style "
 "<pyvista.BasePlotter.enable_rubber_band_2d_style>`\\ \\(\\)"
@@ -1848,13 +1553,13 @@ msgstr ""
 ":obj:`enable_rubber_band_2d_style "
 "<pyvista.BasePlotter.enable_rubber_band_2d_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_rubber_band_2d_style:1
 msgid "Set the interactive style to rubber band 2d."
 msgstr "インタラクティブスタイルをラバーバンド2 dに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_rubber_band_style "
 "<pyvista.BasePlotter.enable_rubber_band_style>`\\ \\(\\)"
@@ -1862,13 +1567,13 @@ msgstr ""
 ":obj:`enable_rubber_band_style "
 "<pyvista.BasePlotter.enable_rubber_band_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_rubber_band_style:1
 msgid "Set the interactive style to rubber band picking."
 msgstr "インタラクティブスタイルをラバーバンド選択に設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_terrain_style <pyvista.BasePlotter.enable_terrain_style>`\\ "
 "\\(\\)"
@@ -1876,13 +1581,13 @@ msgstr ""
 ":obj:`enable_terrain_style <pyvista.BasePlotter.enable_terrain_style>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_terrain_style:1
 msgid "Set the interactive style to terrain."
 msgstr "対話型スタイルを地表に設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_trackball_actor_style "
 "<pyvista.BasePlotter.enable_trackball_actor_style>`\\ \\(\\)"
@@ -1890,13 +1595,13 @@ msgstr ""
 ":obj:`enable_trackball_actor_style "
 "<pyvista.BasePlotter.enable_trackball_actor_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_trackball_actor_style:1
 msgid "Set the interactive style to trackball actor."
 msgstr "インタラクティブスタイルをトラックボールアクターに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_trackball_style <pyvista.BasePlotter.enable_trackball_style>`\\"
 " \\(\\)"
@@ -1904,33 +1609,33 @@ msgstr ""
 ":obj:`enable_trackball_style <pyvista.BasePlotter.enable_trackball_style>`\\"
 " \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_trackball_style:1
 msgid "Set the interactive style to trackball camera."
 msgstr "インタラクティブスタイルをトラックボールカメラに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable_zoom_style <pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
 msgstr ":obj:`enable_zoom_style <pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_zoom_style:1
 msgid "Set the interactive style to rubber band zoom."
 msgstr "インタラクティブスタイルをラバーバンドズームに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`export_obj <pyvista.BasePlotter.export_obj>`\\ \\(filename\\)"
 msgstr ":obj:`export_obj <pyvista.BasePlotter.export_obj>`\\ \\(filename\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.export_obj:1
 msgid "Export scene to OBJ format."
 msgstr "シーンをOBJフォーマットにエクスポートします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`export_vtkjs <pyvista.BasePlotter.export_vtkjs>`\\ \\(filename\\[\\, "
 "compress\\_arrays\\]\\)"
@@ -1938,23 +1643,23 @@ msgstr ""
 ":obj:`export_vtkjs <pyvista.BasePlotter.export_vtkjs>`\\ \\(filename\\[\\, "
 "compress\\_arrays\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.export_vtkjs:1
 msgid "Export the current rendering scene as a VTKjs scene."
 msgstr "現在のレンダリングシーンをVTKjsシーンとして書き出します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`fly_to <pyvista.BasePlotter.fly_to>`\\ \\(point\\)"
 msgstr ":obj:`fly_to <pyvista.BasePlotter.fly_to>`\\ \\(point\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.fly_to:1
 msgid "Move the current camera's focal point to a position point."
 msgstr "カレントカメラの焦点をある位置に移動します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`generate_orbital_path <pyvista.BasePlotter.generate_orbital_path>`\\ "
 "\\(\\[factor\\, n\\_points\\, ...\\]\\)"
@@ -1962,13 +1667,13 @@ msgstr ""
 ":obj:`generate_orbital_path <pyvista.BasePlotter.generate_orbital_path>`\\ "
 "\\(\\[factor\\, n\\_points\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:1
 msgid "Generate an orbital path around the data scene."
 msgstr "データシーンの周囲に軌道パスを生成します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`get_default_cam_pos <pyvista.BasePlotter.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
@@ -1976,16 +1681,16 @@ msgstr ""
 ":obj:`get_default_cam_pos <pyvista.BasePlotter.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_default_cam_pos:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_default_cam_pos:1
 msgid "Return the default focal points and viewup."
 msgstr "デフォルトの焦点とビューアップを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`get_image_depth <pyvista.BasePlotter.get_image_depth>`\\ "
 "\\(\\[fill\\_value\\, ...\\]\\)"
@@ -1993,30 +1698,30 @@ msgstr ""
 ":obj:`get_image_depth <pyvista.BasePlotter.get_image_depth>`\\ "
 "\\(\\[fill\\_value\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`hide_axes <pyvista.BasePlotter.hide_axes>`\\ \\(\\)"
 msgstr ":obj:`hide_axes <pyvista.BasePlotter.hide_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.hide_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.hide_axes:1
 msgid "Hide the axes orientation widget."
 msgstr "軸方向ウィジェットを非表示にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`hide_axes_all <pyvista.BasePlotter.hide_axes_all>`\\ \\(\\)"
 msgstr ":obj:`hide_axes_all <pyvista.BasePlotter.hide_axes_all>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.hide_axes_all:1
 msgid "Hide the axes orientation widget in all renderers."
 msgstr "全てのレンダラーで軸方向ウィジェットを非表示にします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`increment_point_size_and_line_width "
 "<pyvista.BasePlotter.increment_point_size_and_line_width>`\\ \\(increment\\)"
@@ -2024,34 +1729,34 @@ msgstr ""
 ":obj:`increment_point_size_and_line_width "
 "<pyvista.BasePlotter.increment_point_size_and_line_width>`\\ \\(increment\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.increment_point_size_and_line_width:1
 msgid "Increment point size and line width of all actors."
 msgstr "すべてのアクターのポイントサイズと線幅の増分．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`index_to_loc <pyvista.BasePlotter.index_to_loc>`\\ \\(index\\)"
 msgstr ":obj:`index_to_loc <pyvista.BasePlotter.index_to_loc>`\\ \\(index\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.index_to_loc:1
 msgid "Convert a 1D index location to the 2D location on the plotting grid."
 msgstr "1 Dインデックス位置をプロットグリッド上の2 D位置に変換します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`isometric_view <pyvista.BasePlotter.isometric_view>`\\ \\(\\)"
 msgstr ":obj:`isometric_view <pyvista.BasePlotter.isometric_view>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.isometric_view:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_isometric:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.isometric_view:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -2059,7 +1764,7 @@ msgstr ":obj:`isometric_view <pyvista.BasePlotter.isometric_view>`\\ \\(\\)"
 msgid "Reset the camera to a default isometric view."
 msgstr "カメラを既定のアイソメビューにリセットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`isometric_view_interactive "
 "<pyvista.BasePlotter.isometric_view_interactive>`\\ \\(\\)"
@@ -2067,13 +1772,13 @@ msgstr ""
 ":obj:`isometric_view_interactive "
 "<pyvista.BasePlotter.isometric_view_interactive>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.isometric_view_interactive:1
 msgid "Set the current interactive render window to isometric view."
 msgstr "現在のインタラクティブレンダリングウィンドウをアイソメビューに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`key_press_event <pyvista.BasePlotter.key_press_event>`\\ \\(obj\\, "
 "event\\)"
@@ -2081,13 +1786,13 @@ msgstr ""
 ":obj:`key_press_event <pyvista.BasePlotter.key_press_event>`\\ \\(obj\\, "
 "event\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.key_press_event:1
 msgid "Listen for key press event."
 msgstr "キー押下イベントを聞きます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`left_button_down <pyvista.BasePlotter.left_button_down>`\\ \\(obj\\, "
 "event\\_type\\)"
@@ -2095,51 +1800,51 @@ msgstr ""
 ":obj:`left_button_down <pyvista.BasePlotter.left_button_down>`\\ \\(obj\\, "
 "event\\_type\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.left_button_down:1
 msgid "Register the event for a left button down click."
 msgstr "左ボタンダウンクリックのイベントを登録します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`link_views <pyvista.BasePlotter.link_views>`\\ \\(\\[views\\]\\)"
 msgstr ":obj:`link_views <pyvista.BasePlotter.link_views>`\\ \\(\\[views\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.link_views:1
 msgid "Link the views' cameras."
 msgstr "ビューのカメラをリンクします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`loc_to_group <pyvista.BasePlotter.loc_to_group>`\\ \\(loc\\)"
 msgstr ":obj:`loc_to_group <pyvista.BasePlotter.loc_to_group>`\\ \\(loc\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid "Return group id of the given location index."
 msgstr "与えられた位置インデックスのグループIDを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`loc_to_index <pyvista.BasePlotter.loc_to_index>`\\ \\(loc\\)"
 msgstr ":obj:`loc_to_index <pyvista.BasePlotter.loc_to_index>`\\ \\(loc\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.loc_to_index:1
 msgid "Return index of the render window given a location index."
 msgstr "位置インデックスを指定して，レンダリングウィンドウのインデックスを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`open_gif <pyvista.BasePlotter.open_gif>`\\ \\(filename\\)"
 msgstr ":obj:`open_gif <pyvista.BasePlotter.open_gif>`\\ \\(filename\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_gif:1
 msgid "Open a gif file."
 msgstr "gifファイルを開きます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`open_movie <pyvista.BasePlotter.open_movie>`\\ \\(filename\\[\\, "
 "framerate\\]\\)"
@@ -2147,13 +1852,13 @@ msgstr ""
 ":obj:`open_movie <pyvista.BasePlotter.open_movie>`\\ \\(filename\\[\\, "
 "framerate\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_movie:1
 msgid "Establish a connection to the ffmpeg writer."
 msgstr "ffmpegライタへの接続を確立します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`orbit_on_path <pyvista.BasePlotter.orbit_on_path>`\\ \\(\\[path\\, "
 "focus\\, step\\, viewup\\, ...\\]\\)"
@@ -2161,13 +1866,13 @@ msgstr ""
 ":obj:`orbit_on_path <pyvista.BasePlotter.orbit_on_path>`\\ \\(\\[path\\, "
 "focus\\, step\\, viewup\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.orbit_on_path:1
 msgid "Orbit on the given path focusing on the focus point."
 msgstr "フォーカスポイントに焦点を合わせて，指定されたパス上をオービットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_actor <pyvista.BasePlotter.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
@@ -2175,16 +1880,16 @@ msgstr ""
 ":obj:`remove_actor <pyvista.BasePlotter.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
 msgid "Remove an actor from the Renderer."
 msgstr "レンダリングからアクターを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
@@ -2192,13 +1897,13 @@ msgstr ""
 ":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_all_lights:1
 msgid "Remove all lights from the scene."
 msgstr "シーンからすべてのライトを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_background_image "
 "<pyvista.BasePlotter.remove_background_image>`\\ \\(\\)"
@@ -2206,13 +1911,13 @@ msgstr ""
 ":obj:`remove_background_image "
 "<pyvista.BasePlotter.remove_background_image>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_background_image:1
 msgid "Remove the background image from the current subplot."
 msgstr "現在のサブプロットから背景イメージを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_bounding_box <pyvista.BasePlotter.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
@@ -2220,29 +1925,29 @@ msgstr ""
 ":obj:`remove_bounding_box <pyvista.BasePlotter.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounding_box:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounding_box:1
 msgid "Remove bounding box."
 msgstr "バウンディングボックスを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`remove_bounds_axes <pyvista.BasePlotter.remove_bounds_axes>`\\ \\(\\)"
 msgstr ":obj:`remove_bounds_axes <pyvista.BasePlotter.remove_bounds_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounds_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounds_axes:1
 msgid "Remove bounds axes."
 msgstr "境界軸を削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_floors <pyvista.BasePlotter.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
@@ -2250,26 +1955,26 @@ msgstr ""
 ":obj:`remove_floors <pyvista.BasePlotter.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_floors:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_floors:1
 msgid "Remove all floor actors."
 msgstr "すべてのフロアアクターを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`remove_legend <pyvista.BasePlotter.remove_legend>`\\ \\(\\)"
 msgstr ":obj:`remove_legend <pyvista.BasePlotter.remove_legend>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_legend:1
 msgid "Remove the legend actor."
 msgstr "凡例アクターを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_scalar_bar <pyvista.BasePlotter.remove_scalar_bar>`\\ "
 "\\(\\[title\\, render\\]\\)"
@@ -2277,23 +1982,23 @@ msgstr ""
 ":obj:`remove_scalar_bar <pyvista.BasePlotter.remove_scalar_bar>`\\ "
 "\\(\\[title\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:1
 msgid "Remove a scalar bar."
 msgstr "スカラーバーを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`render <pyvista.BasePlotter.render>`\\ \\(\\)"
 msgstr ":obj:`render <pyvista.BasePlotter.render>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:1
 msgid "Render the main window."
 msgstr "メインウィンドウをレンダリングします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`reset_camera <pyvista.BasePlotter.reset_camera>`\\ \\(\\[render\\, "
 "bounds\\]\\)"
@@ -2301,16 +2006,16 @@ msgstr ""
 ":obj:`reset_camera <pyvista.BasePlotter.reset_camera>`\\ \\(\\[render\\, "
 "bounds\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera:1
 msgid "Reset the camera of the active render window."
 msgstr "アクティブなレンダウィンドウのカメラをリセットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`reset_camera_clipping_range "
 "<pyvista.BasePlotter.reset_camera_clipping_range>`\\ \\(\\)"
@@ -2318,23 +2023,23 @@ msgstr ""
 ":obj:`reset_camera_clipping_range "
 "<pyvista.BasePlotter.reset_camera_clipping_range>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.reset_camera_clipping_range:1
 msgid "Reset camera clipping planes."
 msgstr "カメラのクリッピングプレーンをリセットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`reset_key_events <pyvista.BasePlotter.reset_key_events>`\\ \\(\\)"
 msgstr ":obj:`reset_key_events <pyvista.BasePlotter.reset_key_events>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.reset_key_events:1
 msgid "Reset all of the key press events to their defaults."
 msgstr "すべてのキー押下イベントをデフォルトにリセットします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`save_graphic <pyvista.BasePlotter.save_graphic>`\\ \\(filename\\[\\, "
 "title\\, raster\\, painter\\]\\)"
@@ -2342,23 +2047,23 @@ msgstr ""
 ":obj:`save_graphic <pyvista.BasePlotter.save_graphic>`\\ \\(filename\\[\\, "
 "title\\, raster\\, painter\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.save_graphic:1
 msgid "Save a screenshot of the rendering window as a graphic file."
 msgstr "レンダリングウィンドウのスクリーンショットをグラフィックファイルとして保存します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`screenshot <pyvista.BasePlotter.screenshot>`\\ \\(\\[filename\\, ...\\]\\)"
 msgstr ":obj:`screenshot <pyvista.BasePlotter.screenshot>`\\ \\(\\[filename\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:1
 msgid "Take screenshot at current camera position."
 msgstr "現在のカメラ位置でスクリーンショットを撮ります．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_background <pyvista.BasePlotter.set_background>`\\ \\(color\\[\\, "
 "top\\, all\\_renderers\\]\\)"
@@ -2366,29 +2071,29 @@ msgstr ""
 ":obj:`set_background <pyvista.BasePlotter.set_background>`\\ \\(color\\[\\, "
 "top\\, all\\_renderers\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.set_background:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:1
 msgid "Set the background color."
 msgstr "背景色を設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.BasePlotter.set_focus>`\\ \\(point\\)"
 msgstr ":obj:`set_focus <pyvista.BasePlotter.set_focus>`\\ \\(point\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_focus:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_focus:1
 msgid "Set focus to a point."
 msgstr "ポイントにフォーカスを設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_position <pyvista.BasePlotter.set_position>`\\ \\(point\\[\\, "
 "reset\\]\\)"
@@ -2396,16 +2101,16 @@ msgstr ""
 ":obj:`set_position <pyvista.BasePlotter.set_position>`\\ \\(point\\[\\, "
 "reset\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:1
 msgid "Set camera position to a point."
 msgstr "カメラ位置をポイントに設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_scale <pyvista.BasePlotter.set_scale>`\\ \\(\\[xscale\\, yscale\\,"
 " zscale\\, reset\\_camera\\]\\)"
@@ -2413,52 +2118,52 @@ msgstr ""
 ":obj:`set_scale <pyvista.BasePlotter.set_scale>`\\ \\(\\[xscale\\, yscale\\,"
 " zscale\\, reset\\_camera\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:1
 msgid "Scale all the datasets in the scene."
 msgstr "シーン内のすべてのデータセットをスケールします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`set_viewup <pyvista.BasePlotter.set_viewup>`\\ \\(vector\\)"
 msgstr ":obj:`set_viewup <pyvista.BasePlotter.set_viewup>`\\ \\(vector\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:1
 msgid "Set camera viewup vector."
 msgstr "カメラのビューアップベクトルを設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_axes <pyvista.BasePlotter.show_axes>`\\ \\(\\)"
 msgstr ":obj:`show_axes <pyvista.BasePlotter.show_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_axes:1
 msgid "Show the axes orientation widget."
 msgstr "軸方向ウィジェットを表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_axes_all <pyvista.BasePlotter.show_axes_all>`\\ \\(\\)"
 msgstr ":obj:`show_axes_all <pyvista.BasePlotter.show_axes_all>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.show_axes_all:1
 msgid "Show the axes orientation widget in all renderers."
 msgstr "すべてのレンダラで軸方向ウィジェットを表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`show_bounds <pyvista.BasePlotter.show_bounds>`\\ \\(\\[mesh\\, "
 "bounds\\, show\\_xaxis\\, ...\\]\\)"
@@ -2466,29 +2171,29 @@ msgstr ""
 ":obj:`show_bounds <pyvista.BasePlotter.show_bounds>`\\ \\(\\[mesh\\, "
 "bounds\\, show\\_xaxis\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:1
 msgid "Add bounds axes."
 msgstr "境界軸を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_grid <pyvista.BasePlotter.show_grid>`\\ \\(\\*\\*kwargs\\)"
 msgstr ":obj:`show_grid <pyvista.BasePlotter.show_grid>`\\ \\(\\*\\*kwargs\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:1
 msgid "Show gridlines and axes labels."
 msgstr "目盛線と軸ラベルを表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`store_click_position <pyvista.BasePlotter.store_click_position>`\\ "
 "\\(\\*args\\)"
@@ -2496,13 +2201,13 @@ msgstr ""
 ":obj:`store_click_position <pyvista.BasePlotter.store_click_position>`\\ "
 "\\(\\*args\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.store_click_position:1
 msgid "Store click position in viewport coordinates."
 msgstr "クリック位置をビューポート座標に保存します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`store_mouse_position <pyvista.BasePlotter.store_mouse_position>`\\ "
 "\\(\\*args\\)"
@@ -2510,13 +2215,13 @@ msgstr ""
 ":obj:`store_mouse_position <pyvista.BasePlotter.store_mouse_position>`\\ "
 "\\(\\*args\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.store_mouse_position:1
 msgid "Store mouse position."
 msgstr "マウスの位置を保存します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`subplot <pyvista.BasePlotter.subplot>`\\ \\(index\\_row\\[\\, "
 "index\\_column\\]\\)"
@@ -2524,13 +2229,13 @@ msgstr ""
 ":obj:`subplot <pyvista.BasePlotter.subplot>`\\ \\(index\\_row\\[\\, "
 "index\\_column\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.subplot:1
 msgid "Set the active subplot."
 msgstr "アクティブなサブプロットを設定します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`track_click_position <pyvista.BasePlotter.track_click_position>`\\ "
 "\\(\\[callback\\, side\\, viewport\\]\\)"
@@ -2538,13 +2243,13 @@ msgstr ""
 ":obj:`track_click_position <pyvista.BasePlotter.track_click_position>`\\ "
 "\\(\\[callback\\, side\\, viewport\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.track_click_position:1
 msgid "Keep track of the click position."
 msgstr "クリック位置を記録します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`track_mouse_position <pyvista.BasePlotter.track_mouse_position>`\\ "
 "\\(\\)"
@@ -2552,23 +2257,23 @@ msgstr ""
 ":obj:`track_mouse_position <pyvista.BasePlotter.track_mouse_position>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.track_mouse_position:1
 msgid "Keep track of the mouse position."
 msgstr "マウスの位置を追跡します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`unlink_views <pyvista.BasePlotter.unlink_views>`\\ \\(\\[views\\]\\)"
 msgstr ":obj:`unlink_views <pyvista.BasePlotter.unlink_views>`\\ \\(\\[views\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.unlink_views:1
 msgid "Unlink the views' cameras."
 msgstr "ビューのカメラをリンクを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`untrack_click_position <pyvista.BasePlotter.untrack_click_position>`\\"
 " \\(\\)"
@@ -2576,13 +2281,13 @@ msgstr ""
 ":obj:`untrack_click_position <pyvista.BasePlotter.untrack_click_position>`\\"
 " \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.untrack_click_position:1
 msgid "Stop tracking the click position."
 msgstr "クリック位置のトラッキングを停止します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`untrack_mouse_position <pyvista.BasePlotter.untrack_mouse_position>`\\"
 " \\(\\)"
@@ -2590,36 +2295,36 @@ msgstr ""
 ":obj:`untrack_mouse_position <pyvista.BasePlotter.untrack_mouse_position>`\\"
 " \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.untrack_mouse_position:1
 msgid "Stop tracking the mouse position."
 msgstr "マウス位置のトラッキングを停止します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update <pyvista.BasePlotter.update>`\\ \\(\\[stime\\, force\\_redraw\\]\\)"
 msgstr ":obj:`update <pyvista.BasePlotter.update>`\\ \\(\\[stime\\, force\\_redraw\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update:1
 msgid "Update window, redraw, process messages query."
 msgstr "ウィンドウを更新し，再描画し，メッセージクエリを処理します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update_bounds_axes <pyvista.BasePlotter.update_bounds_axes>`\\ \\(\\)"
 msgstr ":obj:`update_bounds_axes <pyvista.BasePlotter.update_bounds_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.update_bounds_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.update_bounds_axes:1
 msgid "Update the bounds axes of the render window."
 msgstr "レンダーウィンドウの境界軸を更新します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_coordinates <pyvista.BasePlotter.update_coordinates>`\\ "
 "\\(points\\[\\, mesh\\, render\\]\\)"
@@ -2627,13 +2332,13 @@ msgstr ""
 ":obj:`update_coordinates <pyvista.BasePlotter.update_coordinates>`\\ "
 "\\(points\\[\\, mesh\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_coordinates:1
 msgid "Update the points of an object in the plotter."
 msgstr "プロッタのオブジェクトの点を更新します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_scalar_bar_range "
 "<pyvista.BasePlotter.update_scalar_bar_range>`\\ \\(clim\\[\\, name\\]\\)"
@@ -2641,13 +2346,13 @@ msgstr ""
 ":obj:`update_scalar_bar_range "
 "<pyvista.BasePlotter.update_scalar_bar_range>`\\ \\(clim\\[\\, name\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_scalar_bar_range:1
 msgid "Update the value range of the active or named scalar bar."
 msgstr "アクティブなスカラーバーまたは名前付きスカラーバーの値の範囲を更新します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_scalars <pyvista.BasePlotter.update_scalars>`\\ "
 "\\(scalars\\[\\, mesh\\, render\\]\\)"
@@ -2655,23 +2360,23 @@ msgstr ""
 ":obj:`update_scalars <pyvista.BasePlotter.update_scalars>`\\ "
 "\\(scalars\\[\\, mesh\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_scalars:1
 msgid "Update scalars of an object in the plotter."
 msgstr "プロッタのオブジェクトのスカラー値を更新します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update_style <pyvista.BasePlotter.update_style>`\\ \\(\\)"
 msgstr ":obj:`update_style <pyvista.BasePlotter.update_style>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_style:1
 msgid "Update the camera interactor style."
 msgstr "カメラのインタラクタスタイルを更新します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`view_isometric <pyvista.BasePlotter.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
@@ -2679,7 +2384,7 @@ msgstr ""
 ":obj:`view_isometric <pyvista.BasePlotter.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`view_vector <pyvista.BasePlotter.view_vector>`\\ \\(vector\\[\\, "
 "viewup\\]\\)"
@@ -2687,108 +2392,108 @@ msgstr ""
 ":obj:`view_vector <pyvista.BasePlotter.view_vector>`\\ \\(vector\\[\\, "
 "viewup\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_vector:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_vector:1
 msgid "Point the camera in the direction of the given vector."
 msgstr "指定したベクトルの方向にカメラを向けます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_xy <pyvista.BasePlotter.view_xy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_xy <pyvista.BasePlotter.view_xy>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xy:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xy:1
 msgid "View the XY plane."
 msgstr "XY平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_xz <pyvista.BasePlotter.view_xz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_xz <pyvista.BasePlotter.view_xz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xz:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xz:1
 msgid "View the XZ plane."
 msgstr "XZ平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_yx <pyvista.BasePlotter.view_yx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_yx <pyvista.BasePlotter.view_yx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yx:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yx:1
 msgid "View the YX plane."
 msgstr "YX平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_yz <pyvista.BasePlotter.view_yz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_yz <pyvista.BasePlotter.view_yz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yz:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yz:1
 msgid "View the YZ plane."
 msgstr "YZ平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_zx <pyvista.BasePlotter.view_zx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_zx <pyvista.BasePlotter.view_zx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zx:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zx:1
 msgid "View the ZX plane."
 msgstr "ZX平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_zy <pyvista.BasePlotter.view_zy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_zy <pyvista.BasePlotter.view_zy>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zy:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zy:1
 msgid "View the ZY plane."
 msgstr "ZY平面を表示します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
 msgstr ":obj:`where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:1
 msgid "Return the subplot coordinates of a given actor."
 msgstr "指定されたアクターのサブプロット座標を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
 msgstr ":obj:`write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.write_frame:1
 msgid "Write a single frame to the movie file."
@@ -2865,6 +2570,25 @@ msgid ""
 msgstr ""
 "文字列，RGBリスト，または16進カラー文字列．例 * ``color='white'`` * ``color='w'`` * ``color=[1, "
 "1, 1]`` * ``color='#FFFFFF'``"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_lines:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_point_labels:28
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_point_labels:41
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.set_background:3
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:30
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_background:3
+msgid "Either a string, rgb list, or hex color string.  For example:"
+msgstr "文字列，RGBリスト，または16進カラー文字列．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:16
@@ -3828,6 +3552,27 @@ msgstr ""
 ":func:`pyvista.BasePlotter.add_volume` を参照．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:7
+msgid ""
+"Any PyVista or VTK mesh is supported. Also, any dataset that "
+":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+msgstr ""
+"PyVistaまたはVTKメッシュはサポートされています．また， :func:`pyvista.wrap` "
+"が扱うことができる任意のデータセットは，XYZ点のNumPy配列を含みます．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:11
+msgid ""
+"Use to make the entire mesh have a single solid color. Either a string, RGB "
+"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
+"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
+"scalars are specified."
+msgstr ""
+"メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
+"``color='w'`` ， ``color=[1, 1, 1]`` ， ``color='#FFFFFF'`` "
+"．スカラーが指定されている場合，色は上書きされます．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:17
 msgid ""
 "Visualization style of the mesh.  One of the following: ``style='surface'``,"
@@ -3837,6 +3582,19 @@ msgstr ""
 "メッシュの表示スタイル． ``style='surface'`` ，``style='wireframe'`` ， ``style='points'``"
 " のいずれかです．デフォルトは ``'surface'`` です． ``'wireframe'`` "
 "は外部ジオメトリのワイヤフレームのみを表示することに注意してください．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:22
+msgid ""
+"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
+"is present on the mesh or an array equal to the number of cells or the "
+"number of points in the mesh.  Array should be sized as a single vector. If "
+"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
+"used."
+msgstr ""
+"メッシュの \"色\" "
+"に使用されるスカラー．メッシュ上に存在する配列の文字列名，またはメッシュ内のセル数またはポイント数と等しい配列を受け入れます．配列は単一のベクトルとしてサイズを設定する必要があります．"
+" ``color`` と ``scalars`` が両方 ``None`` の場合，アクティブスカラーが使用されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:29
@@ -4208,12 +3966,19 @@ msgid "Force a render when True.  Default ``True``."
 msgstr "Trueの場合，強制的にレンダリングします．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:172
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:171
+msgid ""
+"Set component of vector valued scalars to plot.  Must be nonnegative, if "
+"supplied. If ``None``, the magnitude of the vector is plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:175
 msgid "**actor** -- VTK actor of the mesh."
 msgstr "**actor** -- メッシュのVTKアクター．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:177
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:180
 msgid ""
 "Add a sphere to the plotter and show it with a custom scalar bar title."
 msgstr "プロッタに球を追加し，カスタムのスカラーバータイトルで表示します．"
@@ -6181,7 +5946,7 @@ msgstr "image_depthの値は，右手系に従う場合は負です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.get_pick_position:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_pick_position:1
 msgid "Get the pick position/area as x0, y0, x1, y1."
@@ -6808,19 +6573,19 @@ msgstr "アクターの名前．"
 msgid "**places** -- A list with the subplot coordinates of the actor."
 msgstr "**places** -- アクターのサブプロット座標のリスト．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:88
+#: ../../pyvista/docs/plotting/plotting.rst:185
 msgid "Plotter"
 msgstr "プロッタ"
 
-#: ../../pyvista/docs/plotting/plotting.rst:94:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:191:<autosummary>:1
 msgid ":obj:`last_update_time <pyvista.Plotter.last_update_time>`\\"
 msgstr ":obj:`last_update_time <pyvista.Plotter.last_update_time>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:94:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:191:<autosummary>:1
 msgid ":obj:`right_timer_id <pyvista.Plotter.right_timer_id>`\\"
 msgstr ":obj:`right_timer_id <pyvista.Plotter.right_timer_id>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 msgid ""
 ":obj:`add_title <pyvista.Plotter.add_title>`\\ \\(title\\[\\, font\\_size\\,"
 " color\\, font\\, ...\\]\\)"
@@ -6828,13 +6593,13 @@ msgstr ""
 ":obj:`add_title <pyvista.Plotter.add_title>`\\ \\(title\\[\\, font\\_size\\,"
 " color\\, font\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:1
 msgid "Add text to the top center of the plot."
 msgstr "プロットの上部中央にテキストを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 msgid ""
 ":obj:`show <pyvista.Plotter.show>`\\ \\(\\[title\\, window\\_size\\, "
 "interactive\\, ...\\]\\)"
@@ -6842,7 +6607,7 @@ msgstr ""
 ":obj:`show <pyvista.Plotter.show>`\\ \\(\\[title\\, window\\_size\\, "
 "interactive\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:1
 msgid "Display the plotting window."
@@ -6903,6 +6668,11 @@ msgstr ""
 "x 2 グリッドを指定します．デフォルトでは，レンダウィンドウは1つだけです．文字列記述子をshapeとして受け入れることもできます．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:37
+msgid "Window size in pixels.  Defaults to [1024, 768]"
+msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは [1024, 768] です．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:39
 msgid ""
 "The number of multi-samples used to mitigate aliasing. 4 is a good default "
@@ -6952,10 +6722,8 @@ msgstr "**textActor** -- プロットに追加されたテキストアクター�
 msgid ""
 "Please use the ``q``-key to close the plotter as some operating systems "
 "(namely Windows) will experience issues saving a screenshot if the exit "
-"button in the GUI is prressed."
+"button in the GUI is pressed."
 msgstr ""
-"GUIの終了ボタンが押されていると，一部のオペレーティングシステム(具体的にはWindows)でスクリーンショットの保存に問題が発生するため， "
-"``q`` キーを使用してプロッタを閉じてください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:9
@@ -6985,39 +6753,42 @@ msgstr "デフォルトでは無効になっています．ブロックしない
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:21
 msgid ""
-"Opens window in full screen.  When enabled, ignores window_size.  Default "
-"``False``."
-msgstr "ウィンドウを全画面で開きます．有効な場合，window_sizeを無視します．デフォルト ``False`` ．"
+"Opens window in full screen.  When enabled, ignores ``window_size``.  "
+"Default ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:24
-msgid "The camera position to use"
-msgstr "使用するカメラ位置"
+msgid ""
+"The camera position.  You can also set this with "
+"``Plotter.camera_position``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:26
+#: pyvista.plotting.plotting.Plotter.show:27
 msgid ""
 "Returns a numpy array representing the last image along with the camera "
 "position."
 msgstr "最後のイメージとカメラ位置を表す数値配列を返します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:33
+#: pyvista.plotting.plotting.Plotter.show:45
 msgid ""
-"* **cpos** (*list*) -- List of camera position, focal point, and view up * "
-"**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True``   or ``screenshot`` is set."
+"Return the jupyterlab viewer, scene, or display object when plotting with "
+"jupyter notebook."
 msgstr ""
-"* **cpos** (*list*) -- カメラ位置，焦点，ビューアップのリスト * **image** (*np.ndarray*) --  "
-"``return_img=True`` または ``screenshot`` が設定されている場合は，最後のイメージの数値配列．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:33
-msgid "**cpos** (*list*) -- List of camera position, focal point, and view up"
-msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト"
+#: pyvista.plotting.plotting.Plotter.show:49
+msgid ""
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
+"**image** (*np.ndarray*) -- Numpy array of the last image when either "
+"``return_img=True``   or ``screenshot`` is set. * *widget* -- IPython widget"
+" when ``return_viewer==True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:34
+#: pyvista.plotting.plotting.Plotter.show:50
 msgid ""
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
 "``return_img=True`` or ``screenshot`` is set."
@@ -7026,99 +6797,124 @@ msgstr ""
 "のいずれかが設定されている場合，最後のイメージの数値配列．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:39
-msgid "Show the plotting window and display it using the ipyvtk-simple viewer"
-msgstr "プロットウィンドウを表示し，ipyvtk-simpleビューアを使用して表示します"
+#: pyvista.plotting.plotting.Plotter.show:52
+msgid "*widget* -- IPython widget when ``return_viewer==True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:44
+#: pyvista.plotting.plotting.Plotter.show:56
+msgid "Simply show the plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:60
 msgid ""
 "Take a screenshot interactively.  Screenshot will be of the last image "
 "shown."
 msgstr "対話的にスクリーンショットを撮ります．最後に表示された画像がスクリーンショットになります．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:109
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:65
+msgid "Display an ``ipygany`` scene within a jupyter notebook"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:69
+msgid "Return an ``ipygany`` scene."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:204
 msgid "Renderer"
 msgstr "レンダラー"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 msgstr ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+msgid ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.axes_enabled:1
+msgid "Return ``True`` when axes are enabled."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`background_color <pyvista.Renderer.background_color>`\\"
 msgstr ":obj:`background_color <pyvista.Renderer.background_color>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.background_color:1
 msgid "Return the background color of this renderer."
 msgstr "このレンダラのバックグラウンドカラーを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`bounds <pyvista.Renderer.bounds>`\\"
 msgstr ":obj:`bounds <pyvista.Renderer.bounds>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.bounds:1
 msgid "Return the bounds of all actors present in the rendering window."
 msgstr "レンダリングウィンドウに存在するすべてのアクターの境界を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`camera <pyvista.Renderer.camera>`\\"
 msgstr ":obj:`camera <pyvista.Renderer.camera>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera:1
 msgid "Return the active camera for the rendering scene."
 msgstr "レンダリングシーンのアクティブカメラを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`camera_position <pyvista.Renderer.camera_position>`\\"
 msgstr ":obj:`camera_position <pyvista.Renderer.camera_position>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera_position:1
 msgid "Return camera position of active render window."
 msgstr "アクティブなレンダウィンドウのカメラ位置を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`center <pyvista.Renderer.center>`\\"
 msgstr ":obj:`center <pyvista.Renderer.center>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.center:1
 msgid ""
 "Return the center of the bounding box around all data present in the scene."
 msgstr "シーン内に存在するすべてのデータを囲むバウンディングボックスの中心を返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`length <pyvista.Renderer.length>`\\"
 msgstr ":obj:`length <pyvista.Renderer.length>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`lights <pyvista.Renderer.lights>`\\"
 msgstr ":obj:`lights <pyvista.Renderer.lights>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.lights:1
 msgid "Return a list of all lights in the renderer."
 msgstr "レンダラのすべてのライトのリストを返します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 msgstr ":obj:`parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`parallel_scale <pyvista.Renderer.parallel_scale>`\\"
 msgstr ":obj:`parallel_scale <pyvista.Renderer.parallel_scale>`\\"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_actor <pyvista.Renderer.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
@@ -7126,7 +6922,7 @@ msgstr ""
 ":obj:`add_actor <pyvista.Renderer.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_axes <pyvista.Renderer.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
@@ -7134,7 +6930,7 @@ msgstr ""
 ":obj:`add_axes <pyvista.Renderer.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_axes_at_origin <pyvista.Renderer.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
@@ -7142,17 +6938,17 @@ msgstr ""
 ":obj:`add_axes_at_origin <pyvista.Renderer.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`add_border <pyvista.Renderer.add_border>`\\ \\(\\[color\\, width\\]\\)"
 msgstr ":obj:`add_border <pyvista.Renderer.add_border>`\\ \\(\\[color\\, width\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_border:1
 msgid "Add borders around the frame."
 msgstr "枠の周囲に罫線を追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_bounding_box <pyvista.Renderer.add_bounding_box>`\\ \\(\\[color\\,"
 " corner\\_factor\\, ...\\]\\)"
@@ -7160,7 +6956,7 @@ msgstr ""
 ":obj:`add_bounding_box <pyvista.Renderer.add_bounding_box>`\\ \\(\\[color\\,"
 " corner\\_factor\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
@@ -7168,17 +6964,17 @@ msgstr ""
 ":obj:`add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 msgstr ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_light:1
 msgid "Add a Light to the renderer."
 msgstr "レンダラーにライトを追加します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_orientation_widget <pyvista.Renderer.add_orientation_widget>`\\ "
 "\\(actor\\[\\, interactive\\, ...\\]\\)"
@@ -7186,41 +6982,41 @@ msgstr ""
 ":obj:`add_orientation_widget <pyvista.Renderer.add_orientation_widget>`\\ "
 "\\(actor\\[\\, interactive\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`clear <pyvista.Renderer.clear>`\\ \\(\\)"
 msgstr ":obj:`clear <pyvista.Renderer.clear>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.clear:1
 msgid "Remove all actors and properties."
 msgstr "すべてのアクターとプロパティを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`close <pyvista.Renderer.close>`\\ \\(\\)"
 msgstr ":obj:`close <pyvista.Renderer.close>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.close:1
 msgid "Close out widgets and sensitive elements."
 msgstr "ウィジェットと重要な要素を閉じます．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`deep_clean <pyvista.Renderer.deep_clean>`\\ \\(\\[render\\]\\)"
 msgstr ":obj:`deep_clean <pyvista.Renderer.deep_clean>`\\ \\(\\[render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.deep_clean:1
 msgid "Clean the renderer of the memory."
 msgstr "メモリのレンダラをクリアします．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`disable <pyvista.Renderer.disable>`\\ \\(\\)"
 msgstr ":obj:`disable <pyvista.Renderer.disable>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_anti_aliasing <pyvista.Renderer.disable_anti_aliasing>`\\ "
 "\\(\\)"
@@ -7228,7 +7024,7 @@ msgstr ""
 ":obj:`disable_anti_aliasing <pyvista.Renderer.disable_anti_aliasing>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_depth_peeling <pyvista.Renderer.disable_depth_peeling>`\\ "
 "\\(\\)"
@@ -7236,7 +7032,7 @@ msgstr ""
 ":obj:`disable_depth_peeling <pyvista.Renderer.disable_depth_peeling>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.Renderer.disable_eye_dome_lighting>`\\ \\(\\)"
@@ -7244,7 +7040,7 @@ msgstr ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.Renderer.disable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_parallel_projection "
 "<pyvista.Renderer.disable_parallel_projection>`\\ \\(\\)"
@@ -7252,16 +7048,16 @@ msgstr ""
 ":obj:`disable_parallel_projection "
 "<pyvista.Renderer.disable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable <pyvista.Renderer.enable>`\\ \\(\\)"
 msgstr ":obj:`enable <pyvista.Renderer.enable>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable_anti_aliasing <pyvista.Renderer.enable_anti_aliasing>`\\ \\(\\)"
 msgstr ""
 ":obj:`enable_anti_aliasing <pyvista.Renderer.enable_anti_aliasing>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_depth_peeling <pyvista.Renderer.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
@@ -7269,7 +7065,7 @@ msgstr ""
 ":obj:`enable_depth_peeling <pyvista.Renderer.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.Renderer.enable_eye_dome_lighting>`\\ \\(\\)"
@@ -7277,7 +7073,7 @@ msgstr ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.Renderer.enable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_parallel_projection "
 "<pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
@@ -7285,7 +7081,7 @@ msgstr ""
 ":obj:`enable_parallel_projection "
 "<pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`get_default_cam_pos <pyvista.Renderer.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
@@ -7293,19 +7089,19 @@ msgstr ""
 ":obj:`get_default_cam_pos <pyvista.Renderer.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`get_pick_position <pyvista.Renderer.get_pick_position>`\\ \\(\\)"
 msgstr ":obj:`get_pick_position <pyvista.Renderer.get_pick_position>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`hide_axes <pyvista.Renderer.hide_axes>`\\ \\(\\)"
 msgstr ":obj:`hide_axes <pyvista.Renderer.hide_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`isometric_view <pyvista.Renderer.isometric_view>`\\ \\(\\)"
 msgstr ":obj:`isometric_view <pyvista.Renderer.isometric_view>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_actor <pyvista.Renderer.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
@@ -7313,17 +7109,17 @@ msgstr ""
 ":obj:`remove_actor <pyvista.Renderer.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
 msgstr ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_all_lights:1
 msgid "Remove all lights from the renderer."
 msgstr "レンダラーからすべてのライトを削除します．"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_bounding_box <pyvista.Renderer.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
@@ -7331,11 +7127,11 @@ msgstr ""
 ":obj:`remove_bounding_box <pyvista.Renderer.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`remove_bounds_axes <pyvista.Renderer.remove_bounds_axes>`\\ \\(\\)"
 msgstr ":obj:`remove_bounds_axes <pyvista.Renderer.remove_bounds_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_floors <pyvista.Renderer.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
@@ -7343,27 +7139,27 @@ msgstr ""
 ":obj:`remove_floors <pyvista.Renderer.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`reset_camera <pyvista.Renderer.reset_camera>`\\ \\(\\[render\\, bounds\\]\\)"
 msgstr ""
 ":obj:`reset_camera <pyvista.Renderer.reset_camera>`\\ \\(\\[render\\, "
 "bounds\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, top\\]\\)"
 msgstr ""
 ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, "
 "top\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"
 msgstr ":obj:`set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_position <pyvista.Renderer.set_position>`\\ \\(point\\[\\, reset\\]\\)"
 msgstr ":obj:`set_position <pyvista.Renderer.set_position>`\\ \\(point\\[\\, reset\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`set_scale <pyvista.Renderer.set_scale>`\\ \\(\\[xscale\\, yscale\\, "
 "zscale\\, reset\\_camera\\]\\)"
@@ -7371,15 +7167,15 @@ msgstr ""
 ":obj:`set_scale <pyvista.Renderer.set_scale>`\\ \\(\\[xscale\\, yscale\\, "
 "zscale\\, reset\\_camera\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_viewup <pyvista.Renderer.set_viewup>`\\ \\(vector\\)"
 msgstr ":obj:`set_viewup <pyvista.Renderer.set_viewup>`\\ \\(vector\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`show_axes <pyvista.Renderer.show_axes>`\\ \\(\\)"
 msgstr ":obj:`show_axes <pyvista.Renderer.show_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`show_bounds <pyvista.Renderer.show_bounds>`\\ \\(\\[mesh\\, bounds\\, "
 "show\\_xaxis\\, ...\\]\\)"
@@ -7387,43 +7183,43 @@ msgstr ""
 ":obj:`show_bounds <pyvista.Renderer.show_bounds>`\\ \\(\\[mesh\\, bounds\\, "
 "show\\_xaxis\\, ...\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`show_grid <pyvista.Renderer.show_grid>`\\ \\(\\*\\*kwargs\\)"
 msgstr ":obj:`show_grid <pyvista.Renderer.show_grid>`\\ \\(\\*\\*kwargs\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`update_bounds_axes <pyvista.Renderer.update_bounds_axes>`\\ \\(\\)"
 msgstr ":obj:`update_bounds_axes <pyvista.Renderer.update_bounds_axes>`\\ \\(\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_isometric <pyvista.Renderer.view_isometric>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_isometric <pyvista.Renderer.view_isometric>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_vector <pyvista.Renderer.view_vector>`\\ \\(vector\\[\\, viewup\\]\\)"
 msgstr ":obj:`view_vector <pyvista.Renderer.view_vector>`\\ \\(vector\\[\\, viewup\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_xy <pyvista.Renderer.view_xy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_xy <pyvista.Renderer.view_xy>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_xz <pyvista.Renderer.view_xz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_xz <pyvista.Renderer.view_xz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_yx <pyvista.Renderer.view_yx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_yx <pyvista.Renderer.view_yx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_yz <pyvista.Renderer.view_yz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_yz <pyvista.Renderer.view_yz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_zx <pyvista.Renderer.view_zx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_zx <pyvista.Renderer.view_zx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_zy <pyvista.Renderer.view_zy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`view_zy <pyvista.Renderer.view_zy>`\\ \\(\\[negative\\]\\)"
 
@@ -7436,57 +7232,6 @@ msgstr "基底: :class:`vtkRenderingCorePython.vtkRenderer`"
 #: pyvista.plotting.renderer.Renderer:1
 msgid "Renderer class."
 msgstr "Rendererクラス．"
-
-#: ../../pyvista/docs/plotting/plotting.rst:130
-msgid "Plotting in a Jupyter Notebook"
-msgstr "Jupyterノートブックでのプロット"
-
-#: ../../pyvista/docs/plotting/plotting.rst:132
-msgid ""
-"Inline plots are possible using a Jupyter notebook.  The code snippet below "
-"will create a static screenshot of the rendering and display it in the "
-"Jupyter notebook:"
-msgstr ""
-"インラインプロットは，Jupyterノートブックを使用して行うことができます．以下のコードスニペットは，レンダリングの静的スクリーンショットを作成し，Jupyterノートブックに表示します:"
-
-#: ../../pyvista/docs/plotting/plotting.rst:154
-msgid "Jupyter Inline Plotting"
-msgstr "Jupyterインラインプロット"
-
-#: ../../pyvista/docs/plotting/plotting.rst:156
-msgid ""
-"To display interactive plots in Jupyter notebooks, use the "
-":class:`pyvistaqt.BackgroundPlotter` to open a rendering window in the "
-"background that you can manipulate in real time from the Jupyter notebook:"
-msgstr ""
-"Jupyterノートブックでインタラクティブプロットを表示するには， :class:`pyvistaqt.BackgroundPlotter` "
-"を使用してバックグラウンドでレンダリングウィンドウを開き，Jupyterノートブックからリアルタイムで操作できます．"
-
-#: ../../pyvista/docs/plotting/plotting.rst:176
-msgid "Background Plotting"
-msgstr "背景プロッティング"
-
-#: ../../pyvista/docs/plotting/plotting.rst:178
-msgid ""
-"PyVista provides a plotter that enables users to create a rendering window "
-"in the background that remains interactive while the user performs their "
-"processing. This creates the ability to make a rendering scene and "
-"interactively add or remove datasets from the scene as well as has some "
-"useful menu functions for common scene manipulation or export tasks. To get "
-"started, try instantiating the :class:`pyvistaqt.BackgroundPlotter`:"
-msgstr ""
-"PyVistaにはプロッタが用意されており，ユーザはバックグラウンドでレンダリングウィンドウを作成できます．このウィンドウは，ユーザが処理を実行している間もインタラクティブなままです．これにより，レンダリングシーンを作成し，シーンに対してインタラクティブにデータセットを追加または削除する機能や，一般的なシーン操作や書き出しタスクに便利なメニュー機能が作成されます．始めるために，"
-" :class:`pyvistaqt.BackgroundPlotter` のインスタンス化を試してみてください:"
-
-#: ../../pyvista/docs/plotting/plotting.rst:202
-msgid "Plot Time Series Data"
-msgstr "時系列データのプロット"
-
-#: ../../pyvista/docs/plotting/plotting.rst:204
-msgid ""
-"This example outlines how to plot data where the spatial reference and data "
-"values change through time:"
-msgstr "次の例では，時間の経過とともに空間参照とデータ値が変化するデータをプロットする方法の概要を示します:"
 
 #: ../../pyvista/docs/plotting/qt_plotting.rst:4
 msgid "Pyvista and PyQt"
@@ -7699,6 +7444,11 @@ msgstr ":obj:`close <pyvista.WidgetHelper.close>`\\ \\(\\)"
 #: pyvista.plotting.widgets.WidgetHelper.close:1
 msgid "Close the widgets."
 msgstr "ウィジェットを閉じます．"
+
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper:1
+msgid "Bases: :class:`object`"
+msgstr "基底: :class:`object`"
 
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper:1

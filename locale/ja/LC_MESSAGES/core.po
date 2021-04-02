@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-26 00:17+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,11 +47,11 @@ msgstr "マルチブロックデータセット"
 #: ../../pyvista/docs/core/grids.rst:33 ../../pyvista/docs/core/grids.rst:56
 #: ../../pyvista/docs/core/objects.rst:9
 #: ../../pyvista/docs/core/objects.rst:31
-#: ../../pyvista/docs/core/point-grids.rst:288
-#: ../../pyvista/docs/core/point-grids.rst:307
-#: ../../pyvista/docs/core/point-grids.rst:330
-#: ../../pyvista/docs/core/point-grids.rst:353
-#: ../../pyvista/docs/core/points.rst:124
+#: ../../pyvista/docs/core/point-grids.rst:313
+#: ../../pyvista/docs/core/point-grids.rst:332
+#: ../../pyvista/docs/core/point-grids.rst:355
+#: ../../pyvista/docs/core/point-grids.rst:378
+#: ../../pyvista/docs/core/points.rst:133
 msgid "Attributes"
 msgstr "アトリビュート"
 
@@ -119,11 +119,11 @@ msgstr "このデータセット内のすべてのメッシュの合計ボリュ
 #: ../../pyvista/docs/core/grids.rst:38 ../../pyvista/docs/core/grids.rst:61
 #: ../../pyvista/docs/core/objects.rst:14
 #: ../../pyvista/docs/core/objects.rst:36
-#: ../../pyvista/docs/core/point-grids.rst:293
-#: ../../pyvista/docs/core/point-grids.rst:311
-#: ../../pyvista/docs/core/point-grids.rst:335
-#: ../../pyvista/docs/core/point-grids.rst:358
-#: ../../pyvista/docs/core/points.rst:129
+#: ../../pyvista/docs/core/point-grids.rst:318
+#: ../../pyvista/docs/core/point-grids.rst:336
+#: ../../pyvista/docs/core/point-grids.rst:360
+#: ../../pyvista/docs/core/point-grids.rst:383
+#: ../../pyvista/docs/core/points.rst:138
 msgid "Methods"
 msgstr "メソッド"
 
@@ -376,9 +376,17 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:28
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:36
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:41
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.probe:24
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.reflect:15
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:27
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.shrink:12
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -902,6 +910,10 @@ msgstr "戻り値の型"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.outline_corners:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_line:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.point_data_to_cell_data:0
@@ -911,6 +923,10 @@ msgstr "戻り値の型"
 #: pyvista.core.filters.DataSetFilters.reflect:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1126,26 +1142,26 @@ msgstr "名前が一意でない場合は，最初のoccurrenceが返されま�
 #: pyvista.plotting.helpers.plot:3
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:3
-msgid "VTK object or numpy array to be plotted."
-msgstr "プロットするVTKオブジェクトまたは数値配列．"
+msgid "VTK object or ``numpy`` array to be plotted."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:5
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:5
 msgid ""
-"Plots off screen when True.  Helpful for saving screenshots without a window"
-" popping up."
-msgstr "Trueの場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．"
+"Plots off screen when ``True``.  Helpful for saving screenshots without a "
+"window popping up."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:8
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:8
 msgid ""
-"Opens window in full screen.  When enabled, ignores window_size. Default "
-"False."
-msgstr "ウィンドウを全画面で開きます．有効にすると，window_sizeは無視されます．既定値はFalseです．"
+"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
+" ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1153,11 +1169,9 @@ msgstr "ウィンドウを全画面で開きます．有効にすると，window
 #: pyvista.plotting.helpers.plot:11
 msgid ""
 "Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled.  When True, "
-"takes screenshot and returns numpy array of image."
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
+"takes screenshot and returns ``numpy`` array of image."
 msgstr ""
-"有効にすると，スクリーンショットをファイルに保存します．help(pyvistanterface.Plotter.screenshot) "
-"を参照してください．デフォルトは無効です．Trueの場合，スクリーンショットを取得し，画像の配列を返します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1165,42 +1179,40 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:11
 msgid ""
 "Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled."
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
-"有効にすると，スクリーンショットをファイルに保存します．help(pyvistanterface.Plotter.screenshot) "
-"を参照してください．デフォルトは無効です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:14
-msgid "When True, takes screenshot and returns numpy array of image."
-msgstr "Trueの場合，スクリーンショットを取得し画像の配列を返します．"
+msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:16
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:16
-msgid "Window size in pixels.  Defaults to [1024, 768]"
-msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは [1024, 768] です．"
+msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:18
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:18
 msgid ""
-"Shows mesh bounds when True.  Default False. Alias ``show_grid`` also "
-"accepted."
-msgstr "Trueの場合，メッシュ境界を表示します．既定値はFalseです．エイリアス ``show_grid`` も使用できます．"
+"Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
+"also accepted."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:21
 msgid ""
-"When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
-" jupyter console is active."
-msgstr "Trueの場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．"
+"When ``True``, the resulting plot is placed inline a jupyter notebook.  "
+"Assumes a jupyter console is active."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:24
@@ -1228,22 +1240,83 @@ msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用�
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:30
 msgid ""
-"Use the ``ipyvtk-simple`` ``ViewInteractiveWidget`` to visualize the plot "
-"within a juyterlab notebook."
+"Deprecated.  Instead, set the backend either globally with "
+"``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
+"``backend='ipyvtk_simple'``."
 msgstr ""
-"``ipyvtk-simple`` ``ViewInteractiveWidget`` を使用して，juyterlabノート内のプロットを視覚化します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:33
+#: pyvista.plotting.helpers.plot:34
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:33
+#: pyvista.plotting.helpers.plot:34
+msgid ""
+"Jupyter notebook plotting backend to use.  One of the following:  * "
+"``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
+"static figure. * ``'ipygany'`` : Show a ``ipygany`` widget * ``'panel'`` : "
+"Show a ``panel`` widget.  This can also be set globally with "
+"``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+msgid "Jupyter notebook plotting backend to use.  One of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+msgid "``'none'`` : Do not display in the notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+msgid "``'static'`` : Display a static figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+msgid "``'ipygany'`` : Show a ``ipygany`` widget"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+msgid "``'panel'`` : Show a ``panel`` widget."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+msgid "Keyword arguments for the Jupyter notebook plotting backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:47
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:47
 msgid "See help(Plotter.add_mesh) for additional options."
 msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
@@ -1256,17 +1329,17 @@ msgstr ""
 "[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:51
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:51
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
 "[Window height x Window width x 3] for transparent_background=False [Window "
@@ -1521,8 +1594,8 @@ msgstr ":obj:`number_of_cells <pyvista.DataSet.number_of_cells>`\\"
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_faces:1 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.number_of_faces:1
@@ -1593,7 +1666,7 @@ msgstr ":obj:`volume <pyvista.DataSet.volume>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:1
 msgid "Return the mesh volume."
@@ -2593,6 +2666,34 @@ msgstr "入力データセットのコーナーのアウトラインを生成し
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
+":obj:`plot_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:1
+msgid "Sample a dataset along a circular arc and plot it."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`plot_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:1
+msgid ""
+"Sample a dataset along a resolution circular arc defined by a normal and "
+"polar vector and plot it."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
 ":obj:`plot_over_line "
 "<pyvista.core.filters.pyvista.DataSetFilters.plot_over_line>`\\ \\(pointa\\,"
 " pointb\\[\\, resolution\\, ...\\]\\)"
@@ -2678,6 +2779,38 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.sample:1
 msgid "Resample array data from a passed mesh onto this mesh."
 msgstr "渡されたメッシュからこのメッシュに配列データをリサンプルします．"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`sample_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:20
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:28
+msgid "Sample a dataset over a circular arc."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`sample_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:1
+msgid ""
+"Sample a dataset over a circular arc defined by a normal and polar vector "
+"and plot it."
+msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -4276,6 +4409,173 @@ msgid ""
 msgstr "対応する境界の長さに対するコーナーの相対サイズをコントロールします．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:3
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:3
+msgid ""
+"Plot the variables of interest in 2D where the X-axis is distance from Point"
+" A and the Y-axis is the variable of interest. Note that this filter returns"
+" ``None``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:9
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:3
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:5
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:6
+msgid "Location in ``[x, y, z]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:13
+msgid ""
+"Number of pieces to divide the circular arc into. Defaults to number of "
+"cells in the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:17
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:22
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:14
+msgid ""
+"The string name of the variable in the input dataset to probe. The active "
+"scalar is used by default."
+msgstr "調査する入力データセット内の変数の文字列名．既定では，アクティブスカラーが使用されます．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:20
+msgid "The string title of the ``matplotlib`` figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:22
+msgid "The string label of the Y-axis. Defaults to the variable name."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:24
+msgid "The size of the new figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:26
+msgid "Flag on whether or not to create a new figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:28
+msgid "Shows the ``matplotlib`` figure when ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:30
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:35
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:27
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.probe:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample:10
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:13
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:21
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_line:10
+msgid ""
+"Tolerance used to compute whether a point in the source is in a cell of the "
+"input.  If not given, tolerance is automatically generated."
+msgstr "ソース内のポイントが入力のセル内にあるかどうかを計算するために使用される許容値です．指定しない場合，公差は自動的に生成されます．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:37
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:42
+msgid "Sample a dataset along a high resolution circular arc and plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:9
+msgid ""
+"number of pieces to divide circular arc into. Defaults to number of cells in"
+" the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:13
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:12
+msgid ""
+"The normal vector to the plane of the arc.  By default it points in the "
+"positive Z direction."
+msgstr "円弧の平面に対する法線ベクトルです．既定では，正のZ方向を指します．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:16
+msgid ""
+"(starting point of the arc).  By default it is the unit vector in the "
+"positive x direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:18
+msgid ""
+"Arc length (in degrees), beginning at the polar vector.  The direction is "
+"counterclockwise.  By default it is 360."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:25
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:17
+msgid "The string title of the `matplotlib` figure"
+msgstr "`matplotlib` 図の文字列タイトル"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:27
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:19
+msgid "The string label of the Y-axis. Defaults to variable name"
+msgstr "Y軸の文字列ラベル．デフォルトは変数名"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:29
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:21
+msgid "the size of the new figure"
+msgstr "新しい図のサイズ"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:31
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:23
+msgid "flag on whether or not to create a new figure"
+msgstr "新しい図形を作成するかどうかのフラグ"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:33
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:25
+msgid "Shows the matplotlib figure"
+msgstr "matplotlibの図を表示します"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_line:3
 msgid ""
 "Plot the variables of interest in 2D where the X-axis is distance from Point"
@@ -4301,51 +4601,6 @@ msgid ""
 "number of pieces to divide line into. Defaults to number of cells in the "
 "input mesh. Must be a positive integer."
 msgstr "線を分割する断片の数．既定値は入力メッシュ内のセル数です．正の整数でなければなりません．"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:14
-msgid ""
-"The string name of the variable in the input dataset to probe. The active "
-"scalar is used by default."
-msgstr "調査する入力データセット内の変数の文字列名．既定では，アクティブスカラーが使用されます．"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:17
-msgid "The string title of the `matplotlib` figure"
-msgstr "`matplotlib` 図の文字列タイトル"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:19
-msgid "The string label of the Y-axis. Defaults to variable name"
-msgstr "Y軸の文字列ラベル．デフォルトは変数名"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:21
-msgid "the size of the new figure"
-msgstr "新しい図のサイズ"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:23
-msgid "flag on whether or not to create a new figure"
-msgstr "新しい図形を作成するかどうかのフラグ"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:25
-msgid "Shows the matplotlib figure"
-msgstr "matplotlibの図を表示します"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:27
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.probe:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.sample:10
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.sample_over_line:10
-msgid ""
-"Tolerance used to compute whether a point in the source is in a cell of the "
-"input.  If not given, tolerance is automatically generated."
-msgstr "ソース内のポイントが入力のセル内にあるかどうかを計算するために使用される許容値です．指定しない場合，公差は自動的に生成されます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.point_data_to_cell_data:6
@@ -4458,6 +4713,29 @@ msgid ""
 "are sampled onto the nodes of the ``dataset`` mesh"
 msgstr ""
 "サンプリング元のvtkデータオブジェクトと，このオブジェクトからのセル配列は， ``dataset`` メッシュのノードにサンプリングされます．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:9
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:8
+msgid ""
+"Number of pieces to divide circular arc into. Defaults to number of cells in"
+" the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:3
+msgid ""
+"The number of segments composing the polyline is controlled by setting the "
+"object resolution."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:15
+msgid ""
+"Starting point of the arc in polar coordinates.  By default it is the unit "
+"vector in the positive x direction."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:7
@@ -7495,7 +7773,7 @@ msgstr ":obj:`dimensions <pyvista.Grid.dimensions>`\\"
 #: ../../pyvista/docs/core/grids.rst:36:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.dimensions:1
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.dimensions:1
 msgid "Return a length 3 tuple of the grid's dimensions."
@@ -8138,22 +8416,20 @@ msgid "Brief Example"
 msgstr "簡単な例"
 
 #: ../../pyvista/docs/core/lights.rst:12
-msgid "Create a red spotlight that shines on the origin."
-msgstr "原点を照らす赤いスポットライトを作成します．"
+msgid ""
+"Create a red spotlight that shines on the origin, then create a scene "
+"without lighting and add our light to it manually."
+msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:21
-msgid "Create a scene without lighting and add our light to it manually."
-msgstr "ライティングなしのシーンを作成し，ライトを手動で追加します．"
-
-#: ../../pyvista/docs/core/lights.rst:35
+#: ../../pyvista/docs/core/lights.rst:33
 msgid "For detailed examples please see :ref:`ref_light_examples`."
 msgstr "詳細な例は :ref:`ref_light_examples` を参照してください．"
 
-#: ../../pyvista/docs/core/lights.rst:38
+#: ../../pyvista/docs/core/lights.rst:37
 msgid "Light API"
 msgstr "ライト API"
 
-#: ../../pyvista/docs/core/lights.rst:39
+#: ../../pyvista/docs/core/lights.rst:38
 msgid ""
 "``pyvista.Light`` instances come in three types: headlights, camera lights, "
 "and scene lights. Headlights always shine along the camera's axis, camera "
@@ -8164,7 +8440,7 @@ msgstr ""
 "``pyvista.Light`` "
 "インスタンスには，ヘッドライト，カメラライト，シーンライトの3つのタイプがあります．ヘッドライトは常にカメラの軸に沿って輝き，カメラライトはカメラに対して固定位置を持ち，シーンライトはシーンに対して配置されるため，カメラの周りを移動してもシーンのライティングには影響しません．"
 
-#: ../../pyvista/docs/core/lights.rst:45
+#: ../../pyvista/docs/core/lights.rst:44
 msgid ""
 "Lights have a :py:attr:`position` and a :py:attr:`focal_point` that define "
 "the axis of the light. The meaning of these depends on the type of the "
@@ -8178,7 +8454,7 @@ msgstr ""
 " :py:attr:`intensity` プロパティで設定でき，書き込み可能な :py:attr:`on` "
 "プロパティはライトをオンにするかどうかを指定します．"
 
-#: ../../pyvista/docs/core/lights.rst:51
+#: ../../pyvista/docs/core/lights.rst:50
 msgid ""
 "Lights can be either directional (meaning an infinitely distant point "
 "source) or :py:attr:`positional`. Positional lights have additional "
@@ -8198,7 +8474,7 @@ msgstr ""
 "プロパティを使用してカスタマイズできます．ポジションライトでは，ワイヤフレームを使用してライトのシェイプとカラーを表すアクターを使用することもできます．"
 " :func:`show_actor` を参照してください ．"
 
-#: ../../pyvista/docs/core/lights.rst:60
+#: ../../pyvista/docs/core/lights.rst:59
 msgid ""
 "Positional lights with a :py:attr:`cone_angle` of less than 90 degrees are "
 "known as spotlights. Spotlights are unidirectional and they make full use of"
@@ -8213,7 +8489,7 @@ msgstr ""
 "が90度未満の位置ライトはスポットライトと呼ばれます．スポットライトは一方向性であり，ビーム成形特性，すなわち :py:attr:`exponent` "
 "と減衰を完全に利用します．ただし，スポットライト以外の位置ライトは，実際のライトの位置にあるポイントソースのように機能し，空間のすべての方向を照らします．光源からの距離に応じた減衰が表示されますが，ビームは空間内で等方性です．対照的に，ディレクショナルライトは無限に離れたポイントソースとして機能するため，単一方向ですが減衰しません．"
 
-#: ../../pyvista/docs/core/lights.rst:70
+#: ../../pyvista/docs/core/lights.rst:69
 msgid "API reference"
 msgstr "APIリファレンス"
 
@@ -9350,17 +9626,17 @@ msgid ""
 msgstr ""
 "NumPy配列から非構造化グリッドを作成する方法の例については， :ref:`ref_create_unstructured` を参照してください．"
 
-#: ../../pyvista/docs/core/point-grids.rst:18
-#: ../../pyvista/docs/core/point-grids.rst:49
+#: ../../pyvista/docs/core/point-grids.rst:19
+#: ../../pyvista/docs/core/point-grids.rst:51
 #: ../../pyvista/docs/core/points.rst:15
 msgid "Empty Object"
 msgstr "空のオブジェクト"
 
-#: ../../pyvista/docs/core/point-grids.rst:19
+#: ../../pyvista/docs/core/point-grids.rst:20
 msgid "An unstructured grid can be initialized with:"
 msgstr "非構造化グリッドは，次のように初期化できます:"
 
-#: ../../pyvista/docs/core/point-grids.rst:26
+#: ../../pyvista/docs/core/point-grids.rst:27
 msgid ""
 "This creates an empty grid, and is not useful until points and cells are "
 "added to it.  VTK points and cells can be added with ``SetPoints`` and "
@@ -9374,76 +9650,75 @@ msgstr ""
 "``vtk.vtkPoints`` "
 "オブジェクトである必要があり，値を設定する必要があります．グリッドの作成は，次のセクションのように，多数の配列から直接グリッドを初期化することで簡単になります．"
 
-#: ../../pyvista/docs/core/point-grids.rst:34
-#: ../../pyvista/docs/core/point-grids.rst:87
+#: ../../pyvista/docs/core/point-grids.rst:35
+#: ../../pyvista/docs/core/point-grids.rst:95
 msgid "Loading from File"
 msgstr "ファイルからロードする"
 
-#: ../../pyvista/docs/core/point-grids.rst:35
+#: ../../pyvista/docs/core/point-grids.rst:36
 msgid "Unstructured grids can be loaded from a vtk file."
 msgstr "非構造化グリッドは，vtkファイルからロードできます．"
 
-#: ../../pyvista/docs/core/point-grids.rst:46
+#: ../../pyvista/docs/core/point-grids.rst:48
 msgid "Structured Grid Creation"
 msgstr "構造化グリッドの作成"
 
-#: ../../pyvista/docs/core/point-grids.rst:50
+#: ../../pyvista/docs/core/point-grids.rst:52
 msgid "A structured grid can be initialized with:"
 msgstr "構造化グリッドは，次のように初期化できます:"
 
-#: ../../pyvista/docs/core/point-grids.rst:57
+#: ../../pyvista/docs/core/point-grids.rst:59
 msgid ""
 "This creates an empty grid, and is not useful until points are added to it."
 msgstr "これにより空のグリッドが作成され，ポイントが追加されるまで使用できません．"
 
-#: ../../pyvista/docs/core/point-grids.rst:62
+#: ../../pyvista/docs/core/point-grids.rst:64
 msgid "Creating from Numpy Arrays"
 msgstr "Numpyの配列からの作成"
 
-#: ../../pyvista/docs/core/point-grids.rst:63
+#: ../../pyvista/docs/core/point-grids.rst:65
 msgid ""
 "A structured grid can be created directly from numpy arrays.  This is useful"
 " when creating a grid from scratch or copying it from another format."
 msgstr "構造化グリッドは，numpyの配列から直接作成できます．これは，グリッドを最初から作成する場合や，別の形式からコピーする場合に便利です．"
 
-#: ../../pyvista/docs/core/point-grids.rst:66
+#: ../../pyvista/docs/core/point-grids.rst:68
 msgid ""
 "Also see :ref:`ref_create_structured` for an example on creating a "
 "structured grid from NumPy arrays."
 msgstr "NumPy配列から構造化グリッドを作成する例については， :ref:`ref_create_structured` も参照してください．"
 
-#: ../../pyvista/docs/core/point-grids.rst:88
+#: ../../pyvista/docs/core/point-grids.rst:96
 msgid "Structured grids can be loaded from a ``vtk`` file."
 msgstr "構造化グリッドは，  ``vtk`` ファイルからロードできます．"
 
-#: ../../pyvista/docs/core/point-grids.rst:96
+#: ../../pyvista/docs/core/point-grids.rst:104
 msgid "Plotting Grids"
 msgstr "グリッドをプロットする"
 
-#: ../../pyvista/docs/core/point-grids.rst:97
+#: ../../pyvista/docs/core/point-grids.rst:105
 msgid ""
 "This example shows how you can load an unstructured grid from a ``vtk`` file"
 " and create a plot and gif movie by updating the plotting object."
 msgstr ""
 "この例では， ``vtk`` ファイルから非構造化グリッドをロードし，プロットオブジェクトを更新してプロットとgifムービーを作成する方法を示します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:117
+#: ../../pyvista/docs/core/point-grids.rst:125
 msgid "A simple plot can be created by using:"
 msgstr "次を使用して，単純なプロットを作成できます:"
 
-#: ../../pyvista/docs/core/point-grids.rst:123
+#: ../../pyvista/docs/core/point-grids.rst:131
 msgid "A more complex plot can be created using:"
 msgstr "次のコマンドを使用して，より複雑なプロットを作成できます:"
 
-#: ../../pyvista/docs/core/point-grids.rst:146
+#: ../../pyvista/docs/core/point-grids.rst:153
 msgid ""
 "You can animate the motion of the beam by updating the positions and scalars"
-" of the grid copied to the plotting object. First you have to set up the "
+" of the grid copied to the plotting object.  First you have to set up the "
 "plotting object:"
 msgstr ""
-"はりのモーションをアニメートするには，プロットオブジェクトにコピーされたグリッドの位置とスカラーを更新します．まず，プロットオブジェクトを設定する必要があります．"
 
-#: ../../pyvista/docs/core/point-grids.rst:160
+#: ../../pyvista/docs/core/point-grids.rst:167
 msgid ""
 "You then open the render window by plotting before opening the movie file. "
 "Set auto_close to False so the plotter does not close automatically. "
@@ -9453,40 +9728,36 @@ msgstr ""
 "次に，ムービーファイルを開く前にプロットして，レンダリングウィンドウを開きます． auto_close "
 "をFalseに設定して，プロッタが自動的に閉じないようにします．インタラクティブを無効にすると，ユーザがウィンドウを終了するのを待たずに，プロットが自動的に続行されます．"
 
-#: ../../pyvista/docs/core/point-grids.rst:184
+#: ../../pyvista/docs/core/point-grids.rst:200
 msgid "You can also render the beam as as a wire-frame object:"
 msgstr "はりをワイヤフレームオブジェクトとしてレンダリングすることもできます．"
 
-#: ../../pyvista/docs/core/point-grids.rst:213
+#: ../../pyvista/docs/core/point-grids.rst:238
 msgid "Adding Labels to a Plot"
 msgstr "プロットにラベルを追加する"
 
-#: ../../pyvista/docs/core/point-grids.rst:214
+#: ../../pyvista/docs/core/point-grids.rst:239
 msgid ""
 "Labels can be added to a plot using the ``add_point_labels`` function within"
 " the ``Plotter`` object.  The following example loads the included example "
 "beam, generates a plotting class, and sub-selects points along the y-z plane"
-" and labels their coordinates.  ``add_point_labels`` requires that the "
-"number of labels matches the number of points, and that labels is a list "
+" and labels their coordinates. ``add_point_labels`` requires that the number"
+" of labels matches the number of points, and that labels is a list "
 "containing one entry per point.  The code automatically converts each item "
 "in the list to a string."
 msgstr ""
-"``Plotter`` オブジェクト内の ``add_point_labels`` "
-"関数を使用して，プロットにラベルを追加できます．次の例では，含まれているサンプルの梁をロードし，印刷クラスを生成し，y-z平面に沿った点をサブ選択し，その座標にラベルを付けます．"
-" ``add_point_labels`` "
-"では，ラベルの数がポイントの数と一致し，ラベルがポイントごとに1つのエントリを含むリストである必要があります．このコードは，リスト内の各項目を自動的に文字列に変換します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:249
+#: ../../pyvista/docs/core/point-grids.rst:280
 msgid ""
 "This example is similar and shows how labels can be combined with a scalar "
 "bar to show the exact value of certain points."
 msgstr "この例も同様で，ラベルをスカラーバーと組み合わせて特定のポイントの正確な値を表示する方法を示しています．"
 
-#: ../../pyvista/docs/core/point-grids.rst:280
+#: ../../pyvista/docs/core/point-grids.rst:307
 msgid "pv.Unstructured Grid Class Methods"
 msgstr "pv.Unstructured グリッドクラスメソッド"
 
-#: ../../pyvista/docs/core/point-grids.rst:281
+#: ../../pyvista/docs/core/point-grids.rst:308
 msgid ""
 "The following is a description of the methods available to a "
 "``pv.UnstructuredGrid`` object.  It inherits all methods from the original "
@@ -9498,57 +9769,57 @@ msgstr ""
 "<https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_ "
 "からすべてのメソッドを継承します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cell_connectivity <pyvista.UnstructuredGrid.cell_connectivity>`\\"
 msgstr ":obj:`cell_connectivity <pyvista.UnstructuredGrid.cell_connectivity>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cell_connectivity:1
 msgid "Return a the vtk cell connectivity as a numpy array."
 msgstr "vtkセルの接続性をnumpy配列で返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cells <pyvista.UnstructuredGrid.cells>`\\"
 msgstr ":obj:`cells <pyvista.UnstructuredGrid.cells>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:1
 msgid "Return a pointer to the cells as a numpy object."
 msgstr "セルへのポインタをnumpyなオブジェクトとして返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cells_dict <pyvista.UnstructuredGrid.cells_dict>`\\"
 msgstr ":obj:`cells_dict <pyvista.UnstructuredGrid.cells_dict>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:1
 msgid "Return a dictionary that contains all cells mapped from cell types."
 msgstr "​セルタイプからマップされたすべてのセルを含むディクショナリを返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`celltypes <pyvista.UnstructuredGrid.celltypes>`\\"
 msgstr ":obj:`celltypes <pyvista.UnstructuredGrid.celltypes>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:1
 msgid "Get the cell types array."
 msgstr "セルタイプの配列を取得します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`offset <pyvista.UnstructuredGrid.offset>`\\"
 msgstr ":obj:`offset <pyvista.UnstructuredGrid.offset>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.offset:1
 msgid "Get cell locations Array."
 msgstr "セルの位置を取得します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 msgid ""
 ":obj:`cast_to_explicit_structured_grid "
 "<pyvista.UnstructuredGrid.cast_to_explicit_structured_grid>`\\ \\(\\)"
@@ -9556,17 +9827,17 @@ msgstr ""
 ":obj:`cast_to_explicit_structured_grid "
 "<pyvista.UnstructuredGrid.cast_to_explicit_structured_grid>`\\ \\(\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:1
 msgid "Cast to an explicit structured grid."
 msgstr "明示的に構造化されたグリッドにキャストします．"
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 msgid ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\]\\)"
 msgstr ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.linear_copy:1
 msgid "Return a copy of the unstructured grid containing only linear cells."
@@ -9719,31 +9990,31 @@ msgstr "Trueの場合，ポイント配列のコピーを作成します．既�
 msgid "**grid** -- UnstructuredGrid containing only linear cells."
 msgstr "**grid** -- 線形セルのみを含むUnstructuredGridです．"
 
-#: ../../pyvista/docs/core/point-grids.rst:305
+#: ../../pyvista/docs/core/point-grids.rst:330
 msgid "Explicit Structured Grid"
 msgstr "明示的構造化グリッド"
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.ExplicitStructuredGrid.dimensions>`\\"
 msgstr ":obj:`dimensions <pyvista.ExplicitStructuredGrid.dimensions>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.dimensions:1
 msgid "Return the topological dimensions of the grid."
 msgstr "グリッドのトポロジー次元を返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 msgid ":obj:`visible_bounds <pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
 msgstr ":obj:`visible_bounds <pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:1
 msgid "Return the bounding box of the visible cells."
 msgstr "表示されているセルの境界ボックスを返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`cast_to_unstructured_grid "
 "<pyvista.ExplicitStructuredGrid.cast_to_unstructured_grid>`\\ \\(\\)"
@@ -9751,17 +10022,17 @@ msgstr ""
 ":obj:`cast_to_unstructured_grid "
 "<pyvista.ExplicitStructuredGrid.cast_to_unstructured_grid>`\\ \\(\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:1
 msgid "Cast to an unstructured grid."
 msgstr "非構造化グリッドにキャストします．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind\\)"
 msgstr ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9769,11 +10040,11 @@ msgstr ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind
 msgid "Return the cell structured coordinates."
 msgstr "セル構造の座標を返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`cell_id <pyvista.ExplicitStructuredGrid.cell_id>`\\ \\(coords\\)"
 msgstr ":obj:`cell_id <pyvista.ExplicitStructuredGrid.cell_id>`\\ \\(coords\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:13
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9781,7 +10052,7 @@ msgstr ":obj:`cell_id <pyvista.ExplicitStructuredGrid.cell_id>`\\ \\(coords\\)"
 msgid "Return the cell ID."
 msgstr "セルのIDを返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`compute_connections "
 "<pyvista.ExplicitStructuredGrid.compute_connections>`\\ \\(\\[inplace\\]\\)"
@@ -9789,7 +10060,7 @@ msgstr ""
 ":obj:`compute_connections "
 "<pyvista.ExplicitStructuredGrid.compute_connections>`\\ \\(\\[inplace\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9797,7 +10068,7 @@ msgstr ""
 msgid "Compute an array with the number of connected cell faces."
 msgstr "接続されたセル面の数で配列を計算します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`compute_connectivity "
 "<pyvista.ExplicitStructuredGrid.compute_connectivity>`\\ \\(\\[inplace\\]\\)"
@@ -9805,7 +10076,7 @@ msgstr ""
 ":obj:`compute_connectivity "
 "<pyvista.ExplicitStructuredGrid.compute_connectivity>`\\ \\(\\[inplace\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:17
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9813,7 +10084,7 @@ msgstr ""
 msgid "Compute the faces connectivity flags array."
 msgstr "面接続フラグ配列を計算します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`hide_cells <pyvista.ExplicitStructuredGrid.hide_cells>`\\ \\(ind\\[\\,"
 " inplace\\]\\)"
@@ -9821,13 +10092,13 @@ msgstr ""
 ":obj:`hide_cells <pyvista.ExplicitStructuredGrid.hide_cells>`\\ \\(ind\\[\\,"
 " inplace\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.hide_cells:1
 msgid "Hide specific cells."
 msgstr "特定のセルを非表示にします．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`neighbors <pyvista.ExplicitStructuredGrid.neighbors>`\\ \\(ind\\[\\, "
 "rel\\]\\)"
@@ -9835,25 +10106,25 @@ msgstr ""
 ":obj:`neighbors <pyvista.ExplicitStructuredGrid.neighbors>`\\ \\(ind\\[\\, "
 "rel\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.neighbors:1
 msgid "Return the indices of neighboring cells."
 msgstr "隣接するセルのインデックスを返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`save <pyvista.ExplicitStructuredGrid.save>`\\ \\(filename\\[\\, binary\\]\\)"
 msgstr ""
 ":obj:`save <pyvista.ExplicitStructuredGrid.save>`\\ \\(filename\\[\\, "
 "binary\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.save:1
 msgid "Save this VTK object to file."
 msgstr "このVTKオブジェクトをファイルに保存します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`show_cells <pyvista.ExplicitStructuredGrid.show_cells>`\\ "
 "\\(\\[inplace\\]\\)"
@@ -9861,7 +10132,7 @@ msgstr ""
 ":obj:`show_cells <pyvista.ExplicitStructuredGrid.show_cells>`\\ "
 "\\(\\[inplace\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.show_cells:1
 msgid "Show hidden cells."
@@ -10122,11 +10393,11 @@ msgid ""
 "The limits of the visible grid in the X, Y and Z directions respectively."
 msgstr "X、Y、Z方向それぞれの可視グリッドの範囲．"
 
-#: ../../pyvista/docs/core/point-grids.rst:322
+#: ../../pyvista/docs/core/point-grids.rst:347
 msgid "pv.Structured Grid Class Methods"
 msgstr "pv.Structured グリッドクラスメソッド"
 
-#: ../../pyvista/docs/core/point-grids.rst:323
+#: ../../pyvista/docs/core/point-grids.rst:348
 msgid ""
 "The following is a description of the methods available to a "
 "``pv.StructuredGrid`` object.  It inherits all methods from the original "
@@ -10138,55 +10409,55 @@ msgstr ""
 "<https://www.vtk.org/doc/nightly/html/classvtkStructuredGrid.html>`_ "
 "からすべてのメソッドを継承します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.StructuredGrid.dimensions>`\\"
 msgstr ":obj:`dimensions <pyvista.StructuredGrid.dimensions>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`points_matrix <pyvista.StructuredGrid.points_matrix>`\\"
 msgstr ":obj:`points_matrix <pyvista.StructuredGrid.points_matrix>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.points_matrix:1
 msgid "Points as a 4-D matrix, with x/y/z along the last dimension."
 msgstr "最後の次元に沿ったx/y/zを持つ4次元行列として点を指定します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`x <pyvista.StructuredGrid.x>`\\"
 msgstr ":obj:`x <pyvista.StructuredGrid.x>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.x:1
 msgid "Return the X coordinates of all points."
 msgstr "すべての点のX座標を返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`y <pyvista.StructuredGrid.y>`\\"
 msgstr ":obj:`y <pyvista.StructuredGrid.y>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.y:1
 msgid "Return the Y coordinates of all points."
 msgstr "すべての点のY座標を返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`z <pyvista.StructuredGrid.z>`\\"
 msgstr ":obj:`z <pyvista.StructuredGrid.z>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.z:1
 msgid "Return the Z coordinates of all points."
 msgstr "すべての点のZ座標を返します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:338:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:363:<autosummary>:1
 msgid ":obj:`hide_cells <pyvista.StructuredGrid.hide_cells>`\\ \\(ind\\)"
 msgstr ":obj:`hide_cells <pyvista.StructuredGrid.hide_cells>`\\ \\(ind\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:338:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:363:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid.hide_cells:1
 msgid "Hide cells without deleting them."
@@ -10237,34 +10508,34 @@ msgstr "非表示にするセルインデックスのリストまたは配列を
 msgid "Hide part of the middle of a structured surface."
 msgstr "構造化サーフェスの中央の一部を非表示にします．"
 
-#: ../../pyvista/docs/core/point-grids.rst:346
+#: ../../pyvista/docs/core/point-grids.rst:371
 msgid "Methods in Common with Structured and Unstructured Grids"
 msgstr "構造化グリッドと非構造化グリッドに共通のメソッド"
 
-#: ../../pyvista/docs/core/point-grids.rst:347
+#: ../../pyvista/docs/core/point-grids.rst:372
 msgid ""
 "These methods are common to both ``pv.StructuredGrid`` and "
 "``pv.UnstructuredGrid`` objects."
 msgstr ""
 "これらのメソッドは ``pv.StructuredGrid`` と ``pv.UnstructuredGrid`` オブジェクトの両方に共通です．"
 
-#: ../../pyvista/docs/core/point-grids.rst:356:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:381:<autosummary>:1
 msgid ":obj:`volume <pyvista.PointGrid.volume>`\\"
 msgstr ":obj:`volume <pyvista.PointGrid.volume>`\\"
 
-#: ../../pyvista/docs/core/point-grids.rst:356:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:381:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PointGrid.volume:1
 msgid "Compute the volume of the point grid."
 msgstr "ポイントグリッドの体積を計算します．"
 
-#: ../../pyvista/docs/core/point-grids.rst:361:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:386:<autosummary>:1
 msgid ":obj:`plot_curvature <pyvista.PointGrid.plot_curvature>`\\ \\(\\[curv\\_type\\]\\)"
 msgstr ""
 ":obj:`plot_curvature <pyvista.PointGrid.plot_curvature>`\\ "
 "\\(\\[curv\\_type\\]\\)"
 
-#: ../../pyvista/docs/core/point-grids.rst:361:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:386:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointGrid.plot_curvature:1
 msgid "Plot the curvature of the external surface of the grid."
@@ -10385,39 +10656,37 @@ msgstr ""
 "バイナリファイルもASCII .ply, .stl, と "
 ".vtkファイルもPyVistaで読むことができます．たとえば，PyVistaパッケージにはメッシュの例が含まれており，次のようにしてロードできます．"
 
-#: ../../pyvista/docs/core/points.rst:44
+#: ../../pyvista/docs/core/points.rst:53
 msgid "This mesh can then be written to a vtk file using:"
 msgstr "このメッシュは，次を使用してvtkファイルに書き込むことができます．"
 
-#: ../../pyvista/docs/core/points.rst:50
+#: ../../pyvista/docs/core/points.rst:59
 msgid "These meshes are identical."
 msgstr "これらのメッシュは同一です．"
 
-#: ../../pyvista/docs/core/points.rst:68
+#: ../../pyvista/docs/core/points.rst:80
 msgid "Mesh Manipulation and Plotting"
 msgstr "メッシュ操作とプロット"
 
-#: ../../pyvista/docs/core/points.rst:69
+#: ../../pyvista/docs/core/points.rst:81
 msgid ""
 "Meshes can be directly manipulated using NumPy or with the built-in "
-"translation and rotation routines. This example loads two meshes and moves, "
-"scales, and copies them."
+"translation and rotation routines.  This example loads two meshes and moves,"
+" scales, copies them, and finally plots them."
 msgstr ""
-"メッシュは，NumPyまたは組み込みの移動と回転ルーチンを使用して直接操作できます．この例では，2つのメッシュをロードし，移動，スケール，およびコピーします．"
 
-#: ../../pyvista/docs/core/points.rst:91
+#: ../../pyvista/docs/core/points.rst:85
 msgid ""
 "To plot more than one mesh a plotting class must be created to manage the "
-"plotting. The following code creates the class and plots the meshes with "
+"plotting.  The following code creates the class and plots the meshes with "
 "various colors."
 msgstr ""
-"複数のメッシュをプロットするには，プロットクラスを作成してプロットを管理する必要があります．次のコードは，クラスを作成し，メッシュをさまざまな色でプロットします．"
 
-#: ../../pyvista/docs/core/points.rst:116
+#: ../../pyvista/docs/core/points.rst:125
 msgid "pyvista.PolyData Grid Class Methods"
 msgstr "pyvista.PolyData グリッドクラスメソッド"
 
-#: ../../pyvista/docs/core/points.rst:117
+#: ../../pyvista/docs/core/points.rst:126
 msgid ""
 "The following is a description of the methods available to a "
 "``pyvista.PolyData`` object.  It inherits all methods from the original vtk "
@@ -10428,21 +10697,21 @@ msgstr ""
 "<https://www.vtk.org/doc/nightly/html/classvtkPolyData.html>`_ "
 "からすべてのメソッドを継承します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`area <pyvista.PolyData.area>`\\"
 msgstr ":obj:`area <pyvista.PolyData.area>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:1
 msgid "Return the mesh surface area."
 msgstr "メッシュ表面領域を返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -10450,94 +10719,94 @@ msgstr ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgid "Return the cell normals."
 msgstr "セルの法線を返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ":obj:`face_normals <pyvista.PolyData.face_normals>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`faces <pyvista.PolyData.faces>`\\"
 msgstr ":obj:`faces <pyvista.PolyData.faces>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:1
 msgid "Return a pointer to the faces as a numpy object."
 msgstr "面へのポインタをnumpyなオブジェクトとして返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`lines <pyvista.PolyData.lines>`\\"
 msgstr ":obj:`lines <pyvista.PolyData.lines>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:1
 msgid "Return a pointer to the lines as a numpy object."
 msgstr "ラインへのポインタをnumpyオブジェクトとして返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ":obj:`n_faces <pyvista.PolyData.n_faces>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ":obj:`n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:1
 msgid "Return the number of open edges on this mesh."
 msgstr "このメッシュ上の開いたエッジの数を返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`number_of_faces <pyvista.PolyData.number_of_faces>`\\"
 msgstr ":obj:`number_of_faces <pyvista.PolyData.number_of_faces>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ":obj:`obbTree <pyvista.PolyData.obbTree>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:1
 msgid "Return the obbTree of the polydata."
 msgstr "polydataのobbTreeを返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:1
 msgid "Return the point normals."
 msgstr "ポイント法線を返します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`verts <pyvista.PolyData.verts>`\\"
 msgstr ":obj:`verts <pyvista.PolyData.verts>`\\"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:1
 msgid "Get the vertex cells."
 msgstr "頂点セルを取得します．"
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`volume <pyvista.PolyData.volume>`\\"
 msgstr ":obj:`volume <pyvista.PolyData.volume>`\\"
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 msgid ":obj:`is_all_triangles <pyvista.PolyData.is_all_triangles>`\\ \\(\\)"
 msgstr ":obj:`is_all_triangles <pyvista.PolyData.is_all_triangles>`\\ \\(\\)"
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.is_all_triangles:1
 msgid "Return ``True`` if all the faces of the ``PolyData`` are triangles."
 msgstr "``PolyData`` のすべての面が三角形の場合， ``True`` を返します．"
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 msgid ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
 msgstr ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:1
 msgid "Write a surface mesh to disk."

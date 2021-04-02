@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-26 00:17+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -32,288 +32,203 @@ msgstr ""
 msgid "Plotting tools built for interactivity (see :ref:`widgets`)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:2
-msgid "Notebook Plotting"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:4
-msgid "In PyVista, we have two routes for plotting inside Jupyter notebooks."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:6
+#: ../../pyvista/docs/plotting/plotting.rst:6
 msgid ""
-"Server-side rendering with PyVista streaming to the notebook through "
-"``ipyvtk_simple``"
+"When plotting with the interactive rendering windows in VTK, several "
+"keyboard shortcuts are available:"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/index.rst:7
-msgid "Client-side rendering with ``itkwidgets``."
+#: ../../pyvista/docs/plotting/plotting.rst:10
+msgid "Key"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:4
-msgid "Using ``ipyvtk-simple``"
+#: ../../pyvista/docs/plotting/plotting.rst:10
+msgid "Action"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:6
+#: ../../pyvista/docs/plotting/plotting.rst:12
+msgid "Linux/Windows"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:12
+msgid "Mac"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:14
+msgid "``q``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:14
+msgid "Close the rendering window"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:16
+msgid "``v``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:16
+msgid "Isometric camera view"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:18
+msgid "``w``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:18
+msgid "Switch all datasets to a `wireframe` representation"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:20
+msgid "``r``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:20
+msgid "Reset the camera to view all datasets"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:22
+msgid "``s``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:22
+msgid "Switch all datasets to a `surface` representation"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "``shift+click`` or ``middle-click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "``shift+click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:24
+msgid "Pan the rendering scene"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "``left-click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "``cmd+click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:26
+msgid "Rotate the rendering scene in 3D"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:28
+msgid "``ctrl+click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:28
+msgid "Rotate the rendering scene in 2D (view-plane)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "``mouse-wheel`` or ``right-click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "``ctl+click``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:30
+msgid "Continuously zoom the rendering scene"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:32
+msgid "``shift+s``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:32
+msgid "Save a screenhsot (only on ``BackgroundPlotter``)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:34
+msgid "``shift+c``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:34
+msgid "Enable interactive cell selection/picking"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:36
+msgid "``up``/``down``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:36
+msgid "Zoom in and out"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:38
+msgid "``+``/``-``"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:38
+msgid "Increase/decrease the point size and line widths"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:43
+msgid "Plotting in a Jupyter Notebook"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:44
 msgid ""
-"``pyvista`` has the ability to display fully featured plots within a "
-"jupyterlab environment using ``ipyvtk-simple``.  This feature works by "
-"streaming the current render window to a canvas within jupyterlab and then "
-"passing any user actions from the canvas back to the VTK render window."
+"Static and interactive inline plots are possible using a Jupyter notebook.  "
+"The code snippet below will create a static screenshot of the rendering and "
+"display it in the Jupyter notebook:"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:12
+#: ../../pyvista/docs/plotting/plotting.rst:56
+msgid "It is possible to use the ``Plotter`` class as well."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:64
 msgid ""
-"While this isn't an exciting feature when jupyterlab is being run locally, "
-"this has huge implications when plotting remotely as you can display any "
-"plot (except for those with multiple render windows) from jupyterlab."
+"Additionally, you can generate interactive plots by leveraging a jupyter "
+"plotting backend like ``panel`` or ``ipygany``.  You can even use it to "
+"create interactive documentations online."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:17
+#: ../../pyvista/docs/plotting/plotting.rst:74
+msgid "For more details, see the section on :ref:`jupyter_plotting`."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:78
+msgid "Background Plotting"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:80
 msgid ""
-"For example, both sections of code will display an interactive canvas within"
-" jupyterlab:"
+"PyVista provides a plotter that enables users to create a rendering window "
+"in the background that remains interactive while the user performs their "
+"processing. This creates the ability to make a rendering scene and "
+"interactively add or remove datasets from the scene as well as has some "
+"useful menu functions for common scene manipulation or export tasks. To get "
+"started, try instantiating the :class:`pyvistaqt.BackgroundPlotter`:"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:33
-msgid "For convenience, you can enable ``use_ipyvtk`` by default with:"
+#: ../../pyvista/docs/plotting/plotting.rst:105
+msgid "Plot Time Series Data"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:42
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:19
-msgid "Installation"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:43
+#: ../../pyvista/docs/plotting/plotting.rst:107
 msgid ""
-"If you're using an Anaconda environment, installation is the quite "
-"straightforward:"
+"This example outlines how to plot data where the spatial reference and data "
+"values change through time:"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:51
-msgid "Where environment.yml is:"
+#: ../../pyvista/docs/plotting/plotting.rst:146
+msgid "Convenience Functions"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:64
-msgid "On Linux, you can setup your jupyterlab environment with:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:75
-msgid "Other Considerations"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:77
-msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:79
-msgid ""
-"If you do not have GPU acceleration, be sure to start up a virtual "
-"framebuffer using ``Xvfb``.  You can either start it using bash with:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/ipyvtk_plotting.rst:94
-msgid ""
-"Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
-"Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:4
-msgid "Using ``itkwidgets``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:6
-msgid ""
-"PyVista has an interface for visualizing plots in Jupyter.  The "
-"``pyvista.PlotterITK`` class allows you interactively visualize a mesh "
-"within a jupyter notebook.  For those who prefer plotting within jupyter, "
-"this is an great way of visualizing using ``VTK`` and ``pyvista``."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:12
-msgid "Special thanks to `@thewtex`_ for the `itkwidgets`_ library."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:20
-msgid ""
-"To use `PlotterITK` you'll need to install ``itkwidgets>=0.25.2``. Follow "
-"the installation steps `here "
-"<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:23
-msgid ""
-"You can install everything with `pip` if you prefer not using conda, but be "
-"sure your juptyerlab is up-to-date.  If you encounter problems, uninstall "
-"and reinstall jupyterlab using pip."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:29
-msgid "Example Plotting with ITKwidgets"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:30
-msgid ""
-"The following example shows how to create a simple plot that shows a simple "
-"sphere."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:50
-msgid "ITKwidgets with pyvista"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:53
-msgid ""
-"For convenience, figures can also be plotted using the ``plot_itk`` "
-"function:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:68
-#: ../../pyvista/docs/plotting/plotting.rst:70
-#: ../../pyvista/docs/plotting/plotting.rst:91
-#: ../../pyvista/docs/plotting/plotting.rst:112
-#: ../../pyvista/docs/plotting/widgets.rst:10
-msgid "Attributes"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-msgid ":obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.PlotterITK.background_color:1
-msgid "Return the background color of the plotter."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-msgid ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:71:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.PlotterITK.camera_position:1
-msgid "Return camera position of the plotter as a list."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:73
-#: ../../pyvista/docs/plotting/plotting.rst:75
-#: ../../pyvista/docs/plotting/plotting.rst:96
-#: ../../pyvista/docs/plotting/plotting.rst:117
-#: ../../pyvista/docs/plotting/widgets.rst:15
-msgid "Methods"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
-"scalars\\, opacity\\, ...\\]\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:1
-msgid "Add a PyVista/VTK mesh or dataset."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\,"
-" point\\_size\\]\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:1
-msgid "Add points to plotter."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-msgid ""
-":obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\, "
-"show\\_bounds\\]\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/notebook_plotting/itk_plotting.rst:76:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:1
-msgid "Show itkwidgets plotter in cell output."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:1
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper:1
-msgid "Bases: :class:`object`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:1
-msgid "ITKwidgets plotter."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:3
-msgid ""
-"Used for plotting interactively within a jupyter notebook. Requires "
-"``itkwidgets>=0.25.2``.  For installation see:"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:6
-msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK:9
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:17
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:15
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_legend:41
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_light:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:176
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.scalar_bars:4
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.screenshot:17
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.where_is:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:38
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-msgid "Examples"
+#: pyvista.plotting.helpers.plot:1
+msgid "Plot a vtk or numpy object."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:3
-msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:0
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:0
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -499,131 +414,155 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:6
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:7
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:3
+msgid "VTK object or ``numpy`` array to be plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:5
 msgid ""
-"Any PyVista or VTK mesh is supported. Also, any dataset that "
-":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+"Plots off screen when ``True``.  Helpful for saving screenshots without a "
+"window popping up."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:11
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:8
 msgid ""
-"Use to make the entire mesh have a single solid color. Either a string, RGB "
-"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
-"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
-"scalars are specified."
+"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
+" ``False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:16
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:22
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:11
 msgid ""
-"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
-"is present on the mesh or an array equal to the number of cells or the "
-"number of points in the mesh.  Array should be sized as a single vector. If "
-"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
-"used."
+"Saves screenshot to file when enabled.  See: "
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
+"takes screenshot and returns ``numpy`` array of image."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:23
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:11
 msgid ""
-"Opacity of the mesh. If a single float value is given, it will be the global"
-" opacity of the mesh and uniformly applied everywhere - should be between 0 "
-"and 1.  Default 1.0"
+"Saves screenshot to file when enabled.  See: "
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_mesh:27
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:14
+msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:16
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:11
+msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:18
 msgid ""
-"Smooth mesh surface mesh by taking into account surface normals.  Surface "
-"will appear smoother while sharp edges will still look sharp.  Default "
-"False."
+"Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
+"also accepted."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:3
-msgid "n x 3 numpy array of points or pyvista dataset with points."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:5
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:21
 msgid ""
-"Either a string, rgb list, or hex color string.  For example:  "
-"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+"When ``True``, the resulting plot is placed inline a jupyter notebook.  "
+"Assumes a jupyter console is active."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:5
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter:14
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_lines:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_point_labels:28
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_point_labels:41
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:3
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:30
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_background:3
-msgid "Either a string, rgb list, or hex color string.  For example:"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:24
+msgid "Shows a vtk axes widget.  Enabled by default."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:7
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:26
+msgid "Adds text at the bottom of the plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:28
+msgid "Use the ``add_volume`` method for volume rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:30
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:30
 msgid ""
-"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+"Deprecated.  Instead, set the backend either globally with "
+"``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
+"``backend='ipyvtk_simple'``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:12
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:34
 msgid ""
-"Point size of any nodes in the dataset plotted. Also applicable when "
-"style='points'. Default ``3.0``"
+"Jupyter notebook plotting backend to use.  One of the following:  * "
+"``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
+"static figure. * ``'ipygany'`` : Show a ``ipygany`` widget * ``'panel'`` : "
+"Show a ``panel`` widget.  This can also be set globally with "
+"``pyvista.set_jupyter_backend``"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.add_points:18
-msgid "Add 10 random points to the plotter"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:34
+msgid "Jupyter notebook plotting backend to use.  One of the following:"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:3
-msgid ""
-"Plot with the user interface collapsed.  UI can be enabled when plotting.  "
-"Default ``False``."
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:37
+msgid "``'none'`` : Do not display in the notebook."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:6
-msgid ""
-"Rotate the camera around the scene.  Default ``False``. Appears to be "
-"computationally intensive."
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:38
+msgid "``'static'`` : Display a static figure."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:9
-msgid "Show the bounding box.  Default False"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:39
+msgid "``'ipygany'`` : Show a ``ipygany`` widget"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:11
-msgid "Size of the points displayed in the"
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:40
+msgid "``'panel'`` : Show a ``panel`` widget."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:42
+msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+msgid "Keyword arguments for the Jupyter notebook plotting backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:47
+msgid "See help(Plotter.add_mesh) for additional options."
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -679,13 +618,55 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:14
-msgid "**viewer** -- ``ITKwidgets`` viewer."
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:50
+msgid ""
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
+"   [Window height x Window width x 3] for transparent_background=False   "
+"[Window height x Window width x 4] for transparent_background=True   "
+"Returned only when screenshot enabled"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/itkplotter.pydocstring of
-#: pyvista.plotting.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:50
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:49
+msgid ""
+"**cpos** (*list*) -- List of camera position, focal point, and view up."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:51
+msgid ""
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
+"[Window height x Window width x 3] for transparent_background=False [Window "
+"height x Window width x 4] for transparent_background=True Returned only "
+"when screenshot enabled"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:1
+msgid "Plot arrows as vectors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:3
+msgid "Accepts a single 3d point or array of 3d points."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:5
+msgid ""
+"Accepts a single 3d point or array of 3d vectors. Must contain the same "
+"number of items as cent."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:8
+msgid "See help(pyvista.Plot)"
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -733,294 +714,44 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:6
-msgid ""
-"When plotting with the interactive rendering windows in VTK, several "
-"keyboard shortcuts are available:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:10
-msgid "Key"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:10
-msgid "Action"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:12
-msgid "Linux/Windows"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:12
-msgid "Mac"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:14
-msgid "``q``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:14
-msgid "Close the rendering window"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:16
-msgid "``v``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:16
-msgid "Isometric camera view"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:18
-msgid "``w``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:18
-msgid "Switch all datasets to a `wireframe` representation"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:20
-msgid "``r``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:20
-msgid "Reset the camera to view all datasets"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:22
-msgid "``s``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:22
-msgid "Switch all datasets to a `surface` representation"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "``shift+click`` or ``middle-click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "``shift+click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:24
-msgid "Pan the rendering scene"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "``left-click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "``cmd+click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:26
-msgid "Rotate the rendering scene in 3D"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:28
-msgid "``ctrl+click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:28
-msgid "Rotate the rendering scene in 2D (view-plane)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "``mouse-wheel`` or ``right-click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "``ctl+click``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:30
-msgid "Continuously zoom the rendering scene"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:32
-msgid "``shift+s``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:32
-msgid "Save a screenhsot (only on ``BackgroundPlotter``)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:34
-msgid "``shift+c``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:34
-msgid "Enable interactive cell selection/picking"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:36
-msgid "``up``/``down``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:36
-msgid "Zoom in and out"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:38
-msgid "``+``/``-``"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:38
-msgid "Increase/decrease the point size and line widths"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:45
-msgid "Convenience Functions"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:1
-msgid "Plot a vtk or numpy object."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:3
-msgid "VTK object or numpy array to be plotted."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:5
-msgid ""
-"Plots off screen when True.  Helpful for saving screenshots without a window"
-" popping up."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:8
-msgid ""
-"Opens window in full screen.  When enabled, ignores window_size. Default "
-"False."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:11
-msgid ""
-"Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled.  When True, "
-"takes screenshot and returns numpy array of image."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:11
-msgid ""
-"Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:14
-msgid "When True, takes screenshot and returns numpy array of image."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:16
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:37
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:11
-msgid "Window size in pixels.  Defaults to [1024, 768]"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:18
-msgid ""
-"Shows mesh bounds when True.  Default False. Alias ``show_grid`` also "
-"accepted."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:21
-msgid ""
-"When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
-" jupyter console is active."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:24
-msgid "Shows a vtk axes widget.  Enabled by default."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:26
-msgid "Adds text at the bottom of the plot."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:28
-msgid "Use the ``add_volume`` method for volume rendering."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:30
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:29
-msgid ""
-"Use the ``ipyvtk-simple`` ``ViewInteractiveWidget`` to visualize the plot "
-"within a juyterlab notebook."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:33
-msgid "See help(Plotter.add_mesh) for additional options."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:36
-msgid ""
-"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
-"   [Window height x Window width x 3] for transparent_background=False   "
-"[Window height x Window width x 4] for transparent_background=True   "
-"Returned only when screenshot enabled"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:36
-msgid ""
-"**cpos** (*list*) -- List of camera position, focal point, and view up."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:37
-msgid ""
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
-"[Window height x Window width x 3] for transparent_background=False [Window "
-"height x Window width x 4] for transparent_background=True Returned only "
-"when screenshot enabled"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:1
-msgid "Plot arrows as vectors."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:3
-msgid "Accepts a single 3d point or array of 3d points."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:5
-msgid ""
-"Accepts a single 3d point or array of 3d vectors. Must contain the same "
-"number of items as cent."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:8
-msgid "See help(pyvista.Plot)"
-msgstr ""
-
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:12
 msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:15
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_legend:41
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:179
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.scalar_bars:4
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:17
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.where_is:10
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:55
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
+msgid "Examples"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -1043,97 +774,104 @@ msgstr ""
 msgid "Create a Box axes orientation widget with labels."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:61
+#: ../../pyvista/docs/plotting/plotting.rst:158
 msgid "Base Plotter"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:63
+#: ../../pyvista/docs/plotting/plotting.rst:160
 msgid ""
 "The base plotter class that all PyVista plotters inherit. Please note that "
 "the former ``BackgroundPlotter`` class has been moved to the `pyvistaqt`_ "
 "package."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:167
+#: ../../pyvista/docs/plotting/plotting.rst:188
+#: ../../pyvista/docs/plotting/plotting.rst:207
+#: ../../pyvista/docs/plotting/widgets.rst:10
+msgid "Attributes"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`background_color <pyvista.BasePlotter.background_color>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.background_color:1
 msgid "Return the background color of the first render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`bounds <pyvista.BasePlotter.bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.bounds:1
 msgid "Return the bounds of the active renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera <pyvista.BasePlotter.camera>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera:1
 msgid "Return the active camera of the active renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera_position <pyvista.BasePlotter.camera_position>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera_position:1
 msgid "Return camera position of the active render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`camera_set <pyvista.BasePlotter.camera_set>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.camera_set:1
 msgid "Return if the camera of the active renderer has been set."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`center <pyvista.BasePlotter.center>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.center:1
 msgid "Return the center of the active renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`click_position <pyvista.BasePlotter.click_position>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`image <pyvista.BasePlotter.image>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.image:1
 msgid "Return an image array of current render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`image_depth <pyvista.BasePlotter.image_depth>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1141,782 +879,789 @@ msgstr ""
 msgid "Return a depth image representing current render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`length <pyvista.BasePlotter.length>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.length:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.length:1
 msgid "Return the length of the diagonal of the bounding box of the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`mouse_position <pyvista.BasePlotter.mouse_position>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.BasePlotter.parallel_projection>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_projection:1
 msgid "Return parallel projection state of active render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`parallel_scale <pyvista.BasePlotter.parallel_scale>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.parallel_scale:1
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_scale:1
 msgid "Return parallel scale of active render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`renderer <pyvista.BasePlotter.renderer>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.renderer:1
 msgid "Return the active renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:1
 msgid "Scalar bars."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`scale <pyvista.BasePlotter.scale>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scale:1
 msgid "Return the scaling of the active renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`store_image <pyvista.BasePlotter.store_image>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.store_image:1
 msgid "Return if an image will be saved on close."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 msgid ":obj:`window_size <pyvista.BasePlotter.window_size>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:73:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.window_size:1
 msgid "Return the render window size."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:172
+#: ../../pyvista/docs/plotting/plotting.rst:193
+#: ../../pyvista/docs/plotting/plotting.rst:212
+#: ../../pyvista/docs/plotting/widgets.rst:15
+msgid "Methods"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_actor <pyvista.BasePlotter.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:1
 msgid "Add an actor to render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_arrows <pyvista.BasePlotter.add_arrows>`\\ \\(cent\\, "
 "direction\\[\\, mag\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_arrows:1
 msgid "Add arrows to the plotter."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_axes <pyvista.BasePlotter.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:1
 msgid "Add an interactive axes widget in the bottom left corner."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_axes_at_origin <pyvista.BasePlotter.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes_at_origin:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes_at_origin:1
 msgid "Add axes actor at origin."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_background_image <pyvista.BasePlotter.add_background_image>`\\ "
 "\\(image\\_path\\[\\, scale\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_background_image:1
 msgid "Add a background image to a plot."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_bounding_box <pyvista.BasePlotter.add_bounding_box>`\\ "
 "\\(\\[color\\, corner\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:1
 msgid "Add an unlabeled and unticked box at the boundaries of plot."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_floor <pyvista.BasePlotter.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:1
 msgid "Show a floor mesh."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_key_event <pyvista.BasePlotter.add_key_event>`\\ \\(key\\, "
 "callback\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_key_event:1
 msgid "Add a function to callback when the given key is pressed."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_legend <pyvista.BasePlotter.add_legend>`\\ \\(\\[labels\\, "
 "bcolor\\, border\\, size\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:1
 msgid "Add a legend to render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_light <pyvista.BasePlotter.add_light>`\\ \\(light\\[\\, "
 "only\\_active\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:1
 msgid "Add a Light to the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_lines <pyvista.BasePlotter.add_lines>`\\ \\(lines\\[\\, color\\, "
 "width\\, label\\, name\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:1
 msgid "Add lines to the plotting object."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_mesh <pyvista.BasePlotter.add_mesh>`\\ \\(mesh\\[\\, color\\, "
 "style\\, scalars\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:1
 msgid ""
 "Add any PyVista/VTK mesh or dataset that PyVista can wrap to the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_orientation_widget <pyvista.BasePlotter.add_orientation_widget>`\\"
 " \\(actor\\[\\, interactive\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_orientation_widget:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_orientation_widget:1
 msgid "Use the given actor in an orientation marker widget."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_point_labels <pyvista.BasePlotter.add_point_labels>`\\ "
 "\\(points\\, labels\\[\\, italic\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:1
 msgid ""
 "Create a point actor with one label from list labels assigned to each point."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_point_scalar_labels "
 "<pyvista.BasePlotter.add_point_scalar_labels>`\\ \\(points\\, labels\\[\\, "
 "...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:1
 msgid "Label the points from a dataset with the values of their scalars."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`add_points <pyvista.BasePlotter.add_points>`\\ \\(points\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:1
 msgid "Add points to a mesh."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ \\(\\[title\\, "
 "mapper\\, n\\_labels\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:1
 msgid "Create scalar bar using the ranges as set by the last input mesh."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_text <pyvista.BasePlotter.add_text>`\\ \\(text\\[\\, position\\, "
 "font\\_size\\, color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_text:1
 msgid "Add text to plot object in the top left corner by default."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`add_volume <pyvista.BasePlotter.add_volume>`\\ \\(volume\\[\\, "
 "scalars\\, clim\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:1
 msgid "Add a volume, rendered using a smart mapper by default."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`clear <pyvista.BasePlotter.clear>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear:1
 msgid "Clear plot by removing all actors and properties."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`clear_events_for_key <pyvista.BasePlotter.clear_events_for_key>`\\ "
 "\\(key\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear_events_for_key:1
 msgid "Remove the callbacks associated to the key."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`close <pyvista.BasePlotter.close>`\\ \\(\\[render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.close:1
 msgid "Close the render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`deep_clean <pyvista.BasePlotter.deep_clean>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.deep_clean:1
 msgid "Clean the plotter of the memory."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`disable <pyvista.BasePlotter.disable>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable:1
 msgid "Disable this renderer's camera from being interactive."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`disable_3_lights <pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.disable_3_lights:1
 msgid "Please use ``enable_lightkit``, this method has been depreciated."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_anti_aliasing <pyvista.BasePlotter.disable_anti_aliasing>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_anti_aliasing:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_anti_aliasing:1
 msgid "Disable anti-aliasing FXAA."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_depth_peeling <pyvista.BasePlotter.disable_depth_peeling>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_depth_peeling:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_depth_peeling:1
 msgid "Disable depth peeling."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.BasePlotter.disable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_eye_dome_lighting:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_eye_dome_lighting:1
 msgid "Disable eye dome lighting (EDL)."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`disable_parallel_projection "
 "<pyvista.BasePlotter.disable_parallel_projection>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_parallel_projection:1
 msgid "Reset the camera to use perspective projection."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable:1
 msgid "Enable this renderer's camera to be interactive."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_3_lights <pyvista.BasePlotter.enable_3_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_3_lights:1
 msgid "Enable 3-lights illumination."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_anti_aliasing <pyvista.BasePlotter.enable_anti_aliasing>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_anti_aliasing:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_anti_aliasing:1
 msgid "Enable anti-aliasing FXAA."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_depth_peeling <pyvista.BasePlotter.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:1
 msgid "Enable depth peeling to improve rendering of translucent geometry."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.BasePlotter.enable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_eye_dome_lighting:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_eye_dome_lighting:1
 msgid "Enable eye dome lighting (EDL)."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable_image_style <pyvista.BasePlotter.enable_image_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_image_style:1
 msgid "Set the interactive style to image."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_joystick_style <pyvista.BasePlotter.enable_joystick_style>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_joystick_style:1
 msgid "Set the interactive style to joystick."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_lightkit <pyvista.BasePlotter.enable_lightkit>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:1
 msgid "Enable the default light-kit lighting."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_parallel_projection "
 "<pyvista.BasePlotter.enable_parallel_projection>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
 msgid "Enable parallel projection."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_rubber_band_2d_style "
 "<pyvista.BasePlotter.enable_rubber_band_2d_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_rubber_band_2d_style:1
 msgid "Set the interactive style to rubber band 2d."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_rubber_band_style "
 "<pyvista.BasePlotter.enable_rubber_band_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_rubber_band_style:1
 msgid "Set the interactive style to rubber band picking."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_terrain_style <pyvista.BasePlotter.enable_terrain_style>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_terrain_style:1
 msgid "Set the interactive style to terrain."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_trackball_actor_style "
 "<pyvista.BasePlotter.enable_trackball_actor_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_trackball_actor_style:1
 msgid "Set the interactive style to trackball actor."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`enable_trackball_style <pyvista.BasePlotter.enable_trackball_style>`\\"
 " \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_trackball_style:1
 msgid "Set the interactive style to trackball camera."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable_zoom_style <pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_zoom_style:1
 msgid "Set the interactive style to rubber band zoom."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`export_obj <pyvista.BasePlotter.export_obj>`\\ \\(filename\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.export_obj:1
 msgid "Export scene to OBJ format."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`export_vtkjs <pyvista.BasePlotter.export_vtkjs>`\\ \\(filename\\[\\, "
 "compress\\_arrays\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.export_vtkjs:1
 msgid "Export the current rendering scene as a VTKjs scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`fly_to <pyvista.BasePlotter.fly_to>`\\ \\(point\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.fly_to:1
 msgid "Move the current camera's focal point to a position point."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`generate_orbital_path <pyvista.BasePlotter.generate_orbital_path>`\\ "
 "\\(\\[factor\\, n\\_points\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:1
 msgid "Generate an orbital path around the data scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`get_default_cam_pos <pyvista.BasePlotter.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_default_cam_pos:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_default_cam_pos:1
 msgid "Return the default focal points and viewup."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`get_image_depth <pyvista.BasePlotter.get_image_depth>`\\ "
 "\\(\\[fill\\_value\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`hide_axes <pyvista.BasePlotter.hide_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.hide_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.hide_axes:1
 msgid "Hide the axes orientation widget."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`hide_axes_all <pyvista.BasePlotter.hide_axes_all>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.hide_axes_all:1
 msgid "Hide the axes orientation widget in all renderers."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`increment_point_size_and_line_width "
 "<pyvista.BasePlotter.increment_point_size_and_line_width>`\\ \\(increment\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.increment_point_size_and_line_width:1
 msgid "Increment point size and line width of all actors."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`index_to_loc <pyvista.BasePlotter.index_to_loc>`\\ \\(index\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.index_to_loc:1
 msgid "Convert a 1D index location to the 2D location on the plotting grid."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`isometric_view <pyvista.BasePlotter.isometric_view>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.isometric_view:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_isometric:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.isometric_view:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -1924,676 +1669,676 @@ msgstr ""
 msgid "Reset the camera to a default isometric view."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`isometric_view_interactive "
 "<pyvista.BasePlotter.isometric_view_interactive>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.isometric_view_interactive:1
 msgid "Set the current interactive render window to isometric view."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`key_press_event <pyvista.BasePlotter.key_press_event>`\\ \\(obj\\, "
 "event\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.key_press_event:1
 msgid "Listen for key press event."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`left_button_down <pyvista.BasePlotter.left_button_down>`\\ \\(obj\\, "
 "event\\_type\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.left_button_down:1
 msgid "Register the event for a left button down click."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`link_views <pyvista.BasePlotter.link_views>`\\ \\(\\[views\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.link_views:1
 msgid "Link the views' cameras."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`loc_to_group <pyvista.BasePlotter.loc_to_group>`\\ \\(loc\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid "Return group id of the given location index."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`loc_to_index <pyvista.BasePlotter.loc_to_index>`\\ \\(loc\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.loc_to_index:1
 msgid "Return index of the render window given a location index."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`open_gif <pyvista.BasePlotter.open_gif>`\\ \\(filename\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_gif:1
 msgid "Open a gif file."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`open_movie <pyvista.BasePlotter.open_movie>`\\ \\(filename\\[\\, "
 "framerate\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_movie:1
 msgid "Establish a connection to the ffmpeg writer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`orbit_on_path <pyvista.BasePlotter.orbit_on_path>`\\ \\(\\[path\\, "
 "focus\\, step\\, viewup\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.orbit_on_path:1
 msgid "Orbit on the given path focusing on the focus point."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_actor <pyvista.BasePlotter.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
 msgid "Remove an actor from the Renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_all_lights <pyvista.BasePlotter.remove_all_lights>`\\ "
 "\\(\\[only\\_active\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_all_lights:1
 msgid "Remove all lights from the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_background_image "
 "<pyvista.BasePlotter.remove_background_image>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_background_image:1
 msgid "Remove the background image from the current subplot."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_bounding_box <pyvista.BasePlotter.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounding_box:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounding_box:1
 msgid "Remove bounding box."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`remove_bounds_axes <pyvista.BasePlotter.remove_bounds_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounds_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_bounds_axes:1
 msgid "Remove bounds axes."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_floors <pyvista.BasePlotter.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_floors:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_floors:1
 msgid "Remove all floor actors."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`remove_legend <pyvista.BasePlotter.remove_legend>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_legend:1
 msgid "Remove the legend actor."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`remove_scalar_bar <pyvista.BasePlotter.remove_scalar_bar>`\\ "
 "\\(\\[title\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:1
 msgid "Remove a scalar bar."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`render <pyvista.BasePlotter.render>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:1
 msgid "Render the main window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`reset_camera <pyvista.BasePlotter.reset_camera>`\\ \\(\\[render\\, "
 "bounds\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera:1
 msgid "Reset the camera of the active render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`reset_camera_clipping_range "
 "<pyvista.BasePlotter.reset_camera_clipping_range>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.reset_camera_clipping_range:1
 msgid "Reset camera clipping planes."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`reset_key_events <pyvista.BasePlotter.reset_key_events>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.reset_key_events:1
 msgid "Reset all of the key press events to their defaults."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`save_graphic <pyvista.BasePlotter.save_graphic>`\\ \\(filename\\[\\, "
 "title\\, raster\\, painter\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.save_graphic:1
 msgid "Save a screenshot of the rendering window as a graphic file."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`screenshot <pyvista.BasePlotter.screenshot>`\\ \\(\\[filename\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:1
 msgid "Take screenshot at current camera position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_background <pyvista.BasePlotter.set_background>`\\ \\(color\\[\\, "
 "top\\, all\\_renderers\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.set_background:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:1
 msgid "Set the background color."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.BasePlotter.set_focus>`\\ \\(point\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_focus:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_focus:1
 msgid "Set focus to a point."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_position <pyvista.BasePlotter.set_position>`\\ \\(point\\[\\, "
 "reset\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:1
 msgid "Set camera position to a point."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`set_scale <pyvista.BasePlotter.set_scale>`\\ \\(\\[xscale\\, yscale\\,"
 " zscale\\, reset\\_camera\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:1
 msgid "Scale all the datasets in the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`set_viewup <pyvista.BasePlotter.set_viewup>`\\ \\(vector\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:1
 msgid "Set camera viewup vector."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_axes <pyvista.BasePlotter.show_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_axes:1
 msgid "Show the axes orientation widget."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_axes_all <pyvista.BasePlotter.show_axes_all>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.show_axes_all:1
 msgid "Show the axes orientation widget in all renderers."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`show_bounds <pyvista.BasePlotter.show_bounds>`\\ \\(\\[mesh\\, "
 "bounds\\, show\\_xaxis\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:1
 msgid "Add bounds axes."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`show_grid <pyvista.BasePlotter.show_grid>`\\ \\(\\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:1
 msgid "Show gridlines and axes labels."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`store_click_position <pyvista.BasePlotter.store_click_position>`\\ "
 "\\(\\*args\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.store_click_position:1
 msgid "Store click position in viewport coordinates."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`store_mouse_position <pyvista.BasePlotter.store_mouse_position>`\\ "
 "\\(\\*args\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.store_mouse_position:1
 msgid "Store mouse position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`subplot <pyvista.BasePlotter.subplot>`\\ \\(index\\_row\\[\\, "
 "index\\_column\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.subplot:1
 msgid "Set the active subplot."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`track_click_position <pyvista.BasePlotter.track_click_position>`\\ "
 "\\(\\[callback\\, side\\, viewport\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.track_click_position:1
 msgid "Keep track of the click position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`track_mouse_position <pyvista.BasePlotter.track_mouse_position>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.track_mouse_position:1
 msgid "Keep track of the mouse position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`unlink_views <pyvista.BasePlotter.unlink_views>`\\ \\(\\[views\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.unlink_views:1
 msgid "Unlink the views' cameras."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`untrack_click_position <pyvista.BasePlotter.untrack_click_position>`\\"
 " \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.untrack_click_position:1
 msgid "Stop tracking the click position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`untrack_mouse_position <pyvista.BasePlotter.untrack_mouse_position>`\\"
 " \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.untrack_mouse_position:1
 msgid "Stop tracking the mouse position."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update <pyvista.BasePlotter.update>`\\ \\(\\[stime\\, force\\_redraw\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update:1
 msgid "Update window, redraw, process messages query."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update_bounds_axes <pyvista.BasePlotter.update_bounds_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.update_bounds_axes:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.update_bounds_axes:1
 msgid "Update the bounds axes of the render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_coordinates <pyvista.BasePlotter.update_coordinates>`\\ "
 "\\(points\\[\\, mesh\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_coordinates:1
 msgid "Update the points of an object in the plotter."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_scalar_bar_range "
 "<pyvista.BasePlotter.update_scalar_bar_range>`\\ \\(clim\\[\\, name\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_scalar_bar_range:1
 msgid "Update the value range of the active or named scalar bar."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`update_scalars <pyvista.BasePlotter.update_scalars>`\\ "
 "\\(scalars\\[\\, mesh\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_scalars:1
 msgid "Update scalars of an object in the plotter."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`update_style <pyvista.BasePlotter.update_style>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_style:1
 msgid "Update the camera interactor style."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`view_isometric <pyvista.BasePlotter.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
 ":obj:`view_vector <pyvista.BasePlotter.view_vector>`\\ \\(vector\\[\\, "
 "viewup\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_vector:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_vector:1
 msgid "Point the camera in the direction of the given vector."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_xy <pyvista.BasePlotter.view_xy>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xy:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xy:1
 msgid "View the XY plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_xz <pyvista.BasePlotter.view_xz>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xz:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_xz:1
 msgid "View the XZ plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_yx <pyvista.BasePlotter.view_yx>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yx:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yx:1
 msgid "View the YX plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_yz <pyvista.BasePlotter.view_yz>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yz:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_yz:1
 msgid "View the YZ plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_zx <pyvista.BasePlotter.view_zx>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zx:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zx:1
 msgid "View the ZX plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`view_zy <pyvista.BasePlotter.view_zy>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zy:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.view_zy:1
 msgid "View the ZY plane."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:1
 msgid "Return the subplot coordinates of a given actor."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:79:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.write_frame:1
 msgid "Write a single frame to the movie file."
@@ -2659,6 +2404,25 @@ msgid ""
 "Either a string, rgb list, or hex color string.  For example:      * "
 "``color='white'``     * ``color='w'``     * ``color=[1, 1, 1]``     * "
 "``color='#FFFFFF'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_lines:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_point_labels:28
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_point_labels:41
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.set_background:3
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:30
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_background:3
+msgid "Either a string, rgb list, or hex color string.  For example:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -3580,11 +3344,37 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:7
+msgid ""
+"Any PyVista or VTK mesh is supported. Also, any dataset that "
+":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:11
+msgid ""
+"Use to make the entire mesh have a single solid color. Either a string, RGB "
+"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
+"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
+"scalars are specified."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:17
 msgid ""
 "Visualization style of the mesh.  One of the following: ``style='surface'``,"
 " ``style='wireframe'``, ``style='points'``. Defaults to ``'surface'``. Note "
 "that ``'wireframe'`` only shows a wireframe of the outer geometry."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:22
+msgid ""
+"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
+"is present on the mesh or an array equal to the number of cells or the "
+"number of points in the mesh.  Array should be sized as a single vector. If "
+"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
+"used."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -3915,12 +3705,19 @@ msgid "Force a render when True.  Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:172
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:171
+msgid ""
+"Set component of vector valued scalars to plot.  Must be nonnegative, if "
+"supplied. If ``None``, the magnitude of the vector is plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:175
 msgid "**actor** -- VTK actor of the mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:177
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:180
 msgid ""
 "Add a sphere to the plotter and show it with a custom scalar bar title."
 msgstr ""
@@ -5793,7 +5590,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.get_pick_position:1
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_pick_position:1
 msgid "Get the pick position/area as x0, y0, x1, y1."
@@ -6385,37 +6182,37 @@ msgstr ""
 msgid "**places** -- A list with the subplot coordinates of the actor."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:88
+#: ../../pyvista/docs/plotting/plotting.rst:185
 msgid "Plotter"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:94:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:191:<autosummary>:1
 msgid ":obj:`last_update_time <pyvista.Plotter.last_update_time>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:94:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:191:<autosummary>:1
 msgid ":obj:`right_timer_id <pyvista.Plotter.right_timer_id>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 msgid ""
 ":obj:`add_title <pyvista.Plotter.add_title>`\\ \\(title\\[\\, font\\_size\\,"
 " color\\, font\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:1
 msgid "Add text to the top center of the plot."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 msgid ""
 ":obj:`show <pyvista.Plotter.show>`\\ \\(\\[title\\, window\\_size\\, "
 "interactive\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:101:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:196:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:1
 msgid "Display the plotting window."
@@ -6469,6 +6266,11 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:37
+msgid "Window size in pixels.  Defaults to [1024, 768]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:39
 msgid ""
 "The number of multi-samples used to mitigate aliasing. 4 is a good default "
@@ -6517,7 +6319,7 @@ msgstr ""
 msgid ""
 "Please use the ``q``-key to close the plotter as some operating systems "
 "(namely Windows) will experience issues saving a screenshot if the exit "
-"button in the GUI is prressed."
+"button in the GUI is pressed."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -6547,398 +6349,428 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:21
 msgid ""
-"Opens window in full screen.  When enabled, ignores window_size.  Default "
-"``False``."
+"Opens window in full screen.  When enabled, ignores ``window_size``.  "
+"Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:24
-msgid "The camera position to use"
+msgid ""
+"The camera position.  You can also set this with "
+"``Plotter.camera_position``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:26
+#: pyvista.plotting.plotting.Plotter.show:27
 msgid ""
 "Returns a numpy array representing the last image along with the camera "
 "position."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:33
+#: pyvista.plotting.plotting.Plotter.show:45
 msgid ""
-"* **cpos** (*list*) -- List of camera position, focal point, and view up * "
+"Return the jupyterlab viewer, scene, or display object when plotting with "
+"jupyter notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:49
+msgid ""
+"* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True``   or ``screenshot`` is set."
+"``return_img=True``   or ``screenshot`` is set. * *widget* -- IPython widget"
+" when ``return_viewer==True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:33
-msgid "**cpos** (*list*) -- List of camera position, focal point, and view up"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:34
+#: pyvista.plotting.plotting.Plotter.show:50
 msgid ""
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
 "``return_img=True`` or ``screenshot`` is set."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:39
-msgid "Show the plotting window and display it using the ipyvtk-simple viewer"
+#: pyvista.plotting.plotting.Plotter.show:52
+msgid "*widget* -- IPython widget when ``return_viewer==True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:44
+#: pyvista.plotting.plotting.Plotter.show:56
+msgid "Simply show the plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:60
 msgid ""
 "Take a screenshot interactively.  Screenshot will be of the last image "
 "shown."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:109
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:65
+msgid "Display an ``ipygany`` scene within a jupyter notebook"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:69
+msgid "Return an ``ipygany`` scene."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:204
 msgid "Renderer"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+msgid ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.axes_enabled:1
+msgid "Return ``True`` when axes are enabled."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`background_color <pyvista.Renderer.background_color>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.background_color:1
 msgid "Return the background color of this renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`bounds <pyvista.Renderer.bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.bounds:1
 msgid "Return the bounds of all actors present in the rendering window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`camera <pyvista.Renderer.camera>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera:1
 msgid "Return the active camera for the rendering scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`camera_position <pyvista.Renderer.camera_position>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera_position:1
 msgid "Return camera position of active render window."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`center <pyvista.Renderer.center>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.center:1
 msgid ""
 "Return the center of the bounding box around all data present in the scene."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`length <pyvista.Renderer.length>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`lights <pyvista.Renderer.lights>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.lights:1
 msgid "Return a list of all lights in the renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:115:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`parallel_scale <pyvista.Renderer.parallel_scale>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_actor <pyvista.Renderer.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, name\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_axes <pyvista.Renderer.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_axes_at_origin <pyvista.Renderer.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, y\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`add_border <pyvista.Renderer.add_border>`\\ \\(\\[color\\, width\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_border:1
 msgid "Add borders around the frame."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_bounding_box <pyvista.Renderer.add_bounding_box>`\\ \\(\\[color\\,"
 " corner\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_light:1
 msgid "Add a Light to the renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`add_orientation_widget <pyvista.Renderer.add_orientation_widget>`\\ "
 "\\(actor\\[\\, interactive\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`clear <pyvista.Renderer.clear>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.clear:1
 msgid "Remove all actors and properties."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`close <pyvista.Renderer.close>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.close:1
 msgid "Close out widgets and sensitive elements."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`deep_clean <pyvista.Renderer.deep_clean>`\\ \\(\\[render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.deep_clean:1
 msgid "Clean the renderer of the memory."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`disable <pyvista.Renderer.disable>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_anti_aliasing <pyvista.Renderer.disable_anti_aliasing>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_depth_peeling <pyvista.Renderer.disable_depth_peeling>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_eye_dome_lighting "
 "<pyvista.Renderer.disable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`disable_parallel_projection "
 "<pyvista.Renderer.disable_parallel_projection>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable <pyvista.Renderer.enable>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable_anti_aliasing <pyvista.Renderer.enable_anti_aliasing>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_depth_peeling <pyvista.Renderer.enable_depth_peeling>`\\ "
 "\\(\\[number\\_of\\_peels\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_eye_dome_lighting "
 "<pyvista.Renderer.enable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`enable_parallel_projection "
 "<pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`get_default_cam_pos <pyvista.Renderer.get_default_cam_pos>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`get_pick_position <pyvista.Renderer.get_pick_position>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`hide_axes <pyvista.Renderer.hide_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`isometric_view <pyvista.Renderer.isometric_view>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_actor <pyvista.Renderer.remove_actor>`\\ \\(actor\\[\\, "
 "reset\\_camera\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_all_lights:1
 msgid "Remove all lights from the renderer."
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_bounding_box <pyvista.Renderer.remove_bounding_box>`\\ "
 "\\(\\[render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`remove_bounds_axes <pyvista.Renderer.remove_bounds_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`remove_floors <pyvista.Renderer.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`reset_camera <pyvista.Renderer.reset_camera>`\\ \\(\\[render\\, bounds\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, top\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_position <pyvista.Renderer.set_position>`\\ \\(point\\[\\, reset\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`set_scale <pyvista.Renderer.set_scale>`\\ \\(\\[xscale\\, yscale\\, "
 "zscale\\, reset\\_camera\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_viewup <pyvista.Renderer.set_viewup>`\\ \\(vector\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`show_axes <pyvista.Renderer.show_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
 ":obj:`show_bounds <pyvista.Renderer.show_bounds>`\\ \\(\\[mesh\\, bounds\\, "
 "show\\_xaxis\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`show_grid <pyvista.Renderer.show_grid>`\\ \\(\\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`update_bounds_axes <pyvista.Renderer.update_bounds_axes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_isometric <pyvista.Renderer.view_isometric>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_vector <pyvista.Renderer.view_vector>`\\ \\(vector\\[\\, viewup\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_xy <pyvista.Renderer.view_xy>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_xz <pyvista.Renderer.view_xz>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_yx <pyvista.Renderer.view_yx>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_yz <pyvista.Renderer.view_yz>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_zx <pyvista.Renderer.view_zx>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/plotting/plotting.rst:122:<autosummary>:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`view_zy <pyvista.Renderer.view_zy>`\\ \\(\\[negative\\]\\)"
 msgstr ""
 
@@ -6950,52 +6782,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:1
 msgid "Renderer class."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:130
-msgid "Plotting in a Jupyter Notebook"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:132
-msgid ""
-"Inline plots are possible using a Jupyter notebook.  The code snippet below "
-"will create a static screenshot of the rendering and display it in the "
-"Jupyter notebook:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:154
-msgid "Jupyter Inline Plotting"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:156
-msgid ""
-"To display interactive plots in Jupyter notebooks, use the "
-":class:`pyvistaqt.BackgroundPlotter` to open a rendering window in the "
-"background that you can manipulate in real time from the Jupyter notebook:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176
-msgid "Background Plotting"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:178
-msgid ""
-"PyVista provides a plotter that enables users to create a rendering window "
-"in the background that remains interactive while the user performs their "
-"processing. This creates the ability to make a rendering scene and "
-"interactively add or remove datasets from the scene as well as has some "
-"useful menu functions for common scene manipulation or export tasks. To get "
-"started, try instantiating the :class:`pyvistaqt.BackgroundPlotter`:"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:202
-msgid "Plot Time Series Data"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:204
-msgid ""
-"This example outlines how to plot data where the spatial reference and data "
-"values change through time:"
 msgstr ""
 
 #: ../../pyvista/docs/plotting/qt_plotting.rst:4
@@ -7159,6 +6945,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.close:1
 msgid "Close the widgets."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper:1
+msgid "Bases: :class:`object`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
