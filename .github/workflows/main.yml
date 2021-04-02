@@ -58,16 +58,16 @@ jobs:
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
         sleep 3
         set +x
-        rm ./examples/*/*.py
-        mv ./examples ./pyvista/docs
+        rm ./locale/examples/*/*.py
+        mv ./locale/examples ./pyvista/docs
         git submodule update --remote
         (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
-        mv ./pyvista/docs/examples .
+        mv ./pyvista/docs/examples ./locale
         ls ./pyvista/docs/images
-        rm -Rf images
-        mv ./pyvista/docs/images .
+        rm -Rf ./locale/images
+        mv ./pyvista/docs/images ./locale
         deactivate
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
