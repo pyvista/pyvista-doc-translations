@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:09+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Pythonで学ぶ有限要素法 <tkoyama010@gmail.com>, 2021\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -354,7 +354,7 @@ msgstr "**cylinder** -- 円柱表面．"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.Spline:13
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:39
+#: pyvista.utilities.geometric_objects.CircularArc:24
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -757,94 +757,57 @@ msgstr "2つの端点と中心で定義される円弧を作成します．"
 #: pyvista.utilities.geometric_objects.CircularArc:3
 msgid ""
 "The number of segments composing the polyline is controlled by setting the "
-"object resolution.  Alternatively, one can use a better API (that does not "
-"allow for inconsistent nor ambiguous inputs), using a starting point (polar "
-"vector, measured from the arc's center), a normal to the plane of the arc, "
-"and an angle defining the arc length."
+"object resolution."
 msgstr ""
-"ポリラインを構成するセグメントの数は，オブジェクトの解像度を設定することによってコントロールされます．代わりに，始点(円弧の中心から測定した極ベクトル)，円弧の平面に垂直，および円弧の長さを定義する角度を使用して，より適切な(一貫性のないまたは曖昧な入力を許さない)APIを使用することもできます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:10
+#: pyvista.utilities.geometric_objects.CircularArc:6
 msgid "Position of the first end point."
 msgstr "最初の終点の位置です．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:12
+#: pyvista.utilities.geometric_objects.CircularArc:8
 msgid "Position of the other end point."
 msgstr "もう一方の終点の位置．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:14
+#: pyvista.utilities.geometric_objects.CircularArc:10
 msgid "Center of the circle that defines the arc."
 msgstr "円弧を定義する円の中心．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:16
+#: pyvista.utilities.geometric_objects.CircularArc:12
 msgid ""
 "The number of segments of the polyline that draws the arc. Resolution of 1 "
 "will just create a line."
 msgstr "円弧を描くポリラインのセグメント数．解像度を1にすると，直線が作成されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:19
+#: pyvista.utilities.geometric_objects.CircularArc:15
 msgid ""
-"The normal vector to the plane of the arc.  By default it points in the "
-"positive Z direction."
-msgstr "円弧の平面に対する法線ベクトルです．既定では，正のZ方向を指します．"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:22
-msgid ""
-"(starting point of the arc).  By default it is the unit vector in the "
-"positive x direction. Note: This is only used when normal has been input."
-msgstr "(円弧の始点) ．既定では，正のx方向の単位ベクトルです．注: 法線が入力されている場合にのみ使用します．"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:26
-msgid ""
-"Arc length (in degrees), beginning at the polar vector.  The direction is "
-"counterclockwise by default; a negative value draws the arc in the clockwise"
-" direction.  Note: This is only used when normal has been input."
+"By default the arc spans the shortest angular sector between ``pointa`` and "
+"``pointb``.  By setting this to ``True``, the longest angular sector is used"
+" instead (i.e. the negative coterminal angle to the shortest one)."
 msgstr ""
-"極ベクトルを始点とする円弧の長さ (度単位) "
-"．デフォルトの方向は反時計回りです．負の値を指定すると，円弧が時計回りの方向に描かれます．注:法線が入力されている場合にのみ使用します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:31
+#: pyvista.utilities.geometric_objects.CircularArc:15
 msgid ""
-"By default the arc spans the shortest angular sector point1 and point2.  By "
-"setting this to true, the longest angular sector is used instead (i.e. the "
-"negative coterminal angle to the shortest one). This is only used when "
-"normal has not been input"
+"By default the arc spans the shortest angular sector between ``pointa`` and "
+"``pointb``."
 msgstr ""
-"既定では，円弧は最短の角度セクタのPoint 1とPoint "
-"2をスパンします．これをtrueに設定すると，代わりに最長の角度セクタが使用されます(すなわち、最小値1に対する負の同極角)．これは，法線が入力されていない場合にのみ使用されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:31
+#: pyvista.utilities.geometric_objects.CircularArc:18
 msgid ""
-"By default the arc spans the shortest angular sector point1 and point2."
-msgstr "デフォルトでは，円弧は最短の角度セクタPoint 1とPoint 2をスパンします．"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:33
-msgid ""
-"By setting this to true, the longest angular sector is used instead (i.e. "
-"the negative coterminal angle to the shortest one). This is only used when "
-"normal has not been input"
+"By setting this to ``True``, the longest angular sector is used instead "
+"(i.e. the negative coterminal angle to the shortest one)."
 msgstr ""
-"これをtrueに設定すると，代わりに最長の角度セクタが使用されます(すなわち、最小値1に対する負の同極角)．これは，法線が入力されていない場合にのみ使用されます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:40
-msgid "Quarter arc centered at the origin in the xy plane"
-msgstr "XY平面の原点を中心とする4分円弧"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CircularArc:50
-msgid "Quarter arc centered at the origin in the xz plane"
-msgstr "XZ平面の原点を中心とする4分円弧"
+#: pyvista.utilities.geometric_objects.CircularArc:25
+msgid "Create a quarter arc centered at the origin in the xy plane."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:1

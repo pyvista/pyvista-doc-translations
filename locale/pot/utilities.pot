@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-22 03:09+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cylinder:22
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.Spline:13
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:39
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:24
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBohemianDome:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.py:docstring of pyvista.utilities.parametric_objects.ParametricBour:7
@@ -501,55 +501,39 @@ msgid "Create a circular arc defined by two endpoints and a center."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:3
-msgid "The number of segments composing the polyline is controlled by setting the object resolution.  Alternatively, one can use a better API (that does not allow for inconsistent nor ambiguous inputs), using a starting point (polar vector, measured from the arc's center), a normal to the plane of the arc, and an angle defining the arc length."
+msgid "The number of segments composing the polyline is controlled by setting the object resolution."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:10
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:6
 msgid "Position of the first end point."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:12
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:8
 msgid "Position of the other end point."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:14
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:10
 msgid "Center of the circle that defines the arc."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:16
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:12
 msgid "The number of segments of the polyline that draws the arc. Resolution of 1 will just create a line."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:19
-msgid "The normal vector to the plane of the arc.  By default it points in the positive Z direction."
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:15
+msgid "By default the arc spans the shortest angular sector between ``pointa`` and ``pointb``.  By setting this to ``True``, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one)."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:22
-msgid "(starting point of the arc).  By default it is the unit vector in the positive x direction. Note: This is only used when normal has been input."
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:15
+msgid "By default the arc spans the shortest angular sector between ``pointa`` and ``pointb``."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:26
-msgid "Arc length (in degrees), beginning at the polar vector.  The direction is counterclockwise by default; a negative value draws the arc in the clockwise direction.  Note: This is only used when normal has been input."
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:18
+msgid "By setting this to ``True``, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one)."
 msgstr ""
 
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:31
-msgid "By default the arc spans the shortest angular sector point1 and point2.  By setting this to true, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one). This is only used when normal has not been input"
-msgstr ""
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:31
-msgid "By default the arc spans the shortest angular sector point1 and point2."
-msgstr ""
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:33
-msgid "By setting this to true, the longest angular sector is used instead (i.e. the negative coterminal angle to the shortest one). This is only used when normal has not been input"
-msgstr ""
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:40
-msgid "Quarter arc centered at the origin in the xy plane"
-msgstr ""
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:50
-msgid "Quarter arc centered at the origin in the xz plane"
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArc:25
+msgid "Create a quarter arc centered at the origin in the xy plane."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Pyramid:1

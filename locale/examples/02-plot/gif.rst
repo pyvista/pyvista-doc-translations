@@ -23,7 +23,7 @@ Create a GIF Movie
 
 Generate a moving gif from an active plotter
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-51
+.. GENERATED FROM PYTHON SOURCE LINES 7-44
 
 
 
@@ -32,20 +32,8 @@ Generate a moving gif from an active plotter
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    Orient the view, then press "q" to close window and produce movie
 
 
-
-
-
-
-|
 
 .. code-block:: default
 
@@ -63,13 +51,8 @@ Generate a moving gif from an active plotter
     grid = pv.StructuredGrid(x, y, z)
 
     # Create a plotter object and set the scalars to the Z height
-    plotter = pv.Plotter()
+    plotter = pv.Plotter(notebook=False, off_screen=True)
     plotter.add_mesh(grid, scalars=z.ravel(), smooth_shading=True)
-
-    print('Orient the view, then press "q" to close window and produce movie')
-
-    # setup camera and close
-    plotter.show(auto_close=False)
 
     # Open a gif
     plotter.open_gif("wave.gif")
@@ -86,18 +69,16 @@ Generate a moving gif from an active plotter
 
         # must update normals when smooth shading is enabled
         plotter.mesh.compute_normals(cell_normals=False, inplace=True)
-        plotter.write_frame()  # this will trigger the render
+        plotter.render()
+        plotter.write_frame()
 
-        # otherwise, when not writing frames, render with:
-        # plotter.render()
-
-    # Close movie and delete object
+    # Closes and finalizes movie
     plotter.close()
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.230 seconds)
+   **Total running time of the script:** ( 0 minutes  9.667 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

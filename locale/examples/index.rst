@@ -1540,6 +1540,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Interpolate the scalars of a dataset over a circular arc.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_plot-over-circular-arc_thumb.png
+     :alt: Plot Scalars Over a Circular Arc
+
+     :ref:`sphx_glr_examples_02-plot_plot-over-circular-arc.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/plot-over-circular-arc
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Plot the values of a dataset over a line through that dataset">
 
 .. only:: html
@@ -1726,6 +1747,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/topo-map
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot a single component of a vector as a scalar array.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_vector-component_thumb.png
+     :alt: Plot Vector Component
+
+     :ref:`sphx_glr_examples_02-plot_vector-component.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/vector-component
 
 .. raw:: html
 

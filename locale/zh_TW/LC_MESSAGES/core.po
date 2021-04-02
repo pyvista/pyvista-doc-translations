@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-26 00:17+0000\n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -42,11 +42,11 @@ msgstr ""
 #: ../../pyvista/docs/core/grids.rst:33 ../../pyvista/docs/core/grids.rst:56
 #: ../../pyvista/docs/core/objects.rst:9
 #: ../../pyvista/docs/core/objects.rst:31
-#: ../../pyvista/docs/core/point-grids.rst:288
-#: ../../pyvista/docs/core/point-grids.rst:307
-#: ../../pyvista/docs/core/point-grids.rst:330
-#: ../../pyvista/docs/core/point-grids.rst:353
-#: ../../pyvista/docs/core/points.rst:124
+#: ../../pyvista/docs/core/point-grids.rst:313
+#: ../../pyvista/docs/core/point-grids.rst:332
+#: ../../pyvista/docs/core/point-grids.rst:355
+#: ../../pyvista/docs/core/point-grids.rst:378
+#: ../../pyvista/docs/core/points.rst:133
 msgid "Attributes"
 msgstr ""
 
@@ -114,11 +114,11 @@ msgstr ""
 #: ../../pyvista/docs/core/grids.rst:38 ../../pyvista/docs/core/grids.rst:61
 #: ../../pyvista/docs/core/objects.rst:14
 #: ../../pyvista/docs/core/objects.rst:36
-#: ../../pyvista/docs/core/point-grids.rst:293
-#: ../../pyvista/docs/core/point-grids.rst:311
-#: ../../pyvista/docs/core/point-grids.rst:335
-#: ../../pyvista/docs/core/point-grids.rst:358
-#: ../../pyvista/docs/core/points.rst:129
+#: ../../pyvista/docs/core/point-grids.rst:318
+#: ../../pyvista/docs/core/point-grids.rst:336
+#: ../../pyvista/docs/core/point-grids.rst:360
+#: ../../pyvista/docs/core/point-grids.rst:383
+#: ../../pyvista/docs/core/points.rst:138
 msgid "Methods"
 msgstr ""
 
@@ -345,9 +345,17 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:28
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:36
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:41
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.probe:24
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.reflect:15
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:27
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.shrink:12
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -871,6 +879,10 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.outline_corners:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_line:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.point_data_to_cell_data:0
@@ -880,6 +892,10 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.reflect:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1095,7 +1111,7 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:3
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:3
-msgid "VTK object or numpy array to be plotted."
+msgid "VTK object or ``numpy`` array to be plotted."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1103,8 +1119,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:5
 msgid ""
-"Plots off screen when True.  Helpful for saving screenshots without a window"
-" popping up."
+"Plots off screen when ``True``.  Helpful for saving screenshots without a "
+"window popping up."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1112,8 +1128,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:8
 msgid ""
-"Opens window in full screen.  When enabled, ignores window_size. Default "
-"False."
+"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
+" ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1122,8 +1138,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:11
 msgid ""
 "Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled.  When True, "
-"takes screenshot and returns numpy array of image."
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
+"takes screenshot and returns ``numpy`` array of image."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1132,21 +1148,21 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:11
 msgid ""
 "Saves screenshot to file when enabled.  See: "
-"help(pyvistanterface.Plotter.screenshot).  Default disabled."
+"``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:14
-msgid "When True, takes screenshot and returns numpy array of image."
+msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:16
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:16
-msgid "Window size in pixels.  Defaults to [1024, 768]"
+msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1154,8 +1170,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:18
 msgid ""
-"Shows mesh bounds when True.  Default False. Alias ``show_grid`` also "
-"accepted."
+"Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
+"also accepted."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1163,8 +1179,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:21
 msgid ""
-"When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
-" jupyter console is active."
+"When ``True``, the resulting plot is placed inline a jupyter notebook.  "
+"Assumes a jupyter console is active."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1193,21 +1209,83 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:30
 msgid ""
-"Use the ``ipyvtk-simple`` ``ViewInteractiveWidget`` to visualize the plot "
-"within a juyterlab notebook."
+"Deprecated.  Instead, set the backend either globally with "
+"``pyvista.set_jupyter_backend('ipyvtk_simple')`` or with "
+"``backend='ipyvtk_simple'``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:33
+#: pyvista.plotting.helpers.plot:34
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:33
+#: pyvista.plotting.helpers.plot:34
+msgid ""
+"Jupyter notebook plotting backend to use.  One of the following:  * "
+"``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
+"static figure. * ``'ipygany'`` : Show a ``ipygany`` widget * ``'panel'`` : "
+"Show a ``panel`` widget.  This can also be set globally with "
+"``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:34
+msgid "Jupyter notebook plotting backend to use.  One of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:37
+msgid "``'none'`` : Do not display in the notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:38
+msgid "``'static'`` : Display a static figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:39
+msgid "``'ipygany'`` : Show a ``ipygany`` widget"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:40
+msgid "``'panel'`` : Show a ``panel`` widget."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:42
+msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:45
+msgid "Keyword arguments for the Jupyter notebook plotting backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:47
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:47
 msgid "See help(Plotter.add_mesh) for additional options."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
@@ -1217,17 +1295,17 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:36
+#: pyvista.plotting.helpers.plot:50
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:51
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:51
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
 "[Window height x Window width x 3] for transparent_background=False [Window "
@@ -1473,8 +1551,8 @@ msgstr ""
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_faces:1 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.number_of_faces:1
@@ -1545,7 +1623,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:1
 msgid "Return the mesh volume."
@@ -2437,6 +2515,34 @@ msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
+":obj:`plot_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:1
+msgid "Sample a dataset along a circular arc and plot it."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`plot_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.plot_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:1
+msgid ""
+"Sample a dataset along a resolution circular arc defined by a normal and "
+"polar vector and plot it."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
 ":obj:`plot_over_line "
 "<pyvista.core.filters.pyvista.DataSetFilters.plot_over_line>`\\ \\(pointa\\,"
 " pointb\\[\\, resolution\\, ...\\]\\)"
@@ -2507,6 +2613,38 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:1
 msgid "Resample array data from a passed mesh onto this mesh."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`sample_over_circular_arc "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc>`\\ "
+"\\(pointa\\, pointb\\, center\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:20
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:28
+msgid "Sample a dataset over a circular arc."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`sample_over_circular_arc_normal "
+"<pyvista.core.filters.pyvista.DataSetFilters.sample_over_circular_arc_normal>`\\"
+" \\(center\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:1
+msgid ""
+"Sample a dataset over a circular arc defined by a normal and polar vector "
+"and plot it."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -3970,6 +4108,173 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:3
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:3
+msgid ""
+"Plot the variables of interest in 2D where the X-axis is distance from Point"
+" A and the Y-axis is the variable of interest. Note that this filter returns"
+" ``None``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:9
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:3
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:5
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:6
+msgid "Location in ``[x, y, z]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:13
+msgid ""
+"Number of pieces to divide the circular arc into. Defaults to number of "
+"cells in the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:17
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:22
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:14
+msgid ""
+"The string name of the variable in the input dataset to probe. The active "
+"scalar is used by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:20
+msgid "The string title of the ``matplotlib`` figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:22
+msgid "The string label of the Y-axis. Defaults to the variable name."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:24
+msgid "The size of the new figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:26
+msgid "Flag on whether or not to create a new figure."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:28
+msgid "Shows the ``matplotlib`` figure when ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:30
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:35
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:27
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.probe:11
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample:10
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:13
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:21
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_line:10
+msgid ""
+"Tolerance used to compute whether a point in the source is in a cell of the "
+"input.  If not given, tolerance is automatically generated."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:37
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:42
+msgid "Sample a dataset along a high resolution circular arc and plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:9
+msgid ""
+"number of pieces to divide circular arc into. Defaults to number of cells in"
+" the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:13
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:12
+msgid ""
+"The normal vector to the plane of the arc.  By default it points in the "
+"positive Z direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:16
+msgid ""
+"(starting point of the arc).  By default it is the unit vector in the "
+"positive x direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:19
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:18
+msgid ""
+"Arc length (in degrees), beginning at the polar vector.  The direction is "
+"counterclockwise.  By default it is 360."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:25
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:17
+msgid "The string title of the `matplotlib` figure"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:27
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:19
+msgid "The string label of the Y-axis. Defaults to variable name"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:29
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:21
+msgid "the size of the new figure"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:31
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:23
+msgid "flag on whether or not to create a new figure"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:33
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.plot_over_line:25
+msgid "Shows the matplotlib figure"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_line:3
 msgid ""
 "Plot the variables of interest in 2D where the X-axis is distance from Point"
@@ -3993,51 +4298,6 @@ msgstr ""
 msgid ""
 "number of pieces to divide line into. Defaults to number of cells in the "
 "input mesh. Must be a positive integer."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:14
-msgid ""
-"The string name of the variable in the input dataset to probe. The active "
-"scalar is used by default."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:17
-msgid "The string title of the `matplotlib` figure"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:19
-msgid "The string label of the Y-axis. Defaults to variable name"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:21
-msgid "the size of the new figure"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:23
-msgid "flag on whether or not to create a new figure"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:25
-msgid "Shows the matplotlib figure"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.plot_over_line:27
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.probe:11
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.sample:10
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.sample_over_line:10
-msgid ""
-"Tolerance used to compute whether a point in the source is in a cell of the "
-"input.  If not given, tolerance is automatically generated."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4148,6 +4408,29 @@ msgstr ""
 msgid ""
 "The vtk data object to sample from - point and cell arrays from this object "
 "are sampled onto the nodes of the ``dataset`` mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc:9
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:8
+msgid ""
+"Number of pieces to divide circular arc into. Defaults to number of cells in"
+" the input mesh. Must be a positive integer."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:3
+msgid ""
+"The number of segments composing the polyline is controlled by setting the "
+"object resolution."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:15
+msgid ""
+"Starting point of the arc in polar coordinates.  By default it is the unit "
+"vector in the positive x direction."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -6885,7 +7168,7 @@ msgstr ""
 #: ../../pyvista/docs/core/grids.rst:36:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.dimensions:1
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.dimensions:1
 msgid "Return a length 3 tuple of the grid's dimensions."
@@ -7472,22 +7755,20 @@ msgid "Brief Example"
 msgstr ""
 
 #: ../../pyvista/docs/core/lights.rst:12
-msgid "Create a red spotlight that shines on the origin."
+msgid ""
+"Create a red spotlight that shines on the origin, then create a scene "
+"without lighting and add our light to it manually."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:21
-msgid "Create a scene without lighting and add our light to it manually."
-msgstr ""
-
-#: ../../pyvista/docs/core/lights.rst:35
+#: ../../pyvista/docs/core/lights.rst:33
 msgid "For detailed examples please see :ref:`ref_light_examples`."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:38
+#: ../../pyvista/docs/core/lights.rst:37
 msgid "Light API"
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:39
+#: ../../pyvista/docs/core/lights.rst:38
 msgid ""
 "``pyvista.Light`` instances come in three types: headlights, camera lights, "
 "and scene lights. Headlights always shine along the camera's axis, camera "
@@ -7496,7 +7777,7 @@ msgid ""
 " doesn't affect the lighting of the scene."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:45
+#: ../../pyvista/docs/core/lights.rst:44
 msgid ""
 "Lights have a :py:attr:`position` and a :py:attr:`focal_point` that define "
 "the axis of the light. The meaning of these depends on the type of the "
@@ -7506,7 +7787,7 @@ msgid ""
 "light is switched on."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:51
+#: ../../pyvista/docs/core/lights.rst:50
 msgid ""
 "Lights can be either directional (meaning an infinitely distant point "
 "source) or :py:attr:`positional`. Positional lights have additional "
@@ -7519,7 +7800,7 @@ msgid ""
 "the light using a wireframe, see :func:`show_actor`."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:60
+#: ../../pyvista/docs/core/lights.rst:59
 msgid ""
 "Positional lights with a :py:attr:`cone_angle` of less than 90 degrees are "
 "known as spotlights. Spotlights are unidirectional and they make full use of"
@@ -7531,7 +7812,7 @@ msgid ""
 "distant point sources, so they are unidirectional but they do not attenuate."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:70
+#: ../../pyvista/docs/core/lights.rst:69
 msgid "API reference"
 msgstr ""
 
@@ -8591,17 +8872,17 @@ msgid ""
 "unstructured grid from NumPy arrays."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:18
-#: ../../pyvista/docs/core/point-grids.rst:49
+#: ../../pyvista/docs/core/point-grids.rst:19
+#: ../../pyvista/docs/core/point-grids.rst:51
 #: ../../pyvista/docs/core/points.rst:15
 msgid "Empty Object"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:19
+#: ../../pyvista/docs/core/point-grids.rst:20
 msgid "An unstructured grid can be initialized with:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:26
+#: ../../pyvista/docs/core/point-grids.rst:27
 msgid ""
 "This creates an empty grid, and is not useful until points and cells are "
 "added to it.  VTK points and cells can be added with ``SetPoints`` and "
@@ -8611,74 +8892,74 @@ msgid ""
 "as in the following section."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:34
-#: ../../pyvista/docs/core/point-grids.rst:87
+#: ../../pyvista/docs/core/point-grids.rst:35
+#: ../../pyvista/docs/core/point-grids.rst:95
 msgid "Loading from File"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:35
+#: ../../pyvista/docs/core/point-grids.rst:36
 msgid "Unstructured grids can be loaded from a vtk file."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:46
+#: ../../pyvista/docs/core/point-grids.rst:48
 msgid "Structured Grid Creation"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:50
+#: ../../pyvista/docs/core/point-grids.rst:52
 msgid "A structured grid can be initialized with:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:57
+#: ../../pyvista/docs/core/point-grids.rst:59
 msgid ""
 "This creates an empty grid, and is not useful until points are added to it."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:62
+#: ../../pyvista/docs/core/point-grids.rst:64
 msgid "Creating from Numpy Arrays"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:63
+#: ../../pyvista/docs/core/point-grids.rst:65
 msgid ""
 "A structured grid can be created directly from numpy arrays.  This is useful"
 " when creating a grid from scratch or copying it from another format."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:66
+#: ../../pyvista/docs/core/point-grids.rst:68
 msgid ""
 "Also see :ref:`ref_create_structured` for an example on creating a "
 "structured grid from NumPy arrays."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:88
+#: ../../pyvista/docs/core/point-grids.rst:96
 msgid "Structured grids can be loaded from a ``vtk`` file."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:96
+#: ../../pyvista/docs/core/point-grids.rst:104
 msgid "Plotting Grids"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:97
+#: ../../pyvista/docs/core/point-grids.rst:105
 msgid ""
 "This example shows how you can load an unstructured grid from a ``vtk`` file"
 " and create a plot and gif movie by updating the plotting object."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:117
+#: ../../pyvista/docs/core/point-grids.rst:125
 msgid "A simple plot can be created by using:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:123
+#: ../../pyvista/docs/core/point-grids.rst:131
 msgid "A more complex plot can be created using:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:146
+#: ../../pyvista/docs/core/point-grids.rst:153
 msgid ""
 "You can animate the motion of the beam by updating the positions and scalars"
-" of the grid copied to the plotting object. First you have to set up the "
+" of the grid copied to the plotting object.  First you have to set up the "
 "plotting object:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:160
+#: ../../pyvista/docs/core/point-grids.rst:167
 msgid ""
 "You then open the render window by plotting before opening the movie file. "
 "Set auto_close to False so the plotter does not close automatically. "
@@ -8686,36 +8967,36 @@ msgid ""
 "waiting for the user to exit the window."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:184
+#: ../../pyvista/docs/core/point-grids.rst:200
 msgid "You can also render the beam as as a wire-frame object:"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:213
+#: ../../pyvista/docs/core/point-grids.rst:238
 msgid "Adding Labels to a Plot"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:214
+#: ../../pyvista/docs/core/point-grids.rst:239
 msgid ""
 "Labels can be added to a plot using the ``add_point_labels`` function within"
 " the ``Plotter`` object.  The following example loads the included example "
 "beam, generates a plotting class, and sub-selects points along the y-z plane"
-" and labels their coordinates.  ``add_point_labels`` requires that the "
-"number of labels matches the number of points, and that labels is a list "
+" and labels their coordinates. ``add_point_labels`` requires that the number"
+" of labels matches the number of points, and that labels is a list "
 "containing one entry per point.  The code automatically converts each item "
 "in the list to a string."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:249
+#: ../../pyvista/docs/core/point-grids.rst:280
 msgid ""
 "This example is similar and shows how labels can be combined with a scalar "
 "bar to show the exact value of certain points."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:280
+#: ../../pyvista/docs/core/point-grids.rst:307
 msgid "pv.Unstructured Grid Class Methods"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:281
+#: ../../pyvista/docs/core/point-grids.rst:308
 msgid ""
 "The following is a description of the methods available to a "
 "``pv.UnstructuredGrid`` object.  It inherits all methods from the original "
@@ -8723,73 +9004,73 @@ msgid ""
 "<https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cell_connectivity <pyvista.UnstructuredGrid.cell_connectivity>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cell_connectivity:1
 msgid "Return a the vtk cell connectivity as a numpy array."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cells <pyvista.UnstructuredGrid.cells>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:1
 msgid "Return a pointer to the cells as a numpy object."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`cells_dict <pyvista.UnstructuredGrid.cells_dict>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:1
 msgid "Return a dictionary that contains all cells mapped from cell types."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`celltypes <pyvista.UnstructuredGrid.celltypes>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:1
 msgid "Get the cell types array."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 msgid ":obj:`offset <pyvista.UnstructuredGrid.offset>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:291:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:316:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.offset:1
 msgid "Get cell locations Array."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 msgid ""
 ":obj:`cast_to_explicit_structured_grid "
 "<pyvista.UnstructuredGrid.cast_to_explicit_structured_grid>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:1
 msgid "Cast to an explicit structured grid."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 msgid ":obj:`linear_copy <pyvista.UnstructuredGrid.linear_copy>`\\ \\(\\[deep\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:297:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:322:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.linear_copy:1
 msgid "Return a copy of the unstructured grid containing only linear cells."
@@ -8937,47 +9218,47 @@ msgstr ""
 msgid "**grid** -- UnstructuredGrid containing only linear cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:305
+#: ../../pyvista/docs/core/point-grids.rst:330
 msgid "Explicit Structured Grid"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.ExplicitStructuredGrid.dimensions>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.dimensions:1
 msgid "Return the topological dimensions of the grid."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 msgid ":obj:`visible_bounds <pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:310:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:335:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:1
 msgid "Return the bounding box of the visible cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`cast_to_unstructured_grid "
 "<pyvista.ExplicitStructuredGrid.cast_to_unstructured_grid>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:1
 msgid "Cast to an unstructured grid."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`cell_coords <pyvista.ExplicitStructuredGrid.cell_coords>`\\ \\(ind\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -8985,11 +9266,11 @@ msgstr ""
 msgid "Return the cell structured coordinates."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`cell_id <pyvista.ExplicitStructuredGrid.cell_id>`\\ \\(coords\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cell_coords:13
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -8997,13 +9278,13 @@ msgstr ""
 msgid "Return the cell ID."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`compute_connections "
 "<pyvista.ExplicitStructuredGrid.compute_connections>`\\ \\(\\[inplace\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9011,13 +9292,13 @@ msgstr ""
 msgid "Compute an array with the number of connected cell faces."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`compute_connectivity "
 "<pyvista.ExplicitStructuredGrid.compute_connectivity>`\\ \\(\\[inplace\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connections:17
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9025,47 +9306,47 @@ msgstr ""
 msgid "Compute the faces connectivity flags array."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`hide_cells <pyvista.ExplicitStructuredGrid.hide_cells>`\\ \\(ind\\[\\,"
 " inplace\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.hide_cells:1
 msgid "Hide specific cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`neighbors <pyvista.ExplicitStructuredGrid.neighbors>`\\ \\(ind\\[\\, "
 "rel\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.neighbors:1
 msgid "Return the indices of neighboring cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ":obj:`save <pyvista.ExplicitStructuredGrid.save>`\\ \\(filename\\[\\, binary\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.save:1
 msgid "Save this VTK object to file."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 msgid ""
 ":obj:`show_cells <pyvista.ExplicitStructuredGrid.show_cells>`\\ "
 "\\(\\[inplace\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:314:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:339:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.show_cells:1
 msgid "Show hidden cells."
@@ -9303,11 +9584,11 @@ msgid ""
 "The limits of the visible grid in the X, Y and Z directions respectively."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:322
+#: ../../pyvista/docs/core/point-grids.rst:347
 msgid "pv.Structured Grid Class Methods"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:323
+#: ../../pyvista/docs/core/point-grids.rst:348
 msgid ""
 "The following is a description of the methods available to a "
 "``pv.StructuredGrid`` object.  It inherits all methods from the original "
@@ -9315,55 +9596,55 @@ msgid ""
 "<https://www.vtk.org/doc/nightly/html/classvtkStructuredGrid.html>`_."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`dimensions <pyvista.StructuredGrid.dimensions>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`points_matrix <pyvista.StructuredGrid.points_matrix>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.points_matrix:1
 msgid "Points as a 4-D matrix, with x/y/z along the last dimension."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`x <pyvista.StructuredGrid.x>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.x:1
 msgid "Return the X coordinates of all points."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`y <pyvista.StructuredGrid.y>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.y:1
 msgid "Return the Y coordinates of all points."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 msgid ":obj:`z <pyvista.StructuredGrid.z>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:333:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:358:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.z:1
 msgid "Return the Z coordinates of all points."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:338:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:363:<autosummary>:1
 msgid ":obj:`hide_cells <pyvista.StructuredGrid.hide_cells>`\\ \\(ind\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:338:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:363:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid.hide_cells:1
 msgid "Hide cells without deleting them."
@@ -9411,31 +9692,31 @@ msgstr ""
 msgid "Hide part of the middle of a structured surface."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:346
+#: ../../pyvista/docs/core/point-grids.rst:371
 msgid "Methods in Common with Structured and Unstructured Grids"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:347
+#: ../../pyvista/docs/core/point-grids.rst:372
 msgid ""
 "These methods are common to both ``pv.StructuredGrid`` and "
 "``pv.UnstructuredGrid`` objects."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:356:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:381:<autosummary>:1
 msgid ":obj:`volume <pyvista.PointGrid.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:356:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:381:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PointGrid.volume:1
 msgid "Compute the volume of the point grid."
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:361:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:386:<autosummary>:1
 msgid ":obj:`plot_curvature <pyvista.PointGrid.plot_curvature>`\\ \\(\\[curv\\_type\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/point-grids.rst:361:<autosummary>:1
+#: ../../pyvista/docs/core/point-grids.rst:386:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointGrid.plot_curvature:1
 msgid "Plot the curvature of the external surface of the grid."
@@ -9546,37 +9827,37 @@ msgid ""
 "loaded with:"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:44
+#: ../../pyvista/docs/core/points.rst:53
 msgid "This mesh can then be written to a vtk file using:"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:50
+#: ../../pyvista/docs/core/points.rst:59
 msgid "These meshes are identical."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:68
+#: ../../pyvista/docs/core/points.rst:80
 msgid "Mesh Manipulation and Plotting"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:69
+#: ../../pyvista/docs/core/points.rst:81
 msgid ""
 "Meshes can be directly manipulated using NumPy or with the built-in "
-"translation and rotation routines. This example loads two meshes and moves, "
-"scales, and copies them."
+"translation and rotation routines.  This example loads two meshes and moves,"
+" scales, copies them, and finally plots them."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:91
+#: ../../pyvista/docs/core/points.rst:85
 msgid ""
 "To plot more than one mesh a plotting class must be created to manage the "
-"plotting. The following code creates the class and plots the meshes with "
+"plotting.  The following code creates the class and plots the meshes with "
 "various colors."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:116
+#: ../../pyvista/docs/core/points.rst:125
 msgid "pyvista.PolyData Grid Class Methods"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:117
+#: ../../pyvista/docs/core/points.rst:126
 msgid ""
 "The following is a description of the methods available to a "
 "``pyvista.PolyData`` object.  It inherits all methods from the original vtk "
@@ -9584,21 +9865,21 @@ msgid ""
 "<https://www.vtk.org/doc/nightly/html/classvtkPolyData.html>`_."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`area <pyvista.PolyData.area>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:1
 msgid "Return the mesh surface area."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -9606,94 +9887,94 @@ msgstr ""
 msgid "Return the cell normals."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`faces <pyvista.PolyData.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:1
 msgid "Return a pointer to the faces as a numpy object."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`lines <pyvista.PolyData.lines>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:1
 msgid "Return a pointer to the lines as a numpy object."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:1
 msgid "Return the number of open edges on this mesh."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`number_of_faces <pyvista.PolyData.number_of_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:1
 msgid "Return the obbTree of the polydata."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:1
 msgid "Return the point normals."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`verts <pyvista.PolyData.verts>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:1
 msgid "Get the vertex cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:127:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
 msgid ":obj:`volume <pyvista.PolyData.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 msgid ":obj:`is_all_triangles <pyvista.PolyData.is_all_triangles>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.is_all_triangles:1
 msgid "Return ``True`` if all the faces of the ``PolyData`` are triangles."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 msgid ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:132:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:1
 msgid "Write a surface mesh to disk."
