@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 08:51+0000\n"
+"POT-Creation-Date: 2021-04-03 00:16+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/getfem-doc/teams/112279/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -320,8 +320,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.link_views:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:0
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_gif:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_movie:0
@@ -338,7 +336,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:0
+#: pyvista.plotting.renderers.Renderers.set_background:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -590,8 +588,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:0
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:0
@@ -690,8 +686,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:0
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:0
@@ -741,6 +735,10 @@ msgstr ""
 #: pyvista.BasePlotter.scalar_bars:4
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:17
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderers.Renderers.set_background:19
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.shape:4
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:80
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -799,7 +797,7 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.background_color:1
-msgid "Return the background color of the first render window."
+msgid "Return the background color of the active render window."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
@@ -950,6 +948,16 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scale:1
 msgid "Return the scaling of the active renderer."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+msgid ":obj:`shape <pyvista.BasePlotter.shape>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.shape:1
+msgid "Shape of the plotter."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
@@ -1641,16 +1649,6 @@ msgid "Increment point size and line width of all actors."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-msgid ":obj:`index_to_loc <pyvista.BasePlotter.index_to_loc>`\\ \\(index\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.index_to_loc:1
-msgid "Convert a 1D index location to the 2D location on the plotting grid."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`isometric_view <pyvista.BasePlotter.isometric_view>`\\ \\(\\)"
 msgstr ""
 
@@ -1713,24 +1711,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.link_views:1
 msgid "Link the views' cameras."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-msgid ":obj:`loc_to_group <pyvista.BasePlotter.loc_to_group>`\\ \\(loc\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-msgid "Return group id of the given location index."
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-msgid ":obj:`loc_to_index <pyvista.BasePlotter.loc_to_index>`\\ \\(loc\\)"
-msgstr ""
-
-#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:1
-msgid "Return index of the render window given a location index."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
@@ -1948,7 +1928,7 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:1
+#: pyvista.plotting.renderers.Renderers.set_background:1
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:1
@@ -2417,7 +2397,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:3
+#: pyvista.plotting.renderers.Renderers.set_background:3
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:30
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -2434,7 +2414,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:23
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:5
+#: pyvista.plotting.renderers.Renderers.set_background:5
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:35
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2455,7 +2435,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:6
+#: pyvista.plotting.renderers.Renderers.set_background:6
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2476,7 +2456,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:7
+#: pyvista.plotting.renderers.Renderers.set_background:7
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:37
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2497,7 +2477,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:26
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:8
+#: pyvista.plotting.renderers.Renderers.set_background:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -3316,7 +3296,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:3
+#: pyvista.plotting.renderers.Renderers.set_background:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:3
 msgid ""
@@ -5535,24 +5515,22 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:3
-msgid "A scaling factor when biulding the orbital extent"
+msgid "A scaling factor when building the orbital extent."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:5
-msgid "number of points on the orbital path"
+msgid "Number of points on the orbital path."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:7
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.orbit_on_path:10
-msgid "the normal to the orbital plane"
+msgid "The normal to the orbital plane."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:9
-msgid "shift the plane up/down from the center of the scene by this amount"
+msgid "Shift the plane up/down from the center of the scene by this amount."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5630,25 +5608,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_group:1
-msgid ""
-"Return group id of the given location index. Or None if this location is not"
-" part of any group."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:3
-msgid ""
-"Index of the renderer to add the actor to.  For example, ``loc=2`` or "
-"``loc=(1, 1)``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.loc_to_index:7
-msgid "**idx** -- Index of the render window."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.open_gif:3
 msgid "Filename of the gif to open.  Filename must end in gif."
 msgstr ""
@@ -5678,6 +5637,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.orbit_on_path:8
 msgid "The timestep between flying to each camera position"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.orbit_on_path:10
+msgid "the normal to the orbital plane"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5833,7 +5797,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:10
+#: pyvista.plotting.renderers.Renderers.set_background:10
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:10
 msgid ""
@@ -5843,10 +5807,20 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.set_background:14
+#: pyvista.plotting.renderers.Renderers.set_background:14
 msgid ""
 "If True, applies to all renderers in subplots. If False, then only applies "
 "to the active renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderers.Renderers.set_background:20
+msgid "Set the background color to black."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderers.Renderers.set_background:28
+msgid "Set the background color to white."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5856,6 +5830,11 @@ msgstr ""
 msgid ""
 "Scaling in performed independently on the X, Y and Z axis. A scale of zero "
 "is illegal and will be replaced with one."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.shape:5
+msgid "Return the plotter shape."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of

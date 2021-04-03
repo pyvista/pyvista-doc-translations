@@ -186,29 +186,29 @@ msgstr "ipygany"
 
 #: ../../pyvista/docs/jupyter/index.rst:98
 msgid "threejs"
-msgstr ""
+msgstr "threejs"
 
 #: ../../pyvista/docs/jupyter/index.rst:98
 #: ../../pyvista/docs/jupyter/index.rst:100
 #: ../../pyvista/docs/jupyter/index.rst:102
 msgid "No"
-msgstr ""
+msgstr "いいえ"
 
 #: ../../pyvista/docs/jupyter/index.rst:100
 msgid "ipyvtk_simple"
-msgstr ""
+msgstr "ipyvtk_simple"
 
 #: ../../pyvista/docs/jupyter/index.rst:100
 msgid "Server"
-msgstr ""
+msgstr "サーバ"
 
 #: ../../pyvista/docs/jupyter/index.rst:100
 msgid "vtk"
-msgstr ""
+msgstr "vtk"
 
 #: ../../pyvista/docs/jupyter/index.rst:102
 msgid "itkwidgets"
-msgstr ""
+msgstr "itkwidgets"
 
 #: ../../pyvista/docs/jupyter/index.rst:105
 msgid ""
@@ -221,6 +221,11 @@ msgid ""
 " like ``threejs``, which does not require any server side rendering or "
 "framebuffer."
 msgstr ""
+"現時点では， ``itkwidgets`` と ``ipyvtk_simple`` はJupyterlab 3と互換性がなく，juptyerから "
+"\"Error displaying widget: model not found\" メッセージが送信されます．さらに ``ipygany`` "
+"以外のモジュールはすべてフレームバッファを必要とします．これは ``pyvista.start_xvfb()`` "
+"を使ったヘッドレス環境で設定できます．しかし，システムパッケージをインストールできないGoogle Colabでは， ``threejs`` "
+"のようなサーバ側のレンダリングやフレームバッファを必要としないモジュールを使うべきです．"
 
 #: ../../pyvista/docs/jupyter/index.rst:114
 msgid ""
@@ -230,10 +235,13 @@ msgid ""
 "simple ``pip install <package>``.  See the installation instructions for the"
 " other packages for more details."
 msgstr ""
+"フレームバッファを必要とするバックエンドのためのヘッドレス環境へのインストールの詳細については， :ref:`install_ref` "
+"を参照してください．個々のパッケージをインストールする場合，簡単な ``pip install <package>`` を使用してJupyterlab "
+"3互換パッケージをインストールできます．詳細は，他のパッケージのインストール手順を参照してください．"
 
 #: ../../pyvista/docs/jupyter/index.rst:122
 msgid "Usage with PyVista"
-msgstr ""
+msgstr "PyVistaでの使用法"
 
 #: ../../pyvista/docs/jupyter/index.rst:123
 msgid ""
@@ -242,11 +250,14 @@ msgid ""
 "``mesh.plot()`` or ``plotter.show()``.  You can also set it globally with "
 "the ``pyvista.set_jupyter_backend`` function.  For further details:"
 msgstr ""
+"Jupyterプロットバックエンドを設定する方法は2つあります．まず， ``jupyter_backend`` を ``mesh.plot()`` "
+"または ``plotter.show()`` に設定することで，プロット単位で実行できます．また， "
+"``pyvista.set_jupyter_backend`` 関数を使用してグローバルに設定することもできます．詳細については，次を参照してください．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:1
 msgid "Set the plotting backend for a jupyter notebook."
-msgstr ""
+msgstr "Jupyterノートブックのプロットバックエンドを設定します．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:0
@@ -282,11 +293,22 @@ msgid ""
 "render windows.  This   will generate nothing on headless servers even with "
 "a   virtual framebuffer."
 msgstr ""
+"プロット時に使用するJupyterバックエンドです．次のいずれかである必要があります: "
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします．すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``ipyvtk_simple`` がインストールされている必要があります． * ``'panel'`` : "
+"VTKレンダーウィンドウをvtkjsオブジェクトに変換し，それをjupyterlabで視覚化します．ほとんどのVTKオブジェクトをサポートします．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``panel`` がインストールされている必要があります． * ``'ipygany'`` : すべてのメッシュ ``ipygany`` "
+"メッシュに変換し，クライアント側でレンダリングするメッシュをストリーミングします．VTKメッシュをサポートしていますが，他にはほとんどありません． "
+"``none`` を除き，これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります． "
+"``'static'`` : "
+"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが、追加のモジュールをインストールする必要はありません．"
+" * ``'none'`` : "
+"jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:3
 msgid "Jupyter backend to use when plotting.  Must be one of the following:"
-msgstr ""
+msgstr "プロット時に使用するJupyterバックエンドです．次のいずれかである必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:5
@@ -296,6 +318,9 @@ msgid ""
 "remote rendering. Requires that a virtual framebuffer be setup when "
 "displaying on a headless server.  Must have ``ipyvtk_simple`` installed."
 msgstr ""
+"``'ipyvtk_simple'`` : "
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします。すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は、仮想フレームバッファをセットアップする必要があります．"
+" ``ipyvtk_simple`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:11
@@ -305,6 +330,9 @@ msgid ""
 "a virtual framebuffer be setup when displaying on a headless server.  Must "
 "have ``panel`` installed."
 msgstr ""
+"``'panel'`` : "
+"VTKレンダーウィンドウをvtkjsオブジェクトに変換し，それをjupyterlabで視覚化します．ほとんどのVTKオブジェクトをサポートします．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``panel`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:17
@@ -314,6 +342,9 @@ msgid ""
 "others.  Aside from ``none``, this is the only method that does not require "
 "a virtual framebuffer.  Must have ``ipygany`` installed."
 msgstr ""
+"``'ipygany'`` : すべてのメッシュを ``ipygany`` "
+"メッシュに変換し，クライアント側でレンダリングするメッシュをストリーミングします．VTKメッシュをサポートしていますが，他にはほとんどありません． "
+"``none`` を除き、これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:23
@@ -323,6 +354,8 @@ msgid ""
 "displaying on a headless server, but does not require any additional modules"
 " to be installed."
 msgstr ""
+"``'static'`` : "
+"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが，追加のモジュールをインストールする必要はありません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:28
@@ -331,6 +364,8 @@ msgid ""
 "using dedicated VTK render windows.  This will generate nothing on headless "
 "servers even with a virtual framebuffer."
 msgstr ""
+"``'none'`` : "
+"jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:35
@@ -344,33 +379,33 @@ msgstr "例"
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:36
 msgid "Enable the ipygany backend."
-msgstr ""
+msgstr "ipygany バックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:41
 msgid "Enable the panel backend."
-msgstr ""
+msgstr "panelバックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:45
 msgid "Enable the ipyvtk_simple backend."
-msgstr ""
+msgstr "ipyvtk_simple バックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:49
 msgid "Just show static images."
-msgstr ""
+msgstr "静止画像を表示するだけです．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:53
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
-msgstr ""
+msgstr "JupyterLab内のすべてのプロットを無効にし，準のデスクトップVTKレンダリングウィンドウを使用して表示します．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:4
 msgid "Using ``ipygany`` with PyVista"
-msgstr ""
+msgstr "PyVistaで ``ipygany`` を使う"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:5
 msgid ""
@@ -381,6 +416,11 @@ msgid ""
 "html documentation (as shown here), rapid plotting (as compared to the other"
 " client jupyterlab plotting modules like ``panel`` or ``itkwidgets``)."
 msgstr ""
+"`ipygany <https://github.com/QuantStack/ipygany>`_ jupyterlabプロットバックエンドは， "
+"`pythreejs widget <https://github.com/jupyter-widgets/pythreejs>`_ を介して "
+"`threejs <https://threejs.org/>`_ を活用した純粋なプロッティングを可能にする強力なモジュールです．(ここに示すように)"
+" HTMLドキュメントの埋め込み，( ``panel`` や ``itkwidgets`` "
+"などの他のクライアントjupyterlabプロットモジュールと比較して) 高速プロッティングを可能にします．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:13
 msgid ""
@@ -389,46 +429,49 @@ msgid ""
 "dimension-29a97597fc33>`_ and without repeating too much here, ``ipygany`` "
 "includes the following features:"
 msgstr ""
+"`ipygany: Jupyter into the third dimension <https://blog.jupyter.org"
+"/ipygany-jupyter-into-the-third-dimension-29a97597fc33>`_ "
+"には優れたブロックポストがあり，ここではあまり繰り返しませんが， ``ipygany`` には以下の特徴があります．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:17
 msgid "IsoColor: apply color-mapping to your mesh."
-msgstr ""
+msgstr "IsoColor:メッシュにカラーマッピングを適用します．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:18
 msgid ""
 "Warp: deform your mesh given a 3-D input data (e.g. displacement data on a "
 "beam)"
-msgstr ""
+msgstr "Warp: 3 D入力データを与えられたメッシュを変形します (例えばビームの変位データ)"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:20
 msgid ""
 "WarpByScalar: deform your mesh given a 1-D input data (e.g. terrain "
 "elevation)"
-msgstr ""
+msgstr "WarpByScalar: 1 D入力データを使用してメッシュを変形します(例えば地形標高)"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:22
 msgid ""
 "Threshold: only visualize mesh parts inside a range of data (e.g. 222 K≤ "
 "temperature ≤ 240 K)"
-msgstr ""
+msgstr "Threshold: 一定範囲のデータ内のメッシュパーツのみを表示します(例えば222 K≦温度≦240 K)"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:24
 msgid ""
 "IsoSurface: only visualize the surface where the mesh respects a data value "
 "(e.g. pressure == 3 bar)"
-msgstr ""
+msgstr "IsoSurface: メッシュがデータ値を尊重するサーフェスのみを表示します(例えば pressure == 3 bar)"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:26
 msgid "Glyph effects like PointCloud"
-msgstr ""
+msgstr "PointCloudのようなグリフ効果"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:27
 msgid "Water visualization"
-msgstr ""
+msgstr "水の可視化"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:31
 msgid "PyVista Wrapping"
-msgstr ""
+msgstr "PyVistaラッピング"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:32
 msgid ""
@@ -440,12 +483,18 @@ msgid ""
 "simply use an existing ``Plotter`` class and set "
 "``jupyter_backend='ipygany'``."
 msgstr ""
+"``pyvista`` でipyganyを使用してプロットするには，2つの方法があります．1つは， ``ipygany`` の "
+"``from_pyvista`` メソッドを使用してpyvistaメッシュ ``ipygany``  "
+"PolyMeshオブジェクト間で変換することで，さまざまな高度な ``ipygany`` メソッドを有効にし， `ipygany "
+"Documentation <https://ipygany.readthedocs.io/en/latest/>`_ "
+"で説明されている例に従うことです．もう1つは，既存の ``Plotter`` クラスを使用して "
+"``jupyter_backend='ipygany'`` を設定する方法です．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:40
 msgid ""
 "Perhaps best of all, the resulting widgets can be embedded within sphinx "
 "documentation:"
-msgstr ""
+msgstr "おそらく最も良いのは，作成されたウィジェットをsphinxドキュメントに埋め込むことができることです．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:56
 msgid ""
@@ -454,6 +503,7 @@ msgid ""
 "code and change the backend depending on the type of plotting backend you "
 "wish to use."
 msgstr ""
+"メッシュカラー，バックグラウンドカラー，カメラ位置がすべてAAAAAシーンにマップされることに注意してください．つまり，既存のコードを再利用して，使用するプロットバックエンドのタイプに応じてバックエンドを変更できます．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:61
 msgid ""
