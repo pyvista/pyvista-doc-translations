@@ -2708,7 +2708,7 @@ msgstr ""
 msgid ""
 "Sample a dataset along a resolution circular arc defined by a normal and "
 "polar vector and plot it."
-msgstr ""
+msgstr "法線ベクトルと極ベクトルで定義された解像度の円弧に沿ってデータセットをサンプリングし，それをプロットします．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2816,7 +2816,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:28
 msgid "Sample a dataset over a circular arc."
-msgstr ""
+msgstr "円弧上のデータセットをサンプリングします．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2834,7 +2834,7 @@ msgstr ""
 msgid ""
 "Sample a dataset over a circular arc defined by a normal and polar vector "
 "and plot it."
-msgstr ""
+msgstr "法線ベクトルと極ベクトルで定義された円弧上のデータセットをサンプリングし，それをプロットします．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -4441,6 +4441,8 @@ msgid ""
 " A and the Y-axis is the variable of interest. Note that this filter returns"
 " ``None``."
 msgstr ""
+"X軸がA点からの距離で，Y軸が対象の変数である場合，対象の変数を2 Dでプロットします．このフィルタでは ``None`` "
+"が戻されることに注意してください．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:7
@@ -4459,14 +4461,14 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:6
 msgid "Location in ``[x, y, z]``."
-msgstr ""
+msgstr "``[x, y, z]`` 内の位置．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:13
 msgid ""
 "Number of pieces to divide the circular arc into. Defaults to number of "
 "cells in the input mesh. Must be a positive integer."
-msgstr ""
+msgstr "円弧を分割する断片の数．既定値は入力メッシュ内のセル数です．正の整数でなければなりません．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:17
@@ -4482,27 +4484,27 @@ msgstr "調査する入力データセット内の変数の文字列名．既定
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:20
 msgid "The string title of the ``matplotlib`` figure."
-msgstr ""
+msgstr "``matplotlib`` 図の文字列タイトル．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:22
 msgid "The string label of the Y-axis. Defaults to the variable name."
-msgstr ""
+msgstr "Y軸の文字列ラベル．デフォルトは変数名"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:24
 msgid "The size of the new figure."
-msgstr ""
+msgstr "新しい図のサイズ"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:26
 msgid "Flag on whether or not to create a new figure."
-msgstr ""
+msgstr "新しい図形を作成するかどうかのフラグ"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:28
 msgid "Shows the ``matplotlib`` figure when ``True``."
-msgstr ""
+msgstr "``True`` の場合， ``matplotlib`` の値を表示します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:30
@@ -4530,14 +4532,14 @@ msgstr "ソース内のポイントが入力のセル内にあるかどうかを
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:42
 msgid "Sample a dataset along a high resolution circular arc and plot."
-msgstr ""
+msgstr "高解像度の円弧に沿ってデータセットをサンプリングし，プロットします．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:9
 msgid ""
 "number of pieces to divide circular arc into. Defaults to number of cells in"
 " the input mesh. Must be a positive integer."
-msgstr ""
+msgstr "円弧を分割する断片の数．既定値は入力メッシュ内のセル数です．正の整数でなければなりません．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:13
@@ -4553,7 +4555,7 @@ msgstr "円弧の平面に対する法線ベクトルです．既定では，正
 msgid ""
 "(starting point of the arc).  By default it is the unit vector in the "
 "positive x direction."
-msgstr ""
+msgstr "(円弧の始点) ．既定では，正のx方向の単位ベクトルです．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:19
@@ -4562,7 +4564,7 @@ msgstr ""
 msgid ""
 "Arc length (in degrees), beginning at the polar vector.  The direction is "
 "counterclockwise.  By default it is 360."
-msgstr ""
+msgstr "極ベクトルを始点とする円弧の長さ(度単位)．方向は反時計回りです。デフォルトは360です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:25
@@ -4745,7 +4747,7 @@ msgstr ""
 msgid ""
 "Number of pieces to divide circular arc into. Defaults to number of cells in"
 " the input mesh. Must be a positive integer."
-msgstr ""
+msgstr "円弧を分割する断片の数．既定値は入力メッシュ内のセル数です．正の整数でなければなりません．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_circular_arc_normal:3
@@ -4759,7 +4761,7 @@ msgstr "ポリラインを構成するセグメントの数は，オブジェク
 msgid ""
 "Starting point of the arc in polar coordinates.  By default it is the unit "
 "vector in the positive x direction."
-msgstr ""
+msgstr "極座標での円弧の始点．既定では，正のx方向の単位ベクトルです．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:7
@@ -8443,7 +8445,7 @@ msgstr "簡単な例"
 msgid ""
 "Create a red spotlight that shines on the origin, then create a scene "
 "without lighting and add our light to it manually."
-msgstr ""
+msgstr "原点を照らす赤いスポットライトを作成し，ライティングなしのシーンを作成して，ライトを手動で追加します．"
 
 #: ../../pyvista/docs/core/lights.rst:33
 msgid "For detailed examples please see :ref:`ref_light_examples`."
@@ -9741,6 +9743,7 @@ msgid ""
 " of the grid copied to the plotting object.  First you have to set up the "
 "plotting object:"
 msgstr ""
+"はりのモーションをアニメートするには，プロットオブジェクトにコピーされたグリッドの位置とスカラーを更新します．まず，プロットオブジェクトを設定する必要があります．"
 
 #: ../../pyvista/docs/core/point-grids.rst:167
 msgid ""
@@ -9770,6 +9773,10 @@ msgid ""
 "containing one entry per point.  The code automatically converts each item "
 "in the list to a string."
 msgstr ""
+"``Plotter`` オブジェクト内の ``add_point_labels`` "
+"関数を使用して，プロットにラベルを追加できます．次の例では，含まれているサンプルの梁をロードし，印刷クラスを生成し，y-z平面に沿った点をサブ選択し，その座標にラベルを付けます．"
+" ``add_point_labels`` "
+"では，ラベルの数がポイントの数と一致し，ラベルがポイントごとに1つのエントリを含むリストである必要があります．このコードは，リスト内の各項目を自動的に文字列に変換します．"
 
 #: ../../pyvista/docs/core/point-grids.rst:280
 msgid ""
@@ -10698,6 +10705,7 @@ msgid ""
 "translation and rotation routines.  This example loads two meshes and moves,"
 " scales, copies them, and finally plots them."
 msgstr ""
+"メッシュは，NumPyまたは組み込みの移動と回転ルーチンを使用して直接操作できます．この例では，2つのメッシュをロードし，移動，スケーリング，コピーして，最後にプロットします．"
 
 #: ../../pyvista/docs/core/points.rst:85
 msgid ""
@@ -10705,6 +10713,7 @@ msgid ""
 "plotting.  The following code creates the class and plots the meshes with "
 "various colors."
 msgstr ""
+"複数のメッシュをプロットするには，プロットクラスを作成してプロットを管理する必要があります．次のコードは，クラスを作成し，メッシュをさまざまな色でプロットします．"
 
 #: ../../pyvista/docs/core/points.rst:125
 msgid "pyvista.PolyData Grid Class Methods"
