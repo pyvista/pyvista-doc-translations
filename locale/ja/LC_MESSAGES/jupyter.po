@@ -129,7 +129,7 @@ msgid ""
 msgstr ""
 "Jupyterlabを使用してプロットする場合は，多数のモジュールのいずれかを使用することもできますが，それぞれに長所，短所，および短所があります． "
 "``pyvista`` は ``Plotting`` "
-"クラスを使用するときにAPIの違いのいくつかを取り除こうとしますが，プロットはバックエンドによって異なるように見えます．また，バックエンドが異なると要件も異なり、展開環境をサポートしない場合があります．"
+"クラスを使用するときにAPIの違いのいくつかを取り除こうとしますが，プロットはバックエンドによって異なるように見えます．また，バックエンドが異なると要件も異なり，展開環境をサポートしない場合があります．"
 
 #: ../../pyvista/docs/jupyter/index.rst:88
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 "メッシュに変換し，クライアント側でレンダリングするメッシュをストリーミングします．VTKメッシュをサポートしていますが，他にはほとんどありません． "
 "``none`` を除き，これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります． "
 "``'static'`` : "
-"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが、追加のモジュールをインストールする必要はありません．"
+"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが，追加のモジュールをインストールする必要はありません．"
 " * ``'none'`` : "
 "jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
@@ -319,7 +319,7 @@ msgid ""
 "displaying on a headless server.  Must have ``ipyvtk_simple`` installed."
 msgstr ""
 "``'ipyvtk_simple'`` : "
-"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします。すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は、仮想フレームバッファをセットアップする必要があります．"
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします．すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
 " ``ipyvtk_simple`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
@@ -344,7 +344,7 @@ msgid ""
 msgstr ""
 "``'ipygany'`` : すべてのメッシュを ``ipygany`` "
 "メッシュに変換し，クライアント側でレンダリングするメッシュをストリーミングします．VTKメッシュをサポートしていますが，他にはほとんどありません． "
-"``none`` を除き、これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります．"
+"``none`` を除き，これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:23
@@ -512,6 +512,8 @@ msgid ""
 "assemble your own scene, change the jupyter_backend while returning the "
 "\"viewer\" with:"
 msgstr ""
+"すべてのvtkウィジェットを含む多くの機能が欠けていることに注意してください，しかし，これらの多くはjupyterlabウィジェットで置き換えることができます．独自のシーンをアセンブルする場合は，次のように"
+" \"viewer\" を返しながらjupyter_backendを変更します．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:76
 msgid ""
@@ -519,10 +521,12 @@ msgid ""
 "shown as a complete widget.  For example, you could even display two side by"
 " side using ``ipywidgets.AppLayout``."
 msgstr ""
+"このシーンを任意の数のjupyterlabウィジェットに追加し，完全なウィジェットとして表示できます．例えば， "
+"``ipywidgets.AppLayout`` を使用して2つを並べて表示することもできます．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:82
 msgid "Examples: Large Models"
-msgstr ""
+msgstr "例: 大規模モデル"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:83
 msgid ""
@@ -531,10 +535,13 @@ msgid ""
 " points, can be quickly loaded.  This is, of course, bandwidth dependent, as"
 " this mesh is around 6 MB."
 msgstr ""
+"この例では，大きなメッシュを示し，500,000 万個の面と 250,000 "
+"個の点を含むCarburatorの例など非常に大きなメッシュでもすばやくロードできることを示します．このメッシュは約6 "
+"MBであるため，これは帯域幅に依存します．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:104
 msgid "Returning Scenes"
-msgstr ""
+msgstr "シーンを戻します"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:105
 msgid ""
@@ -542,10 +549,12 @@ msgid ""
 "This is similar to the :ref:`ref_parametric_example`, except with "
 "interactive widgets."
 msgstr ""
+"``ipywidgets.TwoByTwoLayout`` を使っていくつかのウィジェットを同様に表示します．これは "
+":ref:`ref_parametric_example` に似ていますが，インタラクティブウィジェットがあります．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:139
 msgid "Scalar Bars"
-msgstr ""
+msgstr "スカラバー"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:140
 msgid ""
@@ -554,10 +563,13 @@ msgid ""
 "``'Elevation'``.  Scalar bars, scalar bar title, and the colormap dropdown "
 "menu are automatically added to the scene."
 msgstr ""
+"スカラーバーは，プロットにアクティブなスカラーがある場合に自動的に表示されます．たとえば， ``active_scalar_name`` "
+"のSt.Helens ``mesh`` は ``'Elevation'`` "
+"です．スカラバー，スカラバータイトル，カラーマップドロップダウンメニューは自動的にシーンに追加されます．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:4
 msgid "Using ``ipyvtk-simple`` with PyVista"
-msgstr ""
+msgstr "PyVistaで ``ipyvtk-simple`` を使う"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:7
 msgid ""
@@ -565,6 +577,8 @@ msgid ""
 "Attempting to run the following will return a ``Model not found`` error "
 "within jupyterlab."
 msgstr ""
+"バージョン ``0.1.4`` の時点では， ``ipyvtk-simple`` はJupyterlab "
+"3をサポートしていません．次のコマンドを実行しようとすると，jupyterlab内で ``Model not found`` エラーが返されます．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:11
 msgid ""
@@ -573,6 +587,8 @@ msgid ""
 "streaming the current render window to a canvas within JupyterLab and then "
 "passing any user actions from the canvas back to the VTK render window."
 msgstr ""
+"``pyvista`` には， ``ipyvtk-simple`` "
+"を使用して，JupyterLab環境内にフル機能のプロットを表示する機能があります．この機能は，現在のレンダリングウィンドウをJupyterLab内のキャンバスにストリーミングし，キャンバスからのユーザアクションをすべてVTKレンダリングウィンドウに戻すことで機能します．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:17
 msgid ""
@@ -580,12 +596,13 @@ msgid ""
 "this has huge implications when plotting remotely as you can display any "
 "plot (except for those with multiple render windows) from JupyterLab."
 msgstr ""
+"JupyterLabがローカルで実行されている場合，これはエキサイティングな機能ではありませんが，JupyterLabから任意のプロット(複数のレンダーウィンドウがある場合を除く)を表示できるため，リモートでプロットする場合には大きな意味があります．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:22
 msgid ""
 "For example, both sections of code will display an interactive canvas within"
 " JupyterLab:"
-msgstr ""
+msgstr "たとえば，コードの両方のセクションは，JupyterLab内に対話型キャンバスを表示します．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:38
 msgid "For convenience, you can enable ``use_ipyvtk`` by default with:"
@@ -636,7 +653,7 @@ msgstr ""
 
 #: ../../pyvista/docs/jupyter/itk_plotting.rst:4
 msgid "Using ``itkwidgets`` with PyVista"
-msgstr ""
+msgstr "PyVistaで ``itkwidgets`` を使う"
 
 #: ../../pyvista/docs/jupyter/itk_plotting.rst:8
 msgid ""
@@ -644,12 +661,17 @@ msgid ""
 "Attempting to run the following will return a ``Model not found`` error "
 "within jupyterlab."
 msgstr ""
+"バージョン ``0.32.0`` の時点では， ``ipyvtk-simple`` はJupyterlab "
+"3をサポートしていません．次のコマンドを実行しようとすると，jupyterlab内で ``Model not found`` エラーが返されます．"
 
 #: ../../pyvista/docs/jupyter/itk_plotting.rst:12
 msgid ""
 "Track the progress of this in `Issue 405 "
 "<https://github.com/InsightSoftwareConsortium/itkwidgets/issues/405>`_."
 msgstr ""
+"`Issue 405 "
+"<https://github.com/InsightSoftwareConsortium/itkwidgets/issues/405>`_ "
+"でこの進捗を追跡します．"
 
 #: ../../pyvista/docs/jupyter/itk_plotting.rst:14
 msgid ""
@@ -936,7 +958,7 @@ msgstr "戻り値の型"
 
 #: ../../pyvista/docs/jupyter/panel.rst:4
 msgid "Using ``Panel`` with PyVista"
-msgstr ""
+msgstr "PyVistaで ``Panel`` を使う"
 
 #: ../../pyvista/docs/jupyter/panel.rst:5
 msgid ""
@@ -948,10 +970,15 @@ msgid ""
 "``plot``, or ``Plotter.show`` to automatically enable plotting with Juptyer "
 "and ``panel``."
 msgstr ""
+"PyVistaでは， `panel <https://github.com/holoviz/panel>`_ モジュールを ``vtk.js`` "
+"jupyterlabプロットバックエンドとして使用できます．このバックエンドは，スタンドアロンのVTKビューアまたは緊密に統合された "
+"``pyvista`` プロットバックエンドとして使用できます．たとえば，Jupyterノートブック環境で "
+"``jupyter_backend='panel'`` を ``plot`` または ``Plotter.show`` に渡すと，Juptyerと "
+"``panel`` を使用したプロットが自動的に有効になります．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:13
 msgid "For example, here's the ``PyVista`` logo:"
-msgstr ""
+msgstr "例えば，以下は ``PyVista`` のロゴです．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:20
 msgid ""
@@ -959,10 +986,13 @@ msgid ""
 "the conversion to ``vtk.js``, but for the vast majority of cases, this can "
 "be used to accurately render ``pyvista`` plots within Jupyterlab."
 msgstr ""
+"これは， ``vtk.js`` "
+"への変換でいくつかの詳細が失われるので，完璧なレプリカではないことに注意してください．しかし，ほとんどの場合，これは，Jupyterlab内の "
+"``pyvista`` プロットを正確にレンダリングするために使用できます．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:27
 msgid "Examples and Usage"
-msgstr ""
+msgstr "例と使用方法"
 
 #: ../../pyvista/docs/jupyter/panel.rst:28
 msgid ""
@@ -970,14 +1000,16 @@ msgid ""
 "done on a plot by plot basis by setting the ``jupyter_backend`` in "
 "``mesh.plot()``:"
 msgstr ""
+"Jupyterノートブックで ``panel`` を使用する方法は2つあります．これは， ``mesh.plot()`` で "
+"``jupyter_backend`` を設定することにより，プロット単位で実行できます．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:48
 msgid "Alternatively, you can set the backend globally:"
-msgstr ""
+msgstr "または，バックエンドをグローバルに設定できます．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:82
 msgid "Configuration Considerations"
-msgstr ""
+msgstr "構成に関する考慮事項"
 
 #: ../../pyvista/docs/jupyter/panel.rst:83
 msgid ""
@@ -985,13 +1017,17 @@ msgid ""
 "sure to start up a virtual framebuffer using ``Xvfb``.  You can either start"
 " it using bash with:"
 msgstr ""
+"ヘッドレス環境(例: Google Colab，独自のVM)で実行している場合， ``Xvfb`` "
+"を使用して仮想フレームバッファを必ず起動してください．次のようにbashを使用して起動することもできます．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:99
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Be "
 "sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
 msgstr ""
+"または，組み込みの ``pyvista.start_xvfb()`` を使用して起動することもできます． ``xvfb`` と ``libgl1"
+"-mesa-glx`` は必ず次のようにインストールしてください．"
 
 #: ../../pyvista/docs/jupyter/panel.rst:107
 msgid "Or using the package manager used by your environment."
-msgstr ""
+msgstr "または，ご使用の環境で使用されているパッケージマネージャを使用します．"
