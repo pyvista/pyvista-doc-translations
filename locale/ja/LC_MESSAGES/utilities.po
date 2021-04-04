@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 08:51+0000\n"
+"POT-Creation-Date: 2021-04-04 00:17+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -65,6 +65,8 @@ msgstr "vtk球を作成します．"
 #: pyvista.utilities.parametric_objects.Spline:0
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:0
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:0
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -355,6 +357,8 @@ msgstr "**cylinder** -- 円柱表面．"
 #: pyvista.utilities.parametric_objects.Spline:13
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:24
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:22
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -755,6 +759,8 @@ msgstr "2つの端点と中心で定義される円弧を作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:3
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:3
 msgid ""
 "The number of segments composing the polyline is controlled by setting the "
 "object resolution."
@@ -772,11 +778,15 @@ msgstr "もう一方の終点の位置．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:10
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:6
 msgid "Center of the circle that defines the arc."
 msgstr "円弧を定義する円の中心．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:12
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:8
 msgid ""
 "The number of segments of the polyline that draws the arc. Resolution of 1 "
 "will just create a line."
@@ -804,12 +814,45 @@ msgstr "デフォルトでは，円弧は最短の角度セクタ ``pointa`` と
 msgid ""
 "By setting this to ``True``, the longest angular sector is used instead "
 "(i.e. the negative coterminal angle to the shortest one)."
-msgstr "これを ``True`` に設定すると，代わりに最長の角度セクタが使用されます(すなわち、最小値1に対する負の同極角)．"
+msgstr "これを ``True`` に設定すると，代わりに最長の角度セクタが使用されます(すなわち，最小値1に対する負の同極角)．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArc:25
 msgid "Create a quarter arc centered at the origin in the xy plane."
 msgstr "XY平面の原点を中心とする4分円弧を作成します．"
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:1
+msgid ""
+"Create a circular arc defined by normal to the plane of the arc, and an "
+"angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:11
+msgid ""
+"The normal vector to the plane of the arc.  By default it points in the "
+"positive Z direction."
+msgstr "円弧の平面に対する法線ベクトルです．既定では，正のZ方向を指します．"
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:14
+msgid ""
+"Starting point of the arc in polar coordinates.  By default it is the unit "
+"vector in the positive x direction."
+msgstr "極座標での円弧の始点．既定では，正のx方向の単位ベクトルです．"
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:17
+msgid ""
+"Arc length (in degrees) beginning at the polar vector.  The direction is "
+"counterclockwise.  By default it is 360."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:23
+msgid "Quarter arc centered at the origin in the xy plane."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:1
@@ -822,7 +865,7 @@ msgid ""
 "Points of the pyramid.  Points are ordered such that the first four points "
 "are the four counterclockwise points on the quadrilateral face, and the last"
 " point is the apex."
-msgstr "ピラミッドの点．最初の4つの点が四角形の面上の反時計回りの4つの点になり，最後の点が頂点になるように，点が順序付けられます．"
+msgstr "角錐の点．最初の4つの点が四角形の面上の反時計回りの4つの点になり，最後の点が頂点になるように，点が順序付けられます．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:8
@@ -1593,12 +1636,12 @@ msgid ""
 "The vtk matrix to be converted to a ``numpy.ndarray``. Returned ndarray has "
 "shape (3, 3) or (4, 4) as appropriate."
 msgstr ""
-"``numpy.ndarray`` に変換されるvtk行列．返されるndarrayは、必要に応じて (3, 3) または (4, 4) の形をとる．"
+"``numpy.ndarray`` に変換されるvtk行列．返されるndarrayは，必要に応じて (3, 3) または (4, 4) の形をとる．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:1
 msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
-msgstr "``numpy.ndarray`` や配列状のものをvtk行列に変換します。"
+msgstr "``numpy.ndarray`` や配列状のものをvtk行列に変換します．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:3

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 08:51+0000\n"
+"POT-Creation-Date: 2021-04-04 00:17+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -3294,7 +3294,7 @@ msgid ""
 " clipped datasets, regardless of the setting of ``inplace``."
 msgstr ""
 "**mesh** --  ``inplace=False`` のときにメッシュをクリップします． ``inplace=True`` のとき "
-"``None`` ． ``return_clipped=True`` の場合、 ``inplace`` "
+"``None`` ． ``return_clipped=True`` の場合， ``inplace`` "
 "の設定に関係なく，クリッピングされていないデータセットとクリッピングされたデータセットを含むタプル．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4564,7 +4564,7 @@ msgstr "(円弧の始点) ．既定では，正のx方向の単位ベクトル�
 msgid ""
 "Arc length (in degrees), beginning at the polar vector.  The direction is "
 "counterclockwise.  By default it is 360."
-msgstr "極ベクトルを始点とする円弧の長さ(度単位)．方向は反時計回りです。デフォルトは360です．"
+msgstr "極ベクトルを始点とする円弧の長さ(度単位)．方向は反時計回りです．デフォルトは360です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc_normal:25
@@ -6909,11 +6909,10 @@ msgstr "**intersection_cells** (*np.ndarray*) --交差セルのインデック�
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.multi_ray_trace:31
 msgid ""
-"Compute the intersection between rays from the origin in directions [1, 0, "
-"0], [0, 1, 0] and [0, 0, 1], and a sphere with radius 0.5 centered at the "
-"origin"
+"Compute the intersection between rays from the origin in directions ``[1, 0,"
+" 0]``, ``[0, 1, 0]`` and ``[0, 0, 1]``, and a sphere with radius 0.5 "
+"centered at the origin"
 msgstr ""
-"原点からの方向 [1, 0, 0]， [0, 1, 0] と [0, 0, 1] の光線と，原点を中心とする半径0.5の球との交差を計算します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.plot_boundaries:3
@@ -6969,7 +6968,7 @@ msgstr ":func:`pyvista.plot` 参照"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.plot_curvature:13
 msgid "**cpos** -- List of camera position, focal point, and view up."
-msgstr "**cpos** -- カメラ位置、焦点、およびビューアップのリスト．"
+msgstr "**cpos** -- カメラ位置，焦点，およびビューアップのリスト．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.plot_curvature:18
@@ -8564,7 +8563,7 @@ msgid ""
 "respect to the scene, as it does not follow the camera. This is the default."
 msgstr ""
 "ライトのタイプ．文字列の場合は ``'headlight'`` ， ``'camera light'`` ， ``'scene light'`` "
-"のいずれか。intの場合はそれぞれ1，2，3のいずれか．クラス定数 ``Light.HEADLIGHT`` ， "
+"のいずれか．intの場合はそれぞれ1，2，3のいずれか．クラス定数 ``Light.HEADLIGHT`` ， "
 "``Light.CAMERA_LIGHT`` ， ``Light.SCENE_LIGHT`` "
 "もそれぞれ使用できます．ヘッドライトがカメラにアタッチされ，カメラの軸に沿って焦点を見ます．カメラライトもカメラとともに移動しますが，カメラライトに対して一般的な位置を占めることができます．シーンライトはカメラに従わないため，シーンに対して静止しています．これがデフォルトです．"
 
@@ -8577,7 +8576,7 @@ msgid ""
 "``Light.SCENE_LIGHT`` are also available, respectively."
 msgstr ""
 "ライトのタイプ．文字列の場合は ``'headlight'`` ， ``'camera light'`` ， ``'scene light'`` "
-"のいずれか。intの場合はそれぞれ1，2，3のいずれか．クラス定数 ``Light.HEADLIGHT`` ， "
+"のいずれか．intの場合はそれぞれ1，2，3のいずれか．クラス定数 ``Light.HEADLIGHT`` ， "
 "``Light.CAMERA_LIGHT`` ， ``Light.SCENE_LIGHT`` もそれぞれ使用できます．"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -8794,7 +8793,7 @@ msgid ""
 msgstr ""
 "この特性によって定義される角度依存性と :py:attr:`cone_angle` によって実行される打ち切りは独立しているので，(小さい "
 ":py:attr:`cone_angle` "
-"の)狭いビームをもつスポットライトについては、強度の角度変化を見ることはより困難であり，ビームの角度分布に目に見えるように影響を与えるためにはより高い指数が必要であるかもしれないことに注意してください．"
+"の)狭いビームをもつスポットライトについては，強度の角度変化を見ることはより困難であり，ビームの角度分布に目に見えるように影響を与えるためにはより高い指数が必要であるかもしれないことに注意してください．"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.exponent:18
@@ -8921,8 +8920,8 @@ msgstr ""
 "カメラライトもカメラとともに移動しますが，カメラに対して任意の相対位置を持つことができます．カメラライトは (0, 0, 1) "
 "にカメラが位置する座標空間で定義され，距離1で (0, 0, 0) を見て (0, 1, 0) "
 "が上になります．カメラライトは変換行列を使用してこの空間を確立します．つまり，カメラに対して固定の :py:attr:`position` "
-"を持ち、カメラを移動すると、 :py:attr:`transform_matrix`  (焦点についても同じことが言えます)の変更を介して "
-":py:attr:`world_position` にのみ影響します。"
+"を持ち，カメラを移動すると， :py:attr:`transform_matrix`  (焦点についても同じことが言えます)の変更を介して "
+":py:attr:`world_position` にのみ影響します．"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.light_type:20
@@ -9014,8 +9013,8 @@ msgid ""
 "with a cone angle of at least 90 degrees don't show angular dependence of "
 "their beams, but they display attenuation."
 msgstr ""
-"減衰とコーンアングルは、ポジションライトでのみ使用されます。 :py:attr:`exponent` "
-"プロパティはスポットライトでのみ使用されます。コーンアングルが90度以上の位置ライトでは、ビームの角度依存性は表示されませんが、減衰は表示されます。"
+"減衰とコーンアングルは，ポジションライトでのみ使用されます． :py:attr:`exponent` "
+"プロパティはスポットライトでのみ使用されます．コーンアングルが90度以上の位置ライトでは，ビームの角度依存性は表示されませんが，減衰は表示されます．"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.positional:14
@@ -9244,7 +9243,7 @@ msgid ""
 "``vtk.vtkLight.GetTransformedFocalPoint()`` method."
 msgstr ""
 "ワールド空間の焦点は，存在する場合，ライトの変換行列によって変換される :py:attr:`focal_point` "
-"プロパティです．この読み取り専用プロパティの値は、 ``vtk.vtkLight.GetTransformedFocalPoint()`` "
+"プロパティです．この読み取り専用プロパティの値は， ``vtk.vtkLight.GetTransformedFocalPoint()`` "
 "メソッドに対応します．"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -9271,7 +9270,7 @@ msgid ""
 "method."
 msgstr ""
 "ワールド空間の位置は，存在する場合，ライトの変換行列によって変換される :py:attr:`position` "
-"プロパティです．この読み取り専用プロパティの値は、 ``vtk.vtkLight.GetTransformedPosition()`` "
+"プロパティです．この読み取り専用プロパティの値は， ``vtk.vtkLight.GetTransformedPosition()`` "
 "メソッドに対応します．"
 
 #: ../../pyvista/docs/core/objects.rst:2
@@ -10422,7 +10421,7 @@ msgstr ""
 #: pyvista.ExplicitStructuredGrid.visible_bounds:8
 msgid ""
 "The limits of the visible grid in the X, Y and Z directions respectively."
-msgstr "X、Y、Z方向それぞれの可視グリッドの範囲．"
+msgstr "X，Y，Z方向それぞれの可視グリッドの範囲．"
 
 #: ../../pyvista/docs/core/point-grids.rst:347
 msgid "pv.Structured Grid Class Methods"
@@ -10894,7 +10893,7 @@ msgid ""
 "list containing one or more points.  Each point must have 3 dimensions."
 msgstr ""
 "フレキシブル入力タイプ． ``vtk.vtkPolyData`` を使用できます．この場合，このPolyDataオブジェクトは "
-"``deep=True`` の場合はコピーされ，　``deep=False`` の場合はシャローコピーになります．パスも受け入れられます。パスは， "
+"``deep=True`` の場合はコピーされ，　``deep=False`` の場合はシャローコピーになります．パスも受け入れられます．パスは， "
 "``'my_mesh.stl'`` のようなローカルパス，または ``'/tmp/my_mesh.ply'`` や "
 "``'C:/Users/user/my_mesh.ply'`` "
 "のようなグローバルパスです．それ以外の場合は，1つ以上のポイントを含むポイント配列またはリストである必要があります．各点は3次元でなければなりません．"
