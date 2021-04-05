@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-04 00:17+0000\n"
+"POT-Creation-Date: 2021-04-05 00:18+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -400,7 +400,7 @@ msgstr "**cylinder** -- 円柱表面．"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:16
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:19
+#: pyvista.utilities.fileio.read:23
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read_exodus:26
 #: ../../pyvista/pyvista/utilities/regression.pydocstring of
@@ -826,7 +826,7 @@ msgstr "XY平面の原点を中心とする4分円弧を作成します．"
 msgid ""
 "Create a circular arc defined by normal to the plane of the arc, and an "
 "angle."
-msgstr ""
+msgstr "円弧の平面に垂直に定義される円弧と角度を作成します．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArcFromNormal:11
@@ -847,12 +847,12 @@ msgstr "極座標での円弧の始点．既定では，正のx方向の単位�
 msgid ""
 "Arc length (in degrees) beginning at the polar vector.  The direction is "
 "counterclockwise.  By default it is 360."
-msgstr ""
+msgstr "極ベクトルを始点とする円弧の長さ(度単位)方向は反時計回りです．デフォルトは360です．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArcFromNormal:23
 msgid "Quarter arc centered at the origin in the xy plane."
-msgstr ""
+msgstr "XY平面の原点を中心とする4分円弧．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Pyramid:1
@@ -1691,21 +1691,28 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:15
+msgid ""
+"If specified, the reader will be chosen by an extension which is different "
+"to its actual extension. For example, ``'.vts'``, ``'.vtu'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:19
 msgid "Format of file to read with meshio."
 msgstr "meshioで読み込むファイルのフォーマット．"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:20
+#: pyvista.utilities.fileio.read:24
 msgid "Load an example mesh"
 msgstr "サンプルメッシュをロードする"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:26
+#: pyvista.utilities.fileio.read:30
 msgid "Load a vtk file"
 msgstr "vtkファイルをロードする"
 
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:30
+#: pyvista.utilities.fileio.read:34
 msgid "Load a meshio file"
 msgstr "meshioファイルをロードする"
 
