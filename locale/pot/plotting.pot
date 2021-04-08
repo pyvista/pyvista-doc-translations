@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-03 00:16+0000\n"
+"POT-Creation-Date: 2021-04-08 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -488,7 +488,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_arrows:11
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_background_image:18
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_legend:41
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:11
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:12
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:179
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
@@ -996,6 +996,17 @@ msgid "Reset the camera to use perspective projection."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+msgid ":obj:`disable_shadows <pyvista.BasePlotter.disable_shadows>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.disable_shadows:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.disable_shadows:1
+msgid "Disable shadows."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
 msgstr ""
 
@@ -1102,6 +1113,17 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.enable_rubber_band_style:1
 msgid "Set the interactive style to rubber band picking."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+msgid ":obj:`enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.enable_shadows:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.enable_shadows:1
+msgid "Enable shadows."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
@@ -2308,7 +2330,7 @@ msgstr ""
 msgid "If ``True``, only add the light to the active renderer. The default is that every renderer adds the light. To add the light to an arbitrary renderer, see the ``add_light`` method of the Renderer class."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:12
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:13
 msgid "Create a plotter that we initialize with no lights, and add a cube and a single headlight to it."
 msgstr ""
 
@@ -4298,6 +4320,15 @@ msgid ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+msgid ":obj:`actors <pyvista.Renderer.actors>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.actors:1
+msgid "Return a dictionary of actors assigned to this renderer."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
 msgstr ""
 
@@ -4407,7 +4438,7 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_light:1
-msgid "Add a Light to the renderer."
+msgid "Add a light to the renderer."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
@@ -4462,6 +4493,10 @@ msgid ":obj:`disable_parallel_projection <pyvista.Renderer.disable_parallel_proj
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+msgid ":obj:`disable_shadows <pyvista.Renderer.disable_shadows>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable <pyvista.Renderer.enable>`\\ \\(\\)"
 msgstr ""
 
@@ -4479,6 +4514,10 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable_parallel_projection <pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+msgid ":obj:`enable_shadows <pyvista.Renderer.enable_shadows>`\\ \\(\\)"
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1

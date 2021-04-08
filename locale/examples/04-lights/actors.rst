@@ -22,14 +22,14 @@ Light Actors
 ~~~~~~~~~~~~
 
 Positional lights in PyVista have customizable beam shapes, see the
-:ref:`ref_light_beam_shape_example` example. Spotlights are special in the sense that
-they are unidirectional lights with a finite position, so they can be visualized
-using a cone.
+:ref:`ref_light_beam_shape_example` example. Spotlights are special in
+the sense that they are unidirectional lights with a finite position,
+so they can be visualized using a cone.
 
-This is exactly the purpose of a ``vtk.vtkLightActor``, the functionality of which
-can be enabled for spotlights:
+This is exactly the purpose of a ``vtk.vtkLightActor``, the
+functionality of which can be enabled for spotlights:
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-38
+.. GENERATED FROM PYTHON SOURCE LINES 13-41
 
 .. code-block:: default
 
@@ -40,7 +40,7 @@ can be enabled for spotlights:
 
     cow = examples.download_cow()
     cow.rotate_x(90)
-    plotter = pv.Plotter(lighting='none')
+    plotter = pv.Plotter(lighting='none', window_size=(1000, 1000))
     plotter.add_mesh(cow, color='white')
     floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]),
                      i_size=30, j_size=25)
@@ -53,6 +53,9 @@ can be enabled for spotlights:
     UFO.intensity = 3
     UFO.show_actor()
     plotter.add_light(UFO)
+
+    # enable shadows to better demonstrate lighting
+    plotter.enable_shadows()
 
     plotter.camera_position = [(28, 30, 22), (0.77, 0, -0.44), (0, 0, 1)]
     plotter.show()
@@ -79,12 +82,12 @@ can be enabled for spotlights:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 Light actors can be very useful when designing complex scenes where
 spotlights are involved in lighting.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-63
+.. GENERATED FROM PYTHON SOURCE LINES 44-66
 
 .. code-block:: default
 
@@ -126,12 +129,12 @@ spotlights are involved in lighting.
 
 
     [(7.2347026140134645, 7.2347026140134645, 8.71018352812937),
-     (0.0, 0.0, 0.0),
+     (0.02451908588409424, 0.02451908588409424, 1.5),
      (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-70
+.. GENERATED FROM PYTHON SOURCE LINES 67-73
 
 One thing to watch out for is that the light actors are represented such that
 their cone has a fixed height. This implies that for very large cone angles
@@ -140,7 +143,7 @@ camera position before rendering is usually a good idea. Increasing the first
 example's cone angle and omitting the manual camera positioning exemplifies
 the problem:
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-88
+.. GENERATED FROM PYTHON SOURCE LINES 73-89
 
 .. code-block:: default
 
@@ -163,8 +166,6 @@ the problem:
 
 
 
-
-
 .. image:: /examples/04-lights/images/sphx_glr_actors_003.png
     :alt: actors
     :class: sphx-glr-single-img
@@ -178,7 +179,7 @@ the problem:
 
 
     [(181.37157603517724, 181.37157603517724, 184.55305799261285),
-     (0.7761268615722656, 0.0, -0.4386579990386963),
+     (0.0, 0.0, 3.181481957435608),
      (0.0, 0.0, 1.0)]
 
 
@@ -186,7 +187,7 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.920 seconds)
+   **Total running time of the script:** ( 0 minutes  2.203 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

@@ -186,22 +186,24 @@ Again we can check what kind of lights this setting uses:
 Custom lighting
 ===============
 
-We can introduce our own lighting from scratch by disabling any lighting
-on plotter initialization. Adding a single scene light to a scene will
-often result in ominous visuals due to objects having larger regions in
-shadow:
+We can introduce our own lighting from scratch by disabling any
+lighting on plotter initialization. Adding a single scene light to a
+scene will often result in ominous visuals due to objects having
+larger regions in shadow.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-86
+.. GENERATED FROM PYTHON SOURCE LINES 79-88
 
 .. code-block:: default
 
 
-    plotter = pv.Plotter(lighting='none')
-    plotter.add_mesh(mesh, color='white')
+    plotter = pv.Plotter(lighting='none', window_size=(1000, 1000))
+    plotter.add_mesh(mesh, color='white', smooth_shading=True)
     light = pv.Light()
-    light.set_direction_angle(30, 0)
+    light.set_direction_angle(30, -20)
     plotter.add_light(light)
     plotter.show()
+
+
 
 
 
@@ -223,10 +225,52 @@ shadow:
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 89-95
+
+Custom lighting with shadows
+============================
+
+Here, we ``enable_shadows`` to enhance the effect that the lighting
+angle has.  It has a subtle, but realistic effect.  Notice the sharp
+shadows due to the mountaintop.
+
+.. GENERATED FROM PYTHON SOURCE LINES 95-103
+
+.. code-block:: default
+
+
+    plotter = pv.Plotter(lighting='none', window_size=(1000, 1000))
+    plotter.add_mesh(mesh, color='white', smooth_shading=True)
+    light = pv.Light()
+    light.set_direction_angle(20, -20)
+    plotter.add_light(light)
+    plotter.enable_shadows()
+    plotter.show()
+
+
+
+.. image:: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
+    :alt: plotter builtins
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
+     (562835.0, 5114981.5, 2294.5),
+     (0.0, 0.0, 1.0)]
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.224 seconds)
+   **Total running time of the script:** ( 0 minutes  3.776 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_plotter_builtins.py:

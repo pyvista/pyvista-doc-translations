@@ -2131,6 +2131,27 @@ truly bring out the best of your visualization:
    :hidden:
 
    /examples/04-lights/plotter_builtins
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the usage of lights and shadows in PyVista.">
+
+.. only:: html
+
+ .. figure:: /examples/04-lights/images/thumb/sphx_glr_shadows_thumb.png
+     :alt: Shadows
+
+     :ref:`sphx_glr_examples_04-lights_shadows.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/04-lights/shadows
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>
