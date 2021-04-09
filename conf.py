@@ -35,18 +35,6 @@ basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs
 
 execfile_(os.path.join(basedir, "conf.py"), globals())
 
-# TODO: Fix RTD error (#78).
-extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.napoleon',
-              'sphinx.ext.doctest',
-              'sphinx.ext.autosummary',
-              'notfound.extension',
-              'sphinx_copybutton',
-              'sphinx_gallery.gen_gallery',
-              'sphinx.ext.extlinks',
-              'sphinx.ext.coverage',
-              ]
-
 locale_dirs = [os.path.join(basedir, "../../locale/")]
 
 sphinx_gallery_conf = {
