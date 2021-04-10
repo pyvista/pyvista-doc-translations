@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 00:18+0000\n"
+"POT-Creation-Date: 2021-04-08 09:20+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -747,6 +747,8 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_background_image:18
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:38
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:12
@@ -772,6 +774,8 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:55
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:38
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:80
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
@@ -1437,7 +1441,7 @@ msgstr "パース投影を使用するようにカメラをリセットします
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`disable_shadows <pyvista.BasePlotter.disable_shadows>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`disable_shadows <pyvista.BasePlotter.disable_shadows>`\\ \\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1446,7 +1450,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.disable_shadows:1
 msgid "Disable shadows."
-msgstr ""
+msgstr "影を無効にします．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
@@ -1611,7 +1615,7 @@ msgstr "インタラクティブスタイルをラバーバンド選択に設定
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ \\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1620,7 +1624,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_shadows:1
 msgid "Enable shadows."
-msgstr ""
+msgstr "影を有効にします．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ""
@@ -3264,15 +3268,15 @@ msgstr "すべてのラベルと軸ラベルの色です．デフォルトはグ
 #: pyvista.plotting.renderer.Renderer.add_floor:19
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:19
-msgid "Thickness of the edges. Only if ``show_edges`` is ``True``"
-msgstr "エッジの厚み． ``show_edges`` が ``True`` の場合のみ"
+msgid "Thickness of the edges. Only if ``show_edges`` is ``True``."
+msgstr "エッジの厚み． ``show_edges`` が ``True`` の場合のみ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:21
-msgid "The opacity of the generated surface"
-msgstr "生成されたサーフェスの不透明度"
+msgid "The opacity of the generated surface."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:23
@@ -3283,21 +3287,19 @@ msgstr "並べて表示するメッシュエッジを表示するかどうかを
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:25
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:42
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:25
 msgid ""
 "Thickness of lines.  Only valid for wireframe and surface representations.  "
-"Default None."
-msgstr "線の太さ．ワイヤフレーム表示とサーフェス表示にのみ有効です．デフォルトなし．"
+"Default ``None``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:28
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:28
-msgid "Enable or disable view direction lighting.  Default False."
-msgstr "ビュー方向の照明を有効または無効にします．既定値はFalseです．"
+msgid "Enable or disable view direction lighting.  Default ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:30
@@ -3310,15 +3312,22 @@ msgstr "メッシュのエッジのカラー．"
 #: pyvista.plotting.renderer.Renderer.add_floor:32
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:32
-msgid "Percentage padding between 0 and 1"
-msgstr "0と1の間の置換詰物パーセンテージ"
+msgid "Percentage padding between 0 and 1."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:34
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:34
-msgid "Percentage offset along plane normal"
-msgstr "平面法線に沿ったパーセンテージオフセット"
+msgid "Percentage offset along plane normal."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:39
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:39
+msgid "Add a floor below a sphere and plot it."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_key_event:3
@@ -3648,6 +3657,13 @@ msgid ""
 "style='points'. Default ``5.0``"
 msgstr ""
 "プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``5.0``"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:42
+msgid ""
+"Thickness of lines.  Only valid for wireframe and surface representations.  "
+"Default None."
+msgstr "線の太さ．ワイヤフレーム表示とサーフェス表示にのみ有効です．デフォルトなし．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:45
@@ -6860,13 +6876,13 @@ msgstr ":obj:`CAMERA_STR_ATTR_MAP <pyvista.Renderer.CAMERA_STR_ATTR_MAP>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`actors <pyvista.Renderer.actors>`\\"
-msgstr ""
+msgstr ":obj:`actors <pyvista.Renderer.actors>`\\"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.actors:1
 msgid "Return a dictionary of actors assigned to this renderer."
-msgstr ""
+msgstr "このレンダラに割り当てられているアクターのディクショナリを返します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:210:<autosummary>:1
 msgid ":obj:`axes_enabled <pyvista.Renderer.axes_enabled>`\\"
@@ -7009,7 +7025,7 @@ msgstr ":obj:`add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_light:1
 msgid "Add a light to the renderer."
-msgstr ""
+msgstr "レンダラーにライトを追加します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""
@@ -7087,7 +7103,7 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`disable_shadows <pyvista.Renderer.disable_shadows>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`disable_shadows <pyvista.Renderer.disable_shadows>`\\ \\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable <pyvista.Renderer.enable>`\\ \\(\\)"
@@ -7124,7 +7140,7 @@ msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`enable_shadows <pyvista.Renderer.enable_shadows>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`enable_shadows <pyvista.Renderer.enable_shadows>`\\ \\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ""

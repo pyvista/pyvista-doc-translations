@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 00:18+0000\n"
+"POT-Creation-Date: 2021-04-08 09:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -487,6 +487,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.py:docstring of pyvista.plotting.helpers.plot_arrows:15
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_arrows:11
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_background_image:18
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:38
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_legend:41
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:12
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:179
@@ -500,6 +501,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.show_bounds:80
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.Plotter.show:55
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:38
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.show_bounds:80
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 msgid "Examples"
@@ -2212,12 +2214,12 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:19
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:19
-msgid "Thickness of the edges. Only if ``show_edges`` is ``True``"
+msgid "Thickness of the edges. Only if ``show_edges`` is ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:21
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:21
-msgid "The opacity of the generated surface"
+msgid "The opacity of the generated surface."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:23
@@ -2226,14 +2228,13 @@ msgid "Flag on whether to show the mesh edges for tiling."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:25
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:42
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:25
-msgid "Thickness of lines.  Only valid for wireframe and surface representations.  Default None."
+msgid "Thickness of lines.  Only valid for wireframe and surface representations.  Default ``None``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:28
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:28
-msgid "Enable or disable view direction lighting.  Default False."
+msgid "Enable or disable view direction lighting.  Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:30
@@ -2243,12 +2244,17 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:32
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:32
-msgid "Percentage padding between 0 and 1"
+msgid "Percentage padding between 0 and 1."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:34
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:34
-msgid "Percentage offset along plane normal"
+msgid "Percentage offset along plane normal."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:39
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:39
+msgid "Add a floor below a sphere and plot it."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_key_event:3
@@ -2423,6 +2429,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:39
 msgid "Point size of any nodes in the dataset plotted. Also applicable when style='points'. Default ``5.0``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:42
+msgid "Thickness of lines.  Only valid for wireframe and surface representations.  Default None."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:45
