@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/camera.rst:2
 msgid "Cameras"
-msgstr ""
+msgstr "カメラ"
 
 #: ../../pyvista/docs/core/camera.rst:3
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 " come with a default set of cameras that work well in most cases, but in "
 "many situations a more hands-on access to camera is necessary."
 msgstr ""
+":class:`pyvista.Camera` クラスは， ``vtk.vtkCamera`` クラスに追加機能とPython APIを追加します． "
+":class:`pyvista.vtkCamera` "
+"オブジェクトには，ほとんどの場合に適切に機能する既定値のライトセットが付属していますが，多くの場合，より実践的なカメラへのアクセスが必要です．"
 
 #: ../../pyvista/docs/core/camera.rst:10 ../../pyvista/docs/core/lights.rst:10
 msgid "Brief Example"
@@ -39,7 +42,7 @@ msgstr "簡単な例"
 
 #: ../../pyvista/docs/core/camera.rst:12
 msgid "Create a frustum of camera, then create a scene of inside frustum."
-msgstr ""
+msgstr "カメラの視錐台を作成してから，視錐台内のシーンを作成します．"
 
 #: ../../pyvista/docs/core/camera.rst:76
 #: ../../pyvista/docs/core/lights.rst:112
@@ -49,7 +52,7 @@ msgstr "APIリファレンス"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:1
 msgid "PyVista wrapper for the VTK Camera class."
-msgstr ""
+msgstr "VTK CameraクラスのPyVistaラッパー．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:4
@@ -268,35 +271,35 @@ msgstr "例"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:5
 msgid "Create a camera at the pyvista module level"
-msgstr ""
+msgstr "pyvistaモジュールレベルでカメラを作成します"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:10
 msgid ""
 "Access the active camera of a plotter and get the position of the camera."
-msgstr ""
+msgstr "プロッタのアクティブカメラにアクセスし，カメラの位置を取得します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.clipping_range:1
 msgid ""
 "Return the location of the near and far clipping planes along the direction "
 "of projection."
-msgstr ""
+msgstr "投影方向に沿ったNear/Far Clip Planesの位置を返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.direction:1
 msgid "Vector from the camera position to the focal point."
-msgstr ""
+msgstr "カメラ位置から焦点までのベクトル．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.disable_parallel_projection:1
 msgid "Disable the use of perspective projection."
-msgstr ""
+msgstr "パース投影の使用を無効にします．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.distance:1
 msgid "Distance from the camera position to the focal point."
-msgstr ""
+msgstr "カメラ位置から焦点までの距離．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.enable_parallel_projection:1
@@ -313,46 +316,46 @@ msgstr "カメラは平行投影になります．平行投影は，イメージ
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.focal_point:1
 msgid "Location of the camera's focus in world coordinates."
-msgstr ""
+msgstr "全体座標におけるカメラの焦点の位置．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.is_parallel_projection:1
 msgid "Return True if parallel projection is set."
-msgstr ""
+msgstr "平行投影が設定されている場合はTrueを返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.model_transform_matrix:1
 msgid "Return the camera's model transformation matrix."
-msgstr ""
+msgstr "カメラのモデル変換行列を返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.parallel_scale:1
 msgid "Scaling used for a parallel projection."
-msgstr ""
+msgstr "平行投影に使用されるスケーリング．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.position:1
 msgid "Position of the camera in world coordinates."
-msgstr ""
+msgstr "全体座標でのカメラの位置．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.thickness:1
 msgid "Return the distance between clipping planes."
-msgstr ""
+msgstr "クリッピング平面間の距離を返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.up:1
 msgid "Return the \"up\" of the camera."
-msgstr ""
+msgstr "カメラの \"up\" を返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.view_angle:1
 msgid "Return the camera view angle."
-msgstr ""
+msgstr "カメラビューの角度を返します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:1
 msgid "Get the view frustum."
-msgstr ""
+msgstr "視錐台を取得します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -648,7 +651,7 @@ msgstr "パラメータ"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:3
 msgid "The aspect of the viewport to compute the planes. Default to 1.0."
-msgstr ""
+msgstr "平面を計算するビューポートのアスペクト．既定値は1.0です．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -800,7 +803,7 @@ msgstr "戻り値"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:6
 msgid "**frustum** -- View frustum."
-msgstr ""
+msgstr "**frustum** -- 視錐台．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -940,19 +943,19 @@ msgstr "戻り値の型"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:1
 msgid "Set the zoom of the camera."
-msgstr ""
+msgstr "カメラのズームを設定します．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:3
 msgid "In perspective mode, decrease the view angle by the specified factor."
-msgstr ""
+msgstr "パースモードでは，指定した係数だけビュー角度を小さくします．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:6
 msgid ""
 "In parallel mode, decrease the parallel scale by the specified factor. A "
 "value greater than 1 is a zoom-in, a value less than 1 is a zoom-out."
-msgstr ""
+msgstr "パラレルモードでは，指定した係数だけパラレルスケールを縮小します．1より大きい値はズームイン，1より小さい値はズームアウトです．"
 
 #: ../../pyvista/docs/core/composite.rst:2
 msgid "Composite Datasets"
