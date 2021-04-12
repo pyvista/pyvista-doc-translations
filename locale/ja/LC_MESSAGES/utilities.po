@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 00:18+0000\n"
+"POT-Creation-Date: 2021-04-12 00:18+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -105,6 +105,8 @@ msgstr "vtk球を作成します．"
 #: pyvista.utilities.helpers.array_from_vtkmatrix:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -224,6 +226,8 @@ msgstr "終了緯度角度．"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:0
@@ -289,6 +293,8 @@ msgstr "**sphere** -- 球メッシュ．"
 #: pyvista.utilities.parametric_objects.ParametricTorus:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -399,6 +405,8 @@ msgstr "**cylinder** -- 円柱表面．"
 #: pyvista.utilities.parametric_objects.ParametricTorus:13
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:16
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:34
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:23
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -1653,7 +1661,107 @@ msgstr ""
 "vtk行列に変換する配列または配列のような配列を指定します． (3, 3) の形は ``vtk.vtkMatrix3x3`` に変換され， (4, 4)"
 " の形は ``vtk.vtkMatrix4x4`` に変換されます．他の形は無効です．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:28
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:1
+msgid "Construct a cubemap from 6 images."
+msgstr "6つのイメージからキューブマップを作成します．"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:3
+msgid "Each of the 6 images must be in the following format:"
+msgstr "6つのイメージはそれぞれ次の形式である必要があります:"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:5
+msgid "<prefix>negx<ext>"
+msgstr "<prefix>negx<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:6
+msgid "<prefix>negy<ext>"
+msgstr "<prefix>negy<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:7
+msgid "<prefix>negz<ext>"
+msgstr "<prefix>negz<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:8
+msgid "<prefix>posx<ext>"
+msgstr "<prefix>posx<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:9
+msgid "<prefix>posy<ext>"
+msgstr "<prefix>posy<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:10
+msgid "<prefix>posz<ext>"
+msgstr "<prefix>posz<ext>"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:12
+msgid "Prefix may be empty, and extension will default to ``'.jpg'``"
+msgstr "プレフィクスが空の場合があり，拡張はデフォルトで ``'.jpg'`` になります．"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:14
+msgid "For example, if you have 6 images with the skybox2 prefix:"
+msgstr "たとえば，skybox2というプレフィックスを持つ6つのイメージがあるとします:"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:16
+msgid "``'skybox2-negx.jpg'``"
+msgstr "``'skybox2-negx.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:17
+msgid "``'skybox2-negy.jpg'``"
+msgstr "``'skybox2-negy.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:18
+msgid "``'skybox2-negz.jpg'``"
+msgstr "``'skybox2-negz.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:19
+msgid "``'skybox2-posx.jpg'``"
+msgstr "``'skybox2-posx.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:20
+msgid "``'skybox2-posy.jpg'``"
+msgstr "``'skybox2-posy.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:21
+msgid "``'skybox2-posz.jpg'``"
+msgstr "``'skybox2-posz.jpg'``"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:23
+msgid "Prefix to the filename."
+msgstr "ファイル名の接頭辞．"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:25
+msgid "The filename extension.  For example ``'.jpg'``."
+msgstr "ファイル名拡張子．たとえば， ``'.jpg'`` ．"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:27
+msgid "Directory containing the cubemap images."
+msgstr "キューブマップイメージを含むディレクトリ．"
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:30
+msgid "Texture with cubemap."
+msgstr "立方体マップのテクスチャ"
+
+#: ../../pyvista/docs/utilities/utilities.rst:30
 msgid "File IO"
 msgstr "ファイルIO"
 
@@ -1794,7 +1902,7 @@ msgstr "任意のPyVistaメッシュ/空間データタイプ．"
 msgid "File type for meshio to save."
 msgstr "保存するファイルの種類を指定します．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:42
+#: ../../pyvista/docs/utilities/utilities.rst:44
 msgid "Mesh Creation"
 msgstr "メッシュ作成"
 
@@ -1860,7 +1968,7 @@ msgstr "平面にフィットするように点のn x 3配列をサイズ変更"
 msgid "If true, also returns the center and normal used to generate the plane"
 msgstr "trueの場合，平面の生成に使用される中心と法線も返します．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:54
+#: ../../pyvista/docs/utilities/utilities.rst:56
 msgid "Array Access"
 msgstr "配列アクセス"
 
@@ -1975,7 +2083,7 @@ msgstr ""
 "これは非常に非効率的であることに注意してください-非効率的なサポートはサポートしないよりましです "
 ":)．これをもっと早くする方法があれば，プルリクエストを開くことを検討してください．"
 
-#: ../../pyvista/docs/utilities/utilities.rst:74
+#: ../../pyvista/docs/utilities/utilities.rst:76
 msgid "Image Comparison and Regression"
 msgstr "イメージの比較とレグレッション"
 
