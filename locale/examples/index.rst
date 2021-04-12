@@ -1540,6 +1540,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="VTK 9 introduced Physically Based Rendering (PBR) and we have exposed that functionality in PyV...">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_pbr_thumb.png
+     :alt: Physically Based Rendering
+
+     :ref:`sphx_glr_examples_02-plot_pbr.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/pbr
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Interpolate the scalars of a dataset over a circular arc.">
 
 .. only:: html

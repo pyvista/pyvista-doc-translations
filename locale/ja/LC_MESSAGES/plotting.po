@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-10 08:40+0000\n"
+"POT-Creation-Date: 2021-04-12 00:18+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -753,7 +753,7 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_light:12
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:179
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:204
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2104,6 +2104,23 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:1
 msgid "Set the background color."
 msgstr "背景色を設定します．"
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+msgid ""
+":obj:`set_environment_texture "
+"<pyvista.BasePlotter.set_environment_texture>`\\ \\(texture\\)"
+msgstr ""
+":obj:`set_environment_texture "
+"<pyvista.BasePlotter.set_environment_texture>`\\ \\(texture\\)"
+
+#: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_environment_texture:1
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_environment_texture:1
+msgid "Set the environment texture used for image based lighting."
+msgstr "イメージベースのライティングに使用する環境テクスチャを設定します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:176:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.BasePlotter.set_focus>`\\ \\(point\\)"
@@ -3644,9 +3661,9 @@ msgstr "``show_edges=True`` の場合にエッジに適用される単色です�
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:39
 msgid ""
 "Point size of any nodes in the dataset plotted. Also applicable when "
-"style='points'. Default ``5.0``"
+"style='points'. Default ``5.0``."
 msgstr ""
-"プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``5.0``"
+"プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``5.0`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:42
@@ -3662,18 +3679,18 @@ msgid ""
 " opacity of the mesh and uniformly applied everywhere - should be between 0 "
 "and 1. A string can also be specified to map the scalars range to a "
 "predefined opacity transfer function (options include: 'linear', 'linear_r',"
-" 'geom', 'geom_r'). A string could also be used to map a scalars array from "
-"the mesh to the opacity (must have same number of elements as the "
+" 'geom', 'geom_r').  A string could also be used to map a scalars array from"
+" the mesh to the opacity (must have same number of elements as the "
 "``scalars`` argument). Or you can pass a custom made transfer function that "
 "is an array either ``n_colors`` in length or shorter."
 msgstr ""
-"メッシュの不透明度．単一のfloat値を指定した場合，それはメッシュのグローバル不透明度になり，すべての場所に均一に適用されます．0から1の間である必要があります．文字列を指定して，スカラー範囲を定義済みの不透明度転送関数(オプションには，"
+"メッシュの不透明度。単一のfloat値を指定した場合、それはメッシュのグローバル不透明度になり、すべての場所に均一に適用されます。0から1の間である必要があります。文字列を指定して、スカラー範囲を定義済みの不透明度転送関数(オプションには、"
 " 'linear', 'linear_r', 'geom', 'geom_r' "
-"があります．)にマップすることもできます．文字列を使用して，スカラー配列をメッシュから不透明度にマップすることもできます( ``scalars`` "
-"引き数と同じ数の要素がなければなりません)．または，長さが ``n_colors`` 以下の配列であるカスタムメイドの転送関数を渡すこともできます．"
+"があります。)にマップすることもできます。文字列を使用して、スカラー配列をメッシュから不透明度にマップすることもできます( ``scalars`` "
+"引き数と同じ数の要素がなければなりません)。または、長さが ``n_colors`` 以下の配列であるカスタムメイドの転送関数を渡すこともできます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:55
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:57
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:33
 msgid ""
@@ -3682,12 +3699,12 @@ msgid ""
 msgstr "cmapの方向を反転します．ほとんどのカラーマップでは， ``*_r`` サフィックスも同様にこれを行うことができます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:58
-msgid "Enable or disable view direction lighting. Default False."
-msgstr "ビュー方向の照明を有効または無効にします．既定値はFalseです．"
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:60
+msgid "Enable or disable view direction lighting. Default ``False``."
+msgstr "ビュー方向の照明を有効または無効にします．既定値は ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:60
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:62
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:24
 msgid ""
@@ -3696,20 +3713,21 @@ msgid ""
 msgstr "スカラーを表示するときに使用するカラーの数．デフォルトは256です．スカラーバーにもこの数の色があります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:63
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:65
 msgid ""
-"Enabling makes for a smoother scalars display.  Default is True. When False,"
-" OpenGL will interpolate the mapped colors which can result is showing "
-"colors that are not present in the color map."
+"Enabling makes for a smoother scalars display.  Default is ``True``.  When "
+"``False``, OpenGL will interpolate the mapped colors which can result is "
+"showing colors that are not present in the color map."
 msgstr ""
-"有効にすると，より滑らかなスカラー表示になります．既定値はTrueです．Falseの場合，OpenGLはマップされたカラーを補間し，カラーマップに存在しないカラーを表示することがあります．"
+"有効にすると，より滑らかなスカラー表示になります．既定値は ``True`` です． ``False`` "
+"の場合，OpenGLはマップされたカラーを補間し，カラーマップに存在しないカラーを表示することがあります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:67
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:70
 msgid ""
-"Name of the Matplotlib colormap to us when mapping the ``scalars``. See "
+"Name of the Matplotlib colormap to use when mapping the ``scalars``.  See "
 "available Matplotlib colormaps.  Only applicable for when displaying "
-"``scalars``. Requires Matplotlib to be installed. ``colormap`` is also an "
+"``scalars``. Requires Matplotlib to be installed.  ``colormap`` is also an "
 "accepted alias for this. If ``colorcet`` or ``cmocean`` are installed, their"
 " colormaps can be specified by name.  You can also specify a list of colors "
 "to override an existing colormap with a custom one.  For example, to create "
@@ -3722,13 +3740,11 @@ msgstr ""
 " ``['green', 'red', 'blue']`` を指定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:67
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:27
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:70
 msgid ""
-"Name of the Matplotlib colormap to us when mapping the ``scalars``. See "
+"Name of the Matplotlib colormap to use when mapping the ``scalars``.  See "
 "available Matplotlib colormaps.  Only applicable for when displaying "
-"``scalars``. Requires Matplotlib to be installed. ``colormap`` is also an "
+"``scalars``. Requires Matplotlib to be installed.  ``colormap`` is also an "
 "accepted alias for this. If ``colorcet`` or ``cmocean`` are installed, their"
 " colormaps can be specified by name."
 msgstr ""
@@ -3738,7 +3754,7 @@ msgstr ""
 "がインストールされている場合は，それらのカラーマップを名前で指定できます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:73
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:77
 msgid ""
 "You can also specify a list of colors to override an existing colormap with "
 "a custom one.  For example, to create a three color colormap you might "
@@ -3748,21 +3764,21 @@ msgstr ""
 "``['green', 'red', 'blue']``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:78
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:82
 msgid ""
 "String label to use when adding a legend to the scene with "
 ":func:`pyvista.BasePlotter.add_legend`"
 msgstr ":func:`pyvista.BasePlotter.add_legend` でシーンに凡例を追加するときに使用する文字列ラベル"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:81
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:85
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:36
 msgid "Reset the camera after adding this mesh to the scene"
 msgstr "このメッシュをシーンに追加した後，カメラをリセットします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:83
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:87
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:66
 msgid ""
@@ -3773,22 +3789,21 @@ msgstr ""
 ":func:`pyvista.BasePlotter.add_scalar_bar` を参照してください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:87
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:70
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:91
 msgid ""
-"If False, a scalar bar will not be added to the scene. Defaults to ``True``."
-msgstr "Falseの場合，スカラーバーはシーンに追加されません．デフォルトは ``True`` です．"
+"If ``False``, a scalar bar will not be added to the scene. Defaults to "
+"``True``."
+msgstr "``False`` の場合，スカラーバーはシーンに追加されません．デフォルトは ``True`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:90
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:94
 msgid ""
 "If a ``MultiBlock`` dataset is given this will color each block by a solid "
 "color using matplotlib's color cycler."
 msgstr "``MultiBlock`` データセットが与えられると，matplotlibのカラーサイクラーを使って各ブロックを単色で塗りつぶします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:93
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:97
 msgid ""
 "The name for the added mesh/actor so that it can be easily updated.  If an "
 "actor of this name already exists in the rendering window, it will be "
@@ -3797,7 +3812,7 @@ msgstr ""
 "簡単に更新できるように，追加したメッシュ/アクターの名前．この名前のアクターがレンダリングウィンドウに既に存在する場合は，新しいアクターに置き換えられます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:97
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:101
 msgid ""
 "A texture to apply if the input mesh has texture coordinates.  This will not"
 " work with MultiBlock datasets. If set to ``True``, the first available "
@@ -3808,7 +3823,29 @@ msgstr ""
 "に設定すると，オブジェクト上で最初に使用可能なテクスチャが使用されます．文字列名を指定すると，入力メッシュに関連付けられたその名前のテクスチャがプルされます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:108
+msgid "Render points as spheres rather than dots."
+msgstr "点をドットではなく球としてレンダリングします．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:110
+msgid ""
+"Show lines as thick tubes rather than flat lines.  Control the width with "
+"``line_width``."
+msgstr "線分をフラットな線分ではなく太いチューブとして表示します． ``line_width`` で幅を制御します．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:113
+msgid ""
+"Enable smooth shading when ``True`` using either the Gouraud or Phong "
+"shading algorithm.  When ``False``, use flat shading. Automatically enabled "
+"when ``pbr=True``."
+msgstr ""
+"GouraudまたはPhongシェーディングアルゴリズムを使用した ``True`` 時にスムーズシェーディングを有効にします． ``False`` "
+"時にはフラットシェーディングを使用します． ``pbr=True`` 時に自動的に有効になります．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:118
 msgid ""
 "When lighting is enabled, this is the amount of light from 0 to 1 that "
 "reaches the actor when not directed at the light source emitted from the "
@@ -3816,62 +3853,60 @@ msgid ""
 msgstr "照明が有効な場合，これは，ビューアから放射された光源に向けられていないときにアクターに到達する0から1の光の量です．デフォルトは0.0です"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:114
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:122
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:89
 msgid "The diffuse lighting coefficient. Default 1.0"
 msgstr "拡散照明係数．デフォルト1.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:116
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:124
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:91
 msgid "The specular lighting coefficient. Default 0.0"
 msgstr "鏡面反射光の係数．デフォルト0.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:118
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:126
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:93
 msgid "The specular power. Between 0.0 and 128.0"
 msgstr "鏡面パワー．0.0から128.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:120
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:128
 msgid "The color to use for all ``NaN`` values in the plotted scalar array."
 msgstr "プロットされたスカラー配列のすべての ``NaN`` 値に使用する色．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:123
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:131
 msgid "Opacity of ``NaN`` values.  Should be between 0 and 1. Default 1.0"
 msgstr "``NaN`` 値の不透明度．0から1の間でなければなりません．デフォルトは1.0です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:126
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:46
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:134
 msgid ""
 "Does not render faces that are culled. Options are ``'front'`` or "
 "``'back'``. This can be helpful for dense surface meshes, especially when "
 "edges are visible, but can cause flat meshes to be partially displayed.  "
-"Defaults ``False``."
+"Defaults to ``False``."
 msgstr ""
 "選択された面はレンダリングされません．オプションは ``'front'`` または ``'back'`` "
 "です．これは，高密度のサーフェイスメッシュ，特にエッジが表示されている場合に便利ですが，フラットメッシュが部分的に表示されることがあります．既定値は "
 "``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:131
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:140
 msgid ""
 "If an 2 dimensional array is passed as the scalars, plot those values as "
-"RGB(A) colors! ``rgba`` is also accepted alias for this. Opacity (the A) is "
-"optional."
+"RGB(A) colors! ``rgba`` is also an accepted alias for this.  Opacity (the A)"
+" is optional."
 msgstr ""
 "2次元配列がスカラーとして渡された場合，これらの値をRGB (A) カラーでプロットします． ``rgba`` "
 "はこの別名としても受け入れられます．不透明度(A)はオプションです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:135
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:144
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:51
 msgid ""
@@ -3880,10 +3915,10 @@ msgid ""
 msgstr "``True`` に設定すると，スカラー配列内の一意の値の数が ``n_colors`` 引数として使用されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:138
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:148
 msgid ""
 "If set to ``True``, plot a silhouette highlight for the mesh. This feature "
-"is only available for a triangulated ``PolyData``. As a ``dict``, it "
+"is only available for a triangulated ``PolyData``.  As a ``dict``, it "
 "contains the properties of the silhouette to display:      * ``color``: "
 "``str`` or 3-item ``list``, color of the silhouette     * ``line_width``: "
 "``float``, edge width     * ``opacity``: ``float`` between 0 and 1, edge "
@@ -3897,66 +3932,66 @@ msgstr ""
 "``decimate``: ``float`` 0と1の間，デシメーションのレベルが含まれます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:138
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:148
 msgid ""
 "If set to ``True``, plot a silhouette highlight for the mesh. This feature "
-"is only available for a triangulated ``PolyData``. As a ``dict``, it "
+"is only available for a triangulated ``PolyData``.  As a ``dict``, it "
 "contains the properties of the silhouette to display:"
 msgstr ""
 "``True`` に設定されている場合，メッシュのシルエットハイライトをプロットします．この機能は，三角形化された ``PolyData`` "
 "でのみ使用できます． ``dict`` として，表示するシルエットのプロパティが含まれています．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:142
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:153
 msgid "``color``: ``str`` or 3-item ``list``, color of the silhouette"
 msgstr "``color``: ``str`` または3点の ``list`` ，シルエットの色"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:143
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:154
 msgid "``line_width``: ``float``, edge width"
 msgstr "``line_width``: ``float`` ，エッジ幅"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:144
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:155
 msgid "``opacity``: ``float`` between 0 and 1, edge transparency"
 msgstr "``opacity``: 0から1の ``float`` ，エッジ透過性"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:145
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:156
 msgid "``feature_angle``: If ``True``, display sharp edges"
 msgstr "``feature_angle``: ``True`` の場合，シャープエッジを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:146
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:157
 msgid "``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr "``decimate``: 0から1の ``float`` ，間引きレベル"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:148
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:159
 msgid ""
 "Invert the opacity mappings and make the values correspond to transparency."
 msgstr "不透明度マッピングを反転し，値を透明度に対応させます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:151
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:162
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
-"automatically set the scalar bar ``below_label`` to ``'Below'``"
+"automatically set the scalar bar ``below_label`` to ``'Below'``."
 msgstr ""
 "スカラー範囲 ( ``clim`` ) 未満の値の単色．これにより，スカラーバー ``below_label`` が自動的に ``'Below'`` "
 "に設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:155
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:166
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
-"automatically set the scalar bar ``above_label`` to ``'Above'``"
+"automatically set the scalar bar ``above_label`` to ``'Above'``."
 msgstr ""
 "スカラー範囲 ( ``clim`` ) 未満の値の単色．これにより，スカラーバー ``above_label`` が自動的に ``'Above'`` "
 "に設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:159
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:170
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:73
 msgid ""
@@ -3966,12 +4001,12 @@ msgid ""
 msgstr "注釈の辞書を渡します．キーはスカラー範囲のfloat値で，スカラーバーに注釈を付けます．値は文字列注釈です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:163
-msgid "Set whether this mesh is pickable"
-msgstr "このメッシュを選択可能にするかどうかを設定します"
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:174
+msgid "Set whether this mesh is pickable."
+msgstr "このメッシュを選択可能にするかどうかを設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:165
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:176
 msgid ""
 "Use log scale when mapping data to colors. Scalars less than zero are mapped"
 " to the smallest representable positive float. Default: ``True``."
@@ -3980,20 +4015,39 @@ msgstr ""
 "``True`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:169
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:62
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:95
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.update_coordinates:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.update_scalars:8
-msgid "Force a render when True.  Default ``True``."
-msgstr "Trueの場合，強制的にレンダリングします．デフォルトは ``True`` ．"
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:180
+msgid ""
+"Enable physics based rendering (PBR) if the mesh is ``PolyData``.  Use the "
+"``color`` argument to set the base color. This is only available in VTK>=9."
+msgstr ""
+"メッシュが ``PolyData`` の場合，Physics Based Rendering(PBR)を有効にします． ``color`` "
+"引数を使用してベースカラーを設定します．これは VTK>=9 でのみ使用できます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:171
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:184
+msgid ""
+"Usually this value is either 0 or 1 for a real material but any value in "
+"between is valid. This parameter is only used by PBR interpolation. Default "
+"value is 0.0."
+msgstr ""
+"通常，この値は実際のマテリアルでは0または1ですが，中間の値は有効です．このパラメータはPBR補間でのみ使用されます．デフォルト値は0.0です．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:188
+msgid ""
+"This value has to be between 0 (glossy) and 1 (rough). A glossy material has"
+" reflections and a high specular part. This parameter is only used by PBR "
+"interpolation. Default value is 0.5."
+msgstr ""
+"この値は，0(光沢)と1(粗さ)の間である必要があります．光沢のあるマテリアルには，反射と高い鏡面反射部分があります．このパラメータは，PBR補間でのみ使用されます．既定値は0.5です．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:193
+msgid "Force a render when ``True``.  Default ``True``."
+msgstr "``True`` の場合，強制的にレンダリングします．デフォルトは ``True`` ．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:195
 msgid ""
 "Set component of vector valued scalars to plot.  Must be nonnegative, if "
 "supplied. If ``None``, the magnitude of the vector is plotted."
@@ -4002,12 +4056,12 @@ msgstr ""
 "の場合，ベクトルの大きさがプロットされます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:175
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:200
 msgid "**actor** -- VTK actor of the mesh."
 msgstr "**actor** -- メッシュのVTKアクター．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:180
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:205
 msgid ""
 "Add a sphere to the plotter and show it with a custom scalar bar title."
 msgstr "プロッタに球を追加し，カスタムのスカラーバータイトルで表示します．"
@@ -4777,6 +4831,17 @@ msgid "Draw a filled box behind the scalar bar with the ``background_color``"
 msgstr "``background_color`` でスカラーバーの後ろに塗りつぶされたボックスを描画します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:62
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_volume:95
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.update_coordinates:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.update_scalars:8
+msgid "Force a render when True.  Default ``True``."
+msgstr "Trueの場合，強制的にレンダリングします．デフォルトは ``True`` ．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:67
 msgid ""
 "Add a custom interactive scalar bar that is horizontal, has an outline, and "
@@ -5217,6 +5282,20 @@ msgstr ""
 "以下の配列であるカスタムメイドの伝達関数を渡すこともできます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_volume:27
+msgid ""
+"Name of the Matplotlib colormap to us when mapping the ``scalars``. See "
+"available Matplotlib colormaps.  Only applicable for when displaying "
+"``scalars``. Requires Matplotlib to be installed. ``colormap`` is also an "
+"accepted alias for this. If ``colorcet`` or ``cmocean`` are installed, their"
+" colormaps can be specified by name."
+msgstr ""
+"``scalars`` をマップする際のMatplotlibカラーマップの名前．利用可能なMatplotlibカラーマップを参照してください． "
+"``scalars`` を表示する場合にのみ適用されます．Matplotlibがインストールされている必要があります． ``colormap`` "
+"は，このエイリアスとしても使用できます． ``colorcet`` または ``cmocean`` "
+"がインストールされている場合は，それらのカラーマップを名前で指定できます．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:12
@@ -5235,6 +5314,18 @@ msgid ""
 "viewer.  Default 0.0."
 msgstr ""
 "照明が有効な場合，これは，ビューアから放射された光源に向けられていないときにアクターに到達する0から1の光の量です．デフォルトは0.0です．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_volume:46
+msgid ""
+"Does not render faces that are culled. Options are ``'front'`` or "
+"``'back'``. This can be helpful for dense surface meshes, especially when "
+"edges are visible, but can cause flat meshes to be partially displayed.  "
+"Defaults ``False``."
+msgstr ""
+"選択された面はレンダリングされません．オプションは ``'front'`` または ``'back'`` "
+"です．これは，高密度のサーフェイスメッシュ，特にエッジが表示されている場合に便利ですが，フラットメッシュが部分的に表示されることがあります．既定値は "
+"``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:54
@@ -5266,6 +5357,12 @@ msgstr ""
 "使用するボリュームマッパーは名前で指定します．オプションには， ``'fixed_point'``， ``'gpu'`` ， ``'open_gl'``"
 " ， ``'smart'`` があります． ``None`` の場合， ``rcParams`` の ``\"volume_mapper\"`` "
 "が使用されます．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_volume:70
+msgid ""
+"If False, a scalar bar will not be added to the scene. Defaults to ``True``."
+msgstr "Falseの場合，スカラーバーはシーンに追加されません．デフォルトは ``True`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:77
@@ -6265,6 +6362,21 @@ msgid "Set the background color to white."
 msgstr "背景色を白に設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_environment_texture:3
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_environment_texture:3
+msgid ""
+"This texture is supposed to represent the scene background. If it is not a "
+"cubemap, the texture is supposed to represent an equirectangular projection."
+" If used with raytracing backends, the texture must be an equirectangular "
+"projection and must be constructed with a valid vtkImageData. Warning, this "
+"texture must be expressed in linear color space. If the texture is in sRGB "
+"color space, set the color flag on the texture or set the argument isSRGB to"
+" true."
+msgstr ""
+"このテクスチャはシーンのバックグラウンドを表すものとみなされます．立方体マップでない場合，テクスチャは等角投影を表すものとみなされます．レイトレーシングバックエンドで使用する場合，テクスチャは等角投影である必要があり，有効なvtkImageDataを使用して構築する必要があります．警告，このテクスチャは線形カラースペースで表現する必要があります．テクスチャがsRGBカラー空間にある場合は，テクスチャのカラーフラグを設定するか，引数isSRGBをtrueに設定します．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:3
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:3
@@ -7220,6 +7332,14 @@ msgid ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, 
 msgstr ""
 ":obj:`set_background <pyvista.Renderer.set_background>`\\ \\(color\\[\\, "
 "top\\]\\)"
+
+#: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
+msgid ""
+":obj:`set_environment_texture <pyvista.Renderer.set_environment_texture>`\\ "
+"\\(texture\\)"
+msgstr ""
+":obj:`set_environment_texture <pyvista.Renderer.set_environment_texture>`\\ "
+"\\(texture\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:215:<autosummary>:1
 msgid ":obj:`set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"

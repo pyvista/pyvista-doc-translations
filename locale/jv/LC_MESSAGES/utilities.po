@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 00:18+0000\n"
+"POT-Creation-Date: 2021-04-12 00:18+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Javanese (https://www.transifex.com/getfem-doc/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -99,6 +99,8 @@ msgstr ""
 #: pyvista.utilities.helpers.array_from_vtkmatrix:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtkmatrix_from_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:0
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -218,6 +220,8 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:0
@@ -283,6 +287,8 @@ msgstr ""
 #: pyvista.utilities.parametric_objects.ParametricTorus:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -393,6 +399,8 @@ msgstr ""
 #: pyvista.utilities.parametric_objects.ParametricTorus:13
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:16
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:34
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:23
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -1607,7 +1615,107 @@ msgid ""
 "``vtk.vtkMatrix4x4``. No other shapes are valid."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:28
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:1
+msgid "Construct a cubemap from 6 images."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:3
+msgid "Each of the 6 images must be in the following format:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:5
+msgid "<prefix>negx<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:6
+msgid "<prefix>negy<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:7
+msgid "<prefix>negz<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:8
+msgid "<prefix>posx<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:9
+msgid "<prefix>posy<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:10
+msgid "<prefix>posz<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:12
+msgid "Prefix may be empty, and extension will default to ``'.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:14
+msgid "For example, if you have 6 images with the skybox2 prefix:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:16
+msgid "``'skybox2-negx.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:17
+msgid "``'skybox2-negy.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:18
+msgid "``'skybox2-negz.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:19
+msgid "``'skybox2-posx.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:20
+msgid "``'skybox2-posy.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:21
+msgid "``'skybox2-posz.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:23
+msgid "Prefix to the filename."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:25
+msgid "The filename extension.  For example ``'.jpg'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:27
+msgid "Directory containing the cubemap images."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:30
+msgid "Texture with cubemap."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:30
 msgid "File IO"
 msgstr ""
 
@@ -1741,7 +1849,7 @@ msgstr ""
 msgid "File type for meshio to save."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:42
+#: ../../pyvista/docs/utilities/utilities.rst:44
 msgid "Mesh Creation"
 msgstr ""
 
@@ -1805,7 +1913,7 @@ msgstr ""
 msgid "If true, also returns the center and normal used to generate the plane"
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:54
+#: ../../pyvista/docs/utilities/utilities.rst:56
 msgid "Array Access"
 msgstr ""
 
@@ -1913,7 +2021,7 @@ msgid ""
 " opening a pull request."
 msgstr ""
 
-#: ../../pyvista/docs/utilities/utilities.rst:74
+#: ../../pyvista/docs/utilities/utilities.rst:76
 msgid "Image Comparison and Regression"
 msgstr ""
 
