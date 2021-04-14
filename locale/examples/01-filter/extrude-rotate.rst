@@ -29,12 +29,12 @@ new polygonal primitives. These primitives form a "skirt" or
 swept surface. For example, sweeping a line results in a
 cylindrical shell, and sweeping a circle creates a torus.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 14-22
+.. GENERATED FROM PYTHON SOURCE LINES 14-23
 
 .. code-block:: default
 
     import pyvista
+    import numpy as np
 
     # create a line and rotate it about the Z-axis
     resolution = 10
@@ -73,12 +73,12 @@ cylindrical shell, and sweeping a circle creates a torus.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-25
+.. GENERATED FROM PYTHON SOURCE LINES 24-26
 
 Plot the extruded line
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-47
+.. GENERATED FROM PYTHON SOURCE LINES 26-49
 
 .. code-block:: default
 
@@ -107,6 +107,7 @@ Plot the extruded line
 
 
 
+
 .. image:: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
     :alt: extrude rotate
     :class: sphx-glr-single-img
@@ -125,10 +126,65 @@ Plot the extruded line
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 50-52
+
+Create a spring
+~~~~~~~~~~~~~~~
+
+.. GENERATED FROM PYTHON SOURCE LINES 52-77
+
+.. code-block:: default
+
+
+    # Create the spring profile (a circle).
+    plotter = pyvista.Plotter()
+
+    vertices = np.array(
+        [
+            [1.0, 0.0, 0.0],
+            [1.0732, 0.0, -0.1768],
+            [1.25, 0.0, -0.25],
+            [1.4268, 0.0, -0.1768],
+            [1.5, 0.0, 0.00],
+            [1.4268, 0.0, 0.1768],
+            [1.25, 0.0, 0.25],
+            [1.0732, 0.0, 0.1768],
+        ]
+    )
+    faces = np.hstack([[8, 0, 1, 2, 3, 4, 5, 6, 7]])
+    profile = pyvista.PolyData(vertices, faces)
+
+    # Extrude the profile to make a spring.
+    spring = profile.extrude_rotate(resolution=360, translation=6.0, dradius=1.0, angle=2160.0)
+    plotter.add_text("Spring", font_size=24)
+    plotter.add_mesh(spring, color="tan", show_edges=True)
+
+    plotter.show(cpos="zx")
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
+    :alt: extrude rotate
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(0.041666626930236816, 18.26355517249696, 3.0),
+     (0.041666626930236816, -0.041666626930236816, 3.0),
+     (1.0, 0.0, 0.0)]
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.675 seconds)
+   **Total running time of the script:** ( 0 minutes  4.217 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-rotate.py:
