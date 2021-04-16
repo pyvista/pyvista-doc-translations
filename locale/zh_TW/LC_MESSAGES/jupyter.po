@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-02 08:51+0000\n"
+"POT-Creation-Date: 2021-04-16 01:29+0000\n"
 "PO-Revision-Date: 2021-04-02 08:34+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: ../../pyvista/docs/jupyter/index.rst:43
 msgid ""
 "Server-side rendering with PyVista streaming to the notebook through "
-"`ipyvtk-simple <https://github.com/Kitware/ipyvtk-simple/>`_"
+"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_"
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/index.rst:45
@@ -147,6 +147,7 @@ msgstr ""
 #: ../../pyvista/docs/jupyter/index.rst:96
 #: ../../pyvista/docs/jupyter/index.rst:98
 #: ../../pyvista/docs/jupyter/index.rst:100
+#: ../../pyvista/docs/jupyter/index.rst:100
 #: ../../pyvista/docs/jupyter/index.rst:102
 msgid "Yes"
 msgstr ""
@@ -171,13 +172,12 @@ msgid "threejs"
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/index.rst:98
-#: ../../pyvista/docs/jupyter/index.rst:100
 #: ../../pyvista/docs/jupyter/index.rst:102
 msgid "No"
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/index.rst:100
-msgid "ipyvtk_simple"
+msgid "ipyvtklink"
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/index.rst:100
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../pyvista/docs/jupyter/index.rst:105
 msgid ""
-"At the moment, ``itkwidgets`` and ``ipyvtk_simple`` are incompatible with "
+"At the moment, ``itkwidgets`` and ``ipyvtklink`` are incompatible with "
 "Jupyterlab 3, and will result in a \"Error displaying widget: model not "
 "found\" message from juptyer.  Additionally, all the modules other than "
 "``ipygany`` require a framebuffer, which can be setup on a headless "
@@ -245,11 +245,11 @@ msgstr ""
 #: pyvista.jupyter.set_jupyter_backend:3
 msgid ""
 "Jupyter backend to use when plotting.  Must be one of the following:  * "
-"``'ipyvtk_simple'`` : Render remotely and stream the   resulting VTK images "
+"``'ipyvtklink'`` : Render remotely and stream the   resulting VTK images "
 "back to the client.  Supports all VTK   methods, but suffers from lag due to"
 " remote rendering.   Requires that a virtual framebuffer be setup when "
-"displaying   on a headless server.  Must have ``ipyvtk_simple`` installed.  "
-"* ``'panel'`` : Convert the VTK render window to a vtkjs   object and then "
+"displaying   on a headless server.  Must have ``ipyvtklink`` installed.  * "
+"``'panel'`` : Convert the VTK render window to a vtkjs   object and then "
 "visualize that within jupyterlab. Supports   most VTK objects.  Requires "
 "that a virtual framebuffer be   setup when displaying on a headless server."
 "  Must have   ``panel`` installed.  * ``'ipygany'`` : Convert all the meshes"
@@ -273,10 +273,10 @@ msgstr ""
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:5
 msgid ""
-"``'ipyvtk_simple'`` : Render remotely and stream the resulting VTK images "
-"back to the client.  Supports all VTK methods, but suffers from lag due to "
-"remote rendering. Requires that a virtual framebuffer be setup when "
-"displaying on a headless server.  Must have ``ipyvtk_simple`` installed."
+"``'ipyvtklink'`` : Render remotely and stream the resulting VTK images back "
+"to the client.  Supports all VTK methods, but suffers from lag due to remote"
+" rendering. Requires that a virtual framebuffer be setup when displaying on "
+"a headless server.  Must have ``ipyvtklink`` installed."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
@@ -335,7 +335,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:45
-msgid "Enable the ipyvtk_simple backend."
+msgid "Enable the ipyvtklink backend."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
@@ -488,12 +488,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:4
-msgid "Using ``ipyvtk-simple`` with PyVista"
+msgid "Using ``ipyvtklink`` with PyVista"
 msgstr ""
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:7
 msgid ""
-"As of version ``0.1.4``, ``ipyvtk-simple`` does not support Jupyterlab 3.  "
+"As of version ``0.1.4``, ``ipyvtklink`` does not support Jupyterlab 3.  "
 "Attempting to run the following will return a ``Model not found`` error "
 "within jupyterlab."
 msgstr ""
@@ -501,7 +501,7 @@ msgstr ""
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:11
 msgid ""
 "``pyvista`` has the ability to display fully featured plots within a "
-"JupyterLab environment using ``ipyvtk-simple``.  This feature works by "
+"JupyterLab environment using ``ipyvtklink``.  This feature works by "
 "streaming the current render window to a canvas within JupyterLab and then "
 "passing any user actions from the canvas back to the VTK render window."
 msgstr ""
