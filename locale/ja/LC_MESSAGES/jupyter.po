@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 01:29+0000\n"
+"POT-Creation-Date: 2021-04-17 00:17+0000\n"
 "PO-Revision-Date: 2021-04-02 08:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -54,6 +54,8 @@ msgid ""
 "Server-side rendering with PyVista streaming to the notebook through "
 "`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_"
 msgstr ""
+"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_ "
+"を介したノートブックへのPyVistaストリーミングによるサーバ側のレンダリング"
 
 #: ../../pyvista/docs/jupyter/index.rst:45
 msgid ""
@@ -194,7 +196,7 @@ msgstr "いいえ"
 
 #: ../../pyvista/docs/jupyter/index.rst:100
 msgid "ipyvtklink"
-msgstr ""
+msgstr "ipyvtklink"
 
 #: ../../pyvista/docs/jupyter/index.rst:100
 msgid "Server"
@@ -219,6 +221,11 @@ msgid ""
 " like ``threejs``, which does not require any server side rendering or "
 "framebuffer."
 msgstr ""
+"現時点では， ``itkwidgets`` と ``ipyvtklink`` はJupyterlab 3と互換性がなく，juptyerから "
+"\"Error displaying widget: model not found\" メッセージが送信されます．さらに ``ipygany`` "
+"以外のモジュールはすべてフレームバッファを必要とします．これは ``pyvista.start_xvfb()`` "
+"を使ったヘッドレス環境で設定できます．しかし，システムパッケージをインストールできないGoogle Colabでは， ``threejs`` "
+"のようなサーバ側のレンダリングやフレームバッファを必要としないモジュールを使うべきです．"
 
 #: ../../pyvista/docs/jupyter/index.rst:114
 msgid ""
@@ -286,6 +293,17 @@ msgid ""
 "render windows.  This   will generate nothing on headless servers even with "
 "a   virtual framebuffer."
 msgstr ""
+"プロット時に使用するJupyterバックエンドです．次のいずれかである必要があります:* ``'ipyvtklink'`` : "
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします．すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``ipyvtklink`` がインストールされている必要があります． * ``'panel'`` : "
+"VTKレンダーウィンドウをvtkjsオブジェクトに変換し，それをjupyterlabで視覚化します．ほとんどのVTKオブジェクトをサポートします．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``panel`` がインストールされている必要があります． * ``'ipygany'`` : すべてのメッシュ ``ipygany`` "
+"メッシュに変換し，クライアント側でレンダリングするメッシュをストリーミングします．VTKメッシュをサポートしていますが，他にはほとんどありません． "
+"``none`` を除き，これは仮想フレームバッファを必要としない唯一の方法です． ``ipygany`` がインストールされている必要があります． "
+"``'static'`` : "
+"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが，追加のモジュールをインストールする必要はありません．"
+" * ``'none'`` : "
+"jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:3
@@ -300,6 +318,9 @@ msgid ""
 " rendering. Requires that a virtual framebuffer be setup when displaying on "
 "a headless server.  Must have ``ipyvtklink`` installed."
 msgstr ""
+"``'ipyvtklink'`` : "
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします．すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``ipyvtklink`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:11
@@ -368,7 +389,7 @@ msgstr "panelバックエンドを有効にします．"
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:45
 msgid "Enable the ipyvtklink backend."
-msgstr ""
+msgstr "ipyvtklink バックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:49
@@ -510,13 +531,10 @@ msgstr "例: 大規模モデル"
 #: ../../pyvista/docs/jupyter/ipygany.rst:83
 msgid ""
 "This example shows a large mesh and demonstrates how even fairly large "
-"meshes, like the carburator example which contains 500,000 faces and 250,000"
+"meshes, like the carburetor example which contains 500,000 faces and 250,000"
 " points, can be quickly loaded.  This is, of course, bandwidth dependent, as"
 " this mesh is around 6 MB."
 msgstr ""
-"この例では，大きなメッシュを示し，500,000 万個の面と 250,000 "
-"個の点を含むCarburatorの例など非常に大きなメッシュでもすばやくロードできることを示します．このメッシュは約6 "
-"MBであるため，これは帯域幅に依存します．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:104
 msgid "Returning Scenes"
@@ -524,12 +542,10 @@ msgstr "シーンを戻します"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:105
 msgid ""
-"Show several widgets similtaniously using ``ipywidgets.TwoByTwoLayout``.  "
+"Show several widgets simultaneously using ``ipywidgets.TwoByTwoLayout``.  "
 "This is similar to the :ref:`ref_parametric_example`, except with "
 "interactive widgets."
 msgstr ""
-"``ipywidgets.TwoByTwoLayout`` を使っていくつかのウィジェットを同様に表示します．これは "
-":ref:`ref_parametric_example` に似ていますが，インタラクティブウィジェットがあります．"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:139
 msgid "Scalar Bars"
@@ -537,18 +553,15 @@ msgstr "スカラバー"
 
 #: ../../pyvista/docs/jupyter/ipygany.rst:140
 msgid ""
-"Scalar bars are automatically show when a plot has active scalars. For "
+"Scalar bars are automatically shown when a plot has active scalars. For "
 "example, the St. Helens ``mesh`` from ``active_scalar_name`` is "
 "``'Elevation'``.  Scalar bars, scalar bar title, and the colormap dropdown "
 "menu are automatically added to the scene."
 msgstr ""
-"スカラーバーは，プロットにアクティブなスカラーがある場合に自動的に表示されます．たとえば， ``active_scalar_name`` "
-"のSt.Helens ``mesh`` は ``'Elevation'`` "
-"です．スカラバー，スカラバータイトル，カラーマップドロップダウンメニューは自動的にシーンに追加されます．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:4
 msgid "Using ``ipyvtklink`` with PyVista"
-msgstr ""
+msgstr "PyVistaで ``ipyvtklink`` を使う"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:7
 msgid ""
@@ -556,6 +569,8 @@ msgid ""
 "Attempting to run the following will return a ``Model not found`` error "
 "within jupyterlab."
 msgstr ""
+"バージョン ``0.1.4`` の時点では， ``ipyvtklink`` はJupyterlab "
+"3をサポートしていません．次のコマンドを実行しようとすると，jupyterlab内で ``Model not found`` エラーが返されます．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:11
 msgid ""
@@ -564,6 +579,8 @@ msgid ""
 "streaming the current render window to a canvas within JupyterLab and then "
 "passing any user actions from the canvas back to the VTK render window."
 msgstr ""
+"``pyvista`` には， ``ipyvtklink`` "
+"を使用して，JupyterLab環境内にフル機能のプロットを表示する機能があります．この機能は，現在のレンダリングウィンドウをJupyterLab内のキャンバスにストリーミングし，キャンバスからのユーザアクションをすべてVTKレンダリングウィンドウに戻すことで機能します．"
 
 #: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:17
 msgid ""
