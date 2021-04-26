@@ -3,21 +3,21 @@ on: [push]
 jobs:
   paper:
     runs-on: ubuntu-latest
-    name: Japanese Paper Draft
+    name: Paper Draft
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build draft PDF
+      - name: Build draft Japanese PDF
         uses: openjournals/openjournals-draft-action@master
         with:
-          journal: joss
+          journal: joss-ja
           # This should be the path to the paper within your repo.
-          paper-path: ./joss/paper-ja.md
-      - name: Upload
+          paper-path: ./joss-ja/paper.md
+      - name: Upload draft Japanese PDF
         uses: actions/upload-artifact@v1
         with:
-          name: joss
+          name: joss-ja
           # This is the output path where Pandoc will write the compiled
           # PDF. Note, this should be the same directory as the input
           # paper.md
-          path: ./joss/paper-ja.pdf
+          path: ./joss-ja/paper.pdf
