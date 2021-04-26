@@ -1,5 +1,5 @@
 ---
-title: 'PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)'
+title: 'PyVista: Visualization Toolkit (VTK) の合理化されたインタフェースによる3Dプロットとメッシュ解析'
 tags:
   - Python
   - visualization
