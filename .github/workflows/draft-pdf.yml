@@ -10,7 +10,7 @@ jobs:
       - name: Build draft Japanese PDF
         uses: openjournals/openjournals-draft-action@master
         with:
-          journal: joss-ja
+          journal: joss
           # This should be the path to the paper within your repo.
           paper-path: ./joss-ja/paper.md
       - name: Upload draft Japanese PDF
