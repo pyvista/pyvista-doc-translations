@@ -22,11 +22,10 @@ Depth Peeling
 ~~~~~~~~~~~~~
 
 Depth peeling is a technique to correctly render translucent geometry.
-This is not enabled by default in :any:`pyvista.rcParams` as some operating
+This is not enabled by default in `pyvista.rcParams` as some operating
 systems and versions of VTK have issues with this routine.
 
 For this example, we will showcase the difference that depth peeling provides.
-
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-17
 
@@ -211,7 +210,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  57.301 seconds)
+   **Total running time of the script:** ( 0 minutes  53.580 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

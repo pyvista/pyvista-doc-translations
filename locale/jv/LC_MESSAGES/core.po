@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.29.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 01:29+0000\n"
+"POT-Creation-Date: 2021-05-07 02:08+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Javanese (https://www.transifex.com/getfem-doc/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -26,19 +26,55 @@ msgid ""
 "The :class:`pyvista.Camera` class adds additional functionality and a "
 "pythonic API to the ``vtk.vtkCamera`` class. :class:`pyvista.Camera` objects"
 " come with a default set of cameras that work well in most cases, but in "
-"many situations a more hands-on access to camera is necessary."
+"many situations a more hands-on approach to using the camera is necessary."
 msgstr ""
 
-#: ../../pyvista/docs/core/camera.rst:10 ../../pyvista/docs/core/lights.rst:10
+#: ../../pyvista/docs/core/camera.rst:11 ../../pyvista/docs/core/lights.rst:10
 msgid "Brief Example"
 msgstr ""
 
-#: ../../pyvista/docs/core/camera.rst:12
+#: ../../pyvista/docs/core/camera.rst:13
 msgid "Create a frustum of camera, then create a scene of inside frustum."
 msgstr ""
 
-#: ../../pyvista/docs/core/camera.rst:76
-#: ../../pyvista/docs/core/lights.rst:112
+#: ../../pyvista/docs/core/camera.rst:86
+msgid "Controlling Camera Rotation"
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:87
+msgid ""
+"In addition to directly controlling the camera position by setting it via "
+"the :py:attr:`pyvista.Camera.position` property, you can also directly "
+"control the :py:attr:`pyvista.Camera.roll`, "
+":py:attr:`pyvista.Camera.elevation`, and :py:attr:`pyvista.Camera.azimuth` "
+"of the camera."
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:95
+msgid ""
+"For example, you can modify the roll.  First, generate a plot of an "
+"orientation cube while initially setting the camera position to look at the "
+"``'yz'``."
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:107
+msgid "Here we modify the roll in-place."
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:118
+msgid ""
+"And here we offset the azimuth of the camera by 45 degrees to look at the "
+"``X+`` and ``Y+`` faces."
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:130
+msgid ""
+"Here, we move upward by setting the elevation of the camera to 45 degrees to"
+" see the ``X+`` and ``Z+`` faces."
+msgstr ""
+
+#: ../../pyvista/docs/core/camera.rst:144
+#: ../../pyvista/docs/core/lights.rst:122
 msgid "API reference"
 msgstr ""
 
@@ -50,24 +86,28 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.Camera.clipping_range:4
+#: pyvista.Camera.azimuth:9 ../../pyvista/pyvista/plotting/camera.pydocstring
+#: of pyvista.Camera.clipping_range:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.direction:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.distance:4 ../../pyvista/pyvista/plotting/camera.pydocstring
-#: of pyvista.Camera.focal_point:4
+#: of pyvista.Camera.elevation:8
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.focal_point:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.model_transform_matrix:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.parallel_scale:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.position:4 ../../pyvista/pyvista/plotting/camera.pydocstring
+#: of pyvista.Camera.roll:6 ../../pyvista/pyvista/plotting/camera.pydocstring
 #: of pyvista.Camera.thickness:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.up:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.view_angle:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.plotting.camera.Camera.view_frustum:10
+#: pyvista.plotting.camera.Camera.view_frustum:11
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:11
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -171,7 +211,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.make_tri_mesh:19
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.line_segments_from_points:17
+#: pyvista.utilities.helpers.line_segments_from_points:18
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light:65
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -273,6 +313,19 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.azimuth:1
+msgid "Azimuth of the camera."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.azimuth:3
+msgid ""
+"Rotate the camera about the view up vector centered at the focal point. Note"
+" that the view up vector is whatever was set via SetViewUp, and is not "
+"necessarily perpendicular to the direction of projection."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.clipping_range:1
 msgid ""
 "Return the location of the near and far clipping planes along the direction "
@@ -292,6 +345,19 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.distance:1
 msgid "Distance from the camera position to the focal point."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.elevation:1
+msgid "Vertical rotation of the scene."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.elevation:3
+msgid ""
+"Rotate the camera about the cross product of the negative of the direction "
+"of projection and the view up vector, using the focal point as the center of"
+" rotation."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -329,6 +395,14 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.position:1
 msgid "Position of the camera in world coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:1
+msgid "Rotate the camera about the direction of projection."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:3
+msgid "This will spin the camera about its axis."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -643,7 +717,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:3
-msgid "The aspect of the viewport to compute the planes. Default to 1.0."
+msgid "The aspect of the viewport to compute the planes. Defaults to 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -794,7 +868,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.plotting.camera.Camera.view_frustum:6
+#: pyvista.plotting.camera.Camera.view_frustum:7
 msgid "**frustum** -- View frustum."
 msgstr ""
 
@@ -979,7 +1053,7 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:332
 #: ../../pyvista/docs/core/point-grids.rst:355
 #: ../../pyvista/docs/core/point-grids.rst:378
-#: ../../pyvista/docs/core/points.rst:133
+#: ../../pyvista/docs/core/points.rst:140
 msgid "Attributes"
 msgstr ""
 
@@ -1051,7 +1125,7 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:336
 #: ../../pyvista/docs/core/point-grids.rst:360
 #: ../../pyvista/docs/core/point-grids.rst:383
-#: ../../pyvista/docs/core/points.rst:138
+#: ../../pyvista/docs/core/points.rst:145
 msgid "Methods"
 msgstr ""
 
@@ -1728,8 +1802,8 @@ msgstr ""
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:1
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_faces:1 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.number_of_faces:1
@@ -1800,7 +1874,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:1
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:1
 msgid "Return the mesh volume."
@@ -5232,7 +5306,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.warp_by_scalar:14
-msgid "If True, the points of the give dataset will be updated."
+msgid "If True, the points of the given dataset will be updated."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -7766,7 +7840,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:11
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.line_segments_from_points:13
+#: pyvista.utilities.helpers.line_segments_from_points:14
 msgid "**lines** -- PolyData with lines and cells."
 msgstr ""
 
@@ -7782,7 +7856,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:3
 msgid ""
-"Assumes points are ordered as line segments and an even number of points are"
+"Assumes points are ordered as line segments and an even number of points."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -7790,8 +7864,8 @@ msgstr ""
 msgid ""
 "Points representing line segments. An even number must be given as every two"
 " vertices represent a single line segment. For example, two line segments "
-"would be represented as:  np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, "
-"0]])"
+"would be represented as:  ``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, "
+"1, 0]])``"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -7803,12 +7877,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.line_segments_from_points:10
-msgid "np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])"
+#: pyvista.utilities.helpers.line_segments_from_points:11
+msgid "``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])``"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.line_segments_from_points:18
+#: pyvista.utilities.helpers.line_segments_from_points:19
 msgid ""
 "This example plots two line segments at right angles to each other line."
 msgstr ""
@@ -7951,21 +8025,21 @@ msgid ""
 " situations a more hands-on access to lighting is necessary."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:12
+#: ../../pyvista/docs/core/lights.rst:22
 msgid ""
 "Create a red spotlight that shines on the origin, then create a scene "
 "without lighting and add our light to it manually."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:33
+#: ../../pyvista/docs/core/lights.rst:43
 msgid "For detailed examples please see :ref:`ref_light_examples`."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:37
+#: ../../pyvista/docs/core/lights.rst:47
 msgid "Light API"
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:38
+#: ../../pyvista/docs/core/lights.rst:48
 msgid ""
 "``pyvista.Light`` instances come in three types: headlights, camera lights, "
 "and scene lights. Headlights always shine along the camera's axis, camera "
@@ -7974,7 +8048,7 @@ msgid ""
 " doesn't affect the lighting of the scene."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:44
+#: ../../pyvista/docs/core/lights.rst:54
 msgid ""
 "Lights have a :py:attr:`position` and a :py:attr:`focal_point` that define "
 "the axis of the light. The meaning of these depends on the type of the "
@@ -7984,7 +8058,7 @@ msgid ""
 "light is switched on."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:50
+#: ../../pyvista/docs/core/lights.rst:60
 msgid ""
 "Lights can be either directional (meaning an infinitely distant point "
 "source) or :py:attr:`positional`. Positional lights have additional "
@@ -7997,7 +8071,7 @@ msgid ""
 "the light using a wireframe, see :func:`show_actor`."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:59
+#: ../../pyvista/docs/core/lights.rst:69
 msgid ""
 "Positional lights with a :py:attr:`cone_angle` of less than 90 degrees are "
 "known as spotlights. Spotlights are unidirectional and they make full use of"
@@ -8009,25 +8083,25 @@ msgid ""
 "distant point sources, so they are unidirectional but they do not attenuate."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:70
+#: ../../pyvista/docs/core/lights.rst:80
 msgid "Shadows"
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:71
+#: ../../pyvista/docs/core/lights.rst:81
 msgid ""
 "With directed lights, it is possible to create complex lighting scenarios.  "
 "For example, you can position a light directly above an actor (in this case,"
 " a sphere), to create a shadow directly below it."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:75
+#: ../../pyvista/docs/core/lights.rst:85
 msgid ""
 "The following example uses a positional light to create an eclipse-like "
 "shadow below a sphere by controlling the cone angle and exponent values of "
 "the light."
 msgstr ""
 
-#: ../../pyvista/docs/core/lights.rst:106
+#: ../../pyvista/docs/core/lights.rst:116
 msgid ""
 "VTK has known issues when rendering shadows on certain window sizes.  Be "
 "prepared to experiment with the ``window_size`` parameter."
@@ -10191,11 +10265,11 @@ msgid ""
 "various colors."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:125
+#: ../../pyvista/docs/core/points.rst:132
 msgid "pyvista.PolyData Grid Class Methods"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:126
+#: ../../pyvista/docs/core/points.rst:133
 msgid ""
 "The following is a description of the methods available to a "
 "``pyvista.PolyData`` object.  It inherits all methods from the original vtk "
@@ -10203,21 +10277,21 @@ msgid ""
 "<https://www.vtk.org/doc/nightly/html/classvtkPolyData.html>`_."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`area <pyvista.PolyData.area>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.area:1
 msgid "Return the mesh surface area."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -10225,94 +10299,94 @@ msgstr ""
 msgid "Return the cell normals."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`faces <pyvista.PolyData.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:1
 msgid "Return a pointer to the faces as a numpy object."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`lines <pyvista.PolyData.lines>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:1
 msgid "Return a pointer to the lines as a numpy object."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:1
 msgid "Return the number of open edges on this mesh."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`number_of_faces <pyvista.PolyData.number_of_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:1
 msgid "Return the obbTree of the polydata."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:1
 msgid "Return the point normals."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`verts <pyvista.PolyData.verts>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:1
 msgid "Get the vertex cells."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:136:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:143:<autosummary>:1
 msgid ":obj:`volume <pyvista.PolyData.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:148:<autosummary>:1
 msgid ":obj:`is_all_triangles <pyvista.PolyData.is_all_triangles>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:148:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.is_all_triangles:1
 msgid "Return ``True`` if all the faces of the ``PolyData`` are triangles."
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:148:<autosummary>:1
 msgid ":obj:`save <pyvista.PolyData.save>`\\ \\(filename\\[\\, binary\\]\\)"
 msgstr ""
 
-#: ../../pyvista/docs/core/points.rst:141:<autosummary>:1
+#: ../../pyvista/docs/core/points.rst:148:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:1
 msgid "Write a surface mesh to disk."

@@ -21,9 +21,23 @@
 Create a MP4 Movie
 ~~~~~~~~~~~~~~~~~~
 
-Create an animated MP4 movie of a rendering scene
+Create an animated MP4 movie of a rendering scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-46
+.. Note::
+    This movie will appear static since MP4 movies will not be
+    rendered on a sphinx gallery example.
+
+.. GENERATED FROM PYTHON SOURCE LINES 12-47
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_movie_001.png
+    :alt: movie
+    :class: sphx-glr-single-img
+
+
+
+
 
 .. code-block:: default
 
@@ -46,10 +60,7 @@ Create an animated MP4 movie of a rendering scene
     # Add outline for shrinking reference
     plotter.add_mesh(mesh.outline_corners())
 
-    print('Orient the view, then press "q" to close window and produce movie')
-
-    # Render and do NOT close
-    plotter.show(auto_close=False)
+    plotter.show(auto_close=False)  # only necessary for an off-screen movie
 
     # Run through each frame
     plotter.write_frame()  # write initial data
@@ -60,39 +71,16 @@ Create an animated MP4 movie of a rendering scene
         mesh.points = random_points * 0.01 + mesh.points * 0.99
         mesh.points -= mesh.points.mean(0)
         mesh.cell_arrays["data"] = np.random.random(mesh.n_cells)
-        plotter.add_text("Iteration: {:d}".format(i), name='time-label')
+        plotter.add_text(f"Iteration: {i}", name='time-label')
         plotter.write_frame()  # Write this frame
 
     # Be sure to close the plotter when finished
     plotter.close()
 
 
-
-
-.. image:: /examples/02-plot/images/sphx_glr_movie_001.png
-    :alt: movie
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    Orient the view, then press "q" to close window and produce movie
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 47-48
-
-.. figure:: ../../images/auto-generated/sphere-shrinking.mp4
-
-
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.527 seconds)
+   **Total running time of the script:** ( 0 minutes  27.051 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie.py:
