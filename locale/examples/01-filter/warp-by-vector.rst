@@ -28,7 +28,7 @@ This example applies the ``warp_by_vector`` filter to a sphere mesh that has
 
 We first compare the unwarped sphere to the warped sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-24
+.. GENERATED FROM PYTHON SOURCE LINES 11-27
 
 .. code-block:: default
 
@@ -38,10 +38,13 @@ We first compare the unwarped sphere to the warped sphere.
 
     sphere = examples.load_sphere_vectors()
     warped = sphere.warp_by_vector()
-    warped.translate([0, 0., -7.])
 
-    p = pv.Plotter()
+    p = pv.Plotter(shape=(1, 2))
+    p.subplot(0, 0)
+    p.add_text("Before warp")
     p.add_mesh(sphere, color='white')
+    p.subplot(0, 1)
+    p.add_text("After warp")
     p.add_mesh(warped, color='white')
     p.show()
 
@@ -60,19 +63,19 @@ We first compare the unwarped sphere to the warped sphere.
  .. code-block:: none
 
 
-    [(18.208314079596473, 18.058354992224647, 14.55831434185691),
-     (0.0, -0.14995908737182617, -3.649999737739563),
+    [(17.809803632694113, 17.50988545795046, 17.509803918796408),
+     (0.0, -0.29991817474365234, -0.2999997138977051),
      (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 28-31
 
 We then use several values for the scale factor applied to the warp
 operation. Applying a warping factor that is too high can often lead to
 unrealistic results.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-38
+.. GENERATED FROM PYTHON SOURCE LINES 31-41
 
 .. code-block:: default
 
@@ -110,7 +113,7 @@ unrealistic results.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.364 seconds)
+   **Total running time of the script:** ( 0 minutes  4.332 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_warp-by-vector.py:

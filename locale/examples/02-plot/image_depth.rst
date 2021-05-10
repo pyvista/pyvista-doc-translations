@@ -21,9 +21,10 @@
 Render a depth image
 ~~~~~~~~~~~~~~~~~~~~
 
-Plot a depth image as viewed from a camera overlooking the "hills" example mesh.
+Plot a depth image as viewed from a camera overlooking the "hills"
+example mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-20
+.. GENERATED FROM PYTHON SOURCE LINES 8-22
 
 .. code-block:: default
 
@@ -38,6 +39,7 @@ Plot a depth image as viewed from a camera overlooking the "hills" example mesh.
     # Establish geometry within a pv.Plotter()
     p = pv.Plotter()
     p.add_mesh(mesh, color=True)
+    p.store_image = True  # permit image caching after plotter is closed
     p.show()
 
 
@@ -61,11 +63,11 @@ Plot a depth image as viewed from a camera overlooking the "hills" example mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-22
+.. GENERATED FROM PYTHON SOURCE LINES 23-24
 
 Record depth image without and with a custom fill value
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-25
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 .. code-block:: default
 
@@ -79,11 +81,11 @@ Record depth image without and with a custom fill value
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-27
+.. GENERATED FROM PYTHON SOURCE LINES 28-29
 
 Visualize depth images
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-35
+.. GENERATED FROM PYTHON SOURCE LINES 29-37
 
 .. code-block:: default
 
@@ -106,7 +108,7 @@ Visualize depth images
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-43
+.. GENERATED FROM PYTHON SOURCE LINES 38-45
 
 .. code-block:: default
 
@@ -131,7 +133,7 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.123 seconds)
+   **Total running time of the script:** ( 0 minutes  1.715 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:

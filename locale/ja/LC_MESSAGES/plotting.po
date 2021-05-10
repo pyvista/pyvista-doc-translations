@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.29.dev0\n"
+"Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-16 01:29+0000\n"
+"POT-Creation-Date: 2021-05-10 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -687,8 +687,8 @@ msgstr "単一の3 D点または3 Dベクトルの配列を受け入れます．
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:8
-msgid "See help(pyvista.Plot)"
-msgstr "ヘルプを参照 (pyvista.Plot)"
+msgid "See ``help(pyvista.plot)``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:0
@@ -747,7 +747,7 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_background_image:18
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:38
+#: pyvista.plotting.renderer.Renderer.add_floor:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_legend:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -759,6 +759,8 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.get_image_depth:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:4
@@ -769,15 +771,15 @@ msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.shape:4
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: pyvista.plotting.renderer.Renderer.show_bounds:83
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:55
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:38
+#: pyvista.plotting.renderer.Renderer.add_floor:40
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:80
+#: pyvista.plotting.renderer.Renderer.show_bounds:83
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 msgid "Examples"
@@ -2573,28 +2575,26 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:24
+#: pyvista.plotting.plotting.Plotter:26
 msgid "``shape=\"3|1\"`` means 3 plots on the left and 1 on the right,"
 msgstr "``shape=\"3|1\"`` とは，左側に3区画，右側に1区画という意味です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:9
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:25
+#: pyvista.plotting.plotting.Plotter:27
 msgid "``shape=\"4/2\"`` means 4 plots on top and 2 at the bottom."
 msgstr "``shape=\"4/2\"`` は，上に4プロット，下に2プロットを意味します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:27
 msgid "Draw a border around each render window.  Default False."
 msgstr "各レンダリングウィンドウの周囲に境界を描きます．既定値はFalseです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:13
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:29
+#: pyvista.plotting.plotting.Plotter:31
 msgid ""
 "Either a string, rgb list, or hex color string.  For example:      * "
 "``color='white'``     * ``color='w'``     * ``color=[1, 1, 1]``     * "
@@ -2616,7 +2616,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:3
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:30
+#: pyvista.plotting.plotting.Plotter:32
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:3
 msgid "Either a string, rgb list, or hex color string.  For example:"
@@ -2633,13 +2633,13 @@ msgstr "文字列，RGBリスト，または16進カラー文字列．例:"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:5
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:35
+#: pyvista.plotting.renderer.Renderer.show_bounds:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:32
+#: pyvista.plotting.plotting.Plotter:34
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:5
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:35
+#: pyvista.plotting.renderer.Renderer.show_bounds:38
 msgid "``color='white'``"
 msgstr "``color='white'``"
 
@@ -2654,13 +2654,13 @@ msgstr "``color='white'``"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:6
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:36
+#: pyvista.plotting.renderer.Renderer.show_bounds:39
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:33
+#: pyvista.plotting.plotting.Plotter:35
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:6
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:36
+#: pyvista.plotting.renderer.Renderer.show_bounds:39
 msgid "``color='w'``"
 msgstr "``color='w'``"
 
@@ -2675,13 +2675,13 @@ msgstr "``color='w'``"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:7
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:37
+#: pyvista.plotting.renderer.Renderer.show_bounds:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:34
+#: pyvista.plotting.plotting.Plotter:36
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:7
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:37
+#: pyvista.plotting.renderer.Renderer.show_bounds:40
 msgid "``color=[1, 1, 1]``"
 msgstr "``color=[1, 1, 1]``"
 
@@ -2696,13 +2696,13 @@ msgstr "``color=[1, 1, 1]``"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:38
+#: pyvista.plotting.renderer.Renderer.show_bounds:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:35
+#: pyvista.plotting.plotting.Plotter:37
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:8
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:38
+#: pyvista.plotting.renderer.Renderer.show_bounds:41
 msgid "``color='#FFFFFF'``"
 msgstr "``color='#FFFFFF'``"
 
@@ -2718,8 +2718,6 @@ msgstr "スカラーバーのウィンドウタイトル"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:25
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:49
 msgid ""
 "What lighting to set up for the plotter. Accepted options:      * "
 "``'light_kit'``: a vtk Light Kit composed of 5 lights.     * ``'three "
@@ -2734,35 +2732,33 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:49
+#: pyvista.plotting.plotting.Plotter:52
 msgid "What lighting to set up for the plotter. Accepted options:"
 msgstr "プロッタに設定する照明．使用可能なオプション:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:28
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:52
+#: pyvista.plotting.plotting.Plotter:55
 msgid "``'light_kit'``: a vtk Light Kit composed of 5 lights."
 msgstr "``'light_kit'``: 5個のライトで構成されるvtk Light Kitです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:29
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:53
+#: pyvista.plotting.plotting.Plotter:56
 msgid "``'three lights'``: illumination using 3 lights."
 msgstr "``'three lights'``: 3つのライトを使った照明．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:30
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:54
+#: pyvista.plotting.plotting.Plotter:57
 msgid "``'none'``: no light sources at instantiation."
 msgstr "``'none'``: インスタンス化時に光源がありません．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:32
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:56
 msgid ""
 "The default is a Light Kit (to be precise, 5 separate lights that act like a"
 " Light Kit)."
@@ -3240,13 +3236,11 @@ msgstr "これにより，シーンの境界に平面が生成され，床また
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:6
 msgid ""
-"The face at which to place the plane. Options are (-z, -y, -x, +z, +y, and "
-"+z). Where the -/+ sign indicates on which side of the axis the plane will "
-"lie.  For example, ``'-z'`` would generate a floor on the XY-plane and the "
-"bottom of the scene (minimum z)."
+"The face at which to place the plane. Options are (``'-z'``, ``'-y'``, "
+"``'-x'``, ``'+z'``, ``'+y'``, and ``'+z'``). Where the -/+ sign indicates on"
+" which side of the axis the plane will lie.  For example, ``'-z'`` would "
+"generate a floor on the XY-plane and the bottom of the scene (minimum z)."
 msgstr ""
-"平面を配置する面．オプションは ( -z, -y, -x, +z, +y,と+z )で， -/+ sign "
-"は平面が軸のどちら側に位置するかを示します．たとえば， ``'-z'``はXYプレーンとシーンの下部(最小z)にフロアを生成します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:12
@@ -3279,60 +3273,60 @@ msgid "Thickness of the edges. Only if ``show_edges`` is ``True``."
 msgstr "エッジの厚み． ``show_edges`` が ``True`` の場合のみ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:21
+#: pyvista.plotting.renderer.Renderer.add_floor:22
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:21
+#: pyvista.plotting.renderer.Renderer.add_floor:22
 msgid "The opacity of the generated surface."
 msgstr "生成されたサーフェスの不透明度．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:23
+#: pyvista.plotting.renderer.Renderer.add_floor:24
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:23
+#: pyvista.plotting.renderer.Renderer.add_floor:24
 msgid "Flag on whether to show the mesh edges for tiling."
 msgstr "並べて表示するメッシュエッジを表示するかどうかを示すフラグ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:25
+#: pyvista.plotting.renderer.Renderer.add_floor:26
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:25
+#: pyvista.plotting.renderer.Renderer.add_floor:26
 msgid ""
 "Thickness of lines.  Only valid for wireframe and surface representations.  "
 "Default ``None``."
 msgstr "線の太さ．ワイヤフレーム表示とサーフェス表示にのみ有効です．既定値は ``None`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:28
+#: pyvista.plotting.renderer.Renderer.add_floor:29
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:28
+#: pyvista.plotting.renderer.Renderer.add_floor:29
 msgid "Enable or disable view direction lighting.  Default ``False``."
 msgstr "ビュー方向の照明を有効または無効にします．既定値は ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:30
+#: pyvista.plotting.renderer.Renderer.add_floor:32
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:30
+#: pyvista.plotting.renderer.Renderer.add_floor:32
 msgid "Color of of the edges of the mesh."
 msgstr "メッシュのエッジのカラー．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:32
+#: pyvista.plotting.renderer.Renderer.add_floor:34
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:32
+#: pyvista.plotting.renderer.Renderer.add_floor:34
 msgid "Percentage padding between 0 and 1."
 msgstr "0と1の間の置換詰物パーセンテージ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:34
+#: pyvista.plotting.renderer.Renderer.add_floor:36
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:34
+#: pyvista.plotting.renderer.Renderer.add_floor:36
 msgid "Percentage offset along plane normal."
 msgstr "平面法線に沿ったパーセンテージオフセット．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:39
+#: pyvista.plotting.renderer.Renderer.add_floor:41
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:39
+#: pyvista.plotting.renderer.Renderer.add_floor:41
 msgid "Add a floor below a sphere and plot it."
 msgstr "球の下にフロアを追加してプロットします．"
 
@@ -4634,10 +4628,6 @@ msgstr ""
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:22
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:28
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:30
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:30
 msgid "Font family.  Must be either courier, times, or arial."
 msgstr "フォントファミリ．courier，times，またはarialのいずれかである必要があります．"
 
@@ -4851,7 +4841,7 @@ msgstr "水平でアウトラインがあり，独自の書式が設定された
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:79
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.get_image_depth:13
+#: pyvista.plotting.plotting.BasePlotter.get_image_depth:23
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:4
 msgid "Notes"
@@ -6064,24 +6054,24 @@ msgstr "ResetCameraを使用して便利なビューを作成します．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:3
 msgid ""
-"Fill value for points in image that don't include objects in scene. To not "
-"use a fill value, pass ``None``."
-msgstr "シーン内のオブジェクトを含まないイメージ内のポイントの塗り潰し値．fill値を使用しない場合は， ``None`` を渡します．"
+"Fill value for points in image that do not include objects in scene.  To not"
+" use a fill value, pass ``None``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:6
-msgid "Reset the camera clipping range to include data in view?"
-msgstr "カメラのクリップ範囲をリセットしてビューにデータを含める?"
+msgid "Reset the camera clipping range to include data in view."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:9
 msgid ""
 "**image_depth** -- Image of depth values from camera orthogonal to image "
-"plane"
-msgstr "**image_depth** -- イメージプレーンに直交するカメラからの深度値のイメージ"
+"plane."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.get_image_depth:14
+#: pyvista.plotting.plotting.BasePlotter.get_image_depth:24
 msgid ""
 "Values in image_depth are negative to adhere to a right-handed coordinate "
 "system."
@@ -6399,93 +6389,102 @@ msgid ""
 msgstr "meshが指定されていない場合，最新の入力メッシュの境界を表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:5
+#: pyvista.plotting.renderer.Renderer.show_bounds:6
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:5
-msgid "Input mesh to draw bounds axes around"
-msgstr "境界軸を描画する入力メッシュ"
+#: pyvista.plotting.renderer.Renderer.show_bounds:6
+msgid "Input mesh to draw bounds axes around."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:7
+#: pyvista.plotting.renderer.Renderer.show_bounds:8
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:7
-msgid "Bounds to override mesh bounds. [xmin, xmax, ymin, ymax, zmin, zmax]"
-msgstr "メッシュ境界をオーバーライドする境界． [xmin, xmax, ymin, ymax, zmin, zmax]"
+#: pyvista.plotting.renderer.Renderer.show_bounds:8
+msgid ""
+"Bounds to override mesh bounds. ``[xmin, xmax, ymin, ymax, zmin, zmax]``"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:10
+#: pyvista.plotting.renderer.Renderer.show_bounds:11
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:10
-msgid "Makes x axis visible.  Default True."
-msgstr "x軸を表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:11
+msgid "Makes x axis visible.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:12
+#: pyvista.plotting.renderer.Renderer.show_bounds:13
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:12
-msgid "Makes y axis visible.  Default True."
-msgstr "y軸を表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:13
+msgid "Makes y axis visible.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:14
+#: pyvista.plotting.renderer.Renderer.show_bounds:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:14
-msgid "Makes z axis visible.  Default True."
-msgstr "z軸を表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:15
+msgid "Makes z axis visible.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:16
+#: pyvista.plotting.renderer.Renderer.show_bounds:17
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:16
-msgid "Shows x labels.  Default True."
-msgstr "xラベルを表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:17
+msgid "Shows x labels.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:18
+#: pyvista.plotting.renderer.Renderer.show_bounds:19
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:18
-msgid "Shows y labels.  Default True."
-msgstr "yラベルを表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:19
+msgid "Shows y labels.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:20
+#: pyvista.plotting.renderer.Renderer.show_bounds:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:20
-msgid "Shows z labels.  Default True."
-msgstr "zラベルを表示します．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:21
+msgid "Shows z labels.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:22
+#: pyvista.plotting.renderer.Renderer.show_bounds:23
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:22
-msgid "Italicises axis labels and numbers.  Default False."
-msgstr "軸ラベルと数値を斜体にします．既定値はFalseです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:23
+msgid "Italicises axis labels and numbers.  Default ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:24
+#: pyvista.plotting.renderer.Renderer.show_bounds:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:24
-msgid "Bolds axis labels and numbers.  Default True."
-msgstr "軸ラベルと数値を太字にします．既定値はTrueです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:25
+msgid "Bolds axis labels and numbers.  Default ``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:26
+#: pyvista.plotting.renderer.Renderer.show_bounds:27
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:26
-msgid "Adds a black shadow to the text.  Default False."
-msgstr "テキストに黒い影を追加します．デフォルトはFalseです．"
+#: pyvista.plotting.renderer.Renderer.show_bounds:27
+msgid "Adds a black shadow to the text.  Default ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:28
+#: pyvista.plotting.renderer.Renderer.show_bounds:29
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:28
+#: pyvista.plotting.renderer.Renderer.show_bounds:29
 msgid "Sets the size of the label font.  Defaults to 16."
 msgstr "ラベルフォントのサイズを設定します．デフォルトは16です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:32
+#: pyvista.plotting.renderer.Renderer.show_bounds:31
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:32
+#: pyvista.plotting.renderer.Renderer.show_bounds:31
+msgid ""
+"Font family.  Must be either ``'courier'``, ``'times'``, or ``'arial'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:34
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:34
 msgid ""
 "Color of all labels and axis titles.  Default white. Either a string, rgb "
 "list, or hex color string.  For example:  * ``color='white'`` * "
@@ -6495,39 +6494,39 @@ msgstr ""
 "``color='w'`` * ``color=[1, 1, 1]`` * ``color='#FFFFFF'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:32
+#: pyvista.plotting.renderer.Renderer.show_bounds:34
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:32
+#: pyvista.plotting.renderer.Renderer.show_bounds:34
 msgid ""
 "Color of all labels and axis titles.  Default white. Either a string, rgb "
 "list, or hex color string.  For example:"
 msgstr "すべてのラベルと軸ラベルの色です．既定値は白です．文字列，RGBリスト，または16進カラー文字列．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:40
+#: pyvista.plotting.renderer.Renderer.show_bounds:43
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:40
-msgid "Title of the x axis.  Default \"X Axis\""
-msgstr "X軸のタイトル．既定 \"X軸\""
+#: pyvista.plotting.renderer.Renderer.show_bounds:43
+msgid "Title of the x axis.  Default ``\"X Axis\"``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:42
+#: pyvista.plotting.renderer.Renderer.show_bounds:45
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:42
-msgid "Title of the y axis.  Default \"Y Axis\""
-msgstr "Y軸のタイトル．既定 \"Y軸\""
+#: pyvista.plotting.renderer.Renderer.show_bounds:45
+msgid "Title of the y axis.  Default ``\"Y Axis\"``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:44
+#: pyvista.plotting.renderer.Renderer.show_bounds:47
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:44
-msgid "Title of the z axis.  Default \"Z Axis\""
-msgstr "Z軸のタイトル．既定 \"Z軸\""
+#: pyvista.plotting.renderer.Renderer.show_bounds:47
+msgid "Title of the z axis.  Default ``\"Z Axis\"``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:46
+#: pyvista.plotting.renderer.Renderer.show_bounds:49
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:46
+#: pyvista.plotting.renderer.Renderer.show_bounds:49
 msgid ""
 "A bug with vtk 6.3 in Windows seems to cause this function to crash this can"
 " be enabled for smoother plotting for other environments."
@@ -6535,9 +6534,9 @@ msgstr ""
 "Windowsのvtk 6.3のバグにより，この関数がクラッシュするようです．これを有効にすると，他の環境でのプロットがよりスムーズになります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:50
+#: pyvista.plotting.renderer.Renderer.show_bounds:53
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:50
+#: pyvista.plotting.renderer.Renderer.show_bounds:53
 msgid ""
 "Add grid lines to the backface (``True``, ``'back'``, or ``'backface'``) or "
 "to the frontface (``'front'``, ``'frontface'``) of the axes actor."
@@ -6546,9 +6545,9 @@ msgstr ""
 "``'frontface'``) にグリッドラインを追加します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:54
+#: pyvista.plotting.renderer.Renderer.show_bounds:57
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:54
+#: pyvista.plotting.renderer.Renderer.show_bounds:57
 msgid ""
 "Set how the axes are drawn: either static (``'all'``), closest triad "
 "(``front``), furthest triad (``'back'``), static closest to the origin "
@@ -6560,9 +6559,9 @@ msgstr ""
 "のいずれかに設定します．次のオプションがあります: ``'all', 'front', 'back', 'origin', 'outer'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:61
+#: pyvista.plotting.renderer.Renderer.show_bounds:64
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:61
+#: pyvista.plotting.renderer.Renderer.show_bounds:64
 msgid ""
 "Set how the ticks are drawn on the axes grid. Options include: ``'inside', "
 "'outside', 'both'``"
@@ -6570,9 +6569,9 @@ msgstr ""
 "軸グリッドにティックを描画する方法を設定します．以下のオプションがあります: ``'inside', 'outside', 'both'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:64
+#: pyvista.plotting.renderer.Renderer.show_bounds:67
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:64
+#: pyvista.plotting.renderer.Renderer.show_bounds:67
 msgid ""
 "Adds an unlabeled and unticked box at the boundaries of plot. Useful for "
 "when wanting to plot outer grids while still retaining all edges of the "
@@ -6580,30 +6579,29 @@ msgid ""
 msgstr "プロットの境界にラベルなしのチェックボックスを追加します．境界のすべてのエッジを保持しながら，外側のグリッドをプロットする場合に便利です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:68
+#: pyvista.plotting.renderer.Renderer.show_bounds:71
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:68
+#: pyvista.plotting.renderer.Renderer.show_bounds:71
 msgid ""
 "If ``all_edges````, this is the factor along each axis to draw the default "
-"box. Dafuault is 0.5 to show the full box."
+"box. Default is 0.5 to show the full box."
 msgstr ""
-"``all_edges```` の場合，これはデフォルトボックスを描画する各軸に沿った係数です．フルボックスを表示するには，0.5を指定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:71
+#: pyvista.plotting.renderer.Renderer.show_bounds:74
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:71
+#: pyvista.plotting.renderer.Renderer.show_bounds:74
 msgid ""
 "An optional percent padding along each axial direction to cushion the "
-"datasets in the scene from the axes annotations. Defaults to have no padding"
-msgstr "軸の注釈からシーン内のデータセットを保護するための，各軸方向に沿ったオプションのパーセントパディング．デフォルトではパディングなし"
+"datasets in the scene from the axes annotations. Defaults to 0 (no padding)."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:76
+#: pyvista.plotting.renderer.Renderer.show_bounds:79
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:76
-msgid "**cube_axes_actor** -- Bounds actor"
-msgstr "**cube_axes_actor** -- 境界アクター"
+#: pyvista.plotting.renderer.Renderer.show_bounds:79
+msgid "**cube_axes_actor** -- Bounds actor."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:3
@@ -6789,50 +6787,50 @@ msgstr "例"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:14
-msgid "Renders off screen when True.  Useful for automated screenshots."
-msgstr "Trueの場合，画面をレンダリングしません．自動スクリーンショットに便利です．"
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:16
-msgid ""
-"When True, the resulting plot is placed inline a jupyter notebook. Assumes a"
-" jupyter console is active.  Automatically enables off_screen."
+msgid "Renders off screen when ``True``.  Useful for automated screenshots."
 msgstr ""
-"Trueの場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．off_screenを自動的に有効にします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:19
+#: pyvista.plotting.plotting.Plotter:17
 msgid ""
-"Number of sub-render windows inside of the main window. Specify two across "
-"with ``shape=(2, 1)`` and a two by two grid with ``shape=(2, 2)``.  By "
-"default there is only one render window. Can also accept a string descriptor"
-" as shape. E.g.:      * ``shape=\"3|1\"`` means 3 plots on the left and 1 on"
-" the right,     * ``shape=\"4/2\"`` means 4 plots on top and 2 at the "
-"bottom."
+"When ``True``, the resulting plot is placed inline a jupyter notebook.  "
+"Assumes a jupyter console is active.  Automatically enables ``off_screen``."
 msgstr ""
-"メインウィンドウ内のサブレンダリングウィンドウの数． ``shape=(2, 1)`` で2 acrossを， ``shape=(2, 2)`` で2 "
-"x 2 グリッドを指定します．デフォルトでは，レンダウィンドウは1つだけです．文字列記述子をshapeとして受け入れることもできます．例: *  "
-"``shape=\"3|1\"`` は左側に3プロット，右側に1プロット， * ``shape=\"4/2\"`` "
-"は上部に4プロット，下部に2プロットを意味します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:19
+#: pyvista.plotting.plotting.Plotter:21
 msgid ""
 "Number of sub-render windows inside of the main window. Specify two across "
 "with ``shape=(2, 1)`` and a two by two grid with ``shape=(2, 2)``.  By "
-"default there is only one render window. Can also accept a string descriptor"
-" as shape. E.g.:"
+"default there is only one render window.  Can also accept a string "
+"descriptor as shape. E.g.:      * ``shape=\"3|1\"`` means 3 plots on the "
+"left and 1 on the right,     * ``shape=\"4/2\"`` means 4 plots on top and 2 "
+"at the bottom."
 msgstr ""
-"メインウィンドウ内のサブレンダリングウィンドウの数． ``shape=(2, 1)`` で2 acrossを， ``shape=(2, 2)`` で2 "
-"x 2 グリッドを指定します．デフォルトでは，レンダウィンドウは1つだけです．文字列記述子をshapeとして受け入れることもできます．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:37
-msgid "Window size in pixels.  Defaults to [1024, 768]"
-msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは [1024, 768] です．"
+#: pyvista.plotting.plotting.Plotter:21
+msgid ""
+"Number of sub-render windows inside of the main window. Specify two across "
+"with ``shape=(2, 1)`` and a two by two grid with ``shape=(2, 2)``.  By "
+"default there is only one render window.  Can also accept a string "
+"descriptor as shape. E.g.:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:29
+msgid "Draw a border around each render window.  Default ``False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:39
+msgid ""
+"Window size in pixels.  Defaults to ``[1024, 768]``, unless set differently "
+"in ``rcParams``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:42
 msgid ""
 "The number of multi-samples used to mitigate aliasing. 4 is a good default "
 "but 8 will have better results with a potential impact on performance."
@@ -6840,19 +6838,36 @@ msgstr ""
 "エイリアシングを軽減するために使用されるマルチサンプルの数．4は良いデフォルトです．8はパフォーマンスに影響を与える可能性がありますが，より良い結果が得られます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:43
-msgid "If True, enable line smothing"
-msgstr "Trueの場合，ラインスムージングを有効にします．"
+#: pyvista.plotting.plotting.Plotter:46
+msgid "If ``True``, enable line smoothing."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:45
-msgid "If True, enable point smothing"
-msgstr "Trueの場合，ポイントスムージングを有効にします．"
+#: pyvista.plotting.plotting.Plotter:48
+msgid "If ``True``, enable point smoothing."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:47
-msgid "If True, enable polygon smothing"
-msgstr "Trueの場合，ポリゴンのスムージングを有効にします．"
+#: pyvista.plotting.plotting.Plotter:50
+msgid "If ``True``, enable polygon smoothing."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:52
+msgid ""
+"What lighting to set up for the plotter. Accepted options:      * "
+"``'light_kit'``: a vtk Light Kit composed of 5 lights.     * ``'three "
+"lights'``: illumination using 3 lights.     * ``'none'``: no light sources "
+"at instantiation.  The default is a ``'light_kit'`` (to be precise, 5 "
+"separate lights that act like a Light Kit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:59
+msgid ""
+"The default is a ``'light_kit'`` (to be precise, 5 separate lights that act "
+"like a Light Kit)."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:3
