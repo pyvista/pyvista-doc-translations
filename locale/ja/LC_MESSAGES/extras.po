@@ -33,6 +33,9 @@ msgid ""
 "additional features, etc).  As ``pyvista`` does not provide ``vtk``, you "
 "will have to build it manually."
 msgstr ""
+"Kitwareは `PyPI VTK <https://pypi.org/project/vtk/>`_ "
+"でVTK用のPythonホイールを提供していますが，場合によってはソースからVTKをビルドする必要があります(たとえば，Pythonの新リリース，EGLレンダリング，追加機能など)．"
+" ``pyvista`` は ``vtk`` を提供しないため，手動で構築する必要があります．"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:12
 msgid "Wheels on Linux and Mac OS"
@@ -675,6 +678,12 @@ msgid ""
 "past versions of ``pyvista`` without having to worry about untested "
 "features."
 msgstr ""
+"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
+"にも反映される安定版のコードベースが含まれています． ``fix/`` "
+"ブランチの修正パッチは，masterブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
+" ``__version__.py`` が更新され，パッチされたセマンティックバージョン(例えば ``0.24.1`` "
+")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
+"のホットフィックスを迅速にプッシュすることができます．"
 
 #: ../../pyvista/docs/extras/developer_notes.rst:362
 msgid ""
@@ -1006,12 +1015,15 @@ msgid ""
 "``pyinstaller`` to be used within a standalone application.  You could even "
 "make a basic web application using ``flask``."
 msgstr ""
+"このセクションには，PythonコンソールまたはIDEからPyVistaを実行するだけでなく，PyVistaの使用方法を拡張するためのリソースが含まれています．例えば，PyVistaをDockerイメージにパッケージ化し，EGLでVTKをビルドして，リモートサーバ上での豊富なヘッドレスプロットを可能にすることができます．"
+" ``pyinstaller`` を使用してPyVistaをパッケージ化し，スタンドアロンアプリケーション内で使用することもできます． "
+"``flask`` を使って基本的なWebアプリケーションを作成することもできます．"
 
 #: ../../pyvista/docs/extras/index.rst:11
 msgid ""
 "See the :ref:`ref_developer_notes` section for details on contributing and "
 "how you can help develop PyVista."
-msgstr ""
+msgstr "貢献の詳細とPyVistaの開発方法については， :ref:`ref_developer_notes` のセクションを参照してください．"
 
 #: ../../pyvista/docs/extras/pyinstaller.rst:4
 msgid "Freezing PyVista with pyinstaller"
