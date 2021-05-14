@@ -22,7 +22,7 @@ Clipping with a Surface
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Clip any PyVista dataset by a :class:`pyvista.PolyData` surface mesh using
-the :func:`pyvista.DataSet.Filters.clip_surface` filter.
+the :func:`pyvista.DataSetFilters.clip_surface` filter.
 
 Note that we first demonstrate how the clipping is performed by computing an
 implicit distance and thresholding the mesh. This thresholding is one approach
@@ -173,7 +173,7 @@ preserve.
 .. GENERATED FROM PYTHON SOURCE LINES 69-72
 
 Clip the rectilinear grid dataset using the :class:`pyvista.PolyData`
-surface mesh via the :func:`pyvista.DataSet.Filters.clip_surface` filter.
+surface mesh via the :func:`pyvista.DataSetFilters.clip_surface` filter.
 This will triangulate/tessellate the mesh geometries along the clip.
 
 .. GENERATED FROM PYTHON SOURCE LINES 72-83
@@ -256,7 +256,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  58.890 seconds)
+   **Total running time of the script:** ( 0 minutes  45.016 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

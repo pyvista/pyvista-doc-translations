@@ -46,7 +46,7 @@ msgstr "カメラの視錐台を作成してから，視錐台内のシーンを
 
 #: ../../pyvista/docs/core/camera.rst:86
 msgid "Controlling Camera Rotation"
-msgstr ""
+msgstr "カメラの回転をコントロールする"
 
 #: ../../pyvista/docs/core/camera.rst:87
 msgid ""
@@ -7535,6 +7535,9 @@ msgid ""
 "running this filter if you need to strip all the data.) The filter will pass"
 " through (to the output) vertices if they are present in the input polydata."
 msgstr ""
+"ポリゴンは，三角形である場合にのみ三角形ストリップにアセンブルされます．他のタイプのポリゴンは出力に渡され，ストリップされません．(すべてのデータを除去する必要がある場合は，このフィルタを実行する前に，"
+" ``triangulate`` "
+"フィルタを使用して三角形以外のポリゴンを三角形化します．)フィルタは，入力ポリデータに(出力に)頂点が存在する場合は通過します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.strip:14
@@ -7552,6 +7555,8 @@ msgid ""
 "contiguous. This is useful after slicing a surface. The default is "
 "``False``."
 msgstr ""
+"``True`` の場合，出力ポリゴンセグメントが連続していれば結合されます．これは，サーフェスをスライスした後に便利です．デフォルトは "
+"``False`` です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.strip:24
@@ -7566,6 +7571,8 @@ msgid ""
 "Enable/Disable passing of the CellData in the input to the output as "
 "FieldData. Note the field data is transformed. Default is ``False``."
 msgstr ""
+"入力のCellDataをFieldDataとして出力に渡すことを有効/無効にします．フィールドデータが変換されます．デフォルトは ``False`` "
+"です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.strip:31
@@ -7574,6 +7581,9 @@ msgid ""
 "holds the cell index of the original 3D cell that produced each output cell."
 " This is useful for picking. The default is ``False`` to conserve memory."
 msgstr ""
+"``True`` の場合，出力ポリゴンデータセットには，各出力セルを生成したオリジナルの3 "
+"Dセルのセルインデックスを保持するcelldata配列が含まれます．これはピッキングに便利です．デフォルトでは，メモリを節約するために "
+"``False`` になっています．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.strip:36
@@ -7583,6 +7593,9 @@ msgid ""
 "vertex. This is useful for picking. The default is ``False`` to conserve "
 "memory."
 msgstr ""
+"``True`` "
+"の場合，出力ポリゴンデータセットには，各出力頂点を生成したオリジナルの頂点のポイントインデックスを保持するポイントデータ配列が含まれます．これはピッキングに便利です．デフォルトでは，メモリを節約するために"
+" ``False`` になっています．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:3
@@ -7615,7 +7628,7 @@ msgstr ""
 msgid ""
 "Subdivision filter appears to fail for multiple part meshes. Should be one "
 "single mesh."
-msgstr ""
+msgstr "サブディビジョンフィルタが複数のパーツメッシュで失敗するように見えます．1つの単一メッシュである必要があります．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:19
@@ -7624,21 +7637,23 @@ msgid ""
 "number of resulting triangles is ``nface*4**nsub`` where ``nface`` is the "
 "current number of faces."
 msgstr ""
+"サブディビジョンの数．サブディビジョンごとに4つの新しい三角形が作成されるため，作成される三角形の数は ``nface*4**nsub`` "
+"となります．ここで， ``nface`` は現在のフェースの数です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:24
 msgid "Can be one of the following: 'butterfly', 'loop', 'linear'."
-msgstr ""
+msgstr "次のいずれかです: 'butterfly', 'loop', 'linear' ．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:29
 msgid "**mesh** -- ``pyvista`` polydata object."
-msgstr ""
+msgstr "**mesh** -- ``pyvista`` polydata オブジェクト."
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:39
 msgid "Alternatively, update the mesh in-place."
-msgstr ""
+msgstr "代わりに，インプレイスでメッシュを更新します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:3
@@ -7684,7 +7699,7 @@ msgstr "スカラー配列を名前で検索する際のフィールドの設定
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.tube:20
 msgid "**mesh** -- Tube-filtered mesh."
-msgstr ""
+msgstr "**mesh** -- チューブフィルタメッシュ．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.tube:25
@@ -8465,7 +8480,7 @@ msgstr "三角形メッシュの頂点を格納する (N, 3) の形を持つポ�
 #: pyvista.utilities.helpers.make_tri_mesh:11
 msgid ""
 "Array of indices with shape ``(M, 3)`` containing the triangle indices."
-msgstr ""
+msgstr "三角形のインデックスを含む ``(M, 3)`` の形を持つインデックスの配列．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.make_tri_mesh:15
