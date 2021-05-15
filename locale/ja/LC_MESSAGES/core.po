@@ -7459,7 +7459,7 @@ msgstr "線分をリボンに変換してプロットします．"
 msgid ""
 "If there are no lines in the input dataset, then the output will be an empty"
 " ``pyvista.PolyData`` mesh."
-msgstr ""
+msgstr "入力データセットに行がない場合，出力は空の ``pyvista.PolyData`` メッシュになります．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.smooth:3
@@ -8550,7 +8550,7 @@ msgstr "点から接続されていない線分セグメントを生成します
 #: pyvista.utilities.helpers.line_segments_from_points:3
 msgid ""
 "Assumes points are ordered as line segments and an even number of points."
-msgstr ""
+msgstr "点が線分セグメントと偶数個の点として順序付けられる．"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:6
@@ -8560,6 +8560,8 @@ msgid ""
 "would be represented as:  ``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, "
 "1, 0]])``"
 msgstr ""
+"線分セグメントを表すポイント．2つの頂点が1つの線分セグメントを表すため，偶数を指定する必要があります．たとえば，2つの線分セグメントは次のように表されます:"
+" ``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])``"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:6
@@ -8573,12 +8575,12 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:11
 msgid "``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])``"
-msgstr ""
+msgstr "``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])``"
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.line_segments_from_points:19
 msgid "This example plots two line segments at right angles to each other."
-msgstr ""
+msgstr "次の使用例は，2つの線分を直角にプロットします."
 
 #: ../../pyvista/docs/core/helpers.rst:29
 msgid "Convert to and from VTK Datatypes"
@@ -10795,7 +10797,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connectivity:18
 msgid "**grid** -- A deep copy of this grid if ``inplace=False``."
-msgstr ""
+msgstr "**grid** -- ``inplace=False`` このグリッドのディープコピー．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.compute_connectivity:23
@@ -10872,6 +10874,8 @@ msgid ""
 "**grid** -- A deep copy of this grid if ``inplace=False`` with the hidden "
 "cells shown.  Otherwise, this dataset with the shown cells."
 msgstr ""
+"**grid** -- ``inplace=False`` "
+"このグリッドのディープコピーで非表示のセルが表示されます．それ以外の場合は，表示されているセルを含むこのデータセット．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:3
