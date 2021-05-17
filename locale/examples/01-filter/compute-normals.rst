@@ -122,7 +122,7 @@ exaggerated topographic relief.
 
 .. GENERATED FROM PYTHON SOURCE LINES 40-43
 
-We could also use face/cell normals to extract a all the faces of a mesh
+We could also use face/cell normals to extract all the faces of a mesh
 facing a general direction. In the following snippet, we take a mesh, compute
 the normals along its cell faces, and extract the faces that face upward.
 
@@ -170,7 +170,7 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.239 seconds)
+   **Total running time of the script:** ( 0 minutes  25.229 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:
