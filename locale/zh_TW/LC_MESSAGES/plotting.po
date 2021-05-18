@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-12 00:44+0000\n"
+"POT-Creation-Date: 2021-05-18 00:57+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -233,6 +233,7 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:0
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -426,9 +427,11 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:21
 msgid ""
-"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
-" ``False``."
+"Opens window in full screen.  When enabled, ignores ``window_size``.  "
+"Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -452,43 +455,45 @@ msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:16
+#: pyvista.plotting.helpers.plot:17
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:11
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:18
+#: pyvista.plotting.helpers.plot:19
 msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:21
+#: pyvista.plotting.helpers.plot:22
 msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:24
-msgid "Shows a vtk axes widget.  Enabled by default."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:26
-msgid "Adds text at the bottom of the plot."
+#: pyvista.plotting.helpers.plot:25
+msgid ""
+"Shows a vtk axes widget.  If ``None``, enabled according to "
+"``pyvista.global_theme.axes.show``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:28
-msgid "Use the ``add_volume`` method for volume rendering."
+msgid "Adds text at the bottom of the plot."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:30
+msgid "Use the ``add_volume`` method for volume rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:32
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:30
 msgid ""
@@ -498,7 +503,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:34
 msgid ""
@@ -510,54 +515,59 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:34
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:37
 msgid "``'none'`` : Do not display in the notebook."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:38
+#: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:38
 msgid "``'static'`` : Display a static figure."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:39
+#: pyvista.plotting.helpers.plot:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:39
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:40
+#: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:40
 msgid "``'panel'`` : Show a ``panel`` widget."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:42
+#: pyvista.plotting.helpers.plot:44
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:42
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:45
+#: pyvista.plotting.helpers.plot:47
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:47
+#: pyvista.plotting.helpers.plot:49
+msgid "Plot specific theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:51
 msgid "See help(Plotter.add_mesh) for additional options."
 msgstr ""
 
@@ -615,7 +625,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
@@ -625,7 +635,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:49
 msgid ""
@@ -633,12 +643,67 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:51
+#: pyvista.plotting.helpers.plot:55
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
 "[Window height x Window width x 3] for transparent_background=False [Window "
 "height x Window width x 4] for transparent_background=True Returned only "
 "when screenshot enabled"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:61
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:15
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:40
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_legend:41
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_light:12
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:205
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:49
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.get_image_depth:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.scalar_bars:4
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:17
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderers.Renderers.set_background:19
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.shape:4
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:83
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.theme:4
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.where_is:10
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:55
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:40
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_bounds:83
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:49
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:62
+msgid "Plot a simple sphere while showing its edges."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -714,51 +779,6 @@ msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:15
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_arrows:11
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_background_image:18
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:40
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_legend:41
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_light:12
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:204
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:66
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.get_image_depth:14
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.remove_all_lights:8
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.scalar_bars:4
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.screenshot:17
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderers.Renderers.set_background:19
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.BasePlotter.shape:4
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:83
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.where_is:10
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:55
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:40
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_bounds:83
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
-msgid "Examples"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:16
 msgid "Plot a single random arrow."
 msgstr ""
@@ -768,9 +788,33 @@ msgstr ""
 msgid "Plot 100 random arrows."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/theme.pydocstring of
-#: pyvista.plotting.theme.set_plot_theme:1
-msgid "Set the plotting parameters to a predefined theme."
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:1
+msgid "Set the plotting parameters to a predefined theme using a string."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:3
+msgid ""
+"Theme name.  Either ``'default'``, ``'document'``, ``'dark'``, or "
+"``'paraview'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:9
+msgid "Set to the default theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:14
+msgid "Set to the document theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:18
+msgid "Set to the dark theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:22
+msgid "Set to the ParaView theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
@@ -982,6 +1026,16 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.store_image:1
 msgid "Return if an image will be saved on close."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+msgid ":obj:`theme <pyvista.BasePlotter.theme>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.theme:1
+msgid "Return or set the theme used for this plotter."
 msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:170:<autosummary>:1
@@ -2416,7 +2470,9 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:11
-msgid "Draw a border around each render window.  Default False."
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:29
+msgid "Draw a border around each render window.  Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2457,6 +2513,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:23
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:28
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:5
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:38
@@ -2466,6 +2524,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:5
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:38
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:28
 msgid "``color='white'``"
 msgstr ""
 
@@ -2478,6 +2538,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:29
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:6
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:39
@@ -2487,6 +2549,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:6
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:39
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:29
 msgid "``color='w'``"
 msgstr ""
 
@@ -2499,6 +2563,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:30
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:7
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:40
@@ -2508,6 +2574,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:7
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:40
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:30
 msgid "``color=[1, 1, 1]``"
 msgstr ""
 
@@ -2520,6 +2588,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:26
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:31
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:41
@@ -2529,6 +2599,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:8
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:41
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:31
 msgid "``color='#FFFFFF'``"
 msgstr ""
 
@@ -2555,28 +2627,28 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:52
+#: pyvista.plotting.plotting.Plotter:53
 msgid "What lighting to set up for the plotter. Accepted options:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:28
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:55
+#: pyvista.plotting.plotting.Plotter:56
 msgid "``'light_kit'``: a vtk Light Kit composed of 5 lights."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:29
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:56
+#: pyvista.plotting.plotting.Plotter:57
 msgid "``'three lights'``: illumination using 3 lights."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:30
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:57
+#: pyvista.plotting.plotting.Plotter:58
 msgid "``'none'``: no light sources at instantiation."
 msgstr ""
 
@@ -2585,6 +2657,13 @@ msgstr ""
 msgid ""
 "The default is a Light Kit (to be precise, 5 separate lights that act like a"
 " Light Kit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:35
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:63
+msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2875,7 +2954,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_plane_widget:19
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:22
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_spline_widget:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2891,7 +2970,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_plane_widget:19
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:22
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:24
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_spline_widget:25
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
@@ -2924,10 +3003,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_plane_widget:38
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:24
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:27
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_spline_widget:29
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_box_widget:27
@@ -2935,10 +3010,6 @@ msgstr ""
 #: pyvista.plotting.widgets.WidgetHelper.add_line_widget:23
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_plane_widget:38
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:24
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:27
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_spline_widget:29
 msgid ""
@@ -3528,7 +3599,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:87
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:66
+#: pyvista.plotting.plotting.BasePlotter.add_volume:67
 msgid ""
 "Dictionary of keyword arguments to pass when adding the scalar bar to the "
 "scene. For options, see :func:`pyvista.BasePlotter.add_scalar_bar`."
@@ -3536,6 +3607,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:91
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.add_volume:71
 msgid ""
 "If ``False``, a scalar bar will not be added to the scene. Defaults to "
 "``True``."
@@ -3596,21 +3669,21 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:122
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:89
+#: pyvista.plotting.plotting.BasePlotter.add_volume:92
 msgid "The diffuse lighting coefficient. Default 1.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:124
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:91
+#: pyvista.plotting.plotting.BasePlotter.add_volume:94
 msgid "The specular lighting coefficient. Default 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:126
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:93
+#: pyvista.plotting.plotting.BasePlotter.add_volume:96
 msgid "The specular power. Between 0.0 and 128.0"
 msgstr ""
 
@@ -3658,8 +3731,9 @@ msgid ""
 "contains the properties of the silhouette to display:      * ``color``: "
 "``str`` or 3-item ``list``, color of the silhouette     * ``line_width``: "
 "``float``, edge width     * ``opacity``: ``float`` between 0 and 1, edge "
-"transparency     * ``feature_angle``: If ``True``, display sharp edges     *"
-" ``decimate``: ``float`` between 0 and 1, level of decimation"
+"transparency     * ``feature_angle``: If a ``float``, display sharp edges"
+"       exceeding that angle in degrees.     * ``decimate``: ``float`` "
+"between 0 and 1, level of decimation"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -3687,38 +3761,40 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:156
-msgid "``feature_angle``: If ``True``, display sharp edges"
+msgid ""
+"``feature_angle``: If a ``float``, display sharp edges exceeding that angle "
+"in degrees."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:157
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:158
 msgid "``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:159
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:160
 msgid ""
 "Invert the opacity mappings and make the values correspond to transparency."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:162
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:163
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
 "automatically set the scalar bar ``below_label`` to ``'Below'``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:166
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:167
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
 "automatically set the scalar bar ``above_label`` to ``'Above'``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:170
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:171
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:73
+#: pyvista.plotting.plotting.BasePlotter.add_volume:74
 msgid ""
 "Pass a dictionary of annotations. Keys are the float values in the scalars "
 "range to annotate on the scalar bar and the values are the the string "
@@ -3726,26 +3802,26 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:174
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:175
 msgid "Set whether this mesh is pickable."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:176
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:177
 msgid ""
 "Use log scale when mapping data to colors. Scalars less than zero are mapped"
 " to the smallest representable positive float. Default: ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:180
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:181
 msgid ""
 "Enable physics based rendering (PBR) if the mesh is ``PolyData``.  Use the "
 "``color`` argument to set the base color. This is only available in VTK>=9."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:184
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:185
 msgid ""
 "Usually this value is either 0 or 1 for a real material but any value in "
 "between is valid. This parameter is only used by PBR interpolation. Default "
@@ -3753,7 +3829,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:188
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:189
 msgid ""
 "This value has to be between 0 (glossy) and 1 (rough). A glossy material has"
 " reflections and a high specular part. This parameter is only used by PBR "
@@ -3761,24 +3837,24 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:193
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:194
 msgid "Force a render when ``True``.  Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:195
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:196
 msgid ""
 "Set component of vector valued scalars to plot.  Must be nonnegative, if "
 "supplied. If ``None``, the magnitude of the vector is plotted."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:200
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:201
 msgid "**actor** -- VTK actor of the mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_mesh:205
+#: pyvista.plotting.plotting.BasePlotter.add_mesh:206
 msgid ""
 "Add a sphere to the plotter and show it with a custom scalar bar title."
 msgstr ""
@@ -4423,7 +4499,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:9
-msgid "String formatter used to format numerical data"
+msgid "String formatter used to format numerical data."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4527,7 +4603,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:62
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:95
+#: pyvista.plotting.plotting.BasePlotter.add_volume:98
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.update_coordinates:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4582,60 +4658,49 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:7
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:7
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:7
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:7
 msgid ""
 "The method called every time the slider is updated. This should take a "
-"single parameter: the float value of the slider"
+"single parameter: the float value of the slider."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:10
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:11
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:10
-msgid "Length two tuple of the minimum and maximum ranges of the slider"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:12
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:12
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:12
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:12
-msgid "The starting value of the slider"
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:11
+msgid "Length two tuple of the minimum and maximum ranges of the slider."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:14
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:14
-msgid "The string label of the slider widget"
+msgid "The starting value of the slider."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:16
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:14
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:16
+msgid "The string label of the slider widget."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:18
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:14
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:18
 msgid ""
-"The relative coordinates of the left point of the slider on the display port"
+"The relative coordinates of the left point of the slider on the display "
+"port."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:19
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:21
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:17
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:19
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:21
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:17
 msgid ""
@@ -4644,58 +4709,66 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:27
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:26
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:22
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:37
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:27
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:26
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:22
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:37
 msgid ""
-"Either 'start', 'end' or 'always', this defines how often the slider "
-"interacts with the callback."
+"If ``True``, the widget will be passed as the last argument of the callback."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:30
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:29
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:29
+msgid ""
+"Either ``'start'``, ``'end'`` or ``'always'``, this defines how often the "
+"slider interacts with the callback."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:32
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:25
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:30
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:32
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:25
 msgid ""
 "The name of the slider style. The list of available styles are in "
-"``rcParams['slider_style']``. Defaults to None."
+"``pyvista.global_theme.slider_styles``. Defaults to ``None``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:33
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:36
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:33
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:36
 msgid "Relative height of the title as compared to the length of the slider."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:35
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:39
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:35
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:39
 msgid "Opacity of title. Defaults to 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:37
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:41
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:37
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:41
 msgid ""
 "Either a string, rgb list, or hex color string.  Defaults to the value given"
 " in ``color``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:40
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:40
+#: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:44
 msgid "String formatter used to format numerical data. Defaults to ``None``."
 msgstr ""
 
@@ -4720,13 +4793,15 @@ msgstr ""
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:5
 msgid ""
 "The function to call back when the widget is modified. It takes a single "
-"argument: the center of the sphere as a XYZ coordinate."
+"argument: the center of the sphere as an XYZ coordinate (a 3-length "
+"sequence).  If multiple centers are passed in the ``center`` parameter, the "
+"callback must also accept an index of that widget."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:8
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:11
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:8
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:11
 msgid ""
 "Length 3 array for the XYZ coordinate of the sphere's center when placing it"
 " in the scene. If more than one location is passed, then that many widgets "
@@ -4735,56 +4810,66 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:13
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:17
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:13
-msgid "The radius of the sphere"
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:17
+msgid "The radius of the sphere."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:15
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:19
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:15
-msgid ""
-"Set the number of points in the longitude direction (ranging from "
-"start_theta to end_theta)."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:18
-#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:18
-msgid ""
-"Set the number of points in the latitude direction (ranging from start_phi "
-"to end_phi)."
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:19
+msgid "Set the number of points in the longitude direction."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:21
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:21
-msgid "The color of the sphere's surface"
+msgid "Set the number of points in the latitude direction."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:23
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:23
-msgid "Representation style: surface or wireframe"
+msgid ""
+"The color of the sphere's surface.  If multiple centers are passed, then "
+"this must be a list of colors.  Each color is either a string, rgb list, or "
+"hex color string. For example:  * ``color='white'`` * ``color='w'`` * "
+"``color=[1, 1, 1]`` * ``color='#FFFFFF'``"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:25
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:23
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:25
-msgid "Color of the widget when selected during interaction"
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:23
+msgid ""
+"The color of the sphere's surface.  If multiple centers are passed, then "
+"this must be a list of colors.  Each color is either a string, rgb list, or "
+"hex color string. For example:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:30
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:33
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:30
-msgid "if true, run the callback function after the widget is created."
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:33
+msgid "Representation style: ``'surface'`` or ``'wireframe'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:35
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:35
+msgid "Color of the widget when selected during interaction."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:40
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:40
+msgid "if ``True``, run the callback function after the widget is created."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4908,6 +4993,15 @@ msgid "Add a text slider bar widget."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:7
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:7
+msgid ""
+"The method called every time the slider is updated. This should take a "
+"single parameter: the float value of the slider"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:10
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:10
@@ -4915,9 +5009,33 @@ msgid "The list of possible values displayed on the slider bar"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:29
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:12
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
-#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:29
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:12
+msgid "The starting value of the slider"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:14
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:14
+msgid ""
+"The relative coordinates of the left point of the slider on the display port"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:22
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:22
+msgid ""
+"Either 'start', 'end' or 'always', this defines how often the slider "
+"interacts with the callback."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:30
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:30
 msgid "**slider_widget** -- The VTK slider widget configured to display text."
 msgstr ""
 
@@ -5007,18 +5125,12 @@ msgstr ""
 #: pyvista.plotting.plotting.BasePlotter.add_volume:62
 msgid ""
 "Volume mapper to use given by name. Options include: ``'fixed_point'``, "
-"``'gpu'``, ``'open_gl'``, and ``'smart'``. If ``None`` the "
-"``\"volume_mapper\"`` in the ``rcParams`` is used."
+"``'gpu'``, ``'open_gl'``, and ``'smart'``.  If ``None`` the "
+"``\"volume_mapper\"`` in the ``self._theme`` is used."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:70
-msgid ""
-"If False, a scalar bar will not be added to the scene. Defaults to ``True``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:77
+#: pyvista.plotting.plotting.BasePlotter.add_volume:78
 msgid ""
 "Set/Get the unit distance on which the scalar opacity transfer function is "
 "defined. Meaning that over that distance, a given opacity (from the transfer"
@@ -5028,7 +5140,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:84
+#: pyvista.plotting.plotting.BasePlotter.add_volume:86
 msgid ""
 "Default off. If shading is turned on, the mapper may perform shading "
 "calculations - in some cases shading does not apply (for example, in a "
@@ -5037,7 +5149,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.add_volume:98
+#: pyvista.plotting.plotting.BasePlotter.add_volume:101
 msgid "**actor** -- VTK volume of the input data."
 msgstr ""
 
@@ -5230,8 +5342,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:3
 msgid ""
 "The maximum number of peeling layers. Initial value is 4 and is set in the "
-"``rcParams``. A special value of 0 means no maximum limit. It has to be a "
-"positive value."
+"``pyvista.global_theme``. A special value of 0 means no maximum limit.  It "
+"has to be a positive value."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -5239,11 +5351,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:7
 msgid ""
-"The threshold under which the deepth peeling algorithm stops to iterate over"
-" peel layers. This is the ratio of the number of pixels that have been "
+"The threshold under which the depth peeling algorithm stops to iterate over "
+"peel layers. This is the ratio of the number of pixels that have been "
 "touched by the last layer over the total number of pixels of the viewport "
-"area. Initial value is 0.0, meaning rendering have to be exact. Greater "
-"values may speed-up the rendering with small impact on the quality."
+"area. Initial value is 0.0, meaning rendering has to be exact. Greater "
+"values may speed up the rendering with small impact on the quality."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -6221,6 +6333,11 @@ msgid "Index of the subplot to activate along the columns."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.BasePlotter.theme:5
+msgid "Use the dark theme for a plotter."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.track_click_position:3
 msgid "By default, it only tracks right clicks."
 msgstr ""
@@ -6403,41 +6520,36 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:29
-msgid "Draw a border around each render window.  Default ``False``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:39
 msgid ""
 "Window size in pixels.  Defaults to ``[1024, 768]``, unless set differently "
-"in ``rcParams``."
+"in the relevant theme's ``window_size`` property."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:42
+#: pyvista.plotting.plotting.Plotter:43
 msgid ""
 "The number of multi-samples used to mitigate aliasing. 4 is a good default "
 "but 8 will have better results with a potential impact on performance."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:46
+#: pyvista.plotting.plotting.Plotter:47
 msgid "If ``True``, enable line smoothing."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:48
+#: pyvista.plotting.plotting.Plotter:49
 msgid "If ``True``, enable point smoothing."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:50
+#: pyvista.plotting.plotting.Plotter:51
 msgid "If ``True``, enable polygon smoothing."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:52
+#: pyvista.plotting.plotting.Plotter:53
 msgid ""
 "What lighting to set up for the plotter. Accepted options:      * "
 "``'light_kit'``: a vtk Light Kit composed of 5 lights.     * ``'three "
@@ -6447,7 +6559,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:59
+#: pyvista.plotting.plotting.Plotter:60
 msgid ""
 "The default is a ``'light_kit'`` (to be precise, 5 separate lights that act "
 "like a Light Kit)."
@@ -6505,13 +6617,6 @@ msgstr ""
 msgid ""
 "Disabled by default.  Allows user to non-blocking draw, user should call "
 "``Update()`` in each iteration."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:21
-msgid ""
-"Opens window in full screen.  When enabled, ignores ``window_size``.  "
-"Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-10 00:44+0000\n"
+"POT-Creation-Date: 2021-05-18 00:57+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -357,6 +357,7 @@ msgstr "Jupyterノートブックのプロットバックエンドを設定し�
 #: pyvista.jupyter.itkplotter.PlotterITK.add_points:0
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:0
 msgid "Parameters"
 msgstr "パラメータ"
 
@@ -397,11 +398,15 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:3
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:3
 msgid "Jupyter backend to use when plotting.  Must be one of the following:"
 msgstr "プロット時に使用するJupyterバックエンドです．次のいずれかである必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:5
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:6
 msgid ""
 "``'ipyvtklink'`` : Render remotely and stream the resulting VTK images back "
 "to the client.  Supports all VTK methods, but suffers from lag due to remote"
@@ -414,6 +419,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:11
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:12
 msgid ""
 "``'panel'`` : Convert the VTK render window to a vtkjs object and then "
 "visualize that within jupyterlab. Supports most VTK objects.  Requires that "
@@ -426,6 +433,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:17
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:18
 msgid ""
 "``'ipygany'`` : Convert all the meshes into ``ipygany`` meshes and streams "
 "those to be rendered on the client side. Supports VTK meshes, but few "
@@ -449,6 +458,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:28
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:29
 msgid ""
 "``'none'`` : Do not display any plots within jupyterlab, instead display "
 "using dedicated VTK render windows.  This will generate nothing on headless "
@@ -463,31 +474,113 @@ msgstr ""
 #: pyvista.jupyter.itkplotter.PlotterITK:9
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes:4
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:6
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.auto_close:7
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.axes:4 ../../pyvista/pyvista/themes.pydocstring
+#: of pyvista.themes.DefaultTheme.background:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.camera:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.cmap:13
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:14
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_horizontal:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_orientation:6
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_vertical:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.depth_peeling:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.edge_color:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.floor_color:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:4 ../../pyvista/pyvista/themes.pydocstring
+#: of pyvista.themes.DefaultTheme.full_screen:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.interactive:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:35
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.lighting:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.load_theme:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_rendering_splitting_position:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_samples:6
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.nan_color:6
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.notebook:8
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.outline_color:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.render_points_as_spheres:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.restore_defaults:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.save:4 ../../pyvista/pyvista/themes.pydocstring
+#: of pyvista.themes.DefaultTheme.show_edges:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.show_scalar_bar:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.silhouette:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.smooth_shading:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.title:6
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.transparent_background:4
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:12
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.window_size:4
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DocumentTheme:8
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.ParaViewTheme:4
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.load_theme:4
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:8
 msgid "Examples"
 msgstr "例"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:36
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:36
 msgid "Enable the ipygany backend."
 msgstr "ipygany バックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:41
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:41
 msgid "Enable the panel backend."
 msgstr "panelバックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:45
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:45
 msgid "Enable the ipyvtklink backend."
 msgstr "ipyvtklink バックエンドを有効にします．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:49
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:49
 msgid "Just show static images."
 msgstr "静止画像を表示するだけです．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:53
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:53
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
@@ -695,8 +788,8 @@ msgid ""
 msgstr "たとえば，コードの両方のセクションは，JupyterLab内に対話型キャンバスを表示します．"
 
 #: ../../pyvista/docs/user-guide/jupyter/ipyvtk_plotting.rst:38
-msgid "For convenience, you can enable ``use_ipyvtk`` by default with:"
-msgstr "便宜上， ``use_ipyvtk`` をデフォルトで有効にするには，次のコマンドを使用します．"
+msgid "For convenience, you can enable ``ipyvtklink`` by default with:"
+msgstr ""
 
 #: ../../pyvista/docs/user-guide/jupyter/ipyvtk_plotting.rst:47
 #: ../../pyvista/docs/user-guide/jupyter/itk_plotting.rst:27
@@ -1331,6 +1424,675 @@ msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
 "``meshio`` を使用してPyVistaメッシュを保存するには， :func:`pyvista.save_meshio` を使用します:"
+
+#: ../../pyvista/docs/user-guide/themes.rst:4
+msgid "Plotting Themes"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:6
+msgid ""
+"PyVista plotting parameters can be controlled on a plot by plot basis or "
+"through a global theme, making it possible to control mesh colors and styles"
+" through one global configuration."
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:17
+msgid ""
+"The default theme parameters in PyVista can be accessed and displayed with:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:24
+msgid ""
+"Default plotting parameters can be accessed individually by their attribute "
+"names:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:31
+msgid ""
+"Here's an example plot of the Stanford Dragon using default plotting "
+"parameters:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:40
+msgid "These parameters can then be modified globally with:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:48
+msgid "Now, the mesh will be plotted with the new global parameters:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:54
+msgid "This is identical to plotting the mesh with the following parameters:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:62
+msgid "Creating A Custom Theme"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:63
+msgid ""
+"You can customize a theme based on one of the built-in themes and then apply"
+" it globally with:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:76
+msgid "Alternatively, you can save the theme to disk to be used later with:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:82
+msgid "And then subsequently loaded in a new session of pyvista with:"
+msgstr ""
+
+#: ../../pyvista/docs/user-guide/themes.rst:90
+msgid "Theme API"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes:1
+msgid "API description for managing plotting theme parameters in pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes:5
+msgid "Apply a built-in theme"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes:13
+msgid "Load a theme into pyvista"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes:19
+msgid "Create a custom theme from the default theme and load it into pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:1
+msgid "Dark mode theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:3
+msgid "Black background, \"viridis\" colormap, tan meshes, white (hidden) edges."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:7
+msgid "Make the dark theme the global default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:13
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DocumentTheme:15
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.ParaViewTheme:11
+msgid "Alternatively, set via a string."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:1
+msgid "PyVista default theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:5
+msgid "Change the global default background color to white."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:10
+msgid "Show edges by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:14
+msgid "Create a new theme from the default theme and apply it globally."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.auto_close:1
+msgid "Automatically close the figures when finished plotting."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.auto_close:4
+msgid "Set to ``False`` with extreme caution."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.axes:1
+msgid "Return or set the default ``axes`` configuration."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.axes:5
+msgid "Set the x axis color to black."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.axes:10
+msgid "Show axes by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.axes:14
+msgid "Use the ``vtk.vtkCubeAxesActor``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.background:1
+msgid "Return or set the default background color of pyvista plots."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.background:5
+msgid "Set the default global background of all plots to white."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.camera:1
+msgid "Return or set the default camera position."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.camera:5
+msgid "Set both the position and view of the camera."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.camera:11
+msgid "Set the default position of the camera."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.camera:15
+msgid "Set the default view of the camera."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.cmap:1
+msgid "Return or set the default colormap of pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.cmap:3
+msgid ""
+"See available Matplotlib colormaps.  Only applicable for when displaying "
+"``scalars``. Requires Matplotlib to be installed. If ``colorcet`` or "
+"``cmocean`` are installed, their colormaps can be specified by name."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.cmap:8
+msgid ""
+"You can also specify a list of colors to override an existing colormap with "
+"a custom one.  For example, to create a three color colormap you might "
+"specify ``['green', 'red', 'blue']``"
+msgstr ""
+"また，色のリストを指定して，既存のカラーマップをカスタムカラーマップで上書きすることもできます．例えば，3色のカラーマップを作成するには， "
+"``['green', 'red', 'blue']``"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.cmap:14
+msgid "Set the default global colormap to 'jet'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:1
+msgid "Return or set the default color of meshes in pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:3
+msgid "Used for meshes without ``scalars``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:5
+msgid ""
+"When setting, the value must be either a string, rgb list, or hex color "
+"string.  For example:"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:8
+msgid "``color='white'``"
+msgstr "``color='white'``"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:9
+msgid "``color='w'``"
+msgstr "``color='w'``"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:10
+msgid "``color=[1, 1, 1]``"
+msgstr "``color=[1, 1, 1]``"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:11
+msgid "``color='#FFFFFF'``"
+msgstr "``color='#FFFFFF'``"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color:15
+msgid "Set the default mesh color to 'red'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_horizontal:1
+msgid "Return or set the default parameters of a horizontal colorbar."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_horizontal:5
+msgid "Set the default horizontal colorbar width to 0.6."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_horizontal:10
+msgid "Set the default horizontal colorbar height to 0.2."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_orientation:1
+msgid "Return or set the default colorbar orientation."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_orientation:3
+msgid "Must be either ``'vertical'`` or ``'horizontal'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_vertical:1
+msgid "Return or set the default parameters of a vertical colorbar."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_vertical:5
+msgid "Set the default colorbar width to 0.45."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.colorbar_vertical:10
+msgid "Set the default colorbar height to 0.8."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.depth_peeling:1
+msgid "Return or set the default depth peeling parameters."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.depth_peeling:5
+msgid ""
+"Set the global depth_peeling parameter default to be enabled with 8 peels."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.edge_color:1
+msgid "Return or set the default edge color."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.edge_color:5
+msgid "Set the global edge color to 'blue'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.floor_color:1
+msgid "Return or set the default floor color."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:1
+msgid "Return or set the default font size, family, and/or color."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:5
+msgid ""
+"Set the default font family to 'arial'.  Must be either 'arial', 'courier', "
+"or 'times'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:11
+msgid "Set the default font size to 20."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:15
+msgid "Set the default title size to 40."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:19
+msgid "Set the default label size to 10."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:23
+msgid "Set the default text color to 'grey'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.font:27
+msgid "String formatter used to format numerical data to '%.6e'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.full_screen:1
+msgid "Return if figures are shown in full screen."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.full_screen:5
+msgid "Set windows to be full screen by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.interactive:1
+msgid "Return or set the default ``interactive`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.interactive:5
+msgid "Make all plots non-interactive globally."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:1
+msgid "Return or set the jupyter notebook plotting backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.jupyter_backend:24
+msgid ""
+"``'static'`` : Display a single static image within the JupyterLab "
+"environment.  Still requires that a virtual framebuffer be setup when "
+"displaying on a headless server, but does not require any additional modules"
+" to be installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.lighting:1
+msgid "Return or set the default ``lighting``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.lighting:5
+msgid "Disable lighting globally."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.load_theme:1
+msgid "Overwrite the current theme with a theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.load_theme:5
+msgid ""
+"Create a custom theme from the default theme and load it into the global "
+"theme of pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.load_theme:19
+msgid "Create a custom theme from the dark theme and load it into pyvista."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_rendering_splitting_position:1
+msgid ""
+"Return or set the default ``multi_rendering_splitting_position`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_rendering_splitting_position:5
+msgid ""
+"Set multi_rendering_splitting_position globally to 0.5 (the middle of the "
+"window)."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_samples:1
+msgid "Return or set the default ``multi_samples`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_samples:3
+msgid "Set the number of multisamples to enable hardware antialiasing."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.multi_samples:7
+msgid "Set the default number of multisamples to 2."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.name:1
+msgid "Return or set the name of the theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.nan_color:1
+msgid "Return or set the default NaN color."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.nan_color:3
+msgid "This color is used to plot all NaN values."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.notebook:1
+msgid "Return or set the state of notebook plotting."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.notebook:3
+msgid ""
+"Setting this to ``True`` always enables notebook plotting, while setting it "
+"to ``False`` disables plotting even when plotting within a jupyter notebook "
+"and plots externally."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.notebook:9
+msgid "Disable all jupyter notebook plotting."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.outline_color:1
+msgid "Return or set the default outline color."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.render_points_as_spheres:1
+msgid "Return or set the default ``render_points_as_spheres`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.render_points_as_spheres:5
+msgid "Render points as spheres by default globally."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.restore_defaults:1
+msgid "Restore the theme defaults."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.save:1
+msgid "Serialize this theme to a json file."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.save:5
+msgid "Export and then load back in a theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.show_edges:1
+msgid "Return or set the default edge visibility."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.show_edges:5
+msgid "Show edges globally by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.show_scalar_bar:1
+msgid "Return or set the default color bar visibility."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.show_scalar_bar:5
+msgid "Show the scalar bar by default when scalars are available."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.silhouette:1
+msgid "Return or set the default ``silhouette`` configuration."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.silhouette:5
+msgid "Set parameters of the silhouette."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.slider_styles:1
+msgid "Return the default slider style configurations."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.smooth_shading:1
+msgid "Return or set the default ``smooth_shading`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.smooth_shading:5
+msgid "Set the global smooth_shading parameter default to ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.title:1
+msgid "Return or set the default ``title`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.title:3
+msgid "This is the VTK render window title."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.title:7
+msgid "Set title globally to 'plot'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.transparent_background:1
+msgid "Return or set the default ``transparent_background`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.transparent_background:5
+msgid "Set transparent_background globally to ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:1
+msgid "Return or set the default ``volume_mapper`` parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:3
+msgid ""
+"Must be one of the following strings, which are mapped to the following VTK "
+"volume mappers."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:6
+msgid "``'fixed_point'`` : ``vtk.vtkFixedPointVolumeRayCastMapper``"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:7
+msgid "``'gpu'`` : ``vtk.vtkGPUVolumeRayCastMapper``"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:8
+msgid "``'open_gl'`` : ``vtk.vtkOpenGLGPUVolumeRayCastMapper``"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:9
+msgid "``'smart'`` : ``vtk.vtkSmartVolumeMapper``"
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.volume_mapper:13
+msgid "Set default volume mapper globally to 'gpu'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.window_size:1
+msgid "Return or set the default render window size."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.window_size:5
+msgid "Set window size to ``[400, 400]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DocumentTheme:1
+msgid "A document theme well suited for papers and presentations."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DocumentTheme:3
+msgid ""
+"This theme uses a white background, black fonts, the \"viridis\" colormap, "
+"and it disables edges.  Best used for presentations, papers, etc."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DocumentTheme:9
+msgid "Make the document theme the global default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.ParaViewTheme:1
+msgid "A paraview-like theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.ParaViewTheme:5
+msgid "Make the paraview-like theme the global default."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.load_theme:1
+msgid "Load a theme from a file."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:1
+msgid "Set the plotting parameters to a predefined theme using a string."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:3
+msgid ""
+"Theme name.  Either ``'default'``, ``'document'``, ``'dark'``, or "
+"``'paraview'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:9
+msgid "Set to the default theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:14
+msgid "Set to the document theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:18
+msgid "Set to the dark theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.set_plot_theme:22
+msgid "Set to the ParaView theme."
+msgstr ""
 
 #: ../../pyvista/docs/user-guide/what-is-a-mesh.rst:4
 msgid "What is a Mesh?"

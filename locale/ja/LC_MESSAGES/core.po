@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-17 00:52+0000\n"
+"POT-Creation-Date: 2021-05-18 00:57+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -119,6 +119,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.plotting.camera.Camera.zoom:11
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:11
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:61
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -129,6 +131,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.dataset.DataSet.cell_type:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:12
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:61
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.clip:27
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1417,8 +1421,8 @@ msgstr "``True`` の場合，画面からプロットします．ウィンドウ
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:8
 msgid ""
-"Opens window in full screen.  When enabled, ignores ``window_size``. Default"
-" ``False``."
+"Opens window in full screen.  When enabled, ignores ``window_size``.  "
+"Default ``False``."
 msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1452,16 +1456,16 @@ msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
 msgstr "``True`` の場合，スクリーンショットを取得し画像の ``numpy`` 配列を返します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:16
+#: pyvista.plotting.helpers.plot:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:16
+#: pyvista.plotting.helpers.plot:17
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
 msgstr " ピクセル単位のウィンドウのサイズ．デフォルトは ``[1024, 768]`` です．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:18
+#: pyvista.plotting.helpers.plot:19
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:18
+#: pyvista.plotting.helpers.plot:19
 msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
@@ -1469,9 +1473,9 @@ msgstr ""
 "``True`` の場合，メッシュ境界を表示します．既定値は ``False`` です．エイリアス ``show_grid`` も使用できます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:21
+#: pyvista.plotting.helpers.plot:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:21
+#: pyvista.plotting.helpers.plot:22
 msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
@@ -1479,30 +1483,32 @@ msgstr ""
 "``True`` の場合，作成されたプロットはjupyterノートブック内に配置されます．jupyterコンソールがアクティブであると仮定します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:24
+#: pyvista.plotting.helpers.plot:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:24
-msgid "Shows a vtk axes widget.  Enabled by default."
-msgstr "vtk軸ウィジェットを表示します．既定では有効になっています．"
+#: pyvista.plotting.helpers.plot:25
+msgid ""
+"Shows a vtk axes widget.  If ``None``, enabled according to "
+"``pyvista.global_theme.axes.show``."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:26
+#: pyvista.plotting.helpers.plot:28
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:26
+#: pyvista.plotting.helpers.plot:28
 msgid "Adds text at the bottom of the plot."
 msgstr "プロットの下部にテキストを追加します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:28
+#: pyvista.plotting.helpers.plot:30
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:28
+#: pyvista.plotting.helpers.plot:30
 msgid "Use the ``add_volume`` method for volume rendering."
 msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用してください．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:30
+#: pyvista.plotting.helpers.plot:32
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:30
+#: pyvista.plotting.helpers.plot:32
 msgid ""
 "Deprecated.  Instead, set the backend either globally with "
 "``pyvista.set_jupyter_backend('ipyvtklink')`` or with "
@@ -1512,9 +1518,9 @@ msgstr ""
 "``backend='ipyvtklink'`` を使用してグローバルにバックエンドを設定します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 msgid ""
 "Jupyter notebook plotting backend to use.  One of the following:  * "
 "``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
@@ -1528,65 +1534,72 @@ msgstr ""
 "でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:34
+#: pyvista.plotting.helpers.plot:36
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
 msgstr "Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれかです:"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:37
+#: pyvista.plotting.helpers.plot:39
 msgid "``'none'`` : Do not display in the notebook."
 msgstr "``'none'`` : ノートブックに表示しない．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:38
+#: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:38
+#: pyvista.plotting.helpers.plot:40
 msgid "``'static'`` : Display a static figure."
 msgstr "``'static'`` : 静的図形を表示します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:39
+#: pyvista.plotting.helpers.plot:41
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:39
+#: pyvista.plotting.helpers.plot:41
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
 msgstr "``'ipygany'`` : ``ipygany`` ウィジェットを表示する"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:40
+#: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:40
+#: pyvista.plotting.helpers.plot:42
 msgid "``'panel'`` : Show a ``panel`` widget."
 msgstr "``'panel'`` : ``panel`` ウィジェットを表示します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:42
+#: pyvista.plotting.helpers.plot:44
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:42
+#: pyvista.plotting.helpers.plot:44
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
 msgstr "これは ``pyvista.set_jupyter_backend`` でグローバルに設定することもできます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:45
+#: pyvista.plotting.helpers.plot:47
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:45
+#: pyvista.plotting.helpers.plot:47
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
 msgstr "Jupyterノートブックプロットバックエンドのキーワード引数．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:47
+#: pyvista.plotting.helpers.plot:49
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:47
+#: pyvista.plotting.helpers.plot:49
+msgid "Plot specific theme."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:51
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:51
 msgid "See help(Plotter.add_mesh) for additional options."
 msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
@@ -1599,17 +1612,17 @@ msgstr ""
 "[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:50
+#: pyvista.plotting.helpers.plot:54
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:51
+#: pyvista.plotting.helpers.plot:55
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:51
+#: pyvista.plotting.helpers.plot:55
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
 "[Window height x Window width x 3] for transparent_background=False [Window "
@@ -1619,6 +1632,13 @@ msgstr ""
 "**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列．Sized:[窓の高さx窓の幅x 3] for "
 "transparent_background=False [窓の高さ×窓の幅×4] は "
 "transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:62
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:62
+msgid "Plot a simple sphere while showing its edges."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:3 ../../pyvista/pyvista/core/dataset.pydocstring
@@ -3247,6 +3267,19 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.streamlines:1
 msgid "Integrate a vector field to generate streamlines."
 msgstr "ベクトルフィールドを統合して，流線を生成します．"
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+msgid ""
+":obj:`streamlines_from_source "
+"<pyvista.core.filters.pyvista.DataSetFilters.streamlines_from_source>`\\ "
+"\\(source\\[\\, vectors\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:1
+msgid "Generate streamlines of vectors from the points of a source mesh."
+msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -5273,17 +5306,79 @@ msgstr "``connectivity`` フィルタによって与えられたID配列を保�
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.streamlines:3
 msgid ""
-"The integration is performed using a specified integrator, by default Runge-"
-"Kutta2. This supports integration through any type of dataset. Thus if the "
-"dataset contains 2D cells like polygons or triangles, the integration is "
-"constrained to lie on the surface defined by 2D cells."
+"The default behavior uses a Sphere as the source - set it's location and "
+"radius via the ``source_center`` and ``source_radius`` keyword arguments. "
+"``n_points`` defines the number of starting points on the sphere surface. "
+"Alternatively, a Line source can be used by specifying ``pointa`` and "
+"``pointb``. ``n_points`` again defines the number of points on the line."
 msgstr ""
-"デフォルトRunge-Kutta "
-"2では，指定したインテグレータを使用して積分が実行されます．これにより，あらゆるタイプのデータセットを使用した積分がサポートされます．したがって，データセットにポリゴンや三角形などの2"
-" Dセルが含まれている場合，積分は2 Dセルによって定義されるサーフェス上に配置されるように制限されます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:8
+#: pyvista.core.filters.DataSetFilters.streamlines:9
+msgid "You can retrieve the source by specifying ``return_source=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:11
+msgid ""
+"Optional keyword parameters from "
+":func:`pyvista.DataSetFilters.streamlines_from_source` can be used here to "
+"control the generation of streamlines."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:14
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:16
+msgid "The string name of the active vector field to integrate across."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:16
+msgid ""
+"Length 3 tuple of floats defining the center of the source particles. "
+"Defaults to the center of the dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:19
+msgid ""
+"Float radius of the source particle cloud. Defaults to one-tenth of the "
+"diagonal of the dataset's spatial extent."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:22
+msgid "Number of particles present in source sphere or line."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:24
+msgid "A single point.  This will override the sphere point source."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:26
+msgid ""
+"Return the source particles as :class:`pyvista.PolyData` as well as the "
+"streamlines. This will be the second value returned if ``True``."
+msgstr ""
+"ソース粒子を流線と同様に :class:`pyvista.PolyData` として返します．これは， ``True`` "
+"の場合に返される2番目の値です．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:29
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:32
+msgid ""
+"The coordinates of a start and end point for a line source. This will "
+"override the sphere and start_position point source."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines:37
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:82
 msgid ""
 "This produces polylines as the output, with each cell (i.e., polyline) "
 "representing a streamline. The attribute values associated with each "
@@ -5293,43 +5388,69 @@ msgstr ""
 "これにより，各セル(つまり，ポリライン)が流線を表すポリラインが出力として生成されます．各流線に関連付けられた属性値はセルデータに格納され，流線ポイントに関連付けられた属性値はポイントデータに格納されます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:13
+#: pyvista.core.filters.DataSetFilters.streamlines:42
 msgid ""
-"This uses a Sphere as the source - set it's location and radius via the "
-"``source_center`` and ``source_radius`` keyword arguments. You can retrieve "
-"the source as :class:`pyvista.PolyData` by specifying "
-"``return_source=True``."
+"The points of the source are the seed points for the streamlines. Only "
+"returned if ``return_source=True``."
 msgstr ""
-"これは，球をソースとして使用します - キーワード引数 ``source_center`` と ``source_radius`` "
-"を使用して，位置と半径を設定します． ``return_source=True`` を指定すると，ソースを "
-":class:`pyvista.PolyData` として取得できます．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:18
-msgid "The string name of the active vector field to integrate across"
-msgstr "積分するアクティブベクトルフィールドの文字列名．"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:20
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:3
 msgid ""
-"Length 3 tuple of floats defining the center of the source particles. "
-"Defaults to the center of the dataset"
-msgstr "ソース粒子の中心を定義する浮動小数点の長さ3のタプル．デフォルトはデータセットの中央"
+"The integration is performed using a specified integrator, by default Runge-"
+"Kutta2. This supports integration through any type of dataset. If the "
+"dataset contains 2D cells like polygons or triangles and the "
+"``surface_streamlines`` parameter is used, the integration is constrained to"
+" lie on the surface defined by 2D cells."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:23
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:13
+msgid "source"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "pyvista.DataSet"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:12
 msgid ""
-"Float radius of the source particle cloud. Defaults to one-tenth of the "
-"diagonal of the dataset's spatial extent"
-msgstr "ソースパーティクルクラウドの浮動小数点半径です．デフォルトはデータセットの空間的範囲の対角の1/10"
+"The points of the source provide the starting points of the streamlines.  "
+"This will override both sphere and line sources."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:26
-msgid "Number of particles present in source sphere"
-msgstr "ソース球に存在する粒子の数"
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:16
+msgid "vectors"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:28
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "str, optional"
+msgstr "str, optional"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:22
+msgid "integrator_type"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "int, optional"
+msgstr "int, optional"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:19
 msgid ""
 "The integrator type to be used for streamline generation. The default is "
 "Runge-Kutta45. The recognized solvers are: RUNGE_KUTTA2 (``2``),  "
@@ -5341,7 +5462,12 @@ msgstr ""
 "または ``45`` です．デフォルトは ``45`` です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:33
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:27
+msgid "integration_direction"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:25
 msgid ""
 "Specify whether the streamline is integrated in the upstream or downstream "
 "directions (or both). Options are ``'both'``, ``'backward'``, or "
@@ -5351,23 +5477,60 @@ msgstr ""
 "``'forward'`` です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:37
-msgid "Compute streamlines on a surface. Default ``False``"
-msgstr "サーフェス上の流線を計算します．デフォルトは ``False``"
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:30
+msgid "surface_streamlines"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:39
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "bool, optional"
+msgstr "bool, optional"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:30
+msgid "Compute streamlines on a surface. Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:36
+msgid "initial_step_length"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "float, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:33
 msgid ""
 "Initial step size used for line integration, expressed ib length unitsL or "
 "cell length units (see ``step_unit`` parameter). either the starting size "
 "for an adaptive integrator, e.g., RK45, or the constant / fixed size for "
-"non-adaptive ones, i.e., RK2 and RK4)"
+"non-adaptive ones, i.e., RK2 and RK4)."
 msgstr ""
-"線積分に使用される最初のステップサイズで，ib長さ単位Lまたはセル長単位( ``step_unit`` "
-"パラメータを参照)を表します．RK45のような適応積分器の開始サイズか，RK 2とRK 4のような非適応積分器の一定/固定サイズのどちらか)"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:44
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:41
+msgid "step_unit"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:39
 msgid ""
 "Uniform integration step unit. The valid unit is now limited to only "
 "LENGTH_UNIT (``'l'``) and CELL_LENGTH_UNIT (``'cl'``). Default is "
@@ -5377,49 +5540,89 @@ msgstr ""
 "だけに制限されます．デフォルトは CELL_LENGTH_UNIT : ``'cl'`` です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:48
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:45
+msgid "min_step_length"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:44
 msgid ""
 "Minimum step size used for line integration, expressed in length or cell "
-"length units. Only valid for an adaptive integrator, e.g., RK45"
-msgstr "線積分に使用される最小ステップサイズで，長さまたはセル長の単位で表されます．RK45のような適応積分器にのみ有効"
+"length units. Only valid for an adaptive integrator, e.g., RK45."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:51
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:49
+msgid "max_step_length"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:48
 msgid ""
 "Maximum step size used for line integration, expressed in length or cell "
-"length units. Only valid for an adaptive integrator, e.g., RK45"
-msgstr "線積分に使用される最大ステップサイズで，長さまたはセル長の単位で表されます．RK45のような適応積分器にのみ有効"
+"length units. Only valid for an adaptive integrator, e.g., RK45."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:54
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:53
+msgid "max_steps"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:52
 msgid ""
 "Maximum number of steps for integrating a streamline. Defaults to ``2000``"
 msgstr "流線を積分するための最大ステップ数．デフォルトは ``2000``"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:57
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:56
+msgid "terminal_speed"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:56
 msgid "Terminal speed value, below which integration is terminated."
 msgstr "積分を終了する端子速度の値です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:59
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:59
+msgid "max_error"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:59
 msgid "Maximum error tolerated throughout streamline integration."
 msgstr "流線積分全体で許容される最大エラー数．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:61
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:62
+msgid "max_time"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:62
 msgid "Specify the maximum length of a streamline expressed in LENGTH_UNIT."
 msgstr "LENGTH_UNITで表される流線の最大長を指定します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:63
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:66
+msgid "compute_vorticity"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:65
 msgid ""
 "Vorticity computation at streamline points (necessary for generating proper "
 "stream-ribbons using the ``vtkRibbonFilter``."
 msgstr "流線点での渦度計算 ( ``vtkRibbonFilter`` を使用して適切な流線リボンを生成するために必要．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:66
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:73
+msgid "interpolator_type"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:69
 msgid ""
 "Set the type of the velocity field interpolator to locate cells during "
 "streamline integration either by points or cells. The cell locator is more "
@@ -5430,34 +5633,26 @@ msgstr ""
 " ``'point'`` または ``'cell'``  ( ``'p'`` および ``'c'`` の省略形もサポートされています．)です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:72
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:77
+msgid "rotation_scale"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:76
 msgid ""
 "This can be used to scale the rate with which the streamribbons twist. The "
 "default is 1."
 msgstr "これを使用して，リボンがツイストするレートをスケールできます．デフォルトは1です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:75
-msgid "Set the start position. Default is ``(0.0, 0.0, 0.0)``"
-msgstr "開始位置を設定します．デフォルトは ``(0.0, 0.0, 0.0)``"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:77
-msgid ""
-"Return the source particles as :class:`pyvista.PolyData` as well as the "
-"streamlines. This will be the second value returned if ``True``."
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:84
+msgid "streamlines"
 msgstr ""
-"ソース粒子を流線と同様に :class:`pyvista.PolyData` として返します．これは， ``True`` "
-"の場合に返される2番目の値です．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:80
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines:83
-msgid ""
-"The coordinates of a start and end point for a line source. This will "
-"override the sphere point source."
-msgstr "線源の始点と終点の座標．これにより，球の点源がオーバーライドされます．"
+#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
+msgid "pyvista.PolyData"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.surface_indices:3
