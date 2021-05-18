@@ -101,7 +101,7 @@ Let's inspect the imagery that we just loaded
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7f6c4be24e48>
+    <matplotlib.image.AxesImage object at 0x7f595586d990>
 
 
 
@@ -118,7 +118,7 @@ method, then you can map that imagery to the surface mesh as follows:
 
 
     # Bounds of the aerial imagery - given to us
-    bounds = (1818000,1824500,5645000,5652500,0,3000)
+    bounds = (1818000, 1824500, 5645000, 5652500, 0, 3000)
     # Clip the elevation dataset to the map's extent
     local = elevation.clip_box(bounds, invert=False)
     # Apply texturing coordinates to associate the image to the surface
@@ -129,7 +129,31 @@ method, then you can map that imagery to the surface mesh as follows:
 
 
 
+.. raw:: html
 
+    <div class="output_subarea output_html rendered_html output_result">
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>436733</td></tr>
+    <tr><td>N Points</td><td>222110</td></tr>
+    <tr><td>X Bounds</td><td>1.818e+06, 1.825e+06</td></tr>
+    <tr><td>Y Bounds</td><td>5.645e+06, 5.653e+06</td></tr>
+    <tr><td>Z Bounds</td><td>1.381e+03, 2.787e+03</td></tr>
+    <tr><td>N Arrays</td><td>2</td></tr>
+    </table>
+
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>1.381e+03</td><td>2.787e+03</td></tr>
+    <tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>
+    </table>
+
+    </td></tr> </table>
+    </div>
+    <br />
+    <br />
 
 .. GENERATED FROM PYTHON SOURCE LINES 43-44
 
@@ -239,7 +263,7 @@ and plotting the texture mapped local topography and the outside area
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.999 seconds)
+   **Total running time of the script:** ( 0 minutes  17.732 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:

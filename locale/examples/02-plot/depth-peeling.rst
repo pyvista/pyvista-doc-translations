@@ -22,12 +22,13 @@ Depth Peeling
 ~~~~~~~~~~~~~
 
 Depth peeling is a technique to correctly render translucent geometry.
-This is not enabled by default in `pyvista.rcParams` as some operating
-systems and versions of VTK have issues with this routine.
+This is not enabled by default in ``pyvista.global_theme`` as some
+operating systems and versions of VTK have issues with this routine.
 
-For this example, we will showcase the difference that depth peeling provides.
+For this example, we will showcase the difference that depth peeling
+provides.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-17
+.. GENERATED FROM PYTHON SOURCE LINES 13-18
 
 .. code-block:: default
 
@@ -43,7 +44,7 @@ For this example, we will showcase the difference that depth peeling provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-26
+.. GENERATED FROM PYTHON SOURCE LINES 19-27
 
 .. code-block:: default
 
@@ -62,19 +63,19 @@ For this example, we will showcase the difference that depth peeling provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-45
+.. GENERATED FROM PYTHON SOURCE LINES 28-46
 
 .. code-block:: default
 
     dargs = dict(opacity=0.5, color="red", smooth_shading=True)
 
-    p = pv.Plotter(shape=(1,2), multi_samples=8)
+    p = pv.Plotter(shape=(1, 2), multi_samples=8)
 
     p.add_mesh(spheres, **dargs)
     p.enable_depth_peeling(10)
     p.add_text("Depth Peeling")
 
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_text("Standard")
     p.add_mesh(spheres.copy(), **dargs)
 
@@ -105,21 +106,21 @@ For this example, we will showcase the difference that depth peeling provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-50
+.. GENERATED FROM PYTHON SOURCE LINES 47-51
 
 The following room surfaces example mesh, provided courtesy of
 `Sam Potter <https://github.com/sampotter>`_ has coincident topology and
 depth rendering helps correctly render those geometries when a global
 opacity value is used.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-71
+.. GENERATED FROM PYTHON SOURCE LINES 51-72
 
 .. code-block:: default
 
 
     room = examples.download_room_surface_mesh()
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
 
     p.enable_depth_peeling(number_of_peels=4, occlusion_ratio=0)
     p.add_mesh(room, opacity=0.5, color="tan")
@@ -132,7 +133,7 @@ opacity value is used.
     p.link_views()
     p.camera_position = [(43.6, 49.5, 19.8),
                          (0.0, 2.25, 0.0),
-                        (-0.57, 0.70, -0.42)]
+                         (-0.57, 0.70, -0.42)]
 
     p.show()
 
@@ -158,12 +159,12 @@ opacity value is used.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+.. GENERATED FROM PYTHON SOURCE LINES 73-75
 
 And here is another example wheen rendering many translucent contour
 surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-93
+.. GENERATED FROM PYTHON SOURCE LINES 75-94
 
 .. code-block:: default
 
@@ -210,7 +211,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  53.580 seconds)
+   **Total running time of the script:** ( 0 minutes  52.703 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

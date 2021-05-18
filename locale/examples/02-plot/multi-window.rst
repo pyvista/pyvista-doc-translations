@@ -152,11 +152,11 @@ horizontal subplots.
 
     # This defines the position of the vertical/horizontal splitting, in this
     # case 40% of the vertical/horizontal dimension of the window
-    pv.rcParams['multi_rendering_splitting_position'] = 0.40
+    pv.global_theme.multi_rendering_splitting_position = 0.40
 
     # shape="3|1" means 3 plots on the left and 1 on the right,
     # shape="4/2" means 4 plots on top of 2 at bottom.
-    plotter = pv.Plotter(shape='3|1', window_size=(1000,1200))
+    plotter = pv.Plotter(shape='3|1', window_size=(1000, 1200))
 
     plotter.subplot(0)
     plotter.add_text("Airplane Example")
@@ -208,14 +208,15 @@ rows and columns. A group is defined through a tuple ``(rows,cols)`` of row
 and column indices or slices. The group always spans from the smallest to the
 largest (row or column) id that is passed through the list or slice.
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-163
+.. GENERATED FROM PYTHON SOURCE LINES 101-164
 
 .. code-block:: default
 
 
-    import numpy as np # numpy is imported for a more convenient slice notation through np.s_
+    # numpy is imported for a more convenient slice notation through np.s_
+    import numpy as np
 
-    shape = (5,4) # 5 by 4 grid
+    shape = (5, 4)  # 5 by 4 grid
     row_weights = [0.5,1,1,2,1] # First row is half the size and fourth row is double the size of the other rows
     col_weights = [1,1,0.5,2] # Third column is half the size and fourth column is double size of the other columns
     groups = [
@@ -298,7 +299,7 @@ largest (row or column) id that is passed through the list or slice.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.440 seconds)
+   **Total running time of the script:** ( 0 minutes  3.922 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:

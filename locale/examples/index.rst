@@ -1730,12 +1730,12 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="PyVista has a few coloring themes for you to choose!">
+    <div class="sphx-glr-thumbcontainer" tooltip="PyVista allows you to set global and local plotting themes to easily set default plotting param...">
 
 .. only:: html
 
  .. figure:: /examples/02-plot/images/thumb/sphx_glr_themes_thumb.png
-     :alt: Change the Theme
+     :alt: Control Global and Local Plotting Themes
 
      :ref:`sphx_glr_examples_02-plot_themes.py`
 

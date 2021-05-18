@@ -66,11 +66,12 @@ Download a sample dataset containing a vector field that can be integrated.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+.. GENERATED FROM PYTHON SOURCE LINES 25-27
 
-Run the stream line filtering algorithm.
+Run the stream line filtering algorithm using random seed points inside a 
+sphere with radius of 2.0.
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-37
+.. GENERATED FROM PYTHON SOURCE LINES 27-38
 
 .. code-block:: default
 
@@ -92,12 +93,12 @@ Run the stream line filtering algorithm.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-40
+.. GENERATED FROM PYTHON SOURCE LINES 39-41
 
 Display the results! Please note that because this dataset's velocity field
 was measured with low resolution, many streamlines travel outside the artery.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-50
+.. GENERATED FROM PYTHON SOURCE LINES 41-51
 
 .. code-block:: default
 
@@ -132,13 +133,13 @@ was measured with low resolution, many streamlines travel outside the artery.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-54
+.. GENERATED FROM PYTHON SOURCE LINES 52-55
 
 Blood Vessels
 +++++++++++++
 Here is another example of blood flow:
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-62
+.. GENERATED FROM PYTHON SOURCE LINES 55-63
 
 .. code-block:: default
 
@@ -157,7 +158,7 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-73
+.. GENERATED FROM PYTHON SOURCE LINES 64-74
 
 .. code-block:: default
 
@@ -192,33 +193,23 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-77
+.. GENERATED FROM PYTHON SOURCE LINES 75-79
 
-Kitchen
-+++++++
+A source mesh can also be provided using the `streamlines_from_source` 
+filter, for example if an inlet surface is available.  In this example, the
+inlet surface is extracted just inside the domain for use as the seed for
+the streamlines.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 77-82
-
-.. code-block:: default
-
-    kpos = [(-6.68, 11.9, 11.6), (3.5, 2.5, 1.26), (0.45, -0.4, 0.8)]
-
-    mesh = examples.download_kitchen()
-    kitchen = examples.download_kitchen(split=True)
-
-
-
-
-
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 83-85
+.. GENERATED FROM PYTHON SOURCE LINES 79-87
 
 .. code-block:: default
 
-    streamlines = mesh.streamlines(n_points=40, source_center=(0.08, 3, 0.71))
+
+
+    source_mesh = mesh.slice('z', origin=(0, 0, 182))  # inlet surface
+    # thin out ~40% points to get a nice density of streamlines
+    seed_mesh = source_mesh.decimate_boundary(0.4)
+    streamlines = mesh.streamlines_from_source(seed_mesh, integration_direction="forward")
 
 
 
@@ -227,15 +218,16 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-94
+
+.. GENERATED FROM PYTHON SOURCE LINES 88-96
 
 .. code-block:: default
 
     p = pv.Plotter()
-    p.add_mesh(mesh.outline(), color="k")
-    p.add_mesh(kitchen, color=True)
-    p.add_mesh(streamlines.tube(radius=0.01), scalars="velocity", lighting=False)
-    p.camera_position = kpos
+    p.add_mesh(streamlines.tube(radius=0.2), lighting=False)
+    p.add_mesh(boundary, color="grey", opacity=0.25)
+    p.add_mesh(source_mesh, color="red")
+    p.camera_position = [(10, 9.5, -43), (87.0, 73.5, 123.0), (-0.5, -0.7, 0.5)]
     p.show()
 
 
@@ -254,19 +246,87 @@ Kitchen
  .. code-block:: none
 
 
+    [(10.0, 9.5, -43.0),
+     (87.0, 73.5, 123.0),
+     (-0.502518907629606, -0.7035264706814484, 0.502518907629606)]
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 97-100
+
+Kitchen
++++++++
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
+
+.. code-block:: default
+
+    kpos = [(-6.68, 11.9, 11.6), (3.5, 2.5, 1.26), (0.45, -0.4, 0.8)]
+
+    mesh = examples.download_kitchen()
+    kitchen = examples.download_kitchen(split=True)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 106-108
+
+.. code-block:: default
+
+    streamlines = mesh.streamlines(n_points=40, source_center=(0.08, 3, 0.71))
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-117
+
+.. code-block:: default
+
+    p = pv.Plotter()
+    p.add_mesh(mesh.outline(), color="k")
+    p.add_mesh(kitchen, color=True)
+    p.add_mesh(streamlines.tube(radius=0.01), scalars="velocity", lighting=False)
+    p.camera_position = kpos
+    p.show()
+
+
+
+
+
+.. image:: /examples/01-filter/images/sphx_glr_streamlines_004.png
+    :alt: streamlines
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
     [(-6.68, 11.9, 11.6),
      (3.5, 2.5, 1.26),
      (0.4494385524950301, -0.39950093555113786, 0.7990018711022757)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-98
+.. GENERATED FROM PYTHON SOURCE LINES 118-121
 
 Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-115
+.. GENERATED FROM PYTHON SOURCE LINES 121-138
 
 .. code-block:: default
 
@@ -294,7 +354,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-119
+.. GENERATED FROM PYTHON SOURCE LINES 139-142
 
 .. code-block:: default
 
@@ -308,7 +368,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-122
+.. GENERATED FROM PYTHON SOURCE LINES 143-145
 
 .. code-block:: default
 
@@ -317,7 +377,7 @@ Custom 3D Vector Field
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_004.png
+.. image:: /examples/01-filter/images/sphx_glr_streamlines_005.png
     :alt: streamlines
     :class: sphx-glr-single-img
 
@@ -338,7 +398,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.355 seconds)
+   **Total running time of the script:** ( 0 minutes  20.212 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

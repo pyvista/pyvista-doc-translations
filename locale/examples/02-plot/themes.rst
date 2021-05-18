@@ -18,12 +18,13 @@
 .. _sphx_glr_examples_02-plot_themes.py:
 
 
-Change the Theme
-~~~~~~~~~~~~~~~~
+Control Global and Local Plotting Themes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PyVista has a few coloring themes for you to choose!
+PyVista allows you to set global and local plotting themes to easily
+set default plotting parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-10
+.. GENERATED FROM PYTHON SOURCE LINES 9-12
 
 .. code-block:: default
 
@@ -37,11 +38,11 @@ PyVista has a few coloring themes for you to choose!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-12
+.. GENERATED FROM PYTHON SOURCE LINES 13-14
 
-Define a simple plotting routine for comparing the themes
+Define a simple plotting routine for comparing the themes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-23
+.. GENERATED FROM PYTHON SOURCE LINES 14-25
 
 .. code-block:: default
 
@@ -53,7 +54,7 @@ Define a simple plotting routine for comparing the themes
         p = pv.Plotter()
         p.add_mesh(mesh)
         p.add_bounding_box()
-        return p.show()
+        p.show()
 
 
 
@@ -63,24 +64,23 @@ Define a simple plotting routine for comparing the themes
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-32
+.. GENERATED FROM PYTHON SOURCE LINES 26-34
 
-PyVista's default color theme is chosen to be generally easy on your eyes
-and is best used when working long hours on your visualization project.
-The grey background and warm colormaps are chosen to make sure 3D renderings
-do not drastically change the brightness of your screen when working in dark
-environments.
+PyVista's default color theme is chosen to be generally easy on your
+eyes and is best used when working long hours on your visualization
+project.  The grey background and warm colormaps are chosen to make
+sure 3D renderings do not drastically change the brightness of your
+screen when working in dark environments.
 
-Here's an example of our default plotting theme - this is what you would see
-by default after running any of our examples.
+Here's an example of our default plotting theme - this is what you
+would see by default after running any of our examples locally.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-37
+.. GENERATED FROM PYTHON SOURCE LINES 34-38
 
 .. code-block:: default
 
 
-    pv.set_plot_theme("default")
-
+    pv.set_plot_theme('default')
     plot_example()
 
 
@@ -91,37 +91,27 @@ by default after running any of our examples.
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-43
+.. GENERATED FROM PYTHON SOURCE LINES 39-44
 
 PyVista also ships with a few plotting themes:
 
-* ``'ParaView'``: this is designed to mimic ParaView's default plotting theme
-* ``'night'``: this is designed to be night-mode friendly with dark backgrounds and color schemes
-* ``'document'``: this is built for use in document style plotting and making publication quality figures
+* ``'ParaView'``: this is designed to mimic ParaView's default plotting theme.
+* ``'dark'``: this is designed to be night-mode friendly with dark backgrounds and color schemes.
+* ``'document'``: this is built for use in document style plotting and making publication quality figures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+.. GENERATED FROM PYTHON SOURCE LINES 46-47
 
-Demo the ``'ParaView'`` theme
+Demo the ``'ParaView'`` theme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-52
+.. GENERATED FROM PYTHON SOURCE LINES 47-53
 
 .. code-block:: default
 
 
-    pv.set_plot_theme("ParaView")
+    pv.set_plot_theme("paraview")
 
     plot_example()
 
@@ -134,29 +124,19 @@ Demo the ``'ParaView'`` theme
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-54
+.. GENERATED FROM PYTHON SOURCE LINES 54-55
 
-Demo the ``'night'`` theme
+Demo the ``'dark'`` theme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+.. GENERATED FROM PYTHON SOURCE LINES 55-60
 
 .. code-block:: default
 
 
-    pv.set_plot_theme("night")
+    pv.set_plot_theme("dark")
 
     plot_example()
 
@@ -168,27 +148,16 @@ Demo the ``'night'`` theme
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-61
+.. GENERATED FROM PYTHON SOURCE LINES 61-62
 
-Demo the ``'document'`` theme
+Demo the ``'document'`` theme.  This theme is used on our online examples.
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-67
+.. GENERATED FROM PYTHON SOURCE LINES 62-67
 
 .. code-block:: default
-
 
 
     pv.set_plot_theme("document")
@@ -203,16 +172,6 @@ Demo the ``'document'`` theme
     :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -221,7 +180,7 @@ Demo the ``'document'`` theme
 Note that you can also use color gradients for the background of the plotting
 window!
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-76
+.. GENERATED FROM PYTHON SOURCE LINES 70-78
 
 .. code-block:: default
 
@@ -230,13 +189,43 @@ window!
     plotter.show_grid()
     # Here we set the gradient
     plotter.set_background("royalblue", top="aliceblue")
-    plotter.show()
+    cpos = plotter.show()
+
+
 
 
 
 .. image:: /examples/02-plot/images/sphx_glr_themes_005.png
     :alt: themes
     :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-89
+
+Modifying the Global Theme
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can control how meshes are displayed by setting individual
+parameters when plotting like ``mesh.plot(show_edges=True)``, or by
+setting a global theme.  You can also control individual parameters
+how all meshes are displayed by default via ``pyvista.global_theme``.
+
+Here, we print out the current global defaults for all ``pyvista``
+meshes.  These values have been changed by the previous "Document"
+theme.
+
+.. GENERATED FROM PYTHON SOURCE LINES 89-93
+
+.. code-block:: default
+
+
+    pv.global_theme
+
+
+
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -246,16 +235,267 @@ window!
  .. code-block:: none
 
 
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+    Document Theme
+    --------------
+    Background               : (1.0, 1.0, 1.0)
+    Jupyter backend          : ipyvtklink
+    Full screen              : False
+    Window size              : [1024, 768]
+    Camera                   : {'position': [1, 1, 1], 'viewup': [0, 0, 1]}
+    Notebook                 : None
+    Font                     : 
+        Family               : arial
+        Size                 : 18
+        Title size           : 18
+        Label size           : 18
+        Color                : (0.0, 0.0, 0.0)
+        Float format         : None
+    Auto close               : True
+    Colormap                 : viridis
+    Color                    : (0.8235294117647058, 0.7058823529411765, 0.5490196078431373)
+    NaN color                : (0.6627450980392157, 0.6627450980392157, 0.6627450980392157)
+    Edge color               : (0.0, 0.0, 0.0)
+    Outline color            : (0.0, 0.0, 0.0)
+    Floor color              : (0.5019607843137255, 0.5019607843137255, 0.5019607843137255)
+    Colorbar orientation     : horizontal
+    Colorbar - horizontal    : 
+        Width                : 0.6
+        Height               : 0.08
+        X Position           : 0.35
+        Y Position           : 0.05
+    Colorbar - vertical      : 
+        Width                : 0.08
+        Height               : 0.45
+        X Position           : 0.9
+        Y Position           : 0.02
+    Show scalar bar          : True
+    Show edges               : False
+    Lighting                 : True
+    Interactive              : False
+    Render points as spheres : False
+    Transparent Background   : False
+    Title                    : PyVista
+    Axes                     : Axes configuration
+        X Color              : (1.0, 0.38823529411764707, 0.2784313725490196)
+        Y Color              : (0.1803921568627451, 0.5450980392156862, 0.3411764705882353)
+        Z Color              : (0.0, 0.0, 1.0)
+        Use Box              : False
+        Show                 : True
+    Multi-samples            : 4
+    Multi-renderer Split Pos : None
+    Volume mapper            : smart
+    Smooth shading           : False
+    Depth peeling            : 
+        Number               : 4
+        Occlusion ratio      : 0.0
+        Enabled              : False
+    Silhouette               : 
+        Color                : (0.0, 0.0, 0.0)
+        Line width           : 2
+        Opacity              : 1.0
+        Feature angle        : None
+        Decimate             : 0.9
+    Slider Styles            : 
+        Classic              : 
+            Slider length    : 0.02
+            Slider width     : 0.04
+            Slider color     : (0.5, 0.5, 0.5)
+            Tube width       : 0.005
+            Tube color       : (1, 1, 1)
+            Cap opacity      : 1.0
+            Cap length       : 0.01
+            Cap width        : 0.02
+        Modern               : 
+            Slider length    : 0.02
+            Slider width     : 0.04
+            Slider color     : (0.43137255, 0.44313725, 0.45882353)
+            Tube width       : 0.04
+            Tube color       : (0.69803922, 0.70196078, 0.70980392)
+            Cap opacity      : 0.0
+            Cap length       : 0.01
+            Cap width        : 0.02
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 94-98
+
+By default, edges are not shown on meshes unless explicitly
+specified when plotting a mesh via ``show_edges=True``.  You can
+change this default behavior globally by changing the default
+parameter.
+
+.. GENERATED FROM PYTHON SOURCE LINES 98-103
+
+.. code-block:: default
+
+
+    pv.global_theme.show_edges = True
+    cpos = pv.Sphere().plot()
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_themes_006.png
+    :alt: themes
+    :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 104-109
+
+You can reset pyvista to default behavior with ``restore_defaults``.
+Note that the figure's color was reset to the default "white" color
+rather than the "tan" color default with the document theme.  Under
+the hood, each theme applied changes the global plot defaults stored
+within ``pyvista.global_theme.``
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-114
+
+.. code-block:: default
+
+
+    pv.global_theme.restore_defaults()
+    cpos = pv.Sphere().plot()
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_themes_007.png
+    :alt: themes
+    :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 115-122
+
+Creating a Custom Theme and Applying it Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can create a custom theme by modifying one of the existing
+themes and then loading it into the global plotting defaults.
+
+Here, we create a dark theme that plots meshes red by default while
+showing edges.
+
+.. GENERATED FROM PYTHON SOURCE LINES 122-135
+
+.. code-block:: default
+
+
+    from pyvista import themes
+
+    my_theme = themes.DarkTheme()
+    my_theme.color = 'red'
+    my_theme.lighting = False
+    my_theme.show_edges = True
+    my_theme.axes.box = True
+
+    pv.global_theme.load_theme(my_theme)
+    cpos = pv.Sphere().plot()
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_themes_008.png
+    :alt: themes
+    :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 136-145
+
+Creating a Custom Theme and Applying it to a Single Plotter
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In this example, we create a custom theme from the base "default"
+theme and then apply it to a single plotter.  Note that this does
+not change the behavior of the global "defaults", which are still
+set to the modified ``DarkTheme``.
+
+This approach carries the advantage that you can maintain several
+themes and apply them to one or more plotters.
+
+.. GENERATED FROM PYTHON SOURCE LINES 145-158
+
+.. code-block:: default
+
+
+    from pyvista import themes
+
+    my_theme = themes.DefaultTheme()
+    my_theme.color = 'black'
+    my_theme.lighting = True
+    my_theme.show_edges = True
+    my_theme.edge_color = 'white'
+    my_theme.background = 'white'
+
+    cpos = pv.Sphere().plot(theme=my_theme)
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_themes_009.png
+    :alt: themes
+    :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 159-160
+
+Alternatively, set the theme of an instance of ``Plotter``.
+
+.. GENERATED FROM PYTHON SOURCE LINES 160-167
+
+.. code-block:: default
+
+
+    pl = pv.Plotter(theme=my_theme)
+    # pl.theme = my_theme  # alternatively use the setter
+    pl.add_mesh(pv.Cube())
+    cpos = pl.show()
+
+
+
+
+
+.. image:: /examples/02-plot/images/sphx_glr_themes_010.png
+    :alt: themes
+    :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 168-169
+
+Reset to use the document theme
+
+.. GENERATED FROM PYTHON SOURCE LINES 169-170
+
+.. code-block:: default
+
+    pv.set_plot_theme("document")
+
+
+
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.018 seconds)
+   **Total running time of the script:** ( 0 minutes  6.156 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:
