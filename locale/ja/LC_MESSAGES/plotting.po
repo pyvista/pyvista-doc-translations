@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-18 00:57+0000\n"
+"POT-Creation-Date: 2021-05-19 00:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -584,13 +584,17 @@ msgstr "Jupyterノートブックプロットバックエンドのキーワー�
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:49
-msgid "Plot specific theme."
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:35
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:63
+msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:51
-msgid "See help(Plotter.add_mesh) for additional options."
-msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
+msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
@@ -649,14 +653,12 @@ msgstr "戻り値"
 #: pyvista.plotting.helpers.plot:54
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
-"   [Window height x Window width x 3] for transparent_background=False   "
-"[Window height x Window width x 4] for transparent_background=True   "
-"Returned only when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values.   Sized:    * [Window height x Window width x 3] if the theme sets"
+"     ``transparent_background=False``.   * [Window height x Window width x "
+"4] if the theme sets     ``transparent_background=True``.    Returned only "
+"when ``screenshot=True``."
 msgstr ""
-"* **cpos** (*list*) --カメラ位置，焦点，ビューアップのリスト．* **img** (*numpy.ndarray*) -- "
-"ピクセルRGBおよびアルファを含む配列．サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
-"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -669,17 +671,35 @@ msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアッ
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:55
 msgid ""
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
-"[Window height x Window width x 3] for transparent_background=False [Window "
-"height x Window width x 4] for transparent_background=True Returned only "
-"when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values. Sized:"
 msgstr ""
-"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列．サイズ:[窓の高さx窓の幅x 3] for "
-"transparent_background=False [窓の高さ×窓の幅×4] は "
-"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:61
+#: pyvista.plotting.helpers.plot:58
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:54
+msgid ""
+"[Window height x Window width x 3] if the theme sets "
+"``transparent_background=False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:60
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:56
+msgid ""
+"[Window height x Window width x 4] if the theme sets "
+"``transparent_background=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:63
+msgid "Returned only when ``screenshot=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:15
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:8
@@ -718,7 +738,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:55
+#: pyvista.plotting.plotting.Plotter.show:61
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:40
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -729,7 +749,7 @@ msgid "Examples"
 msgstr "例"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:62
+#: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
 msgstr ""
 
@@ -802,8 +822,8 @@ msgstr "戻り値の型"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:12
-msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``"
-msgstr "``pyvista.plot`` と同じ． ``help(pyvista.plot)`` を参照"
+msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:16
@@ -2843,13 +2863,6 @@ msgid ""
 "The default is a Light Kit (to be precise, 5 separate lights that act like a"
 " Light Kit)."
 msgstr "既定値はLight Kit(正確には，Light Kitのように動作する5つの独立したライト)です．"
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter:35
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:63
-msgid "Plot-specific theme."
-msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:3
@@ -7068,46 +7081,45 @@ msgstr "jupyterlabビューア，シーン，または表示オブジェクト�
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True``   or ``screenshot`` is set. * *widget* -- IPython widget"
-" when ``return_viewer==True``."
+"``return_img=True``   or ``screenshot=True`` is set. Optionally contains "
+"alpha   values. Sized:    * [Window height x Window width x 3] if the theme "
+"sets     ``transparent_background=False``.   * [Window height x Window width"
+" x 4] if the theme sets     ``transparent_background=True``. * *widget* -- "
+"IPython widget when ``return_viewer=True``."
 msgstr ""
-"* **cpos** (*list*) -- カメラ位置，焦点，ビューアップのリスト * **image** (*np.ndarray*) --  "
-"``return_img=True`` または ``screenshot`` が設定されている場合は，最後のイメージの数値配列． * *widget* "
-"--  ``return_viewer==True`` 時のIPythonウィジェット．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:50
 msgid ""
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True`` or ``screenshot`` is set."
+"``return_img=True`` or ``screenshot=True`` is set. Optionally contains alpha"
+" values. Sized:"
 msgstr ""
-"**image** (*np.ndarray*) --  ``return_img=True`` または ``screenshot`` "
-"のいずれかが設定されている場合，最後のイメージの数値配列．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:52
-msgid "*widget* -- IPython widget when ``return_viewer==True``."
-msgstr "*widget* -- ``return_viewer==True`` 時のIPythonウィジェット．"
+#: pyvista.plotting.plotting.Plotter.show:58
+msgid "*widget* -- IPython widget when ``return_viewer=True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:56
+#: pyvista.plotting.plotting.Plotter.show:62
 msgid "Simply show the plot."
 msgstr "プロットを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:60
+#: pyvista.plotting.plotting.Plotter.show:66
 msgid ""
 "Take a screenshot interactively.  Screenshot will be of the last image "
 "shown."
 msgstr "対話的にスクリーンショットを撮ります．最後に表示された画像がスクリーンショットになります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:65
+#: pyvista.plotting.plotting.Plotter.show:71
 msgid "Display an ``ipygany`` scene within a jupyter notebook"
 msgstr "Jupyterノートブック内に ``ipygany`` シーンを表示します"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:69
+#: pyvista.plotting.plotting.Plotter.show:75
 msgid "Return an ``ipygany`` scene."
 msgstr "``ipygany`` シーンを返します．"
 

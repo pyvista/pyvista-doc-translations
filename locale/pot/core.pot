@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-18 00:57+0000\n"
+"POT-Creation-Date: 2021-05-19 00:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,13 +83,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.view_frustum:11
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.zoom:11
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock:11
-#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:61
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cell_bounds:10
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cell_n_points:10
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cell_points:11
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cell_type:10
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.find_closest_cell:12
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:61
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip:27
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip_box:21
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.clip_scalar:18
@@ -971,17 +971,17 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:49
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:49
-msgid "Plot specific theme."
+msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:51
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:51
-msgid "See help(Plotter.add_mesh) for additional options."
+msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:54
-msgid "* **cpos** (*list*) -- List of camera position, focal point, and view up. * **img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:   [Window height x Window width x 3] for transparent_background=False   [Window height x Window width x 4] for transparent_background=True   Returned only when screenshot enabled"
+msgid "* **cpos** (*list*) -- List of camera position, focal point, and view up. * **img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha values.   Sized:    * [Window height x Window width x 3] if the theme sets     ``transparent_background=False``.   * [Window height x Window width x 4] if the theme sets     ``transparent_background=True``.    Returned only when ``screenshot=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:54
@@ -991,11 +991,26 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:55
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:55
-msgid "**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: [Window height x Window width x 3] for transparent_background=False [Window height x Window width x 4] for transparent_background=True Returned only when screenshot enabled"
+msgid "**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha values. Sized:"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:62
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:62
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:58
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:58
+msgid "[Window height x Window width x 3] if the theme sets ``transparent_background=False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:60
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:60
+msgid "[Window height x Window width x 4] if the theme sets ``transparent_background=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:63
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:63
+msgid "Returned only when ``screenshot=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:67
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
 msgstr ""
 
