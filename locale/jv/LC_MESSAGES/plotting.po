@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-18 00:57+0000\n"
+"POT-Creation-Date: 2021-05-19 00:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Javanese (https://www.transifex.com/getfem-doc/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -563,12 +563,16 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:49
-msgid "Plot specific theme."
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter:35
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:63
+msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:51
-msgid "See help(Plotter.add_mesh) for additional options."
+msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -628,10 +632,11 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:54
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
-"   [Window height x Window width x 3] for transparent_background=False   "
-"[Window height x Window width x 4] for transparent_background=True   "
-"Returned only when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values.   Sized:    * [Window height x Window width x 3] if the theme sets"
+"     ``transparent_background=False``.   * [Window height x Window width x "
+"4] if the theme sets     ``transparent_background=True``.    Returned only "
+"when ``screenshot=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -645,14 +650,35 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:55
 msgid ""
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
-"[Window height x Window width x 3] for transparent_background=False [Window "
-"height x Window width x 4] for transparent_background=True Returned only "
-"when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values. Sized:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:61
+#: pyvista.plotting.helpers.plot:58
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:54
+msgid ""
+"[Window height x Window width x 3] if the theme sets "
+"``transparent_background=False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:60
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:56
+msgid ""
+"[Window height x Window width x 4] if the theme sets "
+"``transparent_background=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:63
+msgid "Returned only when ``screenshot=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:15
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:8
@@ -691,7 +717,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:55
+#: pyvista.plotting.plotting.Plotter.show:61
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:40
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -702,7 +728,7 @@ msgid "Examples"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:62
+#: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
 msgstr ""
 
@@ -775,7 +801,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:12
-msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``"
+msgid "Same as ``pyvista.plot``.  See ``help(pyvista.plot)``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -2657,13 +2683,6 @@ msgstr ""
 msgid ""
 "The default is a Light Kit (to be precise, 5 separate lights that act like a"
 " Light Kit)."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter:35
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:63
-msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -6645,41 +6664,45 @@ msgstr ""
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True``   or ``screenshot`` is set. * *widget* -- IPython widget"
-" when ``return_viewer==True``."
+"``return_img=True``   or ``screenshot=True`` is set. Optionally contains "
+"alpha   values. Sized:    * [Window height x Window width x 3] if the theme "
+"sets     ``transparent_background=False``.   * [Window height x Window width"
+" x 4] if the theme sets     ``transparent_background=True``. * *widget* -- "
+"IPython widget when ``return_viewer=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:50
 msgid ""
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
-"``return_img=True`` or ``screenshot`` is set."
+"``return_img=True`` or ``screenshot=True`` is set. Optionally contains alpha"
+" values. Sized:"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:52
-msgid "*widget* -- IPython widget when ``return_viewer==True``."
+#: pyvista.plotting.plotting.Plotter.show:58
+msgid "*widget* -- IPython widget when ``return_viewer=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:56
+#: pyvista.plotting.plotting.Plotter.show:62
 msgid "Simply show the plot."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:60
+#: pyvista.plotting.plotting.Plotter.show:66
 msgid ""
 "Take a screenshot interactively.  Screenshot will be of the last image "
 "shown."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:65
+#: pyvista.plotting.plotting.Plotter.show:71
 msgid "Display an ``ipygany`` scene within a jupyter notebook"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:69
+#: pyvista.plotting.plotting.Plotter.show:75
 msgid "Return an ``ipygany`` scene."
 msgstr ""
 

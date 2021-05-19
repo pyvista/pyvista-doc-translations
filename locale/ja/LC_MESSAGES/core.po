@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-18 00:57+0000\n"
+"POT-Creation-Date: 2021-05-19 00:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -120,7 +120,7 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:11
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:61
+#: pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -132,7 +132,7 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:12
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:61
+#: pyvista.plotting.helpers.plot:66
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.clip:27
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -1586,15 +1586,15 @@ msgstr "Jupyterノートブックプロットバックエンドのキーワー�
 #: pyvista.plotting.helpers.plot:49
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:49
-msgid "Plot specific theme."
+msgid "Plot-specific theme."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:51
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:51
-msgid "See help(Plotter.add_mesh) for additional options."
-msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh) を参照してください．"
+msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -1602,14 +1602,12 @@ msgstr "その他のオプションについては，ヘルプ (Plotter.add_mesh
 #: pyvista.plotting.helpers.plot:54
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized:"
-"   [Window height x Window width x 3] for transparent_background=False   "
-"[Window height x Window width x 4] for transparent_background=True   "
-"Returned only when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values.   Sized:    * [Window height x Window width x 3] if the theme sets"
+"     ``transparent_background=False``.   * [Window height x Window width x "
+"4] if the theme sets     ``transparent_background=True``.    Returned only "
+"when ``screenshot=True``."
 msgstr ""
-"* **cpos** (*list*) --カメラ位置，焦点，ビューアップのリスト．* **img** (*numpy.ndarray*) -- "
-"ピクセルRGBおよびアルファを含む配列．サイズ: [窓の高さx窓の幅x 3] for transparent_background=False "
-"[窓の高さ×窓の幅×4] は transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -1624,19 +1622,39 @@ msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアッ
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:55
 msgid ""
-"**img** (*numpy.ndarray*) -- Array containing pixel RGB and alpha.  Sized: "
-"[Window height x Window width x 3] for transparent_background=False [Window "
-"height x Window width x 4] for transparent_background=True Returned only "
-"when screenshot enabled"
+"**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
+" values. Sized:"
 msgstr ""
-"**img** (*numpy.ndarray*) -- ピクセルRGBおよびアルファを含む配列．Sized:[窓の高さx窓の幅x 3] for "
-"transparent_background=False [窓の高さ×窓の幅×4] は "
-"transparent_background=Trueスクリーンショットが有効な場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:62
+#: pyvista.plotting.helpers.plot:58
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:62
+#: pyvista.plotting.helpers.plot:58
+msgid ""
+"[Window height x Window width x 3] if the theme sets "
+"``transparent_background=False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:60
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:60
+msgid ""
+"[Window height x Window width x 4] if the theme sets "
+"``transparent_background=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:63
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:63
+msgid "Returned only when ``screenshot=True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:67
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
 msgstr ""
 
