@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-19 00:51+0000\n"
+"POT-Creation-Date: 2021-05-20 00:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,6 +451,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.extract_surface:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.merge:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.sample_over_line:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.surface_indices:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.warp_by_vector:0
@@ -530,6 +532,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.extract_surface:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.merge:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.sample_over_line:0
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.surface_indices:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.warp_by_vector:0
@@ -3353,13 +3356,16 @@ msgstr ""
 msgid "The coordinates of a start and end point for a line source. This will override the sphere and start_position point source."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:37
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:82
-msgid "This produces polylines as the output, with each cell (i.e., polyline) representing a streamline. The attribute values associated with each streamline are stored in the cell data, whereas those associated with streamline-points are stored in the point data."
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:36
+msgid "* **streamlines** (*pyvista.PolyData*) -- This produces polylines as the output, with each cell   (i.e., polyline) representing a streamline. The attribute values   associated with each streamline are stored in the cell data, whereas   those associated with streamline-points are stored in the point data. * **source** (*pyvista.PolyData*) -- The points of the source are the seed points for the streamlines.   Only returned if ``return_source=True``."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:42
-msgid "The points of the source are the seed points for the streamlines. Only returned if ``return_source=True``."
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:36
+msgid "**streamlines** (*pyvista.PolyData*) -- This produces polylines as the output, with each cell (i.e., polyline) representing a streamline. The attribute values associated with each streamline are stored in the cell data, whereas those associated with streamline-points are stored in the point data."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines:40
+msgid "**source** (*pyvista.PolyData*) -- The points of the source are the seed points for the streamlines. Only returned if ``return_source=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:3
@@ -3521,12 +3527,8 @@ msgstr ""
 msgid "This can be used to scale the rate with which the streamribbons twist. The default is 1."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:84
-msgid "streamlines"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:None
-msgid "pyvista.PolyData"
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.streamlines_from_source:79
+msgid "**streamlines** -- This produces polylines as the output, with each cell (i.e., polyline) representing a streamline. The attribute values associated with each streamline are stored in the cell data, whereas those associated with streamline-points are stored in the point data."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.surface_indices:3
