@@ -50,3 +50,9 @@ html_theme = 'alabaster'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+locale_dirs = ["."]   # path is example but recommended.
+gettext_compact = False     # optional.
+
+# To specify names to enable gettext extracting and translation applying for i18n additionally. You can specify below names:
+gettext_additional_targets = ['raw']
