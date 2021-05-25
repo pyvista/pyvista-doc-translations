@@ -2793,6 +2793,8 @@ msgid ""
 "Clip any PyVista dataset by a :class:`pyvista.PolyData` surface mesh using "
 "the :func:`pyvista.DataSetFilters.clip_surface` filter."
 msgstr ""
+":func:`pyvista.DataSetFilters.clip_surface` フィルタを使用して "
+":class:`pyvista.PolyData` サーフェスメッシュによってPyVistaデータセットをクリップします．"
 
 #: ../../pyvista/docs/examples/01-filter/clipping-with-surface.rst:27
 msgid ""
@@ -2823,6 +2825,9 @@ msgid ""
 "surface mesh via the :func:`pyvista.DataSetFilters.clip_surface` filter. "
 "This will triangulate/tessellate the mesh geometries along the clip."
 msgstr ""
+":func:`pyvista.DataSetFilters.clip_surface` フィルタを介して "
+":class:`pyvista.PolyData` "
+"サーフェスメッシュを使用して，直線グリッドデータセットをクリップします．これにより，クリップに沿ってメッシュジオメトリが三角形化/面分割されます．"
 
 #: ../../pyvista/docs/examples/01-filter/clipping-with-surface.rst:217
 msgid ""
@@ -2898,10 +2903,11 @@ msgid ""
 "compute the normals along its cell faces, and extract the faces that face "
 "upward."
 msgstr ""
+"面/セル法線を使用して，一般的な方向を向いているメッシュのすべての面を抽出することもできます．次のスニペットでは，メッシュを取得し，そのセル面に沿って法線を計算し，上向きの面を抽出します．"
 
 #: ../../pyvista/docs/examples/01-filter/compute-normals.rst:173
 msgid "**Total running time of the script:** ( 0 minutes  25.229 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  25.229 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/compute-normals.rst:188
 msgid ""
@@ -4437,7 +4443,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:20.212** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:20.212** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)"
@@ -4446,7 +4452,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:11
 msgid "00:20.212"
-msgstr ""
+msgstr "00:20.212"
 
 #: ../../pyvista/docs/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -4957,7 +4963,7 @@ msgstr "統合可能なベクトルフィールドを含むサンプルデータ
 msgid ""
 "Run the stream line filtering algorithm using random seed points inside a "
 "sphere with radius of 2.0."
-msgstr ""
+msgstr "半径2.0の球内のランダムなシード点を使用して、流線フィルタリングアルゴリズムを実行します。"
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:98
 msgid ""
@@ -4981,6 +4987,8 @@ msgid ""
 "inlet surface is extracted just inside the domain for use as the seed for "
 "the streamlines."
 msgstr ""
+"流入口が利用可能な場合などは、 `streamlines_from_source` "
+"フィルタを使用してソースメッシュを提供することもできます。この例では、流入口を領域のすぐ内側に抽出し、流線の始点として使用します。"
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:258
 msgid "Kitchen"
@@ -4992,7 +5000,7 @@ msgstr "カスタム3 Dベクトルフィールド"
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:401
 msgid "**Total running time of the script:** ( 0 minutes  20.212 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  20.212 seconds)"
 
 #: ../../pyvista/docs/examples/01-filter/streamlines.rst:416
 msgid ""
@@ -5762,6 +5770,8 @@ msgid ""
 "is not enabled by default in ``pyvista.global_theme`` as some operating "
 "systems and versions of VTK have issues with this routine."
 msgstr ""
+"深さのピーリングは，半透明のジオメトリを正しくレンダーするテクニックです．いくつかのオペレーティングシステムとVTKのバージョンはこのルーチンで問題があるので，"
+" ``pyvista.global_theme`` ではデフォルトで有効になっていません．"
 
 #: ../../pyvista/docs/examples/02-plot/depth-peeling.rst:28
 msgid ""
@@ -5787,7 +5797,7 @@ msgstr "次に，多くの半透明のコンタサーフェスをレンダリン
 
 #: ../../pyvista/docs/examples/02-plot/depth-peeling.rst:214
 msgid "**Total running time of the script:** ( 0 minutes  52.703 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  52.703 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/depth-peeling.rst:229
 msgid ""
@@ -7191,7 +7201,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:8
 msgid "**01:20.512** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**01:20.512** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:11
 msgid ""
@@ -7201,7 +7211,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:11
 msgid "00:52.703"
-msgstr ""
+msgstr "00:52.703"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)"
@@ -7209,7 +7219,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_topo-map.py` (``topo-map.py``)"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:13
 msgid "00:17.732"
-msgstr ""
+msgstr "00:17.732"
 
 #: ../../pyvista/docs/examples/02-plot/sg_execution_times.rst:15
 msgid ":ref:`sphx_glr_examples_02-plot_themes.py` (``themes.py``)"
@@ -7698,17 +7708,17 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:22
 msgid "Control Global and Local Plotting Themes"
-msgstr ""
+msgstr "グローバルおよびローカルプロットテーマの制御"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:24
 msgid ""
 "PyVista allows you to set global and local plotting themes to easily set "
 "default plotting parameters."
-msgstr ""
+msgstr "PyVistaでは、グローバルなプロットテーマとローカルなプロットテーマを設定して、デフォルトのプロットパラメータを簡単に設定できます。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:43
 msgid "Define a simple plotting routine for comparing the themes."
-msgstr ""
+msgstr "主題を比較するための単純なプロットルーチンを定義する．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:69
 msgid ""
@@ -7718,12 +7728,14 @@ msgid ""
 " not drastically change the brightness of your screen when working in dark "
 "environments."
 msgstr ""
+"PyVistaのデフォルトのカラーテーマは，一般的に見やすいように選択されており，視覚化プロジェクトで長時間作業する場合に最適です．グレーの背景と暖色のカラーマップは，暗い環境で作業しているときに3"
+" Dレンダリングによって画面の明るさが大幅に変化しないように選択されています．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:75
 msgid ""
 "Here's an example of our default plotting theme - this is what you would see"
 " by default after running any of our examples locally."
-msgstr ""
+msgstr "デフォルトのプロットテーマの例を次に示します． - これは，ローカルでサンプルを実行した後にデフォルトで表示されるテーマです．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:99
 msgid "PyVista also ships with a few plotting themes:"
@@ -7732,32 +7744,32 @@ msgstr "PyVistaにはいくつかのプロットテーマも付属していま�
 #: ../../pyvista/docs/examples/02-plot/themes.rst:101
 msgid ""
 "``'ParaView'``: this is designed to mimic ParaView's default plotting theme."
-msgstr ""
+msgstr "``'ParaView'``: これは，ParaViewの既定のプロットテーマを模倣するように設計されています．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:102
 msgid ""
 "``'dark'``: this is designed to be night-mode friendly with dark backgrounds"
 " and color schemes."
-msgstr ""
+msgstr "``'dark'``: 暗い背景とカラースキームを使用して，夜間モードに適した設計になっています．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:103
 msgid ""
 "``'document'``: this is built for use in document style plotting and making "
 "publication quality figures."
-msgstr ""
+msgstr "``'document'``: これは，文書スタイルのプロットおよび文書品質図の作成に使用するために作成されています．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:107
 msgid "Demo the ``'ParaView'`` theme."
-msgstr ""
+msgstr "``'ParaView'`` テーマのデモ．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:132
 msgid "Demo the ``'dark'`` theme."
-msgstr ""
+msgstr "``'dark'`` テーマのデモ．"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:156
 msgid ""
 "Demo the ``'document'`` theme.  This theme is used on our online examples."
-msgstr ""
+msgstr "``'document'`` テーマのデモを行います。このテーマは、オンラインの例で使用されています。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:180
 msgid ""
@@ -7767,7 +7779,7 @@ msgstr "プロットウィンドウの背景には，カラーグラデーショ
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:209
 msgid "Modifying the Global Theme"
-msgstr ""
+msgstr "グローバル・テーマの変更"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:210
 msgid ""
@@ -7813,7 +7825,7 @@ msgstr ""
 msgid ""
 "Here, we create a dark theme that plots meshes red by default while showing "
 "edges."
-msgstr ""
+msgstr "ここでは、エッジを表示しながら既定でメッシュを赤でプロットする暗いテーマを作成します。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:416
 msgid "Creating a Custom Theme and Applying it to a Single Plotter"
@@ -7843,7 +7855,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:498
 msgid "**Total running time of the script:** ( 0 minutes  6.156 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  6.156 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:513
 msgid ":download:`Download Python source code: themes.py <themes.py>`"
@@ -7965,6 +7977,29 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>436733</td></tr>\n"
+"<tr><td>N Points</td><td>222110</td></tr>\n"
+"<tr><td>X Bounds</td><td>1.818e+06, 1.825e+06</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.645e+06, 5.653e+06</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.381e+03, 2.787e+03</td></tr>\n"
+"<tr><td>N Arrays</td><td>2</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>1.381e+03</td><td>2.787e+03</td></tr>\n"
+"<tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:160
 msgid "Now display it! Note that the imagery is aligned as we expect."
@@ -7982,7 +8017,7 @@ msgstr "また，周辺領域を抽出し，テクスチャマッピングされ
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:266
 msgid "**Total running time of the script:** ( 0 minutes  17.732 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  17.732 seconds)"
 
 #: ../../pyvista/docs/examples/02-plot/topo-map.rst:281
 msgid ":download:`Download Python source code: topo-map.py <topo-map.py>`"
@@ -8417,7 +8452,7 @@ msgstr "以下はユーザ対話型のスクリーンショットです"
 
 #: ../../pyvista/docs/examples/03-widgets/line-widget.rst:108
 msgid "**Total running time of the script:** ( 0 minutes  0.967 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.967 seconds)"
 
 #: ../../pyvista/docs/examples/03-widgets/line-widget.rst:123
 msgid ""
@@ -8562,7 +8597,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:8
 msgid "**00:00.967** total execution time for **examples_03-widgets** files:"
-msgstr ""
+msgstr "**00:00.967** total execution time for **examples_03-widgets** files:"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:11
 msgid ""
@@ -8572,7 +8607,7 @@ msgstr ""
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:11
 msgid "00:00.967"
-msgstr ""
+msgstr "00:00.967"
 
 #: ../../pyvista/docs/examples/03-widgets/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
@@ -10874,6 +10909,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista allows you to set "
 "global and local plotting themes to easily set default plotting param...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista allows you to set "
+"global and local plotting themes to easily set default plotting param...\">"
 
 #: ../../pyvista/docs/examples/index.rst:1740
 msgid ":ref:`sphx_glr_examples_02-plot_themes.py`"
