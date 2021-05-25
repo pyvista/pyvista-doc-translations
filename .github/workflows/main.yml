@@ -63,10 +63,10 @@ jobs:
         (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
-        mv ./pyvista/docs/examples ./locale
+        cp -r ./pyvista/docs/examples ./locale
         ls ./pyvista/docs/images
         rm -Rf ./locale/images
-        mv ./pyvista/docs/images ./locale
+        cp -r ./pyvista/docs/images ./locale
         deactivate
     - name: pyvista-doc-ja
       run: |
