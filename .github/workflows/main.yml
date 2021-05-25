@@ -78,7 +78,7 @@ jobs:
         sleep 3
         set +x
         git submodule update --remote
-        (cd pyvista; make -C docs html)
+        (cd pyvista; make -C docs html SPHINXOPTS="-D language=ja -D locale_dirs='../../locale'")
         deactivate
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
