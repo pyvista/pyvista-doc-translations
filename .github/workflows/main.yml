@@ -27,12 +27,6 @@ jobs:
       with:
         fetch-depth: 0
         submodules: true
-        path: pyvista-doc-translations
-    - name: Checkout other repo
-      uses: actions/checkout@v2
-      with:
-        repository: tkoyama010/pyvista-docs-dev-ja
-        path: pyvista-docs-dev-ja
     - name: Setup SSH
       uses: MrSquaare/ssh-setup-action@v1
       with:
