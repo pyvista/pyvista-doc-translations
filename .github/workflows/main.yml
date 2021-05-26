@@ -96,7 +96,6 @@ jobs:
         deactivate
         cd ../
     - name: pyvista-docs-dev-ja
-      github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
         cd pyvista-docs-dev-ja
         rm -rf *
