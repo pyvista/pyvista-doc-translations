@@ -63,7 +63,7 @@ jobs:
         (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
         sh ./locale/update.sh
         ls ./pyvista/docs/examples
-        cp -r ./pyvista/docs/examples ./locale
+        mv ./pyvista/docs/examples ./locale
         ls ./pyvista/docs/images
         rm -Rf ./locale/images
         cp -r ./pyvista/docs/images ./locale
