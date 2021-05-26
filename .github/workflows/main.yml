@@ -48,7 +48,9 @@ jobs:
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
-        pip install -r ./pyvista-doc-translations/requirements.txt
+        cd pyvista-doc-translations
+        pip install -r ./requirements.txt
+        cd ../
         deactivate
     - name: update
       env:
