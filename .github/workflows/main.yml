@@ -95,6 +95,9 @@ jobs:
         (cd pyvista; make -C docs html SPHINXOPTS="-D language=ja -D locale_dirs='../../locale'")
         deactivate
         cd ../
+    - name: pyvista-docs-dev-ja
+      github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      run: |
         cd pyvista-docs-dev-ja
         rm -rf *
         mv ../pyvista-doc-translations/pyvista/docs/_build/html/* .
