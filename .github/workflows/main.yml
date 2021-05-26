@@ -50,7 +50,6 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
-        cd pyvista-doc-translations
         source /home/runner/work/.venv/bin/activate
         set -x
         export DISPLAY=:99.0
