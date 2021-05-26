@@ -1,5 +1,5 @@
 .. raw:: html
 
     <script type="text/javascript">
-        window.location.replace('https://pyvista.github.io/pyvista-docs-dev');
+        window.location.replace('https://tkoyama010.github.io/pyvista-doc/ja');
     </script>
