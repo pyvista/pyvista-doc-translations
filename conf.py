@@ -1,88 +1,58 @@
-# basedir is set by <lang>/conf.py
-"""
-Use "-D language=<LANG>" option to build a localized pyvista document.
-For example::
+# Configuration file for the Sphinx documentation builder.
+#
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-    sphinx-build -D language=ja -b html . _build/html
+# -- Path setup --------------------------------------------------------------
 
-This conf.py do:
-
-- Specify `locale_dirs` and `gettext_compact`.
-- Overrides source directory as 'pyvista/docs`.
-
-"""
-import os
-import shutil
-import sys
-
-from sphinx.util.pycompat import execfile_
-
-sys.path.append(os.path.join(os.path.dirname(__file__), "./pyvista/docs"))
-
-os.environ["PYVISTA_VIRTUAL_DISPLAY"] = "True"
-os.environ["PYVISTA_OFF_SCREEN"] = "true"
-os.environ["PYVISTA_USE_PANEL"] = "true"
-os.environ["PYVISTA_PLOT_THEME"] = "document"
-os.environ["PYVISTA_AUTO_CLOSE"] = "false"
-
-autodoc_mock_imports = ["vtk"]
-shutil.rmtree("pyvista/docs/examples", ignore_errors=True)
-shutil.copytree("locale/examples", "pyvista/docs/examples")
-shutil.rmtree("pyvista/docs/images/auto-generated", ignore_errors=True)
-shutil.copytree("locale/images/auto-generated", "pyvista/docs/images/auto-generated")
-
-basedir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pyvista/docs")
-
-execfile_(os.path.join(basedir, "conf.py"), globals())
-
-# TODO: Fix RTD error (#78).
-extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.napoleon',
-              'sphinx.ext.doctest',
-              'sphinx.ext.autosummary',
-              'notfound.extension',
-              'sphinx_copybutton',
-              'sphinx_gallery.gen_gallery',
-              'sphinx.ext.extlinks',
-              'sphinx.ext.coverage',
-              ]
-
-locale_dirs = [os.path.join(basedir, "../../locale/")]
-
-sphinx_gallery_conf = {
-    "plot_gallery": "False",
-    "gallery_dirs": "examples",
-}
-
-html_static_path = [os.path.join(basedir, "_static")]
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 
 
-def setup(app):
-    AutoAutoSummary.app = app
-    app.add_directive("autoautosummary", AutoAutoSummary)
-    app.add_css_file("style.css")
-    app.add_css_file("copybutton.css")
+# -- Project information -----------------------------------------------------
 
-    from sphinx.ext.autodoc import cut_lines
-    from sphinx.util.docfields import GroupedField
+project = 'pyvista-doc-translations'
+copyright = '2021, Tetsuo Koyama'
+author = 'Tetsuo Koyama'
 
-    app.srcdir = basedir
-    app.confdir = app.srcdir
-    app.connect("autodoc-process-docstring", cut_lines(4, what=["module"]))
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )
-    fdesc = GroupedField(
-        "parameter", label="Parameters", names=["param"], can_collapse=True
-    )
 
-    # workaround for RTD
-    from sphinx.util import logging
+# -- General configuration ---------------------------------------------------
 
-    logger = logging.getLogger(__name__)
-    app.info = lambda *args, **kwargs: logger.info(*args, **kwargs)
-    app.warn = lambda *args, **kwargs: logger.warning(*args, **kwargs)
-    app.debug = lambda *args, **kwargs: logger.debug(*args, **kwargs)
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+extensions = [
+]
+
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ['_templates']
+
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_theme = 'alabaster'
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+
+locale_dirs = ["."]   # path is example but recommended.
+gettext_compact = False     # optional.
+
+# To specify names to enable gettext extracting and translation applying for i18n additionally. You can specify below names:
+gettext_additional_targets = ['raw']
