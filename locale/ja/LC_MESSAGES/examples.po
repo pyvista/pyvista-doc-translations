@@ -7788,12 +7788,17 @@ msgid ""
 "theme.  You can also control individual parameters how all meshes are "
 "displayed by default via ``pyvista.global_theme``."
 msgstr ""
+"``mesh.plot(show_edges=True)`` "
+"などのプロット時に個々のパラメータを設定するか、グローバルテーマを設定することで、メッシュの表示方法を制御できます。 "
+"``pyvista.global_theme`` を使用して、既定ですべてのメッシュを表示する方法を個々のパラメータでコントロールすることもできます。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:215
 msgid ""
 "Here, we print out the current global defaults for all ``pyvista`` meshes.  "
 "These values have been changed by the previous \"Document\" theme."
 msgstr ""
+"ここでは、すべての ``pyvista`` メッシュの現在のグローバルデフォルトを出力します。これらの値は、以前の \"Document\" "
+"テーマによって変更されています。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:322
 msgid ""
@@ -7801,6 +7806,8 @@ msgid ""
 "plotting a mesh via ``show_edges=True``.  You can change this default "
 "behavior globally by changing the default parameter."
 msgstr ""
+"デフォルトでは、 ``show_edges=True`` "
+"を介してメッシュをプロットする際に明示的に指定しない限り、エッジはメッシュ上に表示されません。デフォルトのパラメータを変更することで、このデフォルトの動作をグローバルに変更できます。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:349
 msgid ""
@@ -7810,16 +7817,20 @@ msgid ""
 "theme applied changes the global plot defaults stored within "
 "``pyvista.global_theme.``"
 msgstr ""
+"pyvistaをデフォルトの動作にリセットするには、 ``restore_defaults`` "
+"を使用します。図形の色は、ドキュメントテーマのデフォルトの色 \"黄褐色\" ではなく、デフォルトの色 \"白\" "
+"にリセットされたことに注意してください。内部的には、適用された各テーマは、 ``pyvista.global_theme`` "
+"内に格納されたグローバルデフォルトプロットを変更します。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:378
 msgid "Creating a Custom Theme and Applying it Globally"
-msgstr ""
+msgstr "カスタム・テーマの作成とグローバルな適用"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:379
 msgid ""
 "You can create a custom theme by modifying one of the existing themes and "
 "then loading it into the global plotting defaults."
-msgstr ""
+msgstr "既存のテーマの1つを修正し、それをグローバルプロットのデフォルトにロードすることで、カスタムテーマを作成できます。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:382
 msgid ""
@@ -7829,7 +7840,7 @@ msgstr "ここでは、エッジを表示しながら既定でメッシュを赤
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:416
 msgid "Creating a Custom Theme and Applying it to a Single Plotter"
-msgstr ""
+msgstr "カスタムテーマを作成して単一のプロッタに適用する"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:417
 msgid ""
@@ -7838,20 +7849,22 @@ msgid ""
 "behavior of the global \"defaults\", which are still set to the modified "
 "``DarkTheme``."
 msgstr ""
+"この例では、ベースの \"default\" テーマからカスタムテーマを作成し、それを単一のプロッタに適用します。  これは変更された "
+"``DarkTheme`` に設定されたままのグローバル \"default\" の動作を変えないことに注意してください。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:422
 msgid ""
 "This approach carries the advantage that you can maintain several themes and"
 " apply them to one or more plotters."
-msgstr ""
+msgstr "この方法には、複数のテーマを管理し、1つまたは複数のプロッタに適用できるという利点があります。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:455
 msgid "Alternatively, set the theme of an instance of ``Plotter``."
-msgstr ""
+msgstr "または、 ``Plotter`` のインスタンスのテーマを設定します。"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:481
 msgid "Reset to use the document theme"
-msgstr ""
+msgstr "ドキュメントのテーマを使用するにはリセット"
 
 #: ../../pyvista/docs/examples/02-plot/themes.rst:498
 msgid "**Total running time of the script:** ( 0 minutes  6.156 seconds)"
