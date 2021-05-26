@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'pyvista'
+project = 'pyvista-doc-translations'
 copyright = '2021, Tetsuo Koyama'
 author = 'Tetsuo Koyama'
 
