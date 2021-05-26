@@ -83,18 +83,3 @@ jobs:
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
         git push github master
-        cd ../
-    - name: pyvista-docs-dev-ja
-      run: |
-        mv pyvista-doc-translations/pyvista/docs/_build/html .
-        cd pyvista-doc-translations
-        git checkout gh-pages
-        rm -Rf ja
-        mv ../html ja
-        git config --global user.email $GITHUB_REPOSITORY
-        git config --global user.name $GITHUB_REPOSITORY
-        git add .
-        git commit --allow-empty -m "[ci skip] $JOB_ID
-        $HTML_URL"
-        git push origin gh-pages
-        cd ../
