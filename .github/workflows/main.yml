@@ -22,11 +22,17 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         job_name: script
-    - name: checkout with submodule
+    - name: Checkout with submodule
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
         submodules: true
+        path: pyvista-doc-translations
+    - name: Checkout other repo
+      uses: actions/checkout@v2
+      with:
+      repository: tkoyama010/pyvista-docs-dev-ja
+        path: pyvista-docs-dev-ja
     - name: Setup SSH
       uses: MrSquaare/ssh-setup-action@v1
       with:
@@ -42,7 +48,7 @@ jobs:
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
-        pip install -r ./requirements.txt
+        pip install -r ./pyvista-doc-translations/requirements.txt
         deactivate
     - name: update
       env:
@@ -50,6 +56,7 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
+        cd pyvista-doc-translations
         source /home/runner/work/.venv/bin/activate
         set -x
         export DISPLAY=:99.0
@@ -68,8 +75,13 @@ jobs:
         rm -Rf ./locale/images
         cp -r ./pyvista/docs/images ./locale
         deactivate
+        cd ../
     - name: pyvista-doc-ja
+      env:
+        JOB_ID: ${{ steps.jobs.outputs.job_id }}
+        HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
+        cd pyvista-doc-translations
         source /home/runner/work/.venv/bin/activate
         set -x
         export DISPLAY=:99.0
@@ -80,6 +92,17 @@ jobs:
         git submodule update --remote
         (cd pyvista; make -C docs html SPHINXOPTS="-D language=ja -D locale_dirs='../../locale'")
         deactivate
+        cd ../
+        cd pyvista-docs-dev-ja
+        rm -rf *
+        mv ../pyvista-doc-translations/pyvista/docs/_build/html/* .
+        git config --global user.email $GITHUB_REPOSITORY
+        git config --global user.name $GITHUB_REPOSITORY
+        git add .
+        git commit --allow-empty -m "[ci skip] $JOB_ID
+        $HTML_URL"
+        git push origin master
+        cd ../
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
       env:
