@@ -74,7 +74,6 @@ jobs:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
       run: |
-        cd pyvista-doc-translations
         git config --global user.email $GITHUB_REPOSITORY
         git config --global user.name $GITHUB_REPOSITORY
         git add .
