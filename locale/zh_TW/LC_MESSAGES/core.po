@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-20 00:47+0000\n"
+"POT-Creation-Date: 2021-06-02 02:16+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -136,6 +136,8 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.compute_implicit_distance:15
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:28
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:50
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.plot_over_circular_arc:38
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -553,6 +555,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.streamlines:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.texture_map_to_plane:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.texture_map_to_sphere:0
@@ -768,6 +772,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.merge:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample_over_line:0
@@ -919,6 +925,8 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.extract_points:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_surface:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.merge:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -2763,9 +2771,7 @@ msgstr ""
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:1
-msgid ""
-"Copy a geometric representation (called a glyph) to every point in the input"
-" dataset."
+msgid "Copy a geometric representation (called a glyph) to the input dataset."
 msgstr ""
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -3716,7 +3722,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.extract_all_edges:5
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:39
+#: pyvista.core.filters.DataSetFilters.glyph:43
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.interpolate:42
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4206,26 +4212,32 @@ msgstr ""
 msgid ""
 "The glyph may be oriented along the input vectors, and it may be scaled "
 "according to scalar data or vector magnitude. Passing a table of glyphs to "
-"choose from based on scalars or vector magnitudes is also supported."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:8
-msgid "Use the active vectors array to orient the glyphs"
+"choose from based on scalars or vector magnitudes is also supported.  The "
+"arrays used for ``orient`` and ``scale`` must be either both point data or "
+"both cell data."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:10
-msgid "Use the active scalars to scale the glyphs"
+msgid ""
+"If ``True``, use the active vectors array to orient the glyphs. If string, "
+"the vector array to use to orient the glyphs."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:12
-msgid "Scale factor applied to scaling array"
+#: pyvista.core.filters.DataSetFilters.glyph:13
+msgid ""
+"If ``True``, use the active scalars to scale the glyphs. If string, the "
+"scalar array to use to scale the glyphs."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:14
+#: pyvista.core.filters.DataSetFilters.glyph:16
+msgid "Scale factor applied to scaling array."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:18
 msgid ""
 "The geometry to use for the glyph. If missing, an arrow glyph is used. If a "
 "sequence, the datasets inside define a table of geometries to choose from "
@@ -4235,7 +4247,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:21
+#: pyvista.core.filters.DataSetFilters.glyph:25
 msgid ""
 "Specifies the index of each glyph in the table for lookup in case ``geom`` "
 "is a sequence. If given, must be the same length as ``geom``. If missing, a "
@@ -4244,31 +4256,43 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:27
+#: pyvista.core.filters.DataSetFilters.glyph:31
 msgid ""
 "Specify tolerance in terms of fraction of bounding box length. Float value "
 "is between 0 and 1. Default is None. If ``absolute`` is ``True`` then the "
-"tolerance can be an absolute distance. If None, points merging as a "
+"tolerance can be an absolute distance. If ``None``, points merging as a "
 "preprocessing step is disabled."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:32
+#: pyvista.core.filters.DataSetFilters.glyph:36
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.clean:23
 msgid "Control if ``tolerance`` is an absolute distance or a fraction."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:34
-msgid "Turn on/off clamping of \"scalar\" values to range."
+#: pyvista.core.filters.DataSetFilters.glyph:38
+msgid "Turn on/off clamping of \"scalar\" values to range. Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.glyph:36
+#: pyvista.core.filters.DataSetFilters.glyph:40
 msgid ""
 "Set the range of values to be considered by the filter when scalars values "
 "are provided."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:46
+msgid "**glyphs** -- Glyphs at either the cell centers or points."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.glyph:51
+msgid ""
+"Create arrow glyphs oriented by vectors and scaled by scalars. Factor "
+"parameter is used to reduce the size of the arrows."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -4308,9 +4332,8 @@ msgstr ""
 #: pyvista.core.filters.DataSetFilters.interpolate:18
 msgid ""
 "If given, specifies the number of the closest points used to form the "
-"interpolation basis. This will invalidate the radius and sharpness arguments"
-" in favor of an N closest points approach. This typically has poorer "
-"results."
+"interpolation basis. This will invalidate the radius argument in favor of an"
+" N closest points approach. This typically has poorer results."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -5018,7 +5041,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.streamlines:14
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:16
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:12
 msgid "The string name of the active vector field to integrate across."
 msgstr ""
 
@@ -5102,52 +5125,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:13
-msgid "source"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-msgid "pyvista.DataSet"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:12
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:9
 msgid ""
 "The points of the source provide the starting points of the streamlines.  "
 "This will override both sphere and line sources."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:16
-msgid "vectors"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-msgid "str, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:22
-msgid "integrator_type"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-msgid "int, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:19
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:14
 msgid ""
 "The integrator type to be used for streamline generation. The default is "
 "Runge-Kutta45. The recognized solvers are: RUNGE_KUTTA2 (``2``),  "
@@ -5156,12 +5141,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:27
-msgid "integration_direction"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:25
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:19
 msgid ""
 "Specify whether the streamline is integrated in the upstream or downstream "
 "directions (or both). Options are ``'both'``, ``'backward'``, or "
@@ -5169,46 +5149,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:30
-msgid "surface_streamlines"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-msgid "bool, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:30
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:23
 msgid "Compute streamlines on a surface. Default ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:36
-msgid "initial_step_length"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_sourceNone
-msgid "float, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:33
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:25
 msgid ""
 "Initial step size used for line integration, expressed ib length unitsL or "
 "cell length units (see ``step_unit`` parameter). either the starting size "
@@ -5217,12 +5163,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:41
-msgid "step_unit"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:39
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:30
 msgid ""
 "Uniform integration step unit. The valid unit is now limited to only "
 "LENGTH_UNIT (``'l'``) and CELL_LENGTH_UNIT (``'cl'``). Default is "
@@ -5230,89 +5171,49 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:45
-msgid "min_step_length"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:44
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:34
 msgid ""
 "Minimum step size used for line integration, expressed in length or cell "
 "length units. Only valid for an adaptive integrator, e.g., RK45."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:49
-msgid "max_step_length"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:48
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:37
 msgid ""
 "Maximum step size used for line integration, expressed in length or cell "
 "length units. Only valid for an adaptive integrator, e.g., RK45."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:53
-msgid "max_steps"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:52
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:40
 msgid ""
 "Maximum number of steps for integrating a streamline. Defaults to ``2000``"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:56
-msgid "terminal_speed"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:56
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:43
 msgid "Terminal speed value, below which integration is terminated."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:59
-msgid "max_error"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:59
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:45
 msgid "Maximum error tolerated throughout streamline integration."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:62
-msgid "max_time"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:62
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:47
 msgid "Specify the maximum length of a streamline expressed in LENGTH_UNIT."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:66
-msgid "compute_vorticity"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:65
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:49
 msgid ""
 "Vorticity computation at streamline points (necessary for generating proper "
 "stream-ribbons using the ``vtkRibbonFilter``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:73
-msgid "interpolator_type"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:69
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:52
 msgid ""
 "Set the type of the velocity field interpolator to locate cells during "
 "streamline integration either by points or cells. The cell locator is more "
@@ -5321,19 +5222,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:77
-msgid "rotation_scale"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:76
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:58
 msgid ""
 "This can be used to scale the rate with which the streamribbons twist. The "
 "default is 1."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.streamlines_from_source:79
+#: pyvista.core.filters.DataSetFilters.streamlines_from_source:62
 msgid ""
 "**streamlines** -- This produces polylines as the output, with each cell "
 "(i.e., polyline) representing a streamline. The attribute values associated "
