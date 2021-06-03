@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 02:16+0000\n"
+"POT-Creation-Date: 2021-06-03 01:55+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -45,6 +45,10 @@ msgid ""
 "wheels for Raspberry Pi (64-bit OS), Python 3.9 Linux, and EGL support "
 "(``arch64`` and ``x86_64``)."
 msgstr ""
+"ビルトイン wheel が必要な場合は、 `pyvista Release 0.31.0 "
+"<https://github.com/pyvista/pyvista/releases/tag/0.31.0>`_ でさまざまなビルトイン wheel"
+" (EGLを含む)を見ることができます。これにはRaspberry Pi (64ビットOS) 、Python3.9 Linux、EGLサポート ( "
+"``arch64`` と ``x86_64`` ) 用の wheel が含まれています。"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:19
 msgid "Wheels on Linux and Mac OS"
@@ -60,35 +64,42 @@ msgid ""
 "feedstock/blob/master/recipe/build.sh>`__. Most of the ones below are "
 "designed to reduce the build time and resulting wheel size."
 msgstr ""
+"Linux上でソースからVTKを構築するのはかなり簡単です．デフォルトのビルド設定を使用し，次のスクリプトを使用して ``ninja`` "
+"を使用し，VTKのPythonホイールをビルドします．このスクリプトはpython "
+"3を使用していますが，最新のPythonバージョンを使用することができます．その他の便利なオプションについては， `conda-forge recipe"
+" <https://github.com/conda-forge/vtk-"
+"feedstock/blob/master/recipe/build.sh>`__ "
+"を参照してください．以下のほとんどのオプションは，構築時間を短縮し，ホイールサイズを小さくするように設計されています．"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:64
+#: ../../pyvista/docs/extras/building_vtk.rst:69
 msgid "Off-Screen Plotting GPU Support"
 msgstr "オフスクリーンプロットのGPUサポート"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:65
+#: ../../pyvista/docs/extras/building_vtk.rst:70
 msgid ""
-"VTK supports rendering with EGL, enabling rapid off-screen using GPU "
-"hardware acceleration.  The default VTK wheels are not built with this "
-"feature, but you can build VTK for off-screen plotting using GPU support by "
-"modifying the above ``cmake`` command with:"
+"VTK supports rendering with EGL, enabling rapid off-screen rendering using "
+"GPU hardware acceleration without installing a virtual framebuffer.  The "
+"default VTK wheels are not built with this feature, but you can build VTK "
+"for off-screen plotting using GPU support by modifying the above ``cmake`` "
+"command with:"
 msgstr ""
 
-#: ../../pyvista/docs/extras/building_vtk.rst:80
+#: ../../pyvista/docs/extras/building_vtk.rst:86
 msgid ""
 "This disables any plotting using the X server, so be prepared to use this "
 "module only on a headless display where you either intend to save static "
 "images or stream the render window to another computer with a display (e.g "
 "using ``pyvista.set_jupyter_backend('ipyvtklink')`` and jupyterlab). In "
 "other words, this wheel will make VTK unusable outside of an off-screen "
-"environment, so only plan on installing it on a headless system without a X "
-"server."
+"environment, so only plan on installing it on a headless system without an X"
+" server."
 msgstr ""
 
-#: ../../pyvista/docs/extras/building_vtk.rst:90
+#: ../../pyvista/docs/extras/building_vtk.rst:96
 msgid "Building ManyLinux Wheels"
-msgstr ""
+msgstr "ManyLinux wheel の構築"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:91
+#: ../../pyvista/docs/extras/building_vtk.rst:97
 msgid ""
 "The above directions are great for building a local build of VTK, but these "
 "wheels are difficult to share outside your local install given issues with "
@@ -96,52 +107,58 @@ msgid ""
 "work around this by building your wheels using a `manylinux "
 "<https://github.com/pypa/manylinux>`_ docker image."
 msgstr ""
+"上記の方向性はVTKのローカルビルドを構築するのに適していますが、これらのwheelは、それらが構築されたLinuxのバージョンによるABI互換性の問題を考えると、ローカルインストールの外部で共有することは困難です。これを回避するには、"
+" `manylinux <https://github.com/pypa/manylinux>`_ "
+"のdockerイメージを使ってwheelをビルドします。"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:156
+#: ../../pyvista/docs/extras/building_vtk.rst:163
 msgid "This script can be called with:"
-msgstr ""
-
-#: ../../pyvista/docs/extras/building_vtk.rst:166
-msgid ""
-"To build the EGL version of the wheel, follow the directions in the previous"
-" section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
-msgstr ""
-
-#: ../../pyvista/docs/extras/building_vtk.rst:172
-msgid "Python VTK Wheel on Raspberry PI (64-bit)"
-msgstr ""
+msgstr "このスクリプトは、次のコマンドで呼び出すことができます:"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:173
 msgid ""
-"While it's possible to build on 32-bit Raspberry Pi (ARMv7), there's several"
-" issues that crop up when building wheels for the 32-bit version (see "
-"`manylinux issue 84 <https://github.com/pypa/manylinux/issues/84>`_.  Should"
-" you attempt to build on 32-bit , attempt to build the wheel using "
-"`dockcross <https://github.com/dockcross/dockcross>`_ as you may run into "
-"memory limitations otherwise (especially with only 1 GB RAM)."
+"To build the EGL version of the wheel, follow the directions in the previous"
+" section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
+msgstr "EGLバージョンのwheelを作成するには、前のセクションの指示に従ってください。インストール依存関係にAAAAAを追加します。"
+
+#: ../../pyvista/docs/extras/building_vtk.rst:179
+msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
 msgstr ""
 
 #: ../../pyvista/docs/extras/building_vtk.rst:180
 msgid ""
+"While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
+"several issues that crop up when building wheels for the 32-bit version (see"
+" `manylinux issue 84 <https://github.com/pypa/manylinux/issues/84>`_).  "
+"Should you attempt to build on 32-bit, try building the wheel using "
+"`dockcross <https://github.com/dockcross/dockcross>`_ as you may run into "
+"memory limitations otherwise (especially with only 1 GB RAM)."
+msgstr ""
+
+#: ../../pyvista/docs/extras/building_vtk.rst:188
+msgid ""
 "Building the ``aarch64`` manylinux wheel can be done via docker with the "
 "``quay.io/pypa/manylinux2014_aarch64`` image.  Run the following:"
 msgstr ""
+"``aarch64``  manylinux wheel のビルドは、 ``quay.io/pypa/manylinux2014_aarch64`` "
+"イメージを使ったDockerで行うことができます。以下を実行します:"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:190
+#: ../../pyvista/docs/extras/building_vtk.rst:199
 msgid "Where ``build_wheels.sh`` is:"
-msgstr ""
+msgstr "ここで、 ``build_wheels.sh`` は次のようになります:"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:253
+#: ../../pyvista/docs/extras/building_vtk.rst:262
 msgid ""
 "Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
 "you want ``EGL`` enabled for your wheel."
 msgstr ""
+"wheelで ``EGL`` を有効にするかどうかに応じて、 ``DVTK_OPENGL_HAS_EGL`` を有効または無効にしてください。"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:258
+#: ../../pyvista/docs/extras/building_vtk.rst:267
 msgid "Building VTK on Windows"
 msgstr "WindowsでのVTKの構築"
 
-#: ../../pyvista/docs/extras/building_vtk.rst:259
+#: ../../pyvista/docs/extras/building_vtk.rst:268
 msgid ""
 "Please reference the directions at `Building VTK with Windows "
 "<https://vtk.org/Wiki/VTK/Configure_and_Build#On_Windows_5>`_.  This is "
