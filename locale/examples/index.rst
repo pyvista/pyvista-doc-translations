@@ -947,6 +947,48 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Perlin noise is atype of gradient noise often used by visual effects artists to increase the ap...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_2d_thumb.png
+     :alt: Sample Function: Perlin Noise in 2D
+
+     :ref:`sphx_glr_examples_01-filter_sampling_functions_2d.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/sampling_functions_2d
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Video games like Minecraft use Perlin noise to create terrain.  Here, we create a voxelized mes...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_3d_thumb.png
+     :alt: Sample Function: Perlin Noise in 3D
+
+     :ref:`sphx_glr_examples_01-filter_sampling_functions_3d.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/sampling_functions_3d
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Extract thin planar slices from a volume">
 
 .. only:: html

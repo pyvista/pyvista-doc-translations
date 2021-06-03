@@ -2932,7 +2932,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:1
 msgid "Copy a geometric representation (called a glyph) to the input dataset."
-msgstr ""
+msgstr "入力データセットに(グリフと呼ばれる)ジオメトリ表示をコピーします．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -4525,6 +4525,8 @@ msgid ""
 "arrays used for ``orient`` and ``scale`` must be either both point data or "
 "both cell data."
 msgstr ""
+"グリフは，入力ベクトルに沿って配向されてもよく，スカラーデータまたはベクトルの大きさに従ってスケーリングされてもよいです．スカラーまたはベクトルの大きさに基づいて選択するグリフのテーブルを渡すこともできます．"
+" ``orient`` および ``scale`` に使用される配列は、両方の点データまたは両方のセルデータでなければなりません。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:10
@@ -4532,6 +4534,8 @@ msgid ""
 "If ``True``, use the active vectors array to orient the glyphs. If string, "
 "the vector array to use to orient the glyphs."
 msgstr ""
+"``True`` "
+"の場合、グリフを方向付けるためにアクティブなベクトル配列を使用する。stringの場合は、グリフの向きを設定するために使用するベクトル配列です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:13
@@ -4539,11 +4543,12 @@ msgid ""
 "If ``True``, use the active scalars to scale the glyphs. If string, the "
 "scalar array to use to scale the glyphs."
 msgstr ""
+"``True`` の場合は、アクティブなスカラを使用してグリフをスケーリングします。stringの場合は、グリフのスケーリングに使用するスカラ配列です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:16
 msgid "Scale factor applied to scaling array."
-msgstr ""
+msgstr "スケーリング配列に適用されるスケール係数です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:18
@@ -4577,6 +4582,8 @@ msgid ""
 "tolerance can be an absolute distance. If ``None``, points merging as a "
 "preprocessing step is disabled."
 msgstr ""
+"公差を境界ボックスの長さの分数で指定してください．float値は0から1の間です．デフォルトはNoneです．``absolute`` が "
+"``True`` の場合，公差は絶対距離になります． ``None`` の場合，前処理ステップとしてマージするポイントは無効になります．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:36
@@ -4588,7 +4595,7 @@ msgstr "``tolerance`` が絶対距離か分数かをコントロールします�
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:38
 msgid "Turn on/off clamping of \"scalar\" values to range. Default ``False``."
-msgstr ""
+msgstr "範囲指定する \"scalar\" 値のクランプのオンとオフを切り替えます．デフォルトは ``False`` です。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:40
@@ -4600,14 +4607,14 @@ msgstr "スカラー値が指定された場合にフィルタが考慮する値
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:46
 msgid "**glyphs** -- Glyphs at either the cell centers or points."
-msgstr ""
+msgstr "**glyphs** -- セルの中心または点にあるグリフ。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.glyph:51
 msgid ""
 "Create arrow glyphs oriented by vectors and scaled by scalars. Factor "
 "parameter is used to reduce the size of the arrows."
-msgstr ""
+msgstr "ベクトルによって方向付けられ、スカラーによってスケールされた矢印を作成します。係数パラメータを使用して、矢印のサイズを小さくします。"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.interpolate:3
@@ -4653,6 +4660,7 @@ msgid ""
 "interpolation basis. This will invalidate the radius argument in favor of an"
 " N closest points approach. This typically has poorer results."
 msgstr ""
+"指定した場合，補間ベースを形成するために使用される最も近いポイントの数を指定します．これにより，N個の最近接ポイントを使用する代わりに，radius引数が無効になります．通常，この方法では結果が悪くなります．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.interpolate:23
