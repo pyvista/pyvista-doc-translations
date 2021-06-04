@@ -83,6 +83,8 @@ msgid ""
 "for off-screen plotting using GPU support by modifying the above ``cmake`` "
 "command with:"
 msgstr ""
+"VTKはEGLを使用したレンダリングをサポートしており，仮想フレームバッファをインストールせずにGPUハードウェアアクセラレーションを使用して迅速なオフスクリーンレンダリングを可能にします．デフォルトのVTKホイールにはこの機能はありませんが、上記の"
+" ``cmake`` コマンドを次のように変更することで、GPUサポートを使用したオフスクリーンVTKを作成できます。"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:86
 msgid ""
@@ -94,6 +96,9 @@ msgid ""
 "environment, so only plan on installing it on a headless system without an X"
 " server."
 msgstr ""
+"これにより，Xサーバを使用したすべてのプロットが無効になるため，このモジュールは，静止イメージを保存するか，またはレンダーウィンドウをディスプレイ(例:"
+" ``pyvista.set_jupyter_backend('ipyvtklink')`` "
+"とjupyterlab)とともに別のコンピュータにストリーミングする予定のあるヘッドレスディスプレイでのみ使用するようにしてください．言い換えれば，このホイールはVTKをスクリーン外の環境では使えなくするので，Xサーバのないヘッドレスシステムにインストールすることだけを計画してください．"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:96
 msgid "Building ManyLinux Wheels"
@@ -123,7 +128,7 @@ msgstr "EGLバージョンのwheelを作成するには、前のセクション�
 
 #: ../../pyvista/docs/extras/building_vtk.rst:179
 msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
-msgstr ""
+msgstr "Raspberry Pi上のPython VTK Wheel(64ビット)構築"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:180
 msgid ""
@@ -134,6 +139,11 @@ msgid ""
 "`dockcross <https://github.com/dockcross/dockcross>`_ as you may run into "
 "memory limitations otherwise (especially with only 1 GB RAM)."
 msgstr ""
+"32ビット版Raspberry Pi(ARMv7)で構築することは可能だが、32ビット版のホイールを構築する際にはいくつかの問題が生じます( "
+"`manylinux issue 84 <https://github.com/pypa/manylinux/issues/84>`_ "
+"を参照)。32ビットで構築しようとする場合は、 `dockcross "
+"<https://github.com/dockcross/dockcross>`_ "
+"を使ってwheelを構築してみてください。そうしないとメモリの制限が生じる可能性があります(特に1GBのRAMしかない場合)。"
 
 #: ../../pyvista/docs/extras/building_vtk.rst:188
 msgid ""

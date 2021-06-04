@@ -158,14 +158,15 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-74
+.. GENERATED FROM PYTHON SOURCE LINES 64-75
 
 .. code-block:: default
 
     boundary = mesh.decimate_boundary().extract_all_edges()
 
+    sargs=dict(vertical=True, title_font_size=16)
     p = pv.Plotter()
-    p.add_mesh(streamlines.tube(radius=0.2), lighting=False)
+    p.add_mesh(streamlines.tube(radius=0.2), lighting=False, scalar_bar_args=sargs)
     p.add_mesh(src)
     p.add_mesh(boundary, color="grey", opacity=0.25)
     p.camera_position = [(10, 9.5, -43), (87.0, 73.5, 123.0), (-0.5, -0.7, 0.5)]
@@ -193,38 +194,57 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-79
+.. GENERATED FROM PYTHON SOURCE LINES 76-81
 
-A source mesh can also be provided using the `streamlines_from_source` 
+A source mesh can also be provided using the 
+:func:`pyvista.DataSetFilters.streamlines_from_source` 
 filter, for example if an inlet surface is available.  In this example, the
 inlet surface is extracted just inside the domain for use as the seed for
 the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-87
+.. GENERATED FROM PYTHON SOURCE LINES 81-90
 
 .. code-block:: default
-
 
 
     source_mesh = mesh.slice('z', origin=(0, 0, 182))  # inlet surface
     # thin out ~40% points to get a nice density of streamlines
     seed_mesh = source_mesh.decimate_boundary(0.4)
     streamlines = mesh.streamlines_from_source(seed_mesh, integration_direction="forward")
+    # print *only* added arrays from streamlines filter
+    print("Added arrays from streamlines filter:")
+    print([array_name for array_name in streamlines.array_names if array_name not in mesh.array_names])
 
 
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    Added arrays from streamlines filter:
+    ['IntegrationTime', 'Vorticity', 'Rotation', 'AngularVelocity', 'Normals', 'ReasonForTermination', 'SeedIds']
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-96
+.. GENERATED FROM PYTHON SOURCE LINES 91-92
+
+Plot streamlines colored by the time along the streamlines.
+
+.. GENERATED FROM PYTHON SOURCE LINES 92-104
 
 .. code-block:: default
 
+
+    sargs=dict(vertical=True, title_font_size=16)
     p = pv.Plotter()
-    p.add_mesh(streamlines.tube(radius=0.2), lighting=False)
+    p.add_mesh(streamlines.tube(radius=0.2),
+               scalars="IntegrationTime", clim=[0, 1000], lighting=False,
+               scalar_bar_args=sargs)
     p.add_mesh(boundary, color="grey", opacity=0.25)
     p.add_mesh(source_mesh, color="red")
     p.camera_position = [(10, 9.5, -43), (87.0, 73.5, 123.0), (-0.5, -0.7, 0.5)]
@@ -252,13 +272,13 @@ the streamlines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-100
+.. GENERATED FROM PYTHON SOURCE LINES 105-108
 
 Kitchen
 +++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-105
+.. GENERATED FROM PYTHON SOURCE LINES 108-113
 
 .. code-block:: default
 
@@ -274,7 +294,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-108
+.. GENERATED FROM PYTHON SOURCE LINES 114-116
 
 .. code-block:: default
 
@@ -287,7 +307,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-117
+.. GENERATED FROM PYTHON SOURCE LINES 117-125
 
 .. code-block:: default
 
@@ -320,13 +340,13 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-121
+.. GENERATED FROM PYTHON SOURCE LINES 126-129
 
 Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-138
+.. GENERATED FROM PYTHON SOURCE LINES 129-146
 
 .. code-block:: default
 
@@ -354,7 +374,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-142
+.. GENERATED FROM PYTHON SOURCE LINES 147-150
 
 .. code-block:: default
 
@@ -368,7 +388,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 143-145
+.. GENERATED FROM PYTHON SOURCE LINES 151-153
 
 .. code-block:: default
 
@@ -398,7 +418,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.212 seconds)
+   **Total running time of the script:** ( 0 minutes  25.464 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:
