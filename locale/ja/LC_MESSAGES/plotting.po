@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.30.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-04 01:40+0000\n"
+"POT-Creation-Date: 2021-06-05 01:16+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -520,7 +520,7 @@ msgstr "ボリュームレンダリングには ``add_volume`` 方式を使用�
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:32
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:30
+#: pyvista.plotting.plotting.Plotter.show:39
 msgid ""
 "Deprecated.  Instead, set the backend either globally with "
 "``pyvista.set_jupyter_backend('ipyvtklink')`` or with "
@@ -532,7 +532,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:34
+#: pyvista.plotting.plotting.Plotter.show:43
 msgid ""
 "Jupyter notebook plotting backend to use.  One of the following:  * "
 "``'none'`` : Do not display in the notebook. * ``'static'`` : Display a "
@@ -548,42 +548,42 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:34
+#: pyvista.plotting.plotting.Plotter.show:43
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
 msgstr "Jupyterノートブックが使用するバックエンドをプロットしています．次のいずれかです:"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:37
+#: pyvista.plotting.plotting.Plotter.show:46
 msgid "``'none'`` : Do not display in the notebook."
 msgstr "``'none'`` : ノートブックに表示しない．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:38
+#: pyvista.plotting.plotting.Plotter.show:47
 msgid "``'static'`` : Display a static figure."
 msgstr "``'static'`` : 静的図形を表示します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:39
+#: pyvista.plotting.plotting.Plotter.show:48
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
 msgstr "``'ipygany'`` : ``ipygany`` ウィジェットを表示する"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:40
+#: pyvista.plotting.plotting.Plotter.show:49
 msgid "``'panel'`` : Show a ``panel`` widget."
 msgstr "``'panel'`` : ``panel`` ウィジェットを表示します．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:44
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:42
+#: pyvista.plotting.plotting.Plotter.show:51
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
 msgstr "これは ``pyvista.set_jupyter_backend`` でグローバルに設定することもできます．"
 
@@ -669,15 +669,15 @@ msgid ""
 "4] if the theme sets     ``transparent_background=True``.    Returned only "
 "when ``screenshot=True``."
 msgstr ""
-"* **cpos** (*list*) -- カメラ位置、焦点、およびビューアップのリスト。 * **img** (*numpy.ndarray*) "
-"-- ピクセルRGB値とオプションのアルファ値を含む配列です。サイズ: * [ウィンドウの高さxウィンドウの幅x3] テーマが "
-"``transparent_background=False`` に設定されている場合。 *[ウィンドウの高さxウィンドウの幅x4] テーマが "
-"``transparent_background=True`` に設定されている場合。 ``screenshot=True`` の場合にのみ返されます。"
+"* **cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト． * **img** (*numpy.ndarray*) "
+"-- ピクセルRGB値とオプションのアルファ値を含む配列です．サイズ: * [ウィンドウの高さxウィンドウの幅x3] テーマが "
+"``transparent_background=False`` に設定されている場合． *[ウィンドウの高さxウィンドウの幅x4] テーマが "
+"``transparent_background=True`` に設定されている場合． ``screenshot=True`` の場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:49
+#: pyvista.plotting.plotting.Plotter.show:58
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
 msgstr "**cpos** (*list*) -- カメラ位置，焦点，およびビューアップのリスト．"
@@ -692,25 +692,25 @@ msgstr "**img** (*numpy.ndarray*) -- ピクセルRGBと，オプションでア�
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:58
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:54
+#: pyvista.plotting.plotting.Plotter.show:63
 msgid ""
 "[Window height x Window width x 3] if the theme sets "
 "``transparent_background=False``."
-msgstr "[ウィンドウの高さxウィンドウの幅x3]テーマが ``transparent_background=False`` に設定されている場合。"
+msgstr "[ウィンドウの高さxウィンドウの幅x3]テーマが ``transparent_background=False`` に設定されている場合．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:60
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:56
+#: pyvista.plotting.plotting.Plotter.show:65
 msgid ""
 "[Window height x Window width x 4] if the theme sets "
 "``transparent_background=True``."
-msgstr "[ウィンドウの高さxウィンドウの幅x4]テーマが ``transparent_background=True`` に設定されている場合。"
+msgstr "[ウィンドウの高さxウィンドウの幅x4]テーマが ``transparent_background=True`` に設定されている場合．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:63
 msgid "Returned only when ``screenshot=True``."
-msgstr "``screenshot=True`` の場合にのみ返されます。"
+msgstr "``screenshot=True`` の場合にのみ返されます．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:66
@@ -740,7 +740,7 @@ msgstr "``screenshot=True`` の場合にのみ返されます。"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:4
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.screenshot:17
+#: pyvista.plotting.plotting.BasePlotter.screenshot:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:19
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -752,7 +752,7 @@ msgstr "``screenshot=True`` の場合にのみ返されます。"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.where_is:10
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:61
+#: pyvista.plotting.plotting.Plotter.show:70
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:40
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -765,7 +765,7 @@ msgstr "例"
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
-msgstr "単純な球のエッジを表示しながらプロットします。"
+msgstr "単純な球のエッジを表示しながらプロットします．"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:1
@@ -858,8 +858,8 @@ msgid ""
 "Theme name.  Either ``'default'``, ``'document'``, ``'dark'``, or "
 "``'paraview'``."
 msgstr ""
-"テーマ名。 ``'default'`` 、 ``'document'`` 、 ``'dark'`` 、または ``'paraview'`` "
-"のいずれかです。"
+"テーマ名． ``'default'`` ， ``'document'`` ， ``'dark'`` ，または ``'paraview'`` "
+"のいずれかです．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.set_plot_theme:9
 msgid "Set to the default theme."
@@ -1101,7 +1101,7 @@ msgstr ":obj:`theme `\\"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.theme:1
 msgid "Return or set the theme used for this plotter."
-msgstr "このプロッタで使用するテーマを返すか設定します。"
+msgstr "このプロッタで使用するテーマを返すか設定します．"
 
 #: ../../pyvista/docs/plotting/plotting.rst:172:<autosummary>:1
 msgid ":obj:`window_size <pyvista.BasePlotter.window_size>`\\"
@@ -4066,7 +4066,7 @@ msgstr "``opacity``: 0から1の ``float`` ，エッジ透過性"
 msgid ""
 "``feature_angle``: If a ``float``, display sharp edges exceeding that angle "
 "in degrees."
-msgstr "``feature_angle``:  ``float`` の場合は、角度を超える鋭いエッジを度単位で表示します。"
+msgstr "``feature_angle``:  ``float`` の場合は，角度を超える鋭いエッジを度単位で表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:158
@@ -4858,6 +4858,7 @@ msgid ""
 "Sets the size of the title font.  Defaults to ``None`` and is sized "
 "according to ``pyvista.global_theme``."
 msgstr ""
+"タイトルフォントのサイズを設定します．デフォルトはNoneで，サイズは ``pyvista.global_theme`` に沿って変更されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
@@ -4866,58 +4867,60 @@ msgid ""
 "example:  * ``color='white'`` * ``color='w'`` * ``color=[1, 1, 1]`` * "
 "``color='#FFFFFF'``"
 msgstr ""
+"文字列，RGBリスト，または16進カラー文字列．デフォルトはwhiteです．例: * ``color='white'`` * ``color='w'``"
+" * ``color=[1, 1, 1]`` * ``color='#FFFFFF'``"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:21
 msgid ""
 "Either a string, rgb list, or hex color string.  Defaults to white. For "
 "example:"
-msgstr ""
+msgstr "文字列，RGBリスト，または16進カラー文字列．デフォルトはwhiteです．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:29
 msgid "Font family.  Default is set by ``pyvista.global_theme``."
-msgstr ""
+msgstr "フォントファミリ．デフォルトは ``pyvista.global_theme`` によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:31
 msgid "Adds a black shadow to the text.  Defaults to ``False``."
-msgstr ""
+msgstr "テキストに黒い影を追加します．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:33
 msgid ""
 "The percentage (0 to 1) width of the window for the colorbar. Default set by"
 " ``pyvista.global_theme``."
-msgstr ""
+msgstr "カラーバーのウィンドウ幅の割合(0から1)．デフォルトは ``pyvista.global_theme`` によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:36
 msgid ""
 "The percentage (0 to 1) height of the window for the colorbar. Default set "
 "by ``pyvista.global_theme``."
-msgstr ""
+msgstr "カラーバーのウィンドウ高さの割合(0から1)．デフォルトは ``pyvista.global_theme`` によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:39
 msgid ""
 "The percentage (0 to 1) along the windows's horizontal direction to place "
 "the bottom left corner of the colorbar. Default is automatic placement."
-msgstr ""
+msgstr "カラーバーの左下隅を配置するためのウィンドウの水平方向に沿ったパーセンテージ(0から1)．デフォルトは自動配置です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:43
 msgid ""
 "The percentage (0 to 1) along the windows's vertical direction to place the "
 "bottom left corner of the colorbar. Default is automatic placement."
-msgstr ""
+msgstr "カラーバーの左下隅を配置するためのウィンドウの垂直方向に沿ったパーセンテージ(0から1)．デフォルトは自動配置です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:47
 msgid ""
 "Use vertical or horizontal scalar bar. Default set by "
 "``pyvista.global_theme``."
-msgstr ""
+msgstr "垂直または水平のスカラーバーを使用します．デフォルトは ``pyvista.global_theme`` によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:50
@@ -4925,16 +4928,18 @@ msgid ""
 "Use a widget to control the size and location of the scalar bar. Default set"
 " by ``pyvista.global_theme``."
 msgstr ""
+"スカラーバーのサイズと位置を制御するには，ウィジェットを使用します．デフォルトは ``pyvista.global_theme`` "
+"によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:53
 msgid "``printf`` format for labels. Default set by ``pyvista.global_theme``."
-msgstr ""
+msgstr "フォントラベル．デフォルトは ``pyvista.global_theme`` によって設定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:56
 msgid "Optionally display the opacity mapping on the scalar bar."
-msgstr ""
+msgstr "必要に応じて，スカラーバーに不透明度マッピングを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:58
@@ -4945,17 +4950,17 @@ msgstr "必要に応じて，スカラーバーのアウトラインを設定し
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:61
 msgid "Annotate the NaN color."
-msgstr ""
+msgstr "NaN色に注釈を付ける．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:63
 msgid "String annotation for values below the scalars range."
-msgstr ""
+msgstr "スカラー範囲より下の値の文字列注釈．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:65
 msgid "String annotation for values above the scalars range."
-msgstr ""
+msgstr "スカラー範囲より上の値の文字列注釈．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:67
@@ -4970,7 +4975,7 @@ msgstr "スカラーバーに表示されるカラーの最大数．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:71
 msgid "Draw a filled box behind the scalar bar with the ``background_color``."
-msgstr ""
+msgstr "``background_color`` でスカラーバーの後ろに塗りつぶされたボックスを描画します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:74
@@ -5175,7 +5180,7 @@ msgid ""
 "callback must also accept an index of that widget."
 msgstr ""
 "ウィジェットが変更されたときにコールバックする関数．引数は1つだけで，球の中心が(3つの長さのシーケンス)XYZ座標になります． ``center`` "
-"パラメータで複数のcenterが渡される場合、コールバックはそのウィジェットのインデックスも受け入れる必要があります。"
+"パラメータで複数のcenterが渡される場合，コールバックはそのウィジェットのインデックスも受け入れる必要があります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:11
@@ -5220,7 +5225,7 @@ msgid ""
 "hex color string. For example:  * ``color='white'`` * ``color='w'`` * "
 "``color=[1, 1, 1]`` * ``color='#FFFFFF'``"
 msgstr ""
-"球の表面の色です。複数の中心が渡される場合、これは色のリストである必要があります。各色は文字列、RGBリストまたはHEX色文字列のいずれかです。次に例を示します:"
+"球の表面の色です．複数の中心が渡される場合，これは色のリストである必要があります．各色は文字列，RGBリストまたはHEX色文字列のいずれかです．次に例を示します:"
 " * ``color='white'`` * ``color='w'`` * ``color=[1, 1, 1]`` * "
 "``color='#FFFFFF'``"
 
@@ -5233,7 +5238,7 @@ msgid ""
 "this must be a list of colors.  Each color is either a string, rgb list, or "
 "hex color string. For example:"
 msgstr ""
-"球の表面の色です。複数の中心が渡される場合、これは色のリストである必要があります。各色は文字列、RGBリストまたはHEX色文字列のいずれかです。次に例を示します:"
+"球の表面の色です．複数の中心が渡される場合，これは色のリストである必要があります．各色は文字列，RGBリストまたはHEX色文字列のいずれかです．次に例を示します:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:33
@@ -6490,7 +6495,7 @@ msgstr "サポートされている形式は次のとおりです: '.svg', '.eps
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bar:1
 msgid "First scalar bar.  Kept for backwards compatibility."
-msgstr "最初のスカラーバー。後方互換性のために保持されています。"
+msgstr "最初のスカラーバー．後方互換性のために保持されています．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.scalar_bars:14
@@ -6499,30 +6504,56 @@ msgstr "バーのタイトルに基づいてスカラバーアクターを選択
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:3
-msgid "Location to write image to.  If None, no image is written."
-msgstr "イメージを書き込む場所．Noneの場合，イメージは書き込まれません．"
+msgid "Location to write image to.  If ``None``, no image is written."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:5
-msgid "Makes the background transparent.  Default False."
-msgstr "背景を透明にします．デフォルトはFalseです．"
+msgid ""
+"Whether to make the background transparent.  The default is looked up on the"
+" plotter's theme."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.BasePlotter.screenshot:7
+#: pyvista.plotting.plotting.BasePlotter.screenshot:8
 msgid ""
-"If a string filename is given and this is true, a NumPy array of the image "
-"will be returned."
-msgstr "文字列filenameが指定され，これがtrueの場合，イメージのNumPy配列が返されます．"
+"If ``True`` (the default), a NumPy array of the image will be returned."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:11
 msgid ""
-"**img** -- Array containing pixel RGB and alpha.  Sized: [Window height x "
-"Window width x 3] for transparent_background=False [Window height x Window "
-"width x 4] for transparent_background=True"
+"Set the plotter's size to this ``(width, height)`` before taking the "
+"screenshot."
 msgstr ""
-"**img**  -- ピクセルRGBおよびアルファを含む配列．サイズ:[窓の高さx窓の幅x 3] for "
-"transparent_background=False [窓の高さ×窓の幅×4] は transparent_background=True"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:15
+msgid ""
+"**img** -- Array containing pixel RGB and alpha.  Sized:  * [Window height x"
+" Window width x 3] if   ``transparent_background`` is set to ``False``. * "
+"[Window height x Window width x 4] if   ``transparent_background`` is set to"
+" ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:15
+msgid "**img** -- Array containing pixel RGB and alpha.  Sized:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:17
+msgid ""
+"[Window height x Window width x 3] if ``transparent_background`` is set to "
+"``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.BasePlotter.screenshot:19
+msgid ""
+"[Window height x Window width x 4] if ``transparent_background`` is set to "
+"``True``."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:10
@@ -6832,7 +6863,7 @@ msgstr "列に沿ってアクティブにするサブプロットのインデッ
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.theme:5
 msgid "Use the dark theme for a plotter."
-msgstr "プロッタにはダークテーマを使用します。"
+msgstr "プロッタにはダークテーマを使用します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.track_click_position:3
@@ -7040,8 +7071,8 @@ msgid ""
 "Window size in pixels.  Defaults to ``[1024, 768]``, unless set differently "
 "in the relevant theme's ``window_size`` property."
 msgstr ""
-"ピクセル単位のウィンドウサイズ。デフォルトは ``[1024, 768]`` です。ただし、関連するテーマの ``window_size`` "
-"プロパティで別の値が設定されている場合を除きます。"
+"ピクセル単位のウィンドウサイズ．デフォルトは ``[1024, 768]`` です．ただし，関連するテーマの ``window_size`` "
+"プロパティで別の値が設定されている場合を除きます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:43
@@ -7153,19 +7184,30 @@ msgstr "カメラの位置． ``Plotter.camera_position`` で設定すること�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:27
 msgid ""
+"Take a screenshot of the initial state of the plot. If a string, it "
+"specifies the path to which the screenshot is saved. If ``True``, the "
+"screenshot is returned as an array. Defaults to ``False``. For interactive "
+"screenshots it's recommended to first call ``show()`` with "
+"``auto_close=False`` to set the scene, then save the screenshot in a "
+"separate call to ``show()`` or ``screenshot()`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:36
+msgid ""
 "Returns a numpy array representing the last image along with the camera "
 "position."
 msgstr "最後のイメージとカメラ位置を表す数値配列を返します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:45
+#: pyvista.plotting.plotting.Plotter.show:54
 msgid ""
 "Return the jupyterlab viewer, scene, or display object when plotting with "
 "jupyter notebook."
 msgstr "jupyterlabビューア，シーン，または表示オブジェクトをjupyterノートブックでプロットする場合に返します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:49
+#: pyvista.plotting.plotting.Plotter.show:58
 msgid ""
 "* **cpos** (*list*) -- List of camera position, focal point, and view up. * "
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
@@ -7177,14 +7219,14 @@ msgid ""
 msgstr ""
 "* **cpos** (*list*) -- カメラ位置，焦点，ビューアップのリスト * **image** (*np.ndarray*) --  "
 "``return_img=True`` または ``screenshot`` が設定されている場合は，最後のイメージの数値配列． * *widget* "
-"--  ``return_viewer==True`` 時のIPythonウィジェット．オプションでアルファ値を含みます。サイズ: "
+"--  ``return_viewer==True`` 時のIPythonウィジェット．オプションでアルファ値を含みます．サイズ: "
 "*[ウィンドウの高さxウィンドウの幅x3]テーマが ``transparent_background=False`` "
-"を設定している場合。*[ウィンドウの高さxウィンドウの幅x4]テーマが "
-"``transparent_background=True``を設定している場合。**widget*-- ``return_viewer=True`` "
+"を設定している場合．*[ウィンドウの高さxウィンドウの幅x4]テーマが "
+"``transparent_background=True``を設定している場合．**widget*-- ``return_viewer=True`` "
 "の場合のIPython widget ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:50
+#: pyvista.plotting.plotting.Plotter.show:59
 msgid ""
 "**image** (*np.ndarray*) -- Numpy array of the last image when either "
 "``return_img=True`` or ``screenshot=True`` is set. Optionally contains alpha"
@@ -7194,29 +7236,30 @@ msgstr ""
 "のいずれかが設定されている場合，最後のイメージの数値配列．オプションでアルファ値を含みます．サイズ:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:58
+#: pyvista.plotting.plotting.Plotter.show:67
 msgid "*widget* -- IPython widget when ``return_viewer=True``."
 msgstr "*widget* -- ``return_viewer=True`` 時のIPythonウィジェット．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:62
-msgid "Simply show the plot."
-msgstr "プロットを表示します．"
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:66
-msgid ""
-"Take a screenshot interactively.  Screenshot will be of the last image "
-"shown."
-msgstr "対話的にスクリーンショットを撮ります．最後に表示された画像がスクリーンショットになります．"
-
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:71
+msgid "Simply show the plot of a mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:78
+msgid ""
+"Take a screenshot interactively.  Screenshot will be of the first image "
+"shown, so use the first call with ``auto_close=False`` to set the scene "
+"before taking the screenshot."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:88
 msgid "Display an ``ipygany`` scene within a jupyter notebook"
 msgstr "Jupyterノートブック内に ``ipygany`` シーンを表示します"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:75
+#: pyvista.plotting.plotting.Plotter.show:92
 msgid "Return an ``ipygany`` scene."
 msgstr "``ipygany`` シーンを返します．"
 
