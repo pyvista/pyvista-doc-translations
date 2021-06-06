@@ -6505,27 +6505,27 @@ msgstr "バーのタイトルに基づいてスカラバーアクターを選択
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:3
 msgid "Location to write image to.  If ``None``, no image is written."
-msgstr ""
+msgstr "イメージを書き込む場所．Noneの場合，イメージは書き込まれません．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:5
 msgid ""
 "Whether to make the background transparent.  The default is looked up on the"
 " plotter's theme."
-msgstr ""
+msgstr "背景を透明にするかどうかを指定します．既定値は，プロッタのテーマで検索されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:8
 msgid ""
 "If ``True`` (the default), a NumPy array of the image will be returned."
-msgstr ""
+msgstr "``True`` (デフォルト)の場合，イメージのNumPy配列が返されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:11
 msgid ""
 "Set the plotter's size to this ``(width, height)`` before taking the "
 "screenshot."
-msgstr ""
+msgstr "スクリーンショットを撮る前に，プロッタのサイズをこの ``(width, height)`` に設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:15
@@ -6535,11 +6535,14 @@ msgid ""
 "[Window height x Window width x 4] if   ``transparent_background`` is set to"
 " ``True``."
 msgstr ""
+"**img**  -- ピクセルRGBおよびアルファを含む配列．サイズ:[ウィンドウの高さxウィンドウの幅x 3] "
+"transparent_background False [ウィンドウの高さ×ウィンドウの幅×4] は transparent_background "
+"True"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:15
 msgid "**img** -- Array containing pixel RGB and alpha.  Sized:"
-msgstr ""
+msgstr "**img** -- ピクセルRGBと，アルファを含む配列．サイズ:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:17
@@ -6547,6 +6550,7 @@ msgid ""
 "[Window height x Window width x 3] if ``transparent_background`` is set to "
 "``False``."
 msgstr ""
+"[ウィンドウの高さxウィンドウの幅x3] ``transparent_background`` が ``False`` に設定されている場合．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:19
@@ -6554,6 +6558,7 @@ msgid ""
 "[Window height x Window width x 4] if ``transparent_background`` is set to "
 "``True``."
 msgstr ""
+"[ウィンドウの高さxウィンドウの幅x4] ``transparent_background`` が ``True`` に設定されている場合．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_background:10
@@ -7191,6 +7196,10 @@ msgid ""
 "``auto_close=False`` to set the scene, then save the screenshot in a "
 "separate call to ``show()`` or ``screenshot()`."
 msgstr ""
+"プロットの初期状態のスクリーンショットを取得します．文字列の場合は，スクリーンショットの保存先のパスを指定します． ``True`` "
+"の場合，スクリーンショットは配列として返されます．デフォルトは` ``False`` です．インタラクティブなスクリーンショットの場合は，まず "
+"``auto_close=False`` を指定して ``show()`` を呼び出してシーンを設定し，次にそのスクリーンショットを別の呼び出しで "
+"``show()`` または ``screenshot()` に保存することをお勧めします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:36
@@ -7243,7 +7252,7 @@ msgstr "*widget* -- ``return_viewer=True`` 時のIPythonウィジェット．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:71
 msgid "Simply show the plot of a mesh."
-msgstr ""
+msgstr "メッシュのプロットを表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:78
@@ -7252,6 +7261,8 @@ msgid ""
 "shown, so use the first call with ``auto_close=False`` to set the scene "
 "before taking the screenshot."
 msgstr ""
+"スクリーンショットをインタラクティブに撮影します．スクリーンショットは最初に表示されるイメージのものであるため，最初の呼び出しで "
+"``auto_close=False`` を指定してシーンを設定してから，スクリーンショットを作成してください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:88
