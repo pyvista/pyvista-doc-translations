@@ -23,7 +23,7 @@ Plot data in spherical coordinates
 
 Generate and visualize meshes from data in longitude-latitude coordinates.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-71
+.. GENERATED FROM PYTHON SOURCE LINES 7-73
 
 .. code-block:: default
 
@@ -38,15 +38,16 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
 
         Parameters
         ----------
-        points: numpy.array
-            One-dimensional array of uniformly spaced values of shape (M,)
+        points: numpy.ndarray
+            One-dimensional array of uniformly spaced values of shape (M,).
+
         bound_position: bool, optional
             The desired position of the bounds relative to the position
             of the points.
 
         Returns
         -------
-        bounds: numpy.array
+        bounds: numpy.ndarray
             Array of shape (M+1,)
 
         Examples
@@ -57,7 +58,8 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
         >>> cell_bounds(a)
         array([-1.25, -0.75, -0.25,  0.25,  0.75,  1.25,  1.75,  2.25])
         """
-        assert points.ndim == 1, "Only 1D points are allowed"
+        if points.ndim != 1:
+            raise ValueError("Only 1D points are allowed.")
         diffs = np.diff(points)
         delta = diffs[0] * bound_position
         bounds = np.concatenate([[points[0] - delta], points + delta])
@@ -98,11 +100,11 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-73
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 Create a structured grid
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-85
+.. GENERATED FROM PYTHON SOURCE LINES 75-87
 
 .. code-block:: default
 
@@ -139,12 +141,12 @@ Create a structured grid
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-88
+.. GENERATED FROM PYTHON SOURCE LINES 88-90
 
 Visualize vectors in spherical coordinates
 Vertical wind
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-129
+.. GENERATED FROM PYTHON SOURCE LINES 90-131
 
 .. code-block:: default
 
@@ -204,17 +206,17 @@ Vertical wind
  .. code-block:: none
 
 
-    [(31743.326826595137, 31709.451094173262, 31747.264326595137),
-     (-2.998046875, -36.873779296875, 0.939453125),
+    [(31575.92917307241, 31642.108128150536, 31673.18210275991),
+     (-85.474609375, -19.295654296875, 11.7783203125),
      (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-131
+.. GENERATED FROM PYTHON SOURCE LINES 132-133
 
 Isurfaces of 3D data in spherical coordinates
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-161
+.. GENERATED FROM PYTHON SOURCE LINES 133-163
 
 .. code-block:: default
 
@@ -272,7 +274,7 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.044 seconds)
+   **Total running time of the script:** ( 0 minutes  4.842 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:
