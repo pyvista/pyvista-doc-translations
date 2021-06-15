@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 01:10+0000\n"
+"POT-Creation-Date: 2021-06-15 00:45+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -214,6 +214,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.filters.PolyDataFilters.strip:43
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:33
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:48
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.tube:24
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -642,6 +644,8 @@ msgstr "視錐台を取得します．"
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.tube:0
@@ -841,6 +845,8 @@ msgstr "平面を計算するビューポートのアスペクト．デフォル
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.tube:0
@@ -984,6 +990,8 @@ msgstr "**frustum** -- 視錐台．"
 #: pyvista.core.filters.PolyDataFilters.smooth:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:0
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:0
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -3595,6 +3603,8 @@ msgstr "法線方向に沿ってクリップ値を設定します．デフォル
 #: pyvista.core.filters.PolyDataFilters.decimate_pro:28
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.smooth:23
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:41
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:5
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -6397,6 +6407,21 @@ msgstr "単一の接続された三角形メッシュ内の三角形の数を増
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""
+":obj:`subdivide_adaptive "
+"<pyvista.core.filters.pyvista.PolyDataFilters.subdivide_adaptive>`\\ "
+"\\(\\[max\\_edge\\_len\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:1
+msgid ""
+"Increase the number of triangles in a triangular mesh based on edge and/or "
+"area metrics."
+msgstr ""
+
+#: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
+msgid ""
 ":obj:`triangulate "
 "<pyvista.core.filters.pyvista.PolyDataFilters.triangulate>`\\ "
 "\\(\\[inplace\\]\\)"
@@ -7845,8 +7870,80 @@ msgstr "**mesh** -- ``pyvista`` polydata オブジェクト."
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.subdivide:39
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:54
 msgid "Alternatively, update the mesh in-place."
 msgstr "代わりに，インプレイスでメッシュを更新します．"
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:3
+msgid ""
+"This filter uses a simple case-based, multi-pass approach to repeatedly "
+"subdivide the input triangle mesh to meet the area and/or edge length "
+"criteria. New points may be inserted only on edges; depending on the number "
+"of edges to be subdivided a different number of triangles are inserted "
+"ranging from two (i.e., two triangles replace the original one) to four."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:10
+msgid ""
+"Point and cell data is treated as follows: The cell data from a parent "
+"triangle is assigned to its subdivided children. Point data is interpolated "
+"along edges as the edges are subdivided."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:15
+msgid ""
+"This filter retains mesh watertightness if the mesh was originally "
+"watertight; and the area and max triangles criteria are not used."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:19
+msgid ""
+"The maximum edge length that a triangle may have. Edges longer than this "
+"value are split in half and the associated triangles are modified "
+"accordingly."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:23
+msgid ""
+"The maximum area that a triangle may have. Triangles larger than this value "
+"are subdivided to meet this threshold. Note that if this criterion is used "
+"it may produce non-watertight meshes as a result."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:28
+msgid ""
+"The maximum number of triangles that can be created. If the limit is hit, it"
+" may result in premature termination of the algorithm and the results may be"
+" less than satisfactory (for example non-watertight meshes may be created). "
+"By default, the limit is set to a very large number (i.e., no effective "
+"limit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:35
+msgid ""
+"The maximum number of passes (i.e., levels of subdivision). If the limit is "
+"hit, then the subdivision process stops and additional passes (needed to "
+"meet other criteria) are aborted. The default limit is set to a very large "
+"number (i.e., no effective limit)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:44
+msgid "Subdivided mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.PolyDataFilters.subdivide_adaptive:45
+msgid ":class:`pyvista.PolyData`"
+msgstr ":class:`pyvista.PolyData`"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.PolyDataFilters.triangulate:3
