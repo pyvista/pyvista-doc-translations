@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-08 01:10+0000\n"
+"POT-Creation-Date: 2021-06-17 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -331,6 +331,8 @@ msgstr "vtkまたはnumpyオブジェクトをプロットします．"
 #: pyvista.plotting.picking.PickingHelper.enable_path_picking:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_point_picking:0
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.generate_orbital_path:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -733,6 +735,24 @@ msgstr "``screenshot=True`` の場合にのみ返されます．"
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:78
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:49
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:13
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:17
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:16
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:45
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:14
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:13
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_zoom_style:9
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.get_image_depth:14
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -1637,8 +1657,20 @@ msgstr ":obj:`enable_image_style <pyvista.BasePlotter.enable_image_style>`\\ \\(
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:1
-msgid "Set the interactive style to image."
-msgstr "インタラクティブスタイルをimageに設定します．"
+msgid "Set the interactive style to Image."
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
+msgid ""
+":obj:`enable_joystick_actor_style "
+"<pyvista.BasePlotter.enable_joystick_actor_style>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:1
+msgid "Set the interactive style to Joystick Actor."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1651,8 +1683,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:1
-msgid "Set the interactive style to joystick."
-msgstr "インタラクティブスタイルをジョイスティックに設定します．"
+msgid "Set the interactive style to Joystick Camera."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1696,8 +1728,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:1
-msgid "Set the interactive style to rubber band 2d."
-msgstr "インタラクティブスタイルをラバーバンド2 dに設定します．"
+msgid "Set the interactive style to Rubber Band 2D."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1710,8 +1742,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:1
-msgid "Set the interactive style to rubber band picking."
-msgstr "インタラクティブスタイルをラバーバンド選択に設定します．"
+msgid "Set the interactive style to Rubber Band Picking."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ":obj:`enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ \\(\\)"
@@ -1729,16 +1761,14 @@ msgstr "影を有効にします．"
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
 ":obj:`enable_terrain_style <pyvista.BasePlotter.enable_terrain_style>`\\ "
-"\\(\\)"
+"\\(\\[mouse\\_wheel\\_zooms\\, ...\\]\\)"
 msgstr ""
-":obj:`enable_terrain_style <pyvista.BasePlotter.enable_terrain_style>`\\ "
-"\\(\\)"
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:1
-msgid "Set the interactive style to terrain."
-msgstr "対話型スタイルを地表に設定します．"
+msgid "Set the interactive style to Terrain."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1751,8 +1781,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:1
-msgid "Set the interactive style to trackball actor."
-msgstr "インタラクティブスタイルをトラックボールアクターに設定します．"
+msgid "Set the interactive style to Trackball Actor."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1765,8 +1795,8 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:1
-msgid "Set the interactive style to trackball camera."
-msgstr "インタラクティブスタイルをトラックボールカメラに設定します．"
+msgid "Set the interactive style to Trackball Camera."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ":obj:`enable_zoom_style <pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
@@ -1775,8 +1805,8 @@ msgstr ":obj:`enable_zoom_style <pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_zoom_style:1
-msgid "Set the interactive style to rubber band zoom."
-msgstr "インタラクティブスタイルをラバーバンドズームに設定します．"
+msgid "Set the interactive style to Rubber Band Zoom."
+msgstr ""
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ":obj:`export_obj <pyvista.BasePlotter.export_obj>`\\ \\(filename\\)"
@@ -5992,7 +6022,7 @@ msgstr ""
 "ピック操作を実行するための公差を指定してください．許容値は，レンダリングウィンドウサイズの割合で指定します．レンダリングウィンドウのサイズは対角で測定されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:9
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:10
 msgid "Controls:"
 msgstr "コントロール:"
 
@@ -6013,8 +6043,8 @@ msgstr "Shift + 左マウスボタンでカメラをパン"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:7
-msgid "CTRL SHIFT Left Mouse dollys (a positional zoom) the camera"
-msgstr "Ctrl Shift+左マウスボタンでカメラをドリー(位置ズーム)します"
+msgid "CTRL SHIFT Left Mouse dollies (a positional zoom) the camera"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:8
@@ -6023,8 +6053,8 @@ msgstr "マウスの中ボタンでカメラをパン"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:9
-msgid "Right mouse button dollys the camera."
-msgstr "マウスの右ボタンでカメラをドリーします．"
+msgid "Right mouse button dollies the camera"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:10
@@ -6032,18 +6062,25 @@ msgid "SHIFT Right Mouse triggers pick events"
 msgstr "SHIFT Right Mouseトリガピックイベント"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:3
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:14
 msgid ""
-"It allows the user to move (rotate, pan, etc.) the camera, the point of view"
-" for the scene.  The position of the mouse relative to the center of the "
-"scene determines the speed at which the camera moves, and the speed of the "
-"mouse movement determines the acceleration of the camera, so the camera "
-"continues to move even if the mouse if not moving."
+"Create a simple scene with a plotter that has the Image interactive style:"
 msgstr ""
-"シーンの視点であるカメラを移動(回転，パンなど)することができます．シーンの中心に対するマウスの位置によってカメラの移動速度が決まり，マウスの移動速度によってカメラの加速度が決まるため，マウスが移動していなくてもカメラは移動し続けます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:10
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:3
+msgid ""
+"Similar to the Joystick Camera interaction style, however in case of the "
+"Joystick Actor style the objects in the scene rather than the camera can be "
+"moved (rotated, panned, etc.). The position of the mouse relative to the "
+"center of the object determines the speed at which the object moves, so the "
+"object continues to move even if the mouse is not moving."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:10
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:9
 msgid ""
 "For a 3-button mouse, the left button is for rotation, the right button for "
 "zooming, the middle button for panning, and ctrl + left button for spinning."
@@ -6051,6 +6088,29 @@ msgid ""
 "shift + left button is for panning.)"
 msgstr ""
 "3ボタンマウスの場合，左ボタンは回転用，右ボタンはズーム用，中央ボタンはパン用，Ctrl+左ボタンはスピン用です．(マウスボタンの数が少ない場合，Ctrl+Shift+左ボタンはズーム用で，Shift+左ボタンはパン用です．)"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:18
+msgid ""
+"Create a simple scene with a plotter that has the Joystick Actor interactive"
+" style:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:3
+msgid ""
+"It allows the user to move (rotate, pan, etc.) the camera, the point of view"
+" for the scene.  The position of the mouse relative to the center of the "
+"scene determines the speed at which the camera moves, so the camera "
+"continues to move even if the mouse if not moving."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:17
+msgid ""
+"Create a simple scene with a plotter that has the Joystick Camera "
+"interactive style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:3
@@ -6150,32 +6210,60 @@ msgstr "残りのキーワード引数はすべて，選択した点を対話的
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:3
 msgid ""
-"Camera rotation is not allowed with this interactor style. Zooming affects "
+"Camera rotation is not enabled with this interactor style. Zooming affects "
 "the camera's parallel scale only, and assumes that the camera is in parallel"
-" projection mode. The style also allows draws a rubber band using the left "
-"button. All camera changes invoke StartInteractionEvent when the button is "
-"pressed, InteractionEvent when the mouse (or wheel) is moved, and "
-"EndInteractionEvent when the button is released. The bindings are as "
-"follows: Left mouse - Select (invokes a SelectionChangedEvent). Right mouse "
-"- Zoom.  Middle mouse - Pan. Scroll wheel - Zoom."
+" projection mode. The style also allows to draw a rubber band using the left"
+" mouse button. All camera changes invoke ``StartInteractionEvent`` when the "
+"button is pressed, ``InteractionEvent`` when the mouse (or wheel) is moved, "
+"and ``EndInteractionEvent`` when the button is released. The bindings are as"
+" follows:"
 msgstr ""
-"このインターアクタースタイルではカメラの回転は許可されていません．ズームはカメラの平行スケールにのみ影響し，カメラが平行投影モードであることを前提としています．左ボタンで輪ゴムを引くスタイルも可能です．カメラを変更すると，ボタンを押したときにStartInteractionEventが呼び出され，マウス(またはホイール)を移動したときにInteractionEventが呼び出され，ボタンを放したときにEndInteractionEventが呼び出されます"
-"．左マウス-選択(SelectionChangedEventを呼び出す)．右マウス-ズーム．中央マウス-画面移動．スクロールホイール-ズーム．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:12
+msgid "Left mouse: Select (invokes a ``SelectionChangedEvent``)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:13
+msgid "Right mouse: Zoom."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:14
+msgid "Middle mouse: Pan."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:15
+msgid "Scroll wheel: Zoom."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:19
+msgid ""
+"Create a simple scene with a plotter that has the Rubber Band 2D interactive"
+" style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:3
 msgid ""
 "This interactor style allows the user to draw a rectangle in the render "
-"window by hitting 'r' and then using the left mouse button. When the mouse "
-"button is released, the attached picker operates on the pixel in the center "
-"of the selection rectangle. If the picker happens to be a vtkAreaPicker it "
-"will operate on the entire selection rectangle. When the 'p' key is hit the "
-"above pick operation occurs on a 1x1 rectangle. In other respects it behaves"
-" the same as its parent class."
+"window by hitting ``r`` and then using the left mouse button. When the mouse"
+" button is released, the attached picker operates on the pixel in the center"
+" of the selection rectangle. If the picker happens to be a ``vtkAreaPicker``"
+" it will operate on the entire selection rectangle. When the ``p`` key is "
+"hit the above pick operation occurs on a 1x1 rectangle. In other respects it"
+" behaves the same as the Trackball Camera style."
 msgstr ""
-"このインタラクタスタイルを使用すると， 'r' "
-"をクリックしてからマウスの左ボタンを使用して，レンダウィンドウに長方形を描画できます．マウスボタンを放すと，アタッチされたピッカーが選択長方形の中心にあるピクセルを操作します．ピッカーがvtkAreaPickerである場合は，選択長方形全体を操作します．"
-" 'p' キーを押すと，1 x 1の長方形上で上記のピック操作が行われます．その他の点では，親クラスと同じように動作します．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:15
+msgid ""
+"Create a simple scene with a plotter that has the Rubber Band Pick "
+"interactive style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:3
@@ -6183,19 +6271,111 @@ msgid ""
 "Used to manipulate a camera which is viewing a scene with a natural view up,"
 " e.g., terrain. The camera in such a scene is manipulated by specifying "
 "azimuth (angle around the view up vector) and elevation (the angle from the "
-"horizon)."
+"horizon). Similar to the default Trackball Camera style and in contrast to "
+"the Joystick Camera style, movements of the mouse translate to movements of "
+"the camera."
 msgstr ""
-"地表などの自然なビューでシーンを表示しているカメラを操作するために使用します．このようなシーンのカメラは，方位角(ビューのアップベクトルの周囲の角度びゅーのあっぷべくーくのかくど)と仰角(地平線からの角度)を指定して操作します．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:11
+msgid ""
+"Left mouse click rotates the camera around the focal point using both "
+"elevation and azimuth invocations on the camera. Left mouse motion in the "
+"horizontal direction results in azimuth motion; left mouse motion in the "
+"vertical direction results in elevation motion. Therefore, diagonal motion "
+"results in a combination of azimuth and elevation. (If the shift key is held"
+" during motion, then only one of elevation or azimuth is invoked, depending "
+"on the whether the mouse motion is primarily horizontal or vertical.) Middle"
+" mouse button pans the camera across the scene (again the shift key has a "
+"similar effect on limiting the motion to the vertical or horizontal "
+"direction. The right mouse is used to dolly towards or away from the focal "
+"point (zoom in or out). Panning and zooming behavior can be overridden to "
+"match the Trackball Camera style."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:26
+msgid ""
+"The class also supports some keypress events. The ``r`` key resets the "
+"camera. The ``e`` key invokes the exit callback and closes the plotter. The "
+"``f`` key sets a new camera focal point and flies towards that point. The "
+"``u`` key invokes the user event. The ``3`` key toggles between stereo and "
+"non-stero mode. The ``l`` key toggles on/off latitude/longitude markers that"
+" can be used to estimate/control position."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:35
+msgid ""
+"Whether to use the mouse wheel for zooming. By default zooming can be "
+"performed with right click and drag."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:38
+msgid ""
+"Whether shift + left mouse button pans the scene. By default shift + left "
+"mouse button rotates the view restricted to only horizontal or vertical "
+"movements, and panning is done holding down the middle mouse button."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:46
+msgid ""
+"Create a simple scene with a plotter that has the Terrain interactive style:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:57
+msgid "Use controls that are closer to the default style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:3
-msgid "This allows to rotate actors around the scene."
-msgstr "これにより，シーンの周囲でアクターを回転できます．"
+msgid ""
+"This allows to rotate actors around the scene. The controls are similar to "
+"the default Trackball Camera style, but movements transform specific objects"
+" under the mouse cursor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:7
+msgid ""
+"For a 3-button mouse, the left button is for rotation, the right button for "
+"zooming, the middle button for panning, and ctrl + left button for spinning "
+"objects around the axis connecting the camera with the their center.  "
+"Alternatively, shift + left button pans."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:15
+msgid ""
+"Create a simple scene with a plotter that has the Trackball Actor "
+"interactive style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:3
-msgid "The trackball camera is the default interactor style."
-msgstr "トラックボールカメラは既定のインタラクタスタイルです．"
+msgid ""
+"The trackball camera is the default interactor style. Moving the mouse moves"
+" the camera around, leaving the scene intact."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:6
+msgid ""
+"For a 3-button mouse, the left button is for rotation, the right button for "
+"zooming, the middle button for panning, and ctrl + left button for spinning "
+"the view around the vewing axis of the camera.  Alternatively, ctrl + shift "
+"+ left button or mouse wheel zooms, and shift + left button pans."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:14
+msgid ""
+"Create a simple scene with a plotter that has the Trackball Camera "
+"interactive style (which is also the default):"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_zoom_style:3
@@ -6206,6 +6386,13 @@ msgid ""
 "drawn rectangle."
 msgstr ""
 "このインタラクタスタイルを使用すると，左マウスボタンを使用してレンダウィンドウに長方形を描画できます．マウスボタンを放すと，現在のカメラは描画された長方形の短い方の辺から決定された量だけズームします．"
+
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_zoom_style:10
+msgid ""
+"Create a simple scene with a plotter that has the Rubber Band Zoom "
+"interactive style:"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.export_vtkjs:3
