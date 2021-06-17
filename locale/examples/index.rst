@@ -947,6 +947,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Rotations of a mesh about its axes. In this model, the x axis is from the left to right; the y ...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_rotate_thumb.png
+     :alt: Rotations
+
+     :ref:`sphx_glr_examples_01-filter_rotate.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/rotate
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Perlin noise is atype of gradient noise often used by visual effects artists to increase the ap...">
 
 .. only:: html

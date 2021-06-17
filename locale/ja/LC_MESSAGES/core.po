@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-15 00:45+0000\n"
+"POT-Creation-Date: 2021-06-17 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -471,6 +471,8 @@ msgstr "視錐台を取得します．"
 #: pyvista.core.dataset.DataSet.overwrite:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_x:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2214,11 +2216,19 @@ msgstr "配列名を変更するには，配列を検索して名前を変更し
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
-":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
+":obj:`rotate_vector <pyvista.DataSet.rotate_vector>`\\ \\(vector\\, "
+"angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
-":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
+
+#: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:1
+msgid "Rotate mesh about the vector."
+msgstr ""
+
+#: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
+msgid ":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
+msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2227,12 +2237,8 @@ msgid "Rotate mesh about the x-axis."
 msgstr "メッシュをX軸を中心に回転します．"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
-msgid ""
-":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
+msgid ":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
-":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2241,12 +2247,8 @@ msgid "Rotate mesh about the y-axis."
 msgstr "メッシュをY軸を中心に回転します．"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
-msgid ""
-":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
+msgid ":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
-":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, "
-"transform\\_all\\_input\\_vectors\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2478,6 +2480,42 @@ msgid "The overwriting mesh."
 msgstr "上書きするメッシュ．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:3
+msgid "Axes to rotate about."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:5
+msgid "Angle in degrees to rotate about the vector."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:7
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_x:5
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_z:5
+msgid "Point to rotate about.  Defaults to origin ``(0.0, 0.0, 0.0)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_vector:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_x:7
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_y:7
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_z:7
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.reflect:10
+#: ../../pyvista/pyvista/core/filters.pydocstring of
+#: pyvista.core.filters.DataSetFilters.transform:6
+msgid ""
+"When ``True``, all input vectors are transformed. Otherwise, only the "
+"points, normals and active vectors are transformed."
+msgstr "``True`` の時，全ての入力ベクトルは変換される．それ以外の場合は，ポイント，法線，およびアクティブなベクトルだけが変換されます．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_x:3
 msgid "Angle in degrees to rotate about the x-axis."
 msgstr "X軸を中心に回転する度単位の角度．"
@@ -2486,6 +2524,11 @@ msgstr "X軸を中心に回転する度単位の角度．"
 #: pyvista.core.dataset.DataSet.rotate_y:3
 msgid "Angle in degrees to rotate about the y-axis."
 msgstr "Y軸を中心に回転する度単位の角度．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.rotate_y:5
+msgid "Point to ratate about."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:3
@@ -5086,15 +5129,6 @@ msgid "When ``True``, modifies the dataset inplace."
 msgstr "``True`` の場合，データセットを直接変更します．"
 
 #: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.reflect:10
-#: ../../pyvista/pyvista/core/filters.pydocstring of
-#: pyvista.core.filters.DataSetFilters.transform:6
-msgid ""
-"When ``True``, all input vectors are transformed. Otherwise, only the "
-"points, normals and active vectors are transformed."
-msgstr "``True`` の時，全ての入力ベクトルは変換される．それ以外の場合は，ポイント，法線，およびアクティブなベクトルだけが変換されます．"
-
-#: ../../pyvista/pyvista/core/filters.pydocstring of
 #: pyvista.core.filters.DataSetFilters.sample:3
 msgid "This uses :class:`vtk.vtkResampleWithDataSet`."
 msgstr "これは :class:`vtk.vtkResampleWithDataSet` を使います．"
@@ -6411,6 +6445,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.PolyDataFilters.subdivide_adaptive>`\\ "
 "\\(\\[max\\_edge\\_len\\, ...\\]\\)"
 msgstr ""
+":obj:`subdivide_adaptive "
+"<pyvista.core.filters.pyvista.PolyDataFilters.subdivide_adaptive>`\\ "
+"\\(\\[max\\_edge\\_len\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters.pydocstring of
@@ -6418,7 +6455,7 @@ msgstr ""
 msgid ""
 "Increase the number of triangles in a triangular mesh based on edge and/or "
 "area metrics."
-msgstr ""
+msgstr "三角形メッシュ内の三角形の数を増やします．"
 
 #: ../../pyvista/docs/core/filters.rst:43:<autosummary>:1
 msgid ""

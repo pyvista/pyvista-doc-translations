@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-15 00:45+0000\n"
+"POT-Creation-Date: 2021-06-17 00:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,6 +291,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.get_data_range:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.overwrite:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.plotting.helpers.plot:0
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_x:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_y:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_z:0
@@ -1461,7 +1462,16 @@ msgid "Change array name by searching for the array then renaming it."
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
-msgid ":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, transform\\_all\\_input\\_vectors\\]\\)"
+msgid ":obj:`rotate_vector <pyvista.DataSet.rotate_vector>`\\ \\(vector\\, angle\\[\\, point\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:1
+msgid "Rotate mesh about the vector."
+msgstr ""
+
+#: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
+msgid ":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
@@ -1470,7 +1480,7 @@ msgid "Rotate mesh about the x-axis."
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
-msgid ":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, transform\\_all\\_input\\_vectors\\]\\)"
+msgid ":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
@@ -1479,7 +1489,7 @@ msgid "Rotate mesh about the y-axis."
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
-msgid ":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, transform\\_all\\_input\\_vectors\\]\\)"
+msgid ":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
@@ -1634,12 +1644,39 @@ msgstr ""
 msgid "The overwriting mesh."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:3
+msgid "Axes to rotate about."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:5
+msgid "Angle in degrees to rotate about the vector."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:7
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_x:5
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_z:5
+msgid "Point to rotate about.  Defaults to origin ``(0.0, 0.0, 0.0)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_vector:9
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_x:7
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_y:7
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_z:7
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.reflect:10
+#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.transform:6
+msgid "When ``True``, all input vectors are transformed. Otherwise, only the points, normals and active vectors are transformed."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_x:3
 msgid "Angle in degrees to rotate about the x-axis."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_y:3
 msgid "Angle in degrees to rotate about the y-axis."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_y:5
+msgid "Point to ratate about."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.rotate_z:3
@@ -3161,11 +3198,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.reflect:8
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.transform:10
 msgid "When ``True``, modifies the dataset inplace."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.reflect:10
-#: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.transform:6
-msgid "When ``True``, all input vectors are transformed. Otherwise, only the points, normals and active vectors are transformed."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters.py:docstring of pyvista.core.filters.DataSetFilters.sample:3
