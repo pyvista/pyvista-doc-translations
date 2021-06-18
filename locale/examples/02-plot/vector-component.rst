@@ -82,13 +82,13 @@ component argument.
     pl.add_mesh(mesh, **dargs)
     pl.add_text("Normalized Displacement", color='k')
     pl.subplot(0, 1)
-    pl.add_mesh(mesh.copy(), component=0, **dargs)
+    pl.add_mesh(mesh, component=0, **dargs)
     pl.add_text("X Displacement", color='k')
     pl.subplot(1, 0)
-    pl.add_mesh(mesh.copy(), component=1, **dargs)
+    pl.add_mesh(mesh, component=1, **dargs)
     pl.add_text("Y Displacement", color='k')
     pl.subplot(1, 1)
-    pl.add_mesh(mesh.copy(), component=2, **dargs)
+    pl.add_mesh(mesh, component=2, **dargs)
     pl.add_text("Z Displacement", color='k')
     pl.link_views()
     pl.camera_position = 'iso'
@@ -118,7 +118,7 @@ component argument.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.629 seconds)
+   **Total running time of the script:** ( 0 minutes  3.993 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_vector-component.py:
