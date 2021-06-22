@@ -52,6 +52,7 @@ jobs:
       run: |
         source /home/runner/work/.venv/bin/activate
         set -x
+        git submodule update --remote
         export DISPLAY=:99.0
         export PYVISTA_OFF_SCREEN=True
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
@@ -59,7 +60,6 @@ jobs:
         set +x
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
-        git submodule update --remote
         (cd pyvista; make -C doc html -b coverage; make -C doc doctest; make -C doc html)
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
