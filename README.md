@@ -32,7 +32,7 @@ conf.py files for each languages have 'language' and 'locale_dirs' values withou
 
 * RTD project pages for Sphinx:
 
-  * https://readthedocs.org/projects/pyvista-doc/  (Master)
+  * https://readthedocs.org/projects/pyvista-doc/  (Main)
   * https://readthedocs.org/projects/pyvista-doc-ja/
   * https://readthedocs.org/projects/pyvista-doc-zh-cn/
   * https://readthedocs.org/projects/pyvista-doc-zh-tw/
