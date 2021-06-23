@@ -4,10 +4,10 @@ on:
     - cron:  '0 0 * * *'
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   script:
     runs-on: ubuntu-latest
@@ -52,24 +52,24 @@ jobs:
       run: |
         source /home/runner/work/.venv/bin/activate
         set -x
+        git submodule update --remote
         export DISPLAY=:99.0
         export PYVISTA_OFF_SCREEN=True
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
         sleep 3
         set +x
         rm ./locale/examples/*/*.py
-        mv ./locale/examples ./pyvista/docs
-        git submodule update --remote
-        (cd pyvista; make -C docs html -b coverage; make -C docs doctest; make -C docs html)
+        mv ./locale/examples ./pyvista/doc
+        (cd pyvista; make -C doc html -b coverage; make -C doc doctest; make -C doc html)
         sh ./locale/update.sh
-        ls ./pyvista/docs/examples
-        mv ./pyvista/docs/examples ./locale
-        ls ./pyvista/docs/images
+        ls ./pyvista/doc/examples
+        mv ./pyvista/doc/examples ./locale
+        ls ./pyvista/doc/images
         rm -Rf ./locale/images
-        mv ./pyvista/docs/images ./locale
+        mv ./pyvista/doc/images ./locale
         deactivate
     - name: commit
-      if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'master')
+      if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
       env:
         JOB_ID: ${{ steps.jobs.outputs.job_id }}
         HTML_URL: ${{ steps.jobs.outputs.html_url }}
@@ -81,4 +81,4 @@ jobs:
         $HTML_URL"
         git remote -v
         git remote add github git@github.com:$GITHUB_REPOSITORY.git
-        git push github master
+        git push github main
