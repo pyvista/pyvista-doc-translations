@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:03.993** total execution time for **examples_02-plot** files:
+**00:03.653** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_vector-component.py` (``vector-component.py``)             | 00:03.993 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_vector-component.py` (``vector-component.py``)             | 00:03.653 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
