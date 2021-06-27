@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 05:31+0000\n"
+"POT-Creation-Date: 2021-06-27 00:58+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -2357,8 +2357,10 @@ msgstr "戻り値の型"
 #: pyvista.Camera.parallel_scale:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.position:4 ../../pyvista/pyvista/plotting/camera.pydocstring
-#: of pyvista.Camera.roll:6 ../../pyvista/pyvista/plotting/camera.pydocstring
-#: of pyvista.Camera.thickness:4
+#: of pyvista.plotting.camera.Camera.reset_clipping_range:4
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:6
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.Camera.thickness:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.up:4
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.view_angle:4
@@ -11176,11 +11178,16 @@ msgstr "次のいずれかです: 'butterfly', 'loop', 'linear' ．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:29
-msgid "**mesh** -- ``pyvista`` polydata object."
-msgstr "**mesh** -- ``pyvista`` polydata オブジェクト."
+msgid "Subdivided mesh."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:39
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:34
+msgid "Subdivide the sphere mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:54
 msgid "Alternatively, update the mesh in-place."
@@ -12788,7 +12795,7 @@ msgstr ":obj:`Light.switch_on <pyvista.Light.switch_on>`\\ \\(\\)"
 #: ../../pyvista/doc/api/core/points.rst:140
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:452
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:458
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:176
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:179
 msgid "Attributes"
 msgstr "アトリビュート"
 
@@ -14708,7 +14715,7 @@ msgstr "焦点を回転の中心として使用し，投影方向の負の値と
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable parallel projection."
 msgstr "平行投影を有効にします．"
 
@@ -14749,6 +14756,15 @@ msgstr "平行投影に使用されるスケーリング．"
 #: pyvista.Camera.position:1
 msgid "Position of the camera in world coordinates."
 msgstr "全体座標でのカメラの位置．"
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.reset_clipping_range:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.reset_camera_clipping_range:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
+msgid ""
+"Reset the camera clipping range based on the bounds of the visible actors."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:1
 msgid "Rotate the camera about the direction of projection."
@@ -19147,7 +19163,7 @@ msgstr "pyvista.BasePlotter.add\\_actor"
 #: pyvista.plotting.renderer.Renderer.add_actor:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add an actor to render window."
 msgstr "レンダリングウィンドウにアクターを追加します．"
 
@@ -19277,7 +19293,7 @@ msgstr "pyvista.BasePlotter.add\\_axes"
 #: pyvista.plotting.renderer.Renderer.add_axes:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add an interactive axes widget in the bottom left corner."
 msgstr "左下隅にインタラクティブ軸ウィジェットを追加します．"
 
@@ -19333,7 +19349,7 @@ msgstr "pyvista.BasePlotter.add\\_axes\\_at\\_origin"
 #: pyvista.plotting.renderer.Renderer.add_axes_at_origin:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add axes actor at origin."
 msgstr "原点に軸アクターを追加します．"
 
@@ -19407,7 +19423,7 @@ msgstr "pyvista.BasePlotter.add\\_bounding\\_box"
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add an unlabeled and unticked box at the boundaries of plot."
 msgstr "プロットの境界にラベルなしのチェックボックスを追加します．"
 
@@ -19829,7 +19845,7 @@ msgstr "pyvista.BasePlotter.add\\_floor"
 #: pyvista.plotting.renderer.Renderer.add_floor:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Show a floor mesh."
 msgstr "床メッシュを表示します．"
 
@@ -21590,7 +21606,7 @@ msgstr "pyvista.BasePlotter.add\\_orientation\\_widget"
 #: pyvista.plotting.renderer.Renderer.add_orientation_widget:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Use the given actor in an orientation marker widget."
 msgstr "方向マーカーウィジェットで指定したアクターを使用します．"
 
@@ -23189,7 +23205,7 @@ msgstr "pyvista.BasePlotter.disable"
 #: pyvista.plotting.renderer.Renderer.disable:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Disable this renderer's camera from being interactive."
 msgstr "このレンダラのカメラをインタラクティブにできないようにします．"
 
@@ -23218,7 +23234,7 @@ msgstr "pyvista.BasePlotter.disable\\_anti\\_aliasing"
 #: pyvista.plotting.renderer.Renderer.disable_anti_aliasing:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Disable anti-aliasing FXAA."
 msgstr "アンチエイリアスFXAAを無効にします．"
 
@@ -23234,7 +23250,7 @@ msgstr "pyvista.BasePlotter.disable\\_depth\\_peeling"
 #: pyvista.plotting.renderer.Renderer.disable_depth_peeling:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Disable depth peeling."
 msgstr "深度ピーリングを無効にします．"
 
@@ -23250,7 +23266,7 @@ msgstr "pyvista.BasePlotter.disable\\_eye\\_dome\\_lighting"
 #: pyvista.plotting.renderer.Renderer.disable_eye_dome_lighting:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Disable eye dome lighting (EDL)."
 msgstr "Eye-Dome Lighting (EDL) を無効にします．"
 
@@ -23266,7 +23282,7 @@ msgstr "pyvista.BasePlotter.disable\\_parallel\\_projection"
 #: pyvista.plotting.renderer.Renderer.disable_parallel_projection:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Reset the camera to use perspective projection."
 msgstr "パース投影を使用するようにカメラをリセットします．"
 
@@ -23282,7 +23298,7 @@ msgstr "pyvista.BasePlotter.disable\\_shadows"
 #: pyvista.plotting.renderer.Renderer.disable_shadows:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Disable shadows."
 msgstr "影を無効にします．"
 
@@ -23298,7 +23314,7 @@ msgstr "pyvista.BasePlotter.enable"
 #: pyvista.plotting.renderer.Renderer.enable:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable this renderer's camera to be interactive."
 msgstr "このレンダラのカメラをインタラクティブにします．"
 
@@ -23347,7 +23363,7 @@ msgstr "pyvista.BasePlotter.enable\\_anti\\_aliasing"
 #: pyvista.plotting.renderer.Renderer.enable_anti_aliasing:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable anti-aliasing FXAA."
 msgstr "アンチエイリアスFXAAを有効にします．"
 
@@ -23536,7 +23552,7 @@ msgstr "pyvista.BasePlotter.enable\\_depth\\_peeling"
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable depth peeling to improve rendering of translucent geometry."
 msgstr "デプスのピーリングを有効にすると，半透明のジオメトリのレンダリングが向上します．"
 
@@ -23581,7 +23597,7 @@ msgstr "pyvista.BasePlotter.enable\\_eye\\_dome\\_lighting"
 #: pyvista.plotting.renderer.Renderer.enable_eye_dome_lighting:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable eye dome lighting (EDL)."
 msgstr "Eye-Dome Lighting (EDL) を有効にします．"
 
@@ -24312,7 +24328,7 @@ msgstr "pyvista.BasePlotter.enable\\_shadows"
 #: pyvista.plotting.renderer.Renderer.enable_shadows:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Enable shadows."
 msgstr "影を有効にします．"
 
@@ -24649,7 +24665,7 @@ msgstr "pyvista.BasePlotter.get\\_default\\_cam\\_pos"
 #: pyvista.plotting.renderer.Renderer.get_default_cam_pos:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Return the default focal points and viewup."
 msgstr "デフォルトの焦点とビューアップを返します．"
 
@@ -24727,7 +24743,7 @@ msgstr "pyvista.BasePlotter.get\\_pick\\_position"
 #: pyvista.plotting.renderer.Renderer.get_pick_position:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Get the pick position/area as x0, y0, x1, y1."
 msgstr "選択位置/領域をx 0, y 0, x 1, y 1として取得します．"
 
@@ -24743,7 +24759,7 @@ msgstr "pyvista.BasePlotter.hide\\_axes"
 #: pyvista.plotting.renderer.Renderer.hide_axes:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Hide the axes orientation widget."
 msgstr "軸方向ウィジェットを非表示にします．"
 
@@ -24836,8 +24852,8 @@ msgstr "pyvista.BasePlotter.isometric\\_view"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Reset the camera to a default isometric view."
 msgstr "カメラを既定のアイソメビューにリセットします．"
 
@@ -24901,7 +24917,7 @@ msgstr "pyvista.BasePlotter.length"
 #: pyvista.Renderer.length:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:532:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:544:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return the length of the diagonal of the bounding box of the scene."
 msgstr "シーンのバウンディングボックスの対角線の長さを返します．"
 
@@ -25054,7 +25070,7 @@ msgstr "pyvista.BasePlotter.parallel\\_projection"
 #: pyvista.Renderer.parallel_projection:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:532:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:544:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return parallel projection state of active render window."
 msgstr "アクティブなレンダーウィンドウの平行投影状態を返します．"
 
@@ -25070,7 +25086,7 @@ msgstr "pyvista.BasePlotter.parallel\\_scale"
 #: pyvista.Renderer.parallel_scale:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:532:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:544:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return parallel scale of active render window."
 msgstr "アクティブなレンダーウィンドウの平行スケールを返します．"
 
@@ -25132,7 +25148,7 @@ msgstr "pyvista.BasePlotter.remove\\_actor"
 #: pyvista.plotting.renderer.Renderer.remove_actor:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove an actor from the Renderer."
 msgstr "レンダリングからアクターを削除します．"
 
@@ -25242,7 +25258,7 @@ msgstr "pyvista.BasePlotter.remove\\_bounding\\_box"
 #: pyvista.plotting.renderer.Renderer.remove_bounding_box:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove bounding box."
 msgstr "バウンディングボックスを削除します．"
 
@@ -25258,7 +25274,7 @@ msgstr "pyvista.BasePlotter.remove\\_bounds\\_axes"
 #: pyvista.plotting.renderer.Renderer.remove_bounds_axes:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove bounds axes."
 msgstr "境界軸を削除します．"
 
@@ -25274,7 +25290,7 @@ msgstr "pyvista.BasePlotter.remove\\_floors"
 #: pyvista.plotting.renderer.Renderer.remove_floors:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove all floor actors."
 msgstr "すべてのフロアアクターを削除します．"
 
@@ -25369,7 +25385,7 @@ msgstr "pyvista.BasePlotter.reset\\_camera"
 #: pyvista.plotting.renderer.Renderer.reset_camera:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Reset the camera of the active render window."
 msgstr "アクティブなレンダウィンドウのカメラをリセットします．"
 
@@ -25594,7 +25610,7 @@ msgstr "pyvista.BasePlotter.set\\_background"
 #: pyvista.plotting.renderer.Renderer.set_background:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Set the background color."
 msgstr "背景色を設定します．"
 
@@ -25647,7 +25663,7 @@ msgstr "pyvista.BasePlotter.set\\_environment\\_texture"
 #: pyvista.plotting.renderer.Renderer.set_environment_texture:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Set the environment texture used for image based lighting."
 msgstr "イメージベースのライティングに使用する環境テクスチャを設定します．"
 
@@ -25680,7 +25696,7 @@ msgstr "pyvista.BasePlotter.set\\_focus"
 #: pyvista.plotting.renderer.Renderer.set_focus:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Set focus to a point."
 msgstr "ポイントにフォーカスを設定します．"
 
@@ -25696,7 +25712,7 @@ msgstr "pyvista.BasePlotter.set\\_position"
 #: pyvista.plotting.renderer.Renderer.set_position:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Set camera position to a point."
 msgstr "カメラ位置をポイントに設定します．"
 
@@ -25712,7 +25728,7 @@ msgstr "pyvista.BasePlotter.set\\_scale"
 #: pyvista.plotting.renderer.Renderer.set_scale:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Scale all the datasets in the scene."
 msgstr "シーン内のすべてのデータセットをスケールします．"
 
@@ -25739,7 +25755,7 @@ msgstr "pyvista.BasePlotter.set\\_viewup"
 #: pyvista.plotting.renderer.Renderer.set_viewup:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Set camera viewup vector."
 msgstr "カメラのビューアップベクトルを設定します．"
 
@@ -25775,7 +25791,7 @@ msgstr "pyvista.BasePlotter.show\\_axes"
 #: pyvista.plotting.renderer.Renderer.show_axes:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Show the axes orientation widget."
 msgstr "軸方向ウィジェットを表示します．"
 
@@ -25804,7 +25820,7 @@ msgstr "pyvista.BasePlotter.show\\_bounds"
 #: pyvista.plotting.renderer.Renderer.show_bounds:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add bounds axes."
 msgstr "境界軸を追加します．"
 
@@ -26112,7 +26128,7 @@ msgstr "pyvista.BasePlotter.show\\_grid"
 #: pyvista.plotting.renderer.Renderer.show_grid:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Show gridlines and axes labels."
 msgstr "目盛線と軸ラベルを表示します．"
 
@@ -26381,7 +26397,7 @@ msgstr "pyvista.BasePlotter.update\\_bounds\\_axes"
 #: pyvista.plotting.renderer.Renderer.update_bounds_axes:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Update the bounds axes of the render window."
 msgstr "レンダーウィンドウの境界軸を更新します．"
 
@@ -26490,7 +26506,7 @@ msgstr "pyvista.BasePlotter.view\\_vector"
 #: pyvista.plotting.renderer.Renderer.view_vector:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Point the camera in the direction of the given vector."
 msgstr "指定したベクトルの方向にカメラを向けます．"
 
@@ -26506,7 +26522,7 @@ msgstr "pyvista.BasePlotter.view\\_xy"
 #: pyvista.plotting.renderer.Renderer.view_xy:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the XY plane."
 msgstr "XY平面を表示します．"
 
@@ -26522,7 +26538,7 @@ msgstr "pyvista.BasePlotter.view\\_xz"
 #: pyvista.plotting.renderer.Renderer.view_xz:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the XZ plane."
 msgstr "XZ平面を表示します．"
 
@@ -26538,7 +26554,7 @@ msgstr "pyvista.BasePlotter.view\\_yx"
 #: pyvista.plotting.renderer.Renderer.view_yx:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the YX plane."
 msgstr "YX平面を表示します．"
 
@@ -26554,7 +26570,7 @@ msgstr "pyvista.BasePlotter.view\\_yz"
 #: pyvista.plotting.renderer.Renderer.view_yz:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the YZ plane."
 msgstr "YZ平面を表示します．"
 
@@ -26570,7 +26586,7 @@ msgstr "pyvista.BasePlotter.view\\_zx"
 #: pyvista.plotting.renderer.Renderer.view_zx:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the ZX plane."
 msgstr "ZX平面を表示します．"
 
@@ -26586,7 +26602,7 @@ msgstr "pyvista.BasePlotter.view\\_zy"
 #: pyvista.plotting.renderer.Renderer.view_zy:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "View the ZY plane."
 msgstr "ZY平面を表示します．"
 
@@ -27505,7 +27521,7 @@ msgstr "pyvista.Renderer.actors"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.actors:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return a dictionary of actors assigned to this renderer."
 msgstr "このレンダラに割り当てられているアクターのディクショナリを返します．"
 
@@ -27527,7 +27543,7 @@ msgstr "pyvista.Renderer.add\\_border"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_border:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add borders around the frame."
 msgstr "枠の周囲に罫線を追加します．"
 
@@ -27545,7 +27561,7 @@ msgstr "pyvista.Renderer.add\\_light"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_light:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Add a light to the renderer."
 msgstr "レンダラーにライトを追加します．"
 
@@ -27559,7 +27575,7 @@ msgstr "pyvista.Renderer.axes\\_enabled"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.axes_enabled:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return ``True`` when axes are enabled."
 msgstr "軸が有効な時に ``True`` を返します．"
 
@@ -27569,7 +27585,7 @@ msgstr "pyvista.Renderer.background\\_color"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.background_color:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return the background color of this renderer."
 msgstr "このレンダラのバックグラウンドカラーを返します．"
 
@@ -27579,7 +27595,7 @@ msgstr "pyvista.Renderer.bounds"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.bounds:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return the bounds of all actors present in the rendering window."
 msgstr "レンダリングウィンドウに存在するすべてのアクターの境界を返します．"
 
@@ -27589,7 +27605,7 @@ msgstr "pyvista.Renderer.camera"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return the active camera for the rendering scene."
 msgstr "レンダリングシーンのアクティブカメラを返します．"
 
@@ -27599,7 +27615,7 @@ msgstr "pyvista.Renderer.camera\\_position"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera_position:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return camera position of active render window."
 msgstr "アクティブなレンダウィンドウのカメラ位置を返します．"
 
@@ -27609,7 +27625,7 @@ msgstr "pyvista.Renderer.center"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.center:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ""
 "Return the center of the bounding box around all data present in the scene."
 msgstr "シーン内に存在するすべてのデータを囲むバウンディングボックスの中心を返します．"
@@ -27620,7 +27636,7 @@ msgstr "pyvista.Renderer.clear"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.clear:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove all actors and properties."
 msgstr "すべてのアクターとプロパティを削除します．"
 
@@ -27630,7 +27646,7 @@ msgstr "pyvista.Renderer.close"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.close:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Close out widgets and sensitive elements."
 msgstr "ウィジェットと重要な要素を閉じます．"
 
@@ -27640,7 +27656,7 @@ msgstr "pyvista.Renderer.deep\\_clean"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.deep_clean:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Clean the renderer of the memory."
 msgstr "メモリのレンダラをクリアします．"
 
@@ -27718,7 +27734,7 @@ msgstr "pyvista.Renderer.lights"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.lights:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid "Return a list of all lights in the renderer."
 msgstr "レンダラのすべてのライトのリストを返します．"
 
@@ -27740,7 +27756,7 @@ msgstr "pyvista.Renderer.remove\\_all\\_lights"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_all_lights:1
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid "Remove all lights from the renderer."
 msgstr "レンダラーからすべてのライトを削除します．"
 
@@ -27759,6 +27775,15 @@ msgstr "pyvista.Renderer.remove\\_floors"
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.Renderer.reset_camera.rst:2
 msgid "pyvista.Renderer.reset\\_camera"
 msgstr "pyvista.Renderer.reset\\_camera"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.Renderer.reset_camera_clipping_range.rst:2
+msgid "pyvista.Renderer.reset\\_camera\\_clipping\\_range"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.reset_camera_clipping_range:3
+msgid "This ensures that no props are cut off"
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.Renderer.set_background.rst:2
 msgid "pyvista.Renderer.set\\_background"
@@ -30501,7 +30526,7 @@ msgstr "pyvista.Renderer"
 msgid "Renderer class."
 msgstr "Rendererクラス．"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_actor <pyvista.Renderer.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, ...\\]\\)"
@@ -30509,7 +30534,7 @@ msgstr ""
 ":obj:`Renderer.add_actor <pyvista.Renderer.add_actor>`\\ \\(uinput\\[\\, "
 "reset\\_camera\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_axes <pyvista.Renderer.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, ...\\]\\)"
@@ -30517,7 +30542,7 @@ msgstr ""
 ":obj:`Renderer.add_axes <pyvista.Renderer.add_axes>`\\ \\(\\[interactive\\, "
 "line\\_width\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_axes_at_origin <pyvista.Renderer.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, ...\\]\\)"
@@ -30525,7 +30550,7 @@ msgstr ""
 ":obj:`Renderer.add_axes_at_origin <pyvista.Renderer.add_axes_at_origin>`\\ "
 "\\(\\[x\\_color\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_border <pyvista.Renderer.add_border>`\\ \\(\\[color\\, "
 "width\\]\\)"
@@ -30533,7 +30558,7 @@ msgstr ""
 ":obj:`Renderer.add_border <pyvista.Renderer.add_border>`\\ \\(\\[color\\, "
 "width\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_bounding_box <pyvista.Renderer.add_bounding_box>`\\ "
 "\\(\\[color\\, ...\\]\\)"
@@ -30541,7 +30566,7 @@ msgstr ""
 ":obj:`Renderer.add_bounding_box <pyvista.Renderer.add_bounding_box>`\\ "
 "\\(\\[color\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
@@ -30549,11 +30574,11 @@ msgstr ""
 ":obj:`Renderer.add_floor <pyvista.Renderer.add_floor>`\\ \\(\\[face\\, "
 "i\\_resolution\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 msgstr ":obj:`Renderer.add_light <pyvista.Renderer.add_light>`\\ \\(light\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.add_orientation_widget "
 "<pyvista.Renderer.add_orientation_widget>`\\ \\(actor\\[\\, ...\\]\\)"
@@ -30561,23 +30586,23 @@ msgstr ""
 ":obj:`Renderer.add_orientation_widget "
 "<pyvista.Renderer.add_orientation_widget>`\\ \\(actor\\[\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.clear <pyvista.Renderer.clear>`\\ \\(\\)"
 msgstr ":obj:`Renderer.clear <pyvista.Renderer.clear>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.close <pyvista.Renderer.close>`\\ \\(\\)"
 msgstr ":obj:`Renderer.close <pyvista.Renderer.close>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.deep_clean <pyvista.Renderer.deep_clean>`\\ \\(\\[render\\]\\)"
 msgstr ":obj:`Renderer.deep_clean <pyvista.Renderer.deep_clean>`\\ \\(\\[render\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.disable <pyvista.Renderer.disable>`\\ \\(\\)"
 msgstr ":obj:`Renderer.disable <pyvista.Renderer.disable>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.disable_anti_aliasing "
 "<pyvista.Renderer.disable_anti_aliasing>`\\ \\(\\)"
@@ -30585,7 +30610,7 @@ msgstr ""
 ":obj:`Renderer.disable_anti_aliasing "
 "<pyvista.Renderer.disable_anti_aliasing>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.disable_depth_peeling "
 "<pyvista.Renderer.disable_depth_peeling>`\\ \\(\\)"
@@ -30593,7 +30618,7 @@ msgstr ""
 ":obj:`Renderer.disable_depth_peeling "
 "<pyvista.Renderer.disable_depth_peeling>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.disable_eye_dome_lighting "
 "<pyvista.Renderer.disable_eye_dome_lighting>`\\ \\(\\)"
@@ -30601,7 +30626,7 @@ msgstr ""
 ":obj:`Renderer.disable_eye_dome_lighting "
 "<pyvista.Renderer.disable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.disable_parallel_projection "
 "<pyvista.Renderer.disable_parallel_projection>`\\ \\(\\)"
@@ -30609,15 +30634,15 @@ msgstr ""
 ":obj:`Renderer.disable_parallel_projection "
 "<pyvista.Renderer.disable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.disable_shadows <pyvista.Renderer.disable_shadows>`\\ \\(\\)"
 msgstr ":obj:`Renderer.disable_shadows <pyvista.Renderer.disable_shadows>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.enable <pyvista.Renderer.enable>`\\ \\(\\)"
 msgstr ":obj:`Renderer.enable <pyvista.Renderer.enable>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.enable_anti_aliasing "
 "<pyvista.Renderer.enable_anti_aliasing>`\\ \\(\\)"
@@ -30625,7 +30650,7 @@ msgstr ""
 ":obj:`Renderer.enable_anti_aliasing "
 "<pyvista.Renderer.enable_anti_aliasing>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.enable_depth_peeling "
 "<pyvista.Renderer.enable_depth_peeling>`\\ \\(\\[...\\]\\)"
@@ -30633,7 +30658,7 @@ msgstr ""
 ":obj:`Renderer.enable_depth_peeling "
 "<pyvista.Renderer.enable_depth_peeling>`\\ \\(\\[...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.enable_eye_dome_lighting "
 "<pyvista.Renderer.enable_eye_dome_lighting>`\\ \\(\\)"
@@ -30641,7 +30666,7 @@ msgstr ""
 ":obj:`Renderer.enable_eye_dome_lighting "
 "<pyvista.Renderer.enable_eye_dome_lighting>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.enable_parallel_projection "
 "<pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
@@ -30649,11 +30674,11 @@ msgstr ""
 ":obj:`Renderer.enable_parallel_projection "
 "<pyvista.Renderer.enable_parallel_projection>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.enable_shadows <pyvista.Renderer.enable_shadows>`\\ \\(\\)"
 msgstr ":obj:`Renderer.enable_shadows <pyvista.Renderer.enable_shadows>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.get_default_cam_pos <pyvista.Renderer.get_default_cam_pos>`\\"
 " \\(\\[negative\\]\\)"
@@ -30661,7 +30686,7 @@ msgstr ""
 ":obj:`Renderer.get_default_cam_pos <pyvista.Renderer.get_default_cam_pos>`\\"
 " \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.get_pick_position <pyvista.Renderer.get_pick_position>`\\ "
 "\\(\\)"
@@ -30669,15 +30694,15 @@ msgstr ""
 ":obj:`Renderer.get_pick_position <pyvista.Renderer.get_pick_position>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.hide_axes <pyvista.Renderer.hide_axes>`\\ \\(\\)"
 msgstr ":obj:`Renderer.hide_axes <pyvista.Renderer.hide_axes>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.isometric_view <pyvista.Renderer.isometric_view>`\\ \\(\\)"
 msgstr ":obj:`Renderer.isometric_view <pyvista.Renderer.isometric_view>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.remove_actor <pyvista.Renderer.remove_actor>`\\ "
 "\\(actor\\[\\, reset\\_camera\\, ...\\]\\)"
@@ -30685,7 +30710,7 @@ msgstr ""
 ":obj:`Renderer.remove_actor <pyvista.Renderer.remove_actor>`\\ "
 "\\(actor\\[\\, reset\\_camera\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ "
 "\\(\\)"
@@ -30693,7 +30718,7 @@ msgstr ""
 ":obj:`Renderer.remove_all_lights <pyvista.Renderer.remove_all_lights>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.remove_bounding_box <pyvista.Renderer.remove_bounding_box>`\\"
 " \\(\\[render\\]\\)"
@@ -30701,7 +30726,7 @@ msgstr ""
 ":obj:`Renderer.remove_bounding_box <pyvista.Renderer.remove_bounding_box>`\\"
 " \\(\\[render\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.remove_bounds_axes <pyvista.Renderer.remove_bounds_axes>`\\ "
 "\\(\\)"
@@ -30709,7 +30734,7 @@ msgstr ""
 ":obj:`Renderer.remove_bounds_axes <pyvista.Renderer.remove_bounds_axes>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.remove_floors <pyvista.Renderer.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
@@ -30717,7 +30742,7 @@ msgstr ""
 ":obj:`Renderer.remove_floors <pyvista.Renderer.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.reset_camera <pyvista.Renderer.reset_camera>`\\ "
 "\\(\\[render\\, bounds\\]\\)"
@@ -30725,7 +30750,13 @@ msgstr ""
 ":obj:`Renderer.reset_camera <pyvista.Renderer.reset_camera>`\\ "
 "\\(\\[render\\, bounds\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
+msgid ""
+":obj:`Renderer.reset_camera_clipping_range "
+"<pyvista.Renderer.reset_camera_clipping_range>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.set_background <pyvista.Renderer.set_background>`\\ "
 "\\(color\\[\\, top\\]\\)"
@@ -30733,7 +30764,7 @@ msgstr ""
 ":obj:`Renderer.set_background <pyvista.Renderer.set_background>`\\ "
 "\\(color\\[\\, top\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.set_environment_texture "
 "<pyvista.Renderer.set_environment_texture>`\\ \\(texture\\)"
@@ -30741,11 +30772,11 @@ msgstr ""
 ":obj:`Renderer.set_environment_texture "
 "<pyvista.Renderer.set_environment_texture>`\\ \\(texture\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"
 msgstr ":obj:`Renderer.set_focus <pyvista.Renderer.set_focus>`\\ \\(point\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.set_position <pyvista.Renderer.set_position>`\\ "
 "\\(point\\[\\, reset\\]\\)"
@@ -30753,7 +30784,7 @@ msgstr ""
 ":obj:`Renderer.set_position <pyvista.Renderer.set_position>`\\ "
 "\\(point\\[\\, reset\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.set_scale <pyvista.Renderer.set_scale>`\\ \\(\\[xscale\\, "
 "yscale\\, zscale\\, ...\\]\\)"
@@ -30761,15 +30792,15 @@ msgstr ""
 ":obj:`Renderer.set_scale <pyvista.Renderer.set_scale>`\\ \\(\\[xscale\\, "
 "yscale\\, zscale\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.set_viewup <pyvista.Renderer.set_viewup>`\\ \\(vector\\)"
 msgstr ":obj:`Renderer.set_viewup <pyvista.Renderer.set_viewup>`\\ \\(vector\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.show_axes <pyvista.Renderer.show_axes>`\\ \\(\\)"
 msgstr ":obj:`Renderer.show_axes <pyvista.Renderer.show_axes>`\\ \\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.show_bounds <pyvista.Renderer.show_bounds>`\\ \\(\\[mesh\\, "
 "bounds\\, ...\\]\\)"
@@ -30777,11 +30808,11 @@ msgstr ""
 ":obj:`Renderer.show_bounds <pyvista.Renderer.show_bounds>`\\ \\(\\[mesh\\, "
 "bounds\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.show_grid <pyvista.Renderer.show_grid>`\\ \\(\\*\\*kwargs\\)"
 msgstr ":obj:`Renderer.show_grid <pyvista.Renderer.show_grid>`\\ \\(\\*\\*kwargs\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.update_bounds_axes <pyvista.Renderer.update_bounds_axes>`\\ "
 "\\(\\)"
@@ -30789,7 +30820,7 @@ msgstr ""
 ":obj:`Renderer.update_bounds_axes <pyvista.Renderer.update_bounds_axes>`\\ "
 "\\(\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.view_isometric <pyvista.Renderer.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
@@ -30797,7 +30828,7 @@ msgstr ""
 ":obj:`Renderer.view_isometric <pyvista.Renderer.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 ":obj:`Renderer.view_vector <pyvista.Renderer.view_vector>`\\ \\(vector\\[\\,"
 " viewup\\]\\)"
@@ -30805,73 +30836,73 @@ msgstr ""
 ":obj:`Renderer.view_vector <pyvista.Renderer.view_vector>`\\ \\(vector\\[\\,"
 " viewup\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_xy <pyvista.Renderer.view_xy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_xy <pyvista.Renderer.view_xy>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_xz <pyvista.Renderer.view_xz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_xz <pyvista.Renderer.view_xz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_yx <pyvista.Renderer.view_yx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_yx <pyvista.Renderer.view_yx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_yz <pyvista.Renderer.view_yz>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_yz <pyvista.Renderer.view_yz>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_zx <pyvista.Renderer.view_zx>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_zx <pyvista.Renderer.view_zx>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:174:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ":obj:`Renderer.view_zy <pyvista.Renderer.view_zy>`\\ \\(\\[negative\\]\\)"
 msgstr ":obj:`Renderer.view_zy <pyvista.Renderer.view_zy>`\\ \\(\\[negative\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.actors <pyvista.Renderer.actors>`\\"
 msgstr ":obj:`Renderer.actors <pyvista.Renderer.actors>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.axes_enabled <pyvista.Renderer.axes_enabled>`\\"
 msgstr ":obj:`Renderer.axes_enabled <pyvista.Renderer.axes_enabled>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.background_color <pyvista.Renderer.background_color>`\\"
 msgstr ":obj:`Renderer.background_color <pyvista.Renderer.background_color>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.bounds <pyvista.Renderer.bounds>`\\"
 msgstr ":obj:`Renderer.bounds <pyvista.Renderer.bounds>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.camera <pyvista.Renderer.camera>`\\"
 msgstr ":obj:`Renderer.camera <pyvista.Renderer.camera>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.camera_position <pyvista.Renderer.camera_position>`\\"
 msgstr ":obj:`Renderer.camera_position <pyvista.Renderer.camera_position>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.center <pyvista.Renderer.center>`\\"
 msgstr ":obj:`Renderer.center <pyvista.Renderer.center>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.length <pyvista.Renderer.length>`\\"
 msgstr ":obj:`Renderer.length <pyvista.Renderer.length>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.lights <pyvista.Renderer.lights>`\\"
 msgstr ":obj:`Renderer.lights <pyvista.Renderer.lights>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ""
 ":obj:`Renderer.parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 msgstr ""
 ":obj:`Renderer.parallel_projection <pyvista.Renderer.parallel_projection>`\\"
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:474:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:477:<autosummary>:1
 msgid ":obj:`Renderer.parallel_scale <pyvista.Renderer.parallel_scale>`\\"
 msgstr ":obj:`Renderer.parallel_scale <pyvista.Renderer.parallel_scale>`\\"
 
