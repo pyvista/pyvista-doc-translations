@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.31.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-27 00:58+0000\n"
+"POT-Creation-Date: 2021-06-29 00:49+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -10274,6 +10274,9 @@ msgid ""
 "``vtkDijkstraGraphGeodesicPath`` filter is that the geodesic path is "
 "reversed in the resulting mesh. This is overridden in PyVista by default."
 msgstr ""
+"これにより、入力メッシュのポイントIDの ``'vtkOriginalPointIds'`` という名前の配列が出力メッシュに追加されます。基礎となる "
+"``vtkDijkstraGraphGeodesicPath`` "
+"フィルタのデフォルトの動作では、生成されるメッシュ内で形状沿いのパスが反転します。これは、PyVistaでは既定で上書きされます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:9
@@ -10294,7 +10297,7 @@ msgstr "測地セグメントの終点を示す頂点インデックスです．
 msgid ""
 "Whether the input mesh should be replaced with the path. The geodesic path "
 "is always returned."
-msgstr ""
+msgstr "入力メッシュをパスで置き換えるかどうかを指定します。測地線パスは常に返されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:16
@@ -10302,13 +10305,14 @@ msgid ""
 "If ``True``, the points of the returned path are guaranteed to start with "
 "the start vertex (as opposed to the end vertex).  .. versionadded:: 0.32.0"
 msgstr ""
+"``True`` の場合、返されるパスのポイントは必ず開始頂点から始まります(終了頂点ではなく)。 .. versionadded:: 0.32.0"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:16
 msgid ""
 "If ``True``, the points of the returned path are guaranteed to start with "
 "the start vertex (as opposed to the end vertex)."
-msgstr ""
+msgstr "``True`` の場合、返されるパスのポイントは必ず開始頂点から始まります(終了頂点ではなく)。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:22
@@ -10317,6 +10321,8 @@ msgid ""
 " two given vertices. If ``inplace`` is ``True`` this is the same object as "
 "the input mesh."
 msgstr ""
+"**output** -- 指定された2つの頂点間のラインセグメントで構成される ``PolyData`` オブジェクト． ``inplace`` が "
+"``True`` の場合、入力メッシュが変更されます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:29
@@ -11179,12 +11185,12 @@ msgstr "次のいずれかです: 'butterfly', 'loop', 'linear' ．"
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:29
 msgid "Subdivided mesh."
-msgstr ""
+msgstr "メッシュの細分化．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:34
 msgid "Subdivide the sphere mesh."
-msgstr ""
+msgstr "球メッシュの細分化．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
@@ -11214,6 +11220,7 @@ msgid ""
 "of edges to be subdivided a different number of triangles are inserted "
 "ranging from two (i.e., two triangles replace the original one) to four."
 msgstr ""
+"このフィルタでは、単純なケースベースのマルチパスアプローチを使用して、入力三角形メッシュを繰り返し再分割し、面積やエッジの長さの基準を満たします。新しいポイントはエッジ上にのみ挿入できます。サブディバイドされるエッジの数に応じて、2つ(つまり、2つの三角形が元の1つと置き換わる)から4つの範囲で異なる数の三角形が挿入されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:10
@@ -11222,13 +11229,15 @@ msgid ""
 "triangle is assigned to its subdivided children. Point data is interpolated "
 "along edges as the edges are subdivided."
 msgstr ""
+"ポイントとセルのデータは次のように処理されます: "
+"親三角形のセルデータは、サブディバイドされた子に割り当てられます。エッジが再分割されると、ポイントデータはエッジに沿って補間されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:15
 msgid ""
 "This filter retains mesh watertightness if the mesh was originally "
 "watertight; and the area and max triangles criteria are not used."
-msgstr ""
+msgstr "このフィルタは、メッシュが元々水密であった場合にメッシュの水密性を保持します。面積および三角形の最大数の基準は使用されません。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:19
@@ -11236,7 +11245,7 @@ msgid ""
 "The maximum edge length that a triangle may have. Edges longer than this "
 "value are split in half and the associated triangles are modified "
 "accordingly."
-msgstr ""
+msgstr "三角形が持ち得る最大エッジ長。この値より長いエッジは半分に分割され、それに応じて関連する三角形が修正されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:23
@@ -11245,6 +11254,7 @@ msgid ""
 "are subdivided to meet this threshold. Note that if this criterion is used "
 "it may produce non-watertight meshes as a result."
 msgstr ""
+"三角形の最大面積です。この値よりも大きい三角形は、このしきい値を満たすように分割されます。この基準を使用すると、結果として非水密メッシュが生成される場合があることに注意してください。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:28
@@ -11255,6 +11265,7 @@ msgid ""
 "By default, the limit is set to a very large number (i.e., no effective "
 "limit)."
 msgstr ""
+"作成できる三角形の最大数です。制限に達すると、アルゴリズムが途中で終了し、満足のいく結果が得られない場合があります(たとえば、水密でないメッシュが作成される場合があります)。デフォルトでは、制限は非常に大きな値に設定されます(つまり、有効な制限はありません)。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:35
@@ -11264,11 +11275,12 @@ msgid ""
 "meet other criteria) are aborted. The default limit is set to a very large "
 "number (i.e., no effective limit)."
 msgstr ""
+"パスの最大数(つまり、再分割のレベル)です。制限に達すると、サブディビジョンプロセスが停止し、(他の基準を満たすために必要な)追加のパスが中止されます。デフォルトの制限は非常に大きな値に設定されています(つまり、有効な制限はありません)。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:44
 msgid "Subdivided mesh"
-msgstr ""
+msgstr "メッシュの細分化"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:45
@@ -14764,7 +14776,7 @@ msgstr "全体座標でのカメラの位置．"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
 "Reset the camera clipping range based on the bounds of the visible actors."
-msgstr ""
+msgstr "可視アクターの境界に基づいてカメラのクリッピング範囲をリセットします。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:1
 msgid "Rotate the camera about the direction of projection."
@@ -16315,7 +16327,7 @@ msgstr "ベクトルを中心に回転する度単位の角度．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:5
 msgid "Point to rotate about.  Defaults to origin ``(0.0, 0.0, 0.0)``."
-msgstr ""
+msgstr "回転の中心となる点を指定します。デフォルトは原点 ``(0.0, 0.0, 0.0)`` です。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_x:3
@@ -16329,7 +16341,7 @@ msgstr "Y軸を中心に回転する度単位の角度．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_y:5
-msgid "Point to ratate about."
+msgid "Point to rotate about."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -23655,7 +23667,7 @@ msgstr ""
 msgid ""
 "The geodesic path is saved to the ``.picked_geodesic`` attribute of this "
 "plotter."
-msgstr ""
+msgstr "測地パスは，このプロッタの ``.picked_geodesic`` 属性に保存されます．"
 
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_geodesic_picking:10
@@ -23758,6 +23770,9 @@ msgid ""
 "of the     underlying VTK filter which corresponds to     "
 "``keep_order=False``.  .. versionadded:: 0.32.0"
 msgstr ""
+"``True`` の場合、作成された形状沿いのパスは、最初の点から最後の点まで、順序付けられて消去された1本の直線になります。 .. note:: "
+"古いバージョンでは、 ``keep_order=False`` "
+"に対応する基礎となるVTKフィルタの動作のために、結果のパスに明らかな不連続性がありました。 .. versionadded:: 0.32.0"
 
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_geodesic_picking:33
@@ -23766,7 +23781,7 @@ msgstr ""
 msgid ""
 "If ``True``, the created geodesic path is a single ordered and cleaned line "
 "from the first point to the last."
-msgstr ""
+msgstr "``True`` の場合、作成された形状沿いのパスは、最初の点から最後の点まで、順序付けられて消去された1本の直線になります。"
 
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_geodesic_picking:38
@@ -23777,6 +23792,8 @@ msgid ""
 "due to the behavior of the underlying VTK filter which corresponds to "
 "``keep_order=False``."
 msgstr ""
+"古いバージョンでは、 ``keep_order=False`` "
+"に対応する基礎となるVTKフィルタの動作のために、結果のパスに明らかな不連続性がありました。"
 
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_geodesic_picking:45
@@ -23785,7 +23802,7 @@ msgstr ""
 msgid ""
 "All remaining keyword arguments are used to control how the picked path is "
 "interactively displayed."
-msgstr ""
+msgstr "残りのキーワード引数はすべて，選択したパスを対話的に表示する方法を制御するために使用されます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_horizon_picking.rst:2
 msgid "pyvista.BasePlotter.enable\\_horizon\\_picking"
@@ -23963,7 +23980,7 @@ msgstr "Shift + 左マウスボタンでカメラをパン"
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:7
 msgid "CTRL SHIFT Left Mouse dollies (a positional zoom) the camera"
-msgstr ""
+msgstr "Ctrl Shift+左マウスボタンでカメラをドリー(位置ズーム)します"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:8
@@ -23977,7 +23994,7 @@ msgstr "マウスの中ボタンでカメラをパン"
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:9
 msgid "Right mouse button dollies the camera"
-msgstr ""
+msgstr "マウスの右ボタンでカメラをドリーします．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:10
@@ -23992,7 +24009,7 @@ msgstr "SHIFT Right Mouseトリガピックイベント"
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_image_style:14
 msgid ""
 "Create a simple scene with a plotter that has the Image interactive style:"
-msgstr ""
+msgstr "イメージインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_joystick_actor_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_joystick\\_actor\\_style"
@@ -24005,7 +24022,7 @@ msgstr "pyvista.BasePlotter.enable\\_joystick\\_actor\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Joystick Actor."
-msgstr ""
+msgstr "インタラクティブスタイルをジョイスティックアクターに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:3
@@ -24018,6 +24035,8 @@ msgid ""
 "center of the object determines the speed at which the object moves, so the "
 "object continues to move even if the mouse is not moving."
 msgstr ""
+"Joystick Cameraインタラクションスタイルと似ていますが、Joystick "
+"Actorスタイルの場合は、カメラではなくシーン内のオブジェクトを移動(回転、パンなど)できます。オブジェクトの中心を基準にしたマウスの位置によって、オブジェクトの移動速度が決まります。したがって、マウスが移動していなくてもオブジェクトは移動し続けます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_actor_style:10
@@ -24042,7 +24061,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Joystick Actor interactive"
 " style:"
-msgstr ""
+msgstr "ジョイスティクアクターインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_joystick_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_joystick\\_style"
@@ -24055,7 +24074,7 @@ msgstr "pyvista.BasePlotter.enable\\_joystick\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Joystick Camera."
-msgstr ""
+msgstr "インタラクティブスタイルをジョイスティックカメラに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:3
@@ -24067,6 +24086,7 @@ msgid ""
 "scene determines the speed at which the camera moves, so the camera "
 "continues to move even if the mouse if not moving."
 msgstr ""
+"シーンの視点であるカメラを移動(回転，パンなど)することができます．シーンの中心に対するマウスの位置によってカメラの移動速度が決まり，マウスが移動していなくてもカメラは移動し続けます．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_joystick_style:17
@@ -24075,7 +24095,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Joystick Camera "
 "interactive style:"
-msgstr ""
+msgstr "ジョイスティクカメラインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_lightkit.rst:2
 msgid "pyvista.BasePlotter.enable\\_lightkit"
@@ -24227,7 +24247,7 @@ msgstr "pyvista.BasePlotter.enable\\_rubber\\_band\\_2d\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Rubber Band 2D."
-msgstr ""
+msgstr "インタラクティブスタイルをラバーバンド2Dに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:3
@@ -24242,34 +24262,37 @@ msgid ""
 "and ``EndInteractionEvent`` when the button is released. The bindings are as"
 " follows:"
 msgstr ""
+"このインターアクタースタイルではカメラの回転は許可されていません．ズームはカメラの平行スケールにのみ影響し，カメラが平行投影モードであることを前提としています．左ボタンで輪ゴムを引くスタイルも可能です．カメラを変更すると，ボタンを押したときに"
+" ``StartInteractionEvent`` が呼び出され，マウス(またはホイール)を移動したときに ``InteractionEvent`` "
+"が呼び出され，ボタンを放したときに ``EndInteractionEvent`` が呼び出されます．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:12
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:12
 msgid "Left mouse: Select (invokes a ``SelectionChangedEvent``)."
-msgstr ""
+msgstr "左マウス: 選択 ( ``SelectionChangedEvent`` を呼び出します)。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:13
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:13
 msgid "Right mouse: Zoom."
-msgstr ""
+msgstr "右マウス:ズーム。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:14
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:14
 msgid "Middle mouse: Pan."
-msgstr ""
+msgstr "中マウスボタン: パン．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:15
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:15
 msgid "Scroll wheel: Zoom."
-msgstr ""
+msgstr "スクロールホイール:ズーム。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_2d_style:19
@@ -24278,7 +24301,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Rubber Band 2D interactive"
 " style:"
-msgstr ""
+msgstr "ラバーバンド2Dインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_rubber_band_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_rubber\\_band\\_style"
@@ -24291,7 +24314,7 @@ msgstr "pyvista.BasePlotter.enable\\_rubber\\_band\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Rubber Band Picking."
-msgstr ""
+msgstr "インタラクティブスタイルをラバーバンド選択に設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:3
@@ -24306,6 +24329,9 @@ msgid ""
 "hit the above pick operation occurs on a 1x1 rectangle. In other respects it"
 " behaves the same as the Trackball Camera style."
 msgstr ""
+"このインタラクタスタイルを使用すると， 'r' "
+"をクリックしてからマウスの左ボタンを使用して，レンダウィンドウに長方形を描画できます．マウスボタンを放すと，アタッチされたピッカーが選択長方形の中心にあるピクセルを操作します．ピッカーがvtkAreaPickerである場合は，選択長方形全体を操作します．"
+" 'p' キーを押すと，1 x 1の長方形上で上記のピック操作が行われます．その他の点では，トラックボールカメラスタイルと同じように動作します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_rubber_band_style:15
@@ -24314,7 +24340,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Rubber Band Pick "
 "interactive style:"
-msgstr ""
+msgstr "ラバーバンドインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_shadows.rst:2
 msgid "pyvista.BasePlotter.enable\\_shadows"
@@ -24343,7 +24369,7 @@ msgstr "pyvista.BasePlotter.enable\\_terrain\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Terrain."
-msgstr ""
+msgstr "対話型スタイルを地形に設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:3
@@ -24357,6 +24383,7 @@ msgid ""
 "the Joystick Camera style, movements of the mouse translate to movements of "
 "the camera."
 msgstr ""
+"地表などの自然なビューでシーンを表示しているカメラを操作するために使用します．このようなシーンのカメラは，方位角(ビューアップベクトルの周囲の角度)と仰角(地平線からの角度)を指定して操作します．既定のトラックボールカメラスタイルに似ていますが、ジョイスティックカメラスタイルとは対照的に、マウスの動きはカメラの動きに変換されます．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:11
@@ -24376,6 +24403,12 @@ msgid ""
 "point (zoom in or out). Panning and zooming behavior can be overridden to "
 "match the Trackball Camera style."
 msgstr ""
+"マウスを左クリックすると、カメラ上の仰角と方位角の両方の呼び出しを使用して、焦点を中心にしてカメラが回転します。水平方向にマウスを左に動かすと、方位角が動きます:"
+" 垂直方向にマウスを左クリックすると、仰角方向に移動します。したがって、対角線方向のモーションは、方位角と仰角の組み合わせになります。 "
+"(移動中にShiftキーを押したままにすると、マウスの動きが主に水平か垂直かに応じて、仰角または方位角のいずれか一方のみが呼び出されます。) "
+"マウスの中ボタンを使用してカメラをシーン内でパンします "
+"(ここでもShiftキーは、モーションを垂直方向または水平方向に制限する場合に同様の効果があります。マウスの右ボタンを使用して、焦点に向かって、または焦点から遠ざかる方向にドリーします"
+" (拡大または縮小する)。 パンとズームの動作は、トラックボールカメラのスタイルに合わせてオーバーライドできます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:26
@@ -24389,6 +24422,10 @@ msgid ""
 "non-stero mode. The ``l`` key toggles on/off latitude/longitude markers that"
 " can be used to estimate/control position."
 msgstr ""
+"このクラスは、いくつかのkeypressイベントもサポートしています。 ``r`` キーはカメラをリセットします。 ``e`` "
+"キーは終了コールバックを起動し、プロッタを閉じます。 ``f`` キーは新しいカメラの焦点を設定し、その点に向かって飛びます。 ``u`` "
+"キーはユーザイベントを起動します。 ``3`` キーはステレオモードとノンステロモードを切り替えます。 ``l`` "
+"キーは、位置の推定/制御に使用できる緯度/経度マーカのオン/オフを切り替えます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:35
@@ -24397,7 +24434,7 @@ msgstr ""
 msgid ""
 "Whether to use the mouse wheel for zooming. By default zooming can be "
 "performed with right click and drag."
-msgstr ""
+msgstr "ズームにマウスホイールを使用するかどうかを指定します。既定では、右クリックとドラッグでズームを実行できます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:38
@@ -24408,6 +24445,7 @@ msgid ""
 "mouse button rotates the view restricted to only horizontal or vertical "
 "movements, and panning is done holding down the middle mouse button."
 msgstr ""
+"Shift+左マウスボタンでシーンをパンするかどうかを指定します。既定では、Shift+左マウスボタンを押すと、水平または垂直方向の移動のみに制限されたビューが回転し、中マウスボタンを押したままパンが実行されます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:46
@@ -24415,14 +24453,14 @@ msgstr ""
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:46
 msgid ""
 "Create a simple scene with a plotter that has the Terrain interactive style:"
-msgstr ""
+msgstr "地形インタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:57
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_terrain_style:57
 msgid "Use controls that are closer to the default style:"
-msgstr ""
+msgstr "既定のスタイルに近いコントロールを使用します:"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_trackball_actor_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_trackball\\_actor\\_style"
@@ -24435,7 +24473,7 @@ msgstr "pyvista.BasePlotter.enable\\_trackball\\_actor\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Trackball Actor."
-msgstr ""
+msgstr "インタラクティブスタイルをトラックボールアクターに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:3
@@ -24446,6 +24484,7 @@ msgid ""
 "the default Trackball Camera style, but movements transform specific objects"
 " under the mouse cursor."
 msgstr ""
+"これにより、シーンの周囲でアクターを回転させることができます。これらのコントロールは既定値のトラックボールカメラスタイルに似ていますが、マウスカーソルの下の特定のオブジェクトが動きによって変換されます。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:7
@@ -24457,6 +24496,7 @@ msgid ""
 "objects around the axis connecting the camera with the their center.  "
 "Alternatively, shift + left button pans."
 msgstr ""
+"3ボタンマウスの場合，左ボタンは回転用，右ボタンはズーム用，中央ボタンはパン用，Ctrl+左ボタンはカメラと中心を結ぶ軸の周りにあるスピンオブジェクト用です．または、Shift+左ボタンで画面移動します。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_actor_style:15
@@ -24465,7 +24505,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Trackball Actor "
 "interactive style:"
-msgstr ""
+msgstr "トラックボールアクターインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_trackball_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_trackball\\_style"
@@ -24478,7 +24518,7 @@ msgstr "pyvista.BasePlotter.enable\\_trackball\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Trackball Camera."
-msgstr ""
+msgstr "インタラクティブスタイルをトラックボールカメラに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:3
@@ -24487,7 +24527,7 @@ msgstr ""
 msgid ""
 "The trackball camera is the default interactor style. Moving the mouse moves"
 " the camera around, leaving the scene intact."
-msgstr ""
+msgstr "トラックボールカメラは既定のインタラクタスタイルです．マウスを動かすとカメラが動き回り、シーンはそのまま残ります．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:6
@@ -24499,6 +24539,7 @@ msgid ""
 "the view around the vewing axis of the camera.  Alternatively, ctrl + shift "
 "+ left button or mouse wheel zooms, and shift + left button pans."
 msgstr ""
+"3ボタンマウスの場合，左ボタンは回転用，右ボタンはズーム用，中央ボタンはパン用，Ctrl+左ボタンはカメラの回転軸の周りのビュースピン用です．または、Ctrl+Shift+左ボタンまたはマウスホイールでズームし、Shift+左ボタンで画面移動します。"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_trackball_style:14
@@ -24507,7 +24548,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Trackball Camera "
 "interactive style (which is also the default):"
-msgstr ""
+msgstr "トラックボールカメラインタラクティブスタイル(これもデフォルトです)のプロッタを使用して、簡単なシーンを作成します:"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.enable_zoom_style.rst:2
 msgid "pyvista.BasePlotter.enable\\_zoom\\_style"
@@ -24520,7 +24561,7 @@ msgstr "pyvista.BasePlotter.enable\\_zoom\\_style"
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:450:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:456:<autosummary>:1
 msgid "Set the interactive style to Rubber Band Zoom."
-msgstr ""
+msgstr "インタラクティブスタイルをラバーバンドズームに設定します．"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.enable_zoom_style:3
@@ -24541,7 +24582,7 @@ msgstr ""
 msgid ""
 "Create a simple scene with a plotter that has the Rubber Band Zoom "
 "interactive style:"
-msgstr ""
+msgstr "ラバーバンドズームインタラクティブスタイルのプロッタを使用して、簡単なシーンを作成します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.BasePlotter.export_obj.rst:2
 msgid "pyvista.BasePlotter.export\\_obj"
@@ -26016,6 +26057,8 @@ msgid ""
 "This can be enabled for smoother plotting.  .. warning::    A bug with vtk "
 "6.3 in Windows seems to cause this    function to crash."
 msgstr ""
+"これを有効にすると、プロットがスムーズになります。 .. warning:: Windowsのvtk "
+"6.3のバグにより，この関数がクラッシュするようです．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:49
@@ -26024,7 +26067,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:49
 msgid "This can be enabled for smoother plotting."
-msgstr ""
+msgstr "これを有効にすると、プロットがよりスムーズになります。"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:52
@@ -26033,7 +26076,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:52
 msgid "A bug with vtk 6.3 in Windows seems to cause this function to crash."
-msgstr ""
+msgstr "Windowsのvtk 6.3のバグにより，この関数がクラッシュするようです．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:55
@@ -26060,6 +26103,9 @@ msgid ""
 "(``'origin'``), or outer edges (``'outer'``) in relation to the camera "
 "position. Options include: ``'all', 'front', 'back', 'origin', 'outer'``."
 msgstr ""
+"軸の描画方法を，スタティック (``'all'``) ，最近接トライアド (``front``) ，最近接トライアド (``'back'``) ，原点 "
+"(``'origin'``) に最近接スタティック，またはカメラ位置に関連する外縁 (``'outer'``) "
+"のいずれかに設定します．次のオプションがあります: ``'all', 'front', 'back', 'origin', 'outer'`` ．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:66
@@ -26071,6 +26117,7 @@ msgid ""
 "Set how the ticks are drawn on the axes grid. Options include: ``'inside', "
 "'outside', 'both'``."
 msgstr ""
+"軸グリッドにティックを描画する方法を設定します．以下のオプションがあります: ``'inside', 'outside', 'both'`` ．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:69
@@ -27778,12 +27825,12 @@ msgstr "pyvista.Renderer.reset\\_camera"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.Renderer.reset_camera_clipping_range.rst:2
 msgid "pyvista.Renderer.reset\\_camera\\_clipping\\_range"
-msgstr ""
+msgstr "pyvista.Renderer.reset\\_camera\\_clipping\\_range"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.reset_camera_clipping_range:3
 msgid "This ensures that no props are cut off"
-msgstr ""
+msgstr "これにより、プロップが切断されることはありません"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/_autosummary/pyvista.Renderer.set_background.rst:2
 msgid "pyvista.Renderer.set\\_background"
@@ -30755,6 +30802,8 @@ msgid ""
 ":obj:`Renderer.reset_camera_clipping_range "
 "<pyvista.Renderer.reset_camera_clipping_range>`\\ \\(\\)"
 msgstr ""
+":obj:`Renderer.reset_camera_clipping_range "
+"<pyvista.Renderer.reset_camera_clipping_range>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:177:<autosummary>:1
 msgid ""
@@ -31203,7 +31252,7 @@ msgstr "便利な機能"
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
-msgstr ""
+msgstr "これらの関数を使用すると、PyVistaのさまざまなプロットルーチンへのインタフェースが簡単になります。"
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:14:<autosummary>:1
 msgid ":obj:`plot <pyvista.plot>`\\ \\(var\\_item\\[\\, off\\_screen\\, full\\_screen\\, ...\\]\\)"
@@ -31234,21 +31283,21 @@ msgstr "プロット"
 msgid ""
 "Intuitive plotting routines with ``matplotlib`` similar syntax (see "
 ":ref:`plotting_ref`)."
-msgstr ""
+msgstr "``matplotlib`` に似た構文を持つ直感的な描画ルーチン( :ref:`plotting_ref` を参照)．"
 
 #: ../../pyvista/doc/api/plotting/index.rst:5
 msgid "Plotting tools built for interactivity (see :ref:`widgets`)."
-msgstr ""
+msgstr "対話型のプロットツール( :ref:`widgets` を参照)．"
 
 #: ../../pyvista/doc/api/plotting/index.rst:15
 msgid "Plotting API Reference"
-msgstr ""
+msgstr "プロットAPIリファレンス"
 
 #: ../../pyvista/doc/api/plotting/index.rst:16
 msgid ""
 "Plotting module API reference.  These plotting modules are the basis for all"
 " plotting functionality in PyVista."
-msgstr ""
+msgstr "プロットモジュールAPIリファレンス。これらのプロットモジュールは、PyVistaのすべてのプロット機能の基礎となります。"
 
 #: ../../pyvista/doc/api/plotting/index.rst:29:<autosummary>:1
 msgid ":obj:`BasePlotter <pyvista.BasePlotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"

@@ -400,6 +400,9 @@ msgid ""
 "Please also take a look at our `Code of Conduct "
 "<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.md>`__"
 msgstr ""
+"私達の `Code of Conduct "
+"<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.md>`__ "
+"もご覧ください．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:144
 msgid "Contributing to pyvista through GitHub"
@@ -675,6 +678,10 @@ msgid ""
 "will automatically run continuous integration (CI) testing and verify your "
 "changes will work across several platforms."
 msgstr ""
+"ブランチをローカルでテストしたら，mainにマージする際に `pyvista GitHub "
+"<https://github.com/pyvista/pyvista>`__ でpull "
+"requestを作成します．これにより，継続的インテグレーション (CI) "
+"テストが自動的に実行され，変更が複数のプラットフォームで機能することが検証されます．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:327
 msgid ""
@@ -720,6 +727,8 @@ msgid ""
 "might have introduced unintended side-effects or bugs that were not caught "
 "through unit testing."
 msgstr ""
+"``main`` "
+"ブランチは主要な開発ブランチです．すべてのフィーチャー，パッチ，およびその他のブランチをここにマージする必要があります．すべてのPRは適用可能なCIチェックをすべてパスする必要がありますが，変更によって予期しない副作用や単体テストで検出されなかったバグが発生する可能性があるため，このブランチは機能的に不安定になる可能性があります．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:352
 msgid ""
@@ -733,6 +742,12 @@ msgid ""
 "past versions of ``pyvista`` without having to worry about untested "
 "features."
 msgstr ""
+"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
+"にも反映される安定版のコードベースが含まれています． ``fix/`` "
+"ブランチの修正パッチは，mainブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
+" ``__version__.py`` が更新され，パッチされたセマンティックバージョン(例えば ``0.24.1`` "
+")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
+"のホットフィックスを迅速にプッシュすることができます．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:362
 msgid ""
@@ -745,6 +760,11 @@ msgid ""
 "with this release. Older release branches should not be deleted so they can "
 "be patched as needed."
 msgstr ""
+"マイナーリリース候補が準備できたら， ``main`` から新しい ``release`` ブランチが作成され，次のマイナーバージョン(例えば "
+"``release/0.25`` "
+")がインクリメントされ，徹底的にテストされます．安定していると判断された場合，リリースブランチにはバージョン(この場合の ``0.25.0`` "
+")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
+"で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:373
 msgid "Minor Release Steps"
@@ -764,6 +784,8 @@ msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
+"``main`` ブランチから ``release/MAJOR.MINOR`` という名前の新しいブランチを作成します(例: "
+"``release/0.25`` )．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:382
 msgid ""
@@ -797,6 +819,8 @@ msgid ""
 "main. Development to main should be limited at this point while effort is "
 "focused on the release."
 msgstr ""
+"``pyvista/_version.py`` "
+"のバージョン番号を更新し，コミットします．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:398
 msgid ""
@@ -815,6 +839,8 @@ msgid ""
 "``MAJOR.MINOR.0`` release. The release branch will not be deleted. Tag the "
 "release with:"
 msgstr ""
+"ブランチが一般リリース用に安定しているとみなされた場合，PRはmainにマージされ， ``main`` ブランチは ``MAJOR.MINOR.0`` "
+"リリースでタグ付けされます．リリースブランチは削除されません．リリースに次のタグを付けます．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:413
 msgid ""
@@ -825,6 +851,9 @@ msgid ""
 "contributors by their GitHub username and place mentions where appropriate "
 "if a specific contributor is to thank for a new feature."
 msgstr ""
+"リリースのすべての変更のリストを作成します． `GitHub's *compare* feature "
+"<https://github.com/pyvista/pyvista/compare>`__ を活用して，最後のタグや ``main`` "
+"ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:421
 msgid ""
@@ -885,6 +914,8 @@ msgid ""
 " from the release branch with the applicable version number (see above for "
 "the correct steps)."
 msgstr ""
+"承認されたら，リリースブランチとマージしますが， ``main`` ブランチのバージョンを増やす理由がないため， ``main`` "
+"とはマージしません．次に，リリースブランチから適切なバージョン番号(正しい手順については上記を参照してください．)のタグを作成します．"
 
 #: ../../pyvista/doc/extras/developer_notes.rst:454
 msgid ""
@@ -995,6 +1026,9 @@ msgid ""
 "plots.  See the following example as well as the demo at `Flask Example "
 "<https://github.com/pyvista/pyvista/raw/main/examples_flask>`__."
 msgstr ""
+"``pyvista`` を使用して，スタティックプロットを表示するflaskアプリケーションを作成できます．以下の例と `Flask Example "
+"<https://github.com/pyvista/pyvista/raw/main/examples_flask>`__ "
+"のデモを参照してください．"
 
 #: ../../pyvista/doc/extras/flask.rst:9
 msgid ""
