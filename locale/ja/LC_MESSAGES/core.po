@@ -2498,7 +2498,7 @@ msgstr "ベクトルを中心に回転する度単位の角度．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:5
 msgid "Point to rotate about.  Defaults to origin ``(0.0, 0.0, 0.0)``."
-msgstr ""
+msgstr "回転の中心となる点を指定します。デフォルトは原点 ``(0.0, 0.0, 0.0)`` です。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:9
@@ -2530,7 +2530,7 @@ msgstr "Y軸を中心に回転する度単位の角度．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_y:5
 msgid "Point to ratate about."
-msgstr ""
+msgstr "回転の中心となる点。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:3
@@ -6492,7 +6492,7 @@ msgstr "各入力ラインの周囲にチューブを生成します．"
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
 #: pyvista.core.filters.uniform_grid.UniformGridFilters:1
 msgid "Bases: :class:`pyvista.core.filters.data_set.DataSetFilters`"
-msgstr ""
+msgstr "基底: :class:`pyvista.core.filters.data_set.DataSetFilters`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters:1
@@ -7925,6 +7925,7 @@ msgid ""
 "of edges to be subdivided a different number of triangles are inserted "
 "ranging from two (i.e., two triangles replace the original one) to four."
 msgstr ""
+"このフィルタでは、単純なケースベースのマルチパスアプローチを使用して、入力三角形メッシュを繰り返し再分割し、面積やエッジの長さの基準を満たします。新しいポイントはエッジ上にのみ挿入できます。サブディバイドされるエッジの数に応じて、2つ(つまり、2つの三角形が元の1つと置き換わる)から4つの範囲で異なる数の三角形が挿入されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:10
@@ -7933,13 +7934,15 @@ msgid ""
 "triangle is assigned to its subdivided children. Point data is interpolated "
 "along edges as the edges are subdivided."
 msgstr ""
+"ポイントとセルのデータは次のように処理されます: "
+"親三角形のセルデータは、サブディバイドされた子に割り当てられます。エッジが再分割されると、ポイントデータはエッジに沿って補間されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:15
 msgid ""
 "This filter retains mesh watertightness if the mesh was originally "
 "watertight; and the area and max triangles criteria are not used."
-msgstr ""
+msgstr "このフィルタは、メッシュが元々水密であった場合にメッシュの水密性を保持します。面積および三角形の最大数の基準は使用されません。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:19
@@ -7947,7 +7950,7 @@ msgid ""
 "The maximum edge length that a triangle may have. Edges longer than this "
 "value are split in half and the associated triangles are modified "
 "accordingly."
-msgstr ""
+msgstr "三角形が持ち得る最大エッジ長。この値より長いエッジは半分に分割され、それに応じて関連する三角形が修正されます。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:23
@@ -7956,6 +7959,7 @@ msgid ""
 "are subdivided to meet this threshold. Note that if this criterion is used "
 "it may produce non-watertight meshes as a result."
 msgstr ""
+"三角形の最大面積です。この値よりも大きい三角形は、このしきい値を満たすように分割されます。この基準を使用すると、結果として非水密メッシュが生成される場合があることに注意してください。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:28
@@ -7966,6 +7970,7 @@ msgid ""
 "By default, the limit is set to a very large number (i.e., no effective "
 "limit)."
 msgstr ""
+"作成できる三角形の最大数です。制限に達すると、アルゴリズムが途中で終了し、満足のいく結果が得られない場合があります(たとえば、水密でないメッシュが作成される場合があります)。デフォルトでは、制限は非常に大きな値に設定されます(つまり、有効な制限はありません)。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:35
@@ -7975,11 +7980,12 @@ msgid ""
 "meet other criteria) are aborted. The default limit is set to a very large "
 "number (i.e., no effective limit)."
 msgstr ""
+"パスの最大数(つまり、再分割のレベル)です。制限に達すると、サブディビジョンプロセスが停止し、(他の基準を満たすために必要な)追加のパスが中止されます。デフォルトの制限は非常に大きな値に設定されています(つまり、有効な制限はありません)。"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:44
 msgid "Subdivided mesh"
-msgstr ""
+msgstr "メッシュの細分化"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:45
