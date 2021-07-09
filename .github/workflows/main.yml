@@ -60,7 +60,7 @@ jobs:
         set +x
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
-        (cd pyvista; make -C doc phtml || true; make -C doc phtml -b coverage SPHINXOPTS="-W")
+        (cd pyvista; make -C doc phtml || true; make -C doc phtml -b coverage)
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
         mv ./pyvista/doc/examples ./locale
