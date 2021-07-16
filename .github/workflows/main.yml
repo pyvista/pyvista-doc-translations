@@ -39,6 +39,7 @@ jobs:
         sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         sudo apt-get install -y --no-install-recommends python3-venv
         sudo apt-get install -y --no-install-recommends libgl1-mesa-glx
+        sudo apt-get install -y --no-install-recommends python3-tk pandoc
         python3 -m venv /home/runner/work/.venv
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
