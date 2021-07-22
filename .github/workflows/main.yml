@@ -61,10 +61,7 @@ jobs:
         set +x
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
-        cd pyvista
-        make gettext || true  # will fail on VTK9
-        make gettext || true  # need it again due to all our docstring examples
-        make gettext
+        (cd pyvista; make -C doc html -b coverage; make -C doc doctest; make -C doc html)
         cd ../
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
