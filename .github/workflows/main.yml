@@ -62,9 +62,9 @@ jobs:
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
         cd pyvista
-        make -C doc phtml -b gettext pot || true  # will fail on VTK9
-        make -C doc phtml -b gettext pot || true  # need it again due to all our docstring examples
-        make -C doc phtml -b gettext pot
+        make gettext || true  # will fail on VTK9
+        make gettext || true  # need it again due to all our docstring examples
+        make gettext
         cd ../
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
