@@ -62,7 +62,7 @@ jobs:
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
         cd pyvista
-        make -C doc phtml || true && make -C doc phtml || true && make -C doc phtml -b coverage SPHINXOPTS="-W"
+        xvfb-run make -C doc phtml
         cd ../
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
