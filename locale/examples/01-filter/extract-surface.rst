@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_01-filter_extract-surface.py:
 
 
+.. _extract_surface_example:
+
 Extract Surface
 ~~~~~~~~~~~~~~~
 
 You can extract the surface of nearly any object within ``pyvista``
 using the ``extract_surface`` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-17
 
 .. code-block:: default
 
@@ -42,14 +44,14 @@ using the ``extract_surface`` filter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-20
+.. GENERATED FROM PYTHON SOURCE LINES 18-22
 
 Create a quadratic cell and extract its surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we create a single quadratic hexahedral cell and then extract its surface
 to demonstrate how to extract the surface of an UnstructuredGrid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-65
+.. GENERATED FROM PYTHON SOURCE LINES 22-67
 
 .. code-block:: default
 
@@ -101,9 +103,10 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-surface_001.png
-    :alt: extract surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_001.png
+   :alt: extract surface
+   :srcset: /examples/01-filter/images/sphx_glr_extract-surface_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -112,14 +115,13 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
  .. code-block:: none
 
-
-    [(4.399842927925485, 4.413866351120371, 4.424940894119638),
-     (0.09983587265014648, 0.11385929584503174, 0.12493383884429932),
-     (0.0, 0.0, 1.0)]
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:60: UserWarning: VTK 9 no longer accepts an offset array
+      grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-73
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-75
 
 Nonlinear Surface Subdivision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,7 +131,7 @@ generate a smooth surface based on the position of the
 containing curvature.  For additional reference, please see:
 https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-76
+.. GENERATED FROM PYTHON SOURCE LINES 75-78
 
 .. code-block:: default
 
@@ -139,28 +141,19 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-surface_002.png
-    :alt: extract surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_002.png
+   :alt: extract surface
+   :srcset: /examples/01-filter/images/sphx_glr_extract-surface_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.493204197957352, 4.5555239535115515, 4.541696927621201),
-     (0.09983587265014648, 0.1621556282043457, 0.14832860231399536),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.382 seconds)
+   **Total running time of the script:** ( 0 minutes  0.873 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:

@@ -18,18 +18,20 @@
 .. _sphx_glr_examples_01-filter_streamlines.py:
 
 
+.. _streamlines_example:
+
 Streamlines
 ~~~~~~~~~~~
 
 Integrate a vector field to generate streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-11
+.. GENERATED FROM PYTHON SOURCE LINES 10-13
 
 This example generates streamlines of blood velocity. An isosurface of speed
 provides context. The starting positions for the streamtubes were determined
 by experimenting with the data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-17
+.. GENERATED FROM PYTHON SOURCE LINES 13-19
 
 .. code-block:: default
 
@@ -46,13 +48,13 @@ by experimenting with the data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-21
+.. GENERATED FROM PYTHON SOURCE LINES 20-23
 
 Carotid
 +++++++
 Download a sample dataset containing a vector field that can be integrated.
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-24
+.. GENERATED FROM PYTHON SOURCE LINES 23-26
 
 .. code-block:: default
 
@@ -66,12 +68,12 @@ Download a sample dataset containing a vector field that can be integrated.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-27
+.. GENERATED FROM PYTHON SOURCE LINES 27-29
 
 Run the stream line filtering algorithm using random seed points inside a 
 sphere with radius of 2.0.
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-38
+.. GENERATED FROM PYTHON SOURCE LINES 29-40
 
 .. code-block:: default
 
@@ -93,12 +95,12 @@ sphere with radius of 2.0.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 Display the results! Please note that because this dataset's velocity field
 was measured with low resolution, many streamlines travel outside the artery.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-51
+.. GENERATED FROM PYTHON SOURCE LINES 43-53
 
 .. code-block:: default
 
@@ -115,31 +117,22 @@ was measured with low resolution, many streamlines travel outside the artery.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_001.png
-    :alt: streamlines
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(182.0, 177.0, 50.0),
-     (139.0, 105.0, 19.0),
-     (-0.19245008972987523, -0.19245008972987523, 0.9622504486493761)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_001.png
+   :alt: streamlines
+   :srcset: /examples/01-filter/images/sphx_glr_streamlines_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-55
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 54-57
 
 Blood Vessels
 +++++++++++++
 Here is another example of blood flow:
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-63
+.. GENERATED FROM PYTHON SOURCE LINES 57-65
 
 .. code-block:: default
 
@@ -158,7 +151,7 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-75
+.. GENERATED FROM PYTHON SOURCE LINES 66-77
 
 .. code-block:: default
 
@@ -176,25 +169,16 @@ Here is another example of blood flow:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_002.png
-    :alt: streamlines
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(10.0, 9.5, -43.0),
-     (87.0, 73.5, 123.0),
-     (-0.502518907629606, -0.7035264706814484, 0.502518907629606)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_002.png
+   :alt: streamlines
+   :srcset: /examples/01-filter/images/sphx_glr_streamlines_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-81
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 78-83
 
 A source mesh can also be provided using the 
 :func:`pyvista.DataSetFilters.streamlines_from_source` 
@@ -202,7 +186,7 @@ filter, for example if an inlet surface is available.  In this example, the
 inlet surface is extracted just inside the domain for use as the seed for
 the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-90
+.. GENERATED FROM PYTHON SOURCE LINES 83-92
 
 .. code-block:: default
 
@@ -231,11 +215,11 @@ the streamlines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-92
+.. GENERATED FROM PYTHON SOURCE LINES 93-94
 
 Plot streamlines colored by the time along the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-104
+.. GENERATED FROM PYTHON SOURCE LINES 94-106
 
 .. code-block:: default
 
@@ -254,31 +238,22 @@ Plot streamlines colored by the time along the streamlines.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_003.png
-    :alt: streamlines
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(10.0, 9.5, -43.0),
-     (87.0, 73.5, 123.0),
-     (-0.502518907629606, -0.7035264706814484, 0.502518907629606)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_003.png
+   :alt: streamlines
+   :srcset: /examples/01-filter/images/sphx_glr_streamlines_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-108
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 107-110
 
 Kitchen
 +++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-113
+.. GENERATED FROM PYTHON SOURCE LINES 110-115
 
 .. code-block:: default
 
@@ -294,7 +269,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-116
+.. GENERATED FROM PYTHON SOURCE LINES 116-118
 
 .. code-block:: default
 
@@ -307,7 +282,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-125
+.. GENERATED FROM PYTHON SOURCE LINES 119-127
 
 .. code-block:: default
 
@@ -322,31 +297,22 @@ Kitchen
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_004.png
-    :alt: streamlines
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-6.68, 11.9, 11.6),
-     (3.5, 2.5, 1.26),
-     (0.4494385524950301, -0.39950093555113786, 0.7990018711022757)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_004.png
+   :alt: streamlines
+   :srcset: /examples/01-filter/images/sphx_glr_streamlines_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 126-129
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 128-131
 
 Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-146
+.. GENERATED FROM PYTHON SOURCE LINES 131-148
 
 .. code-block:: default
 
@@ -374,7 +340,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-150
+.. GENERATED FROM PYTHON SOURCE LINES 149-152
 
 .. code-block:: default
 
@@ -388,7 +354,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-153
+.. GENERATED FROM PYTHON SOURCE LINES 153-155
 
 .. code-block:: default
 
@@ -397,28 +363,19 @@ Custom 3D Vector Field
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_streamlines_005.png
-    :alt: streamlines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_005.png
+   :alt: streamlines
+   :srcset: /examples/01-filter/images/sphx_glr_streamlines_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.2, 1.2, 1.2),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  25.464 seconds)
+   **Total running time of the script:** ( 0 minutes  13.701 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

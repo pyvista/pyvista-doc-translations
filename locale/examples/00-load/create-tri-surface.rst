@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_00-load_create-tri-surface.py:
 
 
+.. _triangulated_surface:
+
 Create Triangulated Surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a surface from a set of points through a Delaunay triangulation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-12
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
@@ -39,14 +41,14 @@ Create a surface from a set of points through a Delaunay triangulation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-17
+.. GENERATED FROM PYTHON SOURCE LINES 15-19
 
 Simple Triangulations
 +++++++++++++++++++++
 
 First, create some points for the surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-30
+.. GENERATED FROM PYTHON SOURCE LINES 19-32
 
 .. code-block:: default
 
@@ -74,20 +76,20 @@ First, create some points for the surface.
  .. code-block:: none
 
 
-    array([[-198.60452071, -199.48969056,    1.90251286],
-           [-179.32571889, -199.48969056,    2.73868446],
-           [-159.63451754, -199.48969056,    3.82364591],
-           [-133.42026798, -199.48969056,    5.61428902],
-           [-115.66662599, -199.48969056,    7.00360443]])
+    array([[-198.16064669, -199.27285558,    1.92765559],
+           [-177.38686784, -199.27285558,    2.84732966],
+           [-153.1313395 , -199.27285558,    4.25130622],
+           [-139.70644386, -199.27285558,    5.17475562],
+           [-114.59467135, -199.27285558,    7.12129579]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-33
+.. GENERATED FROM PYTHON SOURCE LINES 33-35
 
 Now use those points to create a point cloud PyVista data object. This will
 be encompassed in a :class:`pyvista.PolyData` object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-38
+.. GENERATED FROM PYTHON SOURCE LINES 35-40
 
 .. code-block:: default
 
@@ -99,30 +101,21 @@ be encompassed in a :class:`pyvista.PolyData` object.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
-    :alt: create tri surface
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(641.3108508430869, 636.6228443977075, 688.8092589955622),
-     (2.7648944512534257, -1.9231119941259465, 50.26330260372878),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
+   :alt: create tri surface
+   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 Now that we have a PyVista data structure of the points, we can perform a
 triangulation to turn those boring discrete points into a connected surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-46
+.. GENERATED FROM PYTHON SOURCE LINES 43-48
 
 .. code-block:: default
 
@@ -134,31 +127,22 @@ triangulation to turn those boring discrete points into a connected surface.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
-    :alt: create tri surface
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(641.3108508430869, 636.6228443977075, 688.8092589955622),
-     (2.7648944512534257, -1.9231119941259465, 50.26330260372878),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
+   :alt: create tri surface
+   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-50
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 Masked Triangulations
 +++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-63
+.. GENERATED FROM PYTHON SOURCE LINES 52-65
 
 .. code-block:: default
 
@@ -188,8 +172,8 @@ Masked Triangulations
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>100</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
-    <tr><td>X Bounds</td><td>3.574e-02, 9.234e+00</td></tr>
-    <tr><td>Y Bounds</td><td>4.915e-02, 9.285e+00</td></tr>
+    <tr><td>X Bounds</td><td>6.109e-02, 9.267e+00</td></tr>
+    <tr><td>Y Bounds</td><td>1.550e-03, 9.297e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -199,11 +183,11 @@ Masked Triangulations
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-65
+.. GENERATED FROM PYTHON SOURCE LINES 66-67
 
 Run the triangulation on these points
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-69
+.. GENERATED FROM PYTHON SOURCE LINES 67-71
 
 .. code-block:: default
 
@@ -214,30 +198,21 @@ Run the triangulation on these points
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
-    :alt: create tri surface
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.634907434185802, 4.667193981465461, 25.181933409477317),
-     (4.634907434185802, 4.667193981465461, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
+   :alt: create tri surface
+   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-72
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 72-74
 
 Note that some of the outer edges are unconstrained and the triangulation
 added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-76
+.. GENERATED FROM PYTHON SOURCE LINES 74-78
 
 .. code-block:: default
 
@@ -248,30 +223,21 @@ added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
-    :alt: create tri surface
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.634907434185802, 4.667193981465461, 25.181933409477317),
-     (4.634907434185802, 4.667193981465461, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
+   :alt: create tri surface
+   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-79
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-81
 
 We could also add a polygon to ignore during the triangulation via the
 ``edge_source`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-96
+.. GENERATED FROM PYTHON SOURCE LINES 81-98
 
 .. code-block:: default
 
@@ -295,28 +261,19 @@ We could also add a polygon to ignore during the triangulation via the
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
-    :alt: create tri surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
+   :alt: create tri surface
+   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.634907434185802, 4.667193981465461, 25.181933409477317),
-     (4.634907434185802, 4.667193981465461, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.829 seconds)
+   **Total running time of the script:** ( 0 minutes  1.772 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_03-widgets_line-widget.py:
 
 
+.. _line_widget_example:
+
 Line Widget
 ~~~~~~~~~~~
 
@@ -31,7 +33,7 @@ One particularly fun example is to use the line widget to create a source for
 the :func:`pyvista.DataSetFilters.streamlines` filter. Again note the use of
 the ``name`` argument in ``add_mesh``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-28
+.. GENERATED FROM PYTHON SOURCE LINES 17-30
 
 .. code-block:: default
 
@@ -55,7 +57,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-45
+.. GENERATED FROM PYTHON SOURCE LINES 31-47
 
 .. code-block:: default
 
@@ -78,25 +80,16 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_line-widget_001.png
-    :alt: line widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(15.271875542188045, 14.271875516576674, 13.021875516576674),
-     (3.505000025033951, 2.50499999942258, 1.25499999942258),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_line-widget_001.png
+   :alt: line widget
+   :srcset: /examples/03-widgets/images/sphx_glr_line-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 And here is a screen capture of a user interacting with this
 
@@ -105,7 +98,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.967 seconds)
+   **Total running time of the script:** ( 0 minutes  1.063 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_cell-centers.py:
 
 
+.. _cell_centers_example:
+
 Extract Cell Centers
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -25,7 +27,7 @@ Extract the coordinates of the centers of all cells/faces in a mesh.
 
 Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-13
+.. GENERATED FROM PYTHON SOURCE LINES 11-15
 
 .. code-block:: default
 
@@ -40,11 +42,11 @@ Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-15
+.. GENERATED FROM PYTHON SOURCE LINES 16-17
 
 First let's fetch the centers of a mesh with 2D geometries (a surface)
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-29
+.. GENERATED FROM PYTHON SOURCE LINES 17-31
 
 .. code-block:: default
 
@@ -65,29 +67,20 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_cell-centers_001.png
-    :alt: cell centers
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.192871661244108, 5.687542355343226, -4.95345468836544),
-     (0.48853358141600634, 1.2019347531215714, 0.1656178278582367),
-     (-0.40642070472687936, 0.8621356761976646, 0.30256286387543047)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_001.png
+   :alt: cell centers
+   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-33
 
 We can also do this for full 3D meshes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-46
+.. GENERATED FROM PYTHON SOURCE LINES 33-48
 
 .. code-block:: default
 
@@ -109,25 +102,16 @@ We can also do this for full 3D meshes.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_cell-centers_002.png
-    :alt: cell centers
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.704583323659036, 0.7822568412034183, 1.7251126717482546),
-     (3.543391913452799, 0.31117673768140197, 0.16407006760146028),
-     (0.14811717957115164, 0.9659969824610202, -0.21192246457629454)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_002.png
+   :alt: cell centers
+   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 49-54
 
 .. code-block:: default
 
@@ -139,28 +123,19 @@ We can also do this for full 3D meshes.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_cell-centers_003.png
-    :alt: cell centers
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_003.png
+   :alt: cell centers
+   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.704583323659036, 0.7822568412034183, 1.7251126717482546),
-     (3.543391913452799, 0.31117673768140197, 0.16407006760146028),
-     (0.14811717957115164, 0.9659969824610202, -0.21192246457629454)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.441 seconds)
+   **Total running time of the script:** ( 0 minutes  1.908 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

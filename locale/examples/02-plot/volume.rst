@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_02-plot_volume.py:
 
 
+.. _volume_rendering_example:
+
 Volume Rendering
 ~~~~~~~~~~~~~~~~
 
@@ -28,7 +30,7 @@ This also explores how to extract a volume of interest (VOI) from a
 :class:`pyvista.UniformGrid` using the
 :func:`pyvista.UniformGridFilters.extract_subset` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-21
+.. GENERATED FROM PYTHON SOURCE LINES 14-23
 
 .. code-block:: default
 
@@ -73,13 +75,13 @@ This also explores how to extract a volume of interest (VOI) from a
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-25
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 Simple Volume Render
 ++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-32
+.. GENERATED FROM PYTHON SOURCE LINES 27-34
 
 .. code-block:: default
 
@@ -93,25 +95,16 @@ Simple Volume Render
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_001.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-381.74, -46.02, 216.54),
-     (74.8305, 89.2905, 100.0),
-     (0.23011692910752757, 0.07203660389453036, 0.9704931358013119)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_001.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-38
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 35-40
 
 Opacity Mappings
 ++++++++++++++++
@@ -119,7 +112,7 @@ Opacity Mappings
 Or use the :func:`pyvista.BasePlotter.add_volume` method like below.
 Note that here we use a non-default opacity mapping to a sigmoid:
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-44
+.. GENERATED FROM PYTHON SOURCE LINES 40-46
 
 .. code-block:: default
 
@@ -132,29 +125,20 @@ Note that here we use a non-default opacity mapping to a sigmoid:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_002.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-381.74, -46.02, 216.54),
-     (74.8305, 89.2905, 100.0),
-     (0.23011692910752757, 0.07203660389453036, 0.9704931358013119)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_002.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 47-48
 
 You can also use a custom opacity mapping
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-53
+.. GENERATED FROM PYTHON SOURCE LINES 48-55
 
 .. code-block:: default
 
@@ -168,30 +152,21 @@ You can also use a custom opacity mapping
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_003.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-381.74, -46.02, 216.54),
-     (74.8305, 89.2905, 100.0),
-     (0.23011692910752757, 0.07203660389453036, 0.9704931358013119)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_003.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-56
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-58
 
 We can also use a shading technique when volume rendering with the ``shade``
 option
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-66
+.. GENERATED FROM PYTHON SOURCE LINES 58-68
 
 .. code-block:: default
 
@@ -208,32 +183,23 @@ option
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_004.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-381.74, -46.02, 216.54),
-     (74.8305, 89.2905, 100.0),
-     (0.23011692910752757, 0.07203660389453036, 0.9704931358013119)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_004.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-71
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 69-73
 
 Cool Volume Examples
 ++++++++++++++++++++
 
 Here are a few more cool volume rendering examples
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-79
+.. GENERATED FROM PYTHON SOURCE LINES 73-81
 
 .. code-block:: default
 
@@ -248,25 +214,16 @@ Here are a few more cool volume rendering examples
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_005.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-228.0, -418.0, -158.0),
-     (94.0, 122.0, 82.0),
-     (-0.20628424925175867, -0.309426373877638, 0.928279121632914)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_005.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-88
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 82-90
 
 .. code-block:: default
 
@@ -281,25 +238,16 @@ Here are a few more cool volume rendering examples
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_006.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(206.821456176791, 233.321456176791, 204.821456176791),
-     (34.5, 61.0, 32.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_006.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-100
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-102
 
 .. code-block:: default
 
@@ -317,25 +265,16 @@ Here are a few more cool volume rendering examples
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_007.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(929.0, 1067.0, -278.9),
-     (249.5, 234.5, 101.25),
-     (-0.20481018239133267, -0.2632130859638611, -0.942746869825729)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_007.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_007.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-108
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 103-110
 
 Extracting a VOI
 ++++++++++++++++
@@ -345,7 +284,7 @@ a volume of interest/subset volume to volume render. This is ideal when
 dealing with particularly large volumes and you want to volume render only
 a specific region.
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-113
+.. GENERATED FROM PYTHON SOURCE LINES 110-115
 
 .. code-block:: default
 
@@ -386,7 +325,7 @@ a specific region.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-123
+.. GENERATED FROM PYTHON SOURCE LINES 116-125
 
 .. code-block:: default
 
@@ -402,25 +341,16 @@ a specific region.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_008.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(962759.682893736, 4390399.944685736, 385481.9418857361),
-     (552532.741008, 3980173.0028, -24745.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_008.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_008.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-130
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 126-132
 
 Woah, that's a big volume! We probably don't want to volume render the
 whole thing. So let's extract a region of interest under the volcano.
@@ -429,7 +359,7 @@ The region we will extract will be between nodes 175 and 200 on the x-axis,
 between nodes 105 and 132 on the y-axis, and between nodes 98 and 170 on
 the z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-138
+.. GENERATED FROM PYTHON SOURCE LINES 132-140
 
 .. code-block:: default
 
@@ -444,29 +374,20 @@ the z-axis.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_009.png
-    :alt: volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(962759.6918857361, 4390399.941885736, 385481.9418857361),
-     (552532.75, 3980173.0, -24745.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_009.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_009.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-140
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 141-142
 
 Ah, much better. Let's now volume render that region of interest!
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-148
+.. GENERATED FROM PYTHON SOURCE LINES 142-150
 
 .. code-block:: default
 
@@ -481,28 +402,19 @@ Ah, much better. Let's now volume render that region of interest!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_volume_010.png
-    :alt: volume
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_volume_010.png
+   :alt: volume
+   :srcset: /examples/02-plot/images/sphx_glr_volume_010.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(531554.5542909054, 3944331.800171338, 26563.04809259223),
-     (599088.1433822059, 3982089.287834022, -11965.14728669936),
-     (0.37385458924157344, 0.24431281037731903, 0.8947312427698894)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  42.797 seconds)
+   **Total running time of the script:** ( 0 minutes  21.045 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:

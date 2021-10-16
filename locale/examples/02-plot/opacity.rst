@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_02-plot_opacity.py:
 
 
+.. _plot_opacity_example:
+
 Plot with Opacity
 ~~~~~~~~~~~~~~~~~
 
 Plot a mesh's scalar array with an opacity transfer function or opacity mapping
 based on a scalar array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-17
+.. GENERATED FROM PYTHON SOURCE LINES 10-19
 
 .. code-block:: default
 
@@ -44,7 +46,7 @@ based on a scalar array.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-23
+.. GENERATED FROM PYTHON SOURCE LINES 20-25
 
 Global Value
 ++++++++++++
@@ -52,7 +54,7 @@ Global Value
 You can also apply a global opacity value to the mesh by passing a single
 float between 0 and 1 which would enable you to see objects behind the mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-29
+.. GENERATED FROM PYTHON SOURCE LINES 25-31
 
 .. code-block:: default
 
@@ -65,30 +67,21 @@ float between 0 and 1 which would enable you to see objects behind the mesh:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_001.png
-    :alt: opacity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(582074.6534978079, 5134221.153497808, 21193.15349780787),
-     (562835.0, 5114981.5, 1953.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_001.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-34
 
 Note that you can specify ``use_transparency=True`` to convert opacities to
 transparencies in any of the following examples.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-51
+.. GENERATED FROM PYTHON SOURCE LINES 37-53
 
 Transfer Functions
 ++++++++++++++++++
@@ -107,7 +100,7 @@ Opacity transfer functions are:
 - ``'sigmoid'``: vary (increase) opacity on a sigmoidal s-curve across the plotted scalar range from low to high
 - ``'sigmoid_r'``: vary (increase) opacity on a sigmoidal s-curve across the plotted scalar range from high to low
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-55
+.. GENERATED FROM PYTHON SOURCE LINES 53-57
 
 .. code-block:: default
 
@@ -118,25 +111,16 @@ Opacity transfer functions are:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_002.png
-    :alt: opacity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_002.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-62
 
 .. code-block:: default
 
@@ -147,31 +131,22 @@ Opacity transfer functions are:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_003.png
-    :alt: opacity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_003.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-64
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 63-66
 
 It's also possible to use your own transfer function that will be linearly
 mapped to the scalar array plotted. For example, we can create an opacity
 mapping as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-66
+.. GENERATED FROM PYTHON SOURCE LINES 66-68
 
 .. code-block:: default
 
@@ -184,7 +159,7 @@ mapping as:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-72
+.. GENERATED FROM PYTHON SOURCE LINES 69-74
 
 When given a minimized opacity mapping like that above, PyVista interpolates
 it across a range of how many colors are shown when mapping the scalars.
@@ -192,7 +167,7 @@ If ``scipy`` is available, then a quadratic interpolation is used -
 otherwise, a simple linear interpolation is used.
 Curious what that opacity transfer function looks like? You can fetch it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-83
+.. GENERATED FROM PYTHON SOURCE LINES 74-85
 
 .. code-block:: default
 
@@ -210,21 +185,22 @@ Curious what that opacity transfer function looks like? You can fetch it:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_004.png
-    :alt: My Interpolated Opacity Transfer Function
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_004.png
+   :alt: My Interpolated Opacity Transfer Function
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_004.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-87
+.. GENERATED FROM PYTHON SOURCE LINES 86-89
 
 That opacity mapping will have an opacity of 0.0 at the minimum scalar range,
 a value or 0.9 at the middle of the scalar range, and a value of 0.3 at the
 maximum of the scalar range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-90
+.. GENERATED FROM PYTHON SOURCE LINES 89-92
 
 .. code-block:: default
 
@@ -234,30 +210,21 @@ maximum of the scalar range:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_005.png
-    :alt: opacity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_005.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-93
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 93-95
 
 Opacity mapping is often useful when plotting DICOM images. For example,
 download the sample knee DICOM image:
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-95
+.. GENERATED FROM PYTHON SOURCE LINES 95-97
 
 .. code-block:: default
 
@@ -270,11 +237,11 @@ download the sample knee DICOM image:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-97
+.. GENERATED FROM PYTHON SOURCE LINES 98-99
 
 And here we inspect the DICOM image with a few different opacity mappings:
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-119
+.. GENERATED FROM PYTHON SOURCE LINES 99-121
 
 .. code-block:: default
 
@@ -303,25 +270,16 @@ And here we inspect the DICOM image with a few different opacity mappings:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_006.png
-    :alt: opacity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(109.78834672272205, 109.78834672272205, 599.8946826509293),
-     (109.78834672272205, 109.78834672272205, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_006.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-130
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 122-132
 
 Opacity by Array
 ++++++++++++++++
@@ -334,7 +292,7 @@ a mesh that are uncertain and highlight regions that are well resolved.
 The following is a demonstration of plotting a mesh with colored values and
 using a second array to control the transparency of the mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-135
+.. GENERATED FROM PYTHON SOURCE LINES 132-137
 
 .. code-block:: default
 
@@ -358,7 +316,7 @@ using a second array to control the transparency of the mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-142
+.. GENERATED FROM PYTHON SOURCE LINES 138-144
 
 Make sure to flag ``use_transparency=True`` since we want areas of high
 variance to have high transparency.
@@ -367,7 +325,7 @@ Also, since the opacity array must be between 0 and 1, we normalize
 the temperature variance array by the maximum value.  That way high
 variance will be completely transparent.
 
-.. GENERATED FROM PYTHON SOURCE LINES 142-159
+.. GENERATED FROM PYTHON SOURCE LINES 144-161
 
 .. code-block:: default
 
@@ -391,28 +349,19 @@ variance will be completely transparent.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_opacity_007.png
-    :alt: opacity
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_007.png
+   :alt: opacity
+   :srcset: /examples/02-plot/images/sphx_glr_opacity_007.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(375736.26585408027, 4300589.54710408, 38497.29710408029),
-     (337038.96875, 4261892.25, -200.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.791 seconds)
+   **Total running time of the script:** ( 0 minutes  10.795 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_opacity.py:

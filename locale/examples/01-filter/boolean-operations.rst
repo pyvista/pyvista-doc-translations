@@ -18,27 +18,46 @@
 .. _sphx_glr_examples_01-filter_boolean-operations.py:
 
 
+.. _boolean_example:
+
 Boolean Operations
 ~~~~~~~~~~~~~~~~~~
 
-Perform boolean operations with closed surfaces (intersect, cut, etc.).
+Perform boolean operations with closed (manifold) surfaces.
 
-Boolean/topological operations (intersect, cut, etc.) methods are implemented
-for :class:`pyvista.PolyData` mesh types only and are accessible directly from
-any :class:`pyvista.PolyData` mesh. Check out :class:`pyvista.PolyDataFilters`
-and take a look at the following filters:
+Boolean/topological operations (intersect, union, difference) methods
+are implemented for :class:`pyvista.PolyData` mesh types only and are
+accessible directly from any :class:`pyvista.PolyData` mesh. Check out
+:class:`pyvista.PolyDataFilters` and take a look at the following
+filters:
 
-* :func:`pyvista.PolyDataFilters.boolean_add`
-* :func:`pyvista.PolyDataFilters.boolean_cut`
 * :func:`pyvista.PolyDataFilters.boolean_difference`
 * :func:`pyvista.PolyDataFilters.boolean_union`
+* :func:`pyvista.PolyDataFilters.boolean_intersection`
 
-For merging, the ``+`` operator can be used between any two meshes in PyVista
-which simply calls the ``.merge()`` filter to combine any two meshes.
-Similarly, the ``-`` operator can be used between any two :class:`pyvista.PolyData`
-meshes in PyVista to cut the first mesh by the second.
+Essentially, boolean union, difference, and intersection are all the
+same operation. Just different parts of the objects are kept at the
+end.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-41
+The ``-`` operator can be used between any two :class:`pyvista.PolyData`
+meshes in PyVista to cut the first mesh by the second.  These meshes
+must be all triangle meshes, which you can check with
+:attr:`pyvista.PolyData.is_all_triangles`.
+
+.. note::
+   For merging, the ``+`` operator can be used between any two meshes
+   in PyVista which simply calls the ``.merge()`` filter to combine
+   any two meshes.  This is different from ``boolean_union`` as it
+   simply superimposes the two meshes without performing additional
+   calculations on the result.
+
+.. warning::
+   If your boolean operations don't react the way you think they
+   should (i.e. the wrong parts disappear), one of your meshes
+   probably has its normals pointing inward. Use
+   :func:`pyvista.PolyDataFilters.plot_normals` to visualize the normals.
+
+.. GENERATED FROM PYTHON SOURCE LINES 43-52
 
 .. code-block:: default
 
@@ -47,247 +66,260 @@ meshes in PyVista to cut the first mesh by the second.
     import pyvista as pv
     import numpy as np
 
-    def make_cube():
-        x = np.linspace(-0.5, 0.5, 25)
-        grid = pv.StructuredGrid(*np.meshgrid(x, x, x))
-        return grid.extract_surface().triangulate()
+    sphere_a = pv.Sphere()
+    sphere_b = pv.Sphere(center=(0.5, 0, 0))
 
-    # Create to example PolyData meshes for boolean operations
-    sphere = pv.Sphere(radius=0.65, center=(0, 0, 0))
-    cube = make_cube()
 
-    p = pv.Plotter()
-    p.add_mesh(sphere, color="yellow", opacity=0.5, show_edges=True)
-    p.add_mesh(cube, color="royalblue", opacity=0.5, show_edges=True)
-    p.show()
 
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
 
- Out:
-
- .. code-block:: none
-
-
-    [(2.5043836950059895, 2.5043836950059895, 2.5043836950059895),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 42-50
-
-Boolean Add
-+++++++++++
-
-Add all of the two meshes together using the
-:func:`pyvista.PolyDataFilters.boolean_add` filter or the ``+`` operator.
-
-Order of operations does not matter for boolean add as the entirety of both
-meshes are appended together.
-
-.. GENERATED FROM PYTHON SOURCE LINES 50-55
-
-.. code-block:: default
-
-
-    add = sphere + cube
-    add.plot(opacity=0.5, color=True, show_edges=True)
-
-
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.5043836950059895, 2.5043836950059895, 2.5043836950059895),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 56-64
-
-Boolean Cut
-+++++++++++
-
-Perform a boolean cut of ``a`` using ``b`` with the
-:func:`pyvista.PolyDataFilters.boolean_cut` filter or the ``-`` operator
-since both meshes are :class:`pyvista.PolyData`.
-
-Order of operations does not matter for boolean cut.
-
-.. GENERATED FROM PYTHON SOURCE LINES 64-72
-
-.. code-block:: default
-
-
-    cut = cube - sphere
-
-    p = pv.Plotter()
-    p.add_mesh(cut, opacity=0.5, show_edges=True, color=True)
-    p.show()
-
-
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.5043836950059895, 2.5043836950059895, 2.5043836950059895),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 73-81
-
-Boolean Difference
-++++++++++++++++++
-
-Combine two meshes and retains only the volume in common between the meshes
-using the :func:`pyvista.PolyDataFilters.boolean_difference` method.
-
-Note that the order of operations for a boolean difference will affect the
-results.
-
-.. GENERATED FROM PYTHON SOURCE LINES 81-89
-
-.. code-block:: default
-
-
-    diff = sphere.boolean_difference(cube)
-
-    p = pv.Plotter()
-    p.add_mesh(diff, opacity=0.5, show_edges=True, color=True)
-    p.show()
-
-
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9318516525781368, 1.9318516525781368, 1.9318516525781368),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 90-97
-
-.. code-block:: default
-
-
-    diff = cube.boolean_difference(sphere)
-
-    p = pv.Plotter()
-    p.add_mesh(diff, opacity=0.5, show_edges=True, color=True)
-    p.show()
-
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.5043836950059895, 2.5043836950059895, 2.5043836950059895),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 98-105
+.. GENERATED FROM PYTHON SOURCE LINES 53-64
 
 Boolean Union
 +++++++++++++
 
-Combine two meshes and attempts to create a manifold mesh using the
-:func:`pyvista.PolyDataFilters.boolean_union` method.
+Perform a boolean union of ``A`` and ``B`` using the
+:func:`pyvista.PolyDataFilters.boolean_union` filter.
 
-Order of operations does not matter for boolean union.
+The union of two manifold meshes ``A`` and ``B`` is the mesh
+which is in ``A``, in ``B``, or in both ``A`` and ``B``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-111
+Order of operands does not matter for boolean union (the operation is
+commutative).
+
+.. GENERATED FROM PYTHON SOURCE LINES 64-75
 
 .. code-block:: default
 
 
-    union = sphere.boolean_union(cube)
-
-    p = pv.Plotter()
-    p.add_mesh(union,  opacity=0.5, show_edges=True, color=True)
-    p.show()
-
-
-
-.. image:: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
-    :alt: boolean operations
-    :class: sphx-glr-single-img
+    result = sphere_a.boolean_union(sphere_b)
+    pl = pv.Plotter()
+    _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
+    _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
+    _ = pl.add_mesh(result, color='tan')
+    pl.camera_position = 'xz'
+    pl.show()
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
 
 
-    [(1.9318516525781368, 1.9318516525781368, 1.9318516525781368),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 76-87
+
+Boolean Difference
+++++++++++++++++++
+
+Perform a boolean difference of ``A`` and ``B`` using the
+:func:`pyvista.PolyDataFilters.boolean_difference` filter or the
+``-`` operator since both meshes are :class:`pyvista.PolyData`.
+
+The difference of two manifold meshes ``A`` and ``B`` is the volume
+of the mesh in ``A`` not belonging to ``B``.
+
+Order of operands matters for boolean difference.
+
+.. GENERATED FROM PYTHON SOURCE LINES 87-97
+
+.. code-block:: default
+
+
+    result = sphere_a.boolean_difference(sphere_b)
+    pl = pv.Plotter()
+    _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
+    _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
+    _ = pl.add_mesh(result, color='tan')
+    pl.camera_position = 'xz'
+    pl.show()
+
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 98-109
+
+Boolean Intersection
+++++++++++++++++++++
+
+Perform a boolean intersection of ``A`` and ``B`` using the
+:func:`pyvista.PolyDataFilters.boolean_intersection` filter.
+
+The intersection of two manifold meshes ``A`` and ``B`` is the mesh
+which is the volume of ``A`` that is also in ``B``.
+
+Order of operands does not matter for boolean intersection (the
+operation is commutative).
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-120
+
+.. code-block:: default
+
+
+    result = sphere_a.boolean_intersection(sphere_b)
+    pl = pv.Plotter()
+    _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
+    _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
+    _ = pl.add_mesh(result, color='tan')
+    pl.camera_position = 'xz'
+    pl.show()
+
+
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 121-128
+
+Behavior due to flipped normals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Note that these boolean filters behave differently depending on the
+orientation of the normals.
+
+Boolean difference with both cube and sphere normals pointed
+outward.  This is the "normal" behavior.
+
+.. GENERATED FROM PYTHON SOURCE LINES 128-135
+
+.. code-block:: default
+
+
+    cube = pv.Cube().triangulate().subdivide(3)
+    sphere = pv.Sphere(radius=0.6)
+    result = cube.boolean_difference(sphere)
+    result.plot(color='tan')
+
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 136-137
+
+Boolean difference with cube normals outward, sphere inward.
+
+.. GENERATED FROM PYTHON SOURCE LINES 137-145
+
+.. code-block:: default
+
+
+    cube = pv.Cube().triangulate().subdivide(3)
+    sphere = pv.Sphere(radius=0.6)
+    sphere.flip_normals()
+    result = cube.boolean_difference(sphere)
+    result.plot(color='tan')
+
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 146-147
+
+Boolean difference with cube normals inward, sphere outward.
+
+.. GENERATED FROM PYTHON SOURCE LINES 147-155
+
+.. code-block:: default
+
+
+    cube = pv.Cube().triangulate().subdivide(3)
+    cube.flip_normals()
+    sphere = pv.Sphere(radius=0.6)
+    result = cube.boolean_difference(sphere)
+    result.plot(color='tan')
+
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 156-157
+
+Both cube and sphere normals inward.
+
+.. GENERATED FROM PYTHON SOURCE LINES 157-165
+
+.. code-block:: default
+
+
+    cube = pv.Cube().triangulate().subdivide(3)
+    cube.flip_normals()
+    sphere = pv.Sphere(radius=0.6)
+    sphere.flip_normals()
+    result = cube.boolean_difference(sphere)
+    result.plot(color='tan')
+
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
+   :alt: boolean operations
+   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
+   :class: sphx-glr-single-img
+
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.444 seconds)
+   **Total running time of the script:** ( 0 minutes  8.291 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:

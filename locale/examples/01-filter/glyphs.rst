@@ -52,42 +52,33 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 
 
     mesh = examples.download_carotid().threshold(145, scalars="scalars")
+    mask = mesh['scalars'] < 210
+    mesh['scalars'][mask] = 0  # null out smaller vectors
 
     # Make a geometric object to use as the glyph
     geom = pv.Arrow()  # This could be any dataset
 
     # Perform the glyph
-    glyphs = mesh.glyph(orient="vectors", scale="scalars", factor=0.005, geom=geom)
+    glyphs = mesh.glyph(orient="vectors", scale="scalars", factor=0.003, geom=geom)
 
     # plot using the plotting class
-    p = pv.Plotter()
-    p.add_mesh(glyphs)
-    # Set a cool camera position
-    p.camera_position = [
-        (84.58052237950857, 77.76332116787425, 27.208569926456548),
-        (131.39486171068918, 99.871379394528, 20.082859824932008),
-        (0.13483731007732908, 0.033663777790747404, 0.9902957385932576),
-    ]
-    p.show()
+    pl = pv.Plotter()
+    pl.add_mesh(glyphs, show_scalar_bar=False, lighting=False, cmap='coolwarm')
+    pl.camera_position = [(146.53, 91.28, 21.70),
+                          (125.00, 94.45, 19.81),
+                          (-0.086, 0.007, 0.996)]  # view only part of the vector field
+    cpos = pl.show(return_cpos=True)
 
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_glyphs_001.png
-    :alt: glyphs
-    :class: sphx-glr-single-img
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_001.png
+   :alt: glyphs
+   :srcset: /examples/01-filter/images/sphx_glr_glyphs_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(84.58052237950857, 77.76332116787425, 27.208569926456548),
-     (131.39486171068918, 99.871379394528, 20.082859824932008),
-     (0.13483731007732908, 0.033663777790747404, 0.9902957385932576)]
 
 
 
@@ -96,7 +87,7 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 Another approach is to load the vectors directly to the mesh object and then
 access the :attr:`pyvista.DataSet.arrows` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-58
+.. GENERATED FROM PYTHON SOURCE LINES 40-59
 
 .. code-block:: default
 
@@ -113,40 +104,35 @@ access the :attr:`pyvista.DataSet.arrows` property.
     ).T
 
     # add and scale
-    sphere.vectors = vectors * 0.3
+    sphere["vectors"] = vectors * 0.3
+    sphere.set_active_vectors("vectors")
 
     # plot just the arrows
-    sphere.arrows.plot(scalars='GlyphScale')
+    sphere.arrows.plot()
 
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_glyphs_002.png
-    :alt: glyphs
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(12.5513618839598, 12.40606614478591, 12.405708636126548),
-     (0.0, -0.14529573917388916, -0.14565324783325195),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_002.png
+   :alt: glyphs
+   :srcset: /examples/01-filter/images/sphx_glr_glyphs_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-68
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-61
+
+Plot the arrows and the sphere.
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-69
 
 .. code-block:: default
 
 
-    # plot the arrows and the sphere
     p = pv.Plotter()
-    p.add_mesh(sphere.arrows, scalars='GlyphScale', lighting=False,
+    p.add_mesh(sphere.arrows, lighting=False,
                scalar_bar_args={'title': "Vector Magnitude"})
     p.add_mesh(sphere, color="grey", ambient=0.6, opacity=0.5, show_edges=False)
     p.show()
@@ -155,25 +141,16 @@ access the :attr:`pyvista.DataSet.arrows` property.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_glyphs_003.png
-    :alt: glyphs
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(12.5513618839598, 12.40606614478591, 12.405708636126548),
-     (0.0, -0.14529573917388916, -0.14565324783325195),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_003.png
+   :alt: glyphs
+   :srcset: /examples/01-filter/images/sphx_glr_glyphs_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-76
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 70-77
 
 Subset of Glyphs
 ++++++++++++++++
@@ -183,7 +160,7 @@ this case, you can choose to build glyphs for a subset of the input dataset
 by using a merging tolerance. Here we specify a merging tolerance of five
 percent which equates to five percent of the bounding box's length.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-87
+.. GENERATED FROM PYTHON SOURCE LINES 77-88
 
 .. code-block:: default
 
@@ -196,33 +173,24 @@ percent which equates to five percent of the bounding box's length.
 
     p = pv.Plotter()
     p.add_mesh(arrows, color="black")
-    p.add_mesh(mesh, scalars="Elevation", cmap="terrain")
+    p.add_mesh(mesh, scalars="Elevation", cmap="terrain", smooth_shading=True)
     p.show()
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_glyphs_004.png
-    :alt: glyphs
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_004.png
+   :alt: glyphs
+   :srcset: /examples/01-filter/images/sphx_glr_glyphs_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(34.993665425011, 45.120623825022065, 39.33712918860563),
-     (-0.044190406799316406, 10.082767993211746, 4.299273356795311),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.930 seconds)
+   **Total running time of the script:** ( 0 minutes  3.396 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:

@@ -18,36 +18,25 @@
 .. _sphx_glr_examples_01-filter_poly-ray-trace.py:
 
 
+.. _ray_trace_example:
+
 Ray Tracing
 ~~~~~~~~~~~
 
 Single line segment ray tracing for PolyData objects.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-34
+.. GENERATED FROM PYTHON SOURCE LINES 9-36
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
-    :alt: poly ray trace
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.37793313327261, 3.4558812266869166, 3.37793313327261),
-     (0.0, 0.07794809341430664, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
+   :alt: poly ray trace
+   :srcset: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
+   :class: sphx-glr-single-img
 
 
 
 
-
-|
 
 .. code-block:: default
 
@@ -82,7 +71,7 @@ Single line segment ray tracing for PolyData objects.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.516 seconds)
+   **Total running time of the script:** ( 0 minutes  0.376 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_poly-ray-trace.py:

@@ -18,36 +18,25 @@
 .. _sphx_glr_examples_02-plot_floors.py:
 
 
+.. _floors_example:
+
 Plot with Floors
 ~~~~~~~~~~~~~~~~
 
 Add a floor/wall at the boundary of the rendering scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-18
+.. GENERATED FROM PYTHON SOURCE LINES 9-20
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_floors_001.png
-    :alt: floors
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.2918153515185688, 0.4226454997535322, 0.2930908499385689),
-     (-0.005878899246454239, 0.12495124898850918, -0.004603400826454163),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_floors_001.png
+   :alt: floors
+   :srcset: /examples/02-plot/images/sphx_glr_floors_001.png
+   :class: sphx-glr-single-img
 
 
 
 
-
-|
 
 .. code-block:: default
 
@@ -66,7 +55,7 @@ Add a floor/wall at the boundary of the rendering scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.016 seconds)
+   **Total running time of the script:** ( 0 minutes  4.119 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_floors.py:

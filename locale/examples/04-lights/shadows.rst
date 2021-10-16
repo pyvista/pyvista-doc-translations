@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_04-lights_shadows.py:
 
 
+.. _light_shadows_example:
+
 Shadows
 ~~~~~~~
 
 Demonstrate the usage of lights and shadows in PyVista.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-18
+.. GENERATED FROM PYTHON SOURCE LINES 9-20
 
 .. code-block:: default
 
@@ -45,7 +47,7 @@ Demonstrate the usage of lights and shadows in PyVista.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-26
+.. GENERATED FROM PYTHON SOURCE LINES 21-28
 
 Using two lights, plot the Stanford Dragon with shadows.
 
@@ -55,7 +57,7 @@ Using two lights, plot the Stanford Dragon with shadows.
    parameter.  An initial window size of ``(1000, 1000)`` seems to
    work well, which can be manually resized without issue.
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-71
+.. GENERATED FROM PYTHON SOURCE LINES 28-73
 
 .. code-block:: default
 
@@ -107,31 +109,22 @@ Using two lights, plot the Stanford Dragon with shadows.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_shadows_001.png
-    :alt: shadows
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.6794883905125556, 0.6682869492245612, 0.794861828736752),
-     (0.0059667229652404785, -0.005234718322753906, 0.12134016118943691),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_001.png
+   :alt: shadows
+   :srcset: /examples/04-lights/images/sphx_glr_shadows_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-75
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-77
 
 Show light penetrating several planes.  Adjust the light intensity
 and the ``shadow_attenuation`` to change how many planes the
 light can go through.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-95
+.. GENERATED FROM PYTHON SOURCE LINES 77-97
 
 .. code-block:: default
 
@@ -158,30 +151,21 @@ light can go through.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_shadows_002.png
-    :alt: shadows
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.886751345948129, -10.773502691896258, 15.773502691896258),
-     (0.0, 5.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_002.png
+   :alt: shadows
+   :srcset: /examples/04-lights/images/sphx_glr_shadows_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-98
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 98-100
 
 Here, we use a lower shadow_attenuation value to demonstrate how the
 light can travel through more planes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-117
+.. GENERATED FROM PYTHON SOURCE LINES 100-119
 
 .. code-block:: default
 
@@ -207,28 +191,19 @@ light can travel through more planes.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_shadows_003.png
-    :alt: shadows
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_003.png
+   :alt: shadows
+   :srcset: /examples/04-lights/images/sphx_glr_shadows_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.886751345948129, -10.773502691896258, 15.773502691896258),
-     (0.0, 5.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.783 seconds)
+   **Total running time of the script:** ( 0 minutes  3.912 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_shadows.py:

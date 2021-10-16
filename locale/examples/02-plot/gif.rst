@@ -18,18 +18,21 @@
 .. _sphx_glr_examples_02-plot_gif.py:
 
 
+.. _gif_movie_example:
+
 Create a GIF Movie
 ~~~~~~~~~~~~~~~~~~
 
 Generate a moving gif from an active plotter
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-44
+.. GENERATED FROM PYTHON SOURCE LINES 9-46
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_gif_001.png
-    :alt: gif
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_gif_001.png
+   :alt: gif
+   :srcset: /examples/02-plot/images/sphx_glr_gif_001.png
+   :class: sphx-glr-single-img
 
 
 
@@ -78,7 +81,7 @@ Generate a moving gif from an active plotter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.667 seconds)
+   **Total running time of the script:** ( 0 minutes  3.462 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

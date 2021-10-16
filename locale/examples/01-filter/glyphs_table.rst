@@ -81,7 +81,7 @@ absent a default value of ``range(len(geom))`` is assumed.
     # rng_int = rng.integers(0, N, size=x.size)
     rng_int = np.array([4, 1, 2, 0, 4, 0, 1, 4, 3, 1, 1, 3, 3, 4, 3, 4, 4,
                         3, 3, 2, 2, 1, 1, 1, 2, 0, 3])
-    mesh.point_arrays['scalars'] = rng_int
+    mesh.point_data['scalars'] = rng_int
 
     # construct the glyphs on top of the mesh; don't scale by scalars now
     glyphs = mesh.glyph(geom=geoms, indices=values, scale=False, factor=0.3, rng=(0, N-1))
@@ -94,28 +94,19 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_glyphs_table_001.png
-    :alt: glyphs table
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_table_001.png
+   :alt: glyphs table
+   :srcset: /examples/01-filter/images/sphx_glr_glyphs_table_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.244271937741485, 6.244394544495788, 6.244271446003165),
-     (1.0000000298023224, 1.0001226365566254, 0.999999538064003),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.745 seconds)
+   **Total running time of the script:** ( 0 minutes  1.787 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:

@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_clipping.py:
 
 
+.. _clip_with_plane_box_example:
+
 Clipping with Planes & Boxes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Clip/cut any dataset using using planes or boxes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-11
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
@@ -38,7 +40,7 @@ Clip/cut any dataset using using planes or boxes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-17
+.. GENERATED FROM PYTHON SOURCE LINES 14-19
 
 Clip with Plane
 +++++++++++++++
@@ -46,7 +48,7 @@ Clip with Plane
 Clip any dataset by a user defined plane using the
 :func:`pyvista.DataSetFilters.clip` filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-30
+.. GENERATED FROM PYTHON SOURCE LINES 19-32
 
 .. code-block:: default
 
@@ -66,25 +68,16 @@ Clip any dataset by a user defined plane using the
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_clipping_001.png
-    :alt: clipping
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.24, 0.32, 0.7),
-     (0.02, 0.03, -0.02),
-     (-0.12030717544671318, 0.9323806097120272, -0.34087033043235404)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_001.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-38
 
 Clip with Bounds
 ++++++++++++++++
@@ -92,7 +85,7 @@ Clip with Bounds
 Clip any dataset by a set of XYZ bounds using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-48
+.. GENERATED FROM PYTHON SOURCE LINES 38-50
 
 .. code-block:: default
 
@@ -111,25 +104,16 @@ Clip any dataset by a set of XYZ bounds using the
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_clipping_002.png
-    :alt: clipping
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(9.862367552924386, 9.862367552924386, 8.862367552924386),
-     (2.25499999942258, 2.25499999942258, 1.25499999942258),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_002.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-54
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 51-56
 
 Clip with Rotated Box
 +++++++++++++++++++++
@@ -137,7 +121,7 @@ Clip with Rotated Box
 Clip any dataset by an arbitrarily rotated solid box using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-66
+.. GENERATED FROM PYTHON SOURCE LINES 56-68
 
 .. code-block:: default
 
@@ -156,29 +140,20 @@ Clip any dataset by an arbitrarily rotated solid box using the
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_clipping_003.png
-    :alt: clipping
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3184.5425965677114, 2963.5691926370473, 2419.74146818026),
-     (896.9955291748047, 676.0221252441406, 132.19440078735352),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_003.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-68
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 69-70
 
 Run the box clipping algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-79
+.. GENERATED FROM PYTHON SOURCE LINES 70-81
 
 .. code-block:: default
 
@@ -196,28 +171,19 @@ Run the box clipping algorithm
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_clipping_004.png
-    :alt: clipping
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_004.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2449.2329562520977, 2461.266479811668, 1935.5516398763652),
-     (645.8757171630859, 657.9092407226562, 132.19440078735352),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.931 seconds)
+   **Total running time of the script:** ( 0 minutes  1.960 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:

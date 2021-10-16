@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_04-lights_plotter_builtins.py:
 
 
+.. _plotter_lighting_example:
+
 Plotter Lighting Systems
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -39,7 +41,7 @@ The default ``lighting='light kit'`` option recreates a lighting setup that
 corresponds to a ``vtk.vtkLightKit``. We can check what type of lights this
 lighting comprises:
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-37
+.. GENERATED FROM PYTHON SOURCE LINES 25-39
 
 .. code-block:: default
 
@@ -72,11 +74,11 @@ lighting comprises:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-39
+.. GENERATED FROM PYTHON SOURCE LINES 40-41
 
 Add a white terrain to the scene:
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-46
+.. GENERATED FROM PYTHON SOURCE LINES 41-48
 
 .. code-block:: default
 
@@ -90,25 +92,16 @@ Add a white terrain to the scene:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
-    :alt: plotter builtins
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
+   :alt: plotter builtins
+   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-54
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 49-56
 
 Three-lights illumination
 =========================
@@ -118,7 +111,7 @@ figure, in this case showing less contrast when viewing the mountain from
 the top, but having more contrast with views closer to the side. This becomes
 especially clear when exploring the figures interactively.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+.. GENERATED FROM PYTHON SOURCE LINES 56-61
 
 .. code-block:: default
 
@@ -130,29 +123,20 @@ especially clear when exploring the figures interactively.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
-    :alt: plotter builtins
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
+   :alt: plotter builtins
+   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-61
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 62-63
 
 Again we can check what kind of lights this setting uses:
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-71
+.. GENERATED FROM PYTHON SOURCE LINES 63-73
 
 .. code-block:: default
 
@@ -181,7 +165,7 @@ Again we can check what kind of lights this setting uses:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-79
+.. GENERATED FROM PYTHON SOURCE LINES 74-81
 
 Custom lighting
 ===============
@@ -191,7 +175,7 @@ lighting on plotter initialization. Adding a single scene light to a
 scene will often result in ominous visuals due to objects having
 larger regions in shadow.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-88
+.. GENERATED FROM PYTHON SOURCE LINES 81-90
 
 .. code-block:: default
 
@@ -207,25 +191,16 @@ larger regions in shadow.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
-    :alt: plotter builtins
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
+   :alt: plotter builtins
+   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-95
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-97
 
 Custom lighting with shadows
 ============================
@@ -234,7 +209,7 @@ Here, we ``enable_shadows`` to enhance the effect that the lighting
 angle has.  It has a subtle, but realistic effect.  Notice the sharp
 shadows due to the mountaintop.
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-103
+.. GENERATED FROM PYTHON SOURCE LINES 97-105
 
 .. code-block:: default
 
@@ -249,28 +224,19 @@ shadows due to the mountaintop.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
-    :alt: plotter builtins
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
+   :alt: plotter builtins
+   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.776 seconds)
+   **Total running time of the script:** ( 0 minutes  3.824 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_plotter_builtins.py:

@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_02-plot_silhouette.py:
 
 
+.. _silhouette_example:
+
 Silhouette Highlight
 ~~~~~~~~~~~~~~~~~~~~
 
 Extract a subset of the edges of a polygonal mesh to generate an outline
 (silhouette) of a mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -39,11 +41,11 @@ Extract a subset of the edges of a polygonal mesh to generate an outline
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-14
+.. GENERATED FROM PYTHON SOURCE LINES 15-16
 
 Prepare a triangulated ``PolyData``
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-16
+.. GENERATED FROM PYTHON SOURCE LINES 16-18
 
 .. code-block:: default
 
@@ -56,11 +58,11 @@ Prepare a triangulated ``PolyData``
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-18
+.. GENERATED FROM PYTHON SOURCE LINES 19-20
 
 Now we can display the silhouette of the mesh and compare the result:
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-30
+.. GENERATED FROM PYTHON SOURCE LINES 20-32
 
 .. code-block:: default
 
@@ -79,31 +81,22 @@ Now we can display the silhouette of the mesh and compare the result:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_silhouette_001.png
-    :alt: silhouette
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.01684039831161499, 0.11015420407056808, 0.7099990603379916),
-     (-0.01684039831161499, 0.11015420407056808, -0.0015369504690170288),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_001.png
+   :alt: silhouette
+   :srcset: /examples/02-plot/images/sphx_glr_silhouette_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-36
 
 Maybe the default parameters are not enough to really notice the silhouette.
 But by using a ``dict``, it is possible to modify the properties of the
 outline. For example, color and width could be specified like so:
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-44
+.. GENERATED FROM PYTHON SOURCE LINES 36-46
 
 .. code-block:: default
 
@@ -120,30 +113,21 @@ outline. For example, color and width could be specified like so:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_silhouette_002.png
-    :alt: silhouette
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.016914665699005127, 0.11015420407056808, 0.4820798811243154),
-     (-0.016914665699005127, 0.11015420407056808, -0.0015369504690170288),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_002.png
+   :alt: silhouette
+   :srcset: /examples/02-plot/images/sphx_glr_silhouette_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-47
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 47-49
 
 By default, PyVista uses a pretty aggressive decimation level but we might
 want to disable it. It is also possible to display sharp edges:
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-75
+.. GENERATED FROM PYTHON SOURCE LINES 49-77
 
 .. code-block:: default
 
@@ -178,29 +162,20 @@ want to disable it. It is also possible to display sharp edges:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_silhouette_003.png
-    :alt: silhouette
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.037785668643727, 1.07778566868098, 1.037785668643727),
-     (0.0, 0.0400000000372529, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_003.png
+   :alt: silhouette
+   :srcset: /examples/02-plot/images/sphx_glr_silhouette_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-77
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 78-79
 
 Here is another example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-92
+.. GENERATED FROM PYTHON SOURCE LINES 79-94
 
 .. code-block:: default
 
@@ -222,28 +197,19 @@ Here is another example:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_silhouette_004.png
-    :alt: silhouette
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_004.png
+   :alt: silhouette
+   :srcset: /examples/02-plot/images/sphx_glr_silhouette_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.2936731887752889, 0.2389060430625446, 0.35138839367034236),
-     (-0.005878899246454239, 0.12495124898850918, -0.004603400826454163),
-     (0.3434822574731202, 0.8567703221182347, -0.3846616096500739)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.106 seconds)
+   **Total running time of the script:** ( 0 minutes  12.454 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_silhouette.py:

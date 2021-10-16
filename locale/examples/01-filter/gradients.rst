@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_gradients.py:
 
 
+.. _gradients_example:
+
 Compute Gradients of a Field
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -29,7 +31,7 @@ an input array {u, v, w}.
 
 Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-23
+.. GENERATED FROM PYTHON SOURCE LINES 15-25
 
 .. code-block:: default
 
@@ -76,13 +78,13 @@ Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-27
+.. GENERATED FROM PYTHON SOURCE LINES 26-29
 
 Now compute the gradients of the ``vectors`` vector field in the point data
 of that mesh. This is as simple as calling
 :func:`pyvista.DataSetFilters.compute_derivative`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-30
+.. GENERATED FROM PYTHON SOURCE LINES 29-32
 
 .. code-block:: default
 
@@ -116,18 +118,18 @@ of that mesh. This is as simple as calling
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+.. GENERATED FROM PYTHON SOURCE LINES 33-36
 
 .. note:: You can also use :func:`pyvista.DataSetFilters.compute_derivative` for
   computing other derivative based quantities, such as divergence, vorticity,
   and Q-criterion. See function documentation for options.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+.. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 ``mesh_g["gradient"]`` is an ``N`` by 9 NumPy array of the gradients, so we
 could make a dictionary of NumPy arrays of the gradients like:
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-48
+.. GENERATED FROM PYTHON SOURCE LINES 40-50
 
 .. code-block:: default
 
@@ -165,16 +167,16 @@ could make a dictionary of NumPy arrays of the gradients like:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-51
+.. GENERATED FROM PYTHON SOURCE LINES 51-53
 
 And we can add all of those components as individual arrays back to the mesh
 by:
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-54
+.. GENERATED FROM PYTHON SOURCE LINES 53-56
 
 .. code-block:: default
 
-    mesh_g.point_arrays.update(gradients)
+    mesh_g.point_data.update(gradients)
     mesh_g
 
 
@@ -201,7 +203,7 @@ by:
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
+    <tr><td>scalars</td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
     <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
     <tr><td>gradient</td><td>Points</td><td>float32</td><td>9</td><td>-1.585e+01</td><td>1.536e+01</td></tr>
     <tr><td>du/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.293e+00</td><td>8.336e+00</td></tr>
@@ -212,7 +214,7 @@ by:
     <tr><td>dv/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.131e+01</td><td>7.459e+00</td></tr>
     <tr><td>dw/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.738e+00</td><td>1.212e+01</td></tr>
     <tr><td>dw/dy</td><td>Points</td><td>float32</td><td>1</td><td>-8.734e+00</td><td>8.740e+00</td></tr>
-    <tr><td>dw/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
+    <tr><td><b>dw/dz</b></td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
     </table>
 
     </td></tr> </table>
@@ -220,7 +222,7 @@ by:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-71
+.. GENERATED FROM PYTHON SOURCE LINES 57-73
 
 .. code-block:: default
 
@@ -243,30 +245,21 @@ by:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_gradients_001.png
-    :alt: gradients
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(248.28008427611132, 214.78008427611132, 133.78008427611132),
-     (137.5, 104.0, 23.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_gradients_001.png
+   :alt: gradients
+   :srcset: /examples/01-filter/images/sphx_glr_gradients_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-76
 
 And there you have it, the gradients for a vector field! We could also do
 this for a scalar  field like for the ``scalars`` field in the given dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-79
+.. GENERATED FROM PYTHON SOURCE LINES 76-81
 
 .. code-block:: default
 
@@ -290,12 +283,12 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-97
+.. GENERATED FROM PYTHON SOURCE LINES 82-99
 
 .. code-block:: default
 
 
-    mesh_g.point_arrays.update(gradients)
+    mesh_g.point_data.update(gradients)
 
     keys = np.array(list(gradients.keys())).reshape(1,3)
 
@@ -314,28 +307,19 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_gradients_002.png
-    :alt: gradients
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_gradients_002.png
+   :alt: gradients
+   :srcset: /examples/01-filter/images/sphx_glr_gradients_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(379.8465899883094, 346.3465899883094, 265.3465899883094),
-     (137.5, 104.0, 23.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.552 seconds)
+   **Total running time of the script:** ( 0 minutes  1.901 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:

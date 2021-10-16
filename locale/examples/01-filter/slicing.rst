@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_slicing.py:
 
 
+.. _slice_example:
+
 Slicing
 ~~~~~~~
 
-Extract thin planar slices from a volume
+Extract thin planar slices from a volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-13
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
@@ -40,7 +42,7 @@ Extract thin planar slices from a volume
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-23
+.. GENERATED FROM PYTHON SOURCE LINES 16-25
 
 PyVista meshes have several slicing filters bound directly to all datasets.
 These filters allow you to slice through a volumetric dataset to extract and
@@ -52,7 +54,7 @@ orthogonal slices through the dataset parallel to the three Cartesian planes.
 For example, let's slice through the sample geostatistical training image
 volume. First, load up the volume and preview it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-31
+.. GENERATED FROM PYTHON SOURCE LINES 25-33
 
 .. code-block:: default
 
@@ -67,31 +69,22 @@ volume. First, load up the volume and preview it:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_001.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_001.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-35
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 34-37
 
 Note that this dataset is a 3D volume and there might be regions within this
 volume that we would like to inspect. We can create slices through the mesh
 to gain further insight about the internals of the volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-41
+.. GENERATED FROM PYTHON SOURCE LINES 37-43
 
 .. code-block:: default
 
@@ -104,29 +97,20 @@ to gain further insight about the internals of the volume.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_002.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_002.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-43
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 44-45
 
 The orthogonal slices can be easily translated throughout the volume:
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-46
+.. GENERATED FROM PYTHON SOURCE LINES 45-48
 
 .. code-block:: default
 
@@ -136,31 +120,22 @@ The orthogonal slices can be easily translated throughout the volume:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_003.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_003.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-50
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 We can also add just a single slice of the volume by specifying the origin
 and normal of the slicing plane with the :func:`pyvista.DataSetFilters.slice`
 filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-58
+.. GENERATED FROM PYTHON SOURCE LINES 52-60
 
 .. code-block:: default
 
@@ -175,30 +150,21 @@ filter:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_004.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_004.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-61
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-63
 
 Adding slicing planes uniformly across an axial direction can also be
 automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-67
+.. GENERATED FROM PYTHON SOURCE LINES 63-69
 
 .. code-block:: default
 
@@ -211,25 +177,16 @@ automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_005.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(531.0336740029763, 531.0336740029763, 456.0336740029763),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_005.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-78
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 70-80
 
 Slice Along Line
 ++++++++++++++++
@@ -242,7 +199,7 @@ that this type of slicing is computationally expensive and might take a while
 if there are a lot of points in the line - try to keep the resolution of
 the line low.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-96
+.. GENERATED FROM PYTHON SOURCE LINES 80-98
 
 .. code-block:: default
 
@@ -286,7 +243,7 @@ the line low.
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>arc_length</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>
+    <tr><td>arc_length</td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>
     </table>
 
     </td></tr> </table>
@@ -294,11 +251,11 @@ the line low.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-98
+.. GENERATED FROM PYTHON SOURCE LINES 99-100
 
 Then run the filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-101
+.. GENERATED FROM PYTHON SOURCE LINES 100-103
 
 .. code-block:: default
 
@@ -335,7 +292,7 @@ Then run the filter
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-109
+.. GENERATED FROM PYTHON SOURCE LINES 104-111
 
 .. code-block:: default
 
@@ -349,32 +306,23 @@ Then run the filter
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_006.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, -284.80762113533166, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_006.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-114
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 112-116
 
 Multiple Slices in Vector Direction
 +++++++++++++++++++++++++++++++++++
 
 Slice a mesh along a vector direction perpendicularly.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-135
+.. GENERATED FROM PYTHON SOURCE LINES 116-137
 
 .. code-block:: default
 
@@ -406,7 +354,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-145
+.. GENERATED FROM PYTHON SOURCE LINES 138-147
 
 .. code-block:: default
 
@@ -422,25 +370,16 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_007.png
-    :alt: slicing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(462.3615871740787, 480.3615871740787, 462.3615871740787),
-     (90.0, 108.0, 90.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_007.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_007.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-155
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 148-157
 
 Slice At Different Bearings
 +++++++++++++++++++++++++++
@@ -452,7 +391,7 @@ around a user-chosen location.
 
 Create a point to orient slices around
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-158
+.. GENERATED FROM PYTHON SOURCE LINES 157-160
 
 .. code-block:: default
 
@@ -466,12 +405,12 @@ Create a point to orient slices around
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-161
+.. GENERATED FROM PYTHON SOURCE LINES 161-163
 
 Now generate a few normal vectors to rotate a slice around the z-axis.
 Use equation for circle since its about the Z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-170
+.. GENERATED FROM PYTHON SOURCE LINES 163-172
 
 .. code-block:: default
 
@@ -517,11 +456,11 @@ Use equation for circle since its about the Z-axis.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 171-172
+.. GENERATED FROM PYTHON SOURCE LINES 173-174
 
 And now display it!
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-176
+.. GENERATED FROM PYTHON SOURCE LINES 174-178
 
 .. code-block:: default
 
@@ -532,28 +471,19 @@ And now display it!
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_slicing_008.png
-    :alt: slicing
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_008.png
+   :alt: slicing
+   :srcset: /examples/01-filter/images/sphx_glr_slicing_008.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  35.039 seconds)
+   **Total running time of the script:** ( 0 minutes  20.649 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

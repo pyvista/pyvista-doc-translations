@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_02-plot_pbr.py:
 
 
+.. _pbr_example:
+
 Physically Based Rendering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -32,7 +34,7 @@ the ``metallic`` and ``roughness`` arguments for further control.
 Let's show off this functionality by rendering a high quality mesh of
 a statue as though it were metallic.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-29
+.. GENERATED FROM PYTHON SOURCE LINES 19-31
 
 .. code-block:: default
 
@@ -55,12 +57,12 @@ a statue as though it were metallic.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 32-34
 
 Let's render the mesh with a base color of "linen" to give it a metal looking
 finish.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-47
+.. GENERATED FROM PYTHON SOURCE LINES 34-49
 
 .. code-block:: default
 
@@ -82,32 +84,23 @@ finish.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_pbr_001.png
-    :alt: pbr
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-313.4, 66.09, 1000.61),
-     (0.0, 0.0, 0.0),
-     (0.018145530081671093, 0.9980041544919102, -0.06048510027223698)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_pbr_001.png
+   :alt: pbr
+   :srcset: /examples/02-plot/images/sphx_glr_pbr_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 50-54
 
 Show the variation of the metallic and roughness parameters.
 
 Plot with metallic increasing from left to right and roughness
 increasing from bottom to top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-68
+.. GENERATED FROM PYTHON SOURCE LINES 54-70
 
 .. code-block:: default
 
@@ -130,29 +123,20 @@ increasing from bottom to top.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_pbr_002.png
-    :alt: pbr
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-15.202549271079377, 1.9999999105930328, 2.5),
-     (0.0, 1.9999999105930328, 2.5),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_pbr_002.png
+   :alt: pbr
+   :srcset: /examples/02-plot/images/sphx_glr_pbr_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-70
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
 Combine custom lighting and physically based rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-98
+.. GENERATED FROM PYTHON SOURCE LINES 72-100
 
 .. code-block:: default
 
@@ -187,9 +171,10 @@ Combine custom lighting and physically based rendering.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_pbr_003.png
-    :alt: pbr
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_pbr_003.png
+   :alt: pbr
+   :srcset: /examples/02-plot/images/sphx_glr_pbr_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -198,7 +183,7 @@ Combine custom lighting and physically based rendering.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  48.205 seconds)
+   **Total running time of the script:** ( 0 minutes  58.337 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:

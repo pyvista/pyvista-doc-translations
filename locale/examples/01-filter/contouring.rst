@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_contouring.py:
 
 
+.. _contouring_example:
+
 Contouring
 ~~~~~~~~~~
 
@@ -26,7 +28,7 @@ Generate iso-lines or -surfaces for the scalars of a surface or volume.
 3D meshes can have 2D iso-surfaces of a scalar field extracted and 2D surface
 meshes can have 1D iso-lines of a scalar field extracted.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-16
+.. GENERATED FROM PYTHON SOURCE LINES 12-18
 
 .. code-block:: default
 
@@ -43,14 +45,14 @@ meshes can have 1D iso-lines of a scalar field extracted.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-21
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 Iso-Lines
 +++++++++
 
 Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-31
+.. GENERATED FROM PYTHON SOURCE LINES 23-33
 
 .. code-block:: default
 
@@ -67,32 +69,23 @@ Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_contouring_001.png
-    :alt: contouring
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
-     (0.0, 9.99999977567765, 3.8123363107442856),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_001.png
+   :alt: contouring
+   :srcset: /examples/01-filter/images/sphx_glr_contouring_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-36
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 34-38
 
 Iso-Surfaces
 ++++++++++++
 
 Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-47
+.. GENERATED FROM PYTHON SOURCE LINES 38-49
 
 .. code-block:: default
 
@@ -110,28 +103,19 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_contouring_002.png
-    :alt: contouring
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_002.png
+   :alt: contouring
+   :srcset: /examples/01-filter/images/sphx_glr_contouring_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-130.99381142132086, 644.4868354828589, 163.80447435848686),
-     (125.21748748157661, 123.94368717158413, 108.83283586619626),
-     (0.2780372840777734, 0.03547871361794171, 0.9599148553609699)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.863 seconds)
+   **Total running time of the script:** ( 0 minutes  5.397 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:

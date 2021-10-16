@@ -18,13 +18,14 @@
 .. _sphx_glr_examples_02-plot_background_image.py:
 
 
+.. _background_image_example:
+
 Background Image
 ~~~~~~~~~~~~~~~~
 
-Add a background image with ``add_background_image``
+Add a background image with :func:`pyvista.Plotter.add_background_image`.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -39,11 +40,11 @@ Add a background image with ``add_background_image``
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-14
+.. GENERATED FROM PYTHON SOURCE LINES 15-16
 
 Plot an airplane with the map of the earth in the background
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-21
+.. GENERATED FROM PYTHON SOURCE LINES 16-23
 
 .. code-block:: default
 
@@ -57,29 +58,20 @@ Plot an airplane with the map of the earth in the background
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_background_image_001.png
-    :alt: background image
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3140.593704331348, 2919.620300400684, 2375.7925778512454),
-     (896.9955291748047, 676.0221252441406, 132.19440269470215),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_background_image_001.png
+   :alt: background image
+   :srcset: /examples/02-plot/images/sphx_glr_background_image_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-23
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Plot several earth related plots
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-45
+.. GENERATED FROM PYTHON SOURCE LINES 25-47
 
 .. code-block:: default
 
@@ -108,28 +100,19 @@ Plot several earth related plots
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_background_image_002.png
-    :alt: background image
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_background_image_002.png
+   :alt: background image
+   :srcset: /examples/02-plot/images/sphx_glr_background_image_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(24578060184.082455, 24590884070.56062, 24590884070.56062),
-     (-12823886.478166103, 4.76837158203125e-07, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.354 seconds)
+   **Total running time of the script:** ( 0 minutes  8.269 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_background_image.py:

@@ -18,17 +18,18 @@
 .. _sphx_glr_examples_02-plot_depth-peeling.py:
 
 
+.. _depth_peeling_example:
+
 Depth Peeling
 ~~~~~~~~~~~~~
-
 Depth peeling is a technique to correctly render translucent geometry.
-This is not enabled by default in ``pyvista.global_theme`` as some
+This is not enabled by default in :attr:`pyvista.global_theme` as some
 operating systems and versions of VTK have issues with this routine.
 
 For this example, we will showcase the difference that depth peeling
 provides.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-18
+.. GENERATED FROM PYTHON SOURCE LINES 14-19
 
 .. code-block:: default
 
@@ -44,7 +45,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-27
+.. GENERATED FROM PYTHON SOURCE LINES 20-28
 
 .. code-block:: default
 
@@ -63,7 +64,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-46
+.. GENERATED FROM PYTHON SOURCE LINES 29-47
 
 .. code-block:: default
 
@@ -88,32 +89,23 @@ provides.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
-    :alt: depth peeling
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(11.7, 4.7, -4.33),
-     (0.0, 0.0, 0.0),
-     (0.3153704229982046, 0.07358643203291443, 0.946111268994614)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
+   :alt: depth peeling
+   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-51
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-52
 
 The following room surfaces example mesh, provided courtesy of
 `Sam Potter <https://github.com/sampotter>`_ has coincident topology and
 depth rendering helps correctly render those geometries when a global
 opacity value is used.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-72
+.. GENERATED FROM PYTHON SOURCE LINES 52-73
 
 .. code-block:: default
 
@@ -141,30 +133,21 @@ opacity value is used.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
-    :alt: depth peeling
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(43.6, 49.5, 19.8),
-     (0.0, 2.25, 0.0),
-     (-0.5724957969333092, 0.7030650137777481, -0.4218390082666489)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
+   :alt: depth peeling
+   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-75
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-76
 
 And here is another example wheen rendering many translucent contour
 surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-94
+.. GENERATED FROM PYTHON SOURCE LINES 76-95
 
 .. code-block:: default
 
@@ -190,28 +173,19 @@ surfaces.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
-    :alt: depth peeling
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
+   :alt: depth peeling
+   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(418.3, 659.0, 53.8),
-     (90.2, 111.5, 90.0),
-     (0.029949129682617866, 0.04991521613769644, 0.9983043227539289)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  52.703 seconds)
+   **Total running time of the script:** ( 0 minutes  35.284 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

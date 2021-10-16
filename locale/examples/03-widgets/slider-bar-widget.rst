@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_03-widgets_slider-bar-widget.py:
 
 
+.. _slider_bar_widget_example:
+
 Slider Bar Widget
 ~~~~~~~~~~~~~~~~~
 
@@ -27,7 +29,7 @@ The slider widget can be enabled and disabled by the
 This is one of the most versatile widgets as it can control a value that can
 be used for just about anything.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-13
+.. GENERATED FROM PYTHON SOURCE LINES 13-15
 
 .. code-block:: default
 
@@ -40,13 +42,13 @@ be used for just about anything.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-17
+.. GENERATED FROM PYTHON SOURCE LINES 16-19
 
 One helper method we've added is the
 :func:`pyvista.WidgetHelper.add_mesh_threshold` method which leverages the
 slider widget to control a thresholding value.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-27
+.. GENERATED FROM PYTHON SOURCE LINES 19-29
 
 .. code-block:: default
 
@@ -63,29 +65,20 @@ slider widget to control a thresholding value.
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_001.png
-    :alt: slider bar widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(417.3182207980985, 431.77821988257114, 442.48772305639926),
-     (74.83049774169922, 89.29049682617188, 100.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_001.png
+   :alt: slider bar widget
+   :srcset: /examples/03-widgets/images/sphx_glr_slider-bar-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-29
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 30-31
 
 After interacting with the scene, the threshold mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-31
+.. GENERATED FROM PYTHON SOURCE LINES 31-33
 
 .. code-block:: default
 
@@ -102,7 +95,7 @@ After interacting with the scene, the threshold mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f6c1b437b88)
+    [UnstructuredGrid (0x7f3a88190e80)
       N Cells:	115425
       N Points:	179772
       X Bounds:	3.760e+01, 1.171e+02
@@ -113,13 +106,13 @@ After interacting with the scene, the threshold mesh is available as:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-35
+.. GENERATED FROM PYTHON SOURCE LINES 34-37
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/slider-widget-threshold.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-43
+.. GENERATED FROM PYTHON SOURCE LINES 39-45
 
 Custom Callback
 +++++++++++++++
@@ -128,7 +121,7 @@ Or you could leverage a custom callback function that takes a single value
 from the slider as its argument to do something like control the resolution
 of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-55
+.. GENERATED FROM PYTHON SOURCE LINES 45-57
 
 .. code-block:: default
 
@@ -147,25 +140,16 @@ of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_002.png
-    :alt: slider bar widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9312408826647358, 1.9312408826647358, 1.9312408826647358),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_002.png
+   :alt: slider bar widget
+   :srcset: /examples/03-widgets/images/sphx_glr_slider-bar-widget_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-59
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-61
 
 And here is a screen capture of a user interacting with this
 
@@ -174,7 +158,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.372 seconds)
+   **Total running time of the script:** ( 0 minutes  2.994 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_slider-bar-widget.py:

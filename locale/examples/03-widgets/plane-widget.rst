@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_03-widgets_plane-widget.py:
 
 
+.. _plane_widget_example:
+
 Plane Widget
 ~~~~~~~~~~~~
 
@@ -30,7 +32,7 @@ meshes, we have included two helper methods for doing those tasks!
 
 Let's use a plane to clip a mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-24
+.. GENERATED FROM PYTHON SOURCE LINES 16-26
 
 .. code-block:: default
 
@@ -47,29 +49,20 @@ Let's use a plane to clip a mesh:
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_001.png
-    :alt: plane widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.00000190734863, 108.0, 90.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_001.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 27-28
 
 After interacting with the scene, the clipped mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-28
+.. GENERATED FROM PYTHON SOURCE LINES 28-30
 
 .. code-block:: default
 
@@ -86,7 +79,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f18d387c050)
+    [UnstructuredGrid (0x7f3a8b05fa60)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -97,17 +90,17 @@ After interacting with the scene, the clipped mesh is available as:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-32
+.. GENERATED FROM PYTHON SOURCE LINES 31-34
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-clip.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-35
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 Or you could slice a mesh using the plane widget:
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-39
+.. GENERATED FROM PYTHON SOURCE LINES 37-41
 
 .. code-block:: default
 
@@ -118,29 +111,20 @@ Or you could slice a mesh using the plane widget:
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_002.png
-    :alt: plane widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(578.7093647107201, 596.7093628033715, 578.7093628033715),
-     (90.00000190734863, 108.0, 90.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_002.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 42-43
 
 After interacting with the scene, the slice is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 43-45
 
 .. code-block:: default
 
@@ -157,7 +141,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7f18d387cbb0)
+    [PolyData (0x7f3a9a57ab80)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -168,20 +152,20 @@ After interacting with the scene, the slice is available as:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 46-49
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-slice.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-53
+.. GENERATED FROM PYTHON SOURCE LINES 51-55
 
 Or you could leverage the plane widget for some custom task like glyphing a
 vector field along that plane. Note that we have to pass a ``name`` when
 calling ``add_mesh`` to ensure that there is only one set of glyphs plotted
 at a time.
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-72
+.. GENERATED FROM PYTHON SOURCE LINES 55-74
 
 .. code-block:: default
 
@@ -207,38 +191,29 @@ at a time.
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_003.png
-    :alt: plane widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(275.9751053451392, 242.47510534513918, 161.47510534513918),
-     (137.5, 104.0, 23.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_003.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-76
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 75-78
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-glyph.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-83
+.. GENERATED FROM PYTHON SOURCE LINES 81-85
 
 Further, a user can disable the arrow vector by setting the
 ``normal_rotation`` argument to ``False``. For example, here we
 programmatically set the normal vector on which we want to translate the
 plane and we disable the arrow to prevent its rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-88
+.. GENERATED FROM PYTHON SOURCE LINES 85-90
 
 .. code-block:: default
 
@@ -250,30 +225,21 @@ plane and we disable the arrow to prevent its rotation.
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_004.png
-    :alt: plane widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(555.4519839675984, 573.4519839675984, 555.4519839675984),
-     (90.0, 108.0, 90.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_004.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-91
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-93
 
 The vector is also forcibly disabled anytime the ``assign_to_axis`` argument
 is set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-94
+.. GENERATED FROM PYTHON SOURCE LINES 93-96
 
 .. code-block:: default
 
@@ -283,28 +249,19 @@ is set.
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_plane-widget_005.png
-    :alt: plane widget
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_005.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(578.7093628033715, 596.7093628033715, 578.7093647107201),
-     (90.0, 108.0, 90.00000190734863),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.548 seconds)
+   **Total running time of the script:** ( 0 minutes  7.190 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:

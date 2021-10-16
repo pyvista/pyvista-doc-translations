@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_03-widgets_box-widget.py:
 
 
+.. _box_widget_example:
+
 Box Widget
 ~~~~~~~~~~
 
@@ -35,7 +37,7 @@ scene with a box widget that controls its extent, the
 
 .. image:: ../../images/gifs/box-clip.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-25
+.. GENERATED FROM PYTHON SOURCE LINES 21-27
 
 .. code-block:: default
 
@@ -52,7 +54,7 @@ scene with a box widget that controls its extent, the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-32
+.. GENERATED FROM PYTHON SOURCE LINES 28-34
 
 .. code-block:: default
 
@@ -65,29 +67,20 @@ scene with a box widget that controls its extent, the
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_box-widget_001.png
-    :alt: box widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1167.493770554712, -1167.493770554712, 233.4987541109424),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_box-widget_001.png
+   :alt: box widget
+   :srcset: /examples/03-widgets/images/sphx_glr_box-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-34
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 35-36
 
 After interacting with the scene, the clipped mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-35
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 .. code-block:: default
 
@@ -103,7 +96,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f6c19046888)
+    [UnstructuredGrid (0x7f3a8b05fb20)
       N Cells:	2018232
       N Points:	1009118
       X Bounds:	-1.194e+02, 1.194e+02
@@ -117,7 +110,7 @@ After interacting with the scene, the clipped mesh is available as:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.613 seconds)
+   **Total running time of the script:** ( 0 minutes  8.324 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_box-widget.py:

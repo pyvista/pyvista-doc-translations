@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_02-plot_themes.py:
 
 
+.. _themes_example:
+
 Control Global and Local Plotting Themes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PyVista allows you to set global and local plotting themes to easily
 set default plotting parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-12
+.. GENERATED FROM PYTHON SOURCE LINES 11-14
 
 .. code-block:: default
 
@@ -38,11 +40,11 @@ set default plotting parameters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-14
+.. GENERATED FROM PYTHON SOURCE LINES 15-16
 
 Define a simple plotting routine for comparing the themes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-25
+.. GENERATED FROM PYTHON SOURCE LINES 16-27
 
 .. code-block:: default
 
@@ -64,7 +66,7 @@ Define a simple plotting routine for comparing the themes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-34
+.. GENERATED FROM PYTHON SOURCE LINES 28-36
 
 PyVista's default color theme is chosen to be generally easy on your
 eyes and is best used when working long hours on your visualization
@@ -75,7 +77,7 @@ screen when working in dark environments.
 Here's an example of our default plotting theme - this is what you
 would see by default after running any of our examples locally.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 36-40
 
 .. code-block:: default
 
@@ -86,15 +88,16 @@ would see by default after running any of our examples locally.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_001.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_001.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_001.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-44
+.. GENERATED FROM PYTHON SOURCE LINES 41-46
 
 PyVista also ships with a few plotting themes:
 
@@ -102,11 +105,11 @@ PyVista also ships with a few plotting themes:
 * ``'dark'``: this is designed to be night-mode friendly with dark backgrounds and color schemes.
 * ``'document'``: this is built for use in document style plotting and making publication quality figures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-47
+.. GENERATED FROM PYTHON SOURCE LINES 48-49
 
 Demo the ``'ParaView'`` theme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-53
+.. GENERATED FROM PYTHON SOURCE LINES 49-55
 
 .. code-block:: default
 
@@ -119,19 +122,20 @@ Demo the ``'ParaView'`` theme.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_002.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_002.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_002.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-55
+.. GENERATED FROM PYTHON SOURCE LINES 56-57
 
 Demo the ``'dark'`` theme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-60
+.. GENERATED FROM PYTHON SOURCE LINES 57-62
 
 .. code-block:: default
 
@@ -143,19 +147,20 @@ Demo the ``'dark'`` theme.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_003.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_003.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_003.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-62
+.. GENERATED FROM PYTHON SOURCE LINES 63-64
 
 Demo the ``'document'`` theme.  This theme is used on our online examples.
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-67
+.. GENERATED FROM PYTHON SOURCE LINES 64-69
 
 .. code-block:: default
 
@@ -167,20 +172,21 @@ Demo the ``'document'`` theme.  This theme is used on our online examples.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_004.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_004.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_004.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-70
+.. GENERATED FROM PYTHON SOURCE LINES 70-72
 
 Note that you can also use color gradients for the background of the plotting
 window!
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-78
+.. GENERATED FROM PYTHON SOURCE LINES 72-80
 
 .. code-block:: default
 
@@ -195,15 +201,16 @@ window!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_005.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_005.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_005.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-89
+.. GENERATED FROM PYTHON SOURCE LINES 81-91
 
 Modifying the Global Theme
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -216,7 +223,7 @@ Here, we print out the current global defaults for all ``pyvista``
 meshes.  These values have been changed by the previous "Document"
 theme.
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-93
+.. GENERATED FROM PYTHON SOURCE LINES 91-95
 
 .. code-block:: default
 
@@ -314,17 +321,20 @@ theme.
             Cap opacity      : 0.0
             Cap length       : 0.01
             Cap width        : 0.02
+    Return Camera Position   : None
+    Hidden Line Removal      : True
+    Anti-Aliasing            : False
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-98
+.. GENERATED FROM PYTHON SOURCE LINES 96-100
 
 By default, edges are not shown on meshes unless explicitly
 specified when plotting a mesh via ``show_edges=True``.  You can
 change this default behavior globally by changing the default
 parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-103
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 .. code-block:: default
 
@@ -336,15 +346,16 @@ parameter.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_006.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_006.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_006.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-109
+.. GENERATED FROM PYTHON SOURCE LINES 106-111
 
 You can reset pyvista to default behavior with ``restore_defaults``.
 Note that the figure's color was reset to the default "white" color
@@ -352,7 +363,7 @@ rather than the "tan" color default with the document theme.  Under
 the hood, each theme applied changes the global plot defaults stored
 within ``pyvista.global_theme.``
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-114
+.. GENERATED FROM PYTHON SOURCE LINES 111-116
 
 .. code-block:: default
 
@@ -364,15 +375,16 @@ within ``pyvista.global_theme.``
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_007.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_007.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_007.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-122
+.. GENERATED FROM PYTHON SOURCE LINES 117-124
 
 Creating a Custom Theme and Applying it Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -382,7 +394,7 @@ themes and then loading it into the global plotting defaults.
 Here, we create a dark theme that plots meshes red by default while
 showing edges.
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-135
+.. GENERATED FROM PYTHON SOURCE LINES 124-137
 
 .. code-block:: default
 
@@ -402,15 +414,16 @@ showing edges.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_008.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_008.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_008.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-145
+.. GENERATED FROM PYTHON SOURCE LINES 138-147
 
 Creating a Custom Theme and Applying it to a Single Plotter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,7 +435,7 @@ set to the modified ``DarkTheme``.
 This approach carries the advantage that you can maintain several
 themes and apply them to one or more plotters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-158
+.. GENERATED FROM PYTHON SOURCE LINES 147-160
 
 .. code-block:: default
 
@@ -442,19 +455,20 @@ themes and apply them to one or more plotters.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_009.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_009.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_009.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-160
+.. GENERATED FROM PYTHON SOURCE LINES 161-162
 
 Alternatively, set the theme of an instance of ``Plotter``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-167
+.. GENERATED FROM PYTHON SOURCE LINES 162-169
 
 .. code-block:: default
 
@@ -468,19 +482,20 @@ Alternatively, set the theme of an instance of ``Plotter``.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_themes_010.png
-    :alt: themes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_themes_010.png
+   :alt: themes
+   :srcset: /examples/02-plot/images/sphx_glr_themes_010.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-169
+.. GENERATED FROM PYTHON SOURCE LINES 170-171
 
 Reset to use the document theme
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-170
+.. GENERATED FROM PYTHON SOURCE LINES 171-172
 
 .. code-block:: default
 
@@ -495,7 +510,7 @@ Reset to use the document theme
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.156 seconds)
+   **Total running time of the script:** ( 0 minutes  6.321 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:

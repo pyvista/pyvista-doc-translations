@@ -18,17 +18,19 @@
 .. _sphx_glr_examples_01-filter_warp-by-vector.py:
 
 
+.. _warp_by_vectors_example:
+
 Warping by Vectors
 ~~~~~~~~~~~~~~~~~~
 
 This example applies the ``warp_by_vector`` filter to a sphere mesh that has
 3D displacement vectors defined at each node.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-11
+.. GENERATED FROM PYTHON SOURCE LINES 12-13
 
 We first compare the unwarped sphere to the warped sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-27
+.. GENERATED FROM PYTHON SOURCE LINES 13-29
 
 .. code-block:: default
 
@@ -51,31 +53,22 @@ We first compare the unwarped sphere to the warped sphere.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_warp-by-vector_001.png
-    :alt: warp by vector
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(17.809803632694113, 17.50988545795046, 17.509803918796408),
-     (0.0, -0.29991817474365234, -0.2999997138977051),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_warp-by-vector_001.png
+   :alt: warp by vector
+   :srcset: /examples/01-filter/images/sphx_glr_warp-by-vector_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 30-33
 
 We then use several values for the scale factor applied to the warp
 operation. Applying a warping factor that is too high can often lead to
 unrealistic results.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-41
+.. GENERATED FROM PYTHON SOURCE LINES 33-43
 
 .. code-block:: default
 
@@ -92,28 +85,19 @@ unrealistic results.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_warp-by-vector_002.png
-    :alt: warp by vector
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_warp-by-vector_002.png
+   :alt: warp by vector
+   :srcset: /examples/01-filter/images/sphx_glr_warp-by-vector_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(13.229537151962102, 11.82742228379804, 11.80935599675733),
-     (0.0, -1.4021148681640625, -1.420181155204773),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.332 seconds)
+   **Total running time of the script:** ( 0 minutes  1.026 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_warp-by-vector.py:

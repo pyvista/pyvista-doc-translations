@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_02-plot_cmap.py:
 
 
+.. _colormap_example:
+
 Colormap Choices
 ~~~~~~~~~~~~~~~~
 
 Use a Matplotlib, Colorcet, cmocean, or custom colormap when plotting scalar
 values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-17
 
 .. code-block:: default
 
@@ -42,7 +44,7 @@ values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-27
+.. GENERATED FROM PYTHON SOURCE LINES 18-29
 
 Any colormap built for ``matplotlib``, ``colorcet``, or ``cmocean`` is fully
 compatible with PyVista. Colormaps are typically specified by passing the
@@ -56,7 +58,7 @@ See `Matplotlib's complete list of available colormaps`_,
 .. _Colorcet's complete list: https://colorcet.holoviz.org/user_guide/index.html
 .. _cmocean's complete list: https://matplotlib.org/cmocean/
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-34
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 Custom Made Colormaps
 +++++++++++++++++++++
@@ -64,7 +66,7 @@ Custom Made Colormaps
 To get started using a custom colormap, download some data with scalar values to
 plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-39
+.. GENERATED FROM PYTHON SOURCE LINES 36-41
 
 .. code-block:: default
 
@@ -80,12 +82,12 @@ plot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-42
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 Build a custom colormap - here we make a colormap with 5 discrete colors
 and we specify the ranges where those colors fall:
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-61
+.. GENERATED FROM PYTHON SOURCE LINES 44-63
 
 .. code-block:: default
 
@@ -115,11 +117,11 @@ and we specify the ranges where those colors fall:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-63
+.. GENERATED FROM PYTHON SOURCE LINES 64-65
 
 Simply pass the colormap to the plotting routine!
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-65
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
 
 .. code-block:: default
 
@@ -128,30 +130,21 @@ Simply pass the colormap to the plotting routine!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_cmap_001.png
-    :alt: cmap
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_001.png
+   :alt: cmap
+   :srcset: /examples/02-plot/images/sphx_glr_cmap_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-68
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-70
 
 Or you could make a simple colormap... any Matplotlib colormap can be passed
 to PyVista!
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-71
+.. GENERATED FROM PYTHON SOURCE LINES 70-73
 
 .. code-block:: default
 
@@ -161,30 +154,21 @@ to PyVista!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_cmap_002.png
-    :alt: cmap
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_002.png
+   :alt: cmap
+   :srcset: /examples/02-plot/images/sphx_glr_cmap_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-76
 
 You can also pass a list of color strings to the color map.  This
 approach divides up the colormap into 5 equal parts.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-76
+.. GENERATED FROM PYTHON SOURCE LINES 76-78
 
 .. code-block:: default
 
@@ -193,31 +177,22 @@ approach divides up the colormap into 5 equal parts.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_cmap_003.png
-    :alt: cmap
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_003.png
+   :alt: cmap
+   :srcset: /examples/02-plot/images/sphx_glr_cmap_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-80
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-82
 
 If you still wish to have control of the separation of values, you
 can do this by creating a scalar array and passing that to the
 plotter along with the the colormap
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-89
+.. GENERATED FROM PYTHON SOURCE LINES 82-91
 
 .. code-block:: default
 
@@ -233,25 +208,16 @@ plotter along with the the colormap
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_cmap_004.png
-    :alt: cmap
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_004.png
+   :alt: cmap
+   :srcset: /examples/02-plot/images/sphx_glr_cmap_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-104
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 92-106
 
 Matplotlib vs. Colorcet
 +++++++++++++++++++++++
@@ -268,7 +234,7 @@ Please note that in order to use Colorcet's colormaps including "fire", you
 must have Colorcet installed in your Python environment:
 ``pip install colorcet``
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-123
+.. GENERATED FROM PYTHON SOURCE LINES 106-125
 
 .. code-block:: default
 
@@ -294,28 +260,19 @@ must have Colorcet installed in your Python environment:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_cmap_005.png
-    :alt: cmap
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_005.png
+   :alt: cmap
+   :srcset: /examples/02-plot/images/sphx_glr_cmap_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.740 seconds)
+   **Total running time of the script:** ( 0 minutes  5.869 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

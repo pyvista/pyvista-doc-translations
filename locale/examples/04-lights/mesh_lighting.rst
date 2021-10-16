@@ -18,15 +18,20 @@
 .. _sphx_glr_examples_04-lights_mesh_lighting.py:
 
 
+.. _disabling_mesh_lighting_example:
+
 Disabling Mesh Lighting
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-While plotters have a default set of lights and there are many options for
-customizing lighting conditions in general, meshes have the option to opt out
-of lighting altogether. Pass ``lighting=False`` to ``add_mesh`` to disable
-lighting for the given mesh:
+Disable mesh lighting.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-26
+While plotters have a default set of lights and there are many options
+for customizing lighting conditions in general, meshes have the option
+to opt out of lighting altogether. Pass ``lighting=False`` to
+:func:`pyvista.Plotter.add_mesh` to disable lighting for the given
+mesh:
+
+.. GENERATED FROM PYTHON SOURCE LINES 16-32
 
 .. code-block:: default
 
@@ -49,32 +54,23 @@ lighting for the given mesh:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
-    :alt: mesh lighting
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(34.230892235130916, 39.230892235130916, 34.230892235130916),
-     (0.0, 5.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
+   :alt: mesh lighting
+   :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Due to the obvious lack of depth detail this mostly makes sense for meshes
 with non-trivial colors or textures. If it weren't for the edges being drawn,
 the second mesh would be practically impossible to understand even with the
 option to interactively explore the surface:
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+.. GENERATED FROM PYTHON SOURCE LINES 37-40
 
 .. code-block:: default
 
@@ -84,25 +80,16 @@ option to interactively explore the surface:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
-    :alt: mesh lighting
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(28.366973395932785, 38.36697339593279, 28.366973395932785),
-     (0.0, 10.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
+   :alt: mesh lighting
+   :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-37
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 For further examples about fine-tuning mesh properties that affect
 light rendering, see the :ref:`ref_lighting_properties_example` example.
@@ -110,7 +97,7 @@ light rendering, see the :ref:`ref_lighting_properties_example` example.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.472 seconds)
+   **Total running time of the script:** ( 0 minutes  1.410 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_mesh_lighting.py:

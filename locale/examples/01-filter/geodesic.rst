@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_geodesic.py:
 
 
+.. _geodesic_example:
+
 Geodesic Paths
 ~~~~~~~~~~~~~~
 
 Calculates the geodesic path between two vertices using Dijkstra's algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-16
 
 .. code-block:: default
 
@@ -41,11 +43,11 @@ Calculates the geodesic path between two vertices using Dijkstra's algorithm
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-16
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 Get the geodesic path as a new :class:`pyvista.PolyData` object:
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-25
+.. GENERATED FROM PYTHON SOURCE LINES 18-27
 
 .. code-block:: default
 
@@ -65,11 +67,11 @@ Get the geodesic path as a new :class:`pyvista.PolyData` object:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-27
+.. GENERATED FROM PYTHON SOURCE LINES 28-29
 
 Render the path along the land surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-38
+.. GENERATED FROM PYTHON SOURCE LINES 29-40
 
 .. code-block:: default
 
@@ -87,29 +89,20 @@ Render the path along the land surface
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_geodesic_001.png
-    :alt: geodesic
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.5839785524183934, 2.3915238111304924, 1.3993738227478327),
-     (-0.06842917033182638, 0.15467201157962263, -0.07331693636555875),
-     (-0.34851770951584765, -0.04724188391065845, 0.9361108965066047)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_geodesic_001.png
+   :alt: geodesic
+   :srcset: /examples/01-filter/images/sphx_glr_geodesic_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-40
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-42
 
 How long is that path?
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-42
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 .. code-block:: default
 
@@ -126,14 +119,14 @@ How long is that path?
  .. code-block:: none
 
 
-    1.9961605055582519
+    1.996160505558251
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.437 seconds)
+   **Total running time of the script:** ( 0 minutes  13.103 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_geodesic.py:

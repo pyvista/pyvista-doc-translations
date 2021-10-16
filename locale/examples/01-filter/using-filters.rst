@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_using-filters.py:
 
 
+.. _common_filter_example:
+
 Using Common Filters
 ~~~~~~~~~~~~~~~~~~~~
 
-Using common filters like thresholding and clipping
+Using common filters like thresholding and clipping.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-12
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
@@ -39,7 +41,7 @@ Using common filters like thresholding and clipping
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-28
+.. GENERATED FROM PYTHON SOURCE LINES 15-30
 
 PyVista wrapped data objects have a suite of common filters ready for immediate
 use directly on the object. These filters include the following
@@ -57,7 +59,7 @@ use directly on the object. These filters include the following
 To use these filters, call the method of your choice directly on your data
 object:
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-37
+.. GENERATED FROM PYTHON SOURCE LINES 30-39
 
 .. code-block:: default
 
@@ -77,7 +79,7 @@ object:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-46
+.. GENERATED FROM PYTHON SOURCE LINES 40-48
 
 And now there is a thresholded version of the input dataset in the new
 ``threshed`` object. To learn more about what keyword arguments are available to
@@ -88,7 +90,7 @@ in an IPython environment.
 We can now plot this filtered dataset along side an outline of the original
 dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-54
+.. GENERATED FROM PYTHON SOURCE LINES 48-56
 
 .. code-block:: default
 
@@ -103,29 +105,20 @@ dataset
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_using-filters_001.png
-    :alt: using filters
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_001.png
+   :alt: using filters
+   :srcset: /examples/01-filter/images/sphx_glr_using-filters_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-56
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-58
 
 What about other filters? Let's collect a few filter results and compare them:
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-85
+.. GENERATED FROM PYTHON SOURCE LINES 58-87
 
 .. code-block:: default
 
@@ -161,25 +154,16 @@ What about other filters? Let's collect a few filter results and compare them:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_using-filters_002.png
-    :alt: using filters
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_002.png
+   :alt: using filters
+   :srcset: /examples/01-filter/images/sphx_glr_using-filters_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-98
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 88-100
 
 Filter Pipeline
 +++++++++++++++
@@ -194,7 +178,7 @@ In the following example, several filters are chained together:
 3. Use the ``clip`` filter to cut the dataset in half.
 4. Create three slices along each axial plane using the ``slice_orthogonal`` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-102
+.. GENERATED FROM PYTHON SOURCE LINES 100-104
 
 .. code-block:: default
 
@@ -209,12 +193,12 @@ In the following example, several filters are chained together:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-105
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
 
 And to view this filtered data, simply call the ``plot`` method
 (``result.plot()``) or create a rendering scene:
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-111
+.. GENERATED FROM PYTHON SOURCE LINES 107-113
 
 .. code-block:: default
 
@@ -227,28 +211,19 @@ And to view this filtered data, simply call the ``plot`` method
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_using-filters_003.png
-    :alt: using filters
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_003.png
+   :alt: using filters
+   :srcset: /examples/01-filter/images/sphx_glr_using-filters_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(21.886664873203234, 21.886664873203234, 21.886664873203234),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.522 seconds)
+   **Total running time of the script:** ( 0 minutes  2.297 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_using-filters.py:

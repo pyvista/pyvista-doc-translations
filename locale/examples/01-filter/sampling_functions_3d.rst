@@ -21,7 +21,7 @@
 Sample Function: Perlin Noise in 3D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we use :func:`pyvista.core.imaging.sample_function` to sample
-perlin noise over a region to generate random terrain.
+Perlin noise over a region to generate random terrain.
 
 Video games like Minecraft use Perlin noise to create terrain.  Here,
 we create a voxelized mesh similar to a Minecraft "cave".
@@ -110,28 +110,19 @@ color limits without blue
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_sampling_functions_3d_001.png
-    :alt: sampling functions 3d
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_3d_001.png
+   :alt: sampling functions 3d
+   :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_3d_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(5.199214280684376, 4.199214280684376, 4.199214280684376),
-     (1.5, 0.5, 0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.503 seconds)
+   **Total running time of the script:** ( 0 minutes  0.642 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_3d.py:

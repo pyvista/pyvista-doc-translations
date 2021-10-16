@@ -18,17 +18,19 @@
 .. _sphx_glr_examples_01-filter_resample.py:
 
 
+.. _resampling_example:
+
 Resampling
 ~~~~~~~~~~
 
 Resample one mesh's point/cell arrays onto another mesh's nodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-10
+.. GENERATED FROM PYTHON SOURCE LINES 10-12
 
 This example will resample a volumetric mesh's  scalar data onto the surface
 of a sphere contained in that volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 12-17
 
 .. code-block:: default
 
@@ -44,13 +46,13 @@ of a sphere contained in that volume.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+.. GENERATED FROM PYTHON SOURCE LINES 18-21
 
 Simple Resample
 +++++++++++++++
 Query a grids points onto a sphere
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-22
+.. GENERATED FROM PYTHON SOURCE LINES 21-24
 
 .. code-block:: default
 
@@ -64,11 +66,11 @@ Query a grids points onto a sphere
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-24
+.. GENERATED FROM PYTHON SOURCE LINES 25-26
 
 Plot the two datasets
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-29
+.. GENERATED FROM PYTHON SOURCE LINES 26-31
 
 .. code-block:: default
 
@@ -80,29 +82,20 @@ Plot the two datasets
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_resample_001.png
-    :alt: resample
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(21.886664873203234, 21.886664873203234, 21.886664873203234),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_resample_001.png
+   :alt: resample
+   :srcset: /examples/01-filter/images/sphx_glr_resample_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-33
 
 Run the algorithm and plot the result
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-37
+.. GENERATED FROM PYTHON SOURCE LINES 33-39
 
 .. code-block:: default
 
@@ -115,31 +108,22 @@ Run the algorithm and plot the result
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_resample_002.png
-    :alt: resample
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(21.83804075669771, 21.83804051827913, 21.83804075669771),
-     (4.5, 4.499999761581421, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_resample_002.png
+   :alt: resample
+   :srcset: /examples/01-filter/images/sphx_glr_resample_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-43
 
 Complex Resample
 ++++++++++++++++
 Take a volume of data and create a grid of lower resolution to resample on
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-46
+.. GENERATED FROM PYTHON SOURCE LINES 43-48
 
 .. code-block:: default
 
@@ -155,7 +139,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-60
+.. GENERATED FROM PYTHON SOURCE LINES 49-62
 
 .. code-block:: default
 
@@ -175,28 +159,19 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_resample_003.png
-    :alt: resample
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_resample_003.png
+   :alt: resample
+   :srcset: /examples/01-filter/images/sphx_glr_resample_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(468.9075585873713, -152.8280322856109, 152.13046602188035),
-     (121.65121514580106, 140.29327609542105, 112.28137570357188),
-     (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.159 seconds)
+   **Total running time of the script:** ( 0 minutes  12.045 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:

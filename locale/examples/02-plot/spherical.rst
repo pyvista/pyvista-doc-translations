@@ -111,7 +111,7 @@ Create a structured grid
     grid_scalar = pv.grid_from_sph_coords(xx_bounds, yy_bounds, levels)
 
     # And fill its cell arrays with the scalar data
-    grid_scalar.cell_arrays["example"] = np.array(scalar).swapaxes(-2, -1).ravel("C")
+    grid_scalar.cell_data["example"] = np.array(scalar).swapaxes(-2, -1).ravel("C")
 
     # Make a plot
     p = pv.Plotter()
@@ -123,21 +123,12 @@ Create a structured grid
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_spherical_001.png
-    :alt: spherical
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_001.png
+   :alt: spherical
+   :srcset: /examples/02-plot/images/sphx_glr_spherical_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(24751.49083514534, 24751.49083514534, 24751.49083514534),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -182,7 +173,7 @@ Vertical wind
     grid_winds = pv.grid_from_sph_coords(x, y_polar, wind_level)
 
     # Add vectors to the grid
-    grid_winds.point_arrays["example"] = vectors
+    grid_winds.point_data["example"] = vectors
 
     # Show the result
     p = pv.Plotter()
@@ -194,21 +185,12 @@ Vertical wind
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_spherical_002.png
-    :alt: spherical
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_002.png
+   :alt: spherical
+   :srcset: /examples/02-plot/images/sphx_glr_spherical_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31575.92917307241, 31642.108128150536, 31673.18210275991),
-     (-85.474609375, -19.295654296875, 11.7783203125),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -240,7 +222,7 @@ Isurfaces of 3D data in spherical coordinates
     grid_scalar_3d = pv.grid_from_sph_coords(xx_bounds, yy_bounds, levels)
 
     # Add data to the grid
-    grid_scalar_3d.cell_arrays["example"] = np.array(scalar_3d).swapaxes(-2, -1).ravel("C")
+    grid_scalar_3d.cell_data["example"] = np.array(scalar_3d).swapaxes(-2, -1).ravel("C")
 
     # Create a set of isosurfaces
     surfaces = grid_scalar_3d.cell_data_to_point_data().contour(isosurfaces=[1, 5, 10, 15])
@@ -253,28 +235,19 @@ Isurfaces of 3D data in spherical coordinates
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_spherical_003.png
-    :alt: spherical
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_003.png
+   :alt: spherical
+   :srcset: /examples/02-plot/images/sphx_glr_spherical_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(29807.472094298726, 29799.23191869352, 29799.23191869352),
-     (8.240175605204513, -4.547473508864641e-13, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.842 seconds)
+   **Total running time of the script:** ( 0 minutes  1.316 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:

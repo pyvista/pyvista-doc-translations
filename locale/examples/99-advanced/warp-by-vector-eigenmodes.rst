@@ -23,11 +23,10 @@ Displaying eigenmodes of vibration using ``warp_by_vector``
 
 This example applies the ``warp_by_vector`` filter to a cube whose eigenmodes
 have been computed using the Ritz method, as outlined in Visscher, William M.,
-Albert Migliori, Thomas M. Bell, et Robert A. Reinert. « On the normal modes
-of free vibration of inhomogeneous and anisotropic elastic objects ». The
-Journal of the Acoustical Society of America 90, nᵒ 4 (october 1991): 2154‑62.
-https://doi.org/10.1121/1.401643.
-
+Albert Migliori, Thomas M. Bell, et Robert A. Reinert. "On the normal modes
+of free vibration of inhomogeneous and anisotropic elastic objects". The
+Journal of the Acoustical Society of America 90, n.4 (october 1991): 2154-62.
+https://asa.scitation.org/doi/10.1121/1.401643
 
 .. GENERATED FROM PYTHON SOURCE LINES 15-18
 
@@ -268,21 +267,12 @@ Now, let's display a mode on a mesh of the cube.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
-    :alt: warp by vector eigenmodes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
+   :alt: warp by vector eigenmodes
+   :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5624591927763861, 0.7150308248544035, 0.7150308248544028),
-     (-0.15257163207801672, 7.216449660063518e-16, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -311,28 +301,19 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
-    :alt: warp by vector eigenmodes
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
+   :alt: warp by vector eigenmodes
+   :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.7392698613030427, 0.7392698613030582, 0.7392698613030666),
-     (-1.8957058145474548e-14, -3.594347042223944e-15, 4.884981308350689e-15),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.779 seconds)
+   **Total running time of the script:** ( 0 minutes  9.870 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

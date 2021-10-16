@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_voxelize.py:
 
 
+.. _voxelize_surface_mesh_example:
+
 Voxelize a Surface Mesh
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -26,8 +28,7 @@ Create a voxel model (like legos) of a closed surface or volumetric mesh.
 This example also demonstrates how to compute an implicit distance from a
 bounding :class:`pyvista.PolyData` surface.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 11-20
+.. GENERATED FROM PYTHON SOURCE LINES 13-22
 
 .. code-block:: default
 
@@ -64,7 +65,7 @@ bounding :class:`pyvista.PolyData` surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-28
+.. GENERATED FROM PYTHON SOURCE LINES 23-30
 
 .. code-block:: default
 
@@ -78,29 +79,20 @@ bounding :class:`pyvista.PolyData` surface.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_voxelize_001.png
-    :alt: voxelize
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.656346967151718, -9.802071079151158, -11.021236183314311),
-     (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
-     (-0.6279216753504943, -0.7513057097368636, 0.20311105371647395)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_001.png
+   :alt: voxelize
+   :srcset: /examples/01-filter/images/sphx_glr_voxelize_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-32
 
 Create a voxel model of the bounding surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-38
+.. GENERATED FROM PYTHON SOURCE LINES 32-40
 
 .. code-block:: default
 
@@ -115,31 +107,22 @@ Create a voxel model of the bounding surface
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_voxelize_002.png
-    :alt: voxelize
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.656346967151718, -9.802071079151158, -11.021236183314311),
-     (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
-     (-0.6279216753504943, -0.7513057097368636, 0.20311105371647395)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_002.png
+   :alt: voxelize
+   :srcset: /examples/01-filter/images/sphx_glr_voxelize_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-42
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-44
 
 We could even add a scalar field to that new voxel model in case we
 wanted to create grids for modelling. In this case, let's add a scalar field
 for bone density noting:
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-45
+.. GENERATED FROM PYTHON SOURCE LINES 44-47
 
 .. code-block:: default
 
@@ -169,8 +152,8 @@ for bone density noting:
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
-    <tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
-    <tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
+    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+    <tr><td><b>density</b></td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
     </table>
 
     </td></tr> </table>
@@ -178,7 +161,7 @@ for bone density noting:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 .. code-block:: default
 
@@ -188,30 +171,21 @@ for bone density noting:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_voxelize_003.png
-    :alt: voxelize
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.656346967151718, -9.802071079151158, -11.021236183314311),
-     (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
-     (-0.6279216753504943, -0.7513057097368636, 0.20311105371647395)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_003.png
+   :alt: voxelize
+   :srcset: /examples/01-filter/images/sphx_glr_voxelize_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 52-54
 
 A constant scalar field is kind of boring, so let's get a little fancier by
 added a scalar field that varies by the distance from the bounding surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-55
+.. GENERATED FROM PYTHON SOURCE LINES 54-57
 
 .. code-block:: default
 
@@ -242,8 +216,8 @@ added a scalar field that varies by the distance from the bounding surface.
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
     <tr><td>implicit_distance</td><td>Points</td><td>float64</td><td>1</td><td>-6.951e-01</td><td>4.148e-01</td></tr>
-    <tr><td><b>vtkOriginalCellIds</b></td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
-    <tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
+    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+    <tr><td><b>density</b></td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
     </table>
 
     </td></tr> </table>
@@ -251,7 +225,7 @@ added a scalar field that varies by the distance from the bounding surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-62
+.. GENERATED FROM PYTHON SOURCE LINES 58-64
 
 .. code-block:: default
 
@@ -264,28 +238,19 @@ added a scalar field that varies by the distance from the bounding surface.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_voxelize_004.png
-    :alt: voxelize
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_004.png
+   :alt: voxelize
+   :srcset: /examples/01-filter/images/sphx_glr_voxelize_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.656346967151718, -9.802071079151158, -11.021236183314311),
-     (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
-     (-0.6279216753504943, -0.7513057097368636, 0.20311105371647395)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  24.489 seconds)
+   **Total running time of the script:** ( 0 minutes  10.339 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_voxelize.py:

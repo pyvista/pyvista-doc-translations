@@ -21,7 +21,7 @@
 Sample Function: Perlin Noise in 2D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we use :func:`pyvista.core.imaging.sample_function` to sample
-perlin noise over a region to generate random terrain.
+Perlin noise over a region to generate random terrain.
 
 Perlin noise is atype of gradient noise often used by visual effects
 artists to increase the appearance of realism in computer graphics.
@@ -77,7 +77,7 @@ terrain seem more like hills rather than mountains.
 Warp by scalar
 ~~~~~~~~~~~~~~
 Here we warp by scalar to give the terrain some height based on the
-value of the perlin noise.  This is necessary to the terrain its shape.
+value of the Perlin noise.  This is necessary to the terrain its shape.
 
 .. GENERATED FROM PYTHON SOURCE LINES 38-55
 
@@ -87,7 +87,7 @@ value of the perlin noise.  This is necessary to the terrain its shape.
     mesh = sampled.warp_by_scalar('scalars')
     mesh = mesh.extract_surface()
 
-    # clean and smooth a little to reduce perlin noise artifacts
+    # clean and smooth a little to reduce Perlin noise artifacts
     mesh = mesh.smooth(n_iter=100, inplace=False, relaxation_factor=1)
 
     # This makes the "water" level look flat.
@@ -130,21 +130,12 @@ Show the terrain as a contour plot
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
-    :alt: sampling functions 2d
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
+   :alt: sampling functions 2d
+   :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.57944796053717, 31.57944796053717, 21.746478295009826),
-     (0.0, 0.0, -9.832969665527344),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -167,28 +158,19 @@ Show the terrain with custom lighting and shadows
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
-    :alt: sampling functions 2d
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
+   :alt: sampling functions 2d
+   :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.57944796053717, 31.57944796053717, 21.746478295009826),
-     (0.0, 0.0, -9.832969665527344),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.077 seconds)
+   **Total running time of the script:** ( 0 minutes  3.307 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_00-load_terrain-mesh.py:
 
 
+.. _terrain_following_mesh_example:
+
 Terrain Following Mesh
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -34,7 +36,7 @@ follows a given topographic surface. In this example, it is important to note
 that the given digital elevation model (DEM) is structured (gridded and not
 triangulated): this is common for DEMs.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-24
+.. GENERATED FROM PYTHON SOURCE LINES 20-26
 
 .. code-block:: default
 
@@ -51,11 +53,11 @@ triangulated): this is common for DEMs.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+.. GENERATED FROM PYTHON SOURCE LINES 27-28
 
 Download a gridded topography surface (DEM)
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-29
+.. GENERATED FROM PYTHON SOURCE LINES 28-31
 
 .. code-block:: default
 
@@ -94,14 +96,14 @@ Download a gridded topography surface (DEM)
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-34
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 Now let's subsample and extract an area of interest to make this example
 simple (also the DEM we just load is pretty big).
 Since the DEM we loaded is a :class:`pyvista.UniformGrid` mesh, we can use
 the :func:`pyvista.UniformGridFilters.extract_subset` filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 36-40
 
 .. code-block:: default
 
@@ -112,30 +114,21 @@ the :func:`pyvista.UniformGridFilters.extract_subset` filter:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
-    :alt: terrain mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1820500.0, 5649000.0, 16392.304845413266),
-     (1820500.0, 5649000.0, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
+   :alt: terrain mesh
+   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 Now that we have a region of interest for our terrain following mesh, lets
 make a 3D surface of that DEM:
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-44
+.. GENERATED FROM PYTHON SOURCE LINES 43-46
 
 .. code-block:: default
 
@@ -173,7 +166,7 @@ make a 3D surface of that DEM:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-48
+.. GENERATED FROM PYTHON SOURCE LINES 47-50
 
 .. code-block:: default
 
@@ -183,25 +176,16 @@ make a 3D surface of that DEM:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
-    :alt: terrain mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1830079.2876189426, 5658579.287618943, 11684.58760673553),
-     (1820500.0, 5649000.0, 2105.2999877929688),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
+   :alt: terrain mesh
+   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-56
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 51-58
 
 And now we have a 3D structured surface of the terrain! We can now extend
 that structured surface into a 3D mesh to form a terrain following grid.
@@ -211,7 +195,7 @@ of the terrain mesh and decrease each Z level by our Z cell spacing.
 Once we have those structured coordinates, we can create a
 :class:`pyvista.StructuredGrid`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-67
+.. GENERATED FROM PYTHON SOURCE LINES 58-69
 
 .. code-block:: default
 
@@ -257,7 +241,7 @@ Once we have those structured coordinates, we can create a
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-73
+.. GENERATED FROM PYTHON SOURCE LINES 70-75
 
 .. code-block:: default
 
@@ -269,28 +253,19 @@ Once we have those structured coordinates, we can create a
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
-    :alt: terrain mesh
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
+   :alt: terrain mesh
+   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1826736.796308761, 5655837.275274233, 4676.8405505181745),
-     (1821066.1790519988, 5649248.765538796, 943.0995128226014),
-     (-0.27978562253809786, -0.2796694633759488, 0.9184252809434079)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.297 seconds)
+   **Total running time of the script:** ( 0 minutes  2.326 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:

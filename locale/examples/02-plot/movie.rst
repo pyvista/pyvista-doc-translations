@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_02-plot_movie.py:
 
 
+.. _movie_example:
+
 Create a MP4 Movie
 ~~~~~~~~~~~~~~~~~~
 
@@ -27,13 +29,14 @@ Create an animated MP4 movie of a rendering scene.
     This movie will appear static since MP4 movies will not be
     rendered on a sphinx gallery example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-47
+.. GENERATED FROM PYTHON SOURCE LINES 14-49
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_movie_001.png
-    :alt: movie
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_movie_001.png
+   :alt: movie
+   :srcset: /examples/02-plot/images/sphx_glr_movie_001.png
+   :class: sphx-glr-single-img
 
 
 
@@ -49,7 +52,7 @@ Create an animated MP4 movie of a rendering scene.
     filename = "sphere-shrinking.mp4"
 
     mesh = pv.Sphere()
-    mesh.cell_arrays["data"] = np.random.random(mesh.n_cells)
+    mesh.cell_data["data"] = np.random.random(mesh.n_cells)
 
     plotter = pv.Plotter()
     # Open a movie file
@@ -70,7 +73,7 @@ Create an animated MP4 movie of a rendering scene.
         random_points = np.random.random(mesh.points.shape)
         mesh.points = random_points * 0.01 + mesh.points * 0.99
         mesh.points -= mesh.points.mean(0)
-        mesh.cell_arrays["data"] = np.random.random(mesh.n_cells)
+        mesh.cell_data["data"] = np.random.random(mesh.n_cells)
         plotter.add_text(f"Iteration: {i}", name='time-label')
         plotter.write_frame()  # Write this frame
 
@@ -80,7 +83,7 @@ Create an animated MP4 movie of a rendering scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  27.051 seconds)
+   **Total running time of the script:** ( 0 minutes  12.338 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie.py:

@@ -18,17 +18,19 @@
 .. _sphx_glr_examples_02-plot_linked.py:
 
 
+.. _linked_views_example:
+
 Linked Views in Subplots
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 6-45
-
+.. GENERATED FROM PYTHON SOURCE LINES 8-45
 
 
-.. image:: /examples/02-plot/images/sphx_glr_linked_001.png
-    :alt: linked
-    :class: sphx-glr-single-img
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_linked_001.png
+   :alt: linked
+   :srcset: /examples/02-plot/images/sphx_glr_linked_001.png
+   :class: sphx-glr-single-img
 
 
 
@@ -60,9 +62,7 @@ Linked Views in Subplots
     # Set a camera position to all linked views
     p.camera_position = [(15, 5, 0), (0, 0, 0), (0, 1, 0)]
 
-    p.show(auto_close=False)
     p.open_gif("linked.gif")
-
     # Update camera and write a frame for each updated position
     nframe = 15
     for i in range(nframe):
@@ -79,7 +79,7 @@ Linked Views in Subplots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.969 seconds)
+   **Total running time of the script:** ( 0 minutes  3.572 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_linked.py:

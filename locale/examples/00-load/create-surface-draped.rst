@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_00-load_create-surface-draped.py:
 
 
+.. _create_draped_surf_example:
+
 Drape 2D Surface From Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -46,7 +48,7 @@ have are technically shifted up and we have some NaN filler above the surface
 profile in 2D with the coordinates associated to the top of each column in your
 2D array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-42
+.. GENERATED FROM PYTHON SOURCE LINES 32-44
 
 .. code-block:: default
 
@@ -69,7 +71,7 @@ profile in 2D with the coordinates associated to the top of each column in your
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-47
+.. GENERATED FROM PYTHON SOURCE LINES 45-49
 
 .. code-block:: default
 
@@ -80,21 +82,22 @@ profile in 2D with the coordinates associated to the top of each column in your
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-surface-draped_001.png
-    :alt: create surface draped
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-surface-draped_001.png
+   :alt: create surface draped
+   :srcset: /examples/00-load/images/sphx_glr_create-surface-draped_001.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 View the the path of the GPR profile from a top-down perspective.
 Since we have the full coordinates (XY and Z), we can create a structured
 mesh "draping" down from those coordinates to hold the GPR image data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-56
+.. GENERATED FROM PYTHON SOURCE LINES 53-58
 
 .. code-block:: default
 
@@ -106,9 +109,10 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-surface-draped_002.png
-    :alt: create surface draped
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-surface-draped_002.png
+   :alt: create surface draped
+   :srcset: /examples/00-load/images/sphx_glr_create-surface-draped_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -122,7 +126,7 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-74
+.. GENERATED FROM PYTHON SOURCE LINES 59-76
 
 .. code-block:: default
 
@@ -150,11 +154,11 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-76
+.. GENERATED FROM PYTHON SOURCE LINES 77-78
 
 Make a StructuredGrid from the structured points
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-83
+.. GENERATED FROM PYTHON SOURCE LINES 78-85
 
 .. code-block:: default
 
@@ -172,12 +176,12 @@ Make a StructuredGrid from the structured points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-86
+.. GENERATED FROM PYTHON SOURCE LINES 86-88
 
 And now we can plot it! or process or do anything, because it is a PyVista
 mesh and the possibilities are endless with PyVista
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-95
+.. GENERATED FROM PYTHON SOURCE LINES 88-97
 
 .. code-block:: default
 
@@ -193,28 +197,19 @@ mesh and the possibilities are endless with PyVista
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
-    :alt: create surface draped
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
+   :alt: create surface draped
+   :srcset: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1217002.366883762, 345363.80666238244, 3816.828857791056),
-     (1216322.4753436751, 344033.0310674846, 3331.052985309526),
-     (-0.17716571330686096, -0.25634368781817973, 0.9502106207279767)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.527 seconds)
+   **Total running time of the script:** ( 0 minutes  13.838 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-surface-draped.py:

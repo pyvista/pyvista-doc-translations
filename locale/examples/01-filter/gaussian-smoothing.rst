@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_gaussian-smoothing.py:
 
 
+.. _gaussian_smoothing_example:
+
 Gaussian Smoothing
 ~~~~~~~~~~~~~~~~~~
 
@@ -28,8 +30,7 @@ convolving the  image data set with a Gaussian for one- to three-dimensional
 inputs. This is commonly referred to as Gaussian blurring and typically used
 to reduce noise or decrease the detail of an image dataset
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 13-27
+.. GENERATED FROM PYTHON SOURCE LINES 15-29
 
 .. code-block:: default
 
@@ -54,12 +55,12 @@ to reduce noise or decrease the detail of an image dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-30
+.. GENERATED FROM PYTHON SOURCE LINES 30-32
 
 Let's apply the gaussian smoothing with different values of standard
 deviation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-54
+.. GENERATED FROM PYTHON SOURCE LINES 32-56
 
 .. code-block:: default
 
@@ -90,29 +91,20 @@ deviation.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
-    :alt: gaussian smoothing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(319.5, 239.5, 1053.7372980874645),
-     (319.5, 239.5, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
+   :alt: gaussian smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-56
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-58
 
 Now let's see an example on a 3D dataset with volume rendering:
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-80
+.. GENERATED FROM PYTHON SOURCE LINES 58-82
 
 .. code-block:: default
 
@@ -143,28 +135,19 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_002.png
-    :alt: gaussian smoothing
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_002.png
+   :alt: gaussian smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_gaussian-smoothing_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-162.0, 704.8, 65.02),
-     (90.0, 108.0, 90.0),
-     (0.0067998458832395645, 0.04469898690894243, 0.9989773584347537)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.293 seconds)
+   **Total running time of the script:** ( 0 minutes  7.763 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:

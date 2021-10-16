@@ -65,21 +65,12 @@ surface and displaying an image is simply:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_001.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_001.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9318516525781368, 1.9318516525781368, 1.9318516525781368),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -111,21 +102,12 @@ For example, let's map that same image of bricks to a curvey surface:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_002.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_002.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -151,21 +133,12 @@ Display scalar data along with a texture by ensuring the
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_003.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_003.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -186,21 +159,12 @@ Note that this process can be completed with any image texture!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_004.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_004.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -227,21 +191,12 @@ use.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_005.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_005.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -281,25 +236,76 @@ and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_006.png
-    :alt: texture
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_006.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-121
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 111-114
+
+Create a GIF Movie with updating textures
++++++++++++++++++++++++++++++++++++++++++
+Generate a moving gif from an active plotter with updating textures.
+
+.. GENERATED FROM PYTHON SOURCE LINES 114-152
+
+.. code-block:: default
+
+
+    # Create a plotter object
+    plotter = pv.Plotter(notebook=False, off_screen=True)
+
+    # Open a gif
+    plotter.open_gif("texture.gif")
+
+    pts = curvsurf.points.copy()
+
+    # Update Z and write a frame for each updated position
+    nframe = 15
+    for phase in np.linspace(0, 2 * np.pi, nframe + 1)[:nframe]:
+
+        # create an image using numpy,
+        z = np.sin(r + phase)
+        pts[:, -1] = z.ravel()
+
+        # Creating a custom RGB image
+        zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
+        hue = norm(zz.ravel()) * 0.5 * (1.0 + np.sin(phase))
+        colors = (cmap(hue)[:, 0:3] * 255.0).astype(np.uint8)
+        image = colors.reshape((xx.shape[0], xx.shape[1], 3), order="F")
+
+        # Convert 3D numpy array to texture
+        tex = pv.numpy_to_texture(image)
+
+        plotter.add_mesh(curvsurf, smooth_shading=True, texture=tex)
+        plotter.update_coordinates(pts, render=False)
+
+        # must update normals when smooth shading is enabled
+        plotter.mesh.compute_normals(cell_normals=False, inplace=True)
+        plotter.render()
+        plotter.write_frame()
+        plotter.clear()
+
+    # Closes and finalizes movie
+    plotter.close()
+
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_007.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_007.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 153-163
 
 Textures with Transparency
 ++++++++++++++++++++++++++
@@ -312,7 +318,7 @@ contain a 4th channel specifying the opacity value from 0 [transparent] to
 
 Here we can download an image that has an alpha channel:
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-124
+.. GENERATED FROM PYTHON SOURCE LINES 163-166
 
 .. code-block:: default
 
@@ -334,7 +340,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-130
+.. GENERATED FROM PYTHON SOURCE LINES 167-172
 
 .. code-block:: default
 
@@ -346,25 +352,16 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_007.png
-    :alt: texture
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_008.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_008.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-140
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 173-182
 
 Repeating Textures
 ++++++++++++++++++
@@ -376,7 +373,7 @@ Here we create the texture coordinates to fill up the grid with several
 mappings of a single texture. In order to do this we must define texture
 coordinates outside of the typical ``(0, 1)`` range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-148
+.. GENERATED FROM PYTHON SOURCE LINES 182-190
 
 .. code-block:: default
 
@@ -395,20 +392,20 @@ coordinates outside of the typical ``(0, 1)`` range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-154
+.. GENERATED FROM PYTHON SOURCE LINES 191-196
 
 By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
 
 Then we must associate those texture coordinates with the mesh through the
-:attr:`pyvista.DataSet.t_coords` property.
+:attr:`pyvista.DataSet.active_t_coords` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-157
+.. GENERATED FROM PYTHON SOURCE LINES 196-199
 
 .. code-block:: default
 
 
-    curvsurf.t_coords = puppy_coords
+    curvsurf.active_t_coords = puppy_coords
 
 
 
@@ -417,11 +414,11 @@ Then we must associate those texture coordinates with the mesh through the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-159
+.. GENERATED FROM PYTHON SOURCE LINES 200-201
 
 Now display all the puppies!
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-165
+.. GENERATED FROM PYTHON SOURCE LINES 201-207
 
 .. code-block:: default
 
@@ -434,32 +431,23 @@ Now display all the puppies!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_008.png
-    :alt: texture
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.125, -0.125, 54.0961574413579),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_009.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_009.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 166-170
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 208-212
 
 Spherical Texture Coordinates
 +++++++++++++++++++++++++++++
 We have a built in convienance method for mapping textures to spherical
 coordinate systems much like the planar mapping demoed above.
 
-.. GENERATED FROM PYTHON SOURCE LINES 170-178
+.. GENERATED FROM PYTHON SOURCE LINES 212-220
 
 .. code-block:: default
 
@@ -474,25 +462,16 @@ coordinate systems much like the planar mapping demoed above.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_009.png
-    :alt: texture
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_010.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_010.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-186
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 221-228
 
 The helper method above does not always produce the desired texture
 coordinates, so sometimes it must be done manually. Here is a great, user
@@ -502,7 +481,7 @@ Manually create the texture coordinates for a globe map. First, we create
 the mesh that will be used as the globe. Note the `start_theta` for a slight
 overlappig
 
-.. GENERATED FROM PYTHON SOURCE LINES 186-204
+.. GENERATED FROM PYTHON SOURCE LINES 228-247
 
 .. code-block:: default
 
@@ -513,13 +492,14 @@ overlappig
                        end_theta=270)
 
     # Initialize the texture coordinates array
-    sphere.t_coords = np.zeros((sphere.points.shape[0], 2))
+    sphere.active_t_coords = np.zeros((sphere.points.shape[0], 2))
 
     # Populate by manually calculating
     for i in range(sphere.points.shape[0]):
-        sphere.t_coords[i] = [0.5 + np.arctan2(-sphere.points[i, 0],
-                                               sphere.points[i, 1])/(2 * np.pi),
-                              0.5 + np.arcsin(sphere.points[i, 2])/np.pi]
+        sphere.active_t_coords[i] = [
+             0.5 + np.arctan2(-sphere.points[i, 0], sphere.points[i, 1])/(2 * np.pi),
+             0.5 + np.arcsin(sphere.points[i, 2])/np.pi
+        ]
 
     # And let's display it with a world map
     tex = examples.load_globe_texture()
@@ -527,28 +507,19 @@ overlappig
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_texture_010.png
-    :alt: texture
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_011.png
+   :alt: texture
+   :srcset: /examples/02-plot/images/sphx_glr_texture_011.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.8634788478848945, 3.8634788478848945, 3.8634788478848945),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.963 seconds)
+   **Total running time of the script:** ( 0 minutes  10.823 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

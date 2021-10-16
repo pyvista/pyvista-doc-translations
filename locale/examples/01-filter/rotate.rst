@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_rotate.py:
 
 
+.. _rotate_example:
+
 Rotations
 ~~~~~~~~~
 
@@ -25,7 +27,7 @@ Rotations of a mesh about its axes. In this model, the x axis is from the left
 to right; the y axis is from bottom to top; and the z axis emerges from the
 image. The camera location is the same in all four images.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
@@ -40,14 +42,14 @@ image. The camera location is the same in all four images.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+.. GENERATED FROM PYTHON SOURCE LINES 17-21
 
 Define camera and axes
 ++++++++++++++++++++++
 
 Define camera and axes. Setting axes origin to ``(3.0, 3.0, 3.0)``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-30
+.. GENERATED FROM PYTHON SOURCE LINES 21-32
 
 .. code-block:: default
 
@@ -69,14 +71,14 @@ Define camera and axes. Setting axes origin to ``(3.0, 3.0, 3.0)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-35
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Original Mesh
 +++++++++++++
 
 Plot original mesh. Add axes actor to Plotter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-45
+.. GENERATED FROM PYTHON SOURCE LINES 37-47
 
 .. code-block:: default
 
@@ -93,25 +95,16 @@ Plot original mesh. Add axes actor to Plotter.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_rotate_001.png
-    :alt: rotate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, 30.0, 30.0),
-     (5.0, 5.0, 5.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_001.png
+   :alt: rotate
+   :srcset: /examples/01-filter/images/sphx_glr_rotate_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-51
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-53
 
 Rotation about the x axis
 +++++++++++++++++++++++++
@@ -119,7 +112,7 @@ Rotation about the x axis
 Plot the mesh rotated about the x axis every 60 degrees.
 Add the axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-65
+.. GENERATED FROM PYTHON SOURCE LINES 53-67
 
 .. code-block:: default
 
@@ -140,25 +133,16 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_rotate_002.png
-    :alt: rotate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, 30.0, 30.0),
-     (5.0, 5.0, 5.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_002.png
+   :alt: rotate
+   :srcset: /examples/01-filter/images/sphx_glr_rotate_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-71
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-73
 
 Rotation about the y axis
 +++++++++++++++++++++++++
@@ -166,7 +150,7 @@ Rotation about the y axis
 Plot the mesh rotated about the y axis every 60 degrees.
 Add the axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-85
+.. GENERATED FROM PYTHON SOURCE LINES 73-87
 
 .. code-block:: default
 
@@ -187,25 +171,16 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_rotate_003.png
-    :alt: rotate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, 30.0, 30.0),
-     (5.0, 5.0, 5.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_003.png
+   :alt: rotate
+   :srcset: /examples/01-filter/images/sphx_glr_rotate_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-91
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 88-93
 
 Rotation about the z axis
 +++++++++++++++++++++++++
@@ -213,7 +188,7 @@ Rotation about the z axis
 Plot the mesh rotated about the z axis every 60 degrees.
 Add axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-105
+.. GENERATED FROM PYTHON SOURCE LINES 93-107
 
 .. code-block:: default
 
@@ -234,25 +209,16 @@ Add axes actor to the Plotter and set the axes origin to the point of rotation.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_rotate_004.png
-    :alt: rotate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, 30.0, 30.0),
-     (5.0, 5.0, 5.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_004.png
+   :alt: rotate
+   :srcset: /examples/01-filter/images/sphx_glr_rotate_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-111
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 108-113
 
 Rotation about a custom vector
 ++++++++++++++++++++++++++++++
@@ -260,7 +226,7 @@ Rotation about a custom vector
 Plot the mesh rotated about a custom vector every 60 degrees.
 Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-123
+.. GENERATED FROM PYTHON SOURCE LINES 113-125
 
 .. code-block:: default
 
@@ -279,28 +245,19 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_rotate_005.png
-    :alt: rotate
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_005.png
+   :alt: rotate
+   :srcset: /examples/01-filter/images/sphx_glr_rotate_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, 30.0, 30.0),
-     (5.0, 5.0, 5.0),
-     (0.0, 1.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.299 seconds)
+   **Total running time of the script:** ( 0 minutes  2.087 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_rotate.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_99-advanced_antarctica-compare.py:
 
 
+.. _antarctica_example:
+
 Compare Field Across Mesh Regions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -31,7 +33,7 @@ The modeling results are courtesy of `Urruty Benoit <https://github.com/BenoitUR
 and  are from the `Elmer/Ice <http://elmerice.elmerfem.org>`_ simulation
 software.
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-27
+.. GENERATED FROM PYTHON SOURCE LINES 18-29
 
 .. code-block:: default
 
@@ -68,9 +70,9 @@ software.
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>ssavelocity</b></td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
+    <tr><td>ssavelocity</td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
     <tr><td>node_value</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>2.300e+01</td></tr>
-    <tr><td>magnitude</td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
+    <tr><td><b>magnitude</b></td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
     </table>
 
     </td></tr> </table>
@@ -78,11 +80,11 @@ software.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-29
+.. GENERATED FROM PYTHON SOURCE LINES 30-31
 
 Here is a helper to extract regions of the mesh based on the simulation node.
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-34
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 .. code-block:: default
 
@@ -98,7 +100,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-45
+.. GENERATED FROM PYTHON SOURCE LINES 37-47
 
 .. code-block:: default
 
@@ -115,25 +117,16 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(118637.09504000004, 48407.14021500014, 13210946.134298638),
-     (118637.09504000004, 48407.14021500014, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-51
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-53
 
 .. code-block:: default
 
@@ -145,25 +138,16 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_002.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(118637.09504000004, 48407.14021500014, 13210946.134298638),
-     (118637.09504000004, 48407.14021500014, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_002.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-56
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 54-58
 
 .. code-block:: default
 
@@ -178,7 +162,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-63
+.. GENERATED FROM PYTHON SOURCE LINES 59-65
 
 .. code-block:: default
 
@@ -191,29 +175,20 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_003.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1204058.921875, 259736.90625, 3426819.6061837124),
-     (-1204058.921875, 259736.90625, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_003.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-65
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 66-67
 
 plot vectors without mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-75
+.. GENERATED FROM PYTHON SOURCE LINES 67-77
 
 .. code-block:: default
 
@@ -230,37 +205,28 @@ plot vectors without mesh
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_004.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1114684.6969340036, 293863.65389149904, 752186.603224546),
-     (-1114684.6969340036, 293863.65389149904, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_004.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-78
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 78-80
 
 Compare directions. Normalize them so we can get a reasonable direction
 comparison.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-96
+.. GENERATED FROM PYTHON SOURCE LINES 80-98
 
 .. code-block:: default
 
 
-    flow_a = a.point_arrays['ssavelocity'].copy()
+    flow_a = a.point_data['ssavelocity'].copy()
     flow_a /= np.linalg.norm(flow_a, axis=1).reshape(-1, 1)
-    flow_b = b.point_arrays['ssavelocity'].copy()
+    flow_b = b.point_data['ssavelocity'].copy()
     flow_b /= np.linalg.norm(flow_b, axis=1).reshape(-1, 1)
 
 
@@ -278,29 +244,20 @@ comparison.
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_005.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1044239.3240694795, 354805.0268606294, 484178.24825854995),
-     (-1044239.3240694795, 354805.0268606294, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_005.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-98
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 99-100
 
 flow_a that agrees with the mean flow path of flow_b
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-106
+.. GENERATED FROM PYTHON SOURCE LINES 100-108
 
 .. code-block:: default
 
@@ -315,25 +272,16 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_006.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1204058.921875, 259736.90625, 3426819.6061837124),
-     (-1204058.921875, 259736.90625, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_006.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-114
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-116
 
 .. code-block:: default
 
@@ -347,28 +295,19 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_antarctica-compare_007.png
-    :alt: antarctica compare
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_007.png
+   :alt: antarctica compare
+   :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_007.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1204058.921875, 259736.90625, 3426819.6061837124),
-     (-1204058.921875, 259736.90625, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.182 seconds)
+   **Total running time of the script:** ( 0 minutes  12.034 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_antarctica-compare.py:

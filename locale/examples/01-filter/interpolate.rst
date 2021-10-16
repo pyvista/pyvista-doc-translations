@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_01-filter_interpolate.py:
 
 
+.. _interpolate_example:
+
 Interpolating
 ~~~~~~~~~~~~~
 
 Interpolate one mesh's point/cell arrays onto another mesh's nodes using a
 Gaussian Kernel.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -39,13 +41,13 @@ Gaussian Kernel.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-16
+.. GENERATED FROM PYTHON SOURCE LINES 15-18
 
 Simple Surface Interpolation
 ++++++++++++++++++++++++++++
 Resample the points' arrays onto a surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-26
+.. GENERATED FROM PYTHON SOURCE LINES 18-28
 
 .. code-block:: default
 
@@ -62,29 +64,20 @@ Resample the points' arrays onto a surface
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_interpolate_001.png
-    :alt: interpolate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
-     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_001.png
+   :alt: interpolate
+   :srcset: /examples/01-filter/images/sphx_glr_interpolate_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-28
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 Run the interpolation
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-38
+.. GENERATED FROM PYTHON SOURCE LINES 30-40
 
 .. code-block:: default
 
@@ -101,25 +94,16 @@ Run the interpolation
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_interpolate_002.png
-    :alt: interpolate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(66.17150713734922, 85.97370065980253, 73.43684689932165),
-     (-0.006363868713378906, 19.79582965373993, 7.2589758932590485),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_002.png
+   :alt: interpolate
+   :srcset: /examples/01-filter/images/sphx_glr_interpolate_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-48
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-50
 
 Complex Interpolation
 +++++++++++++++++++++
@@ -131,7 +115,7 @@ subsurface.
 This approach is a great for back-of-the-hand estimations but pales in
 comparison to kriging
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+.. GENERATED FROM PYTHON SOURCE LINES 50-54
 
 .. code-block:: default
 
@@ -146,11 +130,11 @@ comparison to kriging
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-54
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Create the interpolation grid around the sparse data
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+.. GENERATED FROM PYTHON SOURCE LINES 56-61
 
 .. code-block:: default
 
@@ -166,7 +150,7 @@ Create the interpolation grid around the sparse data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-71
+.. GENERATED FROM PYTHON SOURCE LINES 62-73
 
 .. code-block:: default
 
@@ -184,29 +168,20 @@ Create the interpolation grid around the sparse data
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_interpolate_003.png
-    :alt: interpolate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(364280.5723737897, 4285326.164400684, 14093.431895014139),
-     (337748.7217949739, 4261154.45054595, -637.1092549935128),
-     (-0.296292161026732, -0.23840196609932088, 0.9248651025279782)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_003.png
+   :alt: interpolate
+   :srcset: /examples/01-filter/images/sphx_glr_interpolate_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-73
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 Run an interpolation
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-75
+.. GENERATED FROM PYTHON SOURCE LINES 75-77
 
 .. code-block:: default
 
@@ -219,11 +194,11 @@ Run an interpolation
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-77
+.. GENERATED FROM PYTHON SOURCE LINES 78-79
 
 Visualize the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-88
+.. GENERATED FROM PYTHON SOURCE LINES 79-90
 
 .. code-block:: default
 
@@ -241,28 +216,19 @@ Visualize the results
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_interpolate_004.png
-    :alt: interpolate
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_004.png
+   :alt: interpolate
+   :srcset: /examples/01-filter/images/sphx_glr_interpolate_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(364280.5723737897, 4285326.164400684, 14093.431895014139),
-     (337748.7217949739, 4261154.45054595, -637.1092549935128),
-     (-0.296292161026732, -0.23840196609932088, 0.9248651025279782)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.502 seconds)
+   **Total running time of the script:** ( 0 minutes  7.936 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:

@@ -1,0 +1,5 @@
+from pyvista import examples
+mesh = examples.load_airplane()
+mesh.cell_bounds(0)
+# Expected:
+## [896.9940185546875, 907.5390014648438, 48.760101318359375, 55.49020004272461, 80.74520111083984, 83.65809631347656]

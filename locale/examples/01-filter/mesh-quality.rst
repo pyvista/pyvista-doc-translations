@@ -18,16 +18,18 @@
 .. _sphx_glr_examples_01-filter_mesh-quality.py:
 
 
+.. _mesh_quality_example:
+
 Computing Mesh Quality
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Leverage a powerful VTK algorithm for computing mesh quality.
+Leverage powerful VTK algorithms for computing mesh quality.
 
 Here we will use the :func:`pyvista.DataSetFilters.compute_cell_quality` filter
 to compute the cell qualities. For a full list of the various quality metrics
 available, please refer to the documentation for that filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-21
+.. GENERATED FROM PYTHON SOURCE LINES 13-23
 
 .. code-block:: default
 
@@ -48,11 +50,11 @@ available, please refer to the documentation for that filter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-23
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Compute the cell quality. Note that there are many different quality measures
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-26
+.. GENERATED FROM PYTHON SOURCE LINES 25-28
 
 .. code-block:: default
 
@@ -89,7 +91,7 @@ Compute the cell quality. Note that there are many different quality measures
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-28
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 .. code-block:: default
 
@@ -97,28 +99,19 @@ Compute the cell quality. Note that there are many different quality measures
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_mesh-quality_001.png
-    :alt: mesh quality
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_mesh-quality_001.png
+   :alt: mesh quality
+   :srcset: /examples/01-filter/images/sphx_glr_mesh-quality_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(10.10963531890468, 4.61130688407898, -4.503884867626516),
-     (1.2896420468715433, -0.055387528972708225, 1.1228250502811408),
-     (-0.2970769821136617, 0.9100381451936025, 0.2890948650371137)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.797 seconds)
+   **Total running time of the script:** ( 0 minutes  0.419 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_mesh-quality.py:

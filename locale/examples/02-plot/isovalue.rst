@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_02-plot_isovalue.py:
 
 
+.. _moving_isovalue_example:
+
 Moving Isovalue
 ~~~~~~~~~~~~~~~
 
 Make an animation of an isovalue through a volumetric dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-16
 
 .. code-block:: default
 
@@ -66,11 +68,11 @@ Make an animation of an isovalue through a volumetric dataset
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-16
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 Now lets make an array of all of the isovalues for which we want to show.
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+.. GENERATED FROM PYTHON SOURCE LINES 18-20
 
 .. code-block:: default
 
@@ -83,11 +85,11 @@ Now lets make an array of all of the isovalues for which we want to show.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-20
+.. GENERATED FROM PYTHON SOURCE LINES 21-22
 
 Now let's create an initial isosurface that we can plot and move
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-22
+.. GENERATED FROM PYTHON SOURCE LINES 22-24
 
 .. code-block:: default
 
@@ -100,11 +102,11 @@ Now let's create an initial isosurface that we can plot and move
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-24
+.. GENERATED FROM PYTHON SOURCE LINES 25-26
 
 Precompute the surfaces
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-26
+.. GENERATED FROM PYTHON SOURCE LINES 26-28
 
 .. code-block:: default
 
@@ -117,11 +119,11 @@ Precompute the surfaces
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-28
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 Set a single surface as the one being plotted that can be overwritten
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-30
+.. GENERATED FROM PYTHON SOURCE LINES 30-32
 
 .. code-block:: default
 
@@ -134,7 +136,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-64
+.. GENERATED FROM PYTHON SOURCE LINES 33-66
 
 .. code-block:: default
 
@@ -174,9 +176,10 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_isovalue_001.png
-    :alt: isovalue
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_isovalue_001.png
+   :alt: isovalue
+   :srcset: /examples/02-plot/images/sphx_glr_isovalue_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -193,7 +196,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  33.233 seconds)
+   **Total running time of the script:** ( 2 minutes  35.675 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:

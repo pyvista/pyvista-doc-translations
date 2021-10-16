@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_01-filter_compute-volume.py:
 
 
+.. _volumetric_example:
+
 Volumetric Analysis
 ~~~~~~~~~~~~~~~~~~~
 
 
 Calculate mass properties such as the volume or area of datasets
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
@@ -40,7 +42,7 @@ Calculate mass properties such as the volume or area of datasets
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-19
+.. GENERATED FROM PYTHON SOURCE LINES 16-21
 
 Computing mass properties such as the volume or area of datasets in PyVista
 is quite easy using the :func:`pyvista.DataSetFilters.compute_cell_sizes`
@@ -48,7 +50,7 @@ filter and the :attr:`pyvista.DataSet.volume` property on all PyVista meshes.
 
 Let's get started with a simple gridded mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-24
+.. GENERATED FROM PYTHON SOURCE LINES 21-26
 
 .. code-block:: default
 
@@ -64,13 +66,13 @@ Let's get started with a simple gridded mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 27-30
 
 We can then calculate the volume of every cell in the array using the
 ``.compute_cell_sizes`` filter which will add arrays to the cell data of the
 mesh core the volume and area by default.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-35
+.. GENERATED FROM PYTHON SOURCE LINES 30-37
 
 .. code-block:: default
 
@@ -79,7 +81,7 @@ mesh core the volume and area by default.
     sized = dataset.compute_cell_sizes()
 
     # Grab volumes for all cells in the mesh
-    cell_volumes = sized.cell_arrays["Volume"]
+    cell_volumes = sized.cell_data["Volume"]
 
 
 
@@ -88,12 +90,12 @@ mesh core the volume and area by default.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+.. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 We can also compute the total volume of the mesh using the ``.volume``
 property:
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-42
+.. GENERATED FROM PYTHON SOURCE LINES 40-44
 
 .. code-block:: default
 
@@ -108,12 +110,12 @@ property:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-45
+.. GENERATED FROM PYTHON SOURCE LINES 45-47
 
 Okay awesome! But what if we have have a dataset that we threshold with two
 volumetric bodies left over in one dataset? Take this for example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-50
+.. GENERATED FROM PYTHON SOURCE LINES 47-52
 
 .. code-block:: default
 
@@ -125,31 +127,22 @@ volumetric bodies left over in one dataset? Take this for example:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_compute-volume_001.png
-    :alt: compute volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_001.png
+   :alt: compute volume
+   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-54
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 53-56
 
 We could then assign a classification array for the two bodies, compute the
 cell sizes, then extract the volumes of each body. Note that there is a
 simpler implementation of this below in :ref:`split_vol_ref`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-74
+.. GENERATED FROM PYTHON SOURCE LINES 56-76
 
 .. code-block:: default
 
@@ -157,11 +150,11 @@ simpler implementation of this below in :ref:`split_vol_ref`.
     # Create a classifying array to ID each body
     rng = dataset.get_data_range()
     cval = ((rng[1] - rng[0]) * 0.20) + rng[0]
-    classifier = threshed.cell_arrays["Spatial Cell Data"] > cval
+    classifier = threshed.cell_data["Spatial Cell Data"] > cval
 
     # Compute cell volumes
     sizes = threshed.compute_cell_sizes()
-    volumes = sizes.cell_arrays["Volume"]
+    volumes = sizes.cell_data["Volume"]
 
     # Split volumes based on classifier and get volumes!
     idx = np.argwhere(classifier)
@@ -190,13 +183,13 @@ simpler implementation of this below in :ref:`split_vol_ref`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-78
+.. GENERATED FROM PYTHON SOURCE LINES 77-80
 
 Or better yet, you could simply extract the largest volume from your
 thresholded dataset by passing ``largest=True`` to the ``connectivity``
 filter or by using ``extract_largest`` filter (both are equivalent).
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-90
+.. GENERATED FROM PYTHON SOURCE LINES 80-92
 
 .. code-block:: default
 
@@ -215,25 +208,16 @@ filter or by using ``extract_largest`` filter (both are equivalent).
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_compute-volume_002.png
-    :alt: compute volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_002.png
+   :alt: compute volume
+   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-104
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 93-106
 
 -----
 
@@ -249,7 +233,7 @@ different connected volumes in a dataset into blocks in a
 :class:`pyvista.MultiBlock` dataset. For example, lets split the thresholded
 volume in the example above:
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-115
+.. GENERATED FROM PYTHON SOURCE LINES 106-117
 
 .. code-block:: default
 
@@ -280,7 +264,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-121
+.. GENERATED FROM PYTHON SOURCE LINES 118-123
 
 .. code-block:: default
 
@@ -292,25 +276,16 @@ volume in the example above:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_compute-volume_003.png
-    :alt: compute volume
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_003.png
+   :alt: compute volume
+   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-132
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 124-134
 
 -----
 
@@ -323,7 +298,7 @@ significantly large body and compute the volumes for each!
 
 Load up the data and threshold the channels:
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-136
+.. GENERATED FROM PYTHON SOURCE LINES 134-138
 
 .. code-block:: default
 
@@ -338,11 +313,11 @@ Load up the data and threshold the channels:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-138
+.. GENERATED FROM PYTHON SOURCE LINES 139-140
 
 Now extract all the different bodies and compute their volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-150
+.. GENERATED FROM PYTHON SOURCE LINES 140-152
 
 .. code-block:: default
 
@@ -356,7 +331,7 @@ Now extract all the different bodies and compute their volumes:
             del bodies[key]
             continue
         # Now lets add a volume array to all blocks
-        b.cell_arrays["TOTAL VOLUME"] = np.full(b.n_cells, vol)
+        b.cell_data["TOTAL VOLUME"] = np.full(b.n_cells, vol)
 
 
 
@@ -365,11 +340,11 @@ Now extract all the different bodies and compute their volumes:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-152
+.. GENERATED FROM PYTHON SOURCE LINES 153-154
 
 Print out the volumes for each body:
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-156
+.. GENERATED FROM PYTHON SOURCE LINES 154-158
 
 .. code-block:: default
 
@@ -412,11 +387,11 @@ Print out the volumes for each body:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-158
+.. GENERATED FROM PYTHON SOURCE LINES 159-160
 
 And visualize all the different volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-160
+.. GENERATED FROM PYTHON SOURCE LINES 160-162
 
 .. code-block:: default
 
@@ -425,28 +400,19 @@ And visualize all the different volumes:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_compute-volume_004.png
-    :alt: compute volume
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_004.png
+   :alt: compute volume
+   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.693 seconds)
+   **Total running time of the script:** ( 0 minutes  12.437 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

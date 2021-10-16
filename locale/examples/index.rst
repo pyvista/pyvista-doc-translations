@@ -83,6 +83,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a Kochanek spline/polyline from a numpy array of XYZ vertices.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-kochanek-spline_thumb.png
+     :alt: Create a Kochanek Spline
+
+     :ref:`sphx_glr_examples_00-load_create-kochanek-spline.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-kochanek-spline
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Creating parametric objects">
 
 .. only:: html
@@ -101,6 +122,48 @@ data.
    :hidden:
 
    /examples/00-load/create-parametric-geometric-objects
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we use pyvista.Box to make `pixel art &lt;https://en.wikipedia.org/wiki/Pixel_art&gt;`_. Pixel s...">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-pixel-art_thumb.png
+     :alt: Pixel Art of ALIEN MONSTERS
+
+     :ref:`sphx_glr_examples_00-load_create-pixel-art.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-pixel-art
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="PyVista wraps the vtk.vtkPlatonicSolidSource filter as pyvista.PlatonicSolid.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-platonic-solids_thumb.png
+     :alt: Platonic Solids
+
+     :ref:`sphx_glr_examples_00-load_create-platonic-solids.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-platonic-solids
 
 .. raw:: html
 
@@ -230,6 +293,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot connections between points in 3D as cylinders, colored by scalars.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-truss_thumb.png
+     :alt: Plot Truss-like FEA Solution with Cylinders
+
+     :ref:`sphx_glr_examples_00-load_create-truss.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-truss
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a simple uniform grid from a 3D NumPy array of values.">
 
 .. only:: html
@@ -269,6 +353,27 @@ data.
    :hidden:
 
    /examples/00-load/create-unstructured-surface
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Note this feature is only available for vtk&gt;=9.">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_load-gltf_thumb.png
+     :alt: Working with a glTF Files
+
+     :ref:`sphx_glr_examples_00-load_load-gltf.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/load-gltf
 
 .. raw:: html
 
@@ -356,6 +461,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Load data using a Reader">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_reader_thumb.png
+     :alt: Load data using a Reader
+
+     :ref:`sphx_glr_examples_00-load_reader.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/reader
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Use a topographic surface to create a 3D terrain-following mesh.">
 
 .. only:: html
@@ -422,7 +548,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Perform boolean operations with closed surfaces (intersect, cut, etc.).">
+    <div class="sphx-glr-thumbcontainer" tooltip="Perform boolean operations with closed (manifold) surfaces.">
 
 .. only:: html
 
@@ -503,6 +629,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
    :hidden:
 
    /examples/01-filter/clipping
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example use the pyvista.PolyDataFilters.collision  filter to detect the faces from one sph...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.png
+     :alt: Collision
+
+     :ref:`sphx_glr_examples_01-filter_collisions.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/collisions
 
 .. raw:: html
 
@@ -842,7 +989,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Leverage a powerful VTK algorithm for computing mesh quality.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Leverage powerful VTK algorithms for computing mesh quality.">
 
 .. only:: html
 
@@ -1010,7 +1157,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extract thin planar slices from a volume">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract thin planar slices from a volume.">
 
 .. only:: html
 
@@ -1049,6 +1196,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
    :hidden:
 
    /examples/01-filter/streamlines
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Integrate a vector field to generate streamlines on a 2D surface.">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_streamlines_2D_thumb.png
+     :alt: 2D Streamlines
+
+     :ref:`sphx_glr_examples_01-filter_streamlines_2D.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/streamlines_2D
 
 .. raw:: html
 
@@ -1094,7 +1262,28 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Using common filters like thresholding and clipping">
+    <div class="sphx-glr-thumbcontainer" tooltip="Surface reconstruction has a dedicated filter in PyVista and is handled by pyvista.DataSetFilte...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_surface_reconstruction_thumb.png
+     :alt: Surface Reconstruction
+
+     :ref:`sphx_glr_examples_01-filter_surface_reconstruction.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/surface_reconstruction
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Using common filters like thresholding and clipping.">
 
 .. only:: html
 
@@ -1184,7 +1373,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with add_background_image">
+    <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with pyvista.Plotter.add_background_image.">
 
 .. only:: html
 
@@ -1247,7 +1436,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Depth peeling is a technique to correctly render translucent geometry. This is not enabled by d...">
+    <div class="sphx-glr-thumbcontainer" tooltip="For this example, we will showcase the difference that depth peeling provides.">
 
 .. only:: html
 
@@ -2177,7 +2366,7 @@ truly bring out the best of your visualization:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="While plotters have a default set of lights and there are many options for customizing lighting...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Disable mesh lighting.">
 
 .. only:: html
 
@@ -2273,6 +2462,69 @@ developers.
    :hidden:
 
    /examples/99-advanced/antarctica-compare
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="A pyvista.DataSet, such as pyvista.PolyData, can be extended by users.  For example, if the use...">
+
+.. only:: html
+
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_extending-pyvista_thumb.png
+     :alt: Extending PyVista
+
+     :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/99-advanced/extending-pyvista
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to `pyvista/pyvista-support#486 &lt;https://github.com/pyvista/pyvista-...">
+
+.. only:: html
+
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_osmnx-example_thumb.png
+     :alt: Plot Open Street Map Data
+
+     :ref:`sphx_glr_examples_99-advanced_osmnx-example.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/99-advanced/osmnx-example
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the Moeller–Trumbore intersection algorithm using pyvista.">
+
+.. only:: html
+
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace-moeller_thumb.png
+     :alt: Visualize the Moeller–Trumbore Algorithm
+
+     :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/99-advanced/ray-trace-moeller
 
 .. raw:: html
 

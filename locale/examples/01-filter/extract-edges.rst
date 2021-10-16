@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_extract-edges.py:
 
 
+.. _extract_edges_example:
+
 Extract Edges
 ~~~~~~~~~~~~~
 
 Extracts edges from a surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-12
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
@@ -39,7 +41,7 @@ Extracts edges from a surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-23
+.. GENERATED FROM PYTHON SOURCE LINES 15-25
 
 From vtk documentation, the edges of a mesh are one of the following:
 
@@ -52,7 +54,7 @@ This filter will extract those edges given a feature angle and return a dataset
 with lines that represent the edges of the original mesh.
 To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-38
+.. GENERATED FROM PYTHON SOURCE LINES 25-40
 
 .. code-block:: default
 
@@ -74,30 +76,21 @@ To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-edges_001.png
-    :alt: extract edges
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(96.0, -197.0, 45.0),
-     (7.0, -109.0, 22.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_001.png
+   :alt: extract edges
+   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 We can do this analysis for any :class:`pyvista.PolyData` object. Let's try
 the cow mesh example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-53
+.. GENERATED FROM PYTHON SOURCE LINES 43-55
 
 .. code-block:: default
 
@@ -116,31 +109,22 @@ the cow mesh example:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-edges_002.png
-    :alt: extract edges
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(9.5, 3.0, 5.5),
-     (2.5, 1.0, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_002.png
+   :alt: extract edges
+   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-59
 
 We can leverage the :any:`pyvista.PolyData.n_open_edges` property and
 :func:`pyvista.PolyDataFilters.extract_feature_edges` filter to count and extract the
 open edges on a :class:`pyvista.PolyData` mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-61
+.. GENERATED FROM PYTHON SOURCE LINES 59-63
 
 .. code-block:: default
 
@@ -155,11 +139,11 @@ open edges on a :class:`pyvista.PolyData` mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-63
+.. GENERATED FROM PYTHON SOURCE LINES 64-65
 
 We can get a count of the open edges with:
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-66
+.. GENERATED FROM PYTHON SOURCE LINES 65-68
 
 .. code-block:: default
 
@@ -181,12 +165,12 @@ We can get a count of the open edges with:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-69
+.. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 And we can extract those edges with the ``boundary_edges`` option of
 :func:`pyvista.PolyDataFilters.extract_feature_edges`:
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-78
+.. GENERATED FROM PYTHON SOURCE LINES 71-80
 
 .. code-block:: default
 
@@ -202,28 +186,19 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-edges_003.png
-    :alt: extract edges
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_003.png
+   :alt: extract edges
+   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.2, -0.13, 0.12),
-     (-0.015, 0.1, 0.0),
-     (0.2863710324052292, 0.2659159586619985, 0.9204783184453794)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.795 seconds)
+   **Total running time of the script:** ( 0 minutes  5.998 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:

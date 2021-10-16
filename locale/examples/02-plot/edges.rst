@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_02-plot_edges.py:
 
 
+.. _show_edges_example:
+
 Show Edges
 ~~~~~~~~~~
 
 Show the edges of all geometries within a mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 Sometimes it can be useful to show all of the edges of a mesh when rendering
 to communicate aspects of the dataset like resolution.
@@ -31,7 +33,7 @@ to communicate aspects of the dataset like resolution.
 Showing the edges for any rendered dataset is as simple as specifying the
 the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-28
+.. GENERATED FROM PYTHON SOURCE LINES 15-30
 
 .. code-block:: default
 
@@ -53,28 +55,19 @@ the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edges_001.png
-    :alt: edges
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edges_001.png
+   :alt: edges
+   :srcset: /examples/02-plot/images/sphx_glr_edges_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(194.57658338658473, -327.5539184202715, 28.106692235139377),
-     (-10.46795453395034, -67.33281919301498, -19.938084799559192),
-     (-0.05444711191580967, 0.13964269728441056, 0.9887039137674948)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.565 seconds)
+   **Total running time of the script:** ( 0 minutes  5.314 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edges.py:

@@ -18,13 +18,14 @@
 .. _sphx_glr_examples_00-load_read-file.py:
 
 
+.. _read_file_example:
+
 Load and Plot from a File
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Read a dataset from a known file type.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 9-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-17
 
 Loading a mesh is trivial - if your data is in one of the many supported
 file formats, simply use :func:`pyvista.read` to load your spatially
@@ -33,7 +34,7 @@ referenced dataset into a PyVista mesh object.
 The following code block uses a built-in example file and displays an
 airplane mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-20
+.. GENERATED FROM PYTHON SOURCE LINES 17-22
 
 .. code-block:: default
 
@@ -49,12 +50,12 @@ airplane mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-23
+.. GENERATED FROM PYTHON SOURCE LINES 23-25
 
 The following code block uses a built-in example
 file, displays an airplane mesh and returns the camera's position:
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-28
+.. GENERATED FROM PYTHON SOURCE LINES 25-30
 
 .. code-block:: default
 
@@ -78,12 +79,12 @@ file, displays an airplane mesh and returns the camera's position:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-31
+.. GENERATED FROM PYTHON SOURCE LINES 31-33
 
 Note the above filename, it's a ``.ply`` file - one of the many supported
 formats in PyVista.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-35
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 .. code-block:: default
 
@@ -94,20 +95,21 @@ formats in PyVista.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_001.png
-    :alt: read file
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_001.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_001.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+.. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 You can also take a screenshot without creating an interactive plot window
 using the ``Plotter``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-44
+.. GENERATED FROM PYTHON SOURCE LINES 40-46
 
 .. code-block:: default
 
@@ -120,29 +122,20 @@ using the ``Plotter``:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_002.png
-    :alt: read file
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3140.593704331348, 2919.620300400684, 2375.7925778512454),
-     (896.9955291748047, 676.0221252441406, 132.19440269470215),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_002.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 47-48
 
 The points from the mesh are directly accessible as a NumPy array:
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 .. code-block:: default
 
@@ -170,11 +163,11 @@ The points from the mesh are directly accessible as a NumPy array:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-51
+.. GENERATED FROM PYTHON SOURCE LINES 52-53
 
 The faces from the mesh are also directly accessible as a NumPy array:
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-55
+.. GENERATED FROM PYTHON SOURCE LINES 53-57
 
 .. code-block:: default
 
@@ -203,7 +196,7 @@ The faces from the mesh are also directly accessible as a NumPy array:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-61
+.. GENERATED FROM PYTHON SOURCE LINES 58-63
 
 Loading other files types is just as easy! Simply pass your file path to the
 :func:`pyvista.read` function and that's it!
@@ -211,11 +204,11 @@ Loading other files types is just as easy! Simply pass your file path to the
 Here are a few other examples - simply replace ``examples.download_*`` in the
 examples below with ``pyvista.read('path/to/you/file.ext')``
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-64
+.. GENERATED FROM PYTHON SOURCE LINES 65-66
 
 Example STL file:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-68
+.. GENERATED FROM PYTHON SOURCE LINES 66-70
 
 .. code-block:: default
 
@@ -226,29 +219,20 @@ Example STL file:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_003.png
-    :alt: read file
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(107.0, 68.5, 204.0),
-     (128.0, 86.5, 223.5),
-     (0.45641198720858384, 0.36512958976686705, -0.8113990883708156)]
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_003.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-70
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
 Example OBJ file
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-74
+.. GENERATED FROM PYTHON SOURCE LINES 72-76
 
 .. code-block:: default
 
@@ -259,29 +243,20 @@ Example OBJ file
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_004.png
-    :alt: read file
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.0, 3.0501165064051747, 14.095016027506968),
-     (0.0, 3.0501165064051747, 0.09646400809288025),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_004.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-76
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 77-78
 
 Example BYU file
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-80
+.. GENERATED FROM PYTHON SOURCE LINES 78-82
 
 .. code-block:: default
 
@@ -292,29 +267,20 @@ Example BYU file
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_005.png
-    :alt: read file
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-2.658292843164852, 7.244705584172111, -14.36176396043028),
-     (0.2140599489212036, 1.5, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_005.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-82
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 83-84
 
 Example VTK file
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-85
+.. GENERATED FROM PYTHON SOURCE LINES 84-87
 
 .. code-block:: default
 
@@ -324,28 +290,19 @@ Example VTK file
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-file_006.png
-    :alt: read file
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_read-file_006.png
+   :alt: read file
+   :srcset: /examples/00-load/images/sphx_glr_read-file_006.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.2, 0.3, 0.9),
-     (0.0, 0.0, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.318 seconds)
+   **Total running time of the script:** ( 0 minutes  3.396 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_02-plot_topo-map.py:
 
 
+.. _ref_topo_map_example:
+
 Topographic Map
 ~~~~~~~~~~~~~~~
 
@@ -25,7 +27,7 @@ This is very similar to the :ref:`ref_texture_example` example except it is
 focused on plotting aerial imagery from a GeoTIFF on top of some topography
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-21
+.. GENERATED FROM PYTHON SOURCE LINES 11-23
 
 .. code-block:: default
 
@@ -72,11 +74,11 @@ mesh.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-23
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Let's inspect the imagery that we just loaded
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-29
+.. GENERATED FROM PYTHON SOURCE LINES 25-31
 
 .. code-block:: default
 
@@ -89,9 +91,10 @@ Let's inspect the imagery that we just loaded
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_topo-map_001.png
-    :alt: topo map
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_topo-map_001.png
+   :alt: topo map
+   :srcset: /examples/02-plot/images/sphx_glr_topo-map_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -101,18 +104,18 @@ Let's inspect the imagery that we just loaded
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7f595586d990>
+    <matplotlib.image.AxesImage object at 0x7f3a8b048040>
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-34
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 Once you have a topography mesh loaded as a surface mesh
 (we use a :class:`pyvista.StructuredGrid` here) and an image loaded as a
 :class:`pyvista.Texture` object using the :func:`pyvista.read_texture`
 method, then you can map that imagery to the surface mesh as follows:
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-42
+.. GENERATED FROM PYTHON SOURCE LINES 36-44
 
 .. code-block:: default
 
@@ -155,11 +158,11 @@ method, then you can map that imagery to the surface mesh as follows:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-44
+.. GENERATED FROM PYTHON SOURCE LINES 45-46
 
 Now display it! Note that the imagery is aligned as we expect.
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-46
+.. GENERATED FROM PYTHON SOURCE LINES 46-48
 
 .. code-block:: default
 
@@ -168,29 +171,20 @@ Now display it! Note that the imagery is aligned as we expect.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_topo-map_002.png
-    :alt: topo map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1821250.0, 5648752.5, 21483.021812796094),
-     (1821250.0, 5648752.5, 2084.1749267578125),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_topo-map_002.png
+   :alt: topo map
+   :srcset: /examples/02-plot/images/sphx_glr_topo-map_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-48
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 49-50
 
 And here is a 3D perspective!
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-50
+.. GENERATED FROM PYTHON SOURCE LINES 50-52
 
 .. code-block:: default
 
@@ -199,30 +193,21 @@ And here is a 3D perspective!
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_topo-map_003.png
-    :alt: topo map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1832449.9294716225, 5659952.429471622, 13284.10439838035),
-     (1821250.0, 5648752.5, 2084.1749267578125),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_topo-map_003.png
+   :alt: topo map
+   :srcset: /examples/02-plot/images/sphx_glr_topo-map_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-53
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 53-55
 
 We could also display the entire region by extracting the surrounding region
 and plotting the texture mapped local topography and the outside area
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-66
+.. GENERATED FROM PYTHON SOURCE LINES 55-68
 
 .. code-block:: default
 
@@ -242,28 +227,19 @@ and plotting the texture mapped local topography and the outside area
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_topo-map_004.png
-    :alt: topo map
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_topo-map_004.png
+   :alt: topo map
+   :srcset: /examples/02-plot/images/sphx_glr_topo-map_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1831100.0, 5642142.0, 8168.0),
-     (1820841.0, 5648745.0, 1104.0),
-     (-0.43522768363338804, 0.24812980584156377, 0.8654527502135188)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.732 seconds)
+   **Total running time of the script:** ( 0 minutes  18.428 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:

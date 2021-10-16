@@ -18,18 +18,22 @@
 .. _sphx_glr_examples_02-plot_orbit.py:
 
 
+.. _orbiting_example:
+
 Orbiting
-~~~~~~~~~
+~~~~~~~~
 
 Orbit around a scene.
 
-NOTE: using ``p.open_movie('orbit.mp4')`` is better than
-``p.open_gif('orbit.gif')``
+.. note::
+   The quality of the movie will be better when using
+   ``p.open_movie('orbit.mp4')`` instead of
+   ``p.open_gif('orbit.gif')``
 
 For orbiting to work you first have to show the scene and leave the plotter open
 with ``.show(auto_close=False)``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-20
+.. GENERATED FROM PYTHON SOURCE LINES 17-24
 
 .. code-block:: default
 
@@ -47,7 +51,7 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-30
+.. GENERATED FROM PYTHON SOURCE LINES 25-34
 
 .. code-block:: default
 
@@ -63,15 +67,16 @@ with ``.show(auto_close=False)``.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_orbit_001.png
-    :alt: orbit
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_001.png
+   :alt: orbit
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_001.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-43
+.. GENERATED FROM PYTHON SOURCE LINES 35-47
 
 .. code-block:: default
 
@@ -83,22 +88,23 @@ with ``.show(auto_close=False)``.
     viewup = [0.5, 0.5, 1]
     path = p.generate_orbital_path(factor=2.0, shift=10000, viewup=viewup, n_points=36)
     p.open_gif("orbit.gif")
-    p.orbit_on_path(path, write_frames=True, viewup=[0, 0, 1])
+    p.orbit_on_path(path, write_frames=True, viewup=[0, 0, 1], step=0.05)
     p.close()
 
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_orbit_002.png
-    :alt: orbit
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_002.png
+   :alt: orbit
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_002.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-48
+.. GENERATED FROM PYTHON SOURCE LINES 48-52
 
 .. code-block:: default
 
@@ -113,7 +119,7 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-56
+.. GENERATED FROM PYTHON SOURCE LINES 53-60
 
 .. code-block:: default
 
@@ -122,14 +128,15 @@ with ``.show(auto_close=False)``.
     p.show(auto_close=False)
     path = p.generate_orbital_path(factor=2.0, n_points=36, viewup=viewup, shift=0.2)
     p.open_gif("orbit.gif")
-    p.orbit_on_path(path, write_frames=True, viewup=viewup)
+    p.orbit_on_path(path, write_frames=True, viewup=viewup, step=0.05)
     p.close()
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_orbit_003.png
-    :alt: orbit
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_003.png
+   :alt: orbit
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -138,7 +145,7 @@ with ``.show(auto_close=False)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  2.108 seconds)
+   **Total running time of the script:** ( 3 minutes  25.912 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_orbit.py:

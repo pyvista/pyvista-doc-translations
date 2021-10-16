@@ -23,7 +23,6 @@ Creating a Uniform Grid
 
 Create a simple uniform grid from a 3D NumPy array of values.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 8-12
 
 .. code-block:: default
@@ -71,7 +70,7 @@ This is spatially referenced such that the grid is 20 by 5 by 10
     grid.spacing = (1, 5, 2)  # These are the cell sizes along each axis
 
     # Add the data values to the cell data
-    grid.cell_arrays["values"] = values.flatten(order="F")  # Flatten the array!
+    grid.cell_data["values"] = values.flatten(order="F")  # Flatten the array!
 
     # Now plot the grid!
     grid.plot(show_edges=True)
@@ -80,21 +79,12 @@ This is spatially referenced such that the grid is 20 by 5 by 10
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
-    :alt: create uniform grid
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
+   :alt: create uniform grid
+   :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(152.10373063750072, 87.60373063750072, 107.70373063750071),
-     (110.0, 45.5, 65.6),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -127,35 +117,26 @@ setting the grid dimensions upon initialization.
     grid.spacing = (1, 5, 2)  # These are the cell sizes along each axis
 
     # Add the data values to the cell data
-    grid.point_arrays["values"] = values.flatten(order="F")  # Flatten the array!
+    grid.point_data["values"] = values.flatten(order="F")  # Flatten the array!
 
     # Now plot the grid!
     grid.plot(show_edges=True)
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
-    :alt: create uniform grid
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
+   :alt: create uniform grid
+   :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(146.23905790033376, 79.73905790033376, 101.33905790033376),
-     (109.5, 43.0, 64.6),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.626 seconds)
+   **Total running time of the script:** ( 0 minutes  1.056 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-uniform-grid.py:

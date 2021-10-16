@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_04-lights_light_types.py:
 
 
+.. _light_types_example:
+
 Light Types
 ~~~~~~~~~~~
 
@@ -36,7 +38,7 @@ For headlights the :py:attr:`position` and :py:attr:`focal_point` properties
 are meaningless. No matter where you move the camera, the light always emanates
 from the view point:
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-37
+.. GENERATED FROM PYTHON SOURCE LINES 22-39
 
 .. code-block:: default
 
@@ -60,25 +62,16 @@ from the view point:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_light_types_001.png
-    :alt: light types
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.2959535995427517, 0.27757625076211967, 0.3892674053017048),
-     (0.01684039831161499, -0.0015369504690170288, 0.11015420407056808),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_001.png
+   :alt: light types
+   :srcset: /examples/04-lights/images/sphx_glr_light_types_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-47
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-49
 
 Camera light
 ============
@@ -90,7 +83,7 @@ and :py:attr:`world_focal_point` read-only properties, respectively. For specifi
 of the local coordinate system used for the coordinates please see the documentation
 of :func:`pyvista.Light.set_camera_light`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-56
+.. GENERATED FROM PYTHON SOURCE LINES 49-58
 
 .. code-block:: default
 
@@ -106,25 +99,16 @@ of :func:`pyvista.Light.set_camera_light`.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_light_types_002.png
-    :alt: light types
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.2959535995427517, 0.27757625076211967, 0.3892674053017048),
-     (0.01684039831161499, -0.0015369504690170288, 0.11015420407056808),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_002.png
+   :alt: light types
+   :srcset: /examples/04-lights/images/sphx_glr_light_types_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-62
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-64
 
 Scene light
 ===========
@@ -132,7 +116,7 @@ Scene light
 Scene lights are attached to the scene, their position and focal point are
 interpreted as global coordinates:
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-69
+.. GENERATED FROM PYTHON SOURCE LINES 64-71
 
 .. code-block:: default
 
@@ -146,28 +130,19 @@ interpreted as global coordinates:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_light_types_003.png
-    :alt: light types
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_003.png
+   :alt: light types
+   :srcset: /examples/04-lights/images/sphx_glr_light_types_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.2959535995427517, 0.27757625076211967, 0.3892674053017048),
-     (0.01684039831161499, -0.0015369504690170288, 0.11015420407056808),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.915 seconds)
+   **Total running time of the script:** ( 0 minutes  1.746 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:

@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_subdivide.py:
 
 
+.. _subdivide_example:
+
 Subdivide Cells
 ~~~~~~~~~~~~~~~
 
@@ -27,7 +29,7 @@ The :func:`pyvista.PolyDataFilters.subdivide` filter utilizes three different
 subdivision algorithms to subdivide a mesh's cells: `butterfly`, `loop`,
 or `linear`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-14
+.. GENERATED FROM PYTHON SOURCE LINES 13-16
 
 .. code-block:: default
 
@@ -41,13 +43,13 @@ or `linear`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-20
 
 First, let's load a **triangulated** mesh to subdivide. We can use the
 :func:`pyvista.DataSetFilters.triangulate` filter to ensure the mesh we are
 using is purely triangles.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-24
+.. GENERATED FROM PYTHON SOURCE LINES 20-26
 
 .. code-block:: default
 
@@ -64,13 +66,13 @@ using is purely triangles.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 27-30
 
 Now, lets do a few subdivisions with the mesh and compare the results.
 Below is a helper function to make a comparison plot of thee different
 subdivisions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-52
+.. GENERATED FROM PYTHON SOURCE LINES 30-54
 
 .. code-block:: default
 
@@ -105,11 +107,11 @@ subdivisions.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-54
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Run the subdivisions for 1 and 3 levels.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-58
+.. GENERATED FROM PYTHON SOURCE LINES 56-60
 
 .. code-block:: default
 
@@ -120,28 +122,19 @@ Run the subdivisions for 1 and 3 levels.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_subdivide_001.png
-    :alt: subdivide
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_subdivide_001.png
+   :alt: subdivide
+   :srcset: /examples/01-filter/images/sphx_glr_subdivide_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.02788175062966399, 0.19293295656233056, 0.4334449972621349),
-     (-0.053260899930287015, 0.08881197167521734, -9.016948161029588e-05),
-     (-0.10170607813337214, 0.9686438023715357, -0.22668272496584668)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.649 seconds)
+   **Total running time of the script:** ( 0 minutes  1.584 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_subdivide.py:

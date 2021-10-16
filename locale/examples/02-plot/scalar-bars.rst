@@ -18,14 +18,15 @@
 .. _sphx_glr_examples_02-plot_scalar-bars.py:
 
 
+.. _scalar_bar_example:
+
 Customize Scalar Bars
 ~~~~~~~~~~~~~~~~~~~~~
 
 Walk through of all the different capabilities of scalar bars and
 how a user can customize scalar bars.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 11-16
 
 .. code-block:: default
 
@@ -41,7 +42,7 @@ how a user can customize scalar bars.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-20
+.. GENERATED FROM PYTHON SOURCE LINES 17-22
 
 By default, when plotting a dataset with a scalar array, a scalar bar for that
 array is added. To turn off this behavior, a user could specify
@@ -49,7 +50,7 @@ array is added. To turn off this behavior, a user could specify
 sample dataset provide via PyVista to demonstrate the default behavior of
 scalar bar plotting:
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-31
+.. GENERATED FROM PYTHON SOURCE LINES 22-33
 
 .. code-block:: default
 
@@ -67,25 +68,16 @@ scalar bar plotting:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_scalar-bars_001.png
-    :alt: scalar bars
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_001.png
+   :alt: scalar bars
+   :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-37
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 34-39
 
 We could also plot the scene with an interactive scalar bar to move around
 and place where we like by specifying passing keyword arguments to control
@@ -93,7 +85,7 @@ the scalar bar via the ``scalar_bar_args`` parameter in
 :func:`pyvista.BasePlotter.add_mesh`. The keyword arguments to control the
 scalar bar are defined in :func:`pyvista.BasePlotter.add_scalar_bar`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-48
+.. GENERATED FROM PYTHON SOURCE LINES 39-50
 
 .. code-block:: default
 
@@ -115,13 +107,13 @@ scalar bar are defined in :func:`pyvista.BasePlotter.add_scalar_bar`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 51-54
 
 .. figure:: ../../images/gifs/scalar-bar-interactive.gif
 
 Or manually define the scalar bar's location:
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-60
+.. GENERATED FROM PYTHON SOURCE LINES 54-62
 
 .. code-block:: default
 
@@ -136,29 +128,20 @@ Or manually define the scalar bar's location:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_scalar-bars_002.png
-    :alt: scalar bars
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_002.png
+   :alt: scalar bars
+   :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-62
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 63-64
 
 The text properties of the scalar bar can also be controlled:
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-79
+.. GENERATED FROM PYTHON SOURCE LINES 64-81
 
 .. code-block:: default
 
@@ -182,29 +165,20 @@ The text properties of the scalar bar can also be controlled:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_scalar-bars_003.png
-    :alt: scalar bars
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_003.png
+   :alt: scalar bars
+   :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-81
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 82-83
 
 Labelling values outside of the scalar range
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-88
+.. GENERATED FROM PYTHON SOURCE LINES 83-90
 
 .. code-block:: default
 
@@ -218,30 +192,21 @@ Labelling values outside of the scalar range
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_scalar-bars_004.png
-    :alt: scalar bars
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_004.png
+   :alt: scalar bars
+   :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-91
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-93
 
 Annotate values of interest using a dictionary. The key of the dictionary
 must be the value to annotate, and the value must be the string label.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-101
+.. GENERATED FROM PYTHON SOURCE LINES 93-103
 
 .. code-block:: default
 
@@ -258,28 +223,19 @@ must be the value to annotate, and the value must be the string label.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_scalar-bars_005.png
-    :alt: scalar bars
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_005.png
+   :alt: scalar bars
+   :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(581977.3046422418, 5134123.804642241, 21436.804642241805),
-     (562835.0, 5114981.5, 2294.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.407 seconds)
+   **Total running time of the script:** ( 0 minutes  5.388 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:

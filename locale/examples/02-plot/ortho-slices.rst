@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_02-plot_ortho-slices.py:
 
 
+.. _orthogonal_slices_example:
+
 Orthogonal Slices
 ~~~~~~~~~~~~~~~~~
 
@@ -26,7 +28,7 @@ View three orthogonal slices from a mesh.
 Use the :func:`pyvista.DataSetFilters.slice_orthogonal` filter to create these
 slices simultaneously.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-17
+.. GENERATED FROM PYTHON SOURCE LINES 12-19
 
 .. code-block:: default
 
@@ -52,12 +54,12 @@ slices simultaneously.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-20
+.. GENERATED FROM PYTHON SOURCE LINES 20-22
 
 Create three slices. Easily control their locations with the ``x``, ``y``,
 and ``z`` arguments.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-22
+.. GENERATED FROM PYTHON SOURCE LINES 22-24
 
 .. code-block:: default
 
@@ -70,7 +72,7 @@ and ``z`` arguments.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-34
+.. GENERATED FROM PYTHON SOURCE LINES 25-36
 
 .. code-block:: default
 
@@ -88,25 +90,16 @@ and ``z`` arguments.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
-    :alt: ortho slices
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(540.9115516905358, -617.1912234499737, 180.5084853429126),
-     (128.31920055083387, 126.4977720785509, 111.77682599082095),
-     (-0.1065160140819035, 0.032750075477590124, 0.9937714884722322)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
+   :alt: ortho slices
+   :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-62
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 37-64
 
 .. code-block:: default
 
@@ -140,28 +133,19 @@ and ``z`` arguments.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
-    :alt: ortho slices
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
+   :alt: ortho slices
+   :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(127.5, -725.7466298125642, 127.5),
-     (127.5, 127.5, 127.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.204 seconds)
+   **Total running time of the script:** ( 0 minutes  4.783 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ortho-slices.py:

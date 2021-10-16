@@ -18,13 +18,14 @@
 .. _sphx_glr_examples_01-filter_decimate.py:
 
 
+.. _decimate_example:
+
 Decimation
 ~~~~~~~~~~
 
 Decimate a mesh
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 8-21
+.. GENERATED FROM PYTHON SOURCE LINES 10-23
 
 .. code-block:: default
 
@@ -44,31 +45,22 @@ Decimate a mesh
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_decimate_001.png
-    :alt: decimate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.4, -0.07, -0.31),
-     (0.05, -0.13, -0.06),
-     (-0.09918995010726926, 0.9918995010726926, 0.07935196008581541)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_001.png
+   :alt: decimate
+   :srcset: /examples/01-filter/images/sphx_glr_decimate_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-25
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 Now let's define a target reduction and compare the
 :func:`pyvista.PolyData.decimate` and :func:`pyvista.PolyData.decimate_pro`
 filters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 27-30
 
 .. code-block:: default
 
@@ -90,7 +82,7 @@ filters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-34
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 .. code-block:: default
 
@@ -102,25 +94,16 @@ filters.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_decimate_002.png
-    :alt: decimate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.4, -0.07, -0.31),
-     (0.05, -0.13, -0.06),
-     (-0.09918995010726926, 0.9918995010726926, 0.07935196008581541)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_002.png
+   :alt: decimate
+   :srcset: /examples/01-filter/images/sphx_glr_decimate_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-40
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 37-42
 
 .. code-block:: default
 
@@ -132,29 +115,20 @@ filters.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_decimate_003.png
-    :alt: decimate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.4, -0.07, -0.31),
-     (0.05, -0.13, -0.06),
-     (-0.09918995010726926, 0.9918995010726926, 0.07935196008581541)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_003.png
+   :alt: decimate
+   :srcset: /examples/01-filter/images/sphx_glr_decimate_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-42
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 43-44
 
 Side by side comparison:
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-60
+.. GENERATED FROM PYTHON SOURCE LINES 44-62
 
 .. code-block:: default
 
@@ -179,28 +153,19 @@ Side by side comparison:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_decimate_004.png
-    :alt: decimate
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_004.png
+   :alt: decimate
+   :srcset: /examples/01-filter/images/sphx_glr_decimate_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.8136259721113195, 0.0024271619131386035, -0.6008839297564575),
-     (0.05, -0.13, -0.06),
-     (-0.09918995010726926, 0.9918995010726926, 0.07935196008581541)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.121 seconds)
+   **Total running time of the script:** ( 0 minutes  1.966 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:

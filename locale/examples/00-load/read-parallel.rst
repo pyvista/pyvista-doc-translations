@@ -18,13 +18,15 @@
 .. _sphx_glr_examples_00-load_read-parallel.py:
 
 
+.. _read_parallel_example:
+
 Parallel Files
 ~~~~~~~~~~~~~~
 
 The VTK library supports parallel file formats. Reading meshes broken up into
 several files is natively supported by VTK and PyVista.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
@@ -40,12 +42,12 @@ several files is natively supported by VTK and PyVista.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-16
+.. GENERATED FROM PYTHON SOURCE LINES 16-18
 
 Let's go ahead and download the sample dataset containing an
 :class:`pyvista.UnstructuredGrid` broken up into several files.
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-20
+.. GENERATED FROM PYTHON SOURCE LINES 18-22
 
 .. code-block:: default
 
@@ -75,7 +77,7 @@ Let's go ahead and download the sample dataset containing an
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
     <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
     <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
     <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
@@ -87,7 +89,7 @@ Let's go ahead and download the sample dataset containing an
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-27
+.. GENERATED FROM PYTHON SOURCE LINES 23-29
 
 The above code downloaded a dataset containing a set of parallel files for a
 blood vessel mesh and returned an :class:`pyvista.UnstructuredGrid` - we did
@@ -96,7 +98,7 @@ of files.
 
 Let's inspect where this downloaded our dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-30
+.. GENERATED FROM PYTHON SOURCE LINES 29-32
 
 .. code-block:: default
 
@@ -118,7 +120,7 @@ Let's inspect where this downloaded our dataset:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-33
+.. GENERATED FROM PYTHON SOURCE LINES 33-35
 
 .. code-block:: default
 
@@ -135,18 +137,18 @@ Let's inspect where this downloaded our dataset:
  .. code-block:: none
 
 
-    ['002.vtu', '001.vtu', '000.vtu', '003.vtu']
+    ['002.vtu', '003.vtu', '001.vtu', '000.vtu']
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 36-40
 
 Note that a ``.pvtu`` file is available along side a directory. This
 directory contains all the parallel files or pieces that make the whole mesh.
 We can simply read the ``.pvtu`` file and VTK will handle putting the mesh
 together.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-42
+.. GENERATED FROM PYTHON SOURCE LINES 40-44
 
 .. code-block:: default
 
@@ -176,7 +178,7 @@ together.
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>node_value</b></td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
+    <tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
     <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
     <tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>
     <tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>
@@ -188,11 +190,11 @@ together.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-44
+.. GENERATED FROM PYTHON SOURCE LINES 45-46
 
 Plot the pieced together mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 46-49
 
 .. code-block:: default
 
@@ -202,25 +204,16 @@ Plot the pieced together mesh
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-parallel_001.png
-    :alt: read parallel
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(247.6924377112037, 234.1924377112037, 283.6924377112037),
-     (87.0, 73.5, 123.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_001.png
+   :alt: read parallel
+   :srcset: /examples/00-load/images/sphx_glr_read-parallel_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-49
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 50-51
 
 .. code-block:: default
 
@@ -228,28 +221,19 @@ Plot the pieced together mesh
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-parallel_002.png
-    :alt: read parallel
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_002.png
+   :alt: read parallel
+   :srcset: /examples/00-load/images/sphx_glr_read-parallel_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(247.6924377112037, 234.1924377112037, 283.6924377112037),
-     (87.0, 73.5, 123.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.260 seconds)
+   **Total running time of the script:** ( 0 minutes  2.077 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:

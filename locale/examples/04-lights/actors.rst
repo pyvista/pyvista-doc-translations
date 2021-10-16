@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_04-lights_actors.py:
 
 
+.. _light_actors_example:
+
 Light Actors
 ~~~~~~~~~~~~
 
@@ -29,7 +31,7 @@ so they can be visualized using a cone.
 This is exactly the purpose of a ``vtk.vtkLightActor``, the
 functionality of which can be enabled for spotlights:
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-41
+.. GENERATED FROM PYTHON SOURCE LINES 15-43
 
 .. code-block:: default
 
@@ -64,30 +66,21 @@ functionality of which can be enabled for spotlights:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_actors_001.png
-    :alt: actors
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(28.0, 30.0, 22.0),
-     (0.77, 0.0, -0.44),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_actors_001.png
+   :alt: actors
+   :srcset: /examples/04-lights/images/sphx_glr_actors_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-44
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 44-46
 
 Light actors can be very useful when designing complex scenes where
 spotlights are involved in lighting.
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-66
+.. GENERATED FROM PYTHON SOURCE LINES 46-68
 
 .. code-block:: default
 
@@ -116,25 +109,16 @@ spotlights are involved in lighting.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_actors_002.png
-    :alt: actors
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(7.2347026140134645, 7.2347026140134645, 8.71018352812937),
-     (0.02451908588409424, 0.02451908588409424, 1.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_actors_002.png
+   :alt: actors
+   :srcset: /examples/04-lights/images/sphx_glr_actors_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-73
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 69-75
 
 One thing to watch out for is that the light actors are represented such that
 their cone has a fixed height. This implies that for very large cone angles
@@ -143,7 +127,7 @@ camera position before rendering is usually a good idea. Increasing the first
 example's cone angle and omitting the manual camera positioning exemplifies
 the problem:
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-89
+.. GENERATED FROM PYTHON SOURCE LINES 75-91
 
 .. code-block:: default
 
@@ -166,28 +150,19 @@ the problem:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_actors_003.png
-    :alt: actors
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_actors_003.png
+   :alt: actors
+   :srcset: /examples/04-lights/images/sphx_glr_actors_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(181.37157603517724, 181.37157603517724, 184.55305799261285),
-     (0.0, 0.0, 3.181481957435608),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.203 seconds)
+   **Total running time of the script:** ( 0 minutes  1.540 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

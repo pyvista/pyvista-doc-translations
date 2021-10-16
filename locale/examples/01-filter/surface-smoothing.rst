@@ -18,12 +18,14 @@
 .. _sphx_glr_examples_01-filter_surface-smoothing.py:
 
 
+.. _surface_smoothing_example:
+
 Surface Smoothing
 ~~~~~~~~~~~~~~~~~
 
 Smoothing rough edges of a surface mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-11
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
@@ -38,7 +40,7 @@ Smoothing rough edges of a surface mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-18
+.. GENERATED FROM PYTHON SOURCE LINES 14-20
 
 Suppose you extract a volumetric subset of a dataset that has roughly defined
 edges. Perhaps you'd like a smooth representation of that model region. This
@@ -47,7 +49,7 @@ a :func:`pyvista.PolyData.smooth` filter.
 
 The below code snippet loads a sample roughly edged volumetric dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-28
+.. GENERATED FROM PYTHON SOURCE LINES 20-30
 
 .. code-block:: default
 
@@ -64,31 +66,22 @@ The below code snippet loads a sample roughly edged volumetric dataset:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
-    :alt: surface smoothing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462178580788, 28.92615544645197, 19.155693267871182),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
+   :alt: surface smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-32
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-34
 
 Extract the outer surface of the volume using the
 :func:`pyvista.DataSetFilters.extract_geometry` filter and then apply the
 smoothing filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-39
+.. GENERATED FROM PYTHON SOURCE LINES 34-41
 
 .. code-block:: default
 
@@ -102,30 +95,21 @@ smoothing filter:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
-    :alt: surface smoothing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.270462173884933, 28.926155439895044, 19.155693264529337),
-     (4.500000001480775, 4.500000001480775, 4.500000001480775),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
+   :alt: surface smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-42
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 Not smooth enough? Try increasing the number of iterations for the Laplacian
 smoothing algorithm:
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-47
+.. GENERATED FROM PYTHON SOURCE LINES 44-49
 
 .. code-block:: default
 
@@ -137,30 +121,21 @@ smoothing algorithm:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
-    :alt: surface smoothing
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.2703475762355385, 28.925595495391537, 19.155326046354773),
-     (4.499921872800769, 4.499921872800769, 4.499921872800314),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
+   :alt: surface smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-50
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 50-52
 
 Still not smooth enough? Increase the number of iterations for the Laplacian
 smoothing algorithm to a crazy high value:
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-54
+.. GENERATED FROM PYTHON SOURCE LINES 52-56
 
 .. code-block:: default
 
@@ -171,28 +146,19 @@ smoothing algorithm to a crazy high value:
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
-    :alt: surface smoothing
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
+   :alt: surface smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-5.015056085827215, 28.092312435289877, 18.633064286399282),
-     (4.444192063063383, 4.444192063063383, 4.444192063063383),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.176 seconds)
+   **Total running time of the script:** ( 0 minutes  1.556 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface-smoothing.py:

@@ -18,14 +18,16 @@
 .. _sphx_glr_examples_01-filter_connectivity.py:
 
 
+.. _connectivity_example:
+
 Connectivity
 ~~~~~~~~~~~~
 
 Use the connectivity filter to remove noisy isosurfaces.
 
-This example is very similar to `this VTK example <https://lorensen.github.io/VTKExamples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__
+This example is very similar to `this VTK example <https://kitware.github.io/vtk-examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-13
+.. GENERATED FROM PYTHON SOURCE LINES 11-15
 
 .. code-block:: default
 
@@ -40,11 +42,11 @@ This example is very similar to `this VTK example <https://lorensen.github.io/VT
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-15
+.. GENERATED FROM PYTHON SOURCE LINES 16-17
 
 Load a dataset that has noisy isosurfaces
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-27
+.. GENERATED FROM PYTHON SOURCE LINES 17-29
 
 .. code-block:: default
 
@@ -63,25 +65,16 @@ Load a dataset that has noisy isosurfaces
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_connectivity_001.png
-    :alt: connectivity
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(40.6018, -280.533, 47.0172),
-     (40.6018, 37.2813, 50.1953),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_001.png
+   :alt: connectivity
+   :srcset: /examples/01-filter/images/sphx_glr_connectivity_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-33
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 30-35
 
 The mesh plotted above is very noisy. We can extract the largest connected
 isosurface in that mesh using the :func:`pyvista.DataSetFilters.connectivity`
@@ -89,7 +82,7 @@ filter and passing ``largest=True`` to the ``connectivity``
 filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 (both are equivalent).
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-43
+.. GENERATED FROM PYTHON SOURCE LINES 35-45
 
 .. code-block:: default
 
@@ -106,28 +99,19 @@ filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_connectivity_002.png
-    :alt: connectivity
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_002.png
+   :alt: connectivity
+   :srcset: /examples/01-filter/images/sphx_glr_connectivity_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(40.6018, -280.533, 47.0172),
-     (40.6018, 37.2813, 50.1953),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.782 seconds)
+   **Total running time of the script:** ( 0 minutes  2.879 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_connectivity.py:
