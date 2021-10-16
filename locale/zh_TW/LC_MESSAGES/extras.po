@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.31.dev0\n"
+"Project-Id-Version: PyVista 0.32.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-25 00:54+0000\n"
+"POT-Creation-Date: 2021-10-16 09:07+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/getfem-doc/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -778,10 +778,9 @@ msgstr ""
 msgid ""
 "You can use ``pyvista`` from within a docker container with jupyterlab.  To "
 "create a local docker image install ``docker`` and be sure you've logged "
-"into docker by following the directions at `Configuring Docker for use with "
-"GitHub Packages <https://docs.github.com/en/free-pro-team@latest/packages"
-"/using-github-packages-with-your-projects-ecosystem/configuring-docker-for-"
-"use-with-github-packages#authenticating-with-a-personal-access-token>`_)"
+"into docker by following the directions at `Working with the Docker registry"
+" <https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a"
+"-github-packages-registry/working-with-the-docker-registry>`_)"
 msgstr ""
 
 #: ../../pyvista/doc/extras/docker.rst:10
@@ -848,6 +847,16 @@ msgid ""
 " correctly."
 msgstr ""
 
+#: ../../pyvista/doc/extras/extending_pyvista.rst:2
+msgid "Extending PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/extras/extending_pyvista.rst:4
+msgid ""
+"PyVista ``DataSets`` can be extended for user defined functionality. See "
+":ref:`Extending PyVista Example <extending_pyvista_example>`."
+msgstr ""
+
 #: ../../pyvista/doc/extras/flask.rst:4
 msgid "Flask Application"
 msgstr ""
@@ -856,7 +865,7 @@ msgstr ""
 msgid ""
 "You can use ``pyvista`` in to make a flask application to display static "
 "plots.  See the following example as well as the demo at `Flask Example "
-"<https://github.com/pyvista/pyvista/raw/main/examples_flask>`__."
+"<https://github.com/pyvista/pyvista/tree/main/examples_flask>`__."
 msgstr ""
 
 #: ../../pyvista/doc/extras/flask.rst:9
@@ -901,14 +910,252 @@ msgid ""
 "running it from a Python console or IDE.  For example, you can package "
 "PyVista in a docker image and build VTK with EGL to enable rich headless "
 "plotting on remote servers.  You can also package PyVista using "
-"``pyinstaller`` to be used within a standalone application.  You could even "
-"make a basic web application using ``flask``."
+"`pyinstaller`_ to be used within a standalone application.  You could even "
+"make a basic web application using `flask`_."
 msgstr ""
 
 #: ../../pyvista/doc/extras/index.rst:11
 msgid ""
 "See the :ref:`ref_developer_notes` section for details on contributing and "
 "how you can help develop PyVista."
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:4
+msgid "Sphinx PyVista Plot Directive"
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:5
+msgid ""
+"You can generate static images of pyvista plots using the ``.. pyvista-"
+"plot`` directive by adding the following to your ``conf.py`` when building "
+"your documentation using Sphinx."
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:16
+msgid ""
+"You can then issue the plotting directive within your sphinx documentation "
+"files:"
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:14
+msgid "A sphere"
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:27
+msgid "Which will be rendered as:"
+msgstr ""
+
+#: ../../pyvista/doc/extras/plot_directive.rst:14
+msgid "This is a default sphere"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:1
+msgid "Plot directive module."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:4
+msgid "A directive for including a PyVista plot in a Sphinx document"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:6
+msgid ""
+"The `.. pyvista-plot::` sphinx directive will include an inline ``.png`` "
+"image."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:9
+msgid "The source code for the plot may be included in one of two ways:"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:11
+msgid "Using **doctest** syntax::"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:19
+msgid "**A path to a source file** as the argument to the directive::"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:23
+msgid ""
+"When a path to a source file is given, the content of the directive may "
+"optionally contain a caption for the plot::"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:30
+msgid ""
+"Additionally, one may specify the name of a function to call (with no "
+"arguments) immediately after importing the module::"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:36
+msgid "Code blocks containing ``doctest:+SKIP`` will be skipped."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:39
+msgid "Animations will not be saved, only the last frame will be shown."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:43
+msgid "Options"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:44
+msgid "The ``pyvista-plot`` directive supports the following options:"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:48
+msgid "include-source"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directiveNone
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directiveNone
+msgid "bool"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:47
+msgid ""
+"Whether to display the source code. The default can be changed using the "
+"`plot_include_source` variable in :file:`conf.py`."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:53
+msgid "encoding"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directiveNone
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directiveNone
+msgid "str"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:51
+msgid ""
+"If this source file is in a non-UTF8 or non-ASCII encoding, the encoding "
+"must be specified using the ``:encoding:`` option.  The encoding will not be"
+" inferred using the ``-*- coding -*-`` metacomment."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:58
+msgid "context"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directiveNone
+msgid "None"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:56
+msgid ""
+"If provided, the code will be run in the context of all previous plot "
+"directives for which the ``:context:`` option was specified.  This only "
+"applies to inline code plot directives, not those run from files."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:62
+msgid "nofigs"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:61
+msgid ""
+"If specified, the code block will be run, but no figures will be inserted.  "
+"This is usually useful with the ``:context:`` option."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:67
+msgid "caption"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:65
+msgid ""
+"If specified, the option's argument will be used as a caption for the "
+"figure. This overwrites the caption given in the content, when the plot is "
+"generated from a file."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:69
+msgid ""
+"Additionally, this directive supports all of the options of the `image` "
+"directive, except for *target* (since plot will add its own target).  These "
+"include *alt*, *height*, *width*, *scale*, *align*."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:75
+msgid "Configuration options"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:76
+msgid "The plot directive has the following configuration options:"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:79
+msgid "plot_include_source"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:79
+msgid "Default value for the include-source option."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:84
+msgid "plot_basedir"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:82
+msgid ""
+"Base directory, to which ``plot::`` file names are relative to.  (If "
+"``None`` or empty, file names are relative to the directory where the file "
+"containing the directive is.)"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:87
+msgid "plot_html_show_formats"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:87
+msgid "Whether to show links to the files in HTML."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:90
+msgid "plot_template"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:90
+msgid "Provide a customized template for preparing restructured text."
 msgstr ""
 
 #: ../../pyvista/doc/extras/pyinstaller.rst:4
@@ -936,4 +1183,21 @@ msgstr ""
 msgid ""
 "From there, you can freeze an application using ``pyvista`` and create a "
 "standalone application."
+msgstr ""
+
+#: ../../pyvista/doc/extras/vtk_data.rst:3
+msgid "Using Local VTK-Data"
+msgstr ""
+
+#: ../../pyvista/doc/extras/vtk_data.rst:5
+msgid ""
+"Normally, the PyVista examples will be downloaded from the `pyvista/vtk-data"
+" repository <https://github.com/pyvista/vtk-data>`_. Alternatively, the "
+"entire pyvista/vtk-data repository can be supplied as a local folder. If the"
+" ``PYVISTA_VTK_DATA`` environment variable is set to the folder path, the "
+"examples will instead be copied from the local folder."
+msgstr ""
+
+#: ../../pyvista/doc/extras/vtk_data.rst:11
+msgid "This example uses a cloned vtk-data repository:"
 msgstr ""
