@@ -57,7 +57,7 @@ jobs:
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc
         cd pyvista
-        xvfb-run make -C doc phtml
+        make -C doc html SPHINXOPTS="-w build_errors.txt -N"
         cd ../
         sh ./locale/update.sh
         ls ./pyvista/doc/examples
