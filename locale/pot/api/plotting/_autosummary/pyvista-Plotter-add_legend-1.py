@@ -1,24 +1,22 @@
+# Create a legend by labeling the meshes when using ``add_mesh``
+#
 import pyvista
 from pyvista import examples
-mesh = examples.load_hexbeam()
-othermesh = examples.load_uniform()
+sphere = pyvista.Sphere(center=(0, 0, 1))
+cube = pyvista.Cube()
 plotter = pyvista.Plotter()
-_ = plotter.add_mesh(mesh, label='My Mesh')
-_ = plotter.add_mesh(othermesh, 'k', label='My Other Mesh')
-_ = plotter.add_legend()
+_ = plotter.add_mesh(sphere, 'grey', smooth_shading=True, label='Sphere')
+_ = plotter.add_mesh(cube, 'r', label='Cube')
+_ = plotter.add_legend(bcolor='w', face=None)
 plotter.show()
 #
-# Alternative manual example
+# Alternatively provide labels in the plotter.
 #
-import pyvista
-from pyvista import examples
-mesh = examples.load_hexbeam()
-othermesh = examples.load_uniform()
+plotter = pyvista.Plotter()
+_ = plotter.add_mesh(sphere, 'grey', smooth_shading=True)
+_ = plotter.add_mesh(cube, 'r')
 legend_entries = []
 legend_entries.append(['My Mesh', 'w'])
 legend_entries.append(['My Other Mesh', 'k'])
-plotter = pyvista.Plotter()
-_ = plotter.add_mesh(mesh)
-_ = plotter.add_mesh(othermesh, 'k')
 _ = plotter.add_legend(legend_entries)
 plotter.show()
