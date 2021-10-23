@@ -2147,19 +2147,23 @@ msgstr ""
 msgid ""
 "An XML PolyData file in ``.vtp`` format is created.  It will be saved in a "
 "temporary file for this example."
-msgstr ""
+msgstr "``.vtp`` 形式のXML PolyDataファイルが作成されます。 このファイルは、今回の例では一時ファイルに保存されます。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:80
 msgid ""
 ":class:`pyvista.Sphere` already includes ``Normals`` point data.  "
 "Additionally ``height`` point data and ``id`` cell data is added."
 msgstr ""
+":class:`pyvista.Sphere` には、すでに ``Normals`` という点データが含まれています。 さらに、 ``height`` "
+"のポイントデータと ``id`` のセルデータを追加します。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:101
 msgid ""
 ":func:`pyvista.read` function reads all the data in the file. This provides "
 "a quick and easy one-liner to read data from files."
 msgstr ""
+":func:`pyvista.read` "
+"関数は、ファイル内のすべてのデータを読み込みます。これは、ファイルからデータを読み取るための、迅速で簡単なワンライナーを提供します。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:129
 msgid ""
@@ -2167,6 +2171,8 @@ msgid ""
 "reading data files. Reading in a ``.vtp``` file uses the "
 ":class:`pyvista.XMLPolyDataReader`."
 msgstr ""
+":func:`pyvista.get_reader` を使用することで、データファイルの読み込みをより細かく制御することができます。 ``.vtp```"
+" ファイルの読み込みには、 :class:`pyvista.XMLPolyDataReader` を使用します。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:158
 msgid ""
@@ -2174,6 +2180,7 @@ msgid ""
 "data file before loading all the data. For example, we can access the number"
 " and names of point and cell arrays."
 msgstr ""
+"このクラスを含め、いくつかのリーダークラスは、すべてのデータを読み込む前にデータファイルを検査する機能を提供しています。例えば、点配列やセル配列の数や名前にアクセスすることができます。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:192
 msgid ""
@@ -2183,11 +2190,14 @@ msgid ""
 "is finally read into a pyvista object that only has the ``height`` point "
 "array."
 msgstr ""
+"特定の配列，あるいはすべての配列を選択的に無効あるいは有効にすることで，読み取るデータを選択することができます． ここでは、すべてのセル配列と "
+"``Normals`` 点の配列を無効にして、 ``height`` 点の配列だけを残しています。 データは最終的に ``height`` "
+"点の配列のみを持つ pyvista オブジェクトに読み込まれます。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:228
 msgid ""
 "We can reuse the reader object to choose different variables if needed."
-msgstr ""
+msgstr "必要に応じて、リーダーオブジェクトを再利用して、異なる変数を選択することができます。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:256
 msgid ""
@@ -2196,6 +2206,8 @@ msgid ""
 " two such points with density.  This dataset is in EnSight format, which "
 "uses the :class:`pyvista.EnSightReader` class."
 msgstr ""
+"一部のリーダーでは、異なるタイムポイントやイテレーションの設定が可能です。いずれの場合も、タイムポイント機能を使って設定します。NACAデータセットには、密度を持つ2つのそのようなポイントがあります。"
+" このデータセットはEnSight形式で、 :class:`pyvista.EnSightReader` クラスを使用しています。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:292
 msgid ""
@@ -2205,12 +2217,15 @@ msgid ""
 "instance. In this dataset, there are 3 blocks and the new scalar must be "
 "applied on each block."
 msgstr ""
+"まず両方のタイムポイントが読み込まれ、次に密度の差が計算され、2番目のメッシュに保存されます。:class:`pyvista.EnSightReader`"
+" の read メソッドは、 :class:`pyvista.MultiBlock` "
+"インスタンスを返します。このデータセットでは、3つのブロックがあり、新しいスカラーを各ブロックに適用する必要があります。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:320
 msgid ""
 "The value of `DENS` is plotted on the left column for both time points, and "
 "the difference on the right."
-msgstr ""
+msgstr "左側の列には両時点での `DENS` の値が、右側の列にはその差がプロットされています。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:362
 msgid ""
@@ -2219,12 +2234,15 @@ msgid ""
 "through a ParaView Data format file. This file format and reader also return"
 " a :class:`pyvista.MultiBlock` mesh."
 msgstr ""
+"タイムポイントやイタレーションを読み込んで、ムービーを作ることもできます。 :ref:`gif_movie_example` "
+"と似ていますが、ここではParaViewデータ形式のファイルを使って、ファイルセットを読み込みます。このファイルフォーマットとリーダーは、 "
+":class:`pyvista.MultiBlock` メッシュも返します。"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:393
 msgid ""
 "For each time point, plot the mesh colored by the height. Put iteration "
 "value in top left"
-msgstr ""
+msgstr "各時点で、高さによって色付けされたメッシュをプロットします。左上に反復値を表示します"
 
 #: ../../pyvista/doc/examples/00-load/reader.rst:431
 msgid "**Total running time of the script:** ( 0 minutes  6.623 seconds)"
@@ -2934,7 +2952,7 @@ msgstr "ブール演算"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:26
 msgid "Perform boolean operations with closed (manifold) surfaces."
-msgstr ""
+msgstr "閉じた（多様な）曲面でブーリアン演算を行う。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:28
 msgid ""
@@ -2943,6 +2961,9 @@ msgid ""
 " directly from any :class:`pyvista.PolyData` mesh. Check out "
 ":class:`pyvista.PolyDataFilters` and take a look at the following filters:"
 msgstr ""
+"ブール/位相演算(交差，結合，切断)法は，  :class:`pyvista.PolyData` メッシュタイプに対してのみ実装され，任意の "
+":class:`pyvista.PolyData` メッシュから直接アクセス可能である． "
+":class:`pyvista.PolyDataFilters` をチェックして，次のフィルタを確認してください．"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:34
 msgid ":func:`pyvista.PolyDataFilters.boolean_difference`"
@@ -2960,7 +2981,7 @@ msgstr ":func:`pyvista.PolyDataFilters.boolean_intersection`"
 msgid ""
 "Essentially, boolean union, difference, and intersection are all the same "
 "operation. Just different parts of the objects are kept at the end."
-msgstr ""
+msgstr "基本的に、ブーリアン結合、切断、交差はすべて同じ操作です。ただ、オブジェクトの異なる部分が最終的に保持されるだけです。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:42
 msgid ""
@@ -2969,6 +2990,9 @@ msgid ""
 " all triangle meshes, which you can check with "
 ":attr:`pyvista.PolyData.is_all_triangles`."
 msgstr ""
+"演算子 ``-`` は、PyVistaの任意の2つの :class:`pyvista.PolyData` "
+"メッシュの間で使用することができ、最初のメッシュを2番目のメッシュでカットします。 これらのメッシュはすべて三角形のメッシュでなければなりません。これは"
+" :attr:`pyvista.PolyData.is_all_triangles` で確認できます。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:48
 msgid ""
@@ -2977,6 +3001,9 @@ msgid ""
 "meshes.  This is different from ``boolean_union`` as it simply superimposes "
 "the two meshes without performing additional calculations on the result."
 msgstr ""
+"マージでは， ``+`` 演算子をPyVistaの任意の2つのメッシュ間で使用できます．この演算子は，任意の2つのメッシュを結合するために "
+"``.merge()`` フィルタを呼び出すだけです．これは ``boolean_union`` "
+"とは異なり、結果に対して追加の計算を行うことなく、単純に2つのメッシュを重ね合わせるものです。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:55
 msgid ""
@@ -2985,6 +3012,8 @@ msgid ""
 "pointing inward. Use :func:`pyvista.PolyDataFilters.plot_normals` to "
 "visualize the normals."
 msgstr ""
+"ブーリアン演算が思った通りに反応しない(例えば、間違った部分が消えてしまう)場合、メッシュの1つが法線を内側に向けている可能性があります。法線を視覚化するには、"
+" :func:`pyvista.PolyDataFilters.plot_normals` を使用してください。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:83
 msgid "Boolean Union"
@@ -2995,18 +3024,22 @@ msgid ""
 "Perform a boolean union of ``A`` and ``B`` using the "
 ":func:`pyvista.PolyDataFilters.boolean_union` filter."
 msgstr ""
+":func:`pyvista.PolyDataFilters.boolean_union` フィルタを使用して、 ``A`` と ``B`` "
+"のブール結合を行います。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:88
 msgid ""
 "The union of two manifold meshes ``A`` and ``B`` is the mesh which is in "
 "``A``, in ``B``, or in both ``A`` and ``B``."
 msgstr ""
+"2つの多様体メッシュ　``A`` と ``B`` の結合は、 ``A`` にあるメッシュ、 ``B`` にあるメッシュ、または ``A`` と "
+"``B`` の両方にあるメッシュとなります。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:91
 msgid ""
 "Order of operands does not matter for boolean union (the operation is "
 "commutative)."
-msgstr ""
+msgstr "論理和にはオペランドの順序は関係ありません（演算は可換です）。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:124
 msgid "Boolean Difference"
@@ -3018,66 +3051,71 @@ msgid ""
 ":func:`pyvista.PolyDataFilters.boolean_difference` filter or the ``-`` "
 "operator since both meshes are :class:`pyvista.PolyData`."
 msgstr ""
+"両方のメッシュが :class:`pyvista.PolyData` であるため， "
+":func:`pyvista.PolyDataFilters.boolean_difference` フィルタまたは ``-`` 演算子を使用して "
+"``A`` と ``B`` のブーリアン値の差を実行します．"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:130
 msgid ""
 "The difference of two manifold meshes ``A`` and ``B`` is the volume of the "
 "mesh in ``A`` not belonging to ``B``."
-msgstr ""
+msgstr "2つのマニフォールドメッシュ ``A`` と ``B`` の差は、 ``A`` のメッシュのうち ``B`` に属さない部分の体積である。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:133
 msgid "Order of operands matters for boolean difference."
-msgstr ""
+msgstr "真偽判定にはオペランドの順序が重要です。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:164
 msgid "Boolean Intersection"
-msgstr ""
+msgstr "ブール交差"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:166
 msgid ""
 "Perform a boolean intersection of ``A`` and ``B`` using the "
 ":func:`pyvista.PolyDataFilters.boolean_intersection` filter."
 msgstr ""
+":func:`pyvista.PolyDataFilters.boolean_intersection` フィルタを使用して、 ``A`` と "
+"``B`` のブール交差を行います。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:169
 msgid ""
 "The intersection of two manifold meshes ``A`` and ``B`` is the mesh which is"
 " the volume of ``A`` that is also in ``B``."
-msgstr ""
+msgstr "2つの多様体メッシュ``A``と``B```の交点は、``A``の体積が``B``の中にもあるメッシュである。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:172
 msgid ""
 "Order of operands does not matter for boolean intersection (the operation is"
 " commutative)."
-msgstr ""
+msgstr "論理交差にはオペランドの順序は関係ありません（演算は可換です）。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:205
 msgid "Behavior due to flipped normals"
-msgstr ""
+msgstr "法線の反転による挙動"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:206
 msgid ""
 "Note that these boolean filters behave differently depending on the "
 "orientation of the normals."
-msgstr ""
+msgstr "これらのブーリアンフィルターは、法線の向きによって動作が異なることに注意してください。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:209
 msgid ""
 "Boolean difference with both cube and sphere normals pointed outward.  This "
 "is the \"normal\" behavior."
-msgstr ""
+msgstr "立方体と球体の両方の法線が外側に向いている状態でのブール型の差分です。 これが \"normal\" の動作です。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:237
 msgid "Boolean difference with cube normals outward, sphere inward."
-msgstr ""
+msgstr "立方体の法線を外側に、球体を内側にしたブール値の差。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:265
 msgid "Boolean difference with cube normals inward, sphere outward."
-msgstr ""
+msgstr "立方体の法線を内側に、球体を外側にしたブール差です。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:293
 msgid "Both cube and sphere normals inward."
-msgstr ""
+msgstr "立方体と球体の両方の法線を内側にします。"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:322
 msgid "**Total running time of the script:** ( 0 minutes  8.291 seconds)"
@@ -3308,17 +3346,19 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:24
 #: ../../pyvista/doc/examples/index.rst:642
 msgid "Collision"
-msgstr ""
+msgstr "衝突"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:25
 msgid "Perform a collision detection between two meshes."
-msgstr ""
+msgstr "2つのメッシュの衝突判定を行います。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:27
 msgid ""
 "This example use the :class:`collision <pyvista.PolyDataFilters.collision>` "
 "filter to detect the faces from one sphere colliding with another sphere."
 msgstr ""
+"この例では、 :class:`collision <pyvista.PolyDataFilters.collision>` "
+"フィルタを使用して、ある球体が別の球体に衝突したときの面を検出します。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:32
 msgid ""
@@ -3331,6 +3371,12 @@ msgid ""
 "subsequently updated by modifying the transform or matrix of the input "
 "meshes."
 msgstr ""
+"`vtk.vtkCollisionDetectionFilter "
+"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_ "
+"の性質上、このメソッドを繰り返し使用すると ``vtk.vtkCollisionDetectionFilter`` "
+"を直接使用した場合よりも遅くなります。 このフィルタの最初の更新では、 `vtkOBBTree "
+"<https://vtk.org/doc/nightly/html/classvtkOBBTree.html>`_ "
+"のインスタンスが2つ作成されます。その後、入力メッシュの変換や行列を変更することで、このインスタンスを更新することができます。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:41
 msgid ""
@@ -3340,21 +3386,25 @@ msgid ""
 "Example <https://kitware.github.io/vtk-"
 "examples/site/Python/Visualization/CollisionDetection/>`_"
 msgstr ""
+"このメソッドは変換を前提としていないので、単一の衝突テストには使いやすいですが、繰り返される衝突を高速に計算するには ``pyvista`` と "
+"``vtk`` の組み合わせを使うことをお勧めします。 詳しくは、 `Collision Detection Example "
+"<https://kitware.github.io/vtk-"
+"examples/site/Python/Visualization/CollisionDetection/>`_ をご覧ください。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:66
 msgid "Create the main mesh and the secondary \"moving\" mesh"
-msgstr ""
+msgstr "メインのメッシュとセカンダリーの \"moving\" メッシュの作成"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:68
 msgid ""
 "Collision faces will be plotted on this sphere, and to do so we initialize "
 "an initial ``\"collisions\"`` mask."
-msgstr ""
+msgstr "衝突面はこの球体上にプロットされますが、そのために初期の ``\"collisions\"`` マスクを設定します。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:90
 msgid ""
 "Setup the plotter open a movie, and write a frame after moving the sphere."
-msgstr ""
+msgstr "プロッターをセットアップしてムービーを開き、球体を動かした後のフレームを書き込んでいきます。"
 
 #: ../../pyvista/doc/examples/01-filter/collisions.rst:140
 msgid "**Total running time of the script:** ( 0 minutes  8.173 seconds)"
@@ -3600,6 +3650,9 @@ msgid ""
 "This example is very similar to `this VTK example <https://kitware.github.io"
 "/vtk-examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__"
 msgstr ""
+"この例は `この VTK の例 <https://kitware.github.io/vtk-"
+"examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__ "
+"に非常によく似ています．"
 
 #: ../../pyvista/doc/examples/01-filter/connectivity.rst:47
 msgid "Load a dataset that has noisy isosurfaces"
@@ -4336,7 +4389,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/glyphs.rst:127
 msgid "Plot the arrows and the sphere."
-msgstr ""
+msgstr "矢印と球体をプロットします。"
 
 #: ../../pyvista/doc/examples/01-filter/glyphs.rst:156
 msgid "Subset of Glyphs"
@@ -4717,7 +4770,7 @@ msgstr "メッシュ品質の計算"
 
 #: ../../pyvista/doc/examples/01-filter/mesh-quality.rst:26
 msgid "Leverage powerful VTK algorithms for computing mesh quality."
-msgstr ""
+msgstr "強力なVTKアルゴリズムを利用して，メッシュ品質を計算します．"
 
 #: ../../pyvista/doc/examples/01-filter/mesh-quality.rst:28
 msgid ""
@@ -5149,7 +5202,7 @@ msgstr "スカラーによるワープ"
 msgid ""
 "Here we warp by scalar to give the terrain some height based on the value of"
 " the Perlin noise.  This is necessary to the terrain its shape."
-msgstr ""
+msgstr "ここでは，スカラーによってワープして，Perlinノイズの値に基づいて地表に高さを与えます．これは地表のシェイプに必要です．"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_2d.rst:112
 msgid "Show the terrain as a contour plot"
@@ -5656,7 +5709,7 @@ msgstr "スライシング"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:26
 msgid "Extract thin planar slices from a volume."
-msgstr ""
+msgstr "ボリュームから薄い平面スライスを抽出します。"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:47
 msgid ""
@@ -6039,22 +6092,23 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:24
 #: ../../pyvista/doc/examples/index.rst:1209
 msgid "2D Streamlines"
-msgstr ""
+msgstr "2D流線"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:26
 msgid "Integrate a vector field to generate streamlines on a 2D surface."
-msgstr ""
+msgstr "2次元表面上のベクトルフィールドを積分して，流線を生成します．"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:30
 msgid ""
 "This example generates streamlines of flow around a cylinder in cross flow."
-msgstr ""
+msgstr "この例では、クロスフローにおけるシリンダー周りの流れの流線を生成します。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:50
 msgid ""
 "The data is multiblock with the fluid_data as the first block. The data lies"
 " in the xy plane, i.e. z=0, with no z velocity."
 msgstr ""
+"データはマルチブロックで，fluid_dataが最初のブロックとなっています。データはxy平面上、つまりz=0で、z方向の速度はありません。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:86
 msgid ""
@@ -6065,18 +6119,23 @@ msgid ""
 "`surface_streamlines=True` argument is be needed if the dataset has nonzero "
 "normal velocity component.  This is not the case in this dataset."
 msgstr ""
+":func:`pyvista.DataSetFilters.streamlines` "
+"フィルタのデフォルトの動作は、3Dの球体ソースを種点として使用することです。これは多くの場合、対象となる2D平面上にシードポイントを生成しません。 "
+"代わりに、 `start_position` "
+"の引数を使って、単一のストリームラインを生成することができます。`surface_streamlines=True` "
+"という引数は、データセットが非ゼロの法線速度成分を持っている場合に必要です。 このデータセットではそのようなことはありません。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:132
 msgid ""
 "To generate multiple streamlines, a line source can be used with the "
 "`pointa` and `pointb` parameters."
-msgstr ""
+msgstr "複数のストリームラインを生成するには、ラインソースを `pointa` および `pointb` パラメータとともに使用します。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:169
 msgid ""
 "The behavior immediately downstream of the cylinder is still not apparent "
 "using streamlines at the inlet."
-msgstr ""
+msgstr "シリンダーのすぐ下流の挙動は、入口の流線ではまだわかりません。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:172
 msgid ""
@@ -6086,6 +6145,9 @@ msgid ""
 "run of memory, so particular attention must be paid to the input parameters."
 "  The defaults are in cell_length units."
 msgstr ""
+"もう一つの方法は、 :func:`pyvista.DataSetFilters.streamlines_evenly_spaced_2D` "
+"を使うことです。このフィルタは、xy平面上にある2Dデータに対してのみ動作します。このメソッドはすぐにメモリ不足になってしまうので、入力パラメータには特に注意を払う必要があります。"
+" デフォルトでは cell_length 単位で表示されます。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:211
 msgid ""
@@ -6093,6 +6155,7 @@ msgid ""
 "pair downstream of the cylinder with appropriate choice of "
 "``start_position``."
 msgstr ""
+"この流線はほぼ等間隔に配置されており、 ``start_position`` を適切に選択することで、円柱の下流にある渦のペアを捉えることができます。"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:218
 msgid "**Total running time of the script:** ( 0 minutes  3.701 seconds)"
@@ -6103,12 +6166,16 @@ msgid ""
 ":download:`Download Python source code: streamlines_2D.py "
 "<streamlines_2D.py>`"
 msgstr ""
+":download:`Download Python source code: streamlines_2D.py "
+"<streamlines_2D.py>`"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines_2D.rst:239
 msgid ""
 ":download:`Download Jupyter notebook: streamlines_2D.ipynb "
 "<streamlines_2D.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: streamlines_2D.ipynb "
+"<streamlines_2D.ipynb>`"
 
 #: ../../pyvista/doc/examples/01-filter/subdivide.rst:13
 msgid ""
@@ -6258,7 +6325,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:24
 #: ../../pyvista/doc/examples/index.rst:1272
 msgid "Surface Reconstruction"
-msgstr ""
+msgstr "サーフェスの再構築"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:26
 msgid ""
@@ -6266,11 +6333,14 @@ msgid ""
 ":func:`pyvista.DataSetFilters.reconstruct_surface`.  This tends to perform "
 "much better than :func:`DataSetFilters.delaunay_3d`."
 msgstr ""
+"表面再構成は、PyVistaでは専用のフィルタが用意されており、 "
+":func:`pyvista.DataSetFilters.reconstruct_surface` で処理されます。 これは "
+":func:`DataSetFilters.delaunay_3d` よりもはるかに良いパフォーマンスを示す傾向があります。"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:45
 msgid ""
 "Create a point cloud from a sphere and then reconstruct a surface from it."
-msgstr ""
+msgstr "球体から点群を作成し、その点群からサーフェスを再構成します。"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:61
 msgid ""
@@ -6310,7 +6380,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:82
 msgid "Plot the point cloud and the reconstructed sphere."
-msgstr ""
+msgstr "点群と再構成された球体をプロットします。"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:111
 msgid "**Total running time of the script:** ( 0 minutes  0.420 seconds)"
@@ -6347,7 +6417,7 @@ msgstr "共通フィルタの使用"
 
 #: ../../pyvista/doc/examples/01-filter/using-filters.rst:26
 msgid "Using common filters like thresholding and clipping."
-msgstr ""
+msgstr "閾値設定やクリッピングなどの一般的なフィルタを使用します。"
 
 #: ../../pyvista/doc/examples/01-filter/using-filters.rst:46
 msgid ""
@@ -6755,7 +6825,7 @@ msgstr "背景イメージ"
 #: ../../pyvista/doc/examples/02-plot/background_image.rst:26
 msgid ""
 "Add a background image with :func:`pyvista.Plotter.add_background_image`."
-msgstr ""
+msgstr ":func:`pyvista.Plotter.add_background_image` で背景画像を追加します。"
 
 #: ../../pyvista/doc/examples/02-plot/background_image.rst:45
 msgid "Plot an airplane with the map of the earth in the background"
@@ -6969,6 +7039,8 @@ msgid ""
 "is not enabled by default in :attr:`pyvista.global_theme` as some operating "
 "systems and versions of VTK have issues with this routine."
 msgstr ""
+"深さのピーリングは，半透明のジオメトリを正しくレンダーするテクニックです．いくつかのオペレーティングシステムとVTKのバージョンはこのルーチンで問題があるので，"
+" :attr:`pyvista.global_theme` ではデフォルトで有効になっていません．"
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:29
 msgid ""
@@ -8107,6 +8179,8 @@ msgid ""
 "The quality of the movie will be better when using "
 "``p.open_movie('orbit.mp4')`` instead of ``p.open_gif('orbit.gif')``"
 msgstr ""
+"``p.open_gif('orbit.gif')`` ではなく、 ``p.open_movie('orbit.mp4')`` "
+"を使うと、ムービーの品質が向上します。"
 
 #: ../../pyvista/doc/examples/02-plot/orbit.rst:33
 msgid ""
@@ -8960,11 +9034,11 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/texture.rst:251
 msgid "Create a GIF Movie with updating textures"
-msgstr ""
+msgstr "テクスチャを更新しながらGIFムービーを作成"
 
 #: ../../pyvista/doc/examples/02-plot/texture.rst:252
 msgid "Generate a moving gif from an active plotter with updating textures."
-msgstr ""
+msgstr "テクスチャを更新しながら、アクティブなプロッタから動くgifを生成します。"
 
 #: ../../pyvista/doc/examples/02-plot/texture.rst:311
 msgid "Textures with Transparency"
@@ -9016,6 +9090,8 @@ msgid ""
 "Then we must associate those texture coordinates with the mesh through the "
 ":attr:`pyvista.DataSet.active_t_coords` property."
 msgstr ""
+"次に， :attr:`pyvista.DataSet.active_t_coords` "
+"プロパティを使用して，これらのテクスチャ座標をメッシュに関連付ける必要があります．"
 
 #: ../../pyvista/doc/examples/02-plot/texture.rst:419
 msgid "Now display all the puppies!"
@@ -10654,7 +10730,7 @@ msgstr "メッシュライティングの無効化"
 
 #: ../../pyvista/doc/examples/04-lights/mesh_lighting.rst:26
 msgid "Disable mesh lighting."
-msgstr ""
+msgstr "メッシュ照明を無効にします。"
 
 #: ../../pyvista/doc/examples/04-lights/mesh_lighting.rst:28
 msgid ""
@@ -10663,6 +10739,9 @@ msgid ""
 "out of lighting altogether. Pass ``lighting=False`` to "
 ":func:`pyvista.Plotter.add_mesh` to disable lighting for the given mesh:"
 msgstr ""
+"プロッタには既定の照明セットがあり，一般的に照明条件をカスタマイズするためのオプションが多数ありますが，メッシュには照明を完全にオフにするオプションがあります．"
+" ``lighting=False`` を :func:`pyvista.Plotter.add_mesh` "
+"に渡すと，指定されたメッシュのライティングが無効になります．"
 
 #: ../../pyvista/doc/examples/04-lights/mesh_lighting.rst:68
 msgid ""
@@ -11073,6 +11152,8 @@ msgid ""
 "extended by users.  For example, if the user wants to keep track of the "
 "location of the maximum point in the (1, 0, 1) direction on the mesh."
 msgstr ""
+":class:`pyvista.PolyData` のような :class:`pyvista.DataSet` は、ユーザが拡張することができます。 "
+"例えば、ユーザーがメッシュ上の(1, 0, 1)方向の最大点の位置を記録したいとします。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:30
 msgid ""
@@ -11080,12 +11161,16 @@ msgid ""
 "directly managing the types objects.  This may require checking types during"
 " filter operations."
 msgstr ""
+"ユーザーがサブクラス化を処理する方法は2つあります。 1つは、タイプ・オブジェクトを直接管理する方法です。 "
+"この場合、フィルター操作時に型のチェックが必要になることがあります。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:34
 msgid ""
 "The second is automatic managing of types.  Users can control whether user "
 "defined classes are nearly always used for particular types of DataSets."
 msgstr ""
+"2つ目は、タイプの自動管理です。 "
+"ユーザーは、特定のタイプのDataSetsに対して、ユーザー定義のクラスをほぼ常に使用するかどうかを制御することができます。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:38
 msgid ""
@@ -11093,6 +11178,9 @@ msgid ""
 "in all situations, in particular when a builtin dataset is directly "
 "instantiated.  See examples below."
 msgstr ""
+"これは上級者向けの機能です。 "
+"型の自動管理は、すべての状況で機能するわけではありません。特に、組み込みデータセットが直接インスタンス化されている場合はそうです。 "
+"以下の例をご覧ください。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:62
 msgid ""
@@ -11100,10 +11188,12 @@ msgid ""
 "defined. It includes a property to keep track of the point on the mesh that "
 "is furthest along in the (1, 0, 1) direction."
 msgstr ""
+":class:`pyvista.PolyData` のユーザー定義サブクラスである ``FooData`` "
+"が定義されています。これには、メッシュ上で(1, 0, 1)方向に最も離れた点を追跡するプロパティが含まれています。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:87
 msgid "Directly Managing Types"
-msgstr ""
+msgstr "タイプを直接管理する"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:89
 msgid ""
@@ -11112,12 +11202,15 @@ msgid ""
 "sphere has a radius of 0.5, so the maximum extent in the direction (1, 0, 1)"
 " is :math:`0.5\\sqrt{0.5}\\approx0.354`"
 msgstr ""
+"これで ``FooData`` 型の ``foo_sphere`` "
+"オブジェクトが作成されました。ポイントのインデックスと位置を直接取得することができます．球体の半径は0.5なので，(1, 0, "
+"1)の方向への最大の広がりは :math:`0.5\\sqrt{0.5}\\approx0.354` となります．"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:126
 msgid ""
 "Using an inplace operation like :func:`pyvista.DataSet.rotate_y` does not "
 "affect the type of the object."
-msgstr ""
+msgstr ":func:`pyvista.DataSet.rotate_y` のようなインプレース操作を使っても、オブジェクトの型には影響しません。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:161
 msgid ""
@@ -11126,14 +11219,17 @@ msgid ""
 "<pyvista.PolyDataFilters.decimate>` method returns a "
 ":class:`pyvista.PolyData` object."
 msgstr ""
+"しかし、フィルター操作によって、元の型とは異なるものを含む、異なる ``DataSet`` 型が返されることがあります。 このような場合、 "
+":func:`decimate <pyvista.PolyDataFilters.decimate>` メソッドは "
+":class:`pyvista.PolyData` オブジェクトを返します。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:194
 msgid "It is now required to explicitly wrap the object into ``FooData``."
-msgstr ""
+msgstr "オブジェクトを明示的に ``FooData`` にラップすることが必要になりました。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:226
 msgid "Automatically Managing Types"
-msgstr ""
+msgstr "タイプを自動的に管理する"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:228
 msgid ""
@@ -11141,6 +11237,8 @@ msgid ""
 "``pyvista._wrappers``. In general, it is best to use this method when it is "
 "expected to primarily use the user defined class."
 msgstr ""
+"デフォルトの :class:`pyvista.DataSet` タイプは、 ``pyvista._wrappers`` "
+"を使って設定することができます。一般的には、ユーザー定義のクラスを主に使用することが予想される場合に、このメソッドを使用するのがベストです。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:232
 msgid ""
@@ -11148,24 +11246,30 @@ msgid ""
 ":class:`pyvista.PolyData` would now be created as a ``FooData`` object. "
 "Note, that the key is the underlying vtk object."
 msgstr ""
+"この例では、これまで :class:`pyvista.PolyData` として作成されていたすべてのオブジェクトが、 ``FooData`` "
+"オブジェクトとして作成されます。キーとなるのは、基礎となるvtkオブジェクトであることに注意してください。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:252
 msgid ""
 "It is no longer necessary to specifically wrap :class:`pyvista.PolyData` "
 "objects to obtain a ``FooData`` object."
 msgstr ""
+"``FooData`` オブジェクトを取得するために、 :class:`pyvista.PolyData` "
+"オブジェクトを特別にラップする必要がなくなりました。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:286
 msgid ""
 "Using an inplace operation like :func:`rotate_y <pyvista.DataSet.rotate_y>` "
 "does not affect the type of the object."
 msgstr ""
+":func:`rotate_y <pyvista.DataSet.rotate_y>` "
+"のようなインプレース操作を使っても、オブジェクトの型には影響しません。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:321
 msgid ""
 "Filter operations that return :class:`pyvista.PolyData` now return "
 "``FooData``"
-msgstr ""
+msgstr ":class:`pyvista.PolyData` を返していたフィルター操作が ``FooData`` を返すようになりました。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:356
 msgid ""
@@ -11173,18 +11277,23 @@ msgid ""
 "this method may incur unintended consequences.  In this case, it is "
 "recommended to use the directly managing types method."
 msgstr ""
+"ユーザーは、ネイティブの :class:`pyvista.PolyData` "
+"オブジェクトを作成することができますが、この方法を使用すると、意図しない結果になる可能性があります。 "
+"このような場合は、型を直接管理する方法を使用することをお勧めします。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:391
 msgid ""
 "Usage of ``pyvista._wrappers`` may require resetting the default value to "
 "avoid leaking the setting into cases where it is unused."
 msgstr ""
+"``pyvista._wrappers`` "
+"を使用する際には、使用されないケースに設定が漏れないように、デフォルト値をリセットする必要があるかもしれません。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:410
 msgid ""
 "For instances where a localized usage is preferred, a tear-down method is "
 "recommended.  One example is a ``try...finally`` block."
-msgstr ""
+msgstr "局所的な使い方が望ましい場合には、ティアダウン方式を推奨します。 例えば、 ``try...finally`` ブロックです。"
 
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:433
 msgid "**Total running time of the script:** ( 0 minutes  0.162 seconds)"
@@ -11217,7 +11326,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:24
 #: ../../pyvista/doc/examples/index.rst:2496
 msgid "Plot Open Street Map Data"
-msgstr ""
+msgstr "オープンストリートマップデータのプロット"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:26
 msgid ""
@@ -11229,25 +11338,25 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:28
 msgid "Be sure to check out `osmnx <https://github.com/gboeing/osmnx>`_"
-msgstr ""
+msgstr "`osmnx <https://github.com/gboeing/osmnx>`_ をチェックアウトしてください。"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:30
 msgid "Start by generating a graph from an address."
-msgstr ""
+msgstr "まず、アドレスからグラフを生成します。"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:51
 msgid "Read in the graph directly from the Open Street Map server."
-msgstr ""
+msgstr "Open Street Mapサーバーから直接グラフを読み込んでください。"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:76
 msgid ""
 "Next, convert the edges into pyvista lines using "
 ":func:`pyvista.lines_from_points`."
-msgstr ""
+msgstr "次に、 :func:`pyvista.lines_from_points` を使って、エッジを pyvista の線に変換します。"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:106
 msgid "Finally, merge the lines and plot"
-msgstr ""
+msgstr "最後に、ラインをマージしてプロットします"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:130
 msgid "**Total running time of the script:** ( 0 minutes  1.404 seconds)"
@@ -11304,37 +11413,41 @@ msgstr ""
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:24
 #: ../../pyvista/doc/examples/index.rst:2517
 msgid "Visualize the Moeller–Trumbore Algorithm"
-msgstr ""
+msgstr "Moeller-Trumboreアルゴリズムの可視化"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:26
 msgid ""
 "This example demonstrates the Moeller–Trumbore intersection algorithm using "
 "pyvista."
-msgstr ""
+msgstr "この例では、pyvistaを使ってMoeller-Trumbore intersectionアルゴリズムを実演しています。"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:29
 msgid "For additional details, please reference the following:"
-msgstr ""
+msgstr "詳細については、以下を参照してください:"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:31
 msgid ""
 "`Möller–Trumbore intersection algorithm "
 "<https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm>`_"
 msgstr ""
+"`Möller–Trumbore intersection algorithm "
+"<https://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm>`_"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:32
 msgid ""
 "`Fast Minimum Storage Ray Triangle Intersectio "
 "<https://cadxfem.org/inf/Fast%20MinimumStorage%20RayTriangle%20Intersection.pdf>`_"
 msgstr ""
+"`Fast Minimum Storage Ray Triangle Intersectio "
+"<https://cadxfem.org/inf/Fast%20MinimumStorage%20RayTriangle%20Intersection.pdf>`_"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:34
 msgid "First, define the ray triangle intersection method."
-msgstr ""
+msgstr "まず、光線三角交差法を定義します。"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:159
 msgid "Plot the problem setup and the intersection"
-msgstr ""
+msgstr "問題の設定と交点のプロット"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:217
 msgid "**Total running time of the script:** ( 0 minutes  0.355 seconds)"
