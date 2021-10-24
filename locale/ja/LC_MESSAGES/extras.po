@@ -935,6 +935,11 @@ msgid ""
 " <https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a"
 "-github-packages-registry/working-with-the-docker-registry>`_)"
 msgstr ""
+"jupyterlabを使用すると，Dockerコンテナ内から ``pyvista`` を使用できます．ローカルのdockerイメージを作成するには "
+"``docker`` をインストールし， `Working with Docker registry "
+"<https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a"
+"-github-packages-registry/working-with-the-docker-registry>`_) "
+"の指示に従ってdockerにログインしていることを確認してください．"
 
 #: ../../pyvista/doc/extras/docker.rst:10
 msgid "Next pull and run the image with:"
@@ -1018,6 +1023,8 @@ msgid ""
 "PyVista ``DataSets`` can be extended for user defined functionality. See "
 ":ref:`Extending PyVista Example <extending_pyvista_example>`."
 msgstr ""
+"PyVistaの ``DataSets`` は、ユーザ定義の機能を拡張することができます。詳しくは :ref:`Extending PyVista "
+"Example <extending_pyvista_example>` をご覧ください。"
 
 #: ../../pyvista/doc/extras/flask.rst:4
 msgid "Flask Application"
@@ -1094,7 +1101,7 @@ msgstr "貢献の詳細とPyVistaの開発方法については， :ref:`ref_dev
 
 #: ../../pyvista/doc/extras/plot_directive.rst:4
 msgid "Sphinx PyVista Plot Directive"
-msgstr ""
+msgstr "Sphinx PyVista Plot ディレクティブ"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:5
 msgid ""
@@ -1102,102 +1109,104 @@ msgid ""
 "plot`` directive by adding the following to your ``conf.py`` when building "
 "your documentation using Sphinx."
 msgstr ""
+"Sphinxを使ってドキュメントを作成する際に、以下の内容を ``conf.py`` に追加することで、 ``.. pyvista-plot`` "
+"ディレクティブを使用して、pyvistaのプロットの静的なイメージを生成することができます。"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:16
 msgid ""
 "You can then issue the plotting directive within your sphinx documentation "
 "files:"
-msgstr ""
+msgstr "そうすれば、sphinxのドキュメントファイルの中で、plottingディレクティブを発行することができます。"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:14
 msgid "A sphere"
-msgstr ""
+msgstr "球体"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:27
 msgid "Which will be rendered as:"
-msgstr ""
+msgstr "以下のように表示されます。"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:14
 msgid "This is a default sphere"
-msgstr ""
+msgstr "これはデフォルトの球体"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:1
 msgid "Plot directive module."
-msgstr ""
+msgstr "プロットディレクティブモジュール。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:4
 msgid "A directive for including a PyVista plot in a Sphinx document"
-msgstr ""
+msgstr "SphinxドキュメントにPyVistaプロットを含めるためのディレクティブ"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:6
 msgid ""
 "The `.. pyvista-plot::` sphinx directive will include an inline ``.png`` "
 "image."
-msgstr ""
+msgstr "`.. pyvista-plot::` sphinxディレクティブは、インラインの ``.png`` イメージを含みます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:9
 msgid "The source code for the plot may be included in one of two ways:"
-msgstr ""
+msgstr "プロットのソースコードは、次の2つの方法のいずれかで含まれます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:11
 msgid "Using **doctest** syntax::"
-msgstr ""
+msgstr "**doctest** 構文を使用しています。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:19
 msgid "**A path to a source file** as the argument to the directive::"
-msgstr ""
+msgstr "**ソースファイルへのパス** を directive の引数として指定します::"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:23
 msgid ""
 "When a path to a source file is given, the content of the directive may "
 "optionally contain a caption for the plot::"
-msgstr ""
+msgstr "ソースファイルへのパスが与えられている場合、ディレクティブの内容には、オプションでプロットのキャプションを含めることができます::"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:30
 msgid ""
 "Additionally, one may specify the name of a function to call (with no "
 "arguments) immediately after importing the module::"
-msgstr ""
+msgstr "さらに、モジュールをインポートした直後に、（引数なしで）呼び出す関数の名前を指定することもできます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:36
 msgid "Code blocks containing ``doctest:+SKIP`` will be skipped."
-msgstr ""
+msgstr "``doctest:+SKIP`` を含むコードブロックはスキップされます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:39
 msgid "Animations will not be saved, only the last frame will be shown."
-msgstr ""
+msgstr "アニメーションは保存されず、最後のフレームのみが表示されます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:43
 msgid "Options"
-msgstr ""
+msgstr "オプション"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:44
 msgid "The ``pyvista-plot`` directive supports the following options:"
-msgstr ""
+msgstr "```pyvista-plot`` ディレクティブは，以下のオプションをサポートしています．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:48
 msgid "include-source"
-msgstr ""
+msgstr "include-source"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directiveNone
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directiveNone
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:47
@@ -1205,18 +1214,20 @@ msgid ""
 "Whether to display the source code. The default can be changed using the "
 "`plot_include_source` variable in :file:`conf.py`."
 msgstr ""
+"ソースコードを表示するかどうかを指定します。デフォルトは :file:`conf.py` の `plot_include_source` "
+"変数で変更できます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:53
 msgid "encoding"
-msgstr ""
+msgstr "encoding"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directiveNone
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directiveNone
 msgid "str"
-msgstr ""
+msgstr "str"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:51
@@ -1225,16 +1236,19 @@ msgid ""
 "must be specified using the ``:encoding:`` option.  The encoding will not be"
 " inferred using the ``-*- coding -*-`` metacomment."
 msgstr ""
+"もし、このソースファイルがUTF8やASCII以外のエンコーディングである場合には、 ``:encoding:`` "
+"オプションを使ってエンコーディングを指定しなければなりません。 このエンコーディングは ``-*- coding -*-`` "
+"メタコメントを使って推測されることはありません。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:58
 msgid "context"
-msgstr ""
+msgstr "context"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directiveNone
 msgid "None"
-msgstr ""
+msgstr "None"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:56
@@ -1243,11 +1257,14 @@ msgid ""
 "directives for which the ``:context:`` option was specified.  This only "
 "applies to inline code plot directives, not those run from files."
 msgstr ""
+"このオプションが指定された場合、コードは ``:context:`` "
+"オプションが指定された以前のすべてのプロットディレクティブのコンテクストで実行されます。 "
+"これはインラインコードのプロットディレクティブにのみ適用され、ファイルから実行されるものには適用されません。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:62
 msgid "nofigs"
-msgstr ""
+msgstr "nofigs"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:61
@@ -1255,11 +1272,12 @@ msgid ""
 "If specified, the code block will be run, but no figures will be inserted.  "
 "This is usually useful with the ``:context:`` option."
 msgstr ""
+"指定された場合、コードブロックは実行されますが、数字は挿入されません。 これは通常 ``:context:`` オプションと一緒に使うと便利です。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:67
 msgid "caption"
-msgstr ""
+msgstr "caption"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:65
@@ -1268,6 +1286,7 @@ msgid ""
 "figure. This overwrites the caption given in the content, when the plot is "
 "generated from a file."
 msgstr ""
+"指定された場合、オプションの引数が図のキャプションとして使用されます。これは、ファイルからプロットが生成された場合、コンテンツで与えられたキャプションを上書きします。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:69
@@ -1276,16 +1295,19 @@ msgid ""
 "directive, except for *target* (since plot will add its own target).  These "
 "include *alt*, *height*, *width*, *scale*, *align*."
 msgstr ""
+"さらに、このディレクティブは、 *target* を除いて、 `image` ディレクティブのすべてのオプションをサポートしています (plot "
+"が独自のターゲットを追加するため)。 これらのオプションには *alt*, *height*, *width*, *scale*, *align* "
+"があります。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:75
 msgid "Configuration options"
-msgstr ""
+msgstr "設定オプション"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:76
 msgid "The plot directive has the following configuration options:"
-msgstr ""
+msgstr "plotディレクティブには、以下の設定項目があります。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:79
@@ -1295,7 +1317,7 @@ msgstr "plot_include_source"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:79
 msgid "Default value for the include-source option."
-msgstr ""
+msgstr "include-sourceオプションのデフォルト値。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:84
@@ -1309,6 +1331,8 @@ msgid ""
 "``None`` or empty, file names are relative to the directory where the file "
 "containing the directive is.)"
 msgstr ""
+"ベースとなるディレクトリで、 ``plot::`` のファイル名の相対パスを指定します。 ( ``None`` "
+"または空の場合には、ファイル名はそのディレクティブを含むファイルがあるディレクトリに相対します)。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:87
@@ -1318,7 +1342,7 @@ msgstr "plot_html_show_formats"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:87
 msgid "Whether to show links to the files in HTML."
-msgstr ""
+msgstr "ファイルへのリンクをHTMLで表示するかどうか。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:90
@@ -1328,7 +1352,7 @@ msgstr "plot_template"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:90
 msgid "Provide a customized template for preparing restructured text."
-msgstr ""
+msgstr "再構成されたテキストを作成するためのカスタマイズされたテンプレートを提供します。"
 
 #: ../../pyvista/doc/extras/pyinstaller.rst:4
 msgid "Freezing PyVista with pyinstaller"
@@ -1367,7 +1391,7 @@ msgstr "そこから， ``pyvista`` を使用してアプリケーションを�
 
 #: ../../pyvista/doc/extras/vtk_data.rst:3
 msgid "Using Local VTK-Data"
-msgstr ""
+msgstr "ローカルVTKデータの使用"
 
 #: ../../pyvista/doc/extras/vtk_data.rst:5
 msgid ""
@@ -1377,7 +1401,10 @@ msgid ""
 " ``PYVISTA_VTK_DATA`` environment variable is set to the folder path, the "
 "examples will instead be copied from the local folder."
 msgstr ""
+"通常、PyVista のサンプルは、 `pyvista/vtk-data リポジトリ <https://github.com/pyvista/vtk-"
+"data>`_ からダウンロードします。また、pyvista/vtk-data リポジトリ全体をローカルフォルダとして提供することもできます。環境変数 "
+"``PYVISTA_VTK_DATA`` にフォルダパスが設定されている場合は、代わりに例題がローカルフォルダからコピーされます。"
 
 #: ../../pyvista/doc/extras/vtk_data.rst:11
 msgid "This example uses a cloned vtk-data repository:"
-msgstr ""
+msgstr "この例では、クローンされたvtk-dataリポジトリを使用しています。"
