@@ -1693,7 +1693,7 @@ msgstr ":obj:`background_color <pyvista.PlotterITK.background_color>`\\"
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.PlotterITK.background_color:2
 msgid "Return the background color of the plotter."
-msgstr "プロッタの背景色を返します．"
+msgstr "プロッタの背景色を取得します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
 msgid ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
@@ -1703,7 +1703,7 @@ msgstr ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.PlotterITK.camera_position:2
 msgid "Return camera position of the plotter as a list."
-msgstr "プロッタのカメラ位置をリストとして返します．"
+msgstr "プロッタのカメラ位置をリストとして取得します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:81
 msgid "Methods"
@@ -2820,17 +2820,22 @@ msgid ""
 "normally loop through all the points of a list and supply that to a  "
 "`vtkPoints`_ class.  For example:"
 msgstr ""
+"PyVista は、VTK の C 配列を効率的に割り当て、アクセスするために NumPy に大きく依存しています。 "
+"例えば、VTKで点の配列を作るには、通常、リストのすべての点をループして、それを `vtkPoints`_ クラスに供給します。 "
+"例えば、以下のようになります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:179
 msgid ""
 "To do the same within PyVista, you simply need to create a NumPy array:"
-msgstr ""
+msgstr "PyVistaで同じことをするには、単にNumPyの配列を作成する必要があります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:189
 msgid ""
 "You can use :func:`pyvista.vtk_points` to construct a `vtkPoints`_ object, "
 "but this is unnecessary in almost all situations."
 msgstr ""
+":func:`pyvista.vtk_points` を使って `vtkPoints`_ "
+"オブジェクトを構築することもできますが、ほとんどの状況では必要ありません。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:192
 msgid ""
@@ -2838,10 +2843,12 @@ msgid ""
 "<pyvista.core.dataset.DataSet>`, you would simply pass the ``np_points`` "
 "array to the :class:`pyvista.PolyData` constructor:"
 msgstr ""
+"最終的な目的は、 :class:`pyvista.DataSet <pyvista.core.dataset.DataSet>` を構築することなので、"
+" :class:`pyvista.PolyData` のコンストラクタに ``np_points`` の配列を渡すだけです。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:201
 msgid "Whereas in VTK you would have to do:"
-msgstr ""
+msgstr "VTKではそうする必要があります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:208
 msgid ""
@@ -2850,20 +2857,25 @@ msgid ""
 ":func:`InsertCellPoint`.  For example, to create a single cell (triangle) "
 "and then assign it to `vtkPolyData`_:"
 msgstr ""
+"面やセルの接続性/トポロジーを割り当てる場合も同様です。 VTKでは通常、 :func:`InsertNextCell` と "
+":func:`InsertCellPoint` を使ってループする必要があります。 例えば、一つのセル(三角形)を作成して、それを "
+"`vtkPolyData`_ に割り当てる場合:"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:222
 msgid ""
 "In PyVista, we can assign this directly in the constructor and then access "
 "it (or change it) from the :attr:`faces <pyvista.PolyData.faces>` attribute."
 msgstr ""
+"PyVistaでは、コンストラクタでこれを直接割り当て、 :attr:`faces <pyvista.PolyData.faces>` "
+"属性からアクセス（変更）することができます。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:235
 msgid "Object Representation"
-msgstr ""
+msgstr "オブジェクトの表現"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:236
 msgid "Both VTK and PyVista provide representations for their objects."
-msgstr ""
+msgstr "VTKもPyVistaもオブジェクトの表現を提供しています。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:238
 msgid ""
@@ -2871,12 +2883,16 @@ msgid ""
 "accessed via :func:`print`, as the ``__repr__`` (unlike ``__str__``) only "
 "provides minimal information about each object:"
 msgstr ""
+"VTK は :func:`print` でアクセスできるデータ型の詳細な表現を提供しています。これは ``__repr__`` が ( "
+"``__str__`` とは異なり) 各オブジェクトに関する最小限の情報しか提供していないためです。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:246
 msgid ""
 "PyVista chooses to show minimal data in the :func:`repr`, preferring "
 "explicit attribute access on meshes for the bulk of attributes. For example:"
 msgstr ""
+"PyVista は :func:`repr` "
+"で最小限のデータを表示することにしており、アトリビュートの大部分はメッシュ上の明示的なアトリビュートアクセスを優先しています。例えば、以下のようになります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:261
 msgid ""
@@ -2886,22 +2902,28 @@ msgid ""
 " approach was chosen to allow for a brief summary showing key parts of the "
 ":class:`DataSet <pyvista.DataSet>` without overwhelming the user."
 msgstr ""
+":attr:`lines <pyvista.PolyData.lines>`、 :attr:`point_data "
+"<pyvista.DataSet.point_data>`、 :attr:`cell_data <pyvista.DataSet.cell_data>`"
+" などの他のすべての属性は、オブジェクトから直接アクセスすることができます。 このアプローチは、ユーザーを圧倒することなく、 "
+":class:`DataSet <pyvista.DataSet>` の重要な部分を示す簡単な要約を可能にするために選ばれました。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:269
 msgid "Tradeoffs"
-msgstr ""
+msgstr "トレードオフ"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:270
 msgid ""
 "While most features can, not everything can be simplified without losing "
 "functionality or performance."
-msgstr ""
+msgstr "ほとんどの機能は可能ですが、機能や性能を損なわずにすべてを簡素化できるわけではありません。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:273
 msgid ""
 "In the :class:`collision <pyvista.PolyDataFilters.collision>` filter, we "
 "demonstrate how to calculate the collision between two meshes.  For example:"
 msgstr ""
+":class:`collision <pyvista.PolyDataFilters.collision>` "
+"フィルターでは、2つのメッシュ間のコリジョンを計算する方法を示します。 例えば、以下のようになります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:302
 msgid ""
@@ -2916,24 +2938,33 @@ msgid ""
 " is sufficient for most data science, but there are times when you may want "
 "to use VTK classes directly."
 msgstr ""
+"フードの下では、コリジョンフィルタは OBB (oriented bounding box) ツリーを使ってメッシュの衝突を検出します。 しかし、 "
+":ref:`collision_example` "
+"の例のように、同じメッシュで複数の衝突を計算する場合には、OBBツリーが各メッシュに対して一度ずつ計算されるため、基礎となる "
+"`vtkCollisionDetectionFilter "
+"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_ "
+"を使用した方が効率的です（利便性は低いですが）。 "
+"ほとんどのデータサイエンスでは、純粋なPyVistaで十分ですが、VTKクラスを直接使用したい場合もあります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:313
 msgid ""
 "Note that nothing stops you from using VTK classes and then wrapping the "
 "output with PyVista.  For example:"
 msgstr ""
+"VTKクラスを使用して、その出力をPyVistaでラッピングすることを妨げるものは何もないことに注意してください。 例えば、以下のようになります。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:333
 msgid ""
 "In this manner, you can get the \"best of both worlds\" should you need the "
 "flexibility of PyVista and the functionality of VTK."
 msgstr ""
+"このようにして、PyVistaの柔軟性とVTKの機能性の両方を必要とする \"best of both worlds\" を得ることができるのです。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:337
 msgid ""
 "You can use :func:`pyvista.Circle` for a one line replacement of the above "
 "VTK code."
-msgstr ""
+msgstr "上記のVTKコードを1行で置き換えるために、 :func:`pyvista.Circle` を使用することができます。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:4
 msgid "What is a Mesh?"
@@ -2950,6 +2981,10 @@ msgid ""
 " dataset with 3D geometries like voxels, tetrahedra, hexahedra, etc., then "
 "we also call that a mesh! Why? Because it is simple that way."
 msgstr ""
+"PyVistaでは，メッシュは空間的に参照される情報であり，通常は3 "
+"D空間内の表面またはボリュームのジオメトリ表現で構成されます．一般的に，空間的に参照されるデータセットはメッシュと呼ばれるため，メッシュ，グリッド，ボリュームの区別があいまいになることがありますが，PyVistaでは関係ありません．三角形のような2"
+" Dジオメトリを持つ表面メッシュのデータセットがある場合はメッシュと呼び，ボクセル，4面体，6面体などの3 "
+"Dジオメトリのデータセットがある場合はメッシュと呼びます．なぜか? その方が簡単だからです．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:15
 msgid ""
@@ -2959,6 +2994,9 @@ msgid ""
 "worked hard to make PyVista work for datasets of either or mixed geometries "
 "so that you as a user do not have to get bogged down in the nuances."
 msgstr ""
+"空間的に参照されるすべてのデータセットには，基礎となるメッシュ構造 – セルを定義するノード間の接続またはジオメトリが存在します．これらのセルが2 "
+"Dであるか3 "
+"Dであるかは常に重要ではなく，ユーザがニュアンスにとらわれないように，いずれかのジオメトリまたは混合ジオメトリのデータセットでPyVistaを動作させるために私たちは懸命に努力してきました．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:22
 msgid ""
@@ -2966,10 +3004,12 @@ msgid ""
 "regarding our data model and how it relates to the underlying VTK data "
 "model, please see :ref:`pyvista_data_model`."
 msgstr ""
+"これは、PyVista APIの非常に高いレベルの概要です。 PyVistaのデータモデルの詳細や、基礎となるVTKデータモデルとの関連性については、 "
+":ref:`pyvista_data_model` をご覧ください。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:28
 msgid "What is a point?"
-msgstr ""
+msgstr "ポイントとは？"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:29
 msgid ""
@@ -2977,6 +3017,8 @@ msgid ""
 "underlying structure. All PyVista datasets (meshes!) have points and "
 "sometimes, you can have a mesh that only has points – like a point cloud."
 msgstr ""
+"ポイントはメッシュの頂点，つまり基礎となる直交座標です．すべてのPyVistaデータセット (メッシュ!) "
+"にはポイントがあり，場合によっては，ポイントクラウドのようにポイントのみを持つメッシュを作成できます．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:34
 msgid ""
@@ -2991,13 +3033,13 @@ msgstr ""
 msgid ""
 "Let's start with a point cloud – this is a mesh type that only has vertices."
 " You can create one by defining a 2D array of Cartesian coordinates like so:"
-msgstr ""
+msgstr "ポイントクラウドから始めましょう – これは頂点のみを持つメッシュタイプです．作成するには，2 D配列の直交座標を次のように定義します．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:64
 msgid ""
 "But it's important to note that most meshes have some sort of connectivity "
 "between points such as this gridded mesh:"
-msgstr ""
+msgstr "ただし，ほとんどのメッシュは，次のグリッド化されたメッシュなどのポイント間で何らかの接続性を持っていることに注意してください．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:83
 msgid "Or this triangulated surface:"
@@ -3015,6 +3057,7 @@ msgid ""
 "cell in the beam example is a voxel defined by the region between eight "
 "points in that mesh:"
 msgstr ""
+"セルは，メッシュの接続またはトポロジを定義するポイント間のジオメトリです．上記の例では，セルはポイント(赤色をしている)を結ぶ線(黒色をしている縁)によって定義されます．たとえば，ビームの例のセルは，メッシュ内の8つのポイント間の領域によって定義されるボクセルです．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:126
 msgid ""
@@ -3022,6 +3065,7 @@ msgid ""
 "points, a line between two points, or even a single point could be its own "
 "cell (but that's a special case)."
 msgstr ""
+"セルはボクセルに限定されず，3つのポイント間の三角形，2つのポイント間のライン，または1つのポイント自体のセル(これは特別なケースです)にすることができます．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:132
 msgid "What are attributes?"
@@ -3036,6 +3080,7 @@ msgid ""
 " a dictionary-like attribute attached to any PyVista mesh accessible as one "
 "of the following:"
 msgstr ""
+"アトリビュートは，メッシュのポイントまたはセルに存在するデータ値です．PyVistaでは，ポイントデータとセルデータの両方を処理し，データ辞書に簡単にアクセスして，メッシュのすべてのポイントまたはすべてのセルに存在するアトリビュートの配列を保持できます．これらの属性は、以下のようにアクセスできるPyVistaメッシュに付けられた辞書のような属性にアクセスできます。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:140
 msgid ":attr:`point_data <pyvista.DataSet.point_data>`"
@@ -3056,6 +3101,7 @@ msgid ""
 " point in the mesh.  Let's create some point data for the beam mesh.  When "
 "plotting, the values between points are interpolated across the cells."
 msgstr ""
+"ポイントデータは，メッシュの各ポイント上に存在する値の配列(スカラー，ベクトルなど．)を参照します．アトリビュート配列の各要素は，メッシュ内のポイントに対応している必要があります．ビームメッシュの点データを作成します．ポイント間の値をプロットすると，セル間で補間されます．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:159
 msgid ""
@@ -3063,6 +3109,8 @@ msgid ""
 "throughout each cell of the mesh.  That is the entire cell (2D face or 3D "
 "volume) is assigned the value of that attribute."
 msgstr ""
+"セルデータは，メッシュの各セル全体に存在する値の配列(スカラー，ベクトルなど)を参照します．つまり，セル全体(2 D面または3 "
+"D体積)にそのアトリビュートの値が割り当てられます．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:168
 msgid ""
@@ -3070,6 +3118,7 @@ msgid ""
 "interpolated across cells when mapping colors. This is unlike cell data "
 "which has a single value across the cell's domain:"
 msgstr ""
+"ここでは，点データとセルデータを比較し，色をマッピングするときに点データがセル間でどのように補間されるかを示します．これは，セルのドメイン全体で単一の値を持つセルデータとは異なります．"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:190
 msgid ""
@@ -3077,10 +3126,12 @@ msgid ""
 "still should be attached to the mesh.  This may be a string array storing "
 "notes, or even indices of a :ref:`collision_example`."
 msgstr ""
+"フィールドデータはポイントやセルとは直接関連していませんが、メッシュに添付する必要があります。 これはメモを格納した文字列の配列であったり、あるいは "
+":ref:`collision_example` のインデックスであったりします。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:198
 msgid "Assigning Scalars to a Mesh"
-msgstr ""
+msgstr "スカラーをメッシュに割り当てる"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:200
 msgid ""
@@ -3088,10 +3139,12 @@ msgid ""
 "generate cube containing 6 faces and assign each face an integer from "
 "``range(6)`` and then have it plotted."
 msgstr ""
+"ここでは、セルの属性に値を割り当て、それをプロットする方法を紹介します。 ここでは、6つの面を含む立方体を生成し、それぞれの面に "
+"``range(6)`` から整数を割り当てて、それをプロットしています。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:204
 msgid "Note how this varies from assigning scalars to each point"
-msgstr ""
+msgstr "これは、各点にスカラーを割り当てるのとは異なることに注意してください。"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:221
 msgid ""
@@ -3099,3 +3152,5 @@ msgid ""
 "since, by default, the cube is created with unmerged faces and duplicate "
 "points."
 msgstr ""
+"デフォルトでは、立方体はマージされていない面と重複したポイントで作成されるので、立方体の面をマージするために "
+":func:`pyvista.PolyDataFilters.clean` を使用しています。"
