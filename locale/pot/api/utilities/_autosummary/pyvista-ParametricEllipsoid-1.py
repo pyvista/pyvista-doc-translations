@@ -1,4 +1,4 @@
-# Create a ParametricEllipsoid mesh
+# Create a ParametricEllipsoid mesh.
 #
 import pyvista
 mesh = pyvista.ParametricEllipsoid()

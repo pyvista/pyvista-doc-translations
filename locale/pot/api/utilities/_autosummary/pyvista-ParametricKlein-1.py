@@ -1,4 +1,4 @@
-# Create a ParametricKlein mesh
+# Create a ParametricKlein mesh.
 #
 import pyvista
 mesh = pyvista.ParametricKlein()

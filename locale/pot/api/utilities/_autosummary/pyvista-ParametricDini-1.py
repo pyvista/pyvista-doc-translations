@@ -1,4 +1,4 @@
-# Create a ParametricDini mesh
+# Create a ParametricDini mesh.
 #
 import pyvista
 mesh = pyvista.ParametricDini()

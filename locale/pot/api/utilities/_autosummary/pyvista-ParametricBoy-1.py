@@ -1,4 +1,4 @@
-# Create a ParametricBoy mesh
+# Create a ParametricBoy mesh.
 #
 import pyvista
 mesh = pyvista.ParametricBoy()

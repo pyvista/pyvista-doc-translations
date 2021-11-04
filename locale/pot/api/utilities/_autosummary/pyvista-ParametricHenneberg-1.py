@@ -1,4 +1,4 @@
-# Create a ParametricHenneberg mesh
+# Create a ParametricHenneberg mesh.
 #
 import pyvista
 mesh = pyvista.ParametricHenneberg()

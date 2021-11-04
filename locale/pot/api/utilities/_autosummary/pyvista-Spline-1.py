@@ -1,4 +1,4 @@
-# Construct a spline
+# Construct a spline.
 #
 import numpy as np
 import pyvista as pv
