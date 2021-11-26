@@ -31,7 +31,7 @@ image. The camera location is the same in all four images.
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 6
+    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -257,7 +257,7 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.087 seconds)
+   **Total running time of the script:** ( 0 minutes  2.806 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_rotate.py:

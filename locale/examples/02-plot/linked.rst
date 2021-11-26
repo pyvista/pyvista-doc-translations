@@ -50,7 +50,7 @@ Linked Views in Subplots
 
     decimated = mesh.decimate_boundary(target_reduction=0.75)
 
-    p = pv.Plotter(notebook=0, shape=(1, 2), border=False)
+    p = pv.Plotter(shape=(1, 2), border=False)
     p.subplot(0, 0)
     p.add_text("Original mesh", font_size=24)
     p.add_mesh(mesh, show_edges=True, color=True)
@@ -79,7 +79,7 @@ Linked Views in Subplots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.572 seconds)
+   **Total running time of the script:** ( 0 minutes  3.647 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_linked.py:

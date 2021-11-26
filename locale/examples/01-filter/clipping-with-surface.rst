@@ -90,7 +90,7 @@ The clipping operation field is performed where the ``implicit_distance``
 field is zero and the ``invert`` flag controls which sides of zero to
 preserve.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-59
+.. GENERATED FROM PYTHON SOURCE LINES 46-58
 
 .. code-block:: default
 
@@ -104,7 +104,6 @@ preserve.
     p.add_mesh(inner, scalars="implicit_distance", show_edges=True,
                opacity=0.75, label='Inner region', clim=[-1,1], cmap="bwr")
     p.add_legend()
-    p.enable_depth_peeling()
     p.show()
 
 
@@ -119,7 +118,7 @@ preserve.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-70
+.. GENERATED FROM PYTHON SOURCE LINES 59-68
 
 .. code-block:: default
 
@@ -128,7 +127,6 @@ preserve.
     p.add_mesh(outer, scalars="implicit_distance", show_edges=True,
                opacity=0.75, label='Outer region', clim=[-1,1], cmap="bwr")
     p.add_legend()
-    p.enable_depth_peeling()
     p.show()
 
 
@@ -145,13 +143,13 @@ preserve.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-74
+.. GENERATED FROM PYTHON SOURCE LINES 69-72
 
 Clip the rectilinear grid dataset using the :class:`pyvista.PolyData`
 surface mesh via the :func:`pyvista.DataSetFilters.clip_surface` filter.
 This will triangulate/tessellate the mesh geometries along the clip.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-85
+.. GENERATED FROM PYTHON SOURCE LINES 72-82
 
 .. code-block:: default
 
@@ -162,7 +160,6 @@ This will triangulate/tessellate the mesh geometries along the clip.
     p.add_mesh(surface, color='w', opacity=0.75, label='Surface')
     p.add_mesh(clipped, color='gold', show_edges=True, label="clipped", opacity=0.75)
     p.add_legend()
-    p.enable_depth_peeling()
     p.show()
 
 
@@ -178,13 +175,13 @@ This will triangulate/tessellate the mesh geometries along the clip.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-89
+.. GENERATED FROM PYTHON SOURCE LINES 83-86
 
 Here is another example of clipping a mesh by a surface. This time, we'll
 generate a :class:`pyvista.UniformGrid` around a topography surface and then
 clip that grid using the surface to create a closed 3D model of the surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-99
+.. GENERATED FROM PYTHON SOURCE LINES 86-96
 
 .. code-block:: default
 
@@ -213,7 +210,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  32.970 seconds)
+   **Total running time of the script:** ( 0 minutes  44.225 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

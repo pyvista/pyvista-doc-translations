@@ -143,11 +143,11 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. code-block:: default
 
-    threshold = lambda m: m.threshold(15.0)
+    threshold = lambda m: m.threshold(75.0, scalars='SLCImage')
     cpos = [(468.9075585873713, -152.8280322856109, 152.13046602188035),
         (121.65121514580106, 140.29327609542105, 112.28137570357188),
         (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236)]
-    dargs = dict(clim=data_to_probe.get_data_range(), cmap='rainbow')
+    dargs = dict(clim=[0, 200], cmap='rainbow')
 
     p = pv.Plotter(shape=(1,2))
     p.add_mesh(threshold(data_to_probe), **dargs)
@@ -171,7 +171,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.045 seconds)
+   **Total running time of the script:** ( 0 minutes  9.196 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:

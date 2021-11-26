@@ -136,7 +136,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-66
+.. GENERATED FROM PYTHON SOURCE LINES 33-65
 
 .. code-block:: default
 
@@ -146,7 +146,6 @@ Set a single surface as the one being plotted that can be overwritten
     plotter = pv.Plotter()
     # Open a movie file
     plotter.open_gif(filename)
-    plotter.enable_depth_peeling()
 
     # Add initial mesh
     plotter.add_mesh(surface, opacity=0.5, clim=vol.get_data_range())
@@ -196,7 +195,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  35.675 seconds)
+   **Total running time of the script:** ( 0 minutes  49.378 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:

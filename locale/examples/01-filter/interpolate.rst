@@ -198,14 +198,13 @@ Run an interpolation
 
 Visualize the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-90
+.. GENERATED FROM PYTHON SOURCE LINES 79-89
 
 .. code-block:: default
 
     vol_opac = [0, 0, .2, 0.2, 0.5, 0.5]
 
     p = pv.Plotter(shape=(1,2), window_size=[1024*3, 768*2])
-    p.enable_depth_peeling()
     p.add_volume(interp, opacity=vol_opac, **dargs)
     p.add_mesh(probes, render_points_as_spheres=True, point_size=10, **dargs)
     p.subplot(0,1)
@@ -228,7 +227,7 @@ Visualize the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.936 seconds)
+   **Total running time of the script:** ( 0 minutes  10.183 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:

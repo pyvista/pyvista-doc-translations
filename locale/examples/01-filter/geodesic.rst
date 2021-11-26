@@ -76,7 +76,7 @@ Render the path along the land surface
 .. code-block:: default
 
 
-    p = pv.Plotter(notebook=0)
+    p = pv.Plotter()
     p.add_mesh(a+b+c, line_width=10, color="red", label="Geodesic Path")
     p.add_mesh(land, show_edges=True)
     p.add_legend()
@@ -119,14 +119,14 @@ How long is that path?
  .. code-block:: none
 
 
-    1.996160505558251
+    1.982625123125876
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.103 seconds)
+   **Total running time of the script:** ( 0 minutes  14.584 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_geodesic.py:
