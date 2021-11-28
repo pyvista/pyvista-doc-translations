@@ -33,7 +33,6 @@ Python due to its modularity.  If there's some limitation of pyvista
 (or trimesh), then you can adapt your scripts to use the best features
 of more than one module.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 18-20
 
 .. code-block:: default
@@ -64,27 +63,18 @@ Wrap a point cloud composed of random points from numpy
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_wrap-trimesh_001.png
-    :alt: wrap trimesh
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_wrap-trimesh_001.png
+   :alt: wrap trimesh
+   :srcset: /examples/00-load/images/sphx_glr_wrap-trimesh_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5153836499749512, -2.6102524157815035, 0.5052297002605484),
-     (0.5153836499749512, 0.503386831905676, 0.5052297002605484),
-     (0.0, 0.0, 1.0)]
 
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 29-30
 
-Wrap an instance of Trimesh 
+Wrap an instance of Trimesh
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-37
 
@@ -107,7 +97,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7f6c4bed7d68)
+    PolyData (0x7f9e99384b80)
       N Cells:      1
       N Points:     3
       X Bounds:     0.000e+00, 0.000e+00
@@ -150,7 +140,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7f6c4bed7fa8)
+    PolyData (0x7f9e891f1d00)
       N Cells:      1
       N Points:     1
       X Bounds:     1.000e+00, 1.000e+00
@@ -165,7 +155,7 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.777 seconds)
+   **Total running time of the script:** ( 0 minutes  1.504 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:

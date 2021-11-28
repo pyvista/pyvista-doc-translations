@@ -70,7 +70,7 @@ Download a sample dataset containing a vector field that can be integrated.
 
 .. GENERATED FROM PYTHON SOURCE LINES 27-29
 
-Run the stream line filtering algorithm using random seed points inside a 
+Run the stream line filtering algorithm using random seed points inside a
 sphere with radius of 2.0.
 
 .. GENERATED FROM PYTHON SOURCE LINES 29-40
@@ -180,8 +180,8 @@ Here is another example of blood flow:
 
 .. GENERATED FROM PYTHON SOURCE LINES 78-83
 
-A source mesh can also be provided using the 
-:func:`pyvista.DataSetFilters.streamlines_from_source` 
+A source mesh can also be provided using the
+:func:`pyvista.DataSetFilters.streamlines_from_source`
 filter, for example if an inlet surface is available.  In this example, the
 inlet surface is extracted just inside the domain for use as the seed for
 the streamlines.
@@ -375,7 +375,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.701 seconds)
+   **Total running time of the script:** ( 0 minutes  17.828 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

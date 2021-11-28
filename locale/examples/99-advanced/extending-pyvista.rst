@@ -36,7 +36,7 @@ classes are nearly always used for particular types of DataSets.
 
 .. note::
     This is for advanced usage only.  Automatic managing of types
-    will not work in all situations, in particular when a builtin dataset is directly 
+    will not work in all situations, in particular when a builtin dataset is directly
     instantiated.  See examples below.
 
 .. GENERATED FROM PYTHON SOURCE LINES 24-31
@@ -160,7 +160,7 @@ affect the type of the object.
 
 However, filter operations can return different ``DataSet`` types including
 ones that differ from the original type.  In this case, the
-:func:`decimate <pyvista.PolyDataFilters.decimate>` method returns a 
+:func:`decimate <pyvista.PolyDataFilters.decimate>` method returns a
 :class:`pyvista.PolyData` object.
 
 .. GENERATED FROM PYTHON SOURCE LINES 73-78
@@ -226,8 +226,8 @@ Automatically Managing Types
 ++++++++++++++++++++++++++++
 
 The default :class:`pyvista.DataSet` type can be set using ``pyvista._wrappers``.
-In general, it is best to use this method when it is expected to primarily 
-use the user defined class.  
+In general, it is best to use this method when it is expected to primarily
+use the user defined class.
 
 In this example, all objects that would have been created as
 :class:`pyvista.PolyData` would now be created as a ``FooData`` object. Note,
@@ -318,7 +318,7 @@ affect the type of the object.
 
 .. GENERATED FROM PYTHON SOURCE LINES 121-123
 
-Filter operations that return :class:`pyvista.PolyData` now return 
+Filter operations that return :class:`pyvista.PolyData` now return
 ``FooData``
 
 .. GENERATED FROM PYTHON SOURCE LINES 123-130
@@ -430,7 +430,7 @@ recommended.  One example is a ``try...finally`` block.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.162 seconds)
+   **Total running time of the script:** ( 0 minutes  0.166 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_extending-pyvista.py:

@@ -24,7 +24,7 @@ Collision
 ~~~~~~~~~
 Perform a collision detection between two meshes.
 
-This example use the :class:`collision <pyvista.PolyDataFilters.collision>` 
+This example use the :class:`collision <pyvista.PolyDataFilters.collision>`
 filter to detect the faces from one sphere colliding with another
 sphere.
 
@@ -137,7 +137,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.173 seconds)
+   **Total running time of the script:** ( 0 minutes  9.995 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:

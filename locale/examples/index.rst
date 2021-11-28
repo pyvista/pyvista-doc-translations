@@ -632,7 +632,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example use the pyvista.PolyDataFilters.collision  filter to detect the faces from one sph...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example use the pyvista.PolyDataFilters.collision filter to detect the faces from one sphe...">
 
 .. only:: html
 
