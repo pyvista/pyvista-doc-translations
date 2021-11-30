@@ -25,15 +25,16 @@ Shadows
 
 Demonstrate the usage of lights and shadows in PyVista.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-20
+.. GENERATED FROM PYTHON SOURCE LINES 9-21
 
 .. code-block:: default
 
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 2
     import pyvista
     from pyvista import examples
-    import numpy as np
 
     mesh = examples.download_dragon()
     mesh.rotate_x(90)
@@ -47,7 +48,7 @@ Demonstrate the usage of lights and shadows in PyVista.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-28
+.. GENERATED FROM PYTHON SOURCE LINES 22-29
 
 Using two lights, plot the Stanford Dragon with shadows.
 
@@ -57,7 +58,7 @@ Using two lights, plot the Stanford Dragon with shadows.
    parameter.  An initial window size of ``(1000, 1000)`` seems to
    work well, which can be manually resized without issue.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-73
+.. GENERATED FROM PYTHON SOURCE LINES 29-74
 
 .. code-block:: default
 
@@ -118,13 +119,13 @@ Using two lights, plot the Stanford Dragon with shadows.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-77
+.. GENERATED FROM PYTHON SOURCE LINES 75-78
 
 Show light penetrating several planes.  Adjust the light intensity
 and the ``shadow_attenuation`` to change how many planes the
 light can go through.
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-97
+.. GENERATED FROM PYTHON SOURCE LINES 78-98
 
 .. code-block:: default
 
@@ -160,12 +161,12 @@ light can go through.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-100
+.. GENERATED FROM PYTHON SOURCE LINES 99-101
 
 Here, we use a lower shadow_attenuation value to demonstrate how the
 light can travel through more planes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-119
+.. GENERATED FROM PYTHON SOURCE LINES 101-120
 
 .. code-block:: default
 
@@ -203,7 +204,7 @@ light can travel through more planes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.912 seconds)
+   **Total running time of the script:** ( 0 minutes  5.592 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_shadows.py:

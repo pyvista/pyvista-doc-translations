@@ -23,13 +23,14 @@ Plot data in spherical coordinates
 
 Generate and visualize meshes from data in longitude-latitude coordinates.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-73
+.. GENERATED FROM PYTHON SOURCE LINES 7-74
 
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
 
     def _cell_bounds(points, bound_position=0.5):
@@ -100,11 +101,11 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-75
+.. GENERATED FROM PYTHON SOURCE LINES 75-76
 
 Create a structured grid
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-87
+.. GENERATED FROM PYTHON SOURCE LINES 76-88
 
 .. code-block:: default
 
@@ -132,12 +133,12 @@ Create a structured grid
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-90
+.. GENERATED FROM PYTHON SOURCE LINES 89-91
 
 Visualize vectors in spherical coordinates
 Vertical wind
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-131
+.. GENERATED FROM PYTHON SOURCE LINES 91-132
 
 .. code-block:: default
 
@@ -194,11 +195,11 @@ Vertical wind
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-133
+.. GENERATED FROM PYTHON SOURCE LINES 133-134
 
 Isurfaces of 3D data in spherical coordinates
 
-.. GENERATED FROM PYTHON SOURCE LINES 133-163
+.. GENERATED FROM PYTHON SOURCE LINES 134-164
 
 .. code-block:: default
 
@@ -247,7 +248,7 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.316 seconds)
+   **Total running time of the script:** ( 0 minutes  1.484 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:

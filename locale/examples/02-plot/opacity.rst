@@ -167,7 +167,7 @@ If ``scipy`` is available, then a quadratic interpolation is used -
 otherwise, a simple linear interpolation is used.
 Curious what that opacity transfer function looks like? You can fetch it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-85
+.. GENERATED FROM PYTHON SOURCE LINES 74-86
 
 .. code-block:: default
 
@@ -176,6 +176,7 @@ Curious what that opacity transfer function looks like? You can fetch it:
     tf = pv.opacity_transfer_function(opacity, 256).astype(float) / 255.
 
     import matplotlib.pyplot as plt
+
     plt.plot(tf)
     plt.title('My Interpolated Opacity Transfer Function')
     plt.ylabel('Opacity')
@@ -194,13 +195,13 @@ Curious what that opacity transfer function looks like? You can fetch it:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-89
+.. GENERATED FROM PYTHON SOURCE LINES 87-90
 
 That opacity mapping will have an opacity of 0.0 at the minimum scalar range,
 a value or 0.9 at the middle of the scalar range, and a value of 0.3 at the
 maximum of the scalar range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-92
+.. GENERATED FROM PYTHON SOURCE LINES 90-93
 
 .. code-block:: default
 
@@ -219,12 +220,12 @@ maximum of the scalar range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-95
+.. GENERATED FROM PYTHON SOURCE LINES 94-96
 
 Opacity mapping is often useful when plotting DICOM images. For example,
 download the sample knee DICOM image:
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-97
+.. GENERATED FROM PYTHON SOURCE LINES 96-98
 
 .. code-block:: default
 
@@ -237,11 +238,11 @@ download the sample knee DICOM image:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-99
+.. GENERATED FROM PYTHON SOURCE LINES 99-100
 
 And here we inspect the DICOM image with a few different opacity mappings:
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-121
+.. GENERATED FROM PYTHON SOURCE LINES 100-122
 
 .. code-block:: default
 
@@ -279,7 +280,7 @@ And here we inspect the DICOM image with a few different opacity mappings:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-132
+.. GENERATED FROM PYTHON SOURCE LINES 123-133
 
 Opacity by Array
 ++++++++++++++++
@@ -292,7 +293,7 @@ a mesh that are uncertain and highlight regions that are well resolved.
 The following is a demonstration of plotting a mesh with colored values and
 using a second array to control the transparency of the mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-137
+.. GENERATED FROM PYTHON SOURCE LINES 133-138
 
 .. code-block:: default
 
@@ -316,7 +317,7 @@ using a second array to control the transparency of the mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-144
+.. GENERATED FROM PYTHON SOURCE LINES 139-145
 
 Make sure to flag ``use_transparency=True`` since we want areas of high
 variance to have high transparency.
@@ -325,7 +326,7 @@ Also, since the opacity array must be between 0 and 1, we normalize
 the temperature variance array by the maximum value.  That way high
 variance will be completely transparent.
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-161
+.. GENERATED FROM PYTHON SOURCE LINES 145-162
 
 .. code-block:: default
 
@@ -361,7 +362,7 @@ variance will be completely transparent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.795 seconds)
+   **Total running time of the script:** ( 0 minutes  10.531 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_opacity.py:

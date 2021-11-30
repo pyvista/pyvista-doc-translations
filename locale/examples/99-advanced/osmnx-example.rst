@@ -29,16 +29,18 @@ Be sure to check out `osmnx <https://github.com/gboeing/osmnx>`_
 
 Start by generating a graph from an address.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-20
+.. GENERATED FROM PYTHON SOURCE LINES 14-23
 
 .. code-block:: default
 
 
-    import osmnx as ox
     import numpy as np
+    import osmnx as ox
 
     import pyvista as pv
 
+    # Alternatively, use the pickeled graph included in our examples.
+    from pyvista import examples
 
 
 
@@ -46,11 +48,12 @@ Start by generating a graph from an address.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-22
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Read in the graph directly from the Open Street Map server.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-32
+.. GENERATED FROM PYTHON SOURCE LINES 25-33
 
 .. code-block:: default
 
@@ -59,8 +62,6 @@ Read in the graph directly from the Open Street Map server.
     # graph = ox.graph_from_address(address, dist=500, network_type='drive')
     # pickle.dump(graph, open('/tmp/tmp.p', 'wb'))
 
-    # Alternatively, use the pickeled graph included in our examples.
-    from pyvista import examples
     graph = examples.download_osmnx_graph()
 
 
@@ -71,12 +72,12 @@ Read in the graph directly from the Open Street Map server.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-35
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 Next, convert the edges into pyvista lines using
 :func:`pyvista.lines_from_points`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-49
+.. GENERATED FROM PYTHON SOURCE LINES 36-50
 
 .. code-block:: default
 
@@ -101,11 +102,11 @@ Next, convert the edges into pyvista lines using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-51
+.. GENERATED FROM PYTHON SOURCE LINES 51-52
 
 Finally, merge the lines and plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-54
+.. GENERATED FROM PYTHON SOURCE LINES 52-55
 
 .. code-block:: default
 
@@ -127,7 +128,7 @@ Finally, merge the lines and plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.404 seconds)
+   **Total running time of the script:** ( 0 minutes  1.525 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_osmnx-example.py:

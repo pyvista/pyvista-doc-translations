@@ -25,13 +25,14 @@ Moving Isovalue
 
 Make an animation of an isovalue through a volumetric dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-17
 
 .. code-block:: default
 
+    import numpy as np
+
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
 
     vol = examples.download_brain()
     vol
@@ -68,11 +69,11 @@ Make an animation of an isovalue through a volumetric dataset
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-18
+.. GENERATED FROM PYTHON SOURCE LINES 18-19
 
 Now lets make an array of all of the isovalues for which we want to show.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-20
+.. GENERATED FROM PYTHON SOURCE LINES 19-21
 
 .. code-block:: default
 
@@ -85,11 +86,11 @@ Now lets make an array of all of the isovalues for which we want to show.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-22
+.. GENERATED FROM PYTHON SOURCE LINES 22-23
 
 Now let's create an initial isosurface that we can plot and move
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-24
+.. GENERATED FROM PYTHON SOURCE LINES 23-25
 
 .. code-block:: default
 
@@ -102,11 +103,11 @@ Now let's create an initial isosurface that we can plot and move
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+.. GENERATED FROM PYTHON SOURCE LINES 26-27
 
 Precompute the surfaces
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-28
+.. GENERATED FROM PYTHON SOURCE LINES 27-29
 
 .. code-block:: default
 
@@ -119,11 +120,11 @@ Precompute the surfaces
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+.. GENERATED FROM PYTHON SOURCE LINES 30-31
 
 Set a single surface as the one being plotted that can be overwritten
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 31-33
 
 .. code-block:: default
 
@@ -136,7 +137,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-65
+.. GENERATED FROM PYTHON SOURCE LINES 34-66
 
 .. code-block:: default
 
@@ -195,7 +196,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  49.378 seconds)
+   **Total running time of the script:** ( 0 minutes  44.494 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:

@@ -36,11 +36,11 @@ the mesh geometries along the clip.
 
 .. code-block:: default
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
-
 
 
 
@@ -210,7 +210,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  44.225 seconds)
+   **Total running time of the script:** ( 0 minutes  41.915 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

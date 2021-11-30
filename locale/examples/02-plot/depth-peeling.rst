@@ -29,7 +29,7 @@ operating systems and versions of VTK have issues with this routine.
 For this example, we will showcase the difference that depth peeling
 provides.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-19
+.. GENERATED FROM PYTHON SOURCE LINES 14-18
 
 .. code-block:: default
 
@@ -44,8 +44,7 @@ provides.
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 20-28
+.. GENERATED FROM PYTHON SOURCE LINES 19-27
 
 .. code-block:: default
 
@@ -64,7 +63,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-47
+.. GENERATED FROM PYTHON SOURCE LINES 28-46
 
 .. code-block:: default
 
@@ -98,14 +97,14 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+.. GENERATED FROM PYTHON SOURCE LINES 47-51
 
 The following room surfaces example mesh, provided courtesy of
 `Sam Potter <https://github.com/sampotter>`_ has coincident topology and
 depth rendering helps correctly render those geometries when a global
 opacity value is used.
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-73
+.. GENERATED FROM PYTHON SOURCE LINES 51-72
 
 .. code-block:: default
 
@@ -142,12 +141,12 @@ opacity value is used.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-76
+.. GENERATED FROM PYTHON SOURCE LINES 73-75
 
 And here is another example wheen rendering many translucent contour
 surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-95
+.. GENERATED FROM PYTHON SOURCE LINES 75-94
 
 .. code-block:: default
 
@@ -185,7 +184,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  35.284 seconds)
+   **Total running time of the script:** ( 0 minutes  13.252 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

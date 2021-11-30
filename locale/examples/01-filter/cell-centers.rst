@@ -27,14 +27,14 @@ Extract the coordinates of the centers of all cells/faces in a mesh.
 
 Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-16
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
-    from pyvista import examples
     import pyvista as pv
 
+    # sphinx_gallery_thumbnail_number = 3
+    from pyvista import examples
 
 
 
@@ -42,11 +42,12 @@ Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-17
+
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 First let's fetch the centers of a mesh with 2D geometries (a surface)
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-31
+.. GENERATED FROM PYTHON SOURCE LINES 18-32
 
 .. code-block:: default
 
@@ -76,11 +77,11 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-33
+.. GENERATED FROM PYTHON SOURCE LINES 33-34
 
 We can also do this for full 3D meshes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-48
+.. GENERATED FROM PYTHON SOURCE LINES 34-49
 
 .. code-block:: default
 
@@ -111,7 +112,7 @@ We can also do this for full 3D meshes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-54
+.. GENERATED FROM PYTHON SOURCE LINES 50-55
 
 .. code-block:: default
 
@@ -135,7 +136,7 @@ We can also do this for full 3D meshes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.908 seconds)
+   **Total running time of the script:** ( 0 minutes  2.292 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

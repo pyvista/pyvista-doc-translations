@@ -33,13 +33,14 @@ For additional details, please reference the following:
 
 First, define the ray triangle intersection method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-83
+.. GENERATED FROM PYTHON SOURCE LINES 17-84
 
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
 
     def ray_triangle_intersection(ray_start, ray_vec, triangle):
@@ -110,7 +111,7 @@ First, define the ray triangle intersection method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-106
+.. GENERATED FROM PYTHON SOURCE LINES 85-107
 
 .. code-block:: default
 
@@ -154,11 +155,11 @@ First, define the ray triangle intersection method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-108
+.. GENERATED FROM PYTHON SOURCE LINES 108-109
 
 Plot the problem setup and the intersection
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-145
+.. GENERATED FROM PYTHON SOURCE LINES 109-146
 
 .. code-block:: default
 
@@ -214,7 +215,7 @@ Plot the problem setup and the intersection
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.355 seconds)
+   **Total running time of the script:** ( 0 minutes  0.654 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace-moeller.py:

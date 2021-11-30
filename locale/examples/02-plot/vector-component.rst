@@ -26,7 +26,7 @@ Plot a single component of a vector as a scalar array.
 We can plot individual components of multi-component arrays with the
 ``component`` argument  of the ``add_mesh`` method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -41,12 +41,11 @@ We can plot individual components of multi-component arrays with the
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 16-17
+.. GENERATED FROM PYTHON SOURCE LINES 15-16
 
 Download an example notched beam stress
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+.. GENERATED FROM PYTHON SOURCE LINES 16-19
 
 .. code-block:: default
 
@@ -60,13 +59,13 @@ Download an example notched beam stress
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-24
+.. GENERATED FROM PYTHON SOURCE LINES 20-23
 
 The default behavior with no component specified is to use the
 vector magnitude. We can access each component by specifying the
 component argument.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-48
+.. GENERATED FROM PYTHON SOURCE LINES 23-47
 
 .. code-block:: default
 
@@ -97,28 +96,19 @@ component argument.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_vector-component_001.png
-    :alt: vector component
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_vector-component_001.png
+   :alt: vector component
+   :srcset: /examples/02-plot/images/sphx_glr_vector-component_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.6600079138331812, 0.5100079138331812, 0.46500791383318113),
-     (0.2, 0.05, 0.005000000000000001),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.653 seconds)
+   **Total running time of the script:** ( 0 minutes  1.290 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_vector-component.py:

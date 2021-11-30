@@ -30,12 +30,13 @@ options for beam customization.
 
 Consider two hemispheres:
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-29
+.. GENERATED FROM PYTHON SOURCE LINES 14-30
 
 .. code-block:: default
 
     # sphinx_gallery_thumbnail_number = 5
     import pyvista as pv
+
     plotter = pv.Plotter()
 
     hemi = pv.Sphere().clip()
@@ -52,25 +53,16 @@ Consider two hemispheres:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_beam_shape_001.png
-    :alt: beam shape
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.6954084971422354, 3.6954084971422354, 3.6954084971422354),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_001.png
+   :alt: beam shape
+   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-35
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 We can see that the default lighting does a very good job of articulating the
 shape of the hemispheres.
@@ -78,7 +70,7 @@ shape of the hemispheres.
 Let's shine a directional light on them, positioned between the hemispheres and
 oriented along their centers:
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-52
+.. GENERATED FROM PYTHON SOURCE LINES 36-53
 
 .. code-block:: default
 
@@ -102,25 +94,16 @@ oriented along their centers:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_beam_shape_002.png
-    :alt: beam shape
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.6954084971422354, 3.6954084971422354, 3.6954084971422354),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_002.png
+   :alt: beam shape
+   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-58
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 54-59
 
 Both hemispheres have their surface lit on the side that faces the light.
 This is consistent with the point source positioned at infinity, directed from
@@ -128,7 +111,7 @@ the light's nominal position toward the focal point.
 
 Now let's change the light to a positional light (but not a spotlight):
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-77
+.. GENERATED FROM PYTHON SOURCE LINES 59-78
 
 .. code-block:: default
 
@@ -154,25 +137,16 @@ Now let's change the light to a positional light (but not a spotlight):
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_beam_shape_003.png
-    :alt: beam shape
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.6954084971422354, 3.6954084971422354, 3.6954084971422354),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_003.png
+   :alt: beam shape
+   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-87
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-88
 
 Now the inner surface of both hemispheres is lit. A positional light with a
 cone angle of 90 degrees (or more) acts as a point source located at the
@@ -184,7 +158,7 @@ than 90 degrees) will enable beam shaping using the :py:attr:`exponent`
 property. Let's put our hemispheres side by side for this, and put a light in
 the center of each: one spotlight, one merely positional.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-117
+.. GENERATED FROM PYTHON SOURCE LINES 88-118
 
 .. code-block:: default
 
@@ -221,25 +195,16 @@ the center of each: one spotlight, one merely positional.
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_beam_shape_004.png
-    :alt: beam shape
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.7976816949272623, 3.79731508165841, 3.0473150518560876),
-     (-0.24963335692882538, 0.7500000298023224, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_004.png
+   :alt: beam shape
+   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-124
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 119-125
 
 Even though the two lights only differ by a fraction of a degree in cone angle,
 the beam shaping effect enabled for spotlights causes a marked difference in
@@ -248,7 +213,7 @@ the result.
 Once we have a spotlight we can change its :py:attr:`exponent` to make the beam
 shape sharper or broader. Three spotlights with varying sharpness:
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-149
+.. GENERATED FROM PYTHON SOURCE LINES 125-150
 
 .. code-block:: default
 
@@ -280,25 +245,16 @@ shape sharper or broader. Three spotlights with varying sharpness:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_beam_shape_005.png
-    :alt: beam shape
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.5736450933356814, 4.573278480066829, 4.472797476543956),
-     (-0.24963335692882538, 0.7500000298023224, 0.6495190262794495),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_005.png
+   :alt: beam shape
+   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-152
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 151-153
 
 The spotlight with exponent 0.3 is practically uniform, and the one with
 exponent 5 is visibly focused along the axis of the light.
@@ -306,7 +262,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.978 seconds)
+   **Total running time of the script:** ( 0 minutes  2.292 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:

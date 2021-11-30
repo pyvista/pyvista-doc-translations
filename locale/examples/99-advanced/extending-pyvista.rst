@@ -39,14 +39,15 @@ classes are nearly always used for particular types of DataSets.
     will not work in all situations, in particular when a builtin dataset is directly
     instantiated.  See examples below.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-31
+.. GENERATED FROM PYTHON SOURCE LINES 24-32
 
 .. code-block:: default
 
 
-    import pyvista
     import numpy as np
     import vtk
+
+    import pyvista
 
     pyvista.set_plot_theme("document")
 
@@ -57,13 +58,13 @@ classes are nearly always used for particular types of DataSets.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-35
+.. GENERATED FROM PYTHON SOURCE LINES 33-36
 
 A user defined subclass of :class:`pyvista.PolyData`, ``FooData`` is defined.
 It includes a property to keep track of the point on the mesh that is
 furthest along in the (1, 0, 1) direction.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-42
+.. GENERATED FROM PYTHON SOURCE LINES 36-43
 
 .. code-block:: default
 
@@ -81,7 +82,7 @@ furthest along in the (1, 0, 1) direction.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-51
+.. GENERATED FROM PYTHON SOURCE LINES 44-52
 
 Directly Managing Types
 +++++++++++++++++++++++
@@ -92,7 +93,7 @@ directly. The sphere has a radius of 0.5, so the maximum extent in the
 direction (1, 0, 1) is :math:`0.5\sqrt{0.5}\approx0.354`
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-58
+.. GENERATED FROM PYTHON SOURCE LINES 52-59
 
 .. code-block:: default
 
@@ -121,12 +122,12 @@ direction (1, 0, 1) is :math:`0.5\sqrt{0.5}\approx0.354`
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-61
+.. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 Using an inplace operation like :func:`pyvista.DataSet.rotate_y` does not
 affect the type of the object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-68
+.. GENERATED FROM PYTHON SOURCE LINES 62-69
 
 .. code-block:: default
 
@@ -156,14 +157,14 @@ affect the type of the object.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-73
+.. GENERATED FROM PYTHON SOURCE LINES 70-74
 
 However, filter operations can return different ``DataSet`` types including
 ones that differ from the original type.  In this case, the
 :func:`decimate <pyvista.PolyDataFilters.decimate>` method returns a
 :class:`pyvista.PolyData` object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-78
+.. GENERATED FROM PYTHON SOURCE LINES 74-79
 
 .. code-block:: default
 
@@ -189,11 +190,11 @@ ones that differ from the original type.  In this case, the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-80
+.. GENERATED FROM PYTHON SOURCE LINES 80-81
 
 It is now required to explicitly wrap the object into ``FooData``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-86
+.. GENERATED FROM PYTHON SOURCE LINES 81-87
 
 .. code-block:: default
 
@@ -220,7 +221,7 @@ It is now required to explicitly wrap the object into ``FooData``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-97
+.. GENERATED FROM PYTHON SOURCE LINES 88-98
 
 Automatically Managing Types
 ++++++++++++++++++++++++++++
@@ -233,7 +234,7 @@ In this example, all objects that would have been created as
 :class:`pyvista.PolyData` would now be created as a ``FooData`` object. Note,
 that the key is the underlying vtk object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-100
+.. GENERATED FROM PYTHON SOURCE LINES 98-101
 
 .. code-block:: default
 
@@ -247,12 +248,12 @@ that the key is the underlying vtk object.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-103
+.. GENERATED FROM PYTHON SOURCE LINES 102-104
 
 It is no longer necessary to specifically wrap :class:`pyvista.PolyData`
 objects to obtain a ``FooData`` object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-110
+.. GENERATED FROM PYTHON SOURCE LINES 104-111
 
 .. code-block:: default
 
@@ -281,12 +282,12 @@ objects to obtain a ``FooData`` object.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-113
+.. GENERATED FROM PYTHON SOURCE LINES 112-114
 
 Using an inplace operation like :func:`rotate_y <pyvista.DataSet.rotate_y>` does not
 affect the type of the object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-120
+.. GENERATED FROM PYTHON SOURCE LINES 114-121
 
 .. code-block:: default
 
@@ -316,12 +317,12 @@ affect the type of the object.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-123
+.. GENERATED FROM PYTHON SOURCE LINES 122-124
 
 Filter operations that return :class:`pyvista.PolyData` now return
 ``FooData``
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-130
+.. GENERATED FROM PYTHON SOURCE LINES 124-131
 
 .. code-block:: default
 
@@ -351,13 +352,13 @@ Filter operations that return :class:`pyvista.PolyData` now return
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-134
+.. GENERATED FROM PYTHON SOURCE LINES 132-135
 
 Users can still create a native :class:`pyvista.PolyData` object, but
 using this method may incur unintended consequences.  In this case,
 it is recommended to use the directly managing types method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-143
+.. GENERATED FROM PYTHON SOURCE LINES 135-144
 
 .. code-block:: default
 
@@ -386,12 +387,12 @@ it is recommended to use the directly managing types method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-146
+.. GENERATED FROM PYTHON SOURCE LINES 145-147
 
 Usage of ``pyvista._wrappers`` may require resetting the default value
 to avoid leaking the setting into cases where it is unused.
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-149
+.. GENERATED FROM PYTHON SOURCE LINES 147-150
 
 .. code-block:: default
 
@@ -405,12 +406,12 @@ to avoid leaking the setting into cases where it is unused.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-152
+.. GENERATED FROM PYTHON SOURCE LINES 151-153
 
 For instances where a localized usage is preferred, a tear-down method is
 recommended.  One example is a ``try...finally`` block.
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-158
+.. GENERATED FROM PYTHON SOURCE LINES 153-159
 
 .. code-block:: default
 
@@ -430,7 +431,7 @@ recommended.  One example is a ``try...finally`` block.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.166 seconds)
+   **Total running time of the script:** ( 0 minutes  0.230 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_extending-pyvista.py:

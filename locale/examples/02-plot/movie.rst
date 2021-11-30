@@ -29,7 +29,7 @@ Create an animated MP4 movie of a rendering scene.
     This movie will appear static since MP4 movies will not be
     rendered on a sphinx gallery example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-49
+.. GENERATED FROM PYTHON SOURCE LINES 14-50
 
 
 
@@ -46,8 +46,9 @@ Create an animated MP4 movie of a rendering scene.
 
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
     filename = "sphere-shrinking.mp4"
 
@@ -83,7 +84,7 @@ Create an animated MP4 movie of a rendering scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.338 seconds)
+   **Total running time of the script:** ( 0 minutes  16.761 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie.py:

@@ -31,13 +31,14 @@ This example generates streamlines of blood velocity. An isosurface of speed
 provides context. The starting positions for the streamtubes were determined
 by experimenting with the data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-19
+.. GENERATED FROM PYTHON SOURCE LINES 13-20
 
 .. code-block:: default
 
 
     # sphinx_gallery_thumbnail_number = 3
     import numpy as np
+
     import pyvista as pv
     from pyvista import examples
 
@@ -48,13 +49,13 @@ by experimenting with the data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-23
+.. GENERATED FROM PYTHON SOURCE LINES 21-24
 
 Carotid
 +++++++
 Download a sample dataset containing a vector field that can be integrated.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-26
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 .. code-block:: default
 
@@ -68,12 +69,12 @@ Download a sample dataset containing a vector field that can be integrated.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-29
+.. GENERATED FROM PYTHON SOURCE LINES 28-30
 
 Run the stream line filtering algorithm using random seed points inside a
 sphere with radius of 2.0.
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-40
+.. GENERATED FROM PYTHON SOURCE LINES 30-41
 
 .. code-block:: default
 
@@ -95,12 +96,12 @@ sphere with radius of 2.0.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 Display the results! Please note that because this dataset's velocity field
 was measured with low resolution, many streamlines travel outside the artery.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-53
+.. GENERATED FROM PYTHON SOURCE LINES 44-54
 
 .. code-block:: default
 
@@ -126,13 +127,13 @@ was measured with low resolution, many streamlines travel outside the artery.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-57
+.. GENERATED FROM PYTHON SOURCE LINES 55-58
 
 Blood Vessels
 +++++++++++++
 Here is another example of blood flow:
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-65
+.. GENERATED FROM PYTHON SOURCE LINES 58-66
 
 .. code-block:: default
 
@@ -151,7 +152,7 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-77
+.. GENERATED FROM PYTHON SOURCE LINES 67-78
 
 .. code-block:: default
 
@@ -178,7 +179,7 @@ Here is another example of blood flow:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-83
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 A source mesh can also be provided using the
 :func:`pyvista.DataSetFilters.streamlines_from_source`
@@ -186,7 +187,7 @@ filter, for example if an inlet surface is available.  In this example, the
 inlet surface is extracted just inside the domain for use as the seed for
 the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-92
+.. GENERATED FROM PYTHON SOURCE LINES 84-93
 
 .. code-block:: default
 
@@ -215,11 +216,11 @@ the streamlines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-94
+.. GENERATED FROM PYTHON SOURCE LINES 94-95
 
 Plot streamlines colored by the time along the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-106
+.. GENERATED FROM PYTHON SOURCE LINES 95-107
 
 .. code-block:: default
 
@@ -247,13 +248,13 @@ Plot streamlines colored by the time along the streamlines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-110
+.. GENERATED FROM PYTHON SOURCE LINES 108-111
 
 Kitchen
 +++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-115
+.. GENERATED FROM PYTHON SOURCE LINES 111-116
 
 .. code-block:: default
 
@@ -269,7 +270,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-118
+.. GENERATED FROM PYTHON SOURCE LINES 117-119
 
 .. code-block:: default
 
@@ -282,7 +283,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-127
+.. GENERATED FROM PYTHON SOURCE LINES 120-128
 
 .. code-block:: default
 
@@ -306,13 +307,13 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-131
+.. GENERATED FROM PYTHON SOURCE LINES 129-132
 
 Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-148
+.. GENERATED FROM PYTHON SOURCE LINES 132-149
 
 .. code-block:: default
 
@@ -340,7 +341,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-152
+.. GENERATED FROM PYTHON SOURCE LINES 150-153
 
 .. code-block:: default
 
@@ -354,7 +355,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-155
+.. GENERATED FROM PYTHON SOURCE LINES 154-156
 
 .. code-block:: default
 
@@ -375,7 +376,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.828 seconds)
+   **Total running time of the script:** ( 0 minutes  17.900 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

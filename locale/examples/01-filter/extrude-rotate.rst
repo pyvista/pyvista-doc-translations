@@ -29,12 +29,13 @@ new polygonal primitives. These primitives form a "skirt" or
 swept surface. For example, sweeping a line results in a
 cylindrical shell, and sweeping a circle creates a torus.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-23
+.. GENERATED FROM PYTHON SOURCE LINES 14-24
 
 .. code-block:: default
 
-    import pyvista
     import numpy as np
+
+    import pyvista
 
     # create a line and rotate it about the Z-axis
     resolution = 10
@@ -64,8 +65,8 @@ cylindrical shell, and sweeping a circle creates a torus.
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td><b>Texture Coordinates</b></td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>
-    <tr><td>Distance</td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
+    <tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>
+    <tr><td><b>Distance</b></td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
     </table>
 
     </td></tr> </table>
@@ -73,12 +74,12 @@ cylindrical shell, and sweeping a circle creates a torus.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-26
+.. GENERATED FROM PYTHON SOURCE LINES 25-27
 
 Plot the extruded line
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-49
+.. GENERATED FROM PYTHON SOURCE LINES 27-50
 
 .. code-block:: default
 
@@ -108,30 +109,21 @@ Plot the extruded line
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
-    :alt: extrude rotate
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.0, 0.0, 5.332062506502935),
-     (0.0, 0.0, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
+   :alt: extrude rotate
+   :srcset: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 51-53
 
 Create a spring
 ~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-77
+.. GENERATED FROM PYTHON SOURCE LINES 53-78
 
 .. code-block:: default
 
@@ -163,28 +155,19 @@ Create a spring
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
-    :alt: extrude rotate
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
+   :alt: extrude rotate
+   :srcset: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.041666626930236816, 18.26355517249696, 3.0),
-     (0.041666626930236816, -0.041666626930236816, 3.0),
-     (1.0, 0.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.217 seconds)
+   **Total running time of the script:** ( 0 minutes  0.899 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-rotate.py:

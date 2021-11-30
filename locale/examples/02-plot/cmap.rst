@@ -26,17 +26,17 @@ Colormap Choices
 Use a Matplotlib, Colorcet, cmocean, or custom colormap when plotting scalar
 values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-17
+.. GENERATED FROM PYTHON SOURCE LINES 10-18
 
 .. code-block:: default
 
 
-    from pyvista import examples
-    import pyvista as pv
-    import matplotlib.pyplot as plt
     from matplotlib.colors import ListedColormap
+    import matplotlib.pyplot as plt
     import numpy as np
 
+    import pyvista as pv
+    from pyvista import examples
 
 
 
@@ -44,7 +44,8 @@ values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-29
+
+.. GENERATED FROM PYTHON SOURCE LINES 19-30
 
 Any colormap built for ``matplotlib``, ``colorcet``, or ``cmocean`` is fully
 compatible with PyVista. Colormaps are typically specified by passing the
@@ -58,7 +59,7 @@ See `Matplotlib's complete list of available colormaps`_,
 .. _Colorcet's complete list: https://colorcet.holoviz.org/user_guide/index.html
 .. _cmocean's complete list: https://matplotlib.org/cmocean/
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+.. GENERATED FROM PYTHON SOURCE LINES 32-37
 
 Custom Made Colormaps
 +++++++++++++++++++++
@@ -66,7 +67,7 @@ Custom Made Colormaps
 To get started using a custom colormap, download some data with scalar values to
 plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-41
+.. GENERATED FROM PYTHON SOURCE LINES 37-42
 
 .. code-block:: default
 
@@ -82,12 +83,12 @@ plot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-44
+.. GENERATED FROM PYTHON SOURCE LINES 43-45
 
 Build a custom colormap - here we make a colormap with 5 discrete colors
 and we specify the ranges where those colors fall:
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-63
+.. GENERATED FROM PYTHON SOURCE LINES 45-64
 
 .. code-block:: default
 
@@ -117,11 +118,11 @@ and we specify the ranges where those colors fall:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-65
+.. GENERATED FROM PYTHON SOURCE LINES 65-66
 
 Simply pass the colormap to the plotting routine!
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-67
+.. GENERATED FROM PYTHON SOURCE LINES 66-68
 
 .. code-block:: default
 
@@ -139,12 +140,12 @@ Simply pass the colormap to the plotting routine!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-70
+.. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 Or you could make a simple colormap... any Matplotlib colormap can be passed
 to PyVista!
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-73
+.. GENERATED FROM PYTHON SOURCE LINES 71-74
 
 .. code-block:: default
 
@@ -163,12 +164,12 @@ to PyVista!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-76
+.. GENERATED FROM PYTHON SOURCE LINES 75-77
 
 You can also pass a list of color strings to the color map.  This
 approach divides up the colormap into 5 equal parts.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-78
+.. GENERATED FROM PYTHON SOURCE LINES 77-79
 
 .. code-block:: default
 
@@ -186,13 +187,13 @@ approach divides up the colormap into 5 equal parts.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-82
+.. GENERATED FROM PYTHON SOURCE LINES 80-83
 
 If you still wish to have control of the separation of values, you
 can do this by creating a scalar array and passing that to the
 plotter along with the the colormap
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-91
+.. GENERATED FROM PYTHON SOURCE LINES 83-92
 
 .. code-block:: default
 
@@ -217,7 +218,7 @@ plotter along with the the colormap
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-106
+.. GENERATED FROM PYTHON SOURCE LINES 93-107
 
 Matplotlib vs. Colorcet
 +++++++++++++++++++++++
@@ -234,7 +235,7 @@ Please note that in order to use Colorcet's colormaps including "fire", you
 must have Colorcet installed in your Python environment:
 ``pip install colorcet``
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-125
+.. GENERATED FROM PYTHON SOURCE LINES 107-126
 
 .. code-block:: default
 
@@ -272,7 +273,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.869 seconds)
+   **Total running time of the script:** ( 0 minutes  6.445 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

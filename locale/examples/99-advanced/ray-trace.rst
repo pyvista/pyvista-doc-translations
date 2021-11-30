@@ -23,36 +23,24 @@ Ray Tracing
 
 Single line segment ray tracing for PolyData objects.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-33
+.. GENERATED FROM PYTHON SOURCE LINES 7-34
 
 
 
-.. image:: /examples/99-advanced/images/sphx_glr_ray-trace_001.png
-    :alt: ray trace
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.37793313327261, 3.4558812266869166, 3.37793313327261),
-     (0.0, 0.07794809341430664, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/99-advanced/images/sphx_glr_ray-trace_001.png
+   :alt: ray trace
+   :srcset: /examples/99-advanced/images/sphx_glr_ray-trace_001.png
+   :class: sphx-glr-single-img
 
 
 
 
-
-|
 
 .. code-block:: default
 
 
     import pyvista as pv
+
     # Create source to ray trace
     sphere = pv.Sphere(radius=0.85)
 
@@ -81,7 +69,7 @@ Single line segment ray tracing for PolyData objects.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.360 seconds)
+   **Total running time of the script:** ( 0 minutes  0.594 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace.py:

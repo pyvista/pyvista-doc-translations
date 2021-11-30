@@ -26,13 +26,13 @@ Create PolyData
 Creating a PolyData (triangulated surface) object from NumPy arrays of the
 vertices and faces.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-16
 
 .. code-block:: default
 
 
     import numpy as np
+
     import pyvista as pv
 
 
@@ -42,13 +42,13 @@ vertices and faces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+.. GENERATED FROM PYTHON SOURCE LINES 17-20
 
 A PolyData object can be created quickly from numpy arrays.  The vertex array
 contains the locations of the points in the mesh and the face array contains
 the number of points of each face and the indices of the vertices which comprise that face.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-36
+.. GENERATED FROM PYTHON SOURCE LINES 20-37
 
 .. code-block:: default
 
@@ -72,28 +72,19 @@ the number of points of each face and the indices of the vertices which comprise
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-poly_001.png
-    :alt: create poly
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-poly_001.png
+   :alt: create poly
+   :srcset: /examples/00-load/images/sphx_glr_create-poly_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1.7307101433008212, 2.730710143300821, 0.6153550716504106),
-     (0.5, 0.5, -0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.597 seconds)
+   **Total running time of the script:** ( 0 minutes  0.716 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-poly.py:

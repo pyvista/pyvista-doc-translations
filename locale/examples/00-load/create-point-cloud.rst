@@ -26,16 +26,15 @@ Create Point Cloud
 Create a :class:`pyvista.PolyData` object from a point cloud of vertices and
 scalar arrays for those points.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 11-17
 
 .. code-block:: default
 
 
     import numpy as np
+
     import pyvista as pv
     from pyvista import examples
-
 
 
 
@@ -82,11 +81,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.81092175e+05, 4.40008750e+06, 1.77889001e+03],
-                     [4.80984375e+05, 4.40019880e+06, 1.75908997e+03],
-                     [4.81014675e+05, 4.40021180e+06, 1.75829004e+03],
-                     [4.80971175e+05, 4.40010950e+06, 1.76316003e+03],
-                     [4.81020075e+05, 4.40018840e+06, 1.75939001e+03]])
+    pyvista_ndarray([[4.81002175e+05, 4.40017420e+06, 1.76005005e+03],
+                     [4.81042075e+05, 4.40020200e+06, 1.75857996e+03],
+                     [4.81106875e+05, 4.40016610e+06, 1.75894995e+03],
+                     [4.81034375e+05, 4.40011220e+06, 1.76842004e+03],
+                     [4.81017075e+05, 4.40014750e+06, 1.76107996e+03]])
 
 
 
@@ -117,7 +116,7 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <tr><td>N Points</td><td>67841</td></tr>
     <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
     <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-    <tr><td>Z Bounds</td><td>1.754e+03, 1.784e+03</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.787e+03</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
 
@@ -166,21 +165,12 @@ depth perception with point clouds (learn more in :ref:`ref_edl`).
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-point-cloud_001.png
-    :alt: create point cloud
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_001.png
+   :alt: create point cloud
+   :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(481321.98765373835, 4400455.112653441, 2062.6676464370535),
-     (481028.37499997707, 4400161.49999968, 1769.0549926757812),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -228,21 +218,12 @@ we specify to render every point as its own sphere.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
-    :alt: create point cloud
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
+   :alt: create point cloud
+   :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(481321.98765373835, 4400455.112653441, 2062.6676464370535),
-     (481028.37499997707, 4400161.49999968, 1769.0549926757812),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -286,11 +267,11 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[-0.40586896,  0.68053994,  0.61002932],
-                     [-0.70206961,  0.68571163, -0.19208805],
-                     [ 0.62260644, -0.77354463,  0.11827901],
-                     [-0.34471284,  0.38921567, -0.85421556],
-                     [ 0.5588075 ,  0.78442639, -0.26908996]])
+    pyvista_ndarray([[-0.55900346,  0.57092667, -0.60129683],
+                     [ 0.23136505,  0.87809317,  0.41883481],
+                     [-0.77822785, -0.60338264,  0.17404255],
+                     [ 0.33661148, -0.91339709, -0.2289071 ],
+                     [-0.3916899 ,  0.77759868,  0.49185293]])
 
 
 
@@ -332,28 +313,19 @@ Now we can make arrows using those vectors using the glyph filter
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
-    :alt: create point cloud
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
+   :alt: create point cloud
+   :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.8671428354323325, 2.867097219252628, 2.8702415766060767),
-     (0.4946790039539337, 0.49463338777422905, 0.4977777451276779),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.452 seconds)
+   **Total running time of the script:** ( 0 minutes  5.578 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

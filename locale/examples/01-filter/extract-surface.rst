@@ -26,7 +26,7 @@ Extract Surface
 You can extract the surface of nearly any object within ``pyvista``
 using the ``extract_surface`` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-17
+.. GENERATED FROM PYTHON SOURCE LINES 10-18
 
 .. code-block:: default
 
@@ -34,9 +34,9 @@ using the ``extract_surface`` filter.
     # sphinx_gallery_thumbnail_number = 2
 
     import numpy as np
-    import pyvista as pv
     from vtk import VTK_QUADRATIC_HEXAHEDRON
 
+    import pyvista as pv
 
 
 
@@ -44,14 +44,15 @@ using the ``extract_surface`` filter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-22
+
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 Create a quadratic cell and extract its surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we create a single quadratic hexahedral cell and then extract its surface
 to demonstrate how to extract the surface of an UnstructuredGrid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-67
+.. GENERATED FROM PYTHON SOURCE LINES 23-68
 
 .. code-block:: default
 
@@ -115,13 +116,13 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:60: UserWarning: VTK 9 no longer accepts an offset array
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:61: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-75
+.. GENERATED FROM PYTHON SOURCE LINES 69-76
 
 Nonlinear Surface Subdivision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,7 +132,7 @@ generate a smooth surface based on the position of the
 containing curvature.  For additional reference, please see:
 https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-78
+.. GENERATED FROM PYTHON SOURCE LINES 76-79
 
 .. code-block:: default
 
@@ -153,7 +154,7 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.873 seconds)
+   **Total running time of the script:** ( 0 minutes  0.770 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:

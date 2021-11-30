@@ -36,11 +36,11 @@ Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
 .. code-block:: default
 
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 1
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
-
 
     # A vtkStructuredGrid - but could be any mesh type
     mesh = examples.download_carotid()
@@ -319,7 +319,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.901 seconds)
+   **Total running time of the script:** ( 0 minutes  2.055 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:

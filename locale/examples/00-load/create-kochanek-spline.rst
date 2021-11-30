@@ -30,9 +30,9 @@ Create a Kochanek spline/polyline from a numpy array of XYZ vertices.
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
 
+    import pyvista as pv
 
 
 
@@ -154,7 +154,7 @@ Interpolate those points onto a parametric Kochanek spline
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.881 seconds)
+   **Total running time of the script:** ( 0 minutes  0.843 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-kochanek-spline.py:

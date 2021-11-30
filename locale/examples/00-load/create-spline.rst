@@ -30,10 +30,10 @@ Create a spline/polyline from a numpy array of XYZ vertices
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
-    import pyvista as pv
     import numpy as np
 
+    # sphinx_gallery_thumbnail_number = 2
+    import pyvista as pv
 
 
 
@@ -143,21 +143,12 @@ segments they make.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-spline_001.png
-    :alt: create spline
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_001.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(14.087887028287454, 14.946060132268393, 14.087887028287454),
-     (4.440892098500626e-16, 0.8581731039809382, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -188,21 +179,12 @@ creating a single PolyLine cell for all of the points
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-spline_002.png
-    :alt: create spline
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_002.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(14.086813345437829, 14.944844858005826, 14.086377144241794),
-     (0.00031734610427580634, 0.8583488586722716, -0.0001188550917605724),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -242,21 +224,12 @@ Plot spline as a tube
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-spline_003.png
-    :alt: create spline
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_003.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(14.115423714961896, 14.971821105327496, 14.114901935901532),
-     (0.0003743171691894531, 0.85677170753479, -0.0001474618911743164),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -279,21 +252,12 @@ The spline can also be plotted as a plain line
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-spline_004.png
-    :alt: create spline
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_004.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(13.745872971968165, 14.603470084623805, 13.745872971968165),
-     (0.0, 0.8575971126556396, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -315,28 +279,19 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-spline_005.png
-    :alt: create spline
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_005.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(16.68578476672845, 17.41423101192193, 17.248056957776118),
-     (0.07060718536376953, 0.799053430557251, 0.632879376411438),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.080 seconds)
+   **Total running time of the script:** ( 0 minutes  2.097 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:

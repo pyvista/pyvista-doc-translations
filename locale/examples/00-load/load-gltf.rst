@@ -32,13 +32,14 @@ First, download the examples.  Note that here we're using a high
 dynamic range texture since glTF files generally contain physically
 based rendering and VTK v9 supports high dynamic range textures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-24
+.. GENERATED FROM PYTHON SOURCE LINES 17-25
 
 .. code-block:: default
 
 
     import pyvista
     from pyvista import examples
+
     helmet_file = examples.gltf.download_damaged_helmet()
     texture = examples.hdr.download_dikhololo_night()
 
@@ -50,13 +51,13 @@ based rendering and VTK v9 supports high dynamic range textures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 26-29
 
 Setup the plotter and enable environment textures.  This works well
 for physically based rendering enabled meshes like the damaged
 helmet example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-36
+.. GENERATED FROM PYTHON SOURCE LINES 29-37
 
 .. code-block:: default
 
@@ -80,12 +81,12 @@ helmet example.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-39
+.. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 You can also directly read in gltf files and extract the underlying
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-43
+.. GENERATED FROM PYTHON SOURCE LINES 40-44
 
 .. code-block:: default
 
@@ -108,7 +109,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  45.841 seconds)
+   **Total running time of the script:** ( 1 minutes  4.618 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:

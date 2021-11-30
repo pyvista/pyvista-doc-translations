@@ -26,15 +26,15 @@ Computing Surface Normals
 
 Compute normals on a surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-16
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
-    from pyvista import examples
     import numpy as np
 
+    # sphinx_gallery_thumbnail_number = 2
+    from pyvista import examples
 
 
 
@@ -42,13 +42,14 @@ Compute normals on a surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+
+.. GENERATED FROM PYTHON SOURCE LINES 17-20
 
 Computing the normals of a surface is quite easy using
 :class:`pyvista.PolyData`'s :func:`pyvista.PolyDataFilters.compute_normals`
 method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-23
+.. GENERATED FROM PYTHON SOURCE LINES 20-24
 
 .. code-block:: default
 
@@ -68,7 +69,7 @@ method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-30
+.. GENERATED FROM PYTHON SOURCE LINES 25-31
 
 Now we have a surface dataset of the globe loaded - unfortunately, the
 dataset shows the globe with a uniform radius which hides topographic relief.
@@ -77,7 +78,7 @@ vectors on the globe at all points in the dataset, then use the values given
 in the dataset to warp the surface in the normals direction to create some
 exaggerated topographic relief.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-41
+.. GENERATED FROM PYTHON SOURCE LINES 31-42
 
 .. code-block:: default
 
@@ -104,13 +105,13 @@ exaggerated topographic relief.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-45
+.. GENERATED FROM PYTHON SOURCE LINES 43-46
 
 We could also use face/cell normals to extract all the faces of a mesh
 facing a general direction. In the following snippet, we take a mesh, compute
 the normals along its cell faces, and extract the faces that face upward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-61
+.. GENERATED FROM PYTHON SOURCE LINES 46-62
 
 .. code-block:: default
 
@@ -145,7 +146,7 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  21.304 seconds)
+   **Total running time of the script:** ( 0 minutes  19.893 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:

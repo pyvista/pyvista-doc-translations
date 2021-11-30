@@ -31,12 +31,13 @@ so they can be visualized using a cone.
 This is exactly the purpose of a ``vtk.vtkLightActor``, the
 functionality of which can be enabled for spotlights:
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-43
+.. GENERATED FROM PYTHON SOURCE LINES 15-44
 
 .. code-block:: default
 
     # sphinx_gallery_thumbnail_number = 1
     import numpy as np
+
     import pyvista as pv
     from pyvista import examples
 
@@ -75,12 +76,12 @@ functionality of which can be enabled for spotlights:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-46
+.. GENERATED FROM PYTHON SOURCE LINES 45-47
 
 Light actors can be very useful when designing complex scenes where
 spotlights are involved in lighting.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-68
+.. GENERATED FROM PYTHON SOURCE LINES 47-69
 
 .. code-block:: default
 
@@ -118,7 +119,7 @@ spotlights are involved in lighting.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-75
+.. GENERATED FROM PYTHON SOURCE LINES 70-76
 
 One thing to watch out for is that the light actors are represented such that
 their cone has a fixed height. This implies that for very large cone angles
@@ -127,7 +128,7 @@ camera position before rendering is usually a good idea. Increasing the first
 example's cone angle and omitting the manual camera positioning exemplifies
 the problem:
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-91
+.. GENERATED FROM PYTHON SOURCE LINES 76-92
 
 .. code-block:: default
 
@@ -162,7 +163,7 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.540 seconds)
+   **Total running time of the script:** ( 0 minutes  2.027 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

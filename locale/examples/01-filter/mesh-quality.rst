@@ -29,13 +29,11 @@ Here we will use the :func:`pyvista.DataSetFilters.compute_cell_quality` filter
 to compute the cell qualities. For a full list of the various quality metrics
 available, please refer to the documentation for that filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-23
+.. GENERATED FROM PYTHON SOURCE LINES 13-21
 
 .. code-block:: default
 
-    import pyvista as pv
     from pyvista import examples
-    import numpy as np
 
     mesh = examples.download_cow().triangulate().decimate(0.7)
 
@@ -50,11 +48,11 @@ available, please refer to the documentation for that filter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-25
+.. GENERATED FROM PYTHON SOURCE LINES 22-23
 
 Compute the cell quality. Note that there are many different quality measures
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 23-26
 
 .. code-block:: default
 
@@ -91,7 +89,7 @@ Compute the cell quality. Note that there are many different quality measures
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+.. GENERATED FROM PYTHON SOURCE LINES 27-28
 
 .. code-block:: default
 
@@ -111,7 +109,7 @@ Compute the cell quality. Note that there are many different quality measures
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.419 seconds)
+   **Total running time of the script:** ( 0 minutes  0.834 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_mesh-quality.py:

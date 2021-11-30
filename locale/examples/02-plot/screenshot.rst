@@ -21,14 +21,15 @@
 Saving Screenshots
 ~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 5-15
+.. GENERATED FROM PYTHON SOURCE LINES 5-16
 
 .. code-block:: default
+
+    import matplotlib.pyplot as plt
 
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
-    import matplotlib.pyplot as plt
 
     # Get a sample file
     filename = examples.planefile
@@ -42,12 +43,12 @@ Saving Screenshots
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-19
 
 You can also take a screenshot without creating an interactive plot window
 using the :class:`pyvista.Plotter`:
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-23
+.. GENERATED FROM PYTHON SOURCE LINES 19-24
 
 .. code-block:: default
 
@@ -59,29 +60,20 @@ using the :class:`pyvista.Plotter`:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_screenshot_001.png
-    :alt: screenshot
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3140.593704331348, 2919.620300400684, 2375.7925778512454),
-     (896.9955291748047, 676.0221252441406, 132.19440269470215),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_screenshot_001.png
+   :alt: screenshot
+   :srcset: /examples/02-plot/images/sphx_glr_screenshot_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-25
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 25-26
 
 The ``img`` array can be used to plot the screenshot in ``matplotlib``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 26-29
 
 .. code-block:: default
 
@@ -91,9 +83,10 @@ The ``img`` array can be used to plot the screenshot in ``matplotlib``:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_screenshot_002.png
-    :alt: screenshot
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_screenshot_002.png
+   :alt: screenshot
+   :srcset: /examples/02-plot/images/sphx_glr_screenshot_002.png
+   :class: sphx-glr-single-img
 
 
 
@@ -102,7 +95,7 @@ The ``img`` array can be used to plot the screenshot in ``matplotlib``:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.878 seconds)
+   **Total running time of the script:** ( 0 minutes  0.569 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_screenshot.py:

@@ -44,13 +44,15 @@ sphere.
    repeated collisions.  See the `Collision Detection Example
    <https://kitware.github.io/vtk-examples/site/Python/Visualization/CollisionDetection/>`_
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-36
+.. GENERATED FROM PYTHON SOURCE LINES 30-38
 
 .. code-block:: default
 
 
     import numpy as np
+
     import pyvista as pv
+
     pv.set_plot_theme("document")
 
 
@@ -61,14 +63,14 @@ sphere.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-41
+.. GENERATED FROM PYTHON SOURCE LINES 39-43
 
 Create the main mesh and the secondary "moving" mesh
 
 Collision faces will be plotted on this sphere, and to do so we
 initialize an initial ``"collisions"`` mask.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-47
+.. GENERATED FROM PYTHON SOURCE LINES 43-49
 
 .. code-block:: default
 
@@ -85,12 +87,12 @@ initialize an initial ``"collisions"`` mask.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-50
+.. GENERATED FROM PYTHON SOURCE LINES 50-52
 
 Setup the plotter open a movie, and write a frame after moving the sphere.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-78
+.. GENERATED FROM PYTHON SOURCE LINES 52-80
 
 .. code-block:: default
 
@@ -137,7 +139,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.995 seconds)
+   **Total running time of the script:** ( 0 minutes  9.384 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:

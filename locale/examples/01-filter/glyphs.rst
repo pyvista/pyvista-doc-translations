@@ -25,15 +25,16 @@ Plotting Glyphs (Vectors or PolyData)
 
 Use vectors in a dataset to plot and orient glyphs/geometric objects.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-15
+.. GENERATED FROM PYTHON SOURCE LINES 9-16
 
 .. code-block:: default
 
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
 
 
 
@@ -42,11 +43,11 @@ Use vectors in a dataset to plot and orient glyphs/geometric objects.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-17
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-37
+.. GENERATED FROM PYTHON SOURCE LINES 18-38
 
 .. code-block:: default
 
@@ -82,12 +83,12 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-40
+.. GENERATED FROM PYTHON SOURCE LINES 39-41
 
 Another approach is to load the vectors directly to the mesh object and then
 access the :attr:`pyvista.DataSet.arrows` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-59
+.. GENERATED FROM PYTHON SOURCE LINES 41-60
 
 .. code-block:: default
 
@@ -122,11 +123,11 @@ access the :attr:`pyvista.DataSet.arrows` property.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-61
+.. GENERATED FROM PYTHON SOURCE LINES 61-62
 
 Plot the arrows and the sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-69
+.. GENERATED FROM PYTHON SOURCE LINES 62-70
 
 .. code-block:: default
 
@@ -150,7 +151,7 @@ Plot the arrows and the sphere.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-77
+.. GENERATED FROM PYTHON SOURCE LINES 71-78
 
 Subset of Glyphs
 ++++++++++++++++
@@ -160,7 +161,7 @@ this case, you can choose to build glyphs for a subset of the input dataset
 by using a merging tolerance. Here we specify a merging tolerance of five
 percent which equates to five percent of the bounding box's length.
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-88
+.. GENERATED FROM PYTHON SOURCE LINES 78-89
 
 .. code-block:: default
 
@@ -190,7 +191,7 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.396 seconds)
+   **Total running time of the script:** ( 0 minutes  3.611 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:

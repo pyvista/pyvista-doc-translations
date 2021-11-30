@@ -26,11 +26,12 @@ Platonic Solids
 PyVista wraps the ``vtk.vtkPlatonicSolidSource`` filter as
 :func:`pyvista.PlatonicSolid`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
     import numpy as np
+
     import pyvista as pv
     from pyvista import examples
 
@@ -41,7 +42,7 @@ PyVista wraps the ``vtk.vtkPlatonicSolidSource`` filter as
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-27
+.. GENERATED FROM PYTHON SOURCE LINES 16-28
 
 We can either use the generic :func:`PlatonicSolid() <pyvista.PlatonicSolid>`
 and specify the different kinds of solids to generate, or we can use the thin
@@ -56,7 +57,7 @@ wrappers:
 Let's generate all the Platonic solids, along with the :func:`teapotahedron
 <pyvista.examples.downloads.download_teapot>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-56
+.. GENERATED FROM PYTHON SOURCE LINES 28-57
 
 .. code-block:: default
 
@@ -96,7 +97,7 @@ Let's generate all the Platonic solids, along with the :func:`teapotahedron
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-64
+.. GENERATED FROM PYTHON SOURCE LINES 58-65
 
 Now let's plot them all.
 
@@ -106,7 +107,7 @@ Now let's plot them all.
    parameter.  An initial window size of ``(1000, 1000)`` seems to
    work well, which can be manually resized without issue.
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-77
+.. GENERATED FROM PYTHON SOURCE LINES 65-78
 
 .. code-block:: default
 
@@ -135,7 +136,7 @@ Now let's plot them all.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-80
+.. GENERATED FROM PYTHON SOURCE LINES 79-81
 
 The Platonic solids come with cell scalars that index each face of the
 solids.
@@ -143,7 +144,7 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.181 seconds)
+   **Total running time of the script:** ( 0 minutes  1.458 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:

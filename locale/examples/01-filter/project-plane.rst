@@ -24,7 +24,7 @@ Project to a Plane
 :class:`pyvista.PolyData` surfaces and pointsets can easily be projected to a
 plane defined by a normal and origin
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-17
+.. GENERATED FROM PYTHON SOURCE LINES 8-16
 
 .. code-block:: default
 
@@ -33,36 +33,26 @@ plane defined by a normal and origin
     import pyvista as pv
     from pyvista import examples
 
-
     poly = examples.load_random_hills()
     poly.plot()
 
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_project-plane_001.png
-    :alt: project plane
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
-     (0.0, 9.99999977567765, 3.8123363107442856),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_001.png
+   :alt: project plane
+   :srcset: /examples/01-filter/images/sphx_glr_project-plane_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-19
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 Project that surface to a plane underneath the surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-28
+.. GENERATED FROM PYTHON SOURCE LINES 18-27
 
 .. code-block:: default
 
@@ -78,28 +68,19 @@ Project that surface to a plane underneath the surface
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_project-plane_002.png
-    :alt: project plane
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_002.png
+   :alt: project plane
+   :srcset: /examples/01-filter/images/sphx_glr_project-plane_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(34.913678491391046, 44.9136782670687, 35.691136920727594),
-     (0.0, 9.99999977567765, 0.7774584293365479),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.631 seconds)
+   **Total running time of the script:** ( 0 minutes  1.268 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_project-plane.py:

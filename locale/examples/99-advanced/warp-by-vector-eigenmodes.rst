@@ -34,12 +34,13 @@ First, let's solve the eigenvalue problem for a vibrating cube. We use
 a crude approximation (by choosing a low max polynomial order) to get a fast
 computation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-173
+.. GENERATED FROM PYTHON SOURCE LINES 18-174
 
 .. code-block:: default
 
     import numpy as np
     from scipy.linalg import eigh
+
     import pyvista as pv
 
 
@@ -216,11 +217,11 @@ computation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-175
+.. GENERATED FROM PYTHON SOURCE LINES 175-176
 
 Now, let's display a mode on a mesh of the cube.
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-215
+.. GENERATED FROM PYTHON SOURCE LINES 176-216
 
 .. code-block:: default
 
@@ -276,11 +277,11 @@ Now, let's display a mode on a mesh of the cube.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 216-217
+.. GENERATED FROM PYTHON SOURCE LINES 217-218
 
 Finally, let's make a gallery of the first 8 unique eigenmodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 217-231
+.. GENERATED FROM PYTHON SOURCE LINES 218-232
 
 .. code-block:: default
 
@@ -313,7 +314,7 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.870 seconds)
+   **Total running time of the script:** ( 0 minutes  10.338 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

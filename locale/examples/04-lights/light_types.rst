@@ -38,13 +38,14 @@ For headlights the :py:attr:`position` and :py:attr:`focal_point` properties
 are meaningless. No matter where you move the camera, the light always emanates
 from the view point:
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-39
+.. GENERATED FROM PYTHON SOURCE LINES 22-40
 
 .. code-block:: default
 
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
+
     mesh = examples.download_bunny()
     mesh.rotate_x(90)
     mesh.rotate_z(180)
@@ -71,7 +72,7 @@ from the view point:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-49
+.. GENERATED FROM PYTHON SOURCE LINES 41-50
 
 Camera light
 ============
@@ -83,7 +84,7 @@ and :py:attr:`world_focal_point` read-only properties, respectively. For specifi
 of the local coordinate system used for the coordinates please see the documentation
 of :func:`pyvista.Light.set_camera_light`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-58
+.. GENERATED FROM PYTHON SOURCE LINES 50-59
 
 .. code-block:: default
 
@@ -108,7 +109,7 @@ of :func:`pyvista.Light.set_camera_light`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-64
+.. GENERATED FROM PYTHON SOURCE LINES 60-65
 
 Scene light
 ===========
@@ -116,7 +117,7 @@ Scene light
 Scene lights are attached to the scene, their position and focal point are
 interpreted as global coordinates:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-71
+.. GENERATED FROM PYTHON SOURCE LINES 65-72
 
 .. code-block:: default
 
@@ -142,7 +143,7 @@ interpreted as global coordinates:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.746 seconds)
+   **Total running time of the script:** ( 0 minutes  3.075 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:

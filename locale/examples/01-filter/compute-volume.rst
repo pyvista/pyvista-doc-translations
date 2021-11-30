@@ -26,13 +26,14 @@ Volumetric Analysis
 
 Calculate mass properties such as the volume or area of datasets
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-16
 
 .. code-block:: default
 
 
     # sphinx_gallery_thumbnail_number = 4
     import numpy as np
+
     from pyvista import examples
 
 
@@ -42,7 +43,7 @@ Calculate mass properties such as the volume or area of datasets
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-21
+.. GENERATED FROM PYTHON SOURCE LINES 17-22
 
 Computing mass properties such as the volume or area of datasets in PyVista
 is quite easy using the :func:`pyvista.DataSetFilters.compute_cell_sizes`
@@ -50,7 +51,7 @@ filter and the :attr:`pyvista.DataSet.volume` property on all PyVista meshes.
 
 Let's get started with a simple gridded mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-26
+.. GENERATED FROM PYTHON SOURCE LINES 22-27
 
 .. code-block:: default
 
@@ -66,13 +67,13 @@ Let's get started with a simple gridded mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-30
+.. GENERATED FROM PYTHON SOURCE LINES 28-31
 
 We can then calculate the volume of every cell in the array using the
 ``.compute_cell_sizes`` filter which will add arrays to the cell data of the
 mesh core the volume and area by default.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-37
+.. GENERATED FROM PYTHON SOURCE LINES 31-38
 
 .. code-block:: default
 
@@ -90,12 +91,12 @@ mesh core the volume and area by default.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-40
+.. GENERATED FROM PYTHON SOURCE LINES 39-41
 
 We can also compute the total volume of the mesh using the ``.volume``
 property:
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+.. GENERATED FROM PYTHON SOURCE LINES 41-45
 
 .. code-block:: default
 
@@ -110,12 +111,12 @@ property:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-47
+.. GENERATED FROM PYTHON SOURCE LINES 46-48
 
 Okay awesome! But what if we have have a dataset that we threshold with two
 volumetric bodies left over in one dataset? Take this for example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-52
+.. GENERATED FROM PYTHON SOURCE LINES 48-53
 
 .. code-block:: default
 
@@ -136,13 +137,13 @@ volumetric bodies left over in one dataset? Take this for example:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-56
+.. GENERATED FROM PYTHON SOURCE LINES 54-57
 
 We could then assign a classification array for the two bodies, compute the
 cell sizes, then extract the volumes of each body. Note that there is a
 simpler implementation of this below in :ref:`split_vol_ref`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-76
+.. GENERATED FROM PYTHON SOURCE LINES 57-77
 
 .. code-block:: default
 
@@ -183,13 +184,13 @@ simpler implementation of this below in :ref:`split_vol_ref`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-80
+.. GENERATED FROM PYTHON SOURCE LINES 78-81
 
 Or better yet, you could simply extract the largest volume from your
 thresholded dataset by passing ``largest=True`` to the ``connectivity``
 filter or by using ``extract_largest`` filter (both are equivalent).
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-92
+.. GENERATED FROM PYTHON SOURCE LINES 81-93
 
 .. code-block:: default
 
@@ -217,7 +218,7 @@ filter or by using ``extract_largest`` filter (both are equivalent).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-106
+.. GENERATED FROM PYTHON SOURCE LINES 94-107
 
 -----
 
@@ -233,7 +234,7 @@ different connected volumes in a dataset into blocks in a
 :class:`pyvista.MultiBlock` dataset. For example, lets split the thresholded
 volume in the example above:
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-117
+.. GENERATED FROM PYTHON SOURCE LINES 107-118
 
 .. code-block:: default
 
@@ -264,7 +265,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-123
+.. GENERATED FROM PYTHON SOURCE LINES 119-124
 
 .. code-block:: default
 
@@ -285,7 +286,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-134
+.. GENERATED FROM PYTHON SOURCE LINES 125-135
 
 -----
 
@@ -298,7 +299,7 @@ significantly large body and compute the volumes for each!
 
 Load up the data and threshold the channels:
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-138
+.. GENERATED FROM PYTHON SOURCE LINES 135-139
 
 .. code-block:: default
 
@@ -313,11 +314,11 @@ Load up the data and threshold the channels:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-140
+.. GENERATED FROM PYTHON SOURCE LINES 140-141
 
 Now extract all the different bodies and compute their volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-152
+.. GENERATED FROM PYTHON SOURCE LINES 141-153
 
 .. code-block:: default
 
@@ -340,11 +341,11 @@ Now extract all the different bodies and compute their volumes:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-154
+.. GENERATED FROM PYTHON SOURCE LINES 154-155
 
 Print out the volumes for each body:
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-158
+.. GENERATED FROM PYTHON SOURCE LINES 155-159
 
 .. code-block:: default
 
@@ -387,11 +388,11 @@ Print out the volumes for each body:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-160
+.. GENERATED FROM PYTHON SOURCE LINES 160-161
 
 And visualize all the different volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-162
+.. GENERATED FROM PYTHON SOURCE LINES 161-163
 
 .. code-block:: default
 
@@ -412,7 +413,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.437 seconds)
+   **Total running time of the script:** ( 0 minutes  13.171 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

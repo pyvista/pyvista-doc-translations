@@ -25,12 +25,13 @@ Plot Truss-like FEA Solution with Cylinders
 
 Plot connections between points in 3D as cylinders, colored by scalars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-16
 
 .. code-block:: default
 
 
     import numpy as np
+
     import pyvista
 
 
@@ -40,12 +41,12 @@ Plot connections between points in 3D as cylinders, colored by scalars.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-19
 
 Define the points and elements of the truss.  Call them ``nodes``
 here as it comes from finite element analysis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-48
+.. GENERATED FROM PYTHON SOURCE LINES 19-49
 
 .. code-block:: default
 
@@ -102,11 +103,11 @@ here as it comes from finite element analysis.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-50
+.. GENERATED FROM PYTHON SOURCE LINES 50-51
 
 Plot the truss while rendering the lines as tubes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-61
+.. GENERATED FROM PYTHON SOURCE LINES 51-62
 
 .. code-block:: default
 
@@ -136,7 +137,7 @@ Plot the truss while rendering the lines as tubes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.500 seconds)
+   **Total running time of the script:** ( 0 minutes  0.559 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-truss.py:

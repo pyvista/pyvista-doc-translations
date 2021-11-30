@@ -25,7 +25,7 @@ Create a GIF Movie
 
 Generate a moving gif from an active plotter
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-46
+.. GENERATED FROM PYTHON SOURCE LINES 9-47
 
 
 
@@ -41,8 +41,9 @@ Generate a moving gif from an active plotter
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
     x = np.arange(-10, 10, 0.25)
     y = np.arange(-10, 10, 0.25)
@@ -81,7 +82,7 @@ Generate a moving gif from an active plotter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.462 seconds)
+   **Total running time of the script:** ( 0 minutes  4.425 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

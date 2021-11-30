@@ -25,15 +25,16 @@ Slicing
 
 Extract thin planar slices from a volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-15
+.. GENERATED FROM PYTHON SOURCE LINES 9-16
 
 .. code-block:: default
+
+    import matplotlib.pyplot as plt
+    import numpy as np
 
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
-    import matplotlib.pyplot as plt
-    import numpy as np
 
 
 
@@ -42,7 +43,7 @@ Extract thin planar slices from a volume.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-25
+.. GENERATED FROM PYTHON SOURCE LINES 17-26
 
 PyVista meshes have several slicing filters bound directly to all datasets.
 These filters allow you to slice through a volumetric dataset to extract and
@@ -54,7 +55,7 @@ orthogonal slices through the dataset parallel to the three Cartesian planes.
 For example, let's slice through the sample geostatistical training image
 volume. First, load up the volume and preview it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-33
+.. GENERATED FROM PYTHON SOURCE LINES 26-34
 
 .. code-block:: default
 
@@ -78,13 +79,13 @@ volume. First, load up the volume and preview it:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-37
+.. GENERATED FROM PYTHON SOURCE LINES 35-38
 
 Note that this dataset is a 3D volume and there might be regions within this
 volume that we would like to inspect. We can create slices through the mesh
 to gain further insight about the internals of the volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-43
+.. GENERATED FROM PYTHON SOURCE LINES 38-44
 
 .. code-block:: default
 
@@ -106,11 +107,11 @@ to gain further insight about the internals of the volume.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-45
+.. GENERATED FROM PYTHON SOURCE LINES 45-46
 
 The orthogonal slices can be easily translated throughout the volume:
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-48
+.. GENERATED FROM PYTHON SOURCE LINES 46-49
 
 .. code-block:: default
 
@@ -129,13 +130,13 @@ The orthogonal slices can be easily translated throughout the volume:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 We can also add just a single slice of the volume by specifying the origin
 and normal of the slicing plane with the :func:`pyvista.DataSetFilters.slice`
 filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-60
+.. GENERATED FROM PYTHON SOURCE LINES 53-61
 
 .. code-block:: default
 
@@ -159,12 +160,12 @@ filter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-63
+.. GENERATED FROM PYTHON SOURCE LINES 62-64
 
 Adding slicing planes uniformly across an axial direction can also be
 automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-69
+.. GENERATED FROM PYTHON SOURCE LINES 64-70
 
 .. code-block:: default
 
@@ -186,7 +187,7 @@ automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-80
+.. GENERATED FROM PYTHON SOURCE LINES 71-81
 
 Slice Along Line
 ++++++++++++++++
@@ -199,7 +200,7 @@ that this type of slicing is computationally expensive and might take a while
 if there are a lot of points in the line - try to keep the resolution of
 the line low.
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-98
+.. GENERATED FROM PYTHON SOURCE LINES 81-99
 
 .. code-block:: default
 
@@ -251,11 +252,11 @@ the line low.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-100
+.. GENERATED FROM PYTHON SOURCE LINES 100-101
 
 Then run the filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-103
+.. GENERATED FROM PYTHON SOURCE LINES 101-104
 
 .. code-block:: default
 
@@ -292,7 +293,7 @@ Then run the filter
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-111
+.. GENERATED FROM PYTHON SOURCE LINES 105-112
 
 .. code-block:: default
 
@@ -315,14 +316,14 @@ Then run the filter
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-116
+.. GENERATED FROM PYTHON SOURCE LINES 113-117
 
 Multiple Slices in Vector Direction
 +++++++++++++++++++++++++++++++++++
 
 Slice a mesh along a vector direction perpendicularly.
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-137
+.. GENERATED FROM PYTHON SOURCE LINES 117-138
 
 .. code-block:: default
 
@@ -354,7 +355,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-147
+.. GENERATED FROM PYTHON SOURCE LINES 139-148
 
 .. code-block:: default
 
@@ -379,7 +380,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-157
+.. GENERATED FROM PYTHON SOURCE LINES 149-158
 
 Slice At Different Bearings
 +++++++++++++++++++++++++++
@@ -391,7 +392,7 @@ around a user-chosen location.
 
 Create a point to orient slices around
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-160
+.. GENERATED FROM PYTHON SOURCE LINES 158-161
 
 .. code-block:: default
 
@@ -405,12 +406,12 @@ Create a point to orient slices around
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-163
+.. GENERATED FROM PYTHON SOURCE LINES 162-164
 
 Now generate a few normal vectors to rotate a slice around the z-axis.
 Use equation for circle since its about the Z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-172
+.. GENERATED FROM PYTHON SOURCE LINES 164-173
 
 .. code-block:: default
 
@@ -456,11 +457,11 @@ Use equation for circle since its about the Z-axis.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 173-174
+.. GENERATED FROM PYTHON SOURCE LINES 174-175
 
 And now display it!
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-178
+.. GENERATED FROM PYTHON SOURCE LINES 175-179
 
 .. code-block:: default
 
@@ -483,7 +484,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.649 seconds)
+   **Total running time of the script:** ( 0 minutes  24.470 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

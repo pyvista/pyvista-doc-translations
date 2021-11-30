@@ -26,14 +26,15 @@ Parallel Files
 The VTK library supports parallel file formats. Reading meshes broken up into
 several files is natively supported by VTK and PyVista.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-16
 
 .. code-block:: default
+
+    import os
 
     # sphinx_gallery_thumbnail_number = 1
     import pyvista as pv
     from pyvista import examples
-    import os
 
 
 
@@ -42,12 +43,12 @@ several files is natively supported by VTK and PyVista.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-19
 
 Let's go ahead and download the sample dataset containing an
 :class:`pyvista.UnstructuredGrid` broken up into several files.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-22
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 .. code-block:: default
 
@@ -89,7 +90,7 @@ Let's go ahead and download the sample dataset containing an
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-29
+.. GENERATED FROM PYTHON SOURCE LINES 24-30
 
 The above code downloaded a dataset containing a set of parallel files for a
 blood vessel mesh and returned an :class:`pyvista.UnstructuredGrid` - we did
@@ -98,7 +99,7 @@ of files.
 
 Let's inspect where this downloaded our dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-32
+.. GENERATED FROM PYTHON SOURCE LINES 30-33
 
 .. code-block:: default
 
@@ -116,11 +117,11 @@ Let's inspect where this downloaded our dataset:
  .. code-block:: none
 
 
-    ['T0000000500.pvtu', 'T0000000500']
+    ['T0000000500', 'T0000000500.pvtu']
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-35
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 .. code-block:: default
 
@@ -137,18 +138,18 @@ Let's inspect where this downloaded our dataset:
  .. code-block:: none
 
 
-    ['002.vtu', '003.vtu', '001.vtu', '000.vtu']
+    ['002.vtu', '000.vtu', '001.vtu', '003.vtu']
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-40
+.. GENERATED FROM PYTHON SOURCE LINES 37-41
 
 Note that a ``.pvtu`` file is available along side a directory. This
 directory contains all the parallel files or pieces that make the whole mesh.
 We can simply read the ``.pvtu`` file and VTK will handle putting the mesh
 together.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+.. GENERATED FROM PYTHON SOURCE LINES 41-45
 
 .. code-block:: default
 
@@ -190,11 +191,11 @@ together.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+.. GENERATED FROM PYTHON SOURCE LINES 46-47
 
 Plot the pieced together mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 47-50
 
 .. code-block:: default
 
@@ -213,7 +214,7 @@ Plot the pieced together mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-51
+.. GENERATED FROM PYTHON SOURCE LINES 51-52
 
 .. code-block:: default
 
@@ -233,7 +234,7 @@ Plot the pieced together mesh
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.077 seconds)
+   **Total running time of the script:** ( 0 minutes  1.921 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:

@@ -33,14 +33,15 @@ One particularly fun example is to use the line widget to create a source for
 the :func:`pyvista.DataSetFilters.streamlines` filter. Again note the use of
 the ``name`` argument in ``add_mesh``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-30
+.. GENERATED FROM PYTHON SOURCE LINES 17-31
 
 .. code-block:: default
 
 
+    import numpy as np
+
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
 
     pv.set_plot_theme('document')
 
@@ -57,7 +58,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-47
+.. GENERATED FROM PYTHON SOURCE LINES 32-48
 
 .. code-block:: default
 
@@ -89,7 +90,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 And here is a screen capture of a user interacting with this
 
@@ -98,7 +99,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.063 seconds)
+   **Total running time of the script:** ( 0 minutes  1.326 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:

@@ -24,13 +24,14 @@ Render a depth image
 Plot a depth image as viewed from a camera overlooking the "hills"
 example mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-22
+.. GENERATED FROM PYTHON SOURCE LINES 8-23
 
 .. code-block:: default
 
+    import matplotlib.pyplot as plt
+
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
-    import matplotlib.pyplot as plt
     from pyvista import examples
 
     # Load an interesting example of geometry
@@ -45,29 +46,20 @@ example mesh.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_image_depth_001.png
-    :alt: image depth
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
-     (0.0, 9.99999977567765, 3.8123363107442856),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_image_depth_001.png
+   :alt: image depth
+   :srcset: /examples/02-plot/images/sphx_glr_image_depth_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-24
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Record depth image without and with a custom fill value
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-27
+.. GENERATED FROM PYTHON SOURCE LINES 25-28
 
 .. code-block:: default
 
@@ -81,11 +73,11 @@ Record depth image without and with a custom fill value
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-29
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 Visualize depth images
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-37
+.. GENERATED FROM PYTHON SOURCE LINES 30-38
 
 .. code-block:: default
 
@@ -100,15 +92,16 @@ Visualize depth images
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_image_depth_002.png
-    :alt: Depth image
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_image_depth_002.png
+   :alt: Depth image
+   :srcset: /examples/02-plot/images/sphx_glr_image_depth_002.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-45
+.. GENERATED FROM PYTHON SOURCE LINES 39-46
 
 .. code-block:: default
 
@@ -122,9 +115,10 @@ Visualize depth images
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_image_depth_003.png
-    :alt: Depth image (custom fill_value)
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_image_depth_003.png
+   :alt: Depth image (custom fill_value)
+   :srcset: /examples/02-plot/images/sphx_glr_image_depth_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -133,7 +127,7 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.715 seconds)
+   **Total running time of the script:** ( 0 minutes  1.002 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:

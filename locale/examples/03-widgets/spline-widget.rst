@@ -33,13 +33,13 @@ path. To do this, we have added a convenient helper method which leverages the
 :func:`pyvista.DataSetFilters.slice_along_line` filter named
 :func:`pyvista.WidgetHelper.add_mesh_slice_spline`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+.. GENERATED FROM PYTHON SOURCE LINES 17-21
 
 .. code-block:: default
 
-    import pyvista as pv
     import numpy as np
 
+    import pyvista as pv
 
 
 
@@ -47,7 +47,8 @@ path. To do this, we have added a convenient helper method which leverages the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-38
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-39
 
 .. code-block:: default
 
@@ -71,28 +72,19 @@ path. To do this, we have added a convenient helper method which leverages the
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
-    :alt: spline widget
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
+   :alt: spline widget
+   :srcset: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.0, -42.0, 30.0),
-     (0.0, 0.0, 0.0),
-     (-0.09024398859970269, 0.5314368217538048, 0.8422772269305584)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.532 seconds)
+   **Total running time of the script:** ( 0 minutes  0.739 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_spline-widget.py:

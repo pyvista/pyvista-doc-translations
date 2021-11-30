@@ -25,15 +25,15 @@ Parametric Geometric Objects
 
 Creating parametric objects
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 12
-    import pyvista as pv
     from math import pi
 
+    # sphinx_gallery_thumbnail_number = 12
+    import pyvista as pv
 
 
 
@@ -41,14 +41,15 @@ Creating parametric objects
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+
+.. GENERATED FROM PYTHON SOURCE LINES 16-20
 
 This example demonstrates how to plot parametric objects using pyvista
 
 Supertoroid
 +++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-23
+.. GENERATED FROM PYTHON SOURCE LINES 20-24
 
 .. code-block:: default
 
@@ -59,30 +60,21 @@ Supertoroid
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.861253025523928, 4.861441853038577, 4.861253025523928),
-     (0.0, 0.0001888275146484375, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-26
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 25-27
 
 Parametric Ellipsoid
 ++++++++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-32
+.. GENERATED FROM PYTHON SOURCE LINES 27-33
 
 .. code-block:: default
 
@@ -95,30 +87,21 @@ Parametric Ellipsoid
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(27.315001924719024, 27.312485178198028, 27.312485178198028),
-     (0.0025167465209960938, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-35
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 Partial Parametric Ellipsoid
 ++++++++++++++++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-49
+.. GENERATED FROM PYTHON SOURCE LINES 36-50
 
 .. code-block:: default
 
@@ -139,30 +122,21 @@ Partial Parametric Ellipsoid
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(21.993, 21.181, -30.378),
-     (-1.164, -1.3098, -0.1061),
-     (0.8498535849578507, -0.2515158585748405, 0.4631292012167341)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 51-53
 
 Pseudosphere
 ++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-56
+.. GENERATED FROM PYTHON SOURCE LINES 53-57
 
 .. code-block:: default
 
@@ -173,30 +147,21 @@ Pseudosphere
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(9.462503792668267, 9.462755175257607, 9.462755175257607),
-     (-0.00025138258934020996, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-59
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-60
 
 Bohemian Dome
 +++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-64
+.. GENERATED FROM PYTHON SOURCE LINES 60-65
 
 .. code-block:: default
 
@@ -208,30 +173,21 @@ Bohemian Dome
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(5.110031624561594, 5.109779899245546, 5.110157494670198),
-     (-0.00012587010860443115, -0.0003775954246520996, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-67
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 66-68
 
 Bour
 ++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-71
+.. GENERATED FROM PYTHON SOURCE LINES 68-72
 
 .. code-block:: default
 
@@ -242,30 +198,21 @@ Bour
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.470163982016577, 4.844779532057776, 4.84779826889707),
-     (-0.37461555004119873, 0.0, 0.0030187368392944336),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 73-75
 
 Boy's Surface
 +++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-78
+.. GENERATED FROM PYTHON SOURCE LINES 75-79
 
 .. code-block:: default
 
@@ -276,30 +223,21 @@ Boy's Surface
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.496735663209918, 3.346730412040713, 3.8289746279463794),
-     (0.14987602829933167, -0.00012922286987304688, 0.4821149930357933),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-81
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 80-82
 
 Catalan Minimal
 +++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-85
+.. GENERATED FROM PYTHON SOURCE LINES 82-86
 
 .. code-block:: default
 
@@ -310,30 +248,21 @@ Catalan Minimal
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.542660281331067, 32.54206828799916, 31.542660519749646),
-     (0.0, 0.9994080066680908, 2.384185791015625e-07),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-88
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 87-89
 
 Conic Spiral
 ++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-92
+.. GENERATED FROM PYTHON SOURCE LINES 89-93
 
 .. code-block:: default
 
@@ -344,30 +273,21 @@ Conic Spiral
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.947212285780989, 1.9478484759569992, 2.297827556216799),
-     (0.04939731955528259, 0.050033509731292725, 0.4000125899910927),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-95
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 94-96
 
 Cross Cap
 +++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-99
+.. GENERATED FROM PYTHON SOURCE LINES 96-100
 
 .. code-block:: default
 
@@ -378,30 +298,21 @@ Cross Cap
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.8628927898895045, 3.8628927302848597, 3.8631445301067133),
-     (0.0, -5.960464477539063e-08, 0.0002517402172088623),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-102
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 101-103
 
 Dini
 ++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-106
+.. GENERATED FROM PYTHON SOURCE LINES 103-107
 
 .. code-block:: default
 
@@ -412,30 +323,21 @@ Dini
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(10.672493040603099, 10.6722411811766, 8.641864776652751),
-     (0.0002517104148864746, -1.4901161193847656e-07, -2.0303765535354614),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-109
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 108-110
 
 Enneper
 +++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-113
+.. GENERATED FROM PYTHON SOURCE LINES 110-114
 
 .. code-block:: default
 
@@ -446,30 +348,21 @@ Enneper
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(42.946638627281644, 0.0, 0.0),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-116
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 115-117
 
 Figure-8 Klein
 ++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 116-120
+.. GENERATED FROM PYTHON SOURCE LINES 117-121
 
 .. code-block:: default
 
@@ -480,30 +373,21 @@ Figure-8 Klein
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.471927580738704, 6.241271850968044, 6.241280195618312),
-     (0.23064738512039185, -8.344650268554688e-06, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-123
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 122-124
 
 Henneberg
 +++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 123-127
+.. GENERATED FROM PYTHON SOURCE LINES 124-128
 
 .. code-block:: default
 
@@ -514,30 +398,21 @@ Henneberg
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(30.00421257084943, 30.00421209401227, 30.002318335238467),
-     (0.0, -4.76837158203125e-07, -0.001894235610961914),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-130
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 129-131
 
 Klein
 +++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 130-134
+.. GENERATED FROM PYTHON SOURCE LINES 131-135
 
 .. code-block:: default
 
@@ -548,30 +423,21 @@ Klein
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(6.361395375111999, 8.311908181557236, 6.208944455960693),
-     (0.15245109796524048, 2.102963904410476, 1.7881393432617188e-07),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-137
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 136-138
 
 Kuen
 ++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-141
+.. GENERATED FROM PYTHON SOURCE LINES 138-142
 
 .. code-block:: default
 
@@ -582,30 +448,21 @@ Kuen
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(39.704327196761035, 40.19100275723543, 55.22279772250261),
-     (0.0, 0.48667556047439575, 15.518470525741577),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 142-144
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 143-145
 
 Mobius
 ++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-148
+.. GENERATED FROM PYTHON SOURCE LINES 145-149
 
 .. code-block:: default
 
@@ -616,30 +473,21 @@ Mobius
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(5.656253133787988, 5.208850894942163, 5.656253252997278),
-     (0.0, -0.4474022388458252, 1.1920928955078125e-07),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-151
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 150-152
 
 Plucker Conoid
 ++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-156
+.. GENERATED FROM PYTHON SOURCE LINES 152-157
 
 .. code-block:: default
 
@@ -651,30 +499,21 @@ Plucker Conoid
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(9.721636508639419, 9.722391699488723, 9.72163638943013),
-     (0.0, 0.0007551908493041992, -1.1920928955078125e-07),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-159
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 158-160
 
 Random Hills
 ++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-163
+.. GENERATED FROM PYTHON SOURCE LINES 160-164
 
 .. code-block:: default
 
@@ -685,30 +524,21 @@ Random Hills
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.59238063266725, 42.5923804083449, 36.404716943411536),
-     (0.0, 9.99999977567765, 3.8123363107442856),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-166
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 165-167
 
 Roman
 +++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 166-170
+.. GENERATED FROM PYTHON SOURCE LINES 167-171
 
 .. code-block:: default
 
@@ -719,30 +549,21 @@ Roman
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9315274394739659, 1.9315274394739659, 1.9315274394739659),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 171-173
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 172-174
 
 Super Ellipsoid
 +++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 173-177
+.. GENERATED FROM PYTHON SOURCE LINES 174-178
 
 .. code-block:: default
 
@@ -753,30 +574,21 @@ Super Ellipsoid
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(3.862698653641108, 3.862195322218302, 3.862698653641108),
-     (0.0, -0.0005033314228057861, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-180
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 179-181
 
 Torus
 +++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 180-184
+.. GENERATED FROM PYTHON SOURCE LINES 181-185
 
 .. code-block:: default
 
@@ -787,30 +599,21 @@ Torus
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(4.860818269572256, 4.861195864996908, 4.860818269572256),
-     (0.0, 0.0003775954246520996, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 185-187
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 186-188
 
 Circular Arc
 ++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 187-202
+.. GENERATED FROM PYTHON SOURCE LINES 188-203
 
 .. code-block:: default
 
@@ -832,30 +635,21 @@ Circular Arc
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-0.5000000000499987, 0.5, 2.7320508074322785),
-     (-0.5000000000499987, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 203-205
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 204-206
 
 Extruded Half Arc
 +++++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 205-214
+.. GENERATED FROM PYTHON SOURCE LINES 206-215
 
 .. code-block:: default
 
@@ -871,28 +665,19 @@ Extruded Half Arc
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
-    :alt: create parametric geometric objects
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
+   :alt: create parametric geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(2.7320508075688776, 2.2320508075688776, 3.2320508075688776),
-     (0.0, -0.5, 0.5),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.153 seconds)
+   **Total running time of the script:** ( 0 minutes  11.017 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-parametric-geometric-objects.py:

@@ -27,9 +27,14 @@ Create an explicit structured grid from NumPy arrays.
 
 Note this feature is only available for ``vtk>=9``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-44
+.. GENERATED FROM PYTHON SOURCE LINES 12-45
 
 
+
+.. image-sg:: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
+   :alt: create explicit structured grid
+   :srcset: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
+   :class: sphx-glr-single-img
 
 
 
@@ -39,6 +44,7 @@ Note this feature is only available for ``vtk>=9``.
 
 
     import numpy as np
+
     import pyvista as pv
 
     ni, nj, nk = 4, 5, 6
@@ -73,7 +79,7 @@ Note this feature is only available for ``vtk>=9``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.002 seconds)
+   **Total running time of the script:** ( 0 minutes  2.559 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-explicit-structured-grid.py:

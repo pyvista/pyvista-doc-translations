@@ -30,11 +30,11 @@ Create a StructuredGrid surface from NumPy arrays
 .. code-block:: default
 
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
-
 
 
 
@@ -85,21 +85,12 @@ Now pass the NumPy meshgrid to PyVista
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -114,21 +105,12 @@ Now pass the NumPy meshgrid to PyVista
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -221,11 +203,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -41.53356551, -284.28635117,    1.61281623],
-                     [ -27.54691731, -273.89894951,    2.26188113],
-                     [ -16.57226444, -265.74845299,    2.88731261],
-                     [  -3.88738588, -256.32783078,    3.74049051],
-                     [   8.15506294, -247.38431901,    4.67343744]])
+    pyvista_ndarray([[ -37.72556416, -277.93976454,    1.95713886],
+                     [ -25.60105441, -268.93530895,    2.60150329],
+                     [ -16.82558172, -262.41806777,    3.15141974],
+                     [  -4.76843347, -253.46363923,    4.0222541 ],
+                     [   5.19213875, -246.06626547,    4.83747031]])
 
 
 
@@ -255,9 +237,10 @@ Let's preview the points to see what we are dealing with:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_003.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_003.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_003.png
+   :class: sphx-glr-single-img
 
 
 
@@ -296,21 +279,12 @@ dimensionality of structured grid including:
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.4933027590957977, -2.4461332311951764, 1603.5158232809235),
-     (1.4933027590957977, -2.4461332311951764, 50.749858536694575),
-     (0.0, 1.0, 0.0)]
 
 
 
@@ -339,21 +313,12 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(31.107430113485155, 31.107430113485155, 31.232431754442583),
-     (-0.125, -0.125, 1.6409574268849703e-06),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -372,28 +337,19 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
-    :alt: create structured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
+   :alt: create structured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(33.35655554014341, 33.35655554014341, 28.98155188746257),
-     (-0.125, -0.125, -4.500003652680841),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.886 seconds)
+   **Total running time of the script:** ( 0 minutes  2.746 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

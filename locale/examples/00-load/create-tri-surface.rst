@@ -25,15 +25,15 @@ Create Triangulated Surface
 
 Create a surface from a set of points through a Delaunay triangulation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
-    import pyvista as pv
     import numpy as np
 
+    # sphinx_gallery_thumbnail_number = 2
+    import pyvista as pv
 
 
 
@@ -41,14 +41,15 @@ Create a surface from a set of points through a Delaunay triangulation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+
+.. GENERATED FROM PYTHON SOURCE LINES 16-20
 
 Simple Triangulations
 +++++++++++++++++++++
 
 First, create some points for the surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-32
+.. GENERATED FROM PYTHON SOURCE LINES 20-33
 
 .. code-block:: default
 
@@ -76,20 +77,20 @@ First, create some points for the surface.
  .. code-block:: none
 
 
-    array([[-198.16064669, -199.27285558,    1.92765559],
-           [-177.38686784, -199.27285558,    2.84732966],
-           [-153.1313395 , -199.27285558,    4.25130622],
-           [-139.70644386, -199.27285558,    5.17475562],
-           [-114.59467135, -199.27285558,    7.12129579]])
+    array([[-200.81584333, -204.86195827,    1.63296755],
+           [-183.28337759, -204.86195827,    2.28669893],
+           [-159.68877634, -204.86195827,    3.42713222],
+           [-136.24312021, -204.86195827,    4.8483561 ],
+           [-119.52397694, -204.86195827,    6.00414483]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-35
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 Now use those points to create a point cloud PyVista data object. This will
 be encompassed in a :class:`pyvista.PolyData` object.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-40
+.. GENERATED FROM PYTHON SOURCE LINES 36-41
 
 .. code-block:: default
 
@@ -110,12 +111,12 @@ be encompassed in a :class:`pyvista.PolyData` object.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 Now that we have a PyVista data structure of the points, we can perform a
 triangulation to turn those boring discrete points into a connected surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-48
+.. GENERATED FROM PYTHON SOURCE LINES 44-49
 
 .. code-block:: default
 
@@ -136,13 +137,13 @@ triangulation to turn those boring discrete points into a connected surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 Masked Triangulations
 +++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-65
+.. GENERATED FROM PYTHON SOURCE LINES 53-66
 
 .. code-block:: default
 
@@ -172,8 +173,8 @@ Masked Triangulations
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>100</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
-    <tr><td>X Bounds</td><td>6.109e-02, 9.267e+00</td></tr>
-    <tr><td>Y Bounds</td><td>1.550e-03, 9.297e+00</td></tr>
+    <tr><td>X Bounds</td><td>3.277e-02, 9.268e+00</td></tr>
+    <tr><td>Y Bounds</td><td>9.584e-02, 9.218e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -183,11 +184,11 @@ Masked Triangulations
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-67
+.. GENERATED FROM PYTHON SOURCE LINES 67-68
 
 Run the triangulation on these points
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-71
+.. GENERATED FROM PYTHON SOURCE LINES 68-72
 
 .. code-block:: default
 
@@ -207,12 +208,12 @@ Run the triangulation on these points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-74
+.. GENERATED FROM PYTHON SOURCE LINES 73-75
 
 Note that some of the outer edges are unconstrained and the triangulation
 added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-78
+.. GENERATED FROM PYTHON SOURCE LINES 75-79
 
 .. code-block:: default
 
@@ -232,12 +233,12 @@ added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-81
+.. GENERATED FROM PYTHON SOURCE LINES 80-82
 
 We could also add a polygon to ignore during the triangulation via the
 ``edge_source`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-98
+.. GENERATED FROM PYTHON SOURCE LINES 82-99
 
 .. code-block:: default
 
@@ -273,7 +274,7 @@ We could also add a polygon to ignore during the triangulation via the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.772 seconds)
+   **Total running time of the script:** ( 0 minutes  1.961 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:

@@ -53,13 +53,14 @@ Example A
 
 Use a single sphere widget
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-46
+.. GENERATED FROM PYTHON SOURCE LINES 24-47
 
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
     # Create a triangle surface
     surf = pv.PolyData()
@@ -82,44 +83,36 @@ Use a single sphere widget
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_sphere-widget_001.png
-    :alt: sphere widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(27.781683096151145, 32.53341726348856, 23.031683096151145),
-     (0.0, 5.0, -5.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_001.png
+   :alt: sphere widget
+   :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-50
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-a.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-57
+.. GENERATED FROM PYTHON SOURCE LINES 54-58
 
 Example B
 +++++++++
 
 Use several sphere widgets at once
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-80
+.. GENERATED FROM PYTHON SOURCE LINES 58-82
 
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
 
     # Create a triangle surface
     surf = pv.PolyData()
@@ -143,31 +136,22 @@ Use several sphere widgets at once
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_sphere-widget_002.png
-    :alt: sphere widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(35.317275696613656, 35.317275696613656, 30.317275696613656),
-     (0.0, 0.0, -5.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_002.png
+   :alt: sphere widget
+   :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-84
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 83-86
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-b.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-91
+.. GENERATED FROM PYTHON SOURCE LINES 88-93
 
 Example C
 +++++++++
@@ -175,18 +159,21 @@ Example C
 This one is the coolest - use four sphere widgets to update perturbations on
 a surface and interpolate between them with some boundary conditions
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-138
+.. GENERATED FROM PYTHON SOURCE LINES 93-143
 
 .. code-block:: default
 
 
-    from scipy.interpolate import griddata
     import numpy as np
+    from scipy.interpolate import griddata
+
     import pyvista as pv
+
 
     def get_colors(n):
         """A helper function to get n colors"""
         from itertools import cycle
+
         import matplotlib
         cycler = matplotlib.rcParams['axes.prop_cycle']
         colors = cycle(cycler)
@@ -233,7 +220,7 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-155
+.. GENERATED FROM PYTHON SOURCE LINES 144-160
 
 .. code-block:: default
 
@@ -256,25 +243,16 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_sphere-widget_003.png
-    :alt: sphere widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(216.9476807472315, 216.9476807472315, 190.4300322864843),
-     (50.0, 50.0, 22.829458981693524),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_003.png
+   :alt: sphere widget
+   :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-159
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 161-164
 
 And here is a screen capture of a user interacting with this
 
@@ -283,7 +261,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.155 seconds)
+   **Total running time of the script:** ( 0 minutes  1.711 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:

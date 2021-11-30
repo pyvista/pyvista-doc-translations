@@ -33,15 +33,16 @@ The modeling results are courtesy of `Urruty Benoit <https://github.com/BenoitUR
 and  are from the `Elmer/Ice <http://elmerice.elmerfem.org>`_ simulation
 software.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-29
+.. GENERATED FROM PYTHON SOURCE LINES 18-30
 
 .. code-block:: default
 
 
+    import numpy as np
+
     # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
-    import numpy as np
 
     # Load the sample data
     mesh = examples.download_antarctica_velocity()
@@ -80,11 +81,11 @@ software.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-31
+.. GENERATED FROM PYTHON SOURCE LINES 31-32
 
 Here is a helper to extract regions of the mesh based on the simulation node.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+.. GENERATED FROM PYTHON SOURCE LINES 32-37
 
 .. code-block:: default
 
@@ -100,7 +101,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-47
+.. GENERATED FROM PYTHON SOURCE LINES 38-48
 
 .. code-block:: default
 
@@ -126,7 +127,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-53
+.. GENERATED FROM PYTHON SOURCE LINES 49-54
 
 .. code-block:: default
 
@@ -147,7 +148,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-58
+.. GENERATED FROM PYTHON SOURCE LINES 55-59
 
 .. code-block:: default
 
@@ -162,7 +163,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-65
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
 .. code-block:: default
 
@@ -184,11 +185,11 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-67
+.. GENERATED FROM PYTHON SOURCE LINES 67-68
 
 plot vectors without mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-77
+.. GENERATED FROM PYTHON SOURCE LINES 68-78
 
 .. code-block:: default
 
@@ -214,12 +215,12 @@ plot vectors without mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-80
+.. GENERATED FROM PYTHON SOURCE LINES 79-81
 
 Compare directions. Normalize them so we can get a reasonable direction
 comparison.
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-98
+.. GENERATED FROM PYTHON SOURCE LINES 81-99
 
 .. code-block:: default
 
@@ -253,11 +254,11 @@ comparison.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-100
+.. GENERATED FROM PYTHON SOURCE LINES 100-101
 
 flow_a that agrees with the mean flow path of flow_b
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-108
+.. GENERATED FROM PYTHON SOURCE LINES 101-109
 
 .. code-block:: default
 
@@ -281,7 +282,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-116
+.. GENERATED FROM PYTHON SOURCE LINES 110-117
 
 .. code-block:: default
 
@@ -307,7 +308,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.034 seconds)
+   **Total running time of the script:** ( 0 minutes  12.665 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_antarctica-compare.py:

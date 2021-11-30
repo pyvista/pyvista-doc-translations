@@ -28,14 +28,16 @@ Create a voxel model (like legos) of a closed surface or volumetric mesh.
 This example also demonstrates how to compute an implicit distance from a
 bounding :class:`pyvista.PolyData` surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-22
+.. GENERATED FROM PYTHON SOURCE LINES 13-24
 
 .. code-block:: default
 
+    import numpy as np
+
+    import pyvista as pv
+
     # sphinx_gallery_thumbnail_number = 2
     from pyvista import examples
-    import pyvista as pv
-    import numpy as np
 
     # Load a surface to voxelize
     surface = examples.download_foot_bones()
@@ -65,7 +67,7 @@ bounding :class:`pyvista.PolyData` surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-30
+.. GENERATED FROM PYTHON SOURCE LINES 25-32
 
 .. code-block:: default
 
@@ -88,11 +90,11 @@ bounding :class:`pyvista.PolyData` surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-32
+.. GENERATED FROM PYTHON SOURCE LINES 33-34
 
 Create a voxel model of the bounding surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-40
+.. GENERATED FROM PYTHON SOURCE LINES 34-42
 
 .. code-block:: default
 
@@ -116,13 +118,13 @@ Create a voxel model of the bounding surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-44
+.. GENERATED FROM PYTHON SOURCE LINES 43-46
 
 We could even add a scalar field to that new voxel model in case we
 wanted to create grids for modelling. In this case, let's add a scalar field
 for bone density noting:
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 46-49
 
 .. code-block:: default
 
@@ -161,7 +163,7 @@ for bone density noting:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 .. code-block:: default
 
@@ -180,12 +182,12 @@ for bone density noting:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-54
+.. GENERATED FROM PYTHON SOURCE LINES 54-56
 
 A constant scalar field is kind of boring, so let's get a little fancier by
 added a scalar field that varies by the distance from the bounding surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-57
+.. GENERATED FROM PYTHON SOURCE LINES 56-59
 
 .. code-block:: default
 
@@ -225,7 +227,7 @@ added a scalar field that varies by the distance from the bounding surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-64
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
 .. code-block:: default
 
@@ -250,7 +252,7 @@ added a scalar field that varies by the distance from the bounding surface.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.339 seconds)
+   **Total running time of the script:** ( 0 minutes  11.849 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_voxelize.py:

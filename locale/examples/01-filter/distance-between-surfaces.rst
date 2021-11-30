@@ -34,12 +34,14 @@ distance along the surface normals. Second, we will use a KDTree to compute
 the distance from every point in the bottom mesh to it's closest point in
 the top mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-35
+.. GENERATED FROM PYTHON SOURCE LINES 18-37
 
 .. code-block:: default
 
-    import pyvista as pv
     import numpy as np
+
+    import pyvista as pv
+
 
     # A helper to make a random surface
     def hill(seed):
@@ -62,7 +64,7 @@ the top mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-43
+.. GENERATED FROM PYTHON SOURCE LINES 38-45
 
 .. code-block:: default
 
@@ -76,32 +78,23 @@ the top mesh.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
-    :alt: distance between surfaces
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
-     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
+   :alt: distance between surfaces
+   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-48
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 46-50
 
 Ray Tracing Distance
 ++++++++++++++++++++
 
 Compute normals of lower surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 .. code-block:: default
 
@@ -115,12 +108,12 @@ Compute normals of lower surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-54
+.. GENERATED FROM PYTHON SOURCE LINES 54-56
 
 Travel along normals to the other surface and compute the thickness on each
 vector.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-70
+.. GENERATED FROM PYTHON SOURCE LINES 56-72
 
 .. code-block:: default
 
@@ -151,11 +144,11 @@ vector.
  .. code-block:: none
 
 
-    5.143716063834265
+    5.144072866943829
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-77
+.. GENERATED FROM PYTHON SOURCE LINES 73-79
 
 .. code-block:: default
 
@@ -168,25 +161,16 @@ vector.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
-    :alt: distance between surfaces
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
-     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
+   :alt: distance between surfaces
+   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-85
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 80-87
 
 Nearest Neighbor Distance
 +++++++++++++++++++++++++
@@ -196,7 +180,7 @@ upper surface and the nearest neighbor of the lower surface.
 This won't be the exact surface to surface distance, but it will be
 noticeably faster than a ray trace, especially for large surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-92
+.. GENERATED FROM PYTHON SOURCE LINES 87-94
 
 .. code-block:: default
 
@@ -222,7 +206,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-97
+.. GENERATED FROM PYTHON SOURCE LINES 95-99
 
 .. code-block:: default
 
@@ -233,28 +217,19 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
-    :alt: distance between surfaces
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
+   :alt: distance between surfaces
+   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(32.92590180940077, 43.08139643188071, 35.881717899507734),
-     (-0.15549468994140625, 9.999999932538536, 2.800321400165558),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.482 seconds)
+   **Total running time of the script:** ( 0 minutes  2.662 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

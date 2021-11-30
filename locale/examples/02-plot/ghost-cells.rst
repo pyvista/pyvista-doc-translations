@@ -33,9 +33,9 @@ for this to work (use the ``cast_to_unstructured_grid`` filter).
 
 .. code-block:: default
 
-    import pyvista as pv
-    from pyvista import examples
     import numpy as np
+
+    from pyvista import examples
 
     vol = examples.load_channels()
     mesh = vol.cast_to_unstructured_grid()
@@ -66,7 +66,31 @@ or manually create this array to hide specific cells).
 
 
 
+.. raw:: html
 
+    <div class="output_subarea output_html rendered_html output_result">
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>1065589</td></tr>
+    <tr><td>N Points</td><td>1336015</td></tr>
+    <tr><td>X Bounds</td><td>0.000e+00, 2.500e+02</td></tr>
+    <tr><td>Y Bounds</td><td>0.000e+00, 2.500e+02</td></tr>
+    <tr><td>Z Bounds</td><td>0.000e+00, 1.000e+02</td></tr>
+    <tr><td>N Arrays</td><td>2</td></tr>
+    </table>
+
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td>facies</td><td>Cells</td><td>int64</td><td>1</td><td>1.000e+00</td><td>4.000e+00</td></tr>
+    <tr><td><b>vtkGhostType</b></td><td>Cells</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>0.000e+00</td></tr>
+    </table>
+
+    </td></tr> </table>
+    </div>
+    <br />
+    <br />
 
 .. GENERATED FROM PYTHON SOURCE LINES 29-30
 
@@ -80,28 +104,19 @@ Now we can plot the mesh and those cells will be hidden
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_ghost-cells_001.png
-    :alt: ghost cells
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_ghost-cells_001.png
+   :alt: ghost cells
+   :srcset: /examples/02-plot/images/sphx_glr_ghost-cells_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(534.8076211353316, 534.8076211353316, 459.80762113533166),
-     (125.0, 125.0, 50.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.807 seconds)
+   **Total running time of the script:** ( 0 minutes  5.680 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ghost-cells.py:

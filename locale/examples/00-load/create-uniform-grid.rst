@@ -23,14 +23,14 @@ Creating a Uniform Grid
 
 Create a simple uniform grid from a 3D NumPy array of values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 8-13
 
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
 
+    import pyvista as pv
 
 
 
@@ -38,20 +38,21 @@ Create a simple uniform grid from a 3D NumPy array of values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-17
+
+.. GENERATED FROM PYTHON SOURCE LINES 14-18
 
 Take a 3D NumPy array of data values that holds some spatial data where each
 axis corresponds to the XYZ cartesian axes. This example will create a
 :class:`pyvista.UniformGrid` object that will hold the spatial reference for
 a 3D grid which a 3D NumPy array of values can be plotted against.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-22
+.. GENERATED FROM PYTHON SOURCE LINES 20-23
 
 Create the 3D NumPy array of spatially referenced data.
 This is spatially referenced such that the grid is 20 by 5 by 10
 (nx by ny by nz)
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-43
+.. GENERATED FROM PYTHON SOURCE LINES 23-44
 
 .. code-block:: default
 
@@ -88,13 +89,13 @@ This is spatially referenced such that the grid is 20 by 5 by 10
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 45-48
 
 Don't like cell data? You could also add the NumPy array to the point data of
 a :class:`pyvista.UniformGrid`. Take note of the subtle difference when
 setting the grid dimensions upon initialization.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-70
+.. GENERATED FROM PYTHON SOURCE LINES 48-71
 
 .. code-block:: default
 
@@ -136,7 +137,7 @@ setting the grid dimensions upon initialization.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.056 seconds)
+   **Total running time of the script:** ( 0 minutes  1.306 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-uniform-grid.py:

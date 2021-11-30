@@ -31,9 +31,9 @@ up. This example demonstrates this functionality.
 .. code-block:: default
 
 
-    import pyvista as pv
     import numpy as np
 
+    import pyvista as pv
 
 
 
@@ -106,7 +106,7 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.787 seconds)
+   **Total running time of the script:** ( 0 minutes  1.822 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:

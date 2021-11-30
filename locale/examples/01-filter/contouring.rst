@@ -28,14 +28,14 @@ Generate iso-lines or -surfaces for the scalars of a surface or volume.
 3D meshes can have 2D iso-surfaces of a scalar field extracted and 2D surface
 meshes can have 1D iso-lines of a scalar field extracted.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-18
+.. GENERATED FROM PYTHON SOURCE LINES 12-17
 
 .. code-block:: default
 
-    from pyvista import examples
-    import pyvista as pv
     import numpy as np
 
+    import pyvista as pv
+    from pyvista import examples
 
 
 
@@ -44,15 +44,14 @@ meshes can have 1D iso-lines of a scalar field extracted.
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 19-23
+.. GENERATED FROM PYTHON SOURCE LINES 18-22
 
 Iso-Lines
 +++++++++
 
 Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-33
+.. GENERATED FROM PYTHON SOURCE LINES 22-32
 
 .. code-block:: default
 
@@ -78,14 +77,14 @@ Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Iso-Surfaces
 ++++++++++++
 
 Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-49
+.. GENERATED FROM PYTHON SOURCE LINES 37-48
 
 .. code-block:: default
 
@@ -115,7 +114,7 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.397 seconds)
+   **Total running time of the script:** ( 0 minutes  5.984 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:

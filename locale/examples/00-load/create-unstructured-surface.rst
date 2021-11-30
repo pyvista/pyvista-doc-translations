@@ -25,14 +25,15 @@ Creating an Unstructured Grid
 
 Create an irregular, unstructured grid from NumPy arrays.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
 
-    import pyvista as pv
-    import vtk
     import numpy as np
+    import vtk
+
+    import pyvista as pv
 
 
 
@@ -41,14 +42,14 @@ Create an irregular, unstructured grid from NumPy arrays.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+.. GENERATED FROM PYTHON SOURCE LINES 16-20
 
 An unstructured grid can be created directly from NumPy arrays.
 This is useful when creating a grid from scratch or copying it from another
 format.  See `vtkUnstructuredGrid <https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_
 for available cell types and their descriptions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-76
+.. GENERATED FROM PYTHON SOURCE LINES 20-77
 
 .. code-block:: default
 
@@ -112,15 +113,25 @@ for available cell types and their descriptions.
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-unstructured-surface_001.png
-    :alt: create unstructured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-unstructured-surface_001.png
+   :alt: create unstructured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-unstructured-surface_001.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:65: UserWarning: VTK 9 no longer accepts an offset array
+      grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
 
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 77-82
+.. GENERATED FROM PYTHON SOURCE LINES 78-83
 
 UnstructuredGrid with Shared Points
 -----------------------------------
@@ -128,7 +139,7 @@ UnstructuredGrid with Shared Points
 The next example again creates an unstructured grid containing
 hexahedral cells, but using common points between the cells.
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-145
+.. GENERATED FROM PYTHON SOURCE LINES 83-146
 
 .. code-block:: default
 
@@ -210,11 +221,11 @@ hexahedral cells, but using common points between the cells.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-147
+.. GENERATED FROM PYTHON SOURCE LINES 147-148
 
 Finally, create the unstructured grid and plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-160
+.. GENERATED FROM PYTHON SOURCE LINES 148-161
 
 .. code-block:: default
 
@@ -234,10 +245,20 @@ Finally, create the unstructured grid and plot it
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-unstructured-surface_002.png
-    :alt: create unstructured surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-unstructured-surface_002.png
+   :alt: create unstructured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-unstructured-surface_002.png
+   :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:153: UserWarning: VTK 9 no longer accepts an offset array
+      grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
 
 
 
@@ -245,7 +266,7 @@ Finally, create the unstructured grid and plot it
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.312 seconds)
+   **Total running time of the script:** ( 0 minutes  0.939 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:
