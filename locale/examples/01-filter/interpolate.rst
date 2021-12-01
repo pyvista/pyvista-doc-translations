@@ -57,7 +57,7 @@ Resample the points' arrays onto a surface
     points = examples.download_sparse_points()
 
     p = pv.Plotter()
-    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
+    p.add_mesh(points, scalars="val", point_size=30.0, render_points_as_spheres=True)
     p.add_mesh(surface)
     p.show()
 
@@ -86,7 +86,7 @@ Run the interpolation
 
 
     p = pv.Plotter()
-    p.add_mesh(points, point_size=30.0, render_points_as_spheres=True)
+    p.add_mesh(points, scalars="val", point_size=30.0, render_points_as_spheres=True)
     p.add_mesh(interpolated, scalars="val")
     p.show()
 
@@ -227,7 +227,7 @@ Visualize the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.183 seconds)
+   **Total running time of the script:** ( 0 minutes  13.859 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:
