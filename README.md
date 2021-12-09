@@ -23,6 +23,8 @@ translated docs for pyvista official document
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
 This is a project to provide pyvista official documentation with multiple versions and multiple languages on Read The Docs site.
 
 Current procedure is bit tricky because Read The Docs doesn't have a way to specify options for sphinx-build command.
