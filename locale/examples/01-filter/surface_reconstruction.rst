@@ -24,7 +24,7 @@ Surface Reconstruction
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Surface reconstruction has a dedicated filter in PyVista and is
-handled by :func:`pyvista.DataSetFilters.reconstruct_surface`.  This
+handled by :func:`pyvista.PolyDataFilters.reconstruct_surface`.  This
 tends to perform much better than :func:`DataSetFilters.delaunay_3d`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-14
@@ -108,7 +108,7 @@ Plot the point cloud and the reconstructed sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.420 seconds)
+   **Total running time of the script:** ( 0 minutes  0.704 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface_reconstruction.py:

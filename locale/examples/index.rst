@@ -800,7 +800,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extracts edges from a surface.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract edges from a surface.">
 
 .. only:: html
 
@@ -1262,7 +1262,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Surface reconstruction has a dedicated filter in PyVista and is handled by pyvista.DataSetFilte...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Surface reconstruction has a dedicated filter in PyVista and is handled by pyvista.PolyDataFilt...">
 
 .. only:: html
 

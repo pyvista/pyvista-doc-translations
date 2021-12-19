@@ -23,7 +23,7 @@
 Extract Edges
 ~~~~~~~~~~~~~
 
-Extracts edges from a surface.
+Extract edges from a surface.
 
 .. GENERATED FROM PYTHON SOURCE LINES 9-14
 
@@ -41,7 +41,7 @@ Extracts edges from a surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-25
+.. GENERATED FROM PYTHON SOURCE LINES 15-27
 
 From vtk documentation, the edges of a mesh are one of the following:
 
@@ -50,28 +50,28 @@ From vtk documentation, the edges of a mesh are one of the following:
 3. feature edges (edges used by two triangles and whose dihedral angle > feature_angle)
 4. manifold edges (edges used by exactly two polygons).
 
-This filter will extract those edges given a feature angle and return a dataset
+The :func:`extract_feature_edges() <pyvista.PolyDataFilters.extract_feature_edges>`
+filter will extract those edges given a feature angle and return a dataset
 with lines that represent the edges of the original mesh.
-To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-40
+To demonstrate, we will first extract the edges around a sample CAD model:
+
+.. GENERATED FROM PYTHON SOURCE LINES 27-40
 
 .. code-block:: default
 
 
-    # Load Queen Nefertiti mesh
-    mesh = examples.download_nefertiti()
+    # Download the example CAD model and extract all feature edges above 45 degrees
+    mesh = examples.download_cad_model()
+    edges = mesh.extract_feature_edges(45)
 
-    # Extract the edges above a 12 degree feature angle
-    edges = mesh.extract_feature_edges(12)
-
-    # Render the edge lines on top of the original mesh
+    # Render the edge lines on top of the original mesh.  Zoom in to provide a better figure.
     p = pv.Plotter()
     p.add_mesh(mesh, color=True)
     p.add_mesh(edges, color="red", line_width=5)
-    # Define a camera position that will zoom to her eye
-    p.camera_position = [(96.0, -197.0, 45.0), (7.0, -109.0, 22.0), (0, 0, 1)]
+    p.camera.zoom(1.5)
     p.show()
+
 
 
 
@@ -90,13 +90,12 @@ To demonstrate, we will first extract the edges around Queen Nefertiti's eyes:
 We can do this analysis for any :class:`pyvista.PolyData` object. Let's try
 the cow mesh example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-55
+.. GENERATED FROM PYTHON SOURCE LINES 43-54
 
 .. code-block:: default
 
 
     mesh = examples.download_cow()
-
     edges = mesh.extract_feature_edges(20)
 
     p = pv.Plotter()
@@ -118,26 +117,44 @@ the cow mesh example:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-59
+.. GENERATED FROM PYTHON SOURCE LINES 55-58
 
 We can leverage the :any:`pyvista.PolyData.n_open_edges` property and
 :func:`pyvista.PolyDataFilters.extract_feature_edges` filter to count and extract the
 open edges on a :class:`pyvista.PolyData` mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-63
+.. GENERATED FROM PYTHON SOURCE LINES 58-63
 
 .. code-block:: default
 
 
     # Download a sample surface mesh with visible open edges
     mesh = examples.download_bunny()
+    mesh
 
 
 
 
 
 
+.. raw:: html
 
+    <div class="output_subarea output_html rendered_html output_result">
+
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>69451</td></tr>
+    <tr><td>N Points</td><td>35947</td></tr>
+    <tr><td>X Bounds</td><td>-9.469e-02, 6.101e-02</td></tr>
+    <tr><td>Y Bounds</td><td>3.299e-02, 1.873e-01</td></tr>
+    <tr><td>Z Bounds</td><td>-6.187e-02, 5.880e-02</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
+
+
+    </div>
+    <br />
+    <br />
 
 .. GENERATED FROM PYTHON SOURCE LINES 64-65
 
@@ -198,7 +215,7 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.998 seconds)
+   **Total running time of the script:** ( 0 minutes  5.033 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:
