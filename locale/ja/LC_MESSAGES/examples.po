@@ -3922,7 +3922,7 @@ msgstr "エッジを抽出"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:26
 msgid "Extract edges from a surface."
-msgstr ""
+msgstr "サーフェスからエッジを抽出します．"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:46
 msgid "From vtk documentation, the edges of a mesh are one of the following:"
@@ -3953,11 +3953,14 @@ msgid ""
 "edges given a feature angle and return a dataset with lines that represent "
 "the edges of the original mesh."
 msgstr ""
+":func:`extract_feature_edges() "
+"<pyvista.PolyDataFilters.extract_feature_edges>` "
+"フィルタは、特徴的な角度が与えられたときにそれらのエッジを抽出し、元のメッシュのエッジを表す線を含むデータセットを返します。"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:57
 msgid ""
 "To demonstrate, we will first extract the edges around a sample CAD model:"
-msgstr ""
+msgstr "まず、サンプルのCADモデルの周囲のエッジを抽出してみましょう。"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:90
 msgid ""
@@ -3994,6 +3997,22 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>69451</td></tr>\n"
+"<tr><td>N Points</td><td>35947</td></tr>\n"
+"<tr><td>X Bounds</td><td>-9.469e-02, 6.101e-02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>3.299e-02, 1.873e-01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-6.187e-02, 5.880e-02</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:161
 msgid "We can get a count of the open edges with:"
@@ -4009,7 +4028,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:218
 msgid "**Total running time of the script:** ( 0 minutes  5.033 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  5.033 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:233
 msgid ""
@@ -5286,7 +5305,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:05.737** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:05.737** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
@@ -5296,7 +5315,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:05.033"
-msgstr ""
+msgstr "00:05.033"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -5308,7 +5327,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid "00:00.704"
-msgstr ""
+msgstr "00:00.704"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid ""
@@ -6157,6 +6176,9 @@ msgid ""
 ":func:`pyvista.PolyDataFilters.reconstruct_surface`.  This tends to perform "
 "much better than :func:`DataSetFilters.delaunay_3d`."
 msgstr ""
+"表面再構成は，PyVistaでは専用のフィルタが用意されており， "
+":func:`pyvista.PolyDataFilters.reconstruct_surface` で処理されます． これは "
+":func:`DataSetFilters.delaunay_3d` よりもはるかに良いパフォーマンスを示す傾向があります．"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:45
 msgid ""
@@ -6205,7 +6227,7 @@ msgstr "点群と再構成された球体をプロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:111
 msgid "**Total running time of the script:** ( 0 minutes  0.704 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.704 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:126
 msgid ""
@@ -11965,6 +11987,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extract edges from a "
 "surface.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extract edges from a "
+"surface.\">"
 
 #: ../../pyvista/doc/examples/index.rst:810
 msgid ":ref:`sphx_glr_examples_01-filter_extract-edges.py`"
@@ -12232,6 +12256,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Surface reconstruction has "
 "a dedicated filter in PyVista and is handled by pyvista.PolyDataFilt...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Surface reconstruction has "
+"a dedicated filter in PyVista and is handled by pyvista.PolyDataFilt...\">"
 
 #: ../../pyvista/doc/examples/index.rst:1272
 msgid ":ref:`sphx_glr_examples_01-filter_surface_reconstruction.py`"
