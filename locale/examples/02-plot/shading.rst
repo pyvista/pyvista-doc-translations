@@ -18,95 +18,176 @@
 .. _sphx_glr_examples_02-plot_shading.py:
 
 
+.. _shading_example:
+
 Types of Shading
 ~~~~~~~~~~~~~~~~
 
 Comparison of default, flat shading vs. smooth shading.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-11
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
+    # sphinx_gallery_thumbnail_number = 4
     import pyvista
-
-    pyvista.set_plot_theme("document")
-
+    from pyvista import examples
 
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
-PyVista supports two types of shading, flat and smooth shading that uses
+
+.. GENERATED FROM PYTHON SOURCE LINES 14-18
+
+PyVista supports two types of shading: flat and smooth shading that uses
 VTK's Phong shading algorithm.
 
-This is a plot with the default flat shading:
+This is a plot with the default flat shading.
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
-
-.. code-block:: default
-
-    sphere = pyvista.Sphere()
-    sphere.plot(color="w")
-
-
-
-
-.. image:: /examples/02-plot/images/sphx_glr_shading_001.png
-    :alt: shading
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
-
-
-
-.. GENERATED FROM PYTHON SOURCE LINES 20-21
-
-Here's the same sphere with smooth shading:
-
-.. GENERATED FROM PYTHON SOURCE LINES 21-22
+.. GENERATED FROM PYTHON SOURCE LINES 18-22
 
 .. code-block:: default
 
-    sphere.plot(color="w", smooth_shading=True)
+    mesh = examples.load_nut()
+    mesh.plot()
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_shading_002.png
-    :alt: shading
-    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
+.. image-sg:: /examples/02-plot/images/sphx_glr_shading_001.png
+   :alt: shading
+   :srcset: /examples/02-plot/images/sphx_glr_shading_001.png
+   :class: sphx-glr-single-img
 
- Out:
-
- .. code-block:: none
 
 
-    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 23-24
+
+Here's the same sphere with smooth shading.
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
+
+.. code-block:: default
+
+    mesh.plot(smooth_shading=True)
+
+
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_shading_002.png
+   :alt: shading
+   :srcset: /examples/02-plot/images/sphx_glr_shading_002.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 28-36
+
+Note how smooth shading makes edges that should be sharp look odd,
+it's because the points of these normals are averaged between two
+faces that have a sharp angle between them.  You can avoid this by
+enabling ``split_sharp_edges``.
+
+.. note::
+   You can configure the splitting angle with the optional
+   ``feature_angle`` keyword argument.
+
+.. GENERATED FROM PYTHON SOURCE LINES 36-39
+
+.. code-block:: default
+
+    mesh.plot(smooth_shading=True, split_sharp_edges=True)
+
+
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_shading_003.png
+   :alt: shading
+   :srcset: /examples/02-plot/images/sphx_glr_shading_003.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-42
+
+We can even plot the edges that will be split using
+:func:`extract_feature_edges <pyvista.PolyDataFilters.extract_feature_edges>`.
+
+.. GENERATED FROM PYTHON SOURCE LINES 42-57
+
+.. code-block:: default
+
+
+    # extract the feature edges exceeding 30 degrees
+    edges = mesh.extract_feature_edges(
+        boundary_edges=False, non_manifold_edges=False,
+        feature_angle=30, manifold_edges=False
+    )
+
+    # plot both the edges and the smoothed mesh
+    pl = pyvista.Plotter()
+    pl.enable_anti_aliasing()
+    pl.add_mesh(mesh, smooth_shading=True, split_sharp_edges=True)
+    pl.add_mesh(edges, color='k', line_width=5)
+    pl.show()
+
+
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_shading_004.png
+   :alt: shading
+   :srcset: /examples/02-plot/images/sphx_glr_shading_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-60
+
+The ``split_sharp_edges`` keyword argument is compatible with
+physically based rendering as well.
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-67
+
+.. code-block:: default
+
+
+    # plot both the edges and the smoothed mesh
+    pl = pyvista.Plotter()
+    pl.enable_anti_aliasing()
+    pl.add_mesh(mesh, color='w', split_sharp_edges=True, pbr=True,
+                metallic=1.0, roughness=0.5)
+    pl.show()
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_shading_005.png
+   :alt: shading
+   :srcset: /examples/02-plot/images/sphx_glr_shading_005.png
+   :class: sphx-glr-single-img
+
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.226 seconds)
+   **Total running time of the script:** ( 0 minutes  1.798 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_shading.py:

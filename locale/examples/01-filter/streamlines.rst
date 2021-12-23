@@ -313,7 +313,7 @@ Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-149
+.. GENERATED FROM PYTHON SOURCE LINES 132-153
 
 .. code-block:: default
 
@@ -323,7 +323,11 @@ Custom 3D Vector Field
     nz = 5
 
     origin = (-(nx - 1)*0.1/2, -(ny - 1)*0.1/2, -(nz - 1)*0.1/2)
-    mesh = pv.UniformGrid((nx, ny, nz), (.1, .1, .1), origin)
+    mesh = pv.UniformGrid(
+        dims=(nx, ny, nz),
+        spacing=(.1, .1, .1),
+        origin=origin
+    )
     x = mesh.points[:, 0]
     y = mesh.points[:, 1]
     z = mesh.points[:, 2]
@@ -341,7 +345,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-153
+.. GENERATED FROM PYTHON SOURCE LINES 154-157
 
 .. code-block:: default
 
@@ -355,7 +359,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-156
+.. GENERATED FROM PYTHON SOURCE LINES 158-160
 
 .. code-block:: default
 
@@ -376,7 +380,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.900 seconds)
+   **Total running time of the script:** ( 0 minutes  13.792 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

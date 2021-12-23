@@ -863,6 +863,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Generate a surface from a scalar field using the flying edges and marching cubes filters as pro...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_flying_edges_thumb.png
+     :alt: Marching Cubes
+
+     :ref:`sphx_glr_examples_01-filter_flying_edges.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/flying_edges
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Perform a Gaussian convolution on a uniformly gridded data set.">
 
 .. only:: html
@@ -1391,6 +1412,48 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/background_image
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how different types of charts can be added to the scene. A more complex exam...">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_chart_basics_thumb.png
+     :alt: Chart Basics
+
+     :ref:`sphx_glr_examples_02-plot_chart_basics.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/chart_basics
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how you can combine multiple charts as overlays in the same renderer. For an...">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_chart_overlays_thumb.png
+     :alt: Chart Overlays
+
+     :ref:`sphx_glr_examples_02-plot_chart_overlays.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/chart_overlays
 
 .. raw:: html
 
