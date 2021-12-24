@@ -1919,6 +1919,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Picking points on a mesh">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_point-picking_thumb.png
+     :alt: Picking points on a mesh
+
+     :ref:`sphx_glr_examples_02-plot_point-picking.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/point-picking
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Walk through of all the different capabilities of scalar bars and how a user can customize scal...">
 
 .. only:: html
