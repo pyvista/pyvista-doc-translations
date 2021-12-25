@@ -47,8 +47,8 @@ from the view point:
     from pyvista import examples
 
     mesh = examples.download_bunny()
-    mesh.rotate_x(90)
-    mesh.rotate_z(180)
+    mesh.rotate_x(90, inplace=True)
+    mesh.rotate_z(180, inplace=True)
 
     plotter = pv.Plotter(lighting='none')
     plotter.add_mesh(mesh, color='tan', smooth_shading=True)
@@ -143,7 +143,7 @@ interpreted as global coordinates:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.075 seconds)
+   **Total running time of the script:** ( 0 minutes  3.315 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:

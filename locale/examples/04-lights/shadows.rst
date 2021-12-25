@@ -37,8 +37,8 @@ Demonstrate the usage of lights and shadows in PyVista.
     from pyvista import examples
 
     mesh = examples.download_dragon()
-    mesh.rotate_x(90)
-    mesh.rotate_z(120)
+    mesh.rotate_x(90, inplace=True)
+    mesh.rotate_z(120, inplace=True)
 
 
 
@@ -46,7 +46,24 @@ Demonstrate the usage of lights and shadows in PyVista.
 
 
 
+.. raw:: html
 
+    <div class="output_subarea output_html rendered_html output_result">
+
+    <table>
+    <tr><th>PolyData</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>871414</td></tr>
+    <tr><td>N Points</td><td>437645</td></tr>
+    <tr><td>X Bounds</td><td>-6.182e-02, 6.692e-02</td></tr>
+    <tr><td>Y Bounds</td><td>-9.431e-02, 7.927e-02</td></tr>
+    <tr><td>Z Bounds</td><td>5.273e-02, 1.972e-01</td></tr>
+    <tr><td>N Arrays</td><td>0</td></tr>
+    </table>
+
+
+    </div>
+    <br />
+    <br />
 
 .. GENERATED FROM PYTHON SOURCE LINES 22-29
 
@@ -92,8 +109,8 @@ Using two lights, plot the Stanford Dragon with shadows.
                              height)
 
     # rotate base and mesh to get a better view
-    base_mesh.rotate_z(30)
-    mesh.rotate_z(30)
+    base_mesh.rotate_z(30, inplace=True)
+    mesh.rotate_z(30, inplace=True)
 
     # create the plotter with custom lighting
     pl = pyvista.Plotter(lighting=None, window_size=(800, 800))
@@ -204,7 +221,7 @@ light can travel through more planes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.592 seconds)
+   **Total running time of the script:** ( 0 minutes  5.388 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_shadows.py:

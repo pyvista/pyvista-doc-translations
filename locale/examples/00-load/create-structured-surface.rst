@@ -184,7 +184,7 @@ frame.
         zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
         points = np.c_[xx.reshape(-1), yy.reshape(-1), zz.reshape(-1)]
         foo = pv.PolyData(points)
-        foo.rotate_z(36.6)
+        foo.rotate_z(36.6, inplace=True)
         return foo.points
 
 
@@ -203,11 +203,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -37.72556416, -277.93976454,    1.95713886],
-                     [ -25.60105441, -268.93530895,    2.60150329],
-                     [ -16.82558172, -262.41806777,    3.15141974],
-                     [  -4.76843347, -253.46363923,    4.0222541 ],
-                     [   5.19213875, -246.06626547,    4.83747031]])
+    pyvista_ndarray([[ -38.14970472, -283.14674409,    1.68842519],
+                     [ -24.52863002, -273.03084127,    2.33449475],
+                     [ -14.87078101, -265.8582896 ,    2.88660673],
+                     [  -4.0446391 , -257.81808706,    3.59967632],
+                     [   5.75728721, -250.53853415,    4.32769477]])
 
 
 
@@ -349,7 +349,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.746 seconds)
+   **Total running time of the script:** ( 0 minutes  2.420 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

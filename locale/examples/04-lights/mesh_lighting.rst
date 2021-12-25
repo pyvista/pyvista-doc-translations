@@ -31,7 +31,7 @@ to opt out of lighting altogether. Pass ``lighting=False`` to
 :func:`pyvista.Plotter.add_mesh` to disable lighting for the given
 mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-32
+.. GENERATED FROM PYTHON SOURCE LINES 16-31
 
 .. code-block:: default
 
@@ -40,10 +40,9 @@ mesh:
     from pyvista import examples
 
     horse = examples.download_horse().decimate(0.9)
-    horse.rotate_z(-120)
+    horse.rotate_z(-120, inplace=True)
     horse.points = (horse.points - horse.center) * 100
-    shifted = horse.copy()
-    shifted.translate((0, 10, 0))
+    shifted = horse.translate((0, 10, 0), inplace=False)
 
     plotter = pv.Plotter()
     plotter.add_mesh(horse, color='brown')
@@ -63,14 +62,14 @@ mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-37
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 Due to the obvious lack of depth detail this mostly makes sense for meshes
 with non-trivial colors or textures. If it weren't for the edges being drawn,
 the second mesh would be practically impossible to understand even with the
 option to interactively explore the surface:
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-40
+.. GENERATED FROM PYTHON SOURCE LINES 36-39
 
 .. code-block:: default
 
@@ -89,7 +88,7 @@ option to interactively explore the surface:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 40-42
 
 For further examples about fine-tuning mesh properties that affect
 light rendering, see the :ref:`ref_lighting_properties_example` example.
@@ -97,7 +96,7 @@ light rendering, see the :ref:`ref_lighting_properties_example` example.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.410 seconds)
+   **Total running time of the script:** ( 0 minutes  1.833 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_mesh_lighting.py:

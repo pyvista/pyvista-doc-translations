@@ -42,7 +42,7 @@ functionality of which can be enabled for spotlights:
     from pyvista import examples
 
     cow = examples.download_cow()
-    cow.rotate_x(90)
+    cow.rotate_x(90, inplace=True)
     plotter = pv.Plotter(lighting='none', window_size=(1000, 1000))
     plotter.add_mesh(cow, color='white')
     floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]),
@@ -163,7 +163,7 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.027 seconds)
+   **Total running time of the script:** ( 0 minutes  1.620 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

@@ -112,7 +112,7 @@ Rotation about the x axis
 Plot the mesh rotated about the x axis every 60 degrees.
 Add the axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-67
+.. GENERATED FROM PYTHON SOURCE LINES 53-66
 
 .. code-block:: default
 
@@ -124,8 +124,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
     p.camera = camera
 
     for i in range(6):
-        rot = mesh.copy()
-        rot.rotate_x(60*i, point=axes.origin)
+        rot = mesh.rotate_x(60*i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -142,7 +141,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-73
+.. GENERATED FROM PYTHON SOURCE LINES 67-72
 
 Rotation about the y axis
 +++++++++++++++++++++++++
@@ -150,7 +149,7 @@ Rotation about the y axis
 Plot the mesh rotated about the y axis every 60 degrees.
 Add the axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-87
+.. GENERATED FROM PYTHON SOURCE LINES 72-85
 
 .. code-block:: default
 
@@ -162,8 +161,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
     p.add_actor(axes.actor)
 
     for i in range(6):
-        rot = mesh.copy()
-        rot.rotate_y(60*i, point=axes.origin)
+        rot = mesh.rotate_y(60*i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -180,7 +178,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-93
+.. GENERATED FROM PYTHON SOURCE LINES 86-91
 
 Rotation about the z axis
 +++++++++++++++++++++++++
@@ -188,7 +186,7 @@ Rotation about the z axis
 Plot the mesh rotated about the z axis every 60 degrees.
 Add axes actor to the Plotter and set the axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-107
+.. GENERATED FROM PYTHON SOURCE LINES 91-104
 
 .. code-block:: default
 
@@ -200,8 +198,7 @@ Add axes actor to the Plotter and set the axes origin to the point of rotation.
     p.add_actor(axes.actor)
 
     for i in range(6):
-        rot = mesh.copy()
-        rot.rotate_z(60*i, point=axes.origin)
+        rot = mesh.rotate_z(60*i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -218,7 +215,7 @@ Add axes actor to the Plotter and set the axes origin to the point of rotation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-113
+.. GENERATED FROM PYTHON SOURCE LINES 105-110
 
 Rotation about a custom vector
 ++++++++++++++++++++++++++++++
@@ -226,7 +223,7 @@ Rotation about a custom vector
 Plot the mesh rotated about a custom vector every 60 degrees.
 Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-125
+.. GENERATED FROM PYTHON SOURCE LINES 110-122
 
 .. code-block:: default
 
@@ -251,13 +248,22 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:328: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
+      warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.806 seconds)
+   **Total running time of the script:** ( 0 minutes  2.083 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_rotate.py:

@@ -147,7 +147,7 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
     text = logo.text_3d("ALIEN MONSTERS", depth=10.0)
     text.points *= 4.0
-    text.translate([-20.0, 24.0, 0.0])
+    text.translate([-20.0, 24.0, 0.0], inplace=True)
 
     p.add_mesh(text, color="yellow")
     p.show(cpos="xy")
@@ -166,7 +166,7 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.097 seconds)
+   **Total running time of the script:** ( 0 minutes  1.237 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pixel-art.py:

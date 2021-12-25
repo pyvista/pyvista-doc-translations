@@ -47,7 +47,7 @@ the top mesh.
     def hill(seed):
         mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50,
                                         hillamplitude=0.5)
-        mesh.rotate_y(-10) # give the surfaces some tilt
+        mesh.rotate_y(-10, inplace=True) # give the surfaces some tilt
 
         return mesh
 
@@ -229,7 +229,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.662 seconds)
+   **Total running time of the script:** ( 0 minutes  2.780 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

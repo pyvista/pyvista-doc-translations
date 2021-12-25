@@ -24,8 +24,7 @@ Extract Cells Inside Surface
 Extract the cells in a mesh that exist inside or outside a closed surface of
 another mesh
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 10-30
+.. GENERATED FROM PYTHON SOURCE LINES 10-29
 
 .. code-block:: default
 
@@ -40,8 +39,7 @@ another mesh
 
     dargs = dict(show_edges=True)
     # Rotate the mesh to have a second mesh
-    rot = mesh.copy()
-    rot.rotate_y(90)
+    rot = mesh.rotate_y(90, inplace=False)
 
     p = pv.Plotter()
     p.add_mesh(mesh, color="Crimson", **dargs)
@@ -52,29 +50,20 @@ another mesh
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_001.png
-    :alt: extract cells inside surface
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(13.0, 7.6, -13.85),
-     (0.44, -0.4, -0.37),
-     (-0.2830738875949229, 0.9098803529836806, 0.3032934509945602)]
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_001.png
+   :alt: extract cells inside surface
+   :srcset: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-32
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 30-31
 
 Mark points inside with 1 and outside with a 0
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-35
+.. GENERATED FROM PYTHON SOURCE LINES 31-34
 
 .. code-block:: default
 
@@ -111,12 +100,12 @@ Mark points inside with 1 and outside with a 0
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+.. GENERATED FROM PYTHON SOURCE LINES 35-37
 
 Extract two meshes, one completely inside and one completely outside the
 enclosing surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-42
+.. GENERATED FROM PYTHON SOURCE LINES 37-41
 
 .. code-block:: default
 
@@ -131,11 +120,11 @@ enclosing surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-44
+.. GENERATED FROM PYTHON SOURCE LINES 42-43
 
 display the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-52
+.. GENERATED FROM PYTHON SOURCE LINES 43-51
 
 .. code-block:: default
 
@@ -150,28 +139,19 @@ display the results
 
 
 
-.. image:: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_002.png
-    :alt: extract cells inside surface
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_002.png
+   :alt: extract cells inside surface
+   :srcset: /examples/01-filter/images/sphx_glr_extract-cells-inside-surface_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(13.0, 7.6, -13.85),
-     (0.44, -0.4, -0.37),
-     (-0.2830738875949229, 0.9098803529836806, 0.3032934509945602)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.653 seconds)
+   **Total running time of the script:** ( 0 minutes  1.369 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-cells-inside-surface.py:

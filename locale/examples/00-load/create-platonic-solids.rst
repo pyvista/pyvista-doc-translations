@@ -84,9 +84,9 @@ Let's generate all the Platonic solids, along with the :func:`teapotahedron
 
     # download and align teapotahedron
     teapot = examples.download_teapot()
-    teapot.rotate_x(90)
-    teapot.rotate_z(-45)
-    teapot.scale(0.16)
+    teapot.rotate_x(90, inplace=True)
+    teapot.rotate_z(-45, inplace=True)
+    teapot.scale(0.16, inplace=True)
     teapot.points += np.array([-1, 1, 0]) - teapot.center
     solids.append(teapot)
 
@@ -144,7 +144,7 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.458 seconds)
+   **Total running time of the script:** ( 0 minutes  1.595 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:

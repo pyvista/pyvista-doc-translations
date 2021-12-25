@@ -73,13 +73,13 @@ Note this feature is only available for ``vtk>=9``.
     if pv._vtk.VTK9:
         dims = np.asarray((ni, nj, nk))+1
         grid = pv.ExplicitStructuredGrid(dims, corners)
-        grid.compute_connectivity()
+        grid = grid.compute_connectivity()
         grid.plot(show_edges=True)
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.559 seconds)
+   **Total running time of the script:** ( 0 minutes  0.960 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-explicit-structured-grid.py:

@@ -130,7 +130,7 @@ Clip any dataset by an arbitrarily rotated solid box using the
     # Use `pv.Box()` or `pv.Cube()` to create a region of interest
     roi = pv.Cube(center=(0.9e3, 0.2e3, mesh.center[2]),
                   x_length=500, y_length=500, z_length=500)
-    roi.rotate_z(33)
+    roi.rotate_z(33, inplace=True)
 
     p = pv.Plotter()
     p.add_mesh(roi, opacity=0.75, color="red")
@@ -183,7 +183,7 @@ Run the box clipping algorithm
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.960 seconds)
+   **Total running time of the script:** ( 0 minutes  2.688 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:

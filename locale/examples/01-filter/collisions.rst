@@ -111,7 +111,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
     delta_x = 0.05
     for i in range(int(2/delta_x)):
-        sphere1.translate([delta_x, 0, 0])
+        sphere1.translate([delta_x, 0, 0], inplace=True)
         col, n_contacts = sphere0.collision(sphere1)
 
         collision_mask = np.zeros(sphere0.n_cells, dtype=bool)
@@ -139,7 +139,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.384 seconds)
+   **Total running time of the script:** ( 0 minutes  9.390 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:

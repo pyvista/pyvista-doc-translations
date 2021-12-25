@@ -259,7 +259,7 @@ Now, let's display a mode on a mesh of the cube.
 
     warpby = 'eigenmode_00'
     warped = vol.warp_by_vector(warpby, factor=0.04)
-    warped.translate([-1.5 * l1, 0., 0.])
+    warped.translate([-1.5 * l1, 0., 0.], inplace=True)
     p = pv.Plotter()
     p.add_mesh(vol, style='wireframe', scalars=warpby)
     p.add_mesh(warped, scalars=warpby)
@@ -314,7 +314,7 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.338 seconds)
+   **Total running time of the script:** ( 0 minutes  9.722 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

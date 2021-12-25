@@ -44,7 +44,7 @@ a statue as though it were metallic.
 
     # Load the statue mesh
     mesh = examples.download_nefertiti()
-    mesh.rotate_x(-90.)  # rotate to orient with the skybox
+    mesh.rotate_x(-90., inplace=True)  # rotate to orient with the skybox
 
     # Download skybox
     cubemap = examples.download_sky_box_cube_map()
@@ -143,7 +143,7 @@ Combine custom lighting and physically based rendering.
 
     # download louis model
     mesh = examples.download_louis_louvre()
-    mesh.rotate_z(140)
+    mesh.rotate_z(140, inplace=True)
 
 
     plotter = pv.Plotter(lighting=None)
@@ -183,7 +183,7 @@ Combine custom lighting and physically based rendering.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  58.337 seconds)
+   **Total running time of the script:** ( 1 minutes  11.403 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:

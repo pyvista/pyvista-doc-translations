@@ -132,7 +132,7 @@ affect the type of the object.
 .. code-block:: default
 
 
-    foo_sphere.rotate_y(90)
+    foo_sphere.rotate_y(90, inplace=True)
     print("\nRotated foo sphere:")
     print(f"Type: {type(foo_sphere)}")
     print(f"Maximum point index: {foo_sphere.max_point}")
@@ -292,7 +292,7 @@ affect the type of the object.
 .. code-block:: default
 
 
-    foo_sphere.rotate_y(90)
+    foo_sphere.rotate_y(90, inplace=True)
     print("\nRotated foo sphere:")
     print(f"Type: {type(foo_sphere)}")
     print(f"Maximum point index: {foo_sphere.max_point}")
@@ -367,7 +367,7 @@ it is recommended to use the directly managing types method.
     print(f"Type: {type(poly_object)}")
     # catch error
     try:
-        poly_object.rotate_y(90)
+        poly_object.rotate_y(90, inplace=True)
     except TypeError:
         print("This operation fails")
 
@@ -431,7 +431,7 @@ recommended.  One example is a ``try...finally`` block.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.230 seconds)
+   **Total running time of the script:** ( 0 minutes  0.320 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_extending-pyvista.py:

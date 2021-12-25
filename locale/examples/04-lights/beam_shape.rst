@@ -30,7 +30,7 @@ options for beam customization.
 
 Consider two hemispheres:
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-30
+.. GENERATED FROM PYTHON SOURCE LINES 14-29
 
 .. code-block:: default
 
@@ -40,11 +40,10 @@ Consider two hemispheres:
     plotter = pv.Plotter()
 
     hemi = pv.Sphere().clip()
-    hemi.translate((-1, 0, 0))
+    hemi.translate((-1, 0, 0), inplace=True)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
-    hemi = hemi.copy()
-    hemi.rotate_z(180)
+    hemi = hemi.rotate_z(180, inplace=False)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
     plotter.show()
@@ -62,7 +61,7 @@ Consider two hemispheres:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+.. GENERATED FROM PYTHON SOURCE LINES 30-35
 
 We can see that the default lighting does a very good job of articulating the
 shape of the hemispheres.
@@ -70,7 +69,7 @@ shape of the hemispheres.
 Let's shine a directional light on them, positioned between the hemispheres and
 oriented along their centers:
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-53
+.. GENERATED FROM PYTHON SOURCE LINES 35-51
 
 .. code-block:: default
 
@@ -78,11 +77,10 @@ oriented along their centers:
     plotter = pv.Plotter(lighting='none')
 
     hemi = pv.Sphere().clip()
-    hemi.translate((-1, 0, 0))
+    hemi.translate((-1, 0, 0), inplace=True)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
-    hemi = hemi.copy()
-    hemi.rotate_z(180)
+    hemi = hemi.rotate_z(180, inplace=False)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
     light = pv.Light(position=(0, 0, 0), focal_point=(-1, 0, 0))
@@ -103,7 +101,7 @@ oriented along their centers:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+.. GENERATED FROM PYTHON SOURCE LINES 52-57
 
 Both hemispheres have their surface lit on the side that faces the light.
 This is consistent with the point source positioned at infinity, directed from
@@ -111,7 +109,7 @@ the light's nominal position toward the focal point.
 
 Now let's change the light to a positional light (but not a spotlight):
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-78
+.. GENERATED FROM PYTHON SOURCE LINES 57-75
 
 .. code-block:: default
 
@@ -119,11 +117,10 @@ Now let's change the light to a positional light (but not a spotlight):
     plotter = pv.Plotter(lighting='none')
 
     hemi = pv.Sphere().clip()
-    hemi.translate((-1, 0, 0))
+    hemi.translate((-1, 0, 0), inplace=True)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
-    hemi = hemi.copy()
-    hemi.rotate_z(180)
+    hemi = hemi.rotate_z(180, inplace=False)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
     light = pv.Light(position=(0, 0, 0), focal_point=(-1, 0, 0))
@@ -146,7 +143,7 @@ Now let's change the light to a positional light (but not a spotlight):
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-88
+.. GENERATED FROM PYTHON SOURCE LINES 76-85
 
 Now the inner surface of both hemispheres is lit. A positional light with a
 cone angle of 90 degrees (or more) acts as a point source located at the
@@ -158,7 +155,7 @@ than 90 degrees) will enable beam shaping using the :py:attr:`exponent`
 property. Let's put our hemispheres side by side for this, and put a light in
 the center of each: one spotlight, one merely positional.
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-118
+.. GENERATED FROM PYTHON SOURCE LINES 85-114
 
 .. code-block:: default
 
@@ -169,8 +166,7 @@ the center of each: one spotlight, one merely positional.
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
     offset = 1.5
-    hemi = hemi.copy()
-    hemi.translate((0, offset, 0))
+    hemi = hemi.translate((0, offset, 0), inplace=False)
     plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
     # non-spot positional light in the center of the first hemisphere
@@ -204,7 +200,7 @@ the center of each: one spotlight, one merely positional.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-125
+.. GENERATED FROM PYTHON SOURCE LINES 115-121
 
 Even though the two lights only differ by a fraction of a degree in cone angle,
 the beam shaping effect enabled for spotlights causes a marked difference in
@@ -213,7 +209,7 @@ the result.
 Once we have a spotlight we can change its :py:attr:`exponent` to make the beam
 shape sharper or broader. Three spotlights with varying sharpness:
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-150
+.. GENERATED FROM PYTHON SOURCE LINES 121-146
 
 .. code-block:: default
 
@@ -226,7 +222,7 @@ shape sharper or broader. Three spotlights with varying sharpness:
 
     for center, exponent in zip(centers, exponents):
         hemi = hemi_template.copy()
-        hemi.translate(center)
+        hemi.translate(center, inplace=True)
         plotter.add_mesh(hemi, color='cyan', smooth_shading=True)
 
         # spotlight in the center of the hemisphere, shining into it
@@ -254,7 +250,7 @@ shape sharper or broader. Three spotlights with varying sharpness:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-153
+.. GENERATED FROM PYTHON SOURCE LINES 147-149
 
 The spotlight with exponent 0.3 is practically uniform, and the one with
 exponent 5 is visibly focused along the axis of the light.
@@ -262,7 +258,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.292 seconds)
+   **Total running time of the script:** ( 0 minutes  1.752 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:
