@@ -74,7 +74,7 @@ absent a default value of ``range(len(geom))`` is assumed.
     geoms = [pv.ParametricSuperToroid(n1=n1, n2=n2) for n1, n2 in params]
 
     # get dataset where to put glyphs
-    x,y,z = np.mgrid[:3, :3, :3]
+    x, y, z = np.mgrid[:3.0, :3.0, :3.0]
     mesh = pv.StructuredGrid(x, y, z)
 
     # add random scalars
@@ -106,7 +106,7 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.822 seconds)
+   **Total running time of the script:** ( 0 minutes  1.885 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:
