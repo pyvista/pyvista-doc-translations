@@ -2570,6 +2570,27 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot OpenFOAM data">
+
+.. only:: html
+
+ .. figure:: /examples/99-advanced/images/thumb/sphx_glr_openfoam-example_thumb.png
+     :alt: Plot OpenFOAM data
+
+     :ref:`sphx_glr_examples_99-advanced_openfoam-example.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/99-advanced/openfoam-example
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to `pyvista/pyvista-support#486 &lt;https://github.com/pyvista/pyvista-...">
 
 .. only:: html
