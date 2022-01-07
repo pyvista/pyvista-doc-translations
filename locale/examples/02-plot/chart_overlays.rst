@@ -70,8 +70,8 @@ Data to display
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-32
 
-Define Matplotlib figure
-Use a tight layout to keep axis labels visible on smaller figures
+Define a Matplotlib figure.
+Use a tight layout to keep axis labels visible on smaller figures.
 
 .. GENERATED FROM PYTHON SOURCE LINES 32-39
 
@@ -82,33 +82,21 @@ Use a tight layout to keep axis labels visible on smaller figures
     h_line = ax.plot(t[:1], h[:1])[0]
     ax.set_ylim([-1, 1])
     ax.set_xlabel('Time (s)')
-    ax.set_ylabel('Height (m)')
+    _ = ax.set_ylabel('Height (m)')
 
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
-   :alt: chart overlays
-   :srcset: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
-   :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    Text(29.000000000000014, 0.5, 'Height (m)')
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-41
 
-Define plotter, add matplotlib figure as first chart and define second chart
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-76
+Define plotter, add the created matplotlib figure as the first (left) chart
+to the scene, and define a second (right) chart.
+
+.. GENERATED FROM PYTHON SOURCE LINES 43-77
 
 .. code-block:: default
 
@@ -127,7 +115,6 @@ Define plotter, add matplotlib figure as first chart and define second chart
 
 
     # Method and slider to update all visuals based on the time selection
-
     def update_time(time):
         k = np.count_nonzero(t < time)
         h_line.set_xdata(t[:k+1])
@@ -150,9 +137,9 @@ Define plotter, add matplotlib figure as first chart and define second chart
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_chart_overlays_002.png
+.. image-sg:: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
    :alt: chart overlays
-   :srcset: /examples/02-plot/images/sphx_glr_chart_overlays_002.png
+   :srcset: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
    :class: sphx-glr-single-img
 
 
@@ -162,7 +149,7 @@ Define plotter, add matplotlib figure as first chart and define second chart
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.992 seconds)
+   **Total running time of the script:** ( 0 minutes  7.618 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_overlays.py:
