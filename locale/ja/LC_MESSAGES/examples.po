@@ -6910,17 +6910,17 @@ msgstr "表示するデータ"
 msgid ""
 "Define a Matplotlib figure. Use a tight layout to keep axis labels visible "
 "on smaller figures."
-msgstr ""
+msgstr "Matplotlibの図の定義．小さい図で軸ラベルが見えるようにタイトなレイアウトを使います．"
 
 #: ../../pyvista/doc/examples/02-plot/chart_overlays.rst:96
 msgid ""
 "Define plotter, add the created matplotlib figure as the first (left) chart "
 "to the scene, and define a second (right) chart."
-msgstr ""
+msgstr "プロッターを定義し，作成されたmatplotlibの図を1枚目（左）のチャートとしてシーンに追加し，2枚目（右）のチャートを定義します．"
 
 #: ../../pyvista/doc/examples/02-plot/chart_overlays.rst:152
 msgid "**Total running time of the script:** ( 0 minutes  7.618 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  7.618 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/chart_overlays.rst:167
 msgid ""
@@ -8720,7 +8720,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:07.618** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:07.618** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ""
@@ -8730,7 +8730,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:07.618"
-msgstr ""
+msgstr "00:07.618"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
@@ -11404,11 +11404,13 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_99-advanced_openfoam-"
 "example.py>` to download the full example code"
 msgstr ""
+":ref:`ここ <sphx_glr_download_examples_99-advanced_openfoam-example.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:24
 #: ../../pyvista/doc/examples/index.rst:2580
 msgid "Plot OpenFOAM data"
-msgstr ""
+msgstr "OpenFOAMデータのプロット"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:43
 msgid ""
@@ -11417,6 +11419,9 @@ msgid ""
 "control over reading data.  The OpenFOAMReader in pyvista must be recreated "
 "each time a new mesh is read in, otherwise the same mesh is always returned."
 msgstr ""
+"この例では，天井駆動キャビティー流れのデータを使用しています． データの読み込みをより制御するために，OpenFOAMファイルの読み込みには "
+":class:`pyvista.OpenFOAMReader` を使用することをお勧めします． "
+"pyvistaのOpenFOAMReaderは，新しいメッシュが読み込まれるたびに再作成する必要があります．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:48
 msgid ""
@@ -11424,6 +11429,7 @@ msgid ""
 "of the patch arrays and resulting keys in the read mesh will be different in"
 " prior versions."
 msgstr ""
+"この例は，vtk>=9.1.0のバージョンでのみ正しく動作します．それ以前のバージョンでは，パッチ配列の名前と，読み込んだメッシュのキーの結果が異なります．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:69
 msgid ""
@@ -11431,36 +11437,41 @@ msgid ""
 "and patches, typically boundaries.  This can be inspected before reading the"
 " data."
 msgstr ""
+"OpenFOAMのデータセットには，内部メッシュやパッチ，通常は境界を含む複数のサブデータセットが含まれています．これは，データを読み込む前に検査することができます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:98
 msgid ""
 "This data is represented as a :class:`pyvista.MultiBlock` object. The "
 "internal mesh will be located in the top-level MultiBlock mesh."
 msgstr ""
+"このデータは :class:`pyvista.MultiBlock` "
+"オブジェクトとして表現されます．内部のメッシュは，トップレベルのMultiBlockメッシュに配置されます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:127
 msgid "In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`."
-msgstr ""
+msgstr "この場合，内部メッシュは :class:`pyvista.UnstructuredGrid` となります．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:160
 msgid ""
 "Additional Patch meshes are nested inside another MultiBlock mesh.  The name"
 " of the sub-level MultiBlock mesh depends on the vtk version."
 msgstr ""
+"追加のPatchメッシュは，別のMultiBlockメッシュの中に入れ子になっています．サブレベルのMultiBlockメッシュの名前は，vtkのバージョンによって異なります．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:204
 msgid ""
 "The default in OpenFOAMReader is to translate the existing cell data to "
 "point data.  Therefore, the cell data arrays are duplicated in point data."
 msgstr ""
+"OpenFOAMReaderのデフォルトでは，既存のセルデータをポイントデータに変換します．そのため，セルデータの配列はポイントデータに複製されます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:254
 msgid "This behavior can be turned off if only cell data is required."
-msgstr ""
+msgstr "セルデータのみが必要な場合は，この動作をオフにすることができます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:304
 msgid "Now we will read in all the data at the last time point."
-msgstr ""
+msgstr "ここで，最後の時刻でのすべてのデータを読み込んでみます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:335
 msgid ""
@@ -11470,32 +11481,39 @@ msgid ""
 "data to lie in the z=0 plane.  So, after the domain sliced, it is translated"
 " to ``z=0``."
 msgstr ""
+"このOpenFOAMシミュレーションは，z方向に1つのセルしかない3Dである． "
+":func:`pyvista.DataSetFilters.streamlines_evenly_spaced_2D` "
+"では，データがz=0の平面上にあることが必要です．そのため，領域をスライスした後， ``z=0`` に変換します．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:367
 msgid "Streamlines are generated using the point data \"U\"."
-msgstr ""
+msgstr "流線はポイントデータ \"U\" を使って生成されます．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:388
 msgid ""
 "Plot streamlines colored by velocity magnitude.  Additionally, the moving "
 "and fixed wall boundaries are plotted."
-msgstr ""
+msgstr "速度の大きさで色分けされた流線をプロットします．さらに，移動壁と固定壁の境界線をプロットしています．"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:418
 msgid "**Total running time of the script:** ( 0 minutes  1.359 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.359 seconds)"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:433
 msgid ""
 ":download:`Download Python source code: openfoam-example.py <openfoam-"
 "example.py>`"
 msgstr ""
+":download:`Download Python source code: openfoam-example.py <openfoam-"
+"example.py>`"
 
 #: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:439
 msgid ""
 ":download:`Download Jupyter notebook: openfoam-example.ipynb <openfoam-"
 "example.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: openfoam-example.ipynb <openfoam-"
+"example.ipynb>`"
 
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:13
 msgid ""
@@ -11650,16 +11668,19 @@ msgstr ""
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:8
 msgid "**00:01.359** total execution time for **examples_99-advanced** files:"
 msgstr ""
+"**00:01.359** total execution time for **examples_99-advanced** files:"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-"
 "example.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-"
+"example.py``)"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:11
 msgid "00:01.359"
-msgstr ""
+msgstr "00:01.359"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:13
 msgid ""
@@ -13489,11 +13510,11 @@ msgstr ":ref:`sphx_glr_examples_99-advanced_extending-pyvista.py`"
 
 #: ../../pyvista/doc/examples/index.rst:2571
 msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot OpenFOAM data\">"
-msgstr ""
+msgstr "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Plot OpenFOAM data\">"
 
 #: ../../pyvista/doc/examples/index.rst:2580
 msgid ":ref:`sphx_glr_examples_99-advanced_openfoam-example.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_99-advanced_openfoam-example.py`"
 
 #: ../../pyvista/doc/examples/index.rst:2592
 msgid ""
