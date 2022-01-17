@@ -25,11 +25,10 @@
 
 Integrate a vector field to generate streamlines on a 2D surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-11
+.. GENERATED FROM PYTHON SOURCE LINES 9-10
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
 
 
 
@@ -59,8 +58,8 @@ This example generates streamlines of flow around a cylinder in cross flow.
 
 .. GENERATED FROM PYTHON SOURCE LINES 18-20
 
-The data is multiblock with the fluid_data as the first block.
-The data lies in the xy plane, i.e. z=0, with no z velocity.
+The data is multiblock with the fluid data as the first block.
+The data lies in the `xy` plane, i.e. `z=0`, with no `z` velocity.
 
 .. GENERATED FROM PYTHON SOURCE LINES 20-25
 
@@ -81,7 +80,7 @@ The data lies in the xy plane, i.e. z=0, with no z velocity.
 
  .. code-block:: none
 
-    UnstructuredGrid (0x7f7f486dba60)
+    UnstructuredGrid (0x7fc07dfa6fa0)
       N Cells:      14594
       N Points:     14831
       X Bounds:     0.000e+00, 1.500e+01
@@ -93,16 +92,17 @@ The data lies in the xy plane, i.e. z=0, with no z velocity.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-32
+.. GENERATED FROM PYTHON SOURCE LINES 26-33
 
-The default behavior of the :func:`pyvista.DataSetFilters.streamlines` filter is to use
-a 3D sphere source as the seed points.  This often will not generate any
-seed points on the 2D plane of interest.  Instead, a single streamlines
-can be generated using the `start_position` argument.
-`surface_streamlines=True` argument is be needed if the dataset has
-nonzero normal velocity component.  This is not the case in this dataset.
+The default behavior of the :func:`streamlines()
+<pyvista.DataSetFilters.streamlines>` filter is to use a 3D sphere source as
+the seed points.  This often will not generate any seed points on the 2D
+plane of interest.  Instead, a single streamline can be generated using the
+``start_position`` argument. The ``surface_streamlines=True`` argument is
+also needed if the dataset has nonzero normal velocity component.  This is
+not the case in this dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-53
+.. GENERATED FROM PYTHON SOURCE LINES 33-54
 
 .. code-block:: default
 
@@ -139,12 +139,12 @@ nonzero normal velocity component.  This is not the case in this dataset.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-56
+.. GENERATED FROM PYTHON SOURCE LINES 55-57
 
-To generate multiple streamlines, a line source can be used with the `pointa`
-and `pointb` parameters.
+To generate multiple streamlines, a line source can be used with the ``pointa``
+and ``pointb`` parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-72
+.. GENERATED FROM PYTHON SOURCE LINES 57-73
 
 .. code-block:: default
 
@@ -176,18 +176,18 @@ and `pointb` parameters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-81
+.. GENERATED FROM PYTHON SOURCE LINES 74-82
 
 The behavior immediately downstream of the cylinder is still not apparent
 using streamlines at the inlet.
 
-Another method is to use
-:func:`pyvista.DataSetFilters.streamlines_evenly_spaced_2D`.
+Another method is to use :func:`streamlines_evenly_spaced_2D()
+<pyvista.DataSetFilters.streamlines_evenly_spaced_2D>`.
 This filter only works with 2D data that lies on the xy plane. This method
 can quickly run of memory, so particular attention must be paid to the input
-parameters.  The defaults are in cell_length units.
+parameters.  The defaults are in cell length units.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-96
+.. GENERATED FROM PYTHON SOURCE LINES 82-97
 
 .. code-block:: default
 
@@ -218,7 +218,7 @@ parameters.  The defaults are in cell_length units.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-100
+.. GENERATED FROM PYTHON SOURCE LINES 98-101
 
 The streamlines are only approximately evenly spaced and capture the
 vortex pair downstream of the cylinder with appropriate choice of
@@ -227,7 +227,7 @@ vortex pair downstream of the cylinder with appropriate choice of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.972 seconds)
+   **Total running time of the script:** ( 0 minutes  4.058 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines_2D.py:

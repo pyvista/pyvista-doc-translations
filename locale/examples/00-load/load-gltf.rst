@@ -20,9 +20,9 @@
 
 .. _load_gltf:
 
-Working with a glTF Files
-~~~~~~~~~~~~~~~~~~~~~~~~~
-Import a glTF directly into a PyVista plotting scene.  For more
+Working with glTF Files
+~~~~~~~~~~~~~~~~~~~~~~~
+Import a glTF file directly into a PyVista plotting scene.  For more
 details regarding the glTF format, see:
 https://www.khronos.org/gltf/
 
@@ -109,7 +109,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  4.618 seconds)
+   **Total running time of the script:** ( 1 minutes  4.837 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:

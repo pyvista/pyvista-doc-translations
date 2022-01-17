@@ -24,10 +24,10 @@ Marching Cubes
 ~~~~~~~~~~~~~~
 
 Generate a surface from a scalar field using the flying edges and
-marching cubes filters as provided by the `contour
-<pyvista.core.filters.data_set.DataSetFilters.contour>` filter.
+marching cubes filters as provided by the :func:`contour
+<pyvista.DataSetFilters.contour>` filter.
 
-Special thanks to GitHub user `stla <https://gist.github.com/stla>`
+Special thanks to GitHub user `stla <https://gist.github.com/stla>`_
 for providing examples.
 
 .. GENERATED FROM PYTHON SOURCE LINES 15-19
@@ -105,7 +105,7 @@ generated from the spider cage function.
 Barth Sextic
 ~~~~~~~~~~~~
 Use the flying edges algorithm to extract the isosurface
-generated from the barth sextic function.
+generated from the Barth sextic function.
 
 .. GENERATED FROM PYTHON SOURCE LINES 61-98
 
@@ -140,7 +140,7 @@ generated from the barth sextic function.
 
     # sample and plot
     values = barth_sextic(x, y, z)
-    mesh = grid.contour(1, values, method='marching_cubes', rng=[-0.0, 0])
+    mesh = grid.contour(1, values, method='flying_edges', rng=[-0.0, 0])
     dist = np.linalg.norm(mesh.points, axis=1)
     mesh.plot(
         scalars=dist, smooth_shading=True, specular=5,
@@ -164,7 +164,7 @@ generated from the barth sextic function.
 
 Animate Barth Sextic
 ~~~~~~~~~~~~~~~~~~~~
-Show 15 frames of various isocurves extracted from the barth sextic
+Show 15 frames of various isocurves extracted from the Barth sextic
 function.
 
 .. GENERATED FROM PYTHON SOURCE LINES 103-128
@@ -176,7 +176,7 @@ function.
         return -2*np.sin(angle)
 
     mesh = grid.contour(
-        1, values, method='marching_cubes', rng=[angle_to_range(0), 0]
+        1, values, method='flying_edges', rng=[angle_to_range(0), 0]
     )
     dist = np.linalg.norm(mesh.points, axis=1)
 
@@ -189,7 +189,7 @@ function.
 
     for angle in np.linspace(0, np.pi, 15)[:-1]:
         new_mesh = grid.contour(
-            1, values, method='marching_cubes', rng=[angle_to_range(angle), 0]
+            1, values, method='flying_edges', rng=[angle_to_range(angle), 0]
         )
         mesh.overwrite(new_mesh)
         pl.update_scalars(np.linalg.norm(new_mesh.points, axis=1), render=False)
@@ -211,7 +211,7 @@ function.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.429 seconds)
+   **Total running time of the script:** ( 0 minutes  6.074 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_flying_edges.py:

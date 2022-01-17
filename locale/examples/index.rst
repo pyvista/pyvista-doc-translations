@@ -361,7 +361,7 @@ data.
 .. only:: html
 
  .. figure:: /examples/00-load/images/thumb/sphx_glr_load-gltf_thumb.png
-     :alt: Working with a glTF Files
+     :alt: Working with glTF Files
 
      :ref:`sphx_glr_examples_00-load_load-gltf.py`
 
