@@ -5,14 +5,14 @@
 
 Computation times
 =================
-**00:07.618** total execution time for **examples_02-plot** files:
+**00:03.741** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_chart_overlays.py` (``chart_overlays.py``)                 | 00:07.618 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_chart_basics.py` (``chart_basics.py``)                     | 00:03.741 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_chart_basics.py` (``chart_basics.py``)                     | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_chart_overlays.py` (``chart_overlays.py``)                 | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)                                   | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+

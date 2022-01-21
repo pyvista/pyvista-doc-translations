@@ -272,7 +272,7 @@ chart can be created.
 .. code-block:: default
 
 
-    data = np.array([8.4,6.1,2.7,2.4,0.9])
+    data = np.array([8.4, 6.1, 2.7, 2.4, 0.9])
     chart = pv.ChartPie(data)
     chart.plot.labels = [f"slice {i}" for i in range(len(data))]
     chart.show()
@@ -355,11 +355,6 @@ The below example shows how you can do this.
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_010.png
    :class: sphx-glr-single-img
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_011.png
-   :alt: $B(\alpha, \beta)$
-   :srcset: /examples/02-plot/images/sphx_glr_chart_basics_011.png
-   :class: sphx-glr-single-img
-
 
 
 
@@ -367,7 +362,7 @@ The below example shows how you can do this.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.101 seconds)
+   **Total running time of the script:** ( 0 minutes  3.741 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_basics.py:
