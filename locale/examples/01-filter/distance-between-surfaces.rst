@@ -27,14 +27,28 @@ For example, you might have two surfaces that represent the boundaries of
 lithological layers in a subsurface geological model and you want to know the
 average thickness of a unit between those boundaries.
 
-We can compute the thickness between the two surfaces using a few different
-methods. First, we will demo a method where we compute the normals of the
-bottom surface, and then project a ray to the top surface to compute the
-distance along the surface normals. Second, we will use a KDTree to compute
-the distance from every point in the bottom mesh to it's closest point in
-the top mesh.
+A clarification on terminology in this example is important.  A mesh point
+exists on the vertex of each cell on the mesh.  See :ref:`what_is_a_mesh`.
+Each cell in this example encompasses a 2D region of space which contains an
+infinite number of spatial points; these spatial points are not mesh points.
+The distance between two surfaces can mean different things depending on context
+and usage.  Each example here explores different aspects of the distance from the
+vertex points of the bottom mesh to the top mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-37
+First, we will demo a method where we compute the normals on the vertex points
+of the bottom surface, and then project a ray to the top surface to compute the
+distance along the surface normals. This ray will usually intersect the top
+surface at a spatial point inside a cell of the mesh.
+
+Second, we will use a KDTree to compute the distance from every vertex point in
+the bottom mesh to its closest vertex point in the top mesh.
+
+Lastly, we will use a PyVista filter, :func:`pyvista.DataSet.find_closest_cell` to calculate
+the distance from every vertex point in the bottom mesh to the closest spatial point
+inside a cell of the top mesh.  This will be the shortest distance from the vertex point
+to the top surface, unlike the first two examples.
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-52
 
 .. code-block:: default
 
@@ -64,7 +78,7 @@ the top mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-45
+.. GENERATED FROM PYTHON SOURCE LINES 53-60
 
 .. code-block:: default
 
@@ -87,14 +101,14 @@ the top mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-50
+.. GENERATED FROM PYTHON SOURCE LINES 61-65
 
 Ray Tracing Distance
 ++++++++++++++++++++
 
-Compute normals of lower surface
+Compute normals of lower surface at vertex points
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-53
+.. GENERATED FROM PYTHON SOURCE LINES 65-68
 
 .. code-block:: default
 
@@ -108,12 +122,12 @@ Compute normals of lower surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-56
+.. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 Travel along normals to the other surface and compute the thickness on each
 vector.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-72
+.. GENERATED FROM PYTHON SOURCE LINES 71-87
 
 .. code-block:: default
 
@@ -148,7 +162,7 @@ vector.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-79
+.. GENERATED FROM PYTHON SOURCE LINES 88-94
 
 .. code-block:: default
 
@@ -170,26 +184,27 @@ vector.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-87
+.. GENERATED FROM PYTHON SOURCE LINES 95-103
 
 Nearest Neighbor Distance
 +++++++++++++++++++++++++
 
-You could also use a KDTree to compare the distance between each point of the
-upper surface and the nearest neighbor of the lower surface.
-This won't be the exact surface to surface distance, but it will be
+You could also use a KDTree to compare the distance between each vertex point
+of the
+upper surface and the nearest neighbor vertex point of the lower surface.
+This will be
 noticeably faster than a ray trace, especially for large surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-94
+.. GENERATED FROM PYTHON SOURCE LINES 103-110
 
 .. code-block:: default
 
     from scipy.spatial import KDTree
 
     tree = KDTree(h1.points)
-    d, idx = tree.query(h0.points )
-    h0["distances"] = d
-    np.mean(d)
+    d_kdtree, idx = tree.query(h0.points )
+    h0["distances"] = d_kdtree
+    np.mean(d_kdtree)
 
 
 
@@ -206,7 +221,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-99
+.. GENERATED FROM PYTHON SOURCE LINES 111-117
 
 .. code-block:: default
 
@@ -214,6 +229,8 @@ noticeably faster than a ray trace, especially for large surfaces.
     p.add_mesh(h0, scalars="distances", smooth_shading=True)
     p.add_mesh(h1, color=True, opacity=0.75, smooth_shading=True)
     p.show()
+
+
 
 
 
@@ -226,10 +243,73 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 118-125
+
+Using PyVista Filter
+++++++++++++++++++++
+
+The :func:`pyvista.DataSet.find_closest_cell` filter returns the spatial
+points inside the cells of the top surface that are closest to the vertex
+points of the bottom surface.  ``closest_points`` is returned when using
+``return_closest_point=True``.
+
+.. GENERATED FROM PYTHON SOURCE LINES 125-133
+
+.. code-block:: default
+
+
+    closest_cells, closest_points = h1.find_closest_cell(h0.points,
+                                                         return_closest_point=True)
+    d_exact = np.linalg.norm(h0.points - closest_points, axis=1)
+    h0["distances"] = d_exact
+    np.mean(d_exact)
+
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    4.841284537743174
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 134-136
+
+As expected there is only a small difference between this method and the
+KDTree method.
+
+.. GENERATED FROM PYTHON SOURCE LINES 136-141
+
+.. code-block:: default
+
+
+    p = pv.Plotter()
+    p.add_mesh(h0, scalars="distances", smooth_shading=True)
+    p.add_mesh(h1, color=True, opacity=0.75, smooth_shading=True)
+    p.show()
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
+   :alt: distance between surfaces
+   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.780 seconds)
+   **Total running time of the script:** ( 0 minutes  4.135 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:
