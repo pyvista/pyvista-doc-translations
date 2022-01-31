@@ -3742,9 +3742,9 @@ msgid ""
 "aspects of the distance from the vertex points of the bottom mesh to the top"
 " mesh."
 msgstr ""
-"この例では、用語を明確にすることが重要です。 メッシュポイントは、メッシュ上の各セルの頂点に存在します。 :ref:`what_is_a_mesh` "
-"を参照してください。この例の各セルは、無限の空間ポイントを含む2Dの空間領域を包含しています。これらの空間ポイントはメッシュポイントではありません。2つのサーフェス間の距離は、文脈や使用方法によって異なる意味を持ちます。"
-" ここでの各例では、下のメッシュの頂点から上のメッシュまでの距離の異なる側面を探っています。"
+"この例では，用語を明確にすることが重要です． メッシュポイントは，メッシュ上の各セルの頂点に存在します． :ref:`what_is_a_mesh` "
+"を参照してください．この例の各セルは，無限の空間ポイントを含む2Dの空間領域を包含しています．これらの空間ポイントはメッシュポイントではありません．2つのサーフェス間の距離は，文脈や使用方法によって異なる意味を持ちます．"
+" ここでの各例では，下のメッシュの頂点から上のメッシュまでの距離の異なる側面を探っています．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:38
 msgid ""
@@ -3753,13 +3753,13 @@ msgid ""
 "compute the distance along the surface normals. This ray will usually "
 "intersect the top surface at a spatial point inside a cell of the mesh."
 msgstr ""
-"まず、下面の頂点の法線を計算し、上面に光線を投影して、表面の法線に沿った距離を計算する方法をデモします。このレイは通常、メッシュのセル内の空間点で上面と交差します。"
+"まず，下面の頂点の法線を計算し，上面に光線を投影して，表面の法線に沿った距離を計算する方法をデモします．このレイは通常，メッシュのセル内の空間点で上面と交差します．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:43
 msgid ""
 "Second, we will use a KDTree to compute the distance from every vertex point"
 " in the bottom mesh to its closest vertex point in the top mesh."
-msgstr "次に、KDTreeを使って、下のメッシュの各頂点から上のメッシュの最も近い頂点までの距離を計算します。"
+msgstr "次に，KDTreeを使って，下のメッシュの各頂点から上のメッシュの最も近い頂点までの距離を計算します．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:46
 msgid ""
@@ -3769,9 +3769,9 @@ msgid ""
 "cell of the top mesh.  This will be the shortest distance from the vertex "
 "point to the top surface, unlike the first two examples."
 msgstr ""
-"最後に、PyVistaのフィルタである :func:`pyvista.DataSet.find_closest_cell` "
-"を使って、下のメッシュのすべての頂点から、上のメッシュのセル内にある最も近い空間点までの距離を計算します。 "
-"これは、最初の2つの例とは異なり、頂点点から上面までの最短距離となります。"
+"最後に，PyVistaのフィルタである :func:`pyvista.DataSet.find_closest_cell` "
+"を使って，下のメッシュのすべての頂点から，上のメッシュのセル内にある最も近い空間点までの距離を計算します． "
+"これは，最初の2つの例とは異なり，頂点点から上面までの最短距離となります．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:107
 msgid "Ray Tracing Distance"
@@ -3812,14 +3812,14 @@ msgid ""
 "``return_closest_point=True``."
 msgstr ""
 ":func:`pyvista.DataSet.find_closest_cell` "
-"フィルタは、上面のセルの中で、下面の頂点ポイントに最も近い空間ポイントを返します。 ``return_closest_point=True`` "
-"を使用すると、 ``closest_points`` が返されます。"
+"フィルタは，上面のセルの中で，下面の頂点ポイントに最も近い空間ポイントを返します． ``return_closest_point=True`` "
+"を使用すると， ``closest_points`` が返されます．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:285
 msgid ""
 "As expected there is only a small difference between this method and the "
 "KDTree method."
-msgstr "予想通り、この方法とKDTree法の間にはわずかな違いしかありません。"
+msgstr "予想通り，この方法とKDTree法の間にはわずかな違いしかありません．"
 
 #: ../../pyvista/doc/examples/01-filter/distance-between-surfaces.rst:312
 msgid "**Total running time of the script:** ( 0 minutes  4.135 seconds)"
