@@ -31,14 +31,18 @@ Orbit around a scene.
    ``p.open_gif('orbit.gif')``
 
 For orbiting to work you first have to show the scene and leave the plotter open
-with ``.show(auto_close=False)``.
+with ``.show(auto_close=False)``.  You may also have to set
+``pv.Plotter(off_screen=True)``
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-24
+.. note::
+   Use ``lighting=False`` to reduce the size of the color space to avoid
+   "jittery" GIFs when showing the scalar bar.
+
+.. GENERATED FROM PYTHON SOURCE LINES 23-29
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -51,18 +55,24 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-34
+.. GENERATED FROM PYTHON SOURCE LINES 31-32
+
+Orbit around the Mt. St Helens dataset.
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-43
 
 .. code-block:: default
 
 
     p = pv.Plotter()
-    p.add_mesh(mesh)
+    p.add_mesh(mesh, lighting=False)
+    p.camera.zoom(1.5)
     p.show(auto_close=False)
     path = p.generate_orbital_path(n_points=36, shift=mesh.length)
     p.open_gif("orbit.gif")
     p.orbit_on_path(path, write_frames=True)
     p.close()
+
 
 
 
@@ -76,13 +86,13 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-47
+.. GENERATED FROM PYTHON SOURCE LINES 44-56
 
 .. code-block:: default
 
 
     p = pv.Plotter()
-    p.add_mesh(mesh)
+    p.add_mesh(mesh, lighting=False)
     p.show_grid()
     p.show(auto_close=False)
     viewup = [0.5, 0.5, 1]
@@ -104,7 +114,7 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+.. GENERATED FROM PYTHON SOURCE LINES 57-61
 
 .. code-block:: default
 
@@ -119,7 +129,7 @@ with ``.show(auto_close=False)``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-60
+.. GENERATED FROM PYTHON SOURCE LINES 62-69
 
 .. code-block:: default
 
@@ -145,7 +155,7 @@ with ``.show(auto_close=False)``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  25.912 seconds)
+   **Total running time of the script:** ( 1 minutes  3.942 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_orbit.py:

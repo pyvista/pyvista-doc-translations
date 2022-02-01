@@ -1604,7 +1604,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Generate a moving gif from an active plotter">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a GIF Movie">
 
 .. only:: html
 

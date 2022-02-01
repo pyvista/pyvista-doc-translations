@@ -22,10 +22,13 @@
 
 Create a GIF Movie
 ~~~~~~~~~~~~~~~~~~
+Generate a moving gif from an active plotter.
 
-Generate a moving gif from an active plotter
+.. note::
+   Use ``lighting=False`` to reduce the size of the color space to avoid
+   "jittery" GIFs, especially for the scalar bar.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-47
+.. GENERATED FROM PYTHON SOURCE LINES 13-56
 
 
 
@@ -45,8 +48,8 @@ Generate a moving gif from an active plotter
 
     import pyvista as pv
 
-    x = np.arange(-10, 10, 0.25)
-    y = np.arange(-10, 10, 0.25)
+    x = np.arange(-10, 10, 0.5)
+    y = np.arange(-10, 10, 0.5)
     x, y = np.meshgrid(x, y)
     r = np.sqrt(x ** 2 + y ** 2)
     z = np.sin(r)
@@ -56,7 +59,14 @@ Generate a moving gif from an active plotter
 
     # Create a plotter object and set the scalars to the Z height
     plotter = pv.Plotter(notebook=False, off_screen=True)
-    plotter.add_mesh(grid, scalars=z.ravel(), smooth_shading=True)
+    plotter.add_mesh(
+        grid,
+        scalars=z.ravel(),
+        lighting=False,
+        show_edges=True,
+        scalar_bar_args={"title": "Height"},
+        clim=[-1, 1],
+    )
 
     # Open a gif
     plotter.open_gif("wave.gif")
@@ -71,9 +81,7 @@ Generate a moving gif from an active plotter
         plotter.update_coordinates(pts, render=False)
         plotter.update_scalars(z.ravel(), render=False)
 
-        # must update normals when smooth shading is enabled
-        plotter.mesh.compute_normals(cell_normals=False, inplace=True)
-        plotter.render()
+        # Write a frame. This triggers a render.
         plotter.write_frame()
 
     # Closes and finalizes movie
@@ -82,7 +90,7 @@ Generate a moving gif from an active plotter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.425 seconds)
+   **Total running time of the script:** ( 0 minutes  3.174 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

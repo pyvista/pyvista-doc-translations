@@ -137,19 +137,24 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-66
+.. GENERATED FROM PYTHON SOURCE LINES 34-71
 
 .. code-block:: default
 
 
     filename = "isovalue.gif"
 
-    plotter = pv.Plotter()
+    plotter = pv.Plotter(off_screen=True)
     # Open a movie file
     plotter.open_gif(filename)
 
     # Add initial mesh
-    plotter.add_mesh(surface, opacity=0.5, clim=vol.get_data_range())
+    plotter.add_mesh(
+        surface,
+        opacity=0.5,
+        clim=vol.get_data_range(),
+        show_scalar_bar=False,
+    )
     # Add outline for reference
     plotter.add_mesh(vol.outline_corners(), color='k')
 
@@ -196,7 +201,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  44.494 seconds)
+   **Total running time of the script:** ( 0 minutes  45.407 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:
