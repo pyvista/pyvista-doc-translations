@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.34.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-30 00:51+0000\n"
+"POT-Creation-Date: 2022-02-05 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -866,17 +866,21 @@ msgstr "CIサービスでの実行"
 
 #: ../../pyvista/doc/getting-started/installation.rst:154
 msgid ""
-"Please head over to `pyvista/gl-ci-hepers`_ for details on setting up CI "
-"services like Travis and Azure Pipelines to run PyVista."
+"Please head over to `pyvista/setup-headless-display-action`_ for details on "
+"setting up a headless display in GitHub Actions Workflows using PyVista."
 msgstr ""
-"TravisやAzure PipelinesのようなCIサービスをPyVistaで動作させるための設定の詳細については `pyvista/gl-ci-"
-"hepers`_ を参照してください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:161
+#: ../../pyvista/doc/getting-started/installation.rst:157
+msgid ""
+"In the past, we have also supported `pyvista/gl-ci-hepers`_ for setting up "
+"CI services like Travis and Azure Pipelines to run PyVista."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:165
 msgid "Running on MyBinder"
 msgstr "MyBinderでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:162
+#: ../../pyvista/doc/getting-started/installation.rst:166
 msgid ""
 "This section is for advanced users that would like to install and use "
 "PyVista with headless displays on notebook hosting services like MyBinder_."
@@ -884,7 +888,7 @@ msgstr ""
 "このセクションは， MyBinder_ "
 "のようなノートブックホスティングサービスで，ヘッドレスディスプレイでPyVistaをインストールして使いたい上級ユーザ向けです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:165
+#: ../../pyvista/doc/getting-started/installation.rst:169
 msgid ""
 "Please see `this project`_ for a convenient Cookiecutter_ to get started "
 "using PyVista on the notebook hosting service MyBinder_."
@@ -892,7 +896,7 @@ msgstr ""
 "ノートPCホスティングサービス MyBinder_ でPyVistaを使い始めるのに便利な Cookiecutter_ については `this "
 "project`_ を見てください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:172
+#: ../../pyvista/doc/getting-started/installation.rst:176
 msgid ""
 "To get started, the Docker container will need to have ``libgl1-mesa-dev`` "
 "and ``xvfb`` installed through ``apt-get``. For MyBinder, include the "
@@ -901,7 +905,7 @@ msgstr ""
 "まず，Dockerコンテナに ``apt-get`` を使って ``libgl1-mesa-dev`` と ``xvfb`` "
 "をインストールする必要がある．MyBinderの場合は， ``apt.txt`` というファイルに以下を含めてください::"
 
-#: ../../pyvista/doc/getting-started/installation.rst:179
+#: ../../pyvista/doc/getting-started/installation.rst:183
 msgid ""
 "Then, you need to configure the headless display, for MyBinder, create a "
 "file called ``start`` and include the following set up script that will run "
@@ -910,7 +914,7 @@ msgstr ""
 "次に，MyBinderでヘッドレスディスプレイを設定し， ``start`` "
 "というファイルを作成し，Dockerコンテナが起動されるたびに実行される以下の設定スクリプトを含める必要があります．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:197
+#: ../../pyvista/doc/getting-started/installation.rst:201
 msgid ""
 "And that's it! Include PyVista in your Python requirements and get to "
 "visualizing your data! If you need more help than this on setting up PyVista"
@@ -921,11 +925,11 @@ msgstr ""
 "以上です!Python要件にPyVistaを組み込んで，データを視覚化しましょう．これらのタイプのサービスのためにPyVistaをセットアップするのにこれ以上の助けが必要なら，Slackで開発者とチャットするか，MyBinderで現在PyVistaを使っている"
 " `this repository`_ を見てください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:206
+#: ../../pyvista/doc/getting-started/installation.rst:210
 msgid "Running on Remote Servers"
 msgstr "リモートサーバーでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:207
+#: ../../pyvista/doc/getting-started/installation.rst:211
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -936,29 +940,29 @@ msgstr ""
 "18.04 LTS ( ``us-east-1`` の  ``ami-0a313d6098716f372`` "
 ")でPyVistaを使うための完全なステップを以下に示します．他のサーバも同様に動作します．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:212
+#: ../../pyvista/doc/getting-started/installation.rst:216
 msgid ""
 "After logging into the remote server, install Miniconda and related "
 "packages:"
 msgstr "リモートサーバにログインしたら，Minicondaと関連するパッケージをインストールします:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:229
+#: ../../pyvista/doc/getting-started/installation.rst:233
 msgid "Then, configure the headless display:"
 msgstr "次に，ヘッドレスディスプレイを設定します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:240
+#: ../../pyvista/doc/getting-started/installation.rst:244
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr "ポート転送を使用してサーバーに再接続し，Jupyterを起動します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:248
+#: ../../pyvista/doc/getting-started/installation.rst:252
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr "Webブラウザで ``localhost:8888`` にアクセスします．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:252
+#: ../../pyvista/doc/getting-started/installation.rst:256
 msgid "Running with Sphinx-Gallery"
 msgstr "Sphinx-Galleryでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:253
+#: ../../pyvista/doc/getting-started/installation.rst:257
 msgid "In your ``conf.py``, add the following:"
 msgstr "あなたの ``conf.py`` に, 次を追加します．"
 
