@@ -1772,6 +1772,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a GIF Movie of a Static Object with a Moving Colormap">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_moving_cmap_thumb.png
+     :alt: Create a GIF Movie of a Static Object with a Moving Colormap
+
+     :ref:`sphx_glr_examples_02-plot_moving_cmap.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/moving_cmap
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip=" Subplotting: having multiple scenes in a single window">
 
 .. only:: html
