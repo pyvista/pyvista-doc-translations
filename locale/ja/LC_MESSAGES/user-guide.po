@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.34.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-17 00:48+0000\n"
+"POT-Creation-Date: 2022-02-07 00:44+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -1526,16 +1526,7 @@ msgstr ""
 msgid "Using ``ipyvtklink`` with PyVista"
 msgstr "PyVistaで ``ipyvtklink`` を使う"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:7
-msgid ""
-"As of version ``0.1.4``, ``ipyvtklink`` does not support Jupyterlab 3.  "
-"Attempting to run the following will return a ``Model not found`` error "
-"within jupyterlab."
-msgstr ""
-"バージョン ``0.1.4`` の時点では， ``ipyvtklink`` はJupyterlab "
-"3をサポートしていません．次のコマンドを実行しようとすると，jupyterlab内で ``Model not found`` エラーが返されます．"
-
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:11
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
 msgid ""
 "``pyvista`` has the ability to display fully featured plots within a "
 "JupyterLab environment using ``ipyvtklink``.  This feature works by "
@@ -1545,52 +1536,51 @@ msgstr ""
 "``pyvista`` には， ``ipyvtklink`` "
 "を使用して，JupyterLab環境内にフル機能のプロットを表示する機能があります．この機能は，現在のレンダリングウィンドウをJupyterLab内のキャンバスにストリーミングし，キャンバスからのユーザアクションをすべてVTKレンダリングウィンドウに戻すことで機能します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:17
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:12
 msgid ""
 "While this isn't an exciting feature when JupyterLab is being run locally, "
 "this has huge implications when plotting remotely as you can display any "
-"plot (except for those with multiple render windows) from JupyterLab."
+"plot, with subplots and widgets, from JupyterLab."
 msgstr ""
-"JupyterLabがローカルで実行されている場合，これはエキサイティングな機能ではありませんが，JupyterLabから任意のプロット(複数のレンダーウィンドウがある場合を除く)を表示できるため，リモートでプロットする場合には大きな意味があります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:22
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:16
 msgid ""
 "For example, both sections of code will display an interactive canvas within"
 " JupyterLab:"
 msgstr "たとえば，コードの両方のセクションは，JupyterLab内に対話型キャンバスを表示します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:38
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:32
 msgid "For convenience, you can enable ``ipyvtklink`` by default with:"
 msgstr "便宜上， ``ipyvtklink`` をデフォルトで有効にするには，次のコマンドを使用します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:47
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:41
 #: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:27
 msgid "Installation"
 msgstr "インストール"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:42
 msgid ""
 "If you're using an Anaconda environment, installation is the quite "
 "straightforward:"
 msgstr "Anaconda環境を使用している場合，インストールは非常に簡単です．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:56
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
 msgid "Where environment.yml is:"
 msgstr "ここで， environment.yml は次のとおりです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:69
-msgid "On Linux, you can setup your jupyterlab environment with:"
-msgstr "Linuxでは，次のようにしてjupyterlab環境をセットアップすることができます．"
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:62
+msgid "Using pip, you can setup your jupyterlab environment with:"
+msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:80
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:71
 msgid "Other Considerations"
 msgstr "その他の考慮事項"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:81
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:72
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr "GPUアクセラレーションを使用する価値があるかもしれません． :ref:`gpu_off_screen` を参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:83
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:74
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
@@ -1598,7 +1588,7 @@ msgstr ""
 "GPUアクセラレーションを使用していない場合は，必ず ``Xvfb`` "
 "を使用して仮想フレームバッファを起動してください．bashを使用して起動するには，次のようにします．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:98
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:89
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
