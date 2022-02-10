@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.34.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-30 00:51+0000\n"
+"POT-Creation-Date: 2022-02-10 00:43+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -39,43 +39,39 @@ msgstr ""
 
 #: ../../pyvista/doc/extras/building_vtk.rst:11
 msgid ""
-"Should you need a prebuilt wheel, a variety of prebuilt wheels (including "
-"ones with EGL) can be found at `pyvista Release 0.31.0 "
-"<https://github.com/pyvista/pyvista/releases/tag/0.31.0>`_.  This includes "
-"wheels for Raspberry Pi (64-bit OS), Python 3.9 Linux, and EGL support "
-"(``arch64`` and ``x86_64``)."
+"Should you need a prebuilt wheel, a variety of prebuilt wheels can be found "
+"at `pyvista-wheels <https://github.com/pyvista/pyvista-wheels>`_, but you "
+"may be better off building your own."
 msgstr ""
-"ビルトイン wheel が必要な場合は， `pyvista Release 0.31.0 "
-"<https://github.com/pyvista/pyvista/releases/tag/0.31.0>`_ でさまざまなビルトイン wheel"
-" (EGLを含む)を見ることができます．これにはRaspberry Pi (64ビットOS) ，Python3.9 Linux，EGLサポート ( "
-"``arch64`` と ``x86_64`` ) 用の wheel が含まれています．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:19
-msgid "Wheels on Linux and Mac OS"
-msgstr "LinuxおよびMac OSのwheel"
-
-#: ../../pyvista/doc/extras/building_vtk.rst:20
+#: ../../pyvista/doc/extras/building_vtk.rst:15
 msgid ""
-"Building VTK from source on Linux and MacOS is fairly easy.  Using the "
-"default build settings, build a Python wheel of VTK using ``ninja`` using "
-"the following script.  This script uses system python3, but you can use any "
-"modern Python version.  For some additional useful options, see the `conda-"
-"forge recipe <https://github.com/conda-forge/vtk-"
+"Reference the official directions for `Building VTK "
+"<https://gitlab.kitware.com/vtk/vtk/-/blob/master/Documentation/dev/build.md>`_."
+" The following directions assume you want to build a Python wheel non-"
+"standard situations like EGL."
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:22
+msgid "Building Wheels"
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:23
+msgid ""
+"Building VTK from source is fairly straightforward.  Using the default build"
+" settings, build a Python wheel of VTK using ``ninja`` using the following "
+"script.  This script uses system python3, but you can use any modern Python "
+"version.  For some additional useful options, see the `conda-forge recipe "
+"<https://github.com/conda-forge/vtk-"
 "feedstock/blob/master/recipe/build.sh>`__. Most of the ones below are "
 "designed to reduce the build time and resulting wheel size."
 msgstr ""
-"Linux上でソースからVTKを構築するのはかなり簡単です．デフォルトのビルド設定を使用し，次のスクリプトを使用して ``ninja`` "
-"を使用し，VTKのPythonホイールをビルドします．このスクリプトはpython "
-"3を使用していますが，最新のPythonバージョンを使用することができます．その他の便利なオプションについては， `conda-forge recipe"
-" <https://github.com/conda-forge/vtk-"
-"feedstock/blob/master/recipe/build.sh>`__ "
-"を参照してください．以下のほとんどのオプションは，構築時間を短縮し，ホイールサイズを小さくするように設計されています．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:69
+#: ../../pyvista/doc/extras/building_vtk.rst:71
 msgid "Off-Screen Plotting GPU Support"
 msgstr "オフスクリーンプロットのGPUサポート"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:70
+#: ../../pyvista/doc/extras/building_vtk.rst:72
 msgid ""
 "VTK supports rendering with EGL, enabling rapid off-screen rendering using "
 "GPU hardware acceleration without installing a virtual framebuffer.  The "
@@ -86,7 +82,7 @@ msgstr ""
 "VTKはEGLを使用したレンダリングをサポートしており，仮想フレームバッファをインストールせずにGPUハードウェアアクセラレーションを使用して迅速なオフスクリーンレンダリングを可能にします．デフォルトのVTKホイールにはこの機能はありませんが，上記の"
 " ``cmake`` コマンドを次のように変更することで，GPUサポートを使用したオフスクリーンVTKを作成できます．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:86
+#: ../../pyvista/doc/extras/building_vtk.rst:113
 msgid ""
 "This disables any plotting using the X server, so be prepared to use this "
 "module only on a headless display where you either intend to save static "
@@ -100,11 +96,25 @@ msgstr ""
 " ``pyvista.set_jupyter_backend('ipyvtklink')`` "
 "とjupyterlab)とともに別のコンピュータにストリーミングする予定のあるヘッドレスディスプレイでのみ使用するようにしてください．言い換えれば，このホイールはVTKをスクリーン外の環境では使えなくするので，Xサーバのないヘッドレスシステムにインストールすることだけを計画してください．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:96
+#: ../../pyvista/doc/extras/building_vtk.rst:123
+msgid "Building OSMesa"
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:124
+msgid ""
+"OSMesa provides higher visualization performance on CPU based hosts. Use "
+"this instead of ``xvfb``:"
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:157
+msgid "Wheels will be generated in the ``dist`` directory."
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:161
 msgid "Building ManyLinux Wheels"
 msgstr "ManyLinux wheel の構築"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:97
+#: ../../pyvista/doc/extras/building_vtk.rst:162
 msgid ""
 "The above directions are great for building a local build of VTK, but these "
 "wheels are difficult to share outside your local install given issues with "
@@ -116,21 +126,21 @@ msgstr ""
 " `manylinux <https://github.com/pypa/manylinux>`_ "
 "のdockerイメージを使ってwheelをビルドします．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:163
+#: ../../pyvista/doc/extras/building_vtk.rst:228
 msgid "This script can be called with:"
 msgstr "このスクリプトは，次のコマンドで呼び出すことができます:"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:173
+#: ../../pyvista/doc/extras/building_vtk.rst:238
 msgid ""
 "To build the EGL version of the wheel, follow the directions in the previous"
 " section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
 msgstr "EGLバージョンのwheelを作成するには，前のセクションの指示に従ってください．インストール依存関係にAAAAAを追加します．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:179
+#: ../../pyvista/doc/extras/building_vtk.rst:244
 msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
 msgstr "Raspberry Pi上のPython VTK Wheel(64ビット)構築"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:180
+#: ../../pyvista/doc/extras/building_vtk.rst:245
 msgid ""
 "While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
 "several issues that crop up when building wheels for the 32-bit version (see"
@@ -145,7 +155,7 @@ msgstr ""
 "<https://github.com/dockcross/dockcross>`_ "
 "を使ってwheelを構築してみてください．そうしないとメモリの制限が生じる可能性があります(特に1GBのRAMしかない場合)．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:188
+#: ../../pyvista/doc/extras/building_vtk.rst:253
 msgid ""
 "Building the ``aarch64`` manylinux wheel can be done via docker with the "
 "``quay.io/pypa/manylinux2014_aarch64`` image.  Run the following:"
@@ -153,36 +163,22 @@ msgstr ""
 "``aarch64``  manylinux wheel のビルドは， ``quay.io/pypa/manylinux2014_aarch64`` "
 "イメージを使ったDockerで行うことができます．以下を実行します:"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:199
+#: ../../pyvista/doc/extras/building_vtk.rst:264
 msgid "Where ``build_wheels.sh`` is:"
 msgstr "ここで， ``build_wheels.sh`` は次のようになります:"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:262
+#: ../../pyvista/doc/extras/building_vtk.rst:327
 msgid ""
 "Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
 "you want ``EGL`` enabled for your wheel."
 msgstr ""
 "wheelで ``EGL`` を有効にするかどうかに応じて， ``DVTK_OPENGL_HAS_EGL`` を有効または無効にしてください．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:267
-msgid "Building VTK on Windows"
-msgstr "WindowsでのVTKの構築"
-
-#: ../../pyvista/doc/extras/building_vtk.rst:268
-msgid ""
-"Please reference the directions at `Building VTK with Windows "
-"<https://vtk.org/Wiki/VTK/Configure_and_Build#On_Windows_5>`_.  This is "
-"generally a non-trivial process and is not for the faint-hearted."
-msgstr ""
-"`Building VTK with Windows "
-"<https://vtk.org/Wiki/VTK/Configure_and_Build#On_Windows_5>`_ "
-"の指示を参照してください．これは一般的に簡単なプロセスではなく，気の弱い人のためのものではありません．"
-
-#: ../../pyvista/doc/extras/developer_notes.rst:4
+#: ../../pyvista/CONTRIBUTING.rst:2
 msgid "Contributing"
 msgstr "貢献"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:6
+#: ../../pyvista/CONTRIBUTING.rst:4
 msgid ""
 "We absolutely welcome contributions and we hope that this guide will "
 "facilitate an understanding of the PyVista code repository. It is important "
@@ -192,17 +188,17 @@ msgid ""
 msgstr ""
 "私たちは貢献を心から歓迎し，このガイドがPyVistaコードリポジトリの理解を促進することを願っています．PyVistaソフトウェアパッケージはボランティアベースでメンテナンスされていることに注意してください．したがって，このソフトウェアをすべてのユーザにとって有用なツールにするために，ユーザの質問をサポートし，新しい機能を開発できるコミュニティを育成する必要があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:13
+#: ../../pyvista/CONTRIBUTING.rst:11
 msgid ""
 "This page is dedicated to outline where you should start with your question,"
 " concern, feature request, or desire to contribute."
 msgstr "このページでは，質問，懸念，機能のリクエスト，または貢献したいことから始めるべき概要を説明します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:17
+#: ../../pyvista/CONTRIBUTING.rst:15
 msgid "Cloning the Source Repository"
 msgstr "ソースリポジトリのクローン作成"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:19
+#: ../../pyvista/CONTRIBUTING.rst:17
 msgid ""
 "You can clone the source repository from "
 "``https://github.com/pyvista/pyvista`` and install the latest version by "
@@ -211,25 +207,22 @@ msgstr ""
 "次のコマンドを実行して， ``https://github.com/pyvista/pyvista`` "
 "からソースリポジトリをクローンし，最新バージョンをインストールできます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:31
+#: ../../pyvista/CONTRIBUTING.rst:28
 msgid "Questions"
 msgstr "質問"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:33
+#: ../../pyvista/CONTRIBUTING.rst:30
 msgid ""
 "For general questions about the project, its applications, or about software"
-" usage, please create a discussion in `pyvista/discussions "
-"<https://github.com/pyvista/pyvista/discussions>`__ where the community can "
-"collectively address your questions. You are also welcome to join us on "
-"`Slack <http://slack.pyvista.org>`__ or send one of the developers an email."
-" The project support team can be reached at info@pyvista.org"
+" usage, please create a discussion in the `Discussions "
+"<https://github.com/pyvista/pyvista/discussions>`__ repository where the "
+"community can collectively address your questions. You are also welcome to "
+"join us on `Slack <http://slack.pyvista.org>`__ or send one of the "
+"developers an email. The project support team can be reached at "
+"info@pyvista.org"
 msgstr ""
-"プロジェクト，そのアプリケーション，またはソフトウェアの使用についての一般的な質問については，コミュニティが集合的にあなたの質問に答えることができる "
-"`pyvista/discussions <https://github.com/pyvista/pyvista/discussions>`__ "
-"でディスカッションを作成してください．また， `Slack <http://slack.pyvista.org>`__ "
-"に参加したり，開発者の一人に電子メールを送ったりすることもできます．プロジェクト・サポート・チームの連絡先はinfo@pyvista.orgです．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:41
+#: ../../pyvista/CONTRIBUTING.rst:38
 msgid ""
 "For more technical questions, you are welcome to create an issue on the "
 "`issues page <https://github.com/pyvista/pyvista/issues>`__ which we will "
@@ -240,11 +233,11 @@ msgstr ""
 "より技術的な質問については， `issues ページ <https://github.com/pyvista/pyvista/issues>`__ "
 "で問題を作成していただければ，すぐに対処いたします．問題のページに投稿することで，必要な専門知識を持つコミュニティメンバーが問題に対処でき，得られた情報は他のユーザーの問題のページで引き続き利用できます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:49
+#: ../../pyvista/CONTRIBUTING.rst:46
 msgid "Reporting Bugs"
 msgstr "バグの報告"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:51
+#: ../../pyvista/CONTRIBUTING.rst:48
 msgid ""
 "If you stumble across any bugs, crashes, or concerning quirks while using "
 "code distributed here, please report it on the `issues page "
@@ -257,11 +250,11 @@ msgstr ""
 "<https://github.com/pyvista/pyvista/issues>`__ "
 "に報告してください．問題を報告する際は，再現できるように，過度に記述してください．可能な限り，トレースバック，スクリーンショット，およびサンプルファイルを提供してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:60
+#: ../../pyvista/CONTRIBUTING.rst:57
 msgid "Feature Requests"
 msgstr "機能の要望"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:62
+#: ../../pyvista/CONTRIBUTING.rst:59
 msgid ""
 "We encourage users to submit ideas for improvements to PyVista code base! "
 "Please create an issue on the `issues page "
@@ -271,23 +264,17 @@ msgid ""
 "functionality. For example, if you would like a reader for a specific file "
 "format, please provide a link to documentation of that file format and "
 "possibly provide some sample files with screenshots to work with. We will "
-"use the issue thread as a place to discuss and provide feedback. We also "
-"want to know how our library is used. If you use this library or find a "
-"great example `using PyVista "
-"<https://github.com/pyvista/pyvista/network/dependents>`__, you can also "
-"report it as a *Feature Request*."
+"use the issue thread as a place to discuss and provide feedback."
 msgstr ""
 "PyVistaのコードベースを改善するためのアイデアを投稿することを推奨します! `issuesページ "
 "<https://github.com/pyvista/pyvista/issues>`__ に *Feature Request* "
-"ラベルをつけて改善を提案してください．説明的なタイトルを使用し，コミュニティがその機能を実装するのに役立つ十分な背景情報を提供してください．たとえば，特定のファイル形式のリーダーが必要な場合は，そのファイル形式のドキュメントへのリンクを提供し，操作するスクリーンショットを含むサンプルファイルを提供してください．問題のスレッドをディスカッションの場として使用し，フィードバックを提供します．また，私たちのライブラリがどのように使用されているのかも知りたいです．もしあなたがこのライブラリを使っていたり，"
-" `PyVistaを使った <https://github.com/pyvista/pyvista/network/dependents>`__ "
-"素晴らしい例を見つけたりしたら，*Feature Request*として報告することもできます．"
+"ラベルをつけて改善を提案してください．説明的なタイトルを使用し，コミュニティがその機能を実装するのに役立つ十分な背景情報を提供してください．たとえば，特定のファイル形式のリーダーが必要な場合は，そのファイル形式のドキュメントへのリンクを提供し，操作するスクリーンショットを含むサンプルファイルを提供してください．問題のスレッドをディスカッションの場として使用し，フィードバックを提供します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:78
+#: ../../pyvista/CONTRIBUTING.rst:71
 msgid "Contributing New Code"
 msgstr "新しいコードの提供"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:80
+#: ../../pyvista/CONTRIBUTING.rst:73
 msgid ""
 "If you have an idea for how to improve PyVista, please first create an issue"
 " as a feature request which we can use as a discussion thread to work "
@@ -295,7 +282,7 @@ msgid ""
 msgstr ""
 "PyVistaを改善する方法についてアイデアがある場合は，まず機能リクエストとして問題を作成してください．これは，コントリビューションの実装方法を検討するためのスレッドとして使用できます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:84
+#: ../../pyvista/CONTRIBUTING.rst:77
 msgid ""
 "Once you are ready to start coding and develop for PyVista, please see the "
 "`Development Practices <#development-practices>`__ section for more details."
@@ -303,11 +290,11 @@ msgstr ""
 "PyVista用のコーディングと開発を始める準備ができたら，詳細については `Development Practices <#development-"
 "practices>`__ セクションを参照してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:89
+#: ../../pyvista/CONTRIBUTING.rst:82
 msgid "Licensing"
 msgstr "ライセンス"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:91
+#: ../../pyvista/CONTRIBUTING.rst:84
 msgid ""
 "All contributed code will be licensed under The MIT License found in the "
 "repository. If you did not write the code yourself, it is your "
@@ -317,11 +304,11 @@ msgid ""
 msgstr ""
 "コントリビュートされたコードはすべて，リポジトリーにあるMITライセンスの下でライセンスされます．自分でコードを作成しなかった場合は，既存のライセンスに互換性があり，コントリビュートされたファイルに含まれていることを確認するか，元の作成者からコードを再ライセンスする許可を得る必要があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:100
+#: ../../pyvista/CONTRIBUTING.rst:93
 msgid "Development Practices"
 msgstr "開発手法"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:102
+#: ../../pyvista/CONTRIBUTING.rst:95
 msgid ""
 "This section provides a guide to how we conduct development in the PyVista "
 "repository. Please follow the practices outlined here when contributing "
@@ -329,11 +316,11 @@ msgid ""
 msgstr ""
 "この節では，PyVistaリポジトリで開発を行う方法について説明します．このリポジトリに直接コントリビュートする場合は，ここで説明するプラクティスに従ってください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:107
+#: ../../pyvista/CONTRIBUTING.rst:100
 msgid "Guidelines"
 msgstr "ガイドライン"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:109
+#: ../../pyvista/CONTRIBUTING.rst:102
 msgid ""
 "Through direct access to the Visualization Toolkit (VTK) via direct array "
 "access and intuitive Python properties, we hope to make the entire VTK "
@@ -344,7 +331,7 @@ msgstr ""
 "配列への直接アクセスと直感的なPythonプロパティを介したVisualization Toolkit (VTK) "
 "への直接アクセスにより，VTKライブラリ全体をあらゆる分野の研究者が容易にアクセスできるようにしたいと考えています．PyVistaをVTKの事実上のPythonインターフェースにするためには，さらに改善するために皆さんの助けが必要です!"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:115
+#: ../../pyvista/CONTRIBUTING.rst:108
 msgid ""
 "If you want to add one or two interesting analysis algorithms as filters, "
 "implement a new plotting routine, or just fix 1-2 typos - your efforts are "
@@ -352,40 +339,36 @@ msgid ""
 msgstr ""
 "1つか2つの興味深い解析アルゴリズムをフィルタとして追加したい場合，新しいプロットルーチンを実装したい場合，あるいは1-2のタイプミスを修正したい場合，あなたの努力は大歓迎です!"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:119
+#: ../../pyvista/CONTRIBUTING.rst:112
 msgid "There are three general coding paradigms that we believe in:"
 msgstr "私たちが信じている3つの一般的なコーディングパラダイムがあります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:121
+#: ../../pyvista/CONTRIBUTING.rst:114
 msgid ""
-"**Make it intuitive**. PyVista's goal is to create an intuitive and easy to "
+"**Make it intuitive**. PyVista’s goal is to create an intuitive and easy to "
 "use interface back to the VTK library. Any new features should have "
 "intuitive naming conventions and explicit keyword arguments for users to "
 "make the bulk of the library accessible to novice users."
 msgstr ""
-"**直感的な操作**． "
-"PyVistaの目標は，直感的で使いやすいインターフェースをVTKライブラリーに戻すことです．すべての新機能には，初心者ユーザがライブラリの大部分にアクセスできるように，直感的な命名規則と明示的なキーワード引数が必要です．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:127
+#: ../../pyvista/CONTRIBUTING.rst:120
 msgid ""
 "**Document everything!** At the least, include a docstring for any method or"
 " class added. Do not describe what you are doing but why you are doing it "
-"and provide simple use cases for the new features."
+"and provide a simple example for the new features."
 msgstr ""
-"**すべてをドキュメント化します!** "
-"少なくとも，追加されたメソッドまたはクラスのdocstringを含めます．何をしているのかを説明するのではなく，なぜそうしているのかを説明し，新しい機能の簡単な使用例を示します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:131
+#: ../../pyvista/CONTRIBUTING.rst:124
 msgid ""
 "**Keep it tested**. We aim for a high test coverage. See testing for more "
 "details."
 msgstr "**テストを続ける**． 高いテストカバレッジを目指します．詳細については， テストを参照してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:134
+#: ../../pyvista/CONTRIBUTING.rst:127
 msgid "There are two important copyright guidelines:"
 msgstr "著作権に関する2つの重要なガイドラインがあります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:136
+#: ../../pyvista/CONTRIBUTING.rst:129
 msgid ""
 "Please do not include any data sets for which a license is not available or "
 "commercial use is prohibited. Those can undermine the license of the whole "
@@ -393,28 +376,24 @@ msgid ""
 msgstr ""
 "ライセンスが利用できない，または商用使用が禁止されているデータセットは含めないでください．それらはすべてのプロジェクトのライセンスを損なう可能性がある．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:140
+#: ../../pyvista/CONTRIBUTING.rst:133
 msgid ""
-"Do not use code snippets for which a license is not available (e.g. from "
+"Do not use code snippets for which a license is not available (e.g. from "
 "stackoverflow) or commercial use is prohibited. Those can undermine the "
 "license of the whole projects."
 msgstr ""
-"ライセンスが利用できないコードスニペット(stackoverflowなど)や商用使用が禁止されているコードスニペットは使用しないでください．それらはすべてのプロジェクトのライセンスを損なう可能性があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:144
+#: ../../pyvista/CONTRIBUTING.rst:137
 msgid ""
 "Please also take a look at our `Code of Conduct "
-"<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.md>`__"
+"<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.rst>`__"
 msgstr ""
-"私達の `Code of Conduct "
-"<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.md>`__ "
-"もご覧ください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:148
+#: ../../pyvista/CONTRIBUTING.rst:141
 msgid "Contributing to pyvista through GitHub"
 msgstr "GitHub経由でpyvistaにコントリビュートする"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:150
+#: ../../pyvista/CONTRIBUTING.rst:143
 msgid ""
 "To submit new code to pyvista, first fork the `pyvista GitHub Repo "
 "<https://github.com/pyvista/pyvista>`__ and then clone the forked repository"
@@ -427,17 +406,15 @@ msgstr ""
 "をフォークし，フォークしたリポジトリをあなたのコンピュータにクローンします．次に，ローカルリポジトリの `Branch Naming "
 "Conventions Section <#branch-naming-conventions>`__ に基づいて新しいブランチを作成します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:156
+#: ../../pyvista/CONTRIBUTING.rst:149
 msgid ""
-"Next, add your new feature and commit it locally. Be sure to commit often as"
-" it is often helpful to revert to past commits, especially if your change is"
-" complex. Also, be sure to test often. See the `Testing Section "
-"<#testing>`__ below for automating testing."
+"Next, add your new feature and commit it locally. Be sure to commit "
+"frequently as it is often helpful to revert to past commits, especially if "
+"your change is complex. Also, be sure to test often. See the `Testing "
+"Section <#testing>`__ below for automating testing."
 msgstr ""
-"次に，新しい機能を追加し，ローカルでコミットします．特に変更が複雑な場合は，過去のコミットに戻すことが役立つことが多いので，頻繁にコミットするようにしてください．また，頻繁に検査をしてください．テストの自動化については，以下の"
-" `Testing Section <#testing>`__ を参照してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:161
+#: ../../pyvista/CONTRIBUTING.rst:154
 msgid ""
 "When you are ready to submit your code, create a pull request by following "
 "the steps in the `Creating a New Pull Request section <#creating-a-new-pull-"
@@ -446,32 +423,59 @@ msgstr ""
 "コードをサブミットする準備ができたら， `Creating a New Pull Request section <#creating-a-new-"
 "pull-request>`__ の手順に従ってプル要求を作成します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:166
+#: ../../pyvista/CONTRIBUTING.rst:159
 msgid "Coding Style"
 msgstr "コーディングスタイル"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:168
+#: ../../pyvista/CONTRIBUTING.rst:161
 msgid ""
 "We adhere to `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`__ wherever "
 "possible, except that line widths are permitted to go beyond 79 characters "
-"to a max of 90 to 100 characters."
+"to a max of 99 characters for code. This should tend to be the exception "
+"rather than the norm."
 msgstr ""
-"行幅が79文字を超えて90から100文字まで許されることを除き，可能な限り `PEP 8 "
-"<https://www.python.org/dev/peps/pep-0008/>`__ に準拠します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:172
+#: ../../pyvista/CONTRIBUTING.rst:166
 msgid ""
-"Outside of PEP 8, when coding please consider `PEP 20 -- The Zen of Python "
+"As for docstrings, follow the guidelines specified in `PEP 8 Maximum Line "
+"Length <https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`__ of"
+" limiting docstrings to 72 characters per line. This follows the directive:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:172
+msgid ""
+"Some teams strongly prefer a longer line length. For code maintained "
+"exclusively or primarily by a team that can reach agreement on this issue, "
+"it is okay to increase the line length limit up to 99 characters, provided "
+"that comments and docstrings are still wrapped at 72 characters."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:178
+msgid ""
+"Outside of PEP 8, when coding please consider `PEP 20 – The Zen of Python "
 "<https://www.python.org/dev/peps/pep-0020/>`__. When in doubt:"
 msgstr ""
-"PEP 8以外でコーディングする場合は， `PEP 20 -- The Zen of Python "
-"<https://www.python.org/dev/peps/pep-0020/>`__ を考慮してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:180
+#: ../../pyvista/CONTRIBUTING.rst:185
+msgid ""
+"Please also use the linting and format checks through the ``Makefile`` to "
+"make sure your code adheres to our standards regarding trailing white space,"
+" unused imports, and sorting of imports."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:189
+msgid "To test the format locally, run:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:195
+msgid "To automatically sort Python imports, run:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:202
 msgid "Branch Naming Conventions"
 msgstr "ブランチの命名規則"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:182
+#: ../../pyvista/CONTRIBUTING.rst:204
 msgid ""
 "To streamline development, we have the following requirements for naming "
 "branches. These requirements help the core developers know what kind of "
@@ -479,47 +483,47 @@ msgid ""
 msgstr ""
 "開発を効率化するために，ブランチの命名には次の要件があります．これらの要件は，コア開発者がコードを調べる前に，あるブランチがどのような種類の変更を導入しているかを知るのに役立ちます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:186
+#: ../../pyvista/CONTRIBUTING.rst:208
 msgid ""
 "``fix/``: any bug fixes, patches, or experimental changes that are minor"
 msgstr "``fix/``: マイナーなバグ修正，パッチ，または実験的な変更"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:188
+#: ../../pyvista/CONTRIBUTING.rst:210
 msgid ""
 "``feat/``: any changes that introduce a new feature or significant addition"
 msgstr "``feat/``: 新しい特徴または重要な追加を導入する変更"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:190
+#: ../../pyvista/CONTRIBUTING.rst:212
 msgid ""
 "``junk/``: for any experimental changes that can be deleted if gone stale"
 msgstr "``junk/``: 古くなったら削除できる実験的な変更について"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:192
+#: ../../pyvista/CONTRIBUTING.rst:214
 msgid "``maint/``: for general maintenance of the repository or CI routines"
 msgstr "``maint/``: リポジトリまたはCIルーチンの一般的な保守用"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:193
+#: ../../pyvista/CONTRIBUTING.rst:215
 msgid "``doc/``: for any changes only pertaining to documentation"
 msgstr "``doc/``: 文書のみに関連する変更の場合"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:194
+#: ../../pyvista/CONTRIBUTING.rst:216
 msgid ""
 "``no-ci/``: for low impact activity that should NOT trigger the CI routines"
 msgstr "``no-ci/``: CIルーチンをトリガーしてはならない影響の少ないアクティビティの場合"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:196
+#: ../../pyvista/CONTRIBUTING.rst:218
 msgid "``testing/``: improvements or changes to testing"
 msgstr "``testing/``: テストの改善または変更"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:197
+#: ../../pyvista/CONTRIBUTING.rst:219
 msgid "``release/``: releases (see below)"
 msgstr "``release/``: リリース(下記参照)"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:200
+#: ../../pyvista/CONTRIBUTING.rst:222
 msgid "Testing"
 msgstr "テスト"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:202
+#: ../../pyvista/CONTRIBUTING.rst:224
 msgid ""
 "After making changes, please test changes locally before creating a pull "
 "request. The following tests will be executed after any commit or pull "
@@ -528,7 +532,7 @@ msgid ""
 msgstr ""
 "変更を行った後，プル要求を作成する前にローカルで変更をテストしてください．コミットまたはプル要求の後に次のテストが実行されます．変更から新しい問題を追跡するには，ローカルで次の手順を実行してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:207
+#: ../../pyvista/CONTRIBUTING.rst:229
 msgid ""
 "To run our comprehensive suite of unit tests, install all the dependencies "
 "listed in ``requirements_test.txt``, ``requirements_docs.txt``, "
@@ -537,79 +541,85 @@ msgstr ""
 "総合的な単体テストを実行するには， ``requirements_test.txt`` ， ``requirements_docs.txt`` ， "
 "``requirements_style.txt`` にリストされているすべての依存関係をインストールします．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:217
+#: ../../pyvista/CONTRIBUTING.rst:239
 msgid ""
 "Then, if you have everything installed, you can run the various test suites."
 msgstr "すべてをインストールしたら，さまざまなテストスイートを実行できます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:220
+#: ../../pyvista/CONTRIBUTING.rst:242
 msgid "Run the primary test suite and generate coverage report:"
 msgstr "プライマリテストスイートを実行し，カバレッジレポートを生成します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:226
-msgid "Run all code examples in the docstrings:"
-msgstr "docstring内のすべてのコード例を実行します．"
+#: ../../pyvista/CONTRIBUTING.rst:248
+msgid ""
+"Unit testing can take some time, if you wish to speed it up, set the number "
+"of processors with the ``-n`` flag. This uses ``pytest-xdist`` to leverage "
+"multiple processes. Example usage:"
+msgstr ""
 
-#: ../../pyvista/doc/extras/developer_notes.rst:232
-msgid "Run documentation testing by running"
-msgstr "次を実行して，ドキュメントテストを実行します．"
+#: ../../pyvista/CONTRIBUTING.rst:256
+msgid ""
+"Run all code examples in the docstrings. Be sure to export the "
+"``PYVISTA_OFF_SCREEN`` environmental variable to enable off-screen plotting."
+msgstr ""
 
-#: ../../pyvista/doc/extras/developer_notes.rst:238
+#: ../../pyvista/CONTRIBUTING.rst:265
+msgid "Run documentation testing by running:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:271
 msgid "If you are running windows and ``make`` is unavailable, then run:"
 msgstr "Windowsを実行していて ``make`` が使用できない場合は，次のコマンドを実行します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:246
+#: ../../pyvista/CONTRIBUTING.rst:279
 msgid "And finally, test the documentation examples:"
 msgstr "最後に，ドキュメントの例をテストします．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:255
+#: ../../pyvista/CONTRIBUTING.rst:288
 msgid ""
 "The finished documentation can be found in the ``doc/_build/html`` "
 "directory."
 msgstr "完成したドキュメントは ``doc/_build/html`` ディレクトリにあります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:259
+#: ../../pyvista/CONTRIBUTING.rst:292
 msgid "Notes Regarding Image Regression Testing"
 msgstr "イメージ回帰テストに関する注意事項"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:261
+#: ../../pyvista/CONTRIBUTING.rst:294
 msgid ""
-"Since ``pyvista`` is primarily a plotting module, it's imperative we "
+"Since ``pyvista`` is primarily a plotting module, it’s imperative we "
 "actually check the images that we generate in some sort of regression "
-"testing.  In practice, this ends up being quite a bit of work because:"
+"testing. In practice, this ends up being quite a bit of work because:"
 msgstr ""
-"``pyvista`` "
-"は基本的に描画モジュールなので，何らかの回帰テストで生成した画像を実際にチェックする必要があります．実際には，これはかなりの作業になります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:265
+#: ../../pyvista/CONTRIBUTING.rst:298
 msgid ""
-"OpenGL software vs. hardware rending causes slightly different images to be "
+"OpenGL software vs. hardware rending causes slightly different images to be "
 "rendered."
-msgstr "OpenGLソフトウェアとハードウェアレンダリングでは，レンダリングされるイメージがわずかに異なります．"
+msgstr ""
 
-#: ../../pyvista/doc/extras/developer_notes.rst:267
+#: ../../pyvista/CONTRIBUTING.rst:300
 msgid ""
 "We want our CI (which uses a virtual frame buffer) to match our desktop "
 "images (uses hardware acceleration)."
 msgstr ""
 "CI (仮想フレームバッファを使用します)をデスクトップイメージ(ハードウェアアクセラレーションを使用します)と一致させたいと考えています．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:269
+#: ../../pyvista/CONTRIBUTING.rst:302
 msgid "Different OSes render different images."
 msgstr "OSによってレンダリングされるイメージは異なります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:271
+#: ../../pyvista/CONTRIBUTING.rst:304
 msgid ""
 "As each platform and environment renders different slightly images relative "
 "to Linux (which these images were built from), so running these tests across"
-" all OSes isn't optimal.  We could generate different images for each OS, "
-"but it's overkill in my opinion; we need to know if something fundamental "
+" all OSes isn’t optimal. We could generate different images for each OS, but"
+" it’s overkill in my opinion; we need to know if something fundamental "
 "changed with our plotting without actually looking at the plots (like the "
 "docs at dev.pyvista.com)"
 msgstr ""
-"各プラットフォームと環境では，Linuxと比較してわずかに異なるイメージをレンダリングするため(これらの画像は)，すべてのOSでこれらのテストを実行するのは最適ではありません．OSごとに異なるイメージを生成することもできますが，私の意見ではやり過ぎです．プロットを実際に見ることなく，プロットによって何か根本的な変化があったかどうかを知る必要があります(dev.pyvista.comのドキュメントのように)．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:278
+#: ../../pyvista/CONTRIBUTING.rst:311
 msgid ""
 "Based on these points, image regression testing only occurs on Linux CI, and"
 " multi-sampling is disabled as that seems to be one of the biggest "
@@ -618,66 +628,54 @@ msgstr ""
 "これらの点に基づいて，イメージ回帰テストはLinux "
 "CIでのみ行われ，マルチサンプリングは，ソフトウェアベースのレンダリングとハードウェアベースのレンダリングの最大の違いの1つと思われるため，無効になっています．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:282
+#: ../../pyvista/CONTRIBUTING.rst:315
 msgid "Image cache is stored here as ./image_cache"
 msgstr "画像キャッシュは ./image_cache としてここに保存されます"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:284
+#: ../../pyvista/CONTRIBUTING.rst:317
 msgid ""
-"Image resolution is kept low at 400x400 as we don't want to pollute git with"
-" large images.  Small variations between versions and environments are to be"
-" expected, so error < ``IMAGE_REGRESSION_ERROR`` is allowable (and will be "
+"Image resolution is kept low at 400x400 as we don’t want to pollute git with"
+" large images. Small variations between versions and environments are to be "
+"expected, so error < ``IMAGE_REGRESSION_ERROR`` is allowable (and will be "
 "logged as a warning) while values over that amount will trigger an error."
 msgstr ""
-"大きな画像でgitを汚したくないので，画像解像度は400x400で低く保たれます．バージョンや環境によって多少の違いがあることが予想されるため， "
-"error < ``IMAGE_REGRESSION_ERROR`` "
-"は許容されます(警告としてログに記録されます．)が，この値を超えるとエラーが発生します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:290
+#: ../../pyvista/CONTRIBUTING.rst:323
 msgid ""
 "There are two mechanisms within ``pytest`` to control image regression "
-"testing, ``--reset_image_cache`` and ``--ignore_image_cache``.  For example:"
+"testing, ``--reset_image_cache`` and ``--ignore_image_cache``. For example:"
 msgstr ""
-"``pytest`` には，画像リグレッションテストを制御する2つのメカニズム， ``--reset_image_cache`` と "
-"``--ignore_image_cache`` があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:298
+#: ../../pyvista/CONTRIBUTING.rst:331
 msgid ""
 "Running ``--reset_image_cache`` creates a new image for each test in "
 "``tests/plotting/test_plotting.py`` and is not recommended except for "
-"testing or for potentially a major or minor release.  You can use "
-"``--ignore_image_cache`` if you're running on Linux and want to temporarily "
-"ignore regression testing.  Realize that regression testing will still occur"
-" on our CI testing."
+"testing or for potentially a major or minor release. You can use "
+"``--ignore_image_cache`` if you’re running on Linux and want to temporarily "
+"ignore regression testing. Realize that regression testing will still occur "
+"on our CI testing."
 msgstr ""
-"``--reset_image_cache`` を実行すると， ``tests/plotting/test_plotting.py`` "
-"の各テストに対して新しいイメージが作成されます．テストや，メジャーまたはマイナーリリースの可能性がある場合を除き，推奨されません．Linux上で実行していて，リグレッションテストを一時的に無視したい場合は，"
-" ``--ignore_image_cache`` を使用することができます．CIテストでは，回帰テストが引き続き行われることを理解してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:305
+#: ../../pyvista/CONTRIBUTING.rst:338
 msgid ""
 "If you need to add a new test to ``tests/plotting/test_plotting.py`` and "
 "wish to include image regression testing, be sure to add "
-"``verify_cache_image`` to ``show``.  For example:"
+"``verify_cache_image`` to ``show``. For example:"
 msgstr ""
-"``tests/plotting/test_plotting.py`` に新しいテストを追加する必要があり，イメージ回帰テストを含めたい場合は，必ず "
-"``show`` に ``verify_cache_image`` を追加してください．例:"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:317
+#: ../../pyvista/CONTRIBUTING.rst:351
 msgid ""
 "This ensures that immediately before the plotter is closed, the current "
-"render window will be verified against the image in CI.  If no image exists,"
-" be sure to add the resulting image with ``git add "
+"render window will be verified against the image in CI. If no image exists, "
+"be sure to add the resulting image with \\`git add "
 "tests/plotting/image_cache/*``."
 msgstr ""
-"これにより，プロッタを閉じる直前に，現在のレンダリングウィンドウがCI内のイメージに対して検証されます．イメージが存在しない場合は，必ず ``git "
-"add tests/plotting/image_cache/*`` を使用して結果のイメージを追加してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:324
+#: ../../pyvista/CONTRIBUTING.rst:357
 msgid "Creating a New Pull Request"
 msgstr "新規Pull Requestの作成"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:326
+#: ../../pyvista/CONTRIBUTING.rst:359
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`__ while merging to main. This "
@@ -689,18 +687,17 @@ msgstr ""
 "requestを作成します．これにより，継続的インテグレーション (CI) "
 "テストが自動的に実行され，変更が複数のプラットフォームで機能することが検証されます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:331
+#: ../../pyvista/CONTRIBUTING.rst:364
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
-"community's standards. Once approved, if you have write permission you may "
-"merge the branch. If you don't have write permission, the reviewer or "
+"community’s standards. Once approved, if you have write permission you may "
+"merge the branch. If you don’t have write permission, the reviewer or "
 "someone else with write permission will merge the branch and delete the PR "
 "branch."
 msgstr ""
-"他のユーザーがコードをレビューできるようにするには，pyvistaコントリビュータグループの他の少なくとも1人のメンバーが，コードがコミュニティの標準を満たしているかどうかをレビューして検証する必要があります．承認後，書き込み権限があればブランチをマージすることができます．書き込みパーミッションがない場合，レビュー担当者または書き込みパーミッションを持つ別のユーザーがブランチをマージし，PRブランチを削除します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:338
+#: ../../pyvista/CONTRIBUTING.rst:371
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
@@ -708,11 +705,11 @@ msgid ""
 msgstr ""
 "ブランチをカレントリリースブランチ(下記参照)とマージする必要があるかもしれませんので， ``fix/`` ブランチであれば削除しないでください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:343
+#: ../../pyvista/CONTRIBUTING.rst:376
 msgid "Branching Model"
 msgstr "ブランチモデル"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:345
+#: ../../pyvista/CONTRIBUTING.rst:378
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
@@ -721,11 +718,11 @@ msgstr ""
 "このプロジェクトは，安定性を犠牲にすることなく機能の迅速な開発を可能にする分岐モデルを持っており， `Trunk Based Development "
 "<https://trunkbaseddevelopment.com/>`__  アプローチに厳密に従います．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:349
+#: ../../pyvista/CONTRIBUTING.rst:382
 msgid "The main features of our branching model are:"
 msgstr "ブランチモデルの主な特徴は次のとおりです．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:351
+#: ../../pyvista/CONTRIBUTING.rst:384
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -736,47 +733,36 @@ msgstr ""
 "``main`` "
 "ブランチは主要な開発ブランチです．すべてのフィーチャー，パッチ，およびその他のブランチをここにマージする必要があります．すべてのPRは適用可能なCIチェックをすべてパスする必要がありますが，変更によって予期しない副作用や単体テストで検出されなかったバグが発生する可能性があるため，このブランチは機能的に不安定になる可能性があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:356
+#: ../../pyvista/CONTRIBUTING.rst:389
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
 "that is also reflected on PyPI/. Hotfixes from ``fix/`` branches should be "
 "merged both to main and to these branches. When necessary to create a new "
 "patch release these release branches will have their ``__version__.py`` "
-"updated and be tagged with a patched semantic version (e.g. ``0.24.1``). "
+"updated and be tagged with a patched semantic version (e.g. ``0.24.1``). "
 "This triggers CI to push to PyPI, and allow us to rapidly push hotfixes for "
 "past versions of ``pyvista`` without having to worry about untested "
 "features."
 msgstr ""
-"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
-"にも反映される安定版のコードベースが含まれています． ``fix/`` "
-"ブランチの修正パッチは，mainブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
-" ``__version__.py`` が更新され，パッチされたセマンティックバージョン(例えば ``0.24.1`` "
-")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
-"のホットフィックスを迅速にプッシュすることができます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:366
+#: ../../pyvista/CONTRIBUTING.rst:399
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
-"created from ``main`` with the next incremented minor version (e.g. "
-"``release/0.25``), which will be thoroughly tested. When deemed stable, the "
-"release branch will be tagged with the version (``0.25.0`` in this case), "
-"and if necessary merged with main if any changes were pushed to it. Feature "
-"development then continues on ``main`` and any hotfixes will now be merged "
-"with this release. Older release branches should not be deleted so they can "
-"be patched as needed."
+"created from ``main`` with the next incremented minor version "
+"(e.g. ``release/0.25``), which will be thoroughly tested. When deemed "
+"stable, the release branch will be tagged with the version (``0.25.0`` in "
+"this case), and if necessary merged with main if any changes were pushed to "
+"it. Feature development then continues on ``main`` and any hotfixes will now"
+" be merged with this release. Older release branches should not be deleted "
+"so they can be patched as needed."
 msgstr ""
-"マイナーリリース候補が準備できたら， ``main`` から新しい ``release`` ブランチが作成され，次のマイナーバージョン(例えば "
-"``release/0.25`` "
-")がインクリメントされ，徹底的にテストされます．安定していると判断された場合，リリースブランチにはバージョン(この場合の ``0.25.0`` "
-")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
-"で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:377
+#: ../../pyvista/CONTRIBUTING.rst:410
 msgid "Minor Release Steps"
 msgstr "マイナーリリース手順"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:379
+#: ../../pyvista/CONTRIBUTING.rst:412
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
@@ -785,15 +771,13 @@ msgstr ""
 "マイナーリリースは， ``pyvista`` "
 "の機能と安定性を改善する機能およびバグリリースです．マイナーリリースが作成される前に，次のことが発生します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:383
+#: ../../pyvista/CONTRIBUTING.rst:416
 msgid ""
 "Create a new branch from the ``main`` branch with name "
-"``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
+"``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
-"``main`` ブランチから ``release/MAJOR.MINOR`` という名前の新しいブランチを作成します(例: "
-"``release/0.25`` )．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:386
+#: ../../pyvista/CONTRIBUTING.rst:419
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`__ and "
 "ensure all are passing."
@@ -801,7 +785,7 @@ msgstr ""
 "`Testing Section <#testing>`__ "
 "で概説されているように，すべてのテストをローカルで実行し，すべてが合格していることを確認します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:389
+#: ../../pyvista/CONTRIBUTING.rst:422
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
@@ -812,13 +796,13 @@ msgstr ""
 "を実行して，結果がキャッシュされないようにしてください． ``bash cd doc make clean # deletes the sphinx-"
 "gallery cache make doctest make html -b linkcheck``"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:394
+#: ../../pyvista/CONTRIBUTING.rst:427
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr "ドキュメントをビルドしたら，ローカル・ビルドを開き，サンプル・ギャラリーで明らかな問題がないか調べてください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:397
+#: ../../pyvista/CONTRIBUTING.rst:430
 msgid ""
 "Update the version numbers in ``pyvista/_version.py`` and commit it. Push "
 "the branch to GitHub and create a new PR for this release that merges it to "
@@ -828,7 +812,7 @@ msgstr ""
 "``pyvista/_version.py`` "
 "のバージョン番号を更新し，コミットします．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:402
+#: ../../pyvista/CONTRIBUTING.rst:435
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -838,7 +822,7 @@ msgstr ""
 "新しいリリースを機能的にテストするのは ``pyvista`` "
 "コミュニティの責任です．このブランチをローカルにインストールして運用環境で使用することをお勧めします．検出されたバグについては，ホットフィックスをこのリリースブランチにプッシュする必要があります．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:407
+#: ../../pyvista/CONTRIBUTING.rst:440
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main and the ``main`` branch will be tagged with a "
@@ -848,20 +832,17 @@ msgstr ""
 "ブランチが一般リリース用に安定しているとみなされた場合，PRはmainにマージされ， ``main`` ブランチは ``MAJOR.MINOR.0`` "
 "リリースでタグ付けされます．リリースブランチは削除されません．リリースに次のタグを付けます．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:417
+#: ../../pyvista/CONTRIBUTING.rst:450
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
-"leverage `GitHub's *compare* feature "
+"leverage `GitHub’s compare feature "
 "<https://github.com/pyvista/pyvista/compare>`__ to see the differences from "
 "the last tag and the ``main`` branch. Be sure to acknowledge new "
 "contributors by their GitHub username and place mentions where appropriate "
 "if a specific contributor is to thank for a new feature."
 msgstr ""
-"リリースのすべての変更のリストを作成します． `GitHub's *compare* feature "
-"<https://github.com/pyvista/pyvista/compare>`__ を活用して，最後のタグや ``main`` "
-"ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:425
+#: ../../pyvista/CONTRIBUTING.rst:458
 msgid ""
 "Place your release notes from step 8 in the description for `the new release"
 " on GitHub <https://github.com/pyvista/pyvista/releases/new>`__"
@@ -869,7 +850,7 @@ msgstr ""
 "手順8のリリースノートを `GitHubの新リリース "
 "<https://github.com/pyvista/pyvista/releases/new>`__ の説明に入れてください．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:429
+#: ../../pyvista/CONTRIBUTING.rst:462
 msgid ""
 "Go grab a beer/coffee/water and wait for [@regro-cf-autotick-"
 "bot](https://github.com/regro-cf-autotick-bot) to open a pull request on the"
@@ -880,29 +861,27 @@ msgstr ""
 "autotick-bot) がconda-forge `PyVista feedstock <https://github.com/conda-"
 "forge/pyvista-feedstock>`__ のプルリクエストを開くのを待って，そのプルリクエストをマージします．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:435
+#: ../../pyvista/CONTRIBUTING.rst:468
 msgid "Announce the new release in the PyVista Slack workspace and celebrate!"
 msgstr "PyVista Slackワークスペースで新リリースを発表し，お祝いしましょう!"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:439
+#: ../../pyvista/CONTRIBUTING.rst:472
 msgid "Patch Release Steps"
 msgstr "パッチリリース手順"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:441
+#: ../../pyvista/CONTRIBUTING.rst:474
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr "パッチリリースは重要なバグフィックスのためのもので，マイナーリリースまで待つことはできないものです．パッチリリースの手順は"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:444
+#: ../../pyvista/CONTRIBUTING.rst:477
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
-"generally be the latest release branch (e.g. ``release/0.25``)."
+"generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
-"必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例 "
-"``release/0.25``)です．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:447
+#: ../../pyvista/CONTRIBUTING.rst:480
 msgid ""
 "Update ``__version__.py`` with the next patch increment (e.g. ``0.25.1``), "
 "commit it, and open a PR that merge with the release branch. This gives the "
@@ -913,7 +892,7 @@ msgstr ""
 ")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
 "コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:453
+#: ../../pyvista/CONTRIBUTING.rst:486
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -923,7 +902,7 @@ msgstr ""
 "承認されたら，リリースブランチとマージしますが， ``main`` ブランチのバージョンを増やす理由がないため， ``main`` "
 "とはマージしません．次に，リリースブランチから適切なバージョン番号(正しい手順については上記を参照してください．)のタグを作成します．"
 
-#: ../../pyvista/doc/extras/developer_notes.rst:458
+#: ../../pyvista/CONTRIBUTING.rst:491
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
