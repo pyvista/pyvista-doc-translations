@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.34.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-07 00:44+0000\n"
+"POT-Creation-Date: 2022-02-11 00:47+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -2720,12 +2720,10 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:42
 msgid ""
 "As you can see, there is quite a bit of boilerplate that goes into the "
-"creation of a simple `vtk.vtkImageData`_ dataset, PyVista provides a much "
-"cleaner syntax that is both more readable and intuitive. The equivalent code"
-" in pyvista is:"
+"creation of a simple `vtk.vtkImageData`_ dataset. PyVista provides much more"
+" concise syntax that is more \"Pythonic\". The equivalent code in PyVista "
+"is:"
 msgstr ""
-"ご覧のように，単純な `vtk.vtkImageData`_ "
-"データセットの作成にはかなりのボイラープレートがありますが，PyVistaではより読みやすく，直感的なすっきりとした構文になっています．pyvistaでの同等のコードは以下の通りです．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:65
 msgid "Here, PyVista has done several things for us:"
@@ -2747,15 +2745,12 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:75
 msgid ""
-":class:`pyvista.UniformGrid` wraps `vtk.vtkImageData`_, just with a better "
-"name; they are both containers of evenly spaced points. Your data does not "
-"have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like "
-"images, values in the dataset are evenly spaced apart like pixels in an "
-"image."
+":class:`pyvista.UniformGrid` wraps `vtk.vtkImageData`_, just with a "
+"different name; they are both containers of evenly spaced points. Your data "
+"does not have to be an \"image\" to use it with `vtk.vtkImageData`_; rather,"
+" like images, values in the dataset are evenly spaced apart like pixels in "
+"an image."
 msgstr ""
-":class:`pyvista.UniformGrid` は `vtk.vtkImageData`_ "
-"をラップしたものです．名前が違うだけで，どちらも等間隔の点のコンテナです．どちらも等間隔の点のコンテナです． `vtk.vtkImageData`_ "
-"で使用するデータは \"画像\" である必要はありません．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:81
 msgid ""
@@ -2798,8 +2793,8 @@ msgstr ""
 "最後に，PyVistaでは，各ジオメトリクラスにメソッドが用意されているので，プロットの設定をしなくても，すぐにメッシュをプロットすることができます．例えば，VTKでは次のようにする必要があります．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:124
-msgid "However, with PyVista you simply need:"
-msgstr "しかし，PyVistaでは，必要なのは単に"
+msgid "However, with PyVista you only need:"
+msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:154
 msgid "PointSet Construction"
@@ -2871,12 +2866,10 @@ msgstr "VTKもPyVistaもオブジェクトの表現を提供しています．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:238
 msgid ""
-"VTK provides a verbose representation of their datatypes that can be "
-"accessed via :func:`print`, as the ``__repr__`` (unlike ``__str__``) only "
-"provides minimal information about each object:"
+"VTK provides a verbose representation (useful for debugging) of their "
+"datatypes that can be accessed via :func:`print`, as the ``__repr__`` "
+"(unlike ``__str__``) only provides minimal information about each object:"
 msgstr ""
-"VTK は :func:`print` でアクセスできるデータ型の詳細な表現を提供しています．これは ``__repr__`` が ( "
-"``__str__`` とは異なり) 各オブジェクトに関する最小限の情報しか提供していないためです．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:246
 msgid ""
@@ -2923,36 +2916,27 @@ msgid ""
 "bounding box (OBB) trees.  For a single collision, this filter is as "
 "performant as the VTK counterpart, but when computing multiple collisions "
 "with the same meshes, as in the :ref:`collision_example` example, it is more"
-" efficient (though less convenient) to use the underlying "
-"`vtkCollisionDetectionFilter "
+" efficient to use the `vtkCollisionDetectionFilter "
 "<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_, "
 "as the OBB tree is computed once for each mesh.  In most cases, pure PyVista"
 " is sufficient for most data science, but there are times when you may want "
 "to use VTK classes directly."
 msgstr ""
-"フードの下では，コリジョンフィルタは OBB (oriented bounding box) ツリーを使ってメッシュの衝突を検出します． しかし， "
-":ref:`collision_example` "
-"の例のように，同じメッシュで複数の衝突を計算する場合には，OBBツリーが各メッシュに対して一度ずつ計算されるため，基礎となる "
-"`vtkCollisionDetectionFilter "
-"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_ "
-"を使用した方が効率的です（利便性は低いですが）． "
-"ほとんどのデータサイエンスでは，純粋なPyVistaで十分ですが，VTKクラスを直接使用したい場合もあります．"
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:313
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:312
 msgid ""
 "Note that nothing stops you from using VTK classes and then wrapping the "
 "output with PyVista.  For example:"
 msgstr ""
 "VTKクラスを使用して，その出力をPyVistaでラッピングすることを妨げるものは何もないことに注意してください． 例えば，以下のようになります．"
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:333
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:332
 msgid ""
 "In this manner, you can get the \"best of both worlds\" should you need the "
-"flexibility of PyVista and the functionality of VTK."
+"flexibility of PyVista and the raw power of VTK."
 msgstr ""
-"このようにして，PyVistaの柔軟性とVTKの機能性の両方を必要とする \"best of both worlds\" を得ることができるのです．"
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:337
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:336
 msgid ""
 "You can use :func:`pyvista.Circle` for a one line replacement of the above "
 "VTK code."
