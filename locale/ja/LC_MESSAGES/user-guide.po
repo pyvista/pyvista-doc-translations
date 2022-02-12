@@ -2724,6 +2724,9 @@ msgid ""
 " concise syntax that is more \"Pythonic\". The equivalent code in PyVista "
 "is:"
 msgstr ""
+"ご覧のように、単純な `vtk.vtkImageData`_ "
+"データセットを作成するためには、かなり多くのボイラープレートが必要です。PyVistaでは、より簡潔で、より \"Pythonic "
+"\"な構文が提供されています。PyVistaで同等のコードは以下の通りです。"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:65
 msgid "Here, PyVista has done several things for us:"
@@ -2751,6 +2754,9 @@ msgid ""
 " like images, values in the dataset are evenly spaced apart like pixels in "
 "an image."
 msgstr ""
+":class:`pyvista.UniformGrid` は `vtk.vtkImageData`_ "
+"をラップしたものです．名前が違うだけで，どちらも等間隔の点のコンテナです．どちらも等間隔の点のコンテナです． `vtk.vtkImageData`_ "
+"で使用するデータは \"画像\" である必要はありません．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:81
 msgid ""
@@ -2794,7 +2800,7 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:124
 msgid "However, with PyVista you only need:"
-msgstr ""
+msgstr "しかし，PyVistaでは，必要なのは以下だけです:"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:154
 msgid "PointSet Construction"
@@ -2870,6 +2876,8 @@ msgid ""
 "datatypes that can be accessed via :func:`print`, as the ``__repr__`` "
 "(unlike ``__str__``) only provides minimal information about each object:"
 msgstr ""
+"VTK は :func:`print` でアクセスできるデータ型の詳細な表現を提供しています(デバッギングに便利)．これは ``__repr__`` が"
+" ( ``__str__`` とは異なり) 各オブジェクトに関する最小限の情報しか提供していないためです．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:246
 msgid ""
@@ -2922,6 +2930,12 @@ msgid ""
 " is sufficient for most data science, but there are times when you may want "
 "to use VTK classes directly."
 msgstr ""
+"フードの下では，コリジョンフィルタは OBB (oriented bounding box) ツリーを使ってメッシュの衝突を検出します． しかし， "
+":ref:`collision_example` "
+"の例のように，同じメッシュで複数の衝突を計算する場合には，OBBツリーが各メッシュに対して一度ずつ計算されるため， "
+"`vtkCollisionDetectionFilter "
+"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_ "
+"を使用した方が効率的です． ほとんどのデータサイエンスでは，純粋なPyVistaで十分ですが，VTKクラスを直接使用したい場合もあります．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:312
 msgid ""
@@ -2935,6 +2949,7 @@ msgid ""
 "In this manner, you can get the \"best of both worlds\" should you need the "
 "flexibility of PyVista and the raw power of VTK."
 msgstr ""
+"このようにして， PyVistaの柔軟性とVTKの原動力の両方を必要とする \"best of both worlds\" を得ることができるのです．"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:336
 msgid ""
