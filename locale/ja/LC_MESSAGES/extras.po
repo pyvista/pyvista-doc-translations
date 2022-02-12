@@ -43,6 +43,8 @@ msgid ""
 "at `pyvista-wheels <https://github.com/pyvista/pyvista-wheels>`_, but you "
 "may be better off building your own."
 msgstr ""
+"既成のホイールが必要な場合は、`pyvista-wheels <https://github.com/pyvista/pyvista-wheels>`_"
+" にさまざまな既成のホイールがありますが、自分で作った方がよいかもしれません。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:15
 msgid ""
@@ -51,10 +53,13 @@ msgid ""
 " The following directions assume you want to build a Python wheel non-"
 "standard situations like EGL."
 msgstr ""
+"`VTKのビルド方法 "
+"<https://gitlab.kitware.com/vtk/vtk/-/blob/master/Documentation/dev/build.md>`_"
+" を参照してください。以下の説明は、EGLのような非標準的な状況でPythonホイールをビルドしたい場合を想定しています。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:22
 msgid "Building Wheels"
-msgstr ""
+msgstr "ホイールを作る"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:23
 msgid ""
@@ -66,6 +71,12 @@ msgid ""
 "feedstock/blob/master/recipe/build.sh>`__. Most of the ones below are "
 "designed to reduce the build time and resulting wheel size."
 msgstr ""
+"ソースからVTKを構築するのはかなりストレートです．デフォルトのビルド設定を使用し，次のスクリプトを使用して ``ninja`` "
+"を使用し，VTKのPythonホイールをビルドします．このスクリプトはpython "
+"3を使用していますが，最新のPythonバージョンを使用することができます．その他の便利なオプションについては， `conda-forge recipe"
+" <https://github.com/conda-forge/vtk-"
+"feedstock/blob/master/recipe/build.sh>`__ "
+"を参照してください．以下のほとんどのオプションは，構築時間を短縮し，ホイールサイズを小さくするように設計されています．"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:71
 msgid "Off-Screen Plotting GPU Support"
@@ -98,17 +109,17 @@ msgstr ""
 
 #: ../../pyvista/doc/extras/building_vtk.rst:123
 msgid "Building OSMesa"
-msgstr ""
+msgstr "OSMesaの構築"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:124
 msgid ""
 "OSMesa provides higher visualization performance on CPU based hosts. Use "
 "this instead of ``xvfb``:"
-msgstr ""
+msgstr "OSMesaはCPUベースのホストでより高い可視化性能を提供します。xvfb`` の代わりに、これを使用してください。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:157
 msgid "Wheels will be generated in the ``dist`` directory."
-msgstr ""
+msgstr "Wheels は ``dist`` ディレクトリに生成されます。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:161
 msgid "Building ManyLinux Wheels"
@@ -196,19 +207,19 @@ msgstr "このページでは，質問，懸念，機能のリクエスト，ま
 
 #: ../../pyvista/CONTRIBUTING.rst:15
 msgid "Being Respectful"
-msgstr ""
+msgstr "尊敬の念を抱くこと"
 
 #: ../../pyvista/CONTRIBUTING.rst:17
 msgid ""
 "Please demonstrate empathy and kindness toward other people, other software,"
 " and the communities who have worked diligently to build (un-)related tools."
-msgstr ""
+msgstr "他の人々、他のソフトウェア、そして（関連性のない）ツールを作るために熱心に働いてきたコミュニティに対して、共感と優しさを示してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:20
 msgid ""
 "Please do not talk down in Pull Requests, Issues, or otherwise in a way that"
 " portrays other people or their works in a negative light."
-msgstr ""
+msgstr "Pull RequestsやIssuesなどで、他人やその作品を否定するような言い方をしないでください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:24
 msgid "Cloning the Source Repository"
@@ -237,6 +248,10 @@ msgid ""
 "developers an email. The project support team can be reached at "
 "info@pyvista.org"
 msgstr ""
+"プロジェクト，そのアプリケーション，またはソフトウェアの使用についての一般的な質問については，コミュニティが集合的にあなたの質問に答えることができる "
+"`Discussions <https://github.com/pyvista/pyvista/discussions>`__ "
+"リポジトリでディスカッションを作成してください．また， `Slack <http://slack.pyvista.org>`__ "
+"に参加したり，開発者の一人に電子メールを送ったりすることもできます．プロジェクト・サポート・チームの連絡先はinfo@pyvista.orgです．"
 
 #: ../../pyvista/CONTRIBUTING.rst:47
 msgid ""
@@ -366,6 +381,8 @@ msgid ""
 "intuitive naming conventions and explicit keyword arguments for users to "
 "make the bulk of the library accessible to novice users."
 msgstr ""
+"**直感的な操作**． "
+"PyVistaの目標は，直感的で使いやすいインターフェースをVTKライブラリーに戻すことです．すべての新機能には，初心者ユーザがライブラリの大部分にアクセスできるように，直感的な命名規則と明示的なキーワード引数が必要です．"
 
 #: ../../pyvista/CONTRIBUTING.rst:129
 msgid ""
@@ -373,6 +390,8 @@ msgid ""
 " class added. Do not describe what you are doing but why you are doing it "
 "and provide a simple example for the new features."
 msgstr ""
+"**すべてをドキュメント化します!** "
+"少なくとも，追加されたメソッドまたはクラスのdocstringを含めます．何をしているのかを説明するのではなく，なぜそうしているのかを説明し，新しい機能の簡単な例を示します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:133
 msgid ""
@@ -398,12 +417,16 @@ msgid ""
 "stackoverflow) or commercial use is prohibited. Those can undermine the "
 "license of the whole projects."
 msgstr ""
+"ライセンスが利用できないコードスニペット(stackoverflowなど )や商用使用が禁止されているコードスニペットは使用しないでください．それらはすべてのプロジェクトのライセンスを損なう可能性があります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:146
 msgid ""
 "Please also take a look at our `Code of Conduct "
 "<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.rst>`__"
 msgstr ""
+"私達の `Code of Conduct "
+"<https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.rst>`__ "
+"もご覧ください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:150
 msgid "Contributing to pyvista through GitHub"
@@ -429,6 +452,8 @@ msgid ""
 "your change is complex. Also, be sure to test often. See the `Testing "
 "Section <#testing>`__ below for automating testing."
 msgstr ""
+"次に，新しい機能を追加し，ローカルでコミットします．特に変更が複雑な場合は，過去のコミットに戻すことが役立つことが多いので，頻繁にコミットするようにしてください．また，頻繁に検査をしてください．テストの自動化については，以下の"
+" `Testing Section <#testing>`__ を参照してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:163
 msgid ""
@@ -450,6 +475,9 @@ msgid ""
 "to a max of 99 characters for code. This should tend to be the exception "
 "rather than the norm."
 msgstr ""
+"行幅が79文字を超えて99文字コードまで許されることを除き，可能な限り `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ "
+"に準拠します．これは標準ではなく、むしろ例外となる傾向があるはずです。"
 
 #: ../../pyvista/CONTRIBUTING.rst:175
 msgid ""
@@ -457,6 +485,9 @@ msgid ""
 "Length <https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`__ of"
 " limiting docstrings to 72 characters per line. This follows the directive:"
 msgstr ""
+"docstringについては、`PEP 8 Maximum Line Length "
+"<https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`__ "
+"で規定されているガイドラインに従って、1行あたり72文字に制限してください。これは指令に従います。"
 
 #: ../../pyvista/CONTRIBUTING.rst:181
 msgid ""
@@ -465,12 +496,15 @@ msgid ""
 "it is okay to increase the line length limit up to 99 characters, provided "
 "that comments and docstrings are still wrapped at 72 characters."
 msgstr ""
+"チームによっては、より長い行数を強く希望する場合もあります。この問題に関して合意に達することができるチームによってのみ、または主にメンテナンスされているコードについては、コメントとdocstringを72文字で折り返すことを条件に、行の長さの制限を99文字まで増やしてもかまいません。"
 
 #: ../../pyvista/CONTRIBUTING.rst:187
 msgid ""
 "Outside of PEP 8, when coding please consider `PEP 20 – The Zen of Python "
 "<https://www.python.org/dev/peps/pep-0020/>`__. When in doubt:"
 msgstr ""
+"PEP 8以外でコーディングする場合は， `PEP 20 – The Zen of Python "
+"<https://www.python.org/dev/peps/pep-0020/>`__ を考慮してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:194
 msgid ""
@@ -478,14 +512,16 @@ msgid ""
 "make sure your code adheres to our standards regarding trailing white space,"
 " unused imports, and sorting of imports."
 msgstr ""
+"また、 ``Makefile`` による linting と format checks を使って、あなたのコードが、末尾の空白、未使用の "
+"import、および import のソートに関する私たちの標準に準拠していることを確認してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:198
 msgid "To test the format locally, run:"
-msgstr ""
+msgstr "ローカルでフォーマットをテストするには、以下を実行します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:204
 msgid "To automatically sort Python imports, run:"
-msgstr ""
+msgstr "Pythonのimportを自動的にソートするために、実行します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:211
 msgid "Branch Naming Conventions"
@@ -572,16 +608,20 @@ msgid ""
 "of processors with the ``-n`` flag. This uses ``pytest-xdist`` to leverage "
 "multiple processes. Example usage:"
 msgstr ""
+"ユニットテストには時間がかかることがあります。高速化したい場合は、 ``n`` フラグでプロセッサの数を設定してください。これは ``pytest-"
+"xdist`` を使用して、複数のプロセスを利用するものです。使用例です。"
 
 #: ../../pyvista/CONTRIBUTING.rst:265
 msgid ""
 "Run all code examples in the docstrings. Be sure to export the "
 "``PYVISTA_OFF_SCREEN`` environmental variable to enable off-screen plotting."
 msgstr ""
+"ドキュメントにあるすべてのコード例を実行します。オフスクリーンプロッティングを有効にするために、環境変数 ``PYVISTA_OFF_SCREEN`` "
+"を必ずエクスポートしてください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:274
 msgid "Run documentation testing by running:"
-msgstr ""
+msgstr "次を実行して，ドキュメントテストを実行します:"
 
 #: ../../pyvista/CONTRIBUTING.rst:280
 msgid "If you are running windows and ``make`` is unavailable, then run:"
@@ -607,12 +647,14 @@ msgid ""
 "actually check the images that we generate in some sort of regression "
 "testing. In practice, this ends up being quite a bit of work because:"
 msgstr ""
+"``pyvista`` "
+"は基本的に描画モジュールなので，何らかの回帰テストで生成した画像を実際にチェックする必要があります．実際には，これはかなりの作業になります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:307
 msgid ""
 "OpenGL software vs. hardware rending causes slightly different images to be "
 "rendered."
-msgstr ""
+msgstr "OpenGLソフトウェアと ハードウェアレンダリングでは，レンダリングされるイメージがわずかに異なります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:309
 msgid ""
@@ -634,6 +676,7 @@ msgid ""
 "changed with our plotting without actually looking at the plots (like the "
 "docs at dev.pyvista.com)"
 msgstr ""
+"各プラットフォームと環境では，Linuxと比較してわずかに異なるイメージをレンダリングするため(これらの画像は)，すべてのOSでこれらのテストを実行するのは最適ではありません．OSごとに異なるイメージを生成することもできますが，私の意見ではやり過ぎです．プロットを実際に見ることなく，プロットによって何か根本的な変化があったかどうかを知る必要があります(dev.pyvista.comのドキュメントのように)．"
 
 #: ../../pyvista/CONTRIBUTING.rst:320
 msgid ""
@@ -655,12 +698,17 @@ msgid ""
 "expected, so error < ``IMAGE_REGRESSION_ERROR`` is allowable (and will be "
 "logged as a warning) while values over that amount will trigger an error."
 msgstr ""
+"大きな画像でgitを汚したくないので，画像解像度は400x400で低く保たれます．バージョンや環境によって多少の違いがあることが予想されるため， "
+"error < ``IMAGE_REGRESSION_ERROR`` "
+"は許容されます(警告としてログに記録されます．)が，この値を超えるとエラーが発生します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:332
 msgid ""
 "There are two mechanisms within ``pytest`` to control image regression "
 "testing, ``--reset_image_cache`` and ``--ignore_image_cache``. For example:"
 msgstr ""
+"``pytest`` には，画像リグレッションテストを制御する2つのメカニズム， ``--reset_image_cache`` と "
+"``--ignore_image_cache`` があります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:340
 msgid ""
@@ -671,6 +719,9 @@ msgid ""
 "ignore regression testing. Realize that regression testing will still occur "
 "on our CI testing."
 msgstr ""
+"``--reset_image_cache`` を実行すると， ``tests/plotting/test_plotting.py`` "
+"の各テストに対して新しいイメージが作成されます．テストや，メジャーまたはマイナーリリースの可能性がある場合を除き，推奨されません．Linux上で実行していて，リグレッションテストを一時的に無視したい場合は，"
+" ``--ignore_image_cache`` を使用することができます．CIテストでは，回帰テストが引き続き行われることを理解してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:347
 msgid ""
@@ -678,6 +729,8 @@ msgid ""
 "wish to include image regression testing, be sure to add "
 "``verify_cache_image`` to ``show``. For example:"
 msgstr ""
+"``tests/plotting/test_plotting.py`` に新しいテストを追加する必要があり，イメージ回帰テストを含めたい場合は，必ず "
+"``show`` に ``verify_cache_image`` を追加してください．例:"
 
 #: ../../pyvista/CONTRIBUTING.rst:360
 msgid ""
@@ -686,6 +739,8 @@ msgid ""
 "be sure to add the resulting image with \\`git add "
 "tests/plotting/image_cache/*``."
 msgstr ""
+"これにより，プロッタを閉じる直前に，現在のレンダリングウィンドウがCI内のイメージに対して検証されます．イメージが存在しない場合は，必ず ``git "
+"add tests/plotting/image_cache/*`` を使用して結果のイメージを追加してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:366
 msgid "Creating a New Pull Request"
@@ -712,6 +767,7 @@ msgid ""
 "someone else with write permission will merge the branch and delete the PR "
 "branch."
 msgstr ""
+"他のユーザーがコードをレビューできるようにするには，pyvistaコントリビュータグループの他の少なくとも1人のメンバーが，コードがコミュニティの標準を満たしているかどうかをレビューして検証する必要があります．承認後，書き込み権限があればブランチをマージすることができます．書き込みパーミッションがない場合，レビュー担当者または書き込みパーミッションを持つ別のユーザーがブランチをマージし，PRブランチを削除します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:380
 msgid ""
@@ -761,6 +817,12 @@ msgid ""
 "past versions of ``pyvista`` without having to worry about untested "
 "features."
 msgstr ""
+"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
+"にも反映される安定版のコードベースが含まれています． ``fix/`` "
+"ブランチの修正パッチは，mainブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
+" ``__version__.py`` が更新され，パッチされたセマンティックバージョン(例えば ``0.24.1`` "
+")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
+"のホットフィックスを迅速にプッシュすることができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:408
 msgid ""
@@ -773,6 +835,11 @@ msgid ""
 " be merged with this release. Older release branches should not be deleted "
 "so they can be patched as needed."
 msgstr ""
+"マイナーリリース候補が準備できたら， ``main`` から新しい ``release`` ブランチが作成され，次のマイナーバージョン(例えば  "
+"``release/0.25`` "
+")がインクリメントされ，徹底的にテストされます．安定していると判断された場合，リリースブランチにはバージョン(この場合の ``0.25.0`` "
+")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
+"で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:419
 msgid "Minor Release Steps"
@@ -792,6 +859,8 @@ msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
+"``main`` ブランチから ``release/MAJOR.MINOR`` "
+"という名前の新しいブランチを作成します(例: ``release/0.25`` )．"
 
 #: ../../pyvista/CONTRIBUTING.rst:428
 msgid ""
@@ -857,6 +926,9 @@ msgid ""
 "contributors by their GitHub username and place mentions where appropriate "
 "if a specific contributor is to thank for a new feature."
 msgstr ""
+"リリースのすべての変更のリストを作成します． `GitHub's compare feature "
+"<https://github.com/pyvista/pyvista/compare>`__ を活用して，最後のタグや ``main`` "
+"ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:467
 msgid ""
@@ -896,6 +968,8 @@ msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
+"必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例  "
+"``release/0.25``)です．"
 
 #: ../../pyvista/CONTRIBUTING.rst:489
 msgid ""
