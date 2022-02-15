@@ -40,8 +40,6 @@ jobs:
         sudo apt-get install -y --no-install-recommends python3-venv
         sudo apt-get install -y --no-install-recommends libgl1-mesa-glx
         sudo apt-get install -y --no-install-recommends python3-tk pandoc
-        python3 -m venv .venv
-        .venv/bin/activate
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
         deactivate
@@ -51,7 +49,6 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
-        .venv/bin/activate
         set -x
         git submodule update --remote
         export DISPLAY=:99.0
