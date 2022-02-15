@@ -18,5 +18,5 @@ sphinx-intl update-txconfig-resources -p pot -d .
 cat .tx/config
 tx push -s --skip
 rm -Rf ja zh_CN zh_TW jv pl_PL
-$LOCAL_PYTHON_PATH/tx pull -l ja,zh_CN,zh_TW,jv,pl_PL
+tx pull -l ja,zh_CN,zh_TW,jv,pl_PL
 git checkout .tx/config
