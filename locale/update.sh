@@ -10,7 +10,7 @@ LOCAL_PYTHON_PATH="../.venv/bin"
 
 # pull po files from transifex
 cd `dirname $0`
-source $LOCAL_PYTHON_PATH/activate
+$LOCAL_PYTHON_PATH/activate
 sphinx-intl create-transifexrc
 #rm -R pot  # skip this line cause "already unused pot files will not removed" but we must keep these files to avoid commit for only "POT-Creation-Time" line updated. see: https://github.com/sphinx-doc/sphinx/issues/3443
 sphinx-build -T -b gettext ../pyvista/doc pot || true  # will fail on VTK9
