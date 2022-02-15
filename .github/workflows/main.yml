@@ -67,7 +67,6 @@ jobs:
         ls ./pyvista/doc/images
         rm -Rf ./locale/images
         mv ./pyvista/doc/images ./locale
-        deactivate
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
       env:
