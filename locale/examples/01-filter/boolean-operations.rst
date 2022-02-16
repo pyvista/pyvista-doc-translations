@@ -57,12 +57,11 @@ must be all triangle meshes, which you can check with
    probably has its normals pointing inward. Use
    :func:`pyvista.PolyDataFilters.plot_normals` to visualize the normals.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-51
+.. GENERATED FROM PYTHON SOURCE LINES 43-50
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 6
     import pyvista as pv
 
     sphere_a = pv.Sphere()
@@ -90,7 +89,7 @@ which is in ``A``, in ``B``, or in both ``A`` and ``B``.
 Order of operands does not matter for boolean union (the operation is
 commutative).
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-74
+.. GENERATED FROM PYTHON SOURCE LINES 63-73
 
 .. code-block:: default
 
@@ -107,7 +106,6 @@ commutative).
 
 
 
-
 .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
    :alt: boolean operations
    :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
@@ -117,7 +115,7 @@ commutative).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-86
+.. GENERATED FROM PYTHON SOURCE LINES 74-85
 
 Boolean Difference
 ++++++++++++++++++
@@ -131,7 +129,7 @@ of the mesh in ``A`` not belonging to ``B``.
 
 Order of operands matters for boolean difference.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-96
+.. GENERATED FROM PYTHON SOURCE LINES 85-95
 
 .. code-block:: default
 
@@ -157,7 +155,7 @@ Order of operands matters for boolean difference.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-108
+.. GENERATED FROM PYTHON SOURCE LINES 96-107
 
 Boolean Intersection
 ++++++++++++++++++++
@@ -171,7 +169,7 @@ which is the volume of ``A`` that is also in ``B``.
 Order of operands does not matter for boolean intersection (the
 operation is commutative).
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-119
+.. GENERATED FROM PYTHON SOURCE LINES 107-117
 
 .. code-block:: default
 
@@ -188,7 +186,6 @@ operation is commutative).
 
 
 
-
 .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
    :alt: boolean operations
    :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
@@ -198,7 +195,7 @@ operation is commutative).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-127
+.. GENERATED FROM PYTHON SOURCE LINES 118-125
 
 Behavior due to flipped normals
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -208,7 +205,7 @@ orientation of the normals.
 Boolean difference with both cube and sphere normals pointed
 outward.  This is the "normal" behavior.
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-134
+.. GENERATED FROM PYTHON SOURCE LINES 125-132
 
 .. code-block:: default
 
@@ -231,11 +228,11 @@ outward.  This is the "normal" behavior.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-136
+.. GENERATED FROM PYTHON SOURCE LINES 133-134
 
 Boolean difference with cube normals outward, sphere inward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-144
+.. GENERATED FROM PYTHON SOURCE LINES 134-142
 
 .. code-block:: default
 
@@ -259,11 +256,11 @@ Boolean difference with cube normals outward, sphere inward.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-146
+.. GENERATED FROM PYTHON SOURCE LINES 143-144
 
 Boolean difference with cube normals inward, sphere outward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-154
+.. GENERATED FROM PYTHON SOURCE LINES 144-152
 
 .. code-block:: default
 
@@ -287,11 +284,11 @@ Boolean difference with cube normals inward, sphere outward.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-156
+.. GENERATED FROM PYTHON SOURCE LINES 153-154
 
 Both cube and sphere normals inward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-163
+.. GENERATED FROM PYTHON SOURCE LINES 154-161
 
 .. code-block:: default
 
@@ -317,7 +314,7 @@ Both cube and sphere normals inward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.265 seconds)
+   **Total running time of the script:** ( 0 minutes  9.943 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:

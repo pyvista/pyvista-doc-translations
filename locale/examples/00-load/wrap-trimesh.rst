@@ -37,7 +37,7 @@ of more than one module.
 
 Wrap a point cloud composed of random points from numpy
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-29
+.. GENERATED FROM PYTHON SOURCE LINES 20-35
 
 .. code-block:: default
 
@@ -47,8 +47,14 @@ Wrap a point cloud composed of random points from numpy
 
     points = np.random.random((30, 3))
     cloud = pv.wrap(points)
-    pv.plot(cloud, scalars=points[:, 2], render_points_as_spheres=True, point_size=50,
-            opacity=points[:, 0], cpos='xz')
+    pv.plot(
+        cloud,
+        scalars=points[:, 2],
+        render_points_as_spheres=True,
+        point_size=50,
+        opacity=points[:, 0],
+        cpos='xz',
+    )
 
 
 
@@ -62,11 +68,11 @@ Wrap a point cloud composed of random points from numpy
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-31
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 Wrap an instance of Trimesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-39
+.. GENERATED FROM PYTHON SOURCE LINES 37-45
 
 .. code-block:: default
 
@@ -88,7 +94,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7f7f486f8400)
+    PolyData (0x7f528f657be0)
       N Cells:      1
       N Points:     3
       X Bounds:     0.000e+00, 0.000e+00
@@ -100,11 +106,11 @@ Wrap an instance of Trimesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-41
+.. GENERATED FROM PYTHON SOURCE LINES 46-47
 
 Wrap an instance of vtk.vtkPolyData
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-55
+.. GENERATED FROM PYTHON SOURCE LINES 47-61
 
 .. code-block:: default
 
@@ -132,7 +138,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7f7f486f8460)
+    PolyData (0x7f528f657ca0)
       N Cells:      1
       N Points:     1
       X Bounds:     1.000e+00, 1.000e+00
@@ -147,7 +153,7 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.941 seconds)
+   **Total running time of the script:** ( 0 minutes  0.837 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:

@@ -25,7 +25,6 @@ Reflect Meshes
 
 This example reflects a mesh across a plane.
 
-
 .. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
@@ -82,7 +81,7 @@ Reflect the mesh across a plane parallel to Z plane and coincident with
 
 Plot the reflected mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-32
+.. GENERATED FROM PYTHON SOURCE LINES 27-31
 
 .. code-block:: default
 
@@ -93,29 +92,19 @@ Plot the reflected mesh:
 
 
 
-
-.. image:: /examples/01-filter/images/sphx_glr_reflect_001.png
-    :alt: reflect
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
+.. image-sg:: /examples/01-filter/images/sphx_glr_reflect_001.png
+   :alt: reflect
+   :srcset: /examples/01-filter/images/sphx_glr_reflect_001.png
+   :class: sphx-glr-single-img
 
 
-    [(3273.6506148297863, 3052.677210899122, 2276.6550856549816),
-     (896.9955291748047, 676.0221252441406, -100.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.444 seconds)
+   **Total running time of the script:** ( 0 minutes  0.352 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_reflect.py:

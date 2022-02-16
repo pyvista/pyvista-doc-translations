@@ -49,15 +49,17 @@ First, let's load a **triangulated** mesh to subdivide. We can use the
 :func:`pyvista.DataSetFilters.triangulate` filter to ensure the mesh we are
 using is purely triangles.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-26
+.. GENERATED FROM PYTHON SOURCE LINES 20-28
 
 .. code-block:: default
 
     mesh = examples.download_bunny_coarse().triangulate()
 
-    cpos = [(-0.02788175062966399, 0.19293295656233056, 0.4334449972621349),
-     (-0.053260899930287015, 0.08881197167521734, -9.016948161029588e-05),
-     (-0.10170607813337212, 0.9686438023715356, -0.22668272496584665)]
+    cpos = [
+        (-0.02788175062966399, 0.19293295656233056, 0.4334449972621349),
+        (-0.053260899930287015, 0.08881197167521734, -9.016948161029588e-05),
+        (-0.10170607813337212, 0.9686438023715356, -0.22668272496584665),
+    ]
 
 
 
@@ -66,32 +68,34 @@ using is purely triangles.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-30
+.. GENERATED FROM PYTHON SOURCE LINES 29-32
 
 Now, lets do a few subdivisions with the mesh and compare the results.
 Below is a helper function to make a comparison plot of thee different
 subdivisions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-54
+.. GENERATED FROM PYTHON SOURCE LINES 32-59
 
 .. code-block:: default
 
 
+
     def plot_subdivisions(mesh, a, b):
         display_args = dict(show_edges=True, color=True)
-        p = pv.Plotter(shape=(3,3))
+        p = pv.Plotter(shape=(3, 3))
 
         for i in range(3):
-            p.subplot(i,0)
+            p.subplot(i, 0)
             p.add_mesh(mesh, **display_args)
             p.add_text("Original Mesh")
 
         def row_plot(row, subfilter):
             subs = [a, b]
             for i in range(2):
-                p.subplot(row, i+1)
+                p.subplot(row, i + 1)
                 p.add_mesh(mesh.subdivide(subs[i], subfilter=subfilter), **display_args)
                 p.add_text(f"{subfilter} subdivision of {subs[i]}")
+
         row_plot(0, "linear")
         row_plot(1, "butterfly")
         row_plot(2, "loop")
@@ -107,11 +111,12 @@ subdivisions.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-56
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-61
 
 Run the subdivisions for 1 and 3 levels.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-60
+.. GENERATED FROM PYTHON SOURCE LINES 61-65
 
 .. code-block:: default
 
@@ -134,7 +139,7 @@ Run the subdivisions for 1 and 3 levels.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.384 seconds)
+   **Total running time of the script:** ( 0 minutes  1.068 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_subdivide.py:

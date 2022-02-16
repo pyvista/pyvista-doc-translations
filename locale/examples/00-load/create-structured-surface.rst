@@ -25,14 +25,13 @@ Creating a Structured Surface
 
 Create a StructuredGrid surface from NumPy arrays
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -59,7 +58,7 @@ Create a simple meshgrid using NumPy
     x = np.arange(-10, 10, 0.25)
     y = np.arange(-10, 10, 0.25)
     x, y = np.meshgrid(x, y)
-    r = np.sqrt(x ** 2 + y ** 2)
+    r = np.sqrt(x**2 + y**2)
     z = np.sin(r)
 
 
@@ -203,11 +202,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -38.14970472, -283.14674409,    1.68842519],
-                     [ -24.52863002, -273.03084127,    2.33449475],
-                     [ -14.87078101, -265.8582896 ,    2.88660673],
-                     [  -4.0446391 , -257.81808706,    3.59967632],
-                     [   5.75728721, -250.53853415,    4.32769477]])
+    pyvista_ndarray([[ -44.50032772, -279.19741198,    1.83785014],
+                     [ -33.21693969, -270.8176285 ,    2.41788342],
+                     [ -23.32701032, -263.47271874,    3.02547783],
+                     [ -11.94115357, -255.01683528,    3.84341508],
+                     [   4.31365284, -242.94495067,    5.22328938]])
 
 
 
@@ -328,7 +327,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
     top = struct.points.copy()
     bottom = struct.points.copy()
-    bottom[:,-1] = -10.0 # Wherever you want the plane
+    bottom[:, -1] = -10.0  # Wherever you want the plane
 
     vol = pv.StructuredGrid()
     vol.points = np.vstack((top, bottom))
@@ -349,7 +348,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.420 seconds)
+   **Total running time of the script:** ( 0 minutes  2.437 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

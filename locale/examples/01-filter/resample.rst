@@ -30,12 +30,11 @@ Resample one mesh's point/cell arrays onto another mesh's nodes.
 This example will resample a volumetric mesh's  scalar data onto the surface
 of a sphere contained in that volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-17
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -139,19 +138,21 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-62
+.. GENERATED FROM PYTHON SOURCE LINES 49-64
 
 .. code-block:: default
 
     threshold = lambda m: m.threshold(75.0, scalars='SLCImage')
-    cpos = [(468.9075585873713, -152.8280322856109, 152.13046602188035),
+    cpos = [
+        (468.9075585873713, -152.8280322856109, 152.13046602188035),
         (121.65121514580106, 140.29327609542105, 112.28137570357188),
-        (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236)]
+        (-0.10881224951051659, 0.006229357618166009, 0.9940428006178236),
+    ]
     dargs = dict(clim=[0, 200], cmap='rainbow')
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(threshold(data_to_probe), **dargs)
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_mesh(threshold(result), **dargs)
     p.link_views()
     p.view_isometric()
@@ -171,7 +172,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.196 seconds)
+   **Total running time of the script:** ( 0 minutes  7.645 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:

@@ -44,7 +44,7 @@ a statue as though it were metallic.
 
     # Load the statue mesh
     mesh = examples.download_nefertiti()
-    mesh.rotate_x(-90., inplace=True)  # rotate to orient with the skybox
+    mesh.rotate_x(-90.0, inplace=True)  # rotate to orient with the skybox
 
     # Download skybox
     cubemap = examples.download_sky_box_cube_map()
@@ -62,21 +62,17 @@ a statue as though it were metallic.
 Let's render the mesh with a base color of "linen" to give it a metal looking
 finish.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-49
+.. GENERATED FROM PYTHON SOURCE LINES 34-45
 
 .. code-block:: default
 
     p = pv.Plotter()
     p.add_actor(cubemap.to_skybox())
     p.set_environment_texture(cubemap)  # For reflecting the environment off the mesh
-    p.add_mesh(mesh, color='linen',
-               pbr=True, metallic=0.8, roughness=0.1,
-               diffuse=1)
+    p.add_mesh(mesh, color='linen', pbr=True, metallic=0.8, roughness=0.1, diffuse=1)
 
     # Define a nice camera perspective
-    cpos = [(-313.40, 66.09, 1000.61),
-            (0.0, 0.0, 0.0),
-            (0.018, 0.99, -0.06)]
+    cpos = [(-313.40, 66.09, 1000.61), (0.0, 0.0, 0.0), (0.018, 0.99, -0.06)]
 
     p.show(cpos=cpos)
 
@@ -93,14 +89,14 @@ finish.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-54
+.. GENERATED FROM PYTHON SOURCE LINES 46-50
 
 Show the variation of the metallic and roughness parameters.
 
 Plot with metallic increasing from left to right and roughness
 increasing from bottom to top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-70
+.. GENERATED FROM PYTHON SOURCE LINES 50-65
 
 .. code-block:: default
 
@@ -113,8 +109,7 @@ increasing from bottom to top.
     for i in range(5):
         for j in range(6):
             sphere = pv.Sphere(radius=0.5, center=(0.0, 4 - i, j))
-            p.add_mesh(sphere, color=colors[i],
-                       pbr=True, metallic=i/4, roughness=j/5)
+            p.add_mesh(sphere, color=colors[i], pbr=True, metallic=i / 4, roughness=j / 5)
 
     p.view_vector((-1, 0, 0), (0, 1, 0))
     p.show()
@@ -132,11 +127,11 @@ increasing from bottom to top.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-72
+.. GENERATED FROM PYTHON SOURCE LINES 66-67
 
 Combine custom lighting and physically based rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-100
+.. GENERATED FROM PYTHON SOURCE LINES 67-92
 
 .. code-block:: default
 
@@ -148,8 +143,7 @@ Combine custom lighting and physically based rendering.
 
     plotter = pv.Plotter(lighting=None)
     plotter.set_background('black')
-    plotter.add_mesh(mesh, color='linen', pbr=True,
-                     metallic=0.5, roughness=0.5, diffuse=1)
+    plotter.add_mesh(mesh, color='linen', pbr=True, metallic=0.5, roughness=0.5, diffuse=1)
 
 
     # setup lighting
@@ -164,9 +158,7 @@ Combine custom lighting and physically based rendering.
 
 
     # plot with a good camera position
-    plotter.camera_position = [(9.51, 13.92, 15.81),
-                               (-2.836, -0.93, 10.2),
-                               (-0.22, -0.18, 0.959)]
+    plotter.camera_position = [(9.51, 13.92, 15.81), (-2.836, -0.93, 10.2), (-0.22, -0.18, 0.959)]
     cpos = plotter.show()
 
 
@@ -183,7 +175,7 @@ Combine custom lighting and physically based rendering.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  11.403 seconds)
+   **Total running time of the script:** ( 1 minutes  10.224 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:

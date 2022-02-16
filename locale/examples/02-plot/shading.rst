@@ -25,11 +25,10 @@ Types of Shading
 
 Comparison of default, flat shading vs. smooth shading.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-13
+.. GENERATED FROM PYTHON SOURCE LINES 9-12
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
     import pyvista
     from pyvista import examples
 
@@ -125,15 +124,14 @@ enabling ``split_sharp_edges``.
 We can even plot the edges that will be split using
 :func:`extract_feature_edges <pyvista.PolyDataFilters.extract_feature_edges>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-57
+.. GENERATED FROM PYTHON SOURCE LINES 42-56
 
 .. code-block:: default
 
 
     # extract the feature edges exceeding 30 degrees
     edges = mesh.extract_feature_edges(
-        boundary_edges=False, non_manifold_edges=False,
-        feature_angle=30, manifold_edges=False
+        boundary_edges=False, non_manifold_edges=False, feature_angle=30, manifold_edges=False
     )
 
     # plot both the edges and the smoothed mesh
@@ -156,12 +154,12 @@ We can even plot the edges that will be split using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-60
+.. GENERATED FROM PYTHON SOURCE LINES 57-59
 
 The ``split_sharp_edges`` keyword argument is compatible with
 physically based rendering as well.
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-67
+.. GENERATED FROM PYTHON SOURCE LINES 59-65
 
 .. code-block:: default
 
@@ -169,8 +167,7 @@ physically based rendering as well.
     # plot both the edges and the smoothed mesh
     pl = pyvista.Plotter()
     pl.enable_anti_aliasing()
-    pl.add_mesh(mesh, color='w', split_sharp_edges=True, pbr=True,
-                metallic=1.0, roughness=0.5)
+    pl.add_mesh(mesh, color='w', split_sharp_edges=True, pbr=True, metallic=1.0, roughness=0.5)
     pl.show()
 
 
@@ -187,7 +184,7 @@ physically based rendering as well.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.798 seconds)
+   **Total running time of the script:** ( 0 minutes  2.123 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_shading.py:

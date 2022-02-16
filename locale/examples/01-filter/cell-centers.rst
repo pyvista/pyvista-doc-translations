@@ -27,13 +27,12 @@ Extract the coordinates of the centers of all cells/faces in a mesh.
 
 Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-16
+.. GENERATED FROM PYTHON SOURCE LINES 11-15
 
 .. code-block:: default
 
     import pyvista as pv
 
-    # sphinx_gallery_thumbnail_number = 3
     from pyvista import examples
 
 
@@ -47,15 +46,17 @@ Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
 First let's fetch the centers of a mesh with 2D geometries (a surface)
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-32
+.. GENERATED FROM PYTHON SOURCE LINES 18-34
 
 .. code-block:: default
 
     mesh = examples.download_teapot()
 
-    cpos = [(6.192871661244108, 5.687542355343226, -4.95345468836544),
-     (0.48853358141600634, 1.2019347531215714, 0.1656178278582367),
-     (-0.40642070472687936, 0.8621356761976646, 0.30256286387543047)]
+    cpos = [
+        (6.192871661244108, 5.687542355343226, -4.95345468836544),
+        (0.48853358141600634, 1.2019347531215714, 0.1656178278582367),
+        (-0.40642070472687936, 0.8621356761976646, 0.30256286387543047),
+    ]
 
     centers = mesh.cell_centers()
 
@@ -77,20 +78,22 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-34
+.. GENERATED FROM PYTHON SOURCE LINES 35-36
 
 We can also do this for full 3D meshes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-49
+.. GENERATED FROM PYTHON SOURCE LINES 36-53
 
 .. code-block:: default
 
 
     grid = examples.download_letter_a()
 
-    cpos = [(2.704583323659036, 0.7822568412034183, 1.7251126717482546),
-     (3.543391913452799, 0.31117673768140197, 0.16407006760146028),
-     (0.1481171795711516, 0.96599698246102, -0.2119224645762945)]
+    cpos = [
+        (2.704583323659036, 0.7822568412034183, 1.7251126717482546),
+        (3.543391913452799, 0.31117673768140197, 0.16407006760146028),
+        (0.1481171795711516, 0.96599698246102, -0.2119224645762945),
+    ]
 
 
     centers = grid.cell_centers()
@@ -112,7 +115,7 @@ We can also do this for full 3D meshes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-55
+.. GENERATED FROM PYTHON SOURCE LINES 54-59
 
 .. code-block:: default
 
@@ -136,7 +139,7 @@ We can also do this for full 3D meshes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.292 seconds)
+   **Total running time of the script:** ( 0 minutes  1.940 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

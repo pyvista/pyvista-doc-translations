@@ -30,11 +30,10 @@ convolving the  image data set with a Gaussian for one- to three-dimensional
 inputs. This is commonly referred to as Gaussian blurring and typically used
 to reduce noise or decrease the detail of an image dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-29
+.. GENERATED FROM PYTHON SOURCE LINES 15-24
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -42,11 +41,7 @@ to reduce noise or decrease the detail of an image dataset
     data = examples.download_gourds()
 
     # Define a good point of view
-    cp = [
-        (319.5, 239.5, 1053.7372980874645),
-        (319.5, 239.5, 0.0),
-        (0.0, 1.0, 0.0)
-    ]
+    cp = [(319.5, 239.5, 1053.7372980874645), (319.5, 239.5, 0.0), (0.0, 1.0, 0.0)]
 
 
 
@@ -55,12 +50,12 @@ to reduce noise or decrease the detail of an image dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 26-28
 
 Let's apply the gaussian smoothing with different values of standard
 deviation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-56
+.. GENERATED FROM PYTHON SOURCE LINES 28-52
 
 .. code-block:: default
 
@@ -73,17 +68,17 @@ deviation.
 
     p.subplot(0, 1)
     p.add_text("Gaussian smoothing, std=2", font_size=24)
-    p.add_mesh(data.gaussian_smooth(std_dev=2.), rgb=True)
+    p.add_mesh(data.gaussian_smooth(std_dev=2.0), rgb=True)
     p.camera_position = cp
 
     p.subplot(1, 0)
     p.add_text("Gaussian smoothing, std=4", font_size=24)
-    p.add_mesh(data.gaussian_smooth(std_dev=4.), rgb=True)
+    p.add_mesh(data.gaussian_smooth(std_dev=4.0), rgb=True)
     p.camera_position = cp
 
     p.subplot(1, 1)
     p.add_text("Gaussian smoothing, std=8", font_size=24)
-    p.add_mesh(data.gaussian_smooth(std_dev=8.), rgb=True)
+    p.add_mesh(data.gaussian_smooth(std_dev=8.0), rgb=True)
     p.camera_position = cp
 
     p.show()
@@ -100,21 +95,20 @@ deviation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-58
+.. GENERATED FROM PYTHON SOURCE LINES 53-54
 
 Now let's see an example on a 3D dataset with volume rendering:
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-82
+.. GENERATED FROM PYTHON SOURCE LINES 54-75
 
 .. code-block:: default
 
     data = examples.download_brain()
 
-    smoothed_data = data.gaussian_smooth(std_dev=3.)
+    smoothed_data = data.gaussian_smooth(std_dev=3.0)
 
 
-    dargs = dict(clim=smoothed_data.get_data_range(),
-                 opacity=[0, 0, 0, 0.1, 0.3, 0.6, 1])
+    dargs = dict(clim=smoothed_data.get_data_range(), opacity=[0, 0, 0, 0.1, 0.3, 0.6, 1])
 
     n = [100, 150, 200, 245, 255]
 
@@ -128,9 +122,7 @@ Now let's see an example on a 3D dataset with volume rendering:
     # p.add_mesh(smoothed_data.contour(n), **dargs)
     p.add_volume(smoothed_data, **dargs)
     p.link_views()
-    p.camera_position = [(-162.0, 704.8, 65.02),
-                         (90.0, 108.0, 90.0),
-                         (0.0068, 0.0447, 0.999)]
+    p.camera_position = [(-162.0, 704.8, 65.02), (90.0, 108.0, 90.0), (0.0068, 0.0447, 0.999)]
     p.show()
 
 
@@ -147,7 +139,7 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.527 seconds)
+   **Total running time of the script:** ( 0 minutes  9.407 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:

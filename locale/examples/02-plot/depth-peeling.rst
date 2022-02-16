@@ -29,11 +29,10 @@ operating systems and versions of VTK have issues with this routine.
 For this example, we will showcase the difference that depth peeling
 provides.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-18
+.. GENERATED FROM PYTHON SOURCE LINES 14-17
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -44,12 +43,11 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-27
+.. GENERATED FROM PYTHON SOURCE LINES 19-26
 
 .. code-block:: default
 
-    centers = [(0, 0, 0), (1, 0, 0), (-1, 0, 0),
-               (0, 1, 0), (0, -1, 0)]
+    centers = [(0, 0, 0), (1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0)]
     radii = [1, 0.5, 0.5, 0.5, 0.5]
 
     spheres = pv.MultiBlock()
@@ -63,7 +61,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-46
+.. GENERATED FROM PYTHON SOURCE LINES 27-43
 
 .. code-block:: default
 
@@ -80,9 +78,7 @@ provides.
     p.add_mesh(spheres.copy(), **dargs)
 
     p.link_views()
-    p.camera_position = [(11.7, 4.7, -4.33),
-                         (0.0, 0.0, 0.0),
-                         (0.3, 0.07, 0.9)]
+    p.camera_position = [(11.7, 4.7, -4.33), (0.0, 0.0, 0.0), (0.3, 0.07, 0.9)]
     p.show()
 
 
@@ -97,14 +93,14 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-51
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
 The following room surfaces example mesh, provided courtesy of
 `Sam Potter <https://github.com/sampotter>`_ has coincident topology and
 depth rendering helps correctly render those geometries when a global
 opacity value is used.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-72
+.. GENERATED FROM PYTHON SOURCE LINES 48-67
 
 .. code-block:: default
 
@@ -117,14 +113,12 @@ opacity value is used.
     p.add_mesh(room, opacity=0.5, color="tan")
     p.add_text("Depth Peeling")
 
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_text("Standard")
     p.add_mesh(room.copy(), opacity=0.5, color="tan")
 
     p.link_views()
-    p.camera_position = [(43.6, 49.5, 19.8),
-                         (0.0, 2.25, 0.0),
-                         (-0.57, 0.70, -0.42)]
+    p.camera_position = [(43.6, 49.5, 19.8), (0.0, 2.25, 0.0), (-0.57, 0.70, -0.42)]
 
     p.show()
 
@@ -141,12 +135,12 @@ opacity value is used.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-75
+.. GENERATED FROM PYTHON SOURCE LINES 68-70
 
 And here is another example wheen rendering many translucent contour
 surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-94
+.. GENERATED FROM PYTHON SOURCE LINES 70-87
 
 .. code-block:: default
 
@@ -154,20 +148,18 @@ surfaces.
     mesh = examples.download_brain().contour(5)
     cmap = "viridis_r"
 
-    p = pv.Plotter(shape=(1,2), multi_samples=4)
+    p = pv.Plotter(shape=(1, 2), multi_samples=4)
 
     p.add_mesh(mesh, opacity=0.5, cmap=cmap)
     p.enable_depth_peeling(10)
     p.add_text("Depth Peeling")
 
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_text("Standard")
     p.add_mesh(mesh.copy(), opacity=0.5, cmap=cmap)
 
     p.link_views()
-    p.camera_position = [(418.3, 659., 53.8),
-                         (90.2, 111.5, 90.0),
-                         (0.03, 0.05, 1.0)]
+    p.camera_position = [(418.3, 659.0, 53.8), (90.2, 111.5, 90.0), (0.03, 0.05, 1.0)]
     p.show()
 
 
@@ -184,7 +176,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.252 seconds)
+   **Total running time of the script:** ( 0 minutes  11.910 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

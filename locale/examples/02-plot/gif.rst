@@ -51,7 +51,7 @@ Generate a moving gif from an active plotter.
     x = np.arange(-10, 10, 0.5)
     y = np.arange(-10, 10, 0.5)
     x, y = np.meshgrid(x, y)
-    r = np.sqrt(x ** 2 + y ** 2)
+    r = np.sqrt(x**2 + y**2)
     z = np.sin(r)
 
     # Create and structured surface
@@ -90,7 +90,7 @@ Generate a moving gif from an active plotter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.174 seconds)
+   **Total running time of the script:** ( 0 minutes  3.208 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

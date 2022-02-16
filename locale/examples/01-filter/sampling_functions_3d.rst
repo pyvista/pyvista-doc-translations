@@ -97,16 +97,21 @@ terrain that is open or closed
 
 color limits without blue
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-39
+.. GENERATED FROM PYTHON SOURCE LINES 33-44
 
 .. code-block:: default
 
     mn, mx = [out['scalars'].min(), out['scalars'].max()]
-    clim = (mn, mx*1.8)
+    clim = (mn, mx * 1.8)
 
-    out.plot(cmap='gist_earth_r', background='white',
-             show_scalar_bar=False, lighting=True, clim=clim,
-             show_edges=False)
+    out.plot(
+        cmap='gist_earth_r',
+        background='white',
+        show_scalar_bar=False,
+        lighting=True,
+        clim=clim,
+        show_edges=False,
+    )
 
 
 
@@ -122,7 +127,7 @@ color limits without blue
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.701 seconds)
+   **Total running time of the script:** ( 0 minutes  0.677 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_3d.py:

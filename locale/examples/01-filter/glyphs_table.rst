@@ -51,7 +51,7 @@ An ``indices`` optional keyword specifies the index of each glyph geometry in
 the table, and it has to be the same length as ``geom`` if specified. If it is
 absent a default value of ``range(len(geom))`` is assumed.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-59
+.. GENERATED FROM PYTHON SOURCE LINES 23-63
 
 .. code-block:: default
 
@@ -65,11 +65,15 @@ absent a default value of ``range(len(geom))`` is assumed.
     # taken from:
     # rng = np.random.default_rng()
     # params = rng.uniform(0.5, 2, size=(N, 2))  # (n1, n2) parameters for the toroids
-    params = np.array([[1.56821334, 0.99649769],
-                       [1.08247844, 1.83758874],
-                       [1.49598881, 0.83495047],
-                       [1.52442129, 0.89600688],
-                       [1.92212387, 0.78096621]])
+    params = np.array(
+        [
+            [1.56821334, 0.99649769],
+            [1.08247844, 1.83758874],
+            [1.49598881, 0.83495047],
+            [1.52442129, 0.89600688],
+            [1.92212387, 0.78096621],
+        ]
+    )
 
     geoms = [pv.ParametricSuperToroid(n1=n1, n2=n2) for n1, n2 in params]
 
@@ -79,17 +83,17 @@ absent a default value of ``range(len(geom))`` is assumed.
 
     # add random scalars
     # rng_int = rng.integers(0, N, size=x.size)
-    rng_int = np.array([4, 1, 2, 0, 4, 0, 1, 4, 3, 1, 1, 3, 3, 4, 3, 4, 4,
-                        3, 3, 2, 2, 1, 1, 1, 2, 0, 3])
+    rng_int = np.array(
+        [4, 1, 2, 0, 4, 0, 1, 4, 3, 1, 1, 3, 3, 4, 3, 4, 4, 3, 3, 2, 2, 1, 1, 1, 2, 0, 3]
+    )
     mesh.point_data['scalars'] = rng_int
 
     # construct the glyphs on top of the mesh; don't scale by scalars now
-    glyphs = mesh.glyph(geom=geoms, indices=values, scale=False, factor=0.3, rng=(0, N-1))
+    glyphs = mesh.glyph(geom=geoms, indices=values, scale=False, factor=0.3, rng=(0, N - 1))
 
     # create plotter and add our glyphs with some nontrivial lighting
     plotter = pv.Plotter()
-    plotter.add_mesh(glyphs, specular=1, specular_power=15,
-                     smooth_shading=True, show_scalar_bar=False)
+    plotter.add_mesh(glyphs, specular=1, specular_power=15, smooth_shading=True, show_scalar_bar=False)
     plotter.show()
 
 
@@ -106,7 +110,7 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.885 seconds)
+   **Total running time of the script:** ( 0 minutes  1.763 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:

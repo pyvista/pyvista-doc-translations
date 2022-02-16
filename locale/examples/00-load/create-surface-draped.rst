@@ -48,14 +48,13 @@ have are technically shifted up and we have some NaN filler above the surface
 profile in 2D with the coordinates associated to the top of each column in your
 2D array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-45
+.. GENERATED FROM PYTHON SOURCE LINES 32-44
 
 .. code-block:: default
 
     import matplotlib.pyplot as plt
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -76,8 +75,8 @@ profile in 2D with the coordinates associated to the top of each column in your
 
 .. code-block:: default
 
-    plt.figure(figsize=(15,3))
-    plt.pcolormesh(data, cmap="seismic", clim=[-1,1])
+    plt.figure(figsize=(15, 3))
+    plt.pcolormesh(data, cmap="seismic", clim=[-1, 1])
     plt.gca().invert_yaxis()
 
 
@@ -102,7 +101,7 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 .. code-block:: default
 
-    plt.scatter(path[:,1], path[:,0])
+    plt.scatter(path[:, 1], path[:, 0])
     plt.axis("image")
     plt.xlabel("Northing")
     plt.ylabel("Easting")
@@ -136,7 +135,7 @@ mesh "draping" down from those coordinates to hold the GPR image data.
     # If not, you'll need to interpolate the path!
 
     # Grab the number of samples (in Z dir) and number of traces/soundings
-    nsamples, ntraces = data.shape # Might be opposite for your data, pay attention here
+    nsamples, ntraces = data.shape  # Might be opposite for your data, pay attention here
 
     # Define the Z spacing of your 2D section
     z_spacing = 0.12
@@ -144,9 +143,9 @@ mesh "draping" down from those coordinates to hold the GPR image data.
     # Create structured points draping down from the path
     points = np.repeat(path, nsamples, axis=0)
     # repeat the Z locations across
-    tp = np.arange(0, z_spacing*nsamples, z_spacing)
-    tp = path[:,2][:,None] - tp
-    points[:,-1] = tp.ravel()
+    tp = np.arange(0, z_spacing * nsamples, z_spacing)
+    tp = path[:, 2][:, None] - tp
+    points[:, -1] = tp.ravel()
 
 
 
@@ -182,17 +181,19 @@ Make a StructuredGrid from the structured points
 And now we can plot it! or process or do anything, because it is a PyVista
 mesh and the possibilities are endless with PyVista
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-98
+.. GENERATED FROM PYTHON SOURCE LINES 89-100
 
 .. code-block:: default
 
 
-    cpos = [(1217002.366883762, 345363.80666238244, 3816.828857791056),
-     (1216322.4753436751, 344033.0310674846, 3331.052985309526),
-     (-0.17716571330686096, -0.25634368781817973, 0.9502106207279767)]
+    cpos = [
+        (1217002.366883762, 345363.80666238244, 3816.828857791056),
+        (1216322.4753436751, 344033.0310674846, 3331.052985309526),
+        (-0.17716571330686096, -0.25634368781817973, 0.9502106207279767),
+    ]
 
     p = pv.Plotter()
-    p.add_mesh(grid, cmap="seismic", clim=[-1,1])
+    p.add_mesh(grid, cmap="seismic", clim=[-1, 1])
     p.add_mesh(pv.PolyData(path), color='orange')
     p.show(cpos=cpos)
 
@@ -210,7 +211,7 @@ mesh and the possibilities are endless with PyVista
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.699 seconds)
+   **Total running time of the script:** ( 0 minutes  12.963 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-surface-draped.py:

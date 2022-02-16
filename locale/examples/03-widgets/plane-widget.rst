@@ -32,11 +32,10 @@ meshes, we have included two helper methods for doing those tasks!
 
 Let's use a plane to clip a mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-26
+.. GENERATED FROM PYTHON SOURCE LINES 16-25
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -79,7 +78,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f3a8b05fa60)
+    [UnstructuredGrid (0x7f5296b620a0)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -141,7 +140,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7f3a9a57ab80)
+    [PolyData (0x7f528f1ea820)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -165,7 +164,7 @@ vector field along that plane. Note that we have to pass a ``name`` when
 calling ``add_mesh`` to ensure that there is only one set of glyphs plotted
 at a time.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-74
+.. GENERATED FROM PYTHON SOURCE LINES 55-76
 
 .. code-block:: default
 
@@ -178,10 +177,12 @@ at a time.
     p = pv.Plotter()
     p.add_mesh(mesh.contour(8).extract_largest(), opacity=0.5)
 
+
     def my_plane_func(normal, origin):
         slc = mesh.slice(normal=normal, origin=origin)
         arrows = slc.glyph(orient='vectors', scale="scalars", factor=0.01)
         p.add_mesh(arrows, name='arrows')
+
 
     p.add_plane_widget(my_plane_func)
     p.show_grid()
@@ -200,26 +201,26 @@ at a time.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-78
+.. GENERATED FROM PYTHON SOURCE LINES 77-80
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-glyph.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-85
+.. GENERATED FROM PYTHON SOURCE LINES 83-87
 
 Further, a user can disable the arrow vector by setting the
 ``normal_rotation`` argument to ``False``. For example, here we
 programmatically set the normal vector on which we want to translate the
 plane and we disable the arrow to prevent its rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-90
+.. GENERATED FROM PYTHON SOURCE LINES 87-92
 
 .. code-block:: default
 
 
     p = pv.Plotter()
-    p.add_mesh_slice(vol, normal=(1,1,1), normal_rotation=False)
+    p.add_mesh_slice(vol, normal=(1, 1, 1), normal_rotation=False)
     p.show()
 
 
@@ -234,12 +235,12 @@ plane and we disable the arrow to prevent its rotation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-93
+.. GENERATED FROM PYTHON SOURCE LINES 93-95
 
 The vector is also forcibly disabled anytime the ``assign_to_axis`` argument
 is set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-96
+.. GENERATED FROM PYTHON SOURCE LINES 95-98
 
 .. code-block:: default
 
@@ -261,7 +262,7 @@ is set.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.190 seconds)
+   **Total running time of the script:** ( 0 minutes  8.111 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:

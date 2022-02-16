@@ -143,7 +143,7 @@ In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
  .. code-block:: none
 
-    UnstructuredGrid (0x7faa0d651100)
+    UnstructuredGrid (0x7f5296c1d580)
       N Cells:      400
       N Points:     882
       X Bounds:     0.000e+00, 1.000e-01
@@ -180,14 +180,14 @@ of the sub-level MultiBlock mesh depends on the vtk version.
 
  .. code-block:: none
 
-    MultiBlock (0x7faa0d651040)
+    MultiBlock (0x7f528f1ebca0)
       N Blocks:     3
       X Bounds:     0.000, 0.100
       Y Bounds:     0.000, 0.100
       Z Bounds:     0.000, 0.010
 
     Boundaries patches: ['movingWall', 'fixedWalls', 'frontAndBack']
-    PolyData (0x7faa0d651640)
+    PolyData (0x7f528f1ebe20)
       N Cells:      20
       N Points:     42
       X Bounds:     0.000e+00, 1.000e-01
@@ -339,9 +339,10 @@ of the z-direction.
 to lie in the z=0 plane.  So, after the domain sliced, it is translated to
 ``z=0``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-103
+.. GENERATED FROM PYTHON SOURCE LINES 91-105
 
 .. code-block:: default
+
 
 
     def slice_z_center(mesh):
@@ -349,6 +350,7 @@ to lie in the z=0 plane.  So, after the domain sliced, it is translated to
         slice_mesh = mesh.slice(normal='z')
         slice_mesh.translate((0, 0, -slice_mesh.center[-1]), inplace=True)
         return slice_mesh
+
 
     slice_internal_mesh = slice_z_center(internal_mesh)
     slice_boundaries = pyvista.MultiBlock(
@@ -362,18 +364,20 @@ to lie in the z=0 plane.  So, after the domain sliced, it is translated to
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-105
+.. GENERATED FROM PYTHON SOURCE LINES 106-107
 
 Streamlines are generated using the point data "U".
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-111
+.. GENERATED FROM PYTHON SOURCE LINES 107-115
 
 .. code-block:: default
 
 
     streamlines = slice_internal_mesh.streamlines_evenly_spaced_2D(
-        vectors='U', start_position=(0.05, 0.05, 0), separating_distance=1,
-        separating_distance_ratio=0.1
+        vectors='U',
+        start_position=(0.05, 0.05, 0),
+        separating_distance=1,
+        separating_distance_ratio=0.1,
     )
 
 
@@ -383,12 +387,12 @@ Streamlines are generated using the point data "U".
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-114
+.. GENERATED FROM PYTHON SOURCE LINES 116-118
 
 Plot streamlines colored by velocity magnitude.  Additionally, the moving
 and fixed wall boundaries are plotted.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-122
+.. GENERATED FROM PYTHON SOURCE LINES 118-126
 
 .. code-block:: default
 
@@ -415,7 +419,7 @@ and fixed wall boundaries are plotted.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.359 seconds)
+   **Total running time of the script:** ( 0 minutes  0.989 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-example.py:

@@ -25,14 +25,13 @@ Create Triangulated Surface
 
 Create a surface from a set of points through a Delaunay triangulation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-15
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
 
 
@@ -77,11 +76,11 @@ First, create some points for the surface.
  .. code-block:: none
 
 
-    array([[-200.81584333, -204.86195827,    1.63296755],
-           [-183.28337759, -204.86195827,    2.28669893],
-           [-159.68877634, -204.86195827,    3.42713222],
-           [-136.24312021, -204.86195827,    4.8483561 ],
-           [-119.52397694, -204.86195827,    6.00414483]])
+    array([[-195.94879896, -201.78845255,    1.91447726],
+           [-177.97621865, -201.78845255,    2.67905598],
+           [-154.41505573, -201.78845255,    3.96315623],
+           [-136.74778288, -201.78845255,    5.12557852],
+           [-116.06191274, -201.78845255,    6.65735879]])
 
 
 
@@ -143,16 +142,14 @@ Masked Triangulations
 +++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-66
+.. GENERATED FROM PYTHON SOURCE LINES 53-64
 
 .. code-block:: default
 
 
     x = np.arange(10, dtype=float)
     xx, yy, zz = np.meshgrid(x, x, [0])
-    points = np.column_stack((xx.ravel(order="F"),
-                              yy.ravel(order="F"),
-                              zz.ravel(order="F")))
+    points = np.column_stack((xx.ravel(order="F"), yy.ravel(order="F"), zz.ravel(order="F")))
     # Perturb the points
     points[:, 0] += np.random.rand(len(points)) * 0.3
     points[:, 1] += np.random.rand(len(points)) * 0.3
@@ -173,8 +170,8 @@ Masked Triangulations
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>100</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
-    <tr><td>X Bounds</td><td>3.277e-02, 9.268e+00</td></tr>
-    <tr><td>Y Bounds</td><td>9.584e-02, 9.218e+00</td></tr>
+    <tr><td>X Bounds</td><td>2.433e-02, 9.213e+00</td></tr>
+    <tr><td>Y Bounds</td><td>1.486e-02, 9.297e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -184,11 +181,11 @@ Masked Triangulations
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-68
+.. GENERATED FROM PYTHON SOURCE LINES 65-66
 
 Run the triangulation on these points
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-72
+.. GENERATED FROM PYTHON SOURCE LINES 66-70
 
 .. code-block:: default
 
@@ -208,12 +205,12 @@ Run the triangulation on these points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-75
+.. GENERATED FROM PYTHON SOURCE LINES 71-73
 
 Note that some of the outer edges are unconstrained and the triangulation
 added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-79
+.. GENERATED FROM PYTHON SOURCE LINES 73-77
 
 .. code-block:: default
 
@@ -233,12 +230,12 @@ added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-82
+.. GENERATED FROM PYTHON SOURCE LINES 78-80
 
 We could also add a polygon to ignore during the triangulation via the
 ``edge_source`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-99
+.. GENERATED FROM PYTHON SOURCE LINES 80-97
 
 .. code-block:: default
 
@@ -251,7 +248,7 @@ We could also add a polygon to ignore during the triangulation via the
     # Make sure it has the same points as the mesh being triangulated
     polygon.points = points
     # But only has faces in regions to ignore
-    polygon.faces = np.array([len(ids),] + ids)
+    polygon.faces = np.insert(ids, 0, len(ids))
 
     surf = cloud.delaunay_2d(alpha=1.0, edge_source=polygon)
 
@@ -274,7 +271,7 @@ We could also add a polygon to ignore during the triangulation via the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.961 seconds)
+   **Total running time of the script:** ( 0 minutes  1.825 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:

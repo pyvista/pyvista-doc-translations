@@ -41,11 +41,10 @@ by linear attenuation.
 
 Three spotlights with three different attenuation profiles each:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-46
+.. GENERATED FROM PYTHON SOURCE LINES 25-45
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
 
     plotter = pv.Plotter(lighting='none')
@@ -69,21 +68,12 @@ Three spotlights with three different attenuation profiles each:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_attenuation_001.png
-    :alt: attenuation
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_attenuation_001.png
+   :alt: attenuation
+   :srcset: /examples/04-lights/images/sphx_glr_attenuation_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(16.39230614815661, 0.0, 0.0),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -122,21 +112,12 @@ are further away from the plane changes this:
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_attenuation_002.png
-    :alt: attenuation
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_attenuation_002.png
+   :alt: attenuation
+   :srcset: /examples/04-lights/images/sphx_glr_attenuation_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(16.39230614815661, 0.0, 0.0),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -148,7 +129,7 @@ For a more practical comparison, let's look at planes that are perpendicular
 to the axis of each light (making use of the fact that shadowing between
 objects is not handled by default):
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-102
+.. GENERATED FROM PYTHON SOURCE LINES 78-100
 
 .. code-block:: default
 
@@ -161,12 +142,10 @@ objects is not handled by default):
     for attenuation_values, light_x in zip(all_attenuation_values, light_offsets):
         # loop over three perpendicular planes for each light
         for plane_y in [2, 5, 10]:
-            screen = pv.Plane(center=(light_x, plane_y, 0), direction=(0, 1, 0),
-                              i_size=5, j_size=5)
+            screen = pv.Plane(center=(light_x, plane_y, 0), direction=(0, 1, 0), i_size=5, j_size=5)
             plotter.add_mesh(screen, color='white')
 
-        light = pv.Light(position=(light_x, 0, 0), focal_point=(light_x, 1, 0),
-                         color='cyan')
+        light = pv.Light(position=(light_x, 0, 0), focal_point=(light_x, 1, 0), color='cyan')
         light.positional = True
         light.cone_angle = 15
         light.intensity = 5
@@ -179,28 +158,19 @@ objects is not handled by default):
 
 
 
-.. image:: /examples/04-lights/images/sphx_glr_attenuation_003.png
-    :alt: attenuation
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/04-lights/images/sphx_glr_attenuation_003.png
+   :alt: attenuation
+   :srcset: /examples/04-lights/images/sphx_glr_attenuation_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(13.102455386230794, -21.204910772461588, 26.204910772461588),
-     (0.0, 6.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.759 seconds)
+   **Total running time of the script:** ( 0 minutes  1.145 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_attenuation.py:

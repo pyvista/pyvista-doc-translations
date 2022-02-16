@@ -25,11 +25,10 @@ Use a checkbox to turn on/off the visibility of meshes in a scene.
 
 See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-12
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
 
 
@@ -44,7 +43,7 @@ See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
 Single Checkbox
 +++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-28
+.. GENERATED FROM PYTHON SOURCE LINES 16-30
 
 .. code-block:: default
 
@@ -54,8 +53,10 @@ Single Checkbox
     p = pv.Plotter()
     actor = p.add_mesh(mesh)
 
+
     def toggle_vis(flag):
         actor.SetVisibility(flag)
+
 
     p.add_checkbox_button_widget(toggle_vis, value=True)
     p.show()
@@ -63,25 +64,16 @@ Single Checkbox
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_checkbox-widget_001.png
-    :alt: checkbox widget
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/03-widgets/images/sphx_glr_checkbox-widget_001.png
+   :alt: checkbox widget
+   :srcset: /examples/03-widgets/images/sphx_glr_checkbox-widget_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-35
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-37
 
 Multiple Checkboxes
 +++++++++++++++++++
@@ -90,19 +82,23 @@ In this example, we will add many meshes to a scene with unique colors and
 create corresponding checkboxes for those meshes of the same color to toggle
 their visibility in the scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-50
+.. GENERATED FROM PYTHON SOURCE LINES 37-57
 
 .. code-block:: default
 
 
-    colors = [["ff0000", "28e5da", "0000ff"],
-              ["ffff00", "c8bebe", "f79292"],
-              ["fffff0", "f18c1d", "23dcaa"],
-              ["d785ec", "9d5b13", "e4e0b1"],
-              ["894509", "af45f5", "fff000"]]
+    colors = [
+        ["ff0000", "28e5da", "0000ff"],
+        ["ffff00", "c8bebe", "f79292"],
+        ["fffff0", "f18c1d", "23dcaa"],
+        ["d785ec", "9d5b13", "e4e0b1"],
+        ["894509", "af45f5", "fff000"],
+    ]
+
 
     class SetVisibilityCallback:
         """Helper callback to keep a reference to the actor being modified."""
+
         def __init__(self, actor):
             self.actor = actor
 
@@ -116,7 +112,8 @@ their visibility in the scene.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-72
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-83
 
 .. code-block:: default
 
@@ -132,40 +129,35 @@ their visibility in the scene.
             actor = p.add_mesh(pv.Sphere(center=(i, j, 0)), color=color)
             # Make a separate callback for each widget
             callback = SetVisibilityCallback(actor)
-            p.add_checkbox_button_widget(callback, value=True,
-                                         position=(5.0, Startpos), size=size,
-                                         border_size=1,
-                                         color_on=color,
-                                         color_off='grey',
-                                         background_color='grey')
+            p.add_checkbox_button_widget(
+                callback,
+                value=True,
+                position=(5.0, Startpos),
+                size=size,
+                border_size=1,
+                color_on=color,
+                color_off='grey',
+                background_color='grey',
+            )
             Startpos = Startpos + size + (size // 10)
 
     p.show()
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_checkbox-widget_002.png
-    :alt: checkbox widget
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-widgets/images/sphx_glr_checkbox-widget_002.png
+   :alt: checkbox widget
+   :srcset: /examples/03-widgets/images/sphx_glr_checkbox-widget_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(8.593226343715338, 7.593226418221144, 6.593226388418822),
-     (1.9999999552965164, 1.0000000298023224, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.270 seconds)
+   **Total running time of the script:** ( 0 minutes  0.952 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_checkbox-widget.py:

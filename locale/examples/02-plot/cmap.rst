@@ -94,10 +94,10 @@ and we specify the ranges where those colors fall:
 
 
     # Define the colors we want to use
-    blue = np.array([12/256, 238/256, 246/256, 1])
-    black = np.array([11/256, 11/256, 11/256, 1])
-    grey = np.array([189/256, 189/256, 189/256, 1])
-    yellow = np.array([255/256, 247/256, 0/256, 1])
+    blue = np.array([12 / 256, 238 / 256, 246 / 256, 1])
+    black = np.array([11 / 256, 11 / 256, 11 / 256, 1])
+    grey = np.array([189 / 256, 189 / 256, 189 / 256, 1])
+    yellow = np.array([255 / 256, 247 / 256, 0 / 256, 1])
     red = np.array([1, 0, 0, 1])
 
     mapping = np.linspace(mesh['values'].min(), mesh['values'].max(), 256)
@@ -235,27 +235,47 @@ Please note that in order to use Colorcet's colormaps including "fire", you
 must have Colorcet installed in your Python environment:
 ``pip install colorcet``
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-126
+.. GENERATED FROM PYTHON SOURCE LINES 107-146
 
 .. code-block:: default
 
 
     p = pv.Plotter(shape=(2, 2), border=False)
     p.subplot(0, 0)
-    p.add_mesh(mesh, scalars='Elevation', cmap="fire",
-               lighting=True, scalar_bar_args={'title': "Colorcet Fire"})
+    p.add_mesh(
+        mesh,
+        scalars='Elevation',
+        cmap="fire",
+        lighting=True,
+        scalar_bar_args={'title': "Colorcet Fire"},
+    )
 
     p.subplot(0, 1)
-    p.add_mesh(mesh, scalars='Elevation', cmap="fire",
-               lighting=False, scalar_bar_args={'title': "Colorcet Fire (No Lighting)"})
+    p.add_mesh(
+        mesh,
+        scalars='Elevation',
+        cmap="fire",
+        lighting=False,
+        scalar_bar_args={'title': "Colorcet Fire (No Lighting)"},
+    )
 
     p.subplot(1, 0)
-    p.add_mesh(mesh, scalars='Elevation', cmap="hot",
-               lighting=True, scalar_bar_args={'title': "Matplotlib Hot"})
+    p.add_mesh(
+        mesh,
+        scalars='Elevation',
+        cmap="hot",
+        lighting=True,
+        scalar_bar_args={'title': "Matplotlib Hot"},
+    )
 
     p.subplot(1, 1)
-    p.add_mesh(mesh, scalars='Elevation', cmap="hot",
-               lighting=False, scalar_bar_args={'title': "Matplotlib Hot (No Lighting)"})
+    p.add_mesh(
+        mesh,
+        scalars='Elevation',
+        cmap="hot",
+        lighting=False,
+        scalar_bar_args={'title': "Matplotlib Hot (No Lighting)"},
+    )
 
     p.show()
 
@@ -273,7 +293,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.445 seconds)
+   **Total running time of the script:** ( 0 minutes  5.914 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

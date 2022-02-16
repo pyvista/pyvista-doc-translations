@@ -29,11 +29,10 @@ The slider widget can be enabled and disabled by the
 This is one of the most versatile widgets as it can control a value that can
 be used for just about anything.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-15
+.. GENERATED FROM PYTHON SOURCE LINES 13-14
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 1
 
 
 
@@ -95,7 +94,7 @@ After interacting with the scene, the threshold mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f3a88190e80)
+    [UnstructuredGrid (0x7f5296b620a0)
       N Cells:	115425
       N Points:	179772
       X Bounds:	3.760e+01, 1.171e+02
@@ -121,18 +120,20 @@ Or you could leverage a custom callback function that takes a single value
 from the slider as its argument to do something like control the resolution
 of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-57
+.. GENERATED FROM PYTHON SOURCE LINES 45-59
 
 .. code-block:: default
 
 
     p = pv.Plotter()
 
+
     def create_mesh(value):
         res = int(value)
         sphere = pv.Sphere(phi_resolution=res, theta_resolution=res)
         p.add_mesh(sphere, name='sphere', show_edges=True)
         return
+
 
     p.add_slider_widget(create_mesh, [5, 100], title='Resolution')
     p.show()
@@ -149,7 +150,7 @@ of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-61
+.. GENERATED FROM PYTHON SOURCE LINES 60-63
 
 And here is a screen capture of a user interacting with this
 
@@ -158,7 +159,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.994 seconds)
+   **Total running time of the script:** ( 0 minutes  3.204 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_slider-bar-widget.py:

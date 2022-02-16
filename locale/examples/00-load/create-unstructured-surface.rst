@@ -49,7 +49,7 @@ This is useful when creating a grid from scratch or copying it from another
 format.  See `vtkUnstructuredGrid <https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_
 for available cell types and their descriptions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-77
+.. GENERATED FROM PYTHON SOURCE LINES 20-78
 
 .. code-block:: default
 
@@ -104,7 +104,8 @@ for available cell types and their descriptions.
     # simplified dictionary interface. This automatically calculates the cell array with types
     # and offsets. Note that for mixing with additional cell types, just the appropriate key needs to be
     # added to the dictionary.
-    cells_hex = np.arange(16).reshape([2, 8]) # = np.array([[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]])
+    cells_hex = np.arange(16).reshape([2, 8])
+    # = np.array([[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]])
     grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells_hex}, points)
 
     # plot the grid (and suppress the camera position output)
@@ -125,13 +126,15 @@ for available cell types and their descriptions.
 
  .. code-block:: none
 
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:475: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
+      warnings.warn(
     /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:65: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-83
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 UnstructuredGrid with Shared Points
 -----------------------------------
@@ -139,59 +142,67 @@ UnstructuredGrid with Shared Points
 The next example again creates an unstructured grid containing
 hexahedral cells, but using common points between the cells.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-146
+.. GENERATED FROM PYTHON SOURCE LINES 84-155
 
 .. code-block:: default
 
 
     # these points will all be shared between the cells
-    points = np.array([[0. , 0. , 0. ],
-                       [1. , 0. , 0. ],
-                       [0.5, 0. , 0. ],
-                       [1. , 1. , 0. ],
-                       [1. , 0.5, 0. ],
-                       [0. , 1. , 0. ],
-                       [0.5, 1. , 0. ],
-                       [0. , 0.5, 0. ],
-                       [0.5, 0.5, 0. ],
-                       [1. , 0. , 0.5],
-                       [1. , 0. , 1. ],
-                       [0. , 0. , 0.5],
-                       [0. , 0. , 1. ],
-                       [0.5, 0. , 0.5],
-                       [0.5, 0. , 1. ],
-                       [1. , 1. , 0.5],
-                       [1. , 1. , 1. ],
-                       [1. , 0.5, 0.5],
-                       [1. , 0.5, 1. ],
-                       [0. , 1. , 0.5],
-                       [0. , 1. , 1. ],
-                       [0.5, 1. , 0.5],
-                       [0.5, 1. , 1. ],
-                       [0. , 0.5, 0.5],
-                       [0. , 0.5, 1. ],
-                       [0.5, 0.5, 0.5],
-                       [0.5, 0.5, 1. ]])
+    points = np.array(
+        [
+            [0.0, 0.0, 0.0],
+            [1.0, 0.0, 0.0],
+            [0.5, 0.0, 0.0],
+            [1.0, 1.0, 0.0],
+            [1.0, 0.5, 0.0],
+            [0.0, 1.0, 0.0],
+            [0.5, 1.0, 0.0],
+            [0.0, 0.5, 0.0],
+            [0.5, 0.5, 0.0],
+            [1.0, 0.0, 0.5],
+            [1.0, 0.0, 1.0],
+            [0.0, 0.0, 0.5],
+            [0.0, 0.0, 1.0],
+            [0.5, 0.0, 0.5],
+            [0.5, 0.0, 1.0],
+            [1.0, 1.0, 0.5],
+            [1.0, 1.0, 1.0],
+            [1.0, 0.5, 0.5],
+            [1.0, 0.5, 1.0],
+            [0.0, 1.0, 0.5],
+            [0.0, 1.0, 1.0],
+            [0.5, 1.0, 0.5],
+            [0.5, 1.0, 1.0],
+            [0.0, 0.5, 0.5],
+            [0.0, 0.5, 1.0],
+            [0.5, 0.5, 0.5],
+            [0.5, 0.5, 1.0],
+        ]
+    )
 
 
     # Each cell in the cell array needs to include the size of the cell
     # and the points belonging to the cell.  In this example, there are 8
     # hexahedral cells that have common points between them.
-    cells = np.array([[ 8,  0,  2,  8,  7, 11, 13, 25, 23],
-                      [ 8,  2,  1,  4,  8, 13,  9, 17, 25],
-                      [ 8,  7,  8,  6,  5, 23, 25, 21, 19],
-                      [ 8,  8,  4,  3,  6, 25, 17, 15, 21],
-                      [ 8, 11, 13, 25, 23, 12, 14, 26, 24],
-                      [ 8, 13,  9, 17, 25, 14, 10, 18, 26],
-                      [ 8, 23, 25, 21, 19, 24, 26, 22, 20],
-                      [ 8, 25, 17, 15, 21, 26, 18, 16, 22]]).ravel()
+    cells = np.array(
+        [
+            [8, 0, 2, 8, 7, 11, 13, 25, 23],
+            [8, 2, 1, 4, 8, 13, 9, 17, 25],
+            [8, 7, 8, 6, 5, 23, 25, 21, 19],
+            [8, 8, 4, 3, 6, 25, 17, 15, 21],
+            [8, 11, 13, 25, 23, 12, 14, 26, 24],
+            [8, 13, 9, 17, 25, 14, 10, 18, 26],
+            [8, 23, 25, 21, 19, 24, 26, 22, 20],
+            [8, 25, 17, 15, 21, 26, 18, 16, 22],
+        ]
+    ).ravel()
 
     # each cell is a VTK_HEXAHEDRON
     celltypes = np.empty(8, dtype=np.uint8)
     celltypes[:] = vtk.VTK_HEXAHEDRON
 
     # the offset array points to the start of each cell (via flat indexing)
-    offset = np.array([ 0, 9, 18, 27, 36, 45, 54, 63])
+    offset = np.array([0, 9, 18, 27, 36, 45, 54, 63])
 
     # Effectively, when visualizing a VTK unstructured grid, it will
     # sequentially access the cell array by first looking at each index of
@@ -202,7 +213,7 @@ hexahedral cells, but using common points between the cells.
     # for example, the 5th cell would be accessed by vtk with:
     start_of_cell = offset[4]
     n_points_in_cell = cells[start_of_cell]
-    indices_in_cell = cells[start_of_cell + 1: start_of_cell + n_points_in_cell + 1]
+    indices_in_cell = cells[start_of_cell + 1 : start_of_cell + n_points_in_cell + 1]
     print(indices_in_cell)
 
 
@@ -221,11 +232,11 @@ hexahedral cells, but using common points between the cells.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-148
+.. GENERATED FROM PYTHON SOURCE LINES 156-157
 
 Finally, create the unstructured grid and plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-161
+.. GENERATED FROM PYTHON SOURCE LINES 157-172
 
 .. code-block:: default
 
@@ -238,7 +249,9 @@ Finally, create the unstructured grid and plot it
 
     # Alternate versions:
     grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells.reshape([-1, 9])[:, 1:]}, points)
-    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: np.delete(cells, np.arange(0, cells.size, 9))}, points)
+    grid = pv.UnstructuredGrid(
+        {vtk.VTK_HEXAHEDRON: np.delete(cells, np.arange(0, cells.size, 9))}, points
+    )
 
     # plot the grid (and suppress the camera position output)
     _ = grid.plot(show_edges=True)
@@ -257,7 +270,7 @@ Finally, create the unstructured grid and plot it
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:153: UserWarning: VTK 9 no longer accepts an offset array
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:162: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
 
 
@@ -266,7 +279,7 @@ Finally, create the unstructured grid and plot it
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.939 seconds)
+   **Total running time of the script:** ( 0 minutes  0.875 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:

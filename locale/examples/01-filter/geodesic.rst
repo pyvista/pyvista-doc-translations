@@ -25,11 +25,10 @@ Geodesic Paths
 
 Calculates the geodesic path between two vertices using Dijkstra's algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 1
     import pyvista as pv
     from pyvista import examples
 
@@ -71,18 +70,20 @@ Get the geodesic path as a new :class:`pyvista.PolyData` object:
 
 Render the path along the land surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-40
+.. GENERATED FROM PYTHON SOURCE LINES 29-42
 
 .. code-block:: default
 
 
     p = pv.Plotter()
-    p.add_mesh(a+b+c, line_width=10, color="red", label="Geodesic Path")
+    p.add_mesh(a + b + c, line_width=10, color="red", label="Geodesic Path")
     p.add_mesh(land, show_edges=True)
     p.add_legend()
-    p.camera_position = [(3.5839785524183934, 2.3915238111304924, 1.3993738227478327),
-     (-0.06842917033182638, 0.15467201157962263, -0.07331693636555875),
-     (-0.34851770951584765, -0.04724188391065845, 0.9361108965066047)]
+    p.camera_position = [
+        (3.5839785524183934, 2.3915238111304924, 1.3993738227478327),
+        (-0.06842917033182638, 0.15467201157962263, -0.07331693636555875),
+        (-0.34851770951584765, -0.04724188391065845, 0.9361108965066047),
+    ]
 
     p.show()
 
@@ -98,11 +99,11 @@ Render the path along the land surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-42
+.. GENERATED FROM PYTHON SOURCE LINES 43-44
 
 How long is that path?
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-44
+.. GENERATED FROM PYTHON SOURCE LINES 44-46
 
 .. code-block:: default
 
@@ -126,7 +127,7 @@ How long is that path?
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.584 seconds)
+   **Total running time of the script:** ( 0 minutes  16.084 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_geodesic.py:

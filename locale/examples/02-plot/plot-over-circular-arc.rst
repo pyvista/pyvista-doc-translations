@@ -23,12 +23,11 @@ Plot Scalars Over a Circular Arc
 
 Interpolate the scalars of a dataset over a circular arc.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-13
+.. GENERATED FROM PYTHON SOURCE LINES 8-12
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -46,7 +45,7 @@ Volumetric Mesh
 
 Add the height scalars to a uniform 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-41
+.. GENERATED FROM PYTHON SOURCE LINES 18-39
 
 .. code-block:: default
 
@@ -68,37 +67,26 @@ Add the height scalars to a uniform 3D mesh.
     p.add_mesh(arc, color="b")
     a = arc.points[0]
     b = arc.points[-1]
-    p.add_point_labels(
-        [a, b], ["A", "B"], font_size=48, point_color="red", text_color="red"
-    )
+    p.add_point_labels([a, b], ["A", "B"], font_size=48, point_color="red", text_color="red")
     p.show()
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_001.png
-    :alt: plot over circular arc
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(21.886664873203234, 21.886664873203234, 21.886664873203234),
-     (4.5, 4.5, 4.5),
-     (0.0, 0.0, 1.0)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_001.png
+   :alt: plot over circular arc
+   :srcset: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-43
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-41
 
 Run the filter and produce a line plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-44
+.. GENERATED FROM PYTHON SOURCE LINES 41-42
 
 .. code-block:: default
 
@@ -106,9 +94,10 @@ Run the filter and produce a line plot.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_002.png
-    :alt: height Profile
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_002.png
+   :alt: height Profile
+   :srcset: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_002.png
+   :class: sphx-glr-single-img
 
 
 
@@ -117,7 +106,7 @@ Run the filter and produce a line plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.912 seconds)
+   **Total running time of the script:** ( 0 minutes  0.484 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_plot-over-circular-arc.py:

@@ -30,11 +30,10 @@ options for beam customization.
 
 Consider two hemispheres:
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-29
+.. GENERATED FROM PYTHON SOURCE LINES 14-28
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 5
     import pyvista as pv
 
     plotter = pv.Plotter()
@@ -217,7 +216,7 @@ shape sharper or broader. Three spotlights with varying sharpness:
     plotter = pv.Plotter(lighting='none')
     hemi_template = pv.Sphere().clip()
 
-    centers = [(0, 0, 0), (0, 1.5, 0), (0, 1.5*0.5, 1.5*3**0.5/2)]
+    centers = [(0, 0, 0), (0, 1.5, 0), (0, 1.5 * 0.5, 1.5 * 3**0.5 / 2)]
     exponents = [1, 0.3, 5]
 
     for center, exponent in zip(centers, exponents):
@@ -258,7 +257,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.752 seconds)
+   **Total running time of the script:** ( 0 minutes  2.194 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:

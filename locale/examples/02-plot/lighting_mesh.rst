@@ -30,19 +30,16 @@ and Specular. These options only work if the ``lighting`` argument to
 You can turn off all lighting for the given mesh by passing ``lighting=False``
 to ``add_mesh``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-24
+.. GENERATED FROM PYTHON SOURCE LINES 14-21
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
     from pyvista import examples
 
     mesh = examples.download_st_helens().warp_by_scalar()
 
-    cpos = [(575848., 5128459., 22289.),
-            (562835.0, 5114981.5, 2294.5),
-            (-0.5, -0.5, 0.7)]
+    cpos = [(575848.0, 5128459.0, 22289.0), (562835.0, 5114981.5, 2294.5), (-0.5, -0.5, 0.7)]
 
 
 
@@ -51,11 +48,11 @@ to ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+.. GENERATED FROM PYTHON SOURCE LINES 23-24
 
 First, lets take a look at the mesh with default lighting conditions
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-28
+.. GENERATED FROM PYTHON SOURCE LINES 24-26
 
 .. code-block:: default
 
@@ -64,29 +61,20 @@ First, lets take a look at the mesh with default lighting conditions
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 27-28
 
 What about with no lighting
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 28-30
 
 .. code-block:: default
 
@@ -95,39 +83,30 @@ What about with no lighting
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-34
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-32
 
 Demonstration of the specular property
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-49
+.. GENERATED FROM PYTHON SOURCE LINES 32-47
 
 .. code-block:: default
 
-    p = pv.Plotter(shape=(1,2), window_size=[1500, 500])
+    p = pv.Plotter(shape=(1, 2), window_size=[1500, 500])
 
-    p.subplot(0,0)
+    p.subplot(0, 0)
     p.add_mesh(mesh, show_scalar_bar=False)
     p.add_text('No Specular')
 
-    p.subplot(0,1)
+    p.subplot(0, 1)
     s = 1.0
     p.add_mesh(mesh, specular=s, show_scalar_bar=False)
     p.add_text(f'Specular of {s}')
@@ -139,29 +118,20 @@ Demonstration of the specular property
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_003.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_003.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-51
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-49
 
 Just specular
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-53
+.. GENERATED FROM PYTHON SOURCE LINES 49-51
 
 .. code-block:: default
 
@@ -170,89 +140,60 @@ Just specular
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_004.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_004.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-55
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 52-53
 
 Specular power
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-58
+.. GENERATED FROM PYTHON SOURCE LINES 53-55
 
 .. code-block:: default
 
-    mesh.plot(specular=0.5, specular_power=15,
-              cpos=cpos, show_scalar_bar=False)
+    mesh.plot(specular=0.5, specular_power=15, cpos=cpos, show_scalar_bar=False)
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_005.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_005.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_005.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-57
 
 Demonstration of all three in use
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-63
+.. GENERATED FROM PYTHON SOURCE LINES 57-59
 
 .. code-block:: default
 
-    mesh.plot(diffuse=0.5, specular=0.5, ambient=0.5,
-              cpos=cpos, show_scalar_bar=False)
+    mesh.plot(diffuse=0.5, specular=0.5, ambient=0.5, cpos=cpos, show_scalar_bar=False)
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_lighting_mesh_006.png
-    :alt: lighting mesh
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(575848.0, 5128459.0, 22289.0),
-     (562835.0, 5114981.5, 2294.5),
-     (-0.502518907629606, -0.502518907629606, 0.7035264706814484)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_006.png
+   :alt: lighting mesh
+   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_006.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-66
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 For detailed control over lighting conditions in general see the
 :ref:`ref_light_examples` examples.
@@ -260,7 +201,7 @@ For detailed control over lighting conditions in general see the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.417 seconds)
+   **Total running time of the script:** ( 0 minutes  5.964 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lighting_mesh.py:

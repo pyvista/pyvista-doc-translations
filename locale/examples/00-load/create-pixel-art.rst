@@ -71,8 +71,8 @@ Convert pixel art to an array
         if not line:
             continue
         if len(line) < 20:
-            line += (20 - len(line))*' '
-        alien.append([line[i:i + 2] == '% ' for i in range(0, len(line), 2)])
+            line += (20 - len(line)) * ' '
+        alien.append([line[i : i + 2] == '% ' for i in range(0, len(line), 2)])
 
 
 
@@ -105,7 +105,7 @@ Define a helper function to add pixel boxes to plotter.
         ]
         for rows in pixels:
             for pixel in rows:
-                if pixel == True:
+                if pixel:
                     box = pv.Box(bounds=bounds)
                     plotter.add_mesh(box, color=color)
                 bounds[0] += 2.0
@@ -135,15 +135,15 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
     # Display MONSTERS
     p = pv.Plotter()
-    p = draw_pixels(p, alien, [-22.0,  22.0], "green")
-    p = draw_pixels(p, alien, [  0.0,  22.0], "green")
-    p = draw_pixels(p, alien, [ 22.0,  22.0], "green")
-    p = draw_pixels(p, alien, [-22.0,   0.0], "blue" )
-    p = draw_pixels(p, alien, [  0.0,   0.0], "blue" )
-    p = draw_pixels(p, alien, [ 22.0,   0.0], "blue" )
-    p = draw_pixels(p, alien, [-22.0, -22.0], "red"  )
-    p = draw_pixels(p, alien, [  0.0, -22.0], "red"  )
-    p = draw_pixels(p, alien, [ 22.0, -22.0], "red"  )
+    p = draw_pixels(p, alien, [-22.0, 22.0], "green")
+    p = draw_pixels(p, alien, [0.0, 22.0], "green")
+    p = draw_pixels(p, alien, [22.0, 22.0], "green")
+    p = draw_pixels(p, alien, [-22.0, 0.0], "blue")
+    p = draw_pixels(p, alien, [0.0, 0.0], "blue")
+    p = draw_pixels(p, alien, [22.0, 0.0], "blue")
+    p = draw_pixels(p, alien, [-22.0, -22.0], "red")
+    p = draw_pixels(p, alien, [0.0, -22.0], "red")
+    p = draw_pixels(p, alien, [22.0, -22.0], "red")
 
     text = logo.text_3d("ALIEN MONSTERS", depth=10.0)
     text.points *= 4.0
@@ -166,7 +166,7 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.237 seconds)
+   **Total running time of the script:** ( 0 minutes  1.329 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pixel-art.py:
