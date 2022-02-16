@@ -28,17 +28,16 @@ In this example we simply change a few parameters for the
 :func:`pyvista.Sphere` method, but this could easily be applied to any
 mesh-generating/altering code.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 13-36
+.. GENERATED FROM PYTHON SOURCE LINES 13-37
 
 .. code-block:: default
 
     import pyvista as pv
 
 
-    class MyCustomRoutine():
+    class MyCustomRoutine:
         def __init__(self, mesh):
-            self.output = mesh # Expected PyVista mesh type
+            self.output = mesh  # Expected PyVista mesh type
             # default parameters
             self.kwargs = {
                 'radius': 0.5,
@@ -63,7 +62,8 @@ mesh-generating/altering code.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-41
+
+.. GENERATED FROM PYTHON SOURCE LINES 38-42
 
 .. code-block:: default
 
@@ -78,7 +78,7 @@ mesh-generating/altering code.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-70
+.. GENERATED FROM PYTHON SOURCE LINES 43-74
 
 .. code-block:: default
 
@@ -90,7 +90,8 @@ mesh-generating/altering code.
         rng=[3, 60],
         value=30,
         title="Phi Resolution",
-        pointa=(.025, .1), pointb=(.31, .1),
+        pointa=(0.025, 0.1),
+        pointb=(0.31, 0.1),
         style='modern',
     )
     p.add_slider_widget(
@@ -98,7 +99,8 @@ mesh-generating/altering code.
         rng=[3, 60],
         value=30,
         title="Theta Resolution",
-        pointa=(.35, .1), pointb=(.64, .1),
+        pointa=(0.35, 0.1),
+        pointb=(0.64, 0.1),
         style='modern',
     )
     p.add_slider_widget(
@@ -106,35 +108,27 @@ mesh-generating/altering code.
         rng=[0.1, 1.5],
         value=0.5,
         title="Radius",
-        pointa=(.67, .1), pointb=(.98, .1),
+        pointa=(0.67, 0.1),
+        pointb=(0.98, 0.1),
         style='modern',
     )
     p.show()
 
 
 
-.. image:: /examples/03-widgets/images/sphx_glr_multi-slider-widget_001.png
-    :alt: multi slider widget
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-widgets/images/sphx_glr_multi-slider-widget_001.png
+   :alt: multi slider widget
+   :srcset: /examples/03-widgets/images/sphx_glr_multi-slider-widget_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.9264490110725325, 1.9264490110725325, 1.9264490110725325),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.331 seconds)
+   **Total running time of the script:** ( 0 minutes  0.397 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_multi-slider-widget.py:

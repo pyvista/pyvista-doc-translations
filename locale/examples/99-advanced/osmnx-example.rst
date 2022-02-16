@@ -86,7 +86,7 @@ Next, convert the edges into pyvista lines using
     lines = []
 
     # convert each edge into a line
-    for idx, row in edges.iterrows():
+    for _, row in edges.iterrows():
         x_pts = row['geometry'].xy[0]
         y_pts = row['geometry'].xy[1]
         z_pts = np.zeros(len(x_pts))
@@ -128,7 +128,7 @@ Finally, merge the lines and plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.525 seconds)
+   **Total running time of the script:** ( 0 minutes  0.846 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_osmnx-example.py:

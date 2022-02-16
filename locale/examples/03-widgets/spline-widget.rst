@@ -48,7 +48,7 @@ path. To do this, we have added a convenient helper method which leverages the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-39
+.. GENERATED FROM PYTHON SOURCE LINES 22-41
 
 .. code-block:: default
 
@@ -56,18 +56,20 @@ path. To do this, we have added a convenient helper method which leverages the
     mesh = pv.Wavelet()
 
     # initial spline to seed the example
-    points = np.array([[-8.64208925, -7.34294559, -9.13803458],
-                       [-8.25601497, -2.54814702,  0.93860914],
-                       [-0.30179377, -3.21555997, -4.19999019],
-                       [ 3.24099167,  2.05814768,  3.39041509],
-                       [ 4.39935227,  4.18804542,  8.96391132]])
+    points = np.array(
+        [
+            [-8.64208925, -7.34294559, -9.13803458],
+            [-8.25601497, -2.54814702, 0.93860914],
+            [-0.30179377, -3.21555997, -4.19999019],
+            [3.24099167, 2.05814768, 3.39041509],
+            [4.39935227, 4.18804542, 8.96391132],
+        ]
+    )
 
     p = pv.Plotter()
     p.add_mesh(mesh.outline(), color='black')
     p.add_mesh_slice_spline(mesh, initial_points=points, n_handles=5)
-    p.camera_position = [(30, -42, 30),
-     (0.0, 0.0, 0.0),
-     (-0.09, 0.53, 0.84)]
+    p.camera_position = [(30, -42, 30), (0.0, 0.0, 0.0), (-0.09, 0.53, 0.84)]
     p.show()
 
 
@@ -84,7 +86,7 @@ path. To do this, we have added a convenient helper method which leverages the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.739 seconds)
+   **Total running time of the script:** ( 0 minutes  0.738 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_spline-widget.py:

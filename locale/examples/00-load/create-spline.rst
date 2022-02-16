@@ -25,14 +25,13 @@ Creating a Spline
 
 Create a spline/polyline from a numpy array of XYZ vertices
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-15
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
 
 
@@ -46,9 +45,10 @@ Create a spline/polyline from a numpy array of XYZ vertices
 
 Create a dataset to plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-30
+.. GENERATED FROM PYTHON SOURCE LINES 17-32
 
 .. code-block:: default
+
 
 
     def make_points():
@@ -59,6 +59,7 @@ Create a dataset to plot
         x = r * np.sin(theta)
         y = r * np.cos(theta)
         return np.column_stack((x, y, z))
+
 
     points = make_points()
     points[0:5, :]
@@ -82,23 +83,24 @@ Create a dataset to plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+.. GENERATED FROM PYTHON SOURCE LINES 33-36
 
 Now let's make a function that can create line cells on a
 :class:`pyvista.PolyData` mesh given that the points are in order for the
 segments they make.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-49
+.. GENERATED FROM PYTHON SOURCE LINES 36-52
 
 .. code-block:: default
+
 
 
     def lines_from_points(points):
         """Given an array of points, make a line set"""
         poly = pv.PolyData()
         poly.points = points
-        cells = np.full((len(points)-1, 3), 2, dtype=np.int_)
-        cells[:, 1] = np.arange(0, len(points)-1, dtype=np.int_)
+        cells = np.full((len(points) - 1, 3), 2, dtype=np.int_)
+        cells[:, 1] = np.arange(0, len(points) - 1, dtype=np.int_)
         cells[:, 2] = np.arange(1, len(points), dtype=np.int_)
         poly.lines = cells
         return poly
@@ -131,7 +133,7 @@ segments they make.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-55
+.. GENERATED FROM PYTHON SOURCE LINES 53-58
 
 .. code-block:: default
 
@@ -152,14 +154,15 @@ segments they make.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-58
+.. GENERATED FROM PYTHON SOURCE LINES 59-61
 
 That tube has sharp edges at each line segment. This can be mitigated by
 creating a single PolyLine cell for all of the points
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-73
+.. GENERATED FROM PYTHON SOURCE LINES 61-78
 
 .. code-block:: default
+
 
 
     def polyline_from_points(points):
@@ -169,6 +172,7 @@ creating a single PolyLine cell for all of the points
         the_cell = np.insert(the_cell, 0, len(points))
         poly.lines = the_cell
         return poly
+
 
     polyline = polyline_from_points(points)
     polyline["scalars"] = np.arange(polyline.n_points)
@@ -188,11 +192,11 @@ creating a single PolyLine cell for all of the points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-75
+.. GENERATED FROM PYTHON SOURCE LINES 79-80
 
 You could also interpolate those points onto a parametric spline
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-79
+.. GENERATED FROM PYTHON SOURCE LINES 80-84
 
 .. code-block:: default
 
@@ -207,11 +211,11 @@ You could also interpolate those points onto a parametric spline
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-81
+.. GENERATED FROM PYTHON SOURCE LINES 85-86
 
 Plot spline as a tube
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-87
+.. GENERATED FROM PYTHON SOURCE LINES 86-92
 
 .. code-block:: default
 
@@ -233,11 +237,11 @@ Plot spline as a tube
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-89
+.. GENERATED FROM PYTHON SOURCE LINES 93-94
 
 The spline can also be plotted as a plain line
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-97
+.. GENERATED FROM PYTHON SOURCE LINES 94-102
 
 .. code-block:: default
 
@@ -261,7 +265,7 @@ The spline can also be plotted as a plain line
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-103
+.. GENERATED FROM PYTHON SOURCE LINES 103-108
 
 Ribbons
 +++++++
@@ -269,7 +273,7 @@ Ribbons
 Ayy of the lines from the examples above can be used to create ribbons.
 Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-106
+.. GENERATED FROM PYTHON SOURCE LINES 108-111
 
 .. code-block:: default
 
@@ -291,7 +295,7 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.097 seconds)
+   **Total running time of the script:** ( 0 minutes  1.928 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:

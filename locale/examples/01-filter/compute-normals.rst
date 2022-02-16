@@ -26,14 +26,13 @@ Computing Surface Normals
 
 Compute normals on a surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-16
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     from pyvista import examples
 
 
@@ -111,7 +110,7 @@ We could also use face/cell normals to extract all the faces of a mesh
 facing a general direction. In the following snippet, we take a mesh, compute
 the normals along its cell faces, and extract the faces that face upward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-62
+.. GENERATED FROM PYTHON SOURCE LINES 46-64
 
 .. code-block:: default
 
@@ -121,14 +120,16 @@ the normals along its cell faces, and extract the faces that face upward.
     mesh.compute_normals(cell_normals=True, point_normals=False, inplace=True)
 
     # Get list of cell IDs that meet condition
-    ids = np.arange(mesh.n_cells)[mesh['Normals'][:,2] > 0.0]
+    ids = np.arange(mesh.n_cells)[mesh['Normals'][:, 2] > 0.0]
 
     # Extract those cells
     top = mesh.extract_cells(ids)
 
-    cpos = [(-834.3184529757553, -918.4677714398535, 236.5468795300025),
-     (11.03829376004883, -13.642289291587957, -35.91218884207208),
-     (0.19212361465657216, 0.11401076390090074, 0.9747256344254143)]
+    cpos = [
+        (-834.3184529757553, -918.4677714398535, 236.5468795300025),
+        (11.03829376004883, -13.642289291587957, -35.91218884207208),
+        (0.19212361465657216, 0.11401076390090074, 0.9747256344254143),
+    ]
 
     top.plot(cpos=cpos, color=True)
 
@@ -146,7 +147,7 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.893 seconds)
+   **Total running time of the script:** ( 0 minutes  19.910 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:

@@ -54,15 +54,13 @@ Feel free to change the values of ``freq`` to change the shape of
 the "mountains".  For example, lowering the frequency will make the
 terrain seem more like hills rather than mountains.
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-33
+.. GENERATED FROM PYTHON SOURCE LINES 26-31
 
 .. code-block:: default
 
     freq = [0.689, 0.562, 0.683]
     noise = pv.perlin_noise(1, freq, (0, 0, 0))
-    sampled = pv.sample_function(noise,
-                                 bounds=(-10, 10, -10, 10, -10, 10),
-                                 dim=(500, 500, 1))
+    sampled = pv.sample_function(noise, bounds=(-10, 10, -10, 10, -10, 10), dim=(500, 500, 1))
 
 
 
@@ -72,14 +70,14 @@ terrain seem more like hills rather than mountains.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 Warp by scalar
 ~~~~~~~~~~~~~~
 Here we warp by scalar to give the terrain some height based on the
 value of the Perlin noise.  This is necessary to the terrain its shape.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-55
+.. GENERATED FROM PYTHON SOURCE LINES 36-53
 
 .. code-block:: default
 
@@ -96,7 +94,7 @@ value of the Perlin noise.  This is necessary to the terrain its shape.
 
     # water level at 70%  (change this to change the water level)
     water_percent = 0.7
-    water_level = z.max() - water_percent*diff
+    water_level = z.max() - water_percent * diff
     mesh.points[z < water_level, 2] = water_level
 
 
@@ -107,23 +105,29 @@ value of the Perlin noise.  This is necessary to the terrain its shape.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-57
+.. GENERATED FROM PYTHON SOURCE LINES 54-55
 
 Show the terrain as a contour plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-69
+.. GENERATED FROM PYTHON SOURCE LINES 55-73
 
 .. code-block:: default
 
 
     # make the water blue
     rng = z.max() - z.min()
-    clim = (z.max() - rng*1.65, z.max())
+    clim = (z.max() - rng * 1.65, z.max())
 
     pl = pv.Plotter()
-    pl.add_mesh(mesh, scalars=z,
-                cmap='gist_earth', n_colors=10, show_scalar_bar=False,
-                smooth_shading=True, clim=clim)
+    pl.add_mesh(
+        mesh,
+        scalars=z,
+        cmap='gist_earth',
+        n_colors=10,
+        show_scalar_bar=False,
+        smooth_shading=True,
+        clim=clim,
+    )
     pl.show()
 
 
@@ -139,20 +143,18 @@ Show the terrain as a contour plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-71
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 Show the terrain with custom lighting and shadows
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-79
+.. GENERATED FROM PYTHON SOURCE LINES 75-81
 
 .. code-block:: default
 
 
     pl = pv.Plotter(lighting=None)
-    pl.add_light(pv.Light((3, 1, 0.5), show_actor=True, positional=True,
-                          cone_angle=90, intensity=1.2))
-    pl.add_mesh(mesh, cmap='gist_earth', show_scalar_bar=False,
-                smooth_shading=True, clim=clim)
+    pl.add_light(pv.Light((3, 1, 0.5), show_actor=True, positional=True, cone_angle=90, intensity=1.2))
+    pl.add_mesh(mesh, cmap='gist_earth', show_scalar_bar=False, smooth_shading=True, clim=clim)
     pl.enable_shadows = True
     pl.show()
 
@@ -170,7 +172,7 @@ Show the terrain with custom lighting and shadows
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.307 seconds)
+   **Total running time of the script:** ( 0 minutes  3.397 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:

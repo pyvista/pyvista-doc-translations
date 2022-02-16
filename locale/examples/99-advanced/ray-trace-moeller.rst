@@ -85,16 +85,16 @@ First, define the ray triangle intersection method.
 
         if abs(det) < eps:  # no intersection
             return False, null_inter
-        inv_det = 1. / det
+        inv_det = 1.0 / det
         tvec = ray_start - v1
         u = tvec.dot(pvec) * inv_det
 
-        if u < 0. or u > 1.:  # if not intersection
+        if u < 0.0 or u > 1.0:  # if not intersection
             return False, null_inter
 
         qvec = np.cross(tvec, edge1)
         v = ray_vec.dot(qvec) * inv_det
-        if v < 0. or u + v > 1.:  # if not intersection
+        if v < 0.0 or u + v > 1.0:  # if not intersection
             return False, null_inter
 
         t = edge2.dot(qvec) * inv_det
@@ -111,15 +111,13 @@ First, define the ray triangle intersection method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-107
+.. GENERATED FROM PYTHON SOURCE LINES 85-105
 
 .. code-block:: default
 
 
     # Create a basic triangle within pyvista
-    points = np.array([[0, 0, 0],
-                       [0, 1, 0],
-                       [1, 0, 0]])
+    points = np.array([[0, 0, 0], [0, 1, 0], [1, 0, 0]])
     faces = np.array([3, 0, 1, 2])
     tri = pv.PolyData(points, faces)
 
@@ -147,6 +145,8 @@ First, define the ray triangle intersection method.
 
  .. code-block:: none
 
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:475: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
+      warnings.warn(
     Intersected True
     t: 1.0
     u: 0.25
@@ -155,11 +155,11 @@ First, define the ray triangle intersection method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-109
+.. GENERATED FROM PYTHON SOURCE LINES 106-107
 
 Plot the problem setup and the intersection
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-146
+.. GENERATED FROM PYTHON SOURCE LINES 107-147
 
 .. code-block:: default
 
@@ -169,20 +169,20 @@ Plot the problem setup and the intersection
         # reconstruct intersection point in barycentric coordinates.  See
         # https://en.wikipedia.org/wiki/Barycentric_coordinate_system
         a, b, c = (1 - u - v), u, v
-        point = tri.points[0]*a + tri.points[1]*b + tri.points[2]*c
+        point = tri.points[0] * a + tri.points[1] * b + tri.points[2] * c
 
         pl = pv.Plotter()
-        pl.add_text(f'Intersected at ({point[0]:.3}, {point[0]:.3}, {point[0]:.3})',
-                    font_size=26)
+        pl.add_text(f'Intersected at ({point[0]:.3}, {point[0]:.3}, {point[0]:.3})', font_size=26)
         pl.add_mesh(tri)
-        _ = pl.add_arrows(np.array([start]),
-                          np.array([direction]),
-                          show_scalar_bar=False,
-                          color='r', style='wireframe')
-        pl.add_points(np.array([point]), point_size=20, render_points_as_spheres=True,
-                      color='b')
-        pl.add_point_labels(tri, [f'a = {1 - u - v:.3}', f'b = {u:.3}', f'c = {v:.3}'],
-                            font_size=40)
+        _ = pl.add_arrows(
+            np.array([start]),
+            np.array([direction]),
+            show_scalar_bar=False,
+            color='r',
+            style='wireframe',
+        )
+        pl.add_points(np.array([point]), point_size=20, render_points_as_spheres=True, color='b')
+        pl.add_point_labels(tri, [f'a = {1 - u - v:.3}', f'b = {u:.3}', f'c = {v:.3}'], font_size=40)
         pl.show_bounds()
         pl.camera_position = 'xy'
         pl.show()
@@ -190,10 +190,13 @@ Plot the problem setup and the intersection
     else:  # no intersection
         pl = pv.Plotter()
         pl.add_text('No intersection')
-        _ = pl.add_arrows(np.array([start]),
-                          np.array([direction]),
-                          show_scalar_bar=False,
-                          color='r', style='wireframe')
+        _ = pl.add_arrows(
+            np.array([start]),
+            np.array([direction]),
+            show_scalar_bar=False,
+            color='r',
+            style='wireframe',
+        )
         pl.add_mesh(tri)
 
         pl.show_bounds()
@@ -215,7 +218,7 @@ Plot the problem setup and the intersection
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.654 seconds)
+   **Total running time of the script:** ( 0 minutes  0.561 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace-moeller.py:

@@ -48,22 +48,16 @@ A PolyData object can be created quickly from numpy arrays.  The vertex array
 contains the locations of the points in the mesh and the face array contains
 the number of points of each face and the indices of the vertices which comprise that face.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-37
+.. GENERATED FROM PYTHON SOURCE LINES 20-31
 
 .. code-block:: default
 
 
     # mesh points
-    vertices = np.array([[0, 0, 0],
-                         [1, 0, 0],
-                         [1, 1, 0],
-                         [0, 1, 0],
-                         [0.5, 0.5, -1]])
+    vertices = np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0], [0, 1, 0], [0.5, 0.5, -1]])
 
     # mesh faces
-    faces = np.hstack([[4, 0, 1, 2, 3],  # square
-                       [3, 0, 1, 4],     # triangle
-                       [3, 1, 2, 4]])    # triangle
+    faces = np.hstack([[4, 0, 1, 2, 3], [3, 0, 1, 4], [3, 1, 2, 4]])  # [square, triangle, triangle]
 
     surf = pv.PolyData(vertices, faces)
 
@@ -84,7 +78,7 @@ the number of points of each face and the indices of the vertices which comprise
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.716 seconds)
+   **Total running time of the script:** ( 0 minutes  0.680 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-poly.py:

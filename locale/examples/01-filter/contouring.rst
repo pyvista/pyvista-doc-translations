@@ -84,7 +84,7 @@ Iso-Surfaces
 
 Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-48
+.. GENERATED FROM PYTHON SOURCE LINES 37-50
 
 .. code-block:: default
 
@@ -95,9 +95,11 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
     p = pv.Plotter()
     p.add_mesh(mesh.outline(), color="k")
     p.add_mesh(contours, opacity=0.25, clim=[0, 200])
-    p.camera_position = [(-130.99381142132086, 644.4868354828589, 163.80447435848686),
-     (125.21748748157661, 123.94368717158413, 108.83283586619626),
-     (0.2780372840777734, 0.03547871361794171, 0.9599148553609699)]
+    p.camera_position = [
+        (-130.99381142132086, 644.4868354828589, 163.80447435848686),
+        (125.21748748157661, 123.94368717158413, 108.83283586619626),
+        (0.2780372840777734, 0.03547871361794171, 0.9599148553609699),
+    ]
     p.show()
 
 
@@ -114,7 +116,7 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.984 seconds)
+   **Total running time of the script:** ( 0 minutes  5.551 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:

@@ -36,14 +36,13 @@ follows a given topographic surface. In this example, it is important to note
 that the given digital elevation model (DEM) is structured (gridded and not
 triangulated): this is common for DEMs.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-27
+.. GENERATED FROM PYTHON SOURCE LINES 20-26
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -108,7 +107,7 @@ the :func:`pyvista.UniformGridFilters.extract_subset` filter:
 
 .. code-block:: default
 
-    subset = dem.extract_subset((500, 900, 400, 800, 0, 0), (5,5,1))
+    subset = dem.extract_subset((500, 900, 400, 800, 0, 0), (5, 5, 1))
     subset.plot(cpos="xy")
 
 
@@ -201,7 +200,7 @@ Once we have those structured coordinates, we can create a
 .. code-block:: default
 
 
-    z_cells = np.array([25]*5 + [35]*3 + [50]*2 + [75, 100])
+    z_cells = np.array([25] * 5 + [35] * 3 + [50] * 2 + [75, 100])
 
     xx = np.repeat(terrain.x, len(z_cells), axis=-1)
     yy = np.repeat(terrain.y, len(z_cells), axis=-1)
@@ -242,13 +241,15 @@ Once we have those structured coordinates, we can create a
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-76
+.. GENERATED FROM PYTHON SOURCE LINES 71-78
 
 .. code-block:: default
 
-    cpos = [(1826736.796308761, 5655837.275274233, 4676.8405505181745),
-     (1821066.1790519988, 5649248.765538796, 943.0995128226014),
-     (-0.2797856225380979, -0.27966946337594883, 0.9184252809434081)]
+    cpos = [
+        (1826736.796308761, 5655837.275274233, 4676.8405505181745),
+        (1821066.1790519988, 5649248.765538796, 943.0995128226014),
+        (-0.2797856225380979, -0.27966946337594883, 0.9184252809434081),
+    ]
 
     mesh.plot(show_edges=True, lighting=False, cpos=cpos)
 
@@ -266,7 +267,7 @@ Once we have those structured coordinates, we can create a
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.487 seconds)
+   **Total running time of the script:** ( 0 minutes  2.213 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:

@@ -91,7 +91,7 @@ For example, let's map that same image of bricks to a curvey surface:
     x = np.arange(-10, 10, 0.25)
     y = np.arange(-10, 10, 0.25)
     x, y = np.meshgrid(x, y)
-    r = np.sqrt(x ** 2 + y ** 2)
+    r = np.sqrt(x**2 + y**2)
     z = np.sin(r)
     curvsurf = pv.StructuredGrid(x, y, z)
 
@@ -118,17 +118,14 @@ Display scalar data along with a texture by ensuring the
 ``interpolate_before_map`` setting is ``False`` and specifying both the
 ``texture`` and ``scalars`` arguments.
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-62
+.. GENERATED FROM PYTHON SOURCE LINES 53-59
 
 .. code-block:: default
 
 
     elevated = curvsurf.elevation()
 
-    elevated.plot(scalars='Elevation',
-                  cmap='terrain',
-                  texture=tex,
-                  interpolate_before_map=False)
+    elevated.plot(scalars='Elevation', cmap='terrain', texture=tex, interpolate_before_map=False)
 
 
 
@@ -143,11 +140,11 @@ Display scalar data along with a texture by ensuring the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-64
+.. GENERATED FROM PYTHON SOURCE LINES 60-61
 
 Note that this process can be completed with any image texture!
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-70
+.. GENERATED FROM PYTHON SOURCE LINES 61-67
 
 .. code-block:: default
 
@@ -169,7 +166,7 @@ Note that this process can be completed with any image texture!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-78
+.. GENERATED FROM PYTHON SOURCE LINES 68-75
 
 Textures from Files
 +++++++++++++++++++
@@ -179,7 +176,7 @@ done using the :func:`pyvista.read_texture` function - simply pass an image
 file's path, and this function with handle making a ``vtkTexture`` for you to
 use.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-84
+.. GENERATED FROM PYTHON SOURCE LINES 75-81
 
 .. code-block:: default
 
@@ -201,7 +198,7 @@ use.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-92
+.. GENERATED FROM PYTHON SOURCE LINES 82-89
 
 NumPy Arrays as Textures
 ++++++++++++++++++++++++
@@ -211,7 +208,7 @@ objects can be converted to textures using :func:`pyvista.image_to_texture`
 and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
 :func:`pyvista.numpy_to_texture`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-111
+.. GENERATED FROM PYTHON SOURCE LINES 89-108
 
 .. code-block:: default
 
@@ -246,13 +243,13 @@ and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-115
+.. GENERATED FROM PYTHON SOURCE LINES 109-112
 
 Create a GIF Movie with updating textures
 +++++++++++++++++++++++++++++++++++++++++
 Generate a moving gif from an active plotter with updating textures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-152
+.. GENERATED FROM PYTHON SOURCE LINES 112-149
 
 .. code-block:: default
 
@@ -305,7 +302,7 @@ Generate a moving gif from an active plotter with updating textures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-163
+.. GENERATED FROM PYTHON SOURCE LINES 150-160
 
 Textures with Transparency
 ++++++++++++++++++++++++++
@@ -318,7 +315,7 @@ contain a 4th channel specifying the opacity value from 0 [transparent] to
 
 Here we can download an image that has an alpha channel:
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-166
+.. GENERATED FROM PYTHON SOURCE LINES 160-163
 
 .. code-block:: default
 
@@ -340,7 +337,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 167-172
+.. GENERATED FROM PYTHON SOURCE LINES 164-169
 
 .. code-block:: default
 
@@ -361,7 +358,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 173-182
+.. GENERATED FROM PYTHON SOURCE LINES 170-179
 
 Repeating Textures
 ++++++++++++++++++
@@ -373,7 +370,7 @@ Here we create the texture coordinates to fill up the grid with several
 mappings of a single texture. In order to do this we must define texture
 coordinates outside of the typical ``(0, 1)`` range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 182-190
+.. GENERATED FROM PYTHON SOURCE LINES 179-187
 
 .. code-block:: default
 
@@ -392,7 +389,7 @@ coordinates outside of the typical ``(0, 1)`` range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 191-196
+.. GENERATED FROM PYTHON SOURCE LINES 188-193
 
 By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
@@ -400,7 +397,7 @@ produce 4 repetitions of the same texture on this mesh.
 Then we must associate those texture coordinates with the mesh through the
 :attr:`pyvista.DataSet.active_t_coords` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-199
+.. GENERATED FROM PYTHON SOURCE LINES 193-196
 
 .. code-block:: default
 
@@ -414,11 +411,11 @@ Then we must associate those texture coordinates with the mesh through the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 200-201
+.. GENERATED FROM PYTHON SOURCE LINES 197-198
 
 Now display all the puppies!
 
-.. GENERATED FROM PYTHON SOURCE LINES 201-207
+.. GENERATED FROM PYTHON SOURCE LINES 198-204
 
 .. code-block:: default
 
@@ -440,14 +437,14 @@ Now display all the puppies!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 208-212
+.. GENERATED FROM PYTHON SOURCE LINES 205-209
 
 Spherical Texture Coordinates
 +++++++++++++++++++++++++++++
 We have a built in convienance method for mapping textures to spherical
 coordinate systems much like the planar mapping demoed above.
 
-.. GENERATED FROM PYTHON SOURCE LINES 212-220
+.. GENERATED FROM PYTHON SOURCE LINES 209-216
 
 .. code-block:: default
 
@@ -456,7 +453,6 @@ coordinate systems much like the planar mapping demoed above.
 
     mesh.texture_map_to_sphere(inplace=True)
     mesh.plot(texture=tex)
-
 
 
 
@@ -471,7 +467,7 @@ coordinate systems much like the planar mapping demoed above.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 221-228
+.. GENERATED FROM PYTHON SOURCE LINES 217-224
 
 The helper method above does not always produce the desired texture
 coordinates, so sometimes it must be done manually. Here is a great, user
@@ -481,15 +477,13 @@ Manually create the texture coordinates for a globe map. First, we create
 the mesh that will be used as the globe. Note the `start_theta` for a slight
 overlappig
 
-.. GENERATED FROM PYTHON SOURCE LINES 228-247
+.. GENERATED FROM PYTHON SOURCE LINES 224-241
 
 .. code-block:: default
 
-    sphere = pv.Sphere(radius=1,
-                       theta_resolution=120,
-                       phi_resolution=120,
-                       start_theta=270.001,
-                       end_theta=270)
+    sphere = pv.Sphere(
+        radius=1, theta_resolution=120, phi_resolution=120, start_theta=270.001, end_theta=270
+    )
 
     # Initialize the texture coordinates array
     sphere.active_t_coords = np.zeros((sphere.points.shape[0], 2))
@@ -497,8 +491,8 @@ overlappig
     # Populate by manually calculating
     for i in range(sphere.points.shape[0]):
         sphere.active_t_coords[i] = [
-             0.5 + np.arctan2(-sphere.points[i, 0], sphere.points[i, 1])/(2 * np.pi),
-             0.5 + np.arcsin(sphere.points[i, 2])/np.pi
+            0.5 + np.arctan2(-sphere.points[i, 0], sphere.points[i, 1]) / (2 * np.pi),
+            0.5 + np.arcsin(sphere.points[i, 2]) / np.pi,
         ]
 
     # And let's display it with a world map
@@ -519,7 +513,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.806 seconds)
+   **Total running time of the script:** ( 0 minutes  10.979 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

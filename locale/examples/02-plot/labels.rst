@@ -23,7 +23,7 @@ Label Points
 
 Use string arrays in a point set to label points
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-14
+.. GENERATED FROM PYTHON SOURCE LINES 7-13
 
 .. code-block:: default
 
@@ -31,7 +31,6 @@ Use string arrays in a point set to label points
 
     import pyvista as pv
 
-    # sphinx_gallery_thumbnail_number = 3
     from pyvista import examples
 
 
@@ -90,9 +89,9 @@ node:
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10</td></tr>
     <tr><td>N Points</td><td>10</td></tr>
-    <tr><td>X Bounds</td><td>2.140e-01, 9.914e-01</td></tr>
-    <tr><td>Y Bounds</td><td>3.565e-02, 8.812e-01</td></tr>
-    <tr><td>Z Bounds</td><td>7.888e-03, 9.118e-01</td></tr>
+    <tr><td>X Bounds</td><td>2.936e-01, 9.057e-01</td></tr>
+    <tr><td>Y Bounds</td><td>1.007e-02, 8.315e-01</td></tr>
+    <tr><td>Z Bounds</td><td>9.005e-02, 9.565e-01</td></tr>
     <tr><td>N Arrays</td><td>1</td></tr>
     </table>
 
@@ -160,7 +159,7 @@ This example will label the nodes of a mesh with their coordinate locations
 
 Create plotting class and add the unstructured grid
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-69
+.. GENERATED FROM PYTHON SOURCE LINES 51-64
 
 .. code-block:: default
 
@@ -170,14 +169,9 @@ Create plotting class and add the unstructured grid
     # Add labels to points on the yz plane (where x == 0)
     points = grid.points
     mask = points[:, 0] == 0
-    plotter.add_point_labels(
-        points[mask], points[mask].tolist(), point_size=20, font_size=36
-    )
+    plotter.add_point_labels(points[mask], points[mask].tolist(), point_size=20, font_size=36)
 
-    plotter.camera_position = [
-        (-1.5, 1.5, 3.0),
-        (0.05, 0.6, 1.2),
-        (0.2, 0.9, -0.25)]
+    plotter.camera_position = [(-1.5, 1.5, 3.0), (0.05, 0.6, 1.2), (0.2, 0.9, -0.25)]
 
     plotter.show()
 
@@ -194,14 +188,14 @@ Create plotting class and add the unstructured grid
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-74
+.. GENERATED FROM PYTHON SOURCE LINES 65-69
 
 Label Scalar Values
 +++++++++++++++++++
 
 This example will label each point with their scalar values
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-77
+.. GENERATED FROM PYTHON SOURCE LINES 69-72
 
 .. code-block:: default
 
@@ -215,7 +209,7 @@ This example will label each point with their scalar values
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-89
+.. GENERATED FROM PYTHON SOURCE LINES 73-84
 
 .. code-block:: default
 
@@ -245,7 +239,7 @@ This example will label each point with their scalar values
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.212 seconds)
+   **Total running time of the script:** ( 0 minutes  1.163 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:

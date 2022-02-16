@@ -85,7 +85,7 @@ Generate and visualize meshes from data in longitude-latitude coordinates.
     v_vec = np.sin(np.radians(yy))  # meridional
 
     # Scalar data
-    scalar = u_vec ** 2 + v_vec ** 2
+    scalar = u_vec**2 + v_vec**2
 
     # Create arrays of grid cell boundaries, which have shape of (x.shape[0] + 1)
     xx_bounds = _cell_bounds(x)
@@ -248,7 +248,7 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.484 seconds)
+   **Total running time of the script:** ( 0 minutes  1.435 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:

@@ -26,12 +26,11 @@ Customize Scalar Bars
 Walk through of all the different capabilities of scalar bars and
 how a user can customize scalar bars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-16
+.. GENERATED FROM PYTHON SOURCE LINES 11-15
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -178,14 +177,12 @@ The text properties of the scalar bar can also be controlled:
 
 Labelling values outside of the scalar range
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-90
+.. GENERATED FROM PYTHON SOURCE LINES 83-88
 
 .. code-block:: default
 
     p = pv.Plotter()
-    p.add_mesh(mesh, clim=[1000, 2000],
-               below_color='blue', above_color='red',
-               scalar_bar_args=sargs)
+    p.add_mesh(mesh, clim=[1000, 2000], below_color='blue', above_color='red', scalar_bar_args=sargs)
     p.show()
 
 
@@ -201,12 +198,12 @@ Labelling values outside of the scalar range
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-93
+.. GENERATED FROM PYTHON SOURCE LINES 89-91
 
 Annotate values of interest using a dictionary. The key of the dictionary
 must be the value to annotate, and the value must be the string label.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-103
+.. GENERATED FROM PYTHON SOURCE LINES 91-101
 
 .. code-block:: default
 
@@ -235,7 +232,7 @@ must be the value to annotate, and the value must be the string label.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.388 seconds)
+   **Total running time of the script:** ( 0 minutes  5.053 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:

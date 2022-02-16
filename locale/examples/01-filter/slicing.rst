@@ -25,14 +25,13 @@ Slicing
 
 Extract thin planar slices from a volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
     import matplotlib.pyplot as plt
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -210,8 +209,8 @@ the line low.
 
     def path(y):
         """Equation: x = a(y-h)^2 + k"""
-        a = 110.0 / 160.0 ** 2
-        x = a * y ** 2 + 0.0
+        a = 110.0 / 160.0**2
+        x = a * y**2 + 0.0
         return x, y
 
 
@@ -355,7 +354,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-148
+.. GENERATED FROM PYTHON SOURCE LINES 139-147
 
 .. code-block:: default
 
@@ -370,7 +369,6 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-
 .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_007.png
    :alt: slicing
    :srcset: /examples/01-filter/images/sphx_glr_slicing_007.png
@@ -380,7 +378,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-158
+.. GENERATED FROM PYTHON SOURCE LINES 148-157
 
 Slice At Different Bearings
 +++++++++++++++++++++++++++
@@ -392,12 +390,12 @@ around a user-chosen location.
 
 Create a point to orient slices around
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-161
+.. GENERATED FROM PYTHON SOURCE LINES 157-160
 
 .. code-block:: default
 
     ranges = np.array(model.bounds).reshape(-1, 2).ptp(axis=1)
-    point = np.array(model.center) - ranges*0.25
+    point = np.array(model.center) - ranges * 0.25
 
 
 
@@ -406,20 +404,20 @@ Create a point to orient slices around
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-164
+.. GENERATED FROM PYTHON SOURCE LINES 161-163
 
 Now generate a few normal vectors to rotate a slice around the z-axis.
 Use equation for circle since its about the Z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-173
+.. GENERATED FROM PYTHON SOURCE LINES 163-172
 
 .. code-block:: default
 
-    increment = np.pi/6.
+    increment = np.pi / 6.0
     # use a container to hold all the slices
-    slices = pv.MultiBlock() # treat like a dictionary/list
+    slices = pv.MultiBlock()  # treat like a dictionary/list
     for theta in np.arange(0, np.pi, increment):
-        normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi/2.)
+        normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi / 2.0)
         name = f'Bearing: {np.rad2deg(theta):.2f}'
         slices[name] = model.slice(origin=point, normal=normal)
     slices
@@ -457,11 +455,11 @@ Use equation for circle since its about the Z-axis.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-175
+.. GENERATED FROM PYTHON SOURCE LINES 173-174
 
 And now display it!
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-179
+.. GENERATED FROM PYTHON SOURCE LINES 174-178
 
 .. code-block:: default
 
@@ -484,7 +482,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  24.470 seconds)
+   **Total running time of the script:** ( 0 minutes  23.130 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

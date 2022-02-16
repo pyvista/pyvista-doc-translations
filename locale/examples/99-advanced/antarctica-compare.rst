@@ -33,14 +33,13 @@ The modeling results are courtesy of `Urruty Benoit <https://github.com/BenoitUR
 and  are from the `Elmer/Ice <http://elmerice.elmerfem.org>`_ simulation
 software.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-30
+.. GENERATED FROM PYTHON SOURCE LINES 18-29
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -85,9 +84,10 @@ software.
 
 Here is a helper to extract regions of the mesh based on the simulation node.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-37
+.. GENERATED FROM PYTHON SOURCE LINES 32-39
 
 .. code-block:: default
+
 
 
     def extract_node(node):
@@ -101,7 +101,8 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-48
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-49
 
 .. code-block:: default
 
@@ -117,7 +118,6 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-
 .. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
    :alt: antarctica compare
    :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
@@ -127,7 +127,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-54
+.. GENERATED FROM PYTHON SOURCE LINES 50-55
 
 .. code-block:: default
 
@@ -148,7 +148,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-59
+.. GENERATED FROM PYTHON SOURCE LINES 56-60
 
 .. code-block:: default
 
@@ -163,7 +163,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-66
+.. GENERATED FROM PYTHON SOURCE LINES 61-67
 
 .. code-block:: default
 
@@ -185,11 +185,11 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-68
+.. GENERATED FROM PYTHON SOURCE LINES 68-69
 
 plot vectors without mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-78
+.. GENERATED FROM PYTHON SOURCE LINES 69-81
 
 .. code-block:: default
 
@@ -197,9 +197,11 @@ plot vectors without mesh
     pl = pv.Plotter()
     pl.add_mesh(a.glyph(orient="ssavelocity", factor=20), **vel_dargs)
     pl.add_mesh(b.glyph(orient="ssavelocity", factor=20), **vel_dargs)
-    pl.camera_position = [(-1114684.6969340036, 293863.65389149904, 752186.603224546),
-     (-1114684.6969340036, 293863.65389149904, 0.0),
-     (0.0, 1.0, 0.0)]
+    pl.camera_position = [
+        (-1114684.6969340036, 293863.65389149904, 752186.603224546),
+        (-1114684.6969340036, 293863.65389149904, 0.0),
+        (0.0, 1.0, 0.0),
+    ]
     pl.show()
 
 
@@ -215,12 +217,12 @@ plot vectors without mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-81
+.. GENERATED FROM PYTHON SOURCE LINES 82-84
 
 Compare directions. Normalize them so we can get a reasonable direction
 comparison.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-99
+.. GENERATED FROM PYTHON SOURCE LINES 84-104
 
 .. code-block:: default
 
@@ -236,9 +238,11 @@ comparison.
     pl.add_arrows(a.points, flow_a, mag=10000, color='b', label='flow_a')
     pl.add_arrows(b.points, flow_b, mag=10000, color='r', label='flow_b')
     pl.add_legend()
-    pl.camera_position = [(-1044239.3240694795, 354805.0268606294, 484178.24825854995),
-                          (-1044239.3240694795, 354805.0268606294, 0.0),
-                          (0.0, 1.0, 0.0)]
+    pl.camera_position = [
+        (-1044239.3240694795, 354805.0268606294, 484178.24825854995),
+        (-1044239.3240694795, 354805.0268606294, 0.0),
+        (0.0, 1.0, 0.0),
+    ]
     pl.show()
 
 
@@ -254,19 +258,18 @@ comparison.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-101
+.. GENERATED FROM PYTHON SOURCE LINES 105-106
 
 flow_a that agrees with the mean flow path of flow_b
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-109
+.. GENERATED FROM PYTHON SOURCE LINES 106-113
 
 .. code-block:: default
 
     agree = flow_a.dot(flow_b.mean(0))
 
     pl = pv.Plotter()
-    pl.add_mesh(a, scalars=agree, cmap='bwr',
-                scalar_bar_args={'title': 'Flow agreement with block b'})
+    pl.add_mesh(a, scalars=agree, cmap='bwr', scalar_bar_args={'title': 'Flow agreement with block b'})
     pl.add_mesh(b, color='w')
     pl.show(cpos='xy')
 
@@ -282,7 +285,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-117
+.. GENERATED FROM PYTHON SOURCE LINES 114-120
 
 .. code-block:: default
 
@@ -290,8 +293,7 @@ flow_a that agrees with the mean flow path of flow_b
 
     pl = pv.Plotter()
     pl.add_mesh(a, color='w')
-    pl.add_mesh(b, scalars=agree, cmap='bwr',
-                scalar_bar_args={'title': 'Flow agreement with block a'})
+    pl.add_mesh(b, scalars=agree, cmap='bwr', scalar_bar_args={'title': 'Flow agreement with block a'})
     pl.show(cpos='xy')
 
 
@@ -308,7 +310,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.665 seconds)
+   **Total running time of the script:** ( 0 minutes  11.662 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_antarctica-compare.py:

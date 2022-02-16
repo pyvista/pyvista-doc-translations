@@ -25,12 +25,11 @@ Extract Edges
 
 Extract edges from a surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -187,13 +186,11 @@ We can get a count of the open edges with:
 And we can extract those edges with the ``boundary_edges`` option of
 :func:`pyvista.PolyDataFilters.extract_feature_edges`:
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-80
+.. GENERATED FROM PYTHON SOURCE LINES 71-78
 
 .. code-block:: default
 
-    edges = mesh.extract_feature_edges(boundary_edges=True,
-                               feature_edges=False,
-                               manifold_edges=False)
+    edges = mesh.extract_feature_edges(boundary_edges=True, feature_edges=False, manifold_edges=False)
 
     p = pv.Plotter()
     p.add_mesh(mesh, color=True)
@@ -215,7 +212,7 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.033 seconds)
+   **Total running time of the script:** ( 0 minutes  3.395 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:

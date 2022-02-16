@@ -25,12 +25,11 @@ Plot Over Line
 
 Plot the values of a dataset over a line through that dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -108,7 +107,7 @@ Flat Surface
 
 We could also plot the values of a mesh that lies on a flat surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-60
+.. GENERATED FROM PYTHON SOURCE LINES 43-58
 
 .. code-block:: default
 
@@ -124,9 +123,7 @@ We could also plot the values of a mesh that lies on a flat surface
     p = pv.Plotter()
     p.add_mesh(mesh)
     p.add_mesh(line, color="white", line_width=10)
-    p.add_point_labels(
-        [a, b], ["A", "B"], font_size=48, point_color="red", text_color="red"
-    )
+    p.add_point_labels([a, b], ["A", "B"], font_size=48, point_color="red", text_color="red")
     p.show()
 
 
@@ -141,11 +138,11 @@ We could also plot the values of a mesh that lies on a flat surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-62
+.. GENERATED FROM PYTHON SOURCE LINES 59-60
 
 Run the filter and produce a line plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-70
+.. GENERATED FROM PYTHON SOURCE LINES 60-68
 
 .. code-block:: default
 
@@ -172,7 +169,7 @@ Run the filter and produce a line plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.657 seconds)
+   **Total running time of the script:** ( 0 minutes  1.659 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_plot-over-line.py:

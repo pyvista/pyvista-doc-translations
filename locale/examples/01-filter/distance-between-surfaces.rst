@@ -57,18 +57,18 @@ to the top surface, unlike the first two examples.
     import pyvista as pv
 
 
-    # A helper to make a random surface
     def hill(seed):
-        mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50,
-                                        hillamplitude=0.5)
-        mesh.rotate_y(-10, inplace=True) # give the surfaces some tilt
+        """A helper to make a random surface."""
+        mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50, hillamplitude=0.5)
+        mesh.rotate_y(-10, inplace=True)  # give the surfaces some tilt
 
         return mesh
+
 
     h0 = hill(1).elevation()
     h1 = hill(10)
     # Shift one surface
-    h1.points[:,-1] += 5
+    h1.points[:, -1] += 5
     h1 = h1.elevation()
 
 
@@ -108,12 +108,11 @@ Ray Tracing Distance
 
 Compute normals of lower surface at vertex points
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-68
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
 
 .. code-block:: default
 
-    h0n = h0.compute_normals(point_normals=True, cell_normals=False,
-                             auto_orient_normals=True)
+    h0n = h0.compute_normals(point_normals=True, cell_normals=False, auto_orient_normals=True)
 
 
 
@@ -122,12 +121,12 @@ Compute normals of lower surface at vertex points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-71
+.. GENERATED FROM PYTHON SOURCE LINES 68-70
 
 Travel along normals to the other surface and compute the thickness on each
 vector.
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-87
+.. GENERATED FROM PYTHON SOURCE LINES 70-86
 
 .. code-block:: default
 
@@ -139,7 +138,7 @@ vector.
         p0 = p - vec
         p1 = p + vec
         ip, ic = h1.ray_trace(p0, p1, first_point=True)
-        dist = np.sqrt(np.sum((ip - p)**2))
+        dist = np.sqrt(np.sum((ip - p) ** 2))
         h0n["distances"][i] = dist
 
     # Replace zeros with nans
@@ -162,7 +161,7 @@ vector.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-94
+.. GENERATED FROM PYTHON SOURCE LINES 87-93
 
 .. code-block:: default
 
@@ -184,7 +183,7 @@ vector.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-103
+.. GENERATED FROM PYTHON SOURCE LINES 94-102
 
 Nearest Neighbor Distance
 +++++++++++++++++++++++++
@@ -195,14 +194,14 @@ upper surface and the nearest neighbor vertex point of the lower surface.
 This will be
 noticeably faster than a ray trace, especially for large surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-110
+.. GENERATED FROM PYTHON SOURCE LINES 102-109
 
 .. code-block:: default
 
     from scipy.spatial import KDTree
 
     tree = KDTree(h1.points)
-    d_kdtree, idx = tree.query(h0.points )
+    d_kdtree, idx = tree.query(h0.points)
     h0["distances"] = d_kdtree
     np.mean(d_kdtree)
 
@@ -221,7 +220,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-117
+.. GENERATED FROM PYTHON SOURCE LINES 110-116
 
 .. code-block:: default
 
@@ -243,7 +242,7 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-125
+.. GENERATED FROM PYTHON SOURCE LINES 117-124
 
 Using PyVista Filter
 ++++++++++++++++++++
@@ -253,13 +252,12 @@ points inside the cells of the top surface that are closest to the vertex
 points of the bottom surface.  ``closest_points`` is returned when using
 ``return_closest_point=True``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-133
+.. GENERATED FROM PYTHON SOURCE LINES 124-131
 
 .. code-block:: default
 
 
-    closest_cells, closest_points = h1.find_closest_cell(h0.points,
-                                                         return_closest_point=True)
+    closest_cells, closest_points = h1.find_closest_cell(h0.points, return_closest_point=True)
     d_exact = np.linalg.norm(h0.points - closest_points, axis=1)
     h0["distances"] = d_exact
     np.mean(d_exact)
@@ -280,12 +278,12 @@ points of the bottom surface.  ``closest_points`` is returned when using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-136
+.. GENERATED FROM PYTHON SOURCE LINES 132-134
 
 As expected there is only a small difference between this method and the
 KDTree method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-141
+.. GENERATED FROM PYTHON SOURCE LINES 134-139
 
 .. code-block:: default
 
@@ -309,7 +307,7 @@ KDTree method.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.135 seconds)
+   **Total running time of the script:** ( 0 minutes  2.991 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:
