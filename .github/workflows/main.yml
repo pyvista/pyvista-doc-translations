@@ -21,30 +21,6 @@ jobs:
   script:
     runs-on: ubuntu-20.04
     steps:
-    - name: Cache Sphinx-Gallery Examples
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/doc/examples/
-        key: doc-examples-${{ hashFiles('pyvista/pyvista/_version.py') }}
-    - name: Cache docs _build directory
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/doc/_build/
-        key: doc-_build-${{ hashFiles('pyvista/pyvista/_version.py') }}-${{ hashFiles('doc/conf.py') }}
-    - name: Cache example data
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
-        key: example-data-${{ hashFiles('pyvista/pyvista/_version.py') }}
-    - name: Cache autosummary
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/**/_autosummary/*.rst
-        key: autosummary-rst-${{ hashFiles('pyvista/pyvista/_version.py') }}
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
@@ -75,6 +51,30 @@ jobs:
         sudo apt-get install -y --no-install-recommends python3-tk pandoc
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
+    - name: Cache Sphinx-Gallery Examples
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/doc/examples/
+        key: doc-examples-${{ hashFiles('pyvista/pyvista/_version.py') }}
+    - name: Cache docs _build directory
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/doc/_build/
+        key: doc-_build-${{ hashFiles('pyvista/pyvista/_version.py') }}-${{ hashFiles('doc/conf.py') }}
+    - name: Cache example data
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
+        key: example-data-${{ hashFiles('pyvista/pyvista/_version.py') }}
+    - name: Cache autosummary
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/**/_autosummary/*.rst
+        key: autosummary-rst-${{ hashFiles('pyvista/pyvista/_version.py') }}
     - name: update
       env:
         SPHINXINTL_TRANSIFEX_USERNAME: api
