@@ -65,7 +65,6 @@ jobs:
         sudo apt-get install -y --no-install-recommends libgl1-mesa-glx
         sudo apt-get install -y --no-install-recommends python3-tk pandoc
         pip install -U pip setuptools wheel
-        git submodule update --remote
         pip install -r ./requirements.txt
     - name: update
       env:
@@ -74,6 +73,7 @@ jobs:
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
         set -x
+        git submodule update --remote
         export DISPLAY=:99.0
         export PYVISTA_OFF_SCREEN=True
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
