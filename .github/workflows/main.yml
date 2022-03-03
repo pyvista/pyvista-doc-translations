@@ -1,17 +1,50 @@
 name: pyvista-doc-auto-update
 on:
+  pull_request:  # Uses cache
+  workflow_dispatch:  # Able to not use cache by user demand
+    inputs:
+      cache:
+        description: 'Use build cache'
+        required: false
+        default: true
+  # No cache enabled for `schedule` and `push`
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'  # once a day on main
   push:
+    tags:
+      - '*'
     branches:
       - main
-  pull_request:
-    branches:
-      - main
+env:
+  USE_CACHE: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.cache == 'true') || (github.event_name == 'pull_request') || (github.event_name == 'push') }}
 jobs:
   script:
     runs-on: ubuntu-20.04
     steps:
+    - name: Cache Sphinx-Gallery Examples
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/doc/examples/
+        key: doc-examples-${{ hashFiles('pyvista/pyvista/_version.py') }}
+    - name: Cache docs _build directory
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/doc/_build/
+        key: doc-_build-${{ hashFiles('pyvista/pyvista/_version.py') }}-${{ hashFiles('doc/conf.py') }}
+    - name: Cache example data
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
+        key: example-data-${{ hashFiles('pyvista/pyvista/_version.py') }}
+    - name: Cache autosummary
+      uses: actions/cache@v2
+      if: env.USE_CACHE == 'true'
+      with:
+        path: pyvista/**/_autosummary/*.rst
+        key: autosummary-rst-${{ hashFiles('pyvista/pyvista/_version.py') }}
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
