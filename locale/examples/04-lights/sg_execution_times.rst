@@ -5,16 +5,16 @@
 
 Computation times
 =================
-**00:10.220** total execution time for **examples_04-lights** files:
+**00:05.249** total execution time for **examples_04-lights** files:
 
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_shadows.py` (``shadows.py``)                   | 00:04.904 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_shadows.py` (``shadows.py``)                   | 00:05.249 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:02.194 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:01.977 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:01.145 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_04-lights_light_types.py` (``light_types.py``)           | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+

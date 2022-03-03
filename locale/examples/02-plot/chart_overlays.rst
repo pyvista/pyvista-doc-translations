@@ -103,14 +103,14 @@ to the scene, and define a second (right) chart.
 
     p = pv.Plotter()
     h_chart = pv.ChartMPL(f, size=(0.46, 0.25), loc=(0.02, 0.06))
-    h_chart.background_color = (1, 1, 1, 0.4)
+    h_chart.background_color = (1.0, 1.0, 1.0, 0.4)
     p.add_chart(h_chart)
     v_chart = pv.Chart2D(
         size=(0.46, 0.25), loc=(0.52, 0.06), x_label="Time (s)", y_label="Velocity (m/s)"
     )
     v_line = v_chart.line(t[:1], v[:1])
     v_chart.y_range = (-1, 1)
-    v_chart.background_color = (1, 1, 1, 0.4)
+    v_chart.background_color = (1.0, 1.0, 1.0, 0.4)
     p.add_chart(v_chart)
     p.add_mesh(pv.Sphere(1), name="sphere", render=False)
     p.show(auto_close=False, interactive=True, interactive_update=True)
@@ -152,7 +152,7 @@ to the scene, and define a second (right) chart.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.391 seconds)
+   **Total running time of the script:** ( 0 minutes  6.301 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_overlays.py:

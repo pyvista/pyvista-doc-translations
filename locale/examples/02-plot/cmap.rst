@@ -94,11 +94,11 @@ and we specify the ranges where those colors fall:
 
 
     # Define the colors we want to use
-    blue = np.array([12 / 256, 238 / 256, 246 / 256, 1])
-    black = np.array([11 / 256, 11 / 256, 11 / 256, 1])
-    grey = np.array([189 / 256, 189 / 256, 189 / 256, 1])
-    yellow = np.array([255 / 256, 247 / 256, 0 / 256, 1])
-    red = np.array([1, 0, 0, 1])
+    blue = np.array([12 / 256, 238 / 256, 246 / 256, 1.0])
+    black = np.array([11 / 256, 11 / 256, 11 / 256, 1.0])
+    grey = np.array([189 / 256, 189 / 256, 189 / 256, 1.0])
+    yellow = np.array([255 / 256, 247 / 256, 0 / 256, 1.0])
+    red = np.array([1.0, 0.0, 0.0, 1.0])
 
     mapping = np.linspace(mesh['values'].min(), mesh['values'].max(), 256)
     newcolors = np.empty((256, 4))
@@ -293,7 +293,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.914 seconds)
+   **Total running time of the script:** ( 0 minutes  5.339 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:
