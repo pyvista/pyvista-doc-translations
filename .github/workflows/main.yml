@@ -32,30 +32,6 @@ jobs:
       with:
         host: github.com
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-    - name: Cache Sphinx-Gallery Examples
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/doc/examples/
-        key: doc-examples-${{ hashFiles('pyvista/pyvista/_version.py') }}
-    - name: Cache docs _build directory
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/doc/_build/
-        key: doc-_build-${{ hashFiles('pyvista/pyvista/_version.py') }}-${{ hashFiles('doc/conf.py') }}
-    - name: Cache example data
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: ${{ env.PYVISTA_EXAMPLE_DATA_PATH }}
-        key: example-data-${{ hashFiles('pyvista/pyvista/_version.py') }}
-    - name: Cache autosummary
-      uses: actions/cache@v2
-      if: env.USE_CACHE == 'true'
-      with:
-        path: pyvista/**/_autosummary/*.rst
-        key: autosummary-rst-${{ hashFiles('pyvista/pyvista/_version.py') }}
     - name: install
       run: |
         sudo apt-get update
