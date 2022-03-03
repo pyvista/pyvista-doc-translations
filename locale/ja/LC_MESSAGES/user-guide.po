@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.34.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-11 00:47+0000\n"
+"POT-Creation-Date: 2022-03-03 22:53+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -1793,26 +1793,28 @@ msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:19
-msgid ""
-"**color** : :class:`python:str` :term:`python:sequence`, :obj:`optional`"
-msgstr ""
-"**color** : :class:`python:str` :term:`python:sequence`, :obj:`optional`"
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "**color** : :obj:`color_like`, :obj:`optional`"
+msgstr "**color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:18
-msgid "python:str python:sequence, optional"
-msgstr "python:str python:sequence, optional"
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "color_like, optional"
+msgstr "color_like, optional"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:15
 msgid ""
 "Use to make the entire mesh have a single solid color. Either a string, RGB "
 "list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
-"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
-"scalars are specified."
+"``color=[1.0, 1.0, 1.0]``, or ``color='#FFFFFF'``. Color will be overridden "
+"if scalars are specified."
 msgstr ""
 "メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
-"``color='w'`` ， ``color=[1, 1, 1]`` ， ``color='#FFFFFF'`` "
+"``color='w'`` ， ``color=[1.0, 1.0, 1.0]`` ， ``color='#FFFFFF'`` "
 "．スカラーが指定されている場合，色は上書きされます．"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
@@ -1907,18 +1909,6 @@ msgid "An ``n x 3`` numpy array of points or PyVista dataset with points."
 msgstr "点の ``n x 3`` の numpy 配列，または点を含む PyVista データセットです．"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
-msgid ""
-"**color** : :class:`python:str` or :term:`python:sequence`, :obj:`optional`"
-msgstr ""
-"**color** : :class:`python:str` or :term:`python:sequence`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "python:str or python:sequence, optional"
-msgstr "python:str or python:sequence, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_points:12
 msgid ""
 "Either a string, RGB sequence, or hex color string.  For one of the "
@@ -1937,8 +1927,8 @@ msgstr "``color='w'``"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "``color=[1, 1, 1]``"
-msgstr "``color=[1, 1, 1]``"
+msgid "``color=[1.0, 1.0, 1.0]``"
+msgstr "``color=[1.0, 1.0, 1.0]``"
 
 #: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
 #: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
