@@ -53,7 +53,7 @@ based rendering and VTK v9 supports high dynamic range textures.
 
 .. GENERATED FROM PYTHON SOURCE LINES 26-29
 
-Setup the plotter and enable environment textures.  This works well
+Set up the plotter and enable environment textures.  This works well
 for physically based rendering enabled meshes like the damaged
 helmet example.
 
@@ -109,7 +109,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  4.837 seconds)
+   **Total running time of the script:** ( 1 minutes  8.114 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:

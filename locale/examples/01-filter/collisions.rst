@@ -89,7 +89,7 @@ initialize an initial ``"collisions"`` mask.
 
 .. GENERATED FROM PYTHON SOURCE LINES 50-52
 
-Setup the plotter open a movie, and write a frame after moving the sphere.
+Set up the plotter open a movie, and write a frame after moving the sphere.
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-80
@@ -139,7 +139,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.777 seconds)
+   **Total running time of the script:** ( 0 minutes  10.534 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:

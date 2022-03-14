@@ -146,7 +146,7 @@ Combine custom lighting and physically based rendering.
     plotter.add_mesh(mesh, color='linen', pbr=True, metallic=0.5, roughness=0.5, diffuse=1)
 
 
-    # setup lighting
+    # set up lighting
     light = pv.Light((-2, 2, 0), (0, 0, 0), 'white')
     plotter.add_light(light)
 
@@ -175,7 +175,7 @@ Combine custom lighting and physically based rendering.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  10.224 seconds)
+   **Total running time of the script:** ( 1 minutes  14.614 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:
