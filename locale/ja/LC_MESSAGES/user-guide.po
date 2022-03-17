@@ -1173,6 +1173,12 @@ msgid ""
 "with a module like ``threejs``, which does not require any server side "
 "rendering or framebuffer."
 msgstr ""
+"現時点では， ``itkwidgets`` と ``ipyvtklink`` はJupyterlab 3と互換性がなく，juptyerで \"Error"
+" displaying widget: model not found\" というメッセージが表示されます．さらに ``ipygany`` と "
+"``pythreejs`` 以外のモジュールはすべてフレームバッファを必要とします．これは :func:`pyvista.start_xvfb` "
+"を使ったヘッドレス環境で設定できます．しかし，システムパッケージをインストールできないGoogle Colabでは， "
+"システムパッケージをインストールすることができないので，サーバーサイドレンダリングやフレームバッファを必要としない ``threejs`` "
+"のようなモジュールを使うべきです．"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:141
 msgid ""
@@ -1242,6 +1248,9 @@ msgid ""
 " rendering. Requires that a virtual framebuffer be set up when displaying on"
 " a headless server.  Must have ``ipyvtklink`` installed."
 msgstr ""
+"``'ipyvtklink'`` : "
+"リモートでレンダリングし，結果のVTKイメージをクライアントにストリーミングします．すべてのVTKメソッドをサポートしますが，リモートレンダリングのために遅延が発生します．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``ipyvtklink`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:16
@@ -1251,6 +1260,9 @@ msgid ""
 "a virtual framebuffer be set up when displaying on a headless server.  Must "
 "have ``panel`` installed."
 msgstr ""
+"``'panel'`` : "
+"VTKレンダーウィンドウをvtkjsオブジェクトに変換し，それをjupyterlabで視覚化します．ほとんどのVTKオブジェクトをサポートします．ヘッドレスサーバーで表示する場合は，仮想フレームバッファをセットアップする必要があります．"
+" ``panel`` がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:22
@@ -1284,6 +1296,8 @@ msgid ""
 "displaying on a headless server, but does not require any additional modules"
 " to be installed."
 msgstr ""
+"``'static'`` : "
+"Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが，追加のモジュールをインストールする必要はありません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:39
@@ -1557,7 +1571,7 @@ msgstr "ここで， environment.yml は次のとおりです．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:62
 msgid "Using pip, you can set up your jupyterlab environment with:"
-msgstr ""
+msgstr "pipを使って，次のようにしてjupyterlab環境をセットアップすることができます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:71
 msgid "Other Considerations"
