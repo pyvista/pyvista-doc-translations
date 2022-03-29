@@ -188,6 +188,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="A pyvista.PointSet is a concrete class representing a set of points that specifies the interfac...">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-pointset_thumb.png
+     :alt: Create a PointSet
+
+     :ref:`sphx_glr_examples_00-load_create-pointset.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-pointset
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Creating a PolyData (triangulated surface) object from NumPy arrays of the vertices and faces.">
 
 .. only:: html
