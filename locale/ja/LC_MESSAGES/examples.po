@@ -848,7 +848,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:24
 #: ../../pyvista/doc/examples/index.rst:198
 msgid "Create a PointSet"
-msgstr ""
+msgstr "PointSetの作成"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:26
 msgid ""
@@ -857,48 +857,58 @@ msgid ""
 "arrays to represent geometry. This class is useful for improving the "
 "performance of filters on point clouds."
 msgstr ""
+"クラス :`pyvista.PointSet` は、点の集合を表す具象クラスで、ジオメトリを表現するために \"点\" "
+"の配列を明示的に使用するデータセットのためのインターフェイスを指定します。このクラスは、点群に対するフィルタのパフォーマンスを向上させるために役立ちます。"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:31
 msgid ""
 "This example shows the performance improvement when clipping using the "
 ":func:`pyvista.DataSet.clip` filter on a :class:`pyvista.PointSet`."
 msgstr ""
+"この例では、 :class:`pyvista.PointSet` の :func:`pyvista.DataSet.clip` "
+"フィルターを使用してクリッピングした場合のパフォーマンスの向上を示しています。"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:67
 msgid "Plot the clipped polydata"
-msgstr ""
+msgstr "切り取られたポリデータをプロットします"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:89
 msgid ""
 "Show the performance improvement when using a PointSet. This is only "
 "available with VTK >= 9.1.0."
-msgstr ""
+msgstr "PointSetを使用したときのパフォーマンスの向上を表示します。 VTK >= 9.1.0 でのみ利用可能です。"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:123
 msgid "Plot the same dataset."
-msgstr ""
+msgstr "同じデータセットをプロットします。"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:126
 msgid ""
 "PyVista must still create an intermediate PolyData to be able to plot, so "
 "there is no performance improvement when using a :class:`pyvista.PointSet`"
 msgstr ""
+"PyVistaは、プロットできるようにするために、中間的なPolyDataを作成しなければならないので、 "
+":class:`pyvista.PointSet` を使用してもパフォーマンスが向上することはありません。"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:151
 msgid "**Total running time of the script:** ( 0 minutes  13.565 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  13.565 seconds)"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:166
 msgid ""
 ":download:`Download Python source code: create-pointset.py <create-"
 "pointset.py>`"
 msgstr ""
+":download:`Download Python source code: create-pointset.py <create-"
+"pointset.py>`"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:172
 msgid ""
 ":download:`Download Jupyter notebook: create-pointset.ipynb <create-"
 "pointset.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: create-pointset.ipynb <create-"
+"pointset.ipynb>`"
 
 #: ../../pyvista/doc/examples/00-load/create-poly.rst:13
 msgid ""
@@ -2201,16 +2211,17 @@ msgstr "計算時間"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
 msgid "**00:13.565** total execution time for **examples_00-load** files:"
-msgstr ""
+msgstr "**00:13.565** total execution time for **examples_00-load** files:"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_00-load_create-pointset.py` (``create-pointset.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_00-load_create-pointset.py` (``create-pointset.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 msgid "00:13.565"
-msgstr ""
+msgstr "00:13.565"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:13
@@ -3207,7 +3218,7 @@ msgstr "ボックスクリッピングアルゴリズムを実行します"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:183
 msgid "Crinkled Clipping"
-msgstr ""
+msgstr "しわくちゃなクリッピング"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:184
 msgid ""
@@ -3215,6 +3226,7 @@ msgid ""
 "cells on the boundary, but want to preserve the input cell structure and to "
 "pass the entire cell on through the boundary."
 msgstr ""
+"クリンプクリッピングは、クリップフィルタが境界上のセルを本当にクリップするのではなく、入力セルの構造を保持し、セル全体を境界から通過させたい場合に有効です。"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:188
 msgid ""
@@ -3223,26 +3235,30 @@ msgid ""
 ":func:`pyvista.DataSetFilters.clip_sruface`, but not available when clipping"
 " by scalar in :func:`pyvista.DataSetFilters.clip_scalar`."
 msgstr ""
+"このオプションは :func:`pyvista.DataSetFilters.clip`, "
+":func:`pyvista.DataSetFilters.clip_box`, "
+":func:`pyvista.DataSetFilters.clip_sruface` で使用できますが、 "
+":func:`pyvista.DataSetFilters.clip_scalar` でスカラーによるクリッピングを行っても利用することはできません。"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:210
 msgid "Define clipping plane"
-msgstr ""
+msgstr "クリッピングプレーンの定義"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:228
 msgid "Perform a standard clip"
-msgstr ""
+msgstr "標準クリップを実行します"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:245
 msgid "Perform a crinkled clip"
-msgstr ""
+msgstr "クリンプクリップを行います"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:262
 msgid "Plot comparison"
-msgstr ""
+msgstr "プロット比較"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:291
 msgid "**Total running time of the script:** ( 0 minutes  3.563 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  3.563 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:306
 msgid ":download:`Download Python source code: clipping.py <clipping.py>`"
@@ -5494,7 +5510,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:03.563** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:03.563** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
@@ -5502,7 +5518,7 @@ msgstr ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:03.563"
-msgstr ""
+msgstr "00:03.563"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -8736,7 +8752,7 @@ msgstr "ポイントピッキングを有効にした後，どのアクターが
 
 #: ../../pyvista/doc/examples/02-plot/point-picking.rst:150
 msgid "Pick using the left-mouse button"
-msgstr ""
+msgstr "マウスの左ボタンでピックします"
 
 #: ../../pyvista/doc/examples/02-plot/point-picking.rst:178
 msgid "**Total running time of the script:** ( 0 minutes  1.440 seconds)"
@@ -8875,7 +8891,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:01.440** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:01.440** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ""
@@ -12220,10 +12236,13 @@ msgid ""
 "concrete class representing a set of points that specifies the "
 "interfac...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"A pyvista.PointSet is a "
+"concrete class representing a set of points that specifies the "
+"interfac...\">"
 
 #: ../../pyvista/doc/examples/index.rst:198
 msgid ":ref:`sphx_glr_examples_00-load_create-pointset.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_00-load_create-pointset.py`"
 
 #: ../../pyvista/doc/examples/index.rst:210
 msgid ""
