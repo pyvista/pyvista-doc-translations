@@ -25,12 +25,11 @@ Picking points on a mesh
 This example demonstrates how to pick points on meshes using
 :func:`enable_point_picking() <pyvista.Plotter.enable_point_picking>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-13
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
 
 
@@ -107,7 +106,7 @@ Modify which actors are pickable
 
 After enabling point picking, we can modify which actors are pickable.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-55
+.. GENERATED FROM PYTHON SOURCE LINES 43-56
 
 .. code-block:: default
 
@@ -126,9 +125,47 @@ After enabling point picking, we can modify which actors are pickable.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-picking_003.png
    :alt: point picking
    :srcset: /examples/02-plot/images/sphx_glr_point-picking_003.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:204: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
+      warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-60
+
+Pick using the left-mouse button
+++++++++++++++++++++++++++++++++
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
+
+.. code-block:: default
+
+    sphere = pv.Sphere()
+
+    p = pv.Plotter()
+    p.add_mesh(sphere, pickable=True)
+    p.enable_point_picking(left_clicking=True)
+    p.show()
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_point-picking_004.png
+   :alt: point picking
+   :srcset: /examples/02-plot/images/sphx_glr_point-picking_004.png
    :class: sphx-glr-single-img
 
 
@@ -138,7 +175,7 @@ After enabling point picking, we can modify which actors are pickable.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.048 seconds)
+   **Total running time of the script:** ( 0 minutes  1.440 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-picking.py:

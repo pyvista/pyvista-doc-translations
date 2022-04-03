@@ -188,6 +188,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="A pyvista.PointSet is a concrete class representing a set of points that specifies the interfac...">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_create-pointset_thumb.png
+     :alt: Create a PointSet
+
+     :ref:`sphx_glr_examples_00-load_create-pointset.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/create-pointset
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Creating a PolyData (triangulated surface) object from NumPy arrays of the vertices and faces.">
 
 .. only:: html
@@ -1751,6 +1772,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Picking Meshes">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_mesh-picking_thumb.png
+     :alt: Picking Meshes
+
+     :ref:`sphx_glr_examples_02-plot_mesh-picking.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/mesh-picking
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create an animated MP4 movie of a rendering scene.">
 
 .. only:: html
@@ -2063,6 +2105,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/spherical
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This allows you to pick points on the surface of a mesh.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_surface-picking_thumb.png
+     :alt: Picking a Point on the Surface of a Mesh
+
+     :ref:`sphx_glr_examples_02-plot_surface-picking.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/surface-picking
 
 .. raw:: html
 

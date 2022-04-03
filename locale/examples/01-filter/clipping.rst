@@ -149,7 +149,7 @@ Clip any dataset by an arbitrarily rotated solid box using the
 
 Run the box clipping algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-78
+.. GENERATED FROM PYTHON SOURCE LINES 67-79
 
 .. code-block:: default
 
@@ -167,6 +167,7 @@ Run the box clipping algorithm
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_004.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_004.png
@@ -176,10 +177,118 @@ Run the box clipping algorithm
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 80-90
+
+Crinkled Clipping
++++++++++++++++++
+Crinkled clipping is useful if you don’t want the clip filter to truly clip
+cells on the boundary, but want to preserve the input cell structure and to
+pass the entire cell on through the boundary.
+
+This option is available for :func:`pyvista.DataSetFilters.clip`,
+:func:`pyvista.DataSetFilters.clip_box`, and
+:func:`pyvista.DataSetFilters.clip_sruface`, but not available when clipping
+by scalar in :func:`pyvista.DataSetFilters.clip_scalar`.
+
+.. GENERATED FROM PYTHON SOURCE LINES 90-94
+
+.. code-block:: default
+
+
+    # Input mesh
+    mesh = pv.Wavelet()
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 95-96
+
+Define clipping plane
+
+.. GENERATED FROM PYTHON SOURCE LINES 96-99
+
+.. code-block:: default
+
+    normal = (1, 1, 1)
+    plane = pv.Plane(i_size=30, j_size=30, direction=normal)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 100-101
+
+Perform a standard clip
+
+.. GENERATED FROM PYTHON SOURCE LINES 101-103
+
+.. code-block:: default
+
+    clipped = mesh.clip(normal=normal)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 104-105
+
+Perform a crinkled clip
+
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
+
+.. code-block:: default
+
+    crinkled = mesh.clip(normal=normal, crinkle=True)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 108-109
+
+Plot comparison
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-117
+
+.. code-block:: default
+
+    p = pv.Plotter(shape=(1, 2))
+    p.add_mesh(clipped, show_edges=True)
+    p.add_mesh(plane.extract_feature_edges(), color='r')
+    p.subplot(0, 1)
+    p.add_mesh(crinkled, show_edges=True)
+    p.add_mesh(plane.extract_feature_edges(), color='r')
+    p.link_views()
+    p.show()
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_005.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_005.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.086 seconds)
+   **Total running time of the script:** ( 0 minutes  3.563 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:
