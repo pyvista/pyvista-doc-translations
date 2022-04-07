@@ -115,7 +115,7 @@ Now pass the NumPy meshgrid to PyVista
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-44
 
-Generating a structured grid is a one liner in this module, and the points
+Generating a structured grid is a one-liner in this module, and the points
 from the resulting surface can be accessed as a NumPy array:
 
 .. GENERATED FROM PYTHON SOURCE LINES 44-48
@@ -202,11 +202,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -44.50032772, -279.19741198,    1.83785014],
-                     [ -33.21693969, -270.8176285 ,    2.41788342],
-                     [ -23.32701032, -263.47271874,    3.02547783],
-                     [ -11.94115357, -255.01683528,    3.84341508],
-                     [   4.31365284, -242.94495067,    5.22328938]])
+    pyvista_ndarray([[ -41.1946134 , -285.44221293,    1.56276632],
+                     [ -27.98125268, -275.62910524,    2.1542712 ],
+                     [ -18.98497373, -268.94787886,    2.63926547],
+                     [  -4.72590418, -258.35815925,    3.54878948],
+                     [   3.59862908, -252.17581525,    4.15740295]])
 
 
 
@@ -348,7 +348,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.437 seconds)
+   **Total running time of the script:** ( 0 minutes  2.614 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:
