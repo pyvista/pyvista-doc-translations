@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:55+0000\n"
+"POT-Creation-Date: 2022-04-10 00:56+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -78,11 +78,11 @@ msgstr ""
 "feedstock/blob/master/recipe/build.sh>`__ "
 "を参照してください．以下のほとんどのオプションは，構築時間を短縮し，ホイールサイズを小さくするように設計されています．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:71
+#: ../../pyvista/doc/extras/building_vtk.rst:77
 msgid "Off-Screen Plotting GPU Support"
 msgstr "オフスクリーンプロットのGPUサポート"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:72
+#: ../../pyvista/doc/extras/building_vtk.rst:78
 msgid ""
 "VTK supports rendering with EGL, enabling rapid off-screen rendering using "
 "GPU hardware acceleration without installing a virtual framebuffer.  The "
@@ -93,7 +93,7 @@ msgstr ""
 "VTKはEGLを使用したレンダリングをサポートしており，仮想フレームバッファをインストールせずにGPUハードウェアアクセラレーションを使用して迅速なオフスクリーンレンダリングを可能にします．デフォルトのVTKホイールにはこの機能はありませんが，上記の"
 " ``cmake`` コマンドを次のように変更することで，GPUサポートを使用したオフスクリーンVTKを作成できます．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:113
+#: ../../pyvista/doc/extras/building_vtk.rst:119
 msgid ""
 "This disables any plotting using the X server, so be prepared to use this "
 "module only on a headless display where you either intend to save static "
@@ -107,25 +107,25 @@ msgstr ""
 " ``pyvista.set_jupyter_backend('ipyvtklink')`` "
 "とjupyterlab)とともに別のコンピュータにストリーミングする予定のあるヘッドレスディスプレイでのみ使用するようにしてください．言い換えれば，このホイールはVTKをスクリーン外の環境では使えなくするので，Xサーバのないヘッドレスシステムにインストールすることだけを計画してください．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:123
+#: ../../pyvista/doc/extras/building_vtk.rst:129
 msgid "Building OSMesa"
 msgstr "OSMesaの構築"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:124
+#: ../../pyvista/doc/extras/building_vtk.rst:130
 msgid ""
 "OSMesa provides higher visualization performance on CPU based hosts. Use "
 "this instead of ``xvfb``:"
 msgstr "OSMesaはCPUベースのホストでより高い可視化性能を提供します．xvfb`` の代わりに，これを使用してください．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:157
+#: ../../pyvista/doc/extras/building_vtk.rst:163
 msgid "Wheels will be generated in the ``dist`` directory."
 msgstr "Wheels は ``dist`` ディレクトリに生成されます．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:161
+#: ../../pyvista/doc/extras/building_vtk.rst:167
 msgid "Building ManyLinux Wheels"
 msgstr "ManyLinux wheel の構築"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:162
+#: ../../pyvista/doc/extras/building_vtk.rst:168
 msgid ""
 "The above directions are great for building a local build of VTK, but these "
 "wheels are difficult to share outside your local install given issues with "
@@ -137,21 +137,32 @@ msgstr ""
 " `manylinux <https://github.com/pypa/manylinux>`_ "
 "のdockerイメージを使ってwheelをビルドします．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:222
-msgid "This script can be called with:"
-msgstr "このスクリプトは，次のコマンドで呼び出すことができます:"
+#: ../../pyvista/doc/extras/building_vtk.rst:174
+msgid ""
+"To do this, create a ``build_wheels.sh`` with the following contents in the "
+"``git clone``d ``vtk`` directory, and give it executable permissions "
+"(``chmod +x build_wheels.sh``):"
+msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:232
+#: ../../pyvista/doc/extras/building_vtk.rst:231
+msgid "This script can then be called with:"
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:240
+msgid "You should end up with a ``build/wheelhouse/vtk-*.whl``."
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:243
 msgid ""
 "To build the EGL version of the wheel, follow the directions in the previous"
 " section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
 msgstr "EGLバージョンのwheelを作成するには，前のセクションの指示に従ってください．インストール依存関係にAAAAAを追加します．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:238
+#: ../../pyvista/doc/extras/building_vtk.rst:249
 msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
 msgstr "Raspberry Pi上のPython VTK Wheel(64ビット)構築"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:239
+#: ../../pyvista/doc/extras/building_vtk.rst:250
 msgid ""
 "While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
 "several issues that crop up when building wheels for the 32-bit version (see"
@@ -166,7 +177,7 @@ msgstr ""
 "<https://github.com/dockcross/dockcross>`_ "
 "を使ってwheelを構築してみてください．そうしないとメモリの制限が生じる可能性があります(特に1GBのRAMしかない場合)．"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:247
+#: ../../pyvista/doc/extras/building_vtk.rst:258
 msgid ""
 "Building the ``aarch64`` manylinux wheel can be done via docker with the "
 "``quay.io/pypa/manylinux2014_aarch64`` image.  Run the following:"
@@ -174,11 +185,11 @@ msgstr ""
 "``aarch64``  manylinux wheel のビルドは， ``quay.io/pypa/manylinux2014_aarch64`` "
 "イメージを使ったDockerで行うことができます．以下を実行します:"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:258
+#: ../../pyvista/doc/extras/building_vtk.rst:269
 msgid "Where ``build_wheels.sh`` is:"
 msgstr "ここで， ``build_wheels.sh`` は次のようになります:"
 
-#: ../../pyvista/doc/extras/building_vtk.rst:315
+#: ../../pyvista/doc/extras/building_vtk.rst:326
 msgid ""
 "Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
 "you want ``EGL`` enabled for your wheel."
@@ -1032,38 +1043,44 @@ msgstr "Dockerコンテナ内のPyVista"
 #: ../../pyvista/doc/extras/docker.rst:5
 msgid ""
 "You can use ``pyvista`` from within a docker container with jupyterlab.  To "
-"create a local docker image install ``docker`` and be sure you've logged "
-"into docker by following the directions at `Working with the Docker registry"
-" <https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
-"github-packages-registry/working-with-the-docker-registry>`_)"
+"launch a local docker container, install ``docker``, then pull and run the "
+"image with:"
 msgstr ""
-"jupyterlabを使用すると，Dockerコンテナ内から ``pyvista`` を使用できます．ローカルのdockerイメージを作成するには "
-"``docker`` をインストールし， `Working with Docker registry "
-"<https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
-"github-packages-registry/working-with-the-docker-registry>`_) "
-"の指示に従ってdockerにログインしていることを確認してください．"
 
-#: ../../pyvista/doc/extras/docker.rst:10
-msgid "Next pull and run the image with:"
-msgstr "次に，次のようにイメージをプルして実行します．"
-
-#: ../../pyvista/doc/extras/docker.rst:16
+#: ../../pyvista/doc/extras/docker.rst:13
 msgid ""
 "Finally, open the link that shows up from the terminal output and start "
 "playing around with pyvista in jupyterlab!  For example:"
 msgstr "最後に，端末出力から表示されるリンクを開き，jupyterlabのpyvistaを試してみましょう．たとえば，次のようになります．"
 
-#: ../../pyvista/doc/extras/docker.rst:29
+#: ../../pyvista/doc/extras/docker.rst:27
+msgid ""
+"You can see the latest tags of `our Docker containers here "
+"<https://github.com/pyvista/pyvista/pkgs/container/pyvista>`_. "
+"``ghcr.io/pyvista/pyvista:latest`` has JupyterLab set up while "
+"``ghcr.io/pyvista/pyvista:latest-slim`` is a lightweight Python environment "
+"without Jupyter"
+msgstr ""
+
+#: ../../pyvista/doc/extras/docker.rst:34
+msgid ""
+"You may need to log into the GitHub container registry by following the "
+"directions at `Working with the Docker registry "
+"<https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
+"github-packages-registry/working-with-the-docker-registry>`_)"
+msgstr ""
+
+#: ../../pyvista/doc/extras/docker.rst:39
 msgid "Create your own Docker Container with `pyvista`"
 msgstr "`pyvista` で独自のDockerコンテナを作成します"
 
-#: ../../pyvista/doc/extras/docker.rst:30
+#: ../../pyvista/doc/extras/docker.rst:40
 msgid ""
 "Clone pyvista and cd into this directory to create your own customized "
 "docker image."
 msgstr "pyvistaとcdをこのディレクトリにクローンし，独自のカスタマイズされたDockerイメージを作成します．"
 
-#: ../../pyvista/doc/extras/docker.rst:40
+#: ../../pyvista/doc/extras/docker.rst:50
 msgid ""
 "If you wish to have off-screen GPU support when rending on jupyterlab, see "
 "the the notes about building with EGL at :ref:`ref_building_vtk`, or use the"
@@ -1078,7 +1095,7 @@ msgstr ""
 "のカスタムのプリビルドwheelを使用してください． ``pyvista/docker/jupyter.Dockerfile`` "
 "のDockerイメージを次のように変更して，カスタマイズしたvtk wheelをdockerイメージにインストールします．"
 
-#: ../../pyvista/doc/extras/docker.rst:52
+#: ../../pyvista/doc/extras/docker.rst:62
 msgid ""
 "Additionally, you must install GPU drivers on the docker image of the same "
 "version running on the host machine.  For example, if you are running on "
@@ -1091,26 +1108,26 @@ msgstr ""
 "Kubernetes Serviceを実行していて，Kubernetesクラスタ上のGPUノードが ``450.51.06`` "
 "を実行している場合，同じバージョンをイメージにインストールする必要があります．基礎となるカーネル・モジュールを使用することになるので，コンテナー上にビルドする理由はありません(試行してもエラーになるだけです．)．"
 
-#: ../../pyvista/doc/extras/docker.rst:66
+#: ../../pyvista/doc/extras/docker.rst:76
 msgid ""
 "To verify that you're rendering on a GPU, first check the output of "
 "``nvidia-smi``.  You should get something like:"
 msgstr "GPUでレンダリングしているかどうかを確認するには，まず ``nvidia-smi`` の出力をチェックします．"
 
-#: ../../pyvista/doc/extras/docker.rst:85
+#: ../../pyvista/doc/extras/docker.rst:95
 msgid ""
 "Note the driver version (which is actually the kernel driver version), and "
 "verify it matches the version you installed on your docker image."
 msgstr ""
 "ドライバのバージョン(これは実際にはカーネルドライバのバージョンです．)をメモし，それがdockerイメージにインストールしたバージョンと一致することを確認します．"
 
-#: ../../pyvista/doc/extras/docker.rst:88
+#: ../../pyvista/doc/extras/docker.rst:98
 msgid ""
 "Finally, check that your render window is using NVIDIA by running "
 "``ReportCapabilities``:"
 msgstr "最後に， ``ReportCapabilities`` を実行して，レンダーウィンドウがNVIDIAを使用していることを確認します．"
 
-#: ../../pyvista/doc/extras/docker.rst:107
+#: ../../pyvista/doc/extras/docker.rst:117
 msgid ""
 "If you get ``display id not set``, then your environment is likely not set "
 "up correctly."

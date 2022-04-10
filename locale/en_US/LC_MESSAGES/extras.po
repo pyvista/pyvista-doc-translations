@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:55+0000\n"
+"POT-Creation-Date: 2022-04-10 00:56+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: English (United States) (https://www.transifex.com/getfem-doc/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -60,11 +60,11 @@ msgid ""
 "designed to reduce the build time and resulting wheel size."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:71
+#: ../../pyvista/doc/extras/building_vtk.rst:77
 msgid "Off-Screen Plotting GPU Support"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:72
+#: ../../pyvista/doc/extras/building_vtk.rst:78
 msgid ""
 "VTK supports rendering with EGL, enabling rapid off-screen rendering using "
 "GPU hardware acceleration without installing a virtual framebuffer.  The "
@@ -73,7 +73,7 @@ msgid ""
 "command with:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:113
+#: ../../pyvista/doc/extras/building_vtk.rst:119
 msgid ""
 "This disables any plotting using the X server, so be prepared to use this "
 "module only on a headless display where you either intend to save static "
@@ -84,25 +84,25 @@ msgid ""
 " server."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:123
+#: ../../pyvista/doc/extras/building_vtk.rst:129
 msgid "Building OSMesa"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:124
+#: ../../pyvista/doc/extras/building_vtk.rst:130
 msgid ""
 "OSMesa provides higher visualization performance on CPU based hosts. Use "
 "this instead of ``xvfb``:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:157
+#: ../../pyvista/doc/extras/building_vtk.rst:163
 msgid "Wheels will be generated in the ``dist`` directory."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:161
+#: ../../pyvista/doc/extras/building_vtk.rst:167
 msgid "Building ManyLinux Wheels"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:162
+#: ../../pyvista/doc/extras/building_vtk.rst:168
 msgid ""
 "The above directions are great for building a local build of VTK, but these "
 "wheels are difficult to share outside your local install given issues with "
@@ -111,21 +111,32 @@ msgid ""
 "<https://github.com/pypa/manylinux>`_ docker image."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:222
-msgid "This script can be called with:"
+#: ../../pyvista/doc/extras/building_vtk.rst:174
+msgid ""
+"To do this, create a ``build_wheels.sh`` with the following contents in the "
+"``git clone``d ``vtk`` directory, and give it executable permissions "
+"(``chmod +x build_wheels.sh``):"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:232
+#: ../../pyvista/doc/extras/building_vtk.rst:231
+msgid "This script can then be called with:"
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:240
+msgid "You should end up with a ``build/wheelhouse/vtk-*.whl``."
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:243
 msgid ""
 "To build the EGL version of the wheel, follow the directions in the previous"
 " section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:238
+#: ../../pyvista/doc/extras/building_vtk.rst:249
 msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:239
+#: ../../pyvista/doc/extras/building_vtk.rst:250
 msgid ""
 "While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
 "several issues that crop up when building wheels for the 32-bit version (see"
@@ -135,17 +146,17 @@ msgid ""
 "memory limitations otherwise (especially with only 1 GB RAM)."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:247
+#: ../../pyvista/doc/extras/building_vtk.rst:258
 msgid ""
 "Building the ``aarch64`` manylinux wheel can be done via docker with the "
 "``quay.io/pypa/manylinux2014_aarch64`` image.  Run the following:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:258
+#: ../../pyvista/doc/extras/building_vtk.rst:269
 msgid "Where ``build_wheels.sh`` is:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:315
+#: ../../pyvista/doc/extras/building_vtk.rst:326
 msgid ""
 "Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
 "you want ``EGL`` enabled for your wheel."
@@ -870,33 +881,44 @@ msgstr ""
 #: ../../pyvista/doc/extras/docker.rst:5
 msgid ""
 "You can use ``pyvista`` from within a docker container with jupyterlab.  To "
-"create a local docker image install ``docker`` and be sure you've logged "
-"into docker by following the directions at `Working with the Docker registry"
-" <https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
-"github-packages-registry/working-with-the-docker-registry>`_)"
+"launch a local docker container, install ``docker``, then pull and run the "
+"image with:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:10
-msgid "Next pull and run the image with:"
-msgstr ""
-
-#: ../../pyvista/doc/extras/docker.rst:16
+#: ../../pyvista/doc/extras/docker.rst:13
 msgid ""
 "Finally, open the link that shows up from the terminal output and start "
 "playing around with pyvista in jupyterlab!  For example:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:29
+#: ../../pyvista/doc/extras/docker.rst:27
+msgid ""
+"You can see the latest tags of `our Docker containers here "
+"<https://github.com/pyvista/pyvista/pkgs/container/pyvista>`_. "
+"``ghcr.io/pyvista/pyvista:latest`` has JupyterLab set up while "
+"``ghcr.io/pyvista/pyvista:latest-slim`` is a lightweight Python environment "
+"without Jupyter"
+msgstr ""
+
+#: ../../pyvista/doc/extras/docker.rst:34
+msgid ""
+"You may need to log into the GitHub container registry by following the "
+"directions at `Working with the Docker registry "
+"<https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
+"github-packages-registry/working-with-the-docker-registry>`_)"
+msgstr ""
+
+#: ../../pyvista/doc/extras/docker.rst:39
 msgid "Create your own Docker Container with `pyvista`"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:30
+#: ../../pyvista/doc/extras/docker.rst:40
 msgid ""
 "Clone pyvista and cd into this directory to create your own customized "
 "docker image."
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:40
+#: ../../pyvista/doc/extras/docker.rst:50
 msgid ""
 "If you wish to have off-screen GPU support when rending on jupyterlab, see "
 "the the notes about building with EGL at :ref:`ref_building_vtk`, or use the"
@@ -906,7 +928,7 @@ msgid ""
 " ``pyvista/docker/jupyter.Dockerfile`` with:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:52
+#: ../../pyvista/doc/extras/docker.rst:62
 msgid ""
 "Additionally, you must install GPU drivers on the docker image of the same "
 "version running on the host machine.  For example, if you are running on "
@@ -916,25 +938,25 @@ msgid ""
 "build it on the container (and trying will only result in an error)."
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:66
+#: ../../pyvista/doc/extras/docker.rst:76
 msgid ""
 "To verify that you're rendering on a GPU, first check the output of "
 "``nvidia-smi``.  You should get something like:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:85
+#: ../../pyvista/doc/extras/docker.rst:95
 msgid ""
 "Note the driver version (which is actually the kernel driver version), and "
 "verify it matches the version you installed on your docker image."
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:88
+#: ../../pyvista/doc/extras/docker.rst:98
 msgid ""
 "Finally, check that your render window is using NVIDIA by running "
 "``ReportCapabilities``:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/docker.rst:107
+#: ../../pyvista/doc/extras/docker.rst:117
 msgid ""
 "If you get ``display id not set``, then your environment is likely not set "
 "up correctly."
