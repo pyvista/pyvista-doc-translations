@@ -143,14 +143,16 @@ msgid ""
 "``git clone``d ``vtk`` directory, and give it executable permissions "
 "(``chmod +x build_wheels.sh``):"
 msgstr ""
+"そのためには、 ``git clone``d ``vtk`` ディレクトリに以下の内容の ``build_wheels.sh`` "
+"を作成し、実行権限を与えます (``chmod +x build_wheels.sh``):"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:231
 msgid "This script can then be called with:"
-msgstr ""
+msgstr "このスクリプトは，次のコマンドで呼び出すことができます:"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:240
 msgid "You should end up with a ``build/wheelhouse/vtk-*.whl``."
-msgstr ""
+msgstr "最終的に ``build/wheelhouse/vtk-*.whl`` ができあがるはずです。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:243
 msgid ""
@@ -1046,6 +1048,8 @@ msgid ""
 "launch a local docker container, install ``docker``, then pull and run the "
 "image with:"
 msgstr ""
+"jupyterlabでは、Dockerコンテナから ``pyvista`` を使用することができます。 ローカルのDockerコンテナを起動するには、 "
+"``docker`` をインストールし、イメージをpullして実行する。"
 
 #: ../../pyvista/doc/extras/docker.rst:13
 msgid ""
@@ -1061,6 +1065,9 @@ msgid ""
 "``ghcr.io/pyvista/pyvista:latest-slim`` is a lightweight Python environment "
 "without Jupyter"
 msgstr ""
+"`私たちのDockerコンテナの最新のタグは、こちら<https://github.com/pyvista/pyvista/pkgs/container/pyvista>`_"
+" で見ることができます。 ``ghcr.io/pyvista/pyvista:latest`` には JupyterLab がセットアップされており、 "
+"``ghcr.io/pyvista/pyvista:latest-slim`` は Jupyter を含まない軽量の Python 環境です。"
 
 #: ../../pyvista/doc/extras/docker.rst:34
 msgid ""
@@ -1069,6 +1076,9 @@ msgid ""
 "<https://docs.github.com/en/enterprise-server@3.0/packages/working-with-a-"
 "github-packages-registry/working-with-the-docker-registry>`_)"
 msgstr ""
+"`Dockerレジストリを利用した作業 <https://docs.github.com/en/enterprise-"
+"server@3.0/packages/working-with-a-github-packages-registry/working-with-"
+"the-docker-registry>`_ にある指示に従って、GitHubのコンテナレジストリにログインする必要があるかもしれません)"
 
 #: ../../pyvista/doc/extras/docker.rst:39
 msgid "Create your own Docker Container with `pyvista`"
