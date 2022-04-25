@@ -209,7 +209,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Creating a PolyData (triangulated surface) object from NumPy arrays of the vertices and faces.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Creating a pyvista.PolyData (surface mesh) from vertices and faces.">
 
 .. only:: html
 

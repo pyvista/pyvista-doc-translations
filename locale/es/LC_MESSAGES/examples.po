@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-10 00:56+0000\n"
+"POT-Creation-Date: 2022-04-25 00:55+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/getfem-doc/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +61,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/create-platonic-solids.rst:173
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:360
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:179
-#: ../../pyvista/doc/examples/00-load/create-poly.rst:109
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:177
 #: ../../pyvista/doc/examples/00-load/create-spline.rst:326
 #: ../../pyvista/doc/examples/00-load/create-structured-surface.rst:379
 #: ../../pyvista/doc/examples/00-load/create-surface-draped.rst:242
@@ -824,11 +824,10 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/create-poly.rst:26
 msgid ""
-"Creating a PolyData (triangulated surface) object from NumPy arrays of the "
-"vertices and faces."
+"Creating a :class:`pyvista.PolyData` (surface mesh) from vertices and faces."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-poly.rst:47
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:46
 msgid ""
 "A PolyData object can be created quickly from numpy arrays.  The vertex "
 "array contains the locations of the points in the mesh and the face array "
@@ -836,16 +835,30 @@ msgid ""
 "which comprise that face."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-poly.rst:81
-msgid "**Total running time of the script:** ( 0 minutes  0.680 seconds)"
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:95
+msgid "Polygonal PolyData"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/create-poly.rst:96
+msgid "Create a three face polygonal mesh directly from points and faces."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:99
+msgid ""
+"It is generally more efficient to use a numpy array rather than stacking "
+"lists for large meshes."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:149
+msgid "**Total running time of the script:** ( 0 minutes  1.279 seconds)"
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:164
 msgid ""
 ":download:`Download Python source code: create-poly.py <create-poly.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-poly.rst:102
+#: ../../pyvista/doc/examples/00-load/create-poly.rst:170
 msgid ""
 ":download:`Download Jupyter notebook: create-poly.ipynb <create-poly.ipynb>`"
 msgstr ""
@@ -1878,17 +1891,15 @@ msgid "Computation times"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
-msgid "**00:02.614** total execution time for **examples_00-load** files:"
+msgid "**00:01.279** total execution time for **examples_00-load** files:"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid ""
-":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
-"structured-surface.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid "00:02.614"
+msgid "00:01.279"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
@@ -2174,12 +2185,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:29
-msgid ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
+msgid ""
+":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:31
 msgid ""
-":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
+":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
+"structured-surface.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:33
@@ -10395,9 +10408,8 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/index.rst:210
 msgid ""
-"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Creating a PolyData "
-"(triangulated surface) object from NumPy arrays of the vertices and "
-"faces.\">"
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Creating a pyvista.PolyData"
+" (surface mesh) from vertices and faces.\">"
 msgstr ""
 
 #: ../../pyvista/doc/examples/index.rst:219
