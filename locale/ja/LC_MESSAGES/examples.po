@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-25 00:55+0000\n"
+"POT-Creation-Date: 2022-05-01 01:05+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -182,7 +182,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/04-lights/shadows.rst:267
 #: ../../pyvista/doc/examples/99-advanced/antarctica-compare.rst:341
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:464
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:450
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:448
 #: ../../pyvista/doc/examples/99-advanced/osmnx-example.rst:159
 #: ../../pyvista/doc/examples/99-advanced/ray-trace.rst:97
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:249
@@ -308,13 +308,13 @@ msgstr "ジオメトリオブジェクトを作成する"
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:309
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:344
 #: ../../pyvista/doc/examples/99-advanced/extending-pyvista.rst:382
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:86
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:116
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:142
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:179
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:223
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:275
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:324
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:85
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:115
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:141
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:178
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:222
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:273
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:322
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:144
 #: ../../pyvista/doc/examples/99-advanced/warp-by-vector-eigenmodes.rst:216
 msgid "Out:"
@@ -2476,6 +2476,12 @@ msgstr ""
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:19
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:21
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:23
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:13
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:15
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:17
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:19
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:21
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:23
 msgid "00:00.000"
 msgstr "00:00.000"
 
@@ -11723,14 +11729,10 @@ msgstr "OpenFOAMデータのプロット"
 msgid ""
 "This example uses data from a lid-driven cavity flow.  It is recommended to "
 "use :class:`pyvista.OpenFOAMReader` for reading OpenFOAM files for more "
-"control over reading data.  The OpenFOAMReader in pyvista must be recreated "
-"each time a new mesh is read in, otherwise the same mesh is always returned."
+"control over reading data."
 msgstr ""
-"この例では，天井駆動キャビティー流れのデータを使用しています． データの読み込みをより制御するために，OpenFOAMファイルの読み込みには "
-":class:`pyvista.OpenFOAMReader` を使用することをお勧めします． "
-"pyvistaのOpenFOAMReaderは，新しいメッシュが読み込まれるたびに再作成する必要があります．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:48
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:47
 msgid ""
 "This example will only run correctly in versions of vtk>=9.1.0.  The names "
 "of the patch arrays and resulting keys in the read mesh will be different in"
@@ -11738,7 +11740,7 @@ msgid ""
 msgstr ""
 "この例は，vtk>=9.1.0のバージョンでのみ正しく動作します．それ以前のバージョンでは，パッチ配列の名前と，読み込んだメッシュのキーの結果が異なります．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:69
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:68
 msgid ""
 "OpenFOAM datasets include multiple sub-datasets including the internal mesh "
 "and patches, typically boundaries.  This can be inspected before reading the"
@@ -11746,7 +11748,7 @@ msgid ""
 msgstr ""
 "OpenFOAMのデータセットには，内部メッシュやパッチ，通常は境界を含む複数のサブデータセットが含まれています．これは，データを読み込む前に検査することができます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:98
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:97
 msgid ""
 "This data is represented as a :class:`pyvista.MultiBlock` object. The "
 "internal mesh will be located in the top-level MultiBlock mesh."
@@ -11754,33 +11756,33 @@ msgstr ""
 "このデータは :class:`pyvista.MultiBlock` "
 "オブジェクトとして表現されます．内部のメッシュは，トップレベルのMultiBlockメッシュに配置されます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:127
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:126
 msgid "In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`."
 msgstr "この場合，内部メッシュは :class:`pyvista.UnstructuredGrid` となります．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:160
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:159
 msgid ""
 "Additional Patch meshes are nested inside another MultiBlock mesh.  The name"
 " of the sub-level MultiBlock mesh depends on the vtk version."
 msgstr ""
 "追加のPatchメッシュは，別のMultiBlockメッシュの中に入れ子になっています．サブレベルのMultiBlockメッシュの名前は，vtkのバージョンによって異なります．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:204
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:203
 msgid ""
 "The default in OpenFOAMReader is to translate the existing cell data to "
 "point data.  Therefore, the cell data arrays are duplicated in point data."
 msgstr ""
 "OpenFOAMReaderのデフォルトでは，既存のセルデータをポイントデータに変換します．そのため，セルデータの配列はポイントデータに複製されます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:254
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:253
 msgid "This behavior can be turned off if only cell data is required."
 msgstr "セルデータのみが必要な場合は，この動作をオフにすることができます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:304
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:302
 msgid "Now we will read in all the data at the last time point."
 msgstr "ここで，最後の時刻でのすべてのデータを読み込んでみます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:335
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:333
 msgid ""
 "This OpenFOAM simulation is in 3D with only 1 cell in the z-direction.  "
 "First, the solution is sliced in the center of the z-direction. "
@@ -11792,21 +11794,21 @@ msgstr ""
 ":func:`pyvista.DataSetFilters.streamlines_evenly_spaced_2D` "
 "では，データがz=0の平面上にあることが必要です．そのため，領域をスライスした後， ``z=0`` に変換します．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:369
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:367
 msgid "Streamlines are generated using the point data \"U\"."
 msgstr "流線はポイントデータ \"U\" を使って生成されます．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:392
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:390
 msgid ""
 "Plot streamlines colored by velocity magnitude.  Additionally, the moving "
 "and fixed wall boundaries are plotted."
 msgstr "速度の大きさで色分けされた流線をプロットします．さらに，移動壁と固定壁の境界線をプロットしています．"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:422
-msgid "**Total running time of the script:** ( 0 minutes  0.989 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  0.989 seconds)"
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:420
+msgid "**Total running time of the script:** ( 0 minutes  1.119 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  1.119 seconds)"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:437
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:435
 msgid ""
 ":download:`Download Python source code: openfoam-example.py <openfoam-"
 "example.py>`"
@@ -11814,7 +11816,7 @@ msgstr ""
 ":download:`Download Python source code: openfoam-example.py <openfoam-"
 "example.py>`"
 
-#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:443
+#: ../../pyvista/doc/examples/99-advanced/openfoam-example.rst:441
 msgid ""
 ":download:`Download Jupyter notebook: openfoam-example.ipynb <openfoam-"
 "example.ipynb>`"
@@ -11973,35 +11975,10 @@ msgstr ""
 "moeller.ipynb>`"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:8
-msgid "**00:24.242** total execution time for **examples_99-advanced** files:"
+msgid "**00:01.119** total execution time for **examples_99-advanced** files:"
 msgstr ""
-"**00:24.242** total execution time for **examples_99-advanced** files:"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:11
-msgid ""
-":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-"
-"compare.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-"
-"compare.py``)"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:11
-msgid "00:11.662"
-msgstr "00:11.662"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:13
-msgid ""
-":ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-"
-"by-vector-eigenmodes.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-"
-"by-vector-eigenmodes.py``)"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:13
-msgid "00:09.565"
-msgstr "00:09.565"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:15
 msgid ""
 ":ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-"
 "example.py``)"
@@ -12009,19 +11986,31 @@ msgstr ""
 ":ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-"
 "example.py``)"
 
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:11
+msgid "00:01.119"
+msgstr "00:01.119"
+
+#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:13
+msgid ""
+":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-"
+"compare.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-"
+"compare.py``)"
+
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:15
-msgid "00:00.989"
-msgstr "00:00.989"
+msgid ""
+":ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-"
+"pyvista.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-"
+"pyvista.py``)"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:17
 msgid ""
 ":ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:17
-msgid "00:00.846"
-msgstr "00:00.846"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:19
 msgid ""
@@ -12030,30 +12019,18 @@ msgid ""
 msgstr ""
 ":ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-"
 "moeller.py``)"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:19
-msgid "00:00.561"
-msgstr "00:00.561"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:21
 msgid ":ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)"
 msgstr ":ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)"
 
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:21
-msgid "00:00.432"
-msgstr "00:00.432"
-
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:23
 msgid ""
-":ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-"
-"pyvista.py``)"
+":ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-"
+"by-vector-eigenmodes.py``)"
 msgstr ""
-":ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-"
-"pyvista.py``)"
-
-#: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:23
-msgid "00:00.186"
-msgstr "00:00.186"
+":ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-"
+"by-vector-eigenmodes.py``)"
 
 #: ../../pyvista/doc/examples/99-advanced/warp-by-vector-eigenmodes.rst:13
 msgid ""

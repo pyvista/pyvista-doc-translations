@@ -5,20 +5,20 @@
 
 Computation times
 =================
-**00:24.242** total execution time for **examples_99-advanced** files:
+**00:01.119** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:11.662 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                   | 00:01.119 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:09.565 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                   | 00:00.989 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-pyvista.py``)                 | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)                         | 00:00.846 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)                         | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                 | 00:00.561 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                 | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                 | 00:00.432 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                 | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-pyvista.py``)                 | 00:00.186 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
