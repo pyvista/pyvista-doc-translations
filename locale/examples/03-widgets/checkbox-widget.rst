@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_03-widgets_checkbox-widget.py:
 
 
+.. _checkbox_widget_example:
+
 Checkbox Widget
 ~~~~~~~~~~~~~~~
 
@@ -25,7 +27,7 @@ Use a checkbox to turn on/off the visibility of meshes in a scene.
 
 See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-12
+.. GENERATED FROM PYTHON SOURCE LINES 12-14
 
 .. code-block:: default
 
@@ -38,12 +40,12 @@ See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-16
+.. GENERATED FROM PYTHON SOURCE LINES 16-18
 
 Single Checkbox
 +++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-30
+.. GENERATED FROM PYTHON SOURCE LINES 18-32
 
 .. code-block:: default
 
@@ -73,7 +75,7 @@ Single Checkbox
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-37
+.. GENERATED FROM PYTHON SOURCE LINES 33-39
 
 Multiple Checkboxes
 +++++++++++++++++++
@@ -82,7 +84,7 @@ In this example, we will add many meshes to a scene with unique colors and
 create corresponding checkboxes for those meshes of the same color to toggle
 their visibility in the scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-57
+.. GENERATED FROM PYTHON SOURCE LINES 39-59
 
 .. code-block:: default
 
@@ -113,7 +115,7 @@ their visibility in the scene.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-83
+.. GENERATED FROM PYTHON SOURCE LINES 60-85
 
 .. code-block:: default
 
@@ -157,7 +159,7 @@ their visibility in the scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.952 seconds)
+   **Total running time of the script:** ( 0 minutes  0.963 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_checkbox-widget.py:
