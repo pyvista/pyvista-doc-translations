@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-01 00:55+0000\n"
+"POT-Creation-Date: 2022-05-04 00:59+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/getfem-doc/teams/112279/ja/)\n"
@@ -1015,11 +1015,11 @@ msgstr ""
 "以上です!Python要件にPyVistaを組み込んで，データを視覚化しましょう．これらのタイプのサービスのためにPyVistaをセットアップするのにこれ以上の助けが必要なら，Slackで開発者とチャットするか，MyBinderで現在PyVistaを使っている"
 " `this repository`_ を見てください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:210
+#: ../../pyvista/doc/getting-started/installation.rst:209
 msgid "Running on Remote Servers"
 msgstr "リモートサーバーでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:211
+#: ../../pyvista/doc/getting-started/installation.rst:210
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -1030,29 +1030,99 @@ msgstr ""
 "18.04 LTS ( ``us-east-1`` の  ``ami-0a313d6098716f372`` "
 ")でPyVistaを使うための完全なステップを以下に示します．他のサーバも同様に動作します．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:216
+#: ../../pyvista/doc/getting-started/installation.rst:215
 msgid ""
 "After logging into the remote server, install Miniconda and related "
 "packages:"
 msgstr "リモートサーバにログインしたら，Minicondaと関連するパッケージをインストールします:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:233
+#: ../../pyvista/doc/getting-started/installation.rst:232
 msgid "Then, configure the headless display:"
 msgstr "次に，ヘッドレスディスプレイを設定します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:244
+#: ../../pyvista/doc/getting-started/installation.rst:243
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr "ポート転送を使用してサーバーに再接続し，Jupyterを起動します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:252
+#: ../../pyvista/doc/getting-started/installation.rst:251
+#: ../../pyvista/doc/getting-started/installation.rst:300
+#: ../../pyvista/doc/getting-started/installation.rst:328
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr "Webブラウザで ``localhost:8888`` にアクセスします．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:256
+#: ../../pyvista/doc/getting-started/installation.rst:254
+msgid "Running on WSL"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:255
+msgid ""
+"Similar to the example of the remote server above, the windows subsystem for"
+" Linux does not provide an x-server for visualization. Instead, the fastest "
+"way to get up and running on WSL is through `JupyterLab "
+"<https://jupyter.org/>`_."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:259
+msgid ""
+"First, make sure you have installed the correct environment through "
+"Miniconda and related packages:"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:278
+msgid "VTK Link to Jupyter"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:279
+msgid ""
+"There are two ways to get vtk rendering 3D objects in JupyterLab. First you "
+"can follow the example above for remote servers, skipping over the ``ssh`` "
+"instructions."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:283
+msgid "Configure the headless display:"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:294
+msgid "Start Jupyter:"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:302
+msgid ""
+"Finally add this example code and your interactive visualizations should be "
+"displayed in JupyterLab."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:315
+#: ../../pyvista/doc/getting-started/installation.rst:343
+msgid ""
+"Your visualizations should now be showing directly in the Jupyter frontend."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:318
+msgid "PyThreeJS Rendering in Jupyter"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:319
+msgid ""
+"The second option is to change the ``PyVista`` backend to use ``pythreejs``."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:322
+msgid "To do this, first launch the Jupyter server:"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:330
+msgid ""
+"Finally change the PyVista backend to a web visualization library: "
+"``pythreejs``."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:346
 msgid "Running with Sphinx-Gallery"
 msgstr "Sphinx-Galleryでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:257
+#: ../../pyvista/doc/getting-started/installation.rst:347
 msgid "In your ``conf.py``, add the following:"
 msgstr "あなたの ``conf.py`` に, 次を追加します．"
 
