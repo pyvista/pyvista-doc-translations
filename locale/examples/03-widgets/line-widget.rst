@@ -24,8 +24,8 @@ Line Widget
 ~~~~~~~~~~~
 
 The line widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_line_widget` and
-:func:`pyvista.WidgetHelper.clear_line_widgets` methods respectively.
+:func:`pyvista.Plotter.add_line_widget` and
+:func:`pyvista.Plotter.clear_line_widgets` methods respectively.
 Unfortunately, PyVista does not have any helper methods to utilize this
 widget, so it is necessary to pass a custom callback method.
 
@@ -100,7 +100,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.092 seconds)
+   **Total running time of the script:** ( 0 minutes  1.797 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:

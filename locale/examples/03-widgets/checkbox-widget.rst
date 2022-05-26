@@ -25,7 +25,7 @@ Checkbox Widget
 
 Use a checkbox to turn on/off the visibility of meshes in a scene.
 
-See :func:`pyvista.WidgetHelper.add_checkbox_button_widget` for more details.
+See :func:`pyvista.Plotter.add_checkbox_button_widget` for more details.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-14
 
@@ -159,7 +159,7 @@ their visibility in the scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.963 seconds)
+   **Total running time of the script:** ( 0 minutes  0.787 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_checkbox-widget.py:
