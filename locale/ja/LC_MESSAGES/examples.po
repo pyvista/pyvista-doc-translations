@@ -10172,6 +10172,9 @@ msgid ""
 "what allow us to leverage the widget to perform a task like "
 "clipping/cropping."
 msgstr ""
+"ボックスウィジェットは， :func:`pyvista.Plotter.add_box_widget` および "
+":func:`pyvista.Plotter.clear_box_widgets` "
+"メソッドによって，それぞれ有効および無効にすることができます．ボックスウィジェットを有効にする場合は，カスタムコールバック関数を提供する必要があります．そうしないとボックスが表示されて何も実行されません．コールバック関数を使用すると，クリップやクロッピングなどのタスクをウィジェットで実行できます．"
 
 #: ../../pyvista/doc/examples/03-widgets/box-widget.rst:33
 msgid ""
@@ -10180,6 +10183,8 @@ msgid ""
 "mesh to a scene with a box widget that controls its extent, the "
 ":func:`pyvista.Plotter.add_mesh_clip_box` method."
 msgstr ""
+"メッシュをクリップ/クロップするためにボックスを使用することが最も一般的な使用例の1つであることを考慮して，メッシュの範囲を制御するボックスウィジェットを使用してシーンにメッシュを追加できるヘルパーメソッド，"
+" :func:`pyvista.Plotter.add_mesh_clip_box` メソッドを含めました．"
 
 #: ../../pyvista/doc/examples/03-widgets/box-widget.rst:81
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:62
@@ -10188,7 +10193,7 @@ msgstr "シーンを操作すると，クリップされたメッシュは次の
 
 #: ../../pyvista/doc/examples/03-widgets/box-widget.rst:113
 msgid "**Total running time of the script:** ( 0 minutes  8.533 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  8.533 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/box-widget.rst:128
 msgid ":download:`Download Python source code: box-widget.py <box-widget.py>`"
@@ -10222,6 +10227,7 @@ msgstr "チェックボックスを使用して，シーン内のメッシュの
 msgid ""
 "See :func:`pyvista.Plotter.add_checkbox_button_widget` for more details."
 msgstr ""
+"詳細については， :func:`pyvista.Plotter.add_checkbox_button_widget` を参照してください．"
 
 #: ../../pyvista/doc/examples/03-widgets/checkbox-widget.rst:46
 msgid "Single Checkbox"
@@ -10280,6 +10286,9 @@ msgid ""
 "Unfortunately, PyVista does not have any helper methods to utilize this "
 "widget, so it is necessary to pass a custom callback method."
 msgstr ""
+"行ウィジェットは， :func:`pyvista.WidgetHelper.add_line_widget` および "
+":func:`pyvista.WidgetHelper.clear_line_widgets` "
+"メソッドによって，それぞれ有効および無効にすることができます．残念ながら，PyVistaにはこのウィジェットを利用するヘルパー・メソッドがないため，カスタムのコールバック・メソッドを渡す必要があります．"
 
 #: ../../pyvista/doc/examples/03-widgets/line-widget.rst:32
 msgid ""
@@ -10304,7 +10313,7 @@ msgstr "以下はユーザ対話型のスクリーンショットです"
 
 #: ../../pyvista/doc/examples/03-widgets/line-widget.rst:103
 msgid "**Total running time of the script:** ( 0 minutes  1.797 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.797 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/line-widget.rst:118
 msgid ""
@@ -10388,6 +10397,9 @@ msgid ""
 "plane. Considering that planes are most commonly used for clipping and "
 "slicing meshes, we have included two helper methods for doing those tasks!"
 msgstr ""
+"プレーンウィジェットは，それぞれ :func:`pyvista.Plotter.add_plane_widget` と "
+":func:`pyvista.Plotter.clear_plane_widgets` "
+"メソッドによって有効と無効にすることができます．すべてのウィジェットと同様に，このプレーンを利用するにはカスタム・コールバック・メソッドを提供する必要があります．メッシュのクリッピングとスライスに平面が最も一般的に使用されることを考慮して，これらのタスクを実行する2つのヘルパーメソッドを用意しました．"
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:33
 msgid "Let's use a plane to clip a mesh:"
@@ -10430,7 +10442,7 @@ msgstr "このベクトルは， ``assign_to_axis`` 引数が設定されてい�
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:265
 msgid "**Total running time of the script:** ( 0 minutes  8.208 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  8.208 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:280
 msgid ""
@@ -10448,7 +10460,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:8
 msgid "**00:24.143** total execution time for **examples_03-widgets** files:"
-msgstr ""
+msgstr "**00:24.143** total execution time for **examples_03-widgets** files:"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
@@ -10456,7 +10468,7 @@ msgstr ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid "00:08.533"
-msgstr ""
+msgstr "00:08.533"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:13
 msgid ""
@@ -10466,7 +10478,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:13
 msgid "00:08.208"
-msgstr ""
+msgstr "00:08.208"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:15
 msgid ""
@@ -10478,7 +10490,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:15
 msgid "00:03.400"
-msgstr ""
+msgstr "00:03.400"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:17
 msgid ""
@@ -10488,7 +10500,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:17
 msgid "00:01.797"
-msgstr ""
+msgstr "00:01.797"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:19
 msgid ""
@@ -10498,7 +10510,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:19
 msgid "00:00.942"
-msgstr ""
+msgstr "00:00.942"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:21
 msgid ""
@@ -10551,6 +10563,9 @@ msgid ""
 "one of the most versatile widgets as it can control a value that can be used"
 " for just about anything."
 msgstr ""
+"スライダウィジェットは， :func:`pyvista.Plotter.add_slider_widget` メソッドおよび "
+":func:`pyvista.Plotter.clear_slider_widgets` "
+"メソッドによって，それぞれ有効および無効にすることができます．これは，ほぼすべてのものに使用できる値を制御できるため，最も用途の広いウィジェットの1つです．"
 
 #: ../../pyvista/doc/examples/03-widgets/slider-bar-widget.rst:46
 msgid ""
@@ -10558,6 +10573,8 @@ msgid ""
 ":func:`pyvista.Plotter.add_mesh_threshold` method which leverages the slider"
 " widget to control a thresholding value."
 msgstr ""
+"追加したヘルパーメソッドの1つに :func:`pyvista.Plotter.add_mesh_threshold` "
+"メソッドがあります．これは，スライダウィジェットを利用して閾値を制御します．"
 
 #: ../../pyvista/doc/examples/03-widgets/slider-bar-widget.rst:78
 msgid "After interacting with the scene, the threshold mesh is available as:"
@@ -10578,7 +10595,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/slider-bar-widget.rst:162
 msgid "**Total running time of the script:** ( 0 minutes  3.400 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  3.400 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/slider-bar-widget.rst:177
 msgid ""
@@ -10617,6 +10634,9 @@ msgid ""
 " very versatile widget as it can control vertex location that can be used to"
 " control or update the location of just about anything."
 msgstr ""
+"球ウィジェットは， :func:`pyvista.Plotter.add_sphere_widget` メソッドおよび "
+":func:`pyvista.Plotter.clear_sphere_widgets` "
+"メソッドによって，それぞれ有効および無効にすることができます．このウィジェットは，頂点の位置を制御できるため，非常に用途が広く，ほとんどすべてのオブジェクトの位置を制御または更新できます．"
 
 #: ../../pyvista/doc/examples/03-widgets/sphere-widget.rst:30
 msgid ""
@@ -10658,7 +10678,7 @@ msgstr "これは，4つの球体ウィジェットを使用してサーフェ�
 
 #: ../../pyvista/doc/examples/03-widgets/sphere-widget.rst:272
 msgid "**Total running time of the script:** ( 0 minutes  0.942 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.942 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/sphere-widget.rst:287
 msgid ""
@@ -10695,6 +10715,10 @@ msgid ""
 "widget allows users to interactively create a poly line (spline) through a "
 "scene and use that spline."
 msgstr ""
+"スプラインウィジェットは， :func:`pyvista.Plotter.add_spline_widget` メソッドと "
+":func:`pyvista.Plotter.clear_spline_widgets` "
+"メソッドでそれぞれ有効または無効にできます．このウィジェットを使用すると，ユーザはシーンを通してポリゴンライン (スプライン) "
+"をインタラクティブに作成し，そのスプラインを使用できます．"
 
 #: ../../pyvista/doc/examples/03-widgets/spline-widget.rst:31
 msgid ""
@@ -10703,6 +10727,9 @@ msgid ""
 "leverages the :func:`pyvista.DataSetFilters.slice_along_line` filter named "
 ":func:`pyvista.Plotter.add_mesh_slice_spline`."
 msgstr ""
+"スプラインを使用する一般的なタスクは，不規則なパスを使用してボリュームデータセットをスライスすることです．これを行うために，我々は "
+":func:`pyvista.WidgetHelper.add_mesh_slice_spline` という名前の "
+":func:`pyvista.Plotter.slice_along_line` フィルタを活用する便利なヘルパーメソッドを追加しました．"
 
 #: ../../pyvista/doc/examples/03-widgets/spline-widget.rst:89
 msgid "**Total running time of the script:** ( 0 minutes  0.476 seconds)"
@@ -13585,6 +13612,9 @@ msgid ""
 "enabled and disabled by the pyvista.Plotter.add_box_widget and "
 "pyvista.Pl...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The box widget can be "
+"enabled and disabled by the pyvista.Plotter.add_box_widget and "
+"pyvista.Pl...\">"
 
 #: ../../pyvista/doc/examples/index.rst:2268
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py`"
@@ -13608,6 +13638,9 @@ msgid ""
 "enabled and disabled by the pyvista.Plotter.add_line_widget and "
 "pyvista....\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The line widget can be "
+"enabled and disabled by the pyvista.Plotter.add_line_widget and "
+"pyvista....\">"
 
 #: ../../pyvista/doc/examples/index.rst:2310
 msgid ":ref:`sphx_glr_examples_03-widgets_line-widget.py`"
@@ -13631,6 +13664,9 @@ msgid ""
 "enabled and disabled by the pyvista.Plotter.add_plane_widget and "
 "pyvist...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The plane widget can be "
+"enabled and disabled by the pyvista.Plotter.add_plane_widget and "
+"pyvist...\">"
 
 #: ../../pyvista/doc/examples/index.rst:2352
 msgid ":ref:`sphx_glr_examples_03-widgets_plane-widget.py`"
@@ -13641,6 +13677,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The slider widget can be "
 "enabled and disabled by the pyvista.Plotter.add_slider_widget and pyvi...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The slider widget can be "
+"enabled and disabled by the pyvista.Plotter.add_slider_widget and pyvi...\">"
 
 #: ../../pyvista/doc/examples/index.rst:2373
 msgid ":ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`"
@@ -13651,6 +13689,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The sphere widget can be "
 "enabled and disabled by the pyvista.Plotter.add_sphere_widget and pyvi...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The sphere widget can be "
+"enabled and disabled by the pyvista.Plotter.add_sphere_widget and pyvi...\">"
 
 #: ../../pyvista/doc/examples/index.rst:2394
 msgid ":ref:`sphx_glr_examples_03-widgets_sphere-widget.py`"
@@ -13662,6 +13702,9 @@ msgid ""
 "enabled and disabled by the pyvista.Plotter.add_spline_widget and "
 "pyvis...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\" A spline widget can be "
+"enabled and disabled by the pyvista.Plotter.add_spline_widget and "
+"pyvis...\">"
 
 #: ../../pyvista/doc/examples/index.rst:2415
 msgid ":ref:`sphx_glr_examples_03-widgets_spline-widget.py`"
