@@ -398,6 +398,27 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Working with VRML Files">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_load-vrml_thumb.png
+     :alt: Working with VRML Files
+
+     :ref:`sphx_glr_examples_00-load_load-vrml.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/load-vrml
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="PyVista leverages `meshio`_ to read many mesh formats not natively supported by VTK including t...">
 
 .. only:: html
