@@ -17,6 +17,6 @@ sphinx-build -T -b gettext ../pyvista/doc pot
 sphinx-intl update-txconfig-resources -p pot -d .
 cat .tx/config
 tx push -s --skip
-rm -Rf ja zh zh_CN zh_Hans zh_TW en_CA en_US de_DE jv nb pl pl_PL ru es uk
-tx pull -l ja,zh_CN,zh_Hans,zh_TW,en_CA,en_US,de_DE,jv,nb,pl,pl_PL,ru,es,uk
+rm -Rf ja zh zh_CN zh_Hans zh_TW en_CA en_US de_DE jv nb pl pl_PL ru es uk fa
+tx pull -l ja,zh_CN,zh_Hans,zh_TW,en_CA,en_US,de_DE,jv,nb,pl,pl_PL,ru,es,uk,fa
 git checkout .tx/config
