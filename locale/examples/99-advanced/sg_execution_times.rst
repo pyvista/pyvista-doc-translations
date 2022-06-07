@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:01.119** total execution time for **examples_99-advanced** files:
+**00:00.984** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                   | 00:01.119 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                   | 00:00.984 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+

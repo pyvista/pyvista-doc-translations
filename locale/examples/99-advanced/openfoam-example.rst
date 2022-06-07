@@ -41,7 +41,7 @@ Plot OpenFOAM data
 .. GENERATED FROM PYTHON SOURCE LINES 13-20
 
 This example uses data from a lid-driven cavity flow.  It is recommended to
-use :class:`pyvista.OpenFOAMReader` for reading OpenFOAM files for more
+use :class:`pyvista.POpenFOAMReader` for reading OpenFOAM files for more
 control over reading data.
 
 This example will only run correctly in versions of vtk>=9.1.0.  The names
@@ -54,7 +54,7 @@ in prior versions.
 
 
     filename = examples.download_cavity(load=False)
-    reader = pyvista.OpenFOAMReader(filename)
+    reader = pyvista.POpenFOAMReader(filename)
 
 
 
@@ -142,7 +142,7 @@ In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
  .. code-block:: none
 
-    UnstructuredGrid (0x7f9d69ef9280)
+    UnstructuredGrid (0x7fcb345e0f40)
       N Cells:      400
       N Points:     882
       X Bounds:     0.000e+00, 1.000e-01
@@ -179,14 +179,14 @@ of the sub-level MultiBlock mesh depends on the vtk version.
 
  .. code-block:: none
 
-    MultiBlock (0x7f9d69ef91c0)
+    MultiBlock (0x7fcb345e0400)
       N Blocks:     3
       X Bounds:     0.000, 0.100
       Y Bounds:     0.000, 0.100
       Z Bounds:     0.000, 0.010
 
     Boundaries patches: ['movingWall', 'fixedWalls', 'frontAndBack']
-    PolyData (0x7f9d69ef9760)
+    PolyData (0x7fcb345e0160)
       N Cells:      20
       N Points:     42
       X Bounds:     0.000e+00, 1.000e-01
@@ -417,7 +417,7 @@ and fixed wall boundaries are plotted.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.119 seconds)
+   **Total running time of the script:** ( 0 minutes  0.984 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-example.py:
