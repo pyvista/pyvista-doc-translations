@@ -24,8 +24,8 @@ Slider Bar Widget
 ~~~~~~~~~~~~~~~~~
 
 The slider widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_slider_widget` and
-:func:`pyvista.WidgetHelper.clear_slider_widgets` methods respectively.
+:func:`pyvista.Plotter.add_slider_widget` and
+:func:`pyvista.Plotter.clear_slider_widgets` methods respectively.
 This is one of the most versatile widgets as it can control a value that can
 be used for just about anything.
 
@@ -44,7 +44,7 @@ be used for just about anything.
 .. GENERATED FROM PYTHON SOURCE LINES 16-19
 
 One helper method we've added is the
-:func:`pyvista.WidgetHelper.add_mesh_threshold` method which leverages the
+:func:`pyvista.Plotter.add_mesh_threshold` method which leverages the
 slider widget to control a thresholding value.
 
 .. GENERATED FROM PYTHON SOURCE LINES 19-29
@@ -94,7 +94,7 @@ After interacting with the scene, the threshold mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f5296b620a0)
+    [UnstructuredGrid (0x7fcb43388940)
       N Cells:	115425
       N Points:	179772
       X Bounds:	3.760e+01, 1.171e+02
@@ -159,7 +159,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.204 seconds)
+   **Total running time of the script:** ( 0 minutes  3.400 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_slider-bar-widget.py:

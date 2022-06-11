@@ -209,7 +209,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Creating a PolyData (triangulated surface) object from NumPy arrays of the vertices and faces.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Creating a pyvista.PolyData (surface mesh) from vertices and faces.">
 
 .. only:: html
 
@@ -395,6 +395,27 @@ data.
    :hidden:
 
    /examples/00-load/load-gltf
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Working with VRML Files">
+
+.. only:: html
+
+ .. figure:: /examples/00-load/images/thumb/sphx_glr_load-vrml_thumb.png
+     :alt: Working with VRML Files
+
+     :ref:`sphx_glr_examples_00-load_load-vrml.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-load/load-vrml
 
 .. raw:: html
 
@@ -2258,7 +2279,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The box widget can be enabled and disabled by the pyvista.WidgetHelper.add_box_widget and pyvis...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The box widget can be enabled and disabled by the pyvista.Plotter.add_box_widget and pyvista.Pl...">
 
 .. only:: html
 
@@ -2300,7 +2321,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The line widget can be enabled and disabled by the pyvista.WidgetHelper.add_line_widget and pyv...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The line widget can be enabled and disabled by the pyvista.Plotter.add_line_widget and pyvista....">
 
 .. only:: html
 
@@ -2342,7 +2363,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The plane widget can be enabled and disabled by the pyvista.WidgetHelper.add_plane_widget and p...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The plane widget can be enabled and disabled by the pyvista.Plotter.add_plane_widget and pyvist...">
 
 .. only:: html
 
@@ -2363,7 +2384,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The slider widget can be enabled and disabled by the pyvista.WidgetHelper.add_slider_widget and...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The slider widget can be enabled and disabled by the pyvista.Plotter.add_slider_widget and pyvi...">
 
 .. only:: html
 
@@ -2384,7 +2405,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The sphere widget can be enabled and disabled by the pyvista.WidgetHelper.add_sphere_widget and...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The sphere widget can be enabled and disabled by the pyvista.Plotter.add_sphere_widget and pyvi...">
 
 .. only:: html
 
@@ -2405,7 +2426,7 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" A spline widget can be enabled and disabled by the pyvista.WidgetHelper.add_spline_widget and ...">
+    <div class="sphx-glr-thumbcontainer" tooltip=" A spline widget can be enabled and disabled by the pyvista.Plotter.add_spline_widget and pyvis...">
 
 .. only:: html
 
