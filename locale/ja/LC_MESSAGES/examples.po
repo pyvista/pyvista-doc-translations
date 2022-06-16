@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-14 01:38+0000\n"
+"POT-Creation-Date: 2022-06-16 01:17+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -84,7 +84,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/read-dolfin.rst:172
 #: ../../pyvista/doc/examples/00-load/read-file.rst:332
 #: ../../pyvista/doc/examples/00-load/read-image.rst:160
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:265
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:219
 #: ../../pyvista/doc/examples/00-load/reader.rst:460
 #: ../../pyvista/doc/examples/00-load/terrain-mesh.rst:298
 #: ../../pyvista/doc/examples/00-load/wrap-trimesh.rst:184
@@ -253,8 +253,8 @@ msgstr "ジオメトリオブジェクトを作成する"
 #: ../../pyvista/doc/examples/00-load/read-file.rst:183
 #: ../../pyvista/doc/examples/00-load/read-image.rst:90
 #: ../../pyvista/doc/examples/00-load/read-image.rst:118
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:115
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:136
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:68
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:90
 #: ../../pyvista/doc/examples/00-load/reader.rst:71
 #: ../../pyvista/doc/examples/00-load/reader.rst:120
 #: ../../pyvista/doc/examples/00-load/reader.rst:149
@@ -2009,7 +2009,7 @@ msgid ""
 msgstr ""
 "VTKライブラリーは並列ファイル・フォーマットをサポートしています．複数のファイルに分割されたメッシュの読み込みは，VTKおよびPyVistaでネイティブにサポートされています．"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:48
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:47
 msgid ""
 "Let's go ahead and download the sample dataset containing an "
 ":class:`pyvista.UnstructuredGrid` broken up into several files."
@@ -2017,104 +2017,91 @@ msgstr ""
 "いくつかのファイルに分割された :class:`pyvista.UnstructuredGrid` "
 "を含むサンプルデータセットをダウンロードしてみましょう．"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:64
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:165
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:50
 msgid ""
-"<div class=\"output_subarea output_html rendered_html output_result\">\n"
-"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
-"<table>\n"
-"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
-"<tr><td>N Cells</td><td>39353</td></tr>\n"
-"<tr><td>N Points</td><td>48823</td></tr>\n"
-"<tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>\n"
-"<tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>\n"
-"<tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>\n"
-"<tr><td>N Arrays</td><td>5</td></tr>\n"
-"</table>\n"
-"\n"
-"</td><td>\n"
-"<table>\n"
-"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
-"<tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
-"<tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
-"<tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>\n"
-"<tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>\n"
-"<tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>\n"
-"</table>\n"
-"\n"
-"</td></tr> </table>\n"
-"</div>\n"
-"<br />\n"
-"<br />"
+"Let's inspect where this downloaded our dataset by setting ``load=False`` "
+"and looking at the directory containing the file we downloaded."
 msgstr ""
-"<div class=\"output_subarea output_html rendered_html output_result\">\n"
-"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
-"<table>\n"
-"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
-"<tr><td>N Cells</td><td>39353</td></tr>\n"
-"<tr><td>N Points</td><td>48823</td></tr>\n"
-"<tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>\n"
-"<tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>\n"
-"<tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>\n"
-"<tr><td>N Arrays</td><td>5</td></tr>\n"
-"</table>\n"
-"\n"
-"</td><td>\n"
-"<table>\n"
-"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
-"<tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
-"<tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
-"<tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>\n"
-"<tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>\n"
-"<tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>\n"
-"</table>\n"
-"\n"
-"</td></tr> </table>\n"
-"</div>\n"
-"<br />\n"
-"<br />"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:95
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:101
 msgid ""
-"The above code downloaded a dataset containing a set of parallel files for a"
-" blood vessel mesh and returned an :class:`pyvista.UnstructuredGrid` - we "
-"did not grab that UnstructuredGrid, so that we could demo how to use these "
-"types of files."
-msgstr ""
-"上記のコードは，血管メッシュの並列ファイルのセットを含むデータセットをダウンロードし， "
-":class:`pyvista.UnstructuredGrid` を返しました - "
-"私たちは，これらのタイプのファイルの使用方法をデモできるように，そのUnstructuredGridを取得しませんでした．"
-
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:100
-msgid "Let's inspect where this downloaded our dataset:"
-msgstr "これがデータセットをダウンロードした場所を調べてみましょう:"
-
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:147
-msgid ""
-"Note that a ``.pvtu`` file is available along side a directory. This "
+"Note that a ``.pvtu`` file is available alongside a directory. This "
 "directory contains all the parallel files or pieces that make the whole "
 "mesh. We can simply read the ``.pvtu`` file and VTK will handle putting the "
 "mesh together."
 msgstr ""
-"``.pvtu`` "
-"ファイルはディレクトリの横にあるので注意してください．このディレクトリには，メッシュ全体を構成するすべての並列ファイルまたはピースが含まれています． "
-"``.pvtu`` ファイルを読み取るだけで，VTKがメッシュをまとめます．"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:196
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:119
+msgid ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>39353</td></tr>\n"
+"<tr><td>N Points</td><td>48823</td></tr>\n"
+"<tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>5</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>\n"
+"<tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>\n"
+"<tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>39353</td></tr>\n"
+"<tr><td>N Points</td><td>48823</td></tr>\n"
+"<tr><td>X Bounds</td><td>5.300e+01, 1.210e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>5.000e+01, 9.700e+01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>6.400e+01, 1.820e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>5</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float32</td><td>1</td><td>2.203e-01</td><td>5.232e-01</td></tr>\n"
+"<tr><td>velocity</td><td>Cells</td><td>float32</td><td>3</td><td>-3.607e-01</td><td>8.989e-02</td></tr>\n"
+"<tr><td>shearstress</td><td>Cells</td><td>float32</td><td>1</td><td>6.160e-05</td><td>1.726e-02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
+
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:150
 msgid "Plot the pieced together mesh"
 msgstr "つなぎ合わせたメッシュをプロットします"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:237
-msgid "**Total running time of the script:** ( 0 minutes  1.921 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  1.921 seconds)"
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:191
+msgid "**Total running time of the script:** ( 0 minutes  1.869 seconds)"
+msgstr "**スクリプトの合計実行時間:** ( 0 分  1.869 秒)"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:252
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:206
 msgid ""
 ":download:`Download Python source code: read-parallel.py <read-parallel.py>`"
 msgstr ""
 ":download:`Download Python source code: read-parallel.py <read-parallel.py>`"
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:258
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:212
 msgid ""
 ":download:`Download Jupyter notebook: read-parallel.ipynb <read-"
 "parallel.ipynb>`"
@@ -2267,16 +2254,18 @@ msgid "Computation times"
 msgstr "計算時間"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
-msgid "**00:00.618** total execution time for **examples_00-load** files:"
-msgstr "**00:00.618** total execution time for **examples_00-load** files:"
+msgid "**00:01.869** total execution time for **examples_00-load** files:"
+msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
-msgstr ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
+msgid ""
+":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid "00:00.618"
-msgstr "00:00.618"
+msgid "00:01.869"
+msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:13
@@ -2645,22 +2634,20 @@ msgid ":ref:`sphx_glr_examples_00-load_load-gltf.py` (``load-gltf.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_load-gltf.py` (``load-gltf.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:47
+msgid ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
+msgstr ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
+
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:49
 msgid ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
 
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:49
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:51
 msgid ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
 
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:51
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:53
 msgid ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
 msgstr ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
-
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:53
-msgid ""
-":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:55
 msgid ":ref:`sphx_glr_examples_00-load_reader.py` (``reader.py``)"
@@ -4434,21 +4421,25 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_01-filter_extrude-trim.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_01-filter_extrude-trim.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:24
 #: ../../pyvista/doc/examples/index.rst:915
 msgid "Extrude Trim"
-msgstr ""
+msgstr "押し出しトリム"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:25
 msgid ""
 "Extrude a :class:`pyvista.PolyData` with a :func:`pyvista.Plane` using "
 ":func:`extrude_trim() <pyvista.PolyDataFilters.extrude_trim>`."
 msgstr ""
+"func:`extrude_trim() <pyvista.PolyDataFilters.extrude_trim>` を使用して、 "
+":class:`pyvista.PolyData` を :func:`pyvista.Plane` で押しつぶします。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:45
 msgid "Generate an Extruded Surface"
-msgstr ""
+msgstr "押し出し面を生成します"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:71
 msgid ""
@@ -4469,18 +4460,34 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>39600</td></tr>\n"
+"<tr><td>N Points</td><td>20000</td></tr>\n"
+"<tr><td>X Bounds</td><td>-1.000e+01, 1.000e+01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-5.936e-07, 2.000e+01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-5.000e+00, 7.725e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:93
 msgid "Plot the Extruded Surface"
-msgstr ""
+msgstr "押し出し面をプロットします"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:94
 msgid "Plot the resulting :class:`pyvista.PolyData`."
-msgstr ""
+msgstr "出来上がった :class:`pyvista.PolyData` をプロットします。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:131
 msgid "Extruding All Edges"
-msgstr ""
+msgstr "すべてのエッジを押し出します"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:132
 msgid ""
@@ -4488,25 +4495,28 @@ msgid ""
 "only generates faces on the boundary. When using ``extrusion='all_edges'``, "
 "interior edges are also created."
 msgstr ""
+"前の例では、デフォルトの ``extrusion='boundary_edges'`` を使用し、境界上の面のみを生成していました。 "
+"``extrusion='all_edges'`` を使用すると、内側の辺も生成されます。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:176
 msgid "Plot"
-msgstr ""
+msgstr "プロット"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:177
 msgid ""
 "Show the additional interior faces by plotting with ``style='wireframe'``."
-msgstr ""
+msgstr "``style='wireframe'`` でプロットすることにより、追加の内側面を表示します。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:213
 msgid "Extrude a Line"
-msgstr ""
+msgstr "線の押し出し"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:214
 msgid ""
 "You can also extrude lines. Observe that the output from extruded lines is "
 "still a :class:`pyvista.PolyData`."
 msgstr ""
+"また、線を押し出すこともできます。押し出された線の出力は :class:`pyvista.PolyData` のままであることを確認してください。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:233
 msgid ""
@@ -4534,29 +4544,55 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1</td></tr>\n"
+"<tr><td>N Points</td><td>4</td></tr>\n"
+"<tr><td>X Bounds</td><td>-5.000e-01, 5.000e-01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 1.500e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>2</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
+"<tr><td><b>Distance</b></td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:262
 msgid "Plot the Extruded Line"
-msgstr ""
+msgstr "押し出し線をプロットします"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:263
 msgid "Note how that the scalars are copied to the extruded line."
-msgstr ""
+msgstr "スカラーが押し出された線にコピーされていることに注意してください。"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:290
 msgid "**Total running time of the script:** ( 0 minutes  1.696 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.696 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:305
 msgid ""
 ":download:`Download Python source code: extrude-trim.py <extrude-trim.py>`"
 msgstr ""
+":download:`Download Python source code: extrude-trim.py <extrude-trim.py>`"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:311
 msgid ""
 ":download:`Download Jupyter notebook: extrude-trim.ipynb <extrude-"
 "trim.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: extrude-trim.ipynb <extrude-"
+"trim.ipynb>`"
 
 #: ../../pyvista/doc/examples/01-filter/flying_edges.rst:13
 msgid ""
@@ -5723,16 +5759,17 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:01.696** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:01.696** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:01.696"
-msgstr ""
+msgstr "00:01.696"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -12975,11 +13012,11 @@ msgstr ":ref:`sphx_glr_examples_01-filter_extrude-rotate.py`"
 
 #: ../../pyvista/doc/examples/index.rst:906
 msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extrude Trim\">"
-msgstr ""
+msgstr "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Extrude Trim\">"
 
 #: ../../pyvista/doc/examples/index.rst:915
 msgid ":ref:`sphx_glr_examples_01-filter_extrude-trim.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_01-filter_extrude-trim.py`"
 
 #: ../../pyvista/doc/examples/index.rst:927
 msgid ""

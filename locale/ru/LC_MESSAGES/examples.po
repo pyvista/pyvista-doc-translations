@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-14 01:38+0000\n"
+"POT-Creation-Date: 2022-06-16 01:17+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Russian (https://www.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +74,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/read-dolfin.rst:172
 #: ../../pyvista/doc/examples/00-load/read-file.rst:332
 #: ../../pyvista/doc/examples/00-load/read-image.rst:160
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:265
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:219
 #: ../../pyvista/doc/examples/00-load/reader.rst:460
 #: ../../pyvista/doc/examples/00-load/terrain-mesh.rst:298
 #: ../../pyvista/doc/examples/00-load/wrap-trimesh.rst:184
@@ -240,8 +240,8 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/read-file.rst:183
 #: ../../pyvista/doc/examples/00-load/read-image.rst:90
 #: ../../pyvista/doc/examples/00-load/read-image.rst:118
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:115
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:136
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:68
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:90
 #: ../../pyvista/doc/examples/00-load/reader.rst:71
 #: ../../pyvista/doc/examples/00-load/reader.rst:120
 #: ../../pyvista/doc/examples/00-load/reader.rst:149
@@ -1729,14 +1729,27 @@ msgid ""
 "into several files is natively supported by VTK and PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:48
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:47
 msgid ""
 "Let's go ahead and download the sample dataset containing an "
 ":class:`pyvista.UnstructuredGrid` broken up into several files."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:64
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:165
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:50
+msgid ""
+"Let's inspect where this downloaded our dataset by setting ``load=False`` "
+"and looking at the directory containing the file we downloaded."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:101
+msgid ""
+"Note that a ``.pvtu`` file is available alongside a directory. This "
+"directory contains all the parallel files or pieces that make the whole "
+"mesh. We can simply read the ``.pvtu`` file and VTK will handle putting the "
+"mesh together."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:119
 msgid ""
 "<div class=\"output_subarea output_html rendered_html output_result\">\n"
 "<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
@@ -1766,40 +1779,20 @@ msgid ""
 "<br />"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:95
-msgid ""
-"The above code downloaded a dataset containing a set of parallel files for a"
-" blood vessel mesh and returned an :class:`pyvista.UnstructuredGrid` - we "
-"did not grab that UnstructuredGrid, so that we could demo how to use these "
-"types of files."
-msgstr ""
-
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:100
-msgid "Let's inspect where this downloaded our dataset:"
-msgstr ""
-
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:147
-msgid ""
-"Note that a ``.pvtu`` file is available along side a directory. This "
-"directory contains all the parallel files or pieces that make the whole "
-"mesh. We can simply read the ``.pvtu`` file and VTK will handle putting the "
-"mesh together."
-msgstr ""
-
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:196
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:150
 msgid "Plot the pieced together mesh"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:237
-msgid "**Total running time of the script:** ( 0 minutes  1.921 seconds)"
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:191
+msgid "**Total running time of the script:** ( 0 minutes  1.869 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:252
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:206
 msgid ""
 ":download:`Download Python source code: read-parallel.py <read-parallel.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/read-parallel.rst:258
+#: ../../pyvista/doc/examples/00-load/read-parallel.rst:212
 msgid ""
 ":download:`Download Jupyter notebook: read-parallel.ipynb <read-"
 "parallel.ipynb>`"
@@ -1928,15 +1921,16 @@ msgid "Computation times"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
-msgid "**00:00.618** total execution time for **examples_00-load** files:"
+msgid "**00:01.869** total execution time for **examples_00-load** files:"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
+msgid ""
+":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid "00:00.618"
+msgid "00:01.869"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
@@ -2279,20 +2273,19 @@ msgid ":ref:`sphx_glr_examples_00-load_load-gltf.py` (``load-gltf.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:47
-msgid ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_load-vrml.py` (``load-vrml.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:49
-msgid ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_read-dolfin.py` (``read-dolfin.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:51
-msgid ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_read-file.py` (``read-file.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:53
-msgid ""
-":ref:`sphx_glr_examples_00-load_read-parallel.py` (``read-parallel.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_read-image.py` (``read-image.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:55
