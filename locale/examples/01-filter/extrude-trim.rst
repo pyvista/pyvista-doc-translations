@@ -260,7 +260,7 @@ still a :class:`pyvista.PolyData`.
 
 Plot the Extruded Line
 ~~~~~~~~~~~~~~~~~~~~~~
-Note how that the scalars are copied to the extruded line.
+Note how the scalars are copied to the extruded line.
 
 .. GENERATED FROM PYTHON SOURCE LINES 109-115
 
@@ -287,7 +287,7 @@ Note how that the scalars are copied to the extruded line.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.696 seconds)
+   **Total running time of the script:** ( 0 minutes  2.078 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-trim.py:

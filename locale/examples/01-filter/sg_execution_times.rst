@@ -5,10 +5,12 @@
 
 Computation times
 =================
-**00:01.696** total execution time for **examples_01-filter** files:
+**00:03.857** total execution time for **examples_01-filter** files:
 
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)                                 | 00:01.696 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)                                 | 00:02.078 | 0.0 MB |
++----------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)                             | 00:01.780 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-operations.py``)                     | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
