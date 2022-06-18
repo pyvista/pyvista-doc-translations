@@ -2027,7 +2027,7 @@ msgid ""
 "Let's inspect where this downloaded our dataset by setting ``load=False`` "
 "and looking at the directory containing the file we downloaded."
 msgstr ""
-"``load=False`` を設定し、ダウンロードしたファイルがあるディレクトリを見て、データセットがどこにダウンロードされたかを調べてみましょう。"
+"``load=False`` を設定し，ダウンロードしたファイルがあるディレクトリを見て，データセットがどこにダウンロードされたかを調べてみましょう．"
 
 #: ../../pyvista/doc/examples/00-load/read-parallel.rst:101
 msgid ""
@@ -4444,8 +4444,8 @@ msgid ""
 "Extrude a :class:`pyvista.PolyData` with a :func:`pyvista.Plane` using "
 ":func:`extrude_trim() <pyvista.PolyDataFilters.extrude_trim>`."
 msgstr ""
-"func:`extrude_trim() <pyvista.PolyDataFilters.extrude_trim>` を使用して、 "
-":class:`pyvista.PolyData` を :func:`pyvista.Plane` で押しつぶします。"
+"func:`extrude_trim() <pyvista.PolyDataFilters.extrude_trim>` を使用して， "
+":class:`pyvista.PolyData` を :func:`pyvista.Plane` で押しつぶします．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:45
 msgid "Generate an Extruded Surface"
@@ -4493,7 +4493,7 @@ msgstr "押し出し面をプロットします"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:94
 msgid "Plot the resulting :class:`pyvista.PolyData`."
-msgstr "出来上がった :class:`pyvista.PolyData` をプロットします。"
+msgstr "出来上がった :class:`pyvista.PolyData` をプロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:131
 msgid "Extruding All Edges"
@@ -4505,8 +4505,8 @@ msgid ""
 "only generates faces on the boundary. When using ``extrusion='all_edges'``, "
 "interior edges are also created."
 msgstr ""
-"前の例では、デフォルトの ``extrusion='boundary_edges'`` を使用し、境界上の面のみを生成していました。 "
-"``extrusion='all_edges'`` を使用すると、内側の辺も生成されます。"
+"前の例では，デフォルトの ``extrusion='boundary_edges'`` を使用し，境界上の面のみを生成していました． "
+"``extrusion='all_edges'`` を使用すると，内側の辺も生成されます．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:176
 msgid "Plot"
@@ -4515,7 +4515,7 @@ msgstr "プロット"
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:177
 msgid ""
 "Show the additional interior faces by plotting with ``style='wireframe'``."
-msgstr "``style='wireframe'`` でプロットすることにより、追加の内側面を表示します。"
+msgstr "``style='wireframe'`` でプロットすることにより，追加の内側面を表示します．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:213
 msgid "Extrude a Line"
@@ -4526,7 +4526,7 @@ msgid ""
 "You can also extrude lines. Observe that the output from extruded lines is "
 "still a :class:`pyvista.PolyData`."
 msgstr ""
-"また、線を押し出すこともできます。押し出された線の出力は :class:`pyvista.PolyData` のままであることを確認してください。"
+"また，線を押し出すこともできます．押し出された線の出力は :class:`pyvista.PolyData` のままであることを確認してください．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:233
 msgid ""
@@ -4584,11 +4584,11 @@ msgstr "押し出し線をプロットします"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:263
 msgid "Note how the scalars are copied to the extruded line."
-msgstr ""
+msgstr "スカラーが押し出された線にコピーされていることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:290
 msgid "**Total running time of the script:** ( 0 minutes  2.078 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.078 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/extrude-trim.rst:305
 msgid ""
@@ -5117,17 +5117,20 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_01-filter_integrate-data.py>` "
 "to download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_01-filter_integrate-data.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:24
 #: ../../pyvista/doc/examples/index.rst:1062
 msgid "Integrate Data"
-msgstr ""
+msgstr "データの積分"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:26
 msgid ""
 "Integrate data over a surface using the "
 ":func:`pyvista.DataSetFilters.integrate_data` filter."
 msgstr ""
+":func:`pyvista.DataSetFilters.integrate_data` フィルタを使用して，データを表面上で積分します．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:45
 msgid ""
@@ -5137,10 +5140,13 @@ msgid ""
 " Fluid flowing into the domain is in the negative z-direction, so a new "
 "array, ``normal_velocity``, is created."
 msgstr ""
+"この例では，血管内の総流量と平均流速を計算します． 境界オブジェクトは，データセット形状のプロットにのみ使用されます． "
+"流入面は，領域をスライスして生成します．領域内に流入する流体は負の z 方向に流れるので，新しい配列 ``normal_velocity`` "
+"が作成されます．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:70
 msgid "The velocity in the inlet is shown."
-msgstr ""
+msgstr "入口の流速を示します．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:104
 msgid ""
@@ -5148,6 +5154,8 @@ msgid ""
 ":func:`pyvista.DataSetFilters.integrate_data` filter.  Note that the data is"
 " a :class:`pyvista.UnstructuredGrid` object with only 1 point and 1 cell."
 msgstr ""
+":func:`pyvista.DataSetFilters.integrate_data` フィルターを使用して，総流量が計算されます． データは "
+":class:`pyvista.UnstructuredGrid` オブジェクトで，1 つのポイントと 1 つのセルのみであることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:120
 msgid ""
@@ -5180,23 +5188,51 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>1</td></tr>\n"
+"<tr><td>N Points</td><td>1</td></tr>\n"
+"<tr><td>X Bounds</td><td>8.095e+01, 8.095e+01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>6.007e+01, 6.007e+01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.820e+02, 1.820e+02</td></tr>\n"
+"<tr><td>N Arrays</td><td>7</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td>node_value</td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>0.000e+00</td></tr>\n"
+"<tr><td>simerr_type</td><td>Points</td><td>float64</td><td>1</td><td>1.672e+02</td><td>1.672e+02</td></tr>\n"
+"<tr><td>density</td><td>Cells</td><td>float64</td><td>1</td><td>1.369e+02</td><td>1.369e+02</td></tr>\n"
+"<tr><td>normal_velocity</td><td>Cells</td><td>float64</td><td>1</td><td>2.580e+01</td><td>2.580e+01</td></tr>\n"
+"<tr><td>shearstress</td><td>Cells</td><td>float64</td><td>1</td><td>9.470e-01</td><td>9.470e-01</td></tr>\n"
+"<tr><td>velocity</td><td>Cells</td><td>float64</td><td>3</td><td>-2.580e+01</td><td>1.285e+00</td></tr>\n"
+"<tr><td>Area</td><td>Cells</td><td>float64</td><td>1</td><td>2.650e+02</td><td>2.650e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:153
 msgid "Each array in ``integrated_data`` stores the integrated data."
-msgstr ""
+msgstr "積分データ ``integrated_data`` の各配列には，積分データが格納されます．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:178
 msgid "An additional ``Area`` or ``Volume`` array is added."
-msgstr ""
+msgstr "``Area`` や ``Volume`` の配列が追加されます．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:206
 msgid ""
 "Display the total flow rate, area of inlet surface, and average velocity."
-msgstr ""
+msgstr "総流量，吸込面面積，平均流速を表示します．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:240
 msgid "Volume Integration"
-msgstr ""
+msgstr "体積積分"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:241
 msgid ""
@@ -5204,34 +5240,39 @@ msgid ""
 "point data across the entire volume. You can use this to compute mean values"
 " by dividing by the volume of the dataset."
 msgstr ""
+"また，体積を積分することもできます．ここでは，セルと点のデータを体積全体で効果的に合計します．データセットの体積で割ることで，平均値を計算するのに使うことができます．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:245
 msgid ""
 "Note that the calculated volume is the same as "
 ":attr:`pyvista.DataSet.volume`."
-msgstr ""
+msgstr "計算された体積は :attr:`pyvista.DataSet.volume` と同じであることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:247
 msgid ""
 "Also note that the center of the dataset is the \"point\" of the integrated "
 "volume."
-msgstr ""
+msgstr "また，データセットの中心は積算量の \"point\" であることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:286
 msgid "**Total running time of the script:** ( 0 minutes  1.780 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.780 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:301
 msgid ""
 ":download:`Download Python source code: integrate-data.py <integrate-"
 "data.py>`"
 msgstr ""
+":download:`Download Python source code: integrate-data.py <integrate-"
+"data.py>`"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:307
 msgid ""
 ":download:`Download Jupyter notebook: integrate-data.ipynb <integrate-"
 "data.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: integrate-data.ipynb <integrate-"
+"data.ipynb>`"
 
 #: ../../pyvista/doc/examples/01-filter/interpolate.rst:13
 msgid ""
@@ -5890,7 +5931,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:03.857** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:03.857** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
@@ -5900,16 +5941,17 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:02.078"
-msgstr ""
+msgstr "00:02.078"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid "00:01.780"
-msgstr ""
+msgstr "00:01.780"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid ""
@@ -13238,10 +13280,12 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Integrate data over a "
 "surface using the pyvista.DataSetFilters.integrate_data filter.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Integrate data over a "
+"surface using the pyvista.DataSetFilters.integrate_data filter.\">"
 
 #: ../../pyvista/doc/examples/index.rst:1062
 msgid ":ref:`sphx_glr_examples_01-filter_integrate-data.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_01-filter_integrate-data.py`"
 
 #: ../../pyvista/doc/examples/index.rst:1074
 msgid ""
