@@ -905,6 +905,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Extrude Trim">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_extrude-trim_thumb.png
+     :alt: Extrude Trim
+
+     :ref:`sphx_glr_examples_01-filter_extrude-trim.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/extrude-trim
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Generate a surface from a scalar field using the flying edges and marching cubes filters as pro...">
 
 .. only:: html
@@ -1028,6 +1049,27 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
    :hidden:
 
    /examples/01-filter/gradients
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Integrate data over a surface using the pyvista.DataSetFilters.integrate_data filter.">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_integrate-data_thumb.png
+     :alt: Integrate Data
+
+     :ref:`sphx_glr_examples_01-filter_integrate-data.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/integrate-data
 
 .. raw:: html
 

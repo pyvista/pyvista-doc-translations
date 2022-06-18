@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_load-vrml.py:
 
 
-.. _load_vrml:
+.. _load_vrml_example:
 
 Working with VRML Files
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@ Set up the plotter and import VRML file.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.634 seconds)
+   **Total running time of the script:** ( 0 minutes  0.618 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-vrml.py:
