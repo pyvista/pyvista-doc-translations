@@ -22,8 +22,8 @@ Sphere Widget
 ~~~~~~~~~~~~~
 
 The sphere widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_sphere_widget` and
-:func:`pyvista.WidgetHelper.clear_sphere_widgets` methods respectively.
+:func:`pyvista.Plotter.add_sphere_widget` and
+:func:`pyvista.Plotter.clear_sphere_widgets` methods respectively.
 This is a very versatile widget as it can control vertex location that can
 be used to control or update the location of just about anything.
 
@@ -269,7 +269,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.541 seconds)
+   **Total running time of the script:** ( 0 minutes  0.942 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:

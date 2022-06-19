@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-10 00:56+0000\n"
+"POT-Creation-Date: 2022-05-31 01:00+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
-"Language-Team: Russian (https://www.transifex.com/getfem-doc/teams/112279/ru/)\n"
+"Language-Team: Russian (https://www.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -567,51 +567,58 @@ msgid "To ensure your code meets minimum code styling standards, run::"
 msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:289
-msgid "You can also install this as a pre-commit hook by running::"
+msgid ""
+"If you have issues related to ``setuptools`` when installing ``pre-commit``,"
+" see `pre-commit Issue #2178 comment <https://github.com/pre-commit/pre-"
+"commit/issues/2178#issuecomment-1002163763>`_ for a potential resolution."
 msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:293
+msgid "You can also install this as a pre-commit hook by running::"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:297
 msgid ""
 "This way, it's not possible for you to push code that fails the style "
 "checks. For example, each commit automatically checks that you meet the "
 "style requirements::"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:304
+#: ../../pyvista/CONTRIBUTING.rst:308
 msgid ""
 "The actual installation of the environment happens before the first commit "
 "following ``pre-commit install``. This will take a bit longer, but "
 "subsequent commits will only trigger the actual style checks."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:309
+#: ../../pyvista/CONTRIBUTING.rst:313
 msgid "Notes Regarding Image Regression Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:311
+#: ../../pyvista/CONTRIBUTING.rst:315
 msgid ""
 "Since PyVista is primarily a plotting module, it’s imperative we actually "
 "check the images that we generate in some sort of regression testing. In "
 "practice, this ends up being quite a bit of work because:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:315
+#: ../../pyvista/CONTRIBUTING.rst:319
 msgid ""
 "OpenGL software vs. hardware rending causes slightly different images to be "
 "rendered."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:317
+#: ../../pyvista/CONTRIBUTING.rst:321
 msgid ""
 "We want our CI (which uses a virtual frame buffer) to match our desktop "
 "images (uses hardware acceleration)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:319
+#: ../../pyvista/CONTRIBUTING.rst:323
 msgid "Different OSes render different images."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:321
+#: ../../pyvista/CONTRIBUTING.rst:325
 msgid ""
 "As each platform and environment renders different slightly images relative "
 "to Linux (which these images were built from), so running these tests across"
@@ -621,18 +628,18 @@ msgid ""
 "docs at dev.pyvista.com)"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:328
+#: ../../pyvista/CONTRIBUTING.rst:332
 msgid ""
 "Based on these points, image regression testing only occurs on Linux CI, and"
 " multi-sampling is disabled as that seems to be one of the biggest "
 "difference between software and hardware based rendering."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:332
+#: ../../pyvista/CONTRIBUTING.rst:336
 msgid "Image cache is stored here as ``./image_cache``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:334
+#: ../../pyvista/CONTRIBUTING.rst:338
 msgid ""
 "Image resolution is kept low at 400x400 as we don’t want to pollute git with"
 " large images. Small variations between versions and environments are to be "
@@ -640,13 +647,13 @@ msgid ""
 "logged as a warning) while values over that amount will trigger an error."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:340
+#: ../../pyvista/CONTRIBUTING.rst:344
 msgid ""
 "There are two mechanisms within ``pytest`` to control image regression "
 "testing, ``--reset_image_cache`` and ``--ignore_image_cache``. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:348
+#: ../../pyvista/CONTRIBUTING.rst:352
 msgid ""
 "Running ``--reset_image_cache`` creates a new image for each test in "
 "``tests/plotting/test_plotting.py`` and is not recommended except for "
@@ -656,25 +663,25 @@ msgid ""
 "on our CI testing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:355
+#: ../../pyvista/CONTRIBUTING.rst:359
 msgid ""
 "If you need to add a new test to ``tests/plotting/test_plotting.py`` and "
 "wish to include image regression testing, be sure to add "
 "``verify_cache_image`` to ``show``. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:368
+#: ../../pyvista/CONTRIBUTING.rst:372
 msgid ""
 "This ensures that immediately before the plotter is closed, the current "
 "render window will be verified against the image in CI. If no image exists, "
 "be sure to add the resulting image with"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:377
+#: ../../pyvista/CONTRIBUTING.rst:381
 msgid "Creating a New Pull Request"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:379
+#: ../../pyvista/CONTRIBUTING.rst:383
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -682,7 +689,7 @@ msgid ""
 "changes will work across several platforms."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:384
+#: ../../pyvista/CONTRIBUTING.rst:388
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -692,29 +699,29 @@ msgid ""
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:391
+#: ../../pyvista/CONTRIBUTING.rst:395
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:396
+#: ../../pyvista/CONTRIBUTING.rst:400
 msgid "Branching Model"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:398
+#: ../../pyvista/CONTRIBUTING.rst:402
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
 " Development <https://trunkbaseddevelopment.com/>`_ approach."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:402
+#: ../../pyvista/CONTRIBUTING.rst:406
 msgid "The main features of our branching model are:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:404
+#: ../../pyvista/CONTRIBUTING.rst:408
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -723,7 +730,7 @@ msgid ""
 "through unit testing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:409
+#: ../../pyvista/CONTRIBUTING.rst:413
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -736,7 +743,7 @@ msgid ""
 "features."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:419
+#: ../../pyvista/CONTRIBUTING.rst:423
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version "
@@ -748,43 +755,43 @@ msgid ""
 "so they can be patched as needed."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:430
+#: ../../pyvista/CONTRIBUTING.rst:434
 msgid "Minor Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:432
+#: ../../pyvista/CONTRIBUTING.rst:436
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
 "following will occur:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:436
+#: ../../pyvista/CONTRIBUTING.rst:440
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:439
+#: ../../pyvista/CONTRIBUTING.rst:443
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:442
+#: ../../pyvista/CONTRIBUTING.rst:446
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
 "cached."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:453
+#: ../../pyvista/CONTRIBUTING.rst:457
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:456
+#: ../../pyvista/CONTRIBUTING.rst:460
 msgid ""
 "Update the version numbers in ``pyvista/_version.py`` and commit it. Push "
 "the branch to GitHub and create a new PR for this release that merges it to "
@@ -792,7 +799,7 @@ msgid ""
 "focused on the release."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:461
+#: ../../pyvista/CONTRIBUTING.rst:465
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -800,7 +807,7 @@ msgid ""
 " release branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:466
+#: ../../pyvista/CONTRIBUTING.rst:470
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main and the ``main`` branch will be tagged with a "
@@ -808,7 +815,7 @@ msgid ""
 "release with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:476
+#: ../../pyvista/CONTRIBUTING.rst:480
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -818,13 +825,13 @@ msgid ""
 "if a specific contributor is to thank for a new feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:484
+#: ../../pyvista/CONTRIBUTING.rst:488
 msgid ""
 "Place your release notes from step 8 in the description for `the new release"
 " on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:488
+#: ../../pyvista/CONTRIBUTING.rst:492
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro-cf-autotick-bot>`_ to open a pull request on the "
@@ -832,27 +839,27 @@ msgid ""
 "feedstock>`_. Merge that pull request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:494
+#: ../../pyvista/CONTRIBUTING.rst:498
 msgid "Announce the new release in the PyVista Slack workspace and celebrate!"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:498
+#: ../../pyvista/CONTRIBUTING.rst:502
 msgid "Patch Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:500
+#: ../../pyvista/CONTRIBUTING.rst:504
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:503
+#: ../../pyvista/CONTRIBUTING.rst:507
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:506
+#: ../../pyvista/CONTRIBUTING.rst:510
 msgid ""
 "Update ``__version__.py`` with the next patch increment (e.g. ``0.25.1``), "
 "commit it, and open a PR that merge with the release branch. This gives the "
@@ -860,7 +867,7 @@ msgid ""
 "Any additional hotfixes should be outside of this PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:512
+#: ../../pyvista/CONTRIBUTING.rst:516
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -868,7 +875,7 @@ msgid ""
 "the correct steps)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:517
+#: ../../pyvista/CONTRIBUTING.rst:521
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
@@ -978,41 +985,47 @@ msgstr ""
 
 #: ../../pyvista/doc/extras/flask.rst:5
 msgid ""
-"You can use ``pyvista`` in to make a flask application to display static "
-"plots.  See the following example as well as the demo at `Flask Example "
+"You can use ``pyvista`` in to make a flask application to display both "
+"static and dynamic plots.  See the following examples as well as the source "
+"at `Flask Example "
 "<https://github.com/pyvista/pyvista/tree/main/examples_flask>`__."
 msgstr ""
 
-#: ../../pyvista/doc/extras/flask.rst:9
-msgid ""
-"For dynamic examples, it's recommended to use `Jupyter Notebooks "
-"<https://jupyter.org/>`__.  See our documentation regarding this at "
-":ref:`jupyter_plotting`."
+#: ../../pyvista/doc/extras/flask.rst:11
+msgid "Dynamic Example"
 msgstr ""
 
 #: ../../pyvista/doc/extras/flask.rst:15
-msgid "Example Flask Webpage"
+msgid "Example Dynamic Flask Webpage"
 msgstr ""
 
-#: ../../pyvista/doc/extras/flask.rst:19
+#: ../../pyvista/doc/extras/flask.rst:19 ../../pyvista/doc/extras/flask.rst:45
 msgid "Python Application ``app.py``"
 msgstr ""
 
-#: ../../pyvista/doc/extras/flask.rst:25
+#: ../../pyvista/doc/extras/flask.rst:25 ../../pyvista/doc/extras/flask.rst:51
 msgid "Ajax Template ``index.html``"
 msgstr ""
 
-#: ../../pyvista/doc/extras/flask.rst:26
+#: ../../pyvista/doc/extras/flask.rst:26 ../../pyvista/doc/extras/flask.rst:52
 msgid ""
 "This template should be within the ``templates`` directory in the same path "
 "as ``app.py``."
 msgstr ""
 
-#: ../../pyvista/doc/extras/flask.rst:29
+#: ../../pyvista/doc/extras/flask.rst:29 ../../pyvista/doc/extras/flask.rst:55
 msgid ""
 "This template returns the ``meshtype`` parameter back to the ``get_img`` "
 "method in the flask app, which is used to select the type of mesh to be "
 "plotted."
+msgstr ""
+
+#: ../../pyvista/doc/extras/flask.rst:37
+msgid "Static Example"
+msgstr ""
+
+#: ../../pyvista/doc/extras/flask.rst:41
+msgid "Example Static Flask Webpage"
 msgstr ""
 
 #: ../../pyvista/doc/extras/index.rst:2

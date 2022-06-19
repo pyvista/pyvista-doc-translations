@@ -24,8 +24,8 @@ Plane Widget
 ~~~~~~~~~~~~
 
 The plane widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_plane_widget` and
-:func:`pyvista.WidgetHelper.clear_plane_widgets` methods respectively.
+:func:`pyvista.Plotter.add_plane_widget` and
+:func:`pyvista.Plotter.clear_plane_widgets` methods respectively.
 As with all widgets, you must provide a custom callback method to utilize that
 plane. Considering that planes are most commonly used for clipping and slicing
 meshes, we have included two helper methods for doing those tasks!
@@ -78,7 +78,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f5296b620a0)
+    [UnstructuredGrid (0x7fcb43388fa0)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -140,7 +140,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7f528f1ea820)
+    [PolyData (0x7fcb43388460)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -262,7 +262,7 @@ is set.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.111 seconds)
+   **Total running time of the script:** ( 0 minutes  8.208 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:
