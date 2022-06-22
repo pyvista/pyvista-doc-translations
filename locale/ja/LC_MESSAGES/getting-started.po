@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 00:59+0000\n"
+"POT-Creation-Date: 2022-06-22 01:14+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -766,19 +766,62 @@ msgstr ""
 
 #: ../../pyvista/doc/getting-started/installation.rst:25
 msgid ""
+"`scooby <https://github.com/banesullivan/scooby>`_ - Reporting and debugging"
+" tools."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:29
+#: ../../pyvista/doc/getting-started/installation.rst:90
+msgid "Optional Dependencies"
+msgstr "オプションの依存関係"
+
+#: ../../pyvista/doc/getting-started/installation.rst:30
+msgid ""
+"PyVista includes several optional dependencies for visualization and reading"
+" a variety of additional file formats, including:"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:32
+msgid ""
+"`cmocean <https://pypi.org/project/cmocean/>`_ - Colormaps for Oceanography."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:33
+msgid ""
+"`colorcet <https://colorcet.holoviz.org/>`_ - Perceptually accurate "
+"256-color colormaps for use with Python."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:34
+msgid ""
+"`ipyvtklink <https://github.com/Kitware/ipyvtklink>`_ - Minimalist ipywidget"
+" to interface with any Python vtkRenderWindow."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:35
+msgid ""
+"`matplotlib <https://pypi.org/project/matplotlib/>`_ - Used for colormaps "
+"and 2D plotting with :class:`pyvista.ChartMPL`."
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:36
+msgid ""
 "`meshio <https://pypi.org/project/meshio/>`_ - Input/Output for many mesh "
 "formats."
 msgstr "`meshio <https://pypi.org/project/meshio/>`_ - 多くのメッシュ形式の入力/出力．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:26
-msgid "`scooby <https://github.com/banesullivan/scooby>`_ - Debugging tools"
-msgstr "`scooby <https://github.com/banesullivan/scooby>`_ - デバッグツール"
+#: ../../pyvista/doc/getting-started/installation.rst:37
+msgid ""
+"`pythreejs <https://pythreejs.readthedocs.io/en/stable/>`_ - Jupyter widgets"
+" based notebook extension that allows Jupyter to leverage the WebGL "
+"capabilities of modern browsers."
+msgstr ""
 
-#: ../../pyvista/doc/getting-started/installation.rst:29
+#: ../../pyvista/doc/getting-started/installation.rst:41
 msgid "PyPI"
 msgstr "PyPI"
 
-#: ../../pyvista/doc/getting-started/installation.rst:34
+#: ../../pyvista/doc/getting-started/installation.rst:46
 msgid ""
 "PyVista can be installed from `PyPI <https://pypi.org/project/pyvista/>`_ "
 "using ``pip``::"
@@ -786,19 +829,25 @@ msgstr ""
 "PyVistaは `PyPI <https://pypi.org/project/pyvista/>`_ から ``pip`` "
 "を使ってインストールできます::"
 
-#: ../../pyvista/doc/getting-started/installation.rst:41
+#: ../../pyvista/doc/getting-started/installation.rst:51
+msgid ""
+"To install all the additional packages that extend PyVista, install using "
+"``pip`` with::"
+msgstr ""
+
+#: ../../pyvista/doc/getting-started/installation.rst:58
 msgid "Anaconda"
 msgstr "Anaconda"
 
-#: ../../pyvista/doc/getting-started/installation.rst:46
+#: ../../pyvista/doc/getting-started/installation.rst:63
 msgid "To install this package with ``conda`` run::"
 msgstr "``conda`` を使ってこのパッケージをインストールするには::"
 
-#: ../../pyvista/doc/getting-started/installation.rst:51
+#: ../../pyvista/doc/getting-started/installation.rst:68
 msgid "Installing the Current Development Branch from GitHub"
 msgstr "GitHubから現在の開発ブランチをインストールする"
 
-#: ../../pyvista/doc/getting-started/installation.rst:52
+#: ../../pyvista/doc/getting-started/installation.rst:69
 msgid ""
 "There may be features or bug-fixes that have been implemented in PyVista but"
 " have not made their way into a release.  To install ``pyvista`` from the "
@@ -807,109 +856,105 @@ msgstr ""
 "PyVistaに実装されているが，まだリリースされていない機能やバグ修正があるかもしれません．githubの最新の開発ブランチから "
 "``pyvista`` をインストールするには，以下のいずれかを使用します．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:60
+#: ../../pyvista/doc/getting-started/installation.rst:77
 msgid ""
 "Alternatively, you can clone the repository with git and install it with "
 "pip."
 msgstr "あるいは，gitを使ってリポジトリーのクローンを作成し，pipを使ってインストールすることもできます．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:68
+#: ../../pyvista/doc/getting-started/installation.rst:85
 msgid ""
 "Note the development flag ``-e``.  This allows you to change pyvista in-"
 "place without having to reinstall it for each change."
 msgstr ""
 "開発フラグ ``-e`` に注意してください． これにより，pyvistaを変更するたびに再インストールすることなく，その場で変更することができます．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:73
-msgid "Optional Dependencies"
-msgstr "オプションの依存関係"
-
-#: ../../pyvista/doc/getting-started/installation.rst:75
+#: ../../pyvista/doc/getting-started/installation.rst:92
 msgid "The following are a list of optional dependencies and their purpose:"
 msgstr "次に，オプションの依存関係とその目的の一覧を示します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:78
+#: ../../pyvista/doc/getting-started/installation.rst:95
 msgid "Package"
 msgstr "パッケージ"
 
-#: ../../pyvista/doc/getting-started/installation.rst:78
+#: ../../pyvista/doc/getting-started/installation.rst:95
 msgid "Purpose"
 msgstr "目的"
 
-#: ../../pyvista/doc/getting-started/installation.rst:80
+#: ../../pyvista/doc/getting-started/installation.rst:97
 msgid "``matplotlib``"
 msgstr "``matplotlib``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:80
+#: ../../pyvista/doc/getting-started/installation.rst:97
 msgid "Using Colormaps"
 msgstr "カラーマップの使用"
 
-#: ../../pyvista/doc/getting-started/installation.rst:82
+#: ../../pyvista/doc/getting-started/installation.rst:99
 msgid "``itkwidgets``"
 msgstr "``itkwidgets``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:82
-#: ../../pyvista/doc/getting-started/installation.rst:84
+#: ../../pyvista/doc/getting-started/installation.rst:99
+#: ../../pyvista/doc/getting-started/installation.rst:101
 msgid "Interactive notebook rendering"
 msgstr "インタラクティブなノートブックレンダリング"
 
-#: ../../pyvista/doc/getting-started/installation.rst:84
+#: ../../pyvista/doc/getting-started/installation.rst:101
 msgid "``ipyvtklink``"
 msgstr "``ipyvtklink``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:86
+#: ../../pyvista/doc/getting-started/installation.rst:103
 msgid "``sphinx_gallery``"
 msgstr "``sphinx_gallery``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:86
+#: ../../pyvista/doc/getting-started/installation.rst:103
 msgid "Capturing PyVista output for docs"
 msgstr "ドキュメントのPyVista出力のキャプチャ"
 
-#: ../../pyvista/doc/getting-started/installation.rst:88
+#: ../../pyvista/doc/getting-started/installation.rst:105
 msgid "``colorcet``"
 msgstr "``colorcet``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:88
+#: ../../pyvista/doc/getting-started/installation.rst:105
 msgid "Perceptually uniform colormaps"
 msgstr "知覚的に均一なカラーマップ"
 
-#: ../../pyvista/doc/getting-started/installation.rst:90
+#: ../../pyvista/doc/getting-started/installation.rst:107
 msgid "``cmocean``"
 msgstr "``cmocean``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:90
+#: ../../pyvista/doc/getting-started/installation.rst:107
 msgid "Oceanographic colormaps"
 msgstr "海洋学的カラーマップ"
 
-#: ../../pyvista/doc/getting-started/installation.rst:92
+#: ../../pyvista/doc/getting-started/installation.rst:109
 msgid "``imageio-ffmpeg``"
 msgstr "``imageio-ffmpeg``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:92
+#: ../../pyvista/doc/getting-started/installation.rst:109
 msgid "Saving movie files"
 msgstr "ムービーファイルの保存"
 
-#: ../../pyvista/doc/getting-started/installation.rst:94
+#: ../../pyvista/doc/getting-started/installation.rst:111
 msgid "``tqdm``"
 msgstr "``tqdm``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:94
+#: ../../pyvista/doc/getting-started/installation.rst:111
 msgid "Status bars for monitoring filters"
 msgstr "フィルタを監視するためのステータスバー"
 
-#: ../../pyvista/doc/getting-started/installation.rst:96
+#: ../../pyvista/doc/getting-started/installation.rst:113
 msgid "``trimesh`` ``rtree`` ``pyembree``"
 msgstr "``trimesh`` ``rtree`` ``pyembree``"
 
-#: ../../pyvista/doc/getting-started/installation.rst:97
+#: ../../pyvista/doc/getting-started/installation.rst:114
 msgid "Vectorised ray tracing"
 msgstr "ベクトルレイトレーシング"
 
-#: ../../pyvista/doc/getting-started/installation.rst:103
+#: ../../pyvista/doc/getting-started/installation.rst:120
 msgid "Source / Developers"
 msgstr "ソース/開発者"
 
-#: ../../pyvista/doc/getting-started/installation.rst:105
+#: ../../pyvista/doc/getting-started/installation.rst:122
 msgid ""
 "Alternatively, you can install the latest version from GitHub by visiting "
 "`PyVista <https://github.com/pyvista/pyvista>`_, and downloading the source "
@@ -918,7 +963,7 @@ msgstr ""
 "あるいは，GitHubから `PyVista <https://github.com/pyvista/pyvista>`_ "
 "にアクセスして以下のコマンドを実行し，ソースをダウンロード (クローニング) して最新バージョンをインストールすることもできます:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:114
+#: ../../pyvista/doc/getting-started/installation.rst:131
 msgid ""
 "The latest documentation for the ``main`` branch of PyVista can be found at "
 "`dev.pyvista.org <https://dev.pyvista.org>`_."
@@ -926,19 +971,19 @@ msgstr ""
 "PyVistaの ``main`` ブランチの最新のドキュメントは `dev.pyvista.org "
 "<https://dev.pyvista.org>`_ にあります．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:119
+#: ../../pyvista/doc/getting-started/installation.rst:136
 msgid "Test Installation"
 msgstr "インストールのテスト"
 
-#: ../../pyvista/doc/getting-started/installation.rst:121
+#: ../../pyvista/doc/getting-started/installation.rst:138
 msgid "You can test your installation by running an example:"
 msgstr "次の例を実行して，インストールをテストできます:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:128
+#: ../../pyvista/doc/getting-started/installation.rst:145
 msgid "See other examples and demos:"
 msgstr "その他の例とデモを参照してください:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:144
+#: ../../pyvista/doc/getting-started/installation.rst:161
 msgid ""
 "A more comprehensive testing suite is available after cloning the source "
 "repository. For details on how to clone and test the PyVista source, please "
@@ -947,11 +992,11 @@ msgstr ""
 "ソースリポジトリーのクローンを作成すると，より包括的なテストスイートを使用できるようになります．PyVistaソースをクローンしてテストする方法の詳細については，我々の"
 " `Contributing Guide`_  ，特に `Testing`_ のセクションをご覧ください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:153
+#: ../../pyvista/doc/getting-started/installation.rst:170
 msgid "Running on CI Services"
 msgstr "CIサービスでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:154
+#: ../../pyvista/doc/getting-started/installation.rst:171
 msgid ""
 "Please head over to `pyvista/setup-headless-display-action`_ for details on "
 "setting up a headless display in GitHub Actions Workflows using PyVista."
@@ -959,7 +1004,7 @@ msgstr ""
 "PyVistaを使ったGitHub Actions Workflowsでヘッドレス表示を設定する方法は `pyvista/setup-headless-"
 "display-action`_ をご覧ください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:157
+#: ../../pyvista/doc/getting-started/installation.rst:174
 msgid ""
 "In the past, we have also supported `pyvista/gl-ci-helpers`_ for setting up "
 "CI services like Travis and Azure Pipelines to run PyVista."
@@ -967,11 +1012,11 @@ msgstr ""
 "過去には，TravisやAzure PipelinesなどのCIサービスを設定してPyVistaを実行するための `pyvista/gl-ci "
 "helpers`_ もサポートされていました．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:165
+#: ../../pyvista/doc/getting-started/installation.rst:182
 msgid "Running on MyBinder"
 msgstr "MyBinderでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:166
+#: ../../pyvista/doc/getting-started/installation.rst:183
 msgid ""
 "This section is for advanced users that would like to install and use "
 "PyVista with headless displays on notebook hosting services like MyBinder_."
@@ -979,7 +1024,7 @@ msgstr ""
 "このセクションは， MyBinder_ "
 "のようなノートブックホスティングサービスで，ヘッドレスディスプレイでPyVistaをインストールして使いたい上級ユーザ向けです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:169
+#: ../../pyvista/doc/getting-started/installation.rst:186
 msgid ""
 "Please see `this project`_ for a convenient Cookiecutter_ to get started "
 "using PyVista on the notebook hosting service MyBinder_."
@@ -987,7 +1032,7 @@ msgstr ""
 "ノートPCホスティングサービス MyBinder_ でPyVistaを使い始めるのに便利な Cookiecutter_ については `this "
 "project`_ を見てください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:176
+#: ../../pyvista/doc/getting-started/installation.rst:193
 msgid ""
 "To get started, the Docker container will need to have ``libgl1-mesa-dev`` "
 "and ``xvfb`` installed through ``apt-get``. For MyBinder, include the "
@@ -996,7 +1041,7 @@ msgstr ""
 "まず，Dockerコンテナに ``apt-get`` を使って ``libgl1-mesa-dev`` と ``xvfb`` "
 "をインストールする必要がある．MyBinderの場合は， ``apt.txt`` というファイルに以下を含めてください::"
 
-#: ../../pyvista/doc/getting-started/installation.rst:183
+#: ../../pyvista/doc/getting-started/installation.rst:200
 msgid ""
 "Then, you need to configure the headless display, for MyBinder, create a "
 "file called ``start`` and include the following set up script that will run "
@@ -1005,7 +1050,7 @@ msgstr ""
 "次に，MyBinderでヘッドレスディスプレイを設定し， ``start`` "
 "というファイルを作成し，Dockerコンテナが起動されるたびに実行される以下の設定スクリプトを含める必要があります．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:201
+#: ../../pyvista/doc/getting-started/installation.rst:218
 msgid ""
 "And that's it! Include PyVista in your Python requirements and get to "
 "visualizing your data! If you need more help than this on setting up PyVista"
@@ -1016,11 +1061,11 @@ msgstr ""
 "以上です!Python要件にPyVistaを組み込んで，データを視覚化しましょう．これらのタイプのサービスのためにPyVistaをセットアップするのにこれ以上の助けが必要なら，Slackで開発者とチャットするか，MyBinderで現在PyVistaを使っている"
 " `this repository`_ を見てください．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:209
+#: ../../pyvista/doc/getting-started/installation.rst:226
 msgid "Running on Remote Servers"
 msgstr "リモートサーバーでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:210
+#: ../../pyvista/doc/getting-started/installation.rst:227
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -1031,31 +1076,31 @@ msgstr ""
 "18.04 LTS ( ``us-east-1`` の  ``ami-0a313d6098716f372`` "
 ")でPyVistaを使うための完全なステップを以下に示します．他のサーバも同様に動作します．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:215
+#: ../../pyvista/doc/getting-started/installation.rst:232
 msgid ""
 "After logging into the remote server, install Miniconda and related "
 "packages:"
 msgstr "リモートサーバにログインしたら，Minicondaと関連するパッケージをインストールします:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:232
+#: ../../pyvista/doc/getting-started/installation.rst:249
 msgid "Then, configure the headless display:"
 msgstr "次に，ヘッドレスディスプレイを設定します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:243
+#: ../../pyvista/doc/getting-started/installation.rst:260
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr "ポート転送を使用してサーバーに再接続し，Jupyterを起動します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:251
-#: ../../pyvista/doc/getting-started/installation.rst:300
-#: ../../pyvista/doc/getting-started/installation.rst:328
+#: ../../pyvista/doc/getting-started/installation.rst:268
+#: ../../pyvista/doc/getting-started/installation.rst:317
+#: ../../pyvista/doc/getting-started/installation.rst:345
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr "Webブラウザで ``localhost:8888`` にアクセスします．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:254
+#: ../../pyvista/doc/getting-started/installation.rst:271
 msgid "Running on WSL"
 msgstr "WSLでの動作"
 
-#: ../../pyvista/doc/getting-started/installation.rst:255
+#: ../../pyvista/doc/getting-started/installation.rst:272
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -1065,17 +1110,17 @@ msgstr ""
 "上記のリモートサーバの例と同様に，LinuxのWindowsサブシステムは可視化のためのXサーバを提供しません．その代わりに，WSLを立ち上げる最も早い方法は，"
 " `JupyterLab <https://jupyter.org/>`_ を利用することです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:259
+#: ../../pyvista/doc/getting-started/installation.rst:276
 msgid ""
 "First, make sure you have installed the correct environment through "
 "Miniconda and related packages:"
 msgstr "まず，Minicondaと関連パッケージによって，正しい環境がインストールされていることを確認します．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:278
+#: ../../pyvista/doc/getting-started/installation.rst:295
 msgid "VTK Link to Jupyter"
 msgstr "JupyterへのVTKリンク"
 
-#: ../../pyvista/doc/getting-started/installation.rst:279
+#: ../../pyvista/doc/getting-started/installation.rst:296
 msgid ""
 "There are two ways to get vtk rendering 3D objects in JupyterLab. First you "
 "can follow the example above for remote servers, skipping over the ``ssh`` "
@@ -1084,50 +1129,50 @@ msgstr ""
 "JupyterLabでvtkレンダリングの3Dオブジェクトを取得する方法は2つあります．まず，上記のリモートサーバ用の例に従って， ``ssh`` "
 "の説明を省くことができます．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:283
+#: ../../pyvista/doc/getting-started/installation.rst:300
 msgid "Configure the headless display:"
 msgstr "ヘッドレスディスプレイを設定します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:294
+#: ../../pyvista/doc/getting-started/installation.rst:311
 msgid "Start Jupyter:"
 msgstr "Jupyterを起動します:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:302
+#: ../../pyvista/doc/getting-started/installation.rst:319
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr "最後にこのサンプルコードを追加すると，JupyterLabでインタラクティブな可視化が表示されるはずです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:315
-#: ../../pyvista/doc/getting-started/installation.rst:343
+#: ../../pyvista/doc/getting-started/installation.rst:332
+#: ../../pyvista/doc/getting-started/installation.rst:360
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr "これでJupyterフロントエンドに直接ビジュアライゼーションが表示されるようになったはずです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:318
+#: ../../pyvista/doc/getting-started/installation.rst:335
 msgid "PyThreeJS Rendering in Jupyter"
 msgstr "JupyterでのPyThreeJSレンダリング"
 
-#: ../../pyvista/doc/getting-started/installation.rst:319
+#: ../../pyvista/doc/getting-started/installation.rst:336
 msgid ""
 "The second option is to change the ``PyVista`` backend to use ``pythreejs``."
 msgstr "2つ目のオプションは，``PyVista`` のバックエンドを ``pythreejs`` に変更することです．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:322
+#: ../../pyvista/doc/getting-started/installation.rst:339
 msgid "To do this, first launch the Jupyter server:"
 msgstr "そのために，まずJupyterサーバーを立ち上げます:"
 
-#: ../../pyvista/doc/getting-started/installation.rst:330
+#: ../../pyvista/doc/getting-started/installation.rst:347
 msgid ""
 "Finally change the PyVista backend to a web visualization library: "
 "``pythreejs``."
 msgstr "最後にPyVistaのバックエンドをWeb可視化ライブラリに変更します: ``pythreejs`` ．"
 
-#: ../../pyvista/doc/getting-started/installation.rst:346
+#: ../../pyvista/doc/getting-started/installation.rst:363
 msgid "Running with Sphinx-Gallery"
 msgstr "Sphinx-Galleryでの実行"
 
-#: ../../pyvista/doc/getting-started/installation.rst:347
+#: ../../pyvista/doc/getting-started/installation.rst:364
 msgid "In your ``conf.py``, add the following:"
 msgstr "あなたの ``conf.py`` に, 次を追加します．"
 
