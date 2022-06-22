@@ -1499,6 +1499,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates to show bounds within a pyvista.Plotter using pyvista.Plotter.show_gr...">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_bounds_thumb.png
+     :alt: Plotting Bounds
+
+     :ref:`sphx_glr_examples_02-plot_bounds.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/bounds
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example shows how different types of charts can be added to the scene. A more complex exam...">
 
 .. only:: html
