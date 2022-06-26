@@ -74,9 +74,9 @@ In this plot we show the bounds for all axes by setting ``location='all'``.
 
 Override Shown Values Limits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In this example we override the values shown along the X and Y axes with our
+In this example, we override the values shown along the X and Y axes with our
 own custom values. This can be useful when you wish to display different
-values along the axes without having to scale the dataset. Also note how we
+values along the axes without having to scale the dataset. Also, note how we
 hide the Z labels by setting ``show_zlabels=False``.
 
 .. GENERATED FROM PYTHON SOURCE LINES 34-45
@@ -163,7 +163,7 @@ single central gear.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.138 seconds)
+   **Total running time of the script:** ( 0 minutes  2.282 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_bounds.py:

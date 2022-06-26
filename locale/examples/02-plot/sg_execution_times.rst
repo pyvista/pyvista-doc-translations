@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:03.138** total execution time for **examples_02-plot** files:
+**00:02.282** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)                                 | 00:03.138 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)                                 | 00:02.282 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
