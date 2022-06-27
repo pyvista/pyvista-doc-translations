@@ -5938,7 +5938,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:02.175** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:02.175** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
@@ -5950,7 +5950,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:02.175"
-msgstr ""
+msgstr "00:02.175"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -6785,10 +6785,12 @@ msgid ""
 " smoothing algorithm to a crazy high value. Note how this causes the mesh to"
 " \"shrink\":"
 msgstr ""
+"まだ滑らかではありませんか?ラプラシアン平滑化アルゴリズムの反復回数を非常に高い値に増やします．これにより，メッシュが \"shrink\" "
+"されることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:174
 msgid "Taubin Smoothing"
-msgstr ""
+msgstr "Taubin スムージング"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:175
 msgid ""
@@ -6797,6 +6799,8 @@ msgid ""
 "<pyvista.PolyDataFilters.smooth>`. In this example, you can see how Taubin "
 "smoothing maintains the volume relative to the original mesh."
 msgstr ""
+":func:`smooth() <pyvista.PolyDataFilters.smooth>` "
+"で実装されているデフォルトのラプラシアンスムージングではなく，タウビンスムージングを使用すると，表面の縮小の量を減らすことができます．この例では，タウビンスムージングが元のメッシュに対してどのようにボリュームを維持しているかを見ることができます．"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:180
 msgid ""
@@ -6804,10 +6808,11 @@ msgid ""
 "approximate amount of smoothing. This is because Taubin smoothing is more "
 "efficient."
 msgstr ""
+"また，反復回数を減らすことで，同じ程度の平滑化量を得ることができることに注意してください．これは，タウバンスムージングがより効率的であるためです．"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:224
 msgid "**Total running time of the script:** ( 0 minutes  2.175 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.175 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:239
 msgid ""
@@ -7385,7 +7390,7 @@ msgid ""
 "This example demonstrates to show bounds within a :class:`pyvista.Plotter` "
 "using :func:`show_grid() <pyvista.Plotter.show_grid>`"
 msgstr ""
-"この例では、 :func:`show_grid() <pyvista.Plotter.show_grid>` を使用して "
+"この例では， :func:`show_grid() <pyvista.Plotter.show_grid>` を使用して "
 ":class:`pyvista.Plotter` 内の境界線を表示するデモを紹介します．"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:47
@@ -7395,7 +7400,7 @@ msgstr "すべての境界を表示する"
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:48
 msgid ""
 "In this plot we show the bounds for all axes by setting ``location='all'``."
-msgstr "このプロットでは、 ``location='all'`` を設定することにより、すべての軸の境界を表示しています．"
+msgstr "このプロットでは， ``location='all'`` を設定することにより，すべての軸の境界を表示しています．"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:76
 msgid "Override Shown Values Limits"
@@ -7408,6 +7413,8 @@ msgid ""
 " values along the axes without having to scale the dataset. Also, note how "
 "we hide the Z labels by setting ``show_zlabels=False``."
 msgstr ""
+"この例では，X軸とY軸に表示される値を独自のカスタム値で上書きしています．これは，データセットを拡大縮小することなく，軸に沿って異なる値を表示したい場合に便利です．また，"
+" ``show_zlabels=False`` を設定して Z ラベルを非表示にしていることにも注目してください．"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:120
 msgid "Show Bounds for Only One Dataset"
@@ -7419,12 +7426,12 @@ msgid ""
 "``axes_ranges`` here since in this example we want to show the size of the "
 "single central gear."
 msgstr ""
-"この例では、1つのデータセットの境界のみを表示しています．この例でも ``axes_ranges`` "
-"を使用しています．この例では、単一の中心歯車の大きさを表示したいからです．"
+"この例では，1つのデータセットの境界のみを表示しています．この例でも ``axes_ranges`` "
+"を使用しています．この例では，単一の中心歯車の大きさを表示したいからです．"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:166
 msgid "**Total running time of the script:** ( 0 minutes  2.282 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.282 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:181
 msgid ":download:`Download Python source code: bounds.py <bounds.py>`"
@@ -9468,7 +9475,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:02.282** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:02.282** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)"
@@ -9476,7 +9483,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:02.282"
-msgstr ""
+msgstr "00:02.282"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
