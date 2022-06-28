@@ -177,7 +177,7 @@ rather than the default laplacian smoothing implemented in :func:`smooth()
 <pyvista.PolyDataFilters.smooth>`. In this example, you can see how Taubin
 smoothing maintains the volume relative to the original mesh.
 
-Also note that the number of iterations can be reduced to get the same approximate amount of smoothing. This is because Taubin smoothing is more efficient.
+Also, note that the number of iterations can be reduced to get the same approximate amount of smoothing. This is because Taubin smoothing is more efficient.
 
 .. GENERATED FROM PYTHON SOURCE LINES 79-92
 
@@ -221,7 +221,7 @@ Also note that the number of iterations can be reduced to get the same approxima
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.175 seconds)
+   **Total running time of the script:** ( 0 minutes  2.069 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface-smoothing.py:
