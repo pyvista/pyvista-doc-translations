@@ -18,6 +18,8 @@
 .. _sphx_glr_examples_01-filter_sampling_functions_2d.py:
 
 
+.. _perlin_noise_2d_example:
+
 Sample Function: Perlin Noise in 2D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we use :func:`pyvista.core.imaging.sample_function` to sample
@@ -25,14 +27,13 @@ Perlin noise over a region to generate random terrain.
 
 Perlin noise is atype of gradient noise often used by visual effects
 artists to increase the appearance of realism in computer graphics.
-Source:
-https://en.wikipedia.org/wiki/Perlin_noise
+Source: `Perlin Noise Wikipedia <https://en.wikipedia.org/wiki/Perlin_noise>`_
 
 The development of Perlin Noise has allowed computer graphics artists
 to better represent the complexity of natural phenomena in visual
 effects for the motion picture industry.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+.. GENERATED FROM PYTHON SOURCE LINES 18-21
 
 .. code-block:: default
 
@@ -46,7 +47,7 @@ effects for the motion picture industry.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-26
+.. GENERATED FROM PYTHON SOURCE LINES 22-27
 
 Generate Perlin Noise over a StructuredGrid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,7 +55,7 @@ Feel free to change the values of ``freq`` to change the shape of
 the "mountains".  For example, lowering the frequency will make the
 terrain seem more like hills rather than mountains.
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-31
+.. GENERATED FROM PYTHON SOURCE LINES 27-32
 
 .. code-block:: default
 
@@ -70,14 +71,14 @@ terrain seem more like hills rather than mountains.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-36
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Warp by scalar
 ~~~~~~~~~~~~~~
 Here we warp by scalar to give the terrain some height based on the
 value of the Perlin noise.  This is necessary to the terrain its shape.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-53
+.. GENERATED FROM PYTHON SOURCE LINES 37-54
 
 .. code-block:: default
 
@@ -105,11 +106,11 @@ value of the Perlin noise.  This is necessary to the terrain its shape.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-55
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Show the terrain as a contour plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-73
+.. GENERATED FROM PYTHON SOURCE LINES 56-74
 
 .. code-block:: default
 
@@ -143,11 +144,11 @@ Show the terrain as a contour plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-75
+.. GENERATED FROM PYTHON SOURCE LINES 75-76
 
 Show the terrain with custom lighting and shadows
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-81
+.. GENERATED FROM PYTHON SOURCE LINES 76-82
 
 .. code-block:: default
 
@@ -172,7 +173,7 @@ Show the terrain with custom lighting and shadows
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.397 seconds)
+   **Total running time of the script:** ( 0 minutes  2.753 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:

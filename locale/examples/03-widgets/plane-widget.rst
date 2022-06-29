@@ -78,7 +78,7 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7fcb43388fa0)
+    [UnstructuredGrid (0x7fa755ed9fa0)
       N Cells:	3538080
       N Points:	3613484
       X Bounds:	9.000e+01, 1.800e+02
@@ -140,7 +140,7 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7fcb43388460)
+    [PolyData (0x7fa755ed9ac0)
       N Cells:	38880
       N Points:	39277
       X Bounds:	9.000e+01, 9.000e+01
@@ -240,13 +240,15 @@ plane and we disable the arrow to prevent its rotation.
 The vector is also forcibly disabled anytime the ``assign_to_axis`` argument
 is set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-98
+.. GENERATED FROM PYTHON SOURCE LINES 95-100
 
 .. code-block:: default
 
     p = pv.Plotter()
     p.add_mesh_slice(vol, assign_to_axis='z')
     p.show()
+
+
 
 
 
@@ -259,10 +261,46 @@ is set.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 101-105
+
+Additionally, users can modify the interaction event that triggers the
+callback functions handled by the different plane widget helpers through the
+``interaction_event`` keyword argument when available. For example,
+we can have continuous slicing by using the ``InteractionEvent`` observer.
+
+.. GENERATED FROM PYTHON SOURCE LINES 105-111
+
+.. code-block:: default
+
+    import vtk
+
+    p = pv.Plotter()
+    p.add_mesh_slice(vol, assign_to_axis='z', interaction_event=vtk.vtkCommand.InteractionEvent)
+    p.show()
+
+
+
+
+.. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_006.png
+   :alt: plane widget
+   :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_006.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 112-116
+
+And here is a screen capture of a user interacting with this continuously via
+the ``InteractionEvent`` observer:
+
+.. image:: ../../images/gifs/plane-slice-continuous.gif
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.208 seconds)
+   **Total running time of the script:** ( 0 minutes  8.633 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:

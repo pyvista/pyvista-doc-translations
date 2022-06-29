@@ -1052,6 +1052,48 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_image-fft-perlin-noise_thumb.png
+     :alt: Fast Fourier Transform with Perlin Noise
+
+     :ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/image-fft-perlin-noise
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...">
+
+.. only:: html
+
+ .. figure:: /examples/01-filter/images/thumb/sphx_glr_image-fft_thumb.png
+     :alt: Fast Fourier Transform
+
+     :ref:`sphx_glr_examples_01-filter_image-fft.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/01-filter/image-fft
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Integrate data over a surface using the pyvista.DataSetFilters.integrate_data filter.">
 
 .. only:: html
