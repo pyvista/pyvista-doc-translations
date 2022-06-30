@@ -5137,11 +5137,13 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:24
 #: ../../pyvista/doc/examples/index.rst:1083
 msgid "Fast Fourier Transform"
-msgstr ""
+msgstr "高速Fourier変換"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:26
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:26
@@ -5150,6 +5152,8 @@ msgid ""
 ":class:`pyvista.UniformGrid` using :func:`pyvista.UniformGridFilters.fft` "
 "filter."
 msgstr ""
+"この例では， :func:`pyvista.UniformGridFilters.fft` フィルターを使用して， "
+":class:`pyvista.UniformGrid` に高速フーリエ変換（FFT）を適用する方法を示しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:30
 msgid ""
@@ -5157,40 +5161,45 @@ msgid ""
 "any \"high frequency\" content by performing a `low pass filter "
 "<https://en.wikipedia.org/wiki/Low-pass_filter>`_."
 msgstr ""
+"ここでは，画像のノイズ除去を行い， `low pass filter <https://en.wikipedia.org/wiki/Low-"
+"pass_filter>`_ を実行することで \"高周波\" コンテンツを効果的に除去することで，FFTの使用方法を説明します．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:34
 msgid ""
 "This example was inspired by `Image denoising by FFT <https://scipy-"
 "lectures.org/intro/scipy/auto_examples/solutions/plot_fft_image_denoise.html>`_."
 msgstr ""
+"この例は， `Image denoising by FFT <https://scipy-"
+"lectures.org/intro/scipy/auto_examples/solutions/plot_fft_image_denoise.html>`_"
+" に触発されたものです．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:56
 msgid "Load the example Moon landing image and plot it."
-msgstr ""
+msgstr "月面着陸のサンプル画像を読み込み，プロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:104
 msgid "Apply FFT to the image"
-msgstr ""
+msgstr "画像にFFTを適用する"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:105
 msgid ""
 "FFT will be applied to the active scalars, ``'PNGImage'``, the default "
 "scalars name when loading a PNG image."
-msgstr ""
+msgstr "FFT は，アクティブなスカラー， ``'PNGImage'`` ，PNG イメージを読み込む際のデフォルトのスカラー名に適用されます．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:108
 msgid ""
 "The output from the filter is a complex array stored by the same name unless"
 " specified using ``output_scalars_name``."
-msgstr ""
+msgstr "このフィルタからの出力は， ``output_scalars_name`` で指定しない限り，同じ名前で保存された複素配列になります．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:145
 msgid "Plot the FFT of the image"
-msgstr ""
+msgstr "画像のFFTをプロットする"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:146
 msgid "Plot the absolute value of the FFT of the image."
-msgstr ""
+msgstr "画像のFFTの絶対値をプロットする．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:148
 msgid ""
@@ -5198,23 +5207,25 @@ msgid ""
 "image, where the four corners contain the low frequency content of the "
 "image, and the middle is the high frequency content of the image."
 msgstr ""
+"この画像では，事実上データの \"周波数\" "
+"を見ていることに注意してください．四隅には画像の低周波コンテンツが，中央部には画像の高周波コンテンツが含まれています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:181
 msgid "Remove the noise from the ``fft_image``"
-msgstr ""
+msgstr "``fft_image`` からノイズを除去"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:182
 msgid ""
 "Effectively, we want to remove high frequency (noisy) data from our image. "
 "First, let's reshape by the size of the image."
-msgstr ""
+msgstr "実質的には，画像から高周波(ノイズの多い)データを除去したいのです．まず，画像の大きさを整形してみましょう．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:185
 msgid ""
 "Next, perform a low pass filter by removing the middle 80% of the content of"
 " the image. Note that the high frequency content is in the middle of the "
 "array."
-msgstr ""
+msgstr "次に，画像の中間の80％の内容を除去するローパスフィルタを実行します．高周波のコンテンツが配列の真ん中にあることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:189
 msgid ""
@@ -5222,39 +5233,44 @@ msgid ""
 ":func:`pyvista.UniformGridFilters.low_pass` filter. This section is here for"
 " demonstration purposes."
 msgstr ""
+"既存の :func:`pyvista.UniformGridFilters.low_pass` "
+"フィルタを使用する方が簡単で効率的です．このセクションは，デモンストレーションのためにあります．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:230
 msgid "Convert to the spatial domain using reverse FFT"
-msgstr ""
+msgstr "逆FFTによる空間領域への変換"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:231
 msgid ""
 "Finally, convert the image data back to the \"spatial\" domain and plot it."
-msgstr ""
+msgstr "最後に，画像データを \"空間\" 領域に戻し，プロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:257
 msgid "**Total running time of the script:** ( 0 minutes  4.626 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  4.626 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:272
 msgid ":download:`Download Python source code: image-fft.py <image-fft.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: image-fft.py <image-fft.py>`"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:278
 msgid ""
 ":download:`Download Jupyter notebook: image-fft.ipynb <image-fft.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: image-fft.ipynb <image-fft.ipynb>`"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:13
 msgid ""
 "Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft-perlin-"
 "noise.py>` to download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft-perlin-"
+"noise.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:24
 #: ../../pyvista/doc/examples/index.rst:1062
 msgid "Fast Fourier Transform with Perlin Noise"
-msgstr ""
+msgstr "Perlinノイズによる高速フーリエ変換"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:30
 msgid ""
@@ -5264,10 +5280,14 @@ msgid ""
 " and then performing FFT of the sampled noise to show the frequency content "
 "of that noise."
 msgstr ""
+"ここでは，まず :func:`pyvista.sample_function() "
+"<pyvista.core.imaging.sample_function>` を使って Perlin ノイズを生成して "
+":func:`pyvista.perlin_noise <pyvista.core.common_data.perlin_noise>` "
+"をサンプリングし，そのノイズの周波数コンテンツを示すためにサンプルしたノイズを FFT して FFT 使用法を実演しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:55
 msgid "Generate Perlin Noise"
-msgstr ""
+msgstr "Perlinノイズの生成"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:56
 msgid ""
@@ -5275,37 +5295,39 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Perlin_noise>`_ as in "
 ":ref:`perlin_noise_2d_example` example."
 msgstr ""
+"まず， :ref:`perlin_noise_2d_example` の例のように `Perlin Noise "
+"<https://en.wikipedia.org/wiki/Perlin_noise>`_ を生成します．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:60
 msgid ""
 "Note that we are generating it in a flat plane and using a frequency of 10 "
 "in the x direction and 5 in the y direction. The unit of frequency is "
 "``1/pixel``."
-msgstr ""
+msgstr "なお，ここでは平面で生成し，x方向に10，y方向に5の周波数を使用しています．周波数の単位は ``1/pixel`` です．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:64
 msgid ""
 "Also note that the dimensions of the image are powers of 2. This is because "
 "the FFT is much more efficient for arrays sized as a power of 2."
-msgstr ""
+msgstr "これは，FFTが2のべき乗の大きさの配列に対してより効率的であるためです．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:97
 msgid "Perform FFT of Perlin Noise"
-msgstr ""
+msgstr "PerlinノイズのFFTを実行する"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:98
 msgid ""
 "Next, perform an FFT of the noise and plot the frequency content. For the "
 "sake of simplicity, we will only plot the content in the first quadrant."
-msgstr ""
+msgstr "次に，ノイズのFFTを行い，その周波数成分をプロットします．簡単のため，第1象限のみの内容をプロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:102
 msgid "Note the usage of :func:`numpy.fft.fftfreq` to get the frequencies."
-msgstr ""
+msgstr "周波数を得るために :func:`numpy.fft.fftfreq` を使っていることに注意してください．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:127
 msgid "Plot the Frequency Domain"
-msgstr ""
+msgstr "周波数領域をプロットする"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:128
 msgid ""
@@ -5313,16 +5335,18 @@ msgid ""
 "frequency content in the x direction and this matches the frequencies given "
 "to :func:`pyvista.perlin_noise <pyvista.core.common_data.perlin_noise>`."
 msgstr ""
+"さて，ノイズを周波数領域でプロットしてみましょう．これは :func:`pyvista.perlin_noise "
+"<pyvista.core.common_data.perlin_noise>` で指定した周波数と一致しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:171
 msgid "Low Pass Filter"
-msgstr ""
+msgstr "ローパスフィルタ"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:172
 msgid ""
 "Let's perform a low pass filter on the frequency content and then convert it"
 " back into the space (pixel) domain by immediately applying a reverse FFT."
-msgstr ""
+msgstr "周波数成分に対してローパスフィルターをかけ，すぐに逆FFTをかけて空間(ピクセル)領域に変換してみましょう．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:175
 msgid ""
@@ -5330,50 +5354,51 @@ msgid ""
 "no physical meaning in the physical domain. PyVista will drop the imaginary "
 "content, but will warn you of it."
 msgstr ""
+"逆変換する場合は，実部のみを残します．虚部は，物理的な領域では何の意味も持ちません．PyVistaは虚部を削除しますが，その旨の警告を表示します．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:179
 msgid "As expected, we only see low frequency noise."
-msgstr ""
+msgstr "予想通り，低周波のノイズしか見られません．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:207
 msgid "High Pass Filter"
-msgstr ""
+msgstr "ハイパスフィルター"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:208
 msgid ""
 "This time, let's perform a high pass filter on the frequency content and "
 "then convert it back into the space (pixel) domain by immediately applying a"
 " reverse FFT."
-msgstr ""
+msgstr "今回は，周波数成分に対してハイパスフィルターをかけ，すぐに逆FFTをかけて空間(ピクセル)領域に変換してみましょう．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:212
 msgid ""
 "When converting back, keep only the real content. The imaginary content has "
 "no physical meaning in the pixel domain."
-msgstr ""
+msgstr "逆変換する場合は，実部のみを残します．虚部は，ピクセル領域では何の意味も持ちません．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:215
 msgid ""
 "As expected, we only see the high frequency noise content as the low "
 "frequency noise has been attenuated."
-msgstr ""
+msgstr "予想通り，低周波のノイズが減衰しているため，高周波のノイズ成分しか見えません．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:244
 msgid "Sum Low and High Pass"
-msgstr ""
+msgstr "ローパスとハイパスの和"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:245
 msgid ""
 "Show that the sum of the low and high passes equals the original noise."
-msgstr ""
+msgstr "ローパスとハイパスの和が元のノイズと等しいことを示します．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:291
 msgid "Animate"
-msgstr ""
+msgstr "アニメート"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:292
 msgid "Animate the variation of the cutoff frequency."
-msgstr ""
+msgstr "カットオフ周波数の変化をアニメーションで表現します．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:356
 msgid ""
@@ -5383,6 +5408,7 @@ msgid ""
 "proportion of the full noise sample. This is why the mesh starts \"flat\" "
 "and grows larger as the frequency cutoff is increased."
 msgstr ""
+"上のアニメーションの左側のメッシュは，FFT振幅の生の値に基づいてワープしています．これは，アニメーションが進むにつれて，より多くの周波数を考慮することで，完全なノイズサンプルの割合が徐々に大きくなっていくことを強調しています．このため，メッシュは「平坦」に始まり，周波数のカットオフが大きくなるにつれて大きくなっていきます．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:362
 msgid ""
@@ -5392,22 +5418,27 @@ msgid ""
 "frequency cutoff is increased since wavelength and frequency are inversely "
 "proportional."
 msgstr ""
+"一方，右側のメッシュは，カットオフ周波数に関係なく，常に同じ目に見える高さに反っています．これは，波長と周波数が反比例するため，カットオフ周波数を上げるとパーリンノイズの典型的な波長（特徴の大きさ）が減少することを強調しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:371
 msgid "**Total running time of the script:** ( 1 minutes  2.737 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 1 minutes  2.737 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:386
 msgid ""
 ":download:`Download Python source code: image-fft-perlin-noise.py <image-"
 "fft-perlin-noise.py>`"
 msgstr ""
+":download:`Download Python source code: image-fft-perlin-noise.py <image-"
+"fft-perlin-noise.py>`"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:392
 msgid ""
 ":download:`Download Jupyter notebook: image-fft-perlin-noise.ipynb <image-"
 "fft-perlin-noise.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: image-fft-perlin-noise.ipynb <image-"
+"fft-perlin-noise.ipynb>`"
 
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:13
 msgid ""
@@ -6058,6 +6089,8 @@ msgid ""
 " to increase the appearance of realism in computer graphics. Source: `Perlin"
 " Noise Wikipedia <https://en.wikipedia.org/wiki/Perlin_noise>`_"
 msgstr ""
+"Perlinノイズはグラデーションノイズの一種で，コンピュータグラフィックスのリアルな外観を向上させるために，ビジュアルエフェクトアーティストによってよく使用されます．ソース:"
+" `Perlin Noise Wikipedia <https://en.wikipedia.org/wiki/Perlin_noise>`_"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_2d.rst:32
 msgid ""
@@ -6099,7 +6132,7 @@ msgstr "カスタムのライトとシャドウを使用して地表を表示す
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_2d.rst:176
 msgid "**Total running time of the script:** ( 0 minutes  2.753 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.753 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_2d.rst:191
 msgid ""
@@ -6226,25 +6259,27 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**01:10.116** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**01:10.116** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
 "perlin-noise.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
+"perlin-noise.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "01:02.737"
-msgstr ""
+msgstr "01:02.737"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid "00:04.626"
-msgstr ""
+msgstr "00:04.626"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid ""
@@ -6256,7 +6291,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid "00:02.753"
-msgstr ""
+msgstr "00:02.753"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:17
 msgid ""
@@ -10772,7 +10807,7 @@ msgid ""
 ":func:`pyvista.UniformGridFilters.extract_subset` filter."
 msgstr ""
 "これはまた :func:`pyvista.UniformGridFilters.extract_subset` フィルタを使用して "
-":class:`pyvista.UniformGrid` から関心領域 (VOI) を抽出する方法を探求する．"
+":class:`pyvista.UniformGrid` から関心領域 (VOI) を抽出する方法を探求します．"
 
 #: ../../pyvista/doc/examples/02-plot/volume.rst:50
 msgid ""
@@ -11253,16 +11288,20 @@ msgid ""
 " ``interaction_event`` keyword argument when available. For example, we can "
 "have continuous slicing by using the ``InteractionEvent`` observer."
 msgstr ""
+"さらに，ユーザは ``interaction_event`` "
+"キーワード引数を通して，利用可能な場合，異なるプレーンウィジェットヘルパーが処理するコールバック関数をトリガーするインタラクションイベントを変更することができます．例えば，"
+" ``InteractionEvent`` オブザーバを使用することで，連続的なスライスを行うことができます．"
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:295
 msgid ""
 "And here is a screen capture of a user interacting with this continuously "
 "via the ``InteractionEvent`` observer:"
 msgstr ""
+"そして，これは ``InteractionEvent`` オブザーバを介して，ユーザーが継続的にこのイベントを操作している画面のキャプチャです．"
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:303
 msgid "**Total running time of the script:** ( 0 minutes  8.633 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  8.633 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/plane-widget.rst:318
 msgid ""
@@ -11280,7 +11319,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:8
 msgid "**00:08.633** total execution time for **examples_03-widgets** files:"
-msgstr ""
+msgstr "**00:08.633** total execution time for **examples_03-widgets** files:"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid ""
@@ -11290,7 +11329,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid "00:08.633"
-msgstr ""
+msgstr "00:08.633"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
@@ -13677,14 +13716,16 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how to "
 "apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how to "
+"apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...\">"
 
 #: ../../pyvista/doc/examples/index.rst:1062
 msgid ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py`"
 
 #: ../../pyvista/doc/examples/index.rst:1083
 msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_01-filter_image-fft.py`"
 
 #: ../../pyvista/doc/examples/index.rst:1095
 msgid ""
