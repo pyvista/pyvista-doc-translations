@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 01:06+0000\n"
+"POT-Creation-Date: 2022-07-04 01:08+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -737,10 +737,9 @@ msgid ""
 "that is also reflected on PyPI/. Hotfixes from ``fix/`` branches should be "
 "merged both to main and to these branches. When necessary to create a new "
 "patch release these release branches will have their ``pyvista/_version.py``"
-" updated and be tagged with a patched semantic version (e.g. ``0.24.1``). "
-"This triggers CI to push to PyPI, and allow us to rapidly push hotfixes for "
-"past versions of ``pyvista`` without having to worry about untested "
-"features."
+" updated and be tagged with a semantic version (e.g. ``v0.24.1``). This "
+"triggers CI to push to PyPI, and allow us to rapidly push hotfixes for past "
+"versions of ``pyvista`` without having to worry about untested features."
 msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:423
@@ -748,7 +747,7 @@ msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version "
 "(e.g. ``release/0.25``), which will be thoroughly tested. When deemed "
-"stable, the release branch will be tagged with the version (``0.25.0`` in "
+"stable, the release branch will be tagged with the version (``v0.25.0`` in "
 "this case), and if necessary merged with main if any changes were pushed to "
 "it. Feature development then continues on ``main`` and any hotfixes will now"
 " be merged with this release. Older release branches should not be deleted "
@@ -793,13 +792,13 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:460
 msgid ""
-"Update the version numbers in ``pyvista/_version.py`` and commit it. Push "
-"the branch to GitHub and create a new PR for this release that merges it to "
-"main. Development to main should be limited at this point while effort is "
-"focused on the release."
+"Update the development version numbers in ``pyvista/_version.py`` and commit"
+" it (e.g. ``0, 26, 'dev0'``). Push the branch to GitHub and create a new PR "
+"for this release that merges it to main. Development to main should be "
+"limited at this point while effort is focused on the release."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:465
+#: ../../pyvista/CONTRIBUTING.rst:466
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -807,15 +806,16 @@ msgid ""
 " release branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:470
+#: ../../pyvista/CONTRIBUTING.rst:471
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
-"merged to main and the ``main`` branch will be tagged with a "
-"``MAJOR.MINOR.0`` release. The release branch will not be deleted. Tag the "
+"merged to main. After update the version number in ``release/MAJOR.MINOR`` "
+"branch, the ``release/MAJOR.MINOR`` branch will be tagged with a "
+"``vMAJOR.MINOR.0`` release. The release branch will not be deleted. Tag the "
 "release with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:480
+#: ../../pyvista/CONTRIBUTING.rst:482
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -825,13 +825,13 @@ msgid ""
 "if a specific contributor is to thank for a new feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:488
+#: ../../pyvista/CONTRIBUTING.rst:490
 msgid ""
 "Place your release notes from step 8 in the description for `the new release"
 " on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:492
+#: ../../pyvista/CONTRIBUTING.rst:494
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro-cf-autotick-bot>`_ to open a pull request on the "
@@ -839,35 +839,35 @@ msgid ""
 "feedstock>`_. Merge that pull request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:498
+#: ../../pyvista/CONTRIBUTING.rst:500
 msgid "Announce the new release in the PyVista Slack workspace and celebrate!"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:502
+#: ../../pyvista/CONTRIBUTING.rst:504
 msgid "Patch Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:504
+#: ../../pyvista/CONTRIBUTING.rst:506
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:507
+#: ../../pyvista/CONTRIBUTING.rst:509
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:510
+#: ../../pyvista/CONTRIBUTING.rst:512
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (e.g. "
-"``0.25.1``), commit it, and open a PR that merge with the release branch. "
+"``v0.25.1``), commit it, and open a PR that merge with the release branch. "
 "This gives the ``pyvista`` community a chance to validate and approve the "
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:516
+#: ../../pyvista/CONTRIBUTING.rst:518
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -875,7 +875,7 @@ msgid ""
 "the correct steps)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:521
+#: ../../pyvista/CONTRIBUTING.rst:523
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
