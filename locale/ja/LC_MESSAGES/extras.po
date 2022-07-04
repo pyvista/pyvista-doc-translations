@@ -869,6 +869,12 @@ msgid ""
 "triggers CI to push to PyPI, and allow us to rapidly push hotfixes for past "
 "versions of ``pyvista`` without having to worry about untested features."
 msgstr ""
+"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
+"にも反映される安定版のコードベースが含まれています． ``fix/`` "
+"ブランチの修正パッチは，mainブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
+" ``pyvista/_version.py`` が更新され，セマンティックバージョン(例えば ``v0.24.1`` "
+")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
+"のホットフィックスを迅速にプッシュすることができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:423
 msgid ""
@@ -881,6 +887,11 @@ msgid ""
 " be merged with this release. Older release branches should not be deleted "
 "so they can be patched as needed."
 msgstr ""
+"マイナーリリース候補が準備できたら， ``main`` から新しい ``release`` ブランチが作成され，次のマイナーバージョン(例えば  "
+"``release/0.25`` "
+")がインクリメントされ，徹底的にテストされます．安定していると判断された場合，リリースブランチにはバージョン(この場合の ``v0.25.0`` "
+")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
+"で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:434
 msgid "Minor Release Steps"
@@ -932,6 +943,8 @@ msgid ""
 "for this release that merges it to main. Development to main should be "
 "limited at this point while effort is focused on the release."
 msgstr ""
+"``pyvista/_version.py`` の開発バージョン番号を更新し，コミットします(例: ``0, 26, "
+"'dev0'``)．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
 #: ../../pyvista/CONTRIBUTING.rst:466
 msgid ""
@@ -951,6 +964,9 @@ msgid ""
 "``vMAJOR.MINOR.0`` release. The release branch will not be deleted. Tag the "
 "release with:"
 msgstr ""
+"このブランチが安定版として一般公開されると，PR は main にマージされます． ``release/MAJOR.MINOR`` "
+"ブランチのバージョン番号を更新した後， ``release/MAJOR.MINOR`` ブランチは ``vMAJOR.MINOR.0`` "
+"リリースというタグが付けられます．リリースブランチは削除されません．次のようにリリースにタグを付けます:"
 
 #: ../../pyvista/CONTRIBUTING.rst:482
 msgid ""
@@ -1013,6 +1029,9 @@ msgid ""
 "This gives the ``pyvista`` community a chance to validate and approve the "
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
+"次のパッチ増分で ``pyvista/_version.py`` を更新し(例: ``v0.25.1`` "
+")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
+"コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
 #: ../../pyvista/CONTRIBUTING.rst:518
 msgid ""
