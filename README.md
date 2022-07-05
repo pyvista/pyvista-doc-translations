@@ -39,11 +39,3 @@ After that, you should commit updated po files.
 1. update po files
 
 1. commit them
-
-1. add new project on Read The Docs like:
-
-   https://readthedocs.org/projects/pyvista-doc-ja/
-
-1. add translation project to parent project like:
-
-   https://readthedocs.org/dashboard/pyvista-doc/translations/
