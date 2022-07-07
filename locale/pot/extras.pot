@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.35.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 01:08+0000\n"
+"POT-Creation-Date: 2022-07-07 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -689,15 +689,11 @@ msgid "Sphinx PyVista Plot Directive"
 msgstr ""
 
 #: ../../pyvista/doc/extras/plot_directive.rst:5
-msgid "You can generate static images of pyvista plots using the ``.. pyvista-plot`` directive by adding the following to your ``conf.py`` when building your documentation using Sphinx."
+msgid "You can generate static images of pyvista plots using the ``.. pyvista-plot::`` directive by adding the following to your ``conf.py`` when building your documentation using Sphinx."
 msgstr ""
 
 #: ../../pyvista/doc/extras/plot_directive.rst:16
-msgid "You can then issue the plotting directive within your sphinx documentation files:"
-msgstr ""
-
-#: ../../pyvista/doc/extras/plot_directive.rst:14
-msgid "A sphere"
+msgid "You can then issue the plotting directive within your sphinx documentation files::"
 msgstr ""
 
 #: ../../pyvista/doc/extras/plot_directive.rst:27
@@ -717,7 +713,7 @@ msgid "A directive for including a PyVista plot in a Sphinx document"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:6
-msgid "The `.. pyvista-plot::` sphinx directive will include an inline ``.png`` image."
+msgid "The ``.. pyvista-plot::`` sphinx directive will include an inline ``.png`` image."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:9
@@ -762,6 +758,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
 msgid "bool"
 msgstr ""
 
@@ -773,6 +771,10 @@ msgstr ""
 msgid "encoding"
 msgstr ""
 
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:None
 msgid "str"
@@ -827,7 +829,7 @@ msgid "plot_include_source"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:79
-msgid "Default value for the include-source option."
+msgid "Default value for the include-source option. Default is ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:84
@@ -835,7 +837,7 @@ msgid "plot_basedir"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:82
-msgid "Base directory, to which ``plot::`` file names are relative to.  (If ``None`` or empty, file names are relative to the directory where the file containing the directive is.)"
+msgid "Base directory, to which ``plot::`` file names are relative to.  If ``None`` or unset, file names are relative to the directory where the file containing the directive is."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:87
@@ -843,7 +845,7 @@ msgid "plot_html_show_formats"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:87
-msgid "Whether to show links to the files in HTML."
+msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:90
@@ -851,7 +853,27 @@ msgid "plot_template"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:90
-msgid "Provide a customized template for preparing restructured text."
+msgid "Provide a customized Jinja2 template for preparing restructured text."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:93
+msgid "plot_setup"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:93
+msgid "Python code to be run before every plot directive block."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:96
+msgid "plot_cleanup"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:96
+msgid "Python code to be run after every plot directive block."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.py:docstring of pyvista.ext.plot_directive:98
+msgid "These options can be set by defining global variables of the same name in :file:`conf.py`."
 msgstr ""
 
 #: ../../pyvista/doc/extras/pyinstaller.rst:4
