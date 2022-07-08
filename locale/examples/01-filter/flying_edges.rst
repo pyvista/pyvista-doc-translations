@@ -81,7 +81,7 @@ generated from the spider cage function.
 
     # sample and plot
     values = spider_cage(x, y, z)
-    mesh = grid.contour(1, values, method='marching_cubes', rng=[1, 0])
+    mesh = grid.contour([1], values, method='marching_cubes')
     dist = np.linalg.norm(mesh.points, axis=1)
     mesh.plot(scalars=dist, smooth_shading=True, specular=5, cmap="plasma", show_scalar_bar=False)
 
@@ -141,7 +141,7 @@ generated from the Barth sextic function.
 
     # sample and plot
     values = barth_sextic(x, y, z)
-    mesh = grid.contour(1, values, method='flying_edges', rng=[-0.0, 0])
+    mesh = grid.contour([0], values, method='flying_edges')
     dist = np.linalg.norm(mesh.points, axis=1)
     mesh.plot(scalars=dist, smooth_shading=True, specular=5, cmap="plasma", show_scalar_bar=False)
 
@@ -175,7 +175,7 @@ function.
         return -2 * np.sin(angle)
 
 
-    mesh = grid.contour(1, values, method='flying_edges', rng=[angle_to_range(0), 0])
+    mesh = grid.contour([angle_to_range(0)], values, method='flying_edges')
     dist = np.linalg.norm(mesh.points, axis=1)
 
     pl = pv.Plotter()
@@ -191,7 +191,7 @@ function.
     pl.open_gif('barth_sextic.gif')
 
     for angle in np.linspace(0, np.pi, 15)[:-1]:
-        new_mesh = grid.contour(1, values, method='flying_edges', rng=[angle_to_range(angle), 0])
+        new_mesh = grid.contour([angle_to_range(angle)], values, method='flying_edges')
         mesh.overwrite(new_mesh)
         pl.update_scalars(np.linalg.norm(new_mesh.points, axis=1), render=False)
         pl.write_frame()
@@ -212,7 +212,7 @@ function.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.701 seconds)
+   **Total running time of the script:** ( 0 minutes  5.700 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_flying_edges.py:
