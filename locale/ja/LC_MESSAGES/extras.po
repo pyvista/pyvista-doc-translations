@@ -1253,12 +1253,14 @@ msgid ""
 "plot::`` directive by adding the following to your ``conf.py`` when building"
 " your documentation using Sphinx."
 msgstr ""
+"Sphinxを使ってドキュメントを作成する際に，以下の内容を ``conf.py`` に追加することで， ``.. pyvista-plot::`` "
+"ディレクティブを使用して，pyvistaのプロットの静的なイメージを生成することができます．"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:16
 msgid ""
 "You can then issue the plotting directive within your sphinx documentation "
 "files::"
-msgstr ""
+msgstr "そうすれば，sphinxのドキュメントファイルの中で，plottingディレクティブを発行することができます::"
 
 #: ../../pyvista/doc/extras/plot_directive.rst:27
 msgid "Which will be rendered as:"
@@ -1283,7 +1285,7 @@ msgstr "SphinxドキュメントにPyVistaプロットを含めるためのデ�
 msgid ""
 "The ``.. pyvista-plot::`` sphinx directive will include an inline ``.png`` "
 "image."
-msgstr ""
+msgstr "``.. pyvista-plot::`` ディレクティブは，インラインの ``.png`` イメージを含みます．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:9
@@ -1467,7 +1469,7 @@ msgstr "plot_include_source"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:79
 msgid "Default value for the include-source option. Default is ``True``."
-msgstr ""
+msgstr "include-sourceオプションのデフォルト値．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:84
@@ -1481,6 +1483,8 @@ msgid ""
 " or unset, file names are relative to the directory where the file "
 "containing the directive is."
 msgstr ""
+"ベースとなるディレクトリで， ``plot::`` のファイル名の相対パスを指定します．  ``None`` "
+"または未設定の場合には，ファイル名はそのディレクティブを含むファイルがあるディレクトリに相対します．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:87
@@ -1490,7 +1494,7 @@ msgstr "plot_html_show_formats"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:87
 msgid "Whether to show links to the files in HTML. Default ``True``."
-msgstr ""
+msgstr "ファイルへのリンクをHTMLで表示するかどうか．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:90
@@ -1500,34 +1504,34 @@ msgstr "plot_template"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:90
 msgid "Provide a customized Jinja2 template for preparing restructured text."
-msgstr ""
+msgstr "再構成されたテキストを作成するためのカスタマイズされた Jinja2 テンプレートを提供します．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:93
 msgid "plot_setup"
-msgstr ""
+msgstr "plot_setup"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:93
 msgid "Python code to be run before every plot directive block."
-msgstr ""
+msgstr "各プロットディレクティブブロックの前に実行されるPythonコード．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:96
 msgid "plot_cleanup"
-msgstr ""
+msgstr "plot_cleanup"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:96
 msgid "Python code to be run after every plot directive block."
-msgstr ""
+msgstr "各プロットディレクティブブロックの後に実行されるPythonコード．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:98
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
-msgstr ""
+msgstr "これらのオプションは， :file:`conf.py` で同名のグローバル変数を定義することで設定できます．"
 
 #: ../../pyvista/doc/extras/pyinstaller.rst:4
 msgid "Freezing PyVista with pyinstaller"
