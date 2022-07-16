@@ -1940,6 +1940,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated GIF by generating glyphs using pyvista.DataSet.glyph using pyvista.Sphere.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_movie_glyphs_thumb.png
+     :alt: Save a Movie Using Glyphs
+
+     :ref:`sphx_glr_examples_02-plot_movie_glyphs.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/movie_glyphs
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a GIF Movie of a Static Object with a Moving Colormap">
 
 .. only:: html
