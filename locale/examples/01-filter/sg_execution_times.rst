@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:05.700** total execution time for **examples_01-filter** files:
+**00:12.756** total execution time for **examples_01-filter** files:
 
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)                                 | 00:05.700 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)                                 | 00:12.756 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-operations.py``)                     | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
