@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.36.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-18 01:16+0000\n"
+"POT-Creation-Date: 2022-07-31 01:03+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Spanish (https://www.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/glyphs.rst:222
 #: ../../pyvista/doc/examples/01-filter/glyphs_table.rst:141
 #: ../../pyvista/doc/examples/01-filter/gradients.rst:351
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:285
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:287
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:399
 #: ../../pyvista/doc/examples/01-filter/integrate-data.rst:314
 #: ../../pyvista/doc/examples/01-filter/interpolate.rst:259
@@ -4339,48 +4339,48 @@ msgid ""
 "image, and the middle is the high frequency content of the image."
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:181
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:182
 msgid "Remove the noise from the ``fft_image``"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:182
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:183
 msgid ""
 "Effectively, we want to remove high frequency (noisy) data from our image. "
 "First, let's reshape by the size of the image."
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:185
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:186
 msgid ""
 "Next, perform a low pass filter by removing the middle 80% of the content of"
 " the image. Note that the high frequency content is in the middle of the "
 "array."
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:189
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:190
 msgid ""
 "It is easier and more efficient to use the existing "
 ":func:`pyvista.UniformGridFilters.low_pass` filter. This section is here for"
 " demonstration purposes."
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:230
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:232
 msgid "Convert to the spatial domain using reverse FFT"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:231
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:233
 msgid ""
 "Finally, convert the image data back to the \"spatial\" domain and plot it."
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:257
-msgid "**Total running time of the script:** ( 0 minutes  4.626 seconds)"
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:259
+msgid "**Total running time of the script:** ( 0 minutes  5.586 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:272
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:274
 msgid ":download:`Download Python source code: image-fft.py <image-fft.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/image-fft.rst:278
+#: ../../pyvista/doc/examples/01-filter/image-fft.rst:280
 msgid ""
 ":download:`Download Jupyter notebook: image-fft.ipynb <image-fft.ipynb>`"
 msgstr ""
@@ -5233,16 +5233,15 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
-msgid "**00:12.756** total execution time for **examples_01-filter** files:"
+msgid "**00:05.586** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
-msgid ""
-":ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)"
+msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
-msgid "00:12.756"
+msgid "00:05.586"
 msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
@@ -5329,35 +5328,36 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:45
 msgid ""
+":ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:47
+msgid ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:47
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:49
 msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:49
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:51
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:51
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:53
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:53
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:55
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:55
+#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:57
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
 "perlin-noise.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:57
-msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:59

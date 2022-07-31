@@ -149,7 +149,7 @@ Note that we are effectively viewing the "frequency" of the data in this
 image, where the four corners contain the low frequency content of the image,
 and the middle is the high frequency content of the image.
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-70
+.. GENERATED FROM PYTHON SOURCE LINES 60-71
 
 .. code-block:: default
 
@@ -160,6 +160,7 @@ and the middle is the high frequency content of the image.
         theme=grey_theme,
         log_scale=True,
         text='Moon Landing Image FFT',
+        copy_mesh=True,  # don't overwrite scalars when plotting
     )
 
 
@@ -175,7 +176,7 @@ and the middle is the high frequency content of the image.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-83
+.. GENERATED FROM PYTHON SOURCE LINES 72-84
 
 Remove the noise from the ``fft_image``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,7 +191,7 @@ the image. Note that the high frequency content is in the middle of the array.
    :func:`pyvista.UniformGridFilters.low_pass` filter. This section is here
    for demonstration purposes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-101
+.. GENERATED FROM PYTHON SOURCE LINES 84-103
 
 .. code-block:: default
 
@@ -209,6 +210,7 @@ the image. Note that the high frequency content is in the middle of the array.
         theme=grey_theme,
         log_scale=True,
         text='Moon Landing Image FFT with Noise Removed',
+        copy_mesh=True,  # don't overwrite scalars when plotting
     )
 
 
@@ -224,13 +226,13 @@ the image. Note that the high frequency content is in the middle of the array.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-105
+.. GENERATED FROM PYTHON SOURCE LINES 104-107
 
 Convert to the spatial domain using reverse FFT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finally, convert the image data back to the "spatial" domain and plot it.
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-110
+.. GENERATED FROM PYTHON SOURCE LINES 107-112
 
 .. code-block:: default
 
@@ -254,7 +256,7 @@ Finally, convert the image data back to the "spatial" domain and plot it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.626 seconds)
+   **Total running time of the script:** ( 0 minutes  5.586 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft.py:
