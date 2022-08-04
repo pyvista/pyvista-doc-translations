@@ -2129,6 +2129,27 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to add point scalars for each individual cell to a dataset.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_point-cell-scalars_thumb.png
+     :alt: Point Cell Scalars
+
+     :ref:`sphx_glr_examples_02-plot_point-cell-scalars.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/point-cell-scalars
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Picking points on a mesh">
 
 .. only:: html
