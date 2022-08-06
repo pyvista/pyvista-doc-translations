@@ -230,7 +230,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices using pyvista.Spline.">
 
 .. only:: html
 
@@ -1664,6 +1664,27 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/depth-peeling
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Create a spline and generate labels along the spline based on distance along a spline.">
+
+.. only:: html
+
+ .. figure:: /examples/02-plot/images/thumb/sphx_glr_distance-along-spline_thumb.png
+     :alt: Label based on Distance on Line
+
+     :ref:`sphx_glr_examples_02-plot_distance-along-spline.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/02-plot/distance-along-spline
 
 .. raw:: html
 

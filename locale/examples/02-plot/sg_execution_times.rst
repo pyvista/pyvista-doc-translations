@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:01.653** total execution time for **examples_02-plot** files:
+**00:00.595** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_point-cell-scalars.py` (``point-cell-scalars.py``)         | 00:01.653 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_distance-along-spline.py` (``distance-along-spline.py``)   | 00:00.595 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_background_image.py` (``background_image.py``)             | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
@@ -67,6 +67,8 @@ Computation times
 | :ref:`sphx_glr_examples_02-plot_plot-over-circular-arc.py` (``plot-over-circular-arc.py``) | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_plot-over-line.py` (``plot-over-line.py``)                 | 00:00.000 | 0.0 MB |
++--------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_02-plot_point-cell-scalars.py` (``point-cell-scalars.py``)         | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_point-picking.py` (``point-picking.py``)                   | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+

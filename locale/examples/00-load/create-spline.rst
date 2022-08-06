@@ -18,14 +18,15 @@
 .. _sphx_glr_examples_00-load_create-spline.py:
 
 
-.. _ref_create_spline:
+.. _create_spline_example:
 
 Creating a Spline
 ~~~~~~~~~~~~~~~~~
 
-Create a spline/polyline from a numpy array of XYZ vertices
+Create a spline/polyline from a numpy array of XYZ vertices using
+:func:`pyvista.Spline`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
@@ -41,11 +42,11 @@ Create a spline/polyline from a numpy array of XYZ vertices
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-17
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 Create a dataset to plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-32
+.. GENERATED FROM PYTHON SOURCE LINES 18-33
 
 .. code-block:: default
 
@@ -83,13 +84,13 @@ Create a dataset to plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-36
+.. GENERATED FROM PYTHON SOURCE LINES 34-37
 
 Now let's make a function that can create line cells on a
 :class:`pyvista.PolyData` mesh given that the points are in order for the
 segments they make.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-52
+.. GENERATED FROM PYTHON SOURCE LINES 37-53
 
 .. code-block:: default
 
@@ -133,7 +134,7 @@ segments they make.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-58
+.. GENERATED FROM PYTHON SOURCE LINES 54-59
 
 .. code-block:: default
 
@@ -154,12 +155,12 @@ segments they make.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-61
+.. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 That tube has sharp edges at each line segment. This can be mitigated by
 creating a single PolyLine cell for all of the points
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-78
+.. GENERATED FROM PYTHON SOURCE LINES 62-79
 
 .. code-block:: default
 
@@ -192,11 +193,11 @@ creating a single PolyLine cell for all of the points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-80
+.. GENERATED FROM PYTHON SOURCE LINES 80-81
 
 You could also interpolate those points onto a parametric spline
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-84
+.. GENERATED FROM PYTHON SOURCE LINES 81-85
 
 .. code-block:: default
 
@@ -211,11 +212,11 @@ You could also interpolate those points onto a parametric spline
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-86
+.. GENERATED FROM PYTHON SOURCE LINES 86-87
 
 Plot spline as a tube
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-92
+.. GENERATED FROM PYTHON SOURCE LINES 87-93
 
 .. code-block:: default
 
@@ -237,11 +238,11 @@ Plot spline as a tube
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-94
+.. GENERATED FROM PYTHON SOURCE LINES 94-95
 
 The spline can also be plotted as a plain line
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-102
+.. GENERATED FROM PYTHON SOURCE LINES 95-103
 
 .. code-block:: default
 
@@ -265,7 +266,7 @@ The spline can also be plotted as a plain line
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-108
+.. GENERATED FROM PYTHON SOURCE LINES 104-109
 
 Ribbons
 +++++++
@@ -273,7 +274,7 @@ Ribbons
 Ayy of the lines from the examples above can be used to create ribbons.
 Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-111
+.. GENERATED FROM PYTHON SOURCE LINES 109-112
 
 .. code-block:: default
 
@@ -295,7 +296,7 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.928 seconds)
+   **Total running time of the script:** ( 0 minutes  2.030 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:
