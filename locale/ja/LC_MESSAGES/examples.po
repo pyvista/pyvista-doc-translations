@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-06 01:04+0000\n"
+"POT-Creation-Date: 2022-08-07 01:11+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -78,7 +78,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:302
 #: ../../pyvista/doc/examples/00-load/create-truss.rst:172
 #: ../../pyvista/doc/examples/00-load/create-uniform-grid.rst:168
-#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:310
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:409
 #: ../../pyvista/doc/examples/00-load/load-gltf.rst:140
 #: ../../pyvista/doc/examples/00-load/load-vrml.rst:102
 #: ../../pyvista/doc/examples/00-load/read-dolfin.rst:172
@@ -252,7 +252,7 @@ msgstr "ジオメトリオブジェクトを作成する"
 #: ../../pyvista/doc/examples/00-load/create-truss.rst:91
 #: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:125
 #: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:226
-#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:269
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:271
 #: ../../pyvista/doc/examples/00-load/read-dolfin.rst:63
 #: ../../pyvista/doc/examples/00-load/read-dolfin.rst:130
 #: ../../pyvista/doc/examples/00-load/read-file.rst:72
@@ -1007,7 +1007,7 @@ msgstr "スプラインの作成"
 msgid ""
 "Create a spline/polyline from a numpy array of XYZ vertices using "
 ":func:`pyvista.Spline`."
-msgstr ""
+msgstr ":func:`pyvista.Spline` を使用してXYZ頂点の数の多い配列からスプライン/ポリラインを作成します"
 
 #: ../../pyvista/doc/examples/00-load/create-spline.rst:89
 msgid ""
@@ -1627,11 +1627,25 @@ msgstr "次の例でも，6面体セルを含み，セル間の共通点を使�
 msgid "Finally, create the unstructured grid and plot it"
 msgstr "最後に，非構造化グリッドを作成してプロットします．"
 
-#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:282
-msgid "**Total running time of the script:** ( 0 minutes  0.875 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  0.875 seconds)"
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:284
+msgid "Tetrahedral Grid"
+msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:297
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:285
+msgid "Here is how we can create an unstructured tetrahedral grid."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:351
+msgid ""
+"For fun, let's separate all the cells and plot out the individual cells. "
+"Shift them a little bit from the center to create an \"exploded view\"."
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:381
+msgid "**Total running time of the script:** ( 0 minutes  1.779 seconds)"
+msgstr "**Total running time of the script:** ( 0 minutes  1.779 seconds)"
+
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:396
 msgid ""
 ":download:`Download Python source code: create-unstructured-surface.py "
 "<create-unstructured-surface.py>`"
@@ -1639,7 +1653,7 @@ msgstr ""
 ":download:`Download Python source code: create-unstructured-surface.py "
 "<create-unstructured-surface.py>`"
 
-#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:303
+#: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:402
 msgid ""
 ":download:`Download Jupyter notebook: create-unstructured-surface.ipynb "
 "<create-unstructured-surface.ipynb>`"
@@ -2278,18 +2292,20 @@ msgid "Computation times"
 msgstr "計算時間"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
-msgid "**00:02.030** total execution time for **examples_00-load** files:"
+msgid "**00:01.779** total execution time for **examples_00-load** files:"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 msgid ""
-":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
+":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
+"unstructured-surface.py``)"
 msgstr ""
-":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
+":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
+"unstructured-surface.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid "00:02.030"
-msgstr ""
+msgid "00:01.779"
+msgstr "00:01.779"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:13
@@ -2625,21 +2641,27 @@ msgstr ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:31
 msgid ""
-":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
-"structured-surface.py``)"
+":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
 msgstr ""
-":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
-"structured-surface.py``)"
+":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:33
 msgid ""
+":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
+"structured-surface.py``)"
+msgstr ""
+":ref:`sphx_glr_examples_00-load_create-structured-surface.py` (``create-"
+"structured-surface.py``)"
+
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:35
+msgid ""
 ":ref:`sphx_glr_examples_00-load_create-surface-draped.py` (``create-surface-"
 "draped.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-surface-draped.py` (``create-surface-"
 "draped.py``)"
 
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:35
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:37
 msgid ""
 ":ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-"
 "surface.py``)"
@@ -2647,26 +2669,18 @@ msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-tri-surface.py` (``create-tri-"
 "surface.py``)"
 
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:37
+#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:39
 msgid ":ref:`sphx_glr_examples_00-load_create-truss.py` (``create-truss.py``)"
 msgstr ""
 ":ref:`sphx_glr_examples_00-load_create-truss.py` (``create-truss.py``)"
 
-#: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:39
-msgid ""
-":ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-"
-"grid.py``)"
-msgstr ""
-":ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-"
-"grid.py``)"
-
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:41
 msgid ""
-":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
-"unstructured-surface.py``)"
+":ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-"
+"grid.py``)"
 msgstr ""
-":ref:`sphx_glr_examples_00-load_create-unstructured-surface.py` (``create-"
-"unstructured-surface.py``)"
+":ref:`sphx_glr_examples_00-load_create-uniform-grid.py` (``create-uniform-"
+"grid.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:43
 msgid ":ref:`sphx_glr_examples_00-load_load-gltf.py` (``load-gltf.py``)"
@@ -8195,63 +8209,69 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_distance-along-"
 "spline.py>` to download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_distance-along-"
+"spline.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:24
 #: ../../pyvista/doc/examples/index.rst:1677
 msgid "Label based on Distance on Line"
-msgstr ""
+msgstr "線上の距離に応じたラベル"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:26
 msgid ""
 "Create a spline and generate labels along the spline based on distance along"
 " a spline."
-msgstr ""
+msgstr "スプラインを作成し、スプラインに沿った距離に基づいてラベルを生成します。"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:29
 msgid "This is an extension of the :ref:`create_spline_example`."
-msgstr ""
+msgstr "これは :ref:`create_spline_example` を拡張したものです。"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:50
 msgid "Create a spline"
-msgstr ""
+msgstr "スプラインの作成"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:51
 msgid "Create a spline using :func:`pyvista.Spline`."
-msgstr ""
+msgstr ":func:`pyvista.Spline` を使用して、スプラインを作成します。"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:97
 msgid "Determine the coordinates matching distance along a spline"
-msgstr ""
+msgstr "スプラインに沿った座標の一致距離を求める"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:98
 msgid ""
 "Here we write a simple function that gets the closest point matching a "
 "distance along a spline and then generate labels for those points."
-msgstr ""
+msgstr "ここでは、スプラインに沿った距離に最も近い点を取得し、それらの点のラベルを生成する簡単な関数を記述します。"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:143
 msgid "Plot with Labels"
-msgstr ""
+msgstr "ラベルを使ったプロット"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:144
 msgid "Plot the spline with labeled points"
-msgstr ""
+msgstr "ラベル付き点数でスプラインをプロットする"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:175
 msgid "**Total running time of the script:** ( 0 minutes  0.595 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.595 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:190
 msgid ""
 ":download:`Download Python source code: distance-along-spline.py <distance-"
 "along-spline.py>`"
 msgstr ""
+":download:`Download Python source code: distance-along-spline.py <distance-"
+"along-spline.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:196
 msgid ""
 ":download:`Download Jupyter notebook: distance-along-spline.ipynb <distance-"
 "along-spline.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: distance-along-spline.ipynb <distance-"
+"along-spline.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/edges.rst:13
 msgid ""
@@ -10166,17 +10186,19 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:00.595** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:00.595** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_distance-along-spline.py` (``distance-along-"
 "spline.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_distance-along-spline.py` (``distance-along-"
+"spline.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:00.595"
-msgstr ""
+msgstr "00:00.595"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
@@ -13598,6 +13620,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a spline/polyline "
 "from a numpy array of XYZ vertices using pyvista.Spline.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a spline/polyline "
+"from a numpy array of XYZ vertices using pyvista.Spline.\">"
 
 #: ../../pyvista/doc/examples/index.rst:240
 msgid ":ref:`sphx_glr_examples_00-load_create-spline.py`"
@@ -14477,10 +14501,12 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a spline and "
 "generate labels along the spline based on distance along a spline.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create a spline and "
+"generate labels along the spline based on distance along a spline.\">"
 
 #: ../../pyvista/doc/examples/index.rst:1677
 msgid ":ref:`sphx_glr_examples_02-plot_distance-along-spline.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_distance-along-spline.py`"
 
 #: ../../pyvista/doc/examples/index.rst:1689
 msgid ""

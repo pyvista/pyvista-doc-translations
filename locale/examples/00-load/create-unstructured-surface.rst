@@ -126,7 +126,7 @@ for available cell types and their descriptions.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:475: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:507: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
       warnings.warn(
     /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:65: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
@@ -236,7 +236,7 @@ hexahedral cells, but using common points between the cells.
 
 Finally, create the unstructured grid and plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-172
+.. GENERATED FROM PYTHON SOURCE LINES 157-174
 
 .. code-block:: default
 
@@ -258,6 +258,8 @@ Finally, create the unstructured grid and plot it
 
 
 
+
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-unstructured-surface_002.png
    :alt: create unstructured surface
    :srcset: /examples/00-load/images/sphx_glr_create-unstructured-surface_002.png
@@ -276,10 +278,107 @@ Finally, create the unstructured grid and plot it
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 175-178
+
+Tetrahedral Grid
+~~~~~~~~~~~~~~~~
+Here is how we can create an unstructured tetrahedral grid.
+
+.. GENERATED FROM PYTHON SOURCE LINES 178-224
+
+.. code-block:: default
+
+
+    # There are 10 cells here, each cell is [4, INDEX0, INDEX1, INDEX2, INDEX3]
+    # where INDEX is one of the corners of the tetrahedron.
+    #
+    # Note that the array does not need to be shaped like this, we could have a
+    # flat array, but it's easier to make out the structure of the array this way.
+    cells = np.array(
+        [
+            [4, 6, 5, 8, 7],
+            [4, 7, 3, 8, 9],
+            [4, 7, 3, 1, 5],
+            [4, 9, 3, 1, 7],
+            [4, 2, 6, 5, 8],
+            [4, 2, 6, 0, 4],
+            [4, 6, 2, 0, 8],
+            [4, 5, 2, 8, 3],
+            [4, 5, 3, 8, 7],
+            [4, 2, 6, 4, 5],
+        ]
+    )
+
+    # 10 is just vtk.VTK_TETRA
+    celltypes = np.array([10, 10, 10, 10, 10, 10, 10, 10, 10, 10], dtype=np.uint8)
+
+    # These are the 10 points. The number of cells does not need to match the
+    # number of points, they just happen to in this example
+    points = np.array(
+        [
+            [-0.0, 0.0, -0.5],
+            [0.0, 0.0, 0.5],
+            [-0.43, 0.0, -0.25],
+            [-0.43, 0.0, 0.25],
+            [-0.0, 0.43, -0.25],
+            [0.0, 0.43, 0.25],
+            [0.43, 0.0, -0.25],
+            [0.43, 0.0, 0.25],
+            [0.0, -0.43, -0.25],
+            [0.0, -0.43, 0.25],
+        ]
+    )
+
+    # Create and plot the unstructured grid
+    grid = pv.UnstructuredGrid(cells, celltypes, points)
+    grid.plot(show_edges=True)
+
+
+
+
+
+.. image-sg:: /examples/00-load/images/sphx_glr_create-unstructured-surface_003.png
+   :alt: create unstructured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-unstructured-surface_003.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 225-227
+
+For fun, let's separate all the cells and plot out the individual cells. Shift
+them a little bit from the center to create an "exploded view".
+
+.. GENERATED FROM PYTHON SOURCE LINES 227-235
+
+.. code-block:: default
+
+
+    split_cells = pv.MultiBlock()
+    for index in range(10):
+        single_cell = grid.extract_cells([index])
+        single_cell.points += (np.array(single_cell.center) - np.array(grid.center)) * 0.5
+        split_cells.append(single_cell)
+
+    split_cells.plot(show_edges=True)
+
+
+
+.. image-sg:: /examples/00-load/images/sphx_glr_create-unstructured-surface_004.png
+   :alt: create unstructured surface
+   :srcset: /examples/00-load/images/sphx_glr_create-unstructured-surface_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.875 seconds)
+   **Total running time of the script:** ( 0 minutes  1.779 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:
