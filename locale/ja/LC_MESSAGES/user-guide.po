@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-01 01:09+0000\n"
+"POT-Creation-Date: 2022-08-19 00:52+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -951,6 +951,333 @@ msgid ""
 msgstr ""
 "追加できる資料があれば， `issue <https://github.com/pyvista/pyvista/issues>`_ を開いてください．"
 
+#: ../../pyvista/doc/user-guide/jupyter/_autosummary/pyvista.PlotterITK.rst:2
+msgid "pyvista.PlotterITK"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:2
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:81:<autosummary>:1
+msgid "ITKwidgets plotter."
+msgstr "ITKウィジェットプロッタ．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:4
+msgid ""
+"Used for plotting interactively within a jupyter notebook. Requires "
+"``itkwidgets>=0.25.2``.  For installation see:"
+msgstr ""
+"jupyterノートブック内でインタラクティブにプロットするために使用します． ``itkwidgets>=0.25.2`` "
+"が必要です．インストールについては以下を参照してください．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:7
+msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
+msgstr "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:21
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:35
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:55
+msgid "Examples"
+msgstr "例"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:2
+msgid "Add a PyVista/VTK mesh or dataset."
+msgstr "PyVista/VTKメッシュまたはデータセットを追加します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:4
+msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
+msgstr "itkwidgetsがシーンにラップできるPyVista/VTKメッシュを追加します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:0
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:0
+msgid "Parameters"
+msgstr "パラメータ"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:12
+msgid "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
+msgstr "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:11
+msgid "pyvista.DataSet or pyvista.MultiBlock"
+msgstr "pyvista.DataSet or pyvista.MultiBlock"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:10
+msgid ""
+"Any PyVista or VTK mesh is supported. Also, any dataset that "
+":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+msgstr ""
+"PyVistaまたはVTKメッシュはサポートされています．また， :func:`pyvista.wrap` "
+"が扱うことができる任意のデータセットは，XYZ点のNumPy配列を含みます．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:19
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "**color** : :obj:`color_like`, :obj:`optional`"
+msgstr "**color** : :obj:`color_like`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:18
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "color_like, optional"
+msgstr "color_like, optional"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:15
+msgid ""
+"Use to make the entire mesh have a single solid color. Either a string, RGB "
+"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
+"``color=[1.0, 1.0, 1.0]``, or ``color='#FFFFFF'``. Color will be overridden "
+"if scalars are specified."
+msgstr ""
+"メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
+"``color='w'`` ， ``color=[1.0, 1.0, 1.0]`` ， ``color='#FFFFFF'`` "
+"．スカラーが指定されている場合，色は上書きされます．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:27
+msgid ""
+"**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
+msgstr ""
+"**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:26
+msgid "python:str or numpy.ndarray, optional"
+msgstr "python:str or numpy.ndarray, optional"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:22
+msgid ""
+"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
+"is present on the mesh or an array equal to the number of cells or the "
+"number of points in the mesh.  Array should be sized as a single vector. If "
+"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
+"used."
+msgstr ""
+"メッシュの \"色\" "
+"に使用されるスカラー．メッシュ上に存在する配列の文字列名，またはメッシュ内のセル数またはポイント数と等しい配列を受け入れます．配列は単一のベクトルとしてサイズを設定する必要があります．"
+" ``color`` と ``scalars`` が両方 ``None`` の場合，アクティブスカラーが使用されます．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:32
+msgid "**opacity** : :class:`python:float`, :obj:`optional`"
+msgstr "**opacity** : :class:`python:float`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:31
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:31
+msgid "python:float, optional"
+msgstr "python:float, optional"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:30
+msgid ""
+"Opacity of the mesh. If a single float value is given, it will be the global"
+" opacity of the mesh and uniformly applied everywhere - should be between 0 "
+"and 1.  Default 1.0."
+msgstr ""
+"メッシュの不透明度．単一のfloat値を指定した場合，それはメッシュのグローバル不透明度になり，すべての場所に均一に適用されます．0から1の間でなければなりません．既定1.0．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:50
+msgid ""
+"**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+"**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:49
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:8
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:12
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:15
+msgid "bool, optional"
+msgstr "bool, optional"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:35
+msgid ""
+"Smooth mesh surface mesh by taking into account surface normals.  Surface "
+"will appear smoother while sharp edges will still look sharp.  Default "
+"``False``."
+msgstr ""
+"サーフェス法線を考慮してメッシュサーフェスメッシュをスムースにします．サーフェスはより滑らかに表示されますが，鋭いエッジはシャープに表示されます．デフォルトは"
+" ``False`` です．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:2
+msgid "Add points to plotter."
+msgstr "プロッタに点を追加します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:9
+msgid "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
+msgstr "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:8
+msgid "numpy.ndarray or pyvista.DataSet"
+msgstr "numpy.ndarray or pyvista.DataSet"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:8
+msgid "An ``n x 3`` numpy array of points or PyVista dataset with points."
+msgstr "点の ``n x 3`` の numpy 配列，または点を含む PyVista データセットです．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:12
+msgid ""
+"Either a string, RGB sequence, or hex color string.  For one of the "
+"following."
+msgstr "文字列，RGB配列，または16進数の色文字列のいずれかです．以下のいずれかの場合．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:15
+msgid "``color='white'``"
+msgstr "``color='white'``"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:16
+msgid "``color='w'``"
+msgstr "``color='w'``"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "``color=[1.0, 1.0, 1.0]``"
+msgstr "``color=[1.0, 1.0, 1.0]``"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "``color='#FFFFFF'``"
+msgstr "``color='#FFFFFF'``"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:32
+msgid "**point_size** : :class:`python:float`, :obj:`optional`"
+msgstr "**point_size** : :class:`python:float`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:21
+msgid ""
+"Point size of any nodes in the dataset plotted. Also applicable when "
+"style='points'. Default ``3.0``."
+msgstr ""
+"プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``3.0`` ．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:36
+msgid "Add 10 random points to the plotter"
+msgstr "プロッタに10個のランダム点を追加する"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.PlotterITK.background_color:2
+msgid "Return the background color of the plotter."
+msgstr "プロッタの背景色を取得します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.PlotterITK.camera_position:2
+msgid "Return camera position of the plotter as a list."
+msgstr "プロッタのカメラ位置をリストとして取得します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:2
+msgid "Show itkwidgets plotter in cell output."
+msgstr "セル出力にitkwidgetsプロッタを表示します．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:9
+msgid ""
+"**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+"**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:8
+msgid ""
+"Plot with the user interface collapsed.  UI can be enabled when plotting.  "
+"Default ``False``."
+msgstr "ユーザインタフェースを集約してプロットします．プロット時にUIを有効にできます．デフォルトは ``False`` です．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:13
+msgid ""
+"**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+"**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:12
+msgid ""
+"Rotate the camera around the scene.  Default ``False``. Appears to be "
+"computationally intensive."
+msgstr "シーンを中心にカメラを回転します．デフォルトの ``False`` ．計算量が多いように見えます．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:16
+msgid ""
+"**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+"**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:16
+msgid "Show the bounding box.  Default ``False``."
+msgstr "境界ボックスを表示します．デフォルトは ``False`` ．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:19
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:18
+msgid "python:dict, optional"
+msgstr "python:dict, optional"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:19
+msgid "Additional arguments to pass to ``itkwidgets.Viewer``."
+msgstr "``itkwidgets.Viewer`` に渡す追加の引数です．"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Returns"
+msgstr "戻り値"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:36
+msgid ":obj:`itkwidgets.Viewer`"
+msgstr ":obj:`itkwidgets.Viewer`"
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:24
+msgid "``ITKwidgets`` viewer."
+msgstr "``ITKwidgets`` ビューアー．"
+
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:4
 msgid "Jupyter Notebook Plotting"
 msgstr "Jupyterノートブックプロット"
@@ -1215,17 +1542,6 @@ msgid "Set the plotting backend for a jupyter notebook."
 msgstr "Jupyterノートブックのプロットバックエンドを設定します．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:0
-msgid "Parameters"
-msgstr "パラメータ"
-
-#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:52
 msgid "**backend** : :class:`python:str`"
 msgstr "**backend** : :class:`python:str`"
@@ -1308,15 +1624,6 @@ msgid ""
 msgstr ""
 "``'none'`` : "
 "jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
-
-#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:55
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK:21
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:35
-msgid "Examples"
-msgstr "例"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:3
 msgid "Enable the pythreejs backend."
@@ -1673,357 +1980,13 @@ msgid ""
 "function:"
 msgstr "便宜上， ``plot_itk`` 関数を使用して図をプロットすることもできます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:76
-msgid "Attributes"
-msgstr "アトリビュート"
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:77
+msgid "API Reference"
+msgstr "APIリファレンス"
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-msgid ":py:obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-msgstr ":py:obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.PlotterITK.background_color:2
-msgid "Return the background color of the plotter."
-msgstr "プロッタの背景色を取得します．"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-msgid ":py:obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-msgstr ":py:obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.PlotterITK.camera_position:2
-msgid "Return camera position of the plotter as a list."
-msgstr "プロッタのカメラ位置をリストとして取得します．"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:81
-msgid "Methods"
-msgstr "メソッド"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ""
-":py:obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
-"scalars\\, opacity\\, ...\\]\\)"
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:81:<autosummary>:1
+msgid ":py:obj:`pyvista.PlotterITK <pyvista.PlotterITK>`\\ \\(\\*\\*kwargs\\)"
 msgstr ""
-":py:obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
-"scalars\\, opacity\\, ...\\]\\)"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:2
-msgid "Add a PyVista/VTK mesh or dataset."
-msgstr "PyVista/VTKメッシュまたはデータセットを追加します．"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ""
-":py:obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, "
-"color\\, point\\_size\\]\\)"
-msgstr ""
-":py:obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, "
-"color\\, point\\_size\\]\\)"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:2
-msgid "Add points to plotter."
-msgstr "プロッタに点を追加します．"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ""
-":py:obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\,"
-" show\\_bounds\\]\\)"
-msgstr ""
-":py:obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\,"
-" show\\_bounds\\]\\)"
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:2
-msgid "Show itkwidgets plotter in cell output."
-msgstr "セル出力にitkwidgetsプロッタを表示します．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK:1
-msgid "Bases: :py:class:`object`"
-msgstr "基底: :py:class:`object`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK:2
-msgid "ITKwidgets plotter."
-msgstr "ITKウィジェットプロッタ．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK:4
-msgid ""
-"Used for plotting interactively within a jupyter notebook. Requires "
-"``itkwidgets>=0.25.2``.  For installation see:"
-msgstr ""
-"jupyterノートブック内でインタラクティブにプロットするために使用します． ``itkwidgets>=0.25.2`` "
-"が必要です．インストールについては以下を参照してください．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK:7
-msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-msgstr "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:4
-msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
-msgstr "itkwidgetsがシーンにラップできるPyVista/VTKメッシュを追加します．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:12
-msgid "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
-msgstr "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:11
-msgid "pyvista.DataSet or pyvista.MultiBlock"
-msgstr "pyvista.DataSet or pyvista.MultiBlock"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:10
-msgid ""
-"Any PyVista or VTK mesh is supported. Also, any dataset that "
-":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
-msgstr ""
-"PyVistaまたはVTKメッシュはサポートされています．また， :func:`pyvista.wrap` "
-"が扱うことができる任意のデータセットは，XYZ点のNumPy配列を含みます．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:19
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
-msgid "**color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**color** : :obj:`color_like`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:18
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "color_like, optional"
-msgstr "color_like, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:15
-msgid ""
-"Use to make the entire mesh have a single solid color. Either a string, RGB "
-"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
-"``color=[1.0, 1.0, 1.0]``, or ``color='#FFFFFF'``. Color will be overridden "
-"if scalars are specified."
-msgstr ""
-"メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
-"``color='w'`` ， ``color=[1.0, 1.0, 1.0]`` ， ``color='#FFFFFF'`` "
-"．スカラーが指定されている場合，色は上書きされます．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:27
-msgid ""
-"**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
-msgstr ""
-"**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:26
-msgid "python:str or numpy.ndarray, optional"
-msgstr "python:str or numpy.ndarray, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:22
-msgid ""
-"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
-"is present on the mesh or an array equal to the number of cells or the "
-"number of points in the mesh.  Array should be sized as a single vector. If "
-"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
-"used."
-msgstr ""
-"メッシュの \"色\" "
-"に使用されるスカラー．メッシュ上に存在する配列の文字列名，またはメッシュ内のセル数またはポイント数と等しい配列を受け入れます．配列は単一のベクトルとしてサイズを設定する必要があります．"
-" ``color`` と ``scalars`` が両方 ``None`` の場合，アクティブスカラーが使用されます．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:32
-msgid "**opacity** : :class:`python:float`, :obj:`optional`"
-msgstr "**opacity** : :class:`python:float`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:31
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:31
-msgid "python:float, optional"
-msgstr "python:float, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:30
-msgid ""
-"Opacity of the mesh. If a single float value is given, it will be the global"
-" opacity of the mesh and uniformly applied everywhere - should be between 0 "
-"and 1.  Default 1.0."
-msgstr ""
-"メッシュの不透明度．単一のfloat値を指定した場合，それはメッシュのグローバル不透明度になり，すべての場所に均一に適用されます．0から1の間でなければなりません．既定1.0．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:50
-msgid ""
-"**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-msgstr ""
-"**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:49
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:8
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:12
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:15
-msgid "bool, optional"
-msgstr "bool, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:35
-msgid ""
-"Smooth mesh surface mesh by taking into account surface normals.  Surface "
-"will appear smoother while sharp edges will still look sharp.  Default "
-"``False``."
-msgstr ""
-"サーフェス法線を考慮してメッシュサーフェスメッシュをスムースにします．サーフェスはより滑らかに表示されますが，鋭いエッジはシャープに表示されます．デフォルトは"
-" ``False`` です．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:9
-msgid "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
-msgstr "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:8
-msgid "numpy.ndarray or pyvista.DataSet"
-msgstr "numpy.ndarray or pyvista.DataSet"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:8
-msgid "An ``n x 3`` numpy array of points or PyVista dataset with points."
-msgstr "点の ``n x 3`` の numpy 配列，または点を含む PyVista データセットです．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:12
-msgid ""
-"Either a string, RGB sequence, or hex color string.  For one of the "
-"following."
-msgstr "文字列，RGB配列，または16進数の色文字列のいずれかです．以下のいずれかの場合．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:15
-msgid "``color='white'``"
-msgstr "``color='white'``"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:16
-msgid "``color='w'``"
-msgstr "``color='w'``"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "``color=[1.0, 1.0, 1.0]``"
-msgstr "``color=[1.0, 1.0, 1.0]``"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
-msgid "``color='#FFFFFF'``"
-msgstr "``color='#FFFFFF'``"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:32
-msgid "**point_size** : :class:`python:float`, :obj:`optional`"
-msgstr "**point_size** : :class:`python:float`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:21
-msgid ""
-"Point size of any nodes in the dataset plotted. Also applicable when "
-"style='points'. Default ``3.0``."
-msgstr ""
-"プロットされたデータセット内の任意のノードのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``3.0`` ．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.add_points:36
-msgid "Add 10 random points to the plotter"
-msgstr "プロッタに10個のランダム点を追加する"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:9
-msgid ""
-"**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-msgstr ""
-"**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:8
-msgid ""
-"Plot with the user interface collapsed.  UI can be enabled when plotting.  "
-"Default ``False``."
-msgstr "ユーザインタフェースを集約してプロットします．プロット時にUIを有効にできます．デフォルトは ``False`` です．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:13
-msgid ""
-"**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-"**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:12
-msgid ""
-"Rotate the camera around the scene.  Default ``False``. Appears to be "
-"computationally intensive."
-msgstr "シーンを中心にカメラを回転します．デフォルトの ``False`` ．計算量が多いように見えます．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:16
-msgid ""
-"**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-"**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:16
-msgid "Show the bounding box.  Default ``False``."
-msgstr "境界ボックスを表示します．デフォルトは ``False`` ．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:19
-msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:18
-msgid "python:dict, optional"
-msgstr "python:dict, optional"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:19
-msgid "Additional arguments to pass to ``itkwidgets.Viewer``."
-msgstr "``itkwidgets.Viewer`` に渡す追加の引数です．"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:0
-msgid "Returns"
-msgstr "戻り値"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:36
-msgid ":obj:`itkwidgets.Viewer`"
-msgstr ":obj:`itkwidgets.Viewer`"
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
-#: pyvista.jupyter.itkplotter.PlotterITK.show:24
-msgid "``ITKwidgets`` viewer."
-msgstr "``ITKwidgets`` ビューアー．"
 
 #: ../../pyvista/doc/user-guide/jupyter/panel.rst:4
 msgid "Using ``Panel`` with PyVista"
