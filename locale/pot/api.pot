@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-19 00:52+0000\n"
+"POT-Creation-Date: 2022-08-20 00:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -654,6 +654,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_vectors:17
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_vectors_info:29
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_vectors_name:17
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:22
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.array_names:18
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.arrows:24
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.bounds:18
@@ -696,7 +697,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.scale:39
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.textures:19
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.translate:37
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:21
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:22
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes:55
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.DataSetAttributes.active_normals:25
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.DataSetAttributes.active_normals_name:21
@@ -845,7 +846,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:45
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:167
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:82
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.area:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.cell_normals:23
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.face_normals:22
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.faces:21
@@ -1626,6 +1626,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_normals:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_scalars_info:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.active_vectors_info:0
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.arrows:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cast_to_pointset:0
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.cast_to_unstructured_grid:0
@@ -1748,7 +1749,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet.cast_to_polydata:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:0
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.area:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.cell_normals:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.face_normals:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.faces:0
@@ -5560,6 +5560,49 @@ msgstr ""
 msgid "Create a mesh, compute the normals, set them as active, and return the name of the active vectors."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:2
+msgid "Return the mesh area if 2D."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:4
+msgid "This will return 0 for meshes with 3D cells."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:19
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:19
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:18
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:19
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:26
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:28
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.length:21
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.EnSightReader.active_time_value:21
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.EnSightReader.time_point_value:25
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.OpenFOAMReader.active_time_value:21
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.OpenFOAMReader.time_point_value:25
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.PVDReader.active_time_value:21
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.PVDReader.time_point_value:25
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.TimeReader.active_time_value:21
+#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.TimeReader.time_point_value:25
+#: ../../pyvista/pyvista/utilities/regression.py:docstring of pyvista.utilities.regression.compare_images:40
+msgid ":class:`python:float`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.area:10
+msgid "Total area of the mesh."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
+msgid "Get the area of a square of size 2x2. Note 5 points in each direction."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:11
+msgid "A mesh with 3D cells does not have an area.  To get the outer surface area, first extract the surface using :func:`pyvista.DataSetFilters.extract_surface`."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:19
+msgid "Get the area of a sphere."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.array_names:2
 msgid "Return a list of array names for the dataset."
 msgstr ""
@@ -7507,33 +7550,26 @@ msgstr ""
 msgid "Return the mesh volume."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:18
-#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:18
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.area:18
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:19
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:26
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:28
-#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.length:21
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.EnSightReader.active_time_value:21
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.EnSightReader.time_point_value:25
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.OpenFOAMReader.active_time_value:21
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.OpenFOAMReader.time_point_value:25
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.PVDReader.active_time_value:21
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.PVDReader.time_point_value:25
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.TimeReader.active_time_value:21
-#: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.TimeReader.time_point_value:25
-#: ../../pyvista/pyvista/utilities/regression.py:docstring of pyvista.utilities.regression.compare_images:40
-msgid ":class:`python:float`"
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:4
+msgid "This will return 0 for meshes with 2D cells."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:9
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.DataSet.volume:10
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:9
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:10
 msgid "Total volume of the mesh."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
-msgid "Get the volume of a sphere."
+msgid "Get the volume of a cube of size 4x4x4. Note that there are 5 points in each direction."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:11
+msgid "A mesh with 2D cells has no volume."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:17
+msgid ":class:`pyvista.PolyData` is special as a 2D surface can enclose a 3D volume."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSetAttributes.rst:2
@@ -12090,14 +12126,6 @@ msgstr ""
 msgid "See :ref:`ref_create_poly` for more examples."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.area:2
-msgid "Return the mesh surface area."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.area:9
-msgid "Total area of the mesh."
-msgstr ""
-
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.cell_normals:2
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.face_normals:2
 msgid "Return the cell normals."
@@ -12293,7 +12321,7 @@ msgid "Set vertex cells.  Note how the mesh plots both the surface mesh and the 
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:2
-msgid "Return the volume of the dataset."
+msgid "Return the approximate volume of the dataset."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:4
