@@ -819,7 +819,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:385
 msgid "Building the Documentation"
-msgstr ""
+msgstr "ドキュメントの作成"
 
 #: ../../pyvista/CONTRIBUTING.rst:386
 msgid "Build the documentation on Linux or Mac OS with:"
@@ -845,30 +845,31 @@ msgid ""
 "the examples need to be built. After the first build, the documentation "
 "should take a fraction of the time."
 msgstr ""
+"最初にローカルでドキュメントをビルドするときは、すべてのサンプルをビルドする必要があるため、しばらく時間がかかるでしょう。最初のビルドの後は、ドキュメントの作成にかかる時間はほんのわずかなものになるはずです。"
 
 #: ../../pyvista/CONTRIBUTING.rst:405
 msgid "Clearing the local build"
-msgstr ""
+msgstr "ローカルビルドのクリア"
 
 #: ../../pyvista/CONTRIBUTING.rst:407
 msgid "If you need to clear the locally built documentation, run:"
-msgstr ""
+msgstr "ローカルにビルドしたドキュメントをクリアする必要がある場合は、実行してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:413
 msgid ""
 "This will clear out everything, including the examples gallery. If you only "
 "want to clear everything except the gallery examples, run:"
-msgstr ""
+msgstr "これは、ギャラリーの例を含むすべてをクリアします。もしギャラリーのサンプル以外をクリアしたいだけなら、実行します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:420
 msgid ""
 "This will clear out the cache without forcing you to rebuild all the "
 "examples."
-msgstr ""
+msgstr "これにより、すべてのサンプルを強制的に再構築することなく、キャッシュをクリアすることができます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:423
 msgid "Full documentation build"
-msgstr ""
+msgstr "フルドキュメントのビルド"
 
 #: ../../pyvista/CONTRIBUTING.rst:424
 msgid ""
@@ -879,10 +880,13 @@ msgid ""
 "takes to build documentation locally. If you wish to generate the full "
 "documentation, enable it with::"
 msgstr ""
+"デフォルトでは、ドキュメントのビルドでは、テーブルを生成してクラスのメソッドや属性を個々のページに配置するのではなく、クラスのドキュメントを1つのページに配置します。また、図のサイズもデフォルトの"
+" ``(1024, 768)`` ではなく、 ``(400, 300)`` "
+"に設定されています。これはローカルでドキュメントを構築する際の時間を最小限にするためです。もし、完全なドキュメントを生成したい場合は、次のコマンドで有効にしてください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:433
 msgid "export FULL_DOC_BUILD=TRUE make -C doc html"
-msgstr ""
+msgstr "export FULL_DOC_BUILD=TRUE make -C doc html"
 
 #: ../../pyvista/CONTRIBUTING.rst:436
 msgid ""
@@ -892,21 +896,24 @@ msgid ""
 "methods will have their docstrings rendered, whereas the non-full "
 "documentation build only generates methods belonging directly to that class."
 msgstr ""
+"この場合、オンラインでレンダリングされたものと同じドキュメントが生成されますが、個々のクラスのメソッドと属性が独自のドキュメントページを持つため、ドキュメントのビルドに非常に時間がかかります。さらに、継承されたメソッドにもそのドキュメントが表示されますが、完全なドキュメントではないビルドでは、そのクラスに直接属するメソッドのみが生成されます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:443
 msgid "Parallel Documentation Build"
-msgstr ""
+msgstr "ドキュメントの並列ビルド"
 
 #: ../../pyvista/CONTRIBUTING.rst:444
 msgid ""
 "You can improve your documentation build time on Linux and Mac OS with:"
-msgstr ""
+msgstr "以下でLinuxやMac OSでのドキュメントのビルド時間を改善することができます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:450
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
 "multi-core computers when ``FULL_DOC_BUILD=TRUE``"
 msgstr ""
+"これは効果的に ``SPHINXOPTS=-j`` を呼び出し、特に ``FULL_DOC_BUILD=TRUE`` "
+"のときにマルチコアコンピュータで有用である。"
 
 #: ../../pyvista/CONTRIBUTING.rst:455
 msgid "Creating a New Pull Request"

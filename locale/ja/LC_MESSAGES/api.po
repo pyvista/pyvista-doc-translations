@@ -10274,11 +10274,11 @@ msgstr "メッシュを作成し，法線を計算し，それらをアクティ
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:2
 msgid "Return the mesh area if 2D."
-msgstr ""
+msgstr "2Dの場合、メッシュの面積を返します。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:4
 msgid "This will return 0 for meshes with 3D cells."
-msgstr ""
+msgstr "3Dセルを持つメッシュの場合、0を返します。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:19
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:19
@@ -10319,7 +10319,7 @@ msgstr "メッシュの総面積．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Get the area of a square of size 2x2. Note 5 points in each direction."
-msgstr ""
+msgstr "2x2の大きさの正方形の面積を求めてください。各方向に5点ずつ記します。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:11
 msgid ""
@@ -10327,10 +10327,12 @@ msgid ""
 "first extract the surface using "
 ":func:`pyvista.DataSetFilters.extract_surface`."
 msgstr ""
+"3Dセルを持つメッシュは、面積を持ちません。 外側の表面積を得るには、まず "
+":func:`pyvista.DataSetFilters.extract_surface` を使用して表面を抽出します。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:19
 msgid "Get the area of a sphere."
-msgstr ""
+msgstr "球体の面積を取得します。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.array_names:2
@@ -13501,7 +13503,7 @@ msgstr "メッシュボリュームを取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:4
 msgid "This will return 0 for meshes with 2D cells."
-msgstr ""
+msgstr "2Dセルを持つメッシュの場合、0を返します。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:10
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -13514,17 +13516,17 @@ msgstr "メッシュの総体積．"
 msgid ""
 "Get the volume of a cube of size 4x4x4. Note that there are 5 points in each"
 " direction."
-msgstr ""
+msgstr "大きさが4x4x4の立方体の体積を求めてください。なお、各方向には5点ずつあります。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:11
 msgid "A mesh with 2D cells has no volume."
-msgstr ""
+msgstr "2Dセルで構成されるメッシュはボリュームを持ちません。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:17
 msgid ""
 ":class:`pyvista.PolyData` is special as a 2D surface can enclose a 3D "
 "volume."
-msgstr ""
+msgstr ":class:`pyvista.PolyData` は、2次元の表面が3次元のボリュームを囲むことができるので、特別なものです。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSetAttributes.rst:2
 msgid "pyvista.DataSetAttributes"
@@ -18690,21 +18692,21 @@ msgstr "``dims`` および ``corners`` 配列から"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:14
 msgid "**args** : :obj:`various`"
-msgstr ""
+msgstr "**args** : :obj:`various`"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:13
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:13
 msgid "various"
-msgstr ""
+msgstr "various"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:14
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:14
 msgid "See below examples."
-msgstr ""
+msgstr "以下の例をご覧ください。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:28
@@ -18713,7 +18715,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:28
 msgid "**deep** : :obj:`optional`"
-msgstr ""
+msgstr "**deep** : :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:27
@@ -18722,7 +18724,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:27
 msgid "optional"
-msgstr ""
+msgstr "optional"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:17
@@ -18730,6 +18732,8 @@ msgid ""
 "Whether to deep copy a ``vtk.vtkUnstructuredGrid`` object. Default is "
 "``False``.  Keyword only."
 msgstr ""
+"``vtk.vtkUnstructuredGrid`` オブジェクトをディープコピーするかどうかを指定します。デフォルトは ``False`` です。 "
+"キーワードのみ。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:2
@@ -21153,7 +21157,7 @@ msgstr "頂点セルを設定します． サーフェスのメッシュと追�
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:2
 msgid "Return the approximate volume of the dataset."
-msgstr ""
+msgstr "データセットのおおよその体積を返します。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:4
@@ -24683,6 +24687,8 @@ msgid ""
 "Whether to deep copy a ``vtk.vtkRectilinearGrid`` object. Default is "
 "``False``.  Keyword only."
 msgstr ""
+"``vtk.vtkRectilinearGrid`` オブジェクトをディープコピーするかどうかを指定します。デフォルトは ``False`` です。 "
+"キーワードのみ。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.RectilinearGrid.rst:7
 msgid "Create an empty grid."
@@ -24915,6 +24921,7 @@ msgid ""
 "Whether to deep copy a StructuredGrid object. Default is ``False``.  Keyword"
 " only."
 msgstr ""
+"StructuredGrid オブジェクトをディープコピーするかどうかを指定します。デフォルトは ``False`` です。 キーワードのみ。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid:42
@@ -25321,6 +25328,8 @@ msgid ""
 "Whether to deep copy a ``vtk.vtkImageData`` object. Default is ``False``.  "
 "Keyword only."
 msgstr ""
+"``vtk.vtkImageData`` オブジェクトをディープコピーするかどうかを指定します。デフォルトは ``False`` です。 "
+"キーワードのみ。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UniformGrid.rst:3
 msgid "Create an empty UniformGrid."
@@ -26300,6 +26309,7 @@ msgid ""
 "Whether to deep copy a vtkUnstructuredGrid object. Default is ``False``.  "
 "Keyword only."
 msgstr ""
+"vtkUnstructuredGrid オブジェクトをディープコピーするかどうかを指定します。デフォルトは ``False`` です。 キーワードのみ。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UnstructuredGrid.rst:7
 msgid "Create an empty grid"
@@ -28354,18 +28364,24 @@ msgid ""
 ":py:obj:`pyvista.UnstructuredGrid <pyvista.UnstructuredGrid>`\\ "
 "\\(\\*args\\[\\, deep\\]\\)"
 msgstr ""
+":py:obj:`pyvista.UnstructuredGrid <pyvista.UnstructuredGrid>`\\ "
+"\\(\\*args\\[\\, deep\\]\\)"
 
 #: ../../pyvista/doc/api/core/pointsets.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`pyvista.StructuredGrid <pyvista.StructuredGrid>`\\ \\(\\[uinput\\, "
 "y\\, z\\, deep\\]\\)"
 msgstr ""
+":py:obj:`pyvista.StructuredGrid <pyvista.StructuredGrid>`\\ \\(\\[uinput\\, "
+"y\\, z\\, deep\\]\\)"
 
 #: ../../pyvista/doc/api/core/pointsets.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`pyvista.ExplicitStructuredGrid <pyvista.ExplicitStructuredGrid>`\\ "
 "\\(\\*args\\[\\, deep\\]\\)"
 msgstr ""
+":py:obj:`pyvista.ExplicitStructuredGrid <pyvista.ExplicitStructuredGrid>`\\ "
+"\\(\\*args\\[\\, deep\\]\\)"
 
 #: ../../pyvista/doc/api/core/pointsets.rst:92
 msgid "PolyData Creation"
