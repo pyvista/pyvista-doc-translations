@@ -1357,6 +1357,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to pick individual blocks of a pyvista.MultiBlock using pyvista.Plotter.enable_...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_composite-picking_thumb.png
+    :alt: Composite Picking
+
+  :ref:`sphx_glr_examples_02-plot_composite-picking.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Composite Picking</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="For this example, we will showcase the difference that depth peeling provides.">
 
 .. only:: html
@@ -1493,7 +1510,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The add_mesh function has an interpolate_before_map argument - this affects the way scalar data...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The pyvista.Plotter.add_mesh method has an interpolate_before_map argument that affects the way...">
 
 .. only:: html
 

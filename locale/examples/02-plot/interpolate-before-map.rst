@@ -18,20 +18,23 @@
 .. _sphx_glr_examples_02-plot_interpolate-before-map.py:
 
 
+.. _interpolate_before_mapping_example:
+
 Interpolate Before Mapping
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``add_mesh`` function has an ``interpolate_before_map`` argument - this
-affects the way scalar data is visualized with colors.
-The effect can of this can vary depending on the dataset's topology and the
-chosen colormap.
+The :func:`add_mesh <pyvista.Plotter.add_mesh>` method has an
+``interpolate_before_map`` argument that affects the way scalar data is
+visualized with colors.  The effect of this can vary depending on the
+dataset's topology and the chosen colormap.
 
 This example serves to demo the difference and why we've chosen to enable this
 by default.
 
-For more details, please see `this blog post <https://blog.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
+For more details, please see `What is InterpolateScalarsBeforeMapping in VTK?
+<https://www.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-17
+.. GENERATED FROM PYTHON SOURCE LINES 19-21
 
 .. code-block:: default
 
@@ -44,7 +47,7 @@ For more details, please see `this blog post <https://blog.kitware.com/what-is-i
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-33
+.. GENERATED FROM PYTHON SOURCE LINES 23-37
 
 Meshes are colored by the data on their nodes or cells - when coloring a mesh
 by data on its nodes, the values must be interpolated across the faces of
@@ -61,7 +64,7 @@ colors.
 
 So lets take a look at the difference:
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-55
+.. GENERATED FROM PYTHON SOURCE LINES 37-59
 
 .. code-block:: default
 
@@ -99,7 +102,7 @@ So lets take a look at the difference:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-62
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
 Shown in the figure above, when not interpolating the scalars before mapping,
 the colors (RGB values, not scalars) are interpolated between the vertices by
@@ -108,7 +111,7 @@ accurate.
 
 The same interpolation effect occurs for wireframe visualization too:
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-81
+.. GENERATED FROM PYTHON SOURCE LINES 66-85
 
 .. code-block:: default
 
@@ -143,7 +146,7 @@ The same interpolation effect occurs for wireframe visualization too:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-90
+.. GENERATED FROM PYTHON SOURCE LINES 86-94
 
 The cylinder mesh above is a great example dataset for this as it has a wide
 spread between the vertices (points are only at the top and bottom of the
@@ -154,7 +157,7 @@ color interpolating are harder to notice. Let's take a look at a wavelet
 example and try to figure out how the ``interpolate_before_map`` option
 affects its rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-113
+.. GENERATED FROM PYTHON SOURCE LINES 94-117
 
 .. code-block:: default
 
@@ -193,7 +196,7 @@ affects its rendering.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-119
+.. GENERATED FROM PYTHON SOURCE LINES 118-123
 
 This time is pretty difficult to notice the differences - they are there,
 subtle, but present. The differences become more apparent when we decrease
@@ -201,7 +204,7 @@ the number of colors in colormap.
 Let's take a look at the differences when using eight discrete colors via
 the ``n_colors`` argument:
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-140
+.. GENERATED FROM PYTHON SOURCE LINES 123-144
 
 .. code-block:: default
 
@@ -238,7 +241,7 @@ the ``n_colors`` argument:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 141-151
+.. GENERATED FROM PYTHON SOURCE LINES 145-155
 
 Left, ``interpolate_before_map`` OFF.  Right, ``interpolate_before_map`` ON.
 
@@ -254,28 +257,23 @@ flag to ``True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.651 seconds)
+   **Total running time of the script:** ( 0 minutes  2.208 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_interpolate-before-map.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: interpolate-before-map.py <interpolate-before-map.py>`
 
-     :download:`Download Python source code: interpolate-before-map.py <interpolate-before-map.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: interpolate-before-map.ipynb <interpolate-before-map.ipynb>`
+      :download:`Download Jupyter notebook: interpolate-before-map.ipynb <interpolate-before-map.ipynb>`
 
 
 .. only:: html
