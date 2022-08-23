@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-20 00:53+0000\n"
+"POT-Creation-Date: 2022-08-23 01:02+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -326,6 +326,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.append:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.clean:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:0
@@ -347,6 +349,8 @@ msgstr ""
 #: pyvista.core.composite.MultiBlock.pop:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.replace:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_block_name:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -776,6 +780,16 @@ msgstr ""
 #: pyvista.examples.downloads.download_woman:0
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_explicit_structured:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -784,6 +798,10 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter.add_title:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:0
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:0
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:0
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:0
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -2163,6 +2181,52 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_uniform:21
 #: ../../pyvista/doc/api/examples/index.rst:2
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:43
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.color:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.opacity:22
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.pickable:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.visible:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:43
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:44
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_colors:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_opacities:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_pickabilities:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_visibilities:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.above_range_color:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.below_range_color:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.block_attr:33
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.color_missing_with_nan:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.dataset:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.interpolate_before_map:20
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.lookup_table:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.nan_color:21
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_map_mode:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_range:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_visibility:17
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:18
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:77
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2171,6 +2235,54 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter.add_title:47
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:119
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:112
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient:21
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient_color:21
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:25
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.color:21
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:25
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse:22
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse_color:20
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.edge_color:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:26
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.lighting:17
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.line_width:17
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.metallic:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.opacity:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:23
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.point_size:17
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_lines_as_tubes:18
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_points_as_spheres:18
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.roughness:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.show_edges:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular:21
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_color:20
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_power:18
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:22
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:68
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -3191,6 +3303,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.scale:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.set_active_scalars:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.translate:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -3356,6 +3470,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.copy:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:0
@@ -3368,11 +3484,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_index_by_name:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.keys:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.pop:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:0 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.core.pointset.PointSet.cast_to_polydata:0
@@ -3872,6 +3992,10 @@ msgstr ""
 #: pyvista.examples.examples.load_tetbeam:0
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_uniform:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4300,6 +4424,10 @@ msgstr ""
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:29
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.save:22
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:25
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:38
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet:39
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -4327,8 +4455,20 @@ msgstr ""
 #: pyvista.examples.downloads.download_cubemap_space_16k:30
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_notch_stress:24
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:22
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:22
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:23
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.block_attr:15
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.nan_color:15
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:112
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:20
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.plot:36
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -4690,6 +4830,24 @@ msgstr ""
 #: pyvista.demos.demos.plot_wave:13
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:13
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:37
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:43
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:46
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:51
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:57
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:60
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:63
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:66
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:88
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_border:10
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -5402,7 +5560,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.copy:12
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:9
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:7
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_data_range:10
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:12
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -5435,6 +5597,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:111
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:118
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:19
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet:21
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -6005,6 +6169,10 @@ msgstr ""
 #: pyvista.examples.downloads.download_wavy:8
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_woman:9
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:12
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:31
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -6031,6 +6199,14 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter.show:71
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:76
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:70
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:77
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:81
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:84
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:11
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -6651,6 +6827,14 @@ msgstr ""
 #: pyvista.core.composite.MultiBlock.clean:17
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.linear_copy:14
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:29
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:68
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:73
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:81
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:45
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -8145,7 +8329,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rename_array:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.set_active_scalars:29
+#: pyvista.core.dataset.DataSet.set_active_scalars:16
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_tensors:28
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -8160,6 +8344,8 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:42
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:36
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:16
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.ribbon:37
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -8190,7 +8376,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rename_array:26
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.set_active_scalars:28
+#: pyvista.core.dataset.DataSet.set_active_scalars:15
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_tensors:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -8271,6 +8457,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:84
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:15
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -8331,6 +8519,10 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter.show:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:67
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:19
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:32
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:14
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -9344,6 +9536,8 @@ msgid "Convert it to an all triangle mesh."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataObject.rst:2
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:7
 msgid "pyvista.DataObject"
 msgstr ""
 
@@ -9573,6 +9767,10 @@ msgstr ""
 #: pyvista.core.composite.MultiBlock.set_block_name:20
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:13
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:8
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:15
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:9
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -10399,6 +10597,12 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:10
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:27
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:7
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:20
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:37
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:9
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -10492,8 +10696,12 @@ msgstr ""
 #: pyvista.core.dataset.DataSet.find_cells_within_bounds:20
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:38
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.set_active_scalars:36
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.surface_indices:22
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:35
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.faces:18 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.verts:18
@@ -11250,6 +11458,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array_association:27
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.set_active_scalars:21
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:25
 msgid ":obj:`pyvista.FieldAssociation`"
 msgstr ""
 
@@ -11287,7 +11499,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:31
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.get_data_range:25
+#: pyvista.core.composite.MultiBlock.get_data_range:28
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.dimensions:18
 #: ../../pyvista/pyvista/core/objects.pydocstring of
@@ -11304,7 +11516,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:19
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.get_data_range:13
+#: pyvista.core.composite.MultiBlock.get_data_range:16
 msgid "``(min, max)`` of the named array."
 msgstr ""
 
@@ -11831,6 +12043,10 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter:33
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:25
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:26
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:74
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:13
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -12238,6 +12454,8 @@ msgstr ""
 #: pyvista.demos.demos.plot_glyphs:11
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:79
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:19
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:38
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -12318,6 +12536,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:99
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:74
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:9
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:99
 msgid "**theme** : :obj:`pyvista.themes.DefaultTheme`, :obj:`optional`"
@@ -12331,6 +12551,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:98
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:73
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:8
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:98
 msgid "pyvista.themes.DefaultTheme, optional"
@@ -12342,8 +12564,12 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:99
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.plotting.helpers.plot:99
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:64
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:9
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:99
 msgid "Plot-specific theme."
@@ -13165,21 +13391,29 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:4
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:4
 msgid "To deactivate any active scalars, pass ``None`` as the ``name``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:11
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:11
 msgid "**name** : :class:`python:str` or :data:`python:None`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:10
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:10
 msgid "python:str or python:None"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:9
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:9
 msgid ""
 "Name of the scalars array to assign as active.  If ``None``, deactivates "
 "active scalars for both point and cell data."
@@ -13187,10 +13421,24 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:14
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:14
 msgid ""
 "If there are two arrays of the same name associated with points or cells, it"
 " will prioritize an array matching this type.  Can be either ``'cell'`` or "
 "``'point'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.set_active_scalars:21
+msgid "Association of the scalars matching ``name``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.set_active_scalars:24
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:28
+msgid "An array from the dataset matching ``name``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -16845,6 +17093,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.split_bodies:28
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:22
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:22
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_tecplot_ascii:27
@@ -17005,6 +17255,8 @@ msgstr ""
 #: pyvista.demos.demos.plot_glyphs:12
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:80
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:20
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_grid:13
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -17817,6 +18069,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:63
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:21
 msgid "**component** : :class:`python:int`"
 msgstr ""
 
@@ -18634,6 +18888,8 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:27
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:26
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:27
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:14
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -19467,12 +19723,16 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.MultiBlock.rst:2
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:18
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:7
 msgid "pyvista.MultiBlock"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:2
-#: ../../pyvista/doc/api/core/composite.rst:153:<autosummary>:1
+#: ../../pyvista/doc/api/core/composite.rst:154:<autosummary>:1
 msgid "A composite class to hold many data sets which can be iterated over."
 msgstr ""
 
@@ -19560,6 +19820,39 @@ msgstr ""
 msgid ""
 "Block name to give to dataset.  A default name is given depending on the "
 "block index as 'Block-{i:02}'."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:2
+msgid ""
+"Convert all the datasets within this MultiBlock to "
+":class:`pyvista.PolyData`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:10
+msgid "**copy** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:8
+msgid ""
+"Option to create a shallow copy of any datasets that are already a "
+":class:`pyvista.PolyData`. When ``False``, any datasets that are already "
+"PolyData will not be copied."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:15
+msgid "MultiBlock containing only :class:`pyvista.PolyData` datasets."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.as_polydata_blocks:26
+msgid ""
+"Null blocks are converted to empty :class:`pyvista.PolyData` objects. "
+"Downstream filters that operate on PolyData cannot accept MultiBlocks with "
+"null blocks."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -19697,6 +19990,8 @@ msgstr ""
 #: pyvista.core.composite.MultiBlock.replace:8
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_block_name:8
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:8
 msgid "**index** : :class:`python:int`"
 msgstr ""
 
@@ -19713,6 +20008,20 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_data_range:2
 msgid "Get the min/max of an array given its name across all blocks."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_data_range:11
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:20
+msgid ""
+"**allow_missing** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_data_range:11
+msgid "Allow a block to be missing the named array."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -19754,6 +20063,54 @@ msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.MultiBlock.rst:3
 msgid "Insert a new :class:`pyvista.PolyData` at the start of the multiblock."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:2
+msgid "Return ``True`` when all the blocks are :class:`pyvista.PolyData`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:4
+msgid ""
+"This method will recursively check if any internal blocks are also "
+":class:`pyvista.PolyData`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:23
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.delete_downloads:18
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:36
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.remove_actor:34
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.utilities.reader.CGNSReader.base_array_status:25
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.CGNSReader.distribute_blocks:20
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.utilities.reader.CGNSReader.family_array_status:25
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.cell_to_point_creation:14
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.decompose_polyhedra:18
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.skip_zero_time:18
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.utilities.reader.PointCellDataSelection.cell_array_status:25
+#: ../../pyvista/pyvista/utilities/reader.pydocstring of
+#: pyvista.utilities.reader.PointCellDataSelection.point_array_status:25
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.is_pyvista_dataset:25
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.is_inside_bounds:29
+msgid ":ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:11
+msgid "Return ``True`` when all blocks are :class:`pyvista.PolyData`."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -19830,6 +20187,28 @@ msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.MultiBlock.rst:3
 msgid "Reverse a multiblock."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:2
+msgid "Find the scalars by name and appropriately set it as active."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:19
+msgid ""
+"Allow missing scalars in part of the composite dataset. If all blocks are "
+"missing the array, it will raise a ``KeyError``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:25
+msgid "Field association of the scalars activated."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_active_scalars:39
+msgid "The number of components of the data must match."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -22435,6 +22814,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:8
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:75
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:46
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
@@ -25300,6 +25681,8 @@ msgstr ""
 #: pyvista.UnstructuredGrid.cells_dict:22
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
 #: pyvista.demos.demos.orientation_cube:18
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:99
 msgid ":class:`python:dict`"
 msgstr ""
 
@@ -26109,56 +26492,57 @@ msgstr ""
 msgid ""
 "The dictionary like features are useful when reading in data from a file.  "
 "The keys are often more understandable to access the data than the index. "
-":func:`pyvista.examples.download_cavity` is an OpenFoam dataset with a "
+":func:`pyvista.examples.download_cavity() "
+"<pyvista.examples.downloads.download_cavity>` is an OpenFoam dataset with a "
 "nested ``MultiBlock`` structure.  There are two entries in the top-level "
 "object"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:116
+#: ../../pyvista/doc/api/core/composite.rst:117
 msgid "``\"internalMesh\"`` is a :class:`pyvista.UnstructuredGrid`."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:122
+#: ../../pyvista/doc/api/core/composite.rst:123
 msgid "``\"boundary\"`` is another :class:`pyvista.MultiBlock`."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:128
+#: ../../pyvista/doc/api/core/composite.rst:129
 msgid ""
 "Using the dictionary like features of :class:`pyvista.MultiBlock` allow for "
 "easier inspection and use of the data coming from an outside source.  The "
 "names of each key correspond to human understable portions of the dataset."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:136
+#: ../../pyvista/doc/api/core/composite.rst:137
 msgid "Examples using this class:"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:138
+#: ../../pyvista/doc/api/core/composite.rst:139
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:24
 msgid ":ref:`slice_example`"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:139
+#: ../../pyvista/doc/api/core/composite.rst:140
 msgid ":ref:`volumetric_example`"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:140
+#: ../../pyvista/doc/api/core/composite.rst:141
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:25
 msgid ":ref:`depth_peeling_example`"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:144
+#: ../../pyvista/doc/api/core/composite.rst:145
 msgid "MultiBlock API Reference"
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:145
+#: ../../pyvista/doc/api/core/composite.rst:146
 msgid ""
 "The :class:`pyvista.MultiBlock` class holds attributes that are *common* to "
 "all spatially referenced datasets in PyVista.  This base class is analogous "
 "to VTK's `vtk.vtkMultiBlockDataSet`_ class."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/composite.rst:153:<autosummary>:1
+#: ../../pyvista/doc/api/core/composite.rst:154:<autosummary>:1
 msgid ":py:obj:`pyvista.MultiBlock <pyvista.MultiBlock>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
@@ -27540,35 +27924,6 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.delete_downloads:2
 msgid "Delete all downloaded examples to free space or update the files."
-msgstr ""
-
-#: ../../pyvista/pyvista/examples/downloads.pydocstring of
-#: pyvista.examples.downloads.delete_downloads:18
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:36
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.remove_actor:34
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.utilities.reader.CGNSReader.base_array_status:25
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.CGNSReader.distribute_blocks:20
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.utilities.reader.CGNSReader.family_array_status:25
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.cell_to_point_creation:14
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.decompose_polyhedra:18
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.skip_zero_time:18
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.utilities.reader.PointCellDataSelection.cell_array_status:25
-#: ../../pyvista/pyvista/utilities/reader.pydocstring of
-#: pyvista.utilities.reader.PointCellDataSelection.point_array_status:25
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.is_pyvista_dataset:25
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.is_inside_bounds:29
-msgid ":ref:`bool <python:bltin-boolean-values>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
@@ -30680,13 +31035,694 @@ msgid ""
 "creation routines."
 msgstr ""
 
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:2
+msgid "pyvista.BlockAttributes"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:2
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid "Block attributes used to set the attributes of a block."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:8
+msgid "**block** : :obj:`pyvista.DataObject`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:8
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:13
+msgid "PyVista data object."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:19
+msgid ""
+"**attr** : :obj:`pyvista.plotting.composite_mapper.CompositeAttributes`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:18
+msgid "pyvista.plotting.composite_mapper.CompositeAttributes"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:11
+msgid "Parent attributes."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:23
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:23
+msgid ""
+"This class employs VTK's flat indexing and allows for accessing both the "
+"blocks of a composite dataset as well as the entire composite dataset. If "
+"there is only one composite dataset, ``A``, which contains datasets ``[b, "
+"c]``, the indexing would be ``[A, b, c]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:28
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:28
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:29
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.block_attr:21
+msgid ""
+"If there are two composite datasets ``[B, C]`` in one composite dataset, "
+"``A``, each of which containing three additional datasets ``[d, e, f]``, and"
+" ``[g, h, i]``, respectively, then the head node, ``A``, would be the zero "
+"index, followed by the first child, ``B``, followed by all the children of "
+"``B``, ``[d, e, f]``. In data structures, this flat indexing would be known "
+"as \"Depth-first search\" and the entire indexing would be::"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.BlockAttributes:38
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:38
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:39
+msgid ""
+"Note how the composite datasets themselves are capitalized and are "
+"accessible in the flat indexing, and not just the datasets."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:3
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid ""
+"Add a sphere and a cube as a multiblock dataset to a plotter and then change"
+" the visibility and color of the blocks. Note how the index of the cube is "
+"``1`` as the index of the entire multiblock is ``0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.color:2
+msgid "Get or set the color of a block."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:3
+msgid "Set the colors of a composite dataset to red and blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:5
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:5
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:5
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:5
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:6
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:6
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:6
+msgid ""
+"Note how the zero index is the entire multiblock, so we have to add 1 to our"
+" indexing to access the right block."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.opacity:2
+msgid "Get or set the opacity of a block."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.opacity:4
+msgid "If opacity has not been set this will be ``None``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.opacity:15
+msgid ""
+"VTK 9.0.3 has a bug where changing the opacity to less than 1.0 also changes"
+" the edge visibility on the block that is partially transparent."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:3
+msgid "Change the opacity of the second block of the dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.pickable:2
+msgid "Get or set the pickability of a block."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:3
+msgid ""
+"Make the cube of a multiblock dataset pickable and the sphere unpickable."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:16
+msgid ""
+"See :ref:`composite_picking_example` for a full example using block picking."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.BlockAttributes.visible:2
+msgid "Get or set the visibility of a block."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BlockAttributes.rst:3
+msgid "Hide the first block of a composite dataset."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:2
+msgid "pyvista.CompositeAttributes"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:2
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid "Block attributes."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:8
+msgid ""
+"**mapper** : "
+":obj:`pyvista.plotting.composite_mapper.CompositePolyDataMapper`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:7
+msgid "pyvista.plotting.composite_mapper.CompositePolyDataMapper"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:8
+msgid "Parent mapper."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:19
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:8
+msgid "**dataset** : :obj:`pyvista.MultiBlock`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes:11
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:8
+msgid "Multiblock dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:2
+msgid "Return a block by its flat index."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:8
+msgid "Flat index of the block to retrieve."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:20
+msgid ":obj:`pyvista.DataObject`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:24
+msgid ""
+"This method employs VTK's flat indexing and allows for accessing both the "
+"blocks of a composite dataset as well as the entire composite dataset. If "
+"there is only one composite dataset, ``A``, which contains datasets ``[b, "
+"c]``, the indexing would be ``[A, b, c]``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid ""
+"Add a composite dataset to a plotter and access its block attributes. Note "
+"how the zero index is the entire multiblock and you can use ``1`` and ``2`` "
+"to access the individual sub-blocks."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:18
+msgid "Note this is the same as using ``__getitem__``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_colors:2
+msgid "Reset the color of all blocks."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid "Set individual block colors and then reset them."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_opacities:2
+msgid "Reset the opacities of all blocks."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid ""
+"Change the opacity of the second block of the dataset then reset all "
+"opacities."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_pickabilities:2
+msgid "Reset the pickability of all blocks."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid ""
+"Make the cube of a multiblock dataset pickable and the sphere unpickable, "
+"then reset it."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.reset_visibilities:2
+msgid "Reset the visibility of all blocks."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:3
+msgid ""
+"Hide the first block of a composite dataset and then show all by resetting "
+"visibilities."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:2
+msgid "pyvista.CompositePolyDataMapper"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid "Composite PolyData mapper."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:13
+msgid ""
+"**color_missing_with_nan** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:11
+msgid ""
+"Color any missing values with the ``nan_color``. This is useful when not all"
+" blocks of the composite dataset have the specified ``scalars``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:32
+msgid ""
+"**interpolate_before_map** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper:16
+msgid ""
+"Enabling makes for a smoother scalars display.  Default is ``True``.  When "
+"``False``, OpenGL will interpolate the mapped colors which can result is "
+"showing colors that are not present in the color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.above_range_color:2
+msgid "Return or set the above range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Set the above range color to blue."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.below_range_color:2
+msgid "Return or set the below range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Set the below range color to green."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.block_attr:2
+msgid "Return the block attributes."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.block_attr:16
+msgid ""
+"``block_attr`` employs VTK's flat indexing and allows for accessing both the"
+" blocks of a composite dataset as well as the entire composite dataset. If "
+"there is only one composite dataset, ``A``, which contains datasets ``[b, "
+"c]``, the indexing would be ``[A, b, c]``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid ""
+"Add a sphere and a cube as a multiblock dataset to a plotter and then change"
+" the visibility and color of the blocks."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.color_missing_with_nan:2
+msgid "Color missing arrays with the NaN color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Enable coloring missing values with NaN."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.dataset:2
+msgid "Return the composite dataset assigned to this mapper."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.interpolate_before_map:2
+msgid "Return or set the interpolation of scalars before mapping."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.interpolate_before_map:4
+msgid ""
+"Enabling makes for a smoother scalars display.  When ``False``, OpenGL will "
+"interpolate the mapped colors which can result in showing colors that are "
+"not present in the color map."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Disable interpolation before mapping."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:30
+msgid "Enable interpolation before mapping."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:53
+msgid ""
+"See :ref:`interpolate_before_mapping_example` for additional explanation "
+"regarding this attribute."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.lookup_table:2
+msgid "Return or set the lookup table."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Return the lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.nan_color:2
+msgid "Return or set the NaN color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.nan_color:16
+msgid ""
+":attr:`CompositePolyDataMapper.color_missing_with_nan` must be enabled for "
+"the color to be applied to the actor."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Set the NaN color to blue."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_map_mode:2
+msgid "Return or set the scalar map mode."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid ""
+"Show that the scalar map mode is set to ``'point'`` when setting the active "
+"scalars to point data."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_range:2
+msgid "Return or set the scalar range."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid ""
+"Return the scalar range. In this example it's set to its default value of "
+"``(0.0, 1.0)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.CompositePolyDataMapper.scalar_visibility:2
+msgid "Return or set the scalar visibility."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Show that scalar visibility is ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:2
+msgid "Set the scalars of the mapper."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:9
+msgid "**scalars_name** : :class:`python:str`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:8
+msgid ""
+"Name of the scalars in the dataset. Must already exist in at least of the "
+"blocks."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:16
+msgid "**preference** : :class:`python:str`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:12
+msgid ""
+"For each block, when ``block.n_points == block.n_cells`` and setting "
+"scalars, this parameter sets how the scalars will be mapped to the mesh.  "
+"Default ``'point'``, causes the scalars will be associated with the mesh "
+"points.  Can be either ``'point'`` or ``'cell'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:19
+msgid ""
+"Set component of vector valued scalars to plot.  Must be nonnegative, if "
+"supplied. If ``None``, the magnitude of the vector is plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:26
+msgid "**annotations** : :class:`python:dict`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:25
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:34
+msgid "python:dict"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:24
+msgid ""
+"Pass a dictionary of annotations. Keys are the float values in the scalars "
+"range to annotate on the scalar bar and the values are the the string "
+"annotations."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:30
+msgid "**rgb** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:29
+msgid ""
+"If the ``scalars_name`` corresponds to a 2 dimensional array, plot htose "
+"values as RGB(A) colors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:35
+msgid "**scalar_bar_args** : :class:`python:dict`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:33
+msgid ""
+"Dictionary of keyword arguments to pass when adding the scalar bar to the "
+"scene. For options, see :func:`pyvista.BasePlotter.add_scalar_bar`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:38
+msgid "**n_colors** : :class:`python:int`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:38
+msgid "Number of colors to use when displaying scalars."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:42
+msgid "**nan_color** : :obj:`color_like`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:46
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:51
+msgid "color_like"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
+msgid "The color to use for all ``NaN`` values in the plotted scalar array."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:47
+msgid "**above_color** : :obj:`color_like`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:45
+msgid ""
+"Solid color for values below the scalars range (``clim``). This will "
+"automatically set the scalar bar ``above_label`` to ``'Above'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:52
+msgid "**below_color** : :obj:`color_like`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:50
+msgid ""
+"Solid color for values below the scalars range (``clim``). This will "
+"automatically set the scalar bar ``below_label`` to ``'Below'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:57
+msgid "**clim** : 2 :obj:`item` :class:`python:list`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalarsNone
+msgid "2"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:55
+msgid ""
+"Color bar range for scalars.  Defaults to minimum and maximum of scalars "
+"array.  Example: ``[-1, 2]``. ``rng`` is also an accepted alias for this."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:65
+msgid "**cmap** : :class:`python:str`, :class:`python:list`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:64
+msgid "python:str, python:list"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:60
+msgid ""
+"Name of the Matplotlib colormap to use when mapping the ``scalars``.  See "
+"available Matplotlib colormaps.  Only applicable for when displaying "
+"``scalars``. Requires Matplotlib to be installed.  ``colormap`` is also an "
+"accepted alias for this. If ``colorcet`` or ``cmocean`` are installed, their"
+" colormaps can be specified by name."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:69
+msgid "**flip_scalars** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:68
+msgid ""
+"Flip direction of cmap. Most colormaps allow ``*_r`` suffix to do this as "
+"well."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:74
+msgid "**categories** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:72
+msgid ""
+"If set to ``True``, then the number of unique values in the scalar array "
+"will be used as the ``n_colors`` argument."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
+msgid "**theme** : :obj:`pyvista.themes.DefaultTheme`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:76
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:2
+msgid "pyvista.themes.DefaultTheme"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:82
+msgid "**log_scale** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:80
+msgid ""
+"Use log scale when mapping data to colors. Scalars less than zero are mapped"
+" to the smallest representable positive float."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:87
+msgid "Dictionary of scalar bar arguments."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:2
+msgid "Set each block of the dataset to a unique color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:4
+msgid "This uses ``matplotlib``'s color cycler."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
+msgid "Set each block of the composite dataset to a unique color."
+msgstr ""
+
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:2
 msgid "pyvista.Plotter"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:2
-#: ../../pyvista/doc/api/plotting/index.rst:30:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
 msgid "Plotting object to display vtk meshes or numpy arrays."
 msgstr ""
 
@@ -31086,13 +32122,875 @@ msgstr ""
 msgid "Obtain the camera position when using ``show``."
 msgstr ""
 
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:2
+msgid "pyvista.Property"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:2
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
+msgid "Wrap vtkProperty and expose it pythonically."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:4
+msgid "This class is used to set the property of actors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:20
+msgid "**interpolation** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:12
+msgid "Set the method of shading. One of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:14
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:6
+msgid "``'Physically based rendering'`` - Physically based rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:15
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:7
+msgid "``'pbr'`` - Alias for Physically based rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:16
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:8
+msgid "``'Phong'`` - Phong shading."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:17
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:9
+msgid "``'Gouraud'`` - Gouraud shading."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:18
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:10
+msgid "``'Flat'`` - Flat Shading."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:20
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:12
+msgid "This parameter is case insensitive."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:23
+msgid ""
+"Used to make the entire mesh have a single solid color. Either a string, RGB"
+" list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
+"``color=[1.0, 1.0, 1.0]``, or ``color='#FFFFFF'``. Color will be overridden "
+"if scalars are specified."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:33
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.Chart2D.line:24
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.Chart2D.scatter:24
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.LinePlot2D:23
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.Pen:20
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ScatterPlot2D:23
+msgid "**style** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:30
+msgid ""
+"Visualization style of the mesh.  One of the following: ``style='surface'``,"
+" ``style='wireframe'``, ``style='points'``. Defaults to ``'surface'``. Note "
+"that ``'wireframe'`` only shows a wireframe of the outer geometry."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:38
+msgid "**metallic** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:36
+msgid ""
+"Usually this value is either 0 or 1 for a real material but any value in "
+"between is valid. This parameter is only used by PBR interpolation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:44
+msgid "**roughness** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:41
+msgid ""
+"This value has to be between 0 (glossy) and 1 (rough). A glossy material has"
+" reflections and a high specular part. This parameter is only used by PBR "
+"interpolation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:47
+msgid "**point_size** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:47
+msgid "Size of the points represented by this property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:52
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:27
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:32
+#: ../../pyvista/pyvista/plotting/tools.pydocstring of
+#: pyvista.plotting.tools.create_axes_orientation_box:56
+msgid "**opacity** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:50
+msgid ""
+"Opacity of the mesh. A single float value that will be applied globally "
+"opacity of the mesh and uniformly applied everywhere - should be between 0 "
+"and 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:58
+msgid "**ambient** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:55
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient:4
+msgid ""
+"When lighting is enabled, this is the amount of light in the range of 0 to 1"
+" (default 0.0) that reaches the actor when not directed at the light source "
+"emitted from the viewer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:61
+msgid "**diffuse** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:61
+msgid "The diffuse lighting coefficient. Default 1.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:64
+msgid "**specular** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:64
+msgid "The specular lighting coefficient. Default 0.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:67
+msgid "**specular_power** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:67
+msgid "The specular power. Between 0.0 and 128.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:71
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:35
+msgid ""
+"**show_edges** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:70
+msgid "Shows the edges.  Does not apply to a wireframe representation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:74
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.edge_color:4
+msgid ""
+"The solid color to give the edges when ``show_edges=True``. Either a string,"
+" RGB list, or hex color string."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:78
+msgid ""
+"**render_points_as_spheres** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:78
+msgid "Render points as spheres rather than dots."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:82
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:31
+msgid ""
+"**render_lines_as_tubes** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:81
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:30
+msgid ""
+"Show lines as thick tubes rather than flat lines.  Control the width with "
+"``line_width``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:85
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:34
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:43
+msgid ""
+"**lighting** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:85
+msgid "Enable or disable view direction lighting."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:89
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:24
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:39
+#: ../../pyvista/pyvista/plotting/tools.pydocstring of
+#: pyvista.plotting.tools.create_axes_orientation_box:8
+msgid "**line_width** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:88
+msgid ""
+"Thickness of lines.  Only valid for wireframe and surface representations."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:109
+msgid ""
+"**culling** : :class:`python:str`, :ref:`bool <python:bltin-boolean-"
+"values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:108
+msgid "python:str, bool, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:92
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:4
+msgid ""
+"Does not render faces that are culled. This can be helpful for dense surface"
+" meshes, especially when edges are visible, but can cause flat meshes to be "
+"partially displayed. Defaults to ``'none'``. One of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:97
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:9
+msgid "``\"back\"`` - Enable backface culling"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:98
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:10
+msgid "``\"front\"`` - Enable frontface culling"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property:99
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:11
+msgid "``'none'`` - Disable both backface and frontface culling"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Create a vtk Actor and assign properties to it."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:17
+msgid "Visualize how the property would look when applied to a mesh."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:35
+msgid ""
+"Set custom properties not directly available in "
+":func:`pyvista.Plotter.add_mesh`. Here, we set diffuse, ambient, and "
+"specular power and colors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient:2
+msgid "Return or set ambient."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:9
+msgid "Visualize default ambient light."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:28
+msgid "Visualize ambient at ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:47
+msgid "Visualize ambient at ``1.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient_color:2
+msgid "Return or set the ambient color of this property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.ambient_color:4
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.color:4
+msgid ""
+"Either a string, RGB list, or hex color string.  For example: "
+"``color='white'``, ``color='w'``, ``color=[1.0, 1.0, 1.0]``, or "
+"``color='#FFFFFF'``. Color will be overridden if scalars are specified."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set the ambient color to blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize setting the ambient color to blue with ``ambient = 0.1``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:2
+msgid "Return or set the anisotropy coefficient."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:4
+msgid ""
+"This value controls the anisotropy of the material (0.0 means isotropic). "
+"This requires physically based rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:7
+msgid ""
+"For further details see `PBR Journey Part 2 : Anisotropy model with VTK "
+"<https://www.kitware.com/pbr-journey-part-2-anisotropy-model-with-vtk/>`_"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.anisotropy:21
+msgid "This attribute requires VTK v9.1.0 or newer."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set anisotropy to 0.1"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.color:2
+msgid "Return or set the color of this property."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set the color to blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize setting the property to blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:30
+msgid "Visualize setting the color using an RGB value."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.culling:2
+msgid "Return or set face culling."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Enable back face culling"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Plot default culling."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:30
+msgid ""
+"Plot backface culling. This looks the same as the default culling ``'none'``"
+" because the forward facing faces are already obscuring the back faces."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:51
+msgid ""
+"Plot frontface culling. Here, the forward facing faces are hidden entirely."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse:2
+msgid "Return or set the diffuse lighting coefficient."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse:4
+msgid "Default 1.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse:6
+msgid ""
+"This is the scattering of light by reflection or transmission. Diffuse "
+"reflection results when light strikes an irregular surface such as a frosted"
+" window or the surface of a frosted or coated light bulb."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:9
+msgid "Visualize default diffuse light."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:28
+msgid "Visualize diffuse at ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:47
+msgid "Visualize diffuse at ``0.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse_color:2
+msgid "Return or set the diffuse color of this property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.diffuse_color:4
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_color:4
+msgid ""
+"Either a string, RGB list, or hex color string.  For example: "
+"``color='white'``, ``color='w'``, ``color=[1.0, 1.0, 1.0]``, or "
+"``color='#FFFFFF'``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set the diffuse color to blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize setting the diffuse color to white with ``diffuse = 0.5``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.edge_color:2
+msgid "Return or set the edge color of this property."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:9
+msgid ""
+"Visualize red edges. Set the edges visibility to ``True`` so we can see "
+"them."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:2
+msgid "Return or set the method of shading."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.interpolation:4
+msgid "One of the following options."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set interpolation to physically based rendering."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize default flat shading."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:30
+msgid "Visualize gouraud shading."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:49
+msgid "Visualize phong shading."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:68
+msgid "Visualize physically based rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.lighting:2
+msgid "Return or set view direction lighting."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Disable lighting."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize it."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.line_width:2
+msgid "Return or set the line width."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Change the line width to ``10``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize the default line width."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:31
+msgid "Visualize the a line width of 5.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.metallic:2
+msgid "Return or set metallic."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.metallic:4
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.roughness:4
+msgid ""
+"This requires that the interpolation be set to ``'Physically based "
+"rendering'``"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set metallic to 0.1"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:12
+msgid "Visualize default metallic."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:31
+msgid "Visualize metallic at ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:50
+msgid "Visualize metallic at ``1.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.opacity:2
+msgid "Return or set the opacity of this property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.opacity:4
+msgid ""
+"Opacity of the mesh. A single float value that will be applied globally "
+"opacity of the mesh and uniformly applied everywhere. Between 0 and 1."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set opacity to ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize default opacity of ``1.0``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:30
+msgid "Visualize opacity of ``0.75``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:49
+msgid "Visualize opacity of ``0.25``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:2
+msgid "Plot this property on the Stanford Bunny."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:4
+msgid ""
+"This is useful for visualizing how this property would be applied to an "
+"actor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:10
+msgid "Keyword arguments for :class:`pyvista.Plotter`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.point_size:2
+msgid "Return or set the point size."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Change the point size to ``10.0``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize a point size of ``5.0``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:31
+msgid "Visualize the a point size of ``10.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_lines_as_tubes:2
+msgid "Return or set rendering lines as tubes."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_lines_as_tubes:4
+msgid "Requires representation style be set to ``'wireframe'``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Enable rendering lines as tubes."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:13
+msgid "Visualize default line rendering."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:32
+msgid "Visualize rendering lines as tubes"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_points_as_spheres:2
+msgid "Return or set rendering points as spheres."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.render_points_as_spheres:4
+msgid "Requires representation style be set to ``'points'``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Enable rendering points as spheres"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:13
+msgid "Visualize default point rendering."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:32
+msgid "Visualize rendering points as spheres."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.roughness:2
+msgid "Return or set roughness."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set roughness to 0.1"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:13
+msgid "Visualize default roughness with metallic of ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:32
+msgid "Visualize roughness at ``0.0`` with metallic of ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:51
+msgid "Visualize roughness at ``1.0`` with metallic of ``0.5``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.show_edges:2
+msgid "Return or set the visibility of edges."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.show_edges:4
+msgid ""
+"Shows or hides the edges.  Does not apply to a wireframe representation."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:9
+msgid "Visualize default edge visibility of ``False``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:28
+msgid "Visualize edge visibility of ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular:2
+msgid "Return or set specular."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular:4
+msgid "Default 0.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular:6
+msgid ""
+"Specular lighting simulates the bright spot of a light that appears on shiny"
+" objects."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:9
+msgid "Visualize default specular light."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:28
+msgid "Visualize specular at ``0.5``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:47
+msgid "Visualize specular at ``1.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_color:2
+msgid "Return or set the specular color of this property."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set the specular color to blue."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize setting the specular color to blue with ``specular = 0.2``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_power:2
+msgid "Return or set specular power."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.specular_power:4
+msgid "The specular power. Between 0.0 and 128.0. Default 1.0"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set specular power to 5.0"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:12
+msgid "Visualize default specular power."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:31
+msgid "Visualize specular power at ``0.1``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:50
+msgid "Visualize specular power at ``5.0``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:69
+msgid "Visualize specular power at ``128.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:2
+msgid "Return or set Visualization style of the mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:4
+msgid "One of the following (case insensitive):"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:6
+msgid "``'surface'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:7
+msgid "``'wireframe'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.Property.style:8
+msgid "``'points'``"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:3
+msgid "Set the representation style to ``'Wireframe'``"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:11
+msgid "Visualize default surface representation style."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:30
+msgid "Visualize wireframe representation style."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Property.rst:49
+msgid "Visualize points representation style."
+msgstr ""
+
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:2
 msgid "pyvista.Renderer"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:2
-#: ../../pyvista/doc/api/plotting/index.rst:30:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
 msgid "Renderer class."
 msgstr ""
 
@@ -31567,52 +33465,12 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:24
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:39
-#: ../../pyvista/pyvista/plotting/tools.pydocstring of
-#: pyvista.plotting.tools.create_axes_orientation_box:8
-msgid "**line_width** : :class:`python:float`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:24
 msgid "Thickness of lines."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:27
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:32
-#: ../../pyvista/pyvista/plotting/tools.pydocstring of
-#: pyvista.plotting.tools.create_axes_orientation_box:56
-msgid "**opacity** : :class:`python:float`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:27
 msgid "Opacity of mesh.  Default 1.0 and should be between 0 and 1."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:31
-msgid ""
-"**render_lines_as_tubes** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:30
-msgid ""
-"Show lines as thick tubes rather than flat lines.  Control the width with "
-"``line_width``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:34
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:43
-msgid ""
-"**lighting** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -31751,12 +33609,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_floor:32
 msgid "The opacity of the generated surface."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:35
-msgid ""
-"**show_edges** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -33557,10 +35409,6 @@ msgstr ""
 msgid "Alternatively, set via a string."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:2
-msgid "pyvista.themes.DefaultTheme"
-msgstr ""
-
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:2
 #: ../../pyvista/doc/api/plotting/theme.rst:27:<autosummary>:1
 msgid "PyVista default theme."
@@ -35134,19 +36982,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.LinePlot2D:19
 msgid "Width of the line drawn in this plot. Defaults to ``1``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Chart2D.line:24
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Chart2D.scatter:24
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.LinePlot2D:23
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:20
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ScatterPlot2D:23
-msgid "**style** : :class:`python:str`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -39152,12 +40987,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/api/plotting/index.rst:51
+#: ../../pyvista/doc/api/plotting/index.rst:64
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/api/plotting/index.rst:52
+#: ../../pyvista/doc/api/plotting/index.rst:65
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -39210,32 +41045,63 @@ msgid ""
 " plotting functionality in PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:30:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:30:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
 msgid ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:32
-msgid "Charts API"
+#: ../../pyvista/doc/api/plotting/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
+"color\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/index.rst:33
+msgid "Composite Plotting Reference"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:34
+msgid ""
+"These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
+"\\(dataset\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
+"dataset\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:43:<autosummary>:1
+msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:45
+msgid "Charts API"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:46
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
 " plotting windows. Note that using charts requires a VTK version of at least"
 " 9.0 and in a future release will require `vtk>=9.2`."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:44
+#: ../../pyvista/doc/api/plotting/index.rst:57
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:45
+#: ../../pyvista/doc/api/plotting/index.rst:58
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"
