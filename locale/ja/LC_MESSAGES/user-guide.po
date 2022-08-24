@@ -538,7 +538,7 @@ msgid ""
 ":attr:`cell_data <pyvista.DataSet.cell_data>`, and then access it using the "
 "``[]`` operator."
 msgstr ""
-":class:`DataSet <pyvista.DataSet>` にスカラデータを追加する最も簡単な方法は， ``[]`` "
+":class:`DataSet <pyvista.DataSet>` にスカラーデータを追加する最も簡単な方法は， ``[]`` "
 "演算子を使うことです．上の例を続けて，各セルに1つの整数を割り当ててみましょう． これにはPythonの :class:`list` を使い， "
 "|UnstructuredGrid| のセル数と同じ長さにすることができます．また，もっと単純な例として，適切な長さの :class:`range` "
 "を使用することもできます． ここでは，レンジを作成して :attr:`cell_data <pyvista.DataSet.cell_data>` "
@@ -566,7 +566,7 @@ msgid ""
 "We can also add labels to our plot to show which cells are assigned which "
 "scalars.  Note how this is in the same order as the scalars we assigned."
 msgstr ""
-"また，どのセルにどのスカラが割り当てられているかを示すために，プロットにラベルを追加することもできます． "
+"また，どのセルにどのスカラーが割り当てられているかを示すために，プロットにラベルを追加することもできます． "
 "割り当てられたスカラーと同じ順番になっていることに注目してください．"
 
 #: ../../pyvista/doc/user-guide/data_model.rst:485
@@ -691,8 +691,8 @@ msgid ""
 "active scalars and both the point and cell data have an array of the same "
 "name, you must specify the ``preference``:"
 msgstr ""
-"アクティブなスカラはデフォルトではポイントスカラであることに注意してください． これは :func:`set_active_scalars() "
-"<pyvista.DataSet.set_active_scalars>` でアクティブなスカラを設定することで変更することができます． "
+"アクティブなスカラーはデフォルトではポイントスカラーであることに注意してください． これは :func:`set_active_scalars() "
+"<pyvista.DataSet.set_active_scalars>` でアクティブなスカラーを設定することで変更することができます． "
 "アクティブなスカラーを設定したいときに，ポイントデータとセルデータの両方に同じ名前の配列がある場合は， ``preference`` "
 "を指定しなければならないことに注意してください．"
 
@@ -841,7 +841,7 @@ msgstr ""
 "VTKでは，1つの \"アクティブ\" なベクトルしか許可しません．変換したい複数のベクトル配列がある場合には， :func:`transform() "
 "<pyvista.DataSet.transform>` で ``transform_all_input_vectors=True`` "
 "を設定してください． "
-"これは，3つのコンポーネントを持つ配列を変換するので，RGB配列のような複数コンポーネントのスカラ配列は，変換後に破棄しなければならないことに注意してください．"
+"これは，3つのコンポーネントを持つ配列を変換するので，RGB配列のような複数コンポーネントのスカラー配列は，変換後に破棄しなければならないことに注意してください．"
 
 #: ../../pyvista/doc/user-guide/index.rst:2
 msgid "User Guide"
@@ -1816,7 +1816,7 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:144
 msgid "Scalar Bars"
-msgstr "スカラバー"
+msgstr "スカラーバー"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:145
 msgid ""
@@ -1827,7 +1827,7 @@ msgid ""
 msgstr ""
 "スカラーバーは，プロットにアクティブなスカラーがある場合に自動的に表示されます．たとえば， ``active_scalar_name`` "
 "のSt.Helens ``mesh`` は ``'Elevation'`` "
-"です．スカラバー，スカラバータイトル，カラーマップドロップダウンメニューは自動的にシーンに追加されます．"
+"です．スカラーバー，スカラーバータイトル，カラーマップドロップダウンメニューは自動的にシーンに追加されます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:4
 msgid "Using ``ipyvtklink`` with PyVista"
@@ -2102,7 +2102,7 @@ msgstr "物理ベースのレンダリング"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:17
 msgid "Face and point scalars"
-msgstr "面と点のスカラ"
+msgstr "面と点のスカラー"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:18
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:177
@@ -2168,7 +2168,7 @@ msgstr "PyVistaの作図シーンは，three.jsの中で，同じ照明，カメ
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:124
 msgid "Scalars Support"
-msgstr "スカラサポート"
+msgstr "スカラーサポート"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:125
 msgid ""
@@ -2321,7 +2321,7 @@ msgstr "不足している機能は以下の通りです．"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:337
 msgid "Scalar bars"
-msgstr "スカラバー"
+msgstr "スカラーバー"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:338
 msgid "Physically based rendering textures (e.g. from gLTF files)."

@@ -817,7 +817,7 @@ msgstr ""
 msgid ""
 "Make an array of scalar values with the same length as the points array. "
 "Each element in this array will correspond to points at the same index:"
-msgstr "points配列と同じ長さのスカラ値の配列を作成します．この配列の各要素は，同じインデックスのポイントに対応します．"
+msgstr "points配列と同じ長さのスカラー値の配列を作成します．この配列の各要素は，同じインデックスのポイントに対応します．"
 
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:208
 msgid ""
@@ -834,12 +834,12 @@ msgid ""
 "little function that will compute vectors for every node in the point cloud "
 "and add those vectors to the mesh."
 msgstr ""
-"そのデータは退屈ですよね?複数のスカラ値を持つデータ配列，例えば3つの要素を持つベクトルを追加することもできます．ポイントクラウド内のすべてのノードのベクトルを計算し，それらのベクトルをメッシュに追加する簡単な関数を作成します．"
+"そのデータは退屈ですよね?複数のスカラー値を持つデータ配列，例えば3つの要素を持つベクトルを追加することもできます．ポイントクラウド内のすべてのノードのベクトルを計算し，それらのベクトルをメッシュに追加する簡単な関数を作成します．"
 
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:237
 msgid "This time, we're going to create a totally new, random point cloud."
 msgstr ""
-"そのデータは退屈ですよね?複数のスカラ値を持つデータ配列，例えば3つの要素を持つベクトルを追加することもできます．ポイントクラウド内のすべてのノードのベクトルを計算し，それらのベクトルをメッシュに追加する簡単な関数を作成します．"
+"そのデータは退屈ですよね?複数のスカラー値を持つデータ配列，例えば3つの要素を持つベクトルを追加することもできます．ポイントクラウド内のすべてのノードのベクトルを計算し，それらのベクトルをメッシュに追加する簡単な関数を作成します．"
 
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:295
 msgid ""
@@ -5597,7 +5597,7 @@ msgid ""
 " default value of ``range(len(geom))`` is assumed."
 msgstr ""
 ":func:`pyvista.DataSetFilters.glyph` の ``geom`` kwargとして渡されるジオメトリのシーケンスと単一 "
-"(スカラ) ジオメトリを許可することによって，下位互換性のある方法でグリフのテーブルを許可することができます． ``indices`` "
+"(スカラー) ジオメトリを許可することによって，下位互換性のある方法でグリフのテーブルを許可することができます． ``indices`` "
 "オプションキーワードはテーブル内の各グリフジオメトリのインデックスを指定し，指定された場合は ``geom`` "
 "と同じ長さである必要があります．省略した場合は， ``range(len(geom))`` のデフォルト値が想定されます．"
 
@@ -8065,7 +8065,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:20.952** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:20.952** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
@@ -8073,7 +8073,7 @@ msgstr ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:20.952"
-msgstr ""
+msgstr "00:20.952"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -8603,7 +8603,7 @@ msgstr "これを表示します．"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:484
 msgid "**Total running time of the script:** ( 0 minutes  20.952 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  20.952 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:496
 msgid ":download:`Download Python source code: slicing.py <slicing.py>`"
@@ -9885,31 +9885,35 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_composite-picking.py>` "
 "to download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_composite-picking.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:24
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Composite Picking"
-msgstr ""
+msgstr "Compositeピッキング"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:26
 msgid ""
 "Demonstrate how to pick individual blocks of a :class:`pyvista.MultiBlock` "
 "using :func:`pyvista.Plotter.enable_block_picking`."
 msgstr ""
+":func:`pyvista.Plotter.enable_block_picking` を使用して、 "
+":class:`pyvista.MultiBlock` の個々のブロックをピックする方法を示します。"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:47
 msgid "Create a MultiBlock Dataset"
-msgstr ""
+msgstr "MultiBlockデータセットの作成"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:48
 msgid ""
 "Create 100 superellipsoids using :func:`pyvista.ParametricSuperEllipsoid`"
-msgstr ""
+msgstr ":func:`pyvista.ParametricSuperEllipsoid` を使って100個のスーパーエリプソイドを作成する。"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:87
 msgid "Enable Block Picking"
-msgstr ""
+msgstr "ブロックピッキングを有効にする"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:88
 msgid ""
@@ -9918,22 +9922,28 @@ msgid ""
 "set the block color to red when the block is clicked and unset the color if "
 "the color has already been set for the block."
 msgstr ""
+":class:`pyvista.Plotter` に ``blocks`` を追加し、ブロックのピッキングを有効にします。 "
+"また、物理ベースのレンダリングを有効にして、ブロックがクリックされたときにブロックの色を赤に設定し、ブロックに既に色が設定されている場合は色を解除するようにコールバックを設定します。"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:128
 msgid "**Total running time of the script:** ( 0 minutes  2.737 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.737 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:140
 msgid ""
 ":download:`Download Python source code: composite-picking.py <composite-"
 "picking.py>`"
 msgstr ""
+":download:`Download Python source code: composite-picking.py <composite-"
+"picking.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:144
 msgid ""
 ":download:`Download Jupyter notebook: composite-picking.ipynb <composite-"
 "picking.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: composite-picking.ipynb <composite-"
+"picking.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:13
 msgid ""
@@ -10636,11 +10646,14 @@ msgid ""
 "individual blocks of a pyvista.MultiBlock using "
 "pyvista.Plotter.enable_...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Demonstrate how to pick "
+"individual blocks of a pyvista.MultiBlock using "
+"pyvista.Plotter.enable_...\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:141
 #: ../../pyvista/doc/examples/index.rst:1367
 msgid ":ref:`sphx_glr_examples_02-plot_composite-picking.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_composite-picking.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:143
 #: ../../pyvista/doc/examples/index.rst:1369
@@ -10648,6 +10661,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Composite Picking</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Composite Picking</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:149
 #: ../../pyvista/doc/examples/index.rst:1375
@@ -10836,6 +10851,9 @@ msgid ""
 "pyvista.Plotter.add_mesh method has an interpolate_before_map argument that "
 "affects the way...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The "
+"pyvista.Plotter.add_mesh method has an interpolate_before_map argument that "
+"affects the way...\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:24
@@ -11353,7 +11371,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/02-plot/scalar-bars.rst:24
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Customize Scalar Bars"
-msgstr "スカラバーをカスタマイズ"
+msgstr "スカラーバーをカスタマイズ"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:600
 #: ../../pyvista/doc/examples/index.rst:1826
@@ -11666,6 +11684,9 @@ msgid ""
 "visualized with colors.  The effect of this can vary depending on the "
 "dataset's topology and the chosen colormap."
 msgstr ""
+":func:`add_mesh <pyvista.Plotter.add_mesh>` メソッドには "
+"``interpolate_before_map`` 引数があり、スカラーデータを色で視覚化する方法を変更することができます。 "
+"この効果は、データセットのトポロジーと選択されたカラーマップによって異なります。"
 
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:31
 msgid ""
@@ -11679,6 +11700,9 @@ msgid ""
 "VTK? <https://www.kitware.com/what-is-interpolatescalarsbeforemapping-in-"
 "vtk/>`_"
 msgstr ""
+"詳しくは `What is InterpolateScalarsBeforeMapping in VTK? "
+"<https://www.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_ "
+"をご覧ください．"
 
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:52
 msgid ""
@@ -11694,7 +11718,7 @@ msgstr ""
 "メッシュは，ノードまたはセルのデータによって色付けされます．ノードのデータによってメッシュを色付けする場合は，値をセルの面全体に補間する必要があります．これらのスカラーを補間するプロセスは重要です．"
 " ``interpolate_before_map`` "
 "を省略すると，カラーマッピングはポリゴンポイントで行われ，カラーは補間されますが，一般的には精度が低くなります．一方， "
-"``interpolate_before_map`` がオンの場合は，スカラはデータセットのトポロジ全体にわたって補間され，より精度が高くなります．"
+"``interpolate_before_map`` がオンの場合は，スカラーはデータセットのトポロジ全体にわたって補間され，より精度が高くなります．"
 
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:60
 msgid ""
@@ -11777,7 +11801,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:260
 msgid "**Total running time of the script:** ( 0 minutes  2.208 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.208 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/interpolate-before-map.rst:272
 msgid ""
@@ -13043,7 +13067,7 @@ msgid ""
 "scalar bar are defined in :func:`pyvista.BasePlotter.add_scalar_bar`."
 msgstr ""
 ":func:`pyvista.BasePlotter.add_mesh` の ``scalar_bar_args`` "
-"パラメータを介してスカラバーを制御するキーワード引数を渡すことにより，インタラクティブなスカラバーでシーンをプロットして好きな場所に移動することもできます．スカラバーを制御するキーワード引数は"
+"パラメータを介してスカラーバーを制御するキーワード引数を渡すことにより，インタラクティブなスカラーバーでシーンをプロットして好きな場所に移動することもできます．スカラーバーを制御するキーワード引数は"
 " :func:`pyvista.BasePlotter.add_scalar_bar` で定義されます．"
 
 #: ../../pyvista/doc/examples/02-plot/scalar-bars.rst:113
@@ -13117,17 +13141,19 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:04.945** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:04.945** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_composite-picking.py` (``composite-"
 "picking.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_composite-picking.py` (``composite-"
+"picking.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:02.737"
-msgstr ""
+msgstr "00:02.737"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
@@ -13139,7 +13165,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid "00:02.208"
-msgstr ""
+msgstr "00:02.208"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:15
 msgid ""
@@ -13601,7 +13627,7 @@ msgid ""
 "``texture`` and ``scalars`` arguments."
 msgstr ""
 " ``interpolate_before_map`` 設定が ``False`` であることを確認し， ``texture`` 引数と "
-"``scalars`` 引数の両方を指定することによって，テクスチャとともにスカラデータを表示します．"
+"``scalars`` 引数の両方を指定することによって，テクスチャとともにスカラーデータを表示します．"
 
 #: ../../pyvista/doc/examples/02-plot/texture.rst:145
 msgid "Note that this process can be completed with any image texture!"
@@ -14378,7 +14404,7 @@ msgid ""
 "create corresponding checkboxes for those meshes of the same color to toggle"
 " their visibility in the scene."
 msgstr ""
-"この例では，一意のカラーを持つ多数のメッシュをシーンに追加し，同じカラーのメッシュに対応するチェックボックスを作成してシーン内での可視性を切り替えます．"
+"この例では，一意のカラーを持つ多数のメッシュをシーンに追加し，同じカラーのメッシュに対応するチェックボックスを作成してシーン内での視認性を切り替えます．"
 
 #: ../../pyvista/doc/examples/03-widgets/checkbox-widget.rst:162
 msgid "**Total running time of the script:** ( 0 minutes  0.787 seconds)"
