@@ -25,7 +25,7 @@ Pixel Art of ALIEN MONSTERS
 
 Here we use :func:`pyvista.Box` to make `pixel art <https://en.wikipedia.org/wiki/Pixel_art>`_.
 Pixel string `source <https://commons.wikimedia.org/wiki/File:Noto_Emoji_Pie_1f47e.svg>`_
-and `license <https://github.com/googlefonts/noto-emoji#license>`_.
+and `license <https://github.com/googlefonts/noto-emoji/blob/main/LICENSE>`_.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-15
 
@@ -166,28 +166,23 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.329 seconds)
+   **Total running time of the script:** ( 0 minutes  1.089 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pixel-art.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: create-pixel-art.py <create-pixel-art.py>`
 
-     :download:`Download Python source code: create-pixel-art.py <create-pixel-art.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-pixel-art.ipynb <create-pixel-art.ipynb>`
+      :download:`Download Jupyter notebook: create-pixel-art.ipynb <create-pixel-art.ipynb>`
 
 
 .. only:: html
