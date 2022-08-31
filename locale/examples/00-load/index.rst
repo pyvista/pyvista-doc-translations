@@ -174,6 +174,23 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to build a simple pyvista.PolyData using triangle strips.">
+
+.. only:: html
+
+  .. image:: /examples/00-load/images/thumb/sphx_glr_create-polydata-strips_thumb.png
+    :alt: Triangle Strips
+
+  :ref:`sphx_glr_examples_00-load_create-polydata-strips.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Triangle Strips</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices using pyvista.Spline.">
 
 .. only:: html
@@ -461,6 +478,7 @@ data.
    /examples/00-load/create-point-cloud
    /examples/00-load/create-pointset
    /examples/00-load/create-poly
+   /examples/00-load/create-polydata-strips
    /examples/00-load/create-spline
    /examples/00-load/create-structured-surface
    /examples/00-load/create-surface-draped

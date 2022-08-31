@@ -23,11 +23,11 @@
 Extract Cell Centers
 ~~~~~~~~~~~~~~~~~~~~
 
-Extract the coordinates of the centers of all cells/faces in a mesh.
+Extract the coordinates of the centers of all cells or faces in a mesh.
 
-Here we use :func:`pyvista.DataSetFilters.cell_centers`
+Here we use :func:`cell_centers <pyvista.DataSetFilters.cell_centers>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
@@ -42,11 +42,11 @@ Here we use :func:`pyvista.DataSetFilters.cell_centers`
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-18
+.. GENERATED FROM PYTHON SOURCE LINES 18-19
 
 First let's fetch the centers of a mesh with 2D geometries (a surface)
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-34
+.. GENERATED FROM PYTHON SOURCE LINES 19-35
 
 .. code-block:: default
 
@@ -60,10 +60,10 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
     centers = mesh.cell_centers()
 
-    p = pv.Plotter()
-    p.add_mesh(mesh, show_edges=True, line_width=1)
-    p.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
-    p.show(cpos=cpos)
+    pl = pv.Plotter()
+    pl.add_mesh(mesh, show_edges=True, line_width=1)
+    pl.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
+    pl.show(cpos=cpos)
 
 
 
@@ -78,11 +78,11 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-36
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 We can also do this for full 3D meshes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-53
+.. GENERATED FROM PYTHON SOURCE LINES 37-54
 
 .. code-block:: default
 
@@ -98,10 +98,10 @@ We can also do this for full 3D meshes.
 
     centers = grid.cell_centers()
 
-    p = pv.Plotter()
-    p.add_mesh(grid, show_edges=True, opacity=0.5, line_width=1)
-    p.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
-    p.show(cpos=cpos)
+    pl = pv.Plotter()
+    pl.add_mesh(grid, show_edges=True, opacity=0.5, line_width=1)
+    pl.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
+    pl.show(cpos=cpos)
 
 
 
@@ -115,15 +115,17 @@ We can also do this for full 3D meshes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+.. GENERATED FROM PYTHON SOURCE LINES 55-62
 
 .. code-block:: default
 
 
-    p = pv.Plotter()
-    p.add_mesh(grid.extract_all_edges(), color="k", line_width=1)
-    p.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
-    p.show(cpos=cpos)
+    pl = pv.Plotter()
+    pl.add_mesh(grid.extract_all_edges(), color="k", line_width=1)
+    pl.add_mesh(centers, color="r", point_size=8.0, render_points_as_spheres=True)
+    pl.show(cpos=cpos)
+
+
 
 
 
@@ -136,31 +138,66 @@ We can also do this for full 3D meshes.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 63-69
+
+Edge centers
+~~~~~~~~~~~~
+You can use :func:`cell_centers <pyvista.DataSetFilters.cell_centers>` in
+combination with :func:`extract_all_edges
+<pyvista.DataSetFilters.extract_all_edges>` to get the center of all edges of
+a mesh.
+
+.. GENERATED FROM PYTHON SOURCE LINES 69-84
+
+.. code-block:: default
+
+
+    # create a simple mesh and extract all the edges and then centers of the mesh.
+    mesh = pv.Cube()
+    edge_centers = mesh.extract_all_edges().cell_centers().points
+
+    # Plot the edge centers
+    pl = pv.Plotter()
+    pl.add_mesh(mesh, show_edges=True, line_width=5)
+    pl.add_points(
+        edge_centers,
+        render_points_as_spheres=True,
+        color='r',
+        point_size=20,
+    )
+    pl.show()
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_004.png
+   :alt: cell centers
+   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.940 seconds)
+   **Total running time of the script:** ( 0 minutes  2.439 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: cell-centers.py <cell-centers.py>`
 
-     :download:`Download Python source code: cell-centers.py <cell-centers.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: cell-centers.ipynb <cell-centers.ipynb>`
+      :download:`Download Jupyter notebook: cell-centers.ipynb <cell-centers.ipynb>`
 
 
 .. only:: html

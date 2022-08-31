@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:01.089** total execution time for **examples_00-load** files:
+**00:00.649** total execution time for **examples_00-load** files:
 
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-load_create-pixel-art.py` (``create-pixel-art.py``)                                       | 00:01.089 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-load_create-polydata-strips.py` (``create-polydata-strips.py``)                           | 00:00.649 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_00-load_create-explicit-structured-grid.py` (``create-explicit-structured-grid.py``)         | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
@@ -17,6 +17,8 @@ Computation times
 | :ref:`sphx_glr_examples_00-load_create-kochanek-spline.py` (``create-kochanek-spline.py``)                           | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py` (``create-parametric-geometric-objects.py``) | 00:00.000 | 0.0 MB |
++----------------------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_00-load_create-pixel-art.py` (``create-pixel-art.py``)                                       | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_00-load_create-platonic-solids.py` (``create-platonic-solids.py``)                           | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------+-----------+--------+

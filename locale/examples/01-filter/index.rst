@@ -43,7 +43,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extract the coordinates of the centers of all cells/faces in a mesh.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract the coordinates of the centers of all cells or faces in a mesh.">
 
 .. only:: html
 

@@ -197,6 +197,23 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to build a simple pyvista.PolyData using triangle strips.">
+
+.. only:: html
+
+  .. image:: /examples/00-load/images/thumb/sphx_glr_create-polydata-strips_thumb.png
+    :alt: Triangle Strips
+
+  :ref:`sphx_glr_examples_00-load_create-polydata-strips.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Triangle Strips</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices using pyvista.Spline.">
 
 .. only:: html
@@ -512,7 +529,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Extract the coordinates of the centers of all cells/faces in a mesh.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Extract the coordinates of the centers of all cells or faces in a mesh.">
 
 .. only:: html
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-27 01:02+0000\n"
+"POT-Creation-Date: 2022-08-31 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -854,7 +854,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.volume:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:45
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:167
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:82
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:96
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.cell_normals:23
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.face_normals:22
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.faces:21
@@ -864,9 +864,11 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_faces:18
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_lines:17
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_open_edges:17
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_strips:17
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_verts:17
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.point_normals:23
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.save:50
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.strips:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.verts:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:22
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:53
@@ -902,7 +904,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ribbon:57
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth:57
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:87
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:67
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:70
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:58
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:69
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.triangulate:29
@@ -1814,6 +1816,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.faces:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.is_all_triangles:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.point_normals:0
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.strips:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.verts:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.volume:0
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:0
@@ -2921,8 +2924,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:106
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:111
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:118
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:57
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:78
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:71
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:92
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.save:16
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:35
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:40
@@ -3013,11 +3016,11 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:50
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:53
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:56
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:25
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:34
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:40
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:46
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:28
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:37
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:43
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:49
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:52
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:37
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:40
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:48
@@ -3413,7 +3416,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ribbon:54
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth:54
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:69
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:64
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:67
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:55
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:66
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.triangulate:26
@@ -3676,7 +3679,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ribbon:40
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth:40
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:57
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:50
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:53
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:52
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.triangulate:12
@@ -3797,7 +3800,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ribbon:40
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth:40
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:57
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:50
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:53
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:52
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.triangulate:12
@@ -3851,7 +3854,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:14
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:35
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:38
 msgid "**pass_cell_data** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
@@ -4458,7 +4461,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.set_active_scalars:15
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:54
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.plotting.helpers.plot:84
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:62
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:76
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.curvature:12
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:12
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.remove_points:14
@@ -4836,6 +4839,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.tessellate:14
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:39
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:51
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:65
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.collision:27
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.collision:36
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:37
@@ -4844,7 +4848,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:25
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth:9
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:19
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:29
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:32
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:38
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:45
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.tube:20
@@ -4935,6 +4939,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.plotting.lights.Light:85
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:34
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:46
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:60
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_legend:33
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.view_vector:23
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CircularArcFromNormal:17
@@ -5285,7 +5290,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.copy:8
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:22
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet.cast_to_polydata:11
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:58
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:72
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.RectilinearGrid:44
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.UniformGrid:43
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.convert_array:14
@@ -5887,6 +5892,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.surface_indices:22
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.set_active_scalars:35
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.faces:18
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.strips:18
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.verts:18
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.curvature:31
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:25
@@ -12168,7 +12174,7 @@ msgid "Whether to copy the input ``points``, or to create a PointSet from them w
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:36
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:79
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:93
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtk_points:19
 msgid "**force_float** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
@@ -12287,21 +12293,37 @@ msgstr ""
 msgid "Number of lines in the ``lines`` connectivity array.  While optional, setting this speeds up the creation of the ``PolyData``."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:61
+msgid "**strips** : :term:`python:sequence`, :obj:`optional`"
+msgstr ""
+
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:55
+msgid "Triangle strips connectivity array.  Triangle strips require an initial triangle, and the following points of the strip. Each triangle is built with the new point and the two previous points. Just as in ``lines`` and ``faces``, this array requires a padding indicating the number of points. For example, a single triangle strip of ``[0, 1, 2, 3, 6, 7, 4, 5, 0, 1]`` requires padding of ``10`` and should input as ``[10, 0, 1, 2, 3, 6, 7, 4, 5, 0, 1]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:66
+msgid "**n_strips** : :class:`python:int`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:64
+msgid "Number of strips in the ``strips`` connectivity array.  While optional, setting this speeds up the creation of the ``PolyData``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:69
 msgid "Whether to copy the inputs, or to create a mesh from them without copying them.  Setting ``deep=True`` ensures that the original arrays can be modified outside the mesh without affecting the mesh. Default is ``False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:63
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:77
 #: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.get_reader:116
 #: ../../pyvista/pyvista/utilities/fileio.py:docstring of pyvista.utilities.fileio.read:36
 msgid "**force_ext** : :class:`python:str`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:61
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:75
 msgid "If initializing from a file, force the reader to treat the file as if it had this extension as opposed to the one in the file."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:66
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData:80
 msgid "Casts the datatype to ``float32`` if points datatype is non-float.  Default ``True``. Set this to ``False`` to allow non-float types, though this may lead to truncation of intermediate floats when transforming datasets."
 msgstr ""
 
@@ -12326,11 +12348,15 @@ msgid "Initialize from vertices and lines."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:32
+msgid "Initialize from vertices and triangle strips."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:37
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.StructuredGrid:7
 msgid "Initialize from a filename."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:36
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:41
 msgid "See :ref:`ref_create_poly` for more examples."
 msgstr ""
 
@@ -12435,6 +12461,14 @@ msgstr ""
 msgid "Return the number of open edges on a plane."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_strips:2
+msgid "Return the number of strips."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:3
+msgid "Create a simple mesh with one triangle strip and return the number of triangles."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.n_verts:2
 msgid "Return the number of vertices."
 msgstr ""
@@ -12510,6 +12544,14 @@ msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:30
 msgid "Save a mesh as a VTK file."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.strips:2
+msgid "Return a pointer to the strips as a numpy array."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.strips:9
+msgid "Array of strip indices."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.PolyData.verts:2
@@ -14352,43 +14394,47 @@ msgstr ""
 msgid "Also note that if triangle strips or polylines are defined in the input they are passed through and not joined nor extended. (If you wish to strip these use ``triangulate`` filter to fragment the input into triangles and lines prior to running this filter.)"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:26
-msgid "**join** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:24
-msgid "If ``True``, the output polygonal segments will be joined if they are contiguous. This is useful after slicing a surface. The default is ``False``."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:30
-msgid "**max_length** : :class:`python:int`, :obj:`optional`"
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:21
+msgid "This filter implements `vtkStripper <https://vtk.org/doc/nightly/html/classvtkStripper.html>`_"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:29
-msgid "Specify the maximum number of triangles in a triangle strip, and/or the maximum number of lines in a poly-line."
+msgid "**join** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:27
+msgid "If ``True``, the output polygonal segments will be joined if they are contiguous. This is useful after slicing a surface. The default is ``False``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:33
+msgid "**max_length** : :class:`python:int`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:32
+msgid "Specify the maximum number of triangles in a triangle strip, and/or the maximum number of lines in a poly-line."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:36
 msgid "Enable/Disable passing of the CellData in the input to the output as FieldData. Note the field data is transformed. Default is ``False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:41
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:44
 msgid "**pass_cell_ids** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:38
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:41
 msgid "If ``True``, the output polygonal dataset will have a celldata array that holds the cell index of the original 3D cell that produced each output cell. This is useful for picking. The default is ``False`` to conserve memory."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:47
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:50
 msgid "**pass_point_ids** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:44
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:47
 msgid "If ``True``, the output polygonal dataset will have a pointdata array that holds the point index of the original vertex that produced each output vertex. This is useful for picking. The default is ``False`` to conserve memory."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:55
+#: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.strip:58
 msgid "Stripped mesh."
 msgstr ""
 
