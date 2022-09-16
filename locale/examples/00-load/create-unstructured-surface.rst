@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-unstructured-surface.py:
 
 
-.. _ref_create_unstructured:
+.. _create_unstructured_example:
 
 Creating an Unstructured Grid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,9 +31,9 @@ Create an irregular, unstructured grid from NumPy arrays.
 
 
     import numpy as np
-    import vtk
 
     import pyvista as pv
+    from pyvista import CellType
 
 
 
@@ -49,7 +49,7 @@ This is useful when creating a grid from scratch or copying it from another
 format.  See `vtkUnstructuredGrid <https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_
 for available cell types and their descriptions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-78
+.. GENERATED FROM PYTHON SOURCE LINES 20-81
 
 .. code-block:: default
 
@@ -63,7 +63,7 @@ for available cell types and their descriptions.
     cells = np.array([8, 0, 1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10, 11, 12, 13, 14, 15])
 
     # cell type array. Contains the cell type of each cell
-    cell_type = np.array([vtk.VTK_HEXAHEDRON, vtk.VTK_HEXAHEDRON])
+    cell_type = np.array([CellType.HEXAHEDRON, CellType.HEXAHEDRON])
 
     # in this example, each cell uses separate points
     cell1 = np.array(
@@ -93,12 +93,15 @@ for available cell types and their descriptions.
     )
 
     # points of the cell array
-    points = np.vstack((cell1, cell2))
+    points = np.vstack((cell1, cell2)).astype(float)
 
     # create the unstructured grid directly from the numpy arrays
     # The offset is optional and will be either calculated if not given (VTK version < 9),
     # or is not necessary anymore (VTK version >= 9)
-    grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
+    if pv.vtk_version_info < (9,):
+        grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
+    else:
+        grid = pv.UnstructuredGrid(cells, cell_type, points)
 
     # For cells of fixed sizes (like the mentioned Hexahedra), it is also possible to use the
     # simplified dictionary interface. This automatically calculates the cell array with types
@@ -106,7 +109,7 @@ for available cell types and their descriptions.
     # added to the dictionary.
     cells_hex = np.arange(16).reshape([2, 8])
     # = np.array([[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]])
-    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells_hex}, points)
+    grid = pv.UnstructuredGrid({CellType.HEXAHEDRON: cells_hex}, points)
 
     # plot the grid (and suppress the camera position output)
     _ = grid.plot(show_edges=True)
@@ -120,21 +123,10 @@ for available cell types and their descriptions.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:507: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
-      warnings.warn(
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:65: UserWarning: VTK 9 no longer accepts an offset array
-      grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 79-84
+.. GENERATED FROM PYTHON SOURCE LINES 82-87
 
 UnstructuredGrid with Shared Points
 -----------------------------------
@@ -142,7 +134,7 @@ UnstructuredGrid with Shared Points
 The next example again creates an unstructured grid containing
 hexahedral cells, but using common points between the cells.
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-155
+.. GENERATED FROM PYTHON SOURCE LINES 87-158
 
 .. code-block:: default
 
@@ -197,9 +189,9 @@ hexahedral cells, but using common points between the cells.
         ]
     ).ravel()
 
-    # each cell is a VTK_HEXAHEDRON
+    # each cell is a HEXAHEDRON
     celltypes = np.empty(8, dtype=np.uint8)
-    celltypes[:] = vtk.VTK_HEXAHEDRON
+    celltypes[:] = CellType.HEXAHEDRON
 
     # the offset array points to the start of each cell (via flat indexing)
     offset = np.array([0, 9, 18, 27, 36, 45, 54, 63])
@@ -208,7 +200,7 @@ hexahedral cells, but using common points between the cells.
     # sequentially access the cell array by first looking at each index of
     # cell array (based on the offset array), and then read the number of
     # points based on the first value of the cell.  In this case, the
-    # VTK_HEXAHEDRON is described by 8 points.
+    # HEXAHEDRON is described by 8 points.
 
     # for example, the 5th cell would be accessed by vtk with:
     start_of_cell = offset[4]
@@ -223,8 +215,6 @@ hexahedral cells, but using common points between the cells.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     [11 13 25 23 12 14 26 24]
@@ -232,11 +222,11 @@ hexahedral cells, but using common points between the cells.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 156-157
+.. GENERATED FROM PYTHON SOURCE LINES 159-160
 
 Finally, create the unstructured grid and plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-174
+.. GENERATED FROM PYTHON SOURCE LINES 160-180
 
 .. code-block:: default
 
@@ -245,12 +235,15 @@ Finally, create the unstructured grid and plot it
     # grid = pv.UnstructuredGrid(cells, celltypes, points)
 
     # if you are not using VTK 9.0 or newer, you must use the offset array
-    grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
+    if pv.vtk_version_info < (9,):
+        grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
+    else:
+        grid = pv.UnstructuredGrid(cells, celltypes, points)
 
     # Alternate versions:
-    grid = pv.UnstructuredGrid({vtk.VTK_HEXAHEDRON: cells.reshape([-1, 9])[:, 1:]}, points)
+    grid = pv.UnstructuredGrid({CellType.HEXAHEDRON: cells.reshape([-1, 9])[:, 1:]}, points)
     grid = pv.UnstructuredGrid(
-        {vtk.VTK_HEXAHEDRON: np.delete(cells, np.arange(0, cells.size, 9))}, points
+        {CellType.HEXAHEDRON: np.delete(cells, np.arange(0, cells.size, 9))}, points
     )
 
     # plot the grid (and suppress the camera position output)
@@ -266,25 +259,16 @@ Finally, create the unstructured grid and plot it
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/00-load/create-unstructured-surface.py:162: UserWarning: VTK 9 no longer accepts an offset array
-      grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 175-178
+.. GENERATED FROM PYTHON SOURCE LINES 181-184
 
 Tetrahedral Grid
 ~~~~~~~~~~~~~~~~
 Here is how we can create an unstructured tetrahedral grid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-224
+.. GENERATED FROM PYTHON SOURCE LINES 184-229
 
 .. code-block:: default
 
@@ -309,8 +293,7 @@ Here is how we can create an unstructured tetrahedral grid.
         ]
     )
 
-    # 10 is just vtk.VTK_TETRA
-    celltypes = np.array([10, 10, 10, 10, 10, 10, 10, 10, 10, 10], dtype=np.uint8)
+    celltypes = np.full(10, fill_value=CellType.TETRA, dtype=np.uint8)
 
     # These are the 10 points. The number of cells does not need to match the
     # number of points, they just happen to in this example
@@ -346,23 +329,18 @@ Here is how we can create an unstructured tetrahedral grid.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 225-227
+.. GENERATED FROM PYTHON SOURCE LINES 230-232
 
 For fun, let's separate all the cells and plot out the individual cells. Shift
 them a little bit from the center to create an "exploded view".
 
-.. GENERATED FROM PYTHON SOURCE LINES 227-235
+.. GENERATED FROM PYTHON SOURCE LINES 232-235
 
 .. code-block:: default
 
 
-    split_cells = pv.MultiBlock()
-    for index in range(10):
-        single_cell = grid.extract_cells([index])
-        single_cell.points += (np.array(single_cell.center) - np.array(grid.center)) * 0.5
-        split_cells.append(single_cell)
-
-    split_cells.plot(show_edges=True)
+    split_cells = grid.explode(0.5)
+    split_cells.plot(show_edges=True, ssao=True)
 
 
 
@@ -378,28 +356,23 @@ them a little bit from the center to create an "exploded view".
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.779 seconds)
+   **Total running time of the script:** ( 0 minutes  1.879 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: create-unstructured-surface.py <create-unstructured-surface.py>`
 
-     :download:`Download Python source code: create-unstructured-surface.py <create-unstructured-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-unstructured-surface.ipynb <create-unstructured-surface.ipynb>`
+      :download:`Download Jupyter notebook: create-unstructured-surface.ipynb <create-unstructured-surface.ipynb>`
 
 
 .. only:: html

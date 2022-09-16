@@ -310,6 +310,23 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example extends the create_unstructured_example example by including an explanation of lin...">
+
+.. only:: html
+
+  .. image:: /examples/00-load/images/thumb/sphx_glr_linear-cells_thumb.png
+    :alt: Linear Cells
+
+  :ref:`sphx_glr_examples_00-load_linear-cells.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Linear Cells</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Note this feature is only available for vtk&gt;=9.">
 
 .. only:: html
@@ -486,6 +503,7 @@ data.
    /examples/00-load/create-truss
    /examples/00-load/create-uniform-grid
    /examples/00-load/create-unstructured-surface
+   /examples/00-load/linear-cells
    /examples/00-load/load-gltf
    /examples/00-load/load-vrml
    /examples/00-load/read-dolfin

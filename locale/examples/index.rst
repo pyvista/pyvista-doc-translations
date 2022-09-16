@@ -333,6 +333,23 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example extends the create_unstructured_example example by including an explanation of lin...">
+
+.. only:: html
+
+  .. image:: /examples/00-load/images/thumb/sphx_glr_linear-cells_thumb.png
+    :alt: Linear Cells
+
+  :ref:`sphx_glr_examples_00-load_linear-cells.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Linear Cells</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Note this feature is only available for vtk&gt;=9.">
 
 .. only:: html
@@ -1272,6 +1289,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="PyVista supports three types of anti-aliasing:">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_anti-aliasing_thumb.png
+    :alt: Anti-Aliasing
+
+  :ref:`sphx_glr_examples_02-plot_anti-aliasing.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Anti-Aliasing</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with pyvista.Plotter.add_background_image.">
 
 .. only:: html
@@ -1284,6 +1318,23 @@ plotting routines to perform tasks like:
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Background Image</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Blurring">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_blurring_thumb.png
+    :alt: Blurring
+
+  :ref:`sphx_glr_examples_02-plot_blurring.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Blurring</div>
     </div>
 
 
@@ -1403,6 +1454,23 @@ plotting routines to perform tasks like:
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Depth Peeling</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how you can use pyvista.Plotter.enable_depth_of_field to highlight part of y...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_depth_of_field_thumb.png
+    :alt: Depth of Field Plotting
+
+  :ref:`sphx_glr_examples_02-plot_depth_of_field.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Depth of Field Plotting</div>
     </div>
 
 
@@ -1913,6 +1981,23 @@ plotting routines to perform tasks like:
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Plot data in spherical coordinates</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the usage of surface space ambient occlusion.">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_ssao_thumb.png
+    :alt: Surface Space Ambient Occlusion
+
+  :ref:`sphx_glr_examples_02-plot_ssao.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Surface Space Ambient Occlusion</div>
     </div>
 
 

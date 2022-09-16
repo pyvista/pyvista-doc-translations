@@ -33,9 +33,9 @@ using the ``extract_surface`` filter.
 
 
     import numpy as np
-    from vtk import VTK_QUADRATIC_HEXAHEDRON
 
     import pyvista as pv
+    from pyvista import CellType
 
 
 
@@ -100,7 +100,7 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
     # If you are using vtk>=9, you do not need the offset array
     offset = np.array([0])
     cells = np.hstack((20, np.arange(20))).astype(np.int64, copy=False)
-    celltypes = np.array([VTK_QUADRATIC_HEXAHEDRON])
+    celltypes = np.array([CellType.QUADRATIC_HEXAHEDRON])
     grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
     # finally, extract the surface and plot it
@@ -118,8 +118,6 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -161,28 +159,23 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.754 seconds)
+   **Total running time of the script:** ( 0 minutes  0.500 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: extract-surface.py <extract-surface.py>`
 
-     :download:`Download Python source code: extract-surface.py <extract-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extract-surface.ipynb <extract-surface.ipynb>`
+      :download:`Download Jupyter notebook: extract-surface.ipynb <extract-surface.ipynb>`
 
 
 .. only:: html

@@ -147,7 +147,7 @@ combination with :func:`extract_all_edges
 <pyvista.DataSetFilters.extract_all_edges>` to get the center of all edges of
 a mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-84
+.. GENERATED FROM PYTHON SOURCE LINES 69-86
 
 .. code-block:: default
 
@@ -169,6 +169,8 @@ a mesh.
 
 
 
+
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_004.png
    :alt: cell centers
    :srcset: /examples/01-filter/images/sphx_glr_cell-centers_004.png
@@ -178,10 +180,41 @@ a mesh.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 87-91
+
+Add labels to cells
+~~~~~~~~~~~~~~~~~~~
+There is not a method to add labels to cells.
+If you want to label it, you need to extract the position to label it.
+
+.. GENERATED FROM PYTHON SOURCE LINES 91-99
+
+.. code-block:: default
+
+
+    grid = pv.UniformGrid(dims=(10, 10, 1))
+    points = grid.cell_centers().points
+
+    pl = pv.Plotter()
+    pl.add_mesh(grid, show_edges=True)
+    pl.add_point_labels(points, labels=[f"{i}" for i in range(points.shape[0])])
+    pl.show(cpos="xy")
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_005.png
+   :alt: cell centers
+   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_005.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.439 seconds)
+   **Total running time of the script:** ( 0 minutes  1.890 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

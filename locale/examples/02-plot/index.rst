@@ -29,6 +29,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="PyVista supports three types of anti-aliasing:">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_anti-aliasing_thumb.png
+    :alt: Anti-Aliasing
+
+  :ref:`sphx_glr_examples_02-plot_anti-aliasing.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Anti-Aliasing</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with pyvista.Plotter.add_background_image.">
 
 .. only:: html
@@ -41,6 +58,23 @@ plotting routines to perform tasks like:
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Background Image</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Blurring">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_blurring_thumb.png
+    :alt: Blurring
+
+  :ref:`sphx_glr_examples_02-plot_blurring.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Blurring</div>
     </div>
 
 
@@ -160,6 +194,23 @@ plotting routines to perform tasks like:
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Depth Peeling</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how you can use pyvista.Plotter.enable_depth_of_field to highlight part of y...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_depth_of_field_thumb.png
+    :alt: Depth of Field Plotting
+
+  :ref:`sphx_glr_examples_02-plot_depth_of_field.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Depth of Field Plotting</div>
     </div>
 
 
@@ -675,6 +726,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the usage of surface space ambient occlusion.">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_ssao_thumb.png
+    :alt: Surface Space Ambient Occlusion
+
+  :ref:`sphx_glr_examples_02-plot_ssao.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Surface Space Ambient Occlusion</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This allows you to pick points on the surface of a mesh.">
 
 .. only:: html
@@ -783,7 +851,9 @@ plotting routines to perform tasks like:
 .. toctree::
    :hidden:
 
+   /examples/02-plot/anti-aliasing
    /examples/02-plot/background_image
+   /examples/02-plot/blurring
    /examples/02-plot/bounds
    /examples/02-plot/chart_basics
    /examples/02-plot/chart_overlays
@@ -791,6 +861,7 @@ plotting routines to perform tasks like:
    /examples/02-plot/cmap
    /examples/02-plot/composite-picking
    /examples/02-plot/depth-peeling
+   /examples/02-plot/depth_of_field
    /examples/02-plot/distance-along-spline
    /examples/02-plot/edges
    /examples/02-plot/edl
@@ -821,6 +892,7 @@ plotting routines to perform tasks like:
    /examples/02-plot/shading
    /examples/02-plot/silhouette
    /examples/02-plot/spherical
+   /examples/02-plot/ssao
    /examples/02-plot/surface-picking
    /examples/02-plot/texture
    /examples/02-plot/themes
