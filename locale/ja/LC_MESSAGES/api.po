@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-16 02:04+0000\n"
+"POT-Creation-Date: 2022-09-17 01:29+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -99,6 +99,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.dataset.DataSet.cell_points:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.copy_meta_from:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -483,10 +485,10 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:0
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:0
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:0
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:0
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:0
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -1338,6 +1340,8 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_textures:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_cells_along_line:44
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_cells_within_bounds:37
@@ -1363,8 +1367,6 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.n_cells:21 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.n_points:17
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.overwrite:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:171
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1471,7 +1473,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:53
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:30
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:34
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_largest:31
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -1676,7 +1678,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:21
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:45
+#: pyvista.core.pointset.PointSet:49
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.plotting.helpers.plot:171
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -1853,10 +1855,10 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:50
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:21
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:55
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:85
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:55
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:85
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:31
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -3725,10 +3727,10 @@ msgstr "カメラのディープコピーを取得します．"
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:0
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:0
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:0
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:0
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:0
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:0
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -4545,7 +4547,7 @@ msgstr "カメラから焦点距離の距離を返すか設定します．"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_active_scalars:38
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:39
+#: pyvista.core.pointset.PointSet:43
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_all_triangles:25
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -4938,8 +4940,8 @@ msgstr "**padding** : :class:`python:float`, :obj:`optional`"
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:24
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:29
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:55
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:55
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
 #: pyvista.demos.demos.plot_wave:10
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
@@ -5462,7 +5464,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:35
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:12
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:16
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_largest:10
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -5722,9 +5724,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_active_scalars:19
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:21
+#: pyvista.core.pointset.PointSet:25
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:35
+#: pyvista.core.pointset.PointSet:39
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet.cast_to_polydata:10
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -6011,12 +6013,12 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:47
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:32
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:31
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:52
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:67
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:31
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:52
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:67
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.lines_from_points:12
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -6638,7 +6640,7 @@ msgstr "平面を計算するビューポートのアスペクト．デフォル
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:50
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:27
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:31
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_surface:47
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -7062,7 +7064,7 @@ msgstr "頂点セルの生成を有効か無効にします．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:36
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:13
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:17
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_largest:14
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -7231,8 +7233,8 @@ msgstr "頂点セルの生成を有効か無効にします．"
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:48
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:33
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:68
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:68
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:43
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -7313,7 +7315,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:36
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:13
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:17
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_largest:14
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -8725,10 +8727,10 @@ msgstr "**preference** : :class:`python:str`, :obj:`optional`"
 #: pyvista.core.filters.uniform_grid.UniformGridFilters.median_smooth:26
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
 #: pyvista.core.filters.uniform_grid.UniformGridFilters.rfft:23
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:59
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:63
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:59
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:63
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.convert_array:10
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
@@ -9519,6 +9521,8 @@ msgstr "**bounds** : :term:`python:sequence`, :obj:`optional`"
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:37
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:13
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:32
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:37
@@ -10096,7 +10100,7 @@ msgstr "フィールド配列に割り当てる名前．"
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:8
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:22
+#: pyvista.core.pointset.PointSet:26
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet.cast_to_polydata:11
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -10239,7 +10243,9 @@ msgstr "**dataset** : :obj:`vtk.vtkDataSet`"
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_structure:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.overwrite:17
+#: pyvista.core.dataset.DataSet.copy_from:17
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.overwrite:22
 msgid "vtk.vtkDataSet"
 msgstr "vtk.vtkDataSet"
 
@@ -11104,6 +11110,36 @@ msgid "Clear the texture from the globe example."
 msgstr "地球儀の例のテクスチャを消去します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:2
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.overwrite:2
+msgid ""
+"Overwrite this dataset inplace with the new dataset's geometries and data."
+msgstr "このデータセットin-placeを新しいデータセットのジオメトリとデータで上書きします．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.overwrite:23
+msgid "**mesh** : :obj:`vtk.vtkDataSet`"
+msgstr "**mesh** : :obj:`vtk.vtkDataSet`"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:8
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.overwrite:10
+msgid "The overwriting mesh."
+msgstr "上書きするメッシュ．"
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
+msgid ""
+"Create two meshes and overwrite ``mesh_a`` with ``mesh_b``. Show that "
+"``mesh_a`` is equal to ``mesh_b``."
+msgstr ""
+"2つのメッシュを作成し， ``mesh_a`` を ``mesh_b`` で上書きします． ``mesh_a`` は ``mesh_b`` "
+"と同じであることを示します．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.copy_meta_from:8
 msgid "**ido** : :obj:`pyvista.DataSet`"
 msgstr "**ido** : :obj:`pyvista.DataSet`"
@@ -11880,28 +11916,9 @@ msgid "Return the number of points."
 msgstr "ポイント数を取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.overwrite:2
-msgid ""
-"Overwrite this dataset inplace with the new dataset's geometries and data."
-msgstr "このデータセットin-placeを新しいデータセットのジオメトリとデータで上書きします．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.overwrite:18
-msgid "**mesh** : :obj:`vtk.vtkDataSet`"
-msgstr "**mesh** : :obj:`vtk.vtkDataSet`"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.overwrite:8
-msgid "The overwriting mesh."
-msgstr "上書きするメッシュ．"
-
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
-msgid ""
-"Create two meshes and overwrite ``mesh_a`` with ``mesh_b``. Show that "
-"``mesh_a`` is equal to ``mesh_b``."
+#: pyvista.core.dataset.DataSet.overwrite:4
+msgid "Use :func:`DataSet.copy_from` instead."
 msgstr ""
-"2つのメッシュを作成し， ``mesh_a`` を ``mesh_b`` で上書きします． ``mesh_a`` は ``mesh_b`` "
-"と同じであることを示します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:2
@@ -13659,8 +13676,8 @@ msgstr "**angle** : :class:`python:float`"
 #: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:18
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.tube:10
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:21
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:18
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -15473,8 +15490,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.contour:20
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:32
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:32
 msgid ""
 "**compute_normals** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
@@ -16000,7 +16017,19 @@ msgid "This tends to be less efficient than :func:`extract_surface`."
 msgstr "これは :func:`extract_surface` よりも効率が悪くなる傾向があります．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:18
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:14
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Wavelet:13
+msgid "**extent** : :term:`python:sequence`, :obj:`optional`"
+msgstr "**extent** : :term:`python:sequence`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:13
+msgid "Specify a (xmin,xmax, ymin,ymax, zmin,zmax) bounding box to clip data."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:22
 msgid "Surface of the dataset."
 msgstr "データセットの表面．"
 
@@ -21173,24 +21202,32 @@ msgstr ""
 "を参照してください．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:16
-msgid "**points** : :obj:`Sequence`, :obj:`optional`"
-msgstr "**points** : :obj:`Sequence`, :obj:`optional`"
+#: pyvista.core.pointset.PointSet:20
+msgid "**var_inp** : :obj:`vtk.vtkPointSet`, :obj:`Sequence`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PointSet:19
+msgid "vtk.vtkPointSet, Sequence, optional"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet:15
-msgid "Sequence, optional"
-msgstr "Sequence, optional"
+msgid ""
+"Flexible input type.  Can be a ``vtk.vtkPointSet``, in which case this "
+"PointSet object will be copied if ``deep=True`` and will be a shallow copy "
+"if ``deep=False``."
+msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:15
+#: pyvista.core.pointset.PointSet:19
 msgid ""
 "List, numpy array, or sequence containing point locations. Must be an ``(N, "
 "3)`` array of points."
 msgstr "点の位置を含むリスト，numpy配列，またはシーケンス．点の ``(N, 3)`` 配列である必要があります．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:19
+#: pyvista.core.pointset.PointSet:23
 msgid ""
 "Whether to copy the input ``points``, or to create a PointSet from them "
 "without copying them.  Setting ``deep=True`` ensures that the original "
@@ -21201,7 +21238,7 @@ msgstr ""
 "を設定すると，メッシュに影響を与えずにメッシュの外部でオリジナルの配列を修正できます．デフォルトは ``False`` です．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:36
+#: pyvista.core.pointset.PointSet:40
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:93
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
@@ -21212,7 +21249,7 @@ msgstr ""
 "**force_float** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:25
+#: pyvista.core.pointset.PointSet:29
 msgid ""
 "Casts the datatype to ``float32`` if points datatype is non-float. Default "
 "``True``. Set this to ``False`` to allow non-float types, though this may "
@@ -21223,7 +21260,7 @@ msgstr ""
 "に設定すると，非浮動小数点型を許容することになりますが，データセットを変換する際に，中間の浮動小数点数が切り捨てられる可能性があります．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:40
+#: pyvista.core.pointset.PointSet:44
 msgid ""
 "This class requires ``vtk>=9.1.0``. This is an abstract class in "
 "``vtk<9.1.0`` and cannot be instantiated."
@@ -23292,8 +23329,8 @@ msgstr "メッシュを押し出す方向と長さ．"
 #: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:62
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.tube:18
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:53
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:53
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:23
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -26337,8 +26374,8 @@ msgstr ""
 #: pyvista.core.filters.uniform_grid.UniformGridFilters.median_smooth:40
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
 #: pyvista.core.filters.uniform_grid.UniformGridFilters.rfft:38
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:82
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:82
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_channels:18
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
@@ -26551,11 +26588,9 @@ msgstr ""
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UniformGridFilters.rst:3
 msgid ""
 "First, create sample data to smooth. Here, we use "
-":func:`pyvista.perlin_noise() <pyvista.core.common_data.perlin_noise>` to "
+":func:`pyvista.perlin_noise() <pyvista.utilities.common.perlin_noise>` to "
 "create meaningful data."
 msgstr ""
-"まず，スムージングするためのサンプルデータを作成します．ここでは :func:`pyvista.perlin_noise() "
-"<pyvista.core.common_data.perlin_noise>` を用いて，意味のあるデータを作成します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UniformGridFilters.rst:27
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UniformGridFilters.rst:27
@@ -27533,18 +27568,18 @@ msgstr "まず，サンプルの四面体UnstructuredGridをロードし，プ�
 msgid "Now, subdivide and plot."
 msgstr "さて，細分化し，プロットします．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.common_data.perlin_noise.rst:2
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.perlin_noise.rst:2
 msgid "perlin\\_noise"
 msgstr "perlin\\_noise"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:2
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:2
 #: ../../pyvista/doc/api/core/misc.rst:10:<autosummary>:1
 msgid "Return the implicit function that implements Perlin noise."
 msgstr "Perlin ノイズを実装する暗黙の関数を返します．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:4
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:4
 msgid ""
 "Uses ``vtk.vtkPerlinNoise`` and computes a Perlin noise field as an implicit"
 " function. ``vtk.vtkPerlinNoise`` is a concrete implementation of "
@@ -27556,8 +27591,8 @@ msgstr ""
 "``vtk.vtkPerlinNoise`` は ``vtk.vtkImplicitFunction`` の具象実装である．Perlin noise は"
 " Ken Perlin によって開発された非周期的で連続的なノイズ関数で，実世界のオブジェクトのモデリングに有用です．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:10
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:10
 msgid ""
 "The amplitude and frequency of the noise pattern are adjustable. This "
 "implementation of Perlin noise is derived closely from Greg Ward's version "
@@ -27566,18 +27601,18 @@ msgstr ""
 "ノイズパターンの振幅と周波数は調整可能です．このPerlinノイズの実装は，Graphics Gems IIのGreg "
 "Wardのバージョンから密接に派生したものです．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:22
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:22
 msgid "**amplitude** : :class:`python:float`"
 msgstr "**amplitude** : :class:`python:float`"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:17
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:17
 msgid "Amplitude of the noise function."
 msgstr "ノイズ関数の振幅．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:19
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:19
 msgid ""
 "``amplitude`` can be negative. The noise function varies randomly between "
 "``-|Amplitude|`` and ``|Amplitude|``. Therefore the range of values is "
@@ -27586,8 +27621,8 @@ msgstr ""
 "振幅 ``amplitude`` は負になることがある．ノイズ関数は ``-|Amplitude|`` と ``|Amplitude|`` "
 "の間でランダムに変化します．したがって，値の範囲は ``2*|Amplitude|`` と大きくなっています．初期振幅は1です．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:28
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:28
 msgid ""
 "**freq** : :obj:`Sequence`\\[:class:`python:float`, :class:`python:float`, "
 ":class:`python:float`]"
@@ -27595,27 +27630,27 @@ msgstr ""
 "**freq** : :obj:`Sequence`\\[:class:`python:float`, :class:`python:float`, "
 ":class:`python:float`]"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:27
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:35
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:27
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:35
 msgid "Sequence[python:float, python:float, python:float]"
 msgstr "Sequence[python:float, python:float, python:float]"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:25
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:25
 msgid ""
 "The frequency, or physical scale, of the noise function (higher is finer "
 "scale)."
 msgstr "ノイズ関数の周波数，または物理的なスケール（高いほど細かいスケール）．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:28
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:28
 msgid "The frequency can be adjusted per axis, or the same for all axes."
 msgstr "周波数は，軸ごとに調整することも，全軸で同じにすることも可能です．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:36
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:36
 msgid ""
 "**phase** : :obj:`Sequence`\\[:class:`python:float`, :class:`python:float`, "
 ":class:`python:float`]"
@@ -27623,13 +27658,13 @@ msgstr ""
 "**phase** : :obj:`Sequence`\\[:class:`python:float`, :class:`python:float`, "
 ":class:`python:float`]"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:31
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:31
 msgid "Set/get the phase of the noise function."
 msgstr "ノイズ関数の位相を設定／取得します．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:33
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:33
 msgid ""
 "This parameter can be used to shift the noise function within space (perhaps"
 " to avoid a beat with a noise pattern at another scale). Phase tends to "
@@ -27637,49 +27672,46 @@ msgid ""
 msgstr ""
 "このパラメータは，空間内でノイズ関数をシフトさせるために使用することができます（おそらく，別のスケールのノイズパターンとのビートを避けるため）．位相は約単位ごとに繰り返す傾向があるので，0.5の位相は半周期のシフトとなります．"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:52
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:52
 msgid ":obj:`vtk.vtkPerlinNoise`"
 msgstr ":obj:`vtk.vtkPerlinNoise`"
 
-#: ../../pyvista/pyvista/core/common_data.pydocstring of
-#: pyvista.core.common_data.perlin_noise:41
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.perlin_noise:41
 msgid ""
 "Instance of ``vtk.vtkPerlinNoise`` to a Perlin noise field as an implicit "
 "function. Use with :func:`pyvista.sample_function() "
-"<pyvista.core.imaging.sample_function>`."
+"<pyvista.utilities.common.sample_function>`."
 msgstr ""
-"``vtk.vtkPerlinNoise`` のインスタンスを暗黙の関数として，Perlin ノイズフィールドに変換します． "
-":func:`pyvista.sample_function() <pyvista.core.imaging.sample_function>` "
-"と共に使用します．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.common_data.perlin_noise.rst:3
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.perlin_noise.rst:3
 msgid ""
 "Create a Perlin noise function with an amplitude of 0.1, frequency for all "
 "axes of 1, and a phase of 0 for all axes."
 msgstr "振幅0.1，全軸の周波数1，全軸の位相0，Perlinノイズ関数を作成します．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.common_data.perlin_noise.rst:9
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.perlin_noise.rst:9
 msgid "Sample Perlin noise over a structured grid and plot it."
 msgstr "構造格子上でPerlinノイズをサンプリングし，それをプロットする．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.imaging.sample_function.rst:2
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.sample_function.rst:2
 msgid "sample\\_function"
 msgstr "sample\\_function"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:2
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:2
 #: ../../pyvista/doc/api/core/misc.rst:10:<autosummary>:1
 msgid "Sample an implicit function over a structured point set."
 msgstr "構造化された点セット上の陰関数をサンプルします．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:4
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:4
 msgid "Uses ``vtk.vtkSampleFunction``"
 msgstr "``vtk.vtkSampleFunction`` を使用します．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:6
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:6
 msgid ""
 "This method evaluates an implicit function and normals at each point in a "
 "``vtk.vtkStructuredPoints``. The user can specify the sample dimensions and "
@@ -27688,8 +27720,8 @@ msgstr ""
 "このメソッドは， ``vtk.vtkStructuredPoints`` "
 "内の各点で陰関数と法線を評価します．ユーザは，サンプリングの次元と空間上の位置を指定することができます．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:10
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:10
 msgid ""
 "To create closed surfaces (in conjunction with the vtkContourFilter), "
 "capping can be turned on to set a particular value on the boundaries of the "
@@ -27697,70 +27729,70 @@ msgid ""
 msgstr ""
 "閉曲面を作成するために（vtkContourFilterと組み合わせて），キャッピングをオンにしてサンプル空間の境界に特定の値を設定することができます．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:18
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:18
 msgid "**function** : :obj:`vtk.vtkImplicitFunction`"
 msgstr "**function** : :obj:`vtk.vtkImplicitFunction`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:17
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:17
 msgid "vtk.vtkImplicitFunction"
 msgstr "vtk.vtkImplicitFunction"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:17
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:17
 msgid ""
 "Implicit function to evaluate.  For example, the function generated from "
 ":func:`pyvista.perlin_noise`."
 msgstr "評価する暗黙の関数． 例えば， :func:`pyvista.perlin_noise` から生成される関数がこれにあたります．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:25
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:12
 msgid "**bounds** : :obj:`length` 6 :term:`python:sequence`"
 msgstr "**bounds** : :obj:`length` 6 :term:`python:sequence`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:24
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:11
 msgid "length 6 python:sequence"
 msgstr "length 6 python:sequence"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:21
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:21
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:8
 msgid "Specify the bounds in the format of:"
 msgstr "以下の形式で境界を指定します．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:23
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:23
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:10
 msgid "``(xmin, xmax, ymin, ymax, zmin, zmax)``"
 msgstr "``(xmin, xmax, ymin, ymax, zmin, zmax)``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:25
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:25
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:12
 msgid "Defaults to ``(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0)``."
 msgstr "デフォルトは ``(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0)`` です．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:29
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:29
 msgid "**dim** : :obj:`length` 3 :term:`python:sequence`"
 msgstr "**dim** : :obj:`length` 3 :term:`python:sequence`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:28
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:28
 msgid "length 3 python:sequence"
 msgstr "length 3 python:sequence"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:28
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:28
 msgid ""
 "Dimensions of the data on which to sample in the format of ``(xdim, ydim, "
 "zdim)``.  Defaults to ``(50, 50, 50)``."
@@ -27768,80 +27800,80 @@ msgstr ""
 "``(xdim, ydim, zdim)`` のフォーマットで表される，サンプリングするデータの次元． デフォルトは ``(50, 50, 50)`` "
 "です．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:32
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:32
 msgid "Enable or disable the computation of normals.  Default ``False``."
 msgstr "法線の計算を有効または無効にします． デフォルトは ``False`` です．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:47
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:47
 msgid "**output_type** : :obj:`np.dtype`, :obj:`optional`"
 msgstr "**output_type** : :obj:`np.dtype`, :obj:`optional`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:46
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:46
 msgid "np.dtype, optional"
 msgstr "np.dtype, optional"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:35
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:35
 msgid ""
 "Set the output scalar type.  Defaults to ``np.double``.  One of the "
 "following:"
 msgstr "出力スカラー型を設定します．デフォルトは ``np.double`` です． 以下のいずれかを指定します．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:38
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:38
 msgid "``np.float64``"
 msgstr "``np.float64``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:39
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:39
 msgid "``np.float32``"
 msgstr "``np.float32``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:40
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:40
 msgid "``np.int64``"
 msgstr "``np.int64``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:41
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:41
 msgid "``np.uint64``"
 msgstr "``np.uint64``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:42
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:42
 msgid "``np.int32``"
 msgstr "``np.int32``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:43
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:43
 msgid "``np.uint32``"
 msgstr "``np.uint32``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:44
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:44
 msgid "``np.int16``"
 msgstr "``np.int16``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:45
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:45
 msgid "``np.uint16``"
 msgstr "``np.uint16``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:46
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:46
 msgid "``np.int8``"
 msgstr "``np.int8``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:47
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:47
 msgid "``np.uint8``"
 msgstr "``np.uint8``"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:50
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:50
 msgid ""
 "Enable or disable capping.  Default ``False``.  If capping is enabled, then "
 "the outer boundaries of the structured point set are set to cap value. This "
@@ -27850,55 +27882,55 @@ msgstr ""
 "キャッピングの有効・無効を設定します． デフォルトは ``False`` です． "
 "キャッピングが有効な場合，構造化ポイントセットの外側の境界はキャップ値に設定されます．これは，サーフェスが閉じていることを確認するために使用することができます．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:56
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:56
 msgid "**cap_value** : :class:`python:float`, :obj:`optional`"
 msgstr "**cap_value** : :class:`python:float`, :obj:`optional`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:56
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:56
 msgid "Capping value used with the ``capping`` parameter."
 msgstr "``capping`` パラメータで使用されるキャッピング値．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:60
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:60
 msgid "**scalar_arr_name** : :class:`python:str`, :obj:`optional`"
 msgstr "**scalar_arr_name** : :class:`python:str`, :obj:`optional`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:59
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:59
 msgid "Set the scalar array name for this data set.  Defaults to ``\"scalars\"``."
 msgstr "このデータセットのスカラー配列の名前を設定します． デフォルトは ``\"scalars\"`` です．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:64
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:64
 msgid "**normal_arr_name** : :class:`python:str`, :obj:`optional`"
 msgstr "**normal_arr_name** : :class:`python:str`, :obj:`optional`"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:63
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:63
 msgid "Set the normal array name for this data set.  Defaults to ``\"normals\"``."
 msgstr "このデータセットの法線配列の名前を設定します． デフォルトは ``\"normals\"`` です．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:67
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:67
 msgid "Display a progress bar to indicate progress.  Default ``False``."
 msgstr "進行状況を示す進行状況バーを表示します．デフォルトは ``False`` ．"
 
-#: ../../pyvista/pyvista/core/imaging.pydocstring of
-#: pyvista.core.imaging.sample_function:73
+#: ../../pyvista/pyvista/utilities/common.pydocstring of
+#: pyvista.utilities.common.sample_function:73
 msgid "Uniform grid with sampled data."
 msgstr "サンプリングされたデータによる一様なグリッド．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.imaging.sample_function.rst:3
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.sample_function.rst:3
 msgid "Sample Perlin noise over a structured grid in 3D."
 msgstr "構造格子上のパーリンノイズを3Dでサンプルします．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.imaging.sample_function.rst:25
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.sample_function.rst:25
 msgid "Sample Perlin noise in 2D and plot it."
 msgstr "パーリンノイズを2Dでサンプリングし，プロットします．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.core.imaging.sample_function.rst:45
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.utilities.common.sample_function.rst:45
 msgid ""
 "See :ref:`perlin_noise_2d_example` for a full example using this function."
 msgstr "この関数を使用した完全な例については， :ref:`perlin_noise_2d_example` を参照してください．"
@@ -29032,19 +29064,15 @@ msgstr "これらの雑多な方法は，イメージングやデータサンプ
 
 #: ../../pyvista/doc/api/core/misc.rst:10:<autosummary>:1
 msgid ""
-":py:obj:`pyvista.core.imaging.sample_function "
-"<pyvista.core.imaging.sample_function>`\\ \\(function\\)"
+":py:obj:`pyvista.utilities.common.sample_function "
+"<pyvista.utilities.common.sample_function>`\\ \\(...\\)"
 msgstr ""
-":py:obj:`pyvista.core.imaging.sample_function "
-"<pyvista.core.imaging.sample_function>`\\ \\(function\\)"
 
 #: ../../pyvista/doc/api/core/misc.rst:10:<autosummary>:1
 msgid ""
-":py:obj:`pyvista.core.common_data.perlin_noise "
-"<pyvista.core.common_data.perlin_noise>`\\ \\(...\\)"
+":py:obj:`pyvista.utilities.common.perlin_noise "
+"<pyvista.utilities.common.perlin_noise>`\\ \\(...\\)"
 msgstr ""
-":py:obj:`pyvista.core.common_data.perlin_noise "
-"<pyvista.core.common_data.perlin_noise>`\\ \\(...\\)"
 
 #: ../../pyvista/doc/api/core/objects.rst:2
 msgid "DataObject"
@@ -52987,11 +53015,6 @@ msgstr ""
 #: pyvista.utilities.geometric_objects.Wavelet:7
 msgid "Values are float scalars on point data with name ``\"RTData\"``."
 msgstr "値は ``\"RTData\"`` という名前のポイントデータ上のフロートスカラーです．"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Wavelet:13
-msgid "**extent** : :term:`python:sequence`, :obj:`optional`"
-msgstr "**extent** : :term:`python:sequence`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Wavelet:12
