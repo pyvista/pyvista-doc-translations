@@ -170,11 +170,11 @@ Set a single surface as the one being plotted that can be overwritten
 
     # Run through each frame
     for surf in surfaces:
-        surface.overwrite(surf)
+        surface.copy_from(surf)
         plotter.write_frame()  # Write this frame
     # Run through backwards
     for surf in surfaces[::-1]:
-        surface.overwrite(surf)
+        surface.copy_from(surf)
         plotter.write_frame()  # Write this frame
 
     # Be sure to close the plotter when finished
@@ -190,8 +190,6 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Orient the view, then press "q" to close window and produce movie
@@ -202,28 +200,23 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  46.846 seconds)
+   **Total running time of the script:** ( 0 minutes  50.291 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: isovalue.py <isovalue.py>`
 
-     :download:`Download Python source code: isovalue.py <isovalue.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: isovalue.ipynb <isovalue.ipynb>`
+      :download:`Download Jupyter notebook: isovalue.ipynb <isovalue.ipynb>`
 
 
 .. only:: html

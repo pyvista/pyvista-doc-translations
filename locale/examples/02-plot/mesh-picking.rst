@@ -88,7 +88,7 @@ mesh each time it's selected.
     def callback(mesh):
         """Shrink the mesh each time it's clicked."""
         shrunk = mesh.shrink(0.9)
-        mesh.overwrite(shrunk)  # must operate "in-place" by overwrite
+        mesh.copy_from(shrunk)  # make operation "in-place" by replacing the original mesh
 
 
     pl = pv.Plotter()
@@ -111,28 +111,23 @@ mesh each time it's selected.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.795 seconds)
+   **Total running time of the script:** ( 0 minutes  0.554 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_mesh-picking.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: mesh-picking.py <mesh-picking.py>`
 
-     :download:`Download Python source code: mesh-picking.py <mesh-picking.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: mesh-picking.ipynb <mesh-picking.ipynb>`
+      :download:`Download Jupyter notebook: mesh-picking.ipynb <mesh-picking.ipynb>`
 
 
 .. only:: html

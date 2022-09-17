@@ -113,7 +113,7 @@ Create the movie
         grid.point_data['size'] = z.ravel()
         new_spheres = grid.glyph(scale='size', geom=sphere, orient=False)
 
-        spheres.overwrite(new_spheres)
+        spheres.copy_from(new_spheres)
 
         # Write a frame. This triggers a render.
         plotter.write_frame()
@@ -135,28 +135,23 @@ Create the movie
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.723 seconds)
+   **Total running time of the script:** ( 0 minutes  12.712 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie_glyphs.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: movie_glyphs.py <movie_glyphs.py>`
 
-     :download:`Download Python source code: movie_glyphs.py <movie_glyphs.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: movie_glyphs.ipynb <movie_glyphs.ipynb>`
+      :download:`Download Jupyter notebook: movie_glyphs.ipynb <movie_glyphs.ipynb>`
 
 
 .. only:: html

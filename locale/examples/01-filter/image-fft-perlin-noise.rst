@@ -28,8 +28,8 @@ This example shows how to apply a Fast Fourier Transform (FFT) to a
 filter.
 
 Here, we demonstrate FFT usage by first generating Perlin noise using
-:func:`pyvista.sample_function() <pyvista.core.imaging.sample_function>` to
-sample :func:`pyvista.perlin_noise <pyvista.core.common_data.perlin_noise>`,
+:func:`pyvista.sample_function() <pyvista.utilities.common.sample_function>` to
+sample :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`,
 and then performing FFT of the sampled noise to show the frequency content of
 that noise.
 
@@ -127,7 +127,7 @@ Plot the Frequency Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Now, plot the noise in the frequency domain. Note how there is more high
 frequency content in the x direction and this matches the frequencies given
-to :func:`pyvista.perlin_noise <pyvista.core.common_data.perlin_noise>`.
+to :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 69-89
 
@@ -276,8 +276,6 @@ Show that the sum of the low and high passes equals the original noise.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Low and High Pass identical to the original: True
@@ -368,28 +366,23 @@ proportional.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  2.737 seconds)
+   **Total running time of the script:** ( 0 minutes  42.579 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: image-fft-perlin-noise.py <image-fft-perlin-noise.py>`
 
-     :download:`Download Python source code: image-fft-perlin-noise.py <image-fft-perlin-noise.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: image-fft-perlin-noise.ipynb <image-fft-perlin-noise.ipynb>`
+      :download:`Download Jupyter notebook: image-fft-perlin-noise.ipynb <image-fft-perlin-noise.ipynb>`
 
 
 .. only:: html

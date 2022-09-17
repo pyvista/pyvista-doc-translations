@@ -52,7 +52,7 @@ mesh-generating/altering code.
         def update(self):
             # This is where you call your simulation
             result = pv.Sphere(**self.kwargs)
-            self.output.overwrite(result)
+            self.output.copy_from(result)
             return
 
 
@@ -128,28 +128,23 @@ mesh-generating/altering code.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.397 seconds)
+   **Total running time of the script:** ( 0 minutes  0.416 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_multi-slider-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: multi-slider-widget.py <multi-slider-widget.py>`
 
-     :download:`Download Python source code: multi-slider-widget.py <multi-slider-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: multi-slider-widget.ipynb <multi-slider-widget.ipynb>`
+      :download:`Download Jupyter notebook: multi-slider-widget.ipynb <multi-slider-widget.ipynb>`
 
 
 .. only:: html

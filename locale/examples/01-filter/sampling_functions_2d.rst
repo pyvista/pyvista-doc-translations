@@ -22,7 +22,7 @@
 
 Sample Function: Perlin Noise in 2D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Here we use :func:`pyvista.core.imaging.sample_function` to sample
+Here we use :func:`pyvista.utilities.common.sample_function` to sample
 Perlin noise over a region to generate random terrain.
 
 Perlin noise is atype of gradient noise often used by visual effects
@@ -173,28 +173,23 @@ Show the terrain with custom lighting and shadows
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.753 seconds)
+   **Total running time of the script:** ( 0 minutes  2.737 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: sampling_functions_2d.py <sampling_functions_2d.py>`
 
-     :download:`Download Python source code: sampling_functions_2d.py <sampling_functions_2d.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: sampling_functions_2d.ipynb <sampling_functions_2d.ipynb>`
+      :download:`Download Jupyter notebook: sampling_functions_2d.ipynb <sampling_functions_2d.ipynb>`
 
 
 .. only:: html
