@@ -9897,54 +9897,56 @@ msgstr ""
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Anti-Aliasing"
-msgstr ""
+msgstr "アンチエイリアシング"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:25
 msgid "Demonstrate anti-aliasing within PyVista."
-msgstr ""
+msgstr "PyVistaでアンチエイリアシングのデモを行います。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:27
 msgid "PyVista supports three types of anti-aliasing:"
-msgstr ""
+msgstr "PyVistaは、3種類のアンチエイリアスをサポートしています:"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:29
 msgid "``\"ssaa\"`` - Super-Sample Anti-Aliasing"
-msgstr ""
+msgstr "``\"ssaa\"`` - スーパーサンプリングアンチエイリアシング"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:30
 msgid "``\"msaa\"`` - Multi-Sample Anti-Aliasing"
-msgstr ""
+msgstr "``\"msaa\"`` - マルチサンプルアンチエイリアシング"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:31
 msgid "``\"fxaa\"`` - Fast Approximate Anti-Aliasing"
-msgstr ""
+msgstr "``\"fxaa\"`` - 高速近似アンチエイリアシング"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:33
 msgid ""
 "By default, anti-aliasing is disabled, but can be enabled globally with:"
-msgstr ""
+msgstr "デフォルトでは、アンチエイリアシングは無効になっていますが、以下の方法でグローバルに有効にすることができます。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:40
 msgid "**Which anti-aliasing technique should you use?**"
-msgstr ""
+msgstr "**どのようなアンチエイリアシング技術を使うべきでしょうか？**"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:42
 msgid ""
 "Those who have PCs with high-end configuration should opt for ``\"ssaa\"`` "
 "or ``\"msaa\"``. Low-end PCs should use ``\"fxaa\"``."
 msgstr ""
+"ハイエンドな構成のPCをお持ちの方は ``\"ssaa\"`` または ``\"msaa\"`` を選択してください。ローエンドのPCは "
+"``\"fxaa\"`` を使ってください。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:65
 msgid "No Anti-Aliasing"
-msgstr ""
+msgstr "アンチエイリアシングなし"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:66
 msgid "First, let's show a plot without any anti-aliasing."
-msgstr ""
+msgstr "まず、アンチエイリアスを一切かけないプロットを表示してみましょう。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:98
 msgid "Fast Approximate Anti-Aliasing (FXAA)"
-msgstr ""
+msgstr "高速近似アンチエイリアシング (FXAA)"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:99
 msgid ""
@@ -9953,6 +9955,7 @@ msgid ""
 "directly smooths the 2D image and this reduces the strain over GPU, making "
 "it best for low-end PCs."
 msgstr ""
+"FXAAは、3つのアンチエイリアシング技術の中で最もパフォーマンスが高い技術です。これは、ハードウェアやGPUの観点から、FXAAがそれほど要求されないためです。2D画像を直接平滑化するので、GPUへの負担が少なく、ローエンドのPCに最適です。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:104
 msgid ""
@@ -9961,10 +9964,12 @@ msgid ""
 "reasons of clarity as well as smoothing out textures. In general, FXAA is "
 "inferior to MSAA and SSAA."
 msgstr ""
+"FXAAはレンダリング画像に対してのみ動作するため、通常は鮮明さを保つためにシャープにされているビジュアルオーバーレイの一部が滑らかになったり、テクスチャが滑らかになったりすることがあります。一般的に、FXAA"
+" は MSAA や SSAA よりも劣ります。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:136
 msgid "Multi-Sample Anti-Aliasing (MSAA)"
-msgstr ""
+msgstr "マルチサンプルアンチエイリアシング(MSAA)"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:137
 msgid ""
@@ -9975,10 +9980,11 @@ msgid ""
 "make up the bulk of SSAA computations. MSAA is substantially less "
 "computationally expensive than SSAA and results in comparable image quality."
 msgstr ""
+"MSAAまたはマルチサンプルアンチエイリアスは、SSAAの最適化で、シーンの重複する領域に焦点を当てることで、計算が必要なピクセルシェーダーの評価量を削減します。その結果、エッジに沿ったアンチエイリアシングはSSAAと同等になり、サーフェスに沿ったアンチエイリアシングはSSAAの計算の大部分を占めるため、より少なくなります。MSAAはSSAAに比べ大幅に計算量が少なく、同等の画質が得られます。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:171
 msgid "Super-Sample Anti-Aliasing (SSAA)"
-msgstr ""
+msgstr "スーパーサンプルアンチエイリアシング(SSAA)"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:172
 msgid ""
@@ -9989,6 +9995,7 @@ msgid ""
 "averaging filter. This acts as a low pass filter which removes the high "
 "frequency components that would cause jaggedness."
 msgstr ""
+"SSAAまたはスーパーサンプルアンチエイリアシングは、アンチエイリアシングのブルートフォース当り方式です。最高の画質が得られますが、膨大なリソースコストがかかります。SSAAは、シーンをより高い解像度でレンダリングすることで機能します。最終的な画像は、平均化フィルタを使用して巨大なソース画像をダウンサンプリングすることによって生成されます。これはローパスフィルタとして機能し、ギザギザの原因となる高周波成分を除去します。"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:204
 msgid "**Total running time of the script:** ( 0 minutes  3.343 seconds)"
@@ -9998,12 +10005,15 @@ msgstr "**Total running time of the script:** ( 0 minutes  3.343 seconds)"
 msgid ""
 ":download:`Download Python source code: anti-aliasing.py <anti-aliasing.py>`"
 msgstr ""
+":download:`Download Python source code: anti-aliasing.py <anti-aliasing.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:220
 msgid ""
 ":download:`Download Jupyter notebook: anti-aliasing.ipynb <anti-"
 "aliasing.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: anti-aliasing.ipynb <anti-"
+"aliasing.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/background_image.rst:13
 msgid ""
@@ -10057,12 +10067,14 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_blurring.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_blurring.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:24
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Blurring"
-msgstr ""
+msgstr "ぼかし"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:25
 msgid ""
