@@ -1024,7 +1024,7 @@ msgstr "この例では，トライアングル ストリップを使ったシ�
 msgid ""
 "Triangle strips are a more efficient way of storing the connectivity of "
 "adjacent triangles."
-msgstr "トライアングルストリップは，隣接する三角形の連結をより効率的に保存する方法です．"
+msgstr "トライアングルストリップは，隣接する3角形の連結をより効率的に保存する方法です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:64
 msgid "Build the connectivity of the strips"
@@ -1035,7 +1035,7 @@ msgid ""
 "The first element is the number of points in the strip next three elements "
 "is the initial triangle the rest of the points is where the strip extends "
 "to."
-msgstr "最初の要素は帯の点の数で，次の3つの要素は最初の三角形で，残りの点は帯が伸びている場所です．"
+msgstr "最初の要素は帯の点の数で，次の3つの要素は最初の3角形で，残りの点は帯が伸びている場所です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:85
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:240
@@ -1100,7 +1100,7 @@ msgid ""
 "<pyvista.Dataset.triangulate>`."
 msgstr ""
 ":func:`triangulate <pyvista.Dataset.triangulate>` "
-"を使用すると，ストリップを三角形の面に変換することができます．"
+"を使用すると，ストリップを3角形の面に変換することができます．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:158
 msgid ""
@@ -1164,7 +1164,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:221
 msgid "Convert triangles to strips"
-msgstr "三角形をストリップに変換する"
+msgstr "3角形をストリップに変換する"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:222
 msgid ""
@@ -1173,7 +1173,7 @@ msgid ""
 "we convert the triangulated mesh back to a stripped mesh."
 msgstr ""
 ":func:`strip() <pyvista.PolyData.strip>` を使用して， :class:`pyvista.PolyData` "
-"からストリップに面を変換します．ここでは，デモンストレーションのために，三角形化されたメッシュをストリップされたメッシュに戻します．"
+"からストリップに面を変換します．ここでは，デモンストレーションのために，3角形化されたメッシュをストリップされたメッシュに戻します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:262
 msgid ""
@@ -1580,12 +1580,12 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/index.rstNone
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Create Triangulated Surface"
-msgstr "三角形サーフェスを作成"
+msgstr "3角形サーフェスを作成"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:26
 msgid ""
 "Create a surface from a set of points through a Delaunay triangulation."
-msgstr "一連のポイントからDelaunay三角形分割を介してサーフェスを作成します．"
+msgstr "一連のポイントからDelaunay3角形分割を介してサーフェスを作成します．"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:47
 msgid "Simple Triangulations"
@@ -1608,11 +1608,11 @@ msgid ""
 "Now that we have a PyVista data structure of the points, we can perform a "
 "triangulation to turn those boring discrete points into a connected surface."
 msgstr ""
-"ポイントのPyVistaデータ構造ができたので，三角形分割を実行して，これらの退屈な個別のポイントを接続されたサーフェスに変えることができます．"
+"ポイントのPyVistaデータ構造ができたので，3角形分割を実行して，これらの退屈な個別のポイントを接続されたサーフェスに変えることができます．"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:142
 msgid "Masked Triangulations"
-msgstr "マスクされた三角形"
+msgstr "マスクされた3角形"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:165
 msgid ""
@@ -1652,21 +1652,21 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:186
 msgid "Run the triangulation on these points"
-msgstr "これらの点で三角形分割を実行します"
+msgstr "これらの点で3角形分割を実行します"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:210
 msgid ""
 "Note that some of the outer edges are unconstrained and the triangulation "
 "added unwanted triangles. We can mitigate that with the ``alpha`` parameter."
 msgstr ""
-"外側のエッジの一部は拘束されておらず，三角形分割によって不要な三角形が追加されていることに注意してください．私たちは ``alpha`` "
+"外側のエッジの一部は拘束されておらず，3角形分割によって不要な3角形が追加されていることに注意してください．私たちは ``alpha`` "
 "パラメータでそれを緩和します．"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:235
 msgid ""
 "We could also add a polygon to ignore during the triangulation via the "
 "``edge_source`` parameter."
-msgstr "また， ``edge_source`` パラメータを使用して，三角形分割中に無視するポリゴンを追加することもできます．"
+msgstr "また， ``edge_source`` パラメータを使用して，3角形分割中に無視するポリゴンを追加することもできます．"
 
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:274
 msgid "**Total running time of the script:** ( 0 minutes  1.825 seconds)"
@@ -1847,11 +1847,11 @@ msgstr "最後に，非構造化グリッドを作成してプロットします
 
 #: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:268
 msgid "Tetrahedral Grid"
-msgstr "四面体グリッド"
+msgstr "4面体グリッド"
 
 #: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:269
 msgid "Here is how we can create an unstructured tetrahedral grid."
-msgstr "ここでは，非構造化四面体グリッドを作成する方法を説明します．"
+msgstr "ここでは，非構造化4面体グリッドを作成する方法を説明します．"
 
 #: ../../pyvista/doc/examples/00-load/create-unstructured-surface.rst:334
 msgid ""
@@ -2620,22 +2620,22 @@ msgid ""
 "including an explanation of linear VTK cell types and how you can create "
 "them in PyVista."
 msgstr ""
-"このサンプルは :ref:`create_unstructured_example` のサンプルを拡張して、線形 VTK セルタイプの説明と "
-"PyVista でどのように作成できるかの説明を含んでいます。"
+"このサンプルは :ref:`create_unstructured_example` のサンプルを拡張して，線形 VTK セルタイプの説明と "
+"PyVista でどのように作成できるかの説明を含んでいます．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:30
 msgid ""
 "Linear cells are cells where points only occur at the edges of each cell. "
 "Non-linear cells contain additional points along the edges of the cell."
-msgstr "線形セルとは、各セルのエッジにのみ点が発生するセルのことです。非線形のセルには、セルのエッジに沿ってさらに点が存在します。"
+msgstr "線形セルとは，各セルのエッジにのみ点が発生するセルのことです．非線形のセルには，セルのエッジに沿ってさらに点が存在します．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:33
 msgid ""
 "For more details regarding what a :class:`pyvista.UnstructuredGrid` is, "
 "please see :ref:`point_sets_api`."
 msgstr ""
-":class:`pyvista.UnstructuredGrid` がどのようなものであるかについての詳細は、 "
-":ref:`point_sets_api` を参照してください。"
+":class:`pyvista.UnstructuredGrid` がどのようなものであるかについての詳細は， "
+":ref:`point_sets_api` を参照してください．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:59
 msgid "Plot an example cell"
@@ -2647,25 +2647,25 @@ msgid ""
 "fundamental unit of each :class:`pyvista.UnstructuredGrid`. For example, "
 "let's plot a simple :func:`Wedge <pyvista.cells.Wedge`."
 msgstr ""
-"PyVistaには、各 :class:`pyvista.UnstructuredGrid` "
-"の基本単位である、1つのセルをプロットするためのシンプルなユーティリティが含まれています。例えば、単純な :func:`Wedge "
-"<pyvista.cells.Wedge` をプロットしてみましょう。"
+"PyVistaには，各 :class:`pyvista.UnstructuredGrid` "
+"の基本単位である，1つのセルをプロットするためのシンプルなユーティリティが含まれています．例えば，単純な :func:`Wedge "
+"<pyvista.cells.Wedge` をプロットしてみましょう．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:87
 msgid "This linear cell is composed of 6 points."
-msgstr "この線形セルは6点で構成されています。"
+msgstr "この線形セルは6点で構成されています．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:117
 msgid ""
 "The UnstructuredGrid is also composed of a single cell and the point indices"
 " of that cell are defined in :attr:`cells <pyvista.UnstructuredGrid.cells>`."
 msgstr ""
-"UnstructuredGridも1つのセルで構成され、そのセルの点インデックスは :attr:`cells "
-"<pyvista.UnstructuredGrid.cells>` で定義されています。"
+"UnstructuredGridも1つのセルで構成され，そのセルの点インデックスは :attr:`cells "
+"<pyvista.UnstructuredGrid.cells>` で定義されています．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:121
 msgid "The leading ``6`` is the number of points in the cell."
-msgstr "先頭の ``6`` はセル内のポイント数です。"
+msgstr "先頭の ``6`` はセル内のポイント数です．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:147
 msgid "Combine two UnstructuredGrids"
@@ -2675,15 +2675,15 @@ msgstr "2つのUnstructuredGridを結合する"
 msgid ""
 "We can combine two unstructured grids to create a single unstructured grid "
 "using the ``+`` operator."
-msgstr "2つの非構造化グリッドを組み合わせて、1つの非構造化グリッドを作るには、 ``+`` 演算子を使用します。"
+msgstr "2つの非構造化グリッドを組み合わせて，1つの非構造化グリッドを作るには， ``+`` 演算子を使用します．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:152
 msgid ""
 "This is an inefficient way of creating :class:`UnstructuredGrid` objects. To"
 " see a more efficient implement ion see :ref:`create_unstructured_example`."
 msgstr ""
-"これは :class:`UnstructuredGrid` オブジェクトを作成するための非効率的な方法です。より効率的な実装を見るには、 "
-":ref:`create_unstructured_example` を参照してください。"
+"これは :class:`UnstructuredGrid` オブジェクトを作成するための非効率的な方法です．より効率的な実装を見るには， "
+":ref:`create_unstructured_example` を参照してください．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:185
 msgid ""
@@ -2692,9 +2692,9 @@ msgid ""
 "contains 8 points and the hexagonal prism contains 12 points. The ``cells`` "
 "attribute shows this along with indices composing each cell."
 msgstr ""
-"この例は、 :attr:`cells <pyvista.UnstructuredGrid.cells>` "
-"属性の背後にある意味を説明するのに役立ちます。最初のセルである六面体は8個の点を含み、六角プリズムは12個の点を含んでいます。 ``cells`` "
-"属性は、各セルを構成するインデックスと共に、これを表示します。"
+"この例は， :attr:`cells <pyvista.UnstructuredGrid.cells>` "
+"属性の背後にある意味を説明するのに役立ちます．最初のセルである6面体は8個の点を含み，6角プリズムは12個の点を含んでいます． ``cells`` "
+"属性は，各セルを構成するインデックスと共に，これを表示します．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:215
 msgid "Cell Types"
@@ -2709,11 +2709,11 @@ msgid ""
 "example ``combined.celltypes`` contains both the ``pv.CellType.HEXAHEDRON`` "
 "and ``pv.CellType.HEXAGONAL_PRISM`` cell types."
 msgstr ""
-"PyVista には :class:`pv.CellType` という列挙体があり、利用可能なすべての VTK セルタイプが Python "
-"の列挙体にマッピングされています。これらのセルタイプはセルを作成するときに使用され、 :attr:`celltypes "
-"<pyvista.UnstructuredGrid.celltypes>` 属性を確認するときにも使用されます。例えば、 "
-"``combined.celltypes`` には、 ``pv.CellType.HEXAHEDRON`` と "
-"``pv.CellType.HEXAGONAL_PRISM`` という両方のセルタイプが含まれます。"
+"PyVista には :class:`pv.CellType` という列挙体があり，利用可能なすべての VTK セルタイプが Python "
+"の列挙体にマッピングされています．これらのセルタイプはセルを作成するときに使用され， :attr:`celltypes "
+"<pyvista.UnstructuredGrid.celltypes>` 属性を確認するときにも使用されます．例えば， "
+"``combined.celltypes`` には， ``pv.CellType.HEXAHEDRON`` と "
+"``pv.CellType.HEXAGONAL_PRISM`` という両方のセルタイプが含まれます．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:249
 msgid "Create an UnstructuredGrid with a single linear cell"
@@ -2730,10 +2730,10 @@ msgid ""
 "attributes."
 msgstr ""
 ":class:`pyvista.UnstructuredGrid` "
-"の3つの主要な入力がわかったので、1つ以上のセルを持つ非構造化グリッドを作成することはとても簡単です。もし、点の順序や追加を参照する必要がある場合は、 "
+"の3つの主要な入力がわかったので，1つ以上のセルを持つ非構造化グリッドを作成することはとても簡単です．もし，点の順序や追加を参照する必要がある場合は， "
 "`cells.py "
 "<https://github.com/pyvista/pyvista/blob/main/pyvista/cells/cells.py>`_ "
-"のソースを読むか、あるいは ``pyvista.cells`` モジュールからセルを作成してその属性を確認することができます。"
+"のソースを読むか，あるいは ``pyvista.cells`` モジュールからセルを作成してその属性を確認することができます．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:289
 msgid "Plot all linear cell Types"
@@ -2744,7 +2744,7 @@ msgid ""
 "Let's create a ``(4, 4)`` :class:`pyvista.Plotter` and plot all 16 linear "
 "cells in a single plot."
 msgstr ""
-"``(4, 4)`` :class:`pyvista.Plotter` を作成し、16個の線形セルすべてを1つのプロットにまとめてみましょう。"
+"``(4, 4)`` :class:`pyvista.Plotter` を作成し，16個の線形セルすべてを1つのプロットにまとめてみましょう．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:388
 msgid "**Total running time of the script:** ( 0 minutes  2.802 seconds)"
@@ -3847,7 +3847,7 @@ msgid ""
 " not triangulated): this is common for DEMs."
 msgstr ""
 "この例では，特定の地形サーフェスに従う3 Dグリッド/メッシュを作成する簡単な方法を適用します．この例では，指定した数値標高モデル (DEM) "
-"が構造化されていることに注意してください(グリッド付きで三角形でない): これはDEMでは一般的です．"
+"が構造化されていることに注意してください(グリッド付きで3角形でない): これはDEMでは一般的です．"
 
 #: ../../pyvista/doc/examples/00-load/terrain-mesh.rst:58
 msgid "Download a gridded topography surface (DEM)"
@@ -4173,7 +4173,7 @@ msgid ""
 ":attr:`pyvista.PolyData.is_all_triangles`."
 msgstr ""
 "演算子 ``-`` は，PyVistaの任意の2つの :class:`pyvista.PolyData` "
-"メッシュの間で使用することができ，最初のメッシュを2番目のメッシュでカットします． これらのメッシュはすべて三角形のメッシュでなければなりません．これは"
+"メッシュの間で使用することができ，最初のメッシュを2番目のメッシュでカットします． これらのメッシュはすべて3角形のメッシュでなければなりません．これは"
 " :attr:`pyvista.PolyData.is_all_triangles` で確認できます．"
 
 #: ../../pyvista/doc/examples/01-filter/boolean-operations.rst:48
@@ -4375,7 +4375,7 @@ msgstr "セルにラベルを追加する"
 msgid ""
 "There is not a method to add labels to cells. If you want to label it, you "
 "need to extract the position to label it."
-msgstr "セルにラベルを付ける方法はありません。ラベルを付けたい場合は、ラベルを付ける位置を抽出する必要があります。"
+msgstr "セルにラベルを付ける方法はありません．ラベルを付けたい場合は，ラベルを付ける位置を抽出する必要があります．"
 
 #: ../../pyvista/doc/examples/01-filter/cell-centers.rst:217
 msgid "**Total running time of the script:** ( 0 minutes  1.890 seconds)"
@@ -4535,7 +4535,7 @@ msgid ""
 "triangulate/tessellate the mesh geometries along the clip."
 msgstr ""
 "最初に，暗黙的な距離を計算してメッシュを閾値設定することにより，クリッピングを実行する方法を説明します．このしきい値設定は，サーフェスでクリップし，指定されたメッシュの元のジオメトリを保持する1つの方法ですが，多くのユーザは"
-" ``clip_surface`` フィルタを利用して，クリップに沿ってメッシュジオメトリを三角形化/面分割します．"
+" ``clip_surface`` フィルタを利用して，クリップに沿ってメッシュジオメトリを3角形化/面分割します．"
 
 #: ../../pyvista/doc/examples/01-filter/clipping-with-surface.rst:84
 msgid ""
@@ -4557,7 +4557,7 @@ msgid ""
 msgstr ""
 ":func:`pyvista.DataSetFilters.clip_surface` フィルタを介して "
 ":class:`pyvista.PolyData` "
-"サーフェスメッシュを使用して，直線グリッドデータセットをクリップします．これにより，クリップに沿ってメッシュジオメトリが三角形化/面分割されます．"
+"サーフェスメッシュを使用して，直線グリッドデータセットをクリップします．これにより，クリップに沿ってメッシュジオメトリが3角形化/面分割されます．"
 
 #: ../../pyvista/doc/examples/01-filter/clipping-with-surface.rst:190
 msgid ""
@@ -5320,7 +5320,7 @@ msgstr "非多様体(3つ以上の多角形によって使用されます)"
 msgid ""
 "feature edges (edges used by two triangles and whose dihedral angle > "
 "feature_angle)"
-msgstr "フィーチャエッジ(2つの三角形で使用され，二面角がfeature_angleより大きいエッジ)"
+msgstr "フィーチャエッジ(2つの3角形で使用され，2面角がfeature_angleより大きいエッジ)"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:50
 msgid "manifold edges (edges used by exactly two polygons)."
@@ -5453,7 +5453,7 @@ msgstr "2次セルを作成し，そのサーフェスを抽出します"
 msgid ""
 "Here we create a single quadratic hexahedral cell and then extract its "
 "surface to demonstrate how to extract the surface of an UnstructuredGrid."
-msgstr "ここでは，1つの2次六面体セルを作成し，そのサーフェスを抽出して，UnstructuredGridのサーフェスを抽出する方法を示します．"
+msgstr "ここでは，1つの2次6面体セルを作成し，そのサーフェスを抽出して，UnstructuredGridのサーフェスを抽出する方法を示します．"
 
 #: ../../pyvista/doc/examples/01-filter/extract-surface.rst:133
 msgid "Nonlinear Surface Subdivision"
@@ -5467,7 +5467,7 @@ msgid ""
 "please see: https://prod.sandia.gov/techlib-noauth/access-"
 "control.cgi/2004/041617.pdf"
 msgstr ""
-"UnstructuredGridに二次セルが含まれている場合， \"中間\" "
+"UnstructuredGridに2次セルが含まれている場合， \"中間\" "
 "節点の位置に基づいて滑らかなサーフェスを生成できます．これにより，曲率を含むセルをプロットできます．詳細については， "
 "https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf "
 "を参照してください．"
@@ -5838,7 +5838,7 @@ msgstr "バースセクスィックのアニメーション"
 msgid ""
 "Show 20 frames of various isocurves extracted from the Barth sextic "
 "function."
-msgstr "バルト六芒星関数から抽出された様々なアイソカーブを20フレーム表示します．"
+msgstr "バルト6芒星関数から抽出された様々なアイソカーブを20フレーム表示します．"
 
 #: ../../pyvista/doc/examples/01-filter/flying_edges.rst:215
 msgid "**Total running time of the script:** ( 0 minutes  12.756 seconds)"
@@ -6373,7 +6373,7 @@ msgid ""
 "image, and the middle is the high frequency content of the image."
 msgstr ""
 "この画像では，事実上データの \"周波数\" "
-"を見ていることに注意してください．四隅には画像の低周波コンテンツが，中央部には画像の高周波コンテンツが含まれています．"
+"を見ていることに注意してください．4隅には画像の低周波コンテンツが，中央部には画像の高周波コンテンツが含まれています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft.rst:182
 msgid "Remove the noise from the ``fft_image``"
@@ -6446,6 +6446,10 @@ msgid ""
 "<pyvista.utilities.common.perlin_noise>`, and then performing FFT of the "
 "sampled noise to show the frequency content of that noise."
 msgstr ""
+"ここでは，まず :func:`pyvista.sample_function() "
+"<pyvista.utilities.common.sample_function>` を使って Perlin ノイズを生成して "
+":func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>` "
+"をサンプリングし，そのノイズの周波数コンテンツを示すためにサンプルしたノイズを FFT して FFT 使用法を実演しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:55
 msgid "Generate Perlin Noise"
@@ -6497,6 +6501,8 @@ msgid ""
 "frequency content in the x direction and this matches the frequencies given "
 "to :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`."
 msgstr ""
+"さて，ノイズを周波数領域でプロットしてみましょう．これは :func:`pyvista.perlin_noise "
+"<pyvista.utilities.common.perlin_noise>` で指定した周波数と一致しています．"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:171
 msgid "Low Pass Filter"
@@ -6582,7 +6588,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:369
 msgid "**Total running time of the script:** ( 0 minutes  42.579 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  42.579 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:381
 msgid ""
@@ -8349,6 +8355,8 @@ msgid ""
 "Here we use :func:`pyvista.utilities.common.sample_function` to sample "
 "Perlin noise over a region to generate random terrain."
 msgstr ""
+"ここでは， :func:`pyvista.utilities.common.sample_function` "
+"を使用して領域上のPerlinノイズをサンプリングし，ランダムな地表を生成します．"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_2d.rst:28
 msgid ""
@@ -8506,7 +8514,7 @@ msgstr "青以外の色の制限"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_3d.rst:130
 msgid "**Total running time of the script:** ( 0 minutes  0.589 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.589 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/sampling_functions_3d.rst:142
 msgid ""
@@ -8522,7 +8530,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:45.905** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:45.905** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
@@ -8534,7 +8542,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:42.579"
-msgstr ""
+msgstr "00:42.579"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ""
@@ -8558,7 +8566,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid "00:00.589"
-msgstr ""
+msgstr "00:00.589"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:17
 msgid ""
@@ -9270,7 +9278,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/subdivide.rst:26
 msgid ""
 "Increase the number of triangles in a single, connected triangular mesh."
-msgstr "単一の接続された三角形メッシュ内の三角形の数を増やします．"
+msgstr "単一の接続された3角形メッシュ内の3角形の数を増やします．"
 
 #: ../../pyvista/doc/examples/01-filter/subdivide.rst:28
 msgid ""
@@ -9289,7 +9297,7 @@ msgid ""
 msgstr ""
 "まず， **triangulated** メッシュをロードして再分割しましょう． "
 ":func:`pyvista.DataSetFilters.triangulate` "
-"フィルタを使用して，使用しているメッシュが純粋な三角形であることを確認できます．"
+"フィルタを使用して，使用しているメッシュが純粋な3角形であることを確認できます．"
 
 #: ../../pyvista/doc/examples/01-filter/subdivide.rst:73
 msgid ""
@@ -9901,11 +9909,11 @@ msgstr "アンチエイリアシング"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:25
 msgid "Demonstrate anti-aliasing within PyVista."
-msgstr "PyVistaでアンチエイリアシングのデモを行います。"
+msgstr "PyVistaでアンチエイリアシングのデモを行います．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:27
 msgid "PyVista supports three types of anti-aliasing:"
-msgstr "PyVistaは、3種類のアンチエイリアスをサポートしています:"
+msgstr "PyVistaは，3種類のアンチエイリアスをサポートしています:"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:29
 msgid "``\"ssaa\"`` - Super-Sample Anti-Aliasing"
@@ -9922,7 +9930,7 @@ msgstr "``\"fxaa\"`` - 高速近似アンチエイリアシング"
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:33
 msgid ""
 "By default, anti-aliasing is disabled, but can be enabled globally with:"
-msgstr "デフォルトでは、アンチエイリアシングは無効になっていますが、以下の方法でグローバルに有効にすることができます。"
+msgstr "デフォルトでは，アンチエイリアシングは無効になっていますが，以下の方法でグローバルに有効にすることができます．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:40
 msgid "**Which anti-aliasing technique should you use?**"
@@ -9933,8 +9941,8 @@ msgid ""
 "Those who have PCs with high-end configuration should opt for ``\"ssaa\"`` "
 "or ``\"msaa\"``. Low-end PCs should use ``\"fxaa\"``."
 msgstr ""
-"ハイエンドな構成のPCをお持ちの方は ``\"ssaa\"`` または ``\"msaa\"`` を選択してください。ローエンドのPCは "
-"``\"fxaa\"`` を使ってください。"
+"ハイエンドな構成のPCをお持ちの方は ``\"ssaa\"`` または ``\"msaa\"`` を選択してください．ローエンドのPCは "
+"``\"fxaa\"`` を使ってください．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:65
 msgid "No Anti-Aliasing"
@@ -9942,7 +9950,7 @@ msgstr "アンチエイリアシングなし"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:66
 msgid "First, let's show a plot without any anti-aliasing."
-msgstr "まず、アンチエイリアスを一切かけないプロットを表示してみましょう。"
+msgstr "まず，アンチエイリアスを一切かけないプロットを表示してみましょう．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:98
 msgid "Fast Approximate Anti-Aliasing (FXAA)"
@@ -9955,7 +9963,7 @@ msgid ""
 "directly smooths the 2D image and this reduces the strain over GPU, making "
 "it best for low-end PCs."
 msgstr ""
-"FXAAは、3つのアンチエイリアシング技術の中で最もパフォーマンスが高い技術です。これは、ハードウェアやGPUの観点から、FXAAがそれほど要求されないためです。2D画像を直接平滑化するので、GPUへの負担が少なく、ローエンドのPCに最適です。"
+"FXAAは，3つのアンチエイリアシング技術の中で最もパフォーマンスが高い技術です．これは，ハードウェアやGPUの観点から，FXAAがそれほど要求されないためです．2D画像を直接平滑化するので，GPUへの負担が少なく，ローエンドのPCに最適です．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:104
 msgid ""
@@ -9964,8 +9972,8 @@ msgid ""
 "reasons of clarity as well as smoothing out textures. In general, FXAA is "
 "inferior to MSAA and SSAA."
 msgstr ""
-"FXAAはレンダリング画像に対してのみ動作するため、通常は鮮明さを保つためにシャープにされているビジュアルオーバーレイの一部が滑らかになったり、テクスチャが滑らかになったりすることがあります。一般的に、FXAA"
-" は MSAA や SSAA よりも劣ります。"
+"FXAAはレンダリング画像に対してのみ動作するため，通常は鮮明さを保つためにシャープにされているビジュアルオーバーレイの一部が滑らかになったり，テクスチャが滑らかになったりすることがあります．一般的に，FXAA"
+" は MSAA や SSAA よりも劣ります．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:136
 msgid "Multi-Sample Anti-Aliasing (MSAA)"
@@ -9980,7 +9988,7 @@ msgid ""
 "make up the bulk of SSAA computations. MSAA is substantially less "
 "computationally expensive than SSAA and results in comparable image quality."
 msgstr ""
-"MSAAまたはマルチサンプルアンチエイリアスは、SSAAの最適化で、シーンの重複する領域に焦点を当てることで、計算が必要なピクセルシェーダーの評価量を削減します。その結果、エッジに沿ったアンチエイリアシングはSSAAと同等になり、サーフェスに沿ったアンチエイリアシングはSSAAの計算の大部分を占めるため、より少なくなります。MSAAはSSAAに比べ大幅に計算量が少なく、同等の画質が得られます。"
+"MSAAまたはマルチサンプルアンチエイリアスは，SSAAの最適化で，シーンの重複する領域に焦点を当てることで，計算が必要なピクセルシェーダーの評価量を削減します．その結果，エッジに沿ったアンチエイリアシングはSSAAと同等になり，サーフェスに沿ったアンチエイリアシングはSSAAの計算の大部分を占めるため，より少なくなります．MSAAはSSAAに比べ大幅に計算量が少なく，同等の画質が得られます．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:171
 msgid "Super-Sample Anti-Aliasing (SSAA)"
@@ -9995,7 +10003,7 @@ msgid ""
 "averaging filter. This acts as a low pass filter which removes the high "
 "frequency components that would cause jaggedness."
 msgstr ""
-"SSAAまたはスーパーサンプルアンチエイリアシングは、アンチエイリアシングのブルートフォース当り方式です。最高の画質が得られますが、膨大なリソースコストがかかります。SSAAは、シーンをより高い解像度でレンダリングすることで機能します。最終的な画像は、平均化フィルタを使用して巨大なソース画像をダウンサンプリングすることによって生成されます。これはローパスフィルタとして機能し、ギザギザの原因となる高周波成分を除去します。"
+"SSAAまたはスーパーサンプルアンチエイリアシングは，アンチエイリアシングのブルートフォース当り方式です．最高の画質が得られますが，膨大なリソースコストがかかります．SSAAは，シーンをより高い解像度でレンダリングすることで機能します．最終的な画像は，平均化フィルタを使用して巨大なソース画像をダウンサンプリングすることによって生成されます．これはローパスフィルタとして機能し，ギザギザの原因となる高周波成分を除去します．"
 
 #: ../../pyvista/doc/examples/02-plot/anti-aliasing.rst:204
 msgid "**Total running time of the script:** ( 0 minutes  3.343 seconds)"
@@ -10083,36 +10091,40 @@ msgid ""
 ":func:`enable_depth_of_field <pyvista.Plotter.enable_depth_of_field>` to "
 "highlight part of your plot."
 msgstr ""
+"この例では， :func:`add_blurring <pyvista.Plotter.add_blurring>` を使ってプロットをぼかしたり， "
+":func:`enable_depth_of_field <pyvista.Plotter.enable_depth_of_field>` "
+"でプロットの一部を強調する方法を示しています．"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:47
 msgid "Create several spheres"
-msgstr ""
+msgstr "複数の球体を作成する"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:71
 msgid "Blur the plot"
-msgstr ""
+msgstr "プロットをぼかす"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:72
 msgid "Add a few blur passes to blur the plot"
-msgstr ""
+msgstr "プロットをぼかすためのblurパスを数回追加します"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:103
 msgid ""
 "Note how this is different than selectively blurring part of the mesh behind"
 " the focal plane"
-msgstr ""
+msgstr "これは，焦点面の後ろのメッシュの一部を選択的にぼかすのとは違うことに注意してください"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:132
 msgid "**Total running time of the script:** ( 0 minutes  6.835 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  6.835 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:144
 msgid ":download:`Download Python source code: blurring.py <blurring.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: blurring.py <blurring.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:148
 msgid ":download:`Download Jupyter notebook: blurring.ipynb <blurring.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: blurring.ipynb <blurring.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/bounds.rst:13
 msgid ""
@@ -10656,28 +10668,33 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_depth_of_field.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_depth_of_field.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:24
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Depth of Field Plotting"
-msgstr ""
+msgstr "被写界深度のプロット"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:26
 msgid ""
 "This example shows how you can use :func:`enable_depth_of_field "
 "<pyvista.Plotter.enable_depth_of_field>` to highlight part of your plot."
 msgstr ""
+"この例では， :func:`enable_depth_of_field <pyvista.Plotter.enable_depth_of_field>`"
+" でプロットの一部を強調する方法を示しています．"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:49
 msgid "Generate a bunch of bunnies"
-msgstr ""
+msgstr "うさぎたちを大量に生成する"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:50
 msgid ""
 "Create many bunnies using the :func:`glyph <pyvista.DataSetFilters.glyph>` "
 "filter."
 msgstr ""
+":func:`glyph <pyvista.DataSetFilters.glyph>` フィルターを使用して，たくさんのうさぎを作成します．"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:75
 msgid ""
@@ -10699,30 +10716,51 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>2500236</td></tr>\n"
+"<tr><td>N Points</td><td>1294092</td></tr>\n"
+"<tr><td>N Strips</td><td>0</td></tr>\n"
+"<tr><td>X Bounds</td><td>-2.475e-01, 9.235e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-3.788e-01, 2.244e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>1.319e-01, 2.749e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:98
 msgid "Show the plot without enabling depth of field"
-msgstr ""
+msgstr "被写界深度を有効にせずにプロットを表示する"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:142
 msgid "Show the plot while enabling depth of field"
-msgstr ""
+msgstr "被写界深度を有効にした状態でプロットを表示する"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:172
 msgid "**Total running time of the script:** ( 0 minutes  59.040 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  59.040 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:184
 msgid ""
 ":download:`Download Python source code: depth_of_field.py "
 "<depth_of_field.py>`"
 msgstr ""
+":download:`Download Python source code: depth_of_field.py "
+"<depth_of_field.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:188
 msgid ""
 ":download:`Download Jupyter notebook: depth_of_field.ipynb "
 "<depth_of_field.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: depth_of_field.ipynb "
+"<depth_of_field.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/distance-along-spline.rst:13
 msgid ""
@@ -11221,11 +11259,13 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista supports three "
 "types of anti-aliasing:\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"PyVista supports three "
+"types of anti-aliasing:\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:39
 #: ../../pyvista/doc/examples/index.rst:1299
 msgid ":ref:`sphx_glr_examples_02-plot_anti-aliasing.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_anti-aliasing.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:41
 #: ../../pyvista/doc/examples/index.rst:1301
@@ -11233,6 +11273,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Anti-Aliasing</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Anti-Aliasing</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:47
 #: ../../pyvista/doc/examples/index.rst:1307
@@ -11260,12 +11302,12 @@ msgstr ""
 #: ../../pyvista/doc/examples/02-plot/index.rst:64
 #: ../../pyvista/doc/examples/index.rst:1324
 msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Blurring\">"
-msgstr ""
+msgstr "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Blurring\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:73
 #: ../../pyvista/doc/examples/index.rst:1333
 msgid ":ref:`sphx_glr_examples_02-plot_blurring.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_blurring.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:75
 #: ../../pyvista/doc/examples/index.rst:1335
@@ -11273,6 +11315,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Blurring</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Blurring</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:81
 #: ../../pyvista/doc/examples/index.rst:1341
@@ -11445,11 +11489,13 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how you "
 "can use pyvista.Plotter.enable_depth_of_field to highlight part of y...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how you "
+"can use pyvista.Plotter.enable_depth_of_field to highlight part of y...\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:209
 #: ../../pyvista/doc/examples/index.rst:1469
 msgid ":ref:`sphx_glr_examples_02-plot_depth_of_field.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_depth_of_field.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:211
 #: ../../pyvista/doc/examples/index.rst:1471
@@ -11457,6 +11503,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Depth of Field Plotting</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Depth of Field Plotting</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:217
 #: ../../pyvista/doc/examples/index.rst:1477
@@ -12278,17 +12326,19 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Demonstrate the usage of "
 "surface space ambient occlusion.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Demonstrate the usage of "
+"surface space ambient occlusion.\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:24
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Surface Space Ambient Occlusion"
-msgstr ""
+msgstr "Surface Space Ambient Occlusion"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:736
 #: ../../pyvista/doc/examples/index.rst:1996
 msgid ":ref:`sphx_glr_examples_02-plot_ssao.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_ssao.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:738
 #: ../../pyvista/doc/examples/index.rst:1998
@@ -12296,6 +12346,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Surface Space Ambient Occlusion</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Surface Space Ambient Occlusion</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:744
 #: ../../pyvista/doc/examples/index.rst:2004
@@ -12698,7 +12750,7 @@ msgstr "1つのサーフェスを上書き可能な印刷対象として設定�
 
 #: ../../pyvista/doc/examples/02-plot/isovalue.rst:203
 msgid "**Total running time of the script:** ( 0 minutes  50.291 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  50.291 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/isovalue.rst:215
 msgid ":download:`Download Python source code: isovalue.py <isovalue.py>`"
@@ -12946,7 +12998,7 @@ msgstr "マウスの左ボタンを使って選択し，選択されるたびに
 
 #: ../../pyvista/doc/examples/02-plot/mesh-picking.rst:114
 msgid "**Total running time of the script:** ( 0 minutes  0.554 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.554 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/mesh-picking.rst:126
 msgid ""
@@ -13018,7 +13070,7 @@ msgstr "ムービーを作成する"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:138
 msgid "**Total running time of the script:** ( 0 minutes  12.712 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  12.712 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:150
 msgid ""
@@ -13224,7 +13276,7 @@ msgid ""
 "function looks like? You can fetch it:"
 msgstr ""
 "上記のように最小化された不透明度マッピングが与えられると，PyVistaはスカラーをマッピングするときに表示される色の数の範囲にわたって不透明度マッピングを補間します．"
-" ``scipy`` が利用可能なら，二次補間が使用されます-"
+" ``scipy`` が利用可能なら，2次補間が使用されます-"
 "そうでなければ，単純な線形補間が使用されます．不透明度伝達関数がどのようなものか知りたいですか?次のようにして取得できます．"
 
 #: ../../pyvista/doc/examples/02-plot/opacity.rst:202
@@ -13654,7 +13706,7 @@ msgid ""
 "To split up individual cells, separate them using "
 ":func:`pyvista.DataSet.separate_cells`."
 msgstr ""
-"もし，各セルの各ポイントにデータを割り当てて，それをプロットしたかったら，これらの六面体のセルはすべて同じポイントを共有しているので，単純に不可能です．個々のセルを分割するには，"
+"もし，各セルの各ポイントにデータを割り当てて，それをプロットしたかったら，これらの6面体のセルはすべて同じポイントを共有しているので，単純に不可能です．個々のセルを分割するには，"
 " :func:`pyvista.DataSet.separate_cells` を使用してセルを分割します．"
 
 #: ../../pyvista/doc/examples/02-plot/point-cell-scalars.rst:155
@@ -13937,7 +13989,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**01:03.557** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**01:03.557** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)"
@@ -13945,7 +13997,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_isovalue.py` (``isovalue.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:50.291"
-msgstr ""
+msgstr "00:50.291"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_02-plot_movie_glyphs.py` (``movie_glyphs.py``)"
@@ -13954,7 +14006,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid "00:12.712"
-msgstr ""
+msgstr "00:12.712"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:15
 msgid ":ref:`sphx_glr_examples_02-plot_mesh-picking.py` (``mesh-picking.py``)"
@@ -13963,12 +14015,13 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:15
 msgid "00:00.554"
-msgstr ""
+msgstr "00:00.554"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:17
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_anti-aliasing.py` (``anti-aliasing.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_anti-aliasing.py` (``anti-aliasing.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:19
 msgid ""
@@ -13980,7 +14033,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:21
 msgid ":ref:`sphx_glr_examples_02-plot_blurring.py` (``blurring.py``)"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_blurring.py` (``blurring.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:23
 msgid ":ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)"
@@ -14023,6 +14076,7 @@ msgstr ""
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_depth_of_field.py` (``depth_of_field.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_depth_of_field.py` (``depth_of_field.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:39
 msgid ""
@@ -14158,7 +14212,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_spherical.py` (``spherical.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:93
 msgid ":ref:`sphx_glr_examples_02-plot_ssao.py` (``ssao.py``)"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_ssao.py` (``ssao.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:95
 msgid ""
@@ -14277,7 +14331,7 @@ msgstr "ポリゴンメッシュのエッジのサブセットを抽出し，メ
 
 #: ../../pyvista/doc/examples/02-plot/silhouette.rst:46
 msgid "Prepare a triangulated ``PolyData``"
-msgstr "三角 ``PolyData`` を作成する"
+msgstr "3角 ``PolyData`` を作成する"
 
 #: ../../pyvista/doc/examples/02-plot/silhouette.rst:63
 msgid "Now we can display the silhouette of the mesh and compare the result:"
@@ -14362,10 +14416,12 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_ssao.py>` to download "
 "the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_ssao.py>` to download "
+"the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:26
 msgid "Demonstrate the usage of surface space ambient occlusion."
-msgstr ""
+msgstr "Surface Space Ambient Occlusionの使用方法を説明します．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:28
 msgid ""
@@ -14374,43 +14430,47 @@ msgid ""
 "wish to plot the occlusion effect that nearby meshes have on each other by "
 "blocking nearby light sources."
 msgstr ""
+"Surface Space Ambient "
+"Occlusion（SSAO）は，レイトレーシングよりも効率的にシャドウを近似でき，同様の結果を得ることができます．近くのメッシュが近くの光源を遮ることで互いに及ぼすオクルージョン効果をプロットしたい場合に使用します．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:33
 msgid ""
 "See `Kitware: Screen-Space Ambient Occlusion "
 "<https://www.kitware.com/ssao/>`_ for more details"
 msgstr ""
+"詳しくは `Kitware: Screen-Space Ambient Occlusion "
+"<https://www.kitware.com/ssao/>`_ をご覧ください"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:58
 msgid "Plot with defaults"
-msgstr ""
+msgstr "デフォルトでプロットする"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:59
 msgid ""
 "Let's plot this without SSAO. Note how the lighting is identical for each "
 "cube."
-msgstr ""
+msgstr "これを SSAO なしでプロットしてみましょう．各キューブで照明が同じであることに注意してください．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:87
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:185
 msgid "Plot with SSAO"
-msgstr ""
+msgstr "SSAOを使ったプロット"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:88
 msgid ""
 "Now plot this with SSAO. Note how adjacent cubes affect the lighting of each"
 " other to make it look less artificial."
-msgstr ""
+msgstr "今度はこれをSSAOでプロットしてみましょう．隣接するキューブが互いの照明に影響を与え，人工的でないように見えることに注意してください．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:91
 msgid ""
 "With a low ``kernel_size``, the image will be rendered quickly at the "
 "expense of quality."
-msgstr ""
+msgstr "低い ``kernel_size`` では，画質を犠牲にして，画像のレンダリングが速くなります．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:120
 msgid "Improve the SSAO rendering"
-msgstr ""
+msgstr "SSAOレンダリングの改善"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:121
 msgid ""
@@ -14418,50 +14478,55 @@ msgid ""
 "and also enabled SSAA anti-aliasing to smooth out any of the artifacts "
 "created from SSAO."
 msgstr ""
+"ここでは，SSAO の品質を向上させるために ``kernel_size`` を大きくし，SSAO から生じるアーティファクトを滑らかにするために "
+"SSAA アンチエイリアシングも有効にしています．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:152
 msgid "Plot a CAD model without SSAO"
-msgstr ""
+msgstr "SSAOを使用しないCADモデルの作図"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:153
 msgid ""
 "Here's another example without SSAO. This is a CAD model of a Raspberry PI "
 "case."
-msgstr ""
+msgstr "こちらもSSAOを使わない例です．これはRaspberry PIの筐体のCADモデルです．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:186
 msgid ""
 "Here's the same CAD model with SSAO. Note how we had to increase both "
 "``radius`` and ``bias`` due to the relative scene size."
 msgstr ""
+"同じCADモデルをSSAOで表示したところです．シーンの大きさが相対的に大きくなったため， ``radius`` と ``bias`` "
+"の両方を大きくする必要があったことに注意してください．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:189
 msgid ""
 "Note that the occlusion still seems quite small. In the next example we will"
 " increase the ``radius`` to increase the effect of the occlusion."
 msgstr ""
+"閉塞感はまだかなり小さいようですが，注意してください．次の例では， ``radius`` を大きくして，閉塞感の効果を大きくしてみましょう．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:220
 msgid "Increase the Radius"
-msgstr ""
+msgstr "半径を大きくする"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:221
 msgid ""
 "Here we've increased the ``radius`` to the point where the case occlusion "
 "now seems realistic without it becoming overwhelming."
-msgstr ""
+msgstr "ここでは，ケースオクルージョンが過剰にならずにリアルに見える程度に ``radius`` を大きくしています．"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:250
 msgid "**Total running time of the script:** ( 0 minutes  21.615 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  21.615 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:262
 msgid ":download:`Download Python source code: ssao.py <ssao.py>`"
-msgstr ""
+msgstr ":download:`Download Python source code: ssao.py <ssao.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:266
 msgid ":download:`Download Jupyter notebook: ssao.ipynb <ssao.ipynb>`"
-msgstr ""
+msgstr ":download:`Download Jupyter notebook: ssao.ipynb <ssao.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/surface-picking.rst:13
 msgid ""
@@ -15685,7 +15750,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/multi-slider-widget.rst:131
 msgid "**Total running time of the script:** ( 0 minutes  0.416 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.416 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/multi-slider-widget.rst:143
 msgid ""
@@ -15801,7 +15866,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:8
 msgid "**00:00.416** total execution time for **examples_03-widgets** files:"
-msgstr ""
+msgstr "**00:00.416** total execution time for **examples_03-widgets** files:"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid ""
@@ -15813,7 +15878,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:11
 msgid "00:00.416"
-msgstr ""
+msgstr "00:00.416"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
@@ -17624,7 +17689,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:34
 msgid "First, define the ray triangle intersection method."
-msgstr "まず，光線三角交差法を定義します．"
+msgstr "まず，光線3角交差法を定義します．"
 
 #: ../../pyvista/doc/examples/99-advanced/ray-trace-moeller.rst:160
 msgid "Plot the problem setup and the intersection"
