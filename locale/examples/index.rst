@@ -2495,6 +2495,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot the solar system in PyVista.">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_planets_thumb.png
+    :alt: 3D Earth and Celestial Bodies
+
+  :ref:`sphx_glr_examples_99-advanced_planets.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">3D Earth and Celestial Bodies</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the Moeller–Trumbore intersection algorithm using pyvista.">
 
 .. only:: html
