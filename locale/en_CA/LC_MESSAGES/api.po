@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 23:40+0000\n"
+"POT-Creation-Date: 2022-10-01 01:27+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (Canada) (https://www.transifex.com/tkoyama010/teams/112279/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -621,6 +621,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:0
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:0
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:0
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:0
@@ -866,6 +868,14 @@ msgstr ""
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:0
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2101,6 +2111,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:26
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:27
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:26
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:26
@@ -2410,21 +2422,53 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes.reset_visibilities:17
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.above_range_color:17
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.below_range_color:17
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.CompositePolyDataMapper.block_attr:33
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.CompositePolyDataMapper.color_missing_with_nan:17
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.CompositePolyDataMapper.dataset:17
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.nan_color:21
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:18
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper:24
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:81
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.above_range_color:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.alpha_range:22
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.annotations:20
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.below_range_color:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.cmap:17
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.hue_range:22
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.log_scale:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:28
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.n_values:17
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_color:18
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:21
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:32
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.saturation_range:22
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.scalar_range:21
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_color_tf:21
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_opacity_tf:21
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.value_range:22
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.values:19
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:77
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -2589,6 +2633,8 @@ msgstr ""
 #: pyvista.themes.set_plot_theme:22 ../../pyvista/pyvista/themes.pydocstring
 #: of pyvista.themes.DarkTheme:18 ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme:17 ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.above_range_color:17
+#: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.anti_aliasing:18
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.auto_close:19
@@ -2596,6 +2642,8 @@ msgstr ""
 #: pyvista.themes.DefaultTheme.axes:17
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.background:17
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.below_range_color:17
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.camera:17
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -4036,6 +4084,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:0
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:0
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:0
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:0
@@ -4299,6 +4349,12 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:0
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_color_tf:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_opacity_tf:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_cursor:0
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -4770,8 +4826,8 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:23
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.CompositePolyDataMapper.block_attr:15
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.nan_color:15
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.rebuild:17
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:112
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
@@ -6329,6 +6385,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:8
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:9
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:8
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:8
@@ -6498,6 +6556,8 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:15
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:34
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:49
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:8
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -7183,11 +7243,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:29
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:68
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:73
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:82
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:78
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:87
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:45
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -8904,6 +8964,8 @@ msgstr ""
 #: pyvista.demos.demos.plot_datasets:30
 #: ../../pyvista/pyvista/examples/cells.pydocstring of
 #: pyvista.examples.cells.plot_cell:10
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:62
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:60
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -11945,6 +12007,8 @@ msgstr ""
 #: pyvista.StructuredGrid.dimensions:18
 #: ../../pyvista/pyvista/core/objects.pydocstring of
 #: pyvista.core.objects.Table.get_data_range:31
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.get_pick_position:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -12467,6 +12531,12 @@ msgstr ""
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:60
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:65
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:52
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:55
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:58
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:33
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -12888,6 +12958,10 @@ msgstr ""
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:20
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:46
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:77
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:17
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:79
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
@@ -13745,6 +13819,8 @@ msgstr ""
 #: pyvista.plotting.actor.Actor.rotate_y:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.rotate_z:17
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:7
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:18
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -15842,9 +15918,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:51
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:82
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:85
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:94
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:97
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:23
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:27
 msgid "bool, default: python:False"
 msgstr ""
 
@@ -17805,6 +17885,8 @@ msgstr ""
 #: pyvista.examples.cells.plot_cell:24
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:18
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:80
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
@@ -21754,8 +21836,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.clip_closed_surface:23
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:78
 msgid "python:str, python:list, optional"
 msgstr ""
 
@@ -24636,6 +24716,8 @@ msgstr ""
 #: pyvista.core.pointset.StructuredGrid:30
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid:34
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:27
 msgid "numpy.ndarray, optional"
 msgstr ""
 
@@ -26407,7 +26489,7 @@ msgstr ""
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
 #: pyvista.demos.demos.orientation_cube:18
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:96
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:105
 msgid ":class:`python:dict`"
 msgstr ""
 
@@ -29291,6 +29373,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:9
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:10
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:9
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:9
@@ -29559,6 +29643,8 @@ msgstr ""
 #: pyvista.examples.downloads.download_face2:9
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:8
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:9
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:8
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
@@ -29956,6 +30042,8 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:14
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:15
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:14
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_foot_bones:14
@@ -30141,6 +30229,8 @@ msgstr ""
 #: pyvista.examples.downloads.download_disc_quads:23
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_dolfin:23
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:24
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_letter_a:23
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
@@ -30419,6 +30509,8 @@ msgstr ""
 #: pyvista.examples.planets.download_venus_surface:15
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:9
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:10
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_ssao:35
 msgid "bool, default: python:True"
@@ -31196,6 +31288,27 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_faults:2
 msgid "Download faults dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:2
+msgid "Download the finite element solution of a bracket."
+msgstr ""
+
+#: ../../pyvista/pyvista/examples/downloads.pydocstring of
+#: pyvista.examples.downloads.download_fea_bracket:4
+msgid ""
+"Contains von-mises equivalent cell stress assuming a vertical (y-axis) load."
+msgstr ""
+
+#: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:3
+msgid "Download and plot equivalent cell stress."
+msgstr ""
+
+#: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:23
+msgid ""
+"Plot the point stress using the ``'jet'`` color map. Convert the cell data "
+"to point data."
 msgstr ""
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
@@ -33137,7 +33250,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:2
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Wrap vtkActor."
 msgstr ""
 
@@ -33326,6 +33439,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:9
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:8
 msgid "Optional keyword arguments passed to :func:`pyvista.Plotter.show`."
 msgstr ""
 
@@ -33459,7 +33574,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.BlockAttributes:2
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid "Block attributes used to set the attributes of a block."
 msgstr ""
 
@@ -33610,7 +33725,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes:2
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid "Block attributes."
 msgstr ""
 
@@ -33728,7 +33843,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid "Composite PolyData mapper."
 msgstr ""
 
@@ -33759,24 +33874,6 @@ msgid ""
 "Enabling makes for a smoother scalars display.  Default is ``True``.  When "
 "``False``, OpenGL will interpolate the mapped colors which can result is "
 "showing colors that are not present in the color map."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.above_range_color:2
-msgid "Return or set the above range color."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
-msgid "Set the above range color to blue."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.below_range_color:2
-msgid "Return or set the below range color."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
-msgid "Set the below range color to green."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -33811,22 +33908,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.CompositePolyDataMapper.dataset:2
 msgid "Return the composite dataset assigned to this mapper."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.nan_color:2
-msgid "Return or set the NaN color."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.CompositePolyDataMapper.nan_color:16
-msgid ""
-":attr:`CompositePolyDataMapper.color_missing_with_nan` must be enabled for "
-"the color to be applied to the actor."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:3
-msgid "Set the NaN color to blue."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -33887,6 +33968,8 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:24
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:45
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.annotations:4
 msgid ""
 "Pass a dictionary of annotations. Keys are the float values in the scalars "
 "range to annotate on the scalar bar and the values are the the string "
@@ -34008,13 +34091,19 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:65
-msgid "**cmap** : :class:`python:str`, :class:`python:list`"
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:74
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:82
+msgid ""
+"**cmap** : :class:`python:str`, :class:`python:list`, :obj:`or` "
+":obj:`pyvista.LookupTable`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:64
-msgid "python:str, python:list"
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:73
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:81
+msgid "python:str, python:list, or pyvista.LookupTable"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -34030,40 +34119,60 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:69
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:67
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:76
+msgid ""
+"You can also specify a list of colors to override an existing colormap with "
+"a custom one.  For example, to create a three color colormap you might "
+"specify ``['green', 'red', 'blue']``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:71
+msgid ""
+"This parameter also accepts a :class:`pyvista.LookupTable`. If this is set, "
+"all parameters controlling the color map like ``n_colors`` will be ignored. "
+"are installed, their colormaps can be specified by name."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:78
 msgid "**flip_scalars** : :ref:`bool <python:bltin-boolean-values>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:68
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:82
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:85
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:14
 msgid ""
 "Flip direction of cmap. Most colormaps allow ``*_r`` suffix to do this as "
 "well."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:74
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:83
 msgid "**categories** : :ref:`bool <python:bltin-boolean-values>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:72
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:81
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:94
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:97
 msgid ""
 "If set to ``True``, then the number of unique values in the scalar array "
 "will be used as the ``n_colors`` argument."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:79
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:88
 msgid "**log_scale** : :ref:`bool <python:bltin-boolean-values>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:86
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:50
 msgid ""
@@ -34072,7 +34181,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:84
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:93
 msgid "Dictionary of scalar bar arguments."
 msgstr ""
 
@@ -34096,7 +34205,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper:2
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Wrap _vtk.vtkDataSetMapper."
 msgstr ""
 
@@ -34118,6 +34227,11 @@ msgstr ""
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.DataSetMapper.rst:3
 msgid ""
 "Create a mapper outside :class:`pyvista.Plotter` and assign it to an actor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.DataSetMapper.cmap:2
+msgid "Colormap assigned to this mapper."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
@@ -34204,6 +34318,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:15
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:10
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_ssao:21
 msgid "python:int, default: 256"
@@ -34268,6 +34386,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:47
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:78
 msgid "**annotations** : :class:`python:dict`, :obj:`optional`"
 msgstr ""
 
@@ -34289,38 +34409,32 @@ msgid "**below_color** : :obj:`color_like`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:79
-msgid "**cmap** : :class:`python:str`, :class:`python:list`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:76
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:80
 msgid ""
-"You can also specify a list of colors to override an existing colormap with "
-"a custom one.  For example, to create a three color colormap you might "
-"specify ``['green', 'red', 'blue']``."
+"This parameter also accepts a :class:`pyvista.LookupTable`. If this is set, "
+"all parameters controlling the color map like ``n_colors`` will be ignored."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:83
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:86
 msgid ""
 "**flip_scalars** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:91
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:94
 msgid ""
 "**opacity** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:90
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:93
 msgid "python:str or numpy.ndarray, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:86
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:89
 msgid ""
 "Opacity mapping for the scalars array. A string can also be specified to map"
 " the scalars range to a predefined opacity transfer function (options "
@@ -34330,22 +34444,614 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:95
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:98
 msgid ""
 "**categories** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:112
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:115
 msgid "**clim** : 2 :obj:`item` :class:`python:list`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:98
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:101
 msgid ""
 "Color bar range for scalars.  Defaults to minimum and maximum of scalars "
 "array.  Example: ``(-1, 2)``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:2
+msgid "pyvista.LookupTable"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:2
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
+msgid "Scalar to RGBA mapping table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:4
+msgid ""
+"A lookup table is an array that maps input values to output values. When "
+"plotting data over a dataset, it is necessary to map those scalars to colors"
+" (in the RGBA format), and this class provides the functionality to do so."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:9
+msgid ""
+"See `vtkLookupTable "
+"<https://vtk.org/doc/nightly/html/classvtkLookupTable.html>`_ for more "
+"details regarding the underlying VTK API."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:17
+msgid ""
+"**cmap** : :class:`python:str`, :obj:`colors.Colormap`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:16
+msgid "python:str, colors.Colormap, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:16
+msgid ""
+"Color map from ``matplotlib``, ``colorcet``, or ``cmocean``. Either ``cmap``"
+" or ``values`` can be set, but not both."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:20
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
+msgid "**n_values** : :class:`python:int`, default: 256"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:20
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
+msgid "Number of colors in the color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:24
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:28
+msgid ""
+"**flip** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:23
+msgid ""
+"Flip the direction of cmap. Most colormaps allow ``*_r`` suffix to do this "
+"as well."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:28
+msgid "**values** : :obj:`numpy.ndarray`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:27
+msgid ""
+"Lookup table values. Either ``values`` or ``cmap`` can be set, but not both."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:33
+msgid "**value_range** : :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:32
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:36
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:40
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:46
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:50
+msgid "python:tuple, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:31
+msgid ""
+"The range of the brightness of the mapped lookup table. This range is only "
+"used when creating custom color maps and will be ignored if ``cmap`` is set."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:37
+msgid "**hue_range** : :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:36
+msgid ""
+"Lookup table hue range. This range is only used when creating custom color "
+"maps and will be ignored if ``cmap`` is set."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:41
+msgid "**alpha_range** : :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:40
+msgid ""
+"Lookup table alpha (transparency) range. This range is only used when "
+"creating custom color maps and will be ignored if ``cmap`` is set."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:47
+msgid "**scalar_range** : :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:44
+msgid ""
+"The range of scalars which will be mapped to colors. Values outside of this "
+"range will be colored according to :attr`LookupTable.below_range_color` and "
+":attr`LookupTable.above_range_color`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:50
+msgid ""
+"**log_scale** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:50
+msgid "Use a log scale when mapping scalar values."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:53
+msgid "**nan_color** : :obj:`color_like`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:53
+msgid "Color to render any values that are NANs."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:56
+msgid "**above_range_color** : :obj:`color_like`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:56
+msgid "Color to render any values above :attr:`LookupTable.scalar_range`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:59
+msgid "**below_range_color** : :obj:`color_like`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:59
+msgid "Color to render any values below :attr:`LookupTable.scalar_range`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:63
+msgid "**ramp** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:62
+msgid ""
+"The shape of the table ramp. This range is only used when creating custom "
+"color maps and will be ignored if ``cmap`` is set."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:66
+msgid ""
+"A dictionary of annotations. Keys are the float values in the scalars range "
+"to annotate on the scalar bar and the values are the the string annotations."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Plot the lookup table with the default VTK color map."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:32
+msgid "Plot the lookup table with the ``'inferno'`` color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.above_range_color:2
+msgid "Return or set the above range color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.above_range_color:4
+msgid ""
+"Any values above :attr:`LookupTable.scalar_range` will be rendered with this"
+" color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Enable the usage of the above range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
+msgid "Disable the usage of the above range color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.alpha_range:2
+msgid "Return or set the alpha range."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.alpha_range:4
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.hue_range:4
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.saturation_range:4
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.value_range:4
+msgid ""
+"This range is only used when creating custom color maps and will return "
+"``None`` when a color map has been set with :attr:`LookupTable.cmap`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.alpha_range:7
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.hue_range:7
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.saturation_range:7
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.value_range:7
+msgid ""
+"This will clear any existing color map and create new values for the lookup "
+"table when set."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Create a custom \"blues\" lookup table that decreases in opacity."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.annotations:2
+msgid "Return or set annotations."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Assign annotations to the lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:2
+msgid "Assign a colormap to this lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:8
+msgid ""
+"**cmap** : :class:`python:str`, :class:`python:list`, :obj:`colors.Colormap`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:7
+msgid "python:str, python:list, colors.Colormap"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:8
+msgid "Colormap from matplotlib, colorcet, or cmocean."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.below_range_color:2
+msgid "Return or set the below range color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.below_range_color:4
+msgid ""
+"Any values below :attr:`LookupTable.scalar_range` will be rendered with this"
+" color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Enable the usage of the below range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
+msgid "Disable the usage of the below range color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.cmap:2
+msgid "Return or set the color map used by this lookup table."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Apply the single matplotlib color map ``\"Oranges\"``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
+msgid "Apply a list of colors as a colormap."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.hue_range:2
+msgid "Return or set the hue range."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid ""
+"Set the hue range. This allows you to create a lookup table without setting "
+"a color map."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:25
+msgid "Create a different color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.log_scale:2
+msgid "Use log scale."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.log_scale:4
+msgid ""
+"When ``True`` the lookup table is a log scale to "
+":attr:`LookupTable.scalar_range`. Otherwise, it is linear scale."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Use log scale for the lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:2
+msgid ""
+"Map a single value through the lookup table, returning an RBG(A) color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:8
+msgid "**value** : :class:`python:float`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:8
+msgid "Scalar value to map to an RGB(A) color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:11
+msgid ""
+"**opacity** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:11
+msgid "Map the opacity as well."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.map_value:16
+msgid "Mapped RGB(A) color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.n_values:2
+msgid "Return or set the number of values in the lookup table."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Plot the ``\"reds\"`` colormap with 10 values."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
+msgid "Plot the default colormap with 1024 values."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_color:2
+msgid "Return or set the not a number (NAN) color."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_color:4
+msgid "Any values that are NANs will be rendered with this color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Set the NAN color to ``'grey'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:2
+msgid "Plot this lookup table."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Plot the ``\"viridis\"`` colormap with the below and above colors."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:26
+msgid "Plot only ``\"blues\"`` colormap."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:2
+msgid "Set the shape of the table ramp."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:4
+msgid ""
+"This attribute is only used when creating custom color maps and will return "
+"``None`` when a color map has been set with :attr:`LookupTable.cmap`. This "
+"will clear any existing color map and create new values for the lookup table"
+" when set."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:9
+msgid "This value may be either ``\"s-curve\"``, ``\"linear\"``, or ``\"sqrt\"``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:11
+msgid "The default is S-curve, which tails off gradually at either end."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:12
+msgid ""
+"The equation used for ``\"s-curve\"`` is ``y = (sin((x - 1/2)*pi) + 1)/2``, "
+"For an S-curve greyscale ramp, you should set :attr:`LookupTable.n_values`` "
+"to 402 (which is ``256*pi/2``) to provide room for the tails of the ramp."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:17
+msgid "The equation for the ``\"linear\"`` is simply ``y = x``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.ramp:18
+msgid "The equation for the ``\"sqrt\"`` is ``y = sqrt(x)``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Show the default s-curve ramp."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:25
+msgid "Plot the linear ramp."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:47
+msgid "Plot the ``\"sqrt\"`` ramp."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.rebuild:2
+msgid "Clear the color map and recompute the values table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.rebuild:4
+msgid ""
+"This called automatically when setting values like "
+":attr:`LookupTable.value_range`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.rebuild:18
+msgid ""
+"This will reset any colormap set with :func:`LookupTable.apply_cmap` or "
+":attr:`LookupTable.values`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.saturation_range:2
+msgid "Return or set the saturation range."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Create a custom \"blues\" lookup table that increases in saturation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.scalar_range:2
+msgid "Return or set the table range."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.scalar_range:4
+msgid ""
+"This is the range of scalars which will be mapped to colors. Values outside "
+"of this range will be colored according to "
+":attr`LookupTable.below_range_color` and "
+":attr`LookupTable.above_range_color`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_color_tf:2
+msgid "Return the VTK color transfer function of this table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_color_tf:18
+msgid ":obj:`vtk.vtkColorTransferFunction`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_color_tf:9
+msgid "VTK color transfer function."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_opacity_tf:2
+msgid "Return the opacity transfer function of this table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_opacity_tf:18
+msgid ":obj:`vtk.vtkPiecewiseFunction`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.to_opacity_tf:9
+msgid "Piecewise function of the opacity of this color table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.value_range:2
+msgid "Return or set the brightness of the mapped lookup table."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Show the effect of setting the value range on the default color map."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:25
+msgid "Demonstrate a different value range."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.values:2
+msgid "Return or set the lookup table values."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.values:4
+msgid ""
+"This attribute is used when creating a custom lookup table. The table must "
+"be a RGBA array shaped ``(n, 4)``."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Create a simple four value lookup table ranging from black to red."
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Plotter.rst:2
@@ -34354,7 +35060,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:2
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Plotting object to display vtk meshes or numpy arrays."
 msgstr ""
 
@@ -34760,7 +35466,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:2
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Wrap vtkProperty and expose it pythonically."
 msgstr ""
 
@@ -35637,7 +36343,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:2
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Renderer class."
 msgstr ""
 
@@ -35964,11 +36670,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:51
 msgid "**viewport** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:50
-msgid "python:tuple, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -38224,6 +38925,15 @@ msgid "Create a new theme from the default theme and apply it globally."
 msgstr ""
 
 #: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.above_range_color:2
+msgid "Return or set the default above range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
+msgid "Set the above range color to red."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.anti_aliasing:2
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.antialiasing:2
@@ -38292,6 +39002,15 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the default global background of all plots to white."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.below_range_color:2
+msgid "Return or set the default below range color."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
+msgid "Set the below range color to blue."
 msgstr ""
 
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -43832,12 +44551,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/api/plotting/index.rst:66
+#: ../../pyvista/doc/api/plotting/index.rst:67
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/api/plotting/index.rst:67
+#: ../../pyvista/doc/api/plotting/index.rst:68
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -43890,71 +44609,77 @@ msgid ""
 " plotting functionality in PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
 "color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:33:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:35
-msgid "Composite Plotting Reference"
+#: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, "
+"flip\\, values\\, ...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/index.rst:36
+msgid "Composite Plotting Reference"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:37
 msgid ""
 "These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
 "\\(dataset\\[\\, theme\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
 "dataset\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:46:<autosummary>:1
 msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:47
+#: ../../pyvista/doc/api/plotting/index.rst:48
 msgid "Charts API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48
+#: ../../pyvista/doc/api/plotting/index.rst:49
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
 " plotting windows. Note that using charts requires a VTK version of at least"
 " 9.0 and in a future release will require `vtk>=9.2`."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:59
+#: ../../pyvista/doc/api/plotting/index.rst:60
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:60
+#: ../../pyvista/doc/api/plotting/index.rst:61
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"

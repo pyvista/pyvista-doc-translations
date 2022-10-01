@@ -420,6 +420,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="The pyvista.LookupTable can be used to have fine-tuned control over the mapping between a pyvis...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_lookup-table_thumb.png
+    :alt: Lookup Tables
+
+  :ref:`sphx_glr_examples_02-plot_lookup-table.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Lookup Tables</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Picking Meshes">
 
 .. only:: html
@@ -874,6 +891,7 @@ plotting routines to perform tasks like:
    /examples/02-plot/labels
    /examples/02-plot/lighting_mesh
    /examples/02-plot/linked
+   /examples/02-plot/lookup-table
    /examples/02-plot/mesh-picking
    /examples/02-plot/movie
    /examples/02-plot/movie_glyphs
