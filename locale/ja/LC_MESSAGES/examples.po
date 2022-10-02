@@ -11822,17 +11822,19 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The pyvista.LookupTable can"
 " be used to have fine-tuned control over the mapping between a pyvis...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"The pyvista.LookupTable can"
+" be used to have fine-tuned control over the mapping between a pyvis...\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rstNone
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:24
 #: ../../pyvista/doc/examples/index.rstNone
 msgid "Lookup Tables"
-msgstr ""
+msgstr "ルックアップテーブル"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:430
 #: ../../pyvista/doc/examples/index.rst:1690
 msgid ":ref:`sphx_glr_examples_02-plot_lookup-table.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_lookup-table.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:432
 #: ../../pyvista/doc/examples/index.rst:1692
@@ -11840,6 +11842,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Lookup Tables</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Lookup Tables</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:438
 #: ../../pyvista/doc/examples/index.rst:1698
@@ -13003,16 +13007,20 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_02-plot_lookup-table.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_02-plot_lookup-table.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:25
 msgid "Demonstrate the usage of a lookup table within PyVista"
-msgstr ""
+msgstr "PyVistaでのルックアップテーブルの使い方を説明します。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:27
 msgid ""
 "The :class:`pyvista.LookupTable` can be used to have fine-tuned control over"
 " the mapping between a :class:`pyvista.DataSet`'s scalars and RGBA colors."
 msgstr ""
+":class:`pyvista.LookupTable` を使用すると、 :class:`pyvista.DataSet`' のスカラーと RGBA "
+"カラー間のマッピングを細かく制御することができます。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:48
 msgid ""
@@ -13039,10 +13047,32 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>56786</td></tr>\n"
+"<tr><td>N Points</td><td>102578</td></tr>\n"
+"<tr><td>X Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 3.250e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>Equivalent (von-Mises) Stress (psi)</b></td><td>Points</td><td>float32</td><td>1</td><td>1.437e-02</td><td>2.327e+01</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:76
 msgid "Default Color Map - Lookup Table"
-msgstr ""
+msgstr "デフォルトのカラーマップ - ルックアップテーブル"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:77
 msgid ""
@@ -13052,48 +13082,52 @@ msgid ""
 "attribute to the :class:`pyvista.DataSetMapper` and it has a helpful "
 "``repr`` method:"
 msgstr ""
+"まず、デフォルトのカラーマップ、 \"viridis\" "
+"を使ってプロットしてみましょう。内部的には、PyVistaは自動的にルックアップテーブルを作成して、スカラー(ここでは `point_data` "
+"に格納されていますをRGBAカラーにマップします。これは :class:`pyvista.DataSetMapper` "
+"のネストされた属性として表示され、便利な ``repr`` メソッドを持っています。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:120
 msgid "Plot the Lookup Table"
-msgstr ""
+msgstr "ルックアップテーブルをプロットする"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:121
 msgid ""
 "You can also plot lookup table to see the mapping between the scalar values "
 "(here, between 0 and 23.3) and RGBA colors."
-msgstr ""
+msgstr "また、ルックアップテーブルをプロットして、スカラー値(ここでは0〜23.3)とRGBAカラーの対応関係を確認することもできます。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:161
 msgid "Plot the DataSet"
-msgstr ""
+msgstr "データセットのプロット"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:162
 msgid "Lets plot the dataset using the automatically generated lookup table."
-msgstr ""
+msgstr "自動生成されたルックアップテーブルを使って、データセットをプロットしてみましょう。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:189
 msgid "Create a Custom Lookup Table using a matplotlib Color Map"
-msgstr ""
+msgstr "matplotlibのカラーマップを使ってカスタムのルックアップテーブルを作成する"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:190
 msgid ""
 "Here we create a lookup table with a narrow table range (same as ``clim``) "
 "and color values above and below the range."
-msgstr ""
+msgstr "ここでは、狭いテーブル範囲 (``clim`` と同じ) と、その上下のカラー値を持つルックアップテーブルを作成します。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:220
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:283
 msgid "Plot the bracket with the custom colormap"
-msgstr ""
+msgstr "カスタムカラーマップでブラケットをプロットする"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:221
 msgid ""
 "You can set assign the lookup table when using ``add_mesh`` with ``cmap=``."
-msgstr ""
+msgstr "ルックアップテーブルは、 ``add_mesh`` で ``cmap=`` を指定して使用する際に設定することができます。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:249
 msgid "Create a Custom Lookup Table using VTK's Methods"
-msgstr ""
+msgstr "VTKのメソッドを使ってカスタムのルックアップテーブルを作成する"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:250
 msgid ""
@@ -13101,16 +13135,19 @@ msgid ""
 "like :attr:`pyvista.LookupTable.hue_range` and "
 ":attr:`pyvista.LookupTable.value_range` to create your own lookup table."
 msgstr ""
+"完全に独自のカラーマップを作成したい場合は、 :attr:`pyvista.LookupTable.hue_range` や "
+":attr:`pyvista.LookupTable.value_range` "
+"といった属性を使用して、独自のルックアップテーブルを作成することができます。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:284
 msgid ""
 "Assign this custom color map to the plotter and disable lighting to improve "
 "the plot."
-msgstr ""
+msgstr "このカスタムカラーマップをプロッターに割り当て、ライティングを無効にすることで、プロットを改善します。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:312
 msgid "Custom colormap with widgets"
-msgstr ""
+msgstr "ウィジェットを使ったカスタムカラーマップ"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:313
 msgid ""
@@ -13118,35 +13155,39 @@ msgid ""
 "widgets. We create several overlapping single slider widgets to simulate a "
 "double ended slider widget."
 msgstr ""
+"ここでは、スカラーをプロットし、ウィジェットによってルックアップテーブルを動的に変化させる。ダブルエンドのスライダーウィジェットをシミュレートするために、いくつかのオーバーラップするシングルスライダーウィジェットを作成する。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:317
 msgid "This example just controls the alpha channel."
-msgstr ""
+msgstr "この例では、アルファチャンネルを制御するだけです。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:380
 msgid "Control Several Lookup Table Attributes"
-msgstr ""
+msgstr "複数のルックアップテーブルの属性を制御する"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:381
 msgid ""
 "Demonstrate the use of several slider bar widgets with lookup table "
 "callbacks."
-msgstr ""
+msgstr "ルックアップテーブルコールバックを持ついくつかのスライダーバーウィジェットの使用を実証します。"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:477
 msgid "**Total running time of the script:** ( 0 minutes  4.618 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  4.618 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:489
 msgid ""
 ":download:`Download Python source code: lookup-table.py <lookup-table.py>`"
 msgstr ""
+":download:`Download Python source code: lookup-table.py <lookup-table.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/lookup-table.rst:493
 msgid ""
 ":download:`Download Jupyter notebook: lookup-table.ipynb <lookup-"
 "table.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: lookup-table.ipynb <lookup-"
+"table.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/mesh-picking.rst:13
 msgid ""
@@ -14172,15 +14213,16 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:04.618** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:04.618** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_02-plot_lookup-table.py` (``lookup-table.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_lookup-table.py` (``lookup-table.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:04.618"
-msgstr ""
+msgstr "00:04.618"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
