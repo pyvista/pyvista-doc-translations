@@ -32704,23 +32704,23 @@ msgstr "faultsデータセットをダウンロードします．"
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_fea_bracket:2
 msgid "Download the finite element solution of a bracket."
-msgstr ""
+msgstr "ブラケットの有限要素法による解をダウンロードできます。"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_fea_bracket:4
 msgid ""
 "Contains von-mises equivalent cell stress assuming a vertical (y-axis) load."
-msgstr ""
+msgstr "垂直（y軸）方向の荷重を想定したフォンミーゼス等価セル応力を含む。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:3
 msgid "Download and plot equivalent cell stress."
-msgstr ""
+msgstr "等価セル応力をダウンロードしてプロットします。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:23
 msgid ""
 "Plot the point stress using the ``'jet'`` color map. Convert the cell data "
 "to point data."
-msgstr ""
+msgstr "``'jet'`` カラーマップを使用して点ストレスをプロットします。セルデータを点データに変換します。"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:2
@@ -35612,13 +35612,15 @@ msgid ""
 "**cmap** : :class:`python:str`, :class:`python:list`, :obj:`or` "
 ":obj:`pyvista.LookupTable`"
 msgstr ""
+"**cmap** : :class:`python:str`, :class:`python:list`, :obj:`or` "
+":obj:`pyvista.LookupTable`"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:73
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:81
 msgid "python:str, python:list, or pyvista.LookupTable"
-msgstr ""
+msgstr "python:str, python:list, or pyvista.LookupTable"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:60
@@ -35655,6 +35657,8 @@ msgid ""
 "all parameters controlling the color map like ``n_colors`` will be ignored. "
 "are installed, their colormaps can be specified by name."
 msgstr ""
+"このパラメータには :class:`pyvista.LookupTable` を指定することもできます。このパラメータが設定されている場合、 "
+"``n_colors`` のようなカラーマップを制御するすべてのパラメータは無視されます。"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:78
@@ -35752,7 +35756,7 @@ msgstr ":class:`pyvista.Plotter` の外側にマッパーを作成し，それ�
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.DataSetMapper.cmap:2
 msgid "Colormap assigned to this mapper."
-msgstr ""
+msgstr "このマッパーに割り当てられたカラーマップ。"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.DataSetMapper.dataset:2
@@ -35948,6 +35952,8 @@ msgid ""
 "This parameter also accepts a :class:`pyvista.LookupTable`. If this is set, "
 "all parameters controlling the color map like ``n_colors`` will be ignored."
 msgstr ""
+"このパラメータには :class:`pyvista.LookupTable` を指定することもできます。このパラメータが設定されている場合、 "
+"``n_colors`` のようなカラーマップを制御するすべてのパラメータは無視されます。"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:86
@@ -36006,13 +36012,13 @@ msgstr "スカラーのカラーバーの範囲．デフォルトはスカラー
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:2
 msgid "pyvista.LookupTable"
-msgstr ""
+msgstr "pyvista.LookupTable"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:2
 #: ../../pyvista/doc/api/plotting/index.rst:34:<autosummary>:1
 msgid "Scalar to RGBA mapping table."
-msgstr ""
+msgstr "スカラからRGBAへのマッピングテーブル。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:4
@@ -36021,6 +36027,7 @@ msgid ""
 "plotting data over a dataset, it is necessary to map those scalars to colors"
 " (in the RGBA format), and this class provides the functionality to do so."
 msgstr ""
+"ルックアップテーブルは、入力値と出力値を対応させる配列です。データセット上のデータをプロットする場合、スカラーを色（RGBA形式）に対応付ける必要があるが、このクラスはそのための機能を提供します。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:9
@@ -36029,17 +36036,20 @@ msgid ""
 "<https://vtk.org/doc/nightly/html/classvtkLookupTable.html>`_ for more "
 "details regarding the underlying VTK API."
 msgstr ""
+"VTK API の詳細については、 `vtkLookupTable "
+"<https://vtk.org/doc/nightly/html/classvtkLookupTable.html>`_ を参照してください。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:17
 msgid ""
 "**cmap** : :class:`python:str`, :obj:`colors.Colormap`, :obj:`optional`"
 msgstr ""
+"**cmap** : :class:`python:str`, :obj:`colors.Colormap`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:16
 msgid "python:str, colors.Colormap, optional"
-msgstr ""
+msgstr "python:str, colors.Colormap, optional"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:16
@@ -36047,20 +36057,22 @@ msgid ""
 "Color map from ``matplotlib``, ``colorcet``, or ``cmocean``. Either ``cmap``"
 " or ``values`` can be set, but not both."
 msgstr ""
+"``matplotlib``, ``colorcet``, または ``cmocean`` から取得した ``cmap`` と ``values`` "
+"のどちらかを指定することができますが、両方を指定することはできません。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:20
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
 msgid "**n_values** : :class:`python:int`, default: 256"
-msgstr ""
+msgstr "**n_values** : :class:`python:int`, default: 256"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:20
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
 msgid "Number of colors in the color map."
-msgstr ""
+msgstr "カラーマップの色数。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:24
@@ -36070,29 +36082,32 @@ msgid ""
 "**flip** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**flip** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:23
 msgid ""
 "Flip the direction of cmap. Most colormaps allow ``*_r`` suffix to do this "
 "as well."
-msgstr ""
+msgstr "cmapの方向を反転します．ほとんどのカラーマップでは， ``*_r`` サフィックスも同様にこれを行うことができます．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:28
 msgid "**values** : :obj:`numpy.ndarray`, :obj:`optional`"
-msgstr ""
+msgstr "**values** : :obj:`numpy.ndarray`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:27
 msgid ""
 "Lookup table values. Either ``values`` or ``cmap`` can be set, but not both."
 msgstr ""
+"ルックアップテーブルの値。 ``values`` と ``cmap`` のどちらかを指定することができますが、両方を指定することはできません。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:33
 msgid "**value_range** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**value_range** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:32
@@ -36113,11 +36128,13 @@ msgid ""
 "The range of the brightness of the mapped lookup table. This range is only "
 "used when creating custom color maps and will be ignored if ``cmap`` is set."
 msgstr ""
+"マップされたルックアップテーブルの明るさの範囲です。この範囲は、カスタムカラーマップを作成するときにのみ使用され、 ``cmap`` "
+"が設定されている場合は無視されます。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:37
 msgid "**hue_range** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**hue_range** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:36
@@ -36125,11 +36142,12 @@ msgid ""
 "Lookup table hue range. This range is only used when creating custom color "
 "maps and will be ignored if ``cmap`` is set."
 msgstr ""
+"ルックアップテーブルの色相範囲。この範囲は、カスタムカラーマップを作成するときにのみ使用され、 ``cmap`` が設定されている場合は無視されます。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:41
 msgid "**alpha_range** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**alpha_range** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:40
@@ -36137,11 +36155,13 @@ msgid ""
 "Lookup table alpha (transparency) range. This range is only used when "
 "creating custom color maps and will be ignored if ``cmap`` is set."
 msgstr ""
+"ルックアップテーブルのアルファ (透明度) 範囲。この範囲は、カスタムカラーマップを作成するときにのみ使用され、 ``cmap`` "
+"が設定されている場合は無視されます。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:47
 msgid "**scalar_range** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**scalar_range** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:44
@@ -36150,6 +36170,8 @@ msgid ""
 "range will be colored according to :attr`LookupTable.below_range_color` and "
 ":attr`LookupTable.above_range_color`."
 msgstr ""
+"色にマッピングされるスカラーの範囲です。この範囲外の値は :attr`LookupTable.below_range_color` と "
+":attr`LookupTable.above_range_color` に従って色付けされます。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:50
@@ -36161,42 +36183,42 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:50
 msgid "Use a log scale when mapping scalar values."
-msgstr ""
+msgstr "スカラー値をマッピングする際に、対数スケールを使用します。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:53
 msgid "**nan_color** : :obj:`color_like`, :obj:`optional`"
-msgstr ""
+msgstr "**nan_color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:53
 msgid "Color to render any values that are NANs."
-msgstr ""
+msgstr "NANであるすべての値をレンダリングするための色。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
 msgid "**above_range_color** : :obj:`color_like`, :obj:`optional`"
-msgstr ""
+msgstr "**above_range_color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
 msgid "Color to render any values above :attr:`LookupTable.scalar_range`."
-msgstr ""
+msgstr ":attr:`LookupTable.scalar_range` 以上の値をレンダリングするための色です。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
 msgid "**below_range_color** : :obj:`color_like`, :obj:`optional`"
-msgstr ""
+msgstr "**below_range_color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
 msgid "Color to render any values below :attr:`LookupTable.scalar_range`."
-msgstr ""
+msgstr ":attr:`LookupTable.scalar_range` 以下の値をレンダリングするための色です。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:63
 msgid "**ramp** : :class:`python:str`, :obj:`optional`"
-msgstr ""
+msgstr "**ramp** : :class:`python:str`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:62
@@ -36204,21 +36226,22 @@ msgid ""
 "The shape of the table ramp. This range is only used when creating custom "
 "color maps and will be ignored if ``cmap`` is set."
 msgstr ""
+"テーブルランプの形状を指定します。この範囲は、カスタムカラーマップを作成するときにのみ使用され、 ``cmap`` が設定されている場合は無視されます。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:66
 msgid ""
 "A dictionary of annotations. Keys are the float values in the scalars range "
 "to annotate on the scalar bar and the values are the the string annotations."
-msgstr ""
+msgstr "注釈の辞書．キーはスカラー範囲のfloat値で，スカラーバーに注釈を付けます．値は文字列注釈です．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Plot the lookup table with the default VTK color map."
-msgstr ""
+msgstr "ルックアップテーブルをデフォルトのVTKカラーマップでプロットします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:32
 msgid "Plot the lookup table with the ``'inferno'`` color map."
-msgstr ""
+msgstr "ルックアップテーブルを ``'inferno'`` カラーマップでプロットします。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.above_range_color:2
@@ -36230,20 +36253,20 @@ msgstr "上範囲の色を返すか設定します．"
 msgid ""
 "Any values above :attr:`LookupTable.scalar_range` will be rendered with this"
 " color."
-msgstr ""
+msgstr ":attr:`LookupTable.scalar_range` 以上の値は、この色でレンダリングされます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Enable the usage of the above range color."
-msgstr ""
+msgstr "上記の範囲の色を使用できるようにします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
 msgid "Disable the usage of the above range color."
-msgstr ""
+msgstr "上記の範囲の色を使用できないようにします。"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.alpha_range:2
 msgid "Return or set the alpha range."
-msgstr ""
+msgstr "アルファレンジを返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.alpha_range:4
