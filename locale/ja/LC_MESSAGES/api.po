@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 01:27+0000\n"
+"POT-Creation-Date: 2022-10-04 01:20+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -876,6 +876,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.plotting.lookup_table.LookupTable:0
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.apply_cmap:0
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:0
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.map_value:0
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -2443,6 +2445,10 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.LookupTable.alpha_range:22
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.annotations:20
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:30
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:46
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:19
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -16246,7 +16252,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:23
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:27
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:26
 msgid "bool, default: python:False"
 msgstr "bool, default: python:False"
 
@@ -25474,6 +25480,8 @@ msgstr "``'loop'``"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:35
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:26
 msgid "``'linear'``"
 msgstr "``'linear'``"
 
@@ -31877,6 +31885,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:9
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.map_value:10
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_ssao:35
@@ -35670,7 +35680,7 @@ msgstr "**flip_scalars** : :ref:`bool <python:bltin-boolean-values>`"
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:85
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:14
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:16
 msgid ""
 "Flip direction of cmap. Most colormaps allow ``*_r`` suffix to do this as "
 "well."
@@ -35847,7 +35857,7 @@ msgstr "**n_colors** : :class:`python:int`, default: 256"
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:19
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:10
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:12
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_ssao:21
 msgid "python:int, default: 256"
@@ -36063,21 +36073,21 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:20
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:13
 msgid "**n_values** : :class:`python:int`, default: 256"
 msgstr "**n_values** : :class:`python:int`, default: 256"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:20
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:11
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:13
 msgid "Number of colors in the color map."
 msgstr "カラーマップの色数．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:24
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:28
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:27
 msgid ""
 "**flip** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
@@ -36315,21 +36325,138 @@ msgid "Assign a colormap to this lookup table."
 msgstr "このルックアップテーブルにカラーマップを割り当てます．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:8
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:4
+msgid ""
+"This can be used instead of :attr:`LookupTable.cmap` when you need to set "
+"the number of values at the same time as the color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:10
 msgid ""
 "**cmap** : :class:`python:str`, :class:`python:list`, :obj:`colors.Colormap`"
 msgstr ""
 "**cmap** : :class:`python:str`, :class:`python:list`, :obj:`colors.Colormap`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:7
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:9
 msgid "python:str, python:list, colors.Colormap"
 msgstr "python:str, python:list, colors.Colormap"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:8
-msgid "Colormap from matplotlib, colorcet, or cmocean."
-msgstr "matplotlib，colorcet，または cmocean からカラーマップを取得します．"
+#: pyvista.plotting.lookup_table.LookupTable.apply_cmap:10
+msgid "Colormap from Matplotlib, colorcet, or cmocean."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Apply ``matplotlib``'s ``'cividis'`` color map."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:2
+msgid "Assign custom opacity to this lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:16
+msgid ""
+"**opacity** : :class:`python:float`, "
+":class:`python:list`\\(:class:`python:float`), :class:`python:str`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:15
+msgid "python:float, python:list(python:float), python:str"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:8
+msgid ""
+"The opacity mapping to use. Can be a ``str`` name of a predefined mapping "
+"including ``'linear'``, ``'geom'``, ``'sigmoid'``, ``'sigmoid_3-10'``.  "
+"Append an ``'_r'`` to any of those names to reverse that mapping.  This can "
+"also be a custom array or list of values that will be interpolated across "
+"the ``n_color`` range for user defined mappings. Values must be between 0 "
+"and 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:15
+msgid ""
+"If an ``int``, simply applies the same opacity across the entire colormap "
+"and must be between 0 and 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:20
+msgid ""
+"**interpolate** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:19
+msgid ""
+"Flag on whether or not to interpolate the opacity mapping for all colors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:43
+msgid "**kind** : :class:`python:str`, default: 'quadratic'"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:42
+msgid "python:str, default: 'quadratic'"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:23
+msgid ""
+"The interepolation kind if ``interpolate`` is ``True`` and ``scipy`` is "
+"available. Options are:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:27
+msgid "``'nearest'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:28
+msgid "``'zero'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:29
+msgid "``'slinear'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:30
+msgid "``'quadratic'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:31
+msgid "``'cubic'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:32
+msgid "``'previous'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.apply_opacity:33
+msgid "``'next'``"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid ""
+"Apply a user defined opacity custom opacity to a lookup table and plot the "
+"random hills example."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:2
@@ -36357,8 +36484,8 @@ msgid "Return or set the color map used by this lookup table."
 msgstr "このルックアップテーブルで使用されるカラーマップを返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
-msgid "Apply the single matplotlib color map ``\"Oranges\"``."
-msgstr "単一の matplotlib カラーマップ ``\"Oranges\"`` を適用します．"
+msgid "Apply the single Matplotlib color map ``\"Oranges\"``."
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:24
 msgid "Apply a list of colors as a colormap."
@@ -36539,9 +36666,9 @@ msgstr "カラーマップをクリアして，値テーブルを再計算しま
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.rebuild:4
 msgid ""
-"This called automatically when setting values like "
+"This is called automatically when setting values like "
 ":attr:`LookupTable.value_range`."
-msgstr "これは :attr:`LookupTable.value_range` のような値を設定する際に自動的に呼び出されます．"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.rebuild:18
