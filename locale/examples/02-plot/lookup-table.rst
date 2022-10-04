@@ -76,7 +76,7 @@ Default Color Map - Lookup Table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 First, let's plot using the default color map, "viridis". Internally, PyVista
 will automatically create a lookup table to map the scalars (stored here
-within `point_data`, to RGBA colors. This is shown here as a nested attribute
+within `point_data`) to RGBA colors. This is shown here as a nested attribute
 to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
 
 .. GENERATED FROM PYTHON SOURCE LINES 28-34
@@ -103,7 +103,7 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
  .. code-block:: none
 
 
-    LookupTable (0x7ffb8fb32580)
+    LookupTable (0x7f8fb355d520)
       Table Range:                (0.014368999749422073, 23.26799964904785)
       N Values:                   256
       Above Range Color:          None
@@ -159,7 +159,7 @@ You can also plot lookup table to see the mapping between the scalar values
 
 Plot the DataSet
 ~~~~~~~~~~~~~~~~
-Lets plot the dataset using the automatically generated lookup table.
+Let's plot the dataset using the automatically generated lookup table.
 
 .. GENERATED FROM PYTHON SOURCE LINES 49-55
 
@@ -185,7 +185,7 @@ Lets plot the dataset using the automatically generated lookup table.
 
 .. GENERATED FROM PYTHON SOURCE LINES 56-60
 
-Create a Custom Lookup Table using a matplotlib Color Map
+Create a Custom Lookup Table using a Matplotlib Color Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we create a lookup table with a narrow table range (same as ``clim``)
 and color values above and below the range.
@@ -474,7 +474,7 @@ callbacks.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.618 seconds)
+   **Total running time of the script:** ( 0 minutes  4.440 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lookup-table.py:

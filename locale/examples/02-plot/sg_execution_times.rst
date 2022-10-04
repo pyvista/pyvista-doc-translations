@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:04.618** total execution time for **examples_02-plot** files:
+**00:04.440** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_lookup-table.py` (``lookup-table.py``)                     | 00:04.618 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_lookup-table.py` (``lookup-table.py``)                     | 00:04.440 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_anti-aliasing.py` (``anti-aliasing.py``)                   | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
