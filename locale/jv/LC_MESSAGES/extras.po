@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 01:29+0000\n"
+"POT-Creation-Date: 2022-10-05 01:10+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Javanese (https://www.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -815,11 +815,87 @@ msgid ""
 "multi-core computers when ``FULL_DOC_BUILD=TRUE``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:476
-msgid "Creating a New Pull Request"
+#: ../../pyvista/CONTRIBUTING.rst:477
+msgid "Contributing to the Documentation"
 msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:478
+msgid "Documentation for PyVista is generated from three sources:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:480
+msgid ""
+"Docstrings from the classes, functions, and modules of ``pyvista`` using "
+"`sphinx.ext.autodoc <https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autodoc.html>`_."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:483
+msgid "Restructured test from ``doc/``"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:484
+msgid "Gallery examples from ``examples/``"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:486
+msgid ""
+"General usage and API descriptions should be placed within ``doc/api`` and "
+"the docstrings.  Full gallery examples should be placed in ``examples``."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:491
+msgid "Adding a New Example"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:492
+msgid ""
+"PyVista's examples come in two formats: basic code snippets demonstrating "
+"the functionality of an individual method or a full gallery example "
+"displaying one or more concepts.  Small code samples and snippets are "
+"contained in the ``doc/api`` directory or within our documentation strings, "
+"while the full gallery examples, meant to be run as individual downloadable "
+"scripts, are contained in the ``examples`` directory at the root of this "
+"repository."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:499
+msgid ""
+"To add a fully fledged, standalone example, add your example to the "
+"``examples`` directory in the root directory of the `PyVista Repository "
+"<https://github.com/pyvista/pyvista/>`_ within one of the applicable "
+"subdirectories.  Should none of the existing directories match the category "
+"of your example, create a new directory with a ``README.txt`` describing the"
+" new category.  Additionally, as these examples are built using the sphinx "
+"gallery extension, follow coding guidelines as established by `Sphinx-"
+"Gallery <https://sphinx-gallery.github.io/stable/index.html>`_."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:508
+msgid "For more details see :ref:`add_example_example`."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:512
+msgid "Add a new Example File"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:513
+msgid ""
+"If you have a dataset that you need for your gallery example, add it to "
+"`pyvista/vtk-data <https://github.com/pyvista/vtk-data/>`_ and follow the "
+"directions there. You will then need to add a new function to download the "
+"dataset ``pyvista/examples/downloads.py``. This might be as easy as:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:525
+msgid "Which enables:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:534
+msgid "Creating a New Pull Request"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:536
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -827,7 +903,7 @@ msgid ""
 "changes will work across several platforms."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:483
+#: ../../pyvista/CONTRIBUTING.rst:541
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -837,29 +913,29 @@ msgid ""
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:490
+#: ../../pyvista/CONTRIBUTING.rst:548
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:495
+#: ../../pyvista/CONTRIBUTING.rst:553
 msgid "Branching Model"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:497
+#: ../../pyvista/CONTRIBUTING.rst:555
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
 " Development <https://trunkbaseddevelopment.com/>`_ approach."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:501
+#: ../../pyvista/CONTRIBUTING.rst:559
 msgid "The main features of our branching model are:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:503
+#: ../../pyvista/CONTRIBUTING.rst:561
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -868,7 +944,7 @@ msgid ""
 "through unit testing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:508
+#: ../../pyvista/CONTRIBUTING.rst:566
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -880,7 +956,7 @@ msgid ""
 "versions of ``pyvista`` without having to worry about untested features."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:518
+#: ../../pyvista/CONTRIBUTING.rst:576
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version "
@@ -892,43 +968,43 @@ msgid ""
 "so they can be patched as needed."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:529
+#: ../../pyvista/CONTRIBUTING.rst:587
 msgid "Minor Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:531
+#: ../../pyvista/CONTRIBUTING.rst:589
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
 "following will occur:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:535
+#: ../../pyvista/CONTRIBUTING.rst:593
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:538
+#: ../../pyvista/CONTRIBUTING.rst:596
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:541
+#: ../../pyvista/CONTRIBUTING.rst:599
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
 "cached."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:552
+#: ../../pyvista/CONTRIBUTING.rst:610
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:555
+#: ../../pyvista/CONTRIBUTING.rst:613
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (e.g. ``0, 26, 'dev0'``). Push the branch to GitHub and create a new PR "
@@ -936,7 +1012,7 @@ msgid ""
 "limited at this point while effort is focused on the release."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:561
+#: ../../pyvista/CONTRIBUTING.rst:619
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -944,7 +1020,7 @@ msgid ""
 " release branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:566
+#: ../../pyvista/CONTRIBUTING.rst:624
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -953,7 +1029,7 @@ msgid ""
 "release with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:577
+#: ../../pyvista/CONTRIBUTING.rst:635
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -963,13 +1039,13 @@ msgid ""
 "if a specific contributor is to thank for a new feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:585
+#: ../../pyvista/CONTRIBUTING.rst:643
 msgid ""
 "Place your release notes from step 8 in the description for `the new release"
 " on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:589
+#: ../../pyvista/CONTRIBUTING.rst:647
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro/cf-scripts>`_ to open a pull request on the conda-"
@@ -977,27 +1053,27 @@ msgid ""
 "feedstock>`_. Merge that pull request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:595
+#: ../../pyvista/CONTRIBUTING.rst:653
 msgid "Announce the new release in the PyVista Slack workspace and celebrate!"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:599
+#: ../../pyvista/CONTRIBUTING.rst:657
 msgid "Patch Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:601
+#: ../../pyvista/CONTRIBUTING.rst:659
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:604
+#: ../../pyvista/CONTRIBUTING.rst:662
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:607
+#: ../../pyvista/CONTRIBUTING.rst:665
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (e.g. "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -1005,7 +1081,7 @@ msgid ""
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:613
+#: ../../pyvista/CONTRIBUTING.rst:671
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -1013,7 +1089,7 @@ msgid ""
 "the correct steps)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:618
+#: ../../pyvista/CONTRIBUTING.rst:676
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
