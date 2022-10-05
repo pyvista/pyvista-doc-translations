@@ -17,6 +17,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Each example should have a reference tag/key in the form:">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_add-example_thumb.png
+    :alt: Adding a New Gallery Example
+
+  :ref:`sphx_glr_examples_99-advanced_add-example.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Adding a New Gallery Example</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Here is some velocity data from a glacier modelling simulation that is compared across nodes in...">
 
 .. only:: html
@@ -159,6 +176,7 @@ developers.
 .. toctree::
    :hidden:
 
+   /examples/99-advanced/add-example
    /examples/99-advanced/antarctica-compare
    /examples/99-advanced/extending-pyvista
    /examples/99-advanced/openfoam-example
