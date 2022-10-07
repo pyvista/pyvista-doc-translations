@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-05 01:10+0000\n"
+"POT-Creation-Date: 2022-10-07 01:17+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -958,11 +958,11 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:477
 msgid "Contributing to the Documentation"
-msgstr ""
+msgstr "ドキュメンテーションへの貢献"
 
 #: ../../pyvista/CONTRIBUTING.rst:478
 msgid "Documentation for PyVista is generated from three sources:"
-msgstr ""
+msgstr "PyVistaのドキュメントは、3つのソースから作成されています:"
 
 #: ../../pyvista/CONTRIBUTING.rst:480
 msgid ""
@@ -970,24 +970,28 @@ msgid ""
 "`sphinx.ext.autodoc <https://www.sphinx-"
 "doc.org/en/master/usage/extensions/autodoc.html>`_."
 msgstr ""
+"``pyvista`` のクラス、関数、モジュールから、 `sphinx.ext.autodoc <https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autodoc.html>`_ を使用して、Docstringを取得します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:483
 msgid "Restructured test from ``doc/``"
-msgstr ""
+msgstr "``doc/`` からテストを再構築"
 
 #: ../../pyvista/CONTRIBUTING.rst:484
 msgid "Gallery examples from ``examples/``"
-msgstr ""
+msgstr "``examples/`` からのギャラリー例"
 
 #: ../../pyvista/CONTRIBUTING.rst:486
 msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings.  Full gallery examples should be placed in ``examples``."
 msgstr ""
+"一般的な使い方やAPIの説明は ``doc/api`` と docstrings に記述してください。 完全なギャラリーのサンプルは "
+"``examples`` に置いてください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:491
 msgid "Adding a New Example"
-msgstr ""
+msgstr "新しい例の追加"
 
 #: ../../pyvista/CONTRIBUTING.rst:492
 msgid ""
@@ -999,6 +1003,10 @@ msgid ""
 "scripts, are contained in the ``examples`` directory at the root of this "
 "repository."
 msgstr ""
+"PyVistaのサンプルには2つの形式があります。個々のメソッドの機能を示す基本的なコードスニペットと、1つまたは複数のコンセプトを表示する完全なギャラリーの例です。"
+" 小さなコードサンプルやスニペットは ``doc/api`` "
+"ディレクトリやドキュメント文字列に含まれています。一方、完全なギャラリーサンプルは、ダウンロード可能なスクリプトとして実行するために、このリポジトリのルートにある"
+" ``examples`` ディレクトリに含まれています。"
 
 #: ../../pyvista/CONTRIBUTING.rst:499
 msgid ""
@@ -1011,14 +1019,21 @@ msgid ""
 "gallery extension, follow coding guidelines as established by `Sphinx-"
 "Gallery <https://sphinx-gallery.github.io/stable/index.html>`_."
 msgstr ""
+"本格的なスタンドアロンサンプルを追加するには、`PyVista Repository "
+"<https://github.com/pyvista/pyvista/>`_ のルートディレクトリにある ``examples`` "
+"ディレクトリに、該当するサブディレクトリのいずれかにあなたのサンプルを追加してください。 "
+"もし、既存のディレクトリがあなたのサンプルのカテゴリと一致しない場合は、新しいディレクトリを作成し、新しいカテゴリを記述した "
+"``README.txt`` を記述してください。 さらに、これらのサンプルはsphinx gallery 拡張を使って作成されていますので、 "
+"`Sphinx-Gallery <https://sphinx-gallery.github.io/stable/index.html>`_ "
+"が定めるコーディングガイドラインに従ってください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:508
 msgid "For more details see :ref:`add_example_example`."
-msgstr ""
+msgstr "詳しくは :ref:`add_example_example` を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:512
 msgid "Add a new Example File"
-msgstr ""
+msgstr "新しいサンプルファイルの追加"
 
 #: ../../pyvista/CONTRIBUTING.rst:513
 msgid ""
@@ -1027,10 +1042,14 @@ msgid ""
 "directions there. You will then need to add a new function to download the "
 "dataset ``pyvista/examples/downloads.py``. This might be as easy as:"
 msgstr ""
+"もしギャラリーのサンプルに必要なデータセットがあれば、それを `pyvista/vtk-data "
+"<https://github.com/pyvista/vtk-data/>`_ "
+"に追加し、そこにある指示に従ってください。それから、データセットをダウンロードする ``pyvista/examples/downloads.py`` "
+"ための新しい関数を追加する必要があります。これは以下のように簡単です。"
 
 #: ../../pyvista/CONTRIBUTING.rst:525
 msgid "Which enables:"
-msgstr ""
+msgstr "以下を可能にします:"
 
 #: ../../pyvista/CONTRIBUTING.rst:534
 msgid "Creating a New Pull Request"
@@ -1579,13 +1598,7 @@ msgid "include-source"
 msgstr "include-source"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
+#: pyvista.ext.plot_directive-1
 msgid "bool"
 msgstr "bool"
 
@@ -1604,17 +1617,7 @@ msgid "encoding"
 msgstr "encoding"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
+#: pyvista.ext.plot_directive-1
 msgid "str"
 msgstr "str"
 
@@ -1635,7 +1638,7 @@ msgid "context"
 msgstr "context"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directiveNone
+#: pyvista.ext.plot_directive-1
 msgid "None"
 msgstr "None"
 
