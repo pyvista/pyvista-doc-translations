@@ -9155,6 +9155,8 @@ msgid ""
 "**use_all_points** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**use_all_points** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:16
@@ -9239,6 +9241,8 @@ msgid ""
 " threaded approach is used which avoids the use of a point locator and is "
 "quicker."
 msgstr ""
+"入力メッシュのすべての点が出力に存在するかどうかを示します． ``True`` の場合，点のリナンバリングが有効になります． ``True`` "
+"に設定すると，ポイントロケーターを使用しないスレッドアプローチが使用され，より高速に処理されます．"
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:14
@@ -9247,7 +9251,7 @@ msgstr ""
 msgid ""
 "By default this is set to ``False``, and unused points are omitted from the "
 "output."
-msgstr ""
+msgstr "デフォルトでは ``False`` に設定されており，未使用のポイントは出力から省略されます．"
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:17
@@ -9255,7 +9259,7 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:17
 msgid ""
 "This parameter can only be set to ``True`` with ``vtk==9.1.0`` or newer."
-msgstr ""
+msgstr "このパラメータは ``vtk==9.1.0`` 以降のバージョンで ``True`` に設定することが可能です．"
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:25
@@ -30382,9 +30386,9 @@ msgid ""
 "example data repository, you should add a ``download-<dataset>`` method here"
 " which will rendered on this page."
 msgstr ""
-"ファイルはすべて https://github.com/pyvista/vtk-data/ でホストされており、 ``download_file`` "
-"関数を使用してダウンロードします。サンプルデータリポジトリにファイルを追加する場合は、このページでレンダリングされる "
-"``download-<dataset>`` メソッドを追加してください。"
+"ファイルはすべて https://github.com/pyvista/vtk-data/ でホストされており， ``download_file`` "
+"関数を使用してダウンロードします．サンプルデータリポジトリにファイルを追加する場合は，このページでレンダリングされる "
+"``download-<dataset>`` メソッドを追加してください．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.delete_downloads:2
@@ -32483,7 +32487,7 @@ msgstr "``'jet'`` カラーマップを使用して点ストレスをプロッ�
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_file:2
 msgid "Download a single file from the PyVista vtk-data repository."
-msgstr "PyVista vtk-dataリポジトリからファイルを1つダウンロードします。"
+msgstr "PyVista vtk-dataリポジトリからファイルを1つダウンロードします．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_file:4
@@ -32492,12 +32496,12 @@ msgid ""
 "<https://github.com/pyvista/vtk-data>`_."
 msgstr ""
 " `pyvista/vtk_data <https://github.com/pyvista/vtk-data>`_ "
-"にサンプルファイルを追加することができます。"
+"にサンプルファイルを追加することができます．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_file:10
 msgid "Filename relative to the ``Data`` directory."
-msgstr "``Data`` ディレクトリからの相対パス名。"
+msgstr "``Data`` ディレクトリからの相対パス名．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_file:13
@@ -32514,11 +32518,11 @@ msgstr ":class:`python:str` or :class:`python:list`"
 msgid ""
 "A single path if the file is not an archive. A ``list`` of paths if the file"
 " is an archive."
-msgstr "ファイルがアーカイブでない場合は、1つのパスが指定されます。ファイルがアーカイブの場合は、パスの ``list`` になります。"
+msgstr "ファイルがアーカイブでない場合は，1つのパスが指定されます．ファイルがアーカイブの場合は，パスの ``list`` になります．"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.downloads.rst:3
 msgid "Download the ``'puppy.jpg'`` image."
-msgstr "``'puppy.jpg'`` の画像をダウンロードします。"
+msgstr "``'puppy.jpg'`` の画像をダウンロードします．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.download_filled_contours:2
@@ -33434,8 +33438,8 @@ msgid ""
 "to the root directory of the archive, start the path with ``\"unzip\"``. "
 "Path must be a posix-like path."
 msgstr ""
-"ファイルの末尾にマッチさせるファイルのパス。アーカイブのルートディレクトリからの相対パスでマッチさせたい場合は、パスを ``\"unzip\"`` "
-"から始めてください。パスは posix-like なパスである必要があります。"
+"ファイルの末尾にマッチさせるファイルのパス．アーカイブのルートディレクトリからの相対パスでマッチさせたい場合は，パスを ``\"unzip\"`` "
+"から始めてください．パスは posix-like なパスである必要があります．"
 
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
 #: pyvista.examples.downloads.file_from_files:13
@@ -34405,7 +34409,7 @@ msgid ""
 "sections deal with those who wish to customize how PyVista downloads "
 "examples."
 msgstr ""
-"インターネット接続と通常のユーザーアカウントがあれば、PyVistaは問題なくサンプルをダウンロードしてキャッシュすることができるはずです。次の2つのセクションでは、PyVistaがサンプルをダウンロードする方法をカスタマイズしたい人について説明します。"
+"インターネット接続と通常のユーザーアカウントがあれば，PyVistaは問題なくサンプルをダウンロードしてキャッシュすることができるはずです．次の2つのセクションでは，PyVistaがサンプルをダウンロードする方法をカスタマイズしたい人について説明します．"
 
 #: ../../pyvista/doc/api/examples/index.rst:70
 msgid "Cache"
@@ -34417,8 +34421,8 @@ msgid ""
 "store the example files in a local cache. You can determine the location of "
 "this cache at runtime with:"
 msgstr ""
-"PyVistaは、 `pooch <https://github.com/fatiando/pooch>`_ "
-"を使ってサンプルファイルをダウンロードし、ローカルキャッシュに保存します。このキャッシュの場所は、実行時に次のようにして決定できます。"
+"PyVistaは， `pooch <https://github.com/fatiando/pooch>`_ "
+"を使ってサンプルファイルをダウンロードし，ローカルキャッシュに保存します．このキャッシュの場所は，実行時に次のようにして決定できます．"
 
 #: ../../pyvista/doc/api/examples/index.rst:85
 msgid ""
@@ -34426,15 +34430,15 @@ msgid ""
 "<pyvista.examples.downloads.delete_downloads>` if needed."
 msgstr ""
 "必要なら :func:`examples.delete_downloads() "
-"<pyvista.examples.downloads.delete_downloads>` でローカルキャッシュをクリアすることができます。"
+"<pyvista.examples.downloads.delete_downloads>` でローカルキャッシュをクリアすることができます．"
 
 #: ../../pyvista/doc/api/examples/index.rst:88
 msgid ""
 "If you want to override this local cache path, set the "
 "``PYVISTA_USERDATA_PATH`` environment variable. This path must be writable."
 msgstr ""
-"このローカルキャッシュのパスを上書きしたい場合は、 ``PYVISTA_USERDATA_PATH`` "
-"環境変数を設定します。このパスは書き込み可能である必要があります。"
+"このローカルキャッシュのパスを上書きしたい場合は， ``PYVISTA_USERDATA_PATH`` "
+"環境変数を設定します．このパスは書き込み可能である必要があります．"
 
 #: ../../pyvista/doc/api/examples/index.rst:93
 msgid "Data Sources"
@@ -34447,9 +34451,9 @@ msgid ""
 "you prefer using a local or network directory instead, you can override this"
 " source with the ``VTK_DATA_PATH`` environment variable."
 msgstr ""
-"PyVistaは、サンプルデータの主なソースとして `PyVista/vtk-data <https://github.com/pyvista/vtk-"
-"data.git>`_ を使用します。インターネットに接続できない場合や、ローカルディレクトリやネットワークディレクトリを使いたい場合は、環境変数 "
-"``VTK_DATA_PATH`` でこのソースをオーバーライドすることができます。"
+"PyVistaは，サンプルデータの主なソースとして `PyVista/vtk-data <https://github.com/pyvista/vtk-"
+"data.git>`_ を使用します．インターネットに接続できない場合や，ローカルディレクトリやネットワークディレクトリを使いたい場合は，環境変数 "
+"``VTK_DATA_PATH`` でこのソースをオーバーライドすることができます．"
 
 #: ../../pyvista/doc/api/examples/index.rst:99
 msgid ""
@@ -34458,9 +34462,9 @@ msgid ""
 "``'Data'`` since we need to specify the exact directory of the Data for "
 "``pooch``."
 msgstr ""
-"次の例では、まず git リポジトリをクローンし、そのディレクトリを ``VTK_DATA_PATH`` 経由で PyVista "
-"にエクスポートしています。パスが ``'Data'`` で終わっていることに注意してください。これは、 ``pooch`` "
-"のためにデータの正確なディレクトリを指定する必要があるためです。"
+"次の例では，まず git リポジトリをクローンし，そのディレクトリを ``VTK_DATA_PATH`` 経由で PyVista "
+"にエクスポートしています．パスが ``'Data'`` で終わっていることに注意してください．これは， ``pooch`` "
+"のためにデータの正確なディレクトリを指定する必要があるためです．"
 
 #: ../../pyvista/doc/api/examples/index.rst:111
 msgid "Cells"
@@ -34590,7 +34594,7 @@ msgstr "コアデータ構造を可視化するためのPyVistaの堅牢なプ�
 msgid ""
 "Use PyVista's Reader classes to read data files using "
 ":func:`pyvista.get_reader`."
-msgstr ""
+msgstr "PyVistaのReaderクラスを使って， :func:`pyvista.get_reader` を使ってデータファイルを読み込みます．"
 
 #: ../../pyvista/doc/api/index.rst:78
 msgid ""
@@ -36278,7 +36282,7 @@ msgid ""
 "If a ``float``, simply applies the same opacity across the entire colormap "
 "and must be between 0 and 1. Note that ``int`` values are interpreted as if "
 "they were floats."
-msgstr ""
+msgstr "もし ``float`` ならば，単純にカラーマップ全体に同じ不透明度を適用し，0から1の間でなければなりません．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.apply_opacity:21
@@ -36312,17 +36316,19 @@ msgid ""
 "available. See :class:`scipy.interpolate.interp1d` for the available "
 "interpolation kinds."
 msgstr ""
+"もし ``interpolate`` が ``True`` で， ``scipy`` が利用可能な場合は，補間の種類を指定します．利用可能な補間の種類は"
+" :class:`scipy.interpolate.interp1d` を参照してください．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.apply_opacity:28
 msgid "If ``scipy`` is not available, ``'linear'`` interpolation is used."
-msgstr ""
+msgstr "``scipy`` が利用できない場合は， ``'linear'`` 補間が利用されます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid ""
 "Apply a user defined custom opacity to a lookup table and plot the random "
 "hills example."
-msgstr ""
+msgstr "ルックアップテーブルにユーザー定義のカスタムオパシティを適用し，ランダムヒルの例をプロットします．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:2

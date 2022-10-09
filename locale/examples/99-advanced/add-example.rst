@@ -166,7 +166,7 @@ output HTML.
 .. GENERATED FROM PYTHON SOURCE LINES 83-92
 
 Caveat - Plotter must be within One Cell
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 It's not possible for a single :class:`pyvista.Plotter` object across
 multiple cells because these are closed out automatically at the end of a
 cell.
@@ -199,7 +199,7 @@ cell.
  .. code-block:: none
 
 
-    Actor (0x7f0d905fa700)
+    Actor (0x7f5e9c0ca220)
       Center:                     (0.0, 0.0, 0.0)
       Pickable:                   True
       Position:                   (0.0, 0.0, 0.0)
@@ -211,7 +211,7 @@ cell.
       User matrix:                Unset
       Has mapper:                 True
 
-    Property (0x7f0d905fafa0)
+    Property (0x7f5e9c0ca340)
       Ambient:                     0.0
       Ambient color:               Color(name='tan', hex='#d2b48cff')
       Anisotropy:                  0.0
@@ -235,7 +235,7 @@ cell.
       Specular power:              100.0
       Style:                       "Surface"
 
-    DataSetMapper (0x7f0d905fafa0)
+    DataSetMapper (0x7f5e9c0ca340)
       Scalar visibility:           False
       Scalar range:                (0.0, 1.0)
       Interpolate before mapping:  True
@@ -243,7 +243,7 @@ cell.
       Color mode:                  direct
 
     Attached dataset:
-    PolyData (0x7f0d90d0c700)
+    PolyData (0x7f5e9464f6a0)
       N Cells:	1680
       N Points:	842
       N Strips:	0
@@ -428,7 +428,7 @@ If you intend on adding an example file, you should add a new function in
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.556 seconds)
+   **Total running time of the script:** ( 0 minutes  3.784 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_add-example.py:

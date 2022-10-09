@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:03.556** total execution time for **examples_99-advanced** files:
+**00:03.784** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                             | 00:03.556 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                             | 00:03.784 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)               | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
