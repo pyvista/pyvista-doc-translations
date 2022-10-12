@@ -46,6 +46,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="By default front and backface rendering uses the same properties. In certain situations it can ...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_backface_props_thumb.png
+    :alt: Setting Backface Properties
+
+  :ref:`sphx_glr_examples_02-plot_backface_props.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Setting Backface Properties</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with pyvista.Plotter.add_background_image.">
 
 .. only:: html
@@ -869,6 +886,7 @@ plotting routines to perform tasks like:
    :hidden:
 
    /examples/02-plot/anti-aliasing
+   /examples/02-plot/backface_props
    /examples/02-plot/background_image
    /examples/02-plot/blurring
    /examples/02-plot/bounds

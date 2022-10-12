@@ -153,6 +153,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="There are several videos online talking about how a sphere can be turned inside out in a contin...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_sphere_eversion_thumb.png
+    :alt: Turning the sphere inside out
+
+  :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Turning the sphere inside out</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example applies the warp_by_vector filter to a cube whose eigenmodes have been computed us...">
 
 .. only:: html
@@ -184,5 +201,6 @@ developers.
    /examples/99-advanced/planets
    /examples/99-advanced/ray-trace-moeller
    /examples/99-advanced/ray-trace
+   /examples/99-advanced/sphere_eversion
    /examples/99-advanced/warp-by-vector-eigenmodes
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 01:17+0000\n"
+"POT-Creation-Date: 2022-10-12 01:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1184,7 +1184,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property:112
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.copy:21
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.plot:23
-#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:20
+#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:26
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.bounds:18
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.center:17
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.mapper:17
@@ -1221,7 +1221,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.disable_parallel_projection:18
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.enable_parallel_projection:20
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.reset_clipping_range:17
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:29
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:43
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.view_frustum:26
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.zoom:29
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.Chart2D.background_color:17
@@ -2215,6 +2215,7 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/planets.py:docstring of pyvista.examples.planets.load_uranus:0
 #: ../../pyvista/pyvista/examples/planets.py:docstring of pyvista.examples.planets.load_venus:0
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.copy:0
+#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:0
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor.copy:0
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.copy:0
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.view_frustum:0
@@ -2467,7 +2468,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.Property.anisotropy:20
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.texture:15
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.Camera.distance:15
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:24
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:38
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.ChartBox.loc:16
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.ChartBox.size:16
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.ChartPie.loc:16
@@ -2564,7 +2565,15 @@ msgstr ""
 msgid "Adjust the camera position so that the actors fill the entire renderer."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:9
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:4
+msgid "The camera view direction is reoriented to be normal to the ``view`` plane. When ``negative=False``, The first letter of ``view`` refers to the axis that points to the right. The second letter of ``view`` refers to axis that points up.  When ``negative=True``, the first letter refers to the axis that points left.  The up direction is unchanged."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:11
+msgid "Parallel projection is enabled when using this function."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:17
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.show_bounds:119
 msgid "**padding** : :class:`python:float`, :obj:`optional`"
 msgstr ""
@@ -2683,7 +2692,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property:63
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property:66
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property:88
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:8
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:16
 #: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.view_frustum:8
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts.Chart2D.line:18
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts.Chart2D.scatter:18
@@ -2798,7 +2807,7 @@ msgstr ""
 msgid "python:float, optional"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:8
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:16
 msgid "Additional padding around the actor(s). This is effectively a zoom, where a value of 0.01 results in a zoom out of 1%."
 msgstr ""
 
@@ -3485,12 +3494,51 @@ msgstr ""
 msgid "bool, optional"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:12
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:20
 msgid "Adjust the size of the render window as to match the dimensions of the visible actors."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:25
-msgid "This resets the view direction to look at the XY plane."
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:24
+msgid "**view**"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:-1
+msgid "{'xy', 'yx', 'xz', 'zx', 'yz', 'zy'}"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:24
+msgid "Plane to which the view is oriented. Default 'xy'."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:35
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:9
+msgid "**negative** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.clean:17
+#: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:14
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.linear_copy:14
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:34
+#: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts._Chart.show:10
+#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:29
+#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
+#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:82
+#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:87
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.Plotter.show:45
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_bounding_box:40
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:8
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.reset_camera:9
+msgid "bool"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:27
+msgid "Whether to view in opposite direction. Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.py:docstring of pyvista.plotting.camera.Camera.tight:39
+msgid "This resets the view direction to look at a plane with parallel projection."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Camera.rst:3
@@ -3728,23 +3776,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
 msgid "**vertex** : :ref:`bool <python:bltin-boolean-values>`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.clean:17
-#: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:14
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.linear_copy:14
-#: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts._Chart.show:10
-#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:29
-#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:77
-#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:82
-#: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:87
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.Plotter.show:45
-#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_bounding_box:40
-#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:8
-#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.reset_camera:9
-msgid "bool"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
@@ -21010,11 +21041,20 @@ msgid "Return or set the backface property."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:4
-msgid "By default this property matches the frontface property :attr:`Property.prop`. Once accessed or modified, this backface property becomes independent of the frontface property."
+msgid "By default this property matches the frontface property :attr:`Actor.prop`. Once accessed or modified, this backface property becomes independent of the frontface property. In order to restore the fallback to frontface property, assign ``None`` to the property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.copy:18
+#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:23
+msgid ":obj:`pyvista.Property`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.backface_prop:14
+msgid "The object describing backfaces."
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid "Create a sphere by a plane and color the inside of the clipped sphere light blue using the ``backface_prop``."
+msgid "Clip a sphere by a plane and color the inside of the clipped sphere light blue using the ``backface_prop``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.Actor.bounds:2
@@ -22874,10 +22914,6 @@ msgstr ""
 msgid "Create a deep copy of this property."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.copy:18
-msgid ":obj:`pyvista.Property`"
-msgstr ""
-
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property.copy:9
 msgid "Deep copy of this property."
 msgstr ""
@@ -24237,10 +24273,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:4
 msgid "Uses ResetCamera to make a useful view."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:9
-msgid "**negative** : :ref:`bool <python:bltin-boolean-values>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.get_default_cam_pos:9

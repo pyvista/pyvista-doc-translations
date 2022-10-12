@@ -1306,6 +1306,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="By default front and backface rendering uses the same properties. In certain situations it can ...">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_backface_props_thumb.png
+    :alt: Setting Backface Properties
+
+  :ref:`sphx_glr_examples_02-plot_backface_props.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Setting Backface Properties</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Add a background image with pyvista.Plotter.add_background_image.">
 
 .. only:: html
@@ -2575,6 +2592,23 @@ developers.
 .. raw:: html
 
       <div class="sphx-glr-thumbnail-title">Ray Tracing</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="There are several videos online talking about how a sphere can be turned inside out in a contin...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_sphere_eversion_thumb.png
+    :alt: Turning the sphere inside out
+
+  :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Turning the sphere inside out</div>
     </div>
 
 
