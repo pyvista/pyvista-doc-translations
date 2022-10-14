@@ -1918,6 +1918,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plotting Point Clouds">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_point-clouds_thumb.png
+    :alt: Plotting Point Clouds
+
+  :ref:`sphx_glr_examples_02-plot_point-clouds.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Plotting Point Clouds</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Picking points on a mesh">
 
 .. only:: html
