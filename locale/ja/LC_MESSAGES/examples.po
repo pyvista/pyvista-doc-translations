@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 01:14+0000\n"
+"POT-Creation-Date: 2022-10-15 01:18+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -14236,8 +14236,8 @@ msgid ""
 "This example shows you how to plot point clouds using PyVista using both the"
 " ``'point'`` and ``'point_gaussian'`` styles."
 msgstr ""
-"この例では、PyVistaを使って ``'point'`` と ``'point_gaussian'`` "
-"の両方のスタイルを使い、点群のプロットを行う方法を紹介します。"
+"この例では，PyVistaを使って ``'point'`` と ``'point_gaussian'`` "
+"の両方のスタイルを使い，点群のプロットを行う方法を紹介します．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:48
 msgid "Compare the Plotting methods"
@@ -14246,7 +14246,7 @@ msgstr "プロット方法の比較"
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:49
 msgid ""
 "First, let's create a sample point cloud using :func:`numpy.random.random`."
-msgstr "まず、サンプル点群を :func:`numpy.random.random` を使って作ってみましょう。"
+msgstr "まず，サンプル点群を :func:`numpy.random.random` を使って作ってみましょう．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:83
 msgid "Basic Plot"
@@ -14256,7 +14256,7 @@ msgstr "基本プロット"
 msgid ""
 "We can simply plot this point cloud using the convenience "
 ":func:`pyvista.plot` function."
-msgstr "この点群は、便利な :func:`pyvista.plot` 関数を使って簡単にプロットすることができます。"
+msgstr "この点群は，便利な :func:`pyvista.plot` 関数を使って簡単にプロットすることができます．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:110
 msgid "Plot with Scalars"
@@ -14266,11 +14266,11 @@ msgstr "スカラーを使ったプロット"
 msgid ""
 "That's quite boring, so let's spice things up by adding color. We can either"
 " use a single scalar to plot the points. For example, the z coordinates."
-msgstr "それではつまらないので、色をつけてみましょう。点をプロットするには、単一のスカラーを使うこともできます。例えば、z座標。"
+msgstr "それではつまらないので，色をつけてみましょう．点をプロットするには，単一のスカラーを使うこともできます．例えば，z座標．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:114
 msgid "For fun, let's also render the points as spheres."
-msgstr "また、楽しみに、点を球体でレンダリングしてみましょう。"
+msgstr "また，楽しみに，点を球体でレンダリングしてみましょう．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:144
 msgid "Plot with RGBA"
@@ -14282,12 +14282,12 @@ msgid ""
 "been normalized from (0, 1), but we could have also used a ``numpy.uint8`` "
 "array from 0-255."
 msgstr ""
-"また、RGBA配列を使用して点群に色を付けることもできます。これは (0, 1) で正規化されていますが、0-255 の ``numpy.uint8``"
-" 配列を使用することも可能です。"
+"また，RGBA配列を使用して点群に色を付けることもできます．これは (0, 1) で正規化されていますが，0-255 の ``numpy.uint8``"
+" 配列を使用することも可能です．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:172
 msgid "Point Cloud Plot Styles"
-msgstr ""
+msgstr "点群プロットスタイル"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:173
 msgid ""
@@ -14296,34 +14296,37 @@ msgid ""
 "\"spheres\" using ``render_points_as_spheres=True`` (default), or disabling "
 "it to create softer points at the expense of render performance."
 msgstr ""
+"PyVista は ``'point_gaussian'`` スタイルをサポートしており，点を個々のソフトスプライトとしてレンダリングします．また， "
+"``render_points_as_spheres=True`` (デフォルト) "
+"を使用すると，レンダリングパフォーマンスを犠牲にして，よりソフトな点を作成することが可能になります．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:178
 msgid ""
 "Here's the basic plot again, but with the style as ``'points_gaussian'``:"
-msgstr ""
+msgstr "再び基本的なプロットを示しますが，スタイルは ``'points_gaussian'`` にしてあります．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:201
 msgid ""
 "Here's a plotter with four combinations of the options side-by-side so you "
 "can see for yourself the different options available when plotting these "
 "points. PyVista tries to achieve sensible defaults, but should you find "
-"these insuffient for your needs, feel free to play around with the various "
-"options and find something that works for you."
+"these insufficient for your needs, feel free to play around with the various"
+" options and find something that works for you."
 msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:290
 msgid "Orbit a Point Cloud"
-msgstr ""
+msgstr "点群の軌道"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:291
 msgid ""
 "Generate a plot orbiting around a point cloud. Color based on the distance "
 "from the center of the cloud."
-msgstr ""
+msgstr "点群の周囲を周回するプロットを生成します．点群の中心からの距離に応じて色付けします．"
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:333
-msgid "**Total running time of the script:** ( 0 minutes  13.728 seconds)"
-msgstr "**Total running time of the script:** ( 0 minutes  13.728 seconds)"
+msgid "**Total running time of the script:** ( 0 minutes  14.200 seconds)"
+msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/point-clouds.rst:345
 msgid ""
@@ -14503,8 +14506,8 @@ msgstr ""
 ":download:`Download Jupyter notebook: screenshot.ipynb <screenshot.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
-msgid "**00:13.728** total execution time for **examples_02-plot** files:"
-msgstr "**00:13.728** total execution time for **examples_02-plot** files:"
+msgid "**00:14.200** total execution time for **examples_02-plot** files:"
+msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_02-plot_point-clouds.py` (``point-clouds.py``)"
@@ -14512,8 +14515,8 @@ msgstr ""
 ":ref:`sphx_glr_examples_02-plot_point-clouds.py` (``point-clouds.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
-msgid "00:13.728"
-msgstr "00:13.728"
+msgid "00:14.200"
+msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""

@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:13.728** total execution time for **examples_02-plot** files:
+**00:14.200** total execution time for **examples_02-plot** files:
 
 +--------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_02-plot_point-clouds.py` (``point-clouds.py``)                     | 00:13.728 | 0.0 MB |
+| :ref:`sphx_glr_examples_02-plot_point-clouds.py` (``point-clouds.py``)                     | 00:14.200 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_02-plot_anti-aliasing.py` (``anti-aliasing.py``)                   | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------+-----------+--------+

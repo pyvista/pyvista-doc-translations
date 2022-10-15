@@ -67,13 +67,13 @@ First, let's create a sample point cloud using :func:`numpy.random.random`.
  .. code-block:: none
 
 
-    array([[0.54921172, 0.10876475, 0.40959143],
-           [0.91920208, 0.81790765, 0.56213223],
-           [0.58565973, 0.81646836, 0.70809937],
+    array([[0.42987789, 0.10005863, 0.61361435],
+           [0.52409174, 0.20136765, 0.60053579],
+           [0.62525163, 0.4448157 , 0.11865426],
            ...,
-           [0.60550325, 0.03571689, 0.67294862],
-           [0.21665239, 0.15657085, 0.56999864],
-           [0.40699713, 0.15724723, 0.42520478]])
+           [0.91485977, 0.34540947, 0.84565723],
+           [0.34150954, 0.08325467, 0.37342024],
+           [0.62589935, 0.1031916 , 0.14678903]])
 
 
 
@@ -201,7 +201,7 @@ Here's the basic plot again, but with the style as ``'points_gaussian'``:
 Here's a plotter with four combinations of the options side-by-side so you
 can see for yourself the different options available when plotting these
 points. PyVista tries to achieve sensible defaults, but should you find these
-insuffient for your needs, feel free to play around with the various options
+insufficient for your needs, feel free to play around with the various options
 and find something that works for you.
 
 .. GENERATED FROM PYTHON SOURCE LINES 79-143
@@ -330,7 +330,7 @@ from the center of the cloud.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.728 seconds)
+   **Total running time of the script:** ( 0 minutes  14.200 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-clouds.py:
