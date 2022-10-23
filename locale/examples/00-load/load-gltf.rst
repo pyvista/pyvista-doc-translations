@@ -20,9 +20,9 @@
 
 .. _load_gltf:
 
-Working with a glTF Files
-~~~~~~~~~~~~~~~~~~~~~~~~~
-Import a glTF directly into a PyVista plotting scene.  For more
+Working with glTF Files
+~~~~~~~~~~~~~~~~~~~~~~~
+Import a glTF file directly into a PyVista plotting scene.  For more
 details regarding the glTF format, see:
 https://www.khronos.org/gltf/
 
@@ -41,7 +41,7 @@ based rendering and VTK v9 supports high dynamic range textures.
     from pyvista import examples
 
     helmet_file = examples.gltf.download_damaged_helmet()
-    texture = examples.hdr.download_dikhololo_night()
+    texture = examples.download_dikhololo_night()
 
 
 
@@ -53,7 +53,7 @@ based rendering and VTK v9 supports high dynamic range textures.
 
 .. GENERATED FROM PYTHON SOURCE LINES 26-29
 
-Setup the plotter and enable environment textures.  This works well
+Set up the plotter and enable environment textures.  This works well
 for physically based rendering enabled meshes like the damaged
 helmet example.
 
@@ -109,28 +109,23 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  4.618 seconds)
+   **Total running time of the script:** ( 0 minutes  52.227 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: load-gltf.py <load-gltf.py>`
 
-     :download:`Download Python source code: load-gltf.py <load-gltf.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: load-gltf.ipynb <load-gltf.ipynb>`
+      :download:`Download Jupyter notebook: load-gltf.ipynb <load-gltf.ipynb>`
 
 
 .. only:: html

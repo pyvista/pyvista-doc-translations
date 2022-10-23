@@ -94,7 +94,7 @@ Now let's create an initial isosurface that we can plot and move
 
 .. code-block:: default
 
-    surface = vol.contour([values[0]],)
+    surface = vol.contour(values[:1])
 
 
 
@@ -137,19 +137,24 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-66
+.. GENERATED FROM PYTHON SOURCE LINES 34-72
 
 .. code-block:: default
 
 
     filename = "isovalue.gif"
 
-    plotter = pv.Plotter()
+    plotter = pv.Plotter(off_screen=True)
     # Open a movie file
     plotter.open_gif(filename)
 
     # Add initial mesh
-    plotter.add_mesh(surface, opacity=0.5, clim=vol.get_data_range())
+    plotter.add_mesh(
+        surface,
+        opacity=0.5,
+        clim=vol.get_data_range(),
+        show_scalar_bar=False,
+    )
     # Add outline for reference
     plotter.add_mesh(vol.outline_corners(), color='k')
 
@@ -157,18 +162,19 @@ Set a single surface as the one being plotted that can be overwritten
     plotter.camera_position = [
         (392.9783280407326, 556.4341372317185, 235.51220650196404),
         (88.69563012828344, 119.06774369173661, 72.61750326143748),
-        (-0.19275936948097383, -0.2218876327549124, 0.9558293278131397)]
+        (-0.19275936948097383, -0.2218876327549124, 0.9558293278131397),
+    ]
 
     # initial render and do NOT close
     plotter.show(auto_close=False)
 
     # Run through each frame
     for surf in surfaces:
-        surface.overwrite(surf)
+        surface.copy_from(surf)
         plotter.write_frame()  # Write this frame
     # Run through backwards
     for surf in surfaces[::-1]:
-        surface.overwrite(surf)
+        surface.copy_from(surf)
         plotter.write_frame()  # Write this frame
 
     # Be sure to close the plotter when finished
@@ -184,8 +190,6 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Orient the view, then press "q" to close window and produce movie
@@ -196,28 +200,23 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  44.494 seconds)
+   **Total running time of the script:** ( 0 minutes  50.291 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: isovalue.py <isovalue.py>`
 
-     :download:`Download Python source code: isovalue.py <isovalue.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: isovalue.ipynb <isovalue.ipynb>`
+      :download:`Download Jupyter notebook: isovalue.ipynb <isovalue.ipynb>`
 
 
 .. only:: html

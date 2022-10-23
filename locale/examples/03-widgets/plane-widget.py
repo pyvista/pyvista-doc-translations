@@ -5,8 +5,8 @@ Plane Widget
 ~~~~~~~~~~~~
 
 The plane widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_plane_widget` and
-:func:`pyvista.WidgetHelper.clear_plane_widgets` methods respectively.
+:func:`pyvista.Plotter.add_plane_widget` and
+:func:`pyvista.Plotter.clear_plane_widgets` methods respectively.
 As with all widgets, you must provide a custom callback method to utilize that
 plane. Considering that planes are most commonly used for clipping and slicing
 meshes, we have included two helper methods for doing those tasks!
@@ -61,10 +61,12 @@ mesh = examples.download_carotid()
 p = pv.Plotter()
 p.add_mesh(mesh.contour(8).extract_largest(), opacity=0.5)
 
+
 def my_plane_func(normal, origin):
     slc = mesh.slice(normal=normal, origin=origin)
     arrows = slc.glyph(orient='vectors', scale="scalars", factor=0.01)
     p.add_mesh(arrows, name='arrows')
+
 
 p.add_plane_widget(my_plane_func)
 p.show_grid()
@@ -84,7 +86,7 @@ p.show()
 # plane and we disable the arrow to prevent its rotation.
 
 p = pv.Plotter()
-p.add_mesh_slice(vol, normal=(1,1,1), normal_rotation=False)
+p.add_mesh_slice(vol, normal=(1, 1, 1), normal_rotation=False)
 p.show()
 
 ###############################################################################
@@ -93,3 +95,21 @@ p.show()
 p = pv.Plotter()
 p.add_mesh_slice(vol, assign_to_axis='z')
 p.show()
+
+
+###############################################################################
+# Additionally, users can modify the interaction event that triggers the
+# callback functions handled by the different plane widget helpers through the
+# ``interaction_event`` keyword argument when available. For example,
+# we can have continuous slicing by using the ``InteractionEvent`` observer.
+import vtk
+
+p = pv.Plotter()
+p.add_mesh_slice(vol, assign_to_axis='z', interaction_event=vtk.vtkCommand.InteractionEvent)
+p.show()
+
+###############################################################################
+# And here is a screen capture of a user interacting with this continuously via
+# the ``InteractionEvent`` observer:
+#
+# .. image:: ../../images/gifs/plane-slice-continuous.gif

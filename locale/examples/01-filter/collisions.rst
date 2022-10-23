@@ -89,7 +89,7 @@ initialize an initial ``"collisions"`` mask.
 
 .. GENERATED FROM PYTHON SOURCE LINES 50-52
 
-Setup the plotter open a movie, and write a frame after moving the sphere.
+Set up the plotter open a movie, and write a frame after moving the sphere.
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-80
@@ -99,7 +99,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
     pl = pv.Plotter()
     pl.enable_hidden_line_removal()
-    pl.add_mesh(sphere0, show_scalar_bar=False, cmap='bwr')
+    pl.add_mesh(sphere0, scalars='collisions', show_scalar_bar=False, cmap='bwr')
     pl.camera_position = 'xz'
     pl.add_mesh(sphere1, style='wireframe', color='green', line_width=5)
 
@@ -110,7 +110,7 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
     # pl.show(auto_close=False, interactive=False)
 
     delta_x = 0.05
-    for i in range(int(2/delta_x)):
+    for _ in range(int(2 / delta_x)):
         sphere1.translate([delta_x, 0, 0], inplace=True)
         col, n_contacts = sphere0.collision(sphere1)
 
@@ -139,28 +139,23 @@ Setup the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.390 seconds)
+   **Total running time of the script:** ( 0 minutes  6.767 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: collisions.py <collisions.py>`
 
-     :download:`Download Python source code: collisions.py <collisions.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: collisions.ipynb <collisions.ipynb>`
+      :download:`Download Jupyter notebook: collisions.ipynb <collisions.ipynb>`
 
 
 .. only:: html

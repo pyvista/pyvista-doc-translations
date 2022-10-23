@@ -25,14 +25,13 @@ Creating a Structured Surface
 
 Create a StructuredGrid surface from NumPy arrays
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
 
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -59,7 +58,7 @@ Create a simple meshgrid using NumPy
     x = np.arange(-10, 10, 0.25)
     y = np.arange(-10, 10, 0.25)
     x, y = np.meshgrid(x, y)
-    r = np.sqrt(x ** 2 + y ** 2)
+    r = np.sqrt(x**2 + y**2)
     z = np.sin(r)
 
 
@@ -116,7 +115,7 @@ Now pass the NumPy meshgrid to PyVista
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-44
 
-Generating a structured grid is a one liner in this module, and the points
+Generating a structured grid is a one-liner in this module, and the points
 from the resulting surface can be accessed as a NumPy array:
 
 .. GENERATED FROM PYTHON SOURCE LINES 44-48
@@ -203,11 +202,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -38.14970472, -283.14674409,    1.68842519],
-                     [ -24.52863002, -273.03084127,    2.33449475],
-                     [ -14.87078101, -265.8582896 ,    2.88660673],
-                     [  -4.0446391 , -257.81808706,    3.59967632],
-                     [   5.75728721, -250.53853415,    4.32769477]])
+    pyvista_ndarray([[ -41.1946134 , -285.44221293,    1.56276632],
+                     [ -27.98125268, -275.62910524,    2.1542712 ],
+                     [ -18.98497373, -268.94787886,    2.63926547],
+                     [  -4.72590418, -258.35815925,    3.54878948],
+                     [   3.59862908, -252.17581525,    4.15740295]])
 
 
 
@@ -328,7 +327,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
     top = struct.points.copy()
     bottom = struct.points.copy()
-    bottom[:,-1] = -10.0 # Wherever you want the plane
+    bottom[:, -1] = -10.0  # Wherever you want the plane
 
     vol = pv.StructuredGrid()
     vol.points = np.vstack((top, bottom))
@@ -349,7 +348,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.420 seconds)
+   **Total running time of the script:** ( 0 minutes  2.614 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

@@ -73,7 +73,7 @@ temporary file for this example.
  .. code-block:: none
 
 
-    '/tmp/tmpvyn_ugq5.vtp'
+    '/tmp/tmpt_ngme6v.vtp'
 
 
 
@@ -151,7 +151,7 @@ files. Reading in a ``.vtp``` file uses the :class:`pyvista.XMLPolyDataReader`.
  .. code-block:: none
 
 
-    XMLPolyDataReader('/tmp/tmpvyn_ugq5.vtp')
+    XMLPolyDataReader('/tmp/tmpt_ngme6v.vtp')
 
 
 
@@ -330,7 +330,7 @@ the difference on the right.
     plotter = pyvista.Plotter(shape='2|1')
 
     plotter.subplot(0)
-    plotter.add_mesh(mesh_0, scalars='DENS',show_scalar_bar=False)
+    plotter.add_mesh(mesh_0, scalars='DENS', show_scalar_bar=False)
     plotter.add_text(f"{time_values[0]}")
 
     plotter.subplot(1)
@@ -343,7 +343,7 @@ the difference on the right.
     plotter.add_text("DENS Difference")
 
     plotter.link_views()
-    plotter.camera_position= ((0.5, 0, 8), (0.5, 0, 0), (0, 1, 0))
+    plotter.camera_position = ((0.5, 0, 8), (0.5, 0, 0), (0, 1, 0))
 
     plotter.show()
 
@@ -396,7 +396,7 @@ For each time point, plot the mesh colored by the height.
 Put iteration value in top left
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-162
+.. GENERATED FROM PYTHON SOURCE LINES 147-161
 
 .. code-block:: default
 
@@ -408,9 +408,8 @@ Put iteration value in top left
     for time_value in reader.time_values:
         reader.set_active_time_value(time_value)
         mesh = reader.read()[0]  # This dataset only has 1 block
-        plotter.add_mesh(mesh, scalars='z', show_scalar_bar=False)
+        plotter.add_mesh(mesh, scalars='z', show_scalar_bar=False, lighting=False)
         plotter.add_text(f"Time: {time_value:.0f}", color="black")
-        plotter.render()
         plotter.write_frame()
         plotter.clear()
 
@@ -430,7 +429,7 @@ Put iteration value in top left
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.628 seconds)
+   **Total running time of the script:** ( 0 minutes  8.451 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_reader.py:

@@ -26,9 +26,9 @@ Chart Overlays
 This example shows how you can combine multiple charts as overlays in
 the same renderer. For an overview of the different chart types you
 can use, please refer to :ref:`chart_basics_example`. Interaction with
-a chart can be enabled by right clicking on top of it. Note that this
+a chart can be enabled by a double left click on top of it. Note that this
 will disable interaction with the 3D scene. To stop interacting with
-the chart, perform another right click. This will either enable
+the chart, perform another double left click. This will either enable
 interaction with another chart (if clicked on top of it) or re-enable
 interaction with the 3D scene.
 
@@ -96,19 +96,21 @@ Use a tight layout to keep axis labels visible on smaller figures.
 Define plotter, add the created matplotlib figure as the first (left) chart
 to the scene, and define a second (right) chart.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-77
+.. GENERATED FROM PYTHON SOURCE LINES 43-80
 
 .. code-block:: default
 
 
     p = pv.Plotter()
     h_chart = pv.ChartMPL(f, size=(0.46, 0.25), loc=(0.02, 0.06))
-    h_chart.background_color = (1, 1, 1, 0.4)
+    h_chart.background_color = (1.0, 1.0, 1.0, 0.4)
     p.add_chart(h_chart)
-    v_chart = pv.Chart2D(size=(0.46, 0.25), loc=(0.52, 0.06), x_label="Time (s)", y_label="Velocity (m/s)")
+    v_chart = pv.Chart2D(
+        size=(0.46, 0.25), loc=(0.52, 0.06), x_label="Time (s)", y_label="Velocity (m/s)"
+    )
     v_line = v_chart.line(t[:1], v[:1])
     v_chart.y_range = (-1, 1)
-    v_chart.background_color = (1, 1, 1, 0.4)
+    v_chart.background_color = (1.0, 1.0, 1.0, 0.4)
     p.add_chart(v_chart)
     p.add_mesh(pv.Sphere(1), name="sphere", render=False)
     p.show(auto_close=False, interactive=True, interactive_update=True)
@@ -117,15 +119,16 @@ to the scene, and define a second (right) chart.
     # Method and slider to update all visuals based on the time selection
     def update_time(time):
         k = np.count_nonzero(t < time)
-        h_line.set_xdata(t[:k+1])
-        h_line.set_ydata(h[:k+1])
-        v_line.update(t[:k+1], v[:k+1])
+        h_line.set_xdata(t[: k + 1])
+        h_line.set_ydata(h[: k + 1])
+        v_line.update(t[: k + 1], v[: k + 1])
         p.add_mesh(pv.Sphere(1, center=(0, 0, h[k])), name="sphere", render=False)
         p.update()
 
-    time_slider = p.add_slider_widget(update_time, [np.min(t), np.max(t)], 0,
-                                      "Time", (0.25, 0.9), (0.75, 0.9),
-                                      event_type='always')
+
+    time_slider = p.add_slider_widget(
+        update_time, [np.min(t), np.max(t)], 0, "Time", (0.25, 0.9), (0.75, 0.9), event_type='always'
+    )
 
     # Start incrementing time automatically
     for i in range(1, 50):
@@ -149,7 +152,7 @@ to the scene, and define a second (right) chart.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.618 seconds)
+   **Total running time of the script:** ( 0 minutes  7.392 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_overlays.py:

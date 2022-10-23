@@ -34,12 +34,11 @@ referenced dataset into a PyVista mesh object.
 The following code block uses a built-in example file and displays an
 airplane mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-22
+.. GENERATED FROM PYTHON SOURCE LINES 17-21
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 5
     import pyvista as pv
     from pyvista import examples
 
@@ -172,7 +171,7 @@ The faces from the mesh are also directly accessible as a NumPy array:
 .. code-block:: default
 
 
-    mesh.faces.reshape(-1, 4)[:, 1:] # triangular faces
+    mesh.faces.reshape(-1, 4)[:, 1:]  # triangular faces
 
 
 
@@ -302,7 +301,7 @@ Example VTK file
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.396 seconds)
+   **Total running time of the script:** ( 0 minutes  3.697 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:

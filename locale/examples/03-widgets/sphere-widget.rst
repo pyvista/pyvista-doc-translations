@@ -22,8 +22,8 @@ Sphere Widget
 ~~~~~~~~~~~~~
 
 The sphere widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_sphere_widget` and
-:func:`pyvista.WidgetHelper.clear_sphere_widgets` methods respectively.
+:func:`pyvista.Plotter.add_sphere_widget` and
+:func:`pyvista.Plotter.clear_sphere_widgets` methods respectively.
 This is a very versatile widget as it can control vertex location that can
 be used to control or update the location of just about anything.
 
@@ -33,11 +33,10 @@ easily add several widgets to a scene.
 
 Let's look at a few use cases that all update a surface mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-19
+.. GENERATED FROM PYTHON SOURCE LINES 17-18
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
 
 
 
@@ -53,7 +52,7 @@ Example A
 
 Use a single sphere widget
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-47
+.. GENERATED FROM PYTHON SOURCE LINES 24-53
 
 .. code-block:: default
 
@@ -64,15 +63,21 @@ Use a single sphere widget
 
     # Create a triangle surface
     surf = pv.PolyData()
-    surf.points = np.array([[-10,-10,-10],
-                        [10,10,-10],
-                        [-10,10,0],])
+    surf.points = np.array(
+        [
+            [-10, -10, -10],
+            [10, 10, -10],
+            [-10, 10, 0],
+        ]
+    )
     surf.faces = np.array([3, 0, 1, 2])
 
     p = pv.Plotter()
 
+
     def callback(point):
         surf.points[0] = point
+
 
     p.add_sphere_widget(callback)
     p.add_mesh(surf, color=True)
@@ -92,20 +97,20 @@ Use a single sphere widget
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 54-57
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-a.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-58
+.. GENERATED FROM PYTHON SOURCE LINES 60-64
 
 Example B
 +++++++++
 
 Use several sphere widgets at once
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-82
+.. GENERATED FROM PYTHON SOURCE LINES 64-94
 
 .. code-block:: default
 
@@ -116,16 +121,22 @@ Use several sphere widgets at once
 
     # Create a triangle surface
     surf = pv.PolyData()
-    surf.points = np.array([[-10,-10,-10],
-                            [10,10,-10],
-                            [-10,10,0],])
+    surf.points = np.array(
+        [
+            [-10, -10, -10],
+            [10, 10, -10],
+            [-10, 10, 0],
+        ]
+    )
     surf.faces = np.array([3, 0, 1, 2])
 
 
     p = pv.Plotter()
 
+
     def callback(point, i):
         surf.points[i] = point
+
 
     p.add_sphere_widget(callback, center=surf.points)
     p.add_mesh(surf, color=True)
@@ -145,13 +156,13 @@ Use several sphere widgets at once
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-86
+.. GENERATED FROM PYTHON SOURCE LINES 95-98
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-b.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-93
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 Example C
 +++++++++
@@ -159,7 +170,7 @@ Example C
 This one is the coolest - use four sphere widgets to update perturbations on
 a surface and interpolate between them with some boundary conditions
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-143
+.. GENERATED FROM PYTHON SOURCE LINES 105-153
 
 .. code-block:: default
 
@@ -175,10 +186,12 @@ a surface and interpolate between them with some boundary conditions
         from itertools import cycle
 
         import matplotlib
+
         cycler = matplotlib.rcParams['axes.prop_cycle']
         colors = cycle(cycler)
         colors = [next(colors)['color'] for i in range(n)]
         return colors
+
 
     # Create a grid to interpolate to
     xmin, xmax, ymin, ymax = 0, 100, 0, 100
@@ -187,28 +200,24 @@ a surface and interpolate between them with some boundary conditions
     xx, yy, zz = np.meshgrid(x, y, [0])
 
     # Make sure boundary conditions exist
-    boundaries = np.array([[xmin,ymin,0],
-                       [xmin,ymax,0],
-                       [xmax,ymin,0],
-                       [xmax,ymax,0]])
+    boundaries = np.array([[xmin, ymin, 0], [xmin, ymax, 0], [xmax, ymin, 0], [xmax, ymax, 0]])
 
     # Create the PyVista mesh to hold this grid
     surf = pv.StructuredGrid(xx, yy, zz)
 
     # Create some initial perturbations
     # - this array will be updated inplace
-    points = np.array([[33,25,45],
-                   [70,80,13],
-                   [51,57,10],
-                   [25,69,20]])
+    points = np.array([[33, 25, 45], [70, 80, 13], [51, 57, 10], [25, 69, 20]])
+
 
     # Create an interpolation function to update that surface mesh
     def update_surface(point, i):
         points[i] = point
         tp = np.vstack((points, boundaries))
-        zz = griddata(tp[:,0:2], tp[:,2], (xx[:,:,0], yy[:,:,0]), method='cubic')
-        surf.points[:,-1] = zz.ravel(order='F')
+        zz = griddata(tp[:, 0:2], tp[:, 2], (xx[:, :, 0], yy[:, :, 0]), method='cubic')
+        surf.points[:, -1] = zz.ravel(order='F')
         return
+
 
     # Get a list of unique colors for each widget
     colors = get_colors(len(points))
@@ -220,7 +229,7 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-160
+.. GENERATED FROM PYTHON SOURCE LINES 154-169
 
 .. code-block:: default
 
@@ -232,8 +241,7 @@ a surface and interpolate between them with some boundary conditions
     p.add_mesh(surf, color=True)
 
     # Add the widgets which will update the surface
-    p.add_sphere_widget(update_surface, center=points,
-                           color=colors, radius=3)
+    p.add_sphere_widget(update_surface, center=points, color=colors, radius=3)
     # Add axes grid
     p.show_grid()
 
@@ -252,7 +260,7 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-164
+.. GENERATED FROM PYTHON SOURCE LINES 170-173
 
 And here is a screen capture of a user interacting with this
 
@@ -261,7 +269,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.711 seconds)
+   **Total running time of the script:** ( 0 minutes  0.942 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:

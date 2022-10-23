@@ -38,24 +38,23 @@ Plot OpenFOAM data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-21
+.. GENERATED FROM PYTHON SOURCE LINES 13-20
 
 This example uses data from a lid-driven cavity flow.  It is recommended to
-use :class:`pyvista.OpenFOAMReader` for reading OpenFOAM files for more
-control over reading data.  The OpenFOAMReader in pyvista must be recreated
-each time a new mesh is read in, otherwise the same mesh is always returned.
+use :class:`pyvista.POpenFOAMReader` for reading OpenFOAM files for more
+control over reading data.
 
 This example will only run correctly in versions of vtk>=9.1.0.  The names
 of the patch arrays and resulting keys in the read mesh will be different
 in prior versions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-25
+.. GENERATED FROM PYTHON SOURCE LINES 20-24
 
 .. code-block:: default
 
 
     filename = examples.download_cavity(load=False)
-    reader = pyvista.OpenFOAMReader(filename)
+    reader = pyvista.POpenFOAMReader(filename)
 
 
 
@@ -64,12 +63,12 @@ in prior versions.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-28
+.. GENERATED FROM PYTHON SOURCE LINES 25-27
 
 OpenFOAM datasets include multiple sub-datasets including the internal mesh
 and patches, typically boundaries.  This can be inspected before reading the data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-32
+.. GENERATED FROM PYTHON SOURCE LINES 27-31
 
 .. code-block:: default
 
@@ -93,12 +92,12 @@ and patches, typically boundaries.  This can be inspected before reading the dat
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-35
+.. GENERATED FROM PYTHON SOURCE LINES 32-34
 
 This data is represented as a :class:`pyvista.MultiBlock` object.
 The internal mesh will be located in the top-level MultiBlock mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-40
+.. GENERATED FROM PYTHON SOURCE LINES 34-39
 
 .. code-block:: default
 
@@ -122,11 +121,11 @@ The internal mesh will be located in the top-level MultiBlock mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-42
+.. GENERATED FROM PYTHON SOURCE LINES 40-41
 
 In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-45
+.. GENERATED FROM PYTHON SOURCE LINES 41-44
 
 .. code-block:: default
 
@@ -143,7 +142,7 @@ In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
  .. code-block:: none
 
-    UnstructuredGrid (0x7faa0d651100)
+    UnstructuredGrid (0x7fcb345e0f40)
       N Cells:      400
       N Points:     882
       X Bounds:     0.000e+00, 1.000e-01
@@ -155,12 +154,12 @@ In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-48
+.. GENERATED FROM PYTHON SOURCE LINES 45-47
 
 Additional Patch meshes are nested inside another MultiBlock mesh.  The name
 of the sub-level MultiBlock mesh depends on the vtk version.
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-54
+.. GENERATED FROM PYTHON SOURCE LINES 47-53
 
 .. code-block:: default
 
@@ -180,14 +179,14 @@ of the sub-level MultiBlock mesh depends on the vtk version.
 
  .. code-block:: none
 
-    MultiBlock (0x7faa0d651040)
+    MultiBlock (0x7fcb345e0400)
       N Blocks:     3
       X Bounds:     0.000, 0.100
       Y Bounds:     0.000, 0.100
       Z Bounds:     0.000, 0.010
 
     Boundaries patches: ['movingWall', 'fixedWalls', 'frontAndBack']
-    PolyData (0x7faa0d651640)
+    PolyData (0x7fcb345e0160)
       N Cells:      20
       N Points:     42
       X Bounds:     0.000e+00, 1.000e-01
@@ -199,12 +198,12 @@ of the sub-level MultiBlock mesh depends on the vtk version.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-57
+.. GENERATED FROM PYTHON SOURCE LINES 54-56
 
 The default in OpenFOAMReader is to translate the existing cell data to point
 data.  Therefore, the cell data arrays are duplicated in point data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-63
+.. GENERATED FROM PYTHON SOURCE LINES 56-62
 
 .. code-block:: default
 
@@ -249,16 +248,15 @@ data.  Therefore, the cell data arrays are duplicated in point data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-65
+.. GENERATED FROM PYTHON SOURCE LINES 63-64
 
 This behavior can be turned off if only cell data is required.
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-74
+.. GENERATED FROM PYTHON SOURCE LINES 64-72
 
 .. code-block:: default
 
 
-    reader = pyvista.OpenFOAMReader(filename)
     reader.cell_to_point_creation = False
     internal_mesh = reader.read()["internalMesh"]
     print("Cell Data:")
@@ -299,18 +297,18 @@ This behavior can be turned off if only cell data is required.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-76
+.. GENERATED FROM PYTHON SOURCE LINES 73-74
 
 Now we will read in all the data at the last time point.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-84
+.. GENERATED FROM PYTHON SOURCE LINES 74-82
 
 .. code-block:: default
 
 
-    reader = pyvista.OpenFOAMReader(filename)
     print(f"Available Time Values: {reader.time_values}")
     reader.set_active_time_value(2.5)
+    reader.cell_to_point_creation = True  # Need point data for streamlines
     mesh = reader.read()
     internal_mesh = mesh["internalMesh"]
     boundaries = mesh["boundary"]
@@ -330,7 +328,7 @@ Now we will read in all the data at the last time point.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-91
+.. GENERATED FROM PYTHON SOURCE LINES 83-89
 
 This OpenFOAM simulation is in 3D with
 only 1 cell in the z-direction.  First, the solution is sliced in the center
@@ -339,9 +337,10 @@ of the z-direction.
 to lie in the z=0 plane.  So, after the domain sliced, it is translated to
 ``z=0``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-103
+.. GENERATED FROM PYTHON SOURCE LINES 89-103
 
 .. code-block:: default
+
 
 
     def slice_z_center(mesh):
@@ -349,6 +348,7 @@ to lie in the z=0 plane.  So, after the domain sliced, it is translated to
         slice_mesh = mesh.slice(normal='z')
         slice_mesh.translate((0, 0, -slice_mesh.center[-1]), inplace=True)
         return slice_mesh
+
 
     slice_internal_mesh = slice_z_center(internal_mesh)
     slice_boundaries = pyvista.MultiBlock(
@@ -366,14 +366,16 @@ to lie in the z=0 plane.  So, after the domain sliced, it is translated to
 
 Streamlines are generated using the point data "U".
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-111
+.. GENERATED FROM PYTHON SOURCE LINES 105-113
 
 .. code-block:: default
 
 
     streamlines = slice_internal_mesh.streamlines_evenly_spaced_2D(
-        vectors='U', start_position=(0.05, 0.05, 0), separating_distance=1,
-        separating_distance_ratio=0.1
+        vectors='U',
+        start_position=(0.05, 0.05, 0),
+        separating_distance=1,
+        separating_distance_ratio=0.1,
     )
 
 
@@ -383,12 +385,12 @@ Streamlines are generated using the point data "U".
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-114
+.. GENERATED FROM PYTHON SOURCE LINES 114-116
 
 Plot streamlines colored by velocity magnitude.  Additionally, the moving
 and fixed wall boundaries are plotted.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-122
+.. GENERATED FROM PYTHON SOURCE LINES 116-124
 
 .. code-block:: default
 
@@ -415,7 +417,7 @@ and fixed wall boundaries are plotted.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.359 seconds)
+   **Total running time of the script:** ( 0 minutes  0.984 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-example.py:

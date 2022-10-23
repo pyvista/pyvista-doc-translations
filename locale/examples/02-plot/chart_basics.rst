@@ -144,8 +144,8 @@ The following example shows how to create filled areas between two polylines.
 
 
     x = np.linspace(0, 10, 1000)
-    y1 = np.cos(x) + np.sin(3*x)
-    y2 = 0.1*(x - 5)
+    y1 = np.cos(x) + np.sin(3 * x)
+    y2 = 0.1 * (x - 5)
     chart = pv.Chart2D()
     chart.area(x, y1, y2, color=(0.1, 0.1, 0.9, 0.5))
     chart.line(x, y1, color=(0.9, 0.1, 0.1), width=4, style="--")
@@ -170,7 +170,7 @@ The following example shows how to create filled areas between two polylines.
 Bar charts are also supported. Multiple bar plots are placed next to each
 other.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-83
+.. GENERATED FROM PYTHON SOURCE LINES 69-96
 
 .. code-block:: default
 
@@ -182,7 +182,20 @@ other.
     chart.bar(x, y1, color="b", label="2020")
     chart.bar(x, y2, color="r", label="2021")
     chart.x_axis.tick_locations = x
-    chart.x_axis.tick_labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    chart.x_axis.tick_labels = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+    ]
     chart.x_label = "Month"
     chart.y_axis.tick_labels = "2e"
     chart.y_label = "# incidents"
@@ -200,12 +213,12 @@ other.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-86
+.. GENERATED FROM PYTHON SOURCE LINES 97-99
 
 In case you want to stack the bars, instead of drawing them next to each
 other, pass a sequence of y values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-98
+.. GENERATED FROM PYTHON SOURCE LINES 99-111
 
 .. code-block:: default
 
@@ -233,11 +246,11 @@ other, pass a sequence of y values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-100
+.. GENERATED FROM PYTHON SOURCE LINES 112-113
 
 In a similar way, you can stack multiple area plots on top of each other.
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-108
+.. GENERATED FROM PYTHON SOURCE LINES 113-121
 
 .. code-block:: default
 
@@ -261,18 +274,18 @@ In a similar way, you can stack multiple area plots on top of each other.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-112
+.. GENERATED FROM PYTHON SOURCE LINES 122-125
 
 Beside the flexible Chart2D used in the previous examples, there are a couple
 other dedicated charts you can create. The example below shows how a pie
 chart can be created.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-118
+.. GENERATED FROM PYTHON SOURCE LINES 125-131
 
 .. code-block:: default
 
 
-    data = np.array([8.4,6.1,2.7,2.4,0.9])
+    data = np.array([8.4, 6.1, 2.7, 2.4, 0.9])
     chart = pv.ChartPie(data)
     chart.plot.labels = [f"slice {i}" for i in range(len(data))]
     chart.show()
@@ -289,11 +302,11 @@ chart can be created.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-120
+.. GENERATED FROM PYTHON SOURCE LINES 132-133
 
 To summarize statistics of datasets, you can easily create a boxplot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-126
+.. GENERATED FROM PYTHON SOURCE LINES 133-139
 
 .. code-block:: default
 
@@ -315,14 +328,14 @@ To summarize statistics of datasets, you can easily create a boxplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-131
+.. GENERATED FROM PYTHON SOURCE LINES 140-144
 
 If you would like to add other types of chart that are currently not
 supported by pyvista or VTK, you can resort to matplotlib to create your
 custom chart and afterwards embed it into a pyvista plotting window.
 The below example shows how you can do this.
 
-.. GENERATED FROM PYTHON SOURCE LINES 131-152
+.. GENERATED FROM PYTHON SOURCE LINES 144-167
 
 .. code-block:: default
 
@@ -330,8 +343,10 @@ The below example shows how you can do this.
     import matplotlib.pyplot as plt
 
     # First, create the matplotlib figure
-    f, ax = plt.subplots(tight_layout=True)  # Tight layout to keep axis labels visible on smaller figures
-    alphas = [0.5+i for i in range(5)]
+    f, ax = plt.subplots(
+        tight_layout=True
+    )  # Tight layout to keep axis labels visible on smaller figures
+    alphas = [0.5 + i for i in range(5)]
     betas = [*reversed(alphas)]
     N = int(1e4)
     data = [rng.beta(alpha, beta, N) for alpha, beta in zip(alphas, betas)]
@@ -355,11 +370,6 @@ The below example shows how you can do this.
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_010.png
    :class: sphx-glr-single-img
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_011.png
-   :alt: $B(\alpha, \beta)$
-   :srcset: /examples/02-plot/images/sphx_glr_chart_basics_011.png
-   :class: sphx-glr-single-img
-
 
 
 
@@ -367,7 +377,7 @@ The below example shows how you can do this.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.101 seconds)
+   **Total running time of the script:** ( 0 minutes  3.714 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_basics.py:

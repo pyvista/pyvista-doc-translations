@@ -31,12 +31,11 @@ This example generates streamlines of blood velocity. An isosurface of speed
 provides context. The starting positions for the streamtubes were determined
 by experimenting with the data.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-20
+.. GENERATED FROM PYTHON SOURCE LINES 13-19
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 3
     import numpy as np
 
     import pyvista as pv
@@ -158,7 +157,7 @@ Here is another example of blood flow:
 
     boundary = mesh.decimate_boundary().extract_all_edges()
 
-    sargs=dict(vertical=True, title_font_size=16)
+    sargs = dict(vertical=True, title_font_size=16)
     p = pv.Plotter()
     p.add_mesh(streamlines.tube(radius=0.2), lighting=False, scalar_bar_args=sargs)
     p.add_mesh(src)
@@ -220,16 +219,20 @@ the streamlines.
 
 Plot streamlines colored by the time along the streamlines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-107
+.. GENERATED FROM PYTHON SOURCE LINES 95-111
 
 .. code-block:: default
 
 
-    sargs=dict(vertical=True, title_font_size=16)
+    sargs = dict(vertical=True, title_font_size=16)
     p = pv.Plotter()
-    p.add_mesh(streamlines.tube(radius=0.2),
-               scalars="IntegrationTime", clim=[0, 1000], lighting=False,
-               scalar_bar_args=sargs)
+    p.add_mesh(
+        streamlines.tube(radius=0.2),
+        scalars="IntegrationTime",
+        clim=[0, 1000],
+        lighting=False,
+        scalar_bar_args=sargs,
+    )
     p.add_mesh(boundary, color="grey", opacity=0.25)
     p.add_mesh(source_mesh, color="red")
     p.camera_position = [(10, 9.5, -43), (87.0, 73.5, 123.0), (-0.5, -0.7, 0.5)]
@@ -248,13 +251,13 @@ Plot streamlines colored by the time along the streamlines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-111
+.. GENERATED FROM PYTHON SOURCE LINES 112-115
 
 Kitchen
 +++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-116
+.. GENERATED FROM PYTHON SOURCE LINES 115-120
 
 .. code-block:: default
 
@@ -270,7 +273,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-119
+.. GENERATED FROM PYTHON SOURCE LINES 121-123
 
 .. code-block:: default
 
@@ -283,7 +286,7 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-128
+.. GENERATED FROM PYTHON SOURCE LINES 124-132
 
 .. code-block:: default
 
@@ -307,13 +310,13 @@ Kitchen
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 129-132
+.. GENERATED FROM PYTHON SOURCE LINES 133-136
 
 Custom 3D Vector Field
 ++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-153
+.. GENERATED FROM PYTHON SOURCE LINES 136-152
 
 .. code-block:: default
 
@@ -322,20 +325,15 @@ Custom 3D Vector Field
     ny = 15
     nz = 5
 
-    origin = (-(nx - 1)*0.1/2, -(ny - 1)*0.1/2, -(nz - 1)*0.1/2)
-    mesh = pv.UniformGrid(
-        dims=(nx, ny, nz),
-        spacing=(.1, .1, .1),
-        origin=origin
-    )
+    origin = (-(nx - 1) * 0.1 / 2, -(ny - 1) * 0.1 / 2, -(nz - 1) * 0.1 / 2)
+    mesh = pv.UniformGrid(dims=(nx, ny, nz), spacing=(0.1, 0.1, 0.1), origin=origin)
     x = mesh.points[:, 0]
     y = mesh.points[:, 1]
     z = mesh.points[:, 2]
     vectors = np.empty((mesh.n_points, 3))
     vectors[:, 0] = np.sin(np.pi * x) * np.cos(np.pi * y) * np.cos(np.pi * z)
     vectors[:, 1] = -np.cos(np.pi * x) * np.sin(np.pi * y) * np.cos(np.pi * z)
-    vectors[:, 2] = (np.sqrt(3.0 / 3.0) * np.cos(np.pi * x) * np.cos(np.pi * y) *
-                     np.sin(np.pi * z))
+    vectors[:, 2] = np.sqrt(3.0 / 3.0) * np.cos(np.pi * x) * np.cos(np.pi * y) * np.sin(np.pi * z)
 
     mesh['vectors'] = vectors
 
@@ -345,13 +343,13 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-157
+.. GENERATED FROM PYTHON SOURCE LINES 153-156
 
 .. code-block:: default
 
-    stream, src = mesh.streamlines('vectors', return_source=True,
-                                   terminal_speed=0.0, n_points=200,
-                                   source_radius=0.1)
+    stream, src = mesh.streamlines(
+        'vectors', return_source=True, terminal_speed=0.0, n_points=200, source_radius=0.1
+    )
 
 
 
@@ -359,7 +357,7 @@ Custom 3D Vector Field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-160
+.. GENERATED FROM PYTHON SOURCE LINES 157-159
 
 .. code-block:: default
 
@@ -380,7 +378,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.792 seconds)
+   **Total running time of the script:** ( 0 minutes  14.408 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

@@ -27,11 +27,10 @@ Rotations of a mesh about its axes. In this model, the x axis is from the left
 to right; the y axis is from bottom to top; and the z axis emerges from the
 image. The camera location is the same in all four images.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-16
+.. GENERATED FROM PYTHON SOURCE LINES 12-15
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -124,7 +123,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
     p.camera = camera
 
     for i in range(6):
-        rot = mesh.rotate_x(60*i, point=axes.origin, inplace=False)
+        rot = mesh.rotate_x(60 * i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -161,7 +160,7 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
     p.add_actor(axes.actor)
 
     for i in range(6):
-        rot = mesh.rotate_y(60*i, point=axes.origin, inplace=False)
+        rot = mesh.rotate_y(60 * i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -198,7 +197,7 @@ Add axes actor to the Plotter and set the axes origin to the point of rotation.
     p.add_actor(axes.actor)
 
     for i in range(6):
-        rot = mesh.rotate_z(60*i, point=axes.origin, inplace=False)
+        rot = mesh.rotate_z(60 * i, point=axes.origin, inplace=False)
         p.add_mesh(rot)
 
     p.show()
@@ -235,7 +234,7 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
     p.add_actor(axes.actor)
     for i in range(6):
         rot = mesh.copy()
-        rot.rotate_vector(vector=(1, 1, 1), angle=60*i, point=axes.origin)
+        rot.rotate_vector(vector=(1, 1, 1), angle=60 * i, point=axes.origin)
         p.add_mesh(rot)
 
     p.show()
@@ -254,7 +253,7 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:328: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:337: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
       warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
 
 
@@ -263,7 +262,7 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.083 seconds)
+   **Total running time of the script:** ( 0 minutes  2.258 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_rotate.py:

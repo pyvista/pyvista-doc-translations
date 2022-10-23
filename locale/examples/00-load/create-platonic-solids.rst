@@ -57,7 +57,7 @@ wrappers:
 Let's generate all the Platonic solids, along with the :func:`teapotahedron
 <pyvista.examples.downloads.download_teapot>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-57
+.. GENERATED FROM PYTHON SOURCE LINES 28-54
 
 .. code-block:: default
 
@@ -70,17 +70,14 @@ Let's generate all the Platonic solids, along with the :func:`teapotahedron
         'icosahedron',
     ]
     centers = [
-        ( 0, 1, 0),
-        ( 0, 0, 0),
-        ( 0, 2, 0),
+        (0, 1, 0),
+        (0, 0, 0),
+        (0, 2, 0),
         (-1, 0, 0),
         (-1, 2, 0),
     ]
 
-    solids = [
-        pv.PlatonicSolid(kind, radius=0.4, center=center)
-        for kind, center in zip(kinds, centers)
-    ]
+    solids = [pv.PlatonicSolid(kind, radius=0.4, center=center) for kind, center in zip(kinds, centers)]
 
     # download and align teapotahedron
     teapot = examples.download_teapot()
@@ -97,7 +94,7 @@ Let's generate all the Platonic solids, along with the :func:`teapotahedron
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-65
+.. GENERATED FROM PYTHON SOURCE LINES 55-62
 
 Now let's plot them all.
 
@@ -107,7 +104,7 @@ Now let's plot them all.
    parameter.  An initial window size of ``(1000, 1000)`` seems to
    work well, which can be manually resized without issue.
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-78
+.. GENERATED FROM PYTHON SOURCE LINES 62-76
 
 .. code-block:: default
 
@@ -117,8 +114,9 @@ Now let's plot them all.
     for ind, solid in enumerate(solids):
         # only use smooth shading for the teapot
         smooth_shading = ind == len(solids) - 1
-        p.add_mesh(solid, color='silver', smooth_shading=smooth_shading,
-                   specular=1.0, specular_power=10)
+        p.add_mesh(
+            solid, color='silver', smooth_shading=smooth_shading, specular=1.0, specular_power=10
+        )
     p.view_vector((5.0, 2, 3))
     p.add_floor('-z', lighting=True, color='tan', pad=1.0)
     p.enable_shadows()
@@ -136,7 +134,7 @@ Now let's plot them all.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-81
+.. GENERATED FROM PYTHON SOURCE LINES 77-79
 
 The Platonic solids come with cell scalars that index each face of the
 solids.
@@ -144,7 +142,7 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.595 seconds)
+   **Total running time of the script:** ( 0 minutes  1.402 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:

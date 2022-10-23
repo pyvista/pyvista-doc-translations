@@ -25,17 +25,16 @@ Decimation
 
 Decimate a mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-23
+.. GENERATED FROM PYTHON SOURCE LINES 10-22
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
     from pyvista import examples
 
     mesh = examples.download_face()
 
-    # Define a camera potion the shows this mesh properly
+    # Define a camera position that shows this mesh properly
     cpos = [(0.4, -0.07, -0.31), (0.05, -0.13, -0.06), (-0.1, 1, 0.08)]
     dargs = dict(show_edges=True, color=True)
 
@@ -165,7 +164,7 @@ Side by side comparison:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.966 seconds)
+   **Total running time of the script:** ( 0 minutes  1.731 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:

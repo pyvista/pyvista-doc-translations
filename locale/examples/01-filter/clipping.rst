@@ -25,11 +25,10 @@ Clipping with Planes & Boxes
 
 Clip/cut any dataset using using planes or boxes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-13
+.. GENERATED FROM PYTHON SOURCE LINES 9-12
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -48,7 +47,7 @@ Clip with Plane
 Clip any dataset by a user defined plane using the
 :func:`pyvista.DataSetFilters.clip` filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-32
+.. GENERATED FROM PYTHON SOURCE LINES 19-30
 
 .. code-block:: default
 
@@ -59,9 +58,7 @@ Clip any dataset by a user defined plane using the
     p.add_mesh(dataset, style='wireframe', color='blue', label='Input')
     p.add_mesh(clipped, label='Clipped')
     p.add_legend()
-    p.camera_position = [(0.24, 0.32, 0.7),
-                         (0.02, 0.03, -0.02),
-                         (-0.12, 0.93, -0.34)]
+    p.camera_position = [(0.24, 0.32, 0.7), (0.02, 0.03, -0.02), (-0.12, 0.93, -0.34)]
     p.show()
 
 
@@ -77,7 +74,7 @@ Clip any dataset by a user defined plane using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-38
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 Clip with Bounds
 ++++++++++++++++
@@ -85,13 +82,13 @@ Clip with Bounds
 Clip any dataset by a set of XYZ bounds using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-50
+.. GENERATED FROM PYTHON SOURCE LINES 36-48
 
 .. code-block:: default
 
     dataset = examples.download_office()
 
-    bounds = [2,4.5, 2,4.5, 1,3]
+    bounds = [2, 4.5, 2, 4.5, 1, 3]
     clipped = dataset.clip_box(bounds)
 
     p = pv.Plotter()
@@ -113,7 +110,7 @@ Clip any dataset by a set of XYZ bounds using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-56
+.. GENERATED FROM PYTHON SOURCE LINES 49-54
 
 Clip with Rotated Box
 +++++++++++++++++++++
@@ -121,15 +118,14 @@ Clip with Rotated Box
 Clip any dataset by an arbitrarily rotated solid box using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-68
+.. GENERATED FROM PYTHON SOURCE LINES 54-65
 
 .. code-block:: default
 
     mesh = examples.load_airplane()
 
     # Use `pv.Box()` or `pv.Cube()` to create a region of interest
-    roi = pv.Cube(center=(0.9e3, 0.2e3, mesh.center[2]),
-                  x_length=500, y_length=500, z_length=500)
+    roi = pv.Cube(center=(0.9e3, 0.2e3, mesh.center[2]), x_length=500, y_length=500, z_length=500)
     roi.rotate_z(33, inplace=True)
 
     p = pv.Plotter()
@@ -149,25 +145,26 @@ Clip any dataset by an arbitrarily rotated solid box using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-70
+.. GENERATED FROM PYTHON SOURCE LINES 66-67
 
 Run the box clipping algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-81
+.. GENERATED FROM PYTHON SOURCE LINES 67-79
 
 .. code-block:: default
 
     extracted = mesh.clip_box(roi, invert=False)
 
-    p = pv.Plotter(shape=(1,2))
+    p = pv.Plotter(shape=(1, 2))
     p.add_mesh(roi, opacity=0.75, color="red")
     p.add_mesh(mesh)
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_mesh(extracted)
     p.add_mesh(roi, opacity=0.75, color="red")
     p.link_views()
     p.view_isometric()
     p.show()
+
 
 
 
@@ -180,10 +177,118 @@ Run the box clipping algorithm
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 80-90
+
+Crinkled Clipping
++++++++++++++++++
+Crinkled clipping is useful if you don’t want the clip filter to truly clip
+cells on the boundary, but want to preserve the input cell structure and to
+pass the entire cell on through the boundary.
+
+This option is available for :func:`pyvista.DataSetFilters.clip`,
+:func:`pyvista.DataSetFilters.clip_box`, and
+:func:`pyvista.DataSetFilters.clip_sruface`, but not available when clipping
+by scalar in :func:`pyvista.DataSetFilters.clip_scalar`.
+
+.. GENERATED FROM PYTHON SOURCE LINES 90-94
+
+.. code-block:: default
+
+
+    # Input mesh
+    mesh = pv.Wavelet()
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 95-96
+
+Define clipping plane
+
+.. GENERATED FROM PYTHON SOURCE LINES 96-99
+
+.. code-block:: default
+
+    normal = (1, 1, 1)
+    plane = pv.Plane(i_size=30, j_size=30, direction=normal)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 100-101
+
+Perform a standard clip
+
+.. GENERATED FROM PYTHON SOURCE LINES 101-103
+
+.. code-block:: default
+
+    clipped = mesh.clip(normal=normal)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 104-105
+
+Perform a crinkled clip
+
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
+
+.. code-block:: default
+
+    crinkled = mesh.clip(normal=normal, crinkle=True)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 108-109
+
+Plot comparison
+
+.. GENERATED FROM PYTHON SOURCE LINES 109-117
+
+.. code-block:: default
+
+    p = pv.Plotter(shape=(1, 2))
+    p.add_mesh(clipped, show_edges=True)
+    p.add_mesh(plane.extract_feature_edges(), color='r')
+    p.subplot(0, 1)
+    p.add_mesh(crinkled, show_edges=True)
+    p.add_mesh(plane.extract_feature_edges(), color='r')
+    p.link_views()
+    p.show()
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_clipping_005.png
+   :alt: clipping
+   :srcset: /examples/01-filter/images/sphx_glr_clipping_005.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.688 seconds)
+   **Total running time of the script:** ( 0 minutes  3.563 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:

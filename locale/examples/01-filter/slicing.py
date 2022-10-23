@@ -28,7 +28,6 @@ mesh = examples.load_channels()
 # define a categorical colormap
 cmap = plt.cm.get_cmap("viridis", 4)
 
-
 mesh.plot(cmap=cmap)
 
 ###############################################################################
@@ -84,8 +83,8 @@ model = examples.load_channels()
 
 def path(y):
     """Equation: x = a(y-h)^2 + k"""
-    a = 110.0 / 160.0 ** 2
-    x = a * y ** 2 + 0.0
+    a = 110.0 / 160.0**2
+    x = a * y**2 + 0.0
     return x, y
 
 
@@ -118,7 +117,7 @@ p.show(cpos=[1, -1, 1])
 mesh = examples.download_brain()
 
 # Create vector
-vec = np.random.rand(3)
+vec = np.array([1.0, 2.0, 1.0])
 # Normalize the vector
 normal = vec / np.linalg.norm(vec)
 
@@ -144,7 +143,6 @@ p.add_mesh(line, color="red", line_width=5)
 p.show()
 
 
-
 ###############################################################################
 # Slice At Different Bearings
 # +++++++++++++++++++++++++++
@@ -156,16 +154,16 @@ p.show()
 #
 # Create a point to orient slices around
 ranges = np.array(model.bounds).reshape(-1, 2).ptp(axis=1)
-point = np.array(model.center) - ranges*0.25
+point = np.array(model.center) - ranges * 0.25
 
 ###############################################################################
 # Now generate a few normal vectors to rotate a slice around the z-axis.
 # Use equation for circle since its about the Z-axis.
-increment = np.pi/6.
+increment = np.pi / 6.0
 # use a container to hold all the slices
-slices = pv.MultiBlock() # treat like a dictionary/list
+slices = pv.MultiBlock()  # treat like a dictionary/list
 for theta in np.arange(0, np.pi, increment):
-    normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi/2.)
+    normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi / 2.0)
     name = f'Bearing: {np.rad2deg(theta):.2f}'
     slices[name] = model.slice(origin=point, normal=normal)
 slices

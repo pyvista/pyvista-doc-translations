@@ -1,16 +1,20 @@
 """
+.. _interpolate_before_mapping_example:
+
 Interpolate Before Mapping
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``add_mesh`` function has an ``interpolate_before_map`` argument - this
-affects the way scalar data is visualized with colors.
-The effect can of this can vary depending on the dataset's topology and the
-chosen colormap.
+The :func:`add_mesh <pyvista.Plotter.add_mesh>` method has an
+``interpolate_before_map`` argument that affects the way scalar data is
+visualized with colors.  The effect of this can vary depending on the
+dataset's topology and the chosen colormap.
 
 This example serves to demo the difference and why we've chosen to enable this
 by default.
 
-For more details, please see `this blog post <https://blog.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
+For more details, please see `What is InterpolateScalarsBeforeMapping in VTK?
+<https://www.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
+
 """
 # sphinx_gallery_thumbnail_number = 4
 import pyvista as pv
@@ -38,16 +42,18 @@ cyl = pv.Cylinder(direction=(0, 0, 1), height=2).elevation()
 dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True)
 
 p = pv.Plotter(shape=(1, 2))
-p.add_mesh(cyl, interpolate_before_map=False,
-           scalar_bar_args={'title': 'Elevation - not interpolated'},
-           **dargs)
+p.add_mesh(
+    cyl,
+    interpolate_before_map=False,
+    scalar_bar_args={'title': 'Elevation - not interpolated'},
+    **dargs,
+)
 p.subplot(0, 1)
-p.add_mesh(cyl, interpolate_before_map=True,
-           scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
+p.add_mesh(
+    cyl, interpolate_before_map=True, scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs
+)
 p.link_views()
-p.camera_position = [(-1.67, -5.10, 2.06),
-                     (0.0, 0.0, 0.0),
-                     (0.00, 0.37, 0.93)]
+p.camera_position = [(-1.67, -5.10, 2.06), (0.0, 0.0, 0.0), (0.00, 0.37, 0.93)]
 p.show()
 
 ###############################################################################
@@ -59,20 +65,21 @@ p.show()
 # The same interpolation effect occurs for wireframe visualization too:
 
 # Common display argument to make sure all else is constant
-dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True,
-             style='wireframe')
+dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True, style='wireframe')
 
 p = pv.Plotter(shape=(1, 2))
-p.add_mesh(cyl, interpolate_before_map=False,
-           scalar_bar_args={'title': 'Elevation - not interpolated'},
-           **dargs)
+p.add_mesh(
+    cyl,
+    interpolate_before_map=False,
+    scalar_bar_args={'title': 'Elevation - not interpolated'},
+    **dargs,
+)
 p.subplot(0, 1)
-p.add_mesh(cyl, interpolate_before_map=True,
-           scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
+p.add_mesh(
+    cyl, interpolate_before_map=True, scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs
+)
 p.link_views()
-p.camera_position = [(-1.67, -5.10, 2.06),
-                     (0.0, 0.0, 0.0),
-                     (0.00, 0.37, 0.93)]
+p.camera_position = [(-1.67, -5.10, 2.06), (0.0, 0.0, 0.0), (0.00, 0.37, 0.93)]
 p.show()
 
 ###############################################################################
@@ -90,15 +97,21 @@ wavelet = pv.Wavelet().clip('x')
 dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True)
 
 p = pv.Plotter(shape=(1, 2))
-p.add_mesh(wavelet, interpolate_before_map=False,
-           scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+p.add_mesh(
+    wavelet,
+    interpolate_before_map=False,
+    scalar_bar_args={'title': 'RTData - not interpolated'},
+    **dargs,
+)
 p.subplot(0, 1)
-p.add_mesh(wavelet, interpolate_before_map=True,
-           scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
+p.add_mesh(
+    wavelet,
+    interpolate_before_map=True,
+    scalar_bar_args={'title': 'RTData - interpolated'},
+    **dargs,
+)
 p.link_views()
-p.camera_position = [(55., 16, 31),
-                     (-5.0, 0.0, 0.0),
-                     (-0.22, 0.97, -0.09)]
+p.camera_position = [(55.0, 16, 31), (-5.0, 0.0, 0.0), (-0.22, 0.97, -0.09)]
 p.show()
 
 ###############################################################################
@@ -111,15 +124,21 @@ p.show()
 dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True, n_colors=8)
 
 p = pv.Plotter(shape=(1, 2))
-p.add_mesh(wavelet, interpolate_before_map=False,
-           scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+p.add_mesh(
+    wavelet,
+    interpolate_before_map=False,
+    scalar_bar_args={'title': 'RTData - not interpolated'},
+    **dargs,
+)
 p.subplot(0, 1)
-p.add_mesh(wavelet, interpolate_before_map=True,
-           scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
+p.add_mesh(
+    wavelet,
+    interpolate_before_map=True,
+    scalar_bar_args={'title': 'RTData - interpolated'},
+    **dargs,
+)
 p.link_views()
-p.camera_position = [(55., 16, 31),
-                     (-5.0, 0.0, 0.0),
-                     (-0.22, 0.97, -0.09)]
+p.camera_position = [(55.0, 16, 31), (-5.0, 0.0, 0.0), (-0.22, 0.97, -0.09)]
 p.show()
 
 ###############################################################################

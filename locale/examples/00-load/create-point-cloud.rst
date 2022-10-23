@@ -56,12 +56,12 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
 .. code-block:: default
 
 
+
     # Define some helpers - ignore these and use your own data!
     def generate_points(subset=0.02):
         """A helper to make a 3D NumPy array of points (n_points by 3)"""
         dataset = examples.download_lidar()
-        ids = np.random.randint(low=0, high=dataset.n_points-1,
-                                size=int(dataset.n_points * subset))
+        ids = np.random.randint(low=0, high=dataset.n_points - 1, size=int(dataset.n_points * subset))
         return dataset.points[ids]
 
 
@@ -81,11 +81,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.81002175e+05, 4.40017420e+06, 1.76005005e+03],
-                     [4.81042075e+05, 4.40020200e+06, 1.75857996e+03],
-                     [4.81106875e+05, 4.40016610e+06, 1.75894995e+03],
-                     [4.81034375e+05, 4.40011220e+06, 1.76842004e+03],
-                     [4.81017075e+05, 4.40014750e+06, 1.76107996e+03]])
+    pyvista_ndarray([[4.80956275e+05, 4.40012070e+06, 1.76268005e+03],
+                     [4.80940575e+05, 4.40020250e+06, 1.76766003e+03],
+                     [4.81013275e+05, 4.40021710e+06, 1.76957996e+03],
+                     [4.81111275e+05, 4.40011540e+06, 1.76197998e+03],
+                     [4.81106675e+05, 4.40024330e+06, 1.76981995e+03]])
 
 
 
@@ -116,7 +116,7 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <tr><td>N Points</td><td>67841</td></tr>
     <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
     <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-    <tr><td>Z Bounds</td><td>1.754e+03, 1.787e+03</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
 
@@ -191,7 +191,7 @@ Each element in this array will correspond to points at the same index:
 
 
     # Make data array using z-component of points array
-    data = points[:,-1]
+    data = points[:, -1]
 
     # Add that data to the mesh with the name "uniform dist"
     point_cloud["elevation"] = data
@@ -236,7 +236,7 @@ cloud and add those vectors to the mesh.
 
 This time, we're going to create a totally new, random point cloud.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-99
+.. GENERATED FROM PYTHON SOURCE LINES 83-100
 
 .. code-block:: default
 
@@ -253,6 +253,7 @@ This time, we're going to create a totally new, random point cloud.
         vectors = vectors / np.linalg.norm(vectors, axis=1)[:, None]
         return vectors
 
+
     vectors = compute_vectors(point_cloud)
     vectors[0:5, :]
 
@@ -267,15 +268,15 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[-0.55900346,  0.57092667, -0.60129683],
-                     [ 0.23136505,  0.87809317,  0.41883481],
-                     [-0.77822785, -0.60338264,  0.17404255],
-                     [ 0.33661148, -0.91339709, -0.2289071 ],
-                     [-0.3916899 ,  0.77759868,  0.49185293]])
+    pyvista_ndarray([[ 0.81699473,  0.52849627,  0.23067576],
+                     [-0.67963856, -0.47476049,  0.5591904 ],
+                     [ 0.72219943,  0.36968446, -0.58460361],
+                     [-0.14906111,  0.80922348,  0.56827647],
+                     [ 0.67621651,  0.58316456, -0.45016699]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-103
+.. GENERATED FROM PYTHON SOURCE LINES 101-104
 
 .. code-block:: default
 
@@ -289,22 +290,25 @@ This time, we're going to create a totally new, random point cloud.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-106
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
 
 Now we can make arrows using those vectors using the glyph filter
 (see :ref:`glyph_example` for more details).
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-118
+.. GENERATED FROM PYTHON SOURCE LINES 107-122
 
 .. code-block:: default
 
 
-    arrows = point_cloud.glyph(orient='vectors', scale=False, factor=0.15,)
+    arrows = point_cloud.glyph(
+        orient='vectors',
+        scale=False,
+        factor=0.15,
+    )
 
     # Display the arrows
     plotter = pv.Plotter()
-    plotter.add_mesh(point_cloud, color='maroon', point_size=10.,
-                     render_points_as_spheres=True)
+    plotter.add_mesh(point_cloud, color='maroon', point_size=10.0, render_points_as_spheres=True)
     plotter.add_mesh(arrows, color='lightblue')
     # plotter.add_point_labels([point_cloud.center,], ['Center',],
     #                          point_color='yellow', point_size=20)
@@ -325,7 +329,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.578 seconds)
+   **Total running time of the script:** ( 0 minutes  4.253 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

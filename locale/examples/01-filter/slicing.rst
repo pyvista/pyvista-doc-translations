@@ -25,14 +25,13 @@ Slicing
 
 Extract thin planar slices from a volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
 
     import matplotlib.pyplot as plt
     import numpy as np
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -55,7 +54,7 @@ orthogonal slices through the dataset parallel to the three Cartesian planes.
 For example, let's slice through the sample geostatistical training image
 volume. First, load up the volume and preview it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-34
+.. GENERATED FROM PYTHON SOURCE LINES 26-33
 
 .. code-block:: default
 
@@ -63,7 +62,6 @@ volume. First, load up the volume and preview it:
     mesh = examples.load_channels()
     # define a categorical colormap
     cmap = plt.cm.get_cmap("viridis", 4)
-
 
     mesh.plot(cmap=cmap)
 
@@ -79,13 +77,13 @@ volume. First, load up the volume and preview it:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-38
+.. GENERATED FROM PYTHON SOURCE LINES 34-37
 
 Note that this dataset is a 3D volume and there might be regions within this
 volume that we would like to inspect. We can create slices through the mesh
 to gain further insight about the internals of the volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-44
+.. GENERATED FROM PYTHON SOURCE LINES 37-43
 
 .. code-block:: default
 
@@ -107,11 +105,11 @@ to gain further insight about the internals of the volume.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+.. GENERATED FROM PYTHON SOURCE LINES 44-45
 
 The orthogonal slices can be easily translated throughout the volume:
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 45-48
 
 .. code-block:: default
 
@@ -130,13 +128,13 @@ The orthogonal slices can be easily translated throughout the volume:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-53
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 We can also add just a single slice of the volume by specifying the origin
 and normal of the slicing plane with the :func:`pyvista.DataSetFilters.slice`
 filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-61
+.. GENERATED FROM PYTHON SOURCE LINES 52-60
 
 .. code-block:: default
 
@@ -160,12 +158,12 @@ filter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-64
+.. GENERATED FROM PYTHON SOURCE LINES 61-63
 
 Adding slicing planes uniformly across an axial direction can also be
 automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-70
+.. GENERATED FROM PYTHON SOURCE LINES 63-69
 
 .. code-block:: default
 
@@ -187,7 +185,7 @@ automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-81
+.. GENERATED FROM PYTHON SOURCE LINES 70-80
 
 Slice Along Line
 ++++++++++++++++
@@ -200,7 +198,7 @@ that this type of slicing is computationally expensive and might take a while
 if there are a lot of points in the line - try to keep the resolution of
 the line low.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-99
+.. GENERATED FROM PYTHON SOURCE LINES 80-98
 
 .. code-block:: default
 
@@ -210,8 +208,8 @@ the line low.
 
     def path(y):
         """Equation: x = a(y-h)^2 + k"""
-        a = 110.0 / 160.0 ** 2
-        x = a * y ** 2 + 0.0
+        a = 110.0 / 160.0**2
+        x = a * y**2 + 0.0
         return x, y
 
 
@@ -252,11 +250,11 @@ the line low.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-101
+.. GENERATED FROM PYTHON SOURCE LINES 99-100
 
 Then run the filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-104
+.. GENERATED FROM PYTHON SOURCE LINES 100-103
 
 .. code-block:: default
 
@@ -293,7 +291,7 @@ Then run the filter
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-112
+.. GENERATED FROM PYTHON SOURCE LINES 104-111
 
 .. code-block:: default
 
@@ -316,14 +314,14 @@ Then run the filter
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-117
+.. GENERATED FROM PYTHON SOURCE LINES 112-116
 
 Multiple Slices in Vector Direction
 +++++++++++++++++++++++++++++++++++
 
 Slice a mesh along a vector direction perpendicularly.
 
-.. GENERATED FROM PYTHON SOURCE LINES 117-138
+.. GENERATED FROM PYTHON SOURCE LINES 116-137
 
 .. code-block:: default
 
@@ -331,7 +329,7 @@ Slice a mesh along a vector direction perpendicularly.
     mesh = examples.download_brain()
 
     # Create vector
-    vec = np.random.rand(3)
+    vec = np.array([1.0, 2.0, 1.0])
     # Normalize the vector
     normal = vec / np.linalg.norm(vec)
 
@@ -355,7 +353,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-148
+.. GENERATED FROM PYTHON SOURCE LINES 138-146
 
 .. code-block:: default
 
@@ -370,7 +368,6 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-
 .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_007.png
    :alt: slicing
    :srcset: /examples/01-filter/images/sphx_glr_slicing_007.png
@@ -380,7 +377,7 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-158
+.. GENERATED FROM PYTHON SOURCE LINES 147-156
 
 Slice At Different Bearings
 +++++++++++++++++++++++++++
@@ -392,12 +389,12 @@ around a user-chosen location.
 
 Create a point to orient slices around
 
-.. GENERATED FROM PYTHON SOURCE LINES 158-161
+.. GENERATED FROM PYTHON SOURCE LINES 156-159
 
 .. code-block:: default
 
     ranges = np.array(model.bounds).reshape(-1, 2).ptp(axis=1)
-    point = np.array(model.center) - ranges*0.25
+    point = np.array(model.center) - ranges * 0.25
 
 
 
@@ -406,20 +403,20 @@ Create a point to orient slices around
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-164
+.. GENERATED FROM PYTHON SOURCE LINES 160-162
 
 Now generate a few normal vectors to rotate a slice around the z-axis.
 Use equation for circle since its about the Z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-173
+.. GENERATED FROM PYTHON SOURCE LINES 162-171
 
 .. code-block:: default
 
-    increment = np.pi/6.
+    increment = np.pi / 6.0
     # use a container to hold all the slices
-    slices = pv.MultiBlock() # treat like a dictionary/list
+    slices = pv.MultiBlock()  # treat like a dictionary/list
     for theta in np.arange(0, np.pi, increment):
-        normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi/2.)
+        normal = np.array([np.cos(theta), np.sin(theta), 0.0]).dot(np.pi / 2.0)
         name = f'Bearing: {np.rad2deg(theta):.2f}'
         slices[name] = model.slice(origin=point, normal=normal)
     slices
@@ -457,11 +454,11 @@ Use equation for circle since its about the Z-axis.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-175
+.. GENERATED FROM PYTHON SOURCE LINES 172-173
 
 And now display it!
 
-.. GENERATED FROM PYTHON SOURCE LINES 175-179
+.. GENERATED FROM PYTHON SOURCE LINES 173-177
 
 .. code-block:: default
 
@@ -484,28 +481,23 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  24.470 seconds)
+   **Total running time of the script:** ( 0 minutes  20.952 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: slicing.py <slicing.py>`
 
-     :download:`Download Python source code: slicing.py <slicing.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: slicing.ipynb <slicing.ipynb>`
+      :download:`Download Jupyter notebook: slicing.ipynb <slicing.ipynb>`
 
 
 .. only:: html

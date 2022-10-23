@@ -26,17 +26,16 @@ Extract Surface
 You can extract the surface of nearly any object within ``pyvista``
 using the ``extract_surface`` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-18
+.. GENERATED FROM PYTHON SOURCE LINES 10-17
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
 
     import numpy as np
-    from vtk import VTK_QUADRATIC_HEXAHEDRON
 
     import pyvista as pv
+    from pyvista import CellType
 
 
 
@@ -52,40 +51,48 @@ Create a quadratic cell and extract its surface
 Here we create a single quadratic hexahedral cell and then extract its surface
 to demonstrate how to extract the surface of an UnstructuredGrid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-68
+.. GENERATED FROM PYTHON SOURCE LINES 23-76
 
 .. code-block:: default
 
 
 
-    lin_pts = np.array([[-1, -1, -1],  # point 0
-                        [ 1, -1, -1],  # point 1
-                        [ 1,  1, -1],  # point 2
-                        [-1,  1, -1],  # point 3
-                        [-1, -1,  1],  # point 4
-                        [ 1, -1,  1],  # point 5
-                        [ 1,  1,  1],  # point 6
-                        [-1,  1,  1]], np.double)  # point 7
+    lin_pts = np.array(
+        [
+            [-1, -1, -1],  # point 0
+            [1, -1, -1],  # point 1
+            [1, 1, -1],  # point 2
+            [-1, 1, -1],  # point 3
+            [-1, -1, 1],  # point 4
+            [1, -1, 1],  # point 5
+            [1, 1, 1],  # point 6
+            [-1, 1, 1],  # point 7
+        ],
+        np.double,
+    )
 
     # these are the "midside" points of a quad cell.  See the definition of a
     # vtkQuadraticHexahedron at:
     # https://vtk.org/doc/nightly/html/classvtkQuadraticHexahedron.html
-    quad_pts = np.array([
-        (lin_pts[1] + lin_pts[0])/2,  # between point 0 and 1
-        (lin_pts[1] + lin_pts[2])/2,  # between point 1 and 2
-        (lin_pts[2] + lin_pts[3])/2,  # and so on...
-        (lin_pts[3] + lin_pts[0])/2,
-        (lin_pts[4] + lin_pts[5])/2,
-        (lin_pts[5] + lin_pts[6])/2,
-        (lin_pts[6] + lin_pts[7])/2,
-        (lin_pts[7] + lin_pts[4])/2,
-        (lin_pts[0] + lin_pts[4])/2,
-        (lin_pts[1] + lin_pts[5])/2,
-        (lin_pts[2] + lin_pts[6])/2,
-        (lin_pts[3] + lin_pts[7])/2])
+    quad_pts = np.array(
+        [
+            (lin_pts[1] + lin_pts[0]) / 2,  # between point 0 and 1
+            (lin_pts[1] + lin_pts[2]) / 2,  # between point 1 and 2
+            (lin_pts[2] + lin_pts[3]) / 2,  # and so on...
+            (lin_pts[3] + lin_pts[0]) / 2,
+            (lin_pts[4] + lin_pts[5]) / 2,
+            (lin_pts[5] + lin_pts[6]) / 2,
+            (lin_pts[6] + lin_pts[7]) / 2,
+            (lin_pts[7] + lin_pts[4]) / 2,
+            (lin_pts[0] + lin_pts[4]) / 2,
+            (lin_pts[1] + lin_pts[5]) / 2,
+            (lin_pts[2] + lin_pts[6]) / 2,
+            (lin_pts[3] + lin_pts[7]) / 2,
+        ]
+    )
 
     # introduce a minor variation to the location of the mid-side points
-    quad_pts += np.random.random(quad_pts.shape)*0.3
+    quad_pts += np.random.random(quad_pts.shape) * 0.3
     pts = np.vstack((lin_pts, quad_pts))
 
     # create the grid
@@ -93,7 +100,7 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
     # If you are using vtk>=9, you do not need the offset array
     offset = np.array([0])
     cells = np.hstack((20, np.arange(20))).astype(np.int64, copy=False)
-    celltypes = np.array([VTK_QUADRATIC_HEXAHEDRON])
+    celltypes = np.array([CellType.QUADRATIC_HEXAHEDRON])
     grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
     # finally, extract the surface and plot it
@@ -112,17 +119,15 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:61: UserWarning: VTK 9 no longer accepts an offset array
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:69: UserWarning: VTK 9 no longer accepts an offset array
       grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-76
+.. GENERATED FROM PYTHON SOURCE LINES 77-84
 
 Nonlinear Surface Subdivision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,7 +137,7 @@ generate a smooth surface based on the position of the
 containing curvature.  For additional reference, please see:
 https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-79
+.. GENERATED FROM PYTHON SOURCE LINES 84-87
 
 .. code-block:: default
 
@@ -154,28 +159,23 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.770 seconds)
+   **Total running time of the script:** ( 0 minutes  0.500 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: extract-surface.py <extract-surface.py>`
 
-     :download:`Download Python source code: extract-surface.py <extract-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extract-surface.ipynb <extract-surface.ipynb>`
+      :download:`Download Jupyter notebook: extract-surface.ipynb <extract-surface.ipynb>`
 
 
 .. only:: html

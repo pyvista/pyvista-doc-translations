@@ -23,7 +23,7 @@ Ray Tracing
 
 Single line segment ray tracing for PolyData objects.
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-34
+.. GENERATED FROM PYTHON SOURCE LINES 7-31
 
 
 
@@ -57,19 +57,16 @@ Single line segment ray tracing for PolyData objects.
 
     # Render the result
     p = pv.Plotter(off_screen=True)
-    p.add_mesh(sphere,
-               show_edges=True, opacity=0.5, color="w",
-               lighting=False, label="Test Mesh")
+    p.add_mesh(sphere, show_edges=True, opacity=0.5, color="w", lighting=False, label="Test Mesh")
     p.add_mesh(ray, color="blue", line_width=5, label="Ray Segment")
-    p.add_mesh(intersection, color="maroon",
-               point_size=25, label="Intersection Points")
+    p.add_mesh(intersection, color="maroon", point_size=25, label="Intersection Points")
     p.add_legend()
     p.show()
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.594 seconds)
+   **Total running time of the script:** ( 0 minutes  0.432 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace.py:

@@ -18,21 +18,22 @@
 .. _sphx_glr_examples_01-filter_sampling_functions_2d.py:
 
 
+.. _perlin_noise_2d_example:
+
 Sample Function: Perlin Noise in 2D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Here we use :func:`pyvista.core.imaging.sample_function` to sample
+Here we use :func:`pyvista.utilities.common.sample_function` to sample
 Perlin noise over a region to generate random terrain.
 
 Perlin noise is atype of gradient noise often used by visual effects
 artists to increase the appearance of realism in computer graphics.
-Source:
-https://en.wikipedia.org/wiki/Perlin_noise
+Source: `Perlin Noise Wikipedia <https://en.wikipedia.org/wiki/Perlin_noise>`_
 
 The development of Perlin Noise has allowed computer graphics artists
 to better represent the complexity of natural phenomena in visual
 effects for the motion picture industry.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+.. GENERATED FROM PYTHON SOURCE LINES 18-21
 
 .. code-block:: default
 
@@ -46,7 +47,7 @@ effects for the motion picture industry.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-26
+.. GENERATED FROM PYTHON SOURCE LINES 22-27
 
 Generate Perlin Noise over a StructuredGrid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,15 +55,13 @@ Feel free to change the values of ``freq`` to change the shape of
 the "mountains".  For example, lowering the frequency will make the
 terrain seem more like hills rather than mountains.
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-33
+.. GENERATED FROM PYTHON SOURCE LINES 27-32
 
 .. code-block:: default
 
     freq = [0.689, 0.562, 0.683]
     noise = pv.perlin_noise(1, freq, (0, 0, 0))
-    sampled = pv.sample_function(noise,
-                                 bounds=(-10, 10, -10, 10, -10, 10),
-                                 dim=(500, 500, 1))
+    sampled = pv.sample_function(noise, bounds=(-10, 10, -10, 10, -10, 10), dim=(500, 500, 1))
 
 
 
@@ -72,14 +71,14 @@ terrain seem more like hills rather than mountains.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Warp by scalar
 ~~~~~~~~~~~~~~
 Here we warp by scalar to give the terrain some height based on the
 value of the Perlin noise.  This is necessary to the terrain its shape.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-55
+.. GENERATED FROM PYTHON SOURCE LINES 37-54
 
 .. code-block:: default
 
@@ -96,7 +95,7 @@ value of the Perlin noise.  This is necessary to the terrain its shape.
 
     # water level at 70%  (change this to change the water level)
     water_percent = 0.7
-    water_level = z.max() - water_percent*diff
+    water_level = z.max() - water_percent * diff
     mesh.points[z < water_level, 2] = water_level
 
 
@@ -107,23 +106,29 @@ value of the Perlin noise.  This is necessary to the terrain its shape.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-57
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Show the terrain as a contour plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-69
+.. GENERATED FROM PYTHON SOURCE LINES 56-74
 
 .. code-block:: default
 
 
     # make the water blue
     rng = z.max() - z.min()
-    clim = (z.max() - rng*1.65, z.max())
+    clim = (z.max() - rng * 1.65, z.max())
 
     pl = pv.Plotter()
-    pl.add_mesh(mesh, scalars=z,
-                cmap='gist_earth', n_colors=10, show_scalar_bar=False,
-                smooth_shading=True, clim=clim)
+    pl.add_mesh(
+        mesh,
+        scalars=z,
+        cmap='gist_earth',
+        n_colors=10,
+        show_scalar_bar=False,
+        smooth_shading=True,
+        clim=clim,
+    )
     pl.show()
 
 
@@ -139,20 +144,18 @@ Show the terrain as a contour plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-71
+.. GENERATED FROM PYTHON SOURCE LINES 75-76
 
 Show the terrain with custom lighting and shadows
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-79
+.. GENERATED FROM PYTHON SOURCE LINES 76-82
 
 .. code-block:: default
 
 
     pl = pv.Plotter(lighting=None)
-    pl.add_light(pv.Light((3, 1, 0.5), show_actor=True, positional=True,
-                          cone_angle=90, intensity=1.2))
-    pl.add_mesh(mesh, cmap='gist_earth', show_scalar_bar=False,
-                smooth_shading=True, clim=clim)
+    pl.add_light(pv.Light((3, 1, 0.5), show_actor=True, positional=True, cone_angle=90, intensity=1.2))
+    pl.add_mesh(mesh, cmap='gist_earth', show_scalar_bar=False, smooth_shading=True, clim=clim)
     pl.enable_shadows = True
     pl.show()
 
@@ -170,28 +173,23 @@ Show the terrain with custom lighting and shadows
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.307 seconds)
+   **Total running time of the script:** ( 0 minutes  2.737 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: sampling_functions_2d.py <sampling_functions_2d.py>`
 
-     :download:`Download Python source code: sampling_functions_2d.py <sampling_functions_2d.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: sampling_functions_2d.ipynb <sampling_functions_2d.ipynb>`
+      :download:`Download Jupyter notebook: sampling_functions_2d.ipynb <sampling_functions_2d.ipynb>`
 
 
 .. only:: html

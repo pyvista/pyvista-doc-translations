@@ -1,7 +1,7 @@
 """
 Sample Function: Perlin Noise in 3D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Here we use :func:`pyvista.core.imaging.sample_function` to sample
+Here we use :func:`pyvista.utilities.common.sample_function` to sample
 Perlin noise over a region to generate random terrain.
 
 Video games like Minecraft use Perlin noise to create terrain.  Here,
@@ -31,8 +31,13 @@ out
 ###############################################################################
 # color limits without blue
 mn, mx = [out['scalars'].min(), out['scalars'].max()]
-clim = (mn, mx*1.8)
+clim = (mn, mx * 1.8)
 
-out.plot(cmap='gist_earth_r', background='white',
-         show_scalar_bar=False, lighting=True, clim=clim,
-         show_edges=False)
+out.plot(
+    cmap='gist_earth_r',
+    background='white',
+    show_scalar_bar=False,
+    lighting=True,
+    clim=clim,
+    show_edges=False,
+)

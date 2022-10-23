@@ -25,11 +25,10 @@
 
 Integrate a vector field to generate streamlines on a 2D surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-11
+.. GENERATED FROM PYTHON SOURCE LINES 9-10
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
 
 
 
@@ -59,8 +58,8 @@ This example generates streamlines of flow around a cylinder in cross flow.
 
 .. GENERATED FROM PYTHON SOURCE LINES 18-20
 
-The data is multiblock with the fluid_data as the first block.
-The data lies in the xy plane, i.e. z=0, with no z velocity.
+The data is multiblock with the fluid data as the first block.
+The data lies in the `xy` plane, i.e. `z=0`, with no `z` velocity.
 
 .. GENERATED FROM PYTHON SOURCE LINES 20-25
 
@@ -81,7 +80,7 @@ The data lies in the xy plane, i.e. z=0, with no z velocity.
 
  .. code-block:: none
 
-    UnstructuredGrid (0x7f7f486dba60)
+    UnstructuredGrid (0x7f528f1eb040)
       N Cells:      14594
       N Points:     14831
       X Bounds:     0.000e+00, 1.500e+01
@@ -93,35 +92,32 @@ The data lies in the xy plane, i.e. z=0, with no z velocity.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-32
+.. GENERATED FROM PYTHON SOURCE LINES 26-33
 
-The default behavior of the :func:`pyvista.DataSetFilters.streamlines` filter is to use
-a 3D sphere source as the seed points.  This often will not generate any
-seed points on the 2D plane of interest.  Instead, a single streamlines
-can be generated using the `start_position` argument.
-`surface_streamlines=True` argument is be needed if the dataset has
-nonzero normal velocity component.  This is not the case in this dataset.
+The default behavior of the :func:`streamlines()
+<pyvista.DataSetFilters.streamlines>` filter is to use a 3D sphere source as
+the seed points.  This often will not generate any seed points on the 2D
+plane of interest.  Instead, a single streamline can be generated using the
+``start_position`` argument. The ``surface_streamlines=True`` argument is
+also needed if the dataset has nonzero normal velocity component.  This is
+not the case in this dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-53
+.. GENERATED FROM PYTHON SOURCE LINES 33-50
 
 .. code-block:: default
 
 
     one_streamline = fluid_mesh.streamlines(
-        start_position = (0., 0.4, 0.),
-        max_time = 100.,
+        start_position=(0.0, 0.4, 0.0),
+        max_time=100.0,
         compute_vorticity=False,  # vorticity already exists in dataset
     )
 
     clim = [0, 20]
-    camera_position = [
-        (7, 0, 20.),
-        (7, 0.0, 0.0),
-        (0.0, 1.0, 0.0)
-     ]
+    camera_position = [(7, 0, 20.0), (7, 0.0, 0.0), (0.0, 1.0, 0.0)]
 
     p = pv.Plotter()
-    for i in range(1,len(mesh)):
+    for i in range(1, len(mesh)):
         p.add_mesh(mesh[i], color='k')
     p.add_mesh(one_streamline.tube(radius=0.05), scalars="vorticity_mag", clim=clim)
     p.view_xy()
@@ -139,12 +135,12 @@ nonzero normal velocity component.  This is not the case in this dataset.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-56
+.. GENERATED FROM PYTHON SOURCE LINES 51-53
 
-To generate multiple streamlines, a line source can be used with the `pointa`
-and `pointb` parameters.
+To generate multiple streamlines, a line source can be used with the ``pointa``
+and ``pointb`` parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-72
+.. GENERATED FROM PYTHON SOURCE LINES 53-69
 
 .. code-block:: default
 
@@ -153,12 +149,12 @@ and `pointb` parameters.
         pointa=(0, -5, 0),
         pointb=(0, 5, 0),
         n_points=25,
-        max_time=100.,
+        max_time=100.0,
         compute_vorticity=False,  # vorticity already exists in dataset
     )
 
     p = pv.Plotter()
-    for i in range(1,len(mesh)):
+    for i in range(1, len(mesh)):
         p.add_mesh(mesh[i], color='k')
     p.add_mesh(line_streamlines.tube(radius=0.05), scalars="vorticity_mag", clim=clim)
     p.view_xy()
@@ -176,31 +172,31 @@ and `pointb` parameters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-81
+.. GENERATED FROM PYTHON SOURCE LINES 70-78
 
 The behavior immediately downstream of the cylinder is still not apparent
 using streamlines at the inlet.
 
-Another method is to use
-:func:`pyvista.DataSetFilters.streamlines_evenly_spaced_2D`.
+Another method is to use :func:`streamlines_evenly_spaced_2D()
+<pyvista.DataSetFilters.streamlines_evenly_spaced_2D>`.
 This filter only works with 2D data that lies on the xy plane. This method
 can quickly run of memory, so particular attention must be paid to the input
-parameters.  The defaults are in cell_length units.
+parameters.  The defaults are in cell length units.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-96
+.. GENERATED FROM PYTHON SOURCE LINES 78-93
 
 .. code-block:: default
 
 
     line_streamlines = fluid_mesh.streamlines_evenly_spaced_2D(
-        start_position=(4, 0.1, 0.),
+        start_position=(4, 0.1, 0.0),
         separating_distance=3,
         separating_distance_ratio=0.2,
         compute_vorticity=False,  # vorticity already exists in dataset
     )
 
     p = pv.Plotter()
-    for i in range(1,len(mesh)):
+    for i in range(1, len(mesh)):
         p.add_mesh(mesh[i], color='k')
     p.add_mesh(line_streamlines.tube(radius=0.02), scalars="vorticity_mag", clim=clim)
     p.view_xy()
@@ -218,7 +214,7 @@ parameters.  The defaults are in cell_length units.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-100
+.. GENERATED FROM PYTHON SOURCE LINES 94-97
 
 The streamlines are only approximately evenly spaced and capture the
 vortex pair downstream of the cylinder with appropriate choice of
@@ -227,7 +223,7 @@ vortex pair downstream of the cylinder with appropriate choice of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.972 seconds)
+   **Total running time of the script:** ( 0 minutes  3.859 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines_2D.py:

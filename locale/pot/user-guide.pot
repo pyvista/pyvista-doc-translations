@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.34.dev0\n"
+"Project-Id-Version: PyVista 0.37.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-06 00:43+0000\n"
+"POT-Creation-Date: 2022-10-07 01:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -516,12 +516,224 @@ msgstr ""
 msgid "If there is any material that we can add, please open an `issue <https://github.com/pyvista/pyvista/issues>`_ ."
 msgstr ""
 
+#: ../../pyvista/doc/user-guide/jupyter/_autosummary/pyvista.PlotterITK.rst:2
+msgid "pyvista.PlotterITK"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:82:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:2
+msgid "ITKwidgets plotter."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:4
+msgid "Used for plotting interactively within a jupyter notebook. Requires ``itkwidgets>=0.25.2``.  For installation see:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:7
+msgid "https://itkwidgets.readthedocs.io/en/latest/quick_start_guide.html"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:55
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:21
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:35
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:2
+msgid "Add a PyVista/VTK mesh or dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:4
+msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:12
+msgid "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:11
+msgid "pyvista.DataSet or pyvista.MultiBlock"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:10
+msgid "Any PyVista or VTK mesh is supported. Also, any dataset that :func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:19
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "**color** : :obj:`color_like`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:18
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "color_like, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:15
+msgid "Use to make the entire mesh have a single solid color. Either a string, RGB list, or hex color string.  For example: ``color='white'``, ``color='w'``, ``color=[1.0, 1.0, 1.0]``, or ``color='#FFFFFF'``. Color will be overridden if scalars are specified."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:27
+msgid "**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:26
+msgid "python:str or numpy.ndarray, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:22
+msgid "Scalars used to \"color\" the mesh.  Accepts a string name of an array that is present on the mesh or an array equal to the number of cells or the number of points in the mesh.  Array should be sized as a single vector. If both ``color`` and ``scalars`` are ``None``, then the active scalars are used."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:32
+msgid "**opacity** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:31
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:31
+msgid "python:float, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:30
+msgid "Opacity of the mesh. If a single float value is given, it will be the global opacity of the mesh and uniformly applied everywhere - should be between 0 and 1.  Default 1.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:50
+msgid "**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:49
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:8
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:12
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:15
+msgid "bool, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:35
+msgid "Smooth mesh surface mesh by taking into account surface normals.  Surface will appear smoother while sharp edges will still look sharp.  Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:2
+msgid "Add points to plotter."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:9
+msgid "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:8
+msgid "numpy.ndarray or pyvista.DataSet"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:8
+msgid "An ``n x 3`` numpy array of points or PyVista dataset with points."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:12
+msgid "Either a string, RGB sequence, or hex color string.  For one of the following."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:15
+msgid "``color='white'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:16
+msgid "``color='w'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "``color=[1.0, 1.0, 1.0]``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "``color='#FFFFFF'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:32
+msgid "**point_size** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:21
+msgid "Point size of any nodes in the dataset plotted. Also applicable when style='points'. Default ``3.0``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:36
+msgid "Add 10 random points to the plotter"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.PlotterITK.background_color:2
+msgid "Return the background color of the plotter."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.PlotterITK.camera_position:2
+msgid "Return camera position of the plotter as a list."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:2
+msgid "Show itkwidgets plotter in cell output."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:9
+msgid "**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:8
+msgid "Plot with the user interface collapsed.  UI can be enabled when plotting.  Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:13
+msgid "**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:12
+msgid "Rotate the camera around the scene.  Default ``False``. Appears to be computationally intensive."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:16
+msgid "**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:16
+msgid "Show the bounding box.  Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:19
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:18
+msgid "python:dict, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:19
+msgid "Additional arguments to pass to ``itkwidgets.Viewer``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Returns"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:36
+msgid ":obj:`itkwidgets.Viewer`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:24
+msgid "``ITKwidgets`` viewer."
+msgstr ""
+
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:4
 msgid "Jupyter Notebook Plotting"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:5
-msgid "Plot with ``pyvista`` interactively within a `Juptyer <https://jupyter.org/>`_ notebook!"
+msgid "Plot with ``pyvista`` interactively within a `Jupyter <https://jupyter.org/>`_ notebook!"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:10
@@ -625,10 +837,8 @@ msgid "panel"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:123
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:127
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:127
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:129
 msgid "Yes"
@@ -682,7 +892,7 @@ msgid "itkwidgets"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:132
-msgid "At the moment, ``itkwidgets`` and ``ipyvtklink`` are incompatible with Jupyterlab 3, and will result in a \"Error displaying widget: model not found\" message from juptyer.  Additionally, all the modules other than ``ipygany`` and ``pythreejs`` require a framebuffer, which can be setup on a headless environment with :func:`pyvista.start_xvfb`. However, on Google Colab, where it's not possible to install system packages, you should stick with a module like ``threejs``, which does not require any server side rendering or framebuffer."
+msgid "At the moment, ``itkwidgets`` and ``ipyvtklink`` are incompatible with Jupyterlab 3, and will result in a \"Error displaying widget: model not found\" message from juptyer.  Additionally, all the modules other than ``ipygany`` and ``pythreejs`` require a framebuffer, which can be set up on a headless environment with :func:`pyvista.start_xvfb`. However, on Google Colab, where it's not possible to install system packages, you should stick with a module like ``threejs``, which does not require any server side rendering or framebuffer."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:141
@@ -701,13 +911,6 @@ msgstr ""
 msgid "Set the plotting backend for a jupyter notebook."
 msgstr ""
 
-#: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:0
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:0
-msgid "Parameters"
-msgstr ""
-
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:52
 msgid "**backend** : :class:`python:str`"
 msgstr ""
@@ -721,11 +924,11 @@ msgid "Jupyter backend to use when plotting.  Must be one of the following:"
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:10
-msgid "``'ipyvtklink'`` : Render remotely and stream the resulting VTK images back to the client.  Supports all VTK methods, but suffers from lag due to remote rendering. Requires that a virtual framebuffer be setup when displaying on a headless server.  Must have ``ipyvtklink`` installed."
+msgid "``'ipyvtklink'`` : Render remotely and stream the resulting VTK images back to the client.  Supports all VTK methods, but suffers from lag due to remote rendering. Requires that a virtual framebuffer be set up when displaying on a headless server.  Must have ``ipyvtklink`` installed."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:16
-msgid "``'panel'`` : Convert the VTK render window to a vtkjs object and then visualize that within jupyterlab. Supports most VTK objects.  Requires that a virtual framebuffer be setup when displaying on a headless server.  Must have ``panel`` installed."
+msgid "``'panel'`` : Convert the VTK render window to a vtkjs object and then visualize that within jupyterlab. Supports most VTK objects.  Requires that a virtual framebuffer be set up when displaying on a headless server.  Must have ``panel`` installed."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:22
@@ -737,17 +940,11 @@ msgid "``'pythreejs'`` : Convert all the meshes into ``pythreejs`` meshes and st
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:34
-msgid "``'static'`` : Display a single static image within the Jupyterlab environment.  Still requires that a virtual framebuffer be setup when displaying on a headless server, but does not require any additional modules to be installed."
+msgid "``'static'`` : Display a single static image within the Jupyterlab environment.  Still requires that a virtual framebuffer be set up when displaying on a headless server, but does not require any additional modules to be installed."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:39
 msgid "``'none'`` : Do not display any plots within jupyterlab, instead display using dedicated VTK render windows.  This will generate nothing on headless servers even with a virtual framebuffer."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/__init__.py:docstring of pyvista.jupyter.set_jupyter_backend:55
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:21
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:35
-msgid "Examples"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:3
@@ -873,56 +1070,52 @@ msgstr ""
 msgid "Using ``ipyvtklink`` with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:7
-msgid "As of version ``0.1.4``, ``ipyvtklink`` does not support Jupyterlab 3.  Attempting to run the following will return a ``Model not found`` error within jupyterlab."
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:11
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
 msgid "``pyvista`` has the ability to display fully featured plots within a JupyterLab environment using ``ipyvtklink``.  This feature works by streaming the current render window to a canvas within JupyterLab and then passing any user actions from the canvas back to the VTK render window."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:17
-msgid "While this isn't an exciting feature when JupyterLab is being run locally, this has huge implications when plotting remotely as you can display any plot (except for those with multiple render windows) from JupyterLab."
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:12
+msgid "While this isn't an exciting feature when JupyterLab is being run locally, this has huge implications when plotting remotely as you can display any plot, with subplots and widgets, from JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:22
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:16
 msgid "For example, both sections of code will display an interactive canvas within JupyterLab:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:38
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:32
 msgid "For convenience, you can enable ``ipyvtklink`` by default with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:47
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:41
 #: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:27
 msgid "Installation"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:42
 msgid "If you're using an Anaconda environment, installation is the quite straightforward:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:56
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
 msgid "Where environment.yml is:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:69
-msgid "On Linux, you can setup your jupyterlab environment with:"
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:62
+msgid "Using pip, you can set up your jupyterlab environment with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:80
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:71
 msgid "Other Considerations"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:81
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:72
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:83
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:74
 msgid "If you do not have GPU acceleration, be sure to start up a virtual framebuffer using ``Xvfb``.  You can either start it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:98
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:89
 msgid "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
 msgstr ""
 
@@ -947,264 +1140,35 @@ msgid "Special thanks to `@thewtex`_ for the `itkwidgets`_ library."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:28
-msgid "To use `PlotterITK` you'll need to install ``itkwidgets>=0.25.2``. Follow the installation steps `here <https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_."
+msgid "To use `PlotterITK` you'll need to install ``itkwidgets>=0.25.2``. Follow the installation steps `here <https://itkwidgets.readthedocs.io/en/latest/quick_start_guide.html>`_."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:31
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:32
 msgid "You can install everything with `pip` if you prefer not using conda, but be sure your juptyerlab is up-to-date.  If you encounter problems, uninstall and reinstall jupyterlab using pip."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:37
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:38
 msgid "Example Plotting with ITKwidgets"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:38
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:39
 msgid "The following example shows how to create a simple plot that shows a simple sphere."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:58
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:59
 msgid "ITKwidgets with pyvista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:61
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:62
 msgid "For convenience, figures can also be plotted using the ``plot_itk`` function:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:76
-msgid "Attributes"
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:78
+msgid "API Reference"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-msgid ":py:obj:`background_color <pyvista.PlotterITK.background_color>`\\"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.PlotterITK.background_color:2
-msgid "Return the background color of the plotter."
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-msgid ":py:obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:79:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.PlotterITK.camera_position:2
-msgid "Return camera position of the plotter as a list."
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:81
-msgid "Methods"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ":py:obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, scalars\\, opacity\\, ...\\]\\)"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:2
-msgid "Add a PyVista/VTK mesh or dataset."
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ":py:obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\, point\\_size\\]\\)"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:2
-msgid "Add points to plotter."
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-msgid ":py:obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\, show\\_bounds\\]\\)"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:84:<autosummary>:1
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:2
-msgid "Show itkwidgets plotter in cell output."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:1
-msgid "Bases: :py:class:`object`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:2
-msgid "ITKwidgets plotter."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:4
-msgid "Used for plotting interactively within a jupyter notebook. Requires ``itkwidgets>=0.25.2``.  For installation see:"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK:7
-msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:4
-msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:12
-msgid "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:11
-msgid "pyvista.DataSet or pyvista.MultiBlock"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:10
-msgid "Any PyVista or VTK mesh is supported. Also, any dataset that :func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:19
-msgid "**color** : :class:`python:str` :term:`python:sequence`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:18
-msgid "python:str python:sequence, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:15
-msgid "Use to make the entire mesh have a single solid color. Either a string, RGB list, or hex color string.  For example: ``color='white'``, ``color='w'``, ``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if scalars are specified."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:27
-msgid "**scalars** : :class:`python:str` or :obj:`numpy.ndarray`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:26
-msgid "python:str or numpy.ndarray, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:22
-msgid "Scalars used to \"color\" the mesh.  Accepts a string name of an array that is present on the mesh or an array equal to the number of cells or the number of points in the mesh.  Array should be sized as a single vector. If both ``color`` and ``scalars`` are ``None``, then the active scalars are used."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:32
-msgid "**opacity** : :class:`python:float`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:31
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:31
-msgid "python:float, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:30
-msgid "Opacity of the mesh. If a single float value is given, it will be the global opacity of the mesh and uniformly applied everywhere - should be between 0 and 1.  Default 1.0."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:50
-msgid "**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:49
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:8
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:12
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:15
-msgid "bool, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_mesh:35
-msgid "Smooth mesh surface mesh by taking into account surface normals.  Surface will appear smoother while sharp edges will still look sharp.  Default ``False``."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:9
-msgid "**points** : :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:8
-msgid "numpy.ndarray or pyvista.DataSet"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:8
-msgid "An ``n x 3`` numpy array of points or PyVista dataset with points."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:18
-msgid "**color** : :class:`python:str` or :term:`python:sequence`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "python:str or python:sequence, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:12
-msgid "Either a string, RGB sequence, or hex color string.  For one of the following."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:15
-msgid "``color='white'``"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:16
-msgid "``color='w'``"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:17
-msgid "``color=[1, 1, 1]``"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:18
-msgid "``color='#FFFFFF'``"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:32
-msgid "**point_size** : :class:`python:float`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:21
-msgid "Point size of any nodes in the dataset plotted. Also applicable when style='points'. Default ``3.0``."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.add_points:36
-msgid "Add 10 random points to the plotter"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:9
-msgid "**ui_collapsed** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:8
-msgid "Plot with the user interface collapsed.  UI can be enabled when plotting.  Default ``False``."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:13
-msgid "**rotate** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:12
-msgid "Rotate the camera around the scene.  Default ``False``. Appears to be computationally intensive."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:16
-msgid "**show_bounds** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:16
-msgid "Show the bounding box.  Default ``False``."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:19
-msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:18
-msgid "python:dict, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:19
-msgid "Additional arguments to pass to ``itkwidgets.Viewer``."
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:0
-msgid "Returns"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:36
-msgid ":obj:`itkwidgets.Viewer`"
-msgstr ""
-
-#: ../../pyvista/pyvista/jupyter/itkplotter.py:docstring of pyvista.jupyter.itkplotter.PlotterITK.show:24
-msgid "``ITKwidgets`` viewer."
+#: ../../pyvista/doc/user-guide/jupyter/itk_plotting.rst:82:<autosummary>:1
+msgid ":py:obj:`pyvista.PlotterITK <pyvista.PlotterITK>`\\ \\(\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/panel.rst:4
@@ -1641,7 +1605,7 @@ msgid "For example, to hard-code points for a `vtk.vtkImageData`_ data structure
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:42
-msgid "As you can see, there is quite a bit of boilerplate that goes into the creation of a simple `vtk.vtkImageData`_ dataset, PyVista provides a much cleaner syntax that is both more readable and intuitive. The equivalent code in pyvista is:"
+msgid "As you can see, there is quite a bit of boilerplate that goes into the creation of a simple `vtk.vtkImageData`_ dataset. PyVista provides much more concise syntax that is more \"Pythonic\". The equivalent code in PyVista is:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:65
@@ -1653,7 +1617,7 @@ msgid "PyVista combines the dimensionality of the data (in the shape of the :cla
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:75
-msgid ":class:`pyvista.UniformGrid` wraps `vtk.vtkImageData`_, just with a better name; they are both containers of evenly spaced points. Your data does not have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like images, values in the dataset are evenly spaced apart like pixels in an image."
+msgid ":class:`pyvista.UniformGrid` wraps `vtk.vtkImageData`_, just with a different name; they are both containers of evenly spaced points. Your data does not have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like images, values in the dataset are evenly spaced apart like pixels in an image."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:81
@@ -1669,7 +1633,7 @@ msgid "Finally, with PyVista, each geometry class contains methods that allow yo
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:124
-msgid "However, with PyVista you simply need:"
+msgid "However, with PyVista you only need:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:154
@@ -1713,7 +1677,7 @@ msgid "Both VTK and PyVista provide representations for their objects."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:238
-msgid "VTK provides a verbose representation of their datatypes that can be accessed via :func:`print`, as the ``__repr__`` (unlike ``__str__``) only provides minimal information about each object:"
+msgid "VTK provides a verbose representation (useful for debugging) of their datatypes that can be accessed via :func:`print`, as the ``__repr__`` (unlike ``__str__``) only provides minimal information about each object:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:246
@@ -1737,19 +1701,19 @@ msgid "In the :class:`collision <pyvista.PolyDataFilters.collision>` filter, we 
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:302
-msgid "Under the hood, the collision filter detects mesh collisions using oriented bounding box (OBB) trees.  For a single collision, this filter is as performant as the VTK counterpart, but when computing multiple collisions with the same meshes, as in the :ref:`collision_example` example, it is more efficient (though less convenient) to use the underlying `vtkCollisionDetectionFilter <https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_, as the OBB tree is computed once for each mesh.  In most cases, pure PyVista is sufficient for most data science, but there are times when you may want to use VTK classes directly."
+msgid "Under the hood, the collision filter detects mesh collisions using oriented bounding box (OBB) trees.  For a single collision, this filter is as performant as the VTK counterpart, but when computing multiple collisions with the same meshes, as in the :ref:`collision_example` example, it is more efficient to use the `vtkCollisionDetectionFilter <https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_, as the OBB tree is computed once for each mesh.  In most cases, pure PyVista is sufficient for most data science, but there are times when you may want to use VTK classes directly."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:313
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:312
 msgid "Note that nothing stops you from using VTK classes and then wrapping the output with PyVista.  For example:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:333
-msgid "In this manner, you can get the \"best of both worlds\" should you need the flexibility of PyVista and the functionality of VTK."
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:332
+msgid "In this manner, you can get the \"best of both worlds\" should you need the flexibility of PyVista and the raw power of VTK."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:337
-msgid "You can use :func:`pyvista.Circle` for a one line replacement of the above VTK code."
+#: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:336
+msgid "You can use :func:`pyvista.Polygon` for a one line replacement of the above VTK code."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:4

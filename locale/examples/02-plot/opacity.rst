@@ -26,11 +26,10 @@ Plot with Opacity
 Plot a mesh's scalar array with an opacity transfer function or opacity mapping
 based on a scalar array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-19
+.. GENERATED FROM PYTHON SOURCE LINES 10-18
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -54,13 +53,16 @@ Global Value
 You can also apply a global opacity value to the mesh by passing a single
 float between 0 and 1 which would enable you to see objects behind the mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-31
+.. GENERATED FROM PYTHON SOURCE LINES 25-34
 
 .. code-block:: default
 
 
     p = pv.Plotter()
-    p.add_mesh(image.contour(), line_width=5,)
+    p.add_mesh(
+        image.contour(),
+        line_width=5,
+    )
     p.add_mesh(mesh, opacity=0.85, color=True)
     p.show()
 
@@ -76,12 +78,12 @@ float between 0 and 1 which would enable you to see objects behind the mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-34
+.. GENERATED FROM PYTHON SOURCE LINES 35-37
 
 Note that you can specify ``use_transparency=True`` to convert opacities to
 transparencies in any of the following examples.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-53
+.. GENERATED FROM PYTHON SOURCE LINES 40-56
 
 Transfer Functions
 ++++++++++++++++++
@@ -100,7 +102,7 @@ Opacity transfer functions are:
 - ``'sigmoid'``: vary (increase) opacity on a sigmoidal s-curve across the plotted scalar range from low to high
 - ``'sigmoid_r'``: vary (increase) opacity on a sigmoidal s-curve across the plotted scalar range from high to low
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-57
+.. GENERATED FROM PYTHON SOURCE LINES 56-60
 
 .. code-block:: default
 
@@ -120,7 +122,7 @@ Opacity transfer functions are:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-62
+.. GENERATED FROM PYTHON SOURCE LINES 61-65
 
 .. code-block:: default
 
@@ -140,13 +142,13 @@ Opacity transfer functions are:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-66
+.. GENERATED FROM PYTHON SOURCE LINES 66-69
 
 It's also possible to use your own transfer function that will be linearly
 mapped to the scalar array plotted. For example, we can create an opacity
 mapping as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-68
+.. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 .. code-block:: default
 
@@ -159,7 +161,7 @@ mapping as:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-74
+.. GENERATED FROM PYTHON SOURCE LINES 72-77
 
 When given a minimized opacity mapping like that above, PyVista interpolates
 it across a range of how many colors are shown when mapping the scalars.
@@ -167,13 +169,13 @@ If ``scipy`` is available, then a quadratic interpolation is used -
 otherwise, a simple linear interpolation is used.
 Curious what that opacity transfer function looks like? You can fetch it:
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-86
+.. GENERATED FROM PYTHON SOURCE LINES 77-89
 
 .. code-block:: default
 
 
     # Have PyVista interpolate the transfer function
-    tf = pv.opacity_transfer_function(opacity, 256).astype(float) / 255.
+    tf = pv.opacity_transfer_function(opacity, 256).astype(float) / 255.0
 
     import matplotlib.pyplot as plt
 
@@ -195,13 +197,13 @@ Curious what that opacity transfer function looks like? You can fetch it:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-90
+.. GENERATED FROM PYTHON SOURCE LINES 90-93
 
 That opacity mapping will have an opacity of 0.0 at the minimum scalar range,
 a value or 0.9 at the middle of the scalar range, and a value of 0.3 at the
 maximum of the scalar range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-93
+.. GENERATED FROM PYTHON SOURCE LINES 93-96
 
 .. code-block:: default
 
@@ -220,12 +222,12 @@ maximum of the scalar range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-96
+.. GENERATED FROM PYTHON SOURCE LINES 97-99
 
 Opacity mapping is often useful when plotting DICOM images. For example,
 download the sample knee DICOM image:
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-98
+.. GENERATED FROM PYTHON SOURCE LINES 99-101
 
 .. code-block:: default
 
@@ -238,11 +240,11 @@ download the sample knee DICOM image:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-100
+.. GENERATED FROM PYTHON SOURCE LINES 102-103
 
 And here we inspect the DICOM image with a few different opacity mappings:
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-122
+.. GENERATED FROM PYTHON SOURCE LINES 103-122
 
 .. code-block:: default
 
@@ -252,18 +254,15 @@ And here we inspect the DICOM image with a few different opacity mappings:
     p.view_xy()
 
     p.subplot(0, 1)
-    p.add_mesh(knee, cmap="bone", opacity="linear",
-               scalar_bar_args={'title': "Linear Opacity"})
+    p.add_mesh(knee, cmap="bone", opacity="linear", scalar_bar_args={'title': "Linear Opacity"})
     p.view_xy()
 
     p.subplot(1, 0)
-    p.add_mesh(knee, cmap="bone", opacity="sigmoid",
-               scalar_bar_args={'title': "Sigmoidal Opacity"})
+    p.add_mesh(knee, cmap="bone", opacity="sigmoid", scalar_bar_args={'title': "Sigmoidal Opacity"})
     p.view_xy()
 
     p.subplot(1, 1)
-    p.add_mesh(knee, cmap="bone", opacity="geom_r",
-               scalar_bar_args={'title': "Log Scale Opacity"})
+    p.add_mesh(knee, cmap="bone", opacity="geom_r", scalar_bar_args={'title': "Log Scale Opacity"})
     p.view_xy()
 
     p.show()
@@ -326,7 +325,7 @@ Also, since the opacity array must be between 0 and 1, we normalize
 the temperature variance array by the maximum value.  That way high
 variance will be completely transparent.
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-162
+.. GENERATED FROM PYTHON SOURCE LINES 145-164
 
 .. code-block:: default
 
@@ -337,15 +336,17 @@ variance will be completely transparent.
 
     p.subplot(0, 0)
     p.add_text('Opacity by Array')
-    p.add_mesh(contours.copy(), scalars='Temperature',
-               opacity='Temperature_var',
-               use_transparency=True,
-               cmap='bwr')
+    p.add_mesh(
+        contours.copy(),
+        scalars='Temperature',
+        opacity='Temperature_var',
+        use_transparency=True,
+        cmap='bwr',
+    )
 
     p.subplot(0, 1)
     p.add_text('No Opacity')
-    p.add_mesh(contours, scalars='Temperature',
-               cmap='bwr')
+    p.add_mesh(contours, scalars='Temperature', cmap='bwr')
     p.show()
 
 
@@ -362,7 +363,7 @@ variance will be completely transparent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.531 seconds)
+   **Total running time of the script:** ( 0 minutes  9.563 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_opacity.py:

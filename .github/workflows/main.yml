@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: Setup Python
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v4
       with:
         python-version: 3.8
     - name: Get Job URL
@@ -23,25 +23,24 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         job_name: script
     - name: checkout with submodule
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         fetch-depth: 0
         submodules: true
     - name: Setup SSH
-      uses: MrSquaare/ssh-setup-action@v1
+      uses: MrSquaare/ssh-setup-action@v2
       with:
         host: github.com
         private-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: install
       run: |
+        git submodule update --remote
         sudo apt-get update
         sudo apt-get install -y --no-install-recommends python3-setuptools
         sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
         sudo apt-get install -y --no-install-recommends python3-venv
         sudo apt-get install -y --no-install-recommends libgl1-mesa-glx
         sudo apt-get install -y --no-install-recommends python3-tk pandoc
-        python3 -m venv /home/runner/work/.venv
-        source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
         curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
@@ -52,7 +51,6 @@ jobs:
         SPHINXINTL_TRANSIFEX_PROJECT_NAME: pyvista-doc
         TX_TOKEN: ${{ secrets.TX_TOKEN }}
       run: |
-        source /home/runner/work/.venv/bin/activate
         set -x
         git submodule update --remote
         export DISPLAY=:99.0
@@ -71,7 +69,6 @@ jobs:
         ls ./pyvista/doc/images
         rm -Rf ./locale/images
         mv ./pyvista/doc/images ./locale
-        deactivate
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
       env:

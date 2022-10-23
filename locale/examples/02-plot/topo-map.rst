@@ -27,11 +27,10 @@ This is very similar to the :ref:`ref_texture_example` example except it is
 focused on plotting aerial imagery from a GeoTIFF on top of some topography
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-25
+.. GENERATED FROM PYTHON SOURCE LINES 11-24
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
 
     import pyvista as pv
     from pyvista import examples
@@ -82,7 +81,7 @@ Let's inspect the imagery that we just loaded
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7f7f41de2f10>
+    <matplotlib.image.AxesImage object at 0x7f528f50c130>
 
 
 
@@ -185,7 +184,7 @@ And here is a 3D perspective!
 We could also display the entire region by extracting the surrounding region
 and plotting the texture mapped local topography and the outside area
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-70
+.. GENERATED FROM PYTHON SOURCE LINES 57-72
 
 .. code-block:: default
 
@@ -198,9 +197,11 @@ and plotting the texture mapped local topography and the outside area
     p.add_mesh(local, texture=topo_map)
     p.add_mesh(surrounding, color="white")
     p.enable_eye_dome_lighting()
-    p.camera_position = [(1831100., 5642142., 8168.),
-                         (1820841., 5648745., 1104.),
-                         (-0.435, 0.248, 0.865)]
+    p.camera_position = [
+        (1831100.0, 5642142.0, 8168.0),
+        (1820841.0, 5648745.0, 1104.0),
+        (-0.435, 0.248, 0.865),
+    ]
     p.show()
 
 
@@ -217,7 +218,7 @@ and plotting the texture mapped local topography and the outside area
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  21.574 seconds)
+   **Total running time of the script:** ( 0 minutes  17.127 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:

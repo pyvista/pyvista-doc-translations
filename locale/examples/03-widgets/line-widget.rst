@@ -24,8 +24,8 @@ Line Widget
 ~~~~~~~~~~~
 
 The line widget can be enabled and disabled by the
-:func:`pyvista.WidgetHelper.add_line_widget` and
-:func:`pyvista.WidgetHelper.clear_line_widgets` methods respectively.
+:func:`pyvista.Plotter.add_line_widget` and
+:func:`pyvista.Plotter.clear_line_widgets` methods respectively.
 Unfortunately, PyVista does not have any helper methods to utilize this
 widget, so it is necessary to pass a custom callback method.
 
@@ -58,7 +58,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-48
+.. GENERATED FROM PYTHON SOURCE LINES 32-49
 
 .. code-block:: default
 
@@ -68,12 +68,13 @@ the ``name`` argument in ``add_mesh``.
     p.add_mesh(mesh.outline(), color='black')
     p.add_axes()
 
+
     def simulate(pointa, pointb):
-        streamlines = mesh.streamlines(n_points=10, max_steps=100,
-                                       pointa=pointa, pointb=pointb,
-                                       integration_direction='forward')
-        p.add_mesh(streamlines, name='streamlines', line_width=5,
-                   render_lines_as_tubes=True, clim=clim)
+        streamlines = mesh.streamlines(
+            n_points=10, max_steps=100, pointa=pointa, pointb=pointb, integration_direction='forward'
+        )
+        p.add_mesh(streamlines, name='streamlines', line_width=5, render_lines_as_tubes=True, clim=clim)
+
 
     p.add_line_widget(callback=simulate, use_vertices=True)
     p.show()
@@ -90,7 +91,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 50-53
 
 And here is a screen capture of a user interacting with this
 
@@ -99,7 +100,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.326 seconds)
+   **Total running time of the script:** ( 0 minutes  1.797 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:

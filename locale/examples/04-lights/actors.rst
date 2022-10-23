@@ -31,11 +31,10 @@ so they can be visualized using a cone.
 This is exactly the purpose of a ``vtk.vtkLightActor``, the
 functionality of which can be enabled for spotlights:
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-44
+.. GENERATED FROM PYTHON SOURCE LINES 15-42
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 1
     import numpy as np
 
     import pyvista as pv
@@ -45,8 +44,7 @@ functionality of which can be enabled for spotlights:
     cow.rotate_x(90, inplace=True)
     plotter = pv.Plotter(lighting='none', window_size=(1000, 1000))
     plotter.add_mesh(cow, color='white')
-    floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]),
-                     i_size=30, j_size=25)
+    floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]), i_size=30, j_size=25)
     plotter.add_mesh(floor, color='green')
 
     UFO = pv.Light(position=(0, 0, 10), focal_point=(0, 0, 0), color='white')
@@ -76,12 +74,12 @@ functionality of which can be enabled for spotlights:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-47
+.. GENERATED FROM PYTHON SOURCE LINES 44-46
 
 Light actors can be very useful when designing complex scenes where
 spotlights are involved in lighting.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-69
+.. GENERATED FROM PYTHON SOURCE LINES 46-68
 
 .. code-block:: default
 
@@ -90,7 +88,7 @@ spotlights are involved in lighting.
     plane = pv.Plane(i_size=4, j_size=4)
     plotter.add_mesh(plane, color='white')
 
-    rot120 = np.array([[-0.5, -np.sqrt(3)/2, 0], [np.sqrt(3)/2, -0.5, 0], [0, 0, 1]])
+    rot120 = np.array([[-0.5, -np.sqrt(3) / 2, 0], [np.sqrt(3) / 2, -0.5, 0], [0, 0, 1]])
 
     position = (-1.5, -1.5, 3)
     focus = (-0.5, -0.5, 0)
@@ -119,7 +117,7 @@ spotlights are involved in lighting.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-76
+.. GENERATED FROM PYTHON SOURCE LINES 69-75
 
 One thing to watch out for is that the light actors are represented such that
 their cone has a fixed height. This implies that for very large cone angles
@@ -128,15 +126,14 @@ camera position before rendering is usually a good idea. Increasing the first
 example's cone angle and omitting the manual camera positioning exemplifies
 the problem:
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-92
+.. GENERATED FROM PYTHON SOURCE LINES 75-90
 
 .. code-block:: default
 
 
     plotter = pv.Plotter(lighting='none')
     plotter.add_mesh(cow, color='white')
-    floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]),
-                     i_size=30, j_size=25)
+    floor = pv.Plane(center=(*cow.center[:2], cow.bounds[-2]), i_size=30, j_size=25)
     plotter.add_mesh(floor, color='green')
 
     UFO = pv.Light(position=(0, 0, 10), focal_point=(0, 0, 0), color='white')
@@ -163,7 +160,7 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.620 seconds)
+   **Total running time of the script:** ( 0 minutes  1.977 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

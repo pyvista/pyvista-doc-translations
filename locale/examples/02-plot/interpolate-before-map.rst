@@ -18,24 +18,26 @@
 .. _sphx_glr_examples_02-plot_interpolate-before-map.py:
 
 
+.. _interpolate_before_mapping_example:
+
 Interpolate Before Mapping
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``add_mesh`` function has an ``interpolate_before_map`` argument - this
-affects the way scalar data is visualized with colors.
-The effect can of this can vary depending on the dataset's topology and the
-chosen colormap.
+The :func:`add_mesh <pyvista.Plotter.add_mesh>` method has an
+``interpolate_before_map`` argument that affects the way scalar data is
+visualized with colors.  The effect of this can vary depending on the
+dataset's topology and the chosen colormap.
 
 This example serves to demo the difference and why we've chosen to enable this
 by default.
 
-For more details, please see `this blog post <https://blog.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
+For more details, please see `What is InterpolateScalarsBeforeMapping in VTK?
+<https://www.kitware.com/what-is-interpolatescalarsbeforemapping-in-vtk/>`_
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+.. GENERATED FROM PYTHON SOURCE LINES 19-21
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
 
 
@@ -45,7 +47,7 @@ For more details, please see `this blog post <https://blog.kitware.com/what-is-i
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-33
+.. GENERATED FROM PYTHON SOURCE LINES 23-37
 
 Meshes are colored by the data on their nodes or cells - when coloring a mesh
 by data on its nodes, the values must be interpolated across the faces of
@@ -62,7 +64,7 @@ colors.
 
 So lets take a look at the difference:
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-53
+.. GENERATED FROM PYTHON SOURCE LINES 37-59
 
 .. code-block:: default
 
@@ -74,40 +76,33 @@ So lets take a look at the difference:
     dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True)
 
     p = pv.Plotter(shape=(1, 2))
-    p.add_mesh(cyl, interpolate_before_map=False,
-               scalar_bar_args={'title': 'Elevation - not interpolated'},
-               **dargs)
+    p.add_mesh(
+        cyl,
+        interpolate_before_map=False,
+        scalar_bar_args={'title': 'Elevation - not interpolated'},
+        **dargs,
+    )
     p.subplot(0, 1)
-    p.add_mesh(cyl, interpolate_before_map=True,
-               scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
+    p.add_mesh(
+        cyl, interpolate_before_map=True, scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs
+    )
     p.link_views()
-    p.camera_position = [(-1.67, -5.10, 2.06),
-                         (0.0, 0.0, 0.0),
-                         (0.00, 0.37, 0.93)]
+    p.camera_position = [(-1.67, -5.10, 2.06), (0.0, 0.0, 0.0), (0.00, 0.37, 0.93)]
     p.show()
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
-    :alt: interpolate before map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1.67, -5.1, 2.06),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.36966744887673536, 0.9291641282577402)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
+   :alt: interpolate before map
+   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
 Shown in the figure above, when not interpolating the scalars before mapping,
 the colors (RGB values, not scalars) are interpolated between the vertices by
@@ -116,50 +111,42 @@ accurate.
 
 The same interpolation effect occurs for wireframe visualization too:
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-78
+.. GENERATED FROM PYTHON SOURCE LINES 66-85
 
 .. code-block:: default
 
 
     # Common display argument to make sure all else is constant
-    dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True,
-                 style='wireframe')
+    dargs = dict(scalars='Elevation', cmap='rainbow', show_edges=True, style='wireframe')
 
     p = pv.Plotter(shape=(1, 2))
-    p.add_mesh(cyl, interpolate_before_map=False,
-               scalar_bar_args={'title': 'Elevation - not interpolated'},
-               **dargs)
+    p.add_mesh(
+        cyl,
+        interpolate_before_map=False,
+        scalar_bar_args={'title': 'Elevation - not interpolated'},
+        **dargs,
+    )
     p.subplot(0, 1)
-    p.add_mesh(cyl, interpolate_before_map=True,
-               scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs)
+    p.add_mesh(
+        cyl, interpolate_before_map=True, scalar_bar_args={'title': 'Elevation - interpolated'}, **dargs
+    )
     p.link_views()
-    p.camera_position = [(-1.67, -5.10, 2.06),
-                         (0.0, 0.0, 0.0),
-                         (0.00, 0.37, 0.93)]
+    p.camera_position = [(-1.67, -5.10, 2.06), (0.0, 0.0, 0.0), (0.00, 0.37, 0.93)]
     p.show()
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
-    :alt: interpolate before map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1.67, -5.1, 2.06),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.36966744887673536, 0.9291641282577402)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
+   :alt: interpolate before map
+   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-87
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 86-94
 
 The cylinder mesh above is a great example dataset for this as it has a wide
 spread between the vertices (points are only at the top and bottom of the
@@ -170,7 +157,7 @@ color interpolating are harder to notice. Let's take a look at a wavelet
 example and try to figure out how the ``interpolate_before_map`` option
 affects its rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-104
+.. GENERATED FROM PYTHON SOURCE LINES 94-117
 
 .. code-block:: default
 
@@ -180,39 +167,36 @@ affects its rendering.
     dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True)
 
     p = pv.Plotter(shape=(1, 2))
-    p.add_mesh(wavelet, interpolate_before_map=False,
-               scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+    p.add_mesh(
+        wavelet,
+        interpolate_before_map=False,
+        scalar_bar_args={'title': 'RTData - not interpolated'},
+        **dargs,
+    )
     p.subplot(0, 1)
-    p.add_mesh(wavelet, interpolate_before_map=True,
-               scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
+    p.add_mesh(
+        wavelet,
+        interpolate_before_map=True,
+        scalar_bar_args={'title': 'RTData - interpolated'},
+        **dargs,
+    )
     p.link_views()
-    p.camera_position = [(55., 16, 31),
-                         (-5.0, 0.0, 0.0),
-                         (-0.22, 0.97, -0.09)]
+    p.camera_position = [(55.0, 16, 31), (-5.0, 0.0, 0.0), (-0.22, 0.97, -0.09)]
     p.show()
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
-    :alt: interpolate before map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(55.0, 16.0, 31.0),
-     (-5.0, 0.0, 0.0),
-     (-0.22028655891110546, 0.971263464289874, -0.09011722864545223)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
+   :alt: interpolate before map
+   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-110
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 118-123
 
 This time is pretty difficult to notice the differences - they are there,
 subtle, but present. The differences become more apparent when we decrease
@@ -220,7 +204,7 @@ the number of colors in colormap.
 Let's take a look at the differences when using eight discrete colors via
 the ``n_colors`` argument:
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-125
+.. GENERATED FROM PYTHON SOURCE LINES 123-144
 
 .. code-block:: default
 
@@ -228,39 +212,36 @@ the ``n_colors`` argument:
     dargs = dict(scalars='RTData', cmap='rainbow', show_edges=True, n_colors=8)
 
     p = pv.Plotter(shape=(1, 2))
-    p.add_mesh(wavelet, interpolate_before_map=False,
-               scalar_bar_args={'title': 'RTData - not interpolated'}, **dargs)
+    p.add_mesh(
+        wavelet,
+        interpolate_before_map=False,
+        scalar_bar_args={'title': 'RTData - not interpolated'},
+        **dargs,
+    )
     p.subplot(0, 1)
-    p.add_mesh(wavelet, interpolate_before_map=True,
-               scalar_bar_args={'title': 'RTData - interpolated'}, **dargs)
+    p.add_mesh(
+        wavelet,
+        interpolate_before_map=True,
+        scalar_bar_args={'title': 'RTData - interpolated'},
+        **dargs,
+    )
     p.link_views()
-    p.camera_position = [(55., 16, 31),
-                         (-5.0, 0.0, 0.0),
-                         (-0.22, 0.97, -0.09)]
+    p.camera_position = [(55.0, 16, 31), (-5.0, 0.0, 0.0), (-0.22, 0.97, -0.09)]
     p.show()
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
-    :alt: interpolate before map
-    :class: sphx-glr-single-img
-
-
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(55.0, 16.0, 31.0),
-     (-5.0, 0.0, 0.0),
-     (-0.22028655891110546, 0.971263464289874, -0.09011722864545223)]
+.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
+   :alt: interpolate before map
+   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
+   :class: sphx-glr-single-img
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 126-136
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 145-155
 
 Left, ``interpolate_before_map`` OFF.  Right, ``interpolate_before_map`` ON.
 
@@ -276,28 +257,23 @@ flag to ``True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.611 seconds)
+   **Total running time of the script:** ( 0 minutes  2.208 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_interpolate-before-map.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: interpolate-before-map.py <interpolate-before-map.py>`
 
-     :download:`Download Python source code: interpolate-before-map.py <interpolate-before-map.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: interpolate-before-map.ipynb <interpolate-before-map.ipynb>`
+      :download:`Download Jupyter notebook: interpolate-before-map.ipynb <interpolate-before-map.ipynb>`
 
 
 .. only:: html

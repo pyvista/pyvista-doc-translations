@@ -51,7 +51,7 @@ data directory.
 
 .. code-block:: default
 
-    saved_file, _ = examples.downloads._download_file("dolfin_fine.xml")
+    saved_file = examples.download_file("dolfin_fine.xml")
     print(saved_file)
 
 
@@ -60,11 +60,9 @@ data directory.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /home/runner/.local/share/pyvista/examples/dolfin_fine.xml
+    /home/runner/.cache/pyvista_3/dolfin_fine.xml
 
 
 
@@ -120,49 +118,35 @@ Now we can do stuff with that Dolfin mesh!
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_read-dolfin_001.png
-    :alt: read dolfin
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_read-dolfin_001.png
+   :alt: read dolfin
+   :srcset: /examples/00-load/images/sphx_glr_read-dolfin_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(0.5, 0.5, 2.7320508075688776),
-     (0.5, 0.5, 0.0),
-     (0.0, 1.0, 0.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.319 seconds)
+   **Total running time of the script:** ( 0 minutes  0.718 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-dolfin.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: read-dolfin.py <read-dolfin.py>`
 
-     :download:`Download Python source code: read-dolfin.py <read-dolfin.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: read-dolfin.ipynb <read-dolfin.ipynb>`
+      :download:`Download Jupyter notebook: read-dolfin.ipynb <read-dolfin.ipynb>`
 
 
 .. only:: html

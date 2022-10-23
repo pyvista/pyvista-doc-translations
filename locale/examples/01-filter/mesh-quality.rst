@@ -29,7 +29,7 @@ Here we will use the :func:`pyvista.DataSetFilters.compute_cell_quality` filter
 to compute the cell qualities. For a full list of the various quality metrics
 available, please refer to the documentation for that filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-21
+.. GENERATED FROM PYTHON SOURCE LINES 13-23
 
 .. code-block:: default
 
@@ -37,9 +37,11 @@ available, please refer to the documentation for that filter.
 
     mesh = examples.download_cow().triangulate().decimate(0.7)
 
-    cpos = [(10.10963531890468, 4.61130688407898, -4.503884867626516),
-     (1.2896420468715433, -0.055387528972708225, 1.1228250502811408),
-     (-0.2970769821136617, 0.9100381451936025, 0.2890948650371137)]
+    cpos = [
+        (10.10963531890468, 4.61130688407898, -4.503884867626516),
+        (1.2896420468715433, -0.055387528972708225, 1.1228250502811408),
+        (-0.2970769821136617, 0.9100381451936025, 0.2890948650371137),
+    ]
 
 
 
@@ -48,11 +50,11 @@ available, please refer to the documentation for that filter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-23
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Compute the cell quality. Note that there are many different quality measures
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-26
+.. GENERATED FROM PYTHON SOURCE LINES 25-28
 
 .. code-block:: default
 
@@ -89,7 +91,7 @@ Compute the cell quality. Note that there are many different quality measures
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-28
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 .. code-block:: default
 
@@ -109,7 +111,7 @@ Compute the cell quality. Note that there are many different quality measures
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.834 seconds)
+   **Total running time of the script:** ( 0 minutes  0.550 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_mesh-quality.py:

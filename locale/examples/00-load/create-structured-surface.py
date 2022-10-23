@@ -23,7 +23,7 @@ from pyvista import examples
 x = np.arange(-10, 10, 0.25)
 y = np.arange(-10, 10, 0.25)
 x, y = np.meshgrid(x, y)
-r = np.sqrt(x ** 2 + y ** 2)
+r = np.sqrt(x**2 + y**2)
 z = np.sin(r)
 
 ###############################################################################
@@ -39,7 +39,7 @@ grid.plot()
 grid.plot_curvature(clim=[-1, 1])
 
 ###############################################################################
-# Generating a structured grid is a one liner in this module, and the points
+# Generating a structured grid is a one-liner in this module, and the points
 # from the resulting surface can be accessed as a NumPy array:
 
 grid.points
@@ -143,7 +143,7 @@ struct.plot(show_edges=True)
 ###############################################################################
 top = struct.points.copy()
 bottom = struct.points.copy()
-bottom[:,-1] = -10.0 # Wherever you want the plane
+bottom[:, -1] = -10.0  # Wherever you want the plane
 
 vol = pv.StructuredGrid()
 vol.points = np.vstack((top, bottom))

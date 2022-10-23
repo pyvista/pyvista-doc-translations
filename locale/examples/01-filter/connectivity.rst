@@ -27,11 +27,10 @@ Use the connectivity filter to remove noisy isosurfaces.
 
 This example is very similar to `this VTK example <https://kitware.github.io/vtk-examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-14
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -46,15 +45,13 @@ This example is very similar to `this VTK example <https://kitware.github.io/vtk
 
 Load a dataset that has noisy isosurfaces
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-29
+.. GENERATED FROM PYTHON SOURCE LINES 17-27
 
 .. code-block:: default
 
     mesh = examples.download_pine_roots()
 
-    cpos = [(40.6018, -280.533, 47.0172),
-            (40.6018, 37.2813, 50.1953),
-            (0.0, 0.0, 1.0)]
+    cpos = [(40.6018, -280.533, 47.0172), (40.6018, 37.2813, 50.1953), (0.0, 0.0, 1.0)]
 
     # Plot the raw data
     p = pv.Plotter()
@@ -74,7 +71,7 @@ Load a dataset that has noisy isosurfaces
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-35
+.. GENERATED FROM PYTHON SOURCE LINES 28-33
 
 The mesh plotted above is very noisy. We can extract the largest connected
 isosurface in that mesh using the :func:`pyvista.DataSetFilters.connectivity`
@@ -82,7 +79,7 @@ filter and passing ``largest=True`` to the ``connectivity``
 filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 (both are equivalent).
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-45
+.. GENERATED FROM PYTHON SOURCE LINES 33-43
 
 .. code-block:: default
 
@@ -111,7 +108,7 @@ filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.879 seconds)
+   **Total running time of the script:** ( 0 minutes  2.944 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_connectivity.py:

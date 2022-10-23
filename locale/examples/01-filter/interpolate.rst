@@ -26,11 +26,10 @@ Interpolating
 Interpolate one mesh's point/cell arrays onto another mesh's nodes using a
 Gaussian Kernel.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-13
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 4
     import pyvista as pv
     from pyvista import examples
 
@@ -150,14 +149,16 @@ Create the interpolation grid around the sparse data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-73
+.. GENERATED FROM PYTHON SOURCE LINES 62-75
 
 .. code-block:: default
 
-    dargs = dict(cmap="coolwarm", clim=[0,300], scalars="temperature (C)")
-    cpos = [(364280.5723737897, 4285326.164400684, 14093.431895014139),
-     (337748.7217949739, 4261154.45054595, -637.1092549935128),
-     (-0.29629216102673206, -0.23840196609932093, 0.9248651025279784)]
+    dargs = dict(cmap="coolwarm", clim=[0, 300], scalars="temperature (C)")
+    cpos = [
+        (364280.5723737897, 4285326.164400684, 14093.431895014139),
+        (337748.7217949739, 4261154.45054595, -637.1092549935128),
+        (-0.29629216102673206, -0.23840196609932093, 0.9248651025279784),
+    ]
 
     p = pv.Plotter()
     p.add_mesh(grid.outline(), color='k')
@@ -177,11 +178,11 @@ Create the interpolation grid around the sparse data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-75
+.. GENERATED FROM PYTHON SOURCE LINES 76-77
 
 Run an interpolation
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-77
+.. GENERATED FROM PYTHON SOURCE LINES 77-79
 
 .. code-block:: default
 
@@ -194,20 +195,20 @@ Run an interpolation
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-79
+.. GENERATED FROM PYTHON SOURCE LINES 80-81
 
 Visualize the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-89
+.. GENERATED FROM PYTHON SOURCE LINES 81-91
 
 .. code-block:: default
 
-    vol_opac = [0, 0, .2, 0.2, 0.5, 0.5]
+    vol_opac = [0, 0, 0.2, 0.2, 0.5, 0.5]
 
-    p = pv.Plotter(shape=(1,2), window_size=[1024*3, 768*2])
+    p = pv.Plotter(shape=(1, 2), window_size=[1024 * 3, 768 * 2])
     p.add_volume(interp, opacity=vol_opac, **dargs)
     p.add_mesh(probes, render_points_as_spheres=True, point_size=10, **dargs)
-    p.subplot(0,1)
+    p.subplot(0, 1)
     p.add_mesh(interp.contour(5), opacity=0.5, **dargs)
     p.add_mesh(probes, render_points_as_spheres=True, point_size=10, **dargs)
     p.link_views()
@@ -227,7 +228,7 @@ Visualize the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.859 seconds)
+   **Total running time of the script:** ( 0 minutes  9.628 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:

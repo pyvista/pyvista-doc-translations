@@ -28,7 +28,7 @@ Create a voxel model (like legos) of a closed surface or volumetric mesh.
 This example also demonstrates how to compute an implicit distance from a
 bounding :class:`pyvista.PolyData` surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-24
+.. GENERATED FROM PYTHON SOURCE LINES 13-23
 
 .. code-block:: default
 
@@ -36,7 +36,6 @@ bounding :class:`pyvista.PolyData` surface.
 
     import pyvista as pv
 
-    # sphinx_gallery_thumbnail_number = 2
     from pyvista import examples
 
     # Load a surface to voxelize
@@ -67,13 +66,15 @@ bounding :class:`pyvista.PolyData` surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-32
+.. GENERATED FROM PYTHON SOURCE LINES 25-34
 
 .. code-block:: default
 
-    cpos = [(7.656346967151718, -9.802071079151158, -11.021236183314311),
-     (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
-     (-0.6279216753504941, -0.7513057097368635, 0.20311105371647392)]
+    cpos = [
+        (7.656346967151718, -9.802071079151158, -11.021236183314311),
+        (0.2224512272564101, -0.4594554282112895, 0.5549738359311297),
+        (-0.6279216753504941, -0.7513057097368635, 0.20311105371647392),
+    ]
 
     surface.plot(cpos=cpos, opacity=0.75)
 
@@ -90,15 +91,15 @@ bounding :class:`pyvista.PolyData` surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-34
+.. GENERATED FROM PYTHON SOURCE LINES 35-36
 
 Create a voxel model of the bounding surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-42
+.. GENERATED FROM PYTHON SOURCE LINES 36-44
 
 .. code-block:: default
 
-    voxels = pv.voxelize(surface, density=surface.length/200)
+    voxels = pv.voxelize(surface, density=surface.length / 200)
 
     p = pv.Plotter()
     p.add_mesh(voxels, color=True, show_edges=True, opacity=0.5)
@@ -118,17 +119,17 @@ Create a voxel model of the bounding surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-46
+.. GENERATED FROM PYTHON SOURCE LINES 45-48
 
 We could even add a scalar field to that new voxel model in case we
 wanted to create grids for modelling. In this case, let's add a scalar field
 for bone density noting:
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 .. code-block:: default
 
-    voxels["density"] = np.full(voxels.n_cells, 3.65) # g/cc
+    voxels["density"] = np.full(voxels.n_cells, 3.65)  # g/cc
     voxels
 
 
@@ -142,8 +143,8 @@ for bone density noting:
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>93041</td></tr>
-    <tr><td>N Points</td><td>113192</td></tr>
+    <tr><td>N Cells</td><td>93038</td></tr>
+    <tr><td>N Points</td><td>113188</td></tr>
     <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
     <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
@@ -163,7 +164,7 @@ for bone density noting:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-53
+.. GENERATED FROM PYTHON SOURCE LINES 52-55
 
 .. code-block:: default
 
@@ -182,12 +183,12 @@ for bone density noting:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-56
+.. GENERATED FROM PYTHON SOURCE LINES 56-58
 
 A constant scalar field is kind of boring, so let's get a little fancier by
 added a scalar field that varies by the distance from the bounding surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-59
+.. GENERATED FROM PYTHON SOURCE LINES 58-61
 
 .. code-block:: default
 
@@ -205,8 +206,8 @@ added a scalar field that varies by the distance from the bounding surface.
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>93041</td></tr>
-    <tr><td>N Points</td><td>113192</td></tr>
+    <tr><td>N Cells</td><td>93038</td></tr>
+    <tr><td>N Points</td><td>113188</td></tr>
     <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
     <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
@@ -227,7 +228,7 @@ added a scalar field that varies by the distance from the bounding surface.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-66
+.. GENERATED FROM PYTHON SOURCE LINES 62-68
 
 .. code-block:: default
 
@@ -252,7 +253,7 @@ added a scalar field that varies by the distance from the bounding surface.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.849 seconds)
+   **Total running time of the script:** ( 0 minutes  12.498 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_voxelize.py:

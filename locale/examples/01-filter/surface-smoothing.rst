@@ -30,7 +30,7 @@ Smoothing rough edges of a surface mesh
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 4
+    import pyvista as pv
     from pyvista import examples
 
 
@@ -40,7 +40,7 @@ Smoothing rough edges of a surface mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-20
+.. GENERATED FROM PYTHON SOURCE LINES 15-21
 
 Suppose you extract a volumetric subset of a dataset that has roughly defined
 edges. Perhaps you'd like a smooth representation of that model region. This
@@ -49,7 +49,7 @@ a :func:`pyvista.PolyData.smooth` filter.
 
 The below code snippet loads a sample roughly edged volumetric dataset:
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-30
+.. GENERATED FROM PYTHON SOURCE LINES 21-31
 
 .. code-block:: default
 
@@ -61,7 +61,7 @@ The below code snippet loads a sample roughly edged volumetric dataset:
     data = examples.load_uniform()
     # Extract a rugged volume
     vol = data.threshold_percent(30, invert=1)
-    vol.plot(show_edges=True, cpos=cpos)
+    vol.plot(show_edges=True, cpos=cpos, show_scalar_bar=False)
 
 
 
@@ -75,13 +75,13 @@ The below code snippet loads a sample roughly edged volumetric dataset:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+.. GENERATED FROM PYTHON SOURCE LINES 32-35
 
 Extract the outer surface of the volume using the
 :func:`pyvista.DataSetFilters.extract_geometry` filter and then apply the
 smoothing filter:
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-41
+.. GENERATED FROM PYTHON SOURCE LINES 35-43
 
 .. code-block:: default
 
@@ -90,7 +90,8 @@ smoothing filter:
     surf = vol.extract_geometry()
     # Smooth the surface
     smooth = surf.smooth()
-    smooth.plot(show_edges=True, cpos=cpos)
+    smooth.plot(show_edges=True, cpos=cpos, show_scalar_bar=False)
+
 
 
 
@@ -104,19 +105,20 @@ smoothing filter:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-44
+.. GENERATED FROM PYTHON SOURCE LINES 44-46
 
 Not smooth enough? Try increasing the number of iterations for the Laplacian
 smoothing algorithm:
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-49
+.. GENERATED FROM PYTHON SOURCE LINES 46-52
 
 .. code-block:: default
 
 
     # Smooth the surface even more
     smooth = surf.smooth(n_iter=100)
-    smooth.plot(show_edges=True, cpos=cpos)
+    smooth.plot(show_edges=True, cpos=cpos, show_scalar_bar=False)
+
 
 
 
@@ -130,19 +132,30 @@ smoothing algorithm:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-52
+.. GENERATED FROM PYTHON SOURCE LINES 53-56
 
 Still not smooth enough? Increase the number of iterations for the Laplacian
-smoothing algorithm to a crazy high value:
+smoothing algorithm to a crazy high value. Note how this causes the mesh to
+"shrink":
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-56
+.. GENERATED FROM PYTHON SOURCE LINES 56-70
 
 .. code-block:: default
 
 
     # Smooth the surface EVEN MORE
     smooth = surf.smooth(n_iter=1000)
-    smooth.plot(show_edges=True, cpos=cpos)
+
+    # extract the edges of the original unsmoothed mesh
+    orig_edges = surf.extract_feature_edges()
+
+    pl = pv.Plotter()
+    pl.add_mesh(smooth, show_edges=True, show_scalar_bar=False)
+    pl.camera_position = cpos
+    pl.add_mesh(orig_edges, show_scalar_bar=False, color='k', line_width=2)
+    pl.show()
+
+
 
 
 
@@ -155,10 +168,60 @@ smoothing algorithm to a crazy high value:
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 71-79
+
+Taubin Smoothing
+~~~~~~~~~~~~~~~~
+You can reduce the amount of surface shrinkage by using Taubin smoothing
+rather than the default laplacian smoothing implemented in :func:`smooth()
+<pyvista.PolyDataFilters.smooth>`. In this example, you can see how Taubin
+smoothing maintains the volume relative to the original mesh.
+
+Also, note that the number of iterations can be reduced to get the same approximate amount of smoothing. This is because Taubin smoothing is more efficient.
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-92
+
+.. code-block:: default
+
+
+    smooth_w_taubin = surf.smooth_taubin(n_iter=50, pass_band=0.05)
+
+    pl = pv.Plotter()
+    pl.add_mesh(smooth_w_taubin, show_edges=True, show_scalar_bar=False)
+    pl.camera_position = cpos
+    pl.add_mesh(orig_edges, show_scalar_bar=False, color='k', line_width=2)
+    pl.show()
+
+    # output the volumes of the original and smoothed meshes
+    print(f'Original surface volume:   {surf.volume:.1f}')
+    print(f'Laplacian smoothed volume: {smooth.volume:.1f}')
+    print(f'Taubin smoothed volume:    {smooth_w_taubin.volume:.1f}')
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
+   :alt: surface smoothing
+   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
+   :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    Original surface volume:   676.0
+    Laplacian smoothed volume: 468.3
+    Taubin smoothed volume:    680.0
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.556 seconds)
+   **Total running time of the script:** ( 0 minutes  2.069 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface-smoothing.py:
