@@ -44,8 +44,7 @@ jobs:
         source /home/runner/work/.venv/bin/activate
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
-        curl -LO https://github.com/transifex/cli/releases/download/v1.0.0/tx-linux-amd64.tar.gz
-        tar xf tx-linux-amd64.tar.gz
+        curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
         deactivate
     - name: update
       env:
