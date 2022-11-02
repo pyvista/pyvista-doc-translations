@@ -61,7 +61,7 @@ filter.
 
     # We use a uniform grid here simply to create equidistantly spaced points for
     # our glyph filter
-    grid = pv.UniformGrid(dims=(4, 3, 3), spacing=(3, 1, 1))
+    grid = pv.UniformGrid(dimensions=(4, 3, 3), spacing=(3, 1, 1))
 
     bunnies = grid.glyph(geom=mesh, scale=False, orient=False)
     bunnies
@@ -169,7 +169,7 @@ Show the plot while enabling depth of field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  59.040 seconds)
+   **Total running time of the script:** ( 1 minutes  9.310 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth_of_field.py:

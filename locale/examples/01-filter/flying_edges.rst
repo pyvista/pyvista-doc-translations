@@ -73,7 +73,7 @@ generated from the spider cage function.
     n = 100
     x_min, y_min, z_min = -5, -5, -3
     grid = pv.UniformGrid(
-        dims=(n, n, n),
+        dimensions=(n, n, n),
         spacing=(abs(x_min) / n * 2, abs(y_min) / n * 2, abs(z_min) / n * 2),
         origin=(x_min, y_min, z_min),
     )
@@ -133,7 +133,7 @@ generated from the Barth sextic function.
     k = 2.0
     x_min, y_min, z_min = -k, -k, -k
     grid = pv.UniformGrid(
-        dims=(n, n, n),
+        dimensions=(n, n, n),
         spacing=(abs(x_min) / n * 2, abs(y_min) / n * 2, abs(z_min) / n * 2),
         origin=(x_min, y_min, z_min),
     )
@@ -212,28 +212,23 @@ function.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.756 seconds)
+   **Total running time of the script:** ( 0 minutes  6.735 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_flying_edges.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: flying_edges.py <flying_edges.py>`
 
-     :download:`Download Python source code: flying_edges.py <flying_edges.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: flying_edges.ipynb <flying_edges.ipynb>`
+      :download:`Download Jupyter notebook: flying_edges.ipynb <flying_edges.ipynb>`
 
 
 .. only:: html

@@ -192,7 +192,7 @@ If you want to label it, you need to extract the position to label it.
 .. code-block:: default
 
 
-    grid = pv.UniformGrid(dims=(10, 10, 1))
+    grid = pv.UniformGrid(dimensions=(10, 10, 1))
     points = grid.cell_centers().points
 
     pl = pv.Plotter()
@@ -214,7 +214,7 @@ If you want to label it, you need to extract the position to label it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.890 seconds)
+   **Total running time of the script:** ( 0 minutes  1.949 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

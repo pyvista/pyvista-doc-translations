@@ -53,7 +53,7 @@ Create several spheres
 
     # We use a uniform grid here simply to create equidistantly spaced points for
     # our glyph filter
-    grid = pv.UniformGrid(dims=(4, 4, 4), spacing=(1, 1, 1))
+    grid = pv.UniformGrid(dimensions=(4, 4, 4), spacing=(1, 1, 1))
 
     spheres = grid.glyph(geom=pv.Sphere(), scale=False, orient=False)
 
@@ -129,7 +129,7 @@ the focal plane
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.835 seconds)
+   **Total running time of the script:** ( 0 minutes  7.589 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_blurring.py:

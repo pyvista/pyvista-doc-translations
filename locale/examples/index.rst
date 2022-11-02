@@ -214,6 +214,23 @@ data.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to build a simple pyvista.UnstructuredGrid using polyhedra. We will be u...">
+
+.. only:: html
+
+  .. image:: /examples/00-load/images/thumb/sphx_glr_create-polyhedron_thumb.png
+    :alt: Unstructured Grid with Polyhedra
+
+  :ref:`sphx_glr_examples_00-load_create-polyhedron.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Unstructured Grid with Polyhedra</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Create a spline/polyline from a numpy array of XYZ vertices using pyvista.Spline.">
 
 .. only:: html
