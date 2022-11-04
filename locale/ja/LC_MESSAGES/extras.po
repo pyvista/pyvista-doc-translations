@@ -539,12 +539,16 @@ msgid ""
 "and readers of our online documentation. This section describes how to write"
 " these docstrings for PyVista."
 msgstr ""
+"PyVistaでは，Python docstringsを使用して，Python "
+"APIのリファレンスドキュメントを作成しています．Docstringsは，開発者や対話型のPythonユーザー，そしてオンラインドキュメントの読者に読まれます．このセクションでは，PyVista用のdocstringの書き方について説明します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:209
 msgid ""
 "PyVista follows the ``numpydoc`` style for its docstrings. Please follow the"
 " `numpydoc Style Guide`_ in all ways except for the following:"
 msgstr ""
+"PyVistaはdocstringのスタイルとして ``numpydoc`` に従っています．以下を除き，すべて `numpydoc Style "
+"Guide`_ に従ってください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:212
 msgid ""
@@ -565,20 +569,24 @@ msgid ""
 "With optional parameters, use ``default: <value>`` instead of ``optional`` "
 "when the parameter has a default value instead of ``None``."
 msgstr ""
+"オプションのパラメータで， ``None`` の代わりにデフォルト値がある場合は， ``optional`` の代わりに ``default: "
+"<value>`` を使用します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:220
 msgid "Sample docstring follows:"
-msgstr ""
+msgstr "サンプル docstring は以下の通りです:"
 
 #: ../../pyvista/CONTRIBUTING.rst:257
 msgid "Note the following:"
-msgstr ""
+msgstr "以下のことに注意してください:"
 
 #: ../../pyvista/CONTRIBUTING.rst:259
 msgid ""
 "The parameter definition of ``generate_triangles`` uses ``default: False``, "
 "and does not include the default in the docstring's \"description\" section."
 msgstr ""
+"``generate_triangles`` のパラメータ定義では， ``default: False`` を使用し， docstring の "
+"\"description\" セクションにデフォルトを含めません．"
 
 #: ../../pyvista/CONTRIBUTING.rst:261
 msgid ""
@@ -586,11 +594,13 @@ msgid ""
 "``numpydoc``'s documentation where there are no empty lines between "
 "parameter docstrings."
 msgstr ""
+"各パラメータの間には改行が入ります．これは ``numpydoc`` のドキュメントで，パラメータの docstring "
+"の間に空白行がないのとは異なります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:264
 msgid ""
 "This docstring also contains a returns section and an examples section."
-msgstr ""
+msgstr "この docstring には，リターンセクションとサンプルセクションも含まれています．"
 
 #: ../../pyvista/CONTRIBUTING.rst:265
 msgid ""
@@ -599,16 +609,17 @@ msgid ""
 "descriptive parameter names for each returned value, in the same format as "
 "the input parameters."
 msgstr ""
+"関数の戻り値が1つの場合，リターンセクションにはパラメータ名を含めません．複数の戻り値(図示せず)には，入力パラメータと同じ形式で，各戻り値に対して説明的なパラメータ名を付ける必要があります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:269
 msgid ""
 "The examples section references the \"full example\" in the gallery if it "
 "exists."
-msgstr ""
+msgstr "サンプルセクションは，ギャラリーの \"完全なサンプル\" が存在する場合，それを参照します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:274
 msgid "Deprecating Features or other Backwards-Breaking Changes"
-msgstr ""
+msgstr "非推奨の機能またはその他の後方互換性のない変更"
 
 #: ../../pyvista/CONTRIBUTING.rst:275
 msgid ""
@@ -617,22 +628,25 @@ msgid ""
 "backwards compatible modifications should proceed through the following "
 "steps:"
 msgstr ""
+"PyVistaで後方互換性のない変更を実装するときは，ユーザーに新しい変更に適応する機会を与えるよう注意する必要があります．後方互換性のない変更は，次の手順で進める必要があります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:279
 msgid ""
 "Retain the old behavior and issue a ``PyVistaDeprecationWarning`` indicating"
 " the new interface you should use."
-msgstr ""
+msgstr "古い動作を保持し，使用すべき新しいインターフェイスを示す ``PyVistaDeprecationWarning`` を発行します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:281
 msgid ""
 "Retain the old behavior but raise a ``pyvista.core.errors.DeprecationError``"
 " indicating the new interface you must use."
 msgstr ""
+"古い動作を保持しますが，使用しなければならない新しいインターフェイスを示す "
+"``pyvista.core.errors.DeprecationError`` を発行します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:283
 msgid "Remove the old behavior."
-msgstr ""
+msgstr "古い動作を削除します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:285
 msgid ""
@@ -640,6 +654,7 @@ msgid ""
 "minor versions of backwards compatibility to give users the ability to "
 "update their software and scripts."
 msgstr ""
+"可能な限り，PyVistaの開発者は，ユーザーがソフトウェアやスクリプトを更新できるように，少なくとも3つのマイナーバージョンの後方互換性を確保するように努めるべきです．"
 
 #: ../../pyvista/CONTRIBUTING.rst:289
 msgid ""
@@ -647,6 +662,8 @@ msgid ""
 "both the ``PyVistaDeprecationWarning`` warning and the ``.. deprecated`` "
 "Sphinx directive."
 msgstr ""
+"これはある関数のソフト非推奨の例です． ``PyVistaDeprecationWarning`` の警告と ``.. deprecated`` "
+"のSphinxディレクティブの両方を使用していることに注意してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:327
 msgid ""
@@ -655,12 +672,15 @@ msgid ""
 "release. For significant changes, this can be made longer, and for trivial "
 "ones this can be kept short."
 msgstr ""
+"上記のコード例では，3つのマイナーリリースでエラーに変換し，次のマイナーリリースで完全に削除するためにコメントが作られていることに注目してください．重要な変更の場合はこれを長くし，些細な変更の場合は短くすることができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:332
 msgid ""
 "When adding an additional parameter to an existing method or function, you "
 "are encouraged to use the ``.. versionadded`` sphinx directive. For example:"
 msgstr ""
+"既存のメソッドや関数に追加のパラメータを追加する場合には， ``.. versionadded`` "
+"というsphinxディレクティブを使用することが推奨されます．例えば:"
 
 #: ../../pyvista/CONTRIBUTING.rst:350
 msgid "Branch Naming Conventions"
@@ -732,6 +752,8 @@ msgid ""
 "To run our comprehensive suite of unit tests, install all the dependencies "
 "listed in ``requirements_test.txt`` and ``requirements_docs.txt``:"
 msgstr ""
+"総合的な単体テストを実行するには， ``requirements_test.txt`` と ``requirements_docs.txt`` "
+"にリストされているすべての依存関係をインストールします:"
 
 #: ../../pyvista/CONTRIBUTING.rst:386
 msgid ""
