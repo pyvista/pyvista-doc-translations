@@ -1210,12 +1210,14 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_00-load_create-polyhedron.py>` "
 "to download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_00-load_create-polyhedron.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:24
 #: ../../pyvista/doc/examples/00-load/index.rst-1
 #: ../../pyvista/doc/examples/index.rst-1
 msgid "Unstructured Grid with Polyhedra"
-msgstr ""
+msgstr "多面体による非構造化グリッド"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:26
 msgid ""
@@ -1223,30 +1225,32 @@ msgid ""
 "using polyhedra. We will be using VTK types to determine which type of cells"
 " we are building."
 msgstr ""
+"この例では，多面体を使ってシンプルな :class:`pyvista.UnstructuredGrid` "
+"を構築する方法を紹介します．VTKの型を使用して，どのタイプのセルを構築するかを決定します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:30
 msgid "First, we import the required libraries."
-msgstr ""
+msgstr "まず，必要なライブラリをインポートします．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:49
 msgid "Define Points"
-msgstr ""
+msgstr "ポイントの定義"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:50
 msgid ""
 "We will mix several cells in one grid for this example. Here we create the "
 "points that will define each cell."
-msgstr ""
+msgstr "この例では，1つのグリッドに複数のセルを混在させることにします．ここでは，各セルを定義するポイントを作成します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:54
 msgid ""
 "It is not necessary that each cell has an isolated set of points. This has "
 "been done here to create isolated cells for this example."
-msgstr ""
+msgstr "各セルが孤立した点の集合を持つ必要はありません．この例では，孤立したセルを作成するために，このような方法をとっています．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:111
 msgid "Cell connectivity"
-msgstr ""
+msgstr "セルの接続性"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:112
 msgid ""
@@ -1255,6 +1259,8 @@ msgid ""
 "have. For example, a quad cell is composed of points ``[0, 1, 2, 3]`` and "
 "totaling 4 points, therefore ``[4, 0, 1, 2, 3]`` describes its connectivity."
 msgstr ""
+"接続性は，各セルを構成する点のインデックスを記述します．各セルのコネクティビティの最初の項目は，そのセルが持つ項目の数です．例えば，4角形のセルは点 "
+"``[0, 1, 2, 3]`` と合計4つの点から構成されるので， ``[4, 0, 1, 2, 3]`` がその接続性を表していることになります．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:118
 msgid ""
@@ -1262,61 +1268,67 @@ msgid ""
 "these lists to a :class:`numpy.ndarray` with ``dtype=pyvista.ID_TYPE`` and "
 "passes it to VTK."
 msgstr ""
+"この例では簡単のためにリストを使っていますが，内部的にはPyVistaはこれらのリストを ``dtype=pyvista.ID_TYPE`` で "
+":class:`numpy.ndarray` に変換してVTKに渡します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:122
 msgid "The same approach can be applied to all the other cell types."
-msgstr ""
+msgstr "他のすべてのセルタイプにも同じアプローチが可能です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:144
 msgid "Polyhedron connectivity array"
-msgstr ""
+msgstr "多面体接続配列"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:145
 msgid ""
 "The connectivity array of polyhedra is defined differently from the rest of "
 "the cell types. For polyhedra, we need to set the faces with the following "
 "format:"
-msgstr ""
+msgstr "多面体の接続配列は，他のセルタイプとは異なる定義になっています．多面体の場合，次のような形式で面を設定する必要があります．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:148
 msgid ""
 "``[NItems, NFaces, Face0NPoints, Face0Point0, Face0Point1..., Face0PointN-1,"
 " Face1NPoints, ...]``"
 msgstr ""
+"``[NItems, NFaces, Face0NPoints, Face0Point0, Face0Point1..., Face0PointN-1,"
+" Face1NPoints, ...]``"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:150
 msgid "Where:"
-msgstr ""
+msgstr "ここで:"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:152
 msgid ""
 "``NItems`` refers to the total number of items in the list needed to "
 "describe the polyhedron."
-msgstr ""
+msgstr "``NItems`` は，多面体を表現するために必要なリストのアイテムの総数を指します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:154
 msgid "``NFaces`` is the number of faces the polyhedron will have."
-msgstr ""
+msgstr "``NFaces`` は，多面体が持つ面の数です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:155
 msgid "``Face0NPoints`` is the number of points the first face will have."
-msgstr ""
+msgstr "``Face0NPoints`` は，最初の面が持つ点の数です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:156
 msgid ""
 "``Face0Point0...Face0PointN-1`` are each of the points that describe "
 "``face0``."
-msgstr ""
+msgstr "``Face0Point0...Face0PointN-1`` は ``face0`` を記述する各点です．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:158
 msgid ""
 "In ``polyhedron_connectivity``, the first item is ``NFaces``. ``NItems`` is "
 "added to ``polyhedron``."
 msgstr ""
+"``polyhedron_connectivity`` では，最初の項目は ``NFaces`` です． ``NItems`` は "
+"``polyhedron`` に追加されます．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:222
 msgid "Cells array"
-msgstr ""
+msgstr "セル配列"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:223
 msgid ""
@@ -1325,42 +1337,45 @@ msgid ""
 "Internally, the ``NItems`` previously described is used to determine which "
 "nodes belong to which cells."
 msgstr ""
+"ここで， :class:`pyvista.UnstructuredGrid` "
+"の入力セル配列を作成します．ここでは，すべてのセルをフラットリストで結合します．内部的には，先に説明した ``NItems`` "
+"を使用して，どのノードがどのセルに属しているかを判断します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:246
 msgid "Cell types"
-msgstr ""
+msgstr "セルタイプ"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:247
 msgid ""
 "We need to specify the cell types for each of the cells we define in the "
 "cells array."
-msgstr ""
+msgstr "セル配列に定義した各セルに対して，セルの種類を指定する必要があります．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:250
 msgid ""
 "The number of items in this list must match the number of cells in the "
 "connectivity array."
-msgstr ""
+msgstr "このリストの項目数は，接続配列のセル数と一致させる必要があります．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:271
 msgid "Create the grid"
-msgstr ""
+msgstr "グリッドの作成"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:272
 msgid ""
 "To create the grid, we use the cells array we built, the cell types, and the"
 " points that describe the faces."
-msgstr ""
+msgstr "グリッドの作成には、構築したセル配列、セルの種類、面を記述する点を使用します。"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:292
 msgid "Plot the mesh"
-msgstr ""
+msgstr "メッシュをプロットする"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:293
 msgid ""
 "Finally, we can plot the grid we've created. Label each cell at its cell "
 "center for clarity."
-msgstr ""
+msgstr "最後に，作成したグリッドをプロットすることができます．わかりやすくするために，各セルの中心にラベルを貼ってください．"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:326
 msgid "**Total running time of the script:** ( 0 minutes  0.516 seconds)"
@@ -1371,12 +1386,16 @@ msgid ""
 ":download:`Download Python source code: create-polyhedron.py <create-"
 "polyhedron.py>`"
 msgstr ""
+":download:`Download Python source code: create-polyhedron.py <create-"
+"polyhedron.py>`"
 
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:342
 msgid ""
 ":download:`Download Jupyter notebook: create-polyhedron.ipynb <create-"
 "polyhedron.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: create-polyhedron.ipynb <create-"
+"polyhedron.ipynb>`"
 
 #: ../../pyvista/doc/examples/00-load/create-spline.rst:13
 msgid ""
@@ -2330,11 +2349,13 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how to "
 "build a simple pyvista.UnstructuredGrid using polyhedra. We will be u...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example shows how to "
+"build a simple pyvista.UnstructuredGrid using polyhedra. We will be u...\">"
 
 #: ../../pyvista/doc/examples/00-load/index.rst:201
 #: ../../pyvista/doc/examples/index.rst:224
 msgid ":ref:`sphx_glr_examples_00-load_create-polyhedron.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_00-load_create-polyhedron.py`"
 
 #: ../../pyvista/doc/examples/00-load/index.rst:203
 #: ../../pyvista/doc/examples/index.rst:226
@@ -2342,6 +2363,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Unstructured Grid with Polyhedra</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Unstructured Grid with Polyhedra</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/00-load/index.rst:209
 #: ../../pyvista/doc/examples/index.rst:232
@@ -3552,13 +3575,15 @@ msgstr "計算時間"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
 msgid "**00:00.516** total execution time for **examples_00-load** files:"
-msgstr ""
+msgstr "**00:00.516** total execution time for **examples_00-load** files:"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 msgid ""
 ":ref:`sphx_glr_examples_00-load_create-polyhedron.py` (``create-"
 "polyhedron.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_00-load_create-polyhedron.py` (``create-"
+"polyhedron.py``)"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
 msgid "00:00.516"
@@ -6795,7 +6820,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:369
 msgid "**Total running time of the script:** ( 0 minutes  32.821 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  32.821 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/image-fft-perlin-noise.rst:381
 msgid ""
@@ -8736,7 +8761,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:8
 msgid "**00:49.667** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:49.667** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid ""
@@ -8748,7 +8773,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:11
 msgid "00:32.821"
-msgstr ""
+msgstr "00:32.821"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)"
@@ -8757,7 +8782,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:13
 msgid "00:08.162"
-msgstr ""
+msgstr "00:08.162"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:15
 msgid ""
@@ -9369,7 +9394,7 @@ msgstr "カスタム3 Dベクトルフィールド"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines.rst:379
 msgid "**Total running time of the script:** ( 0 minutes  8.162 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  8.162 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/streamlines.rst:391
 msgid ""
@@ -10452,7 +10477,7 @@ msgstr "これは，焦点面の後ろのメッシュの一部を選択的にぼ
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:132
 msgid "**Total running time of the script:** ( 0 minutes  7.589 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  7.589 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/blurring.rst:144
 msgid ":download:`Download Python source code: blurring.py <blurring.py>`"
@@ -11079,7 +11104,7 @@ msgstr "被写界深度を有効にした状態でプロットを表示する"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:172
 msgid "**Total running time of the script:** ( 1 minutes  9.310 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 1 minutes  9.310 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/depth_of_field.rst:184
 msgid ""
@@ -14708,7 +14733,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**01:38.998** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**01:38.998** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ""
@@ -14718,7 +14743,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "01:09.310"
-msgstr ""
+msgstr "01:09.310"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ":ref:`sphx_glr_examples_02-plot_ssao.py` (``ssao.py``)"
@@ -14726,7 +14751,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_ssao.py` (``ssao.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid "00:22.098"
-msgstr ""
+msgstr "00:22.098"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:15
 msgid ":ref:`sphx_glr_examples_02-plot_blurring.py` (``blurring.py``)"
@@ -14734,7 +14759,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_blurring.py` (``blurring.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:15
 msgid "00:07.589"
-msgstr ""
+msgstr "00:07.589"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:17
 msgid ""
@@ -15254,7 +15279,7 @@ msgstr "ここでは，ケースオクルージョンが過剰にならずにリ
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:250
 msgid "**Total running time of the script:** ( 0 minutes  22.098 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  22.098 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/ssao.rst:262
 msgid ":download:`Download Python source code: ssao.py <ssao.py>`"
