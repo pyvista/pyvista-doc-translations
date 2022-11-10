@@ -67,13 +67,13 @@ First, let's create a sample point cloud using :func:`numpy.random.random`.
  .. code-block:: none
 
 
-    array([[0.42987789, 0.10005863, 0.61361435],
-           [0.52409174, 0.20136765, 0.60053579],
-           [0.62525163, 0.4448157 , 0.11865426],
+    array([[0.3587645 , 0.73616052, 0.09388843],
+           [0.34302867, 0.1857821 , 0.35169558],
+           [0.23600708, 0.46062802, 0.10327567],
            ...,
-           [0.91485977, 0.34540947, 0.84565723],
-           [0.34150954, 0.08325467, 0.37342024],
-           [0.62589935, 0.1031916 , 0.14678903]])
+           [0.19198554, 0.39673417, 0.92563483],
+           [0.05419863, 0.33367526, 0.02756891],
+           [0.6520629 , 0.5365713 , 0.4737048 ]])
 
 
 
@@ -204,7 +204,7 @@ points. PyVista tries to achieve sensible defaults, but should you find these
 insufficient for your needs, feel free to play around with the various options
 and find something that works for you.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-143
+.. GENERATED FROM PYTHON SOURCE LINES 79-141
 
 .. code-block:: default
 
@@ -221,7 +221,7 @@ and find something that works for you.
         point_size=10,
         ambient=0.7,
     )
-    pl.add_text('"points" not as spheres')
+    pl.add_text('"points" not as spheres', color='w')
 
     # Gaussian points
     pl.subplot(0, 1)
@@ -236,7 +236,7 @@ and find something that works for you.
         point_size=10,
         ambient=1.0,
     )
-    pl.add_text('"points_gaussian" not as spheres\nemissive=False')
+    pl.add_text('"points_gaussian" not as spheres\nemissive=False', color='w')
 
     # Gaussian points with emissive=True
     pl.subplot(1, 0)
@@ -247,12 +247,11 @@ and find something that works for you.
         emissive=True,
         scalars=rgba,
         rgba=True,
-        # opacity=0.999999,  # does not work and _must_ be 1.0
         point_size=10,
     )
-    pl.add_text('"points_gaussian" not as spheres\nemissive=True')
+    pl.add_text('"points_gaussian" not as spheres\nemissive=True', color='w')
 
-    # Gaussian points with emissive=True
+    # With render_points_as_spheres=True
     pl.subplot(1, 1)
     actor = pl.add_points(
         points,
@@ -262,11 +261,10 @@ and find something that works for you.
         rgba=True,
         point_size=10,
     )
-    pl.add_text('"points_gaussian" as spheres')
+    pl.add_text('"points_gaussian" as spheres', color='w')
 
     pl.background_color = 'k'
     pl.link_views()
-    # pl.reset_camera()
     pl.camera_position = 'xy'
     pl.camera.zoom(1.2)
     pl.show()
@@ -284,14 +282,14 @@ and find something that works for you.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-148
+.. GENERATED FROM PYTHON SOURCE LINES 142-146
 
 Orbit a Point Cloud
 ~~~~~~~~~~~~~~~~~~~
 Generate a plot orbiting around a point cloud. Color based on the distance
 from the center of the cloud.
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-168
+.. GENERATED FROM PYTHON SOURCE LINES 146-166
 
 .. code-block:: default
 
@@ -330,7 +328,7 @@ from the center of the cloud.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.200 seconds)
+   **Total running time of the script:** ( 0 minutes  15.800 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-clouds.py:
