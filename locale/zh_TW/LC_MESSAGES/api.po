@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-11 01:01+0000\n"
+"POT-Creation-Date: 2022-11-16 01:02+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -79,6 +79,8 @@ msgstr ""
 #: pyvista.core.dataobject.DataObject.shallow_copy:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1383,7 +1385,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.textures:19 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.volume:22 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.core.dataset.DataSet.cast_to_pointset:27
+#: of pyvista.core.dataset.DataSet.cast_to_pointset:30
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:30
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2761,8 +2765,10 @@ msgstr ""
 #: of pyvista.Color.int_rgba:17
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of pyvista.Color.name:26
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
-#: pyvista.Color.vtk_c3ub:17 ../../pyvista/pyvista/plotting/colors.pydocstring
-#: of pyvista.plotting.colors.Color:75
+#: pyvista.Color.opacity:17 ../../pyvista/pyvista/plotting/colors.pydocstring
+#: of pyvista.Color.vtk_c3ub:17
+#: ../../pyvista/pyvista/plotting/colors.pydocstring of
+#: pyvista.plotting.colors.Color:75
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.BlockAttributes.color:17
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -2855,11 +2861,15 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.above_range_color:19
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.above_range_opacity:17
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.alpha_range:22
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.annotations:20
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:19
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.below_range_opacity:17
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.cmap:17
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -2870,6 +2880,8 @@ msgstr ""
 #: pyvista.LookupTable.n_values:17
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.nan_color:18
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_opacity:18
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.ramp:32
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -3498,6 +3510,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -4754,7 +4768,10 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.n_cells:15
+#: pyvista.DataSet.n_cells:15 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.core.dataset.DataSet.cast_to_pointset:24
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:24
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals:20
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -5429,7 +5446,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.save:11
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cast_to_pointset:9
+#: pyvista.core.dataset.DataSet.cast_to_pointset:8
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:8
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.copy_meta_from:23
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -6757,6 +6776,8 @@ msgid "The aspect of the viewport to compute the planes. Defaults to 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:21
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.composite.CompositeFilters.extract_geometry:24
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
@@ -7751,6 +7772,10 @@ msgstr ""
 msgid "See also :func:`pyvista.DataSetFilters.point_data_to_cell_data`."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_pointset:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:9
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:17
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -10544,8 +10569,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cast_to_pointset:10
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.copy_meta_from:24
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.core.grid.RectilinearGrid:44
@@ -11194,19 +11217,20 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:2
 msgid ""
-"Get a new representation of this object as a :class:`pyvista.PointSet`."
+"Extract the points of this dataset and return a :class:`pyvista.PointSet`."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:8
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:8
 msgid ""
-"When ``True`` makes a full copy of the object.  When ``False``, performs a "
-"shallow copy where the points and data arrays are references to the original"
-" object."
+"Run the ``cell_data_to_point_data`` filter and pass cell data fields to the "
+"new pointset."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cast_to_pointset:24
+#: pyvista.core.dataset.DataSet.cast_to_pointset:21
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid.hide_points:25
 #: ../../pyvista/pyvista/examples/downloads.pydocstring of
@@ -11217,8 +11241,28 @@ msgid ":obj:`pyvista.PointSet`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cast_to_pointset:15
+#: pyvista.core.dataset.DataSet.cast_to_pointset:14
 msgid "Dataset cast into a :class:`pyvista.PointSet`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_pointset:25
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:25
+msgid ""
+"This will produce a deep copy of the points and point/cell data of the "
+"original mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:2
+msgid ""
+"Extract the points of this dataset and return a :class:`pyvista.PolyData`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_poly_points:14
+msgid "Dataset cast into a :class:`pyvista.PolyData`."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -34814,6 +34858,15 @@ msgid "Disable the usage of the above range color."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.above_range_opacity:2
+msgid "Return or set the above range opacity."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Set the above range opacity to ``0.5``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.alpha_range:2
 msgid "Return or set the alpha range."
 msgstr ""
@@ -34988,6 +35041,15 @@ msgid "Disable the usage of the below range color."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.below_range_opacity:2
+msgid "Return or set the below range opacity."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Set the below range opacity to ``0.5``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.cmap:2
 msgid "Return or set the color map used by this lookup table."
 msgstr ""
@@ -35089,6 +35151,20 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Set the NAN color to ``'grey'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_opacity:2
+msgid "Return or set the not a number (NAN) opacity."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.LookupTable.nan_opacity:4
+msgid "Any values that are NANs will be rendered with this opacity."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
+msgid "Set the NAN opacity to ``0.5``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -51053,6 +51129,11 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of pyvista.Color.name:20
 msgid "Refer to the table below for a list of supported colors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/colors.pydocstring of
+#: pyvista.Color.opacity:2
+msgid "Return the opacity of this color in the range of ``(0-255)``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of

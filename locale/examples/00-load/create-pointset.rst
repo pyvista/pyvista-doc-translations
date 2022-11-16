@@ -53,11 +53,9 @@ This example shows the performance improvement when clipping using the
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    Time to clip with a PolyData 4.20 seconds.
+    Time to clip with a PolyData 4.41 seconds.
 
 
 
@@ -94,7 +92,7 @@ This is only available with VTK >= 9.1.0.
 .. code-block:: default
 
 
-    # pset = lidar.cast_to_pointset(deep=False)
+    # pset = lidar.cast_to_pointset()
 
     if pv.vtk_version_info >= (9, 1):
         lidar_pset = lidar.cast_to_pointset()
@@ -109,11 +107,9 @@ This is only available with VTK >= 9.1.0.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    Time to clip with a PointSet 0.16 seconds.
+    Time to clip with a PointSet 0.17 seconds.
 
 
 
@@ -148,28 +144,23 @@ Plot the same dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.565 seconds)
+   **Total running time of the script:** ( 0 minutes  12.936 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pointset.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: create-pointset.py <create-pointset.py>`
 
-     :download:`Download Python source code: create-pointset.py <create-pointset.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-pointset.ipynb <create-pointset.ipynb>`
+      :download:`Download Jupyter notebook: create-pointset.ipynb <create-pointset.ipynb>`
 
 
 .. only:: html
