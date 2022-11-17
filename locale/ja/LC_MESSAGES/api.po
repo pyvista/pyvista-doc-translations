@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-16 01:02+0000\n"
+"POT-Creation-Date: 2022-11-17 00:54+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1497,7 +1497,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.cell_centers:30
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:41
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:38
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip:56
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
@@ -1509,7 +1509,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:37
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:36
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:33
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.slice:43
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
@@ -1523,7 +1523,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.cell_centers:30
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:41
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:38
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip:56
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -1571,7 +1571,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.integrate_data:31
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:75
+#: pyvista.core.filters.data_set.DataSetFilters.interpolate:71
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.merge:56
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -1587,13 +1587,13 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.plot_over_line:60
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:36
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:33
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:54
+#: pyvista.core.filters.data_set.DataSetFilters.probe:50
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.reflect:39
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:50
+#: pyvista.core.filters.data_set.DataSetFilters.sample:46
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:44
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -4928,11 +4928,6 @@ msgid "Location of the camera's focus in world coordinates."
 msgstr "全体座標におけるカメラの焦点の位置．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.Camera.is_parallel_projection:2
-msgid "Return True if parallel projection is set."
-msgstr "平行投影が設定されている場合はTrueを取得します．"
-
-#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.model_transform_matrix:2
 msgid "Return or set the camera's model transformation matrix."
 msgstr "カメラのモデル変換行列を返すか設定します．"
@@ -7819,233 +7814,6 @@ msgstr ""
 msgid "If enabled, pass the input cell data through to the output."
 msgstr "使用可能にすると，入力セルのデータを出力に渡します．"
 
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:23
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:18
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:23
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:58
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:18
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:37
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:33
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:50
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:28
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clean:42
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:18
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:16
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:31
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.StructuredGrid:53
-#: ../../pyvista/pyvista/demos/demos.pydocstring of
-#: pyvista.demos.demos.plot_glyphs:12
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.plot_cell:24
-#: ../../pyvista/pyvista/plotting/_property.pydocstring of
-#: pyvista.plotting._property.Property.plot:20
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.plot:19
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:15
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.plot:18
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:89
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:59
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_grid:13
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.save_meshio:30
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBour:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBoy:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:30
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCrossCap:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:18
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:23
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEnneper:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricHenneberg:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKlein:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKuen:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:15
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:48
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:39
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:15
-msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:22
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:17
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:22
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:19
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:57
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:17
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:36
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:19
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:32
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:49
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:27
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clean:41
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:17
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:15
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:30
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.StructuredGrid:52
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/demos/demos.pydocstring of
-#: pyvista.demos.demos.plot_glyphs:11
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.plot_cell:23
-#: ../../pyvista/pyvista/plotting/_property.pydocstring of
-#: pyvista.plotting._property.Property.plot:19
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.plot:18
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts._Chart.show:42
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:14
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable:77
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.plot:17
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:20
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:46
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:88
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:43
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:54
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:58
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_grid:12
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:30
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read_texture:13
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.save_meshio:29
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBour:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBoy:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:29
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCrossCap:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:22
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEnneper:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:13
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricHenneberg:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKlein:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKuen:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPseudosphere:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:47
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:14
-msgid "python:dict, optional"
-msgstr "python:dict, optional"
-
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:23
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:23
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
-msgid "Depreciated keyword argument ``pass_cell_arrays``."
-msgstr "非推奨のキーワード引数 ``pass_cell_arrays`` ．"
-
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -8069,15 +7837,15 @@ msgstr "非推奨のキーワード引数 ``pass_cell_arrays`` ．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.translate:34
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:38
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:35
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:31
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.elevation:59
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:33
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:30
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:38
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:35
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:71
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -8095,17 +7863,17 @@ msgstr "非推奨のキーワード引数 ``pass_cell_arrays`` ．"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_largest:28
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:72
+#: pyvista.core.filters.data_set.DataSetFilters.interpolate:68
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:33
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:30
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:51
+#: pyvista.core.filters.data_set.DataSetFilters.probe:47
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.ptc:38
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.reflect:36
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:47
+#: pyvista.core.filters.data_set.DataSetFilters.sample:43
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.shrink:28
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -8134,13 +7902,13 @@ msgid ":obj:`pyvista.DataSet`"
 msgstr ":obj:`pyvista.DataSet`"
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:28
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:25
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:23
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:20
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:28
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:25
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:23
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:20
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.ptc:25
 msgid ""
@@ -9748,15 +9516,6 @@ msgstr ""
 msgid "If enabled, pass the input point data through to the output."
 msgstr "使用可能にすると，入力ポイントのデータを出力に渡します．"
 
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:18
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:18
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
-msgid "Depreciated keyword argument ``pass_point_arrays``."
-msgstr "非推奨のキーワード引数 ``pass_point_arrays`` ．"
-
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.CompositeFilters.rst:3
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSetFilters.rst:3
 msgid ""
@@ -10417,16 +10176,9 @@ msgid "The actual size of the dataset object in kibibytes (1024 bytes)."
 msgstr "データセットオブジェクトの実際のサイズ(1024バイト)．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.add_field_array:2
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.add_field_data:2
 msgid "Add field data."
 msgstr "フィールドデータを追加します．"
-
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.add_field_array:4
-msgid "Use :func:`DataObject.add_field_data` instead."
-msgstr "代わりに :func:`DataObject.add_field_data` を使用してください．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.field_data:4
@@ -10688,16 +10440,9 @@ msgid "Add field data to a MultiBlock dataset."
 msgstr "MultiBlockデータセットにフィールドデータを追加します．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.clear_field_arrays:2
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.clear_field_data:2
 msgid "Remove all field data."
 msgstr "すべてのフィールドデータを削除します．"
-
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.clear_field_arrays:4
-msgid "Use :func:`DataObject.clear_field_data` instead."
-msgstr "代わりに :func:`DataObject.clear_field_data` を使用してください．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataObject.rst:3
 msgid "Add field data to a PolyData dataset and then remove it."
@@ -10827,16 +10572,6 @@ msgstr "pyvista.DataObject か vtk.vtkDataObject"
 #: pyvista.core.dataobject.DataObject.deep_copy:8
 msgid "Data object to perform a deep copy from."
 msgstr "ディープコピーを行うデータオブジェクト．"
-
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.DataObject.field_arrays:2
-msgid "Return vtkFieldData as DataSetAttributes."
-msgstr "DataSetAttributesとしてvtkFieldDataを取得します．"
-
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.DataObject.field_arrays:4
-msgid "Use :attr:`DataObject.field_data` to return field data."
-msgstr "フィールドデータを返すには， :attr:`DataObject.field_data` を使用します．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.field_data:2
@@ -11318,7 +11053,7 @@ msgstr "キューブを作成し，そのメッシュの境界を返します．
 #: pyvista.core.dataset.DataSet.cast_to_pointset:2
 msgid ""
 "Extract the points of this dataset and return a :class:`pyvista.PointSet`."
-msgstr ""
+msgstr "このデータセットからポイントを抽出し， :class:`pyvista.PointSet` を返します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:8
@@ -11327,7 +11062,7 @@ msgstr ""
 msgid ""
 "Run the ``cell_data_to_point_data`` filter and pass cell data fields to the "
 "new pointset."
-msgstr ""
+msgstr "``cell_data_to_point_data`` フィルターを実行し，セルのデータフィールドを新しいポイントセットに渡します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:21
@@ -11352,18 +11087,18 @@ msgstr "データセットを :class:`pyvista.PointSet` にキャストします
 msgid ""
 "This will produce a deep copy of the points and point/cell data of the "
 "original mesh."
-msgstr ""
+msgstr "これにより，元のメッシュのポイントとポイント/セルデータのディープコピーが作成されます．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_poly_points:2
 msgid ""
 "Extract the points of this dataset and return a :class:`pyvista.PolyData`."
-msgstr ""
+msgstr "このデータセットからポイントを抽出し， :class:`pyvista.PolyData` を返します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_poly_points:14
 msgid "Dataset cast into a :class:`pyvista.PolyData`."
-msgstr ""
+msgstr "データセットを :class:`pyvista.PolyData` にキャストします．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:2
@@ -11382,18 +11117,6 @@ msgid ""
 "Cast a :class:`pyvista.PolyData` to a :class:`pyvista.UnstructuredGrid`."
 msgstr ""
 ":class:`pyvista.PolyData` を :class:`pyvista.UnstructuredGrid` にキャストします．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.cell_arrays:2
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.cell_data:2
-msgid "Return vtkCellData as DataSetAttributes."
-msgstr "DataSetAttributesとしてvtkCellDataを取得します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.cell_arrays:4
-msgid "Use :attr:`DataSet.cell_data` to return cell data."
-msgstr "セルデータを返すには :attr:`DataSet.cell_data` を使用します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:2
@@ -11483,6 +11206,11 @@ msgstr ":class:`python:tuple`\\(:class:`python:float`)"
 #: pyvista.core.dataset.DataSet.cell_bounds:13
 msgid "The limits of the cell in the X, Y and Z directions respectively."
 msgstr "セルのX，Y，Z方向それぞれの境界．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.cell_data:2
+msgid "Return vtkCellData as DataSetAttributes."
+msgstr "DataSetAttributesとしてvtkCellDataを取得します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Add cell arrays to a mesh and list the available ``cell_data``."
@@ -11614,45 +11342,18 @@ msgid "Get the center of a mesh."
 msgstr "メッシュの中心を取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_arrays:2
+#: pyvista.core.dataset.DataSet.clear_cell_data:2
+msgid "Remove all cell arrays."
+msgstr "すべてのセル配列を削除します．"
+
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_data:2
 msgid "Remove all arrays from point/cell/field data."
 msgstr "点/セル/フィールドデータからすべての配列を削除します．"
 
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_arrays:4
-msgid "Use :func:`DataSet.clear_data` instead."
-msgstr "代わりに :func:`DataSet.clear_data` を使用してください．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_cell_arrays:2
-msgid "Remove all cell data."
-msgstr "すべてのセルデータを削除します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_cell_arrays:4
-msgid "Use :func:`DataSet.clear_cell_data` instead."
-msgstr "代わりに :func:`DataSet.clear_cell_data` を使用してください．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_cell_data:2
-msgid "Remove all cell arrays."
-msgstr "すべてのセル配列を削除します．"
-
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Clear all arrays from a mesh."
 msgstr "メッシュからすべての配列を消去します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_point_arrays:2
-msgid "Remove all point data."
-msgstr "すべての点データを削除します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.clear_point_arrays:4
-msgid "Use :func:`DataSet.clear_point_data` instead."
-msgstr "代わりに :func:`DataSet.clear_point_data` を使用してください．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_point_data:2
@@ -13299,6 +13000,113 @@ msgid "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 msgstr "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:19
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:19
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:49
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:27
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clean:41
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:17
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:15
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:30
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.StructuredGrid:52
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/demos/demos.pydocstring of
+#: pyvista.demos.demos.plot_glyphs:11
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.plot_cell:23
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:19
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor.plot:18
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts._Chart.show:42
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:14
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:77
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:17
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:20
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:46
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:88
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:43
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:54
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:58
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_grid:12
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:30
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_texture:13
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:29
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:29
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCrossCap:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:22
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:13
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:47
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:26
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:14
+msgid "python:dict, optional"
+msgstr "python:dict, optional"
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:96
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:96
@@ -13916,16 +13724,9 @@ msgstr ""
 "が渡されることに注意してください．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.point_arrays:2
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.point_data:2
 msgid "Return vtkPointData as DataSetAttributes."
 msgstr "DataSetAttributesとしてvtkPointDataを取得します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.point_arrays:4
-msgid "Use :attr:`DataSet.point_data` to return point data."
-msgstr "ポイントデータを返すには :attr:`DataSet.point_data` を使用します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Add point arrays to a mesh and list the available ``point_data``."
@@ -14315,18 +14116,6 @@ msgid "Name of the vectors array to assign as active."
 msgstr "アクティブにするベクトル配列の名前．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.t_coords:2
-msgid "Return the active texture coordinates on the points."
-msgstr "ポイント上のアクティブなテクスチャ座標を取得します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.t_coords:4
-msgid ""
-"Use :attr:`DataSet.active_t_coords` to return the active texture "
-"coordinates."
-msgstr "アクティブなテクスチャの座標を返すには， :attr:`DataSet.active_t_coords` を使用します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.textures:2
 msgid "Return a dictionary to hold compatible ``vtk.vtkTexture`` objects."
 msgstr "互換性のある ``vtk.vtkTexture`` オブジェクトを保持する辞書を取得します．"
@@ -14374,14 +14163,6 @@ msgstr "移動されたデータセットです．"
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Create a sphere and translate it by ``(2, 1, 2)``."
 msgstr "球体を作成し，それを ``(2, 1, 2)`` で平行移動させます．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.vectors:2
-msgid "Return active vectors."
-msgstr "アクティブなベクトルを取得します．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.vectors:4
-msgid "Use of `DataSet.vectors` to return vector data is deprecated."
-msgstr "ベクトルデータを返すための `DataSet.vectors` の使用は非推奨です．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:2
 msgid "Return the mesh volume."
@@ -14637,19 +14418,8 @@ msgstr "アクティブなテクスチャの座標の配列．"
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords_name:2
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_texture_name:2
 msgid "Name of the active texture coordinates array."
 msgstr "アクティブなテクスチャの座標配列の名前です．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_texture_name:4
-msgid ""
-"Use :attr:`DataSetAttributes.active_t_coords_name` to return the name of the"
-" active texture coordinates array."
-msgstr ""
-"アクティブなテクスチャ座標の配列の名前を返すには， :attr:`DataSetAttributes.active_t_coords_name` "
-"を使用します．"
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors:2
@@ -14676,38 +14446,6 @@ msgstr "点データを単純な立方体メッシュに関連付け，点配列
 #: pyvista.DataSetAttributes.active_vectors_name:2
 msgid "Name of the active vectors."
 msgstr "アクティブベクターの名前．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:2
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.set_array:2
-msgid "Add an array to this object."
-msgstr "このオブジェクトに配列を追加します．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:4
-msgid "Use one of the following instead:"
-msgstr "代わりに以下のいずれかを使用してください．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:7
-msgid ":func:`DataSetAttributes.set_array`"
-msgstr ":func:`DataSetAttributes.set_array`"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:8
-msgid ":func:`DataSetAttributes.set_scalars`"
-msgstr ":func:`DataSetAttributes.set_scalars`"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:9
-msgid ":func:`DataSetAttributes.set_vectors`"
-msgstr ":func:`DataSetAttributes.set_vectors`"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.core.datasetattributes.DataSetAttributes.append:10
-msgid "The ``[]`` operator"
-msgstr "演算子 ``[]``"
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.clear:2
@@ -14924,6 +14662,11 @@ msgid "You can also use the ``del`` statement."
 msgstr "また， ``del`` ステートメントを使用することもできます．"
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.core.datasetattributes.DataSetAttributes.set_array:2
+msgid "Add an array to this object."
+msgstr "このオブジェクトに配列を追加します．"
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.set_array:4
 msgid ""
 "Use this method when adding arrays to the DataSet.  If needed, these arrays "
@@ -15131,19 +14874,6 @@ msgstr ""
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSetAttributes.rst:3
 msgid "Add random vectors to a mesh as point data."
 msgstr "ランダムなベクトルを点データとしてメッシュに追加します．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.t_coords:2
-msgid "Return the active texture coordinates."
-msgstr "アクティブなテクスチャーの座標を返します．"
-
-#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.t_coords:4
-msgid ""
-"Use :attr:`DataSetAttributes.active_t_coords` to return the active texture "
-"coordinates."
-msgstr ""
-"アクティブなテクスチャの座標を返すには， :attr:`DataSetAttributes.active_t_coords` を使用します．"
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.update:2
@@ -16039,6 +15769,94 @@ msgid ""
 ":func:`pyvista.DataSetFilters.cell_data_to_point_data`."
 msgstr ""
 "このメソッドは :func:`pyvista.DataSetFilters.cell_data_to_point_data` のエイリアスです．"
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:50
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:28
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clean:42
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:18
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:16
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:31
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.StructuredGrid:53
+#: ../../pyvista/pyvista/demos/demos.pydocstring of
+#: pyvista.demos.demos.plot_glyphs:12
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.plot_cell:24
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:20
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor.plot:19
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:15
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:89
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:59
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_grid:13
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:30
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:30
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCrossCap:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:18
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:23
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:15
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:48
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:39
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:15
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
+msgid "Depreciated keyword argument ``pass_cell_arrays``."
+msgstr "非推奨のキーワード引数 ``pass_cell_arrays`` ．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.ctp:25
@@ -17003,18 +16821,7 @@ msgid "Preserve input mesh's original point data arrays."
 msgstr "入力メッシュのオリジナルのポイントデータ配列を保持．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:57
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:36
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:32
-msgid ""
-"Depreciated keyword arguments ``pass_cell_arrays`` and "
-"``pass_point_arrays``."
-msgstr "非推奨のキーワード引数 ``pass_point_arrays`` と ``pass_point_arrays`` ．"
-
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:63
+#: pyvista.core.filters.data_set.DataSetFilters.interpolate:59
 msgid "Interpolated dataset.  Return type matches input."
 msgstr "補間されたデータセット． 戻り値のタイプは入力と一致します．"
 
@@ -17796,7 +17603,7 @@ msgid ""
 msgstr "``FindCell()`` を実行するためのセルロケータのプロトタイプです．VTK 9.0.0以降が必要です．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:42
+#: pyvista.core.filters.data_set.DataSetFilters.probe:38
 msgid "Dataset containing the probed data."
 msgstr "プロービングされたデータを含みますデータセット"
 
@@ -17811,6 +17618,11 @@ msgid ""
 ":func:`pyvista.DataSetFilters.point_data_to_cell_data`."
 msgstr ""
 "このメソッドは :func:`pyvista.DataSetFilters.point_data_to_cell_data` のエイリアスです．"
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
+msgid "Depreciated keyword argument ``pass_point_arrays``."
+msgstr "非推奨のキーワード引数 ``pass_point_arrays`` ．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.reflect:2
@@ -17882,7 +17694,7 @@ msgstr ""
 "サンプリング元のvtkデータオブジェクトと，このオブジェクトからのセル配列は， ``dataset`` メッシュのノードにサンプリングされます．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:38
+#: pyvista.core.filters.data_set.DataSetFilters.sample:34
 msgid "Dataset containing resampled data."
 msgstr "リサンプリングされたデータを含みますデータセットです．"
 
@@ -36452,7 +36264,7 @@ msgstr "ルックアップテーブルを ``'inferno'`` カラーマップでプ
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.above_range_color:2
 msgid "Return or set the above range color."
-msgstr "上範囲の色を返すか設定します．"
+msgstr "上記の範囲の色を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.above_range_color:4
@@ -36472,11 +36284,11 @@ msgstr "上記の範囲の色を使用できないようにします．"
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.above_range_opacity:2
 msgid "Return or set the above range opacity."
-msgstr ""
+msgstr "上記の範囲の不透明度を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Set the above range opacity to ``0.5``."
-msgstr ""
+msgstr "上記の範囲の不透明度を ``0.5`` に設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.alpha_range:2
@@ -36649,7 +36461,7 @@ msgstr "ルックアップテーブルにユーザー定義のカスタムオパ
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:2
 msgid "Return or set the below range color."
-msgstr "下範囲の色を返すか設定します．"
+msgstr "下記の範囲の色を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_color:4
@@ -36669,11 +36481,11 @@ msgstr "下記の範囲の色を使用できないようにします．"
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.below_range_opacity:2
 msgid "Return or set the below range opacity."
-msgstr ""
+msgstr "下記の範囲の不透明度を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Set the below range opacity to ``0.5``."
-msgstr ""
+msgstr "下記の範囲の不透明度を ``0.5`` に設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.cmap:2
@@ -36772,7 +36584,7 @@ msgstr "1024個の値を持つデフォルトカラーマップをプロット�
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.nan_color:2
 msgid "Return or set the not a number (NAN) color."
-msgstr "NAN（Not a Number）色を返すか設定します．"
+msgstr "NAN（Not a Number）の色を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.nan_color:4
@@ -36786,16 +36598,16 @@ msgstr "NAN の色を ``'grey'`` に設定します．"
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.nan_opacity:2
 msgid "Return or set the not a number (NAN) opacity."
-msgstr ""
+msgstr "NAN（Not a Number）の不透明度を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.LookupTable.nan_opacity:4
 msgid "Any values that are NANs will be rendered with this opacity."
-msgstr ""
+msgstr "NAN である値はすべてこの不透明度で描画されます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.LookupTable.rst:3
 msgid "Set the NAN opacity to ``0.5``."
-msgstr ""
+msgstr "NAN の不透明度を ``0.5`` に設定します．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.plot:2
@@ -41227,7 +41039,7 @@ msgstr "上記範囲のデフォルトの色を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the above range color to red."
-msgstr "上範囲の色を赤に設定します．"
+msgstr "上記の範囲の色を赤に設定します．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.anti_aliasing:2
@@ -41312,7 +41124,7 @@ msgstr "下記範囲のデフォルトの色を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the below range color to blue."
-msgstr "下範囲の色を青に設定します．"
+msgstr "下記の範囲の色を青に設定します．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.camera:2
@@ -53568,7 +53380,7 @@ msgstr "対応色一覧は下表をご参照ください．"
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.Color.opacity:2
 msgid "Return the opacity of this color in the range of ``(0-255)``."
-msgstr ""
+msgstr "この色の不透明度を ``(0-255)`` の範囲で返します．"
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color.srgb_to_linear:2
