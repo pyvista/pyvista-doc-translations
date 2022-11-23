@@ -16727,6 +16727,8 @@ msgid ""
 " be customized with the ``pass_point_data`` and ``pass_cell_data`` "
 "parameters."
 msgstr ""
+"入力データセットは通常，点群です．ソースメッシュの点データのみが，このメッシュの点上に補間されます．このメッシュの既存の点データとセルデータを出力に保持するかどうかは，"
+" ``pass_point_data`` と ``pass_cell_data`` パラメータでカスタマイズすることができます．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.interpolate:10
@@ -22915,7 +22917,7 @@ msgstr "または，法線を計算するときに新しいメッシュを作成
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:2
 msgid "Generate filled contours."
-msgstr ""
+msgstr "塗りつぶしコンターを生成します．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:4
@@ -22924,6 +22926,8 @@ msgid ""
 "cells that all have the same cell scalar value, and can therefore be colored"
 " the same. The method is also referred to as filled contour generation."
 msgstr ""
+"vtkPolyData "
+"の塗りつぶし等高線を生成します．塗りつぶし輪郭は，すべて同じセルスカラー値を持つセルの帯であり，したがって同じ色を付けることができます．このメソッドは，塗りつぶし輪郭の生成とも呼ばれます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:9
@@ -22931,21 +22935,24 @@ msgid ""
 "This filter implements `vtkBandedPolyDataContourFilter "
 "<https://vtk.org/doc/nightly/html/classvtkBandedPolyDataContourFilter.html>`_."
 msgstr ""
+"このフィルタは `vtkBandedPolyDataContourFilter "
+"<https://vtk.org/doc/nightly/html/classvtkBandedPolyDataContourFilter.html>`_"
+" を実装しています．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:15
 msgid "**n_contours** : :class:`python:int`"
-msgstr ""
+msgstr "**n_contours** : :class:`python:int`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:15
 msgid "Number of contours."
-msgstr ""
+msgstr "色数．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:19
 msgid "**rng** : :obj:`Sequence`, :obj:`optional`"
-msgstr ""
+msgstr "**rng** : :obj:`Sequence`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:18
@@ -22957,25 +22964,25 @@ msgstr "Sequence, optional"
 msgid ""
 "Range of the scalars. Optional and defaults to the minimum and maximum of "
 "the active scalars of ``scalars``."
-msgstr ""
+msgstr "スカラーの範囲．オプションでデフォルトは ``scalars`` のアクティブスカラーの最小値と最大値です．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:22
 msgid ""
 "The name of the scalar array to use for contouring.  If ``None``, the active"
 " scalar array will be used."
-msgstr ""
+msgstr "輪郭抽出に利用するスカラ配列の名前． ``None`` ならば，アクティブなスカラ配列が利用されます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:26
 msgid ""
 "The component to use of an input scalars array with more than one component."
-msgstr ""
+msgstr "複数のコンポーネントを持つ入力スカラー配列の，使用するコンポーネント．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:33
 msgid "**clip_tolerance** : :class:`python:float`, :obj:`optional`"
-msgstr ""
+msgstr "**clip_tolerance** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:30
@@ -22985,6 +22992,9 @@ msgid ""
 "actual internal clip tolerance is computed by multiplying ``clip_tolerance``"
 " by the scalar range."
 msgstr ""
+"クリップの許容誤差を設定/取得します．警告: "
+"これを大きく設定しすぎると，確実に数値上の問題が発生します．デフォルトの値から変更する場合は，自己責任でお願いします．実際の内部クリップの許容誤差は， "
+"``clip_tolerance`` にスカラーレンジを掛けて計算されます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:38
@@ -22992,6 +23002,8 @@ msgid ""
 "**generate_contour_edges** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:True`"
 msgstr ""
+"**generate_contour_edges** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:True`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:36
@@ -23000,16 +23012,17 @@ msgid ""
 "between bands. If enabled, they are generated from polygons/triangle strips "
 "and returned as a second output."
 msgstr ""
+"コンターエッジを生成するかどうかを制御します．コンターエッジとはバンド間のエッジのことです．有効にすると，ポリゴン/三角形の帯から生成され，2番目の出力として返されます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:44
 msgid "**scalar_mode** : :class:`python:str`, default: 'value'"
-msgstr ""
+msgstr "**scalar_mode** : :class:`python:str`, default: 'value'"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:43
 msgid "python:str, default: 'value'"
-msgstr ""
+msgstr "python:str, default: 'value'"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:41
@@ -23019,6 +23032,9 @@ msgid ""
 "clipping range. If ``'value'``, then a scalar value which is a value between"
 " clip values is used."
 msgstr ""
+"セルのスカラー値を，整数のインデックスとして出力するか，スカラー値として出力するかを制御します．もし ``'index'`` "
+"ならば，インデックスがクリップ範囲によって生成されるバンドを指します．もし ``'value'`` "
+"ならば，クリップ値の中間の値であるスカラー値が用いられます．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:48
@@ -23026,23 +23042,25 @@ msgid ""
 "**clipping** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
 msgstr ""
+"**clipping** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:47
 msgid ""
 "Indicate whether to clip outside ``rng`` and only return cells with values "
 "within ``rng``."
-msgstr ""
+msgstr "``rng`` の外側をクリップして， ``rng`` 内の値を持つセルのみを返すかどうかを指定します．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:56
 msgid "**output** : :obj:`pyvista.Polydata`"
-msgstr ""
+msgstr "**output** : :obj:`pyvista.Polydata`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:55
 msgid "pyvista.Polydata"
-msgstr ""
+msgstr "pyvista.Polydata"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:56
@@ -23052,7 +23070,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:68
 msgid "**edges** : :obj:`pyvista.PolyData`"
-msgstr ""
+msgstr "**edges** : :obj:`pyvista.PolyData`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:59
@@ -24226,6 +24244,8 @@ msgid ""
 "**use_scalar_weights** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
+"**use_scalar_weights** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:29
