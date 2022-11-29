@@ -71,8 +71,6 @@ Create a dataset to plot
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -123,6 +121,7 @@ segments they make.
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>99</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-4.084e+00, 4.084e+00</td></tr>
     <tr><td>Y Bounds</td><td>-3.281e+00, 5.000e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>
@@ -266,21 +265,21 @@ The spline can also be plotted as a plain line
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-109
+.. GENERATED FROM PYTHON SOURCE LINES 104-105
 
-Ribbons
-+++++++
+The radius of the tube can be modulated with scalars
 
-Ayy of the lines from the examples above can be used to create ribbons.
-Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
-
-.. GENERATED FROM PYTHON SOURCE LINES 109-112
+.. GENERATED FROM PYTHON SOURCE LINES 105-112
 
 .. code-block:: default
 
 
-    ribbon = spline.compute_arc_length().ribbon(width=0.75, scalars='arc_length')
-    ribbon.plot(color=True)
+    spline["theta"] = 0.4 * np.arange(len(spline.points))
+    spline["radius"] = np.abs(np.sin(spline["theta"]))
+    tube = spline.tube(scalars="radius", absolute=True)
+    tube.plot(scalars="theta", smooth_shading=True)
+
+
 
 
 
@@ -293,31 +292,53 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 113-118
+
+Ribbons
++++++++
+
+Ayy of the lines from the examples above can be used to create ribbons.
+Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
+
+.. GENERATED FROM PYTHON SOURCE LINES 118-121
+
+.. code-block:: default
+
+
+    ribbon = spline.compute_arc_length().ribbon(width=0.75, scalars='arc_length')
+    ribbon.plot(color=True)
+
+
+
+.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_006.png
+   :alt: create spline
+   :srcset: /examples/00-load/images/sphx_glr_create-spline_006.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.030 seconds)
+   **Total running time of the script:** ( 0 minutes  1.877 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: create-spline.py <create-spline.py>`
 
-     :download:`Download Python source code: create-spline.py <create-spline.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-spline.ipynb <create-spline.ipynb>`
+      :download:`Download Jupyter notebook: create-spline.ipynb <create-spline.ipynb>`
 
 
 .. only:: html

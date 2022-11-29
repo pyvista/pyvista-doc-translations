@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-16 01:02+0000\n"
+"POT-Creation-Date: 2022-11-29 00:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/create-poly.rst:177
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:309
 #: ../../pyvista/doc/examples/00-load/create-polyhedron.rst:349
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:327
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:348
 #: ../../pyvista/doc/examples/00-load/create-structured-surface.rst:379
 #: ../../pyvista/doc/examples/00-load/create-surface-draped.rst:242
 #: ../../pyvista/doc/examples/00-load/create-tri-surface.rst:302
@@ -233,7 +233,6 @@ msgstr ""
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:79
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:144
 #: ../../pyvista/doc/examples/00-load/create-point-cloud.rst:266
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:74
 #: ../../pyvista/doc/examples/00-load/create-structured-surface.rst:135
 #: ../../pyvista/doc/examples/00-load/create-structured-surface.rst:200
 #: ../../pyvista/doc/examples/00-load/create-surface-draped.rst:120
@@ -1039,17 +1038,18 @@ msgstr ""
 msgid "Create a spline/polyline from a numpy array of XYZ vertices using :func:`pyvista.Spline`."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:89
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:87
 msgid "Now let's make a function that can create line cells on a :class:`pyvista.PolyData` mesh given that the points are in order for the segments they make."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:118
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:116
 msgid "<div class=\"output_subarea output_html rendered_html output_result\">\n"
 "\n"
 "<table>\n"
 "<tr><th>PolyData</th><th>Information</th></tr>\n"
 "<tr><td>N Cells</td><td>99</td></tr>\n"
 "<tr><td>N Points</td><td>100</td></tr>\n"
+"<tr><td>N Strips</td><td>0</td></tr>\n"
 "<tr><td>X Bounds</td><td>-4.084e+00, 4.084e+00</td></tr>\n"
 "<tr><td>Y Bounds</td><td>-3.281e+00, 5.000e+00</td></tr>\n"
 "<tr><td>Z Bounds</td><td>-2.000e+00, 2.000e+00</td></tr>\n"
@@ -1062,39 +1062,43 @@ msgid "<div class=\"output_subarea output_html rendered_html output_result\">\n"
 "<br />"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:160
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:159
 msgid "That tube has sharp edges at each line segment. This can be mitigated by creating a single PolyLine cell for all of the points"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:198
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:197
 msgid "You could also interpolate those points onto a parametric spline"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:217
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:216
 msgid "Plot spline as a tube"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:243
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:242
 msgid "The spline can also be plotted as a plain line"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:272
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:270
+msgid "The radius of the tube can be modulated with scalars"
+msgstr ""
+
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:298
 msgid "Ribbons"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:274
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:300
 msgid "Ayy of the lines from the examples above can be used to create ribbons. Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter."
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:299
-msgid "**Total running time of the script:** ( 0 minutes  2.030 seconds)"
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:325
+msgid "**Total running time of the script:** ( 0 minutes  1.877 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:314
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:337
 msgid ":download:`Download Python source code: create-spline.py <create-spline.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/examples/00-load/create-spline.rst:320
+#: ../../pyvista/doc/examples/00-load/create-spline.rst:341
 msgid ":download:`Download Jupyter notebook: create-spline.ipynb <create-spline.ipynb>`"
 msgstr ""
 
@@ -2449,15 +2453,15 @@ msgid "Computation times"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:8
-msgid "**00:12.936** total execution time for **examples_00-load** files:"
+msgid "**00:01.877** total execution time for **examples_00-load** files:"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid ":ref:`sphx_glr_examples_00-load_create-pointset.py` (``create-pointset.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
-msgid "00:12.936"
+msgid "00:01.877"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:11
@@ -2780,19 +2784,19 @@ msgid ":ref:`sphx_glr_examples_00-load_create-point-cloud.py` (``create-point-cl
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:27
-msgid ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-pointset.py` (``create-pointset.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:29
-msgid ":ref:`sphx_glr_examples_00-load_create-polydata-strips.py` (``create-polydata-strips.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-poly.py` (``create-poly.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:31
-msgid ":ref:`sphx_glr_examples_00-load_create-polyhedron.py` (``create-polyhedron.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-polydata-strips.py` (``create-polydata-strips.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:33
-msgid ":ref:`sphx_glr_examples_00-load_create-spline.py` (``create-spline.py``)"
+msgid ":ref:`sphx_glr_examples_00-load_create-polyhedron.py` (``create-polyhedron.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:35
