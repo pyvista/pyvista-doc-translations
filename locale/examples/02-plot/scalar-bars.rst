@@ -81,8 +81,8 @@ scalar bar plotting:
 We could also plot the scene with an interactive scalar bar to move around
 and place where we like by specifying passing keyword arguments to control
 the scalar bar via the ``scalar_bar_args`` parameter in
-:func:`pyvista.BasePlotter.add_mesh`. The keyword arguments to control the
-scalar bar are defined in :func:`pyvista.BasePlotter.add_scalar_bar`.
+:func:`pyvista.Plotter.add_mesh`. The keyword arguments to control the
+scalar bar are defined in :func:`pyvista.Plotter.add_scalar_bar`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 39-50
 
@@ -232,28 +232,23 @@ must be the value to annotate, and the value must be the string label.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.053 seconds)
+   **Total running time of the script:** ( 0 minutes  2.997 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: scalar-bars.py <scalar-bars.py>`
 
-     :download:`Download Python source code: scalar-bars.py <scalar-bars.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: scalar-bars.ipynb <scalar-bars.ipynb>`
+      :download:`Download Jupyter notebook: scalar-bars.ipynb <scalar-bars.ipynb>`
 
 
 .. only:: html

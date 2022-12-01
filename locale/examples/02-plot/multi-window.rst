@@ -43,7 +43,7 @@ Subplotting: having multiple scenes in a single window
 
 This example shows how to create a multi-window plotter by specifying the
 ``shape`` parameter.  The window generated is a two by two window by setting
-``shape=(2, 2)``. Use the :func:`pyvista.BasePlotter.subplot` function to
+``shape=(2, 2)``. Use the :func:`pyvista.Plotter.subplot` method to
 select the subplot you wish to be the active subplot.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-45
@@ -204,7 +204,7 @@ largest (row or column) id that is passed through the list or slice.
     plotter = pv.Plotter(shape=shape, row_weights=row_weights, col_weights=col_weights, groups=groups)
 
     # A grouped subplot can be activated through any of its composing cells using
-    # the :func:`pyvista.BasePlotter.subplot` function.
+    # the subplot() method.
 
     # Access all subplots and groups and plot something:
     plotter.subplot(0, 0)
@@ -265,28 +265,23 @@ largest (row or column) id that is passed through the list or slice.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.635 seconds)
+   **Total running time of the script:** ( 0 minutes  2.604 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: multi-window.py <multi-window.py>`
 
-     :download:`Download Python source code: multi-window.py <multi-window.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: multi-window.ipynb <multi-window.ipynb>`
+      :download:`Download Jupyter notebook: multi-window.ipynb <multi-window.ipynb>`
 
 
 .. only:: html

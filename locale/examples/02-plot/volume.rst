@@ -108,7 +108,7 @@ Simple Volume Render
 Opacity Mappings
 ++++++++++++++++
 
-Or use the :func:`pyvista.BasePlotter.add_volume` method like below.
+Or use the :func:`pyvista.Plotter.add_volume` method like below.
 Note that here we use a non-default opacity mapping to a sigmoid:
 
 .. GENERATED FROM PYTHON SOURCE LINES 40-46
@@ -417,28 +417,23 @@ Ah, much better. Let's now volume render that region of interest!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  39.019 seconds)
+   **Total running time of the script:** ( 0 minutes  26.817 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: volume.py <volume.py>`
 
-     :download:`Download Python source code: volume.py <volume.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: volume.ipynb <volume.ipynb>`
+      :download:`Download Jupyter notebook: volume.ipynb <volume.ipynb>`
 
 
 .. only:: html
