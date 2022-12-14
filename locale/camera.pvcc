@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<PVCameraConfiguration description="ParaView camera configuration" version="1.0">
+	<Proxy group="views" type="RenderView" id="0" servers="21">
+		<Property name="CameraPosition" id="0.CameraPosition" number_of_elements="3">
+			<Element index="0" value="1.0"/>
+			<Element index="1" value="1.0"/>
+			<Element index="2" value="1.0"/>
+		</Property>
+		<Property name="CameraFocalPoint" id="0.CameraFocalPoint" number_of_elements="3">
+			<Element index="0" value="0.0"/>
+			<Element index="1" value="0.0"/>
+			<Element index="2" value="0.0"/>
+		</Property>
+		<Property name="CameraViewUp" id="0.CameraViewUp" number_of_elements="3">
+			<Element index="0" value="0.0"/>
+			<Element index="1" value="0.0"/>
+			<Element index="2" value="1.0"/>
+		</Property>
+		<Property name="CameraViewAngle" id="0.CameraViewAngle" number_of_elements="1">
+			<Element index="0" value="30.0"/>
+		</Property>
+		<Property name="CameraParallelScale" id="0.CameraParallelScale" number_of_elements="1">
+			<Element index="0" value="1.0"/>
+		</Property>
+		<Property name="CameraParallelProjection" id="0.CameraParallelProjection" number_of_elements="1">
+			<Element index="0" value="0"/>
+			<Domain name="bool" id="0.CameraParallelProjection.bool"/>
+		</Property>
+	</Proxy>
+</PVCameraConfiguration>

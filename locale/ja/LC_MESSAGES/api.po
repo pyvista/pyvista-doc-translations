@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-13 01:17+0000\n"
+"POT-Creation-Date: 2022-12-14 00:59+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -843,7 +843,11 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:0
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.tight:0
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -2397,9 +2401,13 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.enable_parallel_projection:20
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:23
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.reset_clipping_range:17
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.tight:43
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:21
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:26
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -3266,7 +3274,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.wrap:31
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:28
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:34
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBour:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -3274,7 +3282,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:28
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:47
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:43
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCrossCap:28
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -3298,17 +3306,17 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPseudosphere:29
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:65
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:57
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:28
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:52
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:64
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:63
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:32
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.Spline:30
+#: pyvista.utilities.parametric_objects.Spline:29
 #: ../../pyvista/pyvista/utilities/reader.pydocstring of
 #: pyvista.BaseReader.path:17
 #: ../../pyvista/pyvista/utilities/reader.pydocstring of
@@ -4932,6 +4940,39 @@ msgid "Location of the camera's focus in world coordinates."
 msgstr "全体座標におけるカメラの焦点の位置．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:2
+msgid "Load a Paraview camera file (.pvcc extension)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:4
+msgid ""
+"Returns a pyvista.Camera object for which attributes has been read from the "
+"filename argument."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:20
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:18
+msgid "**filename** : :class:`python:str` or :obj:`pathlib.Path`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:19
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:17
+msgid "python:str or pathlib.Path"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:10
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:8
+msgid "Path to Paraview camera file (.pvcc)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.model_transform_matrix:2
 msgid "Return or set the camera's model transformation matrix."
 msgstr "カメラのモデル変換行列を返すか設定します．"
@@ -5296,75 +5337,7 @@ msgstr "**padding** : :class:`python:float`, :obj:`optional`"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBoy:13
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:21
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:15
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:18
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKuen:13
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:18
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:22
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:36
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:44
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:20
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:23
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:20
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:23
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:29
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:32
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:35
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.parametric_keywords:10
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -6738,6 +6711,12 @@ msgstr "子犬の画像をタイトに表示します．"
 msgid "Set the background to blue use a 5% padding around the image."
 msgstr "背景を青に設定し，画像の周りに5%のパディングを使用します．"
 
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.to_paraview_pvcc:2
+msgid ""
+"Write the camera parameters to a Paraview camera file (.pvcc extension)."
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.up:2
 msgid "Return or set the \"up\" of the camera."
 msgstr "カメラの \"up\" または設定します．"
@@ -7006,7 +6985,7 @@ msgstr "平面を計算するビューポートのアスペクト．デフォル
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vector_poly_data:27
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:25
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:31
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBour:22
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -7014,7 +6993,7 @@ msgstr "平面を計算するビューポートのアスペクト．デフォル
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:44
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:40
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCrossCap:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -7038,17 +7017,17 @@ msgstr "平面を計算するビューポートのアスペクト．デフォル
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPseudosphere:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:62
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:54
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:38
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:50
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:49
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:29
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.Spline:27
+#: pyvista.utilities.parametric_objects.Spline:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.surface_from_para:38
 msgid ":obj:`pyvista.PolyData`"
@@ -9437,6 +9416,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.composite.CompositeFilters.outline_corners:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:14
 msgid "python:float, default: 0.2"
 msgstr ""
 
@@ -9802,12 +9785,6 @@ msgstr "**n** : :class:`python:int`, :obj:`optional`"
 #: pyvista.utilities.helpers.convert_array:16
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPluckerConoid:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:32
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.Spline:12
 msgid "python:int, optional"
 msgstr "python:int, optional"
 
@@ -13098,7 +13075,7 @@ msgstr "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.save_meshio:29
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:10
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:16
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBour:7
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -13106,7 +13083,7 @@ msgstr "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:10
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:29
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCrossCap:10
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -13130,13 +13107,13 @@ msgstr "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPseudosphere:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:47
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:39
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:10
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:37
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:14
 msgid "python:dict, optional"
@@ -15847,7 +15824,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.save_meshio:30
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:17
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBour:8
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -15855,7 +15832,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:30
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCrossCap:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -15879,13 +15856,13 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:48
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:39
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:15
 msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
@@ -15936,6 +15913,12 @@ msgstr "**target_reduction** : :class:`python:float`, default: 0.5"
 #: pyvista.utilities.geometric_objects.Text3D:10
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Wavelet:38
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:19
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:11
 msgid "python:float, default: 0.5"
 msgstr "python:float, default: 0.5"
 
@@ -16041,6 +16024,8 @@ msgstr "**factor** : :class:`python:float`, default: 0.1"
 #: pyvista.core.filters.data_set.DataSetFilters.explode:9
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Arrow:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:18
 msgid "python:float, default: 0.1"
 msgstr "python:float, default: 0.1"
 
@@ -16744,12 +16729,6 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.tube:11
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:19
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:8
 msgid "**radius** : :class:`python:float`, :obj:`optional`"
 msgstr "**radius** : :class:`python:float`, :obj:`optional`"
 
@@ -16802,8 +16781,6 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.interpolate:49
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.streamlines:33
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.Spline:13
 msgid "**n_points** : :class:`python:int`, :obj:`optional`"
 msgstr "**n_points** : :class:`python:int`, :obj:`optional`"
 
@@ -23603,6 +23580,10 @@ msgstr "**offset** : :class:`python:float`, default: 1.0"
 #: pyvista.utilities.geometric_objects.Tetrahedron:8
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Tube:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:13
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:8
 msgid "python:float, default: 1.0"
 msgstr "python:float, default: 1.0"
 
@@ -49243,6 +49224,8 @@ msgstr "**shaft_radius** : :class:`python:float`, default: 0.05"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Arrow:22
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:13
 msgid "python:float, default: 0.05"
 msgstr "python:float, default: 0.05"
 
@@ -54128,6 +54111,8 @@ msgstr "**r_res** : :class:`python:int`, default: 1"
 #: pyvista.utilities.geometric_objects.Tube:13
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Wavelet:41
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:27
 #: ../../pyvista/pyvista/utilities/regression.pydocstring of
 #: pyvista.utilities.regression.compare_images:17
 msgid "python:int, default: 1"
@@ -54375,20 +54360,41 @@ msgstr "Bohemianドーム面を生成します．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBohemianDome:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:11
-msgid "**a** : :class:`python:float`, :obj:`optional`"
-msgstr "**a** : :class:`python:float`, :obj:`optional`"
+msgid "**a** : :class:`python:float`, default: 0.5"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBohemianDome:8
-msgid "Bohemian dome surface parameter."
-msgstr "Bohemianドーム面パラメータ．"
+msgid "Bohemian dome surface parameter a."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
+msgid "**b** : :class:`python:float`, default: 1.5"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:10
+msgid "python:float, default: 1.5"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
+msgid "Bohemian dome surface parameter b."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:14
+msgid "**c** : :class:`python:float`, default: 1.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:14
+msgid "Bohemian dome surface parameter c."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:17
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBour:8
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -54396,7 +54402,7 @@ msgstr "Bohemianドーム面パラメータ．"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:30
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:26
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricCrossCap:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -54418,20 +54424,20 @@ msgstr "Bohemianドーム面パラメータ．"
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:48
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:11
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:39
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:15
 msgid "See :func:`surface_from_para` for additional keyword arguments."
 msgstr "その他のキーワード引数については， :func:`surface_from_para` を参照してください．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:16
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:22
 msgid "ParametricBohemianDome surface."
 msgstr "ParametricBohemianDome表面．"
 
@@ -54548,49 +54554,100 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricConicSpiral:11
-msgid "The scale factor. Default is 0.2."
-msgstr "スケールファクターです．デフォルトは0.2です．"
+msgid "**a** : :class:`python:float`, default: 0.2"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:15
-msgid "**b** : :class:`python:float`, :obj:`optional`"
-msgstr "**b** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:11
+msgid "The scale factor."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricConicSpiral:15
+msgid "**b** : :class:`python:float`, default: 1"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:15
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:18
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:20
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:23
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:22
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:25
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:28
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:31
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:34
+msgid "python:float, default: 1"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:14
 msgid ""
 "The A function coefficient. See the definition in Parametric surfaces "
-"referred to above. Default is 1."
-msgstr "A関数の係数です．上記の Parametric surfaces の定義を参照してください．デフォルトは1です．"
+"referred to above."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:19
+msgid "**c** : :class:`python:float`, default: 0.1"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:18
+msgid ""
+"The B function coefficient. See the definition in Parametric surfaces "
+"referred to above."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:23
+msgid "**n** : :class:`python:float`, default: 2"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricConicSpiral:22
-msgid "**c** : :class:`python:float`, :obj:`optional`"
-msgstr "**c** : :class:`python:float`, :obj:`optional`"
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:22
+msgid "python:float, default: 2"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:20
-msgid ""
-"The B function coefficient. See the definition in Parametric surfaces "
-"referred to above. Default is 0.1."
-msgstr "B関数の係数です．上記の Parametric surfaces の定義を参照してください．デフォルトは0.1です．"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:27
-msgid "**n** : :class:`python:float`, :obj:`optional`"
-msgstr "**n** : :class:`python:float`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:25
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:22
 msgid ""
 "The C function coefficient. See the definition in Parametric surfaces "
-"referred to above. Default is 2."
-msgstr "C関数の係数です．上記の Parametric surfaces の定義を参照してください．デフォルトは2です．"
+"referred to above."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:35
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:31
 msgid "ParametricConicSpiral surface."
 msgstr "ParametricConicSpiral表面．"
 
@@ -54645,18 +54702,23 @@ msgid ""
 msgstr "ParametricDiniはDiniの表面を生成します．Diniの表面は一定の負のGauss曲率を持つ表面です"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:10
-msgid ""
-"The scale factor.  See the definition in Parametric surfaces referred to "
-"above.  Default is 1."
-msgstr "スケール係数．上記の Parametric surfaces の定義を参照してください．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricDini:11
+msgid "**a** : :class:`python:float`, default: 1"
+msgstr ""
 
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:10
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricDini:14
 msgid ""
 "The scale factor.  See the definition in Parametric surfaces referred to "
-"above.  Default is 0.2."
-msgstr "スケール係数．上記の Parametric surfaces の定義を参照してください．デフォルトは0.2です．"
+"above."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:15
+msgid "**b** : :class:`python:float`, default: 0.2"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricDini:23
@@ -54695,54 +54757,54 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:24
-msgid "**xradius** : :class:`python:float`, :obj:`optional`"
-msgstr "**xradius** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:23
+msgid "**xradius** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:13
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:12
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:24
-msgid "The scaling factor for the x-axis. Default is 1."
-msgstr "x軸の倍率．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:23
+msgid "The scaling factor for the x-axis."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:16
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:15
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:27
-msgid "**yradius** : :class:`python:float`, :obj:`optional`"
-msgstr "**yradius** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:26
+msgid "**yradius** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:16
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:15
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:27
-msgid "The scaling factor for the y-axis. Default is 1."
-msgstr "y軸の倍率．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:26
+msgid "The scaling factor for the y-axis."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:19
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:18
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:30
-msgid "**zradius** : :class:`python:float`, :obj:`optional`"
-msgstr "**zradius** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:29
+msgid "**zradius** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:19
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:18
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:30
-msgid "The scaling factor for the z-axis. Default is 1."
-msgstr "Z軸の倍率．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:29
+msgid "The scaling factor for the z-axis."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricEllipsoid:22
@@ -54811,8 +54873,17 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricFigure8Klein:11
-msgid "The radius of the bottle. Default is 1."
-msgstr "ボトルの半径．デフォルトは1です．"
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:8
+msgid "**radius** : :class:`python:float`, default: 1"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:11
+msgid "The radius of the bottle."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricFigure8Klein:19
@@ -54890,19 +54961,17 @@ msgstr "ParametricKuenはKuensのサーフェスを生成します．このサ�
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricKuen:14
-msgid "**deltav0** : :class:`python:float`, :obj:`optional`"
-msgstr "**deltav0** : :class:`python:float`, :obj:`optional`"
+msgid "**deltav0** : :class:`python:float`, default: 0.05"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricKuen:10
 msgid ""
-"The value to use when ``V == 0``. Default is 0.05, giving the best "
-"appearance with the default settings. Setting it to a value less than 0.05 "
-"extrapolates the surface towards a pole in the -z direction. Setting it to 0"
-" retains the pole whose z-value is -inf."
+"The value to use when ``V == 0``. This has the best appearance with the "
+"default settings. Setting it to a value less than 0.05 extrapolates the "
+"surface towards a pole in the -z direction. Setting it to 0 retains the pole"
+" whose z-value is -inf."
 msgstr ""
-"``V == 0`` の場合に使用する値です．デフォルトは0.05で，デフォルトの設定で最適な外観が得られます．0.05未満の値に設定すると，表面は-"
-"z方向の極に向かって外挿されます．0に設定すると，Z値が-infの極が保持されます．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricKuen:22
@@ -54925,8 +54994,8 @@ msgstr "Mobiusの帯を生成します．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricMobius:8
-msgid "The radius of the Mobius strip. Default is 1."
-msgstr "Mobiusの帯の半径．デフォルトは1です．"
+msgid "The radius of the Mobius strip."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricMobius:16
@@ -55021,91 +55090,115 @@ msgstr ""
 "ParametricRandomHillsは，ランダムに配置された丘で覆われた表面を生成します．丘の形状と高さは，隣接する丘の存在が丘の形状と高さに影響するため，丘の形状と高さはさまざまです．サーフェス上の通常のグリッドに丘を配置するためのオプションが用意されています．この場合，丘はすべて同じ形状と高さになります．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:15
-msgid "**numberofhills** : :class:`python:int`, :obj:`optional`"
-msgstr "**numberofhills** : :class:`python:int`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:14
+msgid "**numberofhills** : :class:`python:int`, default: 30"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:17
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:21
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:13
+msgid "python:int, default: 30"
+msgstr "python:int, default: 30"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:14
-msgid "The number of hills. Default is 30."
-msgstr "丘の数．デフォルトは30です．"
+msgid "The number of hills."
+msgstr ""
 
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:17
+msgid "**hillxvariance** : :class:`python:float`, default: 2.5"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:16
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:19
-msgid "**hillxvariance** : :class:`python:float`, :obj:`optional`"
-msgstr "**hillxvariance** : :class:`python:float`, :obj:`optional`"
+msgid "python:float, default: 2.5"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:18
-msgid "The hill variance in the x-direction. Default is 2.5."
-msgstr "x方向の丘の変化．デフォルトは2.5です．"
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:17
+msgid "The hill variance in the x-direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:20
+msgid "**hillyvariance** : :class:`python:float`, default: 2.5"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:20
+msgid "The hill variance in the y-direction."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:23
-msgid "**hillyvariance** : :class:`python:float`, :obj:`optional`"
-msgstr "**hillyvariance** : :class:`python:float`, :obj:`optional`"
+msgid "**hillamplitude** : :class:`python:float`, default: 2"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:22
-msgid "The hill variance in the y-direction. Default is 2.5."
-msgstr "y方向の丘の変化．デフォルトは2.5です．"
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:23
+msgid "The hill amplitude (height)."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:27
-msgid "**hillamplitude** : :class:`python:float`, :obj:`optional`"
-msgstr "**hillamplitude** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:28
+msgid "**randomseed** : :class:`python:int`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:26
-msgid "The hill amplitude (height). Default is 2."
-msgstr "丘の振幅 (高さ) ．デフォルトは2です．"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:33
-msgid "**randomseed** : :class:`python:int`, :obj:`optional`"
-msgstr "**randomseed** : :class:`python:int`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:30
 msgid ""
 "The Seed for the random number generator, a value of 1 will initialize the "
 "random number generator, a negative value will initialize it with the system"
-" time. Default is 1."
+" time."
 msgstr ""
-"乱数ジェネレータのシード値を1に設定すると乱数ジェネレータが初期化され，負の値に設定するとシステム時間で初期化されます．デフォルトは1です．"
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:31
+msgid "**xvariancescalefactor** : :class:`python:float`, default: 13"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:30
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:33
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:36
+msgid "python:float, default: 13"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:31
+msgid "The scaling factor for the variance in the x-direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:34
+msgid "**yvariancescalefactor** : :class:`python:float`, default: 13"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:34
+msgid "The scaling factor for the variance in the y-direction."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:37
-msgid "**xvariancescalefactor** : :class:`python:float`, :obj:`optional`"
-msgstr "**xvariancescalefactor** : :class:`python:float`, :obj:`optional`"
+msgid "**amplitudescalefactor** : :class:`python:float`, default: 13"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:36
-msgid "The scaling factor for the variance in the x-direction. Default is 13."
-msgstr "x方向の分散のスケール係数．デフォルトは13です．"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:41
-msgid "**yvariancescalefactor** : :class:`python:float`, :obj:`optional`"
-msgstr "**yvariancescalefactor** : :class:`python:float`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
-msgid "The scaling factor for the variance in the y-direction. Default is 13."
-msgstr "y方向の分散のスケール係数．デフォルトは13です．"
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:37
+msgid "The scaling factor for the amplitude."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRandomHills:45
-msgid "**amplitudescalefactor** : :class:`python:float`, :obj:`optional`"
-msgstr "**amplitudescalefactor** : :class:`python:float`, :obj:`optional`"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:44
-msgid "The scaling factor for the amplitude. Default is 13."
-msgstr "振幅のスケール係数．デフォルトは13です．"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:53
 msgid "ParametricRandomHills surface."
 msgstr "ParametricRandomHills表面．"
 
@@ -55125,8 +55218,8 @@ msgstr "SteinerのRoman表面を生成します．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:8
-msgid "The radius. Default is 1."
-msgstr "半径．デフォルトは1です．"
+msgid "The radius."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricRoman:16
@@ -55160,26 +55253,26 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:21
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:33
-msgid "**n1** : :class:`python:float`, :obj:`optional`"
-msgstr "**n1** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:32
+msgid "**n1** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:21
-msgid "The \"squareness\" parameter in the z axis.  Default is 1."
-msgstr "z軸の \"直角度\" パラメータ．デフォルトは1です．"
+msgid "The \"squareness\" parameter in the z axis."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:24
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:36
-msgid "**n2** : :class:`python:float`, :obj:`optional`"
-msgstr "**n2** : :class:`python:float`, :obj:`optional`"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:35
+msgid "**n2** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:24
-msgid "The \"squareness\" parameter in the x-y plane. Default is 1."
-msgstr "x-y平面の \"squareness\" パラメータ．デフォルトは1です．"
+msgid "The \"squareness\" parameter in the x-y plane."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:32
@@ -55201,14 +55294,14 @@ msgstr "Toroidal equivalent of ParametricSuperEllipsoid."
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:45
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:57
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:56
 msgid ":obj:`pyvista.Superquadric`"
 msgstr ":obj:`pyvista.Superquadric`"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:46
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:58
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:57
 msgid "Geometric object with additional parameters."
 msgstr "追加のパラメータを持つ幾何学的なオブジェクト．"
 
@@ -55250,55 +55343,51 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperToroid:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:9
-msgid "**ringradius** : :class:`python:float`, :obj:`optional`"
-msgstr "**ringradius** : :class:`python:float`, :obj:`optional`"
+msgid "**ringradius** : :class:`python:float`, default: 1"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperToroid:16
 msgid ""
-"The radius from the center to the middle of the ring of the supertoroid. "
-"Default is 1."
-msgstr "スーパートロイドのリングの中心から中心までの半径．デフォルトは1です．"
-
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:21
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:12
-msgid "**crosssectionradius** : :class:`python:float`, :obj:`optional`"
-msgstr "**crosssectionradius** : :class:`python:float`, :obj:`optional`"
+"The radius from the center to the middle of the ring of the supertoroid."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricSuperToroid:20
-msgid ""
-"The radius of the cross section of ring of the supertoroid. Default = 0.5."
-msgstr "スーパートロイドのリングの断面の半径．デフォルトは0.5です．"
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:12
+msgid "**crosssectionradius** : :class:`python:float`, default: 0.5"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:33
-msgid "The shape of the torus ring.  Default is 1."
-msgstr "トーラスリングの形状．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:20
+msgid "The radius of the cross section of ring of the supertoroid."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:36
-msgid "The shape of the cross section of the ring. Default is 1."
-msgstr "リングの断面の形状．デフォルトは1です．"
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:32
+msgid "The shape of the torus ring."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:44
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:35
+msgid "The shape of the cross section of the ring."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:43
 msgid "ParametricSuperToroid surface."
 msgstr "ParametricSuperToroid表面．"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Superquadric:54
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:55
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:54
 msgid ":obj:`pyvista.ParametricSuperEllipsoid`"
 msgstr ":obj:`pyvista.ParametricSuperEllipsoid`"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:56
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:55
 msgid "Ellipsoidal equivalent of ParametricSuperToroid."
 msgstr "ParametricSuperEllipsoidの環状体版です．"
 
@@ -55317,16 +55406,19 @@ msgid "Generate a torus."
 msgstr "トーラスを生成します．"
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:9
+msgid "**ringradius** : :class:`python:float`, default: 1.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:8
-msgid ""
-"The radius from the center to the middle of the ring of the torus. Default "
-"is 1.0."
-msgstr "円環体の中心から中央までの半径．デフォルトは1.0です．"
+msgid "The radius from the center to the middle of the ring of the torus."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:12
-msgid "The radius of the cross section of ring of the torus. Default is 0.5."
-msgstr "トーラスのリングの断面の半径．デフォルトは0.5です．"
+msgid "The radius of the cross section of ring of the torus."
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricTorus:20
@@ -55739,13 +55831,6 @@ msgstr "**theta_resolution** : :class:`python:int`, default: 30"
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Sphere:17
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Sphere:21
-msgid "python:int, default: 30"
-msgstr "python:int, default: 30"
-
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Sphere:17
 msgid ""
 "Set the number of points in the longitude direction (ranging from "
 "``start_theta`` to ``end_theta``)."
@@ -55852,13 +55937,21 @@ msgstr "スプラインを作成するポイントの配列です．配列は3 D
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.Spline:12
-msgid ""
-"Number of points to interpolate along the points array. By default this is "
-"the number of points in ``points``."
-msgstr "点配列に沿って補間する点の数．デフォルトでは， ``points`` に含まれる点の数が指定されます．"
+msgid "**n_points** : :class:`python:int`, default: :obj:`points.shape`\\[0]"
+msgstr ""
 
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.Spline:18
+#: pyvista.utilities.parametric_objects.Spline:11
+msgid "python:int, default: points.shape[0]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:12
+msgid "Number of points to interpolate along the points array."
+msgstr "点配列に沿って補間する点の数．"
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:17
 msgid "Line mesh of spline."
 msgstr "スプラインのラインメッシュです．"
 
@@ -58071,10 +58164,8 @@ msgstr ""
 #: ../../pyvista/doc/api/utilities/parametric.rst:37:<autosummary>:1
 msgid ""
 ":py:obj:`ParametricBohemianDome <pyvista.ParametricBohemianDome>`\\ "
-"\\(\\[a\\]\\)"
+"\\(\\[a\\, b\\, c\\]\\)"
 msgstr ""
-":py:obj:`ParametricBohemianDome <pyvista.ParametricBohemianDome>`\\ "
-"\\(\\[a\\]\\)"
 
 #: ../../pyvista/doc/api/utilities/parametric.rst:37:<autosummary>:1
 msgid ":py:obj:`ParametricBour <pyvista.ParametricBour>`\\ \\(\\*\\*kwargs\\)"
