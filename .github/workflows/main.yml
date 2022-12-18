@@ -10,12 +10,12 @@ on:
       - main
 jobs:
   script:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Setup Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Get Job URL
       uses: Tiryoh/gha-jobid-action@v0
       id: jobs
