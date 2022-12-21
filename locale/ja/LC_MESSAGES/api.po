@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 02:14+0000\n"
+"POT-Creation-Date: 2022-12-21 01:45+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -3214,7 +3214,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cylinder:41
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CylinderStructured:46
+#: pyvista.utilities.geometric_objects.CylinderStructured:51
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Disc:43
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -4884,6 +4884,8 @@ msgstr "カメラから焦点距離の距離を返すか設定します．"
 #: pyvista.plotting.plotting.Plotter.show:121
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Circle:26
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:44
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.cubemap:48
 #: ../../pyvista/pyvista/utilities/reader.pydocstring of
@@ -25946,7 +25948,7 @@ msgstr "この直方体のグリッドを構造格子にキャストします．
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_structured:18
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.CylinderStructured:43
+#: pyvista.utilities.geometric_objects.CylinderStructured:41
 msgid ":obj:`pyvista.StructuredGrid`"
 msgstr ":obj:`pyvista.StructuredGrid`"
 
@@ -54075,6 +54077,13 @@ msgstr "円柱の高さ (Z軸) に沿った点の数．"
 #: pyvista.utilities.geometric_objects.CylinderStructured:34
 msgid "Structured cylinder."
 msgstr "構造化円柱．"
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:45
+msgid ""
+"Prior to version 0.38, this method had incorrect results, producing "
+"inconsistent number of points on the circular face of the cylinder."
+msgstr ""
 
 #: ../../pyvista/doc/api/utilities/_autosummary/pyvista.CylinderStructured.rst:3
 msgid "Default structured cylinder"
