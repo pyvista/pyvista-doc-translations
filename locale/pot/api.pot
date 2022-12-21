@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 02:14+0000\n"
+"POT-Creation-Date: 2022-12-21 01:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1657,7 +1657,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cone:47
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cube:58
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Cylinder:41
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:46
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:51
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Disc:43
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Dodecahedron:30
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Icosahedron:31
@@ -2521,6 +2521,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.py:docstring of pyvista.plotting.lookup_table.LookupTable.rebuild:17
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.Plotter.show:121
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.Circle:26
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:44
 #: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.cubemap:48
 #: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.CGNSReader.load_boundary_patch:15
 #: ../../pyvista/pyvista/utilities/reader.py:docstring of pyvista.utilities.reader.VTKDataSetReader:15
@@ -15123,7 +15124,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.UniformGrid.cast_to_structured_grid:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.StructuredGrid.hide_cells:28
 #: ../../pyvista/pyvista/examples/examples.py:docstring of pyvista.examples.examples.load_structured:18
-#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:43
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:41
 msgid ":obj:`pyvista.StructuredGrid`"
 msgstr ""
 
@@ -35632,6 +35633,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:34
 msgid "Structured cylinder."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.py:docstring of pyvista.utilities.geometric_objects.CylinderStructured:45
+msgid "Prior to version 0.38, this method had incorrect results, producing inconsistent number of points on the circular face of the cylinder."
 msgstr ""
 
 #: ../../pyvista/doc/api/utilities/_autosummary/pyvista.CylinderStructured.rst:3
