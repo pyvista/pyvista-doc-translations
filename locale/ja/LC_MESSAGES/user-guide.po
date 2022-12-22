@@ -1180,6 +1180,10 @@ msgid ""
 "``threejs``, which does not require any server side rendering or "
 "framebuffer."
 msgstr ""
+"モジュールはすべてフレームバッファを必要とします．これは :func:`pyvista.start_xvfb` "
+"を使ったヘッドレス環境で設定できます．しかし，システムパッケージをインストールできないGoogle Colabでは， "
+"システムパッケージをインストールすることができないので，サーバーサイドレンダリングやフレームバッファを必要としない ``threejs`` "
+"のようなモジュールを使うべきです．"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:135
 msgid ""
@@ -1357,6 +1361,11 @@ msgid ""
 "html documentation (as shown here), rapid plotting (as compared to the other"
 " client jupyterlab plotting modules like ``panel``)."
 msgstr ""
+"`ipygany <https://github.com/QuantStack/ipygany>`_ jupyterlabプロットバックエンドは， "
+"`pythreejs widget <https://github.com/jupyter-widgets/pythreejs>`_ を介して "
+"`threejs <https://threejs.org/>`_ を活用した純粋なプロッティングを可能にする強力なモジュールです．(ここに示すように)"
+" HTMLドキュメントの埋め込み，( ``panel`` などの他のクライアントjupyterlabプロットモジュールと比較して) "
+"高速プロッティングを可能にします．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:18
 msgid ""
