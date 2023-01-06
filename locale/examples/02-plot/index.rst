@@ -879,6 +879,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Display vertices on a mesh in the same fashion as edge visibility.">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_vertices_thumb.png
+    :alt: Visible Vertices
+
+  :ref:`sphx_glr_examples_02-plot_vertices.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Visible Vertices</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Volume render uniform mesh types like pyvista.UniformGrid or 3D NumPy arrays.">
 
 .. only:: html
@@ -952,5 +969,6 @@ plotting routines to perform tasks like:
    /examples/02-plot/themes
    /examples/02-plot/topo-map
    /examples/02-plot/vector-component
+   /examples/02-plot/vertices
    /examples/02-plot/volume
 

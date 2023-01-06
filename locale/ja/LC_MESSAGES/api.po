@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2022
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 01:54+0000\n"
+"POT-Creation-Date: 2023-01-06 01:50+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2022\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,6 +31,14 @@ msgstr "pyvista.Camera"
 msgid "PyVista wrapper for the VTK Camera class."
 msgstr "VTK CameraクラスのPyVistaラッパー．"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:0 ../../pyvista/pyvista/core/cell.pydocstring
+#: of pyvista.core.cell.Cell.get_edge:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.append:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -117,6 +125,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.dataset.DataSet.get_array:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array_association:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1302,6 +1312,25 @@ msgid "Renderer to attach the camera to."
 msgstr "カメラを装着するレンダラ．"
 
 #: ../../pyvista/doc/api/examples/index.rst:2
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:19
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:39
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_unstructured_grid:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:27 ../../pyvista/pyvista/core/cell.pydocstring
+#: of pyvista.core.cell.Cell.get_edge:25
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:25
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:22
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1377,6 +1406,7 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.DataSet.array_names:18
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.cell_data:17 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.center:17 ../../pyvista/pyvista/core/dataset.pydocstring
@@ -1395,15 +1425,15 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_bounds:25
+#: pyvista.core.dataset.DataSet.cell_bounds:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:25
+#: pyvista.core.dataset.DataSet.cell_n_points:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:25
+#: pyvista.core.dataset.DataSet.cell_point_ids:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:26
+#: pyvista.core.dataset.DataSet.cell_points:28
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:25
+#: pyvista.core.dataset.DataSet.cell_type:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_data:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1434,6 +1464,8 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.core.dataset.DataSet.get_array:30
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array_association:30
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:30
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.point_is_inside_cell:31
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -3476,6 +3508,13 @@ msgstr "Clipping Planesとは，投影方向に沿った近景と遠景のClippi
 msgid "Return a deep copy of the camera."
 msgstr "カメラのディープコピーを取得します．"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_unstructured_grid:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:0 ../../pyvista/pyvista/core/cell.pydocstring
+#: of pyvista.core.cell.Cell.get_edge:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -3518,6 +3557,7 @@ msgstr "カメラのディープコピーを取得します．"
 #: pyvista.DataSet.active_vectors_info:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:0
@@ -3557,6 +3597,8 @@ msgstr "カメラのディープコピーを取得します．"
 #: pyvista.core.dataset.DataSet.get_array:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array_association:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -4768,6 +4810,7 @@ msgstr "これはデフォルトの挙動"
 msgid "Return or set the distance of the focal point from the camera."
 msgstr "カメラから焦点距離の距離を返すか設定します．"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:28
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.as_polydata_blocks:25
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -4785,6 +4828,8 @@ msgstr "カメラから焦点距離の距離を返すか設定します．"
 #: of pyvista.core.dataset.DataSet.cast_to_pointset:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_poly_points:24
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:23
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals:20
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -4946,7 +4991,7 @@ msgstr "全体座標におけるカメラの焦点の位置．"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.from_paraview_pvcc:2
 msgid "Load a Paraview camera file (.pvcc extension)."
-msgstr "Paraviewカメラファイルを読み込みます (拡張子 .pvcc) 。"
+msgstr "Paraviewカメラファイルを読み込みます (拡張子 .pvcc) ．"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.from_paraview_pvcc:4
@@ -5203,6 +5248,7 @@ msgstr ""
 "**negative** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:24
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.composite.CompositeFilters.combine:7
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
@@ -5820,277 +5866,294 @@ msgstr "2倍ズームを表示します．"
 msgid "Zoom so the actor fills the entire render window."
 msgstr "アクタがレンダリングウィンドウ全体を埋め尽くすようにズームします．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.CompositeFilters.rst:2
-msgid "pyvista.CompositeFilters"
-msgstr "pyvista.CompositeFilters"
-
-#: ../../pyvista/doc/api/core/filters.rst:65:<autosummary>:1
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.composite.CompositeFilters:2
-msgid "An internal class to manage filters/algorithms for composite datasets."
-msgstr "複合データデータセットのフィルタ/アルゴリズムを管理する内部クラス．"
-
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:2
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:2
-msgid "Generate points at the center of the cells in this dataset."
-msgstr "このデータセットのセルの中心に点を生成します．"
-
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:4
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:4
-msgid "These points can be used for placing glyphs or vectors."
-msgstr "これらの点は，字形かベクトルの配置に使用できます．"
-
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
-msgid ""
-"**vertex** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:True`"
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:2
+msgid "pyvista.Cell"
 msgstr ""
-"**vertex** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:True`"
 
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
-msgid "Enable or disable the generation of vertex cells."
-msgstr "頂点セルの生成を有効か無効にします．"
+#: ../../pyvista/doc/api/core/cells.rst:58:<autosummary>:1
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:2
+msgid "Wrapping of vtkCell."
+msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:4
+msgid ""
+"This class provides the capability to access a given cell topology and can "
+"be useful when walking through a cell's individual faces or investigating "
+"cell properties."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:11
+msgid "**vtk_cell** : :obj:`vtk.vtkCell`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:10
+msgid "vtk.vtkCell, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:11
+msgid "The vtk object to wrap as Cell, that must be of ``vtk.vtkCell`` type."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:14
+msgid "**cell_type** : :class:`python:int`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:13
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.find_closest_point:15
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:12
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:20
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip:32
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_box:26
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.elevation:44
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:20
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:15
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice:26
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:41
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_line:20
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_orthogonal:26
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.triangulate:12
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:7
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:12
+#: pyvista.core.filters.data_set.DataSetFilters.extract_surface:29
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:20
+#: pyvista.core.filters.data_set.DataSetFilters.interpolate:48
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip:32
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:21
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_box:26
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc_normal:15
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_scalar:22
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_line:17
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_surface:29
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:18
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:56
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc_normal:14
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_line:14
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.compute_derivative:46
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:7
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.connectivity:18
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:32
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.contour:44
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:37
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:17
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:65
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.decimate_boundary:15
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines_from_source:53
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.delaunay_3d:28
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.elevation:44
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:36
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:17
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_largest:14
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_points:21
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_surface:33
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.glyph:58
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.integrate_data:13
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:58
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.merge:34
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.outline:11
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.outline_corners:12
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:62
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc_normal:68
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_line:57
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:15
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.probe:29
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:17
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.reflect:22
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:29
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:27
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc_normal:35
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_line:22
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_multiple_lines:15
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.select_enclosed_points:42
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.shrink:14
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice:26
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:41
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_line:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_implicit:21
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_orthogonal:26
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.split_bodies:14
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:47
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:73
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines_from_source:81
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.surface_indices:8
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.tessellate:23
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_plane:36
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_sphere:33
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.transform:38
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.triangulate:12
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:25
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:23
+#: pyvista.core.filters.data_set.DataSetFilters.tessellate:14
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:36
+#: pyvista.core.filters.poly_data.PolyDataFilters.collision:27
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:41
+#: pyvista.core.filters.poly_data.PolyDataFilters.collision:36
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_union:42
+#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:37
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clean:38
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:10
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clip_closed_surface:39
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:19
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.collision:49
+#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:25
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:12
+#: pyvista.core.filters.poly_data.PolyDataFilters.smooth:9
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.compute_normals:65
+#: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:19
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.curvature:17
+#: pyvista.core.filters.poly_data.PolyDataFilters.strip:32
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.decimate:65
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:38
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:61
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:11
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.extrude:46
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:69
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_trim:42
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:25
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:33
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:18
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.intersection:25
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:36
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:14
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:33
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.ribbon:40
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.smooth:40
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:57
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.strip:53
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:52
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.triangulate:12
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:45
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.extract_subset:34
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.high_pass:33
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.fft:27
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.gaussian_smooth:17
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.high_pass:41
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.image_dilate_erode:27
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.image_threshold:40
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.low_pass:41
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.median_smooth:30
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.rfft:27
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.low_pass:33
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:33
-#: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:28
-msgid ""
-"**progress_bar** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-msgstr ""
-"**progress_bar** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
+#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:25
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData:39
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData:51
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData:65
+#: ../../pyvista/pyvista/examples/planets.pydocstring of
+#: pyvista.examples.planets.load_saturn_rings:14
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:33
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter:43
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:10
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes_at_origin:25
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:17
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:20
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_floor:28
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:9
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:11
+msgid "python:int, optional"
+msgstr "python:int, optional"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:14
+msgid "VTK cell type. Determined from ``vtk_cell`` if not input."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:25
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.UnstructuredGrid.linear_copy:15
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:14
+msgid ""
+"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
+msgstr ""
+"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:17
+msgid "Perform a deep copy of the original cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:29
+msgid ""
+"Accessing individual cells from a :class:`pyvista.DataSet` using this class "
+"will be much slower than accessing bulk data from the "
+":attr:`pyvista.PolyData.faces` or :attr:`pyvista.UnstructuredGrid.cells` "
+"attributes."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:33
+msgid ""
+"Also note that the the cell object is a deep copy of the original cell and "
+"is unassociated with the original cell. Changing any data of that cell (for "
+"example, :attr:`pyvista.Cell.points`) will not change the original dataset."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:3
+msgid "Get the 0-th cell from a :class:`pyvista.PolyData`."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:20
+msgid "Get the 0-th cell from a :class:`pyvista.UnstructuredGrid`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:2
+msgid "Get the cell bounds in ``[xmin, xmax, ymin, ymax, zmin, zmax]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_unstructured_grid:2
+msgid "Cast this cell to an unstructured grid."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_unstructured_grid:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:18
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.composite.CompositeFilters.combine:26
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_box:50
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_box:50
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.delaunay_3d:42
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.explode:22
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_cells:25
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_points:35
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.integrate_data:28
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.merge:46
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.separate_cells:21
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.threshold:99
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:64
+#: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
+#: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:18
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:42
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.UnstructuredGrid.linear_copy:33
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Empty:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.HexagonalPrism:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Hexahedron:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Line:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.PentagonalPrism:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.PolyLine:21
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.PolyVertex:21
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Polygon:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Pyramid:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Quadrilateral:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Tetrahedron:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Triangle:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.TriangleStrip:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Vertex:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Voxel:19
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.Wedge:19
+#: ../../pyvista/pyvista/examples/examples.pydocstring of
+#: pyvista.examples.examples.load_hexbeam:18
+#: ../../pyvista/pyvista/examples/examples.pydocstring of
+#: pyvista.examples.examples.load_tetbeam:18
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:26
+msgid ":obj:`pyvista.UnstructuredGrid`"
+msgstr ":obj:`pyvista.UnstructuredGrid`"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_unstructured_grid:9
+msgid "This cell cast to a :class:`pyvista.UnstructuredGrid`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:2
+msgid "Return a copy of the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:10
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.copy:8
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.add_field_data:28
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy:10
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_meta_from:24
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.core.grid.RectilinearGrid:44
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.core.grid.UniformGrid:46
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PointSet:26
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PointSet.cast_to_polydata:11
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData:72
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.copy:13
+msgid "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:9
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.as_polydata_blocks:9
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -7358,6 +7421,672 @@ msgstr ""
 msgid "bool, optional"
 msgstr "bool, optional"
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:8
+msgid ""
+"When ``True`` makes a full copy of the cell.  When ``False``, performs a "
+"shallow copy where the new cell still references the original cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:24 ../../pyvista/pyvista/core/cell.pydocstring
+#: of pyvista.core.cell.Cell.get_edge:22
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:22
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:20
+msgid ":obj:`pyvista.Cell`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:15
+msgid "Deep or shallow copy of the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:28
+msgid "Create a deep copy of the cell and demonstrate it is deep."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.copy:38
+msgid "Create a shallow copy of the cell and demonstrate it is shallow."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:2
+msgid "Return the cell dimension."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:4
+msgid ""
+"This returns the dimensionality of the cell. For example, 1 for an edge, 2 "
+"for a triangle, and 3 for a tetrahedron."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:2
+msgid "Return a list of edges composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:2
+msgid "Return a list of faces composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_edge:2
+msgid "Get the i-th edge composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_edge:8
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:8
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_block_name:8
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.insert:8
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.replace:8
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_block_name:8
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:8
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:8
+msgid "**index** : :class:`python:int`"
+msgstr "**index** : :class:`python:int`"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_edge:7
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:7
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_block_name:7
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.insert:7
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.replace:7
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.set_block_name:7
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_bounds:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_n_points:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_point_ids:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_points:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_type:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:7
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.point_is_inside_cell:8
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.partition:19
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:14
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:12
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:15
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:7
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:10
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:27
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:7
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:20
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:37
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:14
+msgid "python:int"
+msgstr "python:int"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_edge:8
+msgid "Edge ID."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_edge:13
+msgid "Edge given by ``index``."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:3
+msgid ""
+"Extract a single edge from a face and output the IDs of the edge points."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:2
+msgid "Get the i-th face composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:8
+msgid "Face ID."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:13
+msgid "Face given by ``index``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.get_face:26
+msgid ""
+"Return the face IDs composing the first face of an example tetrahedron."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:2
+msgid "Return if the cell is linear."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:2
+msgid "Get the number of edges composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:2
+msgid "Get the number of faces composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:2
+msgid "Get the number of points composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:2
+msgid "Plot this cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:19
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:50
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:28
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clean:42
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:18
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:16
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:31
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.StructuredGrid:53
+#: ../../pyvista/pyvista/demos/demos.pydocstring of
+#: pyvista.demos.demos.plot_glyphs:12
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.plot_cell:24
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:20
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor.plot:19
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:15
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:18
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:89
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:59
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_grid:13
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:30
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:26
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCrossCap:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:18
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:23
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:15
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:15
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:19
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:19
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:49
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:27
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clean:41
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:17
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:15
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:30
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.StructuredGrid:52
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/demos/demos.pydocstring of
+#: pyvista.demos.demos.plot_glyphs:11
+#: ../../pyvista/pyvista/examples/cells.pydocstring of
+#: pyvista.examples.cells.plot_cell:23
+#: ../../pyvista/pyvista/plotting/_property.pydocstring of
+#: pyvista.plotting._property.Property.plot:19
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor.plot:18
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts._Chart.show:42
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot:95
+#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
+#: pyvista.plotting.helpers.plot_arrows:14
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:77
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable.plot:17
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:20
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:46
+#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
+#: pyvista.plotting.plotting.Plotter.show:88
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:43
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:54
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_axes:58
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.show_grid:12
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:30
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_texture:13
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:29
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricConicSpiral:25
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricCrossCap:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:22
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:13
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:39
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:26
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:37
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:14
+msgid "python:dict, optional"
+msgstr "python:dict, optional"
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.plot:8
+msgid ""
+"See :func:`pyvista.plot` for a description of the optional keyword "
+"arguments."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:2
+msgid "Get the point IDs composing the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:2
+msgid "Get the point coordinates of the cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:2
+msgid "Get the cell type from the enum :class:`pyvista.CellType`."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.CompositeFilters.rst:2
+msgid "pyvista.CompositeFilters"
+msgstr "pyvista.CompositeFilters"
+
+#: ../../pyvista/doc/api/core/filters.rst:65:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.composite.CompositeFilters:2
+msgid "An internal class to manage filters/algorithms for composite datasets."
+msgstr "複合データデータセットのフィルタ/アルゴリズムを管理する内部クラス．"
+
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:2
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:2
+msgid "Generate points at the center of the cells in this dataset."
+msgstr "このデータセットのセルの中心に点を生成します．"
+
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:4
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:4
+msgid "These points can be used for placing glyphs or vectors."
+msgstr "これらの点は，字形かベクトルの配置に使用できます．"
+
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
+msgid ""
+"**vertex** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+msgstr ""
+"**vertex** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:9
+msgid "Enable or disable the generation of vertex cells."
+msgstr "頂点セルの生成を有効か無効にします．"
+
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:12
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:20
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip:32
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_box:26
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.elevation:44
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:20
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:15
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice:26
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:41
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_line:20
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_orthogonal:26
+#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.triangulate:12
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_centers:12
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip:32
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_box:26
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_scalar:22
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.clip_surface:29
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:56
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.compute_derivative:46
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.connectivity:18
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.contour:44
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ctp:17
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.decimate_boundary:15
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.delaunay_3d:28
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.elevation:44
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_all_edges:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:36
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_geometry:17
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_largest:14
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_points:21
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.extract_surface:33
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.glyph:58
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.integrate_data:13
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.interpolate:58
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.merge:34
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.outline:11
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.outline_corners:12
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:62
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc_normal:68
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.plot_over_line:57
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.point_data_to_cell_data:15
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.probe:29
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.ptc:17
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.reflect:22
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample:29
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:27
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc_normal:35
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_line:22
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample_over_multiple_lines:15
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.select_enclosed_points:42
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.shrink:14
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice:26
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:41
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_along_line:20
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_implicit:21
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.slice_orthogonal:26
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.split_bodies:14
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines:47
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:73
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.streamlines_from_source:81
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.surface_indices:8
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.tessellate:23
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_plane:36
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_sphere:33
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.transform:38
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.triangulate:12
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:25
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:23
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:36
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:41
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.boolean_union:42
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clean:38
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.clip_closed_surface:39
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.collision:49
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:12
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.compute_normals:65
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.curvature:17
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.decimate:65
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:61
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:11
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.extrude:46
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:69
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_trim:42
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:25
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:33
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:18
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.intersection:25
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:36
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:14
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:33
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.ribbon:40
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.smooth:40
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:57
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.strip:53
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:41
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:52
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.triangulate:12
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.extract_subset:34
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.fft:27
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.gaussian_smooth:17
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.high_pass:41
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.image_dilate_erode:27
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.image_threshold:40
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.low_pass:41
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.median_smooth:30
+#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
+#: pyvista.core.filters.uniform_grid.UniformGridFilters.rfft:27
+#: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:33
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:28
+msgid ""
+"**progress_bar** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+msgstr ""
+"**progress_bar** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
+
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.composite.CompositeFilters.outline:14
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
@@ -8601,79 +9330,6 @@ msgid ""
 "elements will be merged."
 msgstr "``True`` (デフォルト) の場合，独立して定義されたメッシュ要素の一致する点がマージされます．"
 
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cast_to_unstructured_grid:18
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.composite.CompositeFilters.combine:26
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_box:50
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.clip_box:50
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.delaunay_3d:42
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.explode:22
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_cells:25
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_points:35
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.integrate_data:28
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.merge:46
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.separate_cells:21
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.threshold:99
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:64
-#: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
-#: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:18
-#: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:42
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.UnstructuredGrid.linear_copy:33
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Empty:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.HexagonalPrism:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Hexahedron:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Line:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.PentagonalPrism:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.PolyLine:21
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.PolyVertex:21
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Polygon:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Pyramid:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Quadrilateral:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Tetrahedron:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Triangle:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.TriangleStrip:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Vertex:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Voxel:19
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.Wedge:19
-#: ../../pyvista/pyvista/examples/examples.pydocstring of
-#: pyvista.examples.examples.load_hexbeam:18
-#: ../../pyvista/pyvista/examples/examples.pydocstring of
-#: pyvista.examples.examples.load_tetbeam:18
-#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
-#: pyvista.utilities.geometric_objects.Pyramid:26
-msgid ":obj:`pyvista.UnstructuredGrid`"
-msgstr ":obj:`pyvista.UnstructuredGrid`"
-
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip_box:41
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -9750,97 +10406,6 @@ msgstr "指定した軸に沿って，入力データセットのスライスを
 msgid "**n** : :class:`python:int`, :obj:`optional`"
 msgstr "**n** : :class:`python:int`, :obj:`optional`"
 
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.find_closest_point:15
-#: ../../pyvista/pyvista/core/filters/composite.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:7
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.extract_surface:29
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.interpolate:48
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:21
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc_normal:15
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.plot_over_line:17
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:18
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc_normal:14
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample_over_line:14
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:7
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:32
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:37
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines_evenly_spaced_2D:65
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines_from_source:53
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.tessellate:14
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.collision:27
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.collision:36
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:37
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:10
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:19
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:25
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.smooth:9
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:19
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.strip:32
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:38
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:45
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.high_pass:33
-#: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
-#: pyvista.core.filters.uniform_grid.UniformGridFilters.low_pass:33
-#: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:25
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:39
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:51
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:65
-#: ../../pyvista/pyvista/examples/planets.pydocstring of
-#: pyvista.examples.planets.load_saturn_rings:14
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:33
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter:43
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:10
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes_at_origin:25
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:17
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:20
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_floor:28
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:9
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.convert_array:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:11
-msgid "python:int, optional"
-msgstr "python:int, optional"
-
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.slice_along_axis:8
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -10204,9 +10769,9 @@ msgstr "データセットオブジェクトの実際のサイズを取得しま
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.actual_memory_size:19
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:22
+#: pyvista.core.dataset.DataSet.cell_n_points:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:22
+#: pyvista.core.dataset.DataSet.cell_type:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:27
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -10460,29 +11025,6 @@ msgstr "python:str"
 #: pyvista.core.dataobject.DataObject.add_field_data:14
 msgid "Name to assign the field array."
 msgstr "フィールド配列に割り当てる名前．"
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.copy:8
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.add_field_data:28
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.core.dataobject.DataObject.copy:10
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.copy_meta_from:24
-#: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.core.grid.RectilinearGrid:44
-#: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.core.grid.UniformGrid:46
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet:26
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PointSet.cast_to_polydata:11
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:72
-#: ../../pyvista/pyvista/plotting/lights.pydocstring of
-#: pyvista.plotting.lights.Light.copy:13
-msgid "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
-msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.add_field_data:17
@@ -11182,79 +11724,81 @@ msgid ""
 msgstr ""
 ":class:`pyvista.PolyData` を :class:`pyvista.UnstructuredGrid` にキャストします．"
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:2
+msgid "Return a list of cells."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:14
+msgid ":class:`python:list`\\[:obj:`pyvista.Cell`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:9
+msgid "A list of :class:`pyvista.Cell` objects."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:18
+msgid ""
+"For large meshes, the list can take some time to compute and you might "
+"prefer to use the :func:`DataSet.get_cell` method within a for-loop."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
+msgid "Get the last cell of a dataset."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:18
+msgid "Get the point ids of the last cell"
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:23
+msgid "Get the points coordinates of the last cell"
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:35
+msgid ""
+"Get the point ids of the edges of the last cell. Note that the `edges` "
+"attributes returns a generator of `pyvista.Cell` objects."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:54
+msgid "Get the point ids of the faces of the last cell."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:2
 msgid "Return the bounding box of a cell."
 msgstr "セルの境界ボックスを取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_bounds:8
+#: pyvista.core.dataset.DataSet.cell_bounds:4
+msgid "Use :attr:`pyvista.Cell.bounds` instead."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:8
+#: pyvista.core.dataset.DataSet.cell_bounds:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:8
+#: pyvista.core.dataset.DataSet.cell_n_points:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:8
+#: pyvista.core.dataset.DataSet.cell_point_ids:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:8
+#: pyvista.core.dataset.DataSet.cell_points:10
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_type:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.point_is_inside_cell:9
 msgid "**ind** : :class:`python:int`"
 msgstr "**ind** : :class:`python:int`"
 
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.get_block_name:7
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.insert:7
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.replace:7
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.set_block_name:7
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_bounds:7
+#: pyvista.core.dataset.DataSet.cell_bounds:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:7
+#: pyvista.core.dataset.DataSet.cell_n_points:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:7
+#: pyvista.core.dataset.DataSet.cell_point_ids:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:7
+#: pyvista.core.dataset.DataSet.cell_points:10
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:7
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.point_is_inside_cell:8
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.partition:19
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:14
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:12
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:15
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:7
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:10
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:27
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:7
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:20
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:37
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:14
-msgid "python:int"
-msgstr "python:int"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_bounds:8
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:8
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:8
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:8
+#: pyvista.core.dataset.DataSet.get_cell:8
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.point_is_inside_cell:9
 msgid "Cell ID."
@@ -11262,14 +11806,14 @@ msgstr "セルID．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:18 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.core.dataset.DataSet.cell_bounds:22
+#: of pyvista.core.dataset.DataSet.cell_bounds:24
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:23
 msgid ":class:`python:tuple`\\(:class:`python:float`)"
 msgstr ":class:`python:tuple`\\(:class:`python:float`)"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_bounds:13
+#: pyvista.core.dataset.DataSet.cell_bounds:15
 msgid "The limits of the cell in the X, Y and Z directions respectively."
 msgstr "セルのX，Y，Z方向それぞれの境界．"
 
@@ -11296,7 +11840,12 @@ msgid "Return the number of points in a cell."
 msgstr "セル内のポイント数を取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:13
+#: pyvista.core.dataset.DataSet.cell_n_points:4
+msgid "Use :attr:`pyvista.Cell.n_points` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_n_points:15
 msgid "Number of points in the cell."
 msgstr "セル内の点の数．"
 
@@ -11306,14 +11855,19 @@ msgid "Return the point ids in a cell."
 msgstr "セル内の点座標を返します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:22
+#: pyvista.core.dataset.DataSet.cell_point_ids:4
+msgid "You can use :attr:`pyvista.Cell.point_ids` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_point_ids:24
 #: ../../pyvista/pyvista/utilities/reader.pydocstring of
 #: pyvista.CGNSReader.base_array_names:21
 msgid ":class:`python:list`\\[:class:`python:int`]"
 msgstr ":class:`python:list`\\[:class:`python:int`]"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_point_ids:13
+#: pyvista.core.dataset.DataSet.cell_point_ids:15
 msgid "Point Ids that are associated with the cell."
 msgstr "セルに関連付けられているポイントID．"
 
@@ -11326,10 +11880,15 @@ msgstr "セルタイプ5は，3つのポイントを持つ3角形のセルです
 msgid "Return the points in a cell."
 msgstr "セル内の点を取得します．"
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_points:4
+msgid "Use :attr:`pyvista.Cell.points` instead."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_active_scalars:35
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:23
+#: pyvista.core.dataset.DataSet.cell_points:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_cells_along_line:27
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -11372,7 +11931,7 @@ msgid ":obj:`numpy.ndarray`"
 msgstr ":obj:`numpy.ndarray`"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_points:13
+#: pyvista.core.dataset.DataSet.cell_points:15
 msgid ""
 "An array of floats with shape (number of points, 3) containing the "
 "coordinates of the cell corners."
@@ -11384,12 +11943,17 @@ msgid "Return the type of a cell."
 msgstr "セルの型を取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:8
+#: pyvista.core.dataset.DataSet.cell_type:4
+msgid "You can use :attr:`pyvista.Cell.type` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_type:10
 msgid "Cell type ID."
 msgstr "セルタイプのIDです．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:13
+#: pyvista.core.dataset.DataSet.cell_type:15
 msgid ""
 "VTK cell type. See `vtkCellType.h "
 "<https://vtk.org/doc/nightly/html/vtkCellType_8h_source.html>`_ ."
@@ -12139,6 +12703,28 @@ msgid "Get the field data array association."
 msgstr "フィールドデータの配列の関連性を取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:2
+msgid "Return a :class:`pyvista.Cell` object."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:13
+msgid "The i-th pyvista.Cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.get_cell:24
+msgid ""
+"Cells returned from this method are deep copies of the original cells. "
+"Changing properties (for example, ``points``) will not affect the dataset "
+"they originated from."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
+msgid "Get the 0-th cell."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:9
 msgid ""
 "**arr_var** : :class:`python:str`, :obj:`np.ndarray <numpy.ndarray>`, "
@@ -12624,8 +13210,8 @@ msgstr ""
 #: pyvista.plotting.charts._Chart.show:40
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:52
-msgid "**background** : :obj:`color_like`, :obj:`optional`"
-msgstr "**background** : :obj:`color_like`, :obj:`optional`"
+msgid "**background** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:51
@@ -12751,8 +13337,8 @@ msgstr "**background** : :obj:`color_like`, :obj:`optional`"
 #: pyvista.plotting.tools.create_axes_orientation_box:43
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:49
-msgid "color_like, optional"
-msgstr "color_like, optional"
+msgid "ColorLike, optional"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:52
@@ -13064,113 +13650,6 @@ msgid "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 msgstr "**jupyter_kwargs** : :class:`python:dict`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:19
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:19
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:49
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:27
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clean:41
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:17
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:15
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:30
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.StructuredGrid:52
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/demos/demos.pydocstring of
-#: pyvista.demos.demos.plot_glyphs:11
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.plot_cell:23
-#: ../../pyvista/pyvista/plotting/_property.pydocstring of
-#: pyvista.plotting._property.Property.plot:19
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.plot:18
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts._Chart.show:42
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot:95
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:14
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable:77
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.plot:17
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:20
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:46
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:88
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:43
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:54
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:58
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_grid:12
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read:30
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.read_texture:13
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.save_meshio:29
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBour:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBoy:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:25
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCrossCap:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:22
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEnneper:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:13
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricHenneberg:7
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKlein:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKuen:16
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPseudosphere:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:39
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:10
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:37
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:14
-msgid "python:dict, optional"
-msgstr "python:dict, optional"
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:96
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:96
@@ -13384,8 +13863,8 @@ msgstr "各レンダリングウィンドウの周囲に境界を描きます．
 #: pyvista.plotting.helpers.plot:127
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:34
-msgid "**border_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**border_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**border_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:122
@@ -15831,89 +16310,6 @@ msgid ""
 ":func:`pyvista.DataSetFilters.cell_data_to_point_data`."
 msgstr ""
 "このメソッドは :func:`pyvista.DataSetFilters.cell_data_to_point_data` のエイリアスです．"
-
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ctp:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.ptc:20
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.streamlines:50
-#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:28
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.clean:42
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:18
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:16
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:31
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.StructuredGrid:53
-#: ../../pyvista/pyvista/demos/demos.pydocstring of
-#: pyvista.demos.demos.plot_glyphs:12
-#: ../../pyvista/pyvista/examples/cells.pydocstring of
-#: pyvista.examples.cells.plot_cell:24
-#: ../../pyvista/pyvista/plotting/_property.pydocstring of
-#: pyvista.plotting._property.Property.plot:20
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.plot:19
-#: ../../pyvista/pyvista/plotting/helpers.pydocstring of
-#: pyvista.plotting.helpers.plot_arrows:15
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable.plot:18
-#: ../../pyvista/pyvista/plotting/plotting.pydocstring of
-#: pyvista.plotting.plotting.Plotter.show:89
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_axes:59
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.show_grid:13
-#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
-#: pyvista.utilities.fileio.save_meshio:30
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBohemianDome:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBour:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricBoy:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCatalanMinimal:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricConicSpiral:26
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricCrossCap:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricDini:18
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEllipsoid:23
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricEnneper:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:14
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricHenneberg:8
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKlein:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricKuen:17
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricMobius:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:15
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRandomHills:40
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricRoman:11
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:27
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricSuperToroid:38
-#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
-#: pyvista.utilities.parametric_objects.ParametricTorus:15
-msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
-msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.ctp:20
@@ -18972,6 +19368,8 @@ msgid ""
 " and CELL data, this filter will default to the CELL data array while "
 "performing the CELL-wise operation."
 msgstr ""
+"また，デフォルトの ``preference`` では，POINT データよりも CELL "
+"データが選択されていることに注意してください．これは，PyVistaのAPIの他のほとんどの場所で，通常POINTデータが優先されるのに反しています．POINTデータとCELLデータの両方に存在する名前付き配列で閾値を設定すると，CELL単位の演算を行う際にCELLデータの配列がデフォルトになるように，ここではCELLデータを優先することにしました．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:32
@@ -18995,6 +19393,8 @@ msgid ""
 "will be used to remove any NaN values. Please reference the ``method`` "
 "parameter for how single values are handled."
 msgstr ""
+"データしきい値に使用する単一の値または(最小，最大)．シーケンスの場合，長さは2にする必要があります．値を指定しない場合，NaN以外のデータ範囲を使用してNaN値が削除されます．単一の値がどのように扱われるかについては，"
+" ``method`` パラメータを参照してください．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:35
@@ -19011,6 +19411,8 @@ msgid ""
 "**invert** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**invert** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:38
@@ -19021,13 +19423,14 @@ msgid ""
 "output with this option off are excluded, while cells that would have been "
 "excluded from the output are included."
 msgstr ""
+"閾値の結果を反転させます．つまり，このオプションをオフにした場合，出力に含まれるはずだったセルは除外され，出力から除外されるはずだったセルは含まれる．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:43
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:26
 msgid "This option is only supported for VTK version 9+"
-msgstr ""
+msgstr "このオプションは，VTKバージョン9以上でのみサポートされています．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:48
@@ -19037,6 +19440,8 @@ msgid ""
 "**continuous** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**continuous** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:46
@@ -19054,14 +19459,14 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:39
 msgid "**preference** : :class:`python:str`, default: 'cell'"
-msgstr ""
+msgstr "**preference** : :class:`python:str`, default: 'cell'"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:55
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:38
 msgid "python:str, default: 'cell'"
-msgstr ""
+msgstr "python:str, default: 'cell'"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:51
@@ -19074,6 +19479,9 @@ msgid ""
 "filter is a cell-wise operation, we prefer cell data for thresholding "
 "operations."
 msgstr ""
+"``scalars`` が指定された場合，データセットから検索する際に優先される配列の種類を指定します． ``'point'`` または "
+"``'cell'`` のどちらかを指定する必要があります．PyVistaでは通常 ``'point'`` "
+"が優先されるが，閾値フィルタはセル単位の操作であるため，閾値処理ではセルのデータを優先する．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:63
@@ -19081,6 +19489,8 @@ msgid ""
 "**all_scalars** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**all_scalars** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:59
@@ -19142,14 +19552,14 @@ msgstr "``component_mode='selected'`` を使用している場合，どのコン
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:47
 msgid "**method** : :class:`python:str`, default: 'upper'"
-msgstr ""
+msgstr "**method** : :class:`python:str`, default: 'upper'"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:81
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:46
 msgid "python:str, default: 'upper'"
-msgstr ""
+msgstr "python:str, default: 'upper'"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:77
@@ -19162,6 +19572,9 @@ msgid ""
 "extract data lower than the  ``value``. ``'upper'`` will extract data larger"
 " than the ``value``."
 msgstr ""
+"単一の値に対する threshold メソッドを設定し，使用する threshold の境界を定義します．もし ``value`` "
+"が範囲指定されている場合，このパラメータは無視され，2つの値の間のデータが抽出されます．単一の値の場合， ``'lower'`` は ``value``"
+" よりも低いデータを抽出します． ``'upper'`` は ``value`` よりも大きなデータを取り出します．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:90
@@ -20056,8 +20469,8 @@ msgstr ""
 #: pyvista.plotting.renderer.Renderer.set_background:14
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:66
-msgid "**color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**color** : :obj:`color_like`, :obj:`optional`"
+msgid "**color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light:20
@@ -21185,19 +21598,6 @@ msgstr "指定されたインデックスのデータセットが存在する場
 #: pyvista.core.composite.MultiBlock.get_block_name:2
 msgid "Return the string name of the block at the given index."
 msgstr "指定したインデックスのブロック名を文字列で取得します．"
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.get_block_name:8
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.insert:8
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.replace:8
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.set_block_name:8
-#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositeAttributes.get_block:8
-msgid "**index** : :class:`python:int`"
-msgstr "**index** : :class:`python:int`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_block_name:8
@@ -24574,8 +24974,8 @@ msgstr "メッシュの境界をプロットします．"
 #: pyvista.plotting.renderer.Renderer.add_floor:46
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:14
-msgid "**edge_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**edge_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**edge_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:8
@@ -28046,17 +28446,6 @@ msgid "``QUADRATIC_HEXAHEDRON --> HEXAHEDRON``"
 msgstr "``QUADRATIC_HEXAHEDRON --> HEXAHEDRON``"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.UnstructuredGrid.linear_copy:15
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.convert_array:14
-msgid ""
-"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:False`"
-msgstr ""
-"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:False`"
-
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid.linear_copy:14
 msgid ""
 "When ``True``, makes a copy of the points array. Cells and cell types are "
@@ -28585,6 +28974,56 @@ msgstr "APIリファレンス"
 #: ../../pyvista/doc/api/core/camera.rst:144:<autosummary>:1
 msgid ":py:obj:`pyvista.Camera <pyvista.Camera>`\\ \\(\\[renderer\\]\\)"
 msgstr ":py:obj:`pyvista.Camera <pyvista.Camera>`\\ \\(\\[renderer\\]\\)"
+
+#: ../../pyvista/doc/api/core/cells.rst:2
+#: ../../pyvista/doc/api/examples/index.rst:111
+msgid "Cells"
+msgstr "Cells"
+
+#: ../../pyvista/doc/api/core/cells.rst:4
+msgid ""
+"The cell :class:`pyvista.Cell` class is the PyVista representation of the "
+"`vtkGenericCell "
+"<https://vtk.org/doc/nightly/html/classvtkGenericCell.html>`_ and can be "
+"used to inspect a :class:`pyvista.DataSet`'s cells, faces, and edges."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:8
+msgid ""
+"While methods and classes are quite effective at inspecting and plotting "
+"parts of a dataset, they are inefficient and should be used only for "
+"interactive exploration and debugging. When working with larger datasets or "
+"working with multiple cells it is generally more efficient to use bulk "
+"methods like :func:`pyvista.DataSetFilters.extract_cells`."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:14
+msgid ""
+"Here's a quick example to demonstrate the usage of "
+":func:`pyvista.DataSet.get_cell` by extracting a hexahedral cell from an "
+"example :class:`pyvista.UnstructuredGrid`."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:31
+msgid "You can then extract a single face of that cell."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:38
+msgid "Afterwards, you can extract an edge or edges from the face."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:45
+msgid ""
+"Each :class:`pyvista.Cell` can be individually plotted for convenience."
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:53
+msgid "Class Definition"
+msgstr ""
+
+#: ../../pyvista/doc/api/core/cells.rst:58:<autosummary>:1
+msgid ":py:obj:`pyvista.Cell <pyvista.Cell>`\\ \\(\\[vtk\\_cell\\, cell\\_type\\, deep\\]\\)"
+msgstr ""
 
 #: ../../pyvista/doc/api/core/composite.rst:2
 msgid "Composite Datasets"
@@ -34842,10 +35281,6 @@ msgstr ""
 "にエクスポートしています．パスが ``'Data'`` で終わっていることに注意してください．これは， ``pooch`` "
 "のためにデータの正確なディレクトリを指定する必要があるためです．"
 
-#: ../../pyvista/doc/api/examples/index.rst:111
-msgid "Cells"
-msgstr "Cells"
-
 #: ../../pyvista/doc/api/examples/index.rst:112
 msgid ""
 "PyVista contains several functions that create single cell "
@@ -35833,9 +36268,10 @@ msgstr "スカラーを表示する際に使用する色数．"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:42
-msgid "**nan_color** : :obj:`color_like`"
-msgstr "**nan_color** : :obj:`color_like`"
+msgid "**nan_color** : :obj:`ColorLike`"
+msgstr ""
 
+#: ../../pyvista/doc/api/utilities/_autosummary/pyvista.ColorLike.rst:2
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -35844,8 +36280,8 @@ msgstr "**nan_color** : :obj:`color_like`"
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:51
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
-msgid "color_like"
-msgstr "color_like"
+msgid "ColorLike"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
@@ -35856,8 +36292,8 @@ msgstr "プロットされたスカラー配列のすべての ``NaN`` 値に使
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:47
-msgid "**above_color** : :obj:`color_like`"
-msgstr "**above_color** : :obj:`color_like`"
+msgid "**above_color** : :obj:`ColorLike`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:45
@@ -35872,8 +36308,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:52
-msgid "**below_color** : :obj:`color_like`"
-msgstr "**below_color** : :obj:`color_like`"
+msgid "**below_color** : :obj:`ColorLike`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:50
@@ -36099,8 +36535,8 @@ msgstr "データセットに色をつけるための不透明度配列．配列
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
-msgid "**color** : :obj:`color_like`"
-msgstr "**color** : :obj:`color_like`"
+msgid "**color** : :obj:`ColorLike`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
@@ -36247,18 +36683,18 @@ msgstr ""
 #: pyvista.plotting.lookup_table.LookupTable:53
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:56
-msgid "**nan_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**nan_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:61
-msgid "**above_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**above_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**above_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:66
-msgid "**below_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**below_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:80
@@ -36506,8 +36942,8 @@ msgstr "NANであるすべての値をレンダリングするための色．"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
-msgid "**above_range_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**above_range_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**above_range_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
@@ -36516,8 +36952,8 @@ msgstr ":attr:`LookupTable.scalar_range` 以上の値をレンダリングする
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
-msgid "**below_range_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**below_range_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**below_range_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
@@ -37296,13 +37732,13 @@ msgstr "タイトルフォントのサイズを設定します． デフォル�
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:24
-msgid "**color** : :obj:`color_like`, optional,"
-msgstr "**color** : :obj:`color_like`, optional,"
+msgid "**color** : :obj:`ColorLike`, optional,"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:23
-msgid "color_like, optional,"
-msgstr "color_like, optional,"
+msgid "ColorLike, optional,"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:17
@@ -38676,8 +39112,8 @@ msgstr "ラベルの色．"
 #: pyvista.plotting.tools.create_axes_marker:11
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:17
-msgid "**x_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**x_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**x_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:17
@@ -38694,8 +39130,8 @@ msgstr "x軸の矢印に使用する色． デフォルトはテーマ軸パラ�
 #: pyvista.plotting.tools.create_axes_marker:14
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:20
-msgid "**y_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**y_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**y_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:20
@@ -38712,8 +39148,8 @@ msgstr "y軸の矢印に使用する色． デフォルトはテーマ軸パラ�
 #: pyvista.plotting.tools.create_axes_marker:17
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:23
-msgid "**z_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**z_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**z_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:23
@@ -39300,8 +39736,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend:25
-msgid "**bcolor** : :obj:`color_like`, :obj:`optional`"
-msgstr "**bcolor** : :obj:`color_like`, :obj:`optional`"
+msgid "**bcolor** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend:22
@@ -40274,8 +40710,8 @@ msgstr "文字列，RGBリスト，または16進カラー文字列．デフォ�
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:29
-msgid "**top** : :obj:`color_like`, :obj:`optional`"
-msgstr "**top** : :obj:`color_like`, :obj:`optional`"
+msgid "**top** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:17
@@ -41022,8 +41458,8 @@ msgstr "軸となるアクターを作成します．"
 #: pyvista.plotting.tools.create_axes_marker:8
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:50
-msgid "**label_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**label_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**label_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_marker:8
@@ -41136,18 +41572,18 @@ msgstr "エッジの色．"
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:36
-msgid "**x_face_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**x_face_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**x_face_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:40
-msgid "**y_face_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**y_face_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**y_face_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:44
-msgid "**z_face_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**z_face_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**z_face_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:47
@@ -43380,10 +43816,8 @@ msgstr ""
 #: pyvista.plotting.charts.StackPlot:19
 msgid ""
 "**colors** : :class:`python:list` or :class:`python:tuple` :obj:`of` "
-":obj:`color_like`, :obj:`optional`"
+":obj:`ColorLike`, :obj:`optional`"
 msgstr ""
-"**colors** : :class:`python:list` or :class:`python:tuple` :obj:`of` "
-":obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:14
@@ -43397,8 +43831,8 @@ msgstr ""
 #: pyvista.plotting.charts.PiePlot:13
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:18
-msgid "python:list or python:tuple of color_like, optional"
-msgstr "python:list or python:tuple of color_like, optional"
+msgid "python:list or python:tuple of ColorLike, optional"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.stack:16
@@ -49585,19 +50019,13 @@ msgstr "pyvista ライブラリで使用される異なる色表現間の変換�
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:4
 msgid ""
-"Many pyvista methods accept :data:`color_like` parameters. This helper class"
-" is used to convert such parameters to the necessary format, used by "
+"Many pyvista methods accept :data:`ColorLike` parameters. This helper class "
+"is used to convert such parameters to the necessary format, used by "
 "underlying (VTK) methods. Any color name (``str``), hex string (``str``) or "
 "RGB(A) sequence (``tuple``, ``list`` or ``numpy.ndarray`` of ``int`` or "
-"``float``) is considered a :data:`color_like` parameter and can be converted"
-" by this class. See :attr:`Color.name` for a list of supported color names."
+"``float``) is considered a :data:`ColorLike` parameter and can be converted "
+"by this class. See :attr:`Color.name` for a list of supported color names."
 msgstr ""
-"多くの pyvista メソッドは :data:`color_like` "
-"パラメータを受け取ります．このヘルパークラスは，そのようなパラメータを，基本的な (VTK) "
-"メソッドで使用される必要な形式に変換するために使用されます．色名 ( ``str`` ) や 16 進文字列 ( ``str`` ) ， RGB(A) "
-"配列 ( ``tuple`` , ``list`` または ``int`` や ``float`` ) の ``numpy.ndarray`` は "
-":data:`color_like` パラメータとみなされ，このクラスによって変換することが可能です．サポートされる色名の一覧は "
-":attr:`Color.name` を参照してください．"
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:15
@@ -49684,8 +50112,8 @@ msgstr "``'#ff'``"
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:43
-msgid "**default_color** : :obj:`color_like`, :obj:`optional`"
-msgstr "**default_color** : :obj:`color_like`, :obj:`optional`"
+msgid "**default_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:41
@@ -53709,6 +54137,11 @@ msgstr "JSONシリアライズのために辞書に変換します．"
 msgid "Get the color value as a VTK Color3ub instance."
 msgstr "色の値をVTK Color3ubのインスタンスとして取得します．"
 
+#: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
+#: ../docstring of pyvista.ColorLike:2
+msgid "Any object convertible to a :class:`Color`."
+msgstr ":class:`Color` に変換できる任意のオブジェクトです．"
+
 #: ../../pyvista/doc/api/utilities/_autosummary/pyvista.Cone.rst:2
 msgid "Cone"
 msgstr "Cone"
@@ -56632,15 +57065,6 @@ msgstr ":obj:`pyvista.pyvista_ndarray` or :data:`python:None`"
 msgid "Wrapped array if the index or name is valid. Otherwise, ``None``."
 msgstr "インデックスまたは名前が有効であれば，折り返し配列を返します．そうでなければ， ``None`` となります．"
 
-#: ../../pyvista/doc/api/utilities/_autosummary/pyvista.color_like.rst:2
-msgid "color\\_like"
-msgstr "color\\_like"
-
-#: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
-#: ../docstring of pyvista.color_like:2
-msgid "Any object convertible to a :class:`Color`."
-msgstr ":class:`Color` に変換できる任意のオブジェクトです．"
-
 #: ../../pyvista/doc/api/utilities/_autosummary/pyvista.compare_images.rst:2
 msgid "compare\\_images"
 msgstr "compare\\_images"
@@ -58588,8 +59012,8 @@ msgstr ""
 "default\\_color\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
-msgid ":py:obj:`color_like <pyvista.color_like>`\\"
-msgstr ":py:obj:`color_like <pyvista.color_like>`\\"
+msgid ":py:obj:`ColorLike <pyvista.ColorLike>`\\"
+msgstr ""
 
 #: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
 msgid ":py:obj:`start_xvfb <pyvista.start_xvfb>`\\ \\(\\[wait\\, window\\_size\\]\\)"
