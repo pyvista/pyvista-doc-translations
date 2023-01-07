@@ -1459,6 +1459,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Cycle through colors when sequentially adding meshes to a plotter.">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_color_cycler_thumb.png
+    :alt: Color Cycling
+
+  :ref:`sphx_glr_examples_02-plot_color_cycler.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Color Cycling</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Demonstrate how to pick individual blocks of a pyvista.MultiBlock using pyvista.Plotter.enable_...">
 
 .. only:: html

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-06 01:50+0000\n"
+"POT-Creation-Date: 2023-01-07 01:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.add_field_data:0
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy:0
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_attributes:0
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:0
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_structure:0
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.deep_copy:0
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.head:0
@@ -523,6 +524,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.remove_legend:0
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.reset_camera:0
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_background:0
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:0
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_environment_texture:0
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_focus:0
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_position:0
@@ -1562,6 +1564,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.remove_legend:22
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.reset_camera:27
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_background:32
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:34
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_environment_texture:31
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_focus:21
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_position:25
@@ -1590,6 +1593,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.camera:17
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.cmap:25
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color:26
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:29
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.colorbar_horizontal:17
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.colorbar_orientation:18
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.colorbar_vertical:17
@@ -3256,6 +3260,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.copy:8
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.add_field_data:28
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy:10
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:24
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_meta_from:24
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.RectilinearGrid:44
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.UniformGrid:46
@@ -3290,6 +3295,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.plotting.helpers.plot:133
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.add_field_data:27
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy:9
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:23
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.head:9
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.head:12
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.save:11
@@ -5778,6 +5784,7 @@ msgid "Convert it to an all triangle mesh."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataObject.rst:2
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:7
 #: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.BlockAttributes:7
 msgid "pyvista.DataObject"
 msgstr ""
@@ -6008,6 +6015,19 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:2
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_meta_from:2
 msgid "Copy pyvista meta data onto this object from another object."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:8
+msgid "**ido** : :obj:`pyvista.DataObject`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:8
+msgid "Data object to copy the metadata from."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:11
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_meta_from:11
+msgid "Deep or shallow copy."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_structure:2
@@ -6654,10 +6674,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_meta_from:8
 msgid "Dataset to copy the metadata from."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_meta_from:11
-msgid "Deep or shallow copy."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.find_cells_along_line:2
@@ -24966,6 +24982,10 @@ msgstr ""
 msgid "Lights in the renderer."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.next_color:2
+msgid "Return next color from this renderer's color cycler."
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.parallel_projection:2
 msgid "Return parallel projection state of active render window."
 msgstr ""
@@ -25144,6 +25164,55 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:3
 msgid "Set the background color to black with a gradient to white at the top of the plot."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:2
+msgid "Set or reset this renderer's color cycler."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:4
+msgid "This color cycler is iterated over by each sequential :class:`add_mesh() <pyvista.Plotter.add_mesh>` call to set the default color of the dataset being plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:7
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:7
+msgid "When setting, the value must be either a list of color-like objects, or a cycler of color-like objects. If the value passed is a single string, it must be one of:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:11
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:11
+msgid "``'default'`` - Use the default color cycler (matches matplotlib's default)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:12
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:12
+msgid "``'matplotlib`` - Dynamically get matplotlib's current theme's color cycler."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:13
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:13
+msgid "``'all'`` - Cycle through all of the available colors in ``pyvista.plotting.colors.hexcolors``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:15
+msgid "Setting to ``None`` will disable the use of the color cycler on this renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:31
+msgid "**color_cycler** : :class:`python:str`, :obj:`cycler.Cycler`, :class:`python:list`\\(:obj:`ColorLike`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:30
+msgid "python:str, cycler.Cycler, python:list(ColorLike)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_color_cycler:21
+msgid "The colors to cycle through."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:3
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
+msgid "Set the default color cycler to iterate through red, green, and blue."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_environment_texture:2
@@ -26000,6 +26069,18 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the default mesh color to 'red'."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:2
+msgid "Return or set the default color cycler used to color meshes."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:4
+msgid "This color cycler is iterated over by each renderer to sequentially color datasets when displaying them through ``add_mesh``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.color_cycler:15
+msgid "Setting to ``None`` will disable the use of the color cycler."
 msgstr ""
 
 #: ../../pyvista/pyvista/themes.py:docstring of pyvista.themes.DefaultTheme.colorbar_horizontal:2
