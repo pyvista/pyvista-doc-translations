@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-06 01:50+0000\n"
+"POT-Creation-Date: 2023-01-07 01:49+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -75,6 +75,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.core.dataobject.DataObject.copy:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_attributes:0
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_structure:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
@@ -1024,6 +1026,8 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.plotting.renderer.Renderer.reset_camera:0
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:0
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:0
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_environment_texture:0
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -3025,6 +3029,8 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:32
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:34
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_environment_texture:31
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_focus:21
@@ -3078,6 +3084,8 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.themes.DefaultTheme.cmap:25
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.color:26
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:29
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.colorbar_horizontal:17
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -6135,6 +6143,8 @@ msgstr ""
 #: pyvista.core.dataobject.DataObject.add_field_data:28
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:10
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.copy_meta_from:24
 #: ../../pyvista/pyvista/core/grid.pydocstring of
@@ -6200,6 +6210,8 @@ msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 #: pyvista.core.dataobject.DataObject.add_field_data:27
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:9
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:23
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.head:9
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
@@ -10748,6 +10760,8 @@ msgid "Convert it to an all triangle mesh."
 msgstr "すべて3角形のメッシュに変換します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataObject.rst:2
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:7
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.BlockAttributes:7
 msgid "pyvista.DataObject"
@@ -11129,6 +11143,23 @@ msgstr "データの属性をコピーするデータセット"
 #: pyvista.core.dataset.DataSet.copy_meta_from:2
 msgid "Copy pyvista meta data onto this object from another object."
 msgstr "別のオブジェクトからこのオブジェクトにpyvistaメタデータをコピーします．"
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:8
+msgid "**ido** : :obj:`pyvista.DataObject`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:8
+msgid "Data object to copy the metadata from."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject.copy_meta_from:11
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_meta_from:11
+msgid "Deep or shallow copy."
+msgstr "深いコピーか浅いコピー．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_structure:2
@@ -12042,11 +12073,6 @@ msgstr "**ido** : :obj:`pyvista.DataSet`"
 #: pyvista.core.dataset.DataSet.copy_meta_from:8
 msgid "Dataset to copy the metadata from."
 msgstr "メタデータをコピーするデータセット．"
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.copy_meta_from:11
-msgid "Deep or shallow copy."
-msgstr "深いコピーか浅いコピー．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_cells_along_line:2
@@ -13211,7 +13237,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:52
 msgid "**background** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**background** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:51
@@ -13338,7 +13364,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:49
 msgid "ColorLike, optional"
-msgstr ""
+msgstr "ColorLike, optional"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:52
@@ -13864,7 +13890,7 @@ msgstr "各レンダリングウィンドウの周囲に境界を描きます．
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:34
 msgid "**border_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**border_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:122
@@ -20470,7 +20496,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:66
 msgid "**color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light:20
@@ -24975,7 +25001,7 @@ msgstr "メッシュの境界をプロットします．"
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:14
 msgid "**edge_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**edge_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:8
@@ -29023,7 +29049,7 @@ msgstr ""
 
 #: ../../pyvista/doc/api/core/cells.rst:58:<autosummary>:1
 msgid ":py:obj:`pyvista.Cell <pyvista.Cell>`\\ \\(\\[vtk\\_cell\\, cell\\_type\\, deep\\]\\)"
-msgstr ""
+msgstr ":py:obj:`pyvista.Cell <pyvista.Cell>`\\ \\(\\[vtk\\_cell\\, cell\\_type\\, deep\\]\\)"
 
 #: ../../pyvista/doc/api/core/composite.rst:2
 msgid "Composite Datasets"
@@ -36269,7 +36295,7 @@ msgstr "スカラーを表示する際に使用する色数．"
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:42
 msgid "**nan_color** : :obj:`ColorLike`"
-msgstr ""
+msgstr "**nan_color** : :obj:`ColorLike`"
 
 #: ../../pyvista/doc/api/utilities/_autosummary/pyvista.ColorLike.rst:2
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -36281,7 +36307,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
 msgid "ColorLike"
-msgstr ""
+msgstr "ColorLike"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
@@ -36293,7 +36319,7 @@ msgstr "プロットされたスカラー配列のすべての ``NaN`` 値に使
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:47
 msgid "**above_color** : :obj:`ColorLike`"
-msgstr ""
+msgstr "**above_color** : :obj:`ColorLike`"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:45
@@ -36309,7 +36335,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:52
 msgid "**below_color** : :obj:`ColorLike`"
-msgstr ""
+msgstr "**below_color** : :obj:`ColorLike`"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:50
@@ -36536,7 +36562,7 @@ msgstr "データセットに色をつけるための不透明度配列．配列
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
 msgid "**color** : :obj:`ColorLike`"
-msgstr ""
+msgstr "**color** : :obj:`ColorLike`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
@@ -36684,17 +36710,17 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:56
 msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:61
 msgid "**above_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**above_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:66
 msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**below_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:80
@@ -36943,7 +36969,7 @@ msgstr "NANであるすべての値をレンダリングするための色．"
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
 msgid "**above_range_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**above_range_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:56
@@ -36953,7 +36979,7 @@ msgstr ":attr:`LookupTable.scalar_range` 以上の値をレンダリングする
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
 msgid "**below_range_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**below_range_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:59
@@ -37733,12 +37759,12 @@ msgstr "タイトルフォントのサイズを設定します． デフォル�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:24
 msgid "**color** : :obj:`ColorLike`, optional,"
-msgstr ""
+msgstr "**color** : :obj:`ColorLike`, optional,"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:23
 msgid "ColorLike, optional,"
-msgstr ""
+msgstr "ColorLike, optional,"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.add_title:17
@@ -39113,7 +39139,7 @@ msgstr "ラベルの色．"
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:17
 msgid "**x_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**x_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:17
@@ -39131,7 +39157,7 @@ msgstr "x軸の矢印に使用する色． デフォルトはテーマ軸パラ�
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:20
 msgid "**y_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**y_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:20
@@ -39149,7 +39175,7 @@ msgstr "y軸の矢印に使用する色． デフォルトはテーマ軸パラ�
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:23
 msgid "**z_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**z_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_axes:23
@@ -39737,7 +39763,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend:25
 msgid "**bcolor** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**bcolor** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend:22
@@ -40459,6 +40485,11 @@ msgid "Lights in the renderer."
 msgstr "レンダラーのライト．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.next_color:2
+msgid "Return next color from this renderer's color cycler."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_projection:2
 msgid "Return parallel projection state of active render window."
 msgstr "アクティブなレンダーウィンドウの平行投影状態を取得します．"
@@ -40711,7 +40742,7 @@ msgstr "文字列，RGBリスト，または16進カラー文字列．デフォ�
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:29
 msgid "**top** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**top** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_background:17
@@ -40728,6 +40759,83 @@ msgid ""
 "Set the background color to black with a gradient to white at the top of the"
 " plot."
 msgstr "背景色を黒にして，プロットの上部に白へのグラデーションを設定します．"
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:2
+msgid "Set or reset this renderer's color cycler."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:4
+msgid ""
+"This color cycler is iterated over by each sequential :class:`add_mesh() "
+"<pyvista.Plotter.add_mesh>` call to set the default color of the dataset "
+"being plotted."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:7
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:7
+msgid ""
+"When setting, the value must be either a list of color-like objects, or a "
+"cycler of color-like objects. If the value passed is a single string, it "
+"must be one of:"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:11
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:11
+msgid ""
+"``'default'`` - Use the default color cycler (matches matplotlib's default)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:12
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:12
+msgid ""
+"``'matplotlib`` - Dynamically get matplotlib's current theme's color cycler."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:13
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:13
+msgid ""
+"``'all'`` - Cycle through all of the available colors in "
+"``pyvista.plotting.colors.hexcolors``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:15
+msgid ""
+"Setting to ``None`` will disable the use of the color cycler on this "
+"renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:31
+msgid ""
+"**color_cycler** : :class:`python:str`, :obj:`cycler.Cycler`, "
+":class:`python:list`\\(:obj:`ColorLike`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:30
+msgid "python:str, cycler.Cycler, python:list(ColorLike)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_color_cycler:21
+msgid "The colors to cycle through."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:3
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
+msgid "Set the default color cycler to iterate through red, green, and blue."
+msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_environment_texture:2
@@ -41459,7 +41567,7 @@ msgstr "軸となるアクターを作成します．"
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:50
 msgid "**label_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**label_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_marker:8
@@ -41573,17 +41681,17 @@ msgstr "エッジの色．"
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:36
 msgid "**x_face_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**x_face_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:40
 msgid "**y_face_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**y_face_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:44
 msgid "**z_face_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**z_face_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:47
@@ -41913,6 +42021,23 @@ msgstr "設定する場合，値は文字列，RGBリスト，または16進カ�
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the default mesh color to 'red'."
 msgstr "デフォルトのメッシュの色を赤に設定します．"
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:2
+msgid "Return or set the default color cycler used to color meshes."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:4
+msgid ""
+"This color cycler is iterated over by each renderer to sequentially color "
+"datasets when displaying them through ``add_mesh``."
+msgstr ""
+
+#: ../../pyvista/pyvista/themes.pydocstring of
+#: pyvista.themes.DefaultTheme.color_cycler:15
+msgid "Setting to ``None`` will disable the use of the color cycler."
+msgstr ""
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.colorbar_horizontal:2
@@ -43818,6 +43943,8 @@ msgid ""
 "**colors** : :class:`python:list` or :class:`python:tuple` :obj:`of` "
 ":obj:`ColorLike`, :obj:`optional`"
 msgstr ""
+"**colors** : :class:`python:list` or :class:`python:tuple` :obj:`of` "
+":obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:14
@@ -43832,7 +43959,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:18
 msgid "python:list or python:tuple of ColorLike, optional"
-msgstr ""
+msgstr "python:list or python:tuple of ColorLike, optional"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.stack:16
@@ -50113,7 +50240,7 @@ msgstr "``'#ff'``"
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:43
 msgid "**default_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**default_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:41
@@ -59013,7 +59140,7 @@ msgstr ""
 
 #: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
 msgid ":py:obj:`ColorLike <pyvista.ColorLike>`\\"
-msgstr ""
+msgstr ":py:obj:`ColorLike <pyvista.ColorLike>`\\"
 
 #: ../../pyvista/doc/api/utilities/utilities.rst:84:<autosummary>:1
 msgid ":py:obj:`start_xvfb <pyvista.start_xvfb>`\\ \\(\\[wait\\, window\\_size\\]\\)"
