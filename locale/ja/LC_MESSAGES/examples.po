@@ -10922,11 +10922,11 @@ msgstr ""
 #: ../../pyvista/doc/examples/02-plot/index.rst-1
 #: ../../pyvista/doc/examples/index.rst-1
 msgid "Color Cycling"
-msgstr ""
+msgstr "カラーサイクリング"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:26
 msgid "Cycle through colors when sequentially adding meshes to a plotter."
-msgstr ""
+msgstr "プロッターにメッシュを順次追加する際に，色を循環させるようにしました．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:30
 msgid ""
@@ -10934,20 +10934,21 @@ msgid ""
 "colors to colorize the data being added to the graphic. PyVista supports "
 "this in much the same way as Matplotlib."
 msgstr ""
+"Matplotlibのような多くのプロットライブラリは，あらかじめ定義された色のリストを循環して，グラフィックに追加されるデータを色付けします．PyVistaは，Matplotlibとほぼ同じ方法でこれをサポートしています．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:35
 msgid "This requires matplotlib (or at least cycler) to be installed."
-msgstr ""
+msgstr "これには matplotlib (または少なくとも cycler) がインストールされている必要があります．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:53
 msgid ""
 "Turn on color cycling in PyVista's theme and set it to use the default "
 "cycler."
-msgstr ""
+msgstr "PyVistaのテーマでカラーサイクリングをオンにして，デフォルトのサイクラーを使用するように設定します．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:71
 msgid "List the available colors in the cycler"
-msgstr ""
+msgstr "サイクラーで使用できる色の一覧"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:84
 msgid ""
@@ -10957,6 +10958,11 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><th>'color'</th><tr><td>'#1f77b4'</td></tr><tr><td>'#ff7f0e'</td></tr><tr><td>'#2ca02c'</td></tr><tr><td>'#d62728'</td></tr><tr><td>'#9467bd'</td></tr><tr><td>'#8c564b'</td></tr><tr><td>'#e377c2'</td></tr><tr><td>'#7f7f7f'</td></tr><tr><td>'#bcbd22'</td></tr><tr><td>'#17becf'</td></tr></table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:94
 msgid ""
@@ -10964,11 +10970,13 @@ msgid ""
 "``add_mesh`` call iterates over the colors in "
 "``pv.global_theme.color_cycler``"
 msgstr ""
+"プロッタを作成し，シーンにデータを追加します．各 ``add_mesh`` の呼び出しは， "
+"``pv.global_theme.color_cycler`` の色に対して反復処理されることが分かります．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:122
 msgid ""
 "Reset the theme to not use a cycler and instead set on individual plotters."
-msgstr ""
+msgstr "サイクラーを使用せず，個々のプロッターに設定するようにテーマを再設定します．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:139
 msgid ""
@@ -10976,6 +10984,8 @@ msgid ""
 " a cycler for a single plotter, you can set this on with "
 ":func:`set_color_cycler() <pyvista.Plotter.set_color_cycler>`."
 msgstr ""
+"もし，グローバルなカラーサイクラーを設定せず，単一のプロッタのサイクラーを使用したい場合は， :func:`set_color_cycler() "
+"<pyvista.Plotter.set_color_cycler>` でこれを設定することができます．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:172
 msgid ""
@@ -10983,11 +10993,13 @@ msgid ""
 ":func:`set_color_cycler() <pyvista.Renderer.set_color_cycler>` on the active"
 " ``renderer``."
 msgstr ""
+"さらに，アクティブな ``renderer`` で :func:`set_color_cycler() "
+"<pyvista.Renderer.set_color_cycler>` を呼び出すと，レンダラーごとにこれをコントロールすることができます．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:215
 msgid ""
 "You can also change the colors of actors after they are added to the scene."
-msgstr ""
+msgstr "また，アクターをシーンに追加した後でも，色を変更することができます．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:217
 msgid ""
@@ -10995,21 +11007,26 @@ msgid ""
 "event to cycle through the colors on-demand. Or better yet, have your cycler"
 " randomly select colors."
 msgstr ""
+"プロによるアドバイス：以下のfor-"
+"loopをキーイベントのイベントコールバックに配置すると，オンデマンドで色を循環させることができます．あるいは，サイクラーにランダムに色を選択させるのもよいでしょう．"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:255
 msgid "**Total running time of the script:** ( 0 minutes  0.865 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.865 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:267
 msgid ""
 ":download:`Download Python source code: color_cycler.py <color_cycler.py>`"
 msgstr ""
+":download:`Download Python source code: color_cycler.py <color_cycler.py>`"
 
 #: ../../pyvista/doc/examples/02-plot/color_cycler.rst:271
 msgid ""
 ":download:`Download Jupyter notebook: color_cycler.ipynb "
 "<color_cycler.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: color_cycler.ipynb "
+"<color_cycler.ipynb>`"
 
 #: ../../pyvista/doc/examples/02-plot/composite-picking.rst:13
 msgid ""
@@ -11934,11 +11951,13 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Cycle through colors when "
 "sequentially adding meshes to a plotter.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Cycle through colors when "
+"sequentially adding meshes to a plotter.\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:192
 #: ../../pyvista/doc/examples/index.rst:1469
 msgid ":ref:`sphx_glr_examples_02-plot_color_cycler.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_02-plot_color_cycler.py`"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:194
 #: ../../pyvista/doc/examples/index.rst:1471
@@ -11946,6 +11965,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Color Cycling</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Color Cycling</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:200
 #: ../../pyvista/doc/examples/index.rst:1477
@@ -14893,15 +14914,16 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:8
 msgid "**00:00.865** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:00.865** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid ":ref:`sphx_glr_examples_02-plot_color_cycler.py` (``color_cycler.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_02-plot_color_cycler.py` (``color_cycler.py``)"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:11
 msgid "00:00.865"
-msgstr ""
+msgstr "00:00.865"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:13
 msgid ""
@@ -16024,28 +16046,28 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:24
 msgid "Display vertices on a mesh in the same fashion as edge visibility."
-msgstr "メッシュ上の頂点をエッジの見え方と同じように表示します。"
+msgstr "メッシュ上の頂点をエッジの見え方と同じように表示します．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:46
 msgid ""
 "We can easily display all vertices of a mesh with a ``points`` style "
 "representation when plotting:"
-msgstr "プロット時にメッシュのすべての頂点を ``points`` スタイルの表現で簡単に表示することができます。"
+msgstr "プロット時にメッシュのすべての頂点を ``points`` スタイルの表現で簡単に表示することができます．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:72
 msgid ""
 "However, we often want to see the vertices of a mesh rendered atop the "
 "surface geometry. Much like how we can render the edges of a mesh:"
 msgstr ""
-"しかし、メッシュの頂点がサーフェスジオメトリの上にレンダリングされるのを見たいこともよくあります。メッシュのエッジをレンダリングするのと同じようなものです:"
+"しかし，メッシュの頂点がサーフェスジオメトリの上にレンダリングされるのを見たいこともよくあります．メッシュのエッジをレンダリングするのと同じようなものです:"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:98
 msgid ""
 "In order to display the vertices atop a mesh's surface geometry, simply pass"
 " ``show_vertices=True`` to render them along side the original geometry."
 msgstr ""
-"メッシュのサーフェスジオメトリの上に頂点を表示するには、単に ``show_vertices=True`` "
-"を渡すと、オリジナルのジオメトリと一緒に頂点がレンダリングされます。"
+"メッシュのサーフェスジオメトリの上に頂点を表示するには，単に ``show_vertices=True`` "
+"を渡すと，オリジナルのジオメトリと一緒に頂点がレンダリングされます．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:102
 msgid ""
@@ -16053,7 +16075,7 @@ msgid ""
 "and ``vertex_style``."
 msgstr ""
 "頂点のスタイルは ``vertex_color``, ``vertex_opacity``, ``vertex_style`` "
-"を使って変更することができます。"
+"を使って変更することができます．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:135
 msgid ""
@@ -16067,7 +16089,7 @@ msgstr ""
 msgid ""
 "The first step is to extract the outer surface geometry of the mesh then "
 "grab all the points of that extraction."
-msgstr "まず、メッシュの外表面形状を抽出し、その抽出された点をすべて取り込みます。"
+msgstr "まず，メッシュの外表面形状を抽出し，その抽出された点をすべて取り込みます．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:158
 msgid ""
@@ -16075,12 +16097,12 @@ msgid ""
 "<pyvista.Plotter.add_points>` to render them along side the original "
 "geometry."
 msgstr ""
-"頂点を抽出できたので、 :func:`add_points() <pyvista.Plotter.add_points>` "
-"を使って、元のジオメトリの横に並べてレンダリングすることができます。"
+"頂点を抽出できたので， :func:`add_points() <pyvista.Plotter.add_points>` "
+"を使って，元のジオメトリの横に並べてレンダリングすることができます．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:162
 msgid "Color the points by their Y position."
-msgstr "点のY位置で色分けをします。"
+msgstr "点のY位置で色分けをします．"
 
 #: ../../pyvista/doc/examples/02-plot/vertices.rst:196
 msgid "**Total running time of the script:** ( 0 minutes  1.425 seconds)"

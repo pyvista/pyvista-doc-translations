@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 01:49+0000\n"
+"POT-Creation-Date: 2023-01-09 03:00+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -846,12 +846,6 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.plotting.actor.Actor.copy:0
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -1062,6 +1056,10 @@ msgstr "VTK CameraクラスのPyVistaラッパー．"
 #: pyvista.plotting.tools.create_axes_marker:0
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:0
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.load_theme:0
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -2376,19 +2374,13 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.plotting._property.Property.plot:23
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.backface_prop:26
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.center:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.mapper:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:19
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.pickable:17 ../../pyvista/pyvista/plotting/actor.pydocstring
-#: of pyvista.Actor.position:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.prop:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.scale:17
+#: of pyvista.Actor.prop:17 ../../pyvista/pyvista/plotting/actor.pydocstring
+#: of pyvista.Actor.texture:21
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.texture:21 ../../pyvista/pyvista/plotting/actor.pydocstring
-#: of pyvista.Actor.user_matrix:17
+#: pyvista.Actor.user_matrix:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.visibility:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
@@ -2397,12 +2389,6 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.plotting.actor.Actor.copy:27
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:22
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:21
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:21
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:21
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:21 ../../pyvista/pyvista/plotting/camera.pydocstring
 #: of pyvista.Camera.clipping_range:19
@@ -3064,6 +3050,16 @@ msgstr "カメラを装着するレンダラ．"
 #: pyvista.plotting.tools.create_axes_marker:65
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:73
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.mapper:17
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.prop:17
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:62
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:23
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:18
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:18
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:17
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -4535,6 +4531,8 @@ msgstr "カメラのディープコピーを取得します．"
 #: pyvista.plotting.tools.create_axes_marker:0
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:0
 #: ../../pyvista/pyvista/utilities/common.pydocstring of
 #: pyvista.utilities.common.perlin_noise:0
 #: ../../pyvista/pyvista/utilities/common.pydocstring of
@@ -5876,12 +5874,12 @@ msgstr "アクタがレンダリングウィンドウ全体を埋め尽くすよ
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:2
 msgid "pyvista.Cell"
-msgstr ""
+msgstr "pyvista.Cell"
 
 #: ../../pyvista/doc/api/core/cells.rst:58:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:2
 msgid "Wrapping of vtkCell."
-msgstr ""
+msgstr "vtkCellのラッピングです．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:4
 msgid ""
@@ -5889,22 +5887,23 @@ msgid ""
 "be useful when walking through a cell's individual faces or investigating "
 "cell properties."
 msgstr ""
+"このクラスは，与えられたセルのトポロジーにアクセスする機能を提供し，セルの個々の面をウォークスルーしたり，セルのプロパティを調査する際に便利です．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:11
 msgid "**vtk_cell** : :obj:`vtk.vtkCell`, :obj:`optional`"
-msgstr ""
+msgstr "**vtk_cell** : :obj:`vtk.vtkCell`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:10
 msgid "vtk.vtkCell, optional"
-msgstr ""
+msgstr "vtk.vtkCell, optional"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:11
 msgid "The vtk object to wrap as Cell, that must be of ``vtk.vtkCell`` type."
-msgstr ""
+msgstr "``vtk.vtkCell`` 型の，Cell としてラップする vtk オブジェクト．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:14
 msgid "**cell_type** : :class:`python:int`, :obj:`optional`"
-msgstr ""
+msgstr "**cell_type** : :class:`python:int`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:13
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -6000,7 +5999,7 @@ msgstr "python:int, optional"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:14
 msgid "VTK cell type. Determined from ``vtk_cell`` if not input."
-msgstr ""
+msgstr "VTK のセルタイプ．入力されていない場合は ``vtk_cell`` から決定されます．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:25
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -6016,7 +6015,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:17
 msgid "Perform a deep copy of the original cell."
-msgstr ""
+msgstr "元のセルのディープコピーを実行します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:29
 msgid ""
@@ -6025,6 +6024,9 @@ msgid ""
 ":attr:`pyvista.PolyData.faces` or :attr:`pyvista.UnstructuredGrid.cells` "
 "attributes."
 msgstr ""
+"このクラスを使って :class:`pyvista.DataSet` から個々のセルにアクセスすると， "
+":attr:`pyvista.PolyData.faces` や :attr:`pyvista.UnstructuredGrid.cells` "
+"属性からバルクデータにアクセスするよりもはるかに遅くなります．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:33
 msgid ""
@@ -6032,23 +6034,25 @@ msgid ""
 "is unassociated with the original cell. Changing any data of that cell (for "
 "example, :attr:`pyvista.Cell.points`) will not change the original dataset."
 msgstr ""
+"また，このセルオブジェクトは元のセルのディープコピーであり，元のセルとは関連性がないことに注意してください．そのセルのデータ（例えば "
+":attr:`pyvista.Cell.points` ）を変更しても，オリジナルのデータセットが変更されることはありません．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:3
 msgid "Get the 0-th cell from a :class:`pyvista.PolyData`."
-msgstr ""
+msgstr ":class:`pyvista.PolyData` から 0 番目のセルを取得します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:20
 msgid "Get the 0-th cell from a :class:`pyvista.UnstructuredGrid`."
-msgstr ""
+msgstr ":class:`pyvista.UnstructuredGrid` から 0 番目のセルを取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:2
 msgid "Get the cell bounds in ``[xmin, xmax, ymin, ymax, zmin, zmax]``."
-msgstr ""
+msgstr "セルの境界を ``[xmin, xmax, ymin, ymax, zmin, zmax]`` で取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:2
 msgid "Cast this cell to an unstructured grid."
-msgstr ""
+msgstr "このセルを非構造化グリッドにキャストします．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:18
@@ -6128,12 +6132,12 @@ msgstr ":obj:`pyvista.UnstructuredGrid`"
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:9
 msgid "This cell cast to a :class:`pyvista.UnstructuredGrid`."
-msgstr ""
+msgstr "このセルは :class:`pyvista.UnstructuredGrid` にキャストされます．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:2
 msgid "Return a copy of the cell."
-msgstr ""
+msgstr "セルのコピーを取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:10
@@ -7418,6 +7422,8 @@ msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 #: pyvista.plotting.tools.create_axes_orientation_box:46
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:52
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:41
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:22
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -7439,6 +7445,7 @@ msgid ""
 "When ``True`` makes a full copy of the cell.  When ``False``, performs a "
 "shallow copy where the new cell still references the original cell."
 msgstr ""
+"``True`` の場合，セルを完全にコピーします． ``False`` の場合は，新しいセルが元のセルを参照するような，浅いコピーを行います．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:24 ../../pyvista/pyvista/core/cell.pydocstring
@@ -7448,45 +7455,45 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_cell:20
 msgid ":obj:`pyvista.Cell`"
-msgstr ""
+msgstr ":obj:`pyvista.Cell`"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:15
 msgid "Deep or shallow copy of the cell."
-msgstr ""
+msgstr "セルの深いコピーまたは浅いコピー．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:28
 msgid "Create a deep copy of the cell and demonstrate it is deep."
-msgstr ""
+msgstr "セルのディープコピーを作成し，深いことを実証します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:38
 msgid "Create a shallow copy of the cell and demonstrate it is shallow."
-msgstr ""
+msgstr "セルのシャローコピーを作成し，浅いことを実証します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:2
 msgid "Return the cell dimension."
-msgstr ""
+msgstr "セルの次元を返します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:4
 msgid ""
 "This returns the dimensionality of the cell. For example, 1 for an edge, 2 "
 "for a triangle, and 3 for a tetrahedron."
-msgstr ""
+msgstr "セルの次元を返します．例えば，1なら辺，2なら三角形，3なら四面体です．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:2
 msgid "Return a list of edges composing the cell."
-msgstr ""
+msgstr "セルを構成するエッジのリストを返します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:2
 msgid "Return a list of faces composing the cell."
-msgstr ""
+msgstr "セルを構成する面のリストを返します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_edge:2
 msgid "Get the i-th edge composing the cell."
-msgstr ""
+msgstr "セルを構成する i 番目の辺を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_edge:8
@@ -7561,59 +7568,59 @@ msgstr "python:int"
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_edge:8
 msgid "Edge ID."
-msgstr ""
+msgstr "エッジID．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_edge:13
 msgid "Edge given by ``index``."
-msgstr ""
+msgstr "``index`` で指定されるエッジです．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Cell.rst:3
 msgid ""
 "Extract a single edge from a face and output the IDs of the edge points."
-msgstr ""
+msgstr "面から1つのエッジを抽出し，エッジ点のIDを出力します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_face:2
 msgid "Get the i-th face composing the cell."
-msgstr ""
+msgstr "セルを構成する i 番目の面を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_face:8
 msgid "Face ID."
-msgstr ""
+msgstr "面ID．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_face:13
 msgid "Face given by ``index``."
-msgstr ""
+msgstr "``index`` で指定される面です．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_face:26
 msgid ""
 "Return the face IDs composing the first face of an example tetrahedron."
-msgstr ""
+msgstr "例の四面体の最初の面を構成する面IDを返します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:2
 msgid "Return if the cell is linear."
-msgstr ""
+msgstr "セルが線形であるかどうかを返します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:2
 msgid "Get the number of edges composing the cell."
-msgstr ""
+msgstr "セルを構成するエッジの数を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:2
 msgid "Get the number of faces composing the cell."
-msgstr ""
+msgstr "セルを構成する面の数を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:2
 msgid "Get the number of points composing the cell."
-msgstr ""
+msgstr "セルを構成する点の数を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:2
 msgid "Plot this cell."
-msgstr ""
+msgstr "このセルをプロットします．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:19
@@ -7814,19 +7821,19 @@ msgstr "python:dict, optional"
 msgid ""
 "See :func:`pyvista.plot` for a description of the optional keyword "
 "arguments."
-msgstr ""
+msgstr "オプションのキーワード引数の説明については :func:`pyvista.plot` を参照してください．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:2
 msgid "Get the point IDs composing the cell."
-msgstr ""
+msgstr "セルを構成する点IDを取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:2
 msgid "Get the point coordinates of the cell."
-msgstr ""
+msgstr "セルの点座標を取得します．"
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:2
 msgid "Get the cell type from the enum :class:`pyvista.CellType`."
-msgstr ""
+msgstr "enum :class:`pyvista.CellType` からセルの種類を取得します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.CompositeFilters.rst:2
 msgid "pyvista.CompositeFilters"
@@ -8985,6 +8992,16 @@ msgstr "**value** : :class:`python:float`, :obj:`optional`"
 #: pyvista.plotting.tools.create_axes_orientation_box:10
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:55
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:21
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:24
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:27
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:30
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:58
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArcFromNormal:25
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -9887,6 +9904,8 @@ msgstr "**preference** : :class:`python:str`, :obj:`optional`"
 #: pyvista.plotting.tools.create_axes_orientation_box:28
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:31
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:15
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:35
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -11147,12 +11166,12 @@ msgstr "別のオブジェクトからこのオブジェクトにpyvistaメタ�
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:8
 msgid "**ido** : :obj:`pyvista.DataObject`"
-msgstr ""
+msgstr "**ido** : :obj:`pyvista.DataObject`"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:8
 msgid "Data object to copy the metadata from."
-msgstr ""
+msgstr "メタデータのコピー元となるデータオブジェクト．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:11
@@ -11757,43 +11776,47 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:2
 msgid "Return a list of cells."
-msgstr ""
+msgstr "セルのリストを返します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:14
 msgid ":class:`python:list`\\[:obj:`pyvista.Cell`]"
-msgstr ""
+msgstr ":class:`python:list`\\[:obj:`pyvista.Cell`]"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:9
 msgid "A list of :class:`pyvista.Cell` objects."
-msgstr ""
+msgstr ":class:`pyvista.Cell` オブジェクトのリストです．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:18
 msgid ""
 "For large meshes, the list can take some time to compute and you might "
 "prefer to use the :func:`DataSet.get_cell` method within a for-loop."
 msgstr ""
+"大きなメッシュの場合，リストの計算に時間がかかることがあります．そのため，for-loopの中で :func:`DataSet.get_cell` "
+"メソッドを使用することをお勧めします．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Get the last cell of a dataset."
-msgstr ""
+msgstr "データセットの最後のセルを取得する．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:18
 msgid "Get the point ids of the last cell"
-msgstr ""
+msgstr "最後のセルの点IDを取得します"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:23
 msgid "Get the points coordinates of the last cell"
-msgstr ""
+msgstr "最後のセルの点座標を取得します"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:35
 msgid ""
 "Get the point ids of the edges of the last cell. Note that the `edges` "
 "attributes returns a generator of `pyvista.Cell` objects."
 msgstr ""
+"最後のセルのエッジのポイント ID を取得します． `edges` 属性は `pyvista.Cell` "
+"オブジェクトのジェネレータを返すことに注意してください．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:54
 msgid "Get the point ids of the faces of the last cell."
-msgstr ""
+msgstr "最後のセルの面の点IDを取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:2
@@ -11803,7 +11826,7 @@ msgstr "セルの境界ボックスを取得します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:4
 msgid "Use :attr:`pyvista.Cell.bounds` instead."
-msgstr ""
+msgstr "代わりに :attr:`pyvista.Cell.bounds` を使用します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:10
@@ -11873,7 +11896,7 @@ msgstr "セル内のポイント数を取得します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_n_points:4
 msgid "Use :attr:`pyvista.Cell.n_points` instead."
-msgstr ""
+msgstr "代わりに :attr:`pyvista.Cell.n_points` を使用します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_n_points:15
@@ -11888,7 +11911,7 @@ msgstr "セル内の点座標を返します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_point_ids:4
 msgid "You can use :attr:`pyvista.Cell.point_ids` instead."
-msgstr ""
+msgstr "代わりに :attr:`pyvista.Cell.point_ids` を使用することができます．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_point_ids:24
@@ -11914,7 +11937,7 @@ msgstr "セル内の点を取得します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_points:4
 msgid "Use :attr:`pyvista.Cell.points` instead."
-msgstr ""
+msgstr "代わりに :attr:`pyvista.Cell.points` を使用します．"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_active_scalars:35
@@ -11976,7 +11999,7 @@ msgstr "セルの型を取得します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:4
 msgid "You can use :attr:`pyvista.Cell.type` instead."
-msgstr ""
+msgstr "代わりに :attr:`pyvista.Cell.type` を使用することができます．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:10
@@ -12731,12 +12754,12 @@ msgstr "フィールドデータの配列の関連性を取得します．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_cell:2
 msgid "Return a :class:`pyvista.Cell` object."
-msgstr ""
+msgstr ":class:`pyvista.Cell` オブジェクトを返します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_cell:13
 msgid "The i-th pyvista.Cell."
-msgstr ""
+msgstr "i番目の pyvista.Cell ．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_cell:24
@@ -12745,10 +12768,12 @@ msgid ""
 "Changing properties (for example, ``points``) will not affect the dataset "
 "they originated from."
 msgstr ""
+"このメソッドから返されるセルは，元のセルと同じディープコピーです．プロパティ (たとえば ``points`` ) "
+"を変更しても，元のデータセットには影響がありません．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid "Get the 0-th cell."
-msgstr ""
+msgstr "0 番目のセルを取得します．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:9
@@ -13297,12 +13322,6 @@ msgstr "**background** : :obj:`ColorLike`, :obj:`optional`"
 #: pyvista.plotting.lookup_table.LookupTable:55
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:58
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:55
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:60
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:65
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:33
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -14431,12 +14450,6 @@ msgstr "回転の中心となる軸．"
 #: pyvista.core.dataset.DataSet.rotate_z:12
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:8
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:18
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.axis_rotation:11
 msgid "**angle** : :class:`python:float`"
@@ -14458,12 +14471,6 @@ msgstr "**angle** : :class:`python:float`"
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:7
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:17
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.set_direction_angle:21
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -29004,7 +29011,7 @@ msgstr ":py:obj:`pyvista.Camera <pyvista.Camera>`\\ \\(\\[renderer\\]\\)"
 #: ../../pyvista/doc/api/core/cells.rst:2
 #: ../../pyvista/doc/api/examples/index.rst:111
 msgid "Cells"
-msgstr "Cells"
+msgstr "セル"
 
 #: ../../pyvista/doc/api/core/cells.rst:4
 msgid ""
@@ -29013,6 +29020,9 @@ msgid ""
 "<https://vtk.org/doc/nightly/html/classvtkGenericCell.html>`_ and can be "
 "used to inspect a :class:`pyvista.DataSet`'s cells, faces, and edges."
 msgstr ""
+"セル :class:`pyvista.Cell` クラスは， `vtkGenericCell "
+"<https://vtk.org/doc/nightly/html/classvtkGenericCell.html>`_ を PyVista "
+"で表現したもので， :class:`pyvista.DataSet` のセルや面，辺を調べるために使用されます．"
 
 #: ../../pyvista/doc/api/core/cells.rst:8
 msgid ""
@@ -29022,6 +29032,8 @@ msgid ""
 "working with multiple cells it is generally more efficient to use bulk "
 "methods like :func:`pyvista.DataSetFilters.extract_cells`."
 msgstr ""
+"メソッドやクラスはデータセットの一部を検査したりプロットしたりするのには非常に効果的ですが，非効率的なので，インタラクティブな探索やデバッグにのみ使用すべきです．大きなデータセットを扱うときや，複数のセルを扱うときは，一般的に"
+" :func:`pyvista.DataSetFilters.extract_cells` のようなバルクメソッドを使用する方が効率的です．"
 
 #: ../../pyvista/doc/api/core/cells.rst:14
 msgid ""
@@ -29029,23 +29041,25 @@ msgid ""
 ":func:`pyvista.DataSet.get_cell` by extracting a hexahedral cell from an "
 "example :class:`pyvista.UnstructuredGrid`."
 msgstr ""
+"ここでは， :func:`pyvista.DataSet.get_cell` を使って， "
+":class:`pyvista.UnstructuredGrid` から六面体のセルを取り出す例を簡単に説明します．"
 
 #: ../../pyvista/doc/api/core/cells.rst:31
 msgid "You can then extract a single face of that cell."
-msgstr ""
+msgstr "そして，そのセルの1つの面を抽出することができます．"
 
 #: ../../pyvista/doc/api/core/cells.rst:38
 msgid "Afterwards, you can extract an edge or edges from the face."
-msgstr ""
+msgstr "その後，面から1つまたは複数のエッジを抽出することができます．"
 
 #: ../../pyvista/doc/api/core/cells.rst:45
 msgid ""
 "Each :class:`pyvista.Cell` can be individually plotted for convenience."
-msgstr ""
+msgstr "各 :class:`pyvista.Cell` は個別にプロットすることができ，便利です．"
 
 #: ../../pyvista/doc/api/core/cells.rst:53
 msgid "Class Definition"
-msgstr ""
+msgstr "クラス定義"
 
 #: ../../pyvista/doc/api/core/cells.rst:58:<autosummary>:1
 msgid ":py:obj:`pyvista.Cell <pyvista.Cell>`\\ \\(\\[vtk\\_cell\\, cell\\_type\\, deep\\]\\)"
@@ -35443,7 +35457,7 @@ msgstr "PyVistaのヘルパーモジュール，変換ツール，およびジ�
 msgid "pyvista.Actor"
 msgstr "pyvista.Actor"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:2
 msgid "Wrap vtkActor."
@@ -35542,18 +35556,6 @@ msgid ""
 "blue using the ``backface_prop``."
 msgstr "平面で球体を切り抜き， ``backface_prop`` を使って切り取った球体の内側を水色に着色します．"
 
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:2
-msgid "Return the bounds of the actor."
-msgstr "アクターの境界を返します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:4
-msgid "Bounds are ``(-X, +X, -Y, +Y, -Z, +Z)``"
-msgstr "境界は ``(-X, +X, -Y, +Y, -Z, +Z)`` です．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.center:2
-msgid "Return the center of the actor."
-msgstr "アクターの中央を返します．"
-
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:2
 msgid "Create a copy of this actor."
@@ -35612,33 +35614,6 @@ msgid "Return the memory address of this actor."
 msgstr "このアクターのメモリアドレスを返します．"
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:2
-msgid "Return or set the actor orientation."
-msgstr "アクターの向きを返すか設定します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:4
-msgid ""
-"Orientation is defined as the rotation from the global axes in degrees about"
-" the actor's x, y, and z axes."
-msgstr "オリエンテーションは，アクタのx，y，z軸に関するグローバル軸からの回転の度数で定義されます．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid "Show that the orientation changes with rotation."
-msgstr "回転によって向きが変わることを示します．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:13
-msgid "Set the orientation directly."
-msgstr "方向を直接設定します．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:19
-msgid ""
-"Reorient just the actor and plot it. Note how the actor is rotated about its"
-" own axes as defined by its position."
-msgstr ""
-"アクターだけの向きを変えて，プロットしてください．アクターは，その位置によって定義されるそれ自身の軸を中心に回転していることに注意してください．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.pickable:2
 msgid "Return or set actor pickability."
 msgstr "アクターのピック許可を返すか設定します．"
@@ -35672,21 +35647,9 @@ msgid ""
 " and plot it."
 msgstr "class:`pyvista.Plotter` のないアクターを作成し，そのプロパティを変更し，プロットします．"
 
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.position:2
-msgid "Return or set the actor position."
-msgstr "アクターの位置を返すか設定します．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Change the position of an actor. Note how this does not change the position "
-"of the underlying dataset, just the relative location of the actor in the "
-":class:`pyvista.Plotter`."
-msgstr ""
-"アクターの位置を変更します．これは基になるデータセットの位置を変更するのではなく， :class:`pyvista.Plotter` "
-"におけるアクタの相対的な位置を変更するだけであることに注意してください．"
-
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.prop:2
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.prop:2
 msgid "Return or set the property of this actor."
 msgstr "このアクターのプロパティを返すか設定します．"
 
@@ -35699,64 +35662,6 @@ msgstr "プロッタにデータセットを追加した後，アクタのプロ
 #: pyvista.Actor.renderer:2
 msgid "Return the renderer associated with this actor."
 msgstr "このアクターに関連付けられたレンダラを取得します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:2
-msgid "Rotate the actor about the x axis."
-msgstr "アクターをx軸を中心に回転します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:8
-msgid "Angle to rotate the actor about the x axis in degrees."
-msgstr "x軸を中心にアクターを回転させる角度の度数．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the x axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr "アクターを x 軸を中心に 45 度回転させます．これによって，基礎となるデータセットの位置がどのように変化しないかに注意してください．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:2
-msgid "Rotate the actor about the y axis."
-msgstr "アクターをy軸を中心に回転します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:8
-msgid "Angle to rotate the actor about the y axis in degrees."
-msgstr "y軸を中心にアクターを回転させる角度の度数．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the y axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr "アクターを y 軸を中心に 45 度回転させます．これによって，基礎となるデータセットの位置がどのように変化しないかに注意してください．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:2
-msgid "Rotate the actor about the z axis."
-msgstr "アクターをz軸を中心に回転します．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:8
-msgid "Angle to rotate the actor about the z axis in degrees."
-msgstr "z軸を中心にアクターを回転させる角度の度数．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the Z axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr "アクターを Z 軸を中心に 45 度回転させます．これによって，基礎となるデータセットの位置がどのように変化しないかに注意してください．"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.scale:2
-msgid "Return or set actor scale."
-msgstr "アクタースケールを返すか設定します．"
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Create an actor using the :class:`pyvista.Plotter` and then change the scale"
-" of the actor."
-msgstr ":class:`pyvista.Plotter` を使ってアクターを作成し，そのアクターのスケールを変更します．"
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.texture:2
 msgid "Return or set the actor texture."
@@ -35800,7 +35705,7 @@ msgstr "アクターの可視性を返すか設定します．"
 msgid "pyvista.BlockAttributes"
 msgstr "pyvista.BlockAttributes"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.BlockAttributes:2
 msgid "Block attributes used to set the attributes of a block."
@@ -35958,7 +35863,7 @@ msgstr "コンポジットデータセットの最初のブロックを隠しま
 msgid "pyvista.CompositeAttributes"
 msgstr "pyvista.CompositeAttributes"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes:2
 msgid "Block attributes."
@@ -36083,7 +35988,7 @@ msgstr "合成データセットの最初のブロックを隠し，その後，
 msgid "pyvista.CompositePolyDataMapper"
 msgstr "pyvista.CompositePolyDataMapper"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
 msgid "Composite PolyData mapper."
@@ -36304,8 +36209,6 @@ msgstr "**nan_color** : :obj:`ColorLike`"
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:46
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:51
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
 msgid "ColorLike"
 msgstr "ColorLike"
 
@@ -36492,7 +36395,7 @@ msgstr "複合データセットの各ブロックを固有の色に設定しま
 msgid "pyvista.DataSetMapper"
 msgstr "pyvista.DataSetMapper"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper:2
 msgid "Wrap _vtk.vtkDataSetMapper."
@@ -36561,8 +36464,13 @@ msgstr "データセットに色をつけるための不透明度配列．配列
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
-msgid "**color** : :obj:`ColorLike`"
-msgstr "**color** : :obj:`ColorLike`"
+msgid "**color** : :obj:`color_like`"
+msgstr "**color** : :obj:`color_like`"
+
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
+msgid "color_like"
+msgstr "color_like"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
@@ -36705,22 +36613,29 @@ msgstr ""
 "**log_scale** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable:53
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:56
-msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**nan_color** : :obj:`color_like`, :obj:`optional`"
+msgstr "**nan_color** : :obj:`color_like`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:55
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:60
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:65
+msgid "color_like, optional"
+msgstr "color_like, optional"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:61
-msgid "**above_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr "**above_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**above_color** : :obj:`color_like`, :obj:`optional`"
+msgstr "**above_color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:66
-msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr "**below_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**below_color** : :obj:`color_like`, :obj:`optional`"
+msgstr "**below_color** : :obj:`color_like`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:80
@@ -36790,7 +36705,7 @@ msgstr "スカラーのカラーバーの範囲．デフォルトはスカラー
 msgid "pyvista.LookupTable"
 msgstr "pyvista.LookupTable"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:2
 msgid "Scalar to RGBA mapping table."
@@ -36960,6 +36875,11 @@ msgstr ""
 #: pyvista.plotting.lookup_table.LookupTable:50
 msgid "Use a log scale when mapping scalar values."
 msgstr "スカラー値をマッピングする際に，対数スケールを使用します．"
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:53
+msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:53
@@ -37544,7 +37464,7 @@ msgstr "黒から赤までの簡単な4値のルックアップテーブルを�
 msgid "pyvista.Plotter"
 msgstr "pyvista.Plotter"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:2
 msgid "Plotting object to display vtk meshes or numpy arrays."
@@ -38031,7 +37951,7 @@ msgstr "``show`` を使用する際に，カメラの位置を取得します．
 msgid "pyvista.Property"
 msgstr "pyvista.Property"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:2
 msgid "Wrap vtkProperty and expose it pythonically."
@@ -38192,6 +38112,8 @@ msgstr ""
 #: pyvista.plotting._property.Property:58
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_marker:44
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:22
 msgid "**ambient** : :class:`python:float`, :obj:`optional`"
 msgstr "**ambient** : :class:`python:float`, :obj:`optional`"
 
@@ -38199,6 +38121,8 @@ msgstr "**ambient** : :class:`python:float`, :obj:`optional`"
 #: pyvista.Property.ambient:4
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:55
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:19
 msgid ""
 "When lighting is enabled, this is the amount of light in the range of 0 to 1"
 " (default 0.0) that reaches the actor when not directed at the light source "
@@ -38208,31 +38132,43 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:61
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:25
 msgid "**diffuse** : :class:`python:float`, :obj:`optional`"
 msgstr "**diffuse** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:61
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:25
 msgid "The diffuse lighting coefficient. Default 1.0."
 msgstr "拡散照明係数．デフォルト1.0．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:64
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:28
 msgid "**specular** : :class:`python:float`, :obj:`optional`"
 msgstr "**specular** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:64
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:28
 msgid "The specular lighting coefficient. Default 0.0."
 msgstr "鏡面反射光の係数．デフォルト0.0．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:67
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "**specular_power** : :class:`python:float`, :obj:`optional`"
 msgstr "**specular_power** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:67
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "The specular power. Between 0.0 and 128.0."
 msgstr "鏡面パワー．0.0から128.0．"
 
@@ -38483,11 +38419,15 @@ msgstr "RGBの値で色を設定することを可視化します．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property.copy:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:2
 msgid "Create a deep copy of this property."
 msgstr "このプロパティのディープコピーを作成します．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property.copy:9
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:9
 msgid "Deep copy of this property."
 msgstr "このプロパティのディープコピーです．"
 
@@ -38519,16 +38459,22 @@ msgstr "フロントフェースカリングをプロットします．ここで
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:2
 msgid "Return or set the diffuse lighting coefficient."
 msgstr "拡散照明係数を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:4
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:4
 msgid "Default 1.0."
 msgstr "デフォルト1.0．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:6
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:6
 msgid ""
 "This is the scattering of light by reflection or transmission. Diffuse "
 "reflection results when light strikes an irregular surface such as a frosted"
@@ -38822,16 +38768,22 @@ msgstr "エッジの可視が ``True`` であることを可視化します．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:2
 msgid "Return or set specular."
 msgstr "鏡面を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:4
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:4
 msgid "Default 0.0"
 msgstr "デフォルト0.0．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:6
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:6
 msgid ""
 "Specular lighting simulates the bright spot of a light that appears on shiny"
 " objects."
@@ -38864,6 +38816,8 @@ msgstr "``specular = 0.2`` で鏡面光の色を青に設定する様子を可�
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular_power:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular_power:2
 msgid "Return or set specular power."
 msgstr "スペキュラパワーを返すか設定します．"
 
@@ -38937,7 +38891,7 @@ msgstr "ポイント表現スタイルを可視化します．"
 msgid "pyvista.Renderer"
 msgstr "pyvista.Renderer"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:2
 msgid "Renderer class."
@@ -40487,7 +40441,7 @@ msgstr "レンダラーのライト．"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.next_color:2
 msgid "Return next color from this renderer's color cycler."
-msgstr ""
+msgstr "このレンダラーのカラーサイクラーから次の色を返します．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_projection:2
@@ -40763,7 +40717,7 @@ msgstr "背景色を黒にして，プロットの上部に白へのグラデー
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:2
 msgid "Set or reset this renderer's color cycler."
-msgstr ""
+msgstr "このレンダラーのカラーサイクラーを設定またはリセットします．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:4
@@ -40772,6 +40726,8 @@ msgid ""
 "<pyvista.Plotter.add_mesh>` call to set the default color of the dataset "
 "being plotted."
 msgstr ""
+"このカラーサイクラーは，プロットされるデータセットのデフォルトカラーを設定するために，連続した :class:`add_mesh() "
+"<pyvista.Plotter.add_mesh>` の呼び出しによって反復されます．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:7
@@ -40782,6 +40738,7 @@ msgid ""
 "cycler of color-like objects. If the value passed is a single string, it "
 "must be one of:"
 msgstr ""
+"設定するとき，値は色のようなオブジェクトのリスト，または色のようなオブジェクトのサイクラーのいずれかでなければなりません．渡された値が単一の文字列である場合，それは以下のうちの1つでなければなりません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:11
@@ -40789,7 +40746,7 @@ msgstr ""
 #: pyvista.themes.DefaultTheme.color_cycler:11
 msgid ""
 "``'default'`` - Use the default color cycler (matches matplotlib's default)"
-msgstr ""
+msgstr "``'default'`` - デフォルトのカラーサイクラーを使用します (matplotlib のデフォルトと一致します)"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:12
@@ -40797,7 +40754,7 @@ msgstr ""
 #: pyvista.themes.DefaultTheme.color_cycler:12
 msgid ""
 "``'matplotlib`` - Dynamically get matplotlib's current theme's color cycler."
-msgstr ""
+msgstr "``'matplotlib`` - Matplotlib の現在のテーマのカラーサイクラーを動的に取得します．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:13
@@ -40806,14 +40763,14 @@ msgstr ""
 msgid ""
 "``'all'`` - Cycle through all of the available colors in "
 "``pyvista.plotting.colors.hexcolors``"
-msgstr ""
+msgstr "``'all'`` - ``pyvista.plotting.colors.hexcolors`` で利用可能なすべての色を循環させます．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:15
 msgid ""
 "Setting to ``None`` will disable the use of the color cycler on this "
 "renderer."
-msgstr ""
+msgstr "``None`` に設定すると，このレンダラーでのカラーサイクラーの使用を無効にします．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:31
@@ -40821,21 +40778,23 @@ msgid ""
 "**color_cycler** : :class:`python:str`, :obj:`cycler.Cycler`, "
 ":class:`python:list`\\(:obj:`ColorLike`)"
 msgstr ""
+"**color_cycler** : :class:`python:str`, :obj:`cycler.Cycler`, "
+":class:`python:list`\\(:obj:`ColorLike`)"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:30
 msgid "python:str, cycler.Cycler, python:list(ColorLike)"
-msgstr ""
+msgstr "python:str, cycler.Cycler, python:list(ColorLike)"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_color_cycler:21
 msgid "The colors to cycle through."
-msgstr ""
+msgstr "循環させる色．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:3
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:3
 msgid "Set the default color cycler to iterate through red, green, and blue."
-msgstr ""
+msgstr "デフォルトのカラーサイクラーで，赤，緑，青を反復するように設定します．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_environment_texture:2
@@ -41778,6 +41737,250 @@ msgstr "1つのランダムな矢印をプロットします．"
 msgid "Plot 100 random arrows."
 msgstr "100のランダムな矢印をプロットします．"
 
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:2
+msgid "pyvista.plotting.volume.Volume"
+msgstr "pyvista.plotting.volume.Volume"
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume:2
+msgid "Wrapper class for VTK volume."
+msgstr "VTKボリュームのラッパークラスです．"
+
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume:4
+msgid ""
+"This class represents a volume in a rendered scene. It inherits functions "
+"related to the volume's position, orientation and origin from Prop3D."
+msgstr "レンダリングシーンに含まれるボリュームを表現するクラスです．ボリュームの位置，向き，原点に関連する関数をProp3Dから継承しています．"
+
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.mapper:2
+msgid "Return or set the mapper of the volume."
+msgstr "ボリュームのマッパーを返すか設定します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:3
+msgid "Add a volume to a :class:`pyvista.Plotter` and get its mapper."
+msgstr ":class:`pyvista.Plotter` にボリュームを追加し，そのマッパーを取得します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:3
+msgid "Create an volume and get its properties."
+msgstr "ボリュームを作成し，そのプロパティを取得します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:2
+msgid "pyvista.plotting.volume\\_property.VolumeProperty"
+msgstr "pyvista.plotting.volume\\_property.VolumeProperty"
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:2
+msgid "Wrap the VTK class vtkVolumeProperty."
+msgstr "VTK クラス vtkVolumeProperty をラッピングします．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:4
+msgid ""
+"This class is used to represent common properties associated with volume "
+"rendering. This includes properties for determining the type of "
+"interpolation to use when sampling a volume, the color of a volume, the "
+"scalar opacity of a volume, the gradient opacity of a volume, and the "
+"shading parameters of a volume."
+msgstr ""
+"このクラスは，ボリュームレンダリングに関連する一般的なプロパティを表現するために使用されます．これには，ボリュームのサンプリング時に使用する補間の種類，ボリュームの色，ボリュームのスカラー不透明度，ボリュームのグラデーション不透明度，ボリュームのシェーディングパラメータを決定するためのプロパティが含まれます．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:13
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:20
+msgid "**lookup_table** : :obj:`pyvista.LookupTable`, :obj:`optional`"
+msgstr "**lookup_table** : :obj:`pyvista.LookupTable`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:12
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:19
+msgid "pyvista.LookupTable, optional"
+msgstr "pyvista.LookupTable, optional"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:13
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:10
+msgid "Lookup table to set the color and opacity transfer functions."
+msgstr "色と不透明度の伝達関数を設定するためのルックアップテーブル．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:16
+msgid "**interpolation_type** : :class:`python:str`, :obj:`optional`"
+msgstr "**interpolation_type** : :class:`python:str`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:16
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:4
+msgid "Value must be either ``'linear'`` or ``'nearest'``."
+msgstr "値は ``'linear'`` または ``'nearest'`` のどちらかでなければなりません．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:42
+msgid "**shade** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+"**shade** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:34
+msgid ""
+"Enable or disable volume shading.  If shading is turned off, then the mapper"
+" for the volume will not perform shading calculations. If shading is turned "
+"on, the mapper may perform shading calculations - in some cases shading does"
+" not apply (for example, in a maximum intensity projection) and therefore "
+"shading will not be performed even if this flag is on. For a compositing "
+"type of mapper, turning shading off is generally the same as setting "
+"``ambient=1``, ``diffuse=0``, ``specular=0``. Shading can be independently "
+"turned on/off per component."
+msgstr ""
+"ボリュームのシェーディングを有効または無効にします． "
+"シェーディングがオフの場合，ボリュームのマッパーはシェーディングの計算を行いません．シェーディングがオンの場合，マッパーはシェーディングの計算を行うかもしれません"
+" - "
+"いくつかのケースではシェーディングが適用されないので（例えば，最大輝度投影の場合），このフラグがオンでも，シェーディングは実行されません．コンポジットタイプのマッパーでは，シェーディングをオフにすることは，一般的に"
+" ``ambient=1``, ``diffuse=0``, ``specular=0`` "
+"を設定するのと同じです．シェーディングはコンポーネントごとに独立してON/OFFすることができます．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:59
+msgid "**opacity_unit_distance** : :class:`python:float`, :obj:`optional`"
+msgstr "**opacity_unit_distance** : :class:`python:float`, :obj:`optional`"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:45
+msgid ""
+"This is the unit distance on which the scalar opacity transfer function is "
+"defined. By default this is 1.0, meaning that over a distance of 1.0 units, "
+"a given opacity (from the transfer function) is accumulated. This is "
+"adjusted for the actual sampling distance during rendering."
+msgstr ""
+"これは，スカラー不透明度伝達関数が定義される単位距離です．デフォルトではこれは 1.0 で，1.0 "
+"単位の距離にわたって，（伝達関数から）与えられた不透明度が蓄積されることを意味します．これはレンダリング時に実際のサンプリング距離に合わせて調整されます．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid ""
+"Create a sample dataset from perlin noise and apply a lookup table to the "
+":class:`VolumeProperty`."
+msgstr ""
+"perlin noiseからサンプルデータセットを作成し， :class:`VolumeProperty` にルックアップテーブルを適用します．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:2
+msgid "Return or set ambient lighting coefficient."
+msgstr "環境照明係数を返す，または設定します．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:4
+msgid ""
+"This is the amount of light in the range of 0 to 1 (default 0.0) that "
+"reaches the actor when not directed at the light source emitted from the "
+"viewer."
+msgstr "これは，ビューアから放射された光源に向けられていないときにアクターに到達する0から1の範囲（デフォルトは0.0）の光の量です．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:8
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:10
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:9
+msgid ""
+"Changing attribute has no effect unless :attr:`VolumeProperty.shade` is set "
+"to ``True``."
+msgstr ""
+"アトリビュートを変更しても， :attr:`VolumeProperty.shade` が ``True`` に設定されていない限り，効果はありません．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:2
+msgid "Apply a lookup table to the volume property."
+msgstr "ボリュームプロパティにルックアップテーブルを適用します．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:4
+msgid ""
+"Applies both the color and opacity of the lookup table as transfer "
+"functions."
+msgstr "ルックアップテーブルの色と不透明度の両方を伝達関数として適用します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid "Plot perlin noise volumetrically using a custom lookup table."
+msgstr "カスタムルックアップテーブルを使用して， perlin ノイズをボリューメトリックにプロットします．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:21
+msgid ":obj:`pyvista.VolumeProperty`"
+msgstr ":obj:`pyvista.VolumeProperty`"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:2
+msgid "Return or set the interpolation type."
+msgstr "補間の種類を返すか設定します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid "Create a sample :class:`pyvista.UniformGrid` dataset."
+msgstr "サンプルの :class:`pyvista.UniformGrid` データセットを作成します．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:14
+msgid "Demonstrate nearest (default) interpolation."
+msgstr "最近接 (デフォルト) 補間のデモを行います．"
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:40
+msgid "Demonstrate linear interpolation."
+msgstr "線形補間をデモします．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:2
+msgid "Return or set the opacity unit distance."
+msgstr "不透明度の単位距離を返す，または設定します．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:4
+msgid ""
+"This is the unit distance on which the scalar opacity transfer function is "
+"defined."
+msgstr "スカラー不透明度伝達関数が定義される単位距離です．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:7
+msgid ""
+"By default this is 1.0, meaning that over a distance of 1.0 units, a given "
+"opacity (from the transfer function) is accumulated. This is adjusted for "
+"the actual sampling distance during rendering."
+msgstr ""
+"デフォルトではこれは 1.0 で，1.0 "
+"単位の距離にわたって，（伝達関数から）与えられた不透明度が蓄積されることを意味します．これはレンダリング時に実際のサンプリング距離に合わせて調整されます．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.shade:2
+msgid "Return or set shading of a volume."
+msgstr "ボリュームのシェーディングを返す，または設定します．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.shade:4
+msgid ""
+"If shading is turned off, then the mapper for the volume will not perform "
+"shading calculations. If shading is turned on, the mapper may perform "
+"shading calculations - in some cases shading does not apply (for example, in"
+" a maximum intensity projection) and therefore shading will not be performed"
+" even if this flag is on. For a compositing type of mapper, turning shading "
+"off is generally the same as setting ``ambient=1``, ``diffuse=0``, "
+"``specular=0``. Shading can be independently turned on/off per component."
+msgstr ""
+"シェーディングがオフの場合，ボリュームのマッパーはシェーディングの計算を行いません．シェーディングがオンの場合，マッパーはシェーディングの計算を行うかもしれません"
+" - "
+"いくつかのケースではシェーディングが適用されないので（例えば，最大輝度投影の場合），このフラグがオンでも，シェーディングは実行されません．コンポジットタイプのマッパーでは，シェーディングをオフにすることは，一般的に"
+" ``ambient=1``, ``diffuse=0``, ``specular=0`` "
+"を設定するのと同じです．シェーディングはコンポーネントごとに独立してON/OFFすることができます．"
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular_power:4
+msgid "The specular power. Between 0.0 and 128.0. Default 10.0"
+msgstr "スペキュラーパワー．0.0から128.0．デフォルトは 10.0"
+
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.set_plot_theme.rst:2
 msgid "set\\_plot\\_theme"
 msgstr "set\\_plot\\_theme"
@@ -42025,7 +42228,7 @@ msgstr "デフォルトのメッシュの色を赤に設定します．"
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.color_cycler:2
 msgid "Return or set the default color cycler used to color meshes."
-msgstr ""
+msgstr "メッシュの色付けに使用されるデフォルトのカラーサイクラーを返すか設定します．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.color_cycler:4
@@ -42033,11 +42236,12 @@ msgid ""
 "This color cycler is iterated over by each renderer to sequentially color "
 "datasets when displaying them through ``add_mesh``."
 msgstr ""
+"このカラーサイクラーは， ``add_mesh`` を通してデータセットを表示する際に，各レンダラーによって繰り返し処理され，順次色付けされます．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.color_cycler:15
 msgid "Setting to ``None`` will disable the use of the color cycler."
-msgstr ""
+msgstr "``None`` に設定すると，カラーサイクラーの使用を無効にします．"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.colorbar_horizontal:2
@@ -46954,12 +47158,12 @@ msgstr ""
 "colors\\, labels\\, \\_wrap\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/api/plotting/index.rst:69
+#: ../../pyvista/doc/api/plotting/index.rst:71
 msgid "Convenience Functions"
 msgstr "便利な機能"
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/api/plotting/index.rst:70
+#: ../../pyvista/doc/api/plotting/index.rst:72
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -47026,11 +47230,11 @@ msgid ""
 " plotting functionality in PyVista."
 msgstr "プロットモジュールAPIリファレンス．これらのプロットモジュールは，PyVistaのすべてのプロット機能の基礎となります．"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
@@ -47038,7 +47242,7 @@ msgstr ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
 "color\\, ...\\]\\)"
@@ -47046,15 +47250,27 @@ msgstr ""
 ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
 "color\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`plotting.volume_property.VolumeProperty "
+"<pyvista.plotting.volume_property.VolumeProperty>`\\ \\(\\[...\\]\\)"
+msgstr ""
+":py:obj:`plotting.volume_property.VolumeProperty "
+"<pyvista.plotting.volume_property.VolumeProperty>`\\ \\(\\[...\\]\\)"
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+msgid ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\)"
+msgstr ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\)"
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\]\\)"
 msgstr ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 msgstr ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, "
 "flip\\, values\\, ...\\]\\)"
@@ -47062,16 +47278,16 @@ msgstr ""
 ":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, "
 "flip\\, values\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:38
+#: ../../pyvista/doc/api/plotting/index.rst:40
 msgid "Composite Plotting Reference"
 msgstr "複合プロットリファレンス"
 
-#: ../../pyvista/doc/api/plotting/index.rst:39
+#: ../../pyvista/doc/api/plotting/index.rst:41
 msgid ""
 "These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
 msgstr "これらのクラスは :class:`pyvista.MultiBlock` データセットをプロットするときに使用されます．"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
 "\\(dataset\\[\\, theme\\, ...\\]\\)"
@@ -47079,7 +47295,7 @@ msgstr ""
 ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
 "\\(dataset\\[\\, theme\\, ...\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
 "dataset\\)"
@@ -47087,15 +47303,15 @@ msgstr ""
 ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
 "dataset\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 msgstr ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 
-#: ../../pyvista/doc/api/plotting/index.rst:50
+#: ../../pyvista/doc/api/plotting/index.rst:52
 msgid "Charts API"
 msgstr "チャートAPI"
 
-#: ../../pyvista/doc/api/plotting/index.rst:51
+#: ../../pyvista/doc/api/plotting/index.rst:53
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
 " plotting windows. Note that using charts requires a VTK version of at least"
@@ -47105,11 +47321,11 @@ msgstr ""
 "APIのリファレンスです．これらの専用クラスは，プロットウィンドウにチャートを埋め込むために使用することができます．なお，チャートを使用するには，VTKのバージョンが9.0以上，将来のリリースでは"
 " `vtk>=9.2` が必要になります．"
 
-#: ../../pyvista/doc/api/plotting/index.rst:62
+#: ../../pyvista/doc/api/plotting/index.rst:64
 msgid "Widget API"
 msgstr "ウィジェットAPI"
 
-#: ../../pyvista/doc/api/plotting/index.rst:63
+#: ../../pyvista/doc/api/plotting/index.rst:65
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"
@@ -50153,6 +50369,11 @@ msgid ""
 "``float``) is considered a :data:`ColorLike` parameter and can be converted "
 "by this class. See :attr:`Color.name` for a list of supported color names."
 msgstr ""
+"多くの pyvista メソッドは :data:`ColorLike` パラメータを受け取ります．このヘルパークラスは，そのようなパラメータを，基本的な"
+" (VTK) メソッドで使用される必要な形式に変換するために使用されます．色名 ( ``str`` ) や 16 進文字列 ( ``str`` ) ， "
+"RGB(A) 配列 ( ``tuple`` , ``list`` または ``int`` や ``float`` ) の "
+"``numpy.ndarray`` は :data:`ColorLike` "
+"パラメータとみなされ，このクラスによって変換することが可能です．サポートされる色名の一覧は :attr:`Color.name` を参照してください．"
 
 #: ../../pyvista/pyvista/plotting/colors.pydocstring of
 #: pyvista.plotting.colors.Color:15
