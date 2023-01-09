@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-07 01:49+0000\n"
+"POT-Creation-Date: 2023-01-09 03:00+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Persian (https://www.transifex.com/tkoyama010/teams/112279/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -842,12 +842,6 @@ msgstr ""
 #: pyvista.plotting.actor.Actor.copy:0
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:0
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -1058,6 +1052,10 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_marker:0
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:0
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.load_theme:0
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -2372,19 +2370,13 @@ msgstr ""
 #: pyvista.plotting._property.Property.plot:23
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.backface_prop:26
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.center:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.mapper:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:19
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.pickable:17 ../../pyvista/pyvista/plotting/actor.pydocstring
-#: of pyvista.Actor.position:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.prop:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.scale:17
+#: of pyvista.Actor.prop:17 ../../pyvista/pyvista/plotting/actor.pydocstring
+#: of pyvista.Actor.texture:21
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.texture:21 ../../pyvista/pyvista/plotting/actor.pydocstring
-#: of pyvista.Actor.user_matrix:17
+#: pyvista.Actor.user_matrix:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.visibility:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
@@ -2393,12 +2385,6 @@ msgstr ""
 #: pyvista.plotting.actor.Actor.copy:27
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:22
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:21
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:21
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:21
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:21 ../../pyvista/pyvista/plotting/camera.pydocstring
 #: of pyvista.Camera.clipping_range:19
@@ -3060,6 +3046,16 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_marker:65
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:73
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.mapper:17
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.prop:17
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:62
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:23
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:18
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DarkTheme:18
 #: ../../pyvista/pyvista/themes.pydocstring of pyvista.themes.DefaultTheme:17
 #: ../../pyvista/pyvista/themes.pydocstring of
@@ -4530,6 +4526,8 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_marker:0
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:0
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:0
 #: ../../pyvista/pyvista/utilities/common.pydocstring of
 #: pyvista.utilities.common.perlin_noise:0
 #: ../../pyvista/pyvista/utilities/common.pydocstring of
@@ -7402,6 +7400,8 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_orientation_box:46
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:52
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:41
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.Cone:22
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -8956,6 +8956,16 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_orientation_box:10
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:55
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:21
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:24
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:27
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:30
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:58
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
 #: pyvista.utilities.geometric_objects.CircularArcFromNormal:25
 #: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
@@ -9819,6 +9829,8 @@ msgstr ""
 #: pyvista.plotting.tools.create_axes_orientation_box:28
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_orientation_box:31
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:15
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read:35
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
@@ -13124,12 +13136,6 @@ msgstr ""
 #: pyvista.plotting.lookup_table.LookupTable:55
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:58
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:55
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:60
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_scalars:65
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:33
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -14213,12 +14219,6 @@ msgstr ""
 #: pyvista.core.dataset.DataSet.rotate_z:12
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:8
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:18
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.axis_rotation:11
 msgid "**angle** : :class:`python:float`"
@@ -14240,12 +14240,6 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:7
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:18
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:17
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:17
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.set_direction_angle:21
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -33902,7 +33896,7 @@ msgstr ""
 msgid "pyvista.Actor"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:2
 msgid "Wrap vtkActor."
@@ -33995,18 +33989,6 @@ msgid ""
 "blue using the ``backface_prop``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:2
-msgid "Return the bounds of the actor."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.bounds:4
-msgid "Bounds are ``(-X, +X, -Y, +Y, -Z, +Z)``"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.center:2
-msgid "Return the center of the actor."
-msgstr ""
-
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:2
 msgid "Create a copy of this actor."
@@ -34060,32 +34042,6 @@ msgid "Return the memory address of this actor."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:2
-msgid "Return or set the actor orientation."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.orientation:4
-msgid ""
-"Orientation is defined as the rotation from the global axes in degrees about"
-" the actor's x, y, and z axes."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid "Show that the orientation changes with rotation."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:13
-msgid "Set the orientation directly."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:19
-msgid ""
-"Reorient just the actor and plot it. Note how the actor is rotated about its"
-" own axes as defined by its position."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.pickable:2
 msgid "Return or set actor pickability."
 msgstr ""
@@ -34119,19 +34075,9 @@ msgid ""
 " and plot it."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.position:2
-msgid "Return or set the actor position."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Change the position of an actor. Note how this does not change the position "
-"of the underlying dataset, just the relative location of the actor in the "
-":class:`pyvista.Plotter`."
-msgstr ""
-
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.prop:2
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.prop:2
 msgid "Return or set the property of this actor."
 msgstr ""
 
@@ -34143,64 +34089,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.renderer:2
 msgid "Return the renderer associated with this actor."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:2
-msgid "Rotate the actor about the x axis."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_x:8
-msgid "Angle to rotate the actor about the x axis in degrees."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the x axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:2
-msgid "Rotate the actor about the y axis."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_y:8
-msgid "Angle to rotate the actor about the y axis in degrees."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the y axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:2
-msgid "Rotate the actor about the z axis."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.rotate_z:8
-msgid "Angle to rotate the actor about the z axis in degrees."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Rotate the actor about the Z axis 45 degrees. Note how this does not change "
-"the location of the underlying dataset."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.scale:2
-msgid "Return or set actor scale."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
-msgid ""
-"Create an actor using the :class:`pyvista.Plotter` and then change the scale"
-" of the actor."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.texture:2
@@ -34241,7 +34129,7 @@ msgstr ""
 msgid "pyvista.BlockAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.BlockAttributes:2
 msgid "Block attributes used to set the attributes of a block."
@@ -34387,7 +34275,7 @@ msgstr ""
 msgid "pyvista.CompositeAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes:2
 msgid "Block attributes."
@@ -34505,7 +34393,7 @@ msgstr ""
 msgid "pyvista.CompositePolyDataMapper"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
 msgid "Composite PolyData mapper."
@@ -34708,8 +34596,6 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:46
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:51
-#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
-#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
 msgid "ColorLike"
 msgstr ""
 
@@ -34880,7 +34766,7 @@ msgstr ""
 msgid "pyvista.DataSetMapper"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper:2
 msgid "Wrap _vtk.vtkDataSetMapper."
@@ -34947,7 +34833,12 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:12
-msgid "**color** : :obj:`ColorLike`"
+msgid "**color** : :obj:`color_like`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:11
+msgid "color_like"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
@@ -35077,21 +34968,28 @@ msgid ""
 ":data:`python:False`"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
-#: pyvista.plotting.lookup_table.LookupTable:53
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:56
-msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**nan_color** : :obj:`color_like`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:55
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:60
+#: ../../pyvista/pyvista/plotting/mapper.pydocstring of
+#: pyvista.plotting.mapper.DataSetMapper.set_scalars:65
+msgid "color_like, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:61
-msgid "**above_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**above_color** : :obj:`color_like`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:66
-msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
+msgid "**below_color** : :obj:`color_like`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
@@ -35152,7 +35050,7 @@ msgstr ""
 msgid "pyvista.LookupTable"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:2
 msgid "Scalar to RGBA mapping table."
@@ -35304,6 +35202,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:50
 msgid "Use a log scale when mapping scalar values."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
+#: pyvista.plotting.lookup_table.LookupTable:53
+msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -35860,7 +35763,7 @@ msgstr ""
 msgid "pyvista.Plotter"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:2
 msgid "Plotting object to display vtk meshes or numpy arrays."
@@ -36298,7 +36201,7 @@ msgstr ""
 msgid "pyvista.Property"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:2
 msgid "Wrap vtkProperty and expose it pythonically."
@@ -36451,6 +36354,8 @@ msgstr ""
 #: pyvista.plotting._property.Property:58
 #: ../../pyvista/pyvista/plotting/tools.pydocstring of
 #: pyvista.plotting.tools.create_axes_marker:44
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:22
 msgid "**ambient** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
@@ -36458,6 +36363,8 @@ msgstr ""
 #: pyvista.Property.ambient:4
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:55
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:19
 msgid ""
 "When lighting is enabled, this is the amount of light in the range of 0 to 1"
 " (default 0.0) that reaches the actor when not directed at the light source "
@@ -36466,31 +36373,43 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:61
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:25
 msgid "**diffuse** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:61
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:25
 msgid "The diffuse lighting coefficient. Default 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:64
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:28
 msgid "**specular** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:64
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:28
 msgid "The specular lighting coefficient. Default 0.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:67
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "**specular_power** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:67
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "The specular power. Between 0.0 and 128.0."
 msgstr ""
 
@@ -36725,11 +36644,15 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property.copy:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:2
 msgid "Create a deep copy of this property."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property.copy:9
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:9
 msgid "Deep copy of this property."
 msgstr ""
 
@@ -36759,16 +36682,22 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:2
 msgid "Return or set the diffuse lighting coefficient."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:4
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:4
 msgid "Default 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.diffuse:6
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:6
 msgid ""
 "This is the scattering of light by reflection or transmission. Diffuse "
 "reflection results when light strikes an irregular surface such as a frosted"
@@ -37059,16 +36988,22 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:2
 msgid "Return or set specular."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:4
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:4
 msgid "Default 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular:6
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:6
 msgid ""
 "Specular lighting simulates the bright spot of a light that appears on shiny"
 " objects."
@@ -37101,6 +37036,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.specular_power:2
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular_power:2
 msgid "Return or set specular power."
 msgstr ""
 
@@ -37174,7 +37111,7 @@ msgstr ""
 msgid "pyvista.Renderer"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:2
 msgid "Renderer class."
@@ -39892,6 +39829,231 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plot_arrows.rst:11
 msgid "Plot 100 random arrows."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:2
+msgid "pyvista.plotting.volume.Volume"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume:2
+msgid "Wrapper class for VTK volume."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume:4
+msgid ""
+"This class represents a volume in a rendered scene. It inherits functions "
+"related to the volume's position, orientation and origin from Prop3D."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume.pydocstring of
+#: pyvista.plotting.volume.Volume.mapper:2
+msgid "Return or set the mapper of the volume."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:3
+msgid "Add a volume to a :class:`pyvista.Plotter` and get its mapper."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:3
+msgid "Create an volume and get its properties."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:2
+msgid "pyvista.plotting.volume\\_property.VolumeProperty"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:2
+msgid "Wrap the VTK class vtkVolumeProperty."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:4
+msgid ""
+"This class is used to represent common properties associated with volume "
+"rendering. This includes properties for determining the type of "
+"interpolation to use when sampling a volume, the color of a volume, the "
+"scalar opacity of a volume, the gradient opacity of a volume, and the "
+"shading parameters of a volume."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:13
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:20
+msgid "**lookup_table** : :obj:`pyvista.LookupTable`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:12
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:19
+msgid "pyvista.LookupTable, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:13
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:10
+msgid "Lookup table to set the color and opacity transfer functions."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:16
+msgid "**interpolation_type** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:16
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:4
+msgid "Value must be either ``'linear'`` or ``'nearest'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:42
+msgid "**shade** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:34
+msgid ""
+"Enable or disable volume shading.  If shading is turned off, then the mapper"
+" for the volume will not perform shading calculations. If shading is turned "
+"on, the mapper may perform shading calculations - in some cases shading does"
+" not apply (for example, in a maximum intensity projection) and therefore "
+"shading will not be performed even if this flag is on. For a compositing "
+"type of mapper, turning shading off is generally the same as setting "
+"``ambient=1``, ``diffuse=0``, ``specular=0``. Shading can be independently "
+"turned on/off per component."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:59
+msgid "**opacity_unit_distance** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty:45
+msgid ""
+"This is the unit distance on which the scalar opacity transfer function is "
+"defined. By default this is 1.0, meaning that over a distance of 1.0 units, "
+"a given opacity (from the transfer function) is accumulated. This is "
+"adjusted for the actual sampling distance during rendering."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid ""
+"Create a sample dataset from perlin noise and apply a lookup table to the "
+":class:`VolumeProperty`."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:2
+msgid "Return or set ambient lighting coefficient."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:4
+msgid ""
+"This is the amount of light in the range of 0 to 1 (default 0.0) that "
+"reaches the actor when not directed at the light source emitted from the "
+"viewer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.ambient:8
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.diffuse:10
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular:9
+msgid ""
+"Changing attribute has no effect unless :attr:`VolumeProperty.shade` is set "
+"to ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:2
+msgid "Apply a lookup table to the volume property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.apply_lookup_table:4
+msgid ""
+"Applies both the color and opacity of the lookup table as transfer "
+"functions."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid "Plot perlin noise volumetrically using a custom lookup table."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.copy:21
+msgid ":obj:`pyvista.VolumeProperty`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:2
+msgid "Return or set the interpolation type."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:3
+msgid "Create a sample :class:`pyvista.UniformGrid` dataset."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:14
+msgid "Demonstrate nearest (default) interpolation."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:40
+msgid "Demonstrate linear interpolation."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:2
+msgid "Return or set the opacity unit distance."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:4
+msgid ""
+"This is the unit distance on which the scalar opacity transfer function is "
+"defined."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.opacity_unit_distance:7
+msgid ""
+"By default this is 1.0, meaning that over a distance of 1.0 units, a given "
+"opacity (from the transfer function) is accumulated. This is adjusted for "
+"the actual sampling distance during rendering."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.shade:2
+msgid "Return or set shading of a volume."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.shade:4
+msgid ""
+"If shading is turned off, then the mapper for the volume will not perform "
+"shading calculations. If shading is turned on, the mapper may perform "
+"shading calculations - in some cases shading does not apply (for example, in"
+" a maximum intensity projection) and therefore shading will not be performed"
+" even if this flag is on. For a compositing type of mapper, turning shading "
+"off is generally the same as setting ``ambient=1``, ``diffuse=0``, "
+"``specular=0``. Shading can be independently turned on/off per component."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.specular_power:4
+msgid "The specular power. Between 0.0 and 128.0. Default 10.0"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.set_plot_theme.rst:2
@@ -44930,12 +45092,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/api/plotting/index.rst:69
+#: ../../pyvista/doc/api/plotting/index.rst:71
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/api/plotting/index.rst:70
+#: ../../pyvista/doc/api/plotting/index.rst:72
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -44994,77 +45156,87 @@ msgid ""
 " plotting functionality in PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
 "color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`plotting.volume_property.VolumeProperty "
+"<pyvista.plotting.volume_property.VolumeProperty>`\\ \\(\\[...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
+msgid ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:36:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, "
 "flip\\, values\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:38
+#: ../../pyvista/doc/api/plotting/index.rst:40
 msgid "Composite Plotting Reference"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:39
+#: ../../pyvista/doc/api/plotting/index.rst:41
 msgid ""
 "These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
 "\\(dataset\\[\\, theme\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
 "dataset\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:48:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/index.rst:50:<autosummary>:1
 msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:50
+#: ../../pyvista/doc/api/plotting/index.rst:52
 msgid "Charts API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:51
+#: ../../pyvista/doc/api/plotting/index.rst:53
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
 " plotting windows. Note that using charts requires a VTK version of at least"
 " 9.0 and in a future release will require `vtk>=9.2`."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:62
+#: ../../pyvista/doc/api/plotting/index.rst:64
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:63
+#: ../../pyvista/doc/api/plotting/index.rst:65
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"
