@@ -11154,11 +11154,12 @@ msgid ""
 "Copy pyvista meta data onto this object from another object. Intended to be "
 "overridden by subclasses."
 msgstr ""
+"pyvistaのメタデータを他のオブジェクトからこのオブジェクトにコピーします．サブクラスによってオーバーライドされることを意図しています．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:8
 msgid "**\\*args** : :class:`python:tuple`"
-msgstr ""
+msgstr "**\\*args** : :class:`python:tuple`"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:7
@@ -11170,12 +11171,12 @@ msgstr "python:tuple"
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:8
 msgid "Positional arguments."
-msgstr ""
+msgstr "位置引数．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:11
 msgid "Keyword arguments."
-msgstr ""
+msgstr "キーワード引数．"
 
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_structure:2
@@ -40448,7 +40449,7 @@ msgstr "このレンダラーのカラーサイクラーから次の色を返し
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.on_plotter_render:2
 msgid "Notify renderer components of explicit plotter render call."
-msgstr ""
+msgstr "プロッタの明示的なレンダリング呼び出しをレンダラコンポーネントに通知します．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.parallel_projection:2
@@ -44477,6 +44478,8 @@ msgid ""
 "**redraw_on_render** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
 msgstr ""
+"**redraw_on_render** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartMPL:22
@@ -44485,6 +44488,8 @@ msgid ""
 "rendered. For static charts, setting this to ``False`` can improve "
 "performance."
 msgstr ""
+"プロッタがレンダリングされるときにチャートを再描画するかどうかを示すフラグ．静的なチャートでは，これを ``False`` "
+"に設定することでパフォーマンスが向上します．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.rst:3
 msgid ""
@@ -44534,7 +44539,7 @@ msgstr "左下から見たチャートの位置（単位はピクセル）．"
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartMPL.redraw_on_render:2
 msgid "Return or set the chart's redraw-on-render behavior."
-msgstr ""
+msgstr "チャートの再描画時の動作を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartMPL.redraw_on_render:16
@@ -44544,6 +44549,9 @@ msgid ""
 "``fig.canvas.draw()``. When enabled, the chart will also be automatically "
 "redrawn whenever the Plotter is rendered using ``plotter.render()``."
 msgstr ""
+"無効にすると，プロッタウィンドウのサイズが変更されたとき，または ``fig.canvas.draw()`` を使って matplotlib "
+"図が手動で再描画されたときにのみ，チャートが再描画されます．有効にすると，プロッタが ``plotter.render()`` "
+"によってレンダリングされるたびに，チャートは自動的に再描画されます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.rst:3
 msgid "Create a simple matplotlib chart and show it."
@@ -47104,6 +47112,8 @@ msgid ""
 ":py:obj:`ChartMPL <pyvista.ChartMPL>`\\ \\(\\[figure\\, size\\, loc\\, "
 "redraw\\_on\\_render\\]\\)"
 msgstr ""
+":py:obj:`ChartMPL <pyvista.ChartMPL>`\\ \\(\\[figure\\, size\\, loc\\, "
+"redraw\\_on\\_render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:19
 msgid ""
