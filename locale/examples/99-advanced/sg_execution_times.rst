@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:37.078** total execution time for **examples_99-advanced** files:
+**00:02.937** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py` (``sphere_eversion.py``)                     | 00:37.078 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py` (``plotting-algorithms.py``)             | 00:02.937 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                             | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
@@ -25,6 +25,8 @@ Computation times
 | :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                 | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                 | 00:00.000 | 0.0 MB |
++------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py` (``sphere_eversion.py``)                     | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``) | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+

@@ -2631,6 +2631,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Pass a vtkAlgorithm to the Plotter for dynamic visualizations.">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_plotting-algorithms_thumb.png
+    :alt: Plotting with VTK Algorithms
+
+  :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Plotting with VTK Algorithms</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the Moeller–Trumbore intersection algorithm using pyvista.">
 
 .. only:: html
