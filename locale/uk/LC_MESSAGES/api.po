@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 01:50+0000\n"
+"POT-Creation-Date: 2023-01-14 01:50+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: SerTetora, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/tkoyama010/teams/112279/uk/)\n"
@@ -3298,7 +3298,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
 #: pyvista.utilities.helpers.vtk_points:36
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:31
+#: pyvista.utilities.helpers.wrap:36
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBohemianDome:34
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
@@ -8483,7 +8483,7 @@ msgstr ""
 #: ../../pyvista/pyvista/utilities/fileio.pydocstring of
 #: pyvista.utilities.fileio.read_legacy:29
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:28
+#: pyvista.utilities.helpers.wrap:33
 #: ../../pyvista/pyvista/utilities/reader.pydocstring of
 #: pyvista.utilities.reader.BaseReader.read:21
 msgid ":obj:`pyvista.DataSet`"
@@ -28202,24 +28202,32 @@ msgid "3D :class:`meshio.Mesh` mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:14
+#: pyvista.utilities.helpers.wrap:11
+msgid ""
+"If the passed object is already a wrapped PyVista object, then this is no-op"
+" and will return that object directly. In previous versions of PyVista, this"
+" would perform a shallow copy."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:19
 msgid ""
 "**dataset** : :class:`numpy.ndarray`, :class:`trimesh.Trimesh`, :obj:`or` "
 ":obj:`VTK` :obj:`object`"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:13
+#: pyvista.utilities.helpers.wrap:18
 msgid "numpy.ndarray, trimesh.Trimesh, or VTK object"
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:14
+#: pyvista.utilities.helpers.wrap:19
 msgid "Dataset to wrap."
 msgstr ""
 
 #: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.wrap:19
+#: pyvista.utilities.helpers.wrap:24
 msgid "The PyVista wrapped dataset."
 msgstr ""
 
