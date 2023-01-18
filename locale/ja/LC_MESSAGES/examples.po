@@ -18856,12 +18856,12 @@ msgstr ""
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:22
 #: ../../pyvista/doc/examples/index.rst-1
 msgid "Plotting with VTK Algorithms"
-msgstr ""
+msgstr "VTKアルゴリズムでプロットする"
 
 #: ../../pyvista/doc/examples/99-advanced/index.rst:129
 #: ../../pyvista/doc/examples/index.rst:2641
 msgid ":ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py`"
 
 #: ../../pyvista/doc/examples/99-advanced/index.rst:131
 #: ../../pyvista/doc/examples/index.rst:2643
@@ -19221,13 +19221,13 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:24
 msgid "Pass a ``vtkAlgorithm`` to the ``Plotter`` for dynamic visualizations."
-msgstr ""
+msgstr "動的なビジュアライゼーションのために， ``vtkAlgorithm`` を ``Plotter`` に渡します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:27
 msgid ""
 "By \"dynamic visualization\" we mean that as the input data/source changes, "
 "so will the visualization in real time."
-msgstr ""
+msgstr "\"動的な可視化\" とは，入力データ/ソースが変化すると，リアルタイムに可視化されることを意味します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:30
 msgid ""
@@ -19236,6 +19236,8 @@ msgid ""
 "algorithms. Pipeline connections are associated with input and output ports "
 "that are independent of the type of data passing through the connections."
 msgstr ""
+"``vtkAlgorithm`` は，VTK "
+"のすべてのソース，フィルタ，シンクのスーパークラスです．これは，データ処理アルゴリズムを実行するための一般的なインターフェイスを定義しています．パイプライン接続は，接続を通過するデータの種類に依存しない入力ポートと出力ポートに関連付けられます．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:36
 msgid ""
@@ -19243,12 +19245,15 @@ msgid ""
 "pipeline when adding data to the scene through methods like "
 ":func:`add_mesh() <pyvista.Plotter.add_mesh>`."
 msgstr ""
+":func:`add_mesh() <pyvista.Plotter.add_mesh>` などのメソッドを用いて，シーンにデータを追加する際に "
+"``vtkAlgorithm`` の出力ポートを PyVista の描画パイプラインに接続することが可能です．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:40
 msgid ""
 "This example will walk through using a few ``vtkAlgorithm`` filters directly"
 " and passing them to PyVista for dynamic visualization."
 msgstr ""
+"この例では，いくつかの ``vtkAlgorithm`` フィルタを直接使用し，それを PyVista に渡して動的な視覚化を行う方法を説明します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:61
 msgid ""
@@ -19257,6 +19262,9 @@ msgid ""
 "example, we will connect a callback to set the cone source algorithm's "
 "resolution via ``vtkConeSource.SetResolution()``."
 msgstr ""
+"ソースアルゴリズムとして ``vtkConeSource`` "
+"を使用します．このソースは，インスタンスのパラメータに応じて動的にコーンオブジェクトを作成します．この例では， "
+"``vtkConeSource.SetResolution()`` を介して，コーンソースアルゴリズムの解像度を設定するコールバックを接続します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:88
 msgid ""
@@ -19264,10 +19272,12 @@ msgid ""
 "plotter and connect a slider widget to our callback that adjusts the "
 "resolution."
 msgstr ""
+"``vtkConeSource`` (``vtkAlgorithm`` のサブクラス) "
+"を直接プロッタに渡し，スライダウィジェットを解像度を調整するコールバックに接続します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:115
 msgid "Here is another example using ``vtkRegularPolygonSource``."
-msgstr ""
+msgstr "ここでは， ``vtkRegularPolygonSource`` を使用した別の例を示します．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:156
 msgid ""
@@ -19275,6 +19285,8 @@ msgid ""
 " or filtering data. Here is an example of executing a pipeline of VTK "
 "filters together."
 msgstr ""
+"これは，任意の ``vtkAlgorithm`` "
+"サブクラスを使用して，動的にデータの生成やフィルタリングを行うことができます．以下は，VTKフィルタのパイプラインを一緒に実行する例です．"
 
 #: ../../pyvista/doc/examples/99-advanced/plotting-algorithms.rst:210
 msgid "**Total running time of the script:** ( 0 minutes  2.937 seconds)"
