@@ -2266,6 +2266,23 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Clip Volume Widget">
+
+.. only:: html
+
+  .. image:: /examples/03-widgets/images/thumb/sphx_glr_clip-volume_thumb.png
+    :alt: Clip Volume Widget
+
+  :ref:`sphx_glr_examples_03-widgets_clip-volume.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Clip Volume Widget</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="The line widget can be enabled and disabled by the pyvista.Plotter.add_line_widget and pyvista....">
 
 .. only:: html
