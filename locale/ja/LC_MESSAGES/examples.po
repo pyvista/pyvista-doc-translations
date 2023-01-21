@@ -16474,12 +16474,14 @@ msgid ""
 "Click :ref:`here <sphx_glr_download_examples_03-widgets_clip-volume.py>` to "
 "download the full example code"
 msgstr ""
+"Click :ref:`here <sphx_glr_download_examples_03-widgets_clip-volume.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:24
 #: ../../pyvista/doc/examples/03-widgets/index.rst-1
 #: ../../pyvista/doc/examples/index.rst-1
 msgid "Clip Volume Widget"
-msgstr ""
+msgstr "クリップボリュームウィジェット"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:25
 msgid ""
@@ -16488,10 +16490,13 @@ msgid ""
 ":func:`pyvista.Plotter.add_volume_clipper` widget to better see the internal"
 " structure of the dataset."
 msgstr ""
+":class:`pyvista.UniformGrid` や :class:`pyvista.RectilinearGrid` "
+"のような構造化されたデータセットでは、 :func:`pyvista.Plotter.add_volume_clipper` "
+"ウィジェットを使ってデータセットを切り取って、内部構造をより良く確認できるようにすることができます。"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:35
 msgid "Create the Dataset"
-msgstr ""
+msgstr "データセットの作成"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:36
 msgid ""
@@ -16499,6 +16504,8 @@ msgid ""
 "200)`` and set the active scalars to distance from the :attr:`center "
 "<pyvista.UniformGrid.center>` of the grid."
 msgstr ""
+"寸法 ``(200, 200, 200)`` の密な :class:`pyvista.UniformGrid` を作成し、アクティブスカラーをグリッドの"
+" :attr:`center <pyvista.UniformGrid.center>` からの距離として設定します。"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:59
 msgid ""
@@ -16527,17 +16534,41 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UniformGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>7880599</td></tr>\n"
+"<tr><td>N Points</td><td>8000000</td></tr>\n"
+"<tr><td>X Bounds</td><td>0.000e+00, 1.990e+02</td></tr>\n"
+"<tr><td>Y Bounds</td><td>0.000e+00, 1.990e+02</td></tr>\n"
+"<tr><td>Z Bounds</td><td>0.000e+00, 1.990e+02</td></tr>\n"
+"<tr><td>Dimensions</td><td>200, 200, 200</td></tr>\n"
+"<tr><td>Spacing</td><td>1.000e+00, 1.000e+00, 1.000e+00</td></tr>\n"
+"<tr><td>N Arrays</td><td>1</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>scalars</b></td><td>Points</td><td>float64</td><td>1</td><td>8.660e-01</td><td>1.723e+02</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:89
 msgid "Generate the Opacity Array"
-msgstr ""
+msgstr "不透明度配列の生成"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:90
 msgid ""
 "Create a banded opacity array such that our dataset shows \"rings\" at "
 "certain values. Have this increase such that higher values (values farther "
 "away from the center) are more opaque."
-msgstr ""
+msgstr "データセットがある値で \"輪\" を示すような、帯状の不透明度配列を作成します。高い値（中心から遠い値）がより不透明になるように増加させます。"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:113
 msgid "Plot a Single Clip Plane Dataset"
