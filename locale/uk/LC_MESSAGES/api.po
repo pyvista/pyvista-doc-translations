@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 01:49+0000\n"
+"POT-Creation-Date: 2023-01-22 02:03+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: SerTetora, 2022\n"
 "Language-Team: Ukrainian (https://www.transifex.com/tkoyama010/teams/112279/uk/)\n"
@@ -2466,7 +2466,10 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartBox.legend_visible:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.ChartBox.plot:17 ../../pyvista/pyvista/plotting/charts.pydocstring
+#: pyvista.ChartBox.loc:23 ../../pyvista/pyvista/plotting/charts.pydocstring
+#: of pyvista.ChartBox.plot:17
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.ChartBox.size:23 ../../pyvista/pyvista/plotting/charts.pydocstring
 #: of pyvista.ChartBox.title:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartBox.visible:17
@@ -2503,7 +2506,10 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.legend_visible:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.ChartPie.plot:17 ../../pyvista/pyvista/plotting/charts.pydocstring
+#: pyvista.ChartPie.loc:23 ../../pyvista/pyvista/plotting/charts.pydocstring
+#: of pyvista.ChartPie.plot:17
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.ChartPie.size:23 ../../pyvista/pyvista/plotting/charts.pydocstring
 #: of pyvista.ChartPie.title:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.visible:17
@@ -2656,11 +2662,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.stack:38
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartBox:30
+#: pyvista.plotting.charts.ChartBox:41
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartMPL:38
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartPie:29
+#: pyvista.plotting.charts.ChartPie:40
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.LinePlot2D:38
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -19685,6 +19691,14 @@ msgid ""
 ":obj:`optional`"
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:21
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:37
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:20
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:36
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light:10
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -39913,6 +39927,33 @@ msgid ":obj:`pyvista.VolumeProperty`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.independent_components:2
+msgid "Return or set independent components."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.independent_components:4
+msgid ""
+"If ``False``, then you must have either 2 or 4 component data. For 2 "
+"component data, the first is passed through the first color transfer "
+"function and the second component is passed through the first scalar opacity"
+" (and gradient opacity) transfer function. Normals will be generated off of "
+"the second component. When using gradient based opacity modulation, the "
+"gradients are computed off of the second component."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
+#: pyvista.plotting.volume_property.VolumeProperty.independent_components:12
+msgid ""
+"For 4 component data, the first three will directly represent RGB (no lookup"
+" table). The fourth component will be passed through the first scalar "
+"opacity transfer function for opacity and first gradient opacity transfer "
+"function for gradient based opacity modulation. Normals will be generated "
+"from the fourth component. When using gradient based opacity modulation, the"
+" gradients are computed off of the fourth component."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:2
 msgid "Return or set the interpolation type."
 msgstr ""
@@ -41114,7 +41155,7 @@ msgstr ""
 msgid "pyvista.Chart2D"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:2
 msgid "2D chart class similar to a ``matplotlib`` figure."
@@ -41138,7 +41179,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:8
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:20
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartMPL:12
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:19
 msgid ""
 "Size of the chart in normalized coordinates. A size of ``(0, 0)`` is "
 "invisible, a size of ``(1, 1)`` occupies the whole renderer's width and "
@@ -41163,7 +41208,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:13
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:25
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartMPL:17
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:24
 msgid ""
 "Location of the chart (its bottom left corner) in normalized coordinates. A "
 "location of ``(0, 0)`` corresponds to the renderer's bottom left corner, a "
@@ -42338,9 +42387,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.stack:21
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartBox:27
+#: pyvista.plotting.charts.ChartBox:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartPie:26
+#: pyvista.plotting.charts.ChartPie:16
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:22
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -42355,9 +42404,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.stack:20
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartBox:26
+#: pyvista.plotting.charts.ChartBox:16
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.ChartPie:25
+#: pyvista.plotting.charts.ChartPie:15
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:21
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -42486,7 +42535,7 @@ msgstr ""
 msgid "pyvista.ChartBox"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartBox:2
 msgid "Dedicated chart for drawing box plots."
@@ -42524,6 +42573,22 @@ msgstr ""
 msgid "Label for each drawn boxplot, as shown in the chart's legend."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:22
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:21
+msgid ""
+"**size** : :class:`python:list` or :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartBox:38
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts.ChartPie:37
+msgid ""
+"**loc** : :class:`python:list` or :class:`python:tuple`, :obj:`optional`"
+msgstr ""
+
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:3
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.plotting.charts.BoxPlot.rst:3
 msgid ""
@@ -42549,8 +42614,14 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartBox.loc:17
 msgid ""
-"The location of a ChartBox instance cannot be modified, it fills up the "
-"entire viewport by default."
+"Customisable ChartBox geometry is only supported in VTK v9.2 or newer. For "
+"older VTK versions, the location cannot be modified, filling up the entire "
+"viewport by default."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:3
+msgid ""
+"Create a half-sized boxplot chart centered in the middle of the renderer."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -42577,7 +42648,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartBox.size:17
 msgid ""
-"The size of a ChartBox instance cannot be modified, it fills up the entire "
+"Customisable ChartBox geometry is only supported in VTK v9.2 or newer. For "
+"older VTK versions, the size cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
 
@@ -42593,7 +42665,7 @@ msgstr ""
 msgid "pyvista.ChartMPL"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartMPL:2
 msgid "Create new chart from an existing matplotlib figure."
@@ -42703,7 +42775,7 @@ msgstr ""
 msgid "pyvista.ChartPie"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartPie:2
 msgid "Dedicated chart for drawing pie plots."
@@ -42765,8 +42837,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.loc:17
 msgid ""
-"The location of a ChartPie instance cannot be modified, it fills up the "
-"entire viewport by default."
+"Customisable ChartPie geometry is only supported in VTK v9.2 or newer. For "
+"older VTK versions, the location cannot be modified, filling up the entire "
+"viewport by default."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:3
+msgid "Create a half-sized pie chart centered in the middle of the renderer."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -42793,7 +42870,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.size:17
 msgid ""
-"The size of a ChartPie instance cannot be modified, it fills up the entire "
+"Customisable ChartPie geometry is only supported in VTK v9.2 or newer. For "
+"older VTK versions, the size cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
 
@@ -42809,7 +42887,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.AreaPlot"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.AreaPlot:2
 msgid "Class representing a 2D area plot."
@@ -43171,7 +43249,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.Axis"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Axis:2
 msgid "Pythonic interface for a VTK Axis, used by 2D charts."
@@ -43505,7 +43583,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.BarPlot"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BarPlot:2
 msgid "Class representing a 2D bar plot."
@@ -44408,7 +44486,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.BoxPlot"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:2
 msgid "Class representing a box plot."
@@ -44496,7 +44574,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.Brush"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Brush:2
 msgid "Pythonic wrapper for a VTK Brush, used to fill shapes."
@@ -44627,7 +44705,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.LinePlot2D"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.LinePlot2D:2
 msgid "Class representing a 2D line plot."
@@ -44706,7 +44784,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.Pen"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Pen:2
 msgid "Pythonic wrapper for a VTK Pen, used to draw lines."
@@ -44873,7 +44951,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.PiePlot"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:2
 msgid "Class representing a pie plot."
@@ -44960,7 +45038,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.ScatterPlot2D"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ScatterPlot2D:2
 msgid "Class representing a 2D scatter plot."
@@ -45119,7 +45197,7 @@ msgstr ""
 msgid "pyvista.plotting.charts.StackPlot"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:2
 msgid "Class representing a 2D stack plot."
@@ -45199,13 +45277,28 @@ msgid "Charts"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:3
+#: ../../pyvista/doc/api/plotting/index.rst:53
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
-" plotting windows. Note that using charts requires a VTK version of at least"
-" 9.0 and in a future release will require ``vtk>=9.2``."
+" plotting windows. Note that full charts functionality requires a VTK "
+"version of at least 9.2. Most components work fine in older versions though."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:8
+msgid "Unusable features in older VTK versions:"
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/charts/index.rst:10
+msgid "Background colors and borders are not supported or erroneous."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/charts/index.rst:11
+msgid ""
+"``ChartBox`` and ``ChartPie`` cannot have a custom geometry and fill the "
+"entire scene by default."
+msgstr ""
+
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 msgid ""
 ":py:obj:`Chart2D <pyvista.Chart2D>`\\ \\(\\[size\\, loc\\, x\\_label\\, "
 "y\\_label\\, grid\\]\\)"
@@ -45213,21 +45306,25 @@ msgstr ""
 ":py:obj:`Chart2D <pyvista.Chart2D>`\\ \\(\\[size\\, loc\\, x\\_label\\, "
 "y\\_label\\, grid\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
-msgid ":py:obj:`ChartBox <pyvista.ChartBox>`\\ \\(data\\[\\, colors\\, labels\\]\\)"
-msgstr ":py:obj:`ChartBox <pyvista.ChartBox>`\\ \\(data\\[\\, colors\\, labels\\]\\)"
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`ChartBox <pyvista.ChartBox>`\\ \\(data\\[\\, colors\\, labels\\, "
+"size\\, loc\\]\\)"
+msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
-msgid ":py:obj:`ChartPie <pyvista.ChartPie>`\\ \\(data\\[\\, colors\\, labels\\]\\)"
-msgstr ":py:obj:`ChartPie <pyvista.ChartPie>`\\ \\(data\\[\\, colors\\, labels\\]\\)"
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`ChartPie <pyvista.ChartPie>`\\ \\(data\\[\\, colors\\, labels\\, "
+"size\\, loc\\]\\)"
+msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:18:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 msgid ""
 ":py:obj:`ChartMPL <pyvista.ChartMPL>`\\ \\(\\[figure\\, size\\, loc\\, "
 "redraw\\_on\\_render\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:19
+#: ../../pyvista/doc/api/plotting/charts/index.rst:25
 msgid ""
 "To customize these charts, extra plot and utility classes are available in "
 "the ``charts`` module. Note that users should typically not instantiate "
@@ -45235,7 +45332,7 @@ msgid ""
 "properties from the chart classes above."
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`Pen <pyvista.plotting.charts.Pen>`\\ \\(\\[color\\, width\\, "
 "style\\, \\_wrap\\]\\)"
@@ -45243,7 +45340,7 @@ msgstr ""
 ":py:obj:`Pen <pyvista.plotting.charts.Pen>`\\ \\(\\[color\\, width\\, "
 "style\\, \\_wrap\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`Brush <pyvista.plotting.charts.Brush>`\\ \\(\\[color\\, texture\\, "
 "\\_wrap\\]\\)"
@@ -45251,7 +45348,7 @@ msgstr ""
 ":py:obj:`Brush <pyvista.plotting.charts.Brush>`\\ \\(\\[color\\, texture\\, "
 "\\_wrap\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`Axis <pyvista.plotting.charts.Axis>`\\ \\(\\[label\\, range\\, "
 "grid\\, \\_wrap\\]\\)"
@@ -45259,7 +45356,7 @@ msgstr ""
 ":py:obj:`Axis <pyvista.plotting.charts.Axis>`\\ \\(\\[label\\, range\\, "
 "grid\\, \\_wrap\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`LinePlot2D <pyvista.plotting.charts.LinePlot2D>`\\ \\(x\\, y\\[\\, "
 "color\\, width\\, style\\, label\\]\\)"
@@ -45267,7 +45364,7 @@ msgstr ""
 ":py:obj:`LinePlot2D <pyvista.plotting.charts.LinePlot2D>`\\ \\(x\\, y\\[\\, "
 "color\\, width\\, style\\, label\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`ScatterPlot2D <pyvista.plotting.charts.ScatterPlot2D>`\\ \\(x\\, "
 "y\\[\\, color\\, size\\, style\\, label\\]\\)"
@@ -45275,7 +45372,7 @@ msgstr ""
 ":py:obj:`ScatterPlot2D <pyvista.plotting.charts.ScatterPlot2D>`\\ \\(x\\, "
 "y\\[\\, color\\, size\\, style\\, label\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`BarPlot <pyvista.plotting.charts.BarPlot>`\\ \\(x\\, y\\[\\, "
 "color\\, orientation\\, label\\]\\)"
@@ -45283,7 +45380,7 @@ msgstr ""
 ":py:obj:`BarPlot <pyvista.plotting.charts.BarPlot>`\\ \\(x\\, y\\[\\, "
 "color\\, orientation\\, label\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`AreaPlot <pyvista.plotting.charts.AreaPlot>`\\ \\(x\\, y1\\[\\, "
 "y2\\, color\\, label\\]\\)"
@@ -45291,7 +45388,7 @@ msgstr ""
 ":py:obj:`AreaPlot <pyvista.plotting.charts.AreaPlot>`\\ \\(x\\, y1\\[\\, "
 "y2\\, color\\, label\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`StackPlot <pyvista.plotting.charts.StackPlot>`\\ \\(x\\, ys\\[\\, "
 "colors\\, labels\\]\\)"
@@ -45299,7 +45396,7 @@ msgstr ""
 ":py:obj:`StackPlot <pyvista.plotting.charts.StackPlot>`\\ \\(x\\, ys\\[\\, "
 "colors\\, labels\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`BoxPlot <pyvista.plotting.charts.BoxPlot>`\\ \\(data\\[\\, "
 "colors\\, labels\\]\\)"
@@ -45307,7 +45404,7 @@ msgstr ""
 ":py:obj:`BoxPlot <pyvista.plotting.charts.BoxPlot>`\\ \\(data\\[\\, "
 "colors\\, labels\\]\\)"
 
-#: ../../pyvista/doc/api/plotting/charts/index.rst:39:<autosummary>:1
+#: ../../pyvista/doc/api/plotting/charts/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`PiePlot <pyvista.plotting.charts.PiePlot>`\\ \\(data\\[\\, "
 "colors\\, labels\\, \\_wrap\\]\\)"
@@ -45316,12 +45413,12 @@ msgstr ""
 "colors\\, labels\\, \\_wrap\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/api/plotting/index.rst:71
+#: ../../pyvista/doc/api/plotting/index.rst:72
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/api/plotting/index.rst:72
+#: ../../pyvista/doc/api/plotting/index.rst:73
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -45457,18 +45554,11 @@ msgstr ""
 msgid "Charts API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:53
-msgid ""
-"Charts API reference. These dedicated classes can be used to embed charts in"
-" plotting windows. Note that using charts requires a VTK version of at least"
-" 9.0 and in a future release will require `vtk>=9.2`."
-msgstr ""
-
-#: ../../pyvista/doc/api/plotting/index.rst:64
+#: ../../pyvista/doc/api/plotting/index.rst:65
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/api/plotting/index.rst:65
+#: ../../pyvista/doc/api/plotting/index.rst:66
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"
