@@ -59,10 +59,10 @@ Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
     contours = mesh.contour()
 
-    p = pv.Plotter()
-    p.add_mesh(mesh, opacity=0.85)
-    p.add_mesh(contours, color="white", line_width=5)
-    p.show()
+    pl = pv.Plotter()
+    pl.add_mesh(mesh, opacity=0.85)
+    pl.add_mesh(contours, color="white", line_width=5)
+    pl.show()
 
 
 
@@ -84,7 +84,7 @@ Iso-Surfaces
 
 Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-50
+.. GENERATED FROM PYTHON SOURCE LINES 37-52
 
 .. code-block:: default
 
@@ -92,15 +92,17 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
     contours = mesh.contour(np.linspace(50, 200, 5))
 
-    p = pv.Plotter()
-    p.add_mesh(mesh.outline(), color="k")
-    p.add_mesh(contours, opacity=0.25, clim=[0, 200])
-    p.camera_position = [
+    pl = pv.Plotter()
+    pl.add_mesh(mesh.outline(), color="k")
+    pl.add_mesh(contours, opacity=0.25, clim=[0, 200])
+    pl.camera_position = [
         (-130.99381142132086, 644.4868354828589, 163.80447435848686),
         (125.21748748157661, 123.94368717158413, 108.83283586619626),
         (0.2780372840777734, 0.03547871361794171, 0.9599148553609699),
     ]
-    p.show()
+    pl.show()
+
+
 
 
 
@@ -113,31 +115,105 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 53-56
+
+Banded Contours
++++++++++++++++
+Create banded contours for surface meshes using :func:`contour_banded() <pyvista.PolyDataFilters.contour_banded>`.
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-58
+
+.. code-block:: default
+
+    mesh = examples.load_random_hills()
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-60
+
+Set number of contours and produce mesh and lines
+
+.. GENERATED FROM PYTHON SOURCE LINES 60-63
+
+.. code-block:: default
+
+    n_contours = 8
+    contours, edges = mesh.contour_banded(n_contours)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 64-65
+
+Also make normal vectors
+
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
+
+.. code-block:: default
+
+    arrows = mesh.glyph(scale="Normals", orient="Normals", tolerance=0.05)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-77
+
+.. code-block:: default
+
+
+    # Common display arguments
+    dargs = dict(scalars='Elevation', n_colors=n_contours - 1, cmap='Set3')
+
+    pl = pv.Plotter()
+    pl.add_mesh(edges, line_width=5, render_lines_as_tubes=True, color='k')
+    pl.add_mesh(contours, **dargs)
+    pl.add_mesh(arrows, **dargs)
+    pl.show()
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_003.png
+   :alt: contouring
+   :srcset: /examples/01-filter/images/sphx_glr_contouring_003.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.551 seconds)
+   **Total running time of the script:** ( 0 minutes  5.639 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: contouring.py <contouring.py>`
 
-     :download:`Download Python source code: contouring.py <contouring.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: contouring.ipynb <contouring.ipynb>`
+      :download:`Download Jupyter notebook: contouring.ipynb <contouring.ipynb>`
 
 
 .. only:: html

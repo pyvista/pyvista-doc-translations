@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-22 02:03+0000\n"
+"POT-Creation-Date: 2023-01-25 01:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -745,7 +745,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.clear_data:17
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.clear_point_data:17
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.clear_textures:17
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:21
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:24
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.find_cells_along_line:44
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.find_cells_within_bounds:37
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.find_closest_cell:60
@@ -2679,6 +2679,7 @@ msgid "**adjust_render_window** : :ref:`bool <python:bltin-boolean-values>`, def
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.clean:17
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:20
 #: ../../pyvista/pyvista/core/filters/composite.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:37
@@ -6023,7 +6024,7 @@ msgid "**dataset** : :obj:`vtk.vtkDataSet`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_structure:17
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:17
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:7
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.overwrite:22
 msgid "vtk.vtkDataSet"
 msgstr ""
@@ -6634,7 +6635,7 @@ msgstr ""
 msgid "Overwrite this dataset inplace with the new dataset's geometries and data."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:18
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:8
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.overwrite:23
 msgid "**mesh** : :obj:`vtk.vtkDataSet`"
 msgstr ""
@@ -6642,6 +6643,16 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:8
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.overwrite:10
 msgid "The overwriting mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:21
+#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor.copy:10
+#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtk_points:13
+msgid "**deep** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.copy_from:11
+msgid "Whether to perform a deep or shallow copy."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
@@ -13683,10 +13694,10 @@ msgid "Optional edges when ``generate_contour_edges`` is ``True``."
 msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:3
-msgid "Plot the random hills dataset and with 10 contour lines. Note how we use 9 colors here (``n_contours - 1``)."
+msgid "Plot the random hills dataset and with 8 contour lines. Note how we use 7 colors here (``n_contours - 1``)."
 msgstr ""
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:29
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:32
 msgid "Extract the surface from the uniform grid dataset and plot its contours alongside the output from the banded contour filter."
 msgstr ""
 
@@ -21556,11 +21567,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor.copy:2
 msgid "Create a copy of this actor."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor.copy:10
-#: ../../pyvista/pyvista/utilities/helpers.py:docstring of pyvista.utilities.helpers.vtk_points:13
-msgid "**deep** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor.copy:8
