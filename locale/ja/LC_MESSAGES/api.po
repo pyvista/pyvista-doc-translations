@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-22 02:03+0000\n"
+"POT-Creation-Date: 2023-01-25 01:47+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1433,7 +1433,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_textures:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.copy_from:21
+#: pyvista.core.dataset.DataSet.copy_from:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_cells_along_line:44
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -5126,6 +5126,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.clean:17
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:20
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.cell_centers:8
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -11152,7 +11154,7 @@ msgstr "**dataset** : :obj:`vtk.vtkDataSet`"
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_structure:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.copy_from:17
+#: pyvista.core.dataset.DataSet.copy_from:7
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.overwrite:22
 msgid "vtk.vtkDataSet"
@@ -12020,7 +12022,7 @@ msgid ""
 msgstr "このデータセットin-placeを新しいデータセットのジオメトリとデータで上書きします．"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.copy_from:18
+#: pyvista.core.dataset.DataSet.copy_from:8
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.overwrite:23
 msgid "**mesh** : :obj:`vtk.vtkDataSet`"
@@ -12032,6 +12034,24 @@ msgstr "**mesh** : :obj:`vtk.vtkDataSet`"
 #: pyvista.core.dataset.DataSet.overwrite:10
 msgid "The overwriting mesh."
 msgstr "上書きするメッシュ．"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:21
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor.copy:10
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtk_points:13
+msgid ""
+"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+msgstr ""
+"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.copy_from:11
+msgid "Whether to perform a deep or shallow copy."
+msgstr ""
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:3
 msgid ""
@@ -22374,7 +22394,7 @@ msgstr "サーフェスメッシュをディスクに書き込みます．"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:4
 msgid "Written file may be an ASCII or binary ply, stl, or vtk mesh file."
-msgstr "書き込まれるファイルは、ASCIIまたはバイナリのply、stl、vtkのメッシュファイルです。"
+msgstr "書き込まれるファイルは，ASCIIまたはバイナリのply，stl，vtkのメッシュファイルです．"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:10
@@ -22433,8 +22453,8 @@ msgid ""
 " in place to ensure the mesh is properly saved. Set this to ``False`` to "
 "save instead the already existing normal array in the PolyData."
 msgstr ""
-"``True`` の場合、ply または stl フォーマットが選択されると、メッシュが適切に保存されるように面の法線が計算されます。 "
-"``False`` に設定すると、PolyDataにすでに存在する法線配列が代わりに保存されます。"
+"``True`` の場合，ply または stl フォーマットが選択されると，メッシュが適切に保存されるように面の法線が計算されます． "
+"``False`` に設定すると，PolyDataにすでに存在する法線配列が代わりに保存されます．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyData.rst:3
 msgid "Save a mesh as a STL."
@@ -23501,13 +23521,11 @@ msgstr "``generate_contour_edges`` が ``True`` の場合，オプションの�
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:3
 msgid ""
-"Plot the random hills dataset and with 10 contour lines. Note how we use 9 "
+"Plot the random hills dataset and with 8 contour lines. Note how we use 7 "
 "colors here (``n_contours - 1``)."
 msgstr ""
-"ランダムな丘陵データセットと 10 本の等高線をプロットします．ここでは9色を使っていることに注意してください ( ``n_contours - 1``"
-" )．"
 
-#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:29
+#: ../../pyvista/doc/api/core/_autosummary/pyvista.PolyDataFilters.rst:32
 msgid ""
 "Extract the surface from the uniform grid dataset and plot its contours "
 "alongside the output from the banded contour filter."
@@ -35489,17 +35507,6 @@ msgid "Create a copy of this actor."
 msgstr "このアクターのコピーを作成します．"
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor.copy:10
-#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
-#: pyvista.utilities.helpers.vtk_points:13
-msgid ""
-"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:True`"
-msgstr ""
-"**deep** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:True`"
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:8
 msgid ""
 "Create a shallow or deep copy of the actor. A deep copy will have a new "
@@ -41838,7 +41845,7 @@ msgstr ":obj:`pyvista.VolumeProperty`"
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty.independent_components:2
 msgid "Return or set independent components."
-msgstr ""
+msgstr "独立成分を返すか設定します．"
 
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty.independent_components:4
@@ -41850,6 +41857,8 @@ msgid ""
 "the second component. When using gradient based opacity modulation, the "
 "gradients are computed off of the second component."
 msgstr ""
+"もし ``False`` "
+"ならば，2成分データか4成分データのどちらかを用意する必要があります．2成分データの場合，1番目の成分は1番目の色伝達関数に渡され，2番目の成分は1番目のスカラー不透明度（およびグラデーション不透明度）伝達関数に渡されます．法線は2番目のコンポーネントから生成されます．グラデーションベースの不透明度変調を使用する場合，グラデーションは2番目のコンポーネントから計算されます．"
 
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty.independent_components:12
@@ -41861,6 +41870,7 @@ msgid ""
 "from the fourth component. When using gradient based opacity modulation, the"
 " gradients are computed off of the fourth component."
 msgstr ""
+"4成分データの場合，最初の3成分は直接RGBを表します（ルックアップテーブルなし）．4番目の成分は，不透明度のための第1のスカラー不透明度伝達関数と，グラデーションベースの不透明度変調のための第1のグラデーション不透明度伝達関数に渡されます．法線は，第4成分から生成されます．グラデーションベースの不透明度変調を使用する場合，グラデーションは第4成分から計算されます．"
 
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty.interpolation_type:2
@@ -43184,7 +43194,7 @@ msgstr "python:str, default: \"x\""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:19
 msgid "Label along the x-axis."
-msgstr "X軸に沿ってラベルを貼る。"
+msgstr "X軸に沿ってラベルを貼る．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:22
@@ -43199,7 +43209,7 @@ msgstr "python:str, default: \"y\""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:22
 msgid "Label along the y-axis."
-msgstr "Y軸に沿ってラベルを貼る。"
+msgstr "Y軸に沿ってラベルを貼る．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Axis:21
@@ -43689,7 +43699,7 @@ msgstr ""
 msgid ""
 "If no type is provided (``None``), all plots are removed, regardless of "
 "their type."
-msgstr "タイプを指定しない場合 (``None``) は、タイプに関係なく、すべてのプロットが削除されます。"
+msgstr "タイプを指定しない場合 (``None``) は，タイプに関係なく，すべてのプロットが削除されます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:3
 msgid "Create a 2D chart with multiple line and scatter plot."
@@ -44007,7 +44017,7 @@ msgid ""
 "provided (``None``), all plots are returned, regardless of their type."
 msgstr ""
 "返されるプロットのタイプです．許可されているタイプは ``\"scatter\"``, ``\"line\"``, ``\"area\"``, "
-"``\"bar\"``, ``\"stack\"`` です．型を指定しない場合 (``None``) は、タイプに関係なくすべてのプロットを返します。"
+"``\"bar\"``, ``\"stack\"`` です．型を指定しない場合 (``None``) は，タイプに関係なくすべてのプロットを返します．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.plots:0
@@ -44174,14 +44184,14 @@ msgid ""
 "window popping up. Defaults to active theme setting."
 msgstr ""
 "``True`` "
-"の場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．デフォルトは、アクティブなテーマ設定です。"
+"の場合，画面からプロットします．ウィンドウをポップアップしないでスクリーンショットを保存するのに便利です．デフォルトは，アクティブなテーマ設定です．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:12
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``. "
 "Defaults to active theme setting."
-msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは、アクティブなテーマ設定です。"
+msgstr "ウィンドウを全画面で開きます．有効な場合， ``window_size`` を無視します．デフォルトは，アクティブなテーマ設定です．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:20
@@ -44209,7 +44219,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:23
 msgid "Window size in pixels. Defaults to active theme setting."
-msgstr " ピクセル単位のウィンドウのサイズ．デフォルトはアクティブなテーマの設定です。"
+msgstr " ピクセル単位のウィンドウのサイズ．デフォルトはアクティブなテーマの設定です．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:33
@@ -44557,7 +44567,7 @@ msgstr "(複数の)箱ひげ図を描くために関連する統計を計算す�
 msgid ""
 "Color used for each drawn boxplot. If omitted (``None``), the default color "
 "scheme is used."
-msgstr "描画された各ボックスプロットに使用される色。省略された場合 (``None``) は、デフォルトの配色が使用されます。"
+msgstr "描画された各ボックスプロットに使用される色．省略された場合 (``None``) は，デフォルトの配色が使用されます．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartBox:16
@@ -44611,11 +44621,13 @@ msgid ""
 "older VTK versions, the location cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
+"カスタマイズ可能な ChartBox のジオメトリは，VTK v9.2 "
+"以降でサポートされています．古いバージョンのVTKでは，位置を変更することができず，デフォルトでビューポート全体を埋めます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:3
 msgid ""
 "Create a half-sized boxplot chart centered in the middle of the renderer."
-msgstr ""
+msgstr "レンダラの中央に，半分の大きさのボックスプロットチャートを作成します．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartBox.plot:2
@@ -44646,6 +44658,8 @@ msgid ""
 "older VTK versions, the size cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
+"カスタマイズ可能な ChartBox のジオメトリは，VTK v9.2 "
+"以降でサポートされています．古いバージョンのVTKでは，サイズを変更することができず，デフォルトでビューポート全体を埋めます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:3
 msgid "Create a boxplot chart with title 'My Chart'."
@@ -44806,7 +44820,7 @@ msgstr "各円セグメントの相対的な大きさ"
 msgid ""
 "Color used for each pie segment drawn in this plot. If omitted (``None``), "
 "the default color scheme is used."
-msgstr "このプロットで描かれる各円グラフに使用される色。省略された場合 (``None``) は、デフォルトの配色が使用されます。"
+msgstr "このプロットで描かれる各円グラフに使用される色．省略された場合 (``None``) は，デフォルトの配色が使用されます．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartPie:15
@@ -44845,10 +44859,12 @@ msgid ""
 "older VTK versions, the location cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
+"カスタマイズ可能な ChartPie のジオメトリは，VTK v9.2 "
+"以降でサポートされています．古いバージョンのVTKでは，位置を変更することができず，デフォルトでビューポート全体を埋めます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:3
 msgid "Create a half-sized pie chart centered in the middle of the renderer."
-msgstr ""
+msgstr "レンダラの中央に，半分の大きさの円グラフを作成します．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.plot:2
@@ -44879,6 +44895,8 @@ msgid ""
 "older VTK versions, the size cannot be modified, filling up the entire "
 "viewport by default."
 msgstr ""
+"カスタマイズ可能な ChartPie のジオメトリは，VTK v9.2 "
+"以降でサポートされています．古いバージョンのVTKでは，サイズを変更することができず，デフォルトでビューポート全体を埋めます．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:3
 msgid "Create a pie chart with title 'My Chart'."
@@ -45263,7 +45281,7 @@ msgstr "2Dチャートで使用されるVTK AxisのPythonicインターフェー
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Axis:8
 msgid "Axis label."
-msgstr "軸のラベル。"
+msgstr "軸のラベル．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Axis:15
@@ -46525,7 +46543,7 @@ msgid ""
 "scheme is used."
 msgstr ""
 "このプロットで描画されるボックスの色です． :class:`pyvista.Color` で解析可能な任意の色が使用できます．省略された場合 "
-"(``None``) には、デフォルトの配色が使用されます。"
+"(``None``) には，デフォルトの配色が使用されます．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:19
@@ -46996,7 +47014,7 @@ msgid ""
 "scheme is used."
 msgstr ""
 "このプロットで描画されるセグメントの色です． :class:`pyvista.Color` で解析可能な任意の色が使用できます．省略された場合 "
-"(``None``) には、デフォルトの配色が使用されます。"
+"(``None``) には，デフォルトの配色が使用されます．"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:33
@@ -47011,7 +47029,7 @@ msgstr "vtk.vtkPlotPie, optional"
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:27
 msgid "Wrap an existing VTK PlotPie instance (no wrapping when ``None``)."
-msgstr "既存の VTK PlotPie インスタンスをラップします ( ``None`` の場合はラップされません)。"
+msgstr "既存の VTK PlotPie インスタンスをラップします ( ``None`` の場合はラップされません)．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.plotting.charts.PiePlot.rst:3
 msgid "Use a custom texture for the pie plot's brush object."
@@ -47309,20 +47327,22 @@ msgid ""
 " plotting windows. Note that full charts functionality requires a VTK "
 "version of at least 9.2. Most components work fine in older versions though."
 msgstr ""
+"Charts "
+"APIのリファレンスです．これらの専用クラスは，プロットウィンドウにチャートを埋め込むために使用することができます．なお，チャートの全機能を利用するには，少なくともVTKのバージョン9.2が必要です．しかし，ほとんどのコンポーネントは，古いバージョンでも問題なく動作します．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:8
 msgid "Unusable features in older VTK versions:"
-msgstr ""
+msgstr "古いバージョンのVTKでは使えない機能:"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:10
 msgid "Background colors and borders are not supported or erroneous."
-msgstr ""
+msgstr "背景色やボーダーがサポートされていない，またはエラーが発生します．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:11
 msgid ""
 "``ChartBox`` and ``ChartPie`` cannot have a custom geometry and fill the "
 "entire scene by default."
-msgstr ""
+msgstr "``ChartBox`` と ``ChartPie`` はカスタムジオメトリを持つことができず，デフォルトでシーン全体を埋めます．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 msgid ""
@@ -47337,12 +47357,16 @@ msgid ""
 ":py:obj:`ChartBox <pyvista.ChartBox>`\\ \\(data\\[\\, colors\\, labels\\, "
 "size\\, loc\\]\\)"
 msgstr ""
+":py:obj:`ChartBox <pyvista.ChartBox>`\\ \\(data\\[\\, colors\\, labels\\, "
+"size\\, loc\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 msgid ""
 ":py:obj:`ChartPie <pyvista.ChartPie>`\\ \\(data\\[\\, colors\\, labels\\, "
 "size\\, loc\\]\\)"
 msgstr ""
+":py:obj:`ChartPie <pyvista.ChartPie>`\\ \\(data\\[\\, colors\\, labels\\, "
+"size\\, loc\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:24:<autosummary>:1
 msgid ""
