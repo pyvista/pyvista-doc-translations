@@ -79,7 +79,7 @@ Pick using the left-mouse button
 Pick using the left mouse button and trigger a callback that "shrinks" the
 mesh each time it's selected.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-46
+.. GENERATED FROM PYTHON SOURCE LINES 33-48
 
 .. code-block:: default
 
@@ -99,6 +99,8 @@ mesh each time it's selected.
 
 
 
+
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
    :alt: mesh picking
    :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
@@ -108,10 +110,55 @@ mesh each time it's selected.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
+
+Pick based on Actors
+++++++++++++++++++++
+Return the picked actor to the callback
+
+.. GENERATED FROM PYTHON SOURCE LINES 52-75
+
+.. code-block:: default
+
+
+    pl = pv.Plotter()
+    pl.add_mesh(pv.Cone(center=(0, 0, 0)), name='Cone')
+    pl.add_mesh(pv.Cube(center=(1, 0, 0)), name='Cube')
+    pl.add_mesh(pv.Sphere(center=(1, 1, 0)), name='Sphere')
+    pl.add_mesh(pv.Cylinder(center=(0, 1, 0)), name='Cylinder')
+
+
+    def reset():
+        for a in pl.renderer.actors.values():
+            if isinstance(a, pv.Actor):
+                a.prop.color = 'tan'
+                a.prop.show_edges = False
+
+
+    def callback(actor):
+        reset()
+        actor.prop.color = 'green'
+        actor.prop.show_edges = True
+
+
+    pl.enable_mesh_picking(callback, use_actor=True, show=False)
+    pl.show()
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
+   :alt: mesh picking
+   :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.554 seconds)
+   **Total running time of the script:** ( 0 minutes  0.733 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_mesh-picking.py:
