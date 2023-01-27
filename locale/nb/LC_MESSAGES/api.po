@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-25 01:47+0000\n"
+"POT-Creation-Date: 2023-01-27 01:52+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/tkoyama010/teams/112279/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -2370,7 +2370,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.visibility:17
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor:29
+#: pyvista.plotting.actor.Actor:32
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.copy:27
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
@@ -9719,6 +9719,8 @@ msgstr ""
 #: pyvista.plotting._property.Property:19
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:32
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor:28
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.clear:22
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -18642,6 +18644,8 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_plane:29
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.texture_map_to_sphere:30
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor:29
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -33868,18 +33872,23 @@ msgid "DataSetMapper."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor:26
+#: pyvista.plotting.actor.Actor:16
 msgid "**prop** : :obj:`pyvista.Property`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.plotting.actor.Actor:25
+#: pyvista.plotting.actor.Actor:15
 msgid "pyvista.Property, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:16
 msgid "Property of the actor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of
+#: pyvista.plotting.actor.Actor:19
+msgid "The name of this actor used when tracking on a plotter."
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
@@ -33972,6 +33981,10 @@ msgstr ""
 msgid "Return the memory address of this actor."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.name:2
+msgid "Get or set the unique name identifier used by PyVista."
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.Actor.pickable:2
 msgid "Return or set actor pickability."
@@ -34015,11 +34028,6 @@ msgstr ""
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Actor.rst:3
 msgid ""
 "Modify the properties of an actor after adding a dataset to the plotter."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/actor.pydocstring of
-#: pyvista.Actor.renderer:2
-msgid "Return the renderer associated with this actor."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of pyvista.Actor.texture:2
@@ -37055,17 +37063,17 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:9
-msgid "**uinput** : :obj:`vtk.vtkMapper` or :obj:`vtk.vtkActor`"
+msgid "**actor** : :obj:`vtk.vtkActor` or :obj:`vtk.vtkMapper`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:8
-msgid "vtk.vtkMapper or vtk.vtkActor"
+msgid "vtk.vtkActor or vtk.vtkMapper"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:9
-msgid "Vtk mapper or vtk actor to be added."
+msgid "The actor to be added. Can be either ``vtkActor`` or ``vtkMapper``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -45477,7 +45485,7 @@ msgid ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
-msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\]\\)"
+msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\, name\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/index.rst:38:<autosummary>:1
