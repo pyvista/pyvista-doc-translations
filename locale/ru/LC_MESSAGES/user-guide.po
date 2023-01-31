@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 01:54+0000\n"
+"POT-Creation-Date: 2023-01-31 01:48+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Russian (https://www.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -828,72 +828,76 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:10
+msgid "We recommend using the Trame-based backed. See :ref:`trame_jupyter`."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:14
 msgid "Demo Using ``pythreejs``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:11
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:15
 msgid "Create interactive physically based rendering using `pythreejs`_."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:33
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:37
 msgid "Demo Using ``ipygany``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:52
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:56
 msgid "Demo Using ``panel``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:61
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:65
 msgid "Supported Modules"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:62
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:66
 msgid ""
 "The PyVista module supports a variety of backends when plotting within a "
 "jupyter notebook:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:65
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:69
 msgid ""
-"Server-side rendering with PyVista streaming to the notebook through "
-"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_"
+"Server and client-side rendering with PyVista streaming to the notebook "
+"through `trame <https://github.com/Kitware/trame/>`_"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:67
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:71
 msgid "Client-side rendering with `pythreejs`_ using ``threejs``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:68
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:72
 msgid ""
 "Client-side rendering with `ipygany "
 "<https://github.com/QuantStack/ipygany>`_ using ``threejs``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:69
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:73
 msgid ""
 "Client-side rendering using `panel <https://github.com/holoviz/panel>`_ "
 "using ``vtk.js``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:70
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:74
 msgid "Static images."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:75
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:79
 msgid "Details for Each Backend"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:76
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:80
 msgid ""
 "See the individual package pages on each backend for additional details on "
 "how to use these plotting backends."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:89
-msgid "State of 3D Interactive Jupyterlab Plotting"
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:94
+msgid "State of 3D Interactive Jupyter Plotting"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:93
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:98
 msgid ""
 "3D plotting within Jupyter notebooks is an emerging technology, partially "
 "because Jupyter is still relatively new, but also because the web technology"
@@ -902,15 +906,15 @@ msgid ""
 " likely to break and rapidly change"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:99
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:104
 msgid ""
-"This was written in March 2021 and updated in August 2021, and may already "
+"This was written in March 2021 and updated in January 2023, and may already "
 "be out of date.  Be sure to check the developer websites for any changes."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:103
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:108
 msgid ""
-"When plotting using Jupyterlab you have the option of using one of many "
+"When plotting using Jupyter you have the option of using one of many "
 "modules, each of which has its advantages, disadvantages, and quirks.  While"
 " ``pyvista`` attempts to remove some of the differences in the API when "
 "using the ``Plotting`` class, the plots will still look and feel differently"
@@ -918,94 +922,92 @@ msgid ""
 "requirements and may not support your deployment environment."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:111
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:116
 msgid ""
 "This table details various capabilities and technologies used by the jupyter"
 " notebook plotting modules:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:115
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:120
 msgid "Jupyter Notebook 3D Modules"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
-msgid "Jupyterlab 3"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Rendering Location"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Backend"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Requires Framebuffer"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "trame"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "Client & Server"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "vtk.js & vtk"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "Optional"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
 msgid "panel"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "Yes"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
 msgid "Client"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
 msgid "vtk.js"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-msgid "pythreejs"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
-msgid "threejs"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
-msgid "No"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
-msgid "ipygany"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "ipyvtklink"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "Server"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "vtk"
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
+msgid "Yes"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+msgid "pythreejs"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
+msgid "threejs"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
+msgid "No"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
+msgid "ipygany"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:133
 msgid ""
-"All the modules other than ``ipygany`` and ``pythreejs`` require a "
-"framebuffer, which can be set up on a headless environment with "
+"All the modules other than ``trame``, ``ipygany``, and ``pythreejs`` require"
+" a framebuffer, which can be set up on a headless environment with "
 ":func:`pyvista.start_xvfb`. However, on Google Colab, where it's not "
 "possible to install system packages, you should stick with a module like "
-"``threejs``, which does not require any server side rendering or "
+"``threejs`` or the ``'client'`` variant of the trame-backend (see "
+":ref:`trame_jupyter`), which do not require any server side rendering or "
 "framebuffer."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:135
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:141
 msgid ""
 "See :ref:`install_ref` for more details installing on a headless environment"
 " for the backends requiring a framebuffer.  When installing the individual "
@@ -1014,11 +1016,11 @@ msgid ""
 " other packages for more details."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:143
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:149
 msgid "Usage with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:144
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:150
 msgid ""
 "There are two ways to set the jupyter plotting backend.  First, it can be "
 "done on a plot by plot basis by setting the ``jupyter_backend`` parameter in"
@@ -1038,12 +1040,12 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:52
+#: pyvista.jupyter.set_jupyter_backend:69
 msgid "**backend** : :class:`python:str`"
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:51
+#: pyvista.jupyter.set_jupyter_backend:68
 msgid "python:str"
 msgstr ""
 
@@ -1100,13 +1102,40 @@ msgstr ""
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:39
 msgid ""
+"``'client'`` : Export/serialize the scene graph to be rendered with VTK.js "
+"client-side through ``trame``. Requires ``trame`` and ``jupyter-server-"
+"proxy`` to be installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:43
+msgid ""
+"``'server'``: Render remotely and stream the resulting VTK images back to "
+"the client using ``trame``. This replaces the ``'ipyvtklink'`` backend with "
+"better performance. Supports the most VTK features, but suffers from minor "
+"lag due to remote rendering. Requires that a virtual framebuffer be set up "
+"when displaying on a headless server. Must have at least ``trame`` and "
+"``jupyter-server-proxy`` installed for cloud/remote Jupyter instances. This "
+"mode is also aliased by ``'trame'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:52
+msgid ""
+"``'trame'``: The full Trame-based backend that combines both ``'server'`` "
+"and ``'client'`` into one backend. This requires a virtual frame buffer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:56
+msgid ""
 "``'none'`` : Do not display any plots within jupyterlab, instead display "
 "using dedicated VTK render windows.  This will generate nothing on headless "
 "servers even with a virtual framebuffer."
 msgstr ""
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:55
+#: pyvista.jupyter.set_jupyter_backend:72
 msgid "Examples"
 msgstr ""
 
@@ -1127,10 +1156,14 @@ msgid "Enable the ipyvtklink backend."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:21
-msgid "Just show static images."
+msgid "Enable the trame Trame backend."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:25
+msgid "Just show static images."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:29
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
@@ -1287,7 +1320,13 @@ msgstr ""
 msgid "Using ``ipyvtklink`` with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:8
+msgid ""
+"The ``ipyvtklink`` backend is deprecated in favor of the new ``server`` "
+"backend powered by ``trame``. See :ref:`trame_jupyter`."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:11
 msgid ""
 "``pyvista`` has the ability to display fully featured plots within a "
 "JupyterLab environment using ``ipyvtklink``.  This feature works by "
@@ -1295,56 +1334,61 @@ msgid ""
 "passing any user actions from the canvas back to the VTK render window."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:12
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:17
 msgid ""
 "While this isn't an exciting feature when JupyterLab is being run locally, "
 "this has huge implications when plotting remotely as you can display any "
 "plot, with subplots and widgets, from JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:16
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:21
 msgid ""
 "For example, both sections of code will display an interactive canvas within"
 " JupyterLab:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:32
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:37
 msgid "For convenience, you can enable ``ipyvtklink`` by default with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:41
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:46
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:72
 msgid "Installation"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:42
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:47
 msgid ""
 "If you're using an Anaconda environment, installation is the quite "
 "straightforward:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:53
 msgid "Where environment.yml is:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:62
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:67
 msgid "Using pip, you can set up your jupyterlab environment with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:71
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:76
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:127
 msgid "Other Considerations"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:72
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:77
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:128
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:74
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:79
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:89
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:93
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:144
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
@@ -1402,13 +1446,13 @@ msgid ""
 " it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:99
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:98
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Be "
 "sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:107
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:106
 msgid "Or using the package manager used by your environment."
 msgstr ""
 
@@ -1660,6 +1704,137 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:343
 msgid "2D text actors"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:4
+msgid "Trame Jupyter backend for PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:6
+msgid ""
+"PyVista has the ability to display fully featured plots within a Jupyter "
+"environment using `Trame <https://kitware.github.io/trame/index.html>`_. We "
+"provide mechanisms to pair PyVista and Trame so that PyVista plotters can be"
+" used in a web context with both server and client-side rendering."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:11
+msgid ""
+"The server-side rendering mode of the Trame backend works by streaming the "
+"current render window to a canvas within Jupyter and then passing any user "
+"actions from the canvas back to the VTK render window (this is done under "
+"the hood by the ``vtkRemoteView`` in ``trame-vtk``."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:16
+msgid ""
+"For example, both sections of code will display an interactive canvas within"
+" Jupyter:"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:32
+msgid "For convenience, you can enable ``trame`` by default with:"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:41
+msgid "Trame Jupyter Modes"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:43
+msgid ""
+"The PyVista Trame jupyter backend provides three modes of operation "
+"(technically as three separate backend choices):"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:46
+msgid ""
+"``'trame'``: Uses a view that can switch between client- and server-"
+"rendering modes."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:47
+msgid "``'server'``: Uses a view that is purely server-rendering."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:48
+msgid ""
+"``'client'``: Uses a view that is purely client-rendering (generally safe "
+"without a virtual frame buffer)"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:50
+msgid ""
+"You can choose your backend either by using :func:`set_jupyter_backend() "
+"<pyvista.set_jupyter_backend>` or passing ``jupyter_backend`` on the "
+":func:`show() <pyvista.Plotter.show>` call."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:74
+msgid "Using pip, you can set up your jupyter environment with:"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:82
+msgid "Jupyter-Server-Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:84
+msgid ""
+"When using PyVista in Jupyter that is hosted remotely (docker, cloud "
+"JupyterHub, or otherwise), you will need to pair the Trame backend with "
+"``jupyter-server-proxy``."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:87
+msgid ""
+"`Jupyter Server Proxy <https://jupyter-server-"
+"proxy.readthedocs.io/en/latest/>`_ lets you access the Trame server hosting "
+"the views of the PyVista plotters alongside your notebook, and provide "
+"authenticated web access to them directly through Jupyter."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:93
+msgid ""
+"In a future version of `wslink <https://github.com/Kitware/wslink>`_ (the "
+"driving mechanism behind Trame's server), we plan to add support such that "
+"the server can communicate via the `Jupyter Comms <https://jupyter-"
+"notebook.readthedocs.io/en/stable/comms.html>`_ to avoid the need for a "
+"secondary web server and thus ``jupyter-server-proxy``."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:99
+msgid ""
+"To configure PyVista and Trame to work with ``jupyter-server-proxy`` in a "
+"remote environment, you will need to set some options on the global PyVista "
+"theme:"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:102
+msgid ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_enabled`"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:103
+msgid ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_prefix`"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:105
+msgid ""
+"The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
+"sufficient for most remote Jupyter environment and use within Docker."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:108
+msgid "This can also be set with an environment variable:"
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:115
+msgid "The prefix will need to be modified for JupyterHub deployments."
+msgstr ""
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:117
+msgid ""
+"On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
+"``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
+" This can be done however you like but in bash looks like:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/optional_features.rst:2
