@@ -24,13 +24,12 @@ Render a depth image
 Plot a depth image as viewed from a camera overlooking the "hills"
 example mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-23
+.. GENERATED FROM PYTHON SOURCE LINES 8-21
 
 .. code-block:: default
 
     import matplotlib.pyplot as plt
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -40,7 +39,6 @@ example mesh.
     # Establish geometry within a pv.Plotter()
     p = pv.Plotter()
     p.add_mesh(mesh, color=True)
-    p.store_image = True  # permit image caching after plotter is closed
     p.show()
 
 
@@ -55,11 +53,11 @@ example mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-25
+.. GENERATED FROM PYTHON SOURCE LINES 23-24
 
 Record depth image without and with a custom fill value
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-28
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 .. code-block:: default
 
@@ -73,11 +71,11 @@ Record depth image without and with a custom fill value
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+.. GENERATED FROM PYTHON SOURCE LINES 28-29
 
 Visualize depth images
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-38
+.. GENERATED FROM PYTHON SOURCE LINES 29-37
 
 .. code-block:: default
 
@@ -101,7 +99,7 @@ Visualize depth images
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-46
+.. GENERATED FROM PYTHON SOURCE LINES 38-45
 
 .. code-block:: default
 
@@ -127,28 +125,23 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.002 seconds)
+   **Total running time of the script:** ( 0 minutes  0.573 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: image_depth.py <image_depth.py>`
 
-     :download:`Download Python source code: image_depth.py <image_depth.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: image_depth.ipynb <image_depth.ipynb>`
+      :download:`Download Jupyter notebook: image_depth.ipynb <image_depth.ipynb>`
 
 
 .. only:: html

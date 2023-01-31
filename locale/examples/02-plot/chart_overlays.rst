@@ -96,7 +96,7 @@ Use a tight layout to keep axis labels visible on smaller figures.
 Define plotter, add the created matplotlib figure as the first (left) chart
 to the scene, and define a second (right) chart.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-80
+.. GENERATED FROM PYTHON SOURCE LINES 43-86
 
 .. code-block:: default
 
@@ -127,7 +127,13 @@ to the scene, and define a second (right) chart.
 
 
     time_slider = p.add_slider_widget(
-        update_time, [np.min(t), np.max(t)], 0, "Time", (0.25, 0.9), (0.75, 0.9), event_type='always'
+        update_time,
+        [np.min(t), np.max(t)],
+        0,
+        "Time",
+        (0.25, 0.9),
+        (0.75, 0.9),
+        interaction_event='always',
     )
 
     # Start incrementing time automatically
@@ -152,28 +158,23 @@ to the scene, and define a second (right) chart.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.392 seconds)
+   **Total running time of the script:** ( 0 minutes  3.695 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_overlays.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: chart_overlays.py <chart_overlays.py>`
 
-     :download:`Download Python source code: chart_overlays.py <chart_overlays.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: chart_overlays.ipynb <chart_overlays.ipynb>`
+      :download:`Download Jupyter notebook: chart_overlays.ipynb <chart_overlays.ipynb>`
 
 
 .. only:: html

@@ -103,12 +103,12 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
  .. code-block:: none
 
 
-    LookupTable (0x7f8fb355d520)
+    LookupTable (0x7fd87e396be0)
       Table Range:                (0.014368999749422073, 23.26799964904785)
       N Values:                   256
       Above Range Color:          None
       Below Range Color:          None
-      NAN Color:                  Color(name='darkgray', hex='#a9a9a9ff')
+      NAN Color:                  Color(name='darkgray', hex='#a9a9a9ff', opacity=255)
       Log Scale:                  False
       Color Map:                  "viridis"
 
@@ -351,12 +351,12 @@ This example just controls the alpha channel.
         set_min_alpha,
         (0, 1),
         value=lut.alpha_range[0],
-        event_type='always',
+        interaction_event='always',
         title='Alpha Range',
         tube_width=0.003,
     )
     pl.add_slider_widget(
-        set_max_alpha, (0, 1), value=lut.alpha_range[1], event_type='always', tube_width=0.0
+        set_max_alpha, (0, 1), value=lut.alpha_range[1], interaction_event='always', tube_width=0.0
     )
 
     pl.show()
@@ -432,7 +432,7 @@ callbacks.
             set_min,
             rng,
             value=getattr(lut, attr)[0],
-            event_type='always',
+            interaction_event='always',
             title=' '.join(attr.split('_')).capitalize(),
             tube_width=0.003,
             pointa=(0.6, 0.9 - 0.165 * idx),
@@ -442,7 +442,7 @@ callbacks.
             set_max,
             rng,
             value=getattr(lut, attr)[1],
-            event_type='always',
+            interaction_event='always',
             tube_width=0.0,
             pointa=(0.6, 0.9 - 0.165 * idx),
             pointb=(0.9, 0.9 - 0.165 * idx),
@@ -474,7 +474,7 @@ callbacks.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.440 seconds)
+   **Total running time of the script:** ( 0 minutes  4.392 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lookup-table.py:
