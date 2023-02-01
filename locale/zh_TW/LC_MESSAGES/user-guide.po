@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-31 01:48+0000\n"
+"POT-Creation-Date: 2023-02-01 01:54+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -1177,11 +1177,14 @@ msgstr ""
 msgid "Using ``ipygany`` with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:6
 msgid ""
-"Currently, this backend has inferior support and features than the "
-"``pythreejs``.  If you would like accurate recreations of VTK scenes in "
-"three.js, please see :ref:`pythreejs_ref`."
+"This backend has been deprecated in favor of :ref:`trame_jupyter` - a new "
+"framework for building dynamic web applications with Python with great "
+"support for VTK."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:10
@@ -1239,7 +1242,7 @@ msgid "Water visualization"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:36
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:31
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:37
 msgid "PyVista Wrapping"
 msgstr ""
 
@@ -1269,7 +1272,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:66
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:65
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:71
 msgid ""
 "Note that there are many missing features, including all vtk widgets, but "
 "many of these can be replaced with jupyterlab widgets.  If you wish to "
@@ -1289,7 +1292,7 @@ msgid "Examples: Large Models"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:88
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:230
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:236
 msgid ""
 "This example shows a large mesh and demonstrates how even fairly large "
 "meshes, like the carburetor example which contains 500,000 faces and 250,000"
@@ -1322,12 +1325,6 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:4
 msgid "Using ``ipyvtklink`` with PyVista"
-msgstr ""
-
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:8
-msgid ""
-"The ``ipyvtklink`` backend is deprecated in favor of the new ``server`` "
-"backend powered by ``trame``. See :ref:`trame_jupyter`."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:11
@@ -1402,7 +1399,7 @@ msgstr ""
 msgid "Using ``Panel`` with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:12
 msgid ""
 "PyVista supports the usage of the `panel "
 "<https://github.com/holoviz/panel>`_ module as a ``vtk.js`` jupyterlab "
@@ -1413,50 +1410,50 @@ msgid ""
 "and ``panel``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:13
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:20
 msgid "For example, here's the ``PyVista`` logo:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:20
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:27
 msgid ""
 "Note that this isn't a perfect replica since there are some details lost in "
 "the conversion to ``vtk.js``, but for the vast majority of cases, this can "
 "be used to accurately render ``pyvista`` plots within Jupyterlab."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:27
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:34
 msgid "Examples and Usage"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:28
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:35
 msgid ""
 "There are two ways to use ``panel`` within Jupyter notebooks.  It can be "
 "done on a plot by plot basis by setting the ``jupyter_backend`` in "
 "``mesh.plot()``:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:55
 msgid "Alternatively, you can set the backend globally:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:82
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:89
 msgid "Configuration Considerations"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:83
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:90
 msgid ""
 "If running on a headless environment (e.g. Google Colab, your own VM), be "
 "sure to start up a virtual framebuffer using ``Xvfb``.  You can either start"
 " it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:98
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:105
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Be "
 "sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:106
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:113
 msgid "Or using the package manager used by your environment."
 msgstr ""
 
@@ -1464,7 +1461,7 @@ msgstr ""
 msgid "Using ``pythreejs`` with PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:11
 msgid ""
 "The `pythreejs <https://github.com/jupyter-widgets/pythreejs>`_ jupyterlab "
 "plotting backend is a powerful library that enables web-based visualization "
@@ -1472,49 +1469,49 @@ msgid ""
 "documentation (as shown here)."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:10
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:16
 msgid ""
 "The biggest advantage to using the ``pythreejs`` backend compared to the "
 "other backends is that it accurately recreates the VTK scene into a "
 "``threejs`` scene including:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:14
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:20
 msgid "Mesh edges"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:15
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:21
 msgid "Lighting"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:16
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:22
 msgid "Physically based rendering"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:17
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:23
 msgid "Face and point scalars"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:18
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:177
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:24
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:183
 msgid "Textures"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:20
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:26
 msgid ""
 "You can use this backend to display PyVista scenes directly within a jupyter"
 " notebook, create interactive web documentation, or even export to "
 "standalone HTML pages."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:25
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:31
 msgid ""
 "This backend has better support and features than the ``ipygany`` backend, "
 "but is still missing support for vtk widgets and some features (like scalar "
 "bars and labels).  See :ref:`pythreejs_caveats`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:32
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:38
 msgid ""
 "Plotting scenes from pyvista are automatically serialized to a three.js "
 "scene when using the ``pythreejs`` backend.  This can be enabled globally "
@@ -1522,7 +1519,7 @@ msgid ""
 ":func:`pyvista.Plotter.show`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:60
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:66
 msgid ""
 "Note how the mesh color, background color, and camera position are all "
 "mapped over to the ``three.js`` scene, meaning that you can reuse existing "
@@ -1530,183 +1527,183 @@ msgid ""
 "wish to use."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:80
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:86
 msgid ""
 "This renderer can then be added to any number of jupyterlab widgets and then"
 " shown as a complete widget.  For example, you could even display two side "
 "by side using ``ipywidgets.AppLayout``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:86
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:92
 msgid "Plotting Representation and Materials"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:87
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:93
 msgid ""
 "The PyVista plotting scenes are faithfully serialized to same plotting scene"
 " within three.js using the same lighting, camera projection, and materials."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:124
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:130
 msgid "Scalars Support"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:125
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:131
 msgid ""
 "The ``pythreejs`` backend supports plotting scalars for faces and points for"
 " point, wireframe, and surface representations."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:165
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:171
 msgid "Point Cloud Example"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:166
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:172
 msgid ""
 "Plot a sample point cloud with pyvista using the ``pythreejs`` backend while"
 " assigning the points scalars random values."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:178
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:184
 msgid ""
 "The ``pythreejs`` backend also supports :attr:`textures "
 "<pyvista.DataSet.textures>`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:186
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:192
 msgid ""
 "See the :ref:`ref_texture_example` example for more details regarding "
 "textures."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:190
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:196
 msgid "RGB and RGBA Coloring"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:191
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:197
 msgid ""
 "The ``pythreejs`` supports RGBA plotting.  See the ``rgba`` parameter within"
 " :func:`add_mesh() <pyvista.Plotting.add_mesh>` for more details."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:221
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:227
 msgid "Multiple Render Windows"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:222
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:228
 msgid ""
 "You can plot multiple render windows within a single ``pythreejs`` just like"
 " how you would with PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:225
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:231
 msgid "See :ref:`assigning_scalars` for an example."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:229
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:235
 msgid "Large Models and Physically Based Rendering"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:235
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:241
 msgid ""
 "Note that here we enable physically based rendering using ``pbr=True``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:255
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:261
 msgid "Create Interactive Documentation"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:256
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:262
 msgid ""
 "All the documentation on this page was generated using a combination of "
 "``pythreejs``, ``pyvista`` and ``jupyter_sphinx``."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:259
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:265
 msgid "For example, in a sample ``*.rst`` file, add the following::"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:269
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:275
 msgid "To generate:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:281
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:287
 msgid ""
 "You can also use the ``:hide-code:`` option to hide the code and only "
 "display the plot."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:284
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:290
 msgid ""
 "You should also consider changing the global theme when plotting to improve "
 "the look of your plots:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:293
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:299
 msgid "You will need the following packages:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:295
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:301
 msgid "``pyvista``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:296
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:302
 msgid "``pythreejs``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:297
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:303
 msgid "``jupyter_sphinx``"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:299
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:305
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:310
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:316
 msgid "Export to HTML"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:311
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:317
 msgid ""
 "Using ``pythreejs``, you can export most scenes completely to a standalone "
 "HTML file.  For example:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:328
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:334
 msgid "Caveats"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:330
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:336
 msgid ""
 "Not all PyVista features are currently supported with the ``pythreejs`` "
 "plotting backend. Future ones can be added opening a feature request at "
 "`PyVista Issues <https://github.com/pyvista/pyvista/issues>`_."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:335
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:341
 msgid "Missing features include:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:337
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:343
 msgid "Scalar bars"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:338
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:344
 msgid "Physically based rendering textures (e.g. from gLTF files)."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:339
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:345
 msgid ""
 "Plotting points as spheres or lines as tubes.  Use :func:`glyph() "
 "<pyvista.DataSet.glyph>` or :func:`tube() <pyvista.PolyData.tube>` to "
 "convert to surfaces first and then plot."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:342
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:348
 msgid "Point labels"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:343
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:349
 msgid "2D text actors"
 msgstr ""
 
