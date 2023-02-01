@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 01:50+0000\n"
+"POT-Creation-Date: 2023-02-01 01:54+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Javanese (https://www.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -27,17 +27,20 @@ msgid ""
 "<https://pypi.org/project/vtk/>`_, but there are situations where you may "
 "need to build VTK from source (e.g. new release of Python, EGL rendering, "
 "additional features, etc).  As ``pyvista`` does not provide ``vtk``, you "
-"will have to build it manually."
+"will have to either build it manually or install the default wheel from "
+"PyPI."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:11
+#: ../../pyvista/doc/extras/building_vtk.rst:13
 msgid ""
 "Should you need a prebuilt wheel, a variety of prebuilt wheels can be found "
 "at `pyvista-wheels <https://github.com/pyvista/pyvista-wheels>`_, but you "
-"may be better off building your own."
+"may be better off building your own. These are not \"official\" wheels and "
+"will soon be removed in favor of more \"official\" wheel variants from VTK "
+"directly."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:15
+#: ../../pyvista/doc/extras/building_vtk.rst:18
 msgid ""
 "Reference the official directions for `Building VTK "
 "<https://gitlab.kitware.com/vtk/vtk/-/blob/master/Documentation/dev/build.md>`_."
@@ -45,11 +48,11 @@ msgid ""
 "standard situations like EGL."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:22
+#: ../../pyvista/doc/extras/building_vtk.rst:25
 msgid "Building Wheels"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:23
+#: ../../pyvista/doc/extras/building_vtk.rst:26
 msgid ""
 "Building VTK from source is fairly straightforward.  Using the default build"
 " settings, build a Python wheel of VTK using ``ninja`` using the following "
@@ -60,11 +63,20 @@ msgid ""
 "designed to reduce the build time and resulting wheel size."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:77
+#: ../../pyvista/doc/extras/building_vtk.rst:35
+msgid ""
+"We have also published some convenient CMake configurations files that you "
+"can adopt from `banesullivan/vtk-cmake <https://github.com/banesullivan/vtk-"
+"cmake>`. These configurations cover the build variants described here and "
+"make the process of reproducibly building VTK wheel variants more "
+"straightforward."
+msgstr ""
+
+#: ../../pyvista/doc/extras/building_vtk.rst:89
 msgid "Off-Screen Plotting GPU Support"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:78
+#: ../../pyvista/doc/extras/building_vtk.rst:90
 msgid ""
 "VTK supports rendering with EGL, enabling rapid off-screen rendering using "
 "GPU hardware acceleration without installing a virtual framebuffer.  The "
@@ -73,36 +85,36 @@ msgid ""
 "command with:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:119
+#: ../../pyvista/doc/extras/building_vtk.rst:134
 msgid ""
 "This disables any plotting using the X server, so be prepared to use this "
 "module only on a headless display where you either intend to save static "
 "images or stream the render window to another computer with a display (e.g "
-"using ``pyvista.set_jupyter_backend('ipyvtklink')`` and jupyterlab). In "
-"other words, this wheel will make VTK unusable outside of an off-screen "
+"using ``pyvista.set_jupyter_backend('server')`` and jupyterlab). In other "
+"words, this wheel will make VTK unusable outside of an off-screen "
 "environment, so only plan on installing it on a headless system without an X"
 " server."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:129
+#: ../../pyvista/doc/extras/building_vtk.rst:144
 msgid "Building OSMesa"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:130
+#: ../../pyvista/doc/extras/building_vtk.rst:145
 msgid ""
 "OSMesa provides higher visualization performance on CPU based hosts. Use "
 "this instead of ``xvfb``:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:163
+#: ../../pyvista/doc/extras/building_vtk.rst:181
 msgid "Wheels will be generated in the ``dist`` directory."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:167
+#: ../../pyvista/doc/extras/building_vtk.rst:185
 msgid "Building ManyLinux Wheels"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:168
+#: ../../pyvista/doc/extras/building_vtk.rst:186
 msgid ""
 "The above directions are great for building a local build of VTK, but these "
 "wheels are difficult to share outside your local install given issues with "
@@ -111,32 +123,32 @@ msgid ""
 "<https://github.com/pypa/manylinux>`_ docker image."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:174
+#: ../../pyvista/doc/extras/building_vtk.rst:192
 msgid ""
 "To do this, create a ``build_wheels.sh`` with the following contents in the "
 "``git clone``d ``vtk`` directory, and give it executable permissions "
 "(``chmod +x build_wheels.sh``):"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:231
+#: ../../pyvista/doc/extras/building_vtk.rst:252
 msgid "This script can then be called with:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:240
+#: ../../pyvista/doc/extras/building_vtk.rst:261
 msgid "You should end up with a ``build/wheelhouse/vtk-*.whl``."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:243
+#: ../../pyvista/doc/extras/building_vtk.rst:264
 msgid ""
 "To build the EGL version of the wheel, follow the directions in the previous"
 " section.  Add ``mesa-libEGL-devel`` to the installation dependencies."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:249
+#: ../../pyvista/doc/extras/building_vtk.rst:270
 msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:250
+#: ../../pyvista/doc/extras/building_vtk.rst:271
 msgid ""
 "While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
 "several issues that crop up when building wheels for the 32-bit version (see"
@@ -146,17 +158,17 @@ msgid ""
 "memory limitations otherwise (especially with only 1 GB RAM)."
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:258
+#: ../../pyvista/doc/extras/building_vtk.rst:279
 msgid ""
 "Building the ``aarch64`` manylinux wheel can be done via docker with the "
 "``quay.io/pypa/manylinux2014_aarch64`` image.  Run the following:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:269
+#: ../../pyvista/doc/extras/building_vtk.rst:290
 msgid "Where ``build_wheels.sh`` is:"
 msgstr ""
 
-#: ../../pyvista/doc/extras/building_vtk.rst:326
+#: ../../pyvista/doc/extras/building_vtk.rst:350
 msgid ""
 "Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
 "you want ``EGL`` enabled for your wheel."
@@ -892,78 +904,55 @@ msgid ""
 "examples."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:593
-msgid "Full documentation build"
-msgstr ""
-
 #: ../../pyvista/CONTRIBUTING.rst:594
-msgid ""
-"By default, the documentation build places class documentation on single "
-"pages rather than generating a table and placing class methods and "
-"attributes on individual pages. Figures are also sized to ``(400, 300)`` "
-"rather than the default ``(1024, 768)``. This is to minimize the time it "
-"takes to build documentation locally. If you wish to generate the full "
-"documentation, enable it with:"
-msgstr ""
-
-#: ../../pyvista/CONTRIBUTING.rst:606
-msgid ""
-"This will generate the same documentation as rendered online, but as each "
-"individual class method and attribute will have its own documentation page, "
-"the documentation will take much longer to build. Additionally, inherited "
-"methods will have their docstrings rendered, whereas the non-full "
-"documentation build only generates methods belonging directly to that class."
-msgstr ""
-
-#: ../../pyvista/CONTRIBUTING.rst:613
 msgid "Parallel Documentation Build"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:614
+#: ../../pyvista/CONTRIBUTING.rst:595
 msgid ""
 "You can improve your documentation build time on Linux and Mac OS with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:620
+#: ../../pyvista/CONTRIBUTING.rst:601
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
 "multi-core computers when ``FULL_DOC_BUILD=TRUE``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:626
+#: ../../pyvista/CONTRIBUTING.rst:607
 msgid "Contributing to the Documentation"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:627
+#: ../../pyvista/CONTRIBUTING.rst:608
 msgid "Documentation for PyVista is generated from three sources:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:629
+#: ../../pyvista/CONTRIBUTING.rst:610
 msgid ""
 "Docstrings from the classes, functions, and modules of ``pyvista`` using "
 "`sphinx.ext.autodoc <https://www.sphinx-"
 "doc.org/en/master/usage/extensions/autodoc.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:632
+#: ../../pyvista/CONTRIBUTING.rst:613
 msgid "Restructured test from ``doc/``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:633
+#: ../../pyvista/CONTRIBUTING.rst:614
 msgid "Gallery examples from ``examples/``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:635
+#: ../../pyvista/CONTRIBUTING.rst:616
 msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings.  Full gallery examples should be placed in ``examples``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:640
+#: ../../pyvista/CONTRIBUTING.rst:621
 msgid "Adding a New Example"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:641
+#: ../../pyvista/CONTRIBUTING.rst:622
 msgid ""
 "PyVista's examples come in two formats: basic code snippets demonstrating "
 "the functionality of an individual method or a full gallery example "
@@ -974,7 +963,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:648
+#: ../../pyvista/CONTRIBUTING.rst:629
 msgid ""
 "To add a fully fledged, standalone example, add your example to the "
 "``examples`` directory in the root directory of the `PyVista Repository "
@@ -986,15 +975,15 @@ msgid ""
 "Gallery <https://sphinx-gallery.github.io/stable/index.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:657
+#: ../../pyvista/CONTRIBUTING.rst:638
 msgid "For more details see :ref:`add_example_example`."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:661
+#: ../../pyvista/CONTRIBUTING.rst:642
 msgid "Add a new Example File"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:662
+#: ../../pyvista/CONTRIBUTING.rst:643
 msgid ""
 "If you have a dataset that you need for your gallery example, add it to "
 "`pyvista/vtk-data <https://github.com/pyvista/vtk-data/>`_ and follow the "
@@ -1002,15 +991,15 @@ msgid ""
 "dataset ``pyvista/examples/downloads.py``. This might be as easy as:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:674
+#: ../../pyvista/CONTRIBUTING.rst:655
 msgid "Which enables:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:683
+#: ../../pyvista/CONTRIBUTING.rst:664
 msgid "Creating a New Pull Request"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:685
+#: ../../pyvista/CONTRIBUTING.rst:666
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -1018,7 +1007,7 @@ msgid ""
 "changes will work across several platforms."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:690
+#: ../../pyvista/CONTRIBUTING.rst:671
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -1028,29 +1017,29 @@ msgid ""
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:697
+#: ../../pyvista/CONTRIBUTING.rst:678
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:702
+#: ../../pyvista/CONTRIBUTING.rst:683
 msgid "Branching Model"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:704
+#: ../../pyvista/CONTRIBUTING.rst:685
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
 " Development <https://trunkbaseddevelopment.com/>`_ approach."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:708
+#: ../../pyvista/CONTRIBUTING.rst:689
 msgid "The main features of our branching model are:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:710
+#: ../../pyvista/CONTRIBUTING.rst:691
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -1059,7 +1048,7 @@ msgid ""
 "through unit testing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:715
+#: ../../pyvista/CONTRIBUTING.rst:696
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -1071,7 +1060,7 @@ msgid ""
 "versions of ``pyvista`` without having to worry about untested features."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:725
+#: ../../pyvista/CONTRIBUTING.rst:706
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version "
@@ -1083,43 +1072,43 @@ msgid ""
 "so they can be patched as needed."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:736
+#: ../../pyvista/CONTRIBUTING.rst:717
 msgid "Minor Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:738
+#: ../../pyvista/CONTRIBUTING.rst:719
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
 "following will occur:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:742
+#: ../../pyvista/CONTRIBUTING.rst:723
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:745
+#: ../../pyvista/CONTRIBUTING.rst:726
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:748
+#: ../../pyvista/CONTRIBUTING.rst:729
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
 "cached."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:759
+#: ../../pyvista/CONTRIBUTING.rst:740
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:762
+#: ../../pyvista/CONTRIBUTING.rst:743
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (e.g. ``0, 26, 'dev0'``). Push the branch to GitHub and create a new PR "
@@ -1127,7 +1116,7 @@ msgid ""
 "limited at this point while effort is focused on the release."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:768
+#: ../../pyvista/CONTRIBUTING.rst:749
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -1135,7 +1124,7 @@ msgid ""
 " release branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:773
+#: ../../pyvista/CONTRIBUTING.rst:754
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -1144,7 +1133,7 @@ msgid ""
 "release with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:784
+#: ../../pyvista/CONTRIBUTING.rst:765
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -1154,13 +1143,13 @@ msgid ""
 "if a specific contributor is to thank for a new feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:792
+#: ../../pyvista/CONTRIBUTING.rst:773
 msgid ""
 "Place your release notes from step 8 in the description for `the new release"
 " on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:796
+#: ../../pyvista/CONTRIBUTING.rst:777
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro/cf-scripts>`_ to open a pull request on the conda-"
@@ -1168,27 +1157,27 @@ msgid ""
 "feedstock>`_. Merge that pull request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:802
+#: ../../pyvista/CONTRIBUTING.rst:783
 msgid "Announce the new release in the PyVista Slack workspace and celebrate!"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:806
+#: ../../pyvista/CONTRIBUTING.rst:787
 msgid "Patch Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:808
+#: ../../pyvista/CONTRIBUTING.rst:789
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:811
+#: ../../pyvista/CONTRIBUTING.rst:792
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (e.g. ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:814
+#: ../../pyvista/CONTRIBUTING.rst:795
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (e.g. "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -1196,7 +1185,7 @@ msgid ""
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:820
+#: ../../pyvista/CONTRIBUTING.rst:801
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -1204,7 +1193,7 @@ msgid ""
 "the correct steps)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:825
+#: ../../pyvista/CONTRIBUTING.rst:806
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."

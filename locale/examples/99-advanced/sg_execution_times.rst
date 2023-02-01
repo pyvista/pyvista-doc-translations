@@ -5,10 +5,10 @@
 
 Computation times
 =================
-**00:02.937** total execution time for **examples_99-advanced** files:
+**00:16.146** total execution time for **examples_99-advanced** files:
 
 +------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py` (``plotting-algorithms.py``)             | 00:02.937 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py` (``atomic-orbitals.py``)                     | 00:16.146 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                             | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
@@ -21,6 +21,8 @@ Computation times
 | :ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)                         | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_planets.py` (``planets.py``)                                     | 00:00.000 | 0.0 MB |
++------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py` (``plotting-algorithms.py``)             | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                 | 00:00.000 | 0.0 MB |
 +------------------------------------------------------------------------------------------------------+-----------+--------+

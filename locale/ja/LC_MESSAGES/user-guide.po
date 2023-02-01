@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.38.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 01:54+0000\n"
+"POT-Creation-Date: 2023-02-01 01:54+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -991,44 +991,48 @@ msgid ""
 msgstr "`Jupyter <https://jupyter.org/>`_ ノートで ``pyvista`` でインタラクティブにプロット!"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:10
+msgid "We recommend using the Trame-based backed. See :ref:`trame_jupyter`."
+msgstr "Trameベースの後援を使用することをお勧めします。 :ref:`trame_jupyter` を参照してください。"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:14
 msgid "Demo Using ``pythreejs``"
 msgstr "``pythreejs`` を使ったデモ"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:11
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:15
 msgid "Create interactive physically based rendering using `pythreejs`_."
 msgstr "`pythreejs`_ を使ってインタラクティブな物理ベースのレンダリングを行います．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:33
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:37
 msgid "Demo Using ``ipygany``"
 msgstr "``ipygany`` を使ったデモ"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:52
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:56
 msgid "Demo Using ``panel``"
 msgstr "``panel`` を使ったデモ"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:61
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:65
 msgid "Supported Modules"
 msgstr "サポートされるモジュール"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:62
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:66
 msgid ""
 "The PyVista module supports a variety of backends when plotting within a "
 "jupyter notebook:"
 msgstr "PyVistaモジュールは，Jupyterノートブック内でプロットする際のさまざまなバックエンドをサポートしています:"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:65
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:69
 msgid ""
-"Server-side rendering with PyVista streaming to the notebook through "
-"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_"
+"Server and client-side rendering with PyVista streaming to the notebook "
+"through `trame <https://github.com/Kitware/trame/>`_"
 msgstr ""
-"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_ "
-"を介したノートブックへのPyVistaストリーミングによるサーバ側のレンダリング"
+"`trame <https://github.com/Kitware/trame/>`_ "
+"を介したノートブックへのPyVistaストリーミングによるサーバとクライアント側のレンダリング"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:67
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:71
 msgid "Client-side rendering with `pythreejs`_ using ``threejs``."
 msgstr "`pythreejs`_ を使ったクライアントサイドレンダリング ``threejs`` を使ったクライアントサイドレンダリング．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:68
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:72
 msgid ""
 "Client-side rendering with `ipygany "
 "<https://github.com/QuantStack/ipygany>`_ using ``threejs``."
@@ -1036,7 +1040,7 @@ msgstr ""
 "``threejs`` を使用した `ipygany <https://github.com/QuantStack/ipygany>`_ "
 "によるクライアント側レンダリング．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:69
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:73
 msgid ""
 "Client-side rendering using `panel <https://github.com/holoviz/panel>`_ "
 "using ``vtk.js``."
@@ -1044,25 +1048,25 @@ msgstr ""
 "``vtk.js`` を使用した `panel <https://github.com/holoviz/panel>`_ "
 "を使用したクライアント側レンダリング．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:70
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:74
 msgid "Static images."
 msgstr "静止画像．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:75
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:79
 msgid "Details for Each Backend"
 msgstr "各バックエンドの詳細"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:76
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:80
 msgid ""
 "See the individual package pages on each backend for additional details on "
 "how to use these plotting backends."
 msgstr "これらの描画バックエンドの使用方法の詳細については，各バックエンドの個々のパッケージページを参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:89
-msgid "State of 3D Interactive Jupyterlab Plotting"
-msgstr "3 D対話型Jupyterlabプロットの状態"
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:94
+msgid "State of 3D Interactive Jupyter Plotting"
+msgstr "3 D対話型Jupyterプロットの状態"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:93
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:98
 msgid ""
 "3D plotting within Jupyter notebooks is an emerging technology, partially "
 "because Jupyter is still relatively new, but also because the web technology"
@@ -1073,119 +1077,118 @@ msgstr ""
 "Jupyterノートブック内の3 "
 "Dプロットは，Jupyterがまだ比較的新しい技術であることもありますが，ここで使用されているWeb技術も新しい技術であり，ますます多くのユーザや開発者がクラウドやクラウドベースのビジュアライゼーションに移行しているため，急速に発展しています．ここにあるものは壊れ，急速に変化する可能性が高いです"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:99
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:104
 msgid ""
-"This was written in March 2021 and updated in August 2021, and may already "
+"This was written in March 2021 and updated in January 2023, and may already "
 "be out of date.  Be sure to check the developer websites for any changes."
 msgstr ""
-"これは2021年3月に書かれ，2021年8月に更新されたもので，すでに古くなっている可能性があります． "
+"これは2021年3月に書かれ，2023年1月に更新されたもので，すでに古くなっている可能性があります． "
 "必ず，開発者のウェブサイトで変更点を確認してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:103
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:108
 msgid ""
-"When plotting using Jupyterlab you have the option of using one of many "
+"When plotting using Jupyter you have the option of using one of many "
 "modules, each of which has its advantages, disadvantages, and quirks.  While"
 " ``pyvista`` attempts to remove some of the differences in the API when "
 "using the ``Plotting`` class, the plots will still look and feel differently"
 " depending on the backend.  Additionally, different backends have different "
 "requirements and may not support your deployment environment."
 msgstr ""
-"Jupyterlabを使用してプロットする場合は，多数のモジュールのいずれかを使用することもできますが，それぞれに長所，短所，および短所があります． "
+"Jupyterを使用してプロットする場合は，多数のモジュールのいずれかを使用することもできますが，それぞれに長所，短所，および短所があります． "
 "``pyvista`` は ``Plotting`` "
 "クラスを使用するときにAPIの違いのいくつかを取り除こうとしますが，プロットはバックエンドによって異なるように見えます．また，バックエンドが異なると要件も異なり，展開環境をサポートしない場合があります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:111
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:116
 msgid ""
 "This table details various capabilities and technologies used by the jupyter"
 " notebook plotting modules:"
 msgstr "次の表に，jupyterノートブックプロットモジュールで使用されるさまざまな機能とテクノロジを示します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:115
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:120
 msgid "Jupyter Notebook 3D Modules"
 msgstr "Jupyterノートブック3 Dモジュール"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
-msgid "Jupyterlab 3"
-msgstr "Jupyterlab 3"
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Rendering Location"
 msgstr "レンダリングの場所"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Backend"
 msgstr "バックエンド"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:122
 msgid "Requires Framebuffer"
 msgstr "フレームバッファが必要"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "trame"
+msgstr "trame"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "Client & Server"
+msgstr "クライアントとサーバー"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "vtk.js & vtk"
+msgstr "vtk.js と vtk"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:124
+msgid "Optional"
+msgstr "オプション"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
 msgid "panel"
 msgstr "panel"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "Yes"
-msgstr "Yes"
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
 msgid "Client"
 msgstr "クライアント"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:119
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
 msgid "vtk.js"
 msgstr "vtk.js"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:126
+msgid "Yes"
+msgstr "Yes"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
 msgid "pythreejs"
 msgstr "pythreejs"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
 msgid "threejs"
 msgstr "threejs"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:121
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
 msgid "No"
 msgstr "いいえ"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:123
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:130
 msgid "ipygany"
 msgstr "ipygany"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "ipyvtklink"
-msgstr "ipyvtklink"
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "Server"
-msgstr "サーバ"
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:125
-msgid "vtk"
-msgstr "vtk"
-
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:133
 msgid ""
-"All the modules other than ``ipygany`` and ``pythreejs`` require a "
-"framebuffer, which can be set up on a headless environment with "
+"All the modules other than ``trame``, ``ipygany``, and ``pythreejs`` require"
+" a framebuffer, which can be set up on a headless environment with "
 ":func:`pyvista.start_xvfb`. However, on Google Colab, where it's not "
 "possible to install system packages, you should stick with a module like "
-"``threejs``, which does not require any server side rendering or "
+"``threejs`` or the ``'client'`` variant of the trame-backend (see "
+":ref:`trame_jupyter`), which do not require any server side rendering or "
 "framebuffer."
 msgstr ""
-"モジュールはすべてフレームバッファを必要とします．これは :func:`pyvista.start_xvfb` "
-"を使ったヘッドレス環境で設定できます．しかし，システムパッケージをインストールできないGoogle Colabでは， "
-"システムパッケージをインストールすることができないので，サーバーサイドレンダリングやフレームバッファを必要としない ``threejs`` "
-"のようなモジュールを使うべきです．"
+"``trame``, ``ipygany``, ``pythreejs`` 以外のモジュールはフレームバッファを必要とし、ヘッドレス環境では "
+":func:`pyvista.start_xvfb` でセットアップを行うことができます。しかし、システムパッケージをインストールできないGoogle "
+"Colabでは、 ``threejs`` や trame-backend の ``'client'`` "
+"のような、サーバサイドレンダリングやフレームバッファを必要としないモジュールにこだわる必要があります( :ref:`trame_jupyter` "
+"を参照)。"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:135
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:141
 msgid ""
 "See :ref:`install_ref` for more details installing on a headless environment"
 " for the backends requiring a framebuffer.  When installing the individual "
@@ -1197,11 +1200,11 @@ msgstr ""
 "を参照してください．個々のパッケージをインストールする場合，簡単な ``pip install <package>`` を使用してJupyterlab "
 "3互換パッケージをインストールできます．詳細は，他のパッケージのインストール手順を参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:143
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:149
 msgid "Usage with PyVista"
 msgstr "PyVistaでの使用法"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:144
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:150
 msgid ""
 "There are two ways to set the jupyter plotting backend.  First, it can be "
 "done on a plot by plot basis by setting the ``jupyter_backend`` parameter in"
@@ -1225,12 +1228,12 @@ msgid "Parameters"
 msgstr "パラメータ"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:52
+#: pyvista.jupyter.set_jupyter_backend:69
 msgid "**backend** : :class:`python:str`"
 msgstr "**backend** : :class:`python:str`"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:51
+#: pyvista.jupyter.set_jupyter_backend:68
 msgid "python:str"
 msgstr "python:str"
 
@@ -1301,6 +1304,44 @@ msgstr ""
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:39
 msgid ""
+"``'client'`` : Export/serialize the scene graph to be rendered with VTK.js "
+"client-side through ``trame``. Requires ``trame`` and ``jupyter-server-"
+"proxy`` to be installed."
+msgstr ""
+"``'client'`` : VTK.jsのクライアントサイドでレンダリングするシーングラフを、 ``trame`` "
+"を通してエクスポート/シリアライズすることができます。 ``trame`` と ``jupyter-server-proxy`` "
+"がインストールされている必要があります。"
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:43
+msgid ""
+"``'server'``: Render remotely and stream the resulting VTK images back to "
+"the client using ``trame``. This replaces the ``'ipyvtklink'`` backend with "
+"better performance. Supports the most VTK features, but suffers from minor "
+"lag due to remote rendering. Requires that a virtual framebuffer be set up "
+"when displaying on a headless server. Must have at least ``trame`` and "
+"``jupyter-server-proxy`` installed for cloud/remote Jupyter instances. This "
+"mode is also aliased by ``'trame'``."
+msgstr ""
+"``'server'``: リモートでレンダリングを行い、生成されたVTKイメージを ``trame`` "
+"を用いてクライアントにストリームバックします。これは ``'ipyvtklink'`` "
+"バックエンドを置き換えるもので、より良いパフォーマンスを発揮します。ほとんどの VTK "
+"機能をサポートしていますが、リモートレンダリングによる小さな遅延に悩まされています。ヘッドレスサーバで表示する場合は、仮想フレームバッファをセットアップする必要があります。クラウド/リモートJupyterインスタンスでは、少なくとも"
+" ``trame`` と ``jupyter-server-proxy`` がインストールされている必要があります。このモードは ``'trame'``"
+" というエイリアスでもあります。"
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:52
+msgid ""
+"``'trame'``: The full Trame-based backend that combines both ``'server'`` "
+"and ``'client'`` into one backend. This requires a virtual frame buffer."
+msgstr ""
+"``'trame'``: ``'server'`` と ``'client'`` "
+"の両方を一つのバックエンドに統合したTrameベースのフルバックエンドです。これには仮想フレームバッファが必要です。"
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:56
+msgid ""
 "``'none'`` : Do not display any plots within jupyterlab, instead display "
 "using dedicated VTK render windows.  This will generate nothing on headless "
 "servers even with a virtual framebuffer."
@@ -1309,7 +1350,7 @@ msgstr ""
 "jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
-#: pyvista.jupyter.set_jupyter_backend:55
+#: pyvista.jupyter.set_jupyter_backend:72
 msgid "Examples"
 msgstr "例"
 
@@ -1330,10 +1371,14 @@ msgid "Enable the ipyvtklink backend."
 msgstr "ipyvtklink バックエンドを有効にします．"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:21
+msgid "Enable the trame Trame backend."
+msgstr "Trameバックエンドを有効にします．"
+
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:25
 msgid "Just show static images."
 msgstr "静止画像を表示するだけです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/index.rst:25
+#: ../../pyvista/doc/user-guide/jupyter/index.rst:29
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
@@ -1343,14 +1388,15 @@ msgstr "JupyterLab内のすべてのプロットを無効にし，準のデス�
 msgid "Using ``ipygany`` with PyVista"
 msgstr "PyVistaで ``ipygany`` を使う"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:6
 msgid ""
-"Currently, this backend has inferior support and features than the "
-"``pythreejs``.  If you would like accurate recreations of VTK scenes in "
-"three.js, please see :ref:`pythreejs_ref`."
+"This backend has been deprecated in favor of :ref:`trame_jupyter` - a new "
+"framework for building dynamic web applications with Python with great "
+"support for VTK."
 msgstr ""
-"現在，このバックエンドは ``pythreejs`` よりもサポートや機能が劣っています． three.jsでVTKのシーンを正確に再現したい場合には，"
-" :ref:`pythreejs_ref` をご覧ください．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:10
 msgid ""
@@ -1416,7 +1462,7 @@ msgid "Water visualization"
 msgstr "水の可視化"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:36
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:31
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:37
 msgid "PyVista Wrapping"
 msgstr "PyVistaラッピング"
 
@@ -1454,7 +1500,7 @@ msgstr ""
 "シーンにマップされることに注意してください．つまり，既存のコードを再利用して，使用するプロットバックエンドのタイプに応じてバックエンドを変更できます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:66
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:65
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:71
 msgid ""
 "Note that there are many missing features, including all vtk widgets, but "
 "many of these can be replaced with jupyterlab widgets.  If you wish to "
@@ -1478,7 +1524,7 @@ msgid "Examples: Large Models"
 msgstr "例: 大規模モデル"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:88
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:230
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:236
 msgid ""
 "This example shows a large mesh and demonstrates how even fairly large "
 "meshes, like the carburetor example which contains 500,000 faces and 250,000"
@@ -1521,7 +1567,7 @@ msgstr ""
 msgid "Using ``ipyvtklink`` with PyVista"
 msgstr "PyVistaで ``ipyvtklink`` を使う"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:6
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:11
 msgid ""
 "``pyvista`` has the ability to display fully featured plots within a "
 "JupyterLab environment using ``ipyvtklink``.  This feature works by "
@@ -1531,7 +1577,7 @@ msgstr ""
 "``pyvista`` には， ``ipyvtklink`` "
 "を使用して，JupyterLab環境内にフル機能のプロットを表示する機能があります．この機能は，現在のレンダリングウィンドウをJupyterLab内のキャンバスにストリーミングし，キャンバスからのユーザアクションをすべてVTKレンダリングウィンドウに戻すことで機能します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:12
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:17
 msgid ""
 "While this isn't an exciting feature when JupyterLab is being run locally, "
 "this has huge implications when plotting remotely as you can display any "
@@ -1539,43 +1585,47 @@ msgid ""
 msgstr ""
 "JupyterLabがローカルで実行されている場合，これはエキサイティングな機能ではありませんが，JupyterLabからサブプロットやウィジェットを含む任意のプロットを表示できるため，リモートでプロットする場合には大きな意味があります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:16
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:21
 msgid ""
 "For example, both sections of code will display an interactive canvas within"
 " JupyterLab:"
 msgstr "たとえば，コードの両方のセクションは，JupyterLab内に対話型キャンバスを表示します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:32
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:37
 msgid "For convenience, you can enable ``ipyvtklink`` by default with:"
 msgstr "便宜上， ``ipyvtklink`` をデフォルトで有効にするには，次のコマンドを使用します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:41
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:46
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:72
 msgid "Installation"
 msgstr "インストール"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:42
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:47
 msgid ""
 "If you're using an Anaconda environment, installation is the quite "
 "straightforward:"
 msgstr "Anaconda環境を使用している場合，インストールは非常に簡単です．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:53
 msgid "Where environment.yml is:"
 msgstr "ここで， environment.yml は次のとおりです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:62
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:67
 msgid "Using pip, you can set up your jupyterlab environment with:"
 msgstr "pipを使って，次のようにしてjupyterlab環境をセットアップすることができます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:71
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:76
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:127
 msgid "Other Considerations"
 msgstr "その他の考慮事項"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:72
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:77
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:128
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr "GPUアクセラレーションを使用する価値があるかもしれません． :ref:`gpu_off_screen` を参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:74
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:79
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
@@ -1583,7 +1633,8 @@ msgstr ""
 "GPUアクセラレーションを使用していない場合は，必ず ``Xvfb`` "
 "を使用して仮想フレームバッファを起動してください．bashを使用して起動するには，次のようにします．"
 
-#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:89
+#: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:93
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:144
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
@@ -1595,7 +1646,7 @@ msgstr ""
 msgid "Using ``Panel`` with PyVista"
 msgstr "PyVistaで ``Panel`` を使う"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:12
 msgid ""
 "PyVista supports the usage of the `panel "
 "<https://github.com/holoviz/panel>`_ module as a ``vtk.js`` jupyterlab "
@@ -1611,11 +1662,11 @@ msgstr ""
 "``jupyter_backend='panel'`` を ``plot`` または ``Plotter.show`` に渡すと，Juptyerと "
 "``panel`` を使用したプロットが自動的に有効になります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:13
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:20
 msgid "For example, here's the ``PyVista`` logo:"
 msgstr "例えば，以下は ``PyVista`` のロゴです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:20
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:27
 msgid ""
 "Note that this isn't a perfect replica since there are some details lost in "
 "the conversion to ``vtk.js``, but for the vast majority of cases, this can "
@@ -1625,11 +1676,11 @@ msgstr ""
 "への変換でいくつかの詳細が失われるので，完璧なレプリカではないことに注意してください．しかし，ほとんどの場合，これは，Jupyterlab内の "
 "``pyvista`` プロットを正確にレンダリングするために使用できます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:27
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:34
 msgid "Examples and Usage"
 msgstr "例と使用方法"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:28
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:35
 msgid ""
 "There are two ways to use ``panel`` within Jupyter notebooks.  It can be "
 "done on a plot by plot basis by setting the ``jupyter_backend`` in "
@@ -1638,15 +1689,15 @@ msgstr ""
 "Jupyterノートブックで ``panel`` を使用する方法は2つあります．これは， ``mesh.plot()`` で "
 "``jupyter_backend`` を設定することにより，プロット単位で実行できます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:48
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:55
 msgid "Alternatively, you can set the backend globally:"
 msgstr "または，バックエンドをグローバルに設定できます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:82
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:89
 msgid "Configuration Considerations"
 msgstr "構成に関する考慮事項"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:83
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:90
 msgid ""
 "If running on a headless environment (e.g. Google Colab, your own VM), be "
 "sure to start up a virtual framebuffer using ``Xvfb``.  You can either start"
@@ -1655,7 +1706,7 @@ msgstr ""
 "ヘッドレス環境(例: Google Colab，独自のVM)で実行している場合， ``Xvfb`` "
 "を使用して仮想フレームバッファを必ず起動してください．次のようにbashを使用して起動することもできます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:99
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:105
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Be "
 "sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
@@ -1663,7 +1714,7 @@ msgstr ""
 "または，組み込みの ``pyvista.start_xvfb()`` を使用して起動することもできます． ``xvfb`` と "
 "``libgl1-mesa-glx`` は必ず次のようにインストールしてください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/panel.rst:107
+#: ../../pyvista/doc/user-guide/jupyter/panel.rst:113
 msgid "Or using the package manager used by your environment."
 msgstr "または，ご使用の環境で使用されているパッケージマネージャを使用します．"
 
@@ -1671,7 +1722,7 @@ msgstr "または，ご使用の環境で使用されているパッケージマ
 msgid "Using ``pythreejs`` with PyVista"
 msgstr "PyVistaで ``pythreejs`` を使う"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:5
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:11
 msgid ""
 "The `pythreejs <https://github.com/jupyter-widgets/pythreejs>`_ jupyterlab "
 "plotting backend is a powerful library that enables web-based visualization "
@@ -1682,7 +1733,7 @@ msgstr ""
 "plotting backend は， `threejs <https://threejs.org/>`_ "
 "を利用してウェブベースの可視化を可能にする強力なライブラリです．また，（ここに示されているように）htmlドキュメントを埋め込むことができます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:10
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:16
 msgid ""
 "The biggest advantage to using the ``pythreejs`` backend compared to the "
 "other backends is that it accurately recreates the VTK scene into a "
@@ -1691,28 +1742,28 @@ msgstr ""
 "他のバックエンドと比較して ``pythreejs`` バックエンドを使用する最大の利点は，VTKのシーンを正確に ``threejs`` "
 "のシーンに再現してくれることです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:14
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:20
 msgid "Mesh edges"
 msgstr "メッシュエッジ"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:15
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:21
 msgid "Lighting"
 msgstr "照明"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:16
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:22
 msgid "Physically based rendering"
 msgstr "物理ベースのレンダリング"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:17
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:23
 msgid "Face and point scalars"
 msgstr "面と点のスカラー"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:18
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:177
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:24
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:183
 msgid "Textures"
 msgstr "質感"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:20
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:26
 msgid ""
 "You can use this backend to display PyVista scenes directly within a jupyter"
 " notebook, create interactive web documentation, or even export to "
@@ -1720,7 +1771,7 @@ msgid ""
 msgstr ""
 "このバックエンドを使用して，Jupyterノートブック内でPyVistaシーンを直接表示したり，インタラクティブなWebドキュメントを作成したり，スタンドアロンのHTMLページにエクスポートすることもできます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:25
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:31
 msgid ""
 "This backend has better support and features than the ``ipygany`` backend, "
 "but is still missing support for vtk widgets and some features (like scalar "
@@ -1729,7 +1780,7 @@ msgstr ""
 "このバックエンドは ``ipygany`` バックエンドよりも優れたサポートと機能を持っていますが，vtk ウィジェットのサポートやいくつかの機能 "
 "(スカラーバーやラベルなど) はまだありません． 詳しくは :ref:`pythreejs_caveats` をご覧ください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:32
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:38
 msgid ""
 "Plotting scenes from pyvista are automatically serialized to a three.js "
 "scene when using the ``pythreejs`` backend.  This can be enabled globally "
@@ -1740,7 +1791,7 @@ msgstr ""
 "これは :func:`pyvista.set_jupyter_backend` でグローバルに有効にすることも， "
 ":func:`pyvista.Plotter.show` で設定することもできます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:60
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:66
 msgid ""
 "Note how the mesh color, background color, and camera position are all "
 "mapped over to the ``three.js`` scene, meaning that you can reuse existing "
@@ -1750,7 +1801,7 @@ msgstr ""
 "メッシュカラー，バックグラウンドカラー，カメラ位置がすべて ``three.js`` "
 "シーンにマップされることに注意してください．つまり，既存のコードを再利用して，使用するプロットバックエンドのタイプに応じてバックエンドを変更できます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:80
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:86
 msgid ""
 "This renderer can then be added to any number of jupyterlab widgets and then"
 " shown as a complete widget.  For example, you could even display two side "
@@ -1759,39 +1810,39 @@ msgstr ""
 "このレンダラーは，いくつものjupyterlabウィジェットに追加して，完全なウィジェットとして表示することができます．例えば， "
 "``ipywidgets.AppLayout`` を使用して2つを並べて表示することもできます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:86
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:92
 msgid "Plotting Representation and Materials"
 msgstr "プロットの表現と素材"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:87
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:93
 msgid ""
 "The PyVista plotting scenes are faithfully serialized to same plotting scene"
 " within three.js using the same lighting, camera projection, and materials."
 msgstr "PyVistaの作図シーンは，three.jsの中で，同じ照明，カメラの投影，素材を使って，同じ作図シーンに忠実にシリアライズされます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:124
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:130
 msgid "Scalars Support"
 msgstr "スカラーサポート"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:125
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:131
 msgid ""
 "The ``pythreejs`` backend supports plotting scalars for faces and points for"
 " point, wireframe, and surface representations."
 msgstr ""
 "バックエンドの ``pythreejs`` は，面のスカラーや，点，ワイヤーフレーム，面の表現のためのポイントのプロットをサポートしています．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:165
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:171
 msgid "Point Cloud Example"
 msgstr "点群の例"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:166
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:172
 msgid ""
 "Plot a sample point cloud with pyvista using the ``pythreejs`` backend while"
 " assigning the points scalars random values."
 msgstr ""
 "pyvistaのバックエンドである ``pythreejs`` を用いて，点のスカラーにランダムな値を割り当てながら，サンプルの点群をプロットします．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:178
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:184
 msgid ""
 "The ``pythreejs`` backend also supports :attr:`textures "
 "<pyvista.DataSet.textures>`."
@@ -1799,17 +1850,17 @@ msgstr ""
 "また， ``pythreejs`` バックエンドでは， :attr:`textures <pyvista.DataSet.textures>` "
 "をサポートしています．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:186
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:192
 msgid ""
 "See the :ref:`ref_texture_example` example for more details regarding "
 "textures."
 msgstr "テクスチャに関する詳細は， :ref:`ref_texture_example` の例を参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:190
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:196
 msgid "RGB and RGBA Coloring"
 msgstr "RGBとRGBAのカラーリング"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:191
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:197
 msgid ""
 "The ``pythreejs`` supports RGBA plotting.  See the ``rgba`` parameter within"
 " :func:`add_mesh() <pyvista.Plotting.add_mesh>` for more details."
@@ -1817,34 +1868,34 @@ msgstr ""
 "``pythreejs`` は RGBA プロットをサポートしています． 詳細は :func:`add_mesh() "
 "<pyvista.Plotting.add_mesh>`  の ``rgba`` パラメータを参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:221
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:227
 msgid "Multiple Render Windows"
 msgstr "複数のレンダリングウィンドウ"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:222
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:228
 msgid ""
 "You can plot multiple render windows within a single ``pythreejs`` just like"
 " how you would with PyVista."
 msgstr "1つの ``pythreejs`` の中で，PyVista と同じように，複数のレンダリングウィンドウをプロットすることができます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:225
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:231
 msgid "See :ref:`assigning_scalars` for an example."
 msgstr "例として， :ref:`assigning_scalars` を参照してください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:229
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:235
 msgid "Large Models and Physically Based Rendering"
 msgstr "大規模モデルと物理ベースのレンダリング"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:235
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:241
 msgid ""
 "Note that here we enable physically based rendering using ``pbr=True``."
 msgstr "なお，ここでは ``pbr=True`` を使って物理ベースのレンダリングを有効にしています．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:255
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:261
 msgid "Create Interactive Documentation"
 msgstr "インタラクティブなドキュメントの作成"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:256
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:262
 msgid ""
 "All the documentation on this page was generated using a combination of "
 "``pythreejs``, ``pyvista`` and ``jupyter_sphinx``."
@@ -1852,51 +1903,51 @@ msgstr ""
 "このページに掲載されているすべてのドキュメントは， ``pythreejs``, ``pyvista``, ``jupyter_sphinx`` "
 "の組み合わせで作成されています．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:259
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:265
 msgid "For example, in a sample ``*.rst`` file, add the following::"
 msgstr "例えば，サンプルの ``*.rst`` ファイルでは，次のように追加します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:269
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:275
 msgid "To generate:"
 msgstr "生成するには"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:281
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:287
 msgid ""
 "You can also use the ``:hide-code:`` option to hide the code and only "
 "display the plot."
 msgstr "また， ``:hide-code:`` オプションを使うと，コードを隠してプロットだけを表示することができます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:284
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:290
 msgid ""
 "You should also consider changing the global theme when plotting to improve "
 "the look of your plots:"
 msgstr "また，プロット時にグローバルテーマを変更することで，プロットの見栄えを良くすることができます．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:293
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:299
 msgid "You will need the following packages:"
 msgstr "以下のパッケージが必要になります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:295
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:301
 msgid "``pyvista``"
 msgstr "``pyvista``"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:296
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:302
 msgid "``pythreejs``"
 msgstr "``pythreejs``"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:297
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:303
 msgid "``jupyter_sphinx``"
 msgstr "``jupyter_sphinx``"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:299
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:305
 msgid "In your ``conf.py``, add the following:"
 msgstr "``conf.py`` に, 次を追加します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:310
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:316
 msgid "Export to HTML"
 msgstr "HTMLへのエクスポート"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:311
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:317
 msgid ""
 "Using ``pythreejs``, you can export most scenes completely to a standalone "
 "HTML file.  For example:"
@@ -1904,11 +1955,11 @@ msgstr ""
 "``pythreejs`` を使うと，ほとんどのシーンを完全にスタンドアローンのHTMLファイルに書き出すことができます． "
 "例えば，以下のようになります．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:328
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:334
 msgid "Caveats"
 msgstr "注意点"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:330
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:336
 msgid ""
 "Not all PyVista features are currently supported with the ``pythreejs`` "
 "plotting backend. Future ones can be added opening a feature request at "
@@ -1918,19 +1969,19 @@ msgstr ""
 "プロットバックエンドでサポートされているわけではありません．将来の機能を追加するには， `PyVista Issues "
 "<https://github.com/pyvista/pyvista/issues>`_ にある機能リクエストを開いてください．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:335
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:341
 msgid "Missing features include:"
 msgstr "不足している機能は以下の通りです．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:337
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:343
 msgid "Scalar bars"
 msgstr "スカラーバー"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:338
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:344
 msgid "Physically based rendering textures (e.g. from gLTF files)."
 msgstr "物理ベースのレンダリングテクスチャー（例：gLTFファイルから）．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:339
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:345
 msgid ""
 "Plotting points as spheres or lines as tubes.  Use :func:`glyph() "
 "<pyvista.DataSet.glyph>` or :func:`tube() <pyvista.PolyData.tube>` to "
@@ -1939,13 +1990,168 @@ msgstr ""
 "点を球体として，線をチューブとしてプロットします． 最初にサーフェスに変換してからプロットするには， :func:`glyph() "
 "<pyvista.DataSet.glyph>` または :func:`tube() <pyvista.PolyData.tube>` を使用します．"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:342
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:348
 msgid "Point labels"
 msgstr "ポイントラベル"
 
-#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:343
+#: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:349
 msgid "2D text actors"
 msgstr "2Dテキストアクター"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:4
+msgid "Trame Jupyter backend for PyVista"
+msgstr "PyVista用Jupyterバックエンドをtrame化する"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:6
+msgid ""
+"PyVista has the ability to display fully featured plots within a Jupyter "
+"environment using `Trame <https://kitware.github.io/trame/index.html>`_. We "
+"provide mechanisms to pair PyVista and Trame so that PyVista plotters can be"
+" used in a web context with both server and client-side rendering."
+msgstr ""
+"PyVistaは、 `Trame <https://kitware.github.io/trame/index.html>`_ "
+"を使用して、Jupyter環境内で完全な機能を持つプロットを表示する機能を備えています。私たちは、PyVistaとTrameをペアリングするメカニズムを提供し、PyVistaプロッタを、サーバーサイドとクライアントサイドの両方のレンダリングでWebコンテキストで使用できるようにします。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:11
+msgid ""
+"The server-side rendering mode of the Trame backend works by streaming the "
+"current render window to a canvas within Jupyter and then passing any user "
+"actions from the canvas back to the VTK render window (this is done under "
+"the hood by the ``vtkRemoteView`` in ``trame-vtk``."
+msgstr ""
+"Trameバックエンドのサーバーサイドレンダリングモードは、現在のレンダーウィンドウをJupyter内のcanvasにストリーミングし、canvasからのユーザーアクションをVTKレンダーウィンドウに戻すことで動作します（これは、"
+" ``trame-vtk`` の ``vtkRemoteView`` がアンダーグラウンドで行います。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:16
+msgid ""
+"For example, both sections of code will display an interactive canvas within"
+" Jupyter:"
+msgstr "たとえば，コードの両方のセクションは，Jupyter内に対話型キャンバスを表示します．"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:32
+msgid "For convenience, you can enable ``trame`` by default with:"
+msgstr "便宜上， ``trame`` をデフォルトで有効にするには，次のコマンドを使用します．"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:41
+msgid "Trame Jupyter Modes"
+msgstr "Trame Jupyterのモード"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:43
+msgid ""
+"The PyVista Trame jupyter backend provides three modes of operation "
+"(technically as three separate backend choices):"
+msgstr "PyVista Trameのjupyterバックエンドは、3つの動作モード(厳密には3つの別々のバックエンドの選択肢として)を提供します。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:46
+msgid ""
+"``'trame'``: Uses a view that can switch between client- and server-"
+"rendering modes."
+msgstr "``'trame'``: クライアントとサーバーのレンダリングモードを切り替えることができるビューを使用します。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:47
+msgid "``'server'``: Uses a view that is purely server-rendering."
+msgstr "``'server'``: 純粋なサーバーレンダリングであるビューを使用します。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:48
+msgid ""
+"``'client'``: Uses a view that is purely client-rendering (generally safe "
+"without a virtual frame buffer)"
+msgstr "``'client'``: 純粋なクライアントレンダリングを行うビューを使用します (仮想フレームバッファがなくても一般的に安全です)"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:50
+msgid ""
+"You can choose your backend either by using :func:`set_jupyter_backend() "
+"<pyvista.set_jupyter_backend>` or passing ``jupyter_backend`` on the "
+":func:`show() <pyvista.Plotter.show>` call."
+msgstr ""
+"バックエンドは :func:`set_jupyter_backend() <pyvista.set_jupyter_backend>` を使用するか、 "
+":func:`show() <pyvista.Plotter.show>` のコールで ``jupyter_backend`` "
+"を渡すことによって選択することができます。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:74
+msgid "Using pip, you can set up your jupyter environment with:"
+msgstr "pipを使って，次のようにしてjupyter環境をセットアップすることができます．"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:82
+msgid "Jupyter-Server-Proxy"
+msgstr "Jupyter-Server-Proxy"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:84
+msgid ""
+"When using PyVista in Jupyter that is hosted remotely (docker, cloud "
+"JupyterHub, or otherwise), you will need to pair the Trame backend with "
+"``jupyter-server-proxy``."
+msgstr ""
+"リモートでホストされているJupyter (docker, cloud JupyterHub, "
+"若しくはその他)でPyVistaを使用する場合、Trameバックエンドと ``jupyter-server-proxy`` "
+"をペアリングする必要があります。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:87
+msgid ""
+"`Jupyter Server Proxy <https://jupyter-server-"
+"proxy.readthedocs.io/en/latest/>`_ lets you access the Trame server hosting "
+"the views of the PyVista plotters alongside your notebook, and provide "
+"authenticated web access to them directly through Jupyter."
+msgstr ""
+"`Jupyter Server Proxy <https://jupyter-server-"
+"proxy.readthedocs.io/en/latest/>`_ "
+"は、ノートブックと一緒にPyVistaプロッタのビューをホストするTrameサーバにアクセスし、Jupyterから直接認証されたウェブアクセスを提供することができます。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:93
+msgid ""
+"In a future version of `wslink <https://github.com/Kitware/wslink>`_ (the "
+"driving mechanism behind Trame's server), we plan to add support such that "
+"the server can communicate via the `Jupyter Comms <https://jupyter-"
+"notebook.readthedocs.io/en/stable/comms.html>`_ to avoid the need for a "
+"secondary web server and thus ``jupyter-server-proxy``."
+msgstr ""
+"将来のバージョンの `wslink <https://github.com/Kitware/wslink>`_ (Trameのサーバの駆動機構) "
+"では、サーバが `Jupyter Comms <https://jupyter-"
+"notebook.readthedocs.io/en/stable/comms.html>`_ "
+"を介して通信できるようなサポートを追加する予定です。これにより、2番目のウェブサーバ、つまり ``jupyter-server-proxy`` "
+"が不要になる予定です。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:99
+msgid ""
+"To configure PyVista and Trame to work with ``jupyter-server-proxy`` in a "
+"remote environment, you will need to set some options on the global PyVista "
+"theme:"
+msgstr ""
+"リモート環境で ``jupyter-server-proxy`` を使って動作するように PyVista と Trame を設定するには、PyVista"
+" のグローバルテーマでいくつかのオプションを設定する必要があります。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:102
+msgid ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_enabled`"
+msgstr ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_enabled`"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:103
+msgid ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_prefix`"
+msgstr ":py:attr:`pyvista.themes.DefualtTheme.server_proxy_prefix`"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:105
+msgid ""
+"The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
+"sufficient for most remote Jupyter environment and use within Docker."
+msgstr ""
+"``server_proxy_prefix`` のデフォルトは ``'/proxy/'`` "
+"で、ほとんどのリモートJupyter環境とDocker内での使用にはこれで十分でしょう。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:108
+msgid "This can also be set with an environment variable:"
+msgstr "これは、環境変数で設定することもできます:"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:115
+msgid "The prefix will need to be modified for JupyterHub deployments."
+msgstr "JupyterHubにデプロイする場合は、プレフィックスを修正する必要があります。"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:117
+msgid ""
+"On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
+"``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
+" This can be done however you like but in bash looks like:"
+msgstr ""
+"MyBinderでは、 ``JUPYTERHUB_SERVICE_PREFIX`` の文字列の前に ``'/proxy/'`` "
+"を付ける必要がある場合があります。これにより、プレフィックスにユーザIDが含まれるようになります。これは好きなようにできますが、bashでは以下のようになります:"
 
 #: ../../pyvista/doc/user-guide/optional_features.rst:2
 msgid "Optional Features"

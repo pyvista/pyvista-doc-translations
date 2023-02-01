@@ -2580,6 +2580,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Plot Atomic Orbitals">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_atomic-orbitals_thumb.png
+    :alt: Plot Atomic Orbitals
+
+  :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Plot Atomic Orbitals</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="A pyvista.DataSet, such as pyvista.PolyData, can be extended by users.  For example, if the use...">
 
 .. only:: html
