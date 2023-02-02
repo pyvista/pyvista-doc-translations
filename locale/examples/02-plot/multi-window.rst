@@ -181,7 +181,7 @@ rows and columns. A group is defined through a tuple ``(rows,cols)`` of row
 and column indices or slices. The group always spans from the smallest to the
 largest (row or column) id that is passed through the list or slice.
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-166
+.. GENERATED FROM PYTHON SOURCE LINES 101-164
 
 .. code-block:: default
 
@@ -211,15 +211,13 @@ largest (row or column) id that is passed through the list or slice.
     plotter.add_text("Group 1")
     plotter.add_mesh(pv.Cylinder(direction=[0, 1, 0], height=20))
     plotter.view_yz()
-    plotter.camera.Zoom(10)
-    plotter.camera_set = True
+    plotter.camera.zoom(10)
 
     plotter.subplot(2, 0)
     plotter.add_text("Group 2")
     plotter.add_mesh(pv.ParametricCatalanMinimal(), show_edges=False, color="tan")
     plotter.view_isometric()
-    plotter.camera.Zoom(2)
-    plotter.camera_set = True
+    plotter.camera.zoom(2)
 
     plotter.subplot(2, 1)
     plotter.add_text("Group 3")
@@ -265,7 +263,7 @@ largest (row or column) id that is passed through the list or slice.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.604 seconds)
+   **Total running time of the script:** ( 0 minutes  3.009 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:

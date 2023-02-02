@@ -23,32 +23,23 @@
 Turning the sphere inside out
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are several videos online talking about how a sphere can
-be turned inside out in a continuous fashion, for instance in
-`this YouTube video <https://www.youtube.com/watch?v=OI-To1eUtuU>`_.
-Thanks to |the paper| (also available
-`on arXiv <https://arxiv.org/abs/1711.10466>`_), we can plot this
-so-called eversion of a sphere (turning it inside out without
-pinching or tearing the surface, in other words by preserving its
-topology).
+There are several videos online talking about how a sphere can be turned inside
+out in a continuous fashion, for instance in `this YouTube video
+<https://www.youtube.com/watch?v=OI-To1eUtuU>`_.  Thanks to `an excellent paper
+by Adam Bednorz and Witold Bednorz, Differential and its Applications 64, 59
+(2019) <https://doi.org/10.1016/j.difgeo.2019.02.004>`_ (also available `on
+arXiv <https://arxiv.org/abs/1711.10466>`_), we can plot this so-called
+eversion of a sphere (turning it inside out without pinching or tearing the
+surface, in other words by preserving its topology).
 
-The mathematics involved can seem a bit, well, involved. What
-matters is the overall process visible in the animation: first
-the sphere is corrugated and stretched out a bit to allow some
-legroom for the smooth transformation, then the lobes are twisted
-around through each other, and the process is reversed in order
-to unfold the sphere. It's not obvious that the transformation
-is truly smooth; this was proved in the paper by Bednorz and
-Bednorz!
+The mathematics involved can seem a bit, well, involved. What matters is the
+overall process visible in the animation: first the sphere is corrugated and
+stretched out a bit to allow some legroom for the smooth transformation, then
+the lobes are twisted around through each other, and the process is reversed in
+order to unfold the sphere. It's not obvious that the transformation is truly
+smooth; this was proved in the paper by Bednorz and Bednorz!
 
-.. |the paper| raw:: html
-
-   <!-- this hack is necessary to have boldface in a hyperlink -->
-   <a href=https://doi.org/10.1016/j.difgeo.2019.02.004>an excellent
-   paper by Adam Bednorz and Witold Bednorz, Differential Geometry
-   and its Applications <b>64</b>, 59 (2019)</a>
-
-.. GENERATED FROM PYTHON SOURCE LINES 33-47
+.. GENERATED FROM PYTHON SOURCE LINES 24-38
 
 .. code-block:: default
 
@@ -73,11 +64,11 @@ Bednorz!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-50
+.. GENERATED FROM PYTHON SOURCE LINES 40-41
 
 Let's define the chain of mappings we'll need for implementing the eversion:
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-154
+.. GENERATED FROM PYTHON SOURCE LINES 41-145
 
 .. code-block:: default
 
@@ -192,7 +183,7 @@ Let's define the chain of mappings we'll need for implementing the eversion:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-163
+.. GENERATED FROM PYTHON SOURCE LINES 146-154
 
 Now chain the functions by performing the process in Table 1 of the paper.
 Start from the bottom for ``t = -1/Q``, keep stepping up, linearly changing
@@ -203,7 +194,7 @@ We make good use of the ``backface_params`` keyword parameter of
 :func:`pyvista.Plotter.add_mesh`, allowing us to plot the inside and the
 outside with different colors.
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-248
+.. GENERATED FROM PYTHON SOURCE LINES 154-239
 
 .. code-block:: default
 
@@ -304,13 +295,13 @@ outside with different colors.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 249-252
+.. GENERATED FROM PYTHON SOURCE LINES 240-243
 
 Looking at the still image of the middle state with ``t = 0``, we see a nice
 symmetric configuration where two "inside" and two "outside" lobes of the
 sphere are visible.
 
-.. GENERATED FROM PYTHON SOURCE LINES 252-263
+.. GENERATED FROM PYTHON SOURCE LINES 243-254
 
 .. code-block:: default
 
@@ -340,7 +331,7 @@ sphere are visible.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  37.078 seconds)
+   **Total running time of the script:** ( 0 minutes  28.293 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_sphere_eversion.py:
