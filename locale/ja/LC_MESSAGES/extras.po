@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-02 01:20+0000\n"
+"POT-Creation-Date: 2023-02-05 01:46+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -90,6 +90,9 @@ msgid ""
 "make the process of reproducibly building VTK wheel variants more "
 "straightforward."
 msgstr ""
+"また、便利な CMake 設定ファイルをいくつか公開しましたので、 `banesullivan/vtk-cmake "
+"<https://github.com/banesullivan/vtk-cmake>` "
+"から採用することができます。これらの設定は、ここで説明したビルドのバリエーションをカバーし、VTKホイールのバリエーションを再現性よくビルドするプロセスをより簡単にします。"
 
 #: ../../pyvista/doc/extras/building_vtk.rst:89
 msgid "Off-Screen Plotting GPU Support"
@@ -1074,10 +1077,8 @@ msgstr "以下でLinuxやMac OSでのドキュメントのビルド時間を改�
 #: ../../pyvista/CONTRIBUTING.rst:601
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
-"multi-core computers when ``FULL_DOC_BUILD=TRUE``"
+"multi-core computers."
 msgstr ""
-"これは効果的に ``SPHINXOPTS=-j`` を呼び出し，特に ``FULL_DOC_BUILD=TRUE`` "
-"のときにマルチコアコンピュータで有用である．"
 
 #: ../../pyvista/CONTRIBUTING.rst:607
 msgid "Contributing to the Documentation"
