@@ -249,7 +249,7 @@ Create a GIF Movie with updating textures
 +++++++++++++++++++++++++++++++++++++++++
 Generate a moving gif from an active plotter with updating textures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-149
+.. GENERATED FROM PYTHON SOURCE LINES 112-148
 
 .. code-block:: default
 
@@ -265,7 +265,6 @@ Generate a moving gif from an active plotter with updating textures.
     # Update Z and write a frame for each updated position
     nframe = 15
     for phase in np.linspace(0, 2 * np.pi, nframe + 1)[:nframe]:
-
         # create an image using numpy,
         z = np.sin(r + phase)
         pts[:, -1] = z.ravel()
@@ -302,7 +301,7 @@ Generate a moving gif from an active plotter with updating textures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-160
+.. GENERATED FROM PYTHON SOURCE LINES 149-159
 
 Textures with Transparency
 ++++++++++++++++++++++++++
@@ -315,7 +314,7 @@ contain a 4th channel specifying the opacity value from 0 [transparent] to
 
 Here we can download an image that has an alpha channel:
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-163
+.. GENERATED FROM PYTHON SOURCE LINES 159-162
 
 .. code-block:: default
 
@@ -328,8 +327,6 @@ Here we can download an image that has an alpha channel:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -337,7 +334,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-169
+.. GENERATED FROM PYTHON SOURCE LINES 163-168
 
 .. code-block:: default
 
@@ -358,7 +355,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 170-179
+.. GENERATED FROM PYTHON SOURCE LINES 169-178
 
 Repeating Textures
 ++++++++++++++++++
@@ -370,7 +367,7 @@ Here we create the texture coordinates to fill up the grid with several
 mappings of a single texture. In order to do this we must define texture
 coordinates outside of the typical ``(0, 1)`` range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-187
+.. GENERATED FROM PYTHON SOURCE LINES 178-186
 
 .. code-block:: default
 
@@ -389,7 +386,7 @@ coordinates outside of the typical ``(0, 1)`` range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-193
+.. GENERATED FROM PYTHON SOURCE LINES 187-192
 
 By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
@@ -397,7 +394,7 @@ produce 4 repetitions of the same texture on this mesh.
 Then we must associate those texture coordinates with the mesh through the
 :attr:`pyvista.DataSet.active_t_coords` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 193-196
+.. GENERATED FROM PYTHON SOURCE LINES 192-195
 
 .. code-block:: default
 
@@ -411,11 +408,11 @@ Then we must associate those texture coordinates with the mesh through the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 197-198
+.. GENERATED FROM PYTHON SOURCE LINES 196-197
 
 Now display all the puppies!
 
-.. GENERATED FROM PYTHON SOURCE LINES 198-204
+.. GENERATED FROM PYTHON SOURCE LINES 197-203
 
 .. code-block:: default
 
@@ -437,14 +434,14 @@ Now display all the puppies!
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 205-209
+.. GENERATED FROM PYTHON SOURCE LINES 204-208
 
 Spherical Texture Coordinates
 +++++++++++++++++++++++++++++
 We have a built in convienance method for mapping textures to spherical
 coordinate systems much like the planar mapping demoed above.
 
-.. GENERATED FROM PYTHON SOURCE LINES 209-216
+.. GENERATED FROM PYTHON SOURCE LINES 208-215
 
 .. code-block:: default
 
@@ -467,7 +464,7 @@ coordinate systems much like the planar mapping demoed above.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 217-224
+.. GENERATED FROM PYTHON SOURCE LINES 216-223
 
 The helper method above does not always produce the desired texture
 coordinates, so sometimes it must be done manually. Here is a great, user
@@ -477,7 +474,7 @@ Manually create the texture coordinates for a globe map. First, we create
 the mesh that will be used as the globe. Note the `start_theta` for a slight
 overlappig
 
-.. GENERATED FROM PYTHON SOURCE LINES 224-241
+.. GENERATED FROM PYTHON SOURCE LINES 223-240
 
 .. code-block:: default
 
@@ -513,28 +510,23 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.979 seconds)
+   **Total running time of the script:** ( 0 minutes  7.824 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: texture.py <texture.py>`
 
-     :download:`Download Python source code: texture.py <texture.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: texture.ipynb <texture.ipynb>`
+      :download:`Download Jupyter notebook: texture.ipynb <texture.ipynb>`
 
 
 .. only:: html

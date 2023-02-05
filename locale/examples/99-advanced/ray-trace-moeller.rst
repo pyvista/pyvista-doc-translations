@@ -141,11 +141,9 @@ First, define the ray triangle intersection method.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:475: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:507: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
       warnings.warn(
     Intersected True
     t: 1.0
@@ -159,13 +157,12 @@ First, define the ray triangle intersection method.
 
 Plot the problem setup and the intersection
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-147
+.. GENERATED FROM PYTHON SOURCE LINES 107-146
 
 .. code-block:: default
 
 
     if inter:
-
         # reconstruct intersection point in barycentric coordinates.  See
         # https://en.wikipedia.org/wiki/Barycentric_coordinate_system
         a, b, c = (1 - u - v), u, v
@@ -218,28 +215,23 @@ Plot the problem setup and the intersection
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.561 seconds)
+   **Total running time of the script:** ( 0 minutes  0.678 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace-moeller.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: ray-trace-moeller.py <ray-trace-moeller.py>`
 
-     :download:`Download Python source code: ray-trace-moeller.py <ray-trace-moeller.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: ray-trace-moeller.ipynb <ray-trace-moeller.ipynb>`
+      :download:`Download Jupyter notebook: ray-trace-moeller.ipynb <ray-trace-moeller.ipynb>`
 
 
 .. only:: html
