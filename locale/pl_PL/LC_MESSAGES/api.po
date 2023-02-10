@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-03 01:28+0000\n"
+"POT-Creation-Date: 2023-02-10 01:20+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bartlomiej Kwiatkowski <kfiatek1106@gmail.com>, 2021\n"
 "Language-Team: Polish (Poland) (https://www.transifex.com/tkoyama010/teams/112279/pl_PL/)\n"
@@ -3219,7 +3219,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:35
+#: pyvista.plotting.renderer.Renderer.set_scale:41
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -8269,7 +8269,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:31
+#: pyvista.plotting.renderer.Renderer.set_scale:37
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -10065,11 +10065,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:18
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:47
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -42136,7 +42136,7 @@ msgstr ""
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:2
-msgid "Scale all the datasets in the scene."
+msgid "Scale all the actors in the scene."
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
@@ -42822,7 +42822,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:32
+#: pyvista.plotting.renderer.Renderer.set_scale:38
 msgid ""
 "**reset_camera** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
@@ -49972,52 +49972,60 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:11
+#: pyvista.plotting.renderer.Renderer.set_scale:8
+msgid ""
+"Setting the scale on the renderer is a convenience method to individually "
+"scale each of the actors in the scene. If a scale was set on an actor "
+"previously, it will be reset to the scale of this Renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_scale:17
 msgid "**xscale** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 msgid ""
 "Scaling in the x direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:15
+#: pyvista.plotting.renderer.Renderer.set_scale:21
 msgid "**yscale** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 msgid ""
 "Scaling in the y direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:19
+#: pyvista.plotting.renderer.Renderer.set_scale:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBoy:14
 msgid "**zscale** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 msgid ""
 "Scaling in the z direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:22
+#: pyvista.plotting.renderer.Renderer.set_scale:28
 msgid "Resets camera so all actors can be seen.  Default ``True``."
 msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_scale.rst:3
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_scale.rst:3
 msgid ""
-"Set the scale in the z direction to be 5 times that of nominal.  Leave the "
+"Set the scale in the z direction to be 2 times that of nominal.  Leave the "
 "other axes unscaled."
 msgstr ""
 

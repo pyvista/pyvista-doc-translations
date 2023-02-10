@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-03 01:28+0000\n"
+"POT-Creation-Date: 2023-02-10 01:20+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -3219,7 +3219,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:35
+#: pyvista.plotting.renderer.Renderer.set_scale:41
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -8304,7 +8304,7 @@ msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:31
+#: pyvista.plotting.renderer.Renderer.set_scale:37
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -10149,11 +10149,11 @@ msgstr "**value** : :class:`python:float`, :obj:`optional`"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:18
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:47
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -44823,8 +44823,8 @@ msgstr ""
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:2
-msgid "Scale all the datasets in the scene."
-msgstr "シーン内のすべてのデータセットをスケールします．"
+msgid "Scale all the actors in the scene."
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
@@ -45578,7 +45578,7 @@ msgstr "追加されるアクタです。 ``vtkActor`` または ``vtkMapper`` �
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:32
+#: pyvista.plotting.renderer.Renderer.set_scale:38
 msgid ""
 "**reset_camera** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
@@ -53210,54 +53210,62 @@ msgid ""
 msgstr "のスケーリングは，X，Y，Z軸で個別に実行されます．0の尺度は不正で，1に置き換えられます．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:11
+#: pyvista.plotting.renderer.Renderer.set_scale:8
+msgid ""
+"Setting the scale on the renderer is a convenience method to individually "
+"scale each of the actors in the scene. If a scale was set on an actor "
+"previously, it will be reset to the scale of this Renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_scale:17
 msgid "**xscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**xscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 msgid ""
 "Scaling in the x direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "x方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:15
+#: pyvista.plotting.renderer.Renderer.set_scale:21
 msgid "**yscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**yscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 msgid ""
 "Scaling in the y direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "y方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:19
+#: pyvista.plotting.renderer.Renderer.set_scale:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBoy:14
 msgid "**zscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**zscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 msgid ""
 "Scaling in the z direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "z方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:22
+#: pyvista.plotting.renderer.Renderer.set_scale:28
 msgid "Resets camera so all actors can be seen.  Default ``True``."
 msgstr "すべてのアクターが見えるようにカメラをリセットします．デフォルトは ``True`` です．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_scale.rst:3
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_scale.rst:3
 msgid ""
-"Set the scale in the z direction to be 5 times that of nominal.  Leave the "
+"Set the scale in the z direction to be 2 times that of nominal.  Leave the "
 "other axes unscaled."
-msgstr "z方向のスケールを表示上の5倍に設定します． 他の軸はスケールしないままにしておきます．"
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_viewup.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_viewup.rst:2
