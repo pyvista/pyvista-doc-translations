@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-03 01:28+0000\n"
+"POT-Creation-Date: 2023-02-10 01:20+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -3219,7 +3219,7 @@ msgstr "カメラを装着するレンダラ．"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:35
+#: pyvista.plotting.renderer.Renderer.set_scale:41
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -4111,7 +4111,7 @@ msgstr ":py:obj:`Camera.is_set <pyvista.Camera.is_set>`\\"
 #: pyvista.Camera.is_set:2 ../../pyvista/pyvista/plotting/renderer.pydocstring
 #: of pyvista.Renderer.camera_set:2
 msgid "Get or set whether this camera has been configured."
-msgstr ""
+msgstr "このカメラが設定されているかどうかを取得または設定します。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
 msgid ""
@@ -8304,7 +8304,7 @@ msgstr "**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_position:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:31
+#: pyvista.plotting.renderer.Renderer.set_scale:37
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_viewup:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -10149,11 +10149,11 @@ msgstr "**value** : :class:`python:float`, :obj:`optional`"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_depth_peeling:18
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:47
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -41013,7 +41013,7 @@ msgstr ""
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:2
 msgid "Load the hydrogen wave function for a :class:`pyvista.UniformGrid`."
-msgstr ""
+msgstr "水素の波動関数を :class:`pyvista.UniformGrid` にロードします。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.examples.rst:33:<autosummary>:1
 msgid ":py:obj:`load_nut <pyvista.examples.examples.load_nut>`\\ \\(\\)"
@@ -41208,7 +41208,7 @@ msgstr "load\\_hydrogen\\_orbital"
 msgid ""
 "This is the solution to the Schrödinger equation for hydrogen evaluated in "
 "three-dimensional Cartesian space."
-msgstr ""
+msgstr "水素のSchrödinger方程式の解を3次元直交空間で評価したものです。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:7
@@ -41246,7 +41246,7 @@ msgstr "python:int, default: 1"
 msgid ""
 "Principal quantum number. Must be a positive integer. This is often referred"
 " to as the \"energy level\" or \"shell\"."
-msgstr ""
+msgstr "主量子数。正の整数でなければなりません。 \"エネルギー準位\" または \"シェル\" と呼ばれることが多いです。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:19
@@ -41260,6 +41260,7 @@ msgid ""
 "than ``n``. By convention this value is represented by the letters s, p, d, "
 "f, etc."
 msgstr ""
+"方位角量子数 ``n`` よりも厳密に小さい非負の整数である必要があります．慣習的に、この値は s, p, d, f などの文字で表されます。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:24
@@ -41271,7 +41272,7 @@ msgstr "**m** : :class:`python:int`, default: 0"
 msgid ""
 "Magnetic quantum number. Must be an integer ranging from ``-l`` to ``l`` "
 "(inclusive). This is the orientation of the angular momentum in space."
-msgstr ""
+msgstr "磁気量子数。 ``-l`` から ``l`` までの整数である必要があります（この値を含む）。これは空間における角運動量の向きを表す。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:28
@@ -41283,39 +41284,39 @@ msgstr "**zoom_fac** : :class:`python:float`, default: 1.0"
 msgid ""
 "Zoom factor for the electron cloud. Increase this value to focus on the "
 "center of the electron cloud."
-msgstr ""
+msgstr "電子雲のズームファクター。この値を大きくすると、電子雲の中心部に焦点を合わせることができます。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:33
 msgid "UniformGrid containing two ``point_data`` arrays:"
-msgstr ""
+msgstr "2 つの ``point_data`` 配列を含む、UniformGrid。"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:35
 msgid "``'real_wf'`` - Real part of the wave function."
-msgstr ""
+msgstr "``'real_wf'`` - 波動関数の実数部．"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:36
 msgid "``'wf'`` - Complex wave function."
-msgstr ""
+msgstr "``'wf'`` - 複素数波動関数．"
 
 #: ../../pyvista/pyvista/examples/examples.pydocstring of
 #: pyvista.examples.examples.load_hydrogen_orbital:47
 msgid "This example requires `sympy <https://www.sympy.org/>`_."
-msgstr ""
+msgstr "この例では、 `sympy <https://www.sympy.org/>`_ が必要です。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.examples.load_hydrogen_orbital.rst:3
 msgid ""
 "Plot the 3dxy orbital of a hydrogen atom. This corresponds to the quantum "
 "numbers ``n=3``, ``l=2``, and ``m=-2``."
-msgstr ""
+msgstr "水素原子の3dxy軌道をプロットします。これは量子数 ``n=3``, ``l=2``, ``m=-2`` に相当します。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.examples.load_hydrogen_orbital.rst:24
 msgid ""
 "See :ref:`plot_atomic_orbitals_example` for additional examples using this "
 "function."
-msgstr ""
+msgstr "この関数を使用したその他の例については、 :ref:`plot_atomic_orbitals_example` を参照してください。"
 
 #: ../../pyvista/doc/api/examples/_autosummary/pyvista.examples.examples.load_nut.rst:2
 msgid "load\\_nut"
@@ -43058,7 +43059,7 @@ msgstr "pyvista.BasePlotter"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:2
 msgid "Base plotting class."
-msgstr ""
+msgstr "基本プロットクラスです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:4
@@ -43066,6 +43067,7 @@ msgid ""
 "To be used by the :class:`pyvista.Plotter` and "
 ":class:`pyvistaqt.QtInteractor` classes."
 msgstr ""
+"クラス :class:`pyvista.Plotter` と :class:`pyvistaqt.QtInteractor` で使用されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:16
@@ -43084,6 +43086,8 @@ msgid ""
 "default there is only one renderer. Can also accept a string descriptor as "
 "shape. For example:"
 msgstr ""
+"メインウィンドウ内のサブレンダリングウィンドウの数． ``shape=(2, 1)`` で2 acrossを， ``shape=(2, 2)`` で2 "
+"x 2 グリッドを指定します．デフォルトでは，レンダラは1つだけです．文字列記述子をshapeとして受け入れることもできます．例:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:15
@@ -43102,17 +43106,17 @@ msgstr "``shape=\"4/2\"`` は，上に4プロット，下に2プロットを意�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:27
 msgid "**border_color** : :obj:`ColorLike`, default: 'k'"
-msgstr ""
+msgstr "**border_color** : :obj:`ColorLike`, default: 'k'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:26
 msgid "ColorLike, default: 'k'"
-msgstr ""
+msgstr "ColorLike, default: 'k'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:30
 msgid "**border_width** : :class:`python:float`, default: 2.0"
-msgstr ""
+msgstr "**border_width** : :class:`python:float`, default: 2.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:29
@@ -43124,22 +43128,22 @@ msgstr "python:float, default: 2.0"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:33
 msgid "Window title."
-msgstr ""
+msgstr "ウィンドウのタイトル。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:36
 msgid "**splitting_position** : :class:`python:float`, :obj:`optional`"
-msgstr ""
+msgstr "**splitting_position** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:36
 msgid "The splitting position of the renderers."
-msgstr ""
+msgstr "レンダラーの分割位置。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:39
 msgid "**groups** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**groups** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:32
@@ -43163,42 +43167,42 @@ msgstr "python:tuple, optional"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:39
 msgid "Grouping for renderers."
-msgstr ""
+msgstr "レンダラー用のグループ化。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:42
 msgid "**row_weights** : :class:`python:tuple`"
-msgstr ""
+msgstr "**row_weights** : :class:`python:tuple`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:42
 msgid "Row weights for renderers."
-msgstr ""
+msgstr "レンダラー用の行幅。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:45
 msgid "**col_weights** : :class:`python:tuple`, :obj:`optional`"
-msgstr ""
+msgstr "**col_weights** : :class:`python:tuple`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:45
 msgid "Column weights for renderers."
-msgstr ""
+msgstr "レンダラー用の列幅。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:52
 msgid "**lighting** : :class:`python:str`, default: 'light kit'"
-msgstr ""
+msgstr "**lighting** : :class:`python:str`, default: 'light kit'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:51
 msgid "python:str, default: 'light kit'"
-msgstr ""
+msgstr "python:str, default: 'light kit'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:48
 msgid "What lighting to set up for the plotter.  Accepted options:"
-msgstr ""
+msgstr "プロッタに設定する照明．使用可能なオプション:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:50
@@ -43241,18 +43245,20 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter:62
 msgid "Additional keyword arguments."
-msgstr ""
+msgstr "追加のキーワード引数．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:3
 msgid ""
 "Simple plotter example showing a blurred cube with a gradient background."
-msgstr ""
+msgstr "グラデーションの背景を持つ、ぼやけた立方体を示すシンプルなプロッタの例です。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.add_actor <pyvista.BasePlotter.add_actor>`\\ "
 "\\(actor\\[\\, reset\\_camera\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_actor <pyvista.BasePlotter.add_actor>`\\ "
+"\\(actor\\[\\, reset\\_camera\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43266,6 +43272,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_arrows <pyvista.BasePlotter.add_arrows>`\\ "
 "\\(cent\\, direction\\[\\, mag\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_arrows <pyvista.BasePlotter.add_arrows>`\\ "
+"\\(cent\\, direction\\[\\, mag\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43278,6 +43286,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_axes <pyvista.BasePlotter.add_axes>`\\ "
 "\\(\\[interactive\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_axes <pyvista.BasePlotter.add_axes>`\\ "
+"\\(\\[interactive\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43291,6 +43301,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_axes_at_origin "
 "<pyvista.BasePlotter.add_axes_at_origin>`\\ \\(\\[x\\_color\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_axes_at_origin "
+"<pyvista.BasePlotter.add_axes_at_origin>`\\ \\(\\[x\\_color\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43304,6 +43316,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_background_image "
 "<pyvista.BasePlotter.add_background_image>`\\ \\(image\\_path\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_background_image "
+"<pyvista.BasePlotter.add_background_image>`\\ \\(image\\_path\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43316,6 +43330,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_blurring <pyvista.BasePlotter.add_blurring>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_blurring <pyvista.BasePlotter.add_blurring>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43329,6 +43345,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_bounding_box "
 "<pyvista.BasePlotter.add_bounding_box>`\\ \\(\\[color\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_bounding_box "
+"<pyvista.BasePlotter.add_bounding_box>`\\ \\(\\[color\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43342,6 +43360,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_chart <pyvista.BasePlotter.add_chart>`\\ "
 "\\(chart\\, \\*charts\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_chart <pyvista.BasePlotter.add_chart>`\\ "
+"\\(chart\\, \\*charts\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43355,18 +43375,22 @@ msgid ""
 ":py:obj:`BasePlotter.add_composite <pyvista.BasePlotter.add_composite>`\\ "
 "\\(dataset\\[\\, color\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_composite <pyvista.BasePlotter.add_composite>`\\ "
+"\\(dataset\\[\\, color\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:2
 msgid "Add a composite dataset to the plotter."
-msgstr ""
+msgstr "プロッターにコンポジットデータセットを追加します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.add_floor <pyvista.BasePlotter.add_floor>`\\ "
 "\\(\\[face\\, i\\_resolution\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_floor <pyvista.BasePlotter.add_floor>`\\ "
+"\\(\\[face\\, i\\_resolution\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43380,6 +43404,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_key_event <pyvista.BasePlotter.add_key_event>`\\ "
 "\\(key\\, callback\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_key_event <pyvista.BasePlotter.add_key_event>`\\ "
+"\\(key\\, callback\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43392,6 +43418,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_legend <pyvista.BasePlotter.add_legend>`\\ "
 "\\(\\[labels\\, bcolor\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_legend <pyvista.BasePlotter.add_legend>`\\ "
+"\\(\\[labels\\, bcolor\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43405,6 +43433,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_legend_scale "
 "<pyvista.BasePlotter.add_legend_scale>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_legend_scale "
+"<pyvista.BasePlotter.add_legend_scale>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43418,6 +43448,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_light <pyvista.BasePlotter.add_light>`\\ "
 "\\(light\\[\\, only\\_active\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_light <pyvista.BasePlotter.add_light>`\\ "
+"\\(light\\[\\, only\\_active\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43430,6 +43462,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_lines <pyvista.BasePlotter.add_lines>`\\ "
 "\\(lines\\[\\, color\\, width\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_lines <pyvista.BasePlotter.add_lines>`\\ "
+"\\(lines\\[\\, color\\, width\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43442,6 +43476,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_mesh <pyvista.BasePlotter.add_mesh>`\\ "
 "\\(mesh\\[\\, color\\, style\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_mesh <pyvista.BasePlotter.add_mesh>`\\ "
+"\\(mesh\\[\\, color\\, style\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43455,18 +43491,22 @@ msgid ""
 ":py:obj:`BasePlotter.add_on_render_callback "
 "<pyvista.BasePlotter.add_on_render_callback>`\\ \\(callback\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_on_render_callback "
+"<pyvista.BasePlotter.add_on_render_callback>`\\ \\(callback\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_on_render_callback:2
 msgid "Add a method to be called post-render."
-msgstr ""
+msgstr "ポストレンダリングで呼び出されるメソッドを追加します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.add_orientation_widget "
 "<pyvista.BasePlotter.add_orientation_widget>`\\ \\(actor\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_orientation_widget "
+"<pyvista.BasePlotter.add_orientation_widget>`\\ \\(actor\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43480,6 +43520,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_point_labels "
 "<pyvista.BasePlotter.add_point_labels>`\\ \\(points\\, labels\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_point_labels "
+"<pyvista.BasePlotter.add_point_labels>`\\ \\(points\\, labels\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43493,6 +43535,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_point_scalar_labels "
 "<pyvista.BasePlotter.add_point_scalar_labels>`\\ \\(points\\, ...\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_point_scalar_labels "
+"<pyvista.BasePlotter.add_point_scalar_labels>`\\ \\(points\\, ...\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43505,6 +43549,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_points <pyvista.BasePlotter.add_points>`\\ "
 "\\(points\\[\\, style\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_points <pyvista.BasePlotter.add_points>`\\ "
+"\\(points\\[\\, style\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43517,6 +43563,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_ruler <pyvista.BasePlotter.add_ruler>`\\ "
 "\\(pointa\\, pointb\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_ruler <pyvista.BasePlotter.add_ruler>`\\ "
+"\\(pointa\\, pointb\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43530,6 +43578,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ "
 "\\(\\[title\\, mapper\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_scalar_bar <pyvista.BasePlotter.add_scalar_bar>`\\ "
+"\\(\\[title\\, mapper\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
@@ -43542,6 +43592,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_silhouette <pyvista.BasePlotter.add_silhouette>`\\ "
 "\\(mesh\\[\\, color\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_silhouette <pyvista.BasePlotter.add_silhouette>`\\ "
+"\\(mesh\\[\\, color\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43554,6 +43606,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_text <pyvista.BasePlotter.add_text>`\\ "
 "\\(text\\[\\, position\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_text <pyvista.BasePlotter.add_text>`\\ "
+"\\(text\\[\\, position\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43566,6 +43620,8 @@ msgid ""
 ":py:obj:`BasePlotter.add_volume <pyvista.BasePlotter.add_volume>`\\ "
 "\\(volume\\[\\, scalars\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.add_volume <pyvista.BasePlotter.add_volume>`\\ "
+"\\(volume\\[\\, scalars\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43575,7 +43631,7 @@ msgstr "ボリュームを追加し，デフォルトではスマートマッパ
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.clear <pyvista.BasePlotter.clear>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.clear <pyvista.BasePlotter.clear>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43588,18 +43644,22 @@ msgid ""
 ":py:obj:`BasePlotter.clear_actors <pyvista.BasePlotter.clear_actors>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.clear_actors <pyvista.BasePlotter.clear_actors>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear_actors:2
 msgid "Clear actors from all renderers."
-msgstr ""
+msgstr "すべてのレンダラーからアクターを消去します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.clear_events_for_key "
 "<pyvista.BasePlotter.clear_events_for_key>`\\ \\(key\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.clear_events_for_key "
+"<pyvista.BasePlotter.clear_events_for_key>`\\ \\(key\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43612,16 +43672,18 @@ msgid ""
 ":py:obj:`BasePlotter.clear_on_render_callbacks "
 "<pyvista.BasePlotter.clear_on_render_callbacks>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.clear_on_render_callbacks "
+"<pyvista.BasePlotter.clear_on_render_callbacks>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.clear_on_render_callbacks:2
 msgid "Clear all callback methods previously registered with ``render()``."
-msgstr ""
+msgstr "以前に ``render()`` で登録したすべてのコールバックメソッドをクリアします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.close <pyvista.BasePlotter.close>`\\ \\(\\[render\\]\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.close <pyvista.BasePlotter.close>`\\ \\(\\[render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43631,7 +43693,7 @@ msgstr "レンダーウィンドウを閉じます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.deep_clean <pyvista.BasePlotter.deep_clean>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.deep_clean <pyvista.BasePlotter.deep_clean>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43641,7 +43703,7 @@ msgstr "メモリのプロッタをクリーニングします．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.disable <pyvista.BasePlotter.disable>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.disable <pyvista.BasePlotter.disable>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43655,6 +43717,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_3_lights "
 "<pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_3_lights "
+"<pyvista.BasePlotter.disable_3_lights>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43667,6 +43731,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_anti_aliasing "
 "<pyvista.BasePlotter.disable_anti_aliasing>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_anti_aliasing "
+"<pyvista.BasePlotter.disable_anti_aliasing>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43679,6 +43745,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_depth_of_field "
 "<pyvista.BasePlotter.disable_depth_of_field>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_depth_of_field "
+"<pyvista.BasePlotter.disable_depth_of_field>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43692,6 +43760,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_depth_peeling "
 "<pyvista.BasePlotter.disable_depth_peeling>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_depth_peeling "
+"<pyvista.BasePlotter.disable_depth_peeling>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43705,6 +43775,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_eye_dome_lighting "
 "<pyvista.BasePlotter.disable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_eye_dome_lighting "
+"<pyvista.BasePlotter.disable_eye_dome_lighting>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43718,6 +43790,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_hidden_line_removal "
 "<pyvista.BasePlotter.disable_hidden_line_removal>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_hidden_line_removal "
+"<pyvista.BasePlotter.disable_hidden_line_removal>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43733,6 +43807,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_parallel_projection "
 "<pyvista.BasePlotter.disable_parallel_projection>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_parallel_projection "
+"<pyvista.BasePlotter.disable_parallel_projection>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43746,6 +43822,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_shadows "
 "<pyvista.BasePlotter.disable_shadows>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_shadows "
+"<pyvista.BasePlotter.disable_shadows>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43759,6 +43837,8 @@ msgid ""
 ":py:obj:`BasePlotter.disable_ssao <pyvista.BasePlotter.disable_ssao>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_ssao <pyvista.BasePlotter.disable_ssao>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43772,16 +43852,18 @@ msgid ""
 ":py:obj:`BasePlotter.disable_stereo_render "
 "<pyvista.BasePlotter.disable_stereo_render>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.disable_stereo_render "
+"<pyvista.BasePlotter.disable_stereo_render>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.disable_stereo_render:2
 msgid "Disable anaglyph stereo rendering."
-msgstr ""
+msgstr "アナグリフステレオレンダリングを無効にします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.enable <pyvista.BasePlotter.enable>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43795,6 +43877,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_3_lights "
 "<pyvista.BasePlotter.enable_3_lights>`\\ \\(\\[only\\_active\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_3_lights "
+"<pyvista.BasePlotter.enable_3_lights>`\\ \\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43807,6 +43891,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_anti_aliasing "
 "<pyvista.BasePlotter.enable_anti_aliasing>`\\ \\(\\[aa\\_type\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_anti_aliasing "
+"<pyvista.BasePlotter.enable_anti_aliasing>`\\ \\(\\[aa\\_type\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43822,6 +43908,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_depth_of_field "
 "<pyvista.BasePlotter.enable_depth_of_field>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_depth_of_field "
+"<pyvista.BasePlotter.enable_depth_of_field>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43835,6 +43923,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_depth_peeling "
 "<pyvista.BasePlotter.enable_depth_peeling>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_depth_peeling "
+"<pyvista.BasePlotter.enable_depth_peeling>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43848,6 +43938,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_eye_dome_lighting "
 "<pyvista.BasePlotter.enable_eye_dome_lighting>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_eye_dome_lighting "
+"<pyvista.BasePlotter.enable_eye_dome_lighting>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43861,6 +43953,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_hidden_line_removal "
 "<pyvista.BasePlotter.enable_hidden_line_removal>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_hidden_line_removal "
+"<pyvista.BasePlotter.enable_hidden_line_removal>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43878,6 +43972,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_image_style "
 "<pyvista.BasePlotter.enable_image_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_image_style "
+"<pyvista.BasePlotter.enable_image_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43890,6 +43986,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_joystick_actor_style "
 "<pyvista.BasePlotter.enable_joystick_actor_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_joystick_actor_style "
+"<pyvista.BasePlotter.enable_joystick_actor_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43902,6 +44000,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_joystick_style "
 "<pyvista.BasePlotter.enable_joystick_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_joystick_style "
+"<pyvista.BasePlotter.enable_joystick_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43914,6 +44014,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_lightkit "
 "<pyvista.BasePlotter.enable_lightkit>`\\ \\(\\[only\\_active\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_lightkit "
+"<pyvista.BasePlotter.enable_lightkit>`\\ \\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -43926,12 +44028,16 @@ msgid ""
 ":py:obj:`BasePlotter.enable_parallel_projection "
 "<pyvista.BasePlotter.enable_parallel_projection>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_parallel_projection "
+"<pyvista.BasePlotter.enable_parallel_projection>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.enable_rubber_band_2d_style "
 "<pyvista.BasePlotter.enable_rubber_band_2d_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_rubber_band_2d_style "
+"<pyvista.BasePlotter.enable_rubber_band_2d_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43944,6 +44050,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_rubber_band_style "
 "<pyvista.BasePlotter.enable_rubber_band_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_rubber_band_style "
+"<pyvista.BasePlotter.enable_rubber_band_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -43956,6 +44064,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_shadows <pyvista.BasePlotter.enable_shadows>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43969,6 +44079,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_ssao <pyvista.BasePlotter.enable_ssao>`\\ "
 "\\(\\[radius\\, bias\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_ssao <pyvista.BasePlotter.enable_ssao>`\\ "
+"\\(\\[radius\\, bias\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -43982,18 +44094,22 @@ msgid ""
 ":py:obj:`BasePlotter.enable_stereo_render "
 "<pyvista.BasePlotter.enable_stereo_render>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_stereo_render "
+"<pyvista.BasePlotter.enable_stereo_render>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_stereo_render:2
 msgid "Enable anaglyph stereo rendering."
-msgstr ""
+msgstr "アナグリフステレオレンダリングを有効にします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.enable_terrain_style "
 "<pyvista.BasePlotter.enable_terrain_style>`\\ \\(\\[...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_terrain_style "
+"<pyvista.BasePlotter.enable_terrain_style>`\\ \\(\\[...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44006,6 +44122,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_trackball_actor_style "
 "<pyvista.BasePlotter.enable_trackball_actor_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_trackball_actor_style "
+"<pyvista.BasePlotter.enable_trackball_actor_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44018,6 +44136,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_trackball_style "
 "<pyvista.BasePlotter.enable_trackball_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_trackball_style "
+"<pyvista.BasePlotter.enable_trackball_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44030,6 +44150,8 @@ msgid ""
 ":py:obj:`BasePlotter.enable_zoom_style "
 "<pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.enable_zoom_style "
+"<pyvista.BasePlotter.enable_zoom_style>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44042,6 +44164,8 @@ msgid ""
 ":py:obj:`BasePlotter.export_gltf <pyvista.BasePlotter.export_gltf>`\\ "
 "\\(filename\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.export_gltf <pyvista.BasePlotter.export_gltf>`\\ "
+"\\(filename\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44054,6 +44178,8 @@ msgid ""
 ":py:obj:`BasePlotter.export_html <pyvista.BasePlotter.export_html>`\\ "
 "\\(filename\\[\\, backend\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.export_html <pyvista.BasePlotter.export_html>`\\ "
+"\\(filename\\[\\, backend\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44066,6 +44192,8 @@ msgid ""
 ":py:obj:`BasePlotter.export_obj <pyvista.BasePlotter.export_obj>`\\ "
 "\\(filename\\)"
 msgstr ""
+":py:obj:`BasePlotter.export_obj <pyvista.BasePlotter.export_obj>`\\ "
+"\\(filename\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44078,6 +44206,8 @@ msgid ""
 ":py:obj:`BasePlotter.export_vrml <pyvista.BasePlotter.export_vrml>`\\ "
 "\\(filename\\)"
 msgstr ""
+":py:obj:`BasePlotter.export_vrml <pyvista.BasePlotter.export_vrml>`\\ "
+"\\(filename\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44090,6 +44220,8 @@ msgid ""
 ":py:obj:`BasePlotter.export_vtkjs <pyvista.BasePlotter.export_vtkjs>`\\ "
 "\\(filename\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.export_vtkjs <pyvista.BasePlotter.export_vtkjs>`\\ "
+"\\(filename\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44099,7 +44231,7 @@ msgstr "現在のレンダリングシーンをVTKjsシーンとして書き出�
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.fly_to <pyvista.BasePlotter.fly_to>`\\ \\(point\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.fly_to <pyvista.BasePlotter.fly_to>`\\ \\(point\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44112,6 +44244,8 @@ msgid ""
 ":py:obj:`BasePlotter.generate_orbital_path "
 "<pyvista.BasePlotter.generate_orbital_path>`\\ \\(\\[factor\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.generate_orbital_path "
+"<pyvista.BasePlotter.generate_orbital_path>`\\ \\(\\[factor\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44124,6 +44258,8 @@ msgid ""
 ":py:obj:`BasePlotter.get_default_cam_pos "
 "<pyvista.BasePlotter.get_default_cam_pos>`\\ \\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.get_default_cam_pos "
+"<pyvista.BasePlotter.get_default_cam_pos>`\\ \\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44137,6 +44273,8 @@ msgid ""
 ":py:obj:`BasePlotter.get_image_depth "
 "<pyvista.BasePlotter.get_image_depth>`\\ \\(\\[fill\\_value\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.get_image_depth "
+"<pyvista.BasePlotter.get_image_depth>`\\ \\(\\[fill\\_value\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
@@ -44149,7 +44287,7 @@ msgstr "現在のレンダーウィンドウを表すDepth画像を取得しま�
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.hide_axes <pyvista.BasePlotter.hide_axes>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.hide_axes <pyvista.BasePlotter.hide_axes>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44163,6 +44301,8 @@ msgid ""
 ":py:obj:`BasePlotter.hide_axes_all <pyvista.BasePlotter.hide_axes_all>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.hide_axes_all <pyvista.BasePlotter.hide_axes_all>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44175,18 +44315,22 @@ msgid ""
 ":py:obj:`BasePlotter.image_scale_context "
 "<pyvista.BasePlotter.image_scale_context>`\\ \\(\\[scale\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.image_scale_context "
+"<pyvista.BasePlotter.image_scale_context>`\\ \\(\\[scale\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.image_scale_context:2
 msgid "Set the image scale in an isolated context."
-msgstr ""
+msgstr "孤立したコンテキストで画像のスケールを設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.import_gltf <pyvista.BasePlotter.import_gltf>`\\ "
 "\\(filename\\[\\, set\\_camera\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.import_gltf <pyvista.BasePlotter.import_gltf>`\\ "
+"\\(filename\\[\\, set\\_camera\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44199,6 +44343,8 @@ msgid ""
 ":py:obj:`BasePlotter.import_vrml <pyvista.BasePlotter.import_vrml>`\\ "
 "\\(filename\\)"
 msgstr ""
+":py:obj:`BasePlotter.import_vrml <pyvista.BasePlotter.import_vrml>`\\ "
+"\\(filename\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44211,6 +44357,8 @@ msgid ""
 ":py:obj:`BasePlotter.increment_point_size_and_line_width "
 "<pyvista.BasePlotter.increment_point_size_and_line_width>`\\ \\(...\\)"
 msgstr ""
+":py:obj:`BasePlotter.increment_point_size_and_line_width "
+"<pyvista.BasePlotter.increment_point_size_and_line_width>`\\ \\(...\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44223,6 +44371,8 @@ msgid ""
 ":py:obj:`BasePlotter.isometric_view <pyvista.BasePlotter.isometric_view>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.isometric_view <pyvista.BasePlotter.isometric_view>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44238,6 +44388,8 @@ msgid ""
 ":py:obj:`BasePlotter.isometric_view_interactive "
 "<pyvista.BasePlotter.isometric_view_interactive>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.isometric_view_interactive "
+"<pyvista.BasePlotter.isometric_view_interactive>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44250,6 +44402,8 @@ msgid ""
 ":py:obj:`BasePlotter.key_press_event "
 "<pyvista.BasePlotter.key_press_event>`\\ \\(obj\\, event\\)"
 msgstr ""
+":py:obj:`BasePlotter.key_press_event "
+"<pyvista.BasePlotter.key_press_event>`\\ \\(obj\\, event\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44262,6 +44416,8 @@ msgid ""
 ":py:obj:`BasePlotter.left_button_down "
 "<pyvista.BasePlotter.left_button_down>`\\ \\(obj\\, event\\_type\\)"
 msgstr ""
+":py:obj:`BasePlotter.left_button_down "
+"<pyvista.BasePlotter.left_button_down>`\\ \\(obj\\, event\\_type\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44274,6 +44430,8 @@ msgid ""
 ":py:obj:`BasePlotter.link_views <pyvista.BasePlotter.link_views>`\\ "
 "\\(\\[views\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.link_views <pyvista.BasePlotter.link_views>`\\ "
+"\\(\\[views\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44286,6 +44444,8 @@ msgid ""
 ":py:obj:`BasePlotter.open_gif <pyvista.BasePlotter.open_gif>`\\ "
 "\\(filename\\[\\, loop\\, fps\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.open_gif <pyvista.BasePlotter.open_gif>`\\ "
+"\\(filename\\[\\, loop\\, fps\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44298,6 +44458,8 @@ msgid ""
 ":py:obj:`BasePlotter.open_movie <pyvista.BasePlotter.open_movie>`\\ "
 "\\(filename\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.open_movie <pyvista.BasePlotter.open_movie>`\\ "
+"\\(filename\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44310,6 +44472,8 @@ msgid ""
 ":py:obj:`BasePlotter.orbit_on_path <pyvista.BasePlotter.orbit_on_path>`\\ "
 "\\(\\[path\\, focus\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.orbit_on_path <pyvista.BasePlotter.orbit_on_path>`\\ "
+"\\(\\[path\\, focus\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44322,6 +44486,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_actor <pyvista.BasePlotter.remove_actor>`\\ "
 "\\(actor\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_actor <pyvista.BasePlotter.remove_actor>`\\ "
+"\\(actor\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44335,6 +44501,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_all_lights "
 "<pyvista.BasePlotter.remove_all_lights>`\\ \\(\\[only\\_active\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_all_lights "
+"<pyvista.BasePlotter.remove_all_lights>`\\ \\(\\[only\\_active\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44347,6 +44515,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_background_image "
 "<pyvista.BasePlotter.remove_background_image>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_background_image "
+"<pyvista.BasePlotter.remove_background_image>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
@@ -44359,6 +44529,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_blurring "
 "<pyvista.BasePlotter.remove_blurring>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_blurring "
+"<pyvista.BasePlotter.remove_blurring>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44372,6 +44544,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_bounding_box "
 "<pyvista.BasePlotter.remove_bounding_box>`\\ \\(\\[render\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_bounding_box "
+"<pyvista.BasePlotter.remove_bounding_box>`\\ \\(\\[render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44385,6 +44559,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_bounds_axes "
 "<pyvista.BasePlotter.remove_bounds_axes>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_bounds_axes "
+"<pyvista.BasePlotter.remove_bounds_axes>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44398,6 +44574,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_chart <pyvista.BasePlotter.remove_chart>`\\ "
 "\\(chart\\_or\\_index\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_chart <pyvista.BasePlotter.remove_chart>`\\ "
+"\\(chart\\_or\\_index\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44411,6 +44589,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_environment_texture "
 "<pyvista.BasePlotter.remove_environment_texture>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_environment_texture "
+"<pyvista.BasePlotter.remove_environment_texture>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44424,6 +44604,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_floors <pyvista.BasePlotter.remove_floors>`\\ "
 "\\(\\[clear\\_kwargs\\, render\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_floors <pyvista.BasePlotter.remove_floors>`\\ "
+"\\(\\[clear\\_kwargs\\, render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44437,6 +44619,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_legend <pyvista.BasePlotter.remove_legend>`\\ "
 "\\(\\[render\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_legend <pyvista.BasePlotter.remove_legend>`\\ "
+"\\(\\[render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44450,6 +44634,8 @@ msgid ""
 ":py:obj:`BasePlotter.remove_scalar_bar "
 "<pyvista.BasePlotter.remove_scalar_bar>`\\ \\(\\[title\\, render\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.remove_scalar_bar "
+"<pyvista.BasePlotter.remove_scalar_bar>`\\ \\(\\[title\\, render\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
@@ -44459,7 +44645,7 @@ msgstr "スカラーバーを削除します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.render <pyvista.BasePlotter.render>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.render <pyvista.BasePlotter.render>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44472,6 +44658,8 @@ msgid ""
 ":py:obj:`BasePlotter.reset_camera <pyvista.BasePlotter.reset_camera>`\\ "
 "\\(\\[render\\, bounds\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.reset_camera <pyvista.BasePlotter.reset_camera>`\\ "
+"\\(\\[render\\, bounds\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44485,6 +44673,8 @@ msgid ""
 ":py:obj:`BasePlotter.reset_camera_clipping_range "
 "<pyvista.BasePlotter.reset_camera_clipping_range>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.reset_camera_clipping_range "
+"<pyvista.BasePlotter.reset_camera_clipping_range>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44497,6 +44687,8 @@ msgid ""
 ":py:obj:`BasePlotter.reset_key_events "
 "<pyvista.BasePlotter.reset_key_events>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.reset_key_events "
+"<pyvista.BasePlotter.reset_key_events>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44509,6 +44701,8 @@ msgid ""
 ":py:obj:`BasePlotter.save_graphic <pyvista.BasePlotter.save_graphic>`\\ "
 "\\(filename\\[\\, title\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.save_graphic <pyvista.BasePlotter.save_graphic>`\\ "
+"\\(filename\\[\\, title\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44521,6 +44715,8 @@ msgid ""
 ":py:obj:`BasePlotter.screenshot <pyvista.BasePlotter.screenshot>`\\ "
 "\\(\\[filename\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.screenshot <pyvista.BasePlotter.screenshot>`\\ "
+"\\(\\[filename\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44533,6 +44729,8 @@ msgid ""
 ":py:obj:`BasePlotter.set_background <pyvista.BasePlotter.set_background>`\\ "
 "\\(color\\[\\, top\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_background <pyvista.BasePlotter.set_background>`\\ "
+"\\(color\\[\\, top\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
@@ -44545,30 +44743,36 @@ msgid ""
 ":py:obj:`BasePlotter.set_chart_interaction "
 "<pyvista.BasePlotter.set_chart_interaction>`\\ \\(interactive\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_chart_interaction "
+"<pyvista.BasePlotter.set_chart_interaction>`\\ \\(interactive\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:2
 msgid "Set or toggle interaction with charts for the active renderer."
-msgstr ""
+msgstr "アクティブなレンダラーのチャートとのインタラクションを設定またはトグルします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.set_color_cycler "
 "<pyvista.BasePlotter.set_color_cycler>`\\ \\(color\\_cycler\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_color_cycler "
+"<pyvista.BasePlotter.set_color_cycler>`\\ \\(color\\_cycler\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_color_cycler:2
 msgid "Set or reset the color cycler."
-msgstr ""
+msgstr "カラーサイクラーを設定またはリセットします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.set_environment_texture "
 "<pyvista.BasePlotter.set_environment_texture>`\\ \\(texture\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_environment_texture "
+"<pyvista.BasePlotter.set_environment_texture>`\\ \\(texture\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44582,6 +44786,8 @@ msgid ""
 ":py:obj:`BasePlotter.set_focus <pyvista.BasePlotter.set_focus>`\\ "
 "\\(point\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_focus <pyvista.BasePlotter.set_focus>`\\ "
+"\\(point\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44595,6 +44801,8 @@ msgid ""
 ":py:obj:`BasePlotter.set_position <pyvista.BasePlotter.set_position>`\\ "
 "\\(point\\[\\, reset\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_position <pyvista.BasePlotter.set_position>`\\ "
+"\\(point\\[\\, reset\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44608,19 +44816,23 @@ msgid ""
 ":py:obj:`BasePlotter.set_scale <pyvista.BasePlotter.set_scale>`\\ "
 "\\(\\[xscale\\, yscale\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_scale <pyvista.BasePlotter.set_scale>`\\ "
+"\\(\\[xscale\\, yscale\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:2
-msgid "Scale all the datasets in the scene."
-msgstr "シーン内のすべてのデータセットをスケールします．"
+msgid "Scale all the actors in the scene."
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.set_viewup <pyvista.BasePlotter.set_viewup>`\\ "
 "\\(vector\\[\\, reset\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.set_viewup <pyvista.BasePlotter.set_viewup>`\\ "
+"\\(vector\\[\\, reset\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44631,7 +44843,7 @@ msgstr "カメラのビューアップベクトルを設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.show_axes <pyvista.BasePlotter.show_axes>`\\ \\(\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.show_axes <pyvista.BasePlotter.show_axes>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44645,6 +44857,8 @@ msgid ""
 ":py:obj:`BasePlotter.show_axes_all <pyvista.BasePlotter.show_axes_all>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.show_axes_all <pyvista.BasePlotter.show_axes_all>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44657,6 +44871,8 @@ msgid ""
 ":py:obj:`BasePlotter.show_bounds <pyvista.BasePlotter.show_bounds>`\\ "
 "\\(\\[mesh\\, bounds\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.show_bounds <pyvista.BasePlotter.show_bounds>`\\ "
+"\\(\\[mesh\\, bounds\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44670,6 +44886,8 @@ msgid ""
 ":py:obj:`BasePlotter.show_grid <pyvista.BasePlotter.show_grid>`\\ "
 "\\(\\*\\*kwargs\\)"
 msgstr ""
+":py:obj:`BasePlotter.show_grid <pyvista.BasePlotter.show_grid>`\\ "
+"\\(\\*\\*kwargs\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44683,6 +44901,8 @@ msgid ""
 ":py:obj:`BasePlotter.store_click_position "
 "<pyvista.BasePlotter.store_click_position>`\\ \\(\\*args\\)"
 msgstr ""
+":py:obj:`BasePlotter.store_click_position "
+"<pyvista.BasePlotter.store_click_position>`\\ \\(\\*args\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44695,6 +44915,8 @@ msgid ""
 ":py:obj:`BasePlotter.store_mouse_position "
 "<pyvista.BasePlotter.store_mouse_position>`\\ \\(\\*args\\)"
 msgstr ""
+":py:obj:`BasePlotter.store_mouse_position "
+"<pyvista.BasePlotter.store_mouse_position>`\\ \\(\\*args\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44707,6 +44929,8 @@ msgid ""
 ":py:obj:`BasePlotter.subplot <pyvista.BasePlotter.subplot>`\\ "
 "\\(index\\_row\\[\\, index\\_column\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.subplot <pyvista.BasePlotter.subplot>`\\ "
+"\\(index\\_row\\[\\, index\\_column\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44719,6 +44943,8 @@ msgid ""
 ":py:obj:`BasePlotter.to_pythreejs <pyvista.BasePlotter.to_pythreejs>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.to_pythreejs <pyvista.BasePlotter.to_pythreejs>`\\ "
+"\\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44731,6 +44957,8 @@ msgid ""
 ":py:obj:`BasePlotter.track_click_position "
 "<pyvista.BasePlotter.track_click_position>`\\ \\(\\[callback\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.track_click_position "
+"<pyvista.BasePlotter.track_click_position>`\\ \\(\\[callback\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44743,6 +44971,8 @@ msgid ""
 ":py:obj:`BasePlotter.track_mouse_position "
 "<pyvista.BasePlotter.track_mouse_position>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.track_mouse_position "
+"<pyvista.BasePlotter.track_mouse_position>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44755,6 +44985,8 @@ msgid ""
 ":py:obj:`BasePlotter.unlink_views <pyvista.BasePlotter.unlink_views>`\\ "
 "\\(\\[views\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.unlink_views <pyvista.BasePlotter.unlink_views>`\\ "
+"\\(\\[views\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44767,6 +44999,8 @@ msgid ""
 ":py:obj:`BasePlotter.untrack_click_position "
 "<pyvista.BasePlotter.untrack_click_position>`\\ \\(\\[side\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.untrack_click_position "
+"<pyvista.BasePlotter.untrack_click_position>`\\ \\(\\[side\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -44779,6 +45013,8 @@ msgid ""
 ":py:obj:`BasePlotter.untrack_mouse_position "
 "<pyvista.BasePlotter.untrack_mouse_position>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.untrack_mouse_position "
+"<pyvista.BasePlotter.untrack_mouse_position>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44791,6 +45027,8 @@ msgid ""
 ":py:obj:`BasePlotter.update <pyvista.BasePlotter.update>`\\ \\(\\[stime\\, "
 "force\\_redraw\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.update <pyvista.BasePlotter.update>`\\ \\(\\[stime\\, "
+"force\\_redraw\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44803,6 +45041,8 @@ msgid ""
 ":py:obj:`BasePlotter.update_bounds_axes "
 "<pyvista.BasePlotter.update_bounds_axes>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.update_bounds_axes "
+"<pyvista.BasePlotter.update_bounds_axes>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44816,6 +45056,8 @@ msgid ""
 ":py:obj:`BasePlotter.update_coordinates "
 "<pyvista.BasePlotter.update_coordinates>`\\ \\(points\\[\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.update_coordinates "
+"<pyvista.BasePlotter.update_coordinates>`\\ \\(points\\[\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44828,6 +45070,8 @@ msgid ""
 ":py:obj:`BasePlotter.update_scalar_bar_range "
 "<pyvista.BasePlotter.update_scalar_bar_range>`\\ \\(clim\\[\\, name\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.update_scalar_bar_range "
+"<pyvista.BasePlotter.update_scalar_bar_range>`\\ \\(clim\\[\\, name\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44840,6 +45084,8 @@ msgid ""
 ":py:obj:`BasePlotter.update_scalars <pyvista.BasePlotter.update_scalars>`\\ "
 "\\(scalars\\[\\, mesh\\, ...\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.update_scalars <pyvista.BasePlotter.update_scalars>`\\ "
+"\\(scalars\\[\\, mesh\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44852,12 +45098,16 @@ msgid ""
 ":py:obj:`BasePlotter.view_isometric <pyvista.BasePlotter.view_isometric>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_isometric <pyvista.BasePlotter.view_isometric>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.view_vector <pyvista.BasePlotter.view_vector>`\\ "
 "\\(vector\\[\\, viewup\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_vector <pyvista.BasePlotter.view_vector>`\\ "
+"\\(vector\\[\\, viewup\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44871,6 +45121,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_xy <pyvista.BasePlotter.view_xy>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_xy <pyvista.BasePlotter.view_xy>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44884,6 +45136,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_xz <pyvista.BasePlotter.view_xz>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_xz <pyvista.BasePlotter.view_xz>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44897,6 +45151,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_yx <pyvista.BasePlotter.view_yx>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_yx <pyvista.BasePlotter.view_yx>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44910,6 +45166,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_yz <pyvista.BasePlotter.view_yz>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_yz <pyvista.BasePlotter.view_yz>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44923,6 +45181,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_zx <pyvista.BasePlotter.view_zx>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_zx <pyvista.BasePlotter.view_zx>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44936,6 +45196,8 @@ msgid ""
 ":py:obj:`BasePlotter.view_zy <pyvista.BasePlotter.view_zy>`\\ "
 "\\(\\[negative\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.view_zy <pyvista.BasePlotter.view_zy>`\\ "
+"\\(\\[negative\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
@@ -44946,7 +45208,7 @@ msgstr "ZY平面を表示します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.where_is <pyvista.BasePlotter.where_is>`\\ \\(name\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44959,16 +45221,19 @@ msgid ""
 ":py:obj:`BasePlotter.window_size_context "
 "<pyvista.BasePlotter.window_size_context>`\\ \\(\\[window\\_size\\]\\)"
 msgstr ""
+":py:obj:`BasePlotter.window_size_context "
+"<pyvista.BasePlotter.window_size_context>`\\ \\(\\[window\\_size\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.window_size_context:2
 msgid "Set the render window size in an isolated context."
-msgstr ""
+msgstr "孤立したコンテキストでレンダーウィンドウのサイズを設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ":py:obj:`BasePlotter.write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
 msgstr ""
+":py:obj:`BasePlotter.write_frame <pyvista.BasePlotter.write_frame>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -44978,19 +45243,21 @@ msgstr "動画ファイルに1つのフレームを書き込みます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.actors <pyvista.BasePlotter.actors>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.actors <pyvista.BasePlotter.actors>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.actors:2
 msgid "Return the actors of the active renderer."
-msgstr ""
+msgstr "アクティブなレンダラーのアクターを取得します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.background_color "
 "<pyvista.BasePlotter.background_color>`\\"
 msgstr ""
+":py:obj:`BasePlotter.background_color "
+"<pyvista.BasePlotter.background_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45000,7 +45267,7 @@ msgstr "アクティブなレンダーウィンドウのバックグラウンド
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.bounds <pyvista.BasePlotter.bounds>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.bounds <pyvista.BasePlotter.bounds>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45010,7 +45277,7 @@ msgstr "アクティブなレンダラーの境界を取得します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.camera <pyvista.BasePlotter.camera>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.camera <pyvista.BasePlotter.camera>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45023,6 +45290,8 @@ msgid ""
 ":py:obj:`BasePlotter.camera_position "
 "<pyvista.BasePlotter.camera_position>`\\"
 msgstr ""
+":py:obj:`BasePlotter.camera_position "
+"<pyvista.BasePlotter.camera_position>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45032,7 +45301,7 @@ msgstr "アクティブなレンダウィンドウのカメラ位置を取得し
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.camera_set <pyvista.BasePlotter.camera_set>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.camera_set <pyvista.BasePlotter.camera_set>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45042,7 +45311,7 @@ msgstr "アクティブなレンダラーのカメラが設定されている場
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.center <pyvista.BasePlotter.center>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.center <pyvista.BasePlotter.center>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45054,10 +45323,11 @@ msgstr "アクティブなレンダラーの中心を取得します．"
 msgid ""
 ":py:obj:`BasePlotter.click_position <pyvista.BasePlotter.click_position>`\\"
 msgstr ""
+":py:obj:`BasePlotter.click_position <pyvista.BasePlotter.click_position>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.image <pyvista.BasePlotter.image>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.image <pyvista.BasePlotter.image>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45067,21 +45337,21 @@ msgstr "現在のレンダーウィンドウのイメージ配列を取得しま
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.image_depth <pyvista.BasePlotter.image_depth>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.image_depth <pyvista.BasePlotter.image_depth>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.image_scale <pyvista.BasePlotter.image_scale>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.image_scale <pyvista.BasePlotter.image_scale>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.image_scale:2
 msgid "Get or set the scale factor when saving a screenshot."
-msgstr ""
+msgstr "スクリーンショットを保存する際のスケールファクターを取得または設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.legend <pyvista.BasePlotter.legend>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.legend <pyvista.BasePlotter.legend>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -45094,7 +45364,7 @@ msgstr "凡例アクター．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.length <pyvista.BasePlotter.length>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.length <pyvista.BasePlotter.length>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -45109,12 +45379,15 @@ msgstr "シーンのバウンディングボックスの対角線の長さを取
 msgid ""
 ":py:obj:`BasePlotter.mouse_position <pyvista.BasePlotter.mouse_position>`\\"
 msgstr ""
+":py:obj:`BasePlotter.mouse_position <pyvista.BasePlotter.mouse_position>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ""
 ":py:obj:`BasePlotter.parallel_projection "
 "<pyvista.BasePlotter.parallel_projection>`\\"
 msgstr ""
+":py:obj:`BasePlotter.parallel_projection "
+"<pyvista.BasePlotter.parallel_projection>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -45129,6 +45402,7 @@ msgstr "アクティブなレンダーウィンドウの平行投影状態を取
 msgid ""
 ":py:obj:`BasePlotter.parallel_scale <pyvista.BasePlotter.parallel_scale>`\\"
 msgstr ""
+":py:obj:`BasePlotter.parallel_scale <pyvista.BasePlotter.parallel_scale>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -45144,6 +45418,8 @@ msgid ""
 ":py:obj:`BasePlotter.pickable_actors "
 "<pyvista.BasePlotter.pickable_actors>`\\"
 msgstr ""
+":py:obj:`BasePlotter.pickable_actors "
+"<pyvista.BasePlotter.pickable_actors>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45155,16 +45431,17 @@ msgstr "選択可能なアクターを返す，または設定します．"
 msgid ""
 ":py:obj:`BasePlotter.render_window <pyvista.BasePlotter.render_window>`\\"
 msgstr ""
+":py:obj:`BasePlotter.render_window <pyvista.BasePlotter.render_window>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.render_window:2
 msgid "Access the vtkRenderWindow."
-msgstr ""
+msgstr "vtkRenderWindowにアクセスします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.renderer <pyvista.BasePlotter.renderer>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.renderer <pyvista.BasePlotter.renderer>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45174,7 +45451,7 @@ msgstr "アクティブなレンダラーを取得します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.scalar_bar <pyvista.BasePlotter.scalar_bar>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.scalar_bar <pyvista.BasePlotter.scalar_bar>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid "First scalar bar."
@@ -45182,7 +45459,7 @@ msgstr "最初のスカラーバー．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.scalar_bars <pyvista.BasePlotter.scalar_bars>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45192,7 +45469,7 @@ msgstr "スカラーバー．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.scale <pyvista.BasePlotter.scale>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.scale <pyvista.BasePlotter.scale>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45202,7 +45479,7 @@ msgstr "アクティブなレンダラーのスケーリングを取得します
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.shape <pyvista.BasePlotter.shape>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.shape <pyvista.BasePlotter.shape>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45212,7 +45489,7 @@ msgstr "プロッタの形状．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.store_image <pyvista.BasePlotter.store_image>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.store_image <pyvista.BasePlotter.store_image>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45225,16 +45502,18 @@ msgid ""
 ":py:obj:`BasePlotter.suppress_rendering "
 "<pyvista.BasePlotter.suppress_rendering>`\\"
 msgstr ""
+":py:obj:`BasePlotter.suppress_rendering "
+"<pyvista.BasePlotter.suppress_rendering>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.suppress_rendering:2
 msgid "Get or set whether to suppress render calls."
-msgstr ""
+msgstr "レンダリング呼び出しを抑制するかどうかを取得または設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.theme <pyvista.BasePlotter.theme>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.theme <pyvista.BasePlotter.theme>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45244,7 +45523,7 @@ msgstr "このプロッタで使用するテーマを返すか設定します．
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 msgid ":py:obj:`BasePlotter.window_size <pyvista.BasePlotter.window_size>`\\"
-msgstr ""
+msgstr ":py:obj:`BasePlotter.window_size <pyvista.BasePlotter.window_size>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:984:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
@@ -45299,7 +45578,7 @@ msgstr "追加されるアクタです。 ``vtkActor`` または ``vtkMapper`` �
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_actor:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:32
+#: pyvista.plotting.renderer.Renderer.set_scale:38
 msgid ""
 "**reset_camera** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
@@ -45481,12 +45760,12 @@ msgstr "方向ベクトルをスケールする量．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:17
 msgid "See :func:`pyvista.Plotter.add_mesh` for optional keyword arguments."
-msgstr ""
+msgstr "オプションのキーワード引数については， :func:`pyvista.Plotter.add_mesh` を参照してください．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_arrows:23
 msgid "Actor of the arrows."
-msgstr ""
+msgstr "矢印のアクター。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_arrows.rst:3
 msgid "Plot a random field of vectors and save a screenshot of it."
@@ -46055,14 +46334,14 @@ msgstr "add\\_chart"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:8
 msgid "**chart** : :obj:`Chart`"
-msgstr ""
+msgstr "**chart** : :obj:`Chart`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:7
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:20
 msgid "Chart"
-msgstr ""
+msgstr "チャート"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:8
@@ -46072,7 +46351,7 @@ msgstr "レンダラに追加するチャート．"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:21
 msgid "**\\*charts** : :obj:`Chart`"
-msgstr ""
+msgstr "**\\*charts** : :obj:`Chart`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_chart:11
@@ -46081,7 +46360,7 @@ msgstr "レンダラに追加するチャート．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_composite.rst:2
 msgid "add\\_composite"
-msgstr ""
+msgstr "add\\_composite"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes:19
@@ -46095,7 +46374,7 @@ msgstr "**dataset** : :obj:`pyvista.MultiBlock`"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:8
 msgid "A :class:`pyvista.MultiBlock` dataset."
-msgstr ""
+msgstr ":class:`pyvista.MultiBlock` データセットです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:17
@@ -46103,11 +46382,13 @@ msgid ""
 "**color** : :obj:`ColorLike`, default: "
 ":attr:`pyvista.themes.DefaultTheme.color`"
 msgstr ""
+"**color** : :obj:`ColorLike`, default: "
+":attr:`pyvista.themes.DefaultTheme.color`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:16
 msgid "ColorLike, default: pyvista.themes.DefaultTheme.color"
-msgstr ""
+msgstr "ColorLike, default: pyvista.themes.DefaultTheme.color"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:11
@@ -46119,16 +46400,20 @@ msgid ""
 "individually, you will need to iteratively call ``add_mesh`` for each sub-"
 "dataset."
 msgstr ""
+"メッシュ全体を単一のソリッドカラーにします．文字列，RGBリスト，または16進カラー文字列．例: ``color='white'`` ， "
+"``color='w'`` ， ``color=[1.0, 1.0, 1.0]`` ， ``color='#FFFFFF'`` "
+"．スカラーが指定されている場合，色は上書きされます．合成データセットの各要素を個別に着色するには、各サブデータセットに対して ``add_mesh`` "
+"を繰り返し呼び出す必要があります。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:23
 msgid "**style** : :class:`python:str`, default: 'wireframe'"
-msgstr ""
+msgstr "**style** : :class:`python:str`, default: 'wireframe'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:22
 msgid "python:str, default: 'wireframe'"
-msgstr ""
+msgstr "python:str, default: 'wireframe'"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:30
@@ -46148,7 +46433,7 @@ msgstr ""
 msgid ""
 "Scalars used to \"color\" the points or cells of the dataset. Accepts only a"
 " string name of an array that is present on the composite dataset."
-msgstr ""
+msgstr "データセットのポイントやセルに \"色をつける\" ために使用するスカラー。コンポジットデータセットに存在する配列の文字列名のみを受け付けます。"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:115
@@ -46193,11 +46478,13 @@ msgid ""
 "**show_edges** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":attr:`pyvista.global_theme.show_edges`"
 msgstr ""
+"**show_edges** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":attr:`pyvista.global_theme.show_edges`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:36
 msgid "bool, default: pyvista.global_theme.show_edges"
-msgstr ""
+msgstr "bool, default: pyvista.global_theme.show_edges"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:36
@@ -46213,11 +46500,13 @@ msgid ""
 "**edge_color** : :obj:`ColorLike`, default: "
 ":attr:`pyvista.global_theme.edge_color`"
 msgstr ""
+"**edge_color** : :obj:`ColorLike`, default: "
+":attr:`pyvista.global_theme.edge_color`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:43
 msgid "ColorLike, default: pyvista.global_theme.edge_color"
-msgstr ""
+msgstr "ColorLike, default: pyvista.global_theme.edge_color"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.edge_color:4
@@ -46238,16 +46527,18 @@ msgid ""
 "Defaults to :attr:`pyvista.global_theme.edge_color` "
 "<pyvista.themes.DefaultTheme.edge_color>`."
 msgstr ""
+"デフォルトは :attr:`pyvista.global_theme.edge_color` "
+"<pyvista.themes.DefaultTheme.edge_color>` です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:48
 msgid "**point_size** : :class:`python:float`, default: 5.0"
-msgstr ""
+msgstr "**point_size** : :class:`python:float`, default: 5.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:47
 msgid "python:float, default: 5.0"
-msgstr ""
+msgstr "python:float, default: 5.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:47
@@ -46255,6 +46546,7 @@ msgid ""
 "Point size of any points in the dataset plotted. Also applicable when "
 "style='points'. Default ``5.0``."
 msgstr ""
+"プロットされたデータセット内の任意のポイントのポイントサイズ． style='points' の場合にも適用できます．デフォルト ``5.0`` ．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:88
@@ -46267,7 +46559,7 @@ msgstr "線の太さ．ワイヤフレーム表示とサーフェス表示にの
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:57
 msgid "**opacity** : :class:`python:float`, default: 1.0"
-msgstr ""
+msgstr "**opacity** : :class:`python:float`, default: 1.0"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:50
@@ -46314,6 +46606,8 @@ msgid ""
 "**lighting** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
 msgstr ""
+"**lighting** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:85
@@ -46347,7 +46641,7 @@ msgstr "python:int, default: 256"
 msgid ""
 "Number of colors to use when displaying scalars.  The scalar bar will also "
 "have this many colors."
-msgstr ""
+msgstr "スカラーを表示するときに使用するカラーの数．スカラーバーにもこの数の色があります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:73
@@ -46355,6 +46649,8 @@ msgid ""
 "**interpolate_before_map** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:True`"
 msgstr ""
+"**interpolate_before_map** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:True`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:71
@@ -46377,6 +46673,9 @@ msgid ""
 ":obj:`pyvista.LookupTable`, default: "
 ":attr:`pyvista.themes.DefaultTheme.cmap`"
 msgstr ""
+"**cmap** : :class:`python:str`, :class:`python:list`, :obj:`or` "
+":obj:`pyvista.LookupTable`, default: "
+":attr:`pyvista.themes.DefaultTheme.cmap`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:88
@@ -46388,6 +46687,8 @@ msgid ""
 "python:str, python:list, or pyvista.LookupTable, default: "
 "pyvista.themes.DefaultTheme.cmap"
 msgstr ""
+"python:str, python:list, or pyvista.LookupTable, default: "
+"pyvista.themes.DefaultTheme.cmap"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:76
@@ -46402,6 +46703,11 @@ msgid ""
 "installed.  ``colormap`` is also an accepted alias for this. If ``colorcet``"
 " or ``cmocean`` are installed, their colormaps can be specified by name."
 msgstr ""
+"文字列の場合， ``scalars`` をマッピングする際に利用する ``matplotlib`` "
+"のカラーマップ名です．利用可能なMatplotlibカラーマップを参照してください． ``scalars`` "
+"を表示する場合にのみ適用されます．Matplotlibがインストールされている必要があります． ``colormap`` "
+"は，このエイリアスとしても使用できます． ``colorcet`` または ``cmocean`` "
+"がインストールされている場合は，それらのカラーマップを名前で指定できます．"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:67
@@ -46452,7 +46758,7 @@ msgstr "**label** : :class:`python:str`, :obj:`optional`"
 msgid ""
 "String label to use when adding a legend to the scene with "
 ":func:`pyvista.Plotter.add_legend`."
-msgstr ""
+msgstr ":func:`pyvista.Plotter.add_legend` でシーンに凡例を追加するときに使用する文字列ラベル．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:96
@@ -46552,6 +46858,7 @@ msgid ""
 "If ``False``, a scalar bar will not be added to the scene. Defaults to "
 "``True`` unless ``rgba=True``."
 msgstr ""
+"``False`` の場合，スカラーバーはシーンに追加されません． ``rgba=True`` を指定しない場合、デフォルトは ``True`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:112
@@ -46559,11 +46866,13 @@ msgid ""
 "**multi_colors** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**multi_colors** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:112
 msgid "Color each block by a solid color using matplotlib's color cycler."
-msgstr ""
+msgstr "matplotlib の color cycler を使って、各ブロックを無地で着色します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:115
@@ -46582,6 +46891,8 @@ msgid ""
 "**render_points_as_spheres** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:False`"
 msgstr ""
+"**render_points_as_spheres** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:78
@@ -46600,6 +46911,8 @@ msgid ""
 "**render_lines_as_tubes** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:False`"
 msgstr ""
+"**render_lines_as_tubes** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:129
@@ -46607,11 +46920,13 @@ msgid ""
 "**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":attr`pyvista.themes.DefaultTheme.smooth_shading`"
 msgstr ""
+"**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":attr`pyvista.themes.DefaultTheme.smooth_shading`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:128
 msgid "bool, default: :attr`pyvista.themes.DefaultTheme.smooth_shading`"
-msgstr ""
+msgstr "bool, default: :attr`pyvista.themes.DefaultTheme.smooth_shading`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:127
@@ -46620,6 +46935,9 @@ msgid ""
 " ``False``, uses flat shading.  Automatically enabled when ``pbr=True``.  "
 "See :ref:`shading_example`."
 msgstr ""
+"Phongシェーディングアルゴリズムを使用した ``True`` 時にスムーズシェーディングを有効にします． ``False`` "
+"時にはフラットシェーディングを使用します． ``pbr=True`` 時に自動的に有効になります． :ref:`shading_example` "
+"を参照してください． "
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:137
@@ -46627,6 +46945,8 @@ msgid ""
 "**split_sharp_edges** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**split_sharp_edges** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:132
@@ -46647,7 +46967,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:143
 msgid "**ambient** : :class:`python:float`, default: 0.0"
-msgstr ""
+msgstr "**ambient** : :class:`python:float`, default: 0.0"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.ambient:4
@@ -46669,27 +46989,27 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:146
 msgid "**diffuse** : :class:`python:float`, default: 1.0"
-msgstr ""
+msgstr "**diffuse** : :class:`python:float`, default: 1.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:146
 msgid "The diffuse lighting coefficient."
-msgstr ""
+msgstr "拡散照明係数．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:149
 msgid "**specular** : :class:`python:float`, default: 0.0"
-msgstr ""
+msgstr "**specular** : :class:`python:float`, default: 0.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:149
 msgid "The specular lighting coefficient."
-msgstr ""
+msgstr "鏡面反射光の係数．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:152
 msgid "**specular_power** : :class:`python:float`, default: 1.0"
-msgstr ""
+msgstr "**specular_power** : :class:`python:float`, default: 1.0"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:67
@@ -46708,11 +47028,13 @@ msgid ""
 "**nan_color** : :obj:`ColorLike`, default: "
 ":attr:`pyvista.themes.DefaultTheme.nan_color`"
 msgstr ""
+"**nan_color** : :obj:`ColorLike`, default: "
+":attr:`pyvista.themes.DefaultTheme.nan_color`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:155
 msgid "ColorLike, default: pyvista.themes.DefaultTheme.nan_color"
-msgstr ""
+msgstr "ColorLike, default: pyvista.themes.DefaultTheme.nan_color"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:41
@@ -46728,12 +47050,12 @@ msgstr "プロットされたスカラー配列のすべての ``NaN`` 値に使
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:159
 msgid "**nan_opacity** : :class:`python:float`, default: 1.0"
-msgstr ""
+msgstr "**nan_opacity** : :class:`python:float`, default: 1.0"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:159
 msgid "Opacity of ``NaN`` values.  Should be between 0 and 1."
-msgstr ""
+msgstr "``NaN`` 値の不透明度．0から1の間でなければなりません．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:173
@@ -46741,11 +47063,13 @@ msgid ""
 "**culling** : :class:`python:str`, :ref:`bool <python:bltin-boolean-"
 "values>`, default: :data:`python:False`"
 msgstr ""
+"**culling** : :class:`python:str`, :ref:`bool <python:bltin-boolean-"
+"values>`, default: :data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:172
 msgid "python:str, bool, default: python:False"
-msgstr ""
+msgstr "python:str, bool, default: python:False"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:162
@@ -46754,16 +47078,17 @@ msgid ""
 " meshes, especially when edges are visible, but can cause flat meshes to be "
 "partially displayed. One of the following:"
 msgstr ""
+"選択された面はレンダリングされません．これは，高密度のサーフェイスメッシュ，特にエッジが表示されている場合に便利ですが，フラットメッシュが部分的に表示されることがあります．以下のいずれか1つです:"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:166
 msgid "``True`` - Enable backface culling"
-msgstr ""
+msgstr "``True`` - バックフェイスカリングを有効にします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:167
 msgid "``\"b\"`` - Enable backface culling"
-msgstr ""
+msgstr "``\"b\"`` - バックフェースカリングを有効にします．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.culling:9
@@ -46777,12 +47102,12 @@ msgstr "``\"back\"`` - バックフェースカリングを有効にします．
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:169
 msgid "``\"backface\"`` - Enable backface culling"
-msgstr ""
+msgstr "``\"backface\"`` - バックフェースカリングを有効にします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:170
 msgid "``\"f\"`` - Enable frontface culling"
-msgstr ""
+msgstr "``\"f\"`` - フロントフェイスカリングを有効にします．"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.Property.culling:10
@@ -46796,12 +47121,12 @@ msgstr "``\"front\"`` - フロントフェイスカリングを有効にしま�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:172
 msgid "``\"frontface\"`` - Enable frontface culling"
-msgstr ""
+msgstr "``\"frontface\"`` - フロントフェイスカリングを有効にします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:173
 msgid "``False`` - Disable both backface and frontface culling"
-msgstr ""
+msgstr "``False`` - バックフェイスおよびフロントフェイスのカリングを無効にします．"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:29
@@ -46938,6 +47263,8 @@ msgid ""
 "**pickable** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
 msgstr ""
+"**pickable** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:204
@@ -46956,6 +47283,9 @@ msgid ""
 "For example, when ``'point'`` the scalars will be associated with the mesh "
 "points if available.  Can be either ``'point'`` or ``'cell'``."
 msgstr ""
+"各ブロックに， ``block.n_points == block.n_cells`` "
+"でスカラを設定した場合，このパラメータはスカラがどのようにメッシュにマッピングされるかを設定します． 例えば、 ``'point'`` "
+"の場合、可能な場合スカラーはメッシュのポイントに関連付けられます。これは ``'point'`` または ``'cell'`` のいずれかです．"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:52
@@ -46985,6 +47315,8 @@ msgid ""
 "**pbr** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**pbr** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:219
@@ -47000,7 +47332,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:226
 msgid "**metallic** : :class:`python:float`, default: 0.0"
-msgstr ""
+msgstr "**metallic** : :class:`python:float`, default: 0.0"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:36
@@ -47014,7 +47346,7 @@ msgstr "通常，この値は実際のマテリアルでは0または1ですが�
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:232
 msgid "**roughness** : :class:`python:float`, default: 0.5"
-msgstr ""
+msgstr "**roughness** : :class:`python:float`, default: 0.5"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:41
@@ -47043,7 +47375,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:235
 msgid "Force a render when ``True``."
-msgstr ""
+msgstr "``True`` のときに強制的にレンダーします．"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:34
@@ -47075,6 +47407,8 @@ msgid ""
 "**color_missing_with_nan** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:False`"
 msgstr ""
+"**color_missing_with_nan** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:14
@@ -47106,6 +47440,11 @@ msgid ""
 "it to the plotter and have these updates rendered, e.g. by changing the "
 "active scalars or through an interactive widget.  Defaults to ``False``."
 msgstr ""
+"``True`` "
+"の場合，プロッタに追加する前にメッシュのコピーが作成されます．これは例えば，同じメッシュを複数回プロッタに追加して，異なるスカラーを表示させたい場合に便利です．"
+" ``copy_mesh`` を ``False`` "
+"に設定すると，プロッタに追加した後にメッシュを更新し，例えばアクティブなスカラーを変更したり，インタラクティブウィジェットを介してレンダリングさせたい場合に必要とされます．デフォルトでは"
+" ``False`` に設定されています．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:263
@@ -47115,6 +47454,8 @@ msgid ""
 "**show_vertices** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
+"**show_vertices** : :ref:`bool <python:bltin-boolean-values>`, "
+":obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:257
@@ -47125,27 +47466,29 @@ msgid ""
 "The following optional keyword arguments may be used to control the style of"
 " the vertices:"
 msgstr ""
+"``style`` が ``'points'`` "
+"でない場合、表面の外側の頂点をレンダリングします。以下のオプションのキーワード引数を使用すると、頂点のスタイルを制御することができます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:261
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:321
 msgid "``vertex_color`` - The color of the vertices"
-msgstr ""
+msgstr "``vertex_color`` - 頂点の色"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:262
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:322
 msgid "``vertex_style`` - Change style to ``'points_gaussian'``"
-msgstr ""
+msgstr "``vertex_style`` - スタイルを ``'points_gaussian'`` に変更します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:263
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:323
 msgid "``vertex_opacity`` - Control the opacity of the vertices"
-msgstr ""
+msgstr "``vertex_opacity`` - 頂点の不透明度を制御します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:266
@@ -47159,12 +47502,12 @@ msgstr "オプションのキーワード引数．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:271
 msgid "Actor of the composite dataset."
-msgstr ""
+msgstr "合成されたデータセットのアクター．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:283
 msgid ":obj:`pyvista.CompositePolyDataMapper`"
-msgstr ""
+msgstr ":obj:`pyvista.CompositePolyDataMapper`"
 
 #: ../../pyvista/doc/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
@@ -47189,6 +47532,9 @@ msgid ""
 "individual blocks or the entire composite dataset itself in the case of "
 "multiple nested composite datasets."
 msgstr ""
+"インデックス ``1`` と ``2`` は、複合データセットの個々のブロックにアクセスするために使用されることに注意してください。これは、 "
+":class:`pyvista.MultiBlock` が \"tree\" のルートノードであり、インデックス ``0`` "
+"になっているためです。これにより、個々のブロックや、ネストした複数のコンポジットデータセットの場合には、コンポジットデータセットそのものにアクセスすることができます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_floor.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.add_floor.rst:2
@@ -47765,7 +48111,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend_scale:49
 msgid "Whether to render when the actor is added."
-msgstr ""
+msgstr "アクターが追加されたときにレンダリングするかどうか。"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend_scale:52
@@ -47976,7 +48322,7 @@ msgstr "add\\_lines"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:10
 msgid "**lines** : :obj:`np.ndarray <numpy.ndarray>`"
-msgstr ""
+msgstr "**lines** : :obj:`np.ndarray <numpy.ndarray>`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:8
@@ -47990,17 +48336,17 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:18
 msgid "**color** : :obj:`ColorLike`, default: 'w'"
-msgstr ""
+msgstr "**color** : :obj:`ColorLike`, default: 'w'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:17
 msgid "ColorLike, default: 'w'"
-msgstr ""
+msgstr "ColorLike, default: 'w'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:21
 msgid "**width** : :class:`python:float`, default: 5"
-msgstr ""
+msgstr "**width** : :class:`python:float`, default: 5"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:20
@@ -48012,19 +48358,19 @@ msgstr "python:float, default: 5"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:25
 msgid "**label** : :class:`python:str`, default: :data:`python:None`"
-msgstr ""
+msgstr "**label** : :class:`python:str`, default: :data:`python:None`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:24
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:29
 msgid "python:str, default: python:None"
-msgstr ""
+msgstr "python:str, default: python:None"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:30
 msgid "**name** : :class:`python:str`, default: :data:`python:None`"
-msgstr ""
+msgstr "**name** : :class:`python:str`, default: :data:`python:None`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_lines:28
@@ -48053,13 +48399,15 @@ msgid ""
 "geometry of datasets. For volume rendering, see "
 ":func:`pyvista.Plotter.add_volume`."
 msgstr ""
+"この方法では，メッシュ表現を使用して，データセットのサーフェスやジオメトリを表示します．ボリュームレンダリングについては "
+":func:`pyvista.Plotter.add_volume` を参照．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:8
 msgid ""
 "To see the what most of the following parameters look like in action, please"
 " refer to :class:`pyvista.Property`."
-msgstr ""
+msgstr "以下のパラメータのほとんどがどのようなものであるかは、 :class:`pyvista.Property` を参照してください。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:20
@@ -48067,11 +48415,13 @@ msgid ""
 "**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock` or "
 ":obj:`vtk.vtkAlgorithm`"
 msgstr ""
+"**mesh** : :obj:`pyvista.DataSet` or :obj:`pyvista.MultiBlock` or "
+":obj:`vtk.vtkAlgorithm`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:19
 msgid "pyvista.DataSet or pyvista.MultiBlock or vtk.vtkAlgorithm"
-msgstr ""
+msgstr "pyvista.DataSet or pyvista.MultiBlock か vtk.vtkAlgorithm"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:14
@@ -48083,6 +48433,10 @@ msgid ""
 "pipeline will be connected to the passed algorithm to dynamically update the"
 " scene."
 msgstr ""
+"あらゆるPyVistaやVTKのメッシュがサポートされています。また、XYZ ポイントの NumPy 配列を含む、 "
+":func:`pyvista.wrap` が扱うことのできる全てのデータセットがサポートされています。プロットは VTK アルゴリズムオブジェクト ( "
+"``vtk.vtkAlgorithm`` と ``vtk.vtkAlgorithmOutput`` ) "
+"もサポートしています。アルゴリズムを渡すと、レンダリングパイプラインは渡されたアルゴリズムに接続され、動的にシーンが更新されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:23
@@ -48102,6 +48456,8 @@ msgid ""
 "Defaults to :attr:`pyvista.global_theme.color "
 "<pyvista.themes.DefaultTheme.color>`."
 msgstr ""
+"デフォルトは :attr:`pyvista.global_theme.color` "
+"<pyvista.themes.DefaultTheme.color>` です。"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:33
@@ -48159,6 +48515,8 @@ msgid ""
 "Defaults to :attr:`pyvista.global_theme.edge_color "
 "<pyvista.themes.DefaultTheme.edge_color>`."
 msgstr ""
+"デフォルトは :attr:`pyvista.global_theme.edge_color "
+"<pyvista.themes.DefaultTheme.edge_color>` です。"
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:47
@@ -48291,6 +48649,8 @@ msgid ""
 "If a :class:`pyvista.MultiBlock` dataset is given this will color each block"
 " by a solid color using matplotlib's color cycler."
 msgstr ""
+":class:`pyvista.MultiBlock` "
+"データセットが与えられると，matplotlibのカラーサイクラーを使って各ブロックを単色で塗りつぶします．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:153
@@ -52850,54 +53210,62 @@ msgid ""
 msgstr "のスケーリングは，X，Y，Z軸で個別に実行されます．0の尺度は不正で，1に置き換えられます．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:11
+#: pyvista.plotting.renderer.Renderer.set_scale:8
+msgid ""
+"Setting the scale on the renderer is a convenience method to individually "
+"scale each of the actors in the scene. If a scale was set on an actor "
+"previously, it will be reset to the scale of this Renderer."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.set_scale:17
 msgid "**xscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**xscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:10
+#: pyvista.plotting.renderer.Renderer.set_scale:16
 msgid ""
 "Scaling in the x direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "x方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:15
+#: pyvista.plotting.renderer.Renderer.set_scale:21
 msgid "**yscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**yscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:14
+#: pyvista.plotting.renderer.Renderer.set_scale:20
 msgid ""
 "Scaling in the y direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "y方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:19
+#: pyvista.plotting.renderer.Renderer.set_scale:25
 #: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
 #: pyvista.utilities.parametric_objects.ParametricBoy:14
 msgid "**zscale** : :class:`python:float`, :obj:`optional`"
 msgstr "**zscale** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:18
+#: pyvista.plotting.renderer.Renderer.set_scale:24
 msgid ""
 "Scaling in the z direction.  Default is ``None``, which does not change "
 "existing scaling."
 msgstr "z方向のスケーリングを行います． デフォルトは ``None`` で，既存のスケーリングは変更されません．"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.set_scale:22
+#: pyvista.plotting.renderer.Renderer.set_scale:28
 msgid "Resets camera so all actors can be seen.  Default ``True``."
 msgstr "すべてのアクターが見えるようにカメラをリセットします．デフォルトは ``True`` です．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_scale.rst:3
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_scale.rst:3
 msgid ""
-"Set the scale in the z direction to be 5 times that of nominal.  Leave the "
+"Set the scale in the z direction to be 2 times that of nominal.  Leave the "
 "other axes unscaled."
-msgstr "z方向のスケールを表示上の5倍に設定します． 他の軸はスケールしないままにしておきます．"
+msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_viewup.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_viewup.rst:2
@@ -57587,6 +57955,8 @@ msgid ""
 ":py:obj:`Renderer.set_chart_interaction "
 "<pyvista.Renderer.set_chart_interaction>`\\ \\(interactive\\)"
 msgstr ""
+":py:obj:`Renderer.set_chart_interaction "
+"<pyvista.Renderer.set_chart_interaction>`\\ \\(interactive\\)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -57817,7 +58187,7 @@ msgstr "レンダラに境界線があるかどうかを返します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 msgid ":py:obj:`Renderer.has_charts <pyvista.Renderer.has_charts>`\\"
-msgstr ""
+msgstr ":py:obj:`Renderer.has_charts <pyvista.Renderer.has_charts>`\\"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -62813,6 +63183,8 @@ msgid ""
 ":py:obj:`ChartBox.show <pyvista.ChartBox.show>`\\ \\(\\[interactive\\, "
 "off\\_screen\\, ...\\]\\)"
 msgstr ""
+":py:obj:`ChartBox.show <pyvista.ChartBox.show>`\\ \\(\\[interactive\\, "
+"off\\_screen\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:32:<autosummary>:1
 msgid ":py:obj:`ChartBox.toggle <pyvista.ChartBox.toggle>`\\ \\(\\)"
@@ -62823,12 +63195,16 @@ msgid ""
 ":py:obj:`ChartBox.active_background_color "
 "<pyvista.ChartBox.active_background_color>`\\"
 msgstr ""
+":py:obj:`ChartBox.active_background_color "
+"<pyvista.ChartBox.active_background_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:264:<autosummary>:1
 msgid ""
 ":py:obj:`ChartBox.active_border_color "
 "<pyvista.ChartBox.active_border_color>`\\"
 msgstr ""
+":py:obj:`ChartBox.active_border_color "
+"<pyvista.ChartBox.active_border_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:264:<autosummary>:1
 msgid ""
@@ -63019,6 +63395,8 @@ msgid ""
 ":py:obj:`ChartMPL.show <pyvista.ChartMPL.show>`\\ \\(\\[interactive\\, "
 "off\\_screen\\, ...\\]\\)"
 msgstr ""
+":py:obj:`ChartMPL.show <pyvista.ChartMPL.show>`\\ \\(\\[interactive\\, "
+"off\\_screen\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.rst:32:<autosummary>:1
 msgid ":py:obj:`ChartMPL.toggle <pyvista.ChartMPL.toggle>`\\ \\(\\)"
@@ -63029,12 +63407,16 @@ msgid ""
 ":py:obj:`ChartMPL.active_background_color "
 "<pyvista.ChartMPL.active_background_color>`\\"
 msgstr ""
+":py:obj:`ChartMPL.active_background_color "
+"<pyvista.ChartMPL.active_background_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.rst:193:<autosummary>:1
 msgid ""
 ":py:obj:`ChartMPL.active_border_color "
 "<pyvista.ChartMPL.active_border_color>`\\"
 msgstr ""
+":py:obj:`ChartMPL.active_border_color "
+"<pyvista.ChartMPL.active_border_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.rst:193:<autosummary>:1
 msgid ""
@@ -63229,6 +63611,8 @@ msgid ""
 ":py:obj:`ChartPie.show <pyvista.ChartPie.show>`\\ \\(\\[interactive\\, "
 "off\\_screen\\, ...\\]\\)"
 msgstr ""
+":py:obj:`ChartPie.show <pyvista.ChartPie.show>`\\ \\(\\[interactive\\, "
+"off\\_screen\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:32:<autosummary>:1
 msgid ":py:obj:`ChartPie.toggle <pyvista.ChartPie.toggle>`\\ \\(\\)"
@@ -63239,12 +63623,16 @@ msgid ""
 ":py:obj:`ChartPie.active_background_color "
 "<pyvista.ChartPie.active_background_color>`\\"
 msgstr ""
+":py:obj:`ChartPie.active_background_color "
+"<pyvista.ChartPie.active_background_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:251:<autosummary>:1
 msgid ""
 ":py:obj:`ChartPie.active_border_color "
 "<pyvista.ChartPie.active_border_color>`\\"
 msgstr ""
+":py:obj:`ChartPie.active_border_color "
+"<pyvista.ChartPie.active_border_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.rst:251:<autosummary>:1
 msgid ""
@@ -66866,42 +67254,56 @@ msgid ""
 ":py:obj:`LinePlot2D <pyvista.plotting.charts.LinePlot2D>`\\ \\(chart\\, x\\,"
 " y\\[\\, color\\, width\\, ...\\]\\)"
 msgstr ""
+":py:obj:`LinePlot2D <pyvista.plotting.charts.LinePlot2D>`\\ \\(chart\\, x\\,"
+" y\\[\\, color\\, width\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`ScatterPlot2D <pyvista.plotting.charts.ScatterPlot2D>`\\ "
 "\\(chart\\, x\\, y\\[\\, color\\, size\\, ...\\]\\)"
 msgstr ""
+":py:obj:`ScatterPlot2D <pyvista.plotting.charts.ScatterPlot2D>`\\ "
+"\\(chart\\, x\\, y\\[\\, color\\, size\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`BarPlot <pyvista.plotting.charts.BarPlot>`\\ \\(chart\\, x\\, "
 "y\\[\\, color\\, orientation\\, label\\]\\)"
 msgstr ""
+":py:obj:`BarPlot <pyvista.plotting.charts.BarPlot>`\\ \\(chart\\, x\\, "
+"y\\[\\, color\\, orientation\\, label\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`AreaPlot <pyvista.plotting.charts.AreaPlot>`\\ \\(chart\\, x\\, "
 "y1\\[\\, y2\\, color\\, label\\]\\)"
 msgstr ""
+":py:obj:`AreaPlot <pyvista.plotting.charts.AreaPlot>`\\ \\(chart\\, x\\, "
+"y1\\[\\, y2\\, color\\, label\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`StackPlot <pyvista.plotting.charts.StackPlot>`\\ \\(chart\\, x\\, "
 "ys\\[\\, colors\\, labels\\]\\)"
 msgstr ""
+":py:obj:`StackPlot <pyvista.plotting.charts.StackPlot>`\\ \\(chart\\, x\\, "
+"ys\\[\\, colors\\, labels\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`BoxPlot <pyvista.plotting.charts.BoxPlot>`\\ \\(chart\\, data\\[\\,"
 " colors\\, labels\\]\\)"
 msgstr ""
+":py:obj:`BoxPlot <pyvista.plotting.charts.BoxPlot>`\\ \\(chart\\, data\\[\\,"
+" colors\\, labels\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:50:<autosummary>:1
 msgid ""
 ":py:obj:`PiePlot <pyvista.plotting.charts.PiePlot>`\\ \\(chart\\, data\\[\\,"
 " colors\\, labels\\, \\_wrap\\]\\)"
 msgstr ""
+":py:obj:`PiePlot <pyvista.plotting.charts.PiePlot>`\\ \\(chart\\, data\\[\\,"
+" colors\\, labels\\, \\_wrap\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/conv_func.rst:2
 #: ../../pyvista/doc/api/plotting/index.rst:74
@@ -66978,7 +67380,7 @@ msgstr "プロットモジュールAPIリファレンス．これらのプロッ
 
 #: ../../pyvista/doc/api/plotting/index.rst:40:<autosummary>:1
 msgid ":py:obj:`BasePlotter <pyvista.BasePlotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
+msgstr ":py:obj:`BasePlotter <pyvista.BasePlotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 
 #: ../../pyvista/doc/api/plotting/index.rst:40:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
@@ -67367,7 +67769,7 @@ msgstr ":py:obj:`themes.DocumentTheme <pyvista.themes.DocumentTheme>`\\ \\(\\)"
 
 #: ../../pyvista/doc/api/plotting/trame.rst:4
 msgid "Trame"
-msgstr ""
+msgstr "Trame"
 
 #: ../../pyvista/doc/api/plotting/trame.rst:5
 msgid ""
