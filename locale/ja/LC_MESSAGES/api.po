@@ -44824,7 +44824,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:2
 msgid "Scale all the actors in the scene."
-msgstr ""
+msgstr "シーン内のすべてのアクターをスケールします．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.rst:843:<autosummary>:1
 msgid ""
@@ -48791,11 +48791,13 @@ msgid ""
 "**nan_color** : :obj:`ColorLike`, :obj:`optional`, :obj:`defaults` :obj:`to`"
 " :obj:`gray`"
 msgstr ""
+"**nan_color** : :obj:`ColorLike`, :obj:`optional`, :obj:`defaults` :obj:`to`"
+" :obj:`gray`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:192
 msgid "ColorLike, optional, defaults to gray"
-msgstr ""
+msgstr "ColorLike, optional, defaults to gray"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:197
@@ -48851,7 +48853,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:225
 msgid "``color``: ``ColorLike``, color of the silhouette"
-msgstr ""
+msgstr "``color``: ``ColorLike`` ，シルエットの色"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:226
@@ -48919,6 +48921,8 @@ msgid ""
 "Use log scale when mapping data to colors. Scalars less than zero are mapped"
 " to the smallest representable positive float. Default ``False``."
 msgstr ""
+"データを色にマッピングするときは，ログスケールを使用します．0未満のスカラーは，表現可能な最小の正のfloatにマップされます．デフォルト "
+"``False`` ．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:269
@@ -48967,13 +48971,14 @@ msgstr "``True`` の場合，強制的にレンダリングします．デフォ
 msgid ""
 "**emissive** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
+"**emissive** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:291
 msgid ""
 "Treat the points/splats as emissive light sources. Only valid for "
 "``style='points_gaussian'`` representation."
-msgstr ""
+msgstr "ポイント/スプラットを発光する光源として扱います。 ``style='points_gaussian'`` の表現にのみ有効です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:295
@@ -48987,6 +48992,12 @@ msgid ""
 "``True`` with caution. Defaults to ``False``. This is ignored if the input "
 "is a ``vtkAlgorithm`` subclass."
 msgstr ""
+"``True`` "
+"の場合，プロッタに追加する前にメッシュのコピーが作成されます．これは例えば，同じメッシュを複数回プロッタに追加して，異なるスカラーを表示させたい場合に便利です．"
+" ``copy_mesh`` を ``False`` "
+"に設定すると，プロッタに追加した後にメッシュを更新し，例えばアクティブなスカラーを変更したり，インタラクティブウィジェットを介してレンダリングさせたい場合に必要とされます．デフォルトでは"
+" ``False`` に設定されています．これは注意して ``True`` に設定する必要があります。デフォルトは ``False`` です．入力が "
+"``vtkAlgorithm`` のサブクラスである場合、この設定は無視されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:314
@@ -48994,11 +49005,13 @@ msgid ""
 "**backface_params** : :class:`python:dict` or :obj:`pyvista.Property`, "
 ":obj:`optional`"
 msgstr ""
+"**backface_params** : :class:`python:dict` or :obj:`pyvista.Property`, "
+":obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:313
 msgid "python:dict or pyvista.Property, optional"
-msgstr ""
+msgstr "python:dict か pyvista.Property, optional"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:306
@@ -49015,7 +49028,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:340
 msgid ":obj:`pyvista.plotting.actor.Actor`"
-msgstr ""
+msgstr ":obj:`pyvista.plotting.actor.Actor`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:331
@@ -49057,7 +49070,7 @@ msgstr ""
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_on_render_callback.rst:2
 msgid "add\\_on\\_render\\_callback"
-msgstr ""
+msgstr "add\\_on\\_render\\_callback"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_on_render_callback:8
@@ -49069,7 +49082,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_on_render_callback:27
 msgid "**render_event** : :ref:`bool <python:bltin-boolean-values>`"
-msgstr ""
+msgstr "**render_event** : :ref:`bool <python:bltin-boolean-values>`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_on_render_callback:12
@@ -49246,7 +49259,7 @@ msgstr "タイトルフォントのサイズを設定します．デフォルト
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:31
 msgid "**text_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**text_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:26
@@ -49326,7 +49339,7 @@ msgstr "ポイントを表示するかどうかをコントロールします．
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:50
 msgid "**point_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**point_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:44
@@ -49361,7 +49374,7 @@ msgstr "表示されている場合，点のサイズ．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:62
 msgid "**shape_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**shape_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:61
@@ -61855,7 +61868,7 @@ msgstr "このチャートのy軸のレンジを返すか設定します．"
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.active_background_color.rst:2
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.active_background_color.rst:2
 msgid "active\\_background\\_color"
-msgstr ""
+msgstr "active\\_background\\_color"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.active_background_color.rst:3
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.background_color.rst:3
@@ -61874,7 +61887,7 @@ msgstr ""
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.active_border_color.rst:2
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.active_border_color.rst:2
 msgid "active\\_border\\_color"
-msgstr ""
+msgstr "active\\_border\\_color"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.active_border_color.rst:3
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.border_color.rst:3
@@ -63797,7 +63810,7 @@ msgstr "ユーザーは通常，新しいプロットインスタンスを直接
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:9
 msgid "**chart** : :obj:`Chart2D`"
-msgstr ""
+msgstr "**chart** : :obj:`Chart2D`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.AreaPlot:8
@@ -63810,7 +63823,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:8
 msgid "Chart2D"
-msgstr ""
+msgstr "Chart2D"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.AreaPlot:9
@@ -65886,12 +65899,12 @@ msgstr "ユーザーは通常，新しいプロットインスタンスを直接
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:10
 msgid "**chart** : :obj:`ChartBox`"
-msgstr ""
+msgstr "**chart** : :obj:`ChartBox`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:9
 msgid "ChartBox"
-msgstr ""
+msgstr "ChartBox"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.BoxPlot:17
@@ -66567,12 +66580,12 @@ msgstr "ユーザーは通常，新しいプロットインスタンスを直接
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:10
 msgid "**chart** : :obj:`ChartPie`"
-msgstr ""
+msgstr "**chart** : :obj:`ChartPie`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:9
 msgid "ChartPie"
-msgstr ""
+msgstr "ChartPie"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot:16
@@ -67161,6 +67174,8 @@ msgid ""
 " plotting windows. Note that full charts functionality requires a VTK "
 "version of at least 9.3. Most components work fine in older versions though."
 msgstr ""
+"Charts "
+"APIのリファレンスです．これらの専用クラスは，プロットウィンドウにチャートを埋め込むために使用することができます．なお，チャートの全機能を利用するには，少なくともVTKのバージョン9.3が必要です．しかし，ほとんどのコンポーネントは，古いバージョンでも問題なく動作します．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:10
 msgid "Unusable features in older VTK versions:"
@@ -67169,19 +67184,21 @@ msgstr "古いバージョンのVTKでは使えない機能:"
 #: ../../pyvista/doc/api/plotting/charts/index.rst:12
 msgid ""
 "Background colors and borders are not supported or erroneous (VTK <9.0)."
-msgstr ""
+msgstr "背景色やボーダーがサポートされていない，またはエラーが発生します(VTK <9.0)．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:14
 msgid ""
 "Interaction with charts is bugged when multiple subplots are used (VTK "
 "<9.3)."
-msgstr ""
+msgstr "複数のサブプロットを使用した場合に、チャートとのインタラクションに不具合がある(VTK <9.3)。"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:16
 msgid ""
 ":class:`ChartBox` and :class:`ChartPie` cannot have a custom geometry and "
 "fill the entire scene by default (VTK <9.2)."
 msgstr ""
+":class:`ChartBox` と :class:`ChartPie` はカスタムジオメトリを持つことができず，デフォルトでシーン全体を埋めます "
+"(VTK <9.2)．"
 
 #: ../../pyvista/doc/api/plotting/charts/index.rst:29:<autosummary>:1
 msgid ""
