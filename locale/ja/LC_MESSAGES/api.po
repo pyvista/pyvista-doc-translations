@@ -48475,6 +48475,11 @@ msgid ""
 "of the outer geometry. ``'points_gaussian'`` can be modified with the "
 "``emissive``, ``render_points_as_spheres`` options."
 msgstr ""
+"メッシュの表示スタイル． ``style='surface'`` ，``style='wireframe'`` ， "
+"``style='points'``, ``style='points_gaussian'`` のいずれかです．デフォルトは ``'surface'``"
+" です． ``'wireframe'`` は外部ジオメトリのワイヤフレームのみを表示することに注意してください． "
+"``'points_gaussian'`` は ``emissive``, ``render_points_as_spheres`` "
+"オプションで変更することができます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:46
@@ -49024,6 +49029,11 @@ msgid ""
 " use for the given property. Omitted keys (or the default of "
 "``backface_params=None``) default to the corresponding frontface properties."
 msgstr ""
+"バックフェイスレンダリングに使用する :class:`pyvista.Property` またはパラメータの dict "
+"を指定します。例えば、オリエンテッドなサーフェスの内側と外側で異なる色を使用する場合に便利です。 :class:`pyvista.Property` "
+"を指定した場合は、バックフェイスレンダリングに直接使用されます。dictの場合、有効なキーは :class:`pyvista.Property` "
+"の属性で、値は与えられたプロパティに使用する対応する値です。省略されたキー（またはデフォルトの ``backface_params=None`` "
+"）は、対応するフロントフェイスのプロパティをデフォルトで使用します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_mesh:340
@@ -49066,7 +49076,7 @@ msgstr "平面を一定の色でプロットし，その不透明度をポイン
 msgid ""
 "Plot the points of a sphere with gaussian smoothing while coloring by z "
 "position."
-msgstr ""
+msgstr "球体の点をz位置で色付けしながらガウシアンスムージングでプロットします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_on_render_callback.rst:2
 msgid "add\\_on\\_render\\_callback"
@@ -49077,7 +49087,7 @@ msgstr "add\\_on\\_render\\_callback"
 msgid ""
 "The callback method to run post-render. This takes a single argument which "
 "is the plotter object."
-msgstr ""
+msgstr "ポストレンダリングを実行するためのコールバックメソッドです。プロッターオブジェクトを引数にとります。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_on_render_callback:27
@@ -49090,6 +49100,8 @@ msgid ""
 "If True, associate with all VTK RenderEvents. Otherwise, the callback is "
 "only handled on a successful ``render()`` from the PyVista plotter directly."
 msgstr ""
+"True の場合、すべての VTK RenderEvent に関連付けます。そうでない場合は、PyVistaプロッタから直接 ``render()`` "
+"が成功したときのみ、コールバックが処理されます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_orientation_widget.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.add_orientation_widget.rst:2
@@ -49171,18 +49183,20 @@ msgid ""
 "**points** : :term:`python:sequence` or :obj:`pyvista.DataSet` or "
 ":obj:`vtk.vtkAlgorithm`"
 msgstr ""
+"**points** : :term:`python:sequence` か :obj:`pyvista.DataSet` か "
+":obj:`vtk.vtkAlgorithm`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:8
 msgid "python:sequence or pyvista.DataSet or vtk.vtkAlgorithm"
-msgstr ""
+msgstr "python:sequence か pyvista.DataSet か vtk.vtkAlgorithm"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:8
 msgid ""
 "An ``n x 3`` sequence points or pyvista dataset with points or mesh-"
 "producing algorithm."
-msgstr ""
+msgstr "``n x 3`` の点列，または点またはメッシュ生成アルゴリズムを含むpyvistaデータセットです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:14
@@ -49381,7 +49395,7 @@ msgstr "**shape_color** : :obj:`ColorLike`, :obj:`optional`"
 msgid ""
 "Color of shape (if visible).  Either a string, rgb sequence, or hex color "
 "string."
-msgstr ""
+msgstr "シェイプの色（表示されている場合）． 文字列，RGB配列，または16進数の色文字列のいずれかです． "
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_labels:66
@@ -49487,7 +49501,7 @@ msgstr "add\\_point\\_scalar\\_labels"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:4
 msgid "Wrapper for :func:`pyvista.Plotter.add_point_labels`."
-msgstr ""
+msgstr ":func:`pyvista.Plotter.add_point_labels` 用のラッパーです．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:9
@@ -49495,11 +49509,13 @@ msgid ""
 "**points** : :obj:`Sequence`\\(:class:`python:float`) :obj:`or` "
 ":obj:`np.ndarray <numpy.ndarray>` or :obj:`pyvista.DataSet`"
 msgstr ""
+"**points** : :obj:`Sequence`\\(:class:`python:float`) :obj:` か ` "
+":obj:`np.ndarray <numpy.ndarray>` か :obj:`pyvista.DataSet`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:8
 msgid "Sequence(python:float) or np.ndarray or pyvista.DataSet"
-msgstr ""
+msgstr "Sequence(python:float) または np.ndarray または pyvista.DataSet"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:9
@@ -49513,6 +49529,8 @@ msgid ""
 "name is given with a :class:`pyvista.DataSet` input for points, then these "
 "are fetched."
 msgstr ""
+"ラベルのスカラーのリスト．点と同じ長さでなければなりません．文字列名がpyvistaで指定されている場合．点の "
+":class:`pyvista.DataSet` 入力を取得すると，これらが取得されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:17
@@ -49541,7 +49559,7 @@ msgstr "各ラベルの開始前のテキスト．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_point_scalar_labels:23
 msgid "Keyword arguments passed to :func:`pyvista.Plotter.add_point_labels`."
-msgstr ""
+msgstr ":func:`pyvista.Plotter.add_point_labels` に渡されるキーワード引数です．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_points.rst:2
 msgid "add\\_points"
@@ -49565,12 +49583,12 @@ msgstr "点の配列，またはpyvistaオブジェクトの点．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:14
 msgid "**style** : :class:`python:str`, default: 'points'"
-msgstr ""
+msgstr "**style** : :class:`python:str`, default: 'points'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:13
 msgid "python:str, default: 'points'"
-msgstr ""
+msgstr "python:str, default: 'points'"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_points:11
@@ -49579,6 +49597,9 @@ msgid ""
 "``style='points_gaussian'``. ``'points_gaussian'`` can be controlled with "
 "the ``emissive`` and ``render_points_as_spheres`` options."
 msgstr ""
+"メッシュの可視化スタイル．以下のいずれかを指定します: ``style='points'``, ``style='points_gaussian'``."
+" ``'points_gaussian'`` は ``emissive`` と ``render_points_as_spheres`` "
+"オプションで制御することができます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_points.rst:3
 msgid "Add a numpy array of points to a mesh."
@@ -49586,7 +49607,7 @@ msgstr "ポイントのnumpy配列をメッシュに追加します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_points.rst:27
 msgid "Plot using the ``'points_gaussian'`` style"
-msgstr ""
+msgstr "``'points_gaussian'`` スタイルを使用してプロットします"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_ruler.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.add_ruler.rst:2
@@ -50011,7 +50032,7 @@ msgstr "スカラー範囲より上の値の文字列注釈．"
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:108
 msgid "**background_color** : :obj:`ColorLike`, :obj:`optional`"
-msgstr ""
+msgstr "**background_color** : :obj:`ColorLike`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:108
@@ -50094,42 +50115,42 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:12
 msgid "**mesh** : :obj:`pyvista.DataSet` or :obj:`vtk.vtkAlgorithm`"
-msgstr ""
+msgstr "**mesh** : :obj:`pyvista.DataSet` か :obj:`vtk.vtkAlgorithm`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:11
 msgid "pyvista.DataSet or vtk.vtkAlgorithm"
-msgstr ""
+msgstr "pyvista.DataSet か vtk.vtkAlgorithm"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:11
 msgid "Mesh or mesh-producing algorithm for generating silhouette to plot."
-msgstr ""
+msgstr "プロットするシルエットを生成するためのメッシュまたはメッシュ生成アルゴリズム。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:15
 msgid "Color of the silhouette lines."
-msgstr ""
+msgstr "シルエットの線の色。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:18
 msgid "Silhouette line width."
-msgstr ""
+msgstr "シルエットの線幅。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:21
 msgid "Line transparency between ``0`` and ``1``."
-msgstr ""
+msgstr "``0`` と ``1`` の間の線の透明度。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:24
 msgid "If set, display sharp edges exceeding that angle in degrees."
-msgstr ""
+msgstr "設定された場合、角度を超える鋭いエッジを度単位で表示します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:30
 msgid "**decimate** : :class:`python:float`, :obj:`optional`"
-msgstr ""
+msgstr "**decimate** : :class:`python:float`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:27
@@ -50138,6 +50159,8 @@ msgid ""
 "rendering performance. A good rule of thumb is to try ``0.9``  first and "
 "decrease until the desired rendering performance is achieved."
 msgstr ""
+"``0`` と ``1`` の間のデシメーションのレベル。デシメーションはレンダリングパフォーマンスを向上させます。目安としては、まず ``0.9`` "
+"を試し、希望のレンダリングパフォーマンスが得られるまで減らしていくことです。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:37
@@ -50147,19 +50170,19 @@ msgstr "**params** : :class:`python:dict`, :obj:`optional`"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:33
 msgid "Optional silhouette parameters."
-msgstr ""
+msgstr "オプションのシルエットパラメータ。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:35
 msgid ""
 "This keyword argument is no longer used. Instead, input the parameters to "
 "this function directly."
-msgstr ""
+msgstr "このキーワード引数は使用されなくなりました。代わりに、この関数に直接パラメータを入力してください。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_silhouette:42
 msgid "Actor of the silhouette."
-msgstr ""
+msgstr "シルエットのアクター。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_text.rst:2
 msgid "add\\_text"
@@ -50304,11 +50327,14 @@ msgid ""
 ":class:`pyvista.UniformGrid`, :class:`pyvista.RectilinearGrid`, or "
 ":class:`pyvista.UnstructuredGrid`."
 msgstr ""
+":class:`numpy.ndarray`, :class:`pyvista.UniformGrid`, "
+":class:`pyvista.RectilinearGrid`, :class:`pyvista.UnstructuredGrid` "
+"などの3次元データ型が必要です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:16
 msgid "**volume** : 3D :obj:`numpy.ndarray` or :obj:`pyvista.DataSet`"
-msgstr ""
+msgstr "**volume** : 3D :obj:`numpy.ndarray` か :obj:`pyvista.DataSet`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume-1
@@ -50327,6 +50353,8 @@ msgid ""
 " :class:`pyvista.RectilinearGrid`, volume rendering will often have poor "
 "performance."
 msgstr ""
+"入力が :class:`numpy.ndarray` や :class:`pyvista.UniformGrid` 、あるいは "
+":class:`pyvista.RectilinearGrid` でない場合、ボリュームレンダリングのパフォーマンスは低くなることがあります。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:19
@@ -50336,6 +50364,9 @@ msgid ""
 "or the number of points in the mesh. If ``scalars`` is ``None``, then the "
 "active scalars are used."
 msgstr ""
+"メッシュの \"色\" "
+"に使用されるスカラー．メッシュ上に存在する配列の文字列名，またはメッシュ内のセル数またはポイント数と等しい長さの配列を受け入れます． "
+"``scalars`` が ``None`` の場合，アクティブスカラーが使用されます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:24
@@ -50347,6 +50378,9 @@ msgid ""
 "directly mapped to RGBA values, array should be shaped ``(N, 4)`` where "
 "``N`` is the number of points, and of datatype ``np.uint8``."
 msgstr ""
+"スカラーは1次元または2次元である。1 次元であれば，スカラーはルックアップテーブルにマップされます．2 次元の場合，スカラーは直接 RGBA "
+"の値にマッピングされます．配列は ``(N, 4)`` の形状でなければならず， ``N`` は点の個数，データ型は ``np.uint8`` "
+"となります．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:37
@@ -50355,13 +50389,15 @@ msgid ""
 "and maximum of scalars array if the scalars dtype is not ``np.uint8``. "
 "``rng`` is also an accepted alias for this parameter."
 msgstr ""
+"スカラーのカラーバー範囲．例: ``[-1, 2]`` ．スカラの dtype が ``np.uint8`` "
+"でない場合，デフォルトはスカラ配列の最小値と最大値です．また，このパラメータの別名として ``rng`` も利用できます．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:41
 msgid ""
 "If the scalars datatype is ``np.uint8``, this parameter defaults to ``[0, "
 "256]``."
-msgstr ""
+msgstr "スカラーのデータ型が ``np.uint8`` である場合，このパラメータのデフォルトは ``[0, 256]`` です．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:48
@@ -50376,6 +50412,9 @@ msgid ""
 "behavior. See: `pyvista #1967 "
 "<https://github.com/pyvista/pyvista/issues/1967>`_."
 msgstr ""
+"ブロックの解像度．例えば ``[1, 1, 1]`` です．解像度は負であってはいけません．VTK "
+"は負のスペーシングを受け付けますが、これは予期しない動作になります．参照してください． pyvista #1967 "
+"<https://github.com/pyvista/pyvista/issues/1967>`_ 参照．"
 
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:94
@@ -50408,6 +50447,8 @@ msgid ""
 "ensure the opacity transfer function has no effect on the input opacity "
 "values."
 msgstr ""
+"RGBAスカラーが提供された場合、このパラメータは ``'linear'`` "
+"に設定され、不透明度伝達関数が入力された不透明度の値に影響を与えないようにします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:87
@@ -50473,6 +50514,9 @@ msgid ""
 "``\"volume_mapper\"`` in the ``self._theme`` is used. If using "
 "``'fixed_point'``, only ``UniformGrid`` types can be used."
 msgstr ""
+"使用するボリュームマッパーは名前で指定します．オプションには， ``'fixed_point'``， ``'gpu'`` ， ``'open_gl'``"
+" ， ``'smart'`` があります． ``None`` の場合， ``self._theme`` の ``\"volume_mapper\"`` "
+"が使用されます． ``'fixed_point'`` を使用する場合は、 ``UniformGrid`` タイプのみを使用することができます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:127
@@ -50480,6 +50524,8 @@ msgid ""
 "If a :class:`pyvista.UnstructuredGrid` is input, the 'ugrid' mapper "
 "(``vtkUnstructuredGridVolumeRayCastMapper``) will be used regargless."
 msgstr ""
+"class:`pyvista.UnstructuredGrid` が入力された場合、'ugrid' マッパー "
+"(``vtkUnstructuredGridVolumeRayCastMapper``) は関係なく使用されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:132
@@ -50489,6 +50535,10 @@ msgid ""
 "``'smart'`` simply checks if a GPU is available and if so, uses the "
 "``'gpu'`` mapper, otherwise using the ``'fixed_point'`` mapper."
 msgstr ""
+"``'smart'`` "
+"マッパーはレンダリングパラメータと利用可能なハードウェアに基づいて、リストアップされた他のマッパーの中から一つを選択します。ほとんどの場合、 "
+"``'smart'`` は GPU が利用可能かどうかを確認し、利用可能な場合は ``'gpu'`` マッパーを、そうでない場合は "
+"``'fixed_point'`` マッパーを使用します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:139
@@ -50496,6 +50546,8 @@ msgid ""
 "The ``'fixed_point'`` mapper is CPU-based and will have lower performance "
 "than the ``'gpu'`` or ``'open_gl'`` mappers."
 msgstr ""
+"``'fixed_point'`` マッパーは CPU ベースなので、 ``'gpu'`` や ``'open_gl'`` "
+"マッパーよりも低いパフォーマンスとなります。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:158
@@ -50552,7 +50604,7 @@ msgstr "鏡面パワー． ``0.0`` から ``128.0`` ．"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_volume:201
 msgid "Actor of the volume."
-msgstr ""
+msgstr "体積のアクター．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_volume.rst:3
 msgid "Show a built-in volume example with the coolwarm colormap."
@@ -50561,15 +50613,15 @@ msgstr "クールウォームのカラーマップを使って，内蔵された
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_volume.rst:26
 msgid ""
 "Create a volume from scratch and plot it using single vector of scalars."
-msgstr ""
+msgstr "ゼロからボリュームを作成し、スカラーの単一ベクトルを使用してプロットします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_volume.rst:50
 msgid "Plot a volume from scratch using RGBA scalars"
-msgstr ""
+msgstr "RGBAスカラーを使用してゼロからボリュームをプロットする"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.add_volume.rst:80
 msgid "Plot an UnstructuredGrid."
-msgstr ""
+msgstr "UnstructuredGridをプロットします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.background_color.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.background_color.rst:2
@@ -50641,17 +50693,19 @@ msgid ""
 "**raise_on_missing** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**raise_on_missing** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.clear_events_for_key:11
 msgid ""
 "Whether to raise a :class:`ValueError` if there are no events registered for"
 " the given key."
-msgstr ""
+msgstr "与えられたキーに対応するイベントが登録されていない場合に :class:`ValueError` を発生させるかどうかを指定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.clear_on_render_callbacks.rst:2
 msgid "clear\\_on\\_render\\_callbacks"
-msgstr ""
+msgstr "clear\\_on\\_render\\_callbacks"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.click_position.rst:2
 msgid "click\\_position"
@@ -50730,6 +50784,7 @@ msgid ""
 "See :ref:`anti_aliasing_example` for a full example demonstrating VTK's "
 "anti-aliasing approaches."
 msgstr ""
+"VTK のアンチエイリアシングのアプローチを示す完全な例については、 :ref:`anti_aliasing_example` を参照してください。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.disable_depth_of_field.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.disable_depth_of_field.rst:2
@@ -50757,6 +50812,8 @@ msgid ""
 "Enable again with :func:`enable_hidden_line_removal "
 "<Plotter.enable_hidden_line_removal>`."
 msgstr ""
+" :func:`enable_hidden_line_removal <Plotter.enable_hidden_line_removal>` "
+"で再度有効にします．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.disable_hidden_line_removal.rst:3
 msgid "Enable and then disable hidden line removal."
@@ -50782,6 +50839,7 @@ msgid ""
 "Enable again with :func:`enable_stereo_render "
 "<Plotter.enable_stereo_render>`"
 msgstr ""
+":func:`enable_stereo_render <BasePlotter.enable_stereo_render>` で再度有効にします．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.disable_stereo_render.rst:3
 msgid ""
@@ -50837,12 +50895,12 @@ msgstr "これにより，境界が柔らかくなり，ピクセル感がなく
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_anti_aliasing:13
 msgid "**aa_type** : :class:`python:str`, :obj:`optional`"
-msgstr ""
+msgstr "**aa_type** : :class:`python:str`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_anti_aliasing:9
 msgid "Anti-aliasing type. See the notes below. One of the following:"
-msgstr ""
+msgstr "アンチエイリアスの種類。以下の注意事項を参照してください。以下のいずれか。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_anti_aliasing:11
@@ -50873,6 +50931,8 @@ msgid ""
 "using this setting automatically enables this for all renderers. Defaults to"
 " the theme multi_samples."
 msgstr ""
+"``aa_type`` が ``\"msaa\"`` "
+"のときのマルチサンプルの数です。この設定を使用すると、すべてのレンダラーで自動的にこの設定が有効になることに注意してください。デフォルトでは、テーマのmulti_samplesが設定されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_anti_aliasing:34
@@ -50909,10 +50969,13 @@ msgid ""
 "well as smoothing out textures. FXAA is inferior to MSAA but is almost free "
 "computationally and is thus desirable on low end platforms."
 msgstr ""
+"FXAA または Fast Approximate Anti-Aliasing "
+"は、アンチエイリアシング技術の一つで、完全にポストプロセスで実行されます。FXAAは、シーンのジオメトリではなく、ラスタライズされた画像に対して動作します。そのため、FXAAを強制したり、FXAAを誤って使用すると、FXAAフィルターが、鮮明さのために通常シャープに保たれる視覚的オーバーレイの一部を平滑化したり、テクスチャを平滑化したりすることがあります。FXAA"
+" は MSAA よりも劣りますが、計算上はほとんど自由に使えるため、ローエンドのプラットフォームで は望ましいと言えます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.enable_anti_aliasing.rst:3
 msgid "Enable super-sample anti-aliasing (SSAA)."
-msgstr ""
+msgstr "スーパーサンプルアンチエイリアシング（SSAA）を有効にします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.enable_depth_of_field.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.enable_depth_of_field.rst:2
@@ -51024,6 +51087,8 @@ msgid ""
 "Disable this with :func:`disable_hidden_line_removal "
 "<Plotter.disable_hidden_line_removal>`."
 msgstr ""
+":func:`disable_hidden_line_removal <Plotter.disable_hidden_line_removal>` "
+"で無効化します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.enable_hidden_line_removal.rst:3
 msgid ""
@@ -51144,6 +51209,8 @@ msgid ""
 "See: "
 "https://www.researchgate.net/publication/2926068_LightKit_A_lighting_system_for_effective_visualization"
 msgstr ""
+"参照： "
+"https://www.researchgate.net/publication/2926068_LightKit_A_lighting_system_for_effective_visualization"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.enable_lightkit:7
@@ -51351,6 +51418,7 @@ msgid ""
 "Disable this with :func:`disable_stereo_render "
 "<Plotter.disable_stereo_render>`"
 msgstr ""
+":func:`disable_stereo_render <Plotter.disable_stereo_render>` で無効化します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.enable_stereo_render.rst:3
 msgid "Enable stereo rendering to show a cube as an anaglyph image."
@@ -51953,6 +52021,7 @@ msgid ""
 "This will scale up the screenshots taken of the render window to save a "
 "higher resolution image than what is rendered on screen."
 msgstr ""
+"これは、レンダーウィンドウのスクリーンショットを撮影して、画面上にレンダリングされるものよりも高い解像度の画像を保存するためにスケールアップします。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.image_scale:7
@@ -51960,31 +52029,33 @@ msgid ""
 "Image sizes will be the :py:attr:`window_size "
 "<pyvista.BasePlotter.window_size>` multiplied by this scale factor."
 msgstr ""
+"画像のサイズは、 :py:attr:`window_size <pyvista.BasePlotter.window_size>` "
+"にこのスケールファクターを乗じたものになります。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.image_scale.rst:3
 msgid "Double the resolution of a screenshot."
-msgstr ""
+msgstr "スクリーンショットの解像度を2倍にすることができます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.image_scale.rst:11
 msgid "Set the image scale from ``Plotter``."
-msgstr ""
+msgstr "``Plotter`` から画像のスケールを設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.image_scale_context.rst:2
 msgid "image\\_scale\\_context"
-msgstr ""
+msgstr "image\\_scale\\_context"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.image_scale_context:21
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:25
 msgid "**scale** : :class:`python:int`, :obj:`optional`"
-msgstr ""
+msgstr "**scale** : :class:`python:int`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.image_scale_context:8
 msgid ""
 "Integer scale factor.  Defaults to :attr:`pyvista.Plotter.image_scale`."
-msgstr ""
+msgstr "整数のスケールファクターです。 デフォルトは :attr:`pyvista.Plotter.image_scale` です。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.import_gltf.rst:2
 msgid "import\\_gltf"
@@ -52322,7 +52393,7 @@ msgstr "**step** : :class:`python:float`, :obj:`optional`"
 msgid ""
 "The timestep between flying to each camera position. Ignored when the "
 "plotter run \"off screen\"."
-msgstr ""
+msgstr "各カメラ位置へ飛ぶ間のタイムステップ。プロッタが \"画面外\" で実行された場合は無視されます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.orbit_on_path:23
@@ -52516,12 +52587,12 @@ msgstr "remove\\_chart"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_chart:18
 msgid "**chart_or_index** : :obj:`Chart` or :class:`python:int`"
-msgstr ""
+msgstr "**chart_or_index** : :obj:`Chart` または :class:`python:int`"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_chart:17
 msgid "Chart or python:int"
-msgstr ""
+msgstr "チャートまたは python:int"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.remove_chart:8
@@ -52610,6 +52681,8 @@ msgid ""
 "Render upon scalar bar removal.  Set this to ``False`` to stop the render "
 "window from rendering when a scalar bar is removed."
 msgstr ""
+"スカラーバーの除去時にレンダリングします．スカラーバーが削除されたときにレンダリングウィンドウがレンダリングされないようにするには，これを "
+"``False`` に設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.remove_scalar_bar.rst:3
 msgid "Remove a scalar bar from a plotter."
@@ -52622,7 +52695,7 @@ msgstr "render"
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:4
 msgid "Will not render until ``show`` has been called."
-msgstr ""
+msgstr "``show`` が呼ばれるまで、レンダリングは行われません。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.render:6
@@ -52631,20 +52704,23 @@ msgid ""
 "<pyvista.BasePlotter.add_on_render_callback>` and the ``render_event=False``"
 " option set will still execute on any call."
 msgstr ""
+":func:`add_on_render_callback() "
+"<pyvista.BasePlotter.add_on_render_callback>` と ``render_event=False`` "
+"オプションで設定されたレンダーコールバックは、どの呼び出しに対しても実行されます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.render_window.rst:2
 msgid "render\\_window"
-msgstr ""
+msgstr "render\\_window"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.render_window:4
 msgid "If the plotter is closed, this will return None."
-msgstr ""
+msgstr "プロッタが閉じている場合は、None を返します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.BasePlotter.render_window:17
 msgid "Subclass must set ``ren_win`` on initialization."
-msgstr ""
+msgstr "サブクラスは初期化時に ``ren_win`` を設定する必要があります。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.renderer.rst:2
 msgid "renderer"
@@ -52865,6 +52941,8 @@ msgid ""
 "If ``None`` this will use the ``image_scale`` property on this plotter which"
 " defaults to one."
 msgstr ""
+"高解像度の画像を作成するために、ウィンドウサイズをスケールするための係数を設定します。もし ``None`` ならば、このプロッタの "
+"``image_scale`` プロパティを使用します、デフォルトは1です。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.screenshot:30
@@ -52932,7 +53010,7 @@ msgstr "下部の背景色を黒，上部の背景色を白に設定します．
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_chart_interaction.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_chart_interaction.rst:2
 msgid "set\\_chart\\_interaction"
-msgstr ""
+msgstr "set\\_chart\\_interaction"
 
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:4
@@ -52941,6 +53019,8 @@ msgid ""
 "with other charts in the active renderer is only disabled when ``toggle`` is"
 " ``False``."
 msgstr ""
+"他のレンダラーにある他のチャートとのインタラクションは無効です。アクティブなレンダラーの他のチャートとのインタラクションは ``toggle`` が "
+"``False`` のときだけ無効になります。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:16
@@ -52951,6 +53031,9 @@ msgid ""
 ":class:`python:int`, :class:`python:list` :obj:`of` :obj:`Chart` or "
 ":class:`python:list` :obj:`of` :class:`python:int`"
 msgstr ""
+"**interactive** : :ref:`bool <python:bltin-boolean-values>`, :obj:`Chart`, "
+":class:`python:int`, :class:`python:list` :obj:`of` :obj:`Chart` or "
+":class:`python:list` :obj:`of` :class:`python:int`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:15
@@ -52959,13 +53042,14 @@ msgstr ""
 msgid ""
 "bool, Chart, python:int, python:list of Chart or python:list of python:int"
 msgstr ""
+"bool, Chart, python:int, python:list of Chart or python:list of python:int"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:10
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:11
 msgid "Following parameter values are accepted:"
-msgstr ""
+msgstr "以下のパラメータ値が使用可能です。"
 
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:13
@@ -52973,6 +53057,7 @@ msgid ""
 "A boolean to enable (``True``) or disable (``False``) interaction with all "
 "charts in the active renderer."
 msgstr ""
+"アクティブなレンダラーのすべてのチャートとのインタラクションを有効 (``True``) または無効 (``False``) にするためのブール値です。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:14
@@ -52982,6 +53067,7 @@ msgid ""
 "The chart or its index to enable interaction with. Interaction with multiple"
 " charts can be enabled by passing a list of charts or indices."
 msgstr ""
+"相互作用を有効にするチャートまたはそのインデックス。チャートまたはインデックスのリストを渡すことで、複数のチャートとのインタラクションを有効にすることができる。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:21
@@ -52991,6 +53077,8 @@ msgid ""
 "**toggle** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
+"**toggle** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:19
@@ -53001,18 +53089,20 @@ msgid ""
 " the provided chart(s) is toggled. Only applicable when ``interactive`` is "
 "not a boolean."
 msgstr ""
+"提供された (複数の) チャートとのインタラクションを有効にする代わりに、提供された (複数の) チャートとのインタラクションがトグルされます。 "
+"``interactive`` がブール値でない場合のみ適用されます。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:38
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:39
 msgid ":class:`python:list` :obj:`of` :obj:`Chart`"
-msgstr ""
+msgstr ":class:`python:list` :obj:`of` :obj:`Chart`"
 
 #: ../../pyvista/pyvista/plotting/renderers.pydocstring of
 #: pyvista.plotting.renderers.Renderers.set_chart_interaction:27
 msgid "The list of all interactive charts for the active renderer."
-msgstr ""
+msgstr "アクティブなレンダラーのすべてのインタラクティブチャートのリストです。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_color_cycler.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_color_cycler.rst:2
@@ -53229,6 +53319,7 @@ msgid ""
 "scale each of the actors in the scene. If a scale was set on an actor "
 "previously, it will be reset to the scale of this Renderer."
 msgstr ""
+"レンダラーにスケールを設定することは、シーン内の各アクターを個別にスケールするのに便利な方法です。以前にアクタにスケールが設定されていた場合、このレンダラのスケールにリセットされます。"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.set_scale:17
@@ -53278,7 +53369,7 @@ msgstr "すべてのアクターが見えるようにカメラをリセットし
 msgid ""
 "Set the scale in the z direction to be 2 times that of nominal.  Leave the "
 "other axes unscaled."
-msgstr ""
+msgstr "z方向のスケールを表示上の2倍に設定します． 他の軸はスケールしないままにしておきます．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.set_viewup.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.set_viewup.rst:2
@@ -53644,7 +53735,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:122
 msgid "Use ``vtkTextActor3D`` for titles and labels."
-msgstr ""
+msgstr "タイトルとラベルには ``vtkTextActor3D`` を使用します。"
 
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:125
@@ -53697,7 +53788,7 @@ msgstr "store\\_image"
 msgid ""
 "``store_image`` is no longer used. Images are automatically cached as "
 "needed."
-msgstr ""
+msgstr "``store_image`` は使用されなくなりました。画像は必要に応じて自動的にキャッシュされます。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.store_mouse_position.rst:2
 msgid "store\\_mouse\\_position"
@@ -53735,7 +53826,7 @@ msgstr "幅2のプロットを作成し，右側のプロットの背景をオ�
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.suppress_rendering.rst:2
 msgid "suppress\\_rendering"
-msgstr ""
+msgstr "suppress\\_rendering"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.theme.rst:2
 msgid "theme"
@@ -53837,6 +53928,8 @@ msgid ""
 "This will potentially slow down the interactor. No callbacks supported here "
 "- use :func:`pyvista.Plotter.track_click_position` instead."
 msgstr ""
+"これにより，インターアクターの速度が低下する可能性があります．ここではコールバックはサポートされていません-代わりに "
+":func:`pyvista.Plotter.track_click_position` を使用してください．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.unlink_views.rst:2
 msgid "unlink\\_views"
@@ -54136,22 +54229,22 @@ msgstr "ウィンドウサイズを ``200 x 200`` から ``400 x 400`` に変更
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.window_size_context.rst:2
 msgid "window\\_size\\_context"
-msgstr ""
+msgstr "window\\_size\\_context"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.window_size_context:18
 msgid "**window_size** : :obj:`Sequence`, :obj:`optional`"
-msgstr ""
+msgstr "**window_size** : :obj:`Sequence`, :obj:`optional`"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.window_size_context:8
 msgid ""
 "Window size in pixels.  Defaults to :attr:`pyvista.Plotter.window_size`."
-msgstr ""
+msgstr "ウィンドウサイズをピクセル単位で指定します。 デフォルトは :attr:`pyvista.Plotter.window_size` です。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.window_size_context.rst:3
 msgid "Take two different screenshots with two different window sizes."
-msgstr ""
+msgstr "2種類のウィンドウサイズで2種類のスクリーンショットを撮影します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.BasePlotter.write_frame.rst:2
 msgid "write\\_frame"
@@ -56484,7 +56577,7 @@ msgstr "``'pythreejs'`` : ``pythreejs`` ウィジェットを表示します．"
 msgid ""
 "A dictionary ``jupyter_kwargs`` can also be passed to further configure how "
 "the backend displays."
-msgstr ""
+msgstr "辞書 ``jupyter_kwargs`` も渡すことができ、バックエンドの表示方法をさらに設定することができます。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:72
@@ -57975,7 +58068,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:2
 msgid "Set or toggle interaction with charts for this renderer."
-msgstr ""
+msgstr "このレンダラーのチャートとのインタラクションを設定またはトグルします。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:377:<autosummary>:1
 msgid ""
@@ -58206,7 +58299,7 @@ msgstr ":py:obj:`Renderer.has_charts <pyvista.Renderer.has_charts>`\\"
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.has_charts:2
 msgid "Return whether this renderer has charts."
-msgstr ""
+msgstr "このレンダラがチャートを持つかどうかを返します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 msgid ":py:obj:`Renderer.height <pyvista.Renderer.height>`\\"
@@ -58383,7 +58476,7 @@ msgstr "has\\_border"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.has_charts.rst:2
 msgid "has\\_charts"
-msgstr ""
+msgstr "has\\_charts"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.height.rst:2
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes._ColorbarConfig.height.rst:2
@@ -58439,19 +58532,19 @@ msgstr "背景色を黒にして，プロットの上部に白へのグラデー
 msgid ""
 "Interaction with other charts in this renderer is disabled when ``toggle`` "
 "is ``False``."
-msgstr ""
+msgstr "``toggle`` が ``False`` の場合、このレンダラ内の他のチャートとのインタラクションは無効になります。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:12
 msgid ""
 "A boolean to enable (``True``) or disable (``False``) interaction with all "
 "charts."
-msgstr ""
+msgstr "すべてのチャートとのインタラクションを有効 (``True``) または無効 (``False``) にするためのブール値です。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Charts.set_interaction:26
 msgid "The list of all interactive charts for this renderer."
-msgstr ""
+msgstr "このレンダラーのすべてのインタラクティブチャートのリストです。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.Renderer.viewport.rst:2
 msgid "viewport"
@@ -59538,7 +59631,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.interpolate_before_map:2
 msgid "Return or set whether to interpolate colors before mapping."
-msgstr ""
+msgstr "マッピングの前に色を補間するかどうかを返すか設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59577,7 +59670,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.lighting_params:2
 msgid "Return or set the default lighting configuration."
-msgstr ""
+msgstr "デフォルトの照明の設定を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59589,7 +59682,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.line_width:2
 msgid "Return or set the default line width."
-msgstr ""
+msgstr "デフォルトの線幅を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59661,7 +59754,7 @@ msgstr ":py:obj:`DefaultTheme.opacity <pyvista.themes.DefaultTheme.opacity>`\\"
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.opacity:2
 msgid "Return or set the opacity."
-msgstr ""
+msgstr "不透明度を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59687,7 +59780,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.point_size:2
 msgid "Return or set the default point size."
-msgstr ""
+msgstr "デフォルトポイントサイズを返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59701,7 +59794,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.render_lines_as_tubes:2
 msgid "Return or set the default ``render_lines_as_tubes`` parameter."
-msgstr ""
+msgstr "デフォルトの ``render_lines_as_tubes`` のパラメーターを返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -59783,7 +59876,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.show_vertices:2
 msgid "Return or set the default vertex visibility."
-msgstr ""
+msgstr "既定の頂点の表示を設定します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.rst:310:<autosummary>:1
 msgid ""
@@ -60178,6 +60271,10 @@ msgid ""
 " the scalars will be interpolated across the topology of the dataset which "
 "is more accurate."
 msgstr ""
+"もし ``interpolate_before_map`` が off "
+"の場合、カラーマッピングはポリゴンポイントで行われ、色は補間されます。これは一般的に精度が低く、一方 "
+"``interpolate_before_map`` が on (デフォルト) "
+"の場合、スカラーはデータセットのトポロジー全体で補間され、より正確になります。"
 
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes.DefaultTheme.interpolate_before_map:22
@@ -60189,12 +60286,16 @@ msgid ""
 "Load a cylinder which has cells with a wide spread >>> cyl = "
 "pv.Cylinder(direction=(0, 0, 1), height=2).elevation()"
 msgstr ""
+"セルが大きく広がっている円柱を読み込みます >>> cyl = pv.Cylinder(direction=(0, 0, 1), "
+"height=2).elevation()"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.interpolate_before_map.rst:10
 msgid ""
 "Common display argument to make sure all else is constant >>> dargs = "
 "dict(scalars='Elevation', cmap='rainbow', show_edges=True)"
 msgstr ""
+"他のすべてが一定であることを確認するための共通の表示引数 >> dargs = dict(scalars='Elevation', "
+"cmap='rainbow', show_edges=True)"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.jupyter_backend.rst:2
 msgid "jupyter\\_backend"
@@ -60456,7 +60557,7 @@ msgstr "show\\_vertices"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.show_vertices.rst:3
 msgid "Show vertices globally by default."
-msgstr ""
+msgstr "デフォルトで頂点をグローバルに表示します．"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes.DefaultTheme.silhouette.rst:2
 msgid "silhouette"
@@ -61027,7 +61128,7 @@ msgstr ""
 #: ../../pyvista/pyvista/themes.pydocstring of
 #: pyvista.themes._SilhouetteConfig.enabled:2
 msgid "Return or set whether silhouette is on or off."
-msgstr ""
+msgstr "シルエットのON/OFFを返す、または設定します。"
 
 #: ../../pyvista/doc/api/plotting/_autosummary/pyvista.themes._SilhouetteConfig.rst:60:<autosummary>:1
 msgid ""
@@ -61531,6 +61632,8 @@ msgid ""
 ":py:obj:`Chart2D.show <pyvista.Chart2D.show>`\\ \\(\\[interactive\\, "
 "off\\_screen\\, ...\\]\\)"
 msgstr ""
+":py:obj:`Chart2D.show <pyvista.Chart2D.show>`\\ \\(\\[interactive\\, "
+"off\\_screen\\, ...\\]\\)"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:82:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:32:<autosummary>:1
@@ -61573,6 +61676,8 @@ msgid ""
 ":py:obj:`Chart2D.active_background_color "
 "<pyvista.Chart2D.active_background_color>`\\"
 msgstr ""
+":py:obj:`Chart2D.active_background_color "
+"<pyvista.Chart2D.active_background_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:388:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:264:<autosummary>:1
@@ -61587,13 +61692,15 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.active_background_color:2
 msgid "Return or set the chart's background color in interactive mode."
-msgstr ""
+msgstr "インタラクティブモードでのチャートの背景色を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:388:<autosummary>:1
 msgid ""
 ":py:obj:`Chart2D.active_border_color "
 "<pyvista.Chart2D.active_border_color>`\\"
 msgstr ""
+":py:obj:`Chart2D.active_border_color "
+"<pyvista.Chart2D.active_border_color>`\\"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:388:<autosummary>:1
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.rst:264:<autosummary>:1
@@ -61608,7 +61715,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.ChartPie.active_border_color:2
 msgid "Return or set the chart's border color in interactive mode."
-msgstr ""
+msgstr "インタラクティブモードでのチャートの境界線色を返すか設定します．"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.rst:388:<autosummary>:1
 msgid ":py:obj:`Chart2D.background_color <pyvista.Chart2D.background_color>`\\"
@@ -61880,7 +61987,7 @@ msgstr "緑の背景の2Dチャートを作成します．"
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.active_background_color.rst:33
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.active_background_color.rst:24
 msgid "Set the active background color to blue and activate the chart."
-msgstr ""
+msgstr "アクティブな背景色を青に設定し、チャートをアクティブにします。"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.Chart2D.active_border_color.rst:2
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartBox.active_border_color.rst:2
@@ -61901,7 +62008,7 @@ msgstr "赤色の太い破線の境界線を持つ2Dチャートを作成しま�
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartMPL.active_border_color.rst:35
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.ChartPie.active_border_color.rst:26
 msgid "Set the active border color to yellow and activate the chart."
-msgstr ""
+msgstr "アクティブな境界線色を黄に設定し、チャートをアクティブにします。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.AreaPlot:12
@@ -62772,13 +62879,15 @@ msgid ""
 "**interactive** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
 msgstr ""
+"**interactive** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:True`"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:8
 msgid ""
 "Enable interaction with the chart. Interaction is not enabled when plotting "
 "off screen."
-msgstr ""
+msgstr "チャートとのインタラクションを有効にします。オフスクリーンでプロットする場合、インタラクションは有効になりません。"
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:12
@@ -63840,7 +63949,7 @@ msgstr "Chart2D"
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:9
 msgid "The chart containing this plot."
-msgstr ""
+msgstr "このプロットを含むチャート。"
 
 #: ../../pyvista/doc/api/plotting/charts/_autosummary/pyvista.plotting.charts.AreaPlot.rst:3
 msgid ""
@@ -67797,10 +67906,14 @@ msgid ""
 "plotters can be used in a web context with both server and client-side "
 "rendering."
 msgstr ""
+"PyVistaの ``pyvista.trame`` モジュールを使うと、PyVistaから `Trame "
+"<https://kitware.github.io/trame/index.html>`_ "
+"ウィジェットにアクセスして、Webベースの3Dビジュアライゼーションを作成することができるようになります。これにより、PyVista "
+"APIを使用してVTKパイプラインにアクセスできるので、PyVistaとTrameをペアにして、PyVistaプロッタをサーバーとクライアントサイドの両方のレンダリングでWebコンテキストで使用することができるようになります。"
 
 #: ../../pyvista/doc/api/plotting/trame.rst:11
 msgid "For the full user guide, see :ref:`trame_jupyter`."
-msgstr ""
+msgstr "完全なユーザーガイドについては、 :ref:`trame_jupyter` を参照してください。"
 
 #: ../../pyvista/doc/api/plotting/trame.rst:15
 msgid ""
@@ -67808,6 +67921,8 @@ msgid ""
 "because it is not in the top level namespace of the PyVista package. We will"
 " fix this later"
 msgstr ""
+"このモジュールは PyVista パッケージのトップレベルの名前空間にないため、Sphinx と numpydoc "
+"がこのモジュールをドキュメント化する際に問題が発生しています。これは後で修正する予定です。"
 
 #: ../../pyvista/doc/api/readers/_autosummary/pyvista.AVSucdReader.rst:2
 msgid "pyvista.AVSucdReader"
