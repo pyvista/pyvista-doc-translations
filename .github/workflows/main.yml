@@ -43,6 +43,10 @@ jobs:
         sudo apt-get install -y --no-install-recommends python3-tk pandoc
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
+    - name: Install Transifex CLI
+      run: |
+        curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+        mv tx /usr/local/bin/tx
     - name: update
       env:
         SPHINXINTL_TRANSIFEX_ORGANIZATION_NAME: tkoyama010
