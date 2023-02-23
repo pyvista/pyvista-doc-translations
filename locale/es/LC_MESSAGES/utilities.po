@@ -1,0 +1,2392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2021, The PyVista Developers
+# This file is distributed under the same license as the PyVista package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyVista 0.31.dev0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-16 00:45+0000\n"
+"PO-Revision-Date: 2020-08-05 16:06+0000\n"
+"Language-Team: Spanish (https://www.transifex.com/tkoyama010/teams/112279/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.array_from_vtkmatrix.rst:2
+msgid "pyvista.array\\_from\\_vtkmatrix"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Convert a vtk matrix to a ``numpy.ndarray``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:0
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.fit_plane_to_points:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:0
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:0
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:0
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:0
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Line:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.array_from_vtkmatrix:3
+msgid ""
+"The vtk matrix to be converted to a ``numpy.ndarray``. Returned ndarray has "
+"shape (3, 3) or (4, 4) as appropriate."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.cell_array.rst:2
+msgid "pyvista.cell\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cell_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Return cell array of a vtk object."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.compare_images.rst:2
+msgid "pyvista.compare\\_images"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:1
+#: ../../pyvista/docs/utilities/utilities.rst:70:<autosummary>:1
+msgid "Compare two different images of the same size."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:3
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:6
+msgid ""
+"Render window, numpy array representing the output of a render window, or "
+"``vtkImageData``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:9
+msgid ""
+"Threshold tolerance for pixel differences.  This should be greater than 0, "
+"otherwise it will always return an error, even on identical images."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:13
+msgid ""
+"When disabled, computes the mean pixel error over the entire image using "
+"numpy.  The difference between pixel is calculated for each RGB channel, "
+"summed, and then divided by the number of pixels.  This is faster than using"
+" ``vtk.vtkImageDifference`` but potentially less accurate."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_vtk_type:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:0
+msgid "Returns"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:20
+msgid ""
+"**error** -- Total error between the images if using ``use_vtk=True``, and "
+"the mean pixel error when ``use_vtk=False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_vtk_type:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:0
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:0
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:0
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:0
+msgid "Return type"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:25
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:34
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:23
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:26
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:9
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:16
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:22
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:13
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:24
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:22
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:19
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:20
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:7
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:17
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:16
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:41
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:23
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:33
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:13
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:26
+msgid "Compare two active plotters."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/regression.pydocstring of
+#: pyvista.utilities.regression.compare_images:35
+msgid "Compare images from file."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.convert_array.rst:2
+msgid "pyvista.convert\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Convert a NumPy array to a vtkDataArray or vice versa."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:3
+msgid "A numpy array or vtkDataArry to convert"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:5
+msgid "The name of the data array for VTK"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:7
+msgid "if input is numpy array then deep copy values"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_array:10
+msgid ""
+"the converted array (if input is a NumPy ndaray then returns "
+"``vtkDataArray`` or is input is ``vtkDataArray`` then returns NumPy "
+"``ndarray``). If pdf==True and the input is ``vtkDataArry``, return a pandas"
+" DataFrame."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.convert_string_array.rst:2
+msgid "pyvista.convert\\_string\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_string_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Convert a numpy array of strings to a vtkStringArray or vice versa."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.convert_string_array:3
+msgid ""
+"Note that this is terribly inefficient - inefficient support is better than "
+"no support :). If you have ideas on how to make this faster, please consider"
+" opening a pull request."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.cubemap.rst:2
+msgid "pyvista.cubemap"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Construct a cubemap from 6 images."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:3
+msgid "Each of the 6 images must be in the following format:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:5
+msgid "<prefix>negx<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:6
+msgid "<prefix>negy<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:7
+msgid "<prefix>negz<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:8
+msgid "<prefix>posx<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:9
+msgid "<prefix>posy<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:10
+msgid "<prefix>posz<ext>"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:12
+msgid "Prefix may be empty, and extension will default to ``'.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:14
+msgid "For example, if you have 6 images with the skybox2 prefix:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:16
+msgid "``'skybox2-negx.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:17
+msgid "``'skybox2-negy.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:18
+msgid "``'skybox2-negz.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:19
+msgid "``'skybox2-posx.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:20
+msgid "``'skybox2-posy.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:21
+msgid "``'skybox2-posz.jpg'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:23
+msgid "Prefix to the filename."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:25
+msgid "The filename extension.  For example ``'.jpg'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:27
+msgid "Directory containing the cubemap images."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.cubemap:30
+msgid "Texture with cubemap."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.field_array.rst:2
+msgid "pyvista.field\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.field_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Return field array of a vtk object."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.fit_plane_to_points.rst:2
+msgid "pyvista.fit\\_plane\\_to\\_points"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.fit_plane_to_points:1
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid "Fit a plane to a set of points."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.fit_plane_to_points:3
+msgid "Size n by 3 array of points to fit a plane through"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.fit_plane_to_points:5
+msgid "If true, also returns the center and normal used to generate the plane"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.get_array.rst:2
+msgid "pyvista.get\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Search point, cell and field data for an array."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:3
+msgid "The name of the array to get the range."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:5
+msgid ""
+"When scalars is specified, this is the preferred array type to search for in"
+" the dataset.  Must be either ``'point'``, ``'cell'``, or ``'field'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:9
+msgid "Return info about the array rather than the array itself."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_array:11
+msgid "Boolean to control whether to throw an error if array is not present."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.get_vtk_type.rst:2
+msgid "pyvista.get\\_vtk\\_type"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_vtk_type:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Look up the VTK type for a give python data type."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_vtk_type:3
+msgid "Corrects for string type mapping issues."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.get_vtk_type:5
+msgid "**int**"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.image_to_texture.rst:2
+msgid "pyvista.image\\_to\\_texture"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.image_to_texture:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ""
+"Convert ``vtkImageData`` (:class:`pyvista.UniformGrid`) to a ``vtkTexture``."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.is_pyvista_dataset.rst:2
+msgid "pyvista.is\\_pyvista\\_dataset"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.is_pyvista_dataset:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Return True if the Object is a PyVista wrapped dataset."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.lines_from_points.rst:2
+msgid "pyvista.lines\\_from\\_points"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:1
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid "Make a connected line set given an array of points."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:3
+msgid ""
+"Points representing the vertices of the connected segments. For example, two"
+" line segments would be represented as:  np.array([[0, 0, 0], [1, 0, 0], [1,"
+" 1, 0]])"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:3
+msgid ""
+"Points representing the vertices of the connected segments. For example, two"
+" line segments would be represented as:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:6
+msgid "np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0]])"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:8
+msgid "If True, close the line segments into a loop"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.lines_from_points:11
+msgid "**lines** -- PolyData with lines and cells."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.numpy_to_texture.rst:2
+msgid "pyvista.numpy\\_to\\_texture"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.numpy_to_texture:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Convert a NumPy image array to a vtk.vtkTexture."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.point_array.rst:2
+msgid "pyvista.point\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.point_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Return point array of a vtk object."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.read.rst:2
+msgid "pyvista.read"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:1
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid "Read any VTK file."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:3
+msgid ""
+"It will figure out what reader to use then wrap the VTK object for use in "
+"PyVista."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:6
+msgid ""
+"The string path to the file to read. If a list of files is given, a "
+":class:`pyvista.MultiBlock` dataset is returned with each file being a "
+"separate block in the dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:10
+msgid ""
+"A dictionary of attributes to call on the reader. Keys of dictionary are the"
+" attribute/method names and values are the arguments passed to those calls. "
+"If you do not have any attributes to call, pass ``None`` as the value."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:15
+msgid ""
+"If specified, the reader will be chosen by an extension which is different "
+"to its actual extension. For example, ``'.vts'``, ``'.vtu'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:19
+msgid "Format of file to read with meshio."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:24
+msgid "Load an example mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:30
+msgid "Load a vtk file"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read:34
+msgid "Load a meshio file"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.read_exodus.rst:2
+msgid "pyvista.read\\_exodus"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:1
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid "Read an ExodusII file (``'.e'`` or ``'.exo'``)."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:3
+msgid "The path to the exodus file to read."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:5
+msgid ""
+"When ``True`` then this reader will report a continuous time range [0,1] and"
+" animate the displacements in a periodic sinusoid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:9
+msgid ""
+"Geometric locations can include displacements. When ``True``, the nodal "
+"positions are 'displaced' by the standard exodus displacement vector. If "
+"displacements are turned off, the user can explicitly add them by applying a"
+" warp filter."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:14
+msgid ""
+"This is a number between 0 and 1 that is used to scale the "
+"``DisplacementMagnitude`` in a sinusoidal pattern."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:17
+msgid "Read in data associated with points.  Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:19
+msgid "Read in data associated with cells.  Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_exodus:21
+msgid ""
+"The name of the array that store the mapping from side set cells back to the"
+" global id of the elements they bound."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.read_legacy.rst:2
+msgid "pyvista.read\\_legacy"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_legacy:1
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid "Use VTK's legacy reader to read a file."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.read_texture.rst:2
+msgid "pyvista.read\\_texture"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.read_texture:1
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid "Load a ``vtkTexture`` from an image file."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.save_meshio.rst:2
+msgid "pyvista.save\\_meshio"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:1
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid "Save mesh to file using meshio."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:3
+msgid "Any PyVista mesh/spatial data type."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/fileio.pydocstring of
+#: pyvista.utilities.fileio.save_meshio:5
+msgid "File type for meshio to save."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.VtkErrorCatcher.rst:2
+msgid "pyvista.utilities.VtkErrorCatcher"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:1
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid "Context manager to temporarily catch VTK errors."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:3
+msgid ""
+"Raise a ``RuntimeError`` when a VTK error is encountered.  Defaults to "
+"``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:5
+msgid ""
+"Determine whether VTK errors raised within the context should also be sent "
+"to logging.  Defaults to ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher:10
+msgid "Catch VTK errors using the context manager."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.VtkErrorCatcher.__init__:1
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.VtkErrorCatcher.rst:16:<autosummary>:1
+msgid "Initialize context manager."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.VtkErrorCatcher.rst:13
+msgid "Methods"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.VtkErrorCatcher.rst:16:<autosummary>:1
+msgid ""
+":obj:`__init__ <pyvista.utilities.VtkErrorCatcher.__init__>`\\ "
+"\\(\\[raise\\_errors\\, send\\_to\\_logging\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.is_inside_bounds.rst:2
+msgid "pyvista.utilities.is\\_inside\\_bounds"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.is_inside_bounds:1
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid "Check if a point is inside a set of bounds."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.is_inside_bounds:3
+msgid "This is implemented through recursion so that this is N-dimensional."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.utilities.set_error_output_file.rst:2
+msgid "pyvista.utilities.set\\_error\\_output\\_file"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/errors.pydocstring of
+#: pyvista.utilities.errors.set_error_output_file:1
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid "Set a file to write out the VTK errors."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.vector_poly_data.rst:2
+msgid "pyvista.vector\\_poly\\_data"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vector_poly_data:1
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid "Create a vtkPolyData object composed of vectors."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.vtk_bit_array_to_char.rst:2
+msgid "pyvista.vtk\\_bit\\_array\\_to\\_char"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtk_bit_array_to_char:1
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid "Cast vtk bit array to a char array."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.vtk_points.rst:2
+msgid "pyvista.vtk\\_points"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtk_points:1
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid "Convert numpy array or array-like to a vtkPoints object."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.vtkmatrix_from_array.rst:2
+msgid "pyvista.vtkmatrix\\_from\\_array"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.vtkmatrix_from_array:3
+msgid ""
+"The array or array-like to be converted to a vtk matrix. Shape (3, 3) gets "
+"converted to a ``vtk.vtkMatrix3x3``, shape (4, 4) gets converted to a "
+"``vtk.vtkMatrix4x4``. No other shapes are valid."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/api-autogen/pyvista.wrap.rst:2
+msgid "pyvista.wrap"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:1
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid "Wrap any given VTK data object to its appropriate pyvista data object."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:3
+msgid ""
+"Other formats that are supported include: * 2D :class:`numpy.ndarray` of XYZ"
+" vertices * 3D :class:`numpy.ndarray` representing a volume. Values will be "
+"scalars. * 3D :class:`trimesh.Trimesh` mesh. * 3D :class:`meshio` mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:9
+msgid "Dataset to wrap."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:12
+msgid "**wrapped_dataset** -- The `pyvista` wrapped dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:17
+msgid "Wrap a numpy array representing a random point cloud."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:32
+msgid "Wrap a Trimesh object."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/helpers.pydocstring of
+#: pyvista.utilities.helpers.wrap:49
+msgid "Wrap a VTK object."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/geometric.rst:2
+msgid "Geometric Objects"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/geometric.rst:4
+msgid ""
+"PyVista includes a few functions to generate simple geometric objects. The "
+"code documentation for these functions are on this page; to see what these "
+"functions create, check out the example: :ref:`ref_geometric_example`."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:1
+msgid "Create a vtk Sphere."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:3
+msgid "Sphere radius"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:5
+msgid "Center in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:7
+msgid "Direction the top of the sphere points to in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:9
+msgid ""
+"Set the number of points in the longitude direction (ranging from "
+"start_theta to end theta)."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:12
+msgid ""
+"Set the number of points in the latitude direction (ranging from start_phi "
+"to end_phi)."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:15
+msgid "Starting longitude angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:17
+msgid "Ending longitude angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:19
+msgid "Starting latitude angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:21
+msgid "Ending latitude angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Sphere:24
+msgid "**sphere** -- Sphere mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:1
+msgid "Create the surface of a cylinder."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:3
+msgid "See also :func:`pyvista.CylinderStructured`."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:5
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:11
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:3
+msgid "Location of the centroid in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:7
+msgid "Direction cylinder points to  in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:9
+msgid "Radius of the cylinder."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:11
+msgid "Height of the cylinder."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:13
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:15
+msgid "Number of points on the circular face of the cylinder."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:15
+msgid "Cap cylinder ends with polygons.  Default True"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cylinder:18
+msgid "**cylinder** -- Cylinder surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:1
+msgid "Create a cylinder mesh as a :class:`pyvista.StructuredGrid`."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:3
+msgid ""
+"The end caps are left open. This can create a surface mesh if a single value"
+" for the ``radius`` is given or a 3D mesh if multiple radii are given as a "
+"list/array in the ``radius`` argument."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:7
+msgid "Radius of the cylinder. If an iterable"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:9
+msgid "Height (length) of the cylinder along its Z-axis"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:13
+msgid "Direction cylinder Z-axis in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CylinderStructured:17
+msgid "Number of points along the height (Z-axis) of the cylinder"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:1
+msgid "Create a vtk Arrow."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:3
+msgid "Start location in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:5
+msgid "Direction the arrow points to in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:7
+msgid "Length of the tip."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:9
+msgid "Radius of the tip."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:11
+msgid "Number of faces around the tip."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:13
+msgid "Radius of the shaft."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:15
+msgid "Number of faces around the shaft."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:17
+msgid ""
+"Scale factor of the entire object, default is None (i.e. scale of 1). 'auto'"
+" scales to length of direction array."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Arrow:21
+msgid "**arrow** -- Arrow surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:1
+msgid "Create a plane."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:5
+msgid "Direction of the plane's normal in [x, y, z]"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:7
+msgid "Size of the plane in the i direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:9
+msgid "Size of the plane in the j direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:11
+msgid "Number of points on the plane in the i direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:13
+msgid "Number of points on the plane in the j direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Plane:16
+msgid "**plane** -- Plane mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Line:1
+msgid "Create a line."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Line:3
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Line:5
+msgid "Location in [x, y, z]."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Line:7
+msgid "number of pieces to divide line into"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:1
+msgid "Create a cube."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:3
+msgid ""
+"It's possible to specify either the center and side lengths or just the "
+"bounds of the cube. If ``bounds`` are given, all other arguments are "
+"ignored."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:7
+msgid "Center in [x, y, z]."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:9
+msgid "length of the cube in the x-direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:11
+msgid "length of the cube in the y-direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:13
+msgid "length of the cube in the z-direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cube:15
+msgid ""
+"Specify the bounding box of the cube. If given, all other arguments are "
+"ignored. ``(xMin,xMax, yMin,yMax, zMin,zMax)``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:1
+msgid "Create a box with solid faces for the given bounds."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:3
+msgid ""
+"Specify the bounding box of the cube. ``(xMin, xMax, yMin, yMax, zMin, "
+"zMax)``"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:6
+msgid "Level of subdivision of the faces."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Box:8
+msgid ""
+"Flag to tell the source to generate either a quad or two triangle for a set "
+"of four points.  Default ``True``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:1
+msgid "Create a cone."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:3
+msgid "Center in [x, y, z]. Middle of the axis of the cone."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:5
+msgid "Direction vector in [x, y, z]. Orientation vector of the cone."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:7
+msgid "Height along the cone in its specified direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:9
+msgid "Base radius of the cone."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:11
+msgid "Turn on/off whether to cap the base of the cone with a polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:13
+msgid "The angle in degrees between the axis of the cone and a generatrix."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Cone:15
+msgid "Number of facets used to represent the cone."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:1
+msgid "Create a polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:3
+msgid "Center in [x, y, z]. Middle of the axis of the polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:5
+msgid "The radius of the polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:7
+msgid "Direction vector in [x, y, z]. Orientation vector of the polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Polygon:9
+msgid "Number of sides of the polygon."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:1
+msgid "Create a polygonal disk with a hole in the center."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:3
+msgid ""
+"The disk has zero height. The user can specify the inner and outer radius of"
+" the disk, and the radial and circumferential resolution of the polygonal "
+"representation."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:7
+msgid "Center in [x, y, z]. Middle of the axis of the disc."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:9
+msgid "The inner radius."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:11
+msgid "The outer radius."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:13
+msgid "Direction vector in [x, y, z]. Orientation vector of the disc."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:15
+msgid "Number of points in radius direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Disc:17
+msgid "Number of points in circumferential direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Text3D:1
+msgid "Create 3D text from a string."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:1
+msgid "Create a spline from points."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:3
+msgid ""
+"Array of points to build a spline out of.  Array must be 3D and "
+"directionally ordered."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:6
+msgid "Number of points to interpolate along the points array."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:9
+msgid "**spline** -- Line mesh of spline."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.Spline:14
+msgid "Construct a spline"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Wavelet:1
+msgid "Create a wavelet."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:1
+msgid "Create a circular arc defined by two endpoints and a center."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:3
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:3
+msgid ""
+"The number of segments composing the polyline is controlled by setting the "
+"object resolution."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:6
+msgid "Position of the first end point."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:8
+msgid "Position of the other end point."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:10
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:6
+msgid "Center of the circle that defines the arc."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:12
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:8
+msgid ""
+"The number of segments of the polyline that draws the arc. Resolution of 1 "
+"will just create a line."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:15
+msgid ""
+"By default the arc spans the shortest angular sector between ``pointa`` and "
+"``pointb``.  By setting this to ``True``, the longest angular sector is used"
+" instead (i.e. the negative coterminal angle to the shortest one)."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:15
+msgid ""
+"By default the arc spans the shortest angular sector between ``pointa`` and "
+"``pointb``."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:18
+msgid ""
+"By setting this to ``True``, the longest angular sector is used instead "
+"(i.e. the negative coterminal angle to the shortest one)."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArc:25
+msgid "Create a quarter arc centered at the origin in the xy plane."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:1
+msgid ""
+"Create a circular arc defined by normal to the plane of the arc, and an "
+"angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:11
+msgid ""
+"The normal vector to the plane of the arc.  By default it points in the "
+"positive Z direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:14
+msgid ""
+"Starting point of the arc in polar coordinates.  By default it is the unit "
+"vector in the positive x direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:17
+msgid ""
+"Arc length (in degrees) beginning at the polar vector.  The direction is "
+"counterclockwise.  By default it is 90."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.CircularArcFromNormal:23
+msgid "Quarter arc centered at the origin in the xy plane."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:1
+msgid "Create a pyramid defined by 5 points."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:3
+msgid ""
+"Points of the pyramid.  Points are ordered such that the first four points "
+"are the four counterclockwise points on the quadrilateral face, and the last"
+" point is the apex."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/geometric_objects.pydocstring of
+#: pyvista.utilities.geometric_objects.Pyramid:8
+msgid "**pyramid**"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/index.rst:2
+msgid "Utilities"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/parametric.rst:2
+msgid "Parametric Objects"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/parametric.rst:4
+msgid ""
+"The following functions can be used to create parametric surfaces.  To see "
+"what these functions create, check out the example: "
+":ref:`ref_parametric_example`."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:1
+msgid "Generate a Bohemian dome surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:3
+msgid "Bohemian dome surface parameter."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:6
+msgid "**surf** -- ParametricBohemianDome surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBohemianDome:11
+msgid "Create a ParametricBohemianDome mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:1
+msgid "Generate Bour's minimal surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:3
+msgid "**surf** -- ParametricBour surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBour:8
+msgid "Create a ParametricBour mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:1
+msgid "Generate Boy's surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:3
+msgid ""
+"This is a model of the projective plane without singularities.  It was found"
+" by Werner Boy on assignment from David Hilbert."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:6
+msgid ""
+"For further information about this surface, please consult the technical "
+"description \"Parametric surfaces\" in the \"VTK Technical Documents\" "
+"section in the VTK.org web pages."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:10
+msgid "The scale factor for the z-coordinate."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:13
+msgid "**surf** -- ParametricBoy surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricBoy:18
+msgid "Create a ParametricBoy mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:1
+msgid "Generate Dini's surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:3
+msgid ""
+"ParametricDini generates Dini's surface.  Dini's surface is a surface that "
+"possesses constant negative Gaussian curvature"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:6
+msgid ""
+"The scale factor. See the definition in Parametric surfaces referred to "
+"above. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:10
+msgid ""
+"The scale factor. See the definition in Parametric surfaces referred to "
+"above. Default is 0.2"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:15
+msgid "**surf** -- ParametricDini surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricDini:20
+msgid "Create a ParametricDini mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:1
+msgid "Generate an ellipsoid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:3
+msgid ""
+"ParametricEllipsoid generates an ellipsoid.  If all the radii are the same, "
+"we have a sphere.  An oblate spheroid occurs if RadiusX = RadiusY > RadiusZ."
+"  Here the Z-axis forms the symmetry axis. To a first approximation, this is"
+" the shape of the earth.  A prolate spheroid occurs if RadiusX = RadiusY < "
+"RadiusZ."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:9
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:8
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:18
+msgid "The scaling factor for the x-axis. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:10
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:20
+msgid "The scaling factor for the y-axis. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:13
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:12
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:22
+msgid "The scaling factor for the z-axis. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:16
+msgid "**surf** -- ParametricEllipsoid surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEllipsoid:21
+msgid "Create a ParametricEllipsoid mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:1
+msgid "Generate Enneper's surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:3
+msgid ""
+"ParametricEnneper generates Enneper's surface.  Enneper's surface is a self-"
+"intersecting minimal surface possessing constant negative Gaussian "
+"curvature."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:7
+msgid "**surf** -- ParametricEnneper surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricEnneper:12
+msgid "Create a ParametricEnneper mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:1
+msgid "Generate a figure-8 Klein bottle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:3
+msgid ""
+"ParametricFigure8Klein generates a figure-8 Klein bottle.  A Klein bottle is"
+" a closed surface with no interior and only one surface. It is unrealisable "
+"in 3 dimensions without intersecting surfaces."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:7
+msgid "The radius of the bottle. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:10
+msgid "**surf** -- ParametricFigure8Klein surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricFigure8Klein:15
+msgid "Create a ParametricFigure8Klein mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:1
+msgid "Generate Henneberg's minimal surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:3
+msgid "**surf** -- ParametricHenneberg surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricHenneberg:8
+msgid "Create a ParametricHenneberg mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:1
+msgid "Generate a \"classical\" representation of a Klein bottle."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:3
+msgid ""
+"ParametricKlein generates a \"classical\" representation of a Klein bottle."
+"  A Klein bottle is a closed surface with no interior and only one surface."
+"  It is unrealisable in 3 dimensions without intersecting surfaces."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:8
+msgid "**surf** -- ParametricKlein surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKlein:13
+msgid "Create a ParametricKlein mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:1
+msgid "Generate Kuens' surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:3
+msgid ""
+"ParametricKuen generates Kuens' surface. This surface has a constant "
+"negative gaussian curvature."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:6
+msgid ""
+"The value to use when V == 0. Default is 0.05, giving the best appearance "
+"with the default settings. Setting it to a value less than 0.05 extrapolates"
+" the surface towards a pole in the -z direction. Setting it to 0 retains the"
+" pole whose z-value is -inf."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:13
+msgid "**surf** -- ParametricKuen surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricKuen:18
+msgid "Create a ParametricKuen mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:1
+msgid "Generate a Mobius strip."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:3
+msgid "The radius of the Mobius strip. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:6
+msgid "**surf** -- ParametricMobius surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricMobius:11
+msgid "Create a ParametricMobius mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:1
+msgid "Generate Plucker's conoid surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:3
+msgid ""
+"ParametricPluckerConoid generates Plucker's conoid surface parametrically. "
+"Plucker's conoid is a ruled surface, named after Julius Plucker. It is "
+"possible to set the number of folds in this class via the parameter 'N'."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:7
+msgid "This is the number of folds in the conoid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:12
+msgid "**surf** -- ParametricPluckerConoid surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPluckerConoid:17
+msgid "Create a ParametricPluckerConoid mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:1
+msgid "Generate a pseudosphere."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:3
+msgid ""
+"ParametricPseudosphere generates a parametric pseudosphere. The pseudosphere"
+" is generated as a surface of revolution of the tractrix about it's "
+"asymptote, and is a surface of constant negative Gaussian curvature."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:8
+msgid "**surf** -- ParametricPseudosphere surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricPseudosphere:13
+msgid "Create a ParametricPseudosphere mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:1
+msgid "Generate a surface covered with randomly placed hills."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:3
+msgid ""
+"ParametricRandomHills generates a surface covered with randomly placed "
+"hills. Hills will vary in shape and height since the presence of nearby "
+"hills will contribute to the shape and height of a given hill.  An option is"
+" provided for placing hills on a regular grid on the surface.  In this case "
+"the hills will all have the same shape and height."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:10
+msgid "The number of hills. Default is 30."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:13
+msgid "The hill variance in the x-direction. Default is 2.5."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:16
+msgid "The hill variance in the y-direction. Default is 2.5."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:19
+msgid "The hill amplitude (height). Default is 2."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:22
+msgid ""
+"The Seed for the random number generator, a value of 1 will initialize the "
+"random number generator, a negative value will initialize it with the system"
+" time. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:27
+msgid "The scaling factor for the variance in the x-direction. Default is 13."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:30
+msgid "The scaling factor for the variance in the y-direction. Default is 13."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:33
+msgid "The scaling factor for the amplitude. Default is 13."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:37
+msgid "**surf** -- ParametricRandomHills surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRandomHills:42
+msgid "Create a ParametricRandomHills mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:1
+msgid "Generate Steiner's Roman Surface."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:3
+msgid "The radius. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:6
+msgid "**surf** -- ParametricRoman surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricRoman:11
+msgid "Create a ParametricRoman mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:1
+msgid "Generate a superellipsoid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:3
+msgid ""
+"ParametricSuperEllipsoid generates a superellipsoid.  A superellipsoid is a "
+"versatile primitive that is controlled by two parameters n1 and n2. As "
+"special cases it can represent a sphere, square box, and closed cylindrical "
+"can."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:14
+msgid "The \"squareness\" parameter in the z axis.  Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:16
+msgid "The \"squareness\" parameter in the x-y plane. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:19
+msgid "**surf** -- ParametricSuperEllipsoid surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperEllipsoid:24
+msgid "Create a ParametricSuperEllipsoid mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:1
+msgid "Generate a supertoroid."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:3
+msgid ""
+"ParametricSuperToroid generates a supertoroid.  Essentially a supertoroid is"
+" a torus with the sine and cosine terms raised to a power. A supertoroid is "
+"a versatile primitive that is controlled by four parameters r0, r1, n1 and "
+"n2. r0, r1 determine the type of torus whilst the value of n1 determines the"
+" shape of the torus ring and n2 determines the shape of the cross section of"
+" the ring. It is the different values of these powers which give rise to a "
+"family of 3D shapes that are all basically toroidal in shape."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:12
+msgid ""
+"The radius from the center to the middle of the ring of the supertoroid. "
+"Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:15
+msgid ""
+"The radius of the cross section of ring of the supertoroid. Default = 0.5."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:24
+msgid "The shape of the torus ring.  Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:26
+msgid "The shape of the cross section of the ring. Default is 1."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:29
+msgid "**surf** -- ParametricSuperToroid surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricSuperToroid:34
+msgid "Create a ParametricSuperToroid mesh"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:1
+msgid "Generate a torus."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:3
+msgid ""
+"The radius from the center to the middle of the ring of the torus. Default "
+"is 1.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:6
+msgid "The radius of the cross section of ring of the torus. Default is 0.5."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:9
+msgid "**surf** -- ParametricTorus surface"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.ParametricTorus:14
+msgid "Create a ParametricTorus mesh"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/parametric.rst:26
+msgid "These functions support building parametric surfaces:"
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:1
+msgid "Apply keyword arguments to a parametric function."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:3
+msgid "The minimum u-value."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:5
+msgid "The maximum u-value."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:7
+msgid "The minimum v-value."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:9
+msgid "The maximum v-value."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:11
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:17
+msgid ""
+"Joins the first triangle strip to the last one with a twist in the u "
+"direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:14
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:20
+msgid ""
+"Joins the first triangle strip to the last one with a twist in the v "
+"direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.parametric_keywords:23
+msgid "Determines the ordering of the vertices forming the triangle strips."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:1
+msgid "Construct a mesh from a parametric function."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:3
+msgid "Parametric function to generate mesh from."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:5
+msgid "Resolution in the u direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:7
+msgid "Resolution in the v direction."
+msgstr ""
+
+#: ../../pyvista/pyvista/utilities/parametric_objects.pydocstring of
+#: pyvista.utilities.parametric_objects.surface_from_para:9
+msgid "Resolution in the w direction."
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:2
+msgid "General Utilities"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid ""
+":obj:`utilities.VtkErrorCatcher <pyvista.utilities.VtkErrorCatcher>`\\ "
+"\\(\\[raise\\_errors\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid ""
+":obj:`utilities.set_error_output_file "
+"<pyvista.utilities.set_error_output_file>`\\ \\(filename\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:12:<autosummary>:1
+msgid ""
+":obj:`utilities.is_inside_bounds <pyvista.utilities.is_inside_bounds>`\\ "
+"\\(point\\, bounds\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:14
+msgid "Object Conversions"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`wrap <pyvista.wrap>`\\ \\(dataset\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`is_pyvista_dataset <pyvista.is_pyvista_dataset>`\\ \\(obj\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`image_to_texture <pyvista.image_to_texture>`\\ \\(image\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`numpy_to_texture <pyvista.numpy_to_texture>`\\ \\(image\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`array_from_vtkmatrix <pyvista.array_from_vtkmatrix>`\\ \\(matrix\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`vtkmatrix_from_array <pyvista.vtkmatrix_from_array>`\\ \\(array\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:26:<autosummary>:1
+msgid ":obj:`cubemap <pyvista.cubemap>`\\ \\(\\[path\\, prefix\\, ext\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:28
+msgid "File IO"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid ":obj:`read <pyvista.read>`\\ \\(filename\\[\\, attrs\\, force\\_ext\\, file\\_format\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid ""
+":obj:`read_exodus <pyvista.read_exodus>`\\ \\(filename\\[\\, "
+"animate\\_mode\\_shapes\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid ":obj:`read_texture <pyvista.read_texture>`\\ \\(filename\\[\\, attrs\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid ":obj:`read_legacy <pyvista.read_legacy>`\\ \\(filename\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:38:<autosummary>:1
+msgid ""
+":obj:`save_meshio <pyvista.save_meshio>`\\ \\(filename\\, mesh\\[\\, "
+"file\\_format\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:40
+msgid "Mesh Creation"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid ":obj:`lines_from_points <pyvista.lines_from_points>`\\ \\(points\\[\\, close\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid ":obj:`vtk_points <pyvista.vtk_points>`\\ \\(points\\[\\, deep\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid ":obj:`vector_poly_data <pyvista.vector_poly_data>`\\ \\(orig\\, vec\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:49:<autosummary>:1
+msgid ""
+":obj:`fit_plane_to_points <pyvista.fit_plane_to_points>`\\ \\(points\\[\\, "
+"return\\_meta\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:51
+msgid "Array Access"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ""
+":obj:`get_array <pyvista.get_array>`\\ \\(mesh\\, name\\[\\, preference\\, "
+"info\\, err\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ""
+":obj:`convert_array <pyvista.convert_array>`\\ \\(arr\\[\\, name\\, deep\\, "
+"array\\_type\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ":obj:`point_array <pyvista.point_array>`\\ \\(mesh\\, name\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ":obj:`cell_array <pyvista.cell_array>`\\ \\(mesh\\, name\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ":obj:`field_array <pyvista.field_array>`\\ \\(mesh\\, name\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ":obj:`get_vtk_type <pyvista.get_vtk_type>`\\ \\(typ\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ""
+":obj:`vtk_bit_array_to_char <pyvista.vtk_bit_array_to_char>`\\ "
+"\\(vtkarr\\_bint\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:64:<autosummary>:1
+msgid ""
+":obj:`convert_string_array <pyvista.convert_string_array>`\\ \\(arr\\[\\, "
+"name\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:66
+msgid "Image Comparison and Regression"
+msgstr ""
+
+#: ../../pyvista/docs/utilities/utilities.rst:70:<autosummary>:1
+msgid ""
+":obj:`compare_images <pyvista.compare_images>`\\ \\(im1\\, im2\\[\\, "
+"threshold\\, use\\_vtk\\]\\)"
+msgstr ""

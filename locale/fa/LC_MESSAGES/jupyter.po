@@ -1,0 +1,895 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2021, The PyVista Developers
+# This file is distributed under the same license as the PyVista package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyVista 0.29.dev0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-17 00:17+0000\n"
+"PO-Revision-Date: 2021-04-02 08:34+0000\n"
+"Language-Team: Persian (https://www.transifex.com/tkoyama010/teams/112279/fa/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../pyvista/docs/jupyter/index.rst:4
+msgid "Jupyter Notebook Plotting"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:5
+msgid ""
+"Plot with ``pyvista`` interactively within a `Juptyer "
+"<https://jupyter.org/>`_ notebook!"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:10
+msgid "Demo Using ``panel``"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:19
+msgid "Demo Using ``ipygany``"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:39
+msgid "Supported Modules"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:40
+msgid ""
+"The PyVista module supports a variety of backends when plotting within a "
+"jupyter notebook:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:43
+msgid ""
+"Server-side rendering with PyVista streaming to the notebook through "
+"`ipyvtklink <https://github.com/Kitware/ipyvtklink/>`_"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:45
+msgid ""
+"Client-side rendering with `ipygany "
+"<https://github.com/QuantStack/ipygany>`_ using ``threejs``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:46
+msgid ""
+"Client-side rendering using `panel <https://github.com/holoviz/panel>`_ "
+"using ``vtk.js``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:47
+msgid ""
+"Client-side rendering with `itkwidgets "
+"<https://github.com/InsightSoftwareConsortium/itkwidgets>`_ using ``itk.js``"
+" and ``vtk.js``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:48
+msgid "Static images."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:53
+msgid "Details for Each Backend"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:54
+msgid ""
+"See the individual package pages on each backend for additional details on "
+"how to use these plotting backends."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:67
+msgid "State of 3D Interactive Jupyterlab Plotting"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:71
+msgid ""
+"3D plotting within Jupyter notebooks is an emerging technology, partially "
+"because Jupyter is still relatively new, but also because the web technology"
+" used here is also new and rapidly developing as more and more users and "
+"developers shift to the cloud or cloud-based visualization.  Things here are"
+" likely to break and rapidly change"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:77
+msgid ""
+"This was written in March 2021, and may already be out of date.  Be sure to "
+"check the developer websites for any changes."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:80
+msgid ""
+"When plotting using Jupyterlab you have the option of using one of many "
+"modules, each of which has its advantages, disadvantages, and quirks.  While"
+" ``pyvista`` attempts to remove some of the differences in the API when "
+"using the ``Plotting`` class, the plots will still look and feel differently"
+" depending on the backend.  Additionally, different backends have different "
+"requirements and may not support your deployment environment."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:88
+msgid ""
+"This table details various capabilities and technologies used by the jupyter"
+" notebook plotting modules:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:92
+msgid "Jupyter Notebook 3D Modules"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:94
+msgid "Jupyterlab 3"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:94
+msgid "Rendering Location"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:94
+msgid "Backend"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:94
+msgid "Requires Framebuffer"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:96
+msgid "panel"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:96
+#: ../../pyvista/docs/jupyter/index.rst:96
+#: ../../pyvista/docs/jupyter/index.rst:98
+#: ../../pyvista/docs/jupyter/index.rst:100
+#: ../../pyvista/docs/jupyter/index.rst:100
+#: ../../pyvista/docs/jupyter/index.rst:102
+msgid "Yes"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:96
+#: ../../pyvista/docs/jupyter/index.rst:98
+#: ../../pyvista/docs/jupyter/index.rst:102
+msgid "Client"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:96
+#: ../../pyvista/docs/jupyter/index.rst:102
+msgid "vtk.js"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:98
+msgid "ipygany"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:98
+msgid "threejs"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:98
+#: ../../pyvista/docs/jupyter/index.rst:102
+msgid "No"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:100
+msgid "ipyvtklink"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:100
+msgid "Server"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:100
+msgid "vtk"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:102
+msgid "itkwidgets"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:105
+msgid ""
+"At the moment, ``itkwidgets`` and ``ipyvtklink`` are incompatible with "
+"Jupyterlab 3, and will result in a \"Error displaying widget: model not "
+"found\" message from juptyer.  Additionally, all the modules other than "
+"``ipygany`` require a framebuffer, which can be setup on a headless "
+"environment with ``pyvista.start_xvfb()``.  However, on Google Colab, where "
+"it's not possible to install system packages, you should stick with a module"
+" like ``threejs``, which does not require any server side rendering or "
+"framebuffer."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:114
+msgid ""
+"See :ref:`install_ref` for more details installing on a headless environment"
+" for the backends requiring a framebuffer.  When installing the individual "
+"packages, the Jupyterlab 3 compatible packages can be installed with a "
+"simple ``pip install <package>``.  See the installation instructions for the"
+" other packages for more details."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:122
+msgid "Usage with PyVista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/index.rst:123
+msgid ""
+"There are two ways to set the jupyter plotting backend.  First, it can be "
+"done on a plot by plot basis by setting the ``jupyter_backend`` in either "
+"``mesh.plot()`` or ``plotter.show()``.  You can also set it globally with "
+"the ``pyvista.set_jupyter_backend`` function.  For further details:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:1
+msgid "Set the plotting backend for a jupyter notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:0
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:3
+msgid ""
+"Jupyter backend to use when plotting.  Must be one of the following:  * "
+"``'ipyvtklink'`` : Render remotely and stream the   resulting VTK images "
+"back to the client.  Supports all VTK   methods, but suffers from lag due to"
+" remote rendering.   Requires that a virtual framebuffer be setup when "
+"displaying   on a headless server.  Must have ``ipyvtklink`` installed.  * "
+"``'panel'`` : Convert the VTK render window to a vtkjs   object and then "
+"visualize that within jupyterlab. Supports   most VTK objects.  Requires "
+"that a virtual framebuffer be   setup when displaying on a headless server."
+"  Must have   ``panel`` installed.  * ``'ipygany'`` : Convert all the meshes"
+" into ``ipygany``   meshes and streams those to be rendered on the client "
+"side.   Supports VTK meshes, but few others.  Aside from ``none``,   this is"
+" the only method that does not require a virtual   framebuffer.  Must have "
+"``ipygany`` installed.  * ``'static'`` : Display a single static image "
+"within the   Jupyterlab environment.  Still requires that a virtual   "
+"framebuffer be setup when displaying on a headless server,   but does not "
+"require any additional modules to be installed.  * ``'none'`` : Do not "
+"display any plots within jupyterlab,   instead display using dedicated VTK "
+"render windows.  This   will generate nothing on headless servers even with "
+"a   virtual framebuffer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:3
+msgid "Jupyter backend to use when plotting.  Must be one of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:5
+msgid ""
+"``'ipyvtklink'`` : Render remotely and stream the resulting VTK images back "
+"to the client.  Supports all VTK methods, but suffers from lag due to remote"
+" rendering. Requires that a virtual framebuffer be setup when displaying on "
+"a headless server.  Must have ``ipyvtklink`` installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:11
+msgid ""
+"``'panel'`` : Convert the VTK render window to a vtkjs object and then "
+"visualize that within jupyterlab. Supports most VTK objects.  Requires that "
+"a virtual framebuffer be setup when displaying on a headless server.  Must "
+"have ``panel`` installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:17
+msgid ""
+"``'ipygany'`` : Convert all the meshes into ``ipygany`` meshes and streams "
+"those to be rendered on the client side. Supports VTK meshes, but few "
+"others.  Aside from ``none``, this is the only method that does not require "
+"a virtual framebuffer.  Must have ``ipygany`` installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:23
+msgid ""
+"``'static'`` : Display a single static image within the Jupyterlab "
+"environment.  Still requires that a virtual framebuffer be setup when "
+"displaying on a headless server, but does not require any additional modules"
+" to be installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:28
+msgid ""
+"``'none'`` : Do not display any plots within jupyterlab, instead display "
+"using dedicated VTK render windows.  This will generate nothing on headless "
+"servers even with a virtual framebuffer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:35
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:9
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:17
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:36
+msgid "Enable the ipygany backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:41
+msgid "Enable the panel backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:45
+msgid "Enable the ipyvtklink backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:49
+msgid "Just show static images."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:53
+msgid ""
+"Disable all plotting within JupyterLab and display using a standard desktop "
+"VTK render window."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:4
+msgid "Using ``ipygany`` with PyVista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:5
+msgid ""
+"The `ipygany <https://github.com/QuantStack/ipygany>`_ jupyterlab plotting "
+"backend is a powerful module that enables pure plotting that leverages "
+"`threejs <https://threejs.org/>`_ through the `pythreejs widget "
+"<https://github.com/jupyter-widgets/pythreejs>`_.  It allows for embedded "
+"html documentation (as shown here), rapid plotting (as compared to the other"
+" client jupyterlab plotting modules like ``panel`` or ``itkwidgets``)."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:13
+msgid ""
+"There is an excellent block post at `ipygany: Jupyter into the third "
+"dimension <https://blog.jupyter.org/ipygany-jupyter-into-the-third-"
+"dimension-29a97597fc33>`_ and without repeating too much here, ``ipygany`` "
+"includes the following features:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:17
+msgid "IsoColor: apply color-mapping to your mesh."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:18
+msgid ""
+"Warp: deform your mesh given a 3-D input data (e.g. displacement data on a "
+"beam)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:20
+msgid ""
+"WarpByScalar: deform your mesh given a 1-D input data (e.g. terrain "
+"elevation)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:22
+msgid ""
+"Threshold: only visualize mesh parts inside a range of data (e.g. 222 K≤ "
+"temperature ≤ 240 K)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:24
+msgid ""
+"IsoSurface: only visualize the surface where the mesh respects a data value "
+"(e.g. pressure == 3 bar)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:26
+msgid "Glyph effects like PointCloud"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:27
+msgid "Water visualization"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:31
+msgid "PyVista Wrapping"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:32
+msgid ""
+"There are two approaches for plotting using ipygany with ``pyvista``. First,"
+" you can convert between pyvista meshes ``ipygany`` PolyMesh objects using "
+"the ``from_pyvista`` method from ``ipygany`` to enable a variety of advanced"
+" ``ipygany`` methods and follow their examples outlined in the `ipygany "
+"Documentation <https://ipygany.readthedocs.io/en/latest/>`_, or you can "
+"simply use an existing ``Plotter`` class and set "
+"``jupyter_backend='ipygany'``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:40
+msgid ""
+"Perhaps best of all, the resulting widgets can be embedded within sphinx "
+"documentation:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:56
+msgid ""
+"Note how the mesh color, background color, and camera position are all "
+"mapped over to the ``ipygany`` scene, meaning that you can reuse existing "
+"code and change the backend depending on the type of plotting backend you "
+"wish to use."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:61
+msgid ""
+"Note that there are many missing features, including all vtk widgets, but "
+"many of these can be replaced with jupyterlab widgets.  If you wish to "
+"assemble your own scene, change the jupyter_backend while returning the "
+"\"viewer\" with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:76
+msgid ""
+"This scene can then be added to any number of jupyterlab widgets and then "
+"shown as a complete widget.  For example, you could even display two side by"
+" side using ``ipywidgets.AppLayout``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:82
+msgid "Examples: Large Models"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:83
+msgid ""
+"This example shows a large mesh and demonstrates how even fairly large "
+"meshes, like the carburetor example which contains 500,000 faces and 250,000"
+" points, can be quickly loaded.  This is, of course, bandwidth dependent, as"
+" this mesh is around 6 MB."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:104
+msgid "Returning Scenes"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:105
+msgid ""
+"Show several widgets simultaneously using ``ipywidgets.TwoByTwoLayout``.  "
+"This is similar to the :ref:`ref_parametric_example`, except with "
+"interactive widgets."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:139
+msgid "Scalar Bars"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipygany.rst:140
+msgid ""
+"Scalar bars are automatically shown when a plot has active scalars. For "
+"example, the St. Helens ``mesh`` from ``active_scalar_name`` is "
+"``'Elevation'``.  Scalar bars, scalar bar title, and the colormap dropdown "
+"menu are automatically added to the scene."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:4
+msgid "Using ``ipyvtklink`` with PyVista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:7
+msgid ""
+"As of version ``0.1.4``, ``ipyvtklink`` does not support Jupyterlab 3.  "
+"Attempting to run the following will return a ``Model not found`` error "
+"within jupyterlab."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:11
+msgid ""
+"``pyvista`` has the ability to display fully featured plots within a "
+"JupyterLab environment using ``ipyvtklink``.  This feature works by "
+"streaming the current render window to a canvas within JupyterLab and then "
+"passing any user actions from the canvas back to the VTK render window."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:17
+msgid ""
+"While this isn't an exciting feature when JupyterLab is being run locally, "
+"this has huge implications when plotting remotely as you can display any "
+"plot (except for those with multiple render windows) from JupyterLab."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:22
+msgid ""
+"For example, both sections of code will display an interactive canvas within"
+" JupyterLab:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:38
+msgid "For convenience, you can enable ``use_ipyvtk`` by default with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:47
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:27
+msgid "Installation"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:48
+msgid ""
+"If you're using an Anaconda environment, installation is the quite "
+"straightforward:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:56
+msgid "Where environment.yml is:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:69
+msgid "On Linux, you can setup your jupyterlab environment with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:80
+msgid "Other Considerations"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:81
+msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:83
+msgid ""
+"If you do not have GPU acceleration, be sure to start up a virtual "
+"framebuffer using ``Xvfb``.  You can either start it using bash with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/ipyvtk_plotting.rst:98
+msgid ""
+"Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
+"Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:4
+msgid "Using ``itkwidgets`` with PyVista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:8
+msgid ""
+"As of version ``0.32.0``, ``itkwidgets`` does not support Jupyterlab 3.  "
+"Attempting to run the following will return a ``Model not found`` error "
+"within jupyterlab."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:12
+msgid ""
+"Track the progress of this in `Issue 405 "
+"<https://github.com/InsightSoftwareConsortium/itkwidgets/issues/405>`_."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:14
+msgid ""
+"PyVista has an interface for visualizing plots in Jupyter.  The "
+"``pyvista.PlotterITK`` class allows you interactively visualize a mesh "
+"within a jupyter notebook.  For those who prefer plotting within jupyter, "
+"this is an great way of visualizing using ``VTK`` and ``pyvista``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:20
+msgid "Special thanks to `@thewtex`_ for the `itkwidgets`_ library."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:28
+msgid ""
+"To use `PlotterITK` you'll need to install ``itkwidgets>=0.25.2``. Follow "
+"the installation steps `here "
+"<https://github.com/InsightSoftwareConsortium/itkwidgets#installation>`_."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:31
+msgid ""
+"You can install everything with `pip` if you prefer not using conda, but be "
+"sure your juptyerlab is up-to-date.  If you encounter problems, uninstall "
+"and reinstall jupyterlab using pip."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:37
+msgid "Example Plotting with ITKwidgets"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:38
+msgid ""
+"The following example shows how to create a simple plot that shows a simple "
+"sphere."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:58
+msgid "ITKwidgets with pyvista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:61
+msgid ""
+"For convenience, figures can also be plotted using the ``plot_itk`` "
+"function:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:76
+msgid "Attributes"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:79:<autosummary>:1
+msgid ":obj:`background_color <pyvista.PlotterITK.background_color>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:79:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.PlotterITK.background_color:1
+msgid "Return the background color of the plotter."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:79:<autosummary>:1
+msgid ":obj:`camera_position <pyvista.PlotterITK.camera_position>`\\"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:79:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.PlotterITK.camera_position:1
+msgid "Return camera position of the plotter as a list."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:81
+msgid "Methods"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+msgid ""
+":obj:`add_mesh <pyvista.PlotterITK.add_mesh>`\\ \\(mesh\\[\\, color\\, "
+"scalars\\, opacity\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:1
+msgid "Add a PyVista/VTK mesh or dataset."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+msgid ""
+":obj:`add_points <pyvista.PlotterITK.add_points>`\\ \\(points\\[\\, color\\,"
+" point\\_size\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:1
+msgid "Add points to plotter."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+msgid ""
+":obj:`show <pyvista.PlotterITK.show>`\\ \\(\\[ui\\_collapsed\\, rotate\\, "
+"show\\_bounds\\]\\)"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/itk_plotting.rst:84:<autosummary>:1
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:1
+msgid "Show itkwidgets plotter in cell output."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:1
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:1
+msgid "ITKwidgets plotter."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:3
+msgid ""
+"Used for plotting interactively within a jupyter notebook. Requires "
+"``itkwidgets>=0.25.2``.  For installation see:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK:6
+msgid "https://github.com/InsightSoftwareConsortium/itkwidgets#installation"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:3
+msgid "Adds any PyVista/VTK mesh that itkwidgets can wrap to the scene."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:6
+msgid ""
+"Any PyVista or VTK mesh is supported. Also, any dataset that "
+":func:`pyvista.wrap` can handle including NumPy arrays of XYZ points."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:10
+msgid ""
+"Use to make the entire mesh have a single solid color. Either a string, RGB "
+"list, or hex color string.  For example: ``color='white'``, ``color='w'``, "
+"``color=[1, 1, 1]``, or ``color='#FFFFFF'``. Color will be overridden if "
+"scalars are specified."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:16
+msgid ""
+"Scalars used to \"color\" the mesh.  Accepts a string name of an array that "
+"is present on the mesh or an array equal to the number of cells or the "
+"number of points in the mesh.  Array should be sized as a single vector. If "
+"both ``color`` and ``scalars`` are ``None``, then the active scalars are "
+"used."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:23
+msgid ""
+"Opacity of the mesh. If a single float value is given, it will be the global"
+" opacity of the mesh and uniformly applied everywhere - should be between 0 "
+"and 1.  Default 1.0"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_mesh:27
+msgid ""
+"Smooth mesh surface mesh by taking into account surface normals.  Surface "
+"will appear smoother while sharp edges will still look sharp.  Default "
+"False."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:3
+msgid "n x 3 numpy array of points or pyvista dataset with points."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:5
+msgid ""
+"Either a string, rgb list, or hex color string.  For example:  "
+"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:5
+msgid "Either a string, rgb list, or hex color string.  For example:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:7
+msgid ""
+"``color='white'`` ``color='w'`` ``color=[1, 1, 1]`` ``color='#FFFFFF'``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:12
+msgid ""
+"Point size of any nodes in the dataset plotted. Also applicable when "
+"style='points'. Default ``3.0``"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.add_points:18
+msgid "Add 10 random points to the plotter"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:3
+msgid ""
+"Plot with the user interface collapsed.  UI can be enabled when plotting.  "
+"Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:6
+msgid ""
+"Rotate the camera around the scene.  Default ``False``. Appears to be "
+"computationally intensive."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:9
+msgid "Show the bounding box.  Default False"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:11
+msgid "Size of the points displayed in the"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Returns"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:14
+msgid "**viewer** -- ``ITKwidgets`` viewer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/itkplotter.pydocstring of
+#: pyvista.jupyter.itkplotter.PlotterITK.show:0
+msgid "Return type"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:4
+msgid "Using ``Panel`` with PyVista"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:5
+msgid ""
+"PyVista supports the usage of the `panel "
+"<https://github.com/holoviz/panel>`_ module as a ``vtk.js`` jupyterlab "
+"plotting backend that can be utialized as either a standalone VTK viewer, or"
+" as a tightly integrated ``pyvista`` plotting backend.  For example, within "
+"a Jupyter notebook environment, you can pass ``jupyter_backend='panel'`` to "
+"``plot``, or ``Plotter.show`` to automatically enable plotting with Juptyer "
+"and ``panel``."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:13
+msgid "For example, here's the ``PyVista`` logo:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:20
+msgid ""
+"Note that this isn't a perfect replica since there are some details lost in "
+"the conversion to ``vtk.js``, but for the vast majority of cases, this can "
+"be used to accurately render ``pyvista`` plots within Jupyterlab."
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:27
+msgid "Examples and Usage"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:28
+msgid ""
+"There are two ways to use ``panel`` within Jupyter notebooks.  It can be "
+"done on a plot by plot basis by setting the ``jupyter_backend`` in "
+"``mesh.plot()``:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:48
+msgid "Alternatively, you can set the backend globally:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:82
+msgid "Configuration Considerations"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:83
+msgid ""
+"If running on a headless environment (e.g. Google Colab, your own VM), be "
+"sure to start up a virtual framebuffer using ``Xvfb``.  You can either start"
+" it using bash with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:99
+msgid ""
+"Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  Be "
+"sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
+msgstr ""
+
+#: ../../pyvista/docs/jupyter/panel.rst:107
+msgid "Or using the package manager used by your environment."
+msgstr ""
