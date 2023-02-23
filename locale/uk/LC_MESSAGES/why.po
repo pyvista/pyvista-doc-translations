@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2021, The PyVista Developers
+# This file is distributed under the same license as the PyVista package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# SerTetora, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyVista 0.29.dev0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-02 08:51+0000\n"
+"PO-Revision-Date: 2020-08-05 16:06+0000\n"
+"Last-Translator: SerTetora, 2022\n"
+"Language-Team: Ukrainian (https://www.transifex.com/tkoyama010/teams/112279/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ../../pyvista/docs/why.rst:2
+msgid "Why PyVista?"
+msgstr "Чому PyVista?"
+
+#: ../../pyvista/docs/why.rst:4
+msgid ""
+"VTK is an excellent visualization toolkit, and with Python bindings it "
+"should be able to combine the speed of C++ with the rapid prototyping of "
+"Python.  However, despite this VTK code programmed in Python generally looks"
+" the same as its C++ counterpart.  This module seeks to simplify mesh "
+"creation and plotting without losing functionality."
+msgstr ""
+"VTK - це чудовий інструментарій візуалізації, і з прив’язками до Python він "
+"повинен мати можливість поєднувати швидкість C++ із швидким прототипуванням "
+"Python. Однак, незважаючи на це, код VTK, запрограмований на Python, загалом"
+" виглядає так само, як і його аналог на C++. Цей модуль має на меті "
+"спростити створення та побудову сітки без втрати функціональності."
+
+#: ../../pyvista/docs/why.rst:10
+msgid ""
+"Compare two approaches for loading and plotting a surface mesh from a file:"
+msgstr ""
+"Порівняйте два підходи до завантаження та побудови сітки поверхні з файлу:"
+
+#: ../../pyvista/docs/why.rst:15
+msgid "Plotting a Mesh using Python's VTK"
+msgstr "Побудова сітки за допомогою VTK Python"
+
+#: ../../pyvista/docs/why.rst:16
+msgid ""
+"Using this `example "
+"<http://www.vtk.org/Wiki/VTK/Examples/Python/STLReader>`_, loading and "
+"plotting an STL file requires a lot of code when using only the ``vtk`` "
+"module."
+msgstr ""
+"Використовуючи цей "
+"`приклад<http://www.vtk.org/Wiki/VTK/Examples/Python/STLReader>`_, "
+"завантаження та побудова STL-файлу потребує багато коду, використовуючи лише"
+" ``vtk`` модуль."
+
+#: ../../pyvista/docs/why.rst:61
+msgid "Plot a Mesh using PyVista"
+msgstr "Побудова сітки за допомогою PyVista"
+
+#: ../../pyvista/docs/why.rst:63
+msgid "The same stl can be loaded and plotted using pyvista with:"
+msgstr "Той самий STL можна завантажити та побудувати за допомогою pyvista:"
+
+#: ../../pyvista/docs/why.rst:72
+msgid ""
+"The mesh object is more pythonic and the code is much more straightforward. "
+"Garbage collection is taken care of automatically and the renderer is "
+"cleaned up after the user closes the VTK plotting window."
+msgstr ""
+"Об’єкт сітки є більш пітонічним, а код набагато простішим. Збирання сміття "
+"виконується автоматично, а рендерер очищається після того, як користувач "
+"закриє вікно побудови VTK."
+
+#: ../../pyvista/docs/why.rst:78
+msgid "Advanced Plotting with Numpy"
+msgstr "Прогресивна побудова за допомогою Numpy"
+
+#: ../../pyvista/docs/why.rst:80
+msgid "When combined with numpy, you can make some truly spectacular plots:"
+msgstr "У поєднанні з numpy Ви можете створити справді вражаючі зображення:"
+
+#: ../../pyvista/docs/why.rst:113
+msgid ""
+"While not everything can be simplified without losing functionality, many of"
+" the objects can.  For example, triangular surface meshes in VTK can be "
+"subdivided but every other object in VTK cannot.  It then makes sense that a"
+" subdivided method be added to the existing triangular surface mesh.  That "
+"way, subdivision can be performed with:"
+msgstr ""
+"Хоча не все можна спростити без втрати функціональності, багато об’єктів "
+"можна. Наприклад, трикутні поверхневі сітки можна підрозділити, але будь-які"
+" інші об’єкти в VTK - ні. Тоді має сенс додати підрозділений метод до "
+"існуючої трикутної поверхневої сітки. Таким чином, підрозділення можна "
+"виконати за допомогою:"
+
+#: ../../pyvista/docs/why.rst:126
+msgid ""
+"Additionally, the docstrings for all methods in PyVista are intended to be "
+"used within interactive coding sessions. This allows users to use "
+"sophisticated processing routines on the fly with immediate access to a "
+"description of how to use those methods:"
+msgstr ""
+"Крім того, рядки документації для всіх методів в PyVista призначені для "
+"використання в інтерактивних сеансах розробки коду. Це дозволяє користувачам"
+" використовувати складні процедури обробки на льоту з негайним доступом до "
+"опису використання цих методів:"
