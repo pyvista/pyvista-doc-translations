@@ -49,13 +49,10 @@ This is useful when creating a grid from scratch or copying it from another
 format.  See `vtkUnstructuredGrid <https://www.vtk.org/doc/nightly/html/classvtkUnstructuredGrid.html>`_
 for available cell types and their descriptions.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-81
+.. GENERATED FROM PYTHON SOURCE LINES 20-73
 
 .. code-block:: default
 
-
-    # offset array.  Identifies the start of each cell in the cells array
-    offset = np.array([0, 9])
 
     # Contains information on the points composing each cell.
     # Each cell begins with the number of points in the cell and then the points
@@ -96,16 +93,11 @@ for available cell types and their descriptions.
     points = np.vstack((cell1, cell2)).astype(float)
 
     # create the unstructured grid directly from the numpy arrays
-    # The offset is optional and will be either calculated if not given (VTK version < 9),
-    # or is not necessary anymore (VTK version >= 9)
-    if pv.vtk_version_info < (9,):
-        grid = pv.UnstructuredGrid(offset, cells, cell_type, points)
-    else:
-        grid = pv.UnstructuredGrid(cells, cell_type, points)
+    grid = pv.UnstructuredGrid(cells, cell_type, points)
 
     # For cells of fixed sizes (like the mentioned Hexahedra), it is also possible to use the
-    # simplified dictionary interface. This automatically calculates the cell array with types
-    # and offsets. Note that for mixing with additional cell types, just the appropriate key needs to be
+    # simplified dictionary interface. This automatically calculates the cell array.
+    # Note that for mixing with additional cell types, just the appropriate key needs to be
     # added to the dictionary.
     cells_hex = np.arange(16).reshape([2, 8])
     # = np.array([[0, 1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14, 15]])
@@ -126,7 +118,7 @@ for available cell types and their descriptions.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-87
+.. GENERATED FROM PYTHON SOURCE LINES 74-79
 
 UnstructuredGrid with Shared Points
 -----------------------------------
@@ -134,7 +126,7 @@ UnstructuredGrid with Shared Points
 The next example again creates an unstructured grid containing
 hexahedral cells, but using common points between the cells.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-158
+.. GENERATED FROM PYTHON SOURCE LINES 79-134
 
 .. code-block:: default
 
@@ -190,55 +182,25 @@ hexahedral cells, but using common points between the cells.
     ).ravel()
 
     # each cell is a HEXAHEDRON
-    celltypes = np.empty(8, dtype=np.uint8)
-    celltypes[:] = CellType.HEXAHEDRON
-
-    # the offset array points to the start of each cell (via flat indexing)
-    offset = np.array([0, 9, 18, 27, 36, 45, 54, 63])
-
-    # Effectively, when visualizing a VTK unstructured grid, it will
-    # sequentially access the cell array by first looking at each index of
-    # cell array (based on the offset array), and then read the number of
-    # points based on the first value of the cell.  In this case, the
-    # HEXAHEDRON is described by 8 points.
-
-    # for example, the 5th cell would be accessed by vtk with:
-    start_of_cell = offset[4]
-    n_points_in_cell = cells[start_of_cell]
-    indices_in_cell = cells[start_of_cell + 1 : start_of_cell + n_points_in_cell + 1]
-    print(indices_in_cell)
+    celltypes = np.full(8, CellType.HEXAHEDRON, dtype=np.uint8)
 
 
 
 
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    [11 13 25 23 12 14 26 24]
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 159-160
+.. GENERATED FROM PYTHON SOURCE LINES 135-136
 
 Finally, create the unstructured grid and plot it
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-180
+.. GENERATED FROM PYTHON SOURCE LINES 136-148
 
 .. code-block:: default
 
-
-    # if you are using VTK 9.0 or newer, you do not need to input the offset array:
-    # grid = pv.UnstructuredGrid(cells, celltypes, points)
-
-    # if you are not using VTK 9.0 or newer, you must use the offset array
-    if pv.vtk_version_info < (9,):
-        grid = pv.UnstructuredGrid(offset, cells, celltypes, points)
-    else:
-        grid = pv.UnstructuredGrid(cells, celltypes, points)
+    grid = pv.UnstructuredGrid(cells, celltypes, points)
 
     # Alternate versions:
     grid = pv.UnstructuredGrid({CellType.HEXAHEDRON: cells.reshape([-1, 9])[:, 1:]}, points)
@@ -262,13 +224,13 @@ Finally, create the unstructured grid and plot it
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 181-184
+.. GENERATED FROM PYTHON SOURCE LINES 149-152
 
 Tetrahedral Grid
 ~~~~~~~~~~~~~~~~
 Here is how we can create an unstructured tetrahedral grid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 184-229
+.. GENERATED FROM PYTHON SOURCE LINES 152-197
 
 .. code-block:: default
 
@@ -329,12 +291,12 @@ Here is how we can create an unstructured tetrahedral grid.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-232
+.. GENERATED FROM PYTHON SOURCE LINES 198-200
 
 For fun, let's separate all the cells and plot out the individual cells. Shift
 them a little bit from the center to create an "exploded view".
 
-.. GENERATED FROM PYTHON SOURCE LINES 232-235
+.. GENERATED FROM PYTHON SOURCE LINES 200-203
 
 .. code-block:: default
 
@@ -356,7 +318,7 @@ them a little bit from the center to create an "exploded view".
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.879 seconds)
+   **Total running time of the script:** ( 0 minutes  2.054 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-unstructured-surface.py:

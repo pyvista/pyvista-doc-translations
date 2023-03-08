@@ -51,7 +51,7 @@ Create a quadratic cell and extract its surface
 Here we create a single quadratic hexahedral cell and then extract its surface
 to demonstrate how to extract the surface of an UnstructuredGrid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-76
+.. GENERATED FROM PYTHON SOURCE LINES 23-73
 
 .. code-block:: default
 
@@ -96,12 +96,9 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
     pts = np.vstack((lin_pts, quad_pts))
 
     # create the grid
-
-    # If you are using vtk>=9, you do not need the offset array
-    offset = np.array([0])
     cells = np.hstack((20, np.arange(20))).astype(np.int64, copy=False)
     celltypes = np.array([CellType.QUADRATIC_HEXAHEDRON])
-    grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
+    grid = pv.UnstructuredGrid(cells, celltypes, pts)
 
     # finally, extract the surface and plot it
     surf = grid.extract_surface()
@@ -117,17 +114,10 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/extract-surface.py:69: UserWarning: VTK 9 no longer accepts an offset array
-      grid = pv.UnstructuredGrid(offset, cells, celltypes, pts)
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 77-84
+.. GENERATED FROM PYTHON SOURCE LINES 74-81
 
 Nonlinear Surface Subdivision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -137,7 +127,7 @@ generate a smooth surface based on the position of the
 containing curvature.  For additional reference, please see:
 https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-87
+.. GENERATED FROM PYTHON SOURCE LINES 81-84
 
 .. code-block:: default
 
@@ -159,7 +149,7 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.500 seconds)
+   **Total running time of the script:** ( 0 minutes  0.648 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:

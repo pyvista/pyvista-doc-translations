@@ -344,7 +344,7 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Note this feature is only available for vtk&gt;=9.">
+    <div class="sphx-glr-thumbcontainer" tooltip="First, download the examples.  Note that here we&#x27;re using a high dynamic range texture since gl...">
 
 .. only:: html
 

@@ -26,13 +26,11 @@ Import a glTF file directly into a PyVista plotting scene.  For more
 details regarding the glTF format, see:
 https://www.khronos.org/gltf/
 
-Note this feature is only available for ``vtk>=9``.
-
 First, download the examples.  Note that here we're using a high
 dynamic range texture since glTF files generally contain physically
 based rendering and VTK v9 supports high dynamic range textures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-25
+.. GENERATED FROM PYTHON SOURCE LINES 15-23
 
 .. code-block:: default
 
@@ -51,13 +49,13 @@ based rendering and VTK v9 supports high dynamic range textures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-29
+.. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 Set up the plotter and enable environment textures.  This works well
 for physically based rendering enabled meshes like the damaged
 helmet example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-37
+.. GENERATED FROM PYTHON SOURCE LINES 27-35
 
 .. code-block:: default
 
@@ -81,12 +79,12 @@ helmet example.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-40
+.. GENERATED FROM PYTHON SOURCE LINES 36-38
 
 You can also directly read in gltf files and extract the underlying
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+.. GENERATED FROM PYTHON SOURCE LINES 38-42
 
 .. code-block:: default
 
@@ -109,7 +107,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  52.227 seconds)
+   **Total running time of the script:** ( 0 minutes  52.976 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:

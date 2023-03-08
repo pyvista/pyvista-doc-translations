@@ -25,9 +25,7 @@ Creating an Explicit Structured Grid
 
 Create an explicit structured grid from NumPy arrays.
 
-Note this feature is only available for ``vtk>=9``.
-
-.. GENERATED FROM PYTHON SOURCE LINES 12-45
+.. GENERATED FROM PYTHON SOURCE LINES 10-42
 
 
 
@@ -70,37 +68,31 @@ Note this feature is only available for ``vtk>=9``.
     corners = np.stack((xcorn, ycorn, zcorn))
     corners = corners.transpose()
 
-    if pv._vtk.VTK9:
-        dims = np.asarray((ni, nj, nk)) + 1
-        grid = pv.ExplicitStructuredGrid(dims, corners)
-        grid = grid.compute_connectivity()
-        grid.plot(show_edges=True)
+    dims = np.asarray((ni, nj, nk)) + 1
+    grid = pv.ExplicitStructuredGrid(dims, corners)
+    grid = grid.compute_connectivity()
+    grid.plot(show_edges=True)
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.014 seconds)
+   **Total running time of the script:** ( 0 minutes  0.838 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-explicit-structured-grid.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
+    .. container:: sphx-glr-download sphx-glr-download-python
 
-  .. container:: sphx-glr-download sphx-glr-download-python
+      :download:`Download Python source code: create-explicit-structured-grid.py <create-explicit-structured-grid.py>`
 
-     :download:`Download Python source code: create-explicit-structured-grid.py <create-explicit-structured-grid.py>`
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
-
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-explicit-structured-grid.ipynb <create-explicit-structured-grid.ipynb>`
+      :download:`Download Jupyter notebook: create-explicit-structured-grid.ipynb <create-explicit-structured-grid.ipynb>`
 
 
 .. only:: html
