@@ -26,7 +26,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-explicit-structured-grid_thumb.png
-    :alt: Creating an Explicit Structured Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-explicit-structured-grid.py`
 
@@ -43,7 +43,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-geometric-objects_thumb.png
-    :alt: Geometric Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-geometric-objects.py`
 
@@ -60,7 +60,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-kochanek-spline_thumb.png
-    :alt: Create a Kochanek Spline
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-kochanek-spline.py`
 
@@ -77,7 +77,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-parametric-geometric-objects_thumb.png
-    :alt: Parametric Geometric Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py`
 
@@ -89,12 +89,12 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we use pyvista.Box to make `pixel art &lt;https://en.wikipedia.org/wiki/Pixel_art&gt;`_. Pixel s...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we use pyvista.Box to make pixel art. Pixel string source and license.">
 
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-pixel-art_thumb.png
-    :alt: Pixel Art of ALIEN MONSTERS
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-pixel-art.py`
 
@@ -111,7 +111,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-platonic-solids_thumb.png
-    :alt: Platonic Solids
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-platonic-solids.py`
 
@@ -128,7 +128,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-point-cloud_thumb.png
-    :alt: Create Point Cloud
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-point-cloud.py`
 
@@ -145,7 +145,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-pointset_thumb.png
-    :alt: Create a PointSet
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-pointset.py`
 
@@ -162,7 +162,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-poly_thumb.png
-    :alt: Create PolyData
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-poly.py`
 
@@ -179,7 +179,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-polydata-strips_thumb.png
-    :alt: Triangle Strips
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-polydata-strips.py`
 
@@ -196,7 +196,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-polyhedron_thumb.png
-    :alt: Unstructured Grid with Polyhedra
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-polyhedron.py`
 
@@ -213,7 +213,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-spline_thumb.png
-    :alt: Creating a Spline
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-spline.py`
 
@@ -230,7 +230,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-structured-surface_thumb.png
-    :alt: Creating a Structured Surface
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-structured-surface.py`
 
@@ -247,7 +247,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-surface-draped_thumb.png
-    :alt: Drape 2D Surface From Line
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-surface-draped.py`
 
@@ -264,7 +264,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-tri-surface_thumb.png
-    :alt: Create Triangulated Surface
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-tri-surface.py`
 
@@ -281,7 +281,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-truss_thumb.png
-    :alt: Plot Truss-like FEA Solution with Cylinders
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-truss.py`
 
@@ -298,7 +298,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-uniform-grid_thumb.png
-    :alt: Creating a Uniform Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-uniform-grid.py`
 
@@ -315,7 +315,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-unstructured-surface_thumb.png
-    :alt: Creating an Unstructured Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py`
 
@@ -332,7 +332,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_linear-cells_thumb.png
-    :alt: Linear Cells
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_linear-cells.py`
 
@@ -349,7 +349,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_load-gltf_thumb.png
-    :alt: Working with glTF Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_load-gltf.py`
 
@@ -366,7 +366,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_load-vrml_thumb.png
-    :alt: Working with VRML Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_load-vrml.py`
 
@@ -383,7 +383,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-dolfin_thumb.png
-    :alt: Read FEniCS/Dolfin Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-dolfin.py`
 
@@ -400,7 +400,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-file_thumb.png
-    :alt: Load and Plot from a File
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-file.py`
 
@@ -417,7 +417,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-image_thumb.png
-    :alt: Read Image Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-image.py`
 
@@ -434,7 +434,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-parallel_thumb.png
-    :alt: Parallel Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-parallel.py`
 
@@ -451,7 +451,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_reader_thumb.png
-    :alt: Load data using a Reader
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_reader.py`
 
@@ -468,7 +468,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_terrain-mesh_thumb.png
-    :alt: Terrain Following Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_terrain-mesh.py`
 
@@ -485,7 +485,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_wrap-trimesh_thumb.png
-    :alt: Wrapping Other Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_wrap-trimesh.py`
 

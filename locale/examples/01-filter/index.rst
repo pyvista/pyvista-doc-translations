@@ -31,7 +31,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_boolean-operations_thumb.png
-    :alt: Boolean Operations
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_boolean-operations.py`
 
@@ -48,7 +48,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_cell-centers_thumb.png
-    :alt: Extract Cell Centers
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_cell-centers.py`
 
@@ -65,7 +65,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_clipping-with-surface_thumb.png
-    :alt: Clipping with a Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_clipping-with-surface.py`
 
@@ -82,7 +82,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_clipping_thumb.png
-    :alt: Clipping with Planes & Boxes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_clipping.py`
 
@@ -99,7 +99,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.png
-    :alt: Collision
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_collisions.py`
 
@@ -116,7 +116,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_compute-normals_thumb.png
-    :alt: Computing Surface Normals
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_compute-normals.py`
 
@@ -133,7 +133,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_compute-volume_thumb.png
-    :alt: Volumetric Analysis
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_compute-volume.py`
 
@@ -150,7 +150,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_connectivity_thumb.png
-    :alt: Connectivity
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_connectivity.py`
 
@@ -167,7 +167,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_contouring_thumb.png
-    :alt: Contouring
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_contouring.py`
 
@@ -184,7 +184,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_decimate_thumb.png
-    :alt: Decimation
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_decimate.py`
 
@@ -201,7 +201,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_distance-between-surfaces_thumb.png
-    :alt: Distance Between Two Surfaces
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py`
 
@@ -218,7 +218,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-cells-inside-surface_thumb.png
-    :alt: Extract Cells Inside Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py`
 
@@ -235,7 +235,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-edges_thumb.png
-    :alt: Extract Edges
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-edges.py`
 
@@ -252,7 +252,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-surface_thumb.png
-    :alt: Extract Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-surface.py`
 
@@ -269,7 +269,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extrude-rotate_thumb.png
-    :alt: Extrude Rotation
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extrude-rotate.py`
 
@@ -286,7 +286,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extrude-trim_thumb.png
-    :alt: Extrude Trim
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extrude-trim.py`
 
@@ -303,7 +303,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_flying_edges_thumb.png
-    :alt: Marching Cubes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_flying_edges.py`
 
@@ -320,7 +320,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_gaussian-smoothing_thumb.png
-    :alt: Gaussian Smoothing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py`
 
@@ -337,7 +337,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_geodesic_thumb.png
-    :alt: Geodesic Paths
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_geodesic.py`
 
@@ -354,7 +354,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_glyphs_thumb.png
-    :alt: Plotting Glyphs (Vectors or PolyData)
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_glyphs.py`
 
@@ -371,7 +371,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_glyphs_table_thumb.png
-    :alt: Table of Glyphs
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_glyphs_table.py`
 
@@ -388,7 +388,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_gradients_thumb.png
-    :alt: Compute Gradients of a Field
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_gradients.py`
 
@@ -405,7 +405,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_image-fft-perlin-noise_thumb.png
-    :alt: Fast Fourier Transform with Perlin Noise
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py`
 
@@ -422,7 +422,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_image-fft_thumb.png
-    :alt: Fast Fourier Transform
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_image-fft.py`
 
@@ -439,7 +439,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_integrate-data_thumb.png
-    :alt: Integrate Data
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_integrate-data.py`
 
@@ -456,7 +456,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_interpolate_thumb.png
-    :alt: Interpolating
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_interpolate.py`
 
@@ -473,7 +473,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_mesh-quality_thumb.png
-    :alt: Computing Mesh Quality
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_mesh-quality.py`
 
@@ -490,7 +490,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_poly-ray-trace_thumb.png
-    :alt: Ray Tracing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_poly-ray-trace.py`
 
@@ -507,7 +507,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_project-plane_thumb.png
-    :alt: Project to a Plane
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_project-plane.py`
 
@@ -524,7 +524,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_reflect_thumb.png
-    :alt: Reflect Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_reflect.py`
 
@@ -541,7 +541,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_resample_thumb.png
-    :alt: Resampling
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_resample.py`
 
@@ -558,7 +558,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_rotate_thumb.png
-    :alt: Rotations
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_rotate.py`
 
@@ -575,7 +575,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_2d_thumb.png
-    :alt: Sample Function: Perlin Noise in 2D
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_sampling_functions_2d.py`
 
@@ -592,7 +592,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_3d_thumb.png
-    :alt: Sample Function: Perlin Noise in 3D
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_sampling_functions_3d.py`
 
@@ -609,7 +609,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_slicing_thumb.png
-    :alt: Slicing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_slicing.py`
 
@@ -626,7 +626,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_streamlines_thumb.png
-    :alt: Streamlines
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_streamlines.py`
 
@@ -643,7 +643,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_streamlines_2D_thumb.png
-    :alt: 2D Streamlines
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_streamlines_2D.py`
 
@@ -660,7 +660,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_subdivide_thumb.png
-    :alt: Subdivide Cells
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_subdivide.py`
 
@@ -677,7 +677,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_surface-smoothing_thumb.png
-    :alt: Surface Smoothing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_surface-smoothing.py`
 
@@ -694,7 +694,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_surface_reconstruction_thumb.png
-    :alt: Surface Reconstruction
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_surface_reconstruction.py`
 
@@ -711,7 +711,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_using-filters_thumb.png
-    :alt: Using Common Filters
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_using-filters.py`
 
@@ -728,7 +728,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_voxelize_thumb.png
-    :alt: Voxelize a Surface Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_voxelize.py`
 
@@ -745,7 +745,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_warp-by-vector_thumb.png
-    :alt: Warping by Vectors
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_warp-by-vector.py`
 

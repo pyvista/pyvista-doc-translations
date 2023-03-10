@@ -49,7 +49,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-explicit-structured-grid_thumb.png
-    :alt: Creating an Explicit Structured Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-explicit-structured-grid.py`
 
@@ -66,7 +66,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-geometric-objects_thumb.png
-    :alt: Geometric Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-geometric-objects.py`
 
@@ -83,7 +83,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-kochanek-spline_thumb.png
-    :alt: Create a Kochanek Spline
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-kochanek-spline.py`
 
@@ -100,7 +100,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-parametric-geometric-objects_thumb.png
-    :alt: Parametric Geometric Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-parametric-geometric-objects.py`
 
@@ -112,12 +112,12 @@ data.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Here we use pyvista.Box to make `pixel art &lt;https://en.wikipedia.org/wiki/Pixel_art&gt;`_. Pixel s...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Here we use pyvista.Box to make pixel art. Pixel string source and license.">
 
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-pixel-art_thumb.png
-    :alt: Pixel Art of ALIEN MONSTERS
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-pixel-art.py`
 
@@ -134,7 +134,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-platonic-solids_thumb.png
-    :alt: Platonic Solids
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-platonic-solids.py`
 
@@ -151,7 +151,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-point-cloud_thumb.png
-    :alt: Create Point Cloud
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-point-cloud.py`
 
@@ -168,7 +168,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-pointset_thumb.png
-    :alt: Create a PointSet
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-pointset.py`
 
@@ -185,7 +185,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-poly_thumb.png
-    :alt: Create PolyData
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-poly.py`
 
@@ -202,7 +202,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-polydata-strips_thumb.png
-    :alt: Triangle Strips
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-polydata-strips.py`
 
@@ -219,7 +219,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-polyhedron_thumb.png
-    :alt: Unstructured Grid with Polyhedra
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-polyhedron.py`
 
@@ -236,7 +236,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-spline_thumb.png
-    :alt: Creating a Spline
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-spline.py`
 
@@ -253,7 +253,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-structured-surface_thumb.png
-    :alt: Creating a Structured Surface
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-structured-surface.py`
 
@@ -270,7 +270,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-surface-draped_thumb.png
-    :alt: Drape 2D Surface From Line
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-surface-draped.py`
 
@@ -287,7 +287,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-tri-surface_thumb.png
-    :alt: Create Triangulated Surface
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-tri-surface.py`
 
@@ -304,7 +304,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-truss_thumb.png
-    :alt: Plot Truss-like FEA Solution with Cylinders
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-truss.py`
 
@@ -321,7 +321,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-uniform-grid_thumb.png
-    :alt: Creating a Uniform Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-uniform-grid.py`
 
@@ -338,7 +338,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_create-unstructured-surface_thumb.png
-    :alt: Creating an Unstructured Grid
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_create-unstructured-surface.py`
 
@@ -355,7 +355,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_linear-cells_thumb.png
-    :alt: Linear Cells
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_linear-cells.py`
 
@@ -372,7 +372,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_load-gltf_thumb.png
-    :alt: Working with glTF Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_load-gltf.py`
 
@@ -389,7 +389,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_load-vrml_thumb.png
-    :alt: Working with VRML Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_load-vrml.py`
 
@@ -406,7 +406,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-dolfin_thumb.png
-    :alt: Read FEniCS/Dolfin Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-dolfin.py`
 
@@ -423,7 +423,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-file_thumb.png
-    :alt: Load and Plot from a File
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-file.py`
 
@@ -440,7 +440,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-image_thumb.png
-    :alt: Read Image Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-image.py`
 
@@ -457,7 +457,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_read-parallel_thumb.png
-    :alt: Parallel Files
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_read-parallel.py`
 
@@ -474,7 +474,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_reader_thumb.png
-    :alt: Load data using a Reader
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_reader.py`
 
@@ -491,7 +491,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_terrain-mesh_thumb.png
-    :alt: Terrain Following Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_terrain-mesh.py`
 
@@ -508,7 +508,7 @@ data.
 .. only:: html
 
   .. image:: /examples/00-load/images/thumb/sphx_glr_wrap-trimesh_thumb.png
-    :alt: Wrapping Other Objects
+    :alt:
 
   :ref:`sphx_glr_examples_00-load_wrap-trimesh.py`
 
@@ -551,7 +551,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_boolean-operations_thumb.png
-    :alt: Boolean Operations
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_boolean-operations.py`
 
@@ -568,7 +568,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_cell-centers_thumb.png
-    :alt: Extract Cell Centers
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_cell-centers.py`
 
@@ -585,7 +585,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_clipping-with-surface_thumb.png
-    :alt: Clipping with a Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_clipping-with-surface.py`
 
@@ -602,7 +602,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_clipping_thumb.png
-    :alt: Clipping with Planes & Boxes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_clipping.py`
 
@@ -619,7 +619,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.png
-    :alt: Collision
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_collisions.py`
 
@@ -636,7 +636,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_compute-normals_thumb.png
-    :alt: Computing Surface Normals
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_compute-normals.py`
 
@@ -653,7 +653,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_compute-volume_thumb.png
-    :alt: Volumetric Analysis
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_compute-volume.py`
 
@@ -670,7 +670,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_connectivity_thumb.png
-    :alt: Connectivity
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_connectivity.py`
 
@@ -687,7 +687,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_contouring_thumb.png
-    :alt: Contouring
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_contouring.py`
 
@@ -704,7 +704,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_decimate_thumb.png
-    :alt: Decimation
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_decimate.py`
 
@@ -721,7 +721,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_distance-between-surfaces_thumb.png
-    :alt: Distance Between Two Surfaces
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py`
 
@@ -738,7 +738,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-cells-inside-surface_thumb.png
-    :alt: Extract Cells Inside Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py`
 
@@ -755,7 +755,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-edges_thumb.png
-    :alt: Extract Edges
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-edges.py`
 
@@ -772,7 +772,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extract-surface_thumb.png
-    :alt: Extract Surface
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extract-surface.py`
 
@@ -789,7 +789,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extrude-rotate_thumb.png
-    :alt: Extrude Rotation
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extrude-rotate.py`
 
@@ -806,7 +806,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_extrude-trim_thumb.png
-    :alt: Extrude Trim
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_extrude-trim.py`
 
@@ -823,7 +823,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_flying_edges_thumb.png
-    :alt: Marching Cubes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_flying_edges.py`
 
@@ -840,7 +840,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_gaussian-smoothing_thumb.png
-    :alt: Gaussian Smoothing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py`
 
@@ -857,7 +857,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_geodesic_thumb.png
-    :alt: Geodesic Paths
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_geodesic.py`
 
@@ -874,7 +874,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_glyphs_thumb.png
-    :alt: Plotting Glyphs (Vectors or PolyData)
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_glyphs.py`
 
@@ -891,7 +891,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_glyphs_table_thumb.png
-    :alt: Table of Glyphs
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_glyphs_table.py`
 
@@ -908,7 +908,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_gradients_thumb.png
-    :alt: Compute Gradients of a Field
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_gradients.py`
 
@@ -925,7 +925,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_image-fft-perlin-noise_thumb.png
-    :alt: Fast Fourier Transform with Perlin Noise
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py`
 
@@ -942,7 +942,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_image-fft_thumb.png
-    :alt: Fast Fourier Transform
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_image-fft.py`
 
@@ -959,7 +959,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_integrate-data_thumb.png
-    :alt: Integrate Data
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_integrate-data.py`
 
@@ -976,7 +976,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_interpolate_thumb.png
-    :alt: Interpolating
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_interpolate.py`
 
@@ -993,7 +993,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_mesh-quality_thumb.png
-    :alt: Computing Mesh Quality
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_mesh-quality.py`
 
@@ -1010,7 +1010,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_poly-ray-trace_thumb.png
-    :alt: Ray Tracing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_poly-ray-trace.py`
 
@@ -1027,7 +1027,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_project-plane_thumb.png
-    :alt: Project to a Plane
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_project-plane.py`
 
@@ -1044,7 +1044,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_reflect_thumb.png
-    :alt: Reflect Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_reflect.py`
 
@@ -1061,7 +1061,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_resample_thumb.png
-    :alt: Resampling
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_resample.py`
 
@@ -1078,7 +1078,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_rotate_thumb.png
-    :alt: Rotations
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_rotate.py`
 
@@ -1095,7 +1095,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_2d_thumb.png
-    :alt: Sample Function: Perlin Noise in 2D
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_sampling_functions_2d.py`
 
@@ -1112,7 +1112,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_sampling_functions_3d_thumb.png
-    :alt: Sample Function: Perlin Noise in 3D
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_sampling_functions_3d.py`
 
@@ -1129,7 +1129,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_slicing_thumb.png
-    :alt: Slicing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_slicing.py`
 
@@ -1146,7 +1146,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_streamlines_thumb.png
-    :alt: Streamlines
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_streamlines.py`
 
@@ -1163,7 +1163,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_streamlines_2D_thumb.png
-    :alt: 2D Streamlines
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_streamlines_2D.py`
 
@@ -1180,7 +1180,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_subdivide_thumb.png
-    :alt: Subdivide Cells
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_subdivide.py`
 
@@ -1197,7 +1197,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_surface-smoothing_thumb.png
-    :alt: Surface Smoothing
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_surface-smoothing.py`
 
@@ -1214,7 +1214,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_surface_reconstruction_thumb.png
-    :alt: Surface Reconstruction
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_surface_reconstruction.py`
 
@@ -1231,7 +1231,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_using-filters_thumb.png
-    :alt: Using Common Filters
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_using-filters.py`
 
@@ -1248,7 +1248,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_voxelize_thumb.png
-    :alt: Voxelize a Surface Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_voxelize.py`
 
@@ -1265,7 +1265,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 .. only:: html
 
   .. image:: /examples/01-filter/images/thumb/sphx_glr_warp-by-vector_thumb.png
-    :alt: Warping by Vectors
+    :alt:
 
   :ref:`sphx_glr_examples_01-filter_warp-by-vector.py`
 
@@ -1311,7 +1311,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_anti-aliasing_thumb.png
-    :alt: Anti-Aliasing
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_anti-aliasing.py`
 
@@ -1328,7 +1328,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_backface_props_thumb.png
-    :alt: Setting Backface Properties
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_backface_props.py`
 
@@ -1345,7 +1345,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_background_image_thumb.png
-    :alt: Background Image
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_background_image.py`
 
@@ -1362,7 +1362,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_blurring_thumb.png
-    :alt: Blurring
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_blurring.py`
 
@@ -1379,7 +1379,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_bounds_thumb.png
-    :alt: Plotting Bounds
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_bounds.py`
 
@@ -1396,7 +1396,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_chart_basics_thumb.png
-    :alt: Chart Basics
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_chart_basics.py`
 
@@ -1413,7 +1413,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_chart_overlays_thumb.png
-    :alt: Chart Overlays
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_chart_overlays.py`
 
@@ -1430,7 +1430,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_clear_thumb.png
-    :alt: Clearing a Mesh or the Entire Plot
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_clear.py`
 
@@ -1447,7 +1447,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_cmap_thumb.png
-    :alt: Colormap Choices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_cmap.py`
 
@@ -1464,7 +1464,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_color_cycler_thumb.png
-    :alt: Color Cycling
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_color_cycler.py`
 
@@ -1481,7 +1481,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_composite-picking_thumb.png
-    :alt: Composite Picking
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_composite-picking.py`
 
@@ -1498,7 +1498,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_depth-peeling_thumb.png
-    :alt: Depth Peeling
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_depth-peeling.py`
 
@@ -1515,7 +1515,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_depth_of_field_thumb.png
-    :alt: Depth of Field Plotting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_depth_of_field.py`
 
@@ -1532,7 +1532,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_distance-along-spline_thumb.png
-    :alt: Label based on Distance on Line
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_distance-along-spline.py`
 
@@ -1549,7 +1549,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_edges_thumb.png
-    :alt: Show Edges
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_edges.py`
 
@@ -1566,7 +1566,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_edl_thumb.png
-    :alt: Eye Dome Lighting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_edl.py`
 
@@ -1583,7 +1583,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_floors_thumb.png
-    :alt: Plot with Floors
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_floors.py`
 
@@ -1600,7 +1600,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ghost-cells_thumb.png
-    :alt: Hide Cells with Ghosting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ghost-cells.py`
 
@@ -1617,7 +1617,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_gif_thumb.png
-    :alt: Create a GIF Movie
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_gif.py`
 
@@ -1634,7 +1634,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_image_depth_thumb.png
-    :alt: Render a depth image
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_image_depth.py`
 
@@ -1651,7 +1651,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_interpolate-before-map_thumb.png
-    :alt: Interpolate Before Mapping
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_interpolate-before-map.py`
 
@@ -1668,7 +1668,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_isovalue_thumb.png
-    :alt: Moving Isovalue
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_isovalue.py`
 
@@ -1685,7 +1685,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_labels_thumb.png
-    :alt: Label Points
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_labels.py`
 
@@ -1702,7 +1702,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_lighting_mesh_thumb.png
-    :alt: Lighting Properties
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_lighting_mesh.py`
 
@@ -1719,7 +1719,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_linked_thumb.png
-    :alt: Linked Views in Subplots
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_linked.py`
 
@@ -1736,7 +1736,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_lookup-table_thumb.png
-    :alt: Lookup Tables
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_lookup-table.py`
 
@@ -1753,7 +1753,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_mesh-picking_thumb.png
-    :alt: Picking Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_mesh-picking.py`
 
@@ -1770,7 +1770,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_movie_thumb.png
-    :alt: Create a MP4 Movie
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_movie.py`
 
@@ -1787,7 +1787,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_movie_glyphs_thumb.png
-    :alt: Save a Movie Using Glyphs
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_movie_glyphs.py`
 
@@ -1804,7 +1804,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_moving_cmap_thumb.png
-    :alt: Create a GIF Movie of a Static Object with a Moving Colormap
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_moving_cmap.py`
 
@@ -1821,7 +1821,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_multi-window_thumb.png
-    :alt: Multi-Window Plot
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_multi-window.py`
 
@@ -1838,7 +1838,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_opacity_thumb.png
-    :alt: Plot with Opacity
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_opacity.py`
 
@@ -1855,7 +1855,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_orbit_thumb.png
-    :alt: Orbiting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_orbit.py`
 
@@ -1872,7 +1872,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ortho-slices_thumb.png
-    :alt: Orthogonal Slices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ortho-slices.py`
 
@@ -1889,7 +1889,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_pbr_thumb.png
-    :alt: Physically Based Rendering
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_pbr.py`
 
@@ -1906,7 +1906,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_plot-over-circular-arc_thumb.png
-    :alt: Plot Scalars Over a Circular Arc
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_plot-over-circular-arc.py`
 
@@ -1923,7 +1923,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_plot-over-line_thumb.png
-    :alt: Plot Over Line
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_plot-over-line.py`
 
@@ -1940,7 +1940,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-cell-scalars_thumb.png
-    :alt: Point Cell Scalars
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-cell-scalars.py`
 
@@ -1957,7 +1957,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-clouds_thumb.png
-    :alt: Plotting Point Clouds
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-clouds.py`
 
@@ -1974,7 +1974,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-picking_thumb.png
-    :alt: Picking points on a mesh
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-picking.py`
 
@@ -1991,7 +1991,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_scalar-bars_thumb.png
-    :alt: Customize Scalar Bars
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_scalar-bars.py`
 
@@ -2008,7 +2008,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_screenshot_thumb.png
-    :alt: Saving Screenshots
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_screenshot.py`
 
@@ -2025,7 +2025,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_shading_thumb.png
-    :alt: Types of Shading
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_shading.py`
 
@@ -2042,7 +2042,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_silhouette_thumb.png
-    :alt: Silhouette Highlight
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_silhouette.py`
 
@@ -2059,7 +2059,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_spherical_thumb.png
-    :alt: Plot data in spherical coordinates
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_spherical.py`
 
@@ -2076,7 +2076,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ssao_thumb.png
-    :alt: Surface Space Ambient Occlusion
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ssao.py`
 
@@ -2093,7 +2093,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_surface-picking_thumb.png
-    :alt: Picking a Point on the Surface of a Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_surface-picking.py`
 
@@ -2110,7 +2110,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_texture_thumb.png
-    :alt: Applying Textures
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_texture.py`
 
@@ -2127,7 +2127,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_themes_thumb.png
-    :alt: Control Global and Local Plotting Themes
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_themes.py`
 
@@ -2144,7 +2144,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_topo-map_thumb.png
-    :alt: Topographic Map
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_topo-map.py`
 
@@ -2161,7 +2161,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_vector-component_thumb.png
-    :alt: Plot Vector Component
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_vector-component.py`
 
@@ -2178,7 +2178,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_vertices_thumb.png
-    :alt: Visible Vertices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_vertices.py`
 
@@ -2195,7 +2195,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_volume_thumb.png
-    :alt: Volume Rendering
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_volume.py`
 
@@ -2237,7 +2237,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_box-widget_thumb.png
-    :alt: Box Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_box-widget.py`
 
@@ -2254,7 +2254,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_checkbox-widget_thumb.png
-    :alt: Checkbox Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_checkbox-widget.py`
 
@@ -2271,7 +2271,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_clip-volume_thumb.png
-    :alt: Clip Volume Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_clip-volume.py`
 
@@ -2288,7 +2288,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_line-widget_thumb.png
-    :alt: Line Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_line-widget.py`
 
@@ -2305,7 +2305,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_multi-slider-widget_thumb.png
-    :alt: Multiple Slider Widgets
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py`
 
@@ -2322,7 +2322,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_plane-widget_thumb.png
-    :alt: Plane Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_plane-widget.py`
 
@@ -2339,7 +2339,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_slider-bar-widget_thumb.png
-    :alt: Slider Bar Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`
 
@@ -2356,7 +2356,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_sphere-widget_thumb.png
-    :alt: Sphere Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_sphere-widget.py`
 
@@ -2373,7 +2373,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_spline-widget_thumb.png
-    :alt: Spline Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_spline-widget.py`
 
@@ -2415,7 +2415,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_actors_thumb.png
-    :alt: Light Actors
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_actors.py`
 
@@ -2432,7 +2432,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_attenuation_thumb.png
-    :alt: Attenuation
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_attenuation.py`
 
@@ -2449,7 +2449,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_beam_shape_thumb.png
-    :alt: Beam Shape
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_beam_shape.py`
 
@@ -2466,7 +2466,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_light_types_thumb.png
-    :alt: Light Types
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_light_types.py`
 
@@ -2483,7 +2483,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_mesh_lighting_thumb.png
-    :alt: Disabling Mesh Lighting
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_mesh_lighting.py`
 
@@ -2500,7 +2500,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_plotter_builtins_thumb.png
-    :alt: Plotter Lighting Systems
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_plotter_builtins.py`
 
@@ -2517,7 +2517,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_shadows_thumb.png
-    :alt: Shadows
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_shadows.py`
 
@@ -2551,7 +2551,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_add-example_thumb.png
-    :alt: Adding a New Gallery Example
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_add-example.py`
 
@@ -2568,7 +2568,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_antarctica-compare_thumb.png
-    :alt: Compare Field Across Mesh Regions
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`
 
@@ -2585,7 +2585,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_atomic-orbitals_thumb.png
-    :alt: Plot Atomic Orbitals
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py`
 
@@ -2602,7 +2602,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_extending-pyvista_thumb.png
-    :alt: Extending PyVista
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py`
 
@@ -2619,7 +2619,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_openfoam-example_thumb.png
-    :alt: Plot OpenFOAM data
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_openfoam-example.py`
 
@@ -2631,12 +2631,12 @@ developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to `pyvista/pyvista-support#486 &lt;https://github.com/pyvista/pyvista-...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to pyvista/pyvista-support#486.">
 
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_osmnx-example_thumb.png
-    :alt: Plot Open Street Map Data
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_osmnx-example.py`
 
@@ -2653,7 +2653,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_planets_thumb.png
-    :alt: 3D Earth and Celestial Bodies
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_planets.py`
 
@@ -2670,7 +2670,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_plotting-algorithms_thumb.png
-    :alt: Plotting with VTK Algorithms
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py`
 
@@ -2687,7 +2687,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace-moeller_thumb.png
-    :alt: Visualize the Moeller–Trumbore Algorithm
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py`
 
@@ -2704,7 +2704,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace_thumb.png
-    :alt: Ray Tracing
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_ray-trace.py`
 
@@ -2721,7 +2721,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_sphere_eversion_thumb.png
-    :alt: Turning the sphere inside out
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py`
 
@@ -2738,13 +2738,13 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_warp-by-vector-eigenmodes_thumb.png
-    :alt: Displaying eigenmodes of vibration using ``warp_by_vector``
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Displaying eigenmodes of vibration using ``warp_by_vector``</div>
+      <div class="sphx-glr-thumbnail-title">Displaying eigenmodes of vibration using warp_by_vector</div>
     </div>
 
 
@@ -2757,13 +2757,13 @@ developers.
    :hidden:
    :includehidden:
 
+
    /examples/00-load/index.rst
    /examples/01-filter/index.rst
    /examples/02-plot/index.rst
    /examples/03-widgets/index.rst
    /examples/04-lights/index.rst
    /examples/99-advanced/index.rst
-
 
 
 .. only:: html

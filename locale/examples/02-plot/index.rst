@@ -34,7 +34,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_anti-aliasing_thumb.png
-    :alt: Anti-Aliasing
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_anti-aliasing.py`
 
@@ -51,7 +51,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_backface_props_thumb.png
-    :alt: Setting Backface Properties
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_backface_props.py`
 
@@ -68,7 +68,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_background_image_thumb.png
-    :alt: Background Image
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_background_image.py`
 
@@ -85,7 +85,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_blurring_thumb.png
-    :alt: Blurring
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_blurring.py`
 
@@ -102,7 +102,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_bounds_thumb.png
-    :alt: Plotting Bounds
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_bounds.py`
 
@@ -119,7 +119,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_chart_basics_thumb.png
-    :alt: Chart Basics
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_chart_basics.py`
 
@@ -136,7 +136,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_chart_overlays_thumb.png
-    :alt: Chart Overlays
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_chart_overlays.py`
 
@@ -153,7 +153,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_clear_thumb.png
-    :alt: Clearing a Mesh or the Entire Plot
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_clear.py`
 
@@ -170,7 +170,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_cmap_thumb.png
-    :alt: Colormap Choices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_cmap.py`
 
@@ -187,7 +187,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_color_cycler_thumb.png
-    :alt: Color Cycling
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_color_cycler.py`
 
@@ -204,7 +204,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_composite-picking_thumb.png
-    :alt: Composite Picking
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_composite-picking.py`
 
@@ -221,7 +221,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_depth-peeling_thumb.png
-    :alt: Depth Peeling
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_depth-peeling.py`
 
@@ -238,7 +238,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_depth_of_field_thumb.png
-    :alt: Depth of Field Plotting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_depth_of_field.py`
 
@@ -255,7 +255,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_distance-along-spline_thumb.png
-    :alt: Label based on Distance on Line
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_distance-along-spline.py`
 
@@ -272,7 +272,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_edges_thumb.png
-    :alt: Show Edges
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_edges.py`
 
@@ -289,7 +289,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_edl_thumb.png
-    :alt: Eye Dome Lighting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_edl.py`
 
@@ -306,7 +306,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_floors_thumb.png
-    :alt: Plot with Floors
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_floors.py`
 
@@ -323,7 +323,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ghost-cells_thumb.png
-    :alt: Hide Cells with Ghosting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ghost-cells.py`
 
@@ -340,7 +340,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_gif_thumb.png
-    :alt: Create a GIF Movie
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_gif.py`
 
@@ -357,7 +357,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_image_depth_thumb.png
-    :alt: Render a depth image
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_image_depth.py`
 
@@ -374,7 +374,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_interpolate-before-map_thumb.png
-    :alt: Interpolate Before Mapping
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_interpolate-before-map.py`
 
@@ -391,7 +391,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_isovalue_thumb.png
-    :alt: Moving Isovalue
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_isovalue.py`
 
@@ -408,7 +408,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_labels_thumb.png
-    :alt: Label Points
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_labels.py`
 
@@ -425,7 +425,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_lighting_mesh_thumb.png
-    :alt: Lighting Properties
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_lighting_mesh.py`
 
@@ -442,7 +442,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_linked_thumb.png
-    :alt: Linked Views in Subplots
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_linked.py`
 
@@ -459,7 +459,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_lookup-table_thumb.png
-    :alt: Lookup Tables
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_lookup-table.py`
 
@@ -476,7 +476,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_mesh-picking_thumb.png
-    :alt: Picking Meshes
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_mesh-picking.py`
 
@@ -493,7 +493,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_movie_thumb.png
-    :alt: Create a MP4 Movie
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_movie.py`
 
@@ -510,7 +510,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_movie_glyphs_thumb.png
-    :alt: Save a Movie Using Glyphs
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_movie_glyphs.py`
 
@@ -527,7 +527,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_moving_cmap_thumb.png
-    :alt: Create a GIF Movie of a Static Object with a Moving Colormap
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_moving_cmap.py`
 
@@ -544,7 +544,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_multi-window_thumb.png
-    :alt: Multi-Window Plot
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_multi-window.py`
 
@@ -561,7 +561,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_opacity_thumb.png
-    :alt: Plot with Opacity
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_opacity.py`
 
@@ -578,7 +578,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_orbit_thumb.png
-    :alt: Orbiting
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_orbit.py`
 
@@ -595,7 +595,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ortho-slices_thumb.png
-    :alt: Orthogonal Slices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ortho-slices.py`
 
@@ -612,7 +612,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_pbr_thumb.png
-    :alt: Physically Based Rendering
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_pbr.py`
 
@@ -629,7 +629,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_plot-over-circular-arc_thumb.png
-    :alt: Plot Scalars Over a Circular Arc
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_plot-over-circular-arc.py`
 
@@ -646,7 +646,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_plot-over-line_thumb.png
-    :alt: Plot Over Line
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_plot-over-line.py`
 
@@ -663,7 +663,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-cell-scalars_thumb.png
-    :alt: Point Cell Scalars
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-cell-scalars.py`
 
@@ -680,7 +680,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-clouds_thumb.png
-    :alt: Plotting Point Clouds
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-clouds.py`
 
@@ -697,7 +697,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_point-picking_thumb.png
-    :alt: Picking points on a mesh
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_point-picking.py`
 
@@ -714,7 +714,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_scalar-bars_thumb.png
-    :alt: Customize Scalar Bars
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_scalar-bars.py`
 
@@ -731,7 +731,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_screenshot_thumb.png
-    :alt: Saving Screenshots
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_screenshot.py`
 
@@ -748,7 +748,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_shading_thumb.png
-    :alt: Types of Shading
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_shading.py`
 
@@ -765,7 +765,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_silhouette_thumb.png
-    :alt: Silhouette Highlight
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_silhouette.py`
 
@@ -782,7 +782,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_spherical_thumb.png
-    :alt: Plot data in spherical coordinates
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_spherical.py`
 
@@ -799,7 +799,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_ssao_thumb.png
-    :alt: Surface Space Ambient Occlusion
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_ssao.py`
 
@@ -816,7 +816,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_surface-picking_thumb.png
-    :alt: Picking a Point on the Surface of a Mesh
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_surface-picking.py`
 
@@ -833,7 +833,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_texture_thumb.png
-    :alt: Applying Textures
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_texture.py`
 
@@ -850,7 +850,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_themes_thumb.png
-    :alt: Control Global and Local Plotting Themes
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_themes.py`
 
@@ -867,7 +867,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_topo-map_thumb.png
-    :alt: Topographic Map
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_topo-map.py`
 
@@ -884,7 +884,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_vector-component_thumb.png
-    :alt: Plot Vector Component
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_vector-component.py`
 
@@ -901,7 +901,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_vertices_thumb.png
-    :alt: Visible Vertices
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_vertices.py`
 
@@ -918,7 +918,7 @@ plotting routines to perform tasks like:
 .. only:: html
 
   .. image:: /examples/02-plot/images/thumb/sphx_glr_volume_thumb.png
-    :alt: Volume Rendering
+    :alt:
 
   :ref:`sphx_glr_examples_02-plot_volume.py`
 

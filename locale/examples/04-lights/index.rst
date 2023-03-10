@@ -31,7 +31,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_actors_thumb.png
-    :alt: Light Actors
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_actors.py`
 
@@ -48,7 +48,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_attenuation_thumb.png
-    :alt: Attenuation
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_attenuation.py`
 
@@ -65,7 +65,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_beam_shape_thumb.png
-    :alt: Beam Shape
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_beam_shape.py`
 
@@ -82,7 +82,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_light_types_thumb.png
-    :alt: Light Types
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_light_types.py`
 
@@ -99,7 +99,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_mesh_lighting_thumb.png
-    :alt: Disabling Mesh Lighting
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_mesh_lighting.py`
 
@@ -116,7 +116,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_plotter_builtins_thumb.png
-    :alt: Plotter Lighting Systems
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_plotter_builtins.py`
 
@@ -133,7 +133,7 @@ truly bring out the best of your visualization:
 .. only:: html
 
   .. image:: /examples/04-lights/images/thumb/sphx_glr_shadows_thumb.png
-    :alt: Shadows
+    :alt:
 
   :ref:`sphx_glr_examples_04-lights_shadows.py`
 

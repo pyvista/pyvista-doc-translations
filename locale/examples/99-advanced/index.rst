@@ -22,7 +22,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_add-example_thumb.png
-    :alt: Adding a New Gallery Example
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_add-example.py`
 
@@ -39,7 +39,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_antarctica-compare_thumb.png
-    :alt: Compare Field Across Mesh Regions
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py`
 
@@ -56,7 +56,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_atomic-orbitals_thumb.png
-    :alt: Plot Atomic Orbitals
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py`
 
@@ -73,7 +73,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_extending-pyvista_thumb.png
-    :alt: Extending PyVista
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py`
 
@@ -90,7 +90,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_openfoam-example_thumb.png
-    :alt: Plot OpenFOAM data
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_openfoam-example.py`
 
@@ -102,12 +102,12 @@ developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to `pyvista/pyvista-support#486 &lt;https://github.com/pyvista/pyvista-...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to pyvista/pyvista-support#486.">
 
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_osmnx-example_thumb.png
-    :alt: Plot Open Street Map Data
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_osmnx-example.py`
 
@@ -124,7 +124,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_planets_thumb.png
-    :alt: 3D Earth and Celestial Bodies
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_planets.py`
 
@@ -141,7 +141,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_plotting-algorithms_thumb.png
-    :alt: Plotting with VTK Algorithms
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py`
 
@@ -158,7 +158,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace-moeller_thumb.png
-    :alt: Visualize the Moeller–Trumbore Algorithm
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py`
 
@@ -175,7 +175,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_ray-trace_thumb.png
-    :alt: Ray Tracing
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_ray-trace.py`
 
@@ -192,7 +192,7 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_sphere_eversion_thumb.png
-    :alt: Turning the sphere inside out
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py`
 
@@ -209,13 +209,13 @@ developers.
 .. only:: html
 
   .. image:: /examples/99-advanced/images/thumb/sphx_glr_warp-by-vector-eigenmodes_thumb.png
-    :alt: Displaying eigenmodes of vibration using ``warp_by_vector``
+    :alt:
 
   :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py`
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Displaying eigenmodes of vibration using ``warp_by_vector``</div>
+      <div class="sphx-glr-thumbnail-title">Displaying eigenmodes of vibration using warp_by_vector</div>
     </div>
 
 

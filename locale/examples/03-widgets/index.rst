@@ -31,7 +31,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_box-widget_thumb.png
-    :alt: Box Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_box-widget.py`
 
@@ -48,7 +48,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_checkbox-widget_thumb.png
-    :alt: Checkbox Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_checkbox-widget.py`
 
@@ -65,7 +65,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_clip-volume_thumb.png
-    :alt: Clip Volume Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_clip-volume.py`
 
@@ -82,7 +82,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_line-widget_thumb.png
-    :alt: Line Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_line-widget.py`
 
@@ -99,7 +99,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_multi-slider-widget_thumb.png
-    :alt: Multiple Slider Widgets
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_multi-slider-widget.py`
 
@@ -116,7 +116,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_plane-widget_thumb.png
-    :alt: Plane Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_plane-widget.py`
 
@@ -133,7 +133,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_slider-bar-widget_thumb.png
-    :alt: Slider Bar Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_slider-bar-widget.py`
 
@@ -150,7 +150,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_sphere-widget_thumb.png
-    :alt: Sphere Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_sphere-widget.py`
 
@@ -167,7 +167,7 @@ for user defined tasks and processing routines.
 .. only:: html
 
   .. image:: /examples/03-widgets/images/thumb/sphx_glr_spline-widget_thumb.png
-    :alt: Spline Widget
+    :alt:
 
   :ref:`sphx_glr_examples_03-widgets_spline-widget.py`
 
