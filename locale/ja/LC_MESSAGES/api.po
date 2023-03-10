@@ -13296,7 +13296,7 @@ msgstr ":py:obj:`DataSet.cell <pyvista.DataSet.cell>`\\"
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:589:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:2
 msgid "A generator that provides an easy way to loop over all cells."
-msgstr ""
+msgstr "すべてのセルを簡単にループさせる方法を提供するジェネレーター。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.rst:589:<autosummary>:1
 msgid ":py:obj:`DataSet.cell_data <pyvista.DataSet.cell_data>`\\"
@@ -13757,13 +13757,14 @@ msgstr "cell"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:4
 msgid "To access a single cell, use :func:`pyvista.DataSet.get_cell`."
-msgstr ""
+msgstr "1つのセルにアクセスするには、 :func:`pyvista.DataSet.get_cell` を使用します。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:6
 msgid ""
 "Now returns a generator instead of a list. Use ``get_cell(i)`` instead of "
 "``cell[i]``."
 msgstr ""
+"リストの代わりにジェネレータを返すようになりました。 ``cell[i]`` の代わりにe ``get_cell(i)`` を使ってください。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:0
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -13779,11 +13780,11 @@ msgstr "Yields"
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:24
 msgid ":obj:`pyvista.DataSet.get_cell`"
-msgstr ""
+msgstr ":obj:`pyvista.DataSet.get_cell`"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.cell.rst:3
 msgid "Loop over the cells"
-msgstr ""
+msgstr "セルをループさせる"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.cell_bounds.rst:2
 msgid "cell\\_bounds"
@@ -14731,19 +14732,19 @@ msgstr "0 番目のセルを取得します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.get_cell.rst:11
 msgid "Get the point ids of the first cell"
-msgstr ""
+msgstr "最初のセルの点IDを取得します"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.get_cell.rst:16
 msgid "Get the point coordinates of the first cell"
-msgstr ""
+msgstr "最初のセルの点座標を取得します"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.get_cell.rst:23
 msgid "For the first cell, get the points associated with the first edge"
-msgstr ""
+msgstr "最初のセルについて、最初のエッジに関連するポイントを取得します。"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSet.get_cell.rst:28
 msgid "For a Tetrahedron, get the point ids of the last face"
-msgstr ""
+msgstr "四面体の場合、最後の面の点IDを取得します"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:9
@@ -20082,6 +20083,8 @@ msgstr ":obj:`pyvista.MultiBlock` or :obj:`pyvista.UnstructuredGrid`"
 msgid ""
 "UnStructuredGrid if ``as_composite=False`` and MultiBlock when ``True``."
 msgstr ""
+"``as_composite=False`` の場合は UnStructuredGrid， ``True`` の場合は MultiBlock "
+"となります．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.DataSetFilters.partition.rst:3
 msgid ""
@@ -20624,7 +20627,7 @@ msgstr "vtkAbstractCellLocator, optional"
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.probe:32
 msgid "Prototype cell locator to perform the ``FindCell()`` operation."
-msgstr ""
+msgstr "``FindCell()`` を実行するためのセルロケータのプロトタイプです．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.probe:38
@@ -28574,7 +28577,7 @@ msgstr ""
 msgid ""
 "If ``True``, use scalar values in the edge weight. This only works for point"
 " data."
-msgstr ""
+msgstr "``True`` の場合，エッジの重みにスカラー値を使用します．これはポイントデータに対してのみ機能します．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:38
@@ -32396,7 +32399,7 @@ msgstr "ファイル名から"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UnstructuredGrid.rst:35
 msgid "From arrays. Here we create a single tetrahedron."
-msgstr ""
+msgstr "配列から．ここでは，1つの4面体を作成します．"
 
 #: ../../pyvista/doc/api/core/_autosummary/pyvista.UnstructuredGrid.rst:62
 msgid ""
@@ -32847,7 +32850,7 @@ msgstr "offset"
 #: pyvista.UnstructuredGrid.offset:4
 msgid ""
 "This is the location of the start of each cell in :attr:`cell_connectivity`."
-msgstr ""
+msgstr "これは :attr:`cell_connectivity` の各セルの開始位置です。"
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.offset:11
@@ -47138,7 +47141,7 @@ msgstr "``True`` に設定すると，スカラー配列内の一意の値の数
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:188
 msgid "This keyword argument is no longer used. Instead, use ``n_colors``."
-msgstr ""
+msgstr "このキーワード引数は、使用されません。代わりに ``n_colors`` を使用します。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:195
@@ -47284,6 +47287,8 @@ msgid ""
 "Enable physics based rendering (PBR) if the mesh is ``PolyData``.  Use the "
 "``color`` argument to set the base color."
 msgstr ""
+"メッシュが ``PolyData`` の場合，Physics Based Rendering(PBR)を有効にします． ``color`` "
+"引数を使用してベースカラーを設定します．"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.BasePlotter.add_composite:230
