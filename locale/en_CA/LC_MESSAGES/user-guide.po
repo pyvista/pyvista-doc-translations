@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 01:24+0000\n"
+"POT-Creation-Date: 2023-03-11 01:17+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (Canada) (https://www.transifex.com/tkoyama010/teams/112279/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -704,18 +704,19 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/data_model.rst:706
 msgid ""
 "Vectors are treated differently within VTK than scalars when performing "
-"transformations using the :func:`transform() <pyvista.DataSet.transform>` "
-"filter.  Unlike scalar arrays, vector arrays will be transformed along with "
-"the geometry as these vectors represent quantities with direction."
+"transformations using the :func:`transform() "
+"<pyvista.DataSetFilters.transform>` filter.  Unlike scalar arrays, vector "
+"arrays will be transformed along with the geometry as these vectors "
+"represent quantities with direction."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/data_model.rst:714
 msgid ""
 "VTK permits only one \"active\" vector.  If you have multiple vector arrays "
 "that you wish to transform, set ``transform_all_input_vectors=True`` in "
-":func:`transform() <pyvista.DataSet.transform>`.  Be aware that this will "
-"transform any array with three components, so multi-component scalar arrays "
-"like RGB arrays will have to be discarded after transformation."
+":func:`transform() <pyvista.DataSetFilters.transform>`.  Be aware that this "
+"will transform any array with three components, so multi-component scalar "
+"arrays like RGB arrays will have to be discarded after transformation."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/index.rst:2
@@ -1368,24 +1369,24 @@ msgid "Using pip, you can set up your jupyterlab environment with:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:76
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:127
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:129
 msgid "Other Considerations"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:77
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:79
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:132
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:93
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:144
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:146
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
@@ -1579,7 +1580,7 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:197
 msgid ""
 "The ``pythreejs`` supports RGBA plotting.  See the ``rgba`` parameter within"
-" :func:`add_mesh() <pyvista.Plotting.add_mesh>` for more details."
+" :func:`add_mesh() <pyvista.Plotter.add_mesh>` for more details."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:227
@@ -1691,8 +1692,8 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:345
 msgid ""
 "Plotting points as spheres or lines as tubes.  Use :func:`glyph() "
-"<pyvista.DataSet.glyph>` or :func:`tube() <pyvista.PolyData.tube>` to "
-"convert to surfaces first and then plot."
+"<pyvista.DataSetFilters.glyph>` or :func:`tube() "
+"<pyvista.PolyDataFilters.tube>` to convert to surfaces first and then plot."
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:348
@@ -1806,28 +1807,32 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:102
-msgid ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_enabled`"
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
+"<pyvista.themes._TrameConfig.server_proxy_enabled>`"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:103
-msgid ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_prefix`"
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:104
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
+"<pyvista.themes._TrameConfig.server_proxy_prefix>`"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:105
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:107
 msgid ""
 "The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
 "sufficient for most remote Jupyter environment and use within Docker."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:108
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:110
 msgid "This can also be set with an environment variable:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:115
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:117
 msgid "The prefix will need to be modified for JupyterHub deployments."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:117
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:119
 msgid ""
 "On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
 "``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
@@ -1886,28 +1891,27 @@ msgstr ""
 
 #: ../../pyvista/doc/user-guide/simple.rst:15
 msgid ""
-"The wrapping function :func:`pyvista.wrap` is under the "
-":mod:`pyvista.utilities` module, which is usable from the top level of "
+"The wrapping function :func:`pyvista.wrap` is usable from the top level of "
 "PyVista. This allows users to quickly wrap any VTK dataset they have as a "
 "PyVista object:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:30
+#: ../../pyvista/doc/user-guide/simple.rst:29
 msgid "Reading a VTK File"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:32
+#: ../../pyvista/doc/user-guide/simple.rst:31
 msgid ""
 "PyVista provides a convenience function to read VTK file formats into their "
 "respective PyVista data objects. Simply call the :func:`pyvista.read` "
 "function passing the filename:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:43
+#: ../../pyvista/doc/user-guide/simple.rst:42
 msgid "Accessing the Wrapped Data Object"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:45
+#: ../../pyvista/doc/user-guide/simple.rst:44
 msgid ""
 "Now that you have a wrapped VTK data object, you can start accessing and "
 "modifying the dataset. Some of the most common properties to access include "
@@ -1915,18 +1919,17 @@ msgid ""
 " cells of the mesh respectively)."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:50
+#: ../../pyvista/doc/user-guide/simple.rst:49
 msgid "First, check out some common meta-properties:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:86
+#: ../../pyvista/doc/user-guide/simple.rst:85
 msgid ""
-"Access the points by fetching the :attr:`points "
-"<pyvista.core.dataset.DataSet.points>` attribute on any PyVista mesh as a "
-":class:`numpy.ndarray`:"
+"Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
+"attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:104
+#: ../../pyvista/doc/user-guide/simple.rst:103
 msgid ""
 "Accessing the different data attributes on the nodes and cells of the mesh "
 "is interfaced via dictionaries with callbacks to the VTK object. These "
@@ -1935,24 +1938,24 @@ msgid ""
 "access an array on that dataset, then add some more data:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:136
+#: ../../pyvista/doc/user-guide/simple.rst:135
 msgid "Plotting"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:138
+#: ../../pyvista/doc/user-guide/simple.rst:137
 msgid ""
 "PyVista includes numerous plotting routines that are intended to be "
 "intuitive and highly controllable with ``matplotlib`` similar syntax and "
 "keyword arguments."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:142
+#: ../../pyvista/doc/user-guide/simple.rst:141
 msgid ""
 "To get started, try out the :func:`pyvista.plot` convenience method that is "
 "bound to each PyVista data object."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:168
+#: ../../pyvista/doc/user-guide/simple.rst:167
 msgid ""
 "You can also create a plotter object to fine tune the scene. First, "
 "instantiate a plotter such as :class:`pyvista.Plotter` or "
@@ -1961,7 +1964,7 @@ msgid ""
 "calling :func:`show() <pyvista.Plotter.show>`."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:184
+#: ../../pyvista/doc/user-guide/simple.rst:183
 msgid ""
 "Optionally :func:`show() <pyvista.Plotter.show>` can return the last used "
 "camera position of the rendering window in case you want to choose a camera "
@@ -1970,43 +1973,43 @@ msgid ""
 "the plotter (even after it's closed)."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:191
+#: ../../pyvista/doc/user-guide/simple.rst:190
 msgid ""
 "You can then use this cached camera position for additional plotting without"
 " having to manually interact with the plotting window:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:204
+#: ../../pyvista/doc/user-guide/simple.rst:203
 msgid ""
 "Be sure to check out all the available plotters and their options for your "
 "use case:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:207
+#: ../../pyvista/doc/user-guide/simple.rst:206
 msgid ""
 ":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
 "closed."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:209
+#: ../../pyvista/doc/user-guide/simple.rst:208
 msgid ""
 ":class:`pyvistaqt.BackgroundPlotter`: Creates a rendering window that is "
 "interactive and does not pause the code execution (for more information see "
 "the `pyvistaqt`_ library)"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:218
+#: ../../pyvista/doc/user-guide/simple.rst:217
 msgid "Exporting"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:220
+#: ../../pyvista/doc/user-guide/simple.rst:219
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
 "block above could be saved like:"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:228
+#: ../../pyvista/doc/user-guide/simple.rst:227
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -2014,7 +2017,7 @@ msgid ""
 "method on each mesh type."
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:233
+#: ../../pyvista/doc/user-guide/simple.rst:232
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -2024,7 +2027,7 @@ msgid ""
 " WKT (TIN), XDMF, and more!"
 msgstr ""
 
-#: ../../pyvista/doc/user-guide/simple.rst:240
+#: ../../pyvista/doc/user-guide/simple.rst:239
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -2217,9 +2220,9 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:208
 msgid ""
 "The same goes with assigning face or cell connectivity/topology.  With VTK "
-"you would normally have to loop using :func:`InsertNextCell` and "
-":func:`InsertCellPoint`.  For example, to create a single cell (triangle) "
-"and then assign it to `vtkPolyData`_:"
+"you would normally have to loop using ``InsertNextCell`` and "
+"``InsertCellPoint``.  For example, to create a single cell (triangle) and "
+"then assign it to `vtkPolyData`_:"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:222
@@ -2414,7 +2417,7 @@ msgid ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:142
-msgid ":attr:`field_data <pyvista.DataSet.field_data>`"
+msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
 msgstr ""
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:146
