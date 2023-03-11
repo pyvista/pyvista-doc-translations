@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_extract-edges.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_extract-edges.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -49,7 +49,7 @@ From vtk documentation, the edges of a mesh are one of the following:
 3. feature edges (edges used by two triangles and whose dihedral angle > feature_angle)
 4. manifold edges (edges used by exactly two polygons).
 
-The :func:`extract_feature_edges() <pyvista.PolyDataFilters.extract_feature_edges>`
+The :func:`extract_feature_edges() <pyvista.DataSetFilters.extract_feature_edges>`
 filter will extract those edges given a feature angle and return a dataset
 with lines that represent the edges of the original mesh.
 
@@ -119,8 +119,8 @@ the cow mesh example:
 .. GENERATED FROM PYTHON SOURCE LINES 55-58
 
 We can leverage the :any:`pyvista.PolyData.n_open_edges` property and
-:func:`pyvista.PolyDataFilters.extract_feature_edges` filter to count and extract the
-open edges on a :class:`pyvista.PolyData` mesh.
+:func:`pyvista.DataSetFilters.extract_feature_edges` filter to count and
+extract the open edges on a :class:`pyvista.PolyData` mesh.
 
 .. GENERATED FROM PYTHON SOURCE LINES 58-63
 
@@ -144,6 +144,7 @@ open edges on a :class:`pyvista.PolyData` mesh.
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>69451</td></tr>
     <tr><td>N Points</td><td>35947</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-9.469e-02, 6.101e-02</td></tr>
     <tr><td>Y Bounds</td><td>3.299e-02, 1.873e-01</td></tr>
     <tr><td>Z Bounds</td><td>-6.187e-02, 5.880e-02</td></tr>
@@ -172,8 +173,6 @@ We can get a count of the open edges with:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -184,7 +183,7 @@ We can get a count of the open edges with:
 .. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 And we can extract those edges with the ``boundary_edges`` option of
-:func:`pyvista.PolyDataFilters.extract_feature_edges`:
+:func:`pyvista.DataSetFilters.extract_feature_edges`:
 
 .. GENERATED FROM PYTHON SOURCE LINES 71-78
 
@@ -212,28 +211,25 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.395 seconds)
+   **Total running time of the script:** ( 0 minutes  3.124 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: extract-edges.py <extract-edges.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: extract-edges.py <extract-edges.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extract-edges.ipynb <extract-edges.ipynb>`
+      :download:`Download Jupyter notebook: extract-edges.ipynb <extract-edges.ipynb>`
 
 
 .. only:: html

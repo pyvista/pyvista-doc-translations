@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_shading.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_shading.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -122,7 +122,7 @@ enabling ``split_sharp_edges``.
 .. GENERATED FROM PYTHON SOURCE LINES 40-42
 
 We can even plot the edges that will be split using
-:func:`extract_feature_edges <pyvista.PolyDataFilters.extract_feature_edges>`.
+:func:`extract_feature_edges <pyvista.DataSetFilters.extract_feature_edges>`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-56
 
@@ -184,28 +184,25 @@ physically based rendering as well.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.123 seconds)
+   **Total running time of the script:** ( 0 minutes  1.394 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_shading.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: shading.py <shading.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: shading.py <shading.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: shading.ipynb <shading.ipynb>`
+      :download:`Download Jupyter notebook: shading.ipynb <shading.ipynb>`
 
 
 .. only:: html

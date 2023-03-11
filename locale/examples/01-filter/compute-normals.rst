@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_compute-normals.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_compute-normals.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -22,11 +22,9 @@
 
 Computing Surface Normals
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 Compute normals on a surface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
@@ -42,13 +40,13 @@ Compute normals on a surface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+.. GENERATED FROM PYTHON SOURCE LINES 16-19
 
 Computing the normals of a surface is quite easy using
 :class:`pyvista.PolyData`'s :func:`pyvista.PolyDataFilters.compute_normals`
 method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-24
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 .. code-block:: default
 
@@ -68,16 +66,16 @@ method.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-31
+.. GENERATED FROM PYTHON SOURCE LINES 24-30
 
 Now we have a surface dataset of the globe loaded - unfortunately, the
 dataset shows the globe with a uniform radius which hides topographic relief.
-Using :func:`pyvista.PolyData.compute_normals`, we can compute the normal
+Using :func:`pyvista.PolyDataFilters.compute_normals`, we can compute the normal
 vectors on the globe at all points in the dataset, then use the values given
 in the dataset to warp the surface in the normals direction to create some
 exaggerated topographic relief.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-42
+.. GENERATED FROM PYTHON SOURCE LINES 30-41
 
 .. code-block:: default
 
@@ -104,13 +102,13 @@ exaggerated topographic relief.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-46
+.. GENERATED FROM PYTHON SOURCE LINES 42-45
 
 We could also use face/cell normals to extract all the faces of a mesh
 facing a general direction. In the following snippet, we take a mesh, compute
 the normals along its cell faces, and extract the faces that face upward.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-64
+.. GENERATED FROM PYTHON SOURCE LINES 45-63
 
 .. code-block:: default
 
@@ -147,28 +145,25 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.910 seconds)
+   **Total running time of the script:** ( 0 minutes  14.923 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: compute-normals.py <compute-normals.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: compute-normals.py <compute-normals.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: compute-normals.ipynb <compute-normals.ipynb>`
+      :download:`Download Jupyter notebook: compute-normals.ipynb <compute-normals.ipynb>`
 
 
 .. only:: html

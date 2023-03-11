@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_clipping.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_clipping.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -187,7 +187,7 @@ pass the entire cell on through the boundary.
 
 This option is available for :func:`pyvista.DataSetFilters.clip`,
 :func:`pyvista.DataSetFilters.clip_box`, and
-:func:`pyvista.DataSetFilters.clip_sruface`, but not available when clipping
+:func:`pyvista.DataSetFilters.clip_surface`, but not available when clipping
 by scalar in :func:`pyvista.DataSetFilters.clip_scalar`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 90-94
@@ -288,28 +288,25 @@ Plot comparison
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.563 seconds)
+   **Total running time of the script:** ( 0 minutes  2.992 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: clipping.py <clipping.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: clipping.py <clipping.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: clipping.ipynb <clipping.ipynb>`
+      :download:`Download Jupyter notebook: clipping.ipynb <clipping.ipynb>`
 
 
 .. only:: html

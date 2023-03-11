@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_depth-peeling.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_depth-peeling.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -22,14 +22,15 @@
 
 Depth Peeling
 ~~~~~~~~~~~~~
-Depth peeling is a technique to correctly render translucent geometry.
-This is not enabled by default in :attr:`pyvista.global_theme` as some
-operating systems and versions of VTK have issues with this routine.
+Depth peeling is a technique to correctly render translucent geometry.  This is
+not enabled by default in :attr:`pyvista.global_theme
+<pyvista.themes.DefaultTheme>` as some operating systems and versions of VTK
+have issues with this routine.
 
 For this example, we will showcase the difference that depth peeling
 provides.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-17
+.. GENERATED FROM PYTHON SOURCE LINES 15-18
 
 .. code-block:: default
 
@@ -43,7 +44,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-26
+.. GENERATED FROM PYTHON SOURCE LINES 20-27
 
 .. code-block:: default
 
@@ -61,7 +62,7 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-43
+.. GENERATED FROM PYTHON SOURCE LINES 28-44
 
 .. code-block:: default
 
@@ -93,14 +94,14 @@ provides.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-48
+.. GENERATED FROM PYTHON SOURCE LINES 45-49
 
 The following room surfaces example mesh, provided courtesy of
 `Sam Potter <https://github.com/sampotter>`_ has coincident topology and
 depth rendering helps correctly render those geometries when a global
 opacity value is used.
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-67
+.. GENERATED FROM PYTHON SOURCE LINES 49-68
 
 .. code-block:: default
 
@@ -135,12 +136,12 @@ opacity value is used.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-70
+.. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 And here is another example wheen rendering many translucent contour
 surfaces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-87
+.. GENERATED FROM PYTHON SOURCE LINES 71-88
 
 .. code-block:: default
 
@@ -176,28 +177,25 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.910 seconds)
+   **Total running time of the script:** ( 0 minutes  46.217 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: depth-peeling.py <depth-peeling.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: depth-peeling.py <depth-peeling.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: depth-peeling.ipynb <depth-peeling.ipynb>`
+      :download:`Download Jupyter notebook: depth-peeling.ipynb <depth-peeling.ipynb>`
 
 
 .. only:: html

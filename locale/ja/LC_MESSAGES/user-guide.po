@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 01:24+0000\n"
+"POT-Creation-Date: 2023-03-11 01:17+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -851,26 +851,20 @@ msgstr ""
 #: ../../pyvista/doc/user-guide/data_model.rst:706
 msgid ""
 "Vectors are treated differently within VTK than scalars when performing "
-"transformations using the :func:`transform() <pyvista.DataSet.transform>` "
-"filter.  Unlike scalar arrays, vector arrays will be transformed along with "
-"the geometry as these vectors represent quantities with direction."
+"transformations using the :func:`transform() "
+"<pyvista.DataSetFilters.transform>` filter.  Unlike scalar arrays, vector "
+"arrays will be transformed along with the geometry as these vectors "
+"represent quantities with direction."
 msgstr ""
-"VTKでは， :func:`transform() <pyvista.DataSet.transform>` "
-"フィルタを使用して変換を行う際に，ベクトルはスカラーとは異なる扱いになります． "
-"スカラー配列とは異なり，ベクトル配列は方向を持つ量を表すため，ジオメトリと一緒に変換されます．"
 
 #: ../../pyvista/doc/user-guide/data_model.rst:714
 msgid ""
 "VTK permits only one \"active\" vector.  If you have multiple vector arrays "
 "that you wish to transform, set ``transform_all_input_vectors=True`` in "
-":func:`transform() <pyvista.DataSet.transform>`.  Be aware that this will "
-"transform any array with three components, so multi-component scalar arrays "
-"like RGB arrays will have to be discarded after transformation."
+":func:`transform() <pyvista.DataSetFilters.transform>`.  Be aware that this "
+"will transform any array with three components, so multi-component scalar "
+"arrays like RGB arrays will have to be discarded after transformation."
 msgstr ""
-"VTKでは，1つの \"アクティブ\" なベクトルしか許可しません．変換したい複数のベクトル配列がある場合には， :func:`transform() "
-"<pyvista.DataSet.transform>` で ``transform_all_input_vectors=True`` "
-"を設定してください． "
-"これは，3つのコンポーネントを持つ配列を変換するので，RGB配列のような複数コンポーネントのスカラー配列は，変換後に破棄しなければならないことに注意してください．"
 
 #: ../../pyvista/doc/user-guide/index.rst:2
 msgid "User Guide"
@@ -992,7 +986,7 @@ msgstr "`Jupyter <https://jupyter.org/>`_ ノートで ``pyvista`` でインタ�
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:10
 msgid "We recommend using the Trame-based backed. See :ref:`trame_jupyter`."
-msgstr "Trameベースの後援を使用することをお勧めします。 :ref:`trame_jupyter` を参照してください。"
+msgstr "Trameベースの後援を使用することをお勧めします． :ref:`trame_jupyter` を参照してください．"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:14
 msgid "Demo Using ``pythreejs``"
@@ -1182,11 +1176,11 @@ msgid ""
 ":ref:`trame_jupyter`), which do not require any server side rendering or "
 "framebuffer."
 msgstr ""
-"``trame``, ``ipygany``, ``pythreejs`` 以外のモジュールはフレームバッファを必要とし、ヘッドレス環境では "
-":func:`pyvista.start_xvfb` でセットアップを行うことができます。しかし、システムパッケージをインストールできないGoogle "
-"Colabでは、 ``threejs`` や trame-backend の ``'client'`` "
-"のような、サーバサイドレンダリングやフレームバッファを必要としないモジュールにこだわる必要があります( :ref:`trame_jupyter` "
-"を参照)。"
+"``trame``, ``ipygany``, ``pythreejs`` 以外のモジュールはフレームバッファを必要とし，ヘッドレス環境では "
+":func:`pyvista.start_xvfb` でセットアップを行うことができます．しかし，システムパッケージをインストールできないGoogle "
+"Colabでは， ``threejs`` や trame-backend の ``'client'`` "
+"のような，サーバサイドレンダリングやフレームバッファを必要としないモジュールにこだわる必要があります( :ref:`trame_jupyter` "
+"を参照)．"
 
 #: ../../pyvista/doc/user-guide/jupyter/index.rst:141
 msgid ""
@@ -1308,9 +1302,9 @@ msgid ""
 "client-side through ``trame``. Requires ``trame`` and ``jupyter-server-"
 "proxy`` to be installed."
 msgstr ""
-"``'client'`` : VTK.jsのクライアントサイドでレンダリングするシーングラフを、 ``trame`` "
-"を通してエクスポート/シリアライズすることができます。 ``trame`` と ``jupyter-server-proxy`` "
-"がインストールされている必要があります。"
+"``'client'`` : VTK.jsのクライアントサイドでレンダリングするシーングラフを， ``trame`` "
+"を通してエクスポート/シリアライズすることができます． ``trame`` と ``jupyter-server-proxy`` "
+"がインストールされている必要があります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:43
@@ -1323,12 +1317,12 @@ msgid ""
 "``jupyter-server-proxy`` installed for cloud/remote Jupyter instances. This "
 "mode is also aliased by ``'trame'``."
 msgstr ""
-"``'server'``: リモートでレンダリングを行い、生成されたVTKイメージを ``trame`` "
-"を用いてクライアントにストリームバックします。これは ``'ipyvtklink'`` "
-"バックエンドを置き換えるもので、より良いパフォーマンスを発揮します。ほとんどの VTK "
-"機能をサポートしていますが、リモートレンダリングによる小さな遅延に悩まされています。ヘッドレスサーバで表示する場合は、仮想フレームバッファをセットアップする必要があります。クラウド/リモートJupyterインスタンスでは、少なくとも"
-" ``trame`` と ``jupyter-server-proxy`` がインストールされている必要があります。このモードは ``'trame'``"
-" というエイリアスでもあります。"
+"``'server'``: リモートでレンダリングを行い，生成されたVTKイメージを ``trame`` "
+"を用いてクライアントにストリームバックします．これは ``'ipyvtklink'`` "
+"バックエンドを置き換えるもので，より良いパフォーマンスを発揮します．ほとんどの VTK "
+"機能をサポートしていますが，リモートレンダリングによる小さな遅延に悩まされています．ヘッドレスサーバで表示する場合は，仮想フレームバッファをセットアップする必要があります．クラウド/リモートJupyterインスタンスでは，少なくとも"
+" ``trame`` と ``jupyter-server-proxy`` がインストールされている必要があります．このモードは ``'trame'``"
+" というエイリアスでもあります．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:52
@@ -1337,7 +1331,7 @@ msgid ""
 "and ``'client'`` into one backend. This requires a virtual frame buffer."
 msgstr ""
 "``'trame'``: ``'server'`` と ``'client'`` "
-"の両方を一つのバックエンドに統合したTrameベースのフルバックエンドです。これには仮想フレームバッファが必要です。"
+"の両方を一つのバックエンドに統合したTrameベースのフルバックエンドです．これには仮想フレームバッファが必要です．"
 
 #: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
 #: pyvista.jupyter.set_jupyter_backend:56
@@ -1398,7 +1392,7 @@ msgid ""
 "support for VTK."
 msgstr ""
 "このバックエンドは :ref:`trame_jupyter` - Python "
-"で動的なウェブアプリケーションを構築するための新しいフレームワークで、VTK の素晴らしいサポートがあるため、非推奨となりました。"
+"で動的なウェブアプリケーションを構築するための新しいフレームワークで，VTK の素晴らしいサポートがあるため，非推奨となりました．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipygany.rst:10
 msgid ""
@@ -1617,17 +1611,17 @@ msgid "Using pip, you can set up your jupyterlab environment with:"
 msgstr "pipを使って，次のようにしてjupyterlab環境をセットアップすることができます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:76
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:127
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:129
 msgid "Other Considerations"
 msgstr "その他の考慮事項"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:77
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:128
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr "GPUアクセラレーションを使用する価値があるかもしれません． :ref:`gpu_off_screen` を参照してください．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:79
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:130
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:132
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
@@ -1636,7 +1630,7 @@ msgstr ""
 "を使用して仮想フレームバッファを起動してください．bashを使用して起動するには，次のようにします．"
 
 #: ../../pyvista/doc/user-guide/jupyter/ipyvtk_plotting.rst:93
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:144
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:146
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
@@ -1865,10 +1859,8 @@ msgstr "RGBとRGBAのカラーリング"
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:197
 msgid ""
 "The ``pythreejs`` supports RGBA plotting.  See the ``rgba`` parameter within"
-" :func:`add_mesh() <pyvista.Plotting.add_mesh>` for more details."
+" :func:`add_mesh() <pyvista.Plotter.add_mesh>` for more details."
 msgstr ""
-"``pythreejs`` は RGBA プロットをサポートしています． 詳細は :func:`add_mesh() "
-"<pyvista.Plotting.add_mesh>`  の ``rgba`` パラメータを参照してください．"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:227
 msgid "Multiple Render Windows"
@@ -1986,11 +1978,9 @@ msgstr "物理ベースのレンダリングテクスチャー（例：gLTFフ�
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:345
 msgid ""
 "Plotting points as spheres or lines as tubes.  Use :func:`glyph() "
-"<pyvista.DataSet.glyph>` or :func:`tube() <pyvista.PolyData.tube>` to "
-"convert to surfaces first and then plot."
+"<pyvista.DataSetFilters.glyph>` or :func:`tube() "
+"<pyvista.PolyDataFilters.tube>` to convert to surfaces first and then plot."
 msgstr ""
-"点を球体として，線をチューブとしてプロットします． 最初にサーフェスに変換してからプロットするには， :func:`glyph() "
-"<pyvista.DataSet.glyph>` または :func:`tube() <pyvista.PolyData.tube>` を使用します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:348
 msgid "Point labels"
@@ -2011,8 +2001,8 @@ msgid ""
 "provide mechanisms to pair PyVista and Trame so that PyVista plotters can be"
 " used in a web context with both server and client-side rendering."
 msgstr ""
-"PyVistaは、 `Trame <https://kitware.github.io/trame/index.html>`_ "
-"を使用して、Jupyter環境内で完全な機能を持つプロットを表示する機能を備えています。私たちは、PyVistaとTrameをペアリングするメカニズムを提供し、PyVistaプロッタを、サーバーサイドとクライアントサイドの両方のレンダリングでWebコンテキストで使用できるようにします。"
+"PyVistaは， `Trame <https://kitware.github.io/trame/index.html>`_ "
+"を使用して，Jupyter環境内で完全な機能を持つプロットを表示する機能を備えています．私たちは，PyVistaとTrameをペアリングするメカニズムを提供し，PyVistaプロッタを，サーバーサイドとクライアントサイドの両方のレンダリングでWebコンテキストで使用できるようにします．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:11
 msgid ""
@@ -2021,8 +2011,8 @@ msgid ""
 "actions from the canvas back to the VTK render window (this is done under "
 "the hood by the ``vtkRemoteView`` in ``trame-vtk``."
 msgstr ""
-"Trameバックエンドのサーバーサイドレンダリングモードは、現在のレンダーウィンドウをJupyter内のcanvasにストリーミングし、canvasからのユーザーアクションをVTKレンダーウィンドウに戻すことで動作します（これは、"
-" ``trame-vtk`` の ``vtkRemoteView`` がアンダーグラウンドで行います。"
+"Trameバックエンドのサーバーサイドレンダリングモードは，現在のレンダーウィンドウをJupyter内のcanvasにストリーミングし，canvasからのユーザーアクションをVTKレンダーウィンドウに戻すことで動作します（これは，"
+" ``trame-vtk`` の ``vtkRemoteView`` がアンダーグラウンドで行います．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:16
 msgid ""
@@ -2042,17 +2032,17 @@ msgstr "Trame Jupyterのモード"
 msgid ""
 "The PyVista Trame jupyter backend provides three modes of operation "
 "(technically as three separate backend choices):"
-msgstr "PyVista Trameのjupyterバックエンドは、3つの動作モード(厳密には3つの別々のバックエンドの選択肢として)を提供します。"
+msgstr "PyVista Trameのjupyterバックエンドは，3つの動作モード(厳密には3つの別々のバックエンドの選択肢として)を提供します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:46
 msgid ""
 "``'trame'``: Uses a view that can switch between client- and server-"
 "rendering modes."
-msgstr "``'trame'``: クライアントとサーバーのレンダリングモードを切り替えることができるビューを使用します。"
+msgstr "``'trame'``: クライアントとサーバーのレンダリングモードを切り替えることができるビューを使用します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:47
 msgid "``'server'``: Uses a view that is purely server-rendering."
-msgstr "``'server'``: 純粋なサーバーレンダリングであるビューを使用します。"
+msgstr "``'server'``: 純粋なサーバーレンダリングであるビューを使用します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:48
 msgid ""
@@ -2066,9 +2056,9 @@ msgid ""
 "<pyvista.set_jupyter_backend>` or passing ``jupyter_backend`` on the "
 ":func:`show() <pyvista.Plotter.show>` call."
 msgstr ""
-"バックエンドは :func:`set_jupyter_backend() <pyvista.set_jupyter_backend>` を使用するか、 "
+"バックエンドは :func:`set_jupyter_backend() <pyvista.set_jupyter_backend>` を使用するか， "
 ":func:`show() <pyvista.Plotter.show>` のコールで ``jupyter_backend`` "
-"を渡すことによって選択することができます。"
+"を渡すことによって選択することができます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:74
 msgid "Using pip, you can set up your jupyter environment with:"
@@ -2085,8 +2075,8 @@ msgid ""
 "``jupyter-server-proxy``."
 msgstr ""
 "リモートでホストされているJupyter (docker, cloud JupyterHub, "
-"若しくはその他)でPyVistaを使用する場合、Trameバックエンドと ``jupyter-server-proxy`` "
-"をペアリングする必要があります。"
+"若しくはその他)でPyVistaを使用する場合，Trameバックエンドと ``jupyter-server-proxy`` "
+"をペアリングする必要があります．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:87
 msgid ""
@@ -2097,7 +2087,7 @@ msgid ""
 msgstr ""
 "`Jupyter Server Proxy <https://jupyter-server-"
 "proxy.readthedocs.io/en/latest/>`_ "
-"は、ノートブックと一緒にPyVistaプロッタのビューをホストするTrameサーバにアクセスし、Jupyterから直接認証されたウェブアクセスを提供することができます。"
+"は，ノートブックと一緒にPyVistaプロッタのビューをホストするTrameサーバにアクセスし，Jupyterから直接認証されたウェブアクセスを提供することができます．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:93
 msgid ""
@@ -2108,10 +2098,10 @@ msgid ""
 "secondary web server and thus ``jupyter-server-proxy``."
 msgstr ""
 "将来のバージョンの `wslink <https://github.com/Kitware/wslink>`_ (Trameのサーバの駆動機構) "
-"では、サーバが `Jupyter Comms <https://jupyter-"
+"では，サーバが `Jupyter Comms <https://jupyter-"
 "notebook.readthedocs.io/en/stable/comms.html>`_ "
-"を介して通信できるようなサポートを追加する予定です。これにより、2番目のウェブサーバ、つまり ``jupyter-server-proxy`` "
-"が不要になる予定です。"
+"を介して通信できるようなサポートを追加する予定です．これにより，2番目のウェブサーバ，つまり ``jupyter-server-proxy`` "
+"が不要になる予定です．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:99
 msgid ""
@@ -2119,41 +2109,45 @@ msgid ""
 "remote environment, you will need to set some options on the global PyVista "
 "theme:"
 msgstr ""
-"リモート環境で ``jupyter-server-proxy`` を使って動作するように PyVista と Trame を設定するには、PyVista"
-" のグローバルテーマでいくつかのオプションを設定する必要があります。"
+"リモート環境で ``jupyter-server-proxy`` を使って動作するように PyVista と Trame を設定するには，PyVista"
+" のグローバルテーマでいくつかのオプションを設定する必要があります．"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:102
-msgid ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_enabled`"
-msgstr ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_enabled`"
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
+"<pyvista.themes._TrameConfig.server_proxy_enabled>`"
+msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:103
-msgid ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_prefix`"
-msgstr ":py:attr:`pyvista.themes.DefaultTheme.server_proxy_prefix`"
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:104
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
+"<pyvista.themes._TrameConfig.server_proxy_prefix>`"
+msgstr ""
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:105
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:107
 msgid ""
 "The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
 "sufficient for most remote Jupyter environment and use within Docker."
 msgstr ""
 "``server_proxy_prefix`` のデフォルトは ``'/proxy/'`` "
-"で、ほとんどのリモートJupyter環境とDocker内での使用にはこれで十分でしょう。"
+"で，ほとんどのリモートJupyter環境とDocker内での使用にはこれで十分でしょう．"
 
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:108
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:110
 msgid "This can also be set with an environment variable:"
-msgstr "これは、環境変数で設定することもできます:"
-
-#: ../../pyvista/doc/user-guide/jupyter/trame.rst:115
-msgid "The prefix will need to be modified for JupyterHub deployments."
-msgstr "JupyterHubにデプロイする場合は、プレフィックスを修正する必要があります。"
+msgstr "これは，環境変数で設定することもできます:"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:117
+msgid "The prefix will need to be modified for JupyterHub deployments."
+msgstr "JupyterHubにデプロイする場合は，プレフィックスを修正する必要があります．"
+
+#: ../../pyvista/doc/user-guide/jupyter/trame.rst:119
 msgid ""
 "On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
 "``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
 " This can be done however you like but in bash looks like:"
 msgstr ""
-"MyBinderでは、 ``JUPYTERHUB_SERVICE_PREFIX`` の文字列の前に ``'/proxy/'`` "
-"を付ける必要がある場合があります。これにより、プレフィックスにユーザIDが含まれるようになります。これは好きなようにできますが、bashでは以下のようになります:"
+"MyBinderでは， ``JUPYTERHUB_SERVICE_PREFIX`` の文字列の前に ``'/proxy/'`` "
+"を付ける必要がある場合があります．これにより，プレフィックスにユーザIDが含まれるようになります．これは好きなようにできますが，bashでは以下のようになります:"
 
 #: ../../pyvista/doc/user-guide/optional_features.rst:2
 msgid "Optional Features"
@@ -2214,19 +2208,16 @@ msgstr "VTKデータオブジェクトのラップ"
 
 #: ../../pyvista/doc/user-guide/simple.rst:15
 msgid ""
-"The wrapping function :func:`pyvista.wrap` is under the "
-":mod:`pyvista.utilities` module, which is usable from the top level of "
+"The wrapping function :func:`pyvista.wrap` is usable from the top level of "
 "PyVista. This allows users to quickly wrap any VTK dataset they have as a "
 "PyVista object:"
 msgstr ""
-"ラッピング関数 :func:`pyvista.wrap` はPyVistaのトップレベルから使用できる :mod:`pyvista.utilities`"
-" モジュールの下にあります．これにより，ユーザは持っている任意のVTKデータセットをPyVistaオブジェクトとして素早くラップすることができます．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:30
+#: ../../pyvista/doc/user-guide/simple.rst:29
 msgid "Reading a VTK File"
 msgstr "VTKファイルの読み取り"
 
-#: ../../pyvista/doc/user-guide/simple.rst:32
+#: ../../pyvista/doc/user-guide/simple.rst:31
 msgid ""
 "PyVista provides a convenience function to read VTK file formats into their "
 "respective PyVista data objects. Simply call the :func:`pyvista.read` "
@@ -2235,11 +2226,11 @@ msgstr ""
 "PyVistaには，VTKファイル形式をそれぞれのPyVistaデータオブジェクトに読み込むための便利な関数が用意されています．ファイル名を渡して "
 ":func:`pyvista.read` 関数を呼び出します．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:43
+#: ../../pyvista/doc/user-guide/simple.rst:42
 msgid "Accessing the Wrapped Data Object"
 msgstr "ラップされたデータオブジェクトへのアクセス"
 
-#: ../../pyvista/doc/user-guide/simple.rst:45
+#: ../../pyvista/doc/user-guide/simple.rst:44
 msgid ""
 "Now that you have a wrapped VTK data object, you can start accessing and "
 "modifying the dataset. Some of the most common properties to access include "
@@ -2248,21 +2239,17 @@ msgid ""
 msgstr ""
 "ラップされたVTKデータオブジェクトができたので，データセットへのアクセスと変更を開始することができます．アクセスする最も一般的なプロパティには，ポイントおよびポイント/セルデータ(メッシュのノードまたはセルにそれぞれ割り当てられたデータアトリビュート)があります．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:50
+#: ../../pyvista/doc/user-guide/simple.rst:49
 msgid "First, check out some common meta-properties:"
 msgstr "まず，一般的なメタプロパティをいくつか見てみましょう．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:86
+#: ../../pyvista/doc/user-guide/simple.rst:85
 msgid ""
-"Access the points by fetching the :attr:`points "
-"<pyvista.core.dataset.DataSet.points>` attribute on any PyVista mesh as a "
-":class:`numpy.ndarray`:"
+"Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
+"attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
 msgstr ""
-"ポイントにアクセスするには，任意のPyVistaメッシュの :attr:`points "
-"<pyvista.core.dataset.DataSet.points>` 属性を :class:`numpy.ndarray` "
-"としてフェッチします．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:104
+#: ../../pyvista/doc/user-guide/simple.rst:103
 msgid ""
 "Accessing the different data attributes on the nodes and cells of the mesh "
 "is interfaced via dictionaries with callbacks to the VTK object. These "
@@ -2272,11 +2259,11 @@ msgid ""
 msgstr ""
 "メッシュのノードとセルのさまざまなデータアトリビュートへのアクセスは，VTKオブジェクトへのコールバックを持つディクショナリを介してインタフェースされます．これらの異なる点配列やセル配列のディクショナリには，NumPy配列として直接アクセスしたり修正することができます．次の例では，データセットを読み込み，そのデータセット上の配列にアクセスし，さらにデータを追加します．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:136
+#: ../../pyvista/doc/user-guide/simple.rst:135
 msgid "Plotting"
 msgstr "プロット"
 
-#: ../../pyvista/doc/user-guide/simple.rst:138
+#: ../../pyvista/doc/user-guide/simple.rst:137
 msgid ""
 "PyVista includes numerous plotting routines that are intended to be "
 "intuitive and highly controllable with ``matplotlib`` similar syntax and "
@@ -2285,14 +2272,14 @@ msgstr ""
 "PyVistaには，直感的に操作でき， ``matplotlib`` "
 "に似た構文やキーワード引数で高度に制御できることを目的とした数多くのプロッティングルーチンが含まれています．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:142
+#: ../../pyvista/doc/user-guide/simple.rst:141
 msgid ""
 "To get started, try out the :func:`pyvista.plot` convenience method that is "
 "bound to each PyVista data object."
 msgstr ""
 "まずは，各PyVistaデータオブジェクトにバインドされている便利な :func:`pyvista.plot` メソッドを試してみてください．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:168
+#: ../../pyvista/doc/user-guide/simple.rst:167
 msgid ""
 "You can also create a plotter object to fine tune the scene. First, "
 "instantiate a plotter such as :class:`pyvista.Plotter` or "
@@ -2305,7 +2292,7 @@ msgstr ""
 ":class:`pyvista.Plotter` は， :func:`show() <pyvista.Plotter.show>` "
 "を呼び出した後，コードの実行を一時停止するレンダリングウィンドウを作成します．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:184
+#: ../../pyvista/doc/user-guide/simple.rst:183
 msgid ""
 "Optionally :func:`show() <pyvista.Plotter.show>` can return the last used "
 "camera position of the rendering window in case you want to choose a camera "
@@ -2318,25 +2305,25 @@ msgstr ""
 " :attr:`camera_position <pyvista.Plotter.camera_position>` "
 "属性としても利用できます（プロッタが閉じられた後でも）．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:191
+#: ../../pyvista/doc/user-guide/simple.rst:190
 msgid ""
 "You can then use this cached camera position for additional plotting without"
 " having to manually interact with the plotting window:"
 msgstr "このキャッシュされたカメラ位置は，プロットウィンドウを手動で操作しなくても，追加のプロットに使用できます:"
 
-#: ../../pyvista/doc/user-guide/simple.rst:204
+#: ../../pyvista/doc/user-guide/simple.rst:203
 msgid ""
 "Be sure to check out all the available plotters and their options for your "
 "use case:"
 msgstr "使用する用途に応じて，使用可能なすべてのプロッタとオプションを確認してください．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:207
+#: ../../pyvista/doc/user-guide/simple.rst:206
 msgid ""
 ":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
 "closed."
 msgstr ":class:`pyvista.Plotter`: 閉じるまでコードを一時停止する標準的なプロッタです．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:209
+#: ../../pyvista/doc/user-guide/simple.rst:208
 msgid ""
 ":class:`pyvistaqt.BackgroundPlotter`: Creates a rendering window that is "
 "interactive and does not pause the code execution (for more information see "
@@ -2345,11 +2332,11 @@ msgstr ""
 ":class:`pyvistaqt.BackgroundPlotter`:  "
 "インタラクティブで，コードの実行を一時停止しないレンダリングウィンドウを作成します(詳細は `pyvistaqt`_ ライブラリを参照してください)．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:218
+#: ../../pyvista/doc/user-guide/simple.rst:217
 msgid "Exporting"
 msgstr "出力"
 
-#: ../../pyvista/doc/user-guide/simple.rst:220
+#: ../../pyvista/doc/user-guide/simple.rst:219
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
@@ -2358,7 +2345,7 @@ msgstr ""
 "どんなPyVistaメッシュオブジェクトでも， :func:`save() <pyvista.DataObject.save>` "
 "を使ってVTKファイルフォーマットに保存することができます．例えば，上のコードブロックのメッシュは次のように保存できます．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:228
+#: ../../pyvista/doc/user-guide/simple.rst:227
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -2369,7 +2356,7 @@ msgstr ""
 " 形式も使用できます． ``.save()`` "
 "メソッドでサポートされている形式の詳細については，各メッシュタイプのメソッドに関するドキュメントを参照してください．"
 
-#: ../../pyvista/doc/user-guide/simple.rst:233
+#: ../../pyvista/doc/user-guide/simple.rst:232
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -2384,7 +2371,7 @@ msgstr ""
 "(バージョン2および4)，OBJ，OFF，PERMAS，PLY，STL，TetGen .node/.ele，SVG (2Dのみ，出力のみ)，UGRID,"
 " WKT (TIN)，XDMFなど，多くの形式をサポートしています!"
 
-#: ../../pyvista/doc/user-guide/simple.rst:240
+#: ../../pyvista/doc/user-guide/simple.rst:239
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -2610,13 +2597,10 @@ msgstr "VTKではそうする必要があります．"
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:208
 msgid ""
 "The same goes with assigning face or cell connectivity/topology.  With VTK "
-"you would normally have to loop using :func:`InsertNextCell` and "
-":func:`InsertCellPoint`.  For example, to create a single cell (triangle) "
-"and then assign it to `vtkPolyData`_:"
+"you would normally have to loop using ``InsertNextCell`` and "
+"``InsertCellPoint``.  For example, to create a single cell (triangle) and "
+"then assign it to `vtkPolyData`_:"
 msgstr ""
-"面やセルの接続性/トポロジーを割り当てる場合も同様です． VTKでは通常， :func:`InsertNextCell` と "
-":func:`InsertCellPoint` を使ってループする必要があります． 例えば，一つのセル(3角形)を作成して，それを "
-"`vtkPolyData`_ に割り当てる場合:"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:222
 msgid ""
@@ -2846,8 +2830,8 @@ msgid ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 msgstr ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:142
-msgid ":attr:`field_data <pyvista.DataSet.field_data>`"
-msgstr ":attr:`field_data <pyvista.DataSet.field_data>`"
+msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
+msgstr ""
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:146
 msgid ""

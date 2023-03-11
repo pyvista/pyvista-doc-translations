@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-polydata-strips.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-polydata-strips.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -140,7 +140,7 @@ the PolyData is constructed using triangle strips.
 Convert strips to triangles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can convert strips to triangle faces using :func:`triangulate
-<pyvista.Dataset.triangulate>`.
+<pyvista.DataSetFilters.triangulate>`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 65-69
 
@@ -220,7 +220,7 @@ even despite representing the same data.
 Convert triangles to strips
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Convert faces from a :class:`pyvista.PolyData` to strips using :func:`strip()
-<pyvista.PolyData.strip>`. Here, for demonstration purposes we convert the
+<pyvista.PolyDataFilters.strip>`. Here, for demonstration purposes we convert the
 triangulated mesh back to a stripped mesh.
 
 .. GENERATED FROM PYTHON SOURCE LINES 91-96
@@ -283,7 +283,7 @@ original ``mesh``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.649 seconds)
+   **Total running time of the script:** ( 0 minutes  0.440 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-polydata-strips.py:
@@ -291,6 +291,8 @@ original ``mesh``.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

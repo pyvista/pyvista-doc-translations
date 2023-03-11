@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_decimate.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_decimate.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -56,8 +56,8 @@ Decimate a mesh
 .. GENERATED FROM PYTHON SOURCE LINES 24-27
 
 Now let's define a target reduction and compare the
-:func:`pyvista.PolyData.decimate` and :func:`pyvista.PolyData.decimate_pro`
-filters.
+:func:`pyvista.PolyDataFilters.decimate` and
+:func:`pyvista.PolyDataFilters.decimate_pro` filters.
 
 .. GENERATED FROM PYTHON SOURCE LINES 27-30
 
@@ -71,8 +71,6 @@ filters.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -132,23 +130,23 @@ Side by side comparison:
 .. code-block:: default
 
 
-    p = pv.Plotter(shape=(1, 3))
-    p.add_mesh(mesh, **dargs)
-    p.add_text("Input mesh", font_size=24)
-    p.camera_position = cpos
-    p.reset_camera()
-    p.subplot(0, 1)
-    p.add_mesh(decimated, **dargs)
-    p.add_text("Decimated mesh", font_size=24)
-    p.camera_position = cpos
-    p.reset_camera()
-    p.subplot(0, 2)
-    p.add_mesh(pro_decimated, **dargs)
-    p.add_text("Pro Decimated mesh", font_size=24)
-    p.camera_position = cpos
-    p.reset_camera()
-    p.link_views()
-    p.show()
+    pl = pv.Plotter(shape=(1, 3))
+    pl.add_mesh(mesh, **dargs)
+    pl.add_text("Input mesh", font_size=24)
+    pl.camera_position = cpos
+    pl.reset_camera()
+    pl.subplot(0, 1)
+    pl.add_mesh(decimated, **dargs)
+    pl.add_text("Decimated mesh", font_size=24)
+    pl.camera_position = cpos
+    pl.reset_camera()
+    pl.subplot(0, 2)
+    pl.add_mesh(pro_decimated, **dargs)
+    pl.add_text("Pro Decimated mesh", font_size=24)
+    pl.camera_position = cpos
+    pl.reset_camera()
+    pl.link_views()
+    pl.show()
 
 
 
@@ -164,28 +162,25 @@ Side by side comparison:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.731 seconds)
+   **Total running time of the script:** ( 0 minutes  1.332 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: decimate.py <decimate.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: decimate.py <decimate.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: decimate.ipynb <decimate.ipynb>`
+      :download:`Download Jupyter notebook: decimate.ipynb <decimate.ipynb>`
 
 
 .. only:: html

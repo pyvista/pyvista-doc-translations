@@ -631,7 +631,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" Compute normals on a surface.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Computing Surface Normals">
 
 .. only:: html
 
@@ -1782,7 +1782,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated GIF by generating glyphs using pyvista.DataSet.glyph using pyvista.Sphere.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated GIF by generating glyphs using pyvista.DataSetFilters.glyph using pyvista.Sp...">
 
 .. only:: html
 
@@ -2764,6 +2764,7 @@ developers.
    /examples/03-widgets/index.rst
    /examples/04-lights/index.rst
    /examples/99-advanced/index.rst
+
 
 
 .. only:: html

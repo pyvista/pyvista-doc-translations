@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_clip-volume.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_clip-volume.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,7 +24,7 @@ Clip Volume Widget
 ------------------
 If you have a structured dataset like a :class:`pyvista.UniformGrid` or
 :class:`pyvista.RectilinearGrid`, you can clip it using the
-:func:`pyvista.Plotter.add_volume_clipper` widget to better see the internal
+:func:`pyvista.Plotter.add_volume_clip_plane` widget to better see the internal
 structure of the dataset.
 
 .. image:: ../../images/gifs/volume-clip-plane-widget.gif
@@ -35,7 +35,7 @@ Create the Dataset
 ~~~~~~~~~~~~~~~~~~
 Create a dense :class:`pyvista.UniformGrid` with dimensions ``(200, 200,
 200)`` and set the active scalars to distance from the :attr:`center
-<pyvista.UniformGrid.center>` of the grid.
+<pyvista.DataSet.center>` of the grid.
 
 .. GENERATED FROM PYTHON SOURCE LINES 21-31
 
@@ -184,7 +184,7 @@ Disable the arrows to make the plot a bit clearer and flip the opacity array.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.701 seconds)
+   **Total running time of the script:** ( 0 minutes  4.657 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_clip-volume.py:
@@ -192,6 +192,8 @@ Disable the arrows to make the plot a bit clearer and flip the opacity array.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_atomic-orbitals.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_atomic-orbitals.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -177,7 +177,7 @@ equals 10% the maximum value of the orbital. This effectively captures the
 most likely locations of the electron for this orbital.
 
 Note how we use the absolute value of the scalars when evaluating
-:func:`contour() <pyvista.PolyDataFilters.contour>` to capture where the
+:func:`contour() <pyvista.DataSetFilters.contour>` to capture where the
 positive and negative phases cross ``eval_at``.
 
 .. GENERATED FROM PYTHON SOURCE LINES 94-108
@@ -433,7 +433,7 @@ Finally, let's plot the same data using the "Gaussian points" representation.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.146 seconds)
+   **Total running time of the script:** ( 0 minutes  15.655 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_atomic-orbitals.py:
@@ -441,6 +441,8 @@ Finally, let's plot the same data using the "Gaussian points" representation.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_surface-smoothing.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_surface-smoothing.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -45,7 +45,7 @@ Smoothing rough edges of a surface mesh
 Suppose you extract a volumetric subset of a dataset that has roughly defined
 edges. Perhaps you'd like a smooth representation of that model region. This
 can be achieved by extracting the bounding surface of the volume and applying
-a :func:`pyvista.PolyData.smooth` filter.
+a :func:`pyvista.PolyDataFilters.smooth` filter.
 
 The below code snippet loads a sample roughly edged volumetric dataset:
 
@@ -207,13 +207,11 @@ Also, note that the number of iterations can be reduced to get the same approxim
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    Original surface volume:   676.0
-    Laplacian smoothed volume: 468.3
-    Taubin smoothed volume:    680.0
+    Original surface volume:   597.0
+    Laplacian smoothed volume: 402.1
+    Taubin smoothed volume:    589.8
 
 
 
@@ -221,28 +219,25 @@ Also, note that the number of iterations can be reduced to get the same approxim
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.069 seconds)
+   **Total running time of the script:** ( 0 minutes  1.248 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface-smoothing.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: surface-smoothing.py <surface-smoothing.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: surface-smoothing.py <surface-smoothing.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: surface-smoothing.ipynb <surface-smoothing.ipynb>`
+      :download:`Download Jupyter notebook: surface-smoothing.ipynb <surface-smoothing.ipynb>`
 
 
 .. only:: html

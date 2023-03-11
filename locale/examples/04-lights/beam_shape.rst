@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_beam_shape.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_beam_shape.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -150,7 +150,7 @@ light's nominal position. It could still display attenuation, see the
 :ref:`ref_attenuation_example` example.
 
 Switching to a spotlight (i.e. a positional light with a cone angle less
-than 90 degrees) will enable beam shaping using the :py:attr:`exponent`
+than 90 degrees) will enable beam shaping using the :py:attr:`pyvista.Light.exponent`
 property. Let's put our hemispheres side by side for this, and put a light in
 the center of each: one spotlight, one merely positional.
 
@@ -199,16 +199,17 @@ the center of each: one spotlight, one merely positional.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-121
+.. GENERATED FROM PYTHON SOURCE LINES 115-122
 
 Even though the two lights only differ by a fraction of a degree in cone angle,
 the beam shaping effect enabled for spotlights causes a marked difference in
 the result.
 
-Once we have a spotlight we can change its :py:attr:`exponent` to make the beam
-shape sharper or broader. Three spotlights with varying sharpness:
+Once we have a spotlight we can change its :py:attr:`pyvista.Light.exponent`
+to make the beam shape sharper or broader. Three spotlights with varying
+sharpness:
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-146
+.. GENERATED FROM PYTHON SOURCE LINES 122-147
 
 .. code-block:: default
 
@@ -249,7 +250,7 @@ shape sharper or broader. Three spotlights with varying sharpness:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-149
+.. GENERATED FROM PYTHON SOURCE LINES 148-150
 
 The spotlight with exponent 0.3 is practically uniform, and the one with
 exponent 5 is visibly focused along the axis of the light.
@@ -257,28 +258,25 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.194 seconds)
+   **Total running time of the script:** ( 0 minutes  1.127 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: beam_shape.py <beam_shape.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: beam_shape.py <beam_shape.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: beam_shape.ipynb <beam_shape.ipynb>`
+      :download:`Download Jupyter notebook: beam_shape.ipynb <beam_shape.ipynb>`
 
 
 .. only:: html

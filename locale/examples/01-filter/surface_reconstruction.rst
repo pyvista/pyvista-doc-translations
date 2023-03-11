@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_surface_reconstruction.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_surface_reconstruction.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,8 +24,8 @@ Surface Reconstruction
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Surface reconstruction has a dedicated filter in PyVista and is
-handled by :func:`pyvista.PolyDataFilters.reconstruct_surface`.  This
-tends to perform much better than :func:`DataSetFilters.delaunay_3d`.
+handled by :func:`pyvista.PolyDataFilters.reconstruct_surface`. This
+tends to perform much better than :func:`pyvista.DataSetFilters.delaunay_3d`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 12-14
 
@@ -66,6 +66,7 @@ Create a point cloud from a sphere and then reconstruct a surface from it.
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>840</td></tr>
     <tr><td>N Points</td><td>422</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-4.995e-01, 4.989e-01</td></tr>
     <tr><td>Y Bounds</td><td>-4.986e-01, 4.986e-01</td></tr>
     <tr><td>Z Bounds</td><td>-4.985e-01, 4.985e-01</td></tr>
@@ -108,28 +109,25 @@ Plot the point cloud and the reconstructed sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.486 seconds)
+   **Total running time of the script:** ( 0 minutes  0.385 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface_reconstruction.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: surface_reconstruction.py <surface_reconstruction.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: surface_reconstruction.py <surface_reconstruction.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: surface_reconstruction.ipynb <surface_reconstruction.ipynb>`
+      :download:`Download Jupyter notebook: surface_reconstruction.ipynb <surface_reconstruction.ipynb>`
 
 
 .. only:: html

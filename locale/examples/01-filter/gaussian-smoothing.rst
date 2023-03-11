@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_gaussian-smoothing.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_gaussian-smoothing.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -30,7 +30,7 @@ convolving the image data set with a Gaussian for one- to three-dimensional
 inputs. This is commonly referred to as Gaussian blurring and typically used
 to reduce noise or decrease the detail of an image dataset.
 
-See also :func:`pyvista.UniformGrid.gaussian_smooth`.
+See also :func:`pyvista.UniformGridFilters.gaussian_smooth`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-26
 
@@ -145,28 +145,25 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.240 seconds)
+   **Total running time of the script:** ( 0 minutes  7.766 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: gaussian-smoothing.py <gaussian-smoothing.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: gaussian-smoothing.py <gaussian-smoothing.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: gaussian-smoothing.ipynb <gaussian-smoothing.ipynb>`
+      :download:`Download Jupyter notebook: gaussian-smoothing.ipynb <gaussian-smoothing.ipynb>`
 
 
 .. only:: html

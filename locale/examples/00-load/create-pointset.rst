@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-pointset.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-pointset.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,7 +29,7 @@ represent geometry. This class is useful for improving the performance of
 filters on point clouds.
 
 This example shows the performance improvement when clipping using the
-:func:`pyvista.DataSet.clip` filter on a :class:`pyvista.PointSet`.
+:func:`pyvista.DataSetFilters.clip` filter on a :class:`pyvista.PointSet`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-28
 
@@ -55,7 +55,7 @@ This example shows the performance improvement when clipping using the
 
  .. code-block:: none
 
-    Time to clip with a PolyData 4.41 seconds.
+    Time to clip with a PolyData 4.18 seconds.
 
 
 
@@ -109,7 +109,7 @@ This is only available with VTK >= 9.1.0.
 
  .. code-block:: none
 
-    Time to clip with a PointSet 0.17 seconds.
+    Time to clip with a PointSet 0.14 seconds.
 
 
 
@@ -144,7 +144,7 @@ Plot the same dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.936 seconds)
+   **Total running time of the script:** ( 0 minutes  11.243 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pointset.py:
@@ -152,6 +152,8 @@ Plot the same dataset.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

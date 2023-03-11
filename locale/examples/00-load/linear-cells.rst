@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_linear-cells.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_linear-cells.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -59,7 +59,7 @@ Plot an example cell
 ~~~~~~~~~~~~~~~~~~~~
 PyVista contains a simple utility to plot a single cell, which is the
 fundamental unit of each :class:`pyvista.UnstructuredGrid`. For example,
-let's plot a simple :func:`Wedge <pyvista.cells.Wedge`.
+let's plot a simple :func:`Wedge <pyvista.examples.cells.Wedge>`.
 
 
 .. GENERATED FROM PYTHON SOURCE LINES 34-38
@@ -149,8 +149,8 @@ We can combine two unstructured grids to create a single unstructured grid
 using the ``+`` operator.
 
 .. note::
-   This is an inefficient way of creating :class:`UnstructuredGrid`
-   objects. To see a more efficient implement ion see
+   This is an inefficient way of creating :class:`pyvista.UnstructuredGrid`
+   objects. To see a more efficient implementation see
    :ref:`create_unstructured_example`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 64-75
@@ -213,7 +213,7 @@ attribute shows this along with indices composing each cell.
 
 Cell Types
 ~~~~~~~~~~
-PyVista contains the :class:`pv.CellType` enumerator, which contains all the
+PyVista contains the :class:`pyvista.CellType` enumerator, which contains all the
 available VTK cell types mapped to a Python enumerator. These cell types are
 used when creating cells and also can be used when checking the
 :attr:`celltypes <pyvista.UnstructuredGrid.celltypes>` attribute. For example
@@ -251,7 +251,7 @@ Now that you know the three main inputs of an
 :class:`pyvista.UnstructuredGrid`, it's quite straightforward to create an
 unstructured grid with a one or more cells. If you need to reference point
 ordering or additional, you can either read the source of `cells.py
-<https://github.com/pyvista/pyvista/blob/main/pyvista/cells/cells.py>`_ or
+<https://github.com/pyvista/pyvista/blob/main/pyvista/examples/cells.py>`_ or
 simply create a cell from the ``pyvista.cells`` module and inspect its attributes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 107-120
@@ -385,7 +385,7 @@ cells in a single plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.802 seconds)
+   **Total running time of the script:** ( 0 minutes  4.158 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_linear-cells.py:
@@ -393,6 +393,8 @@ cells in a single plot.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

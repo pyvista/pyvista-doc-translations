@@ -3,12 +3,13 @@
 
 .. _sphx_glr_examples_03-widgets_sg_execution_times:
 
+
 Computation times
 =================
-**00:04.701** total execution time for **examples_03-widgets** files:
+**00:04.657** total execution time for **examples_03-widgets** files:
 
 +-----------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_03-widgets_clip-volume.py` (``clip-volume.py``)                 | 00:04.701 | 0.0 MB |
+| :ref:`sphx_glr_examples_03-widgets_clip-volume.py` (``clip-volume.py``)                 | 00:04.657 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)                   | 00:00.000 | 0.0 MB |
 +-----------------------------------------------------------------------------------------+-----------+--------+

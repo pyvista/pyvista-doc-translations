@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_slicing.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_slicing.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -73,6 +73,13 @@ volume. First, load up the volume and preview it:
    :srcset: /examples/01-filter/images/sphx_glr_slicing_001.png
    :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/01-filter/slicing.py:29: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+      cmap = plt.cm.get_cmap("viridis", 4)
 
 
 
@@ -191,7 +198,7 @@ Slice Along Line
 ++++++++++++++++
 
 We can also slice a dataset along a :func:`pyvista.Spline` or
-:func:`pyvista.Line` using the :func:`DataSetFilters.slice_along_line` filter.
+:func:`pyvista.Line` using the :func:`pyvista.DataSetFilters.slice_along_line` filter.
 
 First, define a line source through the dataset of interest. Please note
 that this type of slicing is computationally expensive and might take a while
@@ -233,6 +240,7 @@ the line low.
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>15</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>0.000e+00, 2.475e+02</td></tr>
     <tr><td>Y Bounds</td><td>0.000e+00, 2.400e+02</td></tr>
     <tr><td>Z Bounds</td><td>9.000e+00, 1.100e+01</td></tr>
@@ -274,6 +282,7 @@ Then run the filter
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>49100</td></tr>
     <tr><td>N Points</td><td>49692</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>0.000e+00, 2.500e+02</td></tr>
     <tr><td>Y Bounds</td><td>0.000e+00, 2.415e+02</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 1.000e+02</td></tr>
@@ -481,7 +490,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.952 seconds)
+   **Total running time of the script:** ( 0 minutes  18.026 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:
@@ -489,6 +498,8 @@ And now display it!
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

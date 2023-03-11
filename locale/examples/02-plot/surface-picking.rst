@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_surface-picking.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_surface-picking.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,7 +23,7 @@
 Picking a Point on the Surface of a Mesh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This example demonstrates how to pick meshes using
-:func:`surface_mesh_picking() <pyvista.Plotter.surface_mesh_picking>`.
+:func:`surface_mesh_picking() <pyvista.Plotter.enable_surface_picking>`.
 
 This allows you to pick points on the surface of a mesh.
 
@@ -107,28 +107,25 @@ the point as well it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.671 seconds)
+   **Total running time of the script:** ( 0 minutes  0.505 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_surface-picking.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: surface-picking.py <surface-picking.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: surface-picking.py <surface-picking.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: surface-picking.ipynb <surface-picking.ipynb>`
+      :download:`Download Jupyter notebook: surface-picking.ipynb <surface-picking.ipynb>`
 
 
 .. only:: html

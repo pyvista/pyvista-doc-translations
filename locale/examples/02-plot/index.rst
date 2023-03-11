@@ -505,7 +505,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated GIF by generating glyphs using pyvista.DataSet.glyph using pyvista.Sphere.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Create an animated GIF by generating glyphs using pyvista.DataSetFilters.glyph using pyvista.Sp...">
 
 .. only:: html
 

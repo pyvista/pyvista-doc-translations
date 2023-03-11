@@ -111,7 +111,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip=" Compute normals on a surface.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Computing Surface Normals">
 
 .. only:: html
 

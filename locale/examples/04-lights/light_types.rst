@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_light_types.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_light_types.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -34,15 +34,14 @@ Lights come in three types:
 Headlight
 =========
 
-For headlights the :py:attr:`position` and :py:attr:`focal_point` properties
-are meaningless. No matter where you move the camera, the light always emanates
-from the view point:
+For headlights the :py:attr:`pyvista.Camera.position` and
+:py:attr:`pyvista.Camera.focal_point` properties are meaningless. No matter
+where you move the camera, the light always emanates from the view point:
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-40
+.. GENERATED FROM PYTHON SOURCE LINES 23-40
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -72,19 +71,21 @@ from the view point:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-50
+.. GENERATED FROM PYTHON SOURCE LINES 42-53
 
 Camera light
 ============
 
-Camera lights define their :py:attr:`position` and :py:attr:`focal_point`
-properties in a coordinate system that is local to the camera. The coordinates
-in the scene's coordinate system can be accessed through the :py:attr:`world_position`
-and :py:attr:`world_focal_point` read-only properties, respectively. For specifics
-of the local coordinate system used for the coordinates please see the documentation
-of :func:`pyvista.Light.set_camera_light`.
+Camera lights define their :py:attr:`pyvista.Camera.position` and
+:py:attr:`pyvista.Camera.focal_point` properties in a coordinate system that
+is local to the camera. The coordinates in the scene's coordinate system can
+be accessed through the :py:attr:`pyvista.Light.world_position` and
+:py:attr:`pyvista.Light.world_focal_point` read-only properties,
+respectively. For specifics of the local coordinate system used for the
+coordinates please see the documentation of
+:func:`pyvista.Light.set_camera_light`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-59
+.. GENERATED FROM PYTHON SOURCE LINES 53-62
 
 .. code-block:: default
 
@@ -109,7 +110,7 @@ of :func:`pyvista.Light.set_camera_light`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-65
+.. GENERATED FROM PYTHON SOURCE LINES 63-68
 
 Scene light
 ===========
@@ -117,7 +118,7 @@ Scene light
 Scene lights are attached to the scene, their position and focal point are
 interpreted as global coordinates:
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-72
+.. GENERATED FROM PYTHON SOURCE LINES 68-75
 
 .. code-block:: default
 
@@ -143,28 +144,25 @@ interpreted as global coordinates:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.315 seconds)
+   **Total running time of the script:** ( 0 minutes  0.997 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: light_types.py <light_types.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: light_types.py <light_types.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: light_types.ipynb <light_types.ipynb>`
+      :download:`Download Jupyter notebook: light_types.ipynb <light_types.ipynb>`
 
 
 .. only:: html

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_point-cell-scalars.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_point-cell-scalars.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -150,7 +150,7 @@ Splitting the Cells
 If you wanted to assign data to each point of each cell and plot that, it's
 simply not possible since these hexahedral cells all share the same
 points. To split up individual cells, separate them using
-:func:`pyvista.DataSet.separate_cells`.
+:func:`pyvista.DataSetFilters.separate_cells`.
 
 With this filter the resulting :class:`pyvista.UnstructuredGrid` now contains
 32 points, or 8 for each cell. They are now fully separated with no shared
@@ -244,28 +244,25 @@ finite element solutions.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.653 seconds)
+   **Total running time of the script:** ( 0 minutes  0.875 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-cell-scalars.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: point-cell-scalars.py <point-cell-scalars.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: point-cell-scalars.py <point-cell-scalars.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: point-cell-scalars.ipynb <point-cell-scalars.ipynb>`
+      :download:`Download Jupyter notebook: point-cell-scalars.ipynb <point-cell-scalars.ipynb>`
 
 
 .. only:: html

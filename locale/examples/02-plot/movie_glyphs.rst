@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_movie_glyphs.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_movie_glyphs.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,7 +24,7 @@ Save a Movie Using Glyphs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create an animated GIF by generating glyphs using :func:`glyph()
-<pyvista.DataSet.glyph>` using :func:`pyvista.Sphere`.
+<pyvista.DataSetFilters.glyph>` using :func:`pyvista.Sphere`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 11-16
 
@@ -135,7 +135,7 @@ Create the movie
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.712 seconds)
+   **Total running time of the script:** ( 0 minutes  9.340 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie_glyphs.py:
@@ -143,6 +143,8 @@ Create the movie
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
