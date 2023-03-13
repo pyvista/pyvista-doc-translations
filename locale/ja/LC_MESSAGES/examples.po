@@ -877,6 +877,8 @@ msgid ""
 "This example shows the performance improvement when clipping using the "
 ":func:`pyvista.DataSetFilters.clip` filter on a :class:`pyvista.PointSet`."
 msgstr ""
+"この例では， :class:`pyvista.PointSet` の :func:`pyvista.DataSetFilters.clip` "
+"フィルターを使用してクリッピングした場合のパフォーマンスの向上を示しています．"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:65
 msgid "Plot the clipped polydata"
@@ -902,7 +904,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:147
 msgid "**Total running time of the script:** ( 0 minutes  11.243 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  11.243 seconds)"
 
 #: ../../pyvista/doc/examples/00-load/create-pointset.rst:161
 msgid ""
@@ -981,6 +983,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_00-load_create-polydata-"
 "strips.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_00-load_create-polydata-"
+"strips.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:24
 msgid "Triangle Strips"
@@ -1071,6 +1075,8 @@ msgid ""
 "You can convert strips to triangle faces using :func:`triangulate "
 "<pyvista.DataSetFilters.triangulate>`."
 msgstr ""
+":func:`triangulate <pyvista.DataSetFilters.triangulate>` "
+"を使用すると，ストリップを3角形の面に変換することができます．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:158
 msgid ""
@@ -1142,6 +1148,9 @@ msgid ""
 ":func:`strip() <pyvista.PolyDataFilters.strip>`. Here, for demonstration "
 "purposes we convert the triangulated mesh back to a stripped mesh."
 msgstr ""
+":func:`strip() <pyvista.PolyDataFilters.strip>` を使用して， "
+":class:`pyvista.PolyData` "
+"からストリップに面を変換します．ここでは，デモンストレーションのために，3角形化されたメッシュをストリップされたメッシュに戻します．"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:262
 msgid ""
@@ -1151,7 +1160,7 @@ msgstr "``strip`` フィルタの出力は，予想通り，元の ``mesh`` と�
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:286
 msgid "**Total running time of the script:** ( 0 minutes  0.440 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.440 seconds)"
 
 #: ../../pyvista/doc/examples/00-load/create-polydata-strips.rst:300
 msgid ""
@@ -2724,6 +2733,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_00-load_linear-cells.py>` to"
 " download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_00-load_linear-cells.py>` to"
+" download the full example code"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:24
 msgid "Linear Cells"
@@ -2762,6 +2773,9 @@ msgid ""
 "fundamental unit of each :class:`pyvista.UnstructuredGrid`. For example, "
 "let's plot a simple :func:`Wedge <pyvista.examples.cells.Wedge>`."
 msgstr ""
+"PyVistaには，各 :class:`pyvista.UnstructuredGrid` "
+"の基本単位である，1つのセルをプロットするためのシンプルなユーティリティが含まれています．例えば，単純な  :func:`Wedge "
+"<pyvista.examples.cells.Wedge>` をプロットしてみましょう．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:87
 msgid "This linear cell is composed of 6 points."
@@ -2795,6 +2809,8 @@ msgid ""
 "objects. To see a more efficient implementation see "
 ":ref:`create_unstructured_example`."
 msgstr ""
+"これは :class:`pyvista.UnstructuredGrid` オブジェクトを作成するための非効率的な方法です．より効率的な実装を見るには，"
+" :ref:`create_unstructured_example` を参照してください．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:185
 msgid ""
@@ -2820,6 +2836,11 @@ msgid ""
 "example ``combined.celltypes`` contains both the ``pv.CellType.HEXAHEDRON`` "
 "and ``pv.CellType.HEXAGONAL_PRISM`` cell types."
 msgstr ""
+"PyVista には :class:`pyvista.CellType` という列挙体があり，利用可能なすべての VTK セルタイプが Python "
+"の列挙体にマッピングされています．これらのセルタイプはセルを作成するときに使用され， :attr:`celltypes "
+"<pyvista.UnstructuredGrid.celltypes>` 属性を確認するときにも使用されます．例えば， "
+"``combined.celltypes`` には， ``pv.CellType.HEXAHEDRON`` と "
+"``pv.CellType.HEXAGONAL_PRISM`` という両方のセルタイプが含まれます．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:249
 msgid "Create an UnstructuredGrid with a single linear cell"
@@ -2835,6 +2856,11 @@ msgid ""
 "or simply create a cell from the ``pyvista.cells`` module and inspect its "
 "attributes."
 msgstr ""
+":class:`pyvista.UnstructuredGrid` "
+"の3つの主要な入力がわかったので，1つ以上のセルを持つ非構造化グリッドを作成することはとても簡単です．もし，点の順序や追加を参照する必要がある場合は， "
+"`cells.py "
+"<https://github.com/pyvista/pyvista/blob/main/pyvista/examples/cells.py>`_ "
+"のソースを読むか，あるいは ``pyvista.cells`` モジュールからセルを作成してその属性を確認することができます．"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:289
 msgid "Plot all linear cell Types"
@@ -2849,7 +2875,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:388
 msgid "**Total running time of the script:** ( 0 minutes  4.158 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  4.158 seconds)"
 
 #: ../../pyvista/doc/examples/00-load/linear-cells.rst:402
 msgid ""
@@ -3485,7 +3511,7 @@ msgstr "計算時間"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:9
 msgid "**00:15.841** total execution time for **examples_00-load** files:"
-msgstr ""
+msgstr "**00:15.841** total execution time for **examples_00-load** files:"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:12
 msgid ""
@@ -3495,7 +3521,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:12
 msgid "00:11.243"
-msgstr ""
+msgstr "00:11.243"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:12
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:14
@@ -3659,7 +3685,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:14
 msgid "00:04.158"
-msgstr ""
+msgstr "00:04.158"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:16
 msgid ""
@@ -3671,7 +3697,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:16
 msgid "00:00.440"
-msgstr ""
+msgstr "00:00.440"
 
 #: ../../pyvista/doc/examples/00-load/sg_execution_times.rst:18
 msgid ""
@@ -4555,6 +4581,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_clipping.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_clipping.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:24
 msgid "Clipping with Planes & Boxes"
@@ -4621,6 +4649,10 @@ msgid ""
 ":func:`pyvista.DataSetFilters.clip_surface`, but not available when clipping"
 " by scalar in :func:`pyvista.DataSetFilters.clip_scalar`."
 msgstr ""
+"このオプションは :func:`pyvista.DataSetFilters.clip`, "
+":func:`pyvista.DataSetFilters.clip_box`, "
+":func:`pyvista.DataSetFilters.clip_surface` で使用できますが， "
+":func:`pyvista.DataSetFilters.clip_scalar` でスカラーによるクリッピングを行っても利用することはできません．"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:210
 msgid "Define clipping plane"
@@ -4640,7 +4672,7 @@ msgstr "プロット比較"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:291
 msgid "**Total running time of the script:** ( 0 minutes  2.992 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.992 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/clipping.rst:305
 msgid ":download:`Download Python source code: clipping.py <clipping.py>`"
@@ -4823,6 +4855,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_compute-"
 "normals.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_compute-"
+"normals.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/compute-normals.rst:24
 msgid "Computing Surface Normals"
@@ -4850,6 +4884,9 @@ msgid ""
 "use the values given in the dataset to warp the surface in the normals "
 "direction to create some exaggerated topographic relief."
 msgstr ""
+"これで地球のサーフェスデータセットがロードされました．残念ながら，データセットには地形起伏を隠す均一な半径の地球が表示されます． "
+":func:`pyvista.PolyDataFilters.compute_normals` "
+"を使用して，データセット内のすべてのポイントで地球上の法線ベクトルを計算し，データセットで指定された値を使用してサーフェスを法線方向にワープし，誇張された地形レリーフを作成します．"
 
 #: ../../pyvista/doc/examples/01-filter/compute-normals.rst:107
 msgid ""
@@ -4862,7 +4899,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/compute-normals.rst:148
 msgid "**Total running time of the script:** ( 0 minutes  14.923 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  14.923 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/compute-normals.rst:162
 msgid ""
@@ -5160,6 +5197,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_decimate.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_decimate.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/decimate.rst:24
 msgid "Decimation"
@@ -5175,6 +5214,8 @@ msgid ""
 ":func:`pyvista.PolyDataFilters.decimate` and "
 ":func:`pyvista.PolyDataFilters.decimate_pro` filters."
 msgstr ""
+"ここで，削減目標を定義し， :func:`pyvista.PolyDataFilters.decimate` フィルタと "
+":func:`pyvista.PolyDataFilters.decimate_pro` フィルタを比較してみましょう．"
 
 #: ../../pyvista/doc/examples/01-filter/decimate.rst:126
 msgid "Side by side comparison:"
@@ -5182,7 +5223,7 @@ msgstr "並べて比較:"
 
 #: ../../pyvista/doc/examples/01-filter/decimate.rst:165
 msgid "**Total running time of the script:** ( 0 minutes  1.332 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.332 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/decimate.rst:179
 msgid ":download:`Download Python source code: decimate.py <decimate.py>`"
@@ -5431,6 +5472,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_extract-edges.py>`"
 " to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_extract-edges.py>`"
+" to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:24
 msgid "Extract Edges"
@@ -5469,6 +5512,9 @@ msgid ""
 "edges given a feature angle and return a dataset with lines that represent "
 "the edges of the original mesh."
 msgstr ""
+":func:`extract_feature_edges() "
+"<pyvista.DataSetFilters.extract_feature_edges>` "
+"フィルタは，特徴的な角度が与えられたときにそれらのエッジを抽出し，元のメッシュのエッジを表す線を含むデータセットを返します．"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:56
 msgid ""
@@ -5487,6 +5533,9 @@ msgid ""
 ":func:`pyvista.DataSetFilters.extract_feature_edges` filter to count and "
 "extract the open edges on a :class:`pyvista.PolyData` mesh."
 msgstr ""
+":any:`pyvista.PolyData.n_open_edges` プロパティと "
+":func:`pyvista.DataSetFilters.extract_feature_edges` フィルタを利用して， "
+":class:`pyvista.PolyData` メッシュの開いたエッジをカウントおよび抽出できます．"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:139
 #: ../../pyvista/doc/examples/99-advanced/add-example.rst:408
@@ -5536,10 +5585,12 @@ msgid ""
 "And we can extract those edges with the ``boundary_edges`` option of "
 ":func:`pyvista.DataSetFilters.extract_feature_edges`:"
 msgstr ""
+":func:`pyvista.DataSetFilters.extract_feature_edges` の ``boundary_edges`` "
+"オプションを使用すると，これらのエッジを抽出できます．"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:214
 msgid "**Total running time of the script:** ( 0 minutes  3.124 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  3.124 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/extract-edges.rst:228
 msgid ""
@@ -5986,6 +6037,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_gaussian-"
 "smoothing.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_gaussian-"
+"smoothing.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/gaussian-smoothing.rst:24
 msgid "Gaussian Smoothing"
@@ -6007,7 +6060,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/gaussian-smoothing.rst:33
 msgid "See also :func:`pyvista.UniformGridFilters.gaussian_smooth`."
-msgstr ""
+msgstr ":func:`pyvista.UniformGridFilters.gaussian_smooth` も参照してください．"
 
 #: ../../pyvista/doc/examples/01-filter/gaussian-smoothing.rst:57
 msgid ""
@@ -6026,7 +6079,7 @@ msgstr "次に，ボリュームレンダリングを使用した3Dデータセ�
 
 #: ../../pyvista/doc/examples/01-filter/gaussian-smoothing.rst:148
 msgid "**Total running time of the script:** ( 0 minutes  7.766 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  7.766 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/gaussian-smoothing.rst:162
 msgid ""
@@ -6886,7 +6939,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/01-filter/index.rst:112
 #: ../../pyvista/doc/examples/index.rst:632
 msgid "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Computing Surface Normals\">"
-msgstr ""
+msgstr "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Computing Surface Normals\">"
 
 #: ../../pyvista/doc/examples/01-filter/index.rst:121
 #: ../../pyvista/doc/examples/index.rst:641
@@ -8555,7 +8608,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:9
 msgid "**00:49.797** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:49.797** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:12
 msgid ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
@@ -8563,7 +8616,7 @@ msgstr ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:12
 msgid "00:18.026"
-msgstr ""
+msgstr "00:18.026"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:14
 msgid ""
@@ -8575,7 +8628,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:14
 msgid "00:14.923"
-msgstr ""
+msgstr "00:14.923"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:16
 msgid ""
@@ -8587,7 +8640,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:16
 msgid "00:07.766"
-msgstr ""
+msgstr "00:07.766"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:18
 msgid ""
@@ -8597,7 +8650,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:18
 msgid "00:03.124"
-msgstr ""
+msgstr "00:03.124"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:20
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
@@ -8605,7 +8658,7 @@ msgstr ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:20
 msgid "00:02.992"
-msgstr ""
+msgstr "00:02.992"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:22
 msgid ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
@@ -8613,7 +8666,7 @@ msgstr ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:22
 msgid "00:01.332"
-msgstr ""
+msgstr "00:01.332"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:24
 msgid ""
@@ -8625,7 +8678,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:24
 msgid "00:01.248"
-msgstr ""
+msgstr "00:01.248"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:26
 msgid ""
@@ -8637,7 +8690,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:26
 msgid "00:00.385"
-msgstr ""
+msgstr "00:00.385"
 
 #: ../../pyvista/doc/examples/01-filter/sg_execution_times.rst:28
 msgid ""
@@ -8846,6 +8899,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_slicing.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_slicing.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:24
 msgid "Slicing"
@@ -8915,6 +8970,8 @@ msgid ""
 ":func:`pyvista.Line` using the "
 ":func:`pyvista.DataSetFilters.slice_along_line` filter."
 msgstr ""
+":func:`pyvista.DataSetFilters.slice_along_line` フィルタを用いて "
+":func:`pyvista.Spline` または :func:`pyvista.Line` に沿ってデータセットをスライスすることもできる．"
 
 #: ../../pyvista/doc/examples/01-filter/slicing.rst:203
 msgid ""
@@ -9390,6 +9447,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_surface-"
 "smoothing.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_surface-"
+"smoothing.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:24
 msgid "Surface Smoothing"
@@ -9406,6 +9465,8 @@ msgid ""
 "region. This can be achieved by extracting the bounding surface of the "
 "volume and applying a :func:`pyvista.PolyDataFilters.smooth` filter."
 msgstr ""
+"大まかに定義されたエッジを持つデータセットのボリュームサブセットを抽出するとします．おそらく，そのモデル領域をスムーズに表現する必要があります．これは，ボリュームの境界サーフェスを抽出し，"
+" :func:`pyvista.PolyDataFilters.smooth` フィルタを適用することで実現できます．"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:50
 msgid ""
@@ -9460,7 +9521,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:222
 msgid "**Total running time of the script:** ( 0 minutes  1.248 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  1.248 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/surface-smoothing.rst:236
 msgid ""
@@ -9484,6 +9545,9 @@ msgid ""
 "<sphx_glr_download_examples_01-filter_surface_reconstruction.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end "
+"<sphx_glr_download_examples_01-filter_surface_reconstruction.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:24
 msgid "Surface Reconstruction"
@@ -9495,6 +9559,9 @@ msgid ""
 ":func:`pyvista.PolyDataFilters.reconstruct_surface`. This tends to perform "
 "much better than :func:`pyvista.DataSetFilters.delaunay_3d`."
 msgstr ""
+"表面再構成は，PyVistaでは専用のフィルタが用意されており， "
+":func:`pyvista.PolyDataFilters.reconstruct_surface` で処理されます． これは "
+":func:`pyvista.DataSetFilters.delaunay_3d` よりもはるかに良いパフォーマンスを示す傾向があります．"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:45
 msgid ""
@@ -9521,6 +9588,23 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"\n"
+"<table>\n"
+"<tr><th>PolyData</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>840</td></tr>\n"
+"<tr><td>N Points</td><td>422</td></tr>\n"
+"<tr><td>N Strips</td><td>0</td></tr>\n"
+"<tr><td>X Bounds</td><td>-4.995e-01, 4.989e-01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-4.986e-01, 4.986e-01</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-4.985e-01, 4.985e-01</td></tr>\n"
+"<tr><td>N Arrays</td><td>0</td></tr>\n"
+"</table>\n"
+"\n"
+"\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:83
 msgid "Plot the point cloud and the reconstructed sphere."
@@ -9528,7 +9612,7 @@ msgstr "点群と再構成された球体をプロットします．"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:112
 msgid "**Total running time of the script:** ( 0 minutes  0.385 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.385 seconds)"
 
 #: ../../pyvista/doc/examples/01-filter/surface_reconstruction.rst:126
 msgid ""
@@ -10884,6 +10968,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_depth-peeling.py>` "
 "to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_depth-peeling.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:24
 msgid "Depth Peeling"
@@ -10896,6 +10982,9 @@ msgid ""
 "<pyvista.themes.DefaultTheme>` as some operating systems and versions of VTK"
 " have issues with this routine."
 msgstr ""
+"深さのピーリングは，半透明のジオメトリを正しくレンダーするテクニックです．いくつかのオペレーティングシステムとVTKのバージョンはこのルーチンで問題があるので，"
+"  :attr:`pyvista.global_theme <pyvista.themes.DefaultTheme>`  "
+"ではデフォルトで有効になっていません．"
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:30
 msgid ""
@@ -10921,7 +11010,7 @@ msgstr "次に，多くの半透明のコンタサーフェスをレンダリン
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:180
 msgid "**Total running time of the script:** ( 0 minutes  46.217 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  46.217 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/depth-peeling.rst:194
 msgid ""
@@ -12151,6 +12240,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create an animated GIF by "
 "generating glyphs using pyvista.DataSetFilters.glyph using pyvista.Sp...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Create an animated GIF by "
+"generating glyphs using pyvista.DataSetFilters.glyph using pyvista.Sp...\">"
 
 #: ../../pyvista/doc/examples/02-plot/index.rst:515
 #: ../../pyvista/doc/examples/index.rst:1792
@@ -13467,6 +13558,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_movie_glyphs.py>` to"
 " download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_movie_glyphs.py>` to"
+" download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:24
 msgid "Save a Movie Using Glyphs"
@@ -13477,6 +13570,8 @@ msgid ""
 "Create an animated GIF by generating glyphs using :func:`glyph() "
 "<pyvista.DataSetFilters.glyph>` using :func:`pyvista.Sphere`."
 msgstr ""
+":func:`glyph() <pyvista.DataSetFilters.glyph>` と :func:`pyvista.Sphere` "
+"を使用してグリフを生成し，アニメーションGIFを作成します．"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:48
 msgid "Create sphere glyphs"
@@ -13488,7 +13583,7 @@ msgstr "ムービーを作成する"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:138
 msgid "**Total running time of the script:** ( 0 minutes  9.340 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  9.340 seconds)"
 
 #: ../../pyvista/doc/examples/02-plot/movie_glyphs.rst:152
 msgid ""
@@ -14051,6 +14146,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_point-cell-"
 "scalars.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_point-cell-"
+"scalars.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/point-cell-scalars.rst:24
 msgid "Point Cell Scalars"
@@ -14158,6 +14255,8 @@ msgid ""
 "To split up individual cells, separate them using "
 ":func:`pyvista.DataSetFilters.separate_cells`."
 msgstr ""
+"もし，各セルの各ポイントにデータを割り当てて，それをプロットしたかったら，これらの6面体のセルはすべて同じポイントを共有しているので，単純に不可能です．個々のセルを分割するには，"
+" :func:`pyvista.DataSetFilters.separate_cells` を使用してセルを分割します．"
 
 #: ../../pyvista/doc/examples/02-plot/point-cell-scalars.rst:155
 msgid ""
@@ -14577,7 +14676,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:9
 msgid "**00:58.330** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:58.330** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:12
 msgid ""
@@ -14587,7 +14686,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:12
 msgid "00:46.217"
-msgstr ""
+msgstr "00:46.217"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:14
 msgid ":ref:`sphx_glr_examples_02-plot_movie_glyphs.py` (``movie_glyphs.py``)"
@@ -14596,7 +14695,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:14
 msgid "00:09.340"
-msgstr ""
+msgstr "00:09.340"
 
 #: ../../pyvista/doc/examples/02-plot/sg_execution_times.rst:16
 msgid ":ref:`sphx_glr_examples_02-plot_shading.py` (``shading.py``)"
@@ -14870,6 +14969,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_shading.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_shading.py>` to "
+"download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/shading.rst:24
 msgid "Types of Shading"
@@ -14916,6 +15017,8 @@ msgid ""
 ":func:`extract_feature_edges "
 "<pyvista.DataSetFilters.extract_feature_edges>`."
 msgstr ""
+":func:`extract_feature_edges <pyvista.DataSetFilters.extract_feature_edges>`"
+" を使って，分割されるエッジをプロットすることもできます．"
 
 #: ../../pyvista/doc/examples/02-plot/shading.rst:159
 msgid ""
@@ -15166,6 +15269,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_surface-picking.py>`"
 " to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_surface-picking.py>`"
+" to download the full example code"
 
 #: ../../pyvista/doc/examples/02-plot/surface-picking.rst:24
 msgid "Picking a Point on the Surface of a Mesh"
@@ -15176,6 +15281,8 @@ msgid ""
 "This example demonstrates how to pick meshes using "
 ":func:`surface_mesh_picking() <pyvista.Plotter.enable_surface_picking>`."
 msgstr ""
+"この例では， :func:`surface_mesh_picking() "
+"<pyvista.Plotter.enable_surface_picking>` を使用してメッシュをピックする方法を示します．"
 
 #: ../../pyvista/doc/examples/02-plot/surface-picking.rst:28
 msgid "This allows you to pick points on the surface of a mesh."
@@ -16173,6 +16280,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_03-widgets_clip-volume.py>` "
 "to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_03-widgets_clip-volume.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:24
 msgid "Clip Volume Widget"
@@ -16185,6 +16294,9 @@ msgid ""
 ":func:`pyvista.Plotter.add_volume_clip_plane` widget to better see the "
 "internal structure of the dataset."
 msgstr ""
+":class:`pyvista.UniformGrid` や :class:`pyvista.RectilinearGrid` "
+"のような構造化されたデータセットでは， :func:`pyvista.Plotter.add_volume_clip_plane` "
+"ウィジェットを使ってデータセットを切り取って，内部構造をより良く確認できるようにすることができます．"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:35
 msgid "Create the Dataset"
@@ -16196,6 +16308,8 @@ msgid ""
 "200)`` and set the active scalars to distance from the :attr:`center "
 "<pyvista.DataSet.center>` of the grid."
 msgstr ""
+"寸法 ``(200, 200, 200)`` の密な :class:`pyvista.UniformGrid` を作成し，アクティブスカラーをグリッドの"
+" :attr:`center <pyvista.DataSet.center>` からの距離として設定します．"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:59
 msgid ""
@@ -16295,7 +16409,7 @@ msgstr "プロットをもう少しわかりやすくするために矢印を無
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:187
 msgid "**Total running time of the script:** ( 0 minutes  4.657 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  4.657 seconds)"
 
 #: ../../pyvista/doc/examples/03-widgets/clip-volume.rst:201
 msgid ""
@@ -16755,7 +16869,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:9
 msgid "**00:04.657** total execution time for **examples_03-widgets** files:"
-msgstr ""
+msgstr "**00:04.657** total execution time for **examples_03-widgets** files:"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:12
 msgid ""
@@ -16765,7 +16879,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:12
 msgid "00:04.657"
-msgstr ""
+msgstr "00:04.657"
 
 #: ../../pyvista/doc/examples/03-widgets/sg_execution_times.rst:14
 msgid ":ref:`sphx_glr_examples_03-widgets_box-widget.py` (``box-widget.py``)"
@@ -17169,6 +17283,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_04-lights_beam_shape.py>` to"
 " download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_04-lights_beam_shape.py>` to"
+" download the full example code"
 
 #: ../../pyvista/doc/examples/04-lights/beam_shape.rst:24
 msgid "Beam Shape"
@@ -17229,6 +17345,8 @@ msgid ""
 "by side for this, and put a light in the center of each: one spotlight, one "
 "merely positional."
 msgstr ""
+"スポットライト(コーンアングルが90度未満のポジショナルライト)に切り替えると， :py:attr:`pyvista.Light.exponent` "
+"プロパティを使用したビーム成形が有効になります．このために半球を並べて，それぞれの中心にライトを配置しましょう．1つのスポットライトで，1つは単に位置を示すライトです．"
 
 #: ../../pyvista/doc/examples/04-lights/beam_shape.rst:204
 msgid ""
@@ -17244,6 +17362,8 @@ msgid ""
 " to make the beam shape sharper or broader. Three spotlights with varying "
 "sharpness:"
 msgstr ""
+"スポットライトができたら，その :py:attr:`pyvista.Light.exponent` "
+"を変更して，ビームシェイプをよりシャープにしたり，より広くしたりすることができます．シャープさが異なる3つのスポットライト:"
 
 #: ../../pyvista/doc/examples/04-lights/beam_shape.rst:255
 msgid ""
@@ -17473,6 +17593,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_04-lights_light_types.py>` "
 "to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_04-lights_light_types.py>` "
+"to download the full example code"
 
 #: ../../pyvista/doc/examples/04-lights/light_types.rst:24
 msgid "Light Types"
@@ -17509,6 +17631,9 @@ msgid ""
 ":py:attr:`pyvista.Camera.focal_point` properties are meaningless. No matter "
 "where you move the camera, the light always emanates from the view point:"
 msgstr ""
+"ヘッドライトの場合， :py:attr:`pyvista.Camera.position` および "
+":py:attr:`pyvista.Camera.focal_point` "
+"プロパティは意味がありません．カメラをどこに移動しても，ライトは常に視点から放射されます．"
 
 #: ../../pyvista/doc/examples/04-lights/light_types.rst:77
 msgid "Camera light"
@@ -17525,6 +17650,12 @@ msgid ""
 "coordinates please see the documentation of "
 ":func:`pyvista.Light.set_camera_light`."
 msgstr ""
+"カメラライトは，カメラに対してローカルな座標系で :py:attr:`pyvista.Camera.position` と "
+":py:attr:`pyvista.Camera.focal_point` "
+"プロパティを定義します．シーンの座標系の座標には，それぞれ読み込み専用プロパティ:py:attr:`pyvista.Light.world_position`"
+" および :py:attr:`pyvista.Light.world_focal_point` "
+"を使用してアクセスできます．座標に使用されるローカル座標系の詳細については， "
+":func:`pyvista.Light.set_camera_light` のドキュメントを参照してください．"
 
 #: ../../pyvista/doc/examples/04-lights/light_types.rst:116
 msgid "Scene light"
@@ -17538,7 +17669,7 @@ msgstr "シーンライトはシーンにアタッチされ，その位置と焦
 
 #: ../../pyvista/doc/examples/04-lights/light_types.rst:147
 msgid "**Total running time of the script:** ( 0 minutes  0.997 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.997 seconds)"
 
 #: ../../pyvista/doc/examples/04-lights/light_types.rst:161
 msgid ""
@@ -17733,7 +17864,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:9
 msgid "**00:02.125** total execution time for **examples_04-lights** files:"
-msgstr ""
+msgstr "**00:02.125** total execution time for **examples_04-lights** files:"
 
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:12
 msgid ":ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)"
@@ -17750,7 +17881,7 @@ msgstr ""
 
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:14
 msgid "00:00.997"
-msgstr ""
+msgstr "00:00.997"
 
 #: ../../pyvista/doc/examples/04-lights/sg_execution_times.rst:16
 msgid ":ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)"
@@ -18292,6 +18423,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_99-advanced_atomic-"
 "orbitals.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_99-advanced_atomic-"
+"orbitals.py>` to download the full example code"
 
 #: ../../pyvista/doc/examples/99-advanced/atomic-orbitals.rst:24
 msgid "Plot Atomic Orbitals"
@@ -18481,6 +18614,8 @@ msgid ""
 ":func:`contour() <pyvista.DataSetFilters.contour>` to capture where the "
 "positive and negative phases cross ``eval_at``."
 msgstr ""
+":func:`contour() <pyvista.DataSetFilters.contour>` "
+"を評価する際に，スカラーの絶対値を使用して，正相と負相が ``eval_at`` を交差する場所を捕捉していることに注目してください．"
 
 #: ../../pyvista/doc/examples/99-advanced/atomic-orbitals.rst:216
 msgid "Volumetric Plot: Plot the Orbitals using RGBA"
@@ -19458,6 +19593,7 @@ msgstr ""
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:9
 msgid "**00:15.655** total execution time for **examples_99-advanced** files:"
 msgstr ""
+"**00:15.655** total execution time for **examples_99-advanced** files:"
 
 #: ../../pyvista/doc/examples/99-advanced/sg_execution_times.rst:12
 msgid ""

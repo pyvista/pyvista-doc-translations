@@ -856,6 +856,9 @@ msgid ""
 "arrays will be transformed along with the geometry as these vectors "
 "represent quantities with direction."
 msgstr ""
+"VTKでは， :func:`transform() <pyvista.DataSetFilters.transform>` "
+"フィルタを使用して変換を行う際に，ベクトルはスカラーとは異なる扱いになります． "
+"スカラー配列とは異なり，ベクトル配列は方向を持つ量を表すため，ジオメトリと一緒に変換されます．"
 
 #: ../../pyvista/doc/user-guide/data_model.rst:714
 msgid ""
@@ -865,6 +868,10 @@ msgid ""
 "will transform any array with three components, so multi-component scalar "
 "arrays like RGB arrays will have to be discarded after transformation."
 msgstr ""
+"VTKでは，1つの \"アクティブ\" なベクトルしか許可しません．変換したい複数のベクトル配列がある場合には， :func:`transform() "
+"<pyvista.DataSetFilters.transform>` で ``transform_all_input_vectors=True`` "
+"を設定してください． "
+"これは，3つのコンポーネントを持つ配列を変換するので，RGB配列のような複数コンポーネントのスカラー配列は，変換後に破棄しなければならないことに注意してください．"
 
 #: ../../pyvista/doc/user-guide/index.rst:2
 msgid "User Guide"
@@ -1861,6 +1868,8 @@ msgid ""
 "The ``pythreejs`` supports RGBA plotting.  See the ``rgba`` parameter within"
 " :func:`add_mesh() <pyvista.Plotter.add_mesh>` for more details."
 msgstr ""
+"``pythreejs`` は RGBA プロットをサポートしています． 詳細は :func:`add_mesh() "
+"<pyvista.Plotter.add_mesh>`  の ``rgba`` パラメータを参照してください．"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:227
 msgid "Multiple Render Windows"
@@ -1981,6 +1990,9 @@ msgid ""
 "<pyvista.DataSetFilters.glyph>` or :func:`tube() "
 "<pyvista.PolyDataFilters.tube>` to convert to surfaces first and then plot."
 msgstr ""
+"点を球体として，線をチューブとしてプロットします． 最初にサーフェスに変換してからプロットするには， :func:`glyph() "
+"<pyvista.DataSetFilters.glyph>` または :func:`tube() "
+"<pyvista.DataSetFilters.tube>` を使用します．"
 
 #: ../../pyvista/doc/user-guide/jupyter/pythreejs.rst:348
 msgid "Point labels"
@@ -2117,12 +2129,16 @@ msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
 "<pyvista.themes._TrameConfig.server_proxy_enabled>`"
 msgstr ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
+"<pyvista.themes._TrameConfig.server_proxy_enabled>`"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:104
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
 "<pyvista.themes._TrameConfig.server_proxy_prefix>`"
 msgstr ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
+"<pyvista.themes._TrameConfig.server_proxy_prefix>`"
 
 #: ../../pyvista/doc/user-guide/jupyter/trame.rst:107
 msgid ""
@@ -2212,6 +2228,8 @@ msgid ""
 "PyVista. This allows users to quickly wrap any VTK dataset they have as a "
 "PyVista object:"
 msgstr ""
+"ラッピング関数 :func:`pyvista.wrap` "
+"はPyVistaのトップレベルから使用できます．これにより，ユーザは持っている任意のVTKデータセットをPyVistaオブジェクトとして素早くラップすることができます．"
 
 #: ../../pyvista/doc/user-guide/simple.rst:29
 msgid "Reading a VTK File"
@@ -2248,6 +2266,8 @@ msgid ""
 "Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
 "attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
 msgstr ""
+"ポイントにアクセスするには，任意のPyVistaメッシュの :attr:`points <pyvista.DataSet.points>` 属性を "
+":class:`numpy.ndarray` としてフェッチします．"
 
 #: ../../pyvista/doc/user-guide/simple.rst:103
 msgid ""
@@ -2601,6 +2621,9 @@ msgid ""
 "``InsertCellPoint``.  For example, to create a single cell (triangle) and "
 "then assign it to `vtkPolyData`_:"
 msgstr ""
+"面やセルの接続性/トポロジーを割り当てる場合も同様です． VTKでは通常， ``InsertNextCell`` と "
+"``InsertCellPoint`` を使ってループする必要があります． 例えば，一つのセル(3角形)を作成して，それを `vtkPolyData`_"
+" に割り当てる場合:"
 
 #: ../../pyvista/doc/user-guide/vtk_to_pyvista.rst:222
 msgid ""
@@ -2831,7 +2854,7 @@ msgstr ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:142
 msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
-msgstr ""
+msgstr ":attr:`field_data <pyvista.DataObject.field_data>`"
 
 #: ../../pyvista/doc/user-guide/what-is-a-mesh.rst:146
 msgid ""
