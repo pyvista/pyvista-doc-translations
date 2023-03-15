@@ -2614,6 +2614,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example loads a dataset, constructs a line to represent the point of contact between the c...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_fea-hertzian-contact-pressure_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_fea-hertzian-contact-pressure.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Visualize Hertzian Contact Stress</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Plot OpenFOAM data">
 
 .. only:: html
