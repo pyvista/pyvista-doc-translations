@@ -60,16 +60,16 @@ jobs:
         sleep 3
         set +x
         rm ./locale/examples/*/*.py
-        mv ./locale/examples ./pyvista/doc
+        mv ./locale/examples ./pyvista/doc/source
         cd pyvista
         make -C doc html SPHINXOPTS="-w build_errors.txt -N"
         cd ../
         sh ./locale/update.sh
-        ls ./pyvista/doc/examples
-        mv ./pyvista/doc/examples ./locale
-        ls ./pyvista/doc/images
+        ls ./pyvista/doc/source/examples
+        mv ./pyvista/doc/source/examples ./locale
+        ls ./pyvista/doc/source/images
         rm -Rf ./locale/images
-        mv ./pyvista/doc/images ./locale
+        mv ./pyvista/doc/source/images ./locale
     - name: commit
       if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
       env:
