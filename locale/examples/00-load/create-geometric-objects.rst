@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-geometric-objects.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-geometric-objects.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -43,7 +43,7 @@ The "Hello, world!" of VTK
 This runs through several of the available geometric objects available in
 VTK which PyVista provides simple convenience methods for generating.
 
-Let's run through creating a few geometric objects!
+Let's run through creating a few geometric objects.
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-27
 
@@ -103,49 +103,37 @@ Now let's plot them all in one window
 
 
 
-.. image:: /examples/00-load/images/sphx_glr_create-geometric-objects_001.png
-    :alt: create geometric objects
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/00-load/images/sphx_glr_create-geometric-objects_001.png
+   :alt: create geometric objects
+   :srcset: /examples/00-load/images/sphx_glr_create-geometric-objects_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.475476060211299, 1.475476060211299, 1.475476060211299),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.706 seconds)
+   **Total running time of the script:** ( 0 minutes  0.720 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-geometric-objects.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-geometric-objects.py <create-geometric-objects.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-geometric-objects.py <create-geometric-objects.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-geometric-objects.ipynb <create-geometric-objects.ipynb>`
+      :download:`Download Jupyter notebook: create-geometric-objects.ipynb <create-geometric-objects.ipynb>`
 
 
 .. only:: html

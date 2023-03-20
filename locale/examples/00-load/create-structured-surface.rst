@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-structured-surface.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-structured-surface.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -132,8 +132,6 @@ from the resulting surface can be accessed as a NumPy array:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -197,16 +195,14 @@ frame.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -41.1946134 , -285.44221293,    1.56276632],
-                     [ -27.98125268, -275.62910524,    2.1542712 ],
-                     [ -18.98497373, -268.94787886,    2.63926547],
-                     [  -4.72590418, -258.35815925,    3.54878948],
-                     [   3.59862908, -252.17581525,    4.15740295]])
+    pyvista_ndarray([[ -40.39498536, -284.19992672,    1.62434154],
+                     [ -26.58196801, -273.94147471,    2.26515583],
+                     [ -16.75896985, -266.64627246,    2.81824768],
+                     [  -2.68434624, -256.19353449,    3.75486955],
+                     [   9.20595738, -247.36301572,    4.67163738]])
 
 
 
@@ -271,7 +267,7 @@ dimensionality of structured grid including:
     # set the dimensions
     mesh.dimensions = [29, 32, 1]
 
-    # and then inspect it!
+    # and then inspect it
     mesh.plot(show_edges=True, show_grid=True, cpos="xy")
 
 
@@ -348,28 +344,25 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.614 seconds)
+   **Total running time of the script:** ( 0 minutes  1.795 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-structured-surface.py <create-structured-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-structured-surface.py <create-structured-surface.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-structured-surface.ipynb <create-structured-surface.ipynb>`
+      :download:`Download Jupyter notebook: create-structured-surface.ipynb <create-structured-surface.ipynb>`
 
 
 .. only:: html

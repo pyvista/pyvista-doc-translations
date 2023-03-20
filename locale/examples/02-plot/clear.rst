@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_clear.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_clear.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,13 +23,11 @@ Clearing a Mesh or the Entire Plot
 
 This example demonstrates how to remove elements from a scene.
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 8-11
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
 
 
@@ -53,21 +51,12 @@ This example demonstrates how to remove elements from a scene.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_clear_001.png
-    :alt: clear
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_clear_001.png
+   :alt: clear
+   :srcset: /examples/02-plot/images/sphx_glr_clear_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.0, 1.0, 1.0),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -90,21 +79,12 @@ Clearing the entire plotting window:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_clear_002.png
-    :alt: clear
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_clear_002.png
+   :alt: clear
+   :srcset: /examples/02-plot/images/sphx_glr_clear_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.0, 1.0, 1.0),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -121,54 +101,42 @@ with that same name at a later time, it will replace the previous actor:
     plotter = pv.Plotter()
     plotter.add_mesh(pv.Sphere(), name="mymesh")
     plotter.add_mesh(pv.Plane(), name="mymesh")
-    # Only the Plane is shown!
+    # Only the Plane is shown.
     plotter.show()
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_clear_003.png
-    :alt: clear
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_clear_003.png
+   :alt: clear
+   :srcset: /examples/02-plot/images/sphx_glr_clear_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(1.5773502691896262, 1.5773502691896262, 1.5773502691896262),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.981 seconds)
+   **Total running time of the script:** ( 0 minutes  0.399 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_clear.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: clear.py <clear.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: clear.py <clear.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: clear.ipynb <clear.ipynb>`
+      :download:`Download Jupyter notebook: clear.ipynb <clear.ipynb>`
 
 
 .. only:: html

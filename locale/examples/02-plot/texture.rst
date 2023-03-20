@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_texture.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_texture.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -142,7 +142,7 @@ Display scalar data along with a texture by ensuring the
 
 .. GENERATED FROM PYTHON SOURCE LINES 60-61
 
-Note that this process can be completed with any image texture!
+Note that this process can be completed with any image texture.
 
 .. GENERATED FROM PYTHON SOURCE LINES 61-67
 
@@ -228,7 +228,7 @@ and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
     # Convert 3D numpy array to texture
     tex = pv.numpy_to_texture(image)
 
-    # Render it!
+    # Render it
     curvsurf.plot(texture=tex)
 
 
@@ -239,6 +239,13 @@ and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
    :srcset: /examples/02-plot/images/sphx_glr_texture_006.png
    :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/02-plot/texture.py:96: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+      cmap = get_cmap("nipy_spectral")
 
 
 
@@ -339,7 +346,7 @@ Here we can download an image that has an alpha channel:
 .. code-block:: default
 
 
-    # Render it!
+    # Render it
     curvsurf.plot(texture=rgba, show_grid=True)
 
 
@@ -410,7 +417,7 @@ Then we must associate those texture coordinates with the mesh through the
 
 .. GENERATED FROM PYTHON SOURCE LINES 196-197
 
-Now display all the puppies!
+Now display all the puppies.
 
 .. GENERATED FROM PYTHON SOURCE LINES 197-203
 
@@ -510,7 +517,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.824 seconds)
+   **Total running time of the script:** ( 0 minutes  8.410 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:
@@ -518,6 +525,8 @@ overlappig
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

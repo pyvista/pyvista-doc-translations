@@ -77,7 +77,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using using planes or boxes.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using planes or boxes.">
 
 .. only:: html
 

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_cmap.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_cmap.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -120,7 +120,7 @@ and we specify the ranges where those colors fall:
 
 .. GENERATED FROM PYTHON SOURCE LINES 65-66
 
-Simply pass the colormap to the plotting routine!
+Simply pass the colormap to the plotting routine.
 
 .. GENERATED FROM PYTHON SOURCE LINES 66-68
 
@@ -143,7 +143,7 @@ Simply pass the colormap to the plotting routine!
 .. GENERATED FROM PYTHON SOURCE LINES 69-71
 
 Or you could make a simple colormap... any Matplotlib colormap can be passed
-to PyVista!
+to PyVista.
 
 .. GENERATED FROM PYTHON SOURCE LINES 71-74
 
@@ -160,6 +160,13 @@ to PyVista!
    :srcset: /examples/02-plot/images/sphx_glr_cmap_002.png
    :class: sphx-glr-single-img
 
+
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/examples/02-plot/cmap.py:71: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+      boring_cmap = plt.cm.get_cmap("viridis", 5)
 
 
 
@@ -191,7 +198,7 @@ approach divides up the colormap into 5 equal parts.
 
 If you still wish to have control of the separation of values, you
 can do this by creating a scalar array and passing that to the
-plotter along with the the colormap
+plotter along with the colormap
 
 .. GENERATED FROM PYTHON SOURCE LINES 83-92
 
@@ -293,28 +300,25 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.339 seconds)
+   **Total running time of the script:** ( 0 minutes  3.337 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: cmap.py <cmap.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: cmap.py <cmap.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: cmap.ipynb <cmap.ipynb>`
+      :download:`Download Jupyter notebook: cmap.ipynb <cmap.ipynb>`
 
 
 .. only:: html

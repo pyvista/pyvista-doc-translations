@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_read-dolfin.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_read-dolfin.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -107,7 +107,7 @@ a PyVista mesh.
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-31
 
-Now we can do stuff with that Dolfin mesh!
+Now we can work on and plot that Dolfin mesh.
 
 .. GENERATED FROM PYTHON SOURCE LINES 31-33
 
@@ -130,7 +130,7 @@ Now we can do stuff with that Dolfin mesh!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.718 seconds)
+   **Total running time of the script:** ( 0 minutes  1.044 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-dolfin.py:
@@ -138,6 +138,8 @@ Now we can do stuff with that Dolfin mesh!
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

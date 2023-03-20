@@ -465,7 +465,7 @@ Use equation for circle since its about the Z-axis.
 
 .. GENERATED FROM PYTHON SOURCE LINES 172-173
 
-And now display it!
+And now display it.
 
 .. GENERATED FROM PYTHON SOURCE LINES 173-177
 
@@ -490,7 +490,7 @@ And now display it!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.026 seconds)
+   **Total running time of the script:** ( 0 minutes  20.153 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

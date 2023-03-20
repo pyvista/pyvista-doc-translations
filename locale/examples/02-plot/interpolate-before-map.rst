@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_interpolate-before-map.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_interpolate-before-map.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -245,7 +245,7 @@ the ``n_colors`` argument:
 
 Left, ``interpolate_before_map`` OFF.  Right, ``interpolate_before_map`` ON.
 
-Now that is much more compelling! On the right, the contours of the scalar
+Now that is much more compelling. On the right, the contours of the scalar
 field are visible, but on the left, the contours are obscured due to the color
 interpolation by OpenGL. In both cases, the colors at the vertices are the
 same, the difference is how color is assigned between the vertices.
@@ -257,7 +257,7 @@ flag to ``True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.208 seconds)
+   **Total running time of the script:** ( 0 minutes  1.841 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_interpolate-before-map.py:
@@ -265,6 +265,8 @@ flag to ``True``.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

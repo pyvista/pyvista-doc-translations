@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_themes.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_themes.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -184,7 +184,7 @@ Demo the ``'document'`` theme.  This theme is used on our online examples.
 .. GENERATED FROM PYTHON SOURCE LINES 70-72
 
 Note that you can also use color gradients for the background of the plotting
-window!
+window.
 
 .. GENERATED FROM PYTHON SOURCE LINES 72-80
 
@@ -237,15 +237,13 @@ theme.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
     Document Theme
     --------------
-    Background               : (1.0, 1.0, 1.0)
-    Jupyter backend          : ipyvtklink
+    Background               : Color(name='white', hex='#ffffffff', opacity=255)
+    Jupyter backend          : trame
     Full screen              : False
     Window size              : [1024, 768]
     Camera                   : {'position': [1, 1, 1], 'viewup': [0, 0, 1]}
@@ -255,15 +253,16 @@ theme.
         Size                 : 18
         Title size           : 18
         Label size           : 18
-        Color                : (0.0, 0.0, 0.0)
+        Color                : Color(name='black', hex='#000000ff', opacity=255)
         Float format         : None
     Auto close               : True
     Colormap                 : viridis
-    Color                    : (0.8235294117647058, 0.7058823529411765, 0.5490196078431373)
-    NaN color                : (0.6627450980392157, 0.6627450980392157, 0.6627450980392157)
-    Edge color               : (0.0, 0.0, 0.0)
-    Outline color            : (0.0, 0.0, 0.0)
-    Floor color              : (0.5019607843137255, 0.5019607843137255, 0.5019607843137255)
+    Color                    : Color(name='tan', hex='#d2b48cff', opacity=255)
+    Color Cycler             : None
+    NaN color                : Color(name='darkgray', hex='#a9a9a9ff', opacity=255)
+    Edge color               : Color(name='black', hex='#000000ff', opacity=255)
+    Outline color            : Color(name='black', hex='#000000ff', opacity=255)
+    Floor color              : Color(name='gray', hex='#808080ff', opacity=255)
     Colorbar orientation     : horizontal
     Colorbar - horizontal    : 
         Width                : 0.6
@@ -283,9 +282,9 @@ theme.
     Transparent Background   : False
     Title                    : PyVista
     Axes                     : Axes configuration
-        X Color              : (1.0, 0.38823529411764707, 0.2784313725490196)
-        Y Color              : (0.1803921568627451, 0.5450980392156862, 0.3411764705882353)
-        Z Color              : (0.0, 0.0, 1.0)
+        X Color              : Color(name='tomato', hex='#ff6347ff', opacity=255)
+        Y Color              : Color(name='seagreen', hex='#2e8b57ff', opacity=255)
+        Z Color              : Color(name='blue', hex='#0000ffff', opacity=255)
         Use Box              : False
         Show                 : True
     Multi-samples            : 4
@@ -297,33 +296,36 @@ theme.
         Occlusion ratio      : 0.0
         Enabled              : False
     Silhouette               : 
-        Color                : (0.0, 0.0, 0.0)
+        Color                : Color(name='black', hex='#000000ff', opacity=255)
         Line width           : 2
         Opacity              : 1.0
         Feature angle        : None
-        Decimate             : 0.9
+        Decimate             : None
     Slider Styles            : 
         Classic              : 
             Slider length    : 0.02
             Slider width     : 0.04
-            Slider color     : (0.5, 0.5, 0.5)
+            Slider color     : Color(name='gray', hex='#808080ff', opacity=255)
             Tube width       : 0.005
-            Tube color       : (1, 1, 1)
+            Tube color       : Color(name='white', hex='#ffffffff', opacity=255)
             Cap opacity      : 1.0
             Cap length       : 0.01
             Cap width        : 0.02
         Modern               : 
             Slider length    : 0.02
             Slider width     : 0.04
-            Slider color     : (0.43137255, 0.44313725, 0.45882353)
+            Slider color     : Color(hex='#6e7175ff', opacity=255)
             Tube width       : 0.04
-            Tube color       : (0.69803922, 0.70196078, 0.70980392)
+            Tube color       : Color(hex='#b2b3b5ff', opacity=255)
             Cap opacity      : 0.0
             Cap length       : 0.01
             Cap width        : 0.02
-    Return Camera Position   : None
-    Hidden Line Removal      : True
-    Anti-Aliasing            : False
+    Return Camera Position   : True
+    Hidden Line Removal      : False
+    Anti-Aliasing            : None
+    Split sharp edges        : False
+    Sharp edges feat. angle  : 30.0
+    Before close callback    : None
 
 
 
@@ -510,28 +512,25 @@ Reset to use the document theme
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.321 seconds)
+   **Total running time of the script:** ( 0 minutes  3.788 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: themes.py <themes.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: themes.py <themes.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: themes.ipynb <themes.ipynb>`
+      :download:`Download Jupyter notebook: themes.ipynb <themes.ipynb>`
 
 
 .. only:: html

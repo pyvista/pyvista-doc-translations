@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_read-file.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_read-file.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -68,8 +68,6 @@ file, displays an airplane mesh and returns the camera's position:
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -147,8 +145,6 @@ The points from the mesh are directly accessible as a NumPy array:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -180,8 +176,6 @@ The faces from the mesh are also directly accessible as a NumPy array:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -197,8 +191,8 @@ The faces from the mesh are also directly accessible as a NumPy array:
 
 .. GENERATED FROM PYTHON SOURCE LINES 58-63
 
-Loading other files types is just as easy! Simply pass your file path to the
-:func:`pyvista.read` function and that's it!
+Loading other files types is just as easy. Simply pass your file path to the
+:func:`pyvista.read` function and that's it.
 
 Here are a few other examples - simply replace ``examples.download_*`` in the
 examples below with ``pyvista.read('path/to/you/file.ext')``
@@ -301,28 +295,25 @@ Example VTK file
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.697 seconds)
+   **Total running time of the script:** ( 0 minutes  3.601 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: read-file.py <read-file.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: read-file.py <read-file.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: read-file.ipynb <read-file.ipynb>`
+      :download:`Download Jupyter notebook: read-file.ipynb <read-file.ipynb>`
 
 
 .. only:: html

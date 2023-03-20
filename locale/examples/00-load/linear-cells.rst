@@ -290,7 +290,7 @@ Plot all linear cell Types
 Let's create a ``(4, 4)`` :class:`pyvista.Plotter` and plot all 16 linear
 cells in a single plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-201
+.. GENERATED FROM PYTHON SOURCE LINES 125-200
 
 .. code-block:: default
 
@@ -368,7 +368,6 @@ cells in a single plot.
     )
 
     pl.background_color = 'w'
-    pl.enable_anti_aliasing()
     pl.show()
 
 
@@ -385,7 +384,7 @@ cells in a single plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.158 seconds)
+   **Total running time of the script:** ( 0 minutes  4.665 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_linear-cells.py:

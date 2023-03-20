@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_topo-map.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_topo-map.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -76,12 +76,10 @@ Let's inspect the imagery that we just loaded
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7f528f50c130>
+    <matplotlib.image.AxesImage object at 0x7f391c2d9940>
 
 
 
@@ -137,7 +135,7 @@ method, then you can map that imagery to the surface mesh as follows:
 
 .. GENERATED FROM PYTHON SOURCE LINES 47-48
 
-Now display it! Note that the imagery is aligned as we expect.
+Now display it. Note that the imagery is aligned as we expect.
 
 .. GENERATED FROM PYTHON SOURCE LINES 48-50
 
@@ -159,7 +157,7 @@ Now display it! Note that the imagery is aligned as we expect.
 
 .. GENERATED FROM PYTHON SOURCE LINES 51-52
 
-And here is a 3D perspective!
+And here is a 3D perspective.
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-54
 
@@ -218,28 +216,25 @@ and plotting the texture mapped local topography and the outside area
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.127 seconds)
+   **Total running time of the script:** ( 0 minutes  15.112 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: topo-map.py <topo-map.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: topo-map.py <topo-map.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: topo-map.ipynb <topo-map.ipynb>`
+      :download:`Download Jupyter notebook: topo-map.ipynb <topo-map.ipynb>`
 
 
 .. only:: html

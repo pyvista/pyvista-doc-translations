@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_streamlines.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_streamlines.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -97,7 +97,7 @@ sphere with radius of 2.0.
 
 .. GENERATED FROM PYTHON SOURCE LINES 42-44
 
-Display the results! Please note that because this dataset's velocity field
+Display the results. Please note that because this dataset's velocity field
 was measured with low resolution, many streamlines travel outside the artery.
 
 .. GENERATED FROM PYTHON SOURCE LINES 44-54
@@ -376,7 +376,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.162 seconds)
+   **Total running time of the script:** ( 0 minutes  9.294 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:
@@ -384,6 +384,8 @@ Custom 3D Vector Field
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

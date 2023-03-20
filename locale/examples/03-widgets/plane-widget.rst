@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_plane-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_plane-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -28,7 +28,7 @@ The plane widget can be enabled and disabled by the
 :func:`pyvista.Plotter.clear_plane_widgets` methods respectively.
 As with all widgets, you must provide a custom callback method to utilize that
 plane. Considering that planes are most commonly used for clipping and slicing
-meshes, we have included two helper methods for doing those tasks!
+meshes, we have included two helper methods for doing those tasks.
 
 Let's use a plane to clip a mesh:
 
@@ -73,18 +73,16 @@ After interacting with the scene, the clipped mesh is available as:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7fa755ed9fa0)
-      N Cells:	3538080
-      N Points:	3613484
-      X Bounds:	9.000e+01, 1.800e+02
-      Y Bounds:	0.000e+00, 2.160e+02
-      Z Bounds:	0.000e+00, 1.800e+02
-      N Arrays:	1
+    [UnstructuredGrid (0x7f391cfbb9a0)
+      N Cells:    3538080
+      N Points:   3613484
+      X Bounds:   9.000e+01, 1.800e+02
+      Y Bounds:   0.000e+00, 2.160e+02
+      Z Bounds:   0.000e+00, 1.800e+02
+      N Arrays:   2
     ]
 
 
@@ -135,18 +133,17 @@ After interacting with the scene, the slice is available as:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    [PolyData (0x7fa755ed9ac0)
-      N Cells:	38880
-      N Points:	39277
-      X Bounds:	9.000e+01, 9.000e+01
-      Y Bounds:	0.000e+00, 2.160e+02
-      Z Bounds:	0.000e+00, 1.800e+02
-      N Arrays:	1
+    [PolyData (0x7f391c1f8a60)
+      N Cells:    38880
+      N Points:   39277
+      N Strips:   0
+      X Bounds:   9.000e+01, 9.000e+01
+      Y Bounds:   0.000e+00, 2.160e+02
+      Z Bounds:   0.000e+00, 1.800e+02
+      N Arrays:   1
     ]
 
 
@@ -300,28 +297,25 @@ the ``InteractionEvent`` observer:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.633 seconds)
+   **Total running time of the script:** ( 0 minutes  7.580 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: plane-widget.py <plane-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: plane-widget.py <plane-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: plane-widget.ipynb <plane-widget.ipynb>`
+      :download:`Download Jupyter notebook: plane-widget.ipynb <plane-widget.ipynb>`
 
 
 .. only:: html

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_volume.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_volume.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -380,7 +380,7 @@ a specific region.
 
 .. GENERATED FROM PYTHON SOURCE LINES 149-155
 
-Woah, that's a big volume! We probably don't want to volume render the
+Woah, that's a big volume. We probably don't want to volume render the
 whole thing. So let's extract a region of interest under the volcano.
 
 The region we will extract will be between nodes 175 and 200 on the x-axis,
@@ -413,7 +413,7 @@ the z-axis.
 
 .. GENERATED FROM PYTHON SOURCE LINES 164-165
 
-Ah, much better. Let's now volume render that region of interest!
+Ah, much better. Let's now volume render that region of interest.
 
 .. GENERATED FROM PYTHON SOURCE LINES 165-174
 
@@ -443,7 +443,7 @@ Ah, much better. Let's now volume render that region of interest!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  34.780 seconds)
+   **Total running time of the script:** ( 1 minutes  3.377 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:
@@ -451,6 +451,8 @@ Ah, much better. Let's now volume render that region of interest!
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

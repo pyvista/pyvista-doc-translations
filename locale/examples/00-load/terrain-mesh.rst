@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_terrain-mesh.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_terrain-mesh.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -187,7 +187,7 @@ make a 3D surface of that DEM:
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-59
 
-And now we have a 3D structured surface of the terrain! We can now extend
+And now we have a 3D structured surface of the terrain. We can now extend
 that structured surface into a 3D mesh to form a terrain following grid.
 To do this, we first our cell spacings in the z-direction (these start
 from the terrain surface). Then we repeat the XYZ structured coordinates
@@ -267,28 +267,25 @@ Once we have those structured coordinates, we can create a
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.213 seconds)
+   **Total running time of the script:** ( 0 minutes  2.449 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: terrain-mesh.py <terrain-mesh.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: terrain-mesh.py <terrain-mesh.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: terrain-mesh.ipynb <terrain-mesh.ipynb>`
+      :download:`Download Jupyter notebook: terrain-mesh.ipynb <terrain-mesh.ipynb>`
 
 
 .. only:: html

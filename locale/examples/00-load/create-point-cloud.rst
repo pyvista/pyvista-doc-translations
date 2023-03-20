@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-point-cloud.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-point-cloud.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -57,7 +57,7 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
 
 
 
-    # Define some helpers - ignore these and use your own data!
+    # Define some helpers - ignore these and use your own data.
     def generate_points(subset=0.02):
         """A helper to make a 3D NumPy array of points (n_points by 3)"""
         dataset = examples.download_lidar()
@@ -76,16 +76,14 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.80956275e+05, 4.40012070e+06, 1.76268005e+03],
-                     [4.80940575e+05, 4.40020250e+06, 1.76766003e+03],
-                     [4.81013275e+05, 4.40021710e+06, 1.76957996e+03],
-                     [4.81111275e+05, 4.40011540e+06, 1.76197998e+03],
-                     [4.81106675e+05, 4.40024330e+06, 1.76981995e+03]])
+    pyvista_ndarray([[4.81043775e+05, 4.40018140e+06, 1.75959998e+03],
+                     [4.80974475e+05, 4.40014010e+06, 1.76117004e+03],
+                     [4.80963575e+05, 4.40018740e+06, 1.75976001e+03],
+                     [4.80932575e+05, 4.40017730e+06, 1.76030005e+03],
+                     [4.80999075e+05, 4.40015020e+06, 1.76101001e+03]])
 
 
 
@@ -114,9 +112,10 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>67841</td></tr>
     <tr><td>N Points</td><td>67841</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
     <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-    <tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.784e+03</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
 
@@ -140,8 +139,6 @@ And we can even do a sanity check
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -263,16 +260,14 @@ This time, we're going to create a totally new, random point cloud.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    pyvista_ndarray([[ 0.81699473,  0.52849627,  0.23067576],
-                     [-0.67963856, -0.47476049,  0.5591904 ],
-                     [ 0.72219943,  0.36968446, -0.58460361],
-                     [-0.14906111,  0.80922348,  0.56827647],
-                     [ 0.67621651,  0.58316456, -0.45016699]])
+    pyvista_ndarray([[ 0.38630159, -0.24949807,  0.8879875 ],
+                     [ 0.42832915, -0.58740237, -0.68665318],
+                     [ 0.32914512,  0.64712543,  0.68767155],
+                     [-0.29335564, -0.79382137,  0.53271953],
+                     [-0.31732064, -0.79774916, -0.51274155]])
 
 
 
@@ -329,28 +324,25 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.253 seconds)
+   **Total running time of the script:** ( 0 minutes  8.034 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-point-cloud.py <create-point-cloud.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-point-cloud.py <create-point-cloud.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-point-cloud.ipynb <create-point-cloud.ipynb>`
+      :download:`Download Jupyter notebook: create-point-cloud.ipynb <create-point-cloud.ipynb>`
 
 
 .. only:: html

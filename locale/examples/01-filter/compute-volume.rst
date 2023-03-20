@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_compute-volume.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_compute-volume.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -26,12 +26,11 @@ Volumetric Analysis
 
 Calculate mass properties such as the volume or area of datasets
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-16
+.. GENERATED FROM PYTHON SOURCE LINES 10-15
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 4
     import numpy as np
 
     from pyvista import examples
@@ -64,6 +63,92 @@ Let's get started with a simple gridded mesh:
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+
+    (<FieldAssociation.CELL: 1>, pyvista_ndarray([  0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   1.,   2.,   3.,   4.,   5.,   6.,   7.,   8.,
+                       0.,   2.,   4.,   6.,   8.,  10.,  12.,  14.,  16.,
+                       0.,   3.,   6.,   9.,  12.,  15.,  18.,  21.,  24.,
+                       0.,   4.,   8.,  12.,  16.,  20.,  24.,  28.,  32.,
+                       0.,   5.,  10.,  15.,  20.,  25.,  30.,  35.,  40.,
+                       0.,   6.,  12.,  18.,  24.,  30.,  36.,  42.,  48.,
+                       0.,   7.,  14.,  21.,  28.,  35.,  42.,  49.,  56.,
+                       0.,   8.,  16.,  24.,  32.,  40.,  48.,  56.,  64.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   2.,   4.,   6.,   8.,  10.,  12.,  14.,  16.,
+                       0.,   4.,   8.,  12.,  16.,  20.,  24.,  28.,  32.,
+                       0.,   6.,  12.,  18.,  24.,  30.,  36.,  42.,  48.,
+                       0.,   8.,  16.,  24.,  32.,  40.,  48.,  56.,  64.,
+                       0.,  10.,  20.,  30.,  40.,  50.,  60.,  70.,  80.,
+                       0.,  12.,  24.,  36.,  48.,  60.,  72.,  84.,  96.,
+                       0.,  14.,  28.,  42.,  56.,  70.,  84.,  98., 112.,
+                       0.,  16.,  32.,  48.,  64.,  80.,  96., 112., 128.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   3.,   6.,   9.,  12.,  15.,  18.,  21.,  24.,
+                       0.,   6.,  12.,  18.,  24.,  30.,  36.,  42.,  48.,
+                       0.,   9.,  18.,  27.,  36.,  45.,  54.,  63.,  72.,
+                       0.,  12.,  24.,  36.,  48.,  60.,  72.,  84.,  96.,
+                       0.,  15.,  30.,  45.,  60.,  75.,  90., 105., 120.,
+                       0.,  18.,  36.,  54.,  72.,  90., 108., 126., 144.,
+                       0.,  21.,  42.,  63.,  84., 105., 126., 147., 168.,
+                       0.,  24.,  48.,  72.,  96., 120., 144., 168., 192.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   4.,   8.,  12.,  16.,  20.,  24.,  28.,  32.,
+                       0.,   8.,  16.,  24.,  32.,  40.,  48.,  56.,  64.,
+                       0.,  12.,  24.,  36.,  48.,  60.,  72.,  84.,  96.,
+                       0.,  16.,  32.,  48.,  64.,  80.,  96., 112., 128.,
+                       0.,  20.,  40.,  60.,  80., 100., 120., 140., 160.,
+                       0.,  24.,  48.,  72.,  96., 120., 144., 168., 192.,
+                       0.,  28.,  56.,  84., 112., 140., 168., 196., 224.,
+                       0.,  32.,  64.,  96., 128., 160., 192., 224., 256.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   5.,  10.,  15.,  20.,  25.,  30.,  35.,  40.,
+                       0.,  10.,  20.,  30.,  40.,  50.,  60.,  70.,  80.,
+                       0.,  15.,  30.,  45.,  60.,  75.,  90., 105., 120.,
+                       0.,  20.,  40.,  60.,  80., 100., 120., 140., 160.,
+                       0.,  25.,  50.,  75., 100., 125., 150., 175., 200.,
+                       0.,  30.,  60.,  90., 120., 150., 180., 210., 240.,
+                       0.,  35.,  70., 105., 140., 175., 210., 245., 280.,
+                       0.,  40.,  80., 120., 160., 200., 240., 280., 320.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   6.,  12.,  18.,  24.,  30.,  36.,  42.,  48.,
+                       0.,  12.,  24.,  36.,  48.,  60.,  72.,  84.,  96.,
+                       0.,  18.,  36.,  54.,  72.,  90., 108., 126., 144.,
+                       0.,  24.,  48.,  72.,  96., 120., 144., 168., 192.,
+                       0.,  30.,  60.,  90., 120., 150., 180., 210., 240.,
+                       0.,  36.,  72., 108., 144., 180., 216., 252., 288.,
+                       0.,  42.,  84., 126., 168., 210., 252., 294., 336.,
+                       0.,  48.,  96., 144., 192., 240., 288., 336., 384.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   7.,  14.,  21.,  28.,  35.,  42.,  49.,  56.,
+                       0.,  14.,  28.,  42.,  56.,  70.,  84.,  98., 112.,
+                       0.,  21.,  42.,  63.,  84., 105., 126., 147., 168.,
+                       0.,  28.,  56.,  84., 112., 140., 168., 196., 224.,
+                       0.,  35.,  70., 105., 140., 175., 210., 245., 280.,
+                       0.,  42.,  84., 126., 168., 210., 252., 294., 336.,
+                       0.,  49.,  98., 147., 196., 245., 294., 343., 392.,
+                       0.,  56., 112., 168., 224., 280., 336., 392., 448.,
+                       0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,   0.,
+                       0.,   8.,  16.,  24.,  32.,  40.,  48.,  56.,  64.,
+                       0.,  16.,  32.,  48.,  64.,  80.,  96., 112., 128.,
+                       0.,  24.,  48.,  72.,  96., 120., 144., 168., 192.,
+                       0.,  32.,  64.,  96., 128., 160., 192., 224., 256.,
+                       0.,  40.,  80., 120., 160., 200., 240., 280., 320.,
+                       0.,  48.,  96., 144., 192., 240., 288., 336., 384.,
+                       0.,  56., 112., 168., 224., 280., 336., 392., 448.,
+                       0.,  64., 128., 192., 256., 320., 384., 448., 512.]))
 
 
 
@@ -113,7 +198,7 @@ property:
 
 .. GENERATED FROM PYTHON SOURCE LINES 46-48
 
-Okay awesome! But what if we have have a dataset that we threshold with two
+But what if we have a dataset that we threshold with two
 volumetric bodies left over in one dataset? Take this for example:
 
 .. GENERATED FROM PYTHON SOURCE LINES 48-53
@@ -157,7 +242,7 @@ simpler implementation of this below in :ref:`split_vol_ref`.
     sizes = threshed.compute_cell_sizes()
     volumes = sizes.cell_data["Volume"]
 
-    # Split volumes based on classifier and get volumes!
+    # Split volumes based on classifier and get the volumes
     idx = np.argwhere(classifier)
     hvol = np.sum(volumes[idx])
     idx = np.argwhere(~classifier)
@@ -173,12 +258,10 @@ simpler implementation of this below in :ref:`split_vol_ref`.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Low grade volume: 518.0
-    High grade volume: 35.0
+    High grade volume: 32.0
     Original volume: 729.0
 
 
@@ -202,7 +285,7 @@ filter or by using ``extract_largest`` filter (both are equivalent).
     # Get volume as numeric value
     large_volume = largest.volume
 
-    # Display it!
+    # Display it
     largest.plot(show_grid=True, cpos=[-2, 5, 3])
 
 
@@ -255,12 +338,10 @@ volume in the example above:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Body 0 volume: 518.000
-    Body 1 volume: 35.000
+    Body 1 volume: 32.000
 
 
 
@@ -295,7 +376,7 @@ A Real Dataset
 
 Here is a realistic training dataset of fluvial channels in the subsurface.
 This will threshold the channels from the dataset then separate each
-significantly large body and compute the volumes for each!
+significantly large body and compute the volumes for each.
 
 Load up the data and threshold the channels:
 
@@ -359,8 +440,6 @@ Print out the volumes for each body:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Body 00 volume: 66761.000
@@ -413,28 +492,25 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.171 seconds)
+   **Total running time of the script:** ( 0 minutes  7.701 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: compute-volume.py <compute-volume.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: compute-volume.py <compute-volume.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: compute-volume.ipynb <compute-volume.ipynb>`
+      :download:`Download Jupyter notebook: compute-volume.ipynb <compute-volume.ipynb>`
 
 
 .. only:: html

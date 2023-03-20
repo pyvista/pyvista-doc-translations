@@ -6,7 +6,7 @@ Examples
 ========
 
 Here is a gallery of several examples demonstrating what PyVista can
-do!
+do.
 
 All of these examples are live and available on MyBinder.
 
@@ -30,7 +30,8 @@ Mesh Creation
 
 These examples demo how to read various file types into PyVista mesh objects,
 create meshes from NumPy arrays, and how to create primitive geometric objects
-like spheres, arrows, cubes, ellipsoids and more!
+like spheres, arrows, cubes, ellipsoids and more.
+
 Once a mesh is loaded, it is ready for plotting with just a few lines
 of code - explore these examples to get started with using PyVista for your
 data.
@@ -597,7 +598,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using using planes or boxes.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Clip/cut any dataset using planes or boxes.">
 
 .. only:: html
 

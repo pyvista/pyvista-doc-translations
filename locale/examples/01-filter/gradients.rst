@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_gradients.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_gradients.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -96,24 +96,23 @@ of that mesh. This is as simple as calling
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    array([[ 7.2189998e-03,  7.6569999e-03,  3.8799997e-03, ...,
-            -7.3850001e-03,  1.0060001e-03, -2.1000043e-05],
-           [ 4.2885002e-03,  9.3000010e-04, -6.5520001e-03, ...,
-            -6.1399997e-03,  3.6770001e-03,  1.1730000e-02],
-           [ 5.4014996e-03,  1.2539998e-03, -4.6510003e-03, ...,
-             3.4900010e-04,  8.0140000e-03,  8.1439996e-03],
-           ...,
-           [-6.3999998e-04, -2.6340000e-03,  6.1740000e-03, ...,
-            -4.3205000e-03, -1.2229999e-03, -1.8960000e-03],
-           [-1.5900000e-03, -3.4460002e-03,  4.1279998e-03, ...,
-            -2.9000000e-03, -5.9960000e-03, -5.8140000e-03],
-           [-9.1199996e-04, -4.0670000e-03, -1.5819999e-03, ...,
-            -2.4759998e-03, -8.5290000e-03, -5.3939996e-03]], dtype=float32)
+    pyvista_ndarray([[ 7.2189998e-03,  7.6569999e-03,  3.8799997e-03, ...,
+                      -7.3850001e-03,  1.0060001e-03, -2.1000043e-05],
+                     [ 4.2885002e-03,  9.3000010e-04, -6.5520001e-03, ...,
+                      -6.1399997e-03,  3.6770001e-03,  1.1730000e-02],
+                     [ 5.4014996e-03,  1.2539998e-03, -4.6510003e-03, ...,
+                       3.4900010e-04,  8.0140000e-03,  8.1439996e-03],
+                     ...,
+                     [-6.3999998e-04, -2.6340000e-03,  6.1740000e-03, ...,
+                      -4.3205000e-03, -1.2229999e-03, -1.8960000e-03],
+                     [-1.5900000e-03, -3.4460002e-03,  4.1279998e-03, ...,
+                      -2.9000000e-03, -5.9960000e-03, -5.8140000e-03],
+                     [-9.1199996e-04, -4.0670000e-03, -1.5819999e-03, ...,
+                      -2.4759998e-03, -8.5290000e-03, -5.3939996e-03]],
+                    dtype=float32)
 
 
 
@@ -152,21 +151,21 @@ could make a dictionary of NumPy arrays of the gradients like:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    {'du/dx': array([ 0.007219 ,  0.0042885,  0.0054015, ..., -0.00064  , -0.00159  ,
-           -0.000912 ], dtype=float32), 'du/dy': array([ 0.007657,  0.00093 ,  0.001254, ..., -0.002634, -0.003446,
-           -0.004067], dtype=float32), 'du/dz': array([ 0.00388 , -0.006552, -0.004651, ...,  0.006174,  0.004128,
-           -0.001582], dtype=float32), 'dv/dx': array([-7.5999997e-04, -1.0585000e-03, -2.9600000e-03, ...,
-           -1.9554999e-03,  9.9999888e-06,  2.6600000e-03], dtype=float32), 'dv/dy': array([ 0.000226, -0.00503 , -0.003388, ..., -0.0059  , -0.008274,
-           -0.000512], dtype=float32), 'dv/dz': array([-0.006821, -0.000382,  0.006909, ..., -0.001991, -0.003061,
-           -0.00189 ], dtype=float32), 'dw/dx': array([-0.007385 , -0.00614  ,  0.000349 , ..., -0.0043205, -0.0029   ,
-           -0.002476 ], dtype=float32), 'dw/dy': array([ 0.001006,  0.003677,  0.008014, ..., -0.001223, -0.005996,
-           -0.008529], dtype=float32), 'dw/dz': array([-2.1000043e-05,  1.1730000e-02,  8.1439996e-03, ...,
-           -1.8960000e-03, -5.8140000e-03, -5.3939996e-03], dtype=float32)}
+    {'du/dx': pyvista_ndarray([ 0.007219 ,  0.0042885,  0.0054015, ..., -0.00064  ,
+                     -0.00159  , -0.000912 ], dtype=float32), 'du/dy': pyvista_ndarray([ 0.007657,  0.00093 ,  0.001254, ..., -0.002634,
+                     -0.003446, -0.004067], dtype=float32), 'du/dz': pyvista_ndarray([ 0.00388 , -0.006552, -0.004651, ...,  0.006174,
+                      0.004128, -0.001582], dtype=float32), 'dv/dx': pyvista_ndarray([-7.5999997e-04, -1.0585000e-03, -2.9600000e-03, ...,
+                     -1.9554999e-03,  9.9999888e-06,  2.6600000e-03],
+                    dtype=float32), 'dv/dy': pyvista_ndarray([ 0.000226, -0.00503 , -0.003388, ..., -0.0059  ,
+                     -0.008274, -0.000512], dtype=float32), 'dv/dz': pyvista_ndarray([-0.006821, -0.000382,  0.006909, ..., -0.001991,
+                     -0.003061, -0.00189 ], dtype=float32), 'dw/dx': pyvista_ndarray([-0.007385 , -0.00614  ,  0.000349 , ..., -0.0043205,
+                     -0.0029   , -0.002476 ], dtype=float32), 'dw/dy': pyvista_ndarray([ 0.001006,  0.003677,  0.008014, ..., -0.001223,
+                     -0.005996, -0.008529], dtype=float32), 'dw/dz': pyvista_ndarray([-2.1000043e-05,  1.1730000e-02,  8.1439996e-03, ...,
+                     -1.8960000e-03, -5.8140000e-03, -5.3939996e-03],
+                    dtype=float32)}
 
 
 
@@ -206,7 +205,7 @@ by:
     </td><td>
     <table>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td>scalars</td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
+    <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
     <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
     <tr><td>gradient</td><td>Points</td><td>float32</td><td>9</td><td>-1.585e+01</td><td>1.536e+01</td></tr>
     <tr><td>du/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.293e+00</td><td>8.336e+00</td></tr>
@@ -217,7 +216,7 @@ by:
     <tr><td>dv/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.131e+01</td><td>7.459e+00</td></tr>
     <tr><td>dw/dx</td><td>Points</td><td>float32</td><td>1</td><td>-8.738e+00</td><td>1.212e+01</td></tr>
     <tr><td>dw/dy</td><td>Points</td><td>float32</td><td>1</td><td>-8.734e+00</td><td>8.740e+00</td></tr>
-    <tr><td><b>dw/dz</b></td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
+    <tr><td>dw/dz</td><td>Points</td><td>float32</td><td>1</td><td>-1.124e+01</td><td>8.728e+00</td></tr>
     </table>
 
     </td></tr> </table>
@@ -258,7 +257,7 @@ by:
 
 .. GENERATED FROM PYTHON SOURCE LINES 77-79
 
-And there you have it, the gradients for a vector field! We could also do
+And there you have it, the gradients for a vector field. We could also do
 this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. GENERATED FROM PYTHON SOURCE LINES 79-84
@@ -276,12 +275,10 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    {'du/dx': array([-7. , -7. , -4. , ..., -0.5, -1.5, -2. ], dtype=float32), 'du/dy': array([ 0.,  5., 12., ..., -3., -1., -3.], dtype=float32), 'du/dz': array([-13.,  -8.,  -3., ...,   4.,   4.,   1.], dtype=float32)}
+    {'du/dx': pyvista_ndarray([-7. , -7. , -4. , ..., -0.5, -1.5, -2. ], dtype=float32), 'du/dy': pyvista_ndarray([ 0.,  5., 12., ..., -3., -1., -3.], dtype=float32), 'du/dz': pyvista_ndarray([-13.,  -8.,  -3., ...,   4.,   4.,   1.], dtype=float32)}
 
 
 
@@ -320,28 +317,25 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.083 seconds)
+   **Total running time of the script:** ( 0 minutes  3.198 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: gradients.py <gradients.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: gradients.py <gradients.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: gradients.ipynb <gradients.ipynb>`
+      :download:`Download Jupyter notebook: gradients.ipynb <gradients.ipynb>`
 
 
 .. only:: html

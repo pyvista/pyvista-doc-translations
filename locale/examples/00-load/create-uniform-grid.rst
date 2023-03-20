@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-uniform-grid.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-uniform-grid.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -71,9 +71,9 @@ This is spatially referenced such that the grid is 20 by 5 by 10
     grid.spacing = (1, 5, 2)  # These are the cell sizes along each axis
 
     # Add the data values to the cell data
-    grid.cell_data["values"] = values.flatten(order="F")  # Flatten the array!
+    grid.cell_data["values"] = values.flatten(order="F")  # Flatten the array
 
-    # Now plot the grid!
+    # Now plot the grid
     grid.plot(show_edges=True)
 
 
@@ -118,9 +118,9 @@ setting the grid dimensions upon initialization.
     grid.spacing = (1, 5, 2)  # These are the cell sizes along each axis
 
     # Add the data values to the cell data
-    grid.point_data["values"] = values.flatten(order="F")  # Flatten the array!
+    grid.point_data["values"] = values.flatten(order="F")  # Flatten the array
 
-    # Now plot the grid!
+    # Now plot the grid
     grid.plot(show_edges=True)
 
 
@@ -137,28 +137,25 @@ setting the grid dimensions upon initialization.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.306 seconds)
+   **Total running time of the script:** ( 0 minutes  1.057 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-uniform-grid.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-uniform-grid.py <create-uniform-grid.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-uniform-grid.py <create-uniform-grid.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-uniform-grid.ipynb <create-uniform-grid.ipynb>`
+      :download:`Download Jupyter notebook: create-uniform-grid.ipynb <create-uniform-grid.ipynb>`
 
 
 .. only:: html

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_sphere_eversion.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_sphere_eversion.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -37,7 +37,7 @@ overall process visible in the animation: first the sphere is corrugated and
 stretched out a bit to allow some legroom for the smooth transformation, then
 the lobes are twisted around through each other, and the process is reversed in
 order to unfold the sphere. It's not obvious that the transformation is truly
-smooth; this was proved in the paper by Bednorz and Bednorz!
+smooth; this was proved in the paper by Bednorz and Bednorz.
 
 .. GENERATED FROM PYTHON SOURCE LINES 24-38
 
@@ -331,7 +331,7 @@ sphere are visible.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  28.293 seconds)
+   **Total running time of the script:** ( 0 minutes  29.800 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_sphere_eversion.py:
@@ -339,6 +339,8 @@ sphere are visible.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

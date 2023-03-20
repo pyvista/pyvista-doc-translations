@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-surface-draped.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-surface-draped.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -93,7 +93,7 @@ profile in 2D with the coordinates associated to the top of each column in your
 
 .. GENERATED FROM PYTHON SOURCE LINES 51-54
 
-View the the path of the GPR profile from a top-down perspective.
+View the path of the GPR profile from a top-down perspective.
 Since we have the full coordinates (XY and Z), we can create a structured
 mesh "draping" down from those coordinates to hold the GPR image data.
 
@@ -117,8 +117,6 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -132,7 +130,7 @@ mesh "draping" down from those coordinates to hold the GPR image data.
 
 
     assert len(path) in data.shape, "Make sure coordinates are present for every trace."
-    # If not, you'll need to interpolate the path!
+    # If not, you'll need to interpolate the path
 
     # Grab the number of samples (in Z dir) and number of traces/soundings
     nsamples, ntraces = data.shape  # Might be opposite for your data, pay attention here
@@ -166,7 +164,7 @@ Make a StructuredGrid from the structured points
     grid.points = points
     grid.dimensions = nsamples, ntraces, 1
 
-    # Add the data array - note the ordering!
+    # Add the data array - note the ordering
     grid["values"] = data.ravel(order="F")
 
 
@@ -178,8 +176,8 @@ Make a StructuredGrid from the structured points
 
 .. GENERATED FROM PYTHON SOURCE LINES 87-89
 
-And now we can plot it! or process or do anything, because it is a PyVista
-mesh and the possibilities are endless with PyVista
+And now we can plot it, process it, or do anything, because it is a PyVista
+mesh and the possibilities are endless with PyVista.
 
 .. GENERATED FROM PYTHON SOURCE LINES 89-100
 
@@ -211,28 +209,25 @@ mesh and the possibilities are endless with PyVista
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.963 seconds)
+   **Total running time of the script:** ( 0 minutes  10.066 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-surface-draped.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-surface-draped.py <create-surface-draped.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-surface-draped.py <create-surface-draped.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-surface-draped.ipynb <create-surface-draped.ipynb>`
+      :download:`Download Jupyter notebook: create-surface-draped.ipynb <create-surface-draped.ipynb>`
 
 
 .. only:: html

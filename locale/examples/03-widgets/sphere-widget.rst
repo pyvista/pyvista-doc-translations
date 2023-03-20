@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_sphere-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_sphere-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -245,7 +245,7 @@ a surface and interpolate between them with some boundary conditions
     # Add axes grid
     p.show_grid()
 
-    # Show it!
+    # Show it
     p.show()
 
 
@@ -269,28 +269,25 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.942 seconds)
+   **Total running time of the script:** ( 0 minutes  1.039 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: sphere-widget.py <sphere-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: sphere-widget.py <sphere-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: sphere-widget.ipynb <sphere-widget.ipynb>`
+      :download:`Download Jupyter notebook: sphere-widget.ipynb <sphere-widget.ipynb>`
 
 
 .. only:: html
