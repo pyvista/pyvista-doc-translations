@@ -62,7 +62,7 @@ jobs:
         rm ./locale/examples/*/*.py
         mv ./locale/examples ./pyvista/doc/source
         cd pyvista
-        make -C doc/source html SPHINXOPTS="-w build_errors.txt -N"
+        make -C doc html SPHINXOPTS="-w build_errors.txt -N"
         cd ../
         sh ./locale/update.sh
         ls ./pyvista/doc/source/examples
