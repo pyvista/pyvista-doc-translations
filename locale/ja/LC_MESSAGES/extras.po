@@ -556,32 +556,40 @@ msgid ""
 "PyVista follows the `Google Developer Documentation Style "
 "<https://developers.google.com/style>`_ with the following exceptions:"
 msgstr ""
+"PyVistaは，以下の例外を除き， `Google Developer Documentation Style "
+"<https://developers.google.com/style>`_ に従っています．"
 
 #: ../../pyvista/CONTRIBUTING.rst:206
 msgid ""
 "Allow first person pronouns. These pronouns (for example, \"We\") refer to "
 "\"PyVista Developers\", which can be anyone who contributes to PyVista."
 msgstr ""
+"一人称の代名詞を許可します．これらの代名詞（例えば \"We\"）は \"PyVista Developers\" "
+"を指し，PyVistaに貢献するすべての人を指すことができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:208
 msgid "Future tense is permitted."
-msgstr ""
+msgstr "未来形も可．"
 
 #: ../../pyvista/CONTRIBUTING.rst:210
 msgid ""
 "These rules are enforced for all text files (for example, ``*.md``, "
 "``*.rst``) and partially enforced for Python source files."
 msgstr ""
+"これらのルールはすべてのテキストファイル（例えば ``*.md``, ``*.rst`` "
+"）に適用され，Pythonのソースファイルには部分的に適用されます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:213
 msgid ""
 "These rules are enforced through the use of `Vale <https://vale.sh/>`_ via "
 "our GitHub Actions, and you can run Vale locally with:"
 msgstr ""
+"これらのルールは，GitHub Actionsを介して `Vale <https://vale.sh/>`_ "
+"を使用することで強制され，Valeをローカルで実行することができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:221
 msgid "If you are on Linux or macOS, you can run:"
-msgstr ""
+msgstr "LinuxやmacOSであれば，実行可能です:"
 
 #: ../../pyvista/CONTRIBUTING.rst:229
 msgid "Docstrings"
@@ -818,7 +826,7 @@ msgstr "すべてをインストールしたら，さまざまなテストスイ
 
 #: ../../pyvista/CONTRIBUTING.rst:417
 msgid "Using Gitpod Workspace"
-msgstr ""
+msgstr "Gitpodワークスペースの使用"
 
 #: ../../pyvista/CONTRIBUTING.rst:419
 msgid ""
@@ -840,6 +848,10 @@ msgid ""
 "Hit the ``Go Live`` button and browse to ``doc/_build/html``. The workspace "
 "is also prebuilt to support pre-commit checks."
 msgstr ""
+"ワークスペースは，ブラウザを介したvnc機能により，インタラクティブなプロッティングが可能です． "
+"また，ワークスペースにはライブビューアーを備えたドキュメントがあらかじめ用意されています． ``Go Live`` ボタンを押して， "
+"``doc/_build/html`` "
+"をブラウズしてください．また，ワークスペースはプリコミットチェックをサポートするようにあらかじめ構築されています．"
 
 #: ../../pyvista/CONTRIBUTING.rst:431
 msgid ""
@@ -849,6 +861,9 @@ msgid ""
 "new workspace. It is safe to stop, for example ``Ctrl-C``, the documentation"
 " part of the build if unneeded."
 msgstr ""
+"``pyvista/pyvista`` "
+"リポジトリから起動したワークスペースは，多くの場合，依存関係がインストールされたビルド済みの環境を持っています．フォークから起動したワークスペースは，ビルド済みのイメージがない場合があり，新しいワークスペースを起動するときにビルドを開始します．"
+" 必要なければ， ``Ctrl-C`` などで，ビルドのドキュメント部分を停止しておくと安全です．"
 
 #: ../../pyvista/CONTRIBUTING.rst:438
 msgid "Unit Testing"
@@ -960,6 +975,7 @@ msgid ""
 "with our plotting without actually looking at the plots (like the docs at "
 "dev.pyvista.com)"
 msgstr ""
+"各プラットフォームと環境では，Linuxと比較してわずかに異なるイメージをレンダリングするため(これらの画像は)，すべてのOSでこれらのテストを実行するのは最適ではありません．プロットを実際に見ることなく，プロットによって何か根本的な変化があったかどうかを知る必要があります(dev.pyvista.comのドキュメントのように)．"
 
 #: ../../pyvista/CONTRIBUTING.rst:513
 msgid ""
@@ -1013,6 +1029,9 @@ msgid ""
 "``Plotter.show`` will cache images automatically. To skip image caching, the"
 " ``verify_image_cache`` fixture can be utilized:"
 msgstr ""
+"現在のところ，画像は ``tests/plotting/test_plotting.py`` にあるテストからのみキャッシュされます． デフォルトでは，"
+" ``Plotter.show`` を使用するテストは，自動的に画像をキャッシュします． 画像のキャッシュをスキップするには， "
+"``verify_image_cache`` フィクスチャを使用します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:558
 msgid ""
@@ -1029,6 +1048,9 @@ msgid ""
 "`pytest-pyvista`_ to write all new generated images to a local directory "
 "using the ``--generated_image_dir`` flag."
 msgstr ""
+"ユニットテスト中に，画像のリグレッションに失敗して，ローカルに生成された画像をリグレッションテストスイートと比較したい場合， `pytest-"
+"pyvista`_ が ``--generated_image_dir`` "
+"フラグを使って新しい生成画像をすべてローカルディレクトリに書き込めるようにします．"
 
 #: ../../pyvista/CONTRIBUTING.rst:573
 msgid ""
@@ -1041,7 +1063,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:581
 msgid "See `pytest-pyvista`_ for more details."
-msgstr ""
+msgstr "詳しくは `pytest-pyvista`_ を参照してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:584
 msgid "Building the Documentation"
@@ -1071,7 +1093,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:606
 msgid "Clearing the Local Build"
-msgstr ""
+msgstr "ローカルビルドのクリア"
 
 #: ../../pyvista/CONTRIBUTING.rst:608
 msgid "If you need to clear the locally built documentation, run:"
@@ -1134,6 +1156,8 @@ msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings. Full gallery examples should be placed in ``examples``."
 msgstr ""
+"一般的な使い方やAPIの説明は ``doc/api`` と docstrings に記述してください． 完全なギャラリーのサンプルは "
+"``examples`` に置いてください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:652
 msgid "Adding a New Example"
@@ -1149,6 +1173,10 @@ msgid ""
 "scripts, are contained in the ``examples`` directory at the root of this "
 "repository."
 msgstr ""
+"PyVistaのサンプルには2つの形式があります．個々のメソッドの機能を示す基本的なコードスニペットと，1つまたは複数のコンセプトを表示する完全なギャラリーの例です．"
+" 小さなコードサンプルやスニペットは ``doc/api`` "
+"ディレクトリやドキュメント文字列に含まれています．一方，完全なギャラリーサンプルは，ダウンロード可能なスクリプトとして実行するために，このリポジトリのルートにある"
+" ``examples`` ディレクトリに含まれています．"
 
 #: ../../pyvista/CONTRIBUTING.rst:660
 msgid ""
@@ -1161,6 +1189,13 @@ msgid ""
 "gallery extension, follow coding guidelines as established by `Sphinx-"
 "Gallery <https://sphinx-gallery.github.io/stable/index.html>`_."
 msgstr ""
+"本格的なスタンドアロンサンプルを追加するには，`PyVista Repository "
+"<https://github.com/pyvista/pyvista/>`_ のルートディレクトリにある ``examples`` "
+"ディレクトリに，該当するサブディレクトリのいずれかにあなたのサンプルを追加してください． "
+"もし，既存のディレクトリがあなたのサンプルのカテゴリと一致しない場合は，新しいディレクトリを作成し，新しいカテゴリを記述した "
+"``README.txt`` を記述してください． さらに，これらのサンプルはsphinx gallery 拡張を使って作成されていますので， "
+"`Sphinx-Gallery <https://sphinx-gallery.github.io/stable/index.html>`_ "
+"が定めるコーディングガイドラインに従ってください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:669
 msgid "For more details see :ref:`add_example_example`."
@@ -1168,7 +1203,7 @@ msgstr "詳しくは :ref:`add_example_example` を参照してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:673
 msgid "Add a New Example File"
-msgstr ""
+msgstr "新しいサンプルファイルの追加"
 
 #: ../../pyvista/CONTRIBUTING.rst:674
 msgid ""
@@ -1261,6 +1296,12 @@ msgid ""
 "past versions of ``pyvista`` without having to worry about untested "
 "features."
 msgstr ""
+"マイナーリリース(例えば ``release/0.24`` )をベースにした ``release/`` ブランチがいくつかあり，そこには PyPI/ "
+"にも反映される安定版のコードベースが含まれています． ``fix/`` "
+"ブランチの修正パッチは，mainブランチとこれらのブランチの両方にマージする必要があります．新しいパッチリリースを作成する必要がある場合，これらのリリースブランチの"
+" ``pyvista/_version.py`` が更新され，セマンティックバージョン(例えば ``v0.24.1`` "
+")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
+"のホットフィックスを迅速にプッシュすることができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:737
 msgid ""
@@ -1273,6 +1314,11 @@ msgid ""
 "with this release. Older release branches should not be deleted so they can "
 "be patched as needed."
 msgstr ""
+"マイナーリリース候補が準備できたら， ``main`` から新しい ``release`` ブランチが作成され，次のマイナーバージョン(例えば  "
+"``release/0.25`` "
+")がインクリメントされ，徹底的にテストされます．安定していると判断された場合，リリースブランチにはバージョン(この場合の ``v0.25.0`` "
+")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
+"で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:748
 msgid "Minor Release Steps"
@@ -1292,6 +1338,8 @@ msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (for example ``release/0.25``)."
 msgstr ""
+"``main`` ブランチから ``release/MAJOR.MINOR`` "
+"という名前の新しいブランチを作成します(例: ``release/0.25`` )．"
 
 #: ../../pyvista/CONTRIBUTING.rst:757
 msgid ""
@@ -1322,6 +1370,8 @@ msgid ""
 "new PR for this release that merges it to main. Development to main should "
 "be limited at this point while effort is focused on the release."
 msgstr ""
+"``pyvista/_version.py`` の開発バージョン番号を更新し，コミットします(例: ``0, 26, "
+"'dev0'``)．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
 #: ../../pyvista/CONTRIBUTING.rst:780
 msgid ""
@@ -1379,7 +1429,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:814
 msgid "Announce the new release in the PyVista Slack workspace and celebrate."
-msgstr ""
+msgstr "PyVista Slackワークスペースで新リリースを発表し，お祝いしましょう．"
 
 #: ../../pyvista/CONTRIBUTING.rst:818
 msgid "Patch Release Steps"
@@ -1396,6 +1446,8 @@ msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (for example ``release/0.25``)."
 msgstr ""
+"必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例 "
+"``release/0.25``)です．"
 
 #: ../../pyvista/CONTRIBUTING.rst:826
 msgid ""
@@ -1404,6 +1456,9 @@ msgid ""
 "This gives the ``pyvista`` community a chance to validate and approve the "
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
+"次のパッチ増分で ``pyvista/_version.py`` を更新し(例: ``v0.25.1`` "
+")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
+"コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
 #: ../../pyvista/CONTRIBUTING.rst:832
 msgid ""
@@ -1423,7 +1478,7 @@ msgstr "必要に応じて，リリースノートページを作成します．
 
 #: ../../pyvista/doc/source/extras/docker.rst:1
 msgid "!"
-msgstr ""
+msgstr "!"
 
 #: ../../pyvista/doc/source/extras/docker.rst:4
 msgid "PyVista within a Docker Container"
@@ -1435,12 +1490,14 @@ msgid ""
 "launch a local docker container, install ``docker``, then pull and run the "
 "image with:"
 msgstr ""
+"jupyterlabでは，Dockerコンテナから ``pyvista`` を使用することができます． ローカルのDockerコンテナを起動するには， "
+"``docker`` をインストールし，イメージをpullして実行する．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:13
 msgid ""
 "Finally, open the link that shows up from the terminal output and start "
 "playing around with pyvista in jupyterlab. For example:"
-msgstr ""
+msgstr "最後に，端末出力に表示されるリンクを開き，jupyterlabのpyvistaを試してみましょう．たとえば，次のようになります．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:27
 msgid ""
@@ -1467,13 +1524,13 @@ msgstr ""
 
 #: ../../pyvista/doc/source/extras/docker.rst:39
 msgid "Create your own Docker Container with PyVista"
-msgstr ""
+msgstr "PyVista で独自のDockerコンテナを作成します"
 
 #: ../../pyvista/doc/source/extras/docker.rst:40
 msgid ""
 "Clone PyVista and cd into this directory to create your own customized "
 "docker image."
-msgstr ""
+msgstr "PyVistaをこのディレクトリにクローンしcdでこのディレクトリに入り，独自のカスタマイズされたDockerイメージを作成します．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:50
 msgid ""
@@ -1484,6 +1541,11 @@ msgid ""
 "customized vtk wheel onto your docker image by modifying the docker image at"
 " ``pyvista/docker/jupyter.Dockerfile`` with:"
 msgstr ""
+"jupyterlabでレンタルする際にオフスクリーンGPUをサポートさせたい場合は， :ref:`ref_building_vtk` "
+"のEGLでのビルドに関する注意を参照するか， `Release 0.27.0 "
+"<https://github.com/pyvista/pyvista/releases/tag/0.27.0>`_ "
+"のカスタムのプリビルドwheelを使用してください． ``pyvista/docker/jupyter.Dockerfile`` "
+"のDockerイメージを次のように変更して，カスタマイズしたvtk wheelをdockerイメージにインストールします．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:62
 msgid ""
@@ -1494,12 +1556,15 @@ msgid ""
 "Since you will be using the underlying kernel module, there's no reason to "
 "build it on the container (and trying will only result in an error)."
 msgstr ""
+"さらに，ホストマシンで実行されている同じバージョンのDockerイメージにGPUドライバをインストールする必要があります．例えば，Azure "
+"Kubernetes Serviceを実行していて，Kubernetesクラスタ上のGPUノードが ``450.51.06`` "
+"を実行している場合，同じバージョンをイメージにインストールする必要があります．基礎となるカーネル・モジュールを使用することになるので，コンテナー上にビルドする理由はありません(試行してもエラーになるだけです．)．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:76
 msgid ""
 "To verify that you're rendering on a GPU, first check the output of "
 "``nvidia-smi``. You should get something like:"
-msgstr ""
+msgstr "GPUでレンダリングしているかどうかを確認するには，まず ``nvidia-smi`` の出力をチェックします．"
 
 #: ../../pyvista/doc/source/extras/docker.rst:95
 msgid ""
@@ -1543,6 +1608,9 @@ msgid ""
 "at `Flask Example "
 "<https://github.com/pyvista/pyvista/tree/main/examples_flask>`__."
 msgstr ""
+"``pyvista`` を使用して，静的と動的の両方のプロットを表示するflaskアプリケーションを作成できます．以下の例と `Flask "
+"Example <https://github.com/pyvista/pyvista/tree/main/examples_flask>`__ "
+"のソースを参照してください．"
 
 #: ../../pyvista/doc/source/extras/flask.rst:11
 msgid "Dynamic Example"
@@ -1600,6 +1668,9 @@ msgid ""
 "`pyinstaller`_ to be used within a standalone application. You could even "
 "make a basic web application using `flask`_."
 msgstr ""
+"このセクションには，PythonコンソールまたはIDEからPyVistaを実行するだけでなく，PyVistaの使用方法を拡張するためのリソースが含まれています．例えば，PyVistaをDockerイメージにパッケージ化し，EGLでVTKをビルドして，リモートサーバ上での豊富なヘッドレスプロットを可能にすることができます．"
+" `pyinstaller`_ を使用してPyVistaをパッケージ化し，スタンドアロンアプリケーション内で使用することもできます． `flask`_ "
+"を使って基本的なWebアプリケーションを作成することもできます．"
 
 #: ../../pyvista/doc/source/extras/index.rst:11
 msgid ""
@@ -1883,7 +1954,7 @@ msgstr "これらのオプションは， :file:`conf.py` で同名のグロー�
 
 #: ../../pyvista/doc/source/extras/pyinstaller.rst:4
 msgid "Freezing PyVista with PyInstaller"
-msgstr ""
+msgstr "PyInstallerを使用したPyVistaのフリーズ"
 
 #: ../../pyvista/doc/source/extras/pyinstaller.rst:5
 msgid ""
@@ -1918,13 +1989,15 @@ msgstr "そこから， ``pyvista`` を使用してアプリケーションを�
 
 #: ../../pyvista/doc/source/extras/pytest_plugin.rst:4
 msgid "PyVista pytest Plugin"
-msgstr ""
+msgstr "PyVista pytest プラグイン"
 
 #: ../../pyvista/doc/source/extras/pytest_plugin.rst:6
 msgid ""
 "PyVista provides a pytest plugin `pytest-pyvista "
 "<https://pytest.pyvista.org/>`_ for image regression testing."
 msgstr ""
+"PyVistaは，画像の回帰テストを行うためのpytestプラグイン `pytest-pyvista "
+"<https://pytest.pyvista.org/>`_ を提供しています．"
 
 #: ../../pyvista/doc/source/extras/vtk_data.rst:3
 msgid "Using Local VTK-Data"
