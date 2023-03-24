@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_color_cycler.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_color_cycler.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -25,16 +25,13 @@ Color Cycling
 
 Cycle through colors when sequentially adding meshes to a plotter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-16
+.. GENERATED FROM PYTHON SOURCE LINES 10-13
 
 Many plotting libraries like Matplotlib cycle through a predefined list of
 colors to colorize the data being added to the graphic. PyVista supports
 this in much the same way as Matplotlib.
 
-.. note::
-   This requires matplotlib (or at least cycler) to be installed.
-
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+.. GENERATED FROM PYTHON SOURCE LINES 13-16
 
 .. code-block:: default
 
@@ -48,12 +45,12 @@ this in much the same way as Matplotlib.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-23
+.. GENERATED FROM PYTHON SOURCE LINES 18-20
 
 Turn on color cycling in PyVista's theme and set it to use the default
 cycler.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-25
+.. GENERATED FROM PYTHON SOURCE LINES 20-22
 
 .. code-block:: default
 
@@ -66,11 +63,11 @@ cycler.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-27
+.. GENERATED FROM PYTHON SOURCE LINES 23-24
 
 List the available colors in the cycler
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-29
+.. GENERATED FROM PYTHON SOURCE LINES 24-26
 
 .. code-block:: default
 
@@ -89,12 +86,12 @@ List the available colors in the cycler
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 27-29
 
 Create a plotter and add data to the scene. You'll notice that each
 ``add_mesh`` call iterates over the colors in ``pv.global_theme.color_cycler``
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-39
+.. GENERATED FROM PYTHON SOURCE LINES 29-36
 
 .. code-block:: default
 
@@ -117,11 +114,11 @@ Create a plotter and add data to the scene. You'll notice that each
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-41
+.. GENERATED FROM PYTHON SOURCE LINES 37-38
 
 Reset the theme to not use a cycler and instead set on individual plotters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 38-40
 
 .. code-block:: default
 
@@ -134,13 +131,13 @@ Reset the theme to not use a cycler and instead set on individual plotters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 41-44
 
 If you do not want to set a global color cycler but instead just want to
 use a cycler for a single plotter, you can set this on with
 :func:`set_color_cycler() <pyvista.Plotter.set_color_cycler>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-58
+.. GENERATED FROM PYTHON SOURCE LINES 44-55
 
 .. code-block:: default
 
@@ -167,13 +164,13 @@ use a cycler for a single plotter, you can set this on with
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-62
+.. GENERATED FROM PYTHON SOURCE LINES 56-59
 
 Further, you can control this on a per-renderer basis by calling
 :func:`set_color_cycler() <pyvista.Renderer.set_color_cycler>` on the active
 ``renderer``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-83
+.. GENERATED FROM PYTHON SOURCE LINES 59-80
 
 .. code-block:: default
 
@@ -210,7 +207,7 @@ Further, you can control this on a per-renderer basis by calling
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-89
+.. GENERATED FROM PYTHON SOURCE LINES 81-86
 
 You can also change the colors of actors after they are added to the scene.
 
@@ -218,7 +215,7 @@ ProTip: you could place the for-loop below in an event callback for a key
 event to cycle through the colors on-demand. Or better yet, have your cycler
 randomly select colors.
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-104
+.. GENERATED FROM PYTHON SOURCE LINES 86-101
 
 .. code-block:: default
 
@@ -252,7 +249,7 @@ randomly select colors.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.865 seconds)
+   **Total running time of the script:** ( 0 minutes  1.094 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_color_cycler.py:
@@ -260,6 +257,8 @@ randomly select colors.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
