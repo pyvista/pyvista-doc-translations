@@ -32,7 +32,7 @@ jobs:
       shell: bash
     - name: cache pip
       id: cache-pip
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: |
           ~/.cache/pip
