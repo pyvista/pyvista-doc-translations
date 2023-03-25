@@ -52,11 +52,6 @@ jobs:
       run: |
         git submodule init
         git submodule update
-        sudo apt-get update
-        sudo apt-get install -y --no-install-recommends python3-setuptools
-        sudo apt-get install -y --no-install-recommends libgl1-mesa-dev xvfb ffmpeg
-        sudo apt-get install -y --no-install-recommends libgl1-mesa-glx
-        sudo apt-get install -y --no-install-recommends python3-tk pandoc
         pip install -U pip setuptools wheel
         pip install -r ./requirements.txt
     - name: Install Transifex CLI
