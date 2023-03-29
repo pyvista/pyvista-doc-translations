@@ -62,7 +62,16 @@ jobs:
         rm -Rf ./locale/images
         mv ./pyvista/doc/source/images ./locale
     - name: After success
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-        commit_message: "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_number }}"
+      if: contains(github.event.head_commit.message, '[ci skip]') == false && contains(github.ref, 'main')
+      env:
+        JOB_ID: ${{ steps.jobs.outputs.job_id }}
+        HTML_URL: ${{ steps.jobs.outputs.html_url }}
+      run: |
+        git config --global user.email $GITHUB_REPOSITORY
+        git config --global user.name $GITHUB_REPOSITORY
+        git add .
+        git commit --allow-empty -m "[ci skip] $JOB_ID
+        $HTML_URL"
+        git remote -v
+        git remote add github git@github.com:$GITHUB_REPOSITORY.git
+        git push github main
