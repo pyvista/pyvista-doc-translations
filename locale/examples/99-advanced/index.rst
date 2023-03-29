@@ -102,6 +102,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="The following example demonstrates how PyVista can be used to plot a magnetic field.">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_magnetic-fields_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_magnetic-fields.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Plot a Magnetic Field</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Plot OpenFOAM data">
 
 .. only:: html
@@ -249,6 +266,7 @@ developers.
    /examples/99-advanced/atomic-orbitals
    /examples/99-advanced/extending-pyvista
    /examples/99-advanced/fea-hertzian-contact-pressure
+   /examples/99-advanced/magnetic-fields
    /examples/99-advanced/openfoam-example
    /examples/99-advanced/osmnx-example
    /examples/99-advanced/planets

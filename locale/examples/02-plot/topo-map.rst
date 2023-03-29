@@ -27,43 +27,84 @@ This is very similar to the :ref:`ref_texture_example` example except it is
 focused on plotting aerial imagery from a GeoTIFF on top of some topography
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-24
+.. GENERATED FROM PYTHON SOURCE LINES 12-19
 
 .. code-block:: default
 
 
+    import matplotlib as mpl
+    import matplotlib.pyplot as plt
+
     import pyvista as pv
     from pyvista import examples
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 21-22
+
+Start by loading the elevation data and a topographic map.
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-31
+
+.. code-block:: default
+
 
     # Load the elevation data as a surface
     elevation = examples.download_crater_topo().warp_by_scalar()
     # Load the topographic map from a GeoTiff
     topo_map = examples.download_crater_imagery()
+    topo_map = topo_map.flip_y()  # flip to align to our dataset
 
     elevation
 
-    import matplotlib as mpl
 
 
 
 
 
+.. raw:: html
 
+    <div class="output_subarea output_html rendered_html output_result">
+    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table>
+    <tr><th>StructuredGrid</th><th>Information</th></tr>
+    <tr><td>N Cells</td><td>1677401</td></tr>
+    <tr><td>N Points</td><td>1680000</td></tr>
+    <tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>
+    <tr><td>Y Bounds</td><td>5.640e+06, 5.658e+06</td></tr>
+    <tr><td>Z Bounds</td><td>7.339e+02, 2.787e+03</td></tr>
+    <tr><td>Dimensions</td><td>1400, 1200, 1</td></tr>
+    <tr><td>N Arrays</td><td>1</td></tr>
+    </table>
 
+    </td><td>
+    <table>
+    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
+    <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>
+    </table>
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-27
+    </td></tr> </table>
+    </div>
+    <br />
+    <br />
 
-Let's inspect the imagery that we just loaded
+.. GENERATED FROM PYTHON SOURCE LINES 32-33
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-33
+Let's inspect the imagery that we just loaded.
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-38
 
 .. code-block:: default
 
-    import matplotlib.pyplot as plt
 
     mpl.rcParams['figure.dpi'] = 500
-
     plt.imshow(topo_map.to_array())
+
 
 
 
@@ -79,18 +120,18 @@ Let's inspect the imagery that we just loaded
  .. code-block:: none
 
 
-    <matplotlib.image.AxesImage object at 0x7f391c2d9940>
+    <matplotlib.image.AxesImage object at 0x7fc519824ac0>
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 39-43
 
 Once you have a topography mesh loaded as a surface mesh
 (we use a :class:`pyvista.StructuredGrid` here) and an image loaded as a
-:class:`pyvista.Texture` object using the :func:`pyvista.read_texture`
-method, then you can map that imagery to the surface mesh as follows:
+:class:`pyvista.Texture` using :func:`pyvista.read_texture`,
+then you can map that imagery to the surface mesh as follows:
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-46
+.. GENERATED FROM PYTHON SOURCE LINES 43-51
 
 .. code-block:: default
 
@@ -133,11 +174,11 @@ method, then you can map that imagery to the surface mesh as follows:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-48
+.. GENERATED FROM PYTHON SOURCE LINES 52-53
 
 Now display it. Note that the imagery is aligned as we expect.
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-50
+.. GENERATED FROM PYTHON SOURCE LINES 53-55
 
 .. code-block:: default
 
@@ -155,11 +196,11 @@ Now display it. Note that the imagery is aligned as we expect.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-52
+.. GENERATED FROM PYTHON SOURCE LINES 56-57
 
 And here is a 3D perspective.
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-54
+.. GENERATED FROM PYTHON SOURCE LINES 57-59
 
 .. code-block:: default
 
@@ -177,12 +218,12 @@ And here is a 3D perspective.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-57
+.. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 We could also display the entire region by extracting the surrounding region
 and plotting the texture mapped local topography and the outside area
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-72
+.. GENERATED FROM PYTHON SOURCE LINES 62-77
 
 .. code-block:: default
 
@@ -216,7 +257,7 @@ and plotting the texture mapped local topography and the outside area
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.112 seconds)
+   **Total running time of the script:** ( 0 minutes  14.203 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_topo-map.py:

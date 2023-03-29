@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-platonic-solids.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-platonic-solids.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -48,11 +48,11 @@ We can either use the generic :func:`PlatonicSolid() <pyvista.PlatonicSolid>`
 and specify the different kinds of solids to generate, or we can use the thin
 wrappers:
 
-    * :func:`pyvista.Tetrahedron`
-    * :func:`pyvista.Octahedron`
-    * :func:`pyvista.Dodecahedron`
-    * :func:`pyvista.Icosahedron`
-    * :func:`pyvista.Cube` (implemented via a different filter)
+* :func:`pyvista.Tetrahedron`
+* :func:`pyvista.Octahedron`
+* :func:`pyvista.Dodecahedron`
+* :func:`pyvista.Icosahedron`
+* :func:`pyvista.Cube` (implemented via a different filter)
 
 Let's generate all the Platonic solids, along with the :func:`teapotahedron
 <pyvista.examples.downloads.download_teapot>`.
@@ -142,28 +142,25 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.402 seconds)
+   **Total running time of the script:** ( 0 minutes  1.096 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-platonic-solids.py <create-platonic-solids.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-platonic-solids.py <create-platonic-solids.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-platonic-solids.ipynb <create-platonic-solids.ipynb>`
+      :download:`Download Jupyter notebook: create-platonic-solids.ipynb <create-platonic-solids.ipynb>`
 
 
 .. only:: html
