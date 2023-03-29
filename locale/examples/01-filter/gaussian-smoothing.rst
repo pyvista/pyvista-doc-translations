@@ -54,7 +54,7 @@ See also :func:`pyvista.UniformGridFilters.gaussian_smooth`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 28-30
 
-Let's apply the gaussian smoothing with different values of standard
+Let's apply the Gaussian smoothing with different values of standard
 deviation.
 
 .. GENERATED FROM PYTHON SOURCE LINES 30-54
@@ -145,7 +145,7 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.766 seconds)
+   **Total running time of the script:** ( 0 minutes  6.678 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:
