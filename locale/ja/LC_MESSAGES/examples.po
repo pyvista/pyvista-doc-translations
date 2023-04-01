@@ -19454,6 +19454,9 @@ msgid ""
 "and :func:`add_volume() <pyvista.Plotter.add_volume>` to plot the strength "
 "of the magnetic field."
 msgstr ""
+"この例では、流線の生成に :func:`streamlines_from_source() "
+"<pyvista.PolyDataFilters.streamlines_from_source>` 、磁場の強さをプロットする "
+":func:`add_volume() <pyvista.Plotter.add_volume>` に依存します。"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:34
 msgid ""
@@ -19462,6 +19465,10 @@ msgid ""
 " example from the awesome `magpylib <https://github.com/magpylib/magpylib>`_"
 " library."
 msgstr ""
+"このデータセットは、素晴らしいライブラリ `magpylib <https://github.com/magpylib/magpylib>`_ の "
+"`Coil Field Lines "
+"<https://magpylib.readthedocs.io/en/latest/examples/examples_30_coil_field_lines.html>`_"
+" の例から作成しました。"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:59
 msgid "Download the DataSet"
@@ -19473,20 +19480,22 @@ msgid ""
 ":class:`pyvista.UniformGrid` with the magnetic field stored as the ``'B'`` "
 "array in ``point_data``."
 msgstr ""
+"まず、例のデータセットをダウンロードし、それが :class:`pyvista.UniformGrid` で、磁場は ``point_data`` の "
+"``'B'`` 配列として格納されていることを示します。"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:96
 msgid "Create Coils"
-msgstr ""
+msgstr "コイルを作る"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:97
 msgid ""
 "Create several hoops to represent the coil. This matches the geometry in the"
 " original example."
-msgstr ""
+msgstr "コイルを表現するためにいくつかのフープを作成します。これは、元の例のジオメトリと一致します。"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:127
 msgid "Compute and Plot Field Lines"
-msgstr ""
+msgstr "フィールドラインの計算とプロット"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:128
 msgid ""
@@ -19494,6 +19503,8 @@ msgid ""
 " direction of the magnetic force. For this, we can create a simple "
 ":func:`pyvista.Disc` and use that as the source of the streamlines."
 msgstr ""
+"次に、磁力の方向を表すために、コイルの中心からの流線を計算しましょう。これには、単純な :func:`pyvista.Disc` "
+"を作成し、それを流線のソースとして使用することができます。"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:172
 msgid "Plot the Magnet Field Strength"
