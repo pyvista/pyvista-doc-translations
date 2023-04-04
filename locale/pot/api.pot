@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-29 06:37+0000\n"
+"POT-Creation-Date: 2023-04-04 00:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1647,7 +1647,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_background_image:35
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_composite:290
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:27
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:47
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:54
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:343
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_point_labels:113
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_points:35
@@ -4118,6 +4118,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_composite:248
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_composite:257
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_light:23
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:36
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:86
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:139
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_mesh:263
@@ -20042,7 +20043,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/objects.rst:38:<autosummary>:1
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.core.texture.Texture:2
-msgid "Wrap vtk.Texture."
+msgid "Wrap vtkTexture."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.core.texture.Texture:4
@@ -20303,7 +20304,7 @@ msgid "0 for X and 1 for Y."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.core.texture.Texture.flip:6
-msgid "``flip`` is deprecated. Use :func:`Texture.flip_x` or :func:`Texture.flip_x` instead."
+msgid "``flip`` is deprecated. Use :func:`Texture.flip_x` or :func:`Texture.flip_y` instead."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.core.texture.Texture.flip_x:9
@@ -20328,7 +20329,7 @@ msgid "n\\_components"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.Texture.n_components:4
-msgid "In textures, 3 or 4 component are used for representing RGB and RGBA images."
+msgid "In textures, 3 or 4 components are used for representing RGB and RGBA images."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Texture.n_components.rst:3
@@ -20406,7 +20407,7 @@ msgid "Texture as a numpy array."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/texture.py:docstring of pyvista.core.texture.Texture.to_array:20
-msgid "The shape of this the array's first two dimensions will be swapped. For example, a ``(300, 200)`` image will return an array of ``(200, 300)``."
+msgid "The shape of the array's first two dimensions will be swapped. For example, a ``(300, 200)`` image will return an array of ``(200, 300)``."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Texture.to_grayscale.rst:2
@@ -33655,7 +33656,7 @@ msgstr ""
 msgid "Does not render faces on the bounding box that are culled. Options are ``'front'`` or ``'back'``."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:44
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:51
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.Plotter.add_cursor:36
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_bounding_box:59
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_floor:76
@@ -35120,7 +35121,7 @@ msgid "**lines** : :obj:`np.ndarray <numpy.ndarray>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:8
-msgid "Points representing line segments.  For example, two line segments would be represented as ``np.array([[0, 0, 0], [1, 0, 0], [1, 0, 0], [1, 1, 0]])``."
+msgid "Points representing line segments.  For example, two line segments would be represented as ``np.array([[0, 1, 0], [1, 0, 0], [1, 1, 0], [2, 0, 0]])``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:18
@@ -35157,8 +35158,24 @@ msgstr ""
 msgid "The name for the added actor so that it can be easily updated. If an actor of this name already exists in the rendering window, it will be replaced by the new actor."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:35
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:37
+msgid "**connected** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:33
+msgid "Treat ``lines`` as points representing a series of *connected* lines. For example, two connected line segments would be represented as ``np.array([[0, 0, 0], [1, 0, 0], [1, 1, 0]])``. If ``False``, an *even* number of points must be passed to ``lines``, and the lines need not be connected."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotting.py:docstring of pyvista.plotting.plotting.BasePlotter.add_lines:42
 msgid "Lines actor."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_lines.rst:3
+msgid "Plot two lines."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_lines.rst:27
+msgid "Adding lines with ``connected=True`` will add a series of connected line segments."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_mesh.rst:2
