@@ -2666,6 +2666,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example dataset was read using the pyvista.POpenFOAMReader. See openfoam_example for a ful...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_openfoam-tubes_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Plot CFD Data</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This was originally posted to pyvista/pyvista-support#486.">
 
 .. only:: html

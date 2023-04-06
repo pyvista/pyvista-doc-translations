@@ -6,10 +6,10 @@
 
 Computation times
 =================
-**00:10.073** total execution time for **examples_99-advanced** files:
+**00:05.961** total execution time for **examples_99-advanced** files:
 
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_magnetic-fields.py` (``magnetic-fields.py``)                             | 00:10.073 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py` (``openfoam-tubes.py``)                               | 00:05.961 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                                     | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
@@ -20,6 +20,8 @@ Computation times
 | :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-pyvista.py``)                         | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_fea-hertzian-contact-pressure.py` (``fea-hertzian-contact-pressure.py``) | 00:00.000 | 0.0 MB |
++--------------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_99-advanced_magnetic-fields.py` (``magnetic-fields.py``)                             | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                           | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
