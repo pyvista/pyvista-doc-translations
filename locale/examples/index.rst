@@ -2649,6 +2649,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example dataset was read using the pyvista.POpenFOAMReader and post processed according to...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_openfoam-cooling_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_openfoam-cooling.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Electronics Cooling CFD</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Plot OpenFOAM data">
 
 .. only:: html

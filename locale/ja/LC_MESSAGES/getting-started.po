@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 01:17+0000\n"
+"POT-Creation-Date: 2023-04-11 00:51+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
-"Language-Team: Japanese (https://www.transifex.com/tkoyama010/teams/112279/ja/)\n"
+"Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1063,7 +1063,7 @@ msgstr "`vtk`_ を用いたSTLファイルの読み込みと描画"
 msgid "Read an STL file using PyVista"
 msgstr "PyVistaによるSTLファイルの読み込み"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:74
+#: ../../pyvista/doc/source/getting-started/why.rst:76
 msgid ""
 "The PyVista data model and API allows you to rapidly load meshes and handles"
 " much of the \"grunt work\" of setting up plots, connecting classes and "
@@ -1073,7 +1073,7 @@ msgstr ""
 "PyVistaのデータモデルとAPIは，メッシュを素早く読み込むことができ，プロットの設定，クラスとパイプラインの接続，プロットウィンドウのクリーンアップなどの"
 " \"面倒な作業\" の多くを処理します． これは，VTKのクラスへの簡素化された，しかし機能的なインターフェイスを公開することで実現しています．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:79
+#: ../../pyvista/doc/source/getting-started/why.rst:81
 msgid ""
 "In :func:`pyvista.read`, PyVista automatically determines the correct file "
 "reader based on the file extension and returns a DataSet object. This "
@@ -1089,7 +1089,7 @@ msgstr ""
 "クラスで利用可能なすべてのメソッドが含まれており，メッシュのプロットを即座に生成することができます． "
 "ガベージコレクションは自動的に処理され，ユーザーがプロットウィンドウを閉じた後，レンダラーはクリーンアップされます．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:87
+#: ../../pyvista/doc/source/getting-started/why.rst:89
 msgid ""
 "For more details comparing the two APIs, please see "
 ":ref:`pyvista_data_model` and :ref:`vtk_to_pyvista_docs`."
@@ -1097,11 +1097,11 @@ msgstr ""
 "2つのAPIを比較した詳細については，  :ref:`pyvista_data_model` と :ref:`vtk_to_pyvista_docs` "
 "を参照してください．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:92
+#: ../../pyvista/doc/source/getting-started/why.rst:94
 msgid "PyVista API"
 msgstr "PyVista API"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:93
+#: ../../pyvista/doc/source/getting-started/why.rst:95
 msgid ""
 "For example, triangular surface meshes in VTK can be subdivided but every "
 "other object in VTK cannot. It then makes sense that a "
@@ -1111,7 +1111,7 @@ msgstr ""
 "たとえば，VTKの3角形のサーフェイスメッシュは分割できますが，VTKの他のすべてのオブジェクトは分割できません．この場合，既存の3角形表面メッシュに細分化された方法を追加することは理にかなっています．このように，"
 " :func:`pyvista.PolyDataFilters.subdivide` メソッドは次のように実行できます:"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:105
+#: ../../pyvista/doc/source/getting-started/why.rst:107
 msgid ""
 "Additionally, the docstrings for all methods in PyVista are intended to be "
 "used within interactive coding sessions. This allows users to use "
@@ -1120,11 +1120,11 @@ msgid ""
 msgstr ""
 "また，PyVistaのすべてのメソッドのdocstringは，インタラクティブなコーディングセッションで使用することを意図しています．これにより，高度な処理ルーチンをその場で使用し，メソッドの使用方法の説明にすぐにアクセスできます．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:114
+#: ../../pyvista/doc/source/getting-started/why.rst:116
 msgid "Interfacing With Other Libraries"
 msgstr "他のライブラリとの連携"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:115
+#: ../../pyvista/doc/source/getting-started/why.rst:117
 msgid ""
 "PyVista is heavily dependent on `numpy <https://numpy.org/>`_ and uses it to"
 " represent point, cell, field, and other data from the VTK meshes. This data"
@@ -1137,14 +1137,14 @@ msgstr ""
 ":attr:`pyvista.DataSet.points` のようなデータセット属性から簡単にアクセスできます． "
 "例えば，pyvistaの円の最初の10点には次のようにアクセスできます．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:126
+#: ../../pyvista/doc/source/getting-started/why.rst:128
 msgid ""
 "And these points can be operated on as if it was a NumPy array, all without "
 "losing connection to the underlying VTK data array."
 msgstr ""
 "また，これらのポイントは，あたかもNumPyの配列のように操作することができますが，その際，基礎となるVTKデータ配列との接続は失われません．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:129
+#: ../../pyvista/doc/source/getting-started/why.rst:131
 msgid ""
 "At the same time, a variety of PyVista objects can be generated directly "
 "from numpy arrays. For example, below we generate a vector field of arrows "
@@ -1153,7 +1153,7 @@ msgstr ""
 "同時に，様々なPyVistaオブジェクトをnumpy配列から直接生成することができます． 例えば，以下では using "
 ":func:`numpy.meshgrid`を使って，矢印のベクトルフィールドを生成しています．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:156
+#: ../../pyvista/doc/source/getting-started/why.rst:158
 msgid ""
 "PyVista has connections to several other libraries, such as `meshio "
 "<https://github.com/nschloe/meshio>`_ and `matplotlib "
