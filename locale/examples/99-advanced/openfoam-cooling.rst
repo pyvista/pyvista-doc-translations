@@ -29,7 +29,7 @@ Management Tutorial: CHT Analysis of an Electronics Box
 
 This example dataset was read using the :class:`pyvista.POpenFOAMReader` and
 post processed according to this `README.md
-<https://github.com/pyvista/vtk-data/blob/master/Data/fea/cooling_electronics/README.md>`_.
+<https://github.com/pyvista/vtk-data/blob/master/Data/fvm/cooling_electronics/README.md>`_.
 
 .. GENERATED FROM PYTHON SOURCE LINES 16-22
 
@@ -76,7 +76,7 @@ several scalar arrays including the velocity and temperature of the air.
  .. code-block:: none
 
 
-    (PolyData (0x7f7b7eeada60)
+    (PolyData (0x7ff20ba8bb20)
       N Cells:    344270
       N Points:   187992
       N Strips:   0
@@ -84,7 +84,7 @@ several scalar arrays including the velocity and temperature of the air.
       Y Bounds:   -3.000e-03, 2.030e-01
       Z Bounds:   -9.000e-03, 4.200e-02
       N Arrays:   4
-    , UnstructuredGrid (0x7f7b7eeadbe0)
+    , UnstructuredGrid (0x7ff20ba8b700)
       N Cells:    1749992
       N Points:   610176
       X Bounds:   -1.388e-18, 1.500e-01
@@ -217,9 +217,9 @@ temperature of the components.
 
 .. GENERATED FROM PYTHON SOURCE LINES 102-109
 
-Plot Steamlines - Flow Velocity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Now, let's plot the steamlines of this dataset so we can see how the air is
+Plot Streamlines - Flow Velocity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Now, let's plot the streamlines of this dataset so we can see how the air is
 flowing through the case.
 
 Generate streamlines using :func:`streamlines_from_source()
@@ -327,7 +327,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  19.957 seconds)
+   **Total running time of the script:** ( 0 minutes  21.455 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-cooling.py:
