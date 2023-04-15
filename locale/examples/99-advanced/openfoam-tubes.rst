@@ -53,8 +53,8 @@ Download and load the example dataset.
 .. code-block:: default
 
 
-    mesh = examples.download_openfoam_tubes()
-    mesh
+    block = examples.download_openfoam_tubes()
+    block
 
 
 
@@ -65,30 +65,20 @@ Download and load the example dataset.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table><tr><th>Information</th><th>Blocks</th></tr><tr><td>
     <table>
-    <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>400712</td></tr>
-    <tr><td>N Points</td><td>163390</td></tr>
-    <tr><td>X Bounds</td><td>-1.280e-01, 1.280e-01</td></tr>
-    <tr><td>Y Bounds</td><td>-2.800e-02, 2.800e-02</td></tr>
-    <tr><td>Z Bounds</td><td>-1.400e-02, 2.490e-01</td></tr>
-    <tr><td>N Arrays</td><td>10</td></tr>
+    <tr><th>MultiBlock</th><th>Values</th></tr>
+    <tr><td>N Blocks</td><td>2</td></tr>
+    <tr><td>X Bounds</td><td>-0.128, 0.128</td></tr>
+    <tr><td>Y Bounds</td><td>-0.028, 0.028</td></tr>
+    <tr><td>Z Bounds</td><td>-0.014, 0.249</td></tr>
     </table>
 
     </td><td>
     <table>
-    <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td>U</td><td>Points</td><td>float32</td><td>3</td><td>-2.120e+02</td><td>1.041e+02</td></tr>
-    <tr><td>k</td><td>Points</td><td>float32</td><td>1</td><td>3.750e-03</td><td>2.727e+02</td></tr>
-    <tr><td>nut</td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>8.829e-03</td></tr>
-    <tr><td>omega</td><td>Points</td><td>float32</td><td>1</td><td>3.375e+00</td><td>5.301e+05</td></tr>
-    <tr><td><b>p</b></td><td>Points</td><td>float32</td><td>1</td><td>-9.766e+03</td><td>3.735e+04</td></tr>
-    <tr><td>U</td><td>Cells</td><td>float32</td><td>3</td><td>-2.144e+02</td><td>1.065e+02</td></tr>
-    <tr><td>k</td><td>Cells</td><td>float32</td><td>1</td><td>3.750e-03</td><td>3.691e+02</td></tr>
-    <tr><td>nut</td><td>Cells</td><td>float32</td><td>1</td><td>1.276e-07</td><td>9.229e-03</td></tr>
-    <tr><td>omega</td><td>Cells</td><td>float32</td><td>1</td><td>3.375e+00</td><td>5.343e+05</td></tr>
-    <tr><td><b>p</b></td><td>Cells</td><td>float32</td><td>1</td><td>-1.188e+04</td><td>3.764e+04</td></tr>
+    <tr><th>Index</th><th>Name</th><th>Type</th></tr>
+    <tr><th>0</th><th>internalMesh</th><th>UnstructuredGrid</th></tr>
+    <tr><th>1</th><th>boundary</th><th>MultiBlock</th></tr>
     </table>
 
     </td></tr> </table>
@@ -102,17 +92,20 @@ Plot Cross Section
 ~~~~~~~~~~~~~~~~~~
 Plot the outline of the dataset along with a cross section of the flow velocity.
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-40
+.. GENERATED FROM PYTHON SOURCE LINES 29-43
 
 .. code-block:: default
 
 
+    # first, get the first block representing the air within the tube.
+    air = block[0]
+
     # generate a slice in the XZ plane
-    y_slice = mesh.slice('y')
+    y_slice = air.slice('y')
 
     pl = pv.Plotter()
     pl.add_mesh(y_slice, scalars='U', lighting=False, scalar_bar_args={'title': 'Flow Velocity'})
-    pl.add_mesh(mesh, color='w', opacity=0.25)
+    pl.add_mesh(air, color='w', opacity=0.25)
     pl.enable_anti_aliasing()
     pl.show()
 
@@ -129,40 +122,25 @@ Plot the outline of the dataset along with a cross section of the flow velocity.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-44
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
-Plot Steamlines - Flow Velocity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Generate streamlines using :func:`streamlines() <pyvista.DataSetFilters.streamlines>`.
+Plot Streamlines - Flow Velocity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generate streamlines using :func:`streamlines_from_source()
+<pyvista.DataSetFilters.streamlines_from_source>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-71
+.. GENERATED FROM PYTHON SOURCE LINES 48-59
 
 .. code-block:: default
 
 
-    lines, src = mesh.streamlines(
-        vectors='U',
-        source_center=(0, 0, 0),
-        source_radius=0.025,
-        return_source=True,
-        max_time=0.5,
-        integration_direction='backward',
-        n_points=40,
-    )
-
+    # Let's use the inlet as a source. First plot it.
+    inlet = block[1][2]
     pl = pv.Plotter()
-    pl.add_mesh(
-        lines,
-        render_lines_as_tubes=True,
-        line_width=3,
-        lighting=False,
-        scalar_bar_args={'title': 'Flow Velocity'},
-        scalars='U',
-        rng=(0, 212),
-    )
-    pl.add_mesh(mesh, color='w', opacity=0.25)
+    pl.add_mesh(inlet, color='b', label='inlet')
+    pl.add_mesh(air, opacity=0.2, color='w', label='air')
     pl.enable_anti_aliasing()
-    pl.camera_position = 'xz'
+    pl.add_legend(face=None)
     pl.show()
 
 
@@ -178,46 +156,43 @@ Generate streamlines using :func:`streamlines() <pyvista.DataSetFilters.streamli
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-82
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
-Volumetric Plot - Visualize Turbulent Kinematic Viscosity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The turbulent kinematic viscosity of a fluid is a derived quantity used in
-turbulence modeling to describe the effect of turbulent motion on the
-momentum transport within the fluid.
+Now, actually generate the streamlines. Since the original inlet contains
+1000 points, let's reduce this to around 200 points by using every 5th point.
 
-For this example, we will first interpolate the results from the
-:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.UniformGrid` using
-:func:`interpolate() <pyvista.DataSetFilters.interpolate>`. This is so we can
-visualize it using :func:`add_volume() <pyvista.Plotter.add_volume>`
+.. note::
+   If we wanted a uniform subsampling of the inlet, we could use
+   `pyvista/pyacvd <https://github.com/pyvista/pyacvd>`_
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-105
+.. GENERATED FROM PYTHON SOURCE LINES 66-90
 
 .. code-block:: default
 
 
-    bounds = np.array(mesh.bounds) * 1.2
-    origin = (bounds[0], bounds[2], bounds[4])
-    spacing = (0.003, 0.003, 0.003)
-    dimensions = (
-        int((bounds[1] - bounds[0]) // spacing[0] + 2),
-        int((bounds[3] - bounds[2]) // spacing[1] + 2),
-        int((bounds[5] - bounds[4]) // spacing[2] + 2),
+    pset = pv.PointSet(inlet.points[::5])
+    lines = air.streamlines_from_source(
+        pset,
+        vectors='U',
+        max_time=1.0,
     )
-    grid = pv.UniformGrid(dimensions=dimensions, spacing=spacing, origin=origin)
-    grid = grid.interpolate(mesh, radius=0.005)
 
     pl = pv.Plotter()
-    vol = pl.add_volume(
-        grid,
-        scalars='nut',
-        opacity='linear',
-        scalar_bar_args={'title': 'Turbulent Kinematic Viscosity'},
+    pl.add_mesh(
+        lines,
+        render_lines_as_tubes=True,
+        line_width=3,
+        lighting=False,
+        scalar_bar_args={'title': 'Flow Velocity'},
+        scalars='U',
+        rng=(0, 212),
     )
-    vol.prop.interpolation_type = 'linear'
-    pl.add_mesh(mesh, color='w', opacity=0.1)
+    pl.add_mesh(air, color='w', opacity=0.25)
+    pl.enable_anti_aliasing()
     pl.camera_position = 'xz'
     pl.show()
+
+
 
 
 
@@ -230,10 +205,62 @@ visualize it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 91-101
+
+Volumetric Plot - Visualize Turbulent Kinematic Viscosity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The turbulent kinematic viscosity of a fluid is a derived quantity used in
+turbulence modeling to describe the effect of turbulent motion on the
+momentum transport within the fluid.
+
+For this example, we will first sample the results from the
+:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.UniformGrid` using
+:func:`sample() <pyvista.DataSetFilters.sample>`. This is so we can visualize
+it using :func:`add_volume() <pyvista.Plotter.add_volume>`
+
+.. GENERATED FROM PYTHON SOURCE LINES 101-124
+
+.. code-block:: default
+
+
+    bounds = np.array(air.bounds) * 1.2
+    origin = (bounds[0], bounds[2], bounds[4])
+    spacing = (0.003, 0.003, 0.003)
+    dimensions = (
+        int((bounds[1] - bounds[0]) // spacing[0] + 2),
+        int((bounds[3] - bounds[2]) // spacing[1] + 2),
+        int((bounds[5] - bounds[4]) // spacing[2] + 2),
+    )
+    grid = pv.UniformGrid(dimensions=dimensions, spacing=spacing, origin=origin)
+    grid = grid.sample(air)
+
+    pl = pv.Plotter()
+    vol = pl.add_volume(
+        grid,
+        scalars='nut',
+        opacity='linear',
+        scalar_bar_args={'title': 'Turbulent Kinematic Viscosity'},
+    )
+    vol.prop.interpolation_type = 'linear'
+    pl.add_mesh(air, color='w', opacity=0.1)
+    pl.camera_position = 'xz'
+    pl.show()
+
+
+
+.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_004.png
+   :alt: openfoam tubes
+   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.961 seconds)
+   **Total running time of the script:** ( 0 minutes  7.665 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-tubes.py:

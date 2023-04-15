@@ -6,10 +6,12 @@
 
 Computation times
 =================
-**00:05.961** total execution time for **examples_99-advanced** files:
+**00:29.120** total execution time for **examples_99-advanced** files:
 
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py` (``openfoam-tubes.py``)                               | 00:05.961 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-cooling.py` (``openfoam-cooling.py``)                           | 00:21.455 | 0.0 MB |
++--------------------------------------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py` (``openfoam-tubes.py``)                               | 00:07.665 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                                     | 00:00.000 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
