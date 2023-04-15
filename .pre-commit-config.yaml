@@ -25,6 +25,8 @@ repos:
   - id: no-commit-to-branch
     args: [--branch, main]
   - id: requirements-txt-fixer
+  - id: trailing-whitespace
+    exclude: ^(|locale)
 
 - repo: https://github.com/python-jsonschema/check-jsonschema
   rev: 0.22.0
