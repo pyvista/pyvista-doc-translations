@@ -2751,6 +2751,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Background Modal analysis is the study of the dynamic properties of mechanical structures in th...">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_pump-bracket_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_pump-bracket.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Visualize Modal Analysis of a Pump Bracket</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates the Moeller–Trumbore intersection algorithm using pyvista.">
 
 .. only:: html
@@ -2802,7 +2819,7 @@ developers.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example applies the warp_by_vector filter to a cube whose eigenmodes have been computed us...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example applies the pyvista.DataSetFilters.warp_by_vector filter to a cube whose eigenmode...">
 
 .. only:: html
 
@@ -2813,7 +2830,7 @@ developers.
 
 .. raw:: html
 
-      <div class="sphx-glr-thumbnail-title">Displaying eigenmodes of vibration using warp_by_vector</div>
+      <div class="sphx-glr-thumbnail-title">Display Eigenmodes of Vibration</div>
     </div>
 
 

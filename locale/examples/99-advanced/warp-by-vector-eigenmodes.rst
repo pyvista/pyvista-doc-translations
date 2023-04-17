@@ -10,33 +10,36 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
 
 .. _sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py:
 
+.. _eigenmodes_example:
 
-Displaying eigenmodes of vibration using ``warp_by_vector``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Display Eigenmodes of Vibration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This example applies the ``warp_by_vector`` filter to a cube whose eigenmodes
-have been computed using the Ritz method, as outlined in Visscher, William M.,
-Albert Migliori, Thomas M. Bell, et Robert A. Reinert. "On the normal modes
-of free vibration of inhomogeneous and anisotropic elastic objects". The
-Journal of the Acoustical Society of America 90, n.4 (october 1991): 2154-62.
+This example applies the :func:`warp_by_vector
+<pyvista.DataSetFilters.warp_by_vector>` filter to a cube whose eigenmodes have
+been computed using the Ritz method, as outlined in Visscher, William M.,
+Albert Migliori, Thomas M. Bell, et Robert A. Reinert. "On the normal modes of
+free vibration of inhomogeneous and anisotropic elastic objects". The Journal
+of the Acoustical Society of America 90, n.4 (October 1991): 2154-62.
 https://asa.scitation.org/doi/10.1121/1.401643
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-20
 
 First, let's solve the eigenvalue problem for a vibrating cube. We use
 a crude approximation (by choosing a low max polynomial order) to get a fast
 computation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-187
+.. GENERATED FROM PYTHON SOURCE LINES 20-190
 
 .. code-block:: default
+
 
     import numpy as np
     from scipy.linalg import eigh
@@ -213,8 +216,6 @@ computation.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     found the following first unique eigenfrequencies:
@@ -230,11 +231,11 @@ computation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 188-189
+.. GENERATED FROM PYTHON SOURCE LINES 191-192
 
 Now, let's display a mode on a mesh of the cube.
 
-.. GENERATED FROM PYTHON SOURCE LINES 189-229
+.. GENERATED FROM PYTHON SOURCE LINES 192-232
 
 .. code-block:: default
 
@@ -273,10 +274,10 @@ Now, let's display a mode on a mesh of the cube.
     warpby = 'eigenmode_00'
     warped = vol.warp_by_vector(warpby, factor=0.04)
     warped.translate([-1.5 * l1, 0.0, 0.0], inplace=True)
-    p = pv.Plotter()
-    p.add_mesh(vol, style='wireframe', scalars=warpby)
-    p.add_mesh(warped, scalars=warpby)
-    p.show()
+    pl = pv.Plotter()
+    pl.add_mesh(vol, style='wireframe', scalars=warpby, show_scalar_bar=False)
+    pl.add_mesh(warped, scalars=warpby)
+    pl.show()
 
 
 
@@ -290,28 +291,28 @@ Now, let's display a mode on a mesh of the cube.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 230-231
+.. GENERATED FROM PYTHON SOURCE LINES 233-234
 
 Finally, let's make a gallery of the first 8 unique eigenmodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 231-245
+.. GENERATED FROM PYTHON SOURCE LINES 234-248
 
 .. code-block:: default
 
 
 
-    p = pv.Plotter(shape=(2, 4))
+    pl = pv.Plotter(shape=(2, 4))
     for i in range(2):
         for j in range(4):
-            p.subplot(i, j)
+            pl.subplot(i, j)
             current_index = 4 * i + j
             vector = f"eigenmode_{current_index:02}"
-            p.add_text(
+            pl.add_text(
                 f"mode {current_index}, freq. {computed_freqs_kHz[current_index]:.1f} kHz",
                 font_size=10,
             )
-            p.add_mesh(vol.warp_by_vector(vector, factor=0.03), scalars=vector)
-    p.show()
+            pl.add_mesh(vol.warp_by_vector(vector, factor=0.03), scalars=vector, show_scalar_bar=False)
+    pl.show()
 
 
 
@@ -327,28 +328,25 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.565 seconds)
+   **Total running time of the script:** ( 0 minutes  11.597 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: warp-by-vector-eigenmodes.py <warp-by-vector-eigenmodes.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: warp-by-vector-eigenmodes.py <warp-by-vector-eigenmodes.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: warp-by-vector-eigenmodes.ipynb <warp-by-vector-eigenmodes.ipynb>`
+      :download:`Download Jupyter notebook: warp-by-vector-eigenmodes.ipynb <warp-by-vector-eigenmodes.ipynb>`
 
 
 .. only:: html
