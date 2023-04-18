@@ -19416,11 +19416,13 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Background Modal analysis "
 "is the study of the dynamic properties of mechanical structures in th...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Background Modal analysis "
+"is the study of the dynamic properties of mechanical structures in th...\">"
 
 #: ../../pyvista/doc/source/examples/99-advanced/index.rst:231
 #: ../../pyvista/doc/source/examples/index.rst:2761
 msgid ":ref:`sphx_glr_examples_99-advanced_pump-bracket.py`"
-msgstr ""
+msgstr ":ref:`sphx_glr_examples_99-advanced_pump-bracket.py`"
 
 #: ../../pyvista/doc/source/examples/99-advanced/index.rst:233
 #: ../../pyvista/doc/source/examples/index.rst:2763
@@ -19428,6 +19430,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Visualize Modal Analysis of a Pump Bracket</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Visualize Modal Analysis of a Pump Bracket</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/source/examples/99-advanced/index.rst:239
 #: ../../pyvista/doc/source/examples/index.rst:2769
@@ -19486,6 +19490,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example applies the "
 "pyvista.DataSetFilters.warp_by_vector filter to a cube whose eigenmode...\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example applies the "
+"pyvista.DataSetFilters.warp_by_vector filter to a cube whose eigenmode...\">"
 
 #: ../../pyvista/doc/source/examples/99-advanced/index.rst:299
 #: ../../pyvista/doc/source/examples/index.rst:2829
@@ -19498,6 +19504,8 @@ msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Display Eigenmodes of Vibration</div>\n"
 "</div>"
 msgstr ""
+"  <div class=\"sphx-glr-thumbnail-title\">Display Eigenmodes of Vibration</div>\n"
+"</div>"
 
 #: ../../pyvista/doc/source/examples/99-advanced/magnetic-fields.rst:13
 msgid ""
@@ -20265,10 +20273,12 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_99-advanced_pump-"
 "bracket.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_99-advanced_pump-"
+"bracket.py>` to download the full example code"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:23
 msgid "Visualize Modal Analysis of a Pump Bracket"
-msgstr ""
+msgstr "ポンプブラケットのモーダル解析の可視化"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:24
 msgid ""
@@ -20276,6 +20286,7 @@ msgid ""
 " analysis of a pump bracket based on point arrays representing mode shapes "
 "for different modes of vibration."
 msgstr ""
+"次の例は，PyVistaを使用して，異なる振動モードのモード形状を表す点配列に基づいて，ポンプブラケットのモード解析を可視化する方法を示しています．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:28
 msgid ""
@@ -20284,6 +20295,7 @@ msgid ""
 "structural dynamics, particularly for automotive, aerospace, and civil "
 "engineering applications."
 msgstr ""
+"**背景** モーダル解析は，機械構造物の動的特性を周波数領域で研究するものです．特に自動車，航空宇宙，土木工学などの構造力学において一般的な手法です．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:33
 msgid ""
@@ -20294,12 +20306,16 @@ msgid ""
 "the mode shapes to get an understanding of how the pump bracket responds to "
 "different modes of vibration."
 msgstr ""
+"モード形状とは，構造物の特定の固有振動数かモードで発生する変形パターンです．構造物が外力によって励起されると，構造物はすべての固有振動数で応答し，各モード形状は他から独立しています．この例では，モード形状を可視化することで，ポンプブラケットが異なる振動モードに対してどのように応答するかを理解することができます．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:60
 msgid ""
 "Start by loading the dataset using :func:`download_pump_bracket() "
 "<pyvista.examples.downloads.download_pump_bracket>`."
 msgstr ""
+":func:`download_pump_bracket() "
+"<pyvista.examples.downloads.download_pump_bracket>` "
+"を使って，データセットをロードすることから始めます．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:63
 msgid ""
@@ -20308,6 +20324,7 @@ msgid ""
 "displacement. The dataset used in this example contains 10 mode shapes "
 "(disp_0 to disp_9)."
 msgstr ""
+"この例では，ポンプブラケットのモード形状の可視化，その大きさの表現，および変位のアニメーションを示しています．この例で使用したデータセットには，10個のモード形状(disp_0～disp_9)が含まれています．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:81
 msgid ""
@@ -20343,6 +20360,37 @@ msgid ""
 "<br />\n"
 "<br />"
 msgstr ""
+"<div class=\"output_subarea output_html rendered_html output_result\">\n"
+"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table>\n"
+"<tr><th>UnstructuredGrid</th><th>Information</th></tr>\n"
+"<tr><td>N Cells</td><td>124806</td></tr>\n"
+"<tr><td>N Points</td><td>250487</td></tr>\n"
+"<tr><td>X Bounds</td><td>-5.000e-01, 5.000e-01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-4.000e-01, 0.000e+00</td></tr>\n"
+"<tr><td>Z Bounds</td><td>-2.500e-02, 2.500e-02</td></tr>\n"
+"<tr><td>N Arrays</td><td>10</td></tr>\n"
+"</table>\n"
+"\n"
+"</td><td>\n"
+"<table>\n"
+"<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
+"<tr><td><b>disp_0</b></td><td>Points</td><td>float32</td><td>3</td><td>-5.702e-02</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_1</td><td>Points</td><td>float32</td><td>3</td><td>-9.769e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_2</td><td>Points</td><td>float32</td><td>3</td><td>-9.165e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_3</td><td>Points</td><td>float32</td><td>3</td><td>-9.808e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_4</td><td>Points</td><td>float32</td><td>3</td><td>-9.494e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_5</td><td>Points</td><td>float32</td><td>3</td><td>-9.759e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_6</td><td>Points</td><td>float32</td><td>3</td><td>-7.134e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_7</td><td>Points</td><td>float32</td><td>3</td><td>-8.740e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_8</td><td>Points</td><td>float32</td><td>3</td><td>-6.784e-01</td><td>1.000e+00</td></tr>\n"
+"<tr><td>disp_9</td><td>Points</td><td>float32</td><td>3</td><td>-8.212e-01</td><td>1.000e+00</td></tr>\n"
+"</table>\n"
+"\n"
+"</td></tr> </table>\n"
+"</div>\n"
+"<br />\n"
+"<br />"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:119
 msgid ""
@@ -20350,16 +20398,18 @@ msgid ""
 "\"disp_N\" array represents an eigen solution or a single mode shape for a "
 "given mode of vibration."
 msgstr ""
+"データセットにある利用可能な配列からモードシェイプを選択します．各 \"disp_N\" "
+"配列は，与えられた振動モードに対する固有解または単一モード形状を表します．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:123
 msgid ""
 "Plot the 4th mode of the dataset. This is the first torsional mode for the "
 "bracket."
-msgstr ""
+msgstr "データセットの4番目のモードをプロットします．これはブラケットの最初のねじりモードです．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:161
 msgid "Visualize Displaced Mode Shape"
-msgstr ""
+msgstr "変位モード形状の可視化"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:162
 msgid ""
@@ -20367,10 +20417,12 @@ msgid ""
 "original dataset using :func:`warp_by_vector "
 "<pyvista.DataSetFilters.warp_by_vector>`."
 msgstr ""
+"ここでは， :func:`warp_by_vector <pyvista.DataSetFilters.warp_by_vector>` "
+"を使って元のデータセットを変位させ，ポンプブラケットのモード形状を可視化します．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:200
 msgid "Animate the Mode Shape Displacement"
-msgstr ""
+msgstr "モード形状の変位をアニメーション化します"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:201
 msgid ""
@@ -20378,21 +20430,25 @@ msgid ""
 "each time step. For a more realistic animation, we use a sinusoidal function"
 " to vary the displacement."
 msgstr ""
+"各時間ステップで頂点位置を更新することで，モードシェイプの変位をアニメーション化します．よりリアルなアニメーションを実現するために，正弦波関数を使用して変位を変化させます．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:244
 msgid "**Total running time of the script:** ( 0 minutes  14.319 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  14.319 seconds)"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:258
 msgid ""
 ":download:`Download Python source code: pump-bracket.py <pump-bracket.py>`"
 msgstr ""
+":download:`Download Python source code: pump-bracket.py <pump-bracket.py>`"
 
 #: ../../pyvista/doc/source/examples/99-advanced/pump-bracket.rst:262
 msgid ""
 ":download:`Download Jupyter notebook: pump-bracket.ipynb <pump-"
 "bracket.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: pump-bracket.ipynb <pump-"
+"bracket.ipynb>`"
 
 #: ../../pyvista/doc/source/examples/99-advanced/ray-trace.rst:13
 msgid ""
@@ -20485,15 +20541,17 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:9
 msgid "**00:25.916** total execution time for **examples_99-advanced** files:"
 msgstr ""
+"**00:25.916** total execution time for **examples_99-advanced** files:"
 
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:12
 msgid ""
 ":ref:`sphx_glr_examples_99-advanced_pump-bracket.py` (``pump-bracket.py``)"
 msgstr ""
+":ref:`sphx_glr_examples_99-advanced_pump-bracket.py` (``pump-bracket.py``)"
 
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:12
 msgid "00:14.319"
-msgstr ""
+msgstr "00:14.319"
 
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:14
 msgid ""
@@ -20505,7 +20563,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:14
 msgid "00:11.597"
-msgstr ""
+msgstr "00:11.597"
 
 #: ../../pyvista/doc/source/examples/99-advanced/sg_execution_times.rst:16
 msgid ""
@@ -20716,10 +20774,12 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_99-advanced_warp-by-vector-"
 "eigenmodes.py>` to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_99-advanced_warp-by-vector-"
+"eigenmodes.py>` to download the full example code"
 
 #: ../../pyvista/doc/source/examples/99-advanced/warp-by-vector-eigenmodes.rst:23
 msgid "Display Eigenmodes of Vibration"
-msgstr ""
+msgstr "振動の固有振動モードを表示します"
 
 #: ../../pyvista/doc/source/examples/99-advanced/warp-by-vector-eigenmodes.rst:25
 msgid ""
@@ -20731,6 +20791,12 @@ msgid ""
 "The Journal of the Acoustical Society of America 90, n.4 (October 1991): "
 "2154-62. https://asa.scitation.org/doi/10.1121/1.401643"
 msgstr ""
+"この例は，Visscher, William M., Albert Migliori, Thomas M.Bell, et Robert "
+"A.Reinertで概説されているように，固有モードがRitz法を使用して計算された立方体に :func:`warp_by_vector "
+"<pyvista.DataSetFilters.warp_by_vector>` フィルタを適用します. \"On the normal modes "
+"of free vibration of inhomogeneous and anisotropic elastic objects\". The "
+"Journal of the Acoustical Society of America 90, n.4 (October 1991): "
+"2154-62. https://asa.scitation.org/doi/10.1121/1.401643"
 
 #: ../../pyvista/doc/source/examples/99-advanced/warp-by-vector-eigenmodes.rst:35
 msgid ""
@@ -20749,7 +20815,7 @@ msgstr "最後に，最初の8つの固有モードのギャラリーを作成�
 
 #: ../../pyvista/doc/source/examples/99-advanced/warp-by-vector-eigenmodes.rst:331
 msgid "**Total running time of the script:** ( 0 minutes  11.597 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  11.597 seconds)"
 
 #: ../../pyvista/doc/source/examples/99-advanced/warp-by-vector-eigenmodes.rst:345
 msgid ""
