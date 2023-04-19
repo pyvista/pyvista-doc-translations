@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -142,9 +142,9 @@ to :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`.
     pl.add_mesh(warped_subset, cmap='blues', show_scalar_bar=False)
     pl.show_bounds(
         axes_ranges=(0, max_freq, 0, max_freq, 0, warped_subset.bounds[-1]),
-        xlabel='X Frequency',
-        ylabel='Y Frequency',
-        zlabel='Amplitude',
+        xtitle='X Frequency',
+        ytitle='Y Frequency',
+        ztitle='Amplitude',
         show_zlabels=False,
         color='k',
         font_size=26,
@@ -366,7 +366,7 @@ proportional.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  32.821 seconds)
+   **Total running time of the script:** ( 0 minutes  43.947 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py:
@@ -374,6 +374,8 @@ proportional.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

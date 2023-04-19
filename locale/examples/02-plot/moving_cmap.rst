@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_moving_cmap.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_moving_cmap.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -95,7 +95,7 @@ by updating the scalars.
         mesh,
         scalars=np.sin(dists),
         smooth_shading=True,
-        specular=10,
+        specular=1,
         cmap="nipy_spectral",
         show_scalar_bar=False,
     )
@@ -110,28 +110,25 @@ by updating the scalars.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.700 seconds)
+   **Total running time of the script:** ( 0 minutes  9.912 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_moving_cmap.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: moving_cmap.py <moving_cmap.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: moving_cmap.py <moving_cmap.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: moving_cmap.ipynb <moving_cmap.ipynb>`
+      :download:`Download Jupyter notebook: moving_cmap.ipynb <moving_cmap.ipynb>`
 
 
 .. only:: html
