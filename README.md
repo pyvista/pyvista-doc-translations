@@ -4,6 +4,8 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/pyvista/pyvista-doc-translations/main.svg)](https://results.pre-commit.ci/latest/github/pyvista/pyvista-doc-translations/main)
+
 This is a project to provide pyvista official documentation in multiple languages.
 This repository is inspired by [sphinx-doc/sphinx-doc-translations](https://github.com/sphinx-doc/sphinx-doc-translations.git).
 
@@ -11,7 +13,7 @@ This repository is inspired by [sphinx-doc/sphinx-doc-translations](https://gith
 
 * Documentation pages for each languages:
 
-  * https://pyvista.github.io/pyvista-docs-dev-ja/
+  * 日本語: https://pyvista.github.io/pyvista-docs-dev-ja/
 
 
 ## How to update po files
