@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.39.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 01:02+0000\n"
+"POT-Creation-Date: 2023-04-29 00:49+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Persian (https://app.transifex.com/tkoyama010/teams/112279/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -1963,7 +1963,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.face_normals:22
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:21 ../../pyvista/pyvista/core/pointset.pydocstring
+#: pyvista.PolyData.faces:39 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.is_all_triangles:32
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_manifold:17
@@ -1988,13 +1988,13 @@ msgstr ""
 #: pyvista.StructuredGrid.x:21 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.UnstructuredGrid.cell_connectivity:28
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.cells:22
+#: pyvista.UnstructuredGrid.cells:44
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:30
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:61
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.offset:23
+#: pyvista.UnstructuredGrid.offset:28
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid:30
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -5920,9 +5920,14 @@ msgstr ""
 #: pyvista.UniformGrid.points:15 ../../pyvista/pyvista/core/grid.pydocstring
 #: of pyvista.UniformGrid.spacing:15
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.is_all_triangles:25
+#: pyvista.PolyData.faces:31 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.PolyData.is_all_triangles:25
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:36
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:19
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.offset:21
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.ExplicitStructuredGrid.cast_to_unstructured_grid:29
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -13955,7 +13960,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cell_connectivity:22
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.cells:16
+#: pyvista.UnstructuredGrid.cells:28
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:24
 msgid ":obj:`pyvista.DataSet.get_cell`"
@@ -14273,7 +14278,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.remove_points:39
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:18 ../../pyvista/pyvista/core/pointset.pydocstring
+#: pyvista.PolyData.faces:28 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.strips:18
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.verts:18 ../../pyvista/pyvista/core/pointset.pydocstring
@@ -14283,7 +14288,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:16
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.offset:20
+#: pyvista.UnstructuredGrid.offset:18
 #: ../../pyvista/pyvista/core/texture.pydocstring of
 #: pyvista.core.texture.Texture.to_array:16
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
@@ -26013,7 +26018,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:866:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:2
-msgid "Return a pointer to the faces as a numpy array."
+msgid "Return the connectivity array of the faces of this PolyData."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:866:<autosummary>:1
@@ -26176,14 +26181,56 @@ msgstr ""
 msgid "Array of face normals."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:9
-msgid "Array of face indices."
+#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:4
+msgid "The faces array is organized as::"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:8
+msgid ""
+"where ``n0`` is the number of points in face 0, and ``pX_Y`` is the Y'th "
+"point in face X."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:11
+msgid "For example, a triangle and a quadrilateral might be represented as::"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:15
+msgid ""
+"Where the two individual faces would be ``[3, 0, 1, 2]`` and ``[4, 0, 1, 3, "
+"4]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:21
+msgid "Array of face connectivity."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:32 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.UnstructuredGrid.cells:37
+msgid ""
+"The array returned cannot be modified in place and will raise a "
+"``ValueError`` if attempted."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:35
+msgid "You can, however, set the faces directly. See the example."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.faces.rst:8
 msgid ""
 "Note how the faces contain a \"padding\" indicating the number of points per"
 " face:"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.faces.rst:17
+msgid ""
+"Set the faces directly. The following example creates a simple plane with a "
+"single square faces and modifies it to have two triangles instead."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.is_all_triangles.rst:2
@@ -33014,7 +33061,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.UnstructuredGrid:8
-msgid "From cell, offset, and node arrays"
+msgid "From cell, cell types, and point arrays"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -33101,7 +33148,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:678:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:2
-msgid "Return a pointer to the cells as a numpy object."
+msgid "Return the cell data as a numpy object."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:678:<autosummary>:1
@@ -33195,10 +33242,54 @@ msgstr ""
 msgid "cells"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:4
+msgid "This is the old style VTK data layout::"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:8
+msgid ""
+"where ``n0`` is the number of points in cell 0, and ``pX_Y`` is the Y'th "
+"point in cell X."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:11
+msgid "For example, a triangle and a line might be represented as::"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:15
+msgid ""
+"Where the two individual cells would be ``[3, 0, 1, 2]`` and ``[2, 0, 1]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:30
+msgid ":obj:`pyvista.UnstructuredGrid.cell_connectivity`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:32
+msgid ":obj:`pyvista.UnstructuredGrid.offset`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:40
+msgid "You can, however, set the cells directly. See the example."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.cells.rst:3
 msgid ""
 "Return the indices of the first two cells from the example hex beam.  Note "
 "how the cells have \"padding\" indicating the number of points per cell."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.cells.rst:14
+msgid ""
+"While you cannot change the array inplace, you can overwrite it. For "
+"example:"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.cells_dict.rst:2
@@ -33488,11 +33579,17 @@ msgstr ""
 msgid "Array of cell offsets indicating the start of each cell."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.offset:22
+msgid ""
+"The array returned is immutable and cannot be written to. If you need to "
+"modify this array, create a copy of it using :func:`numpy.copy`."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.offset.rst:3
 msgid ""
-"Return the cell offset array within ``vtk==9``.  Since this mesh is composed"
-" of all hexahedral cells, note how each cell starts at 8 greater than the "
-"prior cell."
+"Return the cell offset array.  Since this mesh is composed of all hexahedral"
+" cells, note how each cell starts at 8 greater than the prior cell."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGridFilters.rst:2
