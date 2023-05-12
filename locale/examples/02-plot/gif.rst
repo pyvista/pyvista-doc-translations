@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_gif.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_gif.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -28,7 +28,45 @@ Generate a moving gif from an active plotter.
    Use ``lighting=False`` to reduce the size of the color space to avoid
    "jittery" GIFs, especially for the scalar bar.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-56
+.. GENERATED FROM PYTHON SOURCE LINES 13-18
+
+.. code-block:: default
+
+
+    import numpy as np
+
+    import pyvista as pv
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 20-24
+
+Create a structured grid
+~~~~~~~~~~~~~~~~~~~~~~~~
+Create a structured grid and make a "wave" my shifting the Z position based
+on the cartesian distance from the origin.
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-36
+
+.. code-block:: default
+
+
+    x = np.arange(-10, 10, 0.5)
+    y = np.arange(-10, 10, 0.5)
+    x, y = np.meshgrid(x, y)
+    r = np.sqrt(x**2 + y**2)
+    z = np.sin(r)
+
+    # Create and structured surface
+    grid = pv.StructuredGrid(x, y, z)
+    grid.plot()
+
+
 
 
 
@@ -41,21 +79,16 @@ Generate a moving gif from an active plotter.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 37-40
+
+Generate a GIF
+~~~~~~~~~~~~~~
+Generate a GIF using ``off_screen=True`` parameter.
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-70
+
 .. code-block:: default
 
-
-    import numpy as np
-
-    import pyvista as pv
-
-    x = np.arange(-10, 10, 0.5)
-    y = np.arange(-10, 10, 0.5)
-    x, y = np.meshgrid(x, y)
-    r = np.sqrt(x**2 + y**2)
-    z = np.sin(r)
-
-    # Create and structured surface
-    grid = pv.StructuredGrid(x, y, z)
 
     # Create a plotter object and set the scalars to the Z height
     plotter = pv.Plotter(notebook=False, off_screen=True)
@@ -88,30 +121,38 @@ Generate a moving gif from an active plotter.
     plotter.close()
 
 
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_gif_002.gif
+   :alt: gif
+   :srcset: /examples/02-plot/images/sphx_glr_gif_002.gif
+   :class: sphx-glr-single-img
+
+
+
+
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.208 seconds)
+   **Total running time of the script:** ( 0 minutes  3.269 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: gif.py <gif.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: gif.py <gif.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: gif.ipynb <gif.ipynb>`
+      :download:`Download Jupyter notebook: gif.ipynb <gif.ipynb>`
 
 
 .. only:: html
