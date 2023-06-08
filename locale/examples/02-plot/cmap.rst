@@ -74,7 +74,7 @@ plot.
 
     mesh = examples.download_st_helens().warp_by_scalar()
     # Add scalar array with range (0, 100) that correlates with elevation
-    mesh['values'] = pv.plotting.normalize(mesh['Elevation']) * 100
+    mesh['values'] = pv.plotting.tools.normalize(mesh['Elevation']) * 100
 
 
 
@@ -300,7 +300,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.337 seconds)
+   **Total running time of the script:** ( 0 minutes  3.340 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

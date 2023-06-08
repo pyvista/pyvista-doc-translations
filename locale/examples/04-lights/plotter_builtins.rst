@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_plotter_builtins.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_plotter_builtins.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -41,11 +41,10 @@ The default ``lighting='light kit'`` option recreates a lighting setup that
 corresponds to a ``vtk.vtkLightKit``. We can check what type of lights this
 lighting comprises:
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-39
+.. GENERATED FROM PYTHON SOURCE LINES 25-38
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 3
     import pyvista as pv
     from pyvista import examples
 
@@ -54,7 +53,7 @@ lighting comprises:
     light_types = [light.light_type for light in plotter.renderer.lights]
 
     # Remove from plotters so output is not produced in docs
-    pv.plotting._ALL_PLOTTERS.clear()
+    pv.plotting.plotter._ALL_PLOTTERS.clear()
 
     light_types
 
@@ -64,8 +63,6 @@ lighting comprises:
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -145,7 +142,7 @@ Again we can check what kind of lights this setting uses:
     light_types = [light.light_type for light in plotter.renderer.lights]
 
     # Remove from plotters so output is not produced in docs
-    pv.plotting._ALL_PLOTTERS.clear()
+    pv.plotting.plotter._ALL_PLOTTERS.clear()
 
     light_types
 
@@ -155,8 +152,6 @@ Again we can check what kind of lights this setting uses:
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -236,28 +231,25 @@ shadows due to the mountaintop.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.824 seconds)
+   **Total running time of the script:** ( 0 minutes  2.413 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_plotter_builtins.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: plotter_builtins.py <plotter_builtins.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: plotter_builtins.py <plotter_builtins.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: plotter_builtins.ipynb <plotter_builtins.ipynb>`
+      :download:`Download Jupyter notebook: plotter_builtins.ipynb <plotter_builtins.ipynb>`
 
 
 .. only:: html

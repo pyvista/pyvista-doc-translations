@@ -252,7 +252,7 @@ Now that you know the three main inputs of an
 unstructured grid with a one or more cells. If you need to reference point
 ordering or additional, you can either read the source of `cells.py
 <https://github.com/pyvista/pyvista/blob/main/pyvista/examples/cells.py>`_ or
-simply create a cell from the ``pyvista.cells`` module and inspect its attributes.
+simply create a cell from the ``pyvista.core.cells`` module and inspect its attributes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 107-120
 
@@ -384,7 +384,7 @@ cells in a single plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.665 seconds)
+   **Total running time of the script:** ( 0 minutes  4.242 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_linear-cells.py:

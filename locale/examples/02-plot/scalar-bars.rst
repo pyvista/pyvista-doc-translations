@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_scalar-bars.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_scalar-bars.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -96,7 +96,7 @@ scalar bar are defined in :func:`pyvista.Plotter.add_scalar_bar`.
     p.add_mesh(mesh, scalar_bar_args=sargs)
     p.show()
     # Remove from plotters so output is not produced in docs
-    pv.plotting._ALL_PLOTTERS.clear()
+    pv.plotting.plotter._ALL_PLOTTERS.clear()
 
 
 
@@ -232,7 +232,7 @@ must be the value to annotate, and the value must be the string label.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.997 seconds)
+   **Total running time of the script:** ( 0 minutes  2.830 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:
@@ -240,6 +240,8 @@ must be the value to annotate, and the value must be the string label.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

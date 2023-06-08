@@ -28,8 +28,8 @@ This example shows how to apply a Fast Fourier Transform (FFT) to a
 filter.
 
 Here, we demonstrate FFT usage by first generating Perlin noise using
-:func:`pyvista.sample_function() <pyvista.utilities.common.sample_function>` to
-sample :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`,
+:func:`pyvista.sample_function() <pyvista.core.utilities.features.sample_function>` to
+sample :func:`pyvista.perlin_noise <pyvista.core.utilities.features.perlin_noise>`,
 and then performing FFT of the sampled noise to show the frequency content of
 that noise.
 
@@ -127,7 +127,7 @@ Plot the Frequency Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Now, plot the noise in the frequency domain. Note how there is more high
 frequency content in the x direction and this matches the frequencies given
-to :func:`pyvista.perlin_noise <pyvista.utilities.common.perlin_noise>`.
+to :func:`pyvista.perlin_noise <pyvista.core.utilities.features.perlin_noise>`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 69-89
 
@@ -340,9 +340,9 @@ Animate the variation of the cutoff frequency.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.png
+.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.gif
    :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.png
+   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.gif
    :class: sphx-glr-single-img
 
 
@@ -366,7 +366,7 @@ proportional.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  43.947 seconds)
+   **Total running time of the script:** ( 0 minutes  33.940 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py:

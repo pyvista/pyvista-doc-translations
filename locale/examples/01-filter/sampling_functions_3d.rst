@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_sampling_functions_3d.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_sampling_functions_3d.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -20,7 +20,7 @@
 
 Sample Function: Perlin Noise in 3D
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Here we use :func:`pyvista.utilities.common.sample_function` to sample
+Here we use :func:`pyvista.core.utilities.features.sample_function` to sample
 Perlin noise over a region to generate random terrain.
 
 Video games like Minecraft use Perlin noise to create terrain.  Here,
@@ -127,7 +127,7 @@ color limits without blue
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.589 seconds)
+   **Total running time of the script:** ( 0 minutes  0.491 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_3d.py:
@@ -135,6 +135,8 @@ color limits without blue
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
