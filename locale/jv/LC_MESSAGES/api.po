@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.40.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-08 00:57+0000\n"
+"POT-Creation-Date: 2023-06-09 01:04+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Javanese (https://app.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -320,6 +320,8 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:0
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:0
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:0
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:0
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -1067,6 +1069,8 @@ msgstr ""
 #: pyvista.plotting.actor.Actor.copy:0
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:0
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -1849,6 +1853,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:40
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:45
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:53
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:58
@@ -1893,7 +1899,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.intersection:50
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:59
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:75
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:54
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -2815,6 +2821,51 @@ msgstr ""
 #: pyvista.plotting.actor.Actor.copy:27
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor.plot:22
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of pyvista.Axes.origin:17
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:30
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.hide_actor:17
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.hide_symmetric:17
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.show_actor:17
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.show_symmetric:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cone_radius:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cone_resolution:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cylinder_radius:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cylinder_resolution:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.label_position:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.shaft_length:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.shaft_type:18
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.sphere_radius:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.sphere_resolution:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.tip_length:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.tip_type:18
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.total_length:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.visibility:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.x_axis_label:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.y_axis_label:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.z_axis_label:17
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.plotting.axes_actor.AxesActor:22
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:21 ../../pyvista/pyvista/plotting/camera.pydocstring
 #: of pyvista.Camera.clipping_range:19
@@ -3940,6 +3991,8 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGridFilters.rst:12
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.dataset.ActiveArrayInfo.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Actor.rst:12
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:12
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.BlockAttributes.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CameraPosition.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:12
@@ -3950,6 +4003,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Property.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:12
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting._BaseMapper.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.volume.Volume.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.volume_property.VolumeProperty.rst:12
@@ -4156,7 +4210,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:79
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.rst:206
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:446
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:518
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:521
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:398
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:418
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.rst:96
@@ -4164,6 +4218,8 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UniformGrid.rst:432
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:424
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Actor.rst:43
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:44
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:24
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.BlockAttributes.rst:23
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CameraPosition.rst:28
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:49
@@ -4719,6 +4775,8 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:0
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:0
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:0
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:0
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -6184,7 +6242,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:19
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:25
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:41
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.smooth:18
 #: ../../pyvista/pyvista/core/filters/uniform_grid.pydocstring of
@@ -7296,6 +7354,10 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:22
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:24
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:27
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:35
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:40
@@ -7384,9 +7446,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.intersection:24
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:31
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:47
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:39
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:55
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:23
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -7994,6 +8056,8 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.triangulate:26
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:37
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:42
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:50
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -8725,9 +8789,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:61
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:21
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:37
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:36
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:52
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.ray_trace:21
 #: ../../pyvista/pyvista/core/grid.pydocstring of
@@ -8758,6 +8822,10 @@ msgstr ""
 #: pyvista.demos.demos.plot_wave:21
 #: ../../pyvista/pyvista/examples/planets.pydocstring of
 #: pyvista.examples.planets.download_venus_surface:9
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:7
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:26
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:12
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -9758,7 +9826,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.CompositeFilters.rst:99:<autosummary>:1
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.rst:349:<autosummary>:1
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.triangulate:2
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -9916,6 +9984,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:23
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:28
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:36
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:41
@@ -9958,7 +10028,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.intersection:25
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:40
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:56
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:14
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -10145,6 +10215,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:23
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:28
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:36
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:41
@@ -10187,7 +10259,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.intersection:25
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:40
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:56
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:14
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -10365,7 +10437,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:42
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:56
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:72
 #: ../../pyvista/pyvista/core/utilities/fileio.pydocstring of
 #: pyvista.core.utilities.fileio.read:56
 #: ../../pyvista/pyvista/core/utilities/fileio.pydocstring of
@@ -10643,6 +10715,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.warp_by_vector:20
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:25
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.clean:31
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.clip_closed_surface:36
@@ -10665,7 +10739,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:20
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:32
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:48
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.project_points_to_plane:17
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
@@ -10931,7 +11005,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.merge:26
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:26
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:42
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.clean:15
 msgid "**tolerance** : :class:`python:float`, default: 0.0"
@@ -10942,7 +11016,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.merge:25
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:25
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:41
 msgid ""
 "The absolute tolerance to use to find coincident points when "
 "``merge_points=True``."
@@ -11684,6 +11758,10 @@ msgstr ""
 #: pyvista.examples.planets.load_saturn_rings:8
 #: ../../pyvista/pyvista/examples/planets.pydocstring of
 #: pyvista.examples.planets.load_saturn_rings:11
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:10
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:13
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light:39
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
@@ -12512,7 +12590,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_attributes:18
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:19
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:35
 #: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
 #: pyvista.core.pyvista_ndarray.pyvista_ndarray:12
 msgid "**dataset** : :obj:`pyvista.DataSet`"
@@ -12541,7 +12619,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.collision:18
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:18
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:34
 #: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
 #: pyvista.core.pyvista_ndarray.pyvista_ndarray:11
 #: ../../pyvista/pyvista/core/utilities/arrays.pydocstring of
@@ -13562,7 +13640,7 @@ msgid ":py:obj:`DataSet.number_of_cells <pyvista.DataSet.number_of_cells>`\\"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:625:<autosummary>:1
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -26396,23 +26474,23 @@ msgstr ""
 msgid "See :ref:`ref_create_poly` for more examples."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:516:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:519:<autosummary>:1
 msgid ""
 ":py:obj:`PolyData.save <pyvista.PolyData.save>`\\ \\(filename\\[\\, "
 "binary\\, texture\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:516:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:519:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:2
 msgid "Write a surface mesh to disk."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -26420,138 +26498,138 @@ msgstr ""
 msgid "Return the cell normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.faces <pyvista.PolyData.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:2
 msgid "Return the connectivity array of the faces of this PolyData."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ""
 ":py:obj:`PolyData.is_all_triangles <pyvista.PolyData.is_all_triangles>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_all_triangles:2
 msgid ""
 "Return if all the faces of the :class:`pyvista.PolyData` are triangles."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.is_manifold <pyvista.PolyData.is_manifold>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_manifold:2
 msgid "Return if the mesh is manifold (no open edges)."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.lines <pyvista.PolyData.lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:2
 msgid "Return a pointer to the lines as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.n_lines <pyvista.PolyData.n_lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_lines:2
 msgid "Return the number of lines."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:2
 msgid "Return the number of open edges on this mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.n_strips <pyvista.PolyData.n_strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_strips:2
 msgid "Return the number of strips."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.n_verts <pyvista.PolyData.n_verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_verts:2
 msgid "Return the number of vertices."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:2
 msgid "Return the obbTree of the polydata."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:2
 msgid "Return the point normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.strips <pyvista.PolyData.strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.strips:2
 msgid "Return a pointer to the strips as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.verts <pyvista.PolyData.verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:2
 msgid "Get the vertex cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 msgid ":py:obj:`PolyData.volume <pyvista.PolyData.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:870:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:873:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:2
 msgid "Return the approximate volume of the dataset."
@@ -26891,157 +26969,169 @@ msgstr ""
 msgid "An internal class to manage filters/algorithms for polydata datasets."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
+msgid ""
+":py:obj:`PolyDataFilters.append_polydata "
+"<pyvista.PolyDataFilters.append_polydata>`\\ \\(\\*meshes\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:2
+msgid "Append one or more PolyData into this one."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.boolean_add "
 "<pyvista.PolyDataFilters.boolean_add>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_add:2
 msgid "Merge two meshes together."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.boolean_cut "
 "<pyvista.PolyDataFilters.boolean_cut>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_cut:2
 msgid "Cut two meshes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.boolean_difference "
 "<pyvista.PolyDataFilters.boolean_difference>`\\ \\(other\\_mesh\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_difference:2
 msgid "Perform a boolean difference operation between two meshes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.boolean_intersection "
 "<pyvista.PolyDataFilters.boolean_intersection>`\\ \\(other\\_mesh\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_intersection:2
 msgid "Perform a boolean intersection operation on two meshes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.boolean_union "
 "<pyvista.PolyDataFilters.boolean_union>`\\ \\(other\\_mesh\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.boolean_union:2
 msgid "Perform a boolean union operation on two meshes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.clean <pyvista.PolyDataFilters.clean>`\\ "
 "\\(\\[point\\_merging\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.clean:2
 msgid "Clean the mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.clip_closed_surface "
 "<pyvista.PolyDataFilters.clip_closed_surface>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.clip_closed_surface:2
 msgid "Clip a closed polydata surface with a plane."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.collision <pyvista.PolyDataFilters.collision>`\\ "
 "\\(other\\_mesh\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.collision:2
 msgid "Perform collision determination between two polyhedral surfaces."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.compute_arc_length "
 "<pyvista.PolyDataFilters.compute_arc_length>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:2
 msgid "Compute the arc length over the length of the probed line."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.compute_normals "
 "<pyvista.PolyDataFilters.compute_normals>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.compute_normals:2
 msgid "Compute point and/or cell normals for a mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.contour_banded "
 "<pyvista.PolyDataFilters.contour_banded>`\\ \\(n\\_contours\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.contour_banded:2
 msgid "Generate filled contours."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.curvature <pyvista.PolyDataFilters.curvature>`\\ "
 "\\(\\[curv\\_type\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.curvature:2
 msgid "Return the pointwise curvature of a mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.decimate <pyvista.PolyDataFilters.decimate>`\\ "
 "\\(target\\_reduction\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.decimate:2
 msgid ""
@@ -27049,38 +27139,38 @@ msgid ""
 "``vtkQuadricDecimation``."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.decimate_pro "
 "<pyvista.PolyDataFilters.decimate_pro>`\\ \\(reduction\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:2
 msgid "Reduce the number of triangles in a triangular mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.delaunay_2d "
 "<pyvista.PolyDataFilters.delaunay_2d>`\\ \\(\\[tol\\, alpha\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGridFilters.rst:205:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.delaunay_2d:2
 msgid "Apply a 2D Delaunay filter along the best fitting plane."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.edge_mask <pyvista.PolyDataFilters.edge_mask>`\\ "
 "\\(angle\\[\\, progress\\_bar\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:2
 msgid ""
@@ -27088,25 +27178,25 @@ msgid ""
 "greater than angle."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.extrude <pyvista.PolyDataFilters.extrude>`\\ "
 "\\(vector\\[\\, capping\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.extrude:2
 msgid "Sweep polygonal data creating a \"skirt\" from free edges."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.extrude_rotate "
 "<pyvista.PolyDataFilters.extrude_rotate>`\\ \\(\\[resolution\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.extrude_rotate:2
 msgid ""
@@ -27114,62 +27204,62 @@ msgid ""
 " from vertices."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.extrude_trim "
 "<pyvista.PolyDataFilters.extrude_trim>`\\ \\(direction\\, ...\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.extrude_trim:2
 msgid "Extrude polygonal data trimmed by a surface."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.fill_holes <pyvista.PolyDataFilters.fill_holes>`\\ "
 "\\(hole\\_size\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.fill_holes:2
 msgid "Fill holes in a pyvista.PolyData or vtk.vtkPolyData object."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.flip_normals "
 "<pyvista.PolyDataFilters.flip_normals>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.flip_normals:2
 msgid "Flip normals of a triangular mesh by reversing the point ordering."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.geodesic <pyvista.PolyDataFilters.geodesic>`\\ "
 "\\(start\\_vertex\\, ...\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic:2
 msgid ""
 "Calculate the geodesic path between two vertices using Dijkstra's algorithm."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.geodesic_distance "
 "<pyvista.PolyDataFilters.geodesic_distance>`\\ \\(...\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.geodesic_distance:2
 msgid ""
@@ -27177,195 +27267,195 @@ msgid ""
 "algorithm."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.intersection "
 "<pyvista.PolyDataFilters.intersection>`\\ \\(mesh\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.intersection:2
 msgid "Compute the intersection between two meshes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.merge <pyvista.PolyDataFilters.merge>`\\ "
 "\\(dataset\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.merge:2
 msgid "Merge this mesh with one or more datasets."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.multi_ray_trace "
 "<pyvista.PolyDataFilters.multi_ray_trace>`\\ \\(origins\\, ...\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:2
 msgid "Perform multiple ray trace calculations."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.plot_boundaries "
 "<pyvista.PolyDataFilters.plot_boundaries>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_boundaries:2
 msgid "Plot boundaries of a mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.plot_curvature "
 "<pyvista.PolyDataFilters.plot_curvature>`\\ \\(\\[curv\\_type\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_curvature:2
 msgid "Plot the curvature."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.plot_normals "
 "<pyvista.PolyDataFilters.plot_normals>`\\ \\(\\[show\\_mesh\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.plot_normals:2
 msgid "Plot the point normals of a mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.project_points_to_plane "
 "<pyvista.PolyDataFilters.project_points_to_plane>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.project_points_to_plane:2
 msgid "Project points of this mesh to a plane."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.ray_trace <pyvista.PolyDataFilters.ray_trace>`\\ "
 "\\(origin\\, end\\_point\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.ray_trace:2
 msgid "Perform a single ray trace calculation."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.reconstruct_surface "
 "<pyvista.PolyDataFilters.reconstruct_surface>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGridFilters.rst:205:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.reconstruct_surface:2
 msgid "Reconstruct a surface from the points in this dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.remove_points "
 "<pyvista.PolyDataFilters.remove_points>`\\ \\(remove\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.remove_points:2
 msgid "Rebuild a mesh by removing points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.ribbon <pyvista.PolyDataFilters.ribbon>`\\ "
 "\\(\\[width\\, scalars\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.ribbon:2
 msgid "Create a ribbon of the lines in this dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.smooth <pyvista.PolyDataFilters.smooth>`\\ "
 "\\(\\[n\\_iter\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.smooth:2
 msgid "Adjust point coordinates using Laplacian smoothing."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.smooth_taubin "
 "<pyvista.PolyDataFilters.smooth_taubin>`\\ \\(\\[n\\_iter\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:2
 msgid "Smooth a PolyData DataSet with Taubin smoothing."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.strip <pyvista.PolyDataFilters.strip>`\\ "
 "\\(\\[join\\, max\\_length\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.strip:2
 msgid "Strip poly data cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.subdivide <pyvista.PolyDataFilters.subdivide>`\\ "
 "\\(nsub\\[\\, subfilter\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide:2
 msgid ""
 "Increase the number of triangles in a single, connected triangular mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.subdivide_adaptive "
 "<pyvista.PolyDataFilters.subdivide_adaptive>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:2
 msgid ""
@@ -27373,22 +27463,85 @@ msgid ""
 "area metrics."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.triangulate "
 "<pyvista.PolyDataFilters.triangulate>`\\ \\(\\[inplace\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 msgid ""
 ":py:obj:`PolyDataFilters.tube <pyvista.PolyDataFilters.tube>`\\ "
 "\\(\\[radius\\, scalars\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:408:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.rst:413:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.tube:2
 msgid "Generate a tube around each input line."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.append_polydata.rst:2
+msgid "pyvista.PolyDataFilters.append\\_polydata"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:4
+msgid ""
+"Under the hood, the VTK `vtkAppendPolyDataFilter "
+"<https://vtk.org/doc/nightly/html/classvtkAppendPolyData.html#details>`_ "
+"filter is used to perform the append operation."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:11
+msgid ""
+"As stated in the VTK documentation of `vtkAppendPolyDataFilter "
+"<https://vtk.org/doc/nightly/html/classvtkAppendPolyData.html#details>`_, "
+"point and cell data are added to the output PolyData **only** if they are "
+"present across **all** input PolyData."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:17
+msgid ":func:`pyvista.PolyDataFilters.merge`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:22
+msgid "**\\*meshes** : :class:`python:list`\\[:obj:`pyvista.PolyData`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:21
+msgid "python:list[pyvista.PolyData]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:22
+msgid "The PolyData(s) to append with the current one."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:25
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.decimate:61
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:58
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.triangulate:9
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.tube:34
+msgid "Whether to update the mesh in-place."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.append_polydata:33
+msgid "Appended PolyData(s)."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.append_polydata.rst:23
+msgid "Append more than one PolyData."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyDataFilters.boolean_add.rst:2
@@ -28499,17 +28652,6 @@ msgid "**tensors_weight** : :class:`python:float`, default: 0.1"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.decimate:61
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:58
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.triangulate:9
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.tube:34
-msgid "Whether to update the mesh in-place."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.decimate:69
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.decimate_pro:66
@@ -29409,12 +29551,34 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:19
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:16
+msgid ""
+"Before version ``0.39.0``, if all input datasets were of type "
+":class:`pyvista.PolyData`, the VTK ``vtkAppendPolyDataFilter`` and "
+"``vtkCleanPolyData`` filters were used to perform merging. Otherwise, "
+":func:`DataSetFilters.merge`, which uses the VTK ``vtkAppendFilter`` filter,"
+" was called. To enhance performance and coherence with merging operations "
+"available for other datasets in pyvista, the merging operation has been "
+"delegated in ``0.39.0`` to :func:`DataSetFilters.merge` only, irrespectively"
+" of input datasets types. This induced that points ordering can be altered "
+"compared to previous pyvista versions when merging only PolyData together. "
+"To obtain similar results as before ``0.39.0`` for multiple PolyData, "
+"combine :func:`PolyDataFilters.append_polydata` and "
+":func:`PolyDataFilters.clean`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:30
+msgid ":func:`PolyDataFilters.append_polydata`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:35
 msgid "PyVista dataset to merge this mesh with."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:22
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:38
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_clip_box:38
 msgid ""
@@ -29423,12 +29587,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:22
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:38
 msgid "Merge equivalent points when ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:29
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:45
 msgid ""
 "Updates grid inplace when ``True`` if the input type is a "
 ":class:`pyvista.PolyData`. For other input meshes the result is a "
@@ -29436,21 +29600,21 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:37
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:53
 msgid ""
 "**main_has_priority** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:35
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:51
 msgid ""
 "When this parameter is ``True`` and ``merge_points=True``, the arrays of the"
 " merging grids will be overwritten by the original main mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.merge:45
+#: pyvista.core.filters.poly_data.PolyDataFilters.merge:61
 msgid ""
 ":class:`pyvista.PolyData` if ``dataset`` is a :class:`pyvista.PolyData`, "
 "otherwise a :class:`pyvista.UnstructuredGrid`."
@@ -43620,7 +43784,7 @@ msgstr ""
 msgid "pyvista.Actor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:2
 msgid "Wrap vtkActor."
@@ -43954,11 +44118,518 @@ msgstr ""
 msgid "pyvista.Actor.visibility"
 msgstr ""
 
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:2
+msgid "pyvista.Axes"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:2
+msgid "PyVista wrapper for the VTK Axes class."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:8
+msgid ""
+"**show_actor** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:8
+msgid "Hide or show the actor of these axes.  Default ``False``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:11
+msgid "**actor_scale** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:11
+msgid "Scale the size of the axes actor.  Default ``1``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:14
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:52
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:70
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_silhouette:18
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.add_bounding_box:24
+#: ../../pyvista/pyvista/plotting/tools.pydocstring of
+#: pyvista.plotting.tools.create_axes_orientation_box:8
+msgid "**line_width** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:14
+msgid "Width of the axes lines.  Default ``1``."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:27
+msgid ""
+"**symmetric** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes:17
+msgid "If true, the axis continue to negative values."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:3
+msgid "Create an instance of axes at the pyvista module level."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+msgid ":py:obj:`Axes.hide_actor <pyvista.Axes.hide_actor>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.hide_actor:2
+msgid "Hide an actor of axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+msgid ":py:obj:`Axes.hide_symmetric <pyvista.Axes.hide_symmetric>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.hide_symmetric:2
+msgid "Hide symmetric of axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+msgid ":py:obj:`Axes.show_actor <pyvista.Axes.show_actor>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.show_actor:2
+msgid "Show an actor of axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+msgid ":py:obj:`Axes.show_symmetric <pyvista.Axes.show_symmetric>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:42:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of
+#: pyvista.plotting.axes.Axes.show_symmetric:2
+msgid "Show symmetric of axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:182:<autosummary>:1
+msgid ":py:obj:`Axes.origin <pyvista.Axes.origin>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:182:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes.pydocstring of pyvista.Axes.origin:2
+msgid "Origin of the axes in world coordinates."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.hide_actor.rst:2
+msgid "pyvista.Axes.hide\\_actor"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.hide_symmetric.rst:2
+msgid "pyvista.Axes.hide\\_symmetric"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.origin.rst:2
+msgid "pyvista.Axes.origin"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.origin.rst:8
+msgid "Set the origin of the camera."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.show_actor.rst:2
+msgid "pyvista.Axes.show\\_actor"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.show_symmetric.rst:2
+msgid "pyvista.Axes.show\\_symmetric"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:2
+msgid "pyvista.AxesActor"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.plotting.axes_actor.AxesActor:2
+msgid "Axes actor wrapper for vtkAxesActor."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.plotting.axes_actor.AxesActor:4
+msgid ""
+"Hybrid 2D/3D actor used to represent 3D axes in a scene. The user can define"
+" the geometry to use for the shaft or the tip, and the user can set the text"
+" for the three axes. To see full customization options, refer to "
+"`vtkAxesActor Details "
+"<https://vtk.org/doc/nightly/html/classvtkAxesActor.html#details>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:3
+msgid "Customize the axis shaft color and shape."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:29
+msgid ""
+"Or you can use this as a custom orientation widget with "
+":func:`add_orientation_widget() <pyvista.Renderer.add_orientation_widget>`:"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.cone_radius <pyvista.AxesActor.cone_radius>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cone_radius:2
+msgid "Return or set the radius of the cone tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.cone_resolution <pyvista.AxesActor.cone_resolution>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cone_resolution:2
+msgid "Return or set the resolution of the cone tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.cylinder_radius <pyvista.AxesActor.cylinder_radius>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cylinder_radius:2
+msgid "Return or set the radius of the shaft cylinder."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.cylinder_resolution "
+"<pyvista.AxesActor.cylinder_resolution>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.cylinder_resolution:2
+msgid "Return or set the resolution of the shaft cylinder."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.label_position <pyvista.AxesActor.label_position>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.label_position:2
+msgid "Position of the label along the axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.shaft_length <pyvista.AxesActor.shaft_length>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.shaft_length:2
+msgid "Return or set the length of the axes shaft."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.shaft_type <pyvista.AxesActor.shaft_type>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.shaft_type:2
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.tip_type:2
+msgid "Return or set the shaft type."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.sphere_radius <pyvista.AxesActor.sphere_radius>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.sphere_radius:2
+msgid "Return or set the radius of the spherical tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.sphere_resolution "
+"<pyvista.AxesActor.sphere_resolution>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.sphere_resolution:2
+msgid "Return or set the resolution of the spherical tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.tip_length <pyvista.AxesActor.tip_length>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.tip_length:2
+msgid "Return or set the length of the tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.tip_type <pyvista.AxesActor.tip_type>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.total_length <pyvista.AxesActor.total_length>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.total_length:2
+msgid "Return or set the length of all axes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.visibility <pyvista.AxesActor.visibility>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.visibility:2
+msgid "Return or set AxesActor visibility."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.x_axis_label <pyvista.AxesActor.x_axis_label>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.x_axis_label:2
+msgid "Return or set the label for the X axis."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.x_axis_shaft_properties "
+"<pyvista.AxesActor.x_axis_shaft_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.x_axis_shaft_properties:2
+msgid "Return or set the properties of the X axis shaft."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.x_axis_tip_properties "
+"<pyvista.AxesActor.x_axis_tip_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.x_axis_tip_properties:2
+msgid "Return or set the properties of the X axis tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.y_axis_label <pyvista.AxesActor.y_axis_label>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.y_axis_label:2
+msgid "Return or set the label for the Y axis."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.y_axis_shaft_properties "
+"<pyvista.AxesActor.y_axis_shaft_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.y_axis_shaft_properties:2
+msgid "Return or set the properties of the Y axis shaft."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.y_axis_tip_properties "
+"<pyvista.AxesActor.y_axis_tip_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.y_axis_tip_properties:2
+msgid "Return or set the properties of the Y axis tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ":py:obj:`AxesActor.z_axis_label <pyvista.AxesActor.z_axis_label>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.z_axis_label:2
+msgid "Return or set the label for the Z axis."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.z_axis_shaft_properties "
+"<pyvista.AxesActor.z_axis_shaft_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.z_axis_shaft_properties:2
+msgid "Return or set the properties of the Z axis shaft."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+msgid ""
+":py:obj:`AxesActor.z_axis_tip_properties "
+"<pyvista.AxesActor.z_axis_tip_properties>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.rst:350:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.z_axis_tip_properties:2
+msgid "Return or set the properties of the Z axis tip."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.cone_radius.rst:2
+msgid "pyvista.AxesActor.cone\\_radius"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.cone_resolution.rst:2
+msgid "pyvista.AxesActor.cone\\_resolution"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.cylinder_radius.rst:2
+msgid "pyvista.AxesActor.cylinder\\_radius"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.cylinder_resolution.rst:2
+msgid "pyvista.AxesActor.cylinder\\_resolution"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.label_position.rst:2
+msgid "pyvista.AxesActor.label\\_position"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.shaft_length.rst:2
+msgid "pyvista.AxesActor.shaft\\_length"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.shaft_type.rst:2
+msgid "pyvista.AxesActor.shaft\\_type"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.shaft_type:4
+msgid "Can be either a cylinder(0) or a line(1)."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.sphere_radius.rst:2
+msgid "pyvista.AxesActor.sphere\\_radius"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.sphere_resolution.rst:2
+msgid "pyvista.AxesActor.sphere\\_resolution"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.tip_length.rst:2
+msgid "pyvista.AxesActor.tip\\_length"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.tip_type.rst:2
+msgid "pyvista.AxesActor.tip\\_type"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/axes_actor.pydocstring of
+#: pyvista.AxesActor.tip_type:4
+msgid "Can be either a cone(0) or a sphere(1)."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.total_length.rst:2
+msgid "pyvista.AxesActor.total\\_length"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.visibility.rst:2
+msgid "pyvista.AxesActor.visibility"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.visibility.rst:3
+msgid ""
+"Create an Axes object and then access the visibility attribute of its "
+"AxesActor."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.x_axis_label.rst:2
+msgid "pyvista.AxesActor.x\\_axis\\_label"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.x_axis_shaft_properties.rst:2
+msgid "pyvista.AxesActor.x\\_axis\\_shaft\\_properties"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.x_axis_tip_properties.rst:2
+msgid "pyvista.AxesActor.x\\_axis\\_tip\\_properties"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.y_axis_label.rst:2
+msgid "pyvista.AxesActor.y\\_axis\\_label"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.y_axis_shaft_properties.rst:2
+msgid "pyvista.AxesActor.y\\_axis\\_shaft\\_properties"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.y_axis_tip_properties.rst:2
+msgid "pyvista.AxesActor.y\\_axis\\_tip\\_properties"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.z_axis_label.rst:2
+msgid "pyvista.AxesActor.z\\_axis\\_label"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.z_axis_shaft_properties.rst:2
+msgid "pyvista.AxesActor.z\\_axis\\_shaft\\_properties"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.AxesActor.z_axis_tip_properties.rst:2
+msgid "pyvista.AxesActor.z\\_axis\\_tip\\_properties"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.BlockAttributes.rst:2
 msgid "pyvista.BlockAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.BlockAttributes:2
 msgid "Block attributes used to set the attributes of a block."
@@ -44145,7 +44816,7 @@ msgstr ""
 msgid "pyvista.CameraPosition"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.CameraPosition:2
 msgid "Container to hold camera location attributes."
@@ -44241,7 +44912,7 @@ msgstr ""
 msgid "pyvista.CompositeAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes:2
 msgid "Block attributes."
@@ -44416,7 +45087,7 @@ msgstr ""
 msgid "pyvista.CompositePolyDataMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -44886,7 +45557,7 @@ msgstr ""
 msgid "pyvista.CubeAxesActor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/cube_axes_actor.pydocstring of
 #: pyvista.plotting.cube_axes_actor.CubeAxesActor:2
 msgid "Wrap vtkCubeAxesActor."
@@ -45632,7 +46303,7 @@ msgstr ""
 msgid "pyvista.DataSetMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper:2
 msgid "Wrap _vtk.vtkDataSetMapper."
@@ -46023,7 +46694,7 @@ msgstr ""
 msgid "pyvista.LookupTable"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:2
 msgid "Scalar to RGBA mapping table."
@@ -46975,7 +47646,7 @@ msgstr ""
 msgid "pyvista.Plotter"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.Plotter:2
 msgid "Plotting object to display vtk meshes or numpy arrays."
@@ -47223,6 +47894,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_box_widget:2
 msgid "Add a box widget to the scene."
@@ -47235,6 +47907,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_camera_orientation_widget:2
 msgid "Add a camera orientation widget to the active renderer."
@@ -47260,6 +47933,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_checkbox_button_widget:2
 msgid "Add a checkbox button widget to the scene."
@@ -47359,6 +48033,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_line_widget:2
 msgid "Add a line widget to the scene."
@@ -47396,6 +48071,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_clip_box:2
 msgid "Clip a mesh using a box widget."
@@ -47408,6 +48084,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_clip_plane:2
 msgid "Clip a mesh using a plane widget."
@@ -47420,6 +48097,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_isovalue:2
 msgid "Create a contour of a mesh with a slider."
@@ -47432,6 +48110,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_slice:2
 msgid "Slice a mesh using a plane widget."
@@ -47444,6 +48123,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_slice_orthogonal:2
 msgid "Slice a mesh with three interactive planes."
@@ -47456,6 +48136,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_slice_spline:2
 msgid "Slice a mesh with a spline widget."
@@ -47468,6 +48149,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_mesh_threshold:2
 msgid "Apply a threshold on a mesh with a slider."
@@ -47505,6 +48187,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_plane_widget:2
 msgid "Add a plane widget to the scene."
@@ -47591,6 +48274,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:2
 msgid "Add a slider bar widget."
@@ -47603,6 +48287,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:2
 msgid "Add one or many sphere widgets to a scene."
@@ -47615,6 +48300,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_spline_widget:2
 msgid "Create and add a spline widget to the scene."
@@ -47639,6 +48325,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:2
 msgid "Add a text slider bar widget."
@@ -47675,6 +48362,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_volume_clip_plane:2
 msgid "Clip a volume using a plane widget."
@@ -47707,6 +48395,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_box_widgets:2
 msgid "Remove all of the box widgets."
@@ -47719,6 +48408,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_button_widgets:2
 msgid "Remove all of the button widgets."
@@ -47731,6 +48421,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_camera_widgets:2
 msgid "Remove all of the camera widgets."
@@ -47755,6 +48446,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_line_widgets:2
 msgid "Remove all of the line widgets."
@@ -47779,6 +48471,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_plane_widgets:2
 msgid "Remove all of the plane widgets."
@@ -47791,6 +48484,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_slider_widgets:2
 msgid "Remove all of the slider widgets."
@@ -47803,6 +48497,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_sphere_widgets:2
 msgid "Remove all of the sphere widgets."
@@ -47815,6 +48510,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:936:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.clear_spline_widgets:2
 msgid "Remove all of the spline widgets."
@@ -50338,19 +51034,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:52
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:70
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_silhouette:18
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.add_bounding_box:24
-#: ../../pyvista/pyvista/plotting/tools.pydocstring of
-#: pyvista.plotting.tools.create_axes_orientation_box:8
-msgid "**line_width** : :class:`python:float`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_lines:21
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:24
@@ -50766,10 +51449,12 @@ msgid "Box widget."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_box_widget.rst:3
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_box_widget.rst:3
 msgid "Shows an interactive clip box."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_box_widget.rst:25
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_box_widget.rst:25
 msgid "For a full example see :ref:`box_widget_example`."
 msgstr ""
 
@@ -50815,6 +51500,7 @@ msgid "Camera orientation widget."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_camera_orientation_widget.rst:3
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_camera_orientation_widget.rst:3
 msgid "Add a camera orientation widget to the scene."
 msgstr ""
 
@@ -50960,10 +51646,12 @@ msgid "The VTK button widget configured as a checkbox button."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_checkbox_button_widget.rst:3
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_checkbox_button_widget.rst:3
 msgid "The following example generates a static image of the widget."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_checkbox_button_widget.rst:29
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_checkbox_button_widget.rst:29
 msgid "Download the interactive example at :ref:`checkbox_widget_example`."
 msgstr ""
 
@@ -60894,7 +61582,7 @@ msgstr ""
 msgid "pyvista.Property"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:2
 msgid "Wrap vtkProperty and expose it pythonically."
@@ -62032,7 +62720,7 @@ msgstr ""
 msgid "pyvista.Renderer"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer:2
 msgid "Renderer class."
@@ -63239,6 +63927,285 @@ msgstr ""
 msgid "pyvista.Renderer.width"
 msgstr ""
 
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:2
+msgid "pyvista.WidgetHelper"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:81:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper:2
+msgid "An internal class to manage widgets."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper:4
+msgid "It also manages and other helper methods involving widgets."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_box_widget "
+"<pyvista.WidgetHelper.add_box_widget>`\\ \\(callback\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_camera_orientation_widget "
+"<pyvista.WidgetHelper.add_camera_orientation_widget>`\\ \\(\\[...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_checkbox_button_widget "
+"<pyvista.WidgetHelper.add_checkbox_button_widget>`\\ \\(callback\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_line_widget "
+"<pyvista.WidgetHelper.add_line_widget>`\\ \\(callback\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_clip_box "
+"<pyvista.WidgetHelper.add_mesh_clip_box>`\\ \\(mesh\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_clip_plane "
+"<pyvista.WidgetHelper.add_mesh_clip_plane>`\\ \\(mesh\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_isovalue "
+"<pyvista.WidgetHelper.add_mesh_isovalue>`\\ \\(mesh\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_slice "
+"<pyvista.WidgetHelper.add_mesh_slice>`\\ \\(mesh\\[\\, normal\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_slice_orthogonal "
+"<pyvista.WidgetHelper.add_mesh_slice_orthogonal>`\\ \\(mesh\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_slice_spline "
+"<pyvista.WidgetHelper.add_mesh_slice_spline>`\\ \\(mesh\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_mesh_threshold "
+"<pyvista.WidgetHelper.add_mesh_threshold>`\\ \\(mesh\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_plane_widget "
+"<pyvista.WidgetHelper.add_plane_widget>`\\ \\(callback\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_slider_widget "
+"<pyvista.WidgetHelper.add_slider_widget>`\\ \\(callback\\, rng\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_sphere_widget "
+"<pyvista.WidgetHelper.add_sphere_widget>`\\ \\(callback\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_spline_widget "
+"<pyvista.WidgetHelper.add_spline_widget>`\\ \\(callback\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_text_slider_widget "
+"<pyvista.WidgetHelper.add_text_slider_widget>`\\ \\(...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.add_volume_clip_plane "
+"<pyvista.WidgetHelper.add_volume_clip_plane>`\\ \\(volume\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_box_widgets "
+"<pyvista.WidgetHelper.clear_box_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_button_widgets "
+"<pyvista.WidgetHelper.clear_button_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_camera_widgets "
+"<pyvista.WidgetHelper.clear_camera_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_line_widgets "
+"<pyvista.WidgetHelper.clear_line_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_plane_widgets "
+"<pyvista.WidgetHelper.clear_plane_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_slider_widgets "
+"<pyvista.WidgetHelper.clear_slider_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_sphere_widgets "
+"<pyvista.WidgetHelper.clear_sphere_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`WidgetHelper.clear_spline_widgets "
+"<pyvista.WidgetHelper.clear_spline_widgets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+msgid ":py:obj:`WidgetHelper.close <pyvista.WidgetHelper.close>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.rst:144:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/widgets.pydocstring of
+#: pyvista.plotting.widgets.WidgetHelper.close:2
+msgid "Close the widgets."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_box_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_box\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_camera_orientation_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_camera\\_orientation\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_checkbox_button_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_checkbox\\_button\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_line_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_line\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_clip_box.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_clip\\_box"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_clip_plane.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_clip\\_plane"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_isovalue.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_isovalue"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_slice.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_slice"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_slice_orthogonal.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_slice\\_orthogonal"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_slice_spline.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_slice\\_spline"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_mesh_threshold.rst:2
+msgid "pyvista.WidgetHelper.add\\_mesh\\_threshold"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_plane_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_plane\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_slider_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_slider\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_sphere_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_sphere\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_spline_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_spline\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_text_slider_widget.rst:2
+msgid "pyvista.WidgetHelper.add\\_text\\_slider\\_widget"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.add_volume_clip_plane.rst:2
+msgid "pyvista.WidgetHelper.add\\_volume\\_clip\\_plane"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_box_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_box\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_button_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_button\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_camera_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_camera\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_line_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_line\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_plane_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_plane\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_slider_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_slider\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_sphere_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_sphere\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.clear_spline_widgets.rst:2
+msgid "pyvista.WidgetHelper.clear\\_spline\\_widgets"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.WidgetHelper.close.rst:2
+msgid "pyvista.WidgetHelper.close"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.create_axes_marker.rst:2
 msgid "pyvista.create\\_axes\\_marker"
 msgstr ""
@@ -63513,7 +64480,7 @@ msgstr ""
 msgid "pyvista.plotting.\\_BaseMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper._BaseMapper:2
 msgid "Base Mapper with methods common to other mappers."
@@ -63753,7 +64720,7 @@ msgstr ""
 msgid "pyvista.plotting.opts.InterpolationType"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/opts.pydocstring of
 #: pyvista.plotting.opts.InterpolationType:2
 msgid "Lighting interpolation types."
@@ -63781,7 +64748,7 @@ msgstr ""
 msgid "pyvista.plotting.volume.Volume"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/volume.pydocstring of
 #: pyvista.plotting.volume.Volume:2
 msgid "Wrapper class for VTK volume."
@@ -63828,7 +64795,7 @@ msgstr ""
 msgid "pyvista.plotting.volume\\_property.VolumeProperty"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:2
 msgid "Wrap the VTK class vtkVolumeProperty."
@@ -72787,7 +73754,7 @@ msgid "Charts"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/charts/index.rst:5
-#: ../../pyvista/doc/source/api/plotting/index.rst:58
+#: ../../pyvista/doc/source/api/plotting/index.rst:60
 msgid ""
 "Charts API reference. These dedicated classes can be used to embed charts in"
 " plotting windows. Note that full charts functionality requires a VTK "
@@ -72903,12 +73870,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/source/api/plotting/index.rst:77
+#: ../../pyvista/doc/source/api/plotting/index.rst:83
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/source/api/plotting/index.rst:78
+#: ../../pyvista/doc/source/api/plotting/index.rst:84
 msgid ""
 "These functions provide a simplified interface to the various plotting "
 "routines in PyVista."
@@ -72967,108 +73934,122 @@ msgid ""
 "plotting functionality in PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\, name\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`Axes <pyvista.Axes>`\\ \\(\\[show\\_actor\\, actor\\_scale\\, "
+"line\\_width\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
+msgid ":py:obj:`AxesActor <pyvista.AxesActor>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`CameraPosition <pyvista.CameraPosition>`\\ \\(position\\, "
 "focal\\_point\\, viewup\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`CubeAxesActor <pyvista.CubeAxesActor>`\\ \\(camera\\[\\, "
 "minor\\_ticks\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, "
 "flip\\, values\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, "
 "color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, "
 "border\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`plotting._BaseMapper <pyvista.plotting._BaseMapper>`\\ "
 "\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`plotting.opts.InterpolationType "
 "<pyvista.plotting.opts.InterpolationType>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:43:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:45:<autosummary>:1
 msgid ""
 ":py:obj:`plotting.volume_property.VolumeProperty "
 "<pyvista.plotting.volume_property.VolumeProperty>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:45
+#: ../../pyvista/doc/source/api/plotting/index.rst:47
 msgid "Composite Plotting Reference"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:46
+#: ../../pyvista/doc/source/api/plotting/index.rst:48
 msgid ""
 "These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 msgid ""
 ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ "
 "\\(dataset\\[\\, theme\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 msgid ""
 ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, "
 "dataset\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:55:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:57:<autosummary>:1
 msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:57
+#: ../../pyvista/doc/source/api/plotting/index.rst:59
 msgid "Charts API"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:70
+#: ../../pyvista/doc/source/api/plotting/index.rst:72
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:71
+#: ../../pyvista/doc/source/api/plotting/index.rst:73
 msgid ""
 "The :class:`pyvista.Plotter` class inherits all of the widget methods "
 "described by the ``pyvista.WidgetHelper`` class. For additional details, see"
 " the :ref:`widgets` examples."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:81:<autosummary>:1
+msgid ":py:obj:`WidgetHelper <pyvista.WidgetHelper>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/plotting.rst:6
