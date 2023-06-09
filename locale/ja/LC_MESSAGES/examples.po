@@ -2846,6 +2846,11 @@ msgid ""
 "or simply create a cell from the ``pyvista.core.cells`` module and inspect "
 "its attributes."
 msgstr ""
+":class:`pyvista.UnstructuredGrid` "
+"の3つの主要な入力がわかったので，1つ以上のセルを持つ非構造化グリッドを作成することはとても簡単です．もし，点の順序や追加を参照する必要がある場合は， "
+"`cells.py "
+"<https://github.com/pyvista/pyvista/blob/main/pyvista/examples/cells.py>`_ "
+"のソースを読むか，あるいは ``pyvista.core.cells`` モジュールからセルを作成してその属性を確認することができます．"
 
 #: ../../pyvista/doc/source/examples/00-load/linear-cells.rst:289
 msgid "Plot all linear cell Types"
@@ -2860,7 +2865,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/00-load/linear-cells.rst:387
 msgid "**Total running time of the script:** ( 0 minutes  4.242 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  4.242 seconds)"
 
 #: ../../pyvista/doc/source/examples/00-load/linear-cells.rst:401
 msgid ""
@@ -3497,7 +3502,7 @@ msgstr "計算時間"
 
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:9
 msgid "**00:04.242** total execution time for **examples_00-load** files:"
-msgstr ""
+msgstr "**00:04.242** total execution time for **examples_00-load** files:"
 
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:12
 msgid ":ref:`sphx_glr_examples_00-load_linear-cells.py` (``linear-cells.py``)"
@@ -3506,7 +3511,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:12
 msgid "00:04.242"
-msgstr ""
+msgstr "00:04.242"
 
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:12
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:14
@@ -6604,6 +6609,10 @@ msgid ""
 " and then performing FFT of the sampled noise to show the frequency content "
 "of that noise."
 msgstr ""
+"ここでは，まず :func:`pyvista.sample_function() "
+"<pyvista.core.utilities.features.sample_function>` を使って Perlin ノイズを生成して "
+":func:`pyvista.perlin_noise <pyvista.core.utilities.features.perlin_noise>` "
+"をサンプリングし，そのノイズの周波数コンテンツを示すためにサンプルしたノイズを FFT して FFT 使用法を実演しています．"
 
 #: ../../pyvista/doc/source/examples/01-filter/image-fft-perlin-noise.rst:55
 msgid "Generate Perlin Noise"
@@ -6656,6 +6665,8 @@ msgid ""
 "to :func:`pyvista.perlin_noise "
 "<pyvista.core.utilities.features.perlin_noise>`."
 msgstr ""
+"さて，ノイズを周波数領域でプロットしてみましょう．これは :func:`pyvista.perlin_noise "
+"<pyvista.core.utilities.features.perlin_noise>` で指定した周波数と一致しています．"
 
 #: ../../pyvista/doc/source/examples/01-filter/image-fft-perlin-noise.rst:171
 msgid "Low Pass Filter"
@@ -6741,7 +6752,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/image-fft-perlin-noise.rst:369
 msgid "**Total running time of the script:** ( 0 minutes  33.940 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  33.940 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/image-fft-perlin-noise.rst:383
 msgid ""
@@ -8411,6 +8422,9 @@ msgid ""
 "<sphx_glr_download_examples_01-filter_sampling_functions_2d.py>` to download"
 " the full example code"
 msgstr ""
+":ref:`Go to the end "
+"<sphx_glr_download_examples_01-filter_sampling_functions_2d.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_2d.rst:24
 msgid "Sample Function: Perlin Noise in 2D"
@@ -8422,6 +8436,8 @@ msgid ""
 "Here we use :func:`pyvista.core.utilities.features.sample_function` to "
 "sample Perlin noise over a region to generate random terrain."
 msgstr ""
+"ここでは， :func:`pyvista.core.utilities.features.sample_function` "
+"を使用して領域上のPerlinノイズをサンプリングし，ランダムな地表を生成します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_2d.rst:28
 msgid ""
@@ -8472,7 +8488,7 @@ msgstr "カスタムのライトとシャドウを使用して地表を表示す
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_2d.rst:176
 msgid "**Total running time of the script:** ( 0 minutes  2.414 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.414 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_2d.rst:190
 msgid ""
@@ -8492,6 +8508,9 @@ msgid ""
 "<sphx_glr_download_examples_01-filter_sampling_functions_3d.py>` to download"
 " the full example code"
 msgstr ""
+":ref:`Go to the end "
+"<sphx_glr_download_examples_01-filter_sampling_functions_3d.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_3d.rst:22
 msgid "Sample Function: Perlin Noise in 3D"
@@ -8580,7 +8599,7 @@ msgstr "青以外の色の制限"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_3d.rst:130
 msgid "**Total running time of the script:** ( 0 minutes  0.491 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  0.491 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_3d.rst:144
 msgid ""
@@ -8596,7 +8615,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
 msgid "**00:36.845** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:36.845** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid ""
@@ -8608,7 +8627,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid "00:33.940"
-msgstr ""
+msgstr "00:33.940"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid ""
@@ -8620,7 +8639,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid "00:02.414"
-msgstr ""
+msgstr "00:02.414"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
 msgid ""
@@ -8632,7 +8651,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
 msgid "00:00.491"
-msgstr ""
+msgstr "00:00.491"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
 msgid ""
@@ -14547,6 +14566,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_scalar-bars.py>` to "
 "download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_scalar-bars.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/02-plot/scalar-bars.rst:24
 msgid "Customize Scalar Bars"
@@ -14602,7 +14623,7 @@ msgstr "辞書を使用して目的の値に注釈を付けます．ディクシ
 
 #: ../../pyvista/doc/source/examples/02-plot/scalar-bars.rst:235
 msgid "**Total running time of the script:** ( 0 minutes  2.830 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.830 seconds)"
 
 #: ../../pyvista/doc/source/examples/02-plot/scalar-bars.rst:249
 msgid ""
@@ -14657,7 +14678,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:9
 msgid "**00:06.171** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:06.171** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
 msgid ":ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)"
@@ -14673,7 +14694,7 @@ msgstr ":ref:`sphx_glr_examples_02-plot_scalar-bars.py` (``scalar-bars.py``)"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:14
 msgid "00:02.830"
-msgstr ""
+msgstr "00:02.830"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:16
 msgid ""
@@ -17774,6 +17795,9 @@ msgid ""
 "<sphx_glr_download_examples_04-lights_plotter_builtins.py>` to download the "
 "full example code"
 msgstr ""
+":ref:`Go to the end "
+"<sphx_glr_download_examples_04-lights_plotter_builtins.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/04-lights/plotter_builtins.rst:24
 msgid "Plotter Lighting Systems"
@@ -17866,7 +17890,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/04-lights/plotter_builtins.rst:234
 msgid "**Total running time of the script:** ( 0 minutes  2.413 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  2.413 seconds)"
 
 #: ../../pyvista/doc/source/examples/04-lights/plotter_builtins.rst:248
 msgid ""
@@ -17886,7 +17910,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/04-lights/sg_execution_times.rst:9
 msgid "**00:02.413** total execution time for **examples_04-lights** files:"
-msgstr ""
+msgstr "**00:02.413** total execution time for **examples_04-lights** files:"
 
 #: ../../pyvista/doc/source/examples/04-lights/sg_execution_times.rst:12
 msgid ""
@@ -17898,7 +17922,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/04-lights/sg_execution_times.rst:12
 msgid "00:02.413"
-msgstr ""
+msgstr "00:02.413"
 
 #: ../../pyvista/doc/source/examples/04-lights/sg_execution_times.rst:14
 msgid ":ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)"
