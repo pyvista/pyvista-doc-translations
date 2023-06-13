@@ -74,7 +74,7 @@ Download a gridded topography surface (DEM)
     <div class="output_subarea output_html rendered_html output_result">
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1677401</td></tr>
     <tr><td>N Points</td><td>1680000</td></tr>
     <tr><td>X Bounds</td><td>1.810e+06, 1.831e+06</td></tr>
@@ -100,8 +100,8 @@ Download a gridded topography surface (DEM)
 
 Now let's subsample and extract an area of interest to make this example
 simple (also the DEM we just load is pretty big).
-Since the DEM we loaded is a :class:`pyvista.UniformGrid` mesh, we can use
-the :func:`pyvista.UniformGridFilters.extract_subset` filter:
+Since the DEM we loaded is a :class:`pyvista.ImageData` mesh, we can use
+the :func:`pyvista.ImageDataFilters.extract_subset` filter:
 
 .. GENERATED FROM PYTHON SOURCE LINES 37-41
 
@@ -267,7 +267,7 @@ Once we have those structured coordinates, we can create a
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.449 seconds)
+   **Total running time of the script:** ( 0 minutes  3.547 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:

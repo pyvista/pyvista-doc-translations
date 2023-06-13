@@ -25,12 +25,12 @@ Gaussian Smoothing
 
 Perform a Gaussian convolution on a uniformly gridded data set.
 
-:class:`pyvista.UniformGrid` data sets (a.k.a. images) a can be smoothed by
+:class:`pyvista.ImageData` data sets (a.k.a. images) a can be smoothed by
 convolving the image data set with a Gaussian for one- to three-dimensional
 inputs. This is commonly referred to as Gaussian blurring and typically used
 to reduce noise or decrease the detail of an image dataset.
 
-See also :func:`pyvista.UniformGridFilters.gaussian_smooth`.
+See also :func:`pyvista.ImageDataFilters.gaussian_smooth`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 17-26
 
@@ -145,7 +145,7 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.678 seconds)
+   **Total running time of the script:** ( 0 minutes  9.237 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:

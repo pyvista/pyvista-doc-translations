@@ -400,7 +400,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.ImageData using pyv...">
 
 .. only:: html
 
@@ -417,7 +417,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.UniformGrid using p...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example shows how to apply a Fast Fourier Transform (FFT) to a pyvista.ImageData using pyv...">
 
 .. only:: html
 

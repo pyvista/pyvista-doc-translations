@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_depth_of_field.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_depth_of_field.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -61,7 +61,7 @@ filter.
 
     # We use a uniform grid here simply to create equidistantly spaced points for
     # our glyph filter
-    grid = pv.UniformGrid(dimensions=(4, 3, 3), spacing=(3, 1, 1))
+    grid = pv.ImageData(dimensions=(4, 3, 3), spacing=(3, 1, 1))
 
     bunnies = grid.glyph(geom=mesh, scale=False, orient=False)
     bunnies
@@ -169,7 +169,7 @@ Show the plot while enabling depth of field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  9.310 seconds)
+   **Total running time of the script:** ( 1 minutes  35.915 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth_of_field.py:
@@ -177,6 +177,8 @@ Show the plot while enabling depth of field
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

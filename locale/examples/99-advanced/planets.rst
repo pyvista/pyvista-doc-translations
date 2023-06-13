@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_planets.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_planets.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -123,6 +123,51 @@ This section relies on calculations in `Visualizing Celestial Bodies in 3D
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+
 
 
 
@@ -166,6 +211,23 @@ Each planet here is in a different subplot. The planet's textures are from
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:556: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/dataset.py:516: PyVistaDeprecationWarning: Texture tracking on datasets is deprecated and will be removed in a future version of PyVista.
+      warnings.warn(
+
 
 
 
@@ -175,19 +237,21 @@ Plot the Atmosphere and Surface of Venus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we plot Venus with and without its atmosphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-122
+.. GENERATED FROM PYTHON SOURCE LINES 111-124
 
 .. code-block:: default
 
 
     venus = examples.planets.load_venus()
+    atmosphere_texture = examples.planets.download_venus_surface(atmosphere=True, texture=True)
+    surface_texture = examples.planets.download_venus_surface(atmosphere=False, texture=True)
     pl = pyvista.Plotter(shape=(1, 2))
     pl.subplot(0, 0)
     pl.add_text("Venus Atmosphere")
-    pl.add_mesh(venus, texture="atmosphere", smooth_shading=True)
+    pl.add_mesh(venus, texture=atmosphere_texture, smooth_shading=True)
     pl.subplot(0, 1)
     pl.add_text("Venus Surface")
-    pl.add_mesh(venus, texture="surface", smooth_shading=True)
+    pl.add_mesh(venus, texture=surface_texture, smooth_shading=True)
     pl.link_views()
     pl.show(cpos="xy")
 
@@ -205,7 +269,7 @@ Here we plot Venus with and without its atmosphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  36.793 seconds)
+   **Total running time of the script:** ( 3 minutes  55.547 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_planets.py:
@@ -213,6 +277,8 @@ Here we plot Venus with and without its atmosphere.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

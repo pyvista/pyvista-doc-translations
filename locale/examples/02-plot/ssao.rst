@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_ssao.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_ssao.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -43,7 +43,7 @@ See `Kitware: Screen-Space Ambient Occlusion
     import pyvista as pv
     from pyvista import examples
 
-    grid = pv.UniformGrid(dimensions=(5, 5, 5)).explode(0.2)
+    grid = pv.ImageData(dimensions=(5, 5, 5)).explode(0.2)
 
 
 
@@ -247,7 +247,7 @@ seems realistic without it becoming overwhelming.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  22.098 seconds)
+   **Total running time of the script:** ( 0 minutes  43.957 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ssao.py:
@@ -255,6 +255,8 @@ seems realistic without it becoming overwhelming.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -72,7 +72,7 @@ generated from the spider cage function.
     # create a uniform grid to sample the function with
     n = 100
     x_min, y_min, z_min = -5, -5, -3
-    grid = pv.UniformGrid(
+    grid = pv.ImageData(
         dimensions=(n, n, n),
         spacing=(abs(x_min) / n * 2, abs(y_min) / n * 2, abs(z_min) / n * 2),
         origin=(x_min, y_min, z_min),
@@ -132,7 +132,7 @@ generated from the Barth sextic function.
     n = 100
     k = 2.0
     x_min, y_min, z_min = -k, -k, -k
-    grid = pv.UniformGrid(
+    grid = pv.ImageData(
         dimensions=(n, n, n),
         spacing=(abs(x_min) / n * 2, abs(y_min) / n * 2, abs(z_min) / n * 2),
         origin=(x_min, y_min, z_min),
@@ -200,9 +200,9 @@ function.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_003.png
+.. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_003.gif
    :alt: flying edges
-   :srcset: /examples/01-filter/images/sphx_glr_flying_edges_003.png
+   :srcset: /examples/01-filter/images/sphx_glr_flying_edges_003.gif
    :class: sphx-glr-single-img
 
 
@@ -212,7 +212,7 @@ function.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.090 seconds)
+   **Total running time of the script:** ( 0 minutes  9.169 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_flying_edges.py:

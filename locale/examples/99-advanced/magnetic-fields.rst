@@ -58,7 +58,7 @@ library.
 Download the DataSet
 ~~~~~~~~~~~~~~~~~~~~
 Let's first download the example dataset and show that it's a
-:class:`pyvista.UniformGrid` with the magnetic field stored as the ``'B'``
+:class:`pyvista.ImageData` with the magnetic field stored as the ``'B'``
 array in ``point_data``.
 
 .. GENERATED FROM PYTHON SOURCE LINES 34-39
@@ -217,7 +217,7 @@ strength while also plotting the streamlines and the coil.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.073 seconds)
+   **Total running time of the script:** ( 0 minutes  16.749 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_magnetic-fields.py:

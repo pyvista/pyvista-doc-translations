@@ -23,12 +23,12 @@
 Volume Rendering
 ~~~~~~~~~~~~~~~~
 
-Volume render uniform mesh types like :class:`pyvista.UniformGrid` or 3D
+Volume render uniform mesh types like :class:`pyvista.ImageData` or 3D
 NumPy arrays.
 
 This also explores how to extract a volume of interest (VOI) from a
-:class:`pyvista.UniformGrid` using the
-:func:`pyvista.UniformGridFilters.extract_subset` filter.
+:class:`pyvista.ImageData` using the
+:func:`pyvista.ImageDataFilters.extract_subset` filter.
 
 .. GENERATED FROM PYTHON SOURCE LINES 14-22
 
@@ -52,7 +52,7 @@ This also explores how to extract a volume of interest (VOI) from a
     <div class="output_subarea output_html rendered_html output_result">
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10225800</td></tr>
     <tr><td>N Points</td><td>10368384</td></tr>
     <tr><td>X Bounds</td><td>0.000e+00, 1.497e+02</td></tr>
@@ -302,7 +302,7 @@ Frog Dataset
 Extracting a VOI
 ++++++++++++++++
 
-Use the :func:`pyvista.UniformGridFilters.extract_subset` filter to extract
+Use the :func:`pyvista.ImageDataFilters.extract_subset` filter to extract
 a volume of interest/subset volume to volume render. This is ideal when
 dealing with particularly large volumes and you want to volume render only
 a specific region.
@@ -326,7 +326,7 @@ a specific region.
     <div class="output_subarea output_html rendered_html output_result">
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>11003760</td></tr>
     <tr><td>N Points</td><td>11156040</td></tr>
     <tr><td>X Bounds</td><td>4.130e+05, 6.920e+05</td></tr>
@@ -443,7 +443,7 @@ Ah, much better. Let's now volume render that region of interest.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  3.377 seconds)
+   **Total running time of the script:** ( 0 minutes  59.832 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:

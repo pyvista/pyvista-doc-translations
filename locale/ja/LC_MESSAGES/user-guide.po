@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.40.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 00:52+0000\n"
+"POT-Creation-Date: 2023-06-13 01:50+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -137,24 +137,18 @@ msgid ""
 "That is, every dataset can be represented as an |UnstructuredGrid|, but the "
 "|UnstructuredGrid| class takes the most amount of memory to store since they"
 " must account for every individual point and cell . On the other hand, since"
-" `vtkImageData`_ (|UniformGrid|) is uniformly spaced, a few integers and "
+" `vtkImageData`_ (|ImageData|) is uniformly spaced, a few integers and "
 "floats can describe the shape, so it takes the least amount of memory to "
 "store."
 msgstr ""
-"ここでは，上記のデータセットを，最も複雑なもの(5)から最も複雑でないもの(1)の順に並べています．つまり，どのデータセットも "
-"|UnstructuredGrid| として表現できますが，個々の点やセルを考慮しなければならないため， |UnstructuredGrid| "
-"クラスは最も多くのメモリを消費します．一方， `vtkImageData`_ (|UniformGrid|) "
-"は一様な間隔で配置されているので，いくつかの整数や浮動小数点数で形状を表現することができ，格納するメモリの量は最も少なくて済みます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:100
 msgid ""
 "This is because in |PolyData| or |UnstructuredGrid|, points and cells must "
-"be explicitly defined. In other data types, such as |UniformGrid|, the cells"
-" (and even points) are defined as an emergent property based on the "
+"be explicitly defined. In other data types, such as |ImageData|, the cells "
+"(and even points) are defined as an emergent property based on the "
 "dimensionality of the grid."
 msgstr ""
-"これは， |PolyData| や |UnstructuredGrid| では，ポイントやセルを明示的に定義する必要があるからです． "
-"|UniformGrid| などの他のデータタイプでは，セル（さらにはポイント）はグリッドの次元性に基づいた創発的なプロパティとして定義されます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:106
 msgid ""
@@ -514,14 +508,10 @@ msgstr ""
 msgid ""
 "To illustrate data arrays within PyVista, let's first construct a slightly "
 "more complex mesh than our previous example. Here, we create a simple mesh "
-"containing four isometric cells by starting with a |UniformGrid| and then "
+"containing four isometric cells by starting with a |ImageData| and then "
 "casting it to an |UnstructuredGrid| with :func:`cast_to_unstructured_grid() "
 "<pyvista.DataSet.cast_to_unstructured_grid>`."
 msgstr ""
-"PyVistaでのデータ配列を説明するために，まず先ほどの例よりも少し複雑なメッシュを作ってみましょう． ここでは，まず |UniformGrid| "
-"から始めて， :func:`cast_to_unstructured_grid() "
-"<pyvista.DataSet.cast_to_unstructured_grid>` で |UnstructuredGrid| "
-"にキャストすることで，4つのアイソメトリックなセルを含む単純なメッシュを作成します．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:402
 msgid "Let's also plot this basic mesh:"
@@ -1525,7 +1515,7 @@ msgid "Examples: Large Models"
 msgstr "例: 大規模モデル"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/ipygany.rst:88
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:236
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:237
 msgid ""
 "This example shows a large mesh and demonstrates how even fairly large "
 "meshes, like the carburetor example which contains 500,000 faces and 250,000"
@@ -1845,23 +1835,20 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:184
 msgid ""
-"The ``pythreejs`` backend also supports :attr:`textures "
-"<pyvista.DataSet.textures>`."
+"The ``pythreejs`` backend also supports :attr:`textures <pyvista.Texture>`."
 msgstr ""
-"また， ``pythreejs`` バックエンドでは， :attr:`textures <pyvista.DataSet.textures>` "
-"をサポートしています．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:192
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:193
 msgid ""
 "See the :ref:`ref_texture_example` example for more details regarding "
 "textures."
 msgstr "テクスチャに関する詳細は， :ref:`ref_texture_example` の例を参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:196
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:197
 msgid "RGB and RGBA Coloring"
 msgstr "RGBとRGBAのカラーリング"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:197
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:198
 msgid ""
 "The ``pythreejs`` supports RGBA plotting. See the ``rgba`` parameter within "
 ":func:`add_mesh() <pyvista.Plotter.add_mesh>` for more details."
@@ -1869,34 +1856,34 @@ msgstr ""
 "``pythreejs`` は RGBA プロットをサポートしています． 詳細は :func:`add_mesh() "
 "<pyvista.Plotter.add_mesh>`  の ``rgba`` パラメータを参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:227
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:228
 msgid "Multiple Render Windows"
 msgstr "複数のレンダリングウィンドウ"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:228
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:229
 msgid ""
 "You can plot multiple render windows within a single ``pythreejs`` just like"
 " how you would with PyVista."
 msgstr "1つの ``pythreejs`` の中で，PyVista と同じように，複数のレンダリングウィンドウをプロットすることができます．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:231
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:232
 msgid "See :ref:`assigning_scalars` for an example."
 msgstr "例として， :ref:`assigning_scalars` を参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:235
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:236
 msgid "Large Models and Physically Based Rendering"
 msgstr "大規模モデルと物理ベースのレンダリング"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:241
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:242
 msgid ""
 "Note that here we enable physically based rendering using ``pbr=True``."
 msgstr "なお，ここでは ``pbr=True`` を使って物理ベースのレンダリングを有効にしています．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:261
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:262
 msgid "Create Interactive Documentation"
 msgstr "インタラクティブなドキュメントの作成"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:262
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:263
 msgid ""
 "All the documentation on this page was generated using a combination of "
 "``pythreejs``, ``pyvista`` and ``jupyter_sphinx``."
@@ -1904,51 +1891,51 @@ msgstr ""
 "このページに掲載されているすべてのドキュメントは， ``pythreejs``, ``pyvista``, ``jupyter_sphinx`` "
 "の組み合わせで作成されています．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:265
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:266
 msgid "For example, in a sample ``*.rst`` file, add the following::"
 msgstr "例えば，サンプルの ``*.rst`` ファイルでは，次のように追加します．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:275
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:276
 msgid "To generate:"
 msgstr "生成するには"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:287
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:288
 msgid ""
 "You can also use the ``:hide-code:`` option to hide the code and only "
 "display the plot."
 msgstr "また， ``:hide-code:`` オプションを使うと，コードを隠してプロットだけを表示することができます．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:290
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:291
 msgid ""
 "You should also consider changing the global theme when plotting to improve "
 "the look of your plots:"
 msgstr "また，プロット時にグローバルテーマを変更することで，プロットの見栄えを良くすることができます．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:299
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:300
 msgid "You will need the following packages:"
 msgstr "以下のパッケージが必要になります．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:301
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:302
 msgid "``pyvista``"
 msgstr "``pyvista``"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:302
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:303
 msgid "``pythreejs``"
 msgstr "``pythreejs``"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:303
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:304
 msgid "``jupyter_sphinx``"
 msgstr "``jupyter_sphinx``"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:305
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:306
 msgid "In your ``conf.py``, add the following:"
 msgstr "``conf.py`` に, 次を追加します．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:316
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:317
 msgid "Export to HTML"
 msgstr "HTMLへのエクスポート"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:317
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:318
 msgid ""
 "Using ``pythreejs``, you can export most scenes completely to a standalone "
 "HTML file. For example:"
@@ -1956,11 +1943,11 @@ msgstr ""
 "``pythreejs`` を使うと，ほとんどのシーンを完全にスタンドアローンのHTMLファイルに書き出すことができます． "
 "例えば，以下のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:334
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:335
 msgid "Caveats"
 msgstr "注意点"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:336
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:337
 msgid ""
 "Not all PyVista features are currently supported with the ``pythreejs`` "
 "plotting backend. Future ones can be added opening a feature request at "
@@ -1970,19 +1957,19 @@ msgstr ""
 "プロットバックエンドでサポートされているわけではありません．将来の機能を追加するには， `PyVista Issues "
 "<https://github.com/pyvista/pyvista/issues>`_ にある機能リクエストを開いてください．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:341
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:342
 msgid "Missing features include:"
 msgstr "不足している機能は以下の通りです．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:343
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:344
 msgid "Scalar bars"
 msgstr "スカラーバー"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:344
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:345
 msgid "Physically based rendering textures (for example, from gLTF files)."
 msgstr "物理ベースのレンダリングテクスチャー（例：gLTFファイルから）．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:345
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:346
 msgid ""
 "Plotting points as spheres or lines as tubes. Use :func:`glyph() "
 "<pyvista.DataSetFilters.glyph>` or :func:`tube() "
@@ -1992,11 +1979,11 @@ msgstr ""
 "<pyvista.DataSetFilters.glyph>` または :func:`tube() "
 "<pyvista.DataSetFilters.tube>` を使用します．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:348
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:349
 msgid "Point labels"
 msgstr "ポイントラベル"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:349
+#: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:350
 msgid "2D text actors"
 msgstr "2Dテキストアクター"
 
@@ -2522,15 +2509,12 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:75
 msgid ""
-":class:`pyvista.UniformGrid` wraps `vtk.vtkImageData`_, just with a "
-"different name; they are both containers of evenly spaced points. Your data "
-"does not have to be an \"image\" to use it with `vtk.vtkImageData`_; rather,"
-" like images, values in the dataset are evenly spaced apart like pixels in "
-"an image."
+":class:`pyvista.ImageData` wraps `vtk.vtkImageData`_, just with a different "
+"name; they are both containers of evenly spaced points. Your data does not "
+"have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like "
+"images, values in the dataset are evenly spaced apart like pixels in an "
+"image."
 msgstr ""
-":class:`pyvista.UniformGrid` は `vtk.vtkImageData`_ "
-"をラップしたものです．名前が違うだけで，どちらも等間隔の点のコンテナです．どちらも等間隔の点のコンテナです． `vtk.vtkImageData`_ "
-"で使用するデータは \"画像\" である必要はありません．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:81
 msgid ""

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_blurring.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_blurring.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -53,7 +53,7 @@ Create several spheres
 
     # We use a uniform grid here simply to create equidistantly spaced points for
     # our glyph filter
-    grid = pv.UniformGrid(dimensions=(4, 4, 4), spacing=(1, 1, 1))
+    grid = pv.ImageData(dimensions=(4, 4, 4), spacing=(1, 1, 1))
 
     spheres = grid.glyph(geom=pv.Sphere(), scale=False, orient=False)
 
@@ -129,7 +129,7 @@ the focal plane
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.589 seconds)
+   **Total running time of the script:** ( 0 minutes  13.489 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_blurring.py:
@@ -137,6 +137,8 @@ the focal plane
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
