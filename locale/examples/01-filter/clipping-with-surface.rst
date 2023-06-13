@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_clipping-with-surface.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_clipping-with-surface.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -188,7 +188,7 @@ This will triangulate/tessellate the mesh geometries along the clip.
 .. GENERATED FROM PYTHON SOURCE LINES 94-97
 
 Here is another example of clipping a mesh by a surface. This time, we'll
-generate a :class:`pyvista.UniformGrid` around a topography surface and then
+generate a :class:`pyvista.ImageData` around a topography surface and then
 clip that grid using the surface to create a closed 3D model of the surface
 
 .. GENERATED FROM PYTHON SOURCE LINES 97-107
@@ -220,28 +220,25 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  43.536 seconds)
+   **Total running time of the script:** ( 0 minutes  54.991 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: clipping-with-surface.py <clipping-with-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: clipping-with-surface.py <clipping-with-surface.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: clipping-with-surface.ipynb <clipping-with-surface.ipynb>`
+      :download:`Download Jupyter notebook: clipping-with-surface.ipynb <clipping-with-surface.ipynb>`
 
 
 .. only:: html

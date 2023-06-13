@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_image-fft.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_image-fft.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,7 +24,7 @@ Fast Fourier Transform
 ~~~~~~~~~~~~~~~~~~~~~~
 
 This example shows how to apply a Fast Fourier Transform (FFT) to a
-:class:`pyvista.UniformGrid` using :func:`pyvista.UniformGridFilters.fft`
+:class:`pyvista.ImageData` using :func:`pyvista.ImageDataFilters.fft`
 filter.
 
 Here, we demonstrate FFT usage by denoising an image, effectively removing any
@@ -82,8 +82,6 @@ Load the example Moon landing image and plot it.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     pyvista DataSetAttributes
@@ -122,8 +120,6 @@ specified using ``output_scalars_name``.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -188,7 +184,7 @@ the image. Note that the high frequency content is in the middle of the array.
 
 .. note::
    It is easier and more efficient to use the existing
-   :func:`pyvista.UniformGridFilters.low_pass` filter. This section is here
+   :func:`pyvista.ImageDataFilters.low_pass` filter. This section is here
    for demonstration purposes.
 
 .. GENERATED FROM PYTHON SOURCE LINES 84-103
@@ -256,28 +252,25 @@ Finally, convert the image data back to the "spatial" domain and plot it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.586 seconds)
+   **Total running time of the script:** ( 0 minutes  4.447 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: image-fft.py <image-fft.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: image-fft.py <image-fft.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: image-fft.ipynb <image-fft.ipynb>`
+      :download:`Download Jupyter notebook: image-fft.ipynb <image-fft.ipynb>`
 
 
 .. only:: html

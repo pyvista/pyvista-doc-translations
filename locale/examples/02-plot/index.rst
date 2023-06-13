@@ -913,7 +913,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Volume render uniform mesh types like pyvista.UniformGrid or 3D NumPy arrays.">
+    <div class="sphx-glr-thumbcontainer" tooltip="Volume render uniform mesh types like pyvista.ImageData or 3D NumPy arrays.">
 
 .. only:: html
 

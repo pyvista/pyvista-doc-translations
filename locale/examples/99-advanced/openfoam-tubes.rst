@@ -214,7 +214,7 @@ turbulence modeling to describe the effect of turbulent motion on the
 momentum transport within the fluid.
 
 For this example, we will first sample the results from the
-:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.UniformGrid` using
+:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.ImageData` using
 :func:`sample() <pyvista.DataSetFilters.sample>`. This is so we can visualize
 it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
@@ -231,7 +231,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
         int((bounds[3] - bounds[2]) // spacing[1] + 2),
         int((bounds[5] - bounds[4]) // spacing[2] + 2),
     )
-    grid = pv.UniformGrid(dimensions=dimensions, spacing=spacing, origin=origin)
+    grid = pv.ImageData(dimensions=dimensions, spacing=spacing, origin=origin)
     grid = grid.sample(air)
 
     pl = pv.Plotter()
@@ -260,7 +260,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.665 seconds)
+   **Total running time of the script:** ( 0 minutes  10.730 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-tubes.py:

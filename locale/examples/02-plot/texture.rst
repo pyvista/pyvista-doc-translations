@@ -203,7 +203,7 @@ use.
 NumPy Arrays as Textures
 ++++++++++++++++++++++++
 
-Want to use a programmatically built image? :class:`pyvista.UniformGrid`
+Want to use a programmatically built image? :class:`pyvista.ImageData`
 objects can be converted to textures using :func:`pyvista.image_to_texture`
 and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
 :func:`pyvista.numpy_to_texture`.
@@ -299,9 +299,9 @@ Generate a moving gif from an active plotter with updating textures.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_007.png
+.. image-sg:: /examples/02-plot/images/sphx_glr_texture_007.gif
    :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_007.png
+   :srcset: /examples/02-plot/images/sphx_glr_texture_007.gif
    :class: sphx-glr-single-img
 
 
@@ -517,7 +517,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.410 seconds)
+   **Total running time of the script:** ( 0 minutes  10.029 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

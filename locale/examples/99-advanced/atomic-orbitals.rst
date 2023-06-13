@@ -105,7 +105,7 @@ This dataset evaluates this function for the hydrogen orbital
     <div class="output_subarea output_html rendered_html output_result">
     <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
     <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>970299</td></tr>
     <tr><td>N Points</td><td>1000000</td></tr>
     <tr><td>X Bounds</td><td>-2.350e+01, 2.350e+01</td></tr>
@@ -338,7 +338,7 @@ Plot an Orbital Using a Density Plot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We can also plot atomic orbitals using a 3D density plot. For this, we will
 use :func:`numpy.random.choice` to sample all the points of our
-:class:`pyvista.UniformGrid` based on the probability of the electron being
+:class:`pyvista.ImageData` based on the probability of the electron being
 at that coordinate.
 
 .. GENERATED FROM PYTHON SOURCE LINES 183-223
@@ -354,7 +354,7 @@ at that coordinate.
     indices = np.random.choice(hydro_orbital.n_points, 10000, p=prob)
 
     # add a small amount of noise to these coordinates to remove the "grid like"
-    # structure present in the underlying UniformGrid
+    # structure present in the underlying ImageData
     points = hydro_orbital.points[indices]
     points += np.random.random(points.shape) - 0.5
 
@@ -433,7 +433,7 @@ Finally, let's plot the same data using the "Gaussian points" representation.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.655 seconds)
+   **Total running time of the script:** ( 0 minutes  18.895 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_atomic-orbitals.py:

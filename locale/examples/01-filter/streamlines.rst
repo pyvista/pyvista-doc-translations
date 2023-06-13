@@ -324,7 +324,7 @@ Custom 3D Vector Field
     nz = 5
 
     origin = (-(nx - 1) * 0.1 / 2, -(ny - 1) * 0.1 / 2, -(nz - 1) * 0.1 / 2)
-    mesh = pv.UniformGrid(dimensions=(nx, ny, nz), spacing=(0.1, 0.1, 0.1), origin=origin)
+    mesh = pv.ImageData(dimensions=(nx, ny, nz), spacing=(0.1, 0.1, 0.1), origin=origin)
     x = mesh.points[:, 0]
     y = mesh.points[:, 1]
     z = mesh.points[:, 2]
@@ -376,7 +376,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.294 seconds)
+   **Total running time of the script:** ( 0 minutes  11.885 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

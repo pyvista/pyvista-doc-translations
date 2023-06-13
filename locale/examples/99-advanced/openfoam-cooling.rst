@@ -76,22 +76,20 @@ several scalar arrays including the velocity and temperature of the air.
  .. code-block:: none
 
 
-    (PolyData (0x7fe9fa05fdc0)
+    (PolyData (0x7f246bdb0e20)
       N Cells:    344270
       N Points:   187992
       N Strips:   0
       X Bounds:   -3.000e-03, 1.530e-01
       Y Bounds:   -3.000e-03, 2.030e-01
       Z Bounds:   -9.000e-03, 4.200e-02
-      N Arrays:   4
-    , UnstructuredGrid (0x7fe9fa05fe20)
+      N Arrays:   4, UnstructuredGrid (0x7f246bdb06a0)
       N Cells:    1749992
       N Points:   610176
       X Bounds:   -1.388e-18, 1.500e-01
       Y Bounds:   -3.000e-03, 2.030e-01
       Z Bounds:   -6.000e-03, 4.400e-02
-      N Arrays:   10
-    )
+      N Arrays:   10)
 
 
 
@@ -274,7 +272,7 @@ Volumetric Plot - Visualize High Temperatures
 Show a 3D plot of areas of temperature.
 
 For this example, we will first sample the results from the
-:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.UniformGrid` using
+:class:`pyvista.UnstructuredGrid` onto a :class:`pyvista.ImageData` using
 :func:`sample() <pyvista.DataSetFilters.sample>`. This is so we can visualize
 it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
@@ -291,7 +289,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
         int((bounds[3] - bounds[2]) // spacing[1] + 2),
         int((bounds[5] - bounds[4]) // spacing[2] + 2),
     )
-    grid = pv.UniformGrid(dimensions=dimensions, spacing=spacing, origin=origin)
+    grid = pv.ImageData(dimensions=dimensions, spacing=spacing, origin=origin)
     grid = grid.sample(air)
 
     opac = np.zeros(20)
@@ -326,7 +324,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  28.519 seconds)
+   **Total running time of the script:** ( 0 minutes  27.844 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-cooling.py:

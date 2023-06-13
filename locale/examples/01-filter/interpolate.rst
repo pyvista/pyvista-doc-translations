@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_interpolate.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_interpolate.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -137,7 +137,7 @@ Create the interpolation grid around the sparse data
 
 .. code-block:: default
 
-    grid = pv.UniformGrid()
+    grid = pv.ImageData()
     grid.origin = (329700, 4252600, -2700)
     grid.spacing = (250, 250, 50)
     grid.dimensions = (60, 75, 100)
@@ -228,28 +228,25 @@ Visualize the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.628 seconds)
+   **Total running time of the script:** ( 0 minutes  10.588 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: interpolate.py <interpolate.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: interpolate.py <interpolate.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: interpolate.ipynb <interpolate.ipynb>`
+      :download:`Download Jupyter notebook: interpolate.ipynb <interpolate.ipynb>`
 
 
 .. only:: html
