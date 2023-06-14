@@ -444,7 +444,7 @@ themes and apply them to one or more plotters.
 
     from pyvista import themes
 
-    my_theme = themes.DefaultTheme()
+    my_theme = themes.DocumentTheme()
     my_theme.color = 'black'
     my_theme.lighting = True
     my_theme.show_edges = True
@@ -512,7 +512,7 @@ Reset to use the document theme
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.788 seconds)
+   **Total running time of the script:** ( 0 minutes  4.814 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:

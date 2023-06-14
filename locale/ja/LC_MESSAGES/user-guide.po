@@ -141,6 +141,10 @@ msgid ""
 "floats can describe the shape, so it takes the least amount of memory to "
 "store."
 msgstr ""
+"ここでは，上記のデータセットを，最も複雑なもの(5)から最も複雑でないもの(1)の順に並べています．つまり，どのデータセットも "
+"|UnstructuredGrid| として表現できますが，個々の点やセルを考慮しなければならないため， |UnstructuredGrid| "
+"クラスは最も多くのメモリを消費します．一方， `vtkImageData`_ (|ImageData|) "
+"は一様な間隔で配置されているので，いくつかの整数や浮動小数点数で形状を表現することができ，格納するメモリの量は最も少なくて済みます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:100
 msgid ""
@@ -149,6 +153,8 @@ msgid ""
 "(and even points) are defined as an emergent property based on the "
 "dimensionality of the grid."
 msgstr ""
+"これは， |PolyData| や |UnstructuredGrid| では，ポイントやセルを明示的に定義する必要があるからです． "
+"|ImageData| などの他のデータタイプでは，セル（さらにはポイント）はグリッドの次元性に基づいた創発的なプロパティとして定義されます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:106
 msgid ""
@@ -512,6 +518,10 @@ msgid ""
 "casting it to an |UnstructuredGrid| with :func:`cast_to_unstructured_grid() "
 "<pyvista.DataSet.cast_to_unstructured_grid>`."
 msgstr ""
+"PyVistaでのデータ配列を説明するために，まず先ほどの例よりも少し複雑なメッシュを作ってみましょう． ここでは，まず |ImageData| "
+"から始めて， :func:`cast_to_unstructured_grid() "
+"<pyvista.DataSet.cast_to_unstructured_grid>` で |UnstructuredGrid| "
+"にキャストすることで，4つのアイソメトリックなセルを含む単純なメッシュを作成します．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:402
 msgid "Let's also plot this basic mesh:"
@@ -1837,6 +1847,7 @@ msgstr ""
 msgid ""
 "The ``pythreejs`` backend also supports :attr:`textures <pyvista.Texture>`."
 msgstr ""
+"また， ``pythreejs`` バックエンドでは， :attr:`textures <pyvista.Texture>` をサポートしています．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/pythreejs.rst:193
 msgid ""
@@ -2515,6 +2526,9 @@ msgid ""
 "images, values in the dataset are evenly spaced apart like pixels in an "
 "image."
 msgstr ""
+":class:`pyvista.UniformGrid` は `vtk.vtkImageData`_ "
+"をラップしたものです．名前が違うだけで，どちらも等間隔の点のコンテナです． `vtk.vtkImageData`_ で使用するデータは \"画像\" "
+"である必要はありません．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:81
 msgid ""
