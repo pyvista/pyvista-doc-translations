@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_background_image.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_background_image.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -70,7 +70,7 @@ Plot an airplane with the map of the earth in the background
 
 Plot several earth related plots
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-45
+.. GENERATED FROM PYTHON SOURCE LINES 24-47
 
 .. code-block:: default
 
@@ -91,8 +91,10 @@ Plot several earth related plots
     pl.add_text('Earth Land Altitude')
 
     pl.subplot(1, 1)
+    globe = examples.load_globe()
+    texture = examples.load_globe_texture()
     pl.add_text('Earth Visible as Globe')
-    pl.add_mesh(examples.load_globe(), smooth_shading=True)
+    pl.add_mesh(globe, texture=texture, smooth_shading=True)
 
     pl.show()
 
@@ -110,28 +112,25 @@ Plot several earth related plots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.136 seconds)
+   **Total running time of the script:** ( 0 minutes  12.769 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_background_image.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: background_image.py <background_image.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: background_image.py <background_image.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: background_image.ipynb <background_image.ipynb>`
+      :download:`Download Jupyter notebook: background_image.ipynb <background_image.ipynb>`
 
 
 .. only:: html

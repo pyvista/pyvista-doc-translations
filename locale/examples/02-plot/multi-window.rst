@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_multi-window.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_multi-window.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -46,7 +46,7 @@ This example shows how to create a multi-window plotter by specifying the
 ``shape=(2, 2)``. Use the :func:`pyvista.Plotter.subplot` method to
 select the subplot you wish to be the active subplot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-45
+.. GENERATED FROM PYTHON SOURCE LINES 17-47
 
 .. code-block:: default
 
@@ -55,7 +55,9 @@ select the subplot you wish to be the active subplot.
 
     plotter.subplot(0, 0)
     plotter.add_text("Render Window 0", font_size=30)
-    plotter.add_mesh(examples.load_globe())
+    globe = examples.load_globe()
+    texture = examples.load_globe_texture()
+    plotter.add_mesh(globe, texture=texture)
 
     plotter.subplot(0, 1)
     plotter.add_text("Render Window 1", font_size=30)
@@ -90,7 +92,7 @@ select the subplot you wish to be the active subplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-62
+.. GENERATED FROM PYTHON SOURCE LINES 48-64
 
 .. code-block:: default
 
@@ -122,12 +124,12 @@ select the subplot you wish to be the active subplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-65
+.. GENERATED FROM PYTHON SOURCE LINES 65-67
 
 Split the rendering window in half and subdivide it in a nr. of vertical or
 horizontal subplots.
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-95
+.. GENERATED FROM PYTHON SOURCE LINES 67-97
 
 .. code-block:: default
 
@@ -173,7 +175,7 @@ horizontal subplots.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-101
+.. GENERATED FROM PYTHON SOURCE LINES 98-103
 
 To get full flexibility over the layout grid, you can define the relative
 weighting of rows and columns and register groups that can span over multiple
@@ -181,7 +183,7 @@ rows and columns. A group is defined through a tuple ``(rows,cols)`` of row
 and column indices or slices. The group always spans from the smallest to the
 largest (row or column) id that is passed through the list or slice.
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-164
+.. GENERATED FROM PYTHON SOURCE LINES 103-168
 
 .. code-block:: default
 
@@ -225,7 +227,9 @@ largest (row or column) id that is passed through the list or slice.
 
     plotter.subplot(1, 3)
     plotter.add_text("Group 4")
-    plotter.add_mesh(examples.load_globe())
+    globe = examples.load_globe()
+    texture = examples.load_globe_texture()
+    plotter.add_mesh(globe, texture=texture)
 
     plotter.subplot(1, 1)
     plotter.add_text("Cell (1,1)")
@@ -263,7 +267,7 @@ largest (row or column) id that is passed through the list or slice.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.009 seconds)
+   **Total running time of the script:** ( 0 minutes  2.555 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:
@@ -271,6 +275,8 @@ largest (row or column) id that is passed through the list or slice.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

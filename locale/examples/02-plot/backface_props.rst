@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_backface_props.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_backface_props.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -159,9 +159,9 @@ strip:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_004.png
+.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_004.gif
    :alt: backface props
-   :srcset: /examples/02-plot/images/sphx_glr_backface_props_004.png
+   :srcset: /examples/02-plot/images/sphx_glr_backface_props_004.gif
    :class: sphx-glr-single-img
 
 
@@ -181,17 +181,22 @@ The lighting has been disabled for this example to demonstrate how you can
 make the interior of the surface appear occluded without any directional
 lighting simply by providing a different color for backface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-105
+.. GENERATED FROM PYTHON SOURCE LINES 94-110
 
 .. code-block:: default
 
 
     globe = examples.load_globe()
+    texture = examples.load_globe_texture()
     clipped = globe.clip(normal='z', value=4.37e9)
 
     pl = pv.Plotter()
     pl.add_mesh(
-        clipped, backface_params={'color': [0.2, 0.2, 0.2]}, lighting=False, smooth_shading=True
+        clipped,
+        backface_params={'color': [0.2, 0.2, 0.2]},
+        lighting=False,
+        smooth_shading=True,
+        texture=texture,
     )
     pl.show()
 
@@ -208,14 +213,14 @@ lighting simply by providing a different color for backface.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-110
+.. GENERATED FROM PYTHON SOURCE LINES 111-115
 
 Backface Properties and Physically Based Rendering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Note that backfaces are automatically culled when physically based rendering
 is enabled, regardless of the settings of backface parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-126
+.. GENERATED FROM PYTHON SOURCE LINES 115-131
 
 .. code-block:: default
 
@@ -247,7 +252,7 @@ is enabled, regardless of the settings of backface parameters.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 127-129
+.. GENERATED FROM PYTHON SOURCE LINES 132-134
 
 See also the :ref:`sphere_eversion_example` example which relies on
 distinguishing the inside and the outside of a sphere.
@@ -255,7 +260,7 @@ distinguishing the inside and the outside of a sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  42.897 seconds)
+   **Total running time of the script:** ( 0 minutes  39.704 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_backface_props.py:
@@ -263,6 +268,8 @@ distinguishing the inside and the outside of a sphere.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
