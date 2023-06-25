@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_point-picking.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_point-picking.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -106,13 +106,12 @@ Modify which actors are pickable
 
 After enabling point picking, we can modify which actors are pickable.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-56
+.. GENERATED FROM PYTHON SOURCE LINES 43-55
 
 .. code-block:: default
 
     sphere = pv.Sphere()
-    cube = pv.Cube()
-    cube.translate([10, 10, 0])
+    cube = pv.Cube().translate([10, 10, 0])
 
     p = pv.Plotter()
     sphere_actor = p.add_mesh(sphere, pickable=True)  # initially pickable
@@ -132,25 +131,16 @@ After enabling point picking, we can modify which actors are pickable.
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:204: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
-      warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 57-60
+.. GENERATED FROM PYTHON SOURCE LINES 56-59
 
 Pick using the left-mouse button
 ++++++++++++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-66
+.. GENERATED FROM PYTHON SOURCE LINES 59-65
 
 .. code-block:: default
 
@@ -175,28 +165,25 @@ Pick using the left-mouse button
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.440 seconds)
+   **Total running time of the script:** ( 0 minutes  1.028 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-picking.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: point-picking.py <point-picking.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: point-picking.py <point-picking.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: point-picking.ipynb <point-picking.ipynb>`
+      :download:`Download Jupyter notebook: point-picking.ipynb <point-picking.ipynb>`
 
 
 .. only:: html

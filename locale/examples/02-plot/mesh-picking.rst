@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_mesh-picking.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_mesh-picking.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -72,14 +72,13 @@ Pick either a cube or a sphere using "p"
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-33
+.. GENERATED FROM PYTHON SOURCE LINES 29-32
 
-Pick using the left-mouse button
-++++++++++++++++++++++++++++++++
-Pick using the left mouse button and trigger a callback that "shrinks" the
-mesh each time it's selected.
+Deform the mesh after picking
++++++++++++++++++++++++++++++
+Pick to trigger a callback that "shrinks" the mesh each time it's selected.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-48
+.. GENERATED FROM PYTHON SOURCE LINES 32-47
 
 .. code-block:: default
 
@@ -94,7 +93,7 @@ mesh each time it's selected.
     pl = pv.Plotter()
     pl.add_mesh(sphere, color='r')
     pl.add_mesh(cube, color='b')
-    pl.enable_mesh_picking(callback=callback, left_clicking=True, show=False)
+    pl.enable_mesh_picking(callback=callback, show=False)
     pl.show()
 
 
@@ -110,13 +109,13 @@ mesh each time it's selected.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 Pick based on Actors
 ++++++++++++++++++++
 Return the picked actor to the callback
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-75
+.. GENERATED FROM PYTHON SOURCE LINES 51-74
 
 .. code-block:: default
 
@@ -158,7 +157,7 @@ Return the picked actor to the callback
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.733 seconds)
+   **Total running time of the script:** ( 0 minutes  0.835 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_mesh-picking.py:
@@ -166,6 +165,8 @@ Return the picked actor to the callback
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

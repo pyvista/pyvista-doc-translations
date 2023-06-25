@@ -301,6 +301,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="The different elements of a mesh are:">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_element-picking_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_02-plot_element-picking.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Picking elements of a mesh</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Add a floor/wall at the boundary of the rendering scene.">
 
 .. only:: html
@@ -952,6 +969,7 @@ plotting routines to perform tasks like:
    /examples/02-plot/distance-along-spline
    /examples/02-plot/edges
    /examples/02-plot/edl
+   /examples/02-plot/element-picking
    /examples/02-plot/floors
    /examples/02-plot/ghost-cells
    /examples/02-plot/gif

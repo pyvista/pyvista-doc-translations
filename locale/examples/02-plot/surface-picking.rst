@@ -18,12 +18,12 @@
 .. _sphx_glr_examples_02-plot_surface-picking.py:
 
 
-.. _surface_picking_example:
+.. _surface_point_picking_example:
 
 Picking a Point on the Surface of a Mesh
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This example demonstrates how to pick meshes using
-:func:`surface_mesh_picking() <pyvista.Plotter.enable_surface_picking>`.
+:func:`enable_surface_point_picking() <pyvista.Plotter.enable_surface_point_picking>`.
 
 This allows you to pick points on the surface of a mesh.
 
@@ -54,7 +54,7 @@ Create a mesh and enable picking using the default settings.
 
     pl = pv.Plotter()
     pl.add_mesh(cube, show_edges=True)
-    pl.enable_surface_picking()
+    pl.enable_surface_point_picking()
     pl.show()
 
 
@@ -72,8 +72,8 @@ Create a mesh and enable picking using the default settings.
 
 .. GENERATED FROM PYTHON SOURCE LINES 27-29
 
-Enable a callback that creates a cube at the clicked point and add a label at
-the point as well it.
+Enable a callback that creates a cube at the right-clicked point and add a
+label at the point as well it.
 
 .. GENERATED FROM PYTHON SOURCE LINES 29-42
 
@@ -90,7 +90,7 @@ the point as well it.
 
     pl = pv.Plotter()
     pl.add_mesh(cube, show_edges=True)
-    pl.enable_surface_picking(callback=callback, left_clicking=True, show_point=False)
+    pl.enable_surface_point_picking(callback=callback, show_point=False)
     pl.show()
 
 
@@ -107,7 +107,7 @@ the point as well it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.505 seconds)
+   **Total running time of the script:** ( 0 minutes  0.574 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_surface-picking.py:
