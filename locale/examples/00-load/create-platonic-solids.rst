@@ -118,7 +118,7 @@ Now let's plot them all.
             solid, color='silver', smooth_shading=smooth_shading, specular=1.0, specular_power=10
         )
     p.view_vector((5.0, 2, 3))
-    p.add_floor('-z', lighting=True, color='tan', pad=1.0)
+    p.add_floor('-z', lighting=True, color='lightblue', pad=1.0)
     p.enable_shadows()
     p.show()
 
@@ -142,7 +142,7 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.096 seconds)
+   **Total running time of the script:** ( 0 minutes  1.346 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:

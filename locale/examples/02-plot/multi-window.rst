@@ -61,7 +61,7 @@ select the subplot you wish to be the active subplot.
 
     plotter.subplot(0, 1)
     plotter.add_text("Render Window 1", font_size=30)
-    plotter.add_mesh(pv.Cube(), show_edges=True, color="tan")
+    plotter.add_mesh(pv.Cube(), show_edges=True, color='lightblue')
 
     plotter.subplot(1, 0)
     plotter.add_text("Render Window 2", font_size=30)
@@ -217,7 +217,7 @@ largest (row or column) id that is passed through the list or slice.
 
     plotter.subplot(2, 0)
     plotter.add_text("Group 2")
-    plotter.add_mesh(pv.ParametricCatalanMinimal(), show_edges=False, color="tan")
+    plotter.add_mesh(pv.ParametricCatalanMinimal(), show_edges=False, color='lightblue')
     plotter.view_isometric()
     plotter.camera.zoom(2)
 
@@ -248,7 +248,7 @@ largest (row or column) id that is passed through the list or slice.
 
     plotter.subplot(4, 3)
     plotter.add_text("Cell (4,3)")
-    plotter.add_mesh(pv.Cube(), show_edges=True, color="tan")
+    plotter.add_mesh(pv.Cube(), show_edges=True, color='lightblue')
 
     # Display the window
     plotter.show()
@@ -267,7 +267,7 @@ largest (row or column) id that is passed through the list or slice.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.555 seconds)
+   **Total running time of the script:** ( 0 minutes  2.335 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:

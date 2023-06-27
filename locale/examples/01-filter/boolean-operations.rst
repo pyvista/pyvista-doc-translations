@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_boolean-operations.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_boolean-operations.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -98,7 +98,7 @@ commutative).
     pl = pv.Plotter()
     _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
     _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
-    _ = pl.add_mesh(result, color='tan')
+    _ = pl.add_mesh(result, color='lightblue')
     pl.camera_position = 'xz'
     pl.show()
 
@@ -138,7 +138,7 @@ Order of operands matters for boolean difference.
     pl = pv.Plotter()
     _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
     _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
-    _ = pl.add_mesh(result, color='tan')
+    _ = pl.add_mesh(result, color='lightblue')
     pl.camera_position = 'xz'
     pl.show()
 
@@ -178,7 +178,7 @@ operation is commutative).
     pl = pv.Plotter()
     _ = pl.add_mesh(sphere_a, color='r', style='wireframe', line_width=3)
     _ = pl.add_mesh(sphere_b, color='b', style='wireframe', line_width=3)
-    _ = pl.add_mesh(result, color='tan')
+    _ = pl.add_mesh(result, color='lightblue')
     pl.camera_position = 'xz'
     pl.show()
 
@@ -213,7 +213,7 @@ outward.  This is the "normal" behavior.
     cube = pv.Cube().triangulate().subdivide(3)
     sphere = pv.Sphere(radius=0.6)
     result = cube.boolean_difference(sphere)
-    result.plot(color='tan')
+    result.plot(color='lightblue')
 
 
 
@@ -241,7 +241,7 @@ Boolean difference with cube normals outward, sphere inward.
     sphere = pv.Sphere(radius=0.6)
     sphere.flip_normals()
     result = cube.boolean_difference(sphere)
-    result.plot(color='tan')
+    result.plot(color='lightblue')
 
 
 
@@ -269,7 +269,7 @@ Boolean difference with cube normals inward, sphere outward.
     cube.flip_normals()
     sphere = pv.Sphere(radius=0.6)
     result = cube.boolean_difference(sphere)
-    result.plot(color='tan')
+    result.plot(color='lightblue')
 
 
 
@@ -298,7 +298,7 @@ Both cube and sphere normals inward.
     sphere = pv.Sphere(radius=0.6)
     sphere.flip_normals()
     result = cube.boolean_difference(sphere)
-    result.plot(color='tan')
+    result.plot(color='lightblue')
 
 
 
@@ -314,28 +314,25 @@ Both cube and sphere normals inward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.943 seconds)
+   **Total running time of the script:** ( 0 minutes  8.307 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: boolean-operations.py <boolean-operations.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: boolean-operations.py <boolean-operations.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: boolean-operations.ipynb <boolean-operations.ipynb>`
+      :download:`Download Jupyter notebook: boolean-operations.ipynb <boolean-operations.ipynb>`
 
 
 .. only:: html

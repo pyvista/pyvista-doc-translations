@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_edl.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_edl.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,13 +29,11 @@ To learn more, please see `this blog post`_.
 
 .. _this blog post: https://blog.kitware.com/eye-dome-lighting-a-non-photorealistic-shading-technique/
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 15-20
+.. GENERATED FROM PYTHON SOURCE LINES 15-19
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 1
     import pyvista as pv
     from pyvista import examples
 
@@ -66,21 +64,12 @@ statue:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edl_001.png
-    :alt: edl
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edl_001.png
+   :alt: edl
+   :srcset: /examples/02-plot/images/sphx_glr_edl_001.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-890.0626454793897, -890.0626454793897, 178.01252909587797),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -113,21 +102,12 @@ Here we will compare a EDL shading side by side with normal shading
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edl_002.png
-    :alt: edl
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edl_002.png
+   :alt: edl
+   :srcset: /examples/02-plot/images/sphx_glr_edl_002.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(-1310.0155602140887, -1310.0155602140887, 262.0031120428178),
-     (0.0, 0.0, 0.0),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -165,28 +145,19 @@ And now plot this point cloud as-is:
 
     # Plot a typical point cloud with no EDL
     p = pv.Plotter()
-    p.add_mesh(point_cloud, color="tan", point_size=5)
+    p.add_mesh(point_cloud, color='lightblue', point_size=5)
     p.show()
 
 
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edl_003.png
-    :alt: edl
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edl_003.png
+   :alt: edl
+   :srcset: /examples/02-plot/images/sphx_glr_edl_003.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(481322.3429432355, 4400455.467942938, 2064.2978993130805),
-     (481028.37499997707, 4400161.49999968, 1770.3299560546875),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -202,7 +173,7 @@ renderer with :func:`pyvista.Renderer.enable_eye_dome_lighting`.
 
     # Plot with EDL
     p = pv.Plotter()
-    p.add_mesh(point_cloud, color="tan", point_size=5)
+    p.add_mesh(point_cloud, color='lightblue', point_size=5)
     p.enable_eye_dome_lighting()
     p.show()
 
@@ -210,21 +181,12 @@ renderer with :func:`pyvista.Renderer.enable_eye_dome_lighting`.
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edl_004.png
-    :alt: edl
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edl_004.png
+   :alt: edl
+   :srcset: /examples/02-plot/images/sphx_glr_edl_004.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(481322.3429432355, 4400455.467942938, 2064.2978993130805),
-     (481028.37499997707, 4400161.49999968, 1770.3299560546875),
-     (0.0, 0.0, 1.0)]
 
 
 
@@ -245,49 +207,37 @@ The eye dome lighting mode can also handle plotting scalar arrays:
 
 
 
-.. image:: /examples/02-plot/images/sphx_glr_edl_005.png
-    :alt: edl
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_edl_005.png
+   :alt: edl
+   :srcset: /examples/02-plot/images/sphx_glr_edl_005.png
+   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- Out:
-
- .. code-block:: none
-
-
-    [(481322.3429432355, 4400455.467942938, 2064.2978993130805),
-     (481028.37499997707, 4400161.49999968, 1770.3299560546875),
-     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  22.996 seconds)
+   **Total running time of the script:** ( 0 minutes  25.633 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edl.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: edl.py <edl.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: edl.py <edl.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: edl.ipynb <edl.ipynb>`
+      :download:`Download Jupyter notebook: edl.ipynb <edl.ipynb>`
 
 
 .. only:: html

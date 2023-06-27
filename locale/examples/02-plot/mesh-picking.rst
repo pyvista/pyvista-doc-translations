@@ -130,7 +130,7 @@ Return the picked actor to the callback
     def reset():
         for a in pl.renderer.actors.values():
             if isinstance(a, pv.Actor):
-                a.prop.color = 'tan'
+                a.prop.color = 'lightblue'
                 a.prop.show_edges = False
 
 
@@ -157,7 +157,7 @@ Return the picked actor to the callback
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.835 seconds)
+   **Total running time of the script:** ( 0 minutes  0.757 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_mesh-picking.py:

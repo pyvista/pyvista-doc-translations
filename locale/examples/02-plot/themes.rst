@@ -257,7 +257,7 @@ theme.
         Float format         : None
     Auto close               : True
     Colormap                 : viridis
-    Color                    : Color(name='tan', hex='#d2b48cff', opacity=255)
+    Color                    : Color(name='lightblue', hex='#add8e6ff', opacity=255)
     Color Cycler             : None
     NaN color                : Color(name='darkgray', hex='#a9a9a9ff', opacity=255)
     Edge color               : Color(name='black', hex='#000000ff', opacity=255)
@@ -361,7 +361,7 @@ parameter.
 
 You can reset pyvista to default behavior with ``restore_defaults``.
 Note that the figure's color was reset to the default "white" color
-rather than the "tan" color default with the document theme.  Under
+rather than the 'lightblue' color default with the document theme.  Under
 the hood, each theme applied changes the global plot defaults stored
 within ``pyvista.global_theme.``
 
@@ -512,7 +512,7 @@ Reset to use the document theme
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.814 seconds)
+   **Total running time of the script:** ( 0 minutes  4.597 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:

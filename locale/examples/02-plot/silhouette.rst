@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_silhouette.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_silhouette.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -68,11 +68,11 @@ Now we can display the silhouette of the mesh and compare the result:
 
     plotter = pyvista.Plotter(shape=(1, 2))
     plotter.subplot(0, 0)
-    plotter.add_mesh(bunny, color='tan', silhouette=True)
+    plotter.add_mesh(bunny, color='lightblue', silhouette=True)
     plotter.add_text("Silhouette")
     plotter.view_xy()
     plotter.subplot(0, 1)
-    plotter.add_mesh(bunny, color='tan')
+    plotter.add_mesh(bunny, color='lightblue')
     plotter.add_text("No silhouette")
     plotter.view_xy()
     plotter.show()
@@ -139,7 +139,7 @@ want to disable it. It is also possible to display sharp edges:
     plotter.subplot(0, 0)
     plotter.add_mesh(
         cylinder,
-        color='tan',
+        color='lightblue',
         smooth_shading=True,
         silhouette=dict(color='red', line_width=8.0, decimate=None, feature_angle=True),
     )
@@ -148,14 +148,14 @@ want to disable it. It is also possible to display sharp edges:
     plotter.subplot(0, 1)
     plotter.add_mesh(
         cylinder,
-        color='tan',
+        color='lightblue',
         smooth_shading=True,
         silhouette=dict(color='red', line_width=8.0, decimate=None),
     )
     plotter.add_text("Silhouette without sharp edges")
     plotter.view_isometric()
     plotter.subplot(0, 2)
-    plotter.add_mesh(cylinder, color='tan', smooth_shading=True)
+    plotter.add_mesh(cylinder, color='lightblue', smooth_shading=True)
     plotter.add_text("No silhouette")
     plotter.view_isometric()
     plotter.show()
@@ -194,7 +194,7 @@ Here is another example:
 
     plotter.add_mesh(
         cylinder,
-        color='tan',
+        color='lightblue',
         smooth_shading=True,
         silhouette=dict(decimate=None, feature_angle=True, line_width=8, color='white'),
     )
@@ -219,28 +219,25 @@ Here is another example:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.062 seconds)
+   **Total running time of the script:** ( 0 minutes  11.826 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_silhouette.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: silhouette.py <silhouette.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: silhouette.py <silhouette.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: silhouette.ipynb <silhouette.ipynb>`
+      :download:`Download Jupyter notebook: silhouette.ipynb <silhouette.ipynb>`
 
 
 .. only:: html

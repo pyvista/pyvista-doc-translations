@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_labels.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_labels.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -89,9 +89,10 @@ node:
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10</td></tr>
     <tr><td>N Points</td><td>10</td></tr>
-    <tr><td>X Bounds</td><td>2.936e-01, 9.057e-01</td></tr>
-    <tr><td>Y Bounds</td><td>1.007e-02, 8.315e-01</td></tr>
-    <tr><td>Z Bounds</td><td>9.005e-02, 9.565e-01</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
+    <tr><td>X Bounds</td><td>1.402e-01, 9.986e-01</td></tr>
+    <tr><td>Y Bounds</td><td>1.223e-01, 9.129e-01</td></tr>
+    <tr><td>Z Bounds</td><td>6.901e-02, 8.318e-01</td></tr>
     <tr><td>N Arrays</td><td>1</td></tr>
     </table>
 
@@ -164,7 +165,7 @@ Create plotting class and add the unstructured grid
 .. code-block:: default
 
     plotter = pv.Plotter()
-    plotter.add_mesh(grid, show_edges=True, color="tan")
+    plotter.add_mesh(grid, show_edges=True, color='lightblue')
 
     # Add labels to points on the yz plane (where x == 0)
     points = grid.points
@@ -239,28 +240,25 @@ This example will label each point with their scalar values
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.163 seconds)
+   **Total running time of the script:** ( 0 minutes  1.026 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: labels.py <labels.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: labels.py <labels.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: labels.ipynb <labels.ipynb>`
+      :download:`Download Jupyter notebook: labels.ipynb <labels.ipynb>`
 
 
 .. only:: html

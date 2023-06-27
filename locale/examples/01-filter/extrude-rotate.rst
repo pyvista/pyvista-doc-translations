@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_extrude-rotate.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_extrude-rotate.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -47,6 +47,13 @@ cylindrical shell, and sweeping a circle creates a torus.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3089: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+      warnings.warn(
+
 
 .. raw:: html
 
@@ -56,6 +63,7 @@ cylindrical shell, and sweeping a circle creates a torus.
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>2</td></tr>
     <tr><td>N Points</td><td>33</td></tr>
+    <tr><td>N Strips</td><td>2</td></tr>
     <tr><td>X Bounds</td><td>-1.000e+00, 1.000e+00</td></tr>
     <tr><td>Y Bounds</td><td>-9.511e-01, 9.511e-01</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
@@ -87,7 +95,7 @@ Plot the extruded line
     plotter = pyvista.Plotter(shape=(2, 1))
     plotter.subplot(0, 0)
     plotter.add_text("Line", font_size=24)
-    plotter.add_mesh(line, color="tan", show_edges=True)
+    plotter.add_mesh(line, color='lightblue', show_edges=True)
     plotter.add_mesh(
         pyvista.PolyData(line.points),
         color="red",
@@ -96,7 +104,7 @@ Plot the extruded line
     )
     plotter.subplot(1, 0)
     plotter.add_text("Extrude Rotated Line", font_size=24)
-    plotter.add_mesh(poly, color="tan", show_edges=True)
+    plotter.add_mesh(poly, color='lightblue', show_edges=True)
     plotter.add_mesh(
         pyvista.PolyData(poly.points),
         color="red",
@@ -149,7 +157,7 @@ Create a spring
     # Extrude the profile to make a spring.
     spring = profile.extrude_rotate(resolution=360, translation=6.0, dradius=1.0, angle=2160.0)
     plotter.add_text("Spring", font_size=24)
-    plotter.add_mesh(spring, color="tan", show_edges=True)
+    plotter.add_mesh(spring, color='lightblue', show_edges=True)
 
     plotter.show(cpos="zx")
 
@@ -161,34 +169,38 @@ Create a spring
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3089: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+      warnings.warn(
+
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.899 seconds)
+   **Total running time of the script:** ( 0 minutes  0.654 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-rotate.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: extrude-rotate.py <extrude-rotate.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: extrude-rotate.py <extrude-rotate.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extrude-rotate.ipynb <extrude-rotate.ipynb>`
+      :download:`Download Jupyter notebook: extrude-rotate.ipynb <extrude-rotate.ipynb>`
 
 
 .. only:: html

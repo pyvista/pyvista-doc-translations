@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_load-gltf.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_load-gltf.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -91,7 +91,7 @@ mesh.
 
     block = pyvista.read(helmet_file)
     mesh = block[0][0][0]
-    mesh.plot(color='tan', show_edges=True, cpos='xy')
+    mesh.plot(color='lightblue', show_edges=True, cpos='xy')
 
 
 
@@ -107,7 +107,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  52.976 seconds)
+   **Total running time of the script:** ( 0 minutes  52.769 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:
@@ -115,6 +115,8 @@ mesh.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

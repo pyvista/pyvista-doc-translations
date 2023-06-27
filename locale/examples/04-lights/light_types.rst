@@ -50,7 +50,7 @@ where you move the camera, the light always emanates from the view point:
     mesh.rotate_z(180, inplace=True)
 
     plotter = pv.Plotter(lighting='none')
-    plotter.add_mesh(mesh, color='tan', smooth_shading=True)
+    plotter.add_mesh(mesh, color='lightblue', smooth_shading=True)
     light = pv.Light(light_type='headlight')
     # these don't do anything for a headlight:
     light.position = (1, 2, 3)
@@ -91,7 +91,7 @@ coordinates please see the documentation of
 
 
     plotter = pv.Plotter(lighting='none')
-    plotter.add_mesh(mesh, color='tan', smooth_shading=True)
+    plotter.add_mesh(mesh, color='lightblue', smooth_shading=True)
     # a light that always shines from the right of the camera
     light = pv.Light(position=(1, 0, 0), light_type='camera light')
     plotter.add_light(light)
@@ -124,7 +124,7 @@ interpreted as global coordinates:
 
 
     plotter = pv.Plotter(lighting='none')
-    plotter.add_mesh(mesh, color='tan', smooth_shading=True)
+    plotter.add_mesh(mesh, color='lightblue', smooth_shading=True)
     # a light that always shines on the left side of the bunny
     light = pv.Light(position=(0, 1, 0), light_type='scene light')
     plotter.add_light(light)
@@ -144,7 +144,7 @@ interpreted as global coordinates:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.997 seconds)
+   **Total running time of the script:** ( 0 minutes  1.156 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:

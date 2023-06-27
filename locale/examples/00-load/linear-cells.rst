@@ -300,7 +300,7 @@ cells in a single plot.
         """Add a single cell to a plotter with fancy plotting."""
         pl.subplot(*subplot)
         pl.add_text(text, 'lower_edge', color='k', font_size=8)
-        pl.add_mesh(grid, opacity=0.5, color='tan', line_width=5)
+        pl.add_mesh(grid, opacity=0.5, color='lightblue', line_width=5)
         edges = grid.extract_all_edges()
         if edges.n_cells:
             pl.add_mesh(grid.extract_all_edges(), line_width=5, color='k')
@@ -384,7 +384,7 @@ cells in a single plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.242 seconds)
+   **Total running time of the script:** ( 0 minutes  3.954 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_linear-cells.py:
