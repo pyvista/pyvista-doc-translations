@@ -1545,6 +1545,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Measuring distance">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_distance_measurement_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_02-plot_distance_measurement.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Measuring distance</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Show the edges of all geometries within a mesh">
 
 .. only:: html
