@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_point-clouds.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_point-clouds.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,7 +23,7 @@
 Plotting Point Clouds
 ~~~~~~~~~~~~~~~~~~~~~
 This example shows you how to plot point clouds using PyVista using both the
-``'point'`` and ``'point_gaussian'`` styles.
+``'points'`` and ``'points_gaussian'`` styles.
 
 .. GENERATED FROM PYTHON SOURCE LINES 10-16
 
@@ -67,13 +67,13 @@ First, let's create a sample point cloud using :func:`numpy.random.random`.
  .. code-block:: none
 
 
-    array([[0.3587645 , 0.73616052, 0.09388843],
-           [0.34302867, 0.1857821 , 0.35169558],
-           [0.23600708, 0.46062802, 0.10327567],
+    array([[0.93228233, 0.2022771 , 0.56047516],
+           [0.75114172, 0.36533147, 0.13387651],
+           [0.68702887, 0.65843316, 0.68698018],
            ...,
-           [0.19198554, 0.39673417, 0.92563483],
-           [0.05419863, 0.33367526, 0.02756891],
-           [0.6520629 , 0.5365713 , 0.4737048 ]])
+           [0.00486671, 0.31695112, 0.92479928],
+           [0.65740672, 0.70221147, 0.33216335],
+           [0.90391272, 0.09866084, 0.01105938]])
 
 
 
@@ -170,7 +170,7 @@ array from 0-255.
 
 Point Cloud Plot Styles
 ~~~~~~~~~~~~~~~~~~~~~~~
-PyVista supports the ``'point_gaussian'`` style, which renders points as
+PyVista supports the ``'points_gaussian'`` style, which renders points as
 individual soft sprites. You have the option of displaying these as tight
 "spheres" using ``render_points_as_spheres=True`` (default), or disabling it
 to create softer points at the expense of render performance.
@@ -316,9 +316,9 @@ from the center of the cloud.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_point-clouds_006.png
+.. image-sg:: /examples/02-plot/images/sphx_glr_point-clouds_006.gif
    :alt: point clouds
-   :srcset: /examples/02-plot/images/sphx_glr_point-clouds_006.png
+   :srcset: /examples/02-plot/images/sphx_glr_point-clouds_006.gif
    :class: sphx-glr-single-img
 
 
@@ -328,7 +328,7 @@ from the center of the cloud.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.800 seconds)
+   **Total running time of the script:** ( 0 minutes  15.033 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-clouds.py:
@@ -336,6 +336,8 @@ from the center of the cloud.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
