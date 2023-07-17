@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_resample.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_resample.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,14 +23,31 @@
 Resampling
 ~~~~~~~~~~
 
+There are two main methods of interpolating or sampling data from a target mesh
+in PyVista. :func:`pyvista.DataSetFilters.interpolate` uses a distance weighting
+kernel to interpolate point data from nearby points of the target mesh onto
+the desired points.
+:func:`pyvista.DataSetFilters.sample` interpolates data using the
+interpolation scheme of the enclosing cell from the target mesh.
+
+If the target mesh is a point cloud, i.e. there is no connectivity in the cell
+structure, then :func:`pyvista.DataSetFilters.interpolate` is typically
+preferred.  If interpolation is desired within the cells of the target mesh, then
+:func:`pyvista.DataSetFilters.sample` is typically desired.
+
+
+This example uses :func:`pyvista.DataSetFilters.sample`.
+For :func:`pyvista.DataSetFilters.interpolate`, see :ref:`interpolate_example`.
+
+
 Resample one mesh's point/cell arrays onto another mesh's nodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-12
+.. GENERATED FROM PYTHON SOURCE LINES 27-29
 
-This example will resample a volumetric mesh's  scalar data onto the surface
+This example will resample a volumetric mesh's scalar data onto the surface
 of a sphere contained in that volume.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-16
+.. GENERATED FROM PYTHON SOURCE LINES 29-33
 
 .. code-block:: default
 
@@ -45,13 +62,13 @@ of a sphere contained in that volume.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-21
+.. GENERATED FROM PYTHON SOURCE LINES 35-38
 
 Simple Resample
 +++++++++++++++
-Query a grids points onto a sphere
+Query a grid's points onto a sphere
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-24
+.. GENERATED FROM PYTHON SOURCE LINES 38-41
 
 .. code-block:: default
 
@@ -65,11 +82,11 @@ Query a grids points onto a sphere
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-26
+.. GENERATED FROM PYTHON SOURCE LINES 42-43
 
 Plot the two datasets
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-31
+.. GENERATED FROM PYTHON SOURCE LINES 43-48
 
 .. code-block:: default
 
@@ -90,11 +107,11 @@ Plot the two datasets
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-33
+.. GENERATED FROM PYTHON SOURCE LINES 49-50
 
 Run the algorithm and plot the result
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-39
+.. GENERATED FROM PYTHON SOURCE LINES 50-56
 
 .. code-block:: default
 
@@ -116,13 +133,13 @@ Run the algorithm and plot the result
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-43
+.. GENERATED FROM PYTHON SOURCE LINES 57-60
 
 Complex Resample
 ++++++++++++++++
 Take a volume of data and create a grid of lower resolution to resample on
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-48
+.. GENERATED FROM PYTHON SOURCE LINES 60-65
 
 .. code-block:: default
 
@@ -138,7 +155,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-64
+.. GENERATED FROM PYTHON SOURCE LINES 66-81
 
 .. code-block:: default
 
@@ -172,28 +189,25 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.645 seconds)
+   **Total running time of the script:** ( 0 minutes  8.939 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: resample.py <resample.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: resample.py <resample.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: resample.ipynb <resample.ipynb>`
+      :download:`Download Jupyter notebook: resample.ipynb <resample.ipynb>`
 
 
 .. only:: html

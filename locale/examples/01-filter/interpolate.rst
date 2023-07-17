@@ -23,10 +23,26 @@
 Interpolating
 ~~~~~~~~~~~~~
 
+There are two main methods of interpolating or sampling data from a target mesh
+in PyVista. :func:`pyvista.DataSetFilters.interpolate` uses a distance weighting
+kernel to interpolate point data from nearby points of the target mesh onto
+the desired points.
+:func:`pyvista.DataSetFilters.sample` interpolates data using the
+interpolation scheme of the enclosing cell from the target mesh.
+
+If the target mesh is a point cloud, i.e. there is no connectivity in the cell
+structure, then :func:`pyvista.DataSetFilters.interpolate` is typically
+preferred.  If interpolation is desired within the cells of the target mesh, then
+:func:`pyvista.DataSetFilters.sample` is typically desired.
+
+
+This example uses :func:`pyvista.DataSetFilters.interpolate`.
+For :func:`pyvista.DataSetFilters.sample`, see :ref:`resampling_example`.
+
 Interpolate one mesh's point/cell arrays onto another mesh's nodes using a
 Gaussian Kernel.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
+.. GENERATED FROM PYTHON SOURCE LINES 26-29
 
 .. code-block:: default
 
@@ -40,13 +56,13 @@ Gaussian Kernel.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+.. GENERATED FROM PYTHON SOURCE LINES 31-34
 
 Simple Surface Interpolation
 ++++++++++++++++++++++++++++
 Resample the points' arrays onto a surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-28
+.. GENERATED FROM PYTHON SOURCE LINES 34-44
 
 .. code-block:: default
 
@@ -72,11 +88,11 @@ Resample the points' arrays onto a surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-30
+.. GENERATED FROM PYTHON SOURCE LINES 45-46
 
 Run the interpolation
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-40
+.. GENERATED FROM PYTHON SOURCE LINES 46-56
 
 .. code-block:: default
 
@@ -102,7 +118,7 @@ Run the interpolation
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-50
+.. GENERATED FROM PYTHON SOURCE LINES 57-66
 
 Complex Interpolation
 +++++++++++++++++++++
@@ -114,7 +130,7 @@ subsurface.
 This approach is a great for back-of-the-hand estimations but pales in
 comparison to kriging
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-54
+.. GENERATED FROM PYTHON SOURCE LINES 66-70
 
 .. code-block:: default
 
@@ -129,11 +145,11 @@ comparison to kriging
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-56
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
 Create the interpolation grid around the sparse data
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-61
+.. GENERATED FROM PYTHON SOURCE LINES 72-77
 
 .. code-block:: default
 
@@ -149,7 +165,7 @@ Create the interpolation grid around the sparse data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-75
+.. GENERATED FROM PYTHON SOURCE LINES 78-91
 
 .. code-block:: default
 
@@ -178,11 +194,11 @@ Create the interpolation grid around the sparse data
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-77
+.. GENERATED FROM PYTHON SOURCE LINES 92-93
 
 Run an interpolation
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-79
+.. GENERATED FROM PYTHON SOURCE LINES 93-95
 
 .. code-block:: default
 
@@ -195,11 +211,11 @@ Run an interpolation
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-81
+.. GENERATED FROM PYTHON SOURCE LINES 96-97
 
 Visualize the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-91
+.. GENERATED FROM PYTHON SOURCE LINES 97-107
 
 .. code-block:: default
 
@@ -228,7 +244,7 @@ Visualize the results
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.588 seconds)
+   **Total running time of the script:** ( 0 minutes  9.609 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.41.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 01:16+0000\n"
+"POT-Creation-Date: 2023-07-17 01:12+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Bartlomiej Kwiatkowski <kfiatek1106@gmail.com>, 2023\n"
 "Language-Team: Polish (https://app.transifex.com/tkoyama010/teams/112279/pl/)\n"
@@ -111,12 +111,12 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/image-fft-perlin-noise.rst:394
 #: ../../pyvista/doc/source/examples/01-filter/image-fft.rst:280
 #: ../../pyvista/doc/source/examples/01-filter/integrate-data.rst:314
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:256
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:272
 #: ../../pyvista/doc/source/examples/01-filter/mesh-quality.rst:142
 #: ../../pyvista/doc/source/examples/01-filter/poly-ray-trace.rst:99
 #: ../../pyvista/doc/source/examples/01-filter/project-plane.rst:111
 #: ../../pyvista/doc/source/examples/01-filter/reflect.rst:135
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:203
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:217
 #: ../../pyvista/doc/source/examples/01-filter/rotate.rst:293
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_2d.rst:201
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_3d.rst:155
@@ -6192,11 +6192,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:452
+#: ../../pyvista/doc/source/examples/01-filter/index.rst:537
 #: ../../pyvista/doc/source/examples/index.rst:973
+#: ../../pyvista/doc/source/examples/index.rst:1058
 msgid ""
-"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Interpolate one mesh&#x27;s"
-" point/cell arrays onto another mesh&#x27;s nodes using a Gaussian "
-"Kernel.\">"
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"There are two main methods "
+"of interpolating or sampling data from a target mesh in PyVista. pyv...\">"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:461
@@ -6289,13 +6290,6 @@ msgstr ""
 msgid ""
 "  <div class=\"sphx-glr-thumbnail-title\">Reflect Meshes</div>\n"
 "</div>"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/index.rst:537
-#: ../../pyvista/doc/source/examples/index.rst:1058
-msgid ""
-"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Resample one mesh&#x27;s "
-"point/cell arrays onto another mesh&#x27;s nodes.\">"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:546
@@ -6669,28 +6663,54 @@ msgid "Interpolating"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:26
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:26
+msgid ""
+"There are two main methods of interpolating or sampling data from a target "
+"mesh in PyVista. :func:`pyvista.DataSetFilters.interpolate` uses a distance "
+"weighting kernel to interpolate point data from nearby points of the target "
+"mesh onto the desired points. :func:`pyvista.DataSetFilters.sample` "
+"interpolates data using the interpolation scheme of the enclosing cell from "
+"the target mesh."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:33
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:33
+msgid ""
+"If the target mesh is a point cloud, i.e. there is no connectivity in the "
+"cell structure, then :func:`pyvista.DataSetFilters.interpolate` is typically"
+" preferred.  If interpolation is desired within the cells of the target "
+"mesh, then :func:`pyvista.DataSetFilters.sample` is typically desired."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:39
+msgid ""
+"This example uses :func:`pyvista.DataSetFilters.interpolate`. For "
+":func:`pyvista.DataSetFilters.sample`, see :ref:`resampling_example`."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:42
 msgid ""
 "Interpolate one mesh's point/cell arrays onto another mesh's nodes using a "
 "Gaussian Kernel."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:46
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:62
 msgid "Simple Surface Interpolation"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:47
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:63
 msgid "Resample the points' arrays onto a surface"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:77
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:93
 msgid "Run the interpolation"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:108
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:124
 msgid "Complex Interpolation"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:109
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:125
 msgid ""
 "In this example, we will in interpolate sparse points in 3D space into a "
 "volume. These data are from temperature probes in the subsurface and the "
@@ -6698,34 +6718,34 @@ msgid ""
 "subsurface."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:114
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:130
 msgid ""
 "This approach is a great for back-of-the-hand estimations but pales in "
 "comparison to kriging"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:134
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:150
 msgid "Create the interpolation grid around the sparse data"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:183
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:199
 msgid "Run an interpolation"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:200
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:216
 msgid "Visualize the results"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:231
-msgid "**Total running time of the script:** ( 0 minutes  10.588 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:247
+msgid "**Total running time of the script:** ( 0 minutes  9.609 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:245
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:261
 msgid ""
 ":download:`Download Python source code: interpolate.py <interpolate.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:249
+#: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:265
 msgid ""
 ":download:`Download Jupyter notebook: interpolate.ipynb <interpolate.ipynb>`"
 msgstr ""
@@ -6912,7 +6932,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/resample.rst:13
 msgid ""
-"Click :ref:`here <sphx_glr_download_examples_01-filter_resample.py>` to "
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_resample.py>` to "
 "download the full example code"
 msgstr ""
 
@@ -6920,50 +6940,56 @@ msgstr ""
 msgid "Resampling"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:26
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:39
+msgid ""
+"This example uses :func:`pyvista.DataSetFilters.sample`. For "
+":func:`pyvista.DataSetFilters.interpolate`, see :ref:`interpolate_example`."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:43
 msgid "Resample one mesh's point/cell arrays onto another mesh's nodes."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:30
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:47
 msgid ""
-"This example will resample a volumetric mesh's  scalar data onto the surface"
-" of a sphere contained in that volume."
+"This example will resample a volumetric mesh's scalar data onto the surface "
+"of a sphere contained in that volume."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:51
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:68
 msgid "Simple Resample"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:52
-msgid "Query a grids points onto a sphere"
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:69
+msgid "Query a grid's points onto a sphere"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:70
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:87
 msgid "Plot the two datasets"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:95
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:112
 msgid "Run the algorithm and plot the result"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:122
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:139
 msgid "Complex Resample"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:123
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:140
 msgid ""
 "Take a volume of data and create a grid of lower resolution to resample on"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:175
-msgid "**Total running time of the script:** ( 0 minutes  7.645 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:192
+msgid "**Total running time of the script:** ( 0 minutes  8.939 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:190
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:206
 msgid ":download:`Download Python source code: resample.py <resample.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/resample.rst:196
+#: ../../pyvista/doc/source/examples/01-filter/resample.rst:210
 msgid ":download:`Download Jupyter notebook: resample.ipynb <resample.ipynb>`"
 msgstr ""
 
@@ -7211,167 +7237,167 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
-msgid "**00:08.960** total execution time for **examples_01-filter** files:"
+msgid "**00:18.548** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
+msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
+msgid "00:09.609"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
+msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
+msgid "00:08.938"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
 "operations.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid "00:08.307"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid ""
-":ref:`sphx_glr_examples_01-filter_extrude-rotate.py` (``extrude-rotate.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid "00:00.654"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:20
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_clipping-with-surface.py` (``clipping-"
 "with-surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:20
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:22
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:22
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:24
 msgid ":ref:`sphx_glr_examples_01-filter_collisions.py` (``collisions.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:24
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:26
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-"
 "normals.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:26
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:28
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:28
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:30
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:30
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:32
 msgid ":ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:32
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:34
 msgid ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:34
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:36
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-"
 "between-surfaces.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:36
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` "
 "(``extract-cells-inside-surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-surface.py` (``extract-"
 "surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
+msgid ""
+":ref:`sphx_glr_examples_01-filter_extrude-rotate.py` (``extrude-rotate.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
 msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
 "perlin-noise.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
-msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
-msgid ""
-":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
-msgstr ""
-
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:62
-msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
+msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:64
 msgid ""
-":ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)"
+":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:66
 msgid ""
-":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)"
+":ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:68
 msgid ""
-":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
+":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:70
-msgid ":ref:`sphx_glr_examples_01-filter_reflect.py` (``reflect.py``)"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:72
-msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
+msgid ":ref:`sphx_glr_examples_01-filter_reflect.py` (``reflect.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:74

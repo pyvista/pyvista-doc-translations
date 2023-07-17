@@ -451,7 +451,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Interpolate one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes using a Gaussian Kernel.">
+    <div class="sphx-glr-thumbcontainer" tooltip="There are two main methods of interpolating or sampling data from a target mesh in PyVista. pyv...">
 
 .. only:: html
 
@@ -536,7 +536,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Resample one mesh&#x27;s point/cell arrays onto another mesh&#x27;s nodes.">
+    <div class="sphx-glr-thumbcontainer" tooltip="There are two main methods of interpolating or sampling data from a target mesh in PyVista. pyv...">
 
 .. only:: html
 
