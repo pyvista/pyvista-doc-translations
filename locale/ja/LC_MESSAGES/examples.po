@@ -7987,6 +7987,11 @@ msgid ""
 "interpolates data using the interpolation scheme of the enclosing cell from "
 "the target mesh."
 msgstr ""
+"PyVistaでターゲットメッシュからデータを補間またはサンプリングするには，主に2つの方法があります． "
+":func:`pyvista.DataSetFilters.interpolate` "
+"は距離重み付けカーネルを使って，ターゲットメッシュの近くの点から目的の点に点データを補間します． "
+":func:`pyvista.DataSetFilters.sample` "
+"は，ターゲットメッシュのセルを囲むセルの補間スキームを使ってデータを補間します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:33
 #: ../../pyvista/doc/source/examples/01-filter/resample.rst:33
@@ -7996,6 +8001,10 @@ msgid ""
 " preferred.  If interpolation is desired within the cells of the target "
 "mesh, then :func:`pyvista.DataSetFilters.sample` is typically desired."
 msgstr ""
+"ターゲットメッシュが点群である場合，つまりセル構造に連結性がない場合は，一般的に "
+":func:`pyvista.DataSetFilters.interpolate` "
+"が推奨されます．ターゲットメッシュのセル内で補間を行いたい場合は，一般的に :func:`pyvista.DataSetFilters.sample` "
+"を使用します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/interpolate.rst:39
 msgid ""
@@ -11001,6 +11010,9 @@ msgid ""
 "<pyvista.plotting.themes.Theme>` as some operating systems and versions of "
 "VTK have issues with this routine."
 msgstr ""
+"深さのピーリングは，半透明のジオメトリを正しくレンダーするテクニックです．いくつかのオペレーティングシステムとVTKのバージョンはこのルーチンで問題があるので，"
+"  :attr:`pyvista.global_theme <pyvista.plotting.themes.Theme>`  "
+"ではデフォルトで有効になっていません．"
 
 #: ../../pyvista/doc/source/examples/02-plot/depth-peeling.rst:30
 msgid ""
@@ -11026,7 +11038,7 @@ msgstr "次に，多くの半透明のコンタサーフェスをレンダリン
 
 #: ../../pyvista/doc/source/examples/02-plot/depth-peeling.rst:180
 msgid "**Total running time of the script:** ( 1 minutes  23.405 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 1 minutes  23.405 seconds)"
 
 #: ../../pyvista/doc/source/examples/02-plot/depth-peeling.rst:194
 msgid ""
@@ -14878,7 +14890,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:9
 msgid "**01:23.405** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**01:23.405** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
 msgid ""
@@ -14888,7 +14900,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
 msgid "01:23.405"
-msgstr ""
+msgstr "01:23.405"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:14
 msgid ""
