@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 01:14+0000\n"
+"POT-Creation-Date: 2023-07-24 01:07+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: German (Germany) (https://app.transifex.com/tkoyama010/teams/112279/de_DE/)\n"
 "MIME-Version: 1.0\n"
@@ -2184,7 +2184,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.Spline:30
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:35
+#: pyvista.core.utilities.points.fit_plane_to_points:37
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.line_segments_from_points:30
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -7637,7 +7637,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.surface_from_para:20
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:11
+#: pyvista.core.utilities.points.fit_plane_to_points:13
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.lines_from_points:12
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -8278,7 +8278,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.surface_from_para:38
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:17
+#: pyvista.core.utilities.points.fit_plane_to_points:19
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.line_segments_from_points:27
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -14454,9 +14454,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
 #: pyvista.core.utilities.helpers.axis_rotation:36
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:20
+#: pyvista.core.utilities.points.fit_plane_to_points:22
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:32
+#: pyvista.core.utilities.points.fit_plane_to_points:34
 #: ../../pyvista/pyvista/demos/demos.pydocstring of
 #: pyvista.demos.demos.plot_wave:36
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -14883,7 +14883,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/arrays.pydocstring of
 #: pyvista.core.utilities.arrays.vtkmatrix_from_array:9
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:7
+#: pyvista.core.utilities.points.fit_plane_to_points:9
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.line_segments_from_points:12
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -21727,7 +21727,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample_over_multiple_lines:8
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:8
+#: pyvista.core.utilities.points.fit_plane_to_points:10
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.line_segments_from_points:13
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -35737,37 +35737,44 @@ msgid "Fit a plane to a set of points using the SVD algorithm."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:8
+#: pyvista.core.utilities.points.fit_plane_to_points:4
+msgid ""
+"The plane is automatically sized and oriented to fit the extents of the "
+"points."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/points.pydocstring of
+#: pyvista.core.utilities.points.fit_plane_to_points:10
 msgid "Size ``[N x 3]`` sequence of points to fit a plane through."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:12
+#: pyvista.core.utilities.points.fit_plane_to_points:14
 msgid ""
 "**return_meta** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:11
+#: pyvista.core.utilities.points.fit_plane_to_points:13
 msgid ""
-"If ``True``, also returns the center and normal used to generate the plane."
+"If ``True``, also returns the center and normal of the generated plane."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.Plane:28
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:17
+#: pyvista.core.utilities.points.fit_plane_to_points:19
 msgid "Plane mesh."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:20
+#: pyvista.core.utilities.points.fit_plane_to_points:22
 msgid "Plane center if ``return_meta=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
-#: pyvista.core.utilities.points.fit_plane_to_points:23
+#: pyvista.core.utilities.points.fit_plane_to_points:25
 msgid "Plane normal if ``return_meta=True``."
 msgstr ""
 
@@ -35776,9 +35783,9 @@ msgstr ""
 msgid "Fit a plane to a random point cloud."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/helpers.rst:13
-#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.fit_plane_to_points.rst:13
-msgid "Plot the fitted plane."
+#: ../../pyvista/doc/source/api/core/helpers.rst:44
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.fit_plane_to_points.rst:44
+msgid "Fit a plane to a mesh."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/index.rst:4
