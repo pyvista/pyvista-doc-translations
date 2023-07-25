@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-24 01:07+0000\n"
+"POT-Creation-Date: 2023-07-25 01:13+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (United States) (https://app.transifex.com/tkoyama010/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -455,6 +455,8 @@ msgstr ""
 #: pyvista.core.pointset.PointSet.cast_to_polydata:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:0
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -1993,7 +1995,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.face_normals:22
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:39 ../../pyvista/pyvista/core/pointset.pydocstring
+#: pyvista.PolyData.faces:44 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.is_all_triangles:22
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_manifold:17
@@ -2008,6 +2010,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_verts:20 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.point_normals:25
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:31
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.strips:21 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.verts:21
@@ -2048,7 +2052,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet:48
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:96
+#: pyvista.core.pointset.PolyData:101
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:31
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:55
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -4234,7 +4240,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:79
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.rst:206
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:443
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:518
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:523
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:395
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:415
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.rst:96
@@ -4935,6 +4941,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:0
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.strips:0 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.verts:0 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.volume:0
@@ -4967,6 +4975,8 @@ msgstr ""
 #: pyvista.core.pointset.ExplicitStructuredGrid.show_cells:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet.cast_to_polydata:0
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.StructuredGrid.hide_cells:0
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -6019,8 +6029,10 @@ msgstr ""
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.points:15
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:31 ../../pyvista/pyvista/core/pointset.pydocstring
-#: of pyvista.UnstructuredGrid.cells:36
+#: pyvista.PolyData.faces:36 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.PolyData.regular_faces:24
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.UnstructuredGrid.cells:36
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:19
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -8179,6 +8191,8 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.tube:51
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PointSet.cast_to_polydata:28
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:28
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.Arrow:44
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
@@ -8862,7 +8876,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:71
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:92
+#: pyvista.core.pointset.PolyData:89
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.Cone:22
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
@@ -13727,7 +13741,7 @@ msgid ":py:obj:`DataSet.number_of_cells <pyvista.DataSet.number_of_cells>`\\"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -14438,13 +14452,14 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.remove_points:39
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:28 ../../pyvista/pyvista/core/pointset.pydocstring
-#: of pyvista.PolyData.strips:18
+#: pyvista.PolyData.faces:27 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.PolyData.regular_faces:15
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.verts:18 ../../pyvista/pyvista/core/pointset.pydocstring
-#: of pyvista.StructuredGrid.x:18
+#: pyvista.PolyData.strips:18 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.PolyData.verts:18
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.UnstructuredGrid.cell_connectivity:17
+#: pyvista.StructuredGrid.x:18 ../../pyvista/pyvista/core/pointset.pydocstring
+#: of pyvista.UnstructuredGrid.cell_connectivity:17
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:16
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -27847,7 +27862,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.core.pointset.PolyData:93
+#: pyvista.core.pointset.PolyData:90
 msgid ""
 "**force_float** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
@@ -27858,6 +27873,11 @@ msgid ""
 "Casts the datatype to ``float32`` if points datatype is non-float.  Default "
 "``True``. Set this to ``False`` to allow non-float types, though this may "
 "lead to truncation of intermediate floats when transforming datasets."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData:95
+msgid ":obj:`pyvista.PolyData.from_regular_faces`"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:8
@@ -27894,23 +27914,37 @@ msgstr ""
 msgid "See :ref:`ref_create_poly` for more examples."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:516:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:521:<autosummary>:1
+msgid ""
+":py:obj:`PolyData.from_regular_faces "
+"<pyvista.PolyData.from_regular_faces>`\\ \\(points\\, faces\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:521:<autosummary>:1
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:2
+msgid ""
+"Alternate `pyvista.PolyData` convenience constructor from point and regular "
+"face arrays."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:521:<autosummary>:1
 msgid ""
 ":py:obj:`PolyData.save <pyvista.PolyData.save>`\\ \\(filename\\[\\, "
 "binary\\, texture\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:516:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:521:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData.save:2
 msgid "Write a surface mesh to disk."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -27918,138 +27952,149 @@ msgstr ""
 msgid "Return the cell normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.faces <pyvista.PolyData.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:2
 msgid "Return the connectivity array of the faces of this PolyData."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ""
 ":py:obj:`PolyData.is_all_triangles <pyvista.PolyData.is_all_triangles>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_all_triangles:2
 msgid ""
 "Return if all the faces of the :class:`pyvista.PolyData` are triangles."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.is_manifold <pyvista.PolyData.is_manifold>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_manifold:2
 msgid "Return if the mesh is manifold (no open edges)."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.lines <pyvista.PolyData.lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:2
 msgid "Return a pointer to the lines as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.n_lines <pyvista.PolyData.n_lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_lines:2
 msgid "Return the number of lines."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:2
 msgid "Return the number of open edges on this mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.n_strips <pyvista.PolyData.n_strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_strips:2
 msgid "Return the number of strips."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.n_verts <pyvista.PolyData.n_verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_verts:2
 msgid "Return the number of vertices."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:2
 msgid "Return the obbTree of the polydata."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:2
 msgid "Return the point normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
+msgid ":py:obj:`PolyData.regular_faces <pyvista.PolyData.regular_faces>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:2
+msgid ""
+"Return a face array of point indices when all faces have the same size."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.strips <pyvista.PolyData.strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.strips:2
 msgid "Return a pointer to the strips as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.verts <pyvista.PolyData.verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:2
 msgid "Get the vertex cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 msgid ":py:obj:`PolyData.volume <pyvista.PolyData.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:869:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:879:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:2
 msgid "Return the approximate volume of the dataset."
@@ -28119,7 +28164,12 @@ msgid "Array of face connectivity."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:32 ../../pyvista/pyvista/core/pointset.pydocstring
+#: pyvista.PolyData.faces:32
+msgid ":obj:`pyvista.PolyData.regular_faces`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.faces:37 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.UnstructuredGrid.cells:37
 msgid ""
 "The array returned cannot be modified in place and will raise a "
@@ -28127,7 +28177,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.faces:35
+#: pyvista.PolyData.faces:40
 msgid "You can, however, set the faces directly. See the example."
 msgstr ""
 
@@ -28141,6 +28191,73 @@ msgstr ""
 msgid ""
 "Set the faces directly. The following example creates a simple plane with a "
 "single square faces and modifies it to have two triangles instead."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.from_regular_faces.rst:2
+msgid "pyvista.PolyData.from\\_regular\\_faces"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:8
+msgid ""
+"**points** : :obj:`numpy.ndarray`, "
+":term:`python:sequence`\\[:term:`python:sequence`\\[:class:`python:float`]]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:7
+msgid "numpy.ndarray, python:sequence[python:sequence[python:float]]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:8
+msgid "A (n_points, 3) array of points."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:11
+msgid ""
+"**faces** : :obj:`numpy.ndarray` or "
+":term:`python:sequence`\\[:term:`python:sequence`\\[:class:`python:int`]]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:10
+msgid "numpy.ndarray or python:sequence[python:sequence[python:int]]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:11
+msgid ""
+"A (n_faces, face_size) array of face indices. For a triangle mesh, face_size"
+" = 3."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:14
+msgid ""
+"**deep** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`, "
+"default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:13
+msgid "bool, optional, default: python:False"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:14
+msgid ""
+"Whether to deep copy the faces array into vtkCellArray connectivity data."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.core.pointset.PolyData.from_regular_faces:19
+msgid "The newly constructed mesh."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.from_regular_faces.rst:3
+msgid "Construct a tetrahedron from four triangles"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.is_all_triangles.rst:2
@@ -28271,6 +28388,32 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:13
 msgid "Array of point normals."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.regular_faces.rst:2
+msgid "pyvista.PolyData.regular\\_faces"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:9
+msgid "Array of face indices with shape (n_faces, face_size)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:20
+msgid ":obj:`pyvista.PolyData.faces`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.regular_faces:25
+msgid ""
+"This property does not validate that the mesh's faces are all actually the "
+"same size. If they're not, this property may either raise a `ValueError` or "
+"silently return an incorrect array."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.regular_faces.rst:3
+msgid "Get the face array of a tetrahedron as a 4x3 array"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.save.rst:2
