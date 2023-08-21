@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 01:14+0000\n"
+"POT-Creation-Date: 2023-08-21 01:02+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Russian (https://app.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -118,7 +118,7 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/using-filters.rst:254
 #: ../../pyvista/doc/source/examples/01-filter/voxelize.rst:284
 #: ../../pyvista/doc/source/examples/01-filter/warp-by-vector.rst:128
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:227
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:307
 #: ../../pyvista/doc/source/examples/02-plot/backface_props.rst:288
 #: ../../pyvista/doc/source/examples/02-plot/background_image.rst:140
 #: ../../pyvista/doc/source/examples/02-plot/blurring.rst:157
@@ -8328,8 +8328,8 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:13
 msgid ""
-"Click :ref:`here <sphx_glr_download_examples_02-plot_anti-aliasing.py>` to "
-"download the full example code"
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_anti-aliasing.py>` "
+"to download the full example code"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:24
@@ -8345,65 +8345,58 @@ msgid "PyVista supports three types of anti-aliasing:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:29
-msgid "``\"ssaa\"`` - Super-Sample Anti-Aliasing"
+msgid "SSAA - Super-Sample Anti-Aliasing"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:30
-msgid "``\"msaa\"`` - Multi-Sample Anti-Aliasing"
+msgid "MSAA - Multi-Sample Anti-Aliasing"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:31
-msgid "``\"fxaa\"`` - Fast Approximate Anti-Aliasing"
+msgid "FXAA - Fast Approximate Anti-Aliasing"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:33
 msgid ""
-"By default, anti-aliasing is disabled, but can be enabled globally with:"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:40
-msgid "**Which anti-aliasing technique should you use?**"
+"By default, MSAA anti-aliasing is enabled using 8 samples. This is the "
+"default for VTK."
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:42
-msgid ""
-"Those who have PCs with high-end configuration should opt for ``\"ssaa\"`` "
-"or ``\"msaa\"``. Low-end PCs should use ``\"fxaa\"``."
+msgid "You can enable additional line smoothing by enabling SSAA or FXAA"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:65
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:44
+msgid "**Which anti-aliasing technique should you use?**"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:46
+msgid ""
+"Normally, the default MSAA anti-aliasing should be sufficient as it strikes "
+"a balance between efficiency and quality. If you desire additional "
+"smoothing, you can either increase the number of ``multi_samples`` or use "
+"SSAA. Low-end PCs should consider FXAA."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:70
 msgid "No Anti-Aliasing"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:66
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:71
 msgid "First, let's show a plot without any anti-aliasing."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:98
-msgid "Fast Approximate Anti-Aliasing (FXAA)"
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:100
+msgid "Default: Multi-Sample Anti-Aliasing (MSAA)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:99
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:101
 msgid ""
-"FXAA is the most performant of all three anti-aliasing techniques. This is "
-"because, in terms of hardware or GPU, FXAA is not that demanding. It "
-"directly smooths the 2D image and this reduces the strain over GPU, making "
-"it best for low-end PCs."
+"Next, let's show the default anti-aliasing configuration. By default, "
+"PyVista uses 8 samples of MSAA."
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:104
-msgid ""
-"Because FXAA only operates on the rendered image, FXAA may result in "
-"smoothing out parts of the visual overlay that are usually kept sharp for "
-"reasons of clarity as well as smoothing out textures. In general, FXAA is "
-"inferior to MSAA and SSAA."
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:136
-msgid "Multi-Sample Anti-Aliasing (MSAA)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:137
 msgid ""
 "MSAA, or Multi-Sample Anti-Aliasing is an optimization of SSAA that reduces "
 "the amount of pixel shader evaluations that need to be computed by focusing "
@@ -8413,11 +8406,40 @@ msgid ""
 "computationally expensive than SSAA and results in comparable image quality."
 msgstr ""
 
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:136
+msgid "You can increase the smoothing by increasing multi_samples"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:165
+msgid "Fast Approximate Anti-Aliasing (FXAA)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:166
+msgid ""
+"FXAA is the most performant of all three anti-aliasing techniques. This is "
+"because, in terms of hardware or GPU, FXAA is not that demanding. It "
+"directly smooths the 2D image and this reduces the strain on the GPU, making"
+" it best for low-end PCs."
+msgstr ""
+
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:171
+msgid ""
+"Because FXAA only operates on the rendered image, FXAA may result in "
+"smoothing out parts of the visual overlay that are usually kept sharp for "
+"reasons of clarity as well as smoothing out textures. In general, FXAA is "
+"inferior to MSAA and SSAA."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:176
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:213
+msgid "Note how the line width has been adjusted for consistency."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:205
 msgid "Super-Sample Anti-Aliasing (SSAA)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:172
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:206
 msgid ""
 "SSAA, or Super-Sample Anti-Aliasing is a brute force method of anti-"
 "aliasing. It results in the best image quality but comes at a tremendous "
@@ -8427,16 +8449,32 @@ msgid ""
 "frequency components that would cause jaggedness."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:204
-msgid "**Total running time of the script:** ( 0 minutes  3.343 seconds)"
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:242
+msgid "Compare render time"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:216
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:243
+msgid ""
+"You can compare the time to render for each one of the anti-aliasing "
+"approaches with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:267
+msgid ""
+"Here are the timings from an NVIDIA Quadro P2000 and a Intel(R) Xeon(R) "
+"E-2288G CPU @ 3.70GHz:"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:282
+msgid "**Total running time of the script:** ( 0 minutes  3.040 seconds)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:296
 msgid ""
 ":download:`Download Python source code: anti-aliasing.py <anti-aliasing.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:220
+#: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:300
 msgid ""
 ":download:`Download Jupyter notebook: anti-aliasing.ipynb <anti-"
 "aliasing.ipynb>`"
@@ -12392,67 +12430,67 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:9
-msgid "**01:23.405** total execution time for **examples_02-plot** files:"
+msgid "**00:03.040** total execution time for **examples_02-plot** files:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
-msgid ""
-":ref:`sphx_glr_examples_02-plot_depth-peeling.py` (``depth-peeling.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
-msgid "01:23.405"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:14
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_anti-aliasing.py` (``anti-aliasing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:16
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
+msgid "00:03.040"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:14
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_backface_props.py` (``backface_props.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:18
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:16
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_background_image.py` "
 "(``background_image.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:20
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:18
 msgid ":ref:`sphx_glr_examples_02-plot_blurring.py` (``blurring.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:22
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:20
 msgid ":ref:`sphx_glr_examples_02-plot_bounds.py` (``bounds.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:24
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:22
 msgid ":ref:`sphx_glr_examples_02-plot_chart_basics.py` (``chart_basics.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:26
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:24
 msgid ""
 ":ref:`sphx_glr_examples_02-plot_chart_overlays.py` (``chart_overlays.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:28
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:26
 msgid ":ref:`sphx_glr_examples_02-plot_clear.py` (``clear.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:30
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:28
 msgid ":ref:`sphx_glr_examples_02-plot_cmap.py` (``cmap.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:32
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:30
 msgid ":ref:`sphx_glr_examples_02-plot_color_cycler.py` (``color_cycler.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:32
+msgid ""
+":ref:`sphx_glr_examples_02-plot_composite-picking.py` (``composite-"
+"picking.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:34
 msgid ""
-":ref:`sphx_glr_examples_02-plot_composite-picking.py` (``composite-"
-"picking.py``)"
+":ref:`sphx_glr_examples_02-plot_depth-peeling.py` (``depth-peeling.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:36
