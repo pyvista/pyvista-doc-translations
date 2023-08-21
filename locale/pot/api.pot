@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-19 01:09+0000\n"
+"POT-Creation-Date: 2023-08-21 01:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -780,7 +780,7 @@ msgid "Renderer to attach the camera to."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/examples/index.rst:2
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:160
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:162
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.Cell.bounds:17
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.Cell.center:18
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.Cell.dimension:19
@@ -3909,7 +3909,7 @@ msgstr ""
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:63
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:80
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:84
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:107
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:109
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.core.cell.Cell:24
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.as_polydata_blocks:9
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock.get_data_range:10
@@ -4927,7 +4927,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:13
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:56
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:122
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:124
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.core.cell.Cell.copy:9
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.head:12
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.flip_z:17
@@ -5213,7 +5213,7 @@ msgstr ""
 msgid "pyvista.Cell.plot"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:126
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:128
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.core.cell.Cell.plot:19
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:25
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:20
@@ -5294,7 +5294,7 @@ msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:87
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:125
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:127
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.core.cell.Cell.plot:18
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:24
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:19
@@ -9895,61 +9895,59 @@ msgstr ""
 msgid "Wireframe geometry will be drawn using hidden line removal if the rendering engine supports it.  See :func:`Plotter.enable_hidden_line_removal <Plotter.enable_hidden_line_removal>`."
 msgstr ""
 
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:102
+msgid "**anti_aliasing** : :class:`python:str` | :ref:`bool <python:bltin-boolean-values>`, default: :attr:`pyvista.plotting.themes.Theme.anti_aliasing`"
+msgstr ""
+
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:101
+msgid "python:str | bool, default: pyvista.plotting.themes.Theme.anti_aliasing"
+msgstr ""
+
 #: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:100
-msgid "**anti_aliasing** : :ref:`bool <python:bltin-boolean-values>`, default: :attr:`pyvista.plotting.themes.Theme.anti_aliasing`"
+msgid "Enable or disable anti-aliasing. If ``True``, uses ``\"msaa\"``. If False, disables anti_aliasing. If a string, should be either ``\"fxaa\"`` or ``\"ssaa\"``."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:99
-msgid "bool, default: pyvista.plotting.themes.Theme.anti_aliasing"
-msgstr ""
-
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes.Theme.rst:305:<autosummary>:1
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:100
-#: ../../pyvista/pyvista/plotting/themes.py:docstring of pyvista.plotting.themes.Theme.anti_aliasing:2
-msgid "Enable or disable anti-aliasing."
-msgstr ""
-
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:105
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:107
 msgid "**zoom** : :class:`python:float`, :class:`python:str`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:104
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:106
 msgid "python:float, python:str, optional"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:103
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:105
 msgid "Camera zoom.  Either ``'tight'`` or a float. A value greater than 1 is a zoom-in, a value less than 1 is a zoom-out.  Must be greater than 0."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:108
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:110
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_legend:29
 msgid "**border** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:False`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:108
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:110
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:26
 msgid "Draw a border around each render window."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:116
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:118
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:34
 msgid "**border_color** : :obj:`ColorLike`, default: \"k\""
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:115
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:117
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts.Brush:8
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts.Pen:8
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:33
 msgid "ColorLike, default: \"k\""
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:111
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:113
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_lines:13
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:29
 msgid "Either a string, rgb list, or hex color string.  For example:"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:113
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:115
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.ambient_color:7
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.diffuse_color:7
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.specular_color:7
@@ -9973,7 +9971,7 @@ msgstr ""
 msgid "``color='white'``"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:114
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:116
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.ambient_color:8
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.diffuse_color:8
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.specular_color:8
@@ -9997,7 +9995,7 @@ msgstr ""
 msgid "``color='w'``"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:115
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:117
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.ambient_color:9
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.diffuse_color:9
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.specular_color:9
@@ -10021,7 +10019,7 @@ msgstr ""
 msgid "``color=[1.0, 1.0, 1.0]``"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:116
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:118
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.ambient_color:10
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.diffuse_color:10
 #: ../../pyvista/pyvista/plotting/lights.py:docstring of pyvista.Light.specular_color:10
@@ -10045,55 +10043,55 @@ msgstr ""
 msgid "``color='#FFFFFF'``"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:119
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:121
 msgid "**border_width** : :class:`python:float`, default: 2.0"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:118
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:120
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.interpolate:25
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_border:10
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_legend_scale:11
 msgid "python:float, default: 2.0"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:119
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:121
 msgid "Width of the border in pixels when enabled."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:123
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:125
 msgid "**ssao** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:122
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:124
 msgid "Enable surface space ambient occlusion (SSAO). See :func:`Plotter.enable_ssao` for more details."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:126
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:128
 msgid "See :func:`pyvista.Plotter.add_mesh` for additional options."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:134
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:136
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:96
 msgid "**cpos** : :class:`python:list`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:133
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:135
 #: ../../pyvista/pyvista/examples/downloads.py:docstring of pyvista.examples.downloads.file_from_files:12
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:95
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:14
 msgid "python:list"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:131
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:133
 msgid "List of camera position, focal point, and view up. Returned only when ``return_cpos=True`` or set in the default global or plot theme.  Not returned when in a jupyter notebook and ``return_viewer=True``."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:145
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:147
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:106
 msgid "**image** : :obj:`np.ndarray <numpy.ndarray>`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:144
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:146
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.make_tri_mesh:12
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.make_tri_mesh:16
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_arrows:7
@@ -10104,33 +10102,33 @@ msgstr ""
 msgid "np.ndarray"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:137
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:139
 msgid "Numpy array of the last image when either ``return_img=True`` or ``screenshot=True`` is set. Not returned when in a jupyter notebook with ``return_viewer=True``. Optionally contains alpha values. Sized:"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:142
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:144
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts._Chart.show:48
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:103
 msgid "[Window height x Window width x 3] if the theme sets ``transparent_background=False``."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:144
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:146
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts._Chart.show:50
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:105
 msgid "[Window height x Window width x 4] if the theme sets ``transparent_background=True``."
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:157
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:159
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:116
 msgid "**widget** : :obj:`ipywidgets.Widget`"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:156
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:158
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:115
 msgid "ipywidgets.Widget"
 msgstr ""
 
-#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:148
+#: ../../pyvista/pyvista/_plot.py:docstring of pyvista._plot.plot:150
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:109
 msgid "IPython widget when ``return_viewer=True``."
 msgstr ""
@@ -45569,6 +45567,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes.Theme.rst:305:<autosummary>:1
 msgid ":py:obj:`Theme.anti_aliasing <pyvista.plotting.themes.Theme.anti_aliasing>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes.Theme.rst:305:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/themes.py:docstring of pyvista.plotting.themes.Theme.anti_aliasing:2
+msgid "Enable or disable anti-aliasing."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes.Theme.rst:305:<autosummary>:1

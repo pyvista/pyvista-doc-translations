@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_anti-aliasing.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_anti-aliasing.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -26,32 +26,36 @@ Demonstrate anti-aliasing within PyVista.
 
 PyVista supports three types of anti-aliasing:
 
-* ``"ssaa"`` - Super-Sample Anti-Aliasing
-* ``"msaa"`` - Multi-Sample Anti-Aliasing
-* ``"fxaa"`` - Fast Approximate Anti-Aliasing
+* SSAA - Super-Sample Anti-Aliasing
+* MSAA - Multi-Sample Anti-Aliasing
+* FXAA - Fast Approximate Anti-Aliasing
 
-By default, anti-aliasing is disabled, but can be enabled globally with:
+By default, MSAA anti-aliasing is enabled using 8 samples. This is the default
+for VTK.
 
 .. code:: python
 
    >>> import pyvista as pv
-   >>> pv.global_theme.anti_aliasing = 'ssaa'
+   >>> pv.global_theme.multi_samples
+   8
+
+You can enable additional line smoothing by enabling SSAA or FXAA
 
 **Which anti-aliasing technique should you use?**
 
-Those who have PCs with high-end configuration should opt for ``"ssaa"`` or
-``"msaa"``. Low-end PCs should use ``"fxaa"``.
+Normally, the default MSAA anti-aliasing should be sufficient as it strikes a
+balance between efficiency and quality. If you desire additional smoothing, you
+can either increase the number of ``multi_samples`` or use SSAA. Low-end PCs
+should consider FXAA.
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-33
+.. GENERATED FROM PYTHON SOURCE LINES 34-39
 
 .. code-block:: default
 
 
     import pyvista as pv
-    from pyvista import examples
 
-    bunny = examples.download_bunny()
-
+    mesh = pv.Icosphere()
 
 
 
@@ -59,24 +63,22 @@ Those who have PCs with high-end configuration should opt for ``"ssaa"`` or
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-37
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-43
 
 No Anti-Aliasing
 ~~~~~~~~~~~~~~~~
 First, let's show a plot without any anti-aliasing.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-48
+.. GENERATED FROM PYTHON SOURCE LINES 43-51
 
 .. code-block:: default
 
 
-    # obtained with `cpos = pl.show(return_cpos=True)`
-    cpos = [(-0.08566, 0.18735, 0.20116), (-0.05332, 0.12168, -0.01215), (-0.00151, 0.95566, -0.29446)]
-
     pl = pv.Plotter()
-    pl.add_mesh(bunny, show_edges=True)
+    pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
     pl.disable_anti_aliasing()
-    pl.camera_position = cpos
+    pl.camera.zoom(1.5)
     pl.show()
 
 
@@ -92,29 +94,28 @@ First, let's show a plot without any anti-aliasing.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-60
+.. GENERATED FROM PYTHON SOURCE LINES 52-63
 
-Fast Approximate Anti-Aliasing (FXAA)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-FXAA is the most performant of all three anti-aliasing techniques. This is
-because, in terms of hardware or GPU, FXAA is not that demanding. It directly
-smooths the 2D image and this reduces the strain over GPU, making it best for
-low-end PCs.
+Default: Multi-Sample Anti-Aliasing (MSAA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Next, let's show the default anti-aliasing configuration. By default, PyVista
+uses 8 samples of MSAA.
 
-Because FXAA only operates on the rendered image, FXAA may result in
-smoothing out parts of the visual overlay that are usually kept sharp for
-reasons of clarity as well as smoothing out textures. In general, FXAA is
-inferior to MSAA and SSAA.
+MSAA, or Multi-Sample Anti-Aliasing is an optimization of SSAA that reduces
+the amount of pixel shader evaluations that need to be computed by focusing
+on overlapping regions of the scene. The result is anti-aliasing along edges
+that is on par with SSAA and less anti-aliasing along surfaces as these make
+up the bulk of SSAA computations. MSAA is substantially less computationally
+expensive than SSAA and results in comparable image quality.
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-68
+.. GENERATED FROM PYTHON SOURCE LINES 63-70
 
 .. code-block:: default
 
 
     pl = pv.Plotter()
-    pl.add_mesh(bunny, show_edges=True)
-    pl.enable_anti_aliasing('fxaa')
-    pl.camera_position = cpos
+    pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
+    pl.camera.zoom(1.5)
     pl.show()
 
 
@@ -130,26 +131,19 @@ inferior to MSAA and SSAA.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-77
+.. GENERATED FROM PYTHON SOURCE LINES 71-72
 
-Multi-Sample Anti-Aliasing (MSAA)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-MSAA, or Multi-Sample Anti-Aliasing is an optimization of SSAA that reduces
-the amount of pixel shader evaluations that need to be computed by focusing
-on overlapping regions of the scene. The result is anti-aliasing along edges
-that is on par with SSAA and less anti-aliasing along surfaces as these make
-up the bulk of SSAA computations. MSAA is substantially less computationally
-expensive than SSAA and results in comparable image quality.
+You can increase the smoothing by increasing multi_samples
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-85
+.. GENERATED FROM PYTHON SOURCE LINES 72-80
 
 .. code-block:: default
 
 
     pl = pv.Plotter()
-    pl.add_mesh(bunny, show_edges=True)
-    pl.enable_anti_aliasing('msaa')
-    pl.camera_position = cpos
+    pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
+    pl.enable_anti_aliasing('msaa', multi_samples=16)
+    pl.camera.zoom(1.5)
     pl.show()
 
 
@@ -165,27 +159,34 @@ expensive than SSAA and results in comparable image quality.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-94
+.. GENERATED FROM PYTHON SOURCE LINES 81-94
 
-Super-Sample Anti-Aliasing (SSAA)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SSAA, or Super-Sample Anti-Aliasing is a brute force method of
-anti-aliasing. It results in the best image quality but comes at a tremendous
-resource cost. SSAA works by rendering the scene at a higher resolution. The
-final image is produced by downsampling the massive source image using an
-averaging filter. This acts as a low pass filter which removes the high
-frequency components that would cause jaggedness.
+Fast Approximate Anti-Aliasing (FXAA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FXAA is the most performant of all three anti-aliasing techniques. This is
+because, in terms of hardware or GPU, FXAA is not that demanding. It directly
+smooths the 2D image and this reduces the strain on the GPU, making it best
+for low-end PCs.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-100
+Because FXAA only operates on the rendered image, FXAA may result in
+smoothing out parts of the visual overlay that are usually kept sharp for
+reasons of clarity as well as smoothing out textures. In general, FXAA is
+inferior to MSAA and SSAA.
+
+Note how the line width has been adjusted for consistency.
+
+.. GENERATED FROM PYTHON SOURCE LINES 94-102
 
 .. code-block:: default
 
 
     pl = pv.Plotter()
-    pl.add_mesh(bunny, show_edges=True, line_width=2)  # lines are thinner in SSAA
-    pl.enable_anti_aliasing('ssaa')
-    pl.camera_position = cpos
+    pl.add_mesh(mesh, style='wireframe', color='k', line_width=1.5)
+    pl.camera.zoom(1.5)
+    pl.enable_anti_aliasing('fxaa')
     pl.show()
+
+
 
 
 
@@ -198,10 +199,87 @@ frequency components that would cause jaggedness.
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 103-113
+
+Super-Sample Anti-Aliasing (SSAA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SSAA, or Super-Sample Anti-Aliasing is a brute force method of
+anti-aliasing. It results in the best image quality but comes at a tremendous
+resource cost. SSAA works by rendering the scene at a higher resolution. The
+final image is produced by downsampling the massive source image using an
+averaging filter. This acts as a low pass filter which removes the high
+frequency components that would cause jaggedness.
+
+Note how the line width has been adjusted for consistency.
+
+.. GENERATED FROM PYTHON SOURCE LINES 113-121
+
+.. code-block:: default
+
+
+    pl = pv.Plotter()
+    pl.add_mesh(mesh, style='wireframe', color='k', line_width=4)
+    pl.camera.zoom(1.5)
+    pl.enable_anti_aliasing('ssaa')
+    pl.show()
+
+
+
+
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
+   :alt: anti aliasing
+   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
+   :class: sphx-glr-single-img
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 122-159
+
+Compare render time
+~~~~~~~~~~~~~~~~~~~
+You can compare the time to render for each one of the anti-aliasing
+approaches with:
+
+.. code-block:: python
+
+    n_render = 100
+    for anti_aliasing in [False, 'fxaa', 'msaa', 'ssaa']:
+
+        pl = pv.Plotter(off_screen=True)
+        pl.add_mesh(mesh, style='wireframe', color='k', line_width=4)
+        pl.camera.zoom(1.5)
+        if anti_aliasing:
+            pl.enable_anti_aliasing(anti_aliasing)
+        else:
+            pl.disable_anti_aliasing()
+        pl.show(auto_close=False)
+        tstart = time.time()
+        # repeately trigger a render via saving a screenshot
+        for __ in range(n_render):
+            pl.screenshot('tmp.png')
+        telap = (time.time() - tstart)/n_render
+
+        print(f'Render time for {str(anti_aliasing):6}: {telap*1000:.3f} ms')
+
+Here are the timings from an NVIDIA Quadro P2000 and a Intel(R) Xeon(R)
+E-2288G CPU @ 3.70GHz:
+
+.. code-block:: text
+
+    Render time for False : 37.045 ms
+    Render time for fxaa  : 40.458 ms
+    Render time for msaa  : 42.566 ms
+    Render time for ssaa  : 51.450 ms
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.343 seconds)
+   **Total running time of the script:** ( 0 minutes  3.040 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_anti-aliasing.py:
@@ -209,6 +287,8 @@ frequency components that would cause jaggedness.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
