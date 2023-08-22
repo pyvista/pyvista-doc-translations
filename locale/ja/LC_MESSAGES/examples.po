@@ -10070,6 +10070,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_02-plot_anti-aliasing.py>` "
 "to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_02-plot_anti-aliasing.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:24
 msgid "Anti-Aliasing"
@@ -10085,25 +10087,25 @@ msgstr "PyVistaは，3種類のアンチエイリアスをサポートしてい�
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:29
 msgid "SSAA - Super-Sample Anti-Aliasing"
-msgstr ""
+msgstr "SSAA  - スーパーサンプリングアンチエイリアシング"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:30
 msgid "MSAA - Multi-Sample Anti-Aliasing"
-msgstr ""
+msgstr "MSAA - マルチサンプルアンチエイリアシング"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:31
 msgid "FXAA - Fast Approximate Anti-Aliasing"
-msgstr ""
+msgstr "FXAA - 高速近似アンチエイリアシング"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:33
 msgid ""
 "By default, MSAA anti-aliasing is enabled using 8 samples. This is the "
 "default for VTK."
-msgstr ""
+msgstr "デフォルトでは，MSAAアンチエイリアスは8サンプルを使用して有効になっています．これはVTKのデフォルトです．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:42
 msgid "You can enable additional line smoothing by enabling SSAA or FXAA"
-msgstr ""
+msgstr "SSAAまたはFXAAを有効にすることで，追加のラインスムージングを有効にできます．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:44
 msgid "**Which anti-aliasing technique should you use?**"
@@ -10116,6 +10118,8 @@ msgid ""
 "smoothing, you can either increase the number of ``multi_samples`` or use "
 "SSAA. Low-end PCs should consider FXAA."
 msgstr ""
+"通常，デフォルトのMSAAアンチエイリアスは，効率と品質のバランスを取るため，十分であるべきです．さらにスムージングをかけたい場合は， "
+"``multi_samples`` の数を増やすか，SSAAを使用します．ローエンドのPCはFXAAを検討してください．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:70
 msgid "No Anti-Aliasing"
@@ -10127,13 +10131,13 @@ msgstr "まず，アンチエイリアスを一切かけないプロットを表
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:100
 msgid "Default: Multi-Sample Anti-Aliasing (MSAA)"
-msgstr ""
+msgstr "デフォルト: マルチサンプルアンチエイリアシング(MSAA)"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:101
 msgid ""
 "Next, let's show the default anti-aliasing configuration. By default, "
 "PyVista uses 8 samples of MSAA."
-msgstr ""
+msgstr "次に，デフォルトのアンチエイリアス設定を示します．デフォルトでは，PyVistaは8サンプルのMSAAを使用します．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:104
 msgid ""
@@ -10148,7 +10152,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:136
 msgid "You can increase the smoothing by increasing multi_samples"
-msgstr ""
+msgstr "multi_samples を増やすことで，平滑度を上げることができます．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:165
 msgid "Fast Approximate Anti-Aliasing (FXAA)"
@@ -10161,6 +10165,7 @@ msgid ""
 "directly smooths the 2D image and this reduces the strain on the GPU, making"
 " it best for low-end PCs."
 msgstr ""
+"FXAAは，3つのアンチエイリアシング技術の中で最もパフォーマンスが高い技術です．これは，ハードウェアやGPUの観点から，FXAAがそれほど要求されないためです．2D画像を直接平滑化するので，GPUへの負担が少なく，ローエンドのPCに最適です．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:171
 msgid ""
@@ -10175,7 +10180,7 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:176
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:213
 msgid "Note how the line width has been adjusted for consistency."
-msgstr ""
+msgstr "一貫性を保つために，線幅が調整されていることに注目してください．"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:205
 msgid "Super-Sample Anti-Aliasing (SSAA)"
@@ -10194,23 +10199,23 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:242
 msgid "Compare render time"
-msgstr ""
+msgstr "レンダリング時間を比較する"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:243
 msgid ""
 "You can compare the time to render for each one of the anti-aliasing "
 "approaches with:"
-msgstr ""
+msgstr "各アンチエイリアシングアプローチのレンダリングにかかる時間は，以下で比較できます:"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:267
 msgid ""
 "Here are the timings from an NVIDIA Quadro P2000 and a Intel(R) Xeon(R) "
 "E-2288G CPU @ 3.70GHz:"
-msgstr ""
+msgstr "以下は，NVIDIA Quadro P2000とIntel(R) Xeon(R) E-2288G CPU @ 3.70GHzの計時です:"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:282
 msgid "**Total running time of the script:** ( 0 minutes  3.040 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** ( 0 minutes  3.040 seconds)"
 
 #: ../../pyvista/doc/source/examples/02-plot/anti-aliasing.rst:296
 msgid ""
@@ -14923,7 +14928,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:9
 msgid "**00:03.040** total execution time for **examples_02-plot** files:"
-msgstr ""
+msgstr "**00:03.040** total execution time for **examples_02-plot** files:"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
 msgid ""
@@ -14933,7 +14938,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:12
 msgid "00:03.040"
-msgstr ""
+msgstr "00:03.040"
 
 #: ../../pyvista/doc/source/examples/02-plot/sg_execution_times.rst:14
 msgid ""
