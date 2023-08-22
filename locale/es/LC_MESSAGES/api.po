@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 01:02+0000\n"
+"POT-Creation-Date: 2023-08-22 01:05+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -39,6 +39,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.append:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.as_polydata_blocks:0
@@ -67,6 +69,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_block_name:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject:0
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.add_field_data:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:0
@@ -84,6 +88,10 @@ msgstr ""
 #: pyvista.core.dataobject.DataObject.save:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.shallow_copy:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1519,16 +1527,18 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/examples/index.rst:2
 #: ../../pyvista/pyvista/_plot.pydocstring of pyvista._plot.plot:162
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:18
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:19
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:17
-#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:17
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:22
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:23
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:21
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:21
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:39
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:21
@@ -1544,15 +1554,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.center:17
+#: pyvista.MultiBlock.center:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.length:17
+#: pyvista.MultiBlock.length:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.n_blocks:17
+#: pyvista.MultiBlock.n_blocks:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:21
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock:30
+#: pyvista.core.composite.MultiBlock:37
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.append:25
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1582,7 +1592,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.actual_memory_size:22
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.DataObject.field_data:20
+#: pyvista.DataObject.field_data:24
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.memory_address:21
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
@@ -1600,30 +1610,30 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:29
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_scalars_name:17
+#: pyvista.DataSet.active_scalars_name:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_t_coords:17
+#: pyvista.DataSet.active_t_coords:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_vectors:17
+#: pyvista.DataSet.active_vectors:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:29
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_vectors_name:17
+#: pyvista.DataSet.active_vectors_name:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.array_names:18
+#: pyvista.DataSet.array_names:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:24
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:31
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.cell_data:17 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.DataSet.center:17 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.DataSet.length:17 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.DataSet.n_cells:21
+#: pyvista.DataSet.cell_data:21 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.center:21 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.length:21 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.n_cells:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.n_points:17 ../../pyvista/pyvista/core/dataset.pydocstring
-#: of pyvista.DataSet.point_data:17
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:17
+#: pyvista.DataSet.n_points:21 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.point_data:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:31
@@ -1694,19 +1704,19 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_scalars:22
+#: pyvista.DataSetAttributes.active_scalars:26
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_scalars_name:17
+#: pyvista.DataSetAttributes.active_scalars_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords_name:17
+#: pyvista.DataSetAttributes.active_t_coords_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_vectors:22
+#: pyvista.DataSetAttributes.active_vectors:26
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_vectors_name:17
+#: pyvista.DataSetAttributes.active_vectors_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.valid_array_len:18
+#: pyvista.DataSetAttributes.valid_array_len:22
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes:55
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -1969,18 +1979,18 @@ msgstr ""
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:21
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.extent:18
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.origin:17
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:20
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:24
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.spacing:22
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.x:17
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.y:17
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.z:17
 #: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.RectilinearGrid.dimensions:19
+#: pyvista.RectilinearGrid.dimensions:23
 #: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.RectilinearGrid.points:22
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:17
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:17
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:17
+#: pyvista.RectilinearGrid.points:26
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:21
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:21
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:21
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.core.grid.ImageData:47 ../../pyvista/pyvista/core/grid.pydocstring
 #: of pyvista.core.grid.RectilinearGrid:47
@@ -2912,7 +2922,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.enable_parallel_projection:20
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.plotting.camera.Camera.from_paraview_pvcc:23
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:27
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.reset_clipping_range:17
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
@@ -3211,7 +3221,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Pen.width:17
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:39
+#: pyvista.plotting.charts.PiePlot:35
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot.brush:21
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -3366,7 +3376,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.is_scene_light:17
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
-#: pyvista.Light.light_type:39
+#: pyvista.Light.light_type:42
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:18
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.position:21 ../../pyvista/pyvista/plotting/lights.pydocstring
@@ -3488,16 +3498,16 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.camera_position:17
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.image_scale:22
+#: pyvista.Plotter.image_scale:26
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.pickable_actors:24
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.renderer:17
+#: pyvista.Plotter.renderer:21
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.scalar_bars:17
+#: pyvista.Plotter.scalar_bars:21
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.shape:17 ../../pyvista/pyvista/plotting/plotter.pydocstring
-#: of pyvista.Plotter.theme:17
+#: pyvista.Plotter.shape:21 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.theme:21
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.window_size:17
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -4344,6 +4354,8 @@ msgstr ""
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.pyvista_ndarray.rst:191
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Axis:0
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:0
 msgid "Attributes"
 msgstr ""
 
@@ -4354,7 +4366,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:2
-msgid "Azimuth of the camera."
+msgid "Return or set the azimuth of the camera."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
@@ -4394,7 +4406,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.elevation:2
-msgid "Vertical rotation of the scene."
+msgid "Return or set the vertical rotation of the scene."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
@@ -4471,7 +4483,8 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:2
-msgid "Rotate the camera about the direction of projection."
+msgid ""
+"Return or set the roll of the camera about the direction of projection."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:303:<autosummary>:1
@@ -4531,6 +4544,18 @@ msgid "pyvista.Camera.copy"
 msgstr ""
 
 #: ../../pyvista/pyvista/_plot.pydocstring of pyvista._plot.plot:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of
@@ -4541,7 +4566,13 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.center:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.is_all_polydata:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.length:0
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.n_blocks:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:0
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -4565,6 +4596,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.actual_memory_size:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.DataObject.field_data:0
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.memory_address:0
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:0
@@ -4573,14 +4606,46 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_normals:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_scalars:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_vectors_info:0
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:0
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:0
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:0
+#: pyvista.DataSet.active_scalars_name:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.ActiveArrayInfo.copy:0
+#: pyvista.DataSet.active_t_coords:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_info:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_name:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors_info:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors_name:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.array_names:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.cell_data:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.center:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.length:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.n_arrays:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.n_cells:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.n_points:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.number_of_cells:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.number_of_points:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.point_data:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.points:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.volume:0 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.core.dataset.ActiveArrayInfo.copy:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_pointset:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -4656,7 +4721,19 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals_name:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars_name:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_t_coords_name:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors_name:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.valid_array_len:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.get:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -4907,14 +4984,28 @@ msgstr ""
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.clean:0
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.pydocstring of
 #: pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.dimensions:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.meshgrid:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.points:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:0
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:0
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.core.grid.ImageData.cast_to_rectilinear_grid:0
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.core.grid.ImageData.cast_to_structured_grid:0
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.core.grid.RectilinearGrid.cast_to_structured_grid:0
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_arrays:0
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_columns:0
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_rows:0
 #: ../../pyvista/pyvista/core/objects.pydocstring of
-#: pyvista.core.objects.Table.get:0
+#: pyvista.Table.row_arrays:0 ../../pyvista/pyvista/core/objects.pydocstring
+#: of pyvista.core.objects.Table.get:0
 #: ../../pyvista/pyvista/core/objects.pydocstring of
 #: pyvista.core.objects.Table.get_data_range:0
 #: ../../pyvista/pyvista/core/objects.pydocstring of
@@ -5677,6 +5768,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.copy:0
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:0
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.AreaPlot.brush:0
@@ -5739,6 +5832,8 @@ msgstr ""
 #: pyvista.plotting.helpers.plot_arrows:0
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.copy:0
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:0
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable.map_value:0
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
@@ -5756,7 +5851,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingMethods.enable_mesh_picking:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.bounds:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: pyvista.Plotter.actors:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.bounds:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.camera:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.image_scale:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.legend:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
 #: of pyvista.Plotter.meshes:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.pickable_actors:0
@@ -5773,7 +5874,19 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.picked_point:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_arrows:0
+#: pyvista.Plotter.render_window:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.renderer:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bar:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bars:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.shape:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.suppress_rendering:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.theme:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.plotting.plotter.BasePlotter.add_arrows:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -5939,6 +6052,10 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.copy:18
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:24
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.camera:21
 msgid ":obj:`pyvista.Camera`"
 msgstr ""
 
@@ -5986,7 +6103,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:22
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.n_cells:15 ../../pyvista/pyvista/core/dataset.pydocstring
+#: pyvista.DataSet.n_cells:19 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.core.dataset.DataSet.cast_to_pointset:25
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_poly_points:25
@@ -6026,10 +6143,10 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.decimate:79
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.smooth_taubin:72
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:15
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:19
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.spacing:15
 #: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.RectilinearGrid.points:15
+#: pyvista.RectilinearGrid.points:19
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.faces:36 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.regular_faces:24
@@ -6083,7 +6200,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D.plot:36
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:32
+#: pyvista.plotting.charts.Pen:28
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.PiePlot.color_scheme:19
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -6108,7 +6225,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingMethods.enable_surface_point_picking:75
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.render_window:16
+#: pyvista.Plotter.render_window:20
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.enable_anti_aliasing:33
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -6184,14 +6301,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.plotting.camera.Camera.from_paraview_pvcc:20
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:10
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.to_paraview_pvcc:18
 msgid "**filename** : :class:`python:str` or :obj:`pathlib.Path`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
-#: pyvista.plotting.camera.Camera.from_paraview_pvcc:19
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:9
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.to_paraview_pvcc:17
 msgid "python:str or pathlib.Path"
@@ -6202,6 +6319,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.to_paraview_pvcc:8
 msgid "Path to Paraview camera file (.pvcc)."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/camera.pydocstring of
+#: pyvista.plotting.camera.Camera.from_paraview_pvcc:15
+msgid "Camera from the camera file."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.is_set.rst:2
@@ -6840,7 +6962,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.tight:20
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:20
+#: pyvista.plotting.charts.Axis:28
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:34
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -8738,6 +8860,17 @@ msgstr ""
 msgid "pyvista.Cell.bounds"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:18
+msgid ""
+":obj:`Tuple`\\[:class:`python:float`, :class:`python:float`, "
+":class:`python:float`, :class:`python:float`, :class:`python:float`, "
+":class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:9
+msgid "The cell bounds in ``[xmin, xmax, ymin, ymax, zmin, zmax]``."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.cast_to_unstructured_grid.rst:2
 msgid "pyvista.Cell.cast\\_to\\_unstructured\\_grid"
 msgstr ""
@@ -8826,6 +8959,16 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:4
 msgid "Uses parametric coordinate center to determine x-y-z center."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:19
+msgid ""
+":obj:`Tuple`\\[:class:`python:float`, :class:`python:float`, "
+":class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:10
+msgid "The center of the cell."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.copy.rst:2
@@ -9165,12 +9308,87 @@ msgid ""
 "for a triangle, and 3 for a tetrahedron."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:20
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:18
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:18
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.n_blocks:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock.get_index_by_name:22
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.DataObject.actual_memory_size:19
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.n_arrays:21 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.n_cells:16
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.n_points:18 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.number_of_cells:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.number_of_points:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_n_points:27
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_type:28
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.find_closest_point:27
+#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
+#: pyvista.core.filters.poly_data.PolyDataFilters.collision:66
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_arrays:22
+#: ../../pyvista/pyvista/core/objects.pydocstring of
+#: pyvista.Table.n_columns:21 ../../pyvista/pyvista/core/objects.pydocstring
+#: of pyvista.Table.n_rows:21 ../../pyvista/pyvista/core/objects.pydocstring
+#: of pyvista.Table.row_arrays:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.CGNSReader.number_base_arrays:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.CGNSReader.number_family_arrays:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.EnSightReader.number_time_points:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.number_patch_arrays:18
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.number_time_points:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PVDReader.number_time_points:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.number_cell_arrays:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.number_point_arrays:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.TimeReader.number_time_points:21
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.XdmfReader.number_grids:21
+#: ../../pyvista/pyvista/plotting/colors.pydocstring of
+#: pyvista.plotting.colors.Color.convert_color_channel:29
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image_scale:23
+msgid ":class:`python:int`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:11
+msgid "The cell dimension."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.edges.rst:2
 msgid "pyvista.Cell.edges"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:18
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:18
+msgid ":obj:`List`\\[:obj:`Cell`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:9
+msgid "A list of edges composing the cell."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.faces.rst:2
 msgid "pyvista.Cell.faces"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:9
+msgid "A list of faces composing the cell."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.get_edge.rst:2
@@ -9314,16 +9532,68 @@ msgstr ""
 msgid "pyvista.Cell.is\\_linear"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.is_all_polydata:23
+#: ../../pyvista/pyvista/core/pointset.pydocstring of
+#: pyvista.PolyData.is_all_triangles:19
+#: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
+#: pyvista.core.utilities.helpers.is_inside_bounds:29
+#: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
+#: pyvista.core.utilities.helpers.is_pyvista_dataset:25
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.CGNSReader.distribute_blocks:20
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.cell_to_point_creation:14
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.decompose_polyhedra:18
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.OpenFOAMReader.skip_zero_time:18
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.core.utilities.reader.CGNSReader.base_array_status:25
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.core.utilities.reader.CGNSReader.family_array_status:25
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.core.utilities.reader.OpenFOAMReader.patch_array_status:22
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.core.utilities.reader.PointCellDataSelection.cell_array_status:25
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.core.utilities.reader.PointCellDataSelection.point_array_status:25
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.suppress_rendering:21
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:36
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.plotting.renderer.Renderer.remove_actor:34
+msgid ":ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:9
+msgid "If the cell is linear."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.n_edges.rst:2
 msgid "pyvista.Cell.n\\_edges"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:9
+msgid "The number of edges composing the cell."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.n_faces.rst:2
 msgid "pyvista.Cell.n\\_faces"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:9
+msgid "The number of faces."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.n_points.rst:2
 msgid "pyvista.Cell.n\\_points"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:9
+msgid "The number of points."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.plot.rst:2
@@ -9333,6 +9603,8 @@ msgstr ""
 #: ../../pyvista/pyvista/_plot.pydocstring of pyvista._plot.plot:128
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:19
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:34
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:25
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -9490,6 +9762,10 @@ msgstr ""
 #: ../../pyvista/pyvista/_plot.pydocstring of pyvista._plot.plot:127
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:20
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:33
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:24
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -9684,12 +9960,44 @@ msgstr ""
 msgid "pyvista.Cell.point\\_ids"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.cell_neighbors:25
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.point_cell_ids:23
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet.point_neighbors:19
+msgid ":obj:`List`\\[:class:`python:int`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:9
+msgid "The point IDs composing the cell."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.points.rst:2
 msgid "pyvista.Cell.points"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:18
+#: ../../pyvista/pyvista/plotting/charts.pydocstring of
+#: pyvista.plotting.charts._Chart.show:60
+msgid ":obj:`np.ndarray <numpy.ndarray>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:9
+msgid "The point coordinates of the cell."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.type.rst:2
 msgid "pyvista.Cell.type"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:18
+msgid ":obj:`pyvista.CellType`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:9
+msgid "Type of cell."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.CompositeFilters.rst:2
@@ -12445,6 +12753,31 @@ msgstr ""
 msgid "Methods common to all wrapped data objects."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject:8
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet:8
+msgid "**\\*args**"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject:8
+msgid "Any extra args are passed as option to all wrapped data objects."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject:24
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet:24
+msgid "**\\*\\*kwargs**"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.core.dataobject.DataObject:11
+msgid ""
+"Any extra keyword args are passed as option to all wrapped data objects."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataObject.rst:76:<autosummary>:1
 msgid ""
 ":py:obj:`DataObject.add_field_data <pyvista.DataObject.add_field_data>`\\ "
@@ -12623,43 +12956,6 @@ msgstr ""
 msgid "pyvista.DataObject.actual\\_memory\\_size"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.core.composite.MultiBlock.get_index_by_name:22
-#: ../../pyvista/pyvista/core/dataobject.pydocstring of
-#: pyvista.DataObject.actual_memory_size:19
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_n_points:27
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_type:28
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.find_closest_point:27
-#: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
-#: pyvista.core.filters.poly_data.PolyDataFilters.collision:66
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.CGNSReader.number_base_arrays:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.CGNSReader.number_family_arrays:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.EnSightReader.number_time_points:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.number_patch_arrays:18
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.number_time_points:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.PVDReader.number_time_points:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.PointCellDataSelection.number_cell_arrays:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.PointCellDataSelection.number_point_arrays:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.TimeReader.number_time_points:21
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.XdmfReader.number_grids:21
-#: ../../pyvista/pyvista/plotting/colors.pydocstring of
-#: pyvista.plotting.colors.Color.convert_color_channel:29
-msgid ":class:`python:int`"
-msgstr ""
-
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.DataObject.actual_memory_size:9
 msgid "The actual size of the dataset object in kibibytes (1024 bytes)."
@@ -12706,6 +13002,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.add_field_data:14
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:25
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array:8
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array_association:8
@@ -12750,6 +13048,8 @@ msgstr ""
 #: pyvista.core.composite.MultiBlock.get_index_by_name:7
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.add_field_data:13
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:24
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array:7
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -13056,6 +13356,19 @@ msgstr ""
 msgid "pyvista.DataObject.field\\_data"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.DataObject.field_data:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.cell_data:18 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.point_data:18
+msgid ":obj:`DataSetAttributes`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataobject.pydocstring of
+#: pyvista.DataObject.field_data:12
+msgid "FieldData as DataSetAttributes."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataObject.field_data.rst:3
 msgid "Add field data to a PolyData dataset and then return it."
 msgstr ""
@@ -13103,6 +13416,12 @@ msgstr ""
 #: pyvista.DataObject.memory_address:18
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.head:30
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_scalars_name:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_name:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors_name:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals_name:18
 #: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
@@ -13232,6 +13551,17 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet:2
 msgid "Methods in common to spatially referenced objects."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet:8
+msgid "Any extra args are passed as option to spatially referenced objects."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.DataSet:11
+msgid ""
+"Any extra keyword args are passed as option to spatially referenced objects."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:474:<autosummary>:1
@@ -13788,7 +14118,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_t_coords:2
-msgid "Return or set the active texture coordinates on the points."
+msgid "Return the active texture coordinates on the points."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
@@ -13912,7 +14242,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.cell_data:2
-msgid "Return vtkCellData as DataSetAttributes."
+msgid "Return cell data as DataSetAttributes."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
@@ -13998,7 +14328,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.point_data:2
-msgid "Return vtkPointData as DataSetAttributes."
+msgid "Return point data as DataSetAttributes."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:615:<autosummary>:1
@@ -14025,6 +14355,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_normals:16
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals:17
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -14053,6 +14384,22 @@ msgstr ""
 msgid "pyvista.DataSet.active\\_scalars"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_scalars:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_t_coords:18
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors:18
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars:23
+msgid ":obj:`Optional`\\[:obj:`pyvista_ndarray`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_scalars:9
+msgid "Active scalars as an array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_scalars_info.rst:2
 msgid "pyvista.DataSet.active\\_scalars\\_info"
 msgstr ""
@@ -14066,6 +14413,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:19
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_info:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:19
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -14098,6 +14447,13 @@ msgstr ""
 msgid "pyvista.DataSet.active\\_scalars\\_name"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_scalars_name:9
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars_name:9
+msgid "Name of the active scalars."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_scalars_name.rst:3
 msgid ""
 "Create a mesh, add scalars to the mesh, and return the name of the active "
@@ -14108,6 +14464,11 @@ msgstr ""
 msgid "pyvista.DataSet.active\\_t\\_coords"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_t_coords:9
+msgid "Active texture coordinates on the points."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_t_coords.rst:3
 msgid "Return the active texture coordinates from the globe example."
 msgstr ""
@@ -14116,16 +14477,43 @@ msgstr ""
 msgid "pyvista.DataSet.active\\_tensors"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors:21
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors:23
+msgid ":obj:`Optional`\\[:obj:`np.ndarray <numpy.ndarray>`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors:9
+msgid "Active tensors array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_tensors_info.rst:2
 msgid "pyvista.DataSet.active\\_tensors\\_info"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_info:9
+msgid "Active tensor's field and name: [field, name]."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_tensors_name.rst:2
 msgid "pyvista.DataSet.active\\_tensors\\_name"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_tensors_name:9
+msgid "Name of the active tensor array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_vectors.rst:2
 msgid "pyvista.DataSet.active\\_vectors"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors:9
+msgid "Active vectors array."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_vectors.rst:3
@@ -14170,6 +14558,11 @@ msgstr ""
 msgid "pyvista.DataSet.active\\_vectors\\_name"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_vectors_name:9
+msgid "Name of the active vectors array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_vectors_name.rst:3
 msgid ""
 "Create a mesh, compute the normals, set them as active, and return the name "
@@ -14185,8 +14578,11 @@ msgid "This will return 0 for meshes with 3D cells."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.length:18
+#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:18 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.area:19 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.length:18 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.volume:19
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.compute_arc_length:25
@@ -14245,6 +14641,16 @@ msgstr ""
 msgid "This makes sure to put the active scalars' name first in the list."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.array_names:19
+msgid ":obj:`List`\\[:class:`python:str`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.array_names:10
+msgid "List of array names for the dataset."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.array_names.rst:3
 msgid "Return the array names for a mesh."
 msgstr ""
@@ -14274,8 +14680,14 @@ msgstr ""
 msgid "pyvista.DataSet.bounds"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:4
-msgid "The form is: ``(xmin, xmax, ymin, ymax, zmin, zmax)``."
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:19
+msgid ":obj:`BoundsLike`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:9
+msgid ""
+"Bounding box of this dataset. The form is: ``(xmin, xmax, ymin, ymax, zmin, "
+"zmax)``."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.bounds.rst:3
@@ -14445,6 +14857,11 @@ msgstr ""
 msgid "pyvista.DataSet.cell\\_data"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.cell_data:9
+msgid "Cell data as DataSetAttributes."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.cell_data.rst:3
 msgid "Add cell arrays to a mesh and list the available ``cell_data``."
 msgstr ""
@@ -14505,15 +14922,6 @@ msgid ""
 "Describe how the neighbor cell(s) must be connected to the current cell to "
 "be considered as a neighbor. Can be either ``'points'``, ``'edges'`` or "
 "``'faces'``."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.cell_neighbors:25
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.point_cell_ids:23
-#: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.core.dataset.DataSet.point_neighbors:19
-msgid ":obj:`List`\\[:class:`python:int`]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -14683,6 +15091,12 @@ msgstr ""
 #: pyvista.core.filters.poly_data.PolyDataFilters.edge_mask:25
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.remove_points:39
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:16
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.points:16
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:18
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:18
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:18
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.faces:27 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.regular_faces:15
@@ -14745,6 +15159,16 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.center.rst:2
 msgid "pyvista.DataSet.center"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.center:18
+msgid ":obj:`Vector`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.center:9 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.center:9
+msgid "Center of the bounding box."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.center.rst:3
@@ -15719,6 +16143,8 @@ msgstr ""
 #: pyvista.plotting.picking.PickingInterface.pick_click_position:21
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingInterface.pick_mouse_position:21
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.shape:18
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.viewport:25
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -15737,6 +16163,12 @@ msgstr ""
 msgid "pyvista.DataSet.length"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.length:9 ../../pyvista/pyvista/core/dataset.pydocstring
+#: of pyvista.DataSet.length:9
+msgid "Length of the diagonal of the bounding box."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.length.rst:3
 msgid ""
 "Get the length of the bounding box of a cube.  This should match "
@@ -15747,12 +16179,21 @@ msgstr ""
 msgid "pyvista.DataSet.n\\_arrays"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.n_arrays:9
+msgid "Number of arrays present in the dataset."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.n_cells.rst:2
 msgid "pyvista.DataSet.n\\_cells"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.n_cells:9
+msgid "Number of cells in the entire dataset."
+msgstr ""
+
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.n_cells:16
+#: pyvista.DataSet.n_cells:20
 msgid ""
 "This is identical to :attr:`n_faces <pyvista.PolyData.n_faces>` in "
 ":class:`pyvista.PolyData`."
@@ -15766,6 +16207,11 @@ msgstr ""
 msgid "pyvista.DataSet.n\\_points"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.n_points:9
+msgid "Number of points in the entire dataset."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.n_points.rst:3
 msgid "Create a mesh and return the number of points in the mesh."
 msgstr ""
@@ -15774,8 +16220,18 @@ msgstr ""
 msgid "pyvista.DataSet.number\\_of\\_cells"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.number_of_cells:9
+msgid "Number of cells."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.number_of_points.rst:2
 msgid "pyvista.DataSet.number\\_of\\_points"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.number_of_points:9
+msgid "Number of points."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.overwrite.rst:2
@@ -16786,6 +17242,11 @@ msgstr ""
 msgid "pyvista.DataSet.point\\_data"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.point_data:9
+msgid "Point data as DataSetAttributes."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.point_data.rst:3
 msgid "Add point arrays to a mesh and list the available ``point_data``."
 msgstr ""
@@ -16866,6 +17327,10 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.points.rst:2
 msgid "pyvista.DataSet.points"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:9
+msgid "Reference to the points as a numpy object."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.points.rst:3
@@ -17612,7 +18077,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals:2
-msgid "Return or set the normals."
+msgid "Return the normals."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17624,7 +18089,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals_name:2
-msgid "Return or set the name of the normals array."
+msgid "Return the name of the normals array."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17648,7 +18113,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_scalars_name:2
-msgid "Name of the active scalars."
+msgid "Return name of the active scalars."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17660,7 +18125,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords:2
-msgid "Return or set the active texture coordinates array."
+msgid "Return the active texture coordinates array."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17672,7 +18137,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords_name:2
-msgid "Name of the active texture coordinates array."
+msgid "Return the name of the active texture coordinates array."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17696,7 +18161,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors_name:2
-msgid "Name of the active vectors."
+msgid "Return name of the active vectors."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
@@ -17758,6 +18223,11 @@ msgid ""
 " to :attr:`pyvista.DataSetAttributes.active_scalars_name`."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars:14
+msgid "Active scalars."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_scalars.rst:3
 msgid ""
 "Associate point data to a simple cube mesh and show that the active scalars "
@@ -17766,6 +18236,15 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_scalars_name.rst:2
 msgid "pyvista.DataSetAttributes.active\\_scalars\\_name"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_scalars_name:18
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_t_coords_name:18
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors_name:18
+msgid ":obj:`Optional`\\[:class:`python:str`]"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_scalars_name.rst:3
@@ -17791,6 +18270,11 @@ msgstr ""
 msgid "pyvista.DataSetAttributes.active\\_t\\_coords\\_name"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_t_coords_name:9
+msgid "Name of the active texture coordinates array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_vectors.rst:2
 msgid "pyvista.DataSetAttributes.active\\_vectors"
 msgstr ""
@@ -17803,6 +18287,11 @@ msgid ""
 " to :attr:`pyvista.DataSetAttributes.active_vectors_name`."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors:14
+msgid "Active vectors as a pyvista_ndarray."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_vectors.rst:3
 msgid ""
 "Associate point data to a simple cube mesh and show that the active vectors "
@@ -17811,6 +18300,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_vectors_name.rst:2
 msgid "pyvista.DataSetAttributes.active\\_vectors\\_name"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_vectors_name:9
+msgid "Name of the active vectors."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.clear.rst:2
@@ -17861,6 +18355,8 @@ msgstr ""
 msgid "A value to return if the key does not exist.  Default is ``None``."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.center:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.get:27
 msgid ":obj:`Any`"
@@ -18288,6 +18784,16 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.valid_array_len:4
 msgid "If there are no restrictions, returns ``None``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.valid_array_len:19
+msgid ":obj:`Optional`\\[:class:`python:int`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.valid_array_len:10
+msgid "Length data should be when added to the dataset."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.valid_array_len.rst:3
@@ -24314,7 +24820,11 @@ msgstr ""
 msgid "pyvista.ImageData.points"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:16
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:9
+msgid "Array of points representing the image data."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:20
 msgid "The ``points`` for a :class:`pyvista.ImageData` cannot be set."
 msgstr ""
 
@@ -25815,7 +26325,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.attenuation_values:2
-msgid "Return the quadratic attenuation constants."
+msgid "Return or set the quadratic attenuation constants."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25825,7 +26335,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.cone_angle:2
-msgid "Return the cone angle of a positional light."
+msgid "Return or set the cone angle of a positional light."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25845,7 +26355,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.exponent:2
-msgid "Return the exponent of the cosine used for spotlights."
+msgid "Return or set the exponent of the cosine used for spotlights."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25865,7 +26375,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.intensity:2
-msgid "Return the brightness of the light (between 0 and 1)."
+msgid "Return or set the brightness of the light (between 0 and 1)."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25905,7 +26415,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.light_type:2
-msgid "Return the light type."
+msgid "Return or set the light type."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25914,7 +26424,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of pyvista.Light.on:2
-msgid "Return whether the light is on."
+msgid "Return or set whether the light is on."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25934,7 +26444,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.positional:2
-msgid "Return whether the light is positional."
+msgid "Return or set whether the light is positional."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -25974,7 +26484,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.transform_matrix:2
-msgid "Return the transformation matrix of the light (if any)."
+msgid "Return (if any) or set the transformation matrix of the light."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.rst:279:<autosummary>:1
@@ -26120,6 +26630,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.copy:27
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:25
 msgid ":obj:`pyvista.Light`"
 msgstr ""
 
@@ -26194,18 +26706,23 @@ msgid "pyvista.Light.from\\_vtk"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
-#: pyvista.plotting.lights.Light.from_vtk:21
+#: pyvista.plotting.lights.Light.from_vtk:8
 msgid "**vtk_light** : :obj:`vtk.vtkLight`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
-#: pyvista.plotting.lights.Light.from_vtk:20
+#: pyvista.plotting.lights.Light.from_vtk:7
 msgid "vtk.vtkLight"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.plotting.lights.Light.from_vtk:8
 msgid "The ``vtk.vtkLight`` to be copied."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.plotting.lights.Light.from_vtk:13
+msgid "Wrapped light."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.hide_actor.rst:2
@@ -26301,6 +26818,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lights.pydocstring of
 #: pyvista.Light.light_type:25
 msgid "``Light.SCENE_LIGHT == 3``"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/lights.pydocstring of
+#: pyvista.Light.light_type:27
+msgid ""
+"If setting the value, either an integer code or a class constant enum value "
+"must be used."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Light.light_type.rst:3
@@ -26630,6 +27154,21 @@ msgid ""
 "``MultiBlock`` adheres more closely to being list like, and inherits from "
 ":class:`collections.abc.MutableSequence`.  Multiple nonconforming behaviors "
 "were removed or modified."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:21
+msgid "**\\*args** : :class:`python:dict`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:21
+msgid "Data object dictionary."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.core.composite.MultiBlock:24
+msgid "See :func:`pyvista.read` for additional options."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.rst:5
@@ -26990,7 +27529,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:9
-msgid "length 6 tuple of floats containing min/max along each axis"
+msgid "Length 6 tuple of floats containing min/max along each axis."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.bounds.rst:3
@@ -27194,39 +27733,6 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
-#: pyvista.MultiBlock.is_all_polydata:23
-#: ../../pyvista/pyvista/core/pointset.pydocstring of
-#: pyvista.PolyData.is_all_triangles:19
-#: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
-#: pyvista.core.utilities.helpers.is_inside_bounds:29
-#: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
-#: pyvista.core.utilities.helpers.is_pyvista_dataset:25
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.CGNSReader.distribute_blocks:20
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.cell_to_point_creation:14
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.decompose_polyhedra:18
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.OpenFOAMReader.skip_zero_time:18
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.core.utilities.reader.CGNSReader.base_array_status:25
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.core.utilities.reader.CGNSReader.family_array_status:25
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.core.utilities.reader.OpenFOAMReader.patch_array_status:22
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.core.utilities.reader.PointCellDataSelection.cell_array_status:25
-#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
-#: pyvista.core.utilities.reader.PointCellDataSelection.point_array_status:25
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.enable_depth_peeling:36
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.plotting.renderer.Renderer.remove_actor:34
-msgid ":ref:`bool <python:bltin-boolean-values>`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.is_all_polydata:11
 msgid "Return ``True`` when all blocks are :class:`pyvista.PolyData`."
 msgstr ""
@@ -27246,6 +27752,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.n_blocks.rst:2
 msgid "pyvista.MultiBlock.n\\_blocks"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/composite.pydocstring of
+#: pyvista.MultiBlock.n_blocks:9
+msgid "Total number of blocks set."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.plot.rst:2
@@ -32818,7 +33329,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:647:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.points:2
-msgid "Return a copy of the points as an n by 3 numpy array."
+msgid "Return a copy of the points as an ``(n, 3)`` numpy array."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:647:<autosummary>:1
@@ -32863,6 +33374,16 @@ msgid ""
 "axes."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.dimensions:20
+msgid ":class:`python:tuple`\\[:class:`python:int`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.dimensions:11
+msgid "Dimensions of the grid."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.dimensions.rst:3
 msgid "Create a uniform grid with dimensions ``(1, 2, 3)``."
 msgstr ""
@@ -32882,12 +33403,27 @@ msgid ""
 "mesh in ``ij`` indexing. These are a copy of the points of this mesh."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.meshgrid:24
+msgid ":class:`python:list`\\[:obj:`numpy.ndarray`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.meshgrid:12
+msgid "List of numpy arrays representing the points of this mesh."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.points.rst:2
 msgid "pyvista.RectilinearGrid.points"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/grid.pydocstring of
-#: pyvista.RectilinearGrid.points:16
+#: pyvista.RectilinearGrid.points:9
+msgid "Array of points."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of
+#: pyvista.RectilinearGrid.points:20
 msgid ""
 "Points of a :class:`pyvista.RectilinearGrid` cannot be set. Set point "
 "coordinates with :attr:`RectilinearGrid.x`, :attr:`RectilinearGrid.y`, or "
@@ -32896,6 +33432,10 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.x.rst:2
 msgid "pyvista.RectilinearGrid.x"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:9
+msgid "Array of points along the X-direction."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.x.rst:3
@@ -32910,6 +33450,10 @@ msgstr ""
 msgid "pyvista.RectilinearGrid.y"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:9
+msgid "Array of points along the Y-direction."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.y.rst:3
 msgid "Return the y coordinates of a RectilinearGrid."
 msgstr ""
@@ -32920,6 +33464,10 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.z.rst:2
 msgid "pyvista.RectilinearGrid.z"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:9
+msgid "Array of points along the Z-direction."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.z.rst:3
@@ -33420,12 +33968,21 @@ msgstr ""
 msgid "Alias for: ``n_columns``."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_arrays:10
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_columns:9
+msgid "The number of columns."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.n_columns.rst:2
 msgid "pyvista.Table.n\\_columns"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.n_rows.rst:2
 msgid "pyvista.Table.n\\_rows"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/objects.pydocstring of pyvista.Table.n_rows:9
+msgid "The number of rows."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.pop.rst:2
@@ -33444,6 +34001,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.row_arrays.rst:2
 msgid "pyvista.Table.row\\_arrays"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/objects.pydocstring of
+#: pyvista.Table.row_arrays:9
+msgid "The all row arrays."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Table.save.rst:2
@@ -34355,6 +34917,8 @@ msgstr ""
 #: pyvista.demos.demos.orientation_cube:18
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:100
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.actors:21
 msgid ":class:`python:dict`"
 msgstr ""
 
@@ -34827,6 +35391,32 @@ msgstr ""
 msgid "Active array info class with support for pickling."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:9
+#: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
+#: pyvista.core.pyvista_ndarray.pyvista_ndarray:25
+msgid ""
+"**association** : :obj:`pyvista.core.utilities.arrays.FieldAssociation`"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.arrays.FieldAssociation.rst:2
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:8
+#: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
+#: pyvista.core.pyvista_ndarray.pyvista_ndarray:24
+msgid "pyvista.core.utilities.arrays.FieldAssociation"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:8
+msgid "Array association. Association of the array."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.core.dataset.ActiveArrayInfo:12
+msgid "The name of the array."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.dataset.ActiveArrayInfo.rst:19:<autosummary>:1
 msgid ""
 ":py:obj:`ActiveArrayInfo.copy <pyvista.core.dataset.ActiveArrayInfo.copy>`\\"
@@ -34846,12 +35436,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.ActiveArrayInfo.copy:9
 msgid "A copy of this object."
-msgstr ""
-
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.arrays.FieldAssociation.rst:2
-#: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
-#: pyvista.core.pyvista_ndarray.pyvista_ndarray:24
-msgid "pyvista.core.utilities.arrays.FieldAssociation"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/dataset.rst:42:<autosummary>:1
@@ -44629,7 +45213,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.rst:182:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/axes.pydocstring of pyvista.Axes.origin:2
-msgid "Origin of the axes in world coordinates."
+msgid "Return or set th origin of the axes in world coordinates."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Axes.hide_actor.rst:2
@@ -50582,7 +51166,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.camera_set:2
-msgid "Return if the camera of the active renderer has been set."
+msgid "Return or set if the camera of the active renderer has been set."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
@@ -50634,7 +51218,8 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.legend:2
+#: pyvista.Plotter.legend:2 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.legend:11
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.legend:2
 msgid "Legend actor."
@@ -50674,12 +51259,9 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.parallel_projection:2
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.Renderer.parallel_projection:2
-msgid "Return parallel projection state of active render window."
+msgid "Return or set parallel projection state of active render window."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
@@ -50687,12 +51269,9 @@ msgid ":py:obj:`Plotter.parallel_scale <pyvista.Plotter.parallel_scale>`\\"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.parallel_scale:2
-#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
-#: pyvista.Renderer.parallel_scale:2
-msgid "Return parallel scale of active render window."
+msgid "Return or set parallel scale of active render window."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
@@ -50769,7 +51348,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.render_window:2
-msgid "Access the vtkRenderWindow."
+msgid "Access the vtkRenderWindow attached to this plotter."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
@@ -50819,7 +51398,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.shape:2
-msgid "Shape of the plotter."
+msgid "Return the shape of the plotter."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.rst:1154:<autosummary>:1
@@ -50865,6 +51444,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.actors.rst:2
 msgid "pyvista.Plotter.actors"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.actors:9
+msgid "Dictionary of active actors."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.add_actor.rst:2
@@ -53402,6 +53986,8 @@ msgid ""
 "using :class:`pyvista.PolyData`.  This will be rendered from the XY plane."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.legend:23
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_legend:80
 msgid ":obj:`vtk.vtkLegendBoxActor`"
@@ -56455,6 +57041,8 @@ msgid ""
 " plotter theme.  Setting to ``None`` will use the global theme."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bar:21
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:134
 msgid ":obj:`vtk.vtkScalarBarActor`"
@@ -57511,6 +58099,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.camera.rst:2
 msgid "pyvista.Plotter.camera"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.camera:9
+msgid "Camera from the active renderer."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.camera_position.rst:2
@@ -60121,6 +60714,11 @@ msgid ""
 " multiplied by this scale factor."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image_scale:14
+msgid "Image scale factor."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.image_scale.rst:3
 msgid "Double the resolution of a screenshot."
 msgstr ""
@@ -60568,6 +61166,11 @@ msgstr ""
 msgid ":class:`python:list`\\[:obj:`pyvista.Actor`]"
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.pickable_actors:12
+msgid "List of actors."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.pickable_actors.rst:3
 msgid ""
 "Add two actors to a :class:`pyvista.Plotter`, make one pickable, and then "
@@ -60927,11 +61530,31 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.render_window:17
+msgid ":obj:`vtk.vtkRenderWindow` or :data:`python:None`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.render_window:10
+msgid "Render window if the plotter is not closed."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.render_window:21
 msgid "Subclass must set ``ren_win`` on initialization."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.renderer.rst:2
 msgid "pyvista.Plotter.renderer"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.renderer:18
+msgid ":obj:`pyvista.Renderer`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.renderer:9
+msgid "Active render."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.reset_camera.rst:2
@@ -61072,8 +61695,23 @@ msgstr ""
 msgid "pyvista.Plotter.scalar\\_bar"
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bar:9
+msgid "First scalar bar actor."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.scalar_bars.rst:2
 msgid "pyvista.Plotter.scalar\\_bars"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bars:18
+msgid ":obj:`pyvista.ScalarBars`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.scalar_bars:9
+msgid "Scalar bar object."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.scalar_bars.rst:12
@@ -61582,6 +62220,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.shape.rst:2
 msgid "pyvista.Plotter.shape"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.shape:9
+msgid "Shape of the plotter."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.shape.rst:3
@@ -62235,8 +62878,23 @@ msgstr ""
 msgid "pyvista.Plotter.suppress\\_rendering"
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.suppress_rendering:9
+msgid "``True`` when rendering is suppressed."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.theme.rst:2
 msgid "pyvista.Plotter.theme"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.theme:18
+msgid ":obj:`pyvista.Theme`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.theme:9
+msgid "Theme of this plotter."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.theme.rst:3
@@ -64337,7 +64995,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.Renderer.camera_position:2
-msgid "Return camera position of active render window."
+msgid "Return or set the camera position of active render window."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -64430,7 +65088,19 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.parallel_projection:2
+msgid "Return parallel projection state of active render window."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
 msgid ":py:obj:`Renderer.parallel_scale <pyvista.Renderer.parallel_scale>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/renderer.pydocstring of
+#: pyvista.Renderer.parallel_scale:2
+msgid "Return parallel scale of active render window."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Renderer.rst:802:<autosummary>:1
@@ -65547,6 +66217,51 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/opts.pydocstring of
 #: pyvista.plotting.opts.InterpolationType:2
 msgid "Lighting interpolation types."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:20
+msgid "**FLAT** : (:class:`python:int`, :class:`python:str`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType-1
+msgid "("
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:20
+msgid "Flat interpolation type."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:23
+msgid "**GOURAUD** : (:class:`python:int`, :class:`python:str`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:23
+msgid "Gouraud interpolation type."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:26
+msgid "**PHONG** : (:class:`python:int`, :class:`python:str`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:26
+msgid "Phong interpolation type."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:30
+msgid "**PBR** : (:class:`python:int`, :class:`python:str`)"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/opts.pydocstring of
+#: pyvista.plotting.opts.InterpolationType:29
+msgid "Physically based rendering interpolation type."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.opts.RepresentationType.rst:2
@@ -68956,7 +69671,7 @@ msgid "Label along the y-axis."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:21
+#: pyvista.plotting.charts.Axis:29
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.Chart2D:35
 msgid ""
@@ -69967,7 +70682,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.LinePlot2D:25
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:20
+#: pyvista.plotting.charts.Pen:25
 msgid "**style** : :class:`python:str`, default: \"-\""
 msgstr ""
 
@@ -69978,7 +70693,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.LinePlot2D:24
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:19
+#: pyvista.plotting.charts.Pen:24
 msgid "python:str, default: \"-\""
 msgstr ""
 
@@ -70331,11 +71046,6 @@ msgid "Optional developer keyword arguments."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts._Chart.show:60
-msgid ":obj:`np.ndarray <numpy.ndarray>`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:45
 msgid ""
 "Numpy array of the last image when ``screenshot=True`` is set. Optionally "
@@ -70453,7 +71163,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartPie:16
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:25
+#: pyvista.plotting.charts.PiePlot:32
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:35
 msgid "**labels** : :term:`python:sequence`\\[:class:`python:str`], default: []"
@@ -70468,7 +71178,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.ChartPie:15
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:24
+#: pyvista.plotting.charts.PiePlot:31
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts.StackPlot:34
 msgid "python:sequence[python:str], default: []"
@@ -71979,56 +72689,29 @@ msgid "Flag to toggle grid lines visibility for this axis."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:0
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:0
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:0
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:0
-msgid "Other Parameters"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:33
-msgid "**_wrap** : :obj:`vtk.vtkAxis`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:32
-msgid "vtk.vtkAxis, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:26
-msgid ""
-"Wrap an existing VTK Axis instance. Defaults to ``None`` (no wrapping)."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:38
+#: pyvista.plotting.charts.Axis:34
 msgid "**pen** : :obj:`Pen`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:37
+#: pyvista.plotting.charts.Axis:33
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:41
+#: pyvista.plotting.charts.Axis:37
 msgid "Pen"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:38
+#: pyvista.plotting.charts.Axis:34
 msgid "Pen used to draw the axis."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:42
+#: pyvista.plotting.charts.Axis:38
 msgid "**grid_pen** : :obj:`Pen`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Axis:41
+#: pyvista.plotting.charts.Axis:37
 msgid "Pen used to draw the grid lines."
 msgstr ""
 
@@ -73740,12 +74423,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:17
+#: pyvista.plotting.charts.Brush:27
 msgid "**texture** : :obj:`pyvista.Texture`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:16
+#: pyvista.plotting.charts.Brush:26
 msgid "pyvista.Texture, optional"
 msgstr ""
 
@@ -73754,22 +74437,6 @@ msgstr ""
 msgid ""
 "Texture used to fill shapes drawn using this brush. Any object convertible "
 "to a :class:`pyvista.Texture` is allowed. Defaults to ``None``."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:31
-msgid "**_wrap** : :obj:`vtk.vtkBrush`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:30
-msgid "vtk.vtkBrush, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Brush:22
-msgid ""
-"Wrap an existing VTK Brush instance. Defaults to ``None`` (no wrapping)."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/charts/_autosummary/pyvista.plotting.charts.Brush.rst:102:<autosummary>:1
@@ -74090,22 +74757,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:29
-msgid "**_wrap** : :obj:`vtk.vtkPen`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:28
-msgid "vtk.vtkPen, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:25
-msgid "Wrap an existing VTK Pen instance. Defaults to ``None`` (no wrapping)."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:42
+#: pyvista.plotting.charts.Pen:38
 msgid "LINE_STYLES"
 msgstr ""
 
@@ -74117,7 +74769,7 @@ msgid "dict"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.Pen:36
+#: pyvista.plotting.charts.Pen:32
 msgid "Dictionary containing all allowed line styles as its keys."
 msgstr ""
 
@@ -74287,21 +74939,6 @@ msgid ""
 "Color of the segments drawn in this plot. Any color parsable by "
 ":class:`pyvista.Color` is allowed. If omitted (``None``), the default color "
 "scheme is used."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:36
-msgid "**_wrap** : :obj:`vtk.vtkPlotPie`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:35
-msgid "vtk.vtkPlotPie, optional"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/charts.pydocstring of
-#: pyvista.plotting.charts.PiePlot:30
-msgid "Wrap an existing VTK PlotPie instance (no wrapping when ``None``)."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/charts/_autosummary/pyvista.plotting.charts.PiePlot.rst:32:<autosummary>:1
@@ -77594,12 +78231,27 @@ msgstr ""
 msgid "pyvista.PointCellDataSelection.all\\_cell\\_arrays\\_status"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.all_cell_arrays_status:9
+msgid "Name and if the cell array is available."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.all_point_arrays_status.rst:2
 msgid "pyvista.PointCellDataSelection.all\\_point\\_arrays\\_status"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.all_point_arrays_status:9
+msgid "Status of all point arrays."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.cell_array_names.rst:2
 msgid "pyvista.PointCellDataSelection.cell\\_array\\_names"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.cell_array_names:9
+msgid "List of all cell array names."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.cell_array_status.rst:2
@@ -77667,12 +78319,27 @@ msgstr ""
 msgid "pyvista.PointCellDataSelection.number\\_cell\\_arrays"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.number_cell_arrays:9
+msgid "Number of cell arrays."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.number_point_arrays.rst:2
 msgid "pyvista.PointCellDataSelection.number\\_point\\_arrays"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.number_point_arrays:9
+msgid "Number of point arrays."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.point_array_names.rst:2
 msgid "pyvista.PointCellDataSelection.point\\_array\\_names"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/reader.pydocstring of
+#: pyvista.PointCellDataSelection.point_array_names:9
+msgid "List of all point array names."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/readers/_autosummary/pyvista.PointCellDataSelection.point_array_status.rst:2
@@ -86598,12 +87265,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
 #: pyvista.core.pyvista_ndarray.pyvista_ndarray:12
 msgid "Input dataset."
-msgstr ""
-
-#: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
-#: pyvista.core.pyvista_ndarray.pyvista_ndarray:25
-msgid ""
-"**association** : :obj:`pyvista.core.utilities.arrays.FieldAssociation`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pyvista_ndarray.pydocstring of
