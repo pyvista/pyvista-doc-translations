@@ -698,6 +698,7 @@ msgid ""
 "These standards will be enforced using ``pre-commit`` using ``numpydoc-"
 "validate``, with errors being reported as:"
 msgstr ""
+"これらの標準は ``numpydoc-validate`` を使って ``pre-commit`` で実施され，エラーは次のように報告されます:"
 
 #: ../../pyvista/CONTRIBUTING.rst:319
 msgid ""
@@ -707,12 +708,18 @@ msgid ""
 "inline comment to exclude a certain check. For example, we do not enforce "
 "documentation strings for setters and skip the GL08 check."
 msgstr ""
+"もし，何らかの理由で関数のルールに例外を設ける必要がある場合は， ``pyproject.toml`` の "
+"``[tool.numpydoc_validation]`` "
+"セクションに例外を追加するか，インラインコメントを追加して特定のチェックを除外してください．例えば，セッターのドキュメント文字列を強制せず，GL08のチェックをスキップします．"
 
 #: ../../pyvista/CONTRIBUTING.rst:334
 msgid ""
 "See the available validation checks in `numpydoc Validation "
 "<https://numpydoc.readthedocs.io/en/latest/validation.html>`_."
 msgstr ""
+"`numpydoc Validation "
+"<https://numpydoc.readthedocs.io/en/latest/validation.html>`_ "
+"で利用可能なバリデーションチェックを参照してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:339
 msgid "Deprecating Features or other Backwards-Breaking Changes"
@@ -1736,7 +1743,7 @@ msgstr "アニメーションは保存されず，最後のフレームのみが
 #: pyvista.ext.plot_directive:41
 msgid ""
 "**Options** The ``pyvista-plot`` directive supports the following options:"
-msgstr ""
+msgstr "**Options** ```pyvista-plot`` ディレクティブは，以下のオプションをサポートしています．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:46
@@ -1842,7 +1849,7 @@ msgstr ""
 msgid ""
 "**Configuration options** The plot directive has the following configuration"
 " options:"
-msgstr ""
+msgstr "**Configuration options** plotディレクティブには，以下の設定項目があります．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:76
