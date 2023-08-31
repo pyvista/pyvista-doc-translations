@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.42.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 01:10+0000\n"
+"POT-Creation-Date: 2023-08-31 01:10+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -21193,8 +21193,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.extract_surface:13
 msgid ""
-"Adds a cell array ``\"vtkOriginalPointIds\"`` that idenfities which original"
-" cells these surface cells correspond to."
+"Adds a cell array ``\"vtkOriginalCellIds\"`` that idenfities which original "
+"cells these surface cells correspond to."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -21230,7 +21230,14 @@ msgstr ""
 msgid "Extract the surface of an UnstructuredGrid."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_surface.rst:12
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_surface.rst:28
+msgid ""
+"Note that in the \"vtkOriginalCellIds\" array, the same original cells "
+"appears multiple times since this array represents the original cell of each"
+" surface cell extracted."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_surface.rst:32
 msgid ""
 "See the :ref:`extract_surface_example` for more examples using this filter."
 msgstr ""
