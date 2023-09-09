@@ -2672,6 +2672,23 @@ developers.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Bring more of the power of trame to the jupyter view.">
+
+.. only:: html
+
+  .. image:: /examples/99-advanced/images/thumb/sphx_glr_customization-trame-toolbar_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_99-advanced_customization-trame-toolbar.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Customize Trame toolbar</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="A pyvista.DataSet, such as pyvista.PolyData, can be extended by users.  For example, if the use...">
 
 .. only:: html
