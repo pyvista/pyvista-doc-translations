@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-09 01:09+0000\n"
+"POT-Creation-Date: 2023-09-10 01:05+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -81,8 +81,8 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/clipping.rst:316
 #: ../../pyvista/doc/source/examples/01-filter/collisions.rst:165
 #: ../../pyvista/doc/source/examples/01-filter/compute-normals.rst:173
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:520
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:139
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:519
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:136
 #: ../../pyvista/doc/source/examples/01-filter/contouring.rst:223
 #: ../../pyvista/doc/source/examples/01-filter/decimate.rst:190
 #: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:338
@@ -4210,16 +4210,16 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:272
 msgid ""
-"Or better yet, you could simply extract the largest volume from your "
-"thresholded dataset by passing ``largest=True`` to the ``connectivity`` "
-"filter or by using ``extract_largest`` filter (both are equivalent)."
+"Or better yet, you could simply extract the largest volume from your dataset"
+" directly by passing ``'largest'`` to the ``connectivity`` and specify the "
+"same scalar range used earlier for thresholding."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:311
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:310
 msgid "Splitting Volumes"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:313
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:312
 msgid ""
 "What if instead, we wanted to split all the different connected bodies / "
 "volumes in a dataset like the one above? We could use the "
@@ -4229,44 +4229,44 @@ msgid ""
 " volume in the example above:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:375
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:374
 msgid "A Real Dataset"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:377
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:376
 msgid ""
 "Here is a realistic training dataset of fluvial channels in the subsurface. "
 "This will threshold the channels from the dataset then separate each "
 "significantly large body and compute the volumes for each."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:381
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:380
 msgid "Load up the data and threshold the channels:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:400
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:399
 msgid "Now extract all the different bodies and compute their volumes:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:427
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:426
 msgid "Print out the volumes for each body:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:472
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:471
 msgid "And visualize all the different volumes:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:495
-msgid "**Total running time of the script:** ( 0 minutes  7.701 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:494
+msgid "**Total running time of the script:** (0 minutes 11.625 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:509
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:508
 msgid ""
 ":download:`Download Python source code: compute-volume.py <compute-"
 "volume.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:513
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:512
 msgid ""
 ":download:`Download Jupyter notebook: compute-volume.ipynb <compute-"
 "volume.ipynb>`"
@@ -4274,8 +4274,8 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:13
 msgid ""
-"Click :ref:`here <sphx_glr_download_examples_01-filter_connectivity.py>` to "
-"download the full example code"
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_connectivity.py>` "
+"to download the full example code"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:24
@@ -4301,21 +4301,21 @@ msgstr ""
 msgid ""
 "The mesh plotted above is very noisy. We can extract the largest connected "
 "isosurface in that mesh using the "
-":func:`pyvista.DataSetFilters.connectivity` filter and passing "
-"``largest=True`` to the ``connectivity`` filter or by using the "
+":func:`pyvista.DataSetFilters.connectivity` filter and passing ``'largest'``"
+" to the ``connectivity`` filter or by using the "
 ":func:`pyvista.DataSetFilters.extract_largest` filter (both are equivalent)."
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:111
-msgid "**Total running time of the script:** ( 0 minutes  2.944 seconds)"
+msgid "**Total running time of the script:** (0 minutes 7.383 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:126
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:125
 msgid ""
 ":download:`Download Python source code: connectivity.py <connectivity.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:132
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:129
 msgid ""
 ":download:`Download Jupyter notebook: connectivity.ipynb "
 "<connectivity.ipynb>`"
@@ -7221,23 +7221,25 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
-msgid "**00:18.548** total execution time for **examples_01-filter** files:"
+msgid "**00:19.008** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid "00:09.609"
+msgid "00:11.625"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid "00:08.938"
+msgid "00:07.383"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
@@ -7272,116 +7274,114 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:28
-msgid ""
-":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:30
-msgid ""
-":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:32
 msgid ":ref:`sphx_glr_examples_01-filter_contouring.py` (``contouring.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:34
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:30
 msgid ":ref:`sphx_glr_examples_01-filter_decimate.py` (``decimate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:36
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:32
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-"
 "between-surfaces.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:34
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` "
 "(``extract-cells-inside-surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:36
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-surface.py` (``extract-"
 "surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extrude-rotate.py` (``extrude-rotate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
 msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
 "perlin-noise.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:62
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
 msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:64
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:66
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:62
+msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:64
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:68
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:66
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:70
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:68
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:72
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:70
 msgid ":ref:`sphx_glr_examples_01-filter_reflect.py` (``reflect.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:72
+msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:74

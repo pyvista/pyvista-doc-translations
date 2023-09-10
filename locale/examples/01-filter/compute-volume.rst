@@ -270,17 +270,16 @@ simpler implementation of this below in :ref:`split_vol_ref`.
 .. GENERATED FROM PYTHON SOURCE LINES 78-81
 
 Or better yet, you could simply extract the largest volume from your
-thresholded dataset by passing ``largest=True`` to the ``connectivity``
-filter or by using ``extract_largest`` filter (both are equivalent).
+dataset directly by passing ``'largest'`` to the ``connectivity`` and
+specify the same scalar range used earlier for thresholding.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-93
+.. GENERATED FROM PYTHON SOURCE LINES 81-92
 
 .. code-block:: default
 
 
-    # Grab the largest connected volume present
-    largest = threshed.connectivity(largest=True)
-    # or: largest = threshed.extract_largest()
+    # Grab the largest connected volume within a scalar range
+    largest = threshed.connectivity('largest', scalar_range=[0.15, 0.50])
 
     # Get volume as numeric value
     large_volume = largest.volume
@@ -301,7 +300,7 @@ filter or by using ``extract_largest`` filter (both are equivalent).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-107
+.. GENERATED FROM PYTHON SOURCE LINES 93-106
 
 -----
 
@@ -317,7 +316,7 @@ different connected volumes in a dataset into blocks in a
 :class:`pyvista.MultiBlock` dataset. For example, lets split the thresholded
 volume in the example above:
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-118
+.. GENERATED FROM PYTHON SOURCE LINES 106-117
 
 .. code-block:: default
 
@@ -346,7 +345,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-124
+.. GENERATED FROM PYTHON SOURCE LINES 118-123
 
 .. code-block:: default
 
@@ -367,7 +366,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-135
+.. GENERATED FROM PYTHON SOURCE LINES 124-134
 
 -----
 
@@ -380,7 +379,7 @@ significantly large body and compute the volumes for each.
 
 Load up the data and threshold the channels:
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-139
+.. GENERATED FROM PYTHON SOURCE LINES 134-138
 
 .. code-block:: default
 
@@ -395,11 +394,11 @@ Load up the data and threshold the channels:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-141
+.. GENERATED FROM PYTHON SOURCE LINES 139-140
 
 Now extract all the different bodies and compute their volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 141-153
+.. GENERATED FROM PYTHON SOURCE LINES 140-152
 
 .. code-block:: default
 
@@ -422,11 +421,11 @@ Now extract all the different bodies and compute their volumes:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-155
+.. GENERATED FROM PYTHON SOURCE LINES 153-154
 
 Print out the volumes for each body:
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-159
+.. GENERATED FROM PYTHON SOURCE LINES 154-158
 
 .. code-block:: default
 
@@ -442,36 +441,36 @@ Print out the volumes for each body:
 
  .. code-block:: none
 
-    Body 00 volume: 66761.000
-    Body 01 volume: 16120.000
-    Body 02 volume: 1150.000
-    Body 03 volume: 5166.000
-    Body 04 volume: 2085.000
-    Body 05 volume: 12490.000
-    Body 06 volume: 152667.000
-    Body 07 volume: 32520.000
+    Body 00 volume: 152667.000
+    Body 01 volume: 152638.000
+    Body 02 volume: 108024.000
+    Body 03 volume: 66761.000
+    Body 04 volume: 32520.000
+    Body 05 volume: 31866.000
+    Body 06 volume: 27857.000
+    Body 07 volume: 18269.000
     Body 08 volume: 18238.000
-    Body 09 volume: 152638.000
-    Body 10 volume: 1889.000
-    Body 11 volume: 31866.000
+    Body 09 volume: 16120.000
+    Body 10 volume: 12550.000
+    Body 11 volume: 12490.000
     Body 12 volume: 9861.000
-    Body 13 volume: 108024.000
-    Body 14 volume: 1548.000
-    Body 15 volume: 27857.000
-    Body 16 volume: 1443.000
-    Body 17 volume: 8239.000
-    Body 18 volume: 12550.000
-    Body 19 volume: 18269.000
-    Body 20 volume: 2270.000
+    Body 13 volume: 8239.000
+    Body 14 volume: 5166.000
+    Body 15 volume: 2270.000
+    Body 16 volume: 2085.000
+    Body 17 volume: 1889.000
+    Body 18 volume: 1548.000
+    Body 19 volume: 1443.000
+    Body 20 volume: 1150.000
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-161
+.. GENERATED FROM PYTHON SOURCE LINES 159-160
 
 And visualize all the different volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-163
+.. GENERATED FROM PYTHON SOURCE LINES 160-162
 
 .. code-block:: default
 
@@ -492,7 +491,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.701 seconds)
+   **Total running time of the script:** (0 minutes 11.625 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:
