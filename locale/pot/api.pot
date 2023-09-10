@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-02 01:08+0000\n"
+"POT-Creation-Date: 2023-09-10 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -915,7 +915,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:40
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:63
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_implicit_distance:40
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:36
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:123
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:61
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.decimate_boundary:32
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.delaunay_3d:45
@@ -3613,6 +3613,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:7
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:10
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:13
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:71
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:25
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.elevation:40
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.extract_feature_edges:21
@@ -4052,8 +4053,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:39
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:45
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_implicit_distance:21
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:14
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:17
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:92
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:95
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:19
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:22
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:43
@@ -5401,6 +5402,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.core.cell.Cell.plot:19
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock:34
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:25
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:99
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:20
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ptc:20
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.streamlines:50
@@ -5483,6 +5485,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock:20
 #: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.core.composite.MultiBlock:33
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.copy_meta_from:24
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:98
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:19
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ptc:19
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.streamlines:49
@@ -5834,7 +5837,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:56
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:46
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:18
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:96
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:44
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.decimate_boundary:15
@@ -5950,7 +5953,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:56
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:46
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:18
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.contour:44
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:17
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.decimate_boundary:15
@@ -6109,7 +6111,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:31
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:60
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_implicit_distance:37
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:33
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:112
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.ctp:38
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.elevation:59
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.extract_cells_by_type:38
@@ -6276,6 +6278,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.clip:25
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.clip_scalar:19
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_implicit_distance:22
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:93
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.extract_largest:11
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.merge:30
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.reflect:15
@@ -9863,6 +9866,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.set_active_vectors:8
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.clip_scalar:7
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:12
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:65
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:25
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:28
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:31
@@ -11613,12 +11617,12 @@ msgid "Compute the implicit distance from the points to a surface."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.rst:349:<autosummary>:1
-msgid ":py:obj:`DataSetFilters.connectivity <pyvista.DataSetFilters.connectivity>`\\ \\(\\[largest\\, ...\\]\\)"
+msgid ":py:obj:`DataSetFilters.connectivity <pyvista.DataSetFilters.connectivity>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.rst:349:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:2
-msgid "Find and label connected bodies/volumes."
+msgid "Find and label connected regions."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.rst:349:<autosummary>:1
@@ -12223,6 +12227,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.clip_scalar:8
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.compute_derivative:13
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:66
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc:26
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_circular_arc_normal:32
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.plot_over_line:22
@@ -12642,32 +12647,245 @@ msgid "pyvista.DataSetFilters.connectivity"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:4
-msgid "This adds an ID array to the point and cell data to distinguish separate connected bodies. This applies a ``vtkConnectivityFilter`` filter which extracts cells that share common points and/or meet other connectivity criterion."
+msgid "This filter extracts cell regions based on a specified connectivity criterion. The extraction criterion can be controlled with ``extraction_mode`` to extract the largest region or the closest region to a seed point, for example."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:9
-msgid "Cells that share vertices and meet other connectivity criterion such as scalar range are known as a region."
+msgid "In general, cells are considered to be connected if they share a point. However, if a ``scalar_range`` is provided, cells must also have at least one point with scalar values in the specified range to be considered connected."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:15
-msgid "**largest** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:False`"
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_largest.rst:24
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:14
+msgid "See :ref:`connectivity_example` and :ref:`volumetric_example` for more examples using this filter."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:15
-msgid "Extract the largest connected part of the mesh."
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:17
+msgid "* New extraction modes: ``'specified'``, ``'cell_seed'``, ``'point_seed'``,   and ``'closest'``. * Extracted regions are now sorted in descending order by   cell count. * Region connectivity can be controlled using ``scalar_range``."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:23
-msgid "Dataset with labeled connected bodies.  Return type matches input."
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:24
+msgid "Parameter ``largest`` is deprecated. Use ``'largest'`` or ``extraction_mode='largest'`` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:41
+msgid "**extraction_mode** : :class:`python:str`, default: \"all\""
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:40
+msgid "python:str, default: \"all\""
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:31
+msgid "``'all'``: Extract all connected regions."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:32
+msgid "``'largest'`` : Extract the largest connected region (by cell count)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:34
+msgid "``'specified'``: Extract specific region IDs. Use ``region_ids`` to specify the region IDs to extract."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:36
+msgid "``'cell_seed'``: Extract all regions sharing the specified cell ids. Use ``cell_ids`` to specify the cell ids."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:38
+msgid "``'point_seed'`` : Extract all regions sharing the specified point ids. Use ``point_ids`` to specify the point ids."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:40
+msgid "``'closest'`` : Extract the region closest to the specified point. Use ``closest_point`` to specify the point."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:50
+msgid "**variable_input** : :class:`python:float` | :term:`python:sequence`\\[:class:`python:float`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:49
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:54
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.threshold:31
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.threshold_percent:15
+msgid "python:float | python:sequence[python:float], optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:44
+msgid "The convenience parameter used for specifying any required input values for some values of ``extraction_mode``. Setting ``extraction_input`` is equivalent to setting: * ``'region_ids'`` if mode is ``'specified'``. * ``'cell_ids'`` if mode is ``'cell_seed'``. * ``'point_ids'`` if mode is ``'point_seed'``. * ``'closest_point'`` if mode is ``'closest'``. It has no effect if the mode is ``'all'`` or ``'largest'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:55
+msgid "**scalar_range** : :class:`python:float` | :term:`python:sequence`\\[:class:`python:float`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:53
+msgid "Single value or ``(min, max)``. If set, the connectivity is restricted to cells with at least one point with scalar values in the specified range."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:58
+msgid "Name of scalars to use if ``scalar_range`` is specified. Defaults to currently active scalars."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:62
+msgid "This filter requires point scalars to determine region connectivity. If cell scalars are provided, they are first converted to point scalars with :func:`cell_data_to_point_data` before applying the filter. The converted point scalars are removed from the output after applying the filter."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:72
+msgid "**label_regions** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:69
+msgid "If ``True``, scalar point and cell arrays ``RegionId`` are stored. Each region is assigned a unique ID. IDs are zero-indexed and are assigned by region cell count in descending order (i.e. the largest region has ID ``0``)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:76
+msgid "**region_ids** : :term:`python:sequence`\\[:class:`python:int`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:75
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:79
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:83
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:87
+#: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.ImageData:24
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.screenshot:19
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.window_size_context:17
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:22
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:38
+#: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:48
+msgid "python:sequence[python:int], optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:75
+msgid "Region ids to extract. Only used if ``extraction_mode`` is ``specified``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:80
+msgid "**point_ids** : :term:`python:sequence`\\[:class:`python:int`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:79
+msgid "Point ids to use as seeds. Only used if ``extraction_mode`` is ``point_seed``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:84
+msgid "**cell_ids** : :term:`python:sequence`\\[:class:`python:int`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:83
+msgid "Cell ids to use as seeds. Only used if ``extraction_mode`` is ``cell_seed``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:88
+msgid "**closest_point** : :term:`python:sequence`\\[:class:`python:int`], :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:87
+msgid "Point coordinates in ``(x, y, z)``. Only used if ``extraction_mode`` is ``closest``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:91
+msgid "If ``True`` the mesh is updated in-place, otherwise a copy is returned. A copy is always returned if the input type is not ``pyvista.PolyData`` or ``pyvista.UnstructuredGrid``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:96
+msgid "Display a progress bar."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:99
+msgid "Used for handling deprecated parameters."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:104
+msgid "Dataset with labeled connected bodies. Return type is ``pyvista.PolyData`` if input type is ``pyvista.PolyData`` and ``pyvista.UnstructuredGrid`` otherwise."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_largest.rst:28
+#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.connectivity:117
+msgid ":func:`pyvista.DataSetFilter.connectivity`"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:3
-msgid "Join two meshes together and plot their connectivity."
+msgid "Label all connected regions."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:24
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_largest.rst:26
-msgid "See :ref:`volumetric_example` for more examples using this filter."
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:5
+msgid "Load data."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:12
+msgid "Extract all disconnected regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:16
+msgid "Configure plotting parameters."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:21
+msgid "Format scalar bar text for integer values."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:27
+msgid "Set the plot's camera position."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:31
+msgid "Plot the regions by ID."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:33
+msgid "Note that region IDs are sorted in descending order by cell count."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:57
+msgid "Extract specific regions by size. Calculate region sizes."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:60
+msgid "Get counts using the previous `connectivity('all')` results."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:66
+msgid "Extract regions with fewer than 150 cells."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:71
+msgid "Plot result with plotting parameters defined earlier."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:94
+msgid "Extract the largest region."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:98
+msgid "Plot the largest region and show the input mesh for reference."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:119
+msgid "Extract regions using seed points."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:121
+msgid "Create hills and use curvature to define their peaks and valleys."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:127
+msgid "Visualize the peaks and valleys."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:129
+msgid "Peaks have large positive curvature (i.e. are convex) Valleys have large negative curvature (i.e. are concave) Flat regions have curvature close to zero."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:154
+msgid "Extract the steepest peak using a seed point."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:163
+msgid "Extract the valley region closest to the steepest peak."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.connectivity.rst:171
+msgid "Plot extracted regions."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.contour.rst:2
@@ -14681,11 +14899,6 @@ msgstr ""
 msgid "**value** : :class:`python:float` | :term:`python:sequence`\\[:class:`python:float`], :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.threshold:31
-#: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.threshold_percent:15
-msgid "python:float | python:sequence[python:float], optional"
-msgstr ""
-
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.threshold:28
 msgid "Single value or ``(min, max)`` to be used for the data threshold. If a sequence, then length must be 2. If no value is specified, the non-NaN data range will be used to remove any NaN values. Please reference the ``method`` parameter for how single values are handled."
 msgstr ""
@@ -15426,15 +15639,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.ImageData:25
 msgid "**dimensions** : :term:`python:sequence`\\[:class:`python:int`], :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.ImageData:24
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.screenshot:19
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.window_size_context:17
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:22
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:38
-#: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_sphere_widget:48
-msgid "python:sequence[python:int], optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.ImageData:25

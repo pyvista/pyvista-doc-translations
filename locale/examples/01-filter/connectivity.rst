@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_connectivity.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_connectivity.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -75,7 +75,7 @@ Load a dataset that has noisy isosurfaces
 
 The mesh plotted above is very noisy. We can extract the largest connected
 isosurface in that mesh using the :func:`pyvista.DataSetFilters.connectivity`
-filter and passing ``largest=True`` to the ``connectivity``
+filter and passing ``'largest'`` to the ``connectivity``
 filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 (both are equivalent).
 
@@ -85,7 +85,7 @@ filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 
 
     # Grab the largest connected volume present
-    largest = mesh.connectivity(largest=True)
+    largest = mesh.connectivity('largest')
     # or: largest = mesh.extract_largest()
 
     p = pv.Plotter()
@@ -108,28 +108,25 @@ filter or by using the :func:`pyvista.DataSetFilters.extract_largest` filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.944 seconds)
+   **Total running time of the script:** (0 minutes 7.383 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_connectivity.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: connectivity.py <connectivity.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: connectivity.py <connectivity.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: connectivity.ipynb <connectivity.ipynb>`
+      :download:`Download Jupyter notebook: connectivity.ipynb <connectivity.ipynb>`
 
 
 .. only:: html
