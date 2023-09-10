@@ -4998,6 +4998,8 @@ msgid ""
 " directly by passing ``'largest'`` to the ``connectivity`` and specify the "
 "same scalar range used earlier for thresholding."
 msgstr ""
+"あるいは，単純に ``connectivity`` に ``'largest'`` "
+"を渡し，先ほど閾値処理で使用したのと同じスカラー範囲を指定することで，データセットから最大のボリュームを直接抽出することもできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:310
 msgid "Splitting Volumes"
@@ -5047,7 +5049,7 @@ msgstr "そして，あらゆるボリュームを可視化します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:494
 msgid "**Total running time of the script:** (0 minutes 11.625 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** (0 minutes 11.625 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:508
 msgid ""
@@ -5070,6 +5072,8 @@ msgid ""
 ":ref:`Go to the end <sphx_glr_download_examples_01-filter_connectivity.py>` "
 "to download the full example code"
 msgstr ""
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_connectivity.py>` "
+"をクリックすると完全なサンプルコードをダウンロードできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:24
 msgid "Connectivity"
@@ -5101,10 +5105,14 @@ msgid ""
 " to the ``connectivity`` filter or by using the "
 ":func:`pyvista.DataSetFilters.extract_largest` filter (both are equivalent)."
 msgstr ""
+"上にプロットしたメッシュは非常にノイズが多いです． :func:`pyvista.DataSetFilters.connectivity` "
+"フィルタを使用し， ``connectivity`` フィルタに ``'largest'`` を渡すか，または "
+":func:`pyvista.DataSetFilters.extract_largest` "
+"フィルタ(どちらも同じ)を使用することで，そのメッシュ内の最大接続等値面を抽出できます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:111
 msgid "**Total running time of the script:** (0 minutes 7.383 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** (0 minutes 7.383 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:125
 msgid ""
@@ -8655,7 +8663,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
 msgid "**00:19.008** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:19.008** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid ""
@@ -8665,7 +8673,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid "00:11.625"
-msgstr ""
+msgstr "00:11.625"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid ""
@@ -8675,7 +8683,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid "00:07.383"
-msgstr ""
+msgstr "00:07.383"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
 msgid ""
@@ -19141,6 +19149,9 @@ msgid ""
 "toggle the visibility of the model. The dividers are the same as already "
 "used to divide and organize the toolbar."
 msgstr ""
+"まず，trameのツールバーに追加したいメニュー項目を作成しましょう．ここでは， ``button_play`` 関数を通してsliderに接続される "
+"\"play\" ボタンを作成します．sliderはレンダリングするモデルの \"resolution\" を表し， \"resolution\" "
+"の値が表示されるテキストフィールドになります．また，モデルの表示を切り替えるドロップダウンメニューも追加します．dividerは，ツールバーを分割して整理するために既に使用したものと同じです．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:111
 msgid ""
@@ -19151,12 +19162,14 @@ msgid ""
 "function here otherwise the server will complain ``button_play`` does not "
 "exist."
 msgstr ""
+"ボタンコールバック関数 ``button_play`` はサーバーを起動する前に作成する必要があります．この関数はブール値の状態変数 ``play`` "
+"をトグルし，サーバーをフラッシュします．ステート変数についてはもう少し詳しく説明しますが，ここで関数を作成する必要があります．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:137
 msgid ""
 "We will do a simple rendering of a Cone using the vtk `vtkConeSouce` "
 "algorithm."
-msgstr ""
+msgstr "vtk `vtkConeSouce` アルゴリズムを使用して，コーンの簡単なレンダリングを行います．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:140
 msgid ""
@@ -19164,10 +19177,12 @@ msgid ""
 "should be passed as a ``jupyter_kwargs`` argument under the key "
 "``add_menu_items``."
 msgstr ""
+"``pl.show`` メソッドを使用する場合．作成した ``custom_tools`` 関数を ``jupyter_kwargs`` 引数として "
+"``add_menu_items`` キーで渡す必要があります．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:169
 msgid "To interact with ``trame``'s server we need to get the server's state."
-msgstr ""
+msgstr "``trame`` のサーバーと対話するためには，サーバーの状態を取得する必要があります．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:171
 msgid ""
@@ -19178,10 +19193,14 @@ msgid ""
 "variable \"variable\" with value ``value`` in the server's shared state, so "
 "we do not need to create ``state.resolution`` or ``state.visibility``."
 msgstr ""
+"共有ステートで ``play`` 変数を初期化し，作成した再生ボタンでコントロールできるようにします．なお， ``slider`` ， "
+"``text_field`` ， ``select`` ツールを作成する際に， ``model=(\"variable\", value)`` "
+"のようなものを渡しています．これにより，サーバーの共有ステートに値 ``value`` を持つ変数 \"variable\" が自動的に作成されるため，"
+" ``state.resolution`` や ``state.visibility`` を作成する必要はありません．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:196
 msgid "Now we can create the callback functions for our menu items."
-msgstr ""
+msgstr "これで，メニュー項目のコールバック関数を作成できるようになりました．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:198
 msgid ""
@@ -19191,6 +19210,10 @@ msgid ""
 " the resolution of our cone algorithm. When ``visibility`` changes, we want "
 "to toggle the visibility of our cone."
 msgstr ""
+"関数は ``state.change(\"variable\")`` "
+"でデコレートされています．これは，この特定の変数の値がサーバーの共有ステートで変更されたときに呼び出されることを意味します． "
+"``resolution`` が変更されると，コーンアルゴリズムの解像度を更新します． ``visibility`` "
+"が変更されると，コーンの可視性を切り替えます．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:204
 msgid ""
@@ -19205,6 +19228,12 @@ msgid ""
 "``flush`` the server and force it to see the change in the shared variables."
 " When ``state.play`` changes to ``False``, the animation stops."
 msgstr ""
+"変数 ``play`` は少しトリッキーです．アニメーションを再生するためにタイマーのようなものをスタートさせたいです．これを ``trame`` "
+"で行うには，非同期関数が必要です．関数 ``_play`` は，変数 ``play`` が変更された時に (再生ボタンをクリックした時、コールバック "
+"``button_play`` を通して) 呼び出されます． ``state.play`` が ``True`` の間，アニメーションを再生したいです．"
+" ``state.resolution`` の値を変更しますが，実際に ``update_resolution`` 関数を呼び出すには，サーバーを "
+"``flush`` して，共有変数の変更を確認させる必要があります． ``state.play`` が ``False`` "
+"に変更されると，アニメーションは停止します．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:214
 msgid ""
@@ -19212,22 +19241,28 @@ msgid ""
 "the actual state variable, but only an argument value passed to the callback"
 " function."
 msgstr ""
+"実際のステート変数ではなく，コールバック関数に渡される引数値でしかないため， ``while play: ...`` "
+"を使用してもここでは機能しないことに注意してください．"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:264
 msgid "**Total running time of the script:** (0 minutes 0.724 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** (0 minutes 0.724 seconds)"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:278
 msgid ""
 ":download:`Download Python source code: customization-trame-toolbar.py "
 "<customization-trame-toolbar.py>`"
 msgstr ""
+":download:`Download Python source code: customization-trame-toolbar.py "
+"<customization-trame-toolbar.py>`"
 
 #: ../../pyvista/doc/source/examples/99-advanced/customization-trame-toolbar.rst:282
 msgid ""
 ":download:`Download Jupyter notebook: customization-trame-toolbar.ipynb "
 "<customization-trame-toolbar.ipynb>`"
 msgstr ""
+":download:`Download Jupyter notebook: customization-trame-toolbar.ipynb "
+"<customization-trame-toolbar.ipynb>`"
 
 #: ../../pyvista/doc/source/examples/99-advanced/extending-pyvista.rst:13
 msgid ""
