@@ -6,12 +6,12 @@
 
 Computation times
 =================
-**00:19.008** total execution time for **examples_01-filter** files:
+**00:27.200** total execution time for **examples_01-filter** files:
 
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)                             | 00:11.625 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)                                 | 00:14.425 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)                                 | 00:07.383 | 0.0 MB |
+| :ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)                             | 00:12.775 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-operations.py``)                     | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------+-----------+--------+

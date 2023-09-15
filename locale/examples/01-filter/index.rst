@@ -145,7 +145,7 @@ in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Use the connectivity filter to remove noisy isosurfaces.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example highlights some applications of the connectivity filter.">
 
 .. only:: html
 

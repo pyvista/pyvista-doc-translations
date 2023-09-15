@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-10 01:05+0000\n"
+"POT-Creation-Date: 2023-09-15 01:07+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -81,8 +81,8 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/clipping.rst:316
 #: ../../pyvista/doc/source/examples/01-filter/collisions.rst:165
 #: ../../pyvista/doc/source/examples/01-filter/compute-normals.rst:173
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:519
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:136
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:520
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:427
 #: ../../pyvista/doc/source/examples/01-filter/contouring.rst:223
 #: ../../pyvista/doc/source/examples/01-filter/decimate.rst:190
 #: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:338
@@ -4211,15 +4211,15 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:272
 msgid ""
 "Or better yet, you could simply extract the largest volume from your dataset"
-" directly by passing ``'largest'`` to the ``connectivity`` and specify the "
-"same scalar range used earlier for thresholding."
+" directly by passing ``'largest'`` to the ``connectivity`` and specifying "
+"the scalar range of interest."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:310
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:311
 msgid "Splitting Volumes"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:312
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:313
 msgid ""
 "What if instead, we wanted to split all the different connected bodies / "
 "volumes in a dataset like the one above? We could use the "
@@ -4229,44 +4229,44 @@ msgid ""
 " volume in the example above:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:374
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:375
 msgid "A Real Dataset"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:376
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:377
 msgid ""
 "Here is a realistic training dataset of fluvial channels in the subsurface. "
 "This will threshold the channels from the dataset then separate each "
 "significantly large body and compute the volumes for each."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:380
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:381
 msgid "Load up the data and threshold the channels:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:399
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:400
 msgid "Now extract all the different bodies and compute their volumes:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:426
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:427
 msgid "Print out the volumes for each body:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:471
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:472
 msgid "And visualize all the different volumes:"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:494
-msgid "**Total running time of the script:** (0 minutes 11.625 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:495
+msgid "**Total running time of the script:** (0 minutes 12.775 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:508
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:509
 msgid ""
 ":download:`Download Python source code: compute-volume.py <compute-"
 "volume.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:512
+#: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:513
 msgid ""
 ":download:`Download Jupyter notebook: compute-volume.ipynb <compute-"
 "volume.ipynb>`"
@@ -4283,39 +4283,140 @@ msgid "Connectivity"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:26
-msgid "Use the connectivity filter to remove noisy isosurfaces."
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:28
 msgid ""
-"This example is very similar to `this VTK example "
-"<https://kitware.github.io/vtk-"
-"examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__"
+"This example highlights some applications of the "
+":func:`~pyvista.DataSetFilters.connectivity` filter."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:46
-msgid "Load a dataset that has noisy isosurfaces"
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:32
+msgid "Remove Noisy Isosurfaces"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:76
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:34
+msgid "Use connectivity to remove noisy isosurfaces."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:36
 msgid ""
-"The mesh plotted above is very noisy. We can extract the largest connected "
-"isosurface in that mesh using the "
-":func:`pyvista.DataSetFilters.connectivity` filter and passing ``'largest'``"
-" to the ``connectivity`` filter or by using the "
-":func:`pyvista.DataSetFilters.extract_largest` filter (both are equivalent)."
+"This section is similar to `this VTK example <https://kitware.github.io/vtk-"
+"examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:111
-msgid "**Total running time of the script:** (0 minutes 7.383 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:57
+msgid "Load a dataset with noisy isosurfaces."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:125
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:86
+msgid ""
+"The plotted mesh is very noisy. We can extract the largest connected "
+"isosurface using the ``'largest'`` ``extraction_mode`` of  the "
+":func:`~pyvista.DataSetFilters.connectivity` filter. Equivalently, "
+":func:`~pyvista.DataSetFilters.extract_largest` may also be used."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:122
+msgid "Extract Small Regions"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:124
+msgid ""
+"Use connectivity to extract the smaller 'noisy' regions that were removed in"
+" the remove noisy isosurfaces example above."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:127
+msgid "First, get a list of all region ids."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:145
+msgid ""
+"Since the region IDs are sorted in descending order (by cell count), we can "
+"extract all regions *except* for the largest one using the ``'specified'`` "
+"``extraction_mode`` of the :func:`~pyvista.DataSetFilters.connectivity` "
+"filter."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:166
+msgid "Plot the noisy regions. For context, also plot the largest region."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:195
+msgid "Label Disconnected Regions"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:197
+msgid "Use connectivity to label all disconnected regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:199
+msgid ""
+"This section is similar to `this VTK example "
+"<https://examples.vtk.org/site/Cxx/PolyData/ColorDisconnectedRegionsDemo/>`__."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:201
+msgid "First, load a dataset with disconnected regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:218
+msgid "Extract all regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:235
+msgid "Plot the labeled regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:272
+msgid "Extract Regions From Seed Points"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:274
+msgid ""
+"Use connectivity to extract regions of interest using scalar data and seed "
+"points."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:277
+msgid ""
+"First, create a dataset with salient features. Here, we create hills and use"
+" curvature to define its peaks and valleys."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:296
+msgid ""
+"Visualize the peaks and valleys. Peaks have large positive curvature (i.e. "
+"are convex). Valleys have large negative curvature (i.e. are concave). Flat "
+"regions have curvature close to zero."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:326
+msgid ""
+"Extract a region of interest using the ``'point_seed'`` ``extraction_mode`` "
+"of the :func:`~pyvista.DataSetFilters.connectivity` filter. Let's extract "
+"the steepest peak using a seed point where the curvature is maximized."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:354
+msgid ""
+"Let's also extract the closest valley to the steepest peak using the "
+"``'closest'`` ``extraction_mode`` of the "
+":func:`~pyvista.DataSetFilters.connectivity` filter."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:375
+msgid "Plot extracted regions."
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:402
+msgid "**Total running time of the script:** (0 minutes 14.425 seconds)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:416
 msgid ""
 ":download:`Download Python source code: connectivity.py <connectivity.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:129
+#: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:420
 msgid ""
 ":download:`Download Jupyter notebook: connectivity.ipynb "
 "<connectivity.ipynb>`"
@@ -5844,8 +5945,8 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:146
 #: ../../pyvista/doc/source/examples/index.rst:667
 msgid ""
-"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"Use the connectivity filter"
-" to remove noisy isosurfaces.\">"
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example highlights "
+"some applications of the connectivity filter.\">"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:155
@@ -7221,25 +7322,25 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
-msgid "**00:19.008** total execution time for **examples_01-filter** files:"
+msgid "**00:27.200** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid ""
-":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid "00:11.625"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_connectivity.py` (``connectivity.py``)"
 msgstr ""
 
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
+msgid "00:14.425"
+msgstr ""
+
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid "00:07.383"
+msgid ""
+":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
+msgid "00:12.775"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16

@@ -271,15 +271,16 @@ simpler implementation of this below in :ref:`split_vol_ref`.
 
 Or better yet, you could simply extract the largest volume from your
 dataset directly by passing ``'largest'`` to the ``connectivity`` and
-specify the same scalar range used earlier for thresholding.
+specifying the scalar range of interest.
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-92
+.. GENERATED FROM PYTHON SOURCE LINES 81-93
 
 .. code-block:: default
 
 
     # Grab the largest connected volume within a scalar range
-    largest = threshed.connectivity('largest', scalar_range=[0.15, 0.50])
+    scalar_range = [0, 77]  # Range corresponding to bottom 15% of values
+    largest = threshed.connectivity('largest', scalar_range=scalar_range)
 
     # Get volume as numeric value
     large_volume = largest.volume
@@ -300,7 +301,7 @@ specify the same scalar range used earlier for thresholding.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-106
+.. GENERATED FROM PYTHON SOURCE LINES 94-107
 
 -----
 
@@ -316,7 +317,7 @@ different connected volumes in a dataset into blocks in a
 :class:`pyvista.MultiBlock` dataset. For example, lets split the thresholded
 volume in the example above:
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-117
+.. GENERATED FROM PYTHON SOURCE LINES 107-118
 
 .. code-block:: default
 
@@ -345,7 +346,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-123
+.. GENERATED FROM PYTHON SOURCE LINES 119-124
 
 .. code-block:: default
 
@@ -366,7 +367,7 @@ volume in the example above:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-134
+.. GENERATED FROM PYTHON SOURCE LINES 125-135
 
 -----
 
@@ -379,7 +380,7 @@ significantly large body and compute the volumes for each.
 
 Load up the data and threshold the channels:
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-138
+.. GENERATED FROM PYTHON SOURCE LINES 135-139
 
 .. code-block:: default
 
@@ -394,11 +395,11 @@ Load up the data and threshold the channels:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 139-140
+.. GENERATED FROM PYTHON SOURCE LINES 140-141
 
 Now extract all the different bodies and compute their volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-152
+.. GENERATED FROM PYTHON SOURCE LINES 141-153
 
 .. code-block:: default
 
@@ -421,11 +422,11 @@ Now extract all the different bodies and compute their volumes:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-154
+.. GENERATED FROM PYTHON SOURCE LINES 154-155
 
 Print out the volumes for each body:
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-158
+.. GENERATED FROM PYTHON SOURCE LINES 155-159
 
 .. code-block:: default
 
@@ -466,11 +467,11 @@ Print out the volumes for each body:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-160
+.. GENERATED FROM PYTHON SOURCE LINES 160-161
 
 And visualize all the different volumes:
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-162
+.. GENERATED FROM PYTHON SOURCE LINES 161-163
 
 .. code-block:: default
 
@@ -491,7 +492,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.625 seconds)
+   **Total running time of the script:** (0 minutes 12.775 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:
