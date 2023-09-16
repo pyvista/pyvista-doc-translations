@@ -4998,6 +4998,8 @@ msgid ""
 " directly by passing ``'largest'`` to the ``connectivity`` and specifying "
 "the scalar range of interest."
 msgstr ""
+"あるいは，単純に ``connectivity`` に ``'largest'`` "
+"を渡し，目的のスカラー範囲を指定することで，データセットから最大のボリュームを直接抽出することもできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:311
 msgid "Splitting Volumes"
@@ -5047,7 +5049,7 @@ msgstr "そして，あらゆるボリュームを可視化します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:495
 msgid "**Total running time of the script:** (0 minutes 12.775 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** (0 minutes 12.775 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:509
 msgid ""
@@ -5081,25 +5083,28 @@ msgstr "連結度"
 msgid ""
 "This example highlights some applications of the "
 ":func:`~pyvista.DataSetFilters.connectivity` filter."
-msgstr ""
+msgstr "この例では， :func:`~pyvista.DataSetFilters.connectivity` フィルタの応用例を紹介します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:32
 msgid "Remove Noisy Isosurfaces"
-msgstr ""
+msgstr "ノイズの多い等値面を取り除く"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:34
 msgid "Use connectivity to remove noisy isosurfaces."
-msgstr ""
+msgstr "ノイズの多い等値面を削除するには，連結度を使用します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:36
 msgid ""
 "This section is similar to `this VTK example <https://kitware.github.io/vtk-"
 "examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__."
 msgstr ""
+"このセクションは `この VTK の例 <https://kitware.github.io/vtk-"
+"examples/site/Python/VisualizationAlgorithms/PineRootConnectivity/>`__ "
+"に似ています．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:57
 msgid "Load a dataset with noisy isosurfaces."
-msgstr ""
+msgstr "ノイズの多い等値面を持つデータセットをロードします"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:86
 msgid ""
@@ -5108,20 +5113,23 @@ msgid ""
 ":func:`~pyvista.DataSetFilters.connectivity` filter. Equivalently, "
 ":func:`~pyvista.DataSetFilters.extract_largest` may also be used."
 msgstr ""
+"プロットされたメッシュは非常にノイズが多いです． :func:`~pyvista.DataSetFilters.connectivity` フィルタの "
+"``'largest'`` ``extraction_mode`` を使用することで，最大連結等曲面を抽出することができます．同様に， "
+":func:`~pyvista.DataSetFilters.extract_largest` フィルタを使用することもできます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:122
 msgid "Extract Small Regions"
-msgstr ""
+msgstr "小領域の抽出"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:124
 msgid ""
 "Use connectivity to extract the smaller 'noisy' regions that were removed in"
 " the remove noisy isosurfaces example above."
-msgstr ""
+msgstr "上記のノイズの多い等値面を除去する例で除去された，より小さい 'noisy' な領域を抽出するために接続性を使用します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:127
 msgid "First, get a list of all region ids."
-msgstr ""
+msgstr "まず，すべての領域IDのリストを取得します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:145
 msgid ""
@@ -5130,59 +5138,64 @@ msgid ""
 "``extraction_mode`` of the :func:`~pyvista.DataSetFilters.connectivity` "
 "filter."
 msgstr ""
+"領域IDは降順 (セル数順) にソートされているので， :func:`~pyvista.DataSetFilters.connectivity` "
+"フィルタの ``'specified'``` ``extraction_mode`` を使用して，最大の領域を除くすべての領域を抽出することができます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:166
 msgid "Plot the noisy regions. For context, also plot the largest region."
-msgstr ""
+msgstr "ノイズの多い領域をプロットします．文脈のために、最大の領域もプロットします．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:195
 msgid "Label Disconnected Regions"
-msgstr ""
+msgstr "切断された領域にラベルをする"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:197
 msgid "Use connectivity to label all disconnected regions."
-msgstr ""
+msgstr "接続性を使用して，すべての切断された領域にラベルを付けます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:199
 msgid ""
 "This section is similar to `this VTK example "
 "<https://examples.vtk.org/site/Cxx/PolyData/ColorDisconnectedRegionsDemo/>`__."
 msgstr ""
+"このセクションは "
+"`このVTKの例<https://examples.vtk.org/site/Cxx/PolyData/ColorDisconnectedRegionsDemo/>`__"
+" に似ています．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:201
 msgid "First, load a dataset with disconnected regions."
-msgstr ""
+msgstr "まず，切断された領域を含むデータセットをロードします．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:218
 msgid "Extract all regions."
-msgstr ""
+msgstr "すべての領域を抽出します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:235
 msgid "Plot the labeled regions."
-msgstr ""
+msgstr "ラベルを付けた領域をプロットします．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:272
 msgid "Extract Regions From Seed Points"
-msgstr ""
+msgstr "シードポイントから領域を抽出する"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:274
 msgid ""
 "Use connectivity to extract regions of interest using scalar data and seed "
 "points."
-msgstr ""
+msgstr "スカラーデータとシードポイントを用いて，連結性を利用して関心のある領域を抽出します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:277
 msgid ""
 "First, create a dataset with salient features. Here, we create hills and use"
 " curvature to define its peaks and valleys."
-msgstr ""
+msgstr "まず，顕著な特徴を持つデータセットを作成します．ここでは丘を作り，曲率を使って山と谷を定義します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:296
 msgid ""
 "Visualize the peaks and valleys. Peaks have large positive curvature (i.e. "
 "are convex). Valleys have large negative curvature (i.e. are concave). Flat "
 "regions have curvature close to zero."
-msgstr ""
+msgstr "山と谷を視覚化します．山は正の曲率が大きい (つまり凸状) 谷は負の曲率が大きい (つまり凹状) 平坦な領域は曲率がゼロに近いです．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:326
 msgid ""
@@ -5190,6 +5203,9 @@ msgid ""
 "of the :func:`~pyvista.DataSetFilters.connectivity` filter. Let's extract "
 "the steepest peak using a seed point where the curvature is maximized."
 msgstr ""
+":func:`~pyvista.DataSetFilters.connectivity` フィルターの ``'point_seed'`` "
+"``extraction_mode`` を使用して関心のある領域を抽出します． "
+"曲率が最大になるシードポイントを使用して，最も急峻なピークを抽出してみましょう．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:354
 msgid ""
@@ -5197,6 +5213,8 @@ msgid ""
 "``'closest'`` ``extraction_mode`` of the "
 ":func:`~pyvista.DataSetFilters.connectivity` filter."
 msgstr ""
+":func:`~pyvista.DataSetFilters.connectivity` フィルターの ``'closeest'`` "
+"``extraction_mode`` を使用して，最も急峻なピークに最も近い谷も抽出してみましょう．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:375
 msgid "Plot extracted regions."
@@ -5204,7 +5222,7 @@ msgstr "抽出された領域をプロットします．"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:402
 msgid "**Total running time of the script:** (0 minutes 14.425 seconds)"
-msgstr ""
+msgstr "**Total running time of the script:** (0 minutes 14.425 seconds)"
 
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:416
 msgid ""
@@ -7092,6 +7110,8 @@ msgid ""
 "<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example highlights "
 "some applications of the connectivity filter.\">"
 msgstr ""
+"<div class=\"sphx-glr-thumbcontainer\" tooltip=\"This example highlights "
+"some applications of the connectivity filter.\">"
 
 #: ../../pyvista/doc/source/examples/01-filter/index.rst:155
 #: ../../pyvista/doc/source/examples/index.rst:676
@@ -8753,7 +8773,7 @@ msgstr ":download:`Download Jupyter notebook: sampling_functions_3d.ipynb `"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
 msgid "**00:27.200** total execution time for **examples_01-filter** files:"
-msgstr ""
+msgstr "**00:27.200** total execution time for **examples_01-filter** files:"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid ""
@@ -8763,7 +8783,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid "00:14.425"
-msgstr ""
+msgstr "00:14.425"
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid ""
