@@ -2267,6 +2267,23 @@ for user defined tasks and processing routines.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to create a simple animation. A timer is used to move a sphere ac...">
+
+.. only:: html
+
+  .. image:: /examples/03-widgets/images/thumb/sphx_glr_animation_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_03-widgets_animation.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Animation</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="The box widget can be enabled and disabled by the pyvista.Plotter.add_box_widget and pyvista.Pl...">
 
 .. only:: html

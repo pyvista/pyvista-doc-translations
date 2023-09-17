@@ -25,13 +25,11 @@ Customize Trame toolbar
 
 Bring more of the power of trame to the jupyter view.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-16
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
     import asyncio
-
-    import vtk
 
     import pyvista as pv
     from pyvista.trame.ui.vuetify2 import button, divider, select, slider, text_field
@@ -43,7 +41,7 @@ Bring more of the power of trame to the jupyter view.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-24
+.. GENERATED FROM PYTHON SOURCE LINES 15-22
 
 Let's first create the menu items we want to add to the trame's toolbar.
 Here we want a "play" button that will be later connected to a slider
@@ -53,7 +51,7 @@ the "resolution" will be displayed.
 We will also add a dropdown menu to toggle the visibility of the model.
 The dividers are the same as already used to divide and organize the toolbar.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-66
+.. GENERATED FROM PYTHON SOURCE LINES 22-64
 
 .. code-block:: default
 
@@ -106,7 +104,7 @@ The dividers are the same as already used to divide and organize the toolbar.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-72
+.. GENERATED FROM PYTHON SOURCE LINES 65-70
 
 The button callback function ``button_play`` needs to be created before starting
 the server. This function will toggle the boolean state variable ``play``
@@ -114,7 +112,7 @@ and flush the server, i.e. "force" the server to see the change.
 We will see more on the state variables in a bit, but we need to create the
 function here otherwise the server will complain ``button_play`` does not exist.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-79
+.. GENERATED FROM PYTHON SOURCE LINES 70-77
 
 .. code-block:: default
 
@@ -132,7 +130,7 @@ function here otherwise the server will complain ``button_play`` does not exist.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-86
+.. GENERATED FROM PYTHON SOURCE LINES 78-84
 
 We will do a simple rendering of a Cone using the vtk `vtkConeSouce`
 algorithm.
@@ -141,13 +139,13 @@ When using the ``pl.show`` method. The function we created ``custom_tools``
 should be passed as a ``jupyter_kwargs`` argument under the key
 ``add_menu_items``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-93
+.. GENERATED FROM PYTHON SOURCE LINES 84-91
 
 .. code-block:: default
 
 
     pl = pv.Plotter(notebook=True)
-    algo = vtk.vtkConeSource()
+    algo = pv.ConeSource()
     mesh_actor = pl.add_mesh(algo)
 
     widget = pl.show(jupyter_kwargs=dict(add_menu_items=custom_tools), return_viewer=True)
@@ -164,7 +162,7 @@ should be passed as a ``jupyter_kwargs`` argument under the key
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-102
+.. GENERATED FROM PYTHON SOURCE LINES 92-100
 
 To interact with ``trame``'s server we need to get the server's state.
 
@@ -175,7 +173,7 @@ like ``model=("variable", value). This will automatically create the variable
 "variable" with value ``value`` in the server's shared state, so we do not need
 to create ``state.resolution`` or ``state.visibility``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-107
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 .. code-block:: default
 
@@ -191,7 +189,7 @@ to create ``state.resolution`` or ``state.visibility``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-128
+.. GENERATED FROM PYTHON SOURCE LINES 106-126
 
 Now we can create the callback functions for our menu items.
 
@@ -214,7 +212,7 @@ the shared variables. When ``state.play`` changes to ``False``, the animation st
 Note that using ``while play: ...`` would not work here because it is not the
 actual state variable, but only an argument value passed to the callback function.
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-155
+.. GENERATED FROM PYTHON SOURCE LINES 126-153
 
 .. code-block:: default
 
@@ -233,14 +231,14 @@ actual state variable, but only an argument value passed to the callback functio
 
     @state.change("resolution")
     def update_resolution(resolution, **kwargs):
-        algo.SetResolution(resolution)
+        algo.resolution = resolution
         ctrl.view_update()
 
 
     @state.change("visibility")
     def set_visibility(visibility, **kwargs):
         toggle = {"Hide": 0, "Show": 1}
-        mesh_actor.SetVisibility(toggle[visibility])
+        mesh_actor.visibility = toggle[visibility]
         ctrl.view_update()
 
 
@@ -254,14 +252,14 @@ actual state variable, but only an argument value passed to the callback functio
  .. code-block:: none
 
 
-    Widget(value="<iframe src='http://localhost:36799/index.html?ui=P_0x7efd942827c0_0&reconnect=auto' class='pyvista' style='width: 99%; height: 600px; border: 1px solid rgb(221,221,221);'></iframe>")
+    Widget(value="<iframe src='http://localhost:38817/index.html?ui=P_0x7ff9b9aa3ca0_0&reconnect=auto' class='pyvista' style='width: 99%; height: 600px; border: 1px solid rgb(221,221,221);'></iframe>")
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.724 seconds)
+   **Total running time of the script:** (0 minutes 0.292 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_customization-trame-toolbar.py:

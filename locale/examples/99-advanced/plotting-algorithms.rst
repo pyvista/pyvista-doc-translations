@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_plotting-algorithms.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_plotting-algorithms.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -67,13 +67,13 @@ resolution via ``vtkConeSource.SetResolution()``.
 
 .. code-block:: default
 
-    algo = vtk.vtkConeSource()
+    algo = pv.ConeSource()
 
 
     def update_resolution(value):
         """Callback to set the resolution of the cone generator."""
         res = round(value)
-        algo.SetResolution(res)
+        algo.resolution = res
 
 
 
@@ -207,7 +207,7 @@ together.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.937 seconds)
+   **Total running time of the script:** (0 minutes 8.643 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_plotting-algorithms.py:
@@ -215,6 +215,8 @@ together.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
