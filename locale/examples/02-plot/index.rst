@@ -896,7 +896,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This is very similar to the ref_texture_example example except it is focused on plotting aerial...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This is very similar to the texture_example example except it is focused on plotting aerial ima...">
 
 .. only:: html
 

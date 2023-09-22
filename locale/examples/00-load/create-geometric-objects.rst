@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-geometric-objects.py:
 
 
-.. _ref_geometric_example:
+.. _geometric_example:
 
 Geometric Objects
 ~~~~~~~~~~~~~~~~~
@@ -115,7 +115,7 @@ Now let's plot them all in one window
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.527 seconds)
+   **Total running time of the script:** (0 minutes 0.624 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-geometric-objects.py:

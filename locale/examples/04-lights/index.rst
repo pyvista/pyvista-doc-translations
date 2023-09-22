@@ -2,7 +2,7 @@
 
 .. _sphx_glr_examples_04-lights:
 
-.. _ref_light_examples:
+.. _light_examples:
 
 Lighting
 --------
@@ -26,7 +26,7 @@ truly bring out the best of your visualization:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Positional lights in PyVista have customizable beam shapes, see the ref_light_beam_shape_exampl...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Positional lights in PyVista have customizable beam shapes, see the light_beam_shape_example ex...">
 
 .. only:: html
 

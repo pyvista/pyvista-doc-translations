@@ -226,7 +226,7 @@ volumetric bodies left over in one dataset? Take this for example:
 
 We could then assign a classification array for the two bodies, compute the
 cell sizes, then extract the volumes of each body. Note that there is a
-simpler implementation of this below in :ref:`split_vol_ref`.
+simpler implementation of this below in :ref:`split_vol`.
 
 .. GENERATED FROM PYTHON SOURCE LINES 57-77
 
@@ -305,7 +305,7 @@ specifying the scalar range of interest.
 
 -----
 
-.. _split_vol_ref:
+.. _split_vol:
 
 Splitting Volumes
 +++++++++++++++++
@@ -492,7 +492,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.775 seconds)
+   **Total running time of the script:** (0 minutes 9.744 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

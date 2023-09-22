@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_actors.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_actors.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,7 +24,7 @@ Light Actors
 ~~~~~~~~~~~~
 
 Positional lights in PyVista have customizable beam shapes, see the
-:ref:`ref_light_beam_shape_example` example. Spotlights are special in
+:ref:`light_beam_shape_example` example. Spotlights are special in
 the sense that they are unidirectional lights with a finite position,
 so they can be visualized using a cone.
 
@@ -160,28 +160,25 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.977 seconds)
+   **Total running time of the script:** (0 minutes 1.801 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: actors.py <actors.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: actors.py <actors.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: actors.ipynb <actors.ipynb>`
+      :download:`Download Jupyter notebook: actors.ipynb <actors.ipynb>`
 
 
 .. only:: html

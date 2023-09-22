@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_02-plot_texture.py:
 
 
-.. _ref_texture_example:
+.. _texture_example:
 
 Applying Textures
 ~~~~~~~~~~~~~~~~~
@@ -517,7 +517,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.029 seconds)
+   **Total running time of the script:** (0 minutes 11.122 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

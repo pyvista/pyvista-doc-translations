@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-structured-surface.py:
 
 
-.. _ref_create_structured:
+.. _create_structured:
 
 Creating a Structured Surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -198,11 +198,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -40.39498536, -284.19992672,    1.62434154],
-                     [ -26.58196801, -273.94147471,    2.26515583],
-                     [ -16.75896985, -266.64627246,    2.81824768],
-                     [  -2.68434624, -256.19353449,    3.75486955],
-                     [   9.20595738, -247.36301572,    4.67163738]])
+    pyvista_ndarray([[ -44.33674835, -276.10324599,    2.00417539],
+                     [ -36.2800727 , -270.1198306 ,    2.43786305],
+                     [ -19.36045426, -257.55421301,    3.55985636],
+                     [ -11.73676534, -251.89236195,    4.16116258],
+                     [   0.42918496, -242.85712988,    5.2392675 ]])
 
 
 
@@ -344,7 +344,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.795 seconds)
+   **Total running time of the script:** (0 minutes 2.687 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

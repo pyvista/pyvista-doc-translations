@@ -79,11 +79,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.81043775e+05, 4.40018140e+06, 1.75959998e+03],
-                     [4.80974475e+05, 4.40014010e+06, 1.76117004e+03],
-                     [4.80963575e+05, 4.40018740e+06, 1.75976001e+03],
-                     [4.80932575e+05, 4.40017730e+06, 1.76030005e+03],
-                     [4.80999075e+05, 4.40015020e+06, 1.76101001e+03]])
+    pyvista_ndarray([[4.80962275e+05, 4.40012760e+06, 1.76222998e+03],
+                     [4.81042575e+05, 4.40015030e+06, 1.76105005e+03],
+                     [4.81078075e+05, 4.40014460e+06, 1.76231006e+03],
+                     [4.81119775e+05, 4.40007940e+06, 1.76056006e+03],
+                     [4.80992475e+05, 4.40016470e+06, 1.76047998e+03]])
 
 
 
@@ -108,7 +108,7 @@ data or your own project, creating a PyVista mesh of those points is simply:
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>67841</td></tr>
     <tr><td>N Points</td><td>67841</td></tr>
@@ -151,7 +151,7 @@ And we can even do a sanity check
 
 And now that we have a PyVista mesh, we can plot it. Note that we add an
 option to use eye dome lighting - this is a shading technique to improve
-depth perception with point clouds (learn more in :ref:`ref_edl`).
+depth perception with point clouds (learn more in :ref:`edl`).
 
 .. GENERATED FROM PYTHON SOURCE LINES 52-54
 
@@ -263,11 +263,11 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ 0.38630159, -0.24949807,  0.8879875 ],
-                     [ 0.42832915, -0.58740237, -0.68665318],
-                     [ 0.32914512,  0.64712543,  0.68767155],
-                     [-0.29335564, -0.79382137,  0.53271953],
-                     [-0.31732064, -0.79774916, -0.51274155]])
+    pyvista_ndarray([[-0.29161325,  0.87879106,  0.37774064],
+                     [-0.41353455,  0.75558995, -0.50800886],
+                     [ 0.11100169,  0.21213909, -0.97091484],
+                     [ 0.35991035,  0.44616295, -0.81939195],
+                     [-0.39641508,  0.76319854, -0.51027745]])
 
 
 
@@ -324,7 +324,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.034 seconds)
+   **Total running time of the script:** (0 minutes 7.365 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

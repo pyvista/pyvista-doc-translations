@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_reflect.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_reflect.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_01-filter_reflect.py:
 
 
-.. _ref_reflect_example:
+.. _reflect_example:
 
 Reflect Meshes
 ~~~~~~~~~~~~~~
@@ -104,28 +104,25 @@ Plot the reflected mesh:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.352 seconds)
+   **Total running time of the script:** (0 minutes 0.353 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_reflect.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: reflect.py <reflect.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: reflect.py <reflect.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: reflect.ipynb <reflect.ipynb>`
+      :download:`Download Jupyter notebook: reflect.ipynb <reflect.ipynb>`
 
 
 .. only:: html

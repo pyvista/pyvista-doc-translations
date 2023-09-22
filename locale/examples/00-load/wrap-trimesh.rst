@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_wrap-trimesh.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_wrap-trimesh.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_wrap-trimesh.py:
 
 
-.. _ref_wrap_trimesh:
+.. _wrap_trimesh:
 
 Wrapping Other Objects
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -90,18 +90,16 @@ Wrap an instance of Trimesh
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    PolyData (0x7f528f657be0)
-      N Cells:      1
-      N Points:     3
-      X Bounds:     0.000e+00, 0.000e+00
-      Y Bounds:     0.000e+00, 1.000e+00
-      Z Bounds:     0.000e+00, 1.000e+00
-      N Arrays:     0
-
+    PolyData (0x7f37e5b15640)
+      N Cells:    1
+      N Points:   3
+      N Strips:   0
+      X Bounds:   0.000e+00, 0.000e+00
+      Y Bounds:   0.000e+00, 1.000e+00
+      Z Bounds:   0.000e+00, 1.000e+00
+      N Arrays:   0
 
 
 
@@ -134,18 +132,16 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    PolyData (0x7f528f657ca0)
-      N Cells:      1
-      N Points:     1
-      X Bounds:     1.000e+00, 1.000e+00
-      Y Bounds:     2.000e+00, 2.000e+00
-      Z Bounds:     3.000e+00, 3.000e+00
-      N Arrays:     0
-
+    PolyData (0x7f37962748e0)
+      N Cells:    1
+      N Points:   1
+      N Strips:   0
+      X Bounds:   1.000e+00, 1.000e+00
+      Y Bounds:   2.000e+00, 2.000e+00
+      Z Bounds:   3.000e+00, 3.000e+00
+      N Arrays:   0
 
 
 
@@ -153,28 +149,25 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.837 seconds)
+   **Total running time of the script:** (0 minutes 0.880 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: wrap-trimesh.py <wrap-trimesh.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: wrap-trimesh.py <wrap-trimesh.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: wrap-trimesh.ipynb <wrap-trimesh.ipynb>`
+      :download:`Download Jupyter notebook: wrap-trimesh.ipynb <wrap-trimesh.ipynb>`
 
 
 .. only:: html

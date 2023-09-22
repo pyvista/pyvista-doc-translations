@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_attenuation.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_attenuation.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_04-lights_attenuation.py:
 
 
-.. _ref_attenuation_example:
+.. _attenuation_example:
 
 Attenuation
 ~~~~~~~~~~~
@@ -170,28 +170,25 @@ objects is not handled by default):
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.145 seconds)
+   **Total running time of the script:** (0 minutes 0.939 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_attenuation.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: attenuation.py <attenuation.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: attenuation.py <attenuation.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: attenuation.ipynb <attenuation.ipynb>`
+      :download:`Download Jupyter notebook: attenuation.ipynb <attenuation.ipynb>`
 
 
 .. only:: html

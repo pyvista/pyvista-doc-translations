@@ -1,6 +1,6 @@
 :orphan:
 
-.. _ref_examples:
+.. _examples:
 
 Examples
 ========
@@ -527,7 +527,7 @@ Filtering
 ---------
 
 These examples show case various mesh analysis and filtering routines present
-in the :ref:`filters_ref` module. Explore these demos to perform tasks such as:
+in the :ref:`filters` module. Explore these demos to perform tasks such as:
 
 * Slicing and cutting meshes
 * Computing mesh properties like volume, area, and surface normals
@@ -2174,7 +2174,7 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="This is very similar to the ref_texture_example example except it is focused on plotting aerial...">
+    <div class="sphx-glr-thumbcontainer" tooltip="This is very similar to the texture_example example except it is focused on plotting aerial ima...">
 
 .. only:: html
 
@@ -2462,7 +2462,7 @@ truly bring out the best of your visualization:
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Positional lights in PyVista have customizable beam shapes, see the ref_light_beam_shape_exampl...">
+    <div class="sphx-glr-thumbcontainer" tooltip="Positional lights in PyVista have customizable beam shapes, see the light_beam_shape_example ex...">
 
 .. only:: html
 

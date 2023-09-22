@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_using-filters.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_using-filters.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -25,12 +25,11 @@ Using Common Filters
 
 Using common filters like thresholding and clipping.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -45,7 +44,7 @@ Using common filters like thresholding and clipping.
 
 PyVista wrapped data objects have a suite of common filters ready for immediate
 use directly on the object. These filters include the following
-(see :ref:`filters_ref` for a complete list):
+(see :ref:`filters` for a complete list):
 
 * ``slice``: creates a single slice through the input dataset on a user defined plane
 * ``slice_orthogonal``: creates a ``MultiBlock`` dataset of three orthogonal slices
@@ -160,6 +159,13 @@ What about other filters? Let's collect a few filter results and compare them:
    :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/data_set.py:2321: UserWarning: No vector-like data to use for orient. orient will be set to False.
+      warnings.warn("No vector-like data to use for orient. orient will be set to False.")
+
 
 
 
@@ -223,28 +229,25 @@ And to view this filtered data, simply call the ``plot`` method
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.297 seconds)
+   **Total running time of the script:** (0 minutes 9.745 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_using-filters.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: using-filters.py <using-filters.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: using-filters.py <using-filters.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: using-filters.ipynb <using-filters.ipynb>`
+      :download:`Download Jupyter notebook: using-filters.ipynb <using-filters.ipynb>`
 
 
 .. only:: html

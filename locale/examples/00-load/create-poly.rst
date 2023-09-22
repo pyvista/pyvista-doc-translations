@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-poly.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-poly.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-poly.py:
 
 
-.. _ref_create_poly:
+.. _create_poly:
 
 Create PolyData
 ~~~~~~~~~~~~~~~
@@ -146,28 +146,25 @@ Create a three face polygonal mesh directly from points and faces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.279 seconds)
+   **Total running time of the script:** (0 minutes 0.779 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-poly.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-poly.py <create-poly.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-poly.py <create-poly.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-poly.ipynb <create-poly.ipynb>`
+      :download:`Download Jupyter notebook: create-poly.ipynb <create-poly.ipynb>`
 
 
 .. only:: html

@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_04-lights_beam_shape.py:
 
 
-.. _ref_light_beam_shape_example:
+.. _light_beam_shape_example:
 
 Beam Shape
 ~~~~~~~~~~
@@ -147,7 +147,7 @@ Now let's change the light to a positional light (but not a spotlight):
 Now the inner surface of both hemispheres is lit. A positional light with a
 cone angle of 90 degrees (or more) acts as a point source located at the
 light's nominal position. It could still display attenuation, see the
-:ref:`ref_attenuation_example` example.
+:ref:`attenuation_example` example.
 
 Switching to a spotlight (i.e. a positional light with a cone angle less
 than 90 degrees) will enable beam shaping using the :py:attr:`pyvista.Light.exponent`
@@ -258,7 +258,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.127 seconds)
+   **Total running time of the script:** (0 minutes 1.768 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:

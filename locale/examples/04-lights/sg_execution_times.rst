@@ -6,18 +6,18 @@
 
 Computation times
 =================
-**00:01.156** total execution time for **examples_04-lights** files:
+**00:05.998** total execution time for **examples_04-lights** files:
 
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_light_types.py` (``light_types.py``)           | 00:01.156 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:01.801 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_actors.py` (``actors.py``)                     | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:01.768 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_mesh_lighting.py` (``mesh_lighting.py``)       | 00:01.489 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_beam_shape.py` (``beam_shape.py``)             | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_attenuation.py` (``attenuation.py``)           | 00:00.939 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_04-lights_mesh_lighting.py` (``mesh_lighting.py``)       | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_04-lights_light_types.py` (``light_types.py``)           | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+
 | :ref:`sphx_glr_examples_04-lights_plotter_builtins.py` (``plotter_builtins.py``) | 00:00.000 | 0.0 MB |
 +----------------------------------------------------------------------------------+-----------+--------+

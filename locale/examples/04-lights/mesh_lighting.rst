@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_mesh_lighting.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_mesh_lighting.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -31,11 +31,10 @@ to opt out of lighting altogether. Pass ``lighting=False`` to
 :func:`pyvista.Plotter.add_mesh` to disable lighting for the given
 mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-31
+.. GENERATED FROM PYTHON SOURCE LINES 16-30
 
 .. code-block:: default
 
-    # sphinx_gallery_thumbnail_number = 1
     import pyvista as pv
     from pyvista import examples
 
@@ -91,33 +90,30 @@ option to interactively explore the surface:
 .. GENERATED FROM PYTHON SOURCE LINES 40-42
 
 For further examples about fine-tuning mesh properties that affect
-light rendering, see the :ref:`ref_lighting_properties_example` example.
+light rendering, see the :ref:`lighting_properties_example` example.
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.833 seconds)
+   **Total running time of the script:** (0 minutes 1.489 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_mesh_lighting.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: mesh_lighting.py <mesh_lighting.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: mesh_lighting.py <mesh_lighting.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: mesh_lighting.ipynb <mesh_lighting.ipynb>`
+      :download:`Download Jupyter notebook: mesh_lighting.ipynb <mesh_lighting.ipynb>`
 
 
 .. only:: html

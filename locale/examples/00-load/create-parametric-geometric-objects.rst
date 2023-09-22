@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-parametric-geometric-objects.py:
 
 
-.. _ref_parametric_example:
+.. _parametric_example:
 
 Parametric Geometric Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -674,7 +674,7 @@ Extruded Half Arc
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:2942: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:2954: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
       warnings.warn(
 
 
@@ -683,7 +683,7 @@ Extruded Half Arc
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.070 seconds)
+   **Total running time of the script:** (0 minutes 11.980 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-parametric-geometric-objects.py:

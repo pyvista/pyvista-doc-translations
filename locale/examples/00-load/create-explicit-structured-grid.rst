@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-explicit-structured-grid.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-explicit-structured-grid.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_00-load_create-explicit-structured-grid.py:
 
 
-.. _ref_create_explicit_structured_grid:
+.. _create_explicit_structured_grid:
 
 Creating an Explicit Structured Grid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ Create an explicit structured grid from NumPy arrays.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.838 seconds)
+   **Total running time of the script:** (0 minutes 1.188 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-explicit-structured-grid.py:
@@ -84,6 +84,8 @@ Create an explicit structured grid from NumPy arrays.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_lighting_mesh.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_lighting_mesh.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -18,7 +18,7 @@
 .. _sphx_glr_examples_02-plot_lighting_mesh.py:
 
 
-.. _ref_lighting_properties_example:
+.. _lighting_properties_example:
 
 Lighting Properties
 ~~~~~~~~~~~~~~~~~~~
@@ -196,33 +196,30 @@ Demonstration of all three in use
 .. GENERATED FROM PYTHON SOURCE LINES 60-62
 
 For detailed control over lighting conditions in general see the
-:ref:`ref_light_examples` examples.
+:ref:`light_examples` examples.
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.964 seconds)
+   **Total running time of the script:** (0 minutes 14.968 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lighting_mesh.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: lighting_mesh.py <lighting_mesh.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: lighting_mesh.py <lighting_mesh.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: lighting_mesh.ipynb <lighting_mesh.ipynb>`
+      :download:`Download Jupyter notebook: lighting_mesh.ipynb <lighting_mesh.ipynb>`
 
 
 .. only:: html
