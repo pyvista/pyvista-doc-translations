@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-28 01:02+0000\n"
+"POT-Creation-Date: 2023-09-29 01:01+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (United States) (https://app.transifex.com/tkoyama010/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -557,6 +557,8 @@ msgstr ""
 #: pyvista.core.utilities.geometric_sources.ConeSource:0
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.core.utilities.geometric_sources.CylinderSource:0
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.core.utilities.geometric_sources.MultipleLinesSource:0
 #: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
 #: pyvista.core.utilities.helpers.axis_rotation:0
 #: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
@@ -4176,6 +4178,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Color.rst:12
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.ConeSource.rst:12
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.CylinderSource.rst:12
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:12
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Report.rst:12
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.core.utilities.VtkErrorCatcher.rst:12
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.pyvista_ndarray.rst:12
@@ -4407,6 +4410,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Color.rst:53
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.ConeSource.rst:24
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.CylinderSource.rst:24
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:24
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Report.rst:26
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.pyvista_ndarray.rst:191
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
@@ -5235,6 +5239,10 @@ msgstr ""
 #: pyvista.CylinderSource.radius:0
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.CylinderSource.resolution:0
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.output:0
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.points:0
 #: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
 #: pyvista.core.utilities.helpers.axis_rotation:0
 #: ../../pyvista/pyvista/core/utilities/helpers.pydocstring of
@@ -8509,6 +8517,8 @@ msgstr ""
 #: pyvista.ConeSource.output:21
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.CylinderSource.output:21
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.output:21
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.ParametricBohemianDome:31
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
@@ -10129,6 +10139,8 @@ msgid "pyvista.Cell.points"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:18
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.points:21
 #: ../../pyvista/pyvista/plotting/charts.pydocstring of
 #: pyvista.plotting.charts._Chart.show:60
 msgid ":obj:`np.ndarray <numpy.ndarray>`"
@@ -85853,7 +85865,7 @@ msgstr ""
 msgid "pyvista.ConeSource"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/geometric.rst:86:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.core.utilities.geometric_sources.ConeSource:2
 msgid "Cone source algorithm class."
@@ -85911,10 +85923,13 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.ConeSource.rst:209:<autosummary>:1
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.CylinderSource.rst:200:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:175:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.ConeSource.output:2
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.CylinderSource.output:2
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.output:2
 msgid "Get the output data object for a port on this algorithm."
 msgstr ""
 
@@ -86181,7 +86196,7 @@ msgstr ""
 msgid "pyvista.CylinderSource"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/geometric.rst:86:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
 #: pyvista.core.utilities.geometric_sources.CylinderSource:2
 msgid "Cylinder source algorithm class."
@@ -86666,6 +86681,8 @@ msgstr ""
 #: pyvista.core.utilities.geometric_objects.Line:19
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.MultipleLines:13
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.output:9
 msgid "Line mesh."
 msgstr ""
 
@@ -86685,6 +86702,8 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.MultipleLines:8
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.core.utilities.geometric_sources.MultipleLinesSource:21
 msgid ""
 "**points** : :term:`numpy:array_like`\\[:class:`python:float`], default: "
 "[[-0.5, 0.0, 0.0], [0.5, 0.0, 0.0]]"
@@ -86692,12 +86711,18 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.MultipleLines:7
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.core.utilities.geometric_sources.MultipleLinesSource:20
 msgid ""
 "numpy:array_like[python:float], default: [[-0.5, 0.0, 0.0], [0.5, 0.0, 0.0]]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.pydocstring of
 #: pyvista.core.utilities.geometric_objects.MultipleLines:8
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.points:9
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.core.utilities.geometric_sources.MultipleLinesSource:8
 msgid "List of points defining a broken line."
 msgstr ""
 
@@ -86705,6 +86730,40 @@ msgstr ""
 msgid ""
 "Create a multiple lines between ``(0, 0, 0)``, ``(1, 1, 1)`` and ``(0, 0, "
 "1)``."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:2
+msgid "pyvista.MultipleLinesSource"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.core.utilities.geometric_sources.MultipleLinesSource:2
+msgid "Multiple lines source algorithm class."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:175:<autosummary>:1
+msgid ""
+":py:obj:`MultipleLinesSource.output <pyvista.MultipleLinesSource.output>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:175:<autosummary>:1
+msgid ""
+":py:obj:`MultipleLinesSource.points <pyvista.MultipleLinesSource.points>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.rst:175:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/geometric_sources.pydocstring of
+#: pyvista.MultipleLinesSource.points:2
+msgid "Get the list of points defining a broken line."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.output.rst:2
+msgid "pyvista.MultipleLinesSource.output"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.MultipleLinesSource.points.rst:2
+msgid "pyvista.MultipleLinesSource.points"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Octahedron.rst:2
@@ -90327,16 +90386,20 @@ msgid ""
 " to VTK or vice versa might be smoother when using geometric sources."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/geometric.rst:86:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
 msgid ""
 ":py:obj:`ConeSource <pyvista.ConeSource>`\\ \\(\\[center\\, direction\\, "
 "height\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/geometric.rst:86:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
 msgid ""
 ":py:obj:`CylinderSource <pyvista.CylinderSource>`\\ \\(\\[center\\, "
 "direction\\, radius\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/geometric.rst:87:<autosummary>:1
+msgid ":py:obj:`MultipleLinesSource <pyvista.MultipleLinesSource>`\\ \\(\\[points\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/utilities/index.rst:6
