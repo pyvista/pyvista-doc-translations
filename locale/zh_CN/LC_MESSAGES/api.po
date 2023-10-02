@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 01:01+0000\n"
+"POT-Creation-Date: 2023-10-02 01:06+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/tkoyama010/teams/112279/zh_CN/)\n"
@@ -3542,7 +3542,10 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.camera_position:17
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.image_scale:26
+#: pyvista.Plotter.center:21
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image:21 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.image_scale:26
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.pickable_actors:24
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -5950,6 +5953,9 @@ msgstr ""
 #: of pyvista.Plotter.bounds:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.camera:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.Plotter.center:0
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
 #: of pyvista.Plotter.image_scale:0
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.legend:0 ../../pyvista/pyvista/plotting/plotter.pydocstring
@@ -15414,10 +15420,6 @@ msgstr ""
 #: pyvista.plotting.widgets.AffineWidget3D.axes:23
 #: ../../pyvista/pyvista/plotting/affine_widget.pydocstring of
 #: pyvista.plotting.widgets.AffineWidget3D.origin:23
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.get_image_depth:25
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.screenshot:44
 #: ../../pyvista/pyvista/plotting/texture.pydocstring of
 #: pyvista.plotting.texture.Texture.to_array:16
 msgid ":obj:`numpy.ndarray`"
@@ -16034,6 +16036,11 @@ msgstr ""
 #: pyvista.PolyData.face_normals:19
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:22
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image:18 ../../pyvista/pyvista/plotting/plotter.pydocstring
+#: of pyvista.plotting.plotter.BasePlotter.get_image_depth:25
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.screenshot:44
 msgid ":obj:`pyvista.pyvista_ndarray`"
 msgstr ""
 
@@ -16170,8 +16177,6 @@ msgstr ""
 #: pyvista.plotting.picking.PickingInterface.pick_click_position:21
 #: ../../pyvista/pyvista/plotting/picking.pydocstring of
 #: pyvista.plotting.picking.PickingInterface.pick_mouse_position:21
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.shape:18
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.get_event_position:21
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -27841,8 +27846,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:18
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.Plotter.bounds:18
 msgid ""
 ":class:`python:tuple`\\[:class:`python:float`, :class:`python:float`, "
 ":class:`python:float`, :class:`python:float`, :class:`python:float`, "
@@ -58964,6 +58967,14 @@ msgid "pyvista.Plotter.bounds"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.bounds:18
+msgid ""
+":class:`python:tuple`\\[:obj:`numpy.float64`, :obj:`numpy.float64`, "
+":obj:`numpy.float64`, :obj:`numpy.float64`, :obj:`numpy.float64`, "
+":obj:`numpy.float64`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.bounds:9
 msgid "Bounds of the active renderer."
 msgstr ""
@@ -59003,6 +59014,18 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.center.rst:2
 msgid "pyvista.Plotter.center"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.center:18
+msgid ""
+":class:`python:list`\\[:obj:`numpy.float64`, :obj:`numpy.float64`, "
+":obj:`numpy.float64`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.center:9
+msgid "Center of the active renderer."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.clear.rst:2
@@ -61519,6 +61542,11 @@ msgstr ""
 msgid "pyvista.Plotter.image"
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.image:9
+msgid "Image array of current render window."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Plotter.image_depth.rst:2
 msgid "pyvista.Plotter.image\\_depth"
 msgstr ""
@@ -63065,6 +63093,11 @@ msgid "pyvista.Plotter.shape"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.Plotter.shape:18
+msgid ":class:`python:tuple`\\[:obj:`numpy.int32`, :obj:`numpy.int32`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.shape:9
 msgid "Shape of the plotter."
 msgstr ""
@@ -64067,7 +64100,9 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.where_is:22
-msgid ":class:`python:list`\\(:class:`python:tuple`\\(:class:`python:int`))"
+msgid ""
+":class:`python:list`\\[:class:`python:tuple`\\[:obj:`numpy.int64`, "
+":obj:`numpy.int64`]]"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
