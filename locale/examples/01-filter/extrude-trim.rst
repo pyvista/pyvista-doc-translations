@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_extrude-trim.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_extrude-trim.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -50,7 +50,7 @@ Generate an Extruded Surface
 
 
     # Create surface and plane
-    mesh = pv.ParametricRandomHills(randomseed=2)
+    mesh = pv.ParametricRandomHills(random_seed=2)
     plane = pv.Plane(
         center=(mesh.center[0], mesh.center[1], -5),
         direction=(0, 0, -1),
@@ -72,12 +72,13 @@ Generate an Extruded Surface
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>39600</td></tr>
     <tr><td>N Points</td><td>20000</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-1.000e+01, 1.000e+01</td></tr>
-    <tr><td>Y Bounds</td><td>-5.936e-07, 2.000e+01</td></tr>
+    <tr><td>Y Bounds</td><td>-2.309e-14, 2.000e+01</td></tr>
     <tr><td>Z Bounds</td><td>-5.000e+00, 7.725e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -160,8 +161,6 @@ interior edges are also created.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Extrusion has 30 faces with default boundary_edges
@@ -233,11 +232,12 @@ still a :class:`pyvista.PolyData`.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>4</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-5.000e-01, 5.000e-01</td></tr>
     <tr><td>Y Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 1.500e+00</td></tr>
@@ -245,7 +245,7 @@ still a :class:`pyvista.PolyData`.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>
     <tr><td><b>Distance</b></td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
@@ -287,28 +287,25 @@ Note how the scalars are copied to the extruded line.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.078 seconds)
+   **Total running time of the script:** (0 minutes 1.960 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-trim.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: extrude-trim.py <extrude-trim.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: extrude-trim.py <extrude-trim.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extrude-trim.ipynb <extrude-trim.ipynb>`
+      :download:`Download Jupyter notebook: extrude-trim.ipynb <extrude-trim.ipynb>`
 
 
 .. only:: html

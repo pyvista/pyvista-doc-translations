@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_distance-between-surfaces.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_distance-between-surfaces.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -59,7 +59,7 @@ to the top surface, unlike the first two examples.
 
     def hill(seed):
         """A helper to make a random surface."""
-        mesh = pv.ParametricRandomHills(randomseed=seed, u_res=50, v_res=50, hillamplitude=0.5)
+        mesh = pv.ParametricRandomHills(random_seed=seed, u_res=50, v_res=50, hill_amplitude=0.5)
         mesh.rotate_y(-10, inplace=True)  # give the surfaces some tilt
 
         return mesh
@@ -152,12 +152,10 @@ vector.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    5.144072866943829
+    5.144072853686178
 
 
 
@@ -211,12 +209,10 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    4.843639430073732
+    4.843639418894909
 
 
 
@@ -269,12 +265,10 @@ points of the bottom surface.  ``closest_points`` is returned when using
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    4.841284537743174
+    4.841284523106411
 
 
 
@@ -307,28 +301,25 @@ KDTree method.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.991 seconds)
+   **Total running time of the script:** (0 minutes 3.989 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: distance-between-surfaces.py <distance-between-surfaces.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: distance-between-surfaces.py <distance-between-surfaces.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: distance-between-surfaces.ipynb <distance-between-surfaces.ipynb>`
+      :download:`Download Jupyter notebook: distance-between-surfaces.ipynb <distance-between-surfaces.ipynb>`
 
 
 .. only:: html

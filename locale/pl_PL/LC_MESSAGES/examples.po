@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-22 01:05+0000\n"
+"POT-Creation-Date: 2023-10-12 01:03+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Bartlomiej Kwiatkowski <kfiatek1106@gmail.com>, 2023\n"
 "Language-Team: Polish (Poland) (https://app.transifex.com/tkoyama010/teams/112279/pl_PL/)\n"
@@ -94,12 +94,12 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/01-filter/connectivity.rst:427
 #: ../../pyvista/doc/source/examples/01-filter/contouring.rst:223
 #: ../../pyvista/doc/source/examples/01-filter/decimate.rst:190
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:338
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:329
 #: ../../pyvista/doc/source/examples/01-filter/extract-cells-inside-surface.rst:182
 #: ../../pyvista/doc/source/examples/01-filter/extract-edges.rst:239
 #: ../../pyvista/doc/source/examples/01-filter/extract-surface.rst:175
 #: ../../pyvista/doc/source/examples/01-filter/extrude-rotate.rst:210
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:318
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:315
 #: ../../pyvista/doc/source/examples/01-filter/flying_edges.rst:240
 #: ../../pyvista/doc/source/examples/01-filter/gaussian-smoothing.rst:173
 #: ../../pyvista/doc/source/examples/01-filter/geodesic.rst:158
@@ -307,10 +307,6 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/00-load/reader.rst:247
 #: ../../pyvista/doc/source/examples/00-load/reader.rst:281
 #: ../../pyvista/doc/source/examples/00-load/reader.rst:384
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:155
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:214
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:272
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:163
 #: ../../pyvista/doc/source/examples/01-filter/geodesic.rst:118
 #: ../../pyvista/doc/source/examples/01-filter/integrate-data.rst:167
 #: ../../pyvista/doc/source/examples/01-filter/integrate-data.rst:194
@@ -3220,6 +3216,7 @@ msgstr ""
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:62
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:64
 #: ../../pyvista/doc/source/examples/00-load/sg_execution_times.rst:66
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:20
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:22
@@ -4548,7 +4545,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:13
 msgid ""
-"Click :ref:`here <sphx_glr_download_examples_01-filter_distance-between-"
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_distance-between-"
 "surfaces.py>` to download the full example code"
 msgstr ""
 
@@ -4616,11 +4613,11 @@ msgid ""
 "vector."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:189
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:187
 msgid "Nearest Neighbor Distance"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:191
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:189
 msgid ""
 "You could also use a KDTree to compare the distance between each vertex "
 "point of the upper surface and the nearest neighbor vertex point of the "
@@ -4628,11 +4625,11 @@ msgid ""
 "for large surfaces."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:248
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:244
 msgid "Using PyVista Filter"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:250
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:246
 msgid ""
 "The :func:`pyvista.DataSet.find_closest_cell` filter returns the spatial "
 "points inside the cells of the top surface that are closest to the vertex "
@@ -4640,23 +4637,23 @@ msgid ""
 "``return_closest_point=True``."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:283
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:277
 msgid ""
 "As expected there is only a small difference between this method and the "
 "KDTree method."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:310
-msgid "**Total running time of the script:** ( 0 minutes  2.991 seconds)"
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:304
+msgid "**Total running time of the script:** (0 minutes 3.989 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:325
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:318
 msgid ""
 ":download:`Download Python source code: distance-between-surfaces.py "
 "<distance-between-surfaces.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:331
+#: ../../pyvista/doc/source/examples/01-filter/distance-between-surfaces.rst:322
 msgid ""
 ":download:`Download Jupyter notebook: distance-between-surfaces.ipynb "
 "<distance-between-surfaces.ipynb>`"
@@ -4977,8 +4974,8 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:13
 msgid ""
-"Click :ref:`here <sphx_glr_download_examples_01-filter_extrude-trim.py>` to "
-"download the full example code"
+":ref:`Go to the end <sphx_glr_download_examples_01-filter_extrude-trim.py>` "
+"to download the full example code"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:24
@@ -4999,12 +4996,13 @@ msgstr ""
 msgid ""
 "<div class=\"output_subarea output_html rendered_html output_result\">\n"
 "\n"
-"<table>\n"
+"<table style='width: 100%;'>\n"
 "<tr><th>PolyData</th><th>Information</th></tr>\n"
 "<tr><td>N Cells</td><td>39600</td></tr>\n"
 "<tr><td>N Points</td><td>20000</td></tr>\n"
+"<tr><td>N Strips</td><td>0</td></tr>\n"
 "<tr><td>X Bounds</td><td>-1.000e+01, 1.000e+01</td></tr>\n"
-"<tr><td>Y Bounds</td><td>-5.936e-07, 2.000e+01</td></tr>\n"
+"<tr><td>Y Bounds</td><td>-2.309e-14, 2.000e+01</td></tr>\n"
 "<tr><td>Z Bounds</td><td>-5.000e+00, 7.725e+00</td></tr>\n"
 "<tr><td>N Arrays</td><td>0</td></tr>\n"
 "</table>\n"
@@ -5015,52 +5013,53 @@ msgid ""
 "<br />"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:93
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:94
 msgid "Plot the Extruded Surface"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:94
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:95
 msgid "Plot the resulting :class:`pyvista.PolyData`."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:131
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:132
 msgid "Extruding All Edges"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:132
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:133
 msgid ""
 "The previous example used the default ``extrusion='boundary_edges'``, which "
 "only generates faces on the boundary. When using ``extrusion='all_edges'``, "
 "interior edges are also created."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:176
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:175
 msgid "Plot"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:177
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:176
 msgid ""
 "Show the additional interior faces by plotting with ``style='wireframe'``."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:213
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:212
 msgid "Extrude a Line"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:214
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:213
 msgid ""
 "You can also extrude lines. Observe that the output from extruded lines is "
 "still a :class:`pyvista.PolyData`."
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:233
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:232
 msgid ""
 "<div class=\"output_subarea output_html rendered_html output_result\">\n"
-"<table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
-"<table>\n"
+"<table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>\n"
+"<table style='width: 100%;'>\n"
 "<tr><th>PolyData</th><th>Information</th></tr>\n"
 "<tr><td>N Cells</td><td>1</td></tr>\n"
 "<tr><td>N Points</td><td>4</td></tr>\n"
+"<tr><td>N Strips</td><td>0</td></tr>\n"
 "<tr><td>X Bounds</td><td>-5.000e-01, 5.000e-01</td></tr>\n"
 "<tr><td>Y Bounds</td><td>0.000e+00, 0.000e+00</td></tr>\n"
 "<tr><td>Z Bounds</td><td>0.000e+00, 1.500e+00</td></tr>\n"
@@ -5068,7 +5067,7 @@ msgid ""
 "</table>\n"
 "\n"
 "</td><td>\n"
-"<table>\n"
+"<table style='width: 100%;'>\n"
 "<tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>\n"
 "<tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
 "<tr><td><b>Distance</b></td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>\n"
@@ -5089,15 +5088,15 @@ msgid "Note how the scalars are copied to the extruded line."
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:290
-msgid "**Total running time of the script:** ( 0 minutes  2.078 seconds)"
+msgid "**Total running time of the script:** (0 minutes 1.960 seconds)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:305
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:304
 msgid ""
 ":download:`Download Python source code: extrude-trim.py <extrude-trim.py>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:311
+#: ../../pyvista/doc/source/examples/01-filter/extrude-trim.rst:308
 msgid ""
 ":download:`Download Jupyter notebook: extrude-trim.ipynb <extrude-"
 "trim.ipynb>`"
@@ -7341,64 +7340,62 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:9
-msgid "**00:19.842** total execution time for **examples_01-filter** files:"
+msgid "**00:05.949** total execution time for **examples_01-filter** files:"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
 msgid ""
-":ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)"
+":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-"
+"between-surfaces.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:12
-msgid "00:09.745"
+msgid "00:03.989"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
 msgid ""
-":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
+":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:14
-msgid "00:09.744"
+msgid "00:01.960"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
-msgid ":ref:`sphx_glr_examples_01-filter_reflect.py` (``reflect.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:16
-msgid "00:00.353"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_boolean-operations.py` (``boolean-"
 "operations.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:20
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:18
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_cell-centers.py` (``cell-centers.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:22
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:20
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_clipping-with-surface.py` (``clipping-"
 "with-surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:24
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:22
 msgid ":ref:`sphx_glr_examples_01-filter_clipping.py` (``clipping.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:26
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:24
 msgid ":ref:`sphx_glr_examples_01-filter_collisions.py` (``collisions.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:26
+msgid ""
+":ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-"
+"normals.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:28
 msgid ""
-":ref:`sphx_glr_examples_01-filter_compute-normals.py` (``compute-"
-"normals.py``)"
+":ref:`sphx_glr_examples_01-filter_compute-volume.py` (``compute-volume.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:30
@@ -7416,146 +7413,144 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:36
 msgid ""
-":ref:`sphx_glr_examples_01-filter_distance-between-surfaces.py` (``distance-"
-"between-surfaces.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
-msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-cells-inside-surface.py` "
 "(``extract-cells-inside-surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:38
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-edges.py` (``extract-edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:40
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extract-surface.py` (``extract-"
 "surface.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:42
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_extrude-rotate.py` (``extrude-rotate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
-msgid ""
-":ref:`sphx_glr_examples_01-filter_extrude-trim.py` (``extrude-trim.py``)"
-msgstr ""
-
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:44
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_flying_edges.py` (``flying_edges.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:46
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_gaussian-smoothing.py` (``gaussian-"
 "smoothing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:48
 msgid ":ref:`sphx_glr_examples_01-filter_geodesic.py` (``geodesic.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:50
 msgid ":ref:`sphx_glr_examples_01-filter_glyphs.py` (``glyphs.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:52
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_glyphs_table.py` (``glyphs_table.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:54
 msgid ":ref:`sphx_glr_examples_01-filter_gradients.py` (``gradients.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:56
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_image-fft-perlin-noise.py` (``image-fft-"
 "perlin-noise.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:62
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:58
 msgid ":ref:`sphx_glr_examples_01-filter_image-fft.py` (``image-fft.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:64
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:60
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_integrate-data.py` (``integrate-data.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:66
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:62
 msgid ":ref:`sphx_glr_examples_01-filter_interpolate.py` (``interpolate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:68
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:64
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_mesh-quality.py` (``mesh-quality.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:70
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:66
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_poly-ray-trace.py` (``poly-ray-trace.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:72
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:68
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_project-plane.py` (``project-plane.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:74
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:70
+msgid ":ref:`sphx_glr_examples_01-filter_reflect.py` (``reflect.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:72
 msgid ":ref:`sphx_glr_examples_01-filter_resample.py` (``resample.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:76
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:74
 msgid ":ref:`sphx_glr_examples_01-filter_rotate.py` (``rotate.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:78
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:76
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_sampling_functions_2d.py` "
 "(``sampling_functions_2d.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:80
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:78
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_sampling_functions_3d.py` "
 "(``sampling_functions_3d.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:82
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:80
 msgid ":ref:`sphx_glr_examples_01-filter_slicing.py` (``slicing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:84
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:82
 msgid ":ref:`sphx_glr_examples_01-filter_streamlines.py` (``streamlines.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:86
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:84
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_streamlines_2D.py` (``streamlines_2D.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:88
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:86
 msgid ":ref:`sphx_glr_examples_01-filter_subdivide.py` (``subdivide.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:90
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:88
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_surface-smoothing.py` (``surface-"
 "smoothing.py``)"
 msgstr ""
 
-#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:92
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:90
 msgid ""
 ":ref:`sphx_glr_examples_01-filter_surface_reconstruction.py` "
 "(``surface_reconstruction.py``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:92
+msgid ""
+":ref:`sphx_glr_examples_01-filter_using-filters.py` (``using-filters.py``)"
 msgstr ""
 
 #: ../../pyvista/doc/source/examples/01-filter/sg_execution_times.rst:94
