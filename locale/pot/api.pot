@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 01:10+0000\n"
+"POT-Creation-Date: 2023-10-14 01:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1951,7 +1951,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:143
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:27
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:29
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:42
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:50
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.Texture.dimensions:17
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.Texture.interpolate:17
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.Texture.n_components:19
@@ -3378,6 +3378,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.font_size:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_color:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_width:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_horizontal:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_vertical:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.opacity:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.orientation:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.show_frame:0
@@ -5222,7 +5224,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.show_bounds:130
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:79
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:83
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:38
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:28
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:46
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:52
 #: ../../pyvista/pyvista/plotting/volume_property.py:docstring of pyvista.plotting.volume_property.VolumeProperty:41
@@ -7909,6 +7911,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.export_vtksz:31
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.input:23
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:21
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_horizontal:22
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_vertical:22
 msgid ":class:`python:str`"
 msgstr ""
 
@@ -10095,6 +10099,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:8
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:9
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:25
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:32
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:46
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:25
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:28
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:31
@@ -46947,7 +46953,7 @@ msgstr ""
 msgid "**orientation** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.orientation:2
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.orientation:9
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:20
@@ -46958,7 +46964,7 @@ msgstr ""
 msgid "**font_size** : :class:`python:int`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.font_size:2
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.font_size:9
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:23
@@ -46974,12 +46980,30 @@ msgstr ""
 msgid "Font file path."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:39
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:29
 msgid "**shadow** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:29
 msgid "If enable the shadow."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:33
+msgid "**justification_horizontal** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_horizontal:9
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:32
+msgid "Text's horizontal justification. Should be either \"left\", \"center\" or \"right\"."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:47
+msgid "**justification_vertical** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_vertical:9
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:36
+msgid "Text's vertical justification. Should be either \"bottom\", \"center\" or \"top\"."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:3
@@ -47004,85 +47028,103 @@ msgstr ""
 msgid "Set the font file."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.background_color <pyvista.TextProperty.background_color>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_color:2
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_color:9
 msgid "Background color of text's property."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.background_opacity <pyvista.TextProperty.background_opacity>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_opacity:2
 msgid "Background opacity of text's property."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.color <pyvista.TextProperty.color>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.color:2
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.color:9
 msgid "Color of text's property."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.font_family <pyvista.TextProperty.font_family>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.font_family:2
 msgid "Font family."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.font_size <pyvista.TextProperty.font_size>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.frame_color <pyvista.TextProperty.frame_color>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_color:2
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_color:9
 msgid "Frame color of text property."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.frame_width <pyvista.TextProperty.frame_width>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_width:2
 msgid "Width of the frame."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
+msgid ":py:obj:`TextProperty.justification_horizontal <pyvista.TextProperty.justification_horizontal>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_horizontal:2
+msgid "Text's justification horizontal."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
+msgid ":py:obj:`TextProperty.justification_vertical <pyvista.TextProperty.justification_vertical>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_vertical:2
+msgid "Text's vertical justification."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.opacity <pyvista.TextProperty.opacity>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.opacity:2
 msgid "Opacity of text's property."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.orientation <pyvista.TextProperty.orientation>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 msgid ":py:obj:`TextProperty.show_frame <pyvista.TextProperty.show_frame>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:213:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:223:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.show_frame:2
 msgid "Visibility of frame."
 msgstr ""
@@ -47104,7 +47146,7 @@ msgid "pyvista.TextProperty.background\\_opacity"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_opacity:9
-msgid "Background opacity of the text. A single float value that will be applied globally. background opacity of the text and uniformly applied everywhere. Between 0 and 1."
+msgid "Background opacity of the text. A single float value that will be applied globally. Background opacity of the text and uniformly applied everywhere. Between 0 and 1."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.color.rst:2
@@ -47138,6 +47180,14 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_width:9
 msgid "Width of the frame. The width is expressed in pixels. The default is 1 pixel."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.justification_horizontal.rst:2
+msgid "pyvista.TextProperty.justification\\_horizontal"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.justification_vertical.rst:2
+msgid "pyvista.TextProperty.justification\\_vertical"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.opacity.rst:2
