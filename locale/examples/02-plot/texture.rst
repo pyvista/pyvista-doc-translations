@@ -399,14 +399,14 @@ By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
 
 Then we must associate those texture coordinates with the mesh through the
-:attr:`pyvista.DataSet.active_t_coords` property.
+:attr:`pyvista.DataSet.active_texture_coordinates` property.
 
 .. GENERATED FROM PYTHON SOURCE LINES 192-195
 
 .. code-block:: default
 
 
-    curvsurf.active_t_coords = puppy_coords
+    curvsurf.active_texture_coordinates = puppy_coords
 
 
 
@@ -490,11 +490,11 @@ overlappig
     )
 
     # Initialize the texture coordinates array
-    sphere.active_t_coords = np.zeros((sphere.points.shape[0], 2))
+    sphere.active_texture_coordinates = np.zeros((sphere.points.shape[0], 2))
 
     # Populate by manually calculating
     for i in range(sphere.points.shape[0]):
-        sphere.active_t_coords[i] = [
+        sphere.active_texture_coordinates[i] = [
             0.5 + np.arctan2(-sphere.points[i, 0], sphere.points[i, 1]) / (2 * np.pi),
             0.5 + np.arcsin(sphere.points[i, 2]) / np.pi,
         ]
@@ -517,7 +517,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.122 seconds)
+   **Total running time of the script:** (0 minutes 12.616 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

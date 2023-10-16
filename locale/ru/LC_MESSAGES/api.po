@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 01:15+0000\n"
+"POT-Creation-Date: 2023-10-16 01:04+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Russian (https://app.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1652,7 +1652,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_name:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_t_coords:21
+#: pyvista.DataSet.active_texture_coordinates:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1748,9 +1748,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_scalars_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords:21
+#: pyvista.DataSetAttributes.active_texture_coordinates:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords_name:21
+#: pyvista.DataSetAttributes.active_texture_coordinates_name:21
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors:26
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -4716,6 +4716,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_name:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_texture_coordinates:0
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors:0
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:0
@@ -4814,6 +4816,10 @@ msgstr ""
 #: pyvista.DataSetAttributes.active_t_coords:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords_name:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates:0
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates_name:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors:0
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -14288,189 +14294,197 @@ msgstr ""
 msgid "Translate the mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.active_normals <pyvista.DataSet.active_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_normals:2
 msgid "Return the active normals as an array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.active_scalars <pyvista.DataSet.active_scalars>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars:2
 msgid "Return the active scalars as an array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_scalars_info "
 "<pyvista.DataSet.active_scalars_info>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:2
 msgid "Return the active scalar's association and name."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_scalars_name "
 "<pyvista.DataSet.active_scalars_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_name:2
 msgid "Return the name of the active scalars."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.active_t_coords <pyvista.DataSet.active_t_coords>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_t_coords:2
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_texture_coordinates:2
 msgid "Return the active texture coordinates on the points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.active_tensors <pyvista.DataSet.active_tensors>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors:2
 msgid "Return the active tensors array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_tensors_info "
 "<pyvista.DataSet.active_tensors_info>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_info:2
 msgid "Return the active tensor's field and name: [field, name]."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_tensors_name "
 "<pyvista.DataSet.active_tensors_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_name:2
 msgid "Return the name of the active tensor array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
+msgid ""
+":py:obj:`DataSet.active_texture_coordinates "
+"<pyvista.DataSet.active_texture_coordinates>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.active_vectors <pyvista.DataSet.active_vectors>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors:2
 msgid "Return the active vectors array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_vectors_info "
 "<pyvista.DataSet.active_vectors_info>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:2
 msgid "Return the active vector's association and name."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ""
 ":py:obj:`DataSet.active_vectors_name "
 "<pyvista.DataSet.active_vectors_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_name:2
 msgid "Return the name of the active vectors array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.area <pyvista.DataSet.area>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.area:2
 msgid "Return the mesh area if 2D."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.array_names <pyvista.DataSet.array_names>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.array_names:2
 msgid "Return a list of array names for the dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.arrows <pyvista.DataSet.arrows>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:2
 msgid "Return a glyph representation of the active vector data as arrows."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.bounds <pyvista.DataSet.bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:2
 msgid "Return the bounding box of this dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.cell <pyvista.DataSet.cell>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.cell:2
 msgid "A generator that provides an easy way to loop over all cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.cell_data <pyvista.DataSet.cell_data>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.cell_data:2
 msgid "Return cell data as DataSetAttributes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.center <pyvista.DataSet.center>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.rst:385:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.center:2 ../../pyvista/pyvista/core/dataset.pydocstring
@@ -14478,11 +14492,11 @@ msgstr ""
 msgid "Return the center of the bounding box."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.length <pyvista.DataSet.length>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.MultiBlock.rst:385:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.length:2 ../../pyvista/pyvista/core/dataset.pydocstring
@@ -14490,41 +14504,41 @@ msgstr ""
 msgid "Return the length of the diagonal of the bounding box."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.n_arrays <pyvista.DataSet.n_arrays>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.n_arrays:2
 msgid "Return the number of arrays present in the dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.n_cells <pyvista.DataSet.n_cells>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.n_cells:2
 msgid "Return the number of cells in the entire dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.n_points <pyvista.DataSet.n_points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.n_points:2
 msgid "Return the number of points in the entire dataset."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.number_of_cells <pyvista.DataSet.number_of_cells>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_cells:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -14532,40 +14546,40 @@ msgstr ""
 msgid "Return the number of cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.number_of_points <pyvista.DataSet.number_of_points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_points:2
 msgid "Return the number of points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.point_data <pyvista.DataSet.point_data>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.point_data:2
 msgid "Return point data as DataSetAttributes."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.points <pyvista.DataSet.points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:2
 msgid "Return a reference to the points as a numpy object."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 msgid ":py:obj:`DataSet.volume <pyvista.DataSet.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:585:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:590:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:2
 msgid "Return the mesh volume."
 msgstr ""
@@ -14608,7 +14622,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
-#: pyvista.DataSet.active_t_coords:18
+#: pyvista.DataSet.active_t_coords:21
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_texture_coordinates:18
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -14687,11 +14703,9 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_t_coords:9
+#: ../../pyvista/pyvista/core/dataset.pydocstring of
+#: pyvista.DataSet.active_texture_coordinates:9
 msgid "Active texture coordinates on the points."
-msgstr ""
-
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_t_coords.rst:3
-msgid "Return the active texture coordinates from the globe example."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_tensors.rst:2
@@ -14726,6 +14740,14 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_name:9
 msgid "Name of the active tensor array."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_texture_coordinates.rst:2
+msgid "pyvista.DataSet.active\\_texture\\_coordinates"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_texture_coordinates.rst:3
+msgid "Return the active texture coordinates from the globe example."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.active_vectors.rst:2
@@ -16115,7 +16137,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array:27
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords:18
+#: pyvista.DataSetAttributes.active_t_coords:23
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.get_array:18
 #: ../../pyvista/pyvista/core/objects.pydocstring of
@@ -18199,109 +18223,125 @@ msgstr ""
 msgid "Return the arrays as a list."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_normals "
 "<pyvista.DataSetAttributes.active_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals:2
 msgid "Return the normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_normals_name "
 "<pyvista.DataSetAttributes.active_normals_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_normals_name:2
 msgid "Return the name of the normals array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_scalars "
 "<pyvista.DataSetAttributes.active_scalars>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_scalars:2
 msgid "Return the active scalars."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_scalars_name "
 "<pyvista.DataSetAttributes.active_scalars_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_scalars_name:2
 msgid "Return name of the active scalars."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_t_coords "
 "<pyvista.DataSetAttributes.active_t_coords>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords:2
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates:2
 msgid "Return the active texture coordinates array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_t_coords_name "
 "<pyvista.DataSetAttributes.active_t_coords_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_t_coords_name:2
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates_name:2
 msgid "Return the name of the active texture coordinates array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
+msgid ""
+":py:obj:`DataSetAttributes.active_texture_coordinates "
+"<pyvista.DataSetAttributes.active_texture_coordinates>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
+msgid ""
+":py:obj:`DataSetAttributes.active_texture_coordinates_name "
+"<pyvista.DataSetAttributes.active_texture_coordinates_name>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_vectors "
 "<pyvista.DataSetAttributes.active_vectors>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors:2
 msgid "Return the active vectors as a pyvista_ndarray."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.active_vectors_name "
 "<pyvista.DataSetAttributes.active_vectors_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors_name:2
 msgid "Return name of the active vectors."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 msgid ""
 ":py:obj:`DataSetAttributes.valid_array_len "
 "<pyvista.DataSetAttributes.valid_array_len>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:129:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:139:<autosummary>:1
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.valid_array_len:2
 msgid "Return the length data should be when added to the dataset."
@@ -18372,7 +18412,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_scalars_name:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords_name:18
+#: pyvista.DataSetAttributes.active_t_coords_name:23
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates_name:18
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.DataSetAttributes.active_vectors_name:18
 msgid ":obj:`Optional`\\[:class:`python:str`]"
@@ -18393,7 +18435,14 @@ msgid "pyvista.DataSetAttributes.active\\_t\\_coords"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords:9
+#: pyvista.DataSetAttributes.active_t_coords:4
+msgid "Use :func:`DataSetAttributes.active_texture_coordinates` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_t_coords:11
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates:9
 msgid "Array of the active texture coordinates."
 msgstr ""
 
@@ -18402,8 +18451,23 @@ msgid "pyvista.DataSetAttributes.active\\_t\\_coords\\_name"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
-#: pyvista.DataSetAttributes.active_t_coords_name:9
+#: pyvista.DataSetAttributes.active_t_coords_name:4
+msgid "Use :func:`DataSetAttributes.active_texture_coordinates_name` instead."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_t_coords_name:11
+#: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
+#: pyvista.DataSetAttributes.active_texture_coordinates_name:9
 msgid "Name of the active texture coordinates array."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_texture_coordinates.rst:2
+msgid "pyvista.DataSetAttributes.active\\_texture\\_coordinates"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_texture_coordinates_name.rst:2
+msgid "pyvista.DataSetAttributes.active\\_texture\\_coordinates\\_name"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.active_vectors.rst:2
@@ -18692,7 +18756,9 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
 #: pyvista.core.datasetattributes.DataSetAttributes.set_array:11
-msgid ":attr:`active_t_coords_name <DataSetAttributes.active_t_coords_name>`"
+msgid ""
+":attr:`active_texture_coordinates_name "
+"<DataSetAttributes.active_texture_coordinates_name>`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.pydocstring of
@@ -24540,25 +24606,25 @@ msgstr ""
 msgid "Show hidden cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:660:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:661:<autosummary>:1
 msgid ""
 ":py:obj:`ExplicitStructuredGrid.dimensions "
 "<pyvista.ExplicitStructuredGrid.dimensions>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:660:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:661:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.dimensions:2
 msgid "Return the topological dimensions of the grid."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:660:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:661:<autosummary>:1
 msgid ""
 ":py:obj:`ExplicitStructuredGrid.visible_bounds "
 "<pyvista.ExplicitStructuredGrid.visible_bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:660:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ExplicitStructuredGrid.rst:661:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.ExplicitStructuredGrid.visible_bounds:2
 msgid "Return the bounding box of the visible cells."
@@ -25119,65 +25185,65 @@ msgstr ""
 msgid "Create a tetrahedral mesh structured grid."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.extent <pyvista.ImageData.extent>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.extent:2
 msgid "Return or set the extent of the ImageData."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.origin <pyvista.ImageData.origin>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.origin:2
 msgid "Return the origin of the grid (bottom southwest corner)."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.points <pyvista.ImageData.points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.points:2
 msgid "Build a copy of the implicitly defined points as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.spacing <pyvista.ImageData.spacing>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.spacing:2
 msgid "Return or set the spacing for each axial direction."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.x <pyvista.ImageData.x>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.x:2
 msgid "Return all the X points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.y <pyvista.ImageData.y>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.y:2
 msgid "Return all the Y points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 msgid ":py:obj:`ImageData.z <pyvista.ImageData.z>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:700:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.ImageData.rst:701:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.ImageData.z:2
 msgid "Return all the Z points."
 msgstr ""
@@ -28623,20 +28689,20 @@ msgid ""
 "\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:648:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:649:<autosummary>:1
 msgid ":py:obj:`PointSet.area <pyvista.PointSet.area>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:648:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:649:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PointSet.area:2
 msgid "Return 0.0 since a PointSet has no area."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:648:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:649:<autosummary>:1
 msgid ":py:obj:`PointSet.volume <pyvista.PointSet.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:648:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PointSet.rst:649:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PointSet.volume:2
 msgid "Return 0.0 since a PointSet has no volume."
@@ -29037,11 +29103,11 @@ msgstr ""
 msgid "Write a surface mesh to disk."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.cell_normals <pyvista.PolyData.cell_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.cell_normals:2
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
@@ -29049,149 +29115,149 @@ msgstr ""
 msgid "Return the cell normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.face_normals <pyvista.PolyData.face_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.faces <pyvista.PolyData.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.faces:2
 msgid "Return the connectivity array of the faces of this PolyData."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ""
 ":py:obj:`PolyData.is_all_triangles <pyvista.PolyData.is_all_triangles>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_all_triangles:2
 msgid ""
 "Return if all the faces of the :class:`pyvista.PolyData` are triangles."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.is_manifold <pyvista.PolyData.is_manifold>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.is_manifold:2
 msgid "Return if the mesh is manifold (no open edges)."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.lines <pyvista.PolyData.lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.lines:2
 msgid "Return a pointer to the lines as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.n_faces <pyvista.PolyData.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.n_lines <pyvista.PolyData.n_lines>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_lines:2
 msgid "Return the number of lines."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.n_open_edges <pyvista.PolyData.n_open_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_open_edges:2
 msgid "Return the number of open edges on this mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.n_strips <pyvista.PolyData.n_strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_strips:2
 msgid "Return the number of strips."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.n_verts <pyvista.PolyData.n_verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.n_verts:2
 msgid "Return the number of vertices."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.obbTree <pyvista.PolyData.obbTree>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.obbTree:2
 msgid "Return the obbTree of the polydata."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.point_normals <pyvista.PolyData.point_normals>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.point_normals:2
 msgid "Return the point normals."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.regular_faces <pyvista.PolyData.regular_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.regular_faces:2
 msgid ""
 "Return a face array of point indices when all faces have the same size."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.strips <pyvista.PolyData.strips>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.strips:2
 msgid "Return a pointer to the strips as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.verts <pyvista.PolyData.verts>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of pyvista.PolyData.verts:2
 msgid "Get the vertex cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 msgid ":py:obj:`PolyData.volume <pyvista.PolyData.volume>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:861:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.rst:862:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:2
 msgid "Return the approximate volume of the dataset."
@@ -33800,60 +33866,60 @@ msgstr ""
 msgid "Cast this rectilinear grid to a structured grid."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ""
 ":py:obj:`RectilinearGrid.dimensions <pyvista.RectilinearGrid.dimensions>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.dimensions:2
 msgid "Return the grid's dimensions."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ":py:obj:`RectilinearGrid.meshgrid <pyvista.RectilinearGrid.meshgrid>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.meshgrid:2
 msgid "Return a meshgrid of numpy arrays for this mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ":py:obj:`RectilinearGrid.points <pyvista.RectilinearGrid.points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of
 #: pyvista.RectilinearGrid.points:2
 msgid "Return a copy of the points as an ``(n, 3)`` numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ":py:obj:`RectilinearGrid.x <pyvista.RectilinearGrid.x>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.x:2
 msgid "Return or set the coordinates along the X-direction."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ":py:obj:`RectilinearGrid.y <pyvista.RectilinearGrid.y>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.y:2
 msgid "Return or set the coordinates along the Y-direction."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 msgid ":py:obj:`RectilinearGrid.z <pyvista.RectilinearGrid.z>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:629:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.RectilinearGrid.rst:630:<autosummary>:1
 #: ../../pyvista/pyvista/core/grid.pydocstring of pyvista.RectilinearGrid.z:2
 msgid "Return or set the coordinates along the Z-direction."
 msgstr ""
@@ -34118,54 +34184,54 @@ msgstr ""
 msgid "Hide points without deleting them."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 msgid ""
 ":py:obj:`StructuredGrid.dimensions <pyvista.StructuredGrid.dimensions>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.dimensions:2
 msgid "Return a length 3 tuple of the grid's dimensions."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 msgid ""
 ":py:obj:`StructuredGrid.points_matrix "
 "<pyvista.StructuredGrid.points_matrix>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.points_matrix:2
 msgid "Points as a 4-D matrix, with x/y/z along the last dimension."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 msgid ":py:obj:`StructuredGrid.x <pyvista.StructuredGrid.x>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.x:2
 msgid "Return the X coordinates of all points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 msgid ":py:obj:`StructuredGrid.y <pyvista.StructuredGrid.y>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.y:2
 msgid "Return the Y coordinates of all points."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 msgid ":py:obj:`StructuredGrid.z <pyvista.StructuredGrid.z>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:645:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.StructuredGrid.rst:646:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.StructuredGrid.z:2
 msgid "Return the Z coordinates of all points."
@@ -35209,56 +35275,56 @@ msgstr ""
 msgid "Return a copy of the unstructured grid containing only linear cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 msgid ""
 ":py:obj:`UnstructuredGrid.cell_connectivity "
 "<pyvista.UnstructuredGrid.cell_connectivity>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cell_connectivity:2
 msgid "Return a the vtk cell connectivity as a numpy array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 msgid ":py:obj:`UnstructuredGrid.cells <pyvista.UnstructuredGrid.cells>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:2
 msgid "Return the cell data as a numpy object."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 msgid ""
 ":py:obj:`UnstructuredGrid.cells_dict "
 "<pyvista.UnstructuredGrid.cells_dict>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells_dict:2
 msgid "Return a dictionary that contains all cells mapped from cell types."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 msgid ""
 ":py:obj:`UnstructuredGrid.celltypes <pyvista.UnstructuredGrid.celltypes>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.celltypes:2
 msgid "Return the cell types array."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 msgid ":py:obj:`UnstructuredGrid.offset <pyvista.UnstructuredGrid.offset>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:669:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.UnstructuredGrid.rst:670:<autosummary>:1
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.offset:2
 msgid "Return the cell locations array."
