@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_warp-by-vector.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_warp-by-vector.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -30,10 +30,12 @@ This example applies the ``warp_by_vector`` filter to a sphere mesh that has
 
 We first compare the unwarped sphere to the warped sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-29
+.. GENERATED FROM PYTHON SOURCE LINES 13-31
 
 .. code-block:: default
 
+
+    from itertools import product
 
     import pyvista as pv
     from pyvista import examples
@@ -62,25 +64,24 @@ We first compare the unwarped sphere to the warped sphere.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-33
+.. GENERATED FROM PYTHON SOURCE LINES 32-35
 
 We then use several values for the scale factor applied to the warp
 operation. Applying a warping factor that is too high can often lead to
 unrealistic results.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-43
+.. GENERATED FROM PYTHON SOURCE LINES 35-44
 
 .. code-block:: default
 
 
     warp_factors = [0, 1.5, 3.5, 5.5]
     p = pv.Plotter(shape=(2, 2))
-    for i in range(2):
-        for j in range(2):
-            idx = 2 * i + j
-            p.subplot(i, j)
-            p.add_mesh(sphere.warp_by_vector(factor=warp_factors[idx]))
-            p.add_text(f'factor={warp_factors[idx]}')
+    for i, j in product(range(2), repeat=2):
+        idx = 2 * i + j
+        p.subplot(i, j)
+        p.add_mesh(sphere.warp_by_vector(factor=warp_factors[idx]))
+        p.add_text(f'factor={warp_factors[idx]}')
     p.show()
 
 
@@ -97,28 +98,25 @@ unrealistic results.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.026 seconds)
+   **Total running time of the script:** (0 minutes 1.561 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_warp-by-vector.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: warp-by-vector.py <warp-by-vector.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: warp-by-vector.py <warp-by-vector.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: warp-by-vector.ipynb <warp-by-vector.ipynb>`
+      :download:`Download Jupyter notebook: warp-by-vector.ipynb <warp-by-vector.ipynb>`
 
 
 .. only:: html

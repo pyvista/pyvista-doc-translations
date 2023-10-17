@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_pbr.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_pbr.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -34,10 +34,12 @@ the ``metallic`` and ``roughness`` arguments for further control.
 Let's show off this functionality by rendering a high quality mesh of
 a statue as though it were metallic.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-31
+.. GENERATED FROM PYTHON SOURCE LINES 19-33
 
 .. code-block:: default
 
+
+    from itertools import product
 
     import pyvista as pv
     from pyvista import examples
@@ -57,12 +59,12 @@ a statue as though it were metallic.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-34
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 Let's render the mesh with a base color of "linen" to give it a metal looking
 finish.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-45
+.. GENERATED FROM PYTHON SOURCE LINES 36-47
 
 .. code-block:: default
 
@@ -89,14 +91,14 @@ finish.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-50
+.. GENERATED FROM PYTHON SOURCE LINES 48-52
 
 Show the variation of the metallic and roughness parameters.
 
 Plot with metallic increasing from left to right and roughness
 increasing from bottom to top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-65
+.. GENERATED FROM PYTHON SOURCE LINES 52-66
 
 .. code-block:: default
 
@@ -106,10 +108,9 @@ increasing from bottom to top.
     p = pv.Plotter()
     p.set_environment_texture(cubemap)
 
-    for i in range(5):
-        for j in range(6):
-            sphere = pv.Sphere(radius=0.5, center=(0.0, 4 - i, j))
-            p.add_mesh(sphere, color=colors[i], pbr=True, metallic=i / 4, roughness=j / 5)
+    for i, j in product(range(5), range(6)):
+        sphere = pv.Sphere(radius=0.5, center=(0.0, 4 - i, j))
+        p.add_mesh(sphere, color=colors[i], pbr=True, metallic=i / 4, roughness=j / 5)
 
     p.view_vector((-1, 0, 0), (0, 1, 0))
     p.show()
@@ -127,11 +128,11 @@ increasing from bottom to top.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-67
+.. GENERATED FROM PYTHON SOURCE LINES 67-68
 
 Combine custom lighting and physically based rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-92
+.. GENERATED FROM PYTHON SOURCE LINES 68-93
 
 .. code-block:: default
 
@@ -175,28 +176,25 @@ Combine custom lighting and physically based rendering.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  14.614 seconds)
+   **Total running time of the script:** (1 minutes 47.940 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: pbr.py <pbr.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: pbr.py <pbr.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: pbr.ipynb <pbr.ipynb>`
+      :download:`Download Jupyter notebook: pbr.ipynb <pbr.ipynb>`
 
 
 .. only:: html

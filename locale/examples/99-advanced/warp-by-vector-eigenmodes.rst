@@ -36,10 +36,12 @@ First, let's solve the eigenvalue problem for a vibrating cube. We use
 a crude approximation (by choosing a low max polynomial order) to get a fast
 computation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-190
+.. GENERATED FROM PYTHON SOURCE LINES 20-188
 
 .. code-block:: default
 
+
+    from itertools import product
 
     import numpy as np
     from scipy.linalg import eigh
@@ -93,13 +95,10 @@ computation.
         }
 
         cijkl = np.zeros((3, 3, 3, 3))
-        for i in range(3):
-            for j in range(3):
-                for k in range(3):
-                    for l in range(3):
-                        u = coord_mapping[(i + 1, j + 1)]
-                        v = coord_mapping[(k + 1, l + 1)]
-                        cijkl[i, j, k, l] = cij[u - 1, v - 1]
+        for i, j, k, l in product(range(3), repeat=4):
+            u = coord_mapping[i + 1, j + 1]
+            v = coord_mapping[k + 1, l + 1]
+            cijkl[i, j, k, l] = cij[u - 1, v - 1]
         return cijkl, cij
 
 
@@ -129,9 +128,8 @@ computation.
         assert len(triplets) == (N + 1) * (N + 2) * (N + 3) // 6
 
         quadruplets = []
-        for i in range(3):
-            for triplet in triplets:
-                quadruplets.append((i, *triplet))
+        for i, triplet in product(range(3), triplets):
+            quadruplets.append((i, *triplet))
         assert len(quadruplets) == 3 * (N + 1) * (N + 2) * (N + 3) // 6
 
         # assembling the mass and stiffness matrix in a single loop
@@ -231,11 +229,11 @@ computation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 191-192
+.. GENERATED FROM PYTHON SOURCE LINES 189-190
 
 Now, let's display a mode on a mesh of the cube.
 
-.. GENERATED FROM PYTHON SOURCE LINES 192-232
+.. GENERATED FROM PYTHON SOURCE LINES 190-230
 
 .. code-block:: default
 
@@ -291,27 +289,26 @@ Now, let's display a mode on a mesh of the cube.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 233-234
+.. GENERATED FROM PYTHON SOURCE LINES 231-232
 
 Finally, let's make a gallery of the first 8 unique eigenmodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 234-248
+.. GENERATED FROM PYTHON SOURCE LINES 232-245
 
 .. code-block:: default
 
 
 
     pl = pv.Plotter(shape=(2, 4))
-    for i in range(2):
-        for j in range(4):
-            pl.subplot(i, j)
-            current_index = 4 * i + j
-            vector = f"eigenmode_{current_index:02}"
-            pl.add_text(
-                f"mode {current_index}, freq. {computed_freqs_kHz[current_index]:.1f} kHz",
-                font_size=10,
-            )
-            pl.add_mesh(vol.warp_by_vector(vector, factor=0.03), scalars=vector, show_scalar_bar=False)
+    for i, j in product(range(2), range(4)):
+        pl.subplot(i, j)
+        current_index = 4 * i + j
+        vector = f"eigenmode_{current_index:02}"
+        pl.add_text(
+            f"mode {current_index}, freq. {computed_freqs_kHz[current_index]:.1f} kHz",
+            font_size=10,
+        )
+        pl.add_mesh(vol.warp_by_vector(vector, factor=0.03), scalars=vector, show_scalar_bar=False)
     pl.show()
 
 
@@ -328,7 +325,7 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.597 seconds)
+   **Total running time of the script:** (0 minutes 13.838 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

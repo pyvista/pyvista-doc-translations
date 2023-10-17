@@ -52,9 +52,9 @@ Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>158400</td></tr>
     <tr><td>N Points</td><td>167580</td></tr>
     <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
@@ -66,7 +66,7 @@ Showing the :func:`pyvista.DataSetFilters.compute_derivative` filter.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
     <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
@@ -189,9 +189,9 @@ by:
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>158400</td></tr>
     <tr><td>N Points</td><td>167580</td></tr>
     <tr><td>X Bounds</td><td>1.000e+02, 1.750e+02</td></tr>
@@ -203,7 +203,7 @@ by:
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>scalars</b></td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>5.800e+02</td></tr>
     <tr><td>vectors</td><td>Points</td><td>float32</td><td>3</td><td>-2.263e+01</td><td>1.662e+01</td></tr>
@@ -224,7 +224,7 @@ by:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-76
+.. GENERATED FROM PYTHON SOURCE LINES 61-74
 
 .. code-block:: default
 
@@ -232,12 +232,10 @@ by:
     keys = np.array(list(gradients.keys())).reshape(3, 3)
 
     p = pv.Plotter(shape=keys.shape)
-    for i in range(keys.shape[0]):
-        for j in range(keys.shape[1]):
-            name = keys[i, j]
-            p.subplot(i, j)
-            p.add_mesh(mesh_g.contour(scalars=name), scalars=name, opacity=0.75)
-            p.add_mesh(mesh_g.outline(), color="k")
+    for (i, j), name in np.ndenumerate(keys):
+        p.subplot(i, j)
+        p.add_mesh(mesh_g.contour(scalars=name), scalars=name, opacity=0.75)
+        p.add_mesh(mesh_g.outline(), color="k")
     p.link_views()
     p.view_isometric()
     p.show()
@@ -255,12 +253,12 @@ by:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-79
+.. GENERATED FROM PYTHON SOURCE LINES 75-77
 
 And there you have it, the gradients for a vector field. We could also do
 this for a scalar  field like for the ``scalars`` field in the given dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-84
+.. GENERATED FROM PYTHON SOURCE LINES 77-82
 
 .. code-block:: default
 
@@ -282,7 +280,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-101
+.. GENERATED FROM PYTHON SOURCE LINES 83-98
 
 .. code-block:: default
 
@@ -293,12 +291,11 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
     p = pv.Plotter(shape=keys.shape)
 
-    for i in range(keys.shape[0]):
-        for j in range(keys.shape[1]):
-            name = keys[i, j]
-            p.subplot(i, j)
-            p.add_mesh(mesh_g.contour(scalars=name), scalars=name, opacity=0.75)
-            p.add_mesh(mesh_g.outline(), color="k")
+    for (i, j), name in np.ndenumerate(keys):
+        name = keys[i, j]
+        p.subplot(i, j)
+        p.add_mesh(mesh_g.contour(scalars=name), scalars=name, opacity=0.75)
+        p.add_mesh(mesh_g.outline(), color="k")
     p.link_views()
     p.view_isometric()
     p.show()
@@ -317,7 +314,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.198 seconds)
+   **Total running time of the script:** (0 minutes 5.892 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:
