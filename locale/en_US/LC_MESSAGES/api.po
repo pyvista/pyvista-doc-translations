@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-18 01:04+0000\n"
+"POT-Creation-Date: 2023-10-20 01:08+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (United States) (https://app.transifex.com/tkoyama010/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -1170,6 +1170,8 @@ msgstr ""
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:0
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_scalars:0
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:0
 #: ../../pyvista/pyvista/plotting/cube_axes_actor.pydocstring of
 #: pyvista.plotting.cube_axes_actor.CubeAxesActor:0
 #: ../../pyvista/pyvista/plotting/cube_axes_actor.pydocstring of
@@ -3393,7 +3395,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositeAttributes.reset_visibilities:17
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
-#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:18
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:27
 #: ../../pyvista/pyvista/plotting/cube_axes_actor.pydocstring of
 #: pyvista.plotting.cube_axes_actor.CubeAxesActor:83
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
@@ -3560,13 +3562,13 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_background_image:35
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:281
+#: pyvista.plotting.plotter.BasePlotter.add_composite:286
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_light:27
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_lines:54
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:346
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:351
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:113
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -6610,11 +6612,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.tight:16
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:142
+#: pyvista.plotting.plotter.BasePlotter.add_composite:147
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:148
+#: pyvista.plotting.plotter.BasePlotter.add_composite:153
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:220
+#: pyvista.plotting.plotter.BasePlotter.add_composite:225
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_text:55
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -7227,11 +7229,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:72
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:198
+#: pyvista.plotting.plotter.BasePlotter.add_composite:203
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:229
+#: pyvista.plotting.plotter.BasePlotter.add_composite:234
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:279
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:284
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:19
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -7981,6 +7983,8 @@ msgstr ""
 #: pyvista.core.utilities.observers.VtkErrorCatcher:7
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.surface_from_para:20
+#: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
+#: pyvista.core.utilities.parametric_objects.surface_from_para:25
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.fit_plane_to_points:13
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -8076,23 +8080,21 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:60
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:111
+#: pyvista.plotting.plotter.BasePlotter.add_composite:124
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:119
+#: pyvista.plotting.plotter.BasePlotter.add_composite:128
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:123
+#: pyvista.plotting.plotter.BasePlotter.add_composite:141
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:136
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:180
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:210
+#: pyvista.plotting.plotter.BasePlotter.add_composite:185
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:215
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:239
+#: pyvista.plotting.plotter.BasePlotter.add_composite:220
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:248
+#: pyvista.plotting.plotter.BasePlotter.add_composite:244
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:253
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_light:23
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -8100,11 +8102,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:86
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:139
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:265
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:260
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:305
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:310
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_on_render_callback:26
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -8384,11 +8384,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:56
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:145
+#: pyvista.plotting.plotter.BasePlotter.add_composite:150
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:151
+#: pyvista.plotting.plotter.BasePlotter.add_composite:156
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:158
+#: pyvista.plotting.plotter.BasePlotter.add_composite:163
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:74
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -8633,7 +8633,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.Spline:27
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
-#: pyvista.core.utilities.parametric_objects.surface_from_para:38
+#: pyvista.core.utilities.parametric_objects.surface_from_para:43
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
 #: pyvista.core.utilities.points.fit_plane_to_points:19
 #: ../../pyvista/pyvista/core/utilities/points.pydocstring of
@@ -8826,11 +8826,11 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:33
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:234
+#: pyvista.plotting.plotter.BasePlotter.add_composite:239
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:93
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:290
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:295
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:85
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -9294,7 +9294,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:99
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:257
+#: pyvista.plotting.plotter.BasePlotter.add_composite:262
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:54
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -9306,27 +9306,27 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:135
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:152
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:157
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:156
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:161
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:162
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:167
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:170
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:208
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:175
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:213
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:230
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:218
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:248
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:235
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:265
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:253
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:294
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:270
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:325
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:299
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:330
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:89
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -9947,9 +9947,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_arrows:18
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:261
+#: pyvista.plotting.plotter.BasePlotter.add_composite:266
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:329
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:334
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_scalar_labels:24
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -10112,15 +10112,15 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:104
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:195
+#: pyvista.plotting.plotter.BasePlotter.add_composite:200
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:260
+#: pyvista.plotting.plotter.BasePlotter.add_composite:265
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:131
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:245
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:250
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:328
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:333
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_scalar_labels:23
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -11833,7 +11833,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/image_data.pydocstring of
 #: pyvista.core.filters.image_data.ImageDataFilters.median_smooth:27
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:256
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:261
 msgid "**preference** : :class:`python:str`, default: \"point\""
 msgstr ""
 
@@ -11854,7 +11854,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/image_data.pydocstring of
 #: pyvista.core.filters.image_data.ImageDataFilters.median_smooth:26
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:255
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:260
 msgid "python:str, default: \"point\""
 msgstr ""
 
@@ -12347,19 +12347,19 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:69
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:176
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:181
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:179
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:184
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:182
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:187
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:185
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:190
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:193
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:198
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:270
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:275
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:276
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:281
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:22
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -16629,15 +16629,15 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:92
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:116
+#: pyvista.plotting.plotter.BasePlotter.add_composite:121
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:37
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:119
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:144
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:149
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:200
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:205
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:34
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -17775,9 +17775,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/actor.pydocstring of
 #: pyvista.plotting.actor.Actor:29
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:117
+#: pyvista.plotting.plotter.BasePlotter.add_composite:122
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:145
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:150
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:58
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -21081,7 +21081,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.ParametricTorus:11
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:226
+#: pyvista.plotting.plotter.BasePlotter.add_composite:231
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.orbit_on_path:15
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -26342,19 +26342,19 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:58
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:185
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:190
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:195
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:29
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:61
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:189
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:235
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:194
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:240
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:245
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:30
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -33609,7 +33609,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:32
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:206
+#: pyvista.plotting.plotter.BasePlotter.add_composite:211
 msgid "**preference** : :class:`python:str`, default: 'point'"
 msgstr ""
 
@@ -33618,7 +33618,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:31
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:205
+#: pyvista.plotting.plotter.BasePlotter.add_composite:210
 msgid "python:str, default: 'point'"
 msgstr ""
 
@@ -45466,7 +45466,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_arrows:32
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:266
+#: pyvista.plotting.plotter.BasePlotter.add_composite:271
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_points:32
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -46536,7 +46536,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:269
+#: pyvista.plotting.plotter.BasePlotter.add_composite:274
 msgid "Composite PolyData mapper."
 msgstr ""
 
@@ -46560,7 +46560,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper:14
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:238
+#: pyvista.plotting.plotter.BasePlotter.add_composite:243
 msgid ""
 "Color any missing values with the ``nan_color``. This is useful when not all"
 " blocks of the composite dataset have the specified ``scalars``."
@@ -46600,7 +46600,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`CompositePolyDataMapper.set_unique_colors "
-"<pyvista.CompositePolyDataMapper.set_unique_colors>`\\ \\(\\)"
+"<pyvista.CompositePolyDataMapper.set_unique_colors>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:38:<autosummary>:1
@@ -46719,9 +46719,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:32
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:233
+#: pyvista.plotting.plotter.BasePlotter.add_composite:238
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:289
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:294
 msgid ""
 "Set component of vector valued scalars to plot.  Must be nonnegative, if "
 "supplied. If ``None``, the magnitude of the vector is plotted."
@@ -46746,9 +46746,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:45
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:194
+#: pyvista.plotting.plotter.BasePlotter.add_composite:199
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:244
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:249
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:175
 msgid ""
@@ -46837,9 +46837,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:55
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:155
+#: pyvista.plotting.plotter.BasePlotter.add_composite:160
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:189
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:194
 msgid "The color to use for all ``NaN`` values in the plotted scalar array."
 msgstr ""
 
@@ -46853,9 +46853,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:59
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:189
+#: pyvista.plotting.plotter.BasePlotter.add_composite:194
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:239
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:244
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
 "automatically set the scalar bar ``above_label`` to ``'above'``."
@@ -46871,9 +46871,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:64
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:184
+#: pyvista.plotting.plotter.BasePlotter.add_composite:189
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:234
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:239
 msgid ""
 "Solid color for values below the scalars range (``clim``). This will "
 "automatically set the scalar bar ``below_label`` to ``'below'``."
@@ -46980,9 +46980,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:50
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:209
+#: pyvista.plotting.plotter.BasePlotter.add_composite:214
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:259
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:264
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:224
 msgid ""
@@ -47001,7 +47001,34 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
 #: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:4
-msgid "This uses ``matplotlib``'s color cycler."
+msgid "This uses ``matplotlib``'s color cycler by default."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:6
+msgid ""
+"When a custom color cycler, or a sequence of color-like objects, is passed "
+"it sets the blocks to the corresponding colors."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:24
+msgid ""
+"**color_cycler** : :ref:`bool <python:bltin-boolean-values>` | "
+":class:`python:str` | :obj:`cycler.Cycler` | "
+":term:`python:sequence`\\[:obj:`ColorLike`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:23
+msgid "bool | python:str | cycler.Cycler | python:sequence[ColorLike]"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/composite_mapper.pydocstring of
+#: pyvista.plotting.composite_mapper.CompositePolyDataMapper.set_unique_colors:13
+msgid ""
+"The sequence of colors to cycle through, if ``True``, uses matplotlib "
+"cycler."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.set_unique_colors.rst:3
@@ -47959,7 +47986,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:29
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:181
+#: pyvista.plotting.plotter.BasePlotter.add_composite:186
 msgid ""
 "**rgb** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
@@ -47968,9 +47995,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:24
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:176
+#: pyvista.plotting.plotter.BasePlotter.add_composite:181
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:204
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:209
 msgid ""
 "If an 2 dimensional array is passed as the scalars, plot those values as "
 "RGB(A) colors. ``rgba`` is also an accepted alias for this.  Opacity (the A)"
@@ -47982,9 +48009,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:34
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:235
+#: pyvista.plotting.plotter.BasePlotter.add_composite:240
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:291
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:296
 msgid "**component** : :class:`python:int`, :obj:`optional`"
 msgstr ""
 
@@ -48023,9 +48050,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:47
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:196
+#: pyvista.plotting.plotter.BasePlotter.add_composite:201
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:246
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:251
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:177
 msgid "**annotations** : :class:`python:dict`, :obj:`optional`"
@@ -48034,9 +48061,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:52
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:211
+#: pyvista.plotting.plotter.BasePlotter.add_composite:216
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:261
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:266
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:226
 msgid ""
@@ -48123,7 +48150,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.pydocstring of
 #: pyvista.plotting.mapper.DataSetMapper.set_scalars:97
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:212
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:217
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:122
 msgid ""
@@ -48306,7 +48333,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/lookup_table.pydocstring of
 #: pyvista.plotting.lookup_table.LookupTable:53
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:190
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:195
 msgid "**nan_color** : :obj:`ColorLike`, :obj:`optional`"
 msgstr ""
 
@@ -51997,7 +52024,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:199
+#: pyvista.plotting.plotter.BasePlotter.add_composite:204
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_actor:25
 msgid ""
@@ -52011,9 +52038,9 @@ msgid "Whether to allow this actor to be pickable within the render window."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:230
+#: pyvista.plotting.plotter.BasePlotter.add_composite:235
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:280
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:285
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:96
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -52905,7 +52932,7 @@ msgid "Opacity of mesh. Should be between 0 and 1."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:124
+#: pyvista.plotting.plotter.BasePlotter.add_composite:129
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:31
 msgid ""
@@ -52916,9 +52943,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:78
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:123
+#: pyvista.plotting.plotter.BasePlotter.add_composite:128
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:156
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:161
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.add_bounding_box:30
 msgid ""
@@ -53820,23 +53847,47 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:112
+#: pyvista.plotting.plotter.BasePlotter.add_composite:117
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:140
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:145
 msgid ""
-"**multi_colors** : :ref:`bool <python:bltin-boolean-values>`, default: "
-":data:`python:False`"
+"**multi_colors** : :ref:`bool <python:bltin-boolean-values>` | "
+":class:`python:str` | :obj:`cycler.Cycler` | "
+":term:`python:sequence`\\[:obj:`ColorLike`], default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:116
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:144
+msgid ""
+"bool | python:str | cycler.Cycler | python:sequence[ColorLike], default: "
+"python:False"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:112
-msgid "Color each block by a solid color using matplotlib's color cycler."
+msgid "Color each block by a solid color using a custom cycler."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:115
+#: pyvista.plotting.plotter.BasePlotter.add_composite:114
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:143
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:142
+msgid "If ``True``, the default 'matplotlib' color cycler is used."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:116
+msgid ""
+"See :func:`set_color_cycler<Plotter.set_color_cycler>` for usage of custom "
+"color cyclers."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:120
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:148
 msgid ""
 "The name for the added mesh/actor so that it can be easily updated.  If an "
 "actor of this name already exists in the rendering window, it will be "
@@ -53844,7 +53895,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:120
+#: pyvista.plotting.plotter.BasePlotter.add_composite:125
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:81
 msgid ""
@@ -53855,28 +53906,28 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:75
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:120
+#: pyvista.plotting.plotter.BasePlotter.add_composite:125
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:153
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:158
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:81
 msgid "Render points as spheres rather than dots."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:129
+#: pyvista.plotting.plotter.BasePlotter.add_composite:134
 msgid ""
 "**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":attr`pyvista.plotting.themes.Theme.smooth_shading`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:128
+#: pyvista.plotting.plotter.BasePlotter.add_composite:133
 msgid "bool, default: :attr`pyvista.plotting.themes.Theme.smooth_shading`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:127
+#: pyvista.plotting.plotter.BasePlotter.add_composite:132
 msgid ""
 "Enable smooth shading when ``True`` using the Phong shading algorithm.  When"
 " ``False``, uses flat shading.  Automatically enabled when ``pbr=True``.  "
@@ -53884,16 +53935,16 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:137
+#: pyvista.plotting.plotter.BasePlotter.add_composite:142
 msgid ""
 "**split_sharp_edges** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:132
+#: pyvista.plotting.plotter.BasePlotter.add_composite:137
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:166
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:171
 msgid ""
 "Split sharp edges exceeding 30 degrees when plotting with smooth shading.  "
 "Control the angle with the optional keyword argument ``feature_angle``.  By "
@@ -53903,14 +53954,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:143
+#: pyvista.plotting.plotter.BasePlotter.add_composite:148
 msgid "**ambient** : :class:`python:float`, default: 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:140
+#: pyvista.plotting.plotter.BasePlotter.add_composite:145
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:174
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:179
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:19
 msgid ""
@@ -53920,14 +53971,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:146
+#: pyvista.plotting.plotter.BasePlotter.add_composite:151
 msgid "**diffuse** : :class:`python:float`, default: 1.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:59
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:146
+#: pyvista.plotting.plotter.BasePlotter.add_composite:151
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:206
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
@@ -53936,14 +53987,14 @@ msgid "The diffuse lighting coefficient."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:149
+#: pyvista.plotting.plotter.BasePlotter.add_composite:154
 msgid "**specular** : :class:`python:float`, default: 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:62
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:149
+#: pyvista.plotting.plotter.BasePlotter.add_composite:154
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:209
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
@@ -53952,55 +54003,55 @@ msgid "The specular lighting coefficient."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:152
+#: pyvista.plotting.plotter.BasePlotter.add_composite:157
 msgid "**specular_power** : :class:`python:float`, default: 1.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:152
+#: pyvista.plotting.plotter.BasePlotter.add_composite:157
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:186
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:191
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "The specular power. Between 0.0 and 128.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:156
+#: pyvista.plotting.plotter.BasePlotter.add_composite:161
 msgid ""
 "**nan_color** : :obj:`ColorLike`, default: "
 ":attr:`pyvista.plotting.themes.Theme.nan_color`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:155
+#: pyvista.plotting.plotter.BasePlotter.add_composite:160
 msgid "ColorLike, default: pyvista.plotting.themes.Theme.nan_color"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:159
+#: pyvista.plotting.plotter.BasePlotter.add_composite:164
 msgid "**nan_opacity** : :class:`python:float`, default: 1.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:159
+#: pyvista.plotting.plotter.BasePlotter.add_composite:164
 msgid "Opacity of ``NaN`` values.  Should be between 0 and 1."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:173
+#: pyvista.plotting.plotter.BasePlotter.add_composite:178
 msgid ""
 "**culling** : :class:`python:str`, :ref:`bool <python:bltin-boolean-"
 "values>`, default: :data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:172
+#: pyvista.plotting.plotter.BasePlotter.add_composite:177
 msgid "python:str, bool, default: python:False"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:162
+#: pyvista.plotting.plotter.BasePlotter.add_composite:167
 msgid ""
 "Does not render faces that are culled. This can be helpful for dense surface"
 " meshes, especially when edges are visible, but can cause flat meshes to be "
@@ -54008,12 +54059,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:166
+#: pyvista.plotting.plotter.BasePlotter.add_composite:171
 msgid "``True`` - Enable backface culling"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:167
+#: pyvista.plotting.plotter.BasePlotter.add_composite:172
 msgid "``\"b\"`` - Enable backface culling"
 msgstr ""
 
@@ -54022,17 +54073,17 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:94
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:168
+#: pyvista.plotting.plotter.BasePlotter.add_composite:173
 msgid "``\"back\"`` - Enable backface culling"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:169
+#: pyvista.plotting.plotter.BasePlotter.add_composite:174
 msgid "``\"backface\"`` - Enable backface culling"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:170
+#: pyvista.plotting.plotter.BasePlotter.add_composite:175
 msgid "``\"f\"`` - Enable frontface culling"
 msgstr ""
 
@@ -54041,45 +54092,45 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:95
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:171
+#: pyvista.plotting.plotter.BasePlotter.add_composite:176
 msgid "``\"front\"`` - Enable frontface culling"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:172
+#: pyvista.plotting.plotter.BasePlotter.add_composite:177
 msgid "``\"frontface\"`` - Enable frontface culling"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:173
+#: pyvista.plotting.plotter.BasePlotter.add_composite:178
 msgid "``False`` - Disable both backface and frontface culling"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:186
-#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:236
-msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_composite:191
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:241
+msgid "**below_color** : :obj:`ColorLike`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_composite:196
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:246
 msgid "**above_color** : :obj:`ColorLike`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:199
+#: pyvista.plotting.plotter.BasePlotter.add_composite:204
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:249
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:254
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:78
 msgid "Set whether this actor is pickable."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:202
+#: pyvista.plotting.plotter.BasePlotter.add_composite:207
 msgid ""
 "For each block, when ``block.n_points == block.n_cells`` and setting "
 "scalars, this parameter sets how the scalars will be mapped to the mesh.  "
@@ -54088,48 +54139,48 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:216
+#: pyvista.plotting.plotter.BasePlotter.add_composite:221
 msgid ""
 "**pbr** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:214
+#: pyvista.plotting.plotter.BasePlotter.add_composite:219
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:264
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:269
 msgid ""
 "Enable physics based rendering (PBR) if the mesh is ``PolyData``.  Use the "
 "``color`` argument to set the base color."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:221
+#: pyvista.plotting.plotter.BasePlotter.add_composite:226
 msgid "**metallic** : :class:`python:float`, default: 0.0"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:36
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:219
+#: pyvista.plotting.plotter.BasePlotter.add_composite:224
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:269
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:274
 msgid ""
 "Usually this value is either 0 or 1 for a real material but any value in "
 "between is valid. This parameter is only used by PBR interpolation."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:227
+#: pyvista.plotting.plotter.BasePlotter.add_composite:232
 msgid "**roughness** : :class:`python:float`, default: 0.5"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/_property.pydocstring of
 #: pyvista.plotting._property.Property:41
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:224
+#: pyvista.plotting.plotter.BasePlotter.add_composite:229
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:274
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:279
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._LightingConfig.roughness:4
 msgid ""
@@ -54139,9 +54190,9 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:230
+#: pyvista.plotting.plotter.BasePlotter.add_composite:235
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:280
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:285
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:96
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -54150,23 +54201,23 @@ msgid "Force a render when ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:240
+#: pyvista.plotting.plotter.BasePlotter.add_composite:245
 msgid ""
 "**color_missing_with_nan** : :ref:`bool <python:bltin-boolean-values>`, "
 "default: :data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:249
+#: pyvista.plotting.plotter.BasePlotter.add_composite:254
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:306
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:311
 msgid ""
 "**copy_mesh** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:243
+#: pyvista.plotting.plotter.BasePlotter.add_composite:248
 msgid ""
 "If ``True``, a copy of the mesh will be made before adding it to the "
 "plotter.  This is useful if e.g. you would like to add the same mesh to a "
@@ -54177,18 +54228,18 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:258
+#: pyvista.plotting.plotter.BasePlotter.add_composite:263
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:326
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:331
 msgid ""
 "**show_vertices** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:252
+#: pyvista.plotting.plotter.BasePlotter.add_composite:257
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:320
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:325
 msgid ""
 "When ``style`` is not ``'points'``, render the external surface vertices. "
 "The following optional keyword arguments may be used to control the style of"
@@ -54196,42 +54247,42 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:256
+#: pyvista.plotting.plotter.BasePlotter.add_composite:261
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:324
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:329
 msgid "``vertex_color`` - The color of the vertices"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:257
+#: pyvista.plotting.plotter.BasePlotter.add_composite:262
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:325
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:330
 msgid "``vertex_style`` - Change style to ``'points_gaussian'``"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:258
+#: pyvista.plotting.plotter.BasePlotter.add_composite:263
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:326
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:331
 msgid "``vertex_opacity`` - Control the opacity of the vertices"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:261
+#: pyvista.plotting.plotter.BasePlotter.add_composite:266
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:329
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:334
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:229
 msgid "Optional keyword arguments."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:266
+#: pyvista.plotting.plotter.BasePlotter.add_composite:271
 msgid "Actor of the composite dataset."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_composite:278
+#: pyvista.plotting.plotter.BasePlotter.add_composite:283
 msgid ":obj:`pyvista.CompositePolyDataMapper`"
 msgstr ""
 
@@ -55585,51 +55636,58 @@ msgstr ""
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:139
 msgid ""
 "If a :class:`pyvista.MultiBlock` dataset is given this will color each block"
-" by a solid color using matplotlib's color cycler."
+" by a solid color using a custom cycler."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:150
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:144
+msgid ""
+"See :func:`set_color_cycler<Plotter.set_color_cycler>` for usage of custom "
+"color cycles."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:155
 msgid ""
 "**texture** : :obj:`pyvista.Texture` or :obj:`np.ndarray <numpy.ndarray>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:149
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:154
 msgid "pyvista.Texture or np.ndarray, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:148
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:153
 msgid ""
 "A texture to apply if the input mesh has texture coordinates.  This will not"
 " work with MultiBlock datasets."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:153
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:158
 msgid ""
 "**render_points_as_spheres** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:157
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:162
 msgid ""
 "**render_lines_as_tubes** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:163
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:168
 msgid ""
 "**smooth_shading** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:160
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:165
 msgid ""
 "Enable smooth shading when ``True`` using the Phong shading algorithm.  When"
 " ``False``, use flat shading. Automatically enabled when ``pbr=True``.  See "
@@ -55637,14 +55695,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:171
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:176
 msgid ""
 "**split_sharp_edges** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:177
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:182
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:119
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
@@ -55653,55 +55711,55 @@ msgid "**ambient** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:180
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:185
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:25
 msgid "**diffuse** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:180
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:185
 msgid "The diffuse lighting coefficient. Default 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:183
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:188
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:28
 msgid "**specular** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:183
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:188
 msgid "The specular lighting coefficient. Default 0.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:186
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:191
 #: ../../pyvista/pyvista/plotting/volume_property.pydocstring of
 #: pyvista.plotting.volume_property.VolumeProperty:31
 msgid "**specular_power** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:194
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:199
 msgid "**nan_opacity** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:193
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:198
 msgid "Opacity of ``NaN`` values.  Should be between 0 and 1. Default 1.0."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:201
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:206
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:129
 msgid "**culling** : :class:`python:str`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:197
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:202
 msgid ""
 "Does not render faces that are culled. Options are ``'front'`` or "
 "``'back'``. This can be helpful for dense surface meshes, especially when "
@@ -55710,12 +55768,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:209
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:214
 msgid "**rgb** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:214
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:219
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:123
 msgid ""
@@ -55723,19 +55781,19 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:227
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:232
 msgid ""
 "**silhouette** : :class:`python:dict`, :ref:`bool <python:bltin-boolean-"
 "values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:226
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:231
 msgid "python:dict, bool, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:217
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:222
 msgid ""
 "If set to ``True``, plot a silhouette highlight for the mesh. This feature "
 "is only available for a triangulated ``PolyData``.  As a ``dict``, it "
@@ -55743,47 +55801,47 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:222
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:227
 msgid "``color``: ``ColorLike``, color of the silhouette"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:223
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:228
 msgid "``line_width``: ``float``, edge width"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:224
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:229
 msgid "``opacity``: ``float`` between 0 and 1, edge transparency"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:225
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:230
 msgid ""
 "``feature_angle``: If a ``float``, display sharp edges exceeding that angle "
 "in degrees."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:227
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:232
 msgid "``decimate``: ``float`` between 0 and 1, level of decimation"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:231
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:236
 msgid ""
 "**use_transparency** : :ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:230
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:235
 msgid ""
 "Invert the opacity mappings and make the values correspond to transparency."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:249
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:254
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:180
 msgid ""
@@ -55791,7 +55849,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:252
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:257
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:183
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
@@ -55804,22 +55862,22 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:266
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:271
 msgid "**pbr** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:271
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:276
 msgid "**metallic** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:277
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:282
 msgid "**roughness** : :class:`python:float`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:286
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:291
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:221
 msgid ""
@@ -55828,14 +55886,14 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:285
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:290
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:220
 msgid "np.ndarray | vtk.vtkMatrix4x4, default: np.eye(4)"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:283
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:288
 msgid ""
 "Matrix passed to the Actor class before rendering. This affects the "
 "actor/rendering only, not the input volume itself. The user matrix is the "
@@ -55844,20 +55902,20 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:295
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:300
 msgid ""
 "**emissive** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:294
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:299
 msgid ""
 "Treat the points/splats as emissive light sources. Only valid for "
 "``style='points_gaussian'`` representation."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:298
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:303
 msgid ""
 "If ``True``, a copy of the mesh will be made before adding it to the "
 "plotter.  This is useful if you would like to add the same mesh to a plotter"
@@ -55870,19 +55928,19 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:317
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:322
 msgid ""
 "**backface_params** : :class:`python:dict` | :obj:`pyvista.Property`, "
 ":obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:316
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:321
 msgid "python:dict | pyvista.Property, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:309
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:314
 msgid ""
 "A :class:`pyvista.Property` or a dict of parameters to use for backface "
 "rendering. This is useful for instance when the inside of oriented surfaces "
@@ -55894,12 +55952,12 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:343
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:348
 msgid ":obj:`pyvista.plotting.actor.Actor`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_mesh:334
+#: pyvista.plotting.plotter.BasePlotter.add_mesh:339
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_points:23
 msgid "Actor of the mesh."
@@ -90960,6 +91018,21 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
 #: pyvista.core.utilities.parametric_objects.surface_from_para:26
+msgid ""
+"**texture_coordinates** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
+#: pyvista.core.utilities.parametric_objects.surface_from_para:24
+msgid ""
+"The generation of texture coordinates. This is off by default. Note that "
+"this is only applicable to parametric surfaces whose parametric dimension is"
+" 2. Note that texturing may fail in some cases."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/parametric_objects.pydocstring of
+#: pyvista.core.utilities.parametric_objects.surface_from_para:31
 msgid "Surface from the parametric function."
 msgstr ""
 
