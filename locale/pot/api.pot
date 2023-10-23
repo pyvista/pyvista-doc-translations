@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-20 01:08+0000\n"
+"POT-Creation-Date: 2023-10-23 01:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -748,6 +748,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_color_cycler:0
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:0
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty.set_font_file:0
@@ -1949,6 +1952,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_color_cycler:38
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:143
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:27
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:31
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:29
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:50
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.Texture.dimensions:17
@@ -2132,6 +2136,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CameraPosition.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:12
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CubeAxesActor.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.DataSetMapper.rst:12
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.LookupTable.rst:12
@@ -2344,6 +2349,7 @@ msgstr ""
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CameraPosition.rst:28
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositeAttributes.rst:49
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CompositePolyDataMapper.rst:40
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:34
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CubeAxesActor.rst:29
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.DataSetMapper.rst:45
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.LookupTable.rst:59
@@ -3370,6 +3376,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.show_grid:0
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_chart_interaction:0
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.linear_font_scale_factor:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.prop:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.input:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.position:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:0
@@ -3385,6 +3393,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.opacity:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.orientation:0
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.show_frame:0
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:0
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.copy:0
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.flip_x:0
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.flip_y:0
@@ -7032,6 +7041,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:59
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:67
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:75
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:27
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:19
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:7
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_orientation_box:10
@@ -7704,6 +7714,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.add_title:9
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_key_event:9
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor.clear_events_for_key:7
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:11
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:23
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty.set_font_file:20
 #: ../../pyvista/pyvista/plotting/themes.py:docstring of pyvista.plotting.themes.Theme.save:18
 #: ../../pyvista/pyvista/plotting/themes.py:docstring of pyvista.plotting.themes.set_plot_theme:18
@@ -7899,9 +7911,9 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.strip_hex_prefix:25
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.export_vtksz:31
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.input:23
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:21
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_horizontal:22
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.justification_vertical:22
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:25
 msgid ":class:`python:str`"
 msgstr ""
 
@@ -8790,6 +8802,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/reader.py:docstring of pyvista.core.utilities.reader.TimeReader.time_point_value:25
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor.get_desired_update_rate:21
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.Renderer.length:21
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.linear_font_scale_factor:21
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_opacity:22
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.opacity:22
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.orientation:21
@@ -16682,7 +16695,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.show_bounds:66
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_background:14
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:39
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:14
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_box_widget:32
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_line_widget:28
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_measurement_widget:20
@@ -16740,7 +16752,6 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_background:33
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:38
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:106
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:13
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_marker:7
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_marker:10
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_marker:13
@@ -30504,7 +30515,7 @@ msgstr ""
 msgid "pyvista.Actor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/actor.py:docstring of pyvista.plotting.actor.Actor:2
 msgid "Wrap vtkActor."
 msgstr ""
@@ -30761,7 +30772,7 @@ msgstr ""
 msgid "pyvista.Axes"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/axes.py:docstring of pyvista.plotting.axes.Axes:2
 msgid "PyVista wrapper for the VTK Axes class."
 msgstr ""
@@ -30880,7 +30891,7 @@ msgstr ""
 msgid "pyvista.AxesActor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/axes_actor.py:docstring of pyvista.plotting.axes_actor.AxesActor:2
 msgid "Axes actor wrapper for vtkAxesActor."
 msgstr ""
@@ -31195,7 +31206,7 @@ msgstr ""
 msgid "pyvista.BlockAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.BlockAttributes:2
 msgid "Block attributes used to set the attributes of a block."
 msgstr ""
@@ -31338,7 +31349,7 @@ msgstr ""
 msgid "pyvista.CameraPosition"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.CameraPosition:2
 msgid "Container to hold camera location attributes."
 msgstr ""
@@ -31422,7 +31433,7 @@ msgstr ""
 msgid "pyvista.CompositeAttributes"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositeAttributes:2
 msgid "Block attributes."
 msgstr ""
@@ -31554,7 +31565,7 @@ msgstr ""
 msgid "pyvista.CompositePolyDataMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/composite_mapper.py:docstring of pyvista.plotting.composite_mapper.CompositePolyDataMapper:2
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_composite:274
 msgid "Composite PolyData mapper."
@@ -31881,11 +31892,145 @@ msgstr ""
 msgid "Set each block of the composite dataset to a unique color."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:2
+msgid "pyvista.CornerAnnotation"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:2
+msgid "Text annotation in four corners."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:4
+msgid "This is an annotation object that manages four text actors / mappers to provide annotation in the four corners of a viewport."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:9
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:8
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:8
+msgid "**position** : :class:`python:str` | :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:8
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:7
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:7
+msgid "python:str | bool"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:9
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:8
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:8
+msgid "Position of the text."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_text:8
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:12
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:24
+msgid "**text** : :class:`python:str`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:12
+msgid "Text input."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:15
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:26
+msgid "**prop** : :obj:`pyvista.TextProperty`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:14
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:25
+msgid "pyvista.TextProperty, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:15
+msgid "Text property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:28
+msgid "**linear_font_scale_factor** : :class:`python:float`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:18
+msgid "Linear font scale factor."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:3
+msgid "Create text annotation in four corners."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:32:<autosummary>:1
+msgid ":py:obj:`CornerAnnotation.get_text <pyvista.CornerAnnotation.get_text>`\\ \\(position\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:32:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:2
+msgid "Get the text to be displayed for each corner."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:32:<autosummary>:1
+msgid ":py:obj:`CornerAnnotation.set_text <pyvista.CornerAnnotation.set_text>`\\ \\(position\\, text\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:32:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:2
+msgid "Set the text to be displayed for each corner."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:203:<autosummary>:1
+msgid ":py:obj:`CornerAnnotation.linear_font_scale_factor <pyvista.CornerAnnotation.linear_font_scale_factor>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:203:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.linear_font_scale_factor:2
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.linear_font_scale_factor:9
+msgid "Font scaling factors."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:203:<autosummary>:1
+msgid ":py:obj:`CornerAnnotation.prop <pyvista.CornerAnnotation.prop>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.rst:203:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Text.rst:198:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.prop:2
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.prop:9
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:2
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:9
+msgid "Property of this actor."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.get_text.rst:2
+msgid "pyvista.CornerAnnotation.get\\_text"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.get_text:13
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation.set_text:11
+msgid "Text to be displayed for each corner."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.linear_font_scale_factor.rst:2
+msgid "pyvista.CornerAnnotation.linear\\_font\\_scale\\_factor"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.prop.rst:2
+msgid "pyvista.CornerAnnotation.prop"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.CornerAnnotation.prop:21
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:21
+msgid ":obj:`pyvista.TextProperty`"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CornerAnnotation.set_text.rst:2
+msgid "pyvista.CornerAnnotation.set\\_text"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.CubeAxesActor.rst:2
 msgid "pyvista.CubeAxesActor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/cube_axes_actor.py:docstring of pyvista.plotting.cube_axes_actor.CubeAxesActor:2
 msgid "Wrap vtkCubeAxesActor."
 msgstr ""
@@ -32483,7 +32628,7 @@ msgstr ""
 msgid "pyvista.DataSetMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper.DataSetMapper:2
 msgid "Wrap _vtk.vtkDataSetMapper."
 msgstr ""
@@ -32694,6 +32839,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper.DataSetMapper.set_scalars:55
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper.DataSetMapper.set_scalars:60
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper.DataSetMapper.set_scalars:65
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:13
 msgid "pyvista.ColorLike, optional"
 msgstr ""
 
@@ -32752,7 +32898,7 @@ msgstr ""
 msgid "pyvista.LookupTable"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/lookup_table.py:docstring of pyvista.plotting.lookup_table.LookupTable:2
 msgid "Scalar to RGBA mapping table."
 msgstr ""
@@ -33494,7 +33640,7 @@ msgstr ""
 msgid "pyvista.Plotter"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter:2
 msgid "Plotting object to display vtk meshes or numpy arrays."
 msgstr ""
@@ -39904,10 +40050,6 @@ msgid "pyvista.Plotter.add\\_text"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_text:8
-msgid "**text** : :class:`python:str`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_text:8
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.add_title:10
 msgid "The text to add the rendering."
 msgstr ""
@@ -44026,7 +44168,7 @@ msgstr ""
 msgid "pyvista.Property"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/_property.py:docstring of pyvista.plotting._property.Property:2
 msgid "Wrap vtkProperty and expose it pythonically."
 msgstr ""
@@ -44962,7 +45104,7 @@ msgstr ""
 msgid "pyvista.RenderWindowInteractor"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor:2
 msgid "Wrap vtk.vtkRenderWindowInteractor."
 msgstr ""
@@ -45705,7 +45847,7 @@ msgstr ""
 msgid "pyvista.Renderer"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer:2
 msgid "Renderer class."
 msgstr ""
@@ -46734,7 +46876,7 @@ msgstr ""
 msgid "pyvista.Text"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:2
 msgid "Define text by default theme."
 msgstr ""
@@ -46754,14 +46896,6 @@ msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:13
 msgid "The position coordinate."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:26
-msgid "**prop** : :obj:`TextProperty`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:25
-msgid "TextProperty, optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:16
@@ -46795,12 +46929,6 @@ msgstr ""
 msgid ":py:obj:`Text.prop <pyvista.Text.prop>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Text.rst:198:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:2
-#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.Text.prop:9
-msgid "Property of this actor."
-msgstr ""
-
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.Text.input.rst:2
 msgid "pyvista.Text.input"
 msgstr ""
@@ -46821,9 +46949,13 @@ msgstr ""
 msgid "pyvista.TextProperty"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:2
 msgid "Define text's property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:14
+msgid "**color** : :obj:`pyvista.ColorLike`, :obj:`optional`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.TextProperty:17
@@ -47023,12 +47155,10 @@ msgstr ""
 msgid "pyvista.TextProperty.background\\_color"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.linear_to_srgb:21
-#: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.srgb_to_linear:21
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.background_color:21
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.color:21
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.TextProperty.frame_color:21
-msgid ":obj:`Color`"
+msgid ":obj:`pyvista.Color`"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.background_opacity.rst:2
@@ -47116,7 +47246,7 @@ msgstr ""
 msgid "pyvista.Timer"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.Timer:2
 msgid "Timer class."
 msgstr ""
@@ -47356,7 +47486,7 @@ msgstr ""
 msgid "pyvista.plotting.mapper.\\_BaseMapper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper._BaseMapper:2
 msgid "Base Mapper with methods common to other mappers."
 msgstr ""
@@ -47559,7 +47689,7 @@ msgstr ""
 msgid "pyvista.plotting.opts.ElementType"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/opts.py:docstring of pyvista.plotting.opts.ElementType:2
 msgid "Types of elemental geometries."
 msgstr ""
@@ -47584,7 +47714,7 @@ msgstr ""
 msgid "pyvista.plotting.opts.InterpolationType"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/opts.py:docstring of pyvista.plotting.opts.InterpolationType:2
 msgid "Lighting interpolation types."
 msgstr ""
@@ -47629,7 +47759,7 @@ msgstr ""
 msgid "pyvista.plotting.opts.RepresentationType"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/opts.py:docstring of pyvista.plotting.opts.RepresentationType:2
 msgid "Types of representations the models can have."
 msgstr ""
@@ -47638,7 +47768,7 @@ msgstr ""
 msgid "pyvista.plotting.picking.PickingHelper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:102:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:103:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/picking.py:docstring of pyvista.plotting.picking.PickingHelper:2
 msgid "Internal container class to contain picking helper methods."
 msgstr ""
@@ -49747,7 +49877,7 @@ msgstr ""
 msgid "pyvista.plotting.volume.Volume"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/volume.py:docstring of pyvista.plotting.volume.Volume:2
 msgid "Wrapper class for VTK volume."
 msgstr ""
@@ -49789,7 +49919,7 @@ msgstr ""
 msgid "pyvista.plotting.volume\\_property.VolumeProperty"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/volume_property.py:docstring of pyvista.plotting.volume_property.VolumeProperty:2
 msgid "Wrap the VTK class vtkVolumeProperty."
 msgstr ""
@@ -50022,7 +50152,7 @@ msgstr ""
 msgid "pyvista.plotting.widgets.AffineWidget3D"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:90:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:91:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/affine_widget.py:docstring of pyvista.plotting.affine_widget.AffineWidget3D:2
 msgid "3D affine transform widget."
 msgstr ""
@@ -50128,7 +50258,7 @@ msgstr ""
 msgid "pyvista.plotting.widgets.WidgetHelper"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:90:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:91:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper:2
 msgid "An internal class to manage widgets."
 msgstr ""
@@ -55457,7 +55587,7 @@ msgid "Charts"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/charts/index.rst:5
-#: ../../pyvista/doc/source/api/plotting/index.rst:66
+#: ../../pyvista/doc/source/api/plotting/index.rst:67
 msgid "Charts API reference. These dedicated classes can be used to embed charts in plotting windows. Note that full charts functionality requires a VTK version of at least 9.3. Most components work fine in older versions though."
 msgstr ""
 
@@ -55534,12 +55664,12 @@ msgid ":py:obj:`PiePlot <pyvista.plotting.charts.PiePlot>`\\ \\(chart\\, data\\[
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/conv_func.rst:2
-#: ../../pyvista/doc/source/api/plotting/index.rst:104
+#: ../../pyvista/doc/source/api/plotting/index.rst:105
 msgid "Convenience Functions"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/conv_func.rst:3
-#: ../../pyvista/doc/source/api/plotting/index.rst:105
+#: ../../pyvista/doc/source/api/plotting/index.rst:106
 msgid "These functions provide a simplified interface to the various plotting routines in PyVista."
 msgstr ""
 
@@ -55584,135 +55714,139 @@ msgstr ""
 msgid "Plotting module API reference. These plotting modules are the basis for all plotting functionality in PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Actor <pyvista.Actor>`\\ \\(\\[mapper\\, prop\\, name\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Axes <pyvista.Axes>`\\ \\(\\[show\\_actor\\, actor\\_scale\\, line\\_width\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`AxesActor <pyvista.AxesActor>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`CameraPosition <pyvista.CameraPosition>`\\ \\(position\\, focal\\_point\\, viewup\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
+msgid ":py:obj:`CornerAnnotation <pyvista.CornerAnnotation>`\\ \\(position\\, text\\[\\, prop\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`CubeAxesActor <pyvista.CubeAxesActor>`\\ \\(camera\\[\\, minor\\_ticks\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`DataSetMapper <pyvista.DataSetMapper>`\\ \\(\\[dataset\\, theme\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`LookupTable <pyvista.LookupTable>`\\ \\(\\[cmap\\, n\\_values\\, flip\\, values\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Plotter <pyvista.Plotter>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Property <pyvista.Property>`\\ \\(\\[theme\\, interpolation\\, color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Renderer <pyvista.Renderer>`\\ \\(parent\\[\\, border\\, border\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`RenderWindowInteractor <pyvista.RenderWindowInteractor>`\\ \\(plotter\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Text <pyvista.Text>`\\ \\(\\[text\\, position\\, prop\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`TextProperty <pyvista.TextProperty>`\\ \\(\\[theme\\, color\\, font\\_family\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`Timer <pyvista.Timer>`\\ \\(max\\_steps\\, callback\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.mapper._BaseMapper <pyvista.plotting.mapper._BaseMapper>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.opts.InterpolationType <pyvista.plotting.opts.InterpolationType>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.opts.RepresentationType <pyvista.plotting.opts.RepresentationType>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.opts.ElementType <pyvista.plotting.opts.ElementType>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.volume.Volume <pyvista.plotting.volume.Volume>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:51:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:52:<autosummary>:1
 msgid ":py:obj:`plotting.volume_property.VolumeProperty <pyvista.plotting.volume_property.VolumeProperty>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:53
+#: ../../pyvista/doc/source/api/plotting/index.rst:54
 msgid "Composite Plotting Reference"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:54
+#: ../../pyvista/doc/source/api/plotting/index.rst:55
 msgid "These classes are used when plotting :class:`pyvista.MultiBlock` datasets."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 msgid ":py:obj:`CompositePolyDataMapper <pyvista.CompositePolyDataMapper>`\\ \\(\\[dataset\\, theme\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 msgid ":py:obj:`CompositeAttributes <pyvista.CompositeAttributes>`\\ \\(mapper\\, dataset\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:63:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:64:<autosummary>:1
 msgid ":py:obj:`BlockAttributes <pyvista.BlockAttributes>`\\ \\(block\\, attr\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:65
+#: ../../pyvista/doc/source/api/plotting/index.rst:66
 msgid "Charts API"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:78
+#: ../../pyvista/doc/source/api/plotting/index.rst:79
 msgid "Widget API"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:79
+#: ../../pyvista/doc/source/api/plotting/index.rst:80
 msgid "The :class:`pyvista.Plotter` class inherits all of the widget methods described by the :class:`pyvista.plotting.widgets.WidgetHelper` class. For additional details, see the :ref:`widgets` examples."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:90:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:91:<autosummary>:1
 msgid ":py:obj:`plotting.widgets.WidgetHelper <pyvista.plotting.widgets.WidgetHelper>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:90:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:91:<autosummary>:1
 msgid ":py:obj:`plotting.widgets.AffineWidget3D <pyvista.plotting.widgets.AffineWidget3D>`\\ \\(plotter\\, actor\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:92
+#: ../../pyvista/doc/source/api/plotting/index.rst:93
 msgid "Picking API"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:93
+#: ../../pyvista/doc/source/api/plotting/index.rst:94
 msgid "The :class:`pyvista.Plotter` class inherits all of the picking methods described by the :class:`pyvista.plotting.picking.PickingHelper` class."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/index.rst:102:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/index.rst:103:<autosummary>:1
 msgid ":py:obj:`plotting.picking.PickingHelper <pyvista.plotting.picking.PickingHelper>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
@@ -62321,6 +62455,11 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.Color.linear_to_srgb.rst:2
 msgid "pyvista.Color.linear\\_to\\_srgb"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.linear_to_srgb:21
+#: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.srgb_to_linear:21
+msgid ":obj:`Color`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color.linear_to_srgb:9
