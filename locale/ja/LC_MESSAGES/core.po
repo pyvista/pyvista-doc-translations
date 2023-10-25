@@ -3454,7 +3454,7 @@ msgstr ""
 msgid ""
 "Threshold the dataset by a percentage of its range on the active scalars "
 "array or as specified."
-msgstr "データセットを，アクティブなスカラー配列上の範囲のパーセンテージで，または指定に従ってしきい値に設定します．"
+msgstr "データセットを，アクティブなスカラー配列上の範囲のパーセンテージで，または指定に従って閾値に設定します．"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -4220,7 +4220,7 @@ msgstr "有効なデータ範囲全体で計算する等値面の数，または
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold_percent:6
 msgid "Name of scalars to threshold on. Defaults to currently active scalars."
-msgstr "しきい値に対するスカラーの名前．デフォルトは現在アクティブなスカラーです．"
+msgstr "閾値に対するスカラーの名前．デフォルトは現在アクティブなスカラーです．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.contour:13
@@ -5789,7 +5789,7 @@ msgid ""
 "sequence, then length must be 2. If no value is specified, the non-NaN data "
 "range will be used to remove any NaN values."
 msgstr ""
-"データしきい値に使用する単一の値または(最小，最大)．シーケンスの場合，長さは2にする必要があります．値を指定しない場合，NaN以外のデータ範囲を使用してNaN値が削除されます．"
+"データ閾値に使用する単一の値または(最小，最大)．シーケンスの場合，長さは2にする必要があります．値を指定しない場合，NaN以外のデータ範囲を使用してNaN値が削除されます．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:14
@@ -5800,8 +5800,8 @@ msgid ""
 "yielding above the threshold \"value\"."
 msgstr ""
 "値が単一の値の場合，invertがTrueのとき，セルの値がパラメータ \"value\" "
-"を下回っているときにセルが保持されます．invertがFalseのとき，セルの値がしきい値 \"value\" "
-"を上回っているときにセルが保持されます．デフォルトはFalseです:しきい値 \"value\" を上回ってセルが生成されます．"
+"を下回っているときにセルが保持されます．invertがFalseのとき，セルの値が閾値 \"value\" "
+"を上回っているときにセルが保持されます．デフォルトはFalseです:閾値 \"value\" を上回ってセルが生成されます．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:19
@@ -5811,8 +5811,7 @@ msgid ""
 "When True, the continuous interval [minimum cell scalar, maximum cell "
 "scalar] will be used to intersect the threshold bound, rather than the set "
 "of discrete scalar values from the vertices."
-msgstr ""
-"Trueの場合，頂点からの離散スカラー値のセットではなく，連続間隔[最小セルスカラー，最大セルスカラー]がしきい値境界との交差に使用されます．"
+msgstr "Trueの場合，頂点からの離散スカラー値のセットではなく，連続間隔[最小セルスカラー，最大セルスカラー]が閾値境界との交差に使用されます．"
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.threshold:26
@@ -7960,7 +7959,7 @@ msgid ""
 "are subdivided to meet this threshold. Note that if this criterion is used "
 "it may produce non-watertight meshes as a result."
 msgstr ""
-"3角形の最大面積です．この値よりも大きい3角形は，このしきい値を満たすように分割されます．この基準を使用すると，結果として非水密メッシュが生成される場合があることに注意してください．"
+"3角形の最大面積です．この値よりも大きい3角形は，この閾値を満たすように分割されます．この基準を使用すると，結果として非水密メッシュが生成される場合があることに注意してください．"
 
 #: ../../pyvista/pyvista/core/filters/poly_data.pydocstring of
 #: pyvista.core.filters.poly_data.PolyDataFilters.subdivide_adaptive:28
