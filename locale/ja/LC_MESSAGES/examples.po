@@ -4727,7 +4727,7 @@ msgid ""
 "given mesh, but many folks leverage the ``clip_surface`` filter to "
 "triangulate/tessellate the mesh geometries along the clip."
 msgstr ""
-"最初に，暗黙的な距離を計算してメッシュを閾値設定することにより，クリッピングを実行する方法を説明します．このしきい値設定は，サーフェスでクリップし，指定されたメッシュの元のジオメトリを保持する1つの方法ですが，多くのユーザは"
+"最初に，暗黙的な距離を計算してメッシュを閾値設定することにより，クリッピングを実行する方法を説明します．この閾値設定は，サーフェスでクリップし，指定されたメッシュの元のジオメトリを保持する1つの方法ですが，多くのユーザは"
 " ``clip_surface`` フィルタを利用して，クリップに沿ってメッシュジオメトリを3角形化/面分割します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/clipping-with-surface.rst:84
@@ -5020,7 +5020,7 @@ msgstr ""
 "その代わりに，上記のようなデータセットで，接続されているすべてのボディ/ボリュームを分割したいとしたらどうでしょうか． "
 ":func:`pyvista.DataSetFilters.split_bodies` "
 "フィルタを使用して，データセット内のすべての異なる接続ボリュームを :class:`pyvista.MultiBlock` "
-"データセット内のブロックに抽出することができます．たとえば，上記の例で，しきい値設定されたボリュームを分割します．"
+"データセット内のブロックに抽出することができます．たとえば，上記の例で，閾値設定されたボリュームを分割します．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:375
 msgid "A Real Dataset"
@@ -5032,7 +5032,7 @@ msgid ""
 "This will threshold the channels from the dataset then separate each "
 "significantly large body and compute the volumes for each."
 msgstr ""
-"これは，地下の河道の現実的なトレーニングデータセットです．これにより，データセットのチャネルがしきい値に設定され，非常に大きなボディのそれぞれが分離され，それぞれのボリュームが計算されます．"
+"これは，地下の河道の現実的なトレーニングデータセットです．これにより，データセットのチャネルが閾値に設定され，非常に大きなボディのそれぞれが分離され，それぞれのボリュームが計算されます．"
 
 #: ../../pyvista/doc/source/examples/01-filter/compute-volume.rst:381
 msgid "Load up the data and threshold the channels:"
@@ -8708,7 +8708,7 @@ msgstr ""
 msgid ""
 "Change the threshold to reduce or increase the percent of the terrain that "
 "is open or closed"
-msgstr "しきい値を変更して，開いている地形または閉じている地形の割合を増減します"
+msgstr "閾値を変更して，開いている地形または閉じている地形の割合を増減します"
 
 #: ../../pyvista/doc/source/examples/01-filter/sampling_functions_3d.rst:71
 msgid ""
@@ -9861,7 +9861,7 @@ msgid ""
 "or using ``shift+tab`` in an IPython environment."
 msgstr ""
 "これで，新しい ``threshed`` "
-"オブジェクトに入力データセットのしきい値が設定されたバージョンがあります．フィルタの実行方法を変更するためにどのようなキーワード引数を使用できるかを調べるには，"
+"オブジェクトに入力データセットの閾値が設定されたバージョンがあります．フィルタの実行方法を変更するためにどのようなキーワード引数を使用できるかを調べるには，"
 " ``help(dataset.threshold)`` またはIPython環境で ``shift+tab`` "
 "を使用してPyVistaオブジェクトに付加されたフィルタのdocstringを出力します．"
 
@@ -11672,7 +11672,7 @@ msgstr "印刷時に非表示にする特定のセルを指定します．"
 msgid ""
 "This is a lightweight alternative to thresholding to quickly hide cells in a"
 " mesh without creating a new mesh."
-msgstr "これは，新しいメッシュを作成せずにメッシュ内のセルをすばやく非表示にするための，しきい値の代わりとなる軽量のオプションです．"
+msgstr "これは，新しいメッシュを作成せずにメッシュ内のセルをすばやく非表示にするための，閾値の代わりとなる軽量のオプションです．"
 
 #: ../../pyvista/doc/source/examples/02-plot/ghost-cells.rst:29
 msgid ""
@@ -17460,7 +17460,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/examples/03-widgets/slider-bar-widget.rst:78
 msgid "After interacting with the scene, the threshold mesh is available as:"
-msgstr "シーンを操作すると，しきい値メッシュは次のように使用できます．"
+msgstr "シーンを操作すると，閾値メッシュは次のように使用できます．"
 
 #: ../../pyvista/doc/source/examples/03-widgets/slider-bar-widget.rst:117
 msgid "Custom Callback"
