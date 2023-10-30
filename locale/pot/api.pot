@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-29 01:08+0000\n"
+"POT-Creation-Date: 2023-10-30 01:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -255,8 +255,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:0
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.point_array:0
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.vtkmatrix_from_array:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:0
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.perlin_noise:0
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_texture:0
@@ -1108,8 +1115,11 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid:31
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:31
 #: ../../pyvista/pyvista/core/pyvista_ndarray.py:docstring of pyvista.core.pyvista_ndarray.pyvista_ndarray:28
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:33
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:42
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.perlin_noise:55
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:78
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:40
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:48
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:50
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_texture:30
@@ -2919,8 +2929,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:0
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.point_array:0
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.vtkmatrix_from_array:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:0
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.perlin_noise:0
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:0
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_texture:0
@@ -3527,6 +3544,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.ExplicitStructuredGrid.save:22
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:42
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.save:49
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:34
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.Circle:26
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.CylinderStructured:44
 #: ../../pyvista/pyvista/core/utilities/reader.py:docstring of pyvista.CGNSReader.load_boundary_patch:15
@@ -3801,6 +3819,9 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PointSet:38
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.save:15
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.save:45
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:15
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:19
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:18
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:12
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:18
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:25
@@ -4393,6 +4414,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.linear_copy:14
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.convert_array:13
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:18
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:22
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:29
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:48
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:60
@@ -5120,6 +5142,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/rectilinear_grid.py:docstring of pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:49
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.py:docstring of pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.subdivide_tetra:18
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.linear_copy:33
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:31
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.Pyramid:26
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.SolidSphere:88
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.SolidSphereGeneric:65
@@ -6084,6 +6107,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.tube:37
 #: ../../pyvista/pyvista/core/filters/rectilinear_grid.py:docstring of pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:35
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.py:docstring of pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.clean:44
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:23
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:61
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:31
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_texture:13
@@ -6198,6 +6222,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.tube:37
 #: ../../pyvista/pyvista/core/filters/rectilinear_grid.py:docstring of pyvista.core.filters.rectilinear_grid.RectilinearGridFilters.to_tetrahedra:35
 #: ../../pyvista/pyvista/core/filters/unstructured_grid.py:docstring of pyvista.core.filters.unstructured_grid.UnstructuredGridFilters.clean:44
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:23
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:61
 msgid "Display a progress bar to indicate progress."
 msgstr ""
@@ -6278,6 +6303,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.transform:54
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.warp_by_scalar:42
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.merge:72
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:39
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:45
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:47
 #: ../../pyvista/pyvista/core/utilities/helpers.py:docstring of pyvista.core.utilities.helpers.wrap:33
@@ -6574,6 +6600,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.clip_box:30
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.merge:22
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.tessellate:18
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:16
 msgid "**merge_points** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
 msgstr ""
 
@@ -6956,6 +6983,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.merge:34
 #: ../../pyvista/pyvista/core/pyvista_ndarray.py:docstring of pyvista.core.pyvista_ndarray.pyvista_ndarray:11
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:7
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:7
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.save_meshio:10
 msgid "pyvista.DataSet"
 msgstr ""
@@ -9412,6 +9440,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:17
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:20
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.vtkmatrix_from_array:9
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:7
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:10
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:13
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:8
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:11
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:14
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:17
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:20
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:23
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.fit_plane_to_points:9
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.line_segments_from_points:12
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.lines_from_points:9
@@ -11459,6 +11496,7 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.get_array:0
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.UnstructuredGrid.cast_to_explicit_structured_grid:0
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:0
 #: ../../pyvista/pyvista/core/utilities/reader.py:docstring of pyvista.POpenFOAMReader.case_type:0
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor.get_event_subplot_loc:0
 msgid "Raises"
@@ -11584,6 +11622,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_array:16
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_scalars:15
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:15
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:12
 msgid "python:float | numpy:array_like[python:float]"
 msgstr ""
 
@@ -12399,6 +12438,14 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.multi_ray_trace:50
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ray_trace:27
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.ray_trace:40
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:7
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:12
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:16
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:29
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:7
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:11
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:15
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:40
 #: ../../pyvista/pyvista/core/utilities/helpers.py:docstring of pyvista.core.utilities.helpers.axis_rotation:7
 #: ../../pyvista/pyvista/core/utilities/parametric_objects.py:docstring of pyvista.core.utilities.parametric_objects.Spline:8
 #: ../../pyvista/pyvista/plotting/mapper.py:docstring of pyvista.plotting.mapper.DataSetMapper.set_custom_opacity:8
@@ -13888,6 +13935,7 @@ msgid "Updates grid inplace when True if the input type is an :class:`pyvista.Un
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.merge:35
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:20
 msgid "**main_has_priority** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
 msgstr ""
 
@@ -14414,6 +14462,7 @@ msgid "By default, points inside the surface are marked inside or sent to the ou
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.py:docstring of pyvista.core.filters.data_set.DataSetFilters.select_enclosed_points:39
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:19
 msgid "**check_surface** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:True`"
 msgstr ""
 
@@ -16001,6 +16050,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.ImageData.cast_to_structured_grid:21
 #: ../../pyvista/pyvista/core/grid.py:docstring of pyvista.core.grid.RectilinearGrid.cast_to_structured_grid:21
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.StructuredGrid.hide_cells:28
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:31
 #: ../../pyvista/pyvista/core/utilities/geometric_objects.py:docstring of pyvista.core.utilities.geometric_objects.CylinderStructured:41
 #: ../../pyvista/pyvista/examples/examples.py:docstring of pyvista.examples.examples.load_structured:18
 msgid ":obj:`pyvista.StructuredGrid`"
@@ -20978,6 +21028,7 @@ msgid "**merge_points** : :ref:`bool <python:bltin-boolean-values>`, :obj:`optio
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.merge:38
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:16
 msgid "Merge equivalent points when ``True``."
 msgstr ""
 
@@ -20990,6 +21041,7 @@ msgid "**main_has_priority** : :ref:`bool <python:bltin-boolean-values>`, :obj:`
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/poly_data.py:docstring of pyvista.core.filters.poly_data.PolyDataFilters.merge:51
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:19
 msgid "When this parameter is ``True`` and ``merge_points=True``, the arrays of the merging grids will be overwritten by the original main mesh."
 msgstr ""
 
@@ -23711,6 +23763,7 @@ msgid "pyvista.core.utilities.features.perlin\\_noise"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/misc.rst:10:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.perlin_noise:2
 msgid "Return the implicit function that implements Perlin noise."
 msgstr ""
@@ -23768,10 +23821,12 @@ msgid "Instance of ``vtk.vtkPerlinNoise`` to a Perlin noise field as an implicit
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.features.perlin_noise.rst:3
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.perlin_noise.rst:3
 msgid "Create a Perlin noise function with an amplitude of 0.1, frequency for all axes of 1, and a phase of 0 for all axes."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.features.perlin_noise.rst:9
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.perlin_noise.rst:9
 msgid "Sample Perlin noise over a structured grid and plot it."
 msgstr ""
 
@@ -23780,6 +23835,7 @@ msgid "pyvista.core.utilities.features.sample\\_function"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/misc.rst:10:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.sample_function:2
 msgid "Sample an implicit function over a structured point set."
 msgstr ""
@@ -23942,14 +23998,17 @@ msgid "Uniform grid with sampled data."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.features.sample_function.rst:3
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.sample_function.rst:3
 msgid "Sample Perlin noise over a structured grid in 3D."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.features.sample_function.rst:28
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.sample_function.rst:28
 msgid "Sample Perlin noise in 2D and plot it."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.core.utilities.features.sample_function.rst:48
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.sample_function.rst:48
 msgid "See :ref:`perlin_noise_2d_example` for a full example using this function."
 msgstr ""
 
@@ -24321,7 +24380,7 @@ msgstr ""
 msgid "Wrap a VTK Dataset"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/helpers.py:docstring of pyvista.core.utilities.helpers.wrap:2
 msgid "Wrap any given VTK data object to its appropriate PyVista data object."
 msgstr ""
@@ -24422,7 +24481,7 @@ msgstr ""
 msgid "Lines from Points"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.lines_from_points:2
 msgid "Make a connected line set given an array of points."
 msgstr ""
@@ -24468,7 +24527,7 @@ msgstr ""
 msgid "Convert to and from VTK Data Types"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.convert_array:2
 msgid "Convert a NumPy array to a vtkDataArray or vice versa."
 msgstr ""
@@ -24513,7 +24572,7 @@ msgstr ""
 msgid "Fit Plane to Points"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.fit_plane_to_points:2
 msgid "Fit a plane to a set of points using the SVD algorithm."
 msgstr ""
@@ -24655,7 +24714,7 @@ msgid ":py:obj:`Light <pyvista.Light>`\\ \\(\\[position\\, focal\\_point\\, colo
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/misc.rst:2
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:74
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:89
 msgid "Miscellaneous"
 msgstr ""
 
@@ -59260,7 +59319,7 @@ msgstr ""
 msgid "pyvista.CellType"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 #: ../../pyvista/pyvista/core/celltype.py:docstring of pyvista.core.celltype.CellType:2
 msgid "Define types of cells."
 msgstr ""
@@ -59367,7 +59426,7 @@ msgstr ""
 msgid "pyvista.Color"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:94:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/colors.py:docstring of pyvista.plotting.colors.Color:2
 msgid "Helper class to convert between different color representations used in the pyvista library."
 msgstr ""
@@ -62924,7 +62983,7 @@ msgstr ""
 msgid "pyvista.Color.vtk\\_c3ub"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:85:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:100:<autosummary>:1
 #: ../docstring of pyvista.ColorLike:2
 msgid "Any object convertible to a :class:`Color`."
 msgstr ""
@@ -64810,7 +64869,7 @@ msgstr ""
 msgid "pyvista.Report"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:91:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:106:<autosummary>:1
 #: ../../pyvista/pyvista/report.py:docstring of pyvista.report.Report:2
 msgid "Generate a PyVista software environment report."
 msgstr ""
@@ -65541,7 +65600,7 @@ msgstr ""
 msgid "pyvista.array\\_from\\_vtkmatrix"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.array_from_vtkmatrix:2
 msgid "Convert a vtk matrix to an array."
 msgstr ""
@@ -65562,11 +65621,59 @@ msgstr ""
 msgid "Numpy array containing the data from ``matrix``."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.cartesian_to_spherical.rst:2
+msgid "pyvista.cartesian\\_to\\_spherical"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:2
+msgid "Convert 3D Cartesian coordinates to spherical coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:8
+msgid "**x, y, z** : :obj:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:8
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:21
+msgid "Cartesian coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:13
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:8
+msgid "**r** : :obj:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:13
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:8
+msgid "Radial distance."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:17
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:12
+msgid "**phi** : :obj:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:16
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:11
+msgid "Angle (radians) with respect to the polar axis. Also known as polar angle."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:30
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:16
+msgid "**theta** : :obj:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.cartesian_to_spherical:20
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:15
+msgid "Angle (radians) of rotation from the initial meridian plane. Also known as azimuthal angle."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.cell_array.rst:2
 msgid "pyvista.cell\\_array"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.cell_array:2
 msgid "Return cell array of a pyvista or vtk object."
 msgstr ""
@@ -65616,7 +65723,7 @@ msgstr ""
 msgid "pyvista.compare\\_images"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:72:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:87:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/utilities/regression.py:docstring of pyvista.plotting.utilities.regression.compare_images:2
 msgid "Compare two different images of the same size."
 msgstr ""
@@ -65803,11 +65910,64 @@ msgstr ""
 msgid "VTK output window."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.create_grid.rst:2
+msgid "pyvista.create\\_grid"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:2
+msgid "Create a uniform grid surrounding the given dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:4
+msgid "The output grid will have the specified dimensions and is commonly used for interpolating the input dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:10
+msgid "**dataset** : :obj:`DataSet`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:9
+msgid "DataSet"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:10
+msgid "Input dataset used as a reference for the grid creation."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:14
+msgid "**dimensions** : :class:`python:tuple` :obj:`of` :class:`python:int`, default: (101, 101, 101)"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:13
+msgid "python:tuple of python:int, default: (101, 101, 101)"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:13
+msgid "The dimensions of the grid to be created. Each value in the tuple represents the number of grid points along the corresponding axis."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:23
+msgid ":obj:`ImageData`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:19
+msgid "A uniform grid with the specified dimensions that surrounds the input dataset."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:38
+msgid ":obj:`NotImplementedError`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.create_grid:28
+msgid "If the dimensions parameter is set to None. Currently, the function does not support automatically determining the \"optimal\" grid size based on the sparsity of the points in the input dataset."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.cubemap.rst:2
 msgid "pyvista.cubemap"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/utilities/cubemap.py:docstring of pyvista.plotting.utilities.cubemap.cubemap:2
 msgid "Construct a cubemap from 6 images from a directory."
 msgstr ""
@@ -65917,7 +66077,7 @@ msgstr ""
 msgid "pyvista.cubemap\\_from\\_filenames"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/utilities/cubemap.py:docstring of pyvista.plotting.utilities.cubemap.cubemap_from_filenames:2
 msgid "Construct a cubemap from 6 images."
 msgstr ""
@@ -65970,7 +66130,7 @@ msgstr ""
 msgid "pyvista.field\\_array"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.field_array:2
 msgid "Return field data of a pyvista or vtk object."
 msgstr ""
@@ -65983,12 +66143,13 @@ msgstr ""
 msgid "pyvista.get\\_array"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:2
 msgid "Search point, cell and field data for an array."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.get_array:8
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:8
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.save_meshio:11
 msgid "**mesh** : :obj:`pyvista.DataSet`"
 msgstr ""
@@ -66013,11 +66174,51 @@ msgstr ""
 msgid "Requested array.  Return ``None`` if there is no array matching the ``name`` and ``err=False``."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.grid_from_sph_coords.rst:2
+msgid "pyvista.grid\\_from\\_sph\\_coords"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:2
+msgid "Create a structured grid from arrays of spherical coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:8
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:9
+msgid "**theta** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:8
+msgid "Azimuthal angle in degrees ``[0, 360]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:11
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:12
+msgid "**phi** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:11
+msgid "Polar (zenith) angle in degrees ``[0, 180]``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:14
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:15
+msgid "**r** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:14
+msgid "Distance (radius) from the point of origin."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.grid_from_sph_coords:19
+msgid "Structured grid."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.image_to_texture.rst:2
 msgid "pyvista.image\\_to\\_texture"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.image_to_texture:2
 msgid "Convert :class:`pyvista.ImageData` to a :class:`pyvista.Texture`."
 msgstr ""
@@ -66042,7 +66243,7 @@ msgstr ""
 msgid "pyvista.is\\_pyvista\\_dataset"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/helpers.py:docstring of pyvista.core.utilities.helpers.is_pyvista_dataset:2
 msgid "Return ``True`` if the object is a PyVista wrapped dataset."
 msgstr ""
@@ -66067,11 +66268,44 @@ msgstr ""
 msgid "pyvista.lines\\_from\\_points"
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.merge.rst:2
+msgid "pyvista.merge"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:2
+msgid "Merge several datasets."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:5
+msgid "The behavior of this filter varies from the :func:`PolyDataFilters.boolean_union` filter. This filter does not attempt to create a manifold mesh and will include internal surfaces when two meshes overlap."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:13
+msgid "**datasets** : :term:`python:sequence`\\[:class:`pyvista.Dataset`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:12
+msgid "python:sequence[pyvista.Dataset]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:13
+msgid "Sequence of datasets. Can be of any :class:`pyvista.Dataset`."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.merge:28
+msgid ":class:`pyvista.PolyData` if all items in datasets are :class:`pyvista.PolyData`, otherwise returns a :class:`pyvista.UnstructuredGrid`."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.merge.rst:3
+msgid "Merge two polydata datasets."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.numpy_to_texture.rst:2
 msgid "pyvista.numpy\\_to\\_texture"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.numpy_to_texture:2
 msgid "Convert a NumPy image array to a :class:`pyvista.Texture`."
 msgstr ""
@@ -66182,11 +66416,15 @@ msgstr ""
 msgid "Determines the ordering of the vertices forming the triangle strips."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.perlin_noise.rst:2
+msgid "pyvista.perlin\\_noise"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.point_array.rst:2
 msgid "pyvista.point\\_array"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.point_array:2
 msgid "Return point array of a pyvista or vtk object."
 msgstr ""
@@ -66203,7 +66441,7 @@ msgstr ""
 msgid "pyvista.pyvista\\_ndarray"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/core/pyvista_ndarray.py:docstring of pyvista.core.pyvista_ndarray.pyvista_ndarray:2
 msgid "A ndarray which references the owning dataset and the underlying vtkArray."
 msgstr ""
@@ -66240,7 +66478,7 @@ msgstr ""
 msgid "pyvista.read"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read:2
 msgid "Read any file type supported by ``vtk`` or ``meshio``."
 msgstr ""
@@ -66299,7 +66537,7 @@ msgstr ""
 msgid "pyvista.read\\_exodus"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_exodus:2
 msgid "Read an ExodusII file (``'.e'`` or ``'.exo'``)."
 msgstr ""
@@ -66364,7 +66602,7 @@ msgstr ""
 msgid "pyvista.read\\_texture"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.read_texture:2
 msgid "Load a texture from an image file."
 msgstr ""
@@ -66389,11 +66627,15 @@ msgstr ""
 msgid "Read in an example jpg map file as a texture."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.sample_function.rst:2
+msgid "pyvista.sample\\_function"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.save_meshio.rst:2
 msgid "pyvista.save\\_meshio"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/fileio.py:docstring of pyvista.core.utilities.fileio.save_meshio:2
 msgid "Save mesh to file using meshio."
 msgstr ""
@@ -66418,11 +66660,24 @@ msgstr ""
 msgid "Save a pyvista sphere to a Abaqus data file."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.spherical_to_cartesian.rst:2
+msgid "pyvista.spherical\\_to\\_cartesian"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:2
+msgid "Convert Spherical coordinates to 3D Cartesian coordinates."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.spherical_to_cartesian:33
+msgid ":obj:`numpy.ndarray`, :obj:`numpy.ndarray`, :obj:`numpy.ndarray`"
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.start_xvfb.rst:2
 msgid "pyvista.start\\_xvfb"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:85:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:100:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/utilities/xvfb.py:docstring of pyvista.plotting.utilities.xvfb.start_xvfb:2
 msgid "Start the virtual framebuffer Xvfb."
 msgstr ""
@@ -66496,11 +66751,68 @@ msgstr ""
 msgid "Surface from the parametric function."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.transform_vectors_sph_to_cart.rst:2
+msgid "pyvista.transform\\_vectors\\_sph\\_to\\_cart"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:2
+msgid "Transform vectors from spherical (r, phi, theta) to cartesian coordinates (z, y, x)."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:4
+msgid "Note the \"reverse\" order of arrays's axes, commonly used in geosciences."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:9
+msgid "Azimuthal angle in degrees ``[0, 360]`` of shape ``(M,)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:12
+msgid "Polar (zenith) angle in degrees ``[0, 180]`` of shape ``(N,)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:15
+msgid "Distance (radius) from the point of origin of shape ``(P,)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:18
+msgid "**u** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:18
+msgid "X-component of the vector of shape ``(P, N, M)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:21
+msgid "**v** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:21
+msgid "Y-component of the vector of shape ``(P, N, M)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:24
+msgid "**w** : :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:24
+msgid "Z-component of the vector of shape ``(P, N, M)``."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:41
+msgid "**u_t, v_t, w_t** : :class:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.transform_vectors_sph_to_cart:29
+msgid "Arrays of transformed x-, y-, z-components, respectively."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.vector_poly_data.rst:2
 msgid "pyvista.vector\\_poly\\_data"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.vector_poly_data:2
 msgid "Create a pyvista.PolyData object composed of vectors."
 msgstr ""
@@ -66533,11 +66845,52 @@ msgstr ""
 msgid "Convert these to arrows and plot it."
 msgstr ""
 
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.voxelize.rst:2
+msgid "pyvista.voxelize"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:2
+msgid "Voxelize mesh to UnstructuredGrid."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:8
+msgid "Mesh to voxelize."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:13
+msgid "**density** : :class:`python:float` | :term:`numpy:array_like`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:11
+msgid "The uniform size of the voxels when single float passed. A list of densities along x,y,z directions. Defaults to 1/100th of the mesh length."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:16
+msgid "Specify whether to check the surface for closure. If on, then the algorithm first checks to see if the surface is closed and manifold. If the surface is not closed and manifold, a runtime error is raised."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:24
+msgid "Voxelized unstructured grid of the original mesh."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/utilities/features.py:docstring of pyvista.core.utilities.features.voxelize:35
+msgid "Prior to version 0.39.0, this method improperly handled the order of structured coordinates."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.voxelize.rst:3
+msgid "Create an equal density voxelized mesh."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.voxelize.rst:25
+msgid "Create a voxelized mesh using unequal density dimensions."
+msgstr ""
+
 #: ../../pyvista/doc/source/api/utilities/_autosummary/pyvista.vtk_points.rst:2
 msgid "pyvista.vtk\\_points"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.vtk_points:2
 msgid "Convert numpy array or array-like to a ``vtkPoints`` object."
 msgstr ""
@@ -66570,7 +66923,7 @@ msgstr ""
 msgid "pyvista.vtkmatrix\\_from\\_array"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 #: ../../pyvista/pyvista/core/utilities/arrays.py:docstring of pyvista.core.utilities.arrays.vtkmatrix_from_array:2
 msgid "Convert a ``numpy.ndarray`` or array-like to a vtk matrix."
 msgstr ""
@@ -66923,138 +67276,178 @@ msgstr ""
 msgid "Object Conversions or Wrapping"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`array_from_vtkmatrix <pyvista.array_from_vtkmatrix>`\\ \\(matrix\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`cubemap <pyvista.cubemap>`\\ \\(\\[path\\, prefix\\, ext\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`cubemap_from_filenames <pyvista.cubemap_from_filenames>`\\ \\(image\\_paths\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`image_to_texture <pyvista.image_to_texture>`\\ \\(image\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`is_pyvista_dataset <pyvista.is_pyvista_dataset>`\\ \\(obj\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`numpy_to_texture <pyvista.numpy_to_texture>`\\ \\(image\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`pyvista_ndarray <pyvista.pyvista_ndarray>`\\ \\(array\\[\\, dataset\\, association\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`vtkmatrix_from_array <pyvista.vtkmatrix_from_array>`\\ \\(array\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:29:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:28:<autosummary>:1
 msgid ":py:obj:`wrap <pyvista.wrap>`\\ \\(dataset\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:31
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:30
+msgid "Features"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`cartesian_to_spherical <pyvista.cartesian_to_spherical>`\\ \\(x\\, y\\, z\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`create_grid <pyvista.create_grid>`\\ \\(dataset\\[\\, dimensions\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`grid_from_sph_coords <pyvista.grid_from_sph_coords>`\\ \\(theta\\, phi\\, r\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`merge <pyvista.merge>`\\ \\(datasets\\[\\, merge\\_points\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`perlin_noise <pyvista.perlin_noise>`\\ \\(amplitude\\, freq\\, phase\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`sample_function <pyvista.sample_function>`\\ \\(function\\[\\, bounds\\, dim\\, ...\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`spherical_to_cartesian <pyvista.spherical_to_cartesian>`\\ \\(r\\, phi\\, theta\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`transform_vectors_sph_to_cart <pyvista.transform_vectors_sph_to_cart>`\\ \\(theta\\, phi\\, r\\, ...\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:44:<autosummary>:1
+msgid ":py:obj:`voxelize <pyvista.voxelize>`\\ \\(mesh\\[\\, density\\, check\\_surface\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:46
 msgid "File IO"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 msgid ":py:obj:`read <pyvista.read>`\\ \\(filename\\[\\, force\\_ext\\, file\\_format\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 msgid ":py:obj:`read_exodus <pyvista.read_exodus>`\\ \\(filename\\[\\, animate\\_mode\\_shapes\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 msgid ":py:obj:`read_texture <pyvista.read_texture>`\\ \\(filename\\[\\, progress\\_bar\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:40:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:55:<autosummary>:1
 msgid ":py:obj:`save_meshio <pyvista.save_meshio>`\\ \\(filename\\, mesh\\[\\, file\\_format\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:42
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:57
 msgid "Mesh Creation"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 msgid ":py:obj:`CellType <pyvista.CellType>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 msgid ":py:obj:`fit_plane_to_points <pyvista.fit_plane_to_points>`\\ \\(points\\[\\, return\\_meta\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 msgid ":py:obj:`lines_from_points <pyvista.lines_from_points>`\\ \\(points\\[\\, close\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 msgid ":py:obj:`vector_poly_data <pyvista.vector_poly_data>`\\ \\(orig\\, vec\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:52:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:67:<autosummary>:1
 msgid ":py:obj:`vtk_points <pyvista.vtk_points>`\\ \\(points\\[\\, deep\\, force\\_float\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:54
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:69
 msgid "Array Access"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 msgid ":py:obj:`cell_array <pyvista.cell_array>`\\ \\(obj\\, name\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 msgid ":py:obj:`convert_array <pyvista.convert_array>`\\ \\(arr\\[\\, name\\, deep\\, array\\_type\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 msgid ":py:obj:`field_array <pyvista.field_array>`\\ \\(obj\\, name\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 msgid ":py:obj:`get_array <pyvista.get_array>`\\ \\(mesh\\, name\\[\\, preference\\, err\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:64:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
 msgid ":py:obj:`point_array <pyvista.point_array>`\\ \\(obj\\, name\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:66
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:81
 msgid "Image Comparison and Regression"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:72:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:87:<autosummary>:1
 msgid ":py:obj:`compare_images <pyvista.compare_images>`\\ \\(im1\\, im2\\[\\, threshold\\, use\\_vtk\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:79:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:94:<autosummary>:1
 msgid ":py:obj:`Color <pyvista.Color>`\\ \\(\\[color\\, opacity\\, default\\_color\\, ...\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:85:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:100:<autosummary>:1
 msgid ":py:obj:`ColorLike <pyvista.ColorLike>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:85:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:100:<autosummary>:1
 msgid ":py:obj:`start_xvfb <pyvista.start_xvfb>`\\ \\(\\[wait\\, window\\_size\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:91:<autosummary>:1
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:106:<autosummary>:1
 msgid ":py:obj:`Report <pyvista.Report>`\\ \\(\\[additional\\, ncol\\, text\\_width\\, sort\\, gpu\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:93
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:108
 msgid "VTK Version Information"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/utilities/utilities.rst:94
+#: ../../pyvista/doc/source/api/utilities/utilities.rst:109
 msgid "The PyVista library is heavily dependent on VTK and provides an easy way of getting the version of VTK in your environment."
 msgstr ""
