@@ -25,13 +25,13 @@ Create a GIF Movie of a Static Object with a Moving Colormap
 Generate a gif movie of a Hopf torus with a moving colormap,
 by updating the scalars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-76
+.. GENERATED FROM PYTHON SOURCE LINES 10-78
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_moving_cmap_001.png
+.. image-sg:: /examples/02-plot/images/sphx_glr_moving_cmap_001.gif
    :alt: moving cmap
-   :srcset: /examples/02-plot/images/sphx_glr_moving_cmap_001.png
+   :srcset: /examples/02-plot/images/sphx_glr_moving_cmap_001.gif
    :class: sphx-glr-single-img
 
 
@@ -87,13 +87,15 @@ by updating the scalars.
     dists = np.linalg.norm(mesh.points, axis=1)
     dists = 2 * np.pi * (dists - dists.min()) / (dists.max() - dists.min())
 
+    mesh["distances"] = np.sin(dists)
+
     # Make the movie
     pltr = pv.Plotter(window_size=[512, 512])
     pltr.set_focus([0, 0, 0])
     pltr.set_position([40, 0, 0])
     pltr.add_mesh(
         mesh,
-        scalars=np.sin(dists),
+        scalars="distances",
         smooth_shading=True,
         specular=1,
         cmap="nipy_spectral",
@@ -102,7 +104,7 @@ by updating the scalars.
     pltr.open_gif("Hopf_torus.gif")
 
     for t in np.linspace(0, 2 * np.pi, 60, endpoint=False):
-        pltr.update_scalars(np.sin(dists - t), render=False)
+        mesh["distances"] = np.sin(dists - t)
         pltr.write_frame()
 
     pltr.show()
@@ -110,7 +112,7 @@ by updating the scalars.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.912 seconds)
+   **Total running time of the script:** (0 minutes 14.780 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_moving_cmap.py:

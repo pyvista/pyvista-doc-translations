@@ -51,7 +51,7 @@ Create a structured grid
 Create a structured grid and make a "wave" my shifting the Z position based
 on the cartesian distance from the origin.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-36
+.. GENERATED FROM PYTHON SOURCE LINES 24-37
 
 .. code-block:: default
 
@@ -64,6 +64,7 @@ on the cartesian distance from the origin.
 
     # Create and structured surface
     grid = pv.StructuredGrid(x, y, z)
+    grid["Height"] = z.ravel()
     grid.plot()
 
 
@@ -79,13 +80,13 @@ on the cartesian distance from the origin.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-40
+.. GENERATED FROM PYTHON SOURCE LINES 38-41
 
 Generate a GIF
 ~~~~~~~~~~~~~~
 Generate a GIF using ``off_screen=True`` parameter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-70
+.. GENERATED FROM PYTHON SOURCE LINES 41-67
 
 .. code-block:: default
 
@@ -94,26 +95,22 @@ Generate a GIF using ``off_screen=True`` parameter.
     plotter = pv.Plotter(notebook=False, off_screen=True)
     plotter.add_mesh(
         grid,
-        scalars=z.ravel(),
+        scalars="Height",
         lighting=False,
         show_edges=True,
-        scalar_bar_args={"title": "Height"},
         clim=[-1, 1],
     )
 
     # Open a gif
     plotter.open_gif("wave.gif")
 
-    pts = grid.points.copy()
-
     # Update Z and write a frame for each updated position
     nframe = 15
     for phase in np.linspace(0, 2 * np.pi, nframe + 1)[:nframe]:
         z = np.sin(r + phase)
-        pts[:, -1] = z.ravel()
-        plotter.update_coordinates(pts, render=False)
-        plotter.update_scalars(z.ravel(), render=False)
-
+        # Update values inplace
+        grid.points[:, -1] = z.ravel()
+        grid["Height"] = z.ravel()
         # Write a frame. This triggers a render.
         plotter.write_frame()
 
@@ -134,7 +131,7 @@ Generate a GIF using ``off_screen=True`` parameter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.269 seconds)
+   **Total running time of the script:** (0 minutes 3.789 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

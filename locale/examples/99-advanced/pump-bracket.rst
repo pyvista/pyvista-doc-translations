@@ -81,8 +81,8 @@ dataset used in this example contains 10 mode shapes (disp_0 to disp_9).
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>124806</td></tr>
     <tr><td>N Points</td><td>250487</td></tr>
@@ -93,7 +93,7 @@ dataset used in this example contains 10 mode shapes (disp_0 to disp_9).
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>disp_0</b></td><td>Points</td><td>float32</td><td>3</td><td>-5.702e-02</td><td>1.000e+00</td></tr>
     <tr><td>disp_1</td><td>Points</td><td>float32</td><td>3</td><td>-9.769e-01</td><td>1.000e+00</td></tr>
@@ -221,17 +221,17 @@ to vary the displacement.
     n_frames = 16
     pl.open_gif("pump_bracket_mode_shape.gif")
     for phase in np.linspace(0, 2 * np.pi, n_frames, endpoint=False):
-        # use the original unmodified points
-        pl.update_coordinates(dataset.points + ds[mode_shape] * np.cos(phase) * 0.05)
+        # use the original unmodified points, modify copy inplace
+        ds.points = dataset.points + ds[mode_shape] * np.cos(phase) * 0.05
         pl.write_frame()
 
     pl.close()
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_003.png
+.. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_003.gif
    :alt: pump bracket
-   :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_003.png
+   :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_003.gif
    :class: sphx-glr-single-img
 
 
@@ -241,7 +241,7 @@ to vary the displacement.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  14.319 seconds)
+   **Total running time of the script:** (0 minutes 24.198 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_pump-bracket.py:

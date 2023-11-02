@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-30 01:14+0000\n"
+"POT-Creation-Date: 2023-11-02 01:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4059,8 +4059,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.save_graphic:37
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.screenshot:15
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update:24
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:27
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:27
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:38
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:38
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor:17
 #: ../../pyvista/pyvista/plotting/render_window_interactor.py:docstring of pyvista.plotting.render_window_interactor.RenderWindowInteractor.create_timer:13
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_actor:24
@@ -7672,7 +7672,7 @@ msgid "**array** : :term:`python:sequence`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataobject.py:docstring of pyvista.core.dataobject.DataObject.add_field_data:10
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:7
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:18
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.set_position:7
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_mesh_isovalue:57
 msgid "python:sequence"
@@ -10512,7 +10512,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_arrows:7
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_arrows:10
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_lines:9
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:7
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:18
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:103
 msgid "np.ndarray"
 msgstr ""
@@ -24453,7 +24453,7 @@ msgid "Construct a mesh from an Nx3 array of points and an Mx3 array of triangle
 msgstr ""
 
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.make_tri_mesh:13
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:8
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:19
 msgid "**points** : :obj:`np.ndarray <numpy.ndarray>`"
 msgstr ""
 
@@ -24976,15 +24976,15 @@ msgstr ""
 msgid "You can also render the beam as a wire-frame object:"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/pointsets.rst:435
+#: ../../pyvista/doc/source/api/core/pointsets.rst:433
 msgid "Adding Labels to a Plot"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/pointsets.rst:436
+#: ../../pyvista/doc/source/api/core/pointsets.rst:434
 msgid "Labels can be added to a plot using :func:`add_point_labels() <pyvista.Plotter.add_point_labels>` within the :class:`Plotter <pyvista.Plotter>`. The following example loads the included example beam, generates a plotting class, and sub-selects points along the y-z plane and labels their coordinates. :func:`add_point_labels() <pyvista.Plotter.add_point_labels>` requires that the number of labels matches the number of points, and that labels is a list containing one entry per point. The code automatically converts each item in the list to a string."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/pointsets.rst:476
+#: ../../pyvista/doc/source/api/core/pointsets.rst:474
 msgid "This example is similar and shows how labels can be combined with a scalar bar to show the exact value of certain points."
 msgstr ""
 
@@ -36070,8 +36070,8 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_point_labels:96
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_text:63
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_volume:215
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:28
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:28
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:39
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:39
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_actor:29
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.add_legend_scale:49
 #: ../../pyvista/pyvista/plotting/renderer.py:docstring of pyvista.plotting.renderer.Renderer.remove_bounding_box:18
@@ -39971,8 +39971,8 @@ msgid "**render** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`p
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.add_volume:215
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:15
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:15
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:26
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:26
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:117
 msgid "Force a render when True."
 msgstr ""
@@ -44176,21 +44176,25 @@ msgstr ""
 msgid "pyvista.Plotter.update\\_coordinates"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:8
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:4
+msgid "This method is deprecated and will be removed in a future version of PyVista. It is functionally equivalent to directly modifying the points of a mesh in-place."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:19
 msgid "Points to replace existing points."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:12
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:12
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:23
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:23
 msgid "**mesh** : :obj:`vtk.PolyData` | :obj:`vtk.UnstructuredGrid`, :obj:`optional`"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:11
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:11
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:22
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:22
 msgid "vtk.PolyData | vtk.UnstructuredGrid, optional"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:11
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_coordinates:22
 msgid "Object that has already been added to the Plotter.  If ``None``, uses last added mesh."
 msgstr ""
 
@@ -44214,15 +44218,19 @@ msgstr ""
 msgid "pyvista.Plotter.update\\_scalars"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:8
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:4
+msgid "This method is deprecated and will be removed in a future version of PyVista. It is functionally equivalent to directly modifying the scalars of a mesh in-place."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:19
 msgid "**scalars** : :term:`python:sequence`"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:8
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:19
 msgid "Scalars to replace existing scalars."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:11
+#: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.update_scalars:22
 msgid "Object that has already been added to the Plotter.  If None, uses last added mesh."
 msgstr ""
 

@@ -256,25 +256,27 @@ Create a GIF Movie with updating textures
 +++++++++++++++++++++++++++++++++++++++++
 Generate a moving gif from an active plotter with updating textures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-148
+.. GENERATED FROM PYTHON SOURCE LINES 112-147
 
 .. code-block:: default
 
 
+    mesh = curvsurf.extract_surface()
+
     # Create a plotter object
     plotter = pv.Plotter(notebook=False, off_screen=True)
 
+    actor = plotter.add_mesh(mesh, smooth_shading=True, color="white")
+
     # Open a gif
     plotter.open_gif("texture.gif")
-
-    pts = curvsurf.points.copy()
 
     # Update Z and write a frame for each updated position
     nframe = 15
     for phase in np.linspace(0, 2 * np.pi, nframe + 1)[:nframe]:
         # create an image using numpy,
         z = np.sin(r + phase)
-        pts[:, -1] = z.ravel()
+        mesh.points[:, -1] = z.ravel()
 
         # Creating a custom RGB image
         zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
@@ -283,13 +285,10 @@ Generate a moving gif from an active plotter with updating textures.
         image = colors.reshape((xx.shape[0], xx.shape[1], 3), order="F")
 
         # Convert 3D numpy array to texture
-        tex = pv.numpy_to_texture(image)
-
-        plotter.add_mesh(curvsurf, smooth_shading=True, texture=tex)
-        plotter.update_coordinates(pts, render=False)
+        actor.texture = pv.numpy_to_texture(image)
 
         # must update normals when smooth shading is enabled
-        plotter.mesh.compute_normals(cell_normals=False, inplace=True)
+        mesh.compute_normals(cell_normals=False, inplace=True)
         plotter.write_frame()
         plotter.clear()
 
@@ -308,7 +307,7 @@ Generate a moving gif from an active plotter with updating textures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-159
+.. GENERATED FROM PYTHON SOURCE LINES 148-158
 
 Textures with Transparency
 ++++++++++++++++++++++++++
@@ -321,7 +320,7 @@ contain a 4th channel specifying the opacity value from 0 [transparent] to
 
 Here we can download an image that has an alpha channel:
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-162
+.. GENERATED FROM PYTHON SOURCE LINES 158-161
 
 .. code-block:: default
 
@@ -341,7 +340,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-168
+.. GENERATED FROM PYTHON SOURCE LINES 162-167
 
 .. code-block:: default
 
@@ -362,7 +361,7 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-178
+.. GENERATED FROM PYTHON SOURCE LINES 168-177
 
 Repeating Textures
 ++++++++++++++++++
@@ -374,7 +373,7 @@ Here we create the texture coordinates to fill up the grid with several
 mappings of a single texture. In order to do this we must define texture
 coordinates outside of the typical ``(0, 1)`` range:
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-186
+.. GENERATED FROM PYTHON SOURCE LINES 177-185
 
 .. code-block:: default
 
@@ -393,7 +392,7 @@ coordinates outside of the typical ``(0, 1)`` range:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 187-192
+.. GENERATED FROM PYTHON SOURCE LINES 186-191
 
 By defining texture coordinates that range ``(0, 4)`` on each axis, we will
 produce 4 repetitions of the same texture on this mesh.
@@ -401,7 +400,7 @@ produce 4 repetitions of the same texture on this mesh.
 Then we must associate those texture coordinates with the mesh through the
 :attr:`pyvista.DataSet.active_texture_coordinates` property.
 
-.. GENERATED FROM PYTHON SOURCE LINES 192-195
+.. GENERATED FROM PYTHON SOURCE LINES 191-194
 
 .. code-block:: default
 
@@ -415,11 +414,11 @@ Then we must associate those texture coordinates with the mesh through the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 196-197
+.. GENERATED FROM PYTHON SOURCE LINES 195-196
 
 Now display all the puppies.
 
-.. GENERATED FROM PYTHON SOURCE LINES 197-203
+.. GENERATED FROM PYTHON SOURCE LINES 196-202
 
 .. code-block:: default
 
@@ -441,14 +440,14 @@ Now display all the puppies.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 204-208
+.. GENERATED FROM PYTHON SOURCE LINES 203-207
 
 Spherical Texture Coordinates
 +++++++++++++++++++++++++++++
 We have a built in convienance method for mapping textures to spherical
 coordinate systems much like the planar mapping demoed above.
 
-.. GENERATED FROM PYTHON SOURCE LINES 208-215
+.. GENERATED FROM PYTHON SOURCE LINES 207-214
 
 .. code-block:: default
 
@@ -471,7 +470,7 @@ coordinate systems much like the planar mapping demoed above.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 216-223
+.. GENERATED FROM PYTHON SOURCE LINES 215-222
 
 The helper method above does not always produce the desired texture
 coordinates, so sometimes it must be done manually. Here is a great, user
@@ -481,7 +480,7 @@ Manually create the texture coordinates for a globe map. First, we create
 the mesh that will be used as the globe. Note the `start_theta` for a slight
 overlappig
 
-.. GENERATED FROM PYTHON SOURCE LINES 223-240
+.. GENERATED FROM PYTHON SOURCE LINES 222-239
 
 .. code-block:: default
 
@@ -517,7 +516,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 12.616 seconds)
+   **Total running time of the script:** (0 minutes 11.186 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:
