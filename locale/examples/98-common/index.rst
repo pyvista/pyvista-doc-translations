@@ -47,4 +47,3 @@ for more context.
    :hidden:
 
    /examples/98-common/project-points-tessellate
-

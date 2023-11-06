@@ -347,4 +347,3 @@ developers.
    /examples/99-advanced/ray-trace
    /examples/99-advanced/sphere_eversion
    /examples/99-advanced/warp-by-vector-eigenmodes
-

@@ -158,4 +158,3 @@ truly bring out the best of your visualization:
    /examples/04-lights/mesh_lighting
    /examples/04-lights/plotter_builtins
    /examples/04-lights/shadows
-

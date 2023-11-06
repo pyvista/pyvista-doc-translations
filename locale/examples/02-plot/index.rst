@@ -1025,4 +1025,3 @@ plotting routines to perform tasks like:
    /examples/02-plot/vector-component
    /examples/02-plot/vertices
    /examples/02-plot/volume
-

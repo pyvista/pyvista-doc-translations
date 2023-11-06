@@ -212,4 +212,3 @@ for user defined tasks and processing routines.
    /examples/03-widgets/slider-bar-widget
    /examples/03-widgets/sphere-widget
    /examples/03-widgets/spline-widget
-

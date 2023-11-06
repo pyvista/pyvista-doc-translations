@@ -532,4 +532,3 @@ data.
    /examples/00-load/reader
    /examples/00-load/terrain-mesh
    /examples/00-load/wrap-trimesh
-
