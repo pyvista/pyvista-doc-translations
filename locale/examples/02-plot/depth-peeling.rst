@@ -68,7 +68,7 @@ provides.
 
     dargs = dict(opacity=0.5, color="red", smooth_shading=True)
 
-    p = pv.Plotter(shape=(1, 2), multi_samples=8)
+    p = pv.Plotter(shape=(1, 2))
 
     p.add_mesh(spheres, **dargs)
     p.enable_depth_peeling(10)
@@ -149,7 +149,7 @@ surfaces.
     mesh = examples.download_brain().contour(5)
     cmap = "viridis_r"
 
-    p = pv.Plotter(shape=(1, 2), multi_samples=4)
+    p = pv.Plotter(shape=(1, 2))
 
     p.add_mesh(mesh, opacity=0.5, cmap=cmap)
     p.enable_depth_peeling(10)
@@ -177,7 +177,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  23.405 seconds)
+   **Total running time of the script:** (0 minutes 47.753 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:
