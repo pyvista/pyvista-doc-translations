@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-03 01:11+0000\n"
+"POT-Creation-Date: 2023-11-11 00:52+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/tkoyama010/teams/112279/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -3698,7 +3698,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/prop3d.pydocstring of
 #: pyvista.plotting.prop3d.Prop3D.rotate_z:21
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:29
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:33
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_timer_event:29
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -6134,6 +6134,8 @@ msgstr ""
 #: pyvista.Prop3D.user_matrix:0
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.RenderWindowInteractor.picker:0
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.RenderWindowInteractor.style:0
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:0
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
@@ -9685,7 +9687,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.Plotter.image_scale:23
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:26
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:30
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.plotting.render_window_interactor.RenderWindowInteractor.create_timer:31
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
@@ -46973,6 +46975,8 @@ msgstr ""
 #: pyvista.plotting.plotter.BasePlotter.add_composite:108
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_volume:171
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:15
 msgid "bool"
 msgstr ""
 
@@ -66580,28 +66584,40 @@ msgstr ""
 msgid "Update the camera interactor style."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:244:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
 msgid ""
 ":py:obj:`RenderWindowInteractor.initialized "
 "<pyvista.RenderWindowInteractor.initialized>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:244:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.RenderWindowInteractor.initialized:2
 msgid "Return if the interactor has been initialized."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:244:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
 msgid ""
 ":py:obj:`RenderWindowInteractor.picker "
 "<pyvista.RenderWindowInteractor.picker>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:244:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
 #: pyvista.RenderWindowInteractor.picker:2
 msgid "Get/set the picker."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
+msgid ""
+":py:obj:`RenderWindowInteractor.style "
+"<pyvista.RenderWindowInteractor.style>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.rst:249:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.RenderWindowInteractor.style:2
+msgid "Return the current interactor style."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.add_key_event.rst:2
@@ -66635,7 +66651,20 @@ msgid "Callback to be called when the event is invoked."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
-#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:17
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:16
+msgid ""
+"**interactor_style_fallback** : :ref:`bool <python:bltin-boolean-values>`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:15
+msgid ""
+"If ``True``, the observer will be added to the interactor style in cases "
+"known to be problematic."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.plotting.render_window_interactor.RenderWindowInteractor.add_observer:21
 msgid "The identifier of the added observer."
 msgstr ""
 
@@ -67019,6 +67048,20 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.start.rst:2
 msgid "pyvista.RenderWindowInteractor.start"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.style.rst:2
+msgid "pyvista.RenderWindowInteractor.style"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.RenderWindowInteractor.style:21
+msgid ":obj:`vtkInteractorStyle`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/render_window_interactor.pydocstring of
+#: pyvista.RenderWindowInteractor.style:9
+msgid "The current interactor style."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.RenderWindowInteractor.terminate_app.rst:2
