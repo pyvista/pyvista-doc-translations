@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_contouring.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_contouring.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -169,7 +169,7 @@ Also make normal vectors
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-77
+.. GENERATED FROM PYTHON SOURCE LINES 68-78
 
 .. code-block:: default
 
@@ -185,6 +185,7 @@ Also make normal vectors
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_contouring_003.png
    :alt: contouring
    :srcset: /examples/01-filter/images/sphx_glr_contouring_003.png
@@ -194,10 +195,39 @@ Also make normal vectors
 
 
 
+.. GENERATED FROM PYTHON SOURCE LINES 79-85
+
+Contours from a label map
++++++++++++++++++++++++++
+
+Create labeled surfaces from 3D label maps (e.f. multi-label image segmentation)
+using :func:`contour_labeled() <pyvista.ImageDataFilters.contour_labeled>`.
+Requires VTK version 9.3
+
+.. GENERATED FROM PYTHON SOURCE LINES 85-89
+
+.. code-block:: default
+
+    if pv.vtk_version_info >= (9, 3):
+        label_map = pv.examples.download_frog_tissue()
+        mesh = label_map.contour_labeled()
+        mesh.plot(cmap="glasbey_warm", cpos="yx", show_scalar_bar=False)
+
+
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_004.png
+   :alt: contouring
+   :srcset: /examples/01-filter/images/sphx_glr_contouring_004.png
+   :class: sphx-glr-single-img
+
+
+
+
+
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.639 seconds)
+   **Total running time of the script:** (0 minutes 17.130 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:
@@ -205,6 +235,8 @@ Also make normal vectors
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python
