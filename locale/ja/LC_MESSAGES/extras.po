@@ -850,7 +850,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:463
 msgid "Input Validation"
-msgstr ""
+msgstr "入力バリデーション"
 
 #: ../../pyvista/CONTRIBUTING.rst:464
 msgid ""
@@ -862,6 +862,9 @@ msgid ""
 "type (e.g. ``float``, ``int``) may be required. Therefore it is imperative "
 "to validate all user input and raise any errors as appropriate."
 msgstr ""
+"ユーザー入力の検証は，アルゴリズムが期待通りに動作することを保証するために，ソフトウェア開発において不可欠な部分です．特にPythonでは，複数の配列のようなオブジェクト型（"
+" ``Sequence`` や ``numpy.ndarray`` など）を扱う場合，明示的な型付けや，特定の形状や次元，データ型（ ``float``"
+" や ``int`` など）の配列が必要な場合の型ヒントをサポートしていないことがあります．"
 
 #: ../../pyvista/CONTRIBUTING.rst:472
 msgid ""
@@ -870,11 +873,13 @@ msgid ""
 " make use of existing validation methods in "
 "``pyvista.core.input_validation``."
 msgstr ""
+"しかし，入力検証ルーチンと関連するテストケースを手作業で書くのは時間がかかり，エラーになりやすいです．そのため， "
+"``pyvista.core.input_validation`` にある既存のバリデーションメソッドを利用することをお勧めします．"
 
 #: ../../pyvista/CONTRIBUTING.rst:476
 msgid ""
 "For example, a typical validation routine for some function may look like:"
-msgstr ""
+msgstr "例えば，ある関数の典型的な検証ルーチンは次のようなものです:"
 
 #: ../../pyvista/CONTRIBUTING.rst:508
 msgid ""
@@ -882,6 +887,8 @@ msgid ""
 "the docstring to ``array_like`` (if appropriate), as the validation methods "
 "are very general and can operate on any array-like input."
 msgstr ""
+"配列の検証メソッドを使用する場合は， docstringで入力タイプを (適切な場合) ``array_like`` "
+"に設定することを検討してください．検証メソッドは非常に汎用的であり，配列のような入力であればどのようなものでも動作します．"
 
 #: ../../pyvista/CONTRIBUTING.rst:512
 msgid ""
@@ -892,6 +899,12 @@ msgid ""
 "<https://numpy.org/devdocs/reference/typing.html#numpy.typing.ArrayLike>`_, "
 "but its use is not currently supported in PyVista."
 msgstr ""
+"注: ``array_like`` は `NumPy glossary term "
+"<https://numpy.org/doc/stable/glossary.html#term-array_like>`_ "
+"であり、実際の型ではありません．しかし，NumPy や PyVista のドキュメントではよく使われています．正式な ``ArrayLike`` 型は "
+"`introduced in NumPy 1.20 "
+"<https://numpy.org/devdocs/reference/typing.html#numpy.typing.ArrayLike>`_ "
+"でしたが，その使用は現在 PyVista ではサポートされていません．"
 
 #: ../../pyvista/CONTRIBUTING.rst:520
 msgid "Branch Naming Conventions"
