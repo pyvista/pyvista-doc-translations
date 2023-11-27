@@ -151,8 +151,8 @@ interior edges are also created.
     # extrude with and without the all_edges option
     extruded_disc = disc.extrude_trim((0, 0, -1.0), plane)
     extruded_disc_all = disc.extrude_trim((0, 0, -1.0), plane, extrusion='all_edges')
-    print(f'Extrusion has {extruded_disc.n_faces} faces with default boundary_edges')
-    print(f'Extrusion has {extruded_disc_all.n_faces} faces with all_edges')
+    print(f'Extrusion has {extruded_disc.n_faces_strict} faces with default boundary_edges')
+    print(f'Extrusion has {extruded_disc_all.n_faces_strict} faces with all_edges')
 
 
 
@@ -287,7 +287,7 @@ Note how the scalars are copied to the extruded line.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.960 seconds)
+   **Total running time of the script:** (0 minutes 1.833 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-trim.py:
