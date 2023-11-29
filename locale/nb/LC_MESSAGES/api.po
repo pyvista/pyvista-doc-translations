@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-27 19:37+0000\n"
+"POT-Creation-Date: 2023-11-29 00:57+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/tkoyama010/teams/112279/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -22081,7 +22081,7 @@ msgid "Join two meshes together, extract the largest, and plot it."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_largest.rst:28
-msgid ":func:`pyvista.DataSetFilter.connectivity`"
+msgid ":func:`pyvista.DataSetFilters.connectivity`"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.extract_points.rst:2
@@ -22776,30 +22776,23 @@ msgid "Pack segmented image labels."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:5
-msgid ""
-"Load non-contiguous image labels >>> from pyvista import examples >>> import"
-" numpy as np >>> image_labels = examples.download_frog_tissue()"
+msgid "Load non-contiguous image labels"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:10
-msgid "Show range of labels >>> image_labels.get_data_range() (0, 29)"
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:11
+msgid "Show range of labels"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:14
-msgid ""
-"Find 'gaps' in the labels >>> label_numbers = "
-"np.unique(image_labels.active_scalars) >>> label_max = np.max(label_numbers)"
-" >>> missing_labels = set(range(label_max)) - set(label_numbers) >>> "
-"len(missing_labels) 4"
-msgstr ""
-
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:21
-msgid ""
-"Pack labels to remove gaps >>> packed_labels = image_labels.pack_labels()"
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:16
+msgid "Find 'gaps' in the labels"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:24
-msgid "Show range of packed labels >>> packed_labels.get_data_range() (0, 25)"
+msgid "Pack labels to remove gaps"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.pack_labels.rst:28
+msgid "Show range of packed labels"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.partition.rst:2
@@ -23744,7 +23737,7 @@ msgstr ""
 #: pyvista.core.filters.data_set.DataSetFilters.sort_labels:10
 msgid ""
 "The filter is a convenience method for "
-":func:`pyvista.DatasetFilter.pack_labels` with ``sort=True``."
+":func:`pyvista.DataSetFilters.pack_labels` with ``sort=True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -23769,30 +23762,21 @@ msgid "Sort segmented image labels."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:5
-msgid ""
-"Load image labels >>> from pyvista import examples >>> import numpy as np "
-">>> image_labels = examples.download_frog_tissue()"
+msgid "Load image labels"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:10
-msgid ""
-"Show label info for first four labels >>> label_number, label_size = "
-"np.unique( ...     image_labels['MetaImage'], return_counts=True ... ) >>> "
-"label_number[:4] pyvista_ndarray([0, 1, 2, 3], dtype=uint8) >>> "
-"label_size[:4] array([30805713,    35279,    19172,    38129])"
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:11
+msgid "Show label info for first four labels"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:19
-msgid "Sort labels >>> sorted_labels = image_labels.sort_labels()"
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:21
+msgid "Sort labels"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:22
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.sort_labels.rst:25
 msgid ""
 "Show sorted label info for the four largest labels. Note the difference in "
-"label size after sorting. >>> sorted_label_number, sorted_label_size = "
-"np.unique( ...     sorted_labels[\"packed_labels\"], return_counts=True ... "
-") >>> sorted_label_number[:4] pyvista_ndarray([0, 1, 2, 3], dtype=uint8) >>>"
-" sorted_label_size[:4] array([30805713,   438052,   204672,   133880])"
+"label size after sorting."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetFilters.split_bodies.rst:2
@@ -30551,11 +30535,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.n_faces_strict.rst:3
-msgid ""
-"Create a mesh with one face and one line >>> import pyvista as pv >>> mesh ="
-" pv.PolyData( ...     [(0.0, 0, 0), (1, 0, 0), (0, 1, 0)], ...     faces=[3,"
-" 0, 1, 2], ...     lines=[2, 0, 1], ... ) >>> mesh.n_cells, "
-"mesh.n_faces_strict (2, 1)"
+msgid "Create a mesh with one face and one line"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.n_lines.rst:2
