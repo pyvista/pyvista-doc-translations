@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-01 00:59+0000\n"
+"POT-Creation-Date: 2023-12-03 00:59+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/tkoyama010/teams/112279/zh_CN/)\n"
@@ -1616,6 +1616,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:21
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:21
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.core.cell.Cell:39
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:22
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:21
 #: ../../pyvista/pyvista/core/cell.pydocstring of
@@ -4406,7 +4408,7 @@ msgid "Set the zoom of the camera."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Camera.rst:69
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:79
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:84
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataObject.rst:78
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSet.rst:452
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.DataSetAttributes.rst:83
@@ -4730,6 +4732,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:0
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:0
 #: ../../pyvista/pyvista/core/cell.pydocstring of
@@ -8555,6 +8559,8 @@ msgstr ""
 msgid "The aspect of the viewport to compute the planes."
 msgstr ""
 
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:19
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:21
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cast_to_poly_points:22
@@ -9073,162 +9079,172 @@ msgstr ""
 msgid "Get the 0-th cell from a :class:`pyvista.UnstructuredGrid`."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
+msgid ":py:obj:`Cell.cast_to_polydata <pyvista.Cell.cast_to_polydata>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:2
+msgid "Cast this cell to PolyData."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`Cell.cast_to_unstructured_grid "
 "<pyvista.Cell.cast_to_unstructured_grid>`\\ \\(\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.cast_to_unstructured_grid:2
 msgid "Cast this cell to an unstructured grid."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 msgid ":py:obj:`Cell.copy <pyvista.Cell.copy>`\\ \\(\\[deep\\]\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.copy:2
 msgid "Return a copy of the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 msgid ":py:obj:`Cell.get_edge <pyvista.Cell.get_edge>`\\ \\(index\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_edge:2
 msgid "Get the i-th edge composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 msgid ":py:obj:`Cell.get_face <pyvista.Cell.get_face>`\\ \\(index\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.get_face:2
 msgid "Get the i-th face composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 msgid ":py:obj:`Cell.plot <pyvista.Cell.plot>`\\ \\(\\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:77:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:82:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of
 #: pyvista.core.cell.Cell.plot:2
 msgid "Plot this cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.bounds <pyvista.Cell.bounds>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:2
 msgid "Get the cell bounds in ``[xmin, xmax, ymin, ymax, zmin, zmax]``."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.center <pyvista.Cell.center>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.center:2
 msgid "Get the center of the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.dimension <pyvista.Cell.dimension>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.dimension:2
 msgid "Return the cell dimension."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.edges <pyvista.Cell.edges>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.edges:2
 msgid "Return a list of edges composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.faces <pyvista.Cell.faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.faces:2
 msgid "Return a list of faces composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.is_linear <pyvista.Cell.is_linear>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.is_linear:2
 msgid "Return if the cell is linear."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.n_edges <pyvista.Cell.n_edges>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_edges:2
 msgid "Get the number of edges composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.n_faces <pyvista.Cell.n_faces>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_faces:2
 msgid "Get the number of faces composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.n_points <pyvista.Cell.n_points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.n_points:2
 msgid "Get the number of points composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.point_ids <pyvista.Cell.point_ids>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.point_ids:2
 msgid "Get the point IDs composing the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.points <pyvista.Cell.points>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.points:2
 msgid "Get the point coordinates of the cell."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 msgid ":py:obj:`Cell.type <pyvista.Cell.type>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:273:<autosummary>:1
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.rst:278:<autosummary>:1
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.type:2
 msgid "Get the cell type from the enum :class:`pyvista.CellType`."
 msgstr ""
@@ -9246,6 +9262,20 @@ msgstr ""
 
 #: ../../pyvista/pyvista/core/cell.pydocstring of pyvista.Cell.bounds:9
 msgid "The cell bounds in ``[xmin, xmax, ymin, ymax, zmin, zmax]``."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.cast_to_polydata.rst:2
+msgid "pyvista.Cell.cast\\_to\\_polydata"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:4
+msgid "Can only be used for 0D, 1D, or 2D cells."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/cell.pydocstring of
+#: pyvista.core.cell.Cell.cast_to_polydata:10
+msgid "This cell cast to a :class:`pyvista.PolyData`."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.Cell.cast_to_unstructured_grid.rst:2
