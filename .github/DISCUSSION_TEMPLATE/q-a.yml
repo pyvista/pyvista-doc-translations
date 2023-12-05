@@ -28,11 +28,13 @@ body:
       options:
         - label: I commit to help with one of those options.
   - type: textarea
+    id: sample
     attributes:
         What is the problem, question, or error?
 
         Write a short description telling me what you are doing, what you expect to happen, and what is currently happening.
       placeholder: Provide some code for us to reproduce your question
+      render: python
     validations:
       required: true
   - type: textarea
