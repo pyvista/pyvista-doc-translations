@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-27 01:02+0000\n"
+"POT-Creation-Date: 2023-12-06 01:00+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Russian (https://app.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1058,17 +1058,21 @@ msgid "Using pip, you can set up your jupyter environment with:"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:82
-msgid "Jupyter-Server-Proxy"
+msgid "Remote Jupyter Host"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:84
 msgid ""
 "When using PyVista in Jupyter that is hosted remotely (docker, cloud "
-"JupyterHub, or otherwise), you will need to pair the Trame backend with "
-"``jupyter-server-proxy``."
+"JupyterHub, binder, or otherwise), you will need to pair the Trame backend "
+"with either ``jupyter-server-proxy`` or ``trame-jupyter-extension``."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:87
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:90
+msgid "Jupyter Server Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:92
 msgid ""
 "`Jupyter Server Proxy <https://jupyter-server-"
 "proxy.readthedocs.io/en/latest/>`_ lets you access the Trame server hosting "
@@ -1076,49 +1080,40 @@ msgid ""
 "authenticated web access to them directly through Jupyter."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:93
-msgid ""
-"In a future version of `wslink <https://github.com/Kitware/wslink>`_ (the "
-"driving mechanism behind Trame's server), we plan to add support such that "
-"the server can communicate via the `Jupyter Comms <https://jupyter-"
-"notebook.readthedocs.io/en/stable/comms.html>`_ to avoid the need for a "
-"secondary web server and thus ``jupyter-server-proxy``."
-msgstr ""
-
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:99
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:97
 msgid ""
 "To configure PyVista and Trame to work with ``jupyter-server-proxy`` in a "
 "remote environment, you will need to set some options on the global PyVista "
 "theme:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:102
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:100
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:104
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:102
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_prefix>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:107
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:105
 msgid ""
 "The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
 "sufficient for most remote Jupyter environment and use within Docker."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:110
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:108
 msgid "This can also be set with an environment variable:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:117
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:115
 msgid "The prefix will need to be modified for JupyterHub deployments."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:119
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:117
 msgid ""
 "On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
 "``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
@@ -1126,21 +1121,62 @@ msgid ""
 "prepend it to the ``server_proxy_prefix``."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:125
-msgid "Other Considerations"
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:124
+msgid "Trame Jupyter Extension"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:126
+msgid ""
+"`Trame Jupyter Extension <https://github.com/Kitware/trame-jupyter-"
+"extension/>`_ enables the trame server and client to communicate over the "
+"existing `Jupyter Comms <https://jupyter-"
+"notebook.readthedocs.io/en/stable/comms.html>`_ infrastructure, instead of "
+"creating a separate WebSocket connection."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:131
+msgid ""
+"Using this extension removes the need for a secondary web server and thus "
+"``jupyter-server-proxy``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:134
+msgid "Using pip, you can install the extension:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:140
+msgid ""
+"If using Jupyter Lab 3.x, make sure to install the version 1.x of the "
+"extension:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:146
+msgid ""
+"Once the extension is installed, you can select whether PyVista will use it "
+"by setting the following flag to ``True`` or ``False``:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:149
+msgid ""
+":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
+"<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:154
+msgid "Other Considerations"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:155
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:128
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:157
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:142
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:171
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.43.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 00:57+0000\n"
+"POT-Creation-Date: 2023-12-06 01:00+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: SerTetora, 2023\n"
 "Language-Team: Ukrainian (https://app.transifex.com/tkoyama010/teams/112279/uk/)\n"
@@ -1904,7 +1904,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.reflect:39
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:78
+#: pyvista.core.filters.data_set.DataSetFilters.sample:84
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:44
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -7805,6 +7805,8 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample:39
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample:61
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc:26
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.sample_over_circular_arc_normal:34
@@ -11314,7 +11316,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.reflect:36
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:67
+#: pyvista.core.filters.data_set.DataSetFilters.sample:73
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.shrink:28
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -12884,12 +12886,26 @@ msgid "Whether to mark blank points and cells in \"vtkGhostType\"."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:61
+#: pyvista.core.filters.data_set.DataSetFilters.sample:62
+msgid ""
+"**snap_to_closest_point** : :ref:`bool <python:bltin-boolean-values>`, "
+"default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample:59
+msgid ""
+"Whether to snap to cell with closest point if no cell is found. Useful when "
+"sampling from data with vertex cells. Requires vtk >=9.3.0."
+msgstr ""
+
+#: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
+#: pyvista.core.filters.data_set.DataSetFilters.sample:67
 msgid "Dataset containing resampled data."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
-#: pyvista.core.filters.data_set.DataSetFilters.sample:72
+#: pyvista.core.filters.data_set.DataSetFilters.sample:78
 msgid ":obj:`pyvista.DataSetFilters.interpolate`"
 msgstr ""
 
@@ -73645,74 +73661,100 @@ msgstr ""
 msgid "Set global trame view parameters."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.default_mode "
 "<pyvista.plotting.themes._TrameConfig.default_mode>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.default_mode:2
 msgid "Return or set the default mode of the Trame backend."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.interactive_ratio "
 "<pyvista.plotting.themes._TrameConfig.interactive_ratio>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.interactive_ratio:2
 msgid "Return or set the interactive ratio for PyVista Trame views."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
+msgid ""
+":py:obj:`_TrameConfig.jupyter_extension_available "
+"<pyvista.plotting.themes._TrameConfig.jupyter_extension_available>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/themes.pydocstring of
+#: pyvista.plotting.themes._TrameConfig.jupyter_extension_available:2
+msgid "Return whether the trame_jupyter_extension is detected."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
+msgid ""
+":py:obj:`_TrameConfig.jupyter_extension_enabled "
+"<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`\\"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/themes.pydocstring of
+#: pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled:2
+msgid ""
+"Return or set whether to use the trame_jupyter_extension to communicate with"
+" clients."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.jupyter_server_name "
 "<pyvista.plotting.themes._TrameConfig.jupyter_server_name>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.jupyter_server_name:2
 msgid "Return or set the trame server name PyVista uses in Jupyter."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.jupyter_server_port "
 "<pyvista.plotting.themes._TrameConfig.jupyter_server_port>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.jupyter_server_port:2
 msgid "Return or set the port for the Trame Jupyter server."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.server_proxy_enabled "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.server_proxy_enabled:2
 msgid ""
 "Return or set if use of relative URLs is enabled for the Jupyter interface."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.server_proxy_prefix "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_prefix>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.server_proxy_prefix:2
 msgid ""
@@ -73720,13 +73762,13 @@ msgid ""
 "interface."
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 msgid ""
 ":py:obj:`_TrameConfig.still_ratio "
 "<pyvista.plotting.themes._TrameConfig.still_ratio>`\\"
 msgstr ""
 
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:65:<autosummary>:1
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.rst:75:<autosummary>:1
 #: ../../pyvista/pyvista/plotting/themes.pydocstring of
 #: pyvista.plotting.themes._TrameConfig.still_ratio:2
 msgid "Return or set the still ratio for PyVista Trame views."
@@ -73757,6 +73799,14 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.interactive_ratio.rst:2
 msgid "pyvista.plotting.themes.\\_TrameConfig.interactive\\_ratio"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.jupyter_extension_available.rst:2
+msgid "pyvista.plotting.themes.\\_TrameConfig.jupyter\\_extension\\_available"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled.rst:2
+msgid "pyvista.plotting.themes.\\_TrameConfig.jupyter\\_extension\\_enabled"
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.plotting.themes._TrameConfig.jupyter_server_name.rst:2
