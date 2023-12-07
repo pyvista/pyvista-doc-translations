@@ -1251,7 +1251,7 @@ msgstr "pipを使って，次のようにしてjupyter環境をセットアッ�
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:82
 msgid "Remote Jupyter Host"
-msgstr ""
+msgstr "リモートJupyterホスト"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:84
 msgid ""
@@ -1259,10 +1259,13 @@ msgid ""
 "JupyterHub, binder, or otherwise), you will need to pair the Trame backend "
 "with either ``jupyter-server-proxy`` or ``trame-jupyter-extension``."
 msgstr ""
+"リモートでホストされているJupyter (docker, cloud JupyterHub, binder, "
+"若しくはその他)でPyVistaを使用する場合，Trameバックエンドと ``jupyter-server-proxy`` と ``trame-"
+"jupyter-extension`` いずれもペアリングする必要があります．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:90
 msgid "Jupyter Server Proxy"
-msgstr ""
+msgstr "Jupyter サーバープロキシ"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:92
 msgid ""
@@ -1328,7 +1331,7 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:124
 msgid "Trame Jupyter Extension"
-msgstr ""
+msgstr "Trame Jupyterエクステンション"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:126
 msgid ""
@@ -1338,34 +1341,42 @@ msgid ""
 "notebook.readthedocs.io/en/stable/comms.html>`_ infrastructure, instead of "
 "creating a separate WebSocket connection."
 msgstr ""
+"`Trame Jupyter Extension <https://github.com/Kitware/trame-jupyter-"
+"extension/>`_ は， WebSocket接続を個別に作成する代わりに，既存の `Jupyter Comms "
+"<https://jupyter-notebook.readthedocs.io/en/stable/comms.html>`_ "
+"インフラストラクチャ上でtrameサーバーとクライアントの通信を可能にします．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:131
 msgid ""
 "Using this extension removes the need for a secondary web server and thus "
 "``jupyter-server-proxy``."
-msgstr ""
+msgstr "この拡張機能を使用すると，2次ウェブサーバーとした ``jupyter-server-proxy`` の必要性がなくなります．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:134
 msgid "Using pip, you can install the extension:"
-msgstr ""
+msgstr "pipを使って，拡張機能をインストールすることができます:"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:140
 msgid ""
 "If using Jupyter Lab 3.x, make sure to install the version 1.x of the "
 "extension:"
-msgstr ""
+msgstr "Jupyter Lab 3.x を使用する場合は，拡張機能のバージョン 1.x をインストールしてください．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:146
 msgid ""
 "Once the extension is installed, you can select whether PyVista will use it "
 "by setting the following flag to ``True`` or ``False``:"
 msgstr ""
+"拡張機能がインストールされたら，次のフラグを``True`` または ``False`` "
+"に設定することで，PyVistaがそれを使用するかどうかを選択できます．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:149
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
 "<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
 msgstr ""
+":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
+"<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:154
 msgid "Other Considerations"
