@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-07 07:54+0000\n"
+"POT-Creation-Date: 2023-12-13 00:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1985,7 +1985,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.remove_background_image:17
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_background:51
 #: ../../pyvista/pyvista/plotting/renderers.py:docstring of pyvista.plotting.renderers.Renderers.set_color_cycler:38
-#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:143
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:151
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:27
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.CornerAnnotation:31
 #: ../../pyvista/pyvista/plotting/text.py:docstring of pyvista.plotting.text.Text:29
@@ -3604,7 +3604,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.open_gif:42
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.BasePlotter.open_movie:33
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.plotting.plotter.Plotter.show:118
-#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:137
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:145
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.Texture.wrap:21
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.to_array:19
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.to_grayscale:20
@@ -4574,6 +4574,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:97
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:113
 #: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:116
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:129
 #: ../../pyvista/pyvista/plotting/tools.py:docstring of pyvista.plotting.tools.create_axes_marker:28
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_checkbox_button_widget:14
 #: ../../pyvista/pyvista/plotting/widgets.py:docstring of pyvista.plotting.widgets.WidgetHelper.add_line_widget:35
@@ -40460,16 +40461,24 @@ msgstr ""
 msgid "Plot-specific theme.  By default, calling from the ``Plotter``, will use the plotter theme.  Setting to ``None`` will use the global theme."
 msgstr ""
 
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:130
+msgid "**unconstrained_font_size** : :ref:`bool <python:bltin-boolean-values>`, default: :data:`python:False`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:125
+msgid "Whether the font size of title and labels is unconstrained. When it is constrained, the size of the scalar bar will constrain the font size. When it is not, the size of the font will always be respected. Using custom labels will force this to be ``True``."
+msgstr ""
+
 #: ../../pyvista/pyvista/plotting/plotter.py:docstring of pyvista.Plotter.scalar_bar:21
-#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:134
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:142
 msgid ":obj:`vtk.vtkScalarBarActor`"
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:127
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:135
 msgid "Scalar bar actor."
 msgstr ""
 
-#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:138
+#: ../../pyvista/pyvista/plotting/scalar_bars.py:docstring of pyvista.plotting.scalar_bars.ScalarBars.add_scalar_bar:146
 msgid "Setting ``title_font_size``, or ``label_font_size`` disables automatic font sizing for both the title and label."
 msgstr ""
 
