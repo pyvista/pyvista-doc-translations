@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_reader.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_reader.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,13 +23,26 @@
 Load data using a Reader
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-12
+.. GENERATED FROM PYTHON SOURCE LINES 8-10
+
+.. code-block:: default
+
+
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 14-17
 
 To have more control over reading data files, use a class based reader.
 This class allows for more fine-grained control over reading datasets from
 files.  See :func:`pyvista.get_reader` for a list of file types supported.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-21
+.. GENERATED FROM PYTHON SOURCE LINES 17-26
 
 .. code-block:: default
 
@@ -49,12 +62,12 @@ files.  See :func:`pyvista.get_reader` for a list of file types supported.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-24
+.. GENERATED FROM PYTHON SOURCE LINES 27-29
 
 An XML PolyData file in ``.vtp`` format is created.  It will be saved in a
 temporary file for this example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-28
+.. GENERATED FROM PYTHON SOURCE LINES 29-33
 
 .. code-block:: default
 
@@ -68,21 +81,19 @@ temporary file for this example.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    '/tmp/tmpt_ngme6v.vtp'
+    '/tmp/tmpojylb06_.vtp'
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-31
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 :class:`pyvista.Sphere` already includes ``Normals`` point data.  Additionally
 ``height`` point data and ``id`` cell data is added.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+.. GENERATED FROM PYTHON SOURCE LINES 36-41
 
 .. code-block:: default
 
@@ -98,12 +109,12 @@ temporary file for this example.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-39
+.. GENERATED FROM PYTHON SOURCE LINES 42-44
 
 :func:`pyvista.read` function reads all the data in the file. This provides
 a quick and easy one-liner to read data from files.
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-43
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
 .. code-block:: default
 
@@ -117,8 +128,6 @@ a quick and easy one-liner to read data from files.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     All arrays: ['height', 'Normals', 'id']
@@ -126,12 +135,12 @@ a quick and easy one-liner to read data from files.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-46
+.. GENERATED FROM PYTHON SOURCE LINES 49-51
 
 Using :func:`pyvista.get_reader` enables more fine-grained control of reading data
 files. Reading in a ``.vtp``` file uses the :class:`pyvista.XMLPolyDataReader`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-51
+.. GENERATED FROM PYTHON SOURCE LINES 51-56
 
 .. code-block:: default
 
@@ -146,22 +155,20 @@ files. Reading in a ``.vtp``` file uses the :class:`pyvista.XMLPolyDataReader`.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    XMLPolyDataReader('/tmp/tmpt_ngme6v.vtp')
+    XMLPolyDataReader('/tmp/tmpojylb06_.vtp')
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-55
+.. GENERATED FROM PYTHON SOURCE LINES 57-60
 
 Some reader classes, including this one, offer the ability to inspect the
 data file before loading all the data. For example, we can access the number
 and names of point and cell arrays.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-61
+.. GENERATED FROM PYTHON SOURCE LINES 60-66
 
 .. code-block:: default
 
@@ -177,8 +184,6 @@ and names of point and cell arrays.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Number of point arrays: 2
@@ -189,14 +194,14 @@ and names of point and cell arrays.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-66
+.. GENERATED FROM PYTHON SOURCE LINES 67-71
 
 We can select which data to read by selectively disabling or enabling
 specific arrays or all arrays.  Here we disable all the cell arrays and
 the ``Normals`` point array to leave only the ``height`` point array.  The data
 is finally read into a pyvista object that only has the ``height`` point array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-74
+.. GENERATED FROM PYTHON SOURCE LINES 71-79
 
 .. code-block:: default
 
@@ -214,8 +219,6 @@ is finally read into a pyvista object that only has the ``height`` point array.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Point array status: {'Normals': False, 'height': True}
@@ -225,11 +228,11 @@ is finally read into a pyvista object that only has the ``height`` point array.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-76
+.. GENERATED FROM PYTHON SOURCE LINES 80-81
 
 We can reuse the reader object to choose different variables if needed.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-81
+.. GENERATED FROM PYTHON SOURCE LINES 81-86
 
 .. code-block:: default
 
@@ -244,8 +247,6 @@ We can reuse the reader object to choose different variables if needed.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     New read arrays: ['height', 'id']
@@ -253,14 +254,14 @@ We can reuse the reader object to choose different variables if needed.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-86
+.. GENERATED FROM PYTHON SOURCE LINES 87-91
 
 Some Readers support setting different time points or iterations. In both
 cases, this is done using the time point functionality. The NACA
 dataset has two such points with density.  This dataset is in EnSight format,
 which uses the :class:`pyvista.EnSightReader` class.
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-94
+.. GENERATED FROM PYTHON SOURCE LINES 91-99
 
 .. code-block:: default
 
@@ -278,18 +279,16 @@ which uses the :class:`pyvista.EnSightReader` class.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    EnSightReader('/home/runner/.local/share/pyvista/examples/naca.bin.case')
+    EnSightReader('/home/runner/.cache/pyvista_3/EnSight/naca.bin.case')
     Available time points: [1.0, 3.0]
     Available point arrays: ['DENS']
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-100
+.. GENERATED FROM PYTHON SOURCE LINES 100-105
 
 First both time points are read in, and then the difference in density is
 calculated and saved on the second mesh.  The read method of
@@ -297,7 +296,7 @@ calculated and saved on the second mesh.  The read method of
 In this dataset, there are 3 blocks and the new scalar must be applied on each
 block.
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-109
+.. GENERATED FROM PYTHON SOURCE LINES 105-114
 
 .. code-block:: default
 
@@ -317,12 +316,12 @@ block.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-112
+.. GENERATED FROM PYTHON SOURCE LINES 115-117
 
 The value of `DENS` is plotted on the left column for both time points, and
 the difference on the right.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-133
+.. GENERATED FROM PYTHON SOURCE LINES 117-138
 
 .. code-block:: default
 
@@ -350,6 +349,7 @@ the difference on the right.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_reader_001.png
    :alt: reader
    :srcset: /examples/00-load/images/sphx_glr_reader_001.png
@@ -359,14 +359,16 @@ the difference on the right.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-138
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 139-143
 
 Reading time points or iterations can also be utilized to make a movie.
 Compare to :ref:`gif_movie_example`, but here a set of files are read in
 through a ParaView Data format file. This file format and reader also return a
 :class:`pyvista.MultiBlock` mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-143
+.. GENERATED FROM PYTHON SOURCE LINES 143-148
 
 .. code-block:: default
 
@@ -381,22 +383,20 @@ through a ParaView Data format file. This file format and reader also return a
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    PVDReader('/home/runner/.local/share/pyvista/examples/wavy/wavy.pvd')
+    PVDReader('/home/runner/.cache/pyvista_3/PVD/wavy.zip.unzip/wavy.pvd')
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-147
+.. GENERATED FROM PYTHON SOURCE LINES 149-152
 
 For each time point, plot the mesh colored by the height.
 Put iteration value in top left
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 147-161
+.. GENERATED FROM PYTHON SOURCE LINES 152-166
 
 .. code-block:: default
 
@@ -417,10 +417,13 @@ Put iteration value in top left
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_reader_002.png
+
+.. image-sg:: /examples/00-load/images/sphx_glr_reader_002.gif
    :alt: reader
-   :srcset: /examples/00-load/images/sphx_glr_reader_002.png
+   :srcset: /examples/00-load/images/sphx_glr_reader_002.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -429,28 +432,25 @@ Put iteration value in top left
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.451 seconds)
+   **Total running time of the script:** (0 minutes 4.878 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_reader.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: reader.py <reader.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: reader.py <reader.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: reader.ipynb <reader.ipynb>`
+      :download:`Download Jupyter notebook: reader.ipynb <reader.ipynb>`
 
 
 .. only:: html

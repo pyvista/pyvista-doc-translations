@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_chart_basics.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_chart_basics.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -26,7 +26,7 @@ Chart Basics
 This example shows how different types of charts can be added to the scene. A more complex example, showing how to
 combine multiple charts as overlays in the same renderer, is given in :ref:`chart_overlays_example`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-17
+.. GENERATED FROM PYTHON SOURCE LINES 10-18
 
 .. code-block:: default
 
@@ -34,6 +34,7 @@ combine multiple charts as overlays in the same renderer, is given in :ref:`char
     import numpy as np
 
     import pyvista as pv
+
 
     rng = np.random.default_rng(1)  # Seeded random number generator for consistent data generation
 
@@ -44,14 +45,14 @@ combine multiple charts as overlays in the same renderer, is given in :ref:`char
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-22
+.. GENERATED FROM PYTHON SOURCE LINES 23-27
 
 This example shows how to create a 2D scatter plot from 100 randomly sampled
 datapoints. By default, the chart automatically rescales its axes such that
 all plotted data is visible. By right clicking on the chart you can enable
 zooming and panning of the chart.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-29
+.. GENERATED FROM PYTHON SOURCE LINES 27-34
 
 .. code-block:: default
 
@@ -65,6 +66,7 @@ zooming and panning of the chart.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_001.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_001.png
@@ -74,13 +76,15 @@ zooming and panning of the chart.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-33
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 35-38
 
 To connect datapoints with lines, you can create a 2D line plot as shown in
 the example below. You can also dynamically 'zoom in' on the plotted data
 by specifying a custom axis range yourself.
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-41
+.. GENERATED FROM PYTHON SOURCE LINES 38-46
 
 .. code-block:: default
 
@@ -95,6 +99,7 @@ by specifying a custom axis range yourself.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_002.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_002.png
@@ -104,13 +109,15 @@ by specifying a custom axis range yourself.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-45
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 47-50
 
 You can also easily combine scatter and line plots using the general
 :func:`pyvista.Chart2D.plot` function, specifying both the line and marker
 style at once.
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-53
+.. GENERATED FROM PYTHON SOURCE LINES 50-58
 
 .. code-block:: default
 
@@ -125,6 +132,7 @@ style at once.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_003.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_003.png
@@ -134,11 +142,13 @@ style at once.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-55
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-60
 
 The following example shows how to create filled areas between two polylines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-66
+.. GENERATED FROM PYTHON SOURCE LINES 60-71
 
 .. code-block:: default
 
@@ -156,6 +166,7 @@ The following example shows how to create filled areas between two polylines.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_004.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_004.png
@@ -165,12 +176,14 @@ The following example shows how to create filled areas between two polylines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-69
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 72-74
 
 Bar charts are also supported. Multiple bar plots are placed next to each
 other.
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-96
+.. GENERATED FROM PYTHON SOURCE LINES 74-101
 
 .. code-block:: default
 
@@ -204,6 +217,7 @@ other.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_005.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_005.png
@@ -213,12 +227,14 @@ other.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-99
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 102-104
 
 In case you want to stack the bars, instead of drawing them next to each
 other, pass a sequence of y values.
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-111
+.. GENERATED FROM PYTHON SOURCE LINES 104-116
 
 .. code-block:: default
 
@@ -237,6 +253,7 @@ other, pass a sequence of y values.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_006.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_006.png
@@ -246,11 +263,13 @@ other, pass a sequence of y values.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-113
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 117-118
 
 In a similar way, you can stack multiple area plots on top of each other.
 
-.. GENERATED FROM PYTHON SOURCE LINES 113-121
+.. GENERATED FROM PYTHON SOURCE LINES 118-126
 
 .. code-block:: default
 
@@ -265,6 +284,7 @@ In a similar way, you can stack multiple area plots on top of each other.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_007.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_007.png
@@ -274,13 +294,15 @@ In a similar way, you can stack multiple area plots on top of each other.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-125
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 127-130
 
 Beside the flexible Chart2D used in the previous examples, there are a couple
 other dedicated charts you can create. The example below shows how a pie
 chart can be created.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-131
+.. GENERATED FROM PYTHON SOURCE LINES 130-136
 
 .. code-block:: default
 
@@ -289,6 +311,7 @@ chart can be created.
     chart = pv.ChartPie(data)
     chart.plot.labels = [f"slice {i}" for i in range(len(data))]
     chart.show()
+
 
 
 
@@ -302,11 +325,13 @@ chart can be created.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-133
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 137-138
 
 To summarize statistics of datasets, you can easily create a boxplot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 133-139
+.. GENERATED FROM PYTHON SOURCE LINES 138-144
 
 .. code-block:: default
 
@@ -315,6 +340,7 @@ To summarize statistics of datasets, you can easily create a boxplot.
     chart = pv.ChartBox(data)
     chart.plot.labels = [f"Experiment {i}" for i in range(len(data))]
     chart.show()
+
 
 
 
@@ -328,14 +354,16 @@ To summarize statistics of datasets, you can easily create a boxplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 140-144
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 145-149
 
 If you would like to add other types of chart that are currently not
 supported by pyvista or VTK, you can resort to matplotlib to create your
 custom chart and afterwards embed it into a pyvista plotting window.
 The below example shows how you can do this.
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-167
+.. GENERATED FROM PYTHON SOURCE LINES 149-172
 
 .. code-block:: default
 
@@ -365,6 +393,7 @@ The below example shows how you can do this.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_basics_010.png
    :alt: chart basics
    :srcset: /examples/02-plot/images/sphx_glr_chart_basics_010.png
@@ -375,30 +404,29 @@ The below example shows how you can do this.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.714 seconds)
+   **Total running time of the script:** (0 minutes 2.647 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_basics.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: chart_basics.py <chart_basics.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: chart_basics.py <chart_basics.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: chart_basics.ipynb <chart_basics.ipynb>`
+      :download:`Download Jupyter notebook: chart_basics.ipynb <chart_basics.ipynb>`
 
 
 .. only:: html

@@ -65,7 +65,7 @@ Download and load the example dataset.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Information</th><th>Blocks</th></tr><tr><td>
+    <table style='width: 100%;'><tr><th>Information</th><th>Blocks</th></tr><tr><td>
     <table>
     <tr><th>MultiBlock</th><th>Values</th></tr>
     <tr><td>N Blocks</td><td>2</td></tr>
@@ -113,10 +113,32 @@ Plot the outline of the dataset along with a cross section of the flow velocity.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_001.png
-   :alt: openfoam tubes
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_001.png
+        :alt: openfoam tubes
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-tubes_001.vtksz
+
 
 
 
@@ -147,10 +169,32 @@ Generate streamlines using :func:`streamlines_from_source()
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_002.png
-   :alt: openfoam tubes
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_002.png
+        :alt: openfoam tubes
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-tubes_002.vtksz
+
 
 
 
@@ -196,10 +240,32 @@ Now, actually generate the streamlines. Since the original inlet contains
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_003.png
-   :alt: openfoam tubes
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_003.png
+        :alt: openfoam tubes
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-tubes_003.vtksz
+
 
 
 
@@ -218,9 +284,10 @@ For this example, we will first sample the results from the
 :func:`sample() <pyvista.DataSetFilters.sample>`. This is so we can visualize
 it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-124
+.. GENERATED FROM PYTHON SOURCE LINES 101-125
 
 .. code-block:: default
+
 
 
     bounds = np.array(air.bounds) * 1.2
@@ -248,6 +315,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-tubes_004.png
    :alt: openfoam tubes
    :srcset: /examples/99-advanced/images/sphx_glr_openfoam-tubes_004.png
@@ -258,9 +326,11 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.730 seconds)
+   **Total running time of the script:** (0 minutes 10.561 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-tubes.py:

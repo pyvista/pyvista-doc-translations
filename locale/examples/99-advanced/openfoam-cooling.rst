@@ -76,14 +76,14 @@ several scalar arrays including the velocity and temperature of the air.
  .. code-block:: none
 
 
-    (PolyData (0x7f246bdb0e20)
+    (PolyData (0x7f875a308e80)
       N Cells:    344270
       N Points:   187992
       N Strips:   0
       X Bounds:   -3.000e-03, 1.530e-01
       Y Bounds:   -3.000e-03, 2.030e-01
       Z Bounds:   -9.000e-03, 4.200e-02
-      N Arrays:   4, UnstructuredGrid (0x7f246bdb06a0)
+      N Arrays:   4, UnstructuredGrid (0x7f87536e0fa0)
       N Cells:    1749992
       N Points:   610176
       X Bounds:   -1.388e-18, 1.500e-01
@@ -118,10 +118,32 @@ and improve the look of the plot using surface space ambient occlusion with
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_001.png
-   :alt: openfoam cooling
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_001.png
+        :alt: openfoam cooling
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-cooling_001.vtksz
+
 
 
 
@@ -161,10 +183,32 @@ pushed out of the "back" of the case via a fan.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_002.png
-   :alt: openfoam cooling
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_002.png
+        :alt: openfoam cooling
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-cooling_002.vtksz
+
 
 
 
@@ -204,10 +248,32 @@ temperature of the components.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_003.png
-   :alt: openfoam cooling
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_003.png
+        :alt: openfoam cooling
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-cooling_003.vtksz
+
 
 
 
@@ -256,10 +322,32 @@ Generate streamlines using :func:`streamlines_from_source()
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_004.png
-   :alt: openfoam cooling
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_004.png
+        :alt: openfoam cooling
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-cooling_004.vtksz
+
 
 
 
@@ -276,9 +364,11 @@ For this example, we will first sample the results from the
 :func:`sample() <pyvista.DataSetFilters.sample>`. This is so we can visualize
 it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-173
+.. GENERATED FROM PYTHON SOURCE LINES 144-175
 
 .. code-block:: default
+
+
 
 
     bounds = np.array(air.bounds) * 1.2
@@ -312,6 +402,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-cooling_005.png
    :alt: openfoam cooling
    :srcset: /examples/99-advanced/images/sphx_glr_openfoam-cooling_005.png
@@ -322,9 +413,11 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  27.844 seconds)
+   **Total running time of the script:** (0 minutes 29.102 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-cooling.py:

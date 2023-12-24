@@ -34,9 +34,10 @@ the ``metallic`` and ``roughness`` arguments for further control.
 Let's show off this functionality by rendering a high quality mesh of
 a statue as though it were metallic.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-33
+.. GENERATED FROM PYTHON SOURCE LINES 19-34
 
 .. code-block:: default
+
 
 
     from itertools import product
@@ -59,12 +60,12 @@ a statue as though it were metallic.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-36
+.. GENERATED FROM PYTHON SOURCE LINES 39-41
 
 Let's render the mesh with a base color of "linen" to give it a metal looking
 finish.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-47
+.. GENERATED FROM PYTHON SOURCE LINES 41-52
 
 .. code-block:: default
 
@@ -82,6 +83,7 @@ finish.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_pbr_001.png
    :alt: pbr
    :srcset: /examples/02-plot/images/sphx_glr_pbr_001.png
@@ -91,14 +93,16 @@ finish.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-52
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 53-57
 
 Show the variation of the metallic and roughness parameters.
 
 Plot with metallic increasing from left to right and roughness
 increasing from bottom to top.
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-66
+.. GENERATED FROM PYTHON SOURCE LINES 57-71
 
 .. code-block:: default
 
@@ -119,6 +123,7 @@ increasing from bottom to top.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_pbr_002.png
    :alt: pbr
    :srcset: /examples/02-plot/images/sphx_glr_pbr_002.png
@@ -128,11 +133,13 @@ increasing from bottom to top.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-68
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 72-73
 
 Combine custom lighting and physically based rendering.
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-93
+.. GENERATED FROM PYTHON SOURCE LINES 73-98
 
 .. code-block:: default
 
@@ -164,6 +171,7 @@ Combine custom lighting and physically based rendering.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_pbr_003.png
    :alt: pbr
    :srcset: /examples/02-plot/images/sphx_glr_pbr_003.png
@@ -174,9 +182,11 @@ Combine custom lighting and physically based rendering.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 47.940 seconds)
+   **Total running time of the script:** (0 minutes 49.896 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_pbr.py:

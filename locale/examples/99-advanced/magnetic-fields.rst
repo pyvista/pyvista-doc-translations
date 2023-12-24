@@ -112,10 +112,32 @@ original example.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_magnetic-fields_001.png
-   :alt: magnetic fields
-   :srcset: /examples/99-advanced/images/sphx_glr_magnetic-fields_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_magnetic-fields_001.png
+        :alt: magnetic fields
+        :srcset: /examples/99-advanced/images/sphx_glr_magnetic-fields_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_magnetic-fields_001.vtksz
+
 
 
 
@@ -157,10 +179,32 @@ direction of the magnetic force. For this, we can create a simple
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_magnetic-fields_002.png
-   :alt: magnetic fields
-   :srcset: /examples/99-advanced/images/sphx_glr_magnetic-fields_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_magnetic-fields_002.png
+        :alt: magnetic fields
+        :srcset: /examples/99-advanced/images/sphx_glr_magnetic-fields_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_magnetic-fields_002.vtksz
+
 
 
 
@@ -173,7 +217,7 @@ Plot the Magnet Field Strength
 Finally, let's bring this all together by plotting the magnetic field
 strength while also plotting the streamlines and the coil.
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-109
+.. GENERATED FROM PYTHON SOURCE LINES 84-111
 
 .. code-block:: default
 
@@ -184,6 +228,8 @@ strength while also plotting the streamlines and the coil.
     # Customize the opacity to make it easier to visualize the strength of the
     # field nearby the coil
     opacity = 1 - np.geomspace(1.0, 0.05, 10)
+
+
 
     # Add this all to the plotter
     pl = pv.Plotter()
@@ -205,6 +251,7 @@ strength while also plotting the streamlines and the coil.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_magnetic-fields_003.png
    :alt: magnetic fields
    :srcset: /examples/99-advanced/images/sphx_glr_magnetic-fields_003.png
@@ -215,9 +262,11 @@ strength while also plotting the streamlines and the coil.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.749 seconds)
+   **Total running time of the script:** (0 minutes 15.062 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_magnetic-fields.py:

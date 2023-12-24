@@ -2021,6 +2021,23 @@ plotting routines to perform tasks like:
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Scaled Gaussian Points">
+
+.. only:: html
+
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_points-gaussian-scale_thumb.png
+    :alt:
+
+  :ref:`sphx_glr_examples_02-plot_points-gaussian-scale.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Scaled Gaussian Points</div>
+    </div>
+
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Walk through of all the different capabilities of scalar bars and how a user can customize scal...">
 
 .. only:: html

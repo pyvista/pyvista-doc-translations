@@ -34,7 +34,7 @@ Here, we demonstrate FFT usage by denoising an image, effectively removing any
 This example was inspired by `Image denoising by FFT
 <https://scipy-lectures.org/intro/scipy/auto_examples/solutions/plot_fft_image_denoise.html>`_.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-25
+.. GENERATED FROM PYTHON SOURCE LINES 19-27
 
 .. code-block:: default
 
@@ -51,11 +51,13 @@ This example was inspired by `Image denoising by FFT
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-27
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-33
 
 Load the example Moon landing image and plot it.
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-39
+.. GENERATED FROM PYTHON SOURCE LINES 33-45
 
 .. code-block:: default
 
@@ -74,10 +76,13 @@ Load the example Moon landing image and plot it.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft_001.png
    :alt: image fft
    :srcset: /examples/01-filter/images/sphx_glr_image-fft_001.png
    :class: sphx-glr-single-img
+
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -96,7 +101,7 @@ Load the example Moon landing image and plot it.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-47
+.. GENERATED FROM PYTHON SOURCE LINES 46-53
 
 Apply FFT to the image
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -106,7 +111,7 @@ scalars name when loading a PNG image.
 The output from the filter is a complex array stored by the same name unless
 specified using ``output_scalars_name``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-52
+.. GENERATED FROM PYTHON SOURCE LINES 53-58
 
 .. code-block:: default
 
@@ -135,7 +140,7 @@ specified using ``output_scalars_name``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-60
+.. GENERATED FROM PYTHON SOURCE LINES 59-66
 
 Plot the FFT of the image
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,7 +150,7 @@ Note that we are effectively viewing the "frequency" of the data in this
 image, where the four corners contain the low frequency content of the image,
 and the middle is the high frequency content of the image.
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-71
+.. GENERATED FROM PYTHON SOURCE LINES 66-77
 
 .. code-block:: default
 
@@ -163,6 +168,7 @@ and the middle is the high frequency content of the image.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft_002.png
    :alt: image fft
    :srcset: /examples/01-filter/images/sphx_glr_image-fft_002.png
@@ -172,7 +178,9 @@ and the middle is the high frequency content of the image.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-84
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 78-90
 
 Remove the noise from the ``fft_image``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +195,7 @@ the image. Note that the high frequency content is in the middle of the array.
    :func:`pyvista.ImageDataFilters.low_pass` filter. This section is here
    for demonstration purposes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-103
+.. GENERATED FROM PYTHON SOURCE LINES 90-109
 
 .. code-block:: default
 
@@ -213,6 +221,7 @@ the image. Note that the high frequency content is in the middle of the array.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft_003.png
    :alt: image fft
    :srcset: /examples/01-filter/images/sphx_glr_image-fft_003.png
@@ -222,13 +231,15 @@ the image. Note that the high frequency content is in the middle of the array.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-107
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 110-113
 
 Convert to the spatial domain using reverse FFT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finally, convert the image data back to the "spatial" domain and plot it.
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-112
+.. GENERATED FROM PYTHON SOURCE LINES 113-118
 
 .. code-block:: default
 
@@ -237,6 +248,7 @@ Finally, convert the image data back to the "spatial" domain and plot it.
     rfft = fft_image.rfft()
     rfft['PNGImage'] = np.real(rfft['PNGImage'])
     rfft.plot(cpos="xy", theme=grey_theme, text='Processed Moon Landing Image')
+
 
 
 
@@ -250,9 +262,11 @@ Finally, convert the image data back to the "spatial" domain and plot it.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.447 seconds)
+   **Total running time of the script:** (0 minutes 13.960 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft.py:

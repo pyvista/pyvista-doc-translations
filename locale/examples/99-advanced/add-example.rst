@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_add-example.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_add-example.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -55,7 +55,31 @@ Example file names should be hyphen separated snake case:
 After this preamble is complete, the first code block begins. This is where you
 typically set up your imports.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+.. note::
+   By default, the documentation scrapper will generate both a static image and
+   an interactive widget for each plot. If you want to turn this feature off
+   define at the top of your file:
+
+
+   ``# sphinx_gallery_start_ignore``
+
+   ``PYVISTA_GALLERY_FORCE_STATIC_IN_DOCUMENT = True``
+
+   ``# sphinx_gallery_end_ignore``
+
+   If you want to use static images only for some of your plots. Define
+   ``PYVISTA_GALLERY_FORCE_STATIC`` before the ``plot``/``show`` command that
+   produces the image you want to turn into static.
+
+   .. code-block::
+
+       ...
+       pl.show()  # this will be interactive plot
+
+       ...
+       pl.show()  # this will be static plot
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-72
 
 .. code-block:: default
 
@@ -70,7 +94,7 @@ typically set up your imports.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-59
+.. GENERATED FROM PYTHON SOURCE LINES 73-87
 
 Section Title
 ~~~~~~~~~~~~~
@@ -87,7 +111,7 @@ As in Jupyter notebooks, if a statement is unassigned at the end of a code
 block, output will be generated and printed to the screen according to its
 ``__repr__`` method.  Otherwise, you can use ``print()`` to output text.
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-65
+.. GENERATED FROM PYTHON SOURCE LINES 87-93
 
 .. code-block:: default
 
@@ -105,8 +129,8 @@ block, output will be generated and printed to the screen according to its
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1680</td></tr>
     <tr><td>N Points</td><td>842</td></tr>
@@ -118,7 +142,7 @@ block, output will be generated and printed to the screen according to its
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>Normals</td><td>Points</td><td>float32</td><td>3</td><td>-1.000e+00</td><td>1.000e+00</td></tr>
     </table>
@@ -128,7 +152,7 @@ block, output will be generated and printed to the screen according to its
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-78
+.. GENERATED FROM PYTHON SOURCE LINES 94-106
 
 Plots and images
 ~~~~~~~~~~~~~~~~
@@ -143,7 +167,7 @@ output HTML.
 
    Also note that this image number uses one based indexing.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-82
+.. GENERATED FROM PYTHON SOURCE LINES 106-110
 
 .. code-block:: default
 
@@ -154,16 +178,38 @@ output HTML.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_add-example_001.png
-   :alt: add example
-   :srcset: /examples/99-advanced/images/sphx_glr_add-example_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_add-example_001.png
+        :alt: add example
+        :srcset: /examples/99-advanced/images/sphx_glr_add-example_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_add-example_001.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-92
+
+.. GENERATED FROM PYTHON SOURCE LINES 111-120
 
 Caveat - Plotter must be within One Cell
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,7 +221,7 @@ Here we just exercise the :class:`pyvista.Actor` ``repr`` for demonstrating
 why you might want to instantiate a plotter without showing it in the same
 cell.
 
-.. GENERATED FROM PYTHON SOURCE LINES 92-98
+.. GENERATED FROM PYTHON SOURCE LINES 120-126
 
 .. code-block:: default
 
@@ -188,10 +234,13 @@ cell.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_add-example_002.png
    :alt: add example
    :srcset: /examples/99-advanced/images/sphx_glr_add-example_002.png
    :class: sphx-glr-single-img
+
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -199,7 +248,7 @@ cell.
  .. code-block:: none
 
 
-    Actor (0x7f5e9c0ca220)
+    Actor (0x7f875a30a080)
       Center:                     (0.0, 0.0, 0.0)
       Pickable:                   True
       Position:                   (0.0, 0.0, 0.0)
@@ -208,19 +257,20 @@ cell.
       X Bounds                    -4.993E-01, 4.993E-01
       Y Bounds                    -4.965E-01, 4.965E-01
       Z Bounds                    -5.000E-01, 5.000E-01
-      User matrix:                Unset
+      User matrix:                Set
       Has mapper:                 True
 
-    Property (0x7f5e9c0ca340)
+    Property (0x7f8753566080)
       Ambient:                     0.0
-      Ambient color:               Color(name='tan', hex='#d2b48cff')
+      Ambient color:               Color(name='lightblue', hex='#add8e6ff', opacity=255)
       Anisotropy:                  0.0
-      Color:                       Color(name='tan', hex='#d2b48cff')
+      Color:                       Color(name='lightblue', hex='#add8e6ff', opacity=255)
       Culling:                     "none"
       Diffuse:                     1.0
-      Diffuse color:               Color(name='tan', hex='#d2b48cff')
-      Edge color:                  Color(name='black', hex='#000000ff')
-      Interpolation:               "Flat"
+      Diffuse color:               Color(name='lightblue', hex='#add8e6ff', opacity=255)
+      Edge color:                  Color(name='black', hex='#000000ff', opacity=255)
+      Edge opacity:                1.0
+      Interpolation:               InterpolationType.FLAT
       Lighting:                    True
       Line width:                  1.0
       Metallic:                    0.0
@@ -231,11 +281,11 @@ cell.
       Roughness:                   0.5
       Show edges:                  False
       Specular:                    0.0
-      Specular color:              Color(name='tan', hex='#d2b48cff')
+      Specular color:              Color(name='lightblue', hex='#add8e6ff', opacity=255)
       Specular power:              100.0
       Style:                       "Surface"
 
-    DataSetMapper (0x7f5e9c0ca340)
+    DataSetMapper (0x7f8753566080)
       Scalar visibility:           False
       Scalar range:                (0.0, 1.0)
       Interpolate before mapping:  True
@@ -243,25 +293,24 @@ cell.
       Color mode:                  direct
 
     Attached dataset:
-    PolyData (0x7f5e9464f6a0)
-      N Cells:	1680
-      N Points:	842
-      N Strips:	0
-      X Bounds:	-4.993e-01, 4.993e-01
-      Y Bounds:	-4.965e-01, 4.965e-01
-      Z Bounds:	-5.000e-01, 5.000e-01
-      N Arrays:	1
+    PolyData (0x7f87610415a0)
+      N Cells:    1680
+      N Points:   842
+      N Strips:   0
+      X Bounds:   -4.993e-01, 4.993e-01
+      Y Bounds:   -4.965e-01, 4.965e-01
+      Z Bounds:   -5.000e-01, 5.000e-01
+      N Arrays:   1
 
 
 
-
-.. GENERATED FROM PYTHON SOURCE LINES 99-102
+.. GENERATED FROM PYTHON SOURCE LINES 127-130
 
 This Cell Cannot Run the Plotter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The plotter will already be closed by ``sphinx_gallery``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 102-111
+.. GENERATED FROM PYTHON SOURCE LINES 130-139
 
 .. code-block:: default
 
@@ -281,7 +330,7 @@ The plotter will already be closed by ``sphinx_gallery``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-119
+.. GENERATED FROM PYTHON SOURCE LINES 140-147
 
 Animations
 ~~~~~~~~~~
@@ -291,7 +340,7 @@ within a single cell.
 
 Here, we explode a simple sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 119-143
+.. GENERATED FROM PYTHON SOURCE LINES 147-171
 
 .. code-block:: default
 
@@ -322,16 +371,19 @@ Here, we explode a simple sphere.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_add-example_003.png
+
+.. image-sg:: /examples/99-advanced/images/sphx_glr_add-example_003.gif
    :alt: add example
-   :srcset: /examples/99-advanced/images/sphx_glr_add-example_003.png
+   :srcset: /examples/99-advanced/images/sphx_glr_add-example_003.gif
    :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 144-153
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 172-181
 
 Adding Example Files
 ~~~~~~~~~~~~~~~~~~~~
@@ -343,7 +395,7 @@ Under the hood, PyVista uses `pooch <https://github.com/fatiando/pooch>`_,
 and you can easily access any files added with
 :func:`pyvista.examples.downloads.download_file`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 153-158
+.. GENERATED FROM PYTHON SOURCE LINES 181-186
 
 .. code-block:: default
 
@@ -365,7 +417,7 @@ and you can easily access any files added with
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 159-169
+.. GENERATED FROM PYTHON SOURCE LINES 187-197
 
 Adding a Wrapped Example
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -378,7 +430,7 @@ better for you to write a wrapped ``download_<example-dataset>()`` within
 If you intend on adding an example file, you should add a new function in
 ``downloads.py`` to make it easy for users to add example files.
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-187
+.. GENERATED FROM PYTHON SOURCE LINES 197-215
 
 .. code-block:: default
 
@@ -409,7 +461,7 @@ If you intend on adding an example file, you should add a new function in
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>69451</td></tr>
     <tr><td>N Points</td><td>35947</td></tr>
@@ -428,7 +480,7 @@ If you intend on adding an example file, you should add a new function in
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.784 seconds)
+   **Total running time of the script:** (0 minutes 2.171 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_add-example.py:
@@ -436,6 +488,8 @@ If you intend on adding an example file, you should add a new function in
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

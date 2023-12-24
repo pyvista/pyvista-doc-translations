@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_box-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_box-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -37,9 +37,11 @@ scene with a box widget that controls its extent, the
 
 .. image:: ../../images/gifs/box-clip.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-27
+.. GENERATED FROM PYTHON SOURCE LINES 21-29
 
 .. code-block:: default
+
+
 
 
     import pyvista as pv
@@ -54,7 +56,7 @@ scene with a box widget that controls its extent, the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-34
+.. GENERATED FROM PYTHON SOURCE LINES 34-40
 
 .. code-block:: default
 
@@ -62,6 +64,7 @@ scene with a box widget that controls its extent, the
     p = pv.Plotter()
     p.add_mesh_clip_box(mesh, color='white')
     p.show(cpos=[-1, -1, 0.2])
+
 
 
 
@@ -76,11 +79,13 @@ scene with a box widget that controls its extent, the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-36
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-42
 
 After interacting with the scene, the clipped mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-37
+.. GENERATED FROM PYTHON SOURCE LINES 42-43
 
 .. code-block:: default
 
@@ -91,47 +96,41 @@ After interacting with the scene, the clipped mesh is available as:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7fcb42f8bd60)
-      N Cells:	2018232
-      N Points:	1009118
-      X Bounds:	-1.194e+02, 1.194e+02
-      Y Bounds:	-1.813e+02, 1.813e+02
-      Z Bounds:	-2.473e+02, 2.473e+02
-      N Arrays:	0
-    ]
+    [UnstructuredGrid (0x7f87505c94e0)
+      N Cells:    2018232
+      N Points:   1009118
+      X Bounds:   -1.194e+02, 1.194e+02
+      Y Bounds:   -1.813e+02, 1.813e+02
+      Z Bounds:   -2.473e+02, 2.473e+02
+      N Arrays:   1]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.533 seconds)
+   **Total running time of the script:** (0 minutes 17.619 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_box-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: box-widget.py <box-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: box-widget.py <box-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: box-widget.ipynb <box-widget.ipynb>`
+      :download:`Download Jupyter notebook: box-widget.ipynb <box-widget.ipynb>`
 
 
 .. only:: html

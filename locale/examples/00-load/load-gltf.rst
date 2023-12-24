@@ -70,6 +70,7 @@ helmet example.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_load-gltf_001.png
    :alt: load gltf
    :srcset: /examples/00-load/images/sphx_glr_load-gltf_001.png
@@ -79,12 +80,14 @@ helmet example.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 39-41
 
 You can also directly read in gltf files and extract the underlying
 mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-42
+.. GENERATED FROM PYTHON SOURCE LINES 41-45
 
 .. code-block:: default
 
@@ -95,10 +98,32 @@ mesh.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_load-gltf_002.png
-   :alt: load gltf
-   :srcset: /examples/00-load/images/sphx_glr_load-gltf_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_load-gltf_002.png
+        :alt: load gltf
+        :srcset: /examples/00-load/images/sphx_glr_load-gltf_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_load-gltf_002.vtksz
+
 
 
 
@@ -107,7 +132,7 @@ mesh.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  52.769 seconds)
+   **Total running time of the script:** (0 minutes 27.702 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-gltf.py:

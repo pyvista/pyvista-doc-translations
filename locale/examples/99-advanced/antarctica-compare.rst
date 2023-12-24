@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_antarctica-compare.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_antarctica-compare.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -33,12 +33,14 @@ The modeling results are courtesy of `Urruty Benoit <https://github.com/BenoitUR
 and  are from the `Elmer/Ice <http://elmerice.elmerfem.org>`_ simulation
 software.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-29
+.. GENERATED FROM PYTHON SOURCE LINES 18-31
 
 .. code-block:: default
 
 
     import numpy as np
+
+
 
     import pyvista as pv
     from pyvista import examples
@@ -56,11 +58,12 @@ software.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1106948</td></tr>
     <tr><td>N Points</td><td>557470</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-2.506e+06, 2.743e+06</td></tr>
     <tr><td>Y Bounds</td><td>-2.143e+06, 2.240e+06</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
@@ -68,11 +71,11 @@ software.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td>ssavelocity</td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
+    <tr><td><b>ssavelocity</b></td><td>Points</td><td>float64</td><td>3</td><td>-4.341e+03</td><td>9.677e+03</td></tr>
     <tr><td>node_value</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>2.300e+01</td></tr>
-    <tr><td><b>magnitude</b></td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
+    <tr><td>magnitude</td><td>Points</td><td>float64</td><td>1</td><td>6.649e-03</td><td>1.013e+04</td></tr>
     </table>
 
     </td></tr> </table>
@@ -80,11 +83,11 @@ software.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-32
+.. GENERATED FROM PYTHON SOURCE LINES 37-38
 
 Here is a helper to extract regions of the mesh based on the simulation node.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-39
+.. GENERATED FROM PYTHON SOURCE LINES 38-45
 
 .. code-block:: default
 
@@ -102,7 +105,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-49
+.. GENERATED FROM PYTHON SOURCE LINES 46-55
 
 .. code-block:: default
 
@@ -118,6 +121,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
    :alt: antarctica compare
    :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_001.png
@@ -127,7 +131,9 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-55
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-61
 
 .. code-block:: default
 
@@ -135,6 +141,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
     vel_dargs = dict(scalars="magnitude", clim=[1e-3, 1e4], cmap='Blues', log_scale=True)
 
     mesh.plot(cpos="xy", **vel_dargs)
+
 
 
 
@@ -148,7 +155,9 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 62-66
 
 .. code-block:: default
 
@@ -163,7 +172,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-67
+.. GENERATED FROM PYTHON SOURCE LINES 67-73
 
 .. code-block:: default
 
@@ -172,6 +181,7 @@ Here is a helper to extract regions of the mesh based on the simulation node.
     pl.add_mesh(a, **vel_dargs)
     pl.add_mesh(b, **vel_dargs)
     pl.show(cpos='xy')
+
 
 
 
@@ -185,11 +195,13 @@ Here is a helper to extract regions of the mesh based on the simulation node.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-69
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 plot vectors without mesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-81
+.. GENERATED FROM PYTHON SOURCE LINES 75-87
 
 .. code-block:: default
 
@@ -208,6 +220,7 @@ plot vectors without mesh
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_004.png
    :alt: antarctica compare
    :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_004.png
@@ -217,12 +230,14 @@ plot vectors without mesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-84
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 88-90
 
 Compare directions. Normalize them so we can get a reasonable direction
 comparison.
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-104
+.. GENERATED FROM PYTHON SOURCE LINES 90-110
 
 .. code-block:: default
 
@@ -249,6 +264,7 @@ comparison.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_005.png
    :alt: antarctica compare
    :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_005.png
@@ -258,11 +274,13 @@ comparison.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-106
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 111-112
 
 flow_a that agrees with the mean flow path of flow_b
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-113
+.. GENERATED FROM PYTHON SOURCE LINES 112-119
 
 .. code-block:: default
 
@@ -276,6 +294,7 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_antarctica-compare_006.png
    :alt: antarctica compare
    :srcset: /examples/99-advanced/images/sphx_glr_antarctica-compare_006.png
@@ -285,7 +304,9 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-120
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 120-126
 
 .. code-block:: default
 
@@ -295,6 +316,7 @@ flow_a that agrees with the mean flow path of flow_b
     pl.add_mesh(a, color='w')
     pl.add_mesh(b, scalars=agree, cmap='bwr', scalar_bar_args={'title': 'Flow agreement with block a'})
     pl.show(cpos='xy')
+
 
 
 
@@ -308,30 +330,29 @@ flow_a that agrees with the mean flow path of flow_b
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.662 seconds)
+   **Total running time of the script:** (0 minutes 31.370 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_antarctica-compare.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: antarctica-compare.py <antarctica-compare.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: antarctica-compare.py <antarctica-compare.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: antarctica-compare.ipynb <antarctica-compare.ipynb>`
+      :download:`Download Jupyter notebook: antarctica-compare.ipynb <antarctica-compare.ipynb>`
 
 
 .. only:: html

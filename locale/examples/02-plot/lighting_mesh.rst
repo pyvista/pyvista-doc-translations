@@ -61,10 +61,32 @@ First, lets take a look at the mesh with default lighting conditions
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
-   :alt: lighting mesh
-   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
+        :alt: lighting mesh
+        :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_lighting_mesh_001.vtksz
+
 
 
 
@@ -83,10 +105,32 @@ What about with no lighting
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
-   :alt: lighting mesh
-   :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
+        :alt: lighting mesh
+        :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_lighting_mesh_002.vtksz
+
 
 
 
@@ -96,9 +140,11 @@ What about with no lighting
 
 Demonstration of the specular property
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-47
+.. GENERATED FROM PYTHON SOURCE LINES 32-49
 
 .. code-block:: default
+
+
 
     p = pv.Plotter(shape=(1, 2), window_size=[1500, 500])
 
@@ -118,6 +164,7 @@ Demonstration of the specular property
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lighting_mesh_003.png
    :alt: lighting mesh
    :srcset: /examples/02-plot/images/sphx_glr_lighting_mesh_003.png
@@ -127,15 +174,20 @@ Demonstration of the specular property
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-49
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 54-55
 
 Just specular
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-51
+.. GENERATED FROM PYTHON SOURCE LINES 55-59
 
 .. code-block:: default
 
+
+
     mesh.plot(specular=0.5, cpos=cpos, show_scalar_bar=False)
+
 
 
 
@@ -149,15 +201,20 @@ Just specular
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-53
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 64-65
 
 Specular power
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-55
+.. GENERATED FROM PYTHON SOURCE LINES 65-69
 
 .. code-block:: default
 
+
+
     mesh.plot(specular=0.5, specular_power=15, cpos=cpos, show_scalar_bar=False)
+
 
 
 
@@ -171,15 +228,20 @@ Specular power
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-75
 
 Demonstration of all three in use
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-59
+.. GENERATED FROM PYTHON SOURCE LINES 75-79
 
 .. code-block:: default
 
+
+
     mesh.plot(diffuse=0.5, specular=0.5, ambient=0.5, cpos=cpos, show_scalar_bar=False)
+
 
 
 
@@ -193,7 +255,9 @@ Demonstration of all three in use
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-62
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 84-86
 
 For detailed control over lighting conditions in general see the
 :ref:`light_examples` examples.
@@ -201,7 +265,7 @@ For detailed control over lighting conditions in general see the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 14.968 seconds)
+   **Total running time of the script:** (0 minutes 13.228 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lighting_mesh.py:

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_plot-over-circular-arc.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_plot-over-circular-arc.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -23,7 +23,7 @@ Plot Scalars Over a Circular Arc
 
 Interpolate the scalars of a dataset over a circular arc.
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 8-13
 
 .. code-block:: default
 
@@ -38,14 +38,15 @@ Interpolate the scalars of a dataset over a circular arc.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-18
+
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 Volumetric Mesh
 +++++++++++++++
 
 Add the height scalars to a uniform 3D mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-39
+.. GENERATED FROM PYTHON SOURCE LINES 23-44
 
 .. code-block:: default
 
@@ -73,6 +74,7 @@ Add the height scalars to a uniform 3D mesh.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_001.png
    :alt: plot over circular arc
    :srcset: /examples/02-plot/images/sphx_glr_plot-over-circular-arc_001.png
@@ -82,11 +84,13 @@ Add the height scalars to a uniform 3D mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-41
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 45-46
 
 Run the filter and produce a line plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-42
+.. GENERATED FROM PYTHON SOURCE LINES 46-47
 
 .. code-block:: default
 
@@ -106,28 +110,25 @@ Run the filter and produce a line plot.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.484 seconds)
+   **Total running time of the script:** (0 minutes 0.291 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_plot-over-circular-arc.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: plot-over-circular-arc.py <plot-over-circular-arc.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: plot-over-circular-arc.py <plot-over-circular-arc.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: plot-over-circular-arc.ipynb <plot-over-circular-arc.ipynb>`
+      :download:`Download Jupyter notebook: plot-over-circular-arc.ipynb <plot-over-circular-arc.ipynb>`
 
 
 .. only:: html

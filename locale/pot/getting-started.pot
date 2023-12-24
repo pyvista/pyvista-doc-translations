@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-07 07:54+0000\n"
+"POT-Creation-Date: 2023-12-24 13:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -520,6 +520,16 @@ msgstr ""
 msgid "Learn more about why we created PyVista as an interface to the Visualization Toolkit (VTK)."
 msgstr ""
 
+#: ../../pyvista/doc/source/getting-started/index.rst:0
+#: ../../pyvista/doc/source/getting-started/why.rst:0
+msgid "Static Scene"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/index.rst:0
+#: ../../pyvista/doc/source/getting-started/why.rst:0
+msgid "Interactive Scene"
+msgstr ""
+
 #: ../../pyvista/doc/source/getting-started/index.rst:144
 msgid "Using PyVista in your research? Please consider citing or acknowledging us.  We have a `JOSS Publication`_!"
 msgstr ""
@@ -898,26 +908,26 @@ msgstr ""
 msgid "For example, triangular surface meshes in VTK can be subdivided but every other object in VTK cannot. It then makes sense that a :func:`pyvista.PolyDataFilters.subdivide` method be added to the existing triangular surface mesh. That way, subdivision can be performed with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:107
+#: ../../pyvista/doc/source/getting-started/why.rst:108
 msgid "Additionally, the docstrings for all methods in PyVista are intended to be used within interactive coding sessions. This allows users to use sophisticated processing routines on the fly with immediate access to a description of how to use those methods:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:116
+#: ../../pyvista/doc/source/getting-started/why.rst:117
 msgid "Interfacing with Other Libraries"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:117
+#: ../../pyvista/doc/source/getting-started/why.rst:118
 msgid "PyVista is heavily dependent on `numpy <https://numpy.org/>`_ and uses it to represent point, cell, field, and other data from the VTK meshes. This data can be easily accessed from the dataset attributes like :attr:`pyvista.DataSet.points`. For example the first 10 points of a circle from pyvista can be accessed with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:128
+#: ../../pyvista/doc/source/getting-started/why.rst:131
 msgid "And these points can be operated on as if it was a NumPy array, all without losing connection to the underlying VTK data array."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:131
+#: ../../pyvista/doc/source/getting-started/why.rst:134
 msgid "At the same time, a variety of PyVista objects can be generated directly from numpy arrays. For example, below we generate a vector field of arrows using :func:`numpy.meshgrid`:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:159
+#: ../../pyvista/doc/source/getting-started/why.rst:163
 msgid "PyVista has connections to several other libraries, such as `meshio <https://github.com/nschloe/meshio>`_ and `matplotlib <https://matplotlib.org/>`_, allowing PyVista to extend VTK with functionality from the Python ecosystem."
 msgstr ""

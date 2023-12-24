@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_line-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_line-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -33,9 +33,10 @@ One particularly fun example is to use the line widget to create a source for
 the :func:`pyvista.DataSetFilters.streamlines` filter. Again note the use of
 the ``name`` argument in ``add_mesh``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-31
+.. GENERATED FROM PYTHON SOURCE LINES 17-32
 
 .. code-block:: default
+
 
 
     import numpy as np
@@ -58,7 +59,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-49
+.. GENERATED FROM PYTHON SOURCE LINES 37-54
 
 .. code-block:: default
 
@@ -82,6 +83,7 @@ the ``name`` argument in ``add_mesh``.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_line-widget_001.png
    :alt: line widget
    :srcset: /examples/03-widgets/images/sphx_glr_line-widget_001.png
@@ -91,7 +93,9 @@ the ``name`` argument in ``add_mesh``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-53
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 55-58
 
 And here is a screen capture of a user interacting with this
 
@@ -100,28 +104,25 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.797 seconds)
+   **Total running time of the script:** (0 minutes 0.546 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_line-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: line-widget.py <line-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: line-widget.py <line-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: line-widget.ipynb <line-widget.ipynb>`
+      :download:`Download Jupyter notebook: line-widget.ipynb <line-widget.ipynb>`
 
 
 .. only:: html

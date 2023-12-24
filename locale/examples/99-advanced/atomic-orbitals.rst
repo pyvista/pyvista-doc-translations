@@ -103,8 +103,8 @@ This dataset evaluates this function for the hydrogen orbital
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>970299</td></tr>
     <tr><td>N Points</td><td>1000000</td></tr>
@@ -117,7 +117,7 @@ This dataset evaluates this function for the hydrogen orbital
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>real_wf</b></td><td>Points</td><td>float64</td><td>1</td><td>-1.689e-02</td><td>1.689e-02</td></tr>
     <tr><td>wf</td><td>Points</td><td>complex128</td><td>1</td><td>-1.689e-02+1.353e-03j</td><td>1.689e-02+1.353e-03j</td></tr>
@@ -143,9 +143,10 @@ of the electron wave function.
    ``opacity='linear'``. Instead, we use ``[1, 0, 1]`` since we would like
    the opacity to be proportional to the absolute value of the scalars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-84
+.. GENERATED FROM PYTHON SOURCE LINES 75-85
 
 .. code-block:: default
+
 
 
     pl = pv.Plotter()
@@ -154,6 +155,7 @@ of the electron wave function.
     pl.camera.zoom(2)
     pl.show_axes()
     pl.show()
+
 
 
 
@@ -168,7 +170,9 @@ of the electron wave function.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-94
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 90-99
 
 Plot the Orbital Contours as an Isosurface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -180,7 +184,7 @@ Note how we use the absolute value of the scalars when evaluating
 :func:`contour() <pyvista.DataSetFilters.contour>` to capture where the
 positive and negative phases cross ``eval_at``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-108
+.. GENERATED FROM PYTHON SOURCE LINES 99-113
 
 .. code-block:: default
 
@@ -201,16 +205,38 @@ positive and negative phases cross ``eval_at``.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_002.png
-   :alt: atomic orbitals
-   :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_002.png
+        :alt: atomic orbitals
+        :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_atomic-orbitals_002.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-124
+
+.. GENERATED FROM PYTHON SOURCE LINES 114-129
 
 Volumetric Plot: Plot the Orbitals using RGBA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -228,9 +254,10 @@ with ``orbital['real_wf'] < 0``.
 
 Let's start with a simple one, the :math:`3p_z` orbital.
 
-.. GENERATED FROM PYTHON SOURCE LINES 124-162
+.. GENERATED FROM PYTHON SOURCE LINES 129-168
 
 .. code-block:: default
+
 
 
 
@@ -273,6 +300,7 @@ Let's start with a simple one, the :math:`3p_z` orbital.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_003.png
    :alt: atomic orbitals
    :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_003.png
@@ -282,17 +310,21 @@ Let's start with a simple one, the :math:`3p_z` orbital.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 163-165
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 173-175
 
 Volumetric Plot: :math:`4d_{z^2}` orbital
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 165-169
+.. GENERATED FROM PYTHON SOURCE LINES 175-180
 
 .. code-block:: default
 
+
     hydro_orbital = examples.load_hydrogen_orbital(4, 2, 0)
     plot_orbital(hydro_orbital, clip_plane='-y')
+
 
 
 
@@ -307,17 +339,21 @@ Volumetric Plot: :math:`4d_{z^2}` orbital
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 170-172
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 185-187
 
 Volumetric Plot: :math:`4d_{xz}` orbital
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 172-176
+.. GENERATED FROM PYTHON SOURCE LINES 187-192
 
 .. code-block:: default
 
+
     hydro_orbital = examples.load_hydrogen_orbital(4, 2, -1)
     plot_orbital(hydro_orbital, clip_plane='-y')
+
 
 
 
@@ -332,7 +368,9 @@ Volumetric Plot: :math:`4d_{xz}` orbital
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 177-183
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 197-203
 
 Plot an Orbital Using a Density Plot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,7 +379,7 @@ use :func:`numpy.random.choice` to sample all the points of our
 :class:`pyvista.ImageData` based on the probability of the electron being
 at that coordinate.
 
-.. GENERATED FROM PYTHON SOURCE LINES 183-223
+.. GENERATED FROM PYTHON SOURCE LINES 203-243
 
 .. code-block:: default
 
@@ -388,24 +426,48 @@ at that coordinate.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_006.png
-   :alt: atomic orbitals
-   :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_006.png
+        :alt: atomic orbitals
+        :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_atomic-orbitals_006.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 224-227
+
+.. GENERATED FROM PYTHON SOURCE LINES 244-247
 
 Density Plot - Gaussian Points Representation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Finally, let's plot the same data using the "Gaussian points" representation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 227-238
+.. GENERATED FROM PYTHON SOURCE LINES 247-260
 
 .. code-block:: default
+
+
 
 
     point_cloud.plot(
@@ -421,6 +483,7 @@ Finally, let's plot the same data using the "Gaussian points" representation.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_atomic-orbitals_007.png
    :alt: atomic orbitals
    :srcset: /examples/99-advanced/images/sphx_glr_atomic-orbitals_007.png
@@ -431,9 +494,11 @@ Finally, let's plot the same data using the "Gaussian points" representation.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.895 seconds)
+   **Total running time of the script:** (0 minutes 22.537 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_atomic-orbitals.py:

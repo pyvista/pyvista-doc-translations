@@ -24,7 +24,7 @@ Multi-Window Plot
 
 Subplotting: having multiple scenes in a single window
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-12
+.. GENERATED FROM PYTHON SOURCE LINES 8-14
 
 .. code-block:: default
 
@@ -39,14 +39,16 @@ Subplotting: having multiple scenes in a single window
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-17
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 19-23
 
 This example shows how to create a multi-window plotter by specifying the
 ``shape`` parameter.  The window generated is a two by two window by setting
 ``shape=(2, 2)``. Use the :func:`pyvista.Plotter.subplot` method to
 select the subplot you wish to be the active subplot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-47
+.. GENERATED FROM PYTHON SOURCE LINES 23-53
 
 .. code-block:: default
 
@@ -83,6 +85,7 @@ select the subplot you wish to be the active subplot.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_multi-window_001.png
    :alt: multi window
    :srcset: /examples/02-plot/images/sphx_glr_multi-window_001.png
@@ -92,7 +95,9 @@ select the subplot you wish to be the active subplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-64
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 54-70
 
 .. code-block:: default
 
@@ -115,6 +120,7 @@ select the subplot you wish to be the active subplot.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_multi-window_002.png
    :alt: multi window
    :srcset: /examples/02-plot/images/sphx_glr_multi-window_002.png
@@ -124,12 +130,14 @@ select the subplot you wish to be the active subplot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-67
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 71-73
 
 Split the rendering window in half and subdivide it in a nr. of vertical or
 horizontal subplots.
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-97
+.. GENERATED FROM PYTHON SOURCE LINES 73-103
 
 .. code-block:: default
 
@@ -166,6 +174,7 @@ horizontal subplots.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_multi-window_003.png
    :alt: multi window
    :srcset: /examples/02-plot/images/sphx_glr_multi-window_003.png
@@ -175,7 +184,9 @@ horizontal subplots.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-103
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 104-109
 
 To get full flexibility over the layout grid, you can define the relative
 weighting of rows and columns and register groups that can span over multiple
@@ -183,7 +194,7 @@ rows and columns. A group is defined through a tuple ``(rows,cols)`` of row
 and column indices or slices. The group always spans from the smallest to the
 largest (row or column) id that is passed through the list or slice.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-168
+.. GENERATED FROM PYTHON SOURCE LINES 109-174
 
 .. code-block:: default
 
@@ -255,6 +266,7 @@ largest (row or column) id that is passed through the list or slice.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_multi-window_004.png
    :alt: multi window
    :srcset: /examples/02-plot/images/sphx_glr_multi-window_004.png
@@ -265,9 +277,11 @@ largest (row or column) id that is passed through the list or slice.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.335 seconds)
+   **Total running time of the script:** (0 minutes 2.546 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_multi-window.py:

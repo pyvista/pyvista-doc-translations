@@ -29,9 +29,11 @@ triangle strips.
 Triangle strips are a more efficient way of storing the connectivity of
 adjacent triangles.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-32
+.. GENERATED FROM PYTHON SOURCE LINES 14-34
 
 .. code-block:: default
+
+
 
     import numpy as np
 
@@ -58,14 +60,14 @@ adjacent triangles.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-37
+.. GENERATED FROM PYTHON SOURCE LINES 38-42
 
 Build the connectivity of the strips
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The first element is the number of points in the strip next three elements is the
 initial triangle the rest of the points is where the strip extends to.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-45
+.. GENERATED FROM PYTHON SOURCE LINES 42-50
 
 .. code-block:: default
 
@@ -86,7 +88,7 @@ initial triangle the rest of the points is where the strip extends to.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>8</td></tr>
@@ -102,7 +104,7 @@ initial triangle the rest of the points is where the strip extends to.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-51
+.. GENERATED FROM PYTHON SOURCE LINES 51-56
 
 Plot the triangle strips
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,7 +112,7 @@ Plot the ``PolyData`` and include the point labels using
 :func:`add_point_labels() <pyvista.Plotter.add_point_labels>` so we can see how
 the PolyData is constructed using triangle strips.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-60
+.. GENERATED FROM PYTHON SOURCE LINES 56-65
 
 .. code-block:: default
 
@@ -126,6 +128,7 @@ the PolyData is constructed using triangle strips.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-polydata-strips_001.png
    :alt: create polydata strips
    :srcset: /examples/00-load/images/sphx_glr_create-polydata-strips_001.png
@@ -135,14 +138,16 @@ the PolyData is constructed using triangle strips.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 61-65
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 66-70
 
 Convert strips to triangles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can convert strips to triangle faces using :func:`triangulate
 <pyvista.DataSetFilters.triangulate>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-69
+.. GENERATED FROM PYTHON SOURCE LINES 70-74
 
 .. code-block:: default
 
@@ -159,7 +164,7 @@ You can convert strips to triangle faces using :func:`triangulate
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>6</td></tr>
     <tr><td>N Points</td><td>8</td></tr>
@@ -175,7 +180,7 @@ You can convert strips to triangle faces using :func:`triangulate
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-80
+.. GENERATED FROM PYTHON SOURCE LINES 75-85
 
 We can use this new :class:`pyvista.PolyData` to see how VTK represents
 triangle strips as individual faces.
@@ -188,7 +193,7 @@ even despite representing the same data.
    the face) for each face in the face array. This is the initial ``3`` in
    the following face array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-85
+.. GENERATED FROM PYTHON SOURCE LINES 85-90
 
 .. code-block:: default
 
@@ -215,7 +220,7 @@ even despite representing the same data.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-91
+.. GENERATED FROM PYTHON SOURCE LINES 91-96
 
 Convert triangles to strips
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -223,7 +228,7 @@ Convert faces from a :class:`pyvista.PolyData` to strips using :func:`strip()
 <pyvista.PolyDataFilters.strip>`. Here, for demonstration purposes we convert the
 triangulated mesh back to a stripped mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-96
+.. GENERATED FROM PYTHON SOURCE LINES 96-101
 
 .. code-block:: default
 
@@ -241,7 +246,7 @@ triangulated mesh back to a stripped mesh.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>8</td></tr>
@@ -257,12 +262,12 @@ triangulated mesh back to a stripped mesh.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-99
+.. GENERATED FROM PYTHON SOURCE LINES 102-104
 
 The output from the ``strip`` filter is, as expected, identical to the
 original ``mesh``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-100
+.. GENERATED FROM PYTHON SOURCE LINES 104-105
 
 .. code-block:: default
 
@@ -283,7 +288,7 @@ original ``mesh``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.440 seconds)
+   **Total running time of the script:** (0 minutes 0.319 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-polydata-strips.py:

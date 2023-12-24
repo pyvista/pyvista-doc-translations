@@ -26,7 +26,7 @@ Customize Scalar Bars
 Walk through of all the different capabilities of scalar bars and
 how a user can customize scalar bars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-15
+.. GENERATED FROM PYTHON SOURCE LINES 11-16
 
 .. code-block:: default
 
@@ -41,7 +41,8 @@ how a user can customize scalar bars.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-22
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-27
 
 By default, when plotting a dataset with a scalar array, a scalar bar for that
 array is added. To turn off this behavior, a user could specify
@@ -49,7 +50,7 @@ array is added. To turn off this behavior, a user could specify
 sample dataset provide via PyVista to demonstrate the default behavior of
 scalar bar plotting:
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-33
+.. GENERATED FROM PYTHON SOURCE LINES 27-38
 
 .. code-block:: default
 
@@ -67,6 +68,7 @@ scalar bar plotting:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_001.png
    :alt: scalar bars
    :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_001.png
@@ -76,7 +78,9 @@ scalar bar plotting:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-39
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 39-44
 
 We could also plot the scene with an interactive scalar bar to move around
 and place where we like by specifying passing keyword arguments to control
@@ -84,7 +88,7 @@ the scalar bar via the ``scalar_bar_args`` parameter in
 :func:`pyvista.Plotter.add_mesh`. The keyword arguments to control the
 scalar bar are defined in :func:`pyvista.Plotter.add_scalar_bar`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-50
+.. GENERATED FROM PYTHON SOURCE LINES 44-55
 
 .. code-block:: default
 
@@ -106,13 +110,13 @@ scalar bar are defined in :func:`pyvista.Plotter.add_scalar_bar`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-54
+.. GENERATED FROM PYTHON SOURCE LINES 56-59
 
 .. figure:: ../../images/gifs/scalar-bar-interactive.gif
 
 Or manually define the scalar bar's location:
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-62
+.. GENERATED FROM PYTHON SOURCE LINES 59-67
 
 .. code-block:: default
 
@@ -127,6 +131,7 @@ Or manually define the scalar bar's location:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_002.png
    :alt: scalar bars
    :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_002.png
@@ -136,11 +141,13 @@ Or manually define the scalar bar's location:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-64
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 68-69
 
 The text properties of the scalar bar can also be controlled:
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-81
+.. GENERATED FROM PYTHON SOURCE LINES 69-86
 
 .. code-block:: default
 
@@ -164,6 +171,7 @@ The text properties of the scalar bar can also be controlled:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_003.png
    :alt: scalar bars
    :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_003.png
@@ -173,17 +181,20 @@ The text properties of the scalar bar can also be controlled:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-83
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 87-88
 
 Labelling values outside of the scalar range
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-88
+.. GENERATED FROM PYTHON SOURCE LINES 88-93
 
 .. code-block:: default
 
     p = pv.Plotter()
     p.add_mesh(mesh, clim=[1000, 2000], below_color='blue', above_color='red', scalar_bar_args=sargs)
     p.show()
+
 
 
 
@@ -198,12 +209,14 @@ Labelling values outside of the scalar range
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-91
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 94-96
 
 Annotate values of interest using a dictionary. The key of the dictionary
 must be the value to annotate, and the value must be the string label.
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-101
+.. GENERATED FROM PYTHON SOURCE LINES 96-106
 
 .. code-block:: default
 
@@ -220,6 +233,7 @@ must be the value to annotate, and the value must be the string label.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_scalar-bars_005.png
    :alt: scalar bars
    :srcset: /examples/02-plot/images/sphx_glr_scalar-bars_005.png
@@ -230,9 +244,11 @@ must be the value to annotate, and the value must be the string label.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.830 seconds)
+   **Total running time of the script:** (0 minutes 10.920 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_scalar-bars.py:
