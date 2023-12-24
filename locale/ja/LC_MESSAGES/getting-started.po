@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.43.dev0\n"
+"Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-26 01:06+0000\n"
+"POT-Creation-Date: 2023-12-16 01:12+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -686,6 +686,16 @@ msgid ""
 " Toolkit (VTK)."
 msgstr "Visualization Toolkit (VTK) へのインターフェースとしてPyVistaを作成した理由について学んでください．"
 
+#: ../../pyvista/doc/source/getting-started/index.rst:0
+#: ../../pyvista/doc/source/getting-started/why.rst:0
+msgid "Static Scene"
+msgstr "スタティックシーン"
+
+#: ../../pyvista/doc/source/getting-started/index.rst:0
+#: ../../pyvista/doc/source/getting-started/why.rst:0
+msgid "Interactive Scene"
+msgstr "インタラクティブなシーン"
+
 #: ../../pyvista/doc/source/getting-started/index.rst:144
 msgid ""
 "Using PyVista in your research? Please consider citing or acknowledging us."
@@ -1262,7 +1272,7 @@ msgstr ""
 "たとえば，VTKの3角形のサーフェイスメッシュは分割できますが，VTKの他のすべてのオブジェクトは分割できません．この場合，既存の3角形表面メッシュに細分化された方法を追加することは理にかなっています．このように，"
 " :func:`pyvista.PolyDataFilters.subdivide` メソッドは次のように実行できます:"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:107
+#: ../../pyvista/doc/source/getting-started/why.rst:108
 msgid ""
 "Additionally, the docstrings for all methods in PyVista are intended to be "
 "used within interactive coding sessions. This allows users to use "
@@ -1271,11 +1281,11 @@ msgid ""
 msgstr ""
 "また，PyVistaのすべてのメソッドのdocstringは，インタラクティブなコーディングセッションで使用することを意図しています．これにより，高度な処理ルーチンをその場で使用し，メソッドの使用方法の説明にすぐにアクセスできます．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:116
+#: ../../pyvista/doc/source/getting-started/why.rst:117
 msgid "Interfacing with Other Libraries"
 msgstr "他のライブラリとの連携"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:117
+#: ../../pyvista/doc/source/getting-started/why.rst:118
 msgid ""
 "PyVista is heavily dependent on `numpy <https://numpy.org/>`_ and uses it to"
 " represent point, cell, field, and other data from the VTK meshes. This data"
@@ -1288,14 +1298,14 @@ msgstr ""
 ":attr:`pyvista.DataSet.points` のようなデータセット属性から簡単にアクセスできます． "
 "例えば，pyvistaの円の最初の10点には次のようにアクセスできます．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:128
+#: ../../pyvista/doc/source/getting-started/why.rst:131
 msgid ""
 "And these points can be operated on as if it was a NumPy array, all without "
 "losing connection to the underlying VTK data array."
 msgstr ""
 "また，これらのポイントは，あたかもNumPyの配列のように操作することができますが，その際，基礎となるVTKデータ配列との接続は失われません．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:131
+#: ../../pyvista/doc/source/getting-started/why.rst:134
 msgid ""
 "At the same time, a variety of PyVista objects can be generated directly "
 "from numpy arrays. For example, below we generate a vector field of arrows "
@@ -1304,7 +1314,7 @@ msgstr ""
 "同時に，様々なPyVistaオブジェクトをnumpy配列から直接生成することができます． 例えば，以下では :func:`numpy.meshgrid`"
 " を使って，矢印のベクトルフィールドを生成しています．"
 
-#: ../../pyvista/doc/source/getting-started/why.rst:159
+#: ../../pyvista/doc/source/getting-started/why.rst:163
 msgid ""
 "PyVista has connections to several other libraries, such as `meshio "
 "<https://github.com/nschloe/meshio>`_ and `matplotlib "

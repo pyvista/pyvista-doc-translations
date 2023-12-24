@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-13 00:57+0000\n"
+"POT-Creation-Date: 2023-12-16 01:12+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1163,50 +1163,56 @@ msgid ""
 msgstr ""
 "最初にローカルでドキュメントをビルドするときは，すべてのサンプルをビルドする必要があるため，しばらく時間がかかるでしょう．最初のビルドの後は，ドキュメントの作成にかかる時間はほんのわずかなものになるはずです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:675
+#: ../../pyvista/CONTRIBUTING.rst:674
+msgid ""
+"To test this locally you need to run a http server in the html directory "
+"with:"
+msgstr "これをローカルでテストするには、httpサーバーをのhtmlディレクトリで実行する必要があります:"
+
+#: ../../pyvista/CONTRIBUTING.rst:681
 msgid "Clearing the Local Build"
 msgstr "ローカルビルドのクリア"
 
-#: ../../pyvista/CONTRIBUTING.rst:677
+#: ../../pyvista/CONTRIBUTING.rst:683
 msgid "If you need to clear the locally built documentation, run:"
 msgstr "ローカルにビルドしたドキュメントをクリアする必要がある場合は，実行してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:683
+#: ../../pyvista/CONTRIBUTING.rst:689
 msgid ""
 "This will clear out everything, including the examples gallery. If you only "
 "want to clear everything except the gallery examples, run:"
 msgstr "これは，ギャラリーの例を含むすべてをクリアします．もしギャラリーのサンプル以外をクリアしたいだけなら，実行します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:690
+#: ../../pyvista/CONTRIBUTING.rst:696
 msgid ""
 "This will clear out the cache without forcing you to rebuild all the "
 "examples."
 msgstr "これにより，すべてのサンプルを強制的に再構築することなく，キャッシュをクリアすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:694
+#: ../../pyvista/CONTRIBUTING.rst:700
 msgid "Parallel Documentation Build"
 msgstr "ドキュメントの並列ビルド"
 
-#: ../../pyvista/CONTRIBUTING.rst:695
+#: ../../pyvista/CONTRIBUTING.rst:701
 msgid ""
 "You can improve your documentation build time on Linux and Mac OS with:"
 msgstr "以下でLinuxやMac OSでのドキュメントのビルド時間を改善することができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:701
+#: ../../pyvista/CONTRIBUTING.rst:707
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
 "multi-core computers."
 msgstr "これは効果的に ``SPHINXOPTS=-j`` を呼び出し，特にマルチコアコンピュータで有用です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:707
+#: ../../pyvista/CONTRIBUTING.rst:713
 msgid "Contributing to the Documentation"
 msgstr "ドキュメンテーションへの貢献"
 
-#: ../../pyvista/CONTRIBUTING.rst:708
+#: ../../pyvista/CONTRIBUTING.rst:714
 msgid "Documentation for PyVista is generated from three sources:"
 msgstr "PyVistaのドキュメントは，3つのソースから作成されています:"
 
-#: ../../pyvista/CONTRIBUTING.rst:710
+#: ../../pyvista/CONTRIBUTING.rst:716
 msgid ""
 "Docstrings from the classes, functions, and modules of ``pyvista`` using "
 "`sphinx.ext.autodoc <https://www.sphinx-"
@@ -1215,15 +1221,15 @@ msgstr ""
 "``pyvista`` のクラス，関数，モジュールから， `sphinx.ext.autodoc <https://www.sphinx-"
 "doc.org/en/master/usage/extensions/autodoc.html>`_ を使用して，Docstringを取得します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:713
+#: ../../pyvista/CONTRIBUTING.rst:719
 msgid "Restructured test from ``doc/``"
 msgstr "``doc/`` からテストを再構築"
 
-#: ../../pyvista/CONTRIBUTING.rst:714
+#: ../../pyvista/CONTRIBUTING.rst:720
 msgid "Gallery examples from ``examples/``"
 msgstr "``examples/`` からのギャラリー例"
 
-#: ../../pyvista/CONTRIBUTING.rst:716
+#: ../../pyvista/CONTRIBUTING.rst:722
 msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings. Full gallery examples should be placed in ``examples``."
@@ -1231,11 +1237,11 @@ msgstr ""
 "一般的な使い方やAPIの説明は ``doc/api`` と docstrings に記述してください． 完全なギャラリーのサンプルは "
 "``examples`` に置いてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:721
+#: ../../pyvista/CONTRIBUTING.rst:727
 msgid "Adding a New Example"
 msgstr "新しい例の追加"
 
-#: ../../pyvista/CONTRIBUTING.rst:722
+#: ../../pyvista/CONTRIBUTING.rst:728
 msgid ""
 "PyVista's examples come in two formats: basic code snippets demonstrating "
 "the functionality of an individual method or a full gallery example "
@@ -1250,7 +1256,7 @@ msgstr ""
 "ディレクトリやドキュメント文字列に含まれています．一方，完全なギャラリーサンプルは，ダウンロード可能なスクリプトとして実行するために，このリポジトリのルートにある"
 " ``examples`` ディレクトリに含まれています．"
 
-#: ../../pyvista/CONTRIBUTING.rst:729
+#: ../../pyvista/CONTRIBUTING.rst:735
 msgid ""
 "To add a fully fledged, standalone example, add your example to the "
 "``examples`` directory in the root directory of the `PyVista Repository "
@@ -1269,15 +1275,15 @@ msgstr ""
 "`Sphinx-Gallery <https://sphinx-gallery.github.io/stable/index.html>`_ "
 "が定めるコーディングガイドラインに従ってください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:738
+#: ../../pyvista/CONTRIBUTING.rst:744
 msgid "For more details see :ref:`add_example_example`."
 msgstr "詳しくは :ref:`add_example_example` を参照してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:742
+#: ../../pyvista/CONTRIBUTING.rst:748
 msgid "Add a New Example File"
 msgstr "新しいサンプルファイルの追加"
 
-#: ../../pyvista/CONTRIBUTING.rst:743
+#: ../../pyvista/CONTRIBUTING.rst:749
 msgid ""
 "If you have a dataset that you need for your gallery example, add it to "
 "`pyvista/vtk-data <https://github.com/pyvista/vtk-data/>`_ and follow the "
@@ -1289,15 +1295,15 @@ msgstr ""
 "に追加し，そこにある指示に従ってください．それから，データセットをダウンロードする ``pyvista/examples/downloads.py`` "
 "ための新しい関数を追加する必要があります．これは以下のように簡単です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:755
+#: ../../pyvista/CONTRIBUTING.rst:761
 msgid "Which enables:"
 msgstr "以下を可能にします:"
 
-#: ../../pyvista/CONTRIBUTING.rst:764
+#: ../../pyvista/CONTRIBUTING.rst:770
 msgid "Creating a New Pull Request"
 msgstr "新規Pull Requestの作成"
 
-#: ../../pyvista/CONTRIBUTING.rst:766
+#: ../../pyvista/CONTRIBUTING.rst:772
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -1309,7 +1315,7 @@ msgstr ""
 "requestを作成します．これにより，継続的インテグレーション (CI) "
 "テストが自動的に実行され，変更が複数のプラットフォームで機能することが検証されます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:771
+#: ../../pyvista/CONTRIBUTING.rst:777
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -1320,7 +1326,7 @@ msgid ""
 msgstr ""
 "他のユーザーがコードをレビューできるようにするには，pyvistaコントリビュータグループの他の少なくとも1人のメンバーが，コードがコミュニティの標準を満たしているかどうかをレビューして検証する必要があります．承認後，書き込み権限があればブランチをマージすることができます．書き込みパーミッションがない場合，レビュー担当者または書き込みパーミッションを持つ別のユーザーがブランチをマージし，PRブランチを削除します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:778
+#: ../../pyvista/CONTRIBUTING.rst:784
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
@@ -1328,11 +1334,11 @@ msgid ""
 msgstr ""
 "ブランチをカレントリリースブランチ(下記参照)とマージする必要があるかもしれませんので， ``fix/`` ブランチであれば削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:783
+#: ../../pyvista/CONTRIBUTING.rst:789
 msgid "Preview the Documentation"
 msgstr "ドキュメントをプレビューする"
 
-#: ../../pyvista/CONTRIBUTING.rst:785
+#: ../../pyvista/CONTRIBUTING.rst:791
 msgid ""
 "Once you have make a Pull Request. You can comment `github-actions preview` "
 "on a pull request to preview documentation. Since this command is only "
@@ -1346,11 +1352,11 @@ msgstr ""
 "<https://github.com/orgs/pyvista/teams/developers>`_ "
 "にしか使えないので，新しい貢献者はコマンドをコメントするよう親切にお願いします．これは，潜在的に有害なコミットからデプロイサイトを守るために不可欠です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:794
+#: ../../pyvista/CONTRIBUTING.rst:800
 msgid "Branching Model"
 msgstr "ブランチモデル"
 
-#: ../../pyvista/CONTRIBUTING.rst:796
+#: ../../pyvista/CONTRIBUTING.rst:802
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
@@ -1359,11 +1365,11 @@ msgstr ""
 "このプロジェクトは，安定性を犠牲にすることなく機能の迅速な開発を可能にする分岐モデルを持っており， `Trunk Based Development "
 "<https://trunkbaseddevelopment.com/>`_  アプローチに厳密に従います．"
 
-#: ../../pyvista/CONTRIBUTING.rst:800
+#: ../../pyvista/CONTRIBUTING.rst:806
 msgid "The main features of our branching model are:"
 msgstr "ブランチモデルの主な特徴は次のとおりです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:802
+#: ../../pyvista/CONTRIBUTING.rst:808
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -1374,7 +1380,7 @@ msgstr ""
 "``main`` "
 "ブランチは主要な開発ブランチです．すべてのフィーチャー，パッチ，およびその他のブランチをここにマージする必要があります．すべてのPRは適用可能なCIチェックをすべてパスする必要がありますが，変更によって予期しない副作用や単体テストで検出されなかったバグが発生する可能性があるため，このブランチは機能的に不安定になる可能性があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:807
+#: ../../pyvista/CONTRIBUTING.rst:813
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -1393,7 +1399,7 @@ msgstr ""
 ")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
 "のホットフィックスを迅速にプッシュすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:817
+#: ../../pyvista/CONTRIBUTING.rst:823
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version (for example "
@@ -1410,11 +1416,11 @@ msgstr ""
 ")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
 "で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:828
+#: ../../pyvista/CONTRIBUTING.rst:834
 msgid "Minor Release Steps"
 msgstr "マイナーリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:830
+#: ../../pyvista/CONTRIBUTING.rst:836
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
@@ -1423,7 +1429,7 @@ msgstr ""
 "マイナーリリースは， ``pyvista`` "
 "の機能と安定性を改善する機能およびバグリリースです．マイナーリリースが作成される前に，次のことが発生します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:834
+#: ../../pyvista/CONTRIBUTING.rst:840
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (for example ``release/0.25``)."
@@ -1431,7 +1437,7 @@ msgstr ""
 "``main`` ブランチから ``release/MAJOR.MINOR`` "
 "という名前の新しいブランチを作成します(例: ``release/0.25`` )．"
 
-#: ../../pyvista/CONTRIBUTING.rst:837
+#: ../../pyvista/CONTRIBUTING.rst:843
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (for example ``0, 26, 'dev0'``). Push the branch to GitHub and create a "
@@ -1441,14 +1447,14 @@ msgstr ""
 "``pyvista/_version.py`` の開発バージョン番号を更新し，コミットします(例: ``0, 26, "
 "'dev0'``)．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:843
+#: ../../pyvista/CONTRIBUTING.rst:849
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 "`テストのセクション <#testing>`_ で概説されているように，すべてのテストをローカルで実行し，すべてが合格していることを確認します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:846
+#: ../../pyvista/CONTRIBUTING.rst:852
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
@@ -1457,13 +1463,13 @@ msgstr ""
 "リンクが古くなっていないことを確認するために，リンクチェックを行いながらドキュメントをローカルにテストしてビルドします．また， ``make "
 "clean`` を実行して，結果がキャッシュされていないことを確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:857
+#: ../../pyvista/CONTRIBUTING.rst:863
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr "ドキュメントをビルドしたら，ローカル・ビルドを開き，サンプル・ギャラリーで明らかな問題がないか調べてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:860
+#: ../../pyvista/CONTRIBUTING.rst:866
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -1473,7 +1479,7 @@ msgstr ""
 "新しいリリースを機能的にテストするのは ``pyvista`` "
 "コミュニティの責任です．このブランチをローカルにインストールして運用環境で使用することをお勧めします．検出されたバグについては，ホットフィックスをこのリリースブランチにプッシュする必要があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:865
+#: ../../pyvista/CONTRIBUTING.rst:871
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -1485,13 +1491,13 @@ msgstr ""
 "ブランチのバージョン番号を更新した後， ``release/MAJOR.MINOR`` ブランチは ``vMAJOR.MINOR.0`` "
 "リリースというタグが付けられます．リリースブランチは削除されません．次のようにリリースにタグを付けます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:875
+#: ../../pyvista/CONTRIBUTING.rst:881
 msgid ""
 "Please check again that the tag has been created correctly and push the "
 "branch and tag."
 msgstr "タグが正しく作成されたことを再度確認し，ブランチとタグをプッシュしてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:882
+#: ../../pyvista/CONTRIBUTING.rst:888
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -1504,7 +1510,7 @@ msgstr ""
 "<https://github.com/pyvista/pyvista/compare>`_ を活用して，最後のタグや ``main`` "
 "ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:890
+#: ../../pyvista/CONTRIBUTING.rst:896
 msgid ""
 "Place your release notes from previous step in the description for `the new "
 "release on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
@@ -1512,7 +1518,7 @@ msgstr ""
 "前の手順のリリースノートを `GitHubの新リリース "
 "<https://github.com/pyvista/pyvista/releases/new>`_ の説明に入れてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:894
+#: ../../pyvista/CONTRIBUTING.rst:900
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro/cf-scripts>`_ to open a pull request on the conda-"
@@ -1523,21 +1529,21 @@ msgstr ""
 "scripts>`_ がconda-forge `PyVista feedstock <https://github.com/conda-"
 "forge/pyvista-feedstock>`_ のプルリクエストを開くのを待って，そのプルリクエストをマージします．"
 
-#: ../../pyvista/CONTRIBUTING.rst:900
+#: ../../pyvista/CONTRIBUTING.rst:906
 msgid "Announce the new release in the Discussions page and celebrate."
 msgstr "Discussions ページで新リリースを発表し，お祝いしましょう．"
 
-#: ../../pyvista/CONTRIBUTING.rst:904
+#: ../../pyvista/CONTRIBUTING.rst:910
 msgid "Patch Release Steps"
 msgstr "パッチリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:906
+#: ../../pyvista/CONTRIBUTING.rst:912
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr "パッチリリースは重要なバグフィックスのためのもので，マイナーリリースまで待つことはできないものです．パッチリリースの手順は"
 
-#: ../../pyvista/CONTRIBUTING.rst:909
+#: ../../pyvista/CONTRIBUTING.rst:915
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (for example ``release/0.25``)."
@@ -1545,7 +1551,7 @@ msgstr ""
 "必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例 "
 "``release/0.25``)です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:912
+#: ../../pyvista/CONTRIBUTING.rst:918
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (for example "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -1556,7 +1562,7 @@ msgstr ""
 ")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
 "コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
-#: ../../pyvista/CONTRIBUTING.rst:918
+#: ../../pyvista/CONTRIBUTING.rst:924
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -1566,7 +1572,7 @@ msgstr ""
 "承認されたら，リリースブランチとマージしますが， ``main`` ブランチのバージョンを増やす理由がないため， ``main`` "
 "とはマージしません．次に，リリースブランチから適切なバージョン番号(正しい手順については上記を参照してください．)のタグを作成します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:923
+#: ../../pyvista/CONTRIBUTING.rst:929
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
@@ -1737,7 +1743,15 @@ msgstr "そうすれば，sphinxのドキュメントファイルの中で，plo
 msgid "Which will be rendered as:"
 msgstr "以下のように表示されます．"
 
-#: ../../pyvista/doc/source/extras/plot_directive.rst:14
+#: ../../pyvista/doc/source/extras/plot_directive.rst:0
+msgid "Static Scene"
+msgstr "スタティックシーン"
+
+#: ../../pyvista/doc/source/extras/plot_directive.rst:0
+msgid "Interactive Scene"
+msgstr "インタラクティブなシーン"
+
+#: ../../pyvista/doc/source/extras/plot_directive.rst:25
 msgid "This is a default sphere"
 msgstr "これはデフォルトの球体"
 
@@ -1892,7 +1906,18 @@ msgstr ""
 "指定された場合，オプションの引数が図のキャプションとして使用されます．これは，ファイルからプロットが生成された場合，コンテンツで与えられたキャプションを上書きします．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:67
+#: pyvista.ext.plot_directive:68
+msgid "force_static"
+msgstr "force_static"
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:68
+msgid ""
+"If specified, static images will be used instead of an interactive scene."
+msgstr "指定すると，インタラクティブシーンの代わりに静止画像が使われます．"
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:70
 msgid ""
 "Additionally, this directive supports all of the options of the `image` "
 "directive, except for *target* (since plot will add its own target).  These "
@@ -1903,29 +1928,29 @@ msgstr ""
 "があります．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:72
+#: pyvista.ext.plot_directive:75
 msgid ""
 "**Configuration options** The plot directive has the following configuration"
 " options:"
 msgstr "**Configuration options** plotディレクティブには，以下の設定項目があります．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:76
+#: pyvista.ext.plot_directive:79
 msgid "plot_include_source"
 msgstr "plot_include_source"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:76
+#: pyvista.ext.plot_directive:79
 msgid "Default value for the include-source option. Default is ``True``."
 msgstr "include-sourceオプションのデフォルト値．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:81
+#: pyvista.ext.plot_directive:84
 msgid "plot_basedir"
 msgstr "plot_basedir"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:79
+#: pyvista.ext.plot_directive:82
 msgid ""
 "Base directory, to which ``plot::`` file names are relative to.  If ``None``"
 " or unset, file names are relative to the directory where the file "
@@ -1935,47 +1960,47 @@ msgstr ""
 "または未設定の場合には，ファイル名はそのディレクティブを含むファイルがあるディレクトリに相対します．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:84
+#: pyvista.ext.plot_directive:87
 msgid "plot_html_show_formats"
 msgstr "plot_html_show_formats"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:84
+#: pyvista.ext.plot_directive:87
 msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr "ファイルへのリンクをHTMLで表示するかどうか．デフォルトは ``True`` ．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:87
+#: pyvista.ext.plot_directive:90
 msgid "plot_template"
 msgstr "plot_template"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:87
+#: pyvista.ext.plot_directive:90
 msgid "Provide a customized Jinja2 template for preparing restructured text."
 msgstr "再構成されたテキストを作成するためのカスタマイズされた Jinja2 テンプレートを提供します．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:90
+#: pyvista.ext.plot_directive:93
 msgid "plot_setup"
 msgstr "plot_setup"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:90
+#: pyvista.ext.plot_directive:93
 msgid "Python code to be run before every plot directive block."
 msgstr "各プロットディレクティブブロックの前に実行されるPythonコード．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:93
+#: pyvista.ext.plot_directive:96
 msgid "plot_cleanup"
 msgstr "plot_cleanup"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:93
+#: pyvista.ext.plot_directive:96
 msgid "Python code to be run after every plot directive block."
 msgstr "各プロットディレクティブブロックの後に実行されるPythonコード．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:95
+#: pyvista.ext.plot_directive:98
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
