@@ -25,7 +25,7 @@ Plotting Point Clouds
 This example shows you how to plot point clouds using PyVista using both the
 ``'points'`` and ``'points_gaussian'`` styles.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-16
+.. GENERATED FROM PYTHON SOURCE LINES 10-17
 
 .. code-block:: default
 
@@ -42,13 +42,14 @@ This example shows you how to plot point clouds using PyVista using both the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-20
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-25
 
 Compare the Plotting methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 First, let's create a sample point cloud using :func:`numpy.random.random`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-26
+.. GENERATED FROM PYTHON SOURCE LINES 25-31
 
 .. code-block:: default
 
@@ -67,29 +68,30 @@ First, let's create a sample point cloud using :func:`numpy.random.random`.
  .. code-block:: none
 
 
-    array([[0.93228233, 0.2022771 , 0.56047516],
-           [0.75114172, 0.36533147, 0.13387651],
-           [0.68702887, 0.65843316, 0.68698018],
+    array([[0.02366412, 0.40240785, 0.24961106],
+           [0.92880631, 0.68721942, 0.42052408],
+           [0.65778256, 0.18952021, 0.74409443],
            ...,
-           [0.00486671, 0.31695112, 0.92479928],
-           [0.65740672, 0.70221147, 0.33216335],
-           [0.90391272, 0.09866084, 0.01105938]])
+           [0.59736287, 0.71547433, 0.77076805],
+           [0.40682662, 0.78110619, 0.18730241],
+           [0.10699786, 0.54495818, 0.9879418 ]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-31
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 Basic Plot
 ~~~~~~~~~~
 We can simply plot this point cloud using the convenience :func:`pyvista.plot`
 function.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-35
+.. GENERATED FROM PYTHON SOURCE LINES 36-40
 
 .. code-block:: default
 
 
     pv.plot(points)
+
 
 
 
@@ -104,7 +106,9 @@ function.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-42
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-47
 
 Plot with Scalars
 ~~~~~~~~~~~~~~~~~
@@ -113,7 +117,7 @@ use a single scalar to plot the points. For example, the z coordinates.
 
 For fun, let's also render the points as spheres.
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-51
+.. GENERATED FROM PYTHON SOURCE LINES 47-56
 
 .. code-block:: default
 
@@ -129,6 +133,7 @@ For fun, let's also render the points as spheres.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-clouds_002.png
    :alt: point clouds
    :srcset: /examples/02-plot/images/sphx_glr_point-clouds_002.png
@@ -138,7 +143,9 @@ For fun, let's also render the points as spheres.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-62
 
 Plot with RGBA
 ~~~~~~~~~~~~~~
@@ -146,13 +153,14 @@ Alternatively, we can color the point cloud using an RGBA array. This has
 been normalized from (0, 1), but we could have also used a ``numpy.uint8``
 array from 0-255.
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-61
+.. GENERATED FROM PYTHON SOURCE LINES 62-66
 
 .. code-block:: default
 
     rgba = points - points.min(axis=0)
     rgba /= rgba.max(axis=0)
     pv.plot(points, scalars=rgba, render_points_as_spheres=True, point_size=20, cpos='xy', rgba=True)
+
 
 
 
@@ -166,7 +174,9 @@ array from 0-255.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-70
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 67-75
 
 Point Cloud Plot Styles
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -177,11 +187,12 @@ to create softer points at the expense of render performance.
 
 Here's the basic plot again, but with the style as ``'points_gaussian'``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 70-73
+.. GENERATED FROM PYTHON SOURCE LINES 75-78
 
 .. code-block:: default
 
     pv.plot(points, style='points_gaussian', opacity=0.5, point_size=15)
+
 
 
 
@@ -196,7 +207,9 @@ Here's the basic plot again, but with the style as ``'points_gaussian'``:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-79
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 Here's a plotter with four combinations of the options side-by-side so you
 can see for yourself the different options available when plotting these
@@ -204,7 +217,7 @@ points. PyVista tries to achieve sensible defaults, but should you find these
 insufficient for your needs, feel free to play around with the various options
 and find something that works for you.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-141
+.. GENERATED FROM PYTHON SOURCE LINES 84-146
 
 .. code-block:: default
 
@@ -273,6 +286,7 @@ and find something that works for you.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-clouds_005.png
    :alt: point clouds
    :srcset: /examples/02-plot/images/sphx_glr_point-clouds_005.png
@@ -282,14 +296,16 @@ and find something that works for you.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 142-146
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 147-151
 
 Orbit a Point Cloud
 ~~~~~~~~~~~~~~~~~~~
 Generate a plot orbiting around a point cloud. Color based on the distance
 from the center of the cloud.
 
-.. GENERATED FROM PYTHON SOURCE LINES 146-166
+.. GENERATED FROM PYTHON SOURCE LINES 151-171
 
 .. code-block:: default
 
@@ -316,6 +332,7 @@ from the center of the cloud.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-clouds_006.gif
    :alt: point clouds
    :srcset: /examples/02-plot/images/sphx_glr_point-clouds_006.gif
@@ -326,9 +343,11 @@ from the center of the cloud.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  15.033 seconds)
+   **Total running time of the script:** (0 minutes 10.801 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-clouds.py:

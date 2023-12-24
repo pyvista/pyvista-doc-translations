@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_lookup-table.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_lookup-table.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -27,13 +27,14 @@ Demonstrate the usage of a lookup table within PyVista
 The :class:`pyvista.LookupTable` can be used to have fine-tuned control over
 the mapping between a :class:`pyvista.DataSet`'s scalars and RGBA colors.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-21
+.. GENERATED FROM PYTHON SOURCE LINES 12-22
 
 .. code-block:: default
 
 
     import pyvista as pv
     from pyvista import examples
+
 
     # download an example dataset
     bracket = examples.download_fea_bracket().cell_data_to_point_data()
@@ -48,8 +49,8 @@ the mapping between a :class:`pyvista.DataSet`'s scalars and RGBA colors.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>56786</td></tr>
     <tr><td>N Points</td><td>102578</td></tr>
@@ -60,7 +61,7 @@ the mapping between a :class:`pyvista.DataSet`'s scalars and RGBA colors.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>Equivalent (von-Mises) Stress (psi)</b></td><td>Points</td><td>float32</td><td>1</td><td>1.437e-02</td><td>2.327e+01</td></tr>
     </table>
@@ -70,7 +71,7 @@ the mapping between a :class:`pyvista.DataSet`'s scalars and RGBA colors.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-28
+.. GENERATED FROM PYTHON SOURCE LINES 27-33
 
 Default Color Map - Lookup Table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,7 +80,7 @@ will automatically create a lookup table to map the scalars (stored here
 within `point_data`) to RGBA colors. This is shown here as a nested attribute
 to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-34
+.. GENERATED FROM PYTHON SOURCE LINES 33-39
 
 .. code-block:: default
 
@@ -92,10 +93,13 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_001.png
    :alt: lookup table
    :srcset: /examples/02-plot/images/sphx_glr_lookup-table_001.png
    :class: sphx-glr-single-img
+
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -103,7 +107,7 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
  .. code-block:: none
 
 
-    LookupTable (0x7fd87e396be0)
+    LookupTable (0x7f87536259c0)
       Table Range:                (0.014368999749422073, 23.26799964904785)
       N Values:                   256
       Above Range Color:          None
@@ -114,14 +118,14 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-39
+.. GENERATED FROM PYTHON SOURCE LINES 40-44
 
 Plot the Lookup Table
 ~~~~~~~~~~~~~~~~~~~~~
 You can also plot lookup table to see the mapping between the scalar values
 (here, between 0 and 23.3) and RGBA colors.
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-45
+.. GENERATED FROM PYTHON SOURCE LINES 44-50
 
 .. code-block:: default
 
@@ -134,34 +138,33 @@ You can also plot lookup table to see the mapping between the scalar values
 
 
 
-.. rst-class:: sphx-glr-horizontal
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_002.png
+   :alt: lookup table
+   :srcset: /examples/02-plot/images/sphx_glr_lookup-table_002.png
+   :class: sphx-glr-single-img
 
 
-    *
 
-      .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_002.png
-          :alt: lookup table
-          :srcset: /examples/02-plot/images/sphx_glr_lookup-table_002.png
-          :class: sphx-glr-multi-img
 
-    *
-
-      .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_003.png
-          :alt: lookup table
-          :srcset: /examples/02-plot/images/sphx_glr_lookup-table_003.png
-          :class: sphx-glr-multi-img
+.. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_003.png
+   :alt: lookup table
+   :srcset: /examples/02-plot/images/sphx_glr_lookup-table_003.png
+   :class: sphx-glr-single-img
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 51-54
 
 Plot the DataSet
 ~~~~~~~~~~~~~~~~
 Let's plot the dataset using the automatically generated lookup table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-55
+.. GENERATED FROM PYTHON SOURCE LINES 54-60
 
 .. code-block:: default
 
@@ -169,6 +172,7 @@ Let's plot the dataset using the automatically generated lookup table.
     pl = pv.Plotter()
     pl.add_mesh(bracket)
     pl.show()
+
 
 
 
@@ -183,14 +187,16 @@ Let's plot the dataset using the automatically generated lookup table.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-65
 
 Create a Custom Lookup Table using a Matplotlib Color Map
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we create a lookup table with a narrow table range (same as ``clim``)
 and color values above and below the range.
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-68
+.. GENERATED FROM PYTHON SOURCE LINES 65-73
 
 .. code-block:: default
 
@@ -205,6 +211,7 @@ and color values above and below the range.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_005.png
    :alt: lookup table
    :srcset: /examples/02-plot/images/sphx_glr_lookup-table_005.png
@@ -214,13 +221,15 @@ and color values above and below the range.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-72
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-77
 
 Plot the bracket with the custom colormap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can set assign the lookup table when using ``add_mesh`` with ``cmap=``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-79
+.. GENERATED FROM PYTHON SOURCE LINES 77-84
 
 .. code-block:: default
 
@@ -229,6 +238,7 @@ You can set assign the lookup table when using ``add_mesh`` with ``cmap=``.
     pl = pv.Plotter()
     actor = pl.add_mesh(bracket, cmap=lut, lighting=False)
     pl.show()
+
 
 
 
@@ -243,7 +253,9 @@ You can set assign the lookup table when using ``add_mesh`` with ``cmap=``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-85
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 85-90
 
 Create a Custom Lookup Table using VTK's Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -251,7 +263,7 @@ If you want to create a completely unique color map, you can use attributes
 like :attr:`pyvista.LookupTable.hue_range` and
 :attr:`pyvista.LookupTable.value_range` to create your own lookup table.
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-95
+.. GENERATED FROM PYTHON SOURCE LINES 90-100
 
 .. code-block:: default
 
@@ -268,6 +280,7 @@ like :attr:`pyvista.LookupTable.hue_range` and
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_007.png
    :alt: lookup table
    :srcset: /examples/02-plot/images/sphx_glr_lookup-table_007.png
@@ -277,14 +290,16 @@ like :attr:`pyvista.LookupTable.hue_range` and
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-100
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 101-105
 
 Plot the bracket with the custom colormap
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Assign this custom color map to the plotter and disable lighting to improve
 the plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-106
+.. GENERATED FROM PYTHON SOURCE LINES 105-111
 
 .. code-block:: default
 
@@ -292,6 +307,7 @@ the plot.
     pl = pv.Plotter()
     actor = pl.add_mesh(bracket, cmap=lut, lighting=False)
     pl.show()
+
 
 
 
@@ -306,7 +322,9 @@ the plot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-114
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 112-119
 
 Custom colormap with widgets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -316,7 +334,7 @@ double ended slider widget.
 
 This example just controls the alpha channel.
 
-.. GENERATED FROM PYTHON SOURCE LINES 114-156
+.. GENERATED FROM PYTHON SOURCE LINES 119-161
 
 .. code-block:: default
 
@@ -365,6 +383,7 @@ This example just controls the alpha channel.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_009.png
    :alt: lookup table
    :srcset: /examples/02-plot/images/sphx_glr_lookup-table_009.png
@@ -374,14 +393,16 @@ This example just controls the alpha channel.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-161
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 162-166
 
 Control Several Lookup Table Attributes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Demonstrate the use of several slider bar widgets with lookup table
 callbacks.
 
-.. GENERATED FROM PYTHON SOURCE LINES 161-235
+.. GENERATED FROM PYTHON SOURCE LINES 166-240
 
 .. code-block:: default
 
@@ -462,6 +483,7 @@ callbacks.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_lookup-table_010.png
    :alt: lookup table
    :srcset: /examples/02-plot/images/sphx_glr_lookup-table_010.png
@@ -472,9 +494,11 @@ callbacks.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.392 seconds)
+   **Total running time of the script:** (0 minutes 8.465 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lookup-table.py:
@@ -482,6 +506,8 @@ callbacks.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

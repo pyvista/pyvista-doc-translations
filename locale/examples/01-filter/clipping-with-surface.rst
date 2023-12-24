@@ -48,7 +48,7 @@ the mesh geometries along the clip.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-38
+.. GENERATED FROM PYTHON SOURCE LINES 26-41
 
 .. code-block:: default
 
@@ -70,6 +70,7 @@ the mesh geometries along the clip.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_001.png
    :alt: clipping with surface
    :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_001.png
@@ -79,7 +80,9 @@ the mesh geometries along the clip.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-44
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 42-47
 
 Take a look at the implicit function used to perform the surface clipping by
 using the :func:`pyvista.DataSetFilters.compute_implicit_distance` filter.
@@ -87,7 +90,7 @@ The clipping operation field is performed where the ``implicit_distance``
 field is zero and the ``invert`` flag controls which sides of zero to
 preserve.
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-63
+.. GENERATED FROM PYTHON SOURCE LINES 47-66
 
 .. code-block:: default
 
@@ -113,6 +116,7 @@ preserve.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_002.png
    :alt: clipping with surface
    :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_002.png
@@ -122,7 +126,9 @@ preserve.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-79
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 67-82
 
 .. code-block:: default
 
@@ -144,6 +150,7 @@ preserve.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_003.png
    :alt: clipping with surface
    :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_003.png
@@ -153,13 +160,15 @@ preserve.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-83
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 83-86
 
 Clip the rectilinear grid dataset using the :class:`pyvista.PolyData`
 surface mesh via the :func:`pyvista.DataSetFilters.clip_surface` filter.
 This will triangulate/tessellate the mesh geometries along the clip.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-93
+.. GENERATED FROM PYTHON SOURCE LINES 86-96
 
 .. code-block:: default
 
@@ -176,6 +185,7 @@ This will triangulate/tessellate the mesh geometries along the clip.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_004.png
    :alt: clipping with surface
    :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_004.png
@@ -185,15 +195,19 @@ This will triangulate/tessellate the mesh geometries along the clip.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-97
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 97-100
 
 Here is another example of clipping a mesh by a surface. This time, we'll
 generate a :class:`pyvista.ImageData` around a topography surface and then
 clip that grid using the surface to create a closed 3D model of the surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-107
+.. GENERATED FROM PYTHON SOURCE LINES 100-112
 
 .. code-block:: default
+
+
 
     surface = examples.load_random_hills()
 
@@ -208,10 +222,32 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_005.png
-   :alt: clipping with surface
-   :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_clipping-with-surface_005.png
+        :alt: clipping with surface
+        :srcset: /examples/01-filter/images/sphx_glr_clipping-with-surface_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_clipping-with-surface_005.vtksz
+
 
 
 
@@ -220,7 +256,7 @@ clip that grid using the surface to create a closed 3D model of the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  54.991 seconds)
+   **Total running time of the script:** (0 minutes 23.990 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping-with-surface.py:

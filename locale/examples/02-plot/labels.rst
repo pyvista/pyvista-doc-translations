@@ -23,13 +23,14 @@ Label Points
 
 Use string arrays in a point set to label points
 
-.. GENERATED FROM PYTHON SOURCE LINES 7-13
+.. GENERATED FROM PYTHON SOURCE LINES 7-14
 
 .. code-block:: default
 
     import numpy as np
 
     import pyvista as pv
+
 
     from pyvista import examples
 
@@ -40,7 +41,7 @@ Use string arrays in a point set to label points
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-20
+.. GENERATED FROM PYTHON SOURCE LINES 20-25
 
 Label String Array
 ++++++++++++++++++
@@ -48,7 +49,7 @@ Label String Array
 This example will label the nodes of a mesh with a given array of string
 labels for each of the nodes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-24
+.. GENERATED FROM PYTHON SOURCE LINES 25-29
 
 .. code-block:: default
 
@@ -63,12 +64,12 @@ labels for each of the nodes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-27
+.. GENERATED FROM PYTHON SOURCE LINES 30-32
 
 Add string labels to the point data - this associates a label with every
 node:
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-31
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 .. code-block:: default
 
@@ -84,20 +85,20 @@ node:
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10</td></tr>
     <tr><td>N Points</td><td>10</td></tr>
     <tr><td>N Strips</td><td>0</td></tr>
-    <tr><td>X Bounds</td><td>1.402e-01, 9.986e-01</td></tr>
-    <tr><td>Y Bounds</td><td>1.223e-01, 9.129e-01</td></tr>
-    <tr><td>Z Bounds</td><td>6.901e-02, 8.318e-01</td></tr>
+    <tr><td>X Bounds</td><td>1.582e-03, 8.931e-01</td></tr>
+    <tr><td>Y Bounds</td><td>5.217e-03, 8.250e-01</td></tr>
+    <tr><td>Z Bounds</td><td>1.094e-01, 8.078e-01</td></tr>
     <tr><td>N Arrays</td><td>1</td></tr>
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>My Labels</td><td>Points</td><td><U7</td><td>1</td><td>nan</td><td>nan</td></tr>
     </table>
@@ -107,11 +108,11 @@ node:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-33
+.. GENERATED FROM PYTHON SOURCE LINES 37-38
 
 Now plot the points with labels:
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-39
+.. GENERATED FROM PYTHON SOURCE LINES 38-44
 
 .. code-block:: default
 
@@ -119,6 +120,7 @@ Now plot the points with labels:
     plotter = pv.Plotter()
     plotter.add_point_labels(poly, "My Labels", point_size=20, font_size=36)
     plotter.show()
+
 
 
 
@@ -133,14 +135,16 @@ Now plot the points with labels:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 45-49
 
 Label Node Locations
 ++++++++++++++++++++
 
 This example will label the nodes of a mesh with their coordinate locations
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-49
+.. GENERATED FROM PYTHON SOURCE LINES 49-54
 
 .. code-block:: default
 
@@ -156,11 +160,11 @@ This example will label the nodes of a mesh with their coordinate locations
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-51
+.. GENERATED FROM PYTHON SOURCE LINES 55-56
 
 Create plotting class and add the unstructured grid
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-64
+.. GENERATED FROM PYTHON SOURCE LINES 56-69
 
 .. code-block:: default
 
@@ -180,6 +184,7 @@ Create plotting class and add the unstructured grid
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_labels_002.png
    :alt: labels
    :srcset: /examples/02-plot/images/sphx_glr_labels_002.png
@@ -189,14 +194,16 @@ Create plotting class and add the unstructured grid
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-69
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 70-74
 
 Label Scalar Values
 +++++++++++++++++++
 
 This example will label each point with their scalar values
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-72
+.. GENERATED FROM PYTHON SOURCE LINES 74-77
 
 .. code-block:: default
 
@@ -210,7 +217,7 @@ This example will label each point with their scalar values
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-84
+.. GENERATED FROM PYTHON SOURCE LINES 78-89
 
 .. code-block:: default
 
@@ -228,6 +235,7 @@ This example will label each point with their scalar values
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_labels_003.png
    :alt: labels
    :srcset: /examples/02-plot/images/sphx_glr_labels_003.png
@@ -238,9 +246,11 @@ This example will label each point with their scalar values
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.026 seconds)
+   **Total running time of the script:** (0 minutes 0.783 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:

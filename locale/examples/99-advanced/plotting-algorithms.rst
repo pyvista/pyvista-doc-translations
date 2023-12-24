@@ -40,7 +40,7 @@ pipeline when adding data to the scene through methods like
 This example will walk through using a few ``vtkAlgorithm`` filters directly
 and passing them to PyVista for dynamic visualization.
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-29
+.. GENERATED FROM PYTHON SOURCE LINES 24-30
 
 .. code-block:: default
 
@@ -56,14 +56,15 @@ and passing them to PyVista for dynamic visualization.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-34
+
+.. GENERATED FROM PYTHON SOURCE LINES 35-39
 
 Use ``vtkConeSource`` as a source algorithm. This source will dynamically
 create a cone object depending on the instances's parameters. In this
 example, we will connect a callback to set the cone source algorithm's
 resolution via ``vtkConeSource.SetResolution()``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-43
+.. GENERATED FROM PYTHON SOURCE LINES 39-48
 
 .. code-block:: default
 
@@ -83,13 +84,13 @@ resolution via ``vtkConeSource.SetResolution()``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 Pass the ``vtkConeSource`` (a ``vtkAlgorithm`` subclass) directly to the
 plotter and connect a slider widget to our callback that adjusts the
 resolution.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-52
+.. GENERATED FROM PYTHON SOURCE LINES 52-57
 
 .. code-block:: default
 
@@ -97,6 +98,7 @@ resolution.
     p.add_mesh(algo, color='red')
     p.add_slider_widget(update_resolution, [5, 100], title='Resolution')
     p.show()
+
 
 
 
@@ -110,11 +112,13 @@ resolution.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-54
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-59
 
 Here is another example using ``vtkRegularPolygonSource``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-73
+.. GENERATED FROM PYTHON SOURCE LINES 59-78
 
 .. code-block:: default
 
@@ -140,6 +144,7 @@ Here is another example using ``vtkRegularPolygonSource``.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_plotting-algorithms_002.png
    :alt: plotting algorithms
    :srcset: /examples/99-advanced/images/sphx_glr_plotting-algorithms_002.png
@@ -149,7 +154,9 @@ Here is another example using ``vtkRegularPolygonSource``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-79
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 79-84
 
 Filter Pipeline
 +++++++++++++++
@@ -157,7 +164,7 @@ We can do this with any ``vtkAlgorithm`` subclass for dynamically generating
 or filtering data. Here is an example of executing a pipeline of VTK filters
 together.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-110
+.. GENERATED FROM PYTHON SOURCE LINES 84-115
 
 .. code-block:: default
 
@@ -195,6 +202,7 @@ together.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_plotting-algorithms_003.png
    :alt: plotting algorithms
    :srcset: /examples/99-advanced/images/sphx_glr_plotting-algorithms_003.png
@@ -205,9 +213,11 @@ together.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 8.643 seconds)
+   **Total running time of the script:** (0 minutes 5.306 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_plotting-algorithms.py:

@@ -83,16 +83,38 @@ generated from the spider cage function.
     values = spider_cage(x, y, z)
     mesh = grid.contour([1], values, method='marching_cubes')
     dist = np.linalg.norm(mesh.points, axis=1)
-    mesh.plot(scalars=dist, smooth_shading=True, specular=1, cmap="plasma", show_scalar_bar=False)
+    mesh.plot(scalars=dist, smooth_shading=True, cmap="plasma", show_scalar_bar=False)
 
 
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_001.png
-   :alt: flying edges
-   :srcset: /examples/01-filter/images/sphx_glr_flying_edges_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_001.png
+        :alt: flying edges
+        :srcset: /examples/01-filter/images/sphx_glr_flying_edges_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_flying_edges_001.vtksz
+
 
 
 
@@ -143,16 +165,38 @@ generated from the Barth sextic function.
     values = barth_sextic(x, y, z)
     mesh = grid.contour([0], values, method='flying_edges')
     dist = np.linalg.norm(mesh.points, axis=1)
-    mesh.plot(scalars=dist, smooth_shading=True, specular=1, cmap="plasma", show_scalar_bar=False)
+    mesh.plot(scalars=dist, smooth_shading=True, cmap="plasma", show_scalar_bar=False)
 
 
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_002.png
-   :alt: flying edges
-   :srcset: /examples/01-filter/images/sphx_glr_flying_edges_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_flying_edges_002.png
+        :alt: flying edges
+        :srcset: /examples/01-filter/images/sphx_glr_flying_edges_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_flying_edges_002.vtksz
+
 
 
 
@@ -165,7 +209,7 @@ Animate Barth Sextic
 Show 20 frames of various isocurves extracted from the Barth sextic
 function.
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-129
+.. GENERATED FROM PYTHON SOURCE LINES 101-128
 
 .. code-block:: default
 
@@ -189,7 +233,6 @@ function.
             mesh,
             scalars=dist,
             smooth_shading=True,
-            specular=1,
             rng=[0.5, 1.5],
             cmap="plasma",
             show_scalar_bar=False,
@@ -197,6 +240,7 @@ function.
         pl.write_frame()
 
     pl.close()
+
 
 
 
@@ -210,9 +254,11 @@ function.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.169 seconds)
+   **Total running time of the script:** (0 minutes 6.790 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_flying_edges.py:

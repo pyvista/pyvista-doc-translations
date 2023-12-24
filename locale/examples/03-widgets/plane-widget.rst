@@ -32,9 +32,11 @@ meshes, we have included two helper methods for doing those tasks.
 
 Let's use a plane to clip a mesh:
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-25
+.. GENERATED FROM PYTHON SOURCE LINES 16-27
 
 .. code-block:: default
+
+
 
     import pyvista as pv
     from pyvista import examples
@@ -48,6 +50,7 @@ Let's use a plane to clip a mesh:
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_001.png
    :alt: plane widget
    :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_001.png
@@ -57,11 +60,13 @@ Let's use a plane to clip a mesh:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-28
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 33-34
 
 After interacting with the scene, the clipped mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-30
+.. GENERATED FROM PYTHON SOURCE LINES 34-36
 
 .. code-block:: default
 
@@ -76,28 +81,27 @@ After interacting with the scene, the clipped mesh is available as:
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f391cfbb9a0)
+    [UnstructuredGrid (0x7f87505c8580)
       N Cells:    3538080
       N Points:   3613484
       X Bounds:   9.000e+01, 1.800e+02
       Y Bounds:   0.000e+00, 2.160e+02
       Z Bounds:   0.000e+00, 1.800e+02
-      N Arrays:   2
-    ]
+      N Arrays:   2]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-34
+.. GENERATED FROM PYTHON SOURCE LINES 37-40
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-clip.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-37
+.. GENERATED FROM PYTHON SOURCE LINES 42-43
 
 Or you could slice a mesh using the plane widget:
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-41
+.. GENERATED FROM PYTHON SOURCE LINES 43-47
 
 .. code-block:: default
 
@@ -105,6 +109,7 @@ Or you could slice a mesh using the plane widget:
     p = pv.Plotter()
     p.add_mesh_slice(vol)
     p.show()
+
 
 
 
@@ -117,11 +122,13 @@ Or you could slice a mesh using the plane widget:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-43
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-49
 
 After interacting with the scene, the slice is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-45
+.. GENERATED FROM PYTHON SOURCE LINES 49-51
 
 .. code-block:: default
 
@@ -136,32 +143,31 @@ After interacting with the scene, the slice is available as:
  .. code-block:: none
 
 
-    [PolyData (0x7f391c1f8a60)
+    [PolyData (0x7f87572a4700)
       N Cells:    38880
       N Points:   39277
       N Strips:   0
       X Bounds:   9.000e+01, 9.000e+01
       Y Bounds:   0.000e+00, 2.160e+02
       Z Bounds:   0.000e+00, 1.800e+02
-      N Arrays:   1
-    ]
+      N Arrays:   1]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-49
+.. GENERATED FROM PYTHON SOURCE LINES 52-55
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-slice.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-55
+.. GENERATED FROM PYTHON SOURCE LINES 57-61
 
 Or you could leverage the plane widget for some custom task like glyphing a
 vector field along that plane. Note that we have to pass a ``name`` when
 calling ``add_mesh`` to ensure that there is only one set of glyphs plotted
 at a time.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-76
+.. GENERATED FROM PYTHON SOURCE LINES 61-82
 
 .. code-block:: default
 
@@ -189,6 +195,7 @@ at a time.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_plane-widget_003.png
    :alt: plane widget
    :srcset: /examples/03-widgets/images/sphx_glr_plane-widget_003.png
@@ -198,20 +205,22 @@ at a time.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-80
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 83-86
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/plane-glyph.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-87
+.. GENERATED FROM PYTHON SOURCE LINES 89-93
 
 Further, a user can disable the arrow vector by setting the
 ``normal_rotation`` argument to ``False``. For example, here we
 programmatically set the normal vector on which we want to translate the
 plane and we disable the arrow to prevent its rotation.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-92
+.. GENERATED FROM PYTHON SOURCE LINES 93-98
 
 .. code-block:: default
 
@@ -219,6 +228,7 @@ plane and we disable the arrow to prevent its rotation.
     p = pv.Plotter()
     p.add_mesh_slice(vol, normal=(1, 1, 1), normal_rotation=False)
     p.show()
+
 
 
 
@@ -232,18 +242,21 @@ plane and we disable the arrow to prevent its rotation.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-95
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 99-101
 
 The vector is also forcibly disabled anytime the ``assign_to_axis`` argument
 is set.
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-100
+.. GENERATED FROM PYTHON SOURCE LINES 101-106
 
 .. code-block:: default
 
     p = pv.Plotter()
     p.add_mesh_slice(vol, assign_to_axis='z')
     p.show()
+
 
 
 
@@ -258,14 +271,16 @@ is set.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-105
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 107-111
 
 Additionally, users can modify the interaction event that triggers the
 callback functions handled by the different plane widget helpers through the
 ``interaction_event`` keyword argument when available. For example,
 we can have continuous slicing by using the ``InteractionEvent`` observer.
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-111
+.. GENERATED FROM PYTHON SOURCE LINES 111-117
 
 .. code-block:: default
 
@@ -274,6 +289,7 @@ we can have continuous slicing by using the ``InteractionEvent`` observer.
     p = pv.Plotter()
     p.add_mesh_slice(vol, assign_to_axis='z', interaction_event=vtk.vtkCommand.InteractionEvent)
     p.show()
+
 
 
 
@@ -287,7 +303,9 @@ we can have continuous slicing by using the ``InteractionEvent`` observer.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-116
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 118-122
 
 And here is a screen capture of a user interacting with this continuously via
 the ``InteractionEvent`` observer:
@@ -297,7 +315,7 @@ the ``InteractionEvent`` observer:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  7.580 seconds)
+   **Total running time of the script:** (0 minutes 11.306 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_plane-widget.py:

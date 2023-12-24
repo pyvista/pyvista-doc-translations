@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_multi-slider-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_multi-slider-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -28,9 +28,11 @@ In this example we simply change a few parameters for the
 :func:`pyvista.Sphere` method, but this could easily be applied to any
 mesh-generating/altering code.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-37
+.. GENERATED FROM PYTHON SOURCE LINES 13-39
 
 .. code-block:: default
+
+
 
     import pyvista as pv
 
@@ -63,7 +65,7 @@ mesh-generating/altering code.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-42
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
 .. code-block:: default
 
@@ -78,7 +80,7 @@ mesh-generating/altering code.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-74
+.. GENERATED FROM PYTHON SOURCE LINES 49-80
 
 .. code-block:: default
 
@@ -116,6 +118,7 @@ mesh-generating/altering code.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_multi-slider-widget_001.png
    :alt: multi slider widget
    :srcset: /examples/03-widgets/images/sphx_glr_multi-slider-widget_001.png
@@ -126,9 +129,11 @@ mesh-generating/altering code.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.416 seconds)
+   **Total running time of the script:** (0 minutes 0.238 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_multi-slider-widget.py:
@@ -136,6 +141,8 @@ mesh-generating/altering code.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

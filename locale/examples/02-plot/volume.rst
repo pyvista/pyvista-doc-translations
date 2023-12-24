@@ -30,13 +30,14 @@ This also explores how to extract a volume of interest (VOI) from a
 :class:`pyvista.ImageData` using the
 :func:`pyvista.ImageDataFilters.extract_subset` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-22
+.. GENERATED FROM PYTHON SOURCE LINES 14-23
 
 .. code-block:: default
 
 
     import pyvista as pv
     from pyvista import examples
+
 
     # Download a volumetric dataset
     vol = examples.download_knee_full()
@@ -50,8 +51,8 @@ This also explores how to extract a volume of interest (VOI) from a
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>10225800</td></tr>
     <tr><td>N Points</td><td>10368384</td></tr>
@@ -64,7 +65,7 @@ This also explores how to extract a volume of interest (VOI) from a
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>SLCImage</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>1.740e+02</td></tr>
     </table>
@@ -74,13 +75,13 @@ This also explores how to extract a volume of interest (VOI) from a
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-27
+.. GENERATED FROM PYTHON SOURCE LINES 29-32
 
 Simple Volume Render
 ++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-34
+.. GENERATED FROM PYTHON SOURCE LINES 32-39
 
 .. code-block:: default
 
@@ -89,6 +90,7 @@ Simple Volume Render
     cpos = [(-381.74, -46.02, 216.54), (74.8305, 89.2905, 100.0), (0.23, 0.072, 0.97)]
 
     vol.plot(volume=True, cmap="bone", cpos=cpos)
+
 
 
 
@@ -103,7 +105,9 @@ Simple Volume Render
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-40
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 40-45
 
 Opacity Mappings
 ++++++++++++++++
@@ -111,7 +115,7 @@ Opacity Mappings
 Or use the :func:`pyvista.Plotter.add_volume` method like below.
 Note that here we use a non-default opacity mapping to a sigmoid:
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-46
+.. GENERATED FROM PYTHON SOURCE LINES 45-51
 
 .. code-block:: default
 
@@ -120,6 +124,7 @@ Note that here we use a non-default opacity mapping to a sigmoid:
     pl.add_volume(vol, cmap="bone", opacity="sigmoid")
     pl.camera_position = cpos
     pl.show()
+
 
 
 
@@ -133,11 +138,13 @@ Note that here we use a non-default opacity mapping to a sigmoid:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-48
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 52-53
 
 You can also use a custom opacity mapping
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-55
+.. GENERATED FROM PYTHON SOURCE LINES 53-60
 
 .. code-block:: default
 
@@ -151,6 +158,7 @@ You can also use a custom opacity mapping
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_003.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_003.png
@@ -160,12 +168,14 @@ You can also use a custom opacity mapping
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-58
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-63
 
 We can also use a shading technique when volume rendering with the ``shade``
 option
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-68
+.. GENERATED FROM PYTHON SOURCE LINES 63-73
 
 .. code-block:: default
 
@@ -182,6 +192,7 @@ option
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_004.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_004.png
@@ -191,19 +202,21 @@ option
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 69-73
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 74-78
 
 Cool Volume Examples
 ++++++++++++++++++++
 
 Here are a few more cool volume rendering examples.
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-78
+.. GENERATED FROM PYTHON SOURCE LINES 81-83
 
 Head Dataset
 """"""""""""
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-88
+.. GENERATED FROM PYTHON SOURCE LINES 83-93
 
 .. code-block:: default
 
@@ -220,6 +233,7 @@ Head Dataset
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_005.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_005.png
@@ -229,7 +243,9 @@ Head Dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 89-96
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 94-101
 
 Bolt-Nut MultiBlock Dataset
 """""""""""""""""""""""""""
@@ -239,7 +255,7 @@ Bolt-Nut MultiBlock Dataset
    by ``add_volume`` because ``bolt_nut`` is a :class:`pyvista.MultiBlock`
    dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-107
+.. GENERATED FROM PYTHON SOURCE LINES 101-112
 
 .. code-block:: default
 
@@ -257,6 +273,7 @@ Bolt-Nut MultiBlock Dataset
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_006.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_006.png
@@ -266,12 +283,14 @@ Bolt-Nut MultiBlock Dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-110
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 113-115
 
 Frog Dataset
 """"""""""""
 
-.. GENERATED FROM PYTHON SOURCE LINES 110-120
+.. GENERATED FROM PYTHON SOURCE LINES 115-125
 
 .. code-block:: default
 
@@ -288,6 +307,7 @@ Frog Dataset
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_007.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_007.png
@@ -297,7 +317,9 @@ Frog Dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-128
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 126-133
 
 Extracting a VOI
 ++++++++++++++++
@@ -307,7 +329,7 @@ a volume of interest/subset volume to volume render. This is ideal when
 dealing with particularly large volumes and you want to volume render only
 a specific region.
 
-.. GENERATED FROM PYTHON SOURCE LINES 128-133
+.. GENERATED FROM PYTHON SOURCE LINES 133-138
 
 .. code-block:: default
 
@@ -324,8 +346,8 @@ a specific region.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>11003760</td></tr>
     <tr><td>N Points</td><td>11156040</td></tr>
@@ -338,7 +360,7 @@ a specific region.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>data</b></td><td>Points</td><td>float32</td><td>1</td><td>9.782e-15</td><td>1.000e+02</td></tr>
     </table>
@@ -348,7 +370,7 @@ a specific region.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 134-148
+.. GENERATED FROM PYTHON SOURCE LINES 139-153
 
 .. code-block:: default
 
@@ -369,6 +391,7 @@ a specific region.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_008.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_008.png
@@ -378,7 +401,9 @@ a specific region.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 149-155
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 154-160
 
 Woah, that's a big volume. We probably don't want to volume render the
 whole thing. So let's extract a region of interest under the volcano.
@@ -387,7 +412,7 @@ The region we will extract will be between nodes 175 and 200 on the x-axis,
 between nodes 105 and 132 on the y-axis, and between nodes 98 and 170 on
 the z-axis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-163
+.. GENERATED FROM PYTHON SOURCE LINES 160-168
 
 .. code-block:: default
 
@@ -402,6 +427,7 @@ the z-axis.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_009.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_009.png
@@ -411,11 +437,13 @@ the z-axis.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-165
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 169-170
 
 Ah, much better. Let's now volume render that region of interest.
 
-.. GENERATED FROM PYTHON SOURCE LINES 165-174
+.. GENERATED FROM PYTHON SOURCE LINES 170-179
 
 .. code-block:: default
 
@@ -431,6 +459,7 @@ Ah, much better. Let's now volume render that region of interest.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_volume_010.png
    :alt: volume
    :srcset: /examples/02-plot/images/sphx_glr_volume_010.png
@@ -441,9 +470,11 @@ Ah, much better. Let's now volume render that region of interest.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  59.832 seconds)
+   **Total running time of the script:** (0 minutes 37.860 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_volume.py:

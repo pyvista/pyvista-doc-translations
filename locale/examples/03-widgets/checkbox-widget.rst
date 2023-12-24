@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_checkbox-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_checkbox-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -27,9 +27,10 @@ Use a checkbox to turn on/off the visibility of meshes in a scene.
 
 See :func:`pyvista.Plotter.add_checkbox_button_widget` for more details.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-14
+.. GENERATED FROM PYTHON SOURCE LINES 12-15
 
 .. code-block:: default
+
 
     import pyvista as pv
 
@@ -40,12 +41,12 @@ See :func:`pyvista.Plotter.add_checkbox_button_widget` for more details.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+.. GENERATED FROM PYTHON SOURCE LINES 21-23
 
 Single Checkbox
 +++++++++++++++
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-32
+.. GENERATED FROM PYTHON SOURCE LINES 23-37
 
 .. code-block:: default
 
@@ -66,6 +67,7 @@ Single Checkbox
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_checkbox-widget_001.png
    :alt: checkbox widget
    :srcset: /examples/03-widgets/images/sphx_glr_checkbox-widget_001.png
@@ -75,7 +77,9 @@ Single Checkbox
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-39
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 38-44
 
 Multiple Checkboxes
 +++++++++++++++++++
@@ -84,7 +88,7 @@ In this example, we will add many meshes to a scene with unique colors and
 create corresponding checkboxes for those meshes of the same color to toggle
 their visibility in the scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-59
+.. GENERATED FROM PYTHON SOURCE LINES 44-64
 
 .. code-block:: default
 
@@ -115,7 +119,7 @@ their visibility in the scene.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-85
+.. GENERATED FROM PYTHON SOURCE LINES 65-90
 
 .. code-block:: default
 
@@ -147,6 +151,7 @@ their visibility in the scene.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_checkbox-widget_002.png
    :alt: checkbox widget
    :srcset: /examples/03-widgets/images/sphx_glr_checkbox-widget_002.png
@@ -157,30 +162,29 @@ their visibility in the scene.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.787 seconds)
+   **Total running time of the script:** (0 minutes 0.770 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_checkbox-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: checkbox-widget.py <checkbox-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: checkbox-widget.py <checkbox-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: checkbox-widget.ipynb <checkbox-widget.ipynb>`
+      :download:`Download Jupyter notebook: checkbox-widget.ipynb <checkbox-widget.ipynb>`
 
 
 .. only:: html

@@ -79,11 +79,11 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.80962275e+05, 4.40012760e+06, 1.76222998e+03],
-                     [4.81042575e+05, 4.40015030e+06, 1.76105005e+03],
-                     [4.81078075e+05, 4.40014460e+06, 1.76231006e+03],
-                     [4.81119775e+05, 4.40007940e+06, 1.76056006e+03],
-                     [4.80992475e+05, 4.40016470e+06, 1.76047998e+03]])
+    pyvista_ndarray([[4.81120575e+05, 4.40023120e+06, 1.76942004e+03],
+                     [4.80996675e+05, 4.40011270e+06, 1.76179004e+03],
+                     [4.81080475e+05, 4.40009190e+06, 1.76142004e+03],
+                     [4.80965775e+05, 4.40014090e+06, 1.77465002e+03],
+                     [4.81026075e+05, 4.40013980e+06, 1.76143005e+03]])
 
 
 
@@ -115,7 +115,7 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>4.809e+05, 4.811e+05</td></tr>
     <tr><td>Y Bounds</td><td>4.400e+06, 4.400e+06</td></tr>
-    <tr><td>Z Bounds</td><td>1.754e+03, 1.784e+03</td></tr>
+    <tr><td>Z Bounds</td><td>1.754e+03, 1.785e+03</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
 
@@ -153,11 +153,13 @@ And now that we have a PyVista mesh, we can plot it. Note that we add an
 option to use eye dome lighting - this is a shading technique to improve
 depth perception with point clouds (learn more in :ref:`edl`).
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-54
+.. GENERATED FROM PYTHON SOURCE LINES 52-55
 
 .. code-block:: default
 
+
     point_cloud.plot(eye_dome_lighting=True)
+
 
 
 
@@ -171,7 +173,9 @@ depth perception with point clouds (learn more in :ref:`edl`).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-63
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-67
 
 Now what if you have data attributes (scalar/vector arrays) that you'd like
 to associate with every node of your mesh? You can easily add NumPy data
@@ -182,7 +186,7 @@ mesh.
 Make an array of scalar values with the same length as the points array.
 Each element in this array will correspond to points at the same index:
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-70
+.. GENERATED FROM PYTHON SOURCE LINES 67-74
 
 .. code-block:: default
 
@@ -200,13 +204,13 @@ Each element in this array will correspond to points at the same index:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-74
+.. GENERATED FROM PYTHON SOURCE LINES 75-78
 
 And now we can plot the point cloud with that random data. PyVista is smart
 enough to plot the scalar array you added by default. Note that this time,
 we specify to render every point as its own sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-76
+.. GENERATED FROM PYTHON SOURCE LINES 78-80
 
 .. code-block:: default
 
@@ -215,16 +219,38 @@ we specify to render every point as its own sphere.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
-   :alt: create point cloud
-   :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
+        :alt: create point cloud
+        :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-point-cloud_002.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-83
+
+.. GENERATED FROM PYTHON SOURCE LINES 81-87
 
 That data is kind of boring, right? You can also add data arrays with
 more than one scalar value - perhaps a vector with three elements? Let's
@@ -233,7 +259,7 @@ cloud and add those vectors to the mesh.
 
 This time, we're going to create a totally new, random point cloud.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-100
+.. GENERATED FROM PYTHON SOURCE LINES 87-104
 
 .. code-block:: default
 
@@ -263,15 +289,15 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[-0.29161325,  0.87879106,  0.37774064],
-                     [-0.41353455,  0.75558995, -0.50800886],
-                     [ 0.11100169,  0.21213909, -0.97091484],
-                     [ 0.35991035,  0.44616295, -0.81939195],
-                     [-0.39641508,  0.76319854, -0.51027745]])
+    pyvista_ndarray([[-0.60161798,  0.4387601 , -0.66749186],
+                     [ 0.68903594,  0.42463586, -0.58729368],
+                     [-0.0426291 ,  0.93246127, -0.35874606],
+                     [ 0.57494917, -0.61605916,  0.53842787],
+                     [-0.67020631, -0.14882847,  0.72709943]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-104
+.. GENERATED FROM PYTHON SOURCE LINES 105-108
 
 .. code-block:: default
 
@@ -285,12 +311,12 @@ This time, we're going to create a totally new, random point cloud.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-107
+.. GENERATED FROM PYTHON SOURCE LINES 109-111
 
 Now we can make arrows using those vectors using the glyph filter
 (see :ref:`glyph_example` for more details).
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-122
+.. GENERATED FROM PYTHON SOURCE LINES 111-126
 
 .. code-block:: default
 
@@ -312,10 +338,32 @@ Now we can make arrows using those vectors using the glyph filter
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
-   :alt: create point cloud
-   :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
+        :alt: create point cloud
+        :srcset: /examples/00-load/images/sphx_glr_create-point-cloud_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-point-cloud_003.vtksz
+
 
 
 
@@ -324,7 +372,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 7.365 seconds)
+   **Total running time of the script:** (0 minutes 5.525 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

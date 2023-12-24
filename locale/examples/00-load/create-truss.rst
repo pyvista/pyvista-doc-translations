@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-truss.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-truss.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -25,9 +25,10 @@ Plot Truss-like FEA Solution with Cylinders
 
 Plot connections between points in 3D as cylinders, colored by scalars.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-16
+.. GENERATED FROM PYTHON SOURCE LINES 11-17
 
 .. code-block:: default
+
 
 
     import numpy as np
@@ -41,12 +42,12 @@ Plot connections between points in 3D as cylinders, colored by scalars.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-19
+.. GENERATED FROM PYTHON SOURCE LINES 21-23
 
 Define the points and elements of the truss.  Call them ``nodes``
 here as it comes from finite element analysis.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-51
+.. GENERATED FROM PYTHON SOURCE LINES 23-55
 
 .. code-block:: default
 
@@ -88,8 +89,6 @@ here as it comes from finite element analysis.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -105,11 +104,11 @@ here as it comes from finite element analysis.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-53
+.. GENERATED FROM PYTHON SOURCE LINES 56-57
 
 Plot the truss while rendering the lines as tubes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-66
+.. GENERATED FROM PYTHON SOURCE LINES 57-70
 
 .. code-block:: default
 
@@ -129,6 +128,7 @@ Plot the truss while rendering the lines as tubes.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-truss_001.png
    :alt: create truss
    :srcset: /examples/00-load/images/sphx_glr_create-truss_001.png
@@ -139,30 +139,29 @@ Plot the truss while rendering the lines as tubes.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.571 seconds)
+   **Total running time of the script:** (0 minutes 0.355 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-truss.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-truss.py <create-truss.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-truss.py <create-truss.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-truss.ipynb <create-truss.ipynb>`
+      :download:`Download Jupyter notebook: create-truss.ipynb <create-truss.ipynb>`
 
 
 .. only:: html

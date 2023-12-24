@@ -33,9 +33,10 @@ nearby light sources.
 See `Kitware: Screen-Space Ambient Occlusion
 <https://www.kitware.com/ssao/>`_ for more details
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-26
+.. GENERATED FROM PYTHON SOURCE LINES 18-27
 
 .. code-block:: default
+
 
 
     # First, let's create several cubes nearby each other
@@ -52,14 +53,14 @@ See `Kitware: Screen-Space Ambient Occlusion
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-32
+.. GENERATED FROM PYTHON SOURCE LINES 33-37
 
 Plot with defaults
 ~~~~~~~~~~~~~~~~~~
 Let's plot this without SSAO. Note how the lighting is identical for each
 cube.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-38
+.. GENERATED FROM PYTHON SOURCE LINES 37-43
 
 .. code-block:: default
 
@@ -67,6 +68,7 @@ cube.
     pl = pv.Plotter()
     pl.add_mesh(grid)
     pl.show()
+
 
 
 
@@ -81,7 +83,9 @@ cube.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-46
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 44-51
 
 Plot with SSAO
 ~~~~~~~~~~~~~~
@@ -91,7 +95,7 @@ other to make it look less artificial.
 With a low ``kernel_size``, the image will be rendered quickly at the expense
 of quality.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-53
+.. GENERATED FROM PYTHON SOURCE LINES 51-58
 
 .. code-block:: default
 
@@ -100,6 +104,7 @@ of quality.
     pl.add_mesh(grid)
     pl.enable_ssao(kernel_size=32)
     pl.show()
+
 
 
 
@@ -114,7 +119,9 @@ of quality.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-59
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-64
 
 Improve the SSAO rendering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,7 +129,7 @@ Here we've increased the ``kernel_size`` to improve the quality of the SSAO
 and also enabled SSAA anti-aliasing to smooth out any of the artifacts
 created from SSAO.
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-67
+.. GENERATED FROM PYTHON SOURCE LINES 64-72
 
 .. code-block:: default
 
@@ -137,6 +144,7 @@ created from SSAO.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_ssao_003.png
    :alt: ssao
    :srcset: /examples/02-plot/images/sphx_glr_ssao_003.png
@@ -146,14 +154,16 @@ created from SSAO.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-72
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 73-77
 
 Plot a CAD model without SSAO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here's another example without SSAO. This is a CAD model of a Raspberry PI
 case.
 
-.. GENERATED FROM PYTHON SOURCE LINES 72-82
+.. GENERATED FROM PYTHON SOURCE LINES 77-87
 
 .. code-block:: default
 
@@ -170,6 +180,7 @@ case.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_ssao_004.png
    :alt: ssao
    :srcset: /examples/02-plot/images/sphx_glr_ssao_004.png
@@ -179,7 +190,9 @@ case.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-90
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 88-95
 
 Plot with SSAO
 ~~~~~~~~~~~~~~
@@ -189,7 +202,7 @@ Here's the same CAD model with SSAO. Note how we had to increase both
 Note that the occlusion still seems quite small. In the next example we will
 increase the ``radius`` to increase the effect of the occlusion.
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-99
+.. GENERATED FROM PYTHON SOURCE LINES 95-104
 
 .. code-block:: default
 
@@ -205,6 +218,7 @@ increase the ``radius`` to increase the effect of the occlusion.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_ssao_005.png
    :alt: ssao
    :srcset: /examples/02-plot/images/sphx_glr_ssao_005.png
@@ -214,14 +228,16 @@ increase the ``radius`` to increase the effect of the occlusion.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-104
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 105-109
 
 Increase the Radius
 ~~~~~~~~~~~~~~~~~~~
 Here we've increased the ``radius`` to the point where the case occlusion now
 seems realistic without it becoming overwhelming.
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-111
+.. GENERATED FROM PYTHON SOURCE LINES 109-116
 
 .. code-block:: default
 
@@ -235,6 +251,7 @@ seems realistic without it becoming overwhelming.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_ssao_006.png
    :alt: ssao
    :srcset: /examples/02-plot/images/sphx_glr_ssao_006.png
@@ -245,9 +262,11 @@ seems realistic without it becoming overwhelming.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  43.957 seconds)
+   **Total running time of the script:** (0 minutes 17.296 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ssao.py:

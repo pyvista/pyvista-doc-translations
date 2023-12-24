@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-kochanek-spline.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-kochanek-spline.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -25,9 +25,10 @@ Create a Kochanek Spline
 
 Create a Kochanek spline/polyline from a numpy array of XYZ vertices.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-14
+.. GENERATED FROM PYTHON SOURCE LINES 9-15
 
 .. code-block:: default
+
 
 
     import numpy as np
@@ -41,11 +42,11 @@ Create a Kochanek spline/polyline from a numpy array of XYZ vertices.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-16
+.. GENERATED FROM PYTHON SOURCE LINES 19-20
 
 Create a dataset to plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-31
+.. GENERATED FROM PYTHON SOURCE LINES 20-35
 
 .. code-block:: default
 
@@ -70,8 +71,6 @@ Create a dataset to plot
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -83,11 +82,11 @@ Create a dataset to plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-33
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 Interpolate those points onto a parametric Kochanek spline
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-77
+.. GENERATED FROM PYTHON SOURCE LINES 37-81
 
 .. code-block:: default
 
@@ -138,6 +137,7 @@ Interpolate those points onto a parametric Kochanek spline
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-kochanek-spline_001.png
    :alt: create kochanek spline
    :srcset: /examples/00-load/images/sphx_glr_create-kochanek-spline_001.png
@@ -148,30 +148,29 @@ Interpolate those points onto a parametric Kochanek spline
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.907 seconds)
+   **Total running time of the script:** (0 minutes 1.135 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-kochanek-spline.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-kochanek-spline.py <create-kochanek-spline.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-kochanek-spline.py <create-kochanek-spline.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-kochanek-spline.ipynb <create-kochanek-spline.ipynb>`
+      :download:`Download Jupyter notebook: create-kochanek-spline.ipynb <create-kochanek-spline.ipynb>`
 
 
 .. only:: html

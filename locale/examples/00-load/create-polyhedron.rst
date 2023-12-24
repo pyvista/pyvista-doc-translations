@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-polyhedron.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-polyhedron.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,9 +29,10 @@ are building.
 
 First, we import the required libraries.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-16
+.. GENERATED FROM PYTHON SOURCE LINES 13-17
 
 .. code-block:: default
+
 
 
     import pyvista as pv
@@ -43,7 +44,7 @@ First, we import the required libraries.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-25
+.. GENERATED FROM PYTHON SOURCE LINES 21-29
 
 Define Points
 ~~~~~~~~~~~~~
@@ -54,7 +55,7 @@ points that will define each cell.
    It is not necessary that each cell has an isolated set of points. This has
    been done here to create isolated cells for this example.
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-65
+.. GENERATED FROM PYTHON SOURCE LINES 29-69
 
 .. code-block:: default
 
@@ -105,7 +106,7 @@ points that will define each cell.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-79
+.. GENERATED FROM PYTHON SOURCE LINES 70-83
 
 Cell connectivity
 ~~~~~~~~~~~~~~~~~
@@ -121,7 +122,7 @@ totaling 4 points, therefore ``[4, 0, 1, 2, 3]`` describes its connectivity.
 
 The same approach can be applied to all the other cell types.
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-85
+.. GENERATED FROM PYTHON SOURCE LINES 83-89
 
 .. code-block:: default
 
@@ -138,7 +139,7 @@ The same approach can be applied to all the other cell types.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 86-103
+.. GENERATED FROM PYTHON SOURCE LINES 90-107
 
 Polyhedron connectivity array
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +159,7 @@ Where:
 In ``polyhedron_connectivity``, the first item is ``NFaces``. ``NItems`` is
 added to ``polyhedron``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-150
+.. GENERATED FROM PYTHON SOURCE LINES 107-154
 
 .. code-block:: default
 
@@ -216,7 +217,7 @@ added to ``polyhedron``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 151-157
+.. GENERATED FROM PYTHON SOURCE LINES 155-161
 
 Cells array
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -225,7 +226,7 @@ Now we build the input cells array for the
 list. Internally, the ``NItems`` previously described is used to determine
 which nodes belong to which cells.
 
-.. GENERATED FROM PYTHON SOURCE LINES 157-161
+.. GENERATED FROM PYTHON SOURCE LINES 161-165
 
 .. code-block:: default
 
@@ -240,7 +241,7 @@ which nodes belong to which cells.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 162-169
+.. GENERATED FROM PYTHON SOURCE LINES 166-173
 
 Cell types
 ~~~~~~~~~~
@@ -250,7 +251,7 @@ cells array.
 The number of items in this list must match the number of cells in the
 connectivity array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 169-173
+.. GENERATED FROM PYTHON SOURCE LINES 173-177
 
 .. code-block:: default
 
@@ -265,14 +266,14 @@ connectivity array.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 174-178
+.. GENERATED FROM PYTHON SOURCE LINES 178-182
 
 Create the grid
 ~~~~~~~~~~~~~~~
 To create the grid, we use the cells array we built, the cell types, and
 the points that describe the faces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 178-181
+.. GENERATED FROM PYTHON SOURCE LINES 182-185
 
 .. code-block:: default
 
@@ -286,14 +287,14 @@ the points that describe the faces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 182-186
+.. GENERATED FROM PYTHON SOURCE LINES 186-190
 
 Plot the mesh
 ~~~~~~~~~~~~~
 Finally, we can plot the grid we've created. Label each cell at its cell
 center for clarity.
 
-.. GENERATED FROM PYTHON SOURCE LINES 186-197
+.. GENERATED FROM PYTHON SOURCE LINES 190-201
 
 .. code-block:: default
 
@@ -311,6 +312,7 @@ center for clarity.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-polyhedron_001.png
    :alt: create polyhedron
    :srcset: /examples/00-load/images/sphx_glr_create-polyhedron_001.png
@@ -321,9 +323,11 @@ center for clarity.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.516 seconds)
+   **Total running time of the script:** (0 minutes 0.258 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-polyhedron.py:
@@ -331,6 +335,8 @@ center for clarity.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

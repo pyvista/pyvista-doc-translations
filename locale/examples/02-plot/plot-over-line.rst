@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_plot-over-line.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_plot-over-line.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -25,7 +25,7 @@ Plot Over Line
 
 Plot the values of a dataset over a line through that dataset
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-13
+.. GENERATED FROM PYTHON SOURCE LINES 9-14
 
 .. code-block:: default
 
@@ -40,14 +40,15 @@ Plot the values of a dataset over a line through that dataset
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+
+.. GENERATED FROM PYTHON SOURCE LINES 20-24
 
 Volumetric Mesh
 +++++++++++++++
 
 First a 3D mesh example to demonstrate
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-33
+.. GENERATED FROM PYTHON SOURCE LINES 24-38
 
 .. code-block:: default
 
@@ -68,6 +69,7 @@ First a 3D mesh example to demonstrate
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_plot-over-line_001.png
    :alt: plot over line
    :srcset: /examples/02-plot/images/sphx_glr_plot-over-line_001.png
@@ -77,11 +79,13 @@ First a 3D mesh example to demonstrate
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-35
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 39-40
 
 Run the filter and produce a line plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-38
+.. GENERATED FROM PYTHON SOURCE LINES 40-43
 
 .. code-block:: default
 
@@ -100,14 +104,14 @@ Run the filter and produce a line plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-43
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
 Flat Surface
 ++++++++++++
 
 We could also plot the values of a mesh that lies on a flat surface
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-58
+.. GENERATED FROM PYTHON SOURCE LINES 48-63
 
 .. code-block:: default
 
@@ -129,6 +133,7 @@ We could also plot the values of a mesh that lies on a flat surface
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_plot-over-line_003.png
    :alt: plot over line
    :srcset: /examples/02-plot/images/sphx_glr_plot-over-line_003.png
@@ -138,11 +143,13 @@ We could also plot the values of a mesh that lies on a flat surface
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-60
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 64-65
 
 Run the filter and produce a line plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-68
+.. GENERATED FROM PYTHON SOURCE LINES 65-73
 
 .. code-block:: default
 
@@ -169,28 +176,25 @@ Run the filter and produce a line plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.659 seconds)
+   **Total running time of the script:** (0 minutes 3.243 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_plot-over-line.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: plot-over-line.py <plot-over-line.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: plot-over-line.py <plot-over-line.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: plot-over-line.ipynb <plot-over-line.ipynb>`
+      :download:`Download Jupyter notebook: plot-over-line.ipynb <plot-over-line.ipynb>`
 
 
 .. only:: html

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-pixel-art.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-pixel-art.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -27,7 +27,7 @@ Here we use :func:`pyvista.Box` to make `pixel art <https://en.wikipedia.org/wik
 Pixel string `source <https://commons.wikimedia.org/wiki/File:Noto_Emoji_Pie_1f47e.svg>`_
 and `license <https://github.com/googlefonts/noto-emoji/blob/main/LICENSE>`_.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-15
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
@@ -41,12 +41,13 @@ and `license <https://github.com/googlefonts/noto-emoji/blob/main/LICENSE>`_.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+
+.. GENERATED FROM PYTHON SOURCE LINES 20-22
 
 Convert pixel art to an array
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-43
+.. GENERATED FROM PYTHON SOURCE LINES 22-47
 
 .. code-block:: default
 
@@ -82,13 +83,13 @@ Convert pixel art to an array
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-47
+.. GENERATED FROM PYTHON SOURCE LINES 48-51
 
 Define function to draw pixels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Define a helper function to add pixel boxes to plotter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-72
+.. GENERATED FROM PYTHON SOURCE LINES 51-76
 
 .. code-block:: default
 
@@ -124,11 +125,11 @@ Define a helper function to add pixel boxes to plotter.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-74
+.. GENERATED FROM PYTHON SOURCE LINES 77-78
 
 Now you can plot a pixel art of ALIEN MONSTERS.
 
-.. GENERATED FROM PYTHON SOURCE LINES 74-93
+.. GENERATED FROM PYTHON SOURCE LINES 78-97
 
 .. code-block:: default
 
@@ -154,10 +155,32 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-pixel-art_001.png
-   :alt: create pixel art
-   :srcset: /examples/00-load/images/sphx_glr_create-pixel-art_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-pixel-art_001.png
+        :alt: create pixel art
+        :srcset: /examples/00-load/images/sphx_glr_create-pixel-art_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-pixel-art_001.vtksz
+
 
 
 
@@ -166,7 +189,7 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.089 seconds)
+   **Total running time of the script:** (0 minutes 4.229 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pixel-art.py:
@@ -174,6 +197,8 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

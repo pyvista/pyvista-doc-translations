@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_slider-bar-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_slider-bar-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,7 +29,7 @@ The slider widget can be enabled and disabled by the
 This is one of the most versatile widgets as it can control a value that can
 be used for just about anything.
 
-.. GENERATED FROM PYTHON SOURCE LINES 13-14
+.. GENERATED FROM PYTHON SOURCE LINES 13-16
 
 .. code-block:: default
 
@@ -41,13 +41,15 @@ be used for just about anything.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-25
 
 One helper method we've added is the
 :func:`pyvista.Plotter.add_mesh_threshold` method which leverages the
 slider widget to control a thresholding value.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-29
+.. GENERATED FROM PYTHON SOURCE LINES 25-35
 
 .. code-block:: default
 
@@ -64,6 +66,7 @@ slider widget to control a thresholding value.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_001.png
    :alt: slider bar widget
    :srcset: /examples/03-widgets/images/sphx_glr_slider-bar-widget_001.png
@@ -73,11 +76,13 @@ slider widget to control a thresholding value.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 36-37
 
 After interacting with the scene, the threshold mesh is available as:
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-33
+.. GENERATED FROM PYTHON SOURCE LINES 37-39
 
 .. code-block:: default
 
@@ -89,29 +94,26 @@ After interacting with the scene, the threshold mesh is available as:
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7fcb43388940)
-      N Cells:	115425
-      N Points:	179772
-      X Bounds:	3.760e+01, 1.171e+02
-      Y Bounds:	1.446e+01, 1.338e+02
-      Z Bounds:	0.000e+00, 2.000e+02
-      N Arrays:	1
-    ]
+    [UnstructuredGrid (0x7f87536e0880)
+      N Cells:    295424
+      N Points:   394455
+      X Bounds:   3.615e+01, 1.178e+02
+      Y Bounds:   1.085e+01, 1.345e+02
+      Z Bounds:   0.000e+00, 2.000e+02
+      N Arrays:   1]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-37
+.. GENERATED FROM PYTHON SOURCE LINES 40-43
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/slider-widget-threshold.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-45
+.. GENERATED FROM PYTHON SOURCE LINES 45-51
 
 Custom Callback
 +++++++++++++++
@@ -120,7 +122,7 @@ Or you could leverage a custom callback function that takes a single value
 from the slider as its argument to do something like control the resolution
 of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-59
+.. GENERATED FROM PYTHON SOURCE LINES 51-65
 
 .. code-block:: default
 
@@ -141,6 +143,7 @@ of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_slider-bar-widget_002.png
    :alt: slider bar widget
    :srcset: /examples/03-widgets/images/sphx_glr_slider-bar-widget_002.png
@@ -150,7 +153,9 @@ of a mesh. Again note the use of the ``name`` argument in ``add_mesh``:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-63
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 66-69
 
 And here is a screen capture of a user interacting with this
 
@@ -159,28 +164,25 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.400 seconds)
+   **Total running time of the script:** (0 minutes 3.355 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_slider-bar-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: slider-bar-widget.py <slider-bar-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: slider-bar-widget.py <slider-bar-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: slider-bar-widget.ipynb <slider-bar-widget.ipynb>`
+      :download:`Download Jupyter notebook: slider-bar-widget.ipynb <slider-bar-widget.ipynb>`
 
 
 .. only:: html

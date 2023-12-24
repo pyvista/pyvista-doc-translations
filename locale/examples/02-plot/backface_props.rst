@@ -31,9 +31,11 @@ One straightforward example is when a closed (or close enough) surface has a
 different color on the inside. Note that the notion of "inside" and "outside"
 depend on the orientation of the surface normals:
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-31
+.. GENERATED FROM PYTHON SOURCE LINES 15-33
 
 .. code-block:: default
+
+
 
     import numpy as np
 
@@ -54,6 +56,7 @@ depend on the orientation of the surface normals:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_001.png
    :alt: backface props
    :srcset: /examples/02-plot/images/sphx_glr_backface_props_001.png
@@ -63,7 +66,9 @@ depend on the orientation of the surface normals:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-40
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 39-46
 
 A more interesting use case is helping visualize the orientation of complex,
 self-intersecting surfaces. For instance :func:`Catalan's minimal surface
@@ -73,7 +78,7 @@ structure of the surface. This example also demonstrates use of the
 :attr:`backface_prop <pyvista.Actor.backface_prop>` property of the
 :class:`pyvista.Actor` class.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-51
+.. GENERATED FROM PYTHON SOURCE LINES 46-57
 
 .. code-block:: default
 
@@ -91,22 +96,44 @@ structure of the surface. This example also demonstrates use of the
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_002.png
-   :alt: backface props
-   :srcset: /examples/02-plot/images/sphx_glr_backface_props_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_002.png
+        :alt: backface props
+        :srcset: /examples/02-plot/images/sphx_glr_backface_props_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_backface_props_002.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-55
+
+.. GENERATED FROM PYTHON SOURCE LINES 58-61
 
 In the case of non-orientable surfaces, adding specific backface properties can
 make the non-orientable quality very obvious by the emergence of "seams"
 where the face properties are discontinuous.
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-64
+.. GENERATED FROM PYTHON SOURCE LINES 61-70
 
 .. code-block:: default
 
@@ -122,16 +149,38 @@ where the face properties are discontinuous.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_003.png
-   :alt: backface props
-   :srcset: /examples/02-plot/images/sphx_glr_backface_props_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_003.png
+        :alt: backface props
+        :srcset: /examples/02-plot/images/sphx_glr_backface_props_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_backface_props_003.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 65-71
+
+.. GENERATED FROM PYTHON SOURCE LINES 71-77
 
 Of course we aren't constrained to only setting distinct colors for backfaces;
 most :class:`pyvista.Property` attributes can be overridden. However, some of
@@ -140,7 +189,7 @@ most objects have the same opacity no matter which direction you look at them.
 Here is a GIF animation circling around such an asymmetrically opaque Möbius
 strip:
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-83
+.. GENERATED FROM PYTHON SOURCE LINES 77-89
 
 .. code-block:: default
 
@@ -159,6 +208,7 @@ strip:
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_004.gif
    :alt: backface props
    :srcset: /examples/02-plot/images/sphx_glr_backface_props_004.gif
@@ -168,7 +218,9 @@ strip:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 84-94
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 90-100
 
 Apply Backface Properties to Textured Meshes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,7 +233,7 @@ The lighting has been disabled for this example to demonstrate how you can
 make the interior of the surface appear occluded without any directional
 lighting simply by providing a different color for backface.
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-110
+.. GENERATED FROM PYTHON SOURCE LINES 100-116
 
 .. code-block:: default
 
@@ -204,23 +256,45 @@ lighting simply by providing a different color for backface.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_005.png
-   :alt: backface props
-   :srcset: /examples/02-plot/images/sphx_glr_backface_props_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_005.png
+        :alt: backface props
+        :srcset: /examples/02-plot/images/sphx_glr_backface_props_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_backface_props_005.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-115
+
+.. GENERATED FROM PYTHON SOURCE LINES 117-121
 
 Backface Properties and Physically Based Rendering
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Note that backfaces are automatically culled when physically based rendering
 is enabled, regardless of the settings of backface parameters.
 
-.. GENERATED FROM PYTHON SOURCE LINES 115-131
+.. GENERATED FROM PYTHON SOURCE LINES 121-137
 
 .. code-block:: default
 
@@ -243,16 +317,38 @@ is enabled, regardless of the settings of backface parameters.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_006.png
-   :alt: backface props
-   :srcset: /examples/02-plot/images/sphx_glr_backface_props_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_backface_props_006.png
+        :alt: backface props
+        :srcset: /examples/02-plot/images/sphx_glr_backface_props_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_backface_props_006.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 132-134
+
+.. GENERATED FROM PYTHON SOURCE LINES 138-140
 
 See also the :ref:`sphere_eversion_example` example which relies on
 distinguishing the inside and the outside of a sphere.
@@ -260,7 +356,7 @@ distinguishing the inside and the outside of a sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  39.704 seconds)
+   **Total running time of the script:** (0 minutes 21.391 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_backface_props.py:

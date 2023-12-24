@@ -26,9 +26,10 @@ Depth of Field Plotting
 This example shows how you can use :func:`enable_depth_of_field
 <pyvista.Plotter.enable_depth_of_field>` to highlight part of your plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 11-17
+.. GENERATED FROM PYTHON SOURCE LINES 11-18
 
 .. code-block:: default
+
 
 
     import numpy as np
@@ -43,14 +44,14 @@ This example shows how you can use :func:`enable_depth_of_field
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-22
+.. GENERATED FROM PYTHON SOURCE LINES 23-27
 
 Generate a bunch of bunnies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Create many bunnies using the :func:`glyph <pyvista.DataSetFilters.glyph>`
 filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-35
+.. GENERATED FROM PYTHON SOURCE LINES 27-40
 
 .. code-block:: default
 
@@ -76,7 +77,7 @@ filter.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>2500236</td></tr>
     <tr><td>N Points</td><td>1294092</td></tr>
@@ -92,12 +93,12 @@ filter.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-38
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 Show the plot without enabling depth of field
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-61
+.. GENERATED FROM PYTHON SOURCE LINES 43-66
 
 .. code-block:: default
 
@@ -127,21 +128,43 @@ Show the plot without enabling depth of field
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_depth_of_field_001.png
-   :alt: depth of field
-   :srcset: /examples/02-plot/images/sphx_glr_depth_of_field_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_depth_of_field_001.png
+        :alt: depth of field
+        :srcset: /examples/02-plot/images/sphx_glr_depth_of_field_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_depth_of_field_001.vtksz
 
 
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-64
+
+.. GENERATED FROM PYTHON SOURCE LINES 67-69
 
 Show the plot while enabling depth of field
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-73
+.. GENERATED FROM PYTHON SOURCE LINES 69-78
 
 .. code-block:: default
 
@@ -157,10 +180,32 @@ Show the plot while enabling depth of field
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_depth_of_field_002.png
-   :alt: depth of field
-   :srcset: /examples/02-plot/images/sphx_glr_depth_of_field_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_depth_of_field_002.png
+        :alt: depth of field
+        :srcset: /examples/02-plot/images/sphx_glr_depth_of_field_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_depth_of_field_002.vtksz
+
 
 
 
@@ -169,7 +214,7 @@ Show the plot while enabling depth of field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  35.915 seconds)
+   **Total running time of the script:** (1 minutes 11.088 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth_of_field.py:

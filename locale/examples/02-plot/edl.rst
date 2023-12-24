@@ -29,7 +29,7 @@ To learn more, please see `this blog post`_.
 
 .. _this blog post: https://blog.kitware.com/eye-dome-lighting-a-non-photorealistic-shading-technique/
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-19
+.. GENERATED FROM PYTHON SOURCE LINES 15-20
 
 .. code-block:: default
 
@@ -44,7 +44,8 @@ To learn more, please see `this blog post`_.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-27
+
+.. GENERATED FROM PYTHON SOURCE LINES 26-32
 
 Statue
 +++++++++++
@@ -53,13 +54,14 @@ Eye-Dome Lighting can dramatically improve depth perception when plotting
 incredibly sophisticated meshes like the creative commons Queen Nefertiti
 statue:
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-31
+.. GENERATED FROM PYTHON SOURCE LINES 32-36
 
 .. code-block:: default
 
 
     nefertiti = examples.download_nefertiti()
     nefertiti.plot(eye_dome_lighting=True, cpos=[-1, -1, 0.2], color=True)
+
 
 
 
@@ -73,11 +75,13 @@ statue:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-33
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 37-38
 
 Here we will compare a EDL shading side by side with normal shading
 
-.. GENERATED FROM PYTHON SOURCE LINES 33-51
+.. GENERATED FROM PYTHON SOURCE LINES 38-56
 
 .. code-block:: default
 
@@ -102,6 +106,7 @@ Here we will compare a EDL shading side by side with normal shading
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_edl_002.png
    :alt: edl
    :srcset: /examples/02-plot/images/sphx_glr_edl_002.png
@@ -111,7 +116,9 @@ Here we will compare a EDL shading side by side with normal shading
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-62
 
 Point Cloud
 +++++++++++
@@ -119,7 +126,7 @@ Point Cloud
 When plotting a simple point cloud, it can be difficult to perceive depth.
 Take this Lidar point cloud for example:
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-61
+.. GENERATED FROM PYTHON SOURCE LINES 62-66
 
 .. code-block:: default
 
@@ -134,11 +141,11 @@ Take this Lidar point cloud for example:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-63
+.. GENERATED FROM PYTHON SOURCE LINES 67-68
 
 And now plot this point cloud as-is:
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-70
+.. GENERATED FROM PYTHON SOURCE LINES 68-75
 
 .. code-block:: default
 
@@ -147,6 +154,7 @@ And now plot this point cloud as-is:
     p = pv.Plotter()
     p.add_mesh(point_cloud, color='lightblue', point_size=5)
     p.show()
+
 
 
 
@@ -161,12 +169,14 @@ And now plot this point cloud as-is:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-73
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 76-78
 
 We can improve the depth mapping by enabling eye dome lighting on the
 renderer with :func:`pyvista.Renderer.enable_eye_dome_lighting`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 73-81
+.. GENERATED FROM PYTHON SOURCE LINES 78-86
 
 .. code-block:: default
 
@@ -181,6 +191,7 @@ renderer with :func:`pyvista.Renderer.enable_eye_dome_lighting`.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_edl_004.png
    :alt: edl
    :srcset: /examples/02-plot/images/sphx_glr_edl_004.png
@@ -190,11 +201,13 @@ renderer with :func:`pyvista.Renderer.enable_eye_dome_lighting`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 82-83
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 87-88
 
 The eye dome lighting mode can also handle plotting scalar arrays:
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-89
+.. GENERATED FROM PYTHON SOURCE LINES 88-94
 
 .. code-block:: default
 
@@ -204,6 +217,7 @@ The eye dome lighting mode can also handle plotting scalar arrays:
     p.add_mesh(point_cloud, scalars="Elevation", point_size=5)
     p.enable_eye_dome_lighting()
     p.show()
+
 
 
 
@@ -217,9 +231,11 @@ The eye dome lighting mode can also handle plotting scalar arrays:
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 20.508 seconds)
+   **Total running time of the script:** (1 minutes 14.160 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edl.py:

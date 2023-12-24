@@ -33,11 +33,24 @@ Python due to its modularity.  If there's some limitation of pyvista
 (or trimesh), then you can adapt your scripts to use the best features
 of more than one module.
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-20
+.. GENERATED FROM PYTHON SOURCE LINES 18-20
+
+.. code-block:: default
+
+
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 24-25
 
 Wrap a point cloud composed of random points from numpy
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-35
+.. GENERATED FROM PYTHON SOURCE LINES 25-40
 
 .. code-block:: default
 
@@ -59,6 +72,7 @@ Wrap a point cloud composed of random points from numpy
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_wrap-trimesh_001.png
    :alt: wrap trimesh
    :srcset: /examples/00-load/images/sphx_glr_wrap-trimesh_001.png
@@ -68,11 +82,13 @@ Wrap a point cloud composed of random points from numpy
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-37
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 41-42
 
 Wrap an instance of Trimesh
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-45
+.. GENERATED FROM PYTHON SOURCE LINES 42-50
 
 .. code-block:: default
 
@@ -92,7 +108,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7f37e5b15640)
+    PolyData (0x7f875cd93340)
       N Cells:    1
       N Points:   3
       N Strips:   0
@@ -104,11 +120,11 @@ Wrap an instance of Trimesh
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-47
+.. GENERATED FROM PYTHON SOURCE LINES 51-52
 
 Wrap an instance of vtk.vtkPolyData
 
-.. GENERATED FROM PYTHON SOURCE LINES 47-61
+.. GENERATED FROM PYTHON SOURCE LINES 52-66
 
 .. code-block:: default
 
@@ -134,7 +150,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7f37962748e0)
+    PolyData (0x7f875a308c40)
       N Cells:    1
       N Points:   1
       N Strips:   0
@@ -149,7 +165,7 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.880 seconds)
+   **Total running time of the script:** (0 minutes 0.635 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:
