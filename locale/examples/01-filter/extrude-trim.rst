@@ -94,9 +94,10 @@ Plot the Extruded Surface
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Plot the resulting :class:`pyvista.PolyData`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 35-51
+.. GENERATED FROM PYTHON SOURCE LINES 35-52
 
 .. code-block:: default
+
 
 
     pl = pv.Plotter(shape=(1, 2))
@@ -117,6 +118,7 @@ Plot the resulting :class:`pyvista.PolyData`.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_extrude-trim_001.png
    :alt: extrude trim
    :srcset: /examples/01-filter/images/sphx_glr_extrude-trim_001.png
@@ -126,7 +128,9 @@ Plot the resulting :class:`pyvista.PolyData`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 57-62
 
 Extruding All Edges
 ~~~~~~~~~~~~~~~~~~~
@@ -134,7 +138,7 @@ The previous example used the default ``extrusion='boundary_edges'``, which
 only generates faces on the boundary. When using ``extrusion='all_edges'``,
 interior edges are also created.
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-74
+.. GENERATED FROM PYTHON SOURCE LINES 62-79
 
 .. code-block:: default
 
@@ -169,13 +173,13 @@ interior edges are also created.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-78
+.. GENERATED FROM PYTHON SOURCE LINES 80-83
 
 Plot
 ~~~~
 Show the additional interior faces by plotting with ``style='wireframe'``.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-93
+.. GENERATED FROM PYTHON SOURCE LINES 83-98
 
 .. code-block:: default
 
@@ -197,6 +201,7 @@ Show the additional interior faces by plotting with ``style='wireframe'``.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_extrude-trim_002.png
    :alt: extrude trim
    :srcset: /examples/01-filter/images/sphx_glr_extrude-trim_002.png
@@ -206,14 +211,16 @@ Show the additional interior faces by plotting with ``style='wireframe'``.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-98
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 103-107
 
 Extrude a Line
 ~~~~~~~~~~~~~~
 You can also extrude lines. Observe that the output from extruded lines is
 still a :class:`pyvista.PolyData`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 98-105
+.. GENERATED FROM PYTHON SOURCE LINES 107-114
 
 .. code-block:: default
 
@@ -256,13 +263,13 @@ still a :class:`pyvista.PolyData`.
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 106-109
+.. GENERATED FROM PYTHON SOURCE LINES 115-118
 
 Plot the Extruded Line
 ~~~~~~~~~~~~~~~~~~~~~~
 Note how the scalars are copied to the extruded line.
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-115
+.. GENERATED FROM PYTHON SOURCE LINES 118-124
 
 .. code-block:: default
 
@@ -275,10 +282,32 @@ Note how the scalars are copied to the extruded line.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extrude-trim_003.png
-   :alt: extrude trim
-   :srcset: /examples/01-filter/images/sphx_glr_extrude-trim_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extrude-trim_003.png
+        :alt: extrude trim
+        :srcset: /examples/01-filter/images/sphx_glr_extrude-trim_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extrude-trim_003.vtksz
+
 
 
 
@@ -287,7 +316,7 @@ Note how the scalars are copied to the extruded line.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.833 seconds)
+   **Total running time of the script:** (0 minutes 1.196 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-trim.py:

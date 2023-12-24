@@ -27,7 +27,7 @@ This example shows how you can use :func:`add_blurring
 :func:`enable_depth_of_field <pyvista.Plotter.enable_depth_of_field>`
 to highlight part of your plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-15
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
@@ -41,12 +41,13 @@ to highlight part of your plot.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-18
+
+.. GENERATED FROM PYTHON SOURCE LINES 22-24
 
 Create several spheres
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-26
+.. GENERATED FROM PYTHON SOURCE LINES 24-32
 
 .. code-block:: default
 
@@ -65,13 +66,13 @@ Create several spheres
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-30
+.. GENERATED FROM PYTHON SOURCE LINES 33-36
 
 Blur the plot
 ~~~~~~~~~~~~~
 Add a few blur passes to blur the plot
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-41
+.. GENERATED FROM PYTHON SOURCE LINES 36-47
 
 .. code-block:: default
 
@@ -84,6 +85,7 @@ Add a few blur passes to blur the plot
     pl.camera.zoom(1.5)
     pl.enable_anti_aliasing('ssaa')
     pl.show()
+
 
 
 
@@ -98,12 +100,14 @@ Add a few blur passes to blur the plot
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 42-44
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 48-50
 
 Note how this is different than selectively blurring part of the mesh behind
 the focal plane
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-51
+.. GENERATED FROM PYTHON SOURCE LINES 50-57
 
 .. code-block:: default
 
@@ -117,6 +121,7 @@ the focal plane
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_blurring_002.png
    :alt: blurring
    :srcset: /examples/02-plot/images/sphx_glr_blurring_002.png
@@ -127,9 +132,11 @@ the focal plane
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  13.489 seconds)
+   **Total running time of the script:** (0 minutes 7.066 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_blurring.py:

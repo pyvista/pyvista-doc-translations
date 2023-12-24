@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_vector-component.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_vector-component.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -26,7 +26,7 @@ Plot a single component of a vector as a scalar array.
 We can plot individual components of multi-component arrays with the
 ``component`` argument  of the ``add_mesh`` method.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 10-16
 
 .. code-block:: default
 
@@ -41,11 +41,13 @@ We can plot individual components of multi-component arrays with the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-16
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 21-22
 
 Download an example notched beam stress
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-19
+.. GENERATED FROM PYTHON SOURCE LINES 22-25
 
 .. code-block:: default
 
@@ -59,13 +61,13 @@ Download an example notched beam stress
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-23
+.. GENERATED FROM PYTHON SOURCE LINES 26-29
 
 The default behavior with no component specified is to use the
 vector magnitude. We can access each component by specifying the
 component argument.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-47
+.. GENERATED FROM PYTHON SOURCE LINES 29-53
 
 .. code-block:: default
 
@@ -96,6 +98,7 @@ component argument.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_vector-component_001.png
    :alt: vector component
    :srcset: /examples/02-plot/images/sphx_glr_vector-component_001.png
@@ -106,30 +109,29 @@ component argument.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.290 seconds)
+   **Total running time of the script:** (0 minutes 1.229 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_vector-component.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: vector-component.py <vector-component.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: vector-component.py <vector-component.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: vector-component.ipynb <vector-component.ipynb>`
+      :download:`Download Jupyter notebook: vector-component.ipynb <vector-component.ipynb>`
 
 
 .. only:: html

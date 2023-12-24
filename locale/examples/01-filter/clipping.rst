@@ -25,7 +25,7 @@ Clipping with Planes & Boxes
 
 Clip/cut any dataset using planes or boxes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 9-12
+.. GENERATED FROM PYTHON SOURCE LINES 9-13
 
 .. code-block:: default
 
@@ -39,7 +39,8 @@ Clip/cut any dataset using planes or boxes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-19
+
+.. GENERATED FROM PYTHON SOURCE LINES 18-23
 
 Clip with Plane
 +++++++++++++++
@@ -47,7 +48,7 @@ Clip with Plane
 Clip any dataset by a user defined plane using the
 :func:`pyvista.DataSetFilters.clip` filter
 
-.. GENERATED FROM PYTHON SOURCE LINES 19-30
+.. GENERATED FROM PYTHON SOURCE LINES 23-34
 
 .. code-block:: default
 
@@ -65,6 +66,7 @@ Clip any dataset by a user defined plane using the
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_001.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_001.png
@@ -74,7 +76,9 @@ Clip any dataset by a user defined plane using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-36
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 35-40
 
 Clip with Bounds
 ++++++++++++++++
@@ -82,7 +86,7 @@ Clip with Bounds
 Clip any dataset by a set of XYZ bounds using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 36-48
+.. GENERATED FROM PYTHON SOURCE LINES 40-52
 
 .. code-block:: default
 
@@ -101,6 +105,7 @@ Clip any dataset by a set of XYZ bounds using the
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_002.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_002.png
@@ -110,7 +115,9 @@ Clip any dataset by a set of XYZ bounds using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-54
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 53-58
 
 Clip with Rotated Box
 +++++++++++++++++++++
@@ -118,7 +125,7 @@ Clip with Rotated Box
 Clip any dataset by an arbitrarily rotated solid box using the
 :func:`pyvista.DataSetFilters.clip_box` filter.
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-65
+.. GENERATED FROM PYTHON SOURCE LINES 58-69
 
 .. code-block:: default
 
@@ -136,6 +143,7 @@ Clip any dataset by an arbitrarily rotated solid box using the
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_003.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_003.png
@@ -145,11 +153,13 @@ Clip any dataset by an arbitrarily rotated solid box using the
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-67
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 70-71
 
 Run the box clipping algorithm
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-79
+.. GENERATED FROM PYTHON SOURCE LINES 71-83
 
 .. code-block:: default
 
@@ -168,6 +178,7 @@ Run the box clipping algorithm
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_004.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_004.png
@@ -177,7 +188,9 @@ Run the box clipping algorithm
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-90
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 84-94
 
 Crinkled Clipping
 +++++++++++++++++
@@ -190,7 +203,7 @@ This option is available for :func:`pyvista.DataSetFilters.clip`,
 :func:`pyvista.DataSetFilters.clip_surface`, but not available when clipping
 by scalar in :func:`pyvista.DataSetFilters.clip_scalar`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 90-94
+.. GENERATED FROM PYTHON SOURCE LINES 94-98
 
 .. code-block:: default
 
@@ -205,11 +218,11 @@ by scalar in :func:`pyvista.DataSetFilters.clip_scalar`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-96
+.. GENERATED FROM PYTHON SOURCE LINES 99-100
 
 Define clipping plane
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-99
+.. GENERATED FROM PYTHON SOURCE LINES 100-103
 
 .. code-block:: default
 
@@ -223,11 +236,11 @@ Define clipping plane
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-101
+.. GENERATED FROM PYTHON SOURCE LINES 104-105
 
 Perform a standard clip
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-103
+.. GENERATED FROM PYTHON SOURCE LINES 105-107
 
 .. code-block:: default
 
@@ -240,11 +253,11 @@ Perform a standard clip
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 104-105
+.. GENERATED FROM PYTHON SOURCE LINES 108-109
 
 Perform a crinkled clip
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-107
+.. GENERATED FROM PYTHON SOURCE LINES 109-111
 
 .. code-block:: default
 
@@ -257,11 +270,11 @@ Perform a crinkled clip
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 108-109
+.. GENERATED FROM PYTHON SOURCE LINES 112-113
 
 Plot comparison
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-117
+.. GENERATED FROM PYTHON SOURCE LINES 113-121
 
 .. code-block:: default
 
@@ -276,6 +289,7 @@ Plot comparison
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_clipping_005.png
    :alt: clipping
    :srcset: /examples/01-filter/images/sphx_glr_clipping_005.png
@@ -286,9 +300,11 @@ Plot comparison
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.654 seconds)
+   **Total running time of the script:** (0 minutes 2.385 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_clipping.py:

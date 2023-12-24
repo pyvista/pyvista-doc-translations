@@ -25,7 +25,7 @@ Picking points on a mesh
 This example demonstrates how to pick points on meshes using
 :func:`enable_point_picking() <pyvista.Plotter.enable_point_picking>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -39,13 +39,14 @@ This example demonstrates how to pick points on meshes using
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+
+.. GENERATED FROM PYTHON SOURCE LINES 20-23
 
 Pick points on a sphere
 +++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-25
+.. GENERATED FROM PYTHON SOURCE LINES 23-30
 
 .. code-block:: default
 
@@ -59,6 +60,7 @@ Pick points on a sphere
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-picking_001.png
    :alt: point picking
    :srcset: /examples/02-plot/images/sphx_glr_point-picking_001.png
@@ -68,7 +70,9 @@ Pick points on a sphere
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-31
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-36
 
 Ignore the 3D window
 ++++++++++++++++++++
@@ -76,7 +80,7 @@ Ignore the 3D window
 In the above example, both points on the mesh and points in the 3d window can be
 selected. It is possible instead pick only points on the mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 31-38
+.. GENERATED FROM PYTHON SOURCE LINES 36-43
 
 .. code-block:: default
 
@@ -90,6 +94,7 @@ selected. It is possible instead pick only points on the mesh.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-picking_002.png
    :alt: point picking
    :srcset: /examples/02-plot/images/sphx_glr_point-picking_002.png
@@ -99,14 +104,16 @@ selected. It is possible instead pick only points on the mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-43
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 44-48
 
 Modify which actors are pickable
 ++++++++++++++++++++++++++++++++
 
 After enabling point picking, we can modify which actors are pickable.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-55
+.. GENERATED FROM PYTHON SOURCE LINES 48-60
 
 .. code-block:: default
 
@@ -125,6 +132,7 @@ After enabling point picking, we can modify which actors are pickable.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_point-picking_003.png
    :alt: point picking
    :srcset: /examples/02-plot/images/sphx_glr_point-picking_003.png
@@ -134,13 +142,15 @@ After enabling point picking, we can modify which actors are pickable.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-59
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-64
 
 Pick using the left-mouse button
 ++++++++++++++++++++++++++++++++
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-65
+.. GENERATED FROM PYTHON SOURCE LINES 64-70
 
 .. code-block:: default
 
@@ -150,6 +160,7 @@ Pick using the left-mouse button
     p.add_mesh(sphere, pickable=True)
     p.enable_point_picking(left_clicking=True)
     p.show()
+
 
 
 
@@ -163,9 +174,11 @@ Pick using the left-mouse button
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.028 seconds)
+   **Total running time of the script:** (0 minutes 0.919 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-picking.py:

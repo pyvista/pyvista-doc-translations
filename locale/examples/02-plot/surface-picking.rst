@@ -27,7 +27,7 @@ This example demonstrates how to pick meshes using
 
 This allows you to pick points on the surface of a mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 12-15
+.. GENERATED FROM PYTHON SOURCE LINES 12-16
 
 .. code-block:: default
 
@@ -41,11 +41,12 @@ This allows you to pick points on the surface of a mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-17
+
+.. GENERATED FROM PYTHON SOURCE LINES 21-22
 
 Create a mesh and enable picking using the default settings.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-26
+.. GENERATED FROM PYTHON SOURCE LINES 22-31
 
 .. code-block:: default
 
@@ -61,6 +62,7 @@ Create a mesh and enable picking using the default settings.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_surface-picking_001.png
    :alt: surface picking
    :srcset: /examples/02-plot/images/sphx_glr_surface-picking_001.png
@@ -70,12 +72,14 @@ Create a mesh and enable picking using the default settings.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-29
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 32-34
 
 Enable a callback that creates a cube at the right-clicked point and add a
 label at the point as well it.
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-42
+.. GENERATED FROM PYTHON SOURCE LINES 34-47
 
 .. code-block:: default
 
@@ -95,6 +99,7 @@ label at the point as well it.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_surface-picking_002.png
    :alt: surface picking
    :srcset: /examples/02-plot/images/sphx_glr_surface-picking_002.png
@@ -105,9 +110,11 @@ label at the point as well it.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.574 seconds)
+   **Total running time of the script:** (0 minutes 0.460 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_surface-picking.py:

@@ -79,10 +79,32 @@ Resample the points' arrays onto a surface
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_001.png
-   :alt: interpolate
-   :srcset: /examples/01-filter/images/sphx_glr_interpolate_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_001.png
+        :alt: interpolate
+        :srcset: /examples/01-filter/images/sphx_glr_interpolate_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_interpolate_001.vtksz
+
 
 
 
@@ -109,10 +131,32 @@ Run the interpolation
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_002.png
-   :alt: interpolate
-   :srcset: /examples/01-filter/images/sphx_glr_interpolate_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_002.png
+        :alt: interpolate
+        :srcset: /examples/01-filter/images/sphx_glr_interpolate_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_interpolate_002.vtksz
+
 
 
 
@@ -185,10 +229,32 @@ Create the interpolation grid around the sparse data
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_003.png
-   :alt: interpolate
-   :srcset: /examples/01-filter/images/sphx_glr_interpolate_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_003.png
+        :alt: interpolate
+        :srcset: /examples/01-filter/images/sphx_glr_interpolate_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_interpolate_003.vtksz
+
 
 
 
@@ -215,9 +281,11 @@ Run an interpolation
 
 Visualize the results
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-107
+.. GENERATED FROM PYTHON SOURCE LINES 97-109
 
 .. code-block:: default
+
+
 
     vol_opac = [0, 0, 0.2, 0.2, 0.5, 0.5]
 
@@ -232,6 +300,7 @@ Visualize the results
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_interpolate_004.png
    :alt: interpolate
    :srcset: /examples/01-filter/images/sphx_glr_interpolate_004.png
@@ -242,9 +311,11 @@ Visualize the results
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.609 seconds)
+   **Total running time of the script:** (0 minutes 7.039 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_interpolate.py:

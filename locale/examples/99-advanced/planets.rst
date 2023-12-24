@@ -37,7 +37,7 @@ This example is inspired by `planet3D-MATLAB
    Please take a look at libraries like `astropy <https://www.astropy.org/>`_
    if you wish to use Python for astronomical calculations.
 
-.. GENERATED FROM PYTHON SOURCE LINES 22-25
+.. GENERATED FROM PYTHON SOURCE LINES 22-26
 
 .. code-block:: default
 
@@ -51,14 +51,15 @@ This example is inspired by `planet3D-MATLAB
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 26-30
+
+.. GENERATED FROM PYTHON SOURCE LINES 31-35
 
 Plot the Solar System with Stars in the Background
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This section relies on calculations in `Visualizing Celestial Bodies in 3D
 <https://tamaskis.github.io/files/Visualizing_Celestial_Bodies_in_3D.pdf>`_.
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-92
+.. GENERATED FROM PYTHON SOURCE LINES 35-97
 
 .. code-block:: default
 
@@ -127,6 +128,7 @@ This section relies on calculations in `Visualizing Celestial Bodies in 3D
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_planets_001.png
    :alt: planets
    :srcset: /examples/99-advanced/images/sphx_glr_planets_001.png
@@ -136,14 +138,16 @@ This section relies on calculations in `Visualizing Celestial Bodies in 3D
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-97
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 98-102
 
 Plot the Planets and their Textures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Each planet here is in a different subplot. The planet's textures are from
 `Solar Textures <https://www.solarsystemscope.com/textures/>`_.
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-117
+.. GENERATED FROM PYTHON SOURCE LINES 102-122
 
 .. code-block:: default
 
@@ -170,6 +174,7 @@ Each planet here is in a different subplot. The planet's textures are from
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_planets_002.png
    :alt: planets
    :srcset: /examples/99-advanced/images/sphx_glr_planets_002.png
@@ -179,13 +184,15 @@ Each planet here is in a different subplot. The planet's textures are from
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 118-121
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 123-126
 
 Plot the Atmosphere and Surface of Venus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Here we plot Venus with and without its atmosphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-135
+.. GENERATED FROM PYTHON SOURCE LINES 126-140
 
 .. code-block:: default
 
@@ -206,6 +213,7 @@ Here we plot Venus with and without its atmosphere.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_planets_003.png
    :alt: planets
    :srcset: /examples/99-advanced/images/sphx_glr_planets_003.png
@@ -216,9 +224,11 @@ Here we plot Venus with and without its atmosphere.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 3 minutes  39.245 seconds)
+   **Total running time of the script:** (2 minutes 34.590 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_planets.py:

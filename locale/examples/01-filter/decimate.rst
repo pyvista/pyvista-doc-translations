@@ -44,10 +44,32 @@ Decimate a mesh
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_001.png
-   :alt: decimate
-   :srcset: /examples/01-filter/images/sphx_glr_decimate_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_decimate_001.png
+        :alt: decimate
+        :srcset: /examples/01-filter/images/sphx_glr_decimate_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_decimate_001.vtksz
+
 
 
 
@@ -91,10 +113,32 @@ Now let's define a target reduction and compare the
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_002.png
-   :alt: decimate
-   :srcset: /examples/01-filter/images/sphx_glr_decimate_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_decimate_002.png
+        :alt: decimate
+        :srcset: /examples/01-filter/images/sphx_glr_decimate_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_decimate_002.vtksz
+
 
 
 
@@ -112,10 +156,32 @@ Now let's define a target reduction and compare the
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_decimate_003.png
-   :alt: decimate
-   :srcset: /examples/01-filter/images/sphx_glr_decimate_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_decimate_003.png
+        :alt: decimate
+        :srcset: /examples/01-filter/images/sphx_glr_decimate_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_decimate_003.vtksz
+
 
 
 
@@ -125,9 +191,10 @@ Now let's define a target reduction and compare the
 
 Side by side comparison:
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-62
+.. GENERATED FROM PYTHON SOURCE LINES 44-63
 
 .. code-block:: default
+
 
 
     pl = pv.Plotter(shape=(1, 3))
@@ -150,6 +217,7 @@ Side by side comparison:
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_decimate_004.png
    :alt: decimate
    :srcset: /examples/01-filter/images/sphx_glr_decimate_004.png
@@ -160,9 +228,11 @@ Side by side comparison:
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.332 seconds)
+   **Total running time of the script:** (0 minutes 1.356 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_decimate.py:

@@ -88,10 +88,32 @@ deviation.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
-   :alt: gaussian smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
+        :alt: gaussian smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_gaussian-smoothing_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_gaussian-smoothing_001.vtksz
+
 
 
 
@@ -105,9 +127,11 @@ Volume Rendering
 ~~~~~~~~~~~~~~~~
 Now let's see an example on a 3D dataset with volume rendering:
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-81
+.. GENERATED FROM PYTHON SOURCE LINES 60-83
 
 .. code-block:: default
+
+
 
     data = examples.download_brain()
 
@@ -133,6 +157,7 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_gaussian-smoothing_002.png
    :alt: gaussian smoothing
    :srcset: /examples/01-filter/images/sphx_glr_gaussian-smoothing_002.png
@@ -143,9 +168,11 @@ Now let's see an example on a 3D dataset with volume rendering:
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.237 seconds)
+   **Total running time of the script:** (0 minutes 14.309 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gaussian-smoothing.py:

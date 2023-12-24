@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_glyphs_table.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_glyphs_table.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -51,9 +51,10 @@ An ``indices`` optional keyword specifies the index of each glyph geometry in
 the table, and it has to be the same length as ``geom`` if specified. If it is
 absent a default value of ``range(len(geom))`` is assumed.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-63
+.. GENERATED FROM PYTHON SOURCE LINES 23-64
 
 .. code-block:: default
+
 
 
     # get dataset for the glyphs: supertoroids in xy plane
@@ -98,6 +99,7 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_table_001.png
    :alt: glyphs table
    :srcset: /examples/01-filter/images/sphx_glr_glyphs_table_001.png
@@ -106,32 +108,38 @@ absent a default value of ``range(len(geom))`` is assumed.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/data_set.py:2320: UserWarning: No vector-like data to use for orient. orient will be set to False.
+      warnings.warn("No vector-like data to use for orient. orient will be set to False.")
+
+
+
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.763 seconds)
+   **Total running time of the script:** (0 minutes 3.963 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs_table.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: glyphs_table.py <glyphs_table.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: glyphs_table.py <glyphs_table.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: glyphs_table.ipynb <glyphs_table.ipynb>`
+      :download:`Download Jupyter notebook: glyphs_table.ipynb <glyphs_table.ipynb>`
 
 
 .. only:: html

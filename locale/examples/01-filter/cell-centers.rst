@@ -69,10 +69,32 @@ First let's fetch the centers of a mesh with 2D geometries (a surface)
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_001.png
-   :alt: cell centers
-   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_001.png
+        :alt: cell centers
+        :srcset: /examples/01-filter/images/sphx_glr_cell-centers_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_cell-centers_001.vtksz
+
 
 
 
@@ -106,10 +128,32 @@ We can also do this for full 3D meshes.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_002.png
-   :alt: cell centers
-   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_002.png
+        :alt: cell centers
+        :srcset: /examples/01-filter/images/sphx_glr_cell-centers_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_cell-centers_002.vtksz
+
 
 
 
@@ -129,10 +173,32 @@ We can also do this for full 3D meshes.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_003.png
-   :alt: cell centers
-   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_003.png
+        :alt: cell centers
+        :srcset: /examples/01-filter/images/sphx_glr_cell-centers_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_cell-centers_003.vtksz
+
 
 
 
@@ -171,10 +237,32 @@ a mesh.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_004.png
-   :alt: cell centers
-   :srcset: /examples/01-filter/images/sphx_glr_cell-centers_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_004.png
+        :alt: cell centers
+        :srcset: /examples/01-filter/images/sphx_glr_cell-centers_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_cell-centers_004.vtksz
+
 
 
 
@@ -202,6 +290,7 @@ If you want to label it, you need to extract the position to label it.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_cell-centers_005.png
    :alt: cell centers
    :srcset: /examples/01-filter/images/sphx_glr_cell-centers_005.png
@@ -212,9 +301,11 @@ If you want to label it, you need to extract the position to label it.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.255 seconds)
+   **Total running time of the script:** (0 minutes 1.993 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

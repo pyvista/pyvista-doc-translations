@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_distance-along-spline.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_distance-along-spline.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -75,8 +75,6 @@ Create a spline using :func:`pyvista.Spline`.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -128,8 +126,6 @@ Here we write a simple function that gets the closest point matching a distance 
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -143,9 +139,10 @@ Plot with Labels
 ~~~~~~~~~~~~~~~~
 Plot the spline with labeled points
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-76
+.. GENERATED FROM PYTHON SOURCE LINES 66-77
 
 .. code-block:: default
+
 
 
     pl = pv.Plotter()
@@ -160,6 +157,7 @@ Plot the spline with labeled points
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_distance-along-spline_001.png
    :alt: distance along spline
    :srcset: /examples/02-plot/images/sphx_glr_distance-along-spline_001.png
@@ -170,30 +168,29 @@ Plot the spline with labeled points
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.595 seconds)
+   **Total running time of the script:** (0 minutes 0.479 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_distance-along-spline.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: distance-along-spline.py <distance-along-spline.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: distance-along-spline.py <distance-along-spline.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: distance-along-spline.ipynb <distance-along-spline.ipynb>`
+      :download:`Download Jupyter notebook: distance-along-spline.ipynb <distance-along-spline.ipynb>`
 
 
 .. only:: html

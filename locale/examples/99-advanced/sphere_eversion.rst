@@ -286,10 +286,13 @@ outside with different colors.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_sphere_eversion_001.png
+
+.. image-sg:: /examples/99-advanced/images/sphx_glr_sphere_eversion_001.gif
    :alt: sphere eversion
-   :srcset: /examples/99-advanced/images/sphx_glr_sphere_eversion_001.png
+   :srcset: /examples/99-advanced/images/sphx_glr_sphere_eversion_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -301,9 +304,11 @@ Looking at the still image of the middle state with ``t = 0``, we see a nice
 symmetric configuration where two "inside" and two "outside" lobes of the
 sphere are visible.
 
-.. GENERATED FROM PYTHON SOURCE LINES 243-254
+.. GENERATED FROM PYTHON SOURCE LINES 243-256
 
 .. code-block:: default
+
+
 
     t = q = 0
     xi = p = 1
@@ -319,6 +324,7 @@ sphere are visible.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_sphere_eversion_002.png
    :alt: sphere eversion
    :srcset: /examples/99-advanced/images/sphx_glr_sphere_eversion_002.png
@@ -329,9 +335,11 @@ sphere are visible.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  29.800 seconds)
+   **Total running time of the script:** (0 minutes 40.034 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_sphere_eversion.py:

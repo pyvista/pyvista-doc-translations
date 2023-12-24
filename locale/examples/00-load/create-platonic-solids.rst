@@ -26,9 +26,11 @@ Platonic Solids
 PyVista wraps the ``vtk.vtkPlatonicSolidSource`` filter as
 :func:`pyvista.PlatonicSolid`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-15
+.. GENERATED FROM PYTHON SOURCE LINES 10-17
 
 .. code-block:: default
+
+
 
     import numpy as np
 
@@ -42,7 +44,7 @@ PyVista wraps the ``vtk.vtkPlatonicSolidSource`` filter as
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-28
+.. GENERATED FROM PYTHON SOURCE LINES 21-33
 
 We can either use the generic :func:`PlatonicSolid() <pyvista.PlatonicSolid>`
 and specify the different kinds of solids to generate, or we can use the thin
@@ -57,7 +59,7 @@ wrappers:
 Let's generate all the Platonic solids, along with the :func:`teapotahedron
 <pyvista.examples.downloads.download_teapot>`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-54
+.. GENERATED FROM PYTHON SOURCE LINES 33-59
 
 .. code-block:: default
 
@@ -94,7 +96,7 @@ Let's generate all the Platonic solids, along with the :func:`teapotahedron
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-62
+.. GENERATED FROM PYTHON SOURCE LINES 60-67
 
 Now let's plot them all.
 
@@ -104,7 +106,7 @@ Now let's plot them all.
    parameter.  An initial window size of ``(1000, 1000)`` seems to
    work well, which can be manually resized without issue.
 
-.. GENERATED FROM PYTHON SOURCE LINES 62-76
+.. GENERATED FROM PYTHON SOURCE LINES 67-81
 
 .. code-block:: default
 
@@ -125,6 +127,7 @@ Now let's plot them all.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_create-platonic-solids_001.png
    :alt: create platonic solids
    :srcset: /examples/00-load/images/sphx_glr_create-platonic-solids_001.png
@@ -134,7 +137,9 @@ Now let's plot them all.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 77-79
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 82-84
 
 The Platonic solids come with cell scalars that index each face of the
 solids.
@@ -142,7 +147,7 @@ solids.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.346 seconds)
+   **Total running time of the script:** (0 minutes 1.065 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-platonic-solids.py:

@@ -51,15 +51,15 @@ cylindrical shell, and sweeping a circle creates a torus.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3089: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3080: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
       warnings.warn(
 
 
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>2</td></tr>
     <tr><td>N Points</td><td>33</td></tr>
@@ -71,7 +71,7 @@ cylindrical shell, and sweeping a circle creates a torus.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>Texture Coordinates</td><td>Points</td><td>float32</td><td>2</td><td>0.000e+00</td><td>1.000e+00</td></tr>
     <tr><td><b>Distance</b></td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>1.000e+00</td></tr>
@@ -87,9 +87,11 @@ cylindrical shell, and sweeping a circle creates a torus.
 Plot the extruded line
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 27-50
+.. GENERATED FROM PYTHON SOURCE LINES 27-52
 
 .. code-block:: default
+
+
 
 
     plotter = pyvista.Plotter(shape=(2, 1))
@@ -117,6 +119,7 @@ Plot the extruded line
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
    :alt: extrude rotate
    :srcset: /examples/01-filter/images/sphx_glr_extrude-rotate_001.png
@@ -126,12 +129,14 @@ Plot the extruded line
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-53
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 56-58
 
 Create a spring
 ~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-78
+.. GENERATED FROM PYTHON SOURCE LINES 58-83
 
 .. code-block:: default
 
@@ -163,17 +168,39 @@ Create a spring
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
-   :alt: extrude rotate
-   :srcset: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
+        :alt: extrude rotate
+        :srcset: /examples/01-filter/images/sphx_glr_extrude-rotate_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extrude-rotate_002.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3089: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:3080: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
       warnings.warn(
 
 
@@ -182,7 +209,7 @@ Create a spring
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.654 seconds)
+   **Total running time of the script:** (0 minutes 0.619 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extrude-rotate.py:

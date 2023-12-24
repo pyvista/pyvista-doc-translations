@@ -25,7 +25,7 @@ Background Image
 
 Add a background image with :func:`pyvista.Plotter.add_background_image`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-13
+.. GENERATED FROM PYTHON SOURCE LINES 10-14
 
 .. code-block:: default
 
@@ -39,11 +39,12 @@ Add a background image with :func:`pyvista.Plotter.add_background_image`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 14-15
+
+.. GENERATED FROM PYTHON SOURCE LINES 19-20
 
 Plot an airplane with the map of the earth in the background
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-22
+.. GENERATED FROM PYTHON SOURCE LINES 20-27
 
 .. code-block:: default
 
@@ -57,6 +58,7 @@ Plot an airplane with the map of the earth in the background
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_background_image_001.png
    :alt: background image
    :srcset: /examples/02-plot/images/sphx_glr_background_image_001.png
@@ -66,11 +68,13 @@ Plot an airplane with the map of the earth in the background
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-24
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 28-29
 
 Plot several earth related plots
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-47
+.. GENERATED FROM PYTHON SOURCE LINES 29-52
 
 .. code-block:: default
 
@@ -100,6 +104,7 @@ Plot several earth related plots
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_background_image_002.png
    :alt: background image
    :srcset: /examples/02-plot/images/sphx_glr_background_image_002.png
@@ -110,9 +115,11 @@ Plot several earth related plots
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.769 seconds)
+   **Total running time of the script:** (0 minutes 32.279 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_background_image.py:

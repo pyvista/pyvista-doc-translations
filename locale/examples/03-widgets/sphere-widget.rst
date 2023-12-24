@@ -33,7 +33,7 @@ easily add several widgets to a scene.
 
 Let's look at a few use cases that all update a surface mesh.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-18
+.. GENERATED FROM PYTHON SOURCE LINES 17-19
 
 .. code-block:: default
 
@@ -45,14 +45,15 @@ Let's look at a few use cases that all update a surface mesh.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 20-24
+
+.. GENERATED FROM PYTHON SOURCE LINES 25-29
 
 Example A
 +++++++++
 
 Use a single sphere widget
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-53
+.. GENERATED FROM PYTHON SOURCE LINES 29-58
 
 .. code-block:: default
 
@@ -88,6 +89,7 @@ Use a single sphere widget
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_001.png
    :alt: sphere widget
    :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_001.png
@@ -97,20 +99,22 @@ Use a single sphere widget
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 54-57
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 59-62
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-a.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 60-64
+.. GENERATED FROM PYTHON SOURCE LINES 65-69
 
 Example B
 +++++++++
 
 Use several sphere widgets at once
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-94
+.. GENERATED FROM PYTHON SOURCE LINES 69-99
 
 .. code-block:: default
 
@@ -147,6 +151,7 @@ Use several sphere widgets at once
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_002.png
    :alt: sphere widget
    :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_002.png
@@ -156,13 +161,15 @@ Use several sphere widgets at once
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 95-98
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 100-103
 
 And here is a screen capture of a user interacting with this
 
 .. image:: ../../images/gifs/sphere-widget-b.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 100-105
+.. GENERATED FROM PYTHON SOURCE LINES 105-110
 
 Example C
 +++++++++
@@ -170,7 +177,7 @@ Example C
 This one is the coolest - use four sphere widgets to update perturbations on
 a surface and interpolate between them with some boundary conditions
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-153
+.. GENERATED FROM PYTHON SOURCE LINES 110-158
 
 .. code-block:: default
 
@@ -229,7 +236,7 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 154-169
+.. GENERATED FROM PYTHON SOURCE LINES 159-174
 
 .. code-block:: default
 
@@ -251,6 +258,7 @@ a surface and interpolate between them with some boundary conditions
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_sphere-widget_003.png
    :alt: sphere widget
    :srcset: /examples/03-widgets/images/sphx_glr_sphere-widget_003.png
@@ -260,7 +268,9 @@ a surface and interpolate between them with some boundary conditions
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 170-173
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 175-178
 
 And here is a screen capture of a user interacting with this
 
@@ -269,7 +279,7 @@ And here is a screen capture of a user interacting with this
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.039 seconds)
+   **Total running time of the script:** (0 minutes 1.186 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_sphere-widget.py:

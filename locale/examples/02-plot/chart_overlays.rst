@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_chart_overlays.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_chart_overlays.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -32,7 +32,7 @@ the chart, perform another double left click. This will either enable
 interaction with another chart (if clicked on top of it) or re-enable
 interaction with the 3D scene.
 
-.. GENERATED FROM PYTHON SOURCE LINES 17-23
+.. GENERATED FROM PYTHON SOURCE LINES 17-24
 
 .. code-block:: default
 
@@ -49,11 +49,12 @@ interaction with the 3D scene.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 24-25
+
+.. GENERATED FROM PYTHON SOURCE LINES 29-30
 
 Data to display
 
-.. GENERATED FROM PYTHON SOURCE LINES 25-29
+.. GENERATED FROM PYTHON SOURCE LINES 30-34
 
 .. code-block:: default
 
@@ -68,12 +69,12 @@ Data to display
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 30-32
+.. GENERATED FROM PYTHON SOURCE LINES 35-37
 
 Define a Matplotlib figure.
 Use a tight layout to keep axis labels visible on smaller figures.
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-39
+.. GENERATED FROM PYTHON SOURCE LINES 37-44
 
 .. code-block:: default
 
@@ -91,12 +92,12 @@ Use a tight layout to keep axis labels visible on smaller figures.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-43
+.. GENERATED FROM PYTHON SOURCE LINES 46-48
 
 Define plotter, add the created matplotlib figure as the first (left) chart
 to the scene, and define a second (right) chart.
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-86
+.. GENERATED FROM PYTHON SOURCE LINES 48-91
 
 .. code-block:: default
 
@@ -146,6 +147,7 @@ to the scene, and define a second (right) chart.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
    :alt: chart overlays
    :srcset: /examples/02-plot/images/sphx_glr_chart_overlays_001.png
@@ -156,9 +158,11 @@ to the scene, and define a second (right) chart.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.695 seconds)
+   **Total running time of the script:** (0 minutes 4.379 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_overlays.py:
@@ -166,6 +170,8 @@ to the scene, and define a second (right) chart.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

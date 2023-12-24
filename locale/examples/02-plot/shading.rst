@@ -57,10 +57,32 @@ This is a plot with the default flat shading.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_shading_001.png
-   :alt: shading
-   :srcset: /examples/02-plot/images/sphx_glr_shading_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_shading_001.png
+        :alt: shading
+        :srcset: /examples/02-plot/images/sphx_glr_shading_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_shading_001.vtksz
+
 
 
 
@@ -80,10 +102,32 @@ Here's the same sphere with smooth shading.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_shading_002.png
-   :alt: shading
-   :srcset: /examples/02-plot/images/sphx_glr_shading_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_shading_002.png
+        :alt: shading
+        :srcset: /examples/02-plot/images/sphx_glr_shading_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_shading_002.vtksz
+
 
 
 
@@ -110,10 +154,32 @@ enabling ``split_sharp_edges``.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_shading_003.png
-   :alt: shading
-   :srcset: /examples/02-plot/images/sphx_glr_shading_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_shading_003.png
+        :alt: shading
+        :srcset: /examples/02-plot/images/sphx_glr_shading_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_shading_003.vtksz
+
 
 
 
@@ -145,10 +211,32 @@ We can even plot the edges that will be split using
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_shading_004.png
-   :alt: shading
-   :srcset: /examples/02-plot/images/sphx_glr_shading_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_shading_004.png
+        :alt: shading
+        :srcset: /examples/02-plot/images/sphx_glr_shading_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_shading_004.vtksz
+
 
 
 
@@ -159,16 +247,19 @@ We can even plot the edges that will be split using
 The ``split_sharp_edges`` keyword argument is compatible with
 physically based rendering as well.
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-65
+.. GENERATED FROM PYTHON SOURCE LINES 59-67
 
 .. code-block:: default
 
 
     # plot both the edges and the smoothed mesh
+
+
     pl = pyvista.Plotter()
     pl.enable_anti_aliasing()
     pl.add_mesh(mesh, color='w', split_sharp_edges=True, pbr=True, metallic=1.0, roughness=0.5)
     pl.show()
+
 
 
 
@@ -182,9 +273,11 @@ physically based rendering as well.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.394 seconds)
+   **Total running time of the script:** (0 minutes 1.484 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_shading.py:

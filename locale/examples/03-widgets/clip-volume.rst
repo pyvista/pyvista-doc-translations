@@ -29,7 +29,20 @@ structure of the dataset.
 
 .. image:: ../../images/gifs/volume-clip-plane-widget.gif
 
-.. GENERATED FROM PYTHON SOURCE LINES 16-21
+.. GENERATED FROM PYTHON SOURCE LINES 14-16
+
+.. code-block:: default
+
+
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 21-26
 
 Create the Dataset
 ~~~~~~~~~~~~~~~~~~
@@ -37,7 +50,7 @@ Create a dense :class:`pyvista.ImageData` with dimensions ``(200, 200,
 200)`` and set the active scalars to distance from the :attr:`center
 <pyvista.DataSet.center>` of the grid.
 
-.. GENERATED FROM PYTHON SOURCE LINES 21-31
+.. GENERATED FROM PYTHON SOURCE LINES 26-36
 
 .. code-block:: default
 
@@ -59,8 +72,8 @@ Create a dense :class:`pyvista.ImageData` with dimensions ``(200, 200,
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>7880599</td></tr>
     <tr><td>N Points</td><td>8000000</td></tr>
@@ -73,7 +86,7 @@ Create a dense :class:`pyvista.ImageData` with dimensions ``(200, 200,
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>scalars</b></td><td>Points</td><td>float64</td><td>1</td><td>8.660e-01</td><td>1.723e+02</td></tr>
     </table>
@@ -83,7 +96,7 @@ Create a dense :class:`pyvista.ImageData` with dimensions ``(200, 200,
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 32-37
+.. GENERATED FROM PYTHON SOURCE LINES 37-42
 
 Generate the Opacity Array
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,7 +104,7 @@ Create a banded opacity array such that our dataset shows "rings" at certain
 values. Have this increase such that higher values (values farther away from
 the center) are more opaque.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-42
+.. GENERATED FROM PYTHON SOURCE LINES 42-47
 
 .. code-block:: default
 
@@ -107,7 +120,7 @@ the center) are more opaque.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 43-49
+.. GENERATED FROM PYTHON SOURCE LINES 48-54
 
 Plot a Single Clip Plane Dataset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,7 +129,7 @@ Plot the volume with a single clip plane.
 Reverse the opacity array such that portions closer to the center are more
 opaque.
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-55
+.. GENERATED FROM PYTHON SOURCE LINES 54-60
 
 .. code-block:: default
 
@@ -124,6 +137,7 @@ opaque.
     pl = pv.Plotter()
     pl.add_volume_clip_plane(grid, normal='-x', opacity=opacity[::-1], cmap='magma')
     pl.show()
+
 
 
 
@@ -138,7 +152,9 @@ opaque.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 56-63
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 61-68
 
 Plot Multiple Clip Planes
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -148,7 +164,7 @@ interaction by setting the ``interaction_event`` to ``'always'``.
 
 Disable the arrows to make the plot a bit clearer and flip the opacity array.
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-80
+.. GENERATED FROM PYTHON SOURCE LINES 68-85
 
 .. code-block:: default
 
@@ -172,6 +188,7 @@ Disable the arrows to make the plot a bit clearer and flip the opacity array.
 
 
 
+
 .. image-sg:: /examples/03-widgets/images/sphx_glr_clip-volume_002.png
    :alt: clip volume
    :srcset: /examples/03-widgets/images/sphx_glr_clip-volume_002.png
@@ -182,9 +199,11 @@ Disable the arrows to make the plot a bit clearer and flip the opacity array.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.647 seconds)
+   **Total running time of the script:** (0 minutes 15.356 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_clip-volume.py:

@@ -33,9 +33,11 @@ cell. Non-linear cells contain additional points along the edges of the cell.
 For more details regarding what a :class:`pyvista.UnstructuredGrid` is, please
 see :ref:`point_sets_api`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-27
+.. GENERATED FROM PYTHON SOURCE LINES 18-29
 
 .. code-block:: default
+
+
 
     import numpy as np
 
@@ -53,7 +55,7 @@ see :ref:`point_sets_api`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 28-34
+.. GENERATED FROM PYTHON SOURCE LINES 33-39
 
 Plot an example cell
 ~~~~~~~~~~~~~~~~~~~~
@@ -62,12 +64,13 @@ fundamental unit of each :class:`pyvista.UnstructuredGrid`. For example,
 let's plot a simple :func:`Wedge <pyvista.examples.cells.Wedge>`.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-38
+.. GENERATED FROM PYTHON SOURCE LINES 39-43
 
 .. code-block:: default
 
     grid = example_cells.Wedge()
     example_cells.plot_cell(grid)
+
 
 
 
@@ -82,11 +85,13 @@ let's plot a simple :func:`Wedge <pyvista.examples.cells.Wedge>`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-40
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 44-45
 
 This linear cell is composed of 6 points.
 
-.. GENERATED FROM PYTHON SOURCE LINES 40-44
+.. GENERATED FROM PYTHON SOURCE LINES 45-49
 
 .. code-block:: default
 
@@ -112,7 +117,7 @@ This linear cell is composed of 6 points.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-50
+.. GENERATED FROM PYTHON SOURCE LINES 50-55
 
 The UnstructuredGrid is also composed of a single cell and the point indices
 of that cell are defined in :attr:`cells <pyvista.UnstructuredGrid.cells>`.
@@ -120,7 +125,7 @@ of that cell are defined in :attr:`cells <pyvista.UnstructuredGrid.cells>`.
 .. note::
    The leading ``6`` is the number of points in the cell.
 
-.. GENERATED FROM PYTHON SOURCE LINES 50-54
+.. GENERATED FROM PYTHON SOURCE LINES 55-59
 
 .. code-block:: default
 
@@ -141,7 +146,7 @@ of that cell are defined in :attr:`cells <pyvista.UnstructuredGrid.cells>`.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 55-64
+.. GENERATED FROM PYTHON SOURCE LINES 60-69
 
 Combine two UnstructuredGrids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -153,7 +158,7 @@ using the ``+`` operator.
    objects. To see a more efficient implementation see
    :ref:`create_unstructured_example`.
 
-.. GENERATED FROM PYTHON SOURCE LINES 64-75
+.. GENERATED FROM PYTHON SOURCE LINES 69-80
 
 .. code-block:: default
 
@@ -171,6 +176,7 @@ using the ``+`` operator.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_linear-cells_002.png
    :alt: linear cells
    :srcset: /examples/00-load/images/sphx_glr_linear-cells_002.png
@@ -180,14 +186,16 @@ using the ``+`` operator.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 76-80
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 81-85
 
 This example helps to illustrate meaning behind the :attr:`cells
 <pyvista.UnstructuredGrid.cells>` attribute. The first cell, a hexahedron
 contains 8 points and the hexagonal prism contains 12 points. The ``cells``
 attribute shows this along with indices composing each cell.
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-84
+.. GENERATED FROM PYTHON SOURCE LINES 85-89
 
 .. code-block:: default
 
@@ -209,7 +217,7 @@ attribute shows this along with indices composing each cell.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-93
+.. GENERATED FROM PYTHON SOURCE LINES 90-98
 
 Cell Types
 ~~~~~~~~~~
@@ -220,7 +228,7 @@ used when creating cells and also can be used when checking the
 ``combined.celltypes`` contains both the ``pv.CellType.HEXAHEDRON`` and
 ``pv.CellType.HEXAGONAL_PRISM`` cell types.
 
-.. GENERATED FROM PYTHON SOURCE LINES 93-98
+.. GENERATED FROM PYTHON SOURCE LINES 98-103
 
 .. code-block:: default
 
@@ -237,13 +245,13 @@ used when creating cells and also can be used when checking the
 
  .. code-block:: none
 
-    CellType.HEXAHEDRON CellType.HEXAGONAL_PRISM
+    12 16
 
     array([ True,  True])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 99-107
+.. GENERATED FROM PYTHON SOURCE LINES 104-112
 
 Create an UnstructuredGrid with a single linear cell
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -254,7 +262,7 @@ ordering or additional, you can either read the source of `cells.py
 <https://github.com/pyvista/pyvista/blob/main/pyvista/examples/cells.py>`_ or
 simply create a cell from the ``pyvista.core.cells`` module and inspect its attributes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 107-120
+.. GENERATED FROM PYTHON SOURCE LINES 112-125
 
 .. code-block:: default
 
@@ -274,6 +282,7 @@ simply create a cell from the ``pyvista.core.cells`` module and inspect its attr
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_linear-cells_003.png
    :alt: linear cells
    :srcset: /examples/00-load/images/sphx_glr_linear-cells_003.png
@@ -283,14 +292,16 @@ simply create a cell from the ``pyvista.core.cells`` module and inspect its attr
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 121-125
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 126-130
 
 Plot all linear cell Types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Let's create a ``(4, 4)`` :class:`pyvista.Plotter` and plot all 16 linear
 cells in a single plot.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-200
+.. GENERATED FROM PYTHON SOURCE LINES 130-205
 
 .. code-block:: default
 
@@ -372,6 +383,7 @@ cells in a single plot.
 
 
 
+
 .. image-sg:: /examples/00-load/images/sphx_glr_linear-cells_004.png
    :alt: linear cells
    :srcset: /examples/00-load/images/sphx_glr_linear-cells_004.png
@@ -382,9 +394,11 @@ cells in a single plot.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.954 seconds)
+   **Total running time of the script:** (0 minutes 3.618 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_linear-cells.py:
