@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_integrate-data.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_integrate-data.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -90,10 +90,32 @@ The velocity in the inlet is shown.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_integrate-data_001.png
-   :alt: integrate data
-   :srcset: /examples/01-filter/images/sphx_glr_integrate-data_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_integrate-data_001.png
+        :alt: integrate data
+        :srcset: /examples/01-filter/images/sphx_glr_integrate-data_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_integrate-data_001.vtksz
+
 
 
 
@@ -120,8 +142,8 @@ is a :class:`pyvista.UnstructuredGrid` object with only 1 point and 1 cell.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>1</td></tr>
@@ -132,7 +154,7 @@ is a :class:`pyvista.UnstructuredGrid` object with only 1 point and 1 cell.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>node_value</td><td>Points</td><td>float64</td><td>1</td><td>0.000e+00</td><td>0.000e+00</td></tr>
     <tr><td>simerr_type</td><td>Points</td><td>float64</td><td>1</td><td>1.672e+02</td><td>1.672e+02</td></tr>
@@ -164,12 +186,10 @@ Each array in ``integrated_data`` stores the integrated data.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    array([25.79937191])
+    pyvista_ndarray([25.79937191])
 
 
 
@@ -190,8 +210,6 @@ An additional ``Area`` or ``Volume`` array is added.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -222,8 +240,6 @@ Display the total flow rate, area of inlet surface, and average velocity.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -268,8 +284,6 @@ volume.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Center          : [ 90.54132  78.15124 116.79401]
@@ -283,28 +297,25 @@ volume.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.780 seconds)
+   **Total running time of the script:** (0 minutes 0.629 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_integrate-data.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: integrate-data.py <integrate-data.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: integrate-data.py <integrate-data.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: integrate-data.ipynb <integrate-data.ipynb>`
+      :download:`Download Jupyter notebook: integrate-data.ipynb <integrate-data.ipynb>`
 
 
 .. only:: html

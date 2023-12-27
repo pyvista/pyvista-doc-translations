@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_isovalue.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_isovalue.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -45,9 +45,9 @@ Make an animation of an isovalue through a volumetric dataset
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
-    <tr><th>UniformGrid</th><th>Information</th></tr>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
+    <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>6998400</td></tr>
     <tr><td>N Points</td><td>7109137</td></tr>
     <tr><td>X Bounds</td><td>0.000e+00, 1.800e+02</td></tr>
@@ -59,7 +59,7 @@ Make an animation of an isovalue through a volumetric dataset
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>image_data</b></td><td>Points</td><td>uint8</td><td>1</td><td>0.000e+00</td><td>2.550e+02</td></tr>
     </table>
@@ -182,10 +182,13 @@ Set a single surface as the one being plotted that can be overwritten
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_isovalue_001.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_isovalue_001.gif
    :alt: isovalue
-   :srcset: /examples/02-plot/images/sphx_glr_isovalue_001.png
+   :srcset: /examples/02-plot/images/sphx_glr_isovalue_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -200,7 +203,7 @@ Set a single surface as the one being plotted that can be overwritten
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  50.291 seconds)
+   **Total running time of the script:** (0 minutes 25.868 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_isovalue.py:
@@ -208,6 +211,8 @@ Set a single surface as the one being plotted that can be overwritten
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_glyphs.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_glyphs.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -75,10 +75,32 @@ Glyphying can be done via the :func:`pyvista.DataSetFilters.glyph` filter
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_001.png
-   :alt: glyphs
-   :srcset: /examples/01-filter/images/sphx_glr_glyphs_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_001.png
+        :alt: glyphs
+        :srcset: /examples/01-filter/images/sphx_glr_glyphs_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_glyphs_001.vtksz
+
 
 
 
@@ -115,10 +137,32 @@ access the :attr:`pyvista.DataSet.arrows` property.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_002.png
-   :alt: glyphs
-   :srcset: /examples/01-filter/images/sphx_glr_glyphs_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_002.png
+        :alt: glyphs
+        :srcset: /examples/01-filter/images/sphx_glr_glyphs_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_glyphs_002.vtksz
+
 
 
 
@@ -142,10 +186,32 @@ Plot the arrows and the sphere.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_003.png
-   :alt: glyphs
-   :srcset: /examples/01-filter/images/sphx_glr_glyphs_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_003.png
+        :alt: glyphs
+        :srcset: /examples/01-filter/images/sphx_glr_glyphs_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_glyphs_003.vtksz
+
 
 
 
@@ -179,10 +245,32 @@ percent which equates to five percent of the bounding box's length.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_004.png
-   :alt: glyphs
-   :srcset: /examples/01-filter/images/sphx_glr_glyphs_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_glyphs_004.png
+        :alt: glyphs
+        :srcset: /examples/01-filter/images/sphx_glr_glyphs_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_glyphs_004.vtksz
+
 
 
 
@@ -191,28 +279,25 @@ percent which equates to five percent of the bounding box's length.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.501 seconds)
+   **Total running time of the script:** (0 minutes 12.598 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_glyphs.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: glyphs.py <glyphs.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: glyphs.py <glyphs.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: glyphs.ipynb <glyphs.ipynb>`
+      :download:`Download Jupyter notebook: glyphs.ipynb <glyphs.ipynb>`
 
 
 .. only:: html

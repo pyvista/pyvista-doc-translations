@@ -178,7 +178,7 @@ Pick using the left-mouse button
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.919 seconds)
+   **Total running time of the script:** (0 minutes 0.924 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-picking.py:

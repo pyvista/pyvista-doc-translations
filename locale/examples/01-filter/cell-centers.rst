@@ -305,7 +305,7 @@ If you want to label it, you need to extract the position to label it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.993 seconds)
+   **Total running time of the script:** (0 minutes 1.766 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_cell-centers.py:

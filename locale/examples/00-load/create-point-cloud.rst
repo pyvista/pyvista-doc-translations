@@ -51,7 +51,7 @@ cloud. In this example, we'll work a bit backwards using a point cloud that
 that is available from our ``examples`` module. This however is no different
 than creating a PyVista mesh with your own NumPy arrays of vertice locations.
 
-.. GENERATED FROM PYTHON SOURCE LINES 23-38
+.. GENERATED FROM PYTHON SOURCE LINES 23-40
 
 .. code-block:: default
 
@@ -61,7 +61,9 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
     def generate_points(subset=0.02):
         """A helper to make a 3D NumPy array of points (n_points by 3)"""
         dataset = examples.download_lidar()
-        ids = np.random.randint(low=0, high=dataset.n_points - 1, size=int(dataset.n_points * subset))
+        ids = np.random.default_rng().integers(
+            low=0, high=dataset.n_points - 1, size=int(dataset.n_points * subset)
+        )
         return dataset.points[ids]
 
 
@@ -79,20 +81,20 @@ than creating a PyVista mesh with your own NumPy arrays of vertice locations.
  .. code-block:: none
 
 
-    pyvista_ndarray([[4.81120575e+05, 4.40023120e+06, 1.76942004e+03],
-                     [4.80996675e+05, 4.40011270e+06, 1.76179004e+03],
-                     [4.81080475e+05, 4.40009190e+06, 1.76142004e+03],
-                     [4.80965775e+05, 4.40014090e+06, 1.77465002e+03],
-                     [4.81026075e+05, 4.40013980e+06, 1.76143005e+03]])
+    pyvista_ndarray([[4.80964375e+05, 4.40012130e+06, 1.76256006e+03],
+                     [4.81097275e+05, 4.40011640e+06, 1.76116003e+03],
+                     [4.80973075e+05, 4.40023680e+06, 1.77301001e+03],
+                     [4.81054675e+05, 4.40008830e+06, 1.77027002e+03],
+                     [4.81103375e+05, 4.40016550e+06, 1.75900000e+03]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 39-41
+.. GENERATED FROM PYTHON SOURCE LINES 41-43
 
 Now that you have a NumPy array of points/vertices either from our sample
 data or your own project, creating a PyVista mesh of those points is simply:
 
-.. GENERATED FROM PYTHON SOURCE LINES 41-44
+.. GENERATED FROM PYTHON SOURCE LINES 43-46
 
 .. code-block:: default
 
@@ -124,11 +126,11 @@ data or your own project, creating a PyVista mesh of those points is simply:
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 45-46
+.. GENERATED FROM PYTHON SOURCE LINES 47-48
 
 And we can even do a sanity check
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-48
+.. GENERATED FROM PYTHON SOURCE LINES 48-50
 
 .. code-block:: default
 
@@ -147,13 +149,13 @@ And we can even do a sanity check
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 49-52
+.. GENERATED FROM PYTHON SOURCE LINES 51-54
 
 And now that we have a PyVista mesh, we can plot it. Note that we add an
 option to use eye dome lighting - this is a shading technique to improve
 depth perception with point clouds (learn more in :ref:`edl`).
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-55
+.. GENERATED FROM PYTHON SOURCE LINES 54-57
 
 .. code-block:: default
 
@@ -175,7 +177,7 @@ depth perception with point clouds (learn more in :ref:`edl`).
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 59-67
+.. GENERATED FROM PYTHON SOURCE LINES 61-69
 
 Now what if you have data attributes (scalar/vector arrays) that you'd like
 to associate with every node of your mesh? You can easily add NumPy data
@@ -186,7 +188,7 @@ mesh.
 Make an array of scalar values with the same length as the points array.
 Each element in this array will correspond to points at the same index:
 
-.. GENERATED FROM PYTHON SOURCE LINES 67-74
+.. GENERATED FROM PYTHON SOURCE LINES 69-76
 
 .. code-block:: default
 
@@ -204,13 +206,13 @@ Each element in this array will correspond to points at the same index:
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-78
+.. GENERATED FROM PYTHON SOURCE LINES 77-80
 
 And now we can plot the point cloud with that random data. PyVista is smart
 enough to plot the scalar array you added by default. Note that this time,
 we specify to render every point as its own sphere.
 
-.. GENERATED FROM PYTHON SOURCE LINES 78-80
+.. GENERATED FROM PYTHON SOURCE LINES 80-82
 
 .. code-block:: default
 
@@ -250,7 +252,7 @@ we specify to render every point as its own sphere.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 81-87
+.. GENERATED FROM PYTHON SOURCE LINES 83-89
 
 That data is kind of boring, right? You can also add data arrays with
 more than one scalar value - perhaps a vector with three elements? Let's
@@ -259,13 +261,13 @@ cloud and add those vectors to the mesh.
 
 This time, we're going to create a totally new, random point cloud.
 
-.. GENERATED FROM PYTHON SOURCE LINES 87-104
+.. GENERATED FROM PYTHON SOURCE LINES 89-106
 
 .. code-block:: default
 
 
     # Create random XYZ points
-    points = np.random.rand(100, 3)
+    points = np.random.default_rng().random((100, 3))
     # Make PolyData
     point_cloud = pv.PolyData(points)
 
@@ -289,15 +291,15 @@ This time, we're going to create a totally new, random point cloud.
  .. code-block:: none
 
 
-    pyvista_ndarray([[-0.60161798,  0.4387601 , -0.66749186],
-                     [ 0.68903594,  0.42463586, -0.58729368],
-                     [-0.0426291 ,  0.93246127, -0.35874606],
-                     [ 0.57494917, -0.61605916,  0.53842787],
-                     [-0.67020631, -0.14882847,  0.72709943]])
+    pyvista_ndarray([[ 0.1118451 ,  0.28173121, -0.95295236],
+                     [ 0.34945745, -0.42651527,  0.8342447 ],
+                     [ 0.66434304, -0.67403776, -0.32298827],
+                     [ 0.65623621, -0.25381917, -0.71058417],
+                     [-0.70519884,  0.05666053, -0.70674195]])
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 105-108
+.. GENERATED FROM PYTHON SOURCE LINES 107-110
 
 .. code-block:: default
 
@@ -311,12 +313,12 @@ This time, we're going to create a totally new, random point cloud.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-111
+.. GENERATED FROM PYTHON SOURCE LINES 111-113
 
 Now we can make arrows using those vectors using the glyph filter
 (see :ref:`glyph_example` for more details).
 
-.. GENERATED FROM PYTHON SOURCE LINES 111-126
+.. GENERATED FROM PYTHON SOURCE LINES 113-128
 
 .. code-block:: default
 
@@ -372,7 +374,7 @@ Now we can make arrows using those vectors using the glyph filter
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.525 seconds)
+   **Total running time of the script:** (0 minutes 3.322 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-point-cloud.py:

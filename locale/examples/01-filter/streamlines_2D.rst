@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_streamlines_2D.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_streamlines_2D.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -76,18 +76,15 @@ The data lies in the `xy` plane, i.e. `z=0`, with no `z` velocity.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    UnstructuredGrid (0x7f528f1eb040)
-      N Cells:      14594
-      N Points:     14831
-      X Bounds:     0.000e+00, 1.500e+01
-      Y Bounds:     -3.750e+00, 3.750e+00
-      Z Bounds:     0.000e+00, 0.000e+00
-      N Arrays:     3
-
+    UnstructuredGrid (0x7fb9baaef700)
+      N Cells:    14594
+      N Points:   14831
+      X Bounds:   0.000e+00, 1.500e+01
+      Y Bounds:   -3.750e+00, 3.750e+00
+      Z Bounds:   0.000e+00, 0.000e+00
+      N Arrays:   3
 
 
 
@@ -126,10 +123,32 @@ not the case in this dataset.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_001.png
-   :alt: streamlines 2D
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_001.png
+        :alt: streamlines 2D
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_2D_001.vtksz
+
 
 
 
@@ -163,10 +182,32 @@ and ``pointb`` parameters.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_002.png
-   :alt: streamlines 2D
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_002.png
+        :alt: streamlines 2D
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_2D_002.vtksz
+
 
 
 
@@ -205,10 +246,32 @@ parameters.  The defaults are in cell length units.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_003.png
-   :alt: streamlines 2D
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_2D_003.png
+        :alt: streamlines 2D
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_2D_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_2D_003.vtksz
+
 
 
 
@@ -223,28 +286,25 @@ vortex pair downstream of the cylinder with appropriate choice of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.859 seconds)
+   **Total running time of the script:** (0 minutes 2.870 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines_2D.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: streamlines_2D.py <streamlines_2D.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: streamlines_2D.py <streamlines_2D.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: streamlines_2D.ipynb <streamlines_2D.ipynb>`
+      :download:`Download Jupyter notebook: streamlines_2D.ipynb <streamlines_2D.ipynb>`
 
 
 .. only:: html

@@ -92,10 +92,32 @@ to the top surface, unlike the first two examples.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
-   :alt: distance between surfaces
-   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
+        :alt: distance between surfaces
+        :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_distance-between-surfaces_001.vtksz
+
 
 
 
@@ -155,7 +177,7 @@ vector.
  .. code-block:: none
 
 
-    5.144072853686178
+    5.144072856644497
 
 
 
@@ -172,10 +194,32 @@ vector.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
-   :alt: distance between surfaces
-   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
+        :alt: distance between surfaces
+        :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_distance-between-surfaces_002.vtksz
+
 
 
 
@@ -229,10 +273,32 @@ noticeably faster than a ray trace, especially for large surfaces.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
-   :alt: distance between surfaces
-   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
+        :alt: distance between surfaces
+        :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_distance-between-surfaces_003.vtksz
+
 
 
 
@@ -289,10 +355,32 @@ KDTree method.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
-   :alt: distance between surfaces
-   :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
+        :alt: distance between surfaces
+        :srcset: /examples/01-filter/images/sphx_glr_distance-between-surfaces_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_distance-between-surfaces_004.vtksz
+
 
 
 
@@ -301,7 +389,7 @@ KDTree method.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.989 seconds)
+   **Total running time of the script:** (0 minutes 2.372 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_distance-between-surfaces.py:

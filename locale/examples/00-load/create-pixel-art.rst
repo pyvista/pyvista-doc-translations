@@ -189,7 +189,7 @@ Now you can plot a pixel art of ALIEN MONSTERS.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.229 seconds)
+   **Total running time of the script:** (0 minutes 4.014 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pixel-art.py:

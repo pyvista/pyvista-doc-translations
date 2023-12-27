@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_linked.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_linked.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -27,10 +27,13 @@ Linked Views in Subplots
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_linked_001.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_linked_001.gif
    :alt: linked
-   :srcset: /examples/02-plot/images/sphx_glr_linked_001.png
+   :srcset: /examples/02-plot/images/sphx_glr_linked_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -80,28 +83,25 @@ Linked Views in Subplots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.236 seconds)
+   **Total running time of the script:** (0 minutes 2.125 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_linked.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: linked.py <linked.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: linked.py <linked.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: linked.ipynb <linked.ipynb>`
+      :download:`Download Jupyter notebook: linked.ipynb <linked.ipynb>`
 
 
 .. only:: html

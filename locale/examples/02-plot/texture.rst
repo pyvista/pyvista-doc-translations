@@ -66,10 +66,32 @@ surface and displaying an image is simply:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_001.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_001.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_001.vtksz
+
 
 
 
@@ -103,10 +125,32 @@ For example, let's map that same image of bricks to a curvey surface:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_002.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_002.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_002.vtksz
+
 
 
 
@@ -131,10 +175,32 @@ Display scalar data along with a texture by ensuring the
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_003.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_003.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_003.vtksz
+
 
 
 
@@ -157,10 +223,32 @@ Note that this process can be completed with any image texture.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_004.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_004.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_004.vtksz
+
 
 
 
@@ -189,10 +277,32 @@ use.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_005.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_005.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_005.vtksz
+
 
 
 
@@ -234,10 +344,32 @@ and 3D NumPy (X by Y by RGB) arrays can be converted to textures using
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_006.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_006.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_006.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -298,10 +430,13 @@ Generate a moving gif from an active plotter with updating textures.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_texture_007.gif
    :alt: texture
    :srcset: /examples/02-plot/images/sphx_glr_texture_007.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -352,10 +487,32 @@ Here we can download an image that has an alpha channel:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_008.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_008.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_008.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_008.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_008.vtksz
+
 
 
 
@@ -431,10 +588,32 @@ Now display all the puppies.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_009.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_009.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_009.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_009.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_009.vtksz
+
 
 
 
@@ -461,10 +640,32 @@ coordinate systems much like the planar mapping demoed above.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_010.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_010.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_010.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_010.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_010.vtksz
+
 
 
 
@@ -504,10 +705,32 @@ overlappig
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_texture_011.png
-   :alt: texture
-   :srcset: /examples/02-plot/images/sphx_glr_texture_011.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_texture_011.png
+        :alt: texture
+        :srcset: /examples/02-plot/images/sphx_glr_texture_011.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_texture_011.vtksz
+
 
 
 
@@ -516,7 +739,7 @@ overlappig
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.186 seconds)
+   **Total running time of the script:** (0 minutes 8.046 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_texture.py:

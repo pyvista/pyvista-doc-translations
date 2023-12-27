@@ -88,10 +88,32 @@ would see by default after running any of our examples locally.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_001.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_001.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_001.vtksz
+
 
 
 
@@ -122,10 +144,32 @@ Demo the ``'ParaView'`` theme.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_002.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_002.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_002.vtksz
+
 
 
 
@@ -147,10 +191,32 @@ Demo the ``'dark'`` theme.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_003.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_003.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_003.vtksz
+
 
 
 
@@ -172,10 +238,32 @@ Demo the ``'document'`` theme.  This theme is used on our online examples.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_004.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_004.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_004.vtksz
+
 
 
 
@@ -201,10 +289,32 @@ window.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_005.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_005.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_005.vtksz
+
 
 
 
@@ -287,7 +397,7 @@ theme.
         Z Color              : Color(name='blue', hex='#0000ffff', opacity=255)
         Use Box              : False
         Show                 : True
-    Multi-samples            : 4
+    Multi-samples            : 8
     Multi-renderer Split Pos : None
     Volume mapper            : smart
     Smooth shading           : False
@@ -322,7 +432,7 @@ theme.
             Cap width        : 0.02
     Return Camera Position   : True
     Hidden Line Removal      : False
-    Anti-Aliasing            : None
+    Anti-Aliasing            : msaa
     Split sharp edges        : False
     Sharp edges feat. angle  : 30.0
     Before close callback    : None
@@ -348,10 +458,32 @@ parameter.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_006.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_006.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_006.vtksz
+
 
 
 
@@ -377,10 +509,32 @@ within ``pyvista.global_theme.``
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_007.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_007.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_007.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_007.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_007.vtksz
+
 
 
 
@@ -416,10 +570,32 @@ showing edges.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_008.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_008.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_008.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_008.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_008.vtksz
+
 
 
 
@@ -457,10 +633,32 @@ themes and apply them to one or more plotters.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_009.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_009.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_009.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_009.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_009.vtksz
+
 
 
 
@@ -484,10 +682,32 @@ Alternatively, set the theme of an instance of ``Plotter``.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_themes_010.png
-   :alt: themes
-   :srcset: /examples/02-plot/images/sphx_glr_themes_010.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_themes_010.png
+        :alt: themes
+        :srcset: /examples/02-plot/images/sphx_glr_themes_010.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_themes_010.vtksz
+
 
 
 
@@ -512,7 +732,7 @@ Reset to use the document theme
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.597 seconds)
+   **Total running time of the script:** (0 minutes 10.533 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_themes.py:

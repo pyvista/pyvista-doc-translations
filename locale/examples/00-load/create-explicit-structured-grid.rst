@@ -29,10 +29,32 @@ Create an explicit structured grid from NumPy arrays.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
-   :alt: create explicit structured grid
-   :srcset: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
+        :alt: create explicit structured grid
+        :srcset: /examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-explicit-structured-grid_001.vtksz
+
 
 
 
@@ -76,7 +98,7 @@ Create an explicit structured grid from NumPy arrays.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.188 seconds)
+   **Total running time of the script:** (0 minutes 0.855 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-explicit-structured-grid.py:

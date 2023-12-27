@@ -280,10 +280,32 @@ Now, let's display a mode on a mesh of the cube.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
-   :alt: warp by vector eigenmodes
-   :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
+        :alt: warp by vector eigenmodes
+        :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_001.vtksz
+
 
 
 
@@ -313,10 +335,32 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
-   :alt: warp by vector eigenmodes
-   :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
+        :alt: warp by vector eigenmodes
+        :srcset: /examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_warp-by-vector-eigenmodes_002.vtksz
+
 
 
 
@@ -325,7 +369,7 @@ Finally, let's make a gallery of the first 8 unique eigenmodes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 13.838 seconds)
+   **Total running time of the script:** (0 minutes 6.425 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_warp-by-vector-eigenmodes.py:

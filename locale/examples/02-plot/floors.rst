@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_floors.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_floors.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,10 +29,32 @@ Add a floor/wall at the boundary of the rendering scene.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_floors_001.png
-   :alt: floors
-   :srcset: /examples/02-plot/images/sphx_glr_floors_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_floors_001.png
+        :alt: floors
+        :srcset: /examples/02-plot/images/sphx_glr_floors_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_floors_001.vtksz
+
 
 
 
@@ -55,28 +77,25 @@ Add a floor/wall at the boundary of the rendering scene.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.119 seconds)
+   **Total running time of the script:** (0 minutes 9.250 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_floors.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: floors.py <floors.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: floors.py <floors.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: floors.ipynb <floors.ipynb>`
+      :download:`Download Jupyter notebook: floors.ipynb <floors.ipynb>`
 
 
 .. only:: html

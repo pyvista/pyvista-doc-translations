@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_collisions.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_collisions.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -127,10 +127,13 @@ Set up the plotter open a movie, and write a frame after moving the sphere.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_collisions_001.png
+
+.. image-sg:: /examples/01-filter/images/sphx_glr_collisions_001.gif
    :alt: collisions
-   :srcset: /examples/01-filter/images/sphx_glr_collisions_001.png
+   :srcset: /examples/01-filter/images/sphx_glr_collisions_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -139,7 +142,7 @@ Set up the plotter open a movie, and write a frame after moving the sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.767 seconds)
+   **Total running time of the script:** (0 minutes 5.444 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_collisions.py:
@@ -147,6 +150,8 @@ Set up the plotter open a movie, and write a frame after moving the sphere.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

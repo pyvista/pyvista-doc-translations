@@ -68,13 +68,13 @@ First, let's create a sample point cloud using :func:`numpy.random.random`.
  .. code-block:: none
 
 
-    array([[0.02366412, 0.40240785, 0.24961106],
-           [0.92880631, 0.68721942, 0.42052408],
-           [0.65778256, 0.18952021, 0.74409443],
+    array([[0.15066009, 0.79114586, 0.03512628],
+           [0.98951758, 0.29423509, 0.7633733 ],
+           [0.5219916 , 0.21439177, 0.54725964],
            ...,
-           [0.59736287, 0.71547433, 0.77076805],
-           [0.40682662, 0.78110619, 0.18730241],
-           [0.10699786, 0.54495818, 0.9879418 ]])
+           [0.47246508, 0.44181058, 0.9325149 ],
+           [0.85451472, 0.98657587, 0.71548413],
+           [0.72576005, 0.73481013, 0.95685805]])
 
 
 
@@ -347,7 +347,7 @@ from the center of the cloud.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.801 seconds)
+   **Total running time of the script:** (0 minutes 10.521 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-clouds.py:

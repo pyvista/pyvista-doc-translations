@@ -266,7 +266,7 @@ Finally, convert the image data back to the "spatial" domain and plot it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 13.960 seconds)
+   **Total running time of the script:** (0 minutes 13.831 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft.py:

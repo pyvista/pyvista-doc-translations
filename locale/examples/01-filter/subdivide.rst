@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_subdivide.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_subdivide.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -127,10 +127,32 @@ Run the subdivisions for 1 and 3 levels.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_subdivide_001.png
-   :alt: subdivide
-   :srcset: /examples/01-filter/images/sphx_glr_subdivide_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_subdivide_001.png
+        :alt: subdivide
+        :srcset: /examples/01-filter/images/sphx_glr_subdivide_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_subdivide_001.vtksz
+
 
 
 
@@ -139,28 +161,25 @@ Run the subdivisions for 1 and 3 levels.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.068 seconds)
+   **Total running time of the script:** (0 minutes 1.777 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_subdivide.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: subdivide.py <subdivide.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: subdivide.py <subdivide.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: subdivide.ipynb <subdivide.ipynb>`
+      :download:`Download Jupyter notebook: subdivide.ipynb <subdivide.ipynb>`
 
 
 .. only:: html

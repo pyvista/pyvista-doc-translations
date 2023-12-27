@@ -85,10 +85,32 @@ provides.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
-   :alt: depth peeling
-   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
+        :alt: depth peeling
+        :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_depth-peeling_001.vtksz
+
 
 
 
@@ -127,10 +149,32 @@ opacity value is used.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
-   :alt: depth peeling
-   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
+        :alt: depth peeling
+        :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_depth-peeling_002.vtksz
+
 
 
 
@@ -165,10 +209,32 @@ surfaces.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
-   :alt: depth peeling
-   :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
+        :alt: depth peeling
+        :srcset: /examples/02-plot/images/sphx_glr_depth-peeling_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_depth-peeling_003.vtksz
+
 
 
 
@@ -177,7 +243,7 @@ surfaces.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 47.753 seconds)
+   **Total running time of the script:** (0 minutes 37.739 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth-peeling.py:

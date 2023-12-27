@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_osmnx-example.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_osmnx-example.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -69,6 +69,13 @@ Read in the graph directly from the Open Street Map server.
 
 
 
+.. rst-class:: sphx-glr-script-out
+
+ .. code-block:: none
+
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/examples/downloads.py:3932: UserWarning: Unpickling a shapely <2.0 geometry object. Please save the pickle again; shapely 2.1 will not have this compatibility.
+      return pickle.load(open(filename, 'rb'))
+
 
 
 
@@ -116,10 +123,32 @@ Finally, merge the lines and plot
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_osmnx-example_001.png
-   :alt: osmnx example
-   :srcset: /examples/99-advanced/images/sphx_glr_osmnx-example_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_osmnx-example_001.png
+        :alt: osmnx example
+        :srcset: /examples/99-advanced/images/sphx_glr_osmnx-example_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_osmnx-example_001.vtksz
+
 
 
 
@@ -128,28 +157,25 @@ Finally, merge the lines and plot
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.846 seconds)
+   **Total running time of the script:** (0 minutes 0.468 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_osmnx-example.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: osmnx-example.py <osmnx-example.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: osmnx-example.py <osmnx-example.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: osmnx-example.ipynb <osmnx-example.ipynb>`
+      :download:`Download Jupyter notebook: osmnx-example.ipynb <osmnx-example.ipynb>`
 
 
 .. only:: html

@@ -136,7 +136,7 @@ the focal plane
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 7.066 seconds)
+   **Total running time of the script:** (0 minutes 7.062 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_blurring.py:

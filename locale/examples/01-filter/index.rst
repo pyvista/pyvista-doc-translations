@@ -98,7 +98,7 @@ in the :ref:`filters` module. Explore these demos to perform tasks such as:
 
 .. only:: html
 
-  .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.png
+  .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_01-filter_collisions.py`

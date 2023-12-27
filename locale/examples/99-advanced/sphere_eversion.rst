@@ -164,7 +164,7 @@ Let's define the chain of mappings we'll need for implementing the eversion:
                 - t / n * np.cos(n * phi)
             )
             - (1 - lamda) * eta**(1 + kappa) * t * abs(t)**(2 * kappa)
-                * np.sin(theta) / np.cos(theta)**(2 * n)  # noqa
+                * np.sin(theta) / np.cos(theta)**(2 * n)  # noqa: E131
         )
         # fmt: on
 
@@ -339,7 +339,7 @@ sphere are visible.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 40.034 seconds)
+   **Total running time of the script:** (0 minutes 40.355 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_sphere_eversion.py:

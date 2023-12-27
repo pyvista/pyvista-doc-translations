@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_screenshot.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_screenshot.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -21,13 +21,12 @@
 Saving Screenshots
 ~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 5-16
+.. GENERATED FROM PYTHON SOURCE LINES 5-15
 
 .. code-block:: default
 
     import matplotlib.pyplot as plt
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -60,10 +59,32 @@ using the :class:`pyvista.Plotter`:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_screenshot_001.png
-   :alt: screenshot
-   :srcset: /examples/02-plot/images/sphx_glr_screenshot_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_screenshot_001.png
+        :alt: screenshot
+        :srcset: /examples/02-plot/images/sphx_glr_screenshot_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_screenshot_001.vtksz
+
 
 
 
@@ -95,28 +116,25 @@ The ``img`` array can be used to plot the screenshot in ``matplotlib``:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.569 seconds)
+   **Total running time of the script:** (0 minutes 0.358 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_screenshot.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: screenshot.py <screenshot.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: screenshot.py <screenshot.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: screenshot.ipynb <screenshot.ipynb>`
+      :download:`Download Jupyter notebook: screenshot.ipynb <screenshot.ipynb>`
 
 
 .. only:: html

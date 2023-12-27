@@ -93,10 +93,32 @@ So lets take a look at the difference:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
-   :alt: interpolate before map
-   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
+        :alt: interpolate before map
+        :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_interpolate-before-map_001.vtksz
+
 
 
 
@@ -137,10 +159,32 @@ The same interpolation effect occurs for wireframe visualization too:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
-   :alt: interpolate before map
-   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
+        :alt: interpolate before map
+        :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_interpolate-before-map_002.vtksz
+
 
 
 
@@ -187,10 +231,32 @@ affects its rendering.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
-   :alt: interpolate before map
-   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
+        :alt: interpolate before map
+        :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_interpolate-before-map_003.vtksz
+
 
 
 
@@ -232,10 +298,32 @@ the ``n_colors`` argument:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
-   :alt: interpolate before map
-   :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
+        :alt: interpolate before map
+        :srcset: /examples/02-plot/images/sphx_glr_interpolate-before-map_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_interpolate-before-map_004.vtksz
+
 
 
 
@@ -257,7 +345,7 @@ flag to ``True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.841 seconds)
+   **Total running time of the script:** (0 minutes 1.742 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_interpolate-before-map.py:

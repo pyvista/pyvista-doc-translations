@@ -105,10 +105,32 @@ Create a plotter and add data to the scene. You'll notice that each
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_001.png
-   :alt: color cycler
-   :srcset: /examples/02-plot/images/sphx_glr_color_cycler_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_001.png
+        :alt: color cycler
+        :srcset: /examples/02-plot/images/sphx_glr_color_cycler_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_color_cycler_001.vtksz
+
 
 
 
@@ -155,10 +177,32 @@ use a cycler for a single plotter, you can set this on with
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_002.png
-   :alt: color cycler
-   :srcset: /examples/02-plot/images/sphx_glr_color_cycler_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_002.png
+        :alt: color cycler
+        :srcset: /examples/02-plot/images/sphx_glr_color_cycler_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_color_cycler_002.vtksz
+
 
 
 
@@ -198,10 +242,32 @@ Further, you can control this on a per-renderer basis by calling
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_003.png
-   :alt: color cycler
-   :srcset: /examples/02-plot/images/sphx_glr_color_cycler_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_003.png
+        :alt: color cycler
+        :srcset: /examples/02-plot/images/sphx_glr_color_cycler_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_color_cycler_003.vtksz
+
 
 
 
@@ -237,10 +303,32 @@ randomly select colors.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_004.png
-   :alt: color cycler
-   :srcset: /examples/02-plot/images/sphx_glr_color_cycler_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_color_cycler_004.png
+        :alt: color cycler
+        :srcset: /examples/02-plot/images/sphx_glr_color_cycler_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_color_cycler_004.vtksz
+
 
 
 
@@ -249,7 +337,7 @@ randomly select colors.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.094 seconds)
+   **Total running time of the script:** (0 minutes 1.083 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_color_cycler.py:

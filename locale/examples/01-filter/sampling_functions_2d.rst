@@ -135,10 +135,32 @@ Show the terrain as a contour plot
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
-   :alt: sampling functions 2d
-   :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
+        :alt: sampling functions 2d
+        :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_sampling_functions_2d_001.vtksz
+
 
 
 
@@ -161,10 +183,32 @@ Show the terrain with custom lighting and shadows
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
-   :alt: sampling functions 2d
-   :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
+        :alt: sampling functions 2d
+        :srcset: /examples/01-filter/images/sphx_glr_sampling_functions_2d_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_sampling_functions_2d_002.vtksz
+
 
 
 
@@ -173,7 +217,7 @@ Show the terrain with custom lighting and shadows
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.414 seconds)
+   **Total running time of the script:** (0 minutes 6.060 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_sampling_functions_2d.py:

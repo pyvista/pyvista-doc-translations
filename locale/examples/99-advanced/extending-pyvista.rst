@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_extending-pyvista.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_extending-pyvista.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -112,14 +112,12 @@ direction (1, 0, 1) is :math:`0.5\sqrt{0.5}\approx0.354`
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Original foo sphere:
     Type: <class '__main__.FooData'>
-    Maximum point index: 4975
-    Location of maximum point: [ 3.5634708e-01 -1.1460996e-16  3.5073745e-01]
+    Maximum point index: 26
+    Location of maximum point: [0.35634708 0.         0.35073745]
 
 
 
@@ -146,15 +144,13 @@ affect the type of the object.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
     Rotated foo sphere:
     Type: <class '__main__.FooData'>
-    Maximum point index: 75
-    Location of maximum point: [0.35073745 0.         0.35634708]
+    Maximum point index: 4926
+    Location of maximum point: [ 3.5073745e-01 -1.1460996e-16  3.5634708e-01]
 
 
 
@@ -180,8 +176,6 @@ ones that differ from the original type.  In this case, the
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -212,13 +206,11 @@ It is now required to explicitly wrap the object into ``FooData``.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Type: <class '__main__.FooData'>
-    Maximum point index: 94
-    Location of maximum point: [0.35073745 0.         0.35634708]
+    Maximum point index: 2481
+    Location of maximum point: [ 3.5073745e-01 -1.1460996e-16  3.5634708e-01]
 
 
 
@@ -272,14 +264,12 @@ objects to obtain a ``FooData`` object.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Original foo sphere:
     Type: <class '__main__.FooData'>
-    Maximum point index: 4975
-    Location of maximum point: [ 3.5634708e-01 -1.1460996e-16  3.5073745e-01]
+    Maximum point index: 26
+    Location of maximum point: [0.35634708 0.         0.35073745]
 
 
 
@@ -306,15 +296,13 @@ affect the type of the object.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
     Rotated foo sphere:
     Type: <class '__main__.FooData'>
-    Maximum point index: 75
-    Location of maximum point: [0.35073745 0.         0.35634708]
+    Maximum point index: 4926
+    Location of maximum point: [ 3.5073745e-01 -1.1460996e-16  3.5634708e-01]
 
 
 
@@ -341,15 +329,13 @@ Filter operations that return :class:`pyvista.PolyData` now return
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
     Decimated foo sphere:
     Type: <class '__main__.FooData'>
-    Maximum point index: 94
-    Location of maximum point: [0.35073745 0.         0.35634708]
+    Maximum point index: 2481
+    Location of maximum point: [ 3.5073745e-01 -1.1460996e-16  3.5634708e-01]
 
 
 
@@ -378,8 +364,6 @@ it is recommended to use the directly managing types method.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -433,28 +417,25 @@ recommended.  One example is a ``try...finally`` block.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.186 seconds)
+   **Total running time of the script:** (0 minutes 0.139 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_extending-pyvista.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: extending-pyvista.py <extending-pyvista.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: extending-pyvista.py <extending-pyvista.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: extending-pyvista.ipynb <extending-pyvista.ipynb>`
+      :download:`Download Jupyter notebook: extending-pyvista.ipynb <extending-pyvista.ipynb>`
 
 
 .. only:: html

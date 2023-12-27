@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_rotate.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_rotate.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -94,10 +94,32 @@ Plot original mesh. Add axes actor to Plotter.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_001.png
-   :alt: rotate
-   :srcset: /examples/01-filter/images/sphx_glr_rotate_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_rotate_001.png
+        :alt: rotate
+        :srcset: /examples/01-filter/images/sphx_glr_rotate_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_rotate_001.vtksz
+
 
 
 
@@ -131,10 +153,32 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_002.png
-   :alt: rotate
-   :srcset: /examples/01-filter/images/sphx_glr_rotate_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_rotate_002.png
+        :alt: rotate
+        :srcset: /examples/01-filter/images/sphx_glr_rotate_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_rotate_002.vtksz
+
 
 
 
@@ -168,10 +212,32 @@ Add the axes actor to the Plotter and set the axes origin to the point of rotati
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_003.png
-   :alt: rotate
-   :srcset: /examples/01-filter/images/sphx_glr_rotate_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_rotate_003.png
+        :alt: rotate
+        :srcset: /examples/01-filter/images/sphx_glr_rotate_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_rotate_003.vtksz
+
 
 
 
@@ -205,10 +271,32 @@ Add axes actor to the Plotter and set the axes origin to the point of rotation.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_004.png
-   :alt: rotate
-   :srcset: /examples/01-filter/images/sphx_glr_rotate_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_rotate_004.png
+        :alt: rotate
+        :srcset: /examples/01-filter/images/sphx_glr_rotate_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_rotate_004.vtksz
+
 
 
 
@@ -241,20 +329,33 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_rotate_005.png
-   :alt: rotate
-   :srcset: /examples/01-filter/images/sphx_glr_rotate_005.png
-   :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
 
- Out:
 
- .. code-block:: none
+.. tab-set::
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/pointset.py:337: PyvistaDeprecationWarning: You did not specify a value for `inplace` and the default value will be changing to `False` in future versions for point-based meshes (e.g., `PolyData`). Please make sure you are not assuming this to be an inplace operation.
-      warnings.warn(DEFAULT_INPLACE_WARNING, PyvistaDeprecationWarning)
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_rotate_005.png
+        :alt: rotate
+        :srcset: /examples/01-filter/images/sphx_glr_rotate_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_rotate_005.vtksz
+
+
 
 
 
@@ -262,28 +363,25 @@ Add the axes actor to the Plotter and set axes origin to the point of rotation.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.258 seconds)
+   **Total running time of the script:** (0 minutes 2.014 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_rotate.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: rotate.py <rotate.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: rotate.py <rotate.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: rotate.ipynb <rotate.ipynb>`
+      :download:`Download Jupyter notebook: rotate.ipynb <rotate.ipynb>`
 
 
 .. only:: html

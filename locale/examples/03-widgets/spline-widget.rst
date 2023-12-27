@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_03-widgets_spline-widget.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_03-widgets_spline-widget.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -74,10 +74,32 @@ path. To do this, we have added a convenient helper method which leverages the
 
 
 
-.. image-sg:: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
-   :alt: spline widget
-   :srcset: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
+        :alt: spline widget
+        :srcset: /examples/03-widgets/images/sphx_glr_spline-widget_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/03-widgets/images/sphx_glr_spline-widget_001.vtksz
+
 
 
 
@@ -86,28 +108,25 @@ path. To do this, we have added a convenient helper method which leverages the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.476 seconds)
+   **Total running time of the script:** (0 minutes 0.392 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_spline-widget.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: spline-widget.py <spline-widget.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: spline-widget.py <spline-widget.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: spline-widget.ipynb <spline-widget.ipynb>`
+      :download:`Download Jupyter notebook: spline-widget.ipynb <spline-widget.ipynb>`
 
 
 .. only:: html

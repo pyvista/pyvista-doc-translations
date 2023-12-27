@@ -197,10 +197,32 @@ mesh and the possibilities are endless with PyVista.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
-   :alt: create surface draped
-   :srcset: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
+        :alt: create surface draped
+        :srcset: /examples/00-load/images/sphx_glr_create-surface-draped_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-surface-draped_003.vtksz
+
 
 
 
@@ -209,7 +231,7 @@ mesh and the possibilities are endless with PyVista.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  10.066 seconds)
+   **Total running time of the script:** (0 minutes 47.715 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-surface-draped.py:

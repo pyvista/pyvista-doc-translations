@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_orbit.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_orbit.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -77,10 +77,13 @@ Orbit around the Mt. St Helens dataset.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_001.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_001.gif
    :alt: orbit
-   :srcset: /examples/02-plot/images/sphx_glr_orbit_001.png
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -105,10 +108,13 @@ Orbit around the Mt. St Helens dataset.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_002.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_002.gif
    :alt: orbit
-   :srcset: /examples/02-plot/images/sphx_glr_orbit_002.png
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_002.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -143,10 +149,13 @@ Orbit around the Mt. St Helens dataset.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_003.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_orbit_003.gif
    :alt: orbit
-   :srcset: /examples/02-plot/images/sphx_glr_orbit_003.png
+   :srcset: /examples/02-plot/images/sphx_glr_orbit_003.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -155,28 +164,25 @@ Orbit around the Mt. St Helens dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 1 minutes  3.942 seconds)
+   **Total running time of the script:** (0 minutes 58.177 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_orbit.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: orbit.py <orbit.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: orbit.py <orbit.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: orbit.ipynb <orbit.ipynb>`
+      :download:`Download Jupyter notebook: orbit.ipynb <orbit.ipynb>`
 
 
 .. only:: html

@@ -107,7 +107,7 @@ to the :class:`pyvista.DataSetMapper` and it has a helpful ``repr`` method:
  .. code-block:: none
 
 
-    LookupTable (0x7f87536259c0)
+    LookupTable (0x7fb95286d3c0)
       Table Range:                (0.014368999749422073, 23.26799964904785)
       N Values:                   256
       Above Range Color:          None
@@ -498,7 +498,7 @@ callbacks.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 8.465 seconds)
+   **Total running time of the script:** (0 minutes 8.071 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_lookup-table.py:

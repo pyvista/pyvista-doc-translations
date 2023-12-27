@@ -81,10 +81,32 @@ Now we can display the silhouette of the mesh and compare the result:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_001.png
-   :alt: silhouette
-   :srcset: /examples/02-plot/images/sphx_glr_silhouette_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_001.png
+        :alt: silhouette
+        :srcset: /examples/02-plot/images/sphx_glr_silhouette_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_silhouette_001.vtksz
+
 
 
 
@@ -113,10 +135,32 @@ outline. For example, color and width could be specified like so:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_002.png
-   :alt: silhouette
-   :srcset: /examples/02-plot/images/sphx_glr_silhouette_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_002.png
+        :alt: silhouette
+        :srcset: /examples/02-plot/images/sphx_glr_silhouette_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_silhouette_002.vtksz
+
 
 
 
@@ -164,10 +208,32 @@ want to disable it. It is also possible to display sharp edges:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_003.png
-   :alt: silhouette
-   :srcset: /examples/02-plot/images/sphx_glr_silhouette_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_003.png
+        :alt: silhouette
+        :srcset: /examples/02-plot/images/sphx_glr_silhouette_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_silhouette_003.vtksz
+
 
 
 
@@ -207,10 +273,32 @@ Here is another example:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_004.png
-   :alt: silhouette
-   :srcset: /examples/02-plot/images/sphx_glr_silhouette_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_silhouette_004.png
+        :alt: silhouette
+        :srcset: /examples/02-plot/images/sphx_glr_silhouette_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_silhouette_004.vtksz
+
 
 
 
@@ -219,7 +307,7 @@ Here is another example:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.826 seconds)
+   **Total running time of the script:** (0 minutes 9.911 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_silhouette.py:

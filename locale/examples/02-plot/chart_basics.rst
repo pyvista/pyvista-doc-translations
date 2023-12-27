@@ -408,7 +408,7 @@ The below example shows how you can do this.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 2.647 seconds)
+   **Total running time of the script:** (0 minutes 2.709 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_chart_basics.py:

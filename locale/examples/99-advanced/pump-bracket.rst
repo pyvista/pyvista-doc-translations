@@ -146,10 +146,32 @@ bracket.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_001.png
-   :alt: pump bracket
-   :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_001.png
+        :alt: pump bracket
+        :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_pump-bracket_001.vtksz
+
 
 
 
@@ -185,10 +207,32 @@ original dataset using :func:`warp_by_vector <pyvista.DataSetFilters.warp_by_vec
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_002.png
-   :alt: pump bracket
-   :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_002.png
+        :alt: pump bracket
+        :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_pump-bracket_002.vtksz
+
 
 
 
@@ -229,6 +273,7 @@ to vary the displacement.
 
 
 
+
 .. image-sg:: /examples/99-advanced/images/sphx_glr_pump-bracket_003.gif
    :alt: pump bracket
    :srcset: /examples/99-advanced/images/sphx_glr_pump-bracket_003.gif
@@ -239,9 +284,11 @@ to vary the displacement.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 24.198 seconds)
+   **Total running time of the script:** (0 minutes 17.216 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_pump-bracket.py:

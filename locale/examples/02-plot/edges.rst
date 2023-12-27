@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_edges.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_edges.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -33,12 +33,11 @@ to communicate aspects of the dataset like resolution.
 Showing the edges for any rendered dataset is as simple as specifying the
 the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-30
+.. GENERATED FROM PYTHON SOURCE LINES 15-29
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 1
     from pyvista import examples
 
     nefertiti = examples.download_nefertiti()
@@ -55,10 +54,32 @@ the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_edges_001.png
-   :alt: edges
-   :srcset: /examples/02-plot/images/sphx_glr_edges_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_edges_001.png
+        :alt: edges
+        :srcset: /examples/02-plot/images/sphx_glr_edges_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_edges_001.vtksz
+
 
 
 
@@ -67,28 +88,25 @@ the ``show_edges`` keyword argument to ``True`` when plotting a dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.314 seconds)
+   **Total running time of the script:** (0 minutes 12.218 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_edges.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: edges.py <edges.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: edges.py <edges.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: edges.ipynb <edges.ipynb>`
+      :download:`Download Jupyter notebook: edges.ipynb <edges.ipynb>`
 
 
 .. only:: html

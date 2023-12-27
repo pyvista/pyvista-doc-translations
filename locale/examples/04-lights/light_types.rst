@@ -62,10 +62,32 @@ where you move the camera, the light always emanates from the view point:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_001.png
-   :alt: light types
-   :srcset: /examples/04-lights/images/sphx_glr_light_types_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_light_types_001.png
+        :alt: light types
+        :srcset: /examples/04-lights/images/sphx_glr_light_types_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_light_types_001.vtksz
+
 
 
 
@@ -101,10 +123,32 @@ coordinates please see the documentation of
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_002.png
-   :alt: light types
-   :srcset: /examples/04-lights/images/sphx_glr_light_types_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_light_types_002.png
+        :alt: light types
+        :srcset: /examples/04-lights/images/sphx_glr_light_types_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_light_types_002.vtksz
+
 
 
 
@@ -132,10 +176,32 @@ interpreted as global coordinates:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_light_types_003.png
-   :alt: light types
-   :srcset: /examples/04-lights/images/sphx_glr_light_types_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_light_types_003.png
+        :alt: light types
+        :srcset: /examples/04-lights/images/sphx_glr_light_types_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_light_types_003.vtksz
+
 
 
 
@@ -144,7 +210,7 @@ interpreted as global coordinates:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.156 seconds)
+   **Total running time of the script:** (0 minutes 2.262 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_light_types.py:

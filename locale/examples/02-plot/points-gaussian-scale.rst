@@ -52,12 +52,12 @@ torus.
 
 
     N_SPHERES = 10_000
-    theta = np.random.uniform(0, 2 * np.pi, N_SPHERES)
-    phi = np.random.uniform(0, 2 * np.pi, N_SPHERES)
+    theta = np.random.default_rng().uniform(0, 2 * np.pi, N_SPHERES)
+    phi = np.random.default_rng().uniform(0, 2 * np.pi, N_SPHERES)
     torus_radius = 1
     tube_radius = 0.3
     radius = torus_radius + tube_radius * np.cos(phi)
-    rad = np.random.random(N_SPHERES) * 0.01
+    rad = np.random.default_rng().random(N_SPHERES) * 0.01
 
     pos = np.zeros((N_SPHERES, 3))
     pos[:, 0] = radius * np.cos(theta)
@@ -170,7 +170,7 @@ Show the same plot with ``emissive=True``.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.563 seconds)
+   **Total running time of the script:** (0 minutes 0.566 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_points-gaussian-scale.py:

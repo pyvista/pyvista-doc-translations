@@ -92,10 +92,32 @@ formats in PyVista.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_001.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_001.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_001.vtksz
+
 
 
 
@@ -119,10 +141,32 @@ using the ``Plotter``:
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_002.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_002.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_002.vtksz
+
 
 
 
@@ -212,10 +256,32 @@ Example STL file:
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_003.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_003.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_003.vtksz
+
 
 
 
@@ -236,10 +302,32 @@ Example OBJ file
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_004.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_004.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_004.vtksz
+
 
 
 
@@ -260,10 +348,32 @@ Example BYU file
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_005.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_005.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_005.vtksz
+
 
 
 
@@ -283,10 +393,32 @@ Example VTK file
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-file_006.png
-   :alt: read file
-   :srcset: /examples/00-load/images/sphx_glr_read-file_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-file_006.png
+        :alt: read file
+        :srcset: /examples/00-load/images/sphx_glr_read-file_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-file_006.vtksz
+
 
 
 
@@ -295,7 +427,7 @@ Example VTK file
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.601 seconds)
+   **Total running time of the script:** (0 minutes 1.968 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-file.py:

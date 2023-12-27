@@ -98,10 +98,32 @@ Plot the two datasets
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_resample_001.png
-   :alt: resample
-   :srcset: /examples/01-filter/images/sphx_glr_resample_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_resample_001.png
+        :alt: resample
+        :srcset: /examples/01-filter/images/sphx_glr_resample_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_resample_001.vtksz
+
 
 
 
@@ -124,10 +146,32 @@ Run the algorithm and plot the result
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_resample_002.png
-   :alt: resample
-   :srcset: /examples/01-filter/images/sphx_glr_resample_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_resample_002.png
+        :alt: resample
+        :srcset: /examples/01-filter/images/sphx_glr_resample_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_resample_002.vtksz
+
 
 
 
@@ -177,10 +221,32 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_resample_003.png
-   :alt: resample
-   :srcset: /examples/01-filter/images/sphx_glr_resample_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_resample_003.png
+        :alt: resample
+        :srcset: /examples/01-filter/images/sphx_glr_resample_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_resample_003.vtksz
+
 
 
 
@@ -189,7 +255,7 @@ Take a volume of data and create a grid of lower resolution to resample on
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.939 seconds)
+   **Total running time of the script:** (0 minutes 6.716 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_resample.py:

@@ -92,10 +92,32 @@ Plot the reflected mesh:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_reflect_001.png
-   :alt: reflect
-   :srcset: /examples/01-filter/images/sphx_glr_reflect_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_reflect_001.png
+        :alt: reflect
+        :srcset: /examples/01-filter/images/sphx_glr_reflect_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_reflect_001.vtksz
+
 
 
 
@@ -104,7 +126,7 @@ Plot the reflected mesh:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.353 seconds)
+   **Total running time of the script:** (0 minutes 0.237 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_reflect.py:

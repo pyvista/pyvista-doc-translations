@@ -266,7 +266,7 @@ seems realistic without it becoming overwhelming.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 17.296 seconds)
+   **Total running time of the script:** (0 minutes 17.206 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ssao.py:

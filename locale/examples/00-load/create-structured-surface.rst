@@ -84,10 +84,32 @@ Now pass the NumPy meshgrid to PyVista
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
-   :alt: create structured surface
-   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
+        :alt: create structured surface
+        :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-structured-surface_001.vtksz
+
 
 
 
@@ -104,10 +126,32 @@ Now pass the NumPy meshgrid to PyVista
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
-   :alt: create structured surface
-   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
+        :alt: create structured surface
+        :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-structured-surface_002.vtksz
+
 
 
 
@@ -174,8 +218,8 @@ frame.
         """Ignore the contents of this function. Just know that it returns an
         n by 3 numpy array of structured coordinates."""
         n, m = 29, 32
-        x = np.linspace(-200, 200, num=n) + np.random.uniform(-5, 5, size=n)
-        y = np.linspace(-200, 200, num=m) + np.random.uniform(-5, 5, size=m)
+        x = np.linspace(-200, 200, num=n) + np.random.default_rng().uniform(-5, 5, size=n)
+        y = np.linspace(-200, 200, num=m) + np.random.default_rng().uniform(-5, 5, size=m)
         xx, yy = np.meshgrid(x, y)
         A, b = 100, 100
         zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
@@ -198,11 +242,11 @@ frame.
  .. code-block:: none
 
 
-    pyvista_ndarray([[ -44.33674835, -276.10324599,    2.00417539],
-                     [ -36.2800727 , -270.1198306 ,    2.43786305],
-                     [ -19.36045426, -257.55421301,    3.55985636],
-                     [ -11.73676534, -251.89236195,    4.16116258],
-                     [   0.42918496, -242.85712988,    5.2392675 ]])
+    pyvista_ndarray([[ -36.51205917, -278.98296891,    1.90968597],
+                     [ -29.2754607 , -273.60859659,    2.26876209],
+                     [ -14.76042278, -262.82877809,    3.12779522],
+                     [  -3.78261148, -254.67593592,    3.90189824],
+                     [   6.88736488, -246.75171214,    4.75158394]])
 
 
 
@@ -274,10 +318,32 @@ dimensionality of structured grid including:
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
-   :alt: create structured surface
-   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
+        :alt: create structured surface
+        :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-structured-surface_004.vtksz
+
 
 
 
@@ -308,10 +374,32 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
-   :alt: create structured surface
-   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
+        :alt: create structured surface
+        :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-structured-surface_005.vtksz
+
 
 
 
@@ -332,10 +420,32 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
-   :alt: create structured surface
-   :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
+        :alt: create structured surface
+        :srcset: /examples/00-load/images/sphx_glr_create-structured-surface_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-structured-surface_006.vtksz
+
 
 
 
@@ -344,7 +454,7 @@ Let's start with a simple example by extending the wave mesh to 3D
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 2.687 seconds)
+   **Total running time of the script:** (0 minutes 1.908 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-structured-surface.py:

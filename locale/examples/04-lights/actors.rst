@@ -65,10 +65,32 @@ functionality of which can be enabled for spotlights:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_actors_001.png
-   :alt: actors
-   :srcset: /examples/04-lights/images/sphx_glr_actors_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_actors_001.png
+        :alt: actors
+        :srcset: /examples/04-lights/images/sphx_glr_actors_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_actors_001.vtksz
+
 
 
 
@@ -108,10 +130,32 @@ spotlights are involved in lighting.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_actors_002.png
-   :alt: actors
-   :srcset: /examples/04-lights/images/sphx_glr_actors_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_actors_002.png
+        :alt: actors
+        :srcset: /examples/04-lights/images/sphx_glr_actors_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_actors_002.vtksz
+
 
 
 
@@ -148,10 +192,32 @@ the problem:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_actors_003.png
-   :alt: actors
-   :srcset: /examples/04-lights/images/sphx_glr_actors_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_actors_003.png
+        :alt: actors
+        :srcset: /examples/04-lights/images/sphx_glr_actors_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_actors_003.vtksz
+
 
 
 
@@ -160,7 +226,7 @@ the problem:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.801 seconds)
+   **Total running time of the script:** (0 minutes 1.154 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_actors.py:

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_extract-surface.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_extract-surface.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -92,7 +92,7 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
     )
 
     # introduce a minor variation to the location of the mid-side points
-    quad_pts += np.random.random(quad_pts.shape) * 0.3
+    quad_pts += np.random.default_rng().random(quad_pts.shape) * 0.3
     pts = np.vstack((lin_pts, quad_pts))
 
     # create the grid
@@ -108,10 +108,32 @@ to demonstrate how to extract the surface of an UnstructuredGrid.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_001.png
-   :alt: extract surface
-   :srcset: /examples/01-filter/images/sphx_glr_extract-surface_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_001.png
+        :alt: extract surface
+        :srcset: /examples/01-filter/images/sphx_glr_extract-surface_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extract-surface_001.vtksz
+
 
 
 
@@ -137,10 +159,32 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_002.png
-   :alt: extract surface
-   :srcset: /examples/01-filter/images/sphx_glr_extract-surface_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extract-surface_002.png
+        :alt: extract surface
+        :srcset: /examples/01-filter/images/sphx_glr_extract-surface_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extract-surface_002.vtksz
+
 
 
 
@@ -149,7 +193,7 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.648 seconds)
+   **Total running time of the script:** (0 minutes 0.510 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-surface.py:
@@ -157,6 +201,8 @@ https://prod.sandia.gov/techlib-noauth/access-control.cgi/2004/041617.pdf
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

@@ -248,7 +248,7 @@ cell.
  .. code-block:: none
 
 
-    Actor (0x7f875a30a080)
+    Actor (0x7fb91bfe1420)
       Center:                     (0.0, 0.0, 0.0)
       Pickable:                   True
       Position:                   (0.0, 0.0, 0.0)
@@ -260,7 +260,7 @@ cell.
       User matrix:                Set
       Has mapper:                 True
 
-    Property (0x7f8753566080)
+    Property (0x7fb91bfe15a0)
       Ambient:                     0.0
       Ambient color:               Color(name='lightblue', hex='#add8e6ff', opacity=255)
       Anisotropy:                  0.0
@@ -285,7 +285,7 @@ cell.
       Specular power:              100.0
       Style:                       "Surface"
 
-    DataSetMapper (0x7f8753566080)
+    DataSetMapper (0x7fb91bfe15a0)
       Scalar visibility:           False
       Scalar range:                (0.0, 1.0)
       Interpolate before mapping:  True
@@ -293,7 +293,7 @@ cell.
       Color mode:                  direct
 
     Attached dataset:
-    PolyData (0x7f87610415a0)
+    PolyData (0x7fb91e0cf400)
       N Cells:    1680
       N Points:   842
       N Strips:   0
@@ -480,7 +480,7 @@ If you intend on adding an example file, you should add a new function in
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 2.171 seconds)
+   **Total running time of the script:** (0 minutes 2.181 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_add-example.py:

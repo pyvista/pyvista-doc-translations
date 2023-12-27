@@ -106,10 +106,32 @@ commutative).
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_001.vtksz
+
 
 
 
@@ -146,10 +168,32 @@ Order of operands matters for boolean difference.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_002.vtksz
+
 
 
 
@@ -186,10 +230,32 @@ operation is commutative).
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_003.vtksz
+
 
 
 
@@ -219,10 +285,32 @@ outward.  This is the "normal" behavior.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_004.vtksz
+
 
 
 
@@ -247,10 +335,32 @@ Boolean difference with cube normals outward, sphere inward.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_005.vtksz
+
 
 
 
@@ -275,10 +385,32 @@ Boolean difference with cube normals inward, sphere outward.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_006.vtksz
+
 
 
 
@@ -302,10 +434,32 @@ Both cube and sphere normals inward.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
-   :alt: boolean operations
-   :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
+        :alt: boolean operations
+        :srcset: /examples/01-filter/images/sphx_glr_boolean-operations_007.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_boolean-operations_007.vtksz
+
 
 
 
@@ -314,7 +468,7 @@ Both cube and sphere normals inward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  8.307 seconds)
+   **Total running time of the script:** (0 minutes 5.790 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_boolean-operations.py:

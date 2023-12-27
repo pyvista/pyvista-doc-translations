@@ -63,10 +63,32 @@ Pick either a cube or a sphere using "p"
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_001.png
-   :alt: mesh picking
-   :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_001.png
+        :alt: mesh picking
+        :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_mesh-picking_001.vtksz
+
 
 
 
@@ -100,10 +122,32 @@ Pick to trigger a callback that "shrinks" the mesh each time it's selected.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
-   :alt: mesh picking
-   :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
+        :alt: mesh picking
+        :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_mesh-picking_002.vtksz
+
 
 
 
@@ -145,10 +189,32 @@ Return the picked actor to the callback
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
-   :alt: mesh picking
-   :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
+        :alt: mesh picking
+        :srcset: /examples/02-plot/images/sphx_glr_mesh-picking_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_mesh-picking_003.vtksz
+
 
 
 
@@ -157,7 +223,7 @@ Return the picked actor to the callback
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.757 seconds)
+   **Total running time of the script:** (0 minutes 0.739 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_mesh-picking.py:

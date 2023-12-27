@@ -356,7 +356,7 @@ distinguishing the inside and the outside of a sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 21.391 seconds)
+   **Total running time of the script:** (0 minutes 20.759 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_backface_props.py:

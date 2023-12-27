@@ -71,10 +71,32 @@ on the cartesian distance from the origin.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_gif_001.png
-   :alt: gif
-   :srcset: /examples/02-plot/images/sphx_glr_gif_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_gif_001.png
+        :alt: gif
+        :srcset: /examples/02-plot/images/sphx_glr_gif_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_gif_001.vtksz
+
 
 
 
@@ -119,6 +141,7 @@ Generate a GIF using ``off_screen=True`` parameter.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_gif_002.gif
    :alt: gif
    :srcset: /examples/02-plot/images/sphx_glr_gif_002.gif
@@ -129,9 +152,11 @@ Generate a GIF using ``off_screen=True`` parameter.
 
 
 
+
+
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 3.789 seconds)
+   **Total running time of the script:** (0 minutes 2.025 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_gif.py:

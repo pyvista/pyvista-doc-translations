@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_ray-trace-moeller.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_ray-trace-moeller.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -143,7 +143,7 @@ First, define the ray triangle intersection method.
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/utilities/helpers.py:507: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/utilities/points.py:52: UserWarning: Points is not a float type. This can cause issues when transforming or applying filters. Casting to ``np.float32``. Disable this by passing ``force_float=False``.
       warnings.warn(
     Intersected True
     t: 1.0
@@ -203,10 +203,32 @@ Plot the problem setup and the intersection
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_ray-trace-moeller_001.png
-   :alt: ray trace moeller
-   :srcset: /examples/99-advanced/images/sphx_glr_ray-trace-moeller_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_ray-trace-moeller_001.png
+        :alt: ray trace moeller
+        :srcset: /examples/99-advanced/images/sphx_glr_ray-trace-moeller_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_ray-trace-moeller_001.vtksz
+
 
 
 
@@ -215,7 +237,7 @@ Plot the problem setup and the intersection
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.678 seconds)
+   **Total running time of the script:** (0 minutes 0.352 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_ray-trace-moeller.py:
@@ -223,6 +245,8 @@ Plot the problem setup and the intersection
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

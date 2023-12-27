@@ -56,12 +56,12 @@ Create 100 superellipsoids using :func:`pyvista.ParametricSuperEllipsoid`
     def make_poly():
         """Create a superellipsoid in a random location."""
         poly = pv.ParametricSuperEllipsoid(
-            n1=np.random.random(),
-            n2=np.random.random() * 2,
+            n1=np.random.default_rng().random(),
+            n2=np.random.default_rng().random() * 2,
             u_res=50,
             v_res=50,
         )
-        poly.points += np.random.random(3) * 20
+        poly.points += np.random.default_rng().random(3) * 20
         return poly
 
 
@@ -151,7 +151,7 @@ color has already been set for the block.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 2.258 seconds)
+   **Total running time of the script:** (0 minutes 2.232 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_composite-picking.py:

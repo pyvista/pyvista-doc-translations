@@ -203,7 +203,7 @@ Disable the arrows to make the plot a bit clearer and flip the opacity array.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 15.356 seconds)
+   **Total running time of the script:** (0 minutes 15.131 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_clip-volume.py:

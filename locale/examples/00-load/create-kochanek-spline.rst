@@ -152,7 +152,7 @@ Interpolate those points onto a parametric Kochanek spline
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.135 seconds)
+   **Total running time of the script:** (0 minutes 0.737 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-kochanek-spline.py:

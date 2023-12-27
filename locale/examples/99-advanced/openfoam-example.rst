@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_99-advanced_openfoam-example.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_99-advanced_openfoam-example.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -82,8 +82,6 @@ and patches, typically boundaries.  This can be inspected before reading the dat
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     All patch names: ['internalMesh', 'patch/movingWall', 'patch/fixedWalls', 'patch/frontAndBack']
@@ -112,8 +110,6 @@ The internal mesh will be located in the top-level MultiBlock mesh.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Mesh patches: ['internalMesh', 'boundary']
@@ -138,18 +134,15 @@ In this case the internal mesh is a :class:`pyvista.UnstructuredGrid`.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    UnstructuredGrid (0x7fcb345e0f40)
-      N Cells:      400
-      N Points:     882
-      X Bounds:     0.000e+00, 1.000e-01
-      Y Bounds:     0.000e+00, 1.000e-01
-      Z Bounds:     0.000e+00, 1.000e-02
-      N Arrays:     4
-
+    UnstructuredGrid (0x7fb9bac41720)
+      N Cells:    400
+      N Points:   882
+      X Bounds:   0.000e+00, 1.000e-01
+      Y Bounds:   0.000e+00, 1.000e-01
+      Z Bounds:   0.000e+00, 1.000e-02
+      N Arrays:   4
 
 
 
@@ -175,25 +168,22 @@ of the sub-level MultiBlock mesh depends on the vtk version.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
-    MultiBlock (0x7fcb345e0400)
-      N Blocks:     3
-      X Bounds:     0.000, 0.100
-      Y Bounds:     0.000, 0.100
-      Z Bounds:     0.000, 0.010
-
+    MultiBlock (0x7fb8f7118340)
+      N Blocks    3
+      X Bounds    0.000, 0.100
+      Y Bounds    0.000, 0.100
+      Z Bounds    0.000, 0.010
     Boundaries patches: ['movingWall', 'fixedWalls', 'frontAndBack']
-    PolyData (0x7fcb345e0160)
-      N Cells:      20
-      N Points:     42
-      X Bounds:     0.000e+00, 1.000e-01
-      Y Bounds:     1.000e-01, 1.000e-01
-      Z Bounds:     0.000e+00, 1.000e-02
-      N Arrays:     4
-
+    PolyData (0x7fb8f70df3a0)
+      N Cells:    20
+      N Points:   42
+      N Strips:   0
+      X Bounds:   0.000e+00, 1.000e-01
+      Y Bounds:   1.000e-01, 1.000e-01
+      Z Bounds:   0.000e+00, 1.000e-02
+      N Arrays:   4
 
 
 
@@ -219,8 +209,6 @@ data.  Therefore, the cell data arrays are duplicated in point data.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Cell Data:
@@ -231,8 +219,8 @@ data.  Therefore, the cell data arrays are duplicated in point data.
     Active Texture  : None
     Active Normals  : None
     Contains arrays :
-        U                       float32  (400, 3)             VECTORS
-        p                       float32  (400,)               SCALARS
+        U                       float32    (400, 3)             VECTORS
+        p                       float32    (400,)               SCALARS
 
     Point Data:
     pyvista DataSetAttributes
@@ -242,8 +230,8 @@ data.  Therefore, the cell data arrays are duplicated in point data.
     Active Texture  : None
     Active Normals  : None
     Contains arrays :
-        U                       float32  (882, 3)             VECTORS
-        p                       float32  (882,)               SCALARS
+        U                       float32    (882, 3)             VECTORS
+        p                       float32    (882,)               SCALARS
 
 
 
@@ -270,8 +258,6 @@ This behavior can be turned off if only cell data is required.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
     Cell Data:
@@ -282,8 +268,8 @@ This behavior can be turned off if only cell data is required.
     Active Texture  : None
     Active Normals  : None
     Contains arrays :
-        U                       float32  (400, 3)             VECTORS
-        p                       float32  (400,)               SCALARS
+        U                       float32    (400, 3)             VECTORS
+        p                       float32    (400,)               SCALARS
 
     Point Data:
     pyvista DataSetAttributes
@@ -318,8 +304,6 @@ Now we will read in all the data at the last time point.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -405,10 +389,32 @@ and fixed wall boundaries are plotted.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-example_001.png
-   :alt: openfoam example
-   :srcset: /examples/99-advanced/images/sphx_glr_openfoam-example_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_openfoam-example_001.png
+        :alt: openfoam example
+        :srcset: /examples/99-advanced/images/sphx_glr_openfoam-example_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_openfoam-example_001.vtksz
+
 
 
 
@@ -417,28 +423,25 @@ and fixed wall boundaries are plotted.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.984 seconds)
+   **Total running time of the script:** (0 minutes 0.638 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-example.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: openfoam-example.py <openfoam-example.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: openfoam-example.py <openfoam-example.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: openfoam-example.ipynb <openfoam-example.ipynb>`
+      :download:`Download Jupyter notebook: openfoam-example.ipynb <openfoam-example.ipynb>`
 
 
 .. only:: html

@@ -153,10 +153,32 @@ should be passed as a ``jupyter_kwargs`` argument under the key
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_customization-trame-toolbar_001.png
-   :alt: customization trame toolbar
-   :srcset: /examples/99-advanced/images/sphx_glr_customization-trame-toolbar_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_customization-trame-toolbar_001.png
+        :alt: customization trame toolbar
+        :srcset: /examples/99-advanced/images/sphx_glr_customization-trame-toolbar_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_customization-trame-toolbar_001.vtksz
+
 
 
 
@@ -252,14 +274,14 @@ actual state variable, but only an argument value passed to the callback functio
  .. code-block:: none
 
 
-    Widget(value="<iframe src='http://localhost:38817/index.html?ui=P_0x7ff9b9aa3ca0_0&reconnect=auto' class='pyvista' style='width: 99%; height: 600px; border: 1px solid rgb(221,221,221);'></iframe>")
+    Widget(value='<iframe src="http://localhost:34333/index.html?ui=P_0x7fb8f6a88170_0&reconnect=auto" class="pyvista" style="width: 99%; height: 600px; border: 1px solid rgb(221,221,221);"></iframe>')
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.292 seconds)
+   **Total running time of the script:** (0 minutes 0.177 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_customization-trame-toolbar.py:

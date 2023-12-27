@@ -76,14 +76,14 @@ several scalar arrays including the velocity and temperature of the air.
  .. code-block:: none
 
 
-    (PolyData (0x7f875a308e80)
+    (PolyData (0x7fb9437bec20)
       N Cells:    344270
       N Points:   187992
       N Strips:   0
       X Bounds:   -3.000e-03, 1.530e-01
       Y Bounds:   -3.000e-03, 2.030e-01
       Z Bounds:   -9.000e-03, 4.200e-02
-      N Arrays:   4, UnstructuredGrid (0x7f87536e0fa0)
+      N Arrays:   4, UnstructuredGrid (0x7fb9437de080)
       N Cells:    1749992
       N Points:   610176
       X Bounds:   -1.388e-18, 1.500e-01
@@ -417,7 +417,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 29.102 seconds)
+   **Total running time of the script:** (0 minutes 28.332 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-cooling.py:
