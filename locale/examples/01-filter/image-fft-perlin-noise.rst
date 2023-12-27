@@ -82,10 +82,32 @@ the FFT is much more efficient for arrays sized as a power of 2.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_001.png
-   :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_001.png
+        :alt: image fft perlin noise
+        :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_image-fft-perlin-noise_001.vtksz
+
 
 
 
@@ -156,10 +178,32 @@ to :func:`pyvista.perlin_noise <pyvista.core.utilities.features.perlin_noise>`.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_002.png
-   :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_002.png
+        :alt: image fft perlin noise
+        :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_image-fft-perlin-noise_002.vtksz
+
 
 
 
@@ -192,10 +236,32 @@ As expected, we only see low frequency noise.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_003.png
-   :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_003.png
+        :alt: image fft perlin noise
+        :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_image-fft-perlin-noise_003.vtksz
+
 
 
 
@@ -229,10 +295,32 @@ frequency noise has been attenuated.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_004.png
-   :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_004.png
+        :alt: image fft perlin noise
+        :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_image-fft-perlin-noise_004.vtksz
+
 
 
 
@@ -268,10 +356,32 @@ Show that the sum of the low and high passes equals the original noise.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_005.png
-   :alt: image fft perlin noise
-   :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_005.png
+        :alt: image fft perlin noise
+        :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_image-fft-perlin-noise_005.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -340,10 +450,13 @@ Animate the variation of the cutoff frequency.
 
 
 
+
 .. image-sg:: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.gif
    :alt: image fft perlin noise
    :srcset: /examples/01-filter/images/sphx_glr_image-fft-perlin-noise_006.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -366,7 +479,7 @@ proportional.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  46.100 seconds)
+   **Total running time of the script:** (0 minutes 53.705 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_image-fft-perlin-noise.py:

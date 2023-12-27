@@ -59,10 +59,32 @@ Supertoroid
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_001.vtksz
+
 
 
 
@@ -86,10 +108,32 @@ Parametric Ellipsoid
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_002.vtksz
+
 
 
 
@@ -121,10 +165,32 @@ Partial Parametric Ellipsoid
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_003.vtksz
+
 
 
 
@@ -146,10 +212,32 @@ Pseudosphere
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_004.vtksz
+
 
 
 
@@ -172,10 +260,32 @@ Bohemian Dome
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_005.vtksz
+
 
 
 
@@ -197,10 +307,32 @@ Bour
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_006.vtksz
+
 
 
 
@@ -222,10 +354,32 @@ Boy's Surface
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_007.vtksz
+
 
 
 
@@ -247,10 +401,32 @@ Catalan Minimal
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_008.vtksz
+
 
 
 
@@ -272,10 +448,32 @@ Conic Spiral
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_009.vtksz
+
 
 
 
@@ -297,10 +495,32 @@ Cross Cap
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_010.vtksz
+
 
 
 
@@ -322,10 +542,32 @@ Dini
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_011.vtksz
+
 
 
 
@@ -347,10 +589,32 @@ Enneper
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_012.vtksz
+
 
 
 
@@ -372,10 +636,32 @@ Figure-8 Klein
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_013.vtksz
+
 
 
 
@@ -397,10 +683,32 @@ Henneberg
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_014.vtksz
+
 
 
 
@@ -422,10 +730,32 @@ Klein
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_015.vtksz
+
 
 
 
@@ -447,10 +777,32 @@ Kuen
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_016.vtksz
+
 
 
 
@@ -472,10 +824,32 @@ Mobius
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_017.vtksz
+
 
 
 
@@ -498,10 +872,32 @@ Plucker Conoid
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_018.vtksz
+
 
 
 
@@ -523,10 +919,32 @@ Random Hills
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_019.vtksz
+
 
 
 
@@ -548,10 +966,32 @@ Roman
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_020.vtksz
+
 
 
 
@@ -573,10 +1013,32 @@ Super Ellipsoid
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_021.vtksz
+
 
 
 
@@ -598,10 +1060,32 @@ Torus
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_022.vtksz
+
 
 
 
@@ -634,10 +1118,32 @@ Circular Arc
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_023.vtksz
+
 
 
 
@@ -664,17 +1170,39 @@ Extruded Half Arc
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
-   :alt: create parametric geometric objects
-   :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
+        :alt: create parametric geometric objects
+        :srcset: /examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-parametric-geometric-objects_024.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:2954: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/poly_data.py:2933: PyVistaFutureWarning: The default value of the ``capping`` keyword argument will change in a future version to ``True`` to match the behavior of VTK. We recommend passing the keyword explicitly to prevent future surprises.
       warnings.warn(
 
 
@@ -683,7 +1211,7 @@ Extruded Half Arc
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 11.980 seconds)
+   **Total running time of the script:** (0 minutes 8.806 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-parametric-geometric-objects.py:

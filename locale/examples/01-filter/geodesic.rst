@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_geodesic.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_geodesic.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -90,10 +90,32 @@ Render the path along the land surface
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_geodesic_001.png
-   :alt: geodesic
-   :srcset: /examples/01-filter/images/sphx_glr_geodesic_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_geodesic_001.png
+        :alt: geodesic
+        :srcset: /examples/01-filter/images/sphx_glr_geodesic_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_geodesic_001.vtksz
+
 
 
 
@@ -115,40 +137,35 @@ How long is that path?
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    1.982625123125876
+    1.9910068513865529
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  16.084 seconds)
+   **Total running time of the script:** (0 minutes 10.130 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_geodesic.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: geodesic.py <geodesic.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: geodesic.py <geodesic.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: geodesic.ipynb <geodesic.ipynb>`
+      :download:`Download Jupyter notebook: geodesic.ipynb <geodesic.ipynb>`
 
 
 .. only:: html

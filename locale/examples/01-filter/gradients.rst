@@ -244,10 +244,32 @@ by:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_gradients_001.png
-   :alt: gradients
-   :srcset: /examples/01-filter/images/sphx_glr_gradients_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_gradients_001.png
+        :alt: gradients
+        :srcset: /examples/01-filter/images/sphx_glr_gradients_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_gradients_001.vtksz
+
 
 
 
@@ -302,10 +324,32 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_gradients_002.png
-   :alt: gradients
-   :srcset: /examples/01-filter/images/sphx_glr_gradients_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_gradients_002.png
+        :alt: gradients
+        :srcset: /examples/01-filter/images/sphx_glr_gradients_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_gradients_002.vtksz
+
 
 
 
@@ -314,7 +358,7 @@ this for a scalar  field like for the ``scalars`` field in the given dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 5.892 seconds)
+   **Total running time of the script:** (0 minutes 3.432 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_gradients.py:

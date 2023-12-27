@@ -29,10 +29,32 @@ This example demonstrates how to measure distance between two points.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_distance_measurement_001.png
-   :alt: distance measurement
-   :srcset: /examples/02-plot/images/sphx_glr_distance_measurement_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_distance_measurement_001.png
+        :alt: distance measurement
+        :srcset: /examples/02-plot/images/sphx_glr_distance_measurement_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_distance_measurement_001.vtksz
+
 
 
 
@@ -60,7 +82,7 @@ This example demonstrates how to measure distance between two points.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.509 seconds)
+   **Total running time of the script:** (0 minutes 0.193 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_distance_measurement.py:

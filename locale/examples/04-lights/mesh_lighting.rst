@@ -52,10 +52,32 @@ mesh:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
-   :alt: mesh lighting
-   :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
+        :alt: mesh lighting
+        :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_mesh_lighting_001.vtksz
+
 
 
 
@@ -78,10 +100,32 @@ option to interactively explore the surface:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
-   :alt: mesh lighting
-   :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
+        :alt: mesh lighting
+        :srcset: /examples/04-lights/images/sphx_glr_mesh_lighting_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_mesh_lighting_002.vtksz
+
 
 
 
@@ -95,7 +139,7 @@ light rendering, see the :ref:`lighting_properties_example` example.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.489 seconds)
+   **Total running time of the script:** (0 minutes 0.969 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_mesh_lighting.py:

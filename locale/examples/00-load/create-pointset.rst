@@ -55,7 +55,7 @@ This example shows the performance improvement when clipping using the
 
  .. code-block:: none
 
-    Time to clip with a PolyData 4.18 seconds.
+    Time to clip with a PolyData 2.35 seconds.
 
 
 
@@ -73,10 +73,32 @@ Plot the clipped polydata
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-pointset_001.png
-   :alt: create pointset
-   :srcset: /examples/00-load/images/sphx_glr_create-pointset_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-pointset_001.png
+        :alt: create pointset
+        :srcset: /examples/00-load/images/sphx_glr_create-pointset_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-pointset_001.vtksz
+
 
 
 
@@ -109,7 +131,7 @@ This is only available with VTK >= 9.1.0.
 
  .. code-block:: none
 
-    Time to clip with a PointSet 0.14 seconds.
+    Time to clip with a PointSet 0.05 seconds.
 
 
 
@@ -132,10 +154,32 @@ Plot the same dataset.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-pointset_002.png
-   :alt: create pointset
-   :srcset: /examples/00-load/images/sphx_glr_create-pointset_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-pointset_002.png
+        :alt: create pointset
+        :srcset: /examples/00-load/images/sphx_glr_create-pointset_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-pointset_002.vtksz
+
 
 
 
@@ -144,7 +188,7 @@ Plot the same dataset.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.243 seconds)
+   **Total running time of the script:** (0 minutes 14.422 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-pointset.py:

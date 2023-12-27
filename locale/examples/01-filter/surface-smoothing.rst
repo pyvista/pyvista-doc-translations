@@ -66,10 +66,32 @@ The below code snippet loads a sample roughly edged volumetric dataset:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
-   :alt: surface smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
+        :alt: surface smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface-smoothing_001.vtksz
+
 
 
 
@@ -96,10 +118,32 @@ smoothing filter:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
-   :alt: surface smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
+        :alt: surface smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface-smoothing_002.vtksz
+
 
 
 
@@ -123,10 +167,32 @@ smoothing algorithm:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
-   :alt: surface smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
+        :alt: surface smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface-smoothing_003.vtksz
+
 
 
 
@@ -159,10 +225,32 @@ smoothing algorithm to a crazy high value. Note how this causes the mesh to
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
-   :alt: surface smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
+        :alt: surface smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface-smoothing_004.vtksz
+
 
 
 
@@ -199,10 +287,32 @@ Also, note that the number of iterations can be reduced to get the same approxim
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
-   :alt: surface smoothing
-   :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
+        :alt: surface smoothing
+        :srcset: /examples/01-filter/images/sphx_glr_surface-smoothing_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface-smoothing_005.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -219,7 +329,7 @@ Also, note that the number of iterations can be reduced to get the same approxim
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.248 seconds)
+   **Total running time of the script:** (0 minutes 1.307 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface-smoothing.py:

@@ -79,10 +79,32 @@ image's true colors are used and not mapped.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-image_001.png
-   :alt: read image
-   :srcset: /examples/00-load/images/sphx_glr_read-image_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-image_001.png
+        :alt: read image
+        :srcset: /examples/00-load/images/sphx_glr_read-image_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-image_001.vtksz
+
 
 
 
@@ -98,10 +120,32 @@ image's true colors are used and not mapped.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-image_002.png
-   :alt: read image
-   :srcset: /examples/00-load/images/sphx_glr_read-image_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-image_002.png
+        :alt: read image
+        :srcset: /examples/00-load/images/sphx_glr_read-image_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-image_002.vtksz
+
 
 
 
@@ -110,7 +154,7 @@ image's true colors are used and not mapped.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 38.965 seconds)
+   **Total running time of the script:** (0 minutes 35.564 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-image.py:

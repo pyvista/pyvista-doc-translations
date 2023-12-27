@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_04-lights_shadows.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_04-lights_shadows.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -49,10 +49,11 @@ Demonstrate the usage of lights and shadows in PyVista.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>871414</td></tr>
     <tr><td>N Points</td><td>437645</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-6.182e-02, 6.692e-02</td></tr>
     <tr><td>Y Bounds</td><td>-9.431e-02, 7.927e-02</td></tr>
     <tr><td>Z Bounds</td><td>5.273e-02, 1.972e-01</td></tr>
@@ -132,10 +133,32 @@ Using two lights, plot the Stanford Dragon with shadows.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_001.png
-   :alt: shadows
-   :srcset: /examples/04-lights/images/sphx_glr_shadows_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_shadows_001.png
+        :alt: shadows
+        :srcset: /examples/04-lights/images/sphx_glr_shadows_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_shadows_001.vtksz
+
 
 
 
@@ -179,10 +202,32 @@ light can go through.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_002.png
-   :alt: shadows
-   :srcset: /examples/04-lights/images/sphx_glr_shadows_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_shadows_002.png
+        :alt: shadows
+        :srcset: /examples/04-lights/images/sphx_glr_shadows_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_shadows_002.vtksz
+
 
 
 
@@ -224,10 +269,32 @@ light can travel through more planes.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_shadows_003.png
-   :alt: shadows
-   :srcset: /examples/04-lights/images/sphx_glr_shadows_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_shadows_003.png
+        :alt: shadows
+        :srcset: /examples/04-lights/images/sphx_glr_shadows_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_shadows_003.vtksz
+
 
 
 
@@ -236,28 +303,25 @@ light can travel through more planes.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.249 seconds)
+   **Total running time of the script:** (0 minutes 8.234 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_shadows.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: shadows.py <shadows.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: shadows.py <shadows.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: shadows.ipynb <shadows.ipynb>`
+      :download:`Download Jupyter notebook: shadows.ipynb <shadows.ipynb>`
 
 
 .. only:: html

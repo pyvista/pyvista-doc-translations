@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_voxelize.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_voxelize.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -51,10 +51,11 @@ bounding :class:`pyvista.PolyData` surface.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>4204</td></tr>
     <tr><td>N Points</td><td>2154</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
     <tr><td>X Bounds</td><td>-5.633e+00, 5.633e+00</td></tr>
     <tr><td>Y Bounds</td><td>-1.860e+00, 1.860e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.125e+00, 2.126e+00</td></tr>
@@ -82,10 +83,32 @@ bounding :class:`pyvista.PolyData` surface.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_001.png
-   :alt: voxelize
-   :srcset: /examples/01-filter/images/sphx_glr_voxelize_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_001.png
+        :alt: voxelize
+        :srcset: /examples/01-filter/images/sphx_glr_voxelize_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_voxelize_001.vtksz
+
 
 
 
@@ -110,10 +133,32 @@ Create a voxel model of the bounding surface
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_002.png
-   :alt: voxelize
-   :srcset: /examples/01-filter/images/sphx_glr_voxelize_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_002.png
+        :alt: voxelize
+        :srcset: /examples/01-filter/images/sphx_glr_voxelize_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_voxelize_002.vtksz
+
 
 
 
@@ -140,11 +185,11 @@ for bone density noting:
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>93038</td></tr>
-    <tr><td>N Points</td><td>113188</td></tr>
+    <tr><td>N Cells</td><td>93016</td></tr>
+    <tr><td>N Points</td><td>113158</td></tr>
     <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
     <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
@@ -152,10 +197,10 @@ for bone density noting:
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
-    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+    <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>4.002e+03</td><td>7.213e+05</td></tr>
+    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.980e+03</td><td>6.947e+05</td></tr>
     <tr><td><b>density</b></td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
     </table>
 
@@ -174,10 +219,32 @@ for bone density noting:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_003.png
-   :alt: voxelize
-   :srcset: /examples/01-filter/images/sphx_glr_voxelize_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_003.png
+        :alt: voxelize
+        :srcset: /examples/01-filter/images/sphx_glr_voxelize_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_voxelize_003.vtksz
+
 
 
 
@@ -203,11 +270,11 @@ added a scalar field that varies by the distance from the bounding surface.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>93038</td></tr>
-    <tr><td>N Points</td><td>113188</td></tr>
+    <tr><td>N Cells</td><td>93016</td></tr>
+    <tr><td>N Points</td><td>113158</td></tr>
     <tr><td>X Bounds</td><td>-5.633e+00, 5.584e+00</td></tr>
     <tr><td>Y Bounds</td><td>-1.860e+00, 1.858e+00</td></tr>
     <tr><td>Z Bounds</td><td>-2.125e+00, 2.097e+00</td></tr>
@@ -215,11 +282,11 @@ added a scalar field that varies by the distance from the bounding surface.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
-    <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>3.685e+03</td><td>7.283e+05</td></tr>
+    <tr><td>vtkOriginalPointIds</td><td>Points</td><td>int64</td><td>1</td><td>4.002e+03</td><td>7.213e+05</td></tr>
     <tr><td>implicit_distance</td><td>Points</td><td>float64</td><td>1</td><td>-6.951e-01</td><td>4.148e-01</td></tr>
-    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.624e+03</td><td>7.017e+05</td></tr>
+    <tr><td>vtkOriginalCellIds</td><td>Cells</td><td>int64</td><td>1</td><td>3.980e+03</td><td>6.947e+05</td></tr>
     <tr><td><b>density</b></td><td>Cells</td><td>float64</td><td>1</td><td>3.650e+00</td><td>3.650e+00</td></tr>
     </table>
 
@@ -241,10 +308,32 @@ added a scalar field that varies by the distance from the bounding surface.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_004.png
-   :alt: voxelize
-   :srcset: /examples/01-filter/images/sphx_glr_voxelize_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_voxelize_004.png
+        :alt: voxelize
+        :srcset: /examples/01-filter/images/sphx_glr_voxelize_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_voxelize_004.vtksz
+
 
 
 
@@ -253,28 +342,25 @@ added a scalar field that varies by the distance from the bounding surface.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  12.498 seconds)
+   **Total running time of the script:** (0 minutes 9.833 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_voxelize.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: voxelize.py <voxelize.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: voxelize.py <voxelize.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: voxelize.ipynb <voxelize.ipynb>`
+      :download:`Download Jupyter notebook: voxelize.ipynb <voxelize.ipynb>`
 
 
 .. only:: html

@@ -55,7 +55,7 @@ labels for each of the nodes.
 
 
     # Make some random points
-    poly = pv.PolyData(np.random.rand(10, 3))
+    poly = pv.PolyData(np.random.default_rng().random((10, 3)))
 
 
 
@@ -91,9 +91,9 @@ node:
     <tr><td>N Cells</td><td>10</td></tr>
     <tr><td>N Points</td><td>10</td></tr>
     <tr><td>N Strips</td><td>0</td></tr>
-    <tr><td>X Bounds</td><td>1.582e-03, 8.931e-01</td></tr>
-    <tr><td>Y Bounds</td><td>5.217e-03, 8.250e-01</td></tr>
-    <tr><td>Z Bounds</td><td>1.094e-01, 8.078e-01</td></tr>
+    <tr><td>X Bounds</td><td>4.794e-02, 7.564e-01</td></tr>
+    <tr><td>Y Bounds</td><td>1.942e-01, 9.992e-01</td></tr>
+    <tr><td>Z Bounds</td><td>1.272e-01, 9.119e-01</td></tr>
     <tr><td>N Arrays</td><td>1</td></tr>
     </table>
 
@@ -250,7 +250,7 @@ This example will label each point with their scalar values
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.783 seconds)
+   **Total running time of the script:** (0 minutes 0.789 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_labels.py:

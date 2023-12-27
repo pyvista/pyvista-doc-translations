@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-tri-surface.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-tri-surface.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -55,8 +55,8 @@ First, create some points for the surface.
 
     # Define a simple Gaussian surface
     n = 20
-    x = np.linspace(-200, 200, num=n) + np.random.uniform(-5, 5, size=n)
-    y = np.linspace(-200, 200, num=n) + np.random.uniform(-5, 5, size=n)
+    x = np.linspace(-200, 200, num=n) + np.random.default_rng().uniform(-5, 5, size=n)
+    y = np.linspace(-200, 200, num=n) + np.random.default_rng().uniform(-5, 5, size=n)
     xx, yy = np.meshgrid(x, y)
     A, b = 100, 100
     zz = A * np.exp(-0.5 * ((xx / b) ** 2.0 + (yy / b) ** 2.0))
@@ -71,16 +71,14 @@ First, create some points for the surface.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    array([[-195.94879896, -201.78845255,    1.91447726],
-           [-177.97621865, -201.78845255,    2.67905598],
-           [-154.41505573, -201.78845255,    3.96315623],
-           [-136.74778288, -201.78845255,    5.12557852],
-           [-116.06191274, -201.78845255,    6.65735879]])
+    array([[-195.5526436 , -197.45221692,    2.10382994],
+           [-175.52290569, -197.45221692,    3.05074788],
+           [-157.17475875, -197.45221692,    4.13962849],
+           [-140.42703946, -197.45221692,    5.31117779],
+           [-118.54173213, -197.45221692,    7.05117433]])
 
 
 
@@ -101,10 +99,32 @@ be encompassed in a :class:`pyvista.PolyData` object.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
-   :alt: create tri surface
-   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
+        :alt: create tri surface
+        :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-tri-surface_001.vtksz
+
 
 
 
@@ -127,10 +147,32 @@ triangulation to turn those boring discrete points into a connected surface.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
-   :alt: create tri surface
-   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
+        :alt: create tri surface
+        :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-tri-surface_002.vtksz
+
 
 
 
@@ -151,8 +193,8 @@ Masked Triangulations
     xx, yy, zz = np.meshgrid(x, x, [0])
     points = np.column_stack((xx.ravel(order="F"), yy.ravel(order="F"), zz.ravel(order="F")))
     # Perturb the points
-    points[:, 0] += np.random.rand(len(points)) * 0.3
-    points[:, 1] += np.random.rand(len(points)) * 0.3
+    points[:, 0] += np.random.default_rng().random(len(points)) * 0.3
+    points[:, 1] += np.random.default_rng().random(len(points)) * 0.3
     # Create the point cloud mesh to triangulate from the coordinates
     cloud = pv.PolyData(points)
     cloud
@@ -166,12 +208,13 @@ Masked Triangulations
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>100</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
-    <tr><td>X Bounds</td><td>2.433e-02, 9.213e+00</td></tr>
-    <tr><td>Y Bounds</td><td>1.486e-02, 9.297e+00</td></tr>
+    <tr><td>N Strips</td><td>0</td></tr>
+    <tr><td>X Bounds</td><td>6.585e-02, 9.272e+00</td></tr>
+    <tr><td>Y Bounds</td><td>7.016e-03, 9.295e+00</td></tr>
     <tr><td>Z Bounds</td><td>0.000e+00, 0.000e+00</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
     </table>
@@ -196,10 +239,32 @@ Run the triangulation on these points
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
-   :alt: create tri surface
-   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
+        :alt: create tri surface
+        :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-tri-surface_003.vtksz
+
 
 
 
@@ -221,10 +286,32 @@ added unwanted triangles. We can mitigate that with the ``alpha`` parameter.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
-   :alt: create tri surface
-   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
+        :alt: create tri surface
+        :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-tri-surface_004.vtksz
+
 
 
 
@@ -259,10 +346,32 @@ We could also add a polygon to ignore during the triangulation via the
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
-   :alt: create tri surface
-   :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
+        :alt: create tri surface
+        :srcset: /examples/00-load/images/sphx_glr_create-tri-surface_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-tri-surface_005.vtksz
+
 
 
 
@@ -271,28 +380,25 @@ We could also add a polygon to ignore during the triangulation via the
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.825 seconds)
+   **Total running time of the script:** (0 minutes 1.127 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-tri-surface.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: create-tri-surface.py <create-tri-surface.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: create-tri-surface.py <create-tri-surface.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: create-tri-surface.ipynb <create-tri-surface.ipynb>`
+      :download:`Download Jupyter notebook: create-tri-surface.ipynb <create-tri-surface.ipynb>`
 
 
 .. only:: html

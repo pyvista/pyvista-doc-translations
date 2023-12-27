@@ -6,42 +6,42 @@
 
 Computation times
 =================
-**05:10.732** total execution time for **examples_99-advanced** files:
+**05:38.410** total execution time for **examples_99-advanced** files:
 
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_planets.py` (``planets.py``)                                             | 02:34.590 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_planets.py` (``planets.py``)                                             | 02:33.111 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py` (``sphere_eversion.py``)                             | 00:40.034 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_sphere_eversion.py` (``sphere_eversion.py``)                             | 00:40.355 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)                       | 00:31.370 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_antarctica-compare.py` (``antarctica-compare.py``)                       | 00:33.323 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-cooling.py` (``openfoam-cooling.py``)                           | 00:29.102 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-cooling.py` (``openfoam-cooling.py``)                           | 00:28.332 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py` (``atomic-orbitals.py``)                             | 00:22.537 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_atomic-orbitals.py` (``atomic-orbitals.py``)                             | 00:22.361 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_magnetic-fields.py` (``magnetic-fields.py``)                             | 00:15.062 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_pump-bracket.py` (``pump-bracket.py``)                                   | 00:17.216 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py` (``openfoam-tubes.py``)                               | 00:10.561 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_magnetic-fields.py` (``magnetic-fields.py``)                             | 00:14.852 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py` (``plotting-algorithms.py``)                     | 00:05.306 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-tubes.py` (``openfoam-tubes.py``)                               | 00:10.067 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                                     | 00:02.171 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``)         | 00:06.425 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_customization-trame-toolbar.py` (``customization-trame-toolbar.py``)     | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_plotting-algorithms.py` (``plotting-algorithms.py``)                     | 00:05.242 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-pyvista.py``)                         | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_fea-hertzian-contact-pressure.py` (``fea-hertzian-contact-pressure.py``) | 00:02.906 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_fea-hertzian-contact-pressure.py` (``fea-hertzian-contact-pressure.py``) | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_add-example.py` (``add-example.py``)                                     | 00:02.181 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                           | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_openfoam-example.py` (``openfoam-example.py``)                           | 00:00.638 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)                                 | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_osmnx-example.py` (``osmnx-example.py``)                                 | 00:00.468 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_pump-bracket.py` (``pump-bracket.py``)                                   | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                         | 00:00.352 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_ray-trace-moeller.py` (``ray-trace-moeller.py``)                         | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                         | 00:00.264 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_ray-trace.py` (``ray-trace.py``)                                         | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_customization-trame-toolbar.py` (``customization-trame-toolbar.py``)     | 00:00.177 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_99-advanced_warp-by-vector-eigenmodes.py` (``warp-by-vector-eigenmodes.py``)         | 00:00.000 | 0.0 MB |
+| :ref:`sphx_glr_examples_99-advanced_extending-pyvista.py` (``extending-pyvista.py``)                         | 00:00.139 | 0.0 MB |
 +--------------------------------------------------------------------------------------------------------------+-----------+--------+

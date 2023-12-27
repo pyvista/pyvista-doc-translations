@@ -80,8 +80,8 @@ analysis) datasets that are useful for stress analysis.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>132258</td></tr>
     <tr><td>N Points</td><td>34185</td></tr>
@@ -92,7 +92,7 @@ analysis) datasets that are useful for stress analysis.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>Displacement</td><td>Points</td><td>float64</td><td>3</td><td>-5.000e-04</td><td>2.945e-05</td></tr>
     <tr><td>vonMises</td><td>Points</td><td>float64</td><td>1</td><td>1.316e+02</td><td>1.707e+09</td></tr>
@@ -134,10 +134,32 @@ Plot the dataset by part ID.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_001.png
-   :alt: fea hertzian contact pressure
-   :srcset: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_001.png
+        :alt: fea hertzian contact pressure
+        :srcset: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_001.vtksz
+
 
 
 
@@ -171,7 +193,7 @@ the plate.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>101</td></tr>
@@ -282,10 +304,32 @@ create a plot window and add the dataset to it.
 
 
 
-.. image-sg:: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_003.png
-   :alt: fea hertzian contact pressure
-   :srcset: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_003.png
+        :alt: fea hertzian contact pressure
+        :srcset: /examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/99-advanced/images/sphx_glr_fea-hertzian-contact-pressure_003.vtksz
+
 
 
 
@@ -294,7 +338,7 @@ create a plot window and add the dataset to it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.542 seconds)
+   **Total running time of the script:** (0 minutes 2.906 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_fea-hertzian-contact-pressure.py:

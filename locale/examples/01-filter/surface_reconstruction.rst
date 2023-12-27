@@ -62,12 +62,12 @@ Create a point cloud from a sphere and then reconstruct a surface from it.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
-    <tr><td>N Cells</td><td>840</td></tr>
-    <tr><td>N Points</td><td>422</td></tr>
+    <tr><td>N Cells</td><td>832</td></tr>
+    <tr><td>N Points</td><td>418</td></tr>
     <tr><td>N Strips</td><td>0</td></tr>
-    <tr><td>X Bounds</td><td>-4.995e-01, 4.989e-01</td></tr>
+    <tr><td>X Bounds</td><td>-4.989e-01, 4.995e-01</td></tr>
     <tr><td>Y Bounds</td><td>-4.986e-01, 4.986e-01</td></tr>
     <tr><td>Z Bounds</td><td>-4.985e-01, 4.985e-01</td></tr>
     <tr><td>N Arrays</td><td>0</td></tr>
@@ -97,10 +97,32 @@ Plot the point cloud and the reconstructed sphere.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_surface_reconstruction_001.png
-   :alt: surface reconstruction
-   :srcset: /examples/01-filter/images/sphx_glr_surface_reconstruction_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_surface_reconstruction_001.png
+        :alt: surface reconstruction
+        :srcset: /examples/01-filter/images/sphx_glr_surface_reconstruction_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_surface_reconstruction_001.vtksz
+
 
 
 
@@ -109,7 +131,7 @@ Plot the point cloud and the reconstructed sphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.385 seconds)
+   **Total running time of the script:** (0 minutes 0.349 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_surface_reconstruction.py:

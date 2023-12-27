@@ -214,7 +214,7 @@ Show the plot while enabling depth of field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 11.088 seconds)
+   **Total running time of the script:** (1 minutes 9.921 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_depth_of_field.py:

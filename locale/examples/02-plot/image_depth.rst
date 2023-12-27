@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_image_depth.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_image_depth.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -44,10 +44,32 @@ example mesh.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_image_depth_001.png
-   :alt: image depth
-   :srcset: /examples/02-plot/images/sphx_glr_image_depth_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_image_depth_001.png
+        :alt: image depth
+        :srcset: /examples/02-plot/images/sphx_glr_image_depth_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_image_depth_001.vtksz
+
 
 
 
@@ -125,7 +147,7 @@ Visualize depth images
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.573 seconds)
+   **Total running time of the script:** (0 minutes 0.660 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_image_depth.py:
@@ -133,6 +155,8 @@ Visualize depth images
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

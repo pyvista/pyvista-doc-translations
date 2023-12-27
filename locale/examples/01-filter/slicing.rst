@@ -68,10 +68,32 @@ volume. First, load up the volume and preview it:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_001.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_001.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_001.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -103,10 +125,32 @@ to gain further insight about the internals of the volume.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_002.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_002.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_002.vtksz
+
 
 
 
@@ -126,10 +170,32 @@ The orthogonal slices can be easily translated throughout the volume:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_003.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_003.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_003.vtksz
+
 
 
 
@@ -156,10 +222,32 @@ filter:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_004.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_004.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_004.vtksz
+
 
 
 
@@ -183,10 +271,32 @@ automated with the :func:`pyvista.DataSetFilters.slice_along_axis` filter:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_005.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_005.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_005.vtksz
+
 
 
 
@@ -235,8 +345,8 @@ the line low.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1</td></tr>
     <tr><td>N Points</td><td>15</td></tr>
@@ -248,7 +358,7 @@ the line low.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>arc_length</td><td>Points</td><td>float32</td><td>1</td><td>0.000e+00</td><td>3.605e+02</td></tr>
     </table>
@@ -277,8 +387,8 @@ Then run the filter
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>49100</td></tr>
     <tr><td>N Points</td><td>49692</td></tr>
@@ -290,7 +400,7 @@ Then run the filter
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>facies</b></td><td>Cells</td><td>int64</td><td>1</td><td>0.000e+00</td><td>4.000e+00</td></tr>
     </table>
@@ -314,10 +424,32 @@ Then run the filter
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_006.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_006.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_006.vtksz
+
 
 
 
@@ -377,10 +509,32 @@ Slice a mesh along a vector direction perpendicularly.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_007.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_007.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_007.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_007.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_007.vtksz
+
 
 
 
@@ -438,7 +592,7 @@ Use equation for circle since its about the Z-axis.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Information</th><th>Blocks</th></tr><tr><td>
+    <table style='width: 100%;'><tr><th>Information</th><th>Blocks</th></tr><tr><td>
     <table>
     <tr><th>MultiBlock</th><th>Values</th></tr>
     <tr><td>N Blocks</td><td>6</td></tr>
@@ -478,10 +632,32 @@ And now display it.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_slicing_008.png
-   :alt: slicing
-   :srcset: /examples/01-filter/images/sphx_glr_slicing_008.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_slicing_008.png
+        :alt: slicing
+        :srcset: /examples/01-filter/images/sphx_glr_slicing_008.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_slicing_008.vtksz
+
 
 
 
@@ -490,7 +666,7 @@ And now display it.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  20.153 seconds)
+   **Total running time of the script:** (0 minutes 16.528 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_slicing.py:

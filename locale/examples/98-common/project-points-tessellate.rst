@@ -55,7 +55,7 @@ Create a point cloud and project it to a plane.
 
 
     num_points = 100
-    point_cloud = np.random.random((num_points, 3))
+    point_cloud = np.random.default_rng().random((num_points, 3))
 
     # Define a plane
     origin = [0, 0, 0]
@@ -117,10 +117,32 @@ Visualize the Result
 
 
 
-.. image-sg:: /examples/98-common/images/sphx_glr_project-points-tessellate_001.png
-   :alt: project points tessellate
-   :srcset: /examples/98-common/images/sphx_glr_project-points-tessellate_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/98-common/images/sphx_glr_project-points-tessellate_001.png
+        :alt: project points tessellate
+        :srcset: /examples/98-common/images/sphx_glr_project-points-tessellate_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/98-common/images/sphx_glr_project-points-tessellate_001.vtksz
+
 
 
 
@@ -129,7 +151,7 @@ Visualize the Result
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.855 seconds)
+   **Total running time of the script:** (0 minutes 0.325 seconds)
 
 
 .. _sphx_glr_download_examples_98-common_project-points-tessellate.py:

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_poly-ray-trace.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_poly-ray-trace.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -29,10 +29,32 @@ Single line segment ray tracing for PolyData objects.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
-   :alt: poly ray trace
-   :srcset: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
+        :alt: poly ray trace
+        :srcset: /examples/01-filter/images/sphx_glr_poly-ray-trace_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_poly-ray-trace_001.vtksz
+
 
 
 
@@ -68,28 +90,25 @@ Single line segment ray tracing for PolyData objects.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.484 seconds)
+   **Total running time of the script:** (0 minutes 0.314 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_poly-ray-trace.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: poly-ray-trace.py <poly-ray-trace.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: poly-ray-trace.py <poly-ray-trace.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: poly-ray-trace.ipynb <poly-ray-trace.ipynb>`
+      :download:`Download Jupyter notebook: poly-ray-trace.ipynb <poly-ray-trace.ipynb>`
 
 
 .. only:: html

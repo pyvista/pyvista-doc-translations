@@ -29,10 +29,13 @@ by updating the scalars.
 
 
 
+
 .. image-sg:: /examples/02-plot/images/sphx_glr_moving_cmap_001.gif
    :alt: moving cmap
    :srcset: /examples/02-plot/images/sphx_glr_moving_cmap_001.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -112,7 +115,7 @@ by updating the scalars.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 14.780 seconds)
+   **Total running time of the script:** (0 minutes 9.494 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_moving_cmap.py:

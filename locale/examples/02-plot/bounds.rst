@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_bounds.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_bounds.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -61,10 +61,32 @@ In this plot we show the bounds for all axes by setting ``location='all'``.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_bounds_001.png
-   :alt: bounds
-   :srcset: /examples/02-plot/images/sphx_glr_bounds_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_bounds_001.png
+        :alt: bounds
+        :srcset: /examples/02-plot/images/sphx_glr_bounds_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_bounds_001.vtksz
+
 
 
 
@@ -97,15 +119,35 @@ hide the Z labels by setting ``show_zlabels=False``.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_bounds_002.png
-   :alt: bounds
-   :srcset: /examples/02-plot/images/sphx_glr_bounds_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_bounds_002.png
+        :alt: bounds
+        :srcset: /examples/02-plot/images/sphx_glr_bounds_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_bounds_002.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -151,10 +193,32 @@ single central gear.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_bounds_003.png
-   :alt: bounds
-   :srcset: /examples/02-plot/images/sphx_glr_bounds_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_bounds_003.png
+        :alt: bounds
+        :srcset: /examples/02-plot/images/sphx_glr_bounds_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_bounds_003.vtksz
+
 
 
 
@@ -163,28 +227,25 @@ single central gear.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.282 seconds)
+   **Total running time of the script:** (0 minutes 1.544 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_bounds.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: bounds.py <bounds.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: bounds.py <bounds.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: bounds.ipynb <bounds.ipynb>`
+      :download:`Download Jupyter notebook: bounds.ipynb <bounds.ipynb>`
 
 
 .. only:: html

@@ -85,10 +85,32 @@ First, let's show a plot without any anti-aliasing.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_001.png
-   :alt: anti aliasing
-   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_001.png
+        :alt: anti aliasing
+        :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_anti-aliasing_001.vtksz
+
 
 
 
@@ -122,10 +144,32 @@ expensive than SSAA and results in comparable image quality.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_002.png
-   :alt: anti aliasing
-   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_002.png
+        :alt: anti aliasing
+        :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_anti-aliasing_002.vtksz
+
 
 
 
@@ -150,10 +194,32 @@ You can increase the smoothing by increasing multi_samples
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_003.png
-   :alt: anti aliasing
-   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_003.png
+        :alt: anti aliasing
+        :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_anti-aliasing_003.vtksz
+
 
 
 
@@ -190,10 +256,32 @@ Note how the line width has been adjusted for consistency.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_004.png
-   :alt: anti aliasing
-   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_004.png
+        :alt: anti aliasing
+        :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_anti-aliasing_004.vtksz
+
 
 
 
@@ -227,10 +315,32 @@ Note how the line width has been adjusted for consistency.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
-   :alt: anti aliasing
-   :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
+        :alt: anti aliasing
+        :srcset: /examples/02-plot/images/sphx_glr_anti-aliasing_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_anti-aliasing_005.vtksz
+
 
 
 
@@ -279,7 +389,7 @@ E-2288G CPU @ 3.70GHz:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.040 seconds)
+   **Total running time of the script:** (0 minutes 1.510 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_anti-aliasing.py:

@@ -51,10 +51,32 @@ This example demonstrates how to remove elements from a scene.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_clear_001.png
-   :alt: clear
-   :srcset: /examples/02-plot/images/sphx_glr_clear_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_clear_001.png
+        :alt: clear
+        :srcset: /examples/02-plot/images/sphx_glr_clear_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_clear_001.vtksz
+
 
 
 
@@ -79,10 +101,32 @@ Clearing the entire plotting window:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_clear_002.png
-   :alt: clear
-   :srcset: /examples/02-plot/images/sphx_glr_clear_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_clear_002.png
+        :alt: clear
+        :srcset: /examples/02-plot/images/sphx_glr_clear_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_clear_002.vtksz
+
 
 
 
@@ -106,10 +150,32 @@ with that same name at a later time, it will replace the previous actor:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_clear_003.png
-   :alt: clear
-   :srcset: /examples/02-plot/images/sphx_glr_clear_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_clear_003.png
+        :alt: clear
+        :srcset: /examples/02-plot/images/sphx_glr_clear_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_clear_003.vtksz
+
 
 
 
@@ -118,7 +184,7 @@ with that same name at a later time, it will replace the previous actor:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.399 seconds)
+   **Total running time of the script:** (0 minutes 0.501 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_clear.py:

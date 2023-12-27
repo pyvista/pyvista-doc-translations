@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_create-spline.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_create-spline.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -117,7 +117,7 @@ segments they make.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>99</td></tr>
     <tr><td>N Points</td><td>100</td></tr>
@@ -145,10 +145,32 @@ segments they make.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_001.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_001.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_001.vtksz
+
 
 
 
@@ -183,10 +205,32 @@ creating a single PolyLine cell for all of the points
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_002.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_002.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_002.vtksz
+
 
 
 
@@ -228,10 +272,32 @@ Plot spline as a tube
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_003.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_003.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_003.vtksz
+
 
 
 
@@ -256,10 +322,32 @@ The spline can also be plotted as a plain line
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_004.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_004.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_004.vtksz
+
 
 
 
@@ -283,10 +371,32 @@ The radius of the tube can be modulated with scalars
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_005.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_005.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_005.vtksz
+
 
 
 
@@ -310,10 +420,32 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-spline_006.png
-   :alt: create spline
-   :srcset: /examples/00-load/images/sphx_glr_create-spline_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-spline_006.png
+        :alt: create spline
+        :srcset: /examples/00-load/images/sphx_glr_create-spline_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-spline_006.vtksz
+
 
 
 
@@ -322,7 +454,7 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.877 seconds)
+   **Total running time of the script:** (0 minutes 1.899 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-spline.py:
@@ -330,6 +462,8 @@ Take a look at the :func:`pyvista.PolyDataFilters.ribbon` filter.
 .. only:: html
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
+
+
 
 
     .. container:: sphx-glr-download sphx-glr-download-python

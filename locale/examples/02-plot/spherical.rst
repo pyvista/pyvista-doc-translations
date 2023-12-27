@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_spherical.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_spherical.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -124,10 +124,32 @@ Create a structured grid
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_001.png
-   :alt: spherical
-   :srcset: /examples/02-plot/images/sphx_glr_spherical_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_spherical_001.png
+        :alt: spherical
+        :srcset: /examples/02-plot/images/sphx_glr_spherical_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_spherical_001.vtksz
+
 
 
 
@@ -142,7 +164,7 @@ Vertical wind
 
 .. code-block:: default
 
-    w_vec = np.random.rand(*u_vec.shape)
+    w_vec = np.random.default_rng().random(u_vec.shape)
 
     wind_level = [RADIUS * 1.2]
 
@@ -186,10 +208,32 @@ Vertical wind
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_002.png
-   :alt: spherical
-   :srcset: /examples/02-plot/images/sphx_glr_spherical_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_spherical_002.png
+        :alt: spherical
+        :srcset: /examples/02-plot/images/sphx_glr_spherical_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_spherical_002.vtksz
+
 
 
 
@@ -236,10 +280,32 @@ Isurfaces of 3D data in spherical coordinates
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_spherical_003.png
-   :alt: spherical
-   :srcset: /examples/02-plot/images/sphx_glr_spherical_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_spherical_003.png
+        :alt: spherical
+        :srcset: /examples/02-plot/images/sphx_glr_spherical_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_spherical_003.vtksz
+
 
 
 
@@ -248,28 +314,25 @@ Isurfaces of 3D data in spherical coordinates
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.435 seconds)
+   **Total running time of the script:** (0 minutes 1.174 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_spherical.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: spherical.py <spherical.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: spherical.py <spherical.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: spherical.ipynb <spherical.ipynb>`
+      :download:`Download Jupyter notebook: spherical.ipynb <spherical.ipynb>`
 
 
 .. only:: html

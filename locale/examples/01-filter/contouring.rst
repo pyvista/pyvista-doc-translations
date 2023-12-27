@@ -68,10 +68,32 @@ Let's extract 1D iso-lines of a scalar field from a 2D surface mesh.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_001.png
-   :alt: contouring
-   :srcset: /examples/01-filter/images/sphx_glr_contouring_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_contouring_001.png
+        :alt: contouring
+        :srcset: /examples/01-filter/images/sphx_glr_contouring_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_contouring_001.vtksz
+
 
 
 
@@ -106,10 +128,32 @@ Let's extract 2D iso-surfaces of a scalar field from a 3D mesh.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_002.png
-   :alt: contouring
-   :srcset: /examples/01-filter/images/sphx_glr_contouring_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_contouring_002.png
+        :alt: contouring
+        :srcset: /examples/01-filter/images/sphx_glr_contouring_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_contouring_002.vtksz
+
 
 
 
@@ -186,10 +230,32 @@ Also make normal vectors
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_003.png
-   :alt: contouring
-   :srcset: /examples/01-filter/images/sphx_glr_contouring_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_contouring_003.png
+        :alt: contouring
+        :srcset: /examples/01-filter/images/sphx_glr_contouring_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_contouring_003.vtksz
+
 
 
 
@@ -215,10 +281,32 @@ Requires VTK version 9.3
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_contouring_004.png
-   :alt: contouring
-   :srcset: /examples/01-filter/images/sphx_glr_contouring_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_contouring_004.png
+        :alt: contouring
+        :srcset: /examples/01-filter/images/sphx_glr_contouring_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_contouring_004.vtksz
+
 
 
 
@@ -227,7 +315,7 @@ Requires VTK version 9.3
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 17.130 seconds)
+   **Total running time of the script:** (0 minutes 18.844 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_contouring.py:

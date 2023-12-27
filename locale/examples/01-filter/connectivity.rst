@@ -72,10 +72,32 @@ Load a dataset with noisy isosurfaces.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_001.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_001.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_001.vtksz
+
 
 
 
@@ -107,10 +129,32 @@ isosurface using the ``'largest'`` ``extraction_mode`` of  the
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_002.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_002.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_002.vtksz
+
 
 
 
@@ -180,10 +224,32 @@ Plot the noisy regions. For context, also plot the largest region.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_003.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_003.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_003.vtksz
+
 
 
 
@@ -257,10 +323,32 @@ Plot the labeled regions.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_004.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_004.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_004.vtksz
+
 
 
 
@@ -312,10 +400,32 @@ Flat regions have curvature close to zero.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_005.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_005.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_005.vtksz
+
 
 
 
@@ -387,10 +497,32 @@ Plot extracted regions.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_006.png
-   :alt: connectivity
-   :srcset: /examples/01-filter/images/sphx_glr_connectivity_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_connectivity_006.png
+        :alt: connectivity
+        :srcset: /examples/01-filter/images/sphx_glr_connectivity_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_connectivity_006.vtksz
+
 
 
 
@@ -399,7 +531,7 @@ Plot extracted regions.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 14.425 seconds)
+   **Total running time of the script:** (0 minutes 9.768 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_connectivity.py:

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_opacity.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_opacity.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -69,10 +69,32 @@ float between 0 and 1 which would enable you to see objects behind the mesh:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_001.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_001.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_001.vtksz
+
 
 
 
@@ -113,10 +135,32 @@ Opacity transfer functions are:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_002.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_002.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_002.vtksz
+
 
 
 
@@ -133,10 +177,32 @@ Opacity transfer functions are:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_003.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_003.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_003.vtksz
+
 
 
 
@@ -213,10 +279,32 @@ maximum of the scalar range:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_005.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_005.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_005.vtksz
+
 
 
 
@@ -270,10 +358,32 @@ And here we inspect the DICOM image with a few different opacity mappings:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_006.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_006.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_006.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_006.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_006.vtksz
+
 
 
 
@@ -306,8 +416,6 @@ using a second array to control the transparency of the mesh
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -351,10 +459,32 @@ variance will be completely transparent.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_opacity_007.png
-   :alt: opacity
-   :srcset: /examples/02-plot/images/sphx_glr_opacity_007.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_opacity_007.png
+        :alt: opacity
+        :srcset: /examples/02-plot/images/sphx_glr_opacity_007.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_opacity_007.vtksz
+
 
 
 
@@ -363,28 +493,25 @@ variance will be completely transparent.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.563 seconds)
+   **Total running time of the script:** (0 minutes 26.180 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_opacity.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: opacity.py <opacity.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: opacity.py <opacity.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: opacity.ipynb <opacity.ipynb>`
+      :download:`Download Jupyter notebook: opacity.ipynb <opacity.ipynb>`
 
 
 .. only:: html

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_read-parallel.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_read-parallel.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -65,8 +65,6 @@ looking at the directory containing the file we downloaded.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
@@ -87,12 +85,10 @@ looking at the directory containing the file we downloaded.
 
 .. rst-class:: sphx-glr-script-out
 
- Out:
-
  .. code-block:: none
 
 
-    ['000.vtu', '001.vtu', '003.vtu', '002.vtu']
+    ['002.vtu', '003.vtu', '000.vtu', '001.vtu']
 
 
 
@@ -119,8 +115,8 @@ together.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>39353</td></tr>
     <tr><td>N Points</td><td>48823</td></tr>
@@ -131,7 +127,7 @@ together.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>node_value</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
     <tr><td>simerr_type</td><td>Points</td><td>int32</td><td>1</td><td>0.000e+00</td><td>3.000e+00</td></tr>
@@ -159,10 +155,32 @@ Plot the pieced together mesh
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_001.png
-   :alt: read parallel
-   :srcset: /examples/00-load/images/sphx_glr_read-parallel_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_001.png
+        :alt: read parallel
+        :srcset: /examples/00-load/images/sphx_glr_read-parallel_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-parallel_001.vtksz
+
 
 
 
@@ -176,10 +194,32 @@ Plot the pieced together mesh
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_002.png
-   :alt: read parallel
-   :srcset: /examples/00-load/images/sphx_glr_read-parallel_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_read-parallel_002.png
+        :alt: read parallel
+        :srcset: /examples/00-load/images/sphx_glr_read-parallel_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_read-parallel_002.vtksz
+
 
 
 
@@ -188,28 +228,25 @@ Plot the pieced together mesh
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.869 seconds)
+   **Total running time of the script:** (0 minutes 1.444 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_read-parallel.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: read-parallel.py <read-parallel.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: read-parallel.py <read-parallel.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: read-parallel.ipynb <read-parallel.ipynb>`
+      :download:`Download Jupyter notebook: read-parallel.ipynb <read-parallel.ipynb>`
 
 
 .. only:: html

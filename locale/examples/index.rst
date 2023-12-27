@@ -619,7 +619,7 @@ in the :ref:`filters` module. Explore these demos to perform tasks such as:
 
 .. only:: html
 
-  .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.png
+  .. image:: /examples/01-filter/images/thumb/sphx_glr_collisions_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_01-filter_collisions.py`
@@ -1651,7 +1651,7 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
-  .. image:: /examples/02-plot/images/thumb/sphx_glr_gif_thumb.png
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_gif_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_02-plot_gif.py`
@@ -1702,7 +1702,7 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
-  .. image:: /examples/02-plot/images/thumb/sphx_glr_isovalue_thumb.png
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_isovalue_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_02-plot_isovalue.py`
@@ -1753,7 +1753,7 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
-  .. image:: /examples/02-plot/images/thumb/sphx_glr_linked_thumb.png
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_linked_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_02-plot_linked.py`
@@ -1838,7 +1838,7 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
-  .. image:: /examples/02-plot/images/thumb/sphx_glr_moving_cmap_thumb.png
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_moving_cmap_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_02-plot_moving_cmap.py`
@@ -1889,7 +1889,7 @@ plotting routines to perform tasks like:
 
 .. only:: html
 
-  .. image:: /examples/02-plot/images/thumb/sphx_glr_orbit_thumb.png
+  .. image:: /examples/02-plot/images/thumb/sphx_glr_orbit_thumb.gif
     :alt:
 
   :ref:`sphx_glr_examples_02-plot_orbit.py`

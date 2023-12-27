@@ -71,10 +71,32 @@ Create sphere glyphs
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_movie_glyphs_001.png
-   :alt: movie glyphs
-   :srcset: /examples/02-plot/images/sphx_glr_movie_glyphs_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_movie_glyphs_001.png
+        :alt: movie glyphs
+        :srcset: /examples/02-plot/images/sphx_glr_movie_glyphs_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_movie_glyphs_001.vtksz
+
 
 
 
@@ -123,10 +145,13 @@ Create the movie
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_movie_glyphs_002.png
+
+.. image-sg:: /examples/02-plot/images/sphx_glr_movie_glyphs_002.gif
    :alt: movie glyphs
-   :srcset: /examples/02-plot/images/sphx_glr_movie_glyphs_002.png
+   :srcset: /examples/02-plot/images/sphx_glr_movie_glyphs_002.gif
    :class: sphx-glr-single-img
+
+
 
 
 
@@ -135,7 +160,7 @@ Create the movie
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  9.340 seconds)
+   **Total running time of the script:** (0 minutes 15.270 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_movie_glyphs.py:

@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_01-filter_project-plane.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_01-filter_project-plane.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -24,12 +24,11 @@ Project to a Plane
 :class:`pyvista.PolyData` surfaces and pointsets can easily be projected to a
 plane defined by a normal and origin
 
-.. GENERATED FROM PYTHON SOURCE LINES 8-16
+.. GENERATED FROM PYTHON SOURCE LINES 8-15
 
 .. code-block:: default
 
 
-    # sphinx_gallery_thumbnail_number = 2
     import pyvista as pv
     from pyvista import examples
 
@@ -39,10 +38,32 @@ plane defined by a normal and origin
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_001.png
-   :alt: project plane
-   :srcset: /examples/01-filter/images/sphx_glr_project-plane_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_001.png
+        :alt: project plane
+        :srcset: /examples/01-filter/images/sphx_glr_project-plane_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_project-plane_001.vtksz
+
 
 
 
@@ -68,10 +89,32 @@ Project that surface to a plane underneath the surface
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_002.png
-   :alt: project plane
-   :srcset: /examples/01-filter/images/sphx_glr_project-plane_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_project-plane_002.png
+        :alt: project plane
+        :srcset: /examples/01-filter/images/sphx_glr_project-plane_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_project-plane_002.vtksz
+
 
 
 
@@ -80,28 +123,25 @@ Project that surface to a plane underneath the surface
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.268 seconds)
+   **Total running time of the script:** (0 minutes 1.068 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_project-plane.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: project-plane.py <project-plane.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: project-plane.py <project-plane.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: project-plane.ipynb <project-plane.ipynb>`
+      :download:`Download Jupyter notebook: project-plane.ipynb <project-plane.ipynb>`
 
 
 .. only:: html

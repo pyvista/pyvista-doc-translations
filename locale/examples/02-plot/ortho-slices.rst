@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_02-plot_ortho-slices.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_02-plot_ortho-slices.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -43,8 +43,6 @@ slices simultaneously.
 
 
 .. rst-class:: sphx-glr-script-out
-
- Out:
 
  .. code-block:: none
 
@@ -91,10 +89,32 @@ and ``z`` arguments.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
-   :alt: ortho slices
-   :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
+        :alt: ortho slices
+        :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_ortho-slices_001.vtksz
+
 
 
 
@@ -134,10 +154,32 @@ and ``z`` arguments.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
-   :alt: ortho slices
-   :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
+        :alt: ortho slices
+        :srcset: /examples/02-plot/images/sphx_glr_ortho-slices_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_ortho-slices_002.vtksz
+
 
 
 
@@ -146,28 +188,25 @@ and ``z`` arguments.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.094 seconds)
+   **Total running time of the script:** (0 minutes 3.101 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_ortho-slices.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: ortho-slices.py <ortho-slices.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: ortho-slices.py <ortho-slices.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: ortho-slices.ipynb <ortho-slices.ipynb>`
+      :download:`Download Jupyter notebook: ortho-slices.ipynb <ortho-slices.ipynb>`
 
 
 .. only:: html

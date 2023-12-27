@@ -133,7 +133,7 @@ mesh-generating/altering code.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.238 seconds)
+   **Total running time of the script:** (0 minutes 0.235 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_multi-slider-widget.py:

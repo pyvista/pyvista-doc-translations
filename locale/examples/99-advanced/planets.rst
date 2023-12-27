@@ -228,7 +228,7 @@ Here we plot Venus with and without its atmosphere.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (2 minutes 34.590 seconds)
+   **Total running time of the script:** (2 minutes 33.111 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_planets.py:

@@ -75,10 +75,32 @@ To demonstrate, we will first extract the edges around a sample CAD model:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_001.png
-   :alt: extract edges
-   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_001.png
+        :alt: extract edges
+        :srcset: /examples/01-filter/images/sphx_glr_extract-edges_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extract-edges_001.vtksz
+
 
 
 
@@ -107,10 +129,32 @@ the cow mesh example:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_002.png
-   :alt: extract edges
-   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_002.png
+        :alt: extract edges
+        :srcset: /examples/01-filter/images/sphx_glr_extract-edges_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extract-edges_002.vtksz
+
 
 
 
@@ -140,7 +184,7 @@ extract the open edges on a :class:`pyvista.PolyData` mesh.
 
     <div class="output_subarea output_html rendered_html output_result">
 
-    <table>
+    <table style='width: 100%;'>
     <tr><th>PolyData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>69451</td></tr>
     <tr><td>N Points</td><td>35947</td></tr>
@@ -199,10 +243,32 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_003.png
-   :alt: extract edges
-   :srcset: /examples/01-filter/images/sphx_glr_extract-edges_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_extract-edges_003.png
+        :alt: extract edges
+        :srcset: /examples/01-filter/images/sphx_glr_extract-edges_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_extract-edges_003.vtksz
+
 
 
 
@@ -211,7 +277,7 @@ And we can extract those edges with the ``boundary_edges`` option of
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.124 seconds)
+   **Total running time of the script:** (0 minutes 2.001 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_extract-edges.py:

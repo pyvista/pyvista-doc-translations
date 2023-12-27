@@ -58,7 +58,7 @@ Wrap a point cloud composed of random points from numpy
 
     import pyvista as pv
 
-    points = np.random.random((30, 3))
+    points = np.random.default_rng().random((30, 3))
     cloud = pv.wrap(points)
     pv.plot(
         cloud,
@@ -108,7 +108,7 @@ Wrap an instance of Trimesh
 
  .. code-block:: none
 
-    PolyData (0x7f875cd93340)
+    PolyData (0x7fb94d625ba0)
       N Cells:    1
       N Points:   3
       N Strips:   0
@@ -150,7 +150,7 @@ Wrap an instance of vtk.vtkPolyData
 
  .. code-block:: none
 
-    PolyData (0x7f875a308c40)
+    PolyData (0x7fb94af66f80)
       N Cells:    1
       N Points:   1
       N Strips:   0
@@ -165,7 +165,7 @@ Wrap an instance of vtk.vtkPolyData
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.635 seconds)
+   **Total running time of the script:** (0 minutes 0.608 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_wrap-trimesh.py:

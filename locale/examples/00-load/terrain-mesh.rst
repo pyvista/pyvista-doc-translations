@@ -72,8 +72,8 @@ Download a gridded topography surface (DEM)
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>ImageData</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>1677401</td></tr>
     <tr><td>N Points</td><td>1680000</td></tr>
@@ -86,7 +86,7 @@ Download a gridded topography surface (DEM)
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>7.339e+02</td><td>2.787e+03</td></tr>
     </table>
@@ -114,10 +114,32 @@ the :func:`pyvista.ImageDataFilters.extract_subset` filter:
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
-   :alt: terrain mesh
-   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
+        :alt: terrain mesh
+        :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_terrain-mesh_001.vtksz
+
 
 
 
@@ -143,8 +165,8 @@ make a 3D surface of that DEM:
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>StructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>6400</td></tr>
     <tr><td>N Points</td><td>6561</td></tr>
@@ -156,7 +178,7 @@ make a 3D surface of that DEM:
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>scalar1of1</b></td><td>Points</td><td>float64</td><td>1</td><td>1.441e+03</td><td>2.769e+03</td></tr>
     </table>
@@ -176,10 +198,32 @@ make a 3D surface of that DEM:
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
-   :alt: terrain mesh
-   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
+        :alt: terrain mesh
+        :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_terrain-mesh_002.vtksz
+
 
 
 
@@ -218,8 +262,8 @@ Once we have those structured coordinates, we can create a
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>StructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>70400</td></tr>
     <tr><td>N Points</td><td>78732</td></tr>
@@ -231,7 +275,7 @@ Once we have those structured coordinates, we can create a
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td><b>Elevation</b></td><td>Points</td><td>float64</td><td>1</td><td>9.364e+02</td><td>2.744e+03</td></tr>
     </table>
@@ -255,10 +299,32 @@ Once we have those structured coordinates, we can create a
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
-   :alt: terrain mesh
-   :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
+        :alt: terrain mesh
+        :srcset: /examples/00-load/images/sphx_glr_terrain-mesh_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_terrain-mesh_003.vtksz
+
 
 
 
@@ -267,7 +333,7 @@ Once we have those structured coordinates, we can create a
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.547 seconds)
+   **Total running time of the script:** (0 minutes 1.598 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_terrain-mesh.py:

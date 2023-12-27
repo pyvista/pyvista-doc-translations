@@ -80,10 +80,32 @@ This is spatially referenced such that the grid is 20 by 5 by 10
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
-   :alt: create uniform grid
-   :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
+        :alt: create uniform grid
+        :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-uniform-grid_001.vtksz
+
 
 
 
@@ -125,10 +147,32 @@ setting the grid dimensions upon initialization.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
-   :alt: create uniform grid
-   :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
+        :alt: create uniform grid
+        :srcset: /examples/00-load/images/sphx_glr_create-uniform-grid_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_create-uniform-grid_002.vtksz
+
 
 
 
@@ -137,7 +181,7 @@ setting the grid dimensions upon initialization.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.368 seconds)
+   **Total running time of the script:** (0 minutes 0.892 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_create-uniform-grid.py:

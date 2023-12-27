@@ -32,10 +32,32 @@ Inspired by `VTK Animation Examples <https://examples.vtk.org/site/Python/Utilit
 
 
 
-.. image-sg:: /examples/03-widgets/images/sphx_glr_animation_001.png
-   :alt: animation
-   :srcset: /examples/03-widgets/images/sphx_glr_animation_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/03-widgets/images/sphx_glr_animation_001.png
+        :alt: animation
+        :srcset: /examples/03-widgets/images/sphx_glr_animation_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/03-widgets/images/sphx_glr_animation_001.vtksz
+
 
 
 
@@ -64,7 +86,7 @@ Inspired by `VTK Animation Examples <https://examples.vtk.org/site/Python/Utilit
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 0.789 seconds)
+   **Total running time of the script:** (0 minutes 0.188 seconds)
 
 
 .. _sphx_glr_download_examples_03-widgets_animation.py:

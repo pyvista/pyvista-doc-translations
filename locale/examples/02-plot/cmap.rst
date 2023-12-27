@@ -131,10 +131,32 @@ Simply pass the colormap to the plotting routine.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_001.png
-   :alt: cmap
-   :srcset: /examples/02-plot/images/sphx_glr_cmap_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_cmap_001.png
+        :alt: cmap
+        :srcset: /examples/02-plot/images/sphx_glr_cmap_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_cmap_001.vtksz
+
 
 
 
@@ -155,10 +177,32 @@ to PyVista.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_002.png
-   :alt: cmap
-   :srcset: /examples/02-plot/images/sphx_glr_cmap_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_cmap_002.png
+        :alt: cmap
+        :srcset: /examples/02-plot/images/sphx_glr_cmap_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_cmap_002.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
@@ -185,10 +229,32 @@ approach divides up the colormap into 5 equal parts.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_003.png
-   :alt: cmap
-   :srcset: /examples/02-plot/images/sphx_glr_cmap_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_cmap_003.png
+        :alt: cmap
+        :srcset: /examples/02-plot/images/sphx_glr_cmap_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_cmap_003.vtksz
+
 
 
 
@@ -216,10 +282,32 @@ plotter along with the colormap
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_004.png
-   :alt: cmap
-   :srcset: /examples/02-plot/images/sphx_glr_cmap_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_cmap_004.png
+        :alt: cmap
+        :srcset: /examples/02-plot/images/sphx_glr_cmap_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_cmap_004.vtksz
+
 
 
 
@@ -288,10 +376,32 @@ must have Colorcet installed in your Python environment:
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_cmap_005.png
-   :alt: cmap
-   :srcset: /examples/02-plot/images/sphx_glr_cmap_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_cmap_005.png
+        :alt: cmap
+        :srcset: /examples/02-plot/images/sphx_glr_cmap_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_cmap_005.vtksz
+
 
 
 
@@ -300,7 +410,7 @@ must have Colorcet installed in your Python environment:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.340 seconds)
+   **Total running time of the script:** (0 minutes 12.504 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_cmap.py:

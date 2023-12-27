@@ -104,10 +104,32 @@ dataset
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_001.png
-   :alt: using filters
-   :srcset: /examples/01-filter/images/sphx_glr_using-filters_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_001.png
+        :alt: using filters
+        :srcset: /examples/01-filter/images/sphx_glr_using-filters_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_using-filters_001.vtksz
+
 
 
 
@@ -153,17 +175,39 @@ What about other filters? Let's collect a few filter results and compare them:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_002.png
-   :alt: using filters
-   :srcset: /examples/01-filter/images/sphx_glr_using-filters_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_002.png
+        :alt: using filters
+        :srcset: /examples/01-filter/images/sphx_glr_using-filters_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_using-filters_002.vtksz
+
 
 
 .. rst-class:: sphx-glr-script-out
 
  .. code-block:: none
 
-    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/data_set.py:2321: UserWarning: No vector-like data to use for orient. orient will be set to False.
+    /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/pyvista/core/filters/data_set.py:2320: UserWarning: No vector-like data to use for orient. orient will be set to False.
       warnings.warn("No vector-like data to use for orient. orient will be set to False.")
 
 
@@ -217,10 +261,32 @@ And to view this filtered data, simply call the ``plot`` method
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_003.png
-   :alt: using filters
-   :srcset: /examples/01-filter/images/sphx_glr_using-filters_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_using-filters_003.png
+        :alt: using filters
+        :srcset: /examples/01-filter/images/sphx_glr_using-filters_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_using-filters_003.vtksz
+
 
 
 
@@ -229,7 +295,7 @@ And to view this filtered data, simply call the ``plot`` method
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 9.745 seconds)
+   **Total running time of the script:** (0 minutes 9.615 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_using-filters.py:

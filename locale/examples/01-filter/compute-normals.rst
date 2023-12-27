@@ -57,10 +57,32 @@ method.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_001.png
-   :alt: compute normals
-   :srcset: /examples/01-filter/images/sphx_glr_compute-normals_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_001.png
+        :alt: compute normals
+        :srcset: /examples/01-filter/images/sphx_glr_compute-normals_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-normals_001.vtksz
+
 
 
 
@@ -93,10 +115,32 @@ exaggerated topographic relief.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_002.png
-   :alt: compute normals
-   :srcset: /examples/01-filter/images/sphx_glr_compute-normals_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_002.png
+        :alt: compute normals
+        :srcset: /examples/01-filter/images/sphx_glr_compute-normals_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-normals_002.vtksz
+
 
 
 
@@ -133,10 +177,32 @@ the normals along its cell faces, and extract the faces that face upward.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_003.png
-   :alt: compute normals
-   :srcset: /examples/01-filter/images/sphx_glr_compute-normals_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-normals_003.png
+        :alt: compute normals
+        :srcset: /examples/01-filter/images/sphx_glr_compute-normals_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-normals_003.vtksz
+
 
 
 
@@ -145,7 +211,7 @@ the normals along its cell faces, and extract the faces that face upward.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  17.477 seconds)
+   **Total running time of the script:** (0 minutes 51.532 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-normals.py:

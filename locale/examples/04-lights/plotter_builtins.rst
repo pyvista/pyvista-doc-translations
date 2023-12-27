@@ -89,10 +89,32 @@ Add a white terrain to the scene:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
-   :alt: plotter builtins
-   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
+        :alt: plotter builtins
+        :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_plotter_builtins_001.vtksz
+
 
 
 
@@ -120,10 +142,32 @@ especially clear when exploring the figures interactively.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
-   :alt: plotter builtins
-   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
+        :alt: plotter builtins
+        :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_plotter_builtins_002.vtksz
+
 
 
 
@@ -186,10 +230,32 @@ larger regions in shadow.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
-   :alt: plotter builtins
-   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
+        :alt: plotter builtins
+        :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_plotter_builtins_003.vtksz
+
 
 
 
@@ -219,10 +285,32 @@ shadows due to the mountaintop.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
-   :alt: plotter builtins
-   :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
+        :alt: plotter builtins
+        :srcset: /examples/04-lights/images/sphx_glr_plotter_builtins_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_plotter_builtins_004.vtksz
+
 
 
 
@@ -231,7 +319,7 @@ shadows due to the mountaintop.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.413 seconds)
+   **Total running time of the script:** (0 minutes 7.485 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_plotter_builtins.py:

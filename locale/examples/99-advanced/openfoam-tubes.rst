@@ -330,7 +330,7 @@ it using :func:`add_volume() <pyvista.Plotter.add_volume>`
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 10.561 seconds)
+   **Total running time of the script:** (0 minutes 10.067 seconds)
 
 
 .. _sphx_glr_download_examples_99-advanced_openfoam-tubes.py:

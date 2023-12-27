@@ -213,10 +213,32 @@ volumetric bodies left over in one dataset? Take this for example:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_001.png
-   :alt: compute volume
-   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_001.png
+        :alt: compute volume
+        :srcset: /examples/01-filter/images/sphx_glr_compute-volume_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-volume_001.vtksz
+
 
 
 
@@ -292,10 +314,32 @@ specifying the scalar range of interest.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_002.png
-   :alt: compute volume
-   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_002.png
+        :alt: compute volume
+        :srcset: /examples/01-filter/images/sphx_glr_compute-volume_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-volume_002.vtksz
+
 
 
 
@@ -358,10 +402,32 @@ volume in the example above:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_003.png
-   :alt: compute volume
-   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_003.png
+        :alt: compute volume
+        :srcset: /examples/01-filter/images/sphx_glr_compute-volume_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-volume_003.vtksz
+
 
 
 
@@ -480,10 +546,32 @@ And visualize all the different volumes:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_004.png
-   :alt: compute volume
-   :srcset: /examples/01-filter/images/sphx_glr_compute-volume_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_compute-volume_004.png
+        :alt: compute volume
+        :srcset: /examples/01-filter/images/sphx_glr_compute-volume_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_compute-volume_004.vtksz
+
 
 
 
@@ -492,7 +580,7 @@ And visualize all the different volumes:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 9.744 seconds)
+   **Total running time of the script:** (0 minutes 4.230 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_compute-volume.py:

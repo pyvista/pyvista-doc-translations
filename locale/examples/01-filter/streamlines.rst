@@ -117,10 +117,32 @@ was measured with low resolution, many streamlines travel outside the artery.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_001.png
-   :alt: streamlines
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_001.png
+        :alt: streamlines
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_001.vtksz
+
 
 
 
@@ -169,10 +191,32 @@ Here is another example of blood flow:
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_002.png
-   :alt: streamlines
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_002.png
+        :alt: streamlines
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_002.vtksz
+
 
 
 
@@ -240,10 +284,32 @@ Plot streamlines colored by the time along the streamlines.
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_003.png
-   :alt: streamlines
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_003.png
+        :alt: streamlines
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_003.vtksz
+
 
 
 
@@ -299,10 +365,32 @@ Kitchen
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_004.png
-   :alt: streamlines
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_004.png
+        :alt: streamlines
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_004.vtksz
+
 
 
 
@@ -364,10 +452,32 @@ Custom 3D Vector Field
 
 
 
-.. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_005.png
-   :alt: streamlines
-   :srcset: /examples/01-filter/images/sphx_glr_streamlines_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/01-filter/images/sphx_glr_streamlines_005.png
+        :alt: streamlines
+        :srcset: /examples/01-filter/images/sphx_glr_streamlines_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/01-filter/images/sphx_glr_streamlines_005.vtksz
+
 
 
 
@@ -376,7 +486,7 @@ Custom 3D Vector Field
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  11.885 seconds)
+   **Total running time of the script:** (0 minutes 21.555 seconds)
 
 
 .. _sphx_glr_download_examples_01-filter_streamlines.py:

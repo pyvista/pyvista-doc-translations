@@ -62,8 +62,8 @@ of points is less than 32 since all the points are joined in the center.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>4</td></tr>
     <tr><td>N Points</td><td>18</td></tr>
@@ -74,7 +74,7 @@ of points is less than 32 since all the points are joined in the center.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>sample_point_scalars</td><td>Points</td><td>int64</td><td>1</td><td>1.000e+00</td><td>2.860e+02</td></tr>
     <tr><td>VTKorigID</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>9.000e+01</td></tr>
@@ -107,10 +107,32 @@ dataset. First, let's just plot some simple point scalars.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_001.png
-   :alt: point cell scalars
-   :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_001.png
+        :alt: point cell scalars
+        :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_point-cell-scalars_001.vtksz
+
 
 
 
@@ -134,10 +156,32 @@ index.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_002.png
-   :alt: point cell scalars
-   :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_002.png
+        :alt: point cell scalars
+        :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_point-cell-scalars_002.vtksz
+
 
 
 
@@ -173,8 +217,8 @@ points.
 .. raw:: html
 
     <div class="output_subarea output_html rendered_html output_result">
-    <table><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
-    <table>
+    <table style='width: 100%;'><tr><th>Header</th><th>Data Arrays</th></tr><tr><td>
+    <table style='width: 100%;'>
     <tr><th>UnstructuredGrid</th><th>Information</th></tr>
     <tr><td>N Cells</td><td>4</td></tr>
     <tr><td>N Points</td><td>32</td></tr>
@@ -185,7 +229,7 @@ points.
     </table>
 
     </td><td>
-    <table>
+    <table style='width: 100%;'>
     <tr><th>Name</th><th>Field</th><th>Type</th><th>N Comp</th><th>Min</th><th>Max</th></tr>
     <tr><td>sample_point_scalars</td><td>Points</td><td>int64</td><td>1</td><td>1.000e+00</td><td>2.860e+02</td></tr>
     <tr><td>VTKorigID</td><td>Points</td><td>int64</td><td>1</td><td>0.000e+00</td><td>9.000e+01</td></tr>
@@ -232,10 +276,32 @@ finite element solutions.
 
 
 
-.. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_003.png
-   :alt: point cell scalars
-   :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/02-plot/images/sphx_glr_point-cell-scalars_003.png
+        :alt: point cell scalars
+        :srcset: /examples/02-plot/images/sphx_glr_point-cell-scalars_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/02-plot/images/sphx_glr_point-cell-scalars_003.vtksz
+
 
 
 
@@ -244,7 +310,7 @@ finite element solutions.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.875 seconds)
+   **Total running time of the script:** (0 minutes 0.849 seconds)
 
 
 .. _sphx_glr_download_examples_02-plot_point-cell-scalars.py:

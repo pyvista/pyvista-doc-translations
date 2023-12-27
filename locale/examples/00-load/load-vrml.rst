@@ -10,7 +10,7 @@
     .. note::
         :class: sphx-glr-download-link-note
 
-        Click :ref:`here <sphx_glr_download_examples_00-load_load-vrml.py>`
+        :ref:`Go to the end <sphx_glr_download_examples_00-load_load-vrml.py>`
         to download the full example code
 
 .. rst-class:: sphx-glr-example-title
@@ -59,10 +59,32 @@ Set up the plotter and import VRML file.
 
 
 
-.. image-sg:: /examples/00-load/images/sphx_glr_load-vrml_001.png
-   :alt: load vrml
-   :srcset: /examples/00-load/images/sphx_glr_load-vrml_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/00-load/images/sphx_glr_load-vrml_001.png
+        :alt: load vrml
+        :srcset: /examples/00-load/images/sphx_glr_load-vrml_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/00-load/images/sphx_glr_load-vrml_001.vtksz
+
 
 
 
@@ -71,28 +93,25 @@ Set up the plotter and import VRML file.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.618 seconds)
+   **Total running time of the script:** (0 minutes 0.640 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_load-vrml.py:
 
+.. only:: html
 
-.. only :: html
-
- .. container:: sphx-glr-footer
-    :class: sphx-glr-footer-example
+  .. container:: sphx-glr-footer sphx-glr-footer-example
 
 
 
-  .. container:: sphx-glr-download sphx-glr-download-python
 
-     :download:`Download Python source code: load-vrml.py <load-vrml.py>`
+    .. container:: sphx-glr-download sphx-glr-download-python
 
+      :download:`Download Python source code: load-vrml.py <load-vrml.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-  .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-     :download:`Download Jupyter notebook: load-vrml.ipynb <load-vrml.ipynb>`
+      :download:`Download Jupyter notebook: load-vrml.ipynb <load-vrml.ipynb>`
 
 
 .. only:: html

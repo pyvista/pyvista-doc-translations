@@ -84,7 +84,7 @@ temporary file for this example.
  .. code-block:: none
 
 
-    '/tmp/tmpojylb06_.vtp'
+    '/tmp/tmpnk66dcyq.vtp'
 
 
 
@@ -158,7 +158,7 @@ files. Reading in a ``.vtp``` file uses the :class:`pyvista.XMLPolyDataReader`.
  .. code-block:: none
 
 
-    XMLPolyDataReader('/tmp/tmpojylb06_.vtp')
+    XMLPolyDataReader('/tmp/tmpnk66dcyq.vtp')
 
 
 
@@ -432,7 +432,7 @@ Put iteration value in top left
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 4.878 seconds)
+   **Total running time of the script:** (0 minutes 4.227 seconds)
 
 
 .. _sphx_glr_download_examples_00-load_reader.py:

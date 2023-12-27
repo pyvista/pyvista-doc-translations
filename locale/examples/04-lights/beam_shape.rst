@@ -51,10 +51,32 @@ Consider two hemispheres:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_001.png
-   :alt: beam shape
-   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_001.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_001.png
+        :alt: beam shape
+        :srcset: /examples/04-lights/images/sphx_glr_beam_shape_001.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_beam_shape_001.vtksz
+
 
 
 
@@ -91,10 +113,32 @@ oriented along their centers:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_002.png
-   :alt: beam shape
-   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_002.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_002.png
+        :alt: beam shape
+        :srcset: /examples/04-lights/images/sphx_glr_beam_shape_002.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_beam_shape_002.vtksz
+
 
 
 
@@ -133,10 +177,32 @@ Now let's change the light to a positional light (but not a spotlight):
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_003.png
-   :alt: beam shape
-   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_003.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_003.png
+        :alt: beam shape
+        :srcset: /examples/04-lights/images/sphx_glr_beam_shape_003.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_beam_shape_003.vtksz
+
 
 
 
@@ -190,10 +256,32 @@ the center of each: one spotlight, one merely positional.
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_004.png
-   :alt: beam shape
-   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_004.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_004.png
+        :alt: beam shape
+        :srcset: /examples/04-lights/images/sphx_glr_beam_shape_004.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_beam_shape_004.vtksz
+
 
 
 
@@ -241,10 +329,32 @@ sharpness:
 
 
 
-.. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_005.png
-   :alt: beam shape
-   :srcset: /examples/04-lights/images/sphx_glr_beam_shape_005.png
-   :class: sphx-glr-single-img
+
+
+
+
+.. tab-set::
+
+
+
+   .. tab-item:: Static Scene
+
+
+
+            
+     .. image-sg:: /examples/04-lights/images/sphx_glr_beam_shape_005.png
+        :alt: beam shape
+        :srcset: /examples/04-lights/images/sphx_glr_beam_shape_005.png
+        :class: sphx-glr-single-img
+     
+
+
+   .. tab-item:: Interactive Scene
+
+
+
+       .. offlineviewer:: /home/runner/work/pyvista-doc-translations/pyvista-doc-translations/pyvista/doc/source/examples/04-lights/images/sphx_glr_beam_shape_005.vtksz
+
 
 
 
@@ -258,7 +368,7 @@ exponent 5 is visibly focused along the axis of the light.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.768 seconds)
+   **Total running time of the script:** (0 minutes 1.285 seconds)
 
 
 .. _sphx_glr_download_examples_04-lights_beam_shape.py:
