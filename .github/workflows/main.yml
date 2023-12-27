@@ -58,8 +58,6 @@ jobs:
         Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
         sleep 3
         set +x
-        rm ./locale/examples/*/*.py
-        mv ./locale/examples ./pyvista/doc/source
         cd pyvista
         make -C doc html SPHINXOPTS="-w build_errors.txt -N"
         cd ../
