@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2023, The PyVista Developers
+# Copyright (C) 2017-2024, The PyVista Developers
 # This file is distributed under the same license as the PyVista package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-31 01:28+0000\n"
+"POT-Creation-Date: 2024-01-08 01:27+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (United States) (https://app.transifex.com/tkoyama010/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -3644,7 +3644,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_mesh:361
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_point_labels:113
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:141
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_points:35
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -3882,7 +3882,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
 #: pyvista.plotting.text.Text:29
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:56
+#: pyvista.plotting.text.TextProperty:62
 #: ../../pyvista/pyvista/plotting/texture.pydocstring of
 #: pyvista.Texture.dimensions:17
 #: ../../pyvista/pyvista/plotting/texture.pydocstring of
@@ -8966,7 +8966,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/scalar_bars.pydocstring of
 #: pyvista.plotting.scalar_bars.ScalarBars.remove_scalar_bar:23
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:52
+#: pyvista.plotting.text.TextProperty:42
 #: ../../pyvista/pyvista/plotting/utilities/regression.pydocstring of
 #: pyvista.plotting.utilities.regression.compare_images:24
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
@@ -18364,6 +18364,10 @@ msgstr ""
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:34
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:57
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:106
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:117
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_scalar_labels:16
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
@@ -60001,7 +60005,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.show_bounds:43
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:53
+#: pyvista.plotting.text.TextProperty:43
 msgid ""
 "**bold** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:True`"
@@ -60233,7 +60237,94 @@ msgid "Skip adding the visibility filter."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:107
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:33
+msgid "**justification_horizontal** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:99
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.TextProperty.justification_horizontal:9
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:32
+msgid ""
+"Text's horizontal justification. Should be either \"left\", \"center\" or "
+"\"right\"."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:103
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:114
+msgid ""
+"If the justification is not default, the shape will be out of alignment with"
+" the label. If you use other than default, Please use the background color. "
+"See: https://github.com/pyvista/pyvista/pull/5407"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:118
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:37
+msgid "**justification_vertical** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_labels:110
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.TextProperty.justification_vertical:9
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:36
+msgid "Text's vertical justification. Should be either \"bottom\", \"center\" or \"top\"."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:121
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:46
+msgid "**background_color** : :obj:`pyvista.Color`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:120
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:123
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:45
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:58
+msgid "pyvista.Color, optional"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:121
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.TextProperty.background_color:2
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.TextProperty.background_color:9
+msgid "Background color of text's property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:124
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.plotting.text.TextProperty:59
+msgid "**background_opacity** : :obj:`pyvista.Color`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:124
+#: ../../pyvista/pyvista/plotting/text.pydocstring of
+#: pyvista.TextProperty.background_opacity:2
+msgid "Background opacity of text's property."
+msgstr ""
+
+#: ../../pyvista/pyvista/plotting/plotter.pydocstring of
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:138
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_scalar_labels:41
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
@@ -60242,7 +60333,7 @@ msgid ":obj:`vtk.vtkActor2D`"
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
-#: pyvista.plotting.plotter.BasePlotter.add_point_labels:101
+#: pyvista.plotting.plotter.BasePlotter.add_point_labels:129
 #: ../../pyvista/pyvista/plotting/plotter.pydocstring of
 #: pyvista.plotting.plotter.BasePlotter.add_point_scalar_labels:29
 msgid "VTK label actor.  Can be used to change properties of the labels."
@@ -71002,29 +71093,13 @@ msgid "If enable the shadow."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:33
-msgid "**justification_horizontal** : :class:`python:str`, :obj:`optional`"
+#: pyvista.plotting.text.TextProperty:46
+msgid "Background color of text."
 msgstr ""
 
 #: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.TextProperty.justification_horizontal:9
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:32
-msgid ""
-"Text's horizontal justification. Should be either \"left\", \"center\" or "
-"\"right\"."
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:37
-msgid "**justification_vertical** : :class:`python:str`, :obj:`optional`"
-msgstr ""
-
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.TextProperty.justification_vertical:9
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.plotting.text.TextProperty:36
-msgid "Text's vertical justification. Should be either \"bottom\", \"center\" or \"top\"."
+#: pyvista.plotting.text.TextProperty:49
+msgid "Background opacity of text."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:3
@@ -71062,23 +71137,9 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.TextProperty.background_color:2
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.TextProperty.background_color:9
-msgid "Background color of text's property."
-msgstr ""
-
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
 msgid ""
 ":py:obj:`TextProperty.background_opacity "
 "<pyvista.TextProperty.background_opacity>`\\"
-msgstr ""
-
-#: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
-#: ../../pyvista/pyvista/plotting/text.pydocstring of
-#: pyvista.TextProperty.background_opacity:2
-msgid "Background opacity of text's property."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/plotting/_autosummary/pyvista.TextProperty.rst:233:<autosummary>:1
