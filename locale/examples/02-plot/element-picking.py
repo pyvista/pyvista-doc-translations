@@ -18,9 +18,10 @@ These types are captured in the :class:`pyvista.plotting.opts.ElementType` enum 
 
 """
 
+from pyvista.plotting.opts import ElementType
+
 # sphinx_gallery_thumbnail_number = 1
 import pyvista as pv
-from pyvista.plotting.opts import ElementType
 
 ###############################################################################
 # Pick Face on Voxel Cell

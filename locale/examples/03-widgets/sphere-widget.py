@@ -120,9 +120,9 @@ def get_colors(n):
 
     import matplotlib
 
-    cycler = matplotlib.rcParams['axes.prop_cycle']
+    cycler = matplotlib.rcParams["axes.prop_cycle"]
     colors = cycle(cycler)
-    colors = [next(colors)['color'] for i in range(n)]
+    colors = [next(colors)["color"] for i in range(n)]
     return colors
 
 
@@ -133,7 +133,9 @@ y = np.linspace(ymin, ymax, num=25)
 xx, yy, zz = np.meshgrid(x, y, [0])
 
 # Make sure boundary conditions exist
-boundaries = np.array([[xmin, ymin, 0], [xmin, ymax, 0], [xmax, ymin, 0], [xmax, ymax, 0]])
+boundaries = np.array(
+    [[xmin, ymin, 0], [xmin, ymax, 0], [xmax, ymin, 0], [xmax, ymax, 0]]
+)
 
 # Create the PyVista mesh to hold this grid
 surf = pv.StructuredGrid(xx, yy, zz)
@@ -147,8 +149,8 @@ points = np.array([[33, 25, 45], [70, 80, 13], [51, 57, 10], [25, 69, 20]])
 def update_surface(point, i):
     points[i] = point
     tp = np.vstack((points, boundaries))
-    zz = griddata(tp[:, 0:2], tp[:, 2], (xx[:, :, 0], yy[:, :, 0]), method='cubic')
-    surf.points[:, -1] = zz.ravel(order='F')
+    zz = griddata(tp[:, 0:2], tp[:, 2], (xx[:, :, 0], yy[:, :, 0]), method="cubic")
+    surf.points[:, -1] = zz.ravel(order="F")
     return
 
 

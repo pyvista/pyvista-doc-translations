@@ -8,8 +8,10 @@ Bring more of the power of trame to the jupyter view.
 """
 import asyncio
 
+from pyvista.trame.ui.vuetify2 import (button, divider, select, slider,
+                                       text_field)
+
 import pyvista as pv
-from pyvista.trame.ui.vuetify2 import button, divider, select, slider, text_field
 
 ###############################################################################
 # Let's first create the menu items we want to add to the trame's toolbar.
@@ -22,11 +24,11 @@ from pyvista.trame.ui.vuetify2 import button, divider, select, slider, text_fiel
 
 
 def custom_tools():
-    divider(vertical=True, classes='mx-1')
+    divider(vertical=True, classes="mx-1")
     button(
         click=button_play,
-        icon='mdi-play',
-        tooltip='Play',
+        icon="mdi-play",
+        tooltip="Play",
     )
 
     slider(
@@ -38,7 +40,7 @@ def custom_tools():
         dense=True,
         hide_details=True,
         style="width: 300px",
-        classes='my-0 py-0 ml-1 mr-1',
+        classes="my-0 py-0 ml-1 mr-1",
     )
     text_field(
         model=("resolution", 10),
@@ -48,14 +50,14 @@ def custom_tools():
         dense=True,
         hide_details=True,
         style="min-width: 40px; width: 60px",
-        classes='my-0 py-0 ml-1 mr-1',
+        classes="my-0 py-0 ml-1 mr-1",
     )
 
-    divider(vertical=True, classes='mx-1')
+    divider(vertical=True, classes="mx-1")
     select(
         model=("visibility", "Show"),
         tooltip="Toggle visibility",
-        items=['Visibility', ["Hide", "Show"]],
+        items=["Visibility", ["Hide", "Show"]],
         hide_details=True,
         dense=True,
     )

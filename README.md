@@ -11,10 +11,9 @@ This repository is inspired by [sphinx-doc/sphinx-doc-translations](https://gith
 
 ## URLs
 
-* Documentation pages for each languages:
+- Documentation pages for each languages:
 
-  * 日本語: https://pyvista.github.io/pyvista-docs-dev-ja/
-
+  - 日本語: https://pyvista.github.io/pyvista-docs-dev-ja/
 
 ## How to update po files
 
@@ -23,7 +22,6 @@ sh ./locale/update.sh
 ```
 
 After that, you should commit updated po files.
-
 
 ## How to add a language
 

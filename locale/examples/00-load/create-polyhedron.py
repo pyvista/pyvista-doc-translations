@@ -171,7 +171,12 @@ cells = quad + polygon + hexa + polyhedron
 # The number of items in this list must match the number of cells in the
 # connectivity array.
 
-celltypes = [pv.CellType.QUAD, pv.CellType.POLYGON, pv.CellType.HEXAHEDRON, pv.CellType.POLYHEDRON]
+celltypes = [
+    pv.CellType.QUAD,
+    pv.CellType.POLYGON,
+    pv.CellType.HEXAHEDRON,
+    pv.CellType.POLYHEDRON,
+]
 
 
 ###############################################################################
@@ -193,7 +198,7 @@ pl.show_axes()
 pl.add_mesh(grid, show_edges=True, line_width=5)
 pl.add_point_labels(
     grid.cell_centers().points,
-    ['QUAD', 'POLYGON', 'HEXAHEDRON', 'POLYHEDRON'],
+    ["QUAD", "POLYGON", "HEXAHEDRON", "POLYHEDRON"],
     always_visible=True,
     font_size=20,
 )

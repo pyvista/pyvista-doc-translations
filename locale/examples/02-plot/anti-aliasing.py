@@ -42,7 +42,7 @@ mesh = pv.Icosphere()
 # First, let's show a plot without any anti-aliasing.
 
 pl = pv.Plotter()
-pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
+pl.add_mesh(mesh, style="wireframe", color="k", line_width=2)
 pl.disable_anti_aliasing()
 pl.camera.zoom(1.5)
 pl.show()
@@ -62,7 +62,7 @@ pl.show()
 # expensive than SSAA and results in comparable image quality.
 
 pl = pv.Plotter()
-pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
+pl.add_mesh(mesh, style="wireframe", color="k", line_width=2)
 pl.camera.zoom(1.5)
 pl.show()
 
@@ -71,8 +71,8 @@ pl.show()
 # You can increase the smoothing by increasing multi_samples
 
 pl = pv.Plotter()
-pl.add_mesh(mesh, style='wireframe', color='k', line_width=2)
-pl.enable_anti_aliasing('msaa', multi_samples=16)
+pl.add_mesh(mesh, style="wireframe", color="k", line_width=2)
+pl.enable_anti_aliasing("msaa", multi_samples=16)
 pl.camera.zoom(1.5)
 pl.show()
 
@@ -93,9 +93,9 @@ pl.show()
 # Note how the line width has been adjusted for consistency.
 
 pl = pv.Plotter()
-pl.add_mesh(mesh, style='wireframe', color='k', line_width=1.5)
+pl.add_mesh(mesh, style="wireframe", color="k", line_width=1.5)
 pl.camera.zoom(1.5)
-pl.enable_anti_aliasing('fxaa')
+pl.enable_anti_aliasing("fxaa")
 pl.show()
 
 
@@ -112,9 +112,9 @@ pl.show()
 # Note how the line width has been adjusted for consistency.
 
 pl = pv.Plotter()
-pl.add_mesh(mesh, style='wireframe', color='k', line_width=4)
+pl.add_mesh(mesh, style="wireframe", color="k", line_width=4)
 pl.camera.zoom(1.5)
-pl.enable_anti_aliasing('ssaa')
+pl.enable_anti_aliasing("ssaa")
 pl.show()
 
 

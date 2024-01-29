@@ -18,7 +18,7 @@ pl.add_mesh(cube2)
 
 
 def callback(a, b, distance):
-    pl.add_text(f'Distance: {distance:.2f}', name='dist')
+    pl.add_text(f"Distance: {distance:.2f}", name="dist")
 
 
 pl.add_measurement_widget(callback)

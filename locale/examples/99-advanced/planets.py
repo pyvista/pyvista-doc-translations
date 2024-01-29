@@ -125,8 +125,12 @@ pl.show(cpos="xy")
 # Here we plot Venus with and without its atmosphere.
 
 venus = examples.planets.load_venus()
-atmosphere_texture = examples.planets.download_venus_surface(atmosphere=True, texture=True)
-surface_texture = examples.planets.download_venus_surface(atmosphere=False, texture=True)
+atmosphere_texture = examples.planets.download_venus_surface(
+    atmosphere=True, texture=True
+)
+surface_texture = examples.planets.download_venus_surface(
+    atmosphere=False, texture=True
+)
 
 pl = pyvista.Plotter(shape=(1, 2))
 pl.subplot(0, 0)

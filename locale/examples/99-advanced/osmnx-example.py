@@ -16,7 +16,6 @@ import numpy as np
 import osmnx as ox
 
 import pyvista as pv
-
 # Alternatively, use the pickeled graph included in our examples.
 from pyvista import examples
 
@@ -39,8 +38,8 @@ lines = []
 
 # convert each edge into a line
 for _, row in edges.iterrows():
-    x_pts = row['geometry'].xy[0]
-    y_pts = row['geometry'].xy[1]
+    x_pts = row["geometry"].xy[0]
+    y_pts = row["geometry"].xy[1]
     z_pts = np.zeros(len(x_pts))
     pts = np.column_stack((x_pts, y_pts, z_pts))
     line = pv.lines_from_points(pts)
@@ -51,4 +50,4 @@ for _, row in edges.iterrows():
 # Finally, merge the lines and plot
 
 combined_lines = lines[0].merge(lines[1:])
-combined_lines.plot(line_width=3, cpos='xy')
+combined_lines.plot(line_width=3, cpos="xy")
