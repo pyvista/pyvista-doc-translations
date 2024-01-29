@@ -2,7 +2,7 @@ name: pyvista-doc-auto-update
 
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: "0 0 * * *"
   push:
     branches:
       - main
@@ -20,50 +20,50 @@ jobs:
       TX_TOKEN: ${{ secrets.TX_TOKEN }}
 
     steps:
-    - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
-        fetch-depth: 0
-    - name: Checkout with submodule
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-        submodules: true
-    - name: Setup Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.12
-    - name: Check Python version
-      run: python --version
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y --no-install-recommends libosmesa6-dev libgl1-mesa-dev python3-tk pandoc git-restore-mtime
-        git submodule init
-        git submodule update
-        cd pyvista
-        git pull origin main
-        cd ..
-        pip install -U pip setuptools wheel
-        pip install -r ./requirements.txt
-    - name: Install Transifex CLI
-      run: |
-        curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-        mv tx /usr/local/bin/tx
-    - name: Update translations
-      run: |
-        set -x
-        export DISPLAY=:99.0
-        export PYVISTA_OFF_SCREEN=True
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-        sleep 3
-        set +x
-        cd pyvista
-        make -C doc html SPHINXOPTS="-w build_errors.txt -N"
-        cd ../
-        sh ./locale/update.sh
-    - name: After success
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-        commit_message: "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Checkout with submodule
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - name: Check Python version
+        run: python --version
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libosmesa6-dev libgl1-mesa-dev python3-tk pandoc git-restore-mtime
+          git submodule init
+          git submodule update
+          cd pyvista
+          git pull origin main
+          cd ..
+          pip install -U pip setuptools wheel
+          pip install -r ./requirements.txt
+      - name: Install Transifex CLI
+        run: |
+          curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+          mv tx /usr/local/bin/tx
+      - name: Update translations
+        run: |
+          set -x
+          export DISPLAY=:99.0
+          export PYVISTA_OFF_SCREEN=True
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          sleep 3
+          set +x
+          cd pyvista
+          make -C doc html SPHINXOPTS="-w build_errors.txt -N"
+          cd ../
+          sh ./locale/update.sh
+      - name: After success
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit_message: "[skip ci] by GHA https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
