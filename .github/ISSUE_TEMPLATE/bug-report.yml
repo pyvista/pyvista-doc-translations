@@ -18,35 +18,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reproduce
-    attributes:
-      label: Steps to reproduce the bug.
-      description: |
-        Please provide a list of steps to reproduce the bug.
-        Please include a code snippet to reproduce the big in the text box below.
-      placeholder: Provide some code for us to reproduce the bug!
-      value: "```python \n
-      Insert code here \n
-      ```"
-    validations:
-      required: true
-  - type: textarea
-    id: system-information
-    attributes:
-      label: System Information
-      placeholder: The log will automatically be formatted! No need to type backticks.
-      description: |
-        Please run the following code wherever you are experiencing the bug, and paste the output below.
-        This report helps us track down bugs and will be critical to addressing your bug.
-        ```python
-        # Get system info
-        import pyvista as pv
-        print(pv.Report())
-        ```
-      render: shell
-    validations:
-      required: true
-  - type: textarea
     id: screenshots
     attributes:
       label: Screenshots
