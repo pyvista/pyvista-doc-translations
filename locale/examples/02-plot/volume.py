@@ -102,9 +102,11 @@ pl.show()
 bolt_nut = examples.download_bolt_nut()
 
 pl = pv.Plotter()
-actors = pl.add_volume(bolt_nut, cmap="coolwarm", opacity="sigmoid_5", show_scalar_bar=False)
-actors[0].prop.interpolation_type = 'linear'
-actors[1].prop.interpolation_type = 'linear'
+actors = pl.add_volume(
+    bolt_nut, cmap="coolwarm", opacity="sigmoid_5", show_scalar_bar=False
+)
+actors[0].prop.interpolation_type = "linear"
+actors[1].prop.interpolation_type = "linear"
 pl.camera_position = [(127.4, -68.3, 88.2), (30.3, 54.3, 26.0), (-0.25, 0.28, 0.93)]
 cpos = pl.show(return_cpos=True)
 
@@ -117,7 +119,11 @@ frog = examples.download_frog()
 
 pl = pv.Plotter()
 pl.add_volume(frog, cmap="viridis", opacity="sigmoid_6", show_scalar_bar=False)
-pl.camera_position = [(929.0, 1067.0, -278.9), (249.5, 234.5, 101.25), (-0.2048, -0.2632, -0.9427)]
+pl.camera_position = [
+    (929.0, 1067.0, -278.9),
+    (249.5, 234.5, 101.25),
+    (-0.2048, -0.2632, -0.9427),
+]
 pl.camera.zoom(1.5)
 pl.show()
 

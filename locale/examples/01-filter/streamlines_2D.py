@@ -42,7 +42,7 @@ camera_position = [(7, 0, 20.0), (7, 0.0, 0.0), (0.0, 1.0, 0.0)]
 
 p = pv.Plotter()
 for i in range(1, len(mesh)):
-    p.add_mesh(mesh[i], color='k')
+    p.add_mesh(mesh[i], color="k")
 p.add_mesh(one_streamline.tube(radius=0.05), scalars="vorticity_mag", clim=clim)
 p.view_xy()
 p.show(cpos=camera_position)
@@ -61,7 +61,7 @@ line_streamlines = fluid_mesh.streamlines(
 
 p = pv.Plotter()
 for i in range(1, len(mesh)):
-    p.add_mesh(mesh[i], color='k')
+    p.add_mesh(mesh[i], color="k")
 p.add_mesh(line_streamlines.tube(radius=0.05), scalars="vorticity_mag", clim=clim)
 p.view_xy()
 p.show(cpos=camera_position)
@@ -85,7 +85,7 @@ line_streamlines = fluid_mesh.streamlines_evenly_spaced_2D(
 
 p = pv.Plotter()
 for i in range(1, len(mesh)):
-    p.add_mesh(mesh[i], color='k')
+    p.add_mesh(mesh[i], color="k")
 p.add_mesh(line_streamlines.tube(radius=0.02), scalars="vorticity_mag", clim=clim)
 p.view_xy()
 p.show(cpos=camera_position)

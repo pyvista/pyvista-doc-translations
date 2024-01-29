@@ -57,7 +57,9 @@ line = pv.Line(a, b)
 p = pv.Plotter()
 p.add_mesh(mesh)
 p.add_mesh(line, color="white", line_width=10)
-p.add_point_labels([a, b], ["A", "B"], font_size=48, point_color="red", text_color="red")
+p.add_point_labels(
+    [a, b], ["A", "B"], font_size=48, point_color="red", text_color="red"
+)
 p.show()
 
 ###############################################################################

@@ -7,8 +7,8 @@ Applying Textures
 Plot a mesh with an image projected onto it as a texture.
 """
 
-from matplotlib.cm import get_cmap
 import numpy as np
+from matplotlib.cm import get_cmap
 
 import pyvista as pv
 from pyvista import examples
@@ -53,7 +53,9 @@ curvsurf.plot(texture=tex)
 
 elevated = curvsurf.elevation()
 
-elevated.plot(scalars='Elevation', cmap='terrain', texture=tex, interpolate_before_map=False)
+elevated.plot(
+    scalars="Elevation", cmap="terrain", texture=tex, interpolate_before_map=False
+)
 
 
 ###############################################################################
@@ -220,7 +222,11 @@ mesh.plot(texture=tex)
 # the mesh that will be used as the globe. Note the `start_theta` for a slight
 # overlappig
 sphere = pv.Sphere(
-    radius=1, theta_resolution=120, phi_resolution=120, start_theta=270.001, end_theta=270
+    radius=1,
+    theta_resolution=120,
+    phi_resolution=120,
+    start_theta=270.001,
+    end_theta=270,
 )
 
 # Initialize the texture coordinates array

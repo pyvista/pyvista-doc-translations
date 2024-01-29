@@ -34,7 +34,7 @@ pv.plot(
     render_points_as_spheres=True,
     point_size=50,
     opacity=points[:, 0],
-    cpos='xz',
+    cpos="xz",
 )
 
 ###############################################################################

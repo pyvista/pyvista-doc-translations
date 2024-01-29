@@ -37,7 +37,9 @@ import pyvista as pv
 
 def hill(seed):
     """A helper to make a random surface."""
-    mesh = pv.ParametricRandomHills(random_seed=seed, u_res=50, v_res=50, hill_amplitude=0.5)
+    mesh = pv.ParametricRandomHills(
+        random_seed=seed, u_res=50, v_res=50, hill_amplitude=0.5
+    )
     mesh.rotate_y(-10, inplace=True)  # give the surfaces some tilt
 
     return mesh
@@ -62,7 +64,9 @@ p.show()
 # ++++++++++++++++++++
 #
 # Compute normals of lower surface at vertex points
-h0n = h0.compute_normals(point_normals=True, cell_normals=False, auto_orient_normals=True)
+h0n = h0.compute_normals(
+    point_normals=True, cell_normals=False, auto_orient_normals=True
+)
 
 ###############################################################################
 # Travel along normals to the other surface and compute the thickness on each
@@ -122,7 +126,9 @@ p.show()
 # points of the bottom surface.  ``closest_points`` is returned when using
 # ``return_closest_point=True``.
 
-closest_cells, closest_points = h1.find_closest_cell(h0.points, return_closest_point=True)
+closest_cells, closest_points = h1.find_closest_cell(
+    h0.points, return_closest_point=True
+)
 d_exact = np.linalg.norm(h0.points - closest_points, axis=1)
 h0["distances"] = d_exact
 np.mean(d_exact)

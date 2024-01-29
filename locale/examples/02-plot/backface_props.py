@@ -31,8 +31,8 @@ mesh_inside_out = mesh.translate((0, 0, 1), inplace=False)
 mesh_inside_out.compute_normals(flip_normals=True, inplace=True)
 meshes = mesh + mesh_inside_out
 
-backface_params = dict(color='orangered')
-meshes.plot(color='aquamarine', backface_params=backface_params, smooth_shading=True)
+backface_params = dict(color="orangered")
+meshes.plot(color="aquamarine", backface_params=backface_params, smooth_shading=True)
 
 
 ###############################################################################
@@ -46,9 +46,9 @@ meshes.plot(color='aquamarine', backface_params=backface_params, smooth_shading=
 
 catalan = pv.ParametricCatalanMinimal()
 plotter = pv.Plotter()
-actor = plotter.add_mesh(catalan, color='dodgerblue', smooth_shading=True)
+actor = plotter.add_mesh(catalan, color="dodgerblue", smooth_shading=True)
 bprop = actor.backface_prop
-bprop.color = 'forestgreen'
+bprop.color = "forestgreen"
 bprop.specular = 1.0
 bprop.specular_power = 50.0
 plotter.show()
@@ -60,11 +60,15 @@ plotter.show()
 # where the face properties are discontinuous.
 
 henneberg = pv.ParametricHenneberg().scale(0.25, inplace=False)
-klein = pv.ParametricKlein().rotate_z(150, inplace=False).translate((6, 0, 0), inplace=False)
+klein = (
+    pv.ParametricKlein()
+    .rotate_z(150, inplace=False)
+    .translate((6, 0, 0), inplace=False)
+)
 meshes = henneberg + klein
 
-backface_params = dict(color='mediumseagreen', specular=1.0, specular_power=50.0)
-meshes.plot(color='gold', backface_params=backface_params, smooth_shading=True)
+backface_params = dict(color="mediumseagreen", specular=1.0, specular_power=50.0)
+meshes.plot(color="gold", backface_params=backface_params, smooth_shading=True)
 
 
 ###############################################################################
@@ -78,8 +82,10 @@ meshes.plot(color='gold', backface_params=backface_params, smooth_shading=True)
 mobius = pv.ParametricMobius().rotate_z(-90, inplace=False)
 backface_params = dict(opacity=0.5)
 plotter = pv.Plotter()
-plotter.add_mesh(mobius, color='deepskyblue', backface_params=backface_params, smooth_shading=True)
-plotter.open_gif('mobius_semiopaque.gif')
+plotter.add_mesh(
+    mobius, color="deepskyblue", backface_params=backface_params, smooth_shading=True
+)
+plotter.open_gif("mobius_semiopaque.gif")
 
 viewup = [0, 0, 1]
 orbit = plotter.generate_orbital_path(n_points=24, shift=0.0, viewup=viewup)
@@ -100,12 +106,12 @@ plotter.orbit_on_path(orbit, write_frames=True, viewup=viewup, step=0.02)
 
 globe = examples.load_globe()
 texture = examples.load_globe_texture()
-clipped = globe.clip(normal='z', value=4.37e9)
+clipped = globe.clip(normal="z", value=4.37e9)
 
 pl = pv.Plotter()
 pl.add_mesh(
     clipped,
-    backface_params={'color': [0.2, 0.2, 0.2]},
+    backface_params={"color": [0.2, 0.2, 0.2]},
     lighting=False,
     smooth_shading=True,
     texture=texture,
@@ -120,13 +126,13 @@ pl.show()
 # is enabled, regardless of the settings of backface parameters.
 
 sphere = pv.Sphere()
-clipped_sphere = sphere.clip(normal='z', value=0.4)
+clipped_sphere = sphere.clip(normal="z", value=0.4)
 
 pl = pv.Plotter()
 pl.set_environment_texture(examples.download_sky_box_cube_map())
 pl.add_mesh(
     clipped_sphere,
-    backface_params={'color': 'r'},
+    backface_params={"color": "r"},
     pbr=True,
     metallic=1.0,
     roughness=0.2,

@@ -9,8 +9,9 @@ Pixel string `source <https://commons.wikimedia.org/wiki/File:Noto_Emoji_Pie_1f4
 and `license <https://github.com/googlefonts/noto-emoji/blob/main/LICENSE>`_.
 
 """
-import pyvista as pv
 from pyvista.demos import logo
+
+import pyvista as pv
 
 # sphinx_gallery_start_ignore
 PYVISTA_GALLERY_FORCE_STATIC_IN_DOCUMENT = False
@@ -40,8 +41,8 @@ for line in alien_str.splitlines()[1:]:  # skip first linebreak
     if not line:
         continue
     if len(line) < 20:
-        line += (20 - len(line)) * ' '
-    alien.append([line[i : i + 2] == '% ' for i in range(0, len(line), 2)])
+        line += (20 - len(line)) * " "
+    alien.append([line[i : i + 2] == "% " for i in range(0, len(line), 2)])
 
 
 ###############################################################################

@@ -17,7 +17,9 @@ import pyvista as pv
 PYVISTA_GALLERY_FORCE_STATIC_IN_DOCUMENT = True
 # sphinx_gallery_end_ignore
 
-rng = np.random.default_rng(1)  # Seeded random number generator for consistent data generation
+rng = np.random.default_rng(
+    1
+)  # Seeded random number generator for consistent data generation
 
 ###############################################################################
 # This example shows how to create a 2D scatter plot from 100 randomly sampled
@@ -52,7 +54,7 @@ x = np.arange(11)
 y = rng.integers(-5, 6, 11)
 chart = pv.Chart2D()
 chart.background_color = (0.5, 0.9, 0.5)  # Use custom background color for chart
-chart.plot(x, y, 'x--b')  # Marker style 'x', striped line style '--', blue color 'b'
+chart.plot(x, y, "x--b")  # Marker style 'x', striped line style '--', blue color 'b'
 chart.show()
 
 ###############################################################################
@@ -157,7 +159,10 @@ alphas = [0.5 + i for i in range(5)]
 betas = [*reversed(alphas)]
 N = int(1e4)
 data = [rng.beta(alpha, beta, N) for alpha, beta in zip(alphas, betas)]
-labels = [f"$\\alpha={alpha:.1f}\\,;\\,\\beta={beta:.1f}$" for alpha, beta in zip(alphas, betas)]
+labels = [
+    f"$\\alpha={alpha:.1f}\\,;\\,\\beta={beta:.1f}$"
+    for alpha, beta in zip(alphas, betas)
+]
 ax.violinplot(data)
 ax.set_xticks(np.arange(1, 1 + len(labels)))
 ax.set_xticklabels(labels)
@@ -166,6 +171,6 @@ ax.set_title("$B(\\alpha, \\beta)$")
 # Next, embed the figure into a pyvista plotting window
 p = pv.Plotter()
 chart = pv.ChartMPL(f)
-chart.background_color = 'w'
+chart.background_color = "w"
 p.add_chart(chart)
 p.show()

@@ -10,7 +10,6 @@ Here we use :func:`cell_centers <pyvista.DataSetFilters.cell_centers>`.
 
 """
 import pyvista as pv
-
 # sphinx_gallery_thumbnail_number = 3
 from pyvista import examples
 
@@ -77,7 +76,7 @@ pl.add_mesh(mesh, show_edges=True, line_width=5)
 pl.add_points(
     edge_centers,
     render_points_as_spheres=True,
-    color='r',
+    color="r",
     point_size=20,
 )
 pl.show()

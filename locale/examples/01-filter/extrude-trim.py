@@ -40,15 +40,15 @@ PYVISTA_GALLERY_FORCE_STATIC = True
 
 pl = pv.Plotter(shape=(1, 2))
 pl.add_mesh(mesh)
-pl.add_text('Original Mesh')
+pl.add_text("Original Mesh")
 
 pl.subplot(0, 1)
-pl.add_mesh(plane, style='wireframe', color='black')
+pl.add_mesh(plane, style="wireframe", color="black")
 pl.add_mesh(extruded_hills)
-pl.add_text('Extruded Mesh')
+pl.add_text("Extruded Mesh")
 
 pl.link_views()
-pl.camera_position = 'iso'
+pl.camera_position = "iso"
 pl.camera.zoom(1.5)
 pl.show()
 
@@ -71,9 +71,9 @@ plane = pv.Plane(
 
 # extrude with and without the all_edges option
 extruded_disc = disc.extrude_trim((0, 0, -1.0), plane)
-extruded_disc_all = disc.extrude_trim((0, 0, -1.0), plane, extrusion='all_edges')
-print(f'Extrusion has {extruded_disc.n_faces_strict} faces with default boundary_edges')
-print(f'Extrusion has {extruded_disc_all.n_faces_strict} faces with all_edges')
+extruded_disc_all = disc.extrude_trim((0, 0, -1.0), plane, extrusion="all_edges")
+print(f"Extrusion has {extruded_disc.n_faces_strict} faces with default boundary_edges")
+print(f"Extrusion has {extruded_disc_all.n_faces_strict} faces with all_edges")
 
 
 ###############################################################################
@@ -86,15 +86,15 @@ print(f'Extrusion has {extruded_disc_all.n_faces_strict} faces with all_edges')
 PYVISTA_GALLERY_FORCE_STATIC = True
 # sphinx_gallery_end_ignore
 pl = pv.Plotter(shape=(1, 2))
-pl.add_mesh(extruded_disc, style='wireframe', line_width=5)
-pl.add_text('Extrude with boundary_edges')
+pl.add_mesh(extruded_disc, style="wireframe", line_width=5)
+pl.add_text("Extrude with boundary_edges")
 
 pl.subplot(0, 1)
-pl.add_mesh(extruded_disc_all, style='wireframe', line_width=5)
-pl.add_text('Extrude with all_edges')
+pl.add_mesh(extruded_disc_all, style="wireframe", line_width=5)
+pl.add_text("Extrude with all_edges")
 
 pl.link_views()
-pl.camera_position = 'iso'
+pl.camera_position = "iso"
 pl.camera.zoom(1.3)
 pl.show()
 
@@ -105,7 +105,9 @@ pl.show()
 # You can also extrude lines. Observe that the output from extruded lines is
 # still a :class:`pyvista.PolyData`.
 
-plane = pv.Plane(center=(0, 0, 1), i_size=2, j_size=0.2, direction=[1, 1, 1], j_resolution=1)
+plane = pv.Plane(
+    center=(0, 0, 1), i_size=2, j_size=0.2, direction=[1, 1, 1], j_resolution=1
+)
 line = pv.Line()
 extruded_line = line.extrude_trim((0, 0, 1), plane)
 extruded_line
@@ -117,7 +119,7 @@ extruded_line
 # Note how the scalars are copied to the extruded line.
 
 pl = pv.Plotter()
-pl.add_mesh(line, style='wireframe', line_width=20, show_scalar_bar=False, color='r')
-pl.add_mesh(plane, style='wireframe', color='black', show_scalar_bar=False)
+pl.add_mesh(line, style="wireframe", line_width=20, show_scalar_bar=False, color="r")
+pl.add_mesh(plane, style="wireframe", color="black", show_scalar_bar=False)
 pl.add_mesh(extruded_line, show_scalar_bar=False, lighting=False)
 pl.show()

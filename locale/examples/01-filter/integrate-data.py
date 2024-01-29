@@ -20,7 +20,7 @@ from pyvista import examples
 
 dataset = examples.download_blood_vessels()
 boundary = dataset.decimate_boundary().extract_all_edges()
-inlet_surface = dataset.slice('z', origin=(0, 0, 182))
+inlet_surface = dataset.slice("z", origin=(0, 0, 182))
 inlet_surface["normal_velocity"] = -1 * inlet_surface["velocity"][:, 2]
 
 ###############################################################################
@@ -53,7 +53,11 @@ integrated_data["normal_velocity"]
 ###############################################################################
 # An additional ``Area`` or ``Volume`` array is added.
 print(f"Original arrays: {inlet_surface.array_names}")
-new_arrays = [name for name in integrated_data.array_names if name not in inlet_surface.array_names]
+new_arrays = [
+    name
+    for name in integrated_data.array_names
+    if name not in inlet_surface.array_names
+]
 print(f"New arrays      : {new_arrays}")
 
 ###############################################################################
@@ -80,9 +84,9 @@ print(f"Average velocity: {average_velocity:.3f}")
 
 integrated_volume = dataset.integrate_data()
 center = integrated_volume.points[0]
-volume = integrated_volume['Volume'][0]
-mean_density = integrated_volume['density'][0] / volume
-mean_velocity = integrated_volume['velocity'][0] / volume
+volume = integrated_volume["Volume"][0]
+mean_density = integrated_volume["density"][0] / volume
+mean_velocity = integrated_volume["velocity"][0] / volume
 
 print(f"Center          : {center}")
 print(f"Volume          : {volume:.0f}")

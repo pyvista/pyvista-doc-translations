@@ -98,7 +98,10 @@ def close_wormhole(x0, y0, z0, eta, xi, alpha):
     denominator = alpha + beta * (x1**2 + y1**2)
     x2 = x1 * exponential / denominator
     y2 = y1 * exponential / denominator
-    z2 = numerator / denominator * exponential / gamma - (alpha - beta) / (alpha + beta) / gamma
+    z2 = (
+        numerator / denominator * exponential / gamma
+        - (alpha - beta) / (alpha + beta) / gamma
+    )
     return x2, y2, z2
 
 
@@ -154,17 +157,17 @@ def unfold_sphere(theta, phi, t, q, eta, lamda):
 
 # plot options to use for each frame
 opts = dict(
-    color='aquamarine',
+    color="aquamarine",
     specular=1.0,
     specular_power=50.0,
-    backface_params=dict(color='forestgreen'),
+    backface_params=dict(color="forestgreen"),
     smooth_shading=True,
     reset_camera=True,
 )
 
 # use a small figure window to reduce the size of the GIF
 plotter = pv.Plotter(window_size=(300, 300))
-plotter.open_gif('sphere_eversion.gif')
+plotter.open_gif("sphere_eversion.gif")
 
 
 def save_frame(x, y, z):

@@ -42,7 +42,7 @@ spline.point_data
 
 def get_point_along_spline(distance):
     """Return the closest point on the spline given a length along the spline."""
-    idx = np.argmin(np.abs(spline.point_data['arc_length'] - distance))
+    idx = np.argmin(np.abs(spline.point_data["arc_length"] - distance))
     return spline.points[idx]
 
 
@@ -54,7 +54,7 @@ labels = []
 label_points = []
 for dist in dists:
     point = get_point_along_spline(dist)
-    labels.append(f'Dist {dist}: ({point[0]:.2f}, {point[1]:.2f}, {point[2]:.2f})')
+    labels.append(f"Dist {dist}: ({point[0]:.2f}, {point[1]:.2f}, {point[2]:.2f})")
     label_points.append(point)
 
 labels
@@ -70,11 +70,15 @@ PYVISTA_GALLERY_FORCE_STATIC = True
 # sphinx_gallery_end_ignore
 
 pl = pv.Plotter()
-pl.add_mesh(spline, scalars='arc_length', render_lines_as_tubes=True, line_width=10)
+pl.add_mesh(spline, scalars="arc_length", render_lines_as_tubes=True, line_width=10)
 pl.add_point_labels(
-    label_points, labels, always_visible=True, point_size=20, render_points_as_spheres=True
+    label_points,
+    labels,
+    always_visible=True,
+    point_size=20,
+    render_points_as_spheres=True,
 )
 pl.show_bounds()
 pl.show_axes()
-pl.camera_position = 'xz'
+pl.camera_position = "xz"
 pl.show()
