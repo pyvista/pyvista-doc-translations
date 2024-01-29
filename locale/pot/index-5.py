@@ -1,5 +1,4 @@
 import numpy as np
-
 import pyvista
 
 # Make the xyz points
@@ -11,4 +10,4 @@ y = r * np.cos(theta)
 points = np.column_stack((x, y, z))
 
 spline = pyvista.Spline(points, 500).tube(radius=0.1)
-spline.plot(scalars="arc_length", show_scalar_bar=False)
+spline.plot(scalars='arc_length', show_scalar_bar=False)
