@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 01:23+0000\n"
+"POT-Creation-Date: 2024-02-10 01:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7287,6 +7287,7 @@ msgid "pyvista.Cell.points"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/cell.py:docstring of pyvista.Cell.points:18
+#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.center:18
 #: ../../pyvista/pyvista/core/utilities/geometric_sources.py:docstring of pyvista.MultipleLinesSource.points:21
 #: ../../pyvista/pyvista/plotting/charts.py:docstring of pyvista.plotting.charts._Chart.show:60
 #: ../../pyvista/pyvista/plotting/prop3d.py:docstring of pyvista.Prop3D.user_matrix:27
@@ -10833,7 +10834,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/utilities/points.py:docstring of pyvista.core.utilities.points.fit_plane_to_points:34
 #: ../../pyvista/pyvista/demos/demos.py:docstring of pyvista.demos.demos.plot_wave:32
 #: ../../pyvista/pyvista/plotting/affine_widget.py:docstring of pyvista.plotting.widgets.AffineWidget3D.axes:23
-#: ../../pyvista/pyvista/plotting/affine_widget.py:docstring of pyvista.plotting.widgets.AffineWidget3D.origin:23
 #: ../../pyvista/pyvista/plotting/texture.py:docstring of pyvista.plotting.texture.Texture.to_array:16
 msgid ":obj:`numpy.ndarray`"
 msgstr ""
@@ -11372,6 +11372,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.get_data_range:31
 #: ../../pyvista/pyvista/core/objects.py:docstring of pyvista.core.objects.Table.get_data_range:31
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.StructuredGrid.dimensions:18
+#: ../../pyvista/pyvista/plotting/affine_widget.py:docstring of pyvista.plotting.widgets.AffineWidget3D.origin:23
 #: ../../pyvista/pyvista/plotting/helpers.py:docstring of pyvista.plotting.helpers.plot_arrows:26
 #: ../../pyvista/pyvista/plotting/lookup_table.py:docstring of pyvista.plotting.lookup_table.LookupTable.map_value:25
 #: ../../pyvista/pyvista/plotting/picking.py:docstring of pyvista.plotting.picking.PickingInterface.pick_click_position:21
@@ -12147,7 +12148,6 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.point_is_inside_cell:11
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:12
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:7
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:7
 msgid "Matrix"
 msgstr ""
 
@@ -12979,7 +12979,6 @@ msgstr ""
 msgid "A value to return if the key does not exist.  Default is ``None``."
 msgstr ""
 
-#: ../../pyvista/pyvista/core/composite.py:docstring of pyvista.MultiBlock.center:18
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.get:27
 msgid ":obj:`Any`"
 msgstr ""
@@ -21041,7 +21040,6 @@ msgid "pyvista.PolyData.from\\_irregular\\_faces"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:8
-#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:8
 msgid "**points** : :obj:`Matrix`"
 msgstr ""
 
@@ -21051,11 +21049,11 @@ msgid "A (n_points, 3) array of points."
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:11
-msgid "**faces** : :obj:`Sequence`\\[:obj:`IntVector`]"
+msgid "**faces** : :obj:`Sequence`\\[:obj:`Vector`\\[:class:`python:int`]]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:10
-msgid "Sequence[IntVector]"
+msgid "Sequence[Vector[python:int]]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:11
@@ -21075,12 +21073,20 @@ msgstr ""
 msgid "pyvista.PolyData.from\\_regular\\_faces"
 msgstr ""
 
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:8
+msgid "**points** : :obj:`Matrix`\\[:class:`python:float`]"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:7
+msgid "Matrix[python:float]"
+msgstr ""
+
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:11
-msgid "**faces** : :obj:`IntMatrix`"
+msgid "**faces** : :obj:`Matrix`\\[:class:`python:int`]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:10
-msgid "IntMatrix"
+msgid "Matrix[python:int]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_regular_faces:11
@@ -21356,7 +21362,7 @@ msgid "Set vertex cells.  Note how the mesh plots both the surface mesh and the 
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.verts.rst:54
-msgid "Vertex cells can also be set to a ``pyvista.CellArray``. The following ``verts`` assignment is equivalent to the one above. >>> mesh.verts = pv.CellArray.from_regular_cells( ...     np.arange(mesh.n_points).reshape((-1, 1)) ... )"
+msgid "Vertex cells can also be set to a ``pyvista.CellArray``. The following ``verts`` assignment is equivalent to the one above."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/core/_autosummary/pyvista.PolyData.volume.rst:2
