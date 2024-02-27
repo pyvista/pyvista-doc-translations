@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-24 01:25+0000\n"
+"POT-Creation-Date: 2024-02-27 01:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12176,7 +12176,6 @@ msgid "**point** : :obj:`Matrix`"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/dataset.py:docstring of pyvista.core.dataset.DataSet.point_is_inside_cell:11
-#: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:12
 #: ../../pyvista/pyvista/core/pointset.py:docstring of pyvista.core.pointset.PolyData.from_irregular_faces:7
 msgid "Matrix"
 msgstr ""
@@ -13168,12 +13167,12 @@ msgid ":attr:`active_texture_coordinates_name <DataSetAttributes.active_texture_
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_array:16
-msgid "**data** : :obj:`Array`"
+msgid "**data** : :obj:`ArrayLike`\\[:class:`python:float`]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_array:15
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_scalars:14
-msgid "Array"
+msgid "ArrayLike[python:float]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_array:16
@@ -13223,7 +13222,7 @@ msgid "See :func:`DataSetAttributes.set_vectors` when adding arrays that contain
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_scalars:15
-msgid "**scalars** : :obj:`Array`"
+msgid "**scalars** : :obj:`ArrayLike`\\[:class:`python:float`]"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_scalars:18
@@ -13260,7 +13259,11 @@ msgid "The vectors data must contain three components per cell or point.  Use :f
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:13
-msgid "**vectors** : :obj:`Matrix`"
+msgid "**vectors** : :obj:`MatrixLike`"
+msgstr ""
+
+#: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:12
+msgid "MatrixLike"
 msgstr ""
 
 #: ../../pyvista/pyvista/core/datasetattributes.py:docstring of pyvista.core.datasetattributes.DataSetAttributes.set_vectors:13
@@ -27132,6 +27135,70 @@ msgstr ""
 
 #: ../../pyvista/doc/source/api/core/pointsets.rst:474
 msgid "This example is similar and shows how labels can be combined with a scalar bar to show the exact value of certain points."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/typing.rst:2
+msgid "Typing"
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/typing.rst:5
+msgid "Type aliases and type variable used by PyVista."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/typing.rst:9
+msgid "Numeric Array-Like Types"
+msgstr ""
+
+#: ../../pyvista/pyvista/__init__.py:docstring of pyvista.NumberType:1
+msgid "**Type:**    :py:class:`~typing.TypeVar`"
+msgstr ""
+
+#: ../../pyvista/pyvista/__init__.py:docstring of pyvista.NumberType:1
+msgid "Invariant :class:`~typing.TypeVar` constrained to :py:class:`bool`, :py:class:`int`, :py:class:`float`, :py:class:`numpy.bool_`, :py:class:`numpy.int64`, :py:class:`numpy.float64` and :py:class:`numpy.uint8`."
+msgstr ""
+
+#: ../../pyvista/pyvista/__init__.py:docstring of pyvista.NumberType:2
+msgid "Type variable for numeric data types."
+msgstr ""
+
+#: ../docstring of typing.Union:2
+msgid "Any-dimensional array-like object with numerical values."
+msgstr ""
+
+#: ../docstring of typing.Union:4
+msgid "Includes sequences, nested sequences, and numpy arrays. Scalar values are not included."
+msgstr ""
+
+#: ../docstring of typing.Union:2
+msgid "Two-dimensional array-like object with numerical values."
+msgstr ""
+
+#: ../docstring of typing.Union:4
+msgid "Includes singly-nested sequences and numpy arrays."
+msgstr ""
+
+#: ../docstring of typing.Union:2
+msgid "One-dimensional array-like object with numerical values."
+msgstr ""
+
+#: ../docstring of typing.Union:4
+msgid "Includes sequences and numpy arrays."
+msgstr ""
+
+#: ../../pyvista/doc/source/api/core/typing.rst:21
+msgid "VTK Related Types"
+msgstr ""
+
+#: ../docstring of typing.Tuple:2
+msgid "Tuple of six values representing 3D bounds."
+msgstr ""
+
+#: ../docstring of typing.Tuple:4
+msgid "Has the form (``xmin``, ``xmax``, ``ymin``, ``ymax``, ``zmin``, ``zmax``)."
+msgstr ""
+
+#: ../docstring of typing.Union:2
+msgid "Array or vtk object representing a 3x3 or 4x4 matrix."
 msgstr ""
 
 #: ../../pyvista/doc/source/api/examples/_autosummary/pyvista.demos.demos.rst:2
