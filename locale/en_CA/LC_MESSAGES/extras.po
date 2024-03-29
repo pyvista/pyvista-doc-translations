@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-07 01:19+0000\n"
+"POT-Creation-Date: 2024-03-29 04:14+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: English (Canada) (https://app.transifex.com/tkoyama010/teams/112279/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -1129,8 +1129,8 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:782
 msgid ""
-"Once you have make a Pull Request. You can comment `github-actions preview` "
-"on a pull request to preview documentation. Since this command is only "
+"Once you have make a Pull Request. You can comment `@pyvista-bot preview` on"
+" a pull request to preview documentation. Since this command is only "
 "available for `@pyvista/developers "
 "<https://github.com/orgs/pyvista/teams/developers>`_ , new contributors "
 "kindly request them to comment command. This is essential to safeguard the "
@@ -1319,6 +1319,21 @@ msgid ""
 "conda and follow the directions in step 10 in the minor release section."
 msgstr ""
 
+#: ../../pyvista/CONTRIBUTING.rst:925
+msgid "Dependency version policy"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:928
+msgid "Python and VTK dependencies"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:930
+msgid ""
+"We support all supported `Python versions`_ and `VTK versions`_ that support"
+" those Python versions. As much as we would prefer to follow `SPEC 0`_, we "
+"follow VTK versions as an interface library of VTK."
+msgstr ""
+
 #: ../../pyvista/doc/source/extras/docker.rst:1
 msgid "!"
 msgstr ""
@@ -1446,18 +1461,18 @@ msgstr ""
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:5
 msgid ""
-"You can generate static images of pyvista plots using the ``.. pyvista-"
-"plot::`` directive by adding the following to your ``conf.py`` when building"
-" your documentation using Sphinx."
+"You can generate static and interactive scenes of pyvista plots using the "
+"``.. pyvista-plot::`` directive by adding the following to your ``conf.py`` "
+"when building your documentation using Sphinx."
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/plot_directive.rst:16
+#: ../../pyvista/doc/source/extras/plot_directive.rst:17
 msgid ""
 "You can then issue the plotting directive within your sphinx documentation "
 "files::"
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/plot_directive.rst:27
+#: ../../pyvista/doc/source/extras/plot_directive.rst:28
 msgid "Which will be rendered as:"
 msgstr ""
 
@@ -1471,6 +1486,19 @@ msgstr ""
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:25
 msgid "This is a default sphere"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/plot_directive.rst:40
+msgid ""
+"You need to install `the packages to build the interactive scene "
+"<https://github.com/pyvista/pyvista-docs-"
+"dynamic/blob/main/requirements.txt>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/plot_directive.rst:44
+msgid ""
+"You need to spin up a local server to view the interactive scene in the "
+"documentation."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
