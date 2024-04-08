@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-05 01:25+0000\n"
+"POT-Creation-Date: 2024-04-08 21:59+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1271,30 +1271,173 @@ msgid "For more details see :ref:`add_example_example`."
 msgstr "詳しくは :ref:`add_example_example` を参照してください．"
 
 #: ../../pyvista/CONTRIBUTING.rst:739
-msgid "Add a New Example File"
-msgstr "新しいサンプルファイルの追加"
+msgid "Adding a New Dataset"
+msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:740
 msgid ""
-"If you have a dataset that you need for your gallery example, add it to "
-"`pyvista/vtk-data <https://github.com/pyvista/vtk-data/>`_ and follow the "
-"directions there. You will then need to add a new function to download the "
-"dataset ``pyvista/examples/downloads.py``. This might be as easy as:"
+"If you have a dataset that you want to feature or want to include as part of"
+" a full gallery example, add it to `pyvista/vtk-data "
+"<https://github.com/pyvista/vtk-data/>`_ and follow the directions there. "
+"You will then need to add a new function to download the dataset in "
+"``pyvista/examples/downloads.py``. This might be as easy as:"
 msgstr ""
-"もしギャラリーのサンプルに必要なデータセットがあれば，それを `pyvista/vtk-data "
-"<https://github.com/pyvista/vtk-data/>`_ "
-"に追加し，そこにある指示に従ってください．それから，データセットをダウンロードする ``pyvista/examples/downloads.py`` "
-"ための新しい関数を追加する必要があります．これは以下のように簡単です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:752
-msgid "Which enables:"
-msgstr "以下を可能にします:"
+#: ../../pyvista/CONTRIBUTING.rst:753
+msgid ""
+"Note that a separate dataset loading object, ``_dataset_my_new_mesh``, "
+"should first be defined outside of the function (with module scope), and the"
+" new ``download_my_new_mesh`` function should then use this object to "
+"facilitate downloading and loading the dataset. The dataset loader variable "
+"should start with ``_dataset_``."
+msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:761
+#: ../../pyvista/CONTRIBUTING.rst:759
+msgid "This will enable:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:766
+msgid ""
+"For loading complex datasets with multiple files or special processing "
+"requirements, see the private ``pyvista/examples/_dataset_loader.py`` module"
+" for more details on how to create a suitable dataset loader."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:770
+msgid ""
+"Using the dataset loaders this way will enable metadata to be collected for "
+"the new dataset. A new dataset card titled ``My New Mesh Dataset`` will "
+"automatically be generated and included in the :ref:`dataset_gallery`."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:774
+msgid ""
+"In the docstring of the new ``download_my_new_mesh`` function, be sure to "
+"also include:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:777
+msgid "A sample plot of the dataset in the examples section"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:779
+msgid ""
+"A reference link to the dataset's new (auto-generated) gallery card in the "
+"see also section"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:782
+msgid "For example:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:802
+msgid ""
+"Note that the rst ``seealso`` directive must be used instead of the ``See "
+"Also`` heading due to limitations with how `numpydoc` parses explicit "
+"references."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:806
+msgid ""
+"In addition, the output plot image must be manually added to "
+"``pyvista/doc/source/images/dataset-gallery`` for it to be used as a "
+"thumbnail in the :ref:`dataset_gallery`. The file name for the image should "
+"follow the same convention as existing files in that directory."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:812
+msgid "Extending the Dataset Gallery"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:813
+msgid ""
+"If you have multiple related datasets to contribute, or would like to group "
+"any existing datasets together that share similar properties, the "
+":ref:`dataset_gallery` can easily be extended to feature these datasets in a"
+" new `card carousel <https://sphinx-"
+"design.readthedocs.io/en/latest/cards.html#card-carousels>`_."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:818
+msgid ""
+"For example, to add a new ``Instrument`` dataset category to "
+":ref:`dataset_gallery_category` featuring two datasets (1) "
+":func:`pyvista.examples.download_guitar` and (2) "
+":func:`pyvista.examples.download_trumpet`, complete the following steps:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:822
+msgid "Define a new carousel in ``pyvista/doc/source/make_tables.py``, e.g.:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:842 ../../pyvista/CONTRIBUTING.rst:873
+msgid "where"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:844
+msgid ""
+"``name`` is used internally to define the name of the generated ``.rst`` "
+"file for the carousel"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:847
+msgid ""
+"``doc`` is a short text description of the carousel which will appear in the"
+" documentation in the header above the carousel"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:850
+msgid ""
+"``badge`` is used to give all datasets in the carousel a reference tag. The "
+"``ref`` argument for the badge should be a new reference target (details "
+"below)."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:854
+msgid ""
+"``fetch_dataset_names`` should return a list of any/all dataset names to be "
+"included in the carousel. The dataset names should not include any "
+"``load_``, ``download_``, or ``dataset_`` prefix."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:858
+msgid ""
+"Add the new carousel class to the the ``CAROUSEL_LIST`` variable defined in "
+"``pyvista/doc/source/make_tables.py``. This will enable the rst to be auto-"
+"generated for the carousel."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:862
+msgid ""
+"Update the ``pyvista/doc/source/api/examples/dataset_gallery.rst`` file to "
+"include the new generated ``<name>_carousel.rst`` file. E.g. to add the "
+"carousel as a new drop-down item, add the following:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:875
+msgid ""
+"the dropdown name ``:name: <reference>`` should be the badge's ``ref`` "
+"variable defined earlier. This will make it so that clicking on the new "
+"badge will link to the new dropdown menu."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:879
+msgid ""
+"the name of the included ``.rst`` file should match the ``name`` variable "
+"defined in the new ``Carousel`` class."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:882
+msgid ""
+"After building the documentation, the carousel should now be part of the "
+"gallery."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:886
 msgid "Creating a New Pull Request"
 msgstr "新規Pull Requestの作成"
 
-#: ../../pyvista/CONTRIBUTING.rst:763
+#: ../../pyvista/CONTRIBUTING.rst:888
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -1306,7 +1449,7 @@ msgstr ""
 "requestを作成します．これにより，継続的インテグレーション (CI) "
 "テストが自動的に実行され，変更が複数のプラットフォームで機能することが検証されます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:768
+#: ../../pyvista/CONTRIBUTING.rst:893
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -1317,7 +1460,7 @@ msgid ""
 msgstr ""
 "他のユーザーがコードをレビューできるようにするには，pyvistaコントリビュータグループの他の少なくとも1人のメンバーが，コードがコミュニティの標準を満たしているかどうかをレビューして検証する必要があります．承認後，書き込み権限があればブランチをマージすることができます．書き込みパーミッションがない場合，レビュー担当者または書き込みパーミッションを持つ別のユーザーがブランチをマージし，PRブランチを削除します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:775
+#: ../../pyvista/CONTRIBUTING.rst:900
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
@@ -1325,11 +1468,11 @@ msgid ""
 msgstr ""
 "ブランチをカレントリリースブランチ(下記参照)とマージする必要があるかもしれませんので， ``fix/`` ブランチであれば削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:780
+#: ../../pyvista/CONTRIBUTING.rst:905
 msgid "Preview the Documentation"
 msgstr "ドキュメントをプレビューする"
 
-#: ../../pyvista/CONTRIBUTING.rst:782
+#: ../../pyvista/CONTRIBUTING.rst:907
 msgid ""
 "Once you have make a Pull Request. You can comment `@pyvista-bot preview` on"
 " a pull request to preview documentation. Since this command is only "
@@ -1343,11 +1486,11 @@ msgstr ""
 "<https://github.com/orgs/pyvista/teams/developers>`_ "
 "にしか使えないので，新しい貢献者はコマンドをコメントするよう親切にお願いします．これは，潜在的に有害なコミットからデプロイサイトを守るために不可欠です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:791
+#: ../../pyvista/CONTRIBUTING.rst:916
 msgid "Branching Model"
 msgstr "ブランチモデル"
 
-#: ../../pyvista/CONTRIBUTING.rst:793
+#: ../../pyvista/CONTRIBUTING.rst:918
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
@@ -1356,11 +1499,11 @@ msgstr ""
 "このプロジェクトは，安定性を犠牲にすることなく機能の迅速な開発を可能にする分岐モデルを持っており， `Trunk Based Development "
 "<https://trunkbaseddevelopment.com/>`_  アプローチに厳密に従います．"
 
-#: ../../pyvista/CONTRIBUTING.rst:797
+#: ../../pyvista/CONTRIBUTING.rst:922
 msgid "The main features of our branching model are:"
 msgstr "ブランチモデルの主な特徴は次のとおりです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:799
+#: ../../pyvista/CONTRIBUTING.rst:924
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -1371,7 +1514,7 @@ msgstr ""
 "``main`` "
 "ブランチは主要な開発ブランチです．すべてのフィーチャー，パッチ，およびその他のブランチをここにマージする必要があります．すべてのPRは適用可能なCIチェックをすべてパスする必要がありますが，変更によって予期しない副作用や単体テストで検出されなかったバグが発生する可能性があるため，このブランチは機能的に不安定になる可能性があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:804
+#: ../../pyvista/CONTRIBUTING.rst:929
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -1390,7 +1533,7 @@ msgstr ""
 ")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
 "のホットフィックスを迅速にプッシュすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:814
+#: ../../pyvista/CONTRIBUTING.rst:939
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version (for example "
@@ -1407,11 +1550,11 @@ msgstr ""
 ")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
 "で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:825
+#: ../../pyvista/CONTRIBUTING.rst:950
 msgid "Minor Release Steps"
 msgstr "マイナーリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:827
+#: ../../pyvista/CONTRIBUTING.rst:952
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
@@ -1420,7 +1563,7 @@ msgstr ""
 "マイナーリリースは， ``pyvista`` "
 "の機能と安定性を改善する機能およびバグリリースです．マイナーリリースが作成される前に，次のことが発生します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:831
+#: ../../pyvista/CONTRIBUTING.rst:956
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (for example ``release/0.25``)."
@@ -1428,7 +1571,7 @@ msgstr ""
 "``main`` ブランチから ``release/MAJOR.MINOR`` "
 "という名前の新しいブランチを作成します(例: ``release/0.25`` )．"
 
-#: ../../pyvista/CONTRIBUTING.rst:834
+#: ../../pyvista/CONTRIBUTING.rst:959
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (for example ``0, 26, 'dev0'``). Push the branch to GitHub and create a "
@@ -1438,14 +1581,14 @@ msgstr ""
 "``pyvista/_version.py`` の開発バージョン番号を更新し，コミットします(例: ``0, 26, "
 "'dev0'``)．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:840
+#: ../../pyvista/CONTRIBUTING.rst:965
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 "`テストのセクション <#testing>`_ で概説されているように，すべてのテストをローカルで実行し，すべてが合格していることを確認します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:843
+#: ../../pyvista/CONTRIBUTING.rst:968
 msgid ""
 "Locally test and build the documentation with link checking to make sure no "
 "links are outdated. Be sure to run ``make clean`` to ensure no results are "
@@ -1454,13 +1597,13 @@ msgstr ""
 "リンクが古くなっていないことを確認するために，リンクチェックを行いながらドキュメントをローカルにテストしてビルドします．また， ``make "
 "clean`` を実行して，結果がキャッシュされていないことを確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:854
+#: ../../pyvista/CONTRIBUTING.rst:979
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr "ドキュメントをビルドしたら，ローカル・ビルドを開き，サンプル・ギャラリーで明らかな問題がないか調べてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:857
+#: ../../pyvista/CONTRIBUTING.rst:982
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -1470,7 +1613,7 @@ msgstr ""
 "新しいリリースを機能的にテストするのは ``pyvista`` "
 "コミュニティの責任です．このブランチをローカルにインストールして運用環境で使用することをお勧めします．検出されたバグについては，ホットフィックスをこのリリースブランチにプッシュする必要があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:862
+#: ../../pyvista/CONTRIBUTING.rst:987
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -1482,13 +1625,13 @@ msgstr ""
 "ブランチのバージョン番号を更新した後， ``release/MAJOR.MINOR`` ブランチは ``vMAJOR.MINOR.0`` "
 "リリースというタグが付けられます．リリースブランチは削除されません．次のようにリリースにタグを付けます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:872
+#: ../../pyvista/CONTRIBUTING.rst:997
 msgid ""
 "Please check again that the tag has been created correctly and push the "
 "branch and tag."
 msgstr "タグが正しく作成されたことを再度確認し，ブランチとタグをプッシュしてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:879
+#: ../../pyvista/CONTRIBUTING.rst:1004
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -1501,7 +1644,7 @@ msgstr ""
 "<https://github.com/pyvista/pyvista/compare>`_ を活用して，最後のタグや ``main`` "
 "ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:887
+#: ../../pyvista/CONTRIBUTING.rst:1012
 msgid ""
 "Place your release notes from previous step in the description for `the new "
 "release on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
@@ -1509,7 +1652,7 @@ msgstr ""
 "前の手順のリリースノートを `GitHubの新リリース "
 "<https://github.com/pyvista/pyvista/releases/new>`_ の説明に入れてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:891
+#: ../../pyvista/CONTRIBUTING.rst:1016
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro/cf-scripts>`_ to open a pull request on the conda-"
@@ -1520,21 +1663,21 @@ msgstr ""
 "scripts>`_ がconda-forge `PyVista feedstock <https://github.com/conda-"
 "forge/pyvista-feedstock>`_ のプルリクエストを開くのを待って，そのプルリクエストをマージします．"
 
-#: ../../pyvista/CONTRIBUTING.rst:897
+#: ../../pyvista/CONTRIBUTING.rst:1022
 msgid "Announce the new release in the Discussions page and celebrate."
 msgstr "Discussions ページで新リリースを発表し，お祝いしましょう．"
 
-#: ../../pyvista/CONTRIBUTING.rst:901
+#: ../../pyvista/CONTRIBUTING.rst:1026
 msgid "Patch Release Steps"
 msgstr "パッチリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:903
+#: ../../pyvista/CONTRIBUTING.rst:1028
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr "パッチリリースは重要なバグフィックスのためのもので，マイナーリリースまで待つことはできないものです．パッチリリースの手順は"
 
-#: ../../pyvista/CONTRIBUTING.rst:906
+#: ../../pyvista/CONTRIBUTING.rst:1031
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (for example ``release/0.25``)."
@@ -1542,7 +1685,7 @@ msgstr ""
 "必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例 "
 "``release/0.25``)です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:909
+#: ../../pyvista/CONTRIBUTING.rst:1034
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (for example "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -1553,7 +1696,7 @@ msgstr ""
 ")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
 "コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
-#: ../../pyvista/CONTRIBUTING.rst:915
+#: ../../pyvista/CONTRIBUTING.rst:1040
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -1563,21 +1706,21 @@ msgstr ""
 "承認されたら，リリースブランチとマージしますが， ``main`` ブランチのバージョンを増やす理由がないため， ``main`` "
 "とはマージしません．次に，リリースブランチから適切なバージョン番号(正しい手順については上記を参照してください．)のタグを作成します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:920
+#: ../../pyvista/CONTRIBUTING.rst:1045
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
 msgstr "必要に応じて，リリースノートページを作成します．また，condaからPRを開き，マイナーリリースセクションの手順10の指示に従います．"
 
-#: ../../pyvista/CONTRIBUTING.rst:925
+#: ../../pyvista/CONTRIBUTING.rst:1050
 msgid "Dependency version policy"
 msgstr "依存バージョンポリシー"
 
-#: ../../pyvista/CONTRIBUTING.rst:928
+#: ../../pyvista/CONTRIBUTING.rst:1053
 msgid "Python and VTK dependencies"
 msgstr "PythonとVTKの依存関係"
 
-#: ../../pyvista/CONTRIBUTING.rst:930
+#: ../../pyvista/CONTRIBUTING.rst:1055
 msgid ""
 "We support all supported `Python versions`_ and `VTK versions`_ that support"
 " those Python versions. As much as we would prefer to follow `SPEC 0`_, we "
