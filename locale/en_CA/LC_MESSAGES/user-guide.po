@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 22:19+0000\n"
+"POT-Creation-Date: 2024-03-29 04:14+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: English (Canada) (https://app.transifex.com/tkoyama010/teams/112279/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -1110,6 +1110,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:100
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:161
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`"
@@ -1179,26 +1180,117 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:149
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:163
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
 "<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:154
-msgid "Other Considerations"
+msgid "Setting Remote Jupyter Host with an Environment Variable"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:155
+msgid ""
+"You can set the Remote Jupyter Host manually with the flags discussed above,"
+" but these need to be set every time the Jupyter kernel restarts. In some "
+"environments, it may be more efficient to configure the Remote Jupyter Host "
+"with an environment variable. If set, the value for "
+"`PYVISTA_TRAME_JUPYTER_MODE` will determine the values of these two flags:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:166
+msgid ""
+"If set, the accepted values for `PYVISTA_TRAME_JUPYTER_MODE` include "
+"``'extension'``, ``'proxy'``, and ``'native'``. The following table shows "
+"how each accepted value will affect the two flags, as well as any "
+"precondition that must be true for the value to be applicable. To meet these"
+" prerequisites, review the sections above for installation instructions."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:174
+msgid "`PYVISTA_TRAME_JUPYTER_MODE`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:175
+msgid "Description"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:176
+msgid "Condition"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:177
+msgid "`server_proxy_enabled`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:178
+msgid "`jupyter_extension_enabled`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:180
+msgid "\"extension\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:181
+msgid "Use Trame Jupyter Extension"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:182
+msgid "Extension must be available"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:183
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:190
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:195
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:196
+msgid "False"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:184
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:189
+msgid "True"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:186
+msgid "\"proxy\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:187
+msgid "Use Jupyter Server Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:188
+msgid "Proxy must be available"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:192
+msgid "\"native\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:193
+msgid "Do not use Extension nor Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:194
+msgid "None"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:199
+msgid "Other Considerations"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:200
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:157
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:202
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:171
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:216
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"

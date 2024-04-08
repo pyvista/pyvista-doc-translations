@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2023
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.44.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 22:19+0000\n"
+"POT-Creation-Date: 2024-03-29 04:14+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2023\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1310,6 +1310,7 @@ msgstr ""
 " のグローバルテーマでいくつかのオプションを設定する必要があります．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:100
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:161
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`"
@@ -1393,6 +1394,7 @@ msgstr ""
 "に設定することで，PyVistaがそれを使用するかどうかを選択できます．"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:149
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:163
 msgid ""
 ":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
 "<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
@@ -1401,14 +1403,109 @@ msgstr ""
 "<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:154
+msgid "Setting Remote Jupyter Host with an Environment Variable"
+msgstr "環境変数によるリモートJupyterホストの設定"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:155
+msgid ""
+"You can set the Remote Jupyter Host manually with the flags discussed above,"
+" but these need to be set every time the Jupyter kernel restarts. In some "
+"environments, it may be more efficient to configure the Remote Jupyter Host "
+"with an environment variable. If set, the value for "
+"`PYVISTA_TRAME_JUPYTER_MODE` will determine the values of these two flags:"
+msgstr ""
+"リモートJupyterホストを上記で説明したフラグを使って手動で設定することもできますが、これらはJupyterカーネルが再起動するたびに設定する必要があります。環境変数でリモートJupyterホストを設定する方が効率的な場合もあります。もし設定されていれば、"
+" `PYVISTA_TRAME_JUPYTER_MODE` の値がこれら2つのフラグの値を決定します。"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:166
+msgid ""
+"If set, the accepted values for `PYVISTA_TRAME_JUPYTER_MODE` include "
+"``'extension'``, ``'proxy'``, and ``'native'``. The following table shows "
+"how each accepted value will affect the two flags, as well as any "
+"precondition that must be true for the value to be applicable. To meet these"
+" prerequisites, review the sections above for installation instructions."
+msgstr ""
+"設定されている場合、 `PYVISTA_TRAME_JUPYTER_MODE` に指定できる値は ``'extension'`` , "
+"``'proxy'`` , ``'native'`` "
+"です。以下の表は、それぞれの値が2つのフラグにどのような影響を与えるか、またその値を適用するために真でなければならない前提条件を示しています。"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:174
+msgid "`PYVISTA_TRAME_JUPYTER_MODE`"
+msgstr "`PYVISTA_TRAME_JUPYTER_MODE`"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:175
+msgid "Description"
+msgstr "説明"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:176
+msgid "Condition"
+msgstr "状態"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:177
+msgid "`server_proxy_enabled`"
+msgstr "`server_proxy_enabled`"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:178
+msgid "`jupyter_extension_enabled`"
+msgstr "`jupyter_extension_enabled`"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:180
+msgid "\"extension\""
+msgstr "\"extension\""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:181
+msgid "Use Trame Jupyter Extension"
+msgstr "Trame Jupyterエクステンションを使用する"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:182
+msgid "Extension must be available"
+msgstr "拡張が利用可能であること 。"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:183
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:190
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:195
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:196
+msgid "False"
+msgstr "False"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:184
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:189
+msgid "True"
+msgstr "True"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:186
+msgid "\"proxy\""
+msgstr "\"proxy\""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:187
+msgid "Use Jupyter Server Proxy"
+msgstr "Jupyter サーバープロキシを使用する"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:188
+msgid "Proxy must be available"
+msgstr "プロキシが利用可能であること 。"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:192
+msgid "\"native\""
+msgstr "\"native\""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:193
+msgid "Do not use Extension nor Proxy"
+msgstr "エクステンションもプロキシも使わない"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:194
+msgid "None"
+msgstr "None"
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:199
 msgid "Other Considerations"
 msgstr "その他の考慮事項"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:155
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:200
 msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
 msgstr "GPUアクセラレーションを使用する価値があるかもしれません． :ref:`gpu_off_screen` を参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:157
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:202
 msgid ""
 "If you do not have GPU acceleration, be sure to start up a virtual "
 "framebuffer using ``Xvfb``.  You can either start it using bash with:"
@@ -1416,7 +1513,7 @@ msgstr ""
 "GPUアクセラレーションを使用していない場合は，必ず ``Xvfb`` "
 "を使用して仮想フレームバッファを起動してください．bashを使用して起動するには，次のようにします．"
 
-#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:171
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:216
 msgid ""
 "Or alternatively, start it using the built in ``pyvista.start_xvfb()``.  "
 "Please be sure to install ``xvfb`` and ``libgl1-mesa-glx`` with:"
