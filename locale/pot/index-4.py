@@ -1,7 +1,8 @@
 import numpy as np
 import pyvista
 
-point_cloud = np.random.random((100, 3))
+rng = np.random.default_rng(seed=0)
+point_cloud = rng.random((100, 3))
 pdata = pyvista.PolyData(point_cloud)
 pdata['orig_sphere'] = np.arange(100)
 
