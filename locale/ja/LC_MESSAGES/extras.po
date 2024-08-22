@@ -1209,6 +1209,9 @@ msgid ""
 " output from the input string. Otherwise, all ``Mypy`` errors for the "
 "``pyvista`` package are reported."
 msgstr ""
+"このテストで ``Mypy`` が返す実際の型は、以下のコマンドで生成できます。 ``grep`` "
+"は入力文字列からの出力のみを返す必要があることに注意してください。そうでない場合は、 ``pyvista`` パッケージのすべての ``Mypy`` "
+"エラーが報告されます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:694
 msgid "For this test case, the revealed type by ``Mypy`` is:"
@@ -1336,6 +1339,7 @@ msgid ""
 " When the documentation is built, all generated images are automatically "
 "saved to"
 msgstr ""
+"画像のリグレッションテストは、公開されているすべてのドキュメント画像に対して実施されます。文書が作成されると、生成された画像はすべて自動的に以下に保存されます"
 
 #: ../../pyvista/CONTRIBUTING.rst:795
 msgid "Build Image Directory: ``./doc/_build/html/_images``"
@@ -1344,7 +1348,7 @@ msgstr "ビルド画像ディレクトリ: ``./doc/_build/html/_images``"
 #: ../../pyvista/CONTRIBUTING.rst:797
 msgid ""
 "The regression testing compares these generated images to those stored in"
-msgstr ""
+msgstr "回帰テストでは、生成された画像と以下に保存されている画像を比較します"
 
 #: ../../pyvista/CONTRIBUTING.rst:799
 msgid "Doc Image Cache: ``./tests/doc/doc_image_cache``"
@@ -1352,7 +1356,7 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:801
 msgid "To test all the images, run ``pytest`` with:"
-msgstr ""
+msgstr "すべての画像をテストするには、``pytest`` を実行します:"
 
 #: ../../pyvista/CONTRIBUTING.rst:807
 msgid ""
@@ -1367,15 +1371,15 @@ msgstr ""
 msgid ""
 "When executed, the test will first pre-process the build images. The images "
 "are:"
-msgstr ""
+msgstr "実行されると、テストはまずビルド画像を前処理します。 その画像は:"
 
 #: ../../pyvista/CONTRIBUTING.rst:815
 msgid "Collected from the ``Build Image Directory``."
-msgstr ""
+msgstr "``Build Image Directory`` から収集されます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:817
 msgid "Resized to a maximum of 400x400 pixels."
-msgstr ""
+msgstr "最大400x400ピクセルにリサイズ。"
 
 #: ../../pyvista/CONTRIBUTING.rst:819
 msgid "Saved to a flat directory as JPEG images in ``./_doc_debug_images``."
