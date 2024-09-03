@@ -1227,6 +1227,11 @@ msgid ""
 "``numpy`` should also be omitted for tests where a ``numpy.ndarray`` is "
 "expected.)"
 msgstr ""
+"明らかにされた型は完全修飾されています、つまり ``builtins`` を含んでいることに注意してください。 "
+"簡潔にするために、カスタムテストスイートではこれを省略し、 ``list`` だけが期待される型に含まれることを要求しています。 "
+"したがって、このテストケースでは ``EXPECTED_TYPE`` 型は ``\"list[float]\"`` であり、 "
+"``\"builtins.list[builtins.float]\"`` ではありません。 (同様に、 ``numpy.ndarray`` "
+"が期待されるテストでは、パッケージ名 ``numpy`` も省略する必要があります。)"
 
 #: ../../pyvista/CONTRIBUTING.rst:707
 msgid ""
@@ -1261,6 +1266,11 @@ msgid ""
 "in ``tests/core/typing/test_validation_typing.py`` so that the runtime test "
 "can call the function."
 msgstr ""
+"さらに、 ``pyanalyze`` パッケージは、実行時に実際に返される型が静的に公開された型と一致するかどうかをテストします。 これには "
+"`pyanalyze.runtime.get_compatibility_error "
+"<https://pyanalyze.readthedocs.io/en/latest/reference/runtime.html#pyanalyze.runtime.get_compatibility_error>`_"
+" メソッドが使用されます。 新しい検証関数のために新しいタイピングテストケースが追加された場合、新しい関数は "
+"``tests/core/typing/test_validation_typing.py`` のインポートリストに追加されなければなりません。"
 
 #: ../../pyvista/CONTRIBUTING.rst:730
 msgid "Building the Documentation"
@@ -1366,6 +1376,9 @@ msgid ""
 "prefixed with ``test`` by default.) This is done since the tests require "
 "building the documentation, and are not a primary form of testing."
 msgstr ""
+"テストはこのコマンドで明示的に実行する必要があります。 テストファイル名の先頭に ``tst`` をつけるのは、特に ``pytest`` "
+"によって自動的に実行されないようにするためです (``pytest`` はデフォルトで ``test`` "
+"を先頭に持つすべてのテストを収集します)。これはテストがドキュメントのビルドを必要とし、テストの主要な形式ではないからです。"
 
 #: ../../pyvista/CONTRIBUTING.rst:813
 msgid ""
@@ -1391,6 +1404,8 @@ msgid ""
 "the cached images in the ``Doc Image Cache`` using "
 ":func:`pyvista.compare_images`."
 msgstr ""
+"次に、 ``./_doc_debug_images`` にある前処理済みの画像と ``Doc Image Cache`` にあるキャッシュ画像を "
+":func:`pyvista.compare_images` を使って比較します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:824
 msgid ""
@@ -1400,33 +1415,33 @@ msgstr "テストは3つの方法で失敗する可能性があります。失�
 
 #: ../../pyvista/CONTRIBUTING.rst:827
 msgid "If the comparison between the two images fails:"
-msgstr ""
+msgstr "2つの画像の比較に失敗した場合:"
 
 #: ../../pyvista/CONTRIBUTING.rst:829
 msgid "The cache image is copied to ``./_doc_debug_images_failed/from_cache``"
-msgstr ""
+msgstr "キャッシュ画像は ``./_doc_debug_images_failed/from_cache`` にコピーされます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:830
 msgid "The build image is copied to ``./_doc_debug_images_failed/from_build``"
-msgstr ""
+msgstr "ビルド画像は ``./_doc_debug_images_failed/from_build`` にコピーされます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:832
 msgid "If an image is in the cache but missing from the build:"
-msgstr ""
+msgstr "画像がキャッシュにあるが、ビルドにない場合:"
 
 #: ../../pyvista/CONTRIBUTING.rst:834
 msgid ""
 "The cache image is copied to  ``./_doc_debug_images_failed/from_cache``"
-msgstr ""
+msgstr "キャッシュ画像は ``./_doc_debug_images_failed/from_cache`` にコピーされます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:836
 msgid "If an image is in the build but missing from the cache:"
-msgstr ""
+msgstr "画像はビルド内にあるが、キャッシュにない場合:"
 
 #: ../../pyvista/CONTRIBUTING.rst:838
 msgid ""
 "The build image is copied to  ``./_doc_debug_images_failed/from_build``"
-msgstr ""
+msgstr "ビルド画像は ``./_doc_debug_images_failed/from_build`` にコピーされます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:840
 msgid ""
@@ -1437,6 +1452,11 @@ msgid ""
 " if removing examples, the images in ``from_cache`` may be removed from the "
 "``Doc Image Cache``."
 msgstr ""
+"失敗したテストを解決するために、``from_build`` または ``from_cache`` にある画像を ``Doc Image Cache``"
+" にコピーしたり、``Doc Image Cache`` から削除したりすることができます。 "
+"例えば、新しいdocstringの例やプロットを追加する場合、最初はテストが失敗し、 ``from_build`` にある画像が ``Doc Image"
+" Cache`` に追加されます。 同様に、例題を削除する場合、 ``from_cache`` の画像は ``Doc Image Cache`` "
+"から削除されます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:847
 msgid ""
@@ -1449,6 +1469,11 @@ msgid ""
 "the build image is then compared to all images in the flaky test directory. "
 "The test is successful if one of the comparisons is successful."
 msgstr ""
+"テストが不安定な場合、例えばビルドが同じプロットに対して異なるイメージを生成することがある場合、複数のバージョンのイメージは flaky test "
+"ディレクトリ ``./tests/doc/flaky_tests`` に保存することができます。 "
+"テストイメージと同じ名前のフォルダを作成し、すべてのバージョンのイメージをこのディレクトリに保存する必要があります。 "
+"このテストでは、まずビルドイメージを通常通り ``Doc Image Cache`` にあるキャッシュイメージと比較します。 "
+"この比較が失敗した場合、ビルド画像は flaky test ディレクトリのすべての画像と比較されます。 いずれかの比較が成功すればテストは成功です。"
 
 #: ../../pyvista/CONTRIBUTING.rst:859
 msgid ""
@@ -1458,6 +1483,9 @@ msgid ""
 "processed build images and (2) failed test cases. These artifacts may simply"
 " be downloaded from GitHub for review."
 msgstr ""
+"docイメージキャッシュに追加したり更新したりするために、ドキュメントイメージをローカルでビルドする必要はありません。 ドキュメントは CI "
+"テストの一環として自動的にビルドされ、(1) 前処理済みのビルドイメージと (2) 失敗したテストケースに対して成果物が生成されます。 "
+"これらの成果物は、GitHubからダウンロードして確認することができる。"
 
 #: ../../pyvista/CONTRIBUTING.rst:865
 msgid ""
@@ -1466,6 +1494,9 @@ msgid ""
 "local ``Build Image Directory``, the tests can then be executed locally for "
 "debugging as though the documentation has already been built."
 msgstr ""
+"アーティファクトと一緒に保存されたデバッグ画像は、ドキュメン画像をローカルでビルドする \"simulate\" にも使用できます。 画像をローカルの "
+"``Build Image Directory`` "
+"にコピーすれば、あたかもドキュメントがすでにビルドされているかのように、ローカルでテストを実行してデバッグすることができます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:872
 msgid ""
@@ -1475,6 +1506,10 @@ msgid ""
 " Image Regression Testing`_ for testing methods which should be considered "
 "first."
 msgstr ""
+"これらのテストは ``pyvista`` が生成するプロットが正しいことを保証するための *追加的な* "
+"テストカバレッジを提供することを意図しており、テストの主要なソースとして使用すべきではありません。 最初に考慮すべきテスト方法については、 "
+"`Documentation Testing`_ と `Notes Regarding Image Regression Testing`_ "
+"を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:879
 msgid "Controlling Cache for CI Documentation Build"
@@ -1488,6 +1523,9 @@ msgid ""
 "invalidate a cache for a specific PR, one of the following labels can be "
 "applied to the PR."
 msgstr ""
+"PRのドキュメントのビルド時間を短縮するために、GitHub上のCIではキャッシュされたsphinxギャラリー、サンプルデータ、sphinxビルドディレクトリが使用されています。"
+" 場合によっては、キャッシュが特定の PR に対して問題を引き起こすことがあります。 "
+"特定のPRのキャッシュを無効にするには、以下のラベルのいずれかをPRに適用します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:885
 msgid "``no-example-data-cache``"
