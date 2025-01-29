@@ -5,6 +5,8 @@
 # 
 # Translators:
 # Bin Yang <yangbin880101@163.com>, 2022
+# 聖文 陳, 2024
+# 宇鹏 王, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-18 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
+"Last-Translator: 宇鹏 王, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,7 +25,7 @@ msgstr ""
 
 #: ../../pyvista/docs/core/camera.rst:2
 msgid "Cameras"
-msgstr ""
+msgstr "相机"
 
 #: ../../pyvista/docs/core/camera.rst:3
 msgid ""
@@ -32,18 +34,19 @@ msgid ""
 " come with a default set of cameras that work well in most cases, but in "
 "many situations a more hands-on approach to using the camera is necessary."
 msgstr ""
+":class:`pyvista.Camera`类提供了附加的函数和调用用`vtk.vtkCamera`类的python接口。:class:`pyvista.Camera`的对象在创建时会自带一系列默认的相机配置。在大部分情况下，这些默认配置都很好用。但是很多时候必须有一个易上手控制的相机接口。"
 
 #: ../../pyvista/docs/core/camera.rst:11 ../../pyvista/docs/core/lights.rst:10
 msgid "Brief Example"
-msgstr ""
+msgstr "简要示例"
 
 #: ../../pyvista/docs/core/camera.rst:13
 msgid "Create a frustum of camera, then create a scene of inside frustum."
-msgstr ""
+msgstr "创建一个视锥，然后创建一个视锥内部的情景。"
 
 #: ../../pyvista/docs/core/camera.rst:86
 msgid "Controlling Camera Rotation"
-msgstr ""
+msgstr "控制相机旋转"
 
 #: ../../pyvista/docs/core/camera.rst:87
 msgid ""
@@ -53,39 +56,42 @@ msgid ""
 ":py:attr:`pyvista.Camera.elevation`, and :py:attr:`pyvista.Camera.azimuth` "
 "of the camera."
 msgstr ""
+"除了通过设置:py:attr:`pyvista.Camera.position`属性直接控制相机位置外，还能直接控制相机的滚动(:py:attr:`pyvista.Camera.roll`)、高低"
+" "
+"(:py:attr:`pyvista.Camera.elevation`)和方位角(:py:attr:`pyvista.Camera.azimuth`)。"
 
 #: ../../pyvista/docs/core/camera.rst:95
 msgid ""
 "For example, you can modify the roll.  First, generate a plot of an "
 "orientation cube while initially setting the camera position to look at the "
 "``'yz'``."
-msgstr ""
+msgstr "例如，修改相机滚动。首先，在最初设置相机位置的时候，绘制一个看向`yz`面的方位立方体"
 
 #: ../../pyvista/docs/core/camera.rst:107
 msgid "Here we modify the roll in-place."
-msgstr ""
+msgstr "接着直接修改`roll`值"
 
 #: ../../pyvista/docs/core/camera.rst:118
 msgid ""
 "And here we offset the azimuth of the camera by 45 degrees to look at the "
 "``X+`` and ``Y+`` faces."
-msgstr ""
+msgstr "然后让相机的方位角偏移45度，看向立方体的`X+`和`Y+`面。"
 
 #: ../../pyvista/docs/core/camera.rst:130
 msgid ""
 "Here, we move upward by setting the elevation of the camera to 45 degrees to"
 " see the ``X+`` and ``Z+`` faces."
-msgstr ""
+msgstr "这里修改相机的高度到45度，使相机上移，看到立方体的`X+`和`Z+`面。"
 
 #: ../../pyvista/docs/core/camera.rst:144
 #: ../../pyvista/docs/core/lights.rst:122
 msgid "API reference"
-msgstr ""
+msgstr "API参考手册"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:1
 msgid "PyVista wrapper for the VTK Camera class."
-msgstr ""
+msgstr "PyVista对VTK的Camera类的封装"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:4
@@ -313,23 +319,23 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.core.pointset.PolyData:53
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:5
 msgid "Create a camera at the pyvista module level"
-msgstr ""
+msgstr "由pyvista模块创建相机"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera:10
 msgid ""
 "Access the active camera of a plotter and get the position of the camera."
-msgstr ""
+msgstr "访问一个plotter的活动相机，并获取它的位置"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:1
 msgid "Azimuth of the camera."
-msgstr ""
+msgstr "相机的方位角"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.azimuth:3
@@ -337,34 +343,34 @@ msgid ""
 "Rotate the camera about the view up vector centered at the focal point. Note"
 " that the view up vector is whatever was set via SetViewUp, and is not "
 "necessarily perpendicular to the direction of projection."
-msgstr ""
+msgstr "围绕以焦点为中心的视线矢量旋转相机。注意：视线矢量是通过SetViewUp设置的任何值，不一定垂直于投影的方向。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.clipping_range:1
 msgid ""
 "Return the location of the near and far clipping planes along the direction "
 "of projection."
-msgstr ""
+msgstr "返回沿着投影方向的近端剪切面和远端剪切面的位置。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.direction:1
 msgid "Vector from the camera position to the focal point."
-msgstr ""
+msgstr "从相机位置指向焦点的向量"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.disable_parallel_projection:1
 msgid "Disable the use of perspective projection."
-msgstr ""
+msgstr "禁用平行投影。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.distance:1
 msgid "Distance from the camera position to the focal point."
-msgstr ""
+msgstr "相机位置到焦点的距离。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.elevation:1
 msgid "Vertical rotation of the scene."
-msgstr ""
+msgstr "景象在垂直方向的旋转"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.elevation:3
@@ -372,71 +378,71 @@ msgid ""
 "Rotate the camera about the cross product of the negative of the direction "
 "of projection and the view up vector, using the focal point as the center of"
 " rotation."
-msgstr ""
+msgstr "以焦点为旋转中心，沿着投影方向的反方向和相机顶部正朝向向量交叉垂直的叉积结果的方向旋转相机。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.enable_parallel_projection:1
 msgid "Enable parallel projection."
-msgstr ""
+msgstr "启用平行投影"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.enable_parallel_projection:3
 msgid ""
 "The camera will have a parallel projection. Parallel projection is often "
 "useful when viewing images or 2D datasets."
-msgstr ""
+msgstr "相机将具有平行投影。平行投影常常在查看图片或2D数据对象时很实用。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.focal_point:1
 msgid "Location of the camera's focus in world coordinates."
-msgstr ""
+msgstr "相机焦点在坐标系中的位置。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.is_parallel_projection:1
 msgid "Return True if parallel projection is set."
-msgstr ""
+msgstr "设置平行投影后，返回真。"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.model_transform_matrix:1
 msgid "Return the camera's model transformation matrix."
-msgstr ""
+msgstr "返回相机的模型转换矩阵"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.parallel_scale:1
 msgid "Scaling used for a parallel projection."
-msgstr ""
+msgstr "平行投影的缩放比例"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.position:1
 msgid "Position of the camera in world coordinates."
-msgstr ""
+msgstr "相机在坐标系中的位置"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:1
 msgid "Rotate the camera about the direction of projection."
-msgstr ""
+msgstr "绕着投影的方向旋转相机"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.roll:3
 msgid "This will spin the camera about its axis."
-msgstr ""
+msgstr "沿着它的轴线旋转相机"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.thickness:1
 msgid "Return the distance between clipping planes."
-msgstr ""
+msgstr "返回剪切平面之间的距离"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of pyvista.Camera.up:1
 msgid "Return the \"up\" of the camera."
-msgstr ""
+msgstr "返回相机顶部朝向的单位向量"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.Camera.view_angle:1
 msgid "Return the camera view angle."
-msgstr ""
+msgstr "返回相机视角的大小"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:1
 msgid "Get the view frustum."
-msgstr ""
+msgstr "获取视锥"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -740,7 +746,7 @@ msgstr "参数"
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:3
 msgid "The aspect of the viewport to compute the planes. Defaults to 1.0."
-msgstr ""
+msgstr "用于计算位面的观察口的视方位"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -895,12 +901,12 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:0
 msgid "Returns"
-msgstr ""
+msgstr "返回"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:7
 msgid "**frustum** -- View frustum."
-msgstr ""
+msgstr "**frustum** -- 视锥."
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.view_frustum:0
@@ -1041,44 +1047,44 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:0
 msgid "Return type"
-msgstr ""
+msgstr "返回值类型"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:1
 msgid "Set the zoom of the camera."
-msgstr ""
+msgstr "设置相机的缩放"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:3
 msgid "In perspective mode, decrease the view angle by the specified factor."
-msgstr ""
+msgstr "在透视模式下，通过特定系数减小视角"
 
 #: ../../pyvista/pyvista/plotting/camera.pydocstring of
 #: pyvista.plotting.camera.Camera.zoom:6
 msgid ""
 "In parallel mode, decrease the parallel scale by the specified factor. A "
 "value greater than 1 is a zoom-in, a value less than 1 is a zoom-out."
-msgstr ""
+msgstr "在平行投影模式，通过特定系数减小平行的比例。值大于1则放大，值小于1则缩小图像。"
 
 #: ../../pyvista/docs/core/composite.rst:2
 msgid "Composite Datasets"
-msgstr ""
+msgstr "复合数据集"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite:1
 msgid "Container to mimic ``vtkMultiBlockDataSet`` objects."
-msgstr ""
+msgstr "模仿`vtkMultiBlockDataSet`对象的容器"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite:3
 msgid ""
 "These classes hold many VTK datasets in one object that can be passed to VTK"
 " algorithms and PyVista filtering/plotting routines."
-msgstr ""
+msgstr "这些类，在一个对象中包含了许多VTK数据集，可以被VTK算法或PyVista的过滤/绘制程序使用。"
 
 #: ../../pyvista/docs/core/composite.rst:8
 msgid "MultiBlock Datasets"
-msgstr ""
+msgstr "MultiBlock数据集"
 
 #: ../../pyvista/docs/core/composite.rst:11
 #: ../../pyvista/docs/core/dataset.rst:31 ../../pyvista/docs/core/grids.rst:12
@@ -1091,21 +1097,21 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:378
 #: ../../pyvista/docs/core/points.rst:140
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`bounds <pyvista.core.composite.pyvista.MultiBlock.bounds>`\\"
-msgstr ""
+msgstr ":obj:`bounds <pyvista.core.composite.pyvista.MultiBlock.bounds>`\\"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:1
 msgid "Find min/max for bounds across blocks."
-msgstr ""
+msgstr "找到这些块在各个轴向的最小、最大界限"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`center <pyvista.core.composite.pyvista.MultiBlock.center>`\\"
-msgstr ""
+msgstr ":obj:`center <pyvista.core.composite.pyvista.MultiBlock.center>`\\"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1113,11 +1119,11 @@ msgstr ""
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.center:1
 msgid "Return the center of the bounding box."
-msgstr ""
+msgstr "返回边界框的中心"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`length <pyvista.core.composite.pyvista.MultiBlock.length>`\\"
-msgstr ""
+msgstr ":obj:`length <pyvista.core.composite.pyvista.MultiBlock.length>`\\"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1125,27 +1131,27 @@ msgstr ""
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.length:1
 msgid "Return the length of the diagonal of the bounding box."
-msgstr ""
+msgstr "返回边界框的对角线的长度"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`n_blocks <pyvista.core.composite.pyvista.MultiBlock.n_blocks>`\\"
-msgstr ""
+msgstr ":obj:`n_blocks <pyvista.core.composite.pyvista.MultiBlock.n_blocks>`\\"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.n_blocks:1
 msgid "Return the total number of blocks set."
-msgstr ""
+msgstr "返回包含的块集合的总数目"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 msgid ":obj:`volume <pyvista.core.composite.pyvista.MultiBlock.volume>`\\"
-msgstr ""
+msgstr ":obj:`volume <pyvista.core.composite.pyvista.MultiBlock.volume>`\\"
 
 #: ../../pyvista/docs/core/composite.rst:14:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:1
 msgid "Return the total volume of all meshes in this dataset."
-msgstr ""
+msgstr "返回该数据集中全部网格的总容积"
 
 #: ../../pyvista/docs/core/composite.rst:16
 #: ../../pyvista/docs/core/dataset.rst:36
@@ -1163,35 +1169,39 @@ msgstr ""
 #: ../../pyvista/docs/core/point-grids.rst:383
 #: ../../pyvista/docs/core/points.rst:145
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`append <pyvista.core.composite.pyvista.MultiBlock.append>`\\ "
 "\\(data\\)"
 msgstr ""
+":obj:`append <pyvista.core.composite.pyvista.MultiBlock.append>`\\ "
+"\\(data\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.append:1
 msgid "Add a data set to the next block index."
-msgstr ""
+msgstr "追加一个数据集"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`clean <pyvista.core.composite.pyvista.MultiBlock.clean>`\\ "
 "\\(\\[empty\\]\\)"
 msgstr ""
+":obj:`clean <pyvista.core.composite.pyvista.MultiBlock.clean>`\\ "
+"\\(\\[empty\\]\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.clean:1
 msgid "Remove any null blocks in place."
-msgstr ""
+msgstr "原地移除空的块"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`copy <pyvista.core.composite.pyvista.MultiBlock.copy>`\\ \\(\\[deep\\]\\)"
-msgstr ""
+msgstr ":obj:`copy <pyvista.core.composite.pyvista.MultiBlock.copy>`\\ \\(\\[deep\\]\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1200,13 +1210,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:1
 msgid "Return a copy of the object."
-msgstr ""
+msgstr "返回对象的副本"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`copy_meta_from "
 "<pyvista.core.composite.pyvista.MultiBlock.copy_meta_from>`\\ \\(ido\\)"
 msgstr ""
+":obj:`copy_meta_from "
+"<pyvista.core.composite.pyvista.MultiBlock.copy_meta_from>`\\ \\(ido\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1218,79 +1230,87 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy_meta_from:1
 msgid "Copy pyvista meta data onto this object from another object."
-msgstr ""
+msgstr "把另一个对象的pyvista元数据复制到这个对象上"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`get <pyvista.core.composite.pyvista.MultiBlock.get>`\\ \\(index\\)"
-msgstr ""
+msgstr ":obj:`get <pyvista.core.composite.pyvista.MultiBlock.get>`\\ \\(index\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get:1
 msgid "Get a block by its index or name."
-msgstr ""
+msgstr "使用索引或名称获取其中一个块"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`get_block_name "
 "<pyvista.core.composite.pyvista.MultiBlock.get_block_name>`\\ \\(index\\)"
 msgstr ""
+":obj:`get_block_name "
+"<pyvista.core.composite.pyvista.MultiBlock.get_block_name>`\\ \\(index\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_block_name:1
 msgid "Return the string name of the block at the given index."
-msgstr ""
+msgstr "根据指定的块索引获取块的名称。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`get_data_range "
 "<pyvista.core.composite.pyvista.MultiBlock.get_data_range>`\\ \\(name\\)"
 msgstr ""
+":obj:`get_data_range "
+"<pyvista.core.composite.pyvista.MultiBlock.get_data_range>`\\ \\(name\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_data_range:1
 msgid "Get the min/max of an array given its name across all blocks."
-msgstr ""
+msgstr "给定所有块都有的某个数组名称，获取这些块的数组内数的最小值和最大值。"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`get_index_by_name "
 "<pyvista.core.composite.pyvista.MultiBlock.get_index_by_name>`\\ \\(name\\)"
 msgstr ""
+":obj:`get_index_by_name "
+"<pyvista.core.composite.pyvista.MultiBlock.get_index_by_name>`\\ \\(name\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get_index_by_name:1
 msgid "Find the index number by block name."
-msgstr ""
+msgstr "通过块名字获取其索引数值"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`keys <pyvista.core.composite.pyvista.MultiBlock.keys>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`keys <pyvista.core.composite.pyvista.MultiBlock.keys>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.keys:1
 msgid "Get all the block names in the dataset."
-msgstr ""
+msgstr "获取数据集中所有块的名称"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`next <pyvista.core.composite.pyvista.MultiBlock.next>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`next <pyvista.core.composite.pyvista.MultiBlock.next>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.next:1
 msgid "Get the next block from the iterator."
-msgstr ""
+msgstr "获取迭代器的下一个块"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`plot <pyvista.core.composite.pyvista.MultiBlock.plot>`\\ "
 "\\(\\[off\\_screen\\, full\\_screen\\, screenshot\\, ...\\]\\)"
 msgstr ""
+":obj:`plot <pyvista.core.composite.pyvista.MultiBlock.plot>`\\ "
+"\\(\\[off\\_screen\\, full\\_screen\\, screenshot\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
@@ -1299,17 +1319,17 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:1
 msgid "Plot a vtk or numpy object."
-msgstr ""
+msgstr "绘制一个vtk或numpy对象"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ":obj:`pop <pyvista.core.composite.pyvista.MultiBlock.pop>`\\ \\(index\\)"
-msgstr ""
+msgstr ":obj:`pop <pyvista.core.composite.pyvista.MultiBlock.pop>`\\ \\(index\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.pop:1
 msgid "Pop off a block at the specified index."
-msgstr ""
+msgstr "去除指定索引位置的块"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
@@ -1317,25 +1337,30 @@ msgid ""
 "<pyvista.core.composite.pyvista.MultiBlock.set_block_name>`\\ \\(index\\, "
 "name\\)"
 msgstr ""
+":obj:`set_block_name "
+"<pyvista.core.composite.pyvista.MultiBlock.set_block_name>`\\ \\(index\\, "
+"name\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.set_block_name:1
 msgid "Set a block's string name at the specified index."
-msgstr ""
+msgstr "为指定索引位置的块设置名称"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 msgid ""
 ":obj:`wrap_nested <pyvista.core.composite.pyvista.MultiBlock.wrap_nested>`\\"
 " \\(\\)"
 msgstr ""
+":obj:`wrap_nested <pyvista.core.composite.pyvista.MultiBlock.wrap_nested>`\\"
+" \\(\\)"
 
 #: ../../pyvista/docs/core/composite.rst:20:<autosummary>:1
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.wrap_nested:1
 msgid ""
 "Ensure that all nested data structures are wrapped as PyVista datasets."
-msgstr ""
+msgstr "确保所有内部的数据结构都被封装为PyVista数据集"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:1
@@ -1344,11 +1369,14 @@ msgid ""
 ":class:`pyvista.core.filters.composite.CompositeFilters`, "
 ":class:`pyvista.core.dataobject.DataObject`"
 msgstr ""
+"基类: :class:`vtkmodules.vtkCommonDataModel.vtkMultiBlockDataSet`, "
+":class:`pyvista.core.filters.composite.CompositeFilters`, "
+":class:`pyvista.core.dataobject.DataObject`"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:1
 msgid "A composite class to hold many data sets which can be iterated over."
-msgstr ""
+msgstr "可以包含许多可迭代数据集的复合类"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:3
@@ -1356,6 +1384,7 @@ msgid ""
 "This wraps/extends the ``vtkMultiBlockDataSet`` class in VTK so that we can "
 "easily plot these data sets and use the composite in a Pythonic manner."
 msgstr ""
+"它封装/扩展了VTK中的``vtkMultiBlockDataSet``类，因此可以轻松地绘制其中的数据集，并且以python的方式使用这样的复合类。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock:6
@@ -1363,43 +1392,43 @@ msgid ""
 "You can think of ``MultiBlock`` like lists or dictionaries as we can iterate"
 " over this data structure by index and we can also access blocks by their "
 "string name."
-msgstr ""
+msgstr "可以把`MultiBlock`看作是列表或字典：既可以通过索引迭代这中数据结构，也可以通过名称访问其中的块。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.bounds:3
 msgid "length 6 tuple of floats containing min/max along each axis"
-msgstr ""
+msgstr "6个浮点数组成的元组，包含了每个轴方向上的最小值和最大值"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.clean:3
 msgid "Remove any meshes that are empty as well (have zero points)."
-msgstr ""
+msgstr "同时删除所有空网格（网格中没有点）。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:3
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:3
 msgid "When True makes a full copy of the object."
-msgstr ""
+msgstr "为真时，创建对象的全拷贝。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.copy:6
 #: ../../pyvista/pyvista/core/dataobject.pydocstring of
 #: pyvista.core.dataobject.DataObject.copy:6
 msgid "**newobject** -- Deep or shallow copy of the input."
-msgstr ""
+msgstr "**新对象** -- 输入对象的深拷贝或浅拷贝副本"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.get:3
 msgid "If the name is non-unique then returns the first occurrence."
-msgstr ""
+msgstr "名称不唯一时，返回第一个找到的块"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:3
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:3
 msgid "VTK object or ``numpy`` array to be plotted."
-msgstr ""
+msgstr "将要绘制的VTK对象，或numpy数组"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:5
@@ -1408,7 +1437,7 @@ msgstr ""
 msgid ""
 "Plots off screen when ``True``.  Helpful for saving screenshots without a "
 "window popping up."
-msgstr ""
+msgstr "为真时，会在屏幕外绘制。在不弹出窗口的情况下保存截图时很有用。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:8
@@ -1417,7 +1446,7 @@ msgstr ""
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``.  "
 "Default ``False``."
-msgstr ""
+msgstr "全屏打开窗口。为真时忽略`window_size`的设定。默认是`False`。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1428,6 +1457,7 @@ msgid ""
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
 "takes screenshot and returns ``numpy`` array of image."
 msgstr ""
+"启用时把截图保存到文件。参考：``help(pyvista.Plotter.screenshot)``。默认``False``。填``True``时截图并返回图片的``numpy``数组。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -1437,20 +1467,21 @@ msgid ""
 "Saves screenshot to file when enabled.  See: "
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
+"启用时把截图保存到文件。通过``help(pyvista.Plotter.screenshot)``查看更多信息。默认值``False``。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
-msgstr ""
+msgstr "为``True``时，截屏并返回截图的``numpy``数组。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:17
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:17
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
-msgstr ""
+msgstr "弹出窗口的大小，默认为``[1024, 768]``。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:19
@@ -1459,7 +1490,7 @@ msgstr ""
 msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
-msgstr ""
+msgstr "为``True``时显示网格边界。默认``False``。也可以使用别名``show_grid``传参。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:22
@@ -1468,7 +1499,7 @@ msgstr ""
 msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
-msgstr ""
+msgstr "为``True``时，如果已启用jupyter控制台，绘制结果会放置在jupyter notebook的一行内。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:25
@@ -1477,21 +1508,21 @@ msgstr ""
 msgid ""
 "Shows a vtk axes widget.  If ``None``, enabled according to "
 "``pyvista.global_theme.axes.show``."
-msgstr ""
+msgstr "显示vtk轴控件。如果值为``None``，则根据``pyvista.global_theme.axes.show``的设定决定是否显示。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:28
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:28
 msgid "Adds text at the bottom of the plot."
-msgstr ""
+msgstr "在绘图的底部加文本"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:30
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:30
 msgid "Use the ``add_volume`` method for volume rendering."
-msgstr ""
+msgstr "使用``add_volume``方法做体积渲染。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:32
@@ -1502,6 +1533,7 @@ msgid ""
 "``pyvista.set_jupyter_backend('ipyvtklink')`` or with "
 "``backend='ipyvtklink'``."
 msgstr ""
+"不建议使用的。对后台进行设置可以用``pyvista.set_jupyter_backend('ipyvtklink')``做全局设置，或这用``backend='ipyvtklink'``进行设置。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:36
@@ -1514,69 +1546,75 @@ msgid ""
 "Show a ``panel`` widget.  This can also be set globally with "
 "``pyvista.set_jupyter_backend``"
 msgstr ""
+"Jupyter notebook使用的绘制后台。可选以下选项之一：\n"
+"* ``'none'`` : 不在notebook显示. \n"
+"* ``'static'`` : 呈现静态图片. \n"
+"* ``'ipygany'`` : 显示一个``ipygany``控件 \n"
+"* ``'panel'`` : 显示一个``panel``控件. \n"
+"这个设置也能通过``pyvista.set_jupyter_backend``做全局配置。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:36
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
-msgstr ""
+msgstr "Jupyter notebook使用的绘制后台。可选以下选项之一："
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 msgid "``'none'`` : Do not display in the notebook."
-msgstr ""
+msgstr "* ``'none'`` : 不在notebook显示。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 msgid "``'static'`` : Display a static figure."
-msgstr ""
+msgstr "* ``'static'`` : 呈现静态图片。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:41
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:41
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
-msgstr ""
+msgstr "* ``'ipygany'`` : 显示一个``ipygany``控件。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 msgid "``'panel'`` : Show a ``panel`` widget."
-msgstr ""
+msgstr "* ``'panel'`` : 显示一个``panel``控件。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:44
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:44
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
-msgstr ""
+msgstr "这个设置也能通过``pyvista.set_jupyter_backend``做全局配置。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:47
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:47
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
-msgstr ""
+msgstr "Jupyter notebook绘制后台需要用的关键字参数"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:49
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:49
 msgid "Plot-specific theme."
-msgstr ""
+msgstr "特定的绘制主题"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:51
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:51
 msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
-msgstr ""
+msgstr "通过``help(pyvista.Plotter.add_mesh)``查看更多参考信息。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -1589,7 +1627,7 @@ msgid ""
 "     ``transparent_background=False``.   * [Window height x Window width x "
 "4] if the theme sets     ``transparent_background=True``.    Returned only "
 "when ``screenshot=True``."
-msgstr ""
+msgstr "* **cpos** (*list*) -- 相机位置、焦点、视线上方方向组成的列表。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -1597,7 +1635,7 @@ msgstr ""
 #: pyvista.plotting.helpers.plot:54
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
-msgstr ""
+msgstr "**cpos** (*list*) -- 相机位置、焦点、视线上方方向组成的列表。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:55
@@ -1606,7 +1644,7 @@ msgstr ""
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
 " values. Sized:"
-msgstr ""
+msgstr "**img** (*numpy.ndarray*) -- 包含像素RGB和可选的初始值的数组。大小："
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:58
@@ -1615,7 +1653,7 @@ msgstr ""
 msgid ""
 "[Window height x Window width x 3] if the theme sets "
 "``transparent_background=False``."
-msgstr ""
+msgstr "[窗口高度 x 窗口宽度 x 3] 设置``transparent_background=False``时。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:60
@@ -1624,37 +1662,37 @@ msgstr ""
 msgid ""
 "[Window height x Window width x 4] if the theme sets "
 "``transparent_background=True``."
-msgstr ""
+msgstr "[窗口高度 x 窗口宽度 x 4]如果主题设置``transparent_background=True``。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:63
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:63
 msgid "Returned only when ``screenshot=True``."
-msgstr ""
+msgstr "在设置``screenshot=True``时，该值才会返回。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.plotting.helpers.plot:67
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
-msgstr ""
+msgstr "绘制一个简单的球体，同时显示它的边。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.MultiBlock.volume:3 ../../pyvista/pyvista/core/dataset.pydocstring
 #: of pyvista.DataSet.volume:3 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.volume:5
 msgid "**volume** -- Total volume of the mesh."
-msgstr ""
+msgstr "**volume** -- 网格的总体积。"
 
 #: ../../pyvista/pyvista/core/composite.pydocstring of
 #: pyvista.core.composite.MultiBlock.wrap_nested:3
 msgid "This is performed in place."
-msgstr ""
+msgstr "会就地修改对象。"
 
 #: ../../pyvista/docs/core/dataset.rst:4
 msgid "Datasets"
-msgstr ""
+msgstr "数据集"
 
 #: ../../pyvista/docs/core/dataset.rst:6
 msgid ""
@@ -1662,39 +1700,40 @@ msgid ""
 "geometrical representations of a surface or volume in 3D space. In VTK, this"
 " superclass is represented by the ``vtk.vtkDataSet`` abstract class."
 msgstr ""
+"数据集是绘制空间时用到的任意信息，一般由平面或立体图形在3D空间的几何表达组成。在VTK中，数据集超类由抽象类``vtk.vtkDataSet``表示。"
 
 #: ../../pyvista/docs/core/dataset.rst:10
 msgid ""
 "In VTK, datasets consist of geometry, topology, and attributes to which "
 "PyVista provides direct access:"
-msgstr ""
+msgstr "在VTK中，数据集包括几何关系、拓扑关系以及PyVista中可以直接访问的属性："
 
 #: ../../pyvista/docs/core/dataset.rst:13
 msgid "Geometry is the collection of points and cells in 2D or 3D space."
-msgstr ""
+msgstr "几何结构是2D或3D空间中点和网格单元的几何。"
 
 #: ../../pyvista/docs/core/dataset.rst:14
 msgid ""
 "Topology defines the structure of the dataset, or how the points are "
 "connected to each other to form a cells making a surface or volume."
-msgstr ""
+msgstr "拓扑结构定义了数据集的组织结构，即点如何联结为用来构造平面或立体的网格单元。"
 
 #: ../../pyvista/docs/core/dataset.rst:15
 msgid ""
 "Attributes are any data values that are associated to either the points or "
 "cells of the dataset"
-msgstr ""
+msgstr "属性是和点或网格相关的任意数值。"
 
 #: ../../pyvista/docs/core/dataset.rst:17
 msgid ""
 "All of the following data types are listed subclasses of a dataset and share"
 " a set of common functionality which we wrap into the base class "
 ":class:`pyvista.DataSet`."
-msgstr ""
+msgstr "下面列出的所有数据类型都是同一个数据集的子类，且共用封装在基类:class:`pyvista.DataSet`中的公共方法。"
 
 #: ../../pyvista/docs/core/dataset.rst:23
 msgid "The DataSet Model"
-msgstr ""
+msgstr "数据集模型"
 
 #: ../../pyvista/docs/core/dataset.rst:25
 msgid ""
@@ -1702,20 +1741,21 @@ msgid ""
 " spatially referenced datasets in PyVista. This base class is analogous to "
 "VTK's ``vtk.vtkDataSet`` class."
 msgstr ""
+":class:`pyvista.DataSet`类拥有的属性，由PyVista中所有空间相关的数据集共用。这个基类和VTK中的类``vtk.vtkDataSet``相似。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_scalars <pyvista.DataSet.active_scalars>`\\"
-msgstr ""
+msgstr ":obj:`active_scalars <pyvista.DataSet.active_scalars>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars:1
 msgid "Return the active scalars as an array."
-msgstr ""
+msgstr "以数组形式返回活动标量"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_scalars_info <pyvista.DataSet.active_scalars_info>`\\"
-msgstr ""
+msgstr ":obj:`active_scalars_info <pyvista.DataSet.active_scalars_info>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
@@ -1727,97 +1767,97 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:1
 msgid "[field, name]."
-msgstr ""
+msgstr "[field, name]."
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_scalars_name <pyvista.DataSet.active_scalars_name>`\\"
-msgstr ""
+msgstr ":obj:`active_scalars_name <pyvista.DataSet.active_scalars_name>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_name:1
 msgid "Return the active scalar's name."
-msgstr ""
+msgstr "返回活动标量的名称"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_tensors <pyvista.DataSet.active_tensors>`\\"
-msgstr ""
+msgstr ":obj:`active_tensors <pyvista.DataSet.active_tensors>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors:1
 msgid "Return the active tensors array."
-msgstr ""
+msgstr "返回活动的张量数组。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_tensors_info <pyvista.DataSet.active_tensors_info>`\\"
-msgstr ""
+msgstr ":obj:`active_tensors_info <pyvista.DataSet.active_tensors_info>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_tensors_name <pyvista.DataSet.active_tensors_name>`\\"
-msgstr ""
+msgstr ":obj:`active_tensors_name <pyvista.DataSet.active_tensors_name>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_name:1
 msgid "Return the name of the active tensor array."
-msgstr ""
+msgstr "返回活动的张量数组"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_vectors <pyvista.DataSet.active_vectors>`\\"
-msgstr ""
+msgstr ":obj:`active_vectors <pyvista.DataSet.active_vectors>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors:1
 msgid "Return the active vectors array."
-msgstr ""
+msgstr "返回活动矢量数组"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_vectors_info <pyvista.DataSet.active_vectors_info>`\\"
-msgstr ""
+msgstr ":obj:`active_vectors_info <pyvista.DataSet.active_vectors_info>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`active_vectors_name <pyvista.DataSet.active_vectors_name>`\\"
-msgstr ""
+msgstr ":obj:`active_vectors_name <pyvista.DataSet.active_vectors_name>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_name:1
 msgid "Return the name of the active vectors array."
-msgstr ""
+msgstr "返回活动矢量数组的名称"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`array_names <pyvista.DataSet.array_names>`\\"
-msgstr ""
+msgstr ":obj:`array_names <pyvista.DataSet.array_names>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.array_names:1
 msgid "Return a list of array names for the dataset."
-msgstr ""
+msgstr "返回数据集中数组的名称列表。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`arrows <pyvista.DataSet.arrows>`\\"
-msgstr ""
+msgstr ":obj:`arrows <pyvista.DataSet.arrows>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:1
 msgid "Return a glyph representation of the active vector data as arrows."
-msgstr ""
+msgstr "以箭头格式返回活动矢量的字符表示"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`bounds <pyvista.DataSet.bounds>`\\"
-msgstr ""
+msgstr ":obj:`bounds <pyvista.DataSet.bounds>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:1
 msgid "Return the bounding box of this dataset."
-msgstr ""
+msgstr "返回数据集的边界框"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`cell_arrays <pyvista.DataSet.cell_arrays>`\\"
-msgstr ""
+msgstr ":obj:`cell_arrays <pyvista.DataSet.cell_arrays>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1827,53 +1867,53 @@ msgstr ""
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`center <pyvista.DataSet.center>`\\"
-msgstr ""
+msgstr ":obj:`center <pyvista.DataSet.center>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`extent <pyvista.DataSet.extent>`\\"
-msgstr ""
+msgstr ":obj:`extent <pyvista.DataSet.extent>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.extent:1
 msgid "Return the range of the bounding box."
-msgstr ""
+msgstr "返回边界框的范围"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`length <pyvista.DataSet.length>`\\"
-msgstr ""
+msgstr ":obj:`length <pyvista.DataSet.length>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`n_arrays <pyvista.DataSet.n_arrays>`\\"
-msgstr ""
+msgstr ":obj:`n_arrays <pyvista.DataSet.n_arrays>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.n_arrays:1
 msgid "Return the number of arrays present in the dataset."
-msgstr ""
+msgstr "返回数据集中数组的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`n_cells <pyvista.DataSet.n_cells>`\\"
-msgstr ""
+msgstr ":obj:`n_cells <pyvista.DataSet.n_cells>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.n_cells:1
 msgid "Return the number of cells in the entire dataset."
-msgstr ""
+msgstr "返回整个数据集中单元格的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`n_points <pyvista.DataSet.n_points>`\\"
-msgstr ""
+msgstr ":obj:`n_points <pyvista.DataSet.n_points>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.n_points:1
 msgid "Return the number of points in the entire dataset."
-msgstr ""
+msgstr "返回整个数据集中点的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`number_of_cells <pyvista.DataSet.number_of_cells>`\\"
-msgstr ""
+msgstr ":obj:`number_of_cells <pyvista.DataSet.number_of_cells>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1884,69 +1924,69 @@ msgstr ""
 #: pyvista.PolyData.n_faces:1 ../../pyvista/pyvista/core/pointset.pydocstring
 #: of pyvista.PolyData.number_of_faces:1
 msgid "Return the number of cells."
-msgstr ""
+msgstr "返回单元格的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`number_of_points <pyvista.DataSet.number_of_points>`\\"
-msgstr ""
+msgstr ":obj:`number_of_points <pyvista.DataSet.number_of_points>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.number_of_points:1
 msgid "Return the number of points."
-msgstr ""
+msgstr "返回点的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`point_arrays <pyvista.DataSet.point_arrays>`\\"
-msgstr ""
+msgstr ":obj:`point_arrays <pyvista.DataSet.point_arrays>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.point_arrays:1
 msgid "Return vtkPointData as DataSetAttributes."
-msgstr ""
+msgstr "把vtkPointData作为DataSetAttributes返回。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`points <pyvista.DataSet.points>`\\"
-msgstr ""
+msgstr ":obj:`points <pyvista.DataSet.points>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.points:1
 msgid "Return a pointer to the points as a numpy object."
-msgstr ""
+msgstr "以numpy对象的形式返回点集的指针。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`t_coords <pyvista.DataSet.t_coords>`\\"
-msgstr ""
+msgstr ":obj:`t_coords <pyvista.DataSet.t_coords>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.t_coords:1
 msgid "Return the active texture coordinates on the points."
-msgstr ""
+msgstr "返回点集上活动文本的坐标"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`textures <pyvista.DataSet.textures>`\\"
-msgstr ""
+msgstr ":obj:`textures <pyvista.DataSet.textures>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.textures:1
 msgid "Return a dictionary to hold compatible ``vtk.vtkTexture`` objects."
-msgstr ""
+msgstr "返回包含了``vtk.vtkTexture``对象的字典。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`vectors <pyvista.DataSet.vectors>`\\"
-msgstr ""
+msgstr ":obj:`vectors <pyvista.DataSet.vectors>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.vectors:1
 msgid "Return active vectors."
-msgstr ""
+msgstr "返回活动矢量。"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 msgid ":obj:`volume <pyvista.DataSet.volume>`\\"
-msgstr ""
+msgstr ":obj:`volume <pyvista.DataSet.volume>`\\"
 
 #: ../../pyvista/docs/core/dataset.rst:34:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.volume:1
@@ -1954,13 +1994,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.PolyData.volume:1
 msgid "Return the mesh volume."
-msgstr ""
+msgstr "返回网格的体积"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`cast_to_unstructured_grid "
 "<pyvista.DataSet.cast_to_unstructured_grid>`\\ \\(\\)"
 msgstr ""
+":obj:`cast_to_unstructured_grid "
+"<pyvista.DataSet.cast_to_unstructured_grid>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -1968,131 +2010,137 @@ msgstr ""
 msgid ""
 "Get a new representation of this object as an "
 ":class:`pyvista.UnstructuredGrid`."
-msgstr ""
+msgstr "将该对象用:class:`pyvista.UnstructuredGrid`类来表示。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`cell_bounds <pyvista.DataSet.cell_bounds>`\\ \\(ind\\)"
-msgstr ""
+msgstr ":obj:`cell_bounds <pyvista.DataSet.cell_bounds>`\\ \\(ind\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:1
 msgid "Return the bounding box of a cell."
-msgstr ""
+msgstr "返回单元格的边界框。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`cell_n_points <pyvista.DataSet.cell_n_points>`\\ \\(ind\\)"
-msgstr ""
+msgstr ":obj:`cell_n_points <pyvista.DataSet.cell_n_points>`\\ \\(ind\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_n_points:1
 msgid "Return the number of points in a cell."
-msgstr ""
+msgstr "返回单元格中点的数目"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`cell_points <pyvista.DataSet.cell_points>`\\ \\(ind\\)"
-msgstr ""
+msgstr ":obj:`cell_points <pyvista.DataSet.cell_points>`\\ \\(ind\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_points:1
 msgid "Return the points in a cell."
-msgstr ""
+msgstr "返回单元格中的点"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`cell_type <pyvista.DataSet.cell_type>`\\ \\(ind\\)"
-msgstr ""
+msgstr ":obj:`cell_type <pyvista.DataSet.cell_type>`\\ \\(ind\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:1
 msgid "Return the type of a cell."
-msgstr ""
+msgstr "返回单元格的类型。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`clear_arrays <pyvista.DataSet.clear_arrays>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`clear_arrays <pyvista.DataSet.clear_arrays>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_arrays:1
 msgid "Remove all arrays from point/cell/field data."
-msgstr ""
+msgstr "移除点、单元格、区域数据的全部数组"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`clear_cell_arrays <pyvista.DataSet.clear_cell_arrays>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`clear_cell_arrays <pyvista.DataSet.clear_cell_arrays>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_cell_arrays:1
 msgid "Remove all cell arrays."
-msgstr ""
+msgstr "移除所有单元格数组"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`clear_point_arrays <pyvista.DataSet.clear_point_arrays>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`clear_point_arrays <pyvista.DataSet.clear_point_arrays>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_point_arrays:1
 msgid "Remove all point arrays."
-msgstr ""
+msgstr "移除全部点的数组"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`clear_textures <pyvista.DataSet.clear_textures>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`clear_textures <pyvista.DataSet.clear_textures>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.clear_textures:1
 msgid "Clear the textures from this mesh."
-msgstr ""
+msgstr "清除该网格的文本"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`copy_meta_from <pyvista.DataSet.copy_meta_from>`\\ \\(ido\\)"
-msgstr ""
+msgstr ":obj:`copy_meta_from <pyvista.DataSet.copy_meta_from>`\\ \\(ido\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`find_closest_cell <pyvista.DataSet.find_closest_cell>`\\ \\(point\\)"
-msgstr ""
+msgstr ":obj:`find_closest_cell <pyvista.DataSet.find_closest_cell>`\\ \\(point\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:1
 msgid "Find index of closest cell in this mesh to the given point."
-msgstr ""
+msgstr "给定点，找距离这个点最近的单元格在网格中的索引。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`find_closest_point <pyvista.DataSet.find_closest_point>`\\ "
 "\\(point\\[\\, n\\]\\)"
 msgstr ""
+":obj:`find_closest_point <pyvista.DataSet.find_closest_point>`\\ "
+"\\(point\\[\\, n\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:1
 msgid "Find index of closest point in this mesh to the given point."
-msgstr ""
+msgstr "给定点，找距离这个点最近的点在该网格中的索引。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`get_array <pyvista.DataSet.get_array>`\\ \\(name\\[\\, preference\\, "
 "info\\]\\)"
 msgstr ""
+":obj:`get_array <pyvista.DataSet.get_array>`\\ \\(name\\[\\, preference\\, "
+"info\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_array:1
 msgid "Search both point, cell and field data for an array."
-msgstr ""
+msgstr "从点、单元格和区域数据中，找符合名称的数据的数组"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`get_data_range <pyvista.DataSet.get_data_range>`\\ \\(\\[arr\\_var\\, "
 "preference\\]\\)"
 msgstr ""
+":obj:`get_data_range <pyvista.DataSet.get_data_range>`\\ \\(\\[arr\\_var\\, "
+"preference\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
@@ -2104,133 +2152,145 @@ msgstr ""
 #: ../../pyvista/pyvista/core/objects.pydocstring of
 #: pyvista.core.objects.Table.get_data_range:1
 msgid "Get the non-NaN min and max of a named array."
-msgstr ""
+msgstr "指定数组名称，找数组中非NaN的最小值和最大值。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`overwrite <pyvista.DataSet.overwrite>`\\ \\(mesh\\)"
-msgstr ""
+msgstr ":obj:`overwrite <pyvista.DataSet.overwrite>`\\ \\(mesh\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.overwrite:1
 msgid "Overwrite this mesh inplace with the new mesh's geometries and data."
-msgstr ""
+msgstr "用新网格的几何结构和数据覆盖该网格。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`plot <pyvista.DataSet.plot>`\\ \\(\\[off\\_screen\\, full\\_screen\\, "
 "screenshot\\, ...\\]\\)"
 msgstr ""
+":obj:`plot <pyvista.DataSet.plot>`\\ \\(\\[off\\_screen\\, full\\_screen\\, "
+"screenshot\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`points_to_double <pyvista.DataSet.points_to_double>`\\ \\(\\)"
-msgstr ""
+msgstr ":obj:`points_to_double <pyvista.DataSet.points_to_double>`\\ \\(\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.points_to_double:1
 msgid "Make points double precision."
-msgstr ""
+msgstr "把点转为双精度格式。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`rename_array <pyvista.DataSet.rename_array>`\\ \\(old\\_name\\, "
 "new\\_name\\[\\, preference\\]\\)"
 msgstr ""
+":obj:`rename_array <pyvista.DataSet.rename_array>`\\ \\(old\\_name\\, "
+"new\\_name\\[\\, preference\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rename_array:1
 msgid "Change array name by searching for the array then renaming it."
-msgstr ""
+msgstr "把指定名称的数组改为新名称"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`rotate_vector <pyvista.DataSet.rotate_vector>`\\ \\(vector\\, "
 "angle\\[\\, point\\, ...\\]\\)"
 msgstr ""
+":obj:`rotate_vector <pyvista.DataSet.rotate_vector>`\\ \\(vector\\, "
+"angle\\[\\, point\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:1
 msgid "Rotate mesh about the vector."
-msgstr ""
+msgstr "绕着指定向量旋转网格"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
-msgstr ""
+msgstr ":obj:`rotate_x <pyvista.DataSet.rotate_x>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_x:1
 msgid "Rotate mesh about the x-axis."
-msgstr ""
+msgstr "绕x轴旋转网格"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
-msgstr ""
+msgstr ":obj:`rotate_y <pyvista.DataSet.rotate_y>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_y:1
 msgid "Rotate mesh about the y-axis."
-msgstr ""
+msgstr "绕y轴旋转网格"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
-msgstr ""
+msgstr ":obj:`rotate_z <pyvista.DataSet.rotate_z>`\\ \\(angle\\[\\, point\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:1
 msgid "Rotate mesh about the z-axis."
-msgstr ""
+msgstr "绕z轴旋转网格"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`set_active_scalars <pyvista.DataSet.set_active_scalars>`\\ "
 "\\(name\\[\\, preference\\]\\)"
 msgstr ""
+":obj:`set_active_scalars <pyvista.DataSet.set_active_scalars>`\\ "
+"\\(name\\[\\, preference\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:1
 msgid "Find the scalars by name and appropriately sets it as active."
-msgstr ""
+msgstr "找指定名称的标量，然后激活。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`set_active_tensors <pyvista.DataSet.set_active_tensors>`\\ "
 "\\(name\\[\\, preference\\]\\)"
 msgstr ""
+":obj:`set_active_tensors <pyvista.DataSet.set_active_tensors>`\\ "
+"\\(name\\[\\, preference\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_tensors:1
 msgid "Find the tensors by name and appropriately sets it as active."
-msgstr ""
+msgstr "通过名称找到张量，并合理地激活它。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ""
 ":obj:`set_active_vectors <pyvista.DataSet.set_active_vectors>`\\ "
 "\\(name\\[\\, preference\\]\\)"
 msgstr ""
+":obj:`set_active_vectors <pyvista.DataSet.set_active_vectors>`\\ "
+"\\(name\\[\\, preference\\]\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_vectors:1
 msgid "Find the vectors by name and appropriately sets it as active."
-msgstr ""
+msgstr "通过名称找到向量，并激活它。"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 msgid ":obj:`translate <pyvista.DataSet.translate>`\\ \\(xyz\\)"
-msgstr ""
+msgstr ":obj:`translate <pyvista.DataSet.translate>`\\ \\(xyz\\)"
 
 #: ../../pyvista/docs/core/dataset.rst:40:<autosummary>:1
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.translate:1
 msgid "Translate the mesh."
-msgstr ""
+msgstr "平移网格"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet:1
@@ -2238,11 +2298,14 @@ msgid ""
 "Bases: :class:`pyvista.core.filters.data_set.DataSetFilters`, "
 ":class:`pyvista.core.dataobject.DataObject`"
 msgstr ""
+"基类：\n"
+":class:`pyvista.core.filters.data_set.DataSetFilters`, \n"
+":class:`pyvista.core.dataobject.DataObject`"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet:1
 msgid "Methods in common to spatially referenced objects."
-msgstr ""
+msgstr "空间相关的对象使用的公共方法"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:0
@@ -2253,39 +2316,39 @@ msgstr ""
 #: ../../pyvista/pyvista/core/pointset.pydocstring of
 #: pyvista.UnstructuredGrid.cells:0
 msgid "type"
-msgstr ""
+msgstr "类型"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_scalars_info:3
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_vectors_info:3
 msgid "Return the active scalar's field and name"
-msgstr ""
+msgstr "返回活动标量的域和名称"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.active_tensors_info:3
 msgid "Return the active tensor's field and name"
-msgstr ""
+msgstr "返回活动张量的域和名称"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.array_names:3
 msgid "This makes sure to put the active scalars' name first in the list."
-msgstr ""
+msgstr "活动标量的名称总会在列表的第一位。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:3
 msgid ""
 "Arrows will be located at the points of the mesh and their size will be "
 "dependent on the length of the vector. Their direction will be the "
 "\"direction\" of the vector"
-msgstr ""
+msgstr "箭头的位置位于网格的点上，大小由向量的长度决定，方向是向量的方向。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.arrows:7
 msgid "**arrows** -- Active scalars represented as arrows."
-msgstr ""
+msgstr "**arrows** -- 代表箭头的活动标量."
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of pyvista.DataSet.bounds:3
 msgid "The form is: (xmin,xmax, ymin,ymax, zmin,zmax)."
-msgstr ""
+msgstr "输入格式是：(xmin,xmax, ymin,ymax, zmin,zmax)."
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:3
@@ -2296,24 +2359,24 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:3
 msgid "Cell ID."
-msgstr ""
+msgstr "单元格ID。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_bounds:6
 msgid "The limits of the cell in the X, Y and Z directions respectivelly."
-msgstr ""
+msgstr "单元格在X、Y和Z方向的范围。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_n_points:6
 msgid "Number of points in the cell."
-msgstr ""
+msgstr "单元格中点的数目"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_points:6
 msgid ""
 "An array of floats with shape (number of points, 3) containing the "
 "coordinates of the cell corners."
-msgstr ""
+msgstr "形状为(点数, 3)的浮点数数组，包含单元格的角点坐标。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.cell_type:6
@@ -2321,89 +2384,90 @@ msgid ""
 "VTK cell type. See "
 "<https://vtk.org/doc/nightly/html/vtkCellType_8h_source.html>."
 msgstr ""
+"VTK的单元格类型。参考<https://vtk.org/doc/nightly/html/vtkCellType_8h_source.html>。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:3
 msgid ""
 "Length 3 coordinate of the point to query or a ``numpy`` array of "
 "coordinates."
-msgstr ""
+msgstr "要查询的点的坐标或由坐标组成的numpy数组。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:7
 msgid ""
 "**index** -- Index or indices of the cell in this mesh that is closest to "
 "the given point."
-msgstr ""
+msgstr "**index** -- 在网格中距离给定点最近的单元格的一个索引或多个索引。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:13
 msgid "Find nearest cell to a point on a sphere"
-msgstr ""
+msgstr "在球体上找离某个点最近的单元格。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_cell:21
 msgid ""
 "Find the nearest cells to several random points.  Note that ``-1`` indicates"
 " that the locator was not able to find a reasonably close cell."
-msgstr ""
+msgstr "找和几个随机点最近的单元格。注意，``-1``表示定位器找不到符合要求的近的单元格。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:3
 msgid ""
 "If wanting to query many points, use a KDTree with scipy or another library "
 "as those implementations will be easier to work with."
-msgstr ""
+msgstr "如果想找很多点，使用scipy的KDTree或其它库的类似实现更方便。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:6
 msgid "See: https://github.com/pyvista/pyvista-support/issues/107"
-msgstr ""
+msgstr "参考：https://github.com/pyvista/pyvista-support/issues/107"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:8
 msgid "Length 3 coordinate of the point to query."
-msgstr ""
+msgstr "将查询的点的长度为3的坐标。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:10
 msgid ""
 "If greater than ``1``, returns the indices of the ``n`` closest points."
-msgstr ""
+msgstr "如果n的值大于1，就返回n个最近的点的索引列表。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.find_closest_point:14
 msgid "**int**"
-msgstr ""
+msgstr "**int**"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:3
 msgid ""
 "The name of the array to get the range. If ``None``, the active scalars is "
 "used."
-msgstr ""
+msgstr "将要查询范围的数组的名称。如果填``None``，使用活动标量。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.get_data_range:6
 msgid ""
 "When scalars is specified, this is the preferred array type to search for in"
 " the dataset.  Must be either ``'point'``, ``'cell'``, or ``'field'``."
-msgstr ""
+msgstr "指定标量时，这是在数据集中搜索的首选数组类型。必须填``point``、``cell``或``field``之一。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.overwrite:3
 msgid "The overwriting mesh."
-msgstr ""
+msgstr "执行覆盖操作的网格。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:3
 msgid "Axes to rotate about."
-msgstr ""
+msgstr "旋转围绕的轴。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:5
 msgid "Angle in degrees to rotate about the vector."
-msgstr ""
+msgstr "绕着向量旋转的角度。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:7
@@ -2412,7 +2476,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:5
 msgid "Point to rotate about.  Defaults to origin ``(0.0, 0.0, 0.0)``."
-msgstr ""
+msgstr "旋转围绕的点。默认是原点``(0.0, 0.0, 0.0)``。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_vector:9
@@ -2429,42 +2493,42 @@ msgstr ""
 msgid ""
 "When ``True``, all input vectors are transformed. Otherwise, only the "
 "points, normals and active vectors are transformed."
-msgstr ""
+msgstr "为``True``时，所有输入的向量都会被转换。否则，仅点、常量和活动向量被转换。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_x:3
 msgid "Angle in degrees to rotate about the x-axis."
-msgstr ""
+msgstr "绕x轴旋转的角度。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_y:3
 msgid "Angle in degrees to rotate about the y-axis."
-msgstr ""
+msgstr "绕y轴旋转的角度。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_y:5
 msgid "Point to ratate about."
-msgstr ""
+msgstr "旋转围绕的点。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.rotate_z:3
 msgid "Angle in degrees to rotate about the z-axis."
-msgstr ""
+msgstr "绕z轴旋转的角度。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_scalars:3
 msgid "To deactivate any active scalars, pass ``None`` as the ``name``."
-msgstr ""
+msgstr "输入``None``作为``name``的值，可以停用任何的活动标量。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_tensors:3
 msgid "To deactivate any active tensors, pass ``None`` as the ``name``."
-msgstr ""
+msgstr "输入``None``作为``name``的值，可以停用任何的活动张量。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.set_active_vectors:3
 msgid "To deactivate any active vectors, pass ``None`` as the ``name``."
-msgstr ""
+msgstr "输入``None``作为``name``的值，可以停用任何的活动向量。"
 
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.DataSet.textures:3
@@ -2476,33 +2540,33 @@ msgstr ""
 #: ../../pyvista/pyvista/core/dataset.pydocstring of
 #: pyvista.core.dataset.DataSet.translate:3
 msgid "Length 3 list, tuple or array."
-msgstr ""
+msgstr "长度为3的列表、元组或数组。"
 
 #: ../../pyvista/docs/core/filters.rst:4
 msgid "Filters"
-msgstr ""
+msgstr "过滤器"
 
 #: ../../pyvista/pyvista/core/filters/__init__.pydocstring of
 #: pyvista.core.filters:1
 msgid "These classes hold methods to apply general filters to any data type."
-msgstr ""
+msgstr "对任意数据类型执行通用过滤器的类。"
 
 #: ../../pyvista/pyvista/core/filters/__init__.pydocstring of
 #: pyvista.core.filters:3
 msgid ""
 "By inheriting these classes into the wrapped VTK data structures, a user can"
 " easily apply common filters in an intuitive manner."
-msgstr ""
+msgstr "通过继承这些类成为封装的VTK数据结构后，用户可以直观地使用通用的过滤器。"
 
 #: ../../pyvista/pyvista/core/filters/__init__.pydocstring of
 #: pyvista.core.filters:7 ../../pyvista/pyvista/core/objects.pydocstring of
 #: pyvista.core.objects.Table:7
 msgid "Example"
-msgstr ""
+msgstr "示例"
 
 #: ../../pyvista/docs/core/filters.rst:12
 msgid "Dataset Filters"
-msgstr ""
+msgstr "数据集过滤器"
 
 #: ../../pyvista/docs/core/filters.rst:14
 msgid ""
@@ -2510,6 +2574,8 @@ msgid ""
 " making all the following filters available as callable methods directly "
 "from any PyVista dataset."
 msgstr ""
+":class:`pyvista.DataSetFilters`类继承自:class:`pyvista.DataSet`类，\n"
+"所以它之下的所有过滤器都能被PyVista数据集对象直接调用。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2517,6 +2583,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.cell_centers>`\\ "
 "\\(\\[vertex\\]\\)"
 msgstr ""
+":obj:`cell_centers "
+"<pyvista.core.filters.pyvista.DataSetFilters.cell_centers>`\\ "
+"\\(\\[vertex\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -2533,6 +2602,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.cell_data_to_point_data>`\\ "
 "\\(\\[pass\\_cell\\_data\\]\\)"
 msgstr ""
+":obj:`cell_data_to_point_data "
+"<pyvista.core.filters.pyvista.DataSetFilters.cell_data_to_point_data>`\\ "
+"\\(\\[pass\\_cell\\_data\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
@@ -2544,13 +2616,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.cell_data_to_point_data:1
 msgid "Transform cell data into point data."
-msgstr ""
+msgstr "把单元格数据转换为点数据。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
 ":obj:`clip <pyvista.core.filters.pyvista.DataSetFilters.clip>`\\ "
 "\\(\\[normal\\, origin\\, invert\\, value\\, ...\\]\\)"
 msgstr ""
+":obj:`clip <pyvista.core.filters.pyvista.DataSetFilters.clip>`\\ "
+"\\(\\[normal\\, origin\\, invert\\, value\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -2559,13 +2633,15 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip:1
 msgid "Clip a dataset by a plane by specifying the origin and normal."
-msgstr ""
+msgstr "指定原点和法线，用平面剪切数据集。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
 ":obj:`clip_box <pyvista.core.filters.pyvista.DataSetFilters.clip_box>`\\ "
 "\\(\\[bounds\\, invert\\, factor\\]\\)"
 msgstr ""
+":obj:`clip_box <pyvista.core.filters.pyvista.DataSetFilters.clip_box>`\\ "
+"\\(\\[bounds\\, invert\\, factor\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -2574,7 +2650,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip_box:1
 msgid "Clip a dataset by a bounding box defined by the bounds."
-msgstr ""
+msgstr "使用边界框剪切数据集。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2582,12 +2658,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.clip_scalar>`\\ "
 "\\(\\[scalars\\, invert\\, value\\, inplace\\]\\)"
 msgstr ""
+":obj:`clip_scalar "
+"<pyvista.core.filters.pyvista.DataSetFilters.clip_scalar>`\\ "
+"\\(\\[scalars\\, invert\\, value\\, inplace\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip_scalar:1
 msgid "Clip a dataset by a scalar."
-msgstr ""
+msgstr "使用标量剪切数据集。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2595,12 +2674,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.clip_surface>`\\ "
 "\\(surface\\[\\, invert\\, value\\, ...\\]\\)"
 msgstr ""
+":obj:`clip_surface "
+"<pyvista.core.filters.pyvista.DataSetFilters.clip_surface>`\\ "
+"\\(surface\\[\\, invert\\, value\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.clip_surface:1
 msgid "Clip any mesh type using a :class:`pyvista.PolyData` surface mesh."
-msgstr ""
+msgstr "使用:class:`pyvista.PolyData`的平面网格实例剪切任意的网格对象。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2608,12 +2690,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.compute_cell_quality>`\\ "
 "\\(\\[quality\\_measure\\, ...\\]\\)"
 msgstr ""
+":obj:`compute_cell_quality "
+"<pyvista.core.filters.pyvista.DataSetFilters.compute_cell_quality>`\\ "
+"\\(\\[quality\\_measure\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_cell_quality:1
 msgid "Compute a function of (geometric) quality for each cell of a mesh."
-msgstr ""
+msgstr "对网格中的每一个单元格计算一个关于几何质量的函数"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2621,6 +2706,9 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.compute_cell_sizes>`\\ "
 "\\(\\[length\\, area\\, volume\\, ...\\]\\)"
 msgstr ""
+":obj:`compute_cell_sizes "
+"<pyvista.core.filters.pyvista.DataSetFilters.compute_cell_sizes>`\\ "
+"\\(\\[length\\, area\\, volume\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
@@ -2629,7 +2717,7 @@ msgstr ""
 #: ../../pyvista/pyvista/core/filters/composite.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_cell_sizes:1
 msgid "Compute sizes for 1D (length), 2D (area) and 3D (volume) cells."
-msgstr ""
+msgstr "计算1D(长度)，2D(面积)和3D(体积)单元格的大小。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2637,12 +2725,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.compute_derivative>`\\ "
 "\\(\\[scalars\\, gradient\\, ...\\]\\)"
 msgstr ""
+":obj:`compute_derivative "
+"<pyvista.core.filters.pyvista.DataSetFilters.compute_derivative>`\\ "
+"\\(\\[scalars\\, gradient\\, ...\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_derivative:1
 msgid "Compute derivative-based quantities of point/cell scalar field."
-msgstr ""
+msgstr "计算点或单元格的标量场的基于导数的质量。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
@@ -2650,12 +2741,15 @@ msgid ""
 "<pyvista.core.filters.pyvista.DataSetFilters.compute_implicit_distance>`\\ "
 "\\(surface\\[\\, inplace\\]\\)"
 msgstr ""
+":obj:`compute_implicit_distance "
+"<pyvista.core.filters.pyvista.DataSetFilters.compute_implicit_distance>`\\ "
+"\\(surface\\[\\, inplace\\]\\)"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 #: ../../pyvista/pyvista/core/filters/data_set.pydocstring of
 #: pyvista.core.filters.data_set.DataSetFilters.compute_implicit_distance:1
 msgid "Compute the implicit distance from the points to a surface."
-msgstr ""
+msgstr "计算点到面的隐式距离。"
 
 #: ../../pyvista/docs/core/filters.rst:24:<autosummary>:1
 msgid ""
