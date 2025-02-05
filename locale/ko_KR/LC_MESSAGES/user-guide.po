@@ -1,0 +1,1915 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2017-2025, The PyVista Developers
+# This file is distributed under the same license as the PyVista package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PyVista 0.45.dev0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-29 03:16+0000\n"
+"PO-Revision-Date: 2021-05-06 09:39+0000\n"
+"Language-Team: Korean (Korea) (https://app.transifex.com/tkoyama010/teams/112279/ko_KR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:4
+msgid "PyVista Data Model"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:5
+msgid ""
+"This section of the user guide explains in detail how to construct meshes "
+"from scratch and to utilize the underlying VTK data model but using the "
+"PyVista framework. Many of our :ref:`examples` simply load data from files, "
+"but don't explain how to construct meshes or place data within datasets."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:12
+msgid ""
+"Though the following documentation section references VTK, it does not "
+"require that you have knowledge of VTK. For those who wish to see a detailed"
+" comparison to VTK or translate code written for the Python bindings of VTK "
+"to PyVista, please see :ref:`vtk_to_pyvista_docs`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:18
+msgid "For a more general description of our API, see :ref:`what_is_a_mesh`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:22
+msgid "The PyVista DataSet"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:23
+msgid ""
+"To visualize data in VTK or PyVista, two pieces of information are required:"
+" the data's geometry, which describes where the data is positioned in space "
+"and what its values are, and its topology, which describes how points in the"
+" dataset are connected to one another."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:28
+msgid ""
+"At the top level, we have `vtkDataObject`_, which are just \"blobs\" of data"
+" without geometry or topology. These contain arrays of `vtkFieldData`_. "
+"Under this are `vtkDataSet`_, which add geometry and topology to "
+"`vtkDataObject`_. Associated with every point or cell in the dataset is a "
+"specific value. Since these values must be positioned and connected in "
+"space, they are held in the `vtkDataArray`_ class, which are simply memory "
+"buffers on the heap. In PyVista, 99% of the time we interact with "
+"`vtkDataSet`_ objects rather than with `vtkDataObject`_ objects. PyVista "
+"uses the same data types as VTK, but structures them in a more pythonic "
+"manner for ease of use."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:39
+msgid ""
+"If you'd like some background for how VTK structures its data, see "
+"`Introduction to VTK in Python by Kitware <https://vimeo.com/32232190>`_, as"
+" well as the numerous code examples on `Kitware's GitHub site "
+"<https://kitware.github.io/vtk-examples/site/>`_. An excellent introduction "
+"to mathematical concepts relevant to 3D modeling in general implemented in "
+"VTK is provided by the `Discrete Differential Geometry YouTube Series "
+"<https://www.youtube.com/playlist?list=PL9_jI1bdZmz0hIrNCMQW1YmZysAiIYSSS>`_"
+" by Prof. Keenan Crane at Carnegie Mellon. The concepts taught here will "
+"help improve your understanding of why data sets are structured the way they"
+" are in libraries like VTK."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:52
+msgid ""
+"At the most fundamental level, all PyVista geometry classes inherit from the"
+" :ref:`dataset` class. A dataset has geometry, topology, and attributes "
+"describing that geometry in the form of point, cell, or field arrays."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:57
+msgid ""
+"Geometry in PyVista is represented as points and cells. For example, "
+"consider a single cell within a |PolyData|:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:80
+msgid ""
+"We would need a way to describe the position of each of these points in "
+"space, but we're limited to expressing the values themselves as we've done "
+"above (lists of arrays with indices). VTK (and hence PyVista) have multiple "
+"classes that represent different data shapes. The most important dataset "
+"classes are shown below:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:0
+#: ../../pyvista/doc/source/user-guide/index.rst:0
+#: ../../pyvista/doc/source/user-guide/simple.rst:0
+#: ../../pyvista/doc/source/user-guide/themes.rst:0
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:0
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:0
+msgid "Static Scene"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:0
+#: ../../pyvista/doc/source/user-guide/index.rst:0
+#: ../../pyvista/doc/source/user-guide/simple.rst:0
+#: ../../pyvista/doc/source/user-guide/themes.rst:0
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:0
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:0
+msgid "Interactive Scene"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:94
+msgid ""
+"Here, the above datasets are ordered from most (5) to least complex (1). "
+"That is, every dataset can be represented as an |UnstructuredGrid|, but the "
+"|UnstructuredGrid| class takes the most amount of memory to store since they"
+" must account for every individual point and cell . On the other hand, since"
+" `vtkImageData`_ (|ImageData|) is uniformly spaced, a few integers and "
+"floats can describe the shape, so it takes the least amount of memory to "
+"store."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:104
+msgid ""
+"This is because in |PolyData| or |UnstructuredGrid|, points, and cells must "
+"be explicitly defined. In other data types, such as |ImageData|, the cells "
+"(and even points) are defined as an emergent property based on the "
+"dimensionality of the grid."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:110
+msgid ""
+"To see this in practice, let's create the simplest surface represented as a "
+"|PolyData|. First, we need to define our points."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:115
+msgid "Points and Arrays Within PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:116
+msgid ""
+"There are a variety of ways to create points within PyVista, and this "
+"section shows how to efficiently create an array of points by either:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:118
+msgid "Wrapping a VTK array"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:119
+msgid "Using a :class:`numpy.ndarray`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:120
+msgid "Or just using a :class:`list`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:122
+msgid ""
+"PyVista provides pythonic methods for all three approaches so you can choose"
+" whatever is most efficient for you. If you're comfortable with the VTK API,"
+" you can choose to wrap VTK arrays, but you may find that using "
+":class:`numpy.ndarray` is more convenient and avoids the looping overhead in"
+" Python."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:129
+msgid "Wrapping a VTK Array"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:130
+msgid ""
+"Let's define points of a triangle. Using the VTK API, this can be done with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:150
+msgid ""
+"PyVista supports creating objects directly from the `vtkDataArray`_ class, "
+"but there's a better, and more pythonic alternative by using "
+":class:`numpy.ndarray`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:156
+msgid "Using NumPy with PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:157
+msgid "You can create a `NumPy <https://numpy.org/>`_ points array with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:165
+msgid ""
+"We use a :class:`numpy.ndarray` here so that PyVista directly \"points\" the"
+" underlying C array to VTK. VTK already has APIs to directly read in the C "
+"arrays from NumPy, and since VTK is written in C++, everything from Python "
+"that is transferred over to VTK needs to be in a format that VTK can "
+"process."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:171
+msgid ""
+"Should you wish to use VTK objects within PyVista, you can still do this. In"
+" fact, using :func:`pyvista.wrap`, you can even get a numpy-like "
+"representation of the data. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:181
+msgid ""
+"Note that when wrapping the underlying VTK array, we actually perform a "
+"shallow copy of the data. In other words, we pass the pointer from the "
+"underlying C array to the :class:`numpy.ndarray`, meaning that the two "
+"arrays are now efficiently linked (in NumPy terminology, the returned array "
+"is a view into the underlying VTK data). This means that we can change the "
+"array using numpy array indexing and have it modified on the \"VTK side\"."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:194
+msgid ""
+"Or we can change the value from the VTK array and see it reflected in the "
+"numpy wrapped array. Let's change the value back:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:204
+msgid "Using Python Lists or Tuples"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:205
+msgid ""
+"PyVista supports the use of Python sequences (that is, a :class:`list` or "
+":class:`tuple`), and you could define your points using a nested list of "
+"lists via:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:213
+msgid ""
+"When used in the context of |PolyData| to create the mesh, this list will "
+"automatically be wrapped using NumPy and then passed to VTK. This avoids any"
+" looping overhead and while still allowing you to use native python classes."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:218
+msgid ""
+"Finally, let's show how we can use these three objects in the context of a "
+"PyVista geometry class. Here, we create a simple point mesh containing just "
+"the three points:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:228
+msgid ""
+"These point meshes all contain three points and are effectively identical. "
+"Let's show this by accessing the underlying points array from the mesh, "
+"which is represented as a :class:`pyvista.pyvista_ndarray`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:236
+msgid "And show that these are all identical"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:244
+msgid ""
+"Finally, let's plot this (very) simple example using PyVista's "
+":func:`pyvista.plot` method. Let's make this a full example so you can see "
+"the entire process."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:256
+msgid ""
+"We'll get into PyVista's data classes and attributes later, but for now "
+"we've shown how to create a simple geometry containing just points. To "
+"create a surface, we must specify the connectivity of the geometry, and to "
+"do that we need to specify the cells (or faces) of this surface."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:263
+msgid "Geometry and Mesh Connectivity/Topology Within PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:264
+msgid ""
+"With our previous example, we defined our \"mesh\" as three disconnected "
+"points. While this is useful for representing \"point clouds,\" if we want "
+"to create a surface, we have to describe the connectivity of the mesh. To do"
+" this, let's define a single cell composed of three points in the same order"
+" as we defined earlier."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:275
+msgid ""
+"Observe how we had to insert a leading ``3`` to tell VTK that our face is "
+"described by three elements, in this case, three points. In our |PolyData| "
+"VTK doesn't assume that faces always contain three points, so we have to "
+"define that. This actually gives us the flexibility to define as many (or as"
+" few as one) points per cell as we wish."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:282
+msgid "All cell types follow the same connectivity array format:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:284
+msgid "``[Number of points, Point 1, Point 2, ...]``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:287
+msgid ""
+"Except for ``polyhedron`` type, in which we need to define each face of the "
+"cell. The format for this type is the following:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:290
+msgid ""
+"``[Number of elements, Number of faces, Face1NPoints, Point1, Point2, ..., "
+"PointN, Face2NPoints, ...]``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:292
+msgid ""
+"Where ``number of elements`` is the total number of elements in the array "
+"that describe this cell."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:294
+msgid ""
+"Now we have all the necessary pieces to assemble an instance of |PolyData| "
+"that contains a single triangle. To do this, we simply provide the "
+"``points`` and ``cells`` to the constructor of a |PolyData|. We can see from"
+" the representation that this geometry contains three points and one cell"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:305
+msgid "Let's also plot this:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:313
+msgid "While we're at it, let's annotate this plot to describe this mesh."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:332
+msgid ""
+"You can clearly see how the polygon is created based on the connectivity of "
+"the points."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:335
+msgid ""
+"This instance has several attributes to access the underlying data of the "
+"mesh. For example, if you wish to access or modify the points of the mesh, "
+"you can simply access the points attribute with :attr:`points "
+"<pyvista.DataSet.points>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:344
+msgid ""
+"The connectivity can also be accessed from the :attr:`faces "
+"<pyvista.PolyData.faces>` attribute with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:351
+msgid "Or we could simply get the representation of the mesh with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:357
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:257
+msgid "In this representation we see:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:359
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:259
+msgid "Number of cells :attr:`n_cells <pyvista.DataSet.n_cells>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:360
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:260
+msgid "Number of points :attr:`n_points <pyvista.DataSet.n_points>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:361
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:261
+msgid "Bounds of the mesh :attr:`bounds <pyvista.DataSet.bounds>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:362
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:262
+msgid "Number of data arrays :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:364
+msgid ""
+"This is vastly different from the output from VTK. See "
+":ref:`vtk_vs_pyvista_object_repr` for the comparison between the two "
+"representations."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:368
+msgid ""
+"This mesh contains no data arrays as it consists only of geometry. This "
+"makes it useful for plotting just the geometry of the mesh, but datasets "
+"often contain more than just geometry. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:372
+msgid "An electrical field computed from a changing magnetic field"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:373
+msgid "Vector field of blood flow through artery"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:374
+msgid "Surface stresses from a structural finite element analysis"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:375
+msgid "Mineral deposits from geophysics"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:376
+msgid "Weather patterns as a vector field or surface data."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:378
+msgid ""
+"While each one of these datasets could be represented as a different "
+"geometry class, they would all contain point, cell, or field data that "
+"explains the value of the data at a certain location within the geometry."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:385
+msgid "Data Arrays"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:386
+msgid ""
+"Each :class:`DataSet <pyvista.DataSet>` contains attributes that allow you "
+"to access the underlying numeric data. This numerical data may be associated"
+" with the :attr:`points <pyvista.DataSet.points>`, cells, or not associated "
+"with points or cells and attached to the mesh in general."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:392
+msgid ""
+"To illustrate data arrays within PyVista, let's first construct a slightly "
+"more complex mesh than our previous example. Here, we create a simple mesh "
+"containing four isometric cells by starting with a |ImageData| and then "
+"casting it to an |UnstructuredGrid| with :func:`cast_to_unstructured_grid() "
+"<pyvista.DataSet.cast_to_unstructured_grid>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:405
+msgid "Let's also plot this basic mesh:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:430
+msgid ""
+"Now that we have a simple mesh to work with, we can start assigning it data."
+" There are two main types of data that can be associated with a mesh: scalar"
+" data and vector data. Scalar data is single or multi-component data that is"
+" non directional and may include values like temperature, or in the case of "
+"multi-component data, RGBA values. Vector data has magnitude and direction "
+"and is represented as arrays containing three components per data point."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:438
+msgid ""
+"When plotting, we can easily display scalar data, but this data must be "
+"\"associated\" with either points or cells. For example, we may wish to "
+"assign values to the cells of our example mesh, which we can do by accessing"
+" the :attr:`cell_data <pyvista.DataSet.cell_data>` attribute of our mesh."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:449
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:165
+msgid "Cell Data"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:450
+msgid ""
+"The easiest way to add scalar data to a :class:`DataSet <pyvista.DataSet>` "
+"is to use the ``[]`` operator. Continuing with our example above, let's "
+"assign each cell a single integer. We can do this using a Python "
+":class:`list` and making it the same length as the number of cells in the "
+"|UnstructuredGrid|. Or as an even simpler example, using a :class:`range` of"
+" the appropriate length. Here we create the range, add it to the "
+":attr:`cell_data <pyvista.DataSet.cell_data>`, and then access it using the "
+"``[]`` operator."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:466
+msgid ""
+"Note how we are returned a :class:`pyvista.pyvista_ndarray`. Since VTK "
+"requires C arrays, PyVista will internally wrap or convert all inputs to C "
+"arrays. We can then plot this with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:481
+msgid ""
+"Note how we did not have to specify which cell data to plot as the ``[]`` "
+"operator automatically sets the active scalars:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:488
+msgid ""
+"We can also add labels to our plot to show which cells are assigned which "
+"scalars. Note how this is in the same order as the scalars we assigned."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:503
+msgid ""
+"We can continue to assign cell data to our :class:`DataSet "
+"<pyvista.DataSet>` using the ``[]`` operator, but if you do not wish the new"
+" array to become the active array, you can add it using :func:`set_array() "
+"<pyvista.DataSetAttributes.set_array>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:514
+msgid ""
+"Now, ``ugrid`` contains two arrays, one of which is the \"active\" scalars. "
+"This set of active scalars will be the one plotted automatically when "
+"``scalars`` is unset in either :func:`add_mesh() <pyvista.Plotter.add_mesh>`"
+" or :func:`pyvista.plot`. This makes it possible to have many cell arrays "
+"associated with a dataset and track which one will plotted as the active "
+"cell scalars by default."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:521
+msgid ""
+"The active scalars can also be accessed via :attr:`active_scalars "
+"<pyvista.DataSet.active_scalars>`, and the name of the active scalars array "
+"can be accessed or set with :attr:`active_scalars_name "
+"<pyvista.DataSet.active_scalars_name>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:534
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:151
+msgid "Point Data"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:535
+msgid ""
+"Data can be associated to points in the same manner as in "
+":ref:`pyvista_data_model_cell_data`. The :attr:`point_data "
+"<pyvista.DataSet.point_data>` attribute allows you to associate point data "
+"to the points of a :class:`DataSet <pyvista.DataSet>`. Here, we will "
+"associate a simple list to the points using the ``[]`` operator."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:548
+msgid ""
+"Again, these values become the active scalars in our point arrays by default"
+" by using the ``[]`` operator:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:555
+msgid ""
+"Let's plot the point data. Note how this varies from the cell data plot; "
+"each individual point is assigned a scalar value which is interpolated "
+"across a cell to create a smooth color map between the lowest value at "
+"``Point 0`` to the highest value at ``Point 8``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:582
+msgid ""
+"As in :ref:`pyvista_data_model_cell_data`, we can assign multiple arrays to "
+":attr:`point_data <pyvista.DataSet.point_data>` using :func:`set_array() "
+"<pyvista.DataSetAttributes.set_array>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:592
+msgid ""
+"Again, here there are now two arrays associated to the point data, and only "
+"one is the \"active\" scalars array. Like as in the cell data, we can "
+"retrieve this with :attr:`active_scalars <pyvista.DataSet.active_scalars>`, "
+"and the name of the active scalars array can be accessed or set with "
+":attr:`active_scalars_name <pyvista.DataSet.active_scalars_name>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:607
+msgid "Dataset Active Scalars"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:608
+msgid ""
+"Continuing from the previous sections, our ``ugrid`` dataset now contains "
+"both point and cell data:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:619
+msgid ""
+"There are active scalars in both point and cell data, but only one type of "
+"scalars can be \"active\" at the dataset level. The reason for this is that "
+"only one scalar type (be it point or cell) can be plotted at once, and this "
+"data can be obtained from :attr:`active_scalars_info "
+"<pyvista.DataSet.active_scalars_info>`:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:629
+msgid ""
+"Note that the active scalars are by default the point scalars. You can "
+"change this by setting the active scalars with :func:`set_active_scalars() "
+"<pyvista.DataSet.set_active_scalars>`. Note that if you want to set the "
+"active scalars and both the point and cell data have an array of the same "
+"name, you must specify the ``preference``:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:641
+msgid ""
+"This can also be set when plotting using the ``preference`` parameter in "
+":func:`add_mesh() <pyvista.Plotter.add_mesh>` or :func:`pyvista.plot`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:647
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:198
+msgid "Field Data"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:648
+msgid ""
+"Field arrays are different from :attr:`point_data "
+"<pyvista.DataSet.point_data>` and :attr:`cell_data "
+"<pyvista.DataSet.cell_data>` in that they are not associated with the "
+"geometry of the :class:`DataSet <pyvista.DataSet>`. This means that while "
+"it's not possible to designate the field data as active scalars or vectors, "
+"you can use it to \"attach\" arrays of any shape. You can even add string "
+"arrays in the field data:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:661
+msgid ""
+"Note that the field data is automatically transferred to VTK C-style arrays "
+"and then represented as a numpy data format."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:664
+msgid ""
+"When listing the current field data, note that the association is \"NONE\":"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:670
+msgid ""
+"This is because the data is not associated with points or cells, and cannot "
+"be made so because field data is not expected to match the number of cells "
+"or points. As such, it also cannot be plotted."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:676
+msgid "Vectors, Texture Coords, and Normals Attributes"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:677
+msgid ""
+"Both cell and point data can also store the following \"special\" attributes"
+" in addition to :attr:`active_scalars <pyvista.DataSet.active_scalars>`:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:679
+msgid ":attr:`active_normals <pyvista.DataSet.active_normals>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:680
+msgid ":attr:`active_t_coords <pyvista.DataSet.active_t_coords>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:681
+msgid ":attr:`active_vectors <pyvista.DataSet.active_vectors>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:685
+msgid "Active Normals"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:686
+msgid ""
+"The :attr:`active_normals <pyvista.DataSet.active_normals>` array is a "
+"special array that specifies the local normal direction of meshes. It is "
+"used for creating physically based rendering, rendering smooth shading using"
+" Phong interpolation, warping by scalars, etc. If this array is not set when"
+" plotting with ``smooth_shading=True`` or ``pbr=True``, it will be computed."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:696
+msgid "Active Texture Coordinates"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:697
+msgid ""
+"The :attr:`active_t_coords <pyvista.DataSet.active_t_coords>` array is used "
+"for rendering textures. See :ref:`texture_example` for examples using this "
+"array."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:704
+msgid "Active Vectors"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:705
+msgid ""
+"The :attr:`active_vectors <pyvista.DataSet.active_vectors>` is an array "
+"containing quantities that have magnitude and direction (specifically, three"
+" components). For example, a vector field containing the wind speed at "
+"various coordinates. This differs from :attr:`active_scalars "
+"<pyvista.DataSet.active_scalars>` as scalars are expected to be non-"
+"directional even if they contain several components (as in the case of RGB "
+"data)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:714
+msgid ""
+"Vectors are treated differently within VTK than scalars when performing "
+"transformations using the :func:`transform() "
+"<pyvista.DataSetFilters.transform>` filter. Unlike scalar arrays, vector "
+"arrays will be transformed along with the geometry as these vectors "
+"represent quantities with direction."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/data_model.rst:722
+msgid ""
+"VTK permits only one \"active\" vector. If you have multiple vector arrays "
+"that you wish to transform, set ``transform_all_input_vectors=True`` in "
+":func:`transform() <pyvista.DataSetFilters.transform>`. Be aware that this "
+"will transform any array with three components, so multi-component scalar "
+"arrays like RGB arrays will have to be discarded after transformation."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:2
+msgid "User Guide"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:3
+msgid ""
+"This section details the general usage of PyVista for users who may or may "
+"not have used VTK in the past, but are looking to leverage it in a Pythonic "
+"manner for 3D plotting. See the table of contents below or the in the side "
+"panel for the individual sections demonstrating the key concepts of PyVista."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:11
+msgid "Simple Interactive Example"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:12
+msgid "This basic example demonstrates three key features of PyVista:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:14
+msgid "Simple `numpy`_ and `matplotlib`_ like interface"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:15
+msgid "Variety of built-in examples"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:16
+msgid "Intuitive plotting with keyword arguments."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:35
+msgid ""
+"Here, we download the `Stanford dragon mesh "
+"<http://graphics.stanford.edu/data/3Dscanrep/>`_, color it according to "
+"height, and plot it using a web-viewer. This same example will run "
+"identically locally."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:49
+msgid ""
+"With just a few lines of code we downloaded a sample mesh from the web, "
+"added scalars to it based on the points of the mesh, and plotted it while "
+"controlling the orientation, color, and data presented in the visualization."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:54
+msgid ""
+"The following sections explain the details of the how and why of PyVista's "
+"interface."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:58
+msgid "User Guide Contents"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:72
+msgid "Videos"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:73
+msgid "Here are some videos that you can watch to learn PyVista:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:75
+msgid ""
+"PyConJP2020 talk \"How to plot unstructured mesh file on Jupyter Notebook\" "
+"(15 minutes):"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:78
+msgid "`Video <https://youtu.be/X3Z54Kw4I6Y>`_"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:79
+msgid ""
+"`Material "
+"<https://docs.google.com/presentation/d/1M_cnS66ja81u_mHACjaUsDj1wSeeEtnEevk_IMZ8-dg/edit?usp=sharing>`_"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:81
+msgid "Software Underground Tutorial"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:83
+msgid "`Tutorial: PyVista <https://www.youtube.com/watch?v=FmNmRBsEBHE>`_"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/index.rst:85
+msgid ""
+"If there is any material that we can add, please open an `issue "
+"<https://github.com/pyvista/pyvista/issues>`_ ."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:4
+msgid "Jupyter Notebook Plotting"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:5
+msgid ""
+"Plot with ``pyvista`` interactively within a `Jupyter "
+"<https://jupyter.org/>`_ notebook."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:9
+msgid "We recommend using the Trame-based backed. See :ref:`trame_jupyter`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:13
+msgid "Supported Modules"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:14
+msgid ""
+"The PyVista module supports a variety of backends when plotting within a "
+"jupyter notebook:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:17
+msgid ""
+"Server and client-side rendering with PyVista streaming to the notebook "
+"through `trame <https://github.com/Kitware/trame/>`_"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:19
+msgid "Static images."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:29
+msgid "Usage with PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/index.rst:30
+msgid ""
+"There are two ways to set the jupyter plotting backend. First, it can be "
+"done on a plot by plot basis by setting the ``jupyter_backend`` parameter in"
+" either :func:`Plotter.show() <pyvista.Plotter.show>` or "
+":func:`dataset.plot() <pyvista.DataSet.plot>`. You can also set it globally "
+"with the :func:`pyvista.set_jupyter_backend`. For further details:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:2
+msgid "Set the plotting backend for a jupyter notebook."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:7
+msgid "**backend** : :class:`python:str`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:6
+msgid "python:str"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:8
+msgid "Jupyter backend to use when plotting.  Must be one of the following:"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:10
+msgid ""
+"``'static'`` : Display a single static image within the Jupyterlab "
+"environment.  Still requires that a virtual framebuffer be set up when "
+"displaying on a headless server, but does not require any additional modules"
+" to be installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:15
+msgid ""
+"``'client'`` : Export/serialize the scene graph to be rendered with VTK.js "
+"client-side through ``trame``. Requires ``trame`` and ``jupyter-server-"
+"proxy`` to be installed."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:19
+msgid ""
+"``'server'``: Render remotely and stream the resulting VTK images back to "
+"the client using ``trame``. This replaces the ``'ipyvtklink'`` backend with "
+"better performance. Supports the most VTK features, but suffers from minor "
+"lag due to remote rendering. Requires that a virtual framebuffer be set up "
+"when displaying on a headless server. Must have at least ``trame`` and "
+"``jupyter-server-proxy`` installed for cloud/remote Jupyter instances. This "
+"mode is also aliased by ``'trame'``."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:28
+msgid ""
+"``'trame'``: The full Trame-based backend that combines both ``'server'`` "
+"and ``'client'`` into one backend. This requires a virtual frame buffer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:32
+msgid ""
+"``'html'`` : Export/serialize the scene graph to be rendered with the Trame "
+"client backend but in a static HTML file."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:35
+msgid ""
+"``'none'`` : Do not display any plots within jupyterlab, instead display "
+"using dedicated VTK render windows.  This will generate nothing on headless "
+"servers even with a virtual framebuffer."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:40
+msgid "**name** : :class:`python:str`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:39
+msgid "python:str, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:41
+msgid "The unique name identifier for the server."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:43
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:42
+msgid "python:dict, optional"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:44
+msgid "Any additional keyword arguments to pass to the server launch."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:59
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:60
+msgid "Enable the trame Trame backend."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:64
+msgid "Just show static images."
+msgstr ""
+
+#: ../../pyvista/pyvista/jupyter/__init__.pydocstring of
+#: pyvista.jupyter.set_jupyter_backend:68
+msgid ""
+"Disable all plotting within JupyterLab and display using a standard desktop "
+"VTK render window."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:4
+msgid "Trame Jupyter Backend for PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:6
+msgid ""
+"PyVista has the ability to display fully featured plots within a Jupyter "
+"environment using `Trame <https://kitware.github.io/trame/index.html>`_. We "
+"provide mechanisms to pair PyVista and Trame so that PyVista plotters can be"
+" used in a web context with both server and client-side rendering."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:11
+msgid ""
+"The server-side rendering mode of the Trame backend works by streaming the "
+"current render window to a canvas within Jupyter and then passing any user "
+"actions from the canvas back to the VTK render window (this is done under "
+"the hood by the ``vtkRemoteView`` in ``trame-vtk``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:16
+msgid ""
+"For example, both sections of code will display an interactive canvas within"
+" Jupyter:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:33
+msgid "For convenience, you can enable ``trame`` by default with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:43
+msgid "Trame Jupyter Modes"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:45
+msgid ""
+"The PyVista Trame jupyter backend provides three modes of operation "
+"(technically as three separate backend choices):"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:48
+msgid ""
+"``'trame'``: Uses a view that can switch between client- and server-"
+"rendering modes."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:49
+msgid "``'server'``: Uses a view that is purely server-rendering."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:50
+msgid ""
+"``'client'``: Uses a view that is purely client-rendering (generally safe "
+"without a virtual frame buffer)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:52
+msgid ""
+"You can choose your backend either by using :func:`set_jupyter_backend() "
+"<pyvista.set_jupyter_backend>` or passing ``jupyter_backend`` on the "
+":func:`show() <pyvista.Plotter.show>` call."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:76
+msgid "Installation"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:78
+msgid "Using pip, you can set up your jupyter environment with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:86
+msgid "Remote Jupyter Host"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:88
+msgid ""
+"When using PyVista in Jupyter that is hosted remotely (docker, cloud "
+"JupyterHub, binder, or otherwise), you will need to pair the Trame backend "
+"with either ``jupyter-server-proxy`` or ``trame-jupyter-extension``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:94
+msgid "Jupyter Server Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:96
+msgid ""
+"`Jupyter Server Proxy <https://jupyter-server-"
+"proxy.readthedocs.io/en/latest/>`_ lets you access the Trame server hosting "
+"the views of the PyVista plotters alongside your notebook, and provide "
+"authenticated web access to them directly through Jupyter."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:101
+msgid ""
+"To configure PyVista and Trame to work with ``jupyter-server-proxy`` in a "
+"remote environment, you will need to set some options on the global PyVista "
+"theme:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:104
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:165
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
+"<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:106
+msgid ""
+":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
+"<pyvista.plotting.themes._TrameConfig.server_proxy_prefix>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:109
+msgid ""
+"The default for ``server_proxy_prefix`` is ``'/proxy/'`` and this should be "
+"sufficient for most remote Jupyter environment and use within Docker."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:112
+msgid "This can also be set with an environment variable:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:119
+msgid "The prefix will need to be modified for JupyterHub deployments."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:121
+msgid ""
+"On MyBinder, the ``JUPYTERHUB_SERVICE_PREFIX`` string often needs to prefix "
+"``'/proxy/'``. This makes it so the prefix includes the users ID in the URL."
+" In PyVista, we automatically check for the presence of this variable and "
+"prepend it to the ``server_proxy_prefix``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:128
+msgid "Trame Jupyter Extension"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:130
+msgid ""
+"`Trame Jupyter Extension <https://github.com/Kitware/trame-jupyter-"
+"extension/>`_ enables the trame server and client to communicate over the "
+"existing `Jupyter Comms <https://jupyter-"
+"notebook.readthedocs.io/en/stable/comms.html>`_ infrastructure, instead of "
+"creating a separate WebSocket connection."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:135
+msgid ""
+"Using this extension removes the need for a secondary web server and thus "
+"``jupyter-server-proxy``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:138
+msgid "Using pip, you can install the extension:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:144
+msgid ""
+"If using Jupyter Lab 3.x, make sure to install the version 1.x of the "
+"extension:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:150
+msgid ""
+"Once the extension is installed, you can select whether PyVista will use it "
+"by setting the following flag to ``True`` or ``False``:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:153
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:167
+msgid ""
+":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
+"<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:158
+msgid "Setting Remote Jupyter Host with an Environment Variable"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:159
+msgid ""
+"You can set the Remote Jupyter Host manually with the flags discussed above,"
+" but these need to be set every time the Jupyter kernel restarts. In some "
+"environments, it may be more efficient to configure the Remote Jupyter Host "
+"with an environment variable. If set, the value for "
+"``PYVISTA_TRAME_JUPYTER_MODE`` will determine the values of these two flags:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:170
+msgid ""
+"If set, the accepted values for ``PYVISTA_TRAME_JUPYTER_MODE`` include "
+"``'extension'``, ``'proxy'``, and ``'native'``. The following table shows "
+"how each accepted value will affect the two flags, as well as any "
+"precondition that must be true for the value to be applicable. To meet these"
+" prerequisites, review the sections above for installation instructions."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:178
+msgid "``PYVISTA_TRAME_JUPYTER_MODE``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:179
+msgid "Description"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:180
+msgid "Condition"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:181
+msgid "`server_proxy_enabled`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:182
+msgid "`jupyter_extension_enabled`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:184
+msgid "\"extension\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:185
+msgid "Use Trame Jupyter Extension"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:186
+msgid "Extension must be available"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:187
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:194
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:199
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:200
+msgid "False"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:188
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:193
+msgid "True"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:190
+msgid "\"proxy\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:191
+msgid "Use Jupyter Server Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:192
+msgid "Proxy must be available"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:196
+msgid "\"native\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:197
+msgid "Do not use Extension nor Proxy"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:198
+msgid "None"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:203
+msgid "Other Considerations"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:204
+msgid "It may be worth using GPU acceleration, see :ref:`gpu_off_screen`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:206
+msgid ""
+"If you do not have GPU acceleration, alternatively, an offscreen version "
+"using OSMesa libraries and ``vtk-osmesa`` is available:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:2
+msgid "Optional Features"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:3
+msgid ""
+"Due to its usage of ``numpy``, the PyVista library plays well with other "
+"modules, including ``matplotlib``, ``trimesh``, ``rtree``, and ``pyembree``."
+"  The following examples show some optional features included within PyVista"
+" that use or combine several modules to perform advanced analyses not "
+"normally included within ``VTK``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:10
+msgid "Vectorised Ray Tracing"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:11
+msgid ""
+"Perform many ray traces simultaneously with a PolyData Object (requires "
+"optional dependencies trimesh, rtree and pyembree)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:62
+msgid "Project to Finite Plane"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/optional_features.rst:63
+msgid ""
+"The following example expands on the vectorized ray tracing example by "
+"projecting the :func:`load_random_hills() "
+"<pyvista.examples.examples.load_random_hills>` example data to a triangular "
+"plane."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:2
+msgid "Basic API Usage"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:4
+msgid ""
+"PyVista provides tools to get started with just about any VTK dataset and "
+"wrap that object into an easily accessible data object. Whether you are new "
+"to the VTK library or a power user, the best place to get started is with "
+"PyVista's :func:`pyvista.wrap` and :func:`pyvista.read` functions to either "
+"wrap a VTK data object in memory or read a VTK or VTK-friendly file format."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:13
+msgid "Wrapping a VTK Data Object"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:15
+msgid ""
+"The wrapping function :func:`pyvista.wrap` is usable from the top level of "
+"PyVista. This allows users to quickly wrap any VTK dataset they have as a "
+"PyVista object:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:29
+msgid "Reading a VTK File"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:31
+msgid ""
+"PyVista provides a convenience function to read VTK file formats into their "
+"respective PyVista data objects. Simply call the :func:`pyvista.read` "
+"function passing the filename:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:43
+msgid "Accessing the Wrapped Data Object"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:45
+msgid ""
+"Now that you have a wrapped VTK data object, you can start accessing and "
+"modifying the dataset. Some of the most common properties to access include "
+"the points and point/cell data (the data attributes assigned to the nodes or"
+" cells of the mesh respectively)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:50
+msgid "First, check out some common meta-properties:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:86
+msgid ""
+"Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
+"attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:104
+msgid ""
+"Accessing the different data attributes on the nodes and cells of the mesh "
+"is interfaced via dictionaries with callbacks to the VTK object. These "
+"dictionaries of the different point and cell arrays can be directly accessed"
+" and modified as NumPy arrays. In the example below, we load a dataset, "
+"access an array on that dataset, then add some more data:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:136
+msgid "Plotting"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:138
+msgid ""
+"PyVista includes numerous plotting routines that are intended to be "
+"intuitive and highly controllable with ``matplotlib`` similar syntax and "
+"keyword arguments."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:142
+msgid ""
+"To get started, try out the :func:`pyvista.plot` convenience method that is "
+"bound to each PyVista data object."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:171
+msgid ""
+"You can also create a plotter object to fine tune the scene. First, "
+"instantiate a plotter such as :class:`pyvista.Plotter` or "
+":class:`pyvistaqt.BackgroundPlotter`.  The :class:`pyvista.Plotter` will "
+"create a rendering window that will pause the execution of the code after "
+"calling :func:`show() <pyvista.Plotter.show>`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:188
+msgid ""
+"Optionally :func:`show() <pyvista.Plotter.show>` can return the last used "
+"camera position of the rendering window in case you want to choose a camera "
+"position and use it again later. The camera position is also available as "
+"the :attr:`camera_position <pyvista.Plotter.camera_position>` attribute of "
+"the plotter (even after it's closed)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:195
+msgid ""
+"You can then use this cached camera position for additional plotting without"
+" having to manually interact with the plotting window:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:208
+msgid ""
+"Be sure to check out all the available plotters and their options for your "
+"use case:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:211
+msgid ""
+":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
+"closed."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:213
+msgid ""
+":class:`pyvistaqt.BackgroundPlotter`: Creates a rendering window that is "
+"interactive and does not pause the code execution (for more information see "
+"the `pyvistaqt`_ library)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:222
+msgid "Exporting"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:224
+msgid ""
+"Any PyVista mesh object can be saved to a VTK file format using "
+":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
+"block above could be saved like:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:232
+msgid ""
+"Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
+"``.stl``, or ``.ply`` formats as well. For more details on which formats are"
+" supported in the ``.save()`` method, please refer to the docs for that "
+"method on each mesh type."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:237
+msgid ""
+"Also note that we can export any PyVista mesh to any file format supported "
+"by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
+"formats including: Abaqus, Ansys msh, AVS-UCD, CGNS, DOLFIN XML, Exodus, "
+"FLAC3D, H5M, Kratos/MDPA, Medit, MED/Salome, Gmsh (versions 2 and 4), OBJ, "
+"OFF, PERMAS, PLY, STL, TetGen .node/.ele, SVG (2D only, output only), UGRID,"
+" WKT (TIN), XDMF, and more."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:244
+msgid ""
+"To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:4
+msgid "Plotting Themes"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:6
+msgid ""
+"PyVista plotting parameters can be controlled on a plot by plot basis or "
+"through a global theme, making it possible to control mesh colors and styles"
+" through one global configuration."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:10
+msgid ""
+"The default theme parameters in PyVista can be accessed and displayed with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:17
+msgid ""
+"Default plotting parameters can be accessed individually by their attribute "
+"names:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:24
+msgid ""
+"Here's an example plot of the Stanford Dragon using default plotting "
+"parameters:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:35
+msgid "These parameters can then be modified globally with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:44
+msgid "Now, the mesh will be plotted with the new global parameters:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:51
+msgid "This is identical to plotting the mesh with the following parameters:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:62
+msgid "Creating A Custom Theme"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:63
+msgid ""
+"You can customize a theme based on one of the built-in themes and then apply"
+" it globally with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:78
+msgid "Alternatively, you can save the theme to disk to be used later with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:84
+msgid "And then subsequently loaded in a new session of pyvista with:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:92
+msgid "Theme API"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:93
+msgid "See :ref:`theme_api` for the full API definition."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:5
+msgid "Transitioning from VTK to PyVista"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:6
+msgid ""
+"VTK is primarily developed in C++ and uses chained setter and getter "
+"commands to access data. Instead, PyVista wraps the VTK data types into "
+"numpy arrays so that users can benefit from its bracket syntax and fancy "
+"indexing. This section demonstrates the difference between the two "
+"approaches in a series of examples."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:12
+msgid ""
+"For example, to hard-code points for a `vtk.vtkImageData`_ data structure "
+"using VTK Python's bindings, one would write the following:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:46
+msgid ""
+"As you can see, there is quite a bit of boilerplate that goes into the "
+"creation of a simple `vtk.vtkImageData`_ dataset. PyVista provides much more"
+" concise syntax that is more \"Pythonic.\" The equivalent code in PyVista "
+"is:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:69
+msgid "Here, PyVista has done several things for us:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:71
+msgid ""
+"PyVista combines the dimensionality of the data (in the shape of the "
+":class:`numpy.ndarray`) with the values of the data in one line. VTK uses "
+"\"tuples\" to describe the shape of the data (where it sits in space) and "
+"\"components\" to describe the type of data (1 = scalars/scalar fields, 2 = "
+"vectors/vector fields, n = tensors/tensor fields). Here, shape and values "
+"are stored concretely in one variable."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:79
+msgid ""
+":class:`pyvista.ImageData` wraps `vtk.vtkImageData`_, just with a different "
+"name; they are both containers of evenly spaced points. Your data does not "
+"have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like "
+"images, values in the dataset are evenly spaced apart like pixels in an "
+"image."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:85
+msgid ""
+"Furthermore, since we know the container is for uniformly spaced data, "
+"pyvista sets the origin and spacing by default to ``(0, 0, 0)`` and ``(1, 1,"
+" 1)``. This is another great thing about PyVista and Python. Rather than "
+"having to know everything about the VTK library up front, you can get "
+"started very easily. Once you get more familiar with it and need to do "
+"something more complex, you can dive deeper. For example, changing the "
+"origin and spacing is as simple as:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:98
+msgid ""
+"The name for the :attr:`point_array <pyvista.point_array>` is given directly"
+" in dictionary-style fashion. Also, since VTK stores data on the heap "
+"(linear segments of RAM; a C++ concept), the data must be flattened and put "
+"in Fortran ordering (which controls how multidimensional data is laid out in"
+" physically 1D memory; numpy uses \"C\"-style memory layout by default). "
+"This is why in our earlier example, the first argument to ``SetValue()`` was"
+" written as ``x*300 + y``. Here, numpy takes care of this for us quite "
+"nicely and it's made more explicit in the code, following the Python best "
+"practice of \"Explicit is better than implicit.\""
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:109
+msgid ""
+"Finally, with PyVista, each geometry class contains methods that allow you "
+"to immediately plot the mesh without also setting up the plot. For example, "
+"in VTK you would have to do:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:128
+msgid "However, with PyVista you only need:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:159
+msgid "PointSet Construction"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:160
+msgid ""
+"PyVista heavily relies on NumPy to efficiently allocate and access VTK's C "
+"arrays. For example, to create an array of points within VTK one would "
+"normally loop through all the points of a list and supply that to a  "
+"`vtkPoints`_ class. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:184
+msgid ""
+"To do the same within PyVista, you simply need to create a NumPy array:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:192
+msgid ""
+"You can use :func:`pyvista.vtk_points` to construct a `vtkPoints`_ object, "
+"but this is unnecessary in almost all situations."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:195
+msgid ""
+"Since the end goal is to construct a :class:`pyvista.DataSet "
+"<pyvista.core.dataset.DataSet>`, you would simply pass the ``np_points`` "
+"array to the :class:`pyvista.PolyData` constructor:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:204
+msgid "Whereas in VTK you would have to do:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:211
+msgid ""
+"The same goes with assigning face or cell connectivity/topology. With VTK "
+"you would normally have to loop using ``InsertNextCell`` and "
+"``InsertCellPoint``. For example, to create a single cell (triangle) and "
+"then assign it to `vtkPolyData`_:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:225
+msgid ""
+"In PyVista, we can assign this directly in the constructor and then access "
+"it (or change it) from the :attr:`faces <pyvista.PolyData.faces>` attribute."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:238
+msgid "Object Representation"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:239
+msgid "Both VTK and PyVista provide representations for their objects."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:241
+msgid ""
+"VTK provides a verbose representation (useful for debugging) of their data "
+"types that can be accessed via :func:`print`, as the ``__repr__`` (unlike "
+"``__str__``) only provides minimal information about each object:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:249
+msgid ""
+"PyVista chooses to show minimal data in the :func:`repr`, preferring "
+"explicit attribute access on meshes for the bulk of attributes. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:264
+msgid ""
+"All other attributes like :attr:`lines <pyvista.PolyData.lines>`, "
+":attr:`point_data <pyvista.DataSet.point_data>`, or :attr:`cell_data "
+"<pyvista.DataSet.cell_data>` can be accessed directly from the object. This "
+"approach was chosen to allow for a brief summary showing key parts of the "
+":class:`DataSet <pyvista.DataSet>` without overwhelming the user."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:272
+msgid "Tradeoffs"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:273
+msgid ""
+"While most features can, not everything can be simplified without losing "
+"functionality or performance."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:276
+msgid ""
+"In the :class:`collision <pyvista.PolyDataFilters.collision>` filter, we "
+"demonstrate how to calculate the collision between two meshes. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:308
+msgid ""
+"Under the hood, the collision filter detects mesh collisions using oriented "
+"bounding box (OBB) trees. For a single collision, this filter is as "
+"performant as the VTK counterpart, but when computing multiple collisions "
+"with the same meshes, as in the :ref:`collision_example` example, it is more"
+" efficient to use the `vtkCollisionDetectionFilter "
+"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_, "
+"as the OBB tree is computed once for each mesh. In most cases, pure PyVista "
+"is sufficient for most data science, but there are times when you may want "
+"to use VTK classes directly."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:318
+msgid ""
+"Note that nothing stops you from using VTK classes and then wrapping the "
+"output with PyVista. For example:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:338
+msgid ""
+"In this manner, you can get the \"best of both worlds\" should you need the "
+"flexibility of PyVista and the raw power of VTK."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:342
+msgid ""
+"You can use :func:`pyvista.Polygon` for a one line replacement of the above "
+"VTK code."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:4
+msgid "What is a Mesh?"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:5
+msgid ""
+"In PyVista, a mesh is any spatially referenced information and usually "
+"consists of geometrical representations of a surface or volume in 3D space. "
+"We commonly refer to any spatially referenced dataset as a mesh, so often "
+"the distinction between a mesh, a grid, and a volume can get fuzzy, but that"
+" does not matter in PyVista. If you have a dataset that is a surface mesh "
+"with 2D geometries like triangles, we call it a mesh, and if you have a "
+"dataset with 3D geometries like voxels, tetrahedra, hexahedra, etc., then we"
+" also call that a mesh. Why? Because it is simple that way."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:15
+msgid ""
+"In all spatially referenced datasets, there lies an underlying mesh "
+"structure which is the connectivity between vertices to define cells. "
+"Whether those cells are 2D or 3D is not always of importance and we've "
+"worked hard to make PyVista work for datasets of either or mixed geometries "
+"so that you as a user do not have to get bogged down in the nuances."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:22
+msgid ""
+"This is a very high level overview of the PyVista API. For further details "
+"regarding our data model and how it relates to the underlying VTK data "
+"model, please see :ref:`pyvista_data_model`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:28
+msgid "What is a Point?"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:29
+msgid ""
+"Points are the vertices of the mesh, also referred to as the Cartesian "
+"coordinates of the underlying structure. All PyVista datasets (meshes) have "
+"points and sometimes, you can have a mesh that only has points, like a point"
+" cloud."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:34
+msgid ""
+"For example, you can create a point cloud mesh using the "
+":class:`pyvista.PolyData` class which is built for meshes that have 1D and "
+"2D cell types (we'll get into what a cell is briefly)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:38
+msgid ""
+"Let's start with a point cloud; this is a mesh type that only has vertices. "
+"You can create one by defining a 2D array of Cartesian coordinates like so:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:67
+msgid ""
+"But it's important to note that most meshes have some sort of connectivity "
+"between points such as this gridded mesh:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:87
+msgid "Or this triangulated surface:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:106
+msgid "What is a Cell?"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:107
+msgid ""
+"A cell is the geometry between points that defines the connectivity or "
+"topology of a mesh. In the examples above, cells are defined by the lines "
+"(edges colored in black) connecting points (colored in red). For example, a "
+"cell in the beam example is a voxel defined by the region between eight "
+"points in that mesh:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:132
+msgid ""
+"Cells aren't limited to voxels, they could be a triangle between three "
+"points, a line between two points, or even a single point could be its own "
+"cell (but that's a special case)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:138
+msgid "What are Attributes?"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:139
+msgid ""
+"Attributes are data values that live on either the points or cells of a "
+"mesh. In PyVista, we work with both point data and cell data and allow easy "
+"access to data dictionaries to hold arrays for attributes that live either "
+"on all points or on all cells of a mesh. These attributes can be accessed in"
+" a Dictionary-like attribute attached to any PyVista mesh accessible as one "
+"of the following:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:146
+msgid ":attr:`point_data <pyvista.DataSet.point_data>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:147
+msgid ":attr:`cell_data <pyvista.DataSet.cell_data>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:148
+msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:152
+msgid ""
+"Point data refers to arrays of values (scalars, vectors, etc.) that live on "
+"each point of the mesh. Each element in an attribute array corresponds to a "
+"point in the mesh. Let's create some point data for the beam mesh. When "
+"plotting, the values between points are interpolated across the cells."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:166
+msgid ""
+"Cell data refers to arrays of values (scalars, vectors, etc.) that live "
+"throughout each cell of the mesh. That is the entire cell (2D face or 3D "
+"volume) is assigned the value of that attribute."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:176
+msgid ""
+"Here's a comparison of point data versus cell data and how point data is "
+"interpolated across cells when mapping colors. This is unlike cell data "
+"which has a single value across the cell's domain:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:199
+msgid ""
+"Field data is not directly associated with either the points or cells but "
+"still should be attached to the mesh. This may be a string array storing "
+"notes, or even indices of a :ref:`collision_example`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:207
+msgid "Assigning Scalars to a Mesh"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:209
+msgid ""
+"Here's how we assign values to cell attributes and plot it. Here, we "
+"generate cube containing 6 faces and assign each face an integer from "
+"``range(6)`` and then have it plotted."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:213
+msgid "Note how this varies from assigning scalars to each point"
+msgstr ""
