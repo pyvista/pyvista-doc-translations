@@ -5,6 +5,8 @@
 # 
 # Translators:
 # Bin Yang <yangbin880101@163.com>, 2022
+# 聖文 陳, 2024
+# 宇鹏 王, 2024
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-17 00:44+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
-"Last-Translator: Bin Yang <yangbin880101@163.com>, 2022\n"
+"Last-Translator: 宇鹏 王, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -239,7 +241,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:1
 msgid "Plot a vtk or numpy object."
-msgstr ""
+msgstr "绘制一个vtk或numpy对象"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
@@ -430,14 +432,14 @@ msgstr "参数"
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:3
 msgid "VTK object or ``numpy`` array to be plotted."
-msgstr ""
+msgstr "将要绘制的VTK对象，或numpy数组"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:5
 msgid ""
 "Plots off screen when ``True``.  Helpful for saving screenshots without a "
 "window popping up."
-msgstr ""
+msgstr "为真时，会在屏幕外绘制。在不弹出窗口的情况下保存截图时很有用。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:8
@@ -446,7 +448,7 @@ msgstr ""
 msgid ""
 "Opens window in full screen.  When enabled, ignores ``window_size``.  "
 "Default ``False``."
-msgstr ""
+msgstr "全屏打开窗口。为真时忽略`window_size`的设定。默认是`False`。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -455,6 +457,7 @@ msgid ""
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``.  When ``True``, "
 "takes screenshot and returns ``numpy`` array of image."
 msgstr ""
+"启用时把截图保存到文件。参考：``help(pyvista.Plotter.screenshot)``。默认``False``。填``True``时截图并返回图片的``numpy``数组。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:11
@@ -462,49 +465,50 @@ msgid ""
 "Saves screenshot to file when enabled.  See: "
 "``help(pyvista.Plotter.screenshot)``.  Default ``False``."
 msgstr ""
+"启用时把截图保存到文件。通过``help(pyvista.Plotter.screenshot)``查看更多信息。默认值``False``。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:14
 msgid "When ``True``, takes screenshot and returns ``numpy`` array of image."
-msgstr ""
+msgstr "为``True``时，截屏并返回截图的``numpy``数组。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:17
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:11
 msgid "Window size in pixels.  Defaults to ``[1024, 768]``"
-msgstr ""
+msgstr "弹出窗口的大小，默认为``[1024, 768]``。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:19
 msgid ""
 "Shows mesh bounds when ``True``.  Default ``False``. Alias ``show_grid`` "
 "also accepted."
-msgstr ""
+msgstr "为``True``时显示网格边界。默认``False``。也可以使用别名``show_grid``传参。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:22
 msgid ""
 "When ``True``, the resulting plot is placed inline a jupyter notebook.  "
 "Assumes a jupyter console is active."
-msgstr ""
+msgstr "为``True``时，如果已启用jupyter控制台，绘制结果会放置在jupyter notebook的一行内。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:25
 msgid ""
 "Shows a vtk axes widget.  If ``None``, enabled according to "
 "``pyvista.global_theme.axes.show``."
-msgstr ""
+msgstr "显示vtk轴控件。如果值为``None``，则根据``pyvista.global_theme.axes.show``的设定决定是否显示。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:28
 msgid "Adds text at the bottom of the plot."
-msgstr ""
+msgstr "在绘图的底部加文本"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:30
 msgid "Use the ``add_volume`` method for volume rendering."
-msgstr ""
+msgstr "使用``add_volume``方法做体积渲染。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:32
@@ -515,6 +519,7 @@ msgid ""
 "``pyvista.set_jupyter_backend('ipyvtklink')`` or with "
 "``backend='ipyvtklink'``."
 msgstr ""
+"不建议使用的。对后台进行设置可以用``pyvista.set_jupyter_backend('ipyvtklink')``做全局设置，或这用``backend='ipyvtklink'``进行设置。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:36
@@ -527,53 +532,59 @@ msgid ""
 "Show a ``panel`` widget.  This can also be set globally with "
 "``pyvista.set_jupyter_backend``"
 msgstr ""
+"Jupyter notebook使用的绘制后台。可选以下选项之一：\n"
+"* ``'none'`` : 不在notebook显示. \n"
+"* ``'static'`` : 呈现静态图片. \n"
+"* ``'ipygany'`` : 显示一个``ipygany``控件 \n"
+"* ``'panel'`` : 显示一个``panel``控件. \n"
+"这个设置也能通过``pyvista.set_jupyter_backend``做全局配置。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:36
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:43
 msgid "Jupyter notebook plotting backend to use.  One of the following:"
-msgstr ""
+msgstr "Jupyter notebook使用的绘制后台。可选以下选项之一："
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:39
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:46
 msgid "``'none'`` : Do not display in the notebook."
-msgstr ""
+msgstr "* ``'none'`` : 不在notebook显示。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:40
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:47
 msgid "``'static'`` : Display a static figure."
-msgstr ""
+msgstr "* ``'static'`` : 呈现静态图片。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:41
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:48
 msgid "``'ipygany'`` : Show a ``ipygany`` widget"
-msgstr ""
+msgstr "* ``'ipygany'`` : 显示一个``ipygany``控件。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:42
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:49
 msgid "``'panel'`` : Show a ``panel`` widget."
-msgstr ""
+msgstr "* ``'panel'`` : 显示一个``panel``控件。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:44
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter.show:51
 msgid "This can also be set globally with ``pyvista.set_jupyter_backend``"
-msgstr ""
+msgstr "这个设置也能通过``pyvista.set_jupyter_backend``做全局配置。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:47
 msgid "Keyword arguments for the Jupyter notebook plotting backend."
-msgstr ""
+msgstr "Jupyter notebook绘制后台需要用的关键字参数"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:49
@@ -582,12 +593,12 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:63
 msgid "Plot-specific theme."
-msgstr ""
+msgstr "特定的绘制主题"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:51
 msgid "See ``help(pyvista.Plotter.add_mesh)`` for additional options."
-msgstr ""
+msgstr "通过``help(pyvista.Plotter.add_mesh)``查看更多参考信息。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:0
@@ -640,7 +651,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:0
 msgid "Returns"
-msgstr ""
+msgstr "返回"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -651,7 +662,7 @@ msgid ""
 "     ``transparent_background=False``.   * [Window height x Window width x "
 "4] if the theme sets     ``transparent_background=True``.    Returned only "
 "when ``screenshot=True``."
-msgstr ""
+msgstr "* **cpos** (*list*) -- 相机位置、焦点、视线上方方向组成的列表。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:54
@@ -659,14 +670,14 @@ msgstr ""
 #: pyvista.plotting.plotting.Plotter.show:58
 msgid ""
 "**cpos** (*list*) -- List of camera position, focal point, and view up."
-msgstr ""
+msgstr "**cpos** (*list*) -- 相机位置、焦点、视线上方方向组成的列表。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:55
 msgid ""
 "**img** (*numpy.ndarray*) -- Array containing pixel RGB and optionally alpha"
 " values. Sized:"
-msgstr ""
+msgstr "**img** (*numpy.ndarray*) -- 包含像素RGB和可选的初始值的数组。大小："
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:58
@@ -675,7 +686,7 @@ msgstr ""
 msgid ""
 "[Window height x Window width x 3] if the theme sets "
 "``transparent_background=False``."
-msgstr ""
+msgstr "[窗口高度 x 窗口宽度 x 3] 设置``transparent_background=False``时。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:60
@@ -684,12 +695,12 @@ msgstr ""
 msgid ""
 "[Window height x Window width x 4] if the theme sets "
 "``transparent_background=True``."
-msgstr ""
+msgstr "[窗口高度 x 窗口宽度 x 4]如果主题设置``transparent_background=True``。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:63
 msgid "Returned only when ``screenshot=True``."
-msgstr ""
+msgstr "在设置``screenshot=True``时，该值才会返回。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:66
@@ -757,12 +768,12 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_slider_widget:49
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot:67
 msgid "Plot a simple sphere while showing its edges."
-msgstr ""
+msgstr "绘制一个简单的球体，同时显示它的边。"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:1
@@ -829,7 +840,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/widgets.pydocstring of
 #: pyvista.plotting.widgets.WidgetHelper.add_text_slider_widget:0
 msgid "Return type"
-msgstr ""
+msgstr "返回值类型"
 
 #: ../../pyvista/pyvista/plotting/helpers.pydocstring of
 #: pyvista.plotting.helpers.plot_arrows:12
@@ -896,7 +907,7 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:209
 #: ../../pyvista/docs/plotting/widgets.rst:10
 msgid "Attributes"
-msgstr ""
+msgstr "屬性"
 
 #: ../../pyvista/docs/plotting/plotting.rst:172:<autosummary>:1
 msgid ":obj:`background_color <pyvista.BasePlotter.background_color>`\\"
@@ -1111,7 +1122,7 @@ msgstr ""
 #: ../../pyvista/docs/plotting/plotting.rst:214
 #: ../../pyvista/docs/plotting/widgets.rst:15
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -1627,7 +1638,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/renderer.pydocstring of
 #: pyvista.plotting.renderer.Renderer.enable_parallel_projection:1
 msgid "Enable parallel projection."
-msgstr ""
+msgstr "启用平行投影"
 
 #: ../../pyvista/docs/plotting/plotting.rst:178:<autosummary>:1
 msgid ""
@@ -5744,7 +5755,7 @@ msgstr ""
 msgid ""
 "The camera will have a parallel projection. Parallel projection is often "
 "useful when viewing images or 2D datasets."
-msgstr ""
+msgstr "相机将具有平行投影。平行投影常常在查看图片或2D数据对象时很实用。"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.picking.PickingHelper.enable_path_picking:1
@@ -6775,7 +6786,7 @@ msgstr ""
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:4
 msgid "Example"
-msgstr ""
+msgstr "示例"
 
 #: ../../pyvista/pyvista/plotting/plotting.pydocstring of
 #: pyvista.plotting.plotting.Plotter:14
