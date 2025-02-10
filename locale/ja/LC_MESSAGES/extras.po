@@ -281,7 +281,7 @@ msgstr ""
 msgid ""
 "Use ``python -m pip install -e '.[dev]'`` to also install all of the "
 "packages required for development."
-msgstr ""
+msgstr "``python -m pip install -e '.[dev]'`` を使って、開発に必要なパッケージもすべてインストールします。"
 
 #: ../../pyvista/CONTRIBUTING.rst:52
 msgid "Quick Start Development with Codespaces"
@@ -762,6 +762,10 @@ msgid ""
 "``Return`` section from docstrings and skip the RT01 check for magic methods"
 " like ``__init__``."
 msgstr ""
+"もし，何らかの理由で関数のルールに例外を設ける必要がある場合は， ``pyproject.toml`` の "
+"``[tool.numpydoc_validation]`` "
+"セクションに例外を追加するか，インラインコメントを追加して特定のチェックを除外してください．例えば、docstringから ``Return`` "
+"セクションを省略したり，　``__init__`` のようなマジックメソッドのRT01チェックをスキップすることができます．"
 
 #: ../../pyvista/CONTRIBUTING.rst:361
 msgid ""
@@ -851,6 +855,9 @@ msgid ""
 "0.37.0. This is why we need to check if the version is greater than 0.40.0 "
 "and 0.41.0 in the test code."
 msgstr ""
+"新しいバージョンをリリースする際には、バージョン番号を次の開発バージョンに更新する必要があります。 "
+"例えば、バージョン0.37.0をリリースする場合、次の開発バージョンは0.37.0より大きい0.38.0.dev0でなければなりません。 "
+"このため、テストコードではバージョンが0.40.0や0.41.0より大きいかどうかをチェックする必要があります。"
 
 #: ../../pyvista/CONTRIBUTING.rst:451
 msgid ""
@@ -932,7 +939,7 @@ msgstr ""
 msgid ""
 "To run our comprehensive suite of unit tests, install PyVista with all "
 "developer dependencies:"
-msgstr ""
+msgstr "PyVistaの包括的なユニットテスト群を実行するには、PyVistaをすべての開発者依存パッケージとともにインストールします:"
 
 #: ../../pyvista/CONTRIBUTING.rst:504
 msgid ""
@@ -968,6 +975,12 @@ msgid ""
 "`coverage documentation "
 "<https://coverage.readthedocs.io/en/latest/branch.html>`_."
 msgstr ""
+"PRを投稿する際には、すべての修正を徹底的にテストすることを強く推奨します。 これは、 `codecov GitHub action "
+"<https://app.codecov.io/gh/pyvista/pyvista>`_ が 90% という目標を設定することで、CI "
+"でさらに徹底されます。つまり、PR で修正されたコードの 90% がテストされるようになります。 ブランチカバレッジは CI "
+"上で測定され、フルカバレッジを保証するためには ``if`` 節の両方の値をテストしなければならないことを意味します。 "
+"ブランチカバレッジの詳細については、 `coverage documentation "
+"<https://coverage.readthedocs.io/en/latest/branch.html>`_ を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:530
 msgid ""
@@ -979,10 +992,14 @@ msgid ""
 " has to be carefully justified in the PR thread if no simple alternative "
 "solution has been found."
 msgstr ""
+"必要であれば、 ``# pragma: no cover`` または ``# pragma: no branch`` "
+"のコメントを追加することで、特定の行のコードカバレッジを無効にすることができます。詳しくは `excluding code "
+"<https://coverage.readthedocs.io/en/latest/branch.html#excluding-code>`__ "
+"を参照してください。しかし、コードカバレッジの除外はめったに使うべきでなく、簡単な代替案が見つからない場合は、PRスレッドで注意深く正当化しなければなりません。"
 
 #: ../../pyvista/CONTRIBUTING.rst:537
 msgid "Docstring Testing"
-msgstr ""
+msgstr "Docstringテスト"
 
 #: ../../pyvista/CONTRIBUTING.rst:538
 msgid "Run all code examples in the docstrings with:"
@@ -1541,10 +1558,14 @@ msgid ""
 "Image Regression Testing`_ for testing methods which should be considered "
 "first."
 msgstr ""
+"これらのテストは ``pyvista`` が生成するプロットが正しいことを保証するための *追加的な* "
+"テストカバレッジを提供することを意図しており、テストの主要なソースとして使用すべきではありません。 最初に考慮すべきテスト方法については、 "
+"`Docstring Testing`_ と `Notes Regarding Image Regression Testing`_ "
+"を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:902
 msgid "Interactive Plot Testing"
-msgstr ""
+msgstr "インタラクティブプロットテスト"
 
 #: ../../pyvista/CONTRIBUTING.rst:904
 msgid ""
@@ -1553,6 +1574,9 @@ msgid ""
 " a ``.vtksz`` extension and can be relatively large when plotting high-"
 "resolution datasets."
 msgstr ""
+"PyVista のドキュメントでは、カスタムディレクティブ ``pyvista-plot`` "
+"を使って、静的な画像と対話的なプロットファイルを生成しています。 インタラクティブなファイルは ``.vtksz`` "
+"という拡張子を持ち、高解像度のデータセットをプロットすると比較的大きくなります。"
 
 #: ../../pyvista/CONTRIBUTING.rst:909
 msgid ""
@@ -1560,28 +1584,32 @@ msgid ""
 "of the documentation build, a limit is placed on the size of ``.vtksz`` "
 "files. To test that interactive plots do not exceed this limit, run:"
 msgstr ""
+"インタラクティブなプロットが不必要にドキュメントビルドのサイズを大きくしないように、 ``.vtksz`` ファイルのサイズに制限が設けられています。 "
+"インタラクティブなプロットがこの制限を超えないことをテストするには、以下を実行してください:"
 
 #: ../../pyvista/CONTRIBUTING.rst:917
 msgid ""
 "If any of these tests fail, the example(s) which generated the plot should "
 "be modified, e.g.:"
-msgstr ""
+msgstr "これらの(複数の)テストのいずれかが失敗した場合、プロットを生成したサンプルを修正する必要があります、例えば:"
 
 #: ../../pyvista/CONTRIBUTING.rst:920
 msgid ""
 "Simplify any dataset(s) used, e.g. crop, clip, down-sample, decimate, or "
 "otherwise reduce the complexity of the plot."
-msgstr ""
+msgstr "使用する(複数の)データセットを単純化します。例えば、クロップ、クリップ、ダウンサンプル、デシメートなど、プロットの複雑さを軽減します。"
 
 #: ../../pyvista/CONTRIBUTING.rst:923
 msgid ""
 "Force the plot to be static only. In docstrings, use the plot directive with"
 " the ``force_static`` option, e.g.:"
 msgstr ""
+"プロットを強制的に静的なものにします。 docstrings では、plot ディレクティブに ``force_static`` "
+"オプションを指定します、例えば:"
 
 #: ../../pyvista/CONTRIBUTING.rst:937
 msgid "In sphinx gallery examples use:"
-msgstr ""
+msgstr "sphinx galleryの使用例:"
 
 #: ../../pyvista/CONTRIBUTING.rst:945
 msgid ""
@@ -1589,18 +1617,23 @@ msgid ""
 "before the call to ``plot()`` or ``show()`` to force static for a single "
 "plot. See :ref:`add_example_example` for more information."
 msgstr ""
+"または ``plot()`` や ``show()`` を呼び出す前に ``PYVISTA_GALLERY_FORCE_STATIC`` "
+"を使用すると、1つのプロットに対して静的描画を強制することができます。 詳細は :ref:`add_example_example` "
+"を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:951
 msgid ""
 "Reducing the complexity of the plot is preferred as this will also also "
 "likely reduce the processing times."
-msgstr ""
+msgstr "プロットの複雑さを減らすことは、処理時間の短縮にもつながるので好ましいです。"
 
 #: ../../pyvista/CONTRIBUTING.rst:956
 msgid ""
 "See `Documentation Image Regression Testing`_. for testing performed on the "
 "static images generated by the plot directive."
 msgstr ""
+"plot指示文によって生成された静的画像に対して行われたテストについては、 `Documentation Image Regression "
+"Testing`_ を参照してください。"
 
 #: ../../pyvista/CONTRIBUTING.rst:960
 msgid "Controlling Cache for CI Documentation Build"
@@ -1851,11 +1884,11 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:1113
 msgid ":func:`pyvista.examples.downloads.download_guitar`"
-msgstr ""
+msgstr ":func:`pyvista.examples.downloads.download_guitar`"
 
 #: ../../pyvista/CONTRIBUTING.rst:1114
 msgid ":func:`pyvista.examples.downloads.download_trumpet`"
-msgstr ""
+msgstr ":func:`pyvista.examples.downloads.download_trumpet`"
 
 #: ../../pyvista/CONTRIBUTING.rst:1116
 msgid "complete the following steps:"
@@ -1993,6 +2026,11 @@ msgid ""
 "It typically weights 500 Mb and is available from the ``Upload non-"
 "interactive HTML documentation`` step of the ``Build Documentation`` CI job."
 msgstr ""
+"pyvistaのメインリポジトリからのブランチのPRの場合、ドキュメントは自動的に `Netifly GitHub actions "
+"<https://github.com/nwtgck/actions-netlify>`_ を使ってデプロイされます。 "
+"しかし、フォークからPRを提出する新しい貢献者は、ドキュメントのビルドの非対話的なサブセットを含む軽量のドキュメントCI成果物をダウンロードすることができます。"
+" これは通常500Mbの重さで、``Build Documentation`` CIジョブの ``Upload non-interactive HTML"
+" documentation`` ステップから利用できます。"
 
 #: ../../pyvista/CONTRIBUTING.rst:1210
 msgid "Branching Model"
@@ -2417,7 +2455,7 @@ msgstr "これはデフォルトの球体"
 #: ../../pyvista/doc/source/extras/plot_directive.rst:40
 msgid ""
 "You need to install the following packages to build the interactive scene:"
-msgstr ""
+msgstr "インタラクティブシーンをビルドするには、以下のパッケージをインストールする必要があります:"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:48
 msgid ""
@@ -2427,42 +2465,42 @@ msgstr "ドキュメントのインタラクティブなシーンを見るには
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:55
 msgid "Complete Example"
-msgstr ""
+msgstr "完全な例"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:57
 msgid ""
 "The following is a script to build documentation with interactive plots from"
 " scratch. The script will:"
-msgstr ""
+msgstr "以下は、インタラクティブなプロットを含むドキュメントをゼロから作成するスクリプトです。このスクリプトは:"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:60
 msgid "Create a new virtual environment and install dependencies"
-msgstr ""
+msgstr "新しい仮想環境を作成し、依存関係をインストールします"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:61
 msgid "Create the files required for a simple documentation build:"
-msgstr ""
+msgstr "簡単なドキュメントのビルドに必要なファイルを作成します:"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:63
 msgid "Sphinx configuration file ``doc/src/conf.py`` with extensions"
-msgstr ""
+msgstr "Sphinx 設定ファイル ``doc/src/conf.py`` と拡張子"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:64
 msgid ""
 "Source file ``doc/src/example.py`` with a simple plot directive example"
-msgstr ""
+msgstr "ソースファイル ``doc/src/example.py`` に簡単なプロットディレクティブの例を示します。"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:65
 msgid "Index file ``doc/src/index.rst`` for site navigation"
-msgstr ""
+msgstr "サイトナビゲーションのためのインデックスファイル ``doc/src/index.rst``"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:67
 msgid "Build the documentation"
-msgstr ""
+msgstr "ドキュメントの作成"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:68
 msgid "Start a local server"
-msgstr ""
+msgstr "ローカルサーバーの起動"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:70
 msgid ""
@@ -2470,6 +2508,8 @@ msgid ""
 "Once the documentation is built, you should be able to view it with a web "
 "browser by navigating to ``http://localhost:11000``."
 msgstr ""
+"スクリプトを直接ターミナルにコピー＆ペーストして実行することができます。 ドキュメントが作成されたら、ウェブブラウザで "
+"``http://localhost:11000`` に移動して閲覧することができるはずです。"
 
 #: ../../pyvista/doc/source/extras/plot_directive.rst:137
 msgid "API Reference"
@@ -2483,7 +2523,7 @@ msgstr "プロットディレクティブモジュール．"
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:3
 msgid "A directive for including a PyVista plot in a Sphinx document."
-msgstr ""
+msgstr "SphinxドキュメントにPyVistaプロットを含めるためのディレクティブ。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:5
@@ -2553,6 +2593,8 @@ msgid ""
 "Whether to display the source code. The default can be changed using the "
 "``plot_include_source`` variable in :file:`conf.py`."
 msgstr ""
+"ソースコードを表示するかどうかを指定します．デフォルトは :file:`conf.py` の ``plot_include_source`` "
+"変数で変更できます．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:48
@@ -2607,6 +2649,8 @@ msgid ""
 "When setting this flag, the code block will be run but no figures will be "
 "inserted.  This is usually useful with the ``:context:`` option."
 msgstr ""
+"このフラグを設定すると，コードブロックは実行されますが，数字は挿入されません． これは通常 ``:context:`` "
+"オプションと一緒に使うと便利です．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:62
@@ -2632,17 +2676,17 @@ msgstr "force_static"
 msgid ""
 "When setting this flag, static images will be used instead of an interactive"
 " scene."
-msgstr ""
+msgstr "このフラグを設定すると，インタラクティブシーンの代わりに静止画像が使われます．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:71
 msgid "skip"
-msgstr ""
+msgstr "skip"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive-1
 msgid "bool, default: True"
-msgstr ""
+msgstr "bool, default: True"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:72
@@ -2652,6 +2696,9 @@ msgid ""
 " controlled by the ``plot_skip`` boolean variable in :file:`conf.py`.  Note "
 "that, if specified, this option overrides the ``plot_skip`` configuration."
 msgstr ""
+"このディレクティブの実行をスキップするかどうか。 引数を指定しない場合、つまり ``:skip:`` の場合、デフォルトは ``:skip: "
+"true`` です。 デフォルトの動作は :file:`conf.py` の ``plot_skip`` boolean 変数によって制御されます。 "
+"このオプションは ``plot_skip`` の設定を上書きすることに注意してください。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:78
@@ -2665,6 +2712,8 @@ msgid ""
 "directive is executed is controlled by the ``plot_skip_optional`` boolean "
 "variable in :file:`conf.py`."
 msgstr ""
+"このフラグはディレクティブを *条件付き* で実行することを示します。 ディレクティブが実行されるかどうかは :file:`conf.py` の "
+"``plot_skip_optional`` boolean 変数によって制御されます。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:83
@@ -2673,6 +2722,9 @@ msgid ""
 "directive, except for *target* (since plot will add its own target).  These "
 "include *alt*, *height*, *width*, *scale*, *align*."
 msgstr ""
+"さらに，このディレクティブは， *target* を除いて， `image` ディレクティブのすべてのオプションをサポートしています (plot "
+"が独自のターゲットを追加するため)． これらのオプションには *alt*, *height*, *width*, *scale*, *align* "
+"があります．"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:88
@@ -2691,7 +2743,7 @@ msgstr "plot_include_source"
 msgid ""
 "Default value for the ``include-source`` directive option. Default is "
 "``True``."
-msgstr ""
+msgstr "``include-source`` ディレクティブオプションのデフォルト値．デフォルトは ``True`` 。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:95
@@ -2751,27 +2803,27 @@ msgstr "各プロットディレクティブブロックの後に実行される
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:112
 msgid "plot_skip"
-msgstr ""
+msgstr "plot_skip"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive-1
 msgid "bool, default: False"
-msgstr ""
+msgstr "bool, default: False"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:113
 msgid "Default value for the ``skip`` directive option."
-msgstr ""
+msgstr "ディレクティブオプション ``skip`` のデフォルト値。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:115
 msgid "plot_skip_optional"
-msgstr ""
+msgstr "plot_skip_optional"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:116
 msgid "Whether to skip execution of ``optional`` directives."
-msgstr ""
+msgstr "``オプションの`` ディレクティブの実行をスキップするかどうか。"
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:118
