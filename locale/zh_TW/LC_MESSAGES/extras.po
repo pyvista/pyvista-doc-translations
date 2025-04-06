@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.45.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-03 23:25+0000\n"
+"POT-Creation-Date: 2025-04-06 02:22+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -2199,7 +2199,7 @@ msgstr ""
 #: pyvista.ext.plot_directive:45
 msgid ""
 "Whether to display the source code. The default can be changed using the "
-"``plot_include_source`` variable in :file:`conf.py`."
+"``pyvista_plot_include_source`` variable in :file:`conf.py`."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
@@ -2317,30 +2317,40 @@ msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:88
+msgid "**Configuration options**"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:90
 msgid ""
-"**Configuration options** The plot directive has the following configuration"
-" options:"
+"Prior to v0.45, these directives conflicted with ``matplotlib``. All "
+"directives have been prepended with ``pyvista_``."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:91
-msgid "plot_include_source"
+#: pyvista.ext.plot_directive:94
+msgid "The plot directive has the following configuration options:"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:92
+#: pyvista.ext.plot_directive:96
+msgid "pyvista_plot_include_source"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:97
 msgid ""
 "Default value for the ``include-source`` directive option. Default is "
 "``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:95
-msgid "plot_basedir"
+#: pyvista.ext.plot_directive:100
+msgid "pyvista_plot_basedir"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:96
+#: pyvista.ext.plot_directive:101
 msgid ""
 "Base directory, to which ``plot::`` file names are relative to.  If ``None``"
 " or unset, file names are relative to the directory where the file "
@@ -2348,48 +2358,48 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:100
-msgid "plot_html_show_formats"
-msgstr ""
-
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:101
-msgid "Whether to show links to the files in HTML. Default ``True``."
-msgstr ""
-
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:103
-msgid "plot_template"
-msgstr ""
-
-#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:104
-msgid "Provide a customized Jinja2 template for preparing restructured text."
+#: pyvista.ext.plot_directive:105
+msgid "pyvista_plot_html_show_formats"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:106
-msgid "plot_setup"
+msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:107
-msgid "Python code to be run before every plot directive block."
+#: pyvista.ext.plot_directive:108
+msgid "pyvista_plot_template"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:109
-msgid "plot_cleanup"
+msgid "Provide a customized Jinja2 template for preparing restructured text."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:110
-msgid "Python code to be run after every plot directive block."
+#: pyvista.ext.plot_directive:111
+msgid "pyvista_plot_setup"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
 #: pyvista.ext.plot_directive:112
-msgid "plot_skip"
+msgid "Python code to be run before every plot directive block."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:114
+msgid "pyvista_plot_cleanup"
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:115
+msgid "Python code to be run after every plot directive block."
+msgstr ""
+
+#: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
+#: pyvista.ext.plot_directive:117
+msgid "pyvista_plot_skip"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
@@ -2398,22 +2408,22 @@ msgid "bool, default: False"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:113
+#: pyvista.ext.plot_directive:118
 msgid "Default value for the ``skip`` directive option."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:115
-msgid "plot_skip_optional"
+#: pyvista.ext.plot_directive:120
+msgid "pyvista_plot_skip_optional"
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:116
+#: pyvista.ext.plot_directive:121
 msgid "Whether to skip execution of ``optional`` directives."
 msgstr ""
 
 #: ../../pyvista/pyvista/ext/plot_directive.pydocstring of
-#: pyvista.ext.plot_directive:118
+#: pyvista.ext.plot_directive:123
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
