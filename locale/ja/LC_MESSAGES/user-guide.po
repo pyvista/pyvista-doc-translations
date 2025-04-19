@@ -4,16 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Tetsuo Koyama <tkoyama010@gmail.com>, 2024
+# Tetsuo Koyama <tkoyama010@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.45.dev0\n"
+"Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-25 02:19+0000\n"
+"POT-Creation-Date: 2025-04-19 13:02+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
-"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2024\n"
+"Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -869,6 +869,9 @@ msgid ""
 "filter. Unlike scalar arrays, vector arrays will be transformed along with "
 "the geometry as these vectors represent quantities with direction."
 msgstr ""
+"VTKでは， :func:`~pyvista.DataObjectFilters.transform` "
+"フィルタを使用して変換を行う際に，ベクトルはスカラーとは異なる扱いになります． "
+"スカラー配列とは異なり，ベクトル配列は方向を持つ量を表すため，ジオメトリと一緒に変換されます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:721
 msgid ""
@@ -878,6 +881,10 @@ msgid ""
 "transform any array with three components, so multi-component scalar arrays "
 "like RGB arrays will have to be discarded after transformation."
 msgstr ""
+"VTKでは，1つの \"アクティブ\" なベクトルしか許可しません．変換したい複数のベクトル配列がある場合には，  "
+":func:`~pyvista.DataObjectFilters.transform` で "
+"``transform_all_input_vectors=True`` を設定してください． "
+"これは，3つのコンポーネントを持つ配列を変換するので，RGB配列のような複数コンポーネントのスカラー配列は，変換後に破棄しなければならないことに注意してください．"
 
 #: ../../pyvista/doc/source/user-guide/index.rst:2
 msgid "User Guide"
