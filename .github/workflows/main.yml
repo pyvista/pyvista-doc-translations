@@ -43,6 +43,8 @@ jobs:
           git submodule update
           cd pyvista
           git pull origin main
+          pip install --upgrade pip
+          pip install . --group docs
           cd ..
           pip install -U pip setuptools wheel
           pip install -r ./requirements.txt
