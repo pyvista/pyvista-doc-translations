@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 17:23+0000\n"
+"POT-Creation-Date: 2025-05-21 02:37+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -75,6 +75,11 @@ msgid ""
 "base.sh>`__. Most of the ones below are designed to reduce the build time "
 "and resulting wheel size."
 msgstr ""
+"ソースからVTKを構築するのはかなりストレートです．デフォルトのビルド設定を使用し，次のスクリプトを使用して ``ninja`` "
+"を使用し，VTKのPythonホイールをビルドします．このスクリプトはpython "
+"3を使用していますが，最新のPythonバージョンを使用することができます．その他の便利なオプションについては， `conda-forge recipe"
+" <https://github.com/conda-forge/vtk-feedstock/blob/main/recipe/build-"
+"base.sh>`__ を参照してください．以下のほとんどのオプションは，構築時間を短縮し，ホイールサイズを小さくするように設計されています．"
 
 #: ../../pyvista/doc/source/extras/building_vtk.rst:35
 msgid ""
@@ -276,6 +281,7 @@ msgid ""
 "Use ``python -m pip install -e . --group dev`` to also install all of the "
 "packages required for development."
 msgstr ""
+"``python -m pip install -e . --group dev`` を使って、開発に必要なパッケージもすべてインストールします。"
 
 #: ../../pyvista/CONTRIBUTING.rst:52
 msgid "Quick Start Development with Codespaces"
@@ -2924,3 +2930,28 @@ msgstr ""
 #: ../../pyvista/doc/source/extras/vtk_data.rst:11
 msgid "This example uses a cloned vtk-data repository:"
 msgstr "この例では，クローンされたvtk-dataリポジトリを使用しています．"
+
+#: ../../pyvista/doc/source/extras/vtk_role.rst:4
+msgid "Sphinx VTK Role"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/vtk_role.rst:8
+msgid ""
+"PyVista's documentation uses the Sphinx extension "
+"https://github.com/pyvista/vtk-xref to link directly to `VTK's documentation"
+" <https://vtk.org/doc/nightly/html/index.html>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/vtk_role.rst:11
+msgid ""
+"This extension adds the ``:vtk:`` role to allow writing, for example, "
+"``:vtk:`vtkImageData``` inside docstrings to link directly to the "
+"``vtkImageData`` documentation. This will render as :vtk:`vtkImageData`."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/vtk_role.rst:15
+msgid ""
+"See `vtk-xref's repository <https://github.com/pyvista/vtk-xref>`_ for "
+"installation and usage details for adding the ``:vtk:`` role to your "
+"project."
+msgstr ""

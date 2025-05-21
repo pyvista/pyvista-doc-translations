@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 17:23+0000\n"
+"POT-Creation-Date: 2025-05-21 02:37+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -66,23 +66,17 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:28
 msgid ""
-"At the top level, we have `vtkDataObject`_, which are just \"blobs\" of data"
-" without geometry or topology. These contain arrays of `vtkFieldData`_. "
-"Under this are `vtkDataSet`_, which add geometry and topology to "
-"`vtkDataObject`_. Associated with every point or cell in the dataset is a "
-"specific value. Since these values must be positioned and connected in "
-"space, they are held in the `vtkDataArray`_ class, which are simply memory "
-"buffers on the heap. In PyVista, 99% of the time we interact with "
-"`vtkDataSet`_ objects rather than with `vtkDataObject`_ objects. PyVista "
-"uses the same data types as VTK, but structures them in a more pythonic "
-"manner for ease of use."
+"At the top level, we have :vtk:`vtkDataObject`, which are just \"blobs\" of "
+"data without geometry or topology. These contain arrays of "
+":vtk:`vtkFieldData`. Under this are :vtk:`vtkDataSet`, which add geometry "
+"and topology to :vtk:`vtkDataObject`. Associated with every point or cell in"
+" the dataset is a specific value. Since these values must be positioned and "
+"connected in space, they are held in the :vtk:`vtkDataArray` class, which "
+"are simply memory buffers on the heap. In PyVista, 99% of the time we "
+"interact with :vtk:`vtkDataSet` objects rather than with "
+":vtk:`vtkDataObject` objects. PyVista uses the same data types as VTK, but "
+"structures them in a more pythonic manner for ease of use."
 msgstr ""
-"一番上のレベルには `vtkDataObject`_ があります．これはジオメトリやトポロジーを持たない，単なるデータの \"塊\" です．これには "
-"`vtkFieldData`_ の配列が含まれます．その下にあるのが `vtkDataSet`_ で，これは `vtkDataObject`_ "
-"にジオメトリやトポロジを追加するものです．データセット内の全ての点やセルには特定の値が関連付けられている．これらの値は空間に配置され，接続されなければならないので，"
-" `vtkDataArray`_ クラスに保持され，これは単なるヒープ上のメモリバッファです．PyVistaでは，99%の場合， "
-"`vtkDataObject`_ オブジェクトではなく， `vtkDataSet`_ オブジェクトを操作します．PyVista は VTK "
-"と同じデータ型を使用しますが，使いやすくするために，よりpythonicな方法で構造化しています．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:39
 msgid ""
@@ -154,14 +148,10 @@ msgid ""
 "That is, every dataset can be represented as an |UnstructuredGrid|, but the "
 "|UnstructuredGrid| class takes the most amount of memory to store since they"
 " must account for every individual point and cell . On the other hand, since"
-" `vtkImageData`_ (|ImageData|) is uniformly spaced, a few integers and "
+" :vtk:`vtkImageData` (|ImageData|) is uniformly spaced, a few integers and "
 "floats can describe the shape, so it takes the least amount of memory to "
 "store."
 msgstr ""
-"ここでは，上記のデータセットを，最も複雑なもの(5)から最も複雑でないもの(1)の順に並べています．つまり，どのデータセットも "
-"|UnstructuredGrid| として表現できますが，個々の点やセルを考慮しなければならないため， |UnstructuredGrid| "
-"クラスは最も多くのメモリを消費します．一方， `vtkImageData`_ (|ImageData|) "
-"は一様な間隔で配置されているので，いくつかの整数や浮動小数点数で形状を表現することができ，格納するメモリの量は最も少なくて済みます．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:104
 msgid ""
@@ -224,12 +214,10 @@ msgstr "3角形の点を定義してみましょう．VTKのAPIを使えば，�
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:150
 msgid ""
-"PyVista supports creating objects directly from the `vtkDataArray`_ class, "
-"but there's a better, and more pythonic alternative by using "
+"PyVista supports creating objects directly from the :vtk:`vtkDataArray` "
+"class, but there's a better, and more pythonic alternative by using "
 ":class:`numpy.ndarray`."
 msgstr ""
-"PyVistaでは， `vtkDataArray`_ クラスから直接オブジェクトを作成することをサポートしていますが， "
-":class:`numpy.ndarray` を使用することで，より優れた，よりpythonicな代替手段があります．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:156
 msgid "Using NumPy with PyVista"
@@ -442,27 +430,27 @@ msgid "Or we could simply get the representation of the mesh with:"
 msgstr "あるいは，単純にメッシュの表現を得ることができます"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:357
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:257
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:254
 msgid "In this representation we see:"
 msgstr "この表現では，次のようになります．"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:359
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:259
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:256
 msgid "Number of cells :attr:`n_cells <pyvista.DataSet.n_cells>`"
 msgstr "セルの数 :attr:`n_cells <pyvista.DataSet.n_cells>`"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:360
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:260
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:257
 msgid "Number of points :attr:`n_points <pyvista.DataSet.n_points>`"
 msgstr "ポイントの数 :attr:`n_points <pyvista.DataSet.n_points>`"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:361
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:261
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:258
 msgid "Bounds of the mesh :attr:`bounds <pyvista.DataSet.bounds>`"
 msgstr "メッシュの境界 :attr:`bounds <pyvista.DataSet.bounds>`"
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:362
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:262
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:259
 msgid "Number of data arrays :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
 msgstr "データ配列の数 :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
 
@@ -1824,22 +1812,17 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:12
 msgid ""
-"For example, to hard-code points for a `vtk.vtkImageData`_ data structure "
+"For example, to hard-code points for a :vtk:`vtkImageData` data structure "
 "using VTK Python's bindings, one would write the following:"
 msgstr ""
-"たとえば，VTK Pythonのバインディングを使って， `vtk.vtkImageData`_ "
-"データ構造のポイントをハードコーディングするには，次のように書きます．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:46
 msgid ""
 "As you can see, there is quite a bit of boilerplate that goes into the "
-"creation of a simple `vtk.vtkImageData`_ dataset. PyVista provides much more"
+"creation of a simple :vtk:`vtkImageData` dataset. PyVista provides much more"
 " concise syntax that is more \"Pythonic.\" The equivalent code in PyVista "
 "is:"
 msgstr ""
-"ご覧のように，単純な `vtk.vtkImageData`_ "
-"データセットを作成するためには，かなり多くのボイラープレートが必要です．PyVistaでは，より簡潔で，より \"Pythonic "
-"\"な構文が提供されています．PyVistaで同等のコードは以下の通りです．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:69
 msgid "Here, PyVista has done several things for us:"
@@ -1861,15 +1844,12 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:79
 msgid ""
-":class:`pyvista.ImageData` wraps `vtk.vtkImageData`_, just with a different "
+":class:`pyvista.ImageData` wraps :vtk:`vtkImageData`, just with a different "
 "name; they are both containers of evenly spaced points. Your data does not "
-"have to be an \"image\" to use it with `vtk.vtkImageData`_; rather, like "
+"have to be an \"image\" to use it with :vtk:`vtkImageData`; rather, like "
 "images, values in the dataset are evenly spaced apart like pixels in an "
 "image."
 msgstr ""
-":class:`pyvista.UniformGrid` は `vtk.vtkImageData`_ "
-"をラップしたものです．名前が違うだけで，どちらも等間隔の点のコンテナです． `vtk.vtkImageData`_ で使用するデータは \"画像\" "
-"である必要はありません．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:85
 msgid ""
@@ -1915,35 +1895,30 @@ msgstr ""
 msgid "However, with PyVista you only need:"
 msgstr "しかし，PyVistaでは，必要なのは以下だけです:"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:159
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:156
 msgid "PointSet Construction"
 msgstr "ポイントセット構築"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:160
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:157
 msgid ""
 "PyVista heavily relies on NumPy to efficiently allocate and access VTK's C "
 "arrays. For example, to create an array of points within VTK one would "
 "normally loop through all the points of a list and supply that to a  "
-"`vtkPoints`_ class. For example:"
+":vtk:`vtkPoints` class. For example:"
 msgstr ""
-"PyVista は，VTK の C 配列を効率的に割り当て，アクセスするために NumPy に大きく依存しています． "
-"例えば，VTKで点の配列を作るには，通常，リストのすべての点をループして，それを `vtkPoints`_ クラスに供給します． "
-"例えば，以下のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:184
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:181
 msgid ""
 "To do the same within PyVista, you simply need to create a NumPy array:"
 msgstr "PyVistaで同じことをするには，単にNumPyの配列を作成する必要があります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:192
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:189
 msgid ""
-"You can use :func:`pyvista.vtk_points` to construct a `vtkPoints`_ object, "
-"but this is unnecessary in almost all situations."
+"You can use :func:`pyvista.vtk_points` to construct a :vtk:`vtkPoints` "
+"object, but this is unnecessary in almost all situations."
 msgstr ""
-":func:`pyvista.vtk_points` を使って `vtkPoints`_ "
-"オブジェクトを構築することもできますが，ほとんどの状況では必要ありません．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:195
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:192
 msgid ""
 "Since the end goal is to construct a :class:`pyvista.DataSet "
 "<pyvista.core.dataset.DataSet>`, you would simply pass the ``np_points`` "
@@ -1952,22 +1927,19 @@ msgstr ""
 "最終的な目的は， :class:`pyvista.DataSet <pyvista.core.dataset.DataSet>` を構築することなので，"
 " :class:`pyvista.PolyData` のコンストラクタに ``np_points`` の配列を渡すだけです．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:204
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:201
 msgid "Whereas in VTK you would have to do:"
 msgstr "VTKではそうする必要があります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:211
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:208
 msgid ""
 "The same goes with assigning face or cell connectivity/topology. With VTK "
 "you would normally have to loop using ``InsertNextCell`` and "
 "``InsertCellPoint``. For example, to create a single cell (triangle) and "
-"then assign it to `vtkPolyData`_:"
+"then assign it to :vtk:`vtkPolyData`:"
 msgstr ""
-"面やセルの接続性/トポロジーを割り当てる場合も同様です． VTKでは通常， ``InsertNextCell`` と "
-"``InsertCellPoint`` を使ってループする必要があります． 例えば，一つのセル(3角形)を作成して，それを `vtkPolyData`_"
-" に割り当てる場合:"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:225
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:222
 msgid ""
 "In PyVista, we can assign this directly in the constructor and then access "
 "it (or change it) from the :attr:`faces <pyvista.PolyData.faces>` attribute."
@@ -1975,15 +1947,15 @@ msgstr ""
 "PyVistaでは，コンストラクタでこれを直接割り当て， :attr:`faces <pyvista.PolyData.faces>` "
 "属性からアクセス（変更）することができます．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:238
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:235
 msgid "Object Representation"
 msgstr "オブジェクトの表現"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:239
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:236
 msgid "Both VTK and PyVista provide representations for their objects."
 msgstr "VTKもPyVistaもオブジェクトの表現を提供しています．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:241
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:238
 msgid ""
 "VTK provides a verbose representation (useful for debugging) of their data "
 "types that can be accessed via :func:`print`, as the ``__repr__`` (unlike "
@@ -1992,7 +1964,7 @@ msgstr ""
 "VTK は :func:`print` でアクセスできるデータ型の詳細な表現を提供しています(デバッギングに便利)．これは ``__repr__`` が"
 " ( ``__str__`` とは異なり) 各オブジェクトに関する最小限の情報しか提供していないためです．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:249
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:246
 msgid ""
 "PyVista chooses to show minimal data in the :func:`repr`, preferring "
 "explicit attribute access on meshes for the bulk of attributes. For example:"
@@ -2000,7 +1972,7 @@ msgstr ""
 "PyVista は :func:`repr` "
 "で最小限のデータを表示することにしており，アトリビュートの大部分はメッシュ上の明示的なアトリビュートアクセスを優先しています．例えば，以下のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:264
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:261
 msgid ""
 "All other attributes like :attr:`lines <pyvista.PolyData.lines>`, "
 ":attr:`point_data <pyvista.DataSet.point_data>`, or :attr:`cell_data "
@@ -2013,17 +1985,17 @@ msgstr ""
 " などの他のすべての属性は，オブジェクトから直接アクセスすることができます． このアプローチは，ユーザーを圧倒することなく， "
 ":class:`DataSet <pyvista.DataSet>` の重要な部分を示す簡単な要約を可能にするために選ばれました．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:272
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:269
 msgid "Tradeoffs"
 msgstr "トレードオフ"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:273
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:270
 msgid ""
 "While most features can, not everything can be simplified without losing "
 "functionality or performance."
 msgstr "ほとんどの機能は可能ですが，機能や性能を損なわずにすべてを簡素化できるわけではありません．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:276
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:273
 msgid ""
 "In the :class:`collision <pyvista.PolyDataFilters.collision>` filter, we "
 "demonstrate how to calculate the collision between two meshes. For example:"
@@ -2031,40 +2003,33 @@ msgstr ""
 ":class:`collision <pyvista.PolyDataFilters.collision>` "
 "フィルターでは，2つのメッシュ間のコリジョンを計算する方法を示します． 例えば，以下のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:308
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:305
 msgid ""
 "Under the hood, the collision filter detects mesh collisions using oriented "
 "bounding box (OBB) trees. For a single collision, this filter is as "
 "performant as the VTK counterpart, but when computing multiple collisions "
 "with the same meshes, as in the :ref:`collision_example` example, it is more"
-" efficient to use the `vtkCollisionDetectionFilter "
-"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_, "
-"as the OBB tree is computed once for each mesh. In most cases, pure PyVista "
-"is sufficient for most data science, but there are times when you may want "
-"to use VTK classes directly."
+" efficient to use the :vtk:`vtkCollisionDetectionFilter`, as the OBB tree is"
+" computed once for each mesh. In most cases, pure PyVista is sufficient for "
+"most data science, but there are times when you may want to use VTK classes "
+"directly."
 msgstr ""
-"フードの下では，コリジョンフィルタは OBB (oriented bounding box) ツリーを使ってメッシュの衝突を検出します． しかし， "
-":ref:`collision_example` "
-"の例のように，同じメッシュで複数の衝突を計算する場合には，OBBツリーが各メッシュに対して一度ずつ計算されるため， "
-"`vtkCollisionDetectionFilter "
-"<https://vtk.org/doc/nightly/html/classvtkCollisionDetectionFilter.html>`_ "
-"を使用した方が効率的です． ほとんどのデータサイエンスでは，純粋なPyVistaで十分ですが，VTKクラスを直接使用したい場合もあります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:318
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:314
 msgid ""
 "Note that nothing stops you from using VTK classes and then wrapping the "
 "output with PyVista. For example:"
 msgstr ""
 "VTKクラスを使用して，その出力をPyVistaでラッピングすることを妨げるものは何もないことに注意してください． 例えば，以下のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:338
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:334
 msgid ""
 "In this manner, you can get the \"best of both worlds\" should you need the "
 "flexibility of PyVista and the raw power of VTK."
 msgstr ""
 "このようにして， PyVistaの柔軟性とVTKの原動力の両方を必要とする \"best of both worlds\" を得ることができるのです．"
 
-#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:342
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:338
 msgid ""
 "You can use :func:`pyvista.Polygon` for a one line replacement of the above "
 "VTK code."
