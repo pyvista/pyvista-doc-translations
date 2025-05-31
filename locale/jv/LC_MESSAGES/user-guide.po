@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-21 02:37+0000\n"
+"POT-Creation-Date: 2025-05-31 02:35+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Javanese (https://app.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -1371,13 +1371,13 @@ msgstr ""
 msgid "First, check out some common meta-properties:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:86
+#: ../../pyvista/doc/source/user-guide/simple.rst:91
 msgid ""
 "Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
 "attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:104
+#: ../../pyvista/doc/source/user-guide/simple.rst:109
 msgid ""
 "Accessing the different data attributes on the nodes and cells of the mesh "
 "is interfaced via dictionaries with callbacks to the VTK object. These "
@@ -1386,24 +1386,24 @@ msgid ""
 "access an array on that dataset, then add some more data:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:136
+#: ../../pyvista/doc/source/user-guide/simple.rst:141
 msgid "Plotting"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:138
+#: ../../pyvista/doc/source/user-guide/simple.rst:143
 msgid ""
 "PyVista includes numerous plotting routines that are intended to be "
 "intuitive and highly controllable with ``matplotlib`` similar syntax and "
 "keyword arguments."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:142
+#: ../../pyvista/doc/source/user-guide/simple.rst:147
 msgid ""
 "To get started, try out the :func:`pyvista.plot` convenience method that is "
 "bound to each PyVista data object."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:171
+#: ../../pyvista/doc/source/user-guide/simple.rst:176
 msgid ""
 "You can also create a plotter object to fine tune the scene. First, "
 "instantiate a plotter such as :class:`pyvista.Plotter` or "
@@ -1412,7 +1412,7 @@ msgid ""
 "calling :func:`show() <pyvista.Plotter.show>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:188
+#: ../../pyvista/doc/source/user-guide/simple.rst:193
 msgid ""
 "Optionally :func:`show() <pyvista.Plotter.show>` can return the last used "
 "camera position of the rendering window in case you want to choose a camera "
@@ -1421,43 +1421,43 @@ msgid ""
 "the plotter (even after it's closed)."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:195
+#: ../../pyvista/doc/source/user-guide/simple.rst:200
 msgid ""
 "You can then use this cached camera position for additional plotting without"
 " having to manually interact with the plotting window:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:208
+#: ../../pyvista/doc/source/user-guide/simple.rst:213
 msgid ""
 "Be sure to check out all the available plotters and their options for your "
 "use case:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:211
+#: ../../pyvista/doc/source/user-guide/simple.rst:216
 msgid ""
 ":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
 "closed."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:213
+#: ../../pyvista/doc/source/user-guide/simple.rst:218
 msgid ""
 ":class:`pyvistaqt.BackgroundPlotter`: Creates a rendering window that is "
 "interactive and does not pause the code execution (for more information see "
 "the `pyvistaqt`_ library)"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:222
+#: ../../pyvista/doc/source/user-guide/simple.rst:227
 msgid "Exporting"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:224
+#: ../../pyvista/doc/source/user-guide/simple.rst:229
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
 "block above could be saved like:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:232
+#: ../../pyvista/doc/source/user-guide/simple.rst:237
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -1465,7 +1465,7 @@ msgid ""
 "method on each mesh type."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:237
+#: ../../pyvista/doc/source/user-guide/simple.rst:242
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -1475,7 +1475,7 @@ msgid ""
 " WKT (TIN), XDMF, and more."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:244
+#: ../../pyvista/doc/source/user-guide/simple.rst:249
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""

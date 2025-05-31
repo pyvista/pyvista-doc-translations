@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-21 02:37+0000\n"
+"POT-Creation-Date: 2025-05-31 02:35+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1608,7 +1608,7 @@ msgstr ""
 msgid "First, check out some common meta-properties:"
 msgstr "まず，一般的なメタプロパティをいくつか見てみましょう．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:86
+#: ../../pyvista/doc/source/user-guide/simple.rst:91
 msgid ""
 "Access the points by fetching the :attr:`points <pyvista.DataSet.points>` "
 "attribute on any PyVista mesh as a :class:`numpy.ndarray`:"
@@ -1616,7 +1616,7 @@ msgstr ""
 "ポイントにアクセスするには，任意のPyVistaメッシュの :attr:`points <pyvista.DataSet.points>` 属性を "
 ":class:`numpy.ndarray` としてフェッチします．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:104
+#: ../../pyvista/doc/source/user-guide/simple.rst:109
 msgid ""
 "Accessing the different data attributes on the nodes and cells of the mesh "
 "is interfaced via dictionaries with callbacks to the VTK object. These "
@@ -1626,11 +1626,11 @@ msgid ""
 msgstr ""
 "メッシュのノードとセルのさまざまなデータアトリビュートへのアクセスは，VTKオブジェクトへのコールバックを持つディクショナリを介してインタフェースされます．これらの異なる点配列やセル配列のディクショナリには，NumPy配列として直接アクセスしたり修正することができます．次の例では，データセットを読み込み，そのデータセット上の配列にアクセスし，さらにデータを追加します．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:136
+#: ../../pyvista/doc/source/user-guide/simple.rst:141
 msgid "Plotting"
 msgstr "プロット"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:138
+#: ../../pyvista/doc/source/user-guide/simple.rst:143
 msgid ""
 "PyVista includes numerous plotting routines that are intended to be "
 "intuitive and highly controllable with ``matplotlib`` similar syntax and "
@@ -1639,14 +1639,14 @@ msgstr ""
 "PyVistaには，直感的に操作でき， ``matplotlib`` "
 "に似た構文やキーワード引数で高度に制御できることを目的とした数多くのプロッティングルーチンが含まれています．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:142
+#: ../../pyvista/doc/source/user-guide/simple.rst:147
 msgid ""
 "To get started, try out the :func:`pyvista.plot` convenience method that is "
 "bound to each PyVista data object."
 msgstr ""
 "まずは，各PyVistaデータオブジェクトにバインドされている便利な :func:`pyvista.plot` メソッドを試してみてください．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:171
+#: ../../pyvista/doc/source/user-guide/simple.rst:176
 msgid ""
 "You can also create a plotter object to fine tune the scene. First, "
 "instantiate a plotter such as :class:`pyvista.Plotter` or "
@@ -1659,7 +1659,7 @@ msgstr ""
 ":class:`pyvista.Plotter` は， :func:`show() <pyvista.Plotter.show>` "
 "を呼び出した後，コードの実行を一時停止するレンダリングウィンドウを作成します．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:188
+#: ../../pyvista/doc/source/user-guide/simple.rst:193
 msgid ""
 "Optionally :func:`show() <pyvista.Plotter.show>` can return the last used "
 "camera position of the rendering window in case you want to choose a camera "
@@ -1672,25 +1672,25 @@ msgstr ""
 " :attr:`camera_position <pyvista.Plotter.camera_position>` "
 "属性としても利用できます（プロッタが閉じられた後でも）．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:195
+#: ../../pyvista/doc/source/user-guide/simple.rst:200
 msgid ""
 "You can then use this cached camera position for additional plotting without"
 " having to manually interact with the plotting window:"
 msgstr "このキャッシュされたカメラ位置は，プロットウィンドウを手動で操作しなくても，追加のプロットに使用できます:"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:208
+#: ../../pyvista/doc/source/user-guide/simple.rst:213
 msgid ""
 "Be sure to check out all the available plotters and their options for your "
 "use case:"
 msgstr "使用する用途に応じて，使用可能なすべてのプロッタとオプションを確認してください．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:211
+#: ../../pyvista/doc/source/user-guide/simple.rst:216
 msgid ""
 ":class:`pyvista.Plotter`: The standard plotter that pauses the code until "
 "closed."
 msgstr ":class:`pyvista.Plotter`: 閉じるまでコードを一時停止する標準的なプロッタです．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:213
+#: ../../pyvista/doc/source/user-guide/simple.rst:218
 msgid ""
 ":class:`pyvistaqt.BackgroundPlotter`: Creates a rendering window that is "
 "interactive and does not pause the code execution (for more information see "
@@ -1699,11 +1699,11 @@ msgstr ""
 ":class:`pyvistaqt.BackgroundPlotter`:  "
 "インタラクティブで，コードの実行を一時停止しないレンダリングウィンドウを作成します(詳細は `pyvistaqt`_ ライブラリを参照してください)．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:222
+#: ../../pyvista/doc/source/user-guide/simple.rst:227
 msgid "Exporting"
 msgstr "出力"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:224
+#: ../../pyvista/doc/source/user-guide/simple.rst:229
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
@@ -1712,7 +1712,7 @@ msgstr ""
 "どんなPyVistaメッシュオブジェクトでも， :func:`save() <pyvista.DataObject.save>` "
 "を使ってVTKファイルフォーマットに保存することができます．例えば，上のコードブロックのメッシュは次のように保存できます．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:232
+#: ../../pyvista/doc/source/user-guide/simple.rst:237
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -1723,7 +1723,7 @@ msgstr ""
 " 形式も使用できます． ``.save()`` "
 "メソッドでサポートされている形式の詳細については，各メッシュタイプのメソッドに関するドキュメントを参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:237
+#: ../../pyvista/doc/source/user-guide/simple.rst:242
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -1738,7 +1738,7 @@ msgstr ""
 "(バージョン2および4)，OBJ，OFF，PERMAS，PLY，STL，TetGen .node/.ele，SVG (2Dのみ，出力のみ)，UGRID,"
 " WKT (TIN)，XDMFなど，多くの形式をサポートしています!"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:244
+#: ../../pyvista/doc/source/user-guide/simple.rst:249
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -1945,6 +1945,8 @@ msgid ""
 "You can use :func:`pyvista.vtk_points` to construct a :vtk:`vtkPoints` "
 "object, but this is unnecessary in almost all situations."
 msgstr ""
+":func:`pyvista.vtk_points` を使って :vtk:`vtkPoints` "
+"オブジェクトを構築することもできますが，ほとんどの状況では必要ありません．"
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:192
 msgid ""
