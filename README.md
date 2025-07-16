@@ -12,7 +12,6 @@ This repository is inspired by [sphinx-doc/sphinx-doc-translations](https://gith
 ## URLs
 
 - Documentation pages for each languages:
-
   - 日本語: https://pyvista.github.io/pyvista-docs-dev-ja/
 
 ## How to update po files
