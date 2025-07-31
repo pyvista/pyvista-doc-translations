@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.46.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-19 13:02+0000\n"
+"POT-Creation-Date: 2025-07-31 02:40+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Language-Team: Russian (https://app.transifex.com/tkoyama010/teams/112279/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -765,7 +765,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:29
-#: ../../pyvista/doc/source/getting-started/installation.rst:92
+#: ../../pyvista/doc/source/getting-started/installation.rst:109
 msgid "Optional Dependencies"
 msgstr ""
 
@@ -823,179 +823,209 @@ msgid "To install this package with ``conda`` run::"
 msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:70
+msgid "Pixi"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:72
+msgid ""
+"`Pixi <https://pixi.sh/>`_ is a modern package management tool that provides"
+" fast, reliable, and reproducible software environments. It can be used as "
+"an alternative to conda/mamba for managing PyVista installations."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:74
+msgid ""
+"To install PyVista using pixi, first ensure you have pixi installed (see "
+"`pixi installation instructions <https://pixi.sh/latest/#installation>`_), "
+"then run::"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:78
+msgid ""
+"This will add PyVista to your ``pixi.toml`` file and install it in your "
+"project environment. To use PyVista in your pixi environment::"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:83
+msgid ""
+"Pixi automatically handles all dependencies and ensures compatibility across"
+" different platforms."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:87
 msgid "Installing the Current Development Branch from GitHub"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:71
+#: ../../pyvista/doc/source/getting-started/installation.rst:88
 msgid ""
 "There may be features or bug-fixes that have been implemented in PyVista but"
 " have not made their way into a release. To install ``pyvista`` from the "
 "latest up-to-date development branch from github, use one of the following"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:79
+#: ../../pyvista/doc/source/getting-started/installation.rst:96
 msgid ""
 "Alternatively, you can clone the repository with git and install it with "
 "pip."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:87
+#: ../../pyvista/doc/source/getting-started/installation.rst:104
 msgid ""
 "Note the development flag ``-e``. This allows you to change pyvista in-place"
 " without having to reinstall it for each change."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:94
+#: ../../pyvista/doc/source/getting-started/installation.rst:111
 msgid "The following are a list of optional dependencies and their purpose:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:97
+#: ../../pyvista/doc/source/getting-started/installation.rst:114
 msgid "Package"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:97
+#: ../../pyvista/doc/source/getting-started/installation.rst:114
 msgid "Purpose"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:99
+#: ../../pyvista/doc/source/getting-started/installation.rst:116
 msgid "``trame``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:99
+#: ../../pyvista/doc/source/getting-started/installation.rst:116
 msgid "Interactive notebook rendering"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:101
+#: ../../pyvista/doc/source/getting-started/installation.rst:118
 msgid "``sphinx_gallery``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:101
+#: ../../pyvista/doc/source/getting-started/installation.rst:118
 msgid "Capturing PyVista output for docs"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:103
+#: ../../pyvista/doc/source/getting-started/installation.rst:120
 msgid "``colorcet``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:103
+#: ../../pyvista/doc/source/getting-started/installation.rst:120
 msgid "Perceptually uniform colormaps"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:105
+#: ../../pyvista/doc/source/getting-started/installation.rst:122
 msgid "``cmocean``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:105
+#: ../../pyvista/doc/source/getting-started/installation.rst:122
 msgid "Oceanographic colormaps"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:107
+#: ../../pyvista/doc/source/getting-started/installation.rst:124
 msgid "``imageio-ffmpeg``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:107
+#: ../../pyvista/doc/source/getting-started/installation.rst:124
 msgid "Saving movie files"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:109
+#: ../../pyvista/doc/source/getting-started/installation.rst:126
 msgid "``tqdm``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:109
+#: ../../pyvista/doc/source/getting-started/installation.rst:126
 msgid "Status bars for monitoring filters"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:111
+#: ../../pyvista/doc/source/getting-started/installation.rst:128
 msgid "``trimesh`` ``rtree`` ``pyembree``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:112
+#: ../../pyvista/doc/source/getting-started/installation.rst:129
 msgid "Vectorised ray tracing"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:118
+#: ../../pyvista/doc/source/getting-started/installation.rst:135
 msgid "Source / Developers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:120
+#: ../../pyvista/doc/source/getting-started/installation.rst:137
 msgid ""
 "Alternatively, you can install the latest version from GitHub by visiting "
 "`PyVista <https://github.com/pyvista/pyvista>`_, and downloading the source "
 "(cloning) by running::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:129
+#: ../../pyvista/doc/source/getting-started/installation.rst:146
 msgid ""
 "The latest documentation for the ``main`` branch of PyVista can be found at "
 "`dev.pyvista.org <https://dev.pyvista.org>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:134
+#: ../../pyvista/doc/source/getting-started/installation.rst:151
 msgid "Test Installation"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:136
+#: ../../pyvista/doc/source/getting-started/installation.rst:153
 msgid "You can test your installation by running an example:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:143
+#: ../../pyvista/doc/source/getting-started/installation.rst:160
 msgid "See other examples and demos:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:159
+#: ../../pyvista/doc/source/getting-started/installation.rst:176
 msgid ""
 "A more comprehensive testing suite is available after cloning the source "
 "repository. For details on how to clone and test the PyVista source, please "
 "see our `Contributing Guide`_ and specifically, the `Testing`_ section."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:168
+#: ../../pyvista/doc/source/getting-started/installation.rst:185
 msgid "Running on CI Services"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:169
+#: ../../pyvista/doc/source/getting-started/installation.rst:186
 msgid ""
 "Please head over to `pyvista/setup-headless-display-action`_ for details on "
 "setting up a headless display in GitHub Actions Workflows using PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:172
+#: ../../pyvista/doc/source/getting-started/installation.rst:189
 msgid ""
 "In the past, we have also supported `pyvista/gl-ci-helpers`_ for setting up "
 "CI services like Travis and Azure Pipelines to run PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:180
+#: ../../pyvista/doc/source/getting-started/installation.rst:197
 msgid "Running on MyBinder"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:181
+#: ../../pyvista/doc/source/getting-started/installation.rst:198
 msgid ""
 "This section is for advanced users that would like to install and use "
 "PyVista with headless displays on notebook hosting services like MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:184
+#: ../../pyvista/doc/source/getting-started/installation.rst:201
 msgid ""
 "Please see `this project`_ for a convenient Cookiecutter_ to get started "
 "using PyVista on the notebook hosting service MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:191
+#: ../../pyvista/doc/source/getting-started/installation.rst:208
 msgid ""
 "To get started, the Docker container will need to have ``libgl1-mesa-dev`` "
 "and ``xvfb`` installed through ``apt-get``. For MyBinder, include the "
 "following in a file called ``apt.txt``::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:198
+#: ../../pyvista/doc/source/getting-started/installation.rst:215
 msgid ""
 "Then, you need to configure the headless display, for MyBinder, create a "
 "file called ``start`` and include the following set up script that will run "
 "every time your Docker container is launched:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:215
+#: ../../pyvista/doc/source/getting-started/installation.rst:232
 msgid ""
 "All you have to do next is include PyVista in your Python requirements and "
 "you can get to visualizing your data. If you need more help than this on "
@@ -1004,11 +1034,11 @@ msgid ""
 "currently using PyVista on MyBinder."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:224
+#: ../../pyvista/doc/source/getting-started/installation.rst:241
 msgid "Running on Remote Servers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:225
+#: ../../pyvista/doc/source/getting-started/installation.rst:242
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -1016,30 +1046,30 @@ msgid ""
 " servers would work similarly."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:230
+#: ../../pyvista/doc/source/getting-started/installation.rst:247
 msgid ""
 "After logging into the remote server, install Miniconda and related "
 "packages:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:247
+#: ../../pyvista/doc/source/getting-started/installation.rst:264
 msgid "Then, configure the headless display:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:257
+#: ../../pyvista/doc/source/getting-started/installation.rst:274
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:265
-#: ../../pyvista/doc/source/getting-started/installation.rst:313
+#: ../../pyvista/doc/source/getting-started/installation.rst:282
+#: ../../pyvista/doc/source/getting-started/installation.rst:330
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:268
+#: ../../pyvista/doc/source/getting-started/installation.rst:285
 msgid "Running on WSL"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:269
+#: ../../pyvista/doc/source/getting-started/installation.rst:286
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -1047,51 +1077,51 @@ msgid ""
 "<https://jupyter.org/>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:273
+#: ../../pyvista/doc/source/getting-started/installation.rst:290
 msgid ""
 "First, make sure you have installed the correct environment through "
 "Miniconda and related packages:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:292
+#: ../../pyvista/doc/source/getting-started/installation.rst:309
 msgid "VTK Link to Jupyter"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:293
+#: ../../pyvista/doc/source/getting-started/installation.rst:310
 msgid ""
 "There are two ways to get vtk rendering 3D objects in JupyterLab. First you "
 "can follow the example above for remote servers, skipping over the ``ssh`` "
 "instructions."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:297
+#: ../../pyvista/doc/source/getting-started/installation.rst:314
 msgid "Configure the headless display:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:307
+#: ../../pyvista/doc/source/getting-started/installation.rst:324
 msgid "Start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:315
+#: ../../pyvista/doc/source/getting-started/installation.rst:332
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:329
+#: ../../pyvista/doc/source/getting-started/installation.rst:346
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:332
+#: ../../pyvista/doc/source/getting-started/installation.rst:349
 msgid "Running with Sphinx-Gallery"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:333
+#: ../../pyvista/doc/source/getting-started/installation.rst:350
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:360
+#: ../../pyvista/doc/source/getting-started/installation.rst:377
 msgid ""
 "We also have a Sphinx-Gallery scraper for embedding dynamic 3D scenes "
 "instead of static screenshots. This scraper can be enabled by passing an "
