@@ -61,7 +61,7 @@ jobs:
           sleep 3
           set +x
           cd pyvista
-          make -C doc html SPHINXOPTS="-w build_errors.txt -N"
+          make -C doc html SPHINXOPTS="-w build_errors.txt --keep-going"
           cd ../
           sh ./locale/update.sh
       - name: After success
