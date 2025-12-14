@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Point Sets &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="point-sets">
+<span id="point-sets-api"></span><h1>Point Sets<a class="headerlink" href="#point-sets" title="Link to this heading">¶</a></h1>
+<p>PyVista point sets are datasets with explicit geometry where the point
+and cell topology are specified and not inferred. PyVista point sets
+are modeled after the same data model as VTK’s point sets while being
+designed to make creation, array access, and plotting more
+straightforward than their VTK counterparts.</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code> class is used for arbitrary
+combinations of all possible cell types:</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> is used for datasets consisting of surface
+geometry (for example vertices, lines, and polygons):</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.StructuredGrid</span></code> is used for topologically regular arrays of
+data:</p>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PointSet</span></code> (as of <code class="docutils literal notranslate"><span class="pre">vtk==9.1.0</span></code>) is a concrete class for
+storing a set of points.</p>
+<p><strong>Class Descriptions</strong></p>
+<p>The following table describes PyVista’s point set classes. These
+classes inherit all methods from their corresponding VTK <a href="#id1"><span class="problematic" id="id2">:vtk:`vtkPointSet`</span></a>,
+<a href="#id3"><span class="problematic" id="id4">:vtk:`vtkPolyData`</span></a>, <a href="#id5"><span class="problematic" id="id6">:vtk:`vtkUnstructuredGrid`</span></a>, <a href="#id7"><span class="problematic" id="id8">:vtk:`vtkStructuredGrid`</span></a>, and
+<a href="#id9"><span class="problematic" id="id10">:vtk:`vtkExplicitStructuredGrid`</span></a> superclasses.</p>
+<section id="polydata-creation">
+<h2>PolyData Creation<a class="headerlink" href="#polydata-creation" title="Link to this heading">¶</a></h2>
+<section id="empty-object">
+<h3>Empty Object<a class="headerlink" href="#empty-object" title="Link to this heading">¶</a></h3>
+<p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> object can be initialized with:</p>
+<p>This creates an mesh, which you can then add</p>
+<ul class="simple">
+<li><p>Points with <code class="xref py py-attr docutils literal notranslate"><span class="pre">points</span></code></p></li>
+<li><p>Vertices with <code class="xref py py-attr docutils literal notranslate"><span class="pre">verts</span></code></p></li>
+<li><p>Lines with <code class="xref py py-attr docutils literal notranslate"><span class="pre">lines</span></code></p></li>
+<li><p>Faces with <code class="xref py py-attr docutils literal notranslate"><span class="pre">faces</span></code></p></li>
+</ul>
+<p>Note that unlike <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code>, you do not specify
+cell types. All faces are assumed to be polygons, hence the name
+“Poly” data.</p>
+<p>Click on the attributes above to see examples of how to add geometric
+features to an empty. See <span class="xref std std-ref">create_poly_example</span> for an example on
+creating a <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> object from NumPy arrays.</p>
+</section>
+<section id="initialize-from-a-file">
+<h3>Initialize from a File<a class="headerlink" href="#initialize-from-a-file" title="Link to this heading">¶</a></h3>
+<p>Both binary and ASCII .ply, .stl, and .vtk files can be read using
+PyVista. For example, the PyVista package contains example meshes and
+these can be loaded with:</p>
+<p>This mesh can then be written to a .vtk file using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;plane.vtk&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>These meshes are identical.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">mesh_from_vtk</span> <span class="o">=</span> <span class="n">pyvista</span><span class="o">.</span><span class="n">PolyData</span><span class="p">(</span><span class="s1">&#39;plane.vtk&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">mesh_from_vtk</span><span class="o">.</span><span class="n">points</span><span class="p">,</span> <span class="n">mesh</span><span class="o">.</span><span class="n">points</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="mesh-manipulation-and-plotting">
+<h2>Mesh Manipulation and Plotting<a class="headerlink" href="#mesh-manipulation-and-plotting" title="Link to this heading">¶</a></h2>
+<p>Meshes can be directly manipulated using NumPy or with the built-in
+translation and rotation routines. This example loads two meshes and
+moves, scales, copies them, and finally plots them.</p>
+<p>To plot more than one mesh a <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Plotter</span></code> instance must be
+created to manage the plotting. The following code creates a plotter
+and plots the meshes with various colors.</p>
+</section>
+<section id="unstructured-grid-creation">
+<h2>Unstructured Grid Creation<a class="headerlink" href="#unstructured-grid-creation" title="Link to this heading">¶</a></h2>
+<p>See <span class="xref std std-ref">create_unstructured_surface_example</span> for an example on how to create an
+unstructured grid from NumPy arrays.</p>
+<section id="create">
+<h3>Create<a class="headerlink" href="#create" title="Link to this heading">¶</a></h3>
+<p>An unstructured grid can be initialized with:</p>
+<p>This creates an empty grid, and is it not useful until points and
+cells are added to it. Points and cells can be added later with
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">points</span></code>, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cells</span></code>, and <code class="xref py py-attr docutils literal notranslate"><span class="pre">celltypes</span></code> .</p>
+<p>Alternatively, you can add points and cells directly when
+initializing.</p>
+<p>We can plot this with colors with:</p>
+</section>
+<section id="loading-from-file">
+<h3>Loading from File<a class="headerlink" href="#loading-from-file" title="Link to this heading">¶</a></h3>
+<p>Unstructured grids can be loaded from a vtk file.</p>
+</section>
+</section>
+<section id="structured-grid-creation">
+<h2>Structured Grid Creation<a class="headerlink" href="#structured-grid-creation" title="Link to this heading">¶</a></h2>
+<section id="id11">
+<h3>Empty Object<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<p>A structured grid can be initialized with:</p>
+</section>
+<section id="creating-from-numpy-arrays">
+<h3>Creating from NumPy Arrays<a class="headerlink" href="#creating-from-numpy-arrays" title="Link to this heading">¶</a></h3>
+<p>A structured grid can be created directly from numpy arrays. This is useful
+when creating a grid from scratch or copying it from another format.</p>
+<p>Also see <span class="xref std std-ref">create_structured_surface_example</span> for an example on creating a structured
+grid from NumPy arrays.</p>
+</section>
+<section id="id12">
+<h3>Loading from File<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<p>Structured grids can be loaded from a <code class="docutils literal notranslate"><span class="pre">vtk</span></code> file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">StructuredGrid</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="plotting-grids">
+<h2>Plotting Grids<a class="headerlink" href="#plotting-grids" title="Link to this heading">¶</a></h2>
+<p>This example shows how you can load an unstructured grid from a <code class="docutils literal notranslate"><span class="pre">vtk</span></code> file and
+create a plot and GIF movie by updating the plotting object.</p>
+<p>A simple plot can be created by using:</p>
+<p>A more complex plot can be created using:</p>
+<p>You can animate the motion of the beam by updating the positions and
+scalars of the grid copied to the plotting object. Here is a full example:</p>
+<p>You can also render the beam as a wire-frame object:</p>
+</section>
+<section id="adding-labels-to-a-plot">
+<h2>Adding Labels to a Plot<a class="headerlink" href="#adding-labels-to-a-plot" title="Link to this heading">¶</a></h2>
+<p>Labels can be added to a plot using <code class="xref py py-func docutils literal notranslate"><span class="pre">add_point_labels()</span></code> within the <code class="xref py py-class docutils literal notranslate"><span class="pre">Plotter</span></code>.
+The following example loads the included example beam, generates a
+plotting class, and sub-selects points along the y-z plane and labels
+their coordinates. <code class="xref py py-func docutils literal notranslate"><span class="pre">add_point_labels()</span></code> requires that the number of
+labels matches the number of points, and that labels is a list
+containing one entry per point. The code automatically converts each
+item in the list to a string.</p>
+<p>This example is similar and shows how labels can be combined with a
+scalar bar to show the exact value of certain points.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../../_sources/pyvista/doc/source/api/core/pointsets.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

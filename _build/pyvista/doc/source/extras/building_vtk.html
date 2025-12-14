@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Building VTK &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="building-vtk">
+<span id="id1"></span><h1>Building VTK<a class="headerlink" href="#building-vtk" title="Link to this heading">¶</a></h1>
+<p>Kitware provides Python wheels for VTK at <a class="reference external" href="https://pypi.org/project/vtk/">PyPI VTK</a>, but there are situations where you
+may need to build VTK from source (for example, a new release of Python, EGL
+rendering, additional features, etc). As <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> does not provide
+<code class="docutils literal notranslate"><span class="pre">vtk</span></code>, you will have to either build it manually or install the default
+wheel from PyPI.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Should you need a prebuilt wheel, a variety of prebuilt wheels can be found at
+<a class="reference external" href="https://github.com/pyvista/pyvista-wheels">pyvista-wheels</a>, but you may be
+better off building your own. These are not “official” wheels and will soon
+be removed in favor of more “official” wheel variants from VTK directly.</p>
+</div>
+<p>Reference the official directions for <a class="reference external" href="https://gitlab.kitware.com/vtk/vtk/-/blob/master/Documentation/dev/build.md">Building VTK</a>.
+The following directions assume you want to build a Python wheel non-standard
+situations like EGL.</p>
+<section id="building-wheels">
+<h2>Building Wheels<a class="headerlink" href="#building-wheels" title="Link to this heading">¶</a></h2>
+<p>Building VTK from source is fairly straightforward. Using the default build
+settings, build a Python wheel of VTK using <code class="docutils literal notranslate"><span class="pre">ninja</span></code> using the following
+script. This script uses system python3, but you can use any modern Python
+version. For some additional useful options, see the <a class="reference external" href="https://github.com/conda-forge/vtk-feedstock/blob/main/recipe/build-base.sh">conda-forge recipe</a>.
+Most of the ones below are designed to reduce the build time and resulting
+wheel size.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have also published some convenient CMake configurations files that you
+can adopt from <a class="reference external" href="https://github.com/banesullivan/vtk-cmake">banesullivan/vtk-cmake</a>. These configurations cover the build variants described here
+and make the process of reproducibly building VTK wheel variants more
+straightforward.</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Install build dependencies</span>
+
+<span class="c1"># Linux/Debian</span>
+sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>-y<span class="w"> </span>ppa:deadsnakes/ppa<span class="w">  </span><span class="c1"># if on Ubuntu 20.04 or 18.04, building 3.10 for example</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ninja-build<span class="w"> </span>cmake<span class="w"> </span>libgl1-mesa-dev<span class="w"> </span>python3-dev<span class="w"> </span>git
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3.10-dev<span class="w"> </span>python3.10-distutils<span class="w">  </span><span class="c1"># if using deadsnakes + Python 3.10</span>
+<span class="c1"># If on 18.04, you&#39;ll need a newer cmake. You can follow VTK&#39;s instructions @ https://apt.kitware.com</span>
+
+<span class="c1"># Linux/CentOS</span>
+sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>epel-release
+sudo<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </span>ninja-build<span class="w"> </span>cmake<span class="w"> </span>mesa-libGL-devel<span class="w"> </span>mesa-libGLU-devel
+
+git<span class="w"> </span>clone<span class="w"> </span>https://gitlab.kitware.com/vtk/vtk.git
+mkdir<span class="w"> </span>vtk/build
+<span class="nb">cd</span><span class="w"> </span>vtk/build
+git<span class="w"> </span>checkout<span class="w"> </span>v9.1.0<span class="w">  </span><span class="c1"># optional to select a version, but recommended</span>
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">PYBIN</span><span class="o">=</span>/usr/bin/python3.10<span class="w">  </span><span class="c1"># select your version of choice</span>
+cmake<span class="w"> </span>-GNinja<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_TESTING<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_DOCUMENTATION<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_EXAMPLES<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_DATA_EXCLUDE_FROM_ALL:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_PythonInterpreter:STRING<span class="o">=</span>NO<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebCore:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebGLExporter:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebPython:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WHEEL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_PYTHON_VERSION<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WRAP_PYTHON<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_OPENGL_HAS_EGL<span class="o">=</span>False<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DPython3_EXECUTABLE<span class="o">=</span><span class="nv">$PYBIN</span><span class="w"> </span>../
+ninja
+
+<span class="c1"># build wheel in dist</span>
+<span class="nv">$PYBIN</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>wheel
+<span class="nv">$PYBIN</span><span class="w"> </span>setup.py<span class="w"> </span>bdist_wheel
+<span class="nv">$PYBIN</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>dist/vtk-*.whl<span class="w">  </span><span class="c1"># optionally install it</span>
+</pre></div>
+</div>
+<section id="off-screen-plotting-gpu-support">
+<span id="gpu-off-screen"></span><h3>Off-Screen Plotting GPU Support<a class="headerlink" href="#off-screen-plotting-gpu-support" title="Link to this heading">¶</a></h3>
+<p>VTK supports rendering with EGL, enabling rapid off-screen rendering
+using GPU hardware acceleration without installing a virtual
+framebuffer. The default VTK wheels are not built with this feature,
+but you can build VTK for off-screen plotting using GPU support by
+modifying the above <code class="docutils literal notranslate"><span class="pre">cmake</span></code> command with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># install build dependencies (Linux/Debian)</span>
+apt-get<span class="w"> </span>update
+apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ninja-build<span class="w"> </span>cmake<span class="w"> </span>libegl1-mesa-dev<span class="w"> </span>python3-dev
+
+<span class="c1"># build using EGL</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Kitware/VTK
+mkdir<span class="w"> </span>VTK/build
+<span class="nb">cd</span><span class="w"> </span>VTK/build<span class="w"> </span><span class="se">\</span>
+git<span class="w"> </span>checkout<span class="w"> </span>v9.1.0
+<span class="nb">cd</span><span class="w"> </span>/VTK/build
+cmake<span class="w"> </span>-GNinja<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_BUILD_TESTING<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_BUILD_DOCUMENTATION<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_BUILD_EXAMPLES<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_MODULE_ENABLE_VTK_PythonInterpreter:STRING<span class="o">=</span>NO<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_MODULE_ENABLE_VTK_WebCore:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_MODULE_ENABLE_VTK_WebGLExporter:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_MODULE_ENABLE_VTK_WebPython:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_WHEEL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_PYTHON_VERSION<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_WRAP_PYTHON<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_OPENGL_HAS_EGL:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_USE_X:BOOL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_USE_COCOA:BOOL<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DVTK_DEFAULT_RENDER_WINDOW_HEADLESS:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-DPython3_EXECUTABLE<span class="o">=</span>/usr/bin/python3<span class="w"> </span>../
+ninja
+
+<span class="c1"># build the python wheel</span>
+python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>wheel<span class="w"> </span><span class="se">\</span>
+python3<span class="w"> </span>setup.py<span class="w"> </span>bdist_wheel<span class="w"> </span><span class="se">\</span>
+pip<span class="w"> </span>install<span class="w"> </span>dist/vtk-*.whl
+</pre></div>
+</div>
+<p>This disables any plotting using the X server, so be prepared to use
+this module only on a headless display where you either intend to save
+static images or stream the render window to another computer with a
+display (e.g using <code class="docutils literal notranslate"><span class="pre">pyvista.set_jupyter_backend('server')</span></code> and
+jupyterlab). In other words, this wheel will make VTK unusable outside
+of an off-screen environment, so only plan on installing it on a
+headless system without an X server.</p>
+</section>
+<section id="building-osmesa">
+<h3>Building OSMesa<a class="headerlink" href="#building-osmesa" title="Link to this heading">¶</a></h3>
+<p>OSMesa provides higher visualization performance on CPU based hosts. Use this
+instead of <code class="docutils literal notranslate"><span class="pre">xvfb</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>libosmesa6-dev<span class="w"> </span>cmake<span class="w"> </span>ninja-build
+
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Kitware/VTK.git
+<span class="nb">cd</span><span class="w"> </span>VTK
+git<span class="w"> </span>checkout<span class="w"> </span>v9.1.0
+mkdir<span class="w"> </span>build
+<span class="nb">cd</span><span class="w"> </span>build
+
+<span class="nv">PYBIN</span><span class="o">=</span>/usr/bin/python
+cmake<span class="w"> </span>-GNinja<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_TESTING<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_DOCUMENTATION<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_EXAMPLES<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_DATA_EXCLUDE_FROM_ALL:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_PythonInterpreter:STRING<span class="o">=</span>NO<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebCore:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebGLExporter:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebPython:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WHEEL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_PYTHON_VERSION<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WRAP_PYTHON<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_OPENGL_HAS_EGL<span class="o">=</span>False<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_OPENGL_HAS_OSMESA<span class="o">=</span>True<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_USE_COCOA<span class="o">=</span>FALSE<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_USE_X<span class="o">=</span>FALSE<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_DEFAULT_RENDER_WINDOW_HEADLESS<span class="o">=</span>True<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DPython3_EXECUTABLE<span class="o">=</span><span class="nv">$PYBIN</span><span class="w"> </span>../
+ninja
+<span class="nv">$PYBIN</span><span class="w"> </span>setup.py<span class="w"> </span>bdist_wheel
+</pre></div>
+</div>
+<p>Wheels will be generated in the <code class="docutils literal notranslate"><span class="pre">dist</span></code> directory.</p>
+</section>
+<section id="building-manylinux-wheels">
+<h3>Building ManyLinux Wheels<a class="headerlink" href="#building-manylinux-wheels" title="Link to this heading">¶</a></h3>
+<p>The above directions are great for building a local build of VTK, but
+these wheels are difficult to share outside your local install given
+issues with ABI compatibility due to the version of Linux they were
+built on. You can work around this by building your wheels using a
+<a class="reference external" href="https://github.com/pypa/manylinux">manylinux</a> docker image.</p>
+<p>To do this, create a <code class="docutils literal notranslate"><span class="pre">build_wheels.sh</span></code> with the following contents in the
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> d <code class="docutils literal notranslate"><span class="pre">vtk</span></code> directory, and give it executable permissions
+(<code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">build_wheels.sh</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># builds python wheels on docker container and tests installation</span>
+
+<span class="nb">set</span><span class="w"> </span>-e<span class="w"> </span>-x
+
+<span class="c1"># build based on python version from args</span>
+<span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="k">case</span><span class="w"> </span><span class="nv">$PYTHON_VERSION</span><span class="w"> </span><span class="k">in</span>
+<span class="m">3</span>.9<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp39-cp39/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="m">3</span>.10<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp310-cp310/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="m">3</span>.11<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp311-cp311/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="k">esac</span>
+
+yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ninja-build<span class="w"> </span>cmake<span class="w"> </span>mesa-libGL-devel<span class="w"> </span>mesa-libGLU-devel
+
+rm<span class="w"> </span>-rf<span class="w"> </span>/io/build
+mkdir<span class="w"> </span>/io/build<span class="w"> </span>-p
+<span class="nb">cd</span><span class="w"> </span>/io/build
+
+cmake<span class="w"> </span>-GNinja<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_TESTING<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_DOCUMENTATION<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_EXAMPLES<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_DATA_EXCLUDE_FROM_ALL:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_PythonInterpreter:STRING<span class="o">=</span>NO<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebCore:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebGLExporter:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebPython:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WHEEL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_PYTHON_VERSION<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WRAP_PYTHON<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_OPENGL_HAS_EGL<span class="o">=</span>False<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DPython3_EXECUTABLE<span class="o">=</span><span class="nv">$PYBIN</span><span class="w"> </span>../
+ninja-build
+
+<span class="c1"># build wheel in dist</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>dist
+<span class="nv">$PYBIN</span><span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>wheel
+<span class="nv">$PYBIN</span><span class="w"> </span>setup.py<span class="w"> </span>bdist_wheel
+
+<span class="c1"># cleanup wheel</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>wheelhouse
+auditwheel<span class="w"> </span>repair<span class="w"> </span>dist/*.whl
+</pre></div>
+</div>
+<p>This script can then be called with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="m">3</span>.10
+docker<span class="w"> </span>run<span class="w"> </span>--cpus<span class="w"> </span><span class="m">4</span>.5<span class="w"> </span>-e<span class="w"> </span><span class="se">\</span>
+<span class="w">       </span>--rm<span class="w"> </span>-v<span class="w"> </span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/io<span class="w"> </span>quay.io/pypa/manylinux2014_x86_64<span class="w"> </span><span class="se">\</span>
+<span class="w">       </span>/io/build_wheels.sh<span class="w"> </span><span class="nv">$PYTHON_VERSION</span>
+</pre></div>
+</div>
+<p>You should end up with a <code class="docutils literal notranslate"><span class="pre">build/wheelhouse/vtk-*.whl</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To build the EGL version of the wheel, follow the directions in the
+previous section. Add <code class="docutils literal notranslate"><span class="pre">mesa-libEGL-devel</span></code> to the installation
+dependencies.</p>
+</div>
+</section>
+<section id="building-python-vtk-wheel-on-raspberry-pi-64-bit">
+<h3>Building Python VTK Wheel on Raspberry Pi (64-bit)<a class="headerlink" href="#building-python-vtk-wheel-on-raspberry-pi-64-bit" title="Link to this heading">¶</a></h3>
+<p>While it’s possible to build on 32-bit Raspberry Pi (ARMv7), there are
+several issues that crop up when building wheels for the 32-bit
+version (see <a class="reference external" href="https://github.com/pypa/manylinux/issues/84">manylinux issue 84</a>). Should you attempt
+to build on 32-bit, try building the wheel using <a class="reference external" href="https://github.com/dockcross/dockcross">dockcross</a> as you may run into memory
+limitations otherwise (especially with only 1 GB RAM).</p>
+<p>Building the <code class="docutils literal notranslate"><span class="pre">aarch64</span></code> manylinux wheel can be done via docker with
+the <code class="docutils literal notranslate"><span class="pre">quay.io/pypa/manylinux2014_aarch64</span></code> image. Run the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="m">3</span>.9
+rm<span class="w"> </span>-rf<span class="w"> </span>build
+docker<span class="w"> </span>run<span class="w"> </span>-e<span class="w"> </span><span class="se">\</span>
+<span class="w">       </span>--rm<span class="w"> </span>-v<span class="w"> </span><span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/io<span class="w"> </span>quay.io/pypa/manylinux2014_aarch64<span class="w"> </span><span class="se">\</span>
+<span class="w">       </span>/io/build_wheels.sh<span class="w"> </span><span class="nv">$PYTHON_VERSION</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">build_wheels.sh</span></code> is:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1"># builds python wheels on docker container and tests installation</span>
+
+<span class="nb">set</span><span class="w"> </span>-e<span class="w"> </span>-x
+
+<span class="c1"># build based on python version from args</span>
+<span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+<span class="k">case</span><span class="w"> </span><span class="nv">$PYTHON_VERSION</span><span class="w"> </span><span class="k">in</span>
+<span class="m">3</span>.9<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp39-cp39/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="m">3</span>.10<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp310-cp310/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="m">3</span>.11<span class="o">)</span>
+<span class="w">  </span><span class="nv">PYBIN</span><span class="o">=</span><span class="s2">&quot;/opt/python/cp311-cp311/bin/python&quot;</span>
+<span class="w">  </span><span class="p">;;</span>
+<span class="k">esac</span>
+
+/bin/bash
+yum<span class="w"> </span>install<span class="w"> </span>epel-release
+yum<span class="w"> </span>install<span class="w"> </span>ninja-build
+yum<span class="w"> </span>install<span class="w"> </span>mesa-libEGL-devel<span class="w">  </span><span class="c1"># only needed when building EGL</span>
+
+mkdir<span class="w"> </span>/io/build<span class="w"> </span>-p
+<span class="nb">cd</span><span class="w"> </span>/io/build
+
+cmake<span class="w"> </span>-GNinja<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_TESTING<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_DOCUMENTATION<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_BUILD_EXAMPLES<span class="o">=</span>OFF<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_DATA_EXCLUDE_FROM_ALL:BOOL<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_PythonInterpreter:STRING<span class="o">=</span>NO<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebCore:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebGLExporter:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_MODULE_ENABLE_VTK_WebPython:STRING<span class="o">=</span>YES<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WHEEL_BUILD<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_PYTHON_VERSION<span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_WRAP_PYTHON<span class="o">=</span>ON<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DVTK_OPENGL_HAS_EGL<span class="o">=</span>False<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-DPython3_EXECUTABLE<span class="o">=</span><span class="nv">$PYBIN</span><span class="w"> </span>../
+ninja-build
+
+<span class="c1"># build wheel</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>dist
+<span class="nv">$PYBIN</span><span class="w"> </span>setup.py<span class="w"> </span>bdist_wheel
+
+<span class="c1"># cleanup wheel</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>wheelhouse
+auditwheel<span class="w"> </span>repair<span class="w"> </span>dist/*.whl
+cp<span class="w"> </span>wheelhouse/vtk*.whl<span class="w"> </span>/io/wheels
+</pre></div>
+</div>
+<p>Be sure to either enable or disable <code class="docutils literal notranslate"><span class="pre">DVTK_OPENGL_HAS_EGL</span></code> depending
+on if you want <code class="docutils literal notranslate"><span class="pre">EGL</span></code> enabled for your wheel.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../_sources/pyvista/doc/source/extras/building_vtk.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

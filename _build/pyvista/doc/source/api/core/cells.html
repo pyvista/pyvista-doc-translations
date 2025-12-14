@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cells &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cells">
+<h1>Cells<a class="headerlink" href="#cells" title="Link to this heading">¶</a></h1>
+<p>The cell <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Cell</span></code> class is the PyVista representation of the
+<a href="#id1"><span class="problematic" id="id2">:vtk:`vtkGenericCell`</span></a> and can be used to inspect a <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.DataSet</span></code>’s cells, faces, and edges.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While methods and classes are quite effective at inspecting and plotting
+parts of a dataset, they are inefficient and should be used only for
+interactive exploration and debugging. When working with larger datasets or
+working with multiple cells it is generally more efficient to use bulk methods
+like <code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.DataSetFilters.extract_cells()</span></code>.</p>
+</div>
+<p>Here’s a quick example to demonstrate the usage of <code class="xref py py-func docutils literal notranslate"><span class="pre">pyvista.DataSet.get_cell()</span></code> by extracting a hexahedral cell from an example <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code>.</p>
+<div class="line-block">
+<div class="line">You can then extract a single face of that cell.</div>
+</div>
+<div class="line-block">
+<div class="line">Afterwards, you can extract an edge or edges from the face.</div>
+</div>
+<div class="line-block">
+<div class="line">Each <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Cell</span></code> can be individually plotted for convenience.</div>
+</div>
+<section id="class-definition">
+<h2>Class Definition<a class="headerlink" href="#class-definition" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../../_sources/pyvista/doc/source/api/core/cells.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Core API &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="core-api">
+<span id="core-api-index"></span><h1>Core API<a class="headerlink" href="#core-api" title="Link to this heading">¶</a></h1>
+<p>The <a class="reference external" href="https://vtk.org">Visualization Toolkit</a> (VTK), developed by <a class="reference external" href="https://www.kitware.com">Kitware</a>, has many mesh data
+types that PyVista wraps.
+This chapter is intended to describe these different mesh types and how we wrap
+and implement each of those mesh types in VTK. This chapter also highlights
+how all PyVista types have direct access to common VTK filters
+(see <a class="reference internal" href="filters.html#filters"><span class="std std-ref">Filters</span></a>).</p>
+<p>All PyVista meshes inherit from the DataSet type (see <a class="reference internal" href="dataset.html#dataset"><span class="std std-ref">Data Sets</span></a>).
+PyVista has the following mesh types:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PointSet</span></code> is used to represent a set of points.
+This is to provide an interface for datasets that explicitly use
+“point” arrays to represent geometry. The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PointSet</span></code>
+class is an extension of <a href="#id1"><span class="problematic" id="id2">:vtk:`vtkPointSet`</span></a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> consists of any 1D or 2D geometries to
+construct vertices, lines, polygons, and triangles. We generally use
+<code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> to construct scattered points and closed/open
+surfaces (non-volumetric datasets). The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> class
+is an extension of <a href="#id3"><span class="problematic" id="id4">:vtk:`vtkPolyData`</span></a>.</p></li>
+<li><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code> is the most general dataset type
+that can hold any 1D, 2D, or 3D cell geometries. You can think of this
+as a 3D extension of <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PolyData</span></code> that allows volumetric
+cells to be present. It’s fairly uncommon to explicitly make unstructured
+grids but they are often the result of different processing routines that
+might extract subsets of larger datasets. The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.UnstructuredGrid</span></code>
+class is an extension of <a href="#id5"><span class="problematic" id="id6">:vtk:`vtkUnstructuredGrid`</span></a>.</p></li>
+<li><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.StructuredGrid</span></code> is a regular lattice of points aligned
+with internal coordinate axes such that the connectivity can be defined by
+a grid ordering. These are commonly made from <code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.meshgrid()</span></code>. The
+cell types of structured grids must be 2D quads or 3D hexahedra. The
+<code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.StructuredGrid</span></code> class is an extension of <a href="#id7"><span class="problematic" id="id8">:vtk:`vtkStructuredGrid`</span></a>.</p></li>
+<li><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.RectilinearGrid</span></code> defines meshes with implicit geometries
+along the axis directions that are rectangular and regular. The
+<code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.RectilinearGrid</span></code> class is an extension of <a href="#id9"><span class="problematic" id="id10">:vtk:`vtkRectilinearGrid`</span></a>.</p></li>
+<li><p>Image data, commonly referred to as uniform grids, and defined by the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.ImageData</span></code> class are meshes with implicit geometries where
+cell sizes are uniformly assigned along each axis and the spatial reference
+is built out from an origin point. The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.ImageData</span></code> class is
+an extension of <a href="#id11"><span class="problematic" id="id12">:vtk:`vtkImageData`</span></a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.MultiBlock</span></code> datasets are containers to hold several VTK
+datasets in one accessible and spatially referenced object. The
+<code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.MultiBlock</span></code> class is an extension of <a href="#id13"><span class="problematic" id="id14">:vtk:`vtkMultiBlockDataSet`</span></a>.</p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PartitionedDataSet</span></code> datasets are composite dataset to
+encapsulates a dataset consisting of partitions. The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.PartitionedDataSet</span></code>
+class is an extension of <a href="#id15"><span class="problematic" id="id16">:vtk:`vtkPartitionedDataSet`</span></a>.</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="objects.html">DataObject</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="objects.html#table">Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objects.html#textures">Textures</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Data Sets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html#dataset-api-reference">Dataset API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pointsets.html">Point Sets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#polydata-creation">PolyData Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#mesh-manipulation-and-plotting">Mesh Manipulation and Plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#unstructured-grid-creation">Unstructured Grid Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#structured-grid-creation">Structured Grid Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#plotting-grids">Plotting Grids</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pointsets.html#adding-labels-to-a-plot">Adding Labels to a Plot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grids.html">Gridded Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="composite.html">Composite Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="composite.html#list-like-features">List-like Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composite.html#dictionary-like-features">Dictionary-like Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composite.html#multiblock-api-reference">MultiBlock API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">Filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#data-object-filters">Data Object Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#dataset-filters">Dataset Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#polydata-filters">PolyData Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#unstructuredgrid-filters">UnstructuredGrid Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#imagedata-filters">ImageData Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html#composite-filters">Composite Filters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="camera.html">Cameras</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="camera.html#brief-example">Brief Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="camera.html#controlling-camera-rotation">Controlling Camera Rotation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lights.html">Lights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lights.html#brief-example">Brief Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lights.html#light-api">Light API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lights.html#shadows">Shadows</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cells.html">Cells</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cells.html#class-definition">Class Definition</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="helpers.html">Helpers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#wrap-a-vtk-dataset">Wrap a VTK Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#simplified-triangular-mesh-construction">Simplified Triangular Mesh Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#lines-from-points">Lines from Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#line-segments-from-points">Line Segments from Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#convert-to-and-from-vtk-data-types">Convert to and from VTK Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#fit-plane-to-points">Fit Plane to Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpers.html#fit-line-to-points">Fit Line to Points</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="misc.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typing.html">Typing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typing.html#numeric-array-like-types">Numeric Array-Like Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="typing.html#vtk-related-types">VTK Related Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="typing.html#data-object-types">Data Object Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="partitioned.html">Partitioned Datasets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="partitioned.html#list-like-features">List-like Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="partitioned.html#partitioneddataset-api-reference">PartitionedDataSet API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_validation.html">Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_validation.html#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../../_sources/pyvista/doc/source/api/core/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

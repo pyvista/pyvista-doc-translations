@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lights &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="lights">
+<h1>Lights<a class="headerlink" href="#lights" title="Link to this heading">¶</a></h1>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Light</span></code> class adds additional functionality and a pythonic API
+to the <a href="#id1"><span class="problematic" id="id2">:vtk:`vtkLight`</span></a> class. <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Plotter</span></code> objects come with a default
+set of lights that work well in most cases, but in many situations a more hands-on
+access to lighting is necessary.</p>
+<section id="brief-example">
+<h2>Brief Example<a class="headerlink" href="#brief-example" title="Link to this heading">¶</a></h2>
+<p>Create a red spotlight that shines on the origin, then create a scene
+without lighting and add our light to it manually.</p>
+<p>For detailed examples please see <a class="reference internal" href="../../../../examples/04-lights/README.html#light-examples"><span class="std std-ref">Lighting</span></a>.</p>
+</section>
+<section id="light-api">
+<h2>Light API<a class="headerlink" href="#light-api" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pyvista.Light</span></code> instances come in three types: headlights, camera lights, and
+scene lights. Headlights always shine along the camera’s axis, camera lights
+have a fixed position with respect to the camera, and scene lights are positioned
+with respect to the scene, such that moving around the camera doesn’t affect the
+lighting of the scene.</p>
+<p>Lights have a <code class="xref py py-attr docutils literal notranslate"><span class="pre">position</span></code> and a
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">focal_point</span></code> that define the axis of the
+light. The meaning of these depends on the type of the light. The color of the
+light can be set according to ambient, diffuse, and specular components. The
+brightness can be set with the <code class="xref py py-attr docutils literal notranslate"><span class="pre">intensity</span></code>
+property, and the writable <code class="xref py py-attr docutils literal notranslate"><span class="pre">on</span></code> property specifies
+whether the light is switched on.</p>
+<p>Lights can be either directional (meaning an infinitely distant point source)
+or <code class="xref py py-attr docutils literal notranslate"><span class="pre">positional</span></code>. Positional lights have
+additional properties that describe the geometry and the spatial distribution
+of the light. The <code class="xref py py-attr docutils literal notranslate"><span class="pre">cone_angle</span></code> and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">exponent</span></code> properties define the shape of the
+light beam and the angular distribution of the light’s intensity within that
+beam. The fading of the light with distance can be customized with the
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">attenuation_values</span></code> property.
+Positional lights can also make use of an actor that represents the shape and
+color of the light using a wire-frame, see <code class="xref py py-func docutils literal notranslate"><span class="pre">show_actor</span></code>.</p>
+<p>Positional lights with a <code class="xref py py-attr docutils literal notranslate"><span class="pre">cone_angle</span></code> of
+less than 90 degrees are known as spotlights. Spotlights are unidirectional and
+they make full use of beam shaping properties, namely <code class="xref py py-attr docutils literal notranslate"><span class="pre">exponent</span></code> and attenuation. Non-spotlight positional lights,
+however, act like point sources located in the real-world position of the
+light, shining in all directions of space. They display attenuation with
+distance from the source, but their beam is isotropic in space. In contrast,
+directional lights act as infinitely distant point sources, so they are
+unidirectional but they do not attenuate.</p>
+</section>
+<section id="shadows">
+<h2>Shadows<a class="headerlink" href="#shadows" title="Link to this heading">¶</a></h2>
+<p>With directed lights, it is possible to create complex lighting
+scenarios. For example, you can position a light directly above an
+actor (in this case, a sphere), to create a shadow directly below it.</p>
+<p>The following example uses a positional light to create an
+eclipse-like shadow below a sphere by controlling the cone angle and
+exponent values of the light.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>VTK has known issues when rendering shadows on certain window
+sizes. Be prepared to experiment with the <code class="docutils literal notranslate"><span class="pre">window_size</span></code>
+parameter.</p>
+</div>
+<section id="api-reference">
+<h3>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../../_sources/pyvista/doc/source/api/core/lights.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

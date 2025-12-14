@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cameras &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cameras">
+<span id="cameras-api"></span><h1>Cameras<a class="headerlink" href="#cameras" title="Link to this heading">¶</a></h1>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Camera</span></code> class adds additional functionality and a
+pythonic API to the <a href="#id1"><span class="problematic" id="id2">:vtk:`vtkCamera`</span></a> class. <code class="xref py py-class docutils literal notranslate"><span class="pre">pyvista.Camera</span></code>
+objects come with a default set of cameras that work well in most
+cases, but in many situations a more hands-on approach to using the
+camera is necessary.</p>
+<section id="brief-example">
+<h2>Brief Example<a class="headerlink" href="#brief-example" title="Link to this heading">¶</a></h2>
+<p>Create a frustum of camera, then create a scene of inside frustum.</p>
+</section>
+<section id="controlling-camera-rotation">
+<h2>Controlling Camera Rotation<a class="headerlink" href="#controlling-camera-rotation" title="Link to this heading">¶</a></h2>
+<p>In addition to directly controlling the camera position by setting it
+via the <code class="xref py py-attr docutils literal notranslate"><span class="pre">pyvista.Camera.position</span></code> property, you can also
+directly control the <code class="xref py py-attr docutils literal notranslate"><span class="pre">pyvista.Camera.roll</span></code>,
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">pyvista.Camera.elevation</span></code>, and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">pyvista.Camera.azimuth</span></code> of the camera.</p>
+<img alt="../../../../../_images/TestCameraModel1.png" src="../../../../../_images/TestCameraModel1.png" />
+<p>For example, you can modify the roll. First, generate a plot of an
+orientation cube while initially setting the camera position to look
+at the <code class="docutils literal notranslate"><span class="pre">'yz'</span></code>.</p>
+<p>Here we modify the roll in-place.</p>
+<p>And here we offset the azimuth of the camera by 45 degrees to look at
+the <code class="docutils literal notranslate"><span class="pre">X+</span></code> and <code class="docutils literal notranslate"><span class="pre">Y+</span></code> faces.</p>
+<p>Here, we move upward by setting the elevation of the camera to 45
+degrees to see the <code class="docutils literal notranslate"><span class="pre">X+</span></code> and <code class="docutils literal notranslate"><span class="pre">Z+</span></code> faces.</p>
+<section id="api-reference">
+<h3>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../../_sources/pyvista/doc/source/api/core/camera.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

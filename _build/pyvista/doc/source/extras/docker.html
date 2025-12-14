@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PyVista within a Docker Container &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <p>!</p>
+<section id="pyvista-within-a-docker-container">
+<h1>PyVista within a Docker Container<a class="headerlink" href="#pyvista-within-a-docker-container" title="Link to this heading">¶</a></h1>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> from within a docker container with
+jupyterlab. To launch a local docker container, install <code class="docutils literal notranslate"><span class="pre">docker</span></code>, then
+pull and run the image with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8888</span>:8888<span class="w"> </span>ghcr.io/pyvista/pyvista:latest
+</pre></div>
+</div>
+<p>Finally, open the link that shows up from the terminal output and
+start playing around with pyvista in jupyterlab. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>To<span class="w"> </span>access<span class="w"> </span>the<span class="w"> </span>notebook,<span class="w"> </span>open<span class="w"> </span>this<span class="w"> </span>file<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>browser:
+<span class="w">    </span>file:///home/jovyan/.local/share/jupyter/runtime/nbserver-6-open.html
+Or<span class="w"> </span>copy<span class="w"> </span>and<span class="w"> </span>paste<span class="w"> </span>one<span class="w"> </span>of<span class="w"> </span>these<span class="w"> </span>URLs:
+<span class="w">    </span>http://861c873f6352:8888/?token<span class="o">=</span>b3ac1f6397188944fb21e1f58b673b5b4e6f1ede1a84787b
+<span class="w"> </span>or<span class="w"> </span>http://127.0.0.1:8888/?token<span class="o">=</span>b3ac1f6397188944fb21e1f58b673b5b4e6f1ede1a84787b
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can see the latest tags of <a class="reference external" href="https://github.com/pyvista/pyvista/pkgs/container/pyvista">our Docker containers here</a>. <code class="docutils literal notranslate"><span class="pre">ghcr.io/pyvista/pyvista:latest</span></code> has
+JupyterLab set up while <code class="docutils literal notranslate"><span class="pre">ghcr.io/pyvista/pyvista:latest-slim</span></code> is a
+lightweight Python environment without Jupyter</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may need to log into the GitHub container registry by following the directions at
+<a class="reference external" href="https://docs.github.com/en/enterprise-server&#64;3.0/packages/working-with-a-github-packages-registry/working-with-the-docker-registry">Working with the Docker registry</a>)</p>
+</div>
+<section id="create-your-own-docker-container-with-pyvista">
+<h2>Create your own Docker Container with PyVista<a class="headerlink" href="#create-your-own-docker-container-with-pyvista" title="Link to this heading">¶</a></h2>
+<p>Clone PyVista and cd into this directory to create your own customized docker image.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/pyvista/pyvista
+<span class="nb">cd</span><span class="w"> </span>pyvista/docker
+<span class="nv">IMAGE</span><span class="o">=</span>my-pyvista-jupyterlab:v0.1.0
+docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span><span class="nv">$IMAGE</span><span class="w"> </span>.
+docker<span class="w"> </span>push<span class="w"> </span><span class="nv">$IMAGE</span>
+</pre></div>
+</div>
+<p>If you wish to have off-screen GPU support when rending on jupyterlab,
+see the notes about building with EGL at <a class="reference internal" href="building_vtk.html#building-vtk"><span class="std std-ref">Building VTK</span></a>,
+or use the custom, pre-built wheels at
+<a class="reference external" href="https://github.com/pyvista/pyvista/releases/tag/0.27.0">Release 0.27.0</a>.
+Install that customized vtk wheel onto your docker image by modifying
+the docker image at <code class="docutils literal notranslate"><span class="pre">pyvista/docker/jupyter.Dockerfile</span></code> with:</p>
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span><span class="k">COPY</span><span class="w"> </span>vtk-9.0.20201105-cp38-cp38-linux_x86_64.whl<span class="w"> </span>/tmp/
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>/tmp/vtk-9.0.20201105-cp38-cp38-linux_x86_64.whl
+</pre></div>
+</div>
+<p>Additionally, you must install GPU drivers on the docker image of the
+same version running on the host machine. For example, if you are
+running on Azure Kubernetes Service and the GPU nodes on the
+kubernetes cluster are running <code class="docutils literal notranslate"><span class="pre">450.51.06</span></code>, you must install the same
+version on your image. Since you will be using the underlying kernel
+module, there’s no reason to build it on the container (and trying
+will only result in an error).</p>
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span><span class="k">COPY</span><span class="w"> </span>NVIDIA-Linux-x86_64-450.51.06.run<span class="w"> </span>nvidia_drivers.run
+<span class="k">RUN</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>kmod<span class="w"> </span>libglvnd-dev<span class="w"> </span>pkg-config<span class="w"> </span>-yq
+<span class="k">RUN</span><span class="w"> </span>./NVIDIA-Linux-x86_64-450.51.06.run<span class="w"> </span>-s<span class="w"> </span>--no-kernel-module
+</pre></div>
+</div>
+<p>To verify that you’re rendering on a GPU, first check the output of
+<code class="docutils literal notranslate"><span class="pre">nvidia-smi</span></code>. You should get something like:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>nvidia-smi
+Sun<span class="w"> </span>Nov<span class="w">  </span><span class="m">8</span><span class="w"> </span><span class="m">05</span>:48:46<span class="w"> </span><span class="m">2020</span>
++-----------------------------------------------------------------------------+
+<span class="p">|</span><span class="w"> </span>NVIDIA-SMI<span class="w"> </span><span class="m">450</span>.51.06<span class="w">    </span>Driver<span class="w"> </span>Version:<span class="w"> </span><span class="m">450</span>.51.06<span class="w">    </span>CUDA<span class="w"> </span>Version:<span class="w"> </span><span class="m">11</span>.0<span class="w">     </span><span class="p">|</span>
+<span class="p">|</span>-------------------------------+----------------------+----------------------+
+<span class="p">|</span><span class="w"> </span>GPU<span class="w">  </span>Name<span class="w">        </span>Persistence-M<span class="p">|</span><span class="w"> </span>Bus-Id<span class="w">        </span>Disp.A<span class="w"> </span><span class="p">|</span><span class="w"> </span>Volatile<span class="w"> </span>Uncorr.<span class="w"> </span>ECC<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>Fan<span class="w">  </span>Temp<span class="w">  </span>Perf<span class="w">  </span>Pwr:Usage/Cap<span class="p">|</span><span class="w">         </span>Memory-Usage<span class="w"> </span><span class="p">|</span><span class="w"> </span>GPU-Util<span class="w">  </span>Compute<span class="w"> </span>M.<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w">                               </span><span class="p">|</span><span class="w">                      </span><span class="p">|</span><span class="w">               </span>MIG<span class="w"> </span>M.<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="o">===============================</span>+<span class="o">======================</span>+<span class="o">======================</span><span class="p">|</span>
+<span class="p">|</span><span class="w">   </span><span class="m">0</span><span class="w">  </span>Tesla<span class="w"> </span>K80<span class="w">           </span>Off<span class="w">  </span><span class="p">|</span><span class="w"> </span><span class="m">00000001</span>:00:00.0<span class="w"> </span>Off<span class="w"> </span><span class="p">|</span><span class="w">                    </span><span class="m">0</span><span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w"> </span>N/A<span class="w">   </span>34C<span class="w">    </span>P8<span class="w">    </span>32W<span class="w"> </span>/<span class="w"> </span>149W<span class="w"> </span><span class="p">|</span><span class="w">   </span>1297MiB<span class="w"> </span>/<span class="w"> </span>11441MiB<span class="w"> </span><span class="p">|</span><span class="w">      </span><span class="m">0</span>%<span class="w">      </span>Default<span class="w"> </span><span class="p">|</span>
+<span class="p">|</span><span class="w">                               </span><span class="p">|</span><span class="w">                      </span><span class="p">|</span><span class="w">                  </span>N/A<span class="w"> </span><span class="p">|</span>
++-------------------------------+----------------------+----------------------+
+</pre></div>
+</div>
+<p>Note the driver version (which is actually the kernel driver version),
+and verify it matches the version you installed on your docker image.</p>
+<p>Finally, check that your render window is using NVIDIA by running
+<code class="docutils literal notranslate"><span class="pre">ReportCapabilities</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pyvista</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span> <span class="o">=</span> <span class="n">pyvista</span><span class="o">.</span><span class="n">Plotter</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pl</span><span class="o">.</span><span class="n">render_window</span><span class="o">.</span><span class="n">ReportCapabilities</span><span class="p">())</span>
+
+<span class="go">OpenGL vendor string:  NVIDIA Corporation</span>
+<span class="go">OpenGL renderer string:  Tesla K80/PCIe/SSE2</span>
+<span class="go">OpenGL version string:  4.6.0 NVIDIA 450.51.06</span>
+<span class="go">OpenGL extensions:</span>
+<span class="go">  GL_AMD_multi_draw_indirect</span>
+<span class="go">  GL_AMD_seamless_cubemap_per_texture</span>
+<span class="go">  GL_ARB_arrays_of_arrays</span>
+<span class="go">  GL_ARB_base_instance</span>
+<span class="go">  GL_ARB_bindless_texture</span>
+</pre></div>
+</div>
+<p>If you get <code class="docutils literal notranslate"><span class="pre">display</span> <span class="pre">id</span> <span class="pre">not</span> <span class="pre">set</span></code>, then your environment is likely not
+set up correctly.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../_sources/pyvista/doc/source/extras/docker.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

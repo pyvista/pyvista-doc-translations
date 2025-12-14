@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>User Guide &#8212; pyvista-doc-translations  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Link to this heading">¶</a></h1>
+<p>This section details the general usage of PyVista for users who may or
+may not have used VTK in the past, but are looking to leverage it in a
+Pythonic manner for 3D plotting. See the table of contents below or
+the in the side panel for the individual sections demonstrating the
+key concepts of PyVista.</p>
+<section id="simple-interactive-example">
+<h2>Simple Interactive Example<a class="headerlink" href="#simple-interactive-example" title="Link to this heading">¶</a></h2>
+<p>This basic example demonstrates three key features of PyVista:</p>
+<ul class="simple">
+<li><p>Simple <a class="reference external" href="https://numpy.org/">numpy</a> and <a class="reference external" href="https://matplotlib.org/">matplotlib</a> like interface</p></li>
+<li><p>Variety of built-in examples</p></li>
+<li><p>Intuitive plotting with keyword arguments.</p></li>
+</ul>
+<p>Here, we download the <a class="reference external" href="http://graphics.stanford.edu/data/3Dscanrep/">Stanford dragon mesh</a>, color it according
+to height, and plot it using a web-viewer. This same example will run
+identically locally.</p>
+<p>With just a few lines of code we downloaded a sample mesh from the
+web, added scalars to it based on the points of the mesh, and plotted
+it while controlling the orientation, color, and data presented in the
+visualization.</p>
+<p>The following sections explain the details of the how and why of
+PyVista’s interface.</p>
+<section id="user-guide-contents">
+<h3>User Guide Contents<a class="headerlink" href="#user-guide-contents" title="Link to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="what-is-a-mesh.html">What is a Mesh?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="what-is-a-mesh.html#what-is-a-point">What is a Point?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-is-a-mesh.html#what-is-a-cell">What is a Cell?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-is-a-mesh.html#what-are-attributes">What are Attributes?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-is-a-mesh.html#assigning-scalars-to-a-mesh">Assigning Scalars to a Mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="simple.html">Basic API Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="simple.html#wrapping-a-vtk-data-object">Wrapping a VTK Data Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple.html#reading-a-vtk-file">Reading a VTK File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple.html#accessing-the-wrapped-data-object">Accessing the Wrapped Data Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple.html#plotting">Plotting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="simple.html#exporting">Exporting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_model.html">PyVista Data Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#the-pyvista-dataset">The PyVista DataSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#points-and-arrays-within-pyvista">Points and Arrays Within PyVista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#geometry-and-mesh-connectivity-topology-within-pyvista">Geometry and Mesh Connectivity/Topology Within PyVista</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_model.html#data-arrays">Data Arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vtk_to_pyvista.html">Transitioning from VTK to PyVista</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="vtk_to_pyvista.html#pointset-construction">PointSet Construction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vtk_to_pyvista.html#object-representation">Object Representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vtk_to_pyvista.html#tradeoffs">Tradeoffs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="themes.html">Plotting Themes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="themes.html#creating-a-custom-theme">Creating A Custom Theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="themes.html#theme-api">Theme API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jupyter/index.html">Jupyter Notebook Plotting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jupyter/index.html#supported-modules">Supported Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter/index.html#usage-with-pyvista">Usage with PyVista</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="optional_features.html">Optional Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="optional_features.html#vectorised-ray-tracing">Vectorised Ray Tracing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optional_features.html#project-to-finite-plane">Project to Finite Plane</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Link to this heading">¶</a></h3>
+<p>Here are some videos that you can watch to learn PyVista:</p>
+<ul class="simple">
+<li><p>PyConJP2020 talk “How to plot unstructured mesh file on Jupyter
+Notebook” (15 minutes):</p>
+<ul>
+<li><p><a class="reference external" href="https://youtu.be/X3Z54Kw4I6Y">Video</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/presentation/d/1M_cnS66ja81u_mHACjaUsDj1wSeeEtnEevk_IMZ8-dg/edit?usp=sharing">Material</a></p></li>
+</ul>
+</li>
+<li><p>Software Underground Tutorial</p>
+<ul>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=FmNmRBsEBHE">Tutorial: PyVista</a></p></li>
+</ul>
+</li>
+</ul>
+<p>If there is any material that we can add, please open an <a class="reference external" href="https://github.com/pyvista/pyvista/issues">issue</a> .</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../index.html">pyvista-doc-translations</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2021, Tetsuo Koyama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../../_sources/pyvista/doc/source/user-guide/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
