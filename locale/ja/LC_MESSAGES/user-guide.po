@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.46.dev0\n"
+"Project-Id-Version: PyVista 0.47.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-13 02:42+0000\n"
+"POT-Creation-Date: 2025-12-14 02:35+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -149,7 +149,7 @@ msgstr "スタティックなシーン"
 msgid "Interactive Scene"
 msgstr "インタラクティブなシーン"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:94
+#: ../../pyvista/doc/source/user-guide/data_model.rst:93
 msgid ""
 "Here, the above datasets are ordered from most (5) to least complex (1). "
 "That is, every dataset can be represented as an |UnstructuredGrid|, but the "
@@ -164,7 +164,7 @@ msgstr ""
 "クラスは最も多くのメモリを消費します．一方， :vtk:`vtkImageData` (|ImageData|) "
 "は一様な間隔で配置されているので，いくつかの整数や浮動小数点数で形状を表現することができ，格納するメモリの量は最も少なくて済みます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:104
+#: ../../pyvista/doc/source/user-guide/data_model.rst:103
 msgid ""
 "This is because in |PolyData| or |UnstructuredGrid|, points, and cells must "
 "be explicitly defined. In other data types, such as |ImageData|, the cells "
@@ -174,35 +174,35 @@ msgstr ""
 "これは， |PolyData| や |UnstructuredGrid| では，ポイント，やセルを明示的に定義する必要があるからです． "
 "|ImageData| などの他のデータタイプでは，セル（さらにはポイント）はグリッドの次元性に基づいた創発的なプロパティとして定義されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:110
+#: ../../pyvista/doc/source/user-guide/data_model.rst:109
 msgid ""
 "To see this in practice, let's create the simplest surface represented as a "
 "|PolyData|. First, we need to define our points."
 msgstr "実際には， |PolyData| で表される最も単純なサーフェスを作成してみましょう．まず，点を定義する必要があります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:115
+#: ../../pyvista/doc/source/user-guide/data_model.rst:114
 msgid "Points and Arrays Within PyVista"
 msgstr "PyVistaにおける点と配列"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:116
+#: ../../pyvista/doc/source/user-guide/data_model.rst:115
 msgid ""
 "There are a variety of ways to create points within PyVista, and this "
 "section shows how to efficiently create an array of points by either:"
 msgstr "PyVistaでは，様々な方法で点を作成することができますが，ここでは，いずれかの方法で効率的に点の配列を作成する方法を紹介します．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:118
+#: ../../pyvista/doc/source/user-guide/data_model.rst:117
 msgid "Wrapping a VTK array"
 msgstr "VTK配列のラッピング"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:119
+#: ../../pyvista/doc/source/user-guide/data_model.rst:118
 msgid "Using a :class:`numpy.ndarray`"
 msgstr ":class:`numpy.ndarray` の使用"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:120
+#: ../../pyvista/doc/source/user-guide/data_model.rst:119
 msgid "Or just using a :class:`list`"
 msgstr "または，単に :class:`list` を使うこともできます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:122
+#: ../../pyvista/doc/source/user-guide/data_model.rst:121
 msgid ""
 "PyVista provides pythonic methods for all three approaches so you can choose"
 " whatever is most efficient for you. If you're comfortable with the VTK API,"
@@ -214,16 +214,16 @@ msgstr ""
 "APIに慣れている場合は，VTK配列をラップすることもできますが， :class:`numpy.ndarray` "
 "を使う方が便利で，Pythonのループ処理のオーバーヘッドを避けることができるでしょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:129
+#: ../../pyvista/doc/source/user-guide/data_model.rst:128
 msgid "Wrapping a VTK Array"
 msgstr "VTK配列のラッピング"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:130
+#: ../../pyvista/doc/source/user-guide/data_model.rst:129
 msgid ""
 "Let's define points of a triangle. Using the VTK API, this can be done with:"
 msgstr "3角形の点を定義してみましょう．VTKのAPIを使えば，このようなことができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:150
+#: ../../pyvista/doc/source/user-guide/data_model.rst:149
 msgid ""
 "PyVista supports creating objects directly from the :vtk:`vtkDataArray` "
 "class, but there's a better, and more pythonic alternative by using "
@@ -232,15 +232,15 @@ msgstr ""
 "PyVistaでは， :vtk:`vtkDataArray` クラスから直接オブジェクトを作成することをサポートしていますが， "
 ":class:`numpy.ndarray` を使用することで，より優れた，よりpythonicな代替手段があります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:156
+#: ../../pyvista/doc/source/user-guide/data_model.rst:155
 msgid "Using NumPy with PyVista"
 msgstr "PyVistaでのNumPyの利用"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:157
+#: ../../pyvista/doc/source/user-guide/data_model.rst:156
 msgid "You can create a `NumPy <https://numpy.org/>`_ points array with:"
 msgstr "`NumPy <https://numpy.org/>`_ ポイントの配列を作ることができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:165
+#: ../../pyvista/doc/source/user-guide/data_model.rst:164
 msgid ""
 "We use a :class:`numpy.ndarray` here so that PyVista directly \"points\" the"
 " underlying C array to VTK. VTK already has APIs to directly read in the C "
@@ -251,7 +251,7 @@ msgstr ""
 "ここでは :class:`numpy.ndarray` を使用して，PyVista が基礎となる C 配列を VTK に直接 \"指し示す\" "
 "ようにしています．VTKはすでにNumPyからC配列を直接読み込むAPIを持っていますが，VTKはC++で書かれているので，PythonからVTKに転送されるすべてのものは，VTKが処理できるフォーマットである必要があります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:171
+#: ../../pyvista/doc/source/user-guide/data_model.rst:170
 msgid ""
 "Should you wish to use VTK objects within PyVista, you can still do this. In"
 " fact, using :func:`pyvista.wrap`, you can even get a numpy-like "
@@ -260,7 +260,7 @@ msgstr ""
 "VTKオブジェクトをPyVistaで使用したい場合は，これも可能です．実際， :func:`pyvista.wrap` を使用すると，データの "
 "numpy ライクな表現を得ることもできます．例えば，次のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:181
+#: ../../pyvista/doc/source/user-guide/data_model.rst:180
 msgid ""
 "Note that when wrapping the underlying VTK array, we actually perform a "
 "shallow copy of the data. In other words, we pass the pointer from the "
@@ -274,17 +274,17 @@ msgstr ""
 "に渡すことで，2つの配列が効率的にリンクされることになります（NumPyの用語では，返される配列は基礎となるVTKデータへのビューとなります）．つまり，numpyの配列インデックスを使って配列を変更し，それを"
 " \"VTK側\" で修正させることができるのです．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:194
+#: ../../pyvista/doc/source/user-guide/data_model.rst:193
 msgid ""
 "Or we can change the value from the VTK array and see it reflected in the "
 "numpy wrapped array. Let's change the value back:"
 msgstr "あるいは，VTK配列から値を変更して，それがnumpyのラップ配列に反映されるのを確認することもできます．それでは，値を戻してみましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:204
+#: ../../pyvista/doc/source/user-guide/data_model.rst:203
 msgid "Using Python Lists or Tuples"
 msgstr "Pythonのリストやタプルの使用"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:205
+#: ../../pyvista/doc/source/user-guide/data_model.rst:204
 msgid ""
 "PyVista supports the use of Python sequences (that is, a :class:`list` or "
 ":class:`tuple`), and you could define your points using a nested list of "
@@ -293,7 +293,7 @@ msgstr ""
 "PyVistaでは，Pythonのシーケンス（ :class:`list` や  :class:`tuple` "
 "）の使用をサポートしており，リストのネストを使ってポイントを定義することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:213
+#: ../../pyvista/doc/source/user-guide/data_model.rst:212
 msgid ""
 "When used in the context of |PolyData| to create the mesh, this list will "
 "automatically be wrapped using NumPy and then passed to VTK. This avoids any"
@@ -302,7 +302,7 @@ msgstr ""
 "メッシュを作成するために |PolyData| "
 "のコンテキストで使用された場合，このリストは自動的にNumPyを使ってラップされ，VTKに渡されます．これにより，ループのオーバーヘッドを回避しつつ，ネイティブのpythonクラスを使用することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:218
+#: ../../pyvista/doc/source/user-guide/data_model.rst:217
 msgid ""
 "Finally, let's show how we can use these three objects in the context of a "
 "PyVista geometry class. Here, we create a simple point mesh containing just "
@@ -310,7 +310,7 @@ msgid ""
 msgstr ""
 "最後に，この3つのオブジェクトをPyVistaのジオメトリクラスでどのように使うかを説明します．ここでは，3つの点だけを含む単純なポイントメッシュを作成します．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:228
+#: ../../pyvista/doc/source/user-guide/data_model.rst:227
 msgid ""
 "These point meshes all contain three points and are effectively identical. "
 "Let's show this by accessing the underlying points array from the mesh, "
@@ -319,11 +319,11 @@ msgstr ""
 "これらのポイントメッシュはすべて3つのポイントを含んでおり，実質的には同じものです． :class:`pyvista.pyvista_ndarray` "
 "として表現されているメッシュから，基礎となるポイント配列にアクセスしてこれを示しましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:236
+#: ../../pyvista/doc/source/user-guide/data_model.rst:235
 msgid "And show that these are all identical"
 msgstr "そして，これらがすべて同一であることを示します"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:244
+#: ../../pyvista/doc/source/user-guide/data_model.rst:243
 msgid ""
 "Finally, let's plot this (very) simple example using PyVista's "
 ":func:`pyvista.plot` method. Let's make this a full example so you can see "
@@ -332,7 +332,7 @@ msgstr ""
 "最後に，PyVistaの :func:`pyvista.plot` "
 "メソッドを使って，この(非常に)シンプルな例をプロットしてみましょう．ここでは，全体の流れがわかるように例を挙げて説明します．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:256
+#: ../../pyvista/doc/source/user-guide/data_model.rst:255
 msgid ""
 "We'll get into PyVista's data classes and attributes later, but for now "
 "we've shown how to create a simple geometry containing just points. To "
@@ -341,11 +341,11 @@ msgid ""
 msgstr ""
 "PyVistaのデータクラスと属性については後ほど説明しますが，ここでは点だけを含むシンプルなジオメトリを作成する方法を紹介します．サーフェスを作成するには，ジオメトリの接続性を指定する必要がありますが，そのためにはこのサーフェスのセル（または面）を指定する必要があります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:263
+#: ../../pyvista/doc/source/user-guide/data_model.rst:262
 msgid "Geometry and Mesh Connectivity/Topology Within PyVista"
 msgstr "PyVistaにおけるジオメトリとメッシュの接続性/トポロジー"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:264
+#: ../../pyvista/doc/source/user-guide/data_model.rst:263
 msgid ""
 "With our previous example, we defined our \"mesh\" as three disconnected "
 "points. While this is useful for representing \"point clouds,\" if we want "
@@ -356,7 +356,7 @@ msgstr ""
 "先ほどの例では， \"メッシュ\" を切断された3つの点として定義しました．これは \"点群\" "
 "を表現するのには便利ですが，サーフェイスを作成したい場合は，メッシュの接続性を記述する必要があります．そのためには，先ほど定義したのと同じ順番で3つの点からなる1つのセルを定義しましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:275
+#: ../../pyvista/doc/source/user-guide/data_model.rst:274
 msgid ""
 "Observe how we had to insert a leading ``3`` to tell VTK that our face is "
 "described by three elements, in this case, three points. In our |PolyData| "
@@ -369,21 +369,21 @@ msgstr ""
 "の中では，VTKは面が常に3つの点を含むことを想定していないので，私たちはそれを定義しなければなりません． "
 "これにより，セルあたりの点の数を(自由に)定義できるという柔軟性が生まれます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:282
+#: ../../pyvista/doc/source/user-guide/data_model.rst:281
 msgid "All cell types follow the same connectivity array format:"
 msgstr "すべてのセルタイプは，同じ接続配列形式に従っています:"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:284
+#: ../../pyvista/doc/source/user-guide/data_model.rst:283
 msgid "``[Number of points, Point 1, Point 2, ...]``"
 msgstr "``[Number of points, Point 1, Point 2, ...]``"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:287
+#: ../../pyvista/doc/source/user-guide/data_model.rst:286
 msgid ""
 "Except for ``polyhedron`` type, in which we need to define each face of the "
 "cell. The format for this type is the following:"
 msgstr "ただし， ``polyhedron`` タイプは，セルの各面を定義する必要があります．このタイプのフォーマットは以下の通りです．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:290
+#: ../../pyvista/doc/source/user-guide/data_model.rst:289
 msgid ""
 "``[Number of elements, Number of faces, Face1NPoints, Point1, Point2, ..., "
 "PointN, Face2NPoints, ...]``."
@@ -391,13 +391,13 @@ msgstr ""
 "``[Number of elements, Number of faces, Face1NPoints, Point1, Point2, ..., "
 "PointN, Face2NPoints, ...]``."
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:292
+#: ../../pyvista/doc/source/user-guide/data_model.rst:291
 msgid ""
 "Where ``number of elements`` is the total number of elements in the array "
 "that describe this cell."
 msgstr "ここで ``number of elements`` は，このセルを記述する配列の要素の総数を表します．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:294
+#: ../../pyvista/doc/source/user-guide/data_model.rst:293
 msgid ""
 "Now we have all the necessary pieces to assemble an instance of |PolyData| "
 "that contains a single triangle. To do this, we simply provide the "
@@ -408,21 +408,21 @@ msgstr ""
 "``points`` と ``cells`` を |PolyData| "
 "のコンストラクタに与えればよいのです．表現から，このジオメトリには3つのポイントと1つのセルが含まれていることがわかります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:305
+#: ../../pyvista/doc/source/user-guide/data_model.rst:304
 msgid "Let's also plot this:"
 msgstr "これもプロットしてみましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:313
+#: ../../pyvista/doc/source/user-guide/data_model.rst:312
 msgid "While we're at it, let's annotate this plot to describe this mesh."
 msgstr "ついでに，このメッシュを説明するために，このプロットにアノテーションをつけてみましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:332
+#: ../../pyvista/doc/source/user-guide/data_model.rst:331
 msgid ""
 "You can clearly see how the polygon is created based on the connectivity of "
 "the points."
 msgstr "点の接続性に基づいてポリゴンが作成される様子がよくわかります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:335
+#: ../../pyvista/doc/source/user-guide/data_model.rst:334
 msgid ""
 "This instance has several attributes to access the underlying data of the "
 "mesh. For example, if you wish to access or modify the points of the mesh, "
@@ -432,42 +432,42 @@ msgstr ""
 "このインスタンスには，メッシュの基礎データにアクセスするためのいくつかの属性があります．例えば，メッシュのポイントにアクセスしたり，変更したりしたい場合は，単純に"
 " :attr:`points <pyvista.DataSet.points>` でpoints属性にアクセスすることができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:344
+#: ../../pyvista/doc/source/user-guide/data_model.rst:343
 msgid ""
 "The connectivity can also be accessed from the :attr:`faces "
 "<pyvista.PolyData.faces>` attribute with:"
 msgstr "接続性は， :attr:`faces <pyvista.PolyData.faces>` 属性からもアクセスできます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:351
+#: ../../pyvista/doc/source/user-guide/data_model.rst:350
 msgid "Or we could simply get the representation of the mesh with:"
 msgstr "あるいは，単純にメッシュの表現を得ることができます"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:357
+#: ../../pyvista/doc/source/user-guide/data_model.rst:356
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:254
 msgid "In this representation we see:"
 msgstr "この表現では，次のようになります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:359
+#: ../../pyvista/doc/source/user-guide/data_model.rst:358
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:256
 msgid "Number of cells :attr:`n_cells <pyvista.DataSet.n_cells>`"
 msgstr "セルの数 :attr:`n_cells <pyvista.DataSet.n_cells>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:360
+#: ../../pyvista/doc/source/user-guide/data_model.rst:359
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:257
 msgid "Number of points :attr:`n_points <pyvista.DataSet.n_points>`"
 msgstr "ポイントの数 :attr:`n_points <pyvista.DataSet.n_points>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:361
+#: ../../pyvista/doc/source/user-guide/data_model.rst:360
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:258
 msgid "Bounds of the mesh :attr:`bounds <pyvista.DataSet.bounds>`"
 msgstr "メッシュの境界 :attr:`bounds <pyvista.DataSet.bounds>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:362
+#: ../../pyvista/doc/source/user-guide/data_model.rst:361
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:259
 msgid "Number of data arrays :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
 msgstr "データ配列の数 :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:364
+#: ../../pyvista/doc/source/user-guide/data_model.rst:363
 msgid ""
 "This is vastly different from the output from VTK. See "
 ":ref:`vtk_vs_pyvista_object_repr` for the comparison between the two "
@@ -476,7 +476,7 @@ msgstr ""
 "これはVTKからの出力とは大きく異なります． 2つの表現方法の比較については， :ref:`vtk_vs_pyvista_object_repr` "
 "を参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:368
+#: ../../pyvista/doc/source/user-guide/data_model.rst:367
 msgid ""
 "This mesh contains no data arrays as it consists only of geometry. This "
 "makes it useful for plotting just the geometry of the mesh, but datasets "
@@ -485,27 +485,27 @@ msgstr ""
 "このメッシュは，ジオメトリのみで構成されているため，データ配列を含みません．これは，メッシュのジオメトリだけをプロットするのに便利ですが，データセットにはジオメトリ以外のものが含まれていることがよくあります．"
 " 例えば"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:372
+#: ../../pyvista/doc/source/user-guide/data_model.rst:371
 msgid "An electrical field computed from a changing magnetic field"
 msgstr "変化する磁界から計算される電界"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:373
+#: ../../pyvista/doc/source/user-guide/data_model.rst:372
 msgid "Vector field of blood flow through artery"
 msgstr "動脈を流れる血流のベクトル場"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:374
+#: ../../pyvista/doc/source/user-guide/data_model.rst:373
 msgid "Surface stresses from a structural finite element analysis"
 msgstr "構造用有限要素法による表面応力の解析"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:375
+#: ../../pyvista/doc/source/user-guide/data_model.rst:374
 msgid "Mineral deposits from geophysics"
 msgstr "地球物理学から見た鉱床"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:376
+#: ../../pyvista/doc/source/user-guide/data_model.rst:375
 msgid "Weather patterns as a vector field or surface data."
 msgstr "ベクトル場や表面データとしての気象パターン．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:378
+#: ../../pyvista/doc/source/user-guide/data_model.rst:377
 msgid ""
 "While each one of these datasets could be represented as a different "
 "geometry class, they would all contain point, cell, or field data that "
@@ -513,11 +513,11 @@ msgid ""
 msgstr ""
 "これらのデータセットはそれぞれ別のジオメトリクラスとして表現されますが，いずれもジオメトリ内の特定の場所でデータの値を説明するポイント，セル，またはフィールドデータを含んでいます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:385
+#: ../../pyvista/doc/source/user-guide/data_model.rst:384
 msgid "Data Arrays"
 msgstr "データアレイ"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:386
+#: ../../pyvista/doc/source/user-guide/data_model.rst:385
 msgid ""
 "Each :class:`DataSet <pyvista.DataSet>` contains attributes that allow you "
 "to access the underlying numeric data. This numerical data may be associated"
@@ -528,7 +528,7 @@ msgstr ""
 "この数値データは :attr:`points <pyvista.DataSet.points>` "
 "やセルに関連付けられている場合もあれば，ポイントやセルには関連付けられておらず，一般的なメッシュに関連付けられている場合もあります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:392
+#: ../../pyvista/doc/source/user-guide/data_model.rst:391
 msgid ""
 "To illustrate data arrays within PyVista, let's first construct a slightly "
 "more complex mesh than our previous example. Here, we create a simple mesh "
@@ -541,11 +541,11 @@ msgstr ""
 "<pyvista.DataSet.cast_to_unstructured_grid>` で |UnstructuredGrid| "
 "にキャストすることで，4つのアイソメトリックなセルを含む単純なメッシュを作成します．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:405
+#: ../../pyvista/doc/source/user-guide/data_model.rst:404
 msgid "Let's also plot this basic mesh:"
 msgstr "また，この基本的なメッシュをプロットしてみましょう．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:430
+#: ../../pyvista/doc/source/user-guide/data_model.rst:429
 msgid ""
 "Now that we have a simple mesh to work with, we can start assigning it data."
 " There are two main types of data that can be associated with a mesh: scalar"
@@ -557,7 +557,7 @@ msgstr ""
 "さて，シンプルなメッシュができあがったところで，データの割り当てを始めましょう． "
 "メッシュに関連付けられるデータには，主にスカラーデータとベクトルデータの2種類があります．スカラーデータとは，単一または複数コンポーネントのデータで，方向性がなく，温度などの値や，複数コンポーネントのデータの場合はRGBA値などを含みます．ベクトルデータは，大きさと方向性を持ち，1つのデータポイントに3つの成分を含む配列として表現されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:438
+#: ../../pyvista/doc/source/user-guide/data_model.rst:437
 msgid ""
 "When plotting, we can easily display scalar data, but this data must be "
 "\"associated\" with either points or cells. For example, we may wish to "
@@ -568,12 +568,12 @@ msgstr ""
 "例えば，サンプルのメッシュのセルに値を割り当てたい場合，メッシュの :attr:`cell_data "
 "<pyvista.DataSet.cell_data>` 属性にアクセスすることで実現できます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:449
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:165
+#: ../../pyvista/doc/source/user-guide/data_model.rst:448
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:169
 msgid "Cell Data"
 msgstr "セルデータ"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:450
+#: ../../pyvista/doc/source/user-guide/data_model.rst:449
 msgid ""
 "The easiest way to add scalar data to a :class:`DataSet <pyvista.DataSet>` "
 "is to use the ``[]`` operator. Continuing with our example above, let's "
@@ -590,7 +590,7 @@ msgstr ""
 "を使用することもできます． ここでは，レンジを作成して :attr:`cell_data <pyvista.DataSet.cell_data>` "
 "に追加し， ``[]`` 演算子を使ってアクセスしています．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:466
+#: ../../pyvista/doc/source/user-guide/data_model.rst:465
 msgid ""
 "Note how we are returned a :class:`pyvista.pyvista_ndarray`. Since VTK "
 "requires C arrays, PyVista will internally wrap or convert all inputs to C "
@@ -600,14 +600,14 @@ msgstr ""
 "VTKはC言語の配列を必要とするので，PyVistaは内部的にすべての入力をC言語の配列にラップまたは変換します． "
 "そして，これを次のようにしてプロットします．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:481
+#: ../../pyvista/doc/source/user-guide/data_model.rst:480
 msgid ""
 "Note how we did not have to specify which cell data to plot as the ``[]`` "
 "operator automatically sets the active scalars:"
 msgstr ""
 "``[]`` 演算子が自動的にアクティブなスカラーを設定するので，どのセルデータをプロットするかを指定する必要がないことに注目してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:488
+#: ../../pyvista/doc/source/user-guide/data_model.rst:487
 msgid ""
 "We can also add labels to our plot to show which cells are assigned which "
 "scalars. Note how this is in the same order as the scalars we assigned."
@@ -615,7 +615,7 @@ msgstr ""
 "また，どのセルにどのスカラーが割り当てられているかを示すために，プロットにラベルを追加することもできます． "
 "割り当てられたスカラーと同じ順番になっていることに注目してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:503
+#: ../../pyvista/doc/source/user-guide/data_model.rst:502
 msgid ""
 "We can continue to assign cell data to our :class:`DataSet "
 "<pyvista.DataSet>` using the ``[]`` operator, but if you do not wish the new"
@@ -626,7 +626,7 @@ msgstr ""
 "にセルデータを割り当て続けることができますが，新しいアレイをアクティブなアレイにしたくない場合は， :func:`set_array() "
 "<pyvista.DataSetAttributes.set_array>` を使って追加することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:514
+#: ../../pyvista/doc/source/user-guide/data_model.rst:513
 msgid ""
 "Now, ``ugrid`` contains two arrays, one of which is the \"active\" scalars. "
 "This set of active scalars will be the one plotted automatically when "
@@ -640,7 +640,7 @@ msgstr ""
 "``scalars`` が設定されていない場合に，自動的にプロットされるものです． "
 "これにより，データセットに関連付けられた多くのセルアレイを持ち，どのセルアレイがデフォルトでアクティブなセルスカラーとしてプロットされるかを追跡することが可能になります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:521
+#: ../../pyvista/doc/source/user-guide/data_model.rst:520
 msgid ""
 "The active scalars can also be accessed via :attr:`active_scalars "
 "<pyvista.DataSet.active_scalars>`, and the name of the active scalars array "
@@ -651,12 +651,12 @@ msgstr ""
 "でアクセスでき，アクティブなスカラー配列の名前は :attr:`active_scalars_name "
 "<pyvista.DataSet.active_scalars_name>` でアクセスまたは設定することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:534
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:151
+#: ../../pyvista/doc/source/user-guide/data_model.rst:533
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:155
 msgid "Point Data"
 msgstr "ポイントデータ"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:535
+#: ../../pyvista/doc/source/user-guide/data_model.rst:534
 msgid ""
 "Data can be associated to points in the same manner as in "
 ":ref:`pyvista_data_model_cell_data`. The :attr:`point_data "
@@ -669,13 +669,13 @@ msgstr ""
 "<pyvista.DataSet>` のポイントにポイントデータを関連付けることができます． ここでは， ``[]`` "
 "演算子を使って，単純なリストをポイントに関連付けることにします．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:548
+#: ../../pyvista/doc/source/user-guide/data_model.rst:547
 msgid ""
 "Again, these values become the active scalars in our point arrays by default"
 " by using the ``[]`` operator:"
 msgstr "繰り返しになりますが，これらの値は， ``[]`` 演算子を用いることで，デフォルトで点群のアクティブなスカラーとなります．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:555
+#: ../../pyvista/doc/source/user-guide/data_model.rst:554
 msgid ""
 "Let's plot the point data. Note how this varies from the cell data plot; "
 "each individual point is assigned a scalar value which is interpolated "
@@ -685,7 +685,7 @@ msgstr ""
 "ポイントデータをプロットしてみましょう． 各ポイントにはスカラー値が割り当てられており，それがセル全体を補間して，最も低い値の ``Point 0`` "
 "から最も高い値の ``Point 8`` までの間の滑らかなカラーマップを作成しています．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:582
+#: ../../pyvista/doc/source/user-guide/data_model.rst:581
 msgid ""
 "As in :ref:`pyvista_data_model_cell_data`, we can assign multiple arrays to "
 ":attr:`point_data <pyvista.DataSet.point_data>` using :func:`set_array() "
@@ -695,7 +695,7 @@ msgstr ""
 "<pyvista.DataSetAttributes.set_array>` を使って， :attr:`point_data "
 "<pyvista.DataSet.point_data>` に複数の配列を割り当てることができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:592
+#: ../../pyvista/doc/source/user-guide/data_model.rst:591
 msgid ""
 "Again, here there are now two arrays associated to the point data, and only "
 "one is the \"active\" scalars array. Like as in the cell data, we can "
@@ -707,17 +707,17 @@ msgstr ""
 "また，アクティブなスカラー配列の名前は， :attr:`active_scalars_name "
 "<pyvista.DataSet.active_scalars_name>` でアクセスまたは設定することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:607
+#: ../../pyvista/doc/source/user-guide/data_model.rst:606
 msgid "Dataset Active Scalars"
 msgstr "データセットアクティブスカラー"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:608
+#: ../../pyvista/doc/source/user-guide/data_model.rst:607
 msgid ""
 "Continuing from the previous sections, our ``ugrid`` dataset now contains "
 "both point and cell data:"
 msgstr "前節に引き続き，今回の ``ugrid`` データセットには，ポイントデータとセルデータの両方が含まれています．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:619
+#: ../../pyvista/doc/source/user-guide/data_model.rst:618
 msgid ""
 "There are active scalars in both point and cell data, but only one type of "
 "scalars can be \"active\" at the dataset level. The reason for this is that "
@@ -729,7 +729,7 @@ msgstr ""
 "このデータは :attr:`active_scalars_info <pyvista.DataSet.active_scalars_info>` "
 "から得ることができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:629
+#: ../../pyvista/doc/source/user-guide/data_model.rst:628
 msgid ""
 "Note that the active scalars are by default the point scalars. You can "
 "change this by setting the active scalars with :func:`set_active_scalars() "
@@ -742,7 +742,7 @@ msgstr ""
 "アクティブなスカラーを設定したいときに，ポイントデータとセルデータの両方に同じ名前の配列がある場合は， ``preference`` "
 "を指定しなければならないことに注意してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:641
+#: ../../pyvista/doc/source/user-guide/data_model.rst:640
 msgid ""
 "This can also be set when plotting using the ``preference`` parameter in "
 ":func:`add_mesh() <pyvista.Plotter.add_mesh>` or :func:`pyvista.plot`."
@@ -750,12 +750,12 @@ msgstr ""
 "これは， :func:`add_mesh() <pyvista.Plotter.add_mesh>` や :func:`pyvista.plot` の "
 "``preference`` パラメータを使用して，プロットする際に設定することもできます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:647
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:198
+#: ../../pyvista/doc/source/user-guide/data_model.rst:646
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:202
 msgid "Field Data"
 msgstr "フィールドデータ"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:648
+#: ../../pyvista/doc/source/user-guide/data_model.rst:647
 msgid ""
 "Field arrays are different from :attr:`point_data "
 "<pyvista.DataSet.point_data>` and :attr:`cell_data "
@@ -770,18 +770,18 @@ msgstr ""
 "のジオメトリとは関連付けられていません．つまり，フィールドデータをアクティブなスカラーやベクターとして指定することはできませんが，これを使って任意の形状の配列を"
 " \"添付\" することができます． フィールドデータに文字列配列を追加することもできます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:661
+#: ../../pyvista/doc/source/user-guide/data_model.rst:660
 msgid ""
 "Note that the field data is automatically transferred to VTK C-style arrays "
 "and then represented as a numpy data format."
 msgstr "なお，フィールドデータは自動的にVTK Cスタイルの配列に転送され，numpyのデータ形式で表現されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:664
+#: ../../pyvista/doc/source/user-guide/data_model.rst:663
 msgid ""
 "When listing the current field data, note that the association is \"NONE\":"
 msgstr "現在のフィールドデータをリストアップする際には，associationが \"NONE \"であることに注意してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:670
+#: ../../pyvista/doc/source/user-guide/data_model.rst:669
 msgid ""
 "This is because the data is not associated with points or cells, and cannot "
 "be made so because field data is not expected to match the number of cells "
@@ -790,11 +790,11 @@ msgstr ""
 "これは，データがポイントやセルに関連付けられていないためであり，フィールドデータがセルやポイントの数と一致することは期待できないため，そうすることはできません．"
 " そのため，プロットすることもできません．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:676
+#: ../../pyvista/doc/source/user-guide/data_model.rst:675
 msgid "Vectors, Texture Coords, and Normals Attributes"
 msgstr "ベクトル，テクスチャコード，および法線の属性"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:677
+#: ../../pyvista/doc/source/user-guide/data_model.rst:676
 msgid ""
 "Both cell and point data can also store the following \"special\" attributes"
 " in addition to :attr:`active_scalars <pyvista.DataSet.active_scalars>`:"
@@ -802,11 +802,11 @@ msgstr ""
 "セルとポイントの両方のデータは， :attr:`active_scalars <pyvista.DataSet.active_scalars>` "
 "に加えて，以下の \"特別な\" 属性を保存することができます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:679
+#: ../../pyvista/doc/source/user-guide/data_model.rst:678
 msgid ":attr:`active_normals <pyvista.DataSet.active_normals>`"
 msgstr ":attr:`active_normals <pyvista.DataSet.active_normals>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:680
+#: ../../pyvista/doc/source/user-guide/data_model.rst:679
 msgid ""
 ":attr:`active_texture_coordinates "
 "<pyvista.DataSet.active_texture_coordinates>`"
@@ -814,15 +814,15 @@ msgstr ""
 ":attr:`active_texture_coordinates "
 "<pyvista.DataSet.active_texture_coordinates>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:681
+#: ../../pyvista/doc/source/user-guide/data_model.rst:680
 msgid ":attr:`active_vectors <pyvista.DataSet.active_vectors>`"
 msgstr ":attr:`active_vectors <pyvista.DataSet.active_vectors>`"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:685
+#: ../../pyvista/doc/source/user-guide/data_model.rst:684
 msgid "Active Normals"
 msgstr "アクティブな法線"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:686
+#: ../../pyvista/doc/source/user-guide/data_model.rst:685
 msgid ""
 "The :attr:`active_normals <pyvista.DataSet.active_normals>` array is a "
 "special array that specifies the local normal direction of meshes. It is "
@@ -835,11 +835,11 @@ msgstr ""
 " もし， ``smooth_shading=True`` や ``pbr=True`` "
 "を用いてプロットする際に，この配列が設定されていない場合は，計算されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:696
+#: ../../pyvista/doc/source/user-guide/data_model.rst:695
 msgid "Active Texture Coordinates"
 msgstr "アクティブテクスチャの座標"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:697
+#: ../../pyvista/doc/source/user-guide/data_model.rst:696
 msgid ""
 "The :attr:`active_texture_coordinates "
 "<pyvista.DataSet.active_texture_coordinates>` array is used for rendering "
@@ -849,11 +849,11 @@ msgstr ""
 "<pyvista.DataSet.active_texture_coordinates>` の配列は，テクスチャのレンダリングに使用されます． "
 "この配列を使った例については， :ref:`texture_example` を参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:704
+#: ../../pyvista/doc/source/user-guide/data_model.rst:703
 msgid "Active Vectors"
 msgstr "アクティブベクター"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:705
+#: ../../pyvista/doc/source/user-guide/data_model.rst:704
 msgid ""
 "The :attr:`active_vectors <pyvista.DataSet.active_vectors>` is an array "
 "containing quantities that have magnitude and direction (specifically, three"
@@ -868,7 +868,7 @@ msgstr ""
 ":attr:`active_scalars <pyvista.DataSet.active_scalars>` "
 "とは異なります．スカラーはいくつかの成分を含んでいても，（RGBデータの場合のように）無指向性であることが期待されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:714
+#: ../../pyvista/doc/source/user-guide/data_model.rst:713
 msgid ""
 "Vectors are treated differently within VTK than scalars when performing "
 "transformations using the :func:`~pyvista.DataObjectFilters.transform` "
@@ -879,7 +879,7 @@ msgstr ""
 "フィルタを使用して変換を行う際に，ベクトルはスカラーとは異なる扱いになります． "
 "スカラー配列とは異なり，ベクトル配列は方向を持つ量を表すため，ジオメトリと一緒に変換されます．"
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:721
+#: ../../pyvista/doc/source/user-guide/data_model.rst:720
 msgid ""
 "VTK permits only one \"active\" vector. If you have multiple vector arrays "
 "that you wish to transform, set ``transform_all_input_vectors=True`` in "
@@ -1049,32 +1049,32 @@ msgstr ""
 "``jupyter_backend` パラメータを設定することで，プロットごとに設定することができます． また， "
 ":func:`pyvista.set_jupyter_backend` でグローバルに設定することもできます． 詳細はこちらをご覧ください．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:2
 msgid "Set the plotting backend for a jupyter notebook."
 msgstr "Jupyterノートブックのプロットバックエンドを設定します．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:0
 msgid "Parameters"
 msgstr "パラメータ"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:7
 msgid "**backend** : :class:`python:str`"
 msgstr "**backend** : :class:`python:str`"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:6
 msgid "python:str"
 msgstr "python:str"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:8
 msgid "Jupyter backend to use when plotting.  Must be one of the following:"
 msgstr "プロット時に使用するJupyterバックエンドです．次のいずれかである必要があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:10
 msgid ""
 "``'static'`` : Display a single static image within the Jupyterlab "
@@ -1085,7 +1085,7 @@ msgstr ""
 "``'static'`` : "
 "Jupyterlab環境内に単一の静的イメージを表示します．ヘッドレスサーバーで表示する場合も仮想フレームバッファをセットアップする必要がありますが，追加のモジュールをインストールする必要はありません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:15
 msgid ""
 "``'client'`` : Export/serialize the scene graph to be rendered with VTK.js "
@@ -1096,7 +1096,7 @@ msgstr ""
 "を通してエクスポート/シリアライズすることができます． ``trame`` と ``jupyter-server-proxy`` "
 "がインストールされている必要があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:19
 msgid ""
 "``'server'``: Render remotely and stream the resulting VTK images back to "
@@ -1114,7 +1114,7 @@ msgstr ""
 " ``trame`` と ``jupyter-server-proxy`` がインストールされている必要があります．このモードは ``'trame'``"
 " というエイリアスでもあります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:28
 msgid ""
 "``'trame'``: The full Trame-based backend that combines both ``'server'`` "
@@ -1123,7 +1123,7 @@ msgstr ""
 "``'trame'``: ``'server'`` と ``'client'`` "
 "の両方を一つのバックエンドに統合したTrameベースのフルバックエンドです．これには仮想フレームバッファが必要です．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:32
 msgid ""
 "``'html'`` : Export/serialize the scene graph to be rendered with the Trame "
@@ -1132,7 +1132,7 @@ msgstr ""
 "``'html'`` : "
 "Trameクライアントバックエンドでレンダリングされるシーングラフを，静的なHTMLファイルにエクスポート/シリアライズします．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:35
 msgid ""
 "``'none'`` : Do not display any plots within jupyterlab, instead display "
@@ -1142,52 +1142,52 @@ msgstr ""
 "``'none'`` : "
 "jupyterlab内にプロットを表示せず，専用のVTKレンダリングウィンドウを使用して表示します．これは，仮想フレームバッファがあっても，ヘッドレスサーバー上では何も生成しません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:40
 msgid "**name** : :class:`python:str`, :obj:`optional`"
 msgstr "**name** : :class:`python:str`, :obj:`optional`"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:39
 msgid "python:str, optional"
 msgstr "python:str, optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:41
 msgid "The unique name identifier for the server."
 msgstr "サーバー固有の名前識別子．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:43
 msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
 msgstr "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:42
 msgid "python:dict, optional"
 msgstr "python:dict, optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:44
 msgid "Any additional keyword arguments to pass to the server launch."
 msgstr "サーバー起動に渡す追加のキーワード引数．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:59
 msgid "Examples"
 msgstr "例"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:60
 msgid "Enable the trame Trame backend."
 msgstr "Trameバックエンドを有効にします．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:64
 msgid "Just show static images."
 msgstr "静止画像を表示するだけです．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:68
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
@@ -1509,9 +1509,8 @@ msgstr "GPUアクセラレーションを使用する価値があるかもしれ
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:206
 msgid ""
 "If you do not have GPU acceleration, alternatively, an offscreen version "
-"using OSMesa libraries and ``vtk-osmesa`` is available:"
+"using OSMesa libraries. As of VTK 9.5+, this is supported out of the box."
 msgstr ""
-"GPUアクセラレーションがない場合は、OSMesaライブラリと ``vtk-osmesa`` を使用したオフスクリーンバージョンもあります:"
 
 #: ../../pyvista/doc/source/user-guide/optional_features.rst:2
 msgid "Optional Features"
@@ -1704,11 +1703,31 @@ msgstr ""
 ":class:`pyvistaqt.BackgroundPlotter`:  "
 "インタラクティブで，コードの実行を一時停止しないレンダリングウィンドウを作成します(詳細は `pyvistaqt`_ ライブラリを参照してください)．"
 
+#: ../../pyvista/doc/source/user-guide/simple.rst:225
+msgid "Command Line"
+msgstr ""
+
 #: ../../pyvista/doc/source/user-guide/simple.rst:227
+msgid ""
+"Starting from version ``0.47``, meshes can be plotted from one (or more) "
+"files using a command line tool such that:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:236
+msgid "Providing multiple files renders them inside the same window."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:238
+msgid ""
+"Most options available in :func:`pyvista.plot` are exposed by the command "
+"line. Run the ``--help`` command to see all options:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/simple.rst:250
 msgid "Exporting"
 msgstr "出力"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:229
+#: ../../pyvista/doc/source/user-guide/simple.rst:252
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
@@ -1717,7 +1736,7 @@ msgstr ""
 "どんなPyVistaメッシュオブジェクトでも， :func:`save() <pyvista.DataObject.save>` "
 "を使ってVTKファイルフォーマットに保存することができます．例えば，上のコードブロックのメッシュは次のように保存できます．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:237
+#: ../../pyvista/doc/source/user-guide/simple.rst:260
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -1728,7 +1747,7 @@ msgstr ""
 " 形式も使用できます． ``.save()`` "
 "メソッドでサポートされている形式の詳細については，各メッシュタイプのメソッドに関するドキュメントを参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:242
+#: ../../pyvista/doc/source/user-guide/simple.rst:265
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -1743,7 +1762,7 @@ msgstr ""
 "(バージョン2および4)，OBJ，OFF，PERMAS，PLY，STL，TetGen .node/.ele，SVG (2Dのみ，出力のみ)，UGRID,"
 " WKT (TIN)，XDMFなど，多くの形式をサポートしています!"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:249
+#: ../../pyvista/doc/source/user-guide/simple.rst:272
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -1778,41 +1797,41 @@ msgid ""
 "parameters:"
 msgstr "以下は，デフォルトのプロットパラメータを使用したスタンフォードドラゴンのプロット例です．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:35
+#: ../../pyvista/doc/source/user-guide/themes.rst:34
 msgid "These parameters can then be modified globally with:"
 msgstr "これらのパラメータは，次の方法でグローバルに変更できます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:44
+#: ../../pyvista/doc/source/user-guide/themes.rst:43
 msgid "Now, the mesh will be plotted with the new global parameters:"
 msgstr "次に，新しいグローバルパラメータを使用してメッシュをプロットします．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:51
+#: ../../pyvista/doc/source/user-guide/themes.rst:50
 msgid "This is identical to plotting the mesh with the following parameters:"
 msgstr "これは，次のパラメータを使用してメッシュをプロットすることと同じです．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:62
+#: ../../pyvista/doc/source/user-guide/themes.rst:61
 msgid "Creating A Custom Theme"
 msgstr "カスタム・テーマの作成"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:63
+#: ../../pyvista/doc/source/user-guide/themes.rst:62
 msgid ""
 "You can customize a theme based on one of the built-in themes and then apply"
 " it globally with:"
 msgstr "組み込みテーマの1つに基づいてテーマをカスタマイズし，次の方法でグローバルに適用できます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:78
+#: ../../pyvista/doc/source/user-guide/themes.rst:77
 msgid "Alternatively, you can save the theme to disk to be used later with:"
 msgstr "または，テーマをディスクに保存して，後で使用することもできます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:84
+#: ../../pyvista/doc/source/user-guide/themes.rst:83
 msgid "And then subsequently loaded in a new session of pyvista with:"
 msgstr "その後，次のコマンドを使用して新しいpyvistaセッションにロードします．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:92
+#: ../../pyvista/doc/source/user-guide/themes.rst:91
 msgid "Theme API"
 msgstr "テーマAPI"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:93
+#: ../../pyvista/doc/source/user-guide/themes.rst:92
 msgid "See :ref:`theme_api` for the full API definition."
 msgstr "完全なAPIの定義については， :ref:`theme_api` を参照してください．"
 
@@ -2158,11 +2177,11 @@ msgstr "ただし，ほとんどのメッシュは，次のグリッド化され
 msgid "Or this triangulated surface:"
 msgstr "または，この3角形表面:"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:106
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:108
 msgid "What is a Cell?"
 msgstr "セルとは?"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:107
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:109
 msgid ""
 "A cell is the geometry between points that defines the connectivity or "
 "topology of a mesh. In the examples above, cells are defined by the lines "
@@ -2172,7 +2191,7 @@ msgid ""
 msgstr ""
 "セルは，メッシュの接続またはトポロジを定義するポイント間のジオメトリです．上記の例では，セルはポイント(赤色をしている)を結ぶ線(黒色をしているエッジ)によって定義されます．たとえば，ビームの例のセルは，メッシュ内の8つのポイント間の領域によって定義されるボクセルです．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:132
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:136
 msgid ""
 "Cells aren't limited to voxels, they could be a triangle between three "
 "points, a line between two points, or even a single point could be its own "
@@ -2180,11 +2199,11 @@ msgid ""
 msgstr ""
 "セルはボクセルに限定されず，3つのポイント間の3角形，2つのポイント間のライン，または1つのポイント自体のセル(これは特別なケースです)にすることができます．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:138
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:142
 msgid "What are Attributes?"
 msgstr "アトリビュートとは?"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:139
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:143
 msgid ""
 "Attributes are data values that live on either the points or cells of a "
 "mesh. In PyVista, we work with both point data and cell data and allow easy "
@@ -2195,19 +2214,19 @@ msgid ""
 msgstr ""
 "アトリビュートは，メッシュのポイントまたはセルに存在するデータ値です．PyVistaでは，ポイントデータとセルデータの両方を処理し，データ辞書に簡単にアクセスして，メッシュのすべてのポイントまたはすべてのセルに存在するアトリビュートの配列を保持できます．これらの属性は，以下のようにアクセスできるPyVistaメッシュに付けられた辞書のような属性にアクセスできます．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:146
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:150
 msgid ":attr:`point_data <pyvista.DataSet.point_data>`"
 msgstr ":attr:`point_data <pyvista.DataSet.point_data>`"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:147
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:151
 msgid ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 msgstr ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:148
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:152
 msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
 msgstr ":attr:`field_data <pyvista.DataObject.field_data>`"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:152
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:156
 msgid ""
 "Point data refers to arrays of values (scalars, vectors, etc.) that live on "
 "each point of the mesh. Each element in an attribute array corresponds to a "
@@ -2216,7 +2235,7 @@ msgid ""
 msgstr ""
 "ポイントデータは，メッシュの各ポイント上に存在する値の配列(スカラー，ベクトルなど．)を参照します．アトリビュート配列の各要素は，メッシュ内のポイントに対応している必要があります．ビームメッシュの点データを作成します．ポイント間の値をプロットすると，セル間で補間されます．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:166
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:170
 msgid ""
 "Cell data refers to arrays of values (scalars, vectors, etc.) that live "
 "throughout each cell of the mesh. That is the entire cell (2D face or 3D "
@@ -2225,7 +2244,7 @@ msgstr ""
 "セルデータは，メッシュの各セル全体に存在する値の配列(スカラー，ベクトルなど)を参照します．つまり，セル全体(2 D面または3 "
 "D体積)にそのアトリビュートの値が割り当てられます．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:176
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:180
 msgid ""
 "Here's a comparison of point data versus cell data and how point data is "
 "interpolated across cells when mapping colors. This is unlike cell data "
@@ -2233,7 +2252,7 @@ msgid ""
 msgstr ""
 "ここでは，点データとセルデータを比較し，色をマッピングするときに点データがセル間でどのように補間されるかを示します．これは，セルのドメイン全体で単一の値を持つセルデータとは異なります．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:199
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:203
 msgid ""
 "Field data is not directly associated with either the points or cells but "
 "still should be attached to the mesh. This may be a string array storing "
@@ -2242,11 +2261,11 @@ msgstr ""
 "フィールドデータはポイントやセルとは直接関連していませんが，メッシュに添付する必要があります． これはメモを格納した文字列の配列であったり，あるいは "
 ":ref:`collision_example` のインデックスであったりします．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:207
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:211
 msgid "Assigning Scalars to a Mesh"
 msgstr "スカラーをメッシュに割り当てる"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:209
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:213
 msgid ""
 "Here's how we assign values to cell attributes and plot it. Here, we "
 "generate cube containing 6 faces and assign each face an integer from "
@@ -2255,6 +2274,6 @@ msgstr ""
 "ここでは，セルの属性に値を割り当て，それをプロットする方法を紹介します． ここでは，6つの面を含む立方体を生成し，それぞれの面に "
 "``range(6)`` から整数を割り当てて，それをプロットしています．"
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:213
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:217
 msgid "Note how this varies from assigning scalars to each point"
 msgstr "これは，各点にスカラーを割り当てるのとは異なることに注意してください．"
