@@ -49,30 +49,37 @@ def main():
     # Get the directory where this script is located
     script_dir = Path(__file__).parent
     
-    # The carousel files should be in pyvista/doc/source/api/examples/dataset-gallery/
-    carousel_dir = script_dir / 'pyvista' / 'doc' / 'source' / 'api' / 'examples' / 'dataset-gallery'
+    # When building from the root (translation builds), carousel files need to be at two locations:
+    # 1. pyvista/doc/source/api/examples/dataset-gallery/ (for building pyvista docs directly)
+    # 2. api/examples/dataset-gallery/ (for building from root with /api/... includes)
     
-    # Create the directory if it doesn't exist
-    carousel_dir.mkdir(parents=True, exist_ok=True)
+    carousel_dirs = [
+        script_dir / 'pyvista' / 'doc' / 'source' / 'api' / 'examples' / 'dataset-gallery',
+        script_dir / 'api' / 'examples' / 'dataset-gallery',
+    ]
     
-    created_count = 0
-    skipped_count = 0
-    
-    for filename in CAROUSEL_FILES:
-        filepath = carousel_dir / filename
+    for carousel_dir in carousel_dirs:
+        # Create the directory if it doesn't exist
+        carousel_dir.mkdir(parents=True, exist_ok=True)
         
-        if not filepath.exists():
-            filepath.write_text(STUB_CONTENT)
-            print(f"Created stub: {filename}")
-            created_count += 1
-        else:
-            skipped_count += 1
-    
-    print(f"\nSummary: Created {created_count} stub files, skipped {skipped_count} existing files.")
-    
-    # Create a marker file to indicate these are stubs
-    marker_file = carousel_dir / '.stub_files_generated'
-    marker_file.write_text("These carousel files are stubs generated for translation builds.\n")
+        created_count = 0
+        skipped_count = 0
+        
+        for filename in CAROUSEL_FILES:
+            filepath = carousel_dir / filename
+            
+            if not filepath.exists():
+                filepath.write_text(STUB_CONTENT)
+                print(f"Created stub: {carousel_dir.relative_to(script_dir)}/{filename}")
+                created_count += 1
+            else:
+                skipped_count += 1
+        
+        print(f"  Summary for {carousel_dir.relative_to(script_dir)}: Created {created_count}, skipped {skipped_count}\n")
+        
+        # Create a marker file to indicate these are stubs
+        marker_file = carousel_dir / '.stub_files_generated'
+        marker_file.write_text("These carousel files are stubs generated for translation builds.\n")
 
 if __name__ == '__main__':
     main()
