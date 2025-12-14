@@ -48,35 +48,35 @@ def main():
     """Create stub carousel files if they don't exist."""
     # Get the directory where this script is located
     script_dir = Path(__file__).parent
-    
+
     # When building from the root (translation builds), carousel files need to be at two locations:
     # 1. pyvista/doc/source/api/examples/dataset-gallery/ (for building pyvista docs directly)
     # 2. api/examples/dataset-gallery/ (for building from root with /api/... includes)
-    
+
     carousel_dirs = [
         script_dir / 'pyvista' / 'doc' / 'source' / 'api' / 'examples' / 'dataset-gallery',
         script_dir / 'api' / 'examples' / 'dataset-gallery',
     ]
-    
+
     for carousel_dir in carousel_dirs:
         # Create the directory if it doesn't exist
         carousel_dir.mkdir(parents=True, exist_ok=True)
-        
+
         created_count = 0
         skipped_count = 0
-        
+
         for filename in CAROUSEL_FILES:
             filepath = carousel_dir / filename
-            
+
             if not filepath.exists():
                 filepath.write_text(STUB_CONTENT)
                 print(f"Created stub: {carousel_dir.relative_to(script_dir)}/{filename}")
                 created_count += 1
             else:
                 skipped_count += 1
-        
+
         print(f"  Summary for {carousel_dir.relative_to(script_dir)}: Created {created_count}, skipped {skipped_count}\n")
-        
+
         # Create a marker file to indicate these are stubs
         marker_file = carousel_dir / '.stub_files_generated'
         marker_file.write_text("These carousel files are stubs generated for translation builds.\n")
