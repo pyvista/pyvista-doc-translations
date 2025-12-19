@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.46.dev0\n"
+"Project-Id-Version: PyVista 0.47.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-19 02:44+0000\n"
+"POT-Creation-Date: 2025-12-14 02:35+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -315,9 +315,9 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:69
 msgid ""
-"Alternatively, an offscreen version using OSMesa libraries and ``vtk-"
-"osmesa`` is available."
-msgstr "また，OSMesaライブラリと ``vtk-osmesa`` を使用したオフスクリーンバージョンも利用できます．"
+"Alternatively, an offscreen version using OSMesa libraries with VTK 9.5+ is "
+"available."
+msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:72
 msgid "Questions"
@@ -737,20 +737,36 @@ msgstr "この docstring には，リターンセクションとサンプルセ�
 
 #: ../../pyvista/CONTRIBUTING.rst:328
 msgid ""
-"The returns section does not include the parameter name if the function has "
-"a single return value. Multiple return values (not shown) should have "
-"descriptive parameter names for each returned value, in the same format as "
-"the input parameters."
+"The returns section structure depends on the number of return values and "
+"types:"
 msgstr ""
-"関数の戻り値が1つの場合，リターンセクションにはパラメータ名を含めません．複数の戻り値(図示せず)には，入力パラメータと同じ形式で，各戻り値に対して説明的なパラメータ名を付ける必要があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:332
+#: ../../pyvista/CONTRIBUTING.rst:329
+msgid ""
+"for a single return value with a single return type, the parameter name can "
+"be omitted (as shown above),"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:331
+msgid ""
+"for a single return value with multiple types (ie. ``str | int``), the "
+"parameter must be specified (not shown),"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:333
+msgid ""
+"for multiple return values (not shown), descriptive parameter names for each"
+" returned value must be specified in the same format as the input "
+"parameters."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:335
 msgid ""
 "The examples section references the \"full example\" in the gallery if it "
 "exists."
 msgstr "サンプルセクションは，ギャラリーの \"完全なサンプル\" が存在する場合，それを参照します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:335
+#: ../../pyvista/CONTRIBUTING.rst:338
 msgid ""
 "In addition, docstring examples which make use of randomly-generated data "
 "should be reproducible. See `Generating Random Data`_ for details."
@@ -758,14 +774,14 @@ msgstr ""
 "さらに、ランダムに生成されたデータを使用するdocstringの例は、再現可能でなければなりません。 詳しくは `ランダムデータの生成`_ "
 "を参照のこと。"
 
-#: ../../pyvista/CONTRIBUTING.rst:338
+#: ../../pyvista/CONTRIBUTING.rst:341
 msgid ""
 "These standards will be enforced using ``pre-commit`` using ``numpydoc-"
 "validate``, with errors being reported as:"
 msgstr ""
 "これらの標準は ``numpydoc-validate`` を使って ``pre-commit`` で実施され，エラーは次のように報告されます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:354
+#: ../../pyvista/CONTRIBUTING.rst:357
 msgid ""
 "If for whatever reason you feel that your function should have an exception "
 "to any of the rules, add an exception to the function either in the "
@@ -779,7 +795,7 @@ msgstr ""
 "セクションに例外を追加するか，インラインコメントを追加して特定のチェックを除外してください．例えば、docstringから ``Return`` "
 "セクションを省略したり，　``__init__`` のようなマジックメソッドのRT01チェックをスキップすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:367
+#: ../../pyvista/CONTRIBUTING.rst:370
 msgid ""
 "See the available validation checks in `numpydoc Validation "
 "<https://numpydoc.readthedocs.io/en/latest/validation.html>`_."
@@ -788,11 +804,11 @@ msgstr ""
 "<https://numpydoc.readthedocs.io/en/latest/validation.html>`_ "
 "で利用可能なバリデーションチェックを参照してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:372
+#: ../../pyvista/CONTRIBUTING.rst:375
 msgid "Deprecating Features or other Backwards-Breaking Changes"
 msgstr "非推奨の機能またはその他の後方互換性のない変更"
 
-#: ../../pyvista/CONTRIBUTING.rst:373
+#: ../../pyvista/CONTRIBUTING.rst:376
 msgid ""
 "When implementing backwards-breaking changes within PyVista, care must be "
 "taken to give users the chance to adjust to any new changes. Any non-"
@@ -801,13 +817,13 @@ msgid ""
 msgstr ""
 "PyVistaで後方互換性のない変更を実装するときは，ユーザーに新しい変更に適応する機会を与えるよう注意する必要があります．後方互換性のない変更は，次の手順で進める必要があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:377
+#: ../../pyvista/CONTRIBUTING.rst:380
 msgid ""
 "Retain the old behavior and issue a ``PyVistaDeprecationWarning`` indicating"
 " the new interface you should use."
 msgstr "古い動作を保持し，使用すべき新しいインターフェイスを示す ``PyVistaDeprecationWarning`` を発行します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:379
+#: ../../pyvista/CONTRIBUTING.rst:382
 msgid ""
 "Retain the old behavior but raise a ``pyvista.core.errors.DeprecationError``"
 " indicating the new interface you must use."
@@ -815,11 +831,11 @@ msgstr ""
 "古い動作を保持しますが，使用しなければならない新しいインターフェイスを示す "
 "``pyvista.core.errors.DeprecationError`` を発行します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:381
+#: ../../pyvista/CONTRIBUTING.rst:384
 msgid "Remove the old behavior."
 msgstr "古い動作を削除します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:383
+#: ../../pyvista/CONTRIBUTING.rst:386
 msgid ""
 "Whenever possible, PyVista developers should seek to have at least three "
 "minor versions of backwards compatibility to give users the ability to "
@@ -827,16 +843,14 @@ msgid ""
 msgstr ""
 "可能な限り，PyVistaの開発者は，ユーザーがソフトウェアやスクリプトを更新できるように，少なくとも3つのマイナーバージョンの後方互換性を確保するように努めるべきです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:387
+#: ../../pyvista/CONTRIBUTING.rst:390
 msgid ""
 "Here's an example of a soft deprecation of a function. Note the usage of "
-"both the ``PyVistaDeprecationWarning`` warning and the ``.. deprecated`` "
-"Sphinx directive."
+"both the ``PyVistaDeprecationWarning`` warning, the ``.. deprecated`` Sphinx"
+" directive and the ``warn_external`` helper function."
 msgstr ""
-"これはある関数のソフト非推奨の例です． ``PyVistaDeprecationWarning`` の警告と ``.. deprecated`` "
-"のSphinxディレクティブの両方を使用していることに注意してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:430
+#: ../../pyvista/CONTRIBUTING.rst:433
 msgid ""
 "In the above code example, note how a comment is made to convert to an error"
 " in three minor releases and completely remove in the following minor "
@@ -845,13 +859,13 @@ msgid ""
 msgstr ""
 "上記のコード例では，3つのマイナーリリースでエラーに変換し，次のマイナーリリースで完全に削除するためにコメントが作られていることに注目してください．重要な変更の場合はこれを長くし，些細な変更の場合は短くすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:435
+#: ../../pyvista/CONTRIBUTING.rst:438
 msgid ""
 "Here's an example of adding error test codes that raise deprecation warning "
 "messages."
 msgstr "以下は，非推奨の警告メッセージを出すエラーテストコードを追加する例です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:446
+#: ../../pyvista/CONTRIBUTING.rst:449
 msgid ""
 "In the above code example, the old test code raises an error in v0.40 and "
 "v0.41. This will prevent us from forgetting to remove deprecations on "
@@ -859,7 +873,7 @@ msgid ""
 msgstr ""
 "上記のコード例では，古いテストコードはv0.40とv0.41でエラーを発生させます．これによって，バージョンアップ時に非推奨を削除し忘れることを防ぐことができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:451
+#: ../../pyvista/CONTRIBUTING.rst:454
 msgid ""
 "When releasing a new version, we need to update the version number to the "
 "next development version. For example, if we are releasing version 0.37.0, "
@@ -871,7 +885,7 @@ msgstr ""
 "例えば、バージョン0.37.0をリリースする場合、次の開発バージョンは0.37.0より大きい0.38.0.dev0でなければなりません。 "
 "このため、テストコードではバージョンが0.40.0や0.41.0より大きいかどうかをチェックする必要があります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:457
+#: ../../pyvista/CONTRIBUTING.rst:460
 msgid ""
 "When adding an additional parameter to an existing method or function, you "
 "are encouraged to use the ``.. versionadded`` sphinx directive. For example:"
@@ -879,11 +893,11 @@ msgstr ""
 "既存のメソッドや関数に追加のパラメータを追加する場合には， ``.. versionadded`` "
 "というsphinxディレクティブを使用することが推奨されます．例えば:"
 
-#: ../../pyvista/CONTRIBUTING.rst:475
+#: ../../pyvista/CONTRIBUTING.rst:478
 msgid "Branch Naming Conventions"
 msgstr "ブランチの命名規則"
 
-#: ../../pyvista/CONTRIBUTING.rst:477
+#: ../../pyvista/CONTRIBUTING.rst:480
 msgid ""
 "To streamline development, we have the following requirements for naming "
 "branches. These requirements help the core developers know what kind of "
@@ -891,54 +905,54 @@ msgid ""
 msgstr ""
 "開発を効率化するために，ブランチの命名には次の要件があります．これらの要件は，コア開発者がコードを調べる前に，あるブランチがどのような種類の変更を導入しているかを知るのに役立ちます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:481
+#: ../../pyvista/CONTRIBUTING.rst:484
 msgid ""
 "``fix/``, ``patch/`` and ``bug/``: any bug fixes, patches, or experimental "
 "changes that are minor"
 msgstr "``fix/`` ， ``patch/`` ， ``bug/`` : マイナーなバグ修正，パッチ，または実験的な変更"
 
-#: ../../pyvista/CONTRIBUTING.rst:483
+#: ../../pyvista/CONTRIBUTING.rst:486
 msgid ""
 "``feat/``: any changes that introduce a new feature or significant addition"
 msgstr "``feat/``: 新しい特徴または重要な追加を導入する変更"
 
-#: ../../pyvista/CONTRIBUTING.rst:485
+#: ../../pyvista/CONTRIBUTING.rst:488
 msgid ""
 "``junk/``: for any experimental changes that can be deleted if gone stale"
 msgstr "``junk/``: 古くなったら削除できる実験的な変更について"
 
-#: ../../pyvista/CONTRIBUTING.rst:487
+#: ../../pyvista/CONTRIBUTING.rst:490
 msgid ""
 "``maint/`` and ``ci/``: for general maintenance of the repository or CI "
 "routines"
 msgstr "``maint/`` と ``ci/``: リポジトリまたはCIルーチンの一般的な保守用"
 
-#: ../../pyvista/CONTRIBUTING.rst:488
+#: ../../pyvista/CONTRIBUTING.rst:491
 msgid "``doc/``: for any changes only pertaining to documentation"
 msgstr "``doc/``: 文書のみに関連する変更の場合"
 
-#: ../../pyvista/CONTRIBUTING.rst:489
+#: ../../pyvista/CONTRIBUTING.rst:492
 msgid ""
 "``no-ci/``: for low impact activity that should NOT trigger the CI routines"
 msgstr "``no-ci/``: CIルーチンをトリガーしてはならない影響の少ないアクティビティの場合"
 
-#: ../../pyvista/CONTRIBUTING.rst:491
+#: ../../pyvista/CONTRIBUTING.rst:494
 msgid "``testing/``: improvements or changes to testing"
 msgstr "``testing/``: テストの改善または変更"
 
-#: ../../pyvista/CONTRIBUTING.rst:492
+#: ../../pyvista/CONTRIBUTING.rst:495
 msgid "``release/``: releases (see below)"
 msgstr "``release/``: リリース(下記参照)"
 
-#: ../../pyvista/CONTRIBUTING.rst:493
+#: ../../pyvista/CONTRIBUTING.rst:496
 msgid "``breaking-change/``: Changes that break backward compatibility"
 msgstr "``breaking-change/``: 後方互換性を破壊する変更"
 
-#: ../../pyvista/CONTRIBUTING.rst:496
+#: ../../pyvista/CONTRIBUTING.rst:499
 msgid "Testing"
 msgstr "テスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:498
+#: ../../pyvista/CONTRIBUTING.rst:501
 msgid ""
 "After making changes, please test changes locally before creating a pull "
 "request. The following tests will be executed after any commit or pull "
@@ -947,26 +961,83 @@ msgid ""
 msgstr ""
 "変更を行った後，プルリクエストを作成する前にローカルで変更をテストしてください．コミットまたはプルリクエストの後に次のテストが実行されます．変更から新しい問題を追跡するには，ローカルで次の手順を実行してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:503
+#: ../../pyvista/CONTRIBUTING.rst:506
 msgid ""
-"To run our comprehensive suite of unit tests, install PyVista with all test "
-"dependencies:"
-msgstr "PyVistaの包括的なユニットテスト群を実行するには、PyVistaをすべてのテスト依存パッケージとともにインストールします:"
+"To run our comprehensive suite of unit tests, please refer to the `Unit "
+"Testing`_ section."
+msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:510
-msgid ""
-"Then, if you have everything installed, you can run the various test suites."
-msgstr "すべてをインストールしたら，さまざまなテストスイートを実行できます．"
-
-#: ../../pyvista/CONTRIBUTING.rst:514
 msgid "Unit Testing"
 msgstr "ユニットテスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:515
-msgid "Run the primary test suite and generate coverage report:"
-msgstr "プライマリテストスイートを実行し，カバレッジレポートを生成します．"
+#: ../../pyvista/CONTRIBUTING.rst:511
+msgid ""
+"Unit testing can be run either directly using `pytest "
+"<https://docs.pytest.org/en/stable/>`_ or `tox "
+"<https://tox.wiki/en/stable/>`_ to ensure environment isolation and "
+"reproducibility with CI."
+msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:521
+#: ../../pyvista/CONTRIBUTING.rst:0
+msgid "pytest"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:0
+msgid "tox"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:534
+msgid "tox usage"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:537
+msgid ""
+"When using ``tox``, specific test environments can be used to test against "
+"various dependencies versions (mostly ``numpy`` and ``vtk``). The full list "
+"is available by running:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:544
+msgid ""
+"For example, to run tests on ``python 3.11`` against the wheels produced by "
+"the ``vtk`` CI on the main branch, simply run:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:551
+msgid ""
+"Note that several dependencies versions are already predefined in the "
+"``tox.ini`` configuration and can be specified with ``tox`` factors such "
+"that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:559
+msgid ""
+"If you need to tests dependencies that are not predefined in the "
+"configuration, you can always override them such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:567
+msgid ""
+"By default, all tests (ie. plotting and core modules) are executed if "
+"nothing is specified. To only run core or plotting tests, add ``core`` or "
+"``plotting`` factors to the environment name such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:576
+msgid ""
+"To specify supplementary arguments to the ``pytest`` command line, use "
+"``--`` to separate ``tox`` arguments from ``pytest`` ones such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:584
+msgid ""
+"For a more detailed description of ``tox`` usage, please refer to the "
+"following `cheat sheet <https://tox.wiki/en/stable/user_guide.html#cheat-"
+"sheet>`_."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:586
 msgid ""
 "Unit testing can take some time, if you wish to speed it up, set the number "
 "of processors with the ``-n`` flag. This uses ``pytest-xdist`` to leverage "
@@ -975,7 +1046,19 @@ msgstr ""
 "ユニットテストには時間がかかることがあります．高速化したい場合は， ``n`` フラグでプロセッサの数を設定してください．これは ``pytest-"
 "xdist`` を使用して，複数のプロセスを利用するものです．使用例です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:529
+#: ../../pyvista/CONTRIBUTING.rst:607
+msgid ""
+"Code coverage (ie. the amount of tested code in the codebase) can be "
+"measured by modifying the previous commands such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:629
+msgid ""
+"The ``-cov`` factor can be added to any existing environment to enable test "
+"coverage, such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:636
 msgid ""
 "When submitting a PR, it is highly recommended that all modifications are "
 "thoroughly tested. This is further enforced in the CI by the `codecov GitHub"
@@ -994,7 +1077,7 @@ msgstr ""
 "ブランチカバレッジの詳細については、 `coverage documentation "
 "<https://coverage.readthedocs.io/en/latest/branch.html>`_ を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:536
+#: ../../pyvista/CONTRIBUTING.rst:643
 msgid ""
 "If needed, code coverage can be deactivated for specific lines by adding the"
 " ``# pragma: no cover`` or ``# pragma: no branch`` comments. See the "
@@ -1009,7 +1092,7 @@ msgstr ""
 "<https://coverage.readthedocs.io/en/latest/branch.html#excluding-code>`__ "
 "を参照してください。しかし、コードカバレッジの除外はめったに使うべきでなく、簡単な代替案が見つからない場合は、PRスレッドで注意深く正当化しなければなりません。"
 
-#: ../../pyvista/CONTRIBUTING.rst:542
+#: ../../pyvista/CONTRIBUTING.rst:649
 msgid ""
 "The CI is configured to test multiple vtk versions to ensure sufficient "
 "compatibility with vtk. If needed, the minimum and/or maximum vtk version "
@@ -1021,11 +1104,11 @@ msgstr ""
 " の最小および/または最大のバージョンをカスタム pytest marker ``needs_vtk_version`` で制御することができます "
 "(包括的および排他的符号に注意):"
 
-#: ../../pyvista/CONTRIBUTING.rst:579
+#: ../../pyvista/CONTRIBUTING.rst:686
 msgid "VTK Dev Wheel Testing"
 msgstr "VTK Dev Wheelのテスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:580
+#: ../../pyvista/CONTRIBUTING.rst:687
 msgid ""
 "Most unit testing is run with stable VTK releases. However, it is sometimes "
 "useful to run tests with the latest VTK dev wheels. To install these "
@@ -1034,7 +1117,7 @@ msgstr ""
 "ほとんどのユニットテストは、安定したVTKリリースで実行されます。 しかし、最新のVTK開発用ホイールでテストを実行することは、時として有益です。 "
 "これらをローカルにインストールするには"
 
-#: ../../pyvista/CONTRIBUTING.rst:587
+#: ../../pyvista/CONTRIBUTING.rst:694
 msgid ""
 "For CI on GitHub, the ``vtk-dev-testing`` label can be used to enable unit "
 "testing with the VTK dev wheels. The tests only run when the label is "
@@ -1043,7 +1126,7 @@ msgstr ""
 "GitHub 上の CI では、``vtk-dev-testing`` ラベルを使用することで、VTK dev wheel "
 "によるユニットテストを有効にすることができます。テストはラベルが貼られているときにのみ実行されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:592
+#: ../../pyvista/CONTRIBUTING.rst:699
 msgid ""
 "The PR either needs a new commit, e.g. updating the branch from ``main``, or"
 " to be closed/re-opened to rerun the CI with the label applied."
@@ -1051,26 +1134,26 @@ msgstr ""
 "PRは、 ``main`` "
 "からブランチを更新するなどの新しいコミットが必要か、ラベルを適用してCIを再実行するためにクローズ/再オープンする必要があります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:596
+#: ../../pyvista/CONTRIBUTING.rst:703
 msgid "Docstring Testing"
 msgstr "Docstringテスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:597
+#: ../../pyvista/CONTRIBUTING.rst:704
 msgid "Run all code examples in the docstrings with:"
 msgstr "docstring内のすべてのコード例を実行します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:605
+#: ../../pyvista/CONTRIBUTING.rst:725
 msgid ""
 "Additional testing is also performed on any images generated by the "
 "docstring. See `Documentation Image Regression Testing`_."
 msgstr ""
 "また、docstringによって生成された画像に対しても追加のテストが行われる。 詳しくは `ドキュメント画像の回帰テスト`_ を参照のこと。"
 
-#: ../../pyvista/CONTRIBUTING.rst:610
+#: ../../pyvista/CONTRIBUTING.rst:730
 msgid "Style Checking"
 msgstr "スタイルチェック"
 
-#: ../../pyvista/CONTRIBUTING.rst:611
+#: ../../pyvista/CONTRIBUTING.rst:731
 msgid ""
 "PyVista follows PEP8 standard as outlined in the `Coding Style section "
 "<#coding-style>`_ and implements style checking using `pre-commit`_."
@@ -1078,11 +1161,11 @@ msgstr ""
 "PyVistaは， `コーディングスタイルのセクション <#coding-style>`_ で説明されているようにPEP8標準に従っており， `pre-"
 "commit`_ を使ってスタイルチェックを実装しています．"
 
-#: ../../pyvista/CONTRIBUTING.rst:614
+#: ../../pyvista/CONTRIBUTING.rst:734
 msgid "To ensure your code meets minimum code styling standards, run::"
 msgstr "コードが最小限のコードスタイリング基準に適合していることを確認するために，以下を実行してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:619
+#: ../../pyvista/CONTRIBUTING.rst:739
 msgid ""
 "If you have issues related to ``setuptools`` when installing ``pre-commit``,"
 " see `pre-commit Issue #2178 comment <https://github.com/pre-commit/pre-"
@@ -1092,11 +1175,11 @@ msgstr ""
 "Issue #2178 comment <https://github.com/pre-commit/pre-"
 "commit/issues/2178#issuecomment-1002163763>`_ で解決できる可能性がありますので参照してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:623
+#: ../../pyvista/CONTRIBUTING.rst:743
 msgid "You can also install this as a pre-commit hook by running::"
 msgstr "また，pre-commit hookとして次のように実行することでインストールすることもできます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:627
+#: ../../pyvista/CONTRIBUTING.rst:747
 msgid ""
 "This way, it's not possible for you to push code that fails the style "
 "checks. For example, each commit automatically checks that you meet the "
@@ -1104,7 +1187,7 @@ msgid ""
 msgstr ""
 "こうすれば，スタイルチェックに失敗したコードをプッシュすることは不可能になります．例えば，各コミットでスタイル要件を満たしているかどうかが自動的にチェックされます::"
 
-#: ../../pyvista/CONTRIBUTING.rst:636
+#: ../../pyvista/CONTRIBUTING.rst:756
 msgid ""
 "The actual installation of the environment happens before the first commit "
 "following ``pre-commit install``. This will take a bit longer, but "
@@ -1113,7 +1196,7 @@ msgstr ""
 "実際の環境のインストールは， ``pre-commit install`` "
 "に続く最初のコミットの前に行われます．これは少し時間がかかりますが，それ以降のコミットでは実際のスタイルチェックが行われるだけです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:640
+#: ../../pyvista/CONTRIBUTING.rst:760
 msgid ""
 "Even if you are not in a situation where you are not performing or able to "
 "perform the above tasks, you can comment ``pre-commit.ci autofix`` on a pull"
@@ -1122,11 +1205,11 @@ msgstr ""
 "上記の作業を実施していない，または実施できる状況であっても，プルリクエストに ``pre-commit.ci autofix`` "
 "とコメントすることで，手動で自動修正をトリガーすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:645
+#: ../../pyvista/CONTRIBUTING.rst:765
 msgid "Notes Regarding Image Regression Testing"
 msgstr "イメージ回帰テストに関する注意事項"
 
-#: ../../pyvista/CONTRIBUTING.rst:647
+#: ../../pyvista/CONTRIBUTING.rst:767
 msgid ""
 "Since PyVista is primarily a plotting module, it’s imperative we actually "
 "check the images that we generate in some sort of regression testing. In "
@@ -1135,24 +1218,24 @@ msgstr ""
 "PyVista "
 "は基本的に描画モジュールなので，何らかの回帰テストで生成した画像を実際にチェックする必要があります．実際には，これはかなりの作業になります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:651
+#: ../../pyvista/CONTRIBUTING.rst:771
 msgid ""
 "OpenGL software vs. hardware rending causes slightly different images to be "
 "rendered."
 msgstr "OpenGLソフトウェアとハードウェアレンダリングでは，レンダリングされるイメージがわずかに異なります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:653
+#: ../../pyvista/CONTRIBUTING.rst:773
 msgid ""
 "We want our CI (which uses a virtual frame buffer) to match our desktop "
 "images (uses hardware acceleration)."
 msgstr ""
 "CI (仮想フレームバッファを使用します)をデスクトップイメージ(ハードウェアアクセラレーションを使用します)と一致させたいと考えています．"
 
-#: ../../pyvista/CONTRIBUTING.rst:655
+#: ../../pyvista/CONTRIBUTING.rst:775
 msgid "Different OSes render different images."
 msgstr "OSによってレンダリングされるイメージは異なります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:657
+#: ../../pyvista/CONTRIBUTING.rst:777
 msgid ""
 "As each platform and environment renders different slightly images relative "
 "to Linux (which these images were built from), so running these tests across"
@@ -1162,7 +1245,7 @@ msgid ""
 msgstr ""
 "各プラットフォームと環境では，Linuxと比較してわずかに異なるイメージをレンダリングするため(これらの画像は)，すべてのOSでこれらのテストを実行するのは最適ではありません．プロットを実際に見ることなく，プロットによって何か根本的な変化があったかどうかを知る必要があります(dev.pyvista.comのドキュメントのように)．"
 
-#: ../../pyvista/CONTRIBUTING.rst:663
+#: ../../pyvista/CONTRIBUTING.rst:783
 msgid ""
 "Based on these points, image regression testing only occurs on Linux CI, and"
 " multi-sampling is disabled as that seems to be one of the biggest "
@@ -1171,11 +1254,11 @@ msgstr ""
 "これらの点に基づいて，イメージ回帰テストはLinux "
 "CIでのみ行われ，マルチサンプリングは，ソフトウェアベースのレンダリングとハードウェアベースのレンダリングの最大の違いの1つと思われるため，無効になっています．"
 
-#: ../../pyvista/CONTRIBUTING.rst:667
+#: ../../pyvista/CONTRIBUTING.rst:787
 msgid "Image cache is stored here as ``./tests/plotting/image_cache``."
 msgstr "画像キャッシュは ``./tests/plotting/image_cache`` としてここに保存されます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:669
+#: ../../pyvista/CONTRIBUTING.rst:789
 msgid ""
 "Image resolution is kept low at 400x400 as we don’t want to pollute git with"
 " large images. Small variations between versions and environments are to be "
@@ -1186,7 +1269,7 @@ msgstr ""
 "error < ``IMAGE_REGRESSION_ERROR`` "
 "は許容されます(警告としてログに記録されます．)が，この値を超えるとエラーが発生します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:675
+#: ../../pyvista/CONTRIBUTING.rst:795
 msgid ""
 "There are two mechanisms within ``pytest`` to control image regression "
 "testing, ``--reset_image_cache`` and ``--ignore_image_cache``. For example:"
@@ -1194,7 +1277,7 @@ msgstr ""
 "``pytest`` には，画像リグレッションテストを制御する2つのメカニズム， ``--reset_image_cache`` と "
 "``--ignore_image_cache`` があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:683
+#: ../../pyvista/CONTRIBUTING.rst:816
 msgid ""
 "Running ``--reset_image_cache`` creates a new image for each test in "
 "``tests/plotting/test_plotting.py`` and is not recommended except for "
@@ -1207,7 +1290,7 @@ msgstr ""
 "の各テストに対して新しいイメージが作成されます．テストや，メジャーまたはマイナーリリースの可能性がある場合を除き，推奨されません．Linux上で実行していて，リグレッションテストを一時的に無視したい場合は，"
 " ``--ignore_image_cache`` を使用することができます．CIテストでは，回帰テストが引き続き行われることを理解してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:690
+#: ../../pyvista/CONTRIBUTING.rst:823
 msgid ""
 "Images are currently only cached from tests in "
 "``tests/plotting/test_plotting.py``. By default, any test that uses "
@@ -1218,7 +1301,7 @@ msgstr ""
 " ``Plotter.show`` を使用するテストは，自動的に画像をキャッシュします． 画像のキャッシュをスキップするには， "
 "``verify_image_cache`` フィクスチャを使用します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:706
+#: ../../pyvista/CONTRIBUTING.rst:839
 msgid ""
 "This ensures that immediately before the plotter is closed, the current "
 "render window will be verified against the image in CI. If no image exists, "
@@ -1226,7 +1309,7 @@ msgid ""
 msgstr ""
 "これにより，プロッタを閉じる直前に，現在のレンダリングウィンドウがCI内のイメージに対して検証されます．イメージが存在しない場合は，必ず次を使用して結果のイメージを追加してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:714
+#: ../../pyvista/CONTRIBUTING.rst:847
 msgid ""
 "During unit testing, if you get image regression failures and would like to "
 "compare the images generated locally to the regression test suite, allow "
@@ -1237,7 +1320,7 @@ msgstr ""
 "pyvista`_ が ``--generated_image_dir`` "
 "フラグを使って新しい生成画像をすべてローカルディレクトリに書き込めるようにします．"
 
-#: ../../pyvista/CONTRIBUTING.rst:721
+#: ../../pyvista/CONTRIBUTING.rst:854
 msgid ""
 "For example, the following writes all images generated by ``pytest`` to "
 "``debug_images/`` for any tests in ``tests/plotting`` whose function name "
@@ -1246,36 +1329,36 @@ msgstr ""
 "例えば，以下は ``tests/plotting`` にある，関数名に ``volume`` が含まれるテストについて， ``pytest`` "
 "が生成したすべての画像を ``debug_images/`` に書き込むものです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:729
+#: ../../pyvista/CONTRIBUTING.rst:875
 msgid "See `pytest-pyvista`_ for more details."
 msgstr "詳しくは `pytest-pyvista`_ を参照してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:733
+#: ../../pyvista/CONTRIBUTING.rst:879
 msgid ""
 "Additional regression testing is also performed on the documentation images."
 " See `Documentation Image Regression Testing`_."
 msgstr "追加の回帰テストもドキュメント画像に対して行われます。 詳しくは `ドキュメント画像回帰テスト`_ を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:737
+#: ../../pyvista/CONTRIBUTING.rst:883
 msgid "Notes Regarding Input Validation Testing"
 msgstr "入力検証テストに関する注意事項"
 
-#: ../../pyvista/CONTRIBUTING.rst:738
+#: ../../pyvista/CONTRIBUTING.rst:884
 msgid ""
 "The ``pyvista.core.validation`` package has two distinct test suites which "
 "are executed with ``pytest``:"
 msgstr ""
 "``pyvista.core.validation`` パッケージには2つの異なるテストスイートがあり、 ``pytest`` で実行されます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:741
+#: ../../pyvista/CONTRIBUTING.rst:887
 msgid "Regular unit tests in ``tests/core/test_validation.py``"
 msgstr "通常のユニットテストは ``tests/core/test_validation.py`` で行う。"
 
-#: ../../pyvista/CONTRIBUTING.rst:742
+#: ../../pyvista/CONTRIBUTING.rst:888
 msgid "Customized unit tests in ``tests/core/typing`` for testing type hints"
 msgstr "``tests/core/typing`` のユニットテストをカスタマイズして、タイプヒントをテストできるようにしました。"
 
-#: ../../pyvista/CONTRIBUTING.rst:744
+#: ../../pyvista/CONTRIBUTING.rst:890
 msgid ""
 "The custom unit tests check that the type hints for the validation package "
 "are correct both statically and dynamically. This is mainly used to check "
@@ -1285,19 +1368,19 @@ msgstr ""
 "カスタムユニットテストは、検証パッケージのタイプヒントが静的にも動的にも正しいことをチェックします。 これは主に ``validate_array`` "
 "や関連する関数の型ヒントのような、複雑でオーバーロードされた関数のシグネチャをチェックするために使用されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:749
+#: ../../pyvista/CONTRIBUTING.rst:895
 msgid ""
 "Individual test cases are written as a single line of Python code with the "
 "format:"
 msgstr "個々のテストケースは、1行のPythonコードとして記述されます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:755
+#: ../../pyvista/CONTRIBUTING.rst:901
 msgid ""
 "where ``arg`` is any argument you want mypy to analyze, and ``\"<T>\"`` is "
 "the expected revealed type returned by ``Mypy``."
 msgstr "ここで ``arg`` は mypy に解析させたい引数で、``\"<T>\"`` は ``Mypy`` が返すと予想される型です。"
 
-#: ../../pyvista/CONTRIBUTING.rst:758
+#: ../../pyvista/CONTRIBUTING.rst:904
 msgid ""
 "For example, the ``validate_array`` function, by default, returns a list of "
 "floats when a list of floats is provided at the input. The type hint should "
@@ -1308,7 +1391,7 @@ msgstr ""
 "関数は、デフォルトでは、入力に浮動小数点数のリストが与えられると、浮動小数点数のリストを返します。型ヒントはこれを反映する必要がある。 "
 "これをテストするために、 ``validate_array([1.0])`` という関数呼び出しのテストケースを次のように書くことができます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:767
+#: ../../pyvista/CONTRIBUTING.rst:913
 msgid ""
 "The actual revealed type returned by ``Mypy`` for this test can be generated"
 " with the following command. Note that ``grep`` is needed to only return the"
@@ -1319,11 +1402,11 @@ msgstr ""
 "は入力文字列からの出力のみを返す必要があることに注意してください。そうでない場合は、 ``pyvista`` パッケージのすべての ``Mypy`` "
 "エラーが報告されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:776
+#: ../../pyvista/CONTRIBUTING.rst:922
 msgid "For this test case, the revealed type by ``Mypy`` is:"
 msgstr "このテストケースでは、 ``Mypy`` によって明らかにされた型は次のとおりです:"
 
-#: ../../pyvista/CONTRIBUTING.rst:782
+#: ../../pyvista/CONTRIBUTING.rst:928
 msgid ""
 "Notice that the revealed type is fully qualified, i.e. includes "
 "``builtins``. For brevity, the custom test suite omits this and requires "
@@ -1339,7 +1422,7 @@ msgstr ""
 "``\"builtins.list[builtins.float]\"`` ではありません。 (同様に、 ``numpy.ndarray`` "
 "が期待されるテストでは、パッケージ名 ``numpy`` も省略する必要があります。)"
 
-#: ../../pyvista/CONTRIBUTING.rst:789
+#: ../../pyvista/CONTRIBUTING.rst:935
 msgid ""
 "Any number of related test cases (one test case per line) may be written and"
 " included in a single ``.py`` file. The test cases are all stored in "
@@ -1348,11 +1431,11 @@ msgstr ""
 "任意の数の関連するテストケース(1行に1つのテストケース)を記述し、1つの ``.py`` ファイルに含めることができます。 テストケースは全て "
 "``tests/core/typing/validation_cases`` に格納されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:793
+#: ../../pyvista/CONTRIBUTING.rst:939
 msgid "The tests can be executed with:"
 msgstr "テストは次のようにして実行することができます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:799
+#: ../../pyvista/CONTRIBUTING.rst:959
 msgid ""
 "When executed, a single instance of ``Mypy`` will statically analyze all the"
 " test cases. The actual revealed types by ``Mypy`` are compared against the "
@@ -1361,7 +1444,7 @@ msgstr ""
 "実行されると ``Mypy`` のインスタンスが全てのテストケースを静的に解析します。 実際に ``Mypy`` "
 "によって明らかにされた型は、各テストケースで定義された ``EXPECTED_TYPE`` と比較されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:803
+#: ../../pyvista/CONTRIBUTING.rst:963
 msgid ""
 "In addition, the ``pyanalyze`` package tests the actual returned type at "
 "runtime to match the statically-revealed type. The "
@@ -1378,29 +1461,42 @@ msgstr ""
 " メソッドが使用されます。 新しい検証関数のために新しいタイピングテストケースが追加された場合、新しい関数は "
 "``tests/core/typing/test_validation_typing.py`` のインポートリストに追加されなければなりません。"
 
-#: ../../pyvista/CONTRIBUTING.rst:812
+#: ../../pyvista/CONTRIBUTING.rst:972
 msgid "Building the Documentation"
 msgstr "ドキュメントの作成"
 
-#: ../../pyvista/CONTRIBUTING.rst:813
-msgid "Install documentation dependencies with:"
-msgstr "ドキュメントの依存関係をインストールします:"
+#: ../../pyvista/CONTRIBUTING.rst:973
+msgid ""
+"Documentation can be build either directly (i.e. using Python commands) or "
+"with `tox <https://tox.wiki/en/stable/>`_ such that:"
+msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:819
-msgid "Build the documentation on Linux or Mac OS with:"
-msgstr "LinuxまたはMac OSでドキュメントをビルドします．"
+#: ../../pyvista/CONTRIBUTING.rst:0
+msgid "python"
+msgstr "python"
 
-#: ../../pyvista/CONTRIBUTING.rst:825
-msgid "Build the documentation on Windows with:"
-msgstr "Windows でドキュメントをビルドします．"
+#: ../../pyvista/CONTRIBUTING.rst:0
+msgid "Mac OS / Linux"
+msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:833
+#: ../../pyvista/CONTRIBUTING.rst:0
+msgid "Windows"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1009
+msgid ""
+"By default, the ``html`` builder of sphinx is specified when running the "
+"``docs-build`` environment. You can customize it as a separate positional "
+"argument such that:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1017
 msgid ""
 "The generated documentation can be found in the ``doc/_build/html`` "
 "directory."
 msgstr "生成されたドキュメントは ``doc/_build/html`` ディレクトリにあります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:836
+#: ../../pyvista/CONTRIBUTING.rst:1020
 msgid ""
 "The first time you build the documentation locally will take a while as all "
 "the examples need to be built. After the first build, the documentation "
@@ -1408,52 +1504,52 @@ msgid ""
 msgstr ""
 "最初にローカルでドキュメントをビルドするときは，すべてのサンプルをビルドする必要があるため，しばらく時間がかかるでしょう．最初のビルドの後は，ドキュメントの作成にかかる時間はほんのわずかなものになるはずです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:840
+#: ../../pyvista/CONTRIBUTING.rst:1024
 msgid ""
 "To test this locally you need to run a http server in the html directory "
 "with:"
 msgstr "これをローカルでテストするには、httpサーバーをのhtmlディレクトリで実行する必要があります:"
 
-#: ../../pyvista/CONTRIBUTING.rst:847
+#: ../../pyvista/CONTRIBUTING.rst:1031
 msgid "Clearing the Local Build"
 msgstr "ローカルビルドのクリア"
 
-#: ../../pyvista/CONTRIBUTING.rst:849
+#: ../../pyvista/CONTRIBUTING.rst:1033
 msgid "If you need to clear the locally built documentation, run:"
 msgstr "ローカルにビルドしたドキュメントをクリアする必要がある場合は，実行してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:855
+#: ../../pyvista/CONTRIBUTING.rst:1039
 msgid ""
 "This will clear out everything, including the examples gallery. If you only "
 "want to clear everything except the gallery examples, run:"
 msgstr "これは，ギャラリーの例を含むすべてをクリアします．もしギャラリーのサンプル以外をクリアしたいだけなら，実行します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:862
+#: ../../pyvista/CONTRIBUTING.rst:1046
 msgid ""
 "This will clear out the cache without forcing you to rebuild all the "
 "examples."
 msgstr "これにより，すべてのサンプルを強制的に再構築することなく，キャッシュをクリアすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:866
+#: ../../pyvista/CONTRIBUTING.rst:1050
 msgid "Parallel Documentation Build"
 msgstr "ドキュメントの並列ビルド"
 
-#: ../../pyvista/CONTRIBUTING.rst:867
+#: ../../pyvista/CONTRIBUTING.rst:1051
 msgid ""
 "You can improve your documentation build time on Linux and Mac OS with:"
 msgstr "以下でLinuxやMac OSでのドキュメントのビルド時間を改善することができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:873
+#: ../../pyvista/CONTRIBUTING.rst:1057
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
 "multi-core computers."
 msgstr "これは効果的に ``SPHINXOPTS=-j`` を呼び出し，特にマルチコアコンピュータで有用です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:877
+#: ../../pyvista/CONTRIBUTING.rst:1061
 msgid "Documentation Image Regression Testing"
 msgstr "ドキュメント画像回帰テスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:879
+#: ../../pyvista/CONTRIBUTING.rst:1063
 msgid ""
 "Image regression testing is performed on all published documentation images."
 " When the documentation is built, all generated images are automatically "
@@ -1461,24 +1557,26 @@ msgid ""
 msgstr ""
 "画像のリグレッションテストは、公開されているすべてのドキュメント画像に対して実施されます。文書が作成されると、生成された画像はすべて自動的に以下に保存されます"
 
-#: ../../pyvista/CONTRIBUTING.rst:883
+#: ../../pyvista/CONTRIBUTING.rst:1067
 msgid "Build Image Directory: ``./doc/_build/html/_images``"
 msgstr "ビルド画像ディレクトリ: ``./doc/_build/html/_images``"
 
-#: ../../pyvista/CONTRIBUTING.rst:885
+#: ../../pyvista/CONTRIBUTING.rst:1069
 msgid ""
 "The regression testing compares these generated images to those stored in"
 msgstr "回帰テストでは、生成された画像と以下に保存されている画像を比較します"
 
-#: ../../pyvista/CONTRIBUTING.rst:887
+#: ../../pyvista/CONTRIBUTING.rst:1071
 msgid "Doc Image Cache: ``./tests/doc/doc_image_cache``"
 msgstr "ドキュメント画像キャッシュ: ``./tests/doc/doc_image_cache``"
 
-#: ../../pyvista/CONTRIBUTING.rst:889
-msgid "To test all the images, run ``pytest`` with:"
-msgstr "すべての画像をテストするには、``pytest`` を実行します:"
+#: ../../pyvista/CONTRIBUTING.rst:1073
+msgid ""
+"To test all the images, run tests using either ``pytest`` or ``tox`` such "
+"that:"
+msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:895
+#: ../../pyvista/CONTRIBUTING.rst:1094
 msgid ""
 "The tests must be executed explicitly with this command. The name of the "
 "test file is prefixed with ``tst``, and not ``test`` specifically to avoid "
@@ -1490,25 +1588,25 @@ msgstr ""
 "によって自動的に実行されないようにするためです (``pytest`` はデフォルトで ``test`` "
 "を先頭に持つすべてのテストを収集します)。これはテストがドキュメントのビルドを必要とし、テストの主要な形式ではないからです。"
 
-#: ../../pyvista/CONTRIBUTING.rst:901
+#: ../../pyvista/CONTRIBUTING.rst:1100
 msgid ""
 "When executed, the test will first pre-process the build images. The images "
 "are:"
 msgstr "実行されると、テストはまずビルド画像を前処理します。 その画像は:"
 
-#: ../../pyvista/CONTRIBUTING.rst:903
+#: ../../pyvista/CONTRIBUTING.rst:1102
 msgid "Collected from the ``Build Image Directory``."
 msgstr "``Build Image Directory`` から収集されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:905
+#: ../../pyvista/CONTRIBUTING.rst:1104
 msgid "Resized to a maximum of 400x400 pixels."
 msgstr "最大400x400ピクセルにリサイズ。"
 
-#: ../../pyvista/CONTRIBUTING.rst:907
+#: ../../pyvista/CONTRIBUTING.rst:1106
 msgid "Saved to a flat directory as JPEG images in ``./_doc_debug_images``."
 msgstr "``./_doc_debug_images`` にJPEG画像としてフラットディレクトリに保存されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:909
+#: ../../pyvista/CONTRIBUTING.rst:1108
 msgid ""
 "Next, the pre-processed images in ``./_doc_debug_images`` are compared to "
 "the cached images in the ``Doc Image Cache`` using "
@@ -1517,55 +1615,55 @@ msgstr ""
 "次に、 ``./_doc_debug_images`` にある前処理済みの画像と ``Doc Image Cache`` にあるキャッシュ画像を "
 ":func:`pyvista.compare_images` を使って比較します。"
 
-#: ../../pyvista/CONTRIBUTING.rst:912
+#: ../../pyvista/CONTRIBUTING.rst:1111
 msgid ""
 "The tests can fail in three ways. To make it easy to review images for "
 "failed tests, copies of the images are made as follows:"
 msgstr "テストは3つの方法で失敗する可能性があります。失敗したテストの画像を簡単に見直せるように、画像のコピーは以下のように作成されます;"
 
-#: ../../pyvista/CONTRIBUTING.rst:915
+#: ../../pyvista/CONTRIBUTING.rst:1114
 msgid "If the comparison between the two images fails:"
 msgstr "2つの画像の比較に失敗した場合:"
 
-#: ../../pyvista/CONTRIBUTING.rst:917
+#: ../../pyvista/CONTRIBUTING.rst:1116
 msgid ""
 "The cache image is copied to "
 "``./_doc_debug_images_failed/errors/from_cache``"
 msgstr "キャッシュ画像は ``./_doc_debug_images_failed/errors/from_cache`` にコピーされます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:918
+#: ../../pyvista/CONTRIBUTING.rst:1117
 msgid ""
 "The build image is copied to "
 "``./_doc_debug_images_failed/errors/from_build``"
 msgstr "ビルド画像は ``./_doc_debug_images_failed/errors/from_build`` にコピーされます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:920
+#: ../../pyvista/CONTRIBUTING.rst:1119
 msgid "If an image is in the cache but missing from the build:"
 msgstr "画像がキャッシュにあるが、ビルドにない場合:"
 
-#: ../../pyvista/CONTRIBUTING.rst:922
+#: ../../pyvista/CONTRIBUTING.rst:1121
 msgid ""
 "The cache image is copied to  "
 "``./_doc_debug_images_failed/errors/from_cache``"
 msgstr "キャッシュ画像は ``./_doc_debug_images_failed/errors/from_cache`` にコピーされます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:924
+#: ../../pyvista/CONTRIBUTING.rst:1123
 msgid "If an image is in the build but missing from the cache:"
 msgstr "画像はビルド内にあるが、キャッシュにない場合:"
 
-#: ../../pyvista/CONTRIBUTING.rst:926
+#: ../../pyvista/CONTRIBUTING.rst:1125
 msgid ""
 "The build image is copied to  "
 "``./_doc_debug_images_failed/errors/from_build``"
 msgstr "ビルド画像は ``./_doc_debug_images_failed/errors/from_build`` にコピーされます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:928
+#: ../../pyvista/CONTRIBUTING.rst:1127
 msgid ""
 "If a warning is generated instead of an error, images are saved to the "
 "``warnings`` sub-directory instead of ``errors``."
 msgstr "エラーの代わりに警告が発生した場合、画像は ``errors`` の代わりに ``warnings`` サブディレクトリに保存されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:931
+#: ../../pyvista/CONTRIBUTING.rst:1130
 msgid ""
 "To resolve failed tests, any images in ``from_build`` or ``from_cache`` may "
 "be copied to or removed from the ``Doc Image Cache``. For example, if adding"
@@ -1580,7 +1678,7 @@ msgstr ""
 " Cache`` に追加されます。 同様に、例題を削除する場合、 ``from_cache`` の画像は ``Doc Image Cache`` "
 "から削除されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:938
+#: ../../pyvista/CONTRIBUTING.rst:1137
 msgid ""
 "If a test is flaky, e.g. the build sometimes generates different images for "
 "the same plot, the multiple versions of the image may be saved to the flaky "
@@ -1601,7 +1699,7 @@ msgstr ""
 "いずれかの比較が成功すればテストは成功です、しかしサブディレクトリに保存されます。 flaky テストによって警告が発せられた場合、画像は "
 "``warnings`` の代わりに ``flaky`` サブディレクトリに保存されます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:952
+#: ../../pyvista/CONTRIBUTING.rst:1151
 msgid ""
 "It is not necessary to build the documentation images locally in order to "
 "add to or update the doc image cache. The documentation is automatically "
@@ -1613,7 +1711,7 @@ msgstr ""
 "テストの一環として自動的にビルドされ、(1) 前処理済みのビルドイメージと (2) 失敗したテストケースに対して成果物が生成されます。 "
 "これらの成果物は、GitHubからダウンロードして確認することができる。"
 
-#: ../../pyvista/CONTRIBUTING.rst:958
+#: ../../pyvista/CONTRIBUTING.rst:1157
 msgid ""
 "The debug images saved with the artifact can also be used to \"simulate\" "
 "building the documentation images locally. If the images are copied to the "
@@ -1624,7 +1722,7 @@ msgstr ""
 "``Build Image Directory`` "
 "にコピーすれば、あたかもドキュメントがすでにビルドされているかのように、ローカルでテストを実行してデバッグすることができます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:965
+#: ../../pyvista/CONTRIBUTING.rst:1164
 msgid ""
 "These tests are intended to provide *additional* test coverage to ensure the"
 " plots generated by ``pyvista`` are correct, and should not be used as the "
@@ -1637,11 +1735,11 @@ msgstr ""
 "`Docstring Testing`_ と `Notes Regarding Image Regression Testing`_ "
 "を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:972
+#: ../../pyvista/CONTRIBUTING.rst:1171
 msgid "Interactive Plot Testing"
 msgstr "インタラクティブプロットテスト"
 
-#: ../../pyvista/CONTRIBUTING.rst:974
+#: ../../pyvista/CONTRIBUTING.rst:1173
 msgid ""
 "PyVista's documentation uses a custom ``pyvista-plot`` directive to generate"
 " static images as well as interactive plot files. The interactive files have"
@@ -1652,7 +1750,7 @@ msgstr ""
 "を使って、静的な画像と対話的なプロットファイルを生成しています。 インタラクティブなファイルは ``.vtksz`` "
 "という拡張子を持ち、高解像度のデータセットをプロットすると比較的大きくなります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:979
+#: ../../pyvista/CONTRIBUTING.rst:1178
 msgid ""
 "To ensure that the interactive plots do not unnecessarily inflate the size "
 "of the documentation build, a limit is placed on the size of ``.vtksz`` "
@@ -1661,19 +1759,19 @@ msgstr ""
 "インタラクティブなプロットが不必要にドキュメントビルドのサイズを大きくしないように、 ``.vtksz`` ファイルのサイズに制限が設けられています。 "
 "インタラクティブなプロットがこの制限を超えないことをテストするには、以下を実行してください:"
 
-#: ../../pyvista/CONTRIBUTING.rst:987
+#: ../../pyvista/CONTRIBUTING.rst:1201
 msgid ""
 "If any of these tests fail, the example(s) which generated the plot should "
 "be modified, e.g.:"
 msgstr "これらの(複数の)テストのいずれかが失敗した場合、プロットを生成したサンプルを修正する必要があります、例えば:"
 
-#: ../../pyvista/CONTRIBUTING.rst:990
+#: ../../pyvista/CONTRIBUTING.rst:1204
 msgid ""
 "Simplify any dataset(s) used, e.g. crop, clip, down-sample, decimate, or "
 "otherwise reduce the complexity of the plot."
 msgstr "使用する(複数の)データセットを単純化します。例えば、クロップ、クリップ、ダウンサンプル、デシメートなど、プロットの複雑さを軽減します。"
 
-#: ../../pyvista/CONTRIBUTING.rst:993
+#: ../../pyvista/CONTRIBUTING.rst:1207
 msgid ""
 "Force the plot to be static only. In docstrings, use the plot directive with"
 " the ``force_static`` option, e.g.:"
@@ -1681,11 +1779,11 @@ msgstr ""
 "プロットを強制的に静的なものにします。 docstrings では、plot ディレクティブに ``force_static`` "
 "オプションを指定します、例えば:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1007
+#: ../../pyvista/CONTRIBUTING.rst:1221
 msgid "In sphinx gallery examples use:"
 msgstr "sphinx galleryの使用例:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1015
+#: ../../pyvista/CONTRIBUTING.rst:1229
 msgid ""
 "to disable all plots in the example or use ``PYVISTA_GALLERY_FORCE_STATIC`` "
 "before the call to ``plot()`` or ``show()`` to force static for a single "
@@ -1695,13 +1793,13 @@ msgstr ""
 "を使用すると、1つのプロットに対して静的描画を強制することができます。 詳細は :ref:`add_example_example` "
 "を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1021
+#: ../../pyvista/CONTRIBUTING.rst:1235
 msgid ""
 "Reducing the complexity of the plot is preferred as this will also also "
 "likely reduce the processing times."
 msgstr "プロットの複雑さを減らすことは、処理時間の短縮にもつながるので好ましいです。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1026
+#: ../../pyvista/CONTRIBUTING.rst:1240
 msgid ""
 "See `Documentation Image Regression Testing`_. for testing performed on the "
 "static images generated by the plot directive."
@@ -1709,51 +1807,15 @@ msgstr ""
 "plot指示文によって生成された静的画像に対して行われたテストについては、 `Documentation Image Regression "
 "Testing`_ を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1030
-msgid "Controlling Cache for CI Documentation Build"
-msgstr "CIドキュメントのビルドでキャッシュを制御する"
-
-#: ../../pyvista/CONTRIBUTING.rst:1032
-msgid ""
-"To reduce build times of the documentation for PRs, cached sphinx gallery, "
-"example data, and sphinx build directories are used in the CI on GitHub.  In"
-" some cases, the caching action can cause problems for a specific PR.  To "
-"invalidate a cache for a specific PR, one of the following labels can be "
-"applied to the PR."
-msgstr ""
-"PRのドキュメントのビルド時間を短縮するために、GitHub上のCIではキャッシュされたsphinxギャラリー、サンプルデータ、sphinxビルドディレクトリが使用されています。"
-" 場合によっては、キャッシュが特定の PR に対して問題を引き起こすことがあります。 "
-"特定のPRのキャッシュを無効にするには、以下のラベルのいずれかをPRに適用します。"
-
-#: ../../pyvista/CONTRIBUTING.rst:1036
-msgid "``no-example-data-cache``"
-msgstr "``no-example-data-cache``"
-
-#: ../../pyvista/CONTRIBUTING.rst:1037
-msgid "``no-gallery-cache``"
-msgstr "``no-gallery-cache``"
-
-#: ../../pyvista/CONTRIBUTING.rst:1038
-msgid "``no-sphinx-build-cache``"
-msgstr "``no-sphinx-build-cache``"
-
-#: ../../pyvista/CONTRIBUTING.rst:1040
-msgid ""
-"The PR either needs a new commit, e.g. updating the branch from ``main``, or"
-" to be closed/re-opened to rerun the CI with the labels applied."
-msgstr ""
-"PRは、 ``main`` "
-"からブランチを更新するなどの新しいコミットが必要か、ラベルを適用してCIを再実行するためにクローズ/再オープンする必要があります。"
-
-#: ../../pyvista/CONTRIBUTING.rst:1045
+#: ../../pyvista/CONTRIBUTING.rst:1244
 msgid "Contributing to the Documentation"
 msgstr "ドキュメンテーションへの貢献"
 
-#: ../../pyvista/CONTRIBUTING.rst:1046
+#: ../../pyvista/CONTRIBUTING.rst:1245
 msgid "Documentation for PyVista is generated from three sources:"
 msgstr "PyVistaのドキュメントは，3つのソースから作成されています:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1048
+#: ../../pyvista/CONTRIBUTING.rst:1247
 msgid ""
 "Docstrings from the classes, functions, and modules of ``pyvista`` using "
 "`sphinx.ext.autodoc <https://www.sphinx-"
@@ -1762,15 +1824,15 @@ msgstr ""
 "``pyvista`` のクラス，関数，モジュールから， `sphinx.ext.autodoc <https://www.sphinx-"
 "doc.org/en/master/usage/extensions/autodoc.html>`_ を使用して，Docstringを取得します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1051
+#: ../../pyvista/CONTRIBUTING.rst:1250
 msgid "Restructured test from ``doc/``"
 msgstr "``doc/`` からテストを再構築"
 
-#: ../../pyvista/CONTRIBUTING.rst:1052
+#: ../../pyvista/CONTRIBUTING.rst:1251
 msgid "Gallery examples from ``examples/``"
 msgstr "``examples/`` からのギャラリー例"
 
-#: ../../pyvista/CONTRIBUTING.rst:1054
+#: ../../pyvista/CONTRIBUTING.rst:1253
 msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings. Full gallery examples should be placed in ``examples``."
@@ -1778,11 +1840,11 @@ msgstr ""
 "一般的な使い方やAPIの説明は ``doc/api`` と docstrings に記述してください． 完全なギャラリーのサンプルは "
 "``examples`` に置いてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1059
+#: ../../pyvista/CONTRIBUTING.rst:1258
 msgid "Generating Random Data"
 msgstr "ランダムデータの生成"
 
-#: ../../pyvista/CONTRIBUTING.rst:1060
+#: ../../pyvista/CONTRIBUTING.rst:1259
 msgid ""
 "All documentation should be reproducible. In particular, any documentation "
 "or examples which use random data should be properly seeded so that the same"
@@ -1791,7 +1853,7 @@ msgid ""
 msgstr ""
 "すべての文書は再現可能でなければなりません。特に、ランダムデータを使用する文書や例は、毎回同じランダムデータが生成されるように適切にシードされるべきです。これにより、ユーザーはドキュメントのコードをコピーして、同じ結果とプロットをローカルに生成することができます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1065
+#: ../../pyvista/CONTRIBUTING.rst:1264
 msgid ""
 "When using NumPy's random number generator (RNG) you should create an RNG at"
 " the beginning of your script and use this RNG in the rest of the script. Be"
@@ -1799,7 +1861,7 @@ msgid ""
 msgstr ""
 "NumPyの乱数生成器（RNG）を使用する場合は、スクリプトの最初にRNGを作成し、スクリプトの残りの部分でこのRNGを使用する必要があります。必ずシード値を含めてください。例えば、こうです："
 
-#: ../../pyvista/CONTRIBUTING.rst:1076
+#: ../../pyvista/CONTRIBUTING.rst:1275
 msgid ""
 "See Scientific Python's `Best Practices for Using NumPy's Random Number "
 "Generators <https://blog.scientific-python.org/numpy/numpy-rng/>`_ for "
@@ -1808,11 +1870,11 @@ msgstr ""
 "詳細はScientific Pythonの `NumPyの乱数生成器を使用するためのベストプラクティス "
 "<https://blog.scientific-python.org/numpy/numpy-rng/>`_ を参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1080
+#: ../../pyvista/CONTRIBUTING.rst:1279
 msgid "Adding a New Example"
 msgstr "新しい例の追加"
 
-#: ../../pyvista/CONTRIBUTING.rst:1081
+#: ../../pyvista/CONTRIBUTING.rst:1280
 msgid ""
 "PyVista's examples come in two formats: basic code snippets demonstrating "
 "the functionality of an individual method or a full gallery example "
@@ -1827,7 +1889,7 @@ msgstr ""
 "ディレクトリやドキュメント文字列に含まれています．一方，完全なギャラリーサンプルは，ダウンロード可能なスクリプトとして実行するために，このリポジトリのルートにある"
 " ``examples`` ディレクトリに含まれています．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1088
+#: ../../pyvista/CONTRIBUTING.rst:1287
 msgid ""
 "To add a fully fledged, standalone example, add your example to the "
 "``examples`` directory in the root directory of the `PyVista Repository "
@@ -1846,15 +1908,15 @@ msgstr ""
 "`Sphinx-Gallery <https://sphinx-gallery.github.io/stable/index.html>`_ "
 "が定めるコーディングガイドラインに従ってください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1097
+#: ../../pyvista/CONTRIBUTING.rst:1296
 msgid "For more details see :ref:`add_example_example`."
 msgstr "詳しくは :ref:`add_example_example` を参照してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1101
+#: ../../pyvista/CONTRIBUTING.rst:1300
 msgid "Adding a New Dataset"
 msgstr "新しいデータセットの追加"
 
-#: ../../pyvista/CONTRIBUTING.rst:1102
+#: ../../pyvista/CONTRIBUTING.rst:1301
 msgid ""
 "If you have a dataset that you want to feature or want to include as part of"
 " a full gallery example, add it to `pyvista/vtk-data "
@@ -1867,7 +1929,7 @@ msgstr ""
 "``pyvista/examples/downloads.py`` "
 "にデータセットをダウンロードするための新しい関数を追加する必要があります．これは以下のように簡単です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1118
+#: ../../pyvista/CONTRIBUTING.rst:1317
 msgid ""
 "Note that a separate dataset loading object, ``_dataset_my_new_mesh``, "
 "should first be defined outside of the function (with module scope), and the"
@@ -1880,11 +1942,11 @@ msgstr ""
 "関数はこのオブジェクトを使用してデータセットのダウンロードとロードを行う必要があります。データセットローダー変数は ``_dataset_`` "
 "で始まる必要がある。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1124
+#: ../../pyvista/CONTRIBUTING.rst:1323
 msgid "This will enable:"
 msgstr "これにより以下が有効になります:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1131
+#: ../../pyvista/CONTRIBUTING.rst:1330
 msgid ""
 "For loading complex datasets with multiple files or special processing "
 "requirements, see the private ``pyvista/examples/_dataset_loader.py`` module"
@@ -1893,7 +1955,7 @@ msgstr ""
 "複数のファイルを持つ複雑なデータセットをロードする場合や、特別な処理を必要とする場合は、適切なデータセットローダーを作成するための詳細については、プライベートな"
 " ``pyvista/examples/_dataset_loader.py`` モジュールを参照してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1135
+#: ../../pyvista/CONTRIBUTING.rst:1334
 msgid ""
 "Using a dataset loader in this way will enable metadata to be collected for "
 "the new dataset. A new dataset card titled ``My New Mesh Dataset`` will "
@@ -1902,27 +1964,27 @@ msgstr ""
 "このようにデータセットローダーを使うことで、新しいデータセットのメタデータを収集することができます。 ``My New Mesh Dataset`` "
 "というタイトルの新しいデータセットカードが自動的に生成され、 :ref:`dataset_gallery` に含まれます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1139
+#: ../../pyvista/CONTRIBUTING.rst:1338
 msgid ""
 "In the docstring of the new ``download_my_new_mesh`` function, be sure to "
 "also include:"
 msgstr "新しい ``download_my_new_mesh`` 関数の docstring には、次のように記述してください。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1142
+#: ../../pyvista/CONTRIBUTING.rst:1341
 msgid "A sample plot of the dataset in the examples section"
 msgstr "examplesセクションにあるデータセットのプロット例 "
 
-#: ../../pyvista/CONTRIBUTING.rst:1144
+#: ../../pyvista/CONTRIBUTING.rst:1343
 msgid ""
 "A reference link to the dataset's new (auto-generated) gallery card in the "
 "see also section"
 msgstr "See alsoセクションにあるデータセットの新しい（自動生成された）ギャラリーカードへの参照リンク "
 
-#: ../../pyvista/CONTRIBUTING.rst:1147
+#: ../../pyvista/CONTRIBUTING.rst:1346
 msgid "For example:"
 msgstr "例えば:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1169
+#: ../../pyvista/CONTRIBUTING.rst:1368
 msgid ""
 "The rst ``seealso`` directive must be used instead of the ``See Also`` "
 "heading due to limitations with how ``numpydoc`` parses explicit references."
@@ -1930,11 +1992,11 @@ msgstr ""
 "``numpydoc`` が明示的な参照を解析する方法に制限があるため、 ``See Also`` の代わりに ``seealso`` "
 "ディレクティブを使用する必要があります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1174
+#: ../../pyvista/CONTRIBUTING.rst:1373
 msgid "Extending the Dataset Gallery"
 msgstr "データセットギャラリーを拡張する"
 
-#: ../../pyvista/CONTRIBUTING.rst:1175
+#: ../../pyvista/CONTRIBUTING.rst:1374
 msgid ""
 "If you have multiple related datasets to contribute, or would like to group "
 "any existing datasets together that share similar properties, the "
@@ -1947,7 +2009,7 @@ msgstr ""
 "<https://sphinx-design.readthedocs.io/en/latest/cards.html#card-carousels>`_"
 " に表示することができます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1180
+#: ../../pyvista/CONTRIBUTING.rst:1379
 msgid ""
 "For example, to add a new ``Instrument`` dataset category to "
 ":ref:`dataset_gallery_category` featuring two datasets of musical "
@@ -1956,39 +2018,39 @@ msgstr ""
 "例えば、 :ref:`dataset_gallery_category` に新しい ``Instrument`` "
 "データセットカテゴリを追加して、楽器のデータセットを2つ並べるには、次のようにします。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1183
+#: ../../pyvista/CONTRIBUTING.rst:1382
 msgid ":func:`pyvista.examples.downloads.download_guitar`"
 msgstr ":func:`pyvista.examples.downloads.download_guitar`"
 
-#: ../../pyvista/CONTRIBUTING.rst:1184
+#: ../../pyvista/CONTRIBUTING.rst:1383
 msgid ":func:`pyvista.examples.downloads.download_trumpet`"
 msgstr ":func:`pyvista.examples.downloads.download_trumpet`"
 
-#: ../../pyvista/CONTRIBUTING.rst:1186
+#: ../../pyvista/CONTRIBUTING.rst:1385
 msgid "complete the following steps:"
 msgstr "以下のステップを完了します:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1188
+#: ../../pyvista/CONTRIBUTING.rst:1387
 msgid "Define a new carousel in ``doc/source/make_tables.py``, e.g.:"
 msgstr "``doc/source/make_tables.py`` で新しいカルーセルを定義します、例えば:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1208
+#: ../../pyvista/CONTRIBUTING.rst:1407
 msgid "where"
 msgstr "ここで"
 
-#: ../../pyvista/CONTRIBUTING.rst:1210
+#: ../../pyvista/CONTRIBUTING.rst:1409
 msgid ""
 "``name`` is used internally to define the name of the generated ``.rst`` "
 "file for the carousel."
 msgstr "``name`` はカルーセル用に生成される ``.rst`` ファイルの名前を定義するために内部的に使用される。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1213
+#: ../../pyvista/CONTRIBUTING.rst:1412
 msgid ""
 "``doc`` is a short text description of the carousel which will appear in the"
 " documentation in the header above the carousel."
 msgstr "``doc`` はカルーセルの上のヘッダーにあるドキュメントに表示されるカルーセルの短い説明です。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1216
+#: ../../pyvista/CONTRIBUTING.rst:1415
 msgid ""
 "``badge`` is used to give all datasets in the carousel a reference tag. The "
 "``ref`` argument for the badge should be a new reference target (details "
@@ -1997,7 +2059,7 @@ msgstr ""
 "``badge`` はカルーセル内の全てのデータセットに参照タグを付与します。バッジの引数 ``ref`` "
 "には新しい参照先を指定する必要があります（詳細は後述します） 。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1220
+#: ../../pyvista/CONTRIBUTING.rst:1419
 msgid ""
 "``fetch_dataset_names`` should return a list of any/all dataset names to be "
 "included in the carousel. The dataset names should not include any "
@@ -2006,7 +2068,7 @@ msgstr ""
 "``fetch_dataset_names`` は、カルーセルに含めるデータセット名のリストを返す。データセット名には ``load_`` 、 "
 "``download_`` 、 ``dataset_`` の接頭辞をつけてはならない。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1224
+#: ../../pyvista/CONTRIBUTING.rst:1423
 msgid ""
 "Add the new carousel class to the ``CAROUSEL_LIST`` variable defined in "
 "``doc/source/make_tables.py``. This will enable the rst to be auto-generated"
@@ -2015,7 +2077,7 @@ msgstr ""
 "新しいカルーセルクラスを ``doc/source/make_tables.py`` で定義した ``CAROUSEL_LIST`` "
 "変数に追加します。これにより、カルーセルの rst が自動生成されるようになります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1228
+#: ../../pyvista/CONTRIBUTING.rst:1427
 msgid ""
 "Update the ``doc/source/api/examples/dataset_gallery.rst`` file to include "
 "the new generated ``<name>_carousel.rst`` file. E.g. to add the carousel as "
@@ -2024,11 +2086,11 @@ msgstr ""
 "``doc/source/api/examples/dataset_gallery.rst`` ファイルを更新して、新しく生成された "
 "``<name>_carousel.rst`` ファイルを含めます。例えば、カルーセルを新しいドロップダウン項目として追加するには、以下を追加します:."
 
-#: ../../pyvista/CONTRIBUTING.rst:1239
+#: ../../pyvista/CONTRIBUTING.rst:1438
 msgid "where:"
 msgstr "ここで:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1241
+#: ../../pyvista/CONTRIBUTING.rst:1440
 msgid ""
 "The dropdown name ``:name: <reference>`` should be the badge's ``ref`` "
 "variable defined earlier. This will make it so that clicking on the new "
@@ -2037,7 +2099,7 @@ msgstr ""
 "ドロップダウン名 ``:name: <reference>`` は、先ほど定義したバッジの ``ref`` "
 "変数でなければなりません。これにより、新しいバッジをクリックすると、新しいドロップダウンメニューにリンクするようになります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1245
+#: ../../pyvista/CONTRIBUTING.rst:1444
 msgid ""
 "The name of the included ``.rst`` file should match the ``name`` variable "
 "defined in the new ``Carousel`` class."
@@ -2045,17 +2107,17 @@ msgstr ""
 "インクルードされた ``.rst`` ファイルの名前は、新しい ``Carousel`` クラスで定義された ``name`` "
 "変数と一致する必要があります。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1248
+#: ../../pyvista/CONTRIBUTING.rst:1447
 msgid ""
 "After building the documentation, the carousel should now be part of the "
 "gallery."
 msgstr "ドキュメントをビルドしたら、カルーセルがギャラリーの一部になるはずです。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1252
+#: ../../pyvista/CONTRIBUTING.rst:1451
 msgid "Creating a New Pull Request"
 msgstr "新規Pull Requestの作成"
 
-#: ../../pyvista/CONTRIBUTING.rst:1254
+#: ../../pyvista/CONTRIBUTING.rst:1453
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -2067,7 +2129,7 @@ msgstr ""
 "requestを作成します．これにより，継続的インテグレーション (CI) "
 "テストが自動的に実行され，変更が複数のプラットフォームで機能することが検証されます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1259
+#: ../../pyvista/CONTRIBUTING.rst:1458
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -2078,7 +2140,7 @@ msgid ""
 msgstr ""
 "他のユーザーがコードをレビューできるようにするには，pyvistaコントリビュータグループの他の少なくとも1人のメンバーが，コードがコミュニティの標準を満たしているかどうかをレビューして検証する必要があります．承認後，書き込み権限があればブランチをマージすることができます．書き込みパーミッションがない場合，レビュー担当者または書き込みパーミッションを持つ別のユーザーがブランチをマージし，PRブランチを削除します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1266
+#: ../../pyvista/CONTRIBUTING.rst:1465
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
@@ -2086,11 +2148,11 @@ msgid ""
 msgstr ""
 "ブランチをカレントリリースブランチ(下記参照)とマージする必要があるかもしれませんので， ``fix/`` ブランチであれば削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1271
+#: ../../pyvista/CONTRIBUTING.rst:1470
 msgid "Preview the Documentation"
 msgstr "ドキュメントをプレビューする"
 
-#: ../../pyvista/CONTRIBUTING.rst:1272
+#: ../../pyvista/CONTRIBUTING.rst:1471
 msgid ""
 "For PRs of branches coming from the main pyvista repository, the "
 "documentation is automatically deployed using `Netifly GitHub actions "
@@ -2106,11 +2168,11 @@ msgstr ""
 " これは通常500Mbの重さで、``Build Documentation`` CIジョブの ``Upload non-interactive HTML"
 " documentation`` ステップから利用できます。"
 
-#: ../../pyvista/CONTRIBUTING.rst:1280
+#: ../../pyvista/CONTRIBUTING.rst:1479
 msgid "Branching Model"
 msgstr "ブランチモデル"
 
-#: ../../pyvista/CONTRIBUTING.rst:1282
+#: ../../pyvista/CONTRIBUTING.rst:1481
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
@@ -2119,11 +2181,11 @@ msgstr ""
 "このプロジェクトは，安定性を犠牲にすることなく機能の迅速な開発を可能にする分岐モデルを持っており， `Trunk Based Development "
 "<https://trunkbaseddevelopment.com/>`_  アプローチに厳密に従います．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1286
+#: ../../pyvista/CONTRIBUTING.rst:1485
 msgid "The main features of our branching model are:"
 msgstr "ブランチモデルの主な特徴は次のとおりです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1288
+#: ../../pyvista/CONTRIBUTING.rst:1487
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all PRs should pass all "
@@ -2134,7 +2196,7 @@ msgstr ""
 "``main`` "
 "ブランチは主要な開発ブランチです．すべてのフィーチャー，パッチ，およびその他のブランチをここにマージする必要があります．すべてのPRは適用可能なCIチェックをすべてパスする必要がありますが，変更によって予期しない副作用や単体テストで検出されなかったバグが発生する可能性があるため，このブランチは機能的に不安定になる可能性があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1293
+#: ../../pyvista/CONTRIBUTING.rst:1492
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -2153,7 +2215,7 @@ msgstr ""
 ")がタグ付けされます．これによりCIはPyPIにプッシュし，テストされていない機能を気にすることなく，過去のバージョンの ``pyvista`` "
 "のホットフィックスを迅速にプッシュすることができます．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1303
+#: ../../pyvista/CONTRIBUTING.rst:1502
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version (for example "
@@ -2170,11 +2232,11 @@ msgstr ""
 ")のタグが付けられ，必要に応じて変更が加えられた場合にはmainとマージされます． ``main`` "
 "で機能開発が継続され，ホットフィックスはこのリリースに統合されます．必要に応じてパッチを適用できるように，古いリリースブランチは削除しないでください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1314
+#: ../../pyvista/CONTRIBUTING.rst:1513
 msgid "Minor Release Steps"
 msgstr "マイナーリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:1316
+#: ../../pyvista/CONTRIBUTING.rst:1515
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
@@ -2183,7 +2245,7 @@ msgstr ""
 "マイナーリリースは， ``pyvista`` "
 "の機能と安定性を改善する機能およびバグリリースです．マイナーリリースが作成される前に，次のことが発生します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1320
+#: ../../pyvista/CONTRIBUTING.rst:1519
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (for example ``release/0.25``)."
@@ -2191,7 +2253,7 @@ msgstr ""
 "``main`` ブランチから ``release/MAJOR.MINOR`` "
 "という名前の新しいブランチを作成します(例: ``release/0.25`` )．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1323
+#: ../../pyvista/CONTRIBUTING.rst:1522
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (for example ``0, 26, 'dev0'``). Push the branch to GitHub and create a "
@@ -2201,29 +2263,26 @@ msgstr ""
 "``pyvista/_version.py`` の開発バージョン番号を更新し，コミットします(例: ``0, 26, "
 "'dev0'``)．ブランチをGitHubにプッシュし，mainにマージする今回のリリースの新しいPRを作成します．リリースに注力している間は，mainへの開発はこの時点では制限されるべきです．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1329
+#: ../../pyvista/CONTRIBUTING.rst:1528
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 "`テストのセクション <#testing>`_ で概説されているように，すべてのテストをローカルで実行し，すべてが合格していることを確認します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1332
+#: ../../pyvista/CONTRIBUTING.rst:1531
 msgid ""
-"Locally test and build the documentation with link checking to make sure no "
-"links are outdated. Be sure to run ``make clean`` to ensure no results are "
-"cached."
+"Locally test and build the documentation. Be sure to run ``make clean`` to "
+"ensure no results are cached."
 msgstr ""
-"リンクが古くなっていないことを確認するために，リンクチェックを行いながらドキュメントをローカルにテストしてビルドします．また， ``make "
-"clean`` を実行して，結果がキャッシュされていないことを確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1343
+#: ../../pyvista/CONTRIBUTING.rst:1541
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr "ドキュメントをビルドしたら，ローカル・ビルドを開き，サンプル・ギャラリーで明らかな問題がないか調べてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1346
+#: ../../pyvista/CONTRIBUTING.rst:1544
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -2233,7 +2292,7 @@ msgstr ""
 "新しいリリースを機能的にテストするのは ``pyvista`` "
 "コミュニティの責任です．このブランチをローカルにインストールして運用環境で使用することをお勧めします．検出されたバグについては，ホットフィックスをこのリリースブランチにプッシュする必要があります．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1351
+#: ../../pyvista/CONTRIBUTING.rst:1549
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -2245,13 +2304,13 @@ msgstr ""
 "ブランチのバージョン番号を更新した後， ``release/MAJOR.MINOR`` ブランチは ``vMAJOR.MINOR.0`` "
 "リリースというタグが付けられます．リリースブランチは削除されません．次のようにリリースにタグを付けます:"
 
-#: ../../pyvista/CONTRIBUTING.rst:1361
+#: ../../pyvista/CONTRIBUTING.rst:1559
 msgid ""
 "Please check again that the tag has been created correctly and push the "
 "branch and tag."
 msgstr "タグが正しく作成されたことを再度確認し，ブランチとタグをプッシュしてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1368
+#: ../../pyvista/CONTRIBUTING.rst:1566
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -2264,7 +2323,7 @@ msgstr ""
 "<https://github.com/pyvista/pyvista/compare>`_ を活用して，最後のタグや ``main`` "
 "ブランチとの違いを確認することは，しばしば役に立ちます．特定の貢献者が新機能に感謝したい場合は，GitHubのユーザー名と適切な場所の記載で，新しい貢献者を必ず確認してください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1376
+#: ../../pyvista/CONTRIBUTING.rst:1574
 msgid ""
 "Place your release notes from previous step in the description for `the new "
 "release on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
@@ -2272,7 +2331,7 @@ msgstr ""
 "前の手順のリリースノートを `GitHubの新リリース "
 "<https://github.com/pyvista/pyvista/releases/new>`_ の説明に入れてください．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1380
+#: ../../pyvista/CONTRIBUTING.rst:1578
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/regro/cf-scripts>`_ to open a pull request on the conda-"
@@ -2283,21 +2342,21 @@ msgstr ""
 "scripts>`_ がconda-forge `PyVista feedstock <https://github.com/conda-"
 "forge/pyvista-feedstock>`_ のプルリクエストを開くのを待って，そのプルリクエストをマージします．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1386
+#: ../../pyvista/CONTRIBUTING.rst:1584
 msgid "Announce the new release in the Discussions page and celebrate."
 msgstr "Discussions ページで新リリースを発表し，お祝いしましょう．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1390
+#: ../../pyvista/CONTRIBUTING.rst:1588
 msgid "Patch Release Steps"
 msgstr "パッチリリース手順"
 
-#: ../../pyvista/CONTRIBUTING.rst:1392
+#: ../../pyvista/CONTRIBUTING.rst:1590
 msgid ""
 "Patch releases are for critical and important bugfixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr "パッチリリースは重要なバグフィックスのためのもので，マイナーリリースまで待つことはできないものです．パッチリリースの手順は"
 
-#: ../../pyvista/CONTRIBUTING.rst:1395
+#: ../../pyvista/CONTRIBUTING.rst:1593
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (for example ``release/0.25``)."
@@ -2305,7 +2364,7 @@ msgstr ""
 "必要な(複数の)バグフィックスを該当するリリースブランチにプッシュします．これは通常，最新のリリースブランチ(例 "
 "``release/0.25``)です．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1398
+#: ../../pyvista/CONTRIBUTING.rst:1596
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (for example "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -2316,7 +2375,7 @@ msgstr ""
 ")，コミットし，リリースブランチとマージするPRをオープンします．これにより， ``pyvista`` "
 "コミュニティはバグ修正リリースを検証し，承認する機会を得ます．追加のホットフィックスは，このPRの範囲外でなければなりません．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1404
+#: ../../pyvista/CONTRIBUTING.rst:1602
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -2326,21 +2385,21 @@ msgstr ""
 "承認されたら，リリースブランチとマージしますが， ``main`` ブランチのバージョンを増やす理由がないため， ``main`` "
 "とはマージしません．次に，リリースブランチから適切なバージョン番号(正しい手順については上記を参照してください．)のタグを作成します．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1409
+#: ../../pyvista/CONTRIBUTING.rst:1607
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
 msgstr "必要に応じて，リリースノートページを作成します．また，condaからPRを開き，マイナーリリースセクションの手順10の指示に従います．"
 
-#: ../../pyvista/CONTRIBUTING.rst:1414
+#: ../../pyvista/CONTRIBUTING.rst:1612
 msgid "Dependency version policy"
 msgstr "依存バージョンポリシー"
 
-#: ../../pyvista/CONTRIBUTING.rst:1417
+#: ../../pyvista/CONTRIBUTING.rst:1615
 msgid "Python and VTK dependencies"
 msgstr "PythonとVTKの依存関係"
 
-#: ../../pyvista/CONTRIBUTING.rst:1419
+#: ../../pyvista/CONTRIBUTING.rst:1617
 msgid ""
 "We support all supported `Python versions`_ and `VTK versions`_ that support"
 " those Python versions. As much as we would prefer to follow `SPEC 0`_, we "
@@ -2348,6 +2407,157 @@ msgid ""
 msgstr ""
 "私たちは、サポートされているすべての `Python バージョン`_ と、それらの Python バージョンをサポートしている `VTK バージョン`_"
 " をサポートしています。私たちは `SPEC 0`_ に従いたいのですが、VTKのインターフェイスライブラリとして、VTKのバージョンに従います。"
+
+#: ../../pyvista/CONTRIBUTING.rst:1629
+msgid "Self-hosted runners"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1630
+msgid ""
+"GitHub hosted runners are the preferred way of running PyVista's CI. However"
+" given the volume of development, the number of workflows, and the need to "
+"test across several operating systems, it may be necessary to use self-"
+"hosted runners due to GitHub's concurrency limits."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1635
+msgid "Any PyVista self-hosted runner must:"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1637
+msgid "Be as compatible as possible with a GitHub hosted runner."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1638
+msgid ""
+"Use labels to denote the OS of a runner that are the same as GitHub's labels"
+" appended with ``self-hosted`` to ensure that there isn't overlap with "
+"GitHub labels.  For example, ``macos-15-self-hosted``. Additional labels may"
+" be specified (e.g. ``GPU``), but there must always be an OS label. Do not "
+"use a label that overlaps with GitHub's labels."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1643
+msgid ""
+"Be secure against intrusion and follow best cybersecurity practices (e.g. no"
+" ``sudo`` permissions, dedicated and isolated VLAN)"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1645
+msgid "Require a compatible CI/CD workflow."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1646
+msgid "Provide runner documentation here."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1647
+msgid "Be on a host with a battery backup."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1650
+msgid "GitHub Runner Workflow Configuration"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1652
+msgid ""
+"When setting up the GitHub workflow and using a ``matrix``, ensure that the "
+"name of each job in the matrix is fixed rather than dependent on labels. "
+"This way the the `Branch Protection Rules "
+"<https://github.com/pyvista/pyvista/settings/branches>`_ can use the same "
+"status check label regardless of if it is self hosted."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1676
+msgid ""
+"With this approach, a job can be configured to use GitHub's hosted runners "
+"simply by changing ``\"macos-15-self-hosted\"`` to ``\"macos-15\"``."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1681
+msgid "Setting up a runner on bare metal"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1683
+msgid ""
+"Visit PyVista's `Create self-hosted runner "
+"<https://github.com/organizations/pyvista/settings/actions/runners/new>`_."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1686
+msgid ""
+"Follow the directions to download, run and install. If the runner is "
+"intended to run public workflows, add the runner to the ``pyvista-self-"
+"hosted`` group."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1689
+msgid ""
+"Follow your OSes instructions to enable a service for the runner (if "
+"applicable) to ensure the runner restarts should it be interrupted."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1693
+msgid "PyVista Hosts and Runners"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1696
+msgid "Apple Silicon - 2024 Mac mini M4"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1697
+msgid "CPU: 10-core CPU ARM64 (Apple Silicon)"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1698
+msgid "GPU: 10-core GPU"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1699
+msgid "Storage: 256 GB SSD"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1700
+msgid "Memory: 16 GB Unified Memory"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1701
+msgid "OS: MacOS 15"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1703
+msgid ""
+"With the following runners - macos-arm-runner-0 - macos-arm-runner-1 - "
+"macos-arm-runner-2 - macos-arm-runner-3 - macos-arm-runner-4"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1710
+msgid ""
+"**Notes** Testing showed peak memory usage of ~2GB per runner for the "
+"``testing-and-deployment.yml`` workflow. With 16GB of memory and ~4 GB used "
+"by the OS, there's room to spare. Should we encounter memory issues we can "
+"disable runners."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1718
+msgid "Linux Runners"
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1719
+msgid ""
+"PyVista uses a high availability Linux cluster running "
+"[k3s](https://k3s.io/) and deployed using "
+"[Ansible](https://docs.ansible.com/). See [pyvista/arc-"
+"runners](https://github.com/pyvista/arc-runners) for more details."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:1723
+msgid ""
+"GPU enabled runs should use the ``ubuntu-24.04-self-hosted-gpu`` labels. "
+"Runners using this label will receive a minimum of 2 CPUs and at maximum 8 "
+"CPUs along with access to either an NVIDIA Quadro P2000 or a NVIDIA T400 "
+"(4GB VRAM)."
+msgstr ""
 
 #: ../../pyvista/doc/source/extras/docker.rst:1
 msgid "!"
@@ -2589,79 +2799,79 @@ msgstr ""
 msgid "API Reference"
 msgstr "APIリファレンス"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:1
 msgid "Plot directive module."
 msgstr "プロットディレクティブモジュール．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:3
 msgid "A directive for including a PyVista plot in a Sphinx document."
 msgstr "SphinxドキュメントにPyVistaプロットを含めるためのディレクティブ。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:5
 msgid ""
 "The ``.. pyvista-plot::`` sphinx directive will include an inline ``.png`` "
 "image."
 msgstr "``.. pyvista-plot::`` ディレクティブは，インラインの ``.png`` イメージを含みます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:8
 msgid "The source code for the plot may be included in one of two ways:"
 msgstr "プロットのソースコードは，次の2つの方法のいずれかで含まれます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:10
 msgid "Using **doctest** syntax::"
 msgstr "**doctest** 構文を使用しています．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:18
 msgid "**A path to a source file** as the argument to the directive::"
 msgstr "**ソースファイルへのパス** を directive の引数として指定します::"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:22
 msgid ""
 "When a path to a source file is given, the content of the directive may "
 "optionally contain a caption for the plot::"
 msgstr "ソースファイルへのパスが与えられている場合，ディレクティブの内容には，オプションでプロットのキャプションを含めることができます::"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:29
 msgid ""
 "Additionally, one may specify the name of a function to call (with no "
 "arguments) immediately after importing the module::"
 msgstr "さらに，モジュールをインポートした直後に，（引数なしで）呼び出す関数の名前を指定することもできます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:35
 msgid "Code blocks containing ``doctest:+SKIP`` will be skipped."
 msgstr "``doctest:+SKIP`` を含むコードブロックはスキップされます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:38
 msgid "Animations will not be saved, only the last frame will be shown."
 msgstr "アニメーションは保存されず，最後のフレームのみが表示されます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:41
 msgid ""
 "**Options** The ``pyvista-plot`` directive supports the following options:"
 msgstr "**Options** ```pyvista-plot`` ディレクティブは，以下のオプションをサポートしています．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:44
 msgid "include-source"
 msgstr "include-source"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool"
 msgstr "bool"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:45
 msgid ""
 "Whether to display the source code. The default can be changed using the "
@@ -2670,17 +2880,17 @@ msgstr ""
 "ソースコードを表示するかどうかを指定します．デフォルトは :file:`conf.py` の "
 "``pyvista_plot_include_source`` 変数で変更できます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:48
 msgid "encoding"
 msgstr "encoding"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "str"
 msgstr "str"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:49
 msgid ""
 "If this source file is in a non-UTF8 or non-ASCII encoding, the encoding "
@@ -2691,17 +2901,17 @@ msgstr ""
 "オプションを使ってエンコーディングを指定しなければなりません． このエンコーディングは ``-*- coding -*-`` "
 "メタコメントを使って推測されることはありません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:53
 msgid "context"
 msgstr "context"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "None"
 msgstr "None"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:54
 msgid ""
 "If provided, the code will be run in the context of all previous plot "
@@ -2712,12 +2922,12 @@ msgstr ""
 "オプションが指定された以前のすべてのプロットディレクティブのコンテクストで実行されます． "
 "これはインラインコードのプロットディレクティブにのみ適用され，ファイルから実行されるものには適用されません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:58
 msgid "nofigs"
 msgstr "nofigs"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:59
 msgid ""
 "When setting this flag, the code block will be run but no figures will be "
@@ -2726,12 +2936,12 @@ msgstr ""
 "このフラグを設定すると，コードブロックは実行されますが，数字は挿入されません． これは通常 ``:context:`` "
 "オプションと一緒に使うと便利です．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:62
 msgid "caption"
 msgstr "caption"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:63
 msgid ""
 "If specified, the option's argument will be used as a caption for the "
@@ -2740,29 +2950,29 @@ msgid ""
 msgstr ""
 "指定された場合，オプションの引数が図のキャプションとして使用されます．これは，ファイルからプロットが生成された場合，コンテンツで与えられたキャプションを上書きします．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:67
 msgid "force_static"
 msgstr "force_static"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:68
 msgid ""
 "When setting this flag, static images will be used instead of an interactive"
 " scene."
 msgstr "このフラグを設定すると，インタラクティブシーンの代わりに静止画像が使われます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:71
 msgid "skip"
 msgstr "skip"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool, default: True"
 msgstr "bool, default: True"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:72
 msgid ""
 "Whether to skip execution of this directive. If no argument is provided "
@@ -2774,12 +2984,12 @@ msgstr ""
 "true`` です。 デフォルトの動作は :file:`conf.py` の ``plot_skip`` boolean 変数によって制御されます。 "
 "このオプションは ``plot_skip`` の設定を上書きすることに注意してください。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:78
 msgid "optional"
 msgstr "optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:79
 msgid ""
 "This flag marks the directive for *conditional* execution. Whether the "
@@ -2789,7 +2999,7 @@ msgstr ""
 "このフラグはディレクティブを *条件付き* で実行することを示します。 ディレクティブが実行されるかどうかは :file:`conf.py` の "
 "``plot_skip_optional`` boolean 変数によって制御されます。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:83
 msgid ""
 "Additionally, this directive supports all the options of the `image` "
@@ -2800,12 +3010,12 @@ msgstr ""
 "が独自のターゲットを追加するため)． これらのオプションには *alt*, *height*, *width*, *scale*, *align* "
 "があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:88
 msgid "**Configuration options**"
 msgstr "**設定オプション**"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:90
 msgid ""
 "Prior to v0.45, these directives conflicted with ``matplotlib``. All "
@@ -2814,29 +3024,29 @@ msgstr ""
 "v0.45以前では、これらのディレクティブは ``matplotlib`` と衝突していました。 すべてのディレクティブの先頭に "
 "``pyvista_`` を追加しました。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:94
 msgid "The plot directive has the following configuration options:"
 msgstr "plotディレクティブには，以下の設定項目があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:96
 msgid "pyvista_plot_include_source"
 msgstr "pyvista_plot_include_source"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:97
 msgid ""
 "Default value for the ``include-source`` directive option. Default is "
 "``True``."
 msgstr "``include-source`` ディレクティブオプションのデフォルト値．デフォルトは ``True`` 。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:100
 msgid "pyvista_plot_basedir"
 msgstr "pyvista_plot_basedir"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:101
 msgid ""
 "Base directory, to which ``plot::`` file names are relative to.  If ``None``"
@@ -2846,77 +3056,114 @@ msgstr ""
 "ベースとなるディレクトリで， ``plot::`` のファイル名の相対パスを指定します．  ``None`` "
 "または未設定の場合には，ファイル名はそのディレクティブを含むファイルがあるディレクトリに相対します．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:105
 msgid "pyvista_plot_html_show_formats"
 msgstr "pyvista_plot_html_show_formats"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:106
 msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr "ファイルへのリンクをHTMLで表示するかどうか．デフォルトは ``True`` ．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:108
 msgid "pyvista_plot_template"
 msgstr "pyvista_plot_template"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:109
 msgid "Provide a customized Jinja2 template for preparing restructured text."
 msgstr "再構成されたテキストを作成するためのカスタマイズされた Jinja2 テンプレートを提供します．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:111
 msgid "pyvista_plot_setup"
 msgstr "pyvista_plot_setup"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:112
 msgid "Python code to be run before every plot directive block."
 msgstr "各プロットディレクティブブロックの前に実行されるPythonコード．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:114
 msgid "pyvista_plot_cleanup"
 msgstr "pyvista_plot_cleanup"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:115
 msgid "Python code to be run after every plot directive block."
 msgstr "各プロットディレクティブブロックの後に実行されるPythonコード．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:117
 msgid "pyvista_plot_skip"
 msgstr "pyvista_plot_skip"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool, default: False"
 msgstr "bool, default: False"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:118
 msgid "Default value for the ``skip`` directive option."
 msgstr "ディレクティブオプション ``skip`` のデフォルト値。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:120
 msgid "pyvista_plot_skip_optional"
 msgstr "pyvista_plot_skip_optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:121
 msgid "Whether to skip execution of ``optional`` directives."
 msgstr "``オプションの`` ディレクティブの実行をスキップするかどうか。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.5/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:123
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
 msgstr "これらのオプションは， :file:`conf.py` で同名のグローバル変数を定義することで設定できます．"
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:127
+msgid "**Directive Configuration Settings**"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:129
+msgid "Globally, you can set if the file names should be either:"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:131
+msgid ""
+"Deterministic, based on directive source hash: "
+"``<BASENAME>-<HASH>_<INDEX>_<SUBINDEX>.<EXT>`` (Default)"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:133
+msgid ""
+"Indexed, based on location in document: ``<BASENAME>-<DOC-"
+"INDEX>_<INDEX>_<SUBINDEX>.<EXT>``"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:136
+msgid ""
+"Enable indexed naming this by setting ``pyvista_plot_use_counter=True``. "
+"Note that indexed is incompatible with parallel builds due to race "
+"conditions."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: of pyvista.ext.plot_directive:139
+msgid "Hash-based image naming is now used by default."
+msgstr ""
 
 #: ../../pyvista/doc/source/extras/pyinstaller.rst:4
 msgid "Freezing PyVista with PyInstaller"
