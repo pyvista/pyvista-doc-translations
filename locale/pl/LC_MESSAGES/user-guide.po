@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-26 03:08+0000\n"
+"POT-Creation-Date: 2026-03-11 03:06+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Polish (https://app.transifex.com/tkoyama010/teams/112279/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -874,7 +874,9 @@ msgid ""
 "done on a plot by plot basis by setting the ``jupyter_backend`` parameter in"
 " either :func:`Plotter.show() <pyvista.Plotter.show>` or "
 ":func:`dataset.plot() <pyvista.DataSet.plot>`. You can also set it globally "
-"with the :func:`pyvista.set_jupyter_backend`. For further details:"
+"with the :func:`pyvista.set_jupyter_backend`. Custom backends are also "
+"supported with :func:`pyvista.register_jupyter_backend`. For further "
+"details:"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
@@ -882,6 +884,8 @@ msgstr ""
 msgid "Set the plotting backend for a jupyter notebook."
 msgstr ""
 
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:0
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:0
 msgid "Parameters"
@@ -892,6 +896,8 @@ msgstr ""
 msgid "**backend** : :class:`python:str`"
 msgstr ""
 
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:7
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:6
 msgid "python:str"
@@ -955,54 +961,112 @@ msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:40
-msgid "**name** : :class:`python:str`, :obj:`optional`"
-msgstr ""
-
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:39
-msgid "python:str, optional"
-msgstr ""
-
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:41
-msgid "The unique name identifier for the server."
+msgid ""
+"Custom backends registered via :func:`~pyvista.register_jupyter_backend` are"
+" also accepted."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:43
-msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgid "**name** : :class:`python:str`, :obj:`optional`"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:42
-msgid "python:dict, optional"
+msgid "python:str, optional"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:44
+msgid "The unique name identifier for the server."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:46
+msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:45
+msgid "python:dict, optional"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:47
 msgid "Any additional keyword arguments to pass to the server launch."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:59
+#: of pyvista.jupyter.register_jupyter_backend:33
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:62
 msgid "Examples"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:60
+#: of pyvista.jupyter.set_jupyter_backend:63
 msgid "Enable the trame Trame backend."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:64
+#: of pyvista.jupyter.set_jupyter_backend:67
 msgid "Just show static images."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:68
+#: of pyvista.jupyter.set_jupyter_backend:71
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:2
+msgid "Register a custom Jupyter backend handler."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:8
+msgid "**name** : :class:`python:str`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:9
+msgid ""
+"Name of the backend (e.g. ``'custom'``). Must not collide with a built-in "
+"backend name."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:12
+msgid "**handler** : :func:`python:callable`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:11
+msgid "python:callable()"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:13
+msgid ""
+"A callable with signature ``handler(plotter, **kwargs)`` that returns an "
+"IPython-displayable object."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:24
+msgid ":obj:`ValueError`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:25
+msgid "If ``name`` collides with a built-in backend."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:4
