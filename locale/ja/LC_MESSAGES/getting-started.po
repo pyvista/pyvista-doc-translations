@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-12 03:11+0000\n"
+"POT-Creation-Date: 2026-04-16 03:28+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -938,38 +938,34 @@ msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:208
 msgid ""
-"To get started, the Docker container will need to have ``libgl1-mesa-dev`` "
-"and ``xvfb`` installed through ``apt-get``. For MyBinder, include the "
-"following in a file called ``apt.txt``::"
+"The Docker container only needs VTK's runtime GL libraries. For MyBinder, "
+"include the following in a file called ``apt.txt``::"
 msgstr ""
-"まず，Dockerコンテナに ``apt-get`` を使って ``libgl1-mesa-dev`` と ``xvfb`` "
-"をインストールする必要がある．MyBinderの場合は， ``apt.txt`` というファイルに以下を含めてください::"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:215
+#: ../../pyvista/doc/source/getting-started/installation.rst:216
 msgid ""
-"Then, you need to configure the headless display, for MyBinder, create a "
-"file called ``start`` and include the following set up script that will run "
-"every time your Docker container is launched:"
+"That is the complete system-library set: ``libegl1`` enables EGL so VTK "
+"picks up GPU acceleration automatically when the container is run with the "
+"NVIDIA container runtime, and falls back to Mesa's ``llvmpipe`` software "
+"renderer on CPU-only hosts. As of VTK 9.5, headless off-screen rendering "
+"works out of the box with the stock PyPI ``vtk`` wheel, so no ``Xvfb`` or "
+"``DISPLAY`` setup is required."
 msgstr ""
-"次に，MyBinderでヘッドレスディスプレイを設定し， ``start`` "
-"というファイルを作成し，Dockerコンテナが起動されるたびに実行される以下の設定スクリプトを含める必要があります．"
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:223
+msgid ""
+"Include PyVista in your Python requirements and "
+"``pv.Plotter(off_screen=True)`` will render. If you need more help than this"
+" on setting up PyVista for these types of services, hop on the Discussions "
+"page and chat with the developers or take a look at `this repository`_ that "
+"is currently using PyVista on MyBinder."
+msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:232
-msgid ""
-"All you have to do next is include PyVista in your Python requirements and "
-"you can get to visualizing your data. If you need more help than this on "
-"setting up PyVista for these types of services, hop on Discussions page and "
-"chat with the developers or take a look at `this repository`_ that is "
-"currently using PyVista on MyBinder."
-msgstr ""
-"あとはPyVistaをPythonの要件に組み込むだけで，データを可視化できるようになります．これらのタイプのサービスのためにPyVistaをセットアップするのにこれ以上の助けが必要なら，Discussionsページで開発者とチャットするか，MyBinderで現在PyVistaを使っている"
-" `this repository`_ を見てください．"
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:241
 msgid "Running on Remote Servers"
 msgstr "リモートサーバーでの実行"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:242
+#: ../../pyvista/doc/source/getting-started/installation.rst:233
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -980,30 +976,35 @@ msgstr ""
 "18.04 LTS ( ``us-east-1`` の  ``ami-0a313d6098716f372`` "
 ")でPyVistaを使うための完全なステップを以下に示します．他のサーバも同様に動作します．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:247
+#: ../../pyvista/doc/source/getting-started/installation.rst:238
 msgid ""
-"After logging into the remote server, install Miniconda and related "
-"packages:"
-msgstr "リモートサーバにログインしたら，Minicondaと関連するパッケージをインストールします:"
+"After logging into the remote server, install VTK's runtime GL libraries and"
+" set up Python:"
+msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:264
-msgid "Then, configure the headless display:"
-msgstr "次に，ヘッドレスディスプレイを設定します:"
+#: ../../pyvista/doc/source/getting-started/installation.rst:249
+msgid ""
+"With ``libegl1`` installed, VTK 9.5+ renders off-screen via EGL out of the "
+"box, so no ``Xvfb`` or ``DISPLAY`` configuration is required. Set "
+"``PYVISTA_OFF_SCREEN=true`` in your shell (or pass ``off_screen=True`` when "
+"constructing a ``Plotter``) and ``pv.Plotter(off_screen=True)`` will just "
+"work."
+msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:274
+#: ../../pyvista/doc/source/getting-started/installation.rst:255
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr "ポート転送を使用してサーバーに再接続し，Jupyterを起動します:"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:282
-#: ../../pyvista/doc/source/getting-started/installation.rst:330
+#: ../../pyvista/doc/source/getting-started/installation.rst:263
+#: ../../pyvista/doc/source/getting-started/installation.rst:291
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr "Webブラウザで ``localhost:8888`` にアクセスします．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:285
+#: ../../pyvista/doc/source/getting-started/installation.rst:266
 msgid "Running on WSL"
 msgstr "WSLでの動作"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:286
+#: ../../pyvista/doc/source/getting-started/installation.rst:267
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -1013,53 +1014,41 @@ msgstr ""
 "上記のリモートサーバの例と同様に，LinuxのWindowsサブシステムは可視化のためのXサーバを提供しません．その代わりに，WSLを立ち上げる最も早い方法は，"
 " `JupyterLab <https://jupyter.org/>`_ を利用することです．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:290
-msgid ""
-"First, make sure you have installed the correct environment through "
-"Miniconda and related packages:"
-msgstr "まず，Minicondaと関連パッケージによって，正しい環境がインストールされていることを確認します．"
+#: ../../pyvista/doc/source/getting-started/installation.rst:271
+msgid "First, install VTK's runtime GL libraries and set up Python:"
+msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:309
+#: ../../pyvista/doc/source/getting-started/installation.rst:282
 msgid "VTK Link to Jupyter"
 msgstr "JupyterへのVTKリンク"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:310
+#: ../../pyvista/doc/source/getting-started/installation.rst:283
 msgid ""
-"There are two ways to get vtk rendering 3D objects in JupyterLab. First you "
-"can follow the example above for remote servers, skipping over the ``ssh`` "
-"instructions."
+"As of VTK 9.5, headless off-screen rendering works out of the box with the "
+"stock PyPI ``vtk`` wheel when ``libegl1`` is installed. No ``Xvfb`` or "
+"``DISPLAY`` configuration is needed. Start Jupyter:"
 msgstr ""
-"JupyterLabでvtkレンダリングの3Dオブジェクトを取得する方法は2つあります．まず，上記のリモートサーバ用の例に従って， ``ssh`` "
-"の説明を省くことができます．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:314
-msgid "Configure the headless display:"
-msgstr "ヘッドレスディスプレイを設定します:"
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:324
-msgid "Start Jupyter:"
-msgstr "Jupyterを起動します:"
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:332
+#: ../../pyvista/doc/source/getting-started/installation.rst:293
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr "最後にこのサンプルコードを追加すると，JupyterLabでインタラクティブな可視化が表示されるはずです．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:346
+#: ../../pyvista/doc/source/getting-started/installation.rst:307
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr "これでJupyterフロントエンドに直接ビジュアライゼーションが表示されるようになったはずです．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:349
+#: ../../pyvista/doc/source/getting-started/installation.rst:310
 msgid "Running with Sphinx-Gallery"
 msgstr "Sphinx-Galleryでの実行"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:350
+#: ../../pyvista/doc/source/getting-started/installation.rst:311
 msgid "In your ``conf.py``, add the following:"
 msgstr "あなたの ``conf.py`` に, 次を追加します．"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:377
+#: ../../pyvista/doc/source/getting-started/installation.rst:338
 msgid ""
 "We also have a Sphinx-Gallery scraper for embedding dynamic 3D scenes "
 "instead of static screenshots. This scraper can be enabled by passing an "

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-14 03:23+0000\n"
+"POT-Creation-Date: 2026-04-16 03:28+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -2593,15 +2593,11 @@ msgid ""
 "(4GB VRAM)."
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/docker.rst:1
-msgid "!"
-msgstr "!"
-
-#: ../../pyvista/doc/source/extras/docker.rst:4
+#: ../../pyvista/doc/source/extras/docker.rst:2
 msgid "PyVista within a Docker Container"
 msgstr "Dockerコンテナ内のPyVista"
 
-#: ../../pyvista/doc/source/extras/docker.rst:5
+#: ../../pyvista/doc/source/extras/docker.rst:3
 msgid ""
 "You can use ``pyvista`` from within a docker container with jupyterlab. To "
 "launch a local docker container, install ``docker``, then pull and run the "
@@ -2610,13 +2606,13 @@ msgstr ""
 "jupyterlabでは，Dockerコンテナから ``pyvista`` を使用することができます． ローカルのDockerコンテナを起動するには， "
 "``docker`` をインストールし，イメージをpullして実行する．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:13
+#: ../../pyvista/doc/source/extras/docker.rst:11
 msgid ""
 "Finally, open the link that shows up from the terminal output and start "
 "playing around with pyvista in jupyterlab. For example:"
 msgstr "最後に，端末出力に表示されるリンクを開き，jupyterlabのpyvistaを試してみましょう．たとえば，次のようになります．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:27
+#: ../../pyvista/doc/source/extras/docker.rst:25
 msgid ""
 "You can see the latest tags of `our Docker containers here "
 "<https://github.com/pyvista/pyvista/pkgs/container/pyvista>`_. "
@@ -2628,7 +2624,7 @@ msgstr ""
 " で見ることができます． ``ghcr.io/pyvista/pyvista:latest`` には JupyterLab がセットアップされており， "
 "``ghcr.io/pyvista/pyvista:latest-slim`` は Jupyter を含まない軽量の Python 環境です．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:34
+#: ../../pyvista/doc/source/extras/docker.rst:32
 msgid ""
 "You may need to log into the GitHub container registry by following the "
 "directions at `Working with the Docker registry "
@@ -2639,68 +2635,67 @@ msgstr ""
 "server@3.0/packages/working-with-a-github-packages-registry/working-with-"
 "the-docker-registry>`_ にある指示に従って，GitHubのコンテナレジストリにログインする必要があるかもしれません)"
 
-#: ../../pyvista/doc/source/extras/docker.rst:39
+#: ../../pyvista/doc/source/extras/docker.rst:37
 msgid "Create your own Docker Container with PyVista"
 msgstr "PyVista で独自のDockerコンテナを作成します"
 
-#: ../../pyvista/doc/source/extras/docker.rst:40
+#: ../../pyvista/doc/source/extras/docker.rst:38
 msgid ""
-"Clone PyVista and cd into this directory to create your own customized "
-"docker image."
-msgstr "PyVistaをこのディレクトリにクローンしcdでこのディレクトリに入り，独自のカスタマイズされたDockerイメージを作成します．"
-
-#: ../../pyvista/doc/source/extras/docker.rst:50
-msgid ""
-"If you wish to have off-screen GPU support when rending on jupyterlab, see "
-"the notes about building with EGL at :ref:`building_vtk`, or use the custom,"
-" pre-built wheels at `Release 0.27.0 "
-"<https://github.com/pyvista/pyvista/releases/tag/0.27.0>`_. Install that "
-"customized vtk wheel onto your docker image by modifying the docker image at"
-" ``pyvista/docker/jupyter.Dockerfile`` with:"
+"Both the ``latest`` and ``latest-slim`` images are produced from a single "
+"multi-stage Dockerfile at ``docker/Dockerfile``. The PyVista wheel is built "
+"*inside* the Docker build, so no pre-build steps are required. Clone the "
+"repository and run ``docker build`` from the project root:"
 msgstr ""
-"jupyterlabでレンタルする際にオフスクリーンGPUをサポートさせたい場合は， :ref:`building_vtk` "
-"のEGLでのビルドに関する注意を参照するか， `Release 0.27.0 "
-"<https://github.com/pyvista/pyvista/releases/tag/0.27.0>`_ "
-"のカスタムのプリビルドwheelを使用してください． ``pyvista/docker/jupyter.Dockerfile`` "
-"のDockerイメージを次のように変更して，カスタマイズしたvtk wheelをdockerイメージにインストールします．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:62
+#: ../../pyvista/doc/source/extras/docker.rst:54
 msgid ""
-"Additionally, you must install GPU drivers on the docker image of the same "
-"version running on the host machine. For example, if you are running on "
-"Azure Kubernetes Service and the GPU nodes on the kubernetes cluster are "
-"running ``450.51.06``, you must install the same version on your image. "
-"Since you will be using the underlying kernel module, there's no reason to "
-"build it on the container (and trying will only result in an error)."
+"The ``jupyter`` target installs the ``jupyter``, ``colormaps``, and ``io`` "
+"optional dependency groups directly from ``pyproject.toml``, so the package "
+"set always matches the project's pins. There is no separate "
+"``requirements.txt`` to keep in sync."
 msgstr ""
-"さらに，ホストマシンで実行されている同じバージョンのDockerイメージにGPUドライバをインストールする必要があります．例えば，Azure "
-"Kubernetes Serviceを実行していて，Kubernetesクラスタ上のGPUノードが ``450.51.06`` "
-"を実行している場合，同じバージョンをイメージにインストールする必要があります．基礎となるカーネル・モジュールを使用することになるので，コンテナー上にビルドする理由はありません(試行してもエラーになるだけです．)．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:76
+#: ../../pyvista/doc/source/extras/docker.rst:59
 msgid ""
-"To verify that you're rendering on a GPU, first check the output of "
-"``nvidia-smi``. You should get something like:"
-msgstr "GPUでレンダリングしているかどうかを確認するには，まず ``nvidia-smi`` の出力をチェックします．"
-
-#: ../../pyvista/doc/source/extras/docker.rst:95
-msgid ""
-"Note the driver version (which is actually the kernel driver version), and "
-"verify it matches the version you installed on your docker image."
+"Override the Python version (must match a supported VTK wheel) via a build "
+"argument:"
 msgstr ""
-"ドライバのバージョン(これは実際にはカーネルドライバのバージョンです．)をメモし，それがdockerイメージにインストールしたバージョンと一致することを確認します．"
 
-#: ../../pyvista/doc/source/extras/docker.rst:98
-msgid ""
-"Finally, check that your render window is using NVIDIA by running "
-"``ReportCapabilities``:"
-msgstr "最後に， ``ReportCapabilities`` を実行して，レンダーウィンドウがNVIDIAを使用していることを確認します．"
+#: ../../pyvista/doc/source/extras/docker.rst:68
+msgid "GPU Rendering with the NVIDIA Container Runtime"
+msgstr ""
 
-#: ../../pyvista/doc/source/extras/docker.rst:117
+#: ../../pyvista/doc/source/extras/docker.rst:69
 msgid ""
-"If you get ``display id not set``, then your environment is likely not set "
-"up correctly."
-msgstr "``display id not set`` を受信した場合，環境が正しく設定されていない可能性があります．"
+"Both published images ship with ``libegl1`` and set "
+"``NVIDIA_VISIBLE_DEVICES=all`` plus "
+"``NVIDIA_DRIVER_CAPABILITIES=graphics,utility,compute``. VTK 9.5+ picks the "
+"``vtkEGLRenderWindow`` automatically, so rendering uses the host's NVIDIA "
+"driver when the container is started with the NVIDIA container runtime:"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/docker.rst:80
+msgid ""
+"The only host-side requirement is the `NVIDIA Container Toolkit "
+"<https://docs.nvidia.com/datacenter/cloud-native/container-"
+"toolkit/latest/install-guide.html>`_. No in-container driver install, no "
+"kernel modules, no version matching against the host driver. On CPU-only "
+"hosts (no ``--gpus``) the same image transparently falls back to Mesa's "
+"``llvmpipe`` software renderer via EGL."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/docker.rst:87
+msgid ""
+"To verify you are rendering on a GPU, inspect ``pv.Report()`` from inside "
+"the container:"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/docker.rst:96
+msgid ""
+"The ``GPU Vendor`` and ``GPU Renderer`` fields should report the NVIDIA "
+"driver and the GPU model. ``Render Window`` should read "
+"``vtkEGLRenderWindow``."
+msgstr ""
 
 #: ../../pyvista/doc/source/extras/extending_pyvista.rst:2
 msgid "Extending PyVista"
@@ -2833,79 +2828,79 @@ msgstr ""
 msgid "API Reference"
 msgstr "APIリファレンス"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:1
 msgid "Plot directive module."
 msgstr "プロットディレクティブモジュール．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:3
 msgid "A directive for including a PyVista plot in a Sphinx document."
 msgstr "SphinxドキュメントにPyVistaプロットを含めるためのディレクティブ。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:5
 msgid ""
 "The ``.. pyvista-plot::`` sphinx directive will include an inline ``.png`` "
 "image."
 msgstr "``.. pyvista-plot::`` ディレクティブは，インラインの ``.png`` イメージを含みます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:8
 msgid "The source code for the plot may be included in one of two ways:"
 msgstr "プロットのソースコードは，次の2つの方法のいずれかで含まれます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:10
 msgid "Using **doctest** syntax::"
 msgstr "**doctest** 構文を使用しています．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:18
 msgid "**A path to a source file** as the argument to the directive::"
 msgstr "**ソースファイルへのパス** を directive の引数として指定します::"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:22
 msgid ""
 "When a path to a source file is given, the content of the directive may "
 "optionally contain a caption for the plot::"
 msgstr "ソースファイルへのパスが与えられている場合，ディレクティブの内容には，オプションでプロットのキャプションを含めることができます::"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:29
 msgid ""
 "Additionally, one may specify the name of a function to call (with no "
 "arguments) immediately after importing the module::"
 msgstr "さらに，モジュールをインポートした直後に，（引数なしで）呼び出す関数の名前を指定することもできます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:35
 msgid "Code blocks containing ``doctest:+SKIP`` will be skipped."
 msgstr "``doctest:+SKIP`` を含むコードブロックはスキップされます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:38
 msgid "Animations will not be saved, only the last frame will be shown."
 msgstr "アニメーションは保存されず，最後のフレームのみが表示されます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:41
 msgid ""
 "**Options** The ``pyvista-plot`` directive supports the following options:"
 msgstr "**Options** ```pyvista-plot`` ディレクティブは，以下のオプションをサポートしています．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:44
 msgid "include-source"
 msgstr "include-source"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool"
 msgstr "bool"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:45
 msgid ""
 "Whether to display the source code. The default can be changed using the "
@@ -2914,17 +2909,17 @@ msgstr ""
 "ソースコードを表示するかどうかを指定します．デフォルトは :file:`conf.py` の "
 "``pyvista_plot_include_source`` 変数で変更できます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:48
 msgid "encoding"
 msgstr "encoding"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "str"
 msgstr "str"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:49
 msgid ""
 "If this source file is in a non-UTF8 or non-ASCII encoding, the encoding "
@@ -2935,17 +2930,17 @@ msgstr ""
 "オプションを使ってエンコーディングを指定しなければなりません． このエンコーディングは ``-*- coding -*-`` "
 "メタコメントを使って推測されることはありません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:53
 msgid "context"
 msgstr "context"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "None"
 msgstr "None"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:54
 msgid ""
 "If provided, the code will be run in the context of all previous plot "
@@ -2956,12 +2951,12 @@ msgstr ""
 "オプションが指定された以前のすべてのプロットディレクティブのコンテクストで実行されます． "
 "これはインラインコードのプロットディレクティブにのみ適用され，ファイルから実行されるものには適用されません．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:58
 msgid "nofigs"
 msgstr "nofigs"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:59
 msgid ""
 "When setting this flag, the code block will be run but no figures will be "
@@ -2970,12 +2965,12 @@ msgstr ""
 "このフラグを設定すると，コードブロックは実行されますが，数字は挿入されません． これは通常 ``:context:`` "
 "オプションと一緒に使うと便利です．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:62
 msgid "caption"
 msgstr "caption"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:63
 msgid ""
 "If specified, the option's argument will be used as a caption for the "
@@ -2984,29 +2979,29 @@ msgid ""
 msgstr ""
 "指定された場合，オプションの引数が図のキャプションとして使用されます．これは，ファイルからプロットが生成された場合，コンテンツで与えられたキャプションを上書きします．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:67
 msgid "force_static"
 msgstr "force_static"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:68
 msgid ""
 "When setting this flag, static images will be used instead of an interactive"
 " scene."
 msgstr "このフラグを設定すると，インタラクティブシーンの代わりに静止画像が使われます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:71
 msgid "skip"
 msgstr "skip"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool, default: True"
 msgstr "bool, default: True"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:72
 msgid ""
 "Whether to skip execution of this directive. If no argument is provided "
@@ -3018,12 +3013,12 @@ msgstr ""
 "true`` です。 デフォルトの動作は :file:`conf.py` の ``plot_skip`` boolean 変数によって制御されます。 "
 "このオプションは ``plot_skip`` の設定を上書きすることに注意してください。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:78
 msgid "optional"
 msgstr "optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:79
 msgid ""
 "This flag marks the directive for *conditional* execution. Whether the "
@@ -3033,7 +3028,7 @@ msgstr ""
 "このフラグはディレクティブを *条件付き* で実行することを示します。 ディレクティブが実行されるかどうかは :file:`conf.py` の "
 "``plot_skip_optional`` boolean 変数によって制御されます。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:83
 msgid ""
 "Additionally, this directive supports all the options of the `image` "
@@ -3044,12 +3039,12 @@ msgstr ""
 "が独自のターゲットを追加するため)． これらのオプションには *alt*, *height*, *width*, *scale*, *align* "
 "があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:88
 msgid "**Configuration options**"
 msgstr "**設定オプション**"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:90
 msgid ""
 "Prior to v0.45, these directives conflicted with ``matplotlib``. All "
@@ -3058,29 +3053,29 @@ msgstr ""
 "v0.45以前では、これらのディレクティブは ``matplotlib`` と衝突していました。 すべてのディレクティブの先頭に "
 "``pyvista_`` を追加しました。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:94
 msgid "The plot directive has the following configuration options:"
 msgstr "plotディレクティブには，以下の設定項目があります．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:96
 msgid "pyvista_plot_include_source"
 msgstr "pyvista_plot_include_source"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:97
 msgid ""
 "Default value for the ``include-source`` directive option. Default is "
 "``True``."
 msgstr "``include-source`` ディレクティブオプションのデフォルト値．デフォルトは ``True`` 。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:100
 msgid "pyvista_plot_basedir"
 msgstr "pyvista_plot_basedir"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:101
 msgid ""
 "Base directory, to which ``plot::`` file names are relative to.  If ``None``"
@@ -3090,103 +3085,103 @@ msgstr ""
 "ベースとなるディレクトリで， ``plot::`` のファイル名の相対パスを指定します．  ``None`` "
 "または未設定の場合には，ファイル名はそのディレクティブを含むファイルがあるディレクトリに相対します．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:105
 msgid "pyvista_plot_html_show_formats"
 msgstr "pyvista_plot_html_show_formats"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:106
 msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr "ファイルへのリンクをHTMLで表示するかどうか．デフォルトは ``True`` ．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:108
 msgid "pyvista_plot_template"
 msgstr "pyvista_plot_template"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:109
 msgid "Provide a customized Jinja2 template for preparing restructured text."
 msgstr "再構成されたテキストを作成するためのカスタマイズされた Jinja2 テンプレートを提供します．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:111
 msgid "pyvista_plot_setup"
 msgstr "pyvista_plot_setup"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:112
 msgid "Python code to be run before every plot directive block."
 msgstr "各プロットディレクティブブロックの前に実行されるPythonコード．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:114
 msgid "pyvista_plot_cleanup"
 msgstr "pyvista_plot_cleanup"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:115
 msgid "Python code to be run after every plot directive block."
 msgstr "各プロットディレクティブブロックの後に実行されるPythonコード．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:117
 msgid "pyvista_plot_skip"
 msgstr "pyvista_plot_skip"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool, default: False"
 msgstr "bool, default: False"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:118
 msgid "Default value for the ``skip`` directive option."
 msgstr "ディレクティブオプション ``skip`` のデフォルト値。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:120
 msgid "pyvista_plot_skip_optional"
 msgstr "pyvista_plot_skip_optional"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:121
 msgid "Whether to skip execution of ``optional`` directives."
 msgstr "``オプションの`` ディレクティブの実行をスキップするかどうか。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:123
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
 msgstr "これらのオプションは， :file:`conf.py` で同名のグローバル変数を定義することで設定できます．"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:127
 msgid "**Directive Configuration Settings**"
 msgstr "**ディレクティブの設定**"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:129
 msgid "Globally, you can set if the file names should be either:"
 msgstr "全体的に、ファイル名を以下のいずれかに設定できます:"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:131
 msgid ""
 "Deterministic, based on directive source hash: "
 "``<BASENAME>-<HASH>_<INDEX>_<SUBINDEX>.<EXT>`` (Default)"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:133
 msgid ""
 "Indexed, based on location in document: ``<BASENAME>-<DOC-"
 "INDEX>_<INDEX>_<SUBINDEX>.<EXT>``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:136
 msgid ""
 "Enable indexed naming this by setting ``pyvista_plot_use_counter=True``. "
@@ -3196,7 +3191,7 @@ msgstr ""
 "``pyvista_plot_use_counter=True`` "
 "を設定することで、インデックス付き命名機能を有効にできます。なお、競合状態が発生するため、インデックス付き命名は並列ビルドとは互換性がありません。"
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.12/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:139
 msgid "Hash-based image naming is now used by default."
 msgstr "デフォルトでハッシュベースの画像命名方式が使用されるようになりました。"
