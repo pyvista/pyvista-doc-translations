@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-16 03:28+0000\n"
+"POT-Creation-Date: 2026-04-19 01:23+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: 聖文 陳, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -353,13 +353,13 @@ msgstr ""
 msgid "While we're at it, let's annotate this plot to describe this mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:331
+#: ../../pyvista/doc/source/user-guide/data_model.rst:332
 msgid ""
 "You can clearly see how the polygon is created based on the connectivity of "
 "the points."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:334
+#: ../../pyvista/doc/source/user-guide/data_model.rst:335
 msgid ""
 "This instance has several attributes to access the underlying data of the "
 "mesh. For example, if you wish to access or modify the points of the mesh, "
@@ -367,87 +367,87 @@ msgid ""
 "<pyvista.DataSet.points>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:343
+#: ../../pyvista/doc/source/user-guide/data_model.rst:344
 msgid ""
 "The connectivity can also be accessed from the :attr:`faces "
 "<pyvista.PolyData.faces>` attribute with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:350
+#: ../../pyvista/doc/source/user-guide/data_model.rst:351
 msgid "Or we could simply get the representation of the mesh with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:356
+#: ../../pyvista/doc/source/user-guide/data_model.rst:357
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:254
 msgid "In this representation we see:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:358
+#: ../../pyvista/doc/source/user-guide/data_model.rst:359
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:256
 msgid "Number of cells :attr:`n_cells <pyvista.DataSet.n_cells>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:359
+#: ../../pyvista/doc/source/user-guide/data_model.rst:360
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:257
 msgid "Number of points :attr:`n_points <pyvista.DataSet.n_points>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:360
+#: ../../pyvista/doc/source/user-guide/data_model.rst:361
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:258
 msgid "Bounds of the mesh :attr:`bounds <pyvista.DataSet.bounds>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:361
+#: ../../pyvista/doc/source/user-guide/data_model.rst:362
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:259
 msgid "Number of data arrays :attr:`n_arrays <pyvista.DataSet.n_arrays>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:363
+#: ../../pyvista/doc/source/user-guide/data_model.rst:364
 msgid ""
 "This is vastly different from the output from VTK. See "
 ":ref:`vtk_vs_pyvista_object_repr` for the comparison between the two "
 "representations."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:367
+#: ../../pyvista/doc/source/user-guide/data_model.rst:368
 msgid ""
 "This mesh contains no data arrays as it consists only of geometry. This "
 "makes it useful for plotting just the geometry of the mesh, but datasets "
 "often contain more than just geometry. For example:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:371
+#: ../../pyvista/doc/source/user-guide/data_model.rst:372
 msgid "An electrical field computed from a changing magnetic field"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:372
+#: ../../pyvista/doc/source/user-guide/data_model.rst:373
 msgid "Vector field of blood flow through artery"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:373
+#: ../../pyvista/doc/source/user-guide/data_model.rst:374
 msgid "Surface stresses from a structural finite element analysis"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:374
+#: ../../pyvista/doc/source/user-guide/data_model.rst:375
 msgid "Mineral deposits from geophysics"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:375
+#: ../../pyvista/doc/source/user-guide/data_model.rst:376
 msgid "Weather patterns as a vector field or surface data."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:377
+#: ../../pyvista/doc/source/user-guide/data_model.rst:378
 msgid ""
 "While each one of these datasets could be represented as a different "
 "geometry class, they would all contain point, cell, or field data that "
 "explains the value of the data at a certain location within the geometry."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:384
+#: ../../pyvista/doc/source/user-guide/data_model.rst:385
 msgid "Data Arrays"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:385
+#: ../../pyvista/doc/source/user-guide/data_model.rst:386
 msgid ""
 "Each :class:`DataSet <pyvista.DataSet>` contains attributes that allow you "
 "to access the underlying numeric data. This numerical data may be associated"
@@ -455,7 +455,7 @@ msgid ""
 "with points or cells and attached to the mesh in general."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:391
+#: ../../pyvista/doc/source/user-guide/data_model.rst:392
 msgid ""
 "To illustrate data arrays within PyVista, let's first construct a slightly "
 "more complex mesh than our previous example. Here, we create a simple mesh "
@@ -464,11 +464,11 @@ msgid ""
 "<pyvista.DataSet.cast_to_unstructured_grid>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:404
+#: ../../pyvista/doc/source/user-guide/data_model.rst:405
 msgid "Let's also plot this basic mesh:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:429
+#: ../../pyvista/doc/source/user-guide/data_model.rst:430
 msgid ""
 "Now that we have a simple mesh to work with, we can start assigning it data."
 " There are two main types of data that can be associated with a mesh: scalar"
@@ -478,7 +478,7 @@ msgid ""
 "and is represented as arrays containing three components per data point."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:437
+#: ../../pyvista/doc/source/user-guide/data_model.rst:438
 msgid ""
 "When plotting, we can easily display scalar data, but this data must be "
 "\"associated\" with either points or cells. For example, we may wish to "
@@ -486,12 +486,12 @@ msgid ""
 " the :attr:`cell_data <pyvista.DataSet.cell_data>` attribute of our mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:448
+#: ../../pyvista/doc/source/user-guide/data_model.rst:449
 #: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:169
 msgid "Cell Data"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:449
+#: ../../pyvista/doc/source/user-guide/data_model.rst:450
 msgid ""
 "The easiest way to add scalar data to a :class:`DataSet <pyvista.DataSet>` "
 "is to use the ``[]`` operator. Continuing with our example above, let's "
@@ -503,26 +503,26 @@ msgid ""
 "``[]`` operator."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:465
+#: ../../pyvista/doc/source/user-guide/data_model.rst:466
 msgid ""
 "Note how we are returned a :class:`pyvista.pyvista_ndarray`. Since VTK "
 "requires C arrays, PyVista will internally wrap or convert all inputs to C "
 "arrays. We can then plot this with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:480
+#: ../../pyvista/doc/source/user-guide/data_model.rst:481
 msgid ""
 "Note how we did not have to specify which cell data to plot as the ``[]`` "
 "operator automatically sets the active scalars:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:487
+#: ../../pyvista/doc/source/user-guide/data_model.rst:488
 msgid ""
 "We can also add labels to our plot to show which cells are assigned which "
 "scalars. Note how this is in the same order as the scalars we assigned."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:502
+#: ../../pyvista/doc/source/user-guide/data_model.rst:503
 msgid ""
 "We can continue to assign cell data to our :class:`DataSet "
 "<pyvista.DataSet>` using the ``[]`` operator, but if you do not wish the new"
@@ -530,7 +530,7 @@ msgid ""
 "<pyvista.DataSetAttributes.set_array>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:513
+#: ../../pyvista/doc/source/user-guide/data_model.rst:514
 msgid ""
 "Now, ``ugrid`` contains two arrays, one of which is the \"active\" scalars. "
 "This set of active scalars will be the one plotted automatically when "
@@ -540,7 +540,7 @@ msgid ""
 "cell scalars by default."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:520
+#: ../../pyvista/doc/source/user-guide/data_model.rst:521
 msgid ""
 "The active scalars can also be accessed via :attr:`active_scalars "
 "<pyvista.DataSet.active_scalars>`, and the name of the active scalars array "
@@ -548,12 +548,12 @@ msgid ""
 "<pyvista.DataSet.active_scalars_name>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:533
+#: ../../pyvista/doc/source/user-guide/data_model.rst:534
 #: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:155
 msgid "Point Data"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:534
+#: ../../pyvista/doc/source/user-guide/data_model.rst:535
 msgid ""
 "Data can be associated to points in the same manner as in "
 ":ref:`pyvista_data_model_cell_data`. The :attr:`point_data "
@@ -562,13 +562,13 @@ msgid ""
 "associate a simple list to the points using the ``[]`` operator."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:547
+#: ../../pyvista/doc/source/user-guide/data_model.rst:548
 msgid ""
 "Again, these values become the active scalars in our point arrays by default"
 " by using the ``[]`` operator:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:554
+#: ../../pyvista/doc/source/user-guide/data_model.rst:555
 msgid ""
 "Let's plot the point data. Note how this varies from the cell data plot; "
 "each individual point is assigned a scalar value which is interpolated "
@@ -576,14 +576,14 @@ msgid ""
 "``Point 0`` to the highest value at ``Point 8``."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:581
+#: ../../pyvista/doc/source/user-guide/data_model.rst:582
 msgid ""
 "As in :ref:`pyvista_data_model_cell_data`, we can assign multiple arrays to "
 ":attr:`point_data <pyvista.DataSet.point_data>` using :func:`set_array() "
 "<pyvista.DataSetAttributes.set_array>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:591
+#: ../../pyvista/doc/source/user-guide/data_model.rst:592
 msgid ""
 "Again, here there are now two arrays associated to the point data, and only "
 "one is the \"active\" scalars array. Like as in the cell data, we can "
@@ -592,17 +592,17 @@ msgid ""
 ":attr:`active_scalars_name <pyvista.DataSet.active_scalars_name>`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:606
+#: ../../pyvista/doc/source/user-guide/data_model.rst:607
 msgid "Dataset Active Scalars"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:607
+#: ../../pyvista/doc/source/user-guide/data_model.rst:608
 msgid ""
 "Continuing from the previous sections, our ``ugrid`` dataset now contains "
 "both point and cell data:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:618
+#: ../../pyvista/doc/source/user-guide/data_model.rst:619
 msgid ""
 "There are active scalars in both point and cell data, but only one type of "
 "scalars can be \"active\" at the dataset level. The reason for this is that "
@@ -611,7 +611,7 @@ msgid ""
 "<pyvista.DataSet.active_scalars_info>`:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:628
+#: ../../pyvista/doc/source/user-guide/data_model.rst:629
 msgid ""
 "Note that the active scalars are by default the point scalars. You can "
 "change this by setting the active scalars with :func:`set_active_scalars() "
@@ -620,18 +620,18 @@ msgid ""
 "name, you must specify the ``preference``:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:640
+#: ../../pyvista/doc/source/user-guide/data_model.rst:641
 msgid ""
 "This can also be set when plotting using the ``preference`` parameter in "
 ":func:`add_mesh() <pyvista.Plotter.add_mesh>` or :func:`pyvista.plot`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:646
+#: ../../pyvista/doc/source/user-guide/data_model.rst:647
 #: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:202
 msgid "Field Data"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:647
+#: ../../pyvista/doc/source/user-guide/data_model.rst:648
 msgid ""
 "Field arrays are different from :attr:`point_data "
 "<pyvista.DataSet.point_data>` and :attr:`cell_data "
@@ -642,53 +642,53 @@ msgid ""
 "arrays in the field data:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:660
+#: ../../pyvista/doc/source/user-guide/data_model.rst:661
 msgid ""
 "Note that the field data is automatically transferred to VTK C-style arrays "
 "and then represented as a numpy data format."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:663
+#: ../../pyvista/doc/source/user-guide/data_model.rst:664
 msgid ""
 "When listing the current field data, note that the association is \"NONE\":"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:669
+#: ../../pyvista/doc/source/user-guide/data_model.rst:670
 msgid ""
 "This is because the data is not associated with points or cells, and cannot "
 "be made so because field data is not expected to match the number of cells "
 "or points. As such, it also cannot be plotted."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:675
+#: ../../pyvista/doc/source/user-guide/data_model.rst:676
 msgid "Vectors, Texture Coords, and Normals Attributes"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:676
+#: ../../pyvista/doc/source/user-guide/data_model.rst:677
 msgid ""
 "Both cell and point data can also store the following \"special\" attributes"
 " in addition to :attr:`active_scalars <pyvista.DataSet.active_scalars>`:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:678
+#: ../../pyvista/doc/source/user-guide/data_model.rst:679
 msgid ":attr:`active_normals <pyvista.DataSet.active_normals>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:679
+#: ../../pyvista/doc/source/user-guide/data_model.rst:680
 msgid ""
 ":attr:`active_texture_coordinates "
 "<pyvista.DataSet.active_texture_coordinates>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:680
+#: ../../pyvista/doc/source/user-guide/data_model.rst:681
 msgid ":attr:`active_vectors <pyvista.DataSet.active_vectors>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:684
+#: ../../pyvista/doc/source/user-guide/data_model.rst:685
 msgid "Active Normals"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:685
+#: ../../pyvista/doc/source/user-guide/data_model.rst:686
 msgid ""
 "The :attr:`active_normals <pyvista.DataSet.active_normals>` array is a "
 "special array that specifies the local normal direction of meshes. It is "
@@ -697,22 +697,22 @@ msgid ""
 " plotting with ``smooth_shading=True`` or ``pbr=True``, it will be computed."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:695
+#: ../../pyvista/doc/source/user-guide/data_model.rst:696
 msgid "Active Texture Coordinates"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:696
+#: ../../pyvista/doc/source/user-guide/data_model.rst:697
 msgid ""
 "The :attr:`active_texture_coordinates "
 "<pyvista.DataSet.active_texture_coordinates>` array is used for rendering "
 "textures. See :ref:`texture_example` for examples using this array."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:703
+#: ../../pyvista/doc/source/user-guide/data_model.rst:704
 msgid "Active Vectors"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:704
+#: ../../pyvista/doc/source/user-guide/data_model.rst:705
 msgid ""
 "The :attr:`active_vectors <pyvista.DataSet.active_vectors>` is an array "
 "containing quantities that have magnitude and direction (specifically, three"
@@ -723,7 +723,7 @@ msgid ""
 "data)."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:713
+#: ../../pyvista/doc/source/user-guide/data_model.rst:714
 msgid ""
 "Vectors are treated differently within VTK than scalars when performing "
 "transformations using the :func:`~pyvista.DataObjectFilters.transform` "
@@ -731,7 +731,7 @@ msgid ""
 "the geometry as these vectors represent quantities with direction."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/data_model.rst:720
+#: ../../pyvista/doc/source/user-guide/data_model.rst:721
 msgid ""
 "VTK permits only one \"active\" vector. If you have multiple vector arrays "
 "that you wish to transform, set ``transform_all_input_vectors=True`` in "
