@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2017-2025, The PyVista Developers
+# Copyright (C) 2017-2026, The PyVista Developers
 # This file is distributed under the same license as the PyVista package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.47.dev0\n"
+"Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 02:35+0000\n"
+"POT-Creation-Date: 2026-04-16 03:28+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: SerTetora, 2022\n"
 "Language-Team: Ukrainian (https://app.transifex.com/tkoyama010/teams/112279/uk/)\n"
@@ -178,7 +178,7 @@ msgid "The MIT License"
 msgstr "Ліцензія MIT"
 
 #: ../../pyvista/LICENSE:3
-msgid "Copyright (c) 2017-2025 The PyVista Developers"
+msgid "Copyright (c) 2017-2026 The PyVista Developers"
 msgstr ""
 
 #: ../../pyvista/LICENSE:5
@@ -866,32 +866,34 @@ msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:208
 msgid ""
-"To get started, the Docker container will need to have ``libgl1-mesa-dev`` "
-"and ``xvfb`` installed through ``apt-get``. For MyBinder, include the "
-"following in a file called ``apt.txt``::"
+"The Docker container only needs VTK's runtime GL libraries. For MyBinder, "
+"include the following in a file called ``apt.txt``::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:215
+#: ../../pyvista/doc/source/getting-started/installation.rst:216
 msgid ""
-"Then, you need to configure the headless display, for MyBinder, create a "
-"file called ``start`` and include the following set up script that will run "
-"every time your Docker container is launched:"
+"That is the complete system-library set: ``libegl1`` enables EGL so VTK "
+"picks up GPU acceleration automatically when the container is run with the "
+"NVIDIA container runtime, and falls back to Mesa's ``llvmpipe`` software "
+"renderer on CPU-only hosts. As of VTK 9.5, headless off-screen rendering "
+"works out of the box with the stock PyPI ``vtk`` wheel, so no ``Xvfb`` or "
+"``DISPLAY`` setup is required."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:223
+msgid ""
+"Include PyVista in your Python requirements and "
+"``pv.Plotter(off_screen=True)`` will render. If you need more help than this"
+" on setting up PyVista for these types of services, hop on the Discussions "
+"page and chat with the developers or take a look at `this repository`_ that "
+"is currently using PyVista on MyBinder."
 msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:232
-msgid ""
-"All you have to do next is include PyVista in your Python requirements and "
-"you can get to visualizing your data. If you need more help than this on "
-"setting up PyVista for these types of services, hop on Discussions page and "
-"chat with the developers or take a look at `this repository`_ that is "
-"currently using PyVista on MyBinder."
-msgstr ""
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:241
 msgid "Running on Remote Servers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:242
+#: ../../pyvista/doc/source/getting-started/installation.rst:233
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -899,30 +901,35 @@ msgid ""
 " servers would work similarly."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:247
+#: ../../pyvista/doc/source/getting-started/installation.rst:238
 msgid ""
-"After logging into the remote server, install Miniconda and related "
-"packages:"
+"After logging into the remote server, install VTK's runtime GL libraries and"
+" set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:264
-msgid "Then, configure the headless display:"
+#: ../../pyvista/doc/source/getting-started/installation.rst:249
+msgid ""
+"With ``libegl1`` installed, VTK 9.5+ renders off-screen via EGL out of the "
+"box, so no ``Xvfb`` or ``DISPLAY`` configuration is required. Set "
+"``PYVISTA_OFF_SCREEN=true`` in your shell (or pass ``off_screen=True`` when "
+"constructing a ``Plotter``) and ``pv.Plotter(off_screen=True)`` will just "
+"work."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:274
+#: ../../pyvista/doc/source/getting-started/installation.rst:255
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:282
-#: ../../pyvista/doc/source/getting-started/installation.rst:330
+#: ../../pyvista/doc/source/getting-started/installation.rst:263
+#: ../../pyvista/doc/source/getting-started/installation.rst:291
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:285
+#: ../../pyvista/doc/source/getting-started/installation.rst:266
 msgid "Running on WSL"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:286
+#: ../../pyvista/doc/source/getting-started/installation.rst:267
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -930,51 +937,41 @@ msgid ""
 "<https://jupyter.org/>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:290
-msgid ""
-"First, make sure you have installed the correct environment through "
-"Miniconda and related packages:"
+#: ../../pyvista/doc/source/getting-started/installation.rst:271
+msgid "First, install VTK's runtime GL libraries and set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:309
+#: ../../pyvista/doc/source/getting-started/installation.rst:282
 msgid "VTK Link to Jupyter"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:310
+#: ../../pyvista/doc/source/getting-started/installation.rst:283
 msgid ""
-"There are two ways to get vtk rendering 3D objects in JupyterLab. First you "
-"can follow the example above for remote servers, skipping over the ``ssh`` "
-"instructions."
+"As of VTK 9.5, headless off-screen rendering works out of the box with the "
+"stock PyPI ``vtk`` wheel when ``libegl1`` is installed. No ``Xvfb`` or "
+"``DISPLAY`` configuration is needed. Start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:314
-msgid "Configure the headless display:"
-msgstr ""
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:324
-msgid "Start Jupyter:"
-msgstr ""
-
-#: ../../pyvista/doc/source/getting-started/installation.rst:332
+#: ../../pyvista/doc/source/getting-started/installation.rst:293
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:346
+#: ../../pyvista/doc/source/getting-started/installation.rst:307
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:349
+#: ../../pyvista/doc/source/getting-started/installation.rst:310
 msgid "Running with Sphinx-Gallery"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:350
+#: ../../pyvista/doc/source/getting-started/installation.rst:311
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:377
+#: ../../pyvista/doc/source/getting-started/installation.rst:338
 msgid ""
 "We also have a Sphinx-Gallery scraper for embedding dynamic 3D scenes "
 "instead of static screenshots. This scraper can be enabled by passing an "
