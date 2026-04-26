@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 01:23+0000\n"
+"POT-Creation-Date: 2026-04-26 01:25+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Spanish (https://app.transifex.com/tkoyama010/teams/112279/es/)\n"
 "MIME-Version: 1.0\n"
@@ -997,7 +997,7 @@ msgid "Any additional keyword arguments to pass to the server launch."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.register_jupyter_backend:33
+#: of pyvista.jupyter.register_jupyter_backend:45
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:63
 msgid "Examples"
@@ -1039,7 +1039,7 @@ msgstr ""
 #: of pyvista.jupyter.register_jupyter_backend:9
 msgid ""
 "Name of the backend (e.g. ``'custom'``). Must not collide with a built-in "
-"backend name."
+"backend name unless ``override=True`` is passed."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
@@ -1060,18 +1060,57 @@ msgid ""
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:16
+msgid ""
+"**override** : :ref:`bool <python:bltin-boolean-values>`, default: "
+":data:`python:False`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:15
+msgid "bool, default: python:False"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:17
+msgid ""
+"If ``True``, allow registering a name that collides with a built-in backend."
+" Also silences the warning emitted when replacing an existing custom "
+"registration."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:0
 msgid "Raises"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.register_jupyter_backend:24
+#: of pyvista.jupyter.register_jupyter_backend:29
 msgid ":obj:`ValueError`"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.register_jupyter_backend:25
-msgid "If ``name`` collides with a built-in backend."
+#: of pyvista.jupyter.register_jupyter_backend:30
+msgid ""
+"If ``name`` collides with a built-in backend and ``override`` is ``False``."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:0
+msgid "Warns"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:35
+msgid ":obj:`UserWarning`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.13/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:36
+msgid ""
+"If ``name`` already refers to a registered custom backend. The new "
+"registration replaces the old one (last wins); pass ``override=True`` to "
+"silence the warning."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:4
