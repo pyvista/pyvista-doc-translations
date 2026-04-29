@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-16 03:28+0000\n"
+"POT-Creation-Date: 2026-04-29 01:49+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Roman Putanowicz <putanowr@gmail.com>, 2021\n"
 "Language-Team: Polish (Poland) (https://app.transifex.com/tkoyama010/teams/112279/pl_PL/)\n"
@@ -605,7 +605,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:29
-#: ../../pyvista/doc/source/getting-started/installation.rst:109
+#: ../../pyvista/doc/source/getting-started/installation.rst:153
 msgid "Optional Dependencies"
 msgstr ""
 
@@ -716,148 +716,197 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:111
+msgid "Development Wheels"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:113
+msgid ""
+"The PyVista documentation site also hosts a `PEP 503 "
+"<https://peps.python.org/pep-0503/>`_ \"simple repository\" of wheels built "
+"from the latest commit on ``main``. These wheels are rebuilt and republished"
+" by the documentation pipeline on every push to ``main``, so the index "
+"always points at the most recent ``main`` build, with no GitHub clone or "
+"checkout required."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:120
+msgid "To install the latest development wheel:"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:126
+msgid ""
+"To keep PyPI as the source for dependencies and only pull ``pyvista`` itself"
+" from the development index, use ``--extra-index-url`` instead:"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:133
+msgid ""
+"Each build is published with a `PEP 440 "
+"<https://peps.python.org/pep-0440/>`_ local version segment of the form "
+"``<base>+g<short-sha>`` (for example ``0.48.dev0+g11c36e50``), so the "
+"specific commit a wheel was built from is always recoverable from its "
+"version string. Running ``pip install --pre -U pyvista`` against the "
+"development index will always pick up the newest commit's wheel."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:140
+msgid ""
+"A human-readable landing page listing the current build is available at "
+"`dev.pyvista.org/wheels/ <https://dev.pyvista.org/wheels/>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:145
+msgid ""
+"These wheels are **unsupported development builds**. They may contain in-"
+"progress changes, regressions, or breaking API changes that have not yet "
+"been released. Use them for testing upcoming features or reproducing reports"
+" against ``main``, not for production. For stable releases, install from "
+"PyPI as usual."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:155
 msgid "The following are a list of optional dependencies and their purpose:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:114
+#: ../../pyvista/doc/source/getting-started/installation.rst:158
 msgid "Package"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:114
+#: ../../pyvista/doc/source/getting-started/installation.rst:158
 msgid "Purpose"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:116
+#: ../../pyvista/doc/source/getting-started/installation.rst:160
 msgid "``trame``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:116
+#: ../../pyvista/doc/source/getting-started/installation.rst:160
 msgid "Interactive notebook rendering"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:118
+#: ../../pyvista/doc/source/getting-started/installation.rst:162
 msgid "``sphinx_gallery``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:118
+#: ../../pyvista/doc/source/getting-started/installation.rst:162
 msgid "Capturing PyVista output for docs"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:120
+#: ../../pyvista/doc/source/getting-started/installation.rst:164
 msgid "``colorcet``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:120
+#: ../../pyvista/doc/source/getting-started/installation.rst:164
 msgid "Perceptually uniform colormaps"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:122
+#: ../../pyvista/doc/source/getting-started/installation.rst:166
 msgid "``cmocean``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:122
+#: ../../pyvista/doc/source/getting-started/installation.rst:166
 msgid "Oceanographic colormaps"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:124
+#: ../../pyvista/doc/source/getting-started/installation.rst:168
 msgid "``imageio-ffmpeg``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:124
+#: ../../pyvista/doc/source/getting-started/installation.rst:168
 msgid "Saving movie files"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:126
+#: ../../pyvista/doc/source/getting-started/installation.rst:170
 msgid "``tqdm``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:126
+#: ../../pyvista/doc/source/getting-started/installation.rst:170
 msgid "Status bars for monitoring filters"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:128
+#: ../../pyvista/doc/source/getting-started/installation.rst:172
 msgid "``trimesh`` ``rtree`` ``pyembree``"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:129
+#: ../../pyvista/doc/source/getting-started/installation.rst:173
 msgid "Vectorised ray tracing"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:135
+#: ../../pyvista/doc/source/getting-started/installation.rst:179
 msgid "Source / Developers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:137
+#: ../../pyvista/doc/source/getting-started/installation.rst:181
 msgid ""
 "Alternatively, you can install the latest version from GitHub by visiting "
 "`PyVista <https://github.com/pyvista/pyvista>`_, and downloading the source "
 "(cloning) by running::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:146
+#: ../../pyvista/doc/source/getting-started/installation.rst:190
 msgid ""
 "The latest documentation for the ``main`` branch of PyVista can be found at "
 "`dev.pyvista.org <https://dev.pyvista.org>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:151
+#: ../../pyvista/doc/source/getting-started/installation.rst:195
 msgid "Test Installation"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:153
+#: ../../pyvista/doc/source/getting-started/installation.rst:197
 msgid "You can test your installation by running an example:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:160
+#: ../../pyvista/doc/source/getting-started/installation.rst:204
 msgid "See other examples and demos:"
 msgstr "Zobacz inne przykłady i programy demonstracyjne"
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:176
+#: ../../pyvista/doc/source/getting-started/installation.rst:220
 msgid ""
 "A more comprehensive testing suite is available after cloning the source "
 "repository. For details on how to clone and test the PyVista source, please "
 "see our `Contributing Guide`_ and specifically, the `Testing`_ section."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:185
+#: ../../pyvista/doc/source/getting-started/installation.rst:229
 msgid "Running on CI Services"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:186
+#: ../../pyvista/doc/source/getting-started/installation.rst:230
 msgid ""
 "Please head over to `pyvista/setup-headless-display-action`_ for details on "
 "setting up a headless display in GitHub Actions Workflows using PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:189
+#: ../../pyvista/doc/source/getting-started/installation.rst:233
 msgid ""
 "In the past, we have also supported `pyvista/gl-ci-helpers`_ for setting up "
 "CI services like Travis and Azure Pipelines to run PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:197
+#: ../../pyvista/doc/source/getting-started/installation.rst:241
 msgid "Running on MyBinder"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:198
+#: ../../pyvista/doc/source/getting-started/installation.rst:242
 msgid ""
 "This section is for advanced users that would like to install and use "
 "PyVista with headless displays on notebook hosting services like MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:201
+#: ../../pyvista/doc/source/getting-started/installation.rst:245
 msgid ""
 "Please see `this project`_ for a convenient Cookiecutter_ to get started "
 "using PyVista on the notebook hosting service MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:208
+#: ../../pyvista/doc/source/getting-started/installation.rst:252
 msgid ""
 "The Docker container only needs VTK's runtime GL libraries. For MyBinder, "
 "include the following in a file called ``apt.txt``::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:216
+#: ../../pyvista/doc/source/getting-started/installation.rst:260
 msgid ""
 "That is the complete system-library set: ``libegl1`` enables EGL so VTK "
 "picks up GPU acceleration automatically when the container is run with the "
@@ -867,7 +916,7 @@ msgid ""
 "``DISPLAY`` setup is required."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:223
+#: ../../pyvista/doc/source/getting-started/installation.rst:267
 msgid ""
 "Include PyVista in your Python requirements and "
 "``pv.Plotter(off_screen=True)`` will render. If you need more help than this"
@@ -876,11 +925,11 @@ msgid ""
 "is currently using PyVista on MyBinder."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:232
+#: ../../pyvista/doc/source/getting-started/installation.rst:276
 msgid "Running on Remote Servers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:233
+#: ../../pyvista/doc/source/getting-started/installation.rst:277
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -888,13 +937,13 @@ msgid ""
 " servers would work similarly."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:238
+#: ../../pyvista/doc/source/getting-started/installation.rst:282
 msgid ""
 "After logging into the remote server, install VTK's runtime GL libraries and"
 " set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:249
+#: ../../pyvista/doc/source/getting-started/installation.rst:293
 msgid ""
 "With ``libegl1`` installed, VTK 9.5+ renders off-screen via EGL out of the "
 "box, so no ``Xvfb`` or ``DISPLAY`` configuration is required. Set "
@@ -903,20 +952,20 @@ msgid ""
 "work."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:255
+#: ../../pyvista/doc/source/getting-started/installation.rst:299
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:263
-#: ../../pyvista/doc/source/getting-started/installation.rst:291
+#: ../../pyvista/doc/source/getting-started/installation.rst:307
+#: ../../pyvista/doc/source/getting-started/installation.rst:335
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:266
+#: ../../pyvista/doc/source/getting-started/installation.rst:310
 msgid "Running on WSL"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:267
+#: ../../pyvista/doc/source/getting-started/installation.rst:311
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -924,41 +973,41 @@ msgid ""
 "<https://jupyter.org/>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:271
+#: ../../pyvista/doc/source/getting-started/installation.rst:315
 msgid "First, install VTK's runtime GL libraries and set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:282
+#: ../../pyvista/doc/source/getting-started/installation.rst:326
 msgid "VTK Link to Jupyter"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:283
+#: ../../pyvista/doc/source/getting-started/installation.rst:327
 msgid ""
 "As of VTK 9.5, headless off-screen rendering works out of the box with the "
 "stock PyPI ``vtk`` wheel when ``libegl1`` is installed. No ``Xvfb`` or "
 "``DISPLAY`` configuration is needed. Start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:293
+#: ../../pyvista/doc/source/getting-started/installation.rst:337
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:307
+#: ../../pyvista/doc/source/getting-started/installation.rst:351
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:310
+#: ../../pyvista/doc/source/getting-started/installation.rst:354
 msgid "Running with Sphinx-Gallery"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:311
+#: ../../pyvista/doc/source/getting-started/installation.rst:355
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:338
+#: ../../pyvista/doc/source/getting-started/installation.rst:382
 msgid ""
 "We also have a Sphinx-Gallery scraper for embedding dynamic 3D scenes "
 "instead of static screenshots. This scraper can be enabled by passing an "
