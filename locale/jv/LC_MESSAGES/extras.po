@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.48.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-26 01:25+0000\n"
+"POT-Creation-Date: 2026-05-01 01:51+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: Javanese (https://app.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -2651,6 +2651,64 @@ msgid ""
 "For everything else, prefer accessors. They compose more cleanly, cost "
 "nothing when unused, and give plugins a clear boundary the PyVista core can "
 "rely on."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:319
+msgid "Plotter components"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:321
+msgid ""
+"Datasets get accessors; the plotter gets *components*. The mechanism mirrors"
+" the dataset accessor pattern line for line on the registration API and adds"
+" explicit lifecycle hooks so plugin code that wires up VTK observers, "
+"sockets, or background threads has somewhere to clean up when the plotter "
+"shuts down."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:327
+msgid ""
+"A component class accepts the plotter as its single ``__init__`` argument "
+"and exposes any methods that should be callable under the namespace "
+"``plotter.<name>.<method>(...)``. Two optional dunder hooks participate in "
+"the plotter lifecycle:"
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:332
+msgid ""
+"``__plotter_close__(self) -> None``: called when the plotter closes. Use "
+"this to release VTK observers, close sockets, stop background threads, or "
+"undo any side effects the component is responsible for."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:335
+msgid ""
+"``__plotter_deep_clean__(self) -> None``: called from "
+":meth:`pyvista.Plotter.deep_clean`. Optional; if absent, deep clean falls "
+"through to the close path on the next plotter shutdown."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:339
+msgid ""
+"Both hooks fire only on components that were *actually constructed* (touched"
+" at least once). Untouched components contribute nothing, since they hold no"
+" observers or references that need releasing."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:363
+msgid ""
+"The same decorator works for first-party and third-party components. "
+"Registration uses :func:`~pyvista.register_plotter_component`, introspection"
+" uses :func:`~pyvista.registered_plotter_components`, and removal uses "
+":func:`~pyvista.unregister_plotter_component`. Plugin authors can declare a "
+"``pyvista.plotter_components`` entry point in their ``pyproject.toml`` for "
+"zero-config discovery. The plugin module itself is imported only when a user"
+" first accesses ``plotter.<plugin_name>``, so installing the plugin costs "
+"nothing for plotters that never use it."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/extending_pyvista.rst:373
+msgid "See :ref:`plotter-component-api` for the full registration API."
 msgstr ""
 
 #: ../../pyvista/doc/source/extras/index.rst:2
