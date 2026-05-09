@@ -1,0 +1,151 @@
+name: Build I18N Documentation
+
+# Dedicated pipeline for the translated PyVista documentation. Splitting this
+# build out of pyvista/pyvista's docs workflow gives the translated site its
+# own release cadence and stops i18n-only build errors from blocking core
+# docs releases. See pyvista/pyvista#8626.
+
+on:
+  workflow_dispatch:
+    inputs:
+      pyvista_ref:
+        description: "Git ref of pyvista/pyvista to build against (tag, branch, or sha). Defaults to the latest release tag."
+        required: false
+        default: ""
+  schedule:
+    # Weekly preview build so translators can see their work without waiting
+    # on a PyVista release.
+    - cron: "0 6 * * 1"
+  # Allow pyvista/pyvista's release workflow to fan out a translated build.
+  # Payload: { "pyvista_ref": "v0.49.0" }
+  repository_dispatch:
+    types: [pyvista-release]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build translated docs
+    runs-on: ubuntu-22.04
+    timeout-minutes: 360
+    env:
+      TOX_COLORED: "yes"
+    steps:
+      - name: Checkout translations repo
+        uses: actions/checkout@v6
+        with:
+          path: pyvista-doc-translations
+          persist-credentials: false
+
+      - name: Resolve pyvista ref
+        id: ref
+        env:
+          INPUT_REF: ${{ inputs.pyvista_ref }}
+          DISPATCH_REF: ${{ github.event.client_payload.pyvista_ref }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ref="${INPUT_REF:-}"
+          if [ -z "$ref" ]; then
+            ref="${DISPATCH_REF:-}"
+          fi
+          if [ -z "$ref" ]; then
+            ref="$(gh release view --repo pyvista/pyvista --json tagName -q .tagName)"
+          fi
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+          echo "Building against pyvista ref: $ref"
+
+      - name: Checkout pyvista
+        uses: actions/checkout@v6
+        with:
+          repository: pyvista/pyvista
+          ref: ${{ steps.ref.outputs.ref }}
+          path: pyvista
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+          cache: "pip"
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libosmesa6-dev libgl1-mesa-dev python3-tk pandoc git-restore-mtime
+
+      - name: Install pyvista and i18n build dependencies
+        run: |
+          set -euo pipefail
+          pip install --upgrade pip
+          # atsphinx-mini18n was deliberately removed from pyvista's docs
+          # group (issue #8626); install it explicitly here.
+          pip install --group pyvista/pyproject.toml:docs ./pyvista
+          pip install "atsphinx-mini18n==0.5.1"
+
+      - name: Inject i18n overlay into pyvista conf.py
+        env:
+          LOCALE_DIR: ${{ github.workspace }}/pyvista-doc-translations/locale
+        run: |
+          set -euo pipefail
+          python pyvista-doc-translations/scripts/apply_i18n_overlay.py \
+            --conf pyvista/doc/source/conf.py \
+            --locale-dir "$LOCALE_DIR"
+
+      - name: Build translated documentation
+        working-directory: pyvista/doc
+        env:
+          PYVISTA_OFF_SCREEN: "true"
+          ALLOW_PLOTTING: "true"
+          PYDEVD_DISABLE_FILE_VALIDATION: "1"
+          FORCE_COLOR: "true"
+        run: |
+          set -euo pipefail
+          # Headless display for VTK rendering during gallery builds.
+          export DISPLAY=:99.0
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+          sleep 3
+          # Mirror the pre-build steps from pyvista's tox docs-build env.
+          (cd source && python make_tables.py)
+          (cd source && python make_external_gallery.py)
+          # The translated build is intentionally non-fatal on warnings — the
+          # core English build (which gates releases) already enforces -W.
+          # We still surface warnings via sphinx_warnings.txt.
+          python -m sphinx -M mini18n-html source _build \
+            -w sphinx_warnings.txt --keep-going -j2
+
+      - name: Stage localized output
+        run: |
+          set -euo pipefail
+          mkdir -p i18n-site
+          # mini18n-html emits one subdir per supported language (en, ja, ...).
+          # Copy every non-English subtree as the publishable artifact.
+          if [ -d pyvista/doc/_build/mini18n-html ]; then
+            for d in pyvista/doc/_build/mini18n-html/*/; do
+              lang="$(basename "$d")"
+              if [ "$lang" != "en" ]; then
+                cp -r "$d" "i18n-site/$lang"
+              fi
+            done
+          fi
+          ls -la i18n-site
+
+      - name: Dump Sphinx Build Warnings and Errors
+        if: always()
+        run: |
+          if [ -e pyvista/doc/sphinx_warnings.txt ]; then
+            cat pyvista/doc/sphinx_warnings.txt
+          fi
+
+      - name: Upload translated docs
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: i18n-docs
+          path: i18n-site/
