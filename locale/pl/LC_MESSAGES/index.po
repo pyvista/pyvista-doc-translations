@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.49.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-03 01:32+0000\n"
+"POT-Creation-Date: 2026-05-10 01:48+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Roman Putanowicz <putanowr@gmail.com>, 2022\n"
 "Language-Team: Polish (https://app.transifex.com/tkoyama010/teams/112279/pl/)\n"
@@ -24,8 +24,8 @@ msgstr ""
 #: ../../pyvista/doc/source/index.rst:3
 msgid ""
 "<div class=\"banner\">\n"
-"    <a href=\"./examples/index.html\"><center><img src=\"_static/pyvista_logo.png\" alt=\"pyvista\" width=\"75%\"/></a>\n"
-"    <h3>3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)</h2>\n"
+"    <a href=\"./examples/index.html\"><center><img src=\"_static/pyvista_logo.svg\" alt=\"pyvista\" width=\"75%\"/></a>\n"
+"    <h3>3D visualization and mesh analysis for science and engineering</h3>\n"
 "    <a href=\"./examples/index.html\"><img src=\"_static/pyvista_banner_small.png\" alt=\"pyvista\" width=\"100%\"/></a>\n"
 "</div>"
 msgstr ""
@@ -34,79 +34,128 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:16
-msgid "PyVista is:"
+#: ../../pyvista/doc/source/index.rst:17
+msgid ""
+"PyVista is the foundational Python library for 3D visualization and mesh "
+"analysis in scientific computing and engineering. PyVista plays the same "
+"role for 3D data that pandas plays for tabular data and xarray plays for "
+"labeled n-dimensional arrays."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:18
-msgid "*Pythonic VTK*: a high-level API to the `Visualization Toolkit`_ (VTK)"
+#: ../../pyvista/doc/source/index.rst:22
+msgid "a NumPy-native API for 3D visualization and mesh analysis"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:19
-msgid "mesh data structures and filtering methods for spatial datasets"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:20
-msgid "3D plotting made simple and built for large/complex data geometries"
+#: ../../pyvista/doc/source/index.rst:23
+msgid "dataset structures and filters for points, surfaces, and volumes"
 msgstr ""
 
 #: ../../pyvista/doc/source/index.rst:24
-msgid ""
-"PyVista is a helper library for the Visualization Toolkit (VTK) that takes a"
-" different approach on interfacing with VTK through NumPy and direct array "
-"access. This package provides a Pythonic, well-documented interface exposing"
-" VTK's powerful visualization backend to facilitate rapid prototyping, "
-"analysis, and visual integration of spatially referenced datasets."
+msgid "one plotting framework for notebooks, scripts, CI, and apps"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:31
-msgid ""
-"This module can be used for scientific plotting for presentations and "
-"research papers as well as a supporting module for other mesh dependent "
-"Python modules."
+#: ../../pyvista/doc/source/index.rst:25
+msgid "streamlined 3D for newcomers and graphics experts alike"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:39
+#: ../../pyvista/doc/source/index.rst:27
+msgid ""
+"Use PyVista for figures in papers and presentations, interactive analysis in"
+" notebooks, and as the visualization layer of larger Python tools."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:32
+msgid "Built for production"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:34
+msgid ""
+"3D code has to keep working when the underlying graphics stack changes. "
+"PyVista is image-regression tested on every commit across the supported "
+"matrix of Python and `VTK`_ releases. Public APIs follow a deliberate "
+"deprecation lifecycle (warn, then error, then remove) across at least three "
+"minor versions, and every release ships wheels for every supported Python "
+"version."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:41
+msgid ""
+"The C++ toolkit underneath does not provide the same guarantees. Its Python "
+"bindings shift between releases, large parts of the surface ship without "
+"test coverage, and rendering changes are not gated on visual diffs. PyVista "
+"is what science and engineering teams reach for when code written today has "
+"to still produce the same picture two years from now."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:49
+msgid "Built to extend"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:51
+msgid ""
+"Downstream libraries build on PyVista through a small, lazily evaluated "
+"extension API. Third-party packages attach domain-specific filters and "
+"plotter components via registered accessors, with no subclassing, no monkey-"
+"patching, and no vendoring of upstream algorithms. This is the same contract"
+" pandas exposes for tabular accessors and xarray exposes for labeled arrays."
+" See :ref:`extending-pyvista` for the full contract."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:58
+msgid ""
+"For a curated, continuously updated list of domain-specific tooling that "
+"interoperates with or is built on PyVista, see `awesome-pyvista "
+"<https://github.com/pyvista/awesome-pyvista>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:62
+msgid ""
+"Reach for the underlying `VTK`_ toolkit directly only when there is "
+"genuinely no PyVista equivalent. When that happens, please file an issue. "
+"There should be one."
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:72
 msgid ""
 "Want to test-drive PyVista? Check out our live examples on MyBinder: "
 "|binder|"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:35
+#: ../../pyvista/doc/source/index.rst:68
 msgid "Launch on Binder"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:43
+#: ../../pyvista/doc/source/index.rst:76
 msgid "PyVista is a NumFOCUS affiliated project"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:47
+#: ../../pyvista/doc/source/index.rst:80
 msgid "NumFOCUS affiliated projects"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:65
+#: ../../pyvista/doc/source/index.rst:98
 msgid "Brief Examples"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:66
+#: ../../pyvista/doc/source/index.rst:99
 msgid ""
 "Here are some brief interactive examples that demonstrate how you might want"
 " to use PyVista:"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:85
+#: ../../pyvista/doc/source/index.rst:118
 msgid "Maps and Geoscience"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:86
+#: ../../pyvista/doc/source/index.rst:119
 msgid "Download the surface elevation map of Mount St. Helens and plot it."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:100
+#: ../../pyvista/doc/source/index.rst:133
 msgid "Finite Element Analysis"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:101
+#: ../../pyvista/doc/source/index.rst:134
 msgid "Plot the 'X' component of elastic stress of a 3D notch specimen."
 msgstr ""
 
@@ -118,250 +167,248 @@ msgstr ""
 msgid "Interactive Scene"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:113
+#: ../../pyvista/doc/source/index.rst:146
 msgid "Simple Point Cloud with NumPy"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:114
+#: ../../pyvista/doc/source/index.rst:147
 msgid ""
 "Easily integrate with NumPy and create a variety of geometries and plot "
 "them. You could use any geometry to create your glyphs, or even plot the "
 "points directly."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:137
+#: ../../pyvista/doc/source/index.rst:170
 msgid "Plot a Spline"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:138
+#: ../../pyvista/doc/source/index.rst:171
 msgid "Generate a spline from an array of NumPy points."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:159
+#: ../../pyvista/doc/source/index.rst:192
 msgid "Boolean Operations on Meshes"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:160
+#: ../../pyvista/doc/source/index.rst:193
 msgid "Subtract a sphere from a cube mesh."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:184
+#: ../../pyvista/doc/source/index.rst:217
 msgid "Plot Volumetric Data"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:185
+#: ../../pyvista/doc/source/index.rst:218
 msgid "Plot the :math:`3d_{xy}` orbital of a hydrogen atom."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:188
+#: ../../pyvista/doc/source/index.rst:221
 msgid "This example requires `sympy <https://www.sympy.org/>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:200
+#: ../../pyvista/doc/source/index.rst:233
 msgid "Translating"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:201
+#: ../../pyvista/doc/source/index.rst:234
 msgid ""
 "The recommended way for new contributors to translate PyVista's "
 "documentation is to join the translation team on Transifex."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:204
+#: ../../pyvista/doc/source/index.rst:237
 msgid ""
 "There is a `pyvista translation page`_ for pyvista (main) documentation."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:206
+#: ../../pyvista/doc/source/index.rst:239
 msgid "Login to transifex_ service."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:207
+#: ../../pyvista/doc/source/index.rst:240
 msgid "Go to `pyvista translation page`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:208
+#: ../../pyvista/doc/source/index.rst:241
 msgid "Click ``Request language`` and fill form."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:209
+#: ../../pyvista/doc/source/index.rst:242
 msgid "Wait acceptance by transifex pyvista translation maintainers."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:210
+#: ../../pyvista/doc/source/index.rst:243
 msgid "(After acceptance) Translate on transifex."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:211
-msgid "We can host the translated document using `atsphinx-mini18n`_."
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:212
-msgid "Translation is backed up in `pyvista-doc-translations`_."
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:214
-msgid "Details can be found here: https://help.transifex.com/en/"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:223
-msgid "Status"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:272
-msgid "Deployment"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:272
-msgid "|pypi|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:225
-msgid "pypi"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:272
-msgid "|conda|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:228
-msgid "conda"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:274
-msgid "Build Status"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:274
-msgid "|GH-CI|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:231
-msgid "GH-CI"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:274
-msgid "|python|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:268
-msgid "python"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:276
-msgid "Metrics"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:276
-msgid "|codacy|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:237
-msgid "codacy"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:276
-msgid "|codecov|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:234
-msgid "codecov"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:278
-msgid "Activity"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:278
-msgid "|PyPIact|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:259
-msgid "PyPIact"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:278
-msgid "|condaact|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:262
-msgid "condaact"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:243
-#: ../../pyvista/doc/source/index.rst:280
-msgid "GitHub"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:280
-msgid "|contributors|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:240
-msgid "contributors"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:280
-msgid "|stars|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:282
-msgid "Citation"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:282
-msgid "|joss|"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:250
-msgid "joss"
-msgstr ""
-
-#: ../../pyvista/doc/source/index.rst:282
-msgid "|zenodo|"
+#: ../../pyvista/doc/source/index.rst:244
+msgid ""
+"Translations are stored in `pyvista-doc-translations`_, which also owns the "
+"dedicated pipeline that builds and publishes the localized documentation."
 msgstr ""
 
 #: ../../pyvista/doc/source/index.rst:247
-msgid "zenodo"
+msgid "Details can be found here: https://help.transifex.com/en/"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:284
-msgid "License"
-msgstr "Licencja"
-
-#: ../../pyvista/doc/source/index.rst:284
-msgid "|MIT|"
+#: ../../pyvista/doc/source/index.rst:255
+msgid "Status"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:253
-msgid "MIT"
+#: ../../pyvista/doc/source/index.rst:304
+msgid "Deployment"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:286
-msgid "Community"
+#: ../../pyvista/doc/source/index.rst:304
+msgid "|pypi|"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:286
-msgid "|slack|"
+#: ../../pyvista/doc/source/index.rst:257
+msgid "pypi"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:256
-msgid "slack"
+#: ../../pyvista/doc/source/index.rst:304
+msgid "|conda|"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:286
-msgid "|discuss|"
+#: ../../pyvista/doc/source/index.rst:260
+msgid "conda"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:265
-msgid "discuss"
+#: ../../pyvista/doc/source/index.rst:306
+msgid "Build Status"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:306
+msgid "|GH-CI|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:263
+msgid "GH-CI"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:306
+msgid "|python|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:300
+msgid "python"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:308
+msgid "Metrics"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:308
+msgid "|codacy|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:269
+msgid "codacy"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:308
+msgid "|codecov|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:266
+msgid "codecov"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:310
+msgid "Activity"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:310
+msgid "|PyPIact|"
 msgstr ""
 
 #: ../../pyvista/doc/source/index.rst:291
+msgid "PyPIact"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:310
+msgid "|condaact|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:294
+msgid "condaact"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:275
+#: ../../pyvista/doc/source/index.rst:312
+msgid "GitHub"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:312
+msgid "|contributors|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:272
+msgid "contributors"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:312
+msgid "|stars|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:314
+msgid "Citation"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:314
+msgid "|joss|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:282
+msgid "joss"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:314
+msgid "|zenodo|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:279
+msgid "zenodo"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:316
+msgid "License"
+msgstr "Licencja"
+
+#: ../../pyvista/doc/source/index.rst:316
+msgid "|MIT|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:285
+msgid "MIT"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:318
+msgid "Community"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:318
+msgid "|slack|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:288
+msgid "slack"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:318
+msgid "|discuss|"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:297
+msgid "discuss"
+msgstr ""
+
+#: ../../pyvista/doc/source/index.rst:323
 msgid "Professional Support"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:293
+#: ../../pyvista/doc/source/index.rst:325
 msgid ""
 "PyVista is a community-driven Open Source project, but many users and "
 "organizations rely on it in production workflows, research pipelines, and "
@@ -370,14 +417,14 @@ msgid ""
 " build and maintain PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:295
+#: ../../pyvista/doc/source/index.rst:327
 msgid ""
 "For general inquiries, reach out to info@pyvista.org and we can help connect"
 " you with the right community experts for your 3D visualization or analysis "
 "needs."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:297
+#: ../../pyvista/doc/source/index.rst:329
 msgid ""
 "If you are looking for professional services (consulting, custom "
 "development, feature design, integration support, or training), consider "
@@ -387,23 +434,23 @@ msgid ""
 "keeps PyVista reliable and modern."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:299
+#: ../../pyvista/doc/source/index.rst:331
 msgid ""
 "More details can be found in the discussion post: "
 "https://github.com/pyvista/pyvista/discussions/4033"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:301
+#: ../../pyvista/doc/source/index.rst:333
 msgid ""
 "Sponsoring a developer supports both your project and the health of the "
 "PyVista ecosystem, ensuring continued improvements, long-term stability, and"
 " expert help when you need it."
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:305
+#: ../../pyvista/doc/source/index.rst:337
 msgid "Project Index"
 msgstr ""
 
-#: ../../pyvista/doc/source/index.rst:307
+#: ../../pyvista/doc/source/index.rst:339
 msgid ":ref:`genindex`"
 msgstr ""
