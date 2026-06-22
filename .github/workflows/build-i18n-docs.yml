@@ -37,7 +37,7 @@ jobs:
       TOX_COLORED: "yes"
     steps:
       - name: Checkout translations repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           path: pyvista-doc-translations
           persist-credentials: false
@@ -61,7 +61,7 @@ jobs:
           echo "Building against pyvista ref: $ref"
 
       - name: Checkout pyvista
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: pyvista/pyvista
           ref: ${{ steps.ref.outputs.ref }}
