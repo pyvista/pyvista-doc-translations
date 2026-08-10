@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.49.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 13:43+0000\n"
+"POT-Creation-Date: 2026-08-10 19:46+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Javanese (https://app.transifex.com/tkoyama010/teams/112279/jv/)\n"
 "MIME-Version: 1.0\n"
@@ -1004,24 +1004,24 @@ msgid "Examples"
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:64
+#: of pyvista.jupyter.set_jupyter_backend:65
 msgid "Enable the trame Trame backend."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:68
+#: of pyvista.jupyter.set_jupyter_backend:69
 msgid "Just show static images."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:72
+#: of pyvista.jupyter.set_jupyter_backend:73
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
 msgstr ""
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:77
+#: of pyvista.jupyter.set_jupyter_backend:78
 msgid "Reset to auto-detect the best available backend."
 msgstr ""
 
@@ -1562,32 +1562,28 @@ msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/simple.rst:227
 msgid ""
-"Starting from version ``0.47``, meshes can be plotted from one (or more) "
-"files using a command line tool such that:"
+"Mesh files can be plotted, converted, or validated using PyVista's command "
+"line interface (CLI). For example, plot a PLY file."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:236
-msgid "Providing multiple files renders them inside the same window."
+#: ../../pyvista/doc/source/user-guide/simple.rst:234
+msgid ""
+"Most options available in :func:`pyvista.plot` are exposed by the command "
+"line. See :ref:`cli_api` for details."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/simple.rst:238
-msgid ""
-"Most options available in :func:`pyvista.plot` are exposed by the command "
-"line. Run the ``--help`` command to see all options:"
-msgstr ""
-
-#: ../../pyvista/doc/source/user-guide/simple.rst:250
 msgid "Exporting"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:252
+#: ../../pyvista/doc/source/user-guide/simple.rst:240
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
 "block above could be saved like:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:260
+#: ../../pyvista/doc/source/user-guide/simple.rst:248
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -1595,7 +1591,7 @@ msgid ""
 "method on each mesh type."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:265
+#: ../../pyvista/doc/source/user-guide/simple.rst:253
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -1605,7 +1601,7 @@ msgid ""
 " WKT (TIN), XDMF, and more."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:272
+#: ../../pyvista/doc/source/user-guide/simple.rst:260
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -1638,58 +1634,58 @@ msgid ""
 "parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:34
+#: ../../pyvista/doc/source/user-guide/themes.rst:35
 msgid "These parameters can then be modified globally with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:43
+#: ../../pyvista/doc/source/user-guide/themes.rst:44
 msgid "Now, the mesh will be plotted with the new global parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:50
+#: ../../pyvista/doc/source/user-guide/themes.rst:51
 msgid "This is identical to plotting the mesh with the following parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:61
+#: ../../pyvista/doc/source/user-guide/themes.rst:62
 msgid "Creating A Custom Theme"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:62
+#: ../../pyvista/doc/source/user-guide/themes.rst:63
 msgid ""
 "You can customize a theme based on one of the built-in themes and then apply"
 " it globally with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:77
+#: ../../pyvista/doc/source/user-guide/themes.rst:78
 msgid "Alternatively, you can save the theme to disk to be used later with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:83
+#: ../../pyvista/doc/source/user-guide/themes.rst:84
 msgid "And then subsequently loaded in a new session of pyvista with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:91
+#: ../../pyvista/doc/source/user-guide/themes.rst:92
 msgid "Default Interactor Styles"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:93
+#: ../../pyvista/doc/source/user-guide/themes.rst:94
 msgid ""
 "Themes can also control the default interactor style used by new plotters. "
 "Built-in styles use the same names as the corresponding ``enable_*_style`` "
 "methods."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:103
+#: ../../pyvista/doc/source/user-guide/themes.rst:104
 msgid ""
 "Custom interactor styles can be registered by downstream packages and used "
 "the same way once they are installed or registered at runtime."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:108
+#: ../../pyvista/doc/source/user-guide/themes.rst:109
 msgid "Theme API"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:109
+#: ../../pyvista/doc/source/user-guide/themes.rst:110
 msgid "See :ref:`theme_api` for the full API definition."
 msgstr ""
 
