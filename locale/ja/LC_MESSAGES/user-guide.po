@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.49.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-01 01:49+0000\n"
+"POT-Creation-Date: 2026-08-10 19:46+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Last-Translator: Tetsuo Koyama <tkoyama010@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/tkoyama010/teams/112279/ja/)\n"
@@ -1194,24 +1194,24 @@ msgid "Examples"
 msgstr "例"
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:64
+#: of pyvista.jupyter.set_jupyter_backend:65
 msgid "Enable the trame Trame backend."
 msgstr "Trameバックエンドを有効にします．"
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:68
+#: of pyvista.jupyter.set_jupyter_backend:69
 msgid "Just show static images."
 msgstr "静止画像を表示するだけです．"
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:72
+#: of pyvista.jupyter.set_jupyter_backend:73
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
 msgstr "JupyterLab内のすべてのプロットを無効にし，準のデスクトップVTKレンダリングウィンドウを使用して表示します．"
 
 #: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:77
+#: of pyvista.jupyter.set_jupyter_backend:78
 msgid "Reset to auto-detect the best available backend."
 msgstr "最適なバックエンドを自動検出するようにリセットします。"
 
@@ -1823,29 +1823,21 @@ msgstr "コマンドライン"
 
 #: ../../pyvista/doc/source/user-guide/simple.rst:227
 msgid ""
-"Starting from version ``0.47``, meshes can be plotted from one (or more) "
-"files using a command line tool such that:"
+"Mesh files can be plotted, converted, or validated using PyVista's command "
+"line interface (CLI). For example, plot a PLY file."
 msgstr ""
-"バージョン ``0.47`` 以降、コマンドラインツールを使用して1つ (または複数) "
-"のファイルからメッシュをプロットできるようになりました。使い方は以下の通りです:"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:236
-msgid "Providing multiple files renders them inside the same window."
-msgstr "複数のファイルを提供すると、それらは同じウィンドウ内に表示されます。"
-
-#: ../../pyvista/doc/source/user-guide/simple.rst:238
+#: ../../pyvista/doc/source/user-guide/simple.rst:234
 msgid ""
 "Most options available in :func:`pyvista.plot` are exposed by the command "
-"line. Run the ``--help`` command to see all options:"
+"line. See :ref:`cli_api` for details."
 msgstr ""
-":func:`pyvista.plot` で利用可能なオプションの大半はコマンドラインから利用できます。すべてのオプションを確認するには "
-"``--help`` コマンドを実行してください:"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:250
+#: ../../pyvista/doc/source/user-guide/simple.rst:238
 msgid "Exporting"
 msgstr "出力"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:252
+#: ../../pyvista/doc/source/user-guide/simple.rst:240
 msgid ""
 "Any PyVista mesh object can be saved to a VTK file format using "
 ":func:`save() <pyvista.DataObject.save>`. For example, the mesh in the code "
@@ -1854,7 +1846,7 @@ msgstr ""
 "どんなPyVistaメッシュオブジェクトでも， :func:`save() <pyvista.DataObject.save>` "
 "を使ってVTKファイルフォーマットに保存することができます．例えば，上のコードブロックのメッシュは次のように保存できます．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:260
+#: ../../pyvista/doc/source/user-guide/simple.rst:248
 msgid ""
 "Or since that mesh is :class:`pyvista.PolyData`, we could use the ``.vtp``, "
 "``.stl``, or ``.ply`` formats as well. For more details on which formats are"
@@ -1865,7 +1857,7 @@ msgstr ""
 " 形式も使用できます． ``.save()`` "
 "メソッドでサポートされている形式の詳細については，各メッシュタイプのメソッドに関するドキュメントを参照してください．"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:265
+#: ../../pyvista/doc/source/user-guide/simple.rst:253
 msgid ""
 "Also note that we can export any PyVista mesh to any file format supported "
 "by `meshio <https://github.com/nschloe/meshio>`_. Meshio supports many "
@@ -1880,7 +1872,7 @@ msgstr ""
 "(バージョン2および4)，OBJ，OFF，PERMAS，PLY，STL，TetGen .node/.ele，SVG (2Dのみ，出力のみ)，UGRID,"
 " WKT (TIN)，XDMFなど，多くの形式をサポートしています!"
 
-#: ../../pyvista/doc/source/user-guide/simple.rst:272
+#: ../../pyvista/doc/source/user-guide/simple.rst:260
 msgid ""
 "To save a PyVista mesh using ``meshio``, use :func:`pyvista.save_meshio`:"
 msgstr ""
@@ -1915,58 +1907,58 @@ msgid ""
 "parameters:"
 msgstr "以下は，デフォルトのプロットパラメータを使用したスタンフォードドラゴンのプロット例です．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:34
+#: ../../pyvista/doc/source/user-guide/themes.rst:35
 msgid "These parameters can then be modified globally with:"
 msgstr "これらのパラメータは，次の方法でグローバルに変更できます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:43
+#: ../../pyvista/doc/source/user-guide/themes.rst:44
 msgid "Now, the mesh will be plotted with the new global parameters:"
 msgstr "次に，新しいグローバルパラメータを使用してメッシュをプロットします．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:50
+#: ../../pyvista/doc/source/user-guide/themes.rst:51
 msgid "This is identical to plotting the mesh with the following parameters:"
 msgstr "これは，次のパラメータを使用してメッシュをプロットすることと同じです．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:61
+#: ../../pyvista/doc/source/user-guide/themes.rst:62
 msgid "Creating A Custom Theme"
 msgstr "カスタム・テーマの作成"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:62
+#: ../../pyvista/doc/source/user-guide/themes.rst:63
 msgid ""
 "You can customize a theme based on one of the built-in themes and then apply"
 " it globally with:"
 msgstr "組み込みテーマの1つに基づいてテーマをカスタマイズし，次の方法でグローバルに適用できます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:77
+#: ../../pyvista/doc/source/user-guide/themes.rst:78
 msgid "Alternatively, you can save the theme to disk to be used later with:"
 msgstr "または，テーマをディスクに保存して，後で使用することもできます．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:83
+#: ../../pyvista/doc/source/user-guide/themes.rst:84
 msgid "And then subsequently loaded in a new session of pyvista with:"
 msgstr "その後，次のコマンドを使用して新しいpyvistaセッションにロードします．"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:91
+#: ../../pyvista/doc/source/user-guide/themes.rst:92
 msgid "Default Interactor Styles"
 msgstr "デフォルトのインタラクターのスタイル"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:93
+#: ../../pyvista/doc/source/user-guide/themes.rst:94
 msgid ""
 "Themes can also control the default interactor style used by new plotters. "
 "Built-in styles use the same names as the corresponding ``enable_*_style`` "
 "methods."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:103
+#: ../../pyvista/doc/source/user-guide/themes.rst:104
 msgid ""
 "Custom interactor styles can be registered by downstream packages and used "
 "the same way once they are installed or registered at runtime."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:108
+#: ../../pyvista/doc/source/user-guide/themes.rst:109
 msgid "Theme API"
 msgstr "テーマAPI"
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:109
+#: ../../pyvista/doc/source/user-guide/themes.rst:110
 msgid "See :ref:`theme_api` for the full API definition."
 msgstr "完全なAPIの定義については， :ref:`theme_api` を参照してください．"
 
