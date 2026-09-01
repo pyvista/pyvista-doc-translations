@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.49.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-10 19:46+0000\n"
+"POT-Creation-Date: 2026-09-01 02:30+0000\n"
 "PO-Revision-Date: 2021-05-06 09:39+0000\n"
 "Language-Team: Polish (Poland) (https://app.transifex.com/tkoyama010/teams/112279/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,742 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl_PL\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:4
+msgid "Global Configuration"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:6
+msgid ""
+"This page is the central reference for every process-wide setting in "
+"PyVista:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:9
+msgid ""
+":ref:`config_objects` -- runtime settings on ``pv.global_theme`` (plotting) "
+"and ``pv.global_config`` (everything else)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:11
+msgid ""
+":ref:`config_flags` -- module-level attributes such as ``pv.OFF_SCREEN``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:13
+msgid ""
+":ref:`config_env` -- environment variables read when PyVista is imported."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:15
+msgid ":ref:`config_vtk` -- runtime controls for the VTK interface."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:16
+msgid ""
+":ref:`config_registries` -- registration functions and entry points for "
+"extending PyVista."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:18
+msgid ""
+":ref:`config_report` -- inspecting the active configuration with "
+":class:`pyvista.Report`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:24
+msgid "Configuration Objects"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:26
+msgid ""
+"Two singleton objects hold PyVista's runtime settings. Plotting defaults "
+"live on ``pv.global_theme`` and all other settings live on "
+"``pv.global_config``. Both share the same machinery: attribute access, dict-"
+"style item access, and ``to_dict`` / ``from_dict`` round-tripping."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:35
+msgid "Plotting: The Global Theme"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:37
+msgid ""
+"``pv.global_theme`` is a :class:`~pyvista.plotting.themes.Theme` instance "
+"holding every plotting default: colors, fonts, window size, camera behavior,"
+" the Jupyter backend, and more. Assign to its attributes to change the "
+"defaults for all later plots:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:50
+msgid ""
+"Swap the entire theme with :func:`pyvista.set_plot_theme` or the "
+":envvar:`PYVISTA_PLOT_THEME` environment variable, list the available names "
+"with :func:`pyvista.registered_themes`, and save or restore a customized "
+"theme with :meth:`~pyvista.plotting.themes.Theme.save` and "
+":func:`pyvista.load_theme`. A theme can also be applied to a single plotter "
+"with ``pv.Plotter(theme=my_theme)``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:59
+msgid ":ref:`userguide_themes`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:60
+msgid "User guide for customizing and applying themes."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:62
+msgid ":ref:`theme_api`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:63
+msgid "API reference for every theme class."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:68
+msgid "Core: The Global Config"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:70
+msgid ""
+"``pv.global_config`` holds the non-plotting settings and is the core "
+"counterpart of ``pv.global_theme``:"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:2
+msgid "PyVista core configuration."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:4
+msgid ""
+"Holds process-wide settings that affect ``pyvista.core`` behavior. The "
+"singleton instance is exposed as ``pyvista.global_config``. This is the "
+"sibling of ``pyvista.global_theme`` for plotting (rendering) settings. See "
+":ref:`configuration` for an overview of all global settings."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:22
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:50
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap:34
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend:44
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:62
+msgid "Examples"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:6
+msgid ""
+"Disable the default array-length check performed by :func:`pyvista.wrap`:"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:33
+msgid "See Also"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:36
+msgid ":obj:`pyvista.plotting.themes.Theme`"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config:37
+msgid "Plotting counterpart, exposed as ``pyvista.global_theme``."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config-1
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api-1
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap-1
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/errors.pydocstring
+#: of pyvista.core.errors.InvalidMeshWarning-1
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.register_jupyter_backend-1
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend-1
+msgid "Used In"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:2
+msgid "Return or set whether VTK-inherited attributes appear in :func:`dir`."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:4
+msgid ""
+"When ``False`` (the default), attributes inherited from VTK base classes are"
+" hidden from :func:`dir` and tab-completion on PyVista objects that wrap VTK"
+" types (data objects, :class:`~pyvista.Renderer`, :class:`~pyvista.Actor`, "
+":class:`~pyvista.Property`, etc.). This keeps the public surface curated for"
+" data-science IDEs such as Positron's Variables pane and VS Code's Jupyter "
+"extension, and for IPython / Jupyter tab-completion. VTK methods remain "
+"fully callable regardless of this setting."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:13
+msgid ""
+"When ``True``, the full VTK API is enumerated alongside the PyVista API, "
+"which is useful for VTK developers who want to discover the raw VTK method "
+"surface via introspection."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:19
+msgid ""
+"This option requires runtime inspection and does not work with all developer"
+" tools, for example, it has no effect when using PyCharm. This is because it"
+" relies on calling the object's ``__dir__`` method for generating auto-"
+"completion suggestions. Tools like PyCharm that only use static analysis for"
+" auto-completion are therefore unaffected."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:36
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap:22
+msgid "Notes"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.show_vtk_api:38
+msgid ""
+"The ``snake_case`` VTK aliases (``number_of_points``, ``deep_copy``, and so "
+"on) are controlled separately by :func:`pyvista.vtk_snake_case`. When "
+"``snake_case`` is not ``'allow'`` (the default), those names are hidden from"
+" :func:`dir` regardless of this setting, because accessing them would "
+"already raise ``PyVistaAttributeError``. Enabling ``snake_case`` surfaces "
+"the ``snake_case`` names in :func:`dir`; ``show_vtk_api`` only controls the "
+"CamelCase VTK API."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap:2
+msgid "Return or set whether :func:`pyvista.wrap` validates data arrays."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap:4
+msgid ""
+"When ``True`` (the default), :func:`pyvista.wrap` performs a cheap array-"
+"length sanity check on every VTK object it wraps and emits a "
+":class:`~pyvista.InvalidMeshWarning` if any point or cell data array has a "
+"tuple count that does not match the dataset's point or cell count. Set to "
+"``False`` to skip this check globally when the cost matters in tight loops "
+"and the caller trusts their inputs."
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/config.pydocstring
+#: of pyvista.core.config.Config.validate_on_wrap:24
+msgid ""
+"Per-call control is also available via the ``validate`` keyword on "
+":func:`pyvista.wrap`, :func:`pyvista.read`, and "
+":meth:`pyvista.BaseReader.read`. The per-call keyword takes precedence; this"
+" global setting is consulted only when the per-call keyword is left at its "
+"default ``None``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:82
+msgid ""
+"The warning emitted when "
+":attr:`~pyvista.core.config.Config.validate_on_wrap` finds an invalid data "
+"array:"
+msgstr ""
+
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/core/errors.pydocstring
+#: of pyvista.core.errors.InvalidMeshWarning:2
+msgid "Warning for invalid mesh properties."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:91
+msgid "Module-Level Flags"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:93
+msgid ""
+"These attributes are plain module globals. Set them at runtime to change the"
+" behavior of the whole process:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:102
+msgid "``pv.OFF_SCREEN`` (default: ``False``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:103
+msgid ""
+"Render all plots off screen, without opening a window. Initialized from "
+":envvar:`PYVISTA_OFF_SCREEN`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:106
+msgid "``pv.BUILDING_GALLERY`` (default: ``False``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:107
+msgid ""
+"Enable behavior needed when Sphinx-Gallery builds the example gallery. "
+"Initialized from :envvar:`PYVISTA_BUILDING_GALLERY`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:110
+msgid "``pv.FIGURE_PATH`` (default: ``None``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:111
+msgid ""
+"Directory where screenshots are saved when a relative file name is given. "
+"Initialized from :envvar:`PYVISTA_FIGURE_PATH`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:114
+msgid "``pv.ON_SCREENSHOT`` (default: ``False``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:115
+msgid ""
+"Render off screen and save a screenshot with a unique file name each time a "
+"plot is shown. Initialized from :envvar:`PYVISTA_ON_SCREENSHOT`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:119
+msgid "``pv.PLOT_DIRECTIVE_THEME`` (default: ``None``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:120
+msgid ""
+"Theme applied by the ``pyvista-plot`` Sphinx directive when building "
+"documentation."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:123
+msgid "``pv.FLOAT_FORMAT`` (default: ``'{:.3e}'``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:124
+msgid "Format string used to print floats in dataset representations."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:126
+msgid "``pv.PICKLE_FORMAT`` (default: ``'vtk'``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:127
+msgid ""
+"In-memory serialization format used when pickling a "
+":class:`~pyvista.DataObject`. Set it with :func:`pyvista.set_pickle_format`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:131
+msgid "``pv.DEFAULT_SCALARS_NAME`` (default: ``'Data'``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:132
+msgid "Name given to data arrays added without a name."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:134
+msgid "``pv.MAX_N_COLOR_BARS`` (default: ``10``)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:135
+msgid "Maximum number of color bars a plotter can show at once."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:140
+msgid "Environment Variables"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:142
+msgid ""
+"Most environment variables are read once, when PyVista (or the module that "
+"uses them) is first imported. The theme-related variables are re-read each "
+"time a new :class:`~pyvista.plotting.themes.Theme` is created. Use the "
+"runtime equivalent listed with each variable to change behavior in a running"
+" process. Boolean variables accept ``true`` or ``false`` (case-insensitive)."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:150
+msgid "Rendering"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:154
+msgid ""
+"Render all plots off screen, without opening a window. Sets "
+"``pv.OFF_SCREEN``; a single plotter can opt in with "
+"``pv.Plotter(off_screen=True)``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:160
+msgid ""
+"Number of multi-samples used for anti-aliasing. Sets the default of "
+":attr:`pyvista.plotting.themes.Theme.multi_samples`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:165
+msgid ""
+"Set to ``false`` to stop plotters from closing automatically after showing. "
+"Sets the default of :attr:`pyvista.plotting.themes.Theme.auto_close`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:171
+msgid ""
+"VTK's own ``VTK_DEFAULT_OPENGL_WINDOW`` environment variable selects the "
+"render window class VTK creates, such as an EGL window for headless "
+"rendering; see the `VTK runtime settings "
+"<https://docs.vtk.org/en/latest/advanced/runtime_settings.html#opengl>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:175
+msgid ""
+"``PYVISTA_VIRTUAL_DISPLAY``, asked about in `issue #8120 "
+"<https://github.com/pyvista/pyvista/issues/8120>`_, is not a PyVista "
+"setting."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:178
+msgid ""
+":attr:`~pyvista.plotting.themes.Theme.interactive` controls whether shown "
+"plots accept user interaction, not off-screen rendering."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:183
+msgid "Theme and Jupyter"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:187
+msgid ""
+"Theme to apply when the plotting module is first loaded. Any name reported "
+"by :func:`pyvista.registered_themes` is accepted, as is a "
+"``\"package.module:ClassName\"`` dotted path to a "
+":class:`~pyvista.plotting.themes.Theme` subclass. An invalid value emits a "
+"warning. Equivalent to calling :func:`pyvista.set_plot_theme`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:196
+msgid ""
+"Default Jupyter plotting backend. Sets the default of "
+":attr:`pyvista.plotting.themes.Theme.jupyter_backend`. See "
+":ref:`jupyter_plotting`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:202
+msgid ""
+"URL prefix for a Jupyter server proxy. Setting it also enables the proxy. "
+"See :ref:`trame_jupyter`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:207
+msgid ""
+"How Trame communicates with Jupyter: ``extension``, ``proxy``, or "
+"``native``. See :ref:`trame_jupyter`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:211
+msgid "VTK"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:215
+msgid ""
+"Which VTK build PyVista imports: ``vtk`` or ``vtkmodules`` for stock VTK, or"
+" the package name of an alternative build. Query the active backend with "
+":func:`pyvista.vtk_backend`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:220
+msgid "Example Data"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:224
+msgid ""
+"Writable directory where downloaded example data is cached. See "
+":ref:`examples_api`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:229
+msgid ""
+"Path to a local clone of `pyvista/data <https://github.com/pyvista/data>`_ "
+"to use instead of downloading example files. See :ref:`examples_api`."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:233
+msgid ""
+"Renamed from ``PYVISTA_VTK_DATA``. The old name is deprecated but still "
+"accepted when the new name is not set."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:237
+msgid ""
+"The settings derived from both variables appear in the output of "
+"``pv.Report(downloads=True)``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:241
+msgid "Documentation Building"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:245
+msgid ""
+"Directory where screenshots are saved when a relative file name is given. "
+"Sets ``pv.FIGURE_PATH``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:250
+msgid "Enable Sphinx-Gallery build behavior. Sets ``pv.BUILDING_GALLERY``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:254
+msgid ""
+"Save a screenshot each time a plot is shown. Sets ``pv.ON_SCREENSHOT``."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:259
+msgid ""
+"``PYVISTA_GALLERY_FORCE_STATIC`` and "
+"``PYVISTA_GALLERY_FORCE_STATIC_IN_DOCUMENT`` are not environment variables: "
+"they are Python variables assigned inside a Sphinx-Gallery example script to"
+" force static images for one plot or for a whole document."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:267
+msgid "``PYVISTA_KILL_DISPLAY`` is no longer used and has no effect."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:272
+msgid "VTK Interface Controls"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:274
+msgid ""
+"These settings control how PyVista interacts with VTK at runtime. The state "
+"managers ``pv.vtk_verbosity``, ``pv.vtk_snake_case``, and "
+"``pv.allow_new_attributes``, along with :func:`pyvista.enable_smp_tools`, "
+"apply globally when called and temporarily when used as context managers:"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ":py:obj:`vtk_verbosity <pyvista.vtk_verbosity>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid "Context manager to set VTK verbosity level."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ":py:obj:`vtk_snake_case <pyvista.vtk_snake_case>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ""
+"Context manager to control access to VTK's pythonic ``snake_case`` API."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ":py:obj:`allow_new_attributes <pyvista.allow_new_attributes>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid "Context manager to control setting new attributes on PyVista classes."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ""
+":py:obj:`enable_smp_tools <pyvista.enable_smp_tools>`\\ \\(\\[backend\\, "
+"n\\_threads\\]\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ""
+"Enable a VTK SMP backend for filters that support shared-memory parallelism."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid ":py:obj:`vtk_backend <pyvista.vtk_backend>`\\ \\(\\)"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:296:<autosummary>:1
+msgid "Return the name of the VTK build PyVista is running against."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:297
+msgid ""
+"Related settings: :attr:`~pyvista.core.config.Config.show_vtk_api` on "
+"``pv.global_config`` controls whether the VTK-inherited API appears in "
+":func:`dir` and tab completion, and ``pv.vtk_version_info`` reports the "
+"version of VTK in use."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:304
+msgid ":ref:`vtk_to_pyvista_docs`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:305
+msgid "How PyVista's interface relates to VTK's."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:310
+msgid "Extension Registries"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:312
+msgid ""
+"Third-party packages extend PyVista through registries. Each registry has a "
+"function for registering at runtime and an entry-point group for registering"
+" from a package's ``pyproject.toml`` so the extension is discovered without "
+"an explicit import."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:321
+msgid "Extension"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:322
+msgid "Register"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:323
+msgid "List"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:324
+msgid "Entry-point group"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:325
+msgid ":ref:`File readers <reader_api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:326
+msgid ":func:`~pyvista.register_reader`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:327
+msgid ":func:`~pyvista.registered_readers`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:328
+msgid "``pyvista.readers``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:329
+msgid ":ref:`File writers <reader_api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:330
+msgid ":func:`~pyvista.register_writer`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:331
+msgid ":func:`~pyvista.registered_writers`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:332
+msgid "``pyvista.writers``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:333
+msgid ":ref:`Dataset accessors <accessor-api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:334
+msgid ":func:`~pyvista.register_dataset_accessor`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:335
+msgid ":func:`~pyvista.registered_accessors`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:336
+msgid "``pyvista.accessors``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:337
+msgid ":ref:`Plotter components <plotter-component-api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:338
+msgid ":func:`~pyvista.register_plotter_component`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:339
+msgid ":func:`~pyvista.registered_plotter_components`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:340
+msgid "``pyvista.plotter_components``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:341
+msgid ":ref:`Jupyter backends <jupyter_plotting>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:342
+msgid ":func:`~pyvista.register_jupyter_backend`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:343
+msgid ":func:`~pyvista.registered_jupyter_backends`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:344
+msgid "``pyvista.jupyter_backends``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:345
+msgid ":ref:`Themes <theme_api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:346
+msgid "Subclass :class:`~pyvista.plotting.themes.Theme`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:347
+msgid ":func:`~pyvista.registered_themes`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:348
+msgid "``pyvista.themes``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:349
+msgid ":ref:`Interactor styles <theme_api>`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:350
+msgid ":func:`~pyvista.register_interactor_style`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:352
+msgid "``pyvista.interactor_styles``"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:356
+msgid ":ref:`extending-pyvista`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:357
+msgid "Guide to writing a plugin package, with a worked accessor example."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:363
+msgid "Inspecting the Environment"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/configuration.rst:365
+msgid ""
+":class:`pyvista.Report` summarizes the running environment: package "
+"versions, GPU information, and, with ``pv.Report(downloads=True)``, the "
+"example-data configuration."
+msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:4
 msgid "PyVista Data Model"
@@ -71,10 +807,10 @@ msgstr ""
 msgid ""
 "If you'd like some background for how VTK structures its data, see "
 "`Introduction to VTK in Python by Kitware <https://vimeo.com/32232190>`_, as"
-" well as the numerous code examples on `Kitware's GitHub site "
-"<https://kitware.github.io/vtk-examples/site/>`_. An excellent introduction "
-"to mathematical concepts relevant to 3D modeling in general implemented in "
-"VTK is provided by the `Discrete Differential Geometry YouTube Series "
+" well as the numerous code examples on `Kitware's VTK examples site "
+"<https://examples.vtk.org/site/>`_. An excellent introduction to "
+"mathematical concepts relevant to 3D modeling in general implemented in VTK "
+"is provided by the `Discrete Differential Geometry YouTube Series "
 "<https://www.youtube.com/playlist?list=PL9_jI1bdZmz0hIrNCMQW1YmZysAiIYSSS>`_"
 " by Prof. Keenan Crane at Carnegie Mellon. The concepts taught here will "
 "help improve your understanding of why data sets are structured the way they"
@@ -194,7 +930,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:155
-msgid "Using NumPy with PyVista"
+msgid "Using NumPy With PyVista"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:156
@@ -213,7 +949,7 @@ msgstr ""
 #: ../../pyvista/doc/source/user-guide/data_model.rst:170
 msgid ""
 "Should you wish to use VTK objects within PyVista, you can still do this. In"
-" fact, using :func:`pyvista.wrap`, you can even get a numpy-like "
+" fact, using :func:`pyvista.wrap`, you can even get a NumPy-like "
 "representation of the data. For example:"
 msgstr ""
 
@@ -224,13 +960,13 @@ msgid ""
 "underlying C array to the :class:`numpy.ndarray`, meaning that the two "
 "arrays are now efficiently linked (in NumPy terminology, the returned array "
 "is a view into the underlying VTK data). This means that we can change the "
-"array using numpy array indexing and have it modified on the \"VTK side\"."
+"array using NumPy array indexing and have it modified on the \"VTK side\"."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:193
 msgid ""
 "Or we can change the value from the VTK array and see it reflected in the "
-"numpy wrapped array. Let's change the value back:"
+"NumPy wrapped array. Let's change the value back:"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:203
@@ -291,7 +1027,7 @@ msgstr ""
 #: ../../pyvista/doc/source/user-guide/data_model.rst:263
 msgid ""
 "With our previous example, we defined our \"mesh\" as three disconnected "
-"points. While this is useful for representing \"point clouds,\" if we want "
+"points. While this is useful for representing \"point clouds\", if we want "
 "to create a surface, we have to describe the connectivity of the mesh. To do"
 " this, let's define a single cell composed of three points in the same order"
 " as we defined earlier."
@@ -482,7 +1218,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:449
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:169
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:171
 msgid "Cell Data"
 msgstr ""
 
@@ -544,7 +1280,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:534
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:155
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:157
 msgid "Point Data"
 msgstr ""
 
@@ -622,7 +1358,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:647
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:202
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:204
 msgid "Field Data"
 msgstr ""
 
@@ -656,7 +1392,7 @@ msgid ""
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:676
-msgid "Vectors, Texture Coords, and Normals Attributes"
+msgid "Vectors, Texture Coordinates, and Normals Attributes"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/data_model.rst:677
@@ -792,39 +1528,39 @@ msgstr ""
 msgid "User Guide Contents"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:72
+#: ../../pyvista/doc/source/user-guide/index.rst:73
 msgid "Videos"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:73
+#: ../../pyvista/doc/source/user-guide/index.rst:74
 msgid "Here are some videos that you can watch to learn PyVista:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:75
+#: ../../pyvista/doc/source/user-guide/index.rst:76
 msgid ""
 "PyConJP2020 talk \"How to plot unstructured mesh file on Jupyter Notebook\" "
 "(15 minutes):"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:78
+#: ../../pyvista/doc/source/user-guide/index.rst:79
 msgid "`Video <https://youtu.be/X3Z54Kw4I6Y>`_"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:79
+#: ../../pyvista/doc/source/user-guide/index.rst:80
 msgid ""
 "`Material "
 "<https://docs.google.com/presentation/d/1M_cnS66ja81u_mHACjaUsDj1wSeeEtnEevk_IMZ8-dg/edit?usp=sharing>`_"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:81
+#: ../../pyvista/doc/source/user-guide/index.rst:82
 msgid "Software Underground Tutorial"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:83
+#: ../../pyvista/doc/source/user-guide/index.rst:84
 msgid "`Tutorial: PyVista <https://www.youtube.com/watch?v=FmNmRBsEBHE>`_"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/index.rst:85
+#: ../../pyvista/doc/source/user-guide/index.rst:86
 msgid ""
 "If there is any material that we can add, please open an `issue "
 "<https://github.com/pyvista/pyvista/issues>`_ ."
@@ -865,7 +1601,7 @@ msgid "Static images."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/index.rst:29
-msgid "Usage with PyVista"
+msgid "Usage With PyVista"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/index.rst:30
@@ -874,41 +1610,42 @@ msgid ""
 "done on a plot by plot basis by setting the ``jupyter_backend`` parameter in"
 " either :func:`Plotter.show() <pyvista.Plotter.show>` or "
 ":func:`dataset.plot() <pyvista.DataSet.plot>`. You can also set it globally "
-"with the :func:`pyvista.set_jupyter_backend`. Custom backends are also "
-"supported with :func:`pyvista.register_jupyter_backend`. For further "
-"details:"
+"with the :func:`pyvista.set_jupyter_backend` or the "
+":envvar:`PYVISTA_JUPYTER_BACKEND` environment variable (see "
+":ref:`configuration`). Custom backends are also supported with "
+":func:`pyvista.register_jupyter_backend`. For further details:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:2
 msgid "Set the plotting backend for a jupyter notebook."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:0
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:7
 msgid "**backend** : :class:`python:str`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:7
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:6
 msgid "python:str"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:8
 msgid "Jupyter backend to use when plotting.  Must be one of the following:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:10
 msgid ""
 "``'static'`` : Display a single static image within the Jupyterlab "
@@ -917,7 +1654,7 @@ msgid ""
 " to be installed."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:15
 msgid ""
 "``'client'`` : Export/serialize the scene graph to be rendered with VTK.js "
@@ -925,7 +1662,7 @@ msgid ""
 "proxy`` to be installed."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:19
 msgid ""
 "``'server'``: Render remotely and stream the resulting VTK images back to "
@@ -937,21 +1674,21 @@ msgid ""
 "mode is also aliased by ``'trame'``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:28
 msgid ""
 "``'trame'``: The full Trame-based backend that combines both ``'server'`` "
 "and ``'client'`` into one backend. This requires a virtual frame buffer."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:32
 msgid ""
 "``'html'`` : Export/serialize the scene graph to be rendered with the Trame "
 "client backend but in a static HTML file."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:35
 msgid ""
 "``'none'`` : Do not display any plots within jupyterlab, instead display "
@@ -959,119 +1696,112 @@ msgid ""
 "servers even with a virtual framebuffer."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:40
 msgid ""
 "Custom backends registered via :func:`~pyvista.register_jupyter_backend` are"
 " also accepted. Pass ``None`` to reset to auto-detection at display time."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:44
 msgid "**name** : :class:`python:str`, :obj:`optional`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:43
 msgid "python:str, optional"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:45
 msgid "The unique name identifier for the server."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:47
 msgid "**\\*\\*kwargs** : :class:`python:dict`, :obj:`optional`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:46
 msgid "python:dict, optional"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.set_jupyter_backend:48
 msgid "Any additional keyword arguments to pass to the server launch."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.register_jupyter_backend:45
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:63
-msgid "Examples"
-msgstr ""
-
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:65
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:64
 msgid "Enable the trame Trame backend."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:69
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:68
 msgid "Just show static images."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:73
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:72
 msgid ""
 "Disable all plotting within JupyterLab and display using a standard desktop "
 "VTK render window."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
-#: of pyvista.jupyter.set_jupyter_backend:78
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: of pyvista.jupyter.set_jupyter_backend:77
 msgid "Reset to auto-detect the best available backend."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:2
 msgid "Register a custom Jupyter backend handler."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:8
 msgid "**name** : :class:`python:str`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:9
 msgid ""
-"Name of the backend (e.g. ``'custom'``). Must not collide with a built-in "
-"backend name unless ``override=True`` is passed."
+"Name of the backend (for example, ``'custom'``). Must not collide with a "
+"built-in backend name unless ``override=True`` is passed."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:12
 msgid "**handler** : :func:`python:callable`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:11
 msgid "python:callable()"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:13
 msgid ""
 "A callable with signature ``handler(plotter, **kwargs)`` that returns an "
 "IPython-displayable object."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:16
 msgid ""
 "**override** : :ref:`bool <python:bltin-boolean-values>`, default: "
 ":data:`python:False`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:15
 msgid "bool, default: python:False"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:17
 msgid ""
 "If ``True``, allow registering a name that collides with a built-in backend."
@@ -1079,33 +1809,33 @@ msgid ""
 "registration."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:0
 msgid "Raises"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:29
 msgid ":obj:`ValueError`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:30
 msgid ""
 "If ``name`` collides with a built-in backend and ``override`` is ``False``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:0
 msgid "Warns"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:35
 msgid ":obj:`UserWarning`"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.15/x64/lib/python3.13/site-packages/pyvista/jupyter/__init__.pydocstring
 #: of pyvista.jupyter.register_jupyter_backend:36
 msgid ""
 "If ``name`` already refers to a registered custom backend. The new "
@@ -1217,13 +1947,13 @@ msgstr ""
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:104
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:165
 msgid ""
-":py:attr:`pyvista.global_theme.trame.server_proxy_enabled "
+":attr:`pyvista.global_theme.trame.server_proxy_enabled "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_enabled>`"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:106
 msgid ""
-":py:attr:`pyvista.global_theme.trame.server_proxy_prefix "
+":attr:`pyvista.global_theme.trame.server_proxy_prefix "
 "<pyvista.plotting.themes._TrameConfig.server_proxy_prefix>`"
 msgstr ""
 
@@ -1287,12 +2017,12 @@ msgstr ""
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:153
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:167
 msgid ""
-":py:attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
+":attr:`pyvista.global_theme.trame.jupyter_extension_enabled "
 "<pyvista.plotting.themes._TrameConfig.jupyter_extension_enabled>`"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:158
-msgid "Setting Remote Jupyter Host with an Environment Variable"
+msgid "Setting Remote Jupyter Host With an Environment Variable"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:159
@@ -1326,11 +2056,11 @@ msgid "Condition"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:181
-msgid "`server_proxy_enabled`"
+msgid "``server_proxy_enabled``"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:182
-msgid "`jupyter_extension_enabled`"
+msgid "``jupyter_extension_enabled``"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/jupyter/trame.rst:184
@@ -1617,80 +2347,90 @@ msgid ""
 " through one global configuration."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:10
+#: ../../pyvista/doc/source/user-guide/themes.rst:12
+msgid ":ref:`configuration`"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:13
+msgid ""
+"``pv.global_theme`` is one of two global configuration objects. The other, "
+"``pv.global_config``, holds the core non-plotting settings."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/themes.rst:17
 msgid ""
 "The default theme parameters in PyVista can be accessed and displayed with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:17
+#: ../../pyvista/doc/source/user-guide/themes.rst:24
 msgid ""
 "Default plotting parameters can be accessed individually by their attribute "
 "names:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:24
+#: ../../pyvista/doc/source/user-guide/themes.rst:31
 msgid ""
 "Here's an example plot of the Stanford Dragon using default plotting "
 "parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:35
+#: ../../pyvista/doc/source/user-guide/themes.rst:42
 msgid "These parameters can then be modified globally with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:44
+#: ../../pyvista/doc/source/user-guide/themes.rst:51
 msgid "Now, the mesh will be plotted with the new global parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:51
+#: ../../pyvista/doc/source/user-guide/themes.rst:58
 msgid "This is identical to plotting the mesh with the following parameters:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:62
-msgid "Creating A Custom Theme"
+#: ../../pyvista/doc/source/user-guide/themes.rst:69
+msgid "Creating a Custom Theme"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:63
+#: ../../pyvista/doc/source/user-guide/themes.rst:70
 msgid ""
 "You can customize a theme based on one of the built-in themes and then apply"
 " it globally with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:78
+#: ../../pyvista/doc/source/user-guide/themes.rst:85
 msgid "Alternatively, you can save the theme to disk to be used later with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:84
+#: ../../pyvista/doc/source/user-guide/themes.rst:91
 msgid "And then subsequently loaded in a new session of pyvista with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:92
+#: ../../pyvista/doc/source/user-guide/themes.rst:99
 msgid "Default Interactor Styles"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:94
+#: ../../pyvista/doc/source/user-guide/themes.rst:101
 msgid ""
 "Themes can also control the default interactor style used by new plotters. "
 "Built-in styles use the same names as the corresponding ``enable_*_style`` "
 "methods."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:104
+#: ../../pyvista/doc/source/user-guide/themes.rst:111
 msgid ""
 "Custom interactor styles can be registered by downstream packages and used "
 "the same way once they are installed or registered at runtime."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:109
+#: ../../pyvista/doc/source/user-guide/themes.rst:116
 msgid "Theme API"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/themes.rst:110
+#: ../../pyvista/doc/source/user-guide/themes.rst:117
 msgid "See :ref:`theme_api` for the full API definition."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:5
-msgid "Transitioning from VTK to PyVista"
+msgid "Transitioning From VTK to PyVista"
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:6
@@ -1712,7 +2452,7 @@ msgstr ""
 msgid ""
 "As you can see, there is quite a bit of boilerplate that goes into the "
 "creation of a simple :vtk:`vtkImageData` dataset. PyVista provides much more"
-" concise syntax that is more \"Pythonic.\" The equivalent code in PyVista "
+" concise syntax that is more \"Pythonic\". The equivalent code in PyVista "
 "is:"
 msgstr ""
 
@@ -1726,8 +2466,8 @@ msgid ""
 ":class:`numpy.ndarray`) with the values of the data in one line. VTK uses "
 "\"tuples\" to describe the shape of the data (where it sits in space) and "
 "\"components\" to describe the type of data (1 = scalars/scalar fields, 2 = "
-"vectors/vector fields, n = tensors/tensor fields). Here, shape and values "
-"are stored concretely in one variable."
+"vectors/vector fields, n = tensors/tensor fields). Here, both shape and "
+"values are stored concretely in one variable."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:79
@@ -1760,7 +2500,7 @@ msgid ""
 "This is why in our earlier example, the first argument to ``SetValue()`` was"
 " written as ``x*300 + y``. Here, numpy takes care of this for us quite "
 "nicely and it's made more explicit in the code, following the Python best "
-"practice of \"Explicit is better than implicit.\""
+"practice of \"Explicit is better than implicit\"."
 msgstr ""
 
 #: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:109
@@ -1898,11 +2638,25 @@ msgid ""
 "VTK code."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:4
-msgid "What is a Mesh?"
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:342
+msgid "Configuring the VTK Interface"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:5
+#: ../../pyvista/doc/source/user-guide/vtk_to_pyvista.rst:343
+msgid ""
+"PyVista has several runtime controls for the underlying VTK library, such as"
+" :func:`pyvista.vtk_snake_case` for access to VTK's own ``snake_case`` "
+"attributes on wrapped objects, :func:`pyvista.vtk_verbosity` for VTK's "
+"logging verbosity, and ``pv.global_config.show_vtk_api`` for showing the "
+"VTK-inherited API in tab completion. See :ref:`configuration` for all of "
+"them."
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:6
+msgid "What Is a Mesh?"
+msgstr ""
+
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:7
 msgid ""
 "In PyVista, a mesh is any spatially referenced information and usually "
 "consists of geometrical representations of a surface or volume in 3D space. "
@@ -1914,7 +2668,7 @@ msgid ""
 " also call that a mesh. Why? Because it is simple that way."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:15
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:17
 msgid ""
 "In all spatially referenced datasets, there lies an underlying mesh "
 "structure which is the connectivity between vertices to define cells. "
@@ -1923,18 +2677,18 @@ msgid ""
 "so that you as a user do not have to get bogged down in the nuances."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:22
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:24
 msgid ""
 "This is a very high level overview of the PyVista API. For further details "
 "regarding our data model and how it relates to the underlying VTK data "
 "model, please see :ref:`pyvista_data_model`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:28
-msgid "What is a Point?"
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:30
+msgid "What Is a Point?"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:29
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:31
 msgid ""
 "Points are the vertices of the mesh, also referred to as the Cartesian "
 "coordinates of the underlying structure. All PyVista datasets (meshes) have "
@@ -1942,34 +2696,34 @@ msgid ""
 " cloud."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:34
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:36
 msgid ""
 "For example, you can create a point cloud mesh using the "
 ":class:`pyvista.PolyData` class which is built for meshes that have 1D and "
 "2D cell types (we'll get into what a cell is briefly)."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:38
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:40
 msgid ""
 "Let's start with a point cloud; this is a mesh type that only has vertices. "
 "You can create one by defining a 2D array of Cartesian coordinates like so:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:67
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:69
 msgid ""
 "But it's important to note that most meshes have some sort of connectivity "
 "between points such as this gridded mesh:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:87
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:89
 msgid "Or this triangulated surface:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:108
-msgid "What is a Cell?"
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:110
+msgid "What Is a Cell?"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:109
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:111
 msgid ""
 "A cell is the geometry between points that defines the connectivity or "
 "topology of a mesh. In the examples above, cells are defined by the lines "
@@ -1978,40 +2732,40 @@ msgid ""
 "points in that mesh:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:136
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:138
 msgid ""
 "Cells aren't limited to voxels, they could be a triangle between three "
 "points, a line between two points, or even a single point could be its own "
 "cell (but that's a special case)."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:142
-msgid "What are Attributes?"
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:144
+msgid "What Are Attributes?"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:143
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:145
 msgid ""
 "Attributes are data values that live on either the points or cells of a "
 "mesh. In PyVista, we work with both point data and cell data and allow easy "
 "access to data dictionaries to hold arrays for attributes that live either "
 "on all points or on all cells of a mesh. These attributes can be accessed in"
-" a Dictionary-like attribute attached to any PyVista mesh accessible as one "
+" a dictionary-like attribute attached to any PyVista mesh accessible as one "
 "of the following:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:150
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:152
 msgid ":attr:`point_data <pyvista.DataSet.point_data>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:151
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:153
 msgid ":attr:`cell_data <pyvista.DataSet.cell_data>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:152
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:154
 msgid ":attr:`field_data <pyvista.DataObject.field_data>`"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:156
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:158
 msgid ""
 "Point data refers to arrays of values (scalars, vectors, etc.) that live on "
 "each point of the mesh. Each element in an attribute array corresponds to a "
@@ -2019,38 +2773,38 @@ msgid ""
 "plotting, the values between points are interpolated across the cells."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:170
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:172
 msgid ""
 "Cell data refers to arrays of values (scalars, vectors, etc.) that live "
 "throughout each cell of the mesh. That is the entire cell (2D face or 3D "
 "volume) is assigned the value of that attribute."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:180
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:182
 msgid ""
 "Here's a comparison of point data versus cell data and how point data is "
 "interpolated across cells when mapping colors. This is unlike cell data "
 "which has a single value across the cell's domain:"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:203
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:205
 msgid ""
 "Field data is not directly associated with either the points or cells but "
 "still should be attached to the mesh. This may be a string array storing "
 "notes, or even indices of a :ref:`collision_example`."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:211
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:213
 msgid "Assigning Scalars to a Mesh"
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:213
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:215
 msgid ""
 "Here's how we assign values to cell attributes and plot it. Here, we "
 "generate cube containing 6 faces and assign each face an integer from "
 "``range(6)`` and then have it plotted."
 msgstr ""
 
-#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:217
+#: ../../pyvista/doc/source/user-guide/what-is-a-mesh.rst:219
 msgid "Note how this varies from assigning scalars to each point"
 msgstr ""
