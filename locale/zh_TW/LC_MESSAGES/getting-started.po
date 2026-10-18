@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PyVista 0.49.dev0\n"
+"Project-Id-Version: PyVista 0.50.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-01 02:30+0000\n"
+"POT-Creation-Date: 2026-09-28 20:10+0000\n"
 "PO-Revision-Date: 2020-08-05 16:06+0000\n"
 "Last-Translator: Dorothy_Haze, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/tkoyama010/teams/112279/zh_TW/)\n"
@@ -869,12 +869,46 @@ msgstr ""
 
 #: ../../pyvista/doc/source/getting-started/installation.rst:197
 msgid ""
+"The fork does not replace stock VTK -- ``vtk`` remains a hard requirement of"
+" PyVista, so both are installed. To install the fork *instead of* stock VTK,"
+" drop the requirement during resolution. This needs `uv "
+"<https://docs.astral.sh/uv/>`_; pip has no equivalent."
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:202
+msgid "For a project, declare it once and it is recorded in the lock file:"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:212
+msgid "For a one-off install:"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:0
+msgid "bash / zsh"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:0
+msgid "PowerShell"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:0
+msgid "Any shell"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:238
+msgid ""
+"The resulting environment is functionally correct but reports as "
+"inconsistent, since PyVista's metadata still requires ``vtk``::"
+msgstr ""
+
+#: ../../pyvista/doc/source/getting-started/installation.rst:246
+msgid ""
 "Set :envvar:`PYVISTA_VTK_BACKEND` to choose explicitly. It must be set "
 "**before** PyVista is imported, since the backend is resolved at import "
 "time::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:205
+#: ../../pyvista/doc/source/getting-started/installation.rst:254
 msgid ""
 "A process must use **one** VTK build throughout. Libraries that import VTK "
 "themselves default to stock VTK, so mixing them with a PyVista running on "
@@ -882,88 +916,88 @@ msgid ""
 "is the common case; point it at the same build with its own setting::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:212
+#: ../../pyvista/doc/source/getting-started/installation.rst:261
 msgid ""
 "Use :func:`pyvista.vtk_backend` to check which build is active at runtime --"
 " useful for raising a clear error when a build does not ship a module a "
 "feature needs, since the two do not carry identical module sets:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:226
+#: ../../pyvista/doc/source/getting-started/installation.rst:275
 msgid "Source / Developers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:228
+#: ../../pyvista/doc/source/getting-started/installation.rst:277
 msgid ""
 "Alternatively, you can install the latest version from GitHub by visiting "
 "`PyVista <https://github.com/pyvista/pyvista>`_, and downloading the source "
 "(cloning) by running::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:237
+#: ../../pyvista/doc/source/getting-started/installation.rst:286
 msgid ""
 "The latest documentation for the ``main`` branch of PyVista can be found at "
 "`dev.pyvista.org <https://dev.pyvista.org>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:242
+#: ../../pyvista/doc/source/getting-started/installation.rst:291
 msgid "Test Installation"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:244
+#: ../../pyvista/doc/source/getting-started/installation.rst:293
 msgid "You can test your installation by running an example:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:251
+#: ../../pyvista/doc/source/getting-started/installation.rst:300
 msgid "See other examples and demos:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:267
+#: ../../pyvista/doc/source/getting-started/installation.rst:316
 msgid ""
 "A more comprehensive testing suite is available after cloning the source "
 "repository. For details on how to clone and test the PyVista source, please "
 "see our `Contributing Guide`_ and specifically, the `Testing`_ section."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:276
+#: ../../pyvista/doc/source/getting-started/installation.rst:325
 msgid "Running on CI Services"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:277
+#: ../../pyvista/doc/source/getting-started/installation.rst:326
 msgid ""
 "Please head over to `pyvista/setup-headless-display-action`_ for details on "
 "setting up a headless display in GitHub Actions Workflows using PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:280
+#: ../../pyvista/doc/source/getting-started/installation.rst:329
 msgid ""
 "In the past, we have also supported `pyvista/gl-ci-helpers`_ for setting up "
 "CI services like Travis and Azure Pipelines to run PyVista."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:288
+#: ../../pyvista/doc/source/getting-started/installation.rst:337
 msgid "Running on MyBinder"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:289
+#: ../../pyvista/doc/source/getting-started/installation.rst:338
 msgid ""
 "This section is for advanced users that would like to install and use "
 "PyVista with headless displays on notebook hosting services like MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:292
+#: ../../pyvista/doc/source/getting-started/installation.rst:341
 msgid ""
 "Please see `this project`_ for a convenient Cookiecutter_ to get started "
 "using PyVista on the notebook hosting service MyBinder_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:299
+#: ../../pyvista/doc/source/getting-started/installation.rst:348
 msgid ""
 "The Docker container only needs VTK's runtime GL libraries. For MyBinder, "
 "include the following in a file called ``apt.txt``::"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:307
+#: ../../pyvista/doc/source/getting-started/installation.rst:356
 msgid ""
 "That is the complete system-library set: ``libegl1`` enables EGL so VTK "
 "picks up GPU acceleration automatically when the container is run with the "
@@ -973,7 +1007,7 @@ msgid ""
 "``DISPLAY`` setup is required."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:314
+#: ../../pyvista/doc/source/getting-started/installation.rst:363
 msgid ""
 "Include PyVista in your Python requirements and "
 "``pv.Plotter(off_screen=True)`` will render. If you need more help than this"
@@ -982,11 +1016,11 @@ msgid ""
 "is currently using PyVista on MyBinder."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:323
+#: ../../pyvista/doc/source/getting-started/installation.rst:372
 msgid "Running on Remote Servers"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:324
+#: ../../pyvista/doc/source/getting-started/installation.rst:373
 msgid ""
 "Using PyVista on remote servers requires similar setup steps as in the above"
 " Docker case. As an example, here are the complete steps to use PyVista on "
@@ -994,13 +1028,13 @@ msgid ""
 " servers would work similarly."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:329
+#: ../../pyvista/doc/source/getting-started/installation.rst:378
 msgid ""
 "After logging into the remote server, install VTK's runtime GL libraries and"
 " set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:340
+#: ../../pyvista/doc/source/getting-started/installation.rst:389
 msgid ""
 "With ``libegl1`` installed, VTK 9.5+ renders off-screen via EGL out of the "
 "box, so no ``Xvfb`` or ``DISPLAY`` configuration is required. Set "
@@ -1010,20 +1044,20 @@ msgid ""
 " all environment variables."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:347
+#: ../../pyvista/doc/source/getting-started/installation.rst:396
 msgid "Reconnect to the server with port-forwarding, and start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:355
-#: ../../pyvista/doc/source/getting-started/installation.rst:383
+#: ../../pyvista/doc/source/getting-started/installation.rst:404
+#: ../../pyvista/doc/source/getting-started/installation.rst:432
 msgid "Visit ``localhost:8888`` in the web browser."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:358
+#: ../../pyvista/doc/source/getting-started/installation.rst:407
 msgid "Running on WSL"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:359
+#: ../../pyvista/doc/source/getting-started/installation.rst:408
 msgid ""
 "Similar to the example of the remote server above, the windows subsystem for"
 " Linux does not provide an x-server for visualization. Instead, the fastest "
@@ -1031,41 +1065,41 @@ msgid ""
 "<https://jupyter.org/>`_."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:363
+#: ../../pyvista/doc/source/getting-started/installation.rst:412
 msgid "First, install VTK's runtime GL libraries and set up Python:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:374
+#: ../../pyvista/doc/source/getting-started/installation.rst:423
 msgid "VTK Link to Jupyter"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:375
+#: ../../pyvista/doc/source/getting-started/installation.rst:424
 msgid ""
 "As of VTK 9.5, headless off-screen rendering works out of the box with the "
 "stock PyPI ``vtk`` wheel when ``libegl1`` is installed. No ``Xvfb`` or "
 "``DISPLAY`` configuration is needed. Start Jupyter:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:385
+#: ../../pyvista/doc/source/getting-started/installation.rst:434
 msgid ""
 "Finally add this example code and your interactive visualizations should be "
 "displayed in JupyterLab."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:399
+#: ../../pyvista/doc/source/getting-started/installation.rst:448
 msgid ""
 "Your visualizations should now be showing directly in the Jupyter frontend."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:402
+#: ../../pyvista/doc/source/getting-started/installation.rst:451
 msgid "Running With Sphinx-Gallery"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:403
+#: ../../pyvista/doc/source/getting-started/installation.rst:452
 msgid "In your ``conf.py``, add the following:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/installation.rst:430
+#: ../../pyvista/doc/source/getting-started/installation.rst:479
 msgid ""
 "We also have a Sphinx-Gallery scraper for embedding dynamic 3D scenes "
 "instead of static screenshots. This scraper can be enabled by passing an "
@@ -1100,15 +1134,15 @@ msgid ""
 "code."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:51
+#: ../../pyvista/doc/source/getting-started/why.rst:53
 msgid "Read and plot STL file using `vtk`_"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:51
+#: ../../pyvista/doc/source/getting-started/why.rst:53
 msgid "Read an STL file using PyVista"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:78
+#: ../../pyvista/doc/source/getting-started/why.rst:80
 msgid ""
 "The PyVista data model and API allows you to rapidly load meshes and handles"
 " much of the \"grunt work\" of setting up plots, connecting classes and "
@@ -1116,7 +1150,7 @@ msgid ""
 "simplified, but functional, interface to VTK's classes."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:83
+#: ../../pyvista/doc/source/getting-started/why.rst:85
 msgid ""
 "In :func:`pyvista.read`, PyVista automatically determines the correct file "
 "reader based on the file extension and returns a DataSet object. This "
@@ -1127,17 +1161,17 @@ msgid ""
 "after the user closes the plotting window."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:91
+#: ../../pyvista/doc/source/getting-started/why.rst:93
 msgid ""
 "For more details comparing the two APIs, please see "
 ":ref:`pyvista_data_model` and :ref:`vtk_to_pyvista_docs`."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:96
+#: ../../pyvista/doc/source/getting-started/why.rst:98
 msgid "PyVista API"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:97
+#: ../../pyvista/doc/source/getting-started/why.rst:99
 msgid ""
 "For example, triangular surface meshes in VTK can be subdivided but every "
 "other object in VTK cannot. It then makes sense that a "
@@ -1145,7 +1179,7 @@ msgid ""
 "triangular surface mesh. That way, subdivision can be performed with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:110
+#: ../../pyvista/doc/source/getting-started/why.rst:112
 msgid ""
 "Additionally, the docstrings for all methods in PyVista are intended to be "
 "used within interactive coding sessions. This allows users to use "
@@ -1153,11 +1187,11 @@ msgid ""
 "description of how to use those methods:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:119
+#: ../../pyvista/doc/source/getting-started/why.rst:121
 msgid "Interfacing With Other Libraries"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:120
+#: ../../pyvista/doc/source/getting-started/why.rst:122
 msgid ""
 "PyVista is heavily dependent on `numpy <https://numpy.org/>`_ and uses it to"
 " represent point, cell, field, and other data from the VTK meshes. This data"
@@ -1166,20 +1200,20 @@ msgid ""
 "from pyvista can be accessed with:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:133
+#: ../../pyvista/doc/source/getting-started/why.rst:135
 msgid ""
 "And these points can be operated on as if it was a NumPy array, all without "
 "losing connection to the underlying VTK data array."
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:136
+#: ../../pyvista/doc/source/getting-started/why.rst:138
 msgid ""
 "At the same time, a variety of PyVista objects can be generated directly "
 "from NumPy arrays. For example, below we generate a vector field of arrows "
 "using :func:`numpy.meshgrid`:"
 msgstr ""
 
-#: ../../pyvista/doc/source/getting-started/why.rst:165
+#: ../../pyvista/doc/source/getting-started/why.rst:167
 msgid ""
 "PyVista has connections to several other libraries, such as `meshio "
 "<https://github.com/nschloe/meshio>`_ and `matplotlib "
