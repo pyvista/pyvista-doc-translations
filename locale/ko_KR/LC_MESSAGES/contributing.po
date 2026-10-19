@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.50.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-18 18:51+0000\n"
+"POT-Creation-Date: 2026-10-18 23:39+0000\n"
 "PO-Revision-Date: 2026-08-10 20:23+0000\n"
 "Language-Team: Korean (Korea) (https://app.transifex.com/tkoyama010/teams/112279/ko_KR/)\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgid ""
 "all pyvista dependencies including test dependencies pre-installed. In "
 "addition, it uses the `desktop-lite feature "
 "<https://github.com/devcontainers/features/tree/main/src/desktop-lite>`_ to "
-"provide live interaction windows.  Follow directions `Connecting to the "
+"provide live interaction windows. Follow directions `Connecting to the "
 "desktop <https://github.com/devcontainers/features/tree/main/src/desktop-"
 "lite#connecting-to-the-desktop>`_ to use the live interaction."
 msgstr ""
@@ -716,13 +716,19 @@ msgstr ""
 
 #: ../../pyvista/CONTRIBUTING.rst:483
 msgid ""
+"Double spaces between sentences are caught by the ``sentence-spacing`` pre-"
+"commit hook rather than by Vale."
+msgstr ""
+
+#: ../../pyvista/CONTRIBUTING.rst:486
+msgid ""
 "``doc/run_vale.py`` extracts the ``.rst`` files described below, runs Vale "
 "over every path CI checks, and then confirms that the rules still reject the"
 " fixtures in ``tests/doc/vale/``. The path list lives in that script alone; "
 "the workflow reads it with ``--print-files``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:488
+#: ../../pyvista/CONTRIBUTING.rst:491
 msgid ""
 "Vale cannot parse prose written inside a Python file directly (for example, "
 "the ``# %%`` cell headings in a gallery example, or a docstring's "
@@ -735,21 +741,21 @@ msgid ""
 "``pyvista/``, with the ``.py`` extension swapped for ``.rst``. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:498
+#: ../../pyvista/CONTRIBUTING.rst:501
 msgid ""
 "A gallery heading error reported as "
 "``.vale/examples/02-plot/point_picking.rst:31:1`` refers to "
 "``examples/02-plot/point_picking.py:31:1``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:501
+#: ../../pyvista/CONTRIBUTING.rst:504
 msgid ""
 "A docstring error reported as ``.vale/pyvista/core/pointset.rst:109:1`` "
 "refers to ``pyvista/core/pointset.py:109:1`` (the ``Flag for using the mesh "
 "scalars as weights.`` line of ``PointSet.center_of_mass``'s docstring)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:506
+#: ../../pyvista/CONTRIBUTING.rst:509
 msgid ""
 "``doc/styles/config/vocabularies/pyvista/accept.txt`` is a spelling-"
 "vocabulary waiver list, not a style waiver list: a word belongs there only "
@@ -758,13 +764,13 @@ msgid ""
 "unnecessary. Prefer, in order:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:512
+#: ../../pyvista/CONTRIBUTING.rst:515
 msgid ""
 "**Reword.** A Latin abbreviation, an awkward compound, or a non-Oxford list "
 "is a text problem, not a vocabulary problem -- fix the sentence."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:514
+#: ../../pyvista/CONTRIBUTING.rst:517
 msgid ""
 "**Hyphenate or split.** ``down-sample``, ``in-place``, ``de-registration``, "
 "``file path`` are two recognizable words, not one unrecognized one. Check "
@@ -773,7 +779,7 @@ msgid ""
 "accepting the joined form is itself the mistake to avoid."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:519
+#: ../../pyvista/CONTRIBUTING.rst:522
 msgid ""
 "**Backtick it as code** if it actually is: a parameter, attribute, class, or"
 " module name. If the value is a string literal a parameter accepts "
@@ -790,7 +796,7 @@ msgid ""
 "sequence."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:532
+#: ../../pyvista/CONTRIBUTING.rst:535
 msgid ""
 "**Only then accept it**: ``colormap``, ``cubemap``, ``framerate`` are "
 "established one-word technical terms with no better spelling. A dual-cased "
@@ -803,7 +809,7 @@ msgid ""
 "human read."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:542
+#: ../../pyvista/CONTRIBUTING.rst:545
 msgid ""
 "A docstring should not describe a parameter or property by repeating its own"
 " name in backticks, for example ``\"\"\"Return or set the "
@@ -812,11 +818,11 @@ msgid ""
 "*different* real identifier, not the thing whose docstring this is."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:550
+#: ../../pyvista/CONTRIBUTING.rst:553
 msgid "Docstrings"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:552
+#: ../../pyvista/CONTRIBUTING.rst:555
 msgid ""
 "PyVista uses Python docstrings to create reference documentation for our "
 "Python APIs. Docstrings are read by developers, interactive Python users, "
@@ -824,32 +830,32 @@ msgid ""
 " these docstrings for PyVista."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:557
+#: ../../pyvista/CONTRIBUTING.rst:560
 msgid ""
 "PyVista follows the ``numpydoc`` style for its docstrings. Please follow the"
 " `numpydoc Style Guide`_ in all ways except for the following:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:560
+#: ../../pyvista/CONTRIBUTING.rst:563
 msgid ""
 "Be sure to describe all ``Parameters`` and ``Returns`` for all public "
 "methods."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:562
+#: ../../pyvista/CONTRIBUTING.rst:565
 msgid ""
 "We strongly encourage you to add an example section. PyVista is a visual "
 "library, so adding examples that show a plot will really help users figure "
 "out what individual methods do."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:565
+#: ../../pyvista/CONTRIBUTING.rst:568
 msgid ""
 "With optional parameters, use ``default: <value>`` instead of ``optional`` "
 "when the parameter has a default value instead of ``None``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:567
+#: ../../pyvista/CONTRIBUTING.rst:570
 msgid ""
 "A docstring that is only a one-line summary may omit the ``Returns`` section"
 " when the return type is annotated on the signature; the annotation is the "
@@ -857,76 +863,76 @@ msgid ""
 "document ``Returns``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:572
+#: ../../pyvista/CONTRIBUTING.rst:575
 msgid "Sample docstring follows:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:609
+#: ../../pyvista/CONTRIBUTING.rst:612
 msgid "Note the following:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:611
+#: ../../pyvista/CONTRIBUTING.rst:614
 msgid ""
 "The parameter definition of ``generate_triangles`` uses ``default: False``, "
 "and does not include the default in the docstring's \"description\" section."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:613
+#: ../../pyvista/CONTRIBUTING.rst:616
 msgid ""
 "There is a newline between each parameter. This is different than "
 "``numpydoc``'s documentation where there are no empty lines between "
 "parameter docstrings."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:616
+#: ../../pyvista/CONTRIBUTING.rst:619
 msgid ""
 "This docstring also contains a returns section and an examples section."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:617
+#: ../../pyvista/CONTRIBUTING.rst:620
 msgid ""
 "The returns section structure depends on the number of return values and "
 "types:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:618
+#: ../../pyvista/CONTRIBUTING.rst:621
 msgid ""
 "for a single return value with a single return type, the parameter name can "
 "be omitted (as shown above),"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:620
+#: ../../pyvista/CONTRIBUTING.rst:623
 msgid ""
 "for a single return value with multiple types (that is, ``str | int``), the "
 "parameter must be specified (not shown),"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:622
+#: ../../pyvista/CONTRIBUTING.rst:625
 msgid ""
 "for multiple return values (not shown), descriptive parameter names for each"
 " returned value must be specified in the same format as the input "
 "parameters."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:624
+#: ../../pyvista/CONTRIBUTING.rst:627
 msgid ""
 "The examples section references the \"full example\" in the gallery if it "
 "exists."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:627
+#: ../../pyvista/CONTRIBUTING.rst:630
 msgid ""
 "In addition, docstring examples which make use of randomly generated data "
 "should be reproducible. See `Generating Random Data`_ for details."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:630
+#: ../../pyvista/CONTRIBUTING.rst:633
 msgid ""
 "These standards will be enforced using ``pre-commit`` using ``numpydoc-"
 "validate``, with errors being reported as:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:646
+#: ../../pyvista/CONTRIBUTING.rst:649
 msgid ""
 "If for whatever reason you feel that your function should have an exception "
 "to any of the rules, add an exception to the function either in the "
@@ -936,17 +942,17 @@ msgid ""
 " like ``__init__``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:659
+#: ../../pyvista/CONTRIBUTING.rst:662
 msgid ""
 "See the available validation checks in `numpydoc Validation "
 "<https://numpydoc.readthedocs.io/en/latest/validation.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:664
+#: ../../pyvista/CONTRIBUTING.rst:667
 msgid "Deprecating Features or Other Backwards-Breaking Changes"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:665
+#: ../../pyvista/CONTRIBUTING.rst:668
 msgid ""
 "When implementing backwards-breaking changes within PyVista, care must be "
 "taken to give users the chance to adjust to any new changes. Any non-"
@@ -954,37 +960,37 @@ msgid ""
 "steps:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:669
+#: ../../pyvista/CONTRIBUTING.rst:672
 msgid ""
 "Retain the old behavior and issue a ``PyVistaDeprecationWarning`` indicating"
 " the new interface you should use."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:671
+#: ../../pyvista/CONTRIBUTING.rst:674
 msgid ""
 "Retain the old behavior but raise a ``pyvista.core.errors.DeprecationError``"
 " indicating the new interface you must use."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:673
+#: ../../pyvista/CONTRIBUTING.rst:676
 msgid "Remove the old behavior."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:675
+#: ../../pyvista/CONTRIBUTING.rst:678
 msgid ""
 "Whenever possible, PyVista developers should seek to have at least three "
 "minor versions of backwards compatibility to give users the ability to "
 "update their software and scripts."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:679
+#: ../../pyvista/CONTRIBUTING.rst:682
 msgid ""
 "Here's an example of a soft deprecation of a function. Note the usage of "
 "both the ``PyVistaDeprecationWarning`` warning, the ``.. deprecated`` Sphinx"
 " directive and the ``warn_external`` helper function."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:722
+#: ../../pyvista/CONTRIBUTING.rst:725
 msgid ""
 "In the above code example, note how a comment is made to convert to an error"
 " in three minor releases and completely remove in the following minor "
@@ -992,20 +998,20 @@ msgid ""
 "ones this can be kept short."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:727
+#: ../../pyvista/CONTRIBUTING.rst:730
 msgid ""
 "Here's an example of adding error test codes that raise deprecation warning "
 "messages."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:738
+#: ../../pyvista/CONTRIBUTING.rst:741
 msgid ""
 "In the above code example, the old test code raises an error in v0.40 and "
 "v0.41. This will prevent us from forgetting to remove deprecations on "
 "version upgrades."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:743
+#: ../../pyvista/CONTRIBUTING.rst:746
 msgid ""
 "When releasing a new version, we need to update the version number to the "
 "next development version. For example, if we are releasing version 0.37.0, "
@@ -1014,67 +1020,67 @@ msgid ""
 "and 0.41.0 in the test code."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:749
+#: ../../pyvista/CONTRIBUTING.rst:752
 msgid ""
 "When adding an additional parameter to an existing method or function, you "
 "are encouraged to use the ``.. versionadded`` sphinx directive. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:767
+#: ../../pyvista/CONTRIBUTING.rst:770
 msgid "Branch Naming Conventions"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:769
+#: ../../pyvista/CONTRIBUTING.rst:772
 msgid ""
 "To streamline development, we have the following requirements for naming "
 "branches. These requirements help the core developers know what kind of "
 "changes any given branch is introducing before looking at the code."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:773
+#: ../../pyvista/CONTRIBUTING.rst:776
 msgid ""
 "``fix/``, ``patch/`` and ``bug/``: any bug fixes, patches, or experimental "
 "changes that are minor"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:775
+#: ../../pyvista/CONTRIBUTING.rst:778
 msgid ""
 "``feat/``: any changes that introduce a new feature or significant addition"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:777
+#: ../../pyvista/CONTRIBUTING.rst:780
 msgid ""
 "``junk/``: for any experimental changes that can be deleted if gone stale"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:779
+#: ../../pyvista/CONTRIBUTING.rst:782
 msgid ""
 "``maint/`` and ``ci/``: for general maintenance of the repository or CI "
 "routines"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:780
+#: ../../pyvista/CONTRIBUTING.rst:783
 msgid "``doc/``: for any changes only pertaining to documentation"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:781
+#: ../../pyvista/CONTRIBUTING.rst:784
 msgid ""
 "``no-ci/``: for low impact activity that should NOT trigger the CI routines"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:783
+#: ../../pyvista/CONTRIBUTING.rst:786
 msgid "``testing/``: improvements or changes to testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:784
+#: ../../pyvista/CONTRIBUTING.rst:787
 msgid "``release/``: releases (see below)"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:785
+#: ../../pyvista/CONTRIBUTING.rst:788
 msgid "``breaking-change/``: Changes that break backward compatibility"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:787
+#: ../../pyvista/CONTRIBUTING.rst:790
 msgid ""
 "A prefix is unusable on a remote that already has a branch named exactly "
 "that, since Git cannot store a ref as both a file and a directory: pushing "
@@ -1084,11 +1090,11 @@ msgid ""
 " delete the stale branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:794
+#: ../../pyvista/CONTRIBUTING.rst:797
 msgid "Points Data Type"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:796
+#: ../../pyvista/CONTRIBUTING.rst:799
 msgid ""
 "The ``points`` dtype of a filter's output is decided globally, by "
 "``pyvista.global_config.points_dtype``, and enforced in ``_update_alg`` and "
@@ -1097,7 +1103,7 @@ msgid ""
 "add a keyword of its own for precision."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:802
+#: ../../pyvista/CONTRIBUTING.rst:805
 msgid ""
 "Call ``_update_alg`` rather than ``alg.Update()``. Where the setting is an "
 "explicit ``'float32'`` or ``'float64'`` it asks the algorithm for that "
@@ -1107,13 +1113,13 @@ msgid ""
 "matches the input."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:807
+#: ../../pyvista/CONTRIBUTING.rst:810
 msgid ""
 "Call ``_get_output`` rather than wrapping ``alg.GetOutput()``. It casts the "
 "output points for the algorithms that ignore the request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:809
+#: ../../pyvista/CONTRIBUTING.rst:812
 msgid ""
 "Sources have no input to preserve, so they subclass ``_Source``, which "
 "requests the precision in ``Update`` and casts in "
@@ -1122,13 +1128,13 @@ msgid ""
 "skips the cast."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:813
+#: ../../pyvista/CONTRIBUTING.rst:816
 msgid ""
 "Geometry that PyVista builds without a VTK algorithm passes through "
 "``_apply_points_dtype``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:815
+#: ../../pyvista/CONTRIBUTING.rst:818
 msgid ""
 "Neither helper needs to know whether the algorithm supports double "
 "precision. The ones that do not are cast, and every widening cast warns with"
@@ -1136,7 +1142,7 @@ msgid ""
 "discarded -- so no filter needs a keyword to opt out of the setting."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:819
+#: ../../pyvista/CONTRIBUTING.rst:822
 msgid ""
 "Under ``'preserve'`` only the meshes that store their points constrain the "
 "output. ``ImageData`` and ``RectilinearGrid`` generate theirs, so a filter "
@@ -1144,11 +1150,11 @@ msgid ""
 "VTK."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:824
+#: ../../pyvista/CONTRIBUTING.rst:827
 msgid "Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:826
+#: ../../pyvista/CONTRIBUTING.rst:829
 msgid ""
 "After making changes, please test changes locally before creating a pull "
 "request. The following tests will be executed after any commit or pull "
@@ -1156,17 +1162,17 @@ msgid ""
 "down any new issues from your changes."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:831
+#: ../../pyvista/CONTRIBUTING.rst:834
 msgid ""
 "To run our comprehensive suite of unit tests, please refer to the `Unit "
 "Testing`_ section."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:835
+#: ../../pyvista/CONTRIBUTING.rst:838
 msgid "Unit Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:836
+#: ../../pyvista/CONTRIBUTING.rst:839
 msgid ""
 "Unit testing can be run either directly using `pytest "
 "<https://docs.pytest.org/en/stable/>`_ or `tox "
@@ -1183,50 +1189,50 @@ msgstr ""
 msgid "tox"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:861
+#: ../../pyvista/CONTRIBUTING.rst:864
 msgid "tox usage"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:864
+#: ../../pyvista/CONTRIBUTING.rst:867
 msgid ""
 "When using ``tox``, specific test environments can be used to test against "
 "various dependencies versions (mostly ``numpy`` and ``vtk``). The full list "
 "is available by running:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:871
+#: ../../pyvista/CONTRIBUTING.rst:874
 msgid ""
 "For example, to run tests on ``python 3.11`` against the wheels produced by "
 "the ``vtk`` CI on the main branch, simply run:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:878
+#: ../../pyvista/CONTRIBUTING.rst:881
 msgid ""
 "Note that several dependencies versions are already predefined in the "
 "``tox.ini`` configuration and can be specified with ``tox`` factors such "
 "that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:886
+#: ../../pyvista/CONTRIBUTING.rst:889
 msgid ""
 "If you need to tests dependencies that are not predefined in the "
 "configuration, you can always override them such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:894
+#: ../../pyvista/CONTRIBUTING.rst:897
 msgid ""
 "By default, all tests (that is, plotting and core modules) are executed if "
 "nothing is specified. To only run core or plotting tests, add ``core`` or "
 "``plotting`` factors to the environment name such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:903
+#: ../../pyvista/CONTRIBUTING.rst:906
 msgid ""
 "To specify supplementary arguments to the ``pytest`` command line, use "
 "``--`` to separate ``tox`` arguments from ``pytest`` ones such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:911
+#: ../../pyvista/CONTRIBUTING.rst:914
 msgid ""
 "For a more detailed description of ``tox`` usage, please refer to the "
 "following `cheat sheet <https://tox.wiki/en/stable/user_guide.html#cheat-"
@@ -1237,30 +1243,30 @@ msgstr ""
 msgid "make"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:921
+#: ../../pyvista/CONTRIBUTING.rst:924
 msgid ""
 "Unit testing can take some time, if you wish to speed it up, set the number "
 "of processors with the ``-n`` flag. This uses ``pytest-xdist`` to leverage "
 "multiple processes. Example usage:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:949
+#: ../../pyvista/CONTRIBUTING.rst:952
 msgid ""
 "Code coverage (that is, the amount of tested code in the codebase) can be "
 "measured by modifying the previous commands such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:962
+#: ../../pyvista/CONTRIBUTING.rst:965
 msgid "``--cov`` measures both ``pyvista`` and ``tests``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:973
+#: ../../pyvista/CONTRIBUTING.rst:976
 msgid ""
 "The ``-cov`` factor can be added to any existing environment to enable test "
 "coverage, such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:988
+#: ../../pyvista/CONTRIBUTING.rst:991
 msgid ""
 "When submitting a PR, it is highly recommended that all modifications are "
 "thoroughly tested. This is further enforced in the CI by the `codecov GitHub"
@@ -1273,7 +1279,7 @@ msgid ""
 "<https://coverage.readthedocs.io/en/latest/branch.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:995
+#: ../../pyvista/CONTRIBUTING.rst:998
 msgid ""
 "If needed, code coverage can be deactivated for specific lines by adding the"
 " ``# pragma: no cover`` or ``# pragma: no branch`` comments. See the "
@@ -1284,11 +1290,11 @@ msgid ""
 "solution has been found."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1002
+#: ../../pyvista/CONTRIBUTING.rst:1005
 msgid "Test Code Is Covered Too"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1004
+#: ../../pyvista/CONTRIBUTING.rst:1007
 msgid ""
 "``tests`` is measured alongside ``pyvista``, and the two are uploaded to "
 "Codecov as separate reports under the ``package`` and ``tests`` flags, so a "
@@ -1299,7 +1305,7 @@ msgid ""
 "missing assertion rather than a missing ``pragma``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1011
+#: ../../pyvista/CONTRIBUTING.rst:1014
 msgid ""
 "Reach for ``# pragma: no cover`` when a branch exists in order to prove it "
 "is never taken -- a callback asserted never to fire, a fallback for a "
@@ -1308,24 +1314,24 @@ msgid ""
 "as a retry loop whose last attempt always returns or raises."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1016
+#: ../../pyvista/CONTRIBUTING.rst:1019
 msgid "Some patterns produce dead test code:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1018
+#: ../../pyvista/CONTRIBUTING.rst:1021
 msgid ""
 "A helper class or fixture whose attributes nothing ever reads. Delete the "
 "unused member."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1019
+#: ../../pyvista/CONTRIBUTING.rst:1022
 msgid ""
 "A stub body written as ``class Stub: ...``. Coverage counts the one-line "
 "form as a partial branch, and ``ruff format`` collapses ``...`` onto the "
 "``class`` line, so write ``pass`` or a docstring instead."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1022
+#: ../../pyvista/CONTRIBUTING.rst:1025
 msgid ""
 "A no-op callback whose body is ``pass`` or a bare ``return``, registered "
 "somewhere that never calls it. Give it a docstring instead and delete the "
@@ -1333,14 +1339,14 @@ msgid ""
 "uncovered."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1025
+#: ../../pyvista/CONTRIBUTING.rst:1028
 msgid ""
 "A class registered or patched but never instantiated, where ``__init__`` "
 "only assigns. Drop the ``__init__``, or assert on the instance the test "
 "already set up."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1027
+#: ../../pyvista/CONTRIBUTING.rst:1030
 msgid ""
 "A branch that only one CI job reaches. Coverage is combined across the "
 "matrix, so a ``vtk_version_info`` gate is covered as long as some job takes "
@@ -1348,7 +1354,7 @@ msgid ""
 "or Windows never is."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1031
+#: ../../pyvista/CONTRIBUTING.rst:1034
 msgid ""
 "Not every file under ``tests`` is measured. The ones run outside a ``-cov`` "
 "environment (the ``doc_build`` suite, the standalone scripts, the Sphinx "
@@ -1356,7 +1362,7 @@ msgid ""
 "``pyproject.toml``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1035
+#: ../../pyvista/CONTRIBUTING.rst:1038
 msgid ""
 "The CI is configured to test multiple vtk versions to ensure sufficient "
 "compatibility with vtk. If needed, the minimum and/or maximum vtk version "
@@ -1365,11 +1371,11 @@ msgid ""
 "exclusive signs):"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1072
+#: ../../pyvista/CONTRIBUTING.rst:1075
 msgid "Testing Against VTK Master"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1073
+#: ../../pyvista/CONTRIBUTING.rst:1076
 msgid ""
 "Most unit testing is run against stable VTK releases. However, when "
 "developing features that depend on upstream VTK changes or when "
@@ -1379,7 +1385,7 @@ msgid ""
 "run:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1082
+#: ../../pyvista/CONTRIBUTING.rst:1085
 msgid ""
 "For pull requests, applying the ``vtk-dev-testing`` label enables an "
 "additional CI job that installs these development wheels and runs the unit "
@@ -1390,7 +1396,7 @@ msgid ""
 "master branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1087
+#: ../../pyvista/CONTRIBUTING.rst:1090
 msgid ""
 "To test against the very latest upstream VTK source, apply the ``vtk-master-"
 "testing`` label instead. This enables a CI job that clones the VTK "
@@ -1400,23 +1406,23 @@ msgid ""
 "development."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1092
+#: ../../pyvista/CONTRIBUTING.rst:1095
 msgid ""
 "The ``vtk-dev-testing`` and ``vtk-master-testing`` labels are independent "
 "and may be applied separately or together."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1096
+#: ../../pyvista/CONTRIBUTING.rst:1099
 msgid ""
 "The PR either needs a new commit, for example updating the branch from "
 "``main``, or to be closed/re-opened to rerun the CI with the label applied."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1100
+#: ../../pyvista/CONTRIBUTING.rst:1103
 msgid "Testing Against the ``cvista`` Backend"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1101
+#: ../../pyvista/CONTRIBUTING.rst:1104
 msgid ""
 "PyVista also runs against `cvista <https://github.com/pyvista/cvista>`_, a "
 "community fork of VTK. Stock VTK is the default and is tested on every pull "
@@ -1424,14 +1430,14 @@ msgid ""
 "requests carrying the ``integration-testing`` label:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1109
+#: ../../pyvista/CONTRIBUTING.rst:1112
 msgid ""
 "It is not on the per-PR fast path because it is a full extra run of the "
 "suite against a second VTK build, and because a failure there is rarely a "
 "reason to block an unrelated PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1112
+#: ../../pyvista/CONTRIBUTING.rst:1115
 msgid ""
 "**When the suites disagree, fix cvista.** PyVista is not held back by the "
 "fork: if a change here is correct against stock VTK but fails on cvista, the"
@@ -1440,25 +1446,25 @@ msgid ""
 "<https://github.com/pyvista/cvista/issues>`_ and keep going."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1116
+#: ../../pyvista/CONTRIBUTING.rst:1119
 msgid ""
 "The ``skip_vtk_backend`` marker is only for **permanent, by-design** "
 "divergence—a module the fork does not build, or behaviour that differs "
 "deliberately. Attach it to the test with a reason naming the specific cause:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1127
+#: ../../pyvista/CONTRIBUTING.rst:1130
 msgid ""
 "It is not a way to park a real regression. In library code, use "
 ":func:`pyvista.vtk_backend` to raise a clear error for a build that cannot "
 "support a feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1131
+#: ../../pyvista/CONTRIBUTING.rst:1134
 msgid "Garbage Collection Checks"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1132
+#: ../../pyvista/CONTRIBUTING.rst:1135
 msgid ""
 "Every test is checked for reference leaks: no plotter or VTK object created "
 "by a test may outlive it. The autouse ``check_gc`` fixture in "
@@ -1469,36 +1475,36 @@ msgid ""
 "tools/refleak>`_ documentation for how to read it."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1139
+#: ../../pyvista/CONTRIBUTING.rst:1142
 msgid ""
 "The check freezes the heap rather than scanning it, so it costs no "
 "measurable time and every CI job runs it. ``--no_check_gc`` turns it off for"
 " a whole run, for local iteration where the report is in the way:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1147
+#: ../../pyvista/CONTRIBUTING.rst:1150
 msgid ""
 "The cause of a leak is usually a reference cycle, and fixing it (for "
 "example, with :mod:`weakref`) is preferred over silencing the check with "
 "either of these markers:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1165
+#: ../../pyvista/CONTRIBUTING.rst:1168
 msgid ""
 "``expect_check_gc_fail`` outranks ``--no_check_gc``, so the tests that "
 "exercise the check itself (``tests/core/test_gc.py``, "
 "``tests/plotting/test_gc.py``) cannot pass while nothing is running."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1170
+#: ../../pyvista/CONTRIBUTING.rst:1173
 msgid "Docstring Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1171
+#: ../../pyvista/CONTRIBUTING.rst:1174
 msgid "Run all code examples in the docstrings with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1199
+#: ../../pyvista/CONTRIBUTING.rst:1202
 msgid ""
 "``make doctest`` runs ``tox run -f doctest``, which runs both the ``doctest-"
 "modules`` environment above and the ``doctest-names`` environment (``tox run"
@@ -1509,17 +1515,17 @@ msgid ""
 " separate jobs in ``.github/workflows/style-docstring.yml``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1210
+#: ../../pyvista/CONTRIBUTING.rst:1213
 msgid ""
 "Additional testing is also performed on any images generated by the "
 "docstring. See `Documentation Image Regression Testing`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1215
+#: ../../pyvista/CONTRIBUTING.rst:1218
 msgid "Type Checking"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1216
+#: ../../pyvista/CONTRIBUTING.rst:1219
 msgid ""
 "PyVista uses `mypy <https://mypy.readthedocs.io/>`_ for static type "
 "checking. Configuration lives in the ``[tool.mypy]`` section of "
@@ -1531,11 +1537,11 @@ msgstr ""
 msgid "mypy"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1246
+#: ../../pyvista/CONTRIBUTING.rst:1249
 msgid "Typing Tests"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1247
+#: ../../pyvista/CONTRIBUTING.rst:1250
 msgid ""
 "Mypy only sees the annotations, so a hint can be wrong without Mypy "
 "noticing: the annotated type and the type a function actually returns may "
@@ -1544,26 +1550,26 @@ msgid ""
 " between them fails."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1252
+#: ../../pyvista/CONTRIBUTING.rst:1255
 msgid "Install the regular test requirements with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1258
+#: ../../pyvista/CONTRIBUTING.rst:1261
 msgid "The tests can be executed with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1285
+#: ../../pyvista/CONTRIBUTING.rst:1288
 msgid "Writing a Case"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1286
+#: ../../pyvista/CONTRIBUTING.rst:1289
 msgid ""
 "Cases live in ``tests/typing/cases``, under ``core`` or ``plotting`` after "
 "the subpackage of the callable they exercise. A case is one line: an "
 "expression, and the type it should have."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1296
+#: ../../pyvista/CONTRIBUTING.rst:1299
 msgid ""
 "``assert_types`` comes from `type-assert <https://github.com/user27182/type-"
 "assert>`_ and is two things at once. To Mypy it is "
@@ -1575,7 +1581,7 @@ msgid ""
 "once is enough for both, and a case only passes if the two agree."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1304
+#: ../../pyvista/CONTRIBUTING.rst:1307
 msgid ""
 "Write the expected type as an ordinary expression, such as ``pv.PolyData``, "
 "``pv.PolyData | pv.ImageData``, ``list[tuple[str, DataSet]]``, rather than "
@@ -1584,7 +1590,7 @@ msgid ""
 "fresh ``MultiBlock``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1309
+#: ../../pyvista/CONTRIBUTING.rst:1312
 msgid ""
 "Each file holds the cases of one callable and is named after it: "
 "``clip_scalar.py``, ``principal_axes.py``. A method takes its class as a "
@@ -1594,24 +1600,24 @@ msgid ""
 "setup it needs, even when another file has the same helper."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1315
+#: ../../pyvista/CONTRIBUTING.rst:1318
 msgid ""
 "The directory carries its own ``ruff.toml`` raising the line length, so a "
 "case stays on one line however long it gets."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1319
+#: ../../pyvista/CONTRIBUTING.rst:1322
 msgid "How the Cases Run"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1320
+#: ../../pyvista/CONTRIBUTING.rst:1323
 msgid ""
 "Each case file is collected as a test file of its own. Every case in it "
 "becomes one runtime test and one static test per configured checker, named "
 "after the claim it makes rather than after where it sits in the file:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1329
+#: ../../pyvista/CONTRIBUTING.rst:1332
 msgid ""
 "The runtime half compiles the file's setup, runs it in a namespace of its "
 "own and then executes that one case against it, so a case cannot reach "
@@ -1620,7 +1626,7 @@ msgid ""
 "``list[DataSet]``, not only the first element."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1335
+#: ../../pyvista/CONTRIBUTING.rst:1338
 msgid ""
 "The static half reads a single Mypy run, made once per session in a separate"
 " process, and reports the diagnostics landing on that case's lines. Mypy "
@@ -1629,18 +1635,18 @@ msgid ""
 "import."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1341
+#: ../../pyvista/CONTRIBUTING.rst:1344
 msgid "Skipping a Case"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1342
+#: ../../pyvista/CONTRIBUTING.rst:1345
 msgid ""
 "A case that cannot run everywhere, because it crashes a platform or needs a "
 "dependency that is not always present, is named in a ``SKIP_RUNTIME`` "
 "mapping in its own file:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1352
+#: ../../pyvista/CONTRIBUTING.rst:1355
 msgid ""
 "Only the runtime half is skipped; Mypy still checks the case. The mapping is"
 " read after the file's setup has run, so making an entry conditional is "
@@ -1649,11 +1655,11 @@ msgid ""
 "for."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1358
+#: ../../pyvista/CONTRIBUTING.rst:1361
 msgid "The Framework"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1359
+#: ../../pyvista/CONTRIBUTING.rst:1362
 msgid ""
 "The machinery lives in `type-assert <https://github.com/user27182/type-"
 "assert>`_, a standalone package that knows nothing about PyVista. It "
@@ -1661,7 +1667,7 @@ msgid ""
 "``pyproject.toml``:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1367
+#: ../../pyvista/CONTRIBUTING.rst:1370
 msgid ""
 "That setting sits in the shared ``[tool.pytest.ini_options]``, and unknown "
 "options are errors, so the package belongs in every dependency group whose "
@@ -1669,137 +1675,137 @@ msgid ""
 "run the typing tests."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1372
+#: ../../pyvista/CONTRIBUTING.rst:1375
 msgid ""
 "The checkers it drives are selectable with ``type_assert_checkers``, which "
 "defaults to Mypy and accepts more than one. Report anything wrong with the "
 "framework itself against that repository rather than this one."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1377
+#: ../../pyvista/CONTRIBUTING.rst:1380
 msgid "Documenting Type Aliases"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1378
+#: ../../pyvista/CONTRIBUTING.rst:1381
 msgid ""
 "The documentation expands a type alias into its full value wherever it "
 "appears in a signature. To show and link an alias by name instead, which "
 "suits long unions:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1381
+#: ../../pyvista/CONTRIBUTING.rst:1384
 msgid ""
 "Export it from ``pyvista/typing/__init__.py`` and add it to that module's "
 "``__all__``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1382
+#: ../../pyvista/CONTRIBUTING.rst:1385
 msgid "Add its name to ``_DOCUMENTED_TYPES`` in ``doc/source/conf.py``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1383
+#: ../../pyvista/CONTRIBUTING.rst:1386
 msgid "Document it in ``doc/source/api/core/typing.rst``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1385
+#: ../../pyvista/CONTRIBUTING.rst:1388
 msgid ""
 "Docstrings can then refer to the alias by its bare name, for example "
 "``center : VectorLike[float]``, and the documentation build reports a broken"
 " link to it."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1389
+#: ../../pyvista/CONTRIBUTING.rst:1392
 msgid ""
 "A name that appears in a signature but has no documentation page, such as a "
 "private ``TypeVar``, fails the documentation build. Add it to "
 "``_UNDOCUMENTED_TYPES`` in ``doc/source/conf.py``, keeping the list sorted."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1393
+#: ../../pyvista/CONTRIBUTING.rst:1396
 msgid ""
 "If the name belongs to another package whose documentation Sphinx links to, "
 "such as ``Path`` from ``pathlib``, map it to its full name in "
 "``_REFERENCE_NAMES`` instead, so it links rather than being ignored."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1398
+#: ../../pyvista/CONTRIBUTING.rst:1401
 msgid "Style Checking"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1399
+#: ../../pyvista/CONTRIBUTING.rst:1402
 msgid ""
 "PyVista follows PEP8 standard as outlined in the `Coding Style section "
 "<#coding-style>`_ and implements style checking using `pre-commit`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1402
+#: ../../pyvista/CONTRIBUTING.rst:1405
 msgid "To ensure your code meets minimum code styling standards, run::"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1407
+#: ../../pyvista/CONTRIBUTING.rst:1410
 msgid "Alternatively, the top-level ``Makefile`` wraps this invocation::"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1411
+#: ../../pyvista/CONTRIBUTING.rst:1414
 msgid ""
 "If you have issues related to ``setuptools`` when installing ``pre-commit``,"
 " see `pre-commit Issue #2178 comment <https://github.com/pre-commit/pre-"
 "commit/issues/2178#issuecomment-1002163763>`_ for a potential resolution."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1415
+#: ../../pyvista/CONTRIBUTING.rst:1418
 msgid "You can also install this as a pre-commit hook by running::"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1419
+#: ../../pyvista/CONTRIBUTING.rst:1422
 msgid ""
 "This way, it's not possible for you to push code that fails the style "
 "checks. For example, each commit automatically checks that you meet the "
 "style requirements::"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1428
+#: ../../pyvista/CONTRIBUTING.rst:1431
 msgid ""
 "The actual installation of the environment happens before the first commit "
 "following ``pre-commit install``. This will take a bit longer, but "
 "subsequent commits will only trigger the actual style checks."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1432
+#: ../../pyvista/CONTRIBUTING.rst:1435
 msgid ""
 "Even if you are not in a situation where you are not performing or able to "
 "perform the above tasks, you can comment ``pre-commit.ci autofix`` on a pull"
 " request to manually trigger auto-fixing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1437
+#: ../../pyvista/CONTRIBUTING.rst:1440
 msgid "Notes Regarding Image Regression Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1439
+#: ../../pyvista/CONTRIBUTING.rst:1442
 msgid ""
 "Since PyVista is primarily a plotting module, it’s imperative we actually "
 "check the images that we generate in some sort of regression testing. In "
 "practice, this ends up being quite a bit of work because:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1443
+#: ../../pyvista/CONTRIBUTING.rst:1446
 msgid ""
 "OpenGL software vs. hardware rending causes slightly different images to be "
 "rendered."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1445
+#: ../../pyvista/CONTRIBUTING.rst:1448
 msgid ""
 "We want our CI (which uses a virtual frame buffer) to match our desktop "
 "images (uses hardware acceleration)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1447
+#: ../../pyvista/CONTRIBUTING.rst:1450
 msgid "Different OSes render different images."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1449
+#: ../../pyvista/CONTRIBUTING.rst:1452
 msgid ""
 "As each platform and environment renders different slightly images relative "
 "to Linux (which these images were built from), so running these tests across"
@@ -1808,18 +1814,18 @@ msgid ""
 "dev.pyvista.com)"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1455
+#: ../../pyvista/CONTRIBUTING.rst:1458
 msgid ""
 "Based on these points, image regression testing only occurs on Linux CI, and"
 " multi-sampling is disabled as that seems to be one of the biggest "
 "difference between software and hardware based rendering."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1459
+#: ../../pyvista/CONTRIBUTING.rst:1462
 msgid "Image cache is stored here as ``./tests/plotting/image_cache``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1461
+#: ../../pyvista/CONTRIBUTING.rst:1464
 msgid ""
 "Image resolution is kept low at 400x400 as we don’t want to pollute git with"
 " large images. Small variations between versions and environments are to be "
@@ -1827,13 +1833,13 @@ msgid ""
 "logged as a warning) while values over that amount will trigger an error."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1467
+#: ../../pyvista/CONTRIBUTING.rst:1470
 msgid ""
 "There are two mechanisms within ``pytest`` to control image regression "
 "testing, ``--reset_image_cache`` and ``--ignore_image_cache``. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1495
+#: ../../pyvista/CONTRIBUTING.rst:1498
 msgid ""
 "Running ``--reset_image_cache`` regenerates the baseline of every test the "
 "run collected, including tests that were failing for reasons unrelated to "
@@ -1843,13 +1849,13 @@ msgid ""
 "iterate; regression testing still runs in our CI."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1502
+#: ../../pyvista/CONTRIBUTING.rst:1505
 msgid ""
 "Two scoped flags cover day-to-day work. Give both of them a test node id so "
 "they cannot touch a baseline you did not mean to change:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1513
+#: ../../pyvista/CONTRIBUTING.rst:1516
 msgid ""
 "Arguments passed through ``ARGS`` replace the environment's whole-suite "
 "defaults rather than adding to them, so the node id above is the entire run "
@@ -1858,7 +1864,7 @@ msgid ""
 "same arguments works too."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1518
+#: ../../pyvista/CONTRIBUTING.rst:1521
 msgid ""
 "Look at every image before committing it. ``failed_image_dir`` and "
 "``generated_image_dir`` are already configured in ``pyproject.toml``, so a "
@@ -1867,7 +1873,7 @@ msgid ""
 "``from_test/``. For a run with many failures, build the HTML report:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1528
+#: ../../pyvista/CONTRIBUTING.rst:1531
 msgid ""
 "Since the baselines are the Linux CI renders, the most reliable way to "
 "accept a change is to download the ``failed_test_images-*`` artifact from "
@@ -1875,7 +1881,7 @@ msgid ""
 " re-rendering on your own hardware."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1533
+#: ../../pyvista/CONTRIBUTING.rst:1536
 msgid ""
 "Any test that requests the ``verify_image_cache`` fixture and calls "
 "``Plotter.show`` (or ``mesh.plot``) caches and compares an image. The "
@@ -1885,14 +1891,14 @@ msgid ""
 "fixture can be utilized:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1551
+#: ../../pyvista/CONTRIBUTING.rst:1554
 msgid ""
 "This ensures that immediately before the plotter is closed, the current "
 "render window will be verified against the image in CI. If no image exists, "
 "be sure to add the resulting image with"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1559
+#: ../../pyvista/CONTRIBUTING.rst:1562
 msgid ""
 "During unit testing, if you get image regression failures and would like to "
 "compare the images generated locally to the regression test suite, allow "
@@ -1900,28 +1906,28 @@ msgid ""
 "using the ``--generated_image_dir`` flag."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1566
+#: ../../pyvista/CONTRIBUTING.rst:1569
 msgid ""
 "For example, the following writes all images generated by ``pytest`` to "
 "``debug_images/`` for any tests in ``tests/plotting`` whose function name "
 "has ``volume`` in it."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1594
+#: ../../pyvista/CONTRIBUTING.rst:1597
 msgid "See `pytest-pyvista`_ for more details."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1598
+#: ../../pyvista/CONTRIBUTING.rst:1601
 msgid ""
 "Additional regression testing is also performed on the documentation images."
 " See `Documentation Image Regression Testing`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1602
+#: ../../pyvista/CONTRIBUTING.rst:1605
 msgid "Building the Documentation"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1603
+#: ../../pyvista/CONTRIBUTING.rst:1606
 msgid ""
 "Documentation can be build either directly (that is, using Python commands) "
 "or with `tox <https://tox.wiki/en/stable/>`_ such that:"
@@ -1939,171 +1945,171 @@ msgstr ""
 msgid "Windows"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1639
+#: ../../pyvista/CONTRIBUTING.rst:1642
 msgid ""
 "By default, the ``html`` builder of sphinx is specified when running the "
 "``docs-build`` environment. You can customize it as a separate positional "
 "argument such that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1655
+#: ../../pyvista/CONTRIBUTING.rst:1658
 msgid ""
 "The generated documentation can be found in the ``doc/_build/html`` "
 "directory."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1658
+#: ../../pyvista/CONTRIBUTING.rst:1661
 msgid ""
 "The first time you build the documentation locally will take a while as all "
 "the examples need to be built. After the first build, the documentation "
 "should take a fraction of the time."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1662
+#: ../../pyvista/CONTRIBUTING.rst:1665
 msgid ""
 "To test this locally you need to run a http server in the html directory "
 "with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1669
+#: ../../pyvista/CONTRIBUTING.rst:1672
 msgid "Clearing the Local Build"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1671
+#: ../../pyvista/CONTRIBUTING.rst:1674
 msgid "If you need to clear the locally built documentation, run:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1677
+#: ../../pyvista/CONTRIBUTING.rst:1680
 msgid ""
 "This will clear out everything, including the examples gallery. If you only "
 "want to clear everything except the gallery examples, run:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1684
+#: ../../pyvista/CONTRIBUTING.rst:1687
 msgid ""
 "This will clear out the cache without forcing you to rebuild all the "
 "examples."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1688
+#: ../../pyvista/CONTRIBUTING.rst:1691
 msgid "Parallel Documentation Build"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1689
+#: ../../pyvista/CONTRIBUTING.rst:1692
 msgid ""
 "You can improve your documentation build time on Linux and Mac OS with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1695
+#: ../../pyvista/CONTRIBUTING.rst:1698
 msgid ""
 "This effectively invokes ``SPHINXOPTS=-j`` and can be especially useful for "
 "multi-core computers."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1699
+#: ../../pyvista/CONTRIBUTING.rst:1702
 msgid "Documentation Image Regression Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1701
+#: ../../pyvista/CONTRIBUTING.rst:1704
 msgid ""
 "Image regression testing is performed on all published documentation images."
 " When the documentation is built, all generated images are automatically "
 "saved to"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1705
+#: ../../pyvista/CONTRIBUTING.rst:1708
 msgid "Build Image Directory: ``./doc/_build/html/_images``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1707
+#: ../../pyvista/CONTRIBUTING.rst:1710
 msgid ""
 "The regression testing compares these generated images to those stored in"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1709
+#: ../../pyvista/CONTRIBUTING.rst:1712
 msgid "Doc Image Cache: ``./tests/doc/doc_image_cache``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1711
+#: ../../pyvista/CONTRIBUTING.rst:1714
 msgid ""
 "To test all the images, run tests using either ``pytest`` or ``tox`` such "
 "that:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1737
+#: ../../pyvista/CONTRIBUTING.rst:1740
 msgid ""
 "Note that above commands use the ``doc-mode`` feature implemented in "
 "`pytest-pyvista`_. When executed, the test will first pre-process the build "
 "images. The images are:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1740
+#: ../../pyvista/CONTRIBUTING.rst:1743
 msgid "Collected from the ``Build Image Directory``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1742
+#: ../../pyvista/CONTRIBUTING.rst:1745
 msgid "Resized to a maximum of 400x400 pixels."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1744
+#: ../../pyvista/CONTRIBUTING.rst:1747
 msgid "Saved to a flat directory as JPEG images in ``./_doc_debug_images``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1746
+#: ../../pyvista/CONTRIBUTING.rst:1749
 msgid ""
 "Next, the pre-processed images in ``./_doc_debug_images`` are compared to "
 "the cached images in the ``Doc Image Cache`` using "
 ":func:`pyvista.compare_images`."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1749
+#: ../../pyvista/CONTRIBUTING.rst:1752
 msgid ""
 "The tests can fail in three ways. To make it easy to review images for "
 "failed tests, copies of the images are made as follows:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1752
+#: ../../pyvista/CONTRIBUTING.rst:1755
 msgid "If the comparison between the two images fails:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1754
+#: ../../pyvista/CONTRIBUTING.rst:1757
 msgid ""
 "The cache image is copied to "
 "``./_doc_debug_images_failed/errors/from_cache``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1755
+#: ../../pyvista/CONTRIBUTING.rst:1758
 msgid ""
 "The build image is copied to ``./_doc_debug_images_failed/errors/from_test``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1757
+#: ../../pyvista/CONTRIBUTING.rst:1760
 msgid "If an image is in the cache but missing from the build:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1759
+#: ../../pyvista/CONTRIBUTING.rst:1762
 msgid ""
 "The cache image is copied to  "
 "``./_doc_debug_images_failed/errors/from_cache``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1761
+#: ../../pyvista/CONTRIBUTING.rst:1764
 msgid "If an image is in the build but missing from the cache:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1763
+#: ../../pyvista/CONTRIBUTING.rst:1766
 msgid ""
 "The build image is copied to  "
 "``./_doc_debug_images_failed/errors/from_test``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1765
+#: ../../pyvista/CONTRIBUTING.rst:1768
 msgid ""
 "If a warning is generated instead of an error, images are saved to the "
 "``warnings`` sub-directory instead of ``errors``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1768
+#: ../../pyvista/CONTRIBUTING.rst:1771
 msgid ""
 "To resolve failed tests, any images in ``from_test`` or ``from_cache`` may "
 "be copied to or removed from the ``Doc Image Cache``. For example, if adding"
@@ -2113,7 +2119,7 @@ msgid ""
 "``Doc Image Cache``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1775
+#: ../../pyvista/CONTRIBUTING.rst:1778
 msgid ""
 "If a test is flaky, for example the build sometimes generates different "
 "images for the same plot, the multiple versions of the image may be saved to"
@@ -2128,7 +2134,7 @@ msgid ""
 "``warnings``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1789
+#: ../../pyvista/CONTRIBUTING.rst:1792
 msgid ""
 "It is not necessary to build the documentation images locally in order to "
 "add to or update the doc image cache. The documentation is automatically "
@@ -2137,7 +2143,7 @@ msgid ""
 " be downloaded from GitHub for review."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1795
+#: ../../pyvista/CONTRIBUTING.rst:1798
 msgid ""
 "The debug images saved with the artifact can also be used to \"simulate\" "
 "building the documentation images locally. If the images are copied to the "
@@ -2145,7 +2151,7 @@ msgid ""
 "debugging as though the documentation has already been built."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1802
+#: ../../pyvista/CONTRIBUTING.rst:1805
 msgid ""
 "These tests are intended to provide *additional* test coverage to ensure the"
 " plots generated by ``pyvista`` are correct, and should not be used as the "
@@ -2154,11 +2160,11 @@ msgid ""
 "first."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1809
+#: ../../pyvista/CONTRIBUTING.rst:1812
 msgid "Interactive Plot Testing"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1811
+#: ../../pyvista/CONTRIBUTING.rst:1814
 msgid ""
 "PyVista's documentation uses a custom ``pyvista-plot`` directive to generate"
 " static images as well as interactive plot files. The interactive files have"
@@ -2166,95 +2172,95 @@ msgid ""
 "resolution datasets."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1816
+#: ../../pyvista/CONTRIBUTING.rst:1819
 msgid ""
 "To ensure that the interactive plots do not unnecessarily inflate the size "
 "of the documentation build, a limit is placed on the size of ``.vtksz`` "
 "files. To test that interactive plots do not exceed this limit, run:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1845
+#: ../../pyvista/CONTRIBUTING.rst:1848
 msgid ""
 "Note that above commands use the ``doc-mode`` feature implemented in "
 "`pytest-pyvista`_ with the limit being specified by ``max_vtksz_file_size`` "
 "in the ``pyproject.toml`` file."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1848
+#: ../../pyvista/CONTRIBUTING.rst:1851
 msgid ""
 "If any of these tests fail, the examples which generated the plot should be "
 "modified, e.g.:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1851
+#: ../../pyvista/CONTRIBUTING.rst:1854
 msgid ""
 "Simplify any datasets used, for example crop, clip, down-sample, decimate, "
 "or otherwise reduce the complexity of the plot."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1854
+#: ../../pyvista/CONTRIBUTING.rst:1857
 msgid ""
 "Force the plot to be static only. In docstrings, use the plot directive with"
 " the ``force_static`` option, e.g.:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1868
+#: ../../pyvista/CONTRIBUTING.rst:1871
 msgid "In sphinx gallery examples use:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1876
+#: ../../pyvista/CONTRIBUTING.rst:1879
 msgid ""
 "to disable all plots in the example or use ``PYVISTA_GALLERY_FORCE_STATIC`` "
 "before the call to ``plot()`` or ``show()`` to force static for a single "
 "plot. See :ref:`add_example_example` for more information."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1882
+#: ../../pyvista/CONTRIBUTING.rst:1885
 msgid ""
 "Reducing the complexity of the plot is preferred as this will also also "
 "likely reduce the processing times."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1887
+#: ../../pyvista/CONTRIBUTING.rst:1890
 msgid ""
 "See `Documentation Image Regression Testing`_. for testing performed on the "
 "static images generated by the plot directive."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1891
+#: ../../pyvista/CONTRIBUTING.rst:1894
 msgid "Contributing to the Documentation"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1892
+#: ../../pyvista/CONTRIBUTING.rst:1895
 msgid "Documentation for PyVista is generated from three sources:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1894
+#: ../../pyvista/CONTRIBUTING.rst:1897
 msgid ""
 "Docstrings from the classes, functions, and modules of ``pyvista`` using "
 "`sphinx.ext.autodoc <https://www.sphinx-"
 "doc.org/en/master/usage/extensions/autodoc.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1897
+#: ../../pyvista/CONTRIBUTING.rst:1900
 msgid "Restructured test from ``doc/``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1898
+#: ../../pyvista/CONTRIBUTING.rst:1901
 msgid "Gallery examples from ``examples/``"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1900
+#: ../../pyvista/CONTRIBUTING.rst:1903
 msgid ""
 "General usage and API descriptions should be placed within ``doc/api`` and "
 "the docstrings. Full gallery examples should be placed in ``examples``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1905
+#: ../../pyvista/CONTRIBUTING.rst:1908
 msgid "Generating Random Data"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1906
+#: ../../pyvista/CONTRIBUTING.rst:1909
 msgid ""
 "All documentation should be reproducible. In particular, any documentation "
 "or examples which use random data should be properly seeded so that the same"
@@ -2262,25 +2268,25 @@ msgid ""
 " documentation and generate the same results and plots locally."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1911
+#: ../../pyvista/CONTRIBUTING.rst:1914
 msgid ""
 "When using NumPy's random number generator (RNG) you should create an RNG at"
 " the beginning of your script and use this RNG in the rest of the script. Be"
 " sure to include a seed value. For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1922
+#: ../../pyvista/CONTRIBUTING.rst:1925
 msgid ""
 "See Scientific Python's `Best Practices for Using NumPy's Random Number "
 "Generators <https://blog.scientific-python.org/numpy/numpy-rng/>`_ for "
 "details."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1926
+#: ../../pyvista/CONTRIBUTING.rst:1929
 msgid "Adding a New Example"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1927
+#: ../../pyvista/CONTRIBUTING.rst:1930
 msgid ""
 "PyVista's examples come in two formats: basic code snippets demonstrating "
 "the functionality of an individual method or a full gallery example "
@@ -2291,7 +2297,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1934
+#: ../../pyvista/CONTRIBUTING.rst:1937
 msgid ""
 "To add a fully fledged, standalone example, add your example to the "
 "``examples`` directory in the root directory of the `PyVista Repository "
@@ -2303,15 +2309,15 @@ msgid ""
 "Gallery <https://sphinx-gallery.github.io/stable/index.html>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1943
+#: ../../pyvista/CONTRIBUTING.rst:1946
 msgid "For more details see :ref:`add_example_example`."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1947
+#: ../../pyvista/CONTRIBUTING.rst:1950
 msgid "Adding a New Dataset"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1948
+#: ../../pyvista/CONTRIBUTING.rst:1951
 msgid ""
 "If you have a dataset that you want to feature or want to include as part of"
 " a full gallery example, add it to `pyvista/data "
@@ -2320,7 +2326,7 @@ msgid ""
 "``pyvista/examples/downloads.py``. This might be as easy as:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1964
+#: ../../pyvista/CONTRIBUTING.rst:1967
 msgid ""
 "Note that a separate dataset loading object, ``_dataset_my_new_mesh``, "
 "should first be defined outside of the function (with module scope), and the"
@@ -2329,55 +2335,55 @@ msgid ""
 "should start with ``_dataset_``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1970
+#: ../../pyvista/CONTRIBUTING.rst:1973
 msgid "This will enable:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1977
+#: ../../pyvista/CONTRIBUTING.rst:1980
 msgid ""
 "For loading complex datasets with multiple files or special processing "
 "requirements, see the private ``pyvista/examples/_dataset_loader.py`` module"
 " for more details on how to create a suitable dataset loader."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1981
+#: ../../pyvista/CONTRIBUTING.rst:1984
 msgid ""
 "Using a dataset loader in this way will enable metadata to be collected for "
 "the new dataset. A new dataset card titled ``My New Mesh Dataset`` will "
 "automatically be generated and included in the :ref:`dataset_gallery`."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1985
+#: ../../pyvista/CONTRIBUTING.rst:1988
 msgid ""
 "In the docstring of the new ``download_my_new_mesh`` function, be sure to "
 "also include:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1988
+#: ../../pyvista/CONTRIBUTING.rst:1991
 msgid "A sample plot of the dataset in the examples section"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1990
+#: ../../pyvista/CONTRIBUTING.rst:1993
 msgid ""
 "A reference link to the dataset's new (auto-generated) gallery card in the "
 "see also section"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:1993
+#: ../../pyvista/CONTRIBUTING.rst:1996
 msgid "For example:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2015
+#: ../../pyvista/CONTRIBUTING.rst:2018
 msgid ""
 "The rst ``seealso`` directive must be used instead of the ``See Also`` "
 "heading due to limitations with how ``numpydoc`` parses explicit references."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2020
+#: ../../pyvista/CONTRIBUTING.rst:2023
 msgid "Creating a New Pull Request"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2022
+#: ../../pyvista/CONTRIBUTING.rst:2025
 msgid ""
 "Once you have tested your branch locally, create a pull request on `pyvista "
 "GitHub <https://github.com/pyvista/pyvista>`_ while merging to main. This "
@@ -2386,7 +2392,7 @@ msgid ""
 "Etiquette`_ for what that run costs and how to keep it to one."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2029
+#: ../../pyvista/CONTRIBUTING.rst:2032
 msgid ""
 "To ensure someone else reviews your code, at least one other member of the "
 "pyvista contributors group must review and verify your code meets our "
@@ -2396,18 +2402,18 @@ msgid ""
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2036
+#: ../../pyvista/CONTRIBUTING.rst:2039
 msgid ""
 "Since it may be necessary to merge your branch with the current release "
 "branch (see below), please do not delete your branch if it is a ``fix/`` "
 "branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2041
+#: ../../pyvista/CONTRIBUTING.rst:2044
 msgid "Preview the Documentation"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2042
+#: ../../pyvista/CONTRIBUTING.rst:2045
 msgid ""
 "For pull requests of branches coming from the main pyvista repository, the "
 "documentation is automatically deployed using `Netlify GitHub actions "
@@ -2419,22 +2425,22 @@ msgid ""
 "Documentation`` CI job."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2050
+#: ../../pyvista/CONTRIBUTING.rst:2053
 msgid "Branching Model"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2052
+#: ../../pyvista/CONTRIBUTING.rst:2055
 msgid ""
 "This project has a branching model that enables rapid development of "
 "features without sacrificing stability, and closely follows the `Trunk Based"
 " Development <https://trunkbaseddevelopment.com/>`_ approach."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2056
+#: ../../pyvista/CONTRIBUTING.rst:2059
 msgid "The main features of our branching model are:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2058
+#: ../../pyvista/CONTRIBUTING.rst:2061
 msgid ""
 "The ``main`` branch is the main development branch. All features, patches, "
 "and other branches should be merged here. While all pull requests should "
@@ -2443,7 +2449,7 @@ msgid ""
 "caught through unit testing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2063
+#: ../../pyvista/CONTRIBUTING.rst:2066
 msgid ""
 "There will be one or many ``release/`` branches based on minor releases (for"
 " example ``release/0.24``) which contain a stable version of the code base "
@@ -2456,7 +2462,7 @@ msgid ""
 "features."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2073
+#: ../../pyvista/CONTRIBUTING.rst:2076
 msgid ""
 "When a minor release candidate is ready, a new ``release`` branch will be "
 "created from ``main`` with the next incremented minor version (for example "
@@ -2468,24 +2474,24 @@ msgid ""
 "be patched as needed."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2084
+#: ../../pyvista/CONTRIBUTING.rst:2087
 msgid "Minor Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2086
+#: ../../pyvista/CONTRIBUTING.rst:2089
 msgid ""
 "Minor releases are feature and bug releases that improve the functionality "
 "and stability of ``pyvista``. Before a minor release is created the "
 "following will occur:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2090
+#: ../../pyvista/CONTRIBUTING.rst:2093
 msgid ""
 "Create a new branch from the ``main`` branch with name "
 "``release/MAJOR.MINOR`` (for example ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2093
+#: ../../pyvista/CONTRIBUTING.rst:2096
 msgid ""
 "Update the development version numbers in ``pyvista/_version.py`` and commit"
 " it (for example ``0, 26, 'dev0'``). Push the branch to GitHub and create a "
@@ -2493,13 +2499,13 @@ msgid ""
 "be limited at this point while effort is focused on the release."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2099
+#: ../../pyvista/CONTRIBUTING.rst:2102
 msgid ""
 "Locally run all tests as outlined in the `Testing Section <#testing>`_ and "
 "ensure all are passing."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2102
+#: ../../pyvista/CONTRIBUTING.rst:2105
 msgid ""
 "Locally test and build the documentation. Be sure to run ``make -C doc "
 "clean`` to ensure no results are cached. Run these commands from the "
@@ -2507,13 +2513,13 @@ msgid ""
 "Commands`_ so they match CI:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2113
+#: ../../pyvista/CONTRIBUTING.rst:2116
 msgid ""
 "After building the documentation, open the local build and examine the "
 "examples gallery for any obvious issues."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2116
+#: ../../pyvista/CONTRIBUTING.rst:2119
 msgid ""
 "It is now the responsibility of the ``pyvista`` community to functionally "
 "test the new release. It is best to locally install this branch and use it "
@@ -2521,7 +2527,7 @@ msgid ""
 " release branch."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2121
+#: ../../pyvista/CONTRIBUTING.rst:2124
 msgid ""
 "When the branch is deemed as stable for public release, the PR will be "
 "merged to main. After update the version number in ``release/MAJOR.MINOR`` "
@@ -2530,13 +2536,13 @@ msgid ""
 "release with:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2131
+#: ../../pyvista/CONTRIBUTING.rst:2134
 msgid ""
 "Please check again that the tag has been created correctly and push the "
 "branch and tag."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2138
+#: ../../pyvista/CONTRIBUTING.rst:2141
 msgid ""
 "Create a list of all changes for the release. It is often helpful to "
 "leverage `GitHub’s compare feature "
@@ -2546,13 +2552,13 @@ msgid ""
 "if a specific contributor is to thank for a new feature."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2146
+#: ../../pyvista/CONTRIBUTING.rst:2149
 msgid ""
 "Place your release notes from previous step in the description for `the new "
 "release on GitHub <https://github.com/pyvista/pyvista/releases/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2150
+#: ../../pyvista/CONTRIBUTING.rst:2153
 msgid ""
 "Go grab a beer/coffee/water and wait for `@regro-cf-autotick-bot "
 "<https://github.com/conda-forge/conda-forge-bot>`_ to open a pull request on"
@@ -2560,27 +2566,27 @@ msgid ""
 "feedstock>`_. Merge that pull request."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2156
+#: ../../pyvista/CONTRIBUTING.rst:2159
 msgid "Announce the new release in the Discussions page and celebrate."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2160
+#: ../../pyvista/CONTRIBUTING.rst:2163
 msgid "Patch Release Steps"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2162
+#: ../../pyvista/CONTRIBUTING.rst:2165
 msgid ""
 "Patch releases are for critical and important bug fixes that can not or "
 "should not wait until a minor release. The steps for a patch release"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2165
+#: ../../pyvista/CONTRIBUTING.rst:2168
 msgid ""
 "Push the necessary bugfix(es) to the applicable release branch. This will "
 "generally be the latest release branch (for example ``release/0.25``)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2168
+#: ../../pyvista/CONTRIBUTING.rst:2171
 msgid ""
 "Update ``pyvista/_version.py`` with the next patch increment (for example "
 "``v0.25.1``), commit it, and open a PR that merge with the release branch. "
@@ -2588,7 +2594,7 @@ msgid ""
 "bugfix release. Any additional hotfixes should be outside of this PR."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2174
+#: ../../pyvista/CONTRIBUTING.rst:2177
 msgid ""
 "When approved, merge with the release branch, but not ``main`` as there is "
 "no reason to increment the version of the ``main`` branch. Then create a tag"
@@ -2596,32 +2602,32 @@ msgid ""
 "the correct steps)."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2179
+#: ../../pyvista/CONTRIBUTING.rst:2182
 msgid ""
 "If deemed necessary, create a release notes page. Also, open the PR from "
 "conda and follow the directions in step 10 in the minor release section."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2184
+#: ../../pyvista/CONTRIBUTING.rst:2187
 msgid "Dependency Version Policy"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2187
+#: ../../pyvista/CONTRIBUTING.rst:2190
 msgid "Python and VTK Dependencies"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2189
+#: ../../pyvista/CONTRIBUTING.rst:2192
 msgid ""
 "We support all supported `Python versions`_ and `VTK versions`_ that support"
 " those Python versions. As much as we would prefer to follow `SPEC 0`_, we "
 "follow VTK versions as an interface library of VTK."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2201
+#: ../../pyvista/CONTRIBUTING.rst:2204
 msgid "Self-Hosted Runners"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2202
+#: ../../pyvista/CONTRIBUTING.rst:2205
 msgid ""
 "GitHub hosted runners are the preferred way of running PyVista's CI. However"
 " given the volume of development, the number of workflows, and the need to "
@@ -2629,46 +2635,46 @@ msgid ""
 "hosted runners due to GitHub's concurrency limits."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2207
+#: ../../pyvista/CONTRIBUTING.rst:2210
 msgid "Any PyVista self-hosted runner must:"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2209
+#: ../../pyvista/CONTRIBUTING.rst:2212
 msgid "Be as compatible as possible with a GitHub hosted runner."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2210
+#: ../../pyvista/CONTRIBUTING.rst:2213
 msgid ""
 "Use labels to denote the OS of a runner that are the same as GitHub's labels"
 " appended with ``self-hosted`` to ensure that there isn't overlap with "
-"GitHub labels.  For example, ``macos-15-self-hosted``. Additional labels may"
-" be specified (e.g. ``GPU``), but there must always be an OS label. Do not "
+"GitHub labels. For example, ``macos-15-self-hosted``. Additional labels may "
+"be specified (e.g. ``GPU``), but there must always be an OS label. Do not "
 "use a label that overlaps with GitHub's labels."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2215
+#: ../../pyvista/CONTRIBUTING.rst:2218
 msgid ""
 "Be secure against intrusion and follow best cybersecurity practices (for "
 "example, no ``sudo`` permissions, dedicated and isolated VLAN)"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2217
+#: ../../pyvista/CONTRIBUTING.rst:2220
 msgid "Require a compatible CI/CD workflow."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2218
+#: ../../pyvista/CONTRIBUTING.rst:2221
 msgid "Provide runner documentation here."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2219
+#: ../../pyvista/CONTRIBUTING.rst:2222
 msgid "Be on a host with a battery backup."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2222
+#: ../../pyvista/CONTRIBUTING.rst:2225
 msgid "GitHub Runner Workflow Configuration"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2224
+#: ../../pyvista/CONTRIBUTING.rst:2227
 msgid ""
 "When setting up the GitHub workflow and using a ``matrix``, ensure that the "
 "name of each job in the matrix is fixed rather than dependent on labels. "
@@ -2677,70 +2683,70 @@ msgid ""
 "status check label regardless of if it is self hosted."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2248
+#: ../../pyvista/CONTRIBUTING.rst:2251
 msgid ""
 "With this approach, a job can be configured to use GitHub's hosted runners "
 "simply by changing ``\"macos-15-self-hosted\"`` to ``\"macos-15\"``."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2253
+#: ../../pyvista/CONTRIBUTING.rst:2256
 msgid "Setting Up a Runner on Bare Metal"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2255
+#: ../../pyvista/CONTRIBUTING.rst:2258
 msgid ""
 "Visit PyVista's `Create self-hosted runner "
 "<https://github.com/organizations/pyvista/settings/actions/runners/new>`_."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2258
+#: ../../pyvista/CONTRIBUTING.rst:2261
 msgid ""
 "Follow the directions to download, run, and install. If the runner is "
 "intended to run public workflows, add the runner to the ``pyvista-self-"
 "hosted`` group."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2261
+#: ../../pyvista/CONTRIBUTING.rst:2264
 msgid ""
 "Follow your OSes instructions to enable a service for the runner (if "
 "applicable) to ensure the runner restarts should it be interrupted."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2265
+#: ../../pyvista/CONTRIBUTING.rst:2268
 msgid "PyVista Hosts and Runners"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2268
+#: ../../pyvista/CONTRIBUTING.rst:2271
 msgid "Apple Silicon - 2024 Mac mini M4"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2269
+#: ../../pyvista/CONTRIBUTING.rst:2272
 msgid "CPU: 10-core CPU ARM64 (Apple Silicon)"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2270
+#: ../../pyvista/CONTRIBUTING.rst:2273
 msgid "GPU: 10-core GPU"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2271
+#: ../../pyvista/CONTRIBUTING.rst:2274
 msgid "Storage: 256 GB SSD"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2272
+#: ../../pyvista/CONTRIBUTING.rst:2275
 msgid "Memory: 16 GB Unified Memory"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2273
+#: ../../pyvista/CONTRIBUTING.rst:2276
 msgid "OS: MacOS 15"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2275
+#: ../../pyvista/CONTRIBUTING.rst:2278
 msgid ""
 "With the following runners - macos-arm-runner-0 - macos-arm-runner-1 - "
 "macos-arm-runner-2 - macos-arm-runner-3 - macos-arm-runner-4"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2282
+#: ../../pyvista/CONTRIBUTING.rst:2285
 msgid ""
 "**Notes** Testing showed peak memory usage of ~2 GB per runner for the "
 "``testing-and-deployment.yml`` workflow. With 16GB of memory and ~4 GB used "
@@ -2748,11 +2754,11 @@ msgid ""
 "disable runners."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2290
+#: ../../pyvista/CONTRIBUTING.rst:2293
 msgid "Linux Runners"
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2291
+#: ../../pyvista/CONTRIBUTING.rst:2294
 msgid ""
 "PyVista uses a high availability Linux cluster running "
 "[k3s](https://k3s.io/) and deployed using "
@@ -2760,7 +2766,7 @@ msgid ""
 "runners](https://github.com/pyvista/arc-runners) for more details."
 msgstr ""
 
-#: ../../pyvista/CONTRIBUTING.rst:2295
+#: ../../pyvista/CONTRIBUTING.rst:2298
 msgid ""
 "GPU enabled runs should use the ``ubuntu-24.04-self-hosted-gpu`` labels. "
 "Runners using this label will receive a minimum of 2 CPUs and at maximum 8 "
