@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyVista 0.50.dev0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-18 23:39+0000\n"
+"POT-Creation-Date: 2026-11-01 03:01+0000\n"
 "PO-Revision-Date: 2021-01-06 02:34+0000\n"
 "Language-Team: English (United States) (https://app.transifex.com/tkoyama010/teams/112279/en_US/)\n"
 "MIME-Version: 1.0\n"
@@ -23,146 +23,85 @@ msgstr ""
 
 #: ../../pyvista/doc/source/extras/building_vtk.rst:5
 msgid ""
-"Kitware provides Python wheels for VTK at `PyPI VTK "
-"<https://pypi.org/project/vtk/>`_, but there are situations where you may "
-"need to build VTK from source (for example, a new release of Python, EGL "
-"rendering, additional features, etc). As ``pyvista`` does not provide "
-"``vtk``, you will have to either build it manually or install the default "
-"wheel from PyPI."
+"Kitware publishes VTK wheels on `PyPI <https://pypi.org/project/vtk/>`_, and"
+" PyVista installs those by default. Building VTK from source is for the "
+"cases they do not cover: a new Python release, a VTK branch or commit, GPU "
+"off-screen rendering, or a module the published wheel leaves out."
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/building_vtk.rst:12
+#: ../../pyvista/doc/source/extras/building_vtk.rst:10
 msgid ""
-"Reference the official directions for `Building VTK "
-"<https://docs.vtk.org/en/latest/build_instructions/index.html>`_. The "
-"following directions assume you want to build a Python wheel non-standard "
-"situations like EGL."
+"`pyvista-build <https://pyvista.github.io/pyvista-build/>`_ does that with "
+"one command on Linux, macOS, and Windows, using the options PyVista's own CI"
+" uses:"
 msgstr ""
 
 #: ../../pyvista/doc/source/extras/building_vtk.rst:19
-msgid "Building Wheels"
+msgid ""
+"The wheel is built for, and installed into, the active virtual environment. "
+"Once installed, PyVista picks it up like the stock one. Its documentation "
+"covers:"
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/building_vtk.rst:20
+#: ../../pyvista/doc/source/extras/building_vtk.rst:23
 msgid ""
-"Building VTK from source is fairly straightforward. Using the default build "
-"settings, build a Python wheel of VTK using ``ninja`` using the following "
-"script. This script uses system python3, but you can use any modern Python "
-"version. For some additional useful options, see the `conda-forge recipe "
-"<https://github.com/conda-forge/vtk-feedstock/blob/main/recipe/build-"
-"base.sh>`__. Most of the ones below are designed to reduce the build time "
-"and resulting wheel size."
+"`The steps <https://pyvista.github.io/pyvista-build/building.html#the-"
+"steps>`_ of a build, and the flags that change each one."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/building_vtk.rst:25
+msgid ""
+"`Scripted use <https://pyvista.github.io/pyvista-"
+"build/building.html#scripted-use>`_ and the `developer loop "
+"<https://pyvista.github.io/pyvista-build/building.html#developer-loop>`_ of "
+"editing VTK and rebuilding."
 msgstr ""
 
 #: ../../pyvista/doc/source/extras/building_vtk.rst:29
 msgid ""
-"We have also published some convenient CMake configurations files that you "
-"can adopt from `banesullivan/vtk-cmake <https://github.com/banesullivan/vtk-"
-"cmake>`_. These configurations cover the build variants described here and "
-"make the process of reproducibly building VTK wheel variants more "
-"straightforward."
+"`Portable Linux wheels <https://pyvista.github.io/pyvista-"
+"build/building.html#portable-linux-wheels>`_ built inside a manylinux "
+"container."
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/building_vtk.rst:83
+#: ../../pyvista/doc/source/extras/building_vtk.rst:32
+msgid ""
+"`CI workflows <https://pyvista.github.io/pyvista-build/building.html#ci-"
+"workflows>`_ with a compiler cache."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/building_vtk.rst:35
+msgid ""
+"The `command reference <https://pyvista.github.io/pyvista-build/cli.html>`_."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/building_vtk.rst:37
+msgid ""
+"PyVista's nightly `VTK master build "
+"<https://github.com/pyvista/pyvista/blob/main/.github/workflows/vtk-master-"
+"wheels.yml>`_ runs the same command against VTK's master branch on all three"
+" operating systems and tests PyVista against the result."
+msgstr ""
+
+#: ../../pyvista/doc/source/extras/building_vtk.rst:45
 msgid "Off-Screen Plotting GPU Support"
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/building_vtk.rst:84
+#: ../../pyvista/doc/source/extras/building_vtk.rst:46
 msgid ""
-"VTK supports rendering with EGL, enabling rapid off-screen rendering using "
-"GPU hardware acceleration without installing a virtual framebuffer. The "
-"default VTK wheels are not built with this feature, but you can build VTK "
-"for off-screen plotting using GPU support by modifying the above ``cmake`` "
-"command with:"
+"The stock Linux wheels already render off-screen without an X server: VTK "
+"picks EGL for GPU rendering, or OSMesa for software rendering, at run time. "
+"To build a wheel that does not link against X at all:"
 msgstr ""
 
-#: ../../pyvista/doc/source/extras/building_vtk.rst:128
+#: ../../pyvista/doc/source/extras/building_vtk.rst:54
 msgid ""
-"This disables any plotting using the X server, so be prepared to use this "
-"module only on a headless display where you either intend to save static "
-"images or stream the render window to another computer with a display (e.g "
-"using ``pyvista.set_jupyter_backend('server')`` and jupyterlab). In other "
-"words, this wheel will make VTK unusable outside of an off-screen "
-"environment, so only plan on installing it on a headless system without an X"
-" server."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:138
-msgid "Building OSMesa"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:139
-msgid ""
-"OSMesa provides higher visualization performance on CPU based hosts. Use "
-"this instead of ``xvfb``:"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:175
-msgid "Wheels will be generated in the ``dist`` directory."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:179
-msgid "Building ManyLinux Wheels"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:180
-msgid ""
-"The above directions are great for building a local build of VTK, but these "
-"wheels are difficult to share outside your local install given issues with "
-"ABI compatibility due to the version of Linux they were built on. You can "
-"work around this by building your wheels using a `manylinux "
-"<https://github.com/pypa/manylinux>`_ docker image."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:186
-msgid ""
-"To do this, create a ``build_wheels.sh`` with the following contents in the "
-"``git clone`` d ``vtk`` directory, and give it executable permissions "
-"(``chmod +x build_wheels.sh``):"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:243
-msgid "This script can then be called with:"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:252
-msgid "You should end up with a ``build/wheelhouse/vtk-*.whl``."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:255
-msgid ""
-"To build the EGL version of the wheel, follow the directions in the previous"
-" section. Add ``mesa-libEGL-devel`` to the installation dependencies."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:261
-msgid "Building Python VTK Wheel on Raspberry Pi (64-bit)"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:262
-msgid ""
-"While it's possible to build on 32-bit Raspberry Pi (ARMv7), there are "
-"several issues that crop up when building wheels for the 32-bit version (see"
-" `manylinux issue 84 <https://github.com/pypa/manylinux/issues/84>`_). "
-"Should you attempt to build on 32-bit, try building the wheel using "
-"`dockcross <https://github.com/dockcross/dockcross>`_ as you may run into "
-"memory limitations otherwise (especially with only 1 GB RAM)."
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:270
-msgid ""
-"Building the ``aarch64`` manylinux wheel can be done via docker with the "
-"``quay.io/pypa/manylinux2014_aarch64`` image. Run the following:"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:281
-msgid "Where ``build_wheels.sh`` is:"
-msgstr ""
-
-#: ../../pyvista/doc/source/extras/building_vtk.rst:338
-msgid ""
-"Be sure to either enable or disable ``DVTK_OPENGL_HAS_EGL`` depending on if "
-"you want ``EGL`` enabled for your wheel."
+"Such a wheel cannot open on-screen windows, so use it only where you save "
+"static images or stream the render window to another computer with a display"
+" (for example, using ``pyvista.set_jupyter_backend('server')`` and "
+"JupyterLab). See `Off-Screen Plotting GPU Support "
+"<https://pyvista.github.io/pyvista-build/building.html#off-screen-plotting-"
+"gpu-support>`_."
 msgstr ""
 
 #: ../../pyvista/doc/source/extras/docker.rst:2
@@ -801,53 +740,53 @@ msgstr ""
 msgid "API Reference"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:1
 msgid "Plot directive module."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:3
 msgid "A directive for including a PyVista plot in a Sphinx document."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:5
 msgid ""
 "The ``.. pyvista-plot::`` sphinx directive will include an inline ``.png`` "
 "image."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:8
 msgid "The source code for the plot may be included in one of two ways:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:10
 msgid "Using **doctest** syntax::"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:18
 msgid "**A path to a source file** as the argument to the directive::"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:22
 msgid ""
 "When a path to a source file is given, the content of the directive may "
 "optionally contain a caption for the plot::"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:29
 msgid ""
 "Additionally, one may specify the name of a function to call (with no "
 "arguments) immediately after importing the module::"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:35
 msgid ""
 "A ``# doctest: +SKIP`` statement is not executed, but the rest of its code "
@@ -856,45 +795,45 @@ msgid ""
 "run with sphinx's ``-W``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:41
 msgid "Animations will not be saved, only the last frame will be shown."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:44
 msgid ""
 "**Options** The ``pyvista-plot`` directive supports the following options:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:47
 msgid "include-source : ``bool``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:46
 msgid "bool"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:48
 msgid ""
 "Whether to display the source code. The default can be changed using the "
 "``pyvista_plot_include_source`` variable in :file:`conf.py`."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:51
 msgid "encoding"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "str"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:52
 msgid ""
 "If this source file is in a non-UTF8 or non-ASCII encoding, the encoding "
@@ -902,17 +841,17 @@ msgid ""
 "inferred using the ``-*- coding -*-`` metacomment."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:56
 msgid "context"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "None"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:57
 msgid ""
 "If provided, the code will be run in the context of all previous plot "
@@ -920,24 +859,24 @@ msgid ""
 "applies to inline code plot directives, not those run from files."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:61
 msgid "``nofigs``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:62
 msgid ""
 "When setting this flag, the code block will be run but no figures will be "
 "inserted. This is usually useful with the ``:context:`` option."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:65
 msgid "caption"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:66
 msgid ""
 "If specified, the option's argument will be used as a caption for the "
@@ -945,31 +884,31 @@ msgid ""
 "generated from a file."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:70
 msgid "``force_static``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:71
 msgid ""
 "When setting this flag, static images will be used instead of an interactive"
 " scene."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:74
 msgid "skip : ``bool``, default: True"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:73
 msgid "bool, default: True"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:75
 msgid ""
 "Whether to skip execution of this directive. If no argument is provided that"
@@ -979,12 +918,12 @@ msgid ""
 "configuration."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:81
 msgid "optional"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:82
 msgid ""
 "This flag marks the directive for *conditional* execution. Whether the "
@@ -992,7 +931,7 @@ msgid ""
 "boolean variable in :file:`conf.py`."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:86
 msgid ""
 "Additionally, this directive supports all the options of the ``image`` "
@@ -1000,12 +939,12 @@ msgid ""
 " include ``alt``, ``height``, ``width``, ``scale``, ``align``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:91
 msgid "**Open Graph previews**"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:93
 msgid ""
 "Add ``sphinx_autoopengraph`` to ``extensions`` for a sensible Open Graph "
@@ -1014,41 +953,41 @@ msgid ""
 "this directive. See :ref:`opengraph_docs`."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:99
 msgid "**Configuration options**"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:101
 msgid ""
 "Prior to v0.45, these directives conflicted with ``matplotlib``. All "
 "directives have been prepended with ``pyvista_``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:105
 msgid "The plot directive has the following configuration options:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:107
 msgid "``pyvista_plot_include_source``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:108
 msgid ""
 "Default value for the ``include-source`` directive option. Default is "
 "``True``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:111
 msgid "``pyvista_plot_basedir``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:112
 msgid ""
 "Base directory, to which ``plot::`` file names are relative to. If ``None`` "
@@ -1056,88 +995,88 @@ msgid ""
 " the directive is."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:116
 msgid "``pyvista_plot_html_show_formats``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:117
 msgid "Whether to show links to the files in HTML. Default ``True``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:119
 msgid "``pyvista_plot_template``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:120
 msgid "Provide a customized Jinja2 template for preparing restructured text."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:122
 msgid "``pyvista_plot_setup``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:123
 msgid "Python code to be run before every plot directive block."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:125
 msgid "``pyvista_plot_cleanup``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:126
 msgid "Python code to be run after every plot directive block."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:128
 msgid "``pyvista_plot_skip``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive-1
 msgid "bool, default: False"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:129
 msgid "Default value for the ``skip`` directive option."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:131
 msgid "``pyvista_plot_skip_optional``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:132
 msgid "Whether to skip execution of ``optional`` directives."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:134
 msgid "``pyvista_plot_force_static``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:135
 msgid ""
 "Whether to use static images instead of interactive scenes for all plots."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:139
 msgid "``pyvista_plot_autocodelink``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:140
 msgid ""
 "Hyperlink identifiers in the rendered output to their documented targets. "
@@ -1150,38 +1089,38 @@ msgid ""
 "label with sphinx-autocodelink's own ``autocodelink_category_labels``."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:152
 msgid ""
 "These options can be set by defining global variables of the same name in "
 ":file:`conf.py`."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:156
 msgid "**Directive Configuration Settings**"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:158
 msgid "Globally, you can set if the file names should be either:"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:160
 msgid ""
 "Deterministic, based on directive source hash: "
 "``<BASENAME>-<HASH>_<INDEX>_<SUBINDEX>.<EXT>`` (Default)"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:162
 msgid ""
 "Indexed, based on location in document: ``<BASENAME>-<DOC-"
 "INDEX>_<INDEX>_<SUBINDEX>.<EXT>``"
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:165
 msgid ""
 "Enable indexed naming this by setting ``pyvista_plot_use_counter=True``. "
@@ -1189,12 +1128,12 @@ msgid ""
 "conditions."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:168
 msgid "Hash-based image naming is now used by default."
 msgstr ""
 
-#: ../../../../../../../opt/hostedtoolcache/Python/3.13.16/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
+#: ../../../../../../../opt/hostedtoolcache/Python/3.13.17/x64/lib/python3.13/site-packages/pyvista/ext/plot_directive.pydocstring
 #: of pyvista.ext.plot_directive:171
 msgid ""
 "Generated source code is now wrapped in a ``.. container:: pyvista-plot-"
