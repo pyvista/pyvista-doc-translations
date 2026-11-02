@@ -57,6 +57,23 @@ jobs:
           if [ -z "$ref" ]; then
             ref="$(gh release view --repo pyvista/pyvista --json tagName -q .tagName)"
           fi
+          case "$ref" in
+            *[!A-Za-z0-9._/-]*)
+              echo "pyvista_ref contains invalid characters: $ref" >&2
+              exit 1
+              ;;
+          esac
+          # Trust boundary: only accept refs that resolve inside the upstream
+          # pyvista/pyvista repository. Code checked out and installed is then
+          # always authored/pushed by pyvista maintainers, not by whoever
+          # dispatched this workflow. The pip cache was removed, but the runner
+          # still holds ACTIONS_RUNTIME_TOKEN until the job ends, so verified
+          # refs close the remaining cache-poisoning vector
+          # (CodeQL actions/cache-poisoning/poisonable-step, alerts #3-#5).
+          if ! gh api "repos/pyvista/pyvista/commits/$ref" --silent >/dev/null 2>&1; then
+            echo "pyvista_ref does not resolve in pyvista/pyvista: $ref" >&2
+            exit 1
+          fi
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
           echo "Building against pyvista ref: $ref"
 
@@ -72,7 +89,10 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.14"
-          cache: "pip"
+        # No pip cache: this job builds untrusted code (arbitrary pyvista ref
+        # via workflow_dispatch/repository_dispatch) in default-branch cache
+        # scope. Caching here makes the cache poisonable.
+        # See CodeQL actions/cache-poisoning/poisonable-step.
 
       - name: Install system packages
         run: |
