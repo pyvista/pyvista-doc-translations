@@ -58,7 +58,7 @@ jobs:
             ref="$(gh release view --repo pyvista/pyvista --json tagName -q .tagName)"
           fi
           case "$ref" in
-            *[!A-Za-z0-9._\-]*)
+            *[!A-Za-z0-9._/-]*)
               echo "pyvista_ref contains invalid characters: $ref" >&2
               exit 1
               ;;
