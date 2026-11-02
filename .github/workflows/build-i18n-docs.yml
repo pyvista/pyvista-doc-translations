@@ -57,6 +57,12 @@ jobs:
           if [ -z "$ref" ]; then
             ref="$(gh release view --repo pyvista/pyvista --json tagName -q .tagName)"
           fi
+          case "$ref" in
+            *[!A-Za-z0-9._\-]*)
+              echo "pyvista_ref contains invalid characters: $ref" >&2
+              exit 1
+              ;;
+          esac
           echo "ref=$ref" >> "$GITHUB_OUTPUT"
           echo "Building against pyvista ref: $ref"
 
@@ -72,7 +78,10 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.14"
-          cache: "pip"
+        # No pip cache: this job builds untrusted code (arbitrary pyvista ref
+        # via workflow_dispatch/repository_dispatch) in default-branch cache
+        # scope. Caching here makes the cache poisonable.
+        # See CodeQL actions/cache-poisoning/poisonable-step.
 
       - name: Install system packages
         run: |

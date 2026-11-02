@@ -14,6 +14,10 @@ on:
     branches:
       - main
 
+permissions:
+  # git-auto-commit-action below pushes translation updates to the repo.
+  contents: write
+
 jobs:
   ubuntu:
     runs-on: ubuntu-22.04
